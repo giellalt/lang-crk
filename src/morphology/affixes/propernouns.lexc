@@ -1,0 +1,16 @@
+!! Proper noun inflection
+!! ----------------------
+!! The UNDEFINED language proper nouns inflect in the same cases as regular
+!! nouns, but with a colon (':') as separator.
+
+LEXICON ProperNounCases
++N+Prop:%:   Cases  ;
++N+Prop:%:   Cases  ;
++N+Prop:%:   Cases  ;
++N+Prop:%:   Cases  ;
++N+Prop:%:   Cases  ;
++N+Prop:%:   Cases  ;
+        -    Nouns  ;
+
+! vim: set ft=xfst-lexc:
+

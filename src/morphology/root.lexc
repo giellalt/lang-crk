@@ -1,0 +1,122 @@
+! Divvun & Giellatekno - open source grammars for UNDEFINED language
+! Copyright © 2012 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@samediggi.no
+
+! ========================================================================== !
+! !!            !!!Plains Cree morphological analyser                      !
+! ========================================================================== !
+!! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
+ 
+
+Multichar_Symbols  !!≈ !!!@CODE@ definitions
+
+!! !!Analysis symbols
+!! ----------------
+!! The morphological analyses of wordforms of UNDEFINED language are presented
+!! in this system in terms of following symbols.
+!! (It is highly suggested to follow existing standards when adding new tags).
+
+!! The parts-of-speech are:
+ +N +A +Adv +V                                 !!≈
+ +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
+
+!! The parts of speech are further split up into:
+ +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
+
+!! The Usage extents are marked using following tags:
+ +Use/Sub   
+ +Use/-Spell 
+
+!! The nominals are inflected in the following Case and Number
+ +Sg +Du +Pl
+ +Ess +Nom +Gen +Acc +Ill +Loc +Com +Com/Sh
+
+!! The possession is marked as such:
+ +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
+!! The comparative forms are:
+ +Comp +Superl
+!! Numerals are classified under:
+ +Attr +Card
+ +Ord 
+!! Verb moods are:
+ +Ind +Prs +Prt +Pot +Cond +Imprt
+!! Verb personal forms are:
+ +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
+!! Other verb forms are
+ +Inf +Ger +ConNeg +ConNegII +Neg +ImprtII +PrsPrc +PrfPrc +Sup +VGen +VAbess
+
+! Abbreviated words are classified with:
+ +ABBR +ACR 
+!! Special symbols are classified with:
++CLB +PUNCT +LEFT +RIGHT
+!! The verbs are syntactically split according to transitivity:
+ +TV +IV
+!! Special multiword units are analysed with:
+ +Multi
+!! Non-dictionary words can be recognised with:
+ +Guess
+
+!! Question and Focus particles:
+ +Qst +Foc
+
+
+!! Semantics are classified with
+ +Mal +Fem +Sur 
+ +Plc 
+ +Org
+ +Obj
+ +Ani
+ +Hum
+ +Plant
+ +Group
+ +Time 
+ +Txt
+ +Route
+ +Measr 
+ +Wthr
+ +Build 
+ +Edu
+ +Veh
+ +Clth
+
+
+!! Derivations are classified under the morphophonetic form of the suffix, the
+!! source and target part-of-speech.
+ +V→N +V→V +V→A
+ +Der/xxx
+
+
+!! Morphophonology
+!! ---------------
+!! To represent phonologic variations in word forms we use the following
+!! symbols in the lexicon files:
+ {aä} {oö} {uü}
+
+!! And following triggers to control variation
+ {front} {back}
+
+!! We have manually optimised the structure of our lexicon using following
+!! flag diacritics to restrict morhpological combinatorics:
+@P.NeedNoun.ON@  @D.NeedNoun.ON@  @C.NeedNoun@
+
+LEXICON Root
+!! The word forms in UNDEFINED language start from the lexeme roots of basic
+!! word classes, or optionally from prefixes:
+0   Nouns   ;
+0   Verbs   ;
+0   Adjectives  ;
+0   Pronouns    ;
+0   Numerals    ;
+0   Prefixes    ;
+
+! vim: set ft=xfst-lexc:
