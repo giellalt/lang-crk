@@ -1,0 +1,63 @@
+## Include this file to lexc directory to build lexical automata
+
+## Copyright (C) 2011 Samediggi
+
+## This program is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+####### Source file defs: ########
+
+#! @param GT_TRANSCRIPTIONS_SRCS required, the source files for orthographic
+#!        transcriptions.
+
+EXTRA_DIST=$(GT_TRANSCRIPTIONS_SRCS)
+
+####### Automake targets: ########
+
+# The transducers we build and don't distribute depend on the configuration:
+GT_TRANSCRIPTORS=
+if CAN_HFST
+GT_TRANSCRIPTORS+=transcriptor-clock2text-raw.hfst \
+				  transcriptor-date2text-raw.hfst \
+				  transcriptor-numbers2text-raw.hfst
+endif
+if CAN_XFST
+GT_TRANSCRIPTORS+=transcriptor-clock2text-raw.xfst \
+				  transcriptor-date2text-raw.xfst \
+				  transcriptor-numbers2text-raw.xfst
+endif
+noinst_DATA=$(GT_TRANSCRIPTORS)
+
+####### HFST build rules: ########
+
+# lexical transducer building rules:
+# for HFST:
+transcriptor-%2text-raw.hfst: %.lexc
+	$(AM_V_GEN)$(HFST_LEXC) -f foma -o $@.foma $^
+	$(AM_V_GEN)$(HFST_FST2FST) -f openfst-tropical -i $@.foma -o $@
+	$(AM_V_GEN)rm -f $@.foma
+
+####### Xerox build rules: #######
+
+transcriptor-%2text-raw.xfst: %.lexc
+	$(AM_V_GEN)$(PRINTF) \
+		"compile-source $^\nsource-to-result\nsave-source $@\nquit\n" \
+		> $@.script
+	$(AM_V_GEN)$(LEXC) < $@.script
+	$(AM_V_GEN)rm -f $@.script
+
+####### Other targets: ###########
+clean-local:
+	-rm -f *.hfst *.xfst
+
+# vim: set ft=automake:

@@ -1,0 +1,78 @@
+## Process this file with automake to produce Makefile.in
+
+## Copyright (C) 2011 Samediggi
+
+## This program is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+####### Source file defs: ########
+
+#! @param GT_PHONETICS_MAIN required, the source of phonetic transcription
+#! @param GT_PHONETICS_SUPPLEMENTS optional, other sources to distribute and
+#! 		  compile for other things
+#! Both @params are specified in $(GTLANG)/src/phonetics/Makefile.am.
+GT_PHONETICS_SRCS=$(GT_PHONETICS_MAIN) $(GT_PHONETICS_SUPPLEMENTS)
+
+# All sources need to be included in the tarball
+EXTRA_DIST=$(GT_PHONETICS_SRCS)
+
+####### Automake targets: ########
+
+# The rule transducer will be built, not installed
+GT_PHONETICS=
+if CAN_HFST
+GT_PHONETICS+=text2ipa.hfst
+endif
+if CAN_XFST
+GT_PHONETICS+=text2ipa.xfst
+endif
+
+noinst_DATA=$(GT_PHONETICS)
+
+####### HFST build rules: ########
+
+# hfst-twolc should by default resolve
+HFSTTWOLFLAGS=--resolve
+
+# All twolc targets should be built by suffix rules;
+# just list them in some nice automake targets and you're good to go
+.twolc.hfst:
+	$(AM_V_GEN)$(HFST_TWOLC) $(HFSTFLAGS) $(HFSTTWOLCFLAGS) -i $< \
+	| $(HFST-INVERT) $(HFSTFLAGS) -o $@
+
+# Phonology rules as xfst scripts (typically a cascade of regex rules):
+.xfscript.hfst:
+	$(AM_V_GEN)cp $< $@.script
+	$(AM_V_GEN)$(PRINTF) "invert \nsave stack $@" >> $@.script
+	$(AM_V_GEN)$(HFST_XFST) -f $@.script
+	$(AM_V_GEN)rm -f $@.script
+
+####### Xerox build rules: #######
+
+# All twolc targets should be built by suffix rules;
+# just list them in some nice automake targets and you're good to go
+.twolc.xfst:
+	$(AM_V_GEN)$(PRINTF) "read-grammar $<\ncompile\nsave-binary $@\nquit\n" \
+		> $@.script
+	$(AM_V_GEN)$(TWOLC) < $@.script
+	$(AM_V_GEN)rm -f $@.script
+
+# Phonology rules as xfst scripts (typically a cascade of regex rules):
+.xfscript.xfst:
+	$(AM_V_GEN)$(XFST) -l $< -e "save stack $@" -stop
+
+####### Other targets: ###########
+clean-local:
+	-rm -f *.hfst *.xfst
+
+# vim: set ft=automake:

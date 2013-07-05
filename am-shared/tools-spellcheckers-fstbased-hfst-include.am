@@ -1,0 +1,114 @@
+## Process this file with automake to produce Makefile.in
+
+## Copyright (C) 2011 Samediggi
+
+## This program is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+GT_SPELLER_HFST=generator-fstspeller-gt-norm.hfst
+GT_SPELLER_ACCEPTOR=acceptor.default.hfst
+
+####### Automake targets: ########
+
+GT_ERRMODELS=
+if CAN_HFST
+#GT_ERRMODELS+=errmodel.edit-distance-1.hfst
+
+# Only build speller if it is enabled (default=yes)
+if WANT_SPELLERAUTOMAT
+GT_ERRMODELS+=errmodel.default.hfst
+# libvoikko can't yet handle multiple error models - do NOT include this line:
+# errmodel.ocr.hfst
+
+# Require zip to turn on zhfst target:
+if WANT_VOIKKO
+GT_SPELLING_HFST=$(GTLANG2).zhfst
+endif # WANT_VOIKKO
+endif # WANT_SPELLERAUTOMAT
+endif # CAN_HFST
+
+if CAN_HFST
+if WANT_VOIKKO
+voikkosharedir=$(libdir)/voikko/3/
+#! @param GT_VOIKKO optional, set to spell checker automata names if
+#!					installable
+voikkoshare_DATA=$(GT_SPELLING_HFST)
+endif # WANT_VOIKKO
+endif # CAN_HFST
+
+noinst_DATA=$(GT_ERRMODELS)
+
+####### HFST build rules: ########
+
+# Error model building - edit distance based on transducer alphabet:
+editdist.%.hfst: editdist.%.txt $(GT_SPELLER_ACCEPTOR)
+	$(AM_V_GEN)$(GTCORE)/scripts/editdist.py -v -s -d 1 -e '@0@' -i $<   \
+		-a $(GT_SPELLER_ACCEPTOR) \
+		| $(HFST_TXT2FST) $(HFST_FLAGS) -e '@0@' -o $@
+
+# Helper fst:
+anystar.hfst:
+	$(AM_V_GEN)echo "?*;" | $(HFST_REGEXP2FST) -S -o $@
+
+# Error model building - list of strings known to be misspelled:
+strings.%.hfst: strings.%.txt anystar.hfst
+	$(AM_V_GEN)grep -v '^#' $< | grep -v '^$$'   \
+		| $(HFST_STRINGS2FST) $(HFST_FLAGS) -j \
+		| $(HFST_CONCATENATE)   anystar.hfst - \
+		| $(HFST_CONCATENATE) - anystar.hfst   \
+		-o $@
+
+# Combine edit distance with string pattern edits:
+editStrings.%.hfst: strings.%.hfst editdist.%.hfst
+	$(AM_V_GEN)$(HFST_DISJUNCT) $^       \
+		| $(HFST_MINIMIZE) $(HFST_FLAGS) \
+		| $(HFST_REPEAT) -f 1 -t 2       \
+		-o $@
+
+# Error model building - list of words known to be misspelled:
+words.%.hfst: words.%.txt
+	$(AM_V_GEN)grep -v '^#' $< | grep -v '^$$'   \
+		| $(HFST_STRINGS2FST) $(HFST_FLAGS) -j -o $@
+
+# The final error model is assembled here:
+errmodel.%.hfst: words.%.hfst editStrings.%.hfst
+	$(AM_V_GEN)$(HFST_DISJUNCT) $^ \
+		| $(HFST_FST2FST) $(HFST_FLAGS) -f olw -o $@
+
+# Alternatively, the error model can be constructed as a long list of regular
+# expressions, semicolon separated:
+errmodel.%.hfst: errmodel.%.regex
+	$(AM_V_GEN)$(HFST_REGEXP2FST) $(HFSTFLAGS) -S -o $@ -i $<
+
+# Build the automaton used for the speller
+$(GT_SPELLER_ACCEPTOR): $(GT_SPELLER_HFST)
+	$(AM_V_GEN)cat $< \
+		| $(HFST_PROJECT) $(HFST_FLAGS) --project=lower \
+		| $(HFST_MINIMIZE) $(HFST_FLAGS)                \
+		| $(HFST_FST2FST) $(HFST_FLAGS) -f olw          \
+		-o $@
+
+# Finally build the zhfst file, and make a copy in a subdir named '3', so that
+# we can test it without installing it (the '3' dir is a voikko requirement):
+$(GT_SPELLING_HFST): $(GT_SPELLER_ACCEPTOR) \
+					 $(GT_ERRMODELS) \
+					 index.xml
+	$(AM_V_GEN)rm -f $@ && $(ZIP) $(ZIPFLAGS) $@ $^ && \
+		$(MKDIR_P) 3 && \
+		cp -f $@ 3/
+
+####### Other targets: ###########
+clean-local:
+	-rm -rf *.hfst *.xfst *.zhfst 3
+
+# vim: set ft=automake:
