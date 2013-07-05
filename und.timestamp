@@ -1,0 +1,754 @@
+$Rev: 78059 $
+Renamed refs to template dir in preparation for support for multiple template
+dirs.
+
+r77898:
+Commented out examples of error models for string and word pairs - they would in
+most cases add symbols to the error model not found in the acceptor, and this
+combination would crash the speller badly.
+
+r77567:
+Cleaned up speller fst building, removing all unnecessary inverts and
+streamlining the code. Prepared for the introduction of weights, but commented
+out for now because of bugs or inefficiences in openfst. Renamed the included
+hfst speller build file, to follow an emerging naming standard for the include
+files.
+
+r77523:
+Added support for making variant analysers and generators using the Apertium tag
+convensions. The generated transducers are still not fully Apertium-compatible
+but they are a major step forward.
+
+r77475:
+Renamed analyser-raw-gt-desc.hfst to generator-raw-gt-desc.hfst, to make the
+behavior in hfst-lookup explicit and clear. Still, the "generator" behaves as
+the Xerox "analyser" in hfst when in comes to composition and filtering.
+Confusing, I know.
+
+r77459:
+Build the filter to remove CLB strings from speller transducers, and use it.
+
+r77449:
+Added missing hfst tools. Removed commented-out code in the index.xml file.
+
+r77368:
+Removed the ocr error model from the zhfst building, it causes libvoikko 3.4 to
+segfault.
+
+r77364:
+Added an explicit copy operation into the hfst speller dir, to facilitate local
+modifications of the speller transducer before further processing, by just
+replacing the copy operation with whatever is needed.
+
+r77356:
+Added string pairs and whole-word corrections to the speller error model.
+Added support for an ocr error model. Removed obsolete Voikko config file.
+Corrected bugs in the hfst M4 macros.
+
+r77317:
+Moved the initial spell checker processing to the top spellchecker dir, to serve
+as the default starting point for all spell checkers.
+
+r77273:
+Added a tagset directory in preparation for generating Apertium transducers
+automatically. Corrected and expanded a few M4 macros for the hfst tools.
+
+r76046:
+Added support for testing analysers and generators only. For several of our more
+specialised transducers, this is more practical and useful than always
+generating both pairs of transducers to test both directions.
+
+r75902:
+Corrected the existing oahpa transducer. Added dummy hfst oahpa target.
+
+r75594:
+Corrected a bug in the hyphenator hfst build: fst's must be inverted in hfst.
+
+r75459:
+Corrected another copy-paste error that broke speller fst's.
+
+r75424:
+Corrected copy-paste error.
+
+r75423:
+Rewrote a number of targets to reflect a splitted morph boundary removal filter.
+There are now three filters instead of one, to allow for more flexible fst
+building for speech processing.
+
+r75275:
+Added gzip compression of foma speller transducer, and proper checks for
+prerequisites. Foma spellers can now be disabled, they are enabled by default.
+
+r75256:
+Corrected a bug when building foma-based spellers. Changed one fst filename to
+follow the naming scheme for the new infra. Improved building of the zfst
+speller file.
+
+r74922:
+Added processing of new filters.
+
+r74604:
+Do not try to build hfst-based tools if hfst building is not enabled.
+
+r74427:
+Forgot to include changes to the filters Makefile.am in the previous commit.
+
+r74424:
+Moved some of the fst-speller building one level up, and added support for
+building foma-based spellers.
+
+r74285:
+Renamed phonetics source and target files to reflect the actual purpose.
+
+r74259:
+Added possibility to build morph segmenter for those langs that have morph
+boundaries marked in lexicons.
+
+r74234:
+Added a top-level misc/ dir to hold private / non-svn files needed during
+development of the language. All files are ignored.
+
+r74072:
+Corrected hfst 2ipa fst: the final fst needs to be inverted before being used in
+lookup.
+
+r74012:
+Corrected the homonymy and variant filters used for generators - those tags
+should be optional, not completely removed.
+
+r73986:
+We require gawk specifically, not any awk whatsoever. Improved config feedback.
+
+r73341:
+Corrected reference to the built fst's.
+
+r73159:
+Updated the zhfst building to reflect recent changes in Voikko. There is now
+official support for zhfst speller files, but with a new location and no *.pro
+file. Also added simple support for local loading of the zhfst file -
+voikkospell requires that the file is located within a dir named '3'.
+
+r72875:
+Further improvements to the test run output.
+
+r72864:
+More tweaks to make the test output compact and readable.
+
+r72854:
+Made use of the more compact modes of morph-tester.py. For all PASSed test runs,
+only one line is printed.
+
+r72836:
+Moved Oahpa transducer compilation to a separate (included) file, and added
+support for compiling dictionary transducers.
+
+r72827:
+We need the last part of the path to properly identify the lexc file tested.
+
+r72823:
+Made the morph-tester test runner (LexC and YAML tests) less verbose. All
+messages are one-liners, except for FAILs.
+
+r72769:
+More thorough clean in src/morphology/.
+
+r72662:
+Moved the definitions of the transducer variables to the Makefile.am, to make it
+possible to extend them by local modifications.
+
+r72560:
+Forgot to update the src/filter/Makefile.am file.
+
+r72534:
+Split the filter 'remove-dictionary-tags' in two to remove homonymy and variant
+tags separately.
+
+r72518:
+Added filter to remove NGminip strings, ie paths that should not be used for
+generating miniparadigms in dictionaries.
+
+r72423:
+Added infrastructure for building fst's for list-based spellers. The actual
+building is not yet implemented.
+
+r71921:
+Remove doc build dir when cleaning.
+
+r71912:
+Forgot to update the config file.
+
+r71905:
+Reorganised the tools/ dir to fit better with coming development.
+
+r71576:
+Several adjustments to the forrest setup for jspwiki validation.
+
+r71421:
+Added support files to enable forrest validation of jspwiki files. Second part
+of making sure extracted documentation comments won't break site building. Also
+added another make step to actually run forrest at the end of building the
+documentation. Make will now break if there are fatal errors in the jspwiki
+markup.
+
+r71326:
+Corrected cut&paste error.
+
+r71325:
+Added check for forrest as part of configuring the documentation extraction.
+Forrest will be used to validate the jspwiki documents during the build, to
+avoid that invalid documents enter the svn repository and corrupts the web page
+building.
+
+r71071:
+Upped the required automake version from 1.11 to 1.12, to avoid all hassles with
+the test harnesses and backwards compatibility.
+
+r71052:
+And then the rest of the tests changed into the most portable format.
+
+r71025:
+Even more portable testing...
+
+r71002:
+Improved portability & correctness of conditional tests in the morphology
+testing.
+
+r70961:
+Major update to the LexC testing. Now test data directly in the LexC code is
+supported by the python test script morph-tester.py (it reads the lexc files
+directly), which solves the bugs with multiple wordforms for the same
+morphosyntactic inflection. It is also a bit faster than the awk solution.
+
+r70633:
+Added initial documentation extraction of CG3 files. Probably more work to be
+done to get things working as intended.
+
+r68844:
+Finally found out how to get the old test behaviour back. We want the serial
+tests, because it gives direct feedback to the linguists. Automake 1.13 uses
+parallel testing by default, which logs all test results to files.
+
+r68823:
+Added support for processing twolc files for documentation extraction.
+
+r68816:
+Some files may contain digits in their filename. Extended the filename match
+pattern for the Links target.
+
+r68806:
+Added support for automatically building a file with links to each individual
+jspwiki file generated based.
+
+r68760:
+Forgot to add the jspwiki preamble file. Now added.
+
+r68649:
+Added some very basic documentation comments to the template root.lexc.
+
+r68639:
+Forgot to add support for the conditional CAN_DOCC in the previous commit.
+
+r68630:
+Added initial support for extracting documentation from comments in the source
+code. Only jspwiki supported initially. Also added initial support for
+extracting test data from source code comments. Only yaml tests in lexc is
+supported initially.
+
+r67871:
+The final fix to get the XML-to-LexC conversion working on Cygwin.
+
+r67860:
+Concatenate all LexC source files into one file explicitly, instead of letting
+hfst-lexc do it. This is more robust cross-platform, and makes the file used for
+transducer compilation easily available for debugging.
+
+r67840:
+Corrected the host detection test for Cygwin.
+
+r67828:
+Made spell-relax a language-specific file by adding it to the und template.
+
+r67827:
+Added support for XSL conversion of XML source files on Cygwin.
+
+r67732:
+Made Voikko support optional instead of required.
+
+r67724:
+Fixed a stupid bash syntax error in the previous commit.
+
+r67720:
+Rewrote LexC and TwolC Xerox rules to make them work on Cygwin: the Windows
+Xerox tools need a script file as input, the scripts can't be piped in as on
+*nix systems. Removed the hack in the previous commit. The bug can be worked
+around by avoiding linebreaks in the piped script.
+
+r67563:
+Added hack to work around a very strange bug in LexC transducer saving - the
+filename is slightly garbled if the save command is passed in from a script
+generated by a make file (but the same command passed in from a manually typed
+script works correctly).
+
+r67353:
+More robust Saxon/Java setup: no need to define CLASSPATH. The M4 macros will
+look for a couple of predefined pathnames, and pick the first saxon9he.jar file
+it finds. More locations should be added as needed.
+
+r67309:
+Require at least HFST 3.4 - it includes all backends, and simplifies dependency
+handling quite a bit.
+
+r67043:
+Fixed parsing of regexes for hfst, due to a bug in hfst-regex2fst when parsing
+regexes with comments after the regex is closed.
+
+r66959:
+Refactored the yaml test code, moving duplicate parts to a separate file. Makes
+for much easier adaption to new transducer types.
+
+r66833;
+First step in making the digit transcriptor transducers work. The transducers
+are compiled, and are given proper names according to the fst naming
+conventions, and the Xerox transducers work in the digit-2-string direction. The
+Hfst transducers do not yet work (segmentation fault due to running out of
+memory because of an infinite recursion), and the string-2-digit direction is
+not yet in place.
+
+r66815:
+Made the yaml test scrips obey configuration options, ie only run the hfst tests
+if hfst is turned on at configuration time.
+
+r66329:
+Automake requirement reduced to 1.11, after getting confirmation that that
+version is fine for finding Python (the main problem issue that triggered the
+version requirement).
+
+r66316:
+There's too much trouble with finding the correct Python version when using
+Automake v.1.10. We thus require 1.12 from now on.
+
+r66241:
+The noun lemma generation test script has been updated to only test the
+transducer types that have been turned on at configuration time.
+
+r65468:
+Grep out comments from regex files in orthography/, as there is a bug in
+hfst-regexp2fst.
+
+r65380:
+The actual Oahpa configuration was lost! Now finally included and working.
+
+r65377:
+Forgot Oahpa configuration feedback.
+
+r65376:
+Several updates:
+* slightly improved feedback from the configure script
+* improved hfst spell checker building
+* added basic support for building Oahpa transducers, *disabled* by default
+
+r65370:
+Renamed 'dictionary' `spellerautomaton` in giellatekno.m4. The old variable name
+and printouts were confusing - 'dictionary' has manh meanings, and some very
+concrete ones in the context of the GT/Divvun work.
+
+r65289:
+Minimise after every compose operation - always.
+
+r65064:
+Bug fixes to the Saxon/Java configuration.
+
+r65002:
+Call saxon checks from confugre.
+In previous commit: Ubuntu version of xml2lexc with autostuff.
+
+r64988:
+Only check hfst version if requested using '--with-hfst', otherwise disable.
+Likewise, disable xfst if requested and print warning if both are disabled.
+
+r64645:
+Added simple feedback to autogen.sh, valuable when processing many languages.
+Some reformatting of am-shared/hfst-spellchecker-include.am.
+
+r64584:
+Removed double inversion from the hfst generator - it didn't work.
+
+r64568:
+One more syntax error.
+
+r64567:
+Corrected syntax errors introduced in the previous commit.
+
+r64566:
+Silenced the build using an Automake macro.
+
+r64560:
+Make the silent build rules backwards compatible.
+
+r64552:
+Reapplied the simplification of hfst regex expressions, now with the correct
+command, thus working. Corrected hfst filter compilation. Took the first steps
+in silencing the verbose make output.
+
+r64550:
+Reverted the simplification of hfst regex compilation.
+
+r64539:
+Added support for spellrelax. Also renamed the orthography include file to be
+more generic. Simplified regex build commands now that the bugs in
+hfst-regexp2fst have been corrected.
+
+r63846:
+hfst-preprocess-for-optimized-lookup-format has been removed from the hfst
+distribution.
+
+r63795:
+Always fail hfst check if hfst-info can't be found.
+
+r63667:
+Add requirement of foma for hfst compilation; remove distinction between
+WANT_[HX]FST and CAN_[HX]FST.
+
+r63602:
+The local modifications to Makefile.am files must be before the fallback pattern
+targets, it seems, otherwise the fallback targets are used.
+
+r63579:
+I believe I finally have fixed the yaml testing shell scripts.
+
+r63573:
+One more fix for the yaml testing shell scripts.
+
+r63571:
+Escaping in the yaml test scripts didn't work - removing the single quotes did.
+Also added an underscore in front of the transducer string in the yaml testing,
+to avoid that the test scripts get too greedy when we get more transducers and
+test data.
+
+r63557:
+Small variable correction in the yaml test bench.
+
+r63556:
+Forgot to escape the single quotes used within the backtic expression.
+
+r63527:
+Corrected fail check in noun lemma generation test.
+
+r63522:
+Split the yaml test runner in two, one for norm and one for desc transducers,
+and updated the autoconf file correspondingly. Updated the lemma generator test
+to work with the renamed transducer. Made all test runners more robust.
+
+r63501:
+Renamed all existing targets to follow the naming scheme defined at
+http://divvun.no/doc/infra/infraremake/TransducerNamesInTheNewInfra.html. Also
+added making of true normative and descriptive analysers and generators, as well
+as moved all of the hfst speller building to the
+tools/spellcheckers/hfstspeller/ dir. More explicit separation of local and
+central code in src/.
+
+r63483:
+Added a simple header to the beginning of the compilation, to make it easier to
+spot each new language when building all languages in $GTHOME/langs/.
+
+r63469:
+With the recent fixes to regexp parsing in hfst-regexp2fst it was possible to
+bring the hfst compilation up to par with the Xerox compilation. In principle
+the Xerox and Hfst transducers should behave exactly the same - any deviation is
+a candidate bug in either the Xerox or the Hfst tools. This update requires hfst
+3.3.14 to work properly, the requirement is added to the configure.ac file.
+
+r63149:
+Removed references to newinfra/.
+
+r63144:
+Added warning about missing YAML testing, with short instructions on how to
+enable them.
+
+r62953:
+The top-level syntax include AM file had not been changed to reflect the
+rle->cg3 suffix change.
+
+r62867:
+Corrected a bug in the default generate-noun-lemmas.sh test script. Made file
+references more robust.
+
+r62683:
+Variables=cleaner code.
+
+r62663:
+Updated the yaml test runner to properly report the exit value of the yaml
+tests, and also to give directions for how to see the details of each test if it
+failed.
+
+r62650:
+Corrected typo in shell scripts.
+
+r62648:
+Several testing shell script updates: correct exit value when data files are not
+found, proper use of Autoconf-made variables (will free the test scripts from
+relying on the user setting up environment variables), and better checks on the
+availability of test data for the lemma generation test.
+
+r62643:
+Added check for the Xerox lookup tool, which also defines the LOOKUP variable.
+
+r62639:
+Reorganised AC processing of shell scripts to be more future-proof. Added AC
+variable to the AC-processed shell script to make casual by-lookers aware of the
+fact that the resulting shell script file is generated by AC.
+
+r62635:
+Moved Autoconf processing of the yaml testing shell script to the top of the
+list of AC_CONFIG_FILES, to avoid annoying warnings from chmod.
+
+r62621:
+Corrected error in previous commit.
+
+r62619:
+Forgot to update configure.ac.
+
+r62617:
+Refined the yaml test runner: more informative banner, ignore extra analyses
+(= removes false alarms).
+
+r62610:
+Added basic setup for running YAML tests in the test/src/morphology/ dir. The
+default setup will run all *.yaml files found in this dir, but this can be
+modified in the shell (*.sh.in) script.
+
+r62596:
+Enable yaml tests by magic.
+
+r62590:
+Added conditional support for running python-based tests in test/src/morphology.
+
+r62581:
+Added checks for Python 3.1+ and py-yaml, and defined CAN_YAML_TEST. The idea is
+that we will run the python-based tests only if the prerequisites are available
+to us, and skip them if not.
+
+r62276:
+Added missing entries in configure.ac and src/Makefile.am.
+
+r62275:
+Added support for transcribing transducers, ie transducers that change the input
+from one orthographical representation to another, e.g. date and time
+expressions as strings or digits to the opposite form.
+
+r62270:
+Renamed the default error model file, to follow the naming scheme used in the
+zhfst guidelines.
+
+r62265:
+Don't remove the *.tmp files - that destroys the dependency relationships for
+(auto)make, which forces a full recompilation of all target fst's, and a lot of
+extra waiting time.
+
+r62192:
+Add missing src to hfst spellchecker automaton path
+
+r62171:
+Added missing reference to dialect tag filter.
+
+r62151:
+Updated my simplistic noun generation script to be aware of its new location.
+
+r62147:
+Corrected typo in Makefile list in AC_CONFIG_FILES.
+
+r62145:
+Forgot to add the new Makefile's to the list of AC_CONFIG_FILES.
+
+r62141:
+Reorganised the test dir, in anticipation of a larger set of tools and source
+types in need of testing.
+
+r62122:
+Added test/data/typos.txt to hold a list of collected typos. The list is used
+both for testing spellers, and as part of the preprocessor used with the Xerox
+lookup tool.
+
+r62084:
+Added core filters for making transitivity and semantic tags optional in the
+default generator. This change fixes most of the generation issues.
+
+r62039:
+Generalised the local/language-specific *fst processing.
+
+r62010:
+Adding support for local/language-specific *fst processing.
+
+r61971:
+Reverting the copy source file step for $GTCORE/gtshare/src/filters/, replacing
+it with direct compilation. The main reason for copying was to have the source
+files available for distribution, but that is not required, since the
+distribution and installations of the languages depends on the presence of
+GTCORE. Instead we risk that people start to add the copied source files to svn.
+
+r61965:
+The GT_FILTER_TARGETS variable needs to be parametrised for HFST and Xerox also
+for the local modifications.
+
+r61961:
+Several small typos and glitches in building the main xfst's fixed.
+
+r61959:
+Removed an extraneous backslash that broke compilation.
+
+r61954:
+Hopefully this version of cp will work.
+
+r61953:
+Forgot to force the copy, which stopped the compilation.
+
+r61949:
+Added several (tag removal) filters from the old infra, and added compilation of
+them as well. Applied (composed) them on the generator and the analyser, such
+that the gen. and anal. should now produce the same output as in the old infra.
+Corrected the README file.
+
+r61776:
+Remove duplicate methods to enable toolkits; --with-options are to be used
+with optional path to tools. The automake tree will still have two
+conditionals on whether CAN and WANT hfst, xfst or somesuch
+
+r61734:
+Added border removal to the basic analyser and generator, such that they become
+useful.
+
+r61731:
+Made the first test script more robust: it bails out if no transducer is found,
+and gives basic feedback to whether it is testing Xerox or Hfst. The test data
+files are not deleted after the test run, so that they can be easily inspected
+if needed, even after a successful test run. It also uses the more common
+filename and morphological tags (=less typing by default).
+
+r61723:
+Added the first test script: it tests whether noun lemmas do generate. The
+script does contain some language-specific bits, and must thus be adapted to the
+requirements of each language.
+
+r61712:
+Corrected reference to inituppercase.?fst.
+
+r61708:
+Corrected compilation of hyphenation rules.
+
+r61706:
+Corrected compilation of phonetic/orth2ipa rules.
+
+r61685:
+Added basic structure for hyphenation and conversion to IPA.
+
+r61658:
+Added an empty Hunspell dir to indicate the home of Hunspell building.
+
+r61640:
+Removed (auto)make processing of the now deleted src/spellchecker/ dir.
+Refactored the phonotactics processing, such that xfst script files are on an
+equal foot with twolc files, and such that it is easy to switch from one to the
+other. Also added some basic template files for disambiguation and dependency
+tagging, taken from the faroese source.
+
+r61605:
+Reorganized spell checker build structure, moving it to a new tools/ dir, which
+will also be home to other applications of the basic linguistic analysers.
+
+r61603:
+Added build support for xml source files.
+
+r61520:
+Added initial support for xml source files.
+NB! The support isn't fully according to GNU (autotools) standards yet, but will have to do for the moment.
+
+r61472:
+Reverted the ignores - merging wasn't working properly for properties, and
+caused a lot of noise. Hopefully this commit will cancel that noise.
+
+r61464:
+Added svn:ignore on most dirs, in the hope that they will be copied over to the
+language dirs.
+
+r61458:
+A lot of cleanup and corrections:
+* suffix rules in more places (although not in all - that is not possible)
+* removed automake warning about pattern rules - we need them
+* checked all *-include.am files for consistency, added missing Xerox and HFST
+  targets were needed, corrected vars to HFST tools, added comments and
+  generally made the files easier to maintain (I hope).
+
+r61422:
+Only pattern rules for uppercasing targets.
+
+r61380:
+Replaced pattern rules with suffix rules in phonology (twolc) processing. First
+step in switching to suffix rules everywhere, for backwards compatibility, and
+fewer automake errors. Also added support for compiling phonologies written as
+xfst script files.
+
+r61346:
+Added Autoconf processing of the Makefile.am files in test/.
+
+r61318:
+More elaborate dir structure in test/, added Makefile.am files everywhere in
+test/, added test/ to SUBDIRS.
+
+r59870:
+Include filters and indent properly, use gtcore version of editdist.py in
+spellers
+
+r59759:
+Corrected syntax error, renamed a couple of errors.
+
+r59755:
+Finally added initial uppercase to the actual analysing transducer. NB! It
+presently works only for Xerox transducers. The code for HFST looks correct to
+me, but it still doesn't work. Will have to debug this further later.
+
+r59728:
+Corrected file suffix match for xfst script files.
+
+r59707:
+Revert tests
+
+r59705:
+Test commit
+
+r59643:
+Added uppercasing compilation including proper processing for HFST. Uppercasing
+is not yet applied to the output transducers. That is coming in a second commit.
+Added a variable for hfst-xfst (and tested for its existence).
+
+r59115:
+Corrected dependency for speller transducer. Corrected filter path.
+
+r59113:
+Correct the path of merge instructions.
+
+r59079:
+Added filter compilation and processing of fst's.
+
+r58484:
+Corrected path to speller metadata files, corrected commands for them.
+
+r58482:
+Updated zhfst building according to new location of files.
+
+r58478:
+Replaced direct command calls with variables, completed and corrected a couple
+of commands, made the transducer commands consistent across applications.
+
+r58471:
+The timestamp file has been renamed, with corresponding changes in the
+Makefile.am.
+
+r58456:
+Making the echo silent for clean output.
+
+r58409:
+Renamed a couple of folders and files, moved hfst & voikko speller metadata
+files to a more appropriate place.
+
+Updated the top Makefile.am to properly check for changes to this file before
+building anything else.
