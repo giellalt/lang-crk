@@ -65,3 +65,64 @@ flag diacritics to restrict morhpological combinatorics:
 The word forms in UNDEFINED language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
+!!!The Plains Cree morphophonological/twolc rules file 
+
+
+!!Alphabet
+
+
+ *  a b c d e f g h i j k l m n o p q r s t u v w x y z 
+ *  á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý 		 
+
+ *  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+ *  Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý 		 
+
+ *  %>:0 ;												 
+
+Long vowels are written as â, ê, ..., and not with macrons.
+The idea is to allow for writing with macron in a separate
+spellrelax component.
+
+!!Sets
+
+
+ *  Vow      = a e i o u									   \\
+              á é í ó ú à è ì ò ù ä ë ï ö ü â ê î ô û ã ý ; 
+ *  LongVow  = â ê î ô û ;      							  
+ *  ShortVow = a e i o u ;									  
+ *  Cns      = b c d f g h j k l m n p q r s t v w x y z ;	  
+
+
+
+!!!Rules 
+
+The rules are highly tentative, they are adjusted from the description 
+in the Wikipedia article on Plains Cree
+
+
+__i deletion in suffixes before vowel-final stems __ 
+
+
+
+The idea here is to list the suffix as -ik etc. in
+lexc, but then delete it here.
+
+__Stem palatalisation __ 
+
+
+Note: It might be that the t:c is not written as c.
+
+
+
+__Glide insertion __ 
+
+
+__Short vowel deletion __ 
+
+__Short vowel deletion __ 
+
+
+
+
+
+
