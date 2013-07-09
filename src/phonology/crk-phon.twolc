@@ -1,32 +1,94 @@
-!! =================================== !
-!! The Plains Cree morphophonological/twolc rules file !
-!! =================================== !
+!  ===================================================
+!! !!!The Plains Cree morphophonological/twolc rules file 
+!  ===================================================
+
+
+!! !!Alphabet
 
 Alphabet
- a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å
- á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý þ ñ ð ß ç
 
- A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å
- Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý þ Ñ Ð
+ a b c d e f g h i j k l m n o p q r s t u v w x y z !!= * @CODE@
+ á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý 		 !!= * @CODE@
 
- %>:0 ;
+ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z !!= * @CODE@
+ Á É Ó Ú Í À È Ò Ù Ì Ä Ë Ö Ü Ï Â Ê Ô Û Î Ã Ý 		 !!= * @CODE@
+
+ %>:0 ;												 !!= * @CODE@
+
+!! Long vowels are written as â, ê, ..., and not with macrons.
+!! The idea is to allow for writing with macron in a separate
+!! spellrelax component.
+
+!! !!Sets
 
 Sets
 
- Vow = a e i o u y æ ø å 
-       á é ó ú í à è ò ù ì ä ë ö ü ï â ê ô û î ã ý ;
- Cns = b c d f g h j k l m n p q r s t v w x z ð þ ;
- 
+ Vow      = a e i o u									  !!= * @CODE@ \\
+            á é í ó ú à è ì ò ù ä ë ï ö ü â ê î ô û ã ý ; !!=  @CODE@
+ LongVow  = â ê î ô û ;      							  !!= * @CODE@
+ ShortVow = a e i o u ;									  !!= * @CODE@
+ Cns      = b c d f g h j k l m n p q r s t v w x y z ;	  !!= * @CODE@
+
+
+
+!! !!!Rules 
 Rules
 
-"Deleting stem-final s in s genitive"
- s:0 <=> Vow s %>: _ ;
+!! The rules are highly tentative, they are adjusted from the description 
+!! in the Wikipedia article on Plains Cree
 
-!€ primus%>s
-!€ primus00
 
-!€grís%>s
-!€grís00
+"i deletion in suffixes before vowel-final stems" 
+!! __@RULENAME@__ 
+ i:0 <=> Vow %>: _ ;
+ 
+!€ an>ik
+!€ an0ik
 
-!$grís%>s
-!$grís0s
+!€ a>ik
+!€ a00k
+
+!! The idea here is to list the suffix as -ik etc. in
+!! lexc, but then delete it here.
+
+"Stem palatalisation" 
+!! __@RULENAME@__ 
+ t:c <=> Vow _ %>: i ;
+
+!€ at>ik
+!€ ac0ik
+
+!! Note: It might be that the t:c is not written as c.
+
+
+
+"Glide insertion" 
+!! __@RULENAME@__ 
+ 0:y <=> LongVow _ %>: LongVow ;
+ 
+!€ kîsikâ>âpan
+!€ kîsikây0âpan 
+
+"Short vowel deletion" 
+!! __@RULENAME@__ 
+ Vx:0 <=> LongVow %>: _ ;
+!                            _ %>: LongVow ;
+	where Vx in ( ShortVow ) ;
+	
+ "Long ww shortening" 
+ !! __@RULENAME@__ 
+ w:0 <=> w %>: _ ; 
+ 
+!€ ahkw>wâw
+!€ ahkw00âw
+
+
+!"Apocopation"
+! ShortVow:0 <=> Vow Cns:+ Vow Cns:+ _ .#. ;
+
+! Consider having apocopation lexical instead.
+! This is intended for the type sîsîpa "duck" > sîsîp,
+! but a way of doing it would be to have sîsîp as stem
+! and then add the -a when needed.
+
+ 
