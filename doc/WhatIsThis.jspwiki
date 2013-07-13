@@ -1,7 +1,9 @@
 
 This is a grammatical analyser for Plains Cree.
 
-Nothing has been done to it yet, it just contain dummy files.
+Nothing has been done to it yet, it just contain dummy files, except
+for the file on morphophonology, which sketches some assimilation
+processes.
 
 -----
 
@@ -9,3 +11,7 @@ The structure of the source file catalogue is the same for all
 the languages, it is documented [here|../../infra/infraremake/NewinfraCatalogues.html].
 
 
+
+These pages document how to build the parsers. If you want to know
+how to use them on the command line, read the
+[How to use the morphological parsers|../../tools/docu-sme-manual.html] page.
