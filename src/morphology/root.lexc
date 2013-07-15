@@ -13,109 +13,145 @@
 ! giellatekno@hum.uit.no or divvun@samediggi.no
 
 ! ========================================================================== !
-! !!            !!!Plains Cree morphological analyser                      !
+!!            !!!Plains Cree morphological analyser                      
 ! ========================================================================== !
-!! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
+
+!! INTRODUCTION TO THE MORPHOLOGICAL ANALYSER OF Plains Cree .
  
 
 Multichar_Symbols  !!≈ !!!@CODE@ definitions
 
 !! !!Analysis symbols
-!! ----------------
-!! The morphological analyses of wordforms of UNDEFINED language are presented
+
+!! The morphological analyses of wordforms of Plains Cree are presented
 !! in this system in terms of following symbols.
 !! (It is highly suggested to follow existing standards when adding new tags).
 
-!! The parts-of-speech are:
- +N +A +Adv +V                                 !!≈
- +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
+!! POS
 
-!! The parts of speech are further split up into:
- +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
++N
++V
++A
 
-!! The Usage extents are marked using following tags:
- +Use/Sub   
- +Use/-Spell 
++Adv
++CC
++CS
++Interj
++Pron
++Num
 
-!! The nominals are inflected in the following Case and Number
- +Sg +Du +Pl
- +Ess +Nom +Gen +Acc +Ill +Loc +Com +Com/Sh
+!! Verbal MSP
++Prs  !!= * @CODE@ 
++Fut  !!= * @CODE@ 
++Prt  !!= * @CODE@ 
++Prf  !!= * @CODE@ 
 
-!! The possession is marked as such:
- +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
-!! The comparative forms are:
- +Comp +Superl
-!! Numerals are classified under:
- +Attr +Card
- +Ord 
-!! Verb moods are:
- +Ind +Prs +Prt +Pot +Cond +Imprt
-!! Verb personal forms are:
- +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
-!! Other verb forms are
- +Inf +Ger +ConNeg +ConNegII +Neg +ImprtII +PrsPrc +PrfPrc +Sup +VGen +VAbess
++Ind  !!= * @CODE@ 
++Imp  !!= * @CODE@ Imperative
++Sbj  !!= * @CODE@ Subjunctive
++Imm  !!= * @CODE@ Immediate,
 
-! Abbreviated words are classified with:
- +ABBR +ACR 
-!! Special symbols are classified with:
-+CLB +PUNCT +LEFT +RIGHT
-!! The verbs are syntactically split according to transitivity:
- +TV +IV
-!! Special multiword units are analysed with:
- +Multi
-!! Non-dictionary words can be recognised with:
- +Guess
++Int  !!= * @CODE@ Interdiction,
++Dur  !!= * @CODE@ Durative
 
-!! Question and Focus particles:
- +Qst +Foc
++1Sg    !!= * @CODE@ first singular
++2Sg    !!= * @CODE@ etc
++3Sg    !!= * @CODE@
++3oSg   !!= * @CODE@ 3o is obviative,
++3iSg   !!= * @CODE@ 3i is indefinite
+
++1Pl    !!= * @CODE@ 1Pl is exclusive plural (I, them, not you)
++2Pl    !!= * @CODE@
++3Pl    !!= * @CODE@
++3oPl   !!= * @CODE@
++3iPl   !!= * @CODE@
++12Pl   !!= * @CODE@ 12Pl is inclusive plural (I, you, ...)
+
++1SgO   !!= * @CODE@ objective conjugation
++2SgO   !!= * @CODE@
++3SgO   !!= * @CODE@
++SgO    !!= * @CODE@
++3oSgO  !!= * @CODE@ obviative with objective conjugation
++3iSgO  !!= * @CODE@
++1PlO   !!= * @CODE@
++P2lO   !!= * @CODE@
++3PlO   !!= * @CODE@
++PlO    !!= * @CODE@
++3oPlO  !!= * @CODE@
++3iPlO  !!= * @CODE@
+
++Inf    !!= * @CODE@ infinitive (infinite?)
++Pos    !!= * @CODE@ postitive
++Neg    !!= * @CODE@ negative
++ConNeg !!= * @CODE@ accompanying negative form
+
+!! Nominal MSP
++Sg		 !!= * @CODE@ singular
++Pl		 !!= * @CODE@ plural
+
++Px1Sg	 !!= * @CODE@ person prefixes for nouns
++Px2Sg	 !!= * @CODE@
++Px3Sg	 !!= * @CODE@
++Px1Pl	 !!= * @CODE@ obviative
++Px12Pl	 !!= * @CODE@ inclusive
++Px2Pl	 !!= * @CODE@
++Px3Pl	 !!= * @CODE@
+
++IA      !!= * @CODE@ intransitive with animate subject, 
++II      !!= * @CODE@ intransitive with inanimate subject, 
++TA      !!= * @CODE@ transitive with animate object, and 
++TI      !!= * @CODE@ transitive with inanimate object.
+
++AN		 !!= * @CODE@ animate noun
++IN		 !!= * @CODE@ inanimate noun
+
+%> 		 !!= * @CODE@ suffix border
 
 
-!! Semantics are classified with
- +Mal +Fem +Sur 
- +Plc 
- +Org
- +Obj
- +Ani
- +Hum
- +Plant
- +Group
- +Time 
- +Txt
- +Route
- +Measr 
- +Wthr
- +Build 
- +Edu
- +Veh
- +Clth
+!! !! Flagdiacritics 
+
+!! These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
+
+@U.verb.1sgindep@ 
+@U.verb.2sgindep@ 
+@U.verb.3sgindep@ 
+@U.verb.3osgindep@ 
+@U.verb.3isgindep@ 
+@U.verb.1plindep@ 
+@U.verb.12plindep@ 
+@U.verb.2plindep@ 
+@U.verb.3plindep@ 
+
+@U.verb.1sgsbj@ 
+@U.verb.2sgsbj@ 
+@U.verb.3sgsbj@ 
+@U.verb.3osgsbj@ 
+@U.verb.3isgsbj@ 
+@U.verb.1plsbj@ 
+@U.verb.12plsbj@ 
+@U.verb.2plsbj@ 
+@U.verb.3plsbj@ 
+
+@U.verb.2sgimp@
+@U.verb.1plimp@
+@U.verb.2plimp@
+
+@U.noun.1sg@
+@U.noun.2sg@
+@U.noun.3sg@
+@U.noun.1pl@
+@U.noun.12pl@
+@U.noun.2pl@
+@U.noun.3pl@
 
 
-!! Derivations are classified under the morphophonetic form of the suffix, the
-!! source and target part-of-speech.
- +V→N +V→V +V→A
- +Der/xxx
+! Key lexicon
 
+LEXICON Root 		 !!=  @CODE@ is where it all starts
 
-!! Morphophonology
-!! ---------------
-!! To represent phonologic variations in word forms we use the following
-!! symbols in the lexicon files:
- {aä} {oö} {uü}
+Noun ;	             !!= * @CODE@ 
+Verb ;	             !!= * @CODE@ 
+Pronoun ;            !!= * @CODE@ 
+Punctuation ;
+!Particles ;
 
-!! And following triggers to control variation
- {front} {back}
-
-!! We have manually optimised the structure of our lexicon using following
-!! flag diacritics to restrict morhpological combinatorics:
-@P.NeedNoun.ON@  @D.NeedNoun.ON@  @C.NeedNoun@
-
-LEXICON Root
-!! The word forms in UNDEFINED language start from the lexeme roots of basic
-!! word classes, or optionally from prefixes:
-0   Nouns   ;
-0   Verbs   ;
-0   Pronouns    ;
-0   Numerals    ;
-0   Prefixes    ;
-
-! vim: set ft=xfst-lexc:
