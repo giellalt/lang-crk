@@ -1,15 +1,22 @@
-!! Noun inflection
-!! ---------------
-!! The UNDEFINED language nouns inflect in cases.
 
-LEXICON Cases
-+N+sg+nom:0     #   ;
-+N+pl+nom:i     #   ;
-+N+sg+loc:as    #   ;
-+N+pl+loc:ias   #   ;
-+N+sg+acc:at    #   ;
-+N+pl+acc:iat   #   ;
-#:0   Nouns   ;
+! ========================================================================== !
+!!                           !!! Plains Cree noun morphology                           
+! ========================================================================== !
 
-! vim: set ft=xfst-lexc:
+LEXICON INDECL
++N+IN+Sg: # ;
++N+IN+Sg: IN_SUFF ;
+
++N+IN+Pl:i # ;
++N+IN+Pl: IN_SUFF ;
+
+LEXICON IN_SUFF
++Px1Sg@U.noun.1sg@:0@U.noun.1sg@ # ;
++Px2Sg@U.noun.2sg@:0@U.noun.2sg@ # ;
++Px3Sg@U.noun.3sg@:0@U.noun.3sg@ # ;
++Px1Pl@U.noun.1pl@:@U.noun.1pl@%>inaan # ;   ! exclusive Pl
++Px12Pl@U.noun.12pl@:@U.noun.12pl@%>inaan # ; ! inclusive Pl
++Px2Pl@U.noun.2pl@:@U.noun.2pl@%>iwaa # ;
++Px3Pl@U.noun.3pl@:@U.noun.3pl@%>iwaa # ;
+
 

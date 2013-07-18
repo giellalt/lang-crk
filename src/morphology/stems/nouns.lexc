@@ -1,8 +1,68 @@
-!! Nouns
-!! -----
-!! Nouns in UNDEFINED language are things.
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@samediggi.no
 
-LEXICON Nouns
-noun    Cases   ;
+! ========================================================================== !
+!!                           !!! Plains Cree noun stems                           
+! ========================================================================== !
 
-! vim: set ft=xfst-lexc:
+!! The file
+
+
+!! !! The prefixes
+
+LEXICON Noun 
+
+!AN ; ! Animate nouns
+IN ; ! Inanimate nouns
+!KINSHIP ;
+
+
+
+
+LEXICON IN
+
+! Absolutive (non-Px) declension
+INSTEMS ; 
+
+! Possessive declension
+@U.noun.1sg@:nin@U.noun.1sg@ INSTEMS ;
+@U.noun.2sg@:gi@U.noun.2sg@ INSTEMS ;
+@U.noun.3sg@:o@U.noun.3sg@ INSTEMS ;
+
+@U.noun.1pl@:nin@U.noun.1pl@ INSTEMS ;   ! exclusive Pl
+@U.noun.12pl@:gi@U.noun.12pl@ INSTEMS ; ! inclusive Pl
+@U.noun.2pl@:gi@U.noun.2pl@ INSTEMS ;   
+@U.noun.3pl@:o@U.noun.3pl@ INSTEMS ;
+
+
+!! !! The stems
+
+!! ! Animate Nouns
+!    =============
+
+LEXICON ANSTEMS
+
+inini ANDECL "man" ; 
+
+LEXICON INSTEMS
+môhkomân INDECL "knife" ;
+atim INDECL "dog" ;
+
+
+
+
+
+
+
+
