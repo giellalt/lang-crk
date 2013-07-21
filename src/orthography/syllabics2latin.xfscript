@@ -63,6 +63,13 @@ define twêRule [ t w ê ] <- ᑘ  ;
 define twîRule [ t w î ] <- ᑜ  ;  
 define twôRule [ t w ô ] <- ᑠ  ;  
 
+define ywaRule [ y w a ] <- ᔺ  ;  
+define ywiRule [ y w i ] <- ᔲ  ;  
+define ywoRule [ y w o ] <- ᔶ  ;  
+define ywâRule [ y w â ] <- ᔼ  ;  
+define ywêRule [ y w ê ] <- ᔰ  ;  
+define ywîRule [ y w î ] <- ᔴ  ;  
+define ywôRule [ y w ô ] <- ᔸ  ;  
 
 
 ! Without w
@@ -140,7 +147,7 @@ define yêRule [ y ê ] <- ᔦ  ;
 define yîRule [ y î ] <- ᔩ  ;  
 define yôRule [ y ô ] <- ᔫ  ;  
 
-define hkRule [ h k ] <- ᕁ  ;  
+define hkRule [ h k ] <- ᕽ  ;  
 
 
 ! one-letter symbols
@@ -162,9 +169,12 @@ define pRule [ p ] <- ᑊ  ;
 define sRule [ s ] <- ᐢ  ; 
 define tRule [ t ] <- ᐟ  ; 
 define wRule [ v ] <- ᐤ  ; 
+define yRule [ y ] <- ᕀ  ; 
+
 
 define lRule [ v ] <- ᓬ ; 
 define rRule [ v ] <- ᕒ ;  
+define FullStopRule [ %. ] <- ᙮ ;
 
 
 
@@ -224,6 +234,14 @@ read regex [ cwaRule
 .o. twêRule
 .o. twîRule
 .o. twôRule
+
+.o. ywaRule
+.o. ywiRule
+.o. ywoRule
+.o. ywâRule
+.o. ywêRule
+.o. ywîRule
+.o. ywôRule
 
 
 .o. caRule
@@ -298,6 +316,8 @@ read regex [ cwaRule
 .o. yîRule
 .o. yôRule
 
+.o. hkRule
+
 .o. aRule 
 .o. iRule 
 .o. oRule 
@@ -315,7 +335,11 @@ read regex [ cwaRule
 .o. sRule 
 .o. tRule 
 .o. wRule 
+.o. yRule
+
 .o. lRule 
-.o. rRule  ] ; 
+.o. rRule 
+
+.o. FullStopRule ] ; 
  
 invert net ; 
