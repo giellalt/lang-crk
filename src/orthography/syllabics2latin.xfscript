@@ -1,375 +1,321 @@
- 
-define nngiiRule [ n n g i i ] <- ᙱ  ;  
-define nnguuRule [ n n g u u ] <- ᙳ  ;  
-define nngaaRule [ n n g a a ] <- ᙵ  ;  
- 
-define NNGRule [ n n g ] <- ᖖ ; 
- 
-define ngaaiRule [ n g a a i ] <- ᙰ  ;  
-define ngiiRule [ n g i i ] <- ᖏ  ;  
-define nguuRule [ n g u u ] <- ᖑ  ;  
-define ngaaRule [ n g a a ] <- ᖓ  ;  
- 
-define NGRule [ n g ] <- ᖕ ; 
- 
-define paaiRule [ p a a i ] <- ᐯ  ;  
-define piiRule [ p i i ] <- ᐲ  ;  
-define puuRule [ p u u ] <- ᐴ  ;  
-define paaRule [ p a a ] <- ᐹ  ;  
- 
-define taaiRule [ t a a i ] <- ᑌ  ;  
-define tiiRule [ t i i ] <- ᑏ  ;  
-define tuuRule [ t u u ] <- ᑑ  ;  
-define taaRule [ t a a ] <- ᑖ  ;  
- 
-define kaaiRule [ k a a i ] <- ᑫ  ;  
-define kiiRule [ k i i ] <- ᑮ  ;  
-define kuuRule [ k u u ] <- ᑰ  ;  
-define kaaRule [ k a a ] <- ᑳ  ;  
- 
-define gaaiRule [ g a a i ] <- ᒉ  ;  
-define giiRule [ g i i ] <- ᒌ  ;  
-define guuRule [ g u u ] <- ᒎ  ;  
-define gaaRule [ g a a ] <- ᒑ  ;  
- 
-define maaiRule [ m a a i ] <- ᒣ  ;  
-define miiRule [ m i i ] <- ᒦ  ;  
-define muuRule [ m u u ] <- ᒨ  ;  
-define maaRule [ m a a ] <- ᒫ  ;  
- 
-define naaiRule [ n a a i ] <- ᓀ  ;  
-define niiRule [ n i i ] <- ᓃ  ;  
-define nuuRule [ n u u ] <- ᓅ  ;  
-define naaRule [ n a a ] <- ᓈ  ;  
- 
-define saaiRule [ s a a i ] <- ᓭ  ;  
-define siiRule [ s i i ] <- ᓰ  ;  
-define suuRule [ s u u ] <- ᓲ  ;  
-define saaRule [ s a a ] <- ᓵ  ;  
- 
-define haaiRule [ h a a i ] <- ᓭ  ;  
-define hiiRule [ h i i ] <- ᓰ  ;  
-define huuRule [ h u u ] <- ᓲ  ;  
-define haaRule [ h a a ] <- ᓵ  ;  
- 
-define laaiRule [ l a a i ] <- ᓓ  ;  
-define liiRule [ l i i ] <- ᓖ  ;  
-define luuRule [ l u u ] <- ᓘ  ;  
-define laaRule [ l a a ] <- ᓛ  ;  
- 
-define jaaiRule [ j a a i ] <- ᔦ  ;  
-define jiiRule [ j i i ] <- ᔩ  ;  
-define juuRule [ j u u ] <- ᔫ  ;  
-define jaaRule [ j a a ] <- ᔮ  ;  
- 
-define vaaiRule [ v a a i ] <- ᕓ  ;  
-define viiRule [ v i i ] <- ᕖ  ;  
-define vuuRule [ v u u ] <- ᕘ  ;  
-define vaaRule [ v a a ] <- ᕚ  ;  
- 
-define raaiRule [ r a a i ] <- ᕃ  ;  
-define riiRule [ r i i ] <- ᕇ  ;  
-define ruuRule [ r u u ] <- ᕉ  ;  
-define raaRule [ r a a ] <- ᕌ  ;  
- 
-define qaaiRule [ q a a i ] <- ᙯ  ;  
-define qiiRule [ q i i ] <- ᖀ  ;  
-define quuRule [ q u u ] <- ᖂ  ;  
-define qaaRule [ q a a ] <- ᖄ  ;  
- 
-define łiiRule [ ł i i ] <- ᖡ  ;  
-define łuuRule [ ł u u ] <- ᖣ  ;  
-define łaaRule [ ł a a ] <- ᖥ  ;  
- 
-define aaiRule [ a a i ] <- ᐁ  ;  
-define iiRule [ i i ] <- ᐄ  ;  
-define uuRule [ u u ] <- ᐆ  ;  
-define aaRule [ a a ] <- ᐋ  ;  
- 
- 
- 
-define nngiRule [ n n g i ] <- ᙱ  ;  
-define nnguRule [ n n g u ] <- ᙳ  ;  
-define nngaRule [ n n g a ] <- ᙵ  ;  
- 
-define ngaiRule [ n g a i ] <- ᙰ  ;  
-define ngiRule [ n g i ] <- ᖏ  ;  
-define nguRule [ n g u ] <- ᖑ  ;  
-define ngaRule [ n g a ] <- ᖓ  ;  
- 
-define paiRule [ p a i ] <- ᐯ  ;  
-define piRule [ p i ] <- ᐱ  ;  
-define puRule [ p u ] <- ᐳ  ;  
-define paRule [ p a ] <- ᐸ  ;  
- 
-define taiRule [ t a i ] <- ᑌ  ;  
-define tiRule [ t i ] <- ᑎ  ;  
-define tuRule [ t u ] <- ᑐ  ;  
-define taRule [ t a ] <- ᑕ  ;  
- 
-define kaiRule [ k a i ] <- ᑫ  ;  
-define kiRule [ k i ] <- ᑭ  ;  
-define kuRule [ k u ] <- ᑯ  ;  
+
+! Script for syll to latin for Plains Cree, 
+! or more general, for Western Cree
+
+
+! with w
+
+! 3-letter symbols
+
+define cwaRule [ c w a ] <- ᒝ  ;  
+define cwiRule [ c w i ] <- ᒕ  ;  
+define cwoRule [ c w o ] <- ᒙ  ;  
+define cwâRule [ c w â ] <- ᒟ  ;  
+define cwêRule [ c w ê ] <- ᒓ  ;  
+define cwîRule [ c w î ] <- ᒗ  ;  
+define cwôRule [ c w ô ] <- ᒛ  ;  
+
+define kwaRule [ k w a ] <- ᑿ  ;  
+define kwiRule [ k w i ] <- ᑷ  ;  
+define kwoRule [ k w o ] <- ᑻ  ;  
+define kwâRule [ k w â ] <- ᒁ  ;  
+define kwêRule [ k w ê ] <- ᑵ  ;  
+define kwîRule [ k w î ] <- ᑹ  ;  
+define kwôRule [ k w ô ] <- ᑽ  ;  
+
+define mwaRule [ m w a ] <- ᒷ  ;  
+define mwiRule [ m w i ] <- ᒯ  ;  
+define mwoRule [ m w o ] <- ᒳ  ;  
+define mwâRule [ m w â ] <- ᒹ  ;  
+define mwêRule [ m w ê ] <- ᒭ  ;  
+define mwîRule [ m w î ] <- ᒱ  ;  
+define mwôRule [ m w ô ] <- ᒵ  ;  
+
+define nwaRule [ n w a ] <- ᓌ  ;  
+define nwiRule [ n w i ] <- ᣇ  ;  
+define nwoRule [ n w o ] <- ᣋ  ;  
+define nwâRule [ n w â ] <- ᓎ  ;  
+define nwêRule [ n w ê ] <- ᓊ  ;  
+define nwîRule [ n w î ] <- ᣉ  ;  
+define nwôRule [ n w ô ] <- ᣍ  ;  
+
+define pwaRule [ p w a ] <- ᑅ  ;  
+define pwiRule [ p w i ] <- ᐽ  ;  
+define pwoRule [ p w o ] <- ᑁ  ;  
+define pwâRule [ p w â ] <- ᑇ  ;  
+define pwêRule [ p w ê ] <- ᐻ  ;  
+define pwîRule [ p w î ] <- ᐿ  ;  
+define pwôRule [ p w ô ] <- ᑃ  ;  
+
+define swaRule [ s w a ] <- ᔁ  ;  
+define swiRule [ s w i ] <- ᓹ  ;  
+define swoRule [ s w o ] <- ᓽ  ;  
+define swâRule [ s w â ] <- ᔃ  ;  
+define swêRule [ s w ê ] <- ᓷ  ;  
+define swîRule [ s w î ] <- ᓻ  ;  
+define swôRule [ s w ô ] <- ᓿ  ;  
+
+define twaRule [ t w a ] <- ᑢ  ;  
+define twiRule [ t w i ] <- ᑚ  ;  
+define twoRule [ t w o ] <- ᑞ  ;  
+define twâRule [ t w â ] <- ᑤ  ;  
+define twêRule [ t w ê ] <- ᑘ  ;  
+define twîRule [ t w î ] <- ᑜ  ;  
+define twôRule [ t w ô ] <- ᑠ  ;  
+
+
+
+! Without w
+! two-letter symbols
+
+define caRule [ c a ] <- ᒐ  ;  
+define ciRule [ c i ] <- ᒋ  ;  
+define coRule [ c o ] <- ᒍ  ;  
+define câRule [ c â ] <- ᒑ  ;  
+define cêRule [ c ê ] <- ᒉ  ;  
+define cîRule [ c î ] <- ᒌ  ;  
+define côRule [ c ô ] <- ᒎ  ;  
+
 define kaRule [ k a ] <- ᑲ  ;  
- 
-define gaiRule [ g a i ] <- ᒉ  ;  
-define giRule [ g i ] <- ᒋ  ;  
-define guRule [ g u ] <- ᒍ  ;  
-define gaRule [ g a ] <- ᒐ  ;  
- 
-define maiRule [ m a i ] <- ᒣ  ;  
-define miRule [ m i ] <- ᒥ  ;  
-define muRule [ m u ] <- ᒧ  ;  
+define kiRule [ k i ] <- ᑭ  ;  
+define koRule [ k o ] <- ᑯ  ;  
+define kâRule [ k â ] <- ᑳ  ;  
+define kêRule [ k ê ] <- ᑫ  ;  
+define kîRule [ k î ] <- ᑮ  ;  
+define kôRule [ k ô ] <- ᑰ  ;  
+
 define maRule [ m a ] <- ᒪ  ;  
- 
-define naiRule [ n a i ] <- ᓀ  ;  
-define niRule [ n i ] <- ᓂ  ;  
-define nuRule [ n u ] <- ᓄ  ;  
+define miRule [ m i ] <- ᒥ  ;  
+define moRule [ m o ] <- ᒧ  ;  
+define mâRule [ m â ] <- ᒫ  ;  
+define mêRule [ m ê ] <- ᒣ  ;  
+define mîRule [ m î ] <- ᒦ  ;  
+define môRule [ m ô ] <- ᒨ  ;  
+
 define naRule [ n a ] <- ᓇ  ;  
- 
-define saiRule [ s a i ] <- ᓭ  ;  
-define siRule [ s i ] <- ᓯ  ;  
-define suRule [ s u ] <- ᓱ  ;  
+define niRule [ n i ] <- ᓂ  ;  
+define noRule [ n o ] <- ᓄ  ;  
+define nâRule [ n â ] <- ᓈ  ;  
+define nêRule [ n ê ] <- ᓀ  ;  
+define nîRule [ n î ] <- ᓃ  ;  
+define nôRule [ n ô ] <- ᓅ  ;  
+
+define paRule [ p a ] <- ᐸ  ;  
+define piRule [ p i ] <- ᐱ  ;  
+define poRule [ p o ] <- ᐳ  ;  
+define pâRule [ p â ] <- ᐹ  ;  
+define pêRule [ p ê ] <- ᐯ  ;  
+define pîRule [ p î ] <- ᐲ  ;  
+define pôRule [ p ô ] <- ᐴ  ;  
+
 define saRule [ s a ] <- ᓴ  ;  
- 
-define haiRule [ h a i ] <- ᓭ  ;  
-define hiRule [ h i ] <- ᓯ  ;  
-define huRule [ h u ] <- ᓱ  ;  
-define haRule [ h a ] <- ᓴ  ;  
- 
-define laiRule [ l a i ] <- ᓓ  ;  
-define liRule [ l i ] <- ᓕ  ;  
-define luRule [ l u ] <- ᓗ  ;  
-define laRule [ l a ] <- ᓚ  ;  
- 
-define jaiRule [ j a i ] <- ᔦ  ;  
-define jiRule [ j i ] <- ᔨ  ;  
-define juRule [ j u ] <- ᔪ  ;  
-define jaRule [ j a ] <- ᔭ  ;  
- 
-define vaiRule [ v a i ] <- ᕓ  ;  
-define viRule [ v i ] <- ᕕ  ;  
-define vuRule [ v u ] <- ᕗ  ;  
-define vaRule [ v a ] <- ᕙ  ;  
- 
-define raiRule [ r a i ] <- ᕃ  ;  
-define riRule [ r i ] <- ᕆ  ;  
-define ruRule [ r u ] <- ᕈ  ;  
-define raRule [ r a ] <- ᕋ  ;  
- 
-define qaiRule [ q a i ] <- ᙯ  ;  
-define qiRule [ q i ] <- ᕿ  ;  
-define quRule [ q u ] <- ᖁ  ;  
-define qaRule [ q a ] <- ᖃ  ;  
- 
-define łiRule [ ł i ] <- ᖠ  ;  
-define łuRule [ ł u ] <- ᖢ  ;  
-define łaRule [ ł a ] <- ᖤ  ;  
- 
-define aiRule [ a i ] <- ᐁ  ;  
-define iRule [ i ] <- ᐃ  ;  
-define uRule [ u ] <- ᐅ  ;  
+define siRule [ s i ] <- ᓯ  ;  
+define soRule [ s o ] <- ᓱ  ;  
+define sâRule [ s â ] <- ᓵ  ;  
+define sêRule [ s ê ] <- ᓭ  ;  
+define sîRule [ s î ] <- ᓰ  ;  
+define sôRule [ s ô ] <- ᓲ  ;  
+
+define taRule [ t a ] <- ᑕ  ;  
+define tiRule [ t i ] <- ᑎ  ;  
+define toRule [ t o ] <- ᑐ  ;  
+define tâRule [ t â ] <- ᑖ  ;  
+define têRule [ t ê ] <- ᑌ  ;  
+define tîRule [ t î ] <- ᑏ  ;  
+define tôRule [ t ô ] <- ᑑ  ;  
+
+define waRule [ w a ] <- ᐘ  ;	
+define wiRule [ w i ] <- ᐏ  ;	
+define woRule [ w o ] <- ᐓ  ;	
+define wâRule [ w â ] <- ᐚ  ;
+define wêRule [ w ê ] <- ᐍ  ;	
+define wîRule [ w î ] <- ᐑ  ;	
+define wôRule [ w ô ] <- ᐕ  ;	
+
+define yaRule [ y a ] <- ᔭ  ;  
+define yiRule [ y i ] <- ᔨ  ;  
+define yoRule [ y o ] <- ᔪ  ;  
+define yâRule [ y â ] <- ᔮ  ;  
+define yêRule [ y ê ] <- ᔦ  ;  
+define yîRule [ y î ] <- ᔩ  ;  
+define yôRule [ y ô ] <- ᔫ  ;  
+
+define hkRule [ h k ] <- ᕁ  ;  
+
+
+! one-letter symbols
+
 define aRule [ a ] <- ᐊ  ;  
+define iRule [ i ] <- ᐃ  ;  
+define oRule [ o ] <- ᐅ  ;  
+define âRule [ â ] <- ᐋ  ;  
+define êRule [ ê ] <- ᐁ  ;  
+define îRule [ î ] <- ᐄ  ;  
+define ôRule [ ô ] <- ᐆ  ;    
  
-define pRule [ p ] <- ᑉ  ; 
-define tRule [ t ] <- ᑦ  ; 
-define kRule [ k ] <- ᒃ  ; 
-define gRule [ g ] <- ᖅ  ; 
-define mRule [ m ] <- ᒻ  ; 
-define nRule [ n ] <- ᓐ  ; 
+define cRule [ g ] <- ᐨ  ; 
+define hRule [ h ] <- ᐦ  ; 
+define kRule [ k ] <- ᐠ  ; 
+define mRule [ m ] <- ᒼ  ; 
+define nRule [ n ] <- ᐣ  ; 
+define pRule [ p ] <- ᑊ  ; 
+define sRule [ s ] <- ᐢ  ; 
+define tRule [ t ] <- ᐟ  ; 
+define wRule [ v ] <- ᐤ  ; 
+
+define lRule [ v ] <- ᓬ ; 
+define rRule [ v ] <- ᕒ ;  
+
+
+
  
-define hRule [ h ] <- ᕻ  ; 
-define lRule [ l ] <- ᓪ  ; 
-define vRule [ v ] <- ᕝ ; 
-define rRule [ r ] <- ᕐ ; 
-define QRule [ q ] <- ᖅ ; 
-define łRule [ ł ] <- ᖦ ; 
- 
- 
- 
-read regex [ ngaaiRule 
-.o. paaiRule 
-.o. taaiRule 
-.o. kaaiRule 
-.o. gaaiRule 
-.o. nngiiRule 
-.o. nnguuRule 
-.o. nngaaRule 
- 
-.o. NNGRule 
- 
-.o. ngiiRule 
-.o. nguuRule 
-.o. ngaaRule 
- 
-.o. NGRule 
- 
-.o. piiRule 
-.o. puuRule 
-.o. paaRule 
- 
-.o. tiiRule 
-.o. tuuRule 
-.o. taaRule 
- 
-.o. kiiRule 
-.o. kuuRule 
-.o. kaaRule 
- 
-.o. giiRule 
-.o. guuRule 
-.o. gaaRule 
- 
-.o. maaiRule 
-.o. miiRule 
-.o. muuRule 
-.o. maaRule 
- 
-.o. naaiRule 
-.o. niiRule 
-.o. nuuRule 
-.o. naaRule 
- 
-.o. saaiRule 
-.o. siiRule 
-.o. suuRule 
-.o. saaRule 
- 
-.o. haaiRule 
-.o. hiiRule 
-.o. huuRule 
-.o. haaRule 
- 
-.o. laaiRule 
-.o. liiRule 
-.o. luuRule 
-.o. laaRule 
- 
-.o. jaaiRule 
-.o. jiiRule 
-.o. juuRule 
-.o. jaaRule 
- 
-.o. vaaiRule 
-.o. viiRule 
-.o. vuuRule 
-.o. vaaRule 
- 
-.o. raaiRule 
-.o. riiRule 
-.o. ruuRule 
-.o. raaRule 
- 
-.o. qaaiRule 
-.o. qiiRule 
-.o. quuRule 
-.o. qaaRule 
- 
- 
-.o. łiiRule 
-.o. łuuRule 
-.o. łaaRule 
- 
-.o. aaiRule 
-.o. iiRule 
-.o. uuRule 
-.o. aaRule 
- 
-.o. nngiRule 
-.o. nnguRule 
-.o. nngaRule 
- 
-.o. ngaiRule 
-.o. ngiRule 
-.o. nguRule 
-.o. ngaRule 
- 
-.o. paiRule 
-.o. piRule 
-.o. puRule 
-.o. paRule 
- 
-.o. taiRule 
-.o. tiRule 
-.o. tuRule 
-.o. taRule 
- 
-.o. kaiRule 
-.o. kiRule 
-.o. kuRule 
-.o. kaRule 
- 
-.o. gaiRule 
-.o. giRule 
-.o. guRule 
-.o. gaRule 
- 
-.o. maiRule 
-.o. miRule 
-.o. muRule 
-.o. maRule 
- 
-.o. naiRule 
-.o. niRule 
-.o. nuRule 
-.o. naRule 
- 
-.o. saiRule 
-.o. siRule 
-.o. suRule 
-.o. saRule 
- 
-.o. haiRule 
-.o. hiRule 
-.o. huRule 
-.o. haRule 
- 
-.o. laiRule 
-.o. liRule 
-.o. luRule 
-.o. laRule 
- 
-.o. jaiRule 
-.o. jiRule 
-.o. juRule 
-.o. jaRule 
- 
-.o. vaiRule 
-.o. viRule 
-.o. vuRule 
-.o. vaRule 
- 
-.o. raiRule 
-.o. riRule 
-.o. ruRule 
-.o. raRule 
- 
-.o. qaiRule 
-.o. qiRule 
-.o. quRule 
-.o. qaRule 
- 
-.o. łiRule 
-.o. łuRule 
-.o. łaRule 
- 
-.o. aiRule 
-.o. iRule 
-.o. uRule 
+read regex [ cwaRule
+.o. cwiRule
+.o. cwoRule
+.o. cwâRule
+.o. cwêRule
+.o. cwîRule
+.o. cwôRule
+
+.o. kwaRule
+.o. kwiRule
+.o. kwoRule
+.o. kwâRule
+.o. kwêRule
+.o. kwîRule
+.o. kwôRule
+
+.o. mwaRule
+.o. mwiRule
+.o. mwoRule
+.o. mwâRule
+.o. mwêRule
+.o. mwîRule
+.o. mwôRule
+
+.o. nwaRule
+.o. nwiRule
+.o. nwoRule
+.o. nwâRule
+.o. nwêRule
+.o. nwîRule
+.o. nwôRule
+
+.o. pwaRule
+.o. pwiRule
+.o. pwoRule
+.o. pwâRule
+.o. pwêRule
+.o. pwîRule
+.o. pwôRule
+
+.o. swaRule
+.o. swiRule
+.o. swoRule
+.o. swâRule
+.o. swêRule
+.o. swîRule
+.o. swôRule
+
+.o. twaRule
+.o. twiRule
+.o. twoRule
+.o. twâRule
+.o. twêRule
+.o. twîRule
+.o. twôRule
+
+
+.o. caRule
+.o. ciRule
+.o. coRule
+.o. câRule
+.o. cêRule
+.o. cîRule
+.o. côRule
+
+.o. kaRule
+.o. kiRule
+.o. koRule
+.o. kâRule
+.o. kêRule
+.o. kîRule
+.o. kôRule
+
+.o. maRule
+.o. miRule
+.o. moRule
+.o. mâRule
+.o. mêRule
+.o. mîRule
+.o. môRule
+
+.o. naRule
+.o. niRule
+.o. noRule
+.o. nâRule
+.o. nêRule
+.o. nîRule
+.o. nôRule
+
+.o. paRule
+.o. piRule
+.o. poRule
+.o. pâRule
+.o. pêRule
+.o. pîRule
+.o. pôRule
+
+.o. saRule
+.o. siRule
+.o. soRule
+.o. sâRule
+.o. sêRule
+.o. sîRule
+.o. sôRule
+
+.o. taRule
+.o. tiRule
+.o. toRule
+.o. tâRule
+.o. têRule
+.o. tîRule
+.o. tôRule
+
+.o. waRule
+.o. wiRule
+.o. woRule
+.o. wâRule
+.o. wêRule
+.o. wîRule
+.o. wôRule
+
+.o. yaRule
+.o. yiRule
+.o. yoRule
+.o. yâRule
+.o. yêRule
+.o. yîRule
+.o. yôRule
+
 .o. aRule 
- 
-.o. pRule 
-.o. tRule 
+.o. iRule 
+.o. oRule 
+.o. âRule 
+.o. êRule 
+.o. îRule 
+.o. ôRule 
+
+.o. cRule 
+.o. hRule 
 .o. kRule 
-.o. gRule 
 .o. mRule 
 .o. nRule 
- 
-.o. hRule 
+.o. pRule 
+.o. sRule 
+.o. tRule 
+.o. wRule 
 .o. lRule 
-.o. vRule 
-.o. rRule 
-.o. QRule 
-.o. łRule  ] ; 
+.o. rRule  ] ; 
  
 invert net ; 
