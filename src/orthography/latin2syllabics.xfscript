@@ -160,7 +160,7 @@ define êRule [ ê ] -> ᐁ  ;
 define îRule [ î ] -> ᐄ  ;  
 define ôRule [ ô ] -> ᐆ  ;    
  
-define cRule [ g ] -> ᐨ  ; 
+define cRule [ c ] -> ᐨ  ; 
 define hRule [ h ] -> ᐦ  ; 
 define kRule [ k ] -> ᐠ  ; 
 define mRule [ m ] -> ᒼ  ; 
@@ -168,12 +168,12 @@ define nRule [ n ] -> ᐣ  ;
 define pRule [ p ] -> ᑊ  ; 
 define sRule [ s ] -> ᐢ  ; 
 define tRule [ t ] -> ᐟ  ; 
-define wRule [ v ] -> ᐤ  ; 
+define wRule [ w ] -> ᐤ  ; 
 define yRule [ y ] -> ᕀ  ; 
 
 
-define lRule [ v ] -> ᓬ ; 
-define rRule [ v ] -> ᕒ ;  
+define lRule [ l ] -> ᓬ ; 
+define rRule [ r ] -> ᕒ ;  
 define FullStopRule [ %. ] -> ᙮ ;
 
 
