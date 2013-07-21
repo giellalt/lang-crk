@@ -7,164 +7,174 @@
 
 ! 3-letter symbols
 
-define cwaRule [ c w a ] <- ᒝ  ;  
-define cwiRule [ c w i ] <- ᒕ  ;  
-define cwoRule [ c w o ] <- ᒙ  ;  
-define cwâRule [ c w â ] <- ᒟ  ;  
-define cwêRule [ c w ê ] <- ᒓ  ;  
-define cwîRule [ c w î ] <- ᒗ  ;  
-define cwôRule [ c w ô ] <- ᒛ  ;  
+define cwaRule [ c w a ] -> ᒝ  ;  
+define cwiRule [ c w i ] -> ᒕ  ;  
+define cwoRule [ c w o ] -> ᒙ  ;  
+define cwâRule [ c w â ] -> ᒟ  ;  
+define cwêRule [ c w ê ] -> ᒓ  ;  
+define cwîRule [ c w î ] -> ᒗ  ;  
+define cwôRule [ c w ô ] -> ᒛ  ;  
 
-define kwaRule [ k w a ] <- ᑿ  ;  
-define kwiRule [ k w i ] <- ᑷ  ;  
-define kwoRule [ k w o ] <- ᑻ  ;  
-define kwâRule [ k w â ] <- ᒁ  ;  
-define kwêRule [ k w ê ] <- ᑵ  ;  
-define kwîRule [ k w î ] <- ᑹ  ;  
-define kwôRule [ k w ô ] <- ᑽ  ;  
+define kwaRule [ k w a ] -> ᑿ  ;  
+define kwiRule [ k w i ] -> ᑷ  ;  
+define kwoRule [ k w o ] -> ᑻ  ;  
+define kwâRule [ k w â ] -> ᒁ  ;  
+define kwêRule [ k w ê ] -> ᑵ  ;  
+define kwîRule [ k w î ] -> ᑹ  ;  
+define kwôRule [ k w ô ] -> ᑽ  ;  
 
-define mwaRule [ m w a ] <- ᒷ  ;  
-define mwiRule [ m w i ] <- ᒯ  ;  
-define mwoRule [ m w o ] <- ᒳ  ;  
-define mwâRule [ m w â ] <- ᒹ  ;  
-define mwêRule [ m w ê ] <- ᒭ  ;  
-define mwîRule [ m w î ] <- ᒱ  ;  
-define mwôRule [ m w ô ] <- ᒵ  ;  
+define mwaRule [ m w a ] -> ᒷ  ;  
+define mwiRule [ m w i ] -> ᒯ  ;  
+define mwoRule [ m w o ] -> ᒳ  ;  
+define mwâRule [ m w â ] -> ᒹ  ;  
+define mwêRule [ m w ê ] -> ᒭ  ;  
+define mwîRule [ m w î ] -> ᒱ  ;  
+define mwôRule [ m w ô ] -> ᒵ  ;  
 
-define nwaRule [ n w a ] <- ᓌ  ;  
-define nwiRule [ n w i ] <- ᣇ  ;  
-define nwoRule [ n w o ] <- ᣋ  ;  
-define nwâRule [ n w â ] <- ᓎ  ;  
-define nwêRule [ n w ê ] <- ᓊ  ;  
-define nwîRule [ n w î ] <- ᣉ  ;  
-define nwôRule [ n w ô ] <- ᣍ  ;  
+define nwaRule [ n w a ] -> ᓌ  ;  
+define nwiRule [ n w i ] -> ᣇ  ;  
+define nwoRule [ n w o ] -> ᣋ  ;  
+define nwâRule [ n w â ] -> ᓎ  ;  
+define nwêRule [ n w ê ] -> ᓊ  ;  
+define nwîRule [ n w î ] -> ᣉ  ;  
+define nwôRule [ n w ô ] -> ᣍ  ;  
 
-define pwaRule [ p w a ] <- ᑅ  ;  
-define pwiRule [ p w i ] <- ᐽ  ;  
-define pwoRule [ p w o ] <- ᑁ  ;  
-define pwâRule [ p w â ] <- ᑇ  ;  
-define pwêRule [ p w ê ] <- ᐻ  ;  
-define pwîRule [ p w î ] <- ᐿ  ;  
-define pwôRule [ p w ô ] <- ᑃ  ;  
+define pwaRule [ p w a ] -> ᑅ  ;  
+define pwiRule [ p w i ] -> ᐽ  ;  
+define pwoRule [ p w o ] -> ᑁ  ;  
+define pwâRule [ p w â ] -> ᑇ  ;  
+define pwêRule [ p w ê ] -> ᐻ  ;  
+define pwîRule [ p w î ] -> ᐿ  ;  
+define pwôRule [ p w ô ] -> ᑃ  ;  
 
-define swaRule [ s w a ] <- ᔁ  ;  
-define swiRule [ s w i ] <- ᓹ  ;  
-define swoRule [ s w o ] <- ᓽ  ;  
-define swâRule [ s w â ] <- ᔃ  ;  
-define swêRule [ s w ê ] <- ᓷ  ;  
-define swîRule [ s w î ] <- ᓻ  ;  
-define swôRule [ s w ô ] <- ᓿ  ;  
+define swaRule [ s w a ] -> ᔁ  ;  
+define swiRule [ s w i ] -> ᓹ  ;  
+define swoRule [ s w o ] -> ᓽ  ;  
+define swâRule [ s w â ] -> ᔃ  ;  
+define swêRule [ s w ê ] -> ᓷ  ;  
+define swîRule [ s w î ] -> ᓻ  ;  
+define swôRule [ s w ô ] -> ᓿ  ;  
 
-define twaRule [ t w a ] <- ᑢ  ;  
-define twiRule [ t w i ] <- ᑚ  ;  
-define twoRule [ t w o ] <- ᑞ  ;  
-define twâRule [ t w â ] <- ᑤ  ;  
-define twêRule [ t w ê ] <- ᑘ  ;  
-define twîRule [ t w î ] <- ᑜ  ;  
-define twôRule [ t w ô ] <- ᑠ  ;  
+define twaRule [ t w a ] -> ᑢ  ;  
+define twiRule [ t w i ] -> ᑚ  ;  
+define twoRule [ t w o ] -> ᑞ  ;  
+define twâRule [ t w â ] -> ᑤ  ;  
+define twêRule [ t w ê ] -> ᑘ  ;  
+define twîRule [ t w î ] -> ᑜ  ;  
+define twôRule [ t w ô ] -> ᑠ  ;  
 
+define ywaRule [ y w a ] -> ᔺ  ;  
+define ywiRule [ y w i ] -> ᔲ  ;  
+define ywoRule [ y w o ] -> ᔶ  ;  
+define ywâRule [ y w â ] -> ᔼ  ;  
+define ywêRule [ y w ê ] -> ᔰ  ;  
+define ywîRule [ y w î ] -> ᔴ  ;  
+define ywôRule [ y w ô ] -> ᔸ  ;  
 
 
 ! Without w
 ! two-letter symbols
 
-define caRule [ c a ] <- ᒐ  ;  
-define ciRule [ c i ] <- ᒋ  ;  
-define coRule [ c o ] <- ᒍ  ;  
-define câRule [ c â ] <- ᒑ  ;  
-define cêRule [ c ê ] <- ᒉ  ;  
-define cîRule [ c î ] <- ᒌ  ;  
-define côRule [ c ô ] <- ᒎ  ;  
+define caRule [ c a ] -> ᒐ  ;  
+define ciRule [ c i ] -> ᒋ  ;  
+define coRule [ c o ] -> ᒍ  ;  
+define câRule [ c â ] -> ᒑ  ;  
+define cêRule [ c ê ] -> ᒉ  ;  
+define cîRule [ c î ] -> ᒌ  ;  
+define côRule [ c ô ] -> ᒎ  ;  
 
-define kaRule [ k a ] <- ᑲ  ;  
-define kiRule [ k i ] <- ᑭ  ;  
-define koRule [ k o ] <- ᑯ  ;  
-define kâRule [ k â ] <- ᑳ  ;  
-define kêRule [ k ê ] <- ᑫ  ;  
-define kîRule [ k î ] <- ᑮ  ;  
-define kôRule [ k ô ] <- ᑰ  ;  
+define kaRule [ k a ] -> ᑲ  ;  
+define kiRule [ k i ] -> ᑭ  ;  
+define koRule [ k o ] -> ᑯ  ;  
+define kâRule [ k â ] -> ᑳ  ;  
+define kêRule [ k ê ] -> ᑫ  ;  
+define kîRule [ k î ] -> ᑮ  ;  
+define kôRule [ k ô ] -> ᑰ  ;  
 
-define maRule [ m a ] <- ᒪ  ;  
-define miRule [ m i ] <- ᒥ  ;  
-define moRule [ m o ] <- ᒧ  ;  
-define mâRule [ m â ] <- ᒫ  ;  
-define mêRule [ m ê ] <- ᒣ  ;  
-define mîRule [ m î ] <- ᒦ  ;  
-define môRule [ m ô ] <- ᒨ  ;  
+define maRule [ m a ] -> ᒪ  ;  
+define miRule [ m i ] -> ᒥ  ;  
+define moRule [ m o ] -> ᒧ  ;  
+define mâRule [ m â ] -> ᒫ  ;  
+define mêRule [ m ê ] -> ᒣ  ;  
+define mîRule [ m î ] -> ᒦ  ;  
+define môRule [ m ô ] -> ᒨ  ;  
 
-define naRule [ n a ] <- ᓇ  ;  
-define niRule [ n i ] <- ᓂ  ;  
-define noRule [ n o ] <- ᓄ  ;  
-define nâRule [ n â ] <- ᓈ  ;  
-define nêRule [ n ê ] <- ᓀ  ;  
-define nîRule [ n î ] <- ᓃ  ;  
-define nôRule [ n ô ] <- ᓅ  ;  
+define naRule [ n a ] -> ᓇ  ;  
+define niRule [ n i ] -> ᓂ  ;  
+define noRule [ n o ] -> ᓄ  ;  
+define nâRule [ n â ] -> ᓈ  ;  
+define nêRule [ n ê ] -> ᓀ  ;  
+define nîRule [ n î ] -> ᓃ  ;  
+define nôRule [ n ô ] -> ᓅ  ;  
 
-define paRule [ p a ] <- ᐸ  ;  
-define piRule [ p i ] <- ᐱ  ;  
-define poRule [ p o ] <- ᐳ  ;  
-define pâRule [ p â ] <- ᐹ  ;  
-define pêRule [ p ê ] <- ᐯ  ;  
-define pîRule [ p î ] <- ᐲ  ;  
-define pôRule [ p ô ] <- ᐴ  ;  
+define paRule [ p a ] -> ᐸ  ;  
+define piRule [ p i ] -> ᐱ  ;  
+define poRule [ p o ] -> ᐳ  ;  
+define pâRule [ p â ] -> ᐹ  ;  
+define pêRule [ p ê ] -> ᐯ  ;  
+define pîRule [ p î ] -> ᐲ  ;  
+define pôRule [ p ô ] -> ᐴ  ;  
 
-define saRule [ s a ] <- ᓴ  ;  
-define siRule [ s i ] <- ᓯ  ;  
-define soRule [ s o ] <- ᓱ  ;  
-define sâRule [ s â ] <- ᓵ  ;  
-define sêRule [ s ê ] <- ᓭ  ;  
-define sîRule [ s î ] <- ᓰ  ;  
-define sôRule [ s ô ] <- ᓲ  ;  
+define saRule [ s a ] -> ᓴ  ;  
+define siRule [ s i ] -> ᓯ  ;  
+define soRule [ s o ] -> ᓱ  ;  
+define sâRule [ s â ] -> ᓵ  ;  
+define sêRule [ s ê ] -> ᓭ  ;  
+define sîRule [ s î ] -> ᓰ  ;  
+define sôRule [ s ô ] -> ᓲ  ;  
 
-define taRule [ t a ] <- ᑕ  ;  
-define tiRule [ t i ] <- ᑎ  ;  
-define toRule [ t o ] <- ᑐ  ;  
-define tâRule [ t â ] <- ᑖ  ;  
-define têRule [ t ê ] <- ᑌ  ;  
-define tîRule [ t î ] <- ᑏ  ;  
-define tôRule [ t ô ] <- ᑑ  ;  
+define taRule [ t a ] -> ᑕ  ;  
+define tiRule [ t i ] -> ᑎ  ;  
+define toRule [ t o ] -> ᑐ  ;  
+define tâRule [ t â ] -> ᑖ  ;  
+define têRule [ t ê ] -> ᑌ  ;  
+define tîRule [ t î ] -> ᑏ  ;  
+define tôRule [ t ô ] -> ᑑ  ;  
 
-define waRule [ w a ] <- ᐘ  ;	
-define wiRule [ w i ] <- ᐏ  ;	
-define woRule [ w o ] <- ᐓ  ;	
-define wâRule [ w â ] <- ᐚ  ;
-define wêRule [ w ê ] <- ᐍ  ;	
-define wîRule [ w î ] <- ᐑ  ;	
-define wôRule [ w ô ] <- ᐕ  ;	
+define waRule [ w a ] -> ᐘ  ;	
+define wiRule [ w i ] -> ᐏ  ;	
+define woRule [ w o ] -> ᐓ  ;	
+define wâRule [ w â ] -> ᐚ  ;
+define wêRule [ w ê ] -> ᐍ  ;	
+define wîRule [ w î ] -> ᐑ  ;	
+define wôRule [ w ô ] -> ᐕ  ;	
 
-define yaRule [ y a ] <- ᔭ  ;  
-define yiRule [ y i ] <- ᔨ  ;  
-define yoRule [ y o ] <- ᔪ  ;  
-define yâRule [ y â ] <- ᔮ  ;  
-define yêRule [ y ê ] <- ᔦ  ;  
-define yîRule [ y î ] <- ᔩ  ;  
-define yôRule [ y ô ] <- ᔫ  ;  
+define yaRule [ y a ] -> ᔭ  ;  
+define yiRule [ y i ] -> ᔨ  ;  
+define yoRule [ y o ] -> ᔪ  ;  
+define yâRule [ y â ] -> ᔮ  ;  
+define yêRule [ y ê ] -> ᔦ  ;  
+define yîRule [ y î ] -> ᔩ  ;  
+define yôRule [ y ô ] -> ᔫ  ;  
 
-define hkRule [ h k ] <- ᕁ  ;  
+define hkRule [ h k ] -> ᕽ  ;  
 
 
 ! one-letter symbols
 
-define aRule [ a ] <- ᐊ  ;  
-define iRule [ i ] <- ᐃ  ;  
-define oRule [ o ] <- ᐅ  ;  
-define âRule [ â ] <- ᐋ  ;  
-define êRule [ ê ] <- ᐁ  ;  
-define îRule [ î ] <- ᐄ  ;  
-define ôRule [ ô ] <- ᐆ  ;    
+define aRule [ a ] -> ᐊ  ;  
+define iRule [ i ] -> ᐃ  ;  
+define oRule [ o ] -> ᐅ  ;  
+define âRule [ â ] -> ᐋ  ;  
+define êRule [ ê ] -> ᐁ  ;  
+define îRule [ î ] -> ᐄ  ;  
+define ôRule [ ô ] -> ᐆ  ;    
  
-define cRule [ g ] <- ᐨ  ; 
-define hRule [ h ] <- ᐦ  ; 
-define kRule [ k ] <- ᐠ  ; 
-define mRule [ m ] <- ᒼ  ; 
-define nRule [ n ] <- ᐣ  ; 
-define pRule [ p ] <- ᑊ  ; 
-define sRule [ s ] <- ᐢ  ; 
-define tRule [ t ] <- ᐟ  ; 
-define wRule [ v ] <- ᐤ  ; 
+define cRule [ g ] -> ᐨ  ; 
+define hRule [ h ] -> ᐦ  ; 
+define kRule [ k ] -> ᐠ  ; 
+define mRule [ m ] -> ᒼ  ; 
+define nRule [ n ] -> ᐣ  ; 
+define pRule [ p ] -> ᑊ  ; 
+define sRule [ s ] -> ᐢ  ; 
+define tRule [ t ] -> ᐟ  ; 
+define wRule [ v ] -> ᐤ  ; 
+define yRule [ y ] -> ᕀ  ; 
 
-define lRule [ v ] <- ᓬ ; 
-define rRule [ v ] <- ᕒ ;  
+
+define lRule [ v ] -> ᓬ ; 
+define rRule [ v ] -> ᕒ ;  
+define FullStopRule [ %. ] -> ᙮ ;
 
 
 
@@ -224,6 +234,14 @@ read regex [ cwaRule
 .o. twêRule
 .o. twîRule
 .o. twôRule
+
+.o. ywaRule
+.o. ywiRule
+.o. ywoRule
+.o. ywâRule
+.o. ywêRule
+.o. ywîRule
+.o. ywôRule
 
 
 .o. caRule
@@ -298,6 +316,8 @@ read regex [ cwaRule
 .o. yîRule
 .o. yôRule
 
+.o. hkRule
+
 .o. aRule 
 .o. iRule 
 .o. oRule 
@@ -315,7 +335,11 @@ read regex [ cwaRule
 .o. sRule 
 .o. tRule 
 .o. wRule 
+.o. yRule
+
 .o. lRule 
-.o. rRule  ] ; 
+.o. rRule 
+
+.o. FullStopRule ] ; 
  
 invert net ; 
