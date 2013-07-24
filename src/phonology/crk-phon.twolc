@@ -1,7 +1,9 @@
 Alphabet
  a b c d e f g h i j k l m n o p q r s t u v w x y z
  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
-
+ â ê î ô
+ Â Ê Î Ô
+ 
  %>:0 
  
 @U.verb.1sgindep@ 
@@ -32,8 +34,11 @@ Alphabet
 
 Sets
 
- Vow = a e i o u;
+ Vow = a e i o u â ê î ô 
+       A E I O U Â Ê Î Ô ;
 
+ LongVow = â ê î ô Â Ê Î Ô ;
+ 
  Cns = b c d f g h j k l m n p q r s t v w x z ;
  
  Nas = m n ;
@@ -62,12 +67,38 @@ Sets
          @U.verb.2sgimp@
          @U.verb.1plimp@
          @U.verb.2plimp@
+
+@U.noun.1sg@
+@U.noun.2sg@
+@U.noun.3sg@
+@U.noun.1pl@
+@U.noun.12pl@
+@U.noun.2pl@
+@U.noun.3pl@
+
+@U.noun.abs@ 
+
 ;
 
 
 !! !!!Rules
 
 Rules
+
+"Suffix a Deletion in Vowel Final Stems"
+!! __RULENAME__ gives maskwa + ak = plural maskwak
+ a:0 <=> Vow %>: _ Cns ;
+
+"w Insertion in Front of Vowel Initial Suffix after k and m"
+!! __RULENAME__ inserts w after k, m in front of plural -ak
+!! Note that this rule probably is wrong, and that the -w- is
+!! a morphological affix rather than a phonological variant.
+ 0:w <=> [ k | m ] %>: _ a k ;
+ 
+!€ wâpask0>ak
+!€ wâpaskw0ak 
+ 
+ 
 
 "Suffix Final n" 
 !! __RULENAME__  
