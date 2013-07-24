@@ -25,7 +25,18 @@ in this system in terms of following symbols.
 
 POS
 
+ * +N	         
+ * +V	         
+ * +A	         
 
+ * +Adv         
+ * +CC	         
+ * +CS	         
+ * +Interj      
+ * +Pron        
+ * +Num         
+
+ * +Loc         
 
 Verbal MSP
  * +Prs   
@@ -125,7 +136,20 @@ These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
 
 
 
+
+
+
+
 !!!Rules
+
+
+__RULENAME__ gives maskwa + ak = plural maskwak
+
+__RULENAME__ inserts w after k, m in front of plural -ak
+Note that this rule probably is wrong, and that the -w- is
+a morphological affix rather than a phonological variant.
+
+
 
 
 __RULENAME__  
