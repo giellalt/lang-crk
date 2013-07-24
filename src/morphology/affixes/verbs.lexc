@@ -1,0 +1,169 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@samediggi.no
+
+! ========================================================================== !
+!!                           !!! Plains Cree verb morphology                           
+! ========================================================================== !
+
+
+!! __Note__ ''This file is copied from Ojibwe, and is thus only an illustration.''
+
+!! The Plains Cree verbs are divided in four groups:
+
+!! # IA: Intransitive animate
+!! # II: Intransitive inanimate
+!! # TA: Transitive animate
+!! # TI: Transitive inanimate
+
+
+!! !!! Intransitive animate (IA)
+
+LEXICON IACONJ !!= @CODE@ splits in 3 conjugations
++V+IA: IA_IND ;
++V+IA: IA_SBJ ;
++V+IA: IA_IMP ;
+
+LEXICON IA_IND !!= @CODE@ gives positive and negative
+
+            IA_IND_SUFF ;
++Neg:%>siin IA_IND_SUFF ;
+
+
+LEXICON IA_IND_SUFF !!= @CODE@ (so far) gives present tense only
+
++Ind+Prs: IA_IND_PRS ;
+
+LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
++1Sg@U.verb.1sgindep@:0@U.verb.1sgindep@ # ;
++2Sg@U.verb.2sgindep@:0@U.verb.2sgindep@ # ;
++3Sg@U.verb.3sgindep@:0@U.verb.3sgindep@ # ;
++3oSg@U.verb.3osgindep@:@U.verb.3osgindep@%>wan # ;
++3iSg@U.verb.3isgindep@:@U.verb.3isgindep@%>m # ;
+
++1Pl@U.verb.1plindep@:@U.verb.1plindep@%>min # ;   ! exclusive Pl
++12Pl@U.verb.12plindep@:@U.verb.12plindep@%>min # ; ! inclusive Pl
++2Pl@U.verb.2plindep@:@U.verb.2plindep@%>m # ;
++3Pl@U.verb.3plindep@:@U.verb.3plindep@%>wag # ;
+
+
+LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive person suffixes
+@U.verb.1sgsbj@  1sgsubjunctive ;
+@U.verb.2sgsbj@  2sgsubjunctive ;
+@U.verb.3sgsbj@  3sgsubjunctive ;
+@U.verb.3osgsbj@ 3osgsubjunctive ;
+@U.verb.3isgsbj@ 3isgsubjunctive ;
+@U.verb.1plsbj@  1plsubjunctive ;
+@U.verb.12plsbj@ 12plsubjunctive ;
+@U.verb.2plsbj@  2plsubjunctive ;
+@U.verb.3plsbj@  3plsubjunctive ;
+
+LEXICON 1sgsubjunctive
+    +Sbj+1Sg:%>yaan #;
++Neg+Sbj+1Sg:%>siwaan  # ;
+
+LEXICON 2sgsubjunctive
+    +Sbj+2Sg:%>yan	#;
++Neg+Sbj+2Sg:%>siwan   # ;
+
+LEXICON 3sgsubjunctive
+    +Sbj+3Sg:%>d	#;
++Neg+Sbj+3Sg:%>sig	   # ;
+
+LEXICON 3osgsubjunctive
+    +Sbj+3oSg:%>nid #;
++Neg+Sbj+3oSg:%>sinid  # ;
++Neg+Sbj+3oSg:%>sinig  # ;
+
+LEXICON 3isgsubjunctive
+    +Sbj+3iSg:%>ng #;
++Neg+Sbj+3iSg:%>sing   # ;
+
+LEXICON 1plsubjunctive 
+    +Sbj+1Pl:%>yaang #;
++Neg+Sbj+1Pl:%>siwaang # ;
+
+LEXICON 12plsubjunctive
+    +Sbj+12Pl:%>yang #;
++Neg+Sbj+12Pl:%>siwang # ;
+
+LEXICON 2plsubjunctive 
+    +Sbj+2Pl:%>yeg #;
++Neg+Sbj+2Pl:%>siweg   # ;
+
+LEXICON 3plsubjunctive 
+    +Sbj+3Pl:%>waad #;
++Neg+Sbj+3Pl:%>siwaa   # ;
+
+
+
+LEXICON IA_IMP  !!= @CODE@ gives flag diacritics and directs to imperative person suffixes
+@U.verb.2sgimp@  2sgimp ;
+@U.verb.1plimp@  1plimp ;
+@U.verb.2plimp@  2plimp ;
+
+LEXICON 2sgimp
++Imp+Imm+2Sg:%>n   # ;
++Imp+Int+2Sg:%>ken # ;
++Imp+Dur+2Sg:%>kan # ;
+
+LEXICON 1plimp
++Imp+Imm+1Pl:%>daa	  # ;
++Imp+Int+1Pl:%>siidaa # ;
+
+LEXICON 2plimp
++Imp+Imm+2Pl:%>k	 # ;
++Imp+Imm+2Pl:%>g	 # ;
++Imp+Int+2Pl:%>kegon # ;
++Imp+Dur+2Pl:%>keg	 # ;
+
+
+
+!! !! Intransitive inanimate (II)
+
+
+LEXICON IICONJ  !!= @CODE@ splits according to conjugation
++V+II+Ind+Prs: II_IND_PRS ;
++V+II+Neg+Ind+Prs: II_NEG_IND_PRS ;
++V+II+Sbj: II_SBJ ;
++V+II+Neg+Sbj: II_NEG_SBJ ;
+
+LEXICON II_IND_PRS   !!= @CODE@ is positive present
++3Sg: # ;
++3oSg:%>ni # ;
++3Pl:%>wan # ;
++3oPl:%>niwan # ;
+
+LEXICON II_NEG_IND_PRS  !!= @CODE@ is negative present
++3Sg:%>siinoon # ;
++3oSg:%>sinini # ;
++3Pl:%>siinoon # ;
++3oPl:%>sininiwan # ;
+
+LEXICON II_SBJ   !!= @CODE@ is positive subjunctive
++3Sg:%>g # ;
++3oSg:%>nig # ;
++3Pl:%>g # ;
++3oPl:%>nig # ;
+
+LEXICON II_NEG_SBJ   !!= @CODE@ is negative subjunctive
++3Sg:%>sinog # ;
++3oSg:%>sininig # ;
++3Pl:%>sinog # ;
++3oPl:%>sininig # ;
+
+
+!! !! Transitive animate (TA)
+
+LEXICON TACONJ_am  !!= * @CODE@ not yet written
+# ;
