@@ -1,0 +1,126 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@samediggi.no
+
+! ========================================================================== !
+!!                           !!! Plains Cree verb stems                           
+! ========================================================================== !
+
+
+
+!! The verbs are analysed as follows:
+!! * We split the Verb lexicon in 4 groups according to transitivity class
+!! * For each group, we add the prefixes, and mark them with ''flag diacritics'' (the @ symbols)
+!! * Then come the stems themselves
+!! * Finally, and in another file, come the suffixes, including flag diacritics
+!!   to ensure that the correct prefixes and suffixes are matched together
+
+
+!! The Plains Cree verbs are divided in four groups:
+
+!! # IA: Intransitive animate
+!! # II: Intransitive inanimate
+!! # TA: Transitive animate
+!! # TI: Transitive inanimate
+
+LEXICON Verb !!= @CODE@ divides the verbs in four transitivity classes
+
+IA ; ! intransitive animate
+II ; ! intransitive inanimate
+TA ; ! transitive animate
+TI ; ! transitive inanimate
+
+
+!! !! Intransitive animate
+!     ====================
+
+LEXICON IA   !!= @CODE@ divides in independent, subjunctive and imperative
+
+IA_INDEPENDENT ;
+IA_SUBJUNCTIV ;
+IA_IMPERATIV ;
+
+
+LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
+
+@U.verb.1sgindep@:ni@U.verb.1sgindep@ IASTEM ;
+@U.verb.2sgindep@:ki@U.verb.2sgindep@ IASTEM ;
+@U.verb.3sgindep@:@U.verb.3sgindep@ IASTEM ;
+@U.verb.3osgindep@:@U.verb.3osgindep@ IASTEM ;
+@U.verb.3isgindep@:@U.verb.3isgindep@ IASTEM ;
+
+@U.verb.1plindep@:ni@U.verb.1plindep@ IASTEM ;   ! exclusive Pl
+@U.verb.12plindep@:ki@U.verb.12plindep@ IASTEM ; ! inclusive Pl
+@U.verb.2plindep@:ki@U.verb.2plindep@ IASTEM ;   
+@U.verb.3plindep@:@U.verb.3plindep@ IASTEM ;
+
+LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
+@U.verb.1sgsbj@ IASTEM ;
+@U.verb.2sgsbj@ IASTEM ;
+@U.verb.3sgsbj@ IASTEM ;
+@U.verb.3osgsbj@ IASTEM ;
+@U.verb.3isgsbj@ IASTEM ;
+
+@U.verb.1plsbj@  IASTEM ;   ! exclusive Pl
+@U.verb.12plsbj@  IASTEM ; ! inclusive Pl
+@U.verb.2plsbj@  IASTEM ;   
+@U.verb.3plsbj@ IASTEM ;
+
+
+LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
+@U.verb.2sgimp@ IASTEM ;
+@U.verb.1plimp@  IASTEM ;   ! exclusive Pl
+@U.verb.2plimp@  IASTEM ;   
+
+
+!! !! Intransitive inanimate
+!     ====================
+
+!! These have no prefixes, so we go directly to the __IISTEM__ lexicon.
+
+LEXICON II 
+IISTEM ;
+
+
+!! !! Transitive animate
+!     ==================
+
+LEXICON TA  !!= @CODE@ is still not written
+ TASTEM_am ;
+ TASTEM_aw ;
+
+
+!! !! Transitive inanimate
+!     ====================
+
+LEXICON TI  !!= @CODE@ is still not written
+# ;
+
+
+!! !!! The stems
+
+LEXICON IASTEM   !!= @CODE@ 
+wâpam IACONJ "see" ; !!= @CODE@ misclassified for TA, awaiting a grammar
+
+LEXICON IISTEM   !!= @CODE@ 
+ozhaawashkwaa IICONJ "bleuir" ; !!= * @CODE@ is Ojibwe, replace with Cree
+
+
+LEXICON TASTEM_am   !!= @CODE@ 
+aabaji':aabaji' TACONJ_am "use s.o." ; !!= * @CODE@ is Ojibwe, replace with Cree
+
+LEXICON TASTEM_aw   !!= @CODE@ 
+aaniikanootaw:aanikanoot TACONJ_am "translate s.o." ; !!= * @CODE@ is Ojibwe, replace with Cree
+
+
+
