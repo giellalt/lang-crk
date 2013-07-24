@@ -3,20 +3,58 @@
 !!                           !!! Plains Cree noun morphology                           
 ! ========================================================================== !
 
+!! !!The declinations for animates and inanimates
+
+LEXICON ANDECL 
++N+AN+Sg@U.noun.abs@:000@U.noun.abs@  # ;
++N+AN@U.noun.abs@:00@U.noun.abs@ PL_AK ;
++N+AN@U.noun.abs@:00@U.noun.abs@  LOC ;
++N+AN+Sg: AN_SUFF ;
+
 LEXICON INDECL
-+N+IN+Sg: # ;
++N+IN+Sg@U.noun.abs@:000@U.noun.abs@  # ;
++N+IN@U.noun.abs@:00@U.noun.abs@ PL_A ;
++N+IN@U.noun.abs@:00@U.noun.abs@  LOC ;
 +N+IN+Sg: IN_SUFF ;
 
-+N+IN+Pl:i # ;
-+N+IN+Pl: IN_SUFF ;
+
+!! !!The suffixes
+
+LEXICON AN_SUFF
++Px1Sg@U.noun.1sg@:0@U.noun.1sg@ SGPL_AK ;
++Px2Sg@U.noun.2sg@:0@U.noun.2sg@ SGPL_AK ;
++Px3Sg@U.noun.3sg@:0@U.noun.3sg@ SGPL_A ;
++Px1Pl@U.noun.1pl@:@U.noun.1pl@%>nân SGPL_AK ;   ! exclusive Pl
++Px12Pl@U.noun.12pl@:@U.noun.12pl@%>nân SGPL_AK ; ! inclusive Pl
++Px2Pl@U.noun.2pl@:@U.noun.2pl@%>wâw SGPL_AK ;
++Px3Pl@U.noun.3pl@:@U.noun.3pl@%>wâw SGPL_A ;
+
 
 LEXICON IN_SUFF
-+Px1Sg@U.noun.1sg@:0@U.noun.1sg@ # ;
-+Px2Sg@U.noun.2sg@:0@U.noun.2sg@ # ;
-+Px3Sg@U.noun.3sg@:0@U.noun.3sg@ # ;
-+Px1Pl@U.noun.1pl@:@U.noun.1pl@%>inaan # ;   ! exclusive Pl
-+Px12Pl@U.noun.12pl@:@U.noun.12pl@%>inaan # ; ! inclusive Pl
-+Px2Pl@U.noun.2pl@:@U.noun.2pl@%>iwaa # ;
-+Px3Pl@U.noun.3pl@:@U.noun.3pl@%>iwaa # ;
++Px1Sg@U.noun.1sg@:0@U.noun.1sg@ SGPL_A ;
++Px2Sg@U.noun.2sg@:0@U.noun.2sg@ SGPL_A ;
++Px3Sg@U.noun.3sg@:0@U.noun.3sg@ SGPL_A ;
++Px1Pl@U.noun.1pl@:@U.noun.1pl@%>inân SGPL_A ;   ! exclusive Pl
++Px12Pl@U.noun.12pl@:@U.noun.12pl@%>inân SGPL_A ; ! inclusive Pl
++Px2Pl@U.noun.2pl@:@U.noun.2pl@%>iwâw SGPL_A ;
++Px3Pl@U.noun.3pl@:@U.noun.3pl@%>iwâw SGPL_A ;
 
 
+LEXICON SGPL_A
++Sg: # ;
+PL_A ;
+LOC ;
+
+LEXICON SGPL_AK
++Sg: # ;
+PL_AK ;
+LOC ;
+
+LEXICON LOC
++Loc:%>ihk # ;
+
+LEXICON PL_A
++Pl:%>a # ;
+
+LEXICON PL_AK
++Pl:%>ak # ;
