@@ -29,16 +29,18 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 
 !! POS
 
-+N
-+V
-+A
++N	        !!= * @CODE@ 
++V	        !!= * @CODE@ 
++A	        !!= * @CODE@ 
 
-+Adv
-+CC
-+CS
-+Interj
-+Pron
-+Num
++Adv        !!= * @CODE@ 
++CC	        !!= * @CODE@ 
++CS	        !!= * @CODE@ 
++Interj     !!= * @CODE@ 
++Pron       !!= * @CODE@ 
++Num        !!= * @CODE@ 
+
++Loc        !!= * @CODE@ 
 
 !! Verbal MSP
 +Prs  !!= * @CODE@ 
@@ -144,6 +146,7 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 @U.noun.2pl@
 @U.noun.3pl@
 
+@U.noun.abs@ 
 
 ! Key lexicon
 
