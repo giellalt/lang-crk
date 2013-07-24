@@ -23,26 +23,43 @@
 
 LEXICON Noun 
 
-!AN ; ! Animate nouns
+AN ; ! Animate nouns
 IN ; ! Inanimate nouns
 !KINSHIP ;
 
 
+LEXICON AN
+!! @LEXNAME@ redirects to ANSTEMS
+!! At the moment it is just a copy of INSTEMS, 
+!! pretending animates and inanimates are identical
 
+
+@U.noun.abs@ ANSTEMS ; 
+
+!! Flag diacritics direct to possessive declension later on
+@U.noun.1sg@:ni@U.noun.1sg@ ANSTEMS ;
+@U.noun.2sg@:ki@U.noun.2sg@ ANSTEMS ;
+@U.noun.3sg@:o@U.noun.3sg@ ANSTEMS ;
+
+@U.noun.1pl@:ni@U.noun.1pl@ ANSTEMS ;   ! exclusive Pl
+@U.noun.12pl@:ki@U.noun.12pl@ ANSTEMS ; ! inclusive Pl
+@U.noun.2pl@:ki@U.noun.2pl@ ANSTEMS ;   
+@U.noun.3pl@:o@U.noun.3pl@ ANSTEMS ;
 
 LEXICON IN
+!! @LEXNAME@ redirects to INSTEMS in two ways:
+!! Without prefixes, forming the absolutive (non-Px) declension
 
-! Absolutive (non-Px) declension
-INSTEMS ; 
+@U.noun.abs@  INSTEMS ; 
 
-! Possessive declension
-@U.noun.1sg@:nin@U.noun.1sg@ INSTEMS ;
-@U.noun.2sg@:gi@U.noun.2sg@ INSTEMS ;
+!! With prefixes, forming the possessive declension
+@U.noun.1sg@:ni@U.noun.1sg@ INSTEMS ;
+@U.noun.2sg@:ki@U.noun.2sg@ INSTEMS ;
 @U.noun.3sg@:o@U.noun.3sg@ INSTEMS ;
 
-@U.noun.1pl@:nin@U.noun.1pl@ INSTEMS ;   ! exclusive Pl
-@U.noun.12pl@:gi@U.noun.12pl@ INSTEMS ; ! inclusive Pl
-@U.noun.2pl@:gi@U.noun.2pl@ INSTEMS ;   
+@U.noun.1pl@:ni@U.noun.1pl@ INSTEMS ;   ! exclusive Pl
+@U.noun.12pl@:ki@U.noun.12pl@ INSTEMS ; ! inclusive Pl
+@U.noun.2pl@:ki@U.noun.2pl@ INSTEMS ;   
 @U.noun.3pl@:o@U.noun.3pl@ INSTEMS ;
 
 
@@ -54,9 +71,24 @@ INSTEMS ;
 LEXICON ANSTEMS
 
 inini ANDECL "man" ; 
+nâpês ANDECL "boy" ;
+apiscacihkos ANDECL "antelope" ;
+mâyatihk ANDECL "bighorn sheep" ;
+atihk ANDECL "caribou" ;
+apisimôsos ANDECL "deer" ; ! apisimôsosak
+wâwaskêsiw ANDECL "elk" ;
+mistatim ANDECL "horse" ; ! mistatimwak
+môswa ANDECL "moose" ; ! môswak
+maskwa ANDECL "bear" ; ! maskwak
+okistatowân ANDECL "grizzly bear" ; ! okistatowânak
+wâpask ANDECL "polar bear" ; ! wâpaskwak
+
+
 
 LEXICON INSTEMS
 môhkomân INDECL "knife" ;
+
+
 atim INDECL "dog" ;
 
 
