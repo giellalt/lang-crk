@@ -1,0 +1,23 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - atim - ok : # -m animate noun
+     atim+N+AN+Sg: atim
+     atim+N+AN+Pl: [atimak, atimwak]
+     atim+N+AN+Sg+Loc: atimihk
+     atim+N+AN+Pl+Loc: [atimakihk, atimwakwihk]
+     atim+N+AN+Sg+Px1Sg: niatim
+     atim+N+AN+Sg+Px2Sg: kiatim
+     atim+N+AN+Sg+Px3Sg: atim
+     atim+N+AN+Sg+Px1Pl: niatimnân
+     atim+N+AN+Sg+Px12Pl: niatimnân
+     atim+N+AN+Sg+Px2Pl: kiatimwâw
+     atim+N+AN+Sg+Px3Pl: atimwâw
