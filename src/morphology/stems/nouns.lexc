@@ -13,7 +13,7 @@
 ! giellatekno@hum.uit.no or divvun@samediggi.no
 
 ! ========================================================================== !
-!!                           !!! Plains Cree noun stems                           
+!!                           !!!Plains Cree noun stems                           
 ! ========================================================================== !
 
 !! The file
@@ -64,9 +64,9 @@ LEXICON IN
 @U.noun.3pl@:o@U.noun.3pl@ INSTEMS ;
 
 
-!! !! The stems
+!! !!The stems
 
-!! ! Animate Nouns
+!! !Animate Nouns
 !    =============
 
 LEXICON ANSTEMS
@@ -86,6 +86,8 @@ wâpask ANDECL "polar bear" ; ! wâpaskwak
 atim ANDECL "dog" ;
 sîsîp ANDECL "duck" ;
 
+!! !Animate Nouns
+!    =============
 
 LEXICON INSTEMS
 môhkomân INDECL "knife" ;
