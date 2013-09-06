@@ -105,6 +105,10 @@ Nominal MSP
 
  * %> 		  suffix border
 
+ * +WAK  	  tag to keep track of -wak plurals
+
+ * +Use/Sub  tag for substandard forms
+
 
 Flagdiacritics 
 
@@ -263,13 +267,14 @@ Transitive inanimate
 The stems
 
  LEXICON IASTEM    
- wâpam IACONJ "see" ;  misclassified for TA, awaiting a grammar
+ nîpaw IACONJ "sleep" ;  
 
  LEXICON IISTEM    
  * ozhaawashkwaa IICONJ "bleuir" ;  is Ojibwe, replace with Cree
 
 
  LEXICON TASTEM_am    
+ wâpam TACONJ_am "see" ;  
  * aabaji':aabaji' TACONJ_am "use s.o." ;  is Ojibwe, replace with Cree
 
  LEXICON TASTEM_aw    
