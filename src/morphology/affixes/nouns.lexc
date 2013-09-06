@@ -8,7 +8,9 @@
 LEXICON ANDECL 
 +N+AN+Sg@U.noun.abs@:000@U.noun.abs@  # ;
 +N+AN@U.noun.abs@:00@U.noun.abs@ PL_AK ;
-+N+AN@U.noun.abs@:00@U.noun.abs@  LOC ;
++N+AN+Sg@U.noun.abs@:00@U.noun.abs@  LOC ;
++N+AN+Pl@U.noun.abs@ak:00@U.noun.abs@  LOC ;
++N+AN+Pl@U.noun.abs@wak:00@U.noun.abs@  LOC ;
 +N+AN+Sg: AN_SUFF ;
 
 LEXICON INDECL
