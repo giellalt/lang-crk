@@ -30,7 +30,7 @@
 !! !!! Intransitive animate (IA)
 
 LEXICON IACONJ !!= @CODE@ splits in 3 conjugations
-+V+IA: IA_IND ;
++V+IA+Ind: IA_IND ;
 +V+IA: IA_SBJ ;
 +V+IA: IA_IMP ;
 
@@ -42,7 +42,8 @@ LEXICON IA_IND !!= @CODE@ gives positive and negative
 
 LEXICON IA_IND_SUFF !!= @CODE@ (so far) gives present tense only
 
-+Ind+Prs: IA_IND_PRS ;
++Prs: IA_IND_PRS ;
+!+Prt: IA_IND_PRT ;
 
 LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
 +1Sg@U.verb.1sgindep@:0@U.verb.1sgindep@ # ;
