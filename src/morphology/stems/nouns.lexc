@@ -37,7 +37,8 @@ LEXICON AN
 @U.noun.abs@ ANSTEMS ; 
 
 !! Flag diacritics direct to possessive declension later on
-@U.noun.1sg@:ni@U.noun.1sg@ ANSTEMS ;
+
+00@U.noun.1sg@:ni@U.noun.1sg@ ANSTEMS ;
 @U.noun.2sg@:ki@U.noun.2sg@ ANSTEMS ;
 @U.noun.3sg@:o@U.noun.3sg@ ANSTEMS ;
 
@@ -83,13 +84,15 @@ maskwa ANDECL "bear" ; ! maskwak
 okistatowân ANDECL "grizzly bear" ; ! okistatowânak
 wâpask ANDECL "polar bear" ; ! wâpaskwak
 atim ANDECL "dog" ;
-
+sîsîp ANDECL "duck" ;
 
 
 LEXICON INSTEMS
 môhkomân INDECL "knife" ;
-
-
+sakâw INDECL "bush" ;
+mîcimâpoy INDECL "soup" ;
+sîsîpâwi INDECL "duck egg" ;
+wâwi INDECL "egg" ;
 
 
 
