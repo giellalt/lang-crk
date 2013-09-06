@@ -1,0 +1,74 @@
+
+Plains Cree verb stems                           
+
+
+
+The verbs are analysed as follows:
+* We split the Verb lexicon in 4 groups according to transitivity class
+* For each group, we add the prefixes, and mark them with ''flag diacritics'' (the @ symbols)
+* Then come the stems themselves
+* Finally, and in another file, come the suffixes, including flag diacritics
+  to ensure that the correct prefixes and suffixes are matched together
+
+
+The Plains Cree verbs are divided in four groups:
+
+# IA: Intransitive animate
+# II: Intransitive inanimate
+# TA: Transitive animate
+# TI: Transitive inanimate
+
+ LEXICON Verb  divides the verbs in four transitivity classes
+
+
+
+Intransitive animate
+
+ LEXICON IA    divides in independent, subjunctive and imperative
+
+
+
+ LEXICON IA_INDEPENDENT    gives prefixes and flags for person-number in indicative
+
+
+
+ LEXICON IA_SUBJUNCTIV    gives prefixes and flags for person-number in subjunctive
+
+
+
+ LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
+
+
+Intransitive inanimate
+
+These have no prefixes, so we go directly to the __IISTEM__ lexicon.
+
+
+
+Transitive animate
+
+ LEXICON TA   is still not written
+
+
+Transitive inanimate
+
+ LEXICON TI   is still not written
+
+
+The stems
+
+ LEXICON IASTEM    
+ wâpam IACONJ "see" ;  misclassified for TA, awaiting a grammar
+
+ LEXICON IISTEM    
+ * ozhaawashkwaa IICONJ "bleuir" ;  is Ojibwe, replace with Cree
+
+
+ LEXICON TASTEM_am    
+ * aabaji':aabaji' TACONJ_am "use s.o." ;  is Ojibwe, replace with Cree
+
+ LEXICON TASTEM_aw    
+ * aaniikanootaw:aanikanoot TACONJ_am "translate s.o." ;  is Ojibwe, replace with Cree
+
+
+
