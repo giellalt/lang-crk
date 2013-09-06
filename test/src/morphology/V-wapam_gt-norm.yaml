@@ -1,0 +1,59 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - wâpam - ok : # Ordinary IA verb - full paradigm
+     wâpam+V+IA+Ind+Prs+1Sg: niwâpam
+     wâpam+V+IA+Ind+Prs+2Sg: kiwâpam
+     wâpam+V+IA+Ind+Prs+3Sg: wâpam
+     wâpam+V+IA+Ind+Prs+3oSg: wâpamwan
+     wâpam+V+IA+Ind+Prs+3iSg: wâpamm
+     wâpam+V+IA+Ind+Prs+1Pl: niwâpammin
+     wâpam+V+IA+Ind+Prs+12Pl: kiwâpammin
+     wâpam+V+IA+Ind+Prs+2Pl: kiwâpamm
+     wâpam+V+IA+Ind+Prs+3Pl: wâpamwag
+     wâpam+V+IA+Neg+Ind+Prs+1Sg: niwâpamsiin
+     wâpam+V+IA+Neg+Ind+Prs+2Sg: kiwâpamsiin
+     wâpam+V+IA+Neg+Ind+Prs+3Sg: wâpamsiin
+     wâpam+V+IA+Neg+Ind+Prs+3oSg: wâpamsiiwan
+     wâpam+V+IA+Neg+Ind+Prs+3iSg: wâpamsiim
+     wâpam+V+IA+Neg+Ind+Prs+1Pl: niwâpamsiimin
+     wâpam+V+IA+Neg+Ind+Prs+12Pl: kiwâpamsiimin
+     wâpam+V+IA+Neg+Ind+Prs+2Pl: kiwâpamsiim
+     wâpam+V+IA+Neg+Ind+Prs+3Pl: wâpamsiiwag
+
+     wâpam+V+IA+Sbj+1Sg: wâpamyaan
+     wâpam+V+IA+Sbj+2Sg: wâpamyan
+     wâpam+V+IA+Sbj+3Sg: wâpamd
+     wâpam+V+IA+Sbj+3oSg: wâpamnid
+     wâpam+V+IA+Sbj+3iSg: wâpamng
+     wâpam+V+IA+Sbj+1Pl: wâpamyaang
+     wâpam+V+IA+Sbj+12Pl: wâpamyang
+     wâpam+V+IA+Sbj+2Pl: wâpamyeg
+     wâpam+V+IA+Sbj+3Pl: wâpamwaad
+     wâpam+V+IA+Neg+Sbj+1Sg: wâpamsiwaan
+     wâpam+V+IA+Neg+Sbj+2Sg: wâpamsiwan
+     wâpam+V+IA+Neg+Sbj+3Sg: wâpamsig
+     wâpam+V+IA+Neg+Sbj+3oSg: [wâpamsinid, wâpamsinig]
+     wâpam+V+IA+Neg+Sbj+3iSg: wâpamsing
+     wâpam+V+IA+Neg+Sbj+1Pl: wâpamsiwaang
+     wâpam+V+IA+Neg+Sbj+12Pl: wâpamsiwang
+     wâpam+V+IA+Neg+Sbj+2Pl: wâpamsiweg
+     wâpam+V+IA+Neg+Sbj+3Pl: wâpamsiwaa
+
+     wâpam+V+IA+Imp+Imm+2Sg: wâpamn
+     wâpam+V+IA+Imp+Imm+1Pl: wâpamdaa
+     wâpam+V+IA+Imp+Imm+2Pl: [wâpamk, wâpamg]
+     wâpam+V+IA+Imp+Int+2Sg: wâpamken
+     wâpam+V+IA+Imp+Int+1Pl: wâpamsiidaa
+     wâpam+V+IA+Imp+Int+2Pl: wâpamkegon
+     wâpam+V+IA+Imp+Dur+2Sg: wâpamkan
+     wâpam+V+IA+Imp+Dur+2Pl: wâpamkeg
+
