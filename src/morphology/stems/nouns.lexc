@@ -38,14 +38,14 @@ LEXICON AN
 
 !! Flag diacritics direct to possessive declension later on
 
-00@U.noun.1sg@:ni@U.noun.1sg@ ANSTEMS ;
-@U.noun.2sg@:ki@U.noun.2sg@ ANSTEMS ;
-@U.noun.3sg@:o@U.noun.3sg@ ANSTEMS ;
+< 0:n 0:i "@U.noun.1sg@" > ANSTEMS ; ! 1
+< 0:k 0:i "@U.noun.2sg@" > ANSTEMS ; ! 2
+< 0:o "@U.noun.3sg@" > ANSTEMS ;     ! 3
+< 0:n 0:i "@U.noun.1pl@" > ANSTEMS;   ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@" > ANSTEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@" > ANSTEMS ;  ! 2pl 
+< 0:o "@U.noun.3pl@" > ANSTEMS;       ! 3pl
 
-@U.noun.1pl@:ni@U.noun.1pl@ ANSTEMS ;   ! exclusive Pl
-@U.noun.12pl@:ki@U.noun.12pl@ ANSTEMS ; ! inclusive Pl
-@U.noun.2pl@:ki@U.noun.2pl@ ANSTEMS ;   
-@U.noun.3pl@:o@U.noun.3pl@ ANSTEMS ;
 
 LEXICON IN
 !! @LEXNAME@ redirects to INSTEMS in two ways:
@@ -54,15 +54,26 @@ LEXICON IN
 @U.noun.abs@  INSTEMS ; 
 
 !! With prefixes, forming the possessive declension
-@U.noun.1sg@:ni@U.noun.1sg@ INSTEMS ;
-@U.noun.2sg@:ki@U.noun.2sg@ INSTEMS ;
-@U.noun.3sg@:o@U.noun.3sg@ INSTEMS ;
+!@U.noun.1sg@:ni@U.noun.1sg@ INSTEMS ;
+< 0:n 0:i "@U.noun.1sg@" > INSTEMS ;
 
-@U.noun.1pl@:ni@U.noun.1pl@ INSTEMS ;   ! exclusive Pl
-@U.noun.12pl@:ki@U.noun.12pl@ INSTEMS ; ! inclusive Pl
-@U.noun.2pl@:ki@U.noun.2pl@ INSTEMS ;   
-@U.noun.3pl@:o@U.noun.3pl@ INSTEMS ;
+!@U.noun.2sg@:ki@U.noun.2sg@ INSTEMS ;
+< 0:k 0:i "@U.noun.2sg@" > INSTEMS ;
 
+!@U.noun.3sg@:o@U.noun.3sg@ INSTEMS ;
+< 0:o "@U.noun.3sg@" > ISNTEMS ;
+
+!@U.noun.1pl@:ni@U.noun.1pl@ INSTEMS ;   ! exclusive Pl
+< 0:n 0:i "@U.noun.1pl@" > INSTEMS ; ! exclusive Pl
+
+!@U.noun.12pl@:ki@U.noun.12pl@ INSTEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.12pl@" > INSTEMS ; ! inclusive Pl
+
+!@U.noun.2pl@:ki@U.noun.2pl@ INSTEMS ;
+< 0:k 0:i "@U.noun.2pl@" > INSTEMS ;
+   
+!@U.noun.3pl@:o@U.noun.3pl@ INSTEMS ;
+< 0:o "@U.noun.3pl@" > INSTEMS ;
 
 !! !!The stems
 
@@ -85,6 +96,10 @@ okistatowân ANDECL "grizzly bear" ; ! okistatowânak
 wâpask ANDECL "polar bear" ; ! wâpaskwak
 atim ANDECL "dog" ;
 sîsîp ANDECL "duck" ;
+iskwêw   ANDECL ;
+sisip    ANDECL ;
+naniway ANDECL ;        !"my cheek"
+iskwêw ANDECL ;         !"a woman"
 
 !! !Inanimate Nouns
 !    =============
@@ -95,6 +110,9 @@ sakâw INDECL "bush" ;
 mîcimâpoy INDECL "soup" ;
 sîsîpâwi INDECL "duck egg" ;
 wâwi INDECL "egg" ;
+ôtênaw INDECL ;         !"city"
+asiniy INDECL ;         !"a stone"
+mîcimâpoy INDECL ;      !"soup"
 
 
 

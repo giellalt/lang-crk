@@ -53,14 +53,24 @@ IA_IMPERATIV ;
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
 
-@U.verb.1sgindep@:ni@U.verb.1sgindep@ IASTEM ;
-@U.verb.2sgindep@:ki@U.verb.2sgindep@ IASTEM ;
+!@U.verb.1sgindep@:ni@U.verb.1sgindep@ IASTEM ;
+< 0:n 0:i "@U.verb.1sgindep@" > IASTEMS ;
+
+!@U.verb.2sgindep@:ki@U.verb.2sgindep@ IASTEM ;
+< 0:k 0:i "@U.verb.2sgindep@" > IASTEMS ;
+
 @U.verb.3sgindep@:@U.verb.3sgindep@ IASTEM ;
+
+
 @U.verb.3osgindep@:@U.verb.3osgindep@ IASTEM ;
 @U.verb.3isgindep@:@U.verb.3isgindep@ IASTEM ;
 
-@U.verb.1plindep@:ni@U.verb.1plindep@ IASTEM ;   ! exclusive Pl
+!@U.verb.1plindep@:ni@U.verb.1plindep@ IASTEM ;   ! exclusive Pl
+< 0:n 0:i "@U.verb.1plindep@" > IASTEMS ;   ! exclusive Pl
+
 @U.verb.12plindep@:ki@U.verb.12plindep@ IASTEM ; ! inclusive Pl
+< 0:k 0:i "@U.verb.12plindep@" > IASTEMS ;   ! inclusive Pl
+
 @U.verb.2plindep@:ki@U.verb.2plindep@ IASTEM ;   
 @U.verb.3plindep@:@U.verb.3plindep@ IASTEM ;
 
