@@ -1,0 +1,23 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - naniway - ok : # -m animate noun
+     naniway+N+AN+Sg: naniway
+     naniway+N+AN+Pl: [naniwayak, naniwaywak]
+     naniway+N+AN+Sg+Loc: naniwayihk
+     naniway+N+AN+Pl+Loc: [naniwayakihk, naniwaywakwihk]
+     naniway+N+AN+Sg+Px1Sg: ninaniway
+     naniway+N+AN+Sg+Px2Sg: kinaniway
+     naniway+N+AN+Sg+Px3Sg: naniway
+     naniway+N+AN+Sg+Px1Pl: ninaniwaynân
+     naniway+N+AN+Sg+Px12Pl: ninaniwaynân
+     naniway+N+AN+Sg+Px2Pl: kinaniwaywâw
+     naniway+N+AN+Sg+Px3Pl: naniwaywâw
