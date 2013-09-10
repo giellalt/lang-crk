@@ -53,7 +53,8 @@ PL_AK ;
 LOC ;
 
 LEXICON LOC
-+Loc:%>ihk # ;
+!+Loc:%>ihk # ; ! was like this
++Loc:i%^LChk  # ; ! taken from test
 
 LEXICON PL_A
 +Pl:%>a # ;
