@@ -1,0 +1,23 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - iskwêw - ok : # -m animate noun
+     iskwêw+N+AN+Sg: iskwêw
+     iskwêw+N+AN+Pl: [iskwêwak, iskwêwwak]
+     iskwêw+N+AN+Sg+Loc: iskwêwihk
+     iskwêw+N+AN+Pl+Loc: [iskwêwakihk, iskwêwwakwihk]
+     iskwêw+N+AN+Sg+Px1Sg: niiskwêw
+     iskwêw+N+AN+Sg+Px2Sg: kiiskwêw
+     iskwêw+N+AN+Sg+Px3Sg: iskwêw
+     iskwêw+N+AN+Sg+Px1Pl: niiskwêwnân
+     iskwêw+N+AN+Sg+Px12Pl: niiskwêwnân
+     iskwêw+N+AN+Sg+Px2Pl: kiiskwêwwâw
+     iskwêw+N+AN+Sg+Px3Pl: iskwêwwâw
