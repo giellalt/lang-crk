@@ -87,11 +87,11 @@ Sets
 Rules
 
 "Suffix a Deletion in Vowel Final Stems"
-!! __RULENAME__ gives maskwa + ak = plural maskwak
+!! __@RULENAME@__ gives maskwa + ak = plural maskwak
  a:0 <=> Vow %>: _ Cns ;
 
 "w Insertion in Front of Vowel Initial Suffix after k and m"
-!! __RULENAME__ inserts w after k, m in front of plural -ak
+!! __@RULENAME@__ inserts w after k, m in front of plural -ak
 !! Note that this rule probably is wrong, and that the -w- is
 !! a morphological affix rather than a phonological variant.
  0:w <=> [ k | m ] %>: _ a k ;
@@ -102,7 +102,7 @@ Rules
  
 
 "Suffix Final n" 
-!! __RULENAME__  
+!! __@RULENAME@__  
  n:0 <=> _ (Dummy:) %>:0 Cns ;
 
 "locative alternations o"
