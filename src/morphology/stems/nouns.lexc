@@ -42,9 +42,12 @@ LEXICON AN
 < 0:k 0:i "@U.noun.2sg@" > ANSTEMS ; ! 2
 < 0:o "@U.noun.3sg@" > ANSTEMS ;     ! 3
 < 0:n 0:i "@U.noun.1pl@" > ANSTEMS;   ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@" > ANSTEMS ; ! inclusive Pl
+! note: 12pl prefix used to be ki-, now ni-
+!< 0:k 0:i "@U.noun.12pl@" > ANSTEMS ; ! inclusive Pl
+< 0:n 0:i "@U.noun.12pl@" > ANSTEMS ; ! inclusive Pl
 < 0:k 0:i "@U.noun.2pl@" > ANSTEMS ;  ! 2pl 
-< 0:o "@U.noun.3pl@" > ANSTEMS;       ! 3pl
+< "@U.noun.3pl@" > ANSTEMS;       ! 3pl
+!< 0:o "@U.noun.3pl@" > ANSTEMS;       ! 3pl note: is prefix o- correct?
 
 
 LEXICON IN
