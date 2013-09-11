@@ -33,26 +33,26 @@ LEXICON AN
 !! At the moment it is just a copy of INSTEMS, 
 !! pretending animates and inanimates are identical
 !! Flag diacritics direct to possessive declension later on
-@U.noun.abs@ ANSTEMS ; 
-< 0:n 0:i "@U.noun.1sg@" 0:"%>" > ANSTEMS ; ! 1
-< 0:k 0:i "@U.noun.2sg@" 0:"%>" > ANSTEMS ; ! 2
-< 0:o "@U.noun.3sg@" 0:"%>" > ANSTEMS ;     ! 3
-< 0:n 0:i "@U.noun.1pl@" 0:"%>" > ANSTEMS;   ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@" 0:"%>" > ANSTEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@" 0:"%>" > ANSTEMS ;  ! 2pl 
-< 0:o "@U.noun.3pl@" 0:"%>" > ANSTEMS;       ! 3pl note: is prefix o- correct?
+@U.noun.abs@ ANSTEMLIST ; 
+< 0:n 0:i "@U.noun.1sg@"  > ANSTEMS ; ! 1
+< 0:k 0:i "@U.noun.2sg@"  > ANSTEMS ; ! 2
+< 0:o "@U.noun.3sg@"  > ANSTEMS ;     ! 3
+< 0:n 0:i "@U.noun.1pl@"  > ANSTEMS;   ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@"  > ANSTEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@"  > ANSTEMS ;  ! 2pl 
+< 0:o "@U.noun.3pl@"  > ANSTEMS;       ! 3pl note: is prefix o- correct?
 
 
 LEXICON INALIENABLE
 !! @LEXNAME@ redirects to INALIENABLESTEMS
-< 0:n 0:i "@U.noun.1sg@" 0:"%>" > INALIENABLESTEMS ; ! 1
-< 0:k 0:i "@U.noun.2sg@" 0:"%>" > INALIENABLESTEMS ; ! 2
-< 0:o "@U.noun.3sg@" 0:"%>" > INALIENABLESTEMS ;     ! 3
-< 0:m 0:i "@U.noun.3isg@" 0:"%>" > INALIENABLESTEMS ;     ! 3indef
-< 0:n 0:i "@U.noun.1pl@" 0:"%>" > INALIENABLESTEMS;   ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@" 0:"%>" > INALIENABLESTEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@" 0:"%>" > INALIENABLESTEMS ;  ! 2pl 
-< 0:o "@U.noun.3pl@" 0:"%>" > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
+< 0:n 0:i "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
+< 0:k 0:i "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
+< 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
+< 0:m 0:i "@U.noun.3isg@"  > INALIENABLESTEMS ;     ! 3indef
+< 0:n 0:i "@U.noun.1pl@"  > INALIENABLESTEMS;   ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@"  > INALIENABLESTEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
+< 0:o "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
 
 
 LEXICON IN
@@ -89,7 +89,9 @@ LEXICON IN
 !    =============
 
 LEXICON ANSTEMS
+ :%> ANSTEMLIST ;
 
+LEXICON ANSTEMLIST
 inini ANDECL "man" ; 
 nâpês ANDECL "boy" ;
 apiscacihkos ANDECL "antelope" ;
