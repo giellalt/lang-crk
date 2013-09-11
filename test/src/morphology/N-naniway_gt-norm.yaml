@@ -9,14 +9,15 @@ Config:
 
 Tests:
   
-  Verb - naniway - ok : # -m animate noun
-     naniway+N+AN+Sg: naniway
-     naniway+N+AN+Pl: naniwâhk
-     naniway+N+AN+Loc: naniwayihk
-     naniway+N+AN+Sg+Px1Sg: ninaniway
-     naniway+N+AN+Sg+Px2Sg: kinaniway
-     naniway+N+AN+Sg+Px3Sg: naniway
-     naniway+N+AN+Sg+Px1Pl: ninaniwaynân
-     naniway+N+AN+Sg+Px12Pl: ninaniwaynân
-     naniway+N+AN+Sg+Px2Pl: kinaniwaywâw
-     naniway+N+AN+Sg+Px3Pl: naniwaywâw
+  Verb - maniway - ok : # -m animate noun
+     maniway+N+AN+Sg: naniway
+     maniway+N+AN+Pl: naniwâhk
+     maniway+N+AN+Loc: naniwayihk
+     maniway+N+AN+Sg+Px1Sg: naniway
+     maniway+N+AN+Sg+Px2Sg: kaniway
+     maniway+N+AN+Sg+Px3Sg: otaniway
+     maniway+N+AN+Sg+Px3iSg: maniway
+     maniway+N+AN+Sg+Px1Pl: naniwaynân
+     maniway+N+AN+Sg+Px12Pl: kinawaynân
+     maniway+N+AN+Sg+Px2Pl: kaniwaywâw
+     maniway+N+AN+Sg+Px3Pl: naniwaywâw
