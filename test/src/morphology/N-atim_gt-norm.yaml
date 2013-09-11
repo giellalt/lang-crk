@@ -11,13 +11,12 @@ Tests:
   
   Verb - atim - ok : # -m animate noun
      atim+N+AN+Sg: atim
-     atim+N+AN+Pl: [atimak, atimwak]
-     atim+N+AN+Sg+Loc: atimihk
-     atim+N+AN+Pl+Loc: [atimakihk, atimwakwihk]
-     atim+N+AN+Sg+Px1Sg: niatim
-     atim+N+AN+Sg+Px2Sg: kiatim
-     atim+N+AN+Sg+Px3Sg: atim
-     atim+N+AN+Sg+Px1Pl: niatimnân
-     atim+N+AN+Sg+Px12Pl: niatimnân
-     atim+N+AN+Sg+Px2Pl: kiatimwâw
-     atim+N+AN+Sg+Px3Pl: atimwâw
+     atim+N+AN+Pl: atimwak
+     atim+N+AN+Loc: atimihk
+     atim+N+AN+Sg+Px1Sg: nitatim # CS: no vowel sequences in PC forindepedent nouns a -t- is inserted between the possessive prefix and the stem
+     atim+N+AN+Sg+Px2Sg: kitatim
+     atim+N+AN+Sg+Px3Sg: otatim
+     atim+N+AN+Sg+Px1Pl: nitatimnân
+     atim+N+AN+Sg+Px12Pl: nitatimnân
+     atim+N+AN+Sg+Px2Pl: kitatimwâw
+     atim+N+AN+Sg+Px3Pl: otatimwâw
