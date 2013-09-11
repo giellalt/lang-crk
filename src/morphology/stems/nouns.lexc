@@ -49,7 +49,7 @@ LEXICON INALIENABLE
 < 0:k 0:i "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
 < 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
 < 0:m 0:i "@U.noun.3isg@"  > INALIENABLESTEMS ;     ! 3indef
-< 0:n 0:i "@U.noun.1pl@"  > INALIENABLESTEMS;   ! exclusive Pl
+< 0:n 0:i "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
 < 0:k 0:i "@U.noun.12pl@"  > INALIENABLESTEMS ; ! inclusive Pl
 < 0:k 0:i "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
 < 0:o "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
@@ -62,13 +62,13 @@ LEXICON IN
 @U.noun.abs@  INSTEMS ; 
 
 !! With prefixes, forming the possessive declension
-< 0:n 0:i "@U.noun.1sg@" > INSTEMS ;
-< 0:k 0:i "@U.noun.2sg@" > INSTEMS ;
-< 0:o "@U.noun.3sg@" > ISNTEMS ;
+< 0:n 0:i "@U.noun.1sg@" > INSTEMS ; !
+< 0:k 0:i "@U.noun.2sg@" > INSTEMS ; !
+< 0:o "@U.noun.3sg@" > ISNTEMS ; !
 < 0:n 0:i "@U.noun.1pl@" > INSTEMS ; ! exclusive Pl
 < 0:k 0:i "@U.noun.12pl@" > INSTEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@" > INSTEMS ;
-< 0:o "@U.noun.3pl@" > INSTEMS ;
+< 0:k 0:i "@U.noun.2pl@" > INSTEMS ; !
+< 0:o "@U.noun.3pl@" > INSTEMS ; !
 
 !! !!The stems
 
@@ -98,7 +98,7 @@ iskwêw ANDECL ;         !"a woman"
 
 
 LEXICON INALIENABLESTEMS
-maniway:niway INALIENABLEDECL ;        !"someone's cheek"
+maniway:%>niway INALIENABLEDECL ;        !"someone's cheek"
 
 
 !! !Inanimate Nouns
