@@ -8,29 +8,6 @@ Alphabet
  %>:0 
  %^LC:0 ! Locative suffix alternation trigger
  
-@U.verb.1sgindep@ 
-@U.verb.2sgindep@ 
-@U.verb.3sgindep@ 
-@U.verb.3osgindep@ 
-@U.verb.3isgindep@ 
-@U.verb.1plindep@ 
-@U.verb.12plindep@ 
-@U.verb.2plindep@ 
-@U.verb.3plindep@ 
-
-@U.verb.1sgsbj@ 
-@U.verb.2sgsbj@ 
-@U.verb.3sgsbj@ 
-@U.verb.3osgsbj@ 
-@U.verb.3isgsbj@ 
-@U.verb.1plsbj@ 
-@U.verb.12plsbj@ 
-@U.verb.2plsbj@ 
-@U.verb.3plsbj@ 
-
-@U.verb.2sgimp@
-@U.verb.1plimp@
-@U.verb.2plimp@
 
  ;
 
@@ -46,41 +23,7 @@ Sets
  Nas = m n ;
  NonNas = b c d f g h j k l p q r s t v w x z ;
 
- Dummy = @U.verb.1sgindep@ 
-         @U.verb.2sgindep@ 
-         @U.verb.3sgindep@ 
-         @U.verb.3osgindep@ 
-         @U.verb.3isgindep@ 
-         @U.verb.1plindep@ 
-         @U.verb.12plindep@ 
-         @U.verb.2plindep@ 
-         @U.verb.3plindep@ 
-         
-         @U.verb.1sgsbj@ 
-         @U.verb.2sgsbj@ 
-         @U.verb.3sgsbj@ 
-         @U.verb.3osgsbj@ 
-         @U.verb.3isgsbj@ 
-         @U.verb.1plsbj@ 
-         @U.verb.12plsbj@ 
-         @U.verb.2plsbj@ 
-         @U.verb.3plsbj@ 
-         
-         @U.verb.2sgimp@
-         @U.verb.1plimp@
-         @U.verb.2plimp@
-
-@U.noun.1sg@
-@U.noun.2sg@
-@U.noun.3sg@
-@U.noun.1pl@
-@U.noun.12pl@
-@U.noun.2pl@
-@U.noun.3pl@
-
-@U.noun.abs@ 
-
-;
+ Dummy = %> ;
 
 
 !! !!!Rules
@@ -89,13 +32,14 @@ Rules
 
 "Suffix a Deletion in Vowel Final Stems"
 !! __@RULENAME@__ gives maskwa + ak = plural maskwak
- a:0 <=> Vow %>: _ Cns ;
+ Vx:0 <=> _ %>:0 :Vow ;
+ 	where Vx in ( a e i o â ê î ô ) ;
 
 "w Insertion in Front of Vowel Initial Suffix after k and m"
 !! __@RULENAME@__ inserts w after k, m in front of plural -ak
 !! Note that this rule probably is wrong, and that the -w- is
 !! a morphological affix rather than a phonological variant.
- 0:w <=> [ k | m ] %>: _ a k ;
+ 0:w <=> [ k | m ] %>:0 _ a k ;
  
 !€ wâpask0>ak
 !€ wâpaskw0ak 
@@ -104,39 +48,48 @@ Rules
 
 "Suffix Final n" 
 !! __@RULENAME@__  
- n:0 <=> _ (Dummy:) %>:0 Cns ;
+ n:0 <=> _ %>:0 Cns ;
 
 "locative alternations o"
-i:o <=> k _  (Dummy:) %^LC: ;
-
+i:o <=> k %>:0 _  %^LC:0   ;
 
 ! first
 "locative alternations aaw 1"
-Vx:0 <=> _ [ w: | y: ] (Dummy:) i: %^LC: ;
+Vx:0 <=> _ [ w: | y: ] %>:0  i: %^LC:0   ;
     where Vx in ( i a o ) ;
     
 ! second
 "locative alternations aaw 2"
-Cx:0 <=> [a:|i:|o:] _  (Dummy:) i: %^LC: ;
+Cx:0 <=> [a:|i:|o:] _  %>:0  i: %^LC:0  ;
     where Cx in ( w y ) ;
 
 ! third
 "locative alternations aaw 3a"
-i:â <=> [ô|ê |a:] [ w: | y: ]  (Dummy:) _ %^LC: ;
+i:â <=> [ ô | ê | a: ] [ w: | y: ]  %>:0  _ %^LC:0  ;
 !	<=> :n _ ^LC: ;
 
 "locative alternation iihk 3i"
-i:î <=> i: y:  (Dummy:) _ %^LC: ;
+i:î <=> i: y:  %>:0  _ %^LC:0  ;
 
 "locative alternation oohk io"
-i:ô <=> o: y:  (Dummy:) _ %^LC: ;          !change the suffix initial i to a long o 
+i:ô <=> o: y:  %>:0  _ %^LC:0  ;          !change the suffix initial i to a long o 
 									!e.g. mîcimâpoy > mîcimâpoyôhk
                                     !then delete y in second
                                     !then delete o in first
                                     
 "locative alternation naahk 1"		!adds nâhk after êw 1: change w to n
-w:n <=> [ê|ô] _  (Dummy:) (Dummy:) i: %^LC: ;
+w:n <=> [ê|ô] _  %>:0 i: %^LC:0  ;
 
   
 "possessive prefxes"
-t2:t <=> _ Dummy: %>:0 Vow ;
+!t2:t <=> _ %>:0 Vow ;
+ t2:t <=> _ Vow ;
+
+"double consonant deletion"
+Cx:0 <=> _ %>:0 Cx ;
+	where Cx in Cns ; 
+	
+	
+"i to a in prefixes in front of nasals"
+i:a <=> .#. n _ %>:0 [ n | m ] i	;
+ 
