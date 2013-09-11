@@ -4,6 +4,7 @@ Alphabet
  â ê î ô
  Â Ê Î Ô
  
+ t2:0
  %>:0 
  %^LC:0 ! Locative suffix alternation trigger
  
@@ -106,35 +107,36 @@ Rules
  n:0 <=> _ (Dummy:) %>:0 Cns ;
 
 "locative alternations o"
-i:o <=> k _  (Dummy:*) %^LC: ;
+i:o <=> k _  (Dummy:) %^LC: ;
 
 
 ! first
 "locative alternations aaw 1"
-Vx:0 <=> _ [ w: | y: ] (Dummy:*) i: %^LC: ;
+Vx:0 <=> _ [ w: | y: ] (Dummy:) i: %^LC: ;
     where Vx in ( i a o ) ;
     
 ! second
 "locative alternations aaw 2"
-Cx:0 <=> [a:|i:|o:] _  (Dummy:*) i: %^LC: ;
+Cx:0 <=> [a:|i:|o:] _  (Dummy:) i: %^LC: ;
     where Cx in ( w y ) ;
 
 ! third
 "locative alternations aaw 3a"
-i:â <=> [ô|ê |a:] [ w: | y: ]  (Dummy:*) _ %^LC: ;
+i:â <=> [ô|ê |a:] [ w: | y: ]  (Dummy:) _ %^LC: ;
 !	<=> :n _ ^LC: ;
 
 "locative alternation iihk 3i"
-i:î <=> i: y:  (Dummy:*) _ %^LC: ;
+i:î <=> i: y:  (Dummy:) _ %^LC: ;
 
 "locative alternation oohk io"
-i:ô <=> o: y:  (Dummy:*) _ %^LC: ;          !change the suffix initial i to a long o 
+i:ô <=> o: y:  (Dummy:) _ %^LC: ;          !change the suffix initial i to a long o 
 									!e.g. mîcimâpoy > mîcimâpoyôhk
                                     !then delete y in second
                                     !then delete o in first
                                     
 "locative alternation naahk 1"		!adds nâhk after êw 1: change w to n
-w:n <=> [ê|ô] _  (Dummy:*) i: %^LC: ;
+w:n <=> [ê|ô] _  (Dummy:) (Dummy:) i: %^LC: ;
 
   
- 
+"possessive prefxes"
+t2:t <=> _ Dummy: %>:0 Vow ;
