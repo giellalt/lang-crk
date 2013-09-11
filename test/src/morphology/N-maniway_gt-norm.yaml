@@ -1,0 +1,20 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - maniway - ok : # -m animate noun
+     maniway+N+AN+Sg+Px1Sg: naniway
+     maniway+N+AN+Sg+Px2Sg: kaniway
+     maniway+N+AN+Sg+Px3Sg: otaniway
+     maniway+N+AN+Sg+Px3iSg: maniway
+     maniway+N+AN+Sg+Px1Pl: naniwaynân
+     maniway+N+AN+Sg+Px12Pl: kinawaynân
+     maniway+N+AN+Sg+Px2Pl: kaniwaywâw
+     maniway+N+AN+Sg+Px3Pl: naniwaywâw
