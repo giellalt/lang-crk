@@ -25,29 +25,34 @@ LEXICON Noun
 
 AN ; ! Animate nouns
 IN ; ! Inanimate nouns
-!KINSHIP ;
+INALIENABLE ;
 
 
 LEXICON AN
 !! @LEXNAME@ redirects to ANSTEMS
 !! At the moment it is just a copy of INSTEMS, 
 !! pretending animates and inanimates are identical
-
-
-@U.noun.abs@ ANSTEMS ; 
-
 !! Flag diacritics direct to possessive declension later on
+@U.noun.abs@ ANSTEMS ; 
+< 0:n 0:i "@U.noun.1sg@" 0:"%>" > ANSTEMS ; ! 1
+< 0:k 0:i "@U.noun.2sg@" 0:"%>" > ANSTEMS ; ! 2
+< 0:o "@U.noun.3sg@" 0:"%>" > ANSTEMS ;     ! 3
+< 0:n 0:i "@U.noun.1pl@" 0:"%>" > ANSTEMS;   ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@" 0:"%>" > ANSTEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@" 0:"%>" > ANSTEMS ;  ! 2pl 
+< 0:o "@U.noun.3pl@" 0:"%>" > ANSTEMS;       ! 3pl note: is prefix o- correct?
 
-< 0:n 0:i "@U.noun.1sg@" > ANSTEMS ; ! 1
-< 0:k 0:i "@U.noun.2sg@" > ANSTEMS ; ! 2
-< 0:o "@U.noun.3sg@" > ANSTEMS ;     ! 3
-< 0:n 0:i "@U.noun.1pl@" > ANSTEMS;   ! exclusive Pl
-! note: 12pl prefix used to be ki-, now ni-
-!< 0:k 0:i "@U.noun.12pl@" > ANSTEMS ; ! inclusive Pl
-< 0:n 0:i "@U.noun.12pl@" > ANSTEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@" > ANSTEMS ;  ! 2pl 
-< "@U.noun.3pl@" > ANSTEMS;       ! 3pl
-!< 0:o "@U.noun.3pl@" > ANSTEMS;       ! 3pl note: is prefix o- correct?
+
+LEXICON INALIENABLE
+!! @LEXNAME@ redirects to INALIENABLESTEMS
+< 0:n 0:i "@U.noun.1sg@" 0:"%>" > INALIENABLESTEMS ; ! 1
+< 0:k 0:i "@U.noun.2sg@" 0:"%>" > INALIENABLESTEMS ; ! 2
+< 0:o "@U.noun.3sg@" 0:"%>" > INALIENABLESTEMS ;     ! 3
+< 0:m 0:i "@U.noun.3isg@" 0:"%>" > INALIENABLESTEMS ;     ! 3indef
+< 0:n 0:i "@U.noun.1pl@" 0:"%>" > INALIENABLESTEMS;   ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@" 0:"%>" > INALIENABLESTEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@" 0:"%>" > INALIENABLESTEMS ;  ! 2pl 
+< 0:o "@U.noun.3pl@" 0:"%>" > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
 
 
 LEXICON IN
@@ -99,10 +104,12 @@ okistatowân ANDECL "grizzly bear" ; ! okistatowânak
 wâpask ANDECL "polar bear" ; ! wâpaskwak
 atim ANDECL "dog" ;
 sîsîp ANDECL "duck" ;
-iskwêw   ANDECL ;
-sisip    ANDECL ;
-naniway ANDECL ;        !"my cheek"
 iskwêw ANDECL ;         !"a woman"
+
+
+LEXICON INALIENABLESTEMS
+maniway:niway INALIENABLEDECL ;        !"someone's cheek"
+
 
 !! !Inanimate Nouns
 !    =============
