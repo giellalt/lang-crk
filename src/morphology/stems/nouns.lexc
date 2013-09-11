@@ -34,13 +34,13 @@ LEXICON AN
 !! pretending animates and inanimates are identical
 !! Flag diacritics direct to possessive declension later on
 @U.noun.abs@ ANSTEMLIST ; 
-< 0:n 0:i "@U.noun.1sg@"  > ANSTEMS ; ! 1
-< 0:k 0:i "@U.noun.2sg@"  > ANSTEMS ; ! 2
-< 0:o "@U.noun.3sg@"  > ANSTEMS ;     ! 3
-< 0:n 0:i "@U.noun.1pl@"  > ANSTEMS;   ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@"  > ANSTEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@"  > ANSTEMS ;  ! 2pl 
-< 0:o "@U.noun.3pl@"  > ANSTEMS;       ! 3pl note: is prefix o- correct?
+< 0:n 0:i "@U.noun.1sg@" 0:"t2" > ANSTEMS ; ! 1
+< 0:k 0:i "@U.noun.2sg@" 0:"t2" > ANSTEMS ; ! 2
+< 0:o "@U.noun.3sg@" 0:"t2" > ANSTEMS ;     ! 3
+< 0:n 0:i "@U.noun.1pl@" 0:"t2" > ANSTEMS ;   ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@" 0:"t2" > ANSTEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@" 0:"t2" > ANSTEMS ;  ! 2pl 
+< 0:o "@U.noun.3pl@" 0:"t2" > ANSTEMS ;       ! 3pl note: is prefix o- correct?
 
 
 LEXICON INALIENABLE
@@ -62,25 +62,12 @@ LEXICON IN
 @U.noun.abs@  INSTEMS ; 
 
 !! With prefixes, forming the possessive declension
-!@U.noun.1sg@:ni@U.noun.1sg@ INSTEMS ;
 < 0:n 0:i "@U.noun.1sg@" > INSTEMS ;
-
-!@U.noun.2sg@:ki@U.noun.2sg@ INSTEMS ;
 < 0:k 0:i "@U.noun.2sg@" > INSTEMS ;
-
-!@U.noun.3sg@:o@U.noun.3sg@ INSTEMS ;
 < 0:o "@U.noun.3sg@" > ISNTEMS ;
-
-!@U.noun.1pl@:ni@U.noun.1pl@ INSTEMS ;   ! exclusive Pl
 < 0:n 0:i "@U.noun.1pl@" > INSTEMS ; ! exclusive Pl
-
-!@U.noun.12pl@:ki@U.noun.12pl@ INSTEMS ; ! inclusive Pl
 < 0:k 0:i "@U.noun.12pl@" > INSTEMS ; ! inclusive Pl
-
-!@U.noun.2pl@:ki@U.noun.2pl@ INSTEMS ;
 < 0:k 0:i "@U.noun.2pl@" > INSTEMS ;
-   
-!@U.noun.3pl@:o@U.noun.3pl@ INSTEMS ;
 < 0:o "@U.noun.3pl@" > INSTEMS ;
 
 !! !!The stems
@@ -90,6 +77,7 @@ LEXICON IN
 
 LEXICON ANSTEMS
  :%> ANSTEMLIST ;
+!  ANSTEMLIST ;
 
 LEXICON ANSTEMLIST
 inini ANDECL "man" ; 
