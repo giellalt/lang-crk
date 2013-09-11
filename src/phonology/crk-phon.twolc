@@ -82,8 +82,8 @@ w:n <=> [ê|ô] _  %>:0 i: %^LC:0  ;
 
   
 "possessive prefxes"
-!t2:t <=> _ %>:0 Vow ;
- t2:t <=> _ Vow ;
+t2:t <=> _ %>:0 Vow ;
+! t2:t <=> _ Vow ;
 
 "double consonant deletion"
 Cx:0 <=> _ %>:0 Cx ;
