@@ -6,25 +6,15 @@
 !! !!The declinations for animates and inanimates
 
 LEXICON ANDECL 
-!+N+AN+Sg@U.noun.abs@:000@U.noun.abs@  # ;
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ;
-
-!+N+AN@U.noun.abs@:00@U.noun.abs@ PL_AK ;
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ;
-
-!+N+AN@U.noun.abs@:00@U.noun.abs@  LOC ;
-< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ;
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
+< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
 +N+AN+Sg: AN_SUFF_SG ;
 +N+AN+Pl: AN_SUFF_PL ;
 
 LEXICON INDECL
-!+N+IN+Sg@U.noun.abs@:000@U.noun.abs@  # ;
 < "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  # ;
-
-!+N+IN@U.noun.abs@:00@U.noun.abs@ PL_A ;
 < "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PL_A ;
-
-!+N+IN@U.noun.abs@:00@U.noun.abs@  LOC ;
 < "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ;
 
 +N+IN+Sg: IN_SUFF_SG ;
@@ -37,19 +27,32 @@ LEXICON AN_SUFF_SG
 < "+Px1Sg":0 "@U.noun.1sg@" > SG_ ; !
 < "+Px2Sg":0 "@U.noun.2sg@" > SG_ ; !
 < "+Px3Sg":0 "@U.noun.3sg@" > SG_ ; !
-< "+Px1Pl":0 "@U.noun.1pl@" 0:%> 0:n 0:â 0:n > SG_ ;   ! exclusive Pl
-< "+Px12Pl":0 "@U.noun.12pl@" 0:%> 0:n 0:â 0:n > SG_ ; ! inclusive Pl
-< "+Px2Pl":0 "@U.noun.2pl@" 0:%> 0:w 0:â 0:w > SG_ ; !
-< "+Px3Pl":0 "@U.noun.3pl@" 0:%> 0:w 0:â 0:w > SG_ ;
+< "+Px1Pl":0 "@U.noun.1pl@" > SG_naan ;   ! exclusive Pl
+< "+Px12Pl":0 "@U.noun.12pl@" > SG_naan ; ! inclusive Pl
+< "+Px2Pl":0 "@U.noun.2pl@" > SG_waaw ; !
+< "+Px3Pl":0 "@U.noun.3pl@" > SG_waaw ;
+
+LEXICON SG_naan
+:%>nân SG_ ;
+
+LEXICON SG_waaw
+:%>wâw SG_ ;
 
 LEXICON AN_SUFF_PL
 < "+Px1Sg":0 "@U.noun.1sg@" > PL_AK ; !
 < "+Px2Sg":0 "@U.noun.2sg@" > PL_AK ; !
-< "+Px3Sg":0 "@U.noun.3sg@" > PL_A ; !
-< "+Px1Pl":0 "@U.noun.1pl@" 0:%> 0:n 0:â 0:n > PL_AK ;   ! exclusive Pl
-< "+Px12Pl":0 "@U.noun.12pl@" 0:%> 0:n 0:â 0:n > PL_AK ; ! inclusive Pl
-< "+Px2Pl":0 "@U.noun.2pl@" 0:%> 0:w 0:â 0:w > PL_AK ; !
-< "+Px3Pl":0 "@U.noun.3pl@" 0:%> 0:w 0:â 0:w > PL_A ;
+< "+Px3Sg":0 "@U.noun.3sg@" > PL_AK ; !
+< "+Px1Pl":0 "@U.noun.1pl@" > PL_naan_AK ;   ! exclusive Pl
+< "+Px12Pl":0 "@U.noun.12pl@" > PL_naan_AK ; ! inclusive Pl
+< "+Px2Pl":0 "@U.noun.2pl@" > PL_waaw_AK ; !
+< "+Px3Pl":0 "@U.noun.3pl@" > PL_waaw_AK ;
+
+LEXICON PL_naan_AK
+:%>nân PL_AK ;
+
+LEXICON PL_waaw_AK
+:%>wâw PL_AK ;
+
 
 ! previous instead
 !+Px1Sg@U.noun.1sg@:0@U.noun.1sg@ PL_AK ;
@@ -75,19 +78,19 @@ LEXICON IN_SUFF_SG
 < "+Px1Sg":0 "@U.noun.1sg@" > SG_ ; !
 < "+Px2Sg":0 "@U.noun.2sg@" > SG_ ; !
 < "+Px3Sg":0 "@U.noun.3sg@" > SG_ ; !
-< "+Px1Pl":0 "@U.noun.1pl@" 0:%> 0:i 0:n 0:â 0:n > SG_ ;   ! exclusive Pl
-< "+Px12Pl":0 "@U.noun.12pl@" 0:%> 0:i 0:n 0:â 0:n > SG_ ; ! inclusive Pl
-< "+Px2Pl":0 "@U.noun.2pl@" 0:%> 0:i 0:w 0:â 0:w > SG_ ; !
-< "+Px3Pl":0 "@U.noun.3pl@" 0:%> 0:i 0:w 0:â 0:w > SG_ ;
+!!! < "+Px1Pl":0 "@U.noun.1pl@" 0:%> 0:i 0:n 0:â 0:n > SG_ ;   ! exclusive Pl
+!!! < "+Px12Pl":0 "@U.noun.12pl@" 0:%> 0:i 0:n 0:â 0:n > SG_ ; ! inclusive Pl
+!!! < "+Px2Pl":0 "@U.noun.2pl@" 0:%> 0:i 0:w 0:â 0:w > SG_ ; !
+!!! < "+Px3Pl":0 "@U.noun.3pl@" 0:%> 0:i 0:w 0:â 0:w > SG_ ;
 
 LEXICON IN_SUFF_PL
 < "+Px1Sg":0 "@U.noun.1sg@" > PL_AK ; !
 < "+Px2Sg":0 "@U.noun.2sg@" > PL_AK ; !
 < "+Px3Sg":0 "@U.noun.3sg@" > PL_A ; !
-< "+Px1Pl":0 "@U.noun.1pl@" 0:%> 0:i 0:n 0:â 0:n > PL_AK ;   ! exclusive Pl
-< "+Px12Pl":0 "@U.noun.12pl@" 0:%> 0:i 0:n 0:â 0:n > PL_AK ; ! inclusive Pl
-< "+Px2Pl":0 "@U.noun.2pl@" 0:%> 0:i 0:w 0:â 0:w > PL_AK ; !
-< "+Px3Pl":0 "@U.noun.3pl@" 0:%> 0:i 0:w 0:â 0:w > PL_A ;
+!!! < "+Px1Pl":0 "@U.noun.1pl@" 0:%> 0:i 0:n 0:â 0:n > PL_AK ;   ! exclusive Pl
+!!! < "+Px12Pl":0 "@U.noun.12pl@" 0:%> 0:i 0:n 0:â 0:n > PL_AK ; ! inclusive Pl
+!!! < "+Px2Pl":0 "@U.noun.2pl@" 0:%> 0:i 0:w 0:â 0:w > PL_AK ; !
+!!! < "+Px3Pl":0 "@U.noun.3pl@" 0:%> 0:i 0:w 0:â 0:w > PL_A ;
 
 
 LEXICON SG_
@@ -104,7 +107,7 @@ LOC ;
 
 LEXICON LOC
 !+Loc:%>ihk # ; ! was like this
-+Loc:i%^LChk  # ; ! taken from test
++Loc:%>i%^LChk  # ; ! taken from test
 
 !LEXICON PL_A
 !+Pl:%>a # ;
