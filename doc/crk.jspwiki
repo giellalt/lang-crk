@@ -110,6 +110,7 @@ Nominal MSP
  * +Use/Sub  tag for substandard forms
 
  * %^LC      Locative
+ * t2 		  Prefix in possessives
 
 
 
@@ -172,7 +173,6 @@ __Suffix Final n __
 
 
 
-
                           !!!Plains Cree noun stems                           
 
 The file
@@ -186,11 +186,10 @@ The prefixes
 AN redirects to ANSTEMS
 At the moment it is just a copy of INSTEMS, 
 pretending animates and inanimates are identical
-
-
-
 Flag diacritics direct to possessive declension later on
 
+
+INALIENABLE redirects to INALIENABLESTEMS
 
 
 IN redirects to INSTEMS in two ways:
@@ -208,6 +207,9 @@ With prefixes, forming the possessive declension
 !!The stems
 
 !Animate Nouns
+
+
+
 
 
 
