@@ -41,7 +41,7 @@ LEXICON AN_SUFF_SG
 < "+Px2Pl":0 "@U.noun.2pl@" > SG_waaw ; !
 < "+Px3Pl":0 "@U.noun.3pl@" > SG_waaw ; !
 
-LEXICON INAL_SUFF_SG
+LEXICON INAL_SUFF_PL
 < "+Px3iSg":0 "@U.noun.3isg@" > PL_AK ; !
 < "+Px3iPl":0 "@U.noun.3ipl@" > PL_waaw_AK ;
 AN_SUFF_PL ;
