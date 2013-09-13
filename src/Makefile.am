@@ -83,7 +83,7 @@ endif # WANT_OAHPA
 if CAN_XFST
 # Transducers using syllabic writing system
 GT_ANALYSERS_XFST+=analyser-gt-desc-syll.xfst
-#GT_GENERATORS_XFST+=generator-gt-norm-syll.xfst
+GT_GENERATORS_XFST+=generator-gt-norm-syll.xfst
 endif
 
 #### HFST transducers
@@ -108,9 +108,18 @@ analyser-mt-%.und.hfst: analyser-mt-%.tmp.hfst
 		| $(HFST_FST2FST) $(HFST_FLAGS) -t -o $@
 
 analyser-gt-desc-syll.xfst: analyser-gt-desc.xfst \
-							orthography/syllabics2latin.xfst
+							orthography/latin2syllabics.xfst
 	$(AM_V_GEN)$(PRINTF) "read regex \
-			    @\"orthography/syllabics2latin.xfst\"        \
+			    @\"$<\" \
+			.o. @\"orthography/latin2syllabics.xfst\".i        \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST) -q
+
+generator-gt-norm-syll.xfst: generator-gt-norm.xfst \
+							 orthography/syllabics2latin.xfst
+	$(AM_V_GEN)$(PRINTF) "read regex \
+			    @\"orthography/syllabics2latin.xfst\".i        \
 			.o. @\"$<\" \
 			;\n\
 		 save stack $@\n\
