@@ -117,9 +117,9 @@ analyser-gt-desc-syll.xfst: analyser-gt-desc.xfst \
 		 quit\n" | $(XFST) -q
 
 generator-gt-norm-syll.xfst: generator-gt-norm.xfst \
-							 orthography/syllabics2latin.xfst
+							 orthography/latin2syllabics.xfst
 	$(AM_V_GEN)$(PRINTF) "read regex \
-			    @\"orthography/syllabics2latin.xfst\".i        \
+			    @\"orthography/latin2syllabics.xfst\"        \
 			.o. @\"$<\" \
 			;\n\
 		 save stack $@\n\
