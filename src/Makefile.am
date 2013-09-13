@@ -81,6 +81,9 @@ endif # WANT_OAHPA
 
 #### Xerox transducers:
 if CAN_XFST
+# Transducers using syllabic writing system
+GT_ANALYSERS_XFST+=analyser-gt-desc-syll.xfst
+GT_GENERATORS_XFST+=generator-gt-norm-syll.xfst
 endif
 
 #### HFST transducers
@@ -95,6 +98,7 @@ APERTIUM_GENERATORS_HFST+=
 endif
 endif
 
+
 #################################################
 #### Add language-specific build rules here: ####
 
@@ -102,6 +106,15 @@ endif
 analyser-mt-%.und.hfst: analyser-mt-%.tmp.hfst
 	$(AM_V_GEN)$(HFST_INVERT) $< \
 		| $(HFST_FST2FST) $(HFST_FLAGS) -t -o $@
+
+analyser-gt-desc-syll.xfst: analyser-gt-desc.xfst \
+							orthograpghy/latin2syllabics.xfst
+	$(AM_V_GEN)$(PRINTF) "read regex \
+			    @\"$<\" \
+			.o. @\"orthograpghy/latin2syllabics.xfst\"        \
+			;\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST) -q
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
