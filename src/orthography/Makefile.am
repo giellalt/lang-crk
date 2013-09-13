@@ -33,17 +33,14 @@ GT_ORTHOGRAPHIC_SRCS+=syllabics2latin.xfscript
 ####### Local targets: ########
 
 if CAN_HFST
-#GT_ORTHOGRAPHIC_FSTS+=syllabics2latin.hfst
+#GT_ORTHOGRAPHIC_FSTS+=syllabics2latin.hfst \
+#					  latin2syllabics.hfst
 endif
 
 if CAN_XFST
-GT_ORTHOGRAPHIC_FSTS+=syllabics2latin.xfst
+GT_ORTHOGRAPHIC_FSTS+=syllabics2latin.xfst \
+					  latin2syllabics.xfst
 endif
-
-# Orthography transformation as xfst script:
-.xfscript.xfst:
-	$(AM_V_GEN)$(XFST) -l $< -e "save stack $@" -stop
-
 
 ####### END Local targets ########
 
