@@ -108,7 +108,7 @@ analyser-mt-%.und.hfst: analyser-mt-%.tmp.hfst
 		| $(HFST_FST2FST) $(HFST_FLAGS) -t -o $@
 
 analyser-gt-desc-syll.xfst: analyser-gt-desc.xfst \
-							orthograpghy/latin2syllabics.xfst
+							orthography/latin2syllabics.xfst
 	$(AM_V_GEN)$(PRINTF) "read regex \
 			    @\"$<\" \
 			.o. @\"orthograpghy/latin2syllabics.xfst\"        \
