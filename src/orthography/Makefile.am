@@ -28,16 +28,16 @@ endif
 
 ####### Local source files: ########
 
-GT_ORTHOGRAPHIC_SRCS+=latin2syllabics.xfscript
+GT_ORTHOGRAPHIC_SRCS+=syllabics2latin.xfscript
 
 ####### Local targets: ########
 
 if CAN_HFST
-#GT_ORTHOGRAPHIC_FSTS+=latin2syllabics.hfst
+#GT_ORTHOGRAPHIC_FSTS+=syllabics2latin.hfst
 endif
 
 if CAN_XFST
-GT_ORTHOGRAPHIC_FSTS+=latin2syllabics.xfst
+GT_ORTHOGRAPHIC_FSTS+=syllabics2latin.xfst
 endif
 
 # Orthography transformation as xfst script:
