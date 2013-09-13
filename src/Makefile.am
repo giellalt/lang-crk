@@ -88,8 +88,8 @@ endif
 
 #### HFST transducers
 if CAN_HFST
-GT_ANALYSERS_HFST+=
-GT_GENERATORS_HFST+=
+GT_ANALYSERS_HFST+=analyser-gt-desc-syll.hfst
+GT_GENERATORS_HFST+=generator-gt-norm-syll.hfst
 if WANT_APERTIUM
 APERTIUM_ANALYSERS_HFST+=analyser-mt-apertium-desc.und.hfst \
 						 analyser-mt-apertium-desc.und.att.gz
@@ -106,6 +106,22 @@ endif
 analyser-mt-%.und.hfst: analyser-mt-%.tmp.hfst
 	$(AM_V_GEN)$(HFST_INVERT) $< \
 		| $(HFST_FST2FST) $(HFST_FLAGS) -t -o $@
+
+analyser-gt-desc-syll.hfst: analyser-gt-desc.tmp.hfst \
+							orthography/syllabics2latin.hfst
+	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) -F -1 $< \
+			-2 orthography/syllabics2latin.hfst \
+		| $(HFST_MINIMIZE) $(HFST_FLAGS) \
+		| $(HFST_INVERT) $(HFST_FLAGS)\
+		-o $@
+
+generator-gt-norm-syll.hfst: generator-gt-norm.tmp.hfst \
+							 orthography/latin2syllabics.hfst
+	$(AM_V_GEN)$(HFST_INVERT) $(HFST_FLAGS) \
+			orthography/latin2syllabics.hfst \
+		| $(HFST_COMPOSE) $(HFST_FLAGS) -F -1 $< \
+		| $(HFST_MINIMIZE) $(HFST_FLAGS) \
+		-o $@
 
 analyser-gt-desc-syll.xfst: analyser-gt-desc.xfst \
 							orthography/latin2syllabics.xfst

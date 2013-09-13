@@ -33,8 +33,8 @@ GT_ORTHOGRAPHIC_SRCS+=syllabics2latin.xfscript
 ####### Local targets: ########
 
 if CAN_HFST
-#GT_ORTHOGRAPHIC_FSTS+=syllabics2latin.hfst \
-#					  latin2syllabics.hfst
+GT_ORTHOGRAPHIC_FSTS+=syllabics2latin.hfst \
+					  latin2syllabics.hfst
 endif
 
 if CAN_XFST
