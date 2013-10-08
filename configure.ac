@@ -89,9 +89,6 @@ AC_SUBST([GTLANG2], [crk])
 # GTCORE env. variable is required by the 
 AC_ARG_VAR([GTCORE], [gtcore path should always be declared by gtsetup.sh])
 
-# Adds --enable/disable-morphology, -speller, -hyphenation, etc.
-gt_ENABLE_TARGETS
-
 # Tests and sets up giellatekno directories and scripts
 gt_PROG_SCRIPTS_PATHS
 
@@ -121,6 +118,11 @@ AS_IF([test "x$AWK" != x], [
 ],[gt_prog_docc=no])
 AC_MSG_RESULT([$gt_prog_docc])
 AM_CONDITIONAL([CAN_DOCC], [test "x$gt_prog_docc" != xno])
+
+# Adds --enable/disable-morphology, -speller, -hyphenation, etc.
+# This should be the last step so that all program variables are available
+# to the enable checks
+gt_ENABLE_TARGETS
 
 # List all non-script files processed by Autoconf.
 AC_CONFIG_FILES([Makefile \
