@@ -146,6 +146,7 @@ AC_CONFIG_FILES([Makefile \
                  test/tools/spellcheckers/Makefile \
                  tools/Makefile \
                  tools/grammarcheckers/Makefile \
+                 tools/shellscripts/Makefile \
                  tools/spellcheckers/Makefile \
                  tools/spellcheckers/fstbased/Makefile \
                  tools/spellcheckers/fstbased/hfst/Makefile \
@@ -157,6 +158,8 @@ AC_CONFIG_FILES([test/src/morphology/run-morph-tester.sh], \
       [chmod a+x test/src/morphology/run-morph-tester.sh])
 AC_CONFIG_FILES([test/src/morphology/generate-noun-lemmas.sh], \
       [chmod a+x test/src/morphology/generate-noun-lemmas.sh])
+AC_CONFIG_FILES([tools/shellscripts/ucrk-gt.sh], \
+      [chmod a+x tools/shellscripts/ucrk-gt.sh])
 
 # This must be near the end of all configure.ac files:
 AC_OUTPUT
