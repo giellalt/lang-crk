@@ -92,4 +92,12 @@ Cx:0 <=> _ %>:0 Cx ;
 	
 "i to a in prefixes in front of nasals"
 i:a <=> .#. n _ %>:0 [ n | m ] i	;
+
+"delete stem-final w in possessed kw nouns"
+w:0 <=> _ %>:0 o: m: ;
+
+
+
+
+
  

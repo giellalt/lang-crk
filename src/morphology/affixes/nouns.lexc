@@ -7,7 +7,9 @@
 
 LEXICON ANDECL 
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !ucrk
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  DIM_SG ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  DIM_PL ; !
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
 +N+AN+Sg: AN_SUFF_SG ;
 +N+AN+Pl: AN_SUFF_PL ;
@@ -16,9 +18,16 @@ LEXICON INDECL
 < "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PL_A ; !
 < "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
-
 +N+IN+Sg: IN_SUFF_SG ;
 +N+IN+Pl: IN_SUFF_PL ;
+
+LEXICON ANKWDECL 									 
+!!These take om as extra suffix in possessed form
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
+< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
++N+AN+Sg: ANKWDECL_SUFF_SG ;
++N+AN+Pl: ANKWDECL_SUFF_PL ;
 
 LEXICON INALIENABLEDECL
 +N+AN+Sg: INAL_SUFF_SG ;
@@ -35,45 +44,92 @@ LEXICON AN_SUFF_SG
 < "+Px1Sg":0 "@U.noun.1sg@" > SG_ ; !
 < "+Px2Sg":0 "@U.noun.2sg@" > SG_ ; !
 < "+Px3Sg":0 "@U.noun.3sg@" > SG_ ; !
-< "+Px3iSg":0 "@U.noun.3isg@" > SG_ ; !
-< "+Px1Pl":0 "@U.noun.1pl@" > SG_naan ;   ! exclusive Pl
-< "+Px12Pl":0 "@U.noun.12pl@" > SG_naan ; ! inclusive Pl
-< "+Px2Pl":0 "@U.noun.2pl@" > SG_waaw ; !
-< "+Px3Pl":0 "@U.noun.3pl@" > SG_waaw ; !
+< "+Px3iSg":iyiw "@U.noun.3isg@" > SG_ ; !
+< "+Px1Pl":inân "@U.noun.1pl@" > SG_ ;   ! exclusive Pl
+< "+Px12Pl":naw "@U.noun.12pl@" > SG_ ; ! inclusive Pl
+< "+Px2Pl":iwâw "@U.noun.2pl@" > SG_ ; !
+< "+Px3Pl":wâw "@U.noun.3pl@" > SG_ ; !
+< "+Px3iPl":yiw "@U.noun.3ipl@" > SG_ ; ! obviative plural possessor
+
+LEXICON AN_SUFF_PL
+!< "+Px1Sg":0 "@U.noun.1sg@" > PL_AK ; !
+!< "+Px2Sg":0 "@U.noun.2sg@" > PL_AK ; !
+!< "+Px3Sg":0 "@U.noun.3sg@" > PL_AK ; !
+!< "+Px1Pl":0 "@U.noun.1pl@" > PL_naan_AK ;   ! exclusive Pl
+!< "+Px12Pl":0 "@U.noun.12pl@" > PL_naan_AK ; ! inclusive Pl
+!< "+Px2Pl":0 "@U.noun.2pl@" > PL_waaw_AK ; !
+!< "+Px3Pl":0 "@U.noun.3pl@" > PL_waaw_AK ;
+< "+Px1Sg":0 "@U.noun.1sg@" >  PL_AK ; !
+< "+Px2Sg":0 "@U.noun.2sg@" >  PL_AK ; !
+< "+Px3Sg":0 "@U.noun.3sg@" >  PL_AK ; !
+< "+Px3iSg":iyiw "@U.noun.3isg@" >  PL_A ; !obviative plural possessor, hence Pl is -a
+< "+Px1Pl":inân "@U.noun.1pl@" >  PL_AK ;   ! exclusive Pl
+< "+Px12Pl":naw "@U.noun.12pl@" >  PL_AK ; ! inclusive Pl
+< "+Px2Pl":iwâw "@U.noun.2pl@" >  PL_AK ; !
+< "+Px3Pl":wâw "@U.noun.3pl@" >  PL_AK ; !
+< "+Px3iPl":yiw "@U.noun.3isg@" >  PL_A ; ! obviative plural possessor, hence Pl is -a
+
+LEXICON IN_SUFF_SG
+< "+Px1Sg":0 "@U.noun.1sg@" > SG_ ; !
+< "+Px2Sg":0 "@U.noun.2sg@" > SG_ ; !
+< "+Px3Sg":0 "@U.noun.3sg@" > SG_ ; !
+< "+Px3iSg":iyiw "@U.noun.3isg@" > SG_ ; !
+< "+Px1Pl":inân "@U.noun.1pl@" > SG_ ;   ! exclusive Pl
+< "+Px12Pl":naw "@U.noun.12pl@" > SG_ ; ! inclusive Pl
+< "+Px2Pl":iwâw "@U.noun.2pl@" > SG_ ; !
+< "+Px3Pl":wâw "@U.noun.3pl@" > SG_ ; !
+< "+Px3iPl":yiw "@U.noun.3isg@" > SG_ ; ! obviative plural possessor
+
+LEXICON IN_SUFF_PL
+< "+Px1Sg":0 "@U.noun.1sg@" > PL_A ; !
+< "+Px2Sg":0 "@U.noun.2sg@" > PL_A ; !
+< "+Px3Sg":0 "@U.noun.3sg@" > PL_A ; !
+< "+Px3iSg":iyiw "@U.noun.3isg@" > PL_A ; !
+< "+Px1Pl":inân "@U.noun.1pl@" > PL_A ;   ! exclusive Pl
+< "+Px12Pl":naw "@U.noun.12pl@" > PL_A ; ! inclusive Pl
+< "+Px2Pl":iwâw "@U.noun.2pl@" > PL_A ; !
+< "+Px3Pl":wâw "@U.noun.3pl@" > PL_A ; !
+< "+Px3iPl":yiw "@U.noun.3isg@" > PL_A ; ! obviative plural possessor
+
+
+LEXICON ANKWDECL_SUFF_SG
+< "+Px1Sg":om "@U.noun.1sg@" > SG_ ; !
+< "+Px2Sg":om "@U.noun.2sg@" > SG_ ; !
+< "+Px3Sg":oma "@U.noun.3sg@" > SG_ ; !
+< "+Px3iSg":omiyiwa "@U.noun.3isg@" > SG_ ; !
+< "+Px1Pl":ominân "@U.noun.1pl@" > SG_ ;   ! exclusive Pl
+< "+Px12Pl":ominaw "@U.noun.12pl@" > SG_ ; ! inclusive Pl
+< "+Px2Pl":omiwâw "@U.noun.2pl@" > SG_ ; !
+< "+Px3Pl":omiwâwa "@U.noun.3pl@" > SG_ ; !
+< "+Px3iPl":omiyiwa "@U.noun.3isg@" > SG_ ; ! obviative plural possessor
+
+
+LEXICON ANKWDECL_SUFF_PL
+< "+Px1Sg":om "@U.noun.1sg@" > PL_AK ; !
+< "+Px2Sg":om "@U.noun.2sg@" > PL_AK ; !
+< "+Px3Sg":oma "@U.noun.3sg@" > SG_ ; !
+< "+Px3iSg":omiyiwa "@U.noun.3isg@" > SG_ ; !
+< "+Px1Pl":ominân "@U.noun.1pl@" > PL_AK ;   ! exclusive Pl
+< "+Px12Pl":ominaw "@U.noun.12pl@" > PL_AK ; ! inclusive Pl
+< "+Px2Pl":omiwâw "@U.noun.2pl@" > PL_AK ; !
+< "+Px3Pl":omiwâwa "@U.noun.3pl@" > SG_ ; !
+< "+Px3iPl":omiyiwa "@U.noun.3isg@" > SG_ ; ! obviative plural possessor
+
 
 LEXICON INAL_SUFF_PL
 < "+Px3iSg":0 "@U.noun.3isg@" > PL_AK ; !
 < "+Px3iPl":0 "@U.noun.3ipl@" > PL_waaw_AK ;
 AN_SUFF_PL ;
 
-LEXICON AN_SUFF_PL
-< "+Px1Sg":0 "@U.noun.1sg@" > PL_AK ; !
-< "+Px2Sg":0 "@U.noun.2sg@" > PL_AK ; !
-< "+Px3Sg":0 "@U.noun.3sg@" > PL_AK ; !
-< "+Px1Pl":0 "@U.noun.1pl@" > PL_naan_AK ;   ! exclusive Pl
-< "+Px12Pl":0 "@U.noun.12pl@" > PL_naan_AK ; ! inclusive Pl
-< "+Px2Pl":0 "@U.noun.2pl@" > PL_waaw_AK ; !
-< "+Px3Pl":0 "@U.noun.3pl@" > PL_waaw_AK ;
-
-LEXICON IN_SUFF_SG
-< "+Px1Sg":0 "@U.noun.1sg@" > SG_ ; !
-< "+Px2Sg":0 "@U.noun.2sg@" > SG_ ; !
-< "+Px3Sg":0 "@U.noun.3sg@" > SG_ ; !
-< "+Px1Pl":0 "@U.noun.1pl@" 0:i > SG_naan ;   ! exclusive Pl
-< "+Px12Pl":0 "@U.noun.12pl@" 0:i  > SG_naan ; ! inclusive Pl
-< "+Px2Pl":0 "@U.noun.2pl@" 0:i  > SG_waaw ; !
-< "+Px3Pl":0 "@U.noun.3pl@" 0:i  > SG_waaw ; !
-
-LEXICON IN_SUFF_PL
-< "+Px1Sg":0 "@U.noun.1sg@" > PL_AK ; !
-< "+Px2Sg":0 "@U.noun.2sg@" > PL_AK ; !
-< "+Px3Sg":0 "@U.noun.3sg@" > PL_A ; !
-< "+Px1Pl":0 "@U.noun.1pl@" 0:i  > PL_naan_AK ;   ! exclusive Pl
-< "+Px12Pl":0 "@U.noun.12pl@" 0:i  > PL_naan_AK ; ! inclusive Pl
-< "+Px2Pl":0 "@U.noun.2pl@" 0:i  > PL_waaw_AK ; !
-< "+Px3Pl":0 "@U.noun.3pl@" 0:i  > PL_waaw_A ;
 
 ! Suffixes
+
+LEXICON DIM_SG
++Dim:%>isis SG_ ;
+
+LEXICON DIM_PL
++Dim:%>isis PL_AK ;
+
 
 LEXICON SG_naan
 :%>nân SG_ ;
