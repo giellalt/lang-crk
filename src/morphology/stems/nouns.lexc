@@ -26,6 +26,7 @@ LEXICON Noun
 AN ; ! Animate nouns
 IN ; ! Inanimate nouns
 INALIENABLE ;
+ANSTEM_kw ; ! Animate nouns whose stems end in kw
 
 
 LEXICON AN
@@ -33,26 +34,19 @@ LEXICON AN
 !! At the moment it is just a copy of INSTEMS, 
 !! pretending animates and inanimates are identical
 !! Flag diacritics direct to possessive declension later on
+
 @U.noun.abs@ ANSTEMLIST ; 
+
 < 0:n 0:i "@U.noun.1sg@" 0:"t2" > ANSTEMS ; ! 1
 < 0:k 0:i "@U.noun.2sg@" 0:"t2" > ANSTEMS ; ! 2
 < 0:o "@U.noun.3sg@" 0:"t2" > ANSTEMS ;     ! 3
+< 0:o "@U.noun.3isg@" 0:"t2" > ANSTEMS ;    ! 3-singular-obviative
 < 0:n 0:i "@U.noun.1pl@" 0:"t2" > ANSTEMS ;   ! exclusive Pl
 < 0:k 0:i "@U.noun.12pl@" 0:"t2" > ANSTEMS ; ! inclusive Pl
 < 0:k 0:i "@U.noun.2pl@" 0:"t2" > ANSTEMS ;  ! 2pl 
-< 0:o "@U.noun.3pl@" 0:"t2" > ANSTEMS ;       ! 3pl note: is prefix o- correct?
+< 0:o "@U.noun.3pl@" 0:"t2" > ANSTEMS ;       ! 3pl
+< 0:o "@U.noun.3ipl@" 0:"t2" > ANSTEMS ;       ! 3-plural-obviate
 
-
-LEXICON INALIENABLE
-!! @LEXNAME@ redirects to INALIENABLESTEMS
-< 0:n 0:i "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
-< 0:k 0:i "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
-< 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
-< 0:m 0:i "@U.noun.3isg@"  > INALIENABLESTEMS ;     ! 3indef
-< 0:n 0:i "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@"  > INALIENABLESTEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
-< 0:o "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
 
 
 LEXICON IN
@@ -64,11 +58,47 @@ LEXICON IN
 !! With prefixes, forming the possessive declension
 < 0:n 0:i "@U.noun.1sg@" > INSTEMS ; !
 < 0:k 0:i "@U.noun.2sg@" > INSTEMS ; !
-< 0:o "@U.noun.3sg@" > ISNTEMS ; !
+< 0:o "@U.noun.3sg@" > INSTEMS ; !
+< 0:o "@U.noun.3isg@" 0:"t2" > INSTEMS ;    ! 3-singular-obviative
 < 0:n 0:i "@U.noun.1pl@" > INSTEMS ; ! exclusive Pl
 < 0:k 0:i "@U.noun.12pl@" > INSTEMS ; ! inclusive Pl
 < 0:k 0:i "@U.noun.2pl@" > INSTEMS ; !
 < 0:o "@U.noun.3pl@" > INSTEMS ; !
+< 0:o "@U.noun.3ipl@" 0:"t2" > INSTEMS ;       ! 3-plural-obviate
+
+
+
+LEXICON INALIENABLE
+!! @LEXNAME@ redirects to INALIENABLESTEMS
+
+@U.noun.abs@  INALIENABLESTEMS ; 
+
+< 0:n 0:i "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
+< 0:k 0:i "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
+< 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
+< 0:m 0:i "@U.noun.3isg@"  > INALIENABLESTEMS ;     ! 3indef
+< 0:n 0:i "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@"  > INALIENABLESTEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
+< 0:o "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
+
+
+
+
+LEXICON ANSTEM_kw
+@U.noun.abs@  ANSTEMS_kw ;
+
+< 0:n 0:i "@U.noun.1sg@" 0:"t2" > ANSTEMLIST_kw ; ! 1
+< 0:k 0:i "@U.noun.2sg@" 0:"t2" > ANSTEMLIST_kw ; ! 2
+< 0:o "@U.noun.3sg@" 0:"t2" > ANSTEMLIST_kw ;     ! 3
+< 0:o "@U.noun.3isg@" 0:"t2" > ANSTEMLIST_kw ;    ! 3-singular-obviative
+< 0:n 0:i "@U.noun.1pl@" 0:"t2" > ANSTEMLIST_kw ;   ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@" 0:"t2" > ANSTEMLIST_kw ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@" 0:"t2" > ANSTEMLIST_kw ;  ! 2pl 
+< 0:o "@U.noun.3pl@" 0:"t2" > ANSTEMLIST_kw ;       ! 3pl
+< 0:o "@U.noun.3ipl@" 0:"t2" > ANSTEMLIST_kw ;       ! 3-plural-obviative
+
+
 
 !! !!The stems
 
@@ -77,7 +107,6 @@ LEXICON IN
 
 LEXICON ANSTEMS
  :%> ANSTEMLIST ;
-!  ANSTEMLIST ;
 
 LEXICON ANSTEMLIST
 inini ANDECL "man" ; 
@@ -86,7 +115,6 @@ apiscacihkos ANDECL "antelope" ;
 mâyatihk ANDECL "bighorn sheep" ;
 atihk ANDECL "caribou" ;
 apisimôsos ANDECL "deer" ; ! apisimôsosak
-wâwaskêsiw ANDECL "elk" ;
 mistatim ANDECL "horse" ; ! mistatimwak
 môswa ANDECL "moose" ; ! môswak
 maskwa ANDECL "bear" ; ! maskwak
@@ -95,6 +123,22 @@ wâpask ANDECL "polar bear" ; ! wâpaskwak
 atim ANDECL "dog" ;
 sîsîp ANDECL "duck" ;
 iskwêw ANDECL ;         !"a woman"
+asikan ANDECL "sock" ; ! this really is animate
+wâwaskesiw ANDECL "elk" ;
+oskâtâsk ANDECL "carrot" ;
+minôs ANDECL "cat" ;
+
+LEXICON ANSTEMS_kw
+ :%> ANSTEMLIST_kw ;
+
+
+LEXICON ANSTEMLIST_kw				
+!!These nouns take an additional suffix in the
+!! possessive paradigm
+wâposw ANKWDECL ;
+amiskw ANKWDECL ;
+mistikw ANKWDECL ;
+askihkw ANKWDECL ;
 
 
 LEXICON INALIENABLESTEMS
@@ -105,14 +149,28 @@ maniway:%>niway INALIENABLEDECL ;        !"someone's cheek"
 !   ===============
 
 LEXICON INSTEMS
-môhkomân INDECL "knife" ;
+môhkosmân INDECL "knife" ;
 sakâw INDECL "bush" ;
 mîcimâpoy INDECL "soup" ;
 sîsîpâwi INDECL "duck egg" ;
 wâwi INDECL "egg" ;
 ôtênaw INDECL "city" ;         !"city"
 asiniy INDECL ;         !"a stone"
-mîcimâpoy INDECL ;      !"soup"
+maskisin INDECL "shoe" ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
