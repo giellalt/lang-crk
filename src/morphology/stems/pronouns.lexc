@@ -1,8 +1,46 @@
 !! Pronouns
-!! --------
-!! Pronouns in UNDEFINED language are references to things.
+! --------
+!! !!!Plains Cree pronouns
 
-LEXICON Pronouns
-pronoun    #   ;
+!! There are more pronoums to be added here.
 
-! vim: set ft=xfst-lexc:
+LEXICON Pronoun
+
+ci+Qst:ci # ; ! This one shall go in a particle file.
+
+ Personal ;
+ Interrogative ;
+ Indefinite ;
+ Demonstrative ;
+
+LEXICON Personal 
+niya+Pron+Pers+1Sg:niya # ;
+kiya+Pron+Pers+2Sg:kiya # ;
+wiya+Pron+Pers+3Sg:wiya # ;
+niiyanân+Pron+Pers+1Pl:niyanân # ;
+kiyânaw+Pron+Pers+12Pl:kiyânaw # ;
+kiyawâw+Pron+Pers+2Pl:kiyawâw # ;
+wiyawâw+Pron+Pers+3Pl:wiyawâw # ;
+
+nista+Pron+Pers+1Sg+Incl:nista # ;
+kista+Pron+Pers+2Sg+Incl:kista # ;
+wista+Pron+Pers+3Sg+Incl:wista # ;
+nistanân+Pron+Pers+1Pl+Incl:nistanân # ;
+kistanaw+Pron+Pers+12Pl+Incl:kistanaw # ;
+kistawâw+Pron+Pers+2Pl+Incl:kistawâw # ;
+wistawâw+Pron+Pers+3Pl+Incl:wistawâw # ;
+
+
+LEXICON Interrogative 
+awîna+Pron+Interr+Sg:awîna # "who" ;
+awîna+Pron+Interr+Pl:awîniki # "who" ;
+kîkwây+Pron+Interr+Sg:kîkwây # "what" ;
+kîkwây+Pron+Interr+Pl:kîkwâya # "what" ;
+
+LEXICON Indefinite 
+awiyak+Pron+Indef+AN+Sg:awiyak # "someone" ;
+awiyak+Pron+Indef+AN+Pl:awiyakak # "some people" ;
+
+LEXICON Demonstrative 
+awa+Pron+Dem+Sg:awa # "this" ;
+awa+Pron+Dem+Pl:ôki # "these" ;
