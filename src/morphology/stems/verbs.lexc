@@ -59,20 +59,18 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 !@U.ind.2sg@:ki@U.ind.2sg@ IASTEM ;
 < 0:k 0:i "@U.ind.2sg@" > IASTEM ;
 
-@U.ind.3sg@:@U.ind.3sg@ IASTEM ;
+@U.ind.3sg@ IASTEM ;
 
 
-@U.ind.3osg@:@U.ind.3osg@ IASTEM ;
-@U.ind.3isg@:@U.ind.3isg@ IASTEM ;
+@U.ind.3osg@ IASTEM ;
+@U.ind.3isg@ IASTEM ;
 
-!@U.ind.1pl@:ni@U.ind.1pl@ IASTEM ;   ! exclusive Pl
 < 0:n 0:i "@U.ind.1pl@" > IASTEM ;   ! exclusive Pl
 
-@U.ind.12pl@:ki@U.ind.12pl@ IASTEM ; ! inclusive Pl
 < 0:k 0:i "@U.ind.12pl@" > IASTEM ;   ! inclusive Pl
 
-@U.ind.2pl@:ki@U.ind.2pl@ IASTEM ;   
-@U.ind.3pl@:@U.ind.3pl@ IASTEM ;
+< 0:k 0:i "@U.ind.2pl@" > IASTEM ;   
+@U.ind.3pl@ IASTEM ;
 
 LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
 @U.sbj.1sg@ IASTEM ;
