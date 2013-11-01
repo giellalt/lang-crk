@@ -46,28 +46,28 @@ LEXICON IA_IND_SUFF !!= @CODE@ (so far) gives present tense only
 !+Prt: IA_IND_PRT ;
 
 LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
-+1Sg@U.verb.1sgindep@:0@U.verb.1sgindep@ # ;
-+2Sg@U.verb.2sgindep@:0@U.verb.2sgindep@ # ;
-+3Sg@U.verb.3sgindep@:0@U.verb.3sgindep@ # ;
-+3oSg@U.verb.3osgindep@:@U.verb.3osgindep@%>wan # ;
-+3iSg@U.verb.3isgindep@:@U.verb.3isgindep@%>m # ;
++1Sg@U.ind.1sg@:0@U.ind.1sg@ # ;
++2Sg@U.ind.2sg@:0@U.ind.2sg@ # ;
++3Sg@U.ind.3sg@:0@U.ind.3sg@ # ;
++3oSg@U.ind.3osg@:@U.ind.3osg@%>wan # ;
++3iSg@U.ind.3isg@:@U.ind.3isg@%>m # ;
 
-+1Pl@U.verb.1plindep@:@U.verb.1plindep@%>min # ;   ! exclusive Pl
-+12Pl@U.verb.12plindep@:@U.verb.12plindep@%>min # ; ! inclusive Pl
-+2Pl@U.verb.2plindep@:@U.verb.2plindep@%>m # ;
-+3Pl@U.verb.3plindep@:@U.verb.3plindep@%>wag # ;
++1Pl@U.ind.1pl@:@U.ind.1pl@%>min # ;   ! exclusive Pl
++12Pl@U.ind.12pl@:@U.ind.12pl@%>min # ; ! inclusive Pl
++2Pl@U.ind.2pl@:@U.ind.2pl@%>m # ;
++3Pl@U.ind.3pl@:@U.ind.3pl@%>wag # ;
 
 
 LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive person suffixes
-@U.verb.1sgsbj@  1sgsubjunctive ;
-@U.verb.2sgsbj@  2sgsubjunctive ;
-@U.verb.3sgsbj@  3sgsubjunctive ;
-@U.verb.3osgsbj@ 3osgsubjunctive ;
-@U.verb.3isgsbj@ 3isgsubjunctive ;
-@U.verb.1plsbj@  1plsubjunctive ;
-@U.verb.12plsbj@ 12plsubjunctive ;
-@U.verb.2plsbj@  2plsubjunctive ;
-@U.verb.3plsbj@  3plsubjunctive ;
+@U.sbj.1sg@  1sgsubjunctive ;
+@U.sbj.2sg@  2sgsubjunctive ;
+@U.sbj.3sg@  3sgsubjunctive ;
+@U.sbj.3osg@ 3osgsubjunctive ;
+@U.sbj.3isg@ 3isgsubjunctive ;
+@U.sbj.1pl@  1plsubjunctive ;
+@U.sbj.12pl@ 12plsubjunctive ;
+@U.sbj.2pl@  2plsubjunctive ;
+@U.sbj.3pl@  3plsubjunctive ;
 
 LEXICON 1sgsubjunctive
     +Sbj+1Sg:%>yaan #;
@@ -109,9 +109,9 @@ LEXICON 3plsubjunctive
 
 
 LEXICON IA_IMP  !!= @CODE@ gives flag diacritics and directs to imperative person suffixes
-@U.verb.2sgimp@  2sgimp ;
-@U.verb.1plimp@  1plimp ;
-@U.verb.2plimp@  2plimp ;
+@U.imp.2sg@  2sgimp ;
+@U.imp.1pl@  1plimp ;
+@U.imp.2pl@  2plimp ;
 
 LEXICON 2sgimp
 +Imp+Imm+2Sg:%>n   # ;

@@ -127,29 +127,31 @@ t2 		!!= * @CODE@  Prefix in possessives
 
 !! These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
 
-@U.verb.1sgindep@ 
-@U.verb.2sgindep@ 
-@U.verb.3sgindep@ 
-@U.verb.3osgindep@ 
-@U.verb.3isgindep@ 
-@U.verb.1plindep@ 
-@U.verb.12plindep@ 
-@U.verb.2plindep@ 
-@U.verb.3plindep@ 
 
-@U.verb.1sgsbj@ 
-@U.verb.2sgsbj@ 
-@U.verb.3sgsbj@ 
-@U.verb.3osgsbj@ 
-@U.verb.3isgsbj@ 
-@U.verb.1plsbj@ 
-@U.verb.12plsbj@ 
-@U.verb.2plsbj@ 
-@U.verb.3plsbj@ 
+@U.ind.1sg@ 
+@U.ind.2sg@ 
+@U.ind.3sg@ 
+@U.ind.3osg@ 
+@U.ind.3isg@ 
+@U.ind.1pl@ 
+@U.ind.12pl@ 
+@U.ind.2pl@ 
+@U.ind.3pl@ 
 
-@U.verb.2sgimp@
-@U.verb.1plimp@
-@U.verb.2plimp@
+@U.sbj.1sg@ 
+@U.sbj.2sg@ 
+@U.sbj.3sg@ 
+@U.sbj.3osg@ 
+@U.sbj.3isg@ 
+@U.sbj.1pl@ 
+@U.sbj.12pl@ 
+@U.sbj.2pl@ 
+@U.sbj.3pl@ 
+
+
+@U.imp.2sg@
+@U.imp.1pl@
+@U.imp.2pl@
 
 @U.noun.1sg@
 @U.noun.2sg@
@@ -167,8 +169,8 @@ t2 		!!= * @CODE@  Prefix in possessives
 
 LEXICON Root 		 !!=  @CODE@ is where it all starts
 
-Noun ;	             !!= * @CODE@ 
-Verb ;	             !!= * @CODE@ 
+Nouns ;	             !!= * @CODE@ 
+Verbs ;	             !!= * @CODE@ 
 Pronoun ;            !!= * @CODE@ 
 Punctuation ;        !!= * @CODE@ 
 !Particles ;
