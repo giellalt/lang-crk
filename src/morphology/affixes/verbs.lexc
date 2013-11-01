@@ -36,11 +36,10 @@ LEXICON IACONJ !!= @CODE@ splits in 3 conjugations
 
 LEXICON IA_IND !!= @CODE@ gives positive and negative
 
-            IA_IND_SUFF ;
-+Neg:%>siin IA_IND_SUFF ;
-
-
-LEXICON IA_IND_SUFF !!= @CODE@ (so far) gives present tense only
+! If no negative suffix, then the following 3 lines are not needed
+!             IA_IND_SUFF ;
+! +Neg:%>siin IA_IND_SUFF ; ! Ojibwe
+! LEXICON IA_IND_SUFF !!= @CODE@ (so far) gives present tense only
 
 +Prs: IA_IND_PRS ;
 !+Prt: IA_IND_PRT ;
@@ -48,15 +47,14 @@ LEXICON IA_IND_SUFF !!= @CODE@ (so far) gives present tense only
 LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
 < "+1Sg":0 "@U.ind.1sg@" > # ; !"
 < "+2Sg":0 "@U.ind.2sg@" > # ; !"
-< "+3Sg":0 "@U.ind.3sg@" > # ; !"
-< "+3oSg":0 "@U.ind.3osg@" "%>":0 0:w 0:a 0:n > # ; !"
-< "+3iSg":0 "@U.ind.3isg@" "%>":0 0:m > # ; !"
+< "+3Sg":0 "@U.ind.3sg@" 0:w > # ; !"
+!< "+3oSg":0 "@U.ind.3osg@"  0:y 0:i 0:w 0:a > # ; !"
 
 
-< "+1Pl":0 "@U.ind.1pl@" "%>":0 0:m 0:i 0:n > # ;   ! exclusive Pl
-< "+12Pl":0 "@U.ind.12pl@" "%>":0 0:m 0:i 0:n > # ; ! inclusive Pl
-< "+2Pl":0 "@U.ind.2pl@" "%>":0 0:m > # ;           !
-< "+3Pl":0 "@U.ind.3pl@" "%>":0 0:w 0:a 0:g > # ;   !
+!< "+1Pl":0 "@U.ind.1pl@" "%>":0 0:m 0:i 0:n > # ;   ! exclusive Pl
+!< "+12Pl":0 "@U.ind.12pl@" "%>":0 0:m 0:i 0:n > # ; ! inclusive Pl
+!< "+2Pl":0 "@U.ind.2pl@" "%>":0 0:m > # ;           !
+!< "+3Pl":0 "@U.ind.3pl@" "%>":0 0:w 0:a 0:g > # ;   !
 
 
 LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive person suffixes
@@ -71,7 +69,7 @@ LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive perso
 @U.sbj.3pl@  3plsubjunctive ;
 
 LEXICON 1sgsubjunctive
-    +Sbj+1Sg:%>yaan #;
+    +Sbj+1Sg:%>yân #;
 +Neg+Sbj+1Sg:%>siwaan  # ;
 
 LEXICON 2sgsubjunctive
@@ -92,7 +90,7 @@ LEXICON 3isgsubjunctive
 +Neg+Sbj+3iSg:%>sing   # ;
 
 LEXICON 1plsubjunctive 
-    +Sbj+1Pl:%>yaang #;
+    +Sbj+1Pl:%>yâng #;
 +Neg+Sbj+1Pl:%>siwaang # ;
 
 LEXICON 12plsubjunctive

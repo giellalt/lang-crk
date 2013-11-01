@@ -38,7 +38,7 @@ LEXICON Verbs !!= @CODE@ divides the verbs in four transitivity classes
 IA ; ! intransitive animate
 II ; ! intransitive inanimate
 TA ; ! transitive animate
-TI ; ! transitive inanimate
+!TI ; ! transitive inanimate
 
 
 !! !! Intransitive animate
@@ -53,31 +53,22 @@ IA_IMPERATIV ;
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
 
-!@U.ind.1sg@:ni@U.ind.1sg@ IASTEM ;
-< 0:n 0:i "@U.ind.1sg@" > IASTEM ;
+< 0:n 0:i "@U.ind.1sg@" > IASTEM ; !"
+< 0:k 0:i "@U.ind.2sg@" > IASTEM ; !"
 
-!@U.ind.2sg@:ki@U.ind.2sg@ IASTEM ;
-< 0:k 0:i "@U.ind.2sg@" > IASTEM ;
-
-@U.ind.3sg@ IASTEM ;
-
-
-@U.ind.3osg@ IASTEM ;
-@U.ind.3isg@ IASTEM ;
+< "@U.ind.3sg@" >  IASTEM ;
+< "@U.ind.3osg@" > IASTEM ;
 
 < 0:n 0:i "@U.ind.1pl@" > IASTEM ;   ! exclusive Pl
-
 < 0:k 0:i "@U.ind.12pl@" > IASTEM ;   ! inclusive Pl
-
-< 0:k 0:i "@U.ind.2pl@" > IASTEM ;   
-@U.ind.3pl@ IASTEM ;
+< 0:k 0:i "@U.ind.2pl@" > IASTEM ;   !"
+< "@U.ind.3pl@" > IASTEM ;
 
 LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
 @U.sbj.1sg@ IASTEM ;
 @U.sbj.2sg@ IASTEM ;
 @U.sbj.3sg@ IASTEM ;
 @U.sbj.3osg@ IASTEM ;
-@U.sbj.3isg@ IASTEM ;
 
 @U.sbj.1pl@  IASTEM ;   ! exclusive Pl
 @U.sbj.12pl@  IASTEM ; ! inclusive Pl
@@ -111,22 +102,25 @@ LEXICON TA  !!= @CODE@ is still not written
 !! !! Transitive inanimate
 !     ====================
 
-LEXICON TI  !!= @CODE@ is still not written
-# ;
+!LEXICON TI  !!= @CODE@ is still not written
+!# ;
 
 
 !! !!! The stems
 !     ==========
 
 LEXICON IASTEM   !!= @CODE@ 
-nipâw IACONJ "sleep" ; !!= @CODE@ 
+nipâ IACONJ "sleep" ; !!= @CODE@ 
+mâto IACONJ "sleep" ; !!= @CODE@ 
+!wâpam IACONJ "sleep" ; !!= @CODE@ ! TA? IA?
+miciso IACONJ "sleep" ; !!= @CODE@ 
 
 LEXICON IISTEM   !!= @CODE@ 
 ozhaawashkwaa IICONJ "bleuir" ; !!= * @CODE@ is Ojibwe, replace with Cree
 
 
 LEXICON TASTEM_am   !!= @CODE@ 
-wâpam TACONJ_am "see" ; !!= @CODE@ 
+!wâpam TACONJ_am "see" ; !!= @CODE@ " TA? IA
 aabaji':aabaji' TACONJ_am "use s.o." ; !!= * @CODE@ is Ojibwe, replace with Cree
 
 LEXICON TASTEM_aw   !!= @CODE@ 
