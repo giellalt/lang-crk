@@ -110,6 +110,9 @@ Nominal MSP
 
  * +Use/Sub  tag for substandard forms
 
+ * +Incl     me too, etc.
+ * +Qst      yes-no question particle ci
+
  * %^LC      Locative
  * t2 		  Prefix in possessives
 
@@ -125,10 +128,12 @@ These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
 
 
 
+
+
   LEXICON Root 		  is where it all starts
 
- * Noun ;	              
- * Verb ;	              
+ * Nouns ;	              
+ * Verbs ;	              
  * Pronoun ;             
  * Punctuation ;         
 
@@ -271,7 +276,7 @@ The Plains Cree verbs are divided in four groups:
 # TA: Transitive animate
 # TI: Transitive inanimate
 
- LEXICON Verb  divides the verbs in four transitivity classes
+ LEXICON Verbs  divides the verbs in four transitivity classes
 
 
 
