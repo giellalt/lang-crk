@@ -291,11 +291,6 @@ Intransitive animate
 
 
 
-
-
-
-
-
  LEXICON IA_SUBJUNCTIV    gives prefixes and flags for person-number in subjunctive
 
 
@@ -316,20 +311,23 @@ Transitive animate
 
 Transitive inanimate
 
- LEXICON TI   is still not written
+ !LEXICON TI   is still not written
 
 
 The stems
 
  LEXICON IASTEM    
- nipâw IACONJ "sleep" ;  
+ nipâ IACONJ "sleep" ;  
+ mâto IACONJ "sleep" ;  
+ !wâpam IACONJ "sleep" ;  ! TA? IA?
+ miciso IACONJ "sleep" ;  
 
  LEXICON IISTEM    
  * ozhaawashkwaa IICONJ "bleuir" ;  is Ojibwe, replace with Cree
 
 
  LEXICON TASTEM_am    
- wâpam TACONJ_am "see" ;  
+ !wâpam TACONJ_am "see" ;  " TA? IA
  * aabaji':aabaji' TACONJ_am "use s.o." ;  is Ojibwe, replace with Cree
 
  LEXICON TASTEM_aw    
@@ -393,13 +391,10 @@ Intransitive animate (IA)
 
  LEXICON IA_IND  gives positive and negative
 
-
-
- LEXICON IA_IND_SUFF  (so far) gives present tense only
+ ! LEXICON IA_IND_SUFF  (so far) gives present tense only
 
 
  LEXICON IA_IND_PRS  gives person suffixes
-
 
 
  LEXICON IA_SBJ  gives flag diacritics and directs to subjunctive person suffixes
