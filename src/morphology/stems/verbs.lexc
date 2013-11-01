@@ -33,7 +33,7 @@
 !! # TA: Transitive animate
 !! # TI: Transitive inanimate
 
-LEXICON Verb !!= @CODE@ divides the verbs in four transitivity classes
+LEXICON Verbs !!= @CODE@ divides the verbs in four transitivity classes
 
 IA ; ! intransitive animate
 II ; ! intransitive inanimate
@@ -53,44 +53,44 @@ IA_IMPERATIV ;
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
 
-!@U.verb.1sgindep@:ni@U.verb.1sgindep@ IASTEM ;
-< 0:n 0:i "@U.verb.1sgindep@" > IASTEMS ;
+!@U.ind.1sg@:ni@U.ind.1sg@ IASTEM ;
+< 0:n 0:i "@U.ind.1sg@" > IASTEM ;
 
-!@U.verb.2sgindep@:ki@U.verb.2sgindep@ IASTEM ;
-< 0:k 0:i "@U.verb.2sgindep@" > IASTEMS ;
+!@U.ind.2sg@:ki@U.ind.2sg@ IASTEM ;
+< 0:k 0:i "@U.ind.2sg@" > IASTEM ;
 
-@U.verb.3sgindep@:@U.verb.3sgindep@ IASTEM ;
+@U.ind.3sg@:@U.ind.3sg@ IASTEM ;
 
 
-@U.verb.3osgindep@:@U.verb.3osgindep@ IASTEM ;
-@U.verb.3isgindep@:@U.verb.3isgindep@ IASTEM ;
+@U.ind.3osg@:@U.ind.3osg@ IASTEM ;
+@U.ind.3isg@:@U.ind.3isg@ IASTEM ;
 
-!@U.verb.1plindep@:ni@U.verb.1plindep@ IASTEM ;   ! exclusive Pl
-< 0:n 0:i "@U.verb.1plindep@" > IASTEMS ;   ! exclusive Pl
+!@U.ind.1pl@:ni@U.ind.1pl@ IASTEM ;   ! exclusive Pl
+< 0:n 0:i "@U.ind.1pl@" > IASTEM ;   ! exclusive Pl
 
-@U.verb.12plindep@:ki@U.verb.12plindep@ IASTEM ; ! inclusive Pl
-< 0:k 0:i "@U.verb.12plindep@" > IASTEMS ;   ! inclusive Pl
+@U.ind.12pl@:ki@U.ind.12pl@ IASTEM ; ! inclusive Pl
+< 0:k 0:i "@U.ind.12pl@" > IASTEM ;   ! inclusive Pl
 
-@U.verb.2plindep@:ki@U.verb.2plindep@ IASTEM ;   
-@U.verb.3plindep@:@U.verb.3plindep@ IASTEM ;
+@U.ind.2pl@:ki@U.ind.2pl@ IASTEM ;   
+@U.ind.3pl@:@U.ind.3pl@ IASTEM ;
 
 LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
-@U.verb.1sgsbj@ IASTEM ;
-@U.verb.2sgsbj@ IASTEM ;
-@U.verb.3sgsbj@ IASTEM ;
-@U.verb.3osgsbj@ IASTEM ;
-@U.verb.3isgsbj@ IASTEM ;
+@U.sbj.1sg@ IASTEM ;
+@U.sbj.2sg@ IASTEM ;
+@U.sbj.3sg@ IASTEM ;
+@U.sbj.3osg@ IASTEM ;
+@U.sbj.3isg@ IASTEM ;
 
-@U.verb.1plsbj@  IASTEM ;   ! exclusive Pl
-@U.verb.12plsbj@  IASTEM ; ! inclusive Pl
-@U.verb.2plsbj@  IASTEM ;   
-@U.verb.3plsbj@ IASTEM ;
+@U.sbj.1pl@  IASTEM ;   ! exclusive Pl
+@U.sbj.12pl@  IASTEM ; ! inclusive Pl
+@U.sbj.2pl@  IASTEM ;   
+@U.sbj.3pl@ IASTEM ;
 
 
 LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
-@U.verb.2sgimp@  IASTEM ;
-@U.verb.1plimp@  IASTEM ;   ! exclusive Pl
-@U.verb.2plimp@  IASTEM ;   
+@U.imp.2sg@  IASTEM ;
+@U.imp.1pl@  IASTEM ;   ! exclusive Pl
+@U.imp.2pl@  IASTEM ;   
 
 
 !! !! Intransitive inanimate
