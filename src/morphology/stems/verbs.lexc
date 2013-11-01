@@ -46,40 +46,42 @@ TA ; ! transitive animate
 
 LEXICON IA   !!= @CODE@ divides in independent, subjunctive and imperative
 
-IA_INDEPENDENT ;
-IA_SUBJUNCTIV ;
-IA_IMPERATIV ;
+   IA_INDEPENDENT ;
+:ê IA_SUBJUNCTIV ;
+   IA_IMPERATIV ;
 
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
 
-< 0:n 0:i "@U.ind.1sg@" > IASTEM ; !"
-< 0:k 0:i "@U.ind.2sg@" > IASTEM ; !"
+< 0:n 0:i "@U.verb.ind1sg@" > IASTEM ; !"
+< 0:k 0:i "@U.verb.ind2sg@" > IASTEM ; !"
 
-< "@U.ind.3sg@" >  IASTEM ;
-< "@U.ind.3osg@" > IASTEM ;
+< "@U.verb.ind3sg@" >  IASTEM ; !"
+< "@U.verb.ind3osg@" > IASTEM ; !"
 
-< 0:n 0:i "@U.ind.1pl@" > IASTEM ;   ! exclusive Pl
-< 0:k 0:i "@U.ind.12pl@" > IASTEM ;   ! inclusive Pl
-< 0:k 0:i "@U.ind.2pl@" > IASTEM ;   !"
-< "@U.ind.3pl@" > IASTEM ;
+< 0:n 0:i "@U.verb.ind1pl@" > IASTEM ;   ! exclusive Pl
+< 0:k 0:i "@U.verb.ind12pl@" > IASTEM ;   ! inclusive Pl
+< 0:k 0:i "@U.verb.ind2pl@" > IASTEM ;   !"
+< "@U.verb.ind3pl@" > IASTEM ; !"
+< "@U.verb.ind3opl@" > IASTEM ; !"
 
 LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
-@U.sbj.1sg@ IASTEM ;
-@U.sbj.2sg@ IASTEM ;
-@U.sbj.3sg@ IASTEM ;
-@U.sbj.3osg@ IASTEM ;
+@U.verb.sbj1sg@ IASTEM ;
+@U.verb.sbj2sg@ IASTEM ;
+@U.verb.sbj3sg@ IASTEM ;
+@U.verb.sbj3osg@ IASTEM ;
 
-@U.sbj.1pl@  IASTEM ;   ! exclusive Pl
-@U.sbj.12pl@  IASTEM ; ! inclusive Pl
-@U.sbj.2pl@  IASTEM ;   
-@U.sbj.3pl@ IASTEM ;
+@U.verb.sbj1pl@  IASTEM ;   ! exclusive Pl
+@U.verb.sbj12pl@  IASTEM ; ! inclusive Pl
+@U.verb.sbj2pl@  IASTEM ;   
+@U.verb.sbj3pl@ IASTEM ;
+@U.verb.sbj3opl@ IASTEM ;
 
 
 LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
-@U.imp.2sg@  IASTEM ;
-@U.imp.1pl@  IASTEM ;   ! exclusive Pl
-@U.imp.2pl@  IASTEM ;   
+@U.verb.imp2sg@  IASTEM ;
+@U.verb.imp1pl@  IASTEM ;   ! exclusive Pl
+@U.verb.imp2pl@  IASTEM ;   
 
 
 !! !! Intransitive inanimate
