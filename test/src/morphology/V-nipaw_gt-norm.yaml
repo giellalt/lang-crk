@@ -10,50 +10,32 @@ Config:
 Tests:
   
   Verb - nipâw - ok : # Ordinary IA verb - full paradigm
-     nipâw+V+IA+Ind+Prs+1Sg: ninipân
+     nipâ+V+IA+Ind+Prs+1Sg: ninipân
      nipân+V+IA+Ind+Prs+2Sg: kinipân
-     nipâw+V+IA+Ind+Prs+3Sg: nipâw
-     nipâw+V+IA+Ind+Prs+3oSg: nipânwan
-     nipâw+V+IA+Ind+Prs+3iSg: nipânm
-     nipâw+V+IA+Ind+Prs+1Pl: ninipânmin
-     nipâw+V+IA+Ind+Prs+12Pl: kinipânmin
-     nipâw+V+IA+Ind+Prs+2Pl: kinipânm
-     nipâw+V+IA+Ind+Prs+3Pl: nipânwag
-     nipâw+V+IA+Neg+Ind+Prs+1Sg: ninipânsiin
-     nipâw+V+IA+Neg+Ind+Prs+2Sg: kinipânsiin
-     nipâw+V+IA+Neg+Ind+Prs+3Sg: nipânsiin
-     nipâw+V+IA+Neg+Ind+Prs+3oSg: nipânsiiwan
-     nipâw+V+IA+Neg+Ind+Prs+3iSg: nipânsiim
-     nipâw+V+IA+Neg+Ind+Prs+1Pl: ninipânsiimin
-     nipâw+V+IA+Neg+Ind+Prs+12Pl: kinipânsiimin
-     nipâw+V+IA+Neg+Ind+Prs+2Pl: kinipânsiim
-     nipâw+V+IA+Neg+Ind+Prs+3Pl: nipâwsiiwag
+     nipâ+V+IA+Ind+Prs+3Sg: nipâw
+     nipâ+V+IA+Ind+Prs+3oSg: nipâyiwa
+     nipâ+V+IA+Ind+Prs+1Pl: ninipânân
+     nipâ+V+IA+Ind+Prs+12Pl: kinipânaw
+     nipâ+V+IA+Ind+Prs+2Pl: kinipânâwâw
+     nipâ+V+IA+Ind+Prs+3Pl: nipâwak
+     nipâ+V+IA+Ind+Prs+3Pl: nipâyiwa
 
-     nipâw+V+IA+Sbj+1Sg: nipânyaan
-     nipâw+V+IA+Sbj+2Sg: nipânyan
-     nipâw+V+IA+Sbj+3Sg: nipând
-     nipâw+V+IA+Sbj+3oSg: nipâwnid
-     nipâw+V+IA+Sbj+3iSg: nipâwng
-     nipâw+V+IA+Sbj+1Pl: nipânyaang
-     nipâw+V+IA+Sbj+12Pl: nipânyang
-     nipâw+V+IA+Sbj+2Pl: nipânyeg
-     nipâw+V+IA+Sbj+3Pl: nipâwwaad
-     nipâw+V+IA+Neg+Sbj+1Sg: nipâwsiwaan
-     nipâw+V+IA+Neg+Sbj+2Sg: nipâwsiwan
-     nipâw+V+IA+Neg+Sbj+3Sg: nipâwsig
-     nipâw+V+IA+Neg+Sbj+3oSg: [nipâwsinid, nipâwsinig]
-     nipâw+V+IA+Neg+Sbj+3iSg: nipâwsing
-     nipâw+V+IA+Neg+Sbj+1Pl: nipâwsiwaang
-     nipâw+V+IA+Neg+Sbj+12Pl: nipâwsiwang
-     nipâw+V+IA+Neg+Sbj+2Pl: nipâwsiweg
-     nipâw+V+IA+Neg+Sbj+3Pl: nipâwsiwaa
+     nipâ+V+IA+Sbj+1Sg: ênipâyân
+     nipâ+V+IA+Sbj+2Sg: ênipâyan
+     nipâ+V+IA+Sbj+3Sg: ênipât
+     nipâ+V+IA+Sbj+3oSg: ênipâyit
+     nipâ+V+IA+Sbj+1Pl: ênipâyâhk
+     nipâ+V+IA+Sbj+12Pl: ênipâyahk
+     nipâ+V+IA+Sbj+2Pl: ênipâyêk
+     nipâ+V+IA+Sbj+3Pl: ênipâcik
+     nipâ+V+IA+Sbj+3oPl: ênipâyit
 
-     nipâw+V+IA+Imp+Imm+2Sg: nipâwn
-     nipâw+V+IA+Imp+Imm+1Pl: nipândaa
-     nipâw+V+IA+Imp+Imm+2Pl: [nipâwk, nipâwg]
-     nipâw+V+IA+Imp+Int+2Sg: nipâwken
-     nipâw+V+IA+Imp+Int+1Pl: nipâwsiidaa
-     nipâw+V+IA+Imp+Int+2Pl: nipâwkegon
-     nipâw+V+IA+Imp+Dur+2Sg: nipâwkan
-     nipâw+V+IA+Imp+Dur+2Pl: nipâwkeg
+     nipâ+V+IA+Imp+Imm+2Sg: nipân
+     nipâ+V+IA+Imp+Imm+1Pl: nipândâ
+     nipâ+V+IA+Imp+Imm+2Pl: [nipâk, nipâg]
+     nipâ+V+IA+Imp+Int+2Sg: nipâken
+     nipâ+V+IA+Imp+Int+1Pl: nipâsiidâ
+     nipâ+V+IA+Imp+Int+2Pl: nipâkegon
+     nipâ+V+IA+Imp+Dur+2Sg: nipâkan
+     nipâ+V+IA+Imp+Dur+2Pl: nipâkeg
 
