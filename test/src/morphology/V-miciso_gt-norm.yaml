@@ -10,49 +10,31 @@ Config:
 Tests:
   
   Verb - miciso - ok : # Ordinary IA verb - full paradigm
-     miciso+V+IA+Ind+Prs+1Sg: ninipân
-     miciso+V+IA+Ind+Prs+2Sg: kinipân
-     miciso+V+IA+Ind+Prs+3Sg: miciso
-     miciso+V+IA+Ind+Prs+3oSg: nipânwan
-     miciso+V+IA+Ind+Prs+3iSg: nipânm
-     miciso+V+IA+Ind+Prs+1Pl: ninipânmin
-     miciso+V+IA+Ind+Prs+12Pl: kinipânmin
-     miciso+V+IA+Ind+Prs+2Pl: kinipânm
-     miciso+V+IA+Ind+Prs+3Pl: nipânwag
-     miciso+V+IA+Neg+Ind+Prs+1Sg: ninipânsiin
-     miciso+V+IA+Neg+Ind+Prs+2Sg: kinipânsiin
-     miciso+V+IA+Neg+Ind+Prs+3Sg: nipânsiin
-     miciso+V+IA+Neg+Ind+Prs+3oSg: nipânsiiwan
-     miciso+V+IA+Neg+Ind+Prs+3iSg: nipânsiim
-     miciso+V+IA+Neg+Ind+Prs+1Pl: ninipânsiimin
-     miciso+V+IA+Neg+Ind+Prs+12Pl: kinipânsiimin
-     miciso+V+IA+Neg+Ind+Prs+2Pl: kinipânsiim
-     miciso+V+IA+Neg+Ind+Prs+3Pl: micisosiiwag
-
-     miciso+V+IA+Sbj+1Sg: nipânyaan
-     miciso+V+IA+Sbj+2Sg: nipânyan
-     miciso+V+IA+Sbj+3Sg: nipând
-     miciso+V+IA+Sbj+3oSg: micisonid
-     miciso+V+IA+Sbj+3iSg: micisong
-     miciso+V+IA+Sbj+1Pl: nipânyaang
-     miciso+V+IA+Sbj+12Pl: nipânyang
-     miciso+V+IA+Sbj+2Pl: nipânyeg
-     miciso+V+IA+Sbj+3Pl: micisowaad
-     miciso+V+IA+Neg+Sbj+1Sg: micisosiwaan
-     miciso+V+IA+Neg+Sbj+2Sg: micisosiwan
-     miciso+V+IA+Neg+Sbj+3Sg: micisosig
-     miciso+V+IA+Neg+Sbj+3oSg: [micisosinid, micisosinig]
-     miciso+V+IA+Neg+Sbj+3iSg: micisosing
-     miciso+V+IA+Neg+Sbj+1Pl: micisosiwaang
-     miciso+V+IA+Neg+Sbj+12Pl: micisosiwang
-     miciso+V+IA+Neg+Sbj+2Pl: micisosiweg
-     miciso+V+IA+Neg+Sbj+3Pl: micisosiwaa
+     miciso+V+IA+Ind+Prs+1Sg: nimicison
+     miciso+V+IA+Ind+Prs+2Sg: kimicison
+     miciso+V+IA+Ind+Prs+3Sg: micisow
+     miciso+V+IA+Ind+Prs+3oSg: micisoyiwa
+     miciso+V+IA+Ind+Prs+1Pl: nimicisonân
+     miciso+V+IA+Ind+Prs+12Pl: kimicisonaw
+     miciso+V+IA+Ind+Prs+2Pl: kimicisonaw
+     miciso+V+IA+Ind+Prs+3Pl: micisowak
+     miciso+V+IA+Ind+Prs+3oPl: micisoyiwa
+     
+     miciso+V+IA+Sbj+1Sg: êmicisonyân
+     miciso+V+IA+Sbj+2Sg: êmicisonyan
+     miciso+V+IA+Sbj+3Sg: êmicisot
+     miciso+V+IA+Sbj+3oSg: êmicisoyit
+     miciso+V+IA+Sbj+1Pl: êmicisonyâhk
+     miciso+V+IA+Sbj+12Pl: êmicisoyahk
+     miciso+V+IA+Sbj+2Pl: êmicisonyêk
+     miciso+V+IA+Sbj+3Pl: êmicisocik
+     miciso+V+IA+Sbj+3oPl: êmicisoyit
 
      miciso+V+IA+Imp+Imm+2Sg: micison
-     miciso+V+IA+Imp+Imm+1Pl: nipândaa
+     miciso+V+IA+Imp+Imm+1Pl: micisondâ
      miciso+V+IA+Imp+Imm+2Pl: [micisok, micisog]
      miciso+V+IA+Imp+Int+2Sg: micisoken
-     miciso+V+IA+Imp+Int+1Pl: micisosiidaa
+     miciso+V+IA+Imp+Int+1Pl: micisosiidâ
      miciso+V+IA+Imp+Int+2Pl: micisokegon
      miciso+V+IA+Imp+Dur+2Sg: micisokan
      miciso+V+IA+Imp+Dur+2Pl: micisokeg
