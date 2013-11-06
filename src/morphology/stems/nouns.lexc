@@ -127,7 +127,10 @@ asikan ANDECL "sock" ; ! this really is animate
 wâwaskesiw ANDECL "elk" ;
 oskâtâsk ANDECL "carrot" ;
 minôs ANDECL "cat" ;
- 
+pisiw	ANDECL "cougar" ;
+nehiyaw ANDECL "Cree Person" ;
+asiniy ANDECL "stone" ;
+
 
 LEXICON ANSTEMS_kw
  :%> ANSTEMLIST_kw ;
@@ -150,17 +153,16 @@ maniway:%>niway INALIENABLEDECL ;        !"someone's cheek"
 !   ===============
 
 LEXICON INSTEMS
-môhkosmân INDECL "knife" ;
+môhkomân INDECL "knife" ;
 sakâw INDECL "bush" ;
 mîcimâpoy INDECL "soup" ;
-sîsîpâwi INDECL "duck egg" ;
+sîsîpiwâwi INDECL "duck egg" ;
 wâwi INDECL "egg" ;
 ôtênaw INDECL "city" ;         !"city"
-asiniy INDECL ;         !"a stone"
 maskisin INDECL "shoe" ;
 mistikowat INDECL "box" ;
 pikiw	INDECL "gum" ;
-
+iskwâhtêm	INDECL "door" ;
 
 
 
