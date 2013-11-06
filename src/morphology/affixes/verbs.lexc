@@ -35,6 +35,7 @@ LEXICON IACONJ !!= @CODE@ splits in 3 conjugations
 +V+IA: IA_IMP ;
 
 LEXICON IA_IND !!= @CODE@ gives positive and negative
+IA_IND_SUFF ;
 
 ! If no negative suffix, then the following 3 lines are not needed
 !             IA_IND_SUFF ;
@@ -42,7 +43,7 @@ LEXICON IA_IND !!= @CODE@ gives positive and negative
 ! LEXICON IA_IND_SUFF !!= @CODE@ (so far) gives present tense only
 
 +Prs: IA_IND_PRS ;
-!+Prt: IA_IND_PRT ;
++Prt: IA_IND_PRT ;
 
 LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
 < "+1Sg":0 "@U.verb.ind1sg@" 0:n > # ; !"
@@ -139,9 +140,9 @@ LEXICON IICONJ  !!= @CODE@ splits according to conjugation
 
 LEXICON II_IND_PRS   !!= @CODE@ is positive present
 +3Sg: # ;
-+3oSg:%>ni # ;
-+3Pl:%>wan # ;
-+3oPl:%>niwan # ;
++3oSg:%>yiw # ;
++3Pl:%>a # ;
++3oPl:%>yiwa # ;
 
 LEXICON II_NEG_IND_PRS  !!= @CODE@ is negative present
 +3Sg:%>siinoon # ;
@@ -165,4 +166,29 @@ LEXICON II_NEG_SBJ   !!= @CODE@ is negative subjunctive
 !! !! Transitive animate (TA)
 
 LEXICON TACONJ_am  !!= * @CODE@ not yet written
-# ;
+ # ;
+
+
+!! !! Transitive Inanimate (TI)
+
+LEXICON TICONJ  !!= * @CODE@ not yet written
++V+TI+Ind: TI_IND ;
+
+
+LEXICON TI_IND
+ TI_IND_SUFF ;
+ 
+ 
+LEXICON TI_IND_SUFF
++1Sg@U.verb.1sgindep@:n@U.verb.1sgindep@ # ;
++2Sg@U.verb.2sgindep@:n@U.verb.2sgindep@ # ;
++3Sg@U.verb.3sgindep@:m@U.verb.3sgindep@ # ;
++3oSg000@U.verb.3osgindep@:miyiwa@U.verb.3osgindep@ # ;
+!+3iSg@U.verb.3isgindep@:m@U.verb.3isgindep@ # ;
++1Pl@U.verb.1plindep@:nân@U.verb.1plindep@ # ;   ! exclusive Pl
++12Pl@U.verb.12plindep@:naw@U.verb.12plindep@ # ; ! inclusive Pl
++2Pl@U.verb.2plindep@:nâwâw@U.verb.2plindep@ # ;
++3Pl@U.verb.3plindep@:wak@U.verb.3plindep@ # ;
+
+
+

@@ -9,7 +9,7 @@ LEXICON ANDECL
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !ucrk
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  DIM_SG ; !
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  DIM_PL ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  DIM_PL_AK ; !
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
 +N+AN+Sg: AN_SUFF_SG ;
 +N+AN+Pl: AN_SUFF_PL ;
@@ -17,6 +17,8 @@ LEXICON ANDECL
 LEXICON INDECL
 < "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PL_A ; !
+< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  DIM_SG ; !
+< "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  DIM_PL_A ; !
 < "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
 +N+IN+Sg: IN_SUFF_SG ;
 +N+IN+Pl: IN_SUFF_PL ;
@@ -25,6 +27,8 @@ LEXICON ANKWDECL
 !!These take om as extra suffix in possessed form
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  DIM_SG ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  DIM_PL_AK ; !
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
 +N+AN+Sg: ANKWDECL_SUFF_SG ;
 +N+AN+Pl: ANKWDECL_SUFF_PL ;
@@ -125,11 +129,13 @@ AN_SUFF_PL ;
 ! Suffixes
 
 LEXICON DIM_SG
-+Dim:%>isis SG_ ;
++Dim:%>s%^DIMis SG_ ;
 
-LEXICON DIM_PL
-+Dim:%>isis PL_AK ;
+LEXICON DIM_PL_AK
++Dim:%>s%^DIMis PL_AK ;
 
+LEXICON DIM_PL_A
++Dim:%>s%^DIMis PL_A ;
 
 LEXICON SG_naan
 :%>nân SG_ ;

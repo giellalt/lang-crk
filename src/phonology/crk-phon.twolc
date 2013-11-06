@@ -7,8 +7,7 @@ Alphabet
  t2:0
  %>:0 
  %^LC:0 ! Locative suffix alternation trigger
- 
-
+ %^DIM:0 ! Diminutive alternation trigger
  ;
 
 Sets
@@ -85,19 +84,24 @@ w:n <=> [ê|ô] _  %>:0 i: %^LC:0  ;
 t2:t <=> _ %>:0 Vow ;
 ! t2:t <=> _ Vow ;
 
-"double consonant deletion"
-Cx:0 <=> _ %>:0 Cx ;
-	where Cx in Cns ; 
-	
-	
 "i to a in prefixes in front of nasals"
 i:a <=> .#. n _ %>:0 [ n | m ] i	;
 
-"delete stem-final w in possessed kw nouns"
-w:0 <=> _ %>:0 o: m: ;
+"Diminutives - all stem t change to c with diminutives"
+t:c <=> :* _ :* %^DIM:0 ;
 
+"double consonant deletion"
+Cx:0 <=> _ %>:0 Cx ;
+	where Cx in Cns ;
 
+"Antti's rule"
+s:0 <=> t:c %>:0 _ %^DIM:0 ;
 
+"Diminutives rule drop w, lengthen vowel 1"
+[ w:0 | y:0 ]  <=> [ a: | i: | o: ] _ %>:0 s: %^DIM:0 ;
+
+"Diminutives rule drop w, lengthen vowel 2"
+[ i:î | a:â | o:ô ] <=> _ [ w:0 | y:0 ] %>:0 s: %^DIM:0 ;
 
 
  
