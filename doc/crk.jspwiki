@@ -117,7 +117,6 @@ Nominal MSP
  * t2 		  Prefix in possessives
 
 
-
 Flagdiacritics 
 
 These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
@@ -146,8 +145,6 @@ These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
 
 
 
-
-
 !!!Rules
 
 
@@ -161,7 +158,6 @@ a morphological affix rather than a phonological variant.
 
 
 __Suffix Final n __  
-
 
 
 
@@ -227,13 +223,13 @@ INALIENABLE redirects to INALIENABLESTEMS
 
 
 
+
 possessive paradigm
 
 
 
 
 !Inanimate Nouns
-
 
 
 
@@ -286,7 +282,21 @@ Intransitive animate
 
 
 
- LEXICON IA_INDEPENDENT    gives prefixes and flags for person-number in indicative
+ LEXICON IA_INDEPENDENT_PRS    gives prefixes and flags for person-number in indicative
+
+
+
+
+
+ LEXICON TI_INDEPENDENT    gives prefixes and flags for person-number in indicative
+
+
+
+
+
+
+
+
 
 
 
@@ -296,6 +306,8 @@ Intransitive animate
 
 
  LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
+
+
 
 
 Intransitive inanimate
@@ -323,8 +335,7 @@ The stems
  miciso IACONJ "sleep" ;  
 
  LEXICON IISTEM    
- * ozhaawashkwaa IICONJ "bleuir" ;  is Ojibwe, replace with Cree
-
+ * mihkwâw IICONJ "NI-is-red" ; 
 
  LEXICON TASTEM_am    
  !wâpam TACONJ_am "see" ;  " TA? IA
@@ -434,3 +445,15 @@ Intransitive inanimate (II)
 Transitive animate (TA)
 
  * LEXICON TACONJ_am   not yet written
+
+
+Transitive Inanimate (TI)
+
+ * LEXICON TICONJ   not yet written
+
+
+
+
+
+
+
