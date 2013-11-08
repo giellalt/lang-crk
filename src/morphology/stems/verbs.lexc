@@ -51,7 +51,7 @@ LEXICON IA   !!= @CODE@ divides in independent, subjunctive and imperative
    IA_IMPERATIV ;
 
 
-LEXICON IA_INDEPENDENT_PRS   !!= @CODE@ gives prefixes and flags for person-number in indicative
+LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
 
 < 0:n 0:i "@U.verb.ind1sg@" > IASTEM ; !"
 < 0:k 0:i "@U.verb.ind2sg@" > IASTEM ; !"
@@ -64,33 +64,6 @@ LEXICON IA_INDEPENDENT_PRS   !!= @CODE@ gives prefixes and flags for person-numb
 < 0:k 0:i "@U.verb.ind2pl@" > IASTEM ;   !"
 < "@U.verb.ind3pl@" > IASTEM ; !"
 < "@U.verb.ind3opl@" > IASTEM ; !"
-
-
-LEXICON TI_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
-
-@U.verb.1sgindep@:ni@U.verb.1sgindep@ IASTEM ;
-!< 0:n 0:i "@U.verb.1sgindep@" > IASTEMS ;
-
-@U.verb.2sgindep@:ki@U.verb.2sgindep@ IASTEM ;
-!< 0:k 0:i "@U.verb.2sgindep@" > IASTEMS ;
-
-@U.verb.3sgindep@:@U.verb.3sgindep@ IASTEM ;
-
-
-@U.verb.3osgindep@:@U.verb.3osgindep@ IASTEM ;
-@U.verb.3isgindep@:@U.verb.3isgindep@ IASTEM ;
-
-@U.verb.1plindep@:ni@U.verb.1plindep@ IASTEM ;   ! exclusive Pl
-!< 0:n 0:i "@U.verb.1plindep@" > IASTEMS ;   ! exclusive Pl
-
-@U.verb.12plindep@:ki@U.verb.12plindep@ IASTEM ; ! inclusive Pl
-< 0:k 0:i "@U.verb.12plindep@" > IASTEMS ;   ! inclusive Pl
-
-@U.verb.2plindep@:ki@U.verb.2plindep@ IASTEM ;   
-@U.verb.3plindep@:@U.verb.3plindep@ IASTEM ;
-
-
-
 
 LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
 @U.verb.sbj1sg@ IASTEM ;
@@ -109,8 +82,6 @@ LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in 
 @U.verb.imp2sg@  IASTEM ;
 @U.verb.imp1pl@  IASTEM ;   ! exclusive Pl
 @U.verb.imp2pl@  IASTEM ;   
-
-
 
 
 !! !! Intransitive inanimate
@@ -147,7 +118,8 @@ mâto IACONJ "sleep" ; !!= @CODE@
 miciso IACONJ "sleep" ; !!= @CODE@ 
 
 LEXICON IISTEM   !!= @CODE@ 
-mihkwâw IICONJ "NI-is-red" ; !!= * @CODE@
+ozhaawashkwaa IICONJ "bleuir" ; !!= * @CODE@ is Ojibwe, replace with Cree
+
 
 LEXICON TASTEM_am   !!= @CODE@ 
 !wâpam TACONJ_am "see" ; !!= @CODE@ " TA? IA
@@ -156,7 +128,5 @@ aabaji':aabaji' TACONJ_am "use s.o." ; !!= * @CODE@ is Ojibwe, replace with Cree
 LEXICON TASTEM_aw   !!= @CODE@ 
 aaniikanootaw:aanikanoot TACONJ_am "translate s.o." ; !!= * @CODE@ is Ojibwe, replace with Cree
 
-LEXICON TISTEM
-wâpahta TICONJ "to-see-NI" ;
 
 
