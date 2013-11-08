@@ -28,7 +28,21 @@ Intransitive animate
 
 
 
- LEXICON IA_INDEPENDENT    gives prefixes and flags for person-number in indicative
+ LEXICON IA_INDEPENDENT_PRS    gives prefixes and flags for person-number in indicative
+
+
+
+
+
+ LEXICON TI_INDEPENDENT    gives prefixes and flags for person-number in indicative
+
+
+
+
+
+
+
+
 
 
 
@@ -38,6 +52,8 @@ Intransitive animate
 
 
  LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
+
+
 
 
 Intransitive inanimate
@@ -65,8 +81,7 @@ The stems
  miciso IACONJ "sleep" ;  
 
  LEXICON IISTEM    
- * ozhaawashkwaa IICONJ "bleuir" ;  is Ojibwe, replace with Cree
-
+ * mihkwâw IICONJ "NI-is-red" ; 
 
  LEXICON TASTEM_am    
  !wâpam TACONJ_am "see" ;  " TA? IA
