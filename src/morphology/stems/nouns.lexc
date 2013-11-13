@@ -27,6 +27,7 @@ AN ; ! Animate nouns
 IN ; ! Inanimate nouns
 INALIENABLE ;
 ANSTEM_kw ; ! Animate nouns whose stems end in kw
+IRREGAN ; !mistatim, atim
 
 
 LEXICON AN
@@ -48,6 +49,19 @@ LEXICON AN
 < 0:o "@U.noun.3ipl@" 0:"t2" > ANSTEMS ;       ! 3-plural-obviate
 
 
+LEXICON IRREGAN
+
+@U.noun.abs@ IRREGANSTEMSLIST ; 
+
+< 0:n 0:i "@U.noun.1sg@" 0:"t2" > IRREGANSTEMS ; ! 1
+< 0:k 0:i "@U.noun.2sg@" 0:"t2" > IRREGANSTEMS ; ! 2
+< 0:o "@U.noun.3sg@" 0:"t2" > IRREGANSTEMS ;     ! 3
+< 0:o "@U.noun.3isg@" 0:"t2" > IRREGANSTEMS ;    ! 3-singular-obviative
+< 0:n 0:i "@U.noun.1pl@" 0:"t2" > IRREGANSTEMS ;   ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@" 0:"t2" > IRREGANSTEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@" 0:"t2" > IRREGANSTEMS ;  ! 2pl 
+< 0:o "@U.noun.3pl@" 0:"t2" > IRREGANSTEMS ;       ! 3pl
+< 0:o "@U.noun.3ipl@" 0:"t2" > IRREGANSTEMS ;       ! 3-plural-obviate
 
 LEXICON IN
 !! @LEXNAME@ redirects to INSTEMS in two ways:
@@ -81,8 +95,6 @@ LEXICON INALIENABLE
 < 0:k 0:i "@U.noun.12pl@"  > INALIENABLESTEMS ; ! inclusive Pl
 < 0:k 0:i "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
 < 0:o "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
-
-
 
 
 LEXICON ANSTEM_kw
@@ -120,7 +132,6 @@ môswa ANDECL "moose" ; ! môswak
 maskwa ANDECL "bear" ; ! maskwak
 okistatowân ANDECL "grizzly bear" ; ! okistatowânak
 wâpask ANDECL "polar bear" ; ! wâpaskwak
-atim IRREGULARDECL "dog" ;
 sîsîp ANDECL "duck" ;
 iskwêw ANDECL ;         !"a woman"
 asikan ANDECL "sock" ; ! this really is animate
@@ -131,6 +142,13 @@ pisiw	ANDECL "cougar" ;
 nehiyaw ANDECL "Cree Person" ;
 asiniy ANDECL "stone" ;
 sikâk ANDECL "skunk" ;
+
+LEXICON IRREGANSTEMS
+ :%> IRREGANSTEMSLIST ;
+
+LEXICON IRREGANSTEMSLIST
+atim IRREGULARDECL "dog" ;
+mistatim IRREGULARDECL "horse" ; ! mistatimwak
 
 LEXICON ANSTEMS_kw
  :%> ANSTEMLIST_kw ;
