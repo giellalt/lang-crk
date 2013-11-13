@@ -94,6 +94,10 @@ t:c <=> :* _ :* %^DIM:0 ;
 Cx:0 <=> _ %>:0 Cx ;
 	where Cx in Cns ;
 
+"Double vowel deletion"
+Vx:0 <=> _ %>:0 Vx ;
+	where Vx in Vow ;
+
 "Dimutives - delete suffix intital s in stmes containing t"
 s:0 <=> t:c %>:0 _ %^DIM:0 ;
 
@@ -109,6 +113,12 @@ s:0 <=> k %>:0 _ %^DIM:0 ;
 
 "Diminutives rule change ending to os with k-final stems 2"
 i:o <=> k %>:0 s:0 %^DIM:0 _ ;
+
+"Change atim to item in possessed form 1"
+a:0 <=> %> _ t: i: m: ;
+
+"Change atim to item in possessed forms 2"
+i:ê <=> %> a: t: _ m: ;
 
 
 
