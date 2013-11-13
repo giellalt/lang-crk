@@ -37,6 +37,11 @@ LEXICON INALIENABLEDECL
 +N+AN+Sg: INAL_SUFF_SG ;
 +N+AN+Pl: INAL_SUFF_PL ;
 
+LEXICON IRREGULARDECL
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_WAK ; !
+
+
 !! !!The suffixes
 
 LEXICON INAL_SUFF_SG
@@ -56,13 +61,6 @@ LEXICON AN_SUFF_SG
 < "+Px3iPl":yiw "@U.noun.3ipl@" > SG_ ; ! obviative plural possessor
 
 LEXICON AN_SUFF_PL
-!< "+Px1Sg":0 "@U.noun.1sg@" > PL_AK ; !
-!< "+Px2Sg":0 "@U.noun.2sg@" > PL_AK ; !
-!< "+Px3Sg":0 "@U.noun.3sg@" > PL_AK ; !
-!< "+Px1Pl":0 "@U.noun.1pl@" > PL_naan_AK ;   ! exclusive Pl
-!< "+Px12Pl":0 "@U.noun.12pl@" > PL_naan_AK ; ! inclusive Pl
-!< "+Px2Pl":0 "@U.noun.2pl@" > PL_waaw_AK ; !
-!< "+Px3Pl":0 "@U.noun.3pl@" > PL_waaw_AK ;
 < "+Px1Sg":0 "@U.noun.1sg@" >  PL_AK ; !
 < "+Px2Sg":0 "@U.noun.2sg@" >  PL_AK ; !
 < "+Px3Sg":0 "@U.noun.3sg@" >  PL_AK ; !
@@ -162,6 +160,9 @@ LEXICON PL_A
 
 LEXICON PL_AK
 :%>ak # ;
+
+LEXICON PL_WAK
+:%>wak # ;
 
 LEXICON LOC
 +Loc:%>i%^LChk  # ; ! taken from test

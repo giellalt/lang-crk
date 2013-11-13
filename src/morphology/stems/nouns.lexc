@@ -115,12 +115,12 @@ apiscacihkos ANDECL "antelope" ;
 mâyatihk ANDECL "bighorn sheep" ;
 atihk ANDECL "caribou" ;
 apisimôsos ANDECL "deer" ; ! apisimôsosak
-mistatim ANDECL "horse" ; ! mistatimwak
+mistatim IRREGULARDECL "horse" ; ! mistatimwak
 môswa ANDECL "moose" ; ! môswak
 maskwa ANDECL "bear" ; ! maskwak
 okistatowân ANDECL "grizzly bear" ; ! okistatowânak
 wâpask ANDECL "polar bear" ; ! wâpaskwak
-atim ANDECL "dog" ;
+atim IRREGULARDECL "dog" ;
 sîsîp ANDECL "duck" ;
 iskwêw ANDECL ;         !"a woman"
 asikan ANDECL "sock" ; ! this really is animate
