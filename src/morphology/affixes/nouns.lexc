@@ -37,9 +37,13 @@ LEXICON INALIENABLEDECL
 +N+AN+Sg: INAL_SUFF_SG ;
 +N+AN+Pl: INAL_SUFF_PL ;
 
-LEXICON IRREGULARDECL
+LEXICON IRREGULARDECL				!!This category is there to handle the highly irregular atim and mistatim
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_WAK ; !
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  DIM_SG_IRR ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  DIM_PL_IRR_WAK ; !
+< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
+
 
 
 !! !!The suffixes
@@ -134,6 +138,12 @@ LEXICON DIM_PL_AK
 
 LEXICON DIM_PL_A
 +Dim:%>s%^DIMis PL_A ;
+
+LEXICON DIM_SG_IRR
++Dim:%>os%^DIMis SG_ ;
+
+LEXICON DIM_PL_IRR_WAK
++Dim:%>os%^DIMis PL_AK ;
 
 LEXICON SG_naan
 :%>nân SG_ ;
