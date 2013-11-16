@@ -53,10 +53,11 @@ LEXICON IRREGAN
 
 @U.noun.abs@ IRREGANSTEMSLIST ; 
 
+
 < 0:n 0:i "@U.noun.1sg@" > IRREGANSTEMS ; ! 1
 < 0:k 0:i "@U.noun.2sg@" > IRREGANSTEMS ; ! 2
-< 0:o "@U.noun.3sg@" > IRREGANSTEMS ;     ! 3
-< 0:o "@U.noun.3isg@" > IRREGANSTEMS ;    ! 3-singular-obviative
+< 0:o     "@U.noun.3sg@" > IRREGANSTEMS ;     ! 3
+< 0:o     "@U.noun.3isg@" > IRREGANSTEMS ;    ! 3-singular-obviative
 < 0:n 0:i "@U.noun.1pl@" > IRREGANSTEMS ;   ! exclusive Pl
 < 0:k 0:i "@U.noun.12pl@" > IRREGANSTEMS ; ! inclusive Pl
 < 0:k 0:i "@U.noun.2pl@" > IRREGANSTEMS ;  ! 2pl 
@@ -85,7 +86,7 @@ LEXICON IN
 LEXICON INALIENABLE
 !! @LEXNAME@ redirects to INALIENABLESTEMS
 
-@U.noun.abs@  INALIENABLESTEMS ; 
+< "@U.noun.abs@" >  INALIENABLESTEMS ; 
 
 < 0:n 0:i "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k 0:i "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
@@ -98,7 +99,7 @@ LEXICON INALIENABLE
 
 
 LEXICON ANSTEM_kw
-@U.noun.abs@  ANSTEMS_kw ;
+< "@U.noun.abs@" >  ANSTEMS_kw ;
 
 < 0:n 0:i "@U.noun.1sg@" 0:"t2" > ANSTEMLIST_kw ; ! 1
 < 0:k 0:i "@U.noun.2sg@" 0:"t2" > ANSTEMLIST_kw ; ! 2
@@ -143,6 +144,7 @@ nehiyaw ANDECL "Cree Person" ;
 asiniy ANDECL "stone" ;
 sikâk ANDECL "skunk" ;
 
+
 LEXICON IRREGANSTEMS
  :%> IRREGANSTEMSLIST ;
 
@@ -175,13 +177,25 @@ môhkomân INDECL "knife" ;
 sakâw INDECL "bush" ;
 mîcimâpoy INDECL "soup" ;
 sîsîpiwâwi INDECL "duck egg" ;
-wâwi INDECL "egg" ;
-ôtênaw INDECL "city" ;         !"city"
+wâwi INDECL "egg" ; ! <== Analysed with hfst, but not with xfst.
+ôtênaw INDECL "city" ;
 maskisin INDECL "shoe" ;
 mistikowat INDECL "box" ;
 pikiw	INDECL "gum" ;
 iskwâhtêm	INDECL "door" ;
 
+
+! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
+! The issue: There is one string, wâw, that does not work with xfst.
+! With hfst, everything works. Thus, eventual xfst updates should be
+! tested for wâwa etc.
+! wâki	ANDECL "Trond testing" ;
+! wâxa	ANDECL "Trond testing" ;
+! xâwo	ANDECL "Trond testing" ;
+! wêwa	ANDECL "Trond testing" ; ! works
+! wâwa	ANDECL "Trond testing" ; ! the only one that does not work: w â w
+! awâwa	ANDECL "Trond testing" ; ! the only one that does not work: w â w
+! kwâwi	ANDECL "Trond testing" ; ! the only one that does not work: w â w
 
 
 
