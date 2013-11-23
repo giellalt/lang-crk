@@ -186,6 +186,7 @@ define yîRule [ y î ] -> ᔩ  ;
 define yôRule [ y ô ] -> ᔫ  ;  
 
 define hkRule [ h k ] -> ᕽ  ;  
+define thRule [ t h ] -> ᔭ ;
 
 ! one-letter symbols
 
@@ -356,6 +357,7 @@ read regex [ Decapitalisation
 .o. yôRule
 
 .o. hkRule
+.o. thRule
 
 .o. aRule 
 .o. iRule 
