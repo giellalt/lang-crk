@@ -57,6 +57,12 @@ LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
 < "+3oPl":0 "@U.verb.ind3opl@" 0:y 0:i 0:w 0:a  > # ;   !
 
 
+LEXICON IA_IND_PRT ! Dummy lexicon
+# ;
+
+LEXICON IA_IND_SUFF ! Dummy lexicon
+# ;
+
 LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive person suffixes
 @U.verb.sbj1sg@  1sgsubjunctive ;
 @U.verb.sbj2sg@  2sgsubjunctive ;
