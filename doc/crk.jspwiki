@@ -136,8 +136,28 @@ These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
  * Pronoun ;             
  * Punctuation ;         
 
+Divvun & Giellatekno - open source grammars for Sámi and other languages
+Copyright © 2013- The University of Tromsø & University of Alberta
+http://giellatekno.uit.no & http://altlab.artsrn.ualberta.ca
+
+This program is free software; you can redistribute and/or modify
+this file under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version. The GNU General Public License
+is found at [http://www.gnu.org/licenses/gpl.html]. It is
+also available in the file $GTHOME/LICENSE.txt.
+Other licensing options are available upon request, please contact
+giellatekno@hum.uit.no or divvun@samediggi.no
 
 
+ !!!Alphabet 
+ *  a b c d e f g h i j k l m n o p q r s t u v w x y z 
+ *  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z  
+ *  â ê î ô											 
+ *  Â Ê Î Ô											 
+
+
+ !!!Sets 
 
 
 
@@ -159,26 +179,45 @@ a morphological affix rather than a phonological variant.
 
 __Suffix Final n __  
 
+__locative alternations o__  
+
+__locative alternations aaw 1__  
+
+__locative alternations aaw 2__  
+
+__locative alternations aaw 3a__  
+
+__locative alternation iihk 3i__  
+
+__locative alternation oohk io__  
+
+__locative alternation naahk 1		__ adds nâhk after êw 1: change w to n
 
 
+__possessive prefxes__  
+
+__i to a in prefixes in front of nasals__  
+
+__Diminutives - all stem t change to c with diminutives__  
+
+__Double consonant deletion__  
+
+__Double vowel deletion__  
+
+__Dimutives - delete suffix intital s in stmes containing t__  
+
+__Diminutives rule drop w, lengthen vowel 1__  
+
+__Diminutives rule drop w, lengthen vowel 2__  
+
+__Diminutives rule change ending to os with k-final stems 1__  
 
 
+__Diminutives rule change ending to os with k-final stems 2__  
 
+__Change atim to item in possessed form 1__  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+__Change atim to item in possessed forms 2__  
 
 
 
@@ -226,6 +265,7 @@ INALIENABLE redirects to INALIENABLESTEMS
 
 
 
+ANSTEM_kw is for a set of nouns that take an additional suffix in the possessive paradigm
 
 
 
@@ -422,6 +462,8 @@ Intransitive animate (IA)
 
 
  LEXICON IA_IND_PRS  gives person suffixes
+
+
 
 
  LEXICON IA_SBJ  gives flag diacritics and directs to subjunctive person suffixes
