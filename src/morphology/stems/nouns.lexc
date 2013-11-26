@@ -68,7 +68,7 @@ LEXICON IN
 !! @LEXNAME@ redirects to INSTEMS in two ways:
 !! Without prefixes, forming the absolutive (non-Px) declension
 
-@U.noun.abs@  INSTEMS ; 
+@U.noun.abs@  INSTEMLIST ; 
 
 !! With prefixes, forming the possessive declension
 < 0:n 0:i "@U.noun.1sg@" > INSTEMS ; !
@@ -144,6 +144,7 @@ pisiw	ANDECL "cougar" ;
 nehiyaw ANDECL "Cree Person" ;
 asiniy ANDECL "stone" ;
 sikâk ANDECL "skunk" ;
+mostos ANDECL "cow" ;
 
 
 LEXICON IRREGANSTEMS
@@ -174,7 +175,11 @@ maniway:%>niway INALIENABLEDECL ;        !"someone's cheek"
 !   ===============
 
 LEXICON INSTEMS
-môhkomân INDECL "knife" ;
+ :%> INSTEMLIST ;
+
+
+LEXICON INSTEMLIST
+
 sakâw INDECL "bush" ;
 mîcimâpoy INDECL "soup" ;
 sîsîpiwâwi INDECL "duck egg" ;
@@ -184,6 +189,7 @@ maskisin INDECL "shoe" ;
 mistikowat INDECL "box" ;
 pikiw	INDECL "gum" ;
 iskwâhtêm	INDECL "door" ;
+môhkomân INDECL ;
 
 
 ! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
