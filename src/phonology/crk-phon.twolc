@@ -31,23 +31,19 @@ Rules
 
 "Suffix a Deletion in Vowel Final Stems"
 !! __@RULENAME@__ gives maskwa + ak = plural maskwak
- Vx:0 <=> _ %>:0 :Vow ;
- 	where Vx in ( a e i o â ê î ô ) ;
+Vx:0 <=> _ %>:0 :Vow ;
+	where Vx in ( a e i o â ê î ô ) ;
 
 "w Insertion in Front of Vowel Initial Suffix after ksv c"
-!! __@RULENAME@__ inserts w after k, m in front of plural -ak
+!! __@RULENAME@__ inserts w after k in front of plural -ak
 !! Note that this rule probably is wrong, and that the -w- is
 !! a morphological affix rather than a phonological variant.
- 0:w <=> k: %>:0 _ a k ;
+0:w <=> k: %>:0 _ a k ;
  
-!€ wâpask0>ak
-!€ wâpaskw0ak 
- 
- 
-
-"Suffix Final n" 
+"Stem Final n" 
 !! __@RULENAME@__  
- n:0 <=> _ %>:0 Cns ;
+n:0 <=> _ %>:0 Cns ; 
+
 
 "locative alternations o"
 i:o <=> k %>:0 _  %^LC:0   ;
@@ -59,13 +55,12 @@ Vx:0 <=> _ [ w: | y: ] %>:0  i: %^LC:0   ;
     
 ! second
 "locative alternations aaw 2"
-Cx:0 <=> [a:|i:|o:] _  %>:0  i: %^LC:0  ;
+Cx:0 <=> [ a: | i: | o: ] _  %>:0  i: %^LC:0  ;
     where Cx in ( w y ) ;
 
 ! third
 "locative alternations aaw 3a"
 i:â <=> [ ô | ê | a: ] [ w: | y: ]  %>:0  _ %^LC:0  ;
-!	<=> :n _ ^LC: ;
 
 "locative alternation iihk 3i"
 i:î <=> i: y:  %>:0  _ %^LC:0  ;
@@ -82,7 +77,7 @@ w:n <=> [ê|ô] _  %>:0 i: %^LC:0  ;
   
 "possessive prefxes"
 t2:t <=> _ %>:0 Vow ;
-! t2:t <=> _ Vow ;
+
 
 "i to a in prefixes in front of nasals"
 i:a <=> .#. n _ %>:0 [ n | m ] i	;
@@ -98,7 +93,7 @@ Cx:0 <=> _ %>:0 Cx ;
 Vx:0 <=> _ %>:0 Vx ;
 	where Vx in Vow ;
 
-"Dimutives - delete suffix intital s in stmes containing t"
+"Dimutives - delete suffix intital s in stems containing t"
 s:0 <=> t:c %>:0 _ %^DIM:0 ;
 
 "Diminutives rule drop w, lengthen vowel 1"
@@ -110,7 +105,6 @@ s:0 <=> t:c %>:0 _ %^DIM:0 ;
 "Diminutives rule change ending to os with k-final stems 1"
 s:0 <=> k %>:0 _ %^DIM:0 ;
 
-
 "Diminutives rule change ending to os with k-final stems 2"
 i:o <=> k %>:0 s:0 %^DIM:0 _ ;
 
@@ -120,6 +114,8 @@ a:0 <=> %> _ t: i: m: ;
 "Change atim to item in possessed forms 2"
 i:ê <=> %> a: t: _ m: ;
 
+!!"Double s deletion"
+!!s:0 <=> s: %>:0 _ i: s: %^DIM:0 ;
 
 
 
@@ -127,6 +123,3 @@ i:ê <=> %> a: t: _ m: ;
 
 
 
-
-
- 
