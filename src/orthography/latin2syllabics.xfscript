@@ -41,6 +41,13 @@ define LengthSymbol [ ā -> â ,
                       e -> ê ]
                       ;
 
+! th rules 
+
+define thiRule [ t h i ] -> ᖨ ;
+define theRule [ t h e ] -> ᖧ ;
+define thoRule [ t h o ] -> ᖪ ;
+define thaRule [ t h a ] -> ᖬ ; 
+
 ! with w
 
 ! 3-letter symbols
@@ -219,6 +226,12 @@ define FullStopRule [ %. ] -> ᙮ ;
  
 read regex [ Decapitalisation
 .o. LengthSymbol
+
+.o. thiRule 
+.o. theRule 
+.o. thoRule 
+.o. thaRule  
+
 .o. cwaRule
 .o. cwiRule
 .o. cwoRule
