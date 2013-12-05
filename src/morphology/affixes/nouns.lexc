@@ -15,8 +15,10 @@ LEXICON ANDECL
 +N+AN: DIM_PL ;
 
 LEXICON DIM_SG
-< "+Dim":is "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+!! Adds dimunitive suffix to stem
+< "+Dim":is "+Sg":0 "@U.noun.abs@" >  SG_ ; 
 < "+Dim":is "+Sg":0 >  AN_SUFF_SG ; !
+
 
 LEXICON DIM_PL
 < "+Dim":is "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
@@ -91,9 +93,9 @@ LEXICON IN_SUFF_SG
 < "+Px3Sg":0 "@U.noun.3sg@" > SG_ ; !
 < "+Px3iSg":0 0:i 0:y 0:i 0:w "@U.noun.3isg@" > SG_ ; !
 < "+Px1Pl":0  0:i 0:n 0:â 0:n "@U.noun.1pl@"  > SG_ ;   ! exclusive Pl
-< "+Px12Pl":0 0:n 0:a 0:w     "@U.noun.12pl@" > SG_ ; ! inclusive Pl
+< "+Px12Pl":0 0:i 0:n 0:a 0:w     "@U.noun.12pl@" > SG_ ; ! inclusive Pl
 < "+Px2Pl":0  0:i 0:w 0:â 0:w "@U.noun.2pl@"  > SG_ ; !
-< "+Px3Pl":0  0:w 0:â 0:w     "@U.noun.3pl@"  > SG_ ; !
+< "+Px3Pl":0  0:i 0:w 0:â 0:w     "@U.noun.3pl@"  > SG_ ; !
 < "+Px3iPl":0 0:y 0:i 0:w     "@U.noun.3isg@" > SG_ ; ! obviative plural possessor
 
 
@@ -103,9 +105,9 @@ LEXICON IN_SUFF_PL
 < "+Px3Sg":0 "@U.noun.3sg@" > PL_A ; !
 < "+Px3iSg":0 0:i 0:y 0:i 0:w "@U.noun.3isg@" > PL_A ; !
 < "+Px1Pl":0  0:i 0:n 0:â 0:n "@U.noun.1pl@" > PL_A ;   ! exclusive Pl
-< "+Px12Pl":0 0:n 0:a 0:w     "@U.noun.12pl@" > PL_A ; ! inclusive Pl
+< "+Px12Pl":0 0:i 0:n 0:a 0:w     "@U.noun.12pl@" > PL_A ; ! inclusive Pl
 < "+Px2Pl":0  0:i 0:w 0:â 0:w "@U.noun.2pl@" > PL_A ; !
-< "+Px3Pl":0  0:w 0:â 0:w     "@U.noun.3pl@" > PL_A ; !
+< "+Px3Pl":0  0:i 0:w 0:â 0:w     "@U.noun.3pl@" > PL_A ; !
 < "+Px3iPl":0 0:y 0:i 0:w     "@U.noun.3isg@" > PL_A ; ! obviative plural possessor
 
 
@@ -202,6 +204,5 @@ LEXICON PL_AK
 LEXICON PL_WAK
 :%>wak # ;
 
-
 LEXICON LOC
-+Loc:%>i%^LChk  # ; ! taken from test
++Loc:%>i%^LChk  # ;
