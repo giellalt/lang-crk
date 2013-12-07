@@ -154,23 +154,48 @@ __w Insertion in Front of Vowel Initial Suffix after ksv c__ inserts w after k i
 Note that this rule probably is wrong, and that the -w- is
 a morphological affix rather than a phonological variant.
 
-__Stem Final n __  
+
+
+__locative alternations o__ 
+
+__locative alternations aaw 1__ (first)
+
+__locative alternations aaw 2__ (second)
+
+__locative alternations aaw 3a__ (third)
+
+__locative alternation iihk 3i__ 
+
+__locative alternation oohk io__ 
+
+__locative alternation naahk 1		__ adds nâhk after êw 1: change w to n
+
+
+__possessive prefxes__ 
+
+
+__i to a in prefixes in front of nasals__ 
+
+
+__Double consonant deletion__ 
+
+__Double vowel deletion__ 
 
 
 
+!!Rules for generating the correct surface forms of -isis the diminutive suffix
 
+__Diminutives - all stem t change to c with diminutives __ Okimasis 2004: 13, Rule 2.
 
+__Dimutives - delete suffix intital s in stems containing t __ Okimasis 2004: 13, Rule 2. The suffix is modeled as -sis, hence the first s must be delted to get ocrrect surface form is
 
+__In Vow+w final stems with Diminutives: drop w and add -sis __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
 
+__In Vow+w final stems with Diminutives: if vowel is short -> lengthen vowel __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
 
+__Diminutives rule change ending to os with k-final stems 1 __ Okimasis 2004: 14, Examples listed in 5.
 
-
-
-
-
-
-
-
+__Diminutives rule change ending to os with k-final stems 2 __ Okimasis 2004: 14, Examples listed in 5.
 
 
 
@@ -331,20 +356,16 @@ The stems
 
  LEXICON IASTEM    
  nipâ IACONJ "sleep" ;  
- mâto IACONJ "sleep" ;  
- !wâpam IACONJ "sleep" ;  ! TA? IA?
+ mâto IACONJ "sleep" ; 
  miciso IACONJ "sleep" ;  
 
  LEXICON IISTEM    
- * ozhaawashkwaa IICONJ "bleuir" ;  is Ojibwe, replace with Cree
 
 
  LEXICON TASTEM_am    
- !wâpam TACONJ_am "see" ;  " TA? IA
- * aabaji':aabaji' TACONJ_am "use s.o." ;  is Ojibwe, replace with Cree
+
 
  LEXICON TASTEM_aw    
- * aaniikanootaw:aanikanoot TACONJ_am "translate s.o." ;  is Ojibwe, replace with Cree
 
 
 
@@ -353,6 +374,8 @@ Plains Cree noun morphology
 
 !!The declinations for animates and inanimates
 
+
+Adds dimunitive suffix to stem
 
 
 
@@ -364,7 +387,6 @@ Plains Cree noun morphology
 
 
 !!The suffixes
-
 
 
 
@@ -471,6 +493,7 @@ Transitive animate (TA)
 
  * LEXICON TACONJ_am   not yet written
 
+ * LEXICON TACONJ_aw   not yet written
 
 Transitive Inanimate (TI)
 
