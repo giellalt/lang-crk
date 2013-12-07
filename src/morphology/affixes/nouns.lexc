@@ -11,17 +11,18 @@ LEXICON ANDECL
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
 +N+AN: AN_SUFF_SG ;
 +N+AN+Pl: AN_SUFF_PL ;
-+N+AN: DIM_SG ;
-+N+AN: DIM_PL ;
++N+AN:%> DIM_SG ;
++N+AN:%> DIM_PL ;
 
 LEXICON DIM_SG
 !! Adds dimunitive suffix to stem
-< "+Dim":is "+Sg":0 "@U.noun.abs@" >  SG_ ; 
+!< "+Dim":is "+Sg":0 "@U.noun.abs@" >  SG_ ; 
+< "+Dim":s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
 < "+Dim":is "+Sg":0 >  AN_SUFF_SG ; !
 
 
 LEXICON DIM_PL
-< "+Dim":is "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
+< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
 < "+Dim":is "+Pl":0 >  AN_SUFF_PL ; !
 
 
