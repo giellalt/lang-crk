@@ -40,88 +40,106 @@ Vx:0 <=> _ %>:0 :Vow ;
 !! a morphological affix rather than a phonological variant.
 0:w <=> k: %>:0 _ a k ;
  
-!!"Stem Final n" 
-!! __@RULENAME@__  !This rule is applying in places where it should not. The usefulness of this rule needs to be rethought before it is re-isntated
-!!n:0 <=> _ %>:0 Cns ; 
+!"Stem Final n" 
+! __@RULENAME@__  This rule is applying in places where it should not. The usefulness of this rule needs to be rethought before it is re-isntated
+!n:0 <=> _ %>:0 Cns ; 
 
 
 "locative alternations o"
+!! __@RULENAME@__ 
 i:o <=> k %>:0 _  %^LC:0   ;
 
 ! first
 "locative alternations aaw 1"
+!! __@RULENAME@__ (first)
 Vx:0 <=> _ [ w: | y: ] %>:0  i: %^LC:0   ;
     where Vx in ( i a o ) ;
     
 ! second
 "locative alternations aaw 2"
+!! __@RULENAME@__ (second)
 Cx:0 <=> [ a: | i: | o: ] _  %>:0  i: %^LC:0  ;
     where Cx in ( w y ) ;
 
 ! third
 "locative alternations aaw 3a"
+!! __@RULENAME@__ (third)
 i:â <=> [ ô | ê | a: ] [ w: | y: ]  %>:0  _ %^LC:0  ;
 
 "locative alternation iihk 3i"
+!! __@RULENAME@__ 
 i:î <=> i: y:  %>:0  _ %^LC:0  ;
 
 "locative alternation oohk io"
-i:ô <=> o: y:  %>:0  _ %^LC:0  ;          !change the suffix initial i to a long o 
+!! __@RULENAME@__ 
+i:ô <=> o: y:  %>:0  _ %^LC:0  ;          
+                                    !change the suffix initial i to a long o 
 									!e.g. mîcimâpoy > mîcimâpoyôhk
                                     !then delete y in second
                                     !then delete o in first
                                     
-"locative alternation naahk 1"		!adds nâhk after êw 1: change w to n
+"locative alternation naahk 1"		
+!! __@RULENAME@__ adds nâhk after êw 1: change w to n
 w:n <=> [ê|ô] _  %>:0 i: %^LC:0  ;
 
   
 "possessive prefxes"
+!! __@RULENAME@__ 
 t2:t <=> _ %>:0 Vow ;
 
 
 "i to a in prefixes in front of nasals"
+!! __@RULENAME@__ 
 i:a <=> .#. n _ %>:0 [ n | m ] i	;
 
 
 "Double consonant deletion"
+!! __@RULENAME@__ 
 Cx:0 <=> _ %>:0 Cx ;
 	where Cx in Cns ;
 
 "Double vowel deletion"
+!! __@RULENAME@__ 
 Vx:0 <=> _ %>:0 Vx ;
 	where Vx in Vow ;
 
 
 
-!!Rules for generating the correct surface forms of -isis the diminutive suffix
+!! !!Rules for generating the correct surface forms of -isis the diminutive suffix
 
-"Diminutives - all stem t change to c with diminutives" !Okimasis 2004: 13, Rule 2.
+"Diminutives - all stem t change to c with diminutives" 
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
 t:c <=> :* _ :* %^DIM:0 ;
 
-"Dimutives - delete suffix intital s in stems containing t" !Okimasis 2004: 13, Rule 2. The suffix is modeled as -sis, hence the first s must be delted to get ocrrect surface form is
+"Dimutives - delete suffix intital s in stems containing t" 
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 2. The suffix is modeled as -sis, hence the first s must be delted to get ocrrect surface form is
 s:0 <=> t:c :* %>:0 _ %^DIM:0 ;
 
-"In Vow+w final stems with Diminutives: drop w and add -sis" !Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
+"In Vow+w final stems with Diminutives: drop w and add -sis" 
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
 w:0 <=> Vow _ %>:0 s: %^DIM:0 ;
 
-"In Vow+w final stems with Diminutives: if vowel is short -> lengthen vowel" !Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
+"In Vow+w final stems with Diminutives: if vowel is short -> lengthen vowel" 
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
 [ i:î | a:â | o:ô ] <=> _ [ w:0 | y:0 ] %>:0 s: %^DIM:0 ;
 
-"Diminutives rule change ending to os with k-final stems 1" !Okimasis 2004: 14, Examples listed in 5.
+"Diminutives rule change ending to os with k-final stems 1" 
+!! __@RULENAME@__ Okimasis 2004: 14, Examples listed in 5.
 s:0 <=> k %>:0 _ %^DIM:0 ;
 
-"Diminutives rule change ending to os with k-final stems 2" !Okimasis 2004: 14, Examples listed in 5.
+"Diminutives rule change ending to os with k-final stems 2" 
+!! __@RULENAME@__ Okimasis 2004: 14, Examples listed in 5.
 i:o <=> k %>:0 s:0 %^DIM:0 _ ;
 
 
 
-!!Rules changing the form of atim when possessed ! Still considering another means of doing this
+!Rules changing the form of atim when possessed ! Still considering another means of doing this
 
 !"Change atim to item in possessed form 1"
-!!a:0 <=> %> _ t: i: m: ;
+!a:0 <=> %> _ t: i: m: ;
 
 !"Change atim to item in possessed forms 2"
-!!i:ê <=> %> a: t: _ m: ;
+!i:ê <=> %> a: t: _ m: ;
 
 
 
