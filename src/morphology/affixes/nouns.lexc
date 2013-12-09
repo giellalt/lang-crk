@@ -11,19 +11,8 @@ LEXICON ANDECL
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
 +N+AN: AN_SUFF_SG ;
 +N+AN+Pl: AN_SUFF_PL ;
-+N+AN:%> DIM_SG ;
-+N+AN:%> DIM_PL ;
-
-!! Adds dimunitive suffix to stem
-
-LEXICON DIM_SG
-< "+Dim":s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+Dim":s 0:%^DIM 0:i 0:s "+Sg":0 >  AN_SUFF_SG ;
-
-LEXICON DIM_PL
-< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
-< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 >   AN_SUFF_PL ; !
-
++N+AN:%> AN_DIM_SG ;
++N+AN:%> AN_DIM_PL ;
 
 LEXICON INDECL
 < "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
@@ -31,6 +20,30 @@ LEXICON INDECL
 < "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
 +N+IN+Sg: IN_SUFF_SG ;
 +N+IN+Pl: IN_SUFF_PL ;
++N+IN:%> IN_DIM_SG ;
++N+IN:%> IN_DIM_PL ;
+
+
+!! Adds dimunitive suffix to stem
+
+LEXICON AN_DIM_SG
+< "+Dim":s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+Dim":s 0:%^DIM 0:i 0:s "+Sg":0 >  AN_SUFF_SG ;
+
+LEXICON AN_DIM_PL
+< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
+< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 >   AN_SUFF_PL ; !
+
+LEXICON IN_DIM_SG
+< "+Dim":s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+Dim":s 0:%^DIM 0:i 0:s "+Sg":0 >  AN_SUFF_SG ;
+
+LEXICON IN_DIM_PL
+< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_A ; !
+< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 >   AN_SUFF_PL ; !
+
+
+
 
 LEXICON ANKWDECL 									 
 !!These take om as extra suffix in possessed form
