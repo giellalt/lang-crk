@@ -24,10 +24,16 @@ LEXICON INDECL
 +N+IN:%> IN_DIM_PL ;
 
 
+
 LEXICON IRREGULARDECL				!!This category is there to handle the highly irregular atim and mistatim
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_WAK ; !
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
+!+N+AN+Sg: AN_IRREG_SUFF_SG ;
++N+AN: AN_DIM_IRR_SG ;
++N+AN: AN_DIM_IRR_PL ;
+
+LEXICON IRREGULARINFL
 +N+AN+Sg: AN_IRREG_SUFF_SG ;
 +N+AN+Pl: AN_IRREG_SUFF_PL ;
 +N+AN: AN_DIM_IRR_SG ;
@@ -61,12 +67,12 @@ LEXICON IN_DIM_PL
 !!  Diminutive suffixes in animate stems taking the form -osis
 
 LEXICON AN_DIM_IRR_SG
-< "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-!< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 >   IN_SUFF_PL ; !
+!< "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Sg":0 >   AN_IRREG_SUFF_SG ; !
 
 LEXICON AN_DIM_IRR_PL
-< "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
-!< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 >   IN_SUFF_PL ; !
+!< "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_WAK ; !
+< "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Pl":0 >   AN_IRREG_SUFF_PL ; !
 
 
 !! Stem change in atim for possessed forms from atim to itêm
@@ -173,6 +179,7 @@ LEXICON INAL_SUFF_PL
                                AN_SUFF_PL ;
 
 LEXICON AN_IRREG_SUFF_SG
+
 < "+Px1Sg":0                  "@U.noun.1sg@"  > SG_ ; !
 < "+Px2Sg":0                  "@U.noun.2sg@"  > SG_ ; !
 < "+Px3Sg":0                  "@U.noun.3sg@"  > SG_ ; !
@@ -185,15 +192,15 @@ LEXICON AN_IRREG_SUFF_SG
 
 
 LEXICON AN_IRREG_SUFF_PL
-< "+Px1Sg":0                  "@U.noun.1sg@"  >  PL_WAK ; !
-< "+Px2Sg":0                  "@U.noun.2sg@"  >  PL_WAK ; !
-< "+Px3Sg":0                  "@U.noun.3sg@"  >  PL_WAK ; !
-< "+Px3iSg":0 0:i 0:y 0:i 0:w "@U.noun.3isg@" >  PL_WAK ; !obviative plural possessor, hence Pl is -a
-< "+Px1Pl":0  0:i 0:n 0:â 0:n "@U.noun.1pl@"  >  PL_WAK ;   ! exclusive Pl
-< "+Px12Pl":0 0:n 0:a 0:w     "@U.noun.12pl@" >  PL_WAK ; ! inclusive Pl
-< "+Px2Pl":0  0:i 0:w 0:â 0:w "@U.noun.2pl@"  >  PL_WAK ; !
-< "+Px3Pl":0  0:w 0:â 0:w     "@U.noun.3pl@"  >  PL_WAK ; !
-< "+Px3iPl":0 0:y 0:i 0:w     "@U.noun.3isg@" >  PL_WAK ; ! obviative plural possessor, hence Pl is -a
+< "+Px1Sg":0                  "@U.noun.1sg@"  >  PL_AK ; !
+< "+Px2Sg":0                  "@U.noun.2sg@"  >  PL_AK ; !
+< "+Px3Sg":0                  "@U.noun.3sg@"  >  PL_AK ; !
+< "+Px3iSg":0 0:i 0:y 0:i 0:w "@U.noun.3isg@" >  PL_AK ; !obviative plural possessor, hence Pl is -a
+< "+Px1Pl":0  0:i 0:n 0:â 0:n "@U.noun.1pl@"  >  PL_AK ;   ! exclusive Pl
+< "+Px12Pl":0 0:n 0:a 0:w     "@U.noun.12pl@" >  PL_AK ; ! inclusive Pl
+< "+Px2Pl":0  0:i 0:w 0:â 0:w "@U.noun.2pl@"  >  PL_AK ; !
+< "+Px3Pl":0  0:w 0:â 0:w     "@U.noun.3pl@"  >  PL_AK ; !
+< "+Px3iPl":0 0:y 0:i 0:w     "@U.noun.3isg@" >  PL_AK ; ! obviative plural possessor, hence Pl is -a
 
 
 ! Suffixes
