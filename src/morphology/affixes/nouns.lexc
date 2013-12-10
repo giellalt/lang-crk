@@ -194,12 +194,12 @@ LEXICON AN_IRREG_SUFF_SG
 LEXICON AN_IRREG_SUFF_PL
 < "+Px1Sg":0                  "@U.noun.1sg@"  >  PL_AK ; !
 < "+Px2Sg":0                  "@U.noun.2sg@"  >  PL_AK ; !
-< "+Px3Sg":0                  "@U.noun.3sg@"  >  PL_AK ; !
+< "+Px3Sg":0 "+Obv":0         "@U.noun.3sg@"  >  PL_A ; !
 < "+Px3iSg":0 0:i 0:y 0:i 0:w "@U.noun.3isg@" >  PL_AK ; !obviative plural possessor, hence Pl is -a
 < "+Px1Pl":0  0:i 0:n 0:â 0:n "@U.noun.1pl@"  >  PL_AK ;   ! exclusive Pl
 < "+Px12Pl":0 0:n 0:a 0:w     "@U.noun.12pl@" >  PL_AK ; ! inclusive Pl
 < "+Px2Pl":0  0:i 0:w 0:â 0:w "@U.noun.2pl@"  >  PL_AK ; !
-< "+Px3Pl":0  0:w 0:â 0:w     "@U.noun.3pl@"  >  PL_AK ; !
+< "+Px3Pl":0  0:w 0:â 0:w "+Obv":0    "@U.noun.3pl@"  >  PL_AK ; !
 < "+Px3iPl":0 0:y 0:i 0:w     "@U.noun.3isg@" >  PL_AK ; ! obviative plural possessor, hence Pl is -a
 
 

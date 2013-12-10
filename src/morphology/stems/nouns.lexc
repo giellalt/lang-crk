@@ -151,8 +151,8 @@ LEXICON IRREGANSTEMS
 
 LEXICON IRREGANSTEMSLIST
 atim IRREGULARDECL "dog" ;
-mistatim IRREGULARDECL "horse" ; ! mistatimwak
-itêm IRREGULARINFL "dog-possessed" ; !
+mistatim IRREGULARDECL "horse" ; ! mistatimwa
+têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 
 LEXICON ANSTEMS_kw
  :%> ANSTEMLIST_kw ;
