@@ -7,24 +7,21 @@
     on the normative subset of the morphological analyser for Plains Cree.
     The source code can be found at:
     https://victorio.uit.no/langtech/trunk/langs/crk/
-    License: GPL3+.
-    </description>
+    License: GPL3+.</description>
     <version vcsrev="GT_REVISION">GT_VERSION</version>
     <date>DATE</date>
-    <producer>giellatekno/Divvun/UiT contributors</producer>
+    <producer>Giellatekno/Divvun/UiT contributors</producer>
     <contact email="feedback@divvun.no" website="http://divvun.no"/>
   </info>
   <acceptor type="general" id="acceptor.default.hfst">
     <title>Giellatekno/Divvun/UiT dictionary Plains Cree</title>
-    <description>
-        Giellatekno/Divvun/UiT dictionary for Plains Cree compiled for HFST.
-    </description>
+    <description>Giellatekno/Divvun/UiT dictionary for
+    Plains Cree compiled for HFST.</description>
   </acceptor>
   <errmodel id="errmodel.default.hfst">
     <title>Levenshtein edit distance transducer</title>
-    <description>
-        Correction model for keyboard misstrokes, at most 2 per word.
-    </description>
+    <description>Correction model for keyboard misstrokes, at most 2 per
+    word.</description>
         <type type="default"/>
         <model>errormodel.default.hfst</model>
     </errmodel>
