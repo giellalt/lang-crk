@@ -46,6 +46,10 @@ AM_INIT_AUTOMAKE(
 )
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
+### This is the version of the GTD core that we require. Update as needed.
+### It is possible to specify also subversion revision: 0.1.2-12345
+required_gtd_core_version=0.1.0
+
 # Some software that we either depend on or we need for certain functionality:
 
 AC_ARG_ENABLE([yamltests],
@@ -96,9 +100,6 @@ AC_SUBST([GTLANG], [crk])
 # should be the ISO 639-1 two-letter code if possible, otherwise usually same
 # as above
 AC_SUBST([GTLANG2], [crk])
-
-# GTCORE env. variable is required by the 
-AC_ARG_VAR([GTCORE], [gtcore path should always be declared by gtsetup.sh])
 
 # Tests and sets up giellatekno directories and scripts
 gt_PROG_SCRIPTS_PATHS
