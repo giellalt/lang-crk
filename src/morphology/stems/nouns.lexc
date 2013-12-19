@@ -90,27 +90,27 @@ LEXICON INALIENABLE
 
 < 0:n 0:i "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k 0:i "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
-< 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
-< 0:m 0:i "@U.noun.3isg@"  > INALIENABLESTEMS ;     ! 3indef
+< 0:o     "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
+< 0:m 0:i "@U.noun.3isg@" > INALIENABLESTEMS ;     ! 3indef
 < 0:n 0:i "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@"  > INALIENABLESTEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.12pl@" > INALIENABLESTEMS ; ! inclusive Pl
 < 0:k 0:i "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
-< 0:o "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
+< 0:o     "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
 
 
 LEXICON ANSTEM_kw
 !! @LEXNAME@ is for a set of nouns that take an additional suffix in the possessive paradigm
 < "@U.noun.abs@" >  ANSTEMS_kw ;
 
-< 0:n 0:i "@U.noun.1sg@" 0:"t2" > ANSTEMLIST_kw ; ! 1
-< 0:k 0:i "@U.noun.2sg@" 0:"t2" > ANSTEMLIST_kw ; ! 2
-< 0:o "@U.noun.3sg@" 0:"t2" > ANSTEMLIST_kw ;     ! 3
-< 0:o "@U.noun.3isg@" 0:"t2" > ANSTEMLIST_kw ;    ! 3-singular-obviative
-< 0:n 0:i "@U.noun.1pl@" 0:"t2" > ANSTEMLIST_kw ;   ! exclusive Pl
+< 0:n 0:i "@U.noun.1sg@"  0:"t2" > ANSTEMLIST_kw ; ! 1
+< 0:k 0:i "@U.noun.2sg@"  0:"t2" > ANSTEMLIST_kw ; ! 2
+< 0:o     "@U.noun.3sg@"  0:"t2" > ANSTEMLIST_kw ;     ! 3
+< 0:o     "@U.noun.3isg@" 0:"t2" > ANSTEMLIST_kw ;    ! 3-singular-obviative
+< 0:n 0:i "@U.noun.1pl@"  0:"t2" > ANSTEMLIST_kw ;   ! exclusive Pl
 < 0:k 0:i "@U.noun.12pl@" 0:"t2" > ANSTEMLIST_kw ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@" 0:"t2" > ANSTEMLIST_kw ;  ! 2pl 
-< 0:o "@U.noun.3pl@" 0:"t2" > ANSTEMLIST_kw ;       ! 3pl
-< 0:o "@U.noun.3ipl@" 0:"t2" > ANSTEMLIST_kw ;       ! 3-plural-obviative
+< 0:k 0:i "@U.noun.2pl@"  0:"t2" > ANSTEMLIST_kw ;  ! 2pl 
+< 0:o     "@U.noun.3pl@"  0:"t2" > ANSTEMLIST_kw ;       ! 3pl
+< 0:o     "@U.noun.3ipl@" 0:"t2" > ANSTEMLIST_kw ;       ! 3-plural-obviative
 
 
 
@@ -152,7 +152,7 @@ LEXICON IRREGANSTEMS
 LEXICON IRREGANSTEMSLIST
 atim IRREGULARDECL "dog" ;
 mistatim IRREGULARDECL "horse" ; ! mistatimwa
-têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
+atim:têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 
 LEXICON ANSTEMS_kw
  :%> ANSTEMLIST_kw ;
