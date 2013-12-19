@@ -22,7 +22,7 @@ to the line
 atim:têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 }}}
 
-Also changed yaml file from
+Also changed the yaml file from
      
 {{tê+N+AN+Sg+Px1Pl: nitêminân}}
 
@@ -39,4 +39,54 @@ Which solution is the best one (a. rules 1, 2 vs. b. hard-code a stem in
 the lexicon) is dependent upon how general this process is. If it is
 for atim and a handful of words, then
 fine. If it is a general rule, then we should consider moving it to twolc.
+
+Judging from the comments, 
+
+
+!!Diminutives
+
+Today we do diminutives as inflection:
+
+{{{
+atim
+atim	atim+N+AN+Sg
+
+acimosis
+acimosis	atim+N+AN+Dim+Sg
+}}}
+
+This is a good thing for a regular process. But another approach would
+be to do it as derivation, partly with lexicalisation:
+
+{{{
+acimosis
+acimosis	acimosis+N+AN+Sg
+}}}
+
+One benefit of this latter solution would be to be able to build 
+dictionary entries (thus, with ''acimosis'' as an independent lemma):
+
+* dog -> atim
+* puppy -> acimosis
+* grouse -> pihêw
+* prairie chicken -> pihêsis
+
+One possibility could be to do both:
+
+# Lexicalise all diminutives needed as base forms in the bilingual dictionary
+# Have diminutiv suffixes as a regular inflectional process
+
+The result of ths would be homonymy, two analyses of the same word:
+
+{{{
+acimosis
+acimosis	atim+N+AN+Dim+Sg
+acimosis	acimosis+N+AN+Sg
+}}}
+
+This could then be handled in a further analyser, with one of two rules:
+
+* (for the morphologist): choose the +Dim form
+* (for the lexicographer): remove the +Dim form
+
 
