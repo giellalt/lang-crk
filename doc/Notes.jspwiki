@@ -6,5 +6,37 @@
 Should the verb baseforms (the form to quote as a lemma) be 3Sg (nîpaw) or should it be the stem (nîpa)? Now we have the former but Okimâsis the latter.
 
 
+!!Alternating stems for IRREGULARECL vs IRREGULARINFL
 
+! atim
+
+Quoting log message 85515:
+
+Changed	the stem têm to	atim for atim, thus from the line
+
+{{{
+têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
+}}}
+to the line
+{{{
+atim:têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
+}}}
+
+Also changed yaml file from
+     
+{{tê+N+AN+Sg+Px1Pl: nitêminân}}
+
+to
+
+{{atim+N+AN+Sg+Px1Pl: nitêminân}}
+
+Another	question is whether this is the	optimal	analysis. One could think of two rules here:
+
+# delete initial vowel whenever there is a vowel-final prefix
+# Lower -i- to -ê- in the possessive paradigm.
+
+Which solution is the best one (a. rules 1, 2 vs. b. hard-code a stem in 
+the lexicon) is dependent upon how general this process is. If it is
+for atim and a handful of words, then
+fine. If it is a general rule, then we should consider moving it to twolc.
 

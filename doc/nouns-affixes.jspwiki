@@ -1,58 +1,123 @@
 
-Plains Cree noun morphology                           
+                          !!!Plains Cree noun morphology                           
 
 !!The declinations for animates and inanimates
 
+ * LEXICON ANDECL  for the animate declension
 
-Adds dimunitive suffix to stem
-
-
-
+ * LEXICON INDECL  for the inanimate declension
 
 
 
+ * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim
 
 
-
-
-!!The suffixes
+ * LEXICON IRREGULARINFL  is also there to handle the highly irregular atim and mistatim
 
 
 
 
 
+ * LEXICON ANKWDECL  takes -om as extra suffix in possessed form
+
+ * LEXICON INALIENABLEDECL 
+
+
+
+!!Diminutive suffixes
+
+ !Diminutive suffixes in animate stems
+
+ * LEXICON AN_DIM_SG 
+
+ * LEXICON AN_DIM_PL 
+
+
+ !Diminutive suffixes in inanimate stems
+
+ * LEXICON IN_DIM_SG 
+
+ * LEXICON IN_DIM_PL 
+
+
+!Diminutive suffixes in animate stems taking the form -osis
+
+ * LEXICON AN_DIM_IRR_SG 
+
+ * LEXICON AN_DIM_IRR_PL 
+
+ * LEXICON AN_DIM_IRR_ABS 
 
 
 
 
 
+!!The inflectional suffixes
 
 
+!Possessive suffixes
+
+ * LEXICON INAL_SUFF_SG  
 
 
+ * LEXICON AN_SUFF_SG  
 
 
+ * LEXICON AN_SUFF_PL  
 
 
+ * LEXICON IN_SUFF_SG  
 
 
+ * LEXICON IN_SUFF_PL  
 
 
+ * LEXICON ANKWDECL_SUFF_SG  
 
 
+ * LEXICON ANKWDECL_SUFF_PL  
 
 
+ * LEXICON INAL_SUFF_PL  
+
+ * LEXICON AN_IRREG_SUFF_SG  
 
 
+ * LEXICON AN_IRREG_SUFF_PL  
 
 
+!Singular/plural possessed suffixes
 
 
+ * LEXICON SG_naan  
 
 
+ * LEXICON SG_waaw  
 
 
+ * LEXICON PL_naan_AK  
 
 
+ * LEXICON PL_waaw_AK  
 
 
+ * LEXICON PL_waaw_A  
+
+
+ * LEXICON SG_  
+
+
+ * LEXICON PL_A  
+
+
+ * LEXICON PL_AK  
+
+
+ * LEXICON PL_WAK  
+
+
+!Locative suffixes
+
+ * LEXICON LOC  
+
+ * LEXICON IRREG_LOC  
