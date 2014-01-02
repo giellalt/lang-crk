@@ -88,14 +88,24 @@ LEXICON INALIENABLE
 
 < "@U.noun.abs@" >  INALIENABLESTEMS ; 
 
+! I comment out this, as it does not match the yaml file for maniway
+! < 0:n 0:i "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
+! < 0:k 0:i "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
+! < 0:o     "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
+! < 0:m 0:i "@U.noun.3isg@" > INALIENABLESTEMS ;     ! 3indef
+! < 0:n 0:i "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
+! < 0:k 0:i "@U.noun.12pl@" > INALIENABLESTEMS ; ! inclusive Pl
+! < 0:k 0:i "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
+! < 0:o     "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
+
 < 0:n 0:i "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
-< 0:k 0:i "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
-< 0:o     "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
-< 0:m 0:i "@U.noun.3isg@" > INALIENABLESTEMS ;     ! 3indef
+< 0:k 0:a "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
+< 0:o 0:t 0:a    "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
+< 0:m 0:a "@U.noun.3isg@" > INALIENABLESTEMS ;     ! 3indef
 < 0:n 0:i "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
 < 0:k 0:i "@U.noun.12pl@" > INALIENABLESTEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
-< 0:o     "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
+< 0:k 0:a "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
+< 0:n 0:a  "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
 
 
 LEXICON ANSTEM_kw
