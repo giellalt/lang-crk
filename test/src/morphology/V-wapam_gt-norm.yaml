@@ -10,50 +10,51 @@ Config:
 Tests:
   
   Verb - wâpam - ok : # Ordinary IA verb - full paradigm
-     wâpam+V+IA+Ind+Prs+1Sg: niwâpam
-     wâpam+V+IA+Ind+Prs+2Sg: kiwâpam
-     wâpam+V+IA+Ind+Prs+3Sg: wâpam
-     wâpam+V+IA+Ind+Prs+3oSg: wâpamwan
-     wâpam+V+IA+Ind+Prs+3iSg: wâpamm
-     wâpam+V+IA+Ind+Prs+1Pl: niwâpammin
-     wâpam+V+IA+Ind+Prs+12Pl: kiwâpammin
-     wâpam+V+IA+Ind+Prs+2Pl: kiwâpamm
-     wâpam+V+IA+Ind+Prs+3Pl: wâpamwag
-     wâpam+V+IA+Neg+Ind+Prs+1Sg: niwâpamsiin
-     wâpam+V+IA+Neg+Ind+Prs+2Sg: kiwâpamsiin
-     wâpam+V+IA+Neg+Ind+Prs+3Sg: wâpamsiin
-     wâpam+V+IA+Neg+Ind+Prs+3oSg: wâpamsiiwan
-     wâpam+V+IA+Neg+Ind+Prs+3iSg: wâpamsiim
-     wâpam+V+IA+Neg+Ind+Prs+1Pl: niwâpamsiimin
-     wâpam+V+IA+Neg+Ind+Prs+12Pl: kiwâpamsiimin
-     wâpam+V+IA+Neg+Ind+Prs+2Pl: kiwâpamsiim
-     wâpam+V+IA+Neg+Ind+Prs+3Pl: wâpamsiiwag
+     wâpam+V+TA+Ind+Prs+1Sg+3SgO: niwâpamâw
+     wâpam+V+TA+Ind+Prs+2Sg+3SgO: kiwâpamâw
+     wâpam+V+TA+Ind+Prs+3Sg+3SgO: wâpama
+     wâpam+V+TA+Ind+Prs+3oSg+3SgO: wâpama
+     wâpam+V+TA+Ind+Prs+3iSg+3SgO: wâpama
+     wâpam+V+TA+Ind+Prs+1Pl+3SgO: niwâpamânân
+     wâpam+V+TA+Ind+Prs+12Pl+3SgO: kiwâpamânâw
+     wâpam+V+TA+Ind+Prs+2Pl+3SgO: kiwâpamâwâw
+     wâpam+V+TA+Ind+Prs+3Pl+3SgO: wâpamêwak
+     
+#     wâpam+V+TA+Neg+Ind+Prs+1Sg+3SgO: niwâpamsiin
+#     wâpam+V+TA+Neg+Ind+Prs+2Sg+3SgO: kiwâpamsiin
+#     wâpam+V+TA+Neg+Ind+Prs+3Sg+3SgO: wâpamsiin
+#     wâpam+V+TA+Neg+Ind+Prs+3oSg+3SgO: wâpamsiiwan
+#     wâpam+V+TA+Neg+Ind+Prs+3iSg+3SgO: wâpamsiim
+#     wâpam+V+TA+Neg+Ind+Prs+1Pl+3SgO: niwâpamsiimin
+#     wâpam+V+TA+Neg+Ind+Prs+12Pl+3SgO: kiwâpamsiimin
+#     wâpam+V+TA+Neg+Ind+Prs+2Pl+3SgO: kiwâpamsiim
+#     wâpam+V+TA+Neg+Ind+Prs+3Pl+3SgO: wâpamsiiwag
 
-     wâpam+V+IA+Sbj+1Sg: wâpamyân
-     wâpam+V+IA+Sbj+2Sg: wâpamyan
-     wâpam+V+IA+Sbj+3Sg: wâpamt
-     wâpam+V+IA+Sbj+3oSg: wâpamnid
-     wâpam+V+IA+Sbj+3iSg: wâpamng
-     wâpam+V+IA+Sbj+1Pl: wâpamyaang
-     wâpam+V+IA+Sbj+12Pl: wâpamyang
-     wâpam+V+IA+Sbj+2Pl: wâpamyeg
-     wâpam+V+IA+Sbj+3Pl: wâpamwaad
-     wâpam+V+IA+Neg+Sbj+1Sg: wâpamsiwaan
-     wâpam+V+IA+Neg+Sbj+2Sg: wâpamsiwan
-     wâpam+V+IA+Neg+Sbj+3Sg: wâpamsig
-     wâpam+V+IA+Neg+Sbj+3oSg: [wâpamsinid, wâpamsinig]
-     wâpam+V+IA+Neg+Sbj+3iSg: wâpamsing
-     wâpam+V+IA+Neg+Sbj+1Pl: wâpamsiwaang
-     wâpam+V+IA+Neg+Sbj+12Pl: wâpamsiwang
-     wâpam+V+IA+Neg+Sbj+2Pl: wâpamsiweg
-     wâpam+V+IA+Neg+Sbj+3Pl: wâpamsiwaa
+     wâpam+V+TA+Sbj+1Sg+3SgO: wâpamyân
+     wâpam+V+TA+Sbj+2Sg+3SgO: wâpamyan
+     wâpam+V+TA+Sbj+3Sg+3SgO: wâpamt
+     wâpam+V+TA+Sbj+3oSg+3SgO: wâpamnid
+     wâpam+V+TA+Sbj+3iSg+3SgO: wâpamng
+     wâpam+V+TA+Sbj+1Pl+3SgO: wâpamyaang
+     wâpam+V+TA+Sbj+12Pl+3SgO: wâpamyang
+     wâpam+V+TA+Sbj+2Pl+3SgO: wâpamyeg
+     wâpam+V+TA+Sbj+3Pl+3SgO: wâpamwaad
+     wâpam+V+TA+Neg+Sbj+1Sg+3SgO: wâpamsiwaan
+     wâpam+V+TA+Neg+Sbj+2Sg+3SgO: wâpamsiwan
+     wâpam+V+TA+Neg+Sbj+3Sg+3SgO: wâpamsig
+     wâpam+V+TA+Neg+Sbj+3oSg+3SgO: [wâpamsinid, wâpamsinig]
+     wâpam+V+TA+Neg+Sbj+3iSg+3SgO: wâpamsing
+     wâpam+V+TA+Neg+Sbj+1Pl+3SgO: wâpamsiwaang
+     wâpam+V+TA+Neg+Sbj+12Pl+3SgO: wâpamsiwang
+     wâpam+V+TA+Neg+Sbj+2Pl+3SgO: wâpamsiweg
+     wâpam+V+TA+Neg+Sbj+3Pl+3SgO: wâpamsiwaa
 
-     wâpam+V+IA+Imp+Imm+2Sg: wâpamn
-     wâpam+V+IA+Imp+Imm+1Pl: wâpamdaa
-     wâpam+V+IA+Imp+Imm+2Pl: [wâpamk, wâpamg]
-     wâpam+V+IA+Imp+Int+2Sg: wâpamken
-     wâpam+V+IA+Imp+Int+1Pl: wâpamsiidaa
-     wâpam+V+IA+Imp+Int+2Pl: wâpamkegon
-     wâpam+V+IA+Imp+Dur+2Sg: wâpamkan
-     wâpam+V+IA+Imp+Dur+2Pl: wâpamkeg
+     wâpam+V+TA+Imp+Imm+2Sg+3SgO: wâpamn
+     wâpam+V+TA+Imp+Imm+1Pl+3SgO: wâpamdaa
+     wâpam+V+TA+Imp+Imm+2Pl+3SgO: [wâpamk, wâpamg]
+     wâpam+V+TA+Imp+Int+2Sg+3SgO: wâpamken
+     wâpam+V+TA+Imp+Int+1Pl+3SgO: wâpamsiidaa
+     wâpam+V+TA+Imp+Int+2Pl+3SgO: wâpamkegon
+     wâpam+V+TA+Imp+Dur+2Sg+3SgO: wâpamkan
+     wâpam+V+TA+Imp+Dur+2Pl+3SgO: wâpamkeg
 
