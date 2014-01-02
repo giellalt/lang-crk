@@ -88,19 +88,19 @@ MILJON ;
 
 LEXICON TENSM
 luhkie:1%0 MILJON ;
-göökte:2   LUHKIEM ;
-golme:3    LUHKIEM ;
-njieljie:4 LUHKIEM ;
-njielje+Use/NG:4  LUHKIEM ;
-nieljie+Use/NG:4  LUHKIEM ;
- nielje+Use/NG:4  LUHKIEM ;
-vïjhte:5   LUHKIEM ;
-govhte:6   LUHKIEM ;
-tjïjhtje:7 LUHKIEM ;
-gaektsie:8 LUHKIEM ;
-uktsie:9   LUHKIEM ;
+göökte:2   TENM ;
+golme:3    TENM ;
+njieljie:4 TENM ;
+njielje+Use/NG:4  TENM ;
+nieljie+Use/NG:4  TENM ;
+ nielje+Use/NG:4  TENM ;
+vïjhte:5   TENM ;
+govhte:6   TENM ;
+tjïjhtje:7 TENM ;
+gaektsie:8 TENM ;
+uktsie:9   TENM ;
 
-LEXICON LUHKIEM
+LEXICON TENM
 luhkie:%0 MILJON ;
 luhkie:   ONESM ;
 
@@ -187,19 +187,19 @@ LEXICON LOHKAIT
 THOUSANDS ;
 
 LEXICON TENST
-göökteluhkie:2   LUHKIET ;
-golmeluhkie:3    LUHKIET ;
-njieljieluhkie:4 LUHKIET ;
-njieljeluhkie+Use/NG:4  LUHKIET ;
-nieljieluhkie+Use/NG:4  LUHKIET ;
- nieljeluhkie+Use/NG:4  LUHKIET ;
-vïjhteluhkie:5   LUHKIET ;
-govhteluhkie:6   LUHKIET ;
-tjïjhtjeluhkie:7 LUHKIET ;
-gaektsieluhkie:8 LUHKIET ;
-uktsieluhkie:9   LUHKIET ;
+göökteluhkie:2   TENT ;
+golmeluhkie:3    TENT ;
+njieljieluhkie:4 TENT ;
+njieljeluhkie+Use/NG:4  TENT ;
+nieljieluhkie+Use/NG:4  TENT ;
+ nieljeluhkie+Use/NG:4  TENT ;
+vïjhteluhkie:5   TENT ;
+govhteluhkie:6   TENT ;
+tjïjhtjeluhkie:7 TENT ;
+gaektsieluhkie:8 TENT ;
+uktsieluhkie:9   TENT ;
 
-LEXICON LUHKIET
+LEXICON TENT
 :%0 THOUSANDS ;
 akte:1 THOUSANDS ;
 ONEST ;
@@ -279,19 +279,19 @@ luhkie:1 ONES ;
 LEXICON TENS
 luhkie:1%0 COMMA ;
 låhkede:1%0%. COMMA ;
-göökte:2 LUHKIE ;
-golme:3 LUHKIE ;
-njieljie:4 LUHKIE ;
-njielje+Use/NG:4 LUHKIE ;
-nieljie+Use/NG:4 LUHKIE ;
-nielje+Use/NG:4 LUHKIE ;
-vïjhte:5 LUHKIE ;
-govhte:6 LUHKIE ;
-tjïjhtje:7 LUHKIE ;
-gaektsie:8 LUHKIE ;
-uktsie:9 LUHKIE ;
+göökte:2 TEN ;
+golme:3 TEN ;
+njieljie:4 TEN ;
+njielje+Use/NG:4 TEN ;
+nieljie+Use/NG:4 TEN ;
+nielje+Use/NG:4 TEN ;
+vïjhte:5 TEN ;
+govhte:6 TEN ;
+tjïjhtje:7 TEN ;
+gaektsie:8 TEN ;
+uktsie:9 TEN ;
 
-LEXICON LUHKIE
+LEXICON TEN
 luhkie:%0 COMMA ;
 låhkede:%0%. COMMA ;
 luhkie: ONES ;
@@ -301,18 +301,15 @@ CARDINAL ;
 ORDINAL ;
 
 LEXICON CARDINAL
-akte:1 COMMA ;
-göökte:2 COMMA ;
-golme:3 COMMA ;
-njieljie:4 COMMA ;
-njielje+Use/NG:4 COMMA ;
-nieljie+Use/NG:4 COMMA ;  
-nielje+Use/NG:4 COMMA ; 
-vïjhte:5 COMMA ;
-govhte:6 COMMA ;
-tjïjhtje:7 COMMA ;
-gaektsie:8 COMMA ;
-uktsie:9 COMMA ;
+piyak:1 COMMA ;
+nîso:2 COMMA ;
+nisto:3 COMMA ;
+nêwo:4 COMMA ;
+niyânan:5 COMMA ;
+nikotwâsik:6 COMMA ;
+têpakohp:7 COMMA ;
+ayinânêw:8 COMMA ;
+kîkâmitâtaht:9 COMMA ;
 
 LEXICON ORDINAL
 voestes:1%.     COMMA ;
