@@ -40,9 +40,9 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 +Pron       !!= * @CODE@ 
 +Num        !!= * @CODE@ 
 
-+Loc        !!= * @CODE@ 
++Loc        !!= * @CODE@ Locative
 
-+Dim
++Dim     !!= * @CODE@ Diminutive
 
 !! Verbal MSP
 +Prs  !!= * @CODE@ 
@@ -50,13 +50,13 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 +Prt  !!= * @CODE@ 
 +Prf  !!= * @CODE@ 
 
-+Ind  !!= * @CODE@ 
++Ind  !!= * @CODE@ Indicative, aka Independent
 +Imp  !!= * @CODE@ Imperative
-+Sbj  !!= * @CODE@ Subjunctive
-+Imm  !!= * @CODE@ Immediate,
++Sbj  !!= * @CODE@ Subjunctive, aka Conjunct mode, ê-
++Cond  !!= * @CODE@ TODO: Should Future Conditional be tagget Fut only?
 
-+Int  !!= * @CODE@ Interdiction,
-+Dur  !!= * @CODE@ Durative
++Int  !!= * @CODE@ Interdiction, Ojibwe?
++Dur  !!= * @CODE@ Durative, Ojibwe?
 
 +1Sg    !!= * @CODE@ first singular
 +2Sg    !!= * @CODE@ etc
