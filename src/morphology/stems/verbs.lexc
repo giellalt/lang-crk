@@ -97,7 +97,43 @@ IISTEM ;
 !     ==================
 
 LEXICON TA  !!= @CODE@ is still not written
- TASTEM_am ;
+
+   TA_INDEPENDENT ;
+:ê TA_SUBJUNCTIV ;
+   TA_IMPERATIV ;
+
+LEXICON TA_INDEPENDENT
+
+< 0:n 0:i "@U.verb.ind1sg@" > TASTEM ; !"
+< 0:k 0:i "@U.verb.ind2sg@" > TASTEM ; !"
+
+< "@U.verb.ind3sg@" >  TASTEM ; !"
+< "@U.verb.ind3osg@" > TASTEM ; !"
+
+< 0:n 0:i "@U.verb.ind1pl@" > TASTEM ;   ! exclusive Pl
+< 0:k 0:i "@U.verb.ind12pl@" > TASTEM ;   ! inclusive Pl
+< 0:k 0:i "@U.verb.ind2pl@" > TASTEM ;   !"
+< "@U.verb.ind3pl@" > TASTEM ; !"
+< "@U.verb.ind3opl@" > TASTEM ; !"
+
+LEXICON TA_SUBJUNCTIV 
+@U.verb.sbj1sg@ TASTEM ;
+@U.verb.sbj2sg@ TASTEM ;
+@U.verb.sbj3sg@ TASTEM ;
+@U.verb.sbj3osg@ TASTEM ;
+
+@U.verb.sbj1pl@  TASTEM ;   ! exclusive Pl
+@U.verb.sbj12pl@  TASTEM ; ! inclusive Pl
+@U.verb.sbj2pl@  TASTEM ;   
+@U.verb.sbj3pl@ TASTEM ;
+@U.verb.sbj3opl@ TASTEM ;
+
+
+LEXICON TA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
+@U.verb.imp2sg@  TASTEM ;
+@U.verb.imp1pl@  TASTEM ;   ! exclusive Pl
+@U.verb.imp2pl@  TASTEM ;   
+
  TASTEM_aw ;
 
 
@@ -120,9 +156,9 @@ LEXICON IISTEM   !!= @CODE@
 mispon IICONJ "it is snowing" ;
 
 
-LEXICON TASTEM_am   !!= @CODE@ 
-wâpam TACONJ_am "see" ;
-
+LEXICON TASTEM   !!= @CODE@ 
+wâpam TACONJ "see" ;
+wicih TACONJ "hepp" ;
 
 LEXICON TASTEM_aw   !!= @CODE@ 
 atoskaw	TACONJ_aw "work for him/her" ;
