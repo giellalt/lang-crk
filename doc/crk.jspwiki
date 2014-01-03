@@ -36,8 +36,9 @@ POS
  * +Pron        
  * +Num         
 
- * +Loc         
+ * +Loc         Locative
 
+ * +Dim      Diminutive
 
 Verbal MSP
  * +Prs   
@@ -45,13 +46,13 @@ Verbal MSP
  * +Prt   
  * +Prf   
 
- * +Ind   
+ * +Ind   Indicative, aka Independent
  * +Imp   Imperative
- * +Sbj   Subjunctive
- * +Imm   Immediate,
+ * +Sbj   Subjunctive, aka Conjunct mode, ê-
+ * +Cond   TODO: Should Future Conditional be tagget Fut only?
 
- * +Int   Interdiction,
- * +Dur   Durative
+ * +Int   Interdiction, Ojibwe?
+ * +Dur   Durative, Ojibwe?
 
  * +1Sg     first singular
  * +2Sg     etc
@@ -293,7 +294,6 @@ possessive paradigm
 
 
 
-
 Plains Cree verb stems                           
 
 
@@ -346,6 +346,17 @@ Transitive animate
  LEXICON TA   is still not written
 
 
+
+
+
+
+
+
+
+ LEXICON TA_IMPERATIV    gives prefixes and flags for person-number in imperative
+
+
+
 Transitive inanimate
 
  !LEXICON TI   is still not written
@@ -361,8 +372,7 @@ The stems
  LEXICON IISTEM    
 
 
- LEXICON TASTEM_am    
-
+ LEXICON TASTEM    
 
  LEXICON TASTEM_aw    
 
@@ -558,7 +568,45 @@ Intransitive inanimate (II)
 
 Transitive animate (TA)
 
- * LEXICON TACONJ_am   not yet written
+ LEXICON TACONJ  splits in 3 conjugations
+
+ LEXICON TA_IND  gives prs and prt
+
+ LEXICON TA_IND_PRS  gives person suffixes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TA_SBJ  gives flag dTAcritics and directs to subjunctive person suffixes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  * LEXICON TACONJ_aw   not yet written
 
