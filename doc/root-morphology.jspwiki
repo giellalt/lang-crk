@@ -25,8 +25,9 @@ POS
  * +Pron        
  * +Num         
 
- * +Loc         
+ * +Loc         Locative
 
+ * +Dim      Diminutive
 
 Verbal MSP
  * +Prs   
@@ -34,13 +35,13 @@ Verbal MSP
  * +Prt   
  * +Prf   
 
- * +Ind   
+ * +Ind   Indicative, aka Independent
  * +Imp   Imperative
- * +Sbj   Subjunctive
- * +Imm   Immediate,
+ * +Sbj   Subjunctive, aka Conjunct mode, ê-
+ * +Cond   TODO: Should Future Conditional be tagget Fut only?
 
- * +Int   Interdiction,
- * +Dur   Durative
+ * +Int   Interdiction, Ojibwe?
+ * +Dur   Durative, Ojibwe?
 
  * +1Sg     first singular
  * +2Sg     etc
