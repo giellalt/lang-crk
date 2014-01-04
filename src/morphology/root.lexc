@@ -127,27 +127,28 @@ t2 		!!= * @CODE@  Prefix in possessives
 
 !! These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
 
+!! For indicative, there are prefixes, so here we need one
+!! flag for each person-number combination. Note that
+!! for the inverse objective conjugation, the flag refers to
+!! the __prefix__, not to the subject. So ''indsg1'' refers to either
+!! subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
-@U.verb.ind1sg@ 
-@U.verb.ind2sg@ 
-@U.verb.ind3sg@ 
-@U.verb.ind3osg@ 
-@U.verb.ind1pl@ 
-@U.verb.ind12pl@ 
-@U.verb.ind2pl@ 
-@U.verb.ind3pl@ 
-@U.verb.ind3opl@ 
+@U.verb.ind1sg@  !!= * @CODE@ 
+@U.verb.ind2sg@  !!= * @CODE@ 
+@U.verb.ind3sg@  !!= * @CODE@ 
+@U.verb.ind3osg@ !!= * @CODE@  
+@U.verb.ind1pl@  !!= * @CODE@ 
+@U.verb.ind12pl@ !!= * @CODE@  
+@U.verb.ind2pl@  !!= * @CODE@ 
+@U.verb.ind3pl@  !!= * @CODE@ 
+@U.verb.ind3opl@ !!= * @CODE@  
 
-@U.verb.sbj1sg@ 
-@U.verb.sbj2sg@ 
-@U.verb.sbj3sg@ 
-@U.verb.sbj3osg@ 
-@U.verb.sbj1pl@ 
-@U.verb.sbj12pl@ 
-@U.verb.sbj2pl@ 
-@U.verb.sbj3pl@ 
-@U.verb.sbj3opl@ 
+!! For subjunctive and future, there are no prefixes, so
+!! we only need one flag for each set, to ensure subjunctive always
+!! and only has the ê- prefix, and future always has no prefix.
 
+@U.verb.sbj@  !!= * @CODE@ Subjunctive (Conjunct)
+@U.verb.fut@  !!= * @CODE@ Future Conditional
 
 @U.verb.imp2sg@
 @U.verb.imp1pl@

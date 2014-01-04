@@ -174,6 +174,7 @@ LEXICON II_NEG_SBJ   !!= @CODE@ is negative subjunctive
 LEXICON TACONJ !!= @CODE@ splits in 3 conjugations
 +V+TA+Ind: TA_IND ;
 +V+TA+Sbj: TA_SBJ ;
++V+TA+Fut: TA_FUT ;
 +V+TA+Imp: TA_IMP ;
 
 LEXICON TA_IND !!= @CODE@ gives prs and prt
@@ -192,7 +193,7 @@ LEXICON TA_IND_PRS !!= @CODE@ gives tags for subject, flag for object, and direc
 @U.verb.ind3opl@  3oPl_O ; !
 
 
-LEXICON 1Sg_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject
+LEXICON 1Sg_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
 +1Sg+3SgO:%>âw		  # ;
 +1Sg+3PlO:%>âwak	  # ;
 +3Sg+1SgO:%>ik        # ;
@@ -255,54 +256,93 @@ LEXICON TA_IND_PRT ! Dummy lexicon
 # ;
 
 
-! This sbj business not written
-LEXICON TA_SBJ !!= @CODE@ gives flag dTAcritics and directs to subjunctive person suffixes
-@U.verb.sbj1sg@   1sgsubj_O ;
-@U.verb.sbj2sg@   2sgsubj_O ;
-@U.verb.sbj3sg@   3sgsubj_O ;
-@U.verb.sbj3osg@ 3osgsubj_O ;
-@U.verb.sbj1pl@   1plsubj_O ;
-@U.verb.sbj12pl@ 12plsubj_O ;
-@U.verb.sbj2pl@   2plsubj_O ;
-@U.verb.sbj3pl@   3plsubj_O ;
-@U.verb.sbj3opl@ 3oplsubj_O ;
+LEXICON TA_SBJ !!= @CODE@ gives flag diacritic and directs to subjunctive person suffixes
+@U.verb.sbj@ TA_SBJ_SUF ;
 
-LEXICON 1sgsubj_O
-    +1Sg:%>yân #;
-!+Neg+1Sg:%>siwaan  # ;
+LEXICON TA_SBJ_SUF !!= @CODE@ gives subj + obj tag and suf
 
-LEXICON 2sgsubj_O
-    +2Sg:%>yan	#;
-!+Neg+2Sg:%>siwan   # ;
++1Sg+3SgO:%>ak		   # ;
++1Sg+3PlO:%>akik	   # ;
 
-LEXICON 3sgsubj_O
-    +3Sg:%>t	#;
-!+Neg+3Sg:%>sig	   # ;
++1Pl+3SgO:%>âyâhk	   # ;
++1Pl+3PlO:%>âyâhkik	   # ;
 
-LEXICON 3osgsubj_O
-    +3oSg:%>yit #;
-!+Neg+3oSg:%>sinid  # ;
-!+Neg+3oSg:%>sinig  # ;
++12Pl+3SgO:%>âyâhk	   # ;
++12Pl+3PlO:%>âyâhkok   # ;
 
-LEXICON 1plsubj_O 
-    +1Pl:%>yâhk #;
-+Neg+1Pl:%>siwaang # ;
++2Sg+3SgO:%>at		   # ;
++2Sg+3PlO:%>acik	   # ;
++2Pl+3SgO:%>âyêk	   # ;
++2Pl+3PlO:%>âyêkok	   # ;
 
-LEXICON 12plsubj_O
-    +12Pl:%>yahk #;
-+Neg+12Pl:%>siwang # ;
++3Sg+3oPlO:%>ikocik	   # ;
++3Sg+3SgO:%>ât		   # ;
++3Sg+3PlO:%>ât		   # ;
++3Sg+2SgO:%>isk		   # ;
++3Sg+2PlO:%>ikoyêk	   # ;
++3Sg+1SgO:%>it		   # ;
++3Sg+1PlO:%>ikoyâhk	   # ;
++3Sg+12PlO:%>ikoyahk   # ;
 
-LEXICON 2plsubj_O 
-    +2Pl:%>nyêk #;
-!+Neg+2Pl:%>siweg   # ;
++3Pl+3oPlO:%>ikocik	   # ;
++3Pl+3SgO:%>âcik	   # ;
++3Pl+3PlO:%>âcik	   # ;
++3Pl+2SgO:%>iskik	   # ;
++3Pl+2PlO:%>ikoyêkok   # ;
++3Pl+1SgO:%>icik	   # ;
++3Pl+1PlO:%>ikoyâhkik  # ;
++3Pl+12PlO:%>ikoyâhkok # ;
 
-LEXICON 3plsubj_O 
-    +3Pl:%>cik #;
-!+Neg+3Pl:%>siwaa   # ;
++3oSg+3oSgO:%>koyit	   # ;
++3oSg+3oPlO:%>ikoyit   # ;
++3oSg+3SgO:%>kot	   # ;
++3oSg+3SgO:%>ikot	   # ;
++3oSg+3PlO:%>ikocik	   # ;
 
-LEXICON 3oplsubj_O 
-    +3oPl:%>yit #;
-!+Neg+3Pl:%>siwaa   # ;
++3oPl+3oSgO:%>koyit	   # ;
++3oPl+3oPlO:%>ikoyit   # ;
++3oPl+3SgO:%>kot	   # ;
++3oPl+3SgO:%>ikot	   # ;
++3oPl+3PlO:%>ikocik	   # ;
+
+
+LEXICON TA_FUT !!= @CODE@ gives flag diacritic and directs to subjunctive person suffixes
+@U.verb.fut@ TA_FUT_SUF ;
+
+
+LEXICON TA_FUT_SUF
+
++1Sg+3SgO:%>aki		   # ;
++1Sg+3PlO:%>akwâwi	   # ;
++1Pl+3SgO:%>âyâhki	   # ;
++1Pl+3PlO:%>âyâhkwâwi  # ;
++12Pl+3SgO:%>âyâhko	   # ;
++12Pl+3PlO:%>âyâhkwâwi # ;
+
++2Sg+3SgO:%>aci		   # ;
++2Sg+3PlO:%>atwâwi	   # ;
++2Pl+3SgO:%>âyêko	   # ;
++2Pl+3PlO:%>âyêkwâwi   # ;
+					   
++3Sg+3oSgO:%>âyici	   # ;
++3Sg+3SgO:%>âci		   # ;
++3Sg+3PlO:%>ikotwâwi   # ;
++3Sg+2SgO:%>iski	   # ;
++3Sg+2PlO:%>ikoyêko	   # ;
++3Sg+1SgO:%>ici		   # ;
++3Sg+1PlO:%>ikoyâhki   # ;
++3Sg+12PlO:%>ikoyahko  # ;
+					   
++3Pl+3SgO:%>âtwâwi	   # ;
++3Pl+3PlO:%>âtwâwi	   # ;
++3Pl+3PlO:%>ikotwâwi   # ;
+					   
++3oSg+3oPlO:%>ikoyici  # ;
++3oSg+3SgO:%>ikoci	   # ;
++3oSg+3PlO:%>âyici	   # ;
++3oPl+3oPlO:%>ikoyici  # ;
++3oPl+3SgO:%>ikoci	   # ;
++3oPl+3PlO:%>âyici	   # ;
 
 
 LEXICON TA_IMP
