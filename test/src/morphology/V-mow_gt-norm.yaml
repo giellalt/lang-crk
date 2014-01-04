@@ -9,82 +9,126 @@ Config:
 
 Tests:
   
-  Verb - mow - eat : # Ordinary TA verb - full paradigm
+  Verb - mow - help : # Ordinary TA verb - full paradigm
      mow+V+TA+Ind+Prs+1Sg+3SgO: nimowâw
      mow+V+TA+Ind+Prs+2Sg+3SgO: kimowâw
-     mow+V+TA+Ind+Prs+3Sg+3SgO: mowêw
-     mow+V+TA+Ind+Prs+3oSg+3SgO: mowêyiwa
+     mow+V+TA+Ind+Prs+3Sg+3SgO: [mowêw, mowik, mowkow]
+     mow+V+TA+Ind+Prs+3oSg+3SgO: [mowêyiwa, mowikoyiwa]
+
      mow+V+TA+Ind+Prs+1Pl+3SgO: nimowânân
      mow+V+TA+Ind+Prs+12Pl+3SgO: kimowânaw
      mow+V+TA+Ind+Prs+2Pl+3SgO: kimowâwâw
-     mow+V+TA+Ind+Prs+3Pl+3SgO: mowêwak
+     mow+V+TA+Ind+Prs+3Pl+3SgO: [mowêwak, mowkow]
      mow+V+TA+Ind+Prs+3oPl+3SgO: mowêyiwa
 
      mow+V+TA+Ind+Prs+1Sg+3PlO: nimowâwak
      mow+V+TA+Ind+Prs+2Sg+3PlO: kimowâwak
-     mow+V+TA+Ind+Prs+3Sg+3PlO: mowêw
+     mow+V+TA+Ind+Prs+3Sg+3PlO: [mowêw, mowikowak, mowikak]
      mow+V+TA+Ind+Prs+3oSg+3PlO: mowêyiwa
+     mow+V+TA+Ind+Prs+3oSg+3oPlO: mowikoyiwa
+
      mow+V+TA+Ind+Prs+1Pl+3PlO: nimowânânak
      mow+V+TA+Ind+Prs+12Pl+3PlO: kimowânawak
      mow+V+TA+Ind+Prs+2Pl+3PlO: kimowâwâwak
+     mow+V+TA+Ind+Prs+3Pl+3PlO: mowikowak
      mow+V+TA+Ind+Prs+3Pl+3PlO: mowêwak
      mow+V+TA+Ind+Prs+3oPl+3PlO: mowêyiwa
-     
-#     mow+V+TA+Sbj+Prs+1Sg+3SgO: nimowâw
-#     mow+V+TA+Sbj+Prs+2Sg+3SgO: kimowâw
-#     mow+V+TA+Sbj+Prs+3Sg+3SgO: mowêw
-#     mow+V+TA+Sbj+Prs+3oSg+3SgO: mowêyiwa
-#     mow+V+TA+Sbj+Prs+1Pl+3SgO: nimowânân
-#     mow+V+TA+Sbj+Prs+12Pl+3SgO: kimowânaw
-#     mow+V+TA+Sbj+Prs+2Pl+3SgO: kimowâwâw
-#     mow+V+TA+Sbj+Prs+3Pl+3SgO: mowêwak
-#     mow+V+TA+Sbj+Prs+3oPl+3SgO: mowêyiwa
-#
-#     mow+V+TA+Sbj+Prs+1Sg+3PlO: nimowâwak
-#     mow+V+TA+Sbj+Prs+2Sg+3PlO: kimowâwak
-#     mow+V+TA+Sbj+Prs+3Sg+3PlO: mowêw
-#     mow+V+TA+Sbj+Prs+3oSg+3PlO: mowêyiwa
-#     mow+V+TA+Sbj+Prs+1Pl+3PlO: nimowânânak
-#     mow+V+TA+Sbj+Prs+12Pl+3PlO: kimowânawak
-#     mow+V+TA+Sbj+Prs+2Pl+3PlO: kimowâwâwak
-#     mow+V+TA+Sbj+Prs+3Pl+3PlO: mowêwak
-#     mow+V+TA+Sbj+Prs+3oPl+3PlO: mowêyiwa
-     
-#     mow+V+TA+Neg+Ind+Prs+1Sg+3SgO: nimowsiin
-#     mow+V+TA+Neg+Ind+Prs+2Sg+3SgO: kimowsiin
-#     mow+V+TA+Neg+Ind+Prs+3Sg+3SgO: mowsiin
-#     mow+V+TA+Neg+Ind+Prs+3oSg+3SgO: mowsiiwan
-#     mow+V+TA+Neg+Ind+Prs+3iSg+3SgO: mowsiim
-#     mow+V+TA+Neg+Ind+Prs+1Pl+3SgO: nimowsiimin
-#     mow+V+TA+Neg+Ind+Prs+12Pl+3SgO: kimowsiimin
-#     mow+V+TA+Neg+Ind+Prs+2Pl+3SgO: kimowsiim
-#     mow+V+TA+Neg+Ind+Prs+3Pl+3SgO: mowsiiwag
 
-#     mow+V+TA+Sbj+1Sg+3SgO: mowyân
-#     mow+V+TA+Sbj+2Sg+3SgO: mowyan
-#     mow+V+TA+Sbj+3Sg+3SgO: mowt
-#     mow+V+TA+Sbj+3oSg+3SgO: mownid
-#     mow+V+TA+Sbj+3iSg+3SgO: mowng
-#     mow+V+TA+Sbj+1Pl+3SgO: mowyaang
-#     mow+V+TA+Sbj+12Pl+3SgO: mowyang
-#     mow+V+TA+Sbj+2Pl+3SgO: mowyeg
-#     mow+V+TA+Sbj+3Pl+3SgO: mowwaad
-#     mow+V+TA+Neg+Sbj+1Sg+3SgO: mowsiwaan
-#     mow+V+TA+Neg+Sbj+2Sg+3SgO: mowsiwan
-#     mow+V+TA+Neg+Sbj+3Sg+3SgO: mowsig
-#     mow+V+TA+Neg+Sbj+3oSg+3SgO: [mowsinid, mowsinig]
-#     mow+V+TA+Neg+Sbj+3iSg+3SgO: mowsing
-#     mow+V+TA+Neg+Sbj+1Pl+3SgO: mowsiwaang
-#     mow+V+TA+Neg+Sbj+12Pl+3SgO: mowsiwang
-#     mow+V+TA+Neg+Sbj+2Pl+3SgO: mowsiweg
-#     mow+V+TA+Neg+Sbj+3Pl+3SgO: mowsiwaa
-#
-#     mow+V+TA+Imp+Imm+2Sg+3SgO: mown
-#     mow+V+TA+Imp+Imm+1Pl+3SgO: mowdaa
-#     mow+V+TA+Imp+Imm+2Pl+3SgO: [mowk, mowg]
-#     mow+V+TA+Imp+Int+2Sg+3SgO: mowken
-#     mow+V+TA+Imp+Int+1Pl+3SgO: mowsiidaa
-#     mow+V+TA+Imp+Int+2Pl+3SgO: mowkegon
-#     mow+V+TA+Imp+Dur+2Sg+3SgO: mowkan
-#     mow+V+TA+Imp+Dur+2Pl+3SgO: mowkeg
+     mow+V+TA+Ind+Prs+3Sg+1SgO: nimowik
+     mow+V+TA+Ind+Prs+3Sg+2SgO: kimowik
+     mow+V+TA+Ind+Prs+3Sg+1PlO: nimowikonân
+     mow+V+TA+Ind+Prs+3Sg+12PlO: kimowikonaw
+     mow+V+TA+Ind+Prs+3Sg+2PlO: kimowikowâw
+     
+     mow+V+TA+Ind+Prs+3Pl+1SgO: nimowikwak
+     mow+V+TA+Ind+Prs+3Pl+2SgO: kimowikwak
+     mow+V+TA+Ind+Prs+3Pl+1PlO: nimowikonânak
+     mow+V+TA+Ind+Prs+3Pl+12PlO: kimowikonawak
+     mow+V+TA+Ind+Prs+3Pl+2PlO: kimowikowâwak
+
+
+
+
+     
+     
+     
+     mow+V+TA+Sbj+1Sg+3SgO: ê-mowak
+     mow+V+TA+Sbj+1Sg+3PlO: ê-mowakik
+     mow+V+TA+Sbj+1Pl+3SgO: ê-mowâyâhk
+     mow+V+TA+Sbj+1Pl+3PlO: ê-mowâyâhkik
+     mow+V+TA+Sbj+12Pl+3SgO: ê-mowâyâhk
+     mow+V+TA+Sbj+12Pl+3PlO: ê-mowâyâhkok
+     
+     mow+V+TA+Sbj+2Sg+3SgO: ê-mowat
+     mow+V+TA+Sbj+2Sg+3PlO: ê-mowacik
+     mow+V+TA+Sbj+2Pl+3SgO: ê-mowâyêk
+     mow+V+TA+Sbj+2Pl+3PlO: ê-mowâyêkok
+
+     mow+V+TA+Sbj+3Pl+3oPlO: ê-mowikocik
+     mow+V+TA+Sbj+3Pl+3SgO: ê-mowâcik
+     mow+V+TA+Sbj+3Pl+3PlO: ê-mowâcik
+     mow+V+TA+Sbj+3Pl+2SgO: ê-mowiskik
+     mow+V+TA+Sbj+3Pl+2PlO: ê-mowikoyêkok
+     mow+V+TA+Sbj+3Pl+1SgO: ê-mowicik
+     mow+V+TA+Sbj+3Pl+1PlO: ê-mowikoyâhkik
+     mow+V+TA+Sbj+3Pl+12PlO: ê-mowikoyâhkok
+
+     mow+V+TA+Sbj+3Sg+3oPlO: ê-mowikocik
+     mow+V+TA+Sbj+3Sg+3SgO: ê-mowât
+     mow+V+TA+Sbj+3Sg+3PlO: ê-mowât
+     mow+V+TA+Sbj+3Sg+2SgO: ê-mowisk
+     mow+V+TA+Sbj+3Sg+2PlO: ê-mowikoyêk
+     mow+V+TA+Sbj+3Sg+1SgO: ê-mowit
+     mow+V+TA+Sbj+3Sg+1PlO: ê-mowikoyâhk
+     mow+V+TA+Sbj+3Sg+12PlO: ê-mowikoyahk
+
+     mow+V+TA+Sbj+3oPl+3oSgO: ê-mowkoyit
+     mow+V+TA+Sbj+3oPl+3oPlO: ê-mowikoyit
+     mow+V+TA+Sbj+3oPl+3SgO: ê-mowkot
+     mow+V+TA+Sbj+3oPl+3SgO: ê-mowikot
+     mow+V+TA+Sbj+3oPl+3PlO: ê-mowikocik
+
+     mow+V+TA+Sbj+3oSg+3oSgO: ê-mowkoyit
+     mow+V+TA+Sbj+3oSg+3oPlO: ê-mowikoyit
+     mow+V+TA+Sbj+3oSg+3SgO: ê-mowkot
+     mow+V+TA+Sbj+3oSg+3SgO: ê-mowikot
+     mow+V+TA+Sbj+3oSg+3PlO: ê-mowikocik
+
+
+     mow+V+TA+Fut+1Sg+3SgO: mowaki
+     mow+V+TA+Fut+1Sg+3PlO: mowakwâwi
+     mow+V+TA+Fut+1Pl+3SgO: mowâyâhki
+     mow+V+TA+Fut+1Pl+3PlO: mowâyâhkwâwi
+     mow+V+TA+Fut+12Pl+3SgO: mowâyâhko
+     mow+V+TA+Fut+12Pl+3PlO: mowâyâhkwâwi
+
+     mow+V+TA+Fut+2Sg+3SgO: mowaci
+     mow+V+TA+Fut+2Sg+3PlO: mowatwâwi
+     mow+V+TA+Fut+2Pl+3SgO: mowâyêko
+     mow+V+TA+Fut+2Pl+3PlO: mowâyêkwâwi
+
+     mow+V+TA+Fut+3Sg+3SgO: mowâci
+     mow+V+TA+Fut+3Sg+3oSgO: mowâyici
+     mow+V+TA+Fut+3Sg+3PlO: mowikotwâwi
+     mow+V+TA+Fut+3Sg+1SgO: mowici
+     mow+V+TA+Fut+3Sg+2SgO: mowiski
+     mow+V+TA+Fut+3Sg+1PlO: mowikoyâhki
+     mow+V+TA+Fut+3Sg+2PlO: mowikoyêko
+     mow+V+TA+Fut+3Sg+12PlO: mowikoyahko
+
+     mow+V+TA+Fut+3Pl+3SgO: mowâtwâwi
+     mow+V+TA+Fut+3Pl+3PlO: mowâtwâwi
+     mow+V+TA+Fut+3Pl+3PlO: mowikotwâwi
+
+
+     mow+V+TA+Fut+3oSg+3SgO: mowikoci
+     mow+V+TA+Fut+3oSg+3PlO: mowâyici
+     mow+V+TA+Fut+3oPl+3SgO: mowikoci
+     mow+V+TA+Fut+3oPl+3PlO: mowâyici
+     mow+V+TA+Fut+3oSg+3oPlO: mowikoyici
+     mow+V+TA+Fut+3oPl+3oPlO: mowikoyici
+
+
+
+
 
