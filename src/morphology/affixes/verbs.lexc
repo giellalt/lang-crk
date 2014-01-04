@@ -173,76 +173,81 @@ LEXICON II_NEG_SBJ   !!= @CODE@ is negative subjunctive
 
 LEXICON TACONJ !!= @CODE@ splits in 3 conjugations
 +V+TA+Ind: TA_IND ;
-+V+TA: TA_SBJ ;
-+V+TA: TA_IMP ;
++V+TA+Sbj: TA_SBJ ;
++V+TA+Imp: TA_IMP ;
 
 LEXICON TA_IND !!= @CODE@ gives prs and prt
 +Prs: TA_IND_PRS ;
 +Prt: TA_IND_PRT ;
 
 LEXICON TA_IND_PRS !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
-< "+1Sg":0  "@U.verb.ind1sg@"  > 1Sg_O ;  !"
-< "+2Sg":0  "@U.verb.ind2sg@"  > 2Sg_O ;  !"
-< "+3Sg":0  "@U.verb.ind3sg@"  > 3Sg_O ;  !"
-< "+3oSg":0 "@U.verb.ind3osg@" > 3oSg_O ; !"
-< "+1Pl":0  "@U.verb.ind1pl@"  > 1Pl_O ;  ! exclusive Pl
-< "+12Pl":0 "@U.verb.ind12pl@" > 12Pl_O ; ! inclusive Pl
-< "+2Pl":0  "@U.verb.ind2pl@"  > 2Pl_O ;  !
-< "+3Pl":0  "@U.verb.ind3pl@"  > 3Pl_O ;  !
-< "+3oPl":0 "@U.verb.ind3opl@" > 3oPl_O ; !
+@U.verb.ind1sg@   1Sg_O ;  !
+@U.verb.ind2sg@   2Sg_O ;  !
+@U.verb.ind3sg@   3Sg_O ;  !
+@U.verb.ind3osg@  3oSg_O ; !
+@U.verb.ind1pl@   1Pl_O ;  ! exclusive Pl
+@U.verb.ind12pl@  12Pl_O ; ! inclusive Pl
+@U.verb.ind2pl@   2Pl_O ;  !
+@U.verb.ind3pl@   3Pl_O ;  !
+@U.verb.ind3opl@  3oPl_O ; !
 
 
 LEXICON 1Sg_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject
-+3SgO:%>âw		  # ;
-+3PlO:%>âwak	  # ;
++1Sg+3SgO:%>âw		  # ;
++1Sg+3PlO:%>âwak	  # ;
++3Sg+1SgO:%>ik        # ;
++3Sg+1PlO:%>ik        # ;
++3Sg+1PlO:%>ikonân	  # ;
++3Pl+1SgO:%>ikwak	  # ;
 
 LEXICON 2Sg_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
-+3SgO:%>âw		  # ;
-+3PlO:%>âwak	  # ;
++2Sg+3SgO:%>âw		  # ;
++2Sg+3PlO:%>âwak	  # ;
++3Sg+2SgO:%>ik		  # ;
++3Pl+2SgO:%>ikwak	  # ;
 				  
 LEXICON 3Sg_O 	  
-+1SgO:%>ik		  # ;
-+2SgO:%>ik		  # ;
-+3SgO:%>êw		  # ;
-+3SgO:%>ik		  # ;
-+3SgO:%>ikow	  # ;
-+1PlO:%>ikonân	  # ;
-+12PlO:%>ikonaw	  # ;
-+2PlO:%>ikowâw	  # ;
-+3PlO:%>êw		  # ;
-+3PlO:%>ikowak	  # ;
-+3PlO:%>ikak	  # ;
++3Sg+3SgO:%>êw		  # ;
++3Sg+3SgO:%>ik		  # ;
++3Sg+3SgO:%>kow	  # ;
++3Sg+3PlO:%>êw		  # ;
++3Sg+3PlO:%>ikowak	  # ;
++3Sg+3PlO:%>ikak	  # ;
+
++3Pl+3SgO:%>kow	  # ;
++3Pl+3SgO:%>êwak	  # ;
 				  
 LEXICON 3oSg_O 	  
-+3SgO:%>êyiwa	  # ;
-+3oSgO:%>ikoyiwa  # ;
-				  
++3oSg+3SgO:%>êyiwa	  # ;
++3oSg+3PlO:%>êyiwa	  # ;
++3oSg+3SgO:%>ikoyiwa  # ;
++3oSg+3PlO:%>ikoyiwa  # ;
++3oSg+3oPlO:%>ikoyiwa  # ;
+
 LEXICON 1Pl_O 	  
-+3SgO:%>ânân	  # ;
-+3PlO:%>ânânak	  # ;
++1Pl+3SgO:%>ânân	  # ;
++1Pl+3PlO:%>ânânak	  # ;
++3Pl+1PlO:%>ikonânak  # ;
 				  
 LEXICON 12Pl_O 	  
-+3SgO:%>ânaw	  # ;
-+3PlO:%>ânawak	  # ;
++12Pl+3SgO:%>ânaw	  # ;
++12Pl+3PlO:%>ânawak	  # ;
++3Sg+12PlO:%>ikonaw	  # ;
++3Sg+2PlO:%>ikowâw	  # ;
++3Pl+12PlO:%>ikonawak # ;
 				  
 LEXICON 2Pl_O 	  
-+3SgO:%>âwâw	  # ;
-+3PlO:%>âwâwak	  # ;
++2Pl+3SgO:%>âwâw	  # ;
++2Pl+3PlO:%>âwâwak	  # ;
++3Pl+2PlO:%>ikowâwak  # ;
 				  
 LEXICON 3Pl_O 	  
-+1SgO:%>ikwak	  # ;
-+2SgO:%>ikwak	  # ;
-+3SgO:%>ikow	  # ;
-+3SgO:%>êwak	  # ;
-+1PlO:%>ikonânak  # ;
-+12PlO:%>ikonawak # ;
-+2PlO:%>ikowâwak  # ;
-+3PlO:%>ikowak	  # ;
-+3PlO:%>êwak	  # ;
++3Pl+3PlO:%>ikowak	  # ;
++3Pl+3PlO:%>êwak	  # ;
 				  
 LEXICON 3oPl_O 	  
-+3SgO:%>êyiwa	  # ;
-+3PlO:%>êyiwa	  # ;
++3oPl+3SgO:%>êyiwa	  # ;
++3oPl+3PlO:%>êyiwa	  # ;
 
 
 
@@ -263,41 +268,41 @@ LEXICON TA_SBJ !!= @CODE@ gives flag dTAcritics and directs to subjunctive perso
 @U.verb.sbj3opl@ 3oplsubj_O ;
 
 LEXICON 1sgsubj_O
-    +Sbj+1Sg:%>yân #;
-!+Neg+Sbj+1Sg:%>siwaan  # ;
+    +1Sg:%>yân #;
+!+Neg+1Sg:%>siwaan  # ;
 
 LEXICON 2sgsubj_O
-    +Sbj+2Sg:%>yan	#;
-!+Neg+Sbj+2Sg:%>siwan   # ;
+    +2Sg:%>yan	#;
+!+Neg+2Sg:%>siwan   # ;
 
 LEXICON 3sgsubj_O
-    +Sbj+3Sg:%>t	#;
-!+Neg+Sbj+3Sg:%>sig	   # ;
+    +3Sg:%>t	#;
+!+Neg+3Sg:%>sig	   # ;
 
 LEXICON 3osgsubj_O
-    +Sbj+3oSg:%>yit #;
-!+Neg+Sbj+3oSg:%>sinid  # ;
-!+Neg+Sbj+3oSg:%>sinig  # ;
+    +3oSg:%>yit #;
+!+Neg+3oSg:%>sinid  # ;
+!+Neg+3oSg:%>sinig  # ;
 
 LEXICON 1plsubj_O 
-    +Sbj+1Pl:%>yâhk #;
-+Neg+Sbj+1Pl:%>siwaang # ;
+    +1Pl:%>yâhk #;
++Neg+1Pl:%>siwaang # ;
 
 LEXICON 12plsubj_O
-    +Sbj+12Pl:%>yahk #;
-+Neg+Sbj+12Pl:%>siwang # ;
+    +12Pl:%>yahk #;
++Neg+12Pl:%>siwang # ;
 
 LEXICON 2plsubj_O 
-    +Sbj+2Pl:%>nyêk #;
-!+Neg+Sbj+2Pl:%>siweg   # ;
+    +2Pl:%>nyêk #;
+!+Neg+2Pl:%>siweg   # ;
 
 LEXICON 3plsubj_O 
-    +Sbj+3Pl:%>cik #;
-!+Neg+Sbj+3Pl:%>siwaa   # ;
+    +3Pl:%>cik #;
+!+Neg+3Pl:%>siwaa   # ;
 
 LEXICON 3oplsubj_O 
-    +Sbj+3oPl:%>yit #;
-!+Neg+Sbj+3Pl:%>siwaa   # ;
+    +3oPl:%>yit #;
+!+Neg+3Pl:%>siwaa   # ;
 
 
 LEXICON TA_IMP
