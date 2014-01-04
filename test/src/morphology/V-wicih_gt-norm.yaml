@@ -12,42 +12,42 @@ Tests:
   Verb - wicih - help : # Ordinary TA verb - full paradigm
      wicih+V+TA+Ind+Prs+1Sg+3SgO: niwicihâw
      wicih+V+TA+Ind+Prs+2Sg+3SgO: kiwicihâw
-     wicih+V+TA+Ind+Prs+3Sg+3SgO: wicihêw
-     wicih+V+TA+Ind+Prs+3oSg+3SgO: wicihêyiwa
+     wicih+V+TA+Ind+Prs+3Sg+3SgO: [wicihêw, wicihik, wicihkow]
+     
+     wicih+V+TA+Ind+Prs+3oSg+3SgO: [wicihêyiwa, wicihikoyiwa]
+
      wicih+V+TA+Ind+Prs+1Pl+3SgO: niwicihânân
      wicih+V+TA+Ind+Prs+12Pl+3SgO: kiwicihânaw
      wicih+V+TA+Ind+Prs+2Pl+3SgO: kiwicihâwâw
-     wicih+V+TA+Ind+Prs+3Pl+3SgO: wicihêwak
+     wicih+V+TA+Ind+Prs+3Pl+3SgO: [wicihêwak, wicihkow]
      wicih+V+TA+Ind+Prs+3oPl+3SgO: wicihêyiwa
 
      wicih+V+TA+Ind+Prs+1Sg+3PlO: niwicihâwak
      wicih+V+TA+Ind+Prs+2Sg+3PlO: kiwicihâwak
-     wicih+V+TA+Ind+Prs+3Sg+3PlO: wicihêw
+     wicih+V+TA+Ind+Prs+3Sg+3PlO: [wicihêw, wicihikowak, wicihikak]
+
      wicih+V+TA+Ind+Prs+3oSg+3PlO: wicihêyiwa
+     wicih+V+TA+Ind+Prs+3oSg+3oPlO: wicihikoyiwa
+
      wicih+V+TA+Ind+Prs+1Pl+3PlO: niwicihânânak
      wicih+V+TA+Ind+Prs+12Pl+3PlO: kiwicihânawak
      wicih+V+TA+Ind+Prs+2Pl+3PlO: kiwicihâwâwak
+
+     wicih+V+TA+Ind+Prs+3Pl+3PlO: wicihikowak
      wicih+V+TA+Ind+Prs+3Pl+3PlO: wicihêwak
      wicih+V+TA+Ind+Prs+3oPl+3PlO: wicihêyiwa
 
      wicih+V+TA+Ind+Prs+3Sg+1SgO: niwicihik
      wicih+V+TA+Ind+Prs+3Sg+2SgO: kiwicihik
-     wicih+V+TA+Ind+Prs+3Sg+3SgO: [wicihik, wicihkow]
-     wicih+V+TA+Ind+Prs+3oSg+3oSgO: wicihikoyiwa
      wicih+V+TA+Ind+Prs+3Sg+1PlO: niwicihikonân
      wicih+V+TA+Ind+Prs+3Sg+12PlO: kiwicihikonaw
      wicih+V+TA+Ind+Prs+3Sg+2PlO: kiwicihikowâw
-     wicih+V+TA+Ind+Prs+3Sg+3PlO: [wicihikowak, wicihikak]
-     wicih+V+TA+Ind+Prs+3oSg+3oPlO: wicihikoyiwa
      
      wicih+V+TA+Ind+Prs+3Pl+1SgO: niwicihikwak
      wicih+V+TA+Ind+Prs+3Pl+2SgO: kiwicihikwak
-     wicih+V+TA+Ind+Prs+3Pl+3SgO: wicihkow
      wicih+V+TA+Ind+Prs+3Pl+1PlO: niwicihikonânak
      wicih+V+TA+Ind+Prs+3Pl+12PlO: kiwicihikonawak
      wicih+V+TA+Ind+Prs+3Pl+2PlO: kiwicihikowâwak
-     wicih+V+TA+Ind+Prs+3Pl+3PlO: wicihikowak
-     wicih+V+TA+Ind+Prs+3oSg+3oPlO: wicihikoyiwa
 
      wicih+V+TA+Sbj+1Sg+3SgO: ê-niwicihak
      wicih+V+TA+Sbj+2Sg+3SgO: ê-kiwicihat
