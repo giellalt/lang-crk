@@ -69,7 +69,7 @@ Transitive animate (TA)
  LEXICON TA_IND_PRS  gives tags for subject, flag for object, and directs to obj suffs
 
 
- LEXICON 1Sg_O   gives the objects suffixes matching 1Sg subject
+ LEXICON 1Sg_O   gives the objects suffixes matching 1Sg subject or 1Sg object
 
  LEXICON 2Sg_O 	     gives the objects suffixes matching 2Sg subject
 
@@ -85,9 +85,20 @@ Transitive animate (TA)
 
 
 
- LEXICON TA_SBJ  gives flag dTAcritics and directs to subjunctive person suffixes
+ LEXICON TA_SBJ  gives flag diacritic and directs to subjunctive person suffixes
+
+ LEXICON TA_SBJ_SUF  gives subj + obj tag and suf
 
 
+
+
+
+
+
+
+
+
+ LEXICON TA_FUT  gives flag diacritic and directs to subjunctive person suffixes
 
 
 
