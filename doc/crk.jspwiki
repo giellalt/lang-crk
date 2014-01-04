@@ -121,10 +121,28 @@ Flagdiacritics
 
 These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
 
+For indicative, there are prefixes, so here we need one
+flag for each person-number combination. Note that
+for the inverse objective conjugation, the flag refers to
+the __prefix__, not to the subject. So ''indsg1'' refers to either
+subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
+ * @U.verb.ind1sg@   
+ * @U.verb.ind2sg@   
+ * @U.verb.ind3sg@   
+ * @U.verb.ind3osg@   
+ * @U.verb.ind1pl@   
+ * @U.verb.ind12pl@   
+ * @U.verb.ind2pl@   
+ * @U.verb.ind3pl@   
+ * @U.verb.ind3opl@   
 
+For subjunctive and future, there are no prefixes, so
+we only need one flag for each set, to ensure subjunctive always
+and only has the ê- prefix, and future always has no prefix.
 
-
+ * @U.verb.sbj@   Subjunctive (Conjunct)
+ * @U.verb.fut@   Future Conditional
 
 
 
@@ -358,6 +376,7 @@ Transitive animate
 
 
 
+
 Transitive inanimate
 
  !LEXICON TI   is still not written
@@ -374,6 +393,7 @@ The stems
 
 
  LEXICON TASTEM    
+
 
  LEXICON TASTEM_aw    
 
@@ -576,7 +596,7 @@ Transitive animate (TA)
  LEXICON TA_IND_PRS  gives tags for subject, flag for object, and directs to obj suffs
 
 
- LEXICON 1Sg_O   gives the objects suffixes matching 1Sg subject
+ LEXICON 1Sg_O   gives the objects suffixes matching 1Sg subject or 1Sg object
 
  LEXICON 2Sg_O 	     gives the objects suffixes matching 2Sg subject
 
@@ -592,9 +612,20 @@ Transitive animate (TA)
 
 
 
- LEXICON TA_SBJ  gives flag dTAcritics and directs to subjunctive person suffixes
+ LEXICON TA_SBJ  gives flag diacritic and directs to subjunctive person suffixes
+
+ LEXICON TA_SBJ_SUF  gives subj + obj tag and suf
 
 
+
+
+
+
+
+
+
+
+ LEXICON TA_FUT  gives flag diacritic and directs to subjunctive person suffixes
 
 
 
