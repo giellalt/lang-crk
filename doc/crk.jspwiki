@@ -129,6 +129,7 @@ These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
 
 
 
+
   LEXICON Root 		  is where it all starts
 
  * Nouns ;	              
@@ -572,9 +573,12 @@ Transitive animate (TA)
 
  LEXICON TA_IND  gives prs and prt
 
- LEXICON TA_IND_PRS  gives person suffixes
+ LEXICON TA_IND_PRS  gives tags for subject, flag for object, and directs to obj suffs
 
 
+ LEXICON 1Sg_O   gives the objects suffixes matching 1Sg subject
+
+ LEXICON 2Sg_O 	     gives the objects suffixes matching 2Sg subject
 
 
 
