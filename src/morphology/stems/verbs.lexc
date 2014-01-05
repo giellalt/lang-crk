@@ -135,9 +135,9 @@ LEXICON TA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in 
 
 
 !! !! Transitive inanimate
-!     ====================
 
-!LEXICON TI  !!= @CODE@ is still not written
+
+!LEXICON TI  != @CODE@ is still not written
 !# ;
 
 
@@ -156,9 +156,10 @@ mispon IICONJ "it is snowing" ;
 LEXICON TASTEM   !!= @CODE@ 
 wâpam TACONJ "see" ;
 wicih TACONJ "help" ;
+mow TACONJ "eat X" ;
 
 ! JO VTA-1 verbs on a-
-ahi TACONJ "place h/h" ; ! note irregular !
+ahi TACONJ "place X" ; ! note irregular !
 âhkwatisim TACONJ "freeze it" ;
 akimik TACONJ "count them" ;
 âpacih TACONJ "use it" ;
