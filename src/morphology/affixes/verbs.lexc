@@ -177,9 +177,8 @@ LEXICON TACONJ !!= @CODE@ splits in 3 conjugations
 +V+TA+Fut: TA_FUT ;
 +V+TA+Imp: TA_IMP ;
 
-LEXICON TA_IND !!= @CODE@ gives prs and prt
+LEXICON TA_IND !!= @CODE@ gives prs
 +Prs: TA_IND_PRS ;
-+Prt: TA_IND_PRT ;
 
 LEXICON TA_IND_PRS !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
 @U.verb.ind1sg@   1Sg_O ;  !
@@ -252,8 +251,8 @@ LEXICON 3oPl_O
 
 
 
-LEXICON TA_IND_PRT ! Dummy lexicon
-# ;
+!LEXICON TA_IND_PRT ! Dummy lexicon
+!# ;
 
 
 LEXICON TA_SBJ !!= @CODE@ gives flag diacritic and directs to subjunctive person suffixes
@@ -346,7 +345,27 @@ LEXICON TA_FUT_SUF
 
 
 LEXICON TA_IMP
-#;
+@U.verb.imp2sg@  2Sg_Imp ;
+@U.verb.imp1pl@  2Pl_Imp ;
+@U.verb.imp2pl@ 12Pl_Imp ;
+
+LEXICON 2Sg_Imp
+    +2Sg+3SgO: # ;
+    +2Sg+3PlO:%>ik # ;
++Del+2Sg+3SgO:%>âhkan # ;
++Del+2Sg+3PlO:%>âhkanik # ;
+
+LEXICON 2Pl_Imp
+    +2Pl+3SgO:%>ihk # ;
+    +2Pl+3PlO:%>ihkok # ;
++Del+2Pl+3SgO:%>âhkêk # ;
++Del+2Pl+3PlO:%>âhkêkok # ;
+
+LEXICON 12Pl_Imp
+    +12Pl+3SgO:%>âtân # ;
+    +12Pl+3PlO:%>âtânik # ;
++Del+12Pl+3SgO:%>âhkahk # ;
++Del+12Pl+3PlO:%>âhkahkok # ;
 
 
 
