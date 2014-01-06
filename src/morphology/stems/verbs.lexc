@@ -66,16 +66,19 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 < "@U.verb.ind3opl@" > IASTEM ; !"
 
 LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
-@U.verb.sbj1sg@ IASTEM ;
-@U.verb.sbj2sg@ IASTEM ;
-@U.verb.sbj3sg@ IASTEM ;
-@U.verb.sbj3osg@ IASTEM ;
+@U.verb.sbj@ IASTEM ;
 
-@U.verb.sbj1pl@  IASTEM ;   ! exclusive Pl
-@U.verb.sbj12pl@  IASTEM ; ! inclusive Pl
-@U.verb.sbj2pl@  IASTEM ;   
-@U.verb.sbj3pl@ IASTEM ;
-@U.verb.sbj3opl@ IASTEM ;
+
+!@U.verb.sbj1sg@ IASTEM ;
+!@U.verb.sbj2sg@ IASTEM ;
+!@U.verb.sbj3sg@ IASTEM ;
+!@U.verb.sbj3osg@ IASTEM ;
+!
+!@U.verb.sbj1pl@  IASTEM ;   ! exclusive Pl
+!@U.verb.sbj12pl@  IASTEM ; ! inclusive Pl
+!@U.verb.sbj2pl@  IASTEM ;   
+!@U.verb.sbj3pl@ IASTEM ;
+!@U.verb.sbj3opl@ IASTEM ;
 
 
 LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
@@ -105,17 +108,9 @@ LEXICON TA  !!= @CODE@ is still not written
 
 LEXICON TA_INDEPENDENT
 
-< 0:n 0:i "@U.verb.ind1sg@" > TASTEM ; !"
-< 0:k 0:i "@U.verb.ind2sg@" > TASTEM ; !"
-
-< "@U.verb.ind3sg@" >  TASTEM ; !"
-< "@U.verb.ind3osg@" > TASTEM ; !"
-
-< 0:n 0:i "@U.verb.ind1pl@" > TASTEM ;   ! exclusive Pl
-< 0:k 0:i "@U.verb.ind12pl@" > TASTEM ;   ! inclusive Pl
-< 0:k 0:i "@U.verb.ind2pl@" > TASTEM ;   !"
-< "@U.verb.ind3pl@" > TASTEM ; !"
-< "@U.verb.ind3opl@" > TASTEM ; !"
+< 0:n 0:i "@U.verb.NI@" > TASTEM ; !"
+< 0:k 0:i "@U.verb.KI@" > TASTEM ; !"
+<         "@U.verb.NULL@" >  TASTEM ; !"
 
 LEXICON TA_SUBJUNCTIV 
 @U.verb.sbj@ TASTEM ;
@@ -125,13 +120,17 @@ LEXICON TA_FUTURE
 
 
 LEXICON TA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
-@U.verb.imp2sg@  TASTEM ;
-@U.verb.imp1pl@  TASTEM ;   ! exclusive Pl
-@U.verb.imp2pl@  TASTEM ;   
+@U.verb.NULL@  TASTEM ;
+@U.verb.NULL@  TASTEM ;   ! exclusive Pl
+@U.verb.NULL@  TASTEM ;   
+
+!@U.verb.imp2sg@  TASTEM ;
+!@U.verb.imp1pl@  TASTEM ;   ! exclusive Pl
+!@U.verb.imp2pl@  TASTEM ;   
+
+
 
    TA_FUTURE ;
-
- TASTEM_aw ;
 
 
 !! !! Transitive inanimate
@@ -154,25 +153,24 @@ mispon IICONJ "it is snowing" ;
 
 
 LEXICON TASTEM   !!= @CODE@ 
-wâpam TACONJ "see" ;
-wicih TACONJ "help" ;
-mow TACONJ "eat X" ;
+
+wâpam TACONJ_1 "see" ;
+wicih TACONJ_1 "help" ;
+mow TACONJ_1 "eat X" ;
 
 ! JO VTA-1 verbs on a-
-ahi TACONJ "place X" ; ! note irregular !
-âhkwatisim TACONJ "freeze it" ;
-akimik TACONJ "count them" ;
-âpacih TACONJ "use it" ;
-asam TACONJ "feed X" ;
-asên TACONJ "refuse X" ;
-asênamaw TACONJ "return X to Y" ;
-askowêh TACONJ "follow X" ;
-atoskah TACONJ "hire X" ;
-awih TACONJ "loan X to Y" ;
-ayâw TACONJ "have X" ;
-
-LEXICON TASTEM_aw   !!= @CODE@ 
-atoskaw	TACONJ_aw "work for him/her" ;
-
+ahi TACONJ_1 "place X" ; ! note irregular !
+âhkwatisim TACONJ_1 "freeze it" ;
+akimik TACONJ_1 "count them" ;
+âpacih TACONJ_1 "use it" ;
+asam TACONJ_1 "feed X" ;
+asên TACONJ_1 "refuse X" ;
+asênamaw TACONJ_1 "return X to Y" ;
+askowêh TACONJ_1 "follow X" ;
+atoskah TACONJ_1 "hire X" ;
+awih TACONJ_1 "loan X to Y" ;
+ayâw TACONJ_1 "have X" ;
+atoskaw:atosk	TACONJ_2 "work for him/her" ;
+kapêsistaw:kapêsist TACONJ_2 ;
 
 
