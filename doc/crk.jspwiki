@@ -149,6 +149,7 @@ and only has the ê- prefix, and future always has no prefix.
 
 
 
+
   LEXICON Root 		  is where it all starts
 
  * Nouns ;	              
@@ -352,6 +353,7 @@ Intransitive animate
 
 
 
+
  LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
 
 
@@ -371,9 +373,9 @@ Transitive animate
 
 
 
-
-
  LEXICON TA_IMPERATIV    gives prefixes and flags for person-number in imperative
+
+
 
 
 
@@ -395,8 +397,6 @@ The stems
 
  LEXICON TASTEM    
 
-
- LEXICON TASTEM_aw    
 
 
 
@@ -574,6 +574,8 @@ Intransitive animate (IA)
 
 
 
+
+
 Intransitive inanimate (II)
 
 
@@ -590,23 +592,23 @@ Intransitive inanimate (II)
 
 Transitive animate (TA)
 
- LEXICON TACONJ  splits in 3 conjugations
+The VTA verbs split in different moods.
+There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
+
+ LEXICON TACONJ_1  
+
+
+ * LEXICON TACONJ_2   splits in 4. The -aw shall be removed from some forms.
+
 
  LEXICON TA_IND  gives prs
 
  LEXICON TA_IND_PRS  gives tags for subject, flag for object, and directs to obj suffs
 
 
- LEXICON 1Sg_O   gives the objects suffixes matching 1Sg subject or 1Sg object
+ LEXICON VTA_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
 
- LEXICON 2Sg_O 	     gives the objects suffixes matching 2Sg subject
-
-
-
-
-
-
-
+ LEXICON VTA_KI_O 	     gives the objects suffixes matching 2Sg subject
 
 
 
@@ -647,9 +649,9 @@ Transitive animate (TA)
 
 
 
- * LEXICON TACONJ_aw   not yet written
 
 Transitive Inanimate (TI)
+
 
  * LEXICON TICONJ   not yet written
 
