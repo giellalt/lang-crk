@@ -135,7 +135,11 @@ LEXICON 2plimp
 
 
 
+
+
 !! !! Intransitive inanimate (II)
+!     ===========================
+!     ===========================
 
 
 LEXICON IICONJ  !!= @CODE@ splits according to conjugation
@@ -170,82 +174,76 @@ LEXICON II_NEG_SBJ   !!= @CODE@ is negative subjunctive
 
 
 !! !! Transitive animate (TA)
+!     =======================
+!     =======================
 
-LEXICON TACONJ !!= @CODE@ splits in 3 conjugations
+!! The VTA verbs split in different moods.
+!! There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
+
+LEXICON TACONJ_1 !!= @CODE@ 
 +V+TA+Ind: TA_IND ;
 +V+TA+Sbj: TA_SBJ ;
 +V+TA+Fut: TA_FUT ;
 +V+TA+Imp: TA_IMP ;
 
+
+LEXICON TACONJ_2  !!= * @CODE@ splits in 4. The -aw shall be removed from some forms.
++V+TA+Ind:aw TA_IND ;
++V+TA+Sbj:aw TA_SBJ ;
++V+TA+Fut:aw TA_FUT ;
++V+TA+Imp:aw TA_IMP ;
+
+
 LEXICON TA_IND !!= @CODE@ gives prs
 +Prs: TA_IND_PRS ;
 
 LEXICON TA_IND_PRS !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
-@U.verb.ind1sg@   1Sg_O ;  !
-@U.verb.ind2sg@   2Sg_O ;  !
-@U.verb.ind3sg@   3Sg_O ;  !
-@U.verb.ind3osg@  3oSg_O ; !
-@U.verb.ind1pl@   1Pl_O ;  ! exclusive Pl
-@U.verb.ind12pl@  12Pl_O ; ! inclusive Pl
-@U.verb.ind2pl@   2Pl_O ;  !
-@U.verb.ind3pl@   3Pl_O ;  !
-@U.verb.ind3opl@  3oPl_O ; !
+@U.verb.NI@   VTA_NI_O ;  !
+@U.verb.KI@   VTA_KI_O ;  !
+@U.verb.NULL@   VTA_NULL_O ;  !
 
 
-LEXICON 1Sg_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
+LEXICON VTA_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
 +1Sg+3SgO:%>âw		  # ;
 +1Sg+3PlO:%>âwak	  # ;
 +3Sg+1SgO:%>ik        # ;
 +3Sg+1PlO:%>ik        # ;
 +3Sg+1PlO:%>ikonân	  # ;
 +3Pl+1SgO:%>ikwak	  # ;
++1Pl+3SgO:%>ânân	  # ;
++1Pl+3PlO:%>ânânak	  # ;
++3Pl+1PlO:%>ikonânak  # ;
 
-LEXICON 2Sg_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
+LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 +2Sg+3SgO:%>âw		  # ;
 +2Sg+3PlO:%>âwak	  # ;
 +3Sg+2SgO:%>ik		  # ;
 +3Pl+2SgO:%>ikwak	  # ;
++12Pl+3SgO:%>ânaw	  # ;
++12Pl+3PlO:%>ânawak	  # ;
++3Sg+12PlO:%>ikonaw	  # ;
++3Sg+2PlO:%>ikowâw	  # ;
++3Pl+12PlO:%>ikonawak # ;
++2Pl+3SgO:%>âwâw	  # ;
++2Pl+3PlO:%>âwâwak	  # ;
++3Pl+2PlO:%>ikowâwak  # ;
 				  
-LEXICON 3Sg_O 	  
+LEXICON VTA_NULL_O 	  
 +3Sg+3SgO:%>êw		  # ;
 +3Sg+3SgO:%>ik		  # ;
 +3Sg+3SgO:%>kow	  # ;
 +3Sg+3PlO:%>êw		  # ;
 +3Sg+3PlO:%>ikowak	  # ;
 +3Sg+3PlO:%>ikak	  # ;
-
 +3Pl+3SgO:%>kow	  # ;
 +3Pl+3SgO:%>êwak	  # ;
-				  
-LEXICON 3oSg_O 	  
 +3oSg+3SgO:%>êyiwa	  # ;
 +3oSg+3PlO:%>êyiwa	  # ;
 +3oSg+3SgO:%>ikoyiwa  # ;
 +3oSg+3PlO:%>ikoyiwa  # ;
 +3oSg+3oPlO:%>ikoyiwa  # ;
-
-LEXICON 1Pl_O 	  
-+1Pl+3SgO:%>ânân	  # ;
-+1Pl+3PlO:%>ânânak	  # ;
-+3Pl+1PlO:%>ikonânak  # ;
-				  
-LEXICON 12Pl_O 	  
-+12Pl+3SgO:%>ânaw	  # ;
-+12Pl+3PlO:%>ânawak	  # ;
-+3Sg+12PlO:%>ikonaw	  # ;
-+3Sg+2PlO:%>ikowâw	  # ;
-+3Pl+12PlO:%>ikonawak # ;
-				  
-LEXICON 2Pl_O 	  
-+2Pl+3SgO:%>âwâw	  # ;
-+2Pl+3PlO:%>âwâwak	  # ;
-+3Pl+2PlO:%>ikowâwak  # ;
-				  
-LEXICON 3Pl_O 	  
 +3Pl+3PlO:%>ikowak	  # ;
 +3Pl+3PlO:%>êwak	  # ;
-				  
-LEXICON 3oPl_O 	  
 +3oPl+3SgO:%>êyiwa	  # ;
 +3oPl+3PlO:%>êyiwa	  # ;
 
@@ -344,10 +342,15 @@ LEXICON TA_FUT_SUF
 +3oPl+3PlO:%>âyici	   # ;
 
 
+
 LEXICON TA_IMP
-@U.verb.imp2sg@  2Sg_Imp ;
-@U.verb.imp1pl@  2Pl_Imp ;
-@U.verb.imp2pl@ 12Pl_Imp ;
+@U.verb.NULL@  2Sg_Imp ;
+@U.verb.NULL@  2Pl_Imp ;
+@U.verb.NULL@ 12Pl_Imp ;
+
+!@U.verb.imp2sg@  2Sg_Imp ;
+!@U.verb.imp1pl@  2Pl_Imp ;
+!@U.verb.imp2pl@ 12Pl_Imp ;
 
 LEXICON 2Sg_Imp
     +2Sg+3SgO: # ;
@@ -373,11 +376,10 @@ LEXICON 12Pl_Imp
 
 
 
-
-LEXICON TACONJ_aw  !!= * @CODE@ not yet written
- # ;
-
 !! !! Transitive Inanimate (TI)
+!     =========================
+!     =========================
+
 
 LEXICON TICONJ  !!= * @CODE@ not yet written
 +V+TI+Ind: TI_IND ;
