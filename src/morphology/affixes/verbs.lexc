@@ -64,15 +64,25 @@ LEXICON IA_IND_SUFF ! Dummy lexicon
 # ;
 
 LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive person suffixes
-@U.verb.sbj1sg@  1sgsubjunctive ;
-@U.verb.sbj2sg@  2sgsubjunctive ;
-@U.verb.sbj3sg@  3sgsubjunctive ;
-@U.verb.sbj3osg@ 3osgsubjunctive ;
-@U.verb.sbj1pl@  1plsubjunctive ;
-@U.verb.sbj12pl@ 12plsubjunctive ;
-@U.verb.sbj2pl@  2plsubjunctive ;
-@U.verb.sbj3pl@  3plsubjunctive ;
-@U.verb.sbj3opl@  3oplsubjunctive ;
+@U.verb.sbj@  1sgsubjunctive ;
+@U.verb.sbj@  2sgsubjunctive ;
+@U.verb.sbj@  3sgsubjunctive ;
+@U.verb.sbj@  3osgsubjunctive ;
+@U.verb.sbj@  1plsubjunctive ;
+@U.verb.sbj@  12plsubjunctive ;
+@U.verb.sbj@  2plsubjunctive ;
+@U.verb.sbj@  3plsubjunctive ;
+@U.verb.sbj@   3oplsubjunctive ;
+
+!@U.verb.sbj1sg@  1sgsubjunctive ;
+!@U.verb.sbj2sg@  2sgsubjunctive ;
+!@U.verb.sbj3sg@  3sgsubjunctive ;
+!@U.verb.sbj3osg@ 3osgsubjunctive ;
+!@U.verb.sbj1pl@  1plsubjunctive ;
+!@U.verb.sbj12pl@ 12plsubjunctive ;
+!@U.verb.sbj2pl@  2plsubjunctive ;
+!@U.verb.sbj3pl@  3plsubjunctive ;
+!@U.verb.sbj3opl@  3oplsubjunctive ;
 
 LEXICON 1sgsubjunctive
     +Sbj+1Sg:%>yân #;
