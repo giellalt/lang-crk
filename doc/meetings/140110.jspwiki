@@ -1,0 +1,83 @@
+
+
+Meeting on the crk project:
+
+Present: Antti, Conor, Lene, Trond.
+
+!!!Issues
+
+
+* how to resume work on Plains Cree (and Haida)
+* what would work for demonstrating at Miyo, now at Muskwacis
+* The language-technological pre-CILLDI workshop
+* Lene's visit
+
+
+!!!how to resume work on Plains Cree (and Haida)
+
+
+!!Status quo:
+
+!Nouns (disregarding +Dim):
+
+atim, iskwew, maniway are ok.
+Do they represent all noun types? Nouns for relatives/possession...
+
+!Intransitive verbs
+
+* Ok: mâto VAI, miciso VAI, nipâ VAI (Lemma = nipâw?)
+* Fail: wapam (but this is VTA!)
+
+The other intransitive types are missing from yaml.
+
+
+!Transitive verbs
+
+* Ok: atoskah VTA-1, wicih VTA-1
+* Fail: wâpam VT-1, mow VTA-1 
+
+The failed ones are almost ok (+Imp is not quite there)
+
+These only represent VTA-1, we need to cover all types in yaml, 
+also 2-4 and VTI.
+
+!Pronouns
+
+We have a start.
+
+
+!!yaml
+
+
+!!Flag diacritics
+
+Trond is revising the flag diacritics:
+* Earlier: one flag per person-number value (1sg, 2sg, 3sg, 1pl...)
+* Now, tentatively: one flag per prefix (NI, KI, NULL)
+
+
+!!Dictionaries
+
+* Earle Waugh (10000 entries)
+* HCW (5000 entries)
+
+!!Diminutives
+
+!!!what would work for demonstrating at Miyo, now at Muskwacis
+
+With respect to the Miyo visit, I yet need to write Brian Wildcat (now on Friday) about what sort of program we want to set up - I think the focus would be on how their school works and how they intend to develop things, so we'd have to figure what types of things we'd like to learn on that Monday Jan 20th.
+
+!!!The language-technological pre-CILLDI workshop
+
+!!When
+
+!!What
+
+!!!Lene's visit
+
+* Formalities immigration: Invitation letter, duration, etc.
+* Accomodation
+
+So, we have the general parameters in place, and the weather will be nice.
+
+
