@@ -76,19 +76,33 @@ Dur Durative
 2Sg Second Person singular
 3Sg Third Person singular
 3oSg Third Person singular obviative
-3iSg Third Person singular indefinite
 1Pl First Person plural exclusive
 12Pl First Person plural inclusive
 3Pl Third Person plural
 3oPl Third Person plural obviative
 #PersonNumber
 
+1SgO FirstO PersonO singular
+2SgO SecondO PersonO singular
+3SgO ThirdO PersonO singular
+3oSgO ThirdO PersonO singularO obviative
+1PlO FirstO PersonO pluralO exclusive
+12PlO FirstO PersonO pluralO inclusive
+3PlO ThirdO PersonO plural
+3oPlO ThirdO PersonO pluralO obviative
+#PersonNumberObj
+
 Prs
+Fut
+Del
 #Tense
 
 AN Animate noun
 IN Inanimate noun
 #Gender
+
+Dim Diminutive
+#Diminutive
 
 +Px1Sg First Person singular possessive suffix
 +Px2Sg Second Person singular possessive suffix 
