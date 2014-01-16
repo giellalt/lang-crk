@@ -46,9 +46,11 @@ TA ; ! transitive animate
 
 LEXICON IA   !!= @CODE@ divides in independent, subjunctive and imperative
 
-   IA_INDEPENDENT ;
-:ê IA_SUBJUNCTIV ;
-   IA_IMPERATIV ;
+          IA_INDEPENDENT ;
+:ê-       IA_SUBJUNCTIV ;
+:ê%^EGLOT IA_SUBJUNCTIV ;
+!         IA_FUTURE ; ! To be written
+          IA_IMPERATIV ;
 
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
@@ -56,12 +58,13 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 < 0:n 0:i "@U.verb.ind1sg@" > IASTEM ; !"
 < 0:k 0:i "@U.verb.ind2sg@" > IASTEM ; !"
 
-< "@U.verb.ind3sg@" >  IASTEM ; !"
-< "@U.verb.ind3osg@" > IASTEM ; !"
+<         "@U.verb.ind3sg@" >  IASTEM ; !"
+<         "@U.verb.ind3osg@" > IASTEM ; !"
 
 < 0:n 0:i "@U.verb.ind1pl@" > IASTEM ;   ! exclusive Pl
 < 0:k 0:i "@U.verb.ind12pl@" > IASTEM ;   ! inclusive Pl
 < 0:k 0:i "@U.verb.ind2pl@" > IASTEM ;   !"
+
 < "@U.verb.ind3pl@" > IASTEM ; !"
 < "@U.verb.ind3opl@" > IASTEM ; !"
 
@@ -101,16 +104,17 @@ IISTEM ;
 
 LEXICON TA  !!= @CODE@ is still not written
 
-   TA_INDEPENDENT ;
-:ê- TA_SUBJUNCTIV ;
-   TA_FUTURE ;
-   TA_IMPERATIV ;
+          TA_INDEPENDENT ;
+:ê-       TA_SUBJUNCTIV ;
+:ê%^EGLOT TA_SUBJUNCTIV ;
+          TA_FUTURE ;
+          TA_IMPERATIV ;
 
 LEXICON TA_INDEPENDENT
 
-< 0:n 0:i "@U.verb.NI@" > TASTEM ; !"
-< 0:k 0:i "@U.verb.KI@" > TASTEM ; !"
-<         "@U.verb.NULL@" >  TASTEM ; !"
+< 0:n 0:i "@U.verb.NI@"   > TASTEM ; !"
+< 0:k 0:i "@U.verb.KI@"   > TASTEM ; !"
+<         "@U.verb.NULL@" > TASTEM ; !"
 
 LEXICON TA_SUBJUNCTIV 
 @U.verb.sbj@ TASTEM ;
