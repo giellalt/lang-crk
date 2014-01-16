@@ -29,6 +29,8 @@ POS
 
  * +Dim      Diminutive
 
+  * +Ipc		 Indeclinable Particle
+
 Verbal MSP
  * +Prs   
  * +Fut   
@@ -107,6 +109,8 @@ Nominal MSP
  * %^LC      Locative
  * t2 		  Prefix in possessives 
 
+ * ^%EGLOT    glottal stop after e, for eh- in conjunctive mood
+
 Flagdiacritics 
 
 These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
@@ -145,4 +149,5 @@ and only has the ê- prefix, and future always has no prefix.
  * Verbs ;	              
  * Pronoun ;             
  * Punctuation ;         
+ * Particles ;			  
 

@@ -40,6 +40,8 @@ POS
 
  * +Dim      Diminutive
 
+  * +Ipc		 Indeclinable Particle
+
 Verbal MSP
  * +Prs   
  * +Fut   
@@ -118,6 +120,8 @@ Nominal MSP
  * %^LC      Locative
  * t2 		  Prefix in possessives 
 
+ * ^%EGLOT    glottal stop after e, for eh- in conjunctive mood
+
 Flagdiacritics 
 
 These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
@@ -156,6 +160,7 @@ and only has the ê- prefix, and future always has no prefix.
  * Verbs ;	              
  * Pronoun ;             
  * Punctuation ;         
+ * Particles ;			  
 
 
 
@@ -167,6 +172,7 @@ and only has the ê- prefix, and future always has no prefix.
 
 
 !!!Rules
+
 
 
 __Suffix a Deletion in Vowel Final Stems__ gives maskwa + ak = plural maskwak
@@ -314,7 +320,6 @@ possessive paradigm
 
 
 
-
 Plains Cree verb stems                           
 
 
@@ -345,6 +350,7 @@ Intransitive animate
 
 
  LEXICON IA_INDEPENDENT    gives prefixes and flags for person-number in indicative
+
 
 
 
@@ -391,6 +397,8 @@ The stems
  nipâ IACONJ "sleep" ;  
  mâto IACONJ "sleep" ; 
  miciso IACONJ "sleep" ;  
+ waniskâw IACONJ "rise, get up" ;  
+
 
  LEXICON IISTEM    
 
