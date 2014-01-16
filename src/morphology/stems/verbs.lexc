@@ -13,7 +13,7 @@
 ! giellatekno@hum.uit.no or divvun@samediggi.no
 
 ! ========================================================================== !
-!!                           !!! Plains Cree verb stems                           
+!!                           !!! Plains Cree verb stems                       
 ! ========================================================================== !
 
 
@@ -55,18 +55,18 @@ LEXICON IA   !!= @CODE@ divides in independent, subjunctive and imperative
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
 
-< 0:n 0:i "@U.verb.ind1sg@" > IASTEM ; !"
-< 0:k 0:i "@U.verb.ind2sg@" > IASTEM ; !"
+< 0:n 0:i "@U.verb.ind1sg@"  > IASTEM ; !"
+< 0:k 0:i "@U.verb.ind2sg@"  > IASTEM ; !"
 
-<         "@U.verb.ind3sg@" >  IASTEM ; !"
+<         "@U.verb.ind3sg@"  >  IASTEM ; !"
 <         "@U.verb.ind3osg@" > IASTEM ; !"
 
-< 0:n 0:i "@U.verb.ind1pl@" > IASTEM ;   ! exclusive Pl
+< 0:n 0:i "@U.verb.ind1pl@"  > IASTEM ;   ! exclusive Pl
 < 0:k 0:i "@U.verb.ind12pl@" > IASTEM ;   ! inclusive Pl
-< 0:k 0:i "@U.verb.ind2pl@" > IASTEM ;   !"
+< 0:k 0:i "@U.verb.ind2pl@"  > IASTEM ;   !"
 
-< "@U.verb.ind3pl@" > IASTEM ; !"
-< "@U.verb.ind3opl@" > IASTEM ; !"
+<         "@U.verb.ind3pl@"  > IASTEM ; !"
+<         "@U.verb.ind3opl@" > IASTEM ; !"
 
 LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
 @U.verb.sbj@ IASTEM ;
