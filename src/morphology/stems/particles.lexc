@@ -18,13 +18,17 @@
 
 !! The file
 
+LEXICON pcle
++Ipc: # ;
+
 
 LEXICON Particles
 
-sisone+Ipc:sisone # ; !"along"
-ekota+Ipc:ekota # ; !"here"
-ohci+Ipc:ohci # ; !"for/from"
-keyâpic+Ipc:keyâpic # ; !"furtermore, once again, still, more, some more, again"
-ekwa+Ipc:ekwa # ; !"and, now"
-kâwe+Ipc:kâwe # ; !"again, another time, once more (Alternate spelling kawi)"
+sisone pcle ; !"along"
+ekota pcle ; !"here"
+ohci pcle ; !"for/from"
+keyâpic pcle ; !"furtermore, once again, still, more, some more, again"
+ekwa pcle ; !"and, now"
+kâwe pcle ; !"again, another time, once more (Alternate spelling kawi)"
+ekota-ohci  pcle ; 
 
