@@ -8,6 +8,7 @@ Alphabet
  %>:0 
  %^LC:0 ! Locative suffix alternation trigger
  %^DIM:0 ! Diminutive alternation trigger
+ %^EGLOT:0 ! Conjunctive êh trigger
  ;
 
 Sets
@@ -28,6 +29,9 @@ Sets
 !! !!!Rules
 
 Rules
+
+"h glottal stop for initial vowel stems in Conjunctive"
+%^EGLOT:h <=> _ :Vow ;
 
 "Suffix a Deletion in Vowel Final Stems"
 !! __@RULENAME@__ gives maskwa + ak = plural maskwak
