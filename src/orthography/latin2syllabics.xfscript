@@ -219,6 +219,10 @@ define yRule [ y ] -> ᕀ  ;
 
 define lRule [ l ] -> ᓬ ; 
 define rRule [ r ] -> ᕒ ;  
+
+define hyphenRule [ %- ] ->   ; 
+# this was hyphen to nbsp on request from A.Ogg, have a look.
+
 define FullStopRule [ %. ] -> ᙮ ;
 
 
@@ -393,6 +397,8 @@ read regex [ Decapitalisation
 
 .o. lRule 
 .o. rRule 
+
+.o. hyphenRule 
 
 .o. FullStopRule ] ; 
  
