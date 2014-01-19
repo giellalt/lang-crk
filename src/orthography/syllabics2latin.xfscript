@@ -2,6 +2,14 @@
 ! Script for syll to latin for Plains Cree, 
 ! or more general, for Western Cree
 
+! Keyboard legend
+! ᐊ  ᐸ  ᑕ  ᑲ  ᒐ  ᒪ  ᓇ  ᓴ  ᔭ
+! a  pa ta ka ca ma na sa ya 
+
+!  Rows: B = a, C = o, D = i, E = e
+! Thus, key B01 = a, D08 = si, etc.
+
+
 
 ! with w
 
@@ -209,7 +217,7 @@ define sâRule [ ᓵ ]   -> [ s â ] ;
 define sêRule [ ᓭ ]   -> [ s ê ] ;
 define sîRule [ ᓰ ]   -> [ s î ] ;
 define sôRule [ ᓲ ]   -> [ s ô ] ;
-	
+
 define taRule [ ᑕ ]   -> [ t a ] ;
 define tiRule [ ᑎ ]   -> [ t i ] ;
 define toRule [ ᑐ ]   -> [ t o ] ;
