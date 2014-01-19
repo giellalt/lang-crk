@@ -120,7 +120,7 @@ editStrings.syll.hfst: strings.syll.hfst editdist.syll.hfst
 		-o $@
 
 # Error model building - list of words known to be misspelled:
-words.syll.hfst: words.syll.txt 
+words.syll.hfst: words.syll.txt easteregg.suggs.txt
 	$(AM_V_GEN)grep -h -v '^#' $^ | grep -v '^$$'   \
 		| $(HFST_STRINGS2FST) $(HFST_FLAGS) -j -o $@
 
