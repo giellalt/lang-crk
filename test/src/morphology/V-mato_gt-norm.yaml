@@ -8,32 +8,32 @@ Config:
     App: lookup
 
 Tests:
-  
-  Verb - mâto - ok : # Ordinary IA verb - full paradigm
-     mâto+V+IA+Ind+Prs+1Sg: nimâton
-     mâto+V+IA+Ind+Prs+2Sg: kimâton
-     mâto+V+IA+Ind+Prs+3Sg: mâtow
-     mâto+V+IA+Ind+Prs+3oSg: mâtoyiwa
-     mâto+V+IA+Ind+Prs+1Pl: nimâtonân
-     mâto+V+IA+Ind+Prs+12Pl: kimâtonaw
-     mâto+V+IA+Ind+Prs+2Pl: kimâtonâwâw
-     mâto+V+IA+Ind+Prs+3Pl: mâtowak
-     mâto+V+IA+Ind+Prs+3oPl: mâtoyiwa
 
-     mâto+V+IA+Cnj+1Sg: ê-mâtoyân
-     mâto+V+IA+Cnj+2Sg: ê-mâtoyan
-     mâto+V+IA+Cnj+3Sg: ê-mâtot
-     mâto+V+IA+Cnj+3oSg: ê-mâtoyit
-     mâto+V+IA+Cnj+1Pl: ê-mâtoyâhk
-     mâto+V+IA+Cnj+12Pl: ê-mâtoyahk
-     mâto+V+IA+Cnj+2Pl: ê-mâtoyêk
-     mâto+V+IA+Cnj+3Pl: ê-mâtocik
-     mâto+V+IA+Cnj+3oPl: ê-mâtoyit
-     
-     mâto+V+IA+Imp+Imm+2Sg: mâto
-     mâto+V+IA+Imp+Imm+2Pl: mâtok
-     mâto+V+IA+Imp+Imm+12Pl: mâtotân
-     
-     mâto+V+IA+Imp+Del+2Sg: mâtohkan
-     mâto+V+IA+Imp+Del+2Pl: mâtohkêk
-	 mâto+V+IA+Imp+Del+12Pl: mâtohkâhk
+  Verb - mâto - ok : # Ordinary IA verb - full paradigm
+    mâto+V+IA+Ind+Prs+1Sg:  nimâton
+    mâto+V+IA+Ind+Prs+2Sg:  kimâton
+    mâto+V+IA+Ind+Prs+3Sg:  mâtow
+    mâto+V+IA+Ind+Prs+3oSg: mâtoyiwa
+    mâto+V+IA+Ind+Prs+1Pl:  nimâtonân
+    mâto+V+IA+Ind+Prs+12Pl: kimâtonaw
+    mâto+V+IA+Ind+Prs+2Pl:  kimâtonâwâw
+    mâto+V+IA+Ind+Prs+3Pl:  mâtowak
+    mâto+V+IA+Ind+Prs+3oPl: mâtoyiwa
+
+    mâto+V+IA+Cnj+1Sg:  ê-mâtoyân
+    mâto+V+IA+Cnj+2Sg:  ê-mâtoyan
+    mâto+V+IA+Cnj+3Sg:  ê-mâtot
+    mâto+V+IA+Cnj+3oSg: ê-mâtoyit
+    mâto+V+IA+Cnj+1Pl:  ê-mâtoyâhk
+    mâto+V+IA+Cnj+12Pl: ê-mâtoyahk
+    mâto+V+IA+Cnj+2Pl:  ê-mâtoyêk
+    mâto+V+IA+Cnj+3Pl:  ê-mâtocik
+    mâto+V+IA+Cnj+3oPl: ê-mâtoyit
+
+    mâto+V+IA+Imp+Imm+2Sg:  mâto
+    mâto+V+IA+Imp+Imm+2Pl:  mâtok
+    mâto+V+IA+Imp+Imm+12Pl: mâtotân
+
+    mâto+V+IA+Imp+Del+2Sg:  mâtohkan
+    mâto+V+IA+Imp+Del+2Pl:  mâtohkêk
+    mâto+V+IA+Imp+Del+12Pl: mâtohkâhk
