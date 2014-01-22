@@ -82,41 +82,41 @@ LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive perso
 !@U.verb.sbj3opl@  3oplsubjunctive ;
 
 LEXICON 1sgsubjunctive
-    +Sbj+1Sg:%>yân #;
-!+Neg+Sbj+1Sg:%>siwaan  # ;
+    +Cnj+1Sg:%>yân #;
+!+Neg+Cnj+1Sg:%>siwaan  # ;
 
 LEXICON 2sgsubjunctive
-    +Sbj+2Sg:%>yan	#;
-!+Neg+Sbj+2Sg:%>siwan   # ;
+    +Cnj+2Sg:%>yan	#;
+!+Neg+Cnj+2Sg:%>siwan   # ;
 
 LEXICON 3sgsubjunctive
-    +Sbj+3Sg:%>t	#;
-!+Neg+Sbj+3Sg:%>sig	   # ;
+    +Cnj+3Sg:%>t	#;
+!+Neg+Cnj+3Sg:%>sig	   # ;
 
 LEXICON 3osgsubjunctive
-    +Sbj+3oSg:%>yit #;
-!+Neg+Sbj+3oSg:%>sinid  # ;
-!+Neg+Sbj+3oSg:%>sinig  # ;
+    +Cnj+3oSg:%>yit #;
+!+Neg+Cnj+3oSg:%>sinid  # ;
+!+Neg+Cnj+3oSg:%>sinig  # ;
 
 LEXICON 1plsubjunctive 
-    +Sbj+1Pl:%>yâhk #;
-+Neg+Sbj+1Pl:%>siwaang # ;
+    +Cnj+1Pl:%>yâhk #;
++Neg+Cnj+1Pl:%>siwaang # ;
 
 LEXICON 12plsubjunctive
-    +Sbj+12Pl:%>yahk #;
-+Neg+Sbj+12Pl:%>siwang # ;
+    +Cnj+12Pl:%>yahk #;
++Neg+Cnj+12Pl:%>siwang # ;
 
 LEXICON 2plsubjunctive 
-    +Sbj+2Pl:%>nyêk #;
-!+Neg+Sbj+2Pl:%>siweg   # ;
+    +Cnj+2Pl:%>nyêk #;
+!+Neg+Cnj+2Pl:%>siweg   # ;
 
 LEXICON 3plsubjunctive 
-    +Sbj+3Pl:%>cik #;
-!+Neg+Sbj+3Pl:%>siwaa   # ;
+    +Cnj+3Pl:%>cik #;
+!+Neg+Cnj+3Pl:%>siwaa   # ;
 
 LEXICON 3oplsubjunctive 
-    +Sbj+3oPl:%>yit #;
-!+Neg+Sbj+3Pl:%>siwaa   # ;
+    +Cnj+3oPl:%>yit #;
+!+Neg+Cnj+3Pl:%>siwaa   # ;
 
 
 
@@ -131,8 +131,8 @@ LEXICON 2sgimp
 +Imp+Dur+2Sg:%>kan # ;
 
 LEXICON 1plimp
-+Imp+Imm+1Pl:%>ndâ	  # ;
-+Imp+Int+1Pl:%>siidâ # ;
++Imp+Imm+12Pl:%>tân	  # ;
++Imp+Int+12Pl:%>siidâ # ; !! this looks like Ojibwe :-/ what is correct?
 
 LEXICON 2plimp
 +Imp+Imm+2Pl:%>k	 # ;
@@ -152,8 +152,8 @@ LEXICON 2plimp
 LEXICON IICONJ  !!= @CODE@ splits according to conjugation
 +V+II+Ind+Prs: II_IND_PRS ;
 +V+II+Neg+Ind+Prs: II_NEG_IND_PRS ;
-+V+II+Sbj: II_SBJ ;
-+V+II+Neg+Sbj: II_NEG_SBJ ;
++V+II+Cnj: II_SBJ ;
++V+II+Neg+Cnj: II_NEG_SBJ ;
 
 LEXICON II_IND_PRS   !!= @CODE@ is positive present
 +3Sg: # ;
@@ -189,14 +189,14 @@ LEXICON II_NEG_SBJ   !!= @CODE@ is negative subjunctive
 
 LEXICON TACONJ_1 !!= @CODE@ 
 +V+TA+Ind: TA_IND ;
-+V+TA+Sbj: TA_SBJ ;
++V+TA+Cnj: TA_SBJ ;
 +V+TA+Fut: TA_FUT ;
 +V+TA+Imp: TA_IMP ;
 
 
 LEXICON TACONJ_2  !!= * @CODE@ splits in 4. The -aw shall be removed from some forms.
 +V+TA+Ind:aw TA_IND ;
-+V+TA+Sbj:aw TA_SBJ ;
++V+TA+Cnj:aw TA_SBJ ;
 +V+TA+Fut:aw TA_FUT ;
 +V+TA+Imp:aw TA_IMP ;
 
