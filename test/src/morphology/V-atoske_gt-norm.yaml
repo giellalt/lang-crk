@@ -1,0 +1,39 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - atoskê - ok : # Ordinary IA verb - full paradigm
+     atoskê+V+IA+Ind+Prs+1Sg: nitatoskân
+     atoskê+V+IA+Ind+Prs+2Sg: kitatoskân
+     atoskê+V+IA+Ind+Prs+3Sg: atoskêw
+     atoskê+V+IA+Ind+Prs+3oSg: atoskêyiwa
+     atoskê+V+IA+Ind+Prs+1Pl: nitatoskânân
+     atoskê+V+IA+Ind+Prs+12Pl: kitatoskânaw
+     atoskê+V+IA+Ind+Prs+2Pl: kitatoskânâwâw
+     atoskê+V+IA+Ind+Prs+3Pl: atoskêwak
+     atoskê+V+IA+Ind+Prs+3oPl: atoskêyiwa
+
+     atoskê+V+IA+Sbj+1Sg: ê-atoskêyân
+     atoskê+V+IA+Sbj+2Sg: ê-atoskêyan
+     atoskê+V+IA+Sbj+3Sg: ê-atoskêt
+     atoskê+V+IA+Sbj+3oSg: ê-atoskêyit
+     atoskê+V+IA+Sbj+1Pl: ê-atoskêyâhk
+     atoskê+V+IA+Sbj+12Pl: ê-atoskêyahk
+     atoskê+V+IA+Sbj+2Pl: ê-atoskêyêk
+     atoskê+V+IA+Sbj+3Pl: ê-atoskêcik
+     atoskê+V+IA+Sbj+3oPl: ê-atoskêyit
+     
+     atoskê+V+IA+Imp+Imm+2Sg: atoskê
+     atoskê+V+IA+Imp+Imm+2Pl: atoskêk
+     atoskê+V+IA+Imp+Imm+12Pl: atoskêtân
+     
+     atoskê+V+IA+Imp+Del+2Sg: atoskêhkan
+     atoskê+V+IA+Imp+Del+2Pl: atoskêhkêk
+     atoskê+V+IA+Imp+Del+12Pl: atoskêhkahk
