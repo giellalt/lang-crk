@@ -133,28 +133,44 @@ LEXICON ANSTEMS
  0:%> ANSTEMLIST ;
 
 LEXICON ANSTEMLIST
-inini ANDECL "man" ; 
+inini ANDECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.
 nâpês ANDECL "boy" ;
+nâpês+Dim:nâpêsis ANDECLPROF "little boy" ;
 apiscacihkos ANDECL "antelope" ;
 mâyatihk ANDECL "bighorn sheep" ;
+mâyatihk+Dim:mâyacihkos ANDECLPROF "little bighorn sheep" ;
 atihk ANDECL "caribou" ;
+atihk+Dim:acihkos ANDECLPROF "little caribou" ;
 apisimôsos ANDECL "deer" ; ! apisimôsosak
+apisimôsos+Dim:apisimôsosis ANDECLPROF "little deer" ; ! apisimôsosak
 mistatim IRREGULARDECL "horse" ; ! mistatimwak
 môswa ANDECL "moose" ; ! môswak
+môswa+Dim:môsos ANDECLPROF "little moose" ; ! môswak
 maskwa ANDECL "bear" ; ! maskwak
+maskwa+Dim:maskosis ANDECLPROF "little moose" ; ! môswak
 okistatowân ANDECL "grizzly bear" ; ! okistatowânak
+okistatowân+Dim:okiscacowânis ANDECLPROF "little grizzly bear" ; ! okistatowânak
 wâpask ANDECL "polar bear" ; ! wâpaskwak
+wâpask+Dim:wâpaskos ANDECLPROF "little polar bear" ; ! wâpaskwak
 sîsîp ANDECL "duck" ;
+sîsîp+Dim:sîsîpis ANDECL "duckling" ;
 iskwêw ANDECL "a woman" ;
-asikan ANDECL "sock" ; ! this really is animate
+asikan ANDECL "sock" ;
+asikan+Dim:asikanis ANDECLPROF "little sock" ;
 wâwaskesiw ANDECL "elk" ;
 oskâtâsk ANDECL "carrot" ;
+oskâtâsk+Dim:oskâcâskos ANDECLPROF "little carrot" ;
 minôs ANDECL "cat" ;
+minôs+Dim:minôsis ANDECLPROF "little cat" ;
 pisiw	ANDECL "cougar" ;
 nehiyaw ANDECL "Cree Person" ;
 asiniy ANDECL "stone" ;
 sikâk ANDECL "skunk" ;
+sikâk+Dim:sikâkos ANDECLPROF "little skunk" ;
 mostos ANDECL "cow" ;
+mostos+Dim:mostosis ANDECLPROF "little cow" ;
+
+
 
 LEXICON IRREGANSTEMS
  :%> IRREGANSTEMSLIST ;
@@ -194,16 +210,23 @@ sakâw INDECL "bush" ;
 mîcimâpoy INDECL "soup" ;
 sîsîpiwâwi INDECL "duck egg" ;
 wâwi INDECL "egg" ; ! <== Analysed with hfst, but not with xfst.
+wâwi+Dim:wâwis INDECLPROF "little egg" ; !Proficient speakers use abbreviated diminutive
 ôtênaw INDECL "city" ;
+ôtênaw+Dim:ôcênâs INDECLPROF "little city" ; !Proficient speakers use abbreviated diminutive
 maskisin INDECL "shoe" ;
+maskisin+Dim:maskisinis INDECLPROF "little shoe" ;
 mistikowat INDECL "box" ;
+mistikowat+Dim:miscikowacis INDECLPROF "little box" ;
 pikiw	INDECL "gum" ;
 iskwâhtêm	INDECL "door" ;
+iskwâhtêm+Dim:iskwâhcêmis	INDECLPROF "little door" ;
 môhkomân INDECL  "knife" ;
+môhkomân+Dim:môhkomânis INDECLPROF  "little knife" ;
 iskotêw INDECL "fire" ;
 ôskan INDECL "bone" ;
+ôskan+Dim:ôskanis INDECLPROF "little bone" ;
 wiyâkan INDECL "bowl" ;
-iskwatêm INDECL "door"  ;
+wiyâkan+Dim:wiyâkanis INDECLPROF "bowl" ;
 kîkisepâ INDECL "morning" ;
 
 ! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
