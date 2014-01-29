@@ -14,6 +14,14 @@ LEXICON ANDECL !!= * @CODE@ for the animate declension
 +N+AN:%> AN_DIM_SG ;
 +N+AN:%> AN_DIM_PL ;
 
+LEXICON ANDECLPROF !!= * @CODE@ for the animate declension
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
+< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
++N+AN+Sg: AN_SUFF_SG ;
++N+AN+Pl: AN_SUFF_PL ;
+
+
 LEXICON INDECL !!= * @CODE@ for the inanimate declension
 < "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PL_A ; !
@@ -23,6 +31,12 @@ LEXICON INDECL !!= * @CODE@ for the inanimate declension
 +N+IN:%> IN_DIM_SG ;
 +N+IN:%> IN_DIM_PL ;
 
+LEXICON INDECLPROF !!= Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reducedm diminuitve suffixes
+< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PL_A ; !
+< "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
++N+IN+Sg: IN_SUFF_SG ;
++N+IN+Pl: IN_SUFF_PL ;
 
 
 LEXICON IRREGULARDECL	!!= * @CODE@ is there to handle the highly irregular atim and mistatim
@@ -61,8 +75,8 @@ LEXICON INALIENABLEDECL !!= * @CODE@
 !!  !Diminutive suffixes in animate stems
 
 LEXICON AN_DIM_SG !!= * @CODE@
-< "+Dim":s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+Dim":s 0:%^DIM 0:i 0:s "+Sg":0 >  AN_SUFF_SG ;
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 >  AN_SUFF_SG ;
 
 LEXICON AN_DIM_PL !!= * @CODE@
 < "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
@@ -72,12 +86,12 @@ LEXICON AN_DIM_PL !!= * @CODE@
 !!  !Diminutive suffixes in inanimate stems
 
 LEXICON IN_DIM_SG !!= * @CODE@
-< "+Dim":s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+Dim":s 0:%^DIM 0:i 0:s "+Sg":0 >  IN_SUFF_SG ;
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 >  IN_SUFF_SG ;
 
 LEXICON IN_DIM_PL !!= * @CODE@
-< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_A ; !
-< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 >   IN_SUFF_PL ; !
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_A ; !
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 >   IN_SUFF_PL ; !
 
 
 !! !Diminutive suffixes in animate stems taking the form -osis
