@@ -115,17 +115,31 @@ Vx:0 <=> _ %>:0 Vx ;
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
 t:c <=> :* _ :* %^DIM:0 ;
 
-"Dimutives - delete suffix intital s in stems containing t" 
+!"Dimutives - delete suffix intital s in stems containing t" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2. The suffix is modeled as -sis, hence the first s must be delted to get ocrrect surface form is
-s:0 <=> t:c :* %>:0 _ %^DIM:0 ;
+!!!s:0 <=> t:c :* %>:0 _ %^DIM:0 ;
 
 "In Vow+w final stems with Diminutives: drop w and add -sis" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
 w:0 <=> Vow _ %>:0 s: %^DIM:0 ;
 
-"In Vow+w final stems with Diminutives: if vowel is short -> lengthen vowel" 
+!"In Vow+w final stems with Diminutives: if vowel is short -> lengthen vowel" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
-[ i:î | a:â | o:ô ] <=> _ [ w:0 | y:0 ] %>:0 s: %^DIM:0 ;
+!![ i:î | a:â | o:ô ] <=> _ [ w:0 | y:0 ] %>:0 i: s: %^DIM:0 ;
+
+
+"In Vow+y final stems with Diminutives, part 1: delete y" 
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
+y:0 <=> Vow _ %>:0 i: s: %^DIM:0 ;
+
+"In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel" 
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
+o:ô <=> _ y: %>:0 i: s: %^DIM:0 ;
+
+"In Vow+y final stems with Diminutives, part 3: delete i in suffix" 
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
+i:0 <=> Vow y: %>:0 _ s: %^DIM:0 ;
+
 
 "Diminutives rule change ending to os with k-final stems 1" 
 !! __@RULENAME@__ Okimasis 2004: 14, Examples listed in 5.
@@ -133,7 +147,10 @@ s:0 <=> k %>:0 _ %^DIM:0 ;
 
 "Diminutives rule change ending to os with k-final stems 2" 
 !! __@RULENAME@__ Okimasis 2004: 14, Examples listed in 5.
-i:o <=> k %>:0 s:0 %^DIM:0 _ ;
+i:o <=> k %>:0 _ s: %^DIM:0 ;
+
+"Diminutives rule change ending delete i with nouns ending in kwa"
+i:0 <=> k: w: a: %>:0 _ s: %^DIM:0 ;
 
 
 
