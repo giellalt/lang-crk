@@ -119,26 +119,29 @@ t:c <=> :* _ :* %^DIM:0 ;
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2. The suffix is modeled as -sis, hence the first s must be delted to get ocrrect surface form is
 !!!s:0 <=> t:c :* %>:0 _ %^DIM:0 ;
 
-"In Vow+w final stems with Diminutives: drop w and add -sis" 
+!"In Vow+w final stems with Diminutives: drop w and add -sis" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
-w:0 <=> Vow _ %>:0 s: %^DIM:0 ;
-
-!"In Vow+w final stems with Diminutives: if vowel is short -> lengthen vowel" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
-!![ i:î | a:â | o:ô ] <=> _ [ w:0 | y:0 ] %>:0 i: s: %^DIM:0 ;
+!!w:0 <=> Vow _ %>:0 s: %^DIM:0 ;
 
 
 "In Vow+y final stems with Diminutives, part 1: delete y" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
-y:0 <=> Vow _ %>:0 i: s: %^DIM:0 * ;
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are legthened
+y:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
+
+"In Vow+w final stems with Diminutives, part 1: delete y" 
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+w:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 
 "In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
-o:ô <=> _ y: %>:0 i: s: %^DIM:0 i: s: ;
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+[ o:ô | i:î | a:â ] <=> _ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ;
 
 "In Vow+y final stems with Diminutives, part 3: delete i in suffix" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
-i:0 <=> Vow y: %>:0 _ s: %^DIM:0 i: s: ;
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+i:0 <=> [ o: | a: | e: | ê: | :î ] [ y:| w: ] %>:0 _ s: %^DIM:0 i: s: ;
+
+"Vowel lengthening in iw final nouns with diminutives"
+i:î <=> _ [ y:| w: ] %>:0 i: s: %^DIM:0 i: s: ;
 
 
 "Diminutives rule change ending to os with k-final stems 1" 
