@@ -214,15 +214,25 @@ __Double vowel deletion__
 
 __Diminutives - all stem t change to c with diminutives __ Okimasis 2004: 13, Rule 2.
 
-__Dimutives - delete suffix intital s in stems containing t __ Okimasis 2004: 13, Rule 2. The suffix is modeled as -sis, hence the first s must be delted to get ocrrect surface form is
+__Diminutives - all stem t change to c with diminutives __ Okimasis 2004: 13, Rule 2. The suffix is modeled as -sis, hence the first s must be delted to get ocrrect surface form is
 
-__In Vow+w final stems with Diminutives: drop w and add -sis __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
+__Diminutives - all stem t change to c with diminutives __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
 
-__In Vow+w final stems with Diminutives: if vowel is short -> lengthen vowel __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
+
+__In Vow+y final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are legthened
+
+__In Vow+w final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+
+__In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+
+__In Vow+y final stems with Diminutives, part 3: delete i in suffix __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+
+
 
 __Diminutives rule change ending to os with k-final stems 1 __ Okimasis 2004: 14, Examples listed in 5.
 
 __Diminutives rule change ending to os with k-final stems 2 __ Okimasis 2004: 14, Examples listed in 5.
+
 
 
 
@@ -282,6 +292,8 @@ ANSTEM_kw is for a set of nouns that take an additional suffix in the possessive
 !!The stems
 
 !Animate Nouns
+
+
 
 
 
@@ -416,8 +428,12 @@ The stems
 
  * LEXICON ANDECL  for the animate declension
 
+ * LEXICON ANDECLPROF  for the animate declension
+
+
  * LEXICON INDECL  for the inanimate declension
 
+LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reducedm diminuitve suffixes
 
 
  * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim
