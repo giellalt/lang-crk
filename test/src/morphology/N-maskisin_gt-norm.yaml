@@ -1,0 +1,32 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - maskisin - ok : # -m inanimate noun
+     maskisin+N+IN+Sg: maskisin
+     maskisin+N+IN+Pl: maskisina
+     maskisin+N+IN+Loc: maskisinihk
+     maskisin+N+IN+Sg+Px1Sg: nimaskisin
+     maskisin+N+IN+Sg+Px2Sg: kimaskisin
+     maskisin+N+IN+Sg+Px3Sg: omaskisin
+     maskisin+N+IN+Sg+Px1Pl: nimaskisininân
+     maskisin+N+IN+Sg+Px12Pl: kimaskisininaw
+     maskisin+N+IN+Sg+Px2Pl: kimaskisiniwâw
+     maskisin+N+IN+Sg+Px3Pl: omaskisiniwâw
+     maskisin+N+IN+Pl+Px1Sg: nimaskisina
+     maskisin+N+IN+Pl+Px2Sg: kimaskisina
+     maskisin+N+IN+Pl+Px3Sg: omaskisina
+     maskisin+N+IN+Pl+Px1Pl: nimaskisininâna
+     maskisin+N+IN+Pl+Px12Pl: kimaskisininawa
+     maskisin+N+IN+Pl+Px2Pl: kimaskisiniwâwa
+     maskisin+N+IN+Pl+Px3Pl: omaskisiniwâwa
+     
+     
+     
