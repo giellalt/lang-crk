@@ -115,14 +115,6 @@ Vx:0 <=> _ %>:0 Vx ;
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
 t:c <=> :* _ :* %^DIM:0 ;
 
-!"Dimutives - delete suffix intital s in stems containing t" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 2. The suffix is modeled as -sis, hence the first s must be delted to get ocrrect surface form is
-!!!s:0 <=> t:c :* %>:0 _ %^DIM:0 ;
-
-!"In Vow+w final stems with Diminutives: drop w and add -sis" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthended
-!!w:0 <=> Vow _ %>:0 s: %^DIM:0 ;
-
 
 "In Vow+y final stems with Diminutives, part 1: delete y" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are legthened
