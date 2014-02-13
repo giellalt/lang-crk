@@ -1,0 +1,65 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/aANlyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/aANlyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - niska - ok : # -m animate noun
+     niska+N+AN+Sg: niska
+     niska+N+AN+Pl: niskak
+     niska+N+AN+Loc: niskihk
+     niska+N+AN+Dim+Sg: [niskisis, niskasis]
+     niska+N+AN+Dim+Pl: [niskisisak, niskasisak]
+
+     niska+N+AN+Sg+Px1Sg: niniska
+     niska+N+AN+Sg+Px2Sg: kiniska
+     niska+N+AN+Sg+Px3Sg: oniska
+     niska+N+AN+Sg+Px3iSg: oniskiyiw # correct?
+     niska+N+AN+Sg+Px1Pl: niniskanân
+     niska+N+AN+Sg+Px12Pl: kiniskanân
+     niska+N+AN+Sg+Px2Pl: kiniskâw
+     niska+N+AN+Sg+Px3Pl: oniskâw
+     niska+N+AN+Sg+Px3iPl: oniskayiw
+
+     niska+N+AN+Pl+Px1Sg: niniskak
+     niska+N+AN+Pl+Px2Sg: kiniskak
+     niska+N+AN+Pl+Px3Sg: oniska
+     niska+N+AN+Pl+Px3iSg: oniskiyiwa
+     niska+N+AN+Pl+Px1Pl: niniskinânak
+     niska+N+AN+Pl+Px12Pl: kiniskanawak
+     niska+N+AN+Pl+Px2Pl: kiniskiwâwak
+     niska+N+AN+Pl+Px3Pl: oniskawâwa
+     niska+N+AN+Pl+Px3iPl: oniskayiwa
+
+     niska+N+AN+Dim+Sg+Px1Sg: niniskisis
+     niska+N+AN+Dim+Sg+Px2Sg: kiniskisis
+     niska+N+AN+Dim+Sg+Px3Sg: oniskisis
+     niska+N+AN+Dim+Sg+Px3iSg: oniskisisiyiw
+     niska+N+AN+Dim+Sg+Px1Pl: niniskisisnân
+     niska+N+AN+Dim+Sg+Px12Pl: kiniskisisnân
+     niska+N+AN+Dim+Sg+Px2Pl: kiniskisisâw
+     niska+N+AN+Dim+Sg+Px3Pl: oniskisisâw
+     niska+N+AN+Dim+Sg+Px3iPl: oniskisisyiw
+ 
+     niska+N+AN+Dim+Pl+Px1Sg: niniskasisak
+     niska+N+AN+Dim+Pl+Px2Sg: kiniskasisak
+     niska+N+AN+Dim+Pl+Px3Sg: oniskasisa
+     niska+N+AN+Dim+Pl+Px3iSg: oniskasisiyiwa
+     niska+N+AN+Dim+Pl+Px1Pl: niniskasisinânak
+     niska+N+AN+Dim+Pl+Px12Pl: kiniskasisnawak
+     niska+N+AN+Dim+Pl+Px2Pl: kiniskasisiwâwak
+     niska+N+AN+Dim+Pl+Px3Pl: oniskasiswâwa
+     niska+N+AN+Dim+Pl+Px3iPl: oniskasisyiwa
+     
+     
+     
+     
+     
+     
+     
+     

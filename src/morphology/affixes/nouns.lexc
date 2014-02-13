@@ -146,7 +146,6 @@ LEXICON AN_SUFF_SG_INAL !!= * @CODE@ , see above for relation to AN_SUFF_SG
 ! < "+Px3iPl":0 0:y 0:i 0:w     "@U.noun.3ipl@" > SG_ ; ! obviative plural possessor, not in yaml
 
 
-
 LEXICON AN_SUFF_PL !!= * @CODE@ 
 < "+Px1Sg":0 "@U.noun.1sg@" >  PL_AK ; !
 < "+Px2Sg":0 "@U.noun.2sg@" >  PL_AK ; !
@@ -168,7 +167,7 @@ LEXICON IN_SUFF_SG !!= * @CODE@
 < "+Px12Pl":0 0:i 0:n 0:a 0:w     "@U.noun.12pl@" > SG_ ; ! inclusive Pl
 < "+Px2Pl":0  0:i 0:w 0:â 0:w "@U.noun.2pl@"  > SG_ ; !
 < "+Px3Pl":0  0:i 0:w 0:â 0:w     "@U.noun.3pl@"  > SG_ ; !
-< "+Px3iPl":0 0:y 0:i 0:w     "@U.noun.3isg@" > SG_ ; ! obviative plural possessor
+< "+Px3iPl":i 0:y 0:i 0:w     "@U.noun.3isg@" > SG_ ; ! obviative plural possessor
 
 
 LEXICON IN_SUFF_PL !!= * @CODE@ 
@@ -180,7 +179,7 @@ LEXICON IN_SUFF_PL !!= * @CODE@
 < "+Px12Pl":0 0:i 0:n 0:a 0:w     "@U.noun.12pl@" > PL_A ; ! inclusive Pl
 < "+Px2Pl":0  0:i 0:w 0:â 0:w "@U.noun.2pl@" > PL_A ; !
 < "+Px3Pl":0  0:i 0:w 0:â 0:w     "@U.noun.3pl@" > PL_A ; !
-< "+Px3iPl":0 0:y 0:i 0:w     "@U.noun.3isg@" > PL_A ; ! obviative plural possessor
+< "+Px3iPl":i 0:y 0:i 0:w     "@U.noun.3isg@" > PL_A ; ! obviative plural possessor
 
 
 LEXICON ANKWDECL_SUFF_SG !!= * @CODE@ 
