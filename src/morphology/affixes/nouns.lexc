@@ -54,21 +54,12 @@ LEXICON IRREGULARINFL !!= * @CODE@ is also there to handle the highly irregular 
 +N+AN: AN_DIM_IRR_PL ;
 
 
-
-
-
 LEXICON ANKWDECL !!= * @CODE@ takes -om as extra suffix in possessed form
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
 +N+AN+Sg: ANKWDECL_SUFF_SG ;
 +N+AN+Pl: ANKWDECL_SUFF_PL ;
-
-LEXICON INALIENABLEDECL !!= * @CODE@
-+N+AN+Sg: INAL_SUFF_SG ;
-+N+AN+Pl: INAL_SUFF_PL ;
-
-
 
 !! !!Diminutive suffixes
 
