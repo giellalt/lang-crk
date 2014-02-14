@@ -86,7 +86,10 @@ i:ô <=> o: y:  %>:0  _ %^LC:0  ;
 !! __@RULENAME@__ adds nâhk after êw 1: change w to n
 w:n <=> [ê|ô] _  %>:0 i: %^LC:0  ;
 
-  
+!"Double i-vowel with locatives"
+!!i:0 <=> Vow %> _ %^LC:0  ;
+
+
 "possessive prefxes"
 !! __@RULENAME@__ 
 t2:t <=> _ %>:0 Vow ;
@@ -148,13 +151,7 @@ i:0 <=> k: w: a: %>:0 _ s: %^DIM:0 ;
 
 
 
-!Rules changing the form of atim when possessed ! Still considering another means of doing this
 
-!"Change atim to item in possessed form 1"
-!a:0 <=> %> _ t: i: m: ;
-
-!"Change atim to item in possessed forms 2"
-!i:ê <=> %> a: t: _ m: ;
 
 
 

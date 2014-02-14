@@ -71,15 +71,15 @@ LEXICON IN
 @U.noun.abs@  INSTEMLIST ; 
 
 !! With prefixes, forming the possessive declension
-< 0:n 0:i "@U.noun.1sg@" > INSTEMS ; !
-< 0:k 0:i "@U.noun.2sg@" > INSTEMS ; !
-< 0:o "@U.noun.3sg@" > INSTEMS ; !
-< 0:o "@U.noun.3isg@" 0:"t2" > INSTEMS ;    ! 3-singular-obviative
-< 0:n 0:i "@U.noun.1pl@" > INSTEMS ; ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@" > INSTEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@" > INSTEMS ; !
-< 0:o "@U.noun.3pl@" > INSTEMS ; !
-< 0:o "@U.noun.3ipl@" 0:"t2" > INSTEMS ;       ! 3-plural-obviate
+< 0:n 0:i "@U.noun.1sg@"  0:"t2"  > INSTEMS ; !
+< 0:k 0:i "@U.noun.2sg@"  0:"t2"  > INSTEMS ; !
+< 0:o     "@U.noun.3sg@"  0:"t2"  > INSTEMS ; !
+< 0:o     "@U.noun.3isg@" 0:"t2"  > INSTEMS ;    ! 3-singular-obviative
+< 0:n 0:i "@U.noun.1pl@"  0:"t2"  > INSTEMS ; ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@" 0:"t2"  > INSTEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@"  0:"t2"  > INSTEMS ; !
+< 0:o     "@U.noun.3pl@"  0:"t2"  > INSTEMS ; !
+< 0:o     "@U.noun.3ipl@" 0:"t2"  > INSTEMS ;       ! 3-plural-obviate
 
 
 
@@ -196,6 +196,9 @@ askihkw ANKWDECL ;
 LEXICON INALIENABLESTEMS
 maniway+N+IN+Sg+Px3Sg:maniway # ; !"someone's cheek"
 otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade"; Listed as a fully inflected form until we can ascertain the proper root form and account for the prefix variations, eg. ma- in maniway vs. mî- in mîpit
+otehye+N+IN+Pl+Px3Sg:otehya # ;
+
+
 
 !! !Inanimate Nouns
 !   ===============
@@ -229,7 +232,7 @@ iskotêw+Dim:iskocês INDECLPROF "fire" ;
 wiyâkan INDECL "bowl" ;
 wiyâkan+Dim:wiyâkanis INDECLPROF "bowl" ;
 kîkisepâ INDECL "morning" ;
-
+ôsi INDECL "canoe" ;
 
 
 ! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
