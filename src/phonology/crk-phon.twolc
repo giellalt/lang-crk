@@ -33,9 +33,9 @@ Rules
 "h glottal stop for initial vowel stems in Conjunctive"
 %^EGLOT:h <=> _ :Vow ;
 
-"Suffix a Deletion in Vowel Final Stems"
+"Suffix vowel Deletion in Vowel Final Stems"
 !! __@RULENAME@__ gives maskwa + ak = plural maskwak
-Vx:0 <=> _ %>:0 :Vow ;
+Vx:0 <=> _ %>:0 *: :Vow ;
 	where Vx in ( a e i o â ê î ô ) ;
 
 "w Insertion in Front of Vowel Initial Suffix after ksv c"
