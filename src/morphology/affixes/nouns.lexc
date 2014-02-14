@@ -19,8 +19,8 @@ LEXICON ANDECLPROF !!= Declensions for nouns taking reduced diminutive at by mor
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
-+N+AN+Sg: AN_SUFF_SG ;
-+N+AN+Pl: AN_SUFF_PL ;
++N+AN+Sg:%> AN_SUFF_SG ;
++N+AN+Pl:%> AN_SUFF_PL ;
 +N+AN:%> AN_SUFF_LOC ;
 
 LEXICON IRREGULARDECL	!!= * @CODE@ is there to handle the highly irregular atim and mistatim
@@ -295,7 +295,7 @@ LEXICON SG_ !!= * @CODE@
 
 
 LEXICON PL_A !!= * @CODE@ 
-:%>a # ;
+ :%>a # ;
 
 
 LEXICON PL_AK !!= * @CODE@ 
