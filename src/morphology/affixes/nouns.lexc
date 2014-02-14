@@ -55,6 +55,7 @@ LEXICON INDECL !!= * @CODE@ for the inanimate declension
 +N+IN+Pl:%> IN_SUFF_PL ;
 +N+IN:%> IN_DIM_SG ;
 +N+IN:%> IN_DIM_PL ;
++N+IN:%> IN_DIM_LOC ;
 +N+IN:%> IN_SUFF_LOC ;
 
 LEXICON INDECLPROF !!= Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
@@ -82,18 +83,6 @@ LEXICON AN_DIM_PL !!= * @CODE@
 < "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
 < "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 >   AN_SUFF_PL ; !
 
-
-!!  !Diminutive suffixes in inanimate stems
-
-LEXICON IN_DIM_SG !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 >  IN_SUFF_SG ;
-
-LEXICON IN_DIM_PL !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_A ; !
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 >   IN_SUFF_PL ; !
-
-
 !! !Diminutive suffixes in animate stems taking the form -osis
 
 LEXICON AN_DIM_IRR_SG !!= * @CODE@
@@ -107,6 +96,25 @@ LEXICON AN_DIM_IRR_ABS !!= * @CODE@
 < "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
 < "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
 < "+Dim":o 0:s 0:%^DIM 0:i 0:s         "@U.noun.abs@" >  LOC ;
+
+
+
+!!  !Diminutive suffixes in inanimate stems
+
+LEXICON IN_DIM_SG !!= * @CODE@
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 >  IN_SUFF_SG ;
+
+LEXICON IN_DIM_PL !!= * @CODE@
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_A ; !
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 >   IN_SUFF_PL ; !
+
+LEXICON IN_DIM_LOC !!= * @CODE@
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "@U.noun.abs@" >  LOC ; !
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s > IN_SUFF_LOC ;
+
+
+
 
 
 
@@ -295,7 +303,7 @@ LEXICON SG_ !!= * @CODE@
 
 
 LEXICON PL_A !!= * @CODE@ 
- :%>a # ;
+:%>a # ;
 
 
 LEXICON PL_AK !!= * @CODE@ 
