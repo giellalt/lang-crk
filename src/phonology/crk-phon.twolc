@@ -35,7 +35,7 @@ Rules
 
 "Suffix vowel deletion in vowel final stems"
 !! __@RULENAME@__ deletes stem vowel in vowel final stems
-Vx:0 <=> _ %>:0 *: :Vow ;
+Vx:0 <=> _ %>:0 Vow ;
 	where Vx in ( a e i o â ê î ô ) ;
 
 "w Insertion in Front of Vowel Initial Suffix after ksv c"
