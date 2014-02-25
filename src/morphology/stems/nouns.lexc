@@ -133,43 +133,43 @@ LEXICON ANSTEMS
  0:%> ANSTEMLIST ;
 
 LEXICON ANSTEMLIST
-inini ANDECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.
-nâpês ANDECL "boy" ;
-nâpês+Dim:nâpêsis ANDECLPROF "little boy" ;
-apiscacihkos ANDECL "antelope" ;
-mâyatihk ANDECL "bighorn sheep" ;
-mâyatihk+Dim:mâyacihkos ANDECLPROF "little bighorn sheep" ;
-atihk ANDECL "caribou" ;
-atihk+Dim:acihkos ANDECLPROF "little caribou" ;
-apisimôsos ANDECL "deer" ; ! apisimôsosak
-apisimôsos+Dim:apisimôsosis ANDECLPROF "little deer" ; ! apisimôsosak
-mistatim IRREGULARDECL "horse" ; ! mistatimwak
-môswa ANDECL "moose" ; ! môswak
-môswa+Dim:môsos ANDECLPROF "little moose" ; ! môswak
-maskwa ANDECL "bear" ; ! maskwak
-maskwa+Dim:maskosis ANDECLPROF "little moose" ; ! môswak
-okistatowân ANDECL "grizzly bear" ; ! okistatowânak
-okistatowân+Dim:okiscacowânis ANDECLPROF "little grizzly bear" ; ! okistatowânak
-wâpask ANDECL "polar bear" ; ! wâpaskwak
-wâpask+Dim:wâpaskos ANDECLPROF "little polar bear" ; ! wâpaskwak
-sîsîp ANDECL "duck" ;
-sîsîp+Dim:sîsîpis ANDECL "duckling" ;
-iskwêw ANDECL "a woman" ;
-asikan ANDECL "sock" ;
-asikan+Dim:asikanis ANDECLPROF "little sock" ;
-wâwaskesiw ANDECL "elk" ;
-oskâtâsk ANDECL "carrot" ;
-oskâtâsk+Dim:oskâcâskos ANDECLPROF "little carrot" ;
-minôs ANDECL "cat" ;
-minôs+Dim:minôsis ANDECLPROF "little cat" ;
+apiscacihkos ANDECL "antelope" ;	
+apisimôsos ANDECL "deer" ; ! apisimôsosak	
+apisimôsos+Dim:apisimôsosis ANDECLPROF "little deer" ; ! apisimôsosak	
+asikan ANDECL "sock" ;	
+asikan+Dim:asikanis ANDECLPROF "little sock" ;	
+asiniy ANDECL "stone" ;	
+atihk ANDECL "caribou" ;	
+atihk+Dim:acihkos ANDECLPROF "little caribou" ;	
+inini ANDECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.	
+iskwêw ANDECL "a woman" ;	
+maskwa ANDECL "bear" ; ! maskwak	
+maskwa+Dim:maskosis ANDECLPROF "little moose" ; ! môswak	
+mâyatihk ANDECL "bighorn sheep" ;	
+mâyatihk+Dim:mâyacihkos ANDECLPROF "little bighorn sheep" ;	
+minôs ANDECL "cat" ;	
+minôs+Dim:minôsis ANDECLPROF "little cat" ;	
+mistatim IRREGULARDECL "horse" ; ! mistatimwak	
+mostos ANDECL "cow" ;	
+mostos+Dim:mostosis ANDECLPROF "little cow" ;	
+môswa ANDECL "moose" ; ! môswak	
+môswa+Dim:môsos ANDECLPROF "little moose" ; ! môswak	
+nâpês ANDECL "boy" ;	
+nâpês+Dim:nâpêsis ANDECLPROF "little boy" ;	
+nehiyaw ANDECL "Cree Person" ;	
+niska ANDECL "Canada goose" ;	
+okistatowân ANDECL "grizzly bear" ; ! okistatowânak	
+okistatowân+Dim:okiscacowânis ANDECLPROF "little grizzly bear" ; ! okistatowânak	
+oskâtâsk ANDECL "carrot" ;	
+oskâtâsk+Dim:oskâcâskos ANDECLPROF "little carrot" ;	
 pisiw	ANDECL "cougar" ;
-nehiyaw ANDECL "Cree Person" ;
-asiniy ANDECL "stone" ;
-sikâk ANDECL "skunk" ;
-sikâk+Dim:sikâkos ANDECLPROF "little skunk" ;
-mostos ANDECL "cow" ;
-mostos+Dim:mostosis ANDECLPROF "little cow" ;
-niska ANDECL "Canada goose" ;
+sikâk ANDECL "skunk" ;	
+sikâk+Dim:sikâkos ANDECLPROF "little skunk" ;	
+sîsîp ANDECL "duck" ;	
+sîsîp+Dim:sîsîpis ANDECL "duckling" ;	
+wâpask ANDECL "polar bear" ; ! wâpaskwak	
+wâpask+Dim:wâpaskos ANDECLPROF "little polar bear" ; ! wâpaskwak	
+wâwaskesiw ANDECL "elk" ;
 
 
 LEXICON IRREGANSTEMS
