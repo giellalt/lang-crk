@@ -1,0 +1,84 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/aANlyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/aANlyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - sikâk - ok : # -k final animate noun 'goose'
+     sikâk+N+AN+Sg: sikâk
+     sikâk+N+AN+Pl: sikâkk
+     sikâk+N+AN+Loc: niskihk
+     sikâk+N+AN+Dim+Sg: sikâksis
+     sikâk+N+AN+Dim+Pl: sikâksisak
+
+     sikâk+N+AN+Sg+Px1Sg: nisikâk
+     sikâk+N+AN+Sg+Px2Sg: kisikâk
+     sikâk+N+AN+Sg+Px3Sg: osikâk
+     sikâk+N+AN+Sg+Px3iSg: osikâkyiw
+     sikâk+N+AN+Sg+Px1Pl: nisikâknân
+     sikâk+N+AN+Sg+Px12Pl: kisikâknân
+     sikâk+N+AN+Sg+Px2Pl: kisikâkâw
+     sikâk+N+AN+Sg+Px3Pl: osikâkâw
+     sikâk+N+AN+Sg+Px3iPl: osikâkiyiw
+
+     sikâk+N+AN+Pl+Px1Sg: nisikâkak
+     sikâk+N+AN+Pl+Px2Sg: kisikâkak
+     sikâk+N+AN+Pl+Px3Sg: osikâka
+     sikâk+N+AN+Pl+Px3iSg: osikâkiyiwa
+     sikâk+N+AN+Pl+Px1Pl: nisikâkinânak
+     sikâk+N+AN+Pl+Px12Pl: kisikâknawak
+     sikâk+N+AN+Pl+Px2Pl: kisikâkiwâwak
+     sikâk+N+AN+Pl+Px3Pl: osikâkwâwa
+     sikâk+N+AN+Pl+Px3iPl: osikâkyiwa
+
+     sikâk+N+AN+Dim+Sg+Px1Sg: nisikâkosis
+     sikâk+N+AN+Dim+Sg+Px2Sg: kisikâkosis
+     sikâk+N+AN+Dim+Sg+Px3Sg: osikâkosis
+     sikâk+N+AN+Dim+Sg+Px3iSg: osikâkosisiyiw
+     sikâk+N+AN+Dim+Sg+Px1Pl: nisikâkosisnân
+     sikâk+N+AN+Dim+Sg+Px12Pl: kisikâkosisnân
+     sikâk+N+AN+Dim+Sg+Px2Pl: kisikâkosisâw
+     sikâk+N+AN+Dim+Sg+Px3Pl: osikâkosisâw
+     sikâk+N+AN+Dim+Sg+Px3iPl: osikâkosisiyiw
+ 
+     sikâk+N+AN+Dim+Pl+Px1Sg: nisikâkisak
+     sikâk+N+AN+Dim+Pl+Px2Sg: kisikâkisak
+     sikâk+N+AN+Dim+Pl+Px3Sg: osikâkisa
+     sikâk+N+AN+Dim+Pl+Px3iSg: osikâkisiyiwa
+     sikâk+N+AN+Dim+Pl+Px1Pl: nisikâkisinânak
+     sikâk+N+AN+Dim+Pl+Px12Pl: kisikâksisnawak
+     sikâk+N+AN+Dim+Pl+Px2Pl: kisikâkisnawak
+     sikâk+N+AN+Dim+Pl+Px3Pl: kisikâkisiwâwak
+     sikâk+N+AN+Dim+Pl+Px3iPl: osikâkisyiwa
+     
+     sikâk+N+AN+Px1Sg+Loc: nitsikâkihk
+     sikâk+N+AN+Px2Sg+Loc: kitsikâkihk
+     sikâk+N+AN+Px3Sg+Loc: otsikâkihk
+     sikâk+N+AN+Px3iSg+Loc: otsikâkyihk
+     sikâk+N+AN+Px1Pl+Loc: nisinânihk
+     sikâk+N+AN+Px12Pl+Loc: kitsikâknâhk
+     sikâk+N+AN+Px2Pl+Loc: kisiwâwihk
+     sikâk+N+AN+Px3Pl+Loc: osiwâwihk 
+     sikâk+N+AN+Px3iPl+Loc: otsikâkyihk
+
+     sikâk+N+AN+Dim+Px1Sg+Loc: nisikâkisihk
+     sikâk+N+AN+Dim+Px2Sg+Loc: kisikâkisihk
+     sikâk+N+AN+Dim+Px3Sg+Loc: osikâkisihk
+     sikâk+N+AN+Dim+Px3iSg+Loc: osikâkisiyihk
+     sikâk+N+AN+Dim+Px1Pl+Loc: nisikâkisinânihk
+     sikâk+N+AN+Dim+Px12Pl+Loc: kisikâkisinâhk
+     sikâk+N+AN+Dim+Px2Pl+Loc: kisikâkisiwâwihk
+     sikâk+N+AN+Dim+Px3Pl+Loc: osikâkisiwâwihk
+     sikâk+N+AN+Dim+Px3iPl+Loc: osikâkisiyihk
+     
+     
+     
+     
+     
+     
+     
