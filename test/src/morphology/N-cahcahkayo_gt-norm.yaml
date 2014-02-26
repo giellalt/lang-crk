@@ -1,0 +1,77 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/aANlyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/aANlyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - cahcahkayo - ok : # -m animate noun, blackbird
+     cahcahkayo+N+AN+Sg: cahcahkayo
+     cahcahkayo+N+AN+Pl: cahcahkayowak
+     cahcahkayo+N+AN+Loc: cahcahkayohk
+     cahcahkayo+N+AN+Dim+Sg: cahcahkayosis
+     cahcahkayo+N+AN+Dim+Pl: cahcahkayosisak
+
+     cahcahkayo+N+AN+Sg+Px1Sg: nicahcahkayo
+     cahcahkayo+N+AN+Sg+Px2Sg: kicahcahkayo
+     cahcahkayo+N+AN+Sg+Px3Sg: ocahcahkayo
+     cahcahkayo+N+AN+Sg+Px3iSg: ocahcahkayoyiw
+     cahcahkayo+N+AN+Sg+Px1Pl: nicahcahkayonân
+     cahcahkayo+N+AN+Sg+Px12Pl: kicahcahkayonân
+     cahcahkayo+N+AN+Sg+Px2Pl: kiniskâw
+     cahcahkayo+N+AN+Sg+Px3Pl: oniskâw
+     cahcahkayo+N+AN+Sg+Px3iPl: ocahcahkayoyiw
+
+     cahcahkayo+N+AN+Pl+Px1Sg: niôsa
+     cahcahkayo+N+AN+Pl+Px2Sg: kicahcahkayok
+     cahcahkayo+N+AN+Pl+Px3Sg: ocahcahkayo
+     cahcahkayo+N+AN+Pl+Px3iSg: ocahcahkayoyiwa
+     cahcahkayo+N+AN+Pl+Px1Pl: nicahcahkayonâna
+     cahcahkayo+N+AN+Pl+Px12Pl: kicahcahkayonawa
+     cahcahkayo+N+AN+Pl+Px2Pl: kicahcahkayowâwa
+     cahcahkayo+N+AN+Pl+Px3Pl: ocahcahkayowâwa
+     cahcahkayo+N+AN+Pl+Px3iPl: ocahcahkayoyiwa
+
+     cahcahkayo+N+AN+Dim+Sg+Px1Sg: nicahcahkayosis
+     cahcahkayo+N+AN+Dim+Sg+Px2Sg: kicahcahkayosis
+     cahcahkayo+N+AN+Dim+Sg+Px3Sg: ocahcahkayosis
+     cahcahkayo+N+AN+Dim+Sg+Px3iSg: ocahcahkayosisiyiw
+     cahcahkayo+N+AN+Dim+Sg+Px1Pl: nicahcahkayosisinân
+     cahcahkayo+N+AN+Dim+Sg+Px12Pl: kicahcahkayosisinaw
+     cahcahkayo+N+AN+Dim+Sg+Px2Pl: kicahcahkayosisiwâw
+     cahcahkayo+N+AN+Dim+Sg+Px3Pl: ocahcahkayosisiwâw
+     cahcahkayo+N+AN+Dim+Sg+Px3iPl: ocahcahkayosisiyiw
+
+     cahcahkayo+N+AN+Dim+Pl+Px1Sg: nicahcahkayosisa
+     cahcahkayo+N+AN+Dim+Pl+Px2Sg: kicahcahkayosisa
+     cahcahkayo+N+AN+Dim+Pl+Px3Sg: ocahcahkayosisa
+     cahcahkayo+N+AN+Dim+Pl+Px3iSg: ocahcahkayosisiyiwa
+     cahcahkayo+N+AN+Dim+Pl+Px1Pl: nicahcahkayosisinâna
+     cahcahkayo+N+AN+Dim+Pl+Px12Pl: kicahcahkayosisinawa
+     cahcahkayo+N+AN+Dim+Pl+Px2Pl: kicahcahkayosisiwâwa
+     cahcahkayo+N+AN+Dim+Pl+Px3Pl: ocahcahkayosisiwâwa
+     cahcahkayo+N+AN+Dim+Pl+Px3iPl: ocahcahkayosisiyiwa
+
+     cahcahkayo+N+AN+Px1Sg+Loc: nicahcahkayohk
+     cahcahkayo+N+AN+Px2Sg+Loc: kicahcahkayohk
+     cahcahkayo+N+AN+Px3Sg+Loc: ocahcahkayohk
+     cahcahkayo+N+AN+Px3iSg+Loc: ocahcahkayoyihk
+     cahcahkayo+N+AN+Px1Pl+Loc: nisinânihk
+     cahcahkayo+N+AN+Px12Pl+Loc: kicahcahkayonâhk
+     cahcahkayo+N+AN+Px2Pl+Loc: kisiwâwihk
+     cahcahkayo+N+AN+Px3Pl+Loc: osiwâwihk 
+     cahcahkayo+N+AN+Px3iPl+Loc: ocahcahkayoyihk
+
+     cahcahkayo+N+AN+Dim+Px1Sg+Loc: nicahcahkayosisihk
+     cahcahkayo+N+AN+Dim+Px2Sg+Loc: kicahcahkayosisihk
+     cahcahkayo+N+AN+Dim+Px3Sg+Loc: ocahcahkayosisihk
+     cahcahkayo+N+AN+Dim+Px3iSg+Loc: ocahcahkayossiyihk
+     cahcahkayo+N+AN+Dim+Px1Pl+Loc: nicahcahkayosisnânihk
+     cahcahkayo+N+AN+Dim+Px12Pl+Loc: kicahcahkayossinâh
+     cahcahkayo+N+AN+Dim+Px2Pl+Loc: kicahcahkayosiswâwihk
+     cahcahkayo+N+AN+Dim+Px3Pl+Loc: ocahcahkayosiswâwihk
+     cahcahkayo+N+AN+Dim+Px3iPl+Loc: ocahcahkayosisiyihk
