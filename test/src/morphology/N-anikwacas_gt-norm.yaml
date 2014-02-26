@@ -9,12 +9,13 @@ Config:
 
 Tests:
   
-  Noun - anikwacâs - ok : # -m animate noun
+  Noun - anikwacâs - ok : # -m animate noun, squirrel
      anikwacâs+N+AN+Sg: anikwacâs
      anikwacâs+N+AN+Pl: anikwacâsak
      anikwacâs+N+AN+Loc: anikwacâsihk
-     anikwacâs+N+AN+Dim+Sg: anikwacâssis
-     anikwacâs+N+AN+Dim+Pl: anikwacâssisa
+     anikwacâs+N+AN+Dim+Sg: anikwacâsisis
+     anikwacâs+N+AN+Dim+Pl: anikwacâsisisa
+     anikwacâs+N+AN+Dim+Loc: anikwacâsisisihk
 
      anikwacâs+N+AN+Sg+Px1Sg: nitanikwacâs
      anikwacâs+N+AN+Sg+Px2Sg: kitanikwacâs
@@ -36,15 +37,15 @@ Tests:
      anikwacâs+N+AN+Pl+Px3Pl: otanikwacâswâwa
      anikwacâs+N+AN+Pl+Px3iPl: otanikwacâsyiwa
 
-     anikwacâs+N+AN+Dim+Sg+Px1Sg: nitanikwacâssis
-     anikwacâs+N+AN+Dim+Sg+Px2Sg: kitanikwacâssis
-     anikwacâs+N+AN+Dim+Sg+Px3Sg: otanikwacâssis
-     anikwacâs+N+AN+Dim+Sg+Px3iSg: otanikwacâssisiyiw
-     anikwacâs+N+AN+Dim+Sg+Px1Pl: nitanikwacâssisinân
-     anikwacâs+N+AN+Dim+Sg+Px12Pl: kitanikwacâssisinaw
-     anikwacâs+N+AN+Dim+Sg+Px2Pl: kitanikwacâssisiwâw
-     anikwacâs+N+AN+Dim+Sg+Px3Pl: otanikwacâssisiwâw
-     anikwacâs+N+AN+Dim+Sg+Px3iPl: otanikwacâssisiyiw
+     anikwacâs+N+AN+Dim+Sg+Px1Sg: nitanikwacâsisis
+     anikwacâs+N+AN+Dim+Sg+Px2Sg: kitanikwacâsisis
+     anikwacâs+N+AN+Dim+Sg+Px3Sg: otanikwacâsisis
+     anikwacâs+N+AN+Dim+Sg+Px3iSg: otanikwacâsisisiyiw
+     anikwacâs+N+AN+Dim+Sg+Px1Pl: nitanikwacâsisisinân
+     anikwacâs+N+AN+Dim+Sg+Px12Pl: kitanikwacâsisisinaw
+     anikwacâs+N+AN+Dim+Sg+Px2Pl: kitanikwacâsisisiwâw
+     anikwacâs+N+AN+Dim+Sg+Px3Pl: otanikwacâsisisiwâw
+     anikwacâs+N+AN+Dim+Sg+Px3iPl: otanikwacâsisisiyiw
 
      anikwacâs+N+AN+Dim+Pl+Px1Sg: nitanikwacâsisak
      anikwacâs+N+AN+Dim+Pl+Px2Sg: kitanikwacâsisak

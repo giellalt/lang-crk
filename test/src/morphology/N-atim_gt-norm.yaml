@@ -13,11 +13,14 @@ Tests:
      atim+N+AN+Sg: atim # asdf
      atim+N+AN+Pl: atimwak #test
      atim+N+AN+Loc: atimohk # really rare form
+     atim+N+AN+Dim+Sg: acimosis
+     atim+N+AN+Dim+Pl: acimosisak
+     atim+N+AN+Dim+Loc: acimosisihk
      
      atim+N+AN+Sg+Px1Sg: nitêm
      atim+N+AN+Sg+Px2Sg: kitêm
-     atim+N+AN+Sg+Px3Sg+Obv: otêma # final a is because of obviative 3-on-3 marking
-     atim+N+AN+Sg+Px3iSg+Obv: otêmiyiwa # obviative possessor, always has -a suffix
+     atim+N+AN+Sg+Px3Sg: otêma
+     atim+N+AN+Sg+Px3iSg: otêmiyiwa
      atim+N+AN+Sg+Px1Pl: nitêminân
      atim+N+AN+Sg+Px12Pl: kitêminaw
      atim+N+AN+Sg+Px2Pl: kitêmiwâw
@@ -26,20 +29,50 @@ Tests:
      
      atim+N+AN+Pl+Px1Sg: nitêmak
      atim+N+AN+Pl+Px2Sg: kitêmak
-     atim+N+AN+Pl+Px3Sg+Obv: otêma
-     atim+N+AN+Pl+Px3iSg+Obv: otêmiyiwa
+     atim+N+AN+Pl+Px3Sg: otêma
+     atim+N+AN+Pl+Px3iSg: otêmiyiwa
      atim+N+AN+Pl+Px1Pl: nitêminânak
      atim+N+AN+Pl+Px12Pl: kitêminawak
      atim+N+AN+Pl+Px2Pl: kitêmiwâwak
-     atim+N+AN+Pl+Px3Pl+Obv: otêmiwâwa # final a is because of obviative 3-on-3 marking
+     atim+N+AN+Pl+Px3Pl+Obv: otêmiwâwa
      atim+N+AN+Pl+Px3iPl+Obv: otêmiyiwa
-     atim+N+AN+Dim+Sg: acimosis
-     atim+N+AN+Dim+Pl: acimosisak
-     atim+N+AN+Dim+Loc: acimosisihk #rare form, but theoretically correct
+     
      atim+N+AN+Dim+Sg+Px1Sg: nicêmosis
      atim+N+AN+Dim+Sg+Px2Sg: kicêmosis
-     atim+N+AN+Dim+Sg+Px3Sg+Obv: ocêmosisa
+     atim+N+AN+Dim+Sg+Px3Sg: ocêmosisa
+     atim+N+AN+Dim+Sg+Px3iSg: ocêmosisiyiwa
      atim+N+AN+Dim+Sg+Px1Pl: nicêmosisinân
      atim+N+AN+Dim+Sg+Px12Pl: kicêmosisinaw
      atim+N+AN+Dim+Sg+Px2Pl: kicêmosisiwâw
      atim+N+AN+Dim+Sg+Px3Pl+Obv: ocêmosisiwâwa
+     atim+N+AN+Dim+Sg+Px3iSg: ocêmosisiyiwa
+     
+          atim+N+AN+Dim+Pl+Px1Sg: nitêmisisak
+     atim+N+AN+Dim+Pl+Px2Sg: kitêmisisak
+     atim+N+AN+Dim+Pl+Px3Sg: otêmisisa
+     atim+N+AN+Dim+Pl+Px3iSg: otêmisisiyiwa
+     atim+N+AN+Dim+Pl+Px1Pl: nitêmisisinânak
+     atim+N+AN+Dim+Pl+Px12Pl: kitêmisisinawak
+     atim+N+AN+Dim+Pl+Px2Pl: kitêmisisiwâwak
+     atim+N+AN+Dim+Pl+Px3Pl: otêmisisiwâwa
+     atim+N+AN+Dim+Pl+Px3iPl: otêmisisiyiwa
+     
+     atim+N+AN+Px1Sg+Loc: nitêmihk
+     atim+N+AN+Px2Sg+Loc: kitêmihk
+     atim+N+AN+Px3Sg+Loc: otêmihk
+     atim+N+AN+Px3iSg+Loc: otêmihk
+     atim+N+AN+Px1Pl+Loc: nisinânihk
+     atim+N+AN+Px12Pl+Loc: kitêmnâhk
+     atim+N+AN+Px2Pl+Loc: kisiwâwihk
+     atim+N+AN+Px3Pl+Loc: osiwâwihk 
+     atim+N+AN+Px3iPl+Loc: otêmihk
+     
+     atim+N+AN+Dim+Px1Sg+Loc: nicêmisisihk
+     atim+N+AN+Dim+Px2Sg+Loc: kicêmisisihk
+     atim+N+AN+Dim+Px3Sg+Loc: ocêmisisihk
+     atim+N+AN+Dim+Px3iSg+Loc: ocêmssiyihk
+     atim+N+AN+Dim+Px1Pl+Loc: nicêmisisnânihk
+     atim+N+AN+Dim+Px12Pl+Loc: kicêmosinâh
+     atim+N+AN+Dim+Px2Pl+Loc: kicêmisiswâwihk
+     atim+N+AN+Dim+Px3Pl+Loc: ocêmisiswâwihk
+     atim+N+AN+Dim+Px3iPl+Loc: ocêmisisiyihk

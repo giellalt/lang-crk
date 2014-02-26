@@ -9,12 +9,13 @@ Config:
 
 Tests:
   
-  Noun - niska - ok : # -m animate noun
+  Noun - niska - ok : # -m animate noun, Canada goose
      niska+N+AN+Sg: niska
      niska+N+AN+Pl: niskak
      niska+N+AN+Loc: niskihk
      niska+N+AN+Dim+Sg: [niskisis, niskasis]
      niska+N+AN+Dim+Pl: [niskisisak, niskasisak]
+     niska+N+AN+Dim+Loc: niskisisihk
 
      niska+N+AN+Sg+Px1Sg: niniska
      niska+N+AN+Sg+Px2Sg: kiniska
@@ -56,10 +57,22 @@ Tests:
      niska+N+AN+Dim+Pl+Px3Pl: oniskasiswâwa
      niska+N+AN+Dim+Pl+Px3iPl: oniskasisyiwa
      
-     
-     
-     
-     
-     
-     
-     
+     niska+N+AN+Px1Sg+Loc: niniskahk
+     niska+N+AN+Px2Sg+Loc: kiniskahk
+     niska+N+AN+Px3Sg+Loc: oniskahk
+     niska+N+AN+Px3iSg+Loc: oniskayihk
+     niska+N+AN+Px1Pl+Loc: nisinânihk
+     niska+N+AN+Px12Pl+Loc: kiniskanâhk
+     niska+N+AN+Px2Pl+Loc: kisiwâwihk
+     niska+N+AN+Px3Pl+Loc: osiwâwihk 
+     niska+N+AN+Px3iPl+Loc: oniskayihk
+
+     niska+N+AN+Dim+Px1Sg+Loc: niniskaisisihk
+     niska+N+AN+Dim+Px2Sg+Loc: kiniskaisisihk
+     niska+N+AN+Dim+Px3Sg+Loc: oniskaisisihk
+     niska+N+AN+Dim+Px3iSg+Loc: oniskassiyihk
+     niska+N+AN+Dim+Px1Pl+Loc: niniskaisisnânihk
+     niska+N+AN+Dim+Px12Pl+Loc: kiniskassinâh
+     niska+N+AN+Dim+Px2Pl+Loc: kiniskaisiswâwihk
+     niska+N+AN+Dim+Px3Pl+Loc: oniskaisiswâwihk
+     niska+N+AN+Dim+Px3iPl+Loc: oniskaisisiyihk
