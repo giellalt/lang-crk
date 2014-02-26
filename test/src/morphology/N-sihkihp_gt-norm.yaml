@@ -1,0 +1,77 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/aANlyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/aANlyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - sihkihp - ok : # -m animate noun, blackbird
+     sihkihp+N+AN+Sg: sihkihp
+     sihkihp+N+AN+Pl: sihkihpwak
+     sihkihp+N+AN+Loc: sihkihpihk
+     sihkihp+N+AN+Dim+Sg: sihkihpsis
+     sihkihp+N+AN+Dim+Pl: sihkihpsisak
+
+     sihkihp+N+AN+Sg+Px1Sg: nisihkihp
+     sihkihp+N+AN+Sg+Px2Sg: kisihkihp
+     sihkihp+N+AN+Sg+Px3Sg: osihkihp
+     sihkihp+N+AN+Sg+Px3iSg: osihkihpyiw
+     sihkihp+N+AN+Sg+Px1Pl: nisihkihpnân
+     sihkihp+N+AN+Sg+Px12Pl: kisihkihpnân
+     sihkihp+N+AN+Sg+Px2Pl: kiniskâw
+     sihkihp+N+AN+Sg+Px3Pl: oniskâw
+     sihkihp+N+AN+Sg+Px3iPl: osihkihpyiw
+
+     sihkihp+N+AN+Pl+Px1Sg: nisihkihpak
+     sihkihp+N+AN+Pl+Px2Sg: kisihkihpak
+     sihkihp+N+AN+Pl+Px3Sg: osihkihpa
+     sihkihp+N+AN+Pl+Px3iSg: osihkihpyiwak
+     sihkihp+N+AN+Pl+Px1Pl: nisihkihpnânak
+     sihkihp+N+AN+Pl+Px12Pl: kisihkihpnawak
+     sihkihp+N+AN+Pl+Px2Pl: kisihkihpwâwak
+     sihkihp+N+AN+Pl+Px3Pl: osihkihpwâwa
+     sihkihp+N+AN+Pl+Px3iPl: osihkihpyiwa
+
+     sihkihp+N+AN+Dim+Sg+Px1Sg: nisihkihpisis
+     sihkihp+N+AN+Dim+Sg+Px2Sg: kisihkihpisis
+     sihkihp+N+AN+Dim+Sg+Px3Sg: osihkihpisis
+     sihkihp+N+AN+Dim+Sg+Px3iSg: osihkihpisisiyiw
+     sihkihp+N+AN+Dim+Sg+Px1Pl: nisihkihpisisinân
+     sihkihp+N+AN+Dim+Sg+Px12Pl: kisihkihpisisinaw
+     sihkihp+N+AN+Dim+Sg+Px2Pl: kisihkihpisisiwâw
+     sihkihp+N+AN+Dim+Sg+Px3Pl: osihkihpisisiwâw
+     sihkihp+N+AN+Dim+Sg+Px3iPl: osihkihpisisiyiw
+
+     sihkihp+N+AN+Dim+Pl+Px1Sg: nisihkihpisisak
+     sihkihp+N+AN+Dim+Pl+Px2Sg: kisihkihpisisak
+     sihkihp+N+AN+Dim+Pl+Px3Sg: osihkihpisisak
+     sihkihp+N+AN+Dim+Pl+Px3iSg: osihkihpisisiyiwa
+     sihkihp+N+AN+Dim+Pl+Px1Pl: nisihkihpisisinâna
+     sihkihp+N+AN+Dim+Pl+Px12Pl: kisihkihpisisinawa
+     sihkihp+N+AN+Dim+Pl+Px2Pl: kisihkihpisisiwâwa
+     sihkihp+N+AN+Dim+Pl+Px3Pl: osihkihpisisiwâwa
+     sihkihp+N+AN+Dim+Pl+Px3iPl: osihkihpisisiyiwa
+
+     sihkihp+N+AN+Px1Sg+Loc: nisihkihpihk
+     sihkihp+N+AN+Px2Sg+Loc: kisihkihpihk
+     sihkihp+N+AN+Px3Sg+Loc: osihkihpihk
+     sihkihp+N+AN+Px3iSg+Loc: osihkihpiyihk
+     sihkihp+N+AN+Px1Pl+Loc: nisihkihpinânihk
+     sihkihp+N+AN+Px12Pl+Loc: kisihkihpinâhk
+     sihkihp+N+AN+Px2Pl+Loc: kisihkihpiwâwihk
+     sihkihp+N+AN+Px3Pl+Loc: osihkihpiwâwihk
+     sihkihp+N+AN+Px3iPl+Loc: osihkihpiyihk
+
+     sihkihp+N+AN+Dim+Px1Sg+Loc: nisihkihpisisihk
+     sihkihp+N+AN+Dim+Px2Sg+Loc: kisihkihpisisihk
+     sihkihp+N+AN+Dim+Px3Sg+Loc: osihkihpisisihk
+     sihkihp+N+AN+Dim+Px3iSg+Loc: osihkihpsisiyihk
+     sihkihp+N+AN+Dim+Px1Pl+Loc: nisihkihpisisnânihk
+     sihkihp+N+AN+Dim+Px12Pl+Loc: kisihkihpsisinâhk
+     sihkihp+N+AN+Dim+Px2Pl+Loc: kisihkihpisiswâwihk
+     sihkihp+N+AN+Dim+Px3Pl+Loc: osihkihpisiswâwihk
+     sihkihp+N+AN+Dim+Px3iPl+Loc: osihkihpisisiyihk

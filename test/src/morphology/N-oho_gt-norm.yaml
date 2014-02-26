@@ -1,0 +1,77 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/aANlyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/aANlyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - ôhô - ok : # -m animate noun
+     ôhô+N+AN+Sg: ôhô
+     ôhô+N+AN+Pl: ôhôwak
+     ôhô+N+AN+Loc: ôhôhk
+     ôhô+N+AN+Dim+Sg: ôhisis
+     ôhô+N+AN+Dim+Pl: ôhôsisak
+
+     ôhô+N+AN+Sg+Px1Sg: nitôhô
+     ôhô+N+AN+Sg+Px2Sg: kitôhô
+     ôhô+N+AN+Sg+Px3Sg: otôhô
+     ôhô+N+AN+Sg+Px3iSg: otôhôyiw
+     ôhô+N+AN+Sg+Px1Pl: nitôhônân
+     ôhô+N+AN+Sg+Px12Pl: kitôhônân
+     ôhô+N+AN+Sg+Px2Pl: kANiskâw
+     ôhô+N+AN+Sg+Px3Pl: oniskâw
+     ôhô+N+AN+Sg+Px3iPl: otôhôyiw
+
+     ôhô+N+AN+Pl+Px1Sg: nitôhôwak
+     ôhô+N+AN+Pl+Px2Sg: kitôhôwak
+     ôhô+N+AN+Pl+Px3Sg: otôhôwak
+     ôhô+N+AN+Pl+Px3iSg: otôhôyiwa
+     ôhô+N+AN+Pl+Px1Pl: nitôhinânak
+     ôhô+N+AN+Pl+Px12Pl: kitôhônawak
+     ôhô+N+AN+Pl+Px2Pl: kitôhiwâwak
+     ôhô+N+AN+Pl+Px3Pl: otôhôwâwa
+     ôhô+N+AN+Pl+Px3iPl: otôhôyiwa
+
+     ôhô+N+AN+Dim+Sg+Px1Sg: nitôhôsis
+     ôhô+N+AN+Dim+Sg+Px2Sg: kitôhôsis
+     ôhô+N+AN+Dim+Sg+Px3Sg: otôhôsis
+     ôhô+N+AN+Dim+Sg+Px3iSg: otôhôsisiyiw
+     ôhô+N+AN+Dim+Sg+Px1Pl: nitôhisisnân
+     ôhô+N+AN+Dim+Sg+Px12Pl: kitôhisisnân
+     ôhô+N+AN+Dim+Sg+Px2Pl: kitôhôsisiwâw
+     ôhô+N+AN+Dim+Sg+Px3Pl: otôhôsisiwâw
+     ôhô+N+AN+Dim+Sg+Px3iPl: otôhôsisiyiw
+
+     ôhô+N+AN+Dim+Pl+Px1Sg: nitôhôsisak
+     ôhô+N+AN+Dim+Pl+Px2Sg: kitôhôsisak
+     ôhô+N+AN+Dim+Pl+Px3Sg: otôhôsisa
+     ôhô+N+AN+Dim+Pl+Px3iSg: otôhôsisiyiwak
+     ôhô+N+AN+Dim+Pl+Px1Pl: nitôhôsisinânak
+     ôhô+N+AN+Dim+Pl+Px12Pl: kitôhôsisnawak
+     ôhô+N+AN+Dim+Pl+Px2Pl: kitôhôsisiwâwak
+     ôhô+N+AN+Dim+Pl+Px3Pl: otôhôsisiwâwa
+     ôhô+N+AN+Dim+Pl+Px3iPl: otôhôsisiyiwa
+
+     ôhô+N+AN+Px1Sg+Loc: nitôhôhk
+     ôhô+N+AN+Px2Sg+Loc: kitôhôhk
+     ôhô+N+AN+Px3Sg+Loc: otôhôhk
+     ôhô+N+AN+Px3iSg+Loc: otôhôyihk
+     ôhô+N+AN+Px1Pl+Loc: nisANânihk
+     ôhô+N+AN+Px12Pl+Loc: kitôhônâhk
+     ôhô+N+AN+Px2Pl+Loc: kisiwâwihk
+     ôhô+N+AN+Px3Pl+Loc: osiwâwihk 
+     ôhô+N+AN+Px3iPl+Loc: otôhôyihk
+
+     ôhô+N+AN+Dim+Px1Sg+Loc: nitôhôsisihk
+     ôhô+N+AN+Dim+Px2Sg+Loc: kitôhôsisihk
+     ôhô+N+AN+Dim+Px3Sg+Loc: otôhôsisihk
+     ôhô+N+AN+Dim+Px3iSg+Loc: otôhôssiyihk
+     ôhô+N+AN+Dim+Px1Pl+Loc: nitôhôsisnânihk
+     ôhô+N+AN+Dim+Px12Pl+Loc: kitôhôssANâh
+     ôhô+N+AN+Dim+Px2Pl+Loc: kitôhôsiswâwihk
+     ôhô+N+AN+Dim+Px3Pl+Loc: otôhôsiswâwihk
+     ôhô+N+AN+Dim+Px3iPl+Loc: otôhôsisiyihk
