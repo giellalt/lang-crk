@@ -1,0 +1,77 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/aANlyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/aANlyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - anikwacâs - ok : # -m animate noun
+     anikwacâs+N+AN+Sg: anikwacâs
+     anikwacâs+N+AN+Pl: anikwacâsak
+     anikwacâs+N+AN+Loc: anikwacâsihk
+     anikwacâs+N+AN+Dim+Sg: anikwacâssis
+     anikwacâs+N+AN+Dim+Pl: anikwacâssisa
+
+     anikwacâs+N+AN+Sg+Px1Sg: nitanikwacâs
+     anikwacâs+N+AN+Sg+Px2Sg: kitanikwacâs
+     anikwacâs+N+AN+Sg+Px3Sg: otanikwacâs
+     anikwacâs+N+AN+Sg+Px3iSg: otanikwacâsyiw
+     anikwacâs+N+AN+Sg+Px1Pl: nitanikwacâsnân
+     anikwacâs+N+AN+Sg+Px12Pl: kitanikwacâsnân
+     anikwacâs+N+AN+Sg+Px2Pl: kiniskâw
+     anikwacâs+N+AN+Sg+Px3Pl: oniskâw
+     anikwacâs+N+AN+Sg+Px3iPl: otanikwacâsyiw
+
+     anikwacâs+N+AN+Pl+Px1Sg: nitôsak
+     anikwacâs+N+AN+Pl+Px2Sg: kitanikwacâsak
+     anikwacâs+N+AN+Pl+Px3Sg: otanikwacâsa
+     anikwacâs+N+AN+Pl+Px3iSg: otanikwacâsyiwa
+     anikwacâs+N+AN+Pl+Px1Pl: nitanikwacâsinânak
+     anikwacâs+N+AN+Pl+Px12Pl: kitanikwacâsnawak
+     anikwacâs+N+AN+Pl+Px2Pl: kitanikwacâswâwak
+     anikwacâs+N+AN+Pl+Px3Pl: otanikwacâswâwa
+     anikwacâs+N+AN+Pl+Px3iPl: otanikwacâsyiwa
+
+     anikwacâs+N+AN+Dim+Sg+Px1Sg: nitanikwacâssis
+     anikwacâs+N+AN+Dim+Sg+Px2Sg: kitanikwacâssis
+     anikwacâs+N+AN+Dim+Sg+Px3Sg: otanikwacâssis
+     anikwacâs+N+AN+Dim+Sg+Px3iSg: otanikwacâssisiyiw
+     anikwacâs+N+AN+Dim+Sg+Px1Pl: nitanikwacâssisinân
+     anikwacâs+N+AN+Dim+Sg+Px12Pl: kitanikwacâssisinaw
+     anikwacâs+N+AN+Dim+Sg+Px2Pl: kitanikwacâssisiwâw
+     anikwacâs+N+AN+Dim+Sg+Px3Pl: otanikwacâssisiwâw
+     anikwacâs+N+AN+Dim+Sg+Px3iPl: otanikwacâssisiyiw
+
+     anikwacâs+N+AN+Dim+Pl+Px1Sg: nitanikwacâsisak
+     anikwacâs+N+AN+Dim+Pl+Px2Sg: kitanikwacâsisak
+     anikwacâs+N+AN+Dim+Pl+Px3Sg: otanikwacâsisa
+     anikwacâs+N+AN+Dim+Pl+Px3iSg: otanikwacâsisiyiwa
+     anikwacâs+N+AN+Dim+Pl+Px1Pl: nitanikwacâsisinânak
+     anikwacâs+N+AN+Dim+Pl+Px12Pl: kitanikwacâsisnawak
+     anikwacâs+N+AN+Dim+Pl+Px2Pl: kitanikwacâsisiwâwak
+     anikwacâs+N+AN+Dim+Pl+Px3Pl: otanikwacâsiswâwa
+     anikwacâs+N+AN+Dim+Pl+Px3iPl: otanikwacâsisyiwa
+
+     anikwacâs+N+AN+Px1Sg+Loc: nitanikwacâsihk
+     anikwacâs+N+AN+Px2Sg+Loc: kitanikwacâsihk
+     anikwacâs+N+AN+Px3Sg+Loc: otanikwacâsihk
+     anikwacâs+N+AN+Px3iSg+Loc: otanikwacâsiyihk
+     anikwacâs+N+AN+Px1Pl+Loc: nitanikwacâsinânihk
+     anikwacâs+N+AN+Px12Pl+Loc: kitanikwacâsinâhk
+     anikwacâs+N+AN+Px2Pl+Loc: kitanikwacâsiwâwihk
+     anikwacâs+N+AN+Px3Pl+Loc: otanikwacâsiwâwihk 
+     anikwacâs+N+AN+Px3iPl+Loc: otanikwacâsiyihk
+
+     anikwacâs+N+AN+Dim+Px1Sg+Loc: nitanikwacâsisihk
+     anikwacâs+N+AN+Dim+Px2Sg+Loc: kitanikwacâsisihk
+     anikwacâs+N+AN+Dim+Px3Sg+Loc: otanikwacâsisihk
+     anikwacâs+N+AN+Dim+Px3iSg+Loc: otanikwacâsisiyihk
+     anikwacâs+N+AN+Dim+Px1Pl+Loc: nitanikwacâsisinânihk
+     anikwacâs+N+AN+Dim+Px12Pl+Loc: kitanikwacâsisinâhk
+     anikwacâs+N+AN+Dim+Px2Pl+Loc: kitanikwacâsisiwâwihk
+     anikwacâs+N+AN+Dim+Px3Pl+Loc: otanikwacâsisiwâwihk
+     anikwacâs+N+AN+Dim+Px3iPl+Loc: otanikwacâsisiyihk
