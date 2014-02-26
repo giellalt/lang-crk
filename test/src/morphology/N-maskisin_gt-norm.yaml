@@ -9,12 +9,13 @@ Config:
 
 Tests:
   
-  Noun - maskisin - ok : # -m inanimate noun
+  Noun - maskisin - ok : # -m inanimate noun, shoe
      maskisin+N+IN+Sg: maskisin
      maskisin+N+IN+Pl: maskisina
      maskisin+N+IN+Loc: maskisinihk
      maskisin+N+IN+Dim+Sg: maskisinisis
      maskisin+N+IN+Dim+Pl: maskisinisisa
+     maskisin+N+IN+Dim+Loc: maskisinisisihk
      
      maskisin+N+IN+Sg+Px1Sg: nimaskisin
      maskisin+N+IN+Sg+Px2Sg: kimaskisin
@@ -55,3 +56,23 @@ Tests:
      maskisin+N+IN+Dim+Pl+Px2Pl: kimaskisinisisiwâwa
      maskisin+N+IN+Dim+Pl+Px3Pl: omaskisinisisiwâwa
      maskisin+N+IN+Dim+Pl+Px3iPl: omaskisinisisyiwa
+     
+     maskisin+N+AN+Px1Sg+Loc: nimaskisinihk
+     maskisin+N+AN+Px2Sg+Loc: kimaskisinihk
+     maskisin+N+AN+Px3Sg+Loc: omaskisinihk
+     maskisin+N+AN+Px3iSg+Loc: omaskisinyihk
+     maskisin+N+AN+Px1Pl+Loc: nisinânihk
+     maskisin+N+AN+Px12Pl+Loc: kimaskisinnâhk
+     maskisin+N+AN+Px2Pl+Loc: kisiwâwihk
+     maskisin+N+AN+Px3Pl+Loc: osiwâwihk 
+     maskisin+N+AN+Px3iPl+Loc: omaskisinyihk
+
+     maskisin+N+AN+Dim+Px1Sg+Loc: nimaskisinisisihk
+     maskisin+N+AN+Dim+Px2Sg+Loc: kimaskisinisisihk
+     maskisin+N+AN+Dim+Px3Sg+Loc: omaskisinisisihk
+     maskisin+N+AN+Dim+Px3iSg+Loc: omaskisinssiyihk
+     maskisin+N+AN+Dim+Px1Pl+Loc: nimaskisinisisnânihk
+     maskisin+N+AN+Dim+Px12Pl+Loc: kimaskisinssinâh
+     maskisin+N+AN+Dim+Px2Pl+Loc: kimaskisinisiswâwihk
+     maskisin+N+AN+Dim+Px3Pl+Loc: omaskisinisiswâwihk
+     maskisin+N+AN+Dim+Px3iPl+Loc: omaskisinisisiyihk
