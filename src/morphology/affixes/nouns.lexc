@@ -7,8 +7,9 @@
 
 LEXICON ANDECL !!= * @CODE@ for the animate declension
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
-< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
+< "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; !
 +N+AN+Sg:%> AN_SUFF_SG ;
 +N+AN+Pl:%> AN_SUFF_PL ;
 +N+AN:%> AN_DIM_SG ;
@@ -326,3 +327,8 @@ LEXICON LOC !!= * @CODE@
 
 LEXICON IRREG_LOC !!= * @CODE@ 
 +Loc:%>ohk # ;
+
+
+!!Obviative suffix
+LEXICON OBVIATIVE
++Obv:%>a # ;
