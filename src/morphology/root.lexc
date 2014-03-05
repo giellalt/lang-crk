@@ -53,13 +53,15 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 +Prf  !!= * @CODE@ 
 
 +Ind  !!= * @CODE@ Indicative, aka Independent
-+Imp  !!= * @CODE@ Imperative
++Imp  !!= * @CODE@ Imperative, consider deleting +Imp tag
 +Del  !!= * @CODE@ Delayed imperative
++Imm  !!= * @CODE@ Immediate imperative, consider deleting +Imp tag
 +Sbj  !!= * @CODE@ Subjunctive, aka Conjunct mode, ê-
 +Cond  !!= * @CODE@ TODO: Should Future Conditional be tagget Fut only?
 
 +Int  !!= * @CODE@ Interdiction, Ojibwe?
 +Dur  !!= * @CODE@ Durative, Ojibwe?
+
 
 +1Sg    !!= * @CODE@ first singular
 +2Sg    !!= * @CODE@ etc
