@@ -9,33 +9,32 @@ Config:
 
 Tests:
   
-  Verb - miciso - ok : # Ordinary IA verb - full paradigm
-     miciso+V+IA+Ind+Prs+1Sg: nimicison
-     miciso+V+IA+Ind+Prs+2Sg: kimicison
-     miciso+V+IA+Ind+Prs+3Sg: micisow
-     miciso+V+IA+Ind+Prs+3oSg: micisoyiwa
-     miciso+V+IA+Ind+Prs+1Pl: nimicisonân
-     miciso+V+IA+Ind+Prs+12Pl: kimicisonaw
-     miciso+V+IA+Ind+Prs+2Pl: kimicisonâwâw
-     miciso+V+IA+Ind+Prs+3Pl: micisowak
-     miciso+V+IA+Ind+Prs+3oPl: micisoyiwa
+  Verb - mîciso - ok : # Ordinary VAI verb "eat" - full paradigm
+     mîciso+V+IA+Ind+Prs+1Sg: nimîcison
+     mîciso+V+IA+Ind+Prs+2Sg: kimîcison
+     mîciso+V+IA+Ind+Prs+3Sg: mîcisow
+     mîciso+V+IA+Ind+Prs+3oSg: mîcisoyiwa
+     mîciso+V+IA+Ind+Prs+1Pl: nimîcisonân
+     mîciso+V+IA+Ind+Prs+12Pl: kimîcisonaw
+     mîciso+V+IA+Ind+Prs+2Pl: kimîcisonâwâw
+     mîciso+V+IA+Ind+Prs+3Pl: mîcisowak
+     mîciso+V+IA+Ind+Prs+3oPl: mîcisoyiwa
      
-     miciso+V+IA+Cnj+1Sg: ê-micisoyân
-     miciso+V+IA+Cnj+2Sg: ê-micisoyan
-     miciso+V+IA+Cnj+3Sg: ê-micisot
-     miciso+V+IA+Cnj+3oSg: ê-micisoyit
-     miciso+V+IA+Cnj+1Pl: ê-micisoyâhk
-     miciso+V+IA+Cnj+12Pl: ê-micisoyahk
-     miciso+V+IA+Cnj+2Pl: ê-micisonyêk
-     miciso+V+IA+Cnj+3Pl: ê-micisocik
-     miciso+V+IA+Cnj+3oPl: ê-micisoyit
+     mîciso+V+IA+Cnj+1Sg: ê-mîcisoyân
+     mîciso+V+IA+Cnj+2Sg: ê-mîcisoyan
+     mîciso+V+IA+Cnj+3Sg: ê-mîcisot
+     mîciso+V+IA+Cnj+3oSg: ê-mîcisoyit
+     mîciso+V+IA+Cnj+1Pl: ê-mîcisoyâhk
+     mîciso+V+IA+Cnj+12Pl: ê-mîcisoyahk
+     mîciso+V+IA+Cnj+2Pl: ê-mîcisoyêk
+     mîciso+V+IA+Cnj+3Pl: ê-mîcisocik
+     mîciso+V+IA+Cnj+3oPl: ê-mîcisoyit
 
-     miciso+V+IA+Imp+Imm+2Sg: micison
-     miciso+V+IA+Imp+Imm+1Pl: micisondâ
-     miciso+V+IA+Imp+Imm+2Pl: micisok
-     miciso+V+IA+Imp+Int+2Sg: micisoken
-     miciso+V+IA+Imp+Int+1Pl: micisosiidâ
-     miciso+V+IA+Imp+Int+2Pl: micisokegon
-     miciso+V+IA+Imp+Dur+2Sg: micisokan
-     miciso+V+IA+Imp+Dur+2Pl: micisokeg
+     mîciso+V+IA+Imp+Imm+2Sg: mîciso
+     mîciso+V+IA+Imp+Imm+2Pl: mîcisok
+     mîciso+V+IA+Imp+Imm+12Pl: mîcisotân
+  
+     mîciso+V+IA+Imp+Del+2Sg: mîcisohkan
+     mîciso+V+IA+Imp+Del+2Pl: mîcisohkêk
+     mîciso+V+IA+Imp+Del+12Pl: mîcisohkahk
 
