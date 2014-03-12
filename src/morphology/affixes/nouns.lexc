@@ -83,8 +83,8 @@ LEXICON AN_DIM_SG !!= * @CODE@
 < "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 >  AN_SUFF_SG ;
 
 LEXICON AN_DIM_PL !!= * @CODE@
-< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
-< "+Dim":s 0:%^DIM 0:i 0:s "+Pl":0 >   AN_SUFF_PL ; !
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 >   AN_SUFF_PL ; !
 
 LEXICON AN_DIM_ABS
 < "+Dim":s 0:%^DIM 0:i 0:s >  AN_SUFF_LOC ; !
