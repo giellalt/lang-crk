@@ -49,13 +49,15 @@ Verbal MSP
  * +Prf   
 
  * +Ind   Indicative, aka Independent
- * +Imp   Imperative
+ * +Imp   Imperative, consider deleting +Imp tag
  * +Del   Delayed imperative
+ * +Imm   Immediate imperative, consider deleting +Imp tag
  * +Sbj   Subjunctive, aka Conjunct mode, ê-
  * +Cond   TODO: Should Future Conditional be tagget Fut only?
 
  * +Int   Interdiction, Ojibwe?
  * +Dur   Durative, Ojibwe?
+
 
  * +1Sg     first singular
  * +2Sg     etc
@@ -175,7 +177,7 @@ and only has the ê- prefix, and future always has no prefix.
 
 
 
-__Suffix a Deletion in Vowel Final Stems__ gives maskwa + ak = plural maskwak
+__Suffix vowel deletion in vowel final stems__ deletes stem vowel in vowel final stems
 
 __w Insertion in Front of Vowel Initial Suffix after ksv c__ inserts w after k in front of plural -ak
 Note that this rule probably is wrong, and that the -w- is
@@ -198,6 +200,7 @@ __locative alternation oohk io__
 __locative alternation naahk 1		__ adds nâhk after êw 1: change w to n
 
 
+
 __possessive prefxes__ 
 
 
@@ -207,7 +210,6 @@ __i to a in prefixes in front of nasals__
 __Double consonant deletion__ 
 
 __Double vowel deletion__ 
-
 
 
 !!Rules for generating the correct surface forms of -isis the diminutive suffix
@@ -228,7 +230,6 @@ __In Vow+y final stems with Diminutives, part 3: delete i in suffix __ Okimasis 
 __Diminutives rule change ending to os with k-final stems 1 __ Okimasis 2004: 14, Examples listed in 5.
 
 __Diminutives rule change ending to os with k-final stems 2 __ Okimasis 2004: 14, Examples listed in 5.
-
 
 
 
@@ -295,15 +296,13 @@ ANSTEM_kw is for a set of nouns that take an additional suffix in the possessive
 
 
 
-
-
 possessive paradigm
 
 
 
 
-!Inanimate Nouns
 
+!Inanimate Nouns
 
 
 
@@ -406,7 +405,7 @@ The stems
  LEXICON IASTEM    
  nipâ IACONJ "sleep" ;  
  mâto IACONJ "sleep" ; 
- miciso IACONJ "sleep" ;  
+ mîciso IACONJ "sleep" ;  Variation in length of first vowel, here following Okimâsis
  waniskâw IACONJ "rise, get up" ;  
  micisiw IACONJ "eat" ; 
  nohtehkatew IACONJ "be hungry" ; 
@@ -422,30 +421,29 @@ The stems
 
                           !!!Plains Cree noun morphology                           
 
-!!The declinations for animates and inanimates
+!!The declinations for Animates
 
  * LEXICON ANDECL  for the animate declension
 
- * LEXICON ANDECLPROF  for the animate declension
 
-
- * LEXICON INDECL  for the inanimate declension
-
-LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reducedm diminuitve suffixes
-
+LEXICON ANDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
  * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim
 
-
  * LEXICON IRREGULARINFL  is also there to handle the highly irregular atim and mistatim
-
-
-
-
 
  * LEXICON ANKWDECL  takes -om as extra suffix in possessed form
 
- * LEXICON INALIENABLEDECL 
+
+
+!!The declinations for Inanimates
+
+ * LEXICON INDECL  for the inanimate declension
+
+LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+
+
+
 
 
 
@@ -458,13 +456,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON AN_DIM_PL 
 
 
- !Diminutive suffixes in inanimate stems
-
- * LEXICON IN_DIM_SG 
-
- * LEXICON IN_DIM_PL 
-
-
 !Diminutive suffixes in animate stems taking the form -osis
 
  * LEXICON AN_DIM_IRR_SG 
@@ -472,6 +463,19 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON AN_DIM_IRR_PL 
 
  * LEXICON AN_DIM_IRR_ABS 
+
+
+
+ !Diminutive suffixes in inanimate stems
+
+ * LEXICON IN_DIM_SG 
+
+ * LEXICON IN_DIM_PL 
+
+ * LEXICON IN_DIM_LOC 
+
+
+
 
 
 
@@ -485,19 +489,30 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON INAL_SUFF_SG  
 
 
+
+!!Animate inflectional suffixes
+
  * LEXICON AN_SUFF_SG  
 
  * LEXICON AN_SUFF_SG_INAL  , see above for relation to AN_SUFF_SG
 
 
-
  * LEXICON AN_SUFF_PL  
+
+
+
+
+
+!!Inanimate inflectional suffixes
 
 
  * LEXICON IN_SUFF_SG  
 
 
  * LEXICON IN_SUFF_PL  
+
+
+
 
 
  * LEXICON ANKWDECL_SUFF_SG  
@@ -549,6 +564,8 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON LOC  
 
  * LEXICON IRREG_LOC  
+
+
 
 Plains Cree verb morphology                  
 

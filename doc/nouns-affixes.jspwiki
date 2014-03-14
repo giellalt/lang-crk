@@ -1,30 +1,29 @@
 
                           !!!Plains Cree noun morphology                           
 
-!!The declinations for animates and inanimates
+!!The declinations for Animates
 
  * LEXICON ANDECL  for the animate declension
 
- * LEXICON ANDECLPROF  for the animate declension
 
-
- * LEXICON INDECL  for the inanimate declension
-
-LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reducedm diminuitve suffixes
-
+LEXICON ANDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
  * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim
 
-
  * LEXICON IRREGULARINFL  is also there to handle the highly irregular atim and mistatim
-
-
-
-
 
  * LEXICON ANKWDECL  takes -om as extra suffix in possessed form
 
- * LEXICON INALIENABLEDECL 
+
+
+!!The declinations for Inanimates
+
+ * LEXICON INDECL  for the inanimate declension
+
+LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+
+
+
 
 
 
@@ -37,13 +36,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON AN_DIM_PL 
 
 
- !Diminutive suffixes in inanimate stems
-
- * LEXICON IN_DIM_SG 
-
- * LEXICON IN_DIM_PL 
-
-
 !Diminutive suffixes in animate stems taking the form -osis
 
  * LEXICON AN_DIM_IRR_SG 
@@ -51,6 +43,19 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON AN_DIM_IRR_PL 
 
  * LEXICON AN_DIM_IRR_ABS 
+
+
+
+ !Diminutive suffixes in inanimate stems
+
+ * LEXICON IN_DIM_SG 
+
+ * LEXICON IN_DIM_PL 
+
+ * LEXICON IN_DIM_LOC 
+
+
+
 
 
 
@@ -64,19 +69,30 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON INAL_SUFF_SG  
 
 
+
+!!Animate inflectional suffixes
+
  * LEXICON AN_SUFF_SG  
 
  * LEXICON AN_SUFF_SG_INAL  , see above for relation to AN_SUFF_SG
 
 
-
  * LEXICON AN_SUFF_PL  
+
+
+
+
+
+!!Inanimate inflectional suffixes
 
 
  * LEXICON IN_SUFF_SG  
 
 
  * LEXICON IN_SUFF_PL  
+
+
+
 
 
  * LEXICON ANKWDECL_SUFF_SG  
@@ -128,3 +144,5 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON LOC  
 
  * LEXICON IRREG_LOC  
+
+
