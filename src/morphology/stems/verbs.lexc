@@ -124,30 +124,24 @@ LEXICON TA_FUTURE
 
 
 LEXICON TA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
+
 @U.verb.NULL@  TASTEM ;
 @U.verb.NULL@  TASTEM ;   ! exclusive Pl
 @U.verb.NULL@  TASTEM ;   
-
-!@U.verb.imp2sg@  TASTEM ;
-!@U.verb.imp1pl@  TASTEM ;   ! exclusive Pl
-!@U.verb.imp2pl@  TASTEM ;   
-
-
-
-   TA_FUTURE ;
+               TA_FUTURE ;
 
 
 !! !! Transitive inanimate
 
 
-!LEXICON TI  != @CODE@ is still not written
+!LEXICON TI  != @CODE@ is still not written, and perhaps does not exist.
 !# ;
 
 
 !! !!! The stems
 !     ==========
 
-LEXICON IASTEM   !!= @CODE@ 
+LEXICON IASTEM   !!= @CODE@ = VAI
 nipâ IACONJ "sleep" ; !!= @CODE@ 
 mâto IACONJ "sleep" ; !!= @CODE@
 mîciso IACONJ "sleep" ; !!= @CODE@ Variation in length of first vowel, here following Okimâsis
@@ -155,11 +149,11 @@ waniskâw IACONJ "rise, get up" ; !!= @CODE@
 micisiw IACONJ "eat" ; !!= @CODE@
 nohtehkatew IACONJ "be hungry" ; !!= @CODE@
 
-LEXICON IISTEM   !!= @CODE@ 
+LEXICON IISTEM   !!= @CODE@  = VII
 mispon IICONJ "it is snowing" ;
 
 
-LEXICON TASTEM   !!= @CODE@ 
+LEXICON TASTEM   !!= @CODE@ = VTA
 
 wâpam TACONJ_1 "see" ;
 wicih TACONJ_1 "help" ;
