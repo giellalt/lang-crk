@@ -86,9 +86,8 @@ LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in
 
 LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
 @U.verb.imp2sg@  IASTEM ;
-@U.verb.imp12pl@  IASTEM ;   ! exclusive Pl
 @U.verb.imp2pl@  IASTEM ;   
-
+@U.verb.imp12pl@  IASTEM ;   ! inclusive Pl
 
 !! !! Intransitive inanimate
 !     ====================

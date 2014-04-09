@@ -122,25 +122,30 @@ LEXICON 3oplsubjunctive
 
 LEXICON IA_IMP  !!= @CODE@ gives flag diacritics and directs to imperative person suffixes
 @U.verb.imp2sg@  2sgimp ;
-@U.verb.imp1pl@  1plimp ;
 @U.verb.imp2pl@  2plimp ;
+@U.verb.imp12pl@  1plimp ;
 
 LEXICON 2sgimp
 +Imp+Imm+2Sg:%>n   # ;
-+Imp+Int+2Sg:%>ken # ;
-+Imp+Dur+2Sg:%>kan # ;
++Imp+Del+2Sg:%>hkan   # ;
 
-LEXICON 1plimp
-+Imp+Imm+12Pl:%>tân	  # ;
-+Imp+Int+12Pl:%>siidâ # ; !! this looks like Ojibwe :-/ what is correct?
+!+Imp+Int+2Sg:%>ken # ; I can't follow this, where is it from? -CS
+!+Imp+Dur+2Sg:%>kan # ; I can't follow this, where is it from? -CS
 
 LEXICON 2plimp
 +Imp+Imm+2Pl:%>k	 # ;
-+Imp+Imm+2Pl:%>g	 # ;
-+Imp+Int+2Pl:%>kegon # ;
-+Imp+Dur+2Pl:%>keg	 # ;
++Imp+Del+2Pl:%>hkêk   # ;
 
 
+!+Imp+Imm+2Pl:%>g	 # ;
+!+Imp+Int+2Pl:%>kegon # ;
+!+Imp+Dur+2Pl:%>keg	 # ;
+
+LEXICON 12plimp
++Imp+Imm+12Pl:%>tân	  # ;
++Imp+Del+12Pl:%>hkahk   # ;
+
+!+Imp+Int+12Pl:%>siidâ # ; !! this looks like Ojibwe :-/ what is correct?
 
 
 
