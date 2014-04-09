@@ -60,7 +60,7 @@ LEXICON IA_IND_PRT ! Dummy lexicon awaiting past tense.
 <  "+1Sg":0 "@U.verb.indprt1sg@"  0:n              > # ; !
 <  "+2Sg":0 "@U.verb.indprt2sg@"  0:n                 > # ; !"
 <  "+3Sg":0 "@U.verb.indprt3sg@"  0:w                 > # ; !"
-< "+3oSg":0 "@U.verb.indprt3osg@" 0:y 0:i 0:w 0:a     > # ; !"
+<  "+3oSg":0 "@U.verb.indprt3osg@" 0:y 0:i 0:w 0:a     > # ; !"
 <  "+1Pl":0 "@U.verb.indprt1pl@"  0:n 0:â 0:n         > # ;   ! exclusive Pl
 < "+12Pl":0 "@U.verb.indprt12pl@" 0:n 0:a 0:w         > # ; ! inclusive Pl
 <  "+2Pl":0 "@U.verb.indprt2pl@"  0:n 0:â 0:w 0:â 0:w > # ;           !
@@ -133,7 +133,7 @@ LEXICON IA_IMP  !!= @CODE@ gives flag diacritics and directs to imperative perso
 @U.verb.imp12pl@  12plimp ;
 
 LEXICON 2sgimp
-+Imp+Imm+2Sg:%>n   # ;
++Imp+Imm+2Sg:0   # ;
 +Imp+Del+2Sg:%>hkan   # ;
 
 !+Imp+Int+2Sg:%>ken # ; I can't follow this, where is it from? -CS
