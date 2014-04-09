@@ -123,7 +123,7 @@ LEXICON 3oplsubjunctive
 LEXICON IA_IMP  !!= @CODE@ gives flag diacritics and directs to imperative person suffixes
 @U.verb.imp2sg@  2sgimp ;
 @U.verb.imp2pl@  2plimp ;
-@U.verb.imp12pl@  1plimp ;
+@U.verb.imp12pl@  12plimp ;
 
 LEXICON 2sgimp
 +Imp+Imm+2Sg:%>n   # ;
