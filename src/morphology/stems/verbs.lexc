@@ -68,6 +68,40 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 <         "@U.verb.ind3pl@"  > IASTEM ; !"
 <         "@U.verb.ind3opl@" > IASTEM ; !"
 
+< 0:n 0:i 0:%- 0:k 0:î 0:%- "@U.verb.indprt1sg@"  > IASTEM ; !"
+< 0:k 0:i 0:%- 0:k 0:î 0:%- "@U.verb.indprt2sg@"  > IASTEM ; !"
+
+<              0:k 0:î 0:%-  "@U.verb.indprt3sg@"  >  IASTEM ; !"
+<              0:k 0:î 0:%-  "@U.verb.ind3osg@" > IASTEM ; !"
+
+< 0:n 0:i 0:%- 0:k 0:î 0:%-  "@U.verb.indprt1pl@"  > IASTEM ;   ! exclusive Pl
+< 0:k 0:i 0:%- 0:k 0:î 0:%-  "@U.verb.indprt12pl@" > IASTEM ;   ! inclusive Pl
+< 0:k 0:i 0:%- 0:k 0:î 0:%-  "@U.verb.indprt2pl@"  > IASTEM ;   !"
+
+<              0:k 0:î 0:%-  "@U.verb.indprt3pl@"  > IASTEM ; !"
+<              0:k 0:î 0:%-  "@U.verb.indprt3opl@" > IASTEM ; !"
+
+
+
+
+
+
+
+!LEXICON IA_INDEPENDENT_PAST   !!= @CODE@ gives prefixes and flags for person-number in indicative past tense
+!
+!< 0:n 0:i 0:k 0:î "@U.verb.prt1sg@"  > IASTEM ; !"
+!!< 0:k 0:i "@U.verb.ind2sg@"  > IASTEM ; !"
+!!
+!!<         "@U.verb.ind3sg@"  >  IASTEM ; !"
+!!<         "@U.verb.ind3osg@" > IASTEM ; !"
+!!
+!!< 0:n 0:i "@U.verb.ind1pl@"  > IASTEM ;   ! exclusive Pl
+!!< 0:k 0:i "@U.verb.ind12pl@" > IASTEM ;   ! inclusive Pl
+!!< 0:k 0:i "@U.verb.ind2pl@"  > IASTEM ;   !"
+!!
+!!<         "@U.verb.ind3pl@"  > IASTEM ; !"
+!!<         "@U.verb.ind3opl@" > IASTEM ; !"
+
 LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
 @U.verb.sbj@ IASTEM ;
 
