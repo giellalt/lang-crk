@@ -148,7 +148,18 @@ t2 		!!= * @CODE@  Prefix in possessives
 @U.verb.ind12pl@ !!= * @CODE@  
 @U.verb.ind2pl@  !!= * @CODE@ 
 @U.verb.ind3pl@  !!= * @CODE@ 
-@U.verb.ind3opl@ !!= * @CODE@  
+@U.verb.ind3opl@ !!= * @CODE@
+
+@U.verb.indprt1sg@  !!= flag diacritics for past tense inflections in idicatives
+@U.verb.indprt1sg@ !!= * @CODE@
+@U.verb.indprt2sg@
+@U.verb.indprt3sg@
+@U.verb.ind3osg@
+@U.verb.indprt1pl@
+@U.verb.indprt12pl@
+@U.verb.indprt2pl@
+@U.verb.indprt3pl@
+@U.verb.indprt3opl@ 
 
 !! For subjunctive and future, there are no prefixes, so
 !! we only need one flag for each set, to ensure subjunctive always
