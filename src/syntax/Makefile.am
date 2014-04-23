@@ -37,4 +37,10 @@ GT_CG_LOCAL_NOINST_TARGETS=
 #### END: Add local processing instructions ABOVE this line ######
 ##################################################################
 
+####### Other targets: ###########
+clean-local:
+	-rm -f *.bin
+
+####### Build rules via include: ########
+
 include $(top_srcdir)/am-shared/src-syntax-dir-include.am
