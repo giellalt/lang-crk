@@ -55,36 +55,36 @@ LEXICON IA   !!= @CODE@ divides in independent, subjunctive and imperative
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
 
-< 0:n 0:i "@U.verb.ind1sg@"  > IASTEM ; !"
-< 0:k 0:i "@U.verb.ind2sg@"  > IASTEM ; !"
+< 0:n 0:i "@U.verb.ind1sg@" 0:"t2" > IALIST ; !"
+< 0:k 0:i "@U.verb.ind2sg@" 0:"t2"  > IALIST ; !"
 
-<         "@U.verb.ind3sg@"  >  IASTEM ; !"
-<         "@U.verb.ind3osg@" > IASTEM ; !"
+<         "@U.verb.ind3sg@" >  IALIST ; !"
+<         "@U.verb.ind3osg@" > IALIST ; !"
 
-< 0:n 0:i "@U.verb.ind1pl@"  > IASTEM ;   ! exclusive Pl
-< 0:k 0:i "@U.verb.ind12pl@" > IASTEM ;   ! inclusive Pl
-< 0:k 0:i "@U.verb.ind2pl@"  > IASTEM ;   !"
+< 0:n 0:i "@U.verb.ind1pl@" 0:"t2" > IALIST ;   ! exclusive Pl
+< 0:k 0:i "@U.verb.ind12pl@" 0:"t2" > IALIST ;   ! inclusive Pl
+< 0:k 0:i "@U.verb.ind2pl@" 0:"t2" > IALIST ;   !"
 
-<         "@U.verb.ind3pl@"  > IASTEM ; !"
-<         "@U.verb.ind3opl@" > IASTEM ; !"
+<         "@U.verb.ind3pl@"  > IALIST ; !"
+<         "@U.verb.ind3opl@" > IALIST ; !"
 
-< 0:n 0:i 0:k 0:î 0:%- "@U.verb.indprt1sg@"  > IASTEM ; !"
-< 0:k 0:i 0:k 0:î 0:%- "@U.verb.indprt2sg@"  > IASTEM ; !"
+< 0:n 0:i 0:k 0:î 0:%- "@U.verb.indprt1sg@" > IALIST ; !"
+< 0:k 0:i 0:k 0:î 0:%- "@U.verb.indprt2sg@" > IALIST ; !"
 
-<              0:k 0:î 0:%-  "@U.verb.indprt3sg@"  >  IASTEM ; !"
-<              0:k 0:î 0:%-  "@U.verb.indprt3osg@" > IASTEM ; !"
+<              0:k 0:î 0:%-  "@U.verb.indprt3sg@"  >  IALIST ; !"
+<              0:k 0:î 0:%-  "@U.verb.indprt3osg@" > IALIST ; !"
 
-< 0:n 0:i 0:k 0:î 0:%-  "@U.verb.indprt1pl@"  > IASTEM ;   ! exclusive Pl
-< 0:k 0:i 0:k 0:î 0:%-  "@U.verb.indprt12pl@" > IASTEM ;   ! inclusive Pl
-< 0:k 0:i 0:k 0:î 0:%-  "@U.verb.indprt2pl@"  > IASTEM ;   !"
+< 0:n 0:i 0:k 0:î 0:%-  "@U.verb.indprt1pl@"  > IALIST ;   ! exclusive Pl
+< 0:k 0:i 0:k 0:î 0:%-  "@U.verb.indprt12pl@" > IALIST ;   ! inclusive Pl
+< 0:k 0:i 0:k 0:î 0:%-  "@U.verb.indprt2pl@"  > IALIST ;   !"
 
-<              0:k 0:î 0:%-  "@U.verb.indprt3pl@"  > IASTEM ; !"
-<              0:k 0:î 0:%-  "@U.verb.indprt3opl@" > IASTEM ; !"
-
-
+<              0:k 0:î 0:%-  "@U.verb.indprt3pl@"  > IALIST ; !"
+<              0:k 0:î 0:%-  "@U.verb.indprt3opl@" > IALIST ; !"
 
 
 
+LEXICON IALIST
+ :%> IASTEM ;
 
 
 !LEXICON IA_INDEPENDENT_PAST   !!= @CODE@ gives prefixes and flags for person-number in indicative past tense
@@ -181,7 +181,8 @@ mîciso IACONJ "sleep" ; !!= @CODE@ Variation in length of first vowel, here fol
 waniskâw IACONJ "rise, get up" ; !!= @CODE@ 
 micisiw IACONJ "eat" ; !!= @CODE@
 nohtehkatew IACONJ "be hungry" ; !!= @CODE@
-atoskê IACONJ "work" ; !!= @CODE@
+atoskê:atosk IACONJ-LONG-E "work" ; !!= @CODE@
+akwahow:akwaho IACONJ "to cover oneself" ; ! Source: Wolvengrey dictionary
 
 
 LEXICON IISTEM   !!= @CODE@  = VII
