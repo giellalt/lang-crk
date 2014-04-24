@@ -41,7 +41,7 @@ LEXICON IA_IND !!= @CODE@ gives positive and negative
 LEXICON IACONJ-LONG-E !!= @CODE@ !! In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
 +V+IA+Ind: IA_IND-LONG-E ;
 +V+IA:     IA_SBJ ; !!follows pattern of other IA verbs in the conjunct
-+V+IA:     IA_IMP ; !!follows pattern of other IA verbs in the imperative
++V+IA:     IA_IMP-LONG-E ; !!follows pattern of other IA verbs in the imperative
 
 LEXICON IA_IND-LONG-E
 +Prs: IA_IND_PRS-LONG-E ;
@@ -187,6 +187,23 @@ LEXICON 2plimp
 LEXICON 12plimp
 +Imp+Imm+12Pl:%>tân	  # ;
 +Imp+Del+12Pl:%>hkahk   # ;
+
+LEXICON IA_IMP-LONG-E
+@U.verb.imp2sg@  2sgimp-long-E ;
+@U.verb.imp2pl@  2plimp-long-E ;
+@U.verb.imp12pl@  12plimp-long-E ;
+
+LEXICON 2sgimp-long-E
++Imp+Imm+2Sg:ê   # ;
++Imp+Del+2Sg:%>êhkan   # ;
+
+LEXICON 2plimp-long-E
++Imp+Imm+2Pl:%>êk	 # ;
++Imp+Del+2Pl:%>êhkêk   # ;
+
+LEXICON 12plimp-long-E
++Imp+Imm+12Pl:%>êtân	  # ;
++Imp+Del+12Pl:%>êhkahk   # ;
 
 !+Imp+Int+12Pl:%>siidâ # ; !! this looks like Ojibwe :-/ what is correct?
 
