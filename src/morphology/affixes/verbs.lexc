@@ -32,20 +32,20 @@
 LEXICON IACONJ !!= @CODE@ splits in 3 conjugations
 +V+IA+Ind: IA_IND ;
 +V+IA:     IA_SBJ ;
-+V+IA:     IA_IMP ;
++V+IA:%>     IA_IMP ;
 
 LEXICON IA_IND !!= @CODE@ gives positive and negative
-+Prs: IA_IND_PRS ;
-+Prt: IA_IND_PRT ;
++Prs:%> IA_IND_PRS ;
++Prt:%> IA_IND_PRT ;
 
 LEXICON IACONJ-LONG-E !!= @CODE@ !! In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
 +V+IA+Ind: IA_IND-LONG-E ;
-+V+IA:     IA_SBJ ; !!follows pattern of other IA verbs in the conjunct
-+V+IA:     IA_IMP-LONG-E ; !!follows pattern of other IA verbs in the imperative
++V+IA+Cnj:%> IA_IND_PRT-LONG-E_SUBJ ; 
++V+IA:%>     IA_IMP-LONG-E ; !!follows pattern of other IA verbs in the imperative
 
 LEXICON IA_IND-LONG-E
-+Prs: IA_IND_PRS-LONG-E ;
-+Prt: IA_IND_PRT-LONG-E ;
++Prs:%> IA_IND_PRS-LONG-E ;
++Prt:%> IA_IND_PRT-LONG-E ;
 
 
 ! If no negative suffix, then the following 3 lines are not needed
@@ -97,7 +97,7 @@ LEXICON IA_IND_PRS-LONG-E !!= @CODE@ gives person suffixes
 
 
 LEXICON IA_IND_PRT-LONG-E !!= @CODE@ gives person suffixes
-<  "+1Sg":0 "@U.verb.indprt1sg@"   0:â 0:n                 > # ; !"
+<  "+1Sg":0 "@U.verb.indprt1sg@"  0:â 0:n                 > # ; !"
 <  "+2Sg":0 "@U.verb.indprt2sg@"  0:â 0:n                 > # ; !"
 <  "+3Sg":0 "@U.verb.indprt3sg@"  0:ê 0:w                 > # ; !"
 < "+3oSg":0 "@U.verb.indprt3osg@" 0:ê 0:y 0:i 0:w 0:a     > # ; !"
@@ -108,6 +108,18 @@ LEXICON IA_IND_PRT-LONG-E !!= @CODE@ gives person suffixes
 < "+3oPl":0 "@U.verb.indprt3opl@" 0:ê 0:y 0:i 0:w 0:a     > # ;   !
 
 
+LEXICON IA_IND_PRT-LONG-E_SUBJ !!= @CODE@ gives person suffixes
+<  "+1Sg":0 "@U.verb.sbj@"  0:ê 0:y 0:â 0:n                 > # ; !"
+<  "+2Sg":0 "@U.verb.sbj@"  0:ê 0:y 0:a 0:n                 > # ; !"
+<  "+3Sg":0 "@U.verb.sbj@"  0:ê 0:t                         > # ; !"
+< "+3oSg":0 "@U.verb.sbj@"  0:ê 0:y 0:i 0:t                 > # ; !"
+<  "+1Pl":0 "@U.verb.sbj@"  0:ê 0:y 0:â 0:h 0:k             > # ;   ! exclusive Pl
+< "+12Pl":0 "@U.verb.sbj@"  0:ê 0:y 0:a 0:h 0:k             > # ; ! inclusive Pl
+<  "+2Pl":0 "@U.verb.sbj@"  0:ê 0:y 0:ê 0:k                 > # ;           !
+<  "+3Pl":0 "@U.verb.sbj@"  0:ê 0:c 0:i 0:k                 > # ;   !
+< "+3oPl":0 "@U.verb.sbj@"  0:ê 0:y 0:i 0:t                 > # ;   !!
+
+			  
 LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive person suffixes
 @U.verb.sbj@  1sgsubjunctive ;
 @U.verb.sbj@  2sgsubjunctive ;
