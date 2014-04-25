@@ -48,7 +48,9 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 
 !! Verbal MSP
 +Prs  !!= * @CODE@ 
-+Fut  !!= * @CODE@ 
++Fut  !!= * @CODE@
++FutDf !!= * @CODE@ Indicated Future Definite tense preverb
++FutIt !!= * @CODE@ Indicated Future Intentional tense preverb
 +Prt  !!= * @CODE@ 
 +Prf  !!= * @CODE@ 
 
@@ -161,9 +163,17 @@ t2 		!!= * @CODE@  Prefix in possessives
 @U.verb.indprt3pl@
 @U.verb.indprt3opl@ 
 
-!! For subjunctive and future, there are no prefixes, so
-!! we only need one flag for each set, to ensure subjunctive always
-!! and only has the ê- prefix, and future always has no prefix.
+!!The subjunctive always has
+!!the ê- prefix, and future always has no prefix.
+@U.verb.indFutDef1sg@ !!= * @CODE@ Future definite
+@U.verb.indFutDef2sg@ !!= * @CODE@ Future definite
+@U.verb.indFutDef3sg@ !!= * @CODE@ Future definite
+@U.verb.indFutDef3osg@ !!= * @CODE@ Future definite
+@U.verb.indFutDef1pl@ !!= * @CODE@ Future definite
+@U.verb.indFutDef12pl@ !!= * @CODE@ Future definite
+@U.verb.indFutDef2pl@ !!= * @CODE@ Future definite
+@U.verb.indFutDef3pl@ !!= * @CODE@ Future definite
+@U.verb.indFutDef3opl@ !!= * @CODE@ Future definite
 
 @U.verb.sbj@  !!= * @CODE@ Subjunctive (Conjunct)
 @U.verb.fut@  !!= * @CODE@ Future Conditional
