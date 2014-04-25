@@ -49,8 +49,9 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 !! Verbal MSP
 +Prs  !!= * @CODE@ 
 +Fut  !!= * @CODE@
-+FutDf !!= * @CODE@ Indicated Future Definite tense preverb
-+FutIt !!= * @CODE@ Indicated Future Intentional tense preverb
++FutDf !!= * @CODE@ Indicates Future Definite tense
++FutIt !!= * @CODE@ Indicates Future Intentional tense
++FutCn !!= * @CODE@ Indicates Future Conditional
 +Prt  !!= * @CODE@ 
 +Prf  !!= * @CODE@ 
 
@@ -165,6 +166,7 @@ t2 		!!= * @CODE@  Prefix in possessives
 
 !!The subjunctive always has
 !!the ê- prefix, and future always has no prefix.
+
 @U.verb.indFutDef1sg@ !!= * @CODE@ Future definite
 @U.verb.indFutDef2sg@ !!= * @CODE@ Future definite
 @U.verb.indFutDef3sg@ !!= * @CODE@ Future definite
@@ -174,6 +176,26 @@ t2 		!!= * @CODE@  Prefix in possessives
 @U.verb.indFutDef2pl@ !!= * @CODE@ Future definite
 @U.verb.indFutDef3pl@ !!= * @CODE@ Future definite
 @U.verb.indFutDef3opl@ !!= * @CODE@ Future definite
+
+@U.verb.indFutInt1sg@ !!= * @CODE@ Future Intentional
+@U.verb.indFutInt2sg@ !!= * @CODE@ Future Intentional 
+@U.verb.indFutInt3sg@ !!= * @CODE@ Future Intentional 
+@U.verb.indFutInt3osg@ !!= * @CODE@ Future Intentional
+@U.verb.indFutInt1pl@ !!= * @CODE@ Future Intentional
+@U.verb.indFutInt12pl@ !!= * @CODE@ Future Intentional
+@U.verb.indFutInt2pl@ !!= * @CODE@ Future Intentional 
+@U.verb.indFutInt3pl@ !!= * @CODE@ Future Intentional 
+@U.verb.indFutInt3opl@ !!= * @CODE@ Future Intentional
+
+@U.verb.FutCon1sg@ !!= * @CODE@ Future Conditional
+@U.verb.FutCon2sg@ !!= * @CODE@ Future Conditional
+@U.verb.FutCon3sg@ !!= * @CODE@ Future Conditional
+@U.verb.FutCon3osg@ !!= * @CODE@ Future Conditional
+@U.verb.FutCon1pl@ !!= * @CODE@ Future Conditional
+@U.verb.FutCon12pl@ !!= * @CODE@ Future Conditional
+@U.verb.FutCon2pl@ !!= * @CODE@ Future Conditional
+@U.verb.FutCon3pl@ !!= * @CODE@ Future Conditional
+@U.verb.FutCon3opl@ !!= * @CODE@ Future Conditional
 
 @U.verb.sbj@  !!= * @CODE@ Subjunctive (Conjunct)
 @U.verb.fut@  !!= * @CODE@ Future Conditional
