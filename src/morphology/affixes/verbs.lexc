@@ -189,41 +189,37 @@ LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive perso
 
 LEXICON 1sgsubjunctive
     +Cnj+1Sg:%>yân #;
-!+Neg+Cnj+1Sg:%>siwaan  # ;
+
 
 LEXICON 2sgsubjunctive
     +Cnj+2Sg:%>yan	#;
-!+Neg+Cnj+2Sg:%>siwan   # ;
+
 
 LEXICON 3sgsubjunctive
     +Cnj+3Sg:%>t	#;
-!+Neg+Cnj+3Sg:%>sig	   # ;
+
 
 LEXICON 3osgsubjunctive
     +Cnj+3oSg:%>yit #;
-!+Neg+Cnj+3oSg:%>sinid  # ;
-!+Neg+Cnj+3oSg:%>sinig  # ;
+
 
 LEXICON 1plsubjunctive 
     +Cnj+1Pl:%>yâhk #;
-+Neg+Cnj+1Pl:%>siwaang # ;
+
 
 LEXICON 12plsubjunctive
     +Cnj+12Pl:%>yahk #;
-+Neg+Cnj+12Pl:%>siwang # ;
 
 LEXICON 2plsubjunctive 
     +Cnj+2Pl:%>yêk #;  ! NOTE: corrected according to letter from dt, earlier we said %>nyêk
-!+Neg+Cnj+2Pl:%>siweg   # ;
+
 
 LEXICON 3plsubjunctive 
     +Cnj+3Pl:%>cik #;
-!+Neg+Cnj+3Pl:%>siwaa   # ;
+
 
 LEXICON 3oplsubjunctive 
     +Cnj+3oPl:%>yit #;
-!+Neg+Cnj+3Pl:%>siwaa   # ;
-
 
 
 LEXICON IA_IMP  !!= @CODE@ gives flag diacritics and directs to imperative person suffixes
