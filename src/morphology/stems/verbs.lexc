@@ -55,6 +55,8 @@ LEXICON IA   !!= @CODE@ divides in independent, subjunctive and imperative
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
 
+!Present tense
+
 < 0:n 0:i "@U.verb.ind1sg@" 0:"t2" > IALIST ; !"
 < 0:k 0:i "@U.verb.ind2sg@" 0:"t2"  > IALIST ; !"
 
@@ -67,6 +69,8 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 
 <         "@U.verb.ind3pl@"  > IALIST ; !"
 <         "@U.verb.ind3opl@" > IALIST ; !"
+
+!Past/Preterite tense
 
 < 0:n 0:i 0:k 0:î 0:%- "@U.verb.indprt1sg@" > IALIST ; !"
 < 0:k 0:i 0:k 0:î 0:%- "@U.verb.indprt2sg@" > IALIST ; !"
@@ -81,6 +85,37 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 <              0:k 0:î 0:%-  "@U.verb.indprt3pl@"  > IALIST ; !"
 <              0:k 0:î 0:%-  "@U.verb.indprt3opl@" > IALIST ; !"
 
+!Future definite tense
+
+
+< 0:n 0:i 0:k 0:a 0:%- "@U.verb.indFutDef1sg@" > IALIST ; !"Okimâsis 2004: 33 and 39
+< 0:k 0:i 0:k 0:a 0:%- "@U.verb.indFutDef2sg@" > IALIST ; !"
+
+<              0:t 0:a 0:%-  "@U.verb.indFutDef3sg@"  >  IALIST ; !"
+<              0:t 0:a 0:%-  "@U.verb.indFutDef3osg@" > IALIST ; !"
+
+< 0:n 0:i 0:k 0:a 0:%-  "@U.verb.indFutDef1pl@"  > IALIST ;   ! exclusive Pl
+< 0:k 0:i 0:k 0:a 0:%-  "@U.verb.indFutDef12pl@" > IALIST ;   ! inclusive Pl
+< 0:k 0:i 0:k 0:a 0:%-  "@U.verb.indFutDef2pl@"  > IALIST ;   !"
+
+<              0:t 0:a 0:%-  "@U.verb.indFutDef3pl@"  > IALIST ; !"
+<              0:t 0:a 0:%-  "@U.verb.indFutDef3opl@" > IALIST ; !"
+
+
+!Future intentional tense
+
+< 0:n 0:i 0:w 0:î 0:%- "@U.verb.indFutInt1sg@" > IALIST ; !"Okimâsis 2004: 33 and 39
+< 0:k 0:i 0:w 0:î 0:%- "@U.verb.indFutInt2sg@" > IALIST ; !"
+
+<              0:w 0:î 0:%-  "@U.verb.indFutInt3sg@"  >  IALIST ; !"
+<              0:w 0:î 0:%-  "@U.verb.indFutInt3osg@" > IALIST ; !"
+
+< 0:n 0:i 0:w 0:î 0:%-  "@U.verb.indFutInt1pl@"  > IALIST ;   ! exclusive Pl
+< 0:k 0:i 0:w 0:î 0:%-  "@U.verb.indFutInt12pl@" > IALIST ;   ! inclusive Pl
+< 0:k 0:i 0:w 0:î 0:%-  "@U.verb.indFutInt2pl@"  > IALIST ;   !"
+
+<              0:w 0:î 0:%-  "@U.verb.indFutInt3pl@"  > IALIST ; !"
+<              0:w 0:î 0:%-  "@U.verb.indFutInt3opl@" > IALIST ; !"
 
 
 LEXICON IALIST
