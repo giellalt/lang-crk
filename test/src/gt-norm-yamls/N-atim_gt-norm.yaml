@@ -12,6 +12,7 @@ Tests:
   Noun - atim - ok : # -m animate noun
      atim+N+AN+Sg: atim # asdf
      atim+N+AN+Pl: atimwak #test
+     atim+N+AN+Obv: atimwa
      atim+N+AN+Loc: atimohk # really rare form
      atim+N+AN+Dim+Sg: acimosis
      atim+N+AN+Dim+Pl: acimosisak
@@ -47,7 +48,7 @@ Tests:
      atim+N+AN+Dim+Sg+Px3Pl+Obv: ocêmosisiwâwa
      atim+N+AN+Dim+Sg+Px3iSg: ocêmosisiyiwa
      
-          atim+N+AN+Dim+Pl+Px1Sg: nitêmisisak
+     atim+N+AN+Dim+Pl+Px1Sg: nitêmisisak
      atim+N+AN+Dim+Pl+Px2Sg: kitêmisisak
      atim+N+AN+Dim+Pl+Px3Sg: otêmisisa
      atim+N+AN+Dim+Pl+Px3iSg: otêmisisiyiwa
