@@ -27,8 +27,31 @@ Intransitive animate
  LEXICON IA    divides in independent, subjunctive and imperative
 
 
-
  LEXICON IA_INDEPENDENT    gives prefixes and flags for person-number in indicative
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -40,7 +63,6 @@ Intransitive animate
 
 
  LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
-
 
 Intransitive inanimate
 
@@ -70,12 +92,14 @@ Transitive inanimate
 The stems
 
  LEXICON IASTEM    = VAI
- nipâ IACONJ "sleep" ;  
+ nipâw:nipâ IACONJ "sleep" ;  
  mâto IACONJ "sleep" ; 
  mîciso IACONJ "sleep" ;  Variation in length of first vowel, here following Okimâsis
  waniskâw IACONJ "rise, get up" ;  
  micisiw IACONJ "eat" ; 
  nohtehkatew IACONJ "be hungry" ; 
+ atoskêw:atosk IACONJ-LONG-E "work" ; 
+ nêhiyawêw:nêhiyaw IACONJ-LONG-E "work" ; 
 
  LEXICON IISTEM     = VII
 

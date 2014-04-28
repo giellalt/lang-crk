@@ -44,7 +44,10 @@ POS
 
 Verbal MSP
  * +Prs   
- * +Fut   
+ * +Fut  
+ * +FutDf  Indicates Future Definite tense
+ * +FutIt  Indicates Future Intentional tense
+ * +FutCn  Indicates Future Conditional
  * +Prt   
  * +Prf   
 
@@ -142,11 +145,41 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
  * @U.verb.ind12pl@   
  * @U.verb.ind2pl@   
  * @U.verb.ind3pl@   
- * @U.verb.ind3opl@   
+ * @U.verb.ind3opl@ 
 
-For subjunctive and future, there are no prefixes, so
-we only need one flag for each set, to ensure subjunctive always
-and only has the ê- prefix, and future always has no prefix.
+@U.verb.indprt1sg@    flag diacritics for past tense inflections in idicatives
+ * @U.verb.indprt1sg@ 
+
+
+ * @U.verb.indFutDef1sg@  Future definite
+ * @U.verb.indFutDef2sg@  Future definite
+ * @U.verb.indFutDef3sg@  Future definite
+ * @U.verb.indFutDef3osg@  Future definite
+ * @U.verb.indFutDef1pl@  Future definite
+ * @U.verb.indFutDef12pl@  Future definite
+ * @U.verb.indFutDef2pl@  Future definite
+ * @U.verb.indFutDef3pl@  Future definite
+ * @U.verb.indFutDef3opl@  Future definite
+
+ * @U.verb.indFutInt1sg@  Future Intentional
+ * @U.verb.indFutInt2sg@  Future Intentional 
+ * @U.verb.indFutInt3sg@  Future Intentional 
+ * @U.verb.indFutInt3osg@  Future Intentional
+ * @U.verb.indFutInt1pl@  Future Intentional
+ * @U.verb.indFutInt12pl@  Future Intentional
+ * @U.verb.indFutInt2pl@  Future Intentional 
+ * @U.verb.indFutInt3pl@  Future Intentional 
+ * @U.verb.indFutInt3opl@  Future Intentional
+
+ * @U.verb.FutCon1sg@  Future Conditional
+ * @U.verb.FutCon2sg@  Future Conditional
+ * @U.verb.FutCon3sg@  Future Conditional
+ * @U.verb.FutCon3osg@  Future Conditional
+ * @U.verb.FutCon1pl@  Future Conditional
+ * @U.verb.FutCon12pl@  Future Conditional
+ * @U.verb.FutCon2pl@  Future Conditional
+ * @U.verb.FutCon3pl@  Future Conditional
+ * @U.verb.FutCon3opl@  Future Conditional
 
  * @U.verb.sbj@   Subjunctive (Conjunct)
  * @U.verb.fut@   Future Conditional
@@ -357,8 +390,31 @@ Intransitive animate
  LEXICON IA    divides in independent, subjunctive and imperative
 
 
-
  LEXICON IA_INDEPENDENT    gives prefixes and flags for person-number in indicative
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -370,7 +426,6 @@ Intransitive animate
 
 
  LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
-
 
 Intransitive inanimate
 
@@ -400,12 +455,14 @@ Transitive inanimate
 The stems
 
  LEXICON IASTEM    = VAI
- nipâ IACONJ "sleep" ;  
+ nipâw:nipâ IACONJ "sleep" ;  
  mâto IACONJ "sleep" ; 
  mîciso IACONJ "sleep" ;  Variation in length of first vowel, here following Okimâsis
  waniskâw IACONJ "rise, get up" ;  
  micisiw IACONJ "eat" ; 
  nohtehkatew IACONJ "be hungry" ; 
+ atoskêw:atosk IACONJ-LONG-E "work" ; 
+ nêhiyawêw:nêhiyaw IACONJ-LONG-E "work" ; 
 
  LEXICON IISTEM     = VII
 
@@ -583,10 +640,31 @@ Intransitive animate (IA)
 
  LEXICON IA_IND  gives positive and negative
 
+ LEXICON IACONJ-LONG-E  !! In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
+In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
+
+
  ! LEXICON IA_IND_SUFF  (so far) gives present tense only
 
 
+
+
  LEXICON IA_IND_PRS  gives person suffixes
+
+
+
+
+
+
+
+ LEXICON IA_IND_PRS-LONG-E  gives person suffixes
+
+
+ LEXICON IA_IND_PRT-LONG-E  gives person suffixes
+
+
+ LEXICON IA_IND_PRT-LONG-E_SUBJ  gives person suffixes
+
 
 
 
@@ -605,13 +683,25 @@ Intransitive animate (IA)
 
 
 
+
+
+
+
+
+
  LEXICON IA_IMP   gives flag diacritics and directs to imperative person suffixes
 
 
+
+
+
+
+
+
+
+
+
 this looks like Ojibwe :-/ what is correct?
-
-
-
 
 
 
