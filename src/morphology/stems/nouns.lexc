@@ -183,6 +183,8 @@ LEXICON IRREGANSTEMS
 LEXICON IRREGANSTEMSLIST
 atim IRREGULARDECL "dog" ;
 mistatim IRREGULARDECL "horse" ; ! mistatimwa
+mistatim:têm IRREGULARINFL "dog-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim
+
 atim:têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 
 LEXICON ANSTEMS_kw
