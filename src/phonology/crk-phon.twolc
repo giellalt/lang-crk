@@ -36,7 +36,7 @@ Rules
 "Suffix vowel deletion in vowel final stems"
 !! __@RULENAME@__ deletes stem vowel in vowel final stems
 Vx:0 <=> _ %>:0 Vow ;
-	where Vx in ( a e i o â ê î ô ) ;
+	where Vx in ( a e i o â ê î ô ) ; 
 
 "w Insertion in Front of Vowel Initial Suffix after ksv c"
 !! __@RULENAME@__ inserts w after k in front of plural -ak
@@ -105,10 +105,10 @@ i:a <=> .#. n _ %>:0 [ n | m ] i	;
 Cx:0 <=> _ %>:0 Cx ;
 	where Cx in Cns ;
 
-"Double vowel deletion"
-!! __@RULENAME@__ 
-Vx:0 <=> _ %>:0 Vx ;
-	where Vx in Vow ;
+!"Double vowel deletion" "Suffix vowel deletion in vowel final stems"
+!!! __@RULENAME@__ 
+!Vx:0 <=> _ %>:0 Vx ;
+!	where Vx in Vow ;
 
 
 !! !!Rules for generating the correct surface forms of -isis the diminutive suffix
