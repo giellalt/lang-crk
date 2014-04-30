@@ -28,7 +28,37 @@ Tests:
      nipâ+V+IA+Ind+Prs+2Pl: kinipânâwâw
      nipâ+V+IA+Ind+Prs+3Pl: nipâwak
      nipâ+V+IA+Ind+Prs+3oPl: nipâyiwa
-
+     
+     nipâ+V+IA+Ind+Prt+1Sg: nikî-nipân
+     nipâ+V+IA+Ind+Prt+2Sg: kikî-nipân
+     nipâ+V+IA+Ind+Prt+3Sg: kî-nipâw
+     nipâ+V+IA+Ind+Prt+3oSg: kî-nipâyiwa
+     nipâ+V+IA+Ind+Prt+1Pl: nikî-nipânân
+     nipâ+V+IA+Ind+Prt+12Pl: kikî-nipânaw
+     nipâ+V+IA+Ind+Prt+2Pl: kikî-nipânâwâw
+     nipâ+V+IA+Ind+Prt+3Pl: kî-nipâwak
+     nipâ+V+IA+Ind+Prt+3oPl: kî-nipâyiwa
+     
+     nipâ+V+IA+Ind+FutDf+1Sg: nika-nipân
+     nipâ+V+IA+Ind+FutDf+2Sg: kika-nipân
+     nipâ+V+IA+Ind+FutDf+3Sg: ka-nipâw
+     nipâ+V+IA+Ind+FutDf+3oSg: ka-nipâyiwa
+     nipâ+V+IA+Ind+FutDf+1Pl: nika-nipânân
+     nipâ+V+IA+Ind+FutDf+12Pl: kika-nipânaw
+     nipâ+V+IA+Ind+FutDf+2Pl: kika-nipânâwâw
+     nipâ+V+IA+Ind+FutDf+3Pl: ka-nipâwak
+     nipâ+V+IA+Ind+FutDf+3oPl: ka-nipâyiwa
+     
+     nipâ+V+IA+Ind+FutIt+1Sg: niwî-nipân
+     nipâ+V+IA+Ind+FutIt+2Sg: kiwî-nipân
+     nipâ+V+IA+Ind+FutIt+3Sg: wî-nipâw
+     nipâ+V+IA+Ind+FutIt+3oSg: wî-nipâyiwa
+     nipâ+V+IA+Ind+FutIt+1Pl: niwî-nipânân
+     nipâ+V+IA+Ind+FutIt+12Pl: kiwî-nipânaw
+     nipâ+V+IA+Ind+FutIt+2Pl: kiwî-nipânâwâw
+     nipâ+V+IA+Ind+FutIt+3Pl: wî-nipâwak
+     nipâ+V+IA+Ind+FutIt+3oPl: wî-nipâyiwa
+     
      nipâ+V+IA+Cnj+1Sg: ê-nipâyân
      nipâ+V+IA+Cnj+1Sg: ênipâyân
      nipâ+V+IA+Cnj+2Sg: ê-nipâyan
@@ -46,16 +76,49 @@ Tests:
      nipâ+V+IA+Cnj+3Pl: ê-nipâcik
      nipâ+V+IA+Cnj+3Pl: ênipâcik
 
-     nipâ+V+IA+Ind+Prt+1Sg: nikî-nipân
-     nipâ+V+IA+Ind+Prt+2Sg: kikî-nipân
-     nipâ+V+IA+Ind+Prt+3Sg: kî-nipâw
-     nipâ+V+IA+Ind+Prt+3oSg: kî-nipâyiwa
-     nipâ+V+IA+Ind+Prt+1Pl: nikî-nipânân
-     nipâ+V+IA+Ind+Prt+12Pl: kikî-nipânaw
-     nipâ+V+IA+Ind+Prt+2Pl: kikî-nipânâwâw
-     nipâ+V+IA+Ind+Prt+3Pl: kînipâwak
-     nipâ+V+IA+Ind+Prt+3oPl: kî-nipâyiwa
+     nipâ+V+IA+Cnj+Prt+1Sg: ê-kî-nipâyân
+     nipâ+V+IA+Cnj+Prt+1Sg: ênipâyân
+     nipâ+V+IA+Cnj+Prt+2Sg: ê-kî-nipâyan
+     nipâ+V+IA+Cnj+Prt+2Sg: ênipâyan
+     nipâ+V+IA+Cnj+Prt+3Sg: ê-kî-nipât
+     nipâ+V+IA+Cnj+Prt+3Sg: ênipât
+     nipâ+V+IA+Cnj+Prt+3oSg: ê-kî-nipâyit
+     nipâ+V+IA+Cnj+Prt+3oSg: ênipâyit
+     nipâ+V+IA+Cnj+Prt+1Pl: ê-kî-nipâyâhk
+     nipâ+V+IA+Cnj+Prt+1Pl: ênipâyâhk
+     nipâ+V+IA+Cnj+Prt+12Pl: ê-kî-nipâyahk
+     nipâ+V+IA+Cnj+Prt+12Pl: ênipâyahk
+     nipâ+V+IA+Cnj+Prt+2Pl: ê-kî-nipâyêk
+     nipâ+V+IA+Cnj+Prt+2Pl: ênipâyêk
+     nipâ+V+IA+Cnj+Prt+3Pl: ê-kî-nipâcik
+     nipâ+V+IA+Cnj+Prt+3Pl: ênipâcik
+     
+     nipâ+V+IA+Cnj+Prt+1Sg: ê-wî-nipâyân
+     nipâ+V+IA+Cnj+Prt+1Sg: ênipâyân
+     nipâ+V+IA+Cnj+Prt+2Sg: ê-wî-nipâyan
+     nipâ+V+IA+Cnj+Prt+2Sg: ênipâyan
+     nipâ+V+IA+Cnj+Prt+3Sg: ê-wî-nipât
+     nipâ+V+IA+Cnj+Prt+3Sg: ênipât
+     nipâ+V+IA+Cnj+Prt+3oSg: ê-wî-nipâyit
+     nipâ+V+IA+Cnj+Prt+3oSg: ênipâyit
+     nipâ+V+IA+Cnj+Prt+1Pl: ê-wî-nipâyâhk
+     nipâ+V+IA+Cnj+Prt+1Pl: ênipâyâhk
+     nipâ+V+IA+Cnj+Prt+12Pl: ê-wî-nipâyahk
+     nipâ+V+IA+Cnj+Prt+12Pl: ênipâyahk
+     nipâ+V+IA+Cnj+Prt+2Pl: ê-wî-nipâyêk
+     nipâ+V+IA+Cnj+Prt+2Pl: ênipâyêk
+     nipâ+V+IA+Cnj+Prt+3Pl: ê-wî-nipâcik
+     nipâ+V+IA+Cnj+Prt+3Pl: ênipâcik
 
+     nipâ+V+IA+Ind+FutCn+1Sg: nipânyâni
+     nipâ+V+IA+Ind+FutCn+2Sg: nipânyani
+     nipâ+V+IA+Ind+FutCn+3Sg: nipânci
+     nipâ+V+IA+Ind+FutCn+3oSg: nipânyici
+     nipâ+V+IA+Ind+FutCn+1Pl: nipâyâhki
+     nipâ+V+IA+Ind+FutCn+12Pl: nipâyâhko
+     nipâ+V+IA+Ind+FutCn+2Pl: nipânyêko
+     nipâ+V+IA+Ind+FutCn+3Pl: nipântwâwi
+     nipâ+V+IA+Ind+FutCn+3oPl: nipânyici
 
 
 
