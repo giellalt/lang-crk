@@ -42,7 +42,9 @@ Vx:0 <=> _ %>:0 Vow ;
 !! __@RULENAME@__ inserts w after k in front of plural -ak
 !! Note that this rule probably is wrong, and that the -w- is
 !! a morphological affix rather than a phonological variant.
-0:w <=> k: %>:0 _ a k ;
+0:w <=> [ k: | o: | ô: ] %>:0 _ a k ; ! sikâk:sikâkwak ôhô:ôhôwak cahcahkayo:cahcahkayowak
+         h: p: %>:0 _ a k ; ! sihkihp:sihkihpwak
+ 
  
 !"Stem Final n" 
 ! __@RULENAME@__  This rule is applying in places where it should not. The usefulness of this rule needs to be rethought before it is re-isntated
