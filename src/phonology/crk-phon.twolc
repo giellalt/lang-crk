@@ -13,7 +13,7 @@ Alphabet
 
 Sets
 
- Vow = a e i o u â ê î ô 
+ Vow = a e i o u â ê î ô
        A E I O U Â Ê Î Ô ;
 
  LongVow = â ê î ô Â Ê Î Ô ;
@@ -118,7 +118,7 @@ Cx:0 <=> _ %>:0 Cx ;
 
 "Diminutives - all stem t change to c with diminutives" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
-t:c <=> Vow _ Vow :* %^DIM:0 ;  ! we'll see if there are exceptions
+t:c <=> [ Vow | %>:0 ]  _ Vow :* %^DIM:0 ;  ! we'll see if there are exceptions
 
 
 "In Vow+y final stems with Diminutives, part 1: delete y" 
