@@ -96,13 +96,14 @@ LEXICON INALIENABLE
 ! < 0:n 0:i "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
 ! < 0:k 0:i "@U.noun.12pl@" > INALIENABLESTEMS ; ! inclusive Pl
 ! < 0:k 0:i "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
-! < 0:o     "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
+! < 0:o     "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct
 
-< 0:n 0:i "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
+
+< 0:n 0:a "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k 0:a "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
 < 0:o 0:t 0:a    "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
 < 0:m 0:a "@U.noun.3isg@" > INALIENABLESTEMS ;     ! 3indef
-< 0:n 0:i "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
+< 0:n 0:a "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
 < 0:k 0:i "@U.noun.12pl@" > INALIENABLESTEMS ; ! inclusive Pl
 < 0:k 0:a "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
 < 0:n 0:a  "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
@@ -151,7 +152,6 @@ mâyatihk ANDECL "bighorn sheep" ;
 mâyatihk+Dim:mâyacihkos ANDECLPROF "little bighorn sheep" ;	
 minôs ANDECL "cat" ;	
 minôs+Dim:minôsis ANDECLPROF "little cat" ;	
-!mistatim IRREGULARDECL "horse" ; ! mistatimwak	 !dublet
 mostos ANDECL "cow" ;	
 mostos+Dim:mostosis ANDECLPROF "little cow" ;	
 môswa ANDECL "moose" ; ! môswak	
@@ -199,8 +199,9 @@ mistikw ANKWDECL ;
 askihkw ANKWDECL ;
 
 
-LEXICON INALIENABLESTEMS
-maniway+N+IN+Sg+Px3Sg:maniway # ; !"someone's cheek" !In yaml-file: animate
+LEXICON INALIENABLESTEMS 
+maniway:niway INDECL ; !"someone's cheek" 
+!maniway+N+IN+Sg+Px3Sg:niway # ; !"someone's cheek" 
 otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade"; Listed as a fully inflected form until we can ascertain the proper root form and account for the prefix variations, eg. ma- in maniway vs. mî- in mîpit
 otehye+N+IN+Pl+Px3Sg:otehya # ;
 
