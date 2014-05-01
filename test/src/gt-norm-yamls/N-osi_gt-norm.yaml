@@ -1,10 +1,10 @@
 Config:
   hfst:
     Gen: ../../../src/generator-gt-norm.hfst
-    Morph: ../../../src/aANlyser-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
   xerox:
     Gen: ../../../src/generator-gt-norm.xfst
-    Morph: ../../../src/aANlyser-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
     App: lookup
 
 Tests:
@@ -15,7 +15,7 @@ Tests:
      ôsi+N+IN+Loc: ôsihk
      ôsi+N+IN+Dim+Sg: ôsisis
      ôsi+N+IN+Dim+Pl: ôsisisa
-     ôsi+N+AN+Dim+Loc: ôsisisihk
+     ôsi+N+IN+Dim+Loc: ôsisisihk
 
      ôsi+N+IN+Sg+Px1Sg: nitôsi
      ôsi+N+IN+Sg+Px2Sg: kitôsi
@@ -61,7 +61,7 @@ Tests:
      ôsi+N+IN+Px2Sg+Loc: kitôsihk
      ôsi+N+IN+Px3Sg+Loc: otôsihk
      ôsi+N+IN+Px3iSg+Loc: otôsiyihk
-     ôsi+N+IN+Px1Pl+Loc: nisinânihk
+     ôsi+N+IN+Px1Pl+Loc: nitôsinânihk
      ôsi+N+IN+Px12Pl+Loc: kitôsinâhk
      ôsi+N+IN+Px2Pl+Loc: kitôsiwâwihk
      ôsi+N+IN+Px3Pl+Loc: otôsiwâwihk 
