@@ -54,7 +54,7 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 +FutCn !!= * @CODE@ Indicates Future Conditional
 +Prt  !!= * @CODE@ 
 +Prf  !!= * @CODE@ 
-+Cnj
++Cnj  !!= * @CODE@ 
 
 +Ind  !!= * @CODE@ Indicative, aka Independent
 +Imp  !!= * @CODE@ Imperative, consider deleting +Imp tag
@@ -105,12 +105,12 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 +Px1Sg	 !!= * @CODE@ person prefixes for nouns
 +Px2Sg	 !!= * @CODE@
 +Px3Sg	 !!= * @CODE@
++Px3iSg	 !!= * @CODE@
 +Px1Pl	 !!= * @CODE@ obviative
 +Px12Pl	 !!= * @CODE@ inclusive
 +Px2Pl	 !!= * @CODE@
 +Px3Pl	 !!= * @CODE@
 +Px3iPl	 !!= * @CODE@
-+Px3iSg	 !!= * @CODE@
 
 +IA      !!= * @CODE@ intransitive with animate subject, 
 +II      !!= * @CODE@ intransitive with inanimate subject, 
@@ -158,14 +158,14 @@ t2 		!!= * @CODE@  Prefix in possessives
 
 @U.verb.indprt1sg@  !!= flag diacritics for past tense inflections in idicatives
 @U.verb.indprt1sg@ !!= * @CODE@
-@U.verb.indprt2sg@
-@U.verb.indprt3sg@
-@U.verb.ind3osg@
-@U.verb.indprt1pl@
-@U.verb.indprt12pl@
-@U.verb.indprt2pl@
-@U.verb.indprt3pl@
-@U.verb.indprt3opl@ 
+@U.verb.indprt2sg@ !!= * @CODE@
+@U.verb.indprt3sg@ !!= * @CODE@
+@U.verb.ind3osg@ !!= * @CODE@
+@U.verb.indprt1pl@ !!= * @CODE@
+@U.verb.indprt12pl@ !!= * @CODE@
+@U.verb.indprt2pl@ !!= * @CODE@
+@U.verb.indprt3pl@ !!= * @CODE@
+@U.verb.indprt3opl@  !!= * @CODE@
 
 !!The subjunctive always has
 !!the ê- prefix, and future always has no prefix.
@@ -207,32 +207,31 @@ t2 		!!= * @CODE@  Prefix in possessives
 @U.verb.NI@ ! test
 @U.verb.KI@ ! test
 
-@U.verb.imp2sg@
-@U.verb.imp1pl@
-@U.verb.imp2pl@
-@U.verb.imp12pl@
+@U.verb.imp2sg@ !!= * @CODE@
+@U.verb.imp1pl@ !!= * @CODE@
+@U.verb.imp2pl@ !!= * @CODE@
+@U.verb.imp12pl@ !!= * @CODE@
 
-@U.verb.12plindep@
-@U.verb.1plindep@
-@U.verb.1sgindep@
-@U.verb.2plindep@
-@U.verb.2sgindep@
-@U.verb.3plindep@
-@U.verb.3osgindep@
+@U.verb.1sgindep@ !!= * @CODE@
+@U.verb.2sgindep@ !!= * @CODE@
+@U.verb.3osgindep@ !!= * @CODE@
+@U.verb.1plindep@ !!= * @CODE@
+@U.verb.12plindep@ !!= * @CODE@
+@U.verb.2plindep@ !!= * @CODE@
+@U.verb.3plindep@ !!= * @CODE@
 
-@U.noun.1sg@
-@U.noun.2sg@
-@U.noun.3sg@
-@U.noun.3isg@
-@U.noun.3osg@
-@U.noun.1pl@
-@U.noun.12pl@
-@U.noun.2pl@
-@U.noun.3pl@
-@U.noun.3ipl@
-@U.noun.3isg@
+@U.noun.1sg@ !!= * @CODE@
+@U.noun.2sg@ !!= * @CODE@
+@U.noun.3sg@ !!= * @CODE@
+@U.noun.3isg@ !!= * @CODE@
+@U.noun.3osg@ !!= * @CODE@
+@U.noun.1pl@ !!= * @CODE@
+@U.noun.12pl@ !!= * @CODE@
+@U.noun.2pl@ !!= * @CODE@
+@U.noun.3pl@ !!= * @CODE@
+@U.noun.3ipl@ !!= * @CODE@
 
-@U.noun.abs@ 
+@U.noun.abs@  !!= * @CODE@
 
 ! Key lexicon
 
