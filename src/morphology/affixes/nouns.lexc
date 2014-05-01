@@ -71,11 +71,6 @@ LEXICON INDECLPROF !!= Declensions for nouns taking reduced diminutive at by mor
 +N+IN+Pl:%> IN_SUFF_PL ;
 +N+IN:%> IN_SUFF_LOC ;
 
-!LEXICON INALIENABLEDECL !!= * @CODE@ for the inanimate declension
-!< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
-!< "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PL_A ; !
-
-
 LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
 
 +N+IN+Sg:%> INALIEN_SUFF_SG ;
