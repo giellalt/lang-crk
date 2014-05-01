@@ -103,6 +103,7 @@ i:a <=> .#. n _ %>:0 [ n | m ] i	;
 "Double consonant deletion"
 !! __@RULENAME@__ 
 Cx:0 <=> _ %>:0 Cx ;
+
 	where Cx in Cns ;
 
 !"Double vowel deletion" "Suffix vowel deletion in vowel final stems"
@@ -115,7 +116,7 @@ Cx:0 <=> _ %>:0 Cx ;
 
 "Diminutives - all stem t change to c with diminutives" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
-t:c <=> :* _ :* %^DIM:0 ;
+t:c <=> Vow _ Vow :* %^DIM:0 ;  ! we'll see if there are exceptions
 
 
 "In Vow+y final stems with Diminutives, part 1: delete y" 
@@ -134,8 +135,8 @@ w:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
 i:0 <=> [ o: | a: | e: | ê: | :î ] [ y:| w: ] %>:0 _ s: %^DIM:0 i: s: ;
 
-"Vowel lengthening in iw final nouns with diminutives"
-i:î <=> _ [ y:| w: ] %>:0 i: s: %^DIM:0 i: s: ;
+!"Vowel lengthening in iw final nouns with diminutives" !Is covered by part 2
+!i:î <=> _ [ y:| w: ] %>:0 i: s: %^DIM:0 i: s: ;
 
 
 "Diminutives rule change ending to os with k-final stems 1" 
