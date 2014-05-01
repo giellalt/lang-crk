@@ -9,16 +9,16 @@ Config:
 
 Tests:
   
-  Verb - maniway - ok : # -m animate noun
-#     maniway+N+AN+Sg:
-#     maniway+N+AN+Pl:
-#     maniway+N+AN+Loc:
+  Verb - maniway - ok : # -m animate noun, acc. to lexc and Wolvengrey it is inanimate
+#     maniway+N+IN+Sg:
+#     maniway+N+IN+Pl:
+#     maniway+N+IN+Loc:
      
-     maniway+N+AN+Sg+Px1Sg: naniway
-     maniway+N+AN+Sg+Px2Sg: kaniway
-     maniway+N+AN+Sg+Px3Sg: otaniway
-     maniway+N+AN+Sg+Px3iSg: maniway
-     maniway+N+AN+Sg+Px1Pl: naniwaynân
-     maniway+N+AN+Sg+Px12Pl: kiniwaynân # kinawaynân ???
-     maniway+N+AN+Sg+Px2Pl: kaniwaywâw
-     maniway+N+AN+Sg+Px3Pl: naniwaywâw
+     maniway+N+IN+Sg+Px1Sg: naniway
+     maniway+N+IN+Sg+Px2Sg: kaniway
+     maniway+N+IN+Sg+Px3Sg: otaniway
+     maniway+N+IN+Sg+Px3iSg: maniway
+     maniway+N+IN+Sg+Px1Pl: naniwaynân
+     maniway+N+IN+Sg+Px12Pl: kiniwaynân # kinawaynân ???
+     maniway+N+IN+Sg+Px2Pl: kaniwaywâw
+     maniway+N+IN+Sg+Px3Pl: naniwaywâw
