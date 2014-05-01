@@ -54,6 +54,7 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 +FutCn !!= * @CODE@ Indicates Future Conditional
 +Prt  !!= * @CODE@ 
 +Prf  !!= * @CODE@ 
++Cnj
 
 +Ind  !!= * @CODE@ Indicative, aka Independent
 +Imp  !!= * @CODE@ Imperative, consider deleting +Imp tag
@@ -108,6 +109,8 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 +Px12Pl	 !!= * @CODE@ inclusive
 +Px2Pl	 !!= * @CODE@
 +Px3Pl	 !!= * @CODE@
++Px3iPl	 !!= * @CODE@
++Px3iSg	 !!= * @CODE@
 
 +IA      !!= * @CODE@ intransitive with animate subject, 
 +II      !!= * @CODE@ intransitive with inanimate subject, 
@@ -209,6 +212,14 @@ t2 		!!= * @CODE@  Prefix in possessives
 @U.verb.imp2pl@
 @U.verb.imp12pl@
 
+@U.verb.12plindep@
+@U.verb.1plindep@
+@U.verb.1sgindep@
+@U.verb.2plindep@
+@U.verb.2sgindep@
+@U.verb.3plindep@
+@U.verb.3osgindep@
+
 @U.noun.1sg@
 @U.noun.2sg@
 @U.noun.3sg@
@@ -218,6 +229,8 @@ t2 		!!= * @CODE@  Prefix in possessives
 @U.noun.12pl@
 @U.noun.2pl@
 @U.noun.3pl@
+@U.noun.3ipl@
+@U.noun.3isg@
 
 @U.noun.abs@ 
 
