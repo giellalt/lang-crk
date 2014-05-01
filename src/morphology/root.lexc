@@ -61,10 +61,10 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 +Del  !!= * @CODE@ Delayed imperative
 +Imm  !!= * @CODE@ Immediate imperative, consider deleting +Imp tag
 +Sbj  !!= * @CODE@ Subjunctive, aka Conjunct mode, ê-
-+Cond  !!= * @CODE@ TODO: Should Future Conditional be tagget Fut only?
++Cond  !!= * @CODE@ TODO: Should Future Conditional be tagget Fut only? Why?
 
-+Int  !!= * @CODE@ Interdiction, Ojibwe?
-+Dur  !!= * @CODE@ Durative, Ojibwe?
+!+Int  !!= * @CODE@ Interdiction, Ojibwe? No such thing in Plains Cree
+!+Dur  !!= * @CODE@ Durative, Ojibwe?	  No such thing in Plains Cree
 
 
 +1Sg    !!= * @CODE@ first singular
