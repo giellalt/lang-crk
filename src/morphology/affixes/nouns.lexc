@@ -31,6 +31,7 @@ LEXICON IRREGULARDECL	!!= * @CODE@ is there to handle the highly irregular atim 
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_WAK ; !
 !< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
 < "+N":0 "+AN":0 "@U.noun.abs@" >  IRREG_LOC ; !
+< "+N":0 "+AN":0 "@U.noun.abs@" >  IRREG_OBVIATIVE ; !
 +N+AN: AN_DIM_IRR_ABS ;
 
 LEXICON IRREGULARINFL !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
@@ -38,6 +39,7 @@ LEXICON IRREGULARINFL !!= * @CODE@ is also there to handle the highly irregular 
 +N+AN+Pl: AN_IRREG_SUFF_PL ;
 +N+AN: AN_DIM_IRR_SG ;
 +N+AN: AN_DIM_IRR_PL ;
++N+AN:%> AN_IRREG_SUFF_LOC ;
 
 LEXICON ANKWDECL !!= * @CODE@ takes -om as extra suffix in possessed form
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
@@ -93,7 +95,7 @@ LEXICON AN_DIM_ABS
 
 LEXICON AN_DIM_IRR_SG !!= * @CODE@
 < "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 >   AN_IRREG_SUFF_SG ; !
-!< "+Dim":s 0:%^DIM 0:i 0:s >  LOC ;
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s >   AN_IRREG_SUFF_LOC ;
 
 LEXICON AN_DIM_IRR_PL !!= * @CODE@
 < "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 >   AN_IRREG_SUFF_PL ; !
@@ -101,9 +103,8 @@ LEXICON AN_DIM_IRR_PL !!= * @CODE@
 LEXICON AN_DIM_IRR_ABS !!= * @CODE@
 < "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
 < "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
-< "+Dim":o 0:s 0:%^DIM 0:i 0:s         "@U.noun.abs@" >  LOC ;
-
-
+< "+Dim":o 0:s 0:%^DIM 0:i 0:s         "@U.noun.abs@" >  LOC ; !
+< "+Dim":o 0:s 0:%^DIM 0:i 0:s         "@U.noun.abs@" >  LOC ; !
 
 !!  !Diminutive suffixes in inanimate stems
 
@@ -281,6 +282,17 @@ LEXICON AN_IRREG_SUFF_PL !!= * @CODE@
 < "+Px3iPl":0 0:i 0:y 0:i 0:w "+Obv":0   "@U.noun.3isg@" >  PL_A ; ! obviative plural possessor, hence Pl is -a
 
 
+LEXICON AN_IRREG_SUFF_LOC
+< "+Px1Sg":0                  "@U.noun.1sg@"  > LOC ; !
+< "+Px2Sg":0                  "@U.noun.2sg@"  > LOC ; !
+< "+Px3Sg":0                  "@U.noun.3sg@"  > LOC ; !
+< "+Px3iSg":0 0:i 0:y 0:i 0:w "@U.noun.3isg@" > LOC ; !
+< "+Px1Pl":0  0:i 0:n 0:â 0:n "@U.noun.1pl@"  > LOC ;   ! exclusive Pl
+< "+Px12Pl":0 0:i 0:n 0:a 0:w "@U.noun.12pl@" > LOC ; ! inclusive Pl
+< "+Px2Pl":0  0:i 0:w 0:â 0:w "@U.noun.2pl@"  > LOC ; !
+< "+Px3Pl":0  0:i 0:w 0:â 0:w "@U.noun.3pl@"  > LOC ; !
+< "+Px3iPl":i 0:y 0:i 0:w     "@U.noun.3isg@" > LOC ; ! obviative plural possessor
+
 !! !Singular/plural possessed suffixes
 
 
@@ -332,3 +344,6 @@ LEXICON IRREG_LOC !!= * @CODE@
 !!Obviative suffix
 LEXICON OBVIATIVE
 +Obv:%>a # ;
+
+LEXICON IRREG_OBVIATIVE
++Obv:%>wa # ;
