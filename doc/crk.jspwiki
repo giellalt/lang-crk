@@ -45,19 +45,22 @@ POS
 Verbal MSP
  * +Prs   
  * +Fut  
- * +FutDf  Indicates Future Definite tense
- * +FutIt  Indicates Future Intentional tense
- * +FutCn  Indicates Future Conditional
+ * !+FutDf  Indicates Future Definite tense
+ * !+FutIt  Indicates Future Intentional tense
+ * !+FutCn  Indicates Future Conditional
  * +Prt   
  * +Prf   
  * +Cnj   
+ * +Int   This tag is for the Future Intentional
+ * +Def   This tag is for the Future Dfinite
 
  * +Ind   Indicative, aka Independent
  * +Imp   Imperative, consider deleting +Imp tag
  * +Del   Delayed imperative
  * +Imm   Immediate imperative, consider deleting +Imp tag
  * +Sbj   Subjunctive, aka Conjunct mode, ê-
- * +Cond   TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
+ * +Cond  TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
+
 
  * !+Int   Interdiction, Ojibwe? No such thing in Plains Cree
  * !+Dur   Durative, Ojibwe?	  No such thing in Plains Cree
@@ -463,6 +466,7 @@ Intransitive animate
 
 
 
+
  LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
 
 Intransitive inanimate
@@ -710,6 +714,9 @@ In these final ê changes to â; they also different imperative endings; splits 
 
 
  LEXICON IA_SBJ  gives flag diacritics and directs to subjunctive person suffixes
+
+
+
 
 
 
