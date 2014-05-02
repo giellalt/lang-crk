@@ -9,31 +9,115 @@ Config:
 
 Tests:
   
-  Verb - nêhiyawê - ok : # Ordinary IA verb - full paradigm, "Speak Cree"
-     nêhiyawê+V+IA+Ind+Prs+1Sg: ninêhiyawân
-     nêhiyawê+V+IA+Ind+Prs+2Sg: kinêhiyawân
-     nêhiyawê+V+IA+Ind+Prs+3Sg: nêhiyawêw
-     nêhiyawê+V+IA+Ind+Prs+3oSg: nêhiyawêyiwa
-     nêhiyawê+V+IA+Ind+Prs+1Pl: ninêhiyawânân
-     nêhiyawê+V+IA+Ind+Prs+12Pl: kinêhiyawânaw
-     nêhiyawê+V+IA+Ind+Prs+2Pl: kinêhiyawânâwâw
-     nêhiyawê+V+IA+Ind+Prs+3Pl: nêhiyawêwak
-     nêhiyawê+V+IA+Ind+Prs+3oPl: nêhiyawêyiwa
+  Verb - nêhiyawêw - help : # Ordinary VAI verb - full paradigm
 
-     nêhiyawê+V+IA+Cnj+1Sg: ê-nêhiyawêyân
-     nêhiyawê+V+IA+Cnj+2Sg: ê-nêhiyawêyan
-     nêhiyawê+V+IA+Cnj+3Sg: ê-nêhiyawêt
-     nêhiyawê+V+IA+Cnj+3oSg: ê-nêhiyawêyit
-     nêhiyawê+V+IA+Cnj+1Pl: ê-nêhiyawêyâhk
-     nêhiyawê+V+IA+Cnj+12Pl: ê-nêhiyawêyahk
-     nêhiyawê+V+IA+Cnj+2Pl: ê-nêhiyawêyêk
-     nêhiyawê+V+IA+Cnj+3Pl: ê-nêhiyawêcik
-     nêhiyawê+V+IA+Cnj+3oPl: ê-nêhiyawêyit
+     nêhiyawêw+V+IA+Imp+Imm+2Sg: nêhiyawê
+     nêhiyawêw+V+IA+Imp+Imm+2Pl: nêhiyawêk
+     nêhiyawêw+V+IA+Imp+Imm+12Pl: nêhiyawêtân
      
-     nêhiyawê+V+IA+Imp+Imm+2Sg: nêhiyawê
-     nêhiyawê+V+IA+Imp+Imm+2Pl: nêhiyawêk
-     nêhiyawê+V+IA+Imp+Imm+12Pl: nêhiyawêtân
+     nêhiyawêw+V+IA+Imp+Del+2Sg: nêhiyawêhkan
+     nêhiyawêw+V+IA+Imp+Del+2Pl: nêhiyawêhkêk
+     nêhiyawêw+V+IA+Imp+Del+12Pl: nêhiyawêhkahk
      
-     nêhiyawê+V+IA+Imp+Del+2Sg: nêhiyawêhkan
-     nêhiyawê+V+IA+Imp+Del+2Plg: nêhiyawêhkêk
-     nêhiyawê+V+IA+Imp+Del+12Pl: nêhiyawêhkahk
+     nêhiyawêw+V+IA+Ind+Prs+1Sg: ninêhiyawân
+     nêhiyawêw+V+IA+Ind+Prs+2Sg: kinêhiyawân
+     nêhiyawêw+V+IA+Ind+Prs+3Sg: nêhiyawêw
+     nêhiyawêw+V+IA+Ind+Prs+3oSg: nêhiyawêyiwa
+     nêhiyawêw+V+IA+Ind+Prs+1Pl: ninêhiyawânân
+     nêhiyawêw+V+IA+Ind+Prs+12Pl: kinêhiyawânaw
+     nêhiyawêw+V+IA+Ind+Prs+2Pl: kinêhiyawânâwâw
+     nêhiyawêw+V+IA+Ind+Prs+3Pl: nêhiyawêwak
+     nêhiyawêw+V+IA+Ind+Prs+3oPl: nêhiyawâyiwa
+     
+     nêhiyawêw+V+IA+Ind+Prt+1Sg: nikî-nêhiyawân
+     nêhiyawêw+V+IA+Ind+Prt+2Sg: kikî-nêhiyawân
+     nêhiyawêw+V+IA+Ind+Prt+3Sg: kî-nêhiyawêw
+     nêhiyawêw+V+IA+Ind+Prt+3oSg: kî-nêhiyawêyiwa
+     nêhiyawêw+V+IA+Ind+Prt+1Pl: nikî-nêhiyawânân
+     nêhiyawêw+V+IA+Ind+Prt+12Pl: kikî-nêhiyawânaw
+     nêhiyawêw+V+IA+Ind+Prt+2Pl: kikî-nêhiyawânâwâw
+     nêhiyawêw+V+IA+Ind+Prt+3Pl: kî-nêhiyawêwak
+     nêhiyawêw+V+IA+Ind+Prt+3oPl: kî-nêhiyawêyiwa
+     
+     nêhiyawêw+V+IA+Ind+Fut+Def+1Sg: nika-nêhiyawân
+     nêhiyawêw+V+IA+Ind+Fut+Def+2Sg: kika-nêhiyawân
+     nêhiyawêw+V+IA+Ind+Fut+Def+3Sg: ka-nêhiyawêw
+     nêhiyawêw+V+IA+Ind+Fut+Def+3oSg: ka-nêhiyawêyiwa
+     nêhiyawêw+V+IA+Ind+Fut+Def+1Pl: nika-nêhiyawânân
+     nêhiyawêw+V+IA+Ind+Fut+Def+12Pl: kika-nêhiyawânaw
+     nêhiyawêw+V+IA+Ind+Fut+Def+2Pl: kika-nêhiyawânâwâw
+     nêhiyawêw+V+IA+Ind+Fut+Def+3Pl: ka-nêhiyawêwak
+     nêhiyawêw+V+IA+Ind+Fut+Def+3oPl: ka-nêhiyawêyiwa
+     
+     nêhiyawêw+V+IA+Ind+Fut+Int+1Sg: nêhiyawêw+V+IA+Ind+Fut+Int+1Sg+?
+     nêhiyawêw+V+IA+Ind+Fut+Int+2Sg: nêhiyawêw+V+IA+Ind+Fut+Int+2Sg+?
+     nêhiyawêw+V+IA+Ind+Fut+Int+3Sg: nêhiyawêw+V+IA+Ind+Fut+Int+3Sg+?
+     nêhiyawêw+V+IA+Ind+Fut+Int+3oSg: nêhiyawêw+V+IA+Ind+Fut+Int+3oSg+?
+     nêhiyawêw+V+IA+Ind+Fut+Int+1Pl: nêhiyawêw+V+IA+Ind+Fut+Int+1Pl+?
+     nêhiyawêw+V+IA+Ind+Fut+Int+12Pl: nêhiyawêw+V+IA+Ind+Fut+Int+12Pl+?
+     nêhiyawêw+V+IA+Ind+Fut+Int+2Pl: nêhiyawêw+V+IA+Ind+Fut+Int+2Pl+?
+     nêhiyawêw+V+IA+Ind+Fut+Int+3Pl: nêhiyawêw+V+IA+Ind+Fut+Int+3Pl+?
+     nêhiyawêw+V+IA+Ind+Fut+Int+3oPl: nêhiyawêw+V+IA+Ind+Fut+Int+3oPl+?
+     
+     nêhiyawêw+V+IA+Cnj+Prs+1Sg: nêhiyawêw+V+IA+Cnj+1Sg+?
+     nêhiyawêw+V+IA+Cnj+1Sg: nêhiyawêw+V+IA+Cnj+1Sg+?
+     nêhiyawêw+V+IA+Cnj+2Sg: nêhiyawêw+V+IA+Cnj+2Sg+?
+     nêhiyawêw+V+IA+Cnj+2Sg: nêhiyawêw+V+IA+Cnj+2Sg+?
+     nêhiyawêw+V+IA+Cnj+3Sg: nêhiyawêw+V+IA+Cnj+3Sg+?
+     nêhiyawêw+V+IA+Cnj+3Sg: nêhiyawêw+V+IA+Cnj+3Sg+?
+     nêhiyawêw+V+IA+Cnj+3oSg: nêhiyawêw+V+IA+Cnj+3oSg+?
+     nêhiyawêw+V+IA+Cnj+3oSg: nêhiyawêw+V+IA+Cnj+3oSg+
+     nêhiyawêw+V+IA+Cnj+1Pl: nêhiyawêw+V+IA+Cnj+1Pl+?
+     nêhiyawêw+V+IA+Cnj+1Pl: nêhiyawêw+V+IA+Cnj+1Pl+?
+     nêhiyawêw+V+IA+Cnj+12Pl: nêhiyawêw+V+IA+Cnj+12Pl+?
+     nêhiyawêw+V+IA+Cnj+12Pl: nêhiyawêw+V+IA+Cnj+12Pl+?
+     nêhiyawêw+V+IA+Cnj+2Pl: nêhiyawêw+V+IA+Cnj+2Pl+?
+     nêhiyawêw+V+IA+Cnj+2Pl: nêhiyawêw+V+IA+Cnj+2Pl+?
+     nêhiyawêw+V+IA+Cnj+3Pl: nêhiyawêw+V+IA+Cnj+3Pl+?
+     nêhiyawêw+V+IA+Cnj+3Pl: nêhiyawêw+V+IA+Cnj+3Pl+?
+     
+     nêhiyawêw+V+IA+Cnj+Prt+1Sg: nêhiyawêw+V+IA+Cnj+Prt+1Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+1Sg: nêhiyawêw+V+IA+Cnj+Prt+1Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+2Sg: nêhiyawêw+V+IA+Cnj+Prt+2Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+2Sg: nêhiyawêw+V+IA+Cnj+Prt+2Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+3Sg: nêhiyawêw+V+IA+Cnj+Prt+3Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+3Sg: nêhiyawêw+V+IA+Cnj+Prt+3Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+3oSg: nêhiyawêw+V+IA+Cnj+Prt+3oSg+?
+     nêhiyawêw+V+IA+Cnj+Prt+3oSg: nêhiyawêw+V+IA+Cnj+Prt+3oSg+?
+     nêhiyawêw+V+IA+Cnj+Prt+1Pl: nêhiyawêw+V+IA+Cnj+Prt+1Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+1Pl: nêhiyawêw+V+IA+Cnj+Prt+1Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+12Pl: nêhiyawêw+V+IA+Cnj+Prt+12Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+12Pl: nêhiyawêw+V+IA+Cnj+Prt+12Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+2Pl: nêhiyawêw+V+IA+Cnj+Prt+2Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+2Pl: nêhiyawêw+V+IA+Cnj+Prt+2Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+3Pl: nêhiyawêw+V+IA+Cnj+Prt+3Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+3Pl: nêhiyawêw+V+IA+Cnj+Prt+3Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+3oPl: nêhiyawêw+V+IA+Cnj+Prt+3Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+3oPl: nêhiyawêw+V+IA+Cnj+Prt+3Pl+?
+     
+     nêhiyawêw+V+IA+Cnj+Prt+1Sg: nêhiyawêw+V+IA+Cnj+Prt+1Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+1Sg: nêhiyawêw+V+IA+Cnj+Prt+1Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+2Sg: nêhiyawêw+V+IA+Cnj+Prt+2Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+2Sg: nêhiyawêw+V+IA+Cnj+Prt+2Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+3Sg: nêhiyawêw+V+IA+Cnj+Prt+3Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+3Sg: nêhiyawêw+V+IA+Cnj+Prt+3Sg+?
+     nêhiyawêw+V+IA+Cnj+Prt+3oSg: nêhiyawêw+V+IA+Cnj+Prt+3oSg+?
+     nêhiyawêw+V+IA+Cnj+Prt+3oSg: nêhiyawêw+V+IA+Cnj+Prt+3oSg+?
+     nêhiyawêw+V+IA+Cnj+Prt+1Pl: nêhiyawêw+V+IA+Cnj+Prt+1Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+1Pl: nêhiyawêw+V+IA+Cnj+Prt+1Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+12Pl: nêhiyawêw+V+IA+Cnj+Prt+12Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+12Pl: nêhiyawêw+V+IA+Cnj+Prt+12Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+2Pl: nêhiyawêw+V+IA+Cnj+Prt+2Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+2Pl: nêhiyawêw+V+IA+Cnj+Prt+2Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+3Pl: nêhiyawêw+V+IA+Cnj+Prt+3Pl+?
+     nêhiyawêw+V+IA+Cnj+Prt+3Pl: nêhiyawêw+V+IA+Cnj+Prt+3Pl+?
+     
+     nêhiyawêw+V+IA+Fut+Cond+1Sg: nêhiyawêyâni
+     nêhiyawêw+V+IA+Fut+Cond+2Sg: nêhiyawêyani
+     nêhiyawêw+V+IA+Fut+Cond+3Sg: nêhiyawêci
+     nêhiyawêw+V+IA+Fut+Cond+3oSg: nêhiyawêyici
+     nêhiyawêw+V+IA+Fut+Cond+1Pl: nêhiyawêyâhki
+     nêhiyawêw+V+IA+Fut+Cond+12Pl: nêhiyawêyahko
+     nêhiyawêw+V+IA+Fut+Cond+2Pl: nêhiyawêyêko
+     nêhiyawêw+V+IA+Fut+Cond+3Pl: nêhiyawêtwâwi
+     nêhiyawêw+V+IA+Fut+Cond+3oPl: nêhiyawêyici
