@@ -145,7 +145,7 @@ LEXICON IA_IND_PRT-LONG-E !!= @CODE@ gives person suffixes
 
 
 LEXICON IA_IND_PRT-LONG-E_SUBJ !!= @CODE@ gives person suffixes
-<  "+1Sg":0 "@U.verb.sbj@"  0:ê 0:y 0:â 0:n                 > # ; !"
+<  "+1Sg":0 "@U.verb.sbjPrs@"  0:ê 0:y 0:â 0:n                 > # ; !"
 <  "+2Sg":0 "@U.verb.sbj@"  0:ê 0:y 0:a 0:n                 > # ; !"
 <  "+3Sg":0 "@U.verb.sbj@"  0:ê 0:t                         > # ; !"
 < "+3oSg":0 "@U.verb.sbj@"  0:ê 0:y 0:i 0:t                 > # ; !"
@@ -154,6 +154,8 @@ LEXICON IA_IND_PRT-LONG-E_SUBJ !!= @CODE@ gives person suffixes
 <  "+2Pl":0 "@U.verb.sbj@"  0:ê 0:y 0:ê 0:k                 > # ;           !
 <  "+3Pl":0 "@U.verb.sbj@"a  0:ê 0:c 0:i 0:k                 > # ;   !
 < "+3oPl":0 "@U.verb.sbj@"  0:ê 0:y 0:i 0:t                 > # ;   !!
+
+
 
 
 LEXICON IA_IND_FUT-DF-LONG-E !
