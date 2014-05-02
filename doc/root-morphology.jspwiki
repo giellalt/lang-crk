@@ -39,16 +39,17 @@ Verbal MSP
  * +FutCn  Indicates Future Conditional
  * +Prt   
  * +Prf   
+ * +Cnj   
 
  * +Ind   Indicative, aka Independent
  * +Imp   Imperative, consider deleting +Imp tag
  * +Del   Delayed imperative
  * +Imm   Immediate imperative, consider deleting +Imp tag
  * +Sbj   Subjunctive, aka Conjunct mode, ê-
- * +Cond   TODO: Should Future Conditional be tagget Fut only?
+ * +Cond   TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
 
- * +Int   Interdiction, Ojibwe?
- * +Dur   Durative, Ojibwe?
+ * !+Int   Interdiction, Ojibwe? No such thing in Plains Cree
+ * !+Dur   Durative, Ojibwe?	  No such thing in Plains Cree
 
 
  * +1Sg     first singular
@@ -89,10 +90,12 @@ Nominal MSP
  * +Px1Sg	  person prefixes for nouns
  * +Px2Sg	 
  * +Px3Sg	 
+ * +Px3iSg	 
  * +Px1Pl	  obviative
  * +Px12Pl	  inclusive
  * +Px2Pl	 
  * +Px3Pl	 
+ * +Px3iPl	 
 
  * +IA       intransitive with animate subject, 
  * +II       intransitive with inanimate subject, 
@@ -138,6 +141,14 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
 @U.verb.indprt1sg@    flag diacritics for past tense inflections in idicatives
  * @U.verb.indprt1sg@ 
+ * @U.verb.indprt2sg@ 
+ * @U.verb.indprt3sg@ 
+ * @U.verb.ind3osg@ 
+ * @U.verb.indprt1pl@ 
+ * @U.verb.indprt12pl@ 
+ * @U.verb.indprt2pl@ 
+ * @U.verb.indprt3pl@ 
+ * @U.verb.indprt3opl@  
 
 
  * @U.verb.indFutDef1sg@  Future definite
@@ -174,8 +185,31 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
  * @U.verb.fut@   Future Conditional
 
 
+ * @U.verb.imp2sg@ 
+ * @U.verb.imp1pl@ 
+ * @U.verb.imp2pl@ 
+ * @U.verb.imp12pl@ 
 
+ * @U.verb.1sgindep@ 
+ * @U.verb.2sgindep@ 
+ * @U.verb.3osgindep@ 
+ * @U.verb.1plindep@ 
+ * @U.verb.12plindep@ 
+ * @U.verb.2plindep@ 
+ * @U.verb.3plindep@ 
 
+ * @U.noun.1sg@ 
+ * @U.noun.2sg@ 
+ * @U.noun.3sg@ 
+ * @U.noun.3isg@ 
+ * @U.noun.3osg@ 
+ * @U.noun.1pl@ 
+ * @U.noun.12pl@ 
+ * @U.noun.2pl@ 
+ * @U.noun.3pl@ 
+ * @U.noun.3ipl@ 
+
+ * @U.noun.abs@  
 
 
   LEXICON Root          is where it all starts

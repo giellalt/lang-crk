@@ -50,16 +50,17 @@ Verbal MSP
  * +FutCn  Indicates Future Conditional
  * +Prt   
  * +Prf   
+ * +Cnj   
 
  * +Ind   Indicative, aka Independent
  * +Imp   Imperative, consider deleting +Imp tag
  * +Del   Delayed imperative
  * +Imm   Immediate imperative, consider deleting +Imp tag
  * +Sbj   Subjunctive, aka Conjunct mode, ê-
- * +Cond   TODO: Should Future Conditional be tagget Fut only?
+ * +Cond   TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
 
- * +Int   Interdiction, Ojibwe?
- * +Dur   Durative, Ojibwe?
+ * !+Int   Interdiction, Ojibwe? No such thing in Plains Cree
+ * !+Dur   Durative, Ojibwe?	  No such thing in Plains Cree
 
 
  * +1Sg     first singular
@@ -100,10 +101,12 @@ Nominal MSP
  * +Px1Sg	  person prefixes for nouns
  * +Px2Sg	 
  * +Px3Sg	 
+ * +Px3iSg	 
  * +Px1Pl	  obviative
  * +Px12Pl	  inclusive
  * +Px2Pl	 
  * +Px3Pl	 
+ * +Px3iPl	 
 
  * +IA       intransitive with animate subject, 
  * +II       intransitive with inanimate subject, 
@@ -149,6 +152,14 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
 @U.verb.indprt1sg@    flag diacritics for past tense inflections in idicatives
  * @U.verb.indprt1sg@ 
+ * @U.verb.indprt2sg@ 
+ * @U.verb.indprt3sg@ 
+ * @U.verb.ind3osg@ 
+ * @U.verb.indprt1pl@ 
+ * @U.verb.indprt12pl@ 
+ * @U.verb.indprt2pl@ 
+ * @U.verb.indprt3pl@ 
+ * @U.verb.indprt3opl@  
 
 
  * @U.verb.indFutDef1sg@  Future definite
@@ -185,8 +196,31 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
  * @U.verb.fut@   Future Conditional
 
 
+ * @U.verb.imp2sg@ 
+ * @U.verb.imp1pl@ 
+ * @U.verb.imp2pl@ 
+ * @U.verb.imp12pl@ 
 
+ * @U.verb.1sgindep@ 
+ * @U.verb.2sgindep@ 
+ * @U.verb.3osgindep@ 
+ * @U.verb.1plindep@ 
+ * @U.verb.12plindep@ 
+ * @U.verb.2plindep@ 
+ * @U.verb.3plindep@ 
 
+ * @U.noun.1sg@ 
+ * @U.noun.2sg@ 
+ * @U.noun.3sg@ 
+ * @U.noun.3isg@ 
+ * @U.noun.3osg@ 
+ * @U.noun.1pl@ 
+ * @U.noun.12pl@ 
+ * @U.noun.2pl@ 
+ * @U.noun.3pl@ 
+ * @U.noun.3ipl@ 
+
+ * @U.noun.abs@  
 
 
   LEXICON Root          is where it all starts
@@ -212,9 +246,13 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
 __Suffix vowel deletion in vowel final stems__ deletes stem vowel in vowel final stems
 
+__i deletion when ii in some special cases__ deletes stem vowel in vowel final stems !
+
+
 __w Insertion in Front of Vowel Initial Suffix after ksv c__ inserts w after k in front of plural -ak
 Note that this rule probably is wrong, and that the -w- is
 a morphological affix rather than a phonological variant.
+
 
 
 
@@ -234,13 +272,14 @@ __locative alternation naahk 1		__ adds nâhk after êw 1: change w to n
 
 
 
-__possessive prefxes__ 
+__possessive prefixes__ 
 
 
 __i to a in prefixes in front of nasals__ 
 
 
 __Double consonant deletion__ 
+
 
 __Double consonant deletion__ 
 
@@ -313,7 +352,6 @@ INALIENABLE redirects to INALIENABLESTEMS
 
 
 
-
 ANSTEM_kw is for a set of nouns that take an additional suffix in the possessive paradigm
 
 
@@ -331,11 +369,11 @@ ANSTEM_kw is for a set of nouns that take an additional suffix in the possessive
 
 possessive paradigm
 
-
-
-
-
 !Inanimate Nouns
+
+
+
+
 
 
 
@@ -496,8 +534,10 @@ LEXICON ANDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
+ * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
 
 
+ * LEXICON INALIEN_SUFF_SG 
 
 
 
@@ -517,8 +557,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON AN_DIM_IRR_PL 
 
  * LEXICON AN_DIM_IRR_ABS 
-
-
 
  !Diminutive suffixes in inanimate stems
 
@@ -540,7 +578,7 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 !Possessive suffixes
 
- * LEXICON INAL_SUFF_SG  
+ * LEXICON INAL_SUFF_SG  not in use
 
 
 
@@ -575,7 +613,7 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON ANKWDECL_SUFF_PL  
 
 
- * LEXICON INAL_SUFF_PL  
+ * LEXICON INAL_SUFF_PL   Not in use
 
  * LEXICON AN_IRREG_SUFF_SG  
 
@@ -583,22 +621,23 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON AN_IRREG_SUFF_PL  
 
 
+
 !Singular/plural possessed suffixes
 
 
- * LEXICON SG_naan  
+ * LEXICON SG_naan   Not in use
 
 
  * LEXICON SG_waaw  
 
 
- * LEXICON PL_naan_AK  
+ * LEXICON PL_naan_AK   Not in use
 
 
- * LEXICON PL_waaw_AK  
+ * LEXICON PL_waaw_AK  Not in use
 
 
- * LEXICON PL_waaw_A  
+ * LEXICON PL_waaw_A  Not in use
 
 
  * LEXICON SG_  
@@ -618,6 +657,7 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON LOC  
 
  * LEXICON IRREG_LOC  
+
 
 
 

@@ -22,8 +22,10 @@ LEXICON ANDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
+ * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
 
 
+ * LEXICON INALIEN_SUFF_SG 
 
 
 
@@ -43,8 +45,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON AN_DIM_IRR_PL 
 
  * LEXICON AN_DIM_IRR_ABS 
-
-
 
  !Diminutive suffixes in inanimate stems
 
@@ -66,7 +66,7 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 !Possessive suffixes
 
- * LEXICON INAL_SUFF_SG  
+ * LEXICON INAL_SUFF_SG  not in use
 
 
 
@@ -101,7 +101,7 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON ANKWDECL_SUFF_PL  
 
 
- * LEXICON INAL_SUFF_PL  
+ * LEXICON INAL_SUFF_PL   Not in use
 
  * LEXICON AN_IRREG_SUFF_SG  
 
@@ -109,22 +109,23 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON AN_IRREG_SUFF_PL  
 
 
+
 !Singular/plural possessed suffixes
 
 
- * LEXICON SG_naan  
+ * LEXICON SG_naan   Not in use
 
 
  * LEXICON SG_waaw  
 
 
- * LEXICON PL_naan_AK  
+ * LEXICON PL_naan_AK   Not in use
 
 
- * LEXICON PL_waaw_AK  
+ * LEXICON PL_waaw_AK  Not in use
 
 
- * LEXICON PL_waaw_A  
+ * LEXICON PL_waaw_A  Not in use
 
 
  * LEXICON SG_  
@@ -144,5 +145,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON LOC  
 
  * LEXICON IRREG_LOC  
+
 
 
