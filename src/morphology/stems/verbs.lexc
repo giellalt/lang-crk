@@ -91,15 +91,15 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 < 0:n 0:i 0:k 0:a 0:%- "@U.verb.indFutDef1sg@" > IALIST ; !"Okimâsis 2004: 33 and 39
 < 0:k 0:i 0:k 0:a 0:%- "@U.verb.indFutDef2sg@" > IALIST ; !"
 
-<              0:t 0:a 0:%-  "@U.verb.indFutDef3sg@"  >  IALIST ; !"
-<              0:t 0:a 0:%-  "@U.verb.indFutDef3osg@" > IALIST ; !"
+<              0:k 0:a 0:%-  "@U.verb.indFutDef3sg@"  >  IALIST ; !"
+<              0:k 0:a 0:%-  "@U.verb.indFutDef3osg@" > IALIST ; !"
 
 < 0:n 0:i 0:k 0:a 0:%-  "@U.verb.indFutDef1pl@"  > IALIST ;   ! exclusive Pl
 < 0:k 0:i 0:k 0:a 0:%-  "@U.verb.indFutDef12pl@" > IALIST ;   ! inclusive Pl
 < 0:k 0:i 0:k 0:a 0:%-  "@U.verb.indFutDef2pl@"  > IALIST ;   !"
 
-<              0:t 0:a 0:%-  "@U.verb.indFutDef3pl@"  > IALIST ; !"
-<              0:t 0:a 0:%-  "@U.verb.indFutDef3opl@" > IALIST ; !"
+<              0:k 0:a 0:%-  "@U.verb.indFutDef3pl@"  > IALIST ; !"
+<              0:k 0:a 0:%-  "@U.verb.indFutDef3opl@" > IALIST ; !"
 
 
 !Future intentional tense
@@ -136,8 +136,14 @@ LEXICON IALIST
 
 
 LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
-@U.verb.sbj@ IASTEM ;
+!Present
+< "@U.verb.sbjPrs@" > IASTEM ;
 
+! Preterite
+< 0:k 0:î 0:%- "@U.verb.sbjPrt@" > IASTEM ;
+
+! Future Intentional
+< 0:w 0:î 0:%- "@U.verb.sbjFutureInt@" > IASTEM ;
 
 !@U.verb.sbj1sg@ IASTEM ;
 !@U.verb.sbj2sg@ IASTEM ;
