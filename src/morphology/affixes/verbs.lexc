@@ -31,27 +31,27 @@
 
 LEXICON IACONJ !!= @CODE@ splits in 3 conjugations
 +V+IA+Ind: IA_IND ;
-+V+IA:     IA_SBJ ;
++V+IA+Cnj:     IA_SBJ ;
 +V+IA:%>     IA_IMP ;
-+V+IA+FutCn:%> IA_FUT_CON ;
++V+IA+Fut+Cond:%> IA_FUT_CON ;
 
 LEXICON IA_IND !!= @CODE@ gives positive and negative
 +Prs:%> IA_IND_PRS ;
 +Prt:%> IA_IND_PRT ;
-+FutDf:%> IA_IND_FUT-DF ; !Future definite
-+FutIt:%> IA_IND_FUT-IT ; !Future intentive
++Fut+Def:%> IA_IND_FUT-DF ; !Future definite
++Fut+Int:%> IA_IND_FUT-IT ; !Future intentional
 
 LEXICON IACONJ-LONG-E !!= @CODE@ !! In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
 +V+IA+Ind: IA_IND-LONG-E ;
 +V+IA+Cnj:%> IA_IND_PRT-LONG-E_SUBJ ; 
 +V+IA:%>     IA_IMP-LONG-E ; !!follows pattern of other IA verbs in the imperative
-+V+IA+FutCn:%> IA_FUT_CON-LONG-E ;
++V+IA+Fut+Cond:%> IA_FUT_CON-LONG-E ;
 
 LEXICON IA_IND-LONG-E
 +Prs:%> IA_IND_PRS-LONG-E ;
 +Prt:%> IA_IND_PRT-LONG-E ;
-+FutDf:%> IA_IND_FUT-DF-LONG-E ;
-+FutIt:%> IA_IND_FUT-IT-LONG-E ;
++Fut+Def:%> IA_IND_FUT-DF-LONG-E ;
++Fut+Int:%> IA_IND_FUT-IT-LONG-E ;
 
 ! If no negative suffix, then the following 3 lines are not needed
 !             IA_IND_SUFF ;
@@ -98,9 +98,9 @@ LEXICON IA_IND_FUT-DF !
 
 LEXICON IA_IND_FUT-IT
 <  "+1Sg":0 "@U.verb.indFutInt1sg@"  0:n                 > # ; !
-<  "+2Sg":0 "@U.verb.indFutInt2sg@"  0:n                 > # ; !"
-<  "+3Sg":0 "@U.verb.indFutInt3sg@"  0:w                 > # ; !"
-<  "+3oSg":0 "@U.verb.indFutInt3osg@" 0:y 0:i 0:w 0:a    > # ; !"
+<  "+2Sg":0 "@U.verb.indFutInt2sg@"  0:n                 > # ; !
+<  "+3Sg":0 "@U.verb.indFutInt3sg@"  0:w                 > # ; !
+<  "+3oSg":0 "@U.verb.indFutInt3osg@" 0:y 0:i 0:w 0:a    > # ; !
 <  "+1Pl":0 "@U.verb.indFutInt1pl@"  0:n 0:â 0:n         > # ;   ! exclusive Pl
 < "+12Pl":0 "@U.verb.indFutInt12pl@" 0:n 0:a 0:w         > # ; ! inclusive Pl
 <  "+2Pl":0 "@U.verb.indFutInt2pl@"  0:n 0:â 0:w 0:â 0:w > # ;           !
@@ -114,9 +114,9 @@ LEXICON IA_FUT_CON
 < "+3oSg":0 "@U.verb.FutCon3osg@" 0:y 0:i 0:c 0:i         > # ; !
 < "+1Pl":0 "@U.verb.FutCon1pl@"   0:y 0:â 0:h 0:k 0:i     > # ;!
 < "+12Pl":0 "@U.verb.FutCon12pl@" 0:y 0:a 0:h 0:k 0:o     > # ; !
-< "2Pl":0 "@U.verb.FutCon2pl@"    0:y 0:ê 0:k 0:o         > # ; !
-< "3Pl":0 "@U.verb.FutCon3pl@"    0:t 0:w 0:â 0:w 0:i     > # ; !
-< "3oPl":0 "@U.verb.FutCon3opl@"  0:y 0:i 0:c 0:i         > # ;
+< "+2Pl":0 "@U.verb.FutCon2pl@"    0:y 0:ê 0:k 0:o         > # ; !
+< "+3Pl":0 "@U.verb.FutCon3pl@"    0:t 0:w 0:â 0:w 0:i     > # ; !
+< "+3oPl":0 "@U.verb.FutCon3opl@"  0:y 0:i 0:c 0:i         > # ;
 
 !IA verbs with final -ê
 
@@ -190,15 +190,40 @@ LEXICON IA_FUT_CON-LONG-E
 < "+3oPl":0 "@U.verb.FutCon3opl@"  0:ê 0:y 0:i 0:c 0:i         > # ;
 			  
 LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive person suffixes
-@U.verb.sbj@  1sgsubjunctive ;
-@U.verb.sbj@  2sgsubjunctive ;
-@U.verb.sbj@  3sgsubjunctive ;
-@U.verb.sbj@ 3osgsubjunctive ;
-@U.verb.sbj@  1plsubjunctive ;
-@U.verb.sbj@ 12plsubjunctive ;
-@U.verb.sbj@  2plsubjunctive ;
-@U.verb.sbj@  3plsubjunctive ;
-@U.verb.sbj@ 3oplsubjunctive ;
+
+!
+!Present
+< "+Prs":0 "@U.verb.sbjPrs@" > 1sgsubjunctive ;
+< "+Prs":0 "@U.verb.sbjPrs@" > 2sgsubjunctive ;
+< "+Prs":0 "@U.verb.sbjPrs@" >  3sgsubjunctive ;
+< "+Prs":0 "@U.verb.sbjPrs@" >  3osgsubjunctive ;
+< "+Prs":0 "@U.verb.sbjPrs@" > 1plsubjunctive ;
+< "+Prs":0 "@U.verb.sbjPrs@" >  12plsubjunctive ;
+< "+Prs":0 "@U.verb.sbjPrs@" >  2plsubjunctive ;
+< "+Prs":0 "@U.verb.sbjPrs@" > 3plsubjunctive ;
+< "+Prs":0 "@U.verb.sbjPrs@" > 3oplsubjunctive ; !
+
+!Preterite
+< "+Prt":0 "@U.verb.sbjPrt@" > 1sgsubjunctive ; !
+< "+Prt":0 "@U.verb.sbjPrt@" > 2sgsubjunctive ;
+< "+Prt":0 "@U.verb.sbjPrt@" >  3sgsubjunctive ; !
+< "+Prt":0 "@U.verb.sbjPrt@" >  3osgsubjunctive ; !
+< "+Prt":0 "@U.verb.sbjPrt@" >  1plsubjunctive ; !
+< "+Prt":0 "@U.verb.sbjPrt@" >  12plsubjunctive ; !
+< "+Prt":0 "@U.verb.sbjPrt@" >  2plsubjunctive ; !
+< "+Prt":0 "@U.verb.sbjPrt@" >  3plsubjunctive ;
+< "+Prt":0 "@U.verb.sbjPrt@" > 3oplsubjunctive ;
+
+!Future Intentional
+< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 1sgsubjunctive ; !
+< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 2sgsubjunctive ;
+< "+Fut+Int":0 "@U.verb.sbjFutureInt@" >  3sgsubjunctive ; !
+< "+Fut+Int":0 "@U.verb.sbjFutureInt@" >  3osgsubjunctive ; !
+< "+Fut+Int":0 "@U.verb.sbjFutureInt@" >  1plsubjunctive ; !
+< "+Fut+Int":0 "@U.verb.sbjFutureInt@" >  12plsubjunctive ; !
+< "+Fut+Int":0 "@U.verb.sbjFutureInt@" >  2plsubjunctive ; !
+< "+Fut+Int":0 "@U.verb.sbjFutureInt@" >  3plsubjunctive ;
+< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 3oplsubjunctive ;
 
 !@U.verb.sbj1sg@  1sgsubjunctive ;
 !@U.verb.sbj2sg@  2sgsubjunctive ;
@@ -211,38 +236,38 @@ LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive perso
 !@U.verb.sbj3opl@  3oplsubjunctive ;
 
 LEXICON 1sgsubjunctive
-    +Cnj+1Sg:%>yân #;
+    +1Sg:%>yân #;
 
 
 LEXICON 2sgsubjunctive
-    +Cnj+2Sg:%>yan	#;
+     +2Sg:%>yan	#;
 
 
 LEXICON 3sgsubjunctive
-    +Cnj+3Sg:%>t	#;
+      +3Sg:%>t	#;
 
 
 LEXICON 3osgsubjunctive
-    +Cnj+3oSg:%>yit #;
+      +3oSg:%>yit #;
 
 
 LEXICON 1plsubjunctive 
-    +Cnj+1Pl:%>yâhk #;
+      +1Pl:%>yâhk #;
 
 
 LEXICON 12plsubjunctive
-    +Cnj+12Pl:%>yahk #;
+      +12Pl:%>yahk #;
 
 LEXICON 2plsubjunctive 
-    +Cnj+2Pl:%>yêk #;  ! NOTE: corrected according to letter from dt, earlier we said %>nyêk
+      +2Pl:%>yêk #;  ! NOTE: corrected according to letter from dt, earlier we said %>nyêk
 
 
 LEXICON 3plsubjunctive 
-    +Cnj+3Pl:%>cik #;
+       +3Pl:%>cik #;
 
 
 LEXICON 3oplsubjunctive 
-    +Cnj+3oPl:%>yit #;
+       +3oPl:%>yit #;
 
 
 LEXICON IA_IMP  !!= @CODE@ gives flag diacritics and directs to imperative person suffixes

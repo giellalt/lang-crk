@@ -49,19 +49,22 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 !! Verbal MSP
 +Prs  !!= * @CODE@ 
 +Fut  !!= * @CODE@
-+FutDf !!= * @CODE@ Indicates Future Definite tense
-+FutIt !!= * @CODE@ Indicates Future Intentional tense
-+FutCn !!= * @CODE@ Indicates Future Conditional
+!+FutDf !!= * @CODE@ Indicates Future Definite tense
+!+FutIt !!= * @CODE@ Indicates Future Intentional tense
+!+FutCn !!= * @CODE@ Indicates Future Conditional
 +Prt  !!= * @CODE@ 
 +Prf  !!= * @CODE@ 
 +Cnj  !!= * @CODE@ 
++Int  !!= * @CODE@ This tag is for the Future Intentional
++Def  !!= * @CODE@ This tag is for the Future Dfinite
 
 +Ind  !!= * @CODE@ Indicative, aka Independent
 +Imp  !!= * @CODE@ Imperative, consider deleting +Imp tag
 +Del  !!= * @CODE@ Delayed imperative
 +Imm  !!= * @CODE@ Immediate imperative, consider deleting +Imp tag
 +Sbj  !!= * @CODE@ Subjunctive, aka Conjunct mode, ê-
-+Cond  !!= * @CODE@ TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
++Cond !!= * @CODE@ TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
+
 
 !+Int  !!= * @CODE@ Interdiction, Ojibwe? No such thing in Plains Cree
 !+Dur  !!= * @CODE@ Durative, Ojibwe?	  No such thing in Plains Cree
@@ -168,7 +171,7 @@ t2 		!!= * @CODE@  Prefix in possessives
 @U.verb.indprt3opl@  !!= * @CODE@
 
 !!The subjunctive always has
-!!the ê- prefix, and future always has no prefix.
+!!the ê- prefix, and future conditional never has a prefix.
 
 @U.verb.indFutDef1sg@ !!= * @CODE@ Future definite
 @U.verb.indFutDef2sg@ !!= * @CODE@ Future definite
@@ -202,6 +205,9 @@ t2 		!!= * @CODE@  Prefix in possessives
 
 @U.verb.sbj@  !!= * @CODE@ Subjunctive (Conjunct)
 @U.verb.fut@  !!= * @CODE@ Future Conditional
+@U.verb.sbjPrt@ !!=*@CODE@ Past tense Conjunct mode
+@U.verb.sbjPrs@ !!=*@CODE@ Present tense Conjunct mode
+@U.verb.sbjFutureInt@ !!=*@CODE@ Future intentional tense Conjunct mode
 
 @U.verb.NULL@ ! test
 @U.verb.NI@ ! test
