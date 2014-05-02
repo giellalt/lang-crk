@@ -43,7 +43,7 @@ LEXICON IA_IND !!= @CODE@ gives positive and negative
 
 LEXICON IACONJ-LONG-E !!= @CODE@ !! In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
 +V+IA+Ind: IA_IND-LONG-E ;
-+V+IA+Cnj:%> IA_IND_PRT-LONG-E_SUBJ ; 
++V+IA+Cnj:%> IA_IND-LONG-E_SUBJ ; 
 +V+IA:%>     IA_IMP-LONG-E ; !!follows pattern of other IA verbs in the imperative
 +V+IA+Fut+Cond:%> IA_FUT_CON-LONG-E ;
 
@@ -144,7 +144,7 @@ LEXICON IA_IND_PRT-LONG-E !!= @CODE@ gives person suffixes
 < "+3oPl":0 "@U.verb.indprt3opl@" 0:ê 0:y 0:i 0:w 0:a     > # ;   !
 
 
-LEXICON IA_IND_PRT-LONG-E_SUBJ !!= @CODE@ gives person suffixes
+LEXICON IA_IND-LONG-E_SUBJ !!= @CODE@ gives person suffixes
 <  "+1Sg":0 "@U.verb.sbjPrs@"  0:ê 0:y 0:â 0:n                 > # ; !"
 <  "+2Sg":0 "@U.verb.sbj@"  0:ê 0:y 0:a 0:n                 > # ; !"
 <  "+3Sg":0 "@U.verb.sbj@"  0:ê 0:t                         > # ; !"

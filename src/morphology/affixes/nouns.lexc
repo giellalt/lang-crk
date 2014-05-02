@@ -102,7 +102,7 @@ LEXICON AN_DIM_PL !!= * @CODE@
 < "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 >   AN_SUFF_PL ; !
 
 LEXICON AN_DIM_ABS
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "@U.noun.abs@" >  AN_SUFF_LOC ; !
+< "+Dim":i 0:s 0:%^DIM 0:i 0:s "@U.noun.abs@" > LOC ; !
 
 !! !Diminutive suffixes in animate stems taking the form -osis
 
@@ -162,7 +162,7 @@ LEXICON AN_SUFF_SG !!= * @CODE@
 < "+Px1Pl":0  0:n 0:â 0:n     "@U.noun.1pl@"  > SG_ ; ! exclusive Pl -nân not -inân CHECK ??
 < "+Px12Pl":0 0:n 0:â 0:n     "@U.noun.12pl@" > SG_ ; ! inclusive Pl CHECK OK? 
 < "+Px2Pl":0  0:â 0:w         "@U.noun.2pl@"  > SG_ ; !
-< "+Px3Pl":0  0:â 0:w         "@U.noun.3pl@"  > OBVIATIVE ; !
+< "+Px3Pl":0 0:w 0:â 0:w         "@U.noun.3pl@"  > OBVIATIVE ; !
 < "+Px3iPl":0 0:i 0:y 0:i 0:w "@U.noun.3ipl@" > OBVIATIVE ; ! obviative plural possessor - Okimasis corrected
 
 LEXICON AN_SUFF_SG_INAL !!= * @CODE@ , see above for relation to AN_SUFF_SG
@@ -185,7 +185,7 @@ LEXICON AN_SUFF_PL !!= * @CODE@
 < "+Px1Pl":0  0:i 0:n 0:â 0:n  "@U.noun.1pl@"  >  PL_AK ;   ! exclusive Pl
 < "+Px12Pl":0 0:n 0:a 0:w      "@U.noun.12pl@" >  PL_AK ; ! inclusive Pl
 < "+Px2Pl":0  0:i 0:w 0:â 0:w  "@U.noun.2pl@"  >  PL_AK ; !
-< "+Px3Pl":0  0:w 0:â 0:w      "@U.noun.3pl@"  >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
+< "+Px3Pl":0  0:i 0:w 0:â 0:w  "@U.noun.3pl@"  >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 < "+Px3iPl":0 0:y 0:i 0:w      "@U.noun.3isg@" >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 
 LEXICON AN_SUFF_LOC
