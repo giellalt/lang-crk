@@ -162,7 +162,7 @@ LEXICON AN_SUFF_SG !!= * @CODE@
 < "+Px3Sg":%^POS                  "@U.noun.3sg@"  > OBVIATIVE ; !
 < "+Px3iSg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > OBVIATIVE ; !
 < "+Px1Pl":%^POS 0:i 0:n 0:â 0:n     "@U.noun.1pl@"  > SG_ ; ! exclusive Pl -nân not -inân CHECK ??
-< "+Px12Pl":%^POS 0:i 0:n 0:â 0:w     "@U.noun.12pl@" > SG_ ; ! inclusive Pl CHECK OK? 
+< "+Px12Pl":%^POS 0:i 0:n 0:a 0:w     "@U.noun.12pl@" > SG_ ; ! inclusive Pl CHECK OK? 
 < "+Px2Pl":%^POS 0:i 0:w 0:â 0:w         "@U.noun.2pl@"  > SG_ ; !
 < "+Px3Pl":%^POS 0:i 0:w 0:â 0:w         "@U.noun.3pl@"  > OBVIATIVE ; !
 < "+Px3iPl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3ipl@" > OBVIATIVE ; ! obviative plural possessor - Okimasis corrected
