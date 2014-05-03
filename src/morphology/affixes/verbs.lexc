@@ -17,7 +17,7 @@
 ! ========================================================================== !
 
 
-!! __Note__ ''This file is copied from Ojibwe, and is thus only an illustration.''
+!! __Note__ ''This file is copied from Ojibwe, and may contain Ojibwe things that should be removed.''
 
 !! The Plains Cree verbs are divided in four groups:
 
@@ -53,14 +53,10 @@ LEXICON IA_IND_LONG_E
 +Fut+Def:%> IA_IND_FUT_DF_LONG_E ;
 +Fut+Int:%> IA_IND_FUT_IT_LONG_E ;
 
-! If no negative suffix, then the following 3 lines are not needed
-!             IA_IND_SUFF ;
-! +Neg:%>siin IA_IND_SUFF ; ! Ojibwe
-! LEXICON IA_IND_SUFF !!= @CODE@ (so far) gives present tense only
 
 
 
-!Regular IA verbs
+!! !!IA finite forms
 
 LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
 <  "+1Sg":0 "@U.verb.ind1sg@"  0:n                 > # ; !"
