@@ -19,7 +19,7 @@ LEXICON ANDECL !!= * @CODE@ for the animate declension
 
 
 
-LEXICON ANDECLPROF !!= Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+LEXICON ANDECLPROF !!= * @CODE@ Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
@@ -74,7 +74,7 @@ LEXICON INDECLPROF !!= Declensions for nouns taking reduced diminutive at by mor
 LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
 
 +N+IN+Sg:%> INALIEN_SUFF_SG ;
-!+N+IN+Pl:%> IN_SUFF_PL ; ! Not documented yet
+!+N+IN+Pl:%> IN_SUFF_PL ;  Not documented yet
 
 LEXICON INALIEN_SUFF_SG !!= * @CODE@
 < "+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
@@ -140,17 +140,6 @@ LEXICON IN_DIM_LOC !!= * @CODE@
 
 
 
-
-
-!! !!The inflectional suffixes
-
-
-!! !Possessive suffixes
-
-!LEXICON INAL_SUFF_SG !!= * @CODE@ not in use
-!< "+Px3iSg":0 "@U.noun.3isg@" > SG_ ; !
-!< "+Px3iPl":0 "@U.noun.3ipl@" > SG_waaw ; !
-!AN_SUFF_SG_INAL ; ! To match yaml file, check whether it is correct, if not, return to AN_SUFF_SG
 
 
 
@@ -268,8 +257,8 @@ LEXICON ANKWDECL_SUFF_PL !!= * @CODE@
 < "+Px3iPl":%^POS 0:o 0:m 0:i 0:y 0:i 0:w 0:a "@U.noun.3isg@" > SG_ ; ! obviative plural possessor OBVIATIVE
 
 
-!LEXICON INAL_SUFF_PL !!= * @CODE@  Not in use
-!< "+Px3iSg":0 "@U.noun.3isg@" > PL_AK ; !
+!LEXICON INAL_SUFF_PL Not in use
+!< "+Px3iSg":0 "@U.noun.3isg@" > PL_AK ; 
 !< "+Px3iPl":0 "@U.noun.3ipl@" > PL_waaw_AK ;
 !                               AN_SUFF_PL ;
 
@@ -311,7 +300,7 @@ LEXICON AN_IRREG_SUFF_LOC
 !! !Singular/plural possessed suffixes
 
 
-!LEXICON SG_naan !!= * @CODE@  Not in use
+!LEXICON SG_naan  Not in use
 !:%>nân SG_ ;
 
 
@@ -319,7 +308,7 @@ LEXICON SG_waaw !!= * @CODE@
 :%>wâw SG_ ;
 
 
-!LEXICON PL_naan_AK !!= * @CODE@  Not in use
+!LEXICON PL_naan_AK  Not in use
 !:%>nânak # ;
 
 
@@ -327,7 +316,7 @@ LEXICON PL_waaw_AK !!= * @CODE@ Not in use
 :%>wâwak # ;
 
 
-!LEXICON PL_waaw_A !!= * @CODE@ Not in use
+!LEXICON PL_waaw_A  Not in use
 !:%>wâwa # ;
 
 
