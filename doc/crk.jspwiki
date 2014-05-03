@@ -45,14 +45,12 @@ POS
 Verbal MSP
  * +Prs   
  * +Fut  
- * !+FutDf  Indicates Future Definite tense
- * !+FutIt  Indicates Future Intentional tense
- * !+FutCn  Indicates Future Conditional
+
  * +Prt   
  * +Prf   
  * +Cnj   
  * +Int   This tag is for the Future Intentional
- * +Def   This tag is for the Future Dfinite
+ * +Def   This tag is for the Future Definite
 
  * +Ind   Indicative, aka Independent
  * +Imp   Imperative, consider deleting +Imp tag
@@ -62,8 +60,6 @@ Verbal MSP
  * +Cond  TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
 
 
- * !+Int   Interdiction, Ojibwe? No such thing in Plains Cree
- * !+Dur   Durative, Ojibwe?	  No such thing in Plains Cree
 
 
  * +1Sg     first singular
@@ -291,7 +287,6 @@ __Double consonant deletion__
 
 __Diminutives - all stem t change to c with diminutives __ Okimasis 2004: 13, Rule 2.
 
-
 __In Vow+y final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are legthened
 
 __In Vow+w final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
@@ -363,6 +358,7 @@ ANSTEM_kw is for a set of nouns that take an additional suffix in the possessive
 !!The stems
 
 !Animate Nouns
+
 
 
 
@@ -503,8 +499,8 @@ The stems
  waniskâw IACONJ "rise, get up" ;  
  micisiw IACONJ "eat" ; 
  nohtehkatew IACONJ "be hungry" ; 
- atoskêw:atosk IACONJ-LONG-E "work" ; 
- nêhiyawêw:nêhiyaw IACONJ-LONG-E "work" ; 
+ atoskêw:atosk IACONJ_LONG_E "work" ; 
+ nêhiyawêw:nêhiyaw IACONJ_LONG_E "work" ; 
 
  LEXICON IISTEM     = VII
 
@@ -522,9 +518,10 @@ The stems
  * LEXICON ANDECL  for the animate declension
 
 
+
 LEXICON ANDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
- * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim
+ * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim.
 
  * LEXICON IRREGULARINFL  is also there to handle the highly irregular atim and mistatim
 
@@ -551,7 +548,10 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
  * LEXICON AN_DIM_SG 
 
+
  * LEXICON AN_DIM_PL 
+
+ * LEXICON AN_DIM_LOC 
 
 
 !Diminutive suffixes in animate stems taking the form -osis
@@ -684,7 +684,7 @@ Intransitive animate (IA)
 
  LEXICON IA_IND  gives positive and negative
 
- LEXICON IACONJ-LONG-E  !! In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
+ LEXICON IACONJ_LONG_E  !! In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
 In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
 
 
@@ -701,13 +701,15 @@ In these final ê changes to â; they also different imperative endings; splits 
 
 
 
- LEXICON IA_IND_PRS-LONG-E  gives person suffixes
+ LEXICON IA_IND_PRS_LONG_E  gives person suffixes
 
 
- LEXICON IA_IND_PRT-LONG-E  gives person suffixes
+ LEXICON IA_IND_PRT_LONG_E  gives person suffixes
 
 
- LEXICON IA_IND_PRT-LONG-E_SUBJ  gives person suffixes
+ LEXICON IA_IND_LONG_E_SUBJ  gives person suffixes
+
+
 
 
 
