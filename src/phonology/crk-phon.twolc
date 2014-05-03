@@ -123,8 +123,8 @@ Cx:0 <=> _ %>:0 Cx ;
 
 "Diminutives - all stem t change to c with diminutives" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
-t:c <=> [ Vow | %>:0 ]  _ Vow :* %^DIM:0 ;  ! we'll see if there are exceptions
-
+t:c <=> [ h | Vow | %>:0 ]  _ Vow :* %^DIM:0 ;  ! iskwâhtêm
+		  _ %>:0 Vow :* %^DIM:0 ; ! wayasit
 
 "In Vow+y final stems with Diminutives, part 1: delete y" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are legthened
