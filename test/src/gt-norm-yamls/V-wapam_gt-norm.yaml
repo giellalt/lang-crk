@@ -12,39 +12,36 @@ Tests:
   Verb - wâpam - ok : # Ordinary TA verb - full paradigm
      wâpam+V+TA+Ind+Prs+1Sg+3SgO: niwâpamâw
      wâpam+V+TA+Ind+Prs+2Sg+3SgO: kiwâpamâw
-     wâpam+V+TA+Ind+Prs+3Sg+3SgO: wâpama
-     wâpam+V+TA+Ind+Prs+3oSg+3SgO: wâpama
-     wâpam+V+TA+Ind+Prs+3iSg+3SgO: wâpama
+     wâpam+V+TA+Ind+Prs+3Sg+3SgO: wâpamêw
+     wâpam+V+TA+Ind+Prs+3oSg+3SgO: wâpamêyiwa
      wâpam+V+TA+Ind+Prs+1Pl+3SgO: niwâpamânân
-     wâpam+V+TA+Ind+Prs+12Pl+3SgO: kiwâpamânâw
+     wâpam+V+TA+Ind+Prs+12Pl+3SgO: kiwâpamânaw
      wâpam+V+TA+Ind+Prs+2Pl+3SgO: kiwâpamâwâw
      wâpam+V+TA+Ind+Prs+3Pl+3SgO: wâpamêwak
+     wâpam+V+TA+Ind+Prs+3oPl+3SgO: wâpamêyiwa
      
-     wâpam+V+TA+Cnj+1Sg+3SgO: wâpamyân
-     wâpam+V+TA+Cnj+2Sg+3SgO: wâpamyan
-     wâpam+V+TA+Cnj+3Sg+3SgO: wâpamt
-     wâpam+V+TA+Cnj+3oSg+3SgO: wâpamnid
-     wâpam+V+TA+Cnj+3iSg+3SgO: wâpamng
-     wâpam+V+TA+Cnj+1Pl+3SgO: wâpamyaang
-     wâpam+V+TA+Cnj+12Pl+3SgO: wâpamyang
-     wâpam+V+TA+Cnj+2Pl+3SgO: wâpamyeg
-     wâpam+V+TA+Cnj+3Pl+3SgO: wâpamwaad
-     wâpam+V+TA+Neg+Cnj+1Sg+3SgO: wâpamsiwaan
-     wâpam+V+TA+Neg+Cnj+2Sg+3SgO: wâpamsiwan
-     wâpam+V+TA+Neg+Cnj+3Sg+3SgO: wâpamsig
-     wâpam+V+TA+Neg+Cnj+3oSg+3SgO: [wâpamsinid, wâpamsinig]
-     wâpam+V+TA+Neg+Cnj+3iSg+3SgO: wâpamsing
-     wâpam+V+TA+Neg+Cnj+1Pl+3SgO: wâpamsiwaang
-     wâpam+V+TA+Neg+Cnj+12Pl+3SgO: wâpamsiwang
-     wâpam+V+TA+Neg+Cnj+2Pl+3SgO: wâpamsiweg
-     wâpam+V+TA+Neg+Cnj+3Pl+3SgO: wâpamsiwaa
+     wâpam+V+TA+Cnj+1Sg+3SgO: [ê-wâpamak, êwâpamak]
+     wâpam+V+TA+Cnj+2Sg+3SgO: [ê-wâpamat, êwâpamat]
+     wâpam+V+TA+Cnj+3Sg+3SgO: [ê-wâpamât, êwâpamât]
+     wâpam+V+TA+Cnj+3oSg+3SgO: [ê-wâpamâyit, êwâpamâyit]
+     wâpam+V+TA+Cnj+1Pl+3SgO: [ê-wâpamâyâhk, êwâpamâyâhk]
+     wâpam+V+TA+Cnj+12Pl+3SgO: [ê-wâpamâyahk, êwâpamâyahk]
+     wâpam+V+TA+Cnj+2Pl+3SgO: [ê-wâpamâyêk, êwâpamâyêk]
+     wâpam+V+TA+Cnj+3Pl+3SgO: [ê-wâpamâcik, êwâpamâcik]
+     wâpam+V+TA+Cnj+3oPl+3SgO: [ê-wâpamâyit, êwâpamâyit]
 
-     wâpam+V+TA+Imp+Imm+2Sg+3SgO: wâpamn
-     wâpam+V+TA+Imp+Imm+1Pl+3SgO: wâpamdaa
-     wâpam+V+TA+Imp+Imm+2Pl+3SgO: [wâpamk, wâpamg]
-     wâpam+V+TA+Imp+Int+2Sg+3SgO: wâpamken
-     wâpam+V+TA+Imp+Int+1Pl+3SgO: wâpamsiidaa
-     wâpam+V+TA+Imp+Int+2Pl+3SgO: wâpamkegon
-     wâpam+V+TA+Imp+Dur+2Sg+3SgO: wâpamkan
-     wâpam+V+TA+Imp+Dur+2Pl+3SgO: wâpamkeg
+     wâpam+V+TA+Imp+Imm+2Sg+3SgO: wâpam
+     wâpam+V+TA+Imp+Imm+12Pl+3SgO: wâpamâtân
+     wâpam+V+TA+Imp+Imm+2Pl+3SgO: wâpamihk     
+     wâpam+V+TA+Imp+Imm+2Sg+3PlO: wâpamik
+     wâpam+V+TA+Imp+Imm+12Pl+3PlO: wâpamâtânik
+     wâpam+V+TA+Imp+Imm+2Pl+3PlO: wâpamihkok
+     
+     wâpam+V+TA+Imp+Del+2Sg+3SgO: wâpamâhkan
+     wâpam+V+TA+Imp+Del+12Pl+3SgO: wâpamâhkahk
+     wâpam+V+TA+Imp+Del+2Pl+3SgO: wâpamâhkêk
+     wâpam+V+TA+Imp+Del+2Sg+3PlO: wâpamâhkanik
+     wâpam+V+TA+Imp+Del+12Pl+3PlO: wâpamâhkahkok
+     wâpam+V+TA+Imp+Del+2Pl+3PlO: wâpamâhkêkok
+     
 
