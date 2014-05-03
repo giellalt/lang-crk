@@ -9,6 +9,8 @@ Alphabet
  %^LC:0 ! Locative suffix alternation trigger
  %^DIM:0 ! Diminutive alternation trigger
  %^EGLOT:0 ! Conjunctive êh trigger
+  %^POS:0 ! Possessive alternation trigger
+
  ;
 
 Sets
@@ -101,7 +103,10 @@ w:n <=> [ê|ô] _  %>:0 i: %^LC:0  ;
 !! __@RULENAME@__ 
 t2:t <=> _ %>:0 Vow ;
 
-
+"-Vw:m alternation in front of possessive suffixes"
+!! __@RULENAME@__ -Vw:m alternation in front of possessive suffixes !
+w:m <=> Vow - a _ %>:0  %^POS:0  ; ! iskwêw nitiskwêm
+ 
 "i to a in prefixes in front of nasals"
 !! __@RULENAME@__ 
 i:a <=> .#. n _ %>:0 [ n | m ] i	;
@@ -127,19 +132,19 @@ t:c <=> [ h | Vow | %>:0 ]  _ Vow :* %^DIM:0 ;  ! iskwâhtêm
 		  _ %>:0 Vow :* %^DIM:0 ; ! wayasit
 
 "In Vow+y final stems with Diminutives, part 1: delete y" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are legthened
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
 y:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 
 "In Vow+w final stems with Diminutives, part 1: delete y" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 w:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 
 "In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 [ o:ô | i:î | a:â ] <=> _ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ;
 
 "In Vow+y final stems with Diminutives, part 3: delete i in suffix" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 i:0 <=> [ o: | a: | e: | ê: | :î ] [ y:| w: ] %>:0 _ s: %^DIM:0 i: s: ;
 
 !"Vowel lengthening in iw final nouns with diminutives" !Is covered by part 2
@@ -156,6 +161,10 @@ i:o <=> k %>:0 _ s: %^DIM:0 ;
 
 "Diminutives rule change ending delete i with nouns ending in kwa"
 i:0 <=> k: w: a: %>:0 _ s: %^DIM:0 ;
+
+
+!"Remove locative i when poss -wâ"
+!i:0 <=>	â: ( w:0 ) %>:0 _ %^LC:0 ; ! kitiskwêmiwâhk or kitiskwêsisiwâwihk  CHECK!
 
 
 
