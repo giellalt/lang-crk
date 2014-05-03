@@ -49,14 +49,12 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 !! Verbal MSP
 +Prs  !!= * @CODE@ 
 +Fut  !!= * @CODE@
-!+FutDf !!= * @CODE@ Indicates Future Definite tense
-!+FutIt !!= * @CODE@ Indicates Future Intentional tense
-!+FutCn !!= * @CODE@ Indicates Future Conditional
+
 +Prt  !!= * @CODE@ 
 +Prf  !!= * @CODE@ 
 +Cnj  !!= * @CODE@ 
 +Int  !!= * @CODE@ This tag is for the Future Intentional
-+Def  !!= * @CODE@ This tag is for the Future Dfinite
++Def  !!= * @CODE@ This tag is for the Future Definite
 
 +Ind  !!= * @CODE@ Indicative, aka Independent
 +Imp  !!= * @CODE@ Imperative, consider deleting +Imp tag
@@ -66,8 +64,6 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 +Cond !!= * @CODE@ TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
 
 
-!+Int  !!= * @CODE@ Interdiction, Ojibwe? No such thing in Plains Cree
-!+Dur  !!= * @CODE@ Durative, Ojibwe?	  No such thing in Plains Cree
 
 
 +1Sg    !!= * @CODE@ first singular

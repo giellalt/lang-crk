@@ -34,14 +34,12 @@ POS
 Verbal MSP
  * +Prs   
  * +Fut  
- * !+FutDf  Indicates Future Definite tense
- * !+FutIt  Indicates Future Intentional tense
- * !+FutCn  Indicates Future Conditional
+
  * +Prt   
  * +Prf   
  * +Cnj   
  * +Int   This tag is for the Future Intentional
- * +Def   This tag is for the Future Dfinite
+ * +Def   This tag is for the Future Definite
 
  * +Ind   Indicative, aka Independent
  * +Imp   Imperative, consider deleting +Imp tag
@@ -51,8 +49,6 @@ Verbal MSP
  * +Cond  TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
 
 
- * !+Int   Interdiction, Ojibwe? No such thing in Plains Cree
- * !+Dur   Durative, Ojibwe?	  No such thing in Plains Cree
 
 
  * +1Sg     first singular
