@@ -7,7 +7,7 @@
 
 
 
-LEXICON ANDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+ * LEXICON ANDECLPROF  Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
  * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim.
 
@@ -65,14 +65,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 
 
-!!The inflectional suffixes
-
-
-!Possessive suffixes
-
- * LEXICON INAL_SUFF_SG  not in use
-
-
 
 !!Animate inflectional suffixes
 
@@ -105,7 +97,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON ANKWDECL_SUFF_PL  
 
 
- * LEXICON INAL_SUFF_PL   Not in use
 
  * LEXICON AN_IRREG_SUFF_SG  
 
@@ -117,19 +108,16 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 !Singular/plural possessed suffixes
 
 
- * LEXICON SG_naan   Not in use
 
 
  * LEXICON SG_waaw  
 
 
- * LEXICON PL_naan_AK   Not in use
 
 
  * LEXICON PL_waaw_AK  Not in use
 
 
- * LEXICON PL_waaw_A  Not in use
 
 
  * LEXICON SG_  

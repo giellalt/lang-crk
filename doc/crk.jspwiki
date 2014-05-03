@@ -239,6 +239,7 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
 
 
+
 !!!Rules
 
 
@@ -273,6 +274,7 @@ __locative alternation naahk 1		__ adds nâhk after êw 1: change w to n
 
 __possessive prefixes__ 
 
+__-Vw:m alternation in front of possessive suffixes__ -Vw:m alternation in front of possessive suffixes !
 
 __i to a in prefixes in front of nasals__ 
 
@@ -287,19 +289,21 @@ __Double consonant deletion__
 
 __Diminutives - all stem t change to c with diminutives __ Okimasis 2004: 13, Rule 2.
 
-__In Vow+y final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are legthened
+__In Vow+y final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
 
-__In Vow+w final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+__In Vow+w final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 
-__In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+__In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 
-__In Vow+y final stems with Diminutives, part 3: delete i in suffix __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are legthened
+__In Vow+y final stems with Diminutives, part 3: delete i in suffix __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 
 
 
 __Diminutives rule change ending to os with k-final stems 1 __ Okimasis 2004: 14, Examples listed in 5.
 
 __Diminutives rule change ending to os with k-final stems 2 __ Okimasis 2004: 14, Examples listed in 5.
+
+
 
 
 
@@ -519,7 +523,7 @@ The stems
 
 
 
-LEXICON ANDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+ * LEXICON ANDECLPROF  Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
  * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim.
 
@@ -577,14 +581,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 
 
-!!The inflectional suffixes
-
-
-!Possessive suffixes
-
- * LEXICON INAL_SUFF_SG  not in use
-
-
 
 !!Animate inflectional suffixes
 
@@ -617,7 +613,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON ANKWDECL_SUFF_PL  
 
 
- * LEXICON INAL_SUFF_PL   Not in use
 
  * LEXICON AN_IRREG_SUFF_SG  
 
@@ -629,19 +624,16 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 !Singular/plural possessed suffixes
 
 
- * LEXICON SG_naan   Not in use
 
 
  * LEXICON SG_waaw  
 
 
- * LEXICON PL_naan_AK   Not in use
 
 
  * LEXICON PL_waaw_AK  Not in use
 
 
- * LEXICON PL_waaw_A  Not in use
 
 
  * LEXICON SG_  
@@ -668,7 +660,7 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 Plains Cree verb morphology                  
 
 
-__Note__ ''This file is copied from Ojibwe, and is thus only an illustration.''
+__Note__ ''This file is copied from Ojibwe, and may contain Ojibwe things that should be removed.''
 
 The Plains Cree verbs are divided in four groups:
 
@@ -688,10 +680,10 @@ Intransitive animate (IA)
 In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
 
 
- ! LEXICON IA_IND_SUFF  (so far) gives present tense only
 
 
 
+!!IA finite forms
 
  LEXICON IA_IND_PRS  gives person suffixes
 
