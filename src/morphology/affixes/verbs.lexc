@@ -401,19 +401,21 @@ LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 +3Pl+2PlO:%>ikowâwak  # ;
 				  
 LEXICON VTA_NULL_O 	  
-+3Sg+3SgO:%>êw		  # ;
-+3Sg+3SgO:%>ik		  # ;
-+3Sg+3SgO:%>kow	  # ;
-+3Sg+3PlO:%>êw		  # ;
-+3Sg+3PlO:%>ikowak	  # ;
-+3Sg+3PlO:%>ikak	  # ;
-+3Pl+3SgO:%>kow	  # ;
-+3Pl+3SgO:%>êwak	  # ;
++3Sg+3SgO:%>êw		  # ; ! Oki 77
+!+3Sg+3SgO:%>ik		  # ; ! Oki 77
+!+3Sg+3SgO:%>kow	  # ; ! Oki 77
++3Sg+3PlO:%>êw		  # ; ! Oki 77
+!+3Sg+3PlO:%>ikowak	  # ; ! Oki 77
+!+3Sg+3PlO:%>ikak	  # ; ! Oki 77
+!+3Pl+3SgO:%>kow	  # ; ! Oki 77
++3Pl+3SgO:%>êwak	  # ; ! Oki 77
+
 +3oSg+3SgO:%>êyiwa	  # ;
 +3oSg+3PlO:%>êyiwa	  # ;
 +3oSg+3SgO:%>ikoyiwa  # ;
 +3oSg+3PlO:%>ikoyiwa  # ;
 +3oSg+3oPlO:%>ikoyiwa  # ;
+
 +3Pl+3PlO:%>ikowak	  # ;
 +3Pl+3PlO:%>êwak	  # ;
 +3oPl+3SgO:%>êyiwa	  # ;
@@ -436,7 +438,7 @@ LEXICON TA_SBJ_SUF !!= @CODE@ gives subj + obj tag and suf
 +1Pl+3SgO:%>âyâhk	   # ;
 +1Pl+3PlO:%>âyâhkik	   # ;
 
-+12Pl+3SgO:%>âyâhk	   # ;
++12Pl+3SgO:%>âyahk	   # ;
 +12Pl+3PlO:%>âyâhkok   # ;
 
 +2Sg+3SgO:%>at		   # ;
@@ -464,13 +466,12 @@ LEXICON TA_SBJ_SUF !!= @CODE@ gives subj + obj tag and suf
 
 +3oSg+3oSgO:%>koyit	   # ;
 +3oSg+3oPlO:%>ikoyit   # ;
-+3oSg+3SgO:%>kot	   # ;
-+3oSg+3SgO:%>ikot	   # ;
++3oSg+3SgO:%>âyit	   # ;
 +3oSg+3PlO:%>ikocik	   # ;
 
 +3oPl+3oSgO:%>koyit	   # ;
 +3oPl+3oPlO:%>ikoyit   # ;
-+3oPl+3SgO:%>kot	   # ;
++3oPl+3SgO:%>âyit	   # ;
 +3oPl+3SgO:%>ikot	   # ;
 +3oPl+3PlO:%>ikocik	   # ;
 
@@ -525,20 +526,20 @@ LEXICON TA_IMP
 !@U.verb.imp2pl@ 12Pl_Imp ;
 
 LEXICON 2Sg_Imp
-    +2Sg+3SgO: # ;
-    +2Sg+3PlO:%>ik # ;
++Imm+2Sg+3SgO: # ;
++Imm+2Sg+3PlO:%>ik # ;
 +Del+2Sg+3SgO:%>âhkan # ;
 +Del+2Sg+3PlO:%>âhkanik # ;
 
 LEXICON 2Pl_Imp
-    +2Pl+3SgO:%>ihk # ;
-    +2Pl+3PlO:%>ihkok # ;
++Imm+2Pl+3SgO:%>ihk # ;
++Imm+2Pl+3PlO:%>ihkok # ;
 +Del+2Pl+3SgO:%>âhkêk # ;
 +Del+2Pl+3PlO:%>âhkêkok # ;
 
 LEXICON 12Pl_Imp
-    +12Pl+3SgO:%>âtân # ;
-    +12Pl+3PlO:%>âtânik # ;
++Imm+12Pl+3SgO:%>âtân # ;
++Imm+12Pl+3PlO:%>âtânik # ;
 +Del+12Pl+3SgO:%>âhkahk # ;
 +Del+12Pl+3PlO:%>âhkahkok # ;
 
