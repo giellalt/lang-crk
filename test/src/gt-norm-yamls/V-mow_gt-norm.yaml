@@ -12,18 +12,18 @@ Tests:
   Verb - mow - help : # Ordinary TA verb - full paradigm
      mow+V+TA+Ind+Prs+1Sg+3SgO: nimowâw
      mow+V+TA+Ind+Prs+2Sg+3SgO: kimowâw
-     mow+V+TA+Ind+Prs+3Sg+3SgO: [mowêw, mowik, mowkow]
-     mow+V+TA+Ind+Prs+3oSg+3SgO: [mowêyiwa, mowikoyiwa]
+     mow+V+TA+Ind+Prs+3Sg+3SgO: mowêw
+     mow+V+TA+Ind+Prs+3oSg+3SgO: mowêyiwa
 
      mow+V+TA+Ind+Prs+1Pl+3SgO: nimowânân
      mow+V+TA+Ind+Prs+12Pl+3SgO: kimowânaw
      mow+V+TA+Ind+Prs+2Pl+3SgO: kimowâwâw
-     mow+V+TA+Ind+Prs+3Pl+3SgO: [mowêwak, mowkow]
+     mow+V+TA+Ind+Prs+3Pl+3SgO: mowêwak
      mow+V+TA+Ind+Prs+3oPl+3SgO: mowêyiwa
 
      mow+V+TA+Ind+Prs+1Sg+3PlO: nimowâwak
      mow+V+TA+Ind+Prs+2Sg+3PlO: kimowâwak
-     mow+V+TA+Ind+Prs+3Sg+3PlO: [mowêw, mowikowak, mowikak]
+     mow+V+TA+Ind+Prs+3Sg+3PlO: mowêw
      mow+V+TA+Ind+Prs+3oSg+3PlO: mowêyiwa
      mow+V+TA+Ind+Prs+3oSg+3oPlO: mowikoyiwa
 
@@ -50,7 +50,7 @@ Tests:
      mow+V+TA+Cnj+1Sg+3PlO: ê-mowakik
      mow+V+TA+Cnj+1Pl+3SgO: ê-mowâyâhk
      mow+V+TA+Cnj+1Pl+3PlO: ê-mowâyâhkik
-     mow+V+TA+Cnj+12Pl+3SgO: ê-mowâyâhk
+     mow+V+TA+Cnj+12Pl+3SgO: ê-mowâyahk
      mow+V+TA+Cnj+12Pl+3PlO: ê-mowâyâhkok
      
      mow+V+TA+Cnj+2Sg+3SgO: ê-mowat
@@ -78,14 +78,12 @@ Tests:
 
      mow+V+TA+Cnj+3oPl+3oSgO: ê-mowkoyit
      mow+V+TA+Cnj+3oPl+3oPlO: ê-mowikoyit
-     mow+V+TA+Cnj+3oPl+3SgO: ê-mowkot
-     mow+V+TA+Cnj+3oPl+3SgO: ê-mowikot
+     mow+V+TA+Cnj+3oPl+3SgO: ê-mowâyit
      mow+V+TA+Cnj+3oPl+3PlO: ê-mowikocik
 
      mow+V+TA+Cnj+3oSg+3oSgO: ê-mowkoyit
      mow+V+TA+Cnj+3oSg+3oPlO: ê-mowikoyit
-     mow+V+TA+Cnj+3oSg+3SgO: ê-mowkot
-     mow+V+TA+Cnj+3oSg+3SgO: ê-mowikot
+     mow+V+TA+Cnj+3oSg+3SgO: ê-mowâyit
      mow+V+TA+Cnj+3oSg+3PlO: ê-mowikocik
 
 
@@ -130,10 +128,10 @@ Tests:
 
      mow+V+TA+Imp+Del+2Sg+3SgO: mowâhkan
      mow+V+TA+Imp+Del+2Pl+3SgO: mowâhkêk
-     mow+V+TA+Imp+Del+12Pl+3SgO: mowâhkak
+     mow+V+TA+Imp+Del+12Pl+3SgO: mowâhkahk
      mow+V+TA+Imp+Del+2Sg+3PlO: mowâhkanik
-     mow+V+TA+Imp+Del+2Pl+3PlO: mowihkâhkêkok
-     mow+V+TA+Imp+Del+12Pl+3PlO: mowâhkakok
+     mow+V+TA+Imp+Del+2Pl+3PlO: mowâhkêkok
+     mow+V+TA+Imp+Del+12Pl+3PlO: mowâhkahkok
 
 
 
