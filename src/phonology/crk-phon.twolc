@@ -35,13 +35,13 @@ Rules
 "h glottal stop for initial vowel stems in Conjunctive"
 %^EGLOT:h <=> _ :Vow ;
 
-"Suffix vowel deletion in vowel final stems"
-!! __@RULENAME@__ deletes stem vowel in vowel final stems
+"Suffix vowel deletion in vowel final stems" 
+!! __@RULENAME@__ deletes stem vowel in vowel final stems 
 Vx:0 <=> _ %>:0 ( %^POS:0 ) ( %>:0 ) Vow ;
 	where Vx in ( a e o â ê î ô ) ; 
 
 "i deletion in vowel final stems"
-!! __@RULENAME@__ deletes i in vowel final stems !
+!! __@RULENAME@__ deletes i in vowel final stems 
 i:0 <=> _ %>:0 %>:0 i ;
         _ %>:0 ( %^POS:0 ) ( %>:0 ) Vow ;
 
@@ -59,32 +59,32 @@ i:0 <=> _ %>:0 %>:0 i ;
 
 
 "locative alternations o"
-!! __@RULENAME@__ 
-i:o <=> k %>:0 _  %^LC:0   ;
+!! __@RULENAME@__ Okimasis 2004: 26, Rule 1: -k + ohk
+i:o <=> k %>:0 _  %^LC:0 ; 
 
 ! first
 "locative alternations aaw 1"
-!! __@RULENAME@__ (first)
-Vx:0 <=> _ [ w: | y: ] %>:0  i: %^LC:0   ;
-    where Vx in ( i a o ) ;
+!! __@RULENAME@__ (first) : Okimasis 2004: 26, Rule 2, 8: delete i, a, o: -Vow + (w/y) + ihk
+Vx:0 <=> _ [ w: | y: ] %>:0  i: %^LC:0 ;  ! o forsv
+    where Vx in ( i a ) ;
     
 ! second
 "locative alternations aaw 2"
-!! __@RULENAME@__ (second)
-Cx:0 <=> [ a: | i: | o: ] _  %>:0  i: %^LC:0  ;
+!! __@RULENAME@__ (second) : Okimasis 2004: 26, Rule 2: delete w / y
+Cx:0 <=> [ a: | i: ] _  %>:0  i: %^LC:0 ;  ! w forsv
     where Cx in ( w y ) ;
 
 ! third
 "locative alternations aaw 3a"
-!! __@RULENAME@__ (third)
-i:â <=> [ ô | ê | a: ] [ w: | y: ]  %>:0  _ %^LC:0  ;
+!! __@RULENAME@__ (third) : Okimasis 2004: 26, Rule 2: -âhk
+i:â <=> [ ô | ê | a: ] [ w: | y: ]  %>:0  _ %^LC:0 ; 
 
 "locative alternation iihk 3i"
-!! __@RULENAME@__ 
-i:î <=> i: y:  %>:0  _ %^LC:0  ;
+!! __@RULENAME@__  Okimasis 2004: 26, Rule 3: -îhk
+i:î <=> i: y:  %>:0  _ %^LC:0  ; 
 
 "locative alternation oohk io"
-!! __@RULENAME@__ 
+!! __@RULENAME@__ Okimasis 2004: 26, Rule 4: -ôhk
 i:ô <=> o: y:  %>:0  _ %^LC:0  ;          
                                     !change the suffix initial i to a long o 
 									!e.g. mîcimâpoy > mîcimâpoyôhk
@@ -92,7 +92,7 @@ i:ô <=> o: y:  %>:0  _ %^LC:0  ;
                                     !then delete o in first
                                     
 "locative alternation naahk 1"		
-!! __@RULENAME@__ adds nâhk after êw 1: change w to n
+!! __@RULENAME@__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
 w:n <=> [ê|ô] _  %>:0 i: %^LC:0  ;
 
 !"Double i-vowel with locatives"
@@ -146,7 +146,6 @@ w:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 "In Vow+y final stems with Diminutives, part 3: delete i in suffix" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 i:0 <=> [ o: | a: | e: | ê: | :î | ô: ] [ y:| w: ] %>:0 _ s: %^DIM:0 i: s: ;
-!        a: %>:0 _ s: %^DIM:0 i: s: ;
 
 !"Vowel lengthening in iw final nouns with diminutives" !Is covered by part 2
 !i:î <=> _ [ y:| w: ] %>:0 i: s: %^DIM:0 i: s: ;
