@@ -132,11 +132,11 @@ asikan+Dim:asikanis ANDECLPROF "little sock" ;
 asiniy ANDECL "stone" ;	
 atihk ANDECL "caribou" ;	
 atihk+Dim:acihkos ANDECLPROF "little caribou" ;
-cahcahkayo ANDECL "blackbird" ; !yaml
+cahcahkâyow ANDECL "blackbird" ; !yaml
 inini ANDECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.	
 iskwêw ANDECL "a woman" ; !yaml
 maskwa ANDECL "bear" ; ! maskwak	
-maskwa+Dim:maskosis ANDECLPROF "little moose" ; ! môswak	
+maskwa+Dim:maskosis ANDECLPROF "little moose" ;
 mâyatihk ANDECL "bighorn sheep" ;	
 mâyatihk+Dim:mâyacihkos ANDECLPROF "little bighorn sheep" ;	
 minôs ANDECL "cat" ; !minôsis
@@ -144,7 +144,7 @@ minôs+Dim:minôsis ANDECLPROF "little cat" ;
 mostos ANDECL "cow" ;	!grammar guide: pl is mostoswak. Move to IRREGANSTEMSLIST?
 mostos+Dim:mostosis ANDECLPROF "little cow" ;	
 môswa ANDECL "moose" ; ! môswak	
-môswa+Dim:môsos ANDECLPROF "little moose" ; ! môswak	
+môswa+Dim:môsos ANDECLPROF "little moose" ; 
 nâpês ANDECL "boy" ;	
 nâpês+Dim:nâpêsis ANDECLPROF "little boy" ;	
 nehiyaw ANDECL "Cree Person" ;	
@@ -160,21 +160,21 @@ sihkihp ANDECL "grebe, diving bird" ; !doublet,
 sikâk ANDECL "skunk" ;	!yaml
 sikâk+Dim:sikâkos ANDECLPROF "little skunk" ;
 sîsîp ANDECL "duck" ;	
-sîsîp+Dim:sîsîpis ANDECL "duckling" ;	! sîsîpisis
+sîsîp+Dim:sîsîpis ANDECLPROF "duckling" ;	! sîsîpisis
 wâpask ANDECL "polar bear" ; ! wâpaskwak	
 wâpask+Dim:wâpaskos ANDECLPROF "little polar bear" ; ! wâpaskwak	
 wâwaskesiw ANDECL "elk" ;
 wayasit ANDECL "hoof" ; !yaml !possibly -is in Dim
+mistatim+Dim:miscacimosis ANDECLPROF ;
 
 LEXICON IRREGANSTEMS
  :%> IRREGANSTEMSLIST ;
 
 LEXICON IRREGANSTEMSLIST
 atim IRREGULARDECL "dog" ; !yaml
-mistatim IRREGULARDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
-mistatim:têm IRREGULARINFL "dog-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
 atim:têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
-!mostos IRREGULARDECL "cow" ; !mostoswak
+mistatim IRREGULARDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
+mistatim:têm IRREGULARINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
 
 
 LEXICON ANSTEMS_kw
