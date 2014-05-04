@@ -37,13 +37,13 @@ Rules
 
 "Suffix vowel deletion in vowel final stems"
 !! __@RULENAME@__ deletes stem vowel in vowel final stems
-Vx:0 <=> _ %>:0 Vow ;
-	where Vx in ( a e i o â ê î ô ) ; 
+Vx:0 <=> _ %>:0 ( %^POS:0 ) ( %>:0 ) Vow ;
+	where Vx in ( a e o â ê î ô ) ; 
 
-"i deletion when ii in some special cases"
-!! __@RULENAME@__ deletes stem vowel in vowel final stems !
+"i deletion in vowel final stems"
+!! __@RULENAME@__ deletes i in vowel final stems !
 i:0 <=> _ %>:0 %>:0 i ;
-
+        _ %>:0 ( %^POS:0 ) ( %>:0 ) Vow ;
 
 "w Insertion in Front of Vowel Initial Suffix after ksv c"
 !! __@RULENAME@__ inserts w after k in front of plural -ak
@@ -145,7 +145,8 @@ w:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 
 "In Vow+y final stems with Diminutives, part 3: delete i in suffix" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
-i:0 <=> [ o: | a: | e: | ê: | :î ] [ y:| w: ] %>:0 _ s: %^DIM:0 i: s: ;
+i:0 <=> [ o: | a: | e: | ê: | :î | ô: ] [ y:| w: ] %>:0 _ s: %^DIM:0 i: s: ;
+!        a: %>:0 _ s: %^DIM:0 i: s: ;
 
 !"Vowel lengthening in iw final nouns with diminutives" !Is covered by part 2
 !i:î <=> _ [ y:| w: ] %>:0 i: s: %^DIM:0 i: s: ;
@@ -160,7 +161,7 @@ s:0 <=> k %>:0 _ %^DIM:0 ;
 i:o <=> k %>:0 _ s: %^DIM:0 ;
 
 "Diminutives rule change ending delete i with nouns ending in kwa"
-i:0 <=> k: w: a: %>:0 _ s: %^DIM:0 ;
+i:0 <=>  a: %>:0 _ s: %^DIM:0 ;
 
 
 !"Remove locative i when poss -wâ"
