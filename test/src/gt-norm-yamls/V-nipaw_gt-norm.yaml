@@ -9,15 +9,7 @@ Config:
 
 Tests:
   
-  Verb - nipâ - help : # Ordinary VAI verb - full paradigm
-     
-     nipâw+V+IA+Imp+Imm+2Sg: nipâ
-     nipâw+V+IA+Imp+Imm+2Pl: nipâk
-     nipâw+V+IA+Imp+Imm+12Pl: nipâtân
-     
-     nipâw+V+IA+Imp+Del+2Sg: nipâhkan
-     nipâw+V+IA+Imp+Del+2Pl: nipâhkêk
-     nipâw+V+IA+Imp+Del+12Pl: nipâhkahk
+  Verb - nipâ - sleep : # Ordinary VAI verb - full paradigm
      
      nipâw+V+IA+Ind+Prs+1Sg: ninipân
      nipâw+V+IA+Ind+Prs+2Sg: kinipân
@@ -60,7 +52,7 @@ Tests:
      nipâw+V+IA+Ind+Fut+Int+3oPl: wî-nipâyiwa
      
      nipâw+V+IA+Cnj+Prs+1Sg: [ê-nipâyân, ênipâyân]
-     nipâw+V+IA+Cnj+Prs+2Sg: [ê-nipâyan, ênipâyân]
+     nipâw+V+IA+Cnj+Prs+2Sg: [ê-nipâyan, ênipâyan]
      nipâw+V+IA+Cnj+Prs+3Sg: [ê-nipât, ênipât]
      nipâw+V+IA+Cnj+Prs+3oSg: [ê-nipâyit, ênipâyit]
      nipâw+V+IA+Cnj+Prs+1Pl: [ê-nipâyâhk, ênipâyâhk]
@@ -95,4 +87,13 @@ Tests:
      nipâw+V+IA+Fut+Cond+2Pl: nipâyêko
      nipâw+V+IA+Fut+Cond+3Pl: nipâtwâwi
      nipâw+V+IA+Fut+Cond+3oPl: nipâyici
+
+     nipâw+V+IA+Imp+Imm+2Sg: nipâ
+     nipâw+V+IA+Imp+Imm+2Pl: nipâk
+     nipâw+V+IA+Imp+Imm+12Pl: nipâtân
+     
+     nipâw+V+IA+Imp+Del+2Sg: nipâhkan
+     nipâw+V+IA+Imp+Del+2Pl: nipâhkêk
+     nipâw+V+IA+Imp+Del+12Pl: nipâhkahk
+     
      

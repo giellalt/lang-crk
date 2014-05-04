@@ -12,25 +12,24 @@ Tests:
   Verb - wicih - help : # Ordinary TA verb - full paradigm
      wicih+V+TA+Ind+Prs+1Sg+3SgO: niwicihâw
      wicih+V+TA+Ind+Prs+2Sg+3SgO: kiwicihâw
-     wicih+V+TA+Ind+Prs+3Sg+3SgO: [wicihêw, wicihik, wicihkow]
-     wicih+V+TA+Ind+Prs+3oSg+3SgO: [wicihêyiwa, wicihikoyiwa]
+     wicih+V+TA+Ind+Prs+3Sg+3SgO: wicihêw
+     wicih+V+TA+Ind+Prs+3oSg+3SgO: wicihêyiwa
 
      wicih+V+TA+Ind+Prs+1Pl+3SgO: niwicihânân
      wicih+V+TA+Ind+Prs+12Pl+3SgO: kiwicihânaw
      wicih+V+TA+Ind+Prs+2Pl+3SgO: kiwicihâwâw
-     wicih+V+TA+Ind+Prs+3Pl+3SgO: [wicihêwak, wicihkow]
+     wicih+V+TA+Ind+Prs+3Pl+3SgO: wicihêwak
      wicih+V+TA+Ind+Prs+3oPl+3SgO: wicihêyiwa
 
      wicih+V+TA+Ind+Prs+1Sg+3PlO: niwicihâwak
      wicih+V+TA+Ind+Prs+2Sg+3PlO: kiwicihâwak
-     wicih+V+TA+Ind+Prs+3Sg+3PlO: [wicihêw, wicihikowak, wicihikak]
+     wicih+V+TA+Ind+Prs+3Sg+3PlO: wicihêw
      wicih+V+TA+Ind+Prs+3oSg+3PlO: wicihêyiwa
      wicih+V+TA+Ind+Prs+3oSg+3oPlO: wicihikoyiwa
 
      wicih+V+TA+Ind+Prs+1Pl+3PlO: niwicihânânak
      wicih+V+TA+Ind+Prs+12Pl+3PlO: kiwicihânawak
      wicih+V+TA+Ind+Prs+2Pl+3PlO: kiwicihâwâwak
-     wicih+V+TA+Ind+Prs+3Pl+3PlO: wicihikowak
      wicih+V+TA+Ind+Prs+3Pl+3PlO: wicihêwak
      wicih+V+TA+Ind+Prs+3oPl+3PlO: wicihêyiwa
 
@@ -45,18 +44,12 @@ Tests:
      wicih+V+TA+Ind+Prs+3Pl+1PlO: niwicihikonânak
      wicih+V+TA+Ind+Prs+3Pl+12PlO: kiwicihikonawak
      wicih+V+TA+Ind+Prs+3Pl+2PlO: kiwicihikowâwak
-
-
-
-
-     
-     
      
      wicih+V+TA+Cnj+1Sg+3SgO: ê-wicihak
      wicih+V+TA+Cnj+1Sg+3PlO: ê-wicihakik
      wicih+V+TA+Cnj+1Pl+3SgO: ê-wicihâyâhk
      wicih+V+TA+Cnj+1Pl+3PlO: ê-wicihâyâhkik
-     wicih+V+TA+Cnj+12Pl+3SgO: ê-wicihâyâhk
+     wicih+V+TA+Cnj+12Pl+3SgO: [ê-wicihâyahk, êwicihâyahk]
      wicih+V+TA+Cnj+12Pl+3PlO: ê-wicihâyâhkok
      
      wicih+V+TA+Cnj+2Sg+3SgO: ê-wicihat
@@ -64,14 +57,14 @@ Tests:
      wicih+V+TA+Cnj+2Pl+3SgO: ê-wicihâyêk
      wicih+V+TA+Cnj+2Pl+3PlO: ê-wicihâyêkok
 
-     wicih+V+TA+Cnj+3Pl+3oPlO: ê-wicihikocik
-     wicih+V+TA+Cnj+3Pl+3SgO: ê-wicihâcik
-     wicih+V+TA+Cnj+3Pl+3PlO: ê-wicihâcik
-     wicih+V+TA+Cnj+3Pl+2SgO: ê-wicihiskik
-     wicih+V+TA+Cnj+3Pl+2PlO: ê-wicihikoyêkok
      wicih+V+TA+Cnj+3Pl+1SgO: ê-wicihicik
      wicih+V+TA+Cnj+3Pl+1PlO: ê-wicihikoyâhkik
      wicih+V+TA+Cnj+3Pl+12PlO: ê-wicihikoyâhkok
+     wicih+V+TA+Cnj+3Pl+2SgO: ê-wicihiskik
+     wicih+V+TA+Cnj+3Pl+2PlO: ê-wicihikoyêkok
+     wicih+V+TA+Cnj+3Pl+3SgO: ê-wicihâcik
+     wicih+V+TA+Cnj+3Pl+3PlO: ê-wicihâcik
+     wicih+V+TA+Cnj+3Pl+3oPlO: ê-wicihikocik
 
      wicih+V+TA+Cnj+3Sg+3oPlO: ê-wicihikocik
      wicih+V+TA+Cnj+3Sg+3SgO: ê-wicihât
@@ -84,14 +77,12 @@ Tests:
 
      wicih+V+TA+Cnj+3oPl+3oSgO: ê-wicihkoyit
      wicih+V+TA+Cnj+3oPl+3oPlO: ê-wicihikoyit
-     wicih+V+TA+Cnj+3oPl+3SgO: ê-wicihkot
-     wicih+V+TA+Cnj+3oPl+3SgO: ê-wicihikot
+     wicih+V+TA+Cnj+3oPl+3SgO: ê-wicihâyit
      wicih+V+TA+Cnj+3oPl+3PlO: ê-wicihikocik
 
      wicih+V+TA+Cnj+3oSg+3oSgO: ê-wicihkoyit
      wicih+V+TA+Cnj+3oSg+3oPlO: ê-wicihikoyit
-     wicih+V+TA+Cnj+3oSg+3SgO: ê-wicihkot
-     wicih+V+TA+Cnj+3oSg+3SgO: ê-wicihikot
+     wicih+V+TA+Cnj+3oSg+3SgO: ê-wicihâyit
      wicih+V+TA+Cnj+3oSg+3PlO: ê-wicihikocik
 
 
@@ -118,7 +109,6 @@ Tests:
 
      wicih+V+TA+Fut+3Pl+3SgO: wicihâtwâwi
      wicih+V+TA+Fut+3Pl+3PlO: wicihâtwâwi
-     wicih+V+TA+Fut+3Pl+3PlO: wicihikotwâwi
 
 
      wicih+V+TA+Fut+3oSg+3SgO: wicihikoci
@@ -128,13 +118,13 @@ Tests:
      wicih+V+TA+Fut+3oSg+3oPlO: wicihikoyici
      wicih+V+TA+Fut+3oPl+3oPlO: wicihikoyici
 
-     wicih+V+TA+Imp+2Sg+3SgO: wicih
-     wicih+V+TA+Imp+2Pl+3SgO: wicihihk
-     wicih+V+TA+Imp+12Pl+3SgO: wicihâtân
+     wicih+V+TA+Imp+Imm+2Sg+3SgO: wicih
+     wicih+V+TA+Imp+Imm+2Pl+3SgO: wicihihk
+     wicih+V+TA+Imp+Imm+12Pl+3SgO: wicihâtân
 
-     wicih+V+TA+Imp+2Sg+3PlO: wicihik
-     wicih+V+TA+Imp+2Pl+3PlO: wicihihkok
-     wicih+V+TA+Imp+12Pl+3PlO: wicihâtânik
+     wicih+V+TA+Imp+Imm+2Sg+3PlO: wicihik
+     wicih+V+TA+Imp+Imm+2Pl+3PlO: wicihihkok
+     wicih+V+TA+Imp+Imm+12Pl+3PlO: wicihâtânik
 
      wicih+V+TA+Imp+Del+2Sg+3SgO: wicihâhkan
      wicih+V+TA+Imp+Del+2Pl+3SgO: wicihâhkêk
