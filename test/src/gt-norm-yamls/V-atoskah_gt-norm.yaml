@@ -12,18 +12,18 @@ Tests:
   Verb - atoskah - help : # Ordinary TA verb - full paradigm
      atoskah+V+TA+Ind+Prs+1Sg+3SgO: niatoskahâw
      atoskah+V+TA+Ind+Prs+2Sg+3SgO: kiatoskahâw
-     atoskah+V+TA+Ind+Prs+3Sg+3SgO: [atoskahêw, atoskahik, atoskahkow]
-     atoskah+V+TA+Ind+Prs+3oSg+3SgO: [atoskahêyiwa, atoskahikoyiwa]
+     atoskah+V+TA+Ind+Prs+3Sg+3SgO: atoskahêw
+     atoskah+V+TA+Ind+Prs+3oSg+3SgO: atoskahêyiwa
 
      atoskah+V+TA+Ind+Prs+1Pl+3SgO: niatoskahânân
      atoskah+V+TA+Ind+Prs+12Pl+3SgO: kiatoskahânaw
      atoskah+V+TA+Ind+Prs+2Pl+3SgO: kiatoskahâwâw
-     atoskah+V+TA+Ind+Prs+3Pl+3SgO: [atoskahêwak, atoskahkow]
+     atoskah+V+TA+Ind+Prs+3Pl+3SgO: atoskahêwak
      atoskah+V+TA+Ind+Prs+3oPl+3SgO: atoskahêyiwa
 
      atoskah+V+TA+Ind+Prs+1Sg+3PlO: niatoskahâwak
      atoskah+V+TA+Ind+Prs+2Sg+3PlO: kiatoskahâwak
-     atoskah+V+TA+Ind+Prs+3Sg+3PlO: [atoskahêw, atoskahikowak, atoskahikak]
+     atoskah+V+TA+Ind+Prs+3Sg+3PlO: atoskahêw
      atoskah+V+TA+Ind+Prs+3oSg+3PlO: atoskahêyiwa
      atoskah+V+TA+Ind+Prs+3oSg+3oPlO: atoskahikoyiwa
 
@@ -45,18 +45,12 @@ Tests:
      atoskah+V+TA+Ind+Prs+3Pl+1PlO: niatoskahikonânak
      atoskah+V+TA+Ind+Prs+3Pl+12PlO: kiatoskahikonawak
      atoskah+V+TA+Ind+Prs+3Pl+2PlO: kiatoskahikowâwak
-
-
-
-
-     
-     
      
      atoskah+V+TA+Cnj+1Sg+3SgO: ê-atoskahak
      atoskah+V+TA+Cnj+1Sg+3PlO: ê-atoskahakik
      atoskah+V+TA+Cnj+1Pl+3SgO: ê-atoskahâyâhk
      atoskah+V+TA+Cnj+1Pl+3PlO: ê-atoskahâyâhkik
-     atoskah+V+TA+Cnj+12Pl+3SgO: ê-atoskahâyâhk
+     atoskah+V+TA+Cnj+12Pl+3SgO: ê-atoskahâyahk
      atoskah+V+TA+Cnj+12Pl+3PlO: ê-atoskahâyâhkok
      
      atoskah+V+TA+Cnj+2Sg+3SgO: ê-atoskahat
@@ -82,17 +76,16 @@ Tests:
      atoskah+V+TA+Cnj+3Sg+1PlO: ê-atoskahikoyâhk
      atoskah+V+TA+Cnj+3Sg+12PlO: ê-atoskahikoyahk
 
+     atoskah+V+TA+Cnj+3oSg+3oSgO: ê-atoskahkoyit
+     atoskah+V+TA+Cnj+3oSg+3oPlO: ê-atoskahikoyit
+     atoskah+V+TA+Cnj+3oSg+3SgO: ê-atoskahâyit
+     atoskah+V+TA+Cnj+3oSg+3PlO: ê-atoskahikocik
+
      atoskah+V+TA+Cnj+3oPl+3oSgO: ê-atoskahkoyit
      atoskah+V+TA+Cnj+3oPl+3oPlO: ê-atoskahikoyit
      atoskah+V+TA+Cnj+3oPl+3SgO: ê-atoskahkot
      atoskah+V+TA+Cnj+3oPl+3SgO: ê-atoskahikot
      atoskah+V+TA+Cnj+3oPl+3PlO: ê-atoskahikocik
-
-     atoskah+V+TA+Cnj+3oSg+3oSgO: ê-atoskahkoyit
-     atoskah+V+TA+Cnj+3oSg+3oPlO: ê-atoskahikoyit
-     atoskah+V+TA+Cnj+3oSg+3SgO: ê-atoskahkot
-     atoskah+V+TA+Cnj+3oSg+3SgO: ê-atoskahikot
-     atoskah+V+TA+Cnj+3oSg+3PlO: ê-atoskahikocik
 
 
      atoskah+V+TA+Fut+1Sg+3SgO: atoskahaki
