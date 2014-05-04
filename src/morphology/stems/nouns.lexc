@@ -139,7 +139,7 @@ maskwa ANDECL "bear" ; ! maskwak
 maskwa+Dim:maskosis ANDECLPROF "little moose" ; ! môswak	
 mâyatihk ANDECL "bighorn sheep" ;	
 mâyatihk+Dim:mâyacihkos ANDECLPROF "little bighorn sheep" ;	
-minôs ANDECL "cat" ;	
+minôs ANDECL "cat" ; !minôsis
 minôs+Dim:minôsis ANDECLPROF "little cat" ;	
 mostos ANDECL "cow" ;	!grammar guide: pl is mostoswak. Move to IRREGANSTEMSLIST?
 mostos+Dim:mostosis ANDECLPROF "little cow" ;	
@@ -149,7 +149,7 @@ nâpês ANDECL "boy" ;
 nâpês+Dim:nâpêsis ANDECLPROF "little boy" ;	
 nehiyaw ANDECL "Cree Person" ;	
 niska ANDECL "Canada goose" ; !yaml
-ôhô ANDECL "owl" ; !yaml
+ôhôw ANDECL "owl" ; !yaml
 okistatowân ANDECL "grizzly bear" ; ! okistatowânak	
 okistatowân+Dim:okiscacowânis ANDECLPROF "little grizzly bear" ; ! okistatowânak	
 oskâtâsk ANDECL "carrot" ;	
@@ -160,11 +160,11 @@ sihkihp ANDECL "grebe, diving bird" ; !doublet,
 sikâk ANDECL "skunk" ;	!yaml
 sikâk+Dim:sikâkos ANDECLPROF "little skunk" ;
 sîsîp ANDECL "duck" ;	
-sîsîp+Dim:sîsîpis ANDECL "duckling" ;	
+sîsîp+Dim:sîsîpis ANDECL "duckling" ;	! sîsîpisis
 wâpask ANDECL "polar bear" ; ! wâpaskwak	
 wâpask+Dim:wâpaskos ANDECLPROF "little polar bear" ; ! wâpaskwak	
 wâwaskesiw ANDECL "elk" ;
-wayasit ANDECL "hoof" ; !yaml
+wayasit ANDECL "hoof" ; !yaml !possibly -is in Dim
 
 LEXICON IRREGANSTEMS
  :%> IRREGANSTEMSLIST ;
@@ -217,7 +217,7 @@ maskisin INDECL "shoe" ; !yaml
 maskisin+Dim:maskisinis INDECLPROF "little shoe" ;
 mistikowat INDECL "box" ;
 mistikowat+Dim:miscikowacis INDECLPROF "little box" ;
-pikiw INDECL "gum" ;
+pikiw INDECL "gum" ; !Dim: pikis
 iskwâhtêm INDECL "door" ;
 iskwâhtêm+Dim:iskwâhcêmis INDECLPROF "little door" ;
 môhkomân INDECL  "knife" ;
