@@ -104,15 +104,13 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 
 !Future intentional tense
 
-< 0:n 0:i 0:w 0:î 0:%- "@U.verb.indFutInt1sg@" > IALIST ; !"Okimâsis 2004: 33 and 39
-< 0:k 0:i 0:w 0:î 0:%- "@U.verb.indFutInt2sg@" > IALIST ; !"
-
-<              0:w 0:î 0:%-  "@U.verb.indFutInt3sg@"  >  IALIST ; !"
-<              0:w 0:î 0:%-  "@U.verb.indFutInt3osg@" > IALIST ; !"
-
-< 0:n 0:i 0:w 0:î 0:%-  "@U.verb.indFutInt1pl@"  > IALIST ;   ! exclusive Pl
-< 0:k 0:i 0:w 0:î 0:%-  "@U.verb.indFutInt12pl@" > IALIST ;   ! inclusive Pl
-< 0:k 0:i 0:w 0:î 0:%-  "@U.verb.indFutInt2pl@"  > IALIST ;   !"
+< 0:n 0:i 0:w 0:î 0:%- "@U.verb.indFutInt1sg@"  > IALIST ; !"Okimâsis 2004: 33 and 39
+< 0:k 0:i 0:w 0:î 0:%- "@U.verb.indFutInt2sg@"  > IALIST ; !"
+<         0:w 0:î 0:%- "@U.verb.indFutInt3sg@"  > IALIST ; !"
+<         0:w 0:î 0:%- "@U.verb.indFutInt3osg@" > IALIST ; !"
+< 0:n 0:i 0:w 0:î 0:%- "@U.verb.indFutInt1pl@"  > IALIST ; ! exclusive Pl
+< 0:k 0:i 0:w 0:î 0:%- "@U.verb.indFutInt12pl@" > IALIST ; ! inclusive Pl
+< 0:k 0:i 0:w 0:î 0:%- "@U.verb.indFutInt2pl@"  > IALIST ; !"
 
 <              0:w 0:î 0:%-  "@U.verb.indFutInt3pl@"  > IALIST ; !"
 <              0:w 0:î 0:%-  "@U.verb.indFutInt3opl@" > IALIST ; !"
