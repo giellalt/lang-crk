@@ -1,0 +1,32 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mispiton - ok : # -m inanimate noun
+     
+     mispiton+N+IN+Sg+Px1Sg: nispiton
+     mispiton+N+IN+Sg+Px2Sg: kispiton
+     mispiton+N+IN+Sg+Px3Sg: ospiton
+     mispiton+N+IN+Sg+Px3iSg: ospitoniyiw
+     mispiton+N+IN+Sg+Px1Pl: nispitoninân
+     mispiton+N+IN+Sg+Px12Pl: kispitoninaw
+     mispiton+N+IN+Sg+Px2Pl: kispitoniwâw
+     mispiton+N+IN+Sg+Px3Pl: ospitoniwâw
+     mispiton+N+IN+Sg+Px3iPl: ospitoniyiw
+
+     mispiton+N+IN+Pl+Px1Sg: nispitona
+     mispiton+N+IN+Pl+Px2Sg: kispitona
+     mispiton+N+IN+Pl+Px3Sg: ospitona
+     mispiton+N+IN+Pl+Px3iSg: ospitoniyiwa
+     mispiton+N+IN+Pl+Px1Pl: nispitoninâna
+     mispiton+N+IN+Pl+Px12Pl: kispitoninawa
+     mispiton+N+IN+Pl+Px2Pl: kispitoniwâwa
+     mispiton+N+IN+Pl+Px3Pl: ospitoniwâwa
+     mispiton+N+IN+Pl+Px3iPl: ospitoniyiwa
