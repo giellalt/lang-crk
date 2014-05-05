@@ -11,6 +11,7 @@
 
  * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim.
 
+
  * LEXICON IRREGULARINFL  is also there to handle the highly irregular atim and mistatim
 
  * LEXICON ANKWDECL  takes -om as extra suffix in possessed form
@@ -70,7 +71,7 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
  * LEXICON AN_SUFF_SG  
 
- * LEXICON AN_SUFF_SG_INAL  , see above for relation to AN_SUFF_SG
+< "+Px3iPl":0 0:y 0:i 0:w     "@U.noun.3ipl@" > SG_ ; ! obviative plural possessor, not in yaml
 
 
  * LEXICON AN_SUFF_PL  
@@ -98,10 +99,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 
 
- * LEXICON AN_IRREG_SUFF_SG  
-
-
- * LEXICON AN_IRREG_SUFF_PL  
 
 
 
