@@ -531,6 +531,13 @@ The stems
 
  * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim.
 
+ * LEXICON FAMILYINFL  The lexicon gives a base form N+AN
+
+ * LEXICON FAMILYINFL_IY   Special treatment for nouns ending with -iy
+
+
+ * LEXICON FAMILYINFL_HALFPAR  No bigami
+
 
  * LEXICON IRREGULARINFL  is also there to handle the highly irregular atim and mistatim
 
@@ -616,6 +623,8 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 
  * LEXICON ANKWDECL_SUFF_PL  
+
+
 
 
 
