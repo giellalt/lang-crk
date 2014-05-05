@@ -49,15 +49,15 @@ LEXICON FAMILYINFL_IY  !!= * @CODE@ Special treatment for nouns ending with -iy
 
 LEXICON FAMILYINFL_HALFPAR !!= * @CODE@ No bigami
 < "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
-< "+N+AN+Sg+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
-< "+N+AN+Sg+Px2Sg":%^POS                  "@U.noun.2sg@"  > SG_ ; !
-< "+N+AN+Sg+Px3Sg":%^POS                  "@U.noun.3sg@"  > OBVIATIVE ; !
-< "+N+AN+Sg+Px3iSg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > OBVIATIVE ; !
-< "+N+AN+Pl+Px1Pl":%^POS  0:i 0:n 0:â 0:n  "@U.noun.1pl@"  >  PL_AK ;   ! exclusive Pl
-< "+N+AN+Pl+Px12Pl":%^POS 0:i 0:n 0:a 0:w      "@U.noun.12pl@" >  PL_AK ; ! inclusive Pl
-< "+N+AN+Pl+Px2Pl":%^POS  0:i 0:w 0:â 0:w  "@U.noun.2pl@"  >  PL_AK ; !
-< "+N+AN+Pl+Px3Pl":%^POS  0:i 0:w 0:â 0:w  "@U.noun.3pl@"  >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
-< "+N+AN+Pl+Px3iPl":%^POS 0:i 0:y 0:i 0:w      "@U.noun.3isg@" >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
+< "+N":0 "+AN":0 "+Sg":0 "+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
+< "+N":0 "+AN":0 "+Sg":0 "+Px2Sg":%^POS                  "@U.noun.2sg@"  > SG_ ; !
+< "+N":0 "+AN":0 "+Sg":0 "+Px3Sg":%^POS                  "@U.noun.3sg@"  > OBVIATIVE ; !
+< "+N":0 "+AN":0 "+Sg":0 "+Px3iSg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > OBVIATIVE ; !
+< "+N":0 "+AN":0 "+Pl":0 "+Px1Pl":%^POS  0:i 0:n 0:â 0:n  "@U.noun.1pl@"  >  PL_AK ;   ! exclusive Pl
+< "+N":0 "+AN":0 "+Pl":0 "+Px12Pl":%^POS 0:i 0:n 0:a 0:w      "@U.noun.12pl@" >  PL_AK ; ! inclusive Pl
+< "+N":0 "+AN":0 "+Pl":0 "+Px2Pl":%^POS  0:i 0:w 0:â 0:w  "@U.noun.2pl@"  >  PL_AK ; !
+< "+N":0 "+AN":0 "+Pl":0 "+Px3Pl":%^POS  0:i 0:w 0:â 0:w  "@U.noun.3pl@"  >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
+< "+N":0 "+AN":0 "+Pl":0 "+Px3iPl":%^POS 0:i 0:y 0:i 0:w      "@U.noun.3isg@" >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 
 
 LEXICON IRREGULARINFL !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
