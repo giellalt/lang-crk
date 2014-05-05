@@ -176,6 +176,7 @@ atim IRREGULARDECL "dog" ; !yaml
 atim:têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 mistatim IRREGULARDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
 mistatim:têm IRREGULARINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
+mitîhiy:tîhiy IRREGULARINFL "shoulderblade" ;
 
 LEXICON ANSTEMS_kw
  :%> ANSTEMLIST_kw ;
@@ -189,17 +190,18 @@ amiskw ANKWDECL ;
 mistikw ANKWDECL ;
 askihkw ANKWDECL ;
 
+
 !! !Inanimate Nouns
 !   ===============
 
 LEXICON INALIENABLESTEMS  ! dependent nouns
 maniway:aniway INALIENABLEPOSS ; !"someone's cheek" !yaml
 otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
-otehye+N+IN+Pl+Px3Sg:otehya # ;
+otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
 mîpit:îpit INALIENABLEPOSS "tooth" ;
-
-
-
+mikiwâhp:iki INALIENABLEPOSS_SG "home" ;
+mahkwan:ahkwan INALIENABLEPOSS "heel" ;
+mispiton:ispiton INALIENABLEPOSS "arm" ; !o- in stead of w-
 
 LEXICON INSTEMS
  :%> INSTEMLIST ;
