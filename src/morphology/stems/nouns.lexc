@@ -176,7 +176,22 @@ atim IRREGULARDECL "dog" ; !yaml
 atim:têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 mistatim IRREGULARDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
 mistatim:têm IRREGULARINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
-mitîhiy:tîhiy IRREGULARINFL "shoulderblade" ;
+mitâs:tâs IRREGULARINFL "pants" ;
+otânisimâw:tânis IRREGULARINFL "daughter" ;
+okosisimâw:kosis IRREGULARINFL "son" ;
+omisimâw:mis IRREGULARINFL "oldersister" ;
+otisânimâw:tisân IRREGULARINFL "sister/brother" ;
+omosômimâw:mosôm IRREGULARINFL "grandfather" ;
+okâwîmâw:kâwiy IRREGULARINFL "mother" ;! -iy- dissappears Okimasis p. 140, !OBS -iy
+mitîhiy:tîhiy IRREGULARINFL "shoulderblade" ; !OBS -iy
+
+onâpêmiwâw:nâpêm IRREGULARINFL "husband" ; !not full paradigm
+wîkimâkan:wîkimâkan IRREGULARINFL "spouse" ; !not full paradigm
+
+ôhtâwimâw:htâwiy IRREGULARINFL "father" ; !OBS nô- instead of ni- Okimasis p. 141, !OBS -iy
+ôhkomimâw:ôhkom IRREGULARINFL "grandmother" ; !OBS nô- instead of ni- Okimasis p. 142
+
+
 
 LEXICON ANSTEMS_kw
  :%> ANSTEMLIST_kw ;
