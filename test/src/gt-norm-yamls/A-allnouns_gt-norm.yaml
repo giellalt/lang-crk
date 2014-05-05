@@ -283,19 +283,28 @@ Tests:
      iskwêw+N+AN+Dim+Px3Pl+Loc: otiskwêsisiwâwihk
      iskwêw+N+AN+Dim+Px3iPl+Loc: otiskwêsisiyihk
   
-  Noun - maniway - ok : # -m animate noun, acc. to lexc and Wolvengrey it is inanimate
-#     maniway+N+IN+Sg:
-#     maniway+N+IN+Pl:
-#     maniway+N+IN+Loc:
+  Noun - maniway - ok : # -m inanimate noun
      
      maniway+N+IN+Sg+Px1Sg: naniway
      maniway+N+IN+Sg+Px2Sg: kaniway
-     maniway+N+IN+Sg+Px3Sg: otaniway
-     maniway+N+IN+Sg+Px3iSg: maniway
-     maniway+N+IN+Sg+Px1Pl: naniwaynân
-     maniway+N+IN+Sg+Px12Pl: kiniwaynân # kinawaynân ???
-     maniway+N+IN+Sg+Px2Pl: kaniwaywâw
-     maniway+N+IN+Sg+Px3Pl: naniwaywâw
+     maniway+N+IN+Sg+Px3Sg: waniway
+     maniway+N+IN+Sg+Px3iSg: waniwayiyiw
+     maniway+N+IN+Sg+Px1Pl: naniwayinân
+     maniway+N+IN+Sg+Px12Pl: kaniwayinaw
+     maniway+N+IN+Sg+Px2Pl: kaniwayiwâw
+     maniway+N+IN+Sg+Px3Pl: waniwayiwâw
+     maniway+N+IN+Sg+Px3iPl: waniwayiyiw
+     
+     maniway+N+IN+Pl+Px1Sg: naniwaya
+     maniway+N+IN+Pl+Px2Sg: kaniwaya
+     maniway+N+IN+Pl+Px3Sg: waniwaya
+     maniway+N+IN+Pl+Px3iSg: waniwayiyiwa
+     maniway+N+IN+Pl+Px1Pl: naniwayinâna
+     maniway+N+IN+Pl+Px12Pl: kaniwayinawa
+     maniway+N+IN+Pl+Px2Pl: kaniwayiwâwa
+     maniway+N+IN+Pl+Px3Pl: waniwayiwâwa
+     maniway+N+IN+Pl+Px3iPl: waniwayiyiwa
+
 
   
   Noun - maskisin - ok : # -m inanimate noun, shoe
@@ -365,6 +374,29 @@ Tests:
      maskisin+N+IN+Dim+Px2Pl+Loc: kimaskisinisisiwâwihk
      maskisin+N+IN+Dim+Px3Pl+Loc: omaskisinisisiwâwihk
      maskisin+N+IN+Dim+Px3iPl+Loc: omaskisinisisiyihk
+  
+  Noun - mîpit - ok : # -m inanimate noun
+     
+     mîpit+N+IN+Sg+Px1Sg: nîpit
+     mîpit+N+IN+Sg+Px2Sg: kîpit
+     mîpit+N+IN+Sg+Px3Sg: wîpit
+     mîpit+N+IN+Sg+Px3iSg: wîpitiyiw
+     mîpit+N+IN+Sg+Px1Pl: nîpitinân
+     mîpit+N+IN+Sg+Px12Pl: kîpitinaw
+     mîpit+N+IN+Sg+Px2Pl: kîpitiwâw
+     mîpit+N+IN+Sg+Px3Pl: wîpitiwâw
+     mîpit+N+IN+Sg+Px3iPl: wîpitiyiw
+
+     mîpit+N+IN+Pl+Px1Sg: nîpita
+     mîpit+N+IN+Pl+Px2Sg: kîpita
+     mîpit+N+IN+Pl+Px3Sg: wîpita
+     mîpit+N+IN+Pl+Px3iSg: wîpitiyiwa
+     mîpit+N+IN+Pl+Px1Pl: nîpitinâna
+     mîpit+N+IN+Pl+Px12Pl: kîpitinawa
+     mîpit+N+IN+Pl+Px2Pl: kîpitiwâwa
+     mîpit+N+IN+Pl+Px3Pl: wîpitiwâwa
+     mîpit+N+IN+Pl+Px3iPl: wîpitiyiwa
+
   
   Noun - niska - ok : # -m animate noun, Canada goose
      niska+N+AN+Sg: niska

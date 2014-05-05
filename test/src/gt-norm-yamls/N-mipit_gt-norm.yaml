@@ -1,0 +1,32 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mîpit - ok : # -m inanimate noun
+     
+     mîpit+N+IN+Sg+Px1Sg: nîpit
+     mîpit+N+IN+Sg+Px2Sg: kîpit
+     mîpit+N+IN+Sg+Px3Sg: wîpit
+     mîpit+N+IN+Sg+Px3iSg: wîpitiyiw
+     mîpit+N+IN+Sg+Px1Pl: nîpitinân
+     mîpit+N+IN+Sg+Px12Pl: kîpitinaw
+     mîpit+N+IN+Sg+Px2Pl: kîpitiwâw
+     mîpit+N+IN+Sg+Px3Pl: wîpitiwâw
+     mîpit+N+IN+Sg+Px3iPl: wîpitiyiw
+
+     mîpit+N+IN+Pl+Px1Sg: nîpita
+     mîpit+N+IN+Pl+Px2Sg: kîpita
+     mîpit+N+IN+Pl+Px3Sg: wîpita
+     mîpit+N+IN+Pl+Px3iSg: wîpitiyiwa
+     mîpit+N+IN+Pl+Px1Pl: nîpitinâna
+     mîpit+N+IN+Pl+Px12Pl: kîpitinawa
+     mîpit+N+IN+Pl+Px2Pl: kîpitiwâwa
+     mîpit+N+IN+Pl+Px3Pl: wîpitiwâwa
+     mîpit+N+IN+Pl+Px3iPl: wîpitiyiwa
