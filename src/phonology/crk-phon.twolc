@@ -104,8 +104,17 @@ w:n <=> [ê|ô] _  %>:0 i: %^LC:0  ;
 t2:t <=> _ %>:0 Vow ;
 
 "-Vw:m alternation in front of possessive suffixes"
-!! __@RULENAME@__ -Vw:m alternation in front of possessive suffixes !
+!! __@RULENAME@__ -Vw:m alternation in front of possessive suffixes 
 w:m <=> Vow - a _ %>:0  %^POS:0  ; ! iskwêw nitiskwêm
+ 
+"wis:os in possessive prefix, step 1"
+!! __@RULENAME@__ wis:os in possessive prefix, step 1. Okimasis p. 138 ! 
+w:0 <=> .#. _  i:o s :* %>:0  %^POS:0  ; 
+ 
+"wis:os in possessive prefix, step 2"
+!! __@RULENAME@__ wis:os in possessive prefix, step 2. Okimasis p. 138 ! 
+i:o <=> .#. w:0 _ s :* %>:0  %^POS:0  ; ! get both wis- and os- !
+ 
  
 "i to a in prefixes in front of nasals"
 !! __@RULENAME@__ 
