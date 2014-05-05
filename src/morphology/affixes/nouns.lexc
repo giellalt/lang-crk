@@ -75,6 +75,10 @@ LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
 +N+IN+Sg:%> IN_SUFF_SG ;
 +N+IN+Pl:%> IN_SUFF_PL ;
 
+LEXICON INALIENABLEPOSS_SG !!= * @CODE@ inanimate possessive declension, only Sg
++N+IN+Sg:%> IN_SUFF_SG ;
+
+
 !LEXICON INALIEN_SUFF_SG
 !< "+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
 !< "+Px2Sg":%^POS                  "@U.noun.2sg@"  > SG_ ; !
