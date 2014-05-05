@@ -72,21 +72,19 @@ LEXICON INDECLPROF !!= Declensions for nouns taking reduced diminutive at by mor
 +N+IN:%> IN_SUFF_LOC ;
 
 LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
++N+IN+Sg:%> IN_SUFF_SG ;
++N+IN+Pl:%> IN_SUFF_PL ;
 
-+N+IN+Sg:%> INALIEN_SUFF_SG ;
-!+N+IN+Pl:%> IN_SUFF_PL ;  Not documented yet
-
-LEXICON INALIEN_SUFF_SG !!= * @CODE@
-< "+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
-< "+Px2Sg":%^POS                  "@U.noun.2sg@"  > SG_ ; !
-< "+Px3Sg":%^POS                  "@U.noun.3sg@"  > SG_ ; !
-< "+Px3iSg":%^POS  "@U.noun.3isg@" > SG_ ; 			  ! not like IN_SUFF_SG
-< "+Px1Pl":%^POS  0:n 0:â 0:n "@U.noun.1pl@"  > SG_ ; ! not like IN_SUFF_SG
-< "+Px12Pl":%^POS 0:n 0:â 0:n "@U.noun.12pl@" > SG_ ; ! not like IN_SUFF_SG
-< "+Px2Pl":%^POS  0:w 0:â 0:w "@U.noun.2pl@"  > SG_ ; !
-< "+Px3Pl":%^POS  0:w 0:â 0:w "@U.noun.3pl@"  > SG_ ; !
-< "+Px3iPl":%^POS 0:i 0:y 0:i 0:w     "@U.noun.3isg@" > SG_ ; ! obviative plural possessor
-
+!LEXICON INALIEN_SUFF_SG
+!< "+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
+!< "+Px2Sg":%^POS                  "@U.noun.2sg@"  > SG_ ; !
+!< "+Px3Sg":%^POS                  "@U.noun.3sg@"  > SG_ ; !
+!< "+Px3iSg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > SG_ ; 	  ! not like IN_SUFF_SG
+!< "+Px1Pl":%^POS  0:n 0:â 0:n "@U.noun.1pl@"  > SG_ ; ! not like IN_SUFF_SG
+!< "+Px12Pl":%^POS 0:n 0:â 0:n "@U.noun.12pl@" > SG_ ; ! not like IN_SUFF_SG
+!< "+Px2Pl":%^POS  0:w 0:â 0:w "@U.noun.2pl@"  > SG_ ; !
+!< "+Px3Pl":%^POS  0:w 0:â 0:w "@U.noun.3pl@"  > SG_ ; !
+!< "+Px3iPl":%^POS 0:i 0:y 0:i 0:w     "@U.noun.3isg@" > SG_ ; ! obviative plural possessor
 
 
 !! !!Diminutive suffixes
