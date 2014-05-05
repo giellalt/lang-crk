@@ -9,16 +9,25 @@ Config:
 
 Tests:
   
-  Noun - maniway - ok : # -m animate noun, acc. to lexc and Wolvengrey it is inanimate
-#     maniway+N+IN+Sg:
-#     maniway+N+IN+Pl:
-#     maniway+N+IN+Loc:
+  Noun - maniway - ok : # -m inanimate noun
      
      maniway+N+IN+Sg+Px1Sg: naniway
      maniway+N+IN+Sg+Px2Sg: kaniway
-     maniway+N+IN+Sg+Px3Sg: otaniway
-     maniway+N+IN+Sg+Px3iSg: maniway
-     maniway+N+IN+Sg+Px1Pl: naniwaynân
-     maniway+N+IN+Sg+Px12Pl: kiniwaynân # kinawaynân ???
-     maniway+N+IN+Sg+Px2Pl: kaniwaywâw
-     maniway+N+IN+Sg+Px3Pl: naniwaywâw
+     maniway+N+IN+Sg+Px3Sg: waniway
+     maniway+N+IN+Sg+Px3iSg: waniwayiyiw
+     maniway+N+IN+Sg+Px1Pl: naniwayinân
+     maniway+N+IN+Sg+Px12Pl: kaniwayinaw
+     maniway+N+IN+Sg+Px2Pl: kaniwayiwâw
+     maniway+N+IN+Sg+Px3Pl: waniwayiwâw
+     maniway+N+IN+Sg+Px3iPl: waniwayiyiw
+     
+     maniway+N+IN+Pl+Px1Sg: naniwaya
+     maniway+N+IN+Pl+Px2Sg: kaniwaya
+     maniway+N+IN+Pl+Px3Sg: waniwaya
+     maniway+N+IN+Pl+Px3iSg: waniwayiyiwa
+     maniway+N+IN+Pl+Px1Pl: naniwayinâna
+     maniway+N+IN+Pl+Px12Pl: kaniwayinawa
+     maniway+N+IN+Pl+Px2Pl: kaniwayiwâwa
+     maniway+N+IN+Pl+Px3Pl: waniwayiwâwa
+     maniway+N+IN+Pl+Px3iPl: waniwayiyiwa
+
