@@ -233,15 +233,15 @@ LEXICON IA_SBJ !!= @CODE@ gives flag diacritics and directs to subjunctive perso
 < "+Prt":0 "@U.verb.sbjPrt@" > 3oplsubjunctive ;  !"
 
 !Future Intentional
-< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 1sgsubjunctive ;  !"
-< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 2sgsubjunctive ;  !"
-< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 3sgsubjunctive ;  !"
-< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 3osgsubjunctive ; !"
-< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 1plsubjunctive ;  !"
-< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 12plsubjunctive ; !"
-< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 2plsubjunctive ;  !"
-< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 3plsubjunctive ;  !"
-< "+Fut+Int":0 "@U.verb.sbjFutureInt@" > 3oplsubjunctive ; !"
+< "+Fut":0 "+Int":0 "@U.verb.sbjFutureInt@" > 1sgsubjunctive ;  !"
+< "+Fut":0 "+Int":0 "@U.verb.sbjFutureInt@" > 2sgsubjunctive ;  !"
+< "+Fut":0 "+Int":0 "@U.verb.sbjFutureInt@" > 3sgsubjunctive ;  !"
+< "+Fut":0 "+Int":0 "@U.verb.sbjFutureInt@" > 3osgsubjunctive ; !"
+< "+Fut":0 "+Int":0 "@U.verb.sbjFutureInt@" > 1plsubjunctive ;  !"
+< "+Fut":0 "+Int":0 "@U.verb.sbjFutureInt@" > 12plsubjunctive ; !"
+< "+Fut":0 "+Int":0 "@U.verb.sbjFutureInt@" > 2plsubjunctive ;  !"
+< "+Fut":0 "+Int":0 "@U.verb.sbjFutureInt@" > 3plsubjunctive ;  !"
+< "+Fut":0 "+Int":0 "@U.verb.sbjFutureInt@" > 3oplsubjunctive ; !"
 
 !@U.verb.sbj1sg@  1sgsubjunctive ;
 !@U.verb.sbj2sg@  2sgsubjunctive ;
