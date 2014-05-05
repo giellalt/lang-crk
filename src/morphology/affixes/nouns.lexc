@@ -34,17 +34,30 @@ LEXICON IRREGULARDECL	!!= * @CODE@ is there to handle the highly irregular atim 
 < "+N":0 "+AN":0 "@U.noun.abs@" >  IRREG_OBVIATIVE ; ! -wa
 +N+AN: AN_DIM_IRR_ABS ;
 
-LEXICON FAMILYINFL
+LEXICON FAMILYINFL !!= * @CODE@ The lexicon gives a base form N+AN
 < "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
  IRREGULARINFL ;
 
-LEXICON FAMILYINFL_IY
+LEXICON FAMILYINFL_IY  !!= * @CODE@ Special treatment for nouns ending with -iy
 < "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
 +N+AN+Sg: AN_SUFF_SG_IY ;
 +N+AN+Pl: AN_SUFF_PL_IY ;
-+N+AN: AN_DIM_IRR_SG ;
-+N+AN: AN_DIM_IRR_PL ;
-+N+AN:%> AN_IRREG_SUFF_LOC ;
++N+AN: AN_DIM_IRR_SG ; ! overgen?
++N+AN: AN_DIM_IRR_PL ; ! overgen?
++N+AN:%> AN_IRREG_SUFF_LOC ; ! overgen?
+
+
+LEXICON FAMILYINFL_HALFPAR !!= * @CODE@ No bigami
+< "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
+< "+N+AN+Sg+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
+< "+N+AN+Sg+Px2Sg":%^POS                  "@U.noun.2sg@"  > SG_ ; !
+< "+N+AN+Sg+Px3Sg":%^POS                  "@U.noun.3sg@"  > OBVIATIVE ; !
+< "+N+AN+Sg+Px3iSg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > OBVIATIVE ; !
+< "+N+AN+Pl+Px1Pl":%^POS  0:i 0:n 0:â 0:n  "@U.noun.1pl@"  >  PL_AK ;   ! exclusive Pl
+< "+N+AN+Pl+Px12Pl":%^POS 0:i 0:n 0:a 0:w      "@U.noun.12pl@" >  PL_AK ; ! inclusive Pl
+< "+N+AN+Pl+Px2Pl":%^POS  0:i 0:w 0:â 0:w  "@U.noun.2pl@"  >  PL_AK ; !
+< "+N+AN+Pl+Px3Pl":%^POS  0:i 0:w 0:â 0:w  "@U.noun.3pl@"  >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
+< "+N+AN+Pl+Px3iPl":%^POS 0:i 0:y 0:i 0:w      "@U.noun.3isg@" >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 
 
 LEXICON IRREGULARINFL !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
