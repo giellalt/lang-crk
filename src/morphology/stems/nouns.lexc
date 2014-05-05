@@ -170,6 +170,7 @@ mistatim+Dim:miscacimosis ANDECLPROF ;
 
 LEXICON IRREGANSTEMS
  :%> IRREGANSTEMSLIST ;
+ :%> FAMILYSTEMLIST ;
 
 LEXICON IRREGANSTEMSLIST
 atim IRREGULARDECL "dog" ; !yaml
@@ -177,17 +178,19 @@ atim:têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is 
 mistatim IRREGULARDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
 mistatim:têm IRREGULARINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
 mitâs:tâs IRREGULARINFL "pants" ;
-otânisimâw:tânis IRREGULARINFL "daughter" ;
-okosisimâw:kosis IRREGULARINFL "son" ;
-omisimâw:mis IRREGULARINFL "oldersister" ;
-otisânimâw:tisân IRREGULARINFL "sister/brother" ;
-omosômimâw:mosôm IRREGULARINFL "grandfather" ;
-ôhkomimâw:ôhkom IRREGULARINFL "grandmother" ; 
-onâpêmiwâw:nâpêm IRREGULARINFL "husband" ; !not full paradigm
-wîkimâkan:wîkimâkan IRREGULARINFL "spouse" ; !not full paradigm
-okâwîmâw:kâwiy IRREGULARINFL "mother" ;! -iy- dissappears Okimasis p. 140, !OBS -iy
 mitîhiy:tîhiy IRREGULARINFL "shoulderblade" ; !OBS -iy
-ôhtâwimâw:ôhtâwiy IRREGULARINFL "father" ;  !OBS -iy
+
+LEXICON FAMILYSTEMLIST
+otânisimâw:tânis FAMILYINFL "daughter" ;
+okosisimâw:kosis FAMILYINFL "son" ;
+omisimâw:mis FAMILYINFL "oldersister" ;
+otisânimâw:tisân FAMILYINFL "sister/brother" ; !Lene invented the base form
+omosômimâw:mosôm FAMILYINFL "grandfather" ;
+ôhkomimâw:ôhkom FAMILYINFL "grandmother" ; 
+onâpêmiwâw:nâpêm FAMILYINFL "husband" ; !not full paradigm
+wîkimâkan:wîkimâkan FAMILYINFL "spouse" ; !not full paradigm
+okâwîmâw:kâwiy FAMILYINFL "mother" ;! -iy- dissappears Okimasis p. 140, !OBS -iy
+ôhtâwimâw:ôhtâwiy FAMILYINFL "father" ;  !OBS -iy
 
 
 

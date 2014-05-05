@@ -34,6 +34,10 @@ LEXICON IRREGULARDECL	!!= * @CODE@ is there to handle the highly irregular atim 
 < "+N":0 "+AN":0 "@U.noun.abs@" >  IRREG_OBVIATIVE ; ! -wa
 +N+AN: AN_DIM_IRR_ABS ;
 
+LEXICON FAMILYINFL
+< "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
+ IRREGULARINFL ;
+
 LEXICON IRREGULARINFL !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
 +N+AN+Sg: AN_IRREG_SUFF_SG ;
 +N+AN+Pl: AN_IRREG_SUFF_PL ;
