@@ -190,15 +190,18 @@ t2 		!!= * @CODE@  Prefix in possessives
 @U.verb.indFutInt3pl@ !!= * @CODE@ Future Intentional 
 @U.verb.indFutInt3opl@ !!= * @CODE@ Future Intentional
 
-@U.verb.FutCon1sg@ !!= * @CODE@ Future Conditional
-@U.verb.FutCon2sg@ !!= * @CODE@ Future Conditional
-@U.verb.FutCon3sg@ !!= * @CODE@ Future Conditional
-@U.verb.FutCon3osg@ !!= * @CODE@ Future Conditional
-@U.verb.FutCon1pl@ !!= * @CODE@ Future Conditional
-@U.verb.FutCon12pl@ !!= * @CODE@ Future Conditional
-@U.verb.FutCon2pl@ !!= * @CODE@ Future Conditional
-@U.verb.FutCon3pl@ !!= * @CODE@ Future Conditional
-@U.verb.FutCon3opl@ !!= * @CODE@ Future Conditional
+
+@U.verb.FutCon@ !!= * @CODE@ Future Conditional
+
+!@U.verb.FutCon1sg@ !!= * @CODE@ Future Conditional
+!@U.verb.FutCon2sg@ !!= * @CODE@ Future Conditional
+!@U.verb.FutCon3sg@ !!= * @CODE@ Future Conditional
+!@U.verb.FutCon3osg@ !!= * @CODE@ Future Conditional
+!@U.verb.FutCon1pl@ !!= * @CODE@ Future Conditional
+!@U.verb.FutCon12pl@ !!= * @CODE@ Future Conditional
+!@U.verb.FutCon2pl@ !!= * @CODE@ Future Conditional
+!@U.verb.FutCon3pl@ !!= * @CODE@ Future Conditional
+!@U.verb.FutCon3opl@ !!= * @CODE@ Future Conditional
 
 @U.verb.sbj@  !!= * @CODE@ Subjunctive (Conjunct)
 @U.verb.fut@  !!= * @CODE@ Future Conditional
