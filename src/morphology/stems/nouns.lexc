@@ -170,27 +170,27 @@ mistatim+Dim:miscacimosis ANDECLPROF ;
 
 LEXICON IRREGANSTEMS
  :%> IRREGANSTEMSLIST ;
- :%> FAMILYSTEMLIST ;
+ :%> KINSTEMLIST ;
 
 LEXICON IRREGANSTEMSLIST
-atim IRREGULARDECL "dog" ; !yaml
-atim:têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
-mistatim IRREGULARDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
-mistatim:têm IRREGULARINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
-mitâs:tâs IRREGULARINFL "pants" ;
-mitîhiy:tîhiy IRREGULARINFL "shoulderblade" ; !OBS -iy
+atim ANIRRDECL "dog" ; !yaml
+atim:têm ANIRRINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
+mistatim ANIRRDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
+mistatim:têm ANIRRINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
+mitâs:tâs ANIRRINFL "pants" ;
+mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
 
-LEXICON FAMILYSTEMLIST
-otânisimâw:tânis FAMILYINFL "daughter" ;
-okosisimâw:kosis FAMILYINFL "son" ;
-omisimâw:mis FAMILYINFL "oldersister" ;
-otisânimâw:tisân FAMILYINFL "sister/brother" ; !Lene invented the base form
-omosômimâw:mosôm FAMILYINFL "grandfather" ;
-ôhkomimâw:ôhkom FAMILYINFL "grandmother" ; 
-onâpêmiwâw:nâpêm FAMILYINFL_HALFPAR "husband" ; !not full paradigm
-wîkimâkan:wîkimâkan FAMILYINFL_HALFPAR "spouse" ; !not full paradigm
-okâwîmâw:kâw FAMILYINFL_IY "mother" ;! -iy- dissappears Okimasis p. 140, !OBS -iy
-ôhtâwimâw:ôhtâw FAMILYINFL_IY "father" ;  !OBS -iy
+LEXICON KINSTEMLIST
+otânisimâw:tânis ANKININFL "daughter" ;
+okosisimâw:kosis ANKININFL "son" ;
+omisimâw:mis ANKININFL "oldersister" ;
+otisânimâw:tisân ANKININFL "sister/brother" ; !Lene invented the base form
+omosômimâw:mosôm ANKININFL "grandfather" ;
+ôhkomimâw:ôhkom ANKININFL "grandmother" ; 
+onâpêmiwâw:nâpêm ANKININFL_MONOG "husband" ; !not full paradigm
+wîkimâkan:wîkimâkan ANKININFL_MONOG "spouse" ; !not full paradigm
+okâwîmâw:kâw ANKININFL_IY "mother" ;! -iy- dissappears Okimasis p. 140, !OBS -iy
+ôhtâwimâw:ôhtâw ANKININFL_IY "father" ;  !OBS -iy
 
 
 

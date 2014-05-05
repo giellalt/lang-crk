@@ -27,18 +27,18 @@ LEXICON ANDECLPROF !!= * @CODE@ Declensions for nouns taking reduced diminutive 
 +N+AN+Pl:%> AN_SUFF_PL ;
 +N+AN:%> AN_SUFF_LOC ;
 
-LEXICON IRREGULARDECL	!!= * @CODE@ is there to handle the highly irregular atim and mistatim.
+LEXICON ANIRRDECL	!!= * @CODE@ is there to handle the highly irregular atim and mistatim.
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_WAK ; !
 < "+N":0 "+AN":0 "@U.noun.abs@" >  IRREG_LOC ; ! ohk
 < "+N":0 "+AN":0 "@U.noun.abs@" >  IRREG_OBVIATIVE ; ! -wa
 +N+AN: AN_DIM_IRR_ABS ;
 
-LEXICON FAMILYINFL !!= * @CODE@ The lexicon gives a base form N+AN
+LEXICON ANKININFL !!= * @CODE@ The lexicon gives a base form N+AN
 < "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
- IRREGULARINFL ;
+ ANIRRINFL ;
 
-LEXICON FAMILYINFL_IY  !!= * @CODE@ Special treatment for nouns ending with -iy
+LEXICON ANKININFL_IY  !!= * @CODE@ Special treatment for nouns ending with -iy
 < "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
 +N+AN+Sg: AN_SUFF_SG_IY ;
 +N+AN+Pl: AN_SUFF_PL_IY ;
@@ -47,8 +47,7 @@ LEXICON FAMILYINFL_IY  !!= * @CODE@ Special treatment for nouns ending with -iy
 +N+AN:%> AN_IRREG_SUFF_LOC ; ! overgen?
 
 
-LEXICON FAMILYINFL_HALFPAR !!= * @CODE@ No bigami
-< "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
+LEXICON ANKININFL_MONOG !!= * @CODE@ No bigami
 < "+N":0 "+AN":0 "+Sg":0 "+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
 < "+N":0 "+AN":0 "+Sg":0 "+Px2Sg":%^POS                  "@U.noun.2sg@"  > SG_ ; !
 < "+N":0 "+AN":0 "+Sg":0 "+Px3Sg":%^POS                  "@U.noun.3sg@"  > OBVIATIVE ; !
@@ -60,7 +59,7 @@ LEXICON FAMILYINFL_HALFPAR !!= * @CODE@ No bigami
 < "+N":0 "+AN":0 "+Pl":0 "+Px3iPl":%^POS 0:i 0:y 0:i 0:w      "@U.noun.3isg@" >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 
 
-LEXICON IRREGULARINFL !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
+LEXICON ANIRRINFL !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
 +N+AN+Sg: AN_SUFF_SG ;
 +N+AN+Pl: AN_SUFF_PL ;
 +N+AN: AN_DIM_IRR_SG ;
