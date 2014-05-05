@@ -162,7 +162,7 @@ LEXICON AN_SUFF_SG !!= * @CODE@
 < "+Px3Pl":%^POS 0:i 0:w 0:â 0:w         "@U.noun.3pl@"  > OBVIATIVE ; !
 < "+Px3iPl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3ipl@" > OBVIATIVE ; ! obviative plural possessor - Okimasis corrected
 
-!LEXICON AN_SUFF_SG_INAL !!= * @CODE@ , see above for relation to AN_SUFF_SG
+!LEXICON AN_SUFF_SG_INAL 
 !< "+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
 !< "+Px2Sg":%^POS                  "@U.noun.2sg@"  > SG_ ; !
 !< "+Px3Sg":%^POS                  "@U.noun.3sg@"  > SG_ ; !
@@ -268,7 +268,7 @@ LEXICON ANKWDECL_SUFF_PL !!= * @CODE@
 !< "+Px3iPl":0 "@U.noun.3ipl@" > PL_waaw_AK ;
 !                               AN_SUFF_PL ;
 
-!LEXICON AN_IRREG_SUFF_SG !!= * @CODE@ 
+!LEXICON AN_IRREG_SUFF_SG 
 !< "+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
 !< "+Px2Sg":%^POS                  "@U.noun.2sg@"  > SG_ ; !
 !< "+Px3Sg":%^POS                 "@U.noun.3sg@"  > OBVIATIVE ; !The continuation lexicon adds an -a as a suffix to mark the obviative, since this is a 3-3 situation
@@ -280,7 +280,7 @@ LEXICON ANKWDECL_SUFF_PL !!= * @CODE@
 !< "+Px3iPl":%^POS 0:i 0:y 0:i 0:w   "@U.noun.3ipl@" > OBVIATIVE ; ! obviative plural possessor, requires final -a
 !
 !
-!LEXICON AN_IRREG_SUFF_PL !!= * @CODE@ 
+!LEXICON AN_IRREG_SUFF_PL
 !< "+Px1Sg":%^POS                  "@U.noun.1sg@"  >  PL_AK ; !
 !< "+Px2Sg":%^POS                  "@U.noun.2sg@"  >  PL_AK ; !
 !< "+Px3Sg":%^POS          "@U.noun.3sg@"  >  OBVIATIVE ; !
