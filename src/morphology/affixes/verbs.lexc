@@ -159,6 +159,7 @@ LEXICON IA_IND_PRT_LONG_E !!= @CODE@ gives person suffixes
 LEXICON IA_IND_LONG_E_SUBJ  !!= * @CODE@ gives flag
 @U.verb.sbjPrs@  IA_IND_LONG_E_SUBJ_SUF ;
 
+!LEXICON IA_LONG_E_SUBJ_PRT !!= @CODE@ gives person suffixes
 
 LEXICON IA_IND_LONG_E_SUBJ_SUF 
   +1Sg:%>yân  # ; 
