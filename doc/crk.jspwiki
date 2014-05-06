@@ -128,6 +128,7 @@ Nominal MSP
  * t2 		  Prefix in possessives 
 
  * ^%EGLOT    glottal stop after e, for eh- in conjunctive mood
+ * ^%EA      ê to â in 1, 2 person of ê-stems
 
 Flagdiacritics 
 
@@ -181,15 +182,9 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
  * @U.verb.indFutInt3pl@  Future Intentional 
  * @U.verb.indFutInt3opl@  Future Intentional
 
- * @U.verb.FutCon1sg@  Future Conditional
- * @U.verb.FutCon2sg@  Future Conditional
- * @U.verb.FutCon3sg@  Future Conditional
- * @U.verb.FutCon3osg@  Future Conditional
- * @U.verb.FutCon1pl@  Future Conditional
- * @U.verb.FutCon12pl@  Future Conditional
- * @U.verb.FutCon2pl@  Future Conditional
- * @U.verb.FutCon3pl@  Future Conditional
- * @U.verb.FutCon3opl@  Future Conditional
+
+ * @U.verb.FutCon@  Future Conditional
+
 
  * @U.verb.sbj@   Subjunctive (Conjunct)
  * @U.verb.fut@   Future Conditional
@@ -231,7 +226,13 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
  * Particles ;           
 
 
-
+ *  t2:0       t between prefix and vowel-initial stem
+ *  %>:0       affix boundary
+ *  %^LC:0     Locative suffix alternation trigger
+ *  %^DIM:0    Diminutive alternation trigger
+ *  %^EGLOT:0  Conjunctive êh trigger
+ *  %^POS:0    Possessive alternation trigger
+ *  %^EA:0     ê to â in 1, 2 person of ê verbs
 
 
 
@@ -306,7 +307,6 @@ __In Vow+y final stems with Diminutives, part 3: delete i in suffix __ Okimasis 
 __Diminutives rule change ending to os with k-final stems 1 __ Okimasis 2004: 14, Examples listed in 5.
 
 __Diminutives rule change ending to os with k-final stems 2 __ Okimasis 2004: 14, Examples listed in 5.
-
 
 
 
@@ -496,8 +496,8 @@ The stems
  waniskâw IACONJ "rise, get up" ;  
  micisiw IACONJ "eat" ; 
  nohtehkatew IACONJ "be hungry" ; 
- atoskêw:atosk IACONJ_LONG_E "work" ; 
- nêhiyawêw:nêhiyaw IACONJ_LONG_E "work" ; 
+ atoskêw:atoskê IACONJ "work" ;  test
+ nêhiyawêw:nêhiyawê IACONJ "work" ; 
 
  LEXICON IISTEM     = VII
 
@@ -675,10 +675,6 @@ Intransitive animate (IA)
 
  LEXICON IA_IND  gives positive and negative
 
- LEXICON IACONJ_LONG_E  !! In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
-In these final ê changes to â; they also different imperative endings; splits in 3 conjugations
-
-
 
 
 
@@ -694,24 +690,9 @@ In these final ê changes to â; they also different imperative endings; splits 
 
 
 
- LEXICON IA_IND_PRS_LONG_E  gives person suffixes
-
-
- LEXICON IA_IND_PRT_LONG_E  gives person suffixes
-
-
-
- * LEXICON IA_IND_LONG_E_SUBJ   gives flag
-
-
-
-
-
-
 
 
  LEXICON IA_SBJ  gives flag diacritics and directs to subjunctive person suffixes
-
 
 
 
