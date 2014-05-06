@@ -60,6 +60,7 @@ LEXICON ANKININFL_MONOG !!= * @CODE@ No bigami
 
 
 LEXICON ANIRRINFL !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
+!< "+N":0 "+AN":0 "@U.noun.dep@" > # ; !Base form for dep nouns
 +N+AN+Sg: AN_SUFF_SG ;
 +N+AN+Pl: AN_SUFF_PL ;
 +N+AN: AN_DIM_IRR_SG ;
@@ -97,10 +98,12 @@ LEXICON INDECLPROF !!= Declensions for nouns taking reduced diminutive at by mor
 +N+IN:%> IN_SUFF_LOC ;
 
 LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
+!< "+N":0 "+IN":0 "@U.noun.dep@" > # ; !Base form for dep nouns
 +N+IN+Sg:%> IN_SUFF_SG ;
 +N+IN+Pl:%> IN_SUFF_PL ;
 
 LEXICON INALIENABLEPOSS_SG !!= * @CODE@ inanimate possessive declension, only Sg
+!< "+N":0 "+IN":0 "@U.noun.dep@" > # ; !Base form for dep nouns
 +N+IN+Sg:%> IN_SUFF_SG ;
 
 
@@ -369,7 +372,7 @@ LEXICON LOC !!= * @CODE@
 +Loc:%>i%^LChk  # ;
 
 LEXICON IRREG_LOC !!= * @CODE@ 
-+Loc:%>ohk # ;
++Loc:%>o%^LChk # ;
 
 
 !!Obviative suffix
