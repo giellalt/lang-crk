@@ -4,12 +4,13 @@ Alphabet
  â ê î ô
  Â Ê Î Ô
  
- t2:0
- %>:0 
- %^LC:0 ! Locative suffix alternation trigger
- %^DIM:0 ! Diminutive alternation trigger
- %^EGLOT:0 ! Conjunctive êh trigger
-  %^POS:0 ! Possessive alternation trigger
+ t2:0      !!= * @CODE@ t between prefix and vowel-initial stem
+ %>:0      !!= * @CODE@ affix boundary
+ %^LC:0    !!= * @CODE@ Locative suffix alternation trigger
+ %^DIM:0   !!= * @CODE@ Diminutive alternation trigger
+ %^EGLOT:0 !!= * @CODE@ Conjunctive êh trigger
+ %^POS:0   !!= * @CODE@ Possessive alternation trigger
+ %^EA:0    !!= * @CODE@ ê to â in 1, 2 person of ê verbs
 
  ;
 
@@ -20,13 +21,12 @@ Sets
 
  LongVow = â ê î ô Â Ê Î Ô ;
  
- Cns = b c d f g h j k l m n p q r s t v w x z ;
+ Cns = b c d f g h j k l m n p q r s t v w x z  ;
  
  Nas = m n ;
- NonNas = b c d f g h j k l p q r s t v w x z ;
+ NonNas = b c d f g h j k l p q r s t v w x z  ;
 
- Dummy = %> ;
-
+ Dummy = %> %^LC %^DIM %^EGLOT %^POS %^EA ;
 
 !! !!!Rules
 
@@ -177,7 +177,8 @@ i:0 <=>  a: %>:0 _ s: %^DIM:0 ;
 !i:0 <=>	â: ( w:0 ) %>:0 _ %^LC:0 ; ! kitiskwêmiwâhk or kitiskwêsisiwâwihk  CHECK!
 
 
-
+"ee to aa rule in first and second person"
+ê:â <=> _ %>:0 %^EA:0 ;
 
 
 
