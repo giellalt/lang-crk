@@ -27,6 +27,10 @@ Sets
  NonNas = b c d f g h j k l p q r s t v w x z  ;
 
  Dummy = %> %^LC %^DIM %^EGLOT %^POS %^EA ;
+ 
+Definitions 
+ 
+ Pos = :* %^POS:0 :* ;
 
 !! !!!Rules
 
@@ -65,19 +69,22 @@ i:o <=> k %>:0 _  %^LC:0 ;
 ! first
 "locative alternations aaw 1"
 !! __@RULENAME@__ (first) : Okimasis 2004: 26, Rule 2, 8: delete i, a, o: -Vow + (w/y) + ihk
-Vx:0 <=> _ [ w: | y: ] %>:0  i: %^LC:0 ;  
+Vx:0 <=>  _ [ w: | y: ] %>:0  i: %^LC:0 ;   
+!Vx:0 <=> .#. \Pos _ [ w: | y: ] %>:0  i: %^LC:0 ;   
     where Vx in ( i a o ) ; ! cahcahkâyow > cahcahkâyôhk
-    
+      
 ! second
 "locative alternations aaw 2"
 !! __@RULENAME@__ (second) : Okimasis 2004: 26, Rule 2: delete w / y
 Cx:0 <=> [ a: | i: | o: ] _  %>:0  i: %^LC:0 ;  ! cahcahkâyow > cahcahkâyôhk
+!Cx:0 <=> .#. \Pos [ a: | i: | o: ] _  %>:0  i: %^LC:0 ;  
     where Cx in ( w y ) ;
 
 ! third
 "locative alternations aaw 3a"
 !! __@RULENAME@__ (third) : Okimasis 2004: 26, Rule 2: -âhk
-i:â <=> [ ô | ê | a: ] [ w: | y: ]  %>:0  _ %^LC:0 ; 
+i:â <=>  [ ô | ê | a: ] [ w: | y: ]  %>:0  _ %^LC:0 ; 
+!i:â <=>  .#. \Pos [ ô | ê | a: ] [ w: | y: ]  %>:0  _ %^LC:0 ; 
 
 "locative alternation iihk 3i"
 !! __@RULENAME@__  Okimasis 2004: 26, Rule 3: -îhk
@@ -94,7 +101,7 @@ i:ô <=> o: [ y: | w: ]  %>:0  _ %^LC:0  ;
                                     
 "locative alternation naahk 1"		
 !! __@RULENAME@__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
-w:n <=> [ê|ô] _  %>:0 i: %^LC:0  ;
+w:n <=> [ ê | ô ] _  %>:0 i: %^LC:0  ;
 
 !"Double i-vowel with locatives"
 !!i:0 <=> Vow %> _ %^LC:0  ;
@@ -105,13 +112,14 @@ w:n <=> [ê|ô] _  %>:0 i: %^LC:0  ;
 t2:t <=> _ %>:0 Vow ;
 
 "-Vw:m alternation in front of possessive suffixes"
-!! __@RULENAME@__ -Vw:m alternation in front of possessive suffixes 
+!! __@RULENAME@__ -Vw:m alternation in front of possessive suffixes, Okimasis p. 136
 w:m <=> Vow - a _ %>:0  %^POS:0  ; ! iskwêw nitiskwêm
  
 "wis:os in possessive prefix, step 1"
 !! __@RULENAME@__ wis:os in possessive prefix, step 1. Okimasis p. 138 ! 
 w:0 <=> .#. _  i:o s :* %>:0  %^POS:0  ; 
- 
+      
+    
 "wis:os in possessive prefix, step 2"
 !! __@RULENAME@__ wis:os in possessive prefix, step 2. Okimasis p. 138 ! 
 i:o <=> .#. w:0 _ s :* %>:0  %^POS:0  ; ! get both wis- and os- !
@@ -174,7 +182,7 @@ i:0 <=>  a: %>:0 _ s: %^DIM:0 ;
 
 
 !"Remove locative i when poss -wâ"
-!i:0 <=>	â: ( w:0 ) %>:0 _ %^LC:0 ; ! kitiskwêmiwâhk or kitiskwêsisiwâwihk  CHECK!
+!i:0 <=> â: ( w:0 ) %>:0 _ %^LC:0 ; ! kitiskwêmiwâhk or kitiskwêsisiwâwihk  CHECK!
 
 
 "ee to aa rule in first and second person"
