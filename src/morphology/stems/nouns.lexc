@@ -53,7 +53,7 @@ LEXICON IRREGAN
 
 @U.noun.abs@ IRREGANSTEMSLIST ; 
 
-
+!< 0:m 0:i "@U.noun.dep@"  > IRREGANSTEMS ; ! base-form for dep nouns
 < 0:n 0:i "@U.noun.1sg@" >  IRREGANSTEMS ; ! 1
 < 0:k 0:i "@U.noun.2sg@" >  IRREGANSTEMS ; ! 2
 < 0:o     "@U.noun.3sg@" >  IRREGANSTEMS ; ! 3
@@ -87,7 +87,7 @@ LEXICON INALIENABLE
 !! @LEXNAME@ redirects to INALIENABLESTEMS
 
 < "@U.noun.abs@" >  INALIENABLESTEMS ; 
-
+!< 0:m "@U.noun.dep@"  > INALIENABLESTEMS ; ! base form for dep nouns
 < 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
 < 0:w    "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
@@ -218,6 +218,7 @@ otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
 otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
 mîpit:îpit INALIENABLEPOSS "tooth" ;
 mikiwâhp:iki INALIENABLEPOSS_SG "home" ;
+mikiwâhp+N+IN:mikiwâhp # ;
 mahkwan:ahkwan INALIENABLEPOSS "heel" ;
 mispiton:ispiton INALIENABLEPOSS "arm" ; !o- in stead of w-
 
