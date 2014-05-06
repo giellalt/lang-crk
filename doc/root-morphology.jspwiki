@@ -117,6 +117,7 @@ Nominal MSP
  * t2 		  Prefix in possessives 
 
  * ^%EGLOT    glottal stop after e, for eh- in conjunctive mood
+ * ^%EA      ê to â in 1, 2 person of ê-stems
 
 Flagdiacritics 
 
@@ -170,15 +171,9 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
  * @U.verb.indFutInt3pl@  Future Intentional 
  * @U.verb.indFutInt3opl@  Future Intentional
 
- * @U.verb.FutCon1sg@  Future Conditional
- * @U.verb.FutCon2sg@  Future Conditional
- * @U.verb.FutCon3sg@  Future Conditional
- * @U.verb.FutCon3osg@  Future Conditional
- * @U.verb.FutCon1pl@  Future Conditional
- * @U.verb.FutCon12pl@  Future Conditional
- * @U.verb.FutCon2pl@  Future Conditional
- * @U.verb.FutCon3pl@  Future Conditional
- * @U.verb.FutCon3opl@  Future Conditional
+
+ * @U.verb.FutCon@  Future Conditional
+
 
  * @U.verb.sbj@   Subjunctive (Conjunct)
  * @U.verb.fut@   Future Conditional
