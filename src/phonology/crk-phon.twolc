@@ -66,12 +66,12 @@ i:o <=> k %>:0 _  %^LC:0 ;
 "locative alternations aaw 1"
 !! __@RULENAME@__ (first) : Okimasis 2004: 26, Rule 2, 8: delete i, a, o: -Vow + (w/y) + ihk
 Vx:0 <=> _ [ w: | y: ] %>:0  i: %^LC:0 ;  
-    where Vx in ( i a ) ; !Lene: removed o
+    where Vx in ( i a o ) ; ! cahcahkâyow > cahcahkâyôhk
     
 ! second
 "locative alternations aaw 2"
 !! __@RULENAME@__ (second) : Okimasis 2004: 26, Rule 2: delete w / y
-Cx:0 <=> [ a: | i: ] _  %>:0  i: %^LC:0 ;  ! Lene: removed o:
+Cx:0 <=> [ a: | i: | o: ] _  %>:0  i: %^LC:0 ;  ! cahcahkâyow > cahcahkâyôhk
     where Cx in ( w y ) ;
 
 ! third
@@ -85,11 +85,12 @@ i:î <=> i: y:  %>:0  _ %^LC:0  ;
 
 "locative alternation oohk io"
 !! __@RULENAME@__ Okimasis 2004: 26, Rule 4: -ôhk
-i:ô <=> o: y:  %>:0  _ %^LC:0  ;          
+i:ô <=> o: [ y: | w: ]  %>:0  _ %^LC:0  ;          
                                     !change the suffix initial i to a long o 
 									!e.g. mîcimâpoy > mîcimâpoyôhk
                                     !then delete y in second
                                     !then delete o in first
+                                    ! cahcahkâyow > cahcahkâyôhk
                                     
 "locative alternation naahk 1"		
 !! __@RULENAME@__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
