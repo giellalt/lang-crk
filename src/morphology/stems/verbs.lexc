@@ -104,7 +104,7 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 
 
 LEXICON IA_FUTURE_CONDITIONAL
-@U.verb.FutCon@ IALIST ;
+< "@U.verb.FutCon@" > IALIST ;
 
 !@U.verb.FutCon1sg@ IALIST ;
 !@U.verb.FutCon2sg@ IALIST ;
@@ -206,9 +206,9 @@ mîciso IACONJ "sleep" ; !!= @CODE@ Variation in length of first vowel, here fol
 waniskâw IACONJ "rise, get up" ; !!= @CODE@ 
 micisiw IACONJ "eat" ; !!= @CODE@
 nohtehkatew IACONJ "be hungry" ; !!= @CODE@
-atoskêw:atosk IACONJ_LONG_E "work" ; !!= @CODE@
+atoskêw:atoskê IACONJ "work" ; !!= @CODE@ test
 akwahow:akwaho IACONJ "to cover oneself" ; ! Source: Wolvengrey dictionary
-nêhiyawêw:nêhiyaw IACONJ_LONG_E "work" ; !!= @CODE@
+nêhiyawêw:nêhiyawê IACONJ "work" ; !!= @CODE@
 
 LEXICON IISTEM   !!= @CODE@  = VII
 mispon IICONJ "it is snowing" ;
