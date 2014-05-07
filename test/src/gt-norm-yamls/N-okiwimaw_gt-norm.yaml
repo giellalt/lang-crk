@@ -1,0 +1,72 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - okâwîmâw - ok : # -m dep. animate noun, mother, poss.paradigm Okimasis p 140
+
+     okâwîmâw+N+AN+Sg+Px1Sg: nikâwiy
+     okâwîmâw+N+AN+Sg+Px2Sg: kikâwiy
+     okâwîmâw+N+AN+Sg+Px3Sg+Obv: okâwiya
+     okâwîmâw+N+AN+Sg+Px3iSg+Obv: okâwiyiwa
+     okâwîmâw+N+AN+Sg+Px1Pl: nikâwinân
+     okâwîmâw+N+AN+Sg+Px12Pl: kikâwinaw
+     okâwîmâw+N+AN+Sg+Px2Pl: kikâwiwâw
+     okâwîmâw+N+AN+Sg+Px3Pl+Obv: okâwiwâwa
+     okâwîmâw+N+AN+Sg+Px3iPl+Obv: okâwiyiwa
+
+     okâwîmâw+N+AN+Pl+Px1Sg: nikâwiyak
+     okâwîmâw+N+AN+Pl+Px2Sg: kikâwiyak
+     okâwîmâw+N+AN+Pl+Px3Sg+Obv: okâwiya
+     okâwîmâw+N+AN+Pl+Px3iSg+Obv: okâwiyiwa
+     okâwîmâw+N+AN+Pl+Px1Pl: nikâwinânak
+     okâwîmâw+N+AN+Pl+Px12Pl: kikâwinawak
+     okâwîmâw+N+AN+Pl+Px2Pl: kikâwiwâwak
+     okâwîmâw+N+AN+Pl+Px3Pl+Obv: okâwiwâwa
+     okâwîmâw+N+AN+Pl+Px3iPl+Obv: okâwiyiwa
+
+     okâwîmâw+N+AN+Dim+Sg+Px1Sg: nikâwisis
+     okâwîmâw+N+AN+Dim+Sg+Px2Sg: kikâwisis
+     okâwîmâw+N+AN+Dim+Sg+Px3Sg+Obv: okâwisisa
+     okâwîmâw+N+AN+Dim+Sg+Px3iSg+Obv: okâwisisiyiwa
+     okâwîmâw+N+AN+Dim+Sg+Px1Pl: nikâwisisinân
+     okâwîmâw+N+AN+Dim+Sg+Px12Pl: kikâwisisinaw
+     okâwîmâw+N+AN+Dim+Sg+Px2Pl: kikâwisisiwâw
+     okâwîmâw+N+AN+Dim+Sg+Px3Pl+Obv: okâwisisiwâwa
+     okâwîmâw+N+AN+Dim+Sg+Px3iPl+Obv: okâwisisiyiwa
+
+     okâwîmâw+N+AN+Dim+Pl+Px1Sg: nikâwisisak
+     okâwîmâw+N+AN+Dim+Pl+Px2Sg: kikâwisisak
+     okâwîmâw+N+AN+Dim+Pl+Px3Sg+Obv: okâwisisa
+     okâwîmâw+N+AN+Dim+Pl+Px3iSg+Obv: okâwisisiyiwa
+     okâwîmâw+N+AN+Dim+Pl+Px1Pl: nikâwisisinânak
+     okâwîmâw+N+AN+Dim+Pl+Px12Pl: kikâwisisinawak
+     okâwîmâw+N+AN+Dim+Pl+Px2Pl: kikâwisisiwâwak
+     okâwîmâw+N+AN+Dim+Pl+Px3Pl+Obv: okâwisisiwâwa
+     okâwîmâw+N+AN+Dim+Pl+Px3iPl+Obv: okâwisisiyiwa
+
+     okâwîmâw+N+AN+Px1Sg+Loc: nikâmihk
+     okâwîmâw+N+AN+Px2Sg+Loc: kikâmihk
+     okâwîmâw+N+AN+Px3Sg+Loc: okâmihk
+     okâwîmâw+N+AN+Px3iSg+Loc: okâmiyihk
+     okâwîmâw+N+AN+Px1Pl+Loc: nikâminânihk
+     okâwîmâw+N+AN+Px12Pl+Loc: kikâminâhk
+     okâwîmâw+N+AN+Px2Pl+Loc: kikâmiwâwihk
+     okâwîmâw+N+AN+Px3Pl+Loc: okâmiwâwihk
+     okâwîmâw+N+AN+Px3iPl+Loc: okâmiyihk
+
+     okâwîmâw+N+AN+Dim+Px1Sg+Loc: nikâwisisihk
+     okâwîmâw+N+AN+Dim+Px2Sg+Loc: kikâwisisihk
+     okâwîmâw+N+AN+Dim+Px3Sg+Loc: okâwisisihk
+     okâwîmâw+N+AN+Dim+Px3iSg+Loc: okâwisisiyihk
+     okâwîmâw+N+AN+Dim+Px1Pl+Loc: nikâwisisinânihk
+     okâwîmâw+N+AN+Dim+Px12Pl+Loc: kikâwisisinâhk
+     okâwîmâw+N+AN+Dim+Px2Pl+Loc: kikâwisisiwâwihk
+     okâwîmâw+N+AN+Dim+Px3Pl+Loc: okâwisisiwâwihk
+     okâwîmâw+N+AN+Dim+Px3iPl+Loc: okâwisisiyihk
