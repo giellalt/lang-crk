@@ -470,7 +470,7 @@ Intransitive animate
 
 Intransitive inanimate
 
-These have no prefixes, so we go directly to the __IISTEM__ lexicon.
+
 
 
 
@@ -505,8 +505,11 @@ The stems
  atoskêw:atoskê IACONJ "work" ;  test
  nêhiyawêw:nêhiyawê IACONJ "work" ; 
 
- LEXICON IISTEM     = VII
 
+
+
+
+ LEXICON IISTEM     = VII
 
  LEXICON TASTEM    = VTA
 
@@ -740,13 +743,10 @@ Intransitive inanimate (II)
 
  LEXICON IICONJ   splits according to conjugation
 
+
+
  LEXICON II_IND_PRS    is positive present
 
- LEXICON II_NEG_IND_PRS   is negative present
-
- LEXICON II_SBJ    is positive subjunctive
-
- LEXICON II_NEG_SBJ    is negative subjunctive
 
 
 Transitive animate (TA)
