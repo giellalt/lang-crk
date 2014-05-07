@@ -1,0 +1,80 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - okimâw - ok : # -m animate noun, chief, poss.paradigm Okimasis p 135
+
+     okimâw+N+AN+Sg: okimâw
+     okimâw+N+AN+Pl: okimâwak
+     okimâw+N+AN+Loc: okimâwihk
+     okimâw+N+AN+Obv: okimâwa
+     okimâw+N+AN+Dim+Sg: okimâisis
+     okimâw+N+AN+Dim+Pl: okimâisisak
+     okimâw+N+AN+Dim+Loc: okimâisisihk
+     
+     okimâw+N+AN+Sg+Px1Sg: nitôkimâm
+     okimâw+N+AN+Sg+Px2Sg: kitôkimâm
+     okimâw+N+AN+Sg+Px3Sg+Obv: otôkimâma
+     okimâw+N+AN+Sg+Px3iSg+Obv: otôkimâmiyiwa
+     okimâw+N+AN+Sg+Px1Pl: nitôkimâminân
+     okimâw+N+AN+Sg+Px12Pl: kitôkimâminaw
+     okimâw+N+AN+Sg+Px2Pl: kitôkimâmiwâw
+     okimâw+N+AN+Sg+Px3Pl+Obv: otôkimâmiwâwa
+     okimâw+N+AN+Sg+Px3iPl+Obv: otôkimâmiyiwa
+     
+     okimâw+N+AN+Pl+Px1Sg: nitôkimâmak
+     okimâw+N+AN+Pl+Px2Sg: kitôkimâmak
+     okimâw+N+AN+Pl+Px3Sg+Obv: otôkimâma
+     okimâw+N+AN+Pl+Px3iSg+Obv: otôkimâmiyiwa
+     okimâw+N+AN+Pl+Px1Pl: nitôkimâminânak
+     okimâw+N+AN+Pl+Px12Pl: kitôkimâminawak
+     okimâw+N+AN+Pl+Px2Pl: kitôkimâmiwâwak
+     okimâw+N+AN+Pl+Px3Pl+Obv: otôkimâmiwâwa
+     okimâw+N+AN+Pl+Px3iPl+Obv: otôkimâmiyiwa
+     
+     okimâw+N+AN+Dim+Sg+Px1Sg: nitokimâisis
+     okimâw+N+AN+Dim+Sg+Px2Sg: kitokimâisis
+     okimâw+N+AN+Dim+Sg+Px3Sg+Obv: otokimâisisa
+     okimâw+N+AN+Dim+Sg+Px3iSg+Obv: otokimâisisiyiwa
+     okimâw+N+AN+Dim+Sg+Px1Pl: nitokimâisisinân
+     okimâw+N+AN+Dim+Sg+Px12Pl: kitokimâisisinaw
+     okimâw+N+AN+Dim+Sg+Px2Pl: kitokimâisisiwâw
+     okimâw+N+AN+Dim+Sg+Px3Pl+Obv: otokimâisisiwâwa
+     okimâw+N+AN+Dim+Sg+Px3iPl+Obv: otokimâisisiyiwa
+     
+     okimâw+N+AN+Dim+Pl+Px1Sg: nitokimâisisak
+     okimâw+N+AN+Dim+Pl+Px2Sg: kitokimâisisak
+     okimâw+N+AN+Dim+Pl+Px3Sg+Obv: otokimâisisa
+     okimâw+N+AN+Dim+Pl+Px3iSg+Obv: otokimâisisiyiwa
+     okimâw+N+AN+Dim+Pl+Px1Pl: nitokimâisisinânak
+     okimâw+N+AN+Dim+Pl+Px12Pl: kitokimâisisinawak
+     okimâw+N+AN+Dim+Pl+Px2Pl: kitokimâisisiwâwak
+     okimâw+N+AN+Dim+Pl+Px3Pl+Obv: otokimâisisiwâwa
+     okimâw+N+AN+Dim+Pl+Px3iPl+Obv: otokimâisisiyiwa
+     
+     okimâw+N+AN+Px1Sg+Loc: nitokimâmihk
+     okimâw+N+AN+Px2Sg+Loc: kitokimâmihk
+     okimâw+N+AN+Px3Sg+Loc: otokimâmihk
+     okimâw+N+AN+Px3iSg+Loc: otokimâmiyihk
+     okimâw+N+AN+Px1Pl+Loc: nitokimâminânihk
+     okimâw+N+AN+Px12Pl+Loc: kitokimâminâhk
+     okimâw+N+AN+Px2Pl+Loc: kitokimâmiwâwihk
+     okimâw+N+AN+Px3Pl+Loc: otokimâmiwâwihk
+     okimâw+N+AN+Px3iPl+Loc: otokimâmiyihk
+     
+     okimâw+N+AN+Dim+Px1Sg+Loc: nitokimâisisihk
+     okimâw+N+AN+Dim+Px2Sg+Loc: kitokimâisisihk
+     okimâw+N+AN+Dim+Px3Sg+Loc: otokimâisisihk
+     okimâw+N+AN+Dim+Px3iSg+Loc: otokimâisisiyihk
+     okimâw+N+AN+Dim+Px1Pl+Loc: nitokimâisisinânihk
+     okimâw+N+AN+Dim+Px12Pl+Loc: kitokimâisisinâhk
+     okimâw+N+AN+Dim+Px2Pl+Loc: kitokimâisisiwâwihk
+     okimâw+N+AN+Dim+Px3Pl+Loc: otokimâisisiwâwihk
+     okimâw+N+AN+Dim+Px3iPl+Loc: otokimâisisiyihk

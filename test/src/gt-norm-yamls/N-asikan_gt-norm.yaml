@@ -1,0 +1,81 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - asikan - ok : # -m animate noun, sock paradigm from Okisis p. 133
+     asikan+N+AN+Sg: asikan
+     asikan+N+AN+Pl: asikanak
+     asikan+N+AN+Loc: asikanihk
+     asikan+N+AN+Obv: asikana
+     asikan+N+AN+Dim+Sg: asikanisis
+     asikan+N+AN+Dim+Pl: asikanisisak
+     asikan+N+AN+Dim+Loc: asikanisisihk
+          
+     asikan+N+AN+Sg+Px1Sg: nitasikan
+     asikan+N+AN+Sg+Px2Sg: kitasikan
+     asikan+N+AN+Sg+Px3Sg+Obv: otasikana
+     asikan+N+AN+Sg+Px3iSg+Obv: otasikaniyiwa
+     asikan+N+AN+Sg+Px1Pl: nitasikaninân
+     asikan+N+AN+Sg+Px12Pl: kitasikaninaw
+     asikan+N+AN+Sg+Px2Pl: kitasikaniwâw
+     asikan+N+AN+Sg+Px3Pl+Obv: otasikaniwâwa
+     asikan+N+AN+Sg+Px3iPl+Obv: otasikaniyiwa
+          
+     asikan+N+AN+Pl+Px1Sg: nitasikanak
+     asikan+N+AN+Pl+Px2Sg: kitasikanak
+     asikan+N+AN+Pl+Px3Sg+Obv: otasikana
+     asikan+N+AN+Pl+Px3iSg+Obv: otasikaniyiwa
+     asikan+N+AN+Pl+Px1Pl: nitasikaninânak
+     asikan+N+AN+Pl+Px12Pl: kitasikaninawak
+     asikan+N+AN+Pl+Px2Pl: kitasikaniwâwak
+     asikan+N+AN+Pl+Px3Pl+Obv: otasikaniwâwa
+     asikan+N+AN+Pl+Px3iPl+Obv: otasikaniyiwa
+     
+     asikan+N+AN+Dim+Sg+Px1Sg: nitasikanisis
+     asikan+N+AN+Dim+Sg+Px2Sg: kitasikanisis
+     asikan+N+AN+Dim+Sg+Px3Sg+Obv: otasikanisisa
+     asikan+N+AN+Dim+Sg+Px3iSg+Obv: otasikanisisiyiwa
+     asikan+N+AN+Dim+Sg+Px1Pl: nitasikanisisinân
+     asikan+N+AN+Dim+Sg+Px12Pl: kitasikanisisinaw
+     asikan+N+AN+Dim+Sg+Px2Pl: kitasikanisisiwâw
+     asikan+N+AN+Dim+Sg+Px3Pl+Obv: otasikanisisiwâwa
+     asikan+N+AN+Dim+Sg+Px3iPl+Obv: otasikanisisiyiwa
+
+     asikan+N+AN+Dim+Pl+Px1Sg: nitasikanisisak
+     asikan+N+AN+Dim+Pl+Px2Sg: kitasikanisisak
+     asikan+N+AN+Dim+Pl+Px3Sg+Obv: otasikanisisa
+     asikan+N+AN+Dim+Pl+Px3iSg+Obv: otasikanisisiyiwa
+     asikan+N+AN+Dim+Pl+Px1Pl: nitasikanisisinânak
+     asikan+N+AN+Dim+Pl+Px12Pl: kitasikanisisinawak
+     asikan+N+AN+Dim+Pl+Px2Pl: kitasikanisisiwâwak
+     asikan+N+AN+Dim+Pl+Px3Pl+Obv: otasikanisisiwâwa
+     asikan+N+AN+Dim+Pl+Px3iPl+Obv: otasikanisisiyiwa
+     
+     asikan+N+AN+Px1Sg+Loc: nitasikanihk
+     asikan+N+AN+Px2Sg+Loc: kitasikanihk
+     asikan+N+AN+Px3Sg+Loc: otasikanihk
+     asikan+N+AN+Px3iSg+Loc: otasikaniyihk
+     asikan+N+AN+Px1Pl+Loc: nitasikaninânihk
+     asikan+N+AN+Px12Pl+Loc: kitasikaninâhk
+     asikan+N+AN+Px2Pl+Loc: kitasikaniwâwihk
+     asikan+N+AN+Px3Pl+Loc: otasikaniwâwihk
+     asikan+N+AN+Px3iPl+Loc: otasikaniyihk
+
+     asikan+N+AN+Dim+Px1Sg+Loc: nitasikanisisihk
+     asikan+N+AN+Dim+Px2Sg+Loc: kitasikanisisihk
+     asikan+N+AN+Dim+Px3Sg+Loc: otasikanisisihk
+     asikan+N+AN+Dim+Px3iSg+Loc: otasikanisisiyihk
+     asikan+N+AN+Dim+Px1Pl+Loc: nitasikanisisinânihk
+     asikan+N+AN+Dim+Px12Pl+Loc: kitasikanisisinâhk
+     asikan+N+AN+Dim+Px2Pl+Loc: kitasikanisisiwâwihk
+     asikan+N+AN+Dim+Px3Pl+Loc: otasikanisisiwâwihk
+     asikan+N+AN+Dim+Px3iPl+Loc: otasikanisisiyihk
+
+     
