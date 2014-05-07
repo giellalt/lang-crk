@@ -140,9 +140,9 @@ maskwa ANDECL "bear" ; ! maskwak
 maskwa+Dim:maskosis ANDECLPROF "little moose" ;
 mâyatihk ANDECL "bighorn sheep" ;	
 mâyatihk+Dim:mâyacihkos ANDECLPROF "little bighorn sheep" ;	
-minôs ANDECL "cat" ; !minôsis
-minôs+Dim:minôsis ANDECLPROF "little cat" ;	
-mostos ANDECL "cow" ;	!grammar guide: pl is mostoswak. Move to IRREGANSTEMSLIST?
+minôs ANDECL "cat" ; !
+minôs+Dim:minôsis ANDECLPROF "little cat" ;	!minôsisis GG p 17
+mostos ANDECL "cow" ;	!GG p 16: pl is mostoswak. Move to IRREGANSTEMSLIST?
 mostos+Dim:mostosis ANDECLPROF "little cow" ;	
 môswa ANDECL "moose" ; ! môswak	
 môswa+Dim:môsos ANDECLPROF "little moose" ; 
@@ -152,8 +152,9 @@ nehiyaw ANDECL "Cree Person" ;
 niska ANDECL "Canada goose" ; !yaml
 ôhôw ANDECL "owl" ; !yaml
 okistatowân ANDECL "grizzly bear" ; ! okistatowânak	
-okistatowân+Dim:okiscacowânis ANDECLPROF "little grizzly bear" ; ! okistatowânak	
+okistatowân+Dim:okiscacowânis ANDECLPROF "little grizzly bear" ; ! okistatowânak
 oskâtâsk ANDECL "carrot" ;	
+sônîyâw ANDECL "money" ;
 oskâtâsk+Dim:oskâcâskos ANDECLPROF "little carrot" ;	
 pisiw ANDECL "cougar" ;
 sihkihp ANDECL "boil, carbuncle" ; !yaml
@@ -167,18 +168,23 @@ wâpask+Dim:wâpaskos ANDECLPROF "little polar bear" ; ! wâpaskwak
 wâwaskesiw ANDECL "elk" ;
 wayasit ANDECL "hoof" ; !yaml !possibly -is in Dim
 mistatim+Dim:miscacimosis ANDECLPROF ;
+pîsim ANDECL "month, sun" ;
+okimâw ANDECL "boss" ;
+pahkwêsikan ANIMDECL "bannock" ; ! exstra -im in poss
 
 LEXICON IRREGANSTEMS
  :%> IRREGANSTEMSLIST ;
  :%> KINSTEMLIST ;
 
-LEXICON IRREGANSTEMSLIST
-atim ANIRRDECL "dog" ; !yaml
+LEXICON IRREGANSTEMSLIST 
+atim ANIRRDECL "dog" ; ! -wak, -ohk, -wa !yaml  
 atim:têm ANIRRINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 mistatim ANIRRDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
 mistatim:têm ANIRRINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
 mitâs:tâs ANIRRINFL "pants" ;
 mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
+mostos ANIRRDECL "cow" ;
+mostos:stos ANIRRDECL "cow" ; !ostos?
 
 LEXICON KINSTEMLIST
 otânisimâw:tânis ANKININFL "daughter" ;
@@ -187,7 +193,6 @@ omisimâw:mis ANKININFL "older sister" ;
 otisânimâw:tisân ANKININFL "sister/brother" ; !Lene invented the base form
 omosômimâw:mosôm ANKININFL "grandfather" ;
 ôhkomimâw:ôhkom ANKININFL "grandmother" ; 
-
 nikâwis:kâwis ANKININFL "mother's sister" ;
 nisis:sis ANKININFL "mother's brother" ;
 nikosis:kosis ANKININFL "father's sister" ;
@@ -199,9 +204,6 @@ niscâs:scâs ANKININFL "cousin/brother in law" ;
 nîcimos:cimos ANKININFL "mother's brother's son" ;
 nicâhkos:câhkos ANKININFL "cousin/sister in law" ;
 nôsisim:ôsisim ANKININFL "grandchild" ;
-
-
-
 onâpêmiwâw:nâpêm ANKININFL_MONOG "husband" ;
 wîkimâkan:wîkimâkan ANKININFL_MONOG "spouse" ; 
 okâwîmâw:kâw ANKININFL_IY "mother" ;! -iy- dissappears Okimasis p. 140, 
@@ -218,10 +220,11 @@ LEXICON ANSTEMS_kw
 LEXICON ANSTEMLIST_kw				
 !!These nouns take an additional suffix in the
 !! possessive paradigm
-wâposw ANKWDECL ;
-amiskw ANKWDECL ;
-mistikw ANKWDECL ;
-askihkw ANKWDECL ;
+wâposw:wâpos ANKWDECL "rabbit" ; !how is plural -kwak?
+amiskw:amisk ANKWDECL "beaver" ;
+mistikw:mistik ANKWDECL "stick" ;
+askihkw:askihk ANKWDECL "pail" ;
+mahkahkw:mahkahk ANKWDECL "tub/barrel" ;
 
 
 !! !Inanimate Nouns
@@ -229,13 +232,19 @@ askihkw ANKWDECL ;
 
 LEXICON INALIENABLESTEMS  ! dependent nouns
 maniway:aniway INALIENABLEPOSS ; !"someone's cheek" !yaml
-otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
-otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
+!otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
+!otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
+otehye:otehye INALIENABLEPOSS ;  ! this gives wotehye
 mîpit:îpit INALIENABLEPOSS "tooth" ;
 mikiwâhp:iki INALIENABLEPOSS_SG "home" ;
 mikiwâhp+N+IN:mikiwâhp # ;
 mahkwan:ahkwan INALIENABLEPOSS "heel" ;
 mispiton:ispiton INALIENABLEPOSS "arm" ; !o- in stead of w-
+micihciy:icihciy INALIENABLEPOSS "hand" ; !OBS -iy New lexicon?
+micihciy+Dim:icihcîsis INALIENABLEPOSS "small hand" ; 
+mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
+
+
 
 LEXICON INSTEMS
  :%> INSTEMLIST ;
@@ -268,6 +277,9 @@ wiyâkan+Dim:wiyâkanis INDECLPROF "bowl" ;
 kîkisepâ INDECL "morning" ;
 ôsi INDECL "canoe" ; !yaml
 atâwewikamik INDECL "store" ;
+atâwewikamik+Dim:atâwewikamikosis INDECLPROF "small store" ;
+ôtenaw INDECL "city" ;
+ôtenaw+Dim:ocenâsis INDECLPROF "town" ;
 
 
 ! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
