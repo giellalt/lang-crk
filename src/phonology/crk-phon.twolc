@@ -38,15 +38,16 @@ Definitions
 Rules
 
 "h glottal stop for initial vowel stems in Conjunctive"
+!! __@RULENAME@__
 %^EGLOT:h <=> _ :Vow ;
 
 "Suffix vowel deletion in vowel final stems" 
-!! __@RULENAME@__ deletes stem vowel in vowel final stems 
+!! __@RULENAME@__
 Vx:0 <=> _ %>:0 ( %^POS:0 ) ( %>:0 ) Vow ;
 	where Vx in ( a e o â ê î ô ) ; 
 
 "i deletion in vowel final stems"
-!! __@RULENAME@__ deletes i in vowel final stems 
+!! __@RULENAME@__ 
 i:0 <=> _ %>:0 %>:0 i ;
         _ %>:0 ( %^POS:0 ) ( %>:0 ) Vow ;
 
@@ -59,7 +60,7 @@ i:0 <=> _ %>:0 %>:0 i ;
  
  
 !"Stem Final n" 
-! __@RULENAME@__  This rule is applying in places where it should not. The usefulness of this rule needs to be rethought before it is re-isntated
+!! __@RULENAME@__  This rule is applying in places where it should not. The usefulness of this rule needs to be rethought before it is re-isntated
 !n:0 <=> _ %>:0 Cns ; 
 
 
@@ -116,27 +117,32 @@ t2:t <=> _ %>:0 Vow ;
 !! __@RULENAME@__ 
 i2:o <=> k _ m %>:0 %^POS:0  ;
 
+"i2:i in possessive element"
+!! __@RULENAME@__ 
+i2:i <=> [ n | s | p ] _ m %>:0  ;
+
+
 "i2:0 in possessive element"
 !! __@RULENAME@__ 
-i2:0 <=> [ â | ô ] w _ m %>:0 %^POS:0  ;
+i2:0 <=> [ â | ô ] w _ m %>:0 %^POS:0  ; ! possessive element, doesn't work yet
 
 
 "-Vw:m alternation in front of possessive suffixes"
-!! __@RULENAME@__ -Vw:m alternation in front of possessive suffixes, Okimasis p. 136
+!! __@RULENAME@__ , Okimasis p. 136
 w:m <=> Vow - a _ %>:0  %^POS:0  ; ! iskwêw nitiskwêm
  
 "o:oo- alternation initially in possessive forms"
-!! __@RULENAME@__ o:oo- alternation initially in possessive forms, Okimasis p. 135
+!! __@RULENAME@__ , Okimasis p. 135
 o:ô <=> %>:0 _ k :*  w:m %>:0  %^POS:0  ; ! okimâw:niôkimâm ! first only in front of k
   		_ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ;
  
 "wis:os in possessive prefix, step 1"
-!! __@RULENAME@__ wis:os in possessive prefix, step 1. Okimasis p. 138 ! 
+!! __@RULENAME@__ , step 1. Okimasis p. 138 ! 
 w:0 <=> .#. _  i:o s :* %>:0  %^POS:0  ; 
-	     .#. \Pos [ â | ô ] _ i2:0 m %>:0  %^POS:0  ; ! possessive element, doesn't work yet
+!	     .#. \Pos [ â | ô ] _ i2:0 m %>:0  %^POS:0  ; ! possessive element, doesn't work yet
     
 "wis:os in possessive prefix, step 2"
-!! __@RULENAME@__ wis:os in possessive prefix, step 2. Okimasis p. 138 ! 
+!! __@RULENAME@__ , step 2. Okimasis p. 138 ! 
 i:o <=> .#. w:0 _ s :* %>:0  %^POS:0  ; ! get both wis- and os- !
  
  
@@ -152,7 +158,6 @@ Cx:0 <=> _ %>:0 Cx ;
 	where Cx in Cns ;
 
 !"Double vowel deletion" "Suffix vowel deletion in vowel final stems"
-!!! __@RULENAME@__ 
 !Vx:0 <=> _ %>:0 Vx ;
 !	where Vx in Vow ;
 
@@ -171,7 +176,6 @@ y:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 "In Vow+w final stems with Diminutives, part 1: delete y" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 w:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
-!	   .#. \Pos [ â | ô ] _ i2:0 m %>:0  %^POS:0  ; ! possessive element, doesn't work yet
 
 "In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
@@ -196,6 +200,7 @@ s:0 <=> k %>:0 _ %^DIM:0 ;
 i:o <=> k %>:0 _ s: %^DIM:0 ;
 
 "Diminutives rule change ending delete i with nouns ending in kwa"
+!! __@RULENAME@__
 i:0 <=>  a: %>:0 _ s: %^DIM:0 ;
 
 
@@ -204,6 +209,7 @@ i:0 <=>  a: %>:0 _ s: %^DIM:0 ;
 
 
 "ee to aa rule in first and second person"
+!! __@RULENAME@__
 ê:â <=> _ %>:0 %^EA:0 ;
 
 
