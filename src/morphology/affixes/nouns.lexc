@@ -5,19 +5,20 @@
 
 !! !!The declinations for Animates
 
-LEXICON ANIMDECL !!= * @CODE@ for the animate declension, extra -im in poss Okimasis p. 134
+LEXICON ANIMDECL !!= * @CODE@ for the animate declension, possessive element Okimasis p. 134
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
 < "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; !
-+N+AN+Sg:im%> AN_SUFF_SG ;
-+N+AN+Pl:im%> AN_SUFF_PL ;
++N+AN+Sg:i2m%> AN_SUFF_SG ;
++N+AN+Pl:i2m%> AN_SUFF_PL ;
 +N+AN:%> AN_DIM_IS_SG ;
 +N+AN:%> AN_DIM_IS_PL ;
-+N+AN:im%> AN_DIM_IS_SUFF_SG ; !Grammar p. 27: -im- before diminutive suffix
-+N+AN:im%> AN_DIM_IS_SUFF_PL ; !Grammar p. 27: -im- before diminutive suffix
-+N+AN:%> AN_SUFF_LOC ;
++N+AN:i2m%> AN_DIM_IS_SUFF_SG ; !Grammar p. 27: possessive element
++N+AN:i2m%> AN_DIM_IS_SUFF_PL ;  
++N+AN:i2m%> AN_SUFF_LOC ;
 +N+AN:%> AN_DIM_IS_LOC ;
++N+AN:i2m%> AN_DIM_IS_SUFF_LOC ;
 
 
 LEXICON ANDECL !!= * @CODE@ for the animate declension
@@ -162,6 +163,8 @@ LEXICON AN_DIM_ISIS_LOC !!= * @CODE@
 
 LEXICON AN_DIM_IS_LOC !!= * @CODE@
 < "+Dim":i 0:s 0:%^DIM  "@U.noun.abs@" >  LOC ; !
+
+LEXICON AN_DIM_IS_SUFF_LOC !!= * @CODE@
 < "+Dim":i 0:s 0:%^DIM > AN_SUFF_LOC ;
 
 !! !Diminutive suffixes in animate stems taking the form -osis

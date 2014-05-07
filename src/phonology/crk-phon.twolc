@@ -5,6 +5,7 @@ Alphabet
  Â Ê Î Ô
  
  t2:0      !!= * @CODE@ t between prefix and vowel-initial stem
+ i2:0      !!= * @CODE@ i can change to o and ô in the possession element
  %>:0      !!= * @CODE@ affix boundary
  %^LC:0    !!= * @CODE@ Locative suffix alternation trigger
  %^DIM:0   !!= * @CODE@ Diminutive alternation trigger
@@ -111,6 +112,15 @@ w:n <=> [ ê | ô ] _  %>:0 i: %^LC:0  ;
 !! __@RULENAME@__ 
 t2:t <=> _ %>:0 Vow ;
 
+"i2:o in possessive element"
+!! __@RULENAME@__ 
+i2:o <=> k _ m %>:0 %^POS:0  ;
+
+"i2:0 in possessive element"
+!! __@RULENAME@__ 
+i2:0 <=> [ â | ô ] w _ m %>:0 %^POS:0  ;
+
+
 "-Vw:m alternation in front of possessive suffixes"
 !! __@RULENAME@__ -Vw:m alternation in front of possessive suffixes, Okimasis p. 136
 w:m <=> Vow - a _ %>:0  %^POS:0  ; ! iskwêw nitiskwêm
@@ -123,7 +133,7 @@ o:ô <=> %>:0 _ k :*  w:m %>:0  %^POS:0  ; ! okimâw:niôkimâm ! first only in 
 "wis:os in possessive prefix, step 1"
 !! __@RULENAME@__ wis:os in possessive prefix, step 1. Okimasis p. 138 ! 
 w:0 <=> .#. _  i:o s :* %>:0  %^POS:0  ; 
-      
+	     .#. \Pos [ â | ô ] _ i2:0 m %>:0  %^POS:0  ; ! possessive element, doesn't work yet
     
 "wis:os in possessive prefix, step 2"
 !! __@RULENAME@__ wis:os in possessive prefix, step 2. Okimasis p. 138 ! 
@@ -161,6 +171,7 @@ y:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 "In Vow+w final stems with Diminutives, part 1: delete y" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 w:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
+!	   .#. \Pos [ â | ô ] _ i2:0 m %>:0  %^POS:0  ; ! possessive element, doesn't work yet
 
 "In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
