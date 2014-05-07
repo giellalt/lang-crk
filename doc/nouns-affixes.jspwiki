@@ -39,19 +39,33 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON INALIENABLEPOSS_SG  inanimate possessive declension, only Sg
 
 
-
-
 !!Diminutive suffixes
 
  !Diminutive suffixes in animate stems
 
- * LEXICON AN_DIM_SG 
+ * LEXICON AN_DIM_ISIS_SG 
+
+ * LEXICON AN_DIM_IS_SG 
 
 
- * LEXICON AN_DIM_PL 
+ * LEXICON AN_DIM_ISIS_SUFF_SG 
 
- * LEXICON AN_DIM_LOC 
+ * LEXICON AN_DIM_IS_SUFF_SG 
 
+
+ * LEXICON AN_DIM_ISIS_PL 
+
+ * LEXICON AN_DIM_IS_PL 
+
+
+ * LEXICON AN_DIM_ISIS_SUFF_PL 
+
+ * LEXICON AN_DIM_IS_SUFF_PL 
+
+
+ * LEXICON AN_DIM_ISIS_LOC 
+
+ * LEXICON AN_DIM_IS_LOC 
 
 !Diminutive suffixes in animate stems taking the form -osis
 
@@ -81,8 +95,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
  * LEXICON AN_SUFF_SG  
 
-< "+Px3iPl":0 0:y 0:i 0:w     "@U.noun.3ipl@" > SG_ ; ! obviative plural possessor, not in yaml
-
 
  * LEXICON AN_SUFF_PL  
 
@@ -97,9 +109,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 
  * LEXICON IN_SUFF_PL  
-
-
-
 
 
 
