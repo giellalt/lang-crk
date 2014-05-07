@@ -115,6 +115,7 @@ LEXICON ANSTEM_kw
 
 
 
+
 !! !!The stems
 
 !! !Animate Nouns
@@ -140,8 +141,6 @@ maskwa ANDECL "bear" ; ! maskwak
 maskwa+Dim:maskosis ANDECLPROF "little moose" ;
 mâyatihk ANDECL "bighorn sheep" ;	
 mâyatihk+Dim:mâyacihkos ANDECLPROF "little bighorn sheep" ;	
-minôs ANDECL "cat" ; !
-minôs+Dim:minôsis ANDECLPROF "little cat" ;	!minôsisis GG p 17
 mostos ANDECL "cow" ;	!GG p 16: pl is mostoswak. Move to IRREGANSTEMSLIST?
 mostos+Dim:mostosis ANDECLPROF "little cow" ;	
 môswa ANDECL "moose" ; ! môswak	
@@ -161,8 +160,6 @@ sihkihp ANDECL "boil, carbuncle" ; !yaml
 sihkihp ANDECL "grebe, diving bird" ; !doublet,
 sikâk ANDECL "skunk" ;	!yaml
 sikâk+Dim:sikâkos ANDECLPROF "little skunk" ;
-sîsîp ANDECL "duck" ;	
-sîsîp+Dim:sîsîpis ANDECLPROF "duckling" ;	! sîsîpisis
 wâpask ANDECL "polar bear" ; ! wâpaskwak	
 wâpask+Dim:wâpaskos ANDECLPROF "little polar bear" ; ! wâpaskwak	
 wâwaskesiw ANDECL "elk" ;
@@ -170,7 +167,11 @@ wayasit ANDECL "hoof" ; !yaml !possibly -is in Dim
 mistatim+Dim:miscacimosis ANDECLPROF ;
 pîsim ANDECL "month, sun" ;
 okimâw ANDECL "boss" ;
-pahkwêsikan ANIMDECL "bannock" ; ! exstra -im in poss
+pahkwêsikan ANIMDECL "bannock" ; ! exstra -im in poss, Okimasis
+minôs ANIMDECL "cat" ; ! exstra -im in poss GG p 25
+minôs+Dim:minôsis ANDECLPROF "little cat" ;	!minôsisis GG p 17
+sîsîp ANIMDECL "duck" ;	! exstra -im in poss GG p 25
+sîsîp+Dim:sîsîpis ANDECLPROF "duckling" ;	! sîsîpisis
 
 LEXICON IRREGANSTEMS
  :%> IRREGANSTEMSLIST ;
