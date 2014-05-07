@@ -23,30 +23,30 @@
 
 LEXICON Nouns 
 
-AN ; ! Animate nouns
-IN ; ! Inanimate nouns
+AN-IN ; ! Animate nouns
+!IN ; ! Inanimate nouns
 INALIENABLE ;
-ANSTEM_kw ; ! Animate nouns whose stems end in kw
+!ANSTEM_kw ; ! Animate nouns whose stems end in kw
 IRREGAN ; !mistatim, atim
 
 
-LEXICON AN
+LEXICON AN-IN
 !! @LEXNAME@ redirects to ANSTEMS
 !! At the moment it is just a copy of INSTEMS, 
 !! pretending animates and inanimates are identical
 !! Flag diacritics direct to possessive declension later on
 
-@U.noun.abs@ ANSTEMLIST ; 
+@U.noun.abs@ STEMLIST ; 
 
-< 0:n 0:i "@U.noun.1sg@"  0:"t2" > ANSTEMS ; ! 1
-< 0:k 0:i "@U.noun.2sg@"  0:"t2" > ANSTEMS ; ! 2
-< 0:o     "@U.noun.3sg@"  0:"t2" > ANSTEMS ; ! 3
-< 0:o     "@U.noun.3isg@" 0:"t2" > ANSTEMS ; ! 3-singular-obviative
-< 0:n 0:i "@U.noun.1pl@"  0:"t2" > ANSTEMS ; ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@" 0:"t2" > ANSTEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@"  0:"t2" > ANSTEMS ; ! 2pl 
-< 0:o     "@U.noun.3pl@"  0:"t2" > ANSTEMS ; ! 3pl
-< 0:o     "@U.noun.3ipl@" 0:"t2" > ANSTEMS ; ! 3-plural-obviate
+< 0:n 0:i "@U.noun.1sg@"  0:"t2" > STEMS ; ! 1
+< 0:k 0:i "@U.noun.2sg@"  0:"t2" > STEMS ; ! 2
+< 0:o     "@U.noun.3sg@"  0:"t2" > STEMS ; ! 3
+< 0:o     "@U.noun.3isg@" 0:"t2" > STEMS ; ! 3-singular-obviative
+< 0:n 0:i "@U.noun.1pl@"  0:"t2" > STEMS ; ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@" 0:"t2" > STEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@"  0:"t2" > STEMS ; ! 2pl 
+< 0:o     "@U.noun.3pl@"  0:"t2" > STEMS ; ! 3pl
+< 0:o     "@U.noun.3ipl@" 0:"t2" > STEMS ; ! 3-plural-obviate
 
 
 LEXICON IRREGAN
@@ -64,22 +64,6 @@ LEXICON IRREGAN
 < 0:o     "@U.noun.3pl@" >  IRREGANSTEMS ; ! 3pl
 < 0:o     "@U.noun.3ipl@" > IRREGANSTEMS ; ! 3-plural-obviate
 
-LEXICON IN
-!! @LEXNAME@ redirects to INSTEMS in two ways:
-!! Without prefixes, forming the absolutive (non-Px) declension
-
-@U.noun.abs@  INSTEMLIST ; 
-
-!! With prefixes, forming the possessive declension
-< 0:n 0:i "@U.noun.1sg@"  0:"t2"  > INSTEMS ; !
-< 0:k 0:i "@U.noun.2sg@"  0:"t2"  > INSTEMS ; !
-< 0:o     "@U.noun.3sg@"  0:"t2"  > INSTEMS ; !
-< 0:o     "@U.noun.3isg@" 0:"t2"  > INSTEMS ;    ! 3-singular-obviative
-< 0:n 0:i "@U.noun.1pl@"  0:"t2"  > INSTEMS ; ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@" 0:"t2"  > INSTEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@"  0:"t2"  > INSTEMS ; !
-< 0:o     "@U.noun.3pl@"  0:"t2"  > INSTEMS ; !
-< 0:o     "@U.noun.3ipl@" 0:"t2"  > INSTEMS ;       ! 3-plural-obviate
 
 
 
@@ -99,32 +83,16 @@ LEXICON INALIENABLE
 < 0:w  "@U.noun.3ipl@"  > INALIENABLESTEMS;       ! 
 
 
-LEXICON ANSTEM_kw
-!! @LEXNAME@ is for a set of nouns that take an additional suffix in the possessive paradigm
-< "@U.noun.abs@" >  ANSTEMS_kw ;
-
-< 0:n 0:i "@U.noun.1sg@"  0:"t2" > ANSTEMLIST_kw ; ! 1
-< 0:k 0:i "@U.noun.2sg@"  0:"t2" > ANSTEMLIST_kw ; ! 2
-< 0:o     "@U.noun.3sg@"  0:"t2" > ANSTEMLIST_kw ;     ! 3
-< 0:o     "@U.noun.3isg@" 0:"t2" > ANSTEMLIST_kw ;    ! 3-singular-obviative
-< 0:n 0:i "@U.noun.1pl@"  0:"t2" > ANSTEMLIST_kw ;   ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@" 0:"t2" > ANSTEMLIST_kw ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@"  0:"t2" > ANSTEMLIST_kw ;  ! 2pl 
-< 0:o     "@U.noun.3pl@"  0:"t2" > ANSTEMLIST_kw ;       ! 3pl
-< 0:o     "@U.noun.3ipl@" 0:"t2" > ANSTEMLIST_kw ;       ! 3-plural-obviative
-
-
-
 
 !! !!The stems
 
-!! !Animate Nouns
+!! !Animate and inanimate Nouns
 !    =============
 
-LEXICON ANSTEMS
- 0:%> ANSTEMLIST ;
+LEXICON STEMS
+ 0:%> STEMLIST ;
 
-LEXICON ANSTEMLIST
+LEXICON STEMLIST
 apiscacihkos ANDECL "antelope" ;	
 apisimôsos ANDECL "deer" ; ! apisimôsosak	
 apisimôsos+Dim:apisimôsosis ANDECLPROF "little deer" ; ! apisimôsosak
@@ -175,6 +143,58 @@ tatâwewkamik ANIMDECL ; ! GG p 25
 tohtôsâpoy ANIMDECL ; ! GG p 25
 okimâw ANIMDECL "boss" ; ! GG p 25
 
+
+wâposw:wâpos ANKWDECL "rabbit" ; !how is plural -kwak?
+amiskw:amisk ANKWDECL "beaver" ;
+mistikw:mistik ANKWDECL "stick" ;
+askihkw:askihk ANKWDECL "pail" ;
+mahkahkw:mahkahk ANKWDECL "tub/barrel" ;
+
+sakâw INDECL "bush" ;
+mîcimâpoy INDECL "soup" ;
+sîsîpiwâwi INDECL "duck egg" ;
+wâwi INDECL "egg" ; ! <== Analysed with hfst, but not with xfst.
+wâwi+Dim:wâwis INDECLPROF "little egg" ; !Proficient speakers use abbreviated diminutive
+ôtênaw INDECL "city" ;
+ôtênaw+Dim:ôcênâs INDECLPROF "little city" ; !Proficient speakers use abbreviated diminutive
+maskisin INDECL "shoe" ; !yaml
+maskisin+Dim:maskisinis INDECLPROF "little shoe" ;
+mistikowat INDECL "box" ;
+mistikowat+Dim:miscikowacis INDECLPROF "little box" ;
+pikiw INDECL "gum" ; !Dim: pikis
+iskwâhtêm INDECL "door" ;
+iskwâhtêm+Dim:iskwâhcêmis INDECLPROF "little door" ;
+môhkomân INDECL  "knife" ;
+môhkomân+Dim:môhkomânis INDECLPROF  "little knife" ;
+iskotêw INDECL "fire" ;
+iskotêw+Dim:iskocês INDECLPROF "fire" ;
+ôskan INDECL "bone" ;
+ôskan+Dim:ôskanis INDECLPROF "little bone" ;
+wiyâkan INDECL "bowl" ;
+wiyâkan+Dim:wiyâkanis INDECLPROF "bowl" ;
+kîkisepâ INDECL "morning" ;
+ôsi INDECL "canoe" ; !yaml
+atâwewikamik INDECL "store" ;
+atâwewikamik+Dim:atâwewikamikosis INDECLPROF "small store" ;
+ôtenaw INDECL "city" ;
+ôtenaw+Dim:ocenâsis INDECLPROF "town" ;
+
+
+LEXICON INALIENABLESTEMS  ! dependent nouns
+maniway:aniway INALIENABLEPOSS ; !"someone's cheek" !yaml
+!otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
+!otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
+otehye:otehye INALIENABLEPOSS ;  ! this gives wotehye
+mîpit:îpit INALIENABLEPOSS "tooth" ;
+mikiwâhp:iki INALIENABLEPOSS_SG "home" ;
+mikiwâhp+N+IN:mikiwâhp # ;
+mahkwan:ahkwan INALIENABLEPOSS "heel" ;
+mispiton:ispiton INALIENABLEPOSS "arm" ; !o- in stead of w-
+micihciy:icihciy INALIENABLEPOSS "hand" ; !OBS -iy New lexicon?
+micihciy+Dim:icihcîsis INALIENABLEPOSS "small hand" ; 
+mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
+
+
 LEXICON IRREGANSTEMS
  :%> IRREGANSTEMSLIST ;
  :%> KINSTEMLIST ;
@@ -211,78 +231,6 @@ onâpêmiwâw:nâpêm ANKININFL_MONOG "husband" ;
 wîkimâkan:wîkimâkan ANKININFL_MONOG "spouse" ; 
 okâwîmâw:kâw ANKININFL_IY "mother" ;! -iy- dissappears Okimasis p. 140, 
 ôhtâwimâw:ôhtâw ANKININFL_IY "father" ;  
-
-
-
-
-
-LEXICON ANSTEMS_kw
- :%> ANSTEMLIST_kw ;
-
-
-LEXICON ANSTEMLIST_kw				
-!!These nouns take an additional suffix in the
-!! possessive paradigm Okim. p 135
-wâposw:wâpos ANKWDECL "rabbit" ; !how is plural -kwak?
-amiskw:amisk ANKWDECL "beaver" ;
-mistikw:mistik ANKWDECL "stick" ;
-askihkw:askihk ANKWDECL "pail" ;
-mahkahkw:mahkahk ANKWDECL "tub/barrel" ;
-
-
-!! !Inanimate Nouns
-!   ===============
-
-LEXICON INALIENABLESTEMS  ! dependent nouns
-maniway:aniway INALIENABLEPOSS ; !"someone's cheek" !yaml
-!otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
-!otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
-otehye:otehye INALIENABLEPOSS ;  ! this gives wotehye
-mîpit:îpit INALIENABLEPOSS "tooth" ;
-mikiwâhp:iki INALIENABLEPOSS_SG "home" ;
-mikiwâhp+N+IN:mikiwâhp # ;
-mahkwan:ahkwan INALIENABLEPOSS "heel" ;
-mispiton:ispiton INALIENABLEPOSS "arm" ; !o- in stead of w-
-micihciy:icihciy INALIENABLEPOSS "hand" ; !OBS -iy New lexicon?
-micihciy+Dim:icihcîsis INALIENABLEPOSS "small hand" ; 
-mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
-
-
-
-LEXICON INSTEMS
- :%> INSTEMLIST ;
-
-
-LEXICON INSTEMLIST
-
-sakâw INDECL "bush" ;
-mîcimâpoy INDECL "soup" ;
-sîsîpiwâwi INDECL "duck egg" ;
-wâwi INDECL "egg" ; ! <== Analysed with hfst, but not with xfst.
-wâwi+Dim:wâwis INDECLPROF "little egg" ; !Proficient speakers use abbreviated diminutive
-ôtênaw INDECL "city" ;
-ôtênaw+Dim:ôcênâs INDECLPROF "little city" ; !Proficient speakers use abbreviated diminutive
-maskisin INDECL "shoe" ; !yaml
-maskisin+Dim:maskisinis INDECLPROF "little shoe" ;
-mistikowat INDECL "box" ;
-mistikowat+Dim:miscikowacis INDECLPROF "little box" ;
-pikiw INDECL "gum" ; !Dim: pikis
-iskwâhtêm INDECL "door" ;
-iskwâhtêm+Dim:iskwâhcêmis INDECLPROF "little door" ;
-môhkomân INDECL  "knife" ;
-môhkomân+Dim:môhkomânis INDECLPROF  "little knife" ;
-iskotêw INDECL "fire" ;
-iskotêw+Dim:iskocês INDECLPROF "fire" ;
-ôskan INDECL "bone" ;
-ôskan+Dim:ôskanis INDECLPROF "little bone" ;
-wiyâkan INDECL "bowl" ;
-wiyâkan+Dim:wiyâkanis INDECLPROF "bowl" ;
-kîkisepâ INDECL "morning" ;
-ôsi INDECL "canoe" ; !yaml
-atâwewikamik INDECL "store" ;
-atâwewikamik+Dim:atâwewikamikosis INDECLPROF "small store" ;
-ôtenaw INDECL "city" ;
-ôtenaw+Dim:ocenâsis INDECLPROF "town" ;
 
 
 ! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
