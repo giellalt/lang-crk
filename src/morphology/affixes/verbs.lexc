@@ -227,34 +227,25 @@ LEXICON 12plimp-long-E
 
 
 LEXICON IICONJ  !!= @CODE@ splits according to conjugation
-+V+II+Ind+Prs: II_IND_PRS ;
-+V+II+Neg+Ind+Prs: II_NEG_IND_PRS ;
-+V+II+Cnj: II_SBJ ;
-+V+II+Neg+Cnj: II_NEG_SBJ ;
++V+II+Ind+Prs: II_IND_PRS_FLAG ;
++V+II+Cnj: II_SBJ_FLAG ;
 
+LEXICON II_IND_PRS_FLAG
+@U.verb.NULL@ II_IND_PRS ;
+
+LEXICON II_SBJ_FLAG
+@U.verb.sbjPrs@ II_SBJ ;
+ 
 LEXICON II_IND_PRS   !!= @CODE@ is positive present
 +3Sg: # ;
-+3oSg:%>yiw # ;
++3oSg:%>yik # ;
 +3Pl:%>a # ;
 +3oPl:%>yiwa # ;
 
-LEXICON II_NEG_IND_PRS  !!= @CODE@ is negative present
-+3Sg:%>siinoon # ;
-+3oSg:%>sinini # ;
-+3Pl:%>siinoon # ;
-+3oPl:%>sininiwan # ;
-
-LEXICON II_SBJ   !!= @CODE@ is positive subjunctive
-+3Sg:%>g # ;
-+3oSg:%>nig # ;
-+3Pl:%>g # ;
-+3oPl:%>nig # ;
-
-LEXICON II_NEG_SBJ   !!= @CODE@ is negative subjunctive
-+3Sg:%>sinog # ;
-+3oSg:%>sininig # ;
-+3Pl:%>sinog # ;
-+3oPl:%>sininig # ;
+LEXICON II_SBJ 
+    :%>k # ; ! Both these entries now give wrong forms (ê-misponk pro ê-mispok etc.)
++Fut:%>i # ; ! We need to decide whether to solve it in lexc (more lexica) or
+             ! in twolc (more abstract representation)
 
 
 !! !! Transitive animate (TA)
