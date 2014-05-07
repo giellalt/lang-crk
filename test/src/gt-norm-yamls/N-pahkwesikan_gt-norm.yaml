@@ -1,0 +1,80 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - pahkwêsikan - ok : # -m animate noun, bannock
+     
+     pahkwêsikan+N+AN+Sg: pahkwêsikan
+     pahkwêsikan+N+AN+Pl: pahkwêsikanak
+     pahkwêsikan+N+AN+Loc: pahkwêsikanihk
+     pahkwêsikan+N+AN+Obv: pahkwêsikana
+     pahkwêsikan+N+AN+Dim+Sg: pahkwêsikanisis
+     pahkwêsikan+N+AN+Dim+Pl: pahkwêsikanisisak
+     pahkwêsikan+N+AN+Dim+Loc: pahkwêsikanisisihk
+
+     pahkwêsikan+N+AN+Sg+Px1Sg: nipahkwêsikanim
+     pahkwêsikan+N+AN+Sg+Px2Sg: kipahkwêsikanim
+     pahkwêsikan+N+AN+Sg+Px3Sg+Obv: opahkwêsikanima
+     pahkwêsikan+N+AN+Sg+Px3iSg+Obv: opahkwêsikanimiyiwa
+     pahkwêsikan+N+AN+Sg+Px1Pl: nipahkwêsikaniminân
+     pahkwêsikan+N+AN+Sg+Px12Pl: kipahkwêsikaniminaw
+     pahkwêsikan+N+AN+Sg+Px2Pl: kipahkwêsikanimiwâw
+     pahkwêsikan+N+AN+Sg+Px3Pl+Obv: opahkwêsikanimiwâwa
+     pahkwêsikan+N+AN+Sg+Px3iPl+Obv: opahkwêsikanimiyiwa
+
+     pahkwêsikan+N+AN+Pl+Px1Sg: nipahkwêsikanimak
+     pahkwêsikan+N+AN+Pl+Px2Sg: kipahkwêsikanimak
+     pahkwêsikan+N+AN+Pl+Px3Sg+Obv: opahkwêsikanima
+     pahkwêsikan+N+AN+Pl+Px3iSg+Obv: opahkwêsikanimiyiwa
+     pahkwêsikan+N+AN+Pl+Px1Pl: nipahkwêsikaniminânak
+     pahkwêsikan+N+AN+Pl+Px12Pl: kipahkwêsikaniminawak
+     pahkwêsikan+N+AN+Pl+Px2Pl: kipahkwêsikanimiwâwak
+     pahkwêsikan+N+AN+Pl+Px3Pl+Obv: opahkwêsikanimiwâwa
+     pahkwêsikan+N+AN+Pl+Px3iPl+Obv: opahkwêsikanimiyiwa
+
+     pahkwêsikan+N+AN+Dim+Sg+Px1Sg: nipahkwêsikanisis
+     pahkwêsikan+N+AN+Dim+Sg+Px2Sg: kipahkwêsikanisis
+     pahkwêsikan+N+AN+Dim+Sg+Px3Sg+Obv: opahkwêsikanisisa
+     pahkwêsikan+N+AN+Dim+Sg+Px3iSg+Obv: opahkwêsikanisisiyiwa
+     pahkwêsikan+N+AN+Dim+Sg+Px1Pl: nipahkwêsikanisisinân
+     pahkwêsikan+N+AN+Dim+Sg+Px12Pl: kipahkwêsikanisisinaw
+     pahkwêsikan+N+AN+Dim+Sg+Px2Pl: kipahkwêsikanisisiwâw
+     pahkwêsikan+N+AN+Dim+Sg+Px3Pl+Obv: opahkwêsikanisisiwâwa
+     pahkwêsikan+N+AN+Dim+Sg+Px3iPl+Obv: opahkwêsikanisisiyiwa
+
+     pahkwêsikan+N+AN+Dim+Pl+Px1Sg: nipahkwêsikanisisak
+     pahkwêsikan+N+AN+Dim+Pl+Px2Sg: kipahkwêsikanisisak
+     pahkwêsikan+N+AN+Dim+Pl+Px3Sg+Obv: opahkwêsikanisisa
+     pahkwêsikan+N+AN+Dim+Pl+Px3iSg+Obv: opahkwêsikanisisiyiwa
+     pahkwêsikan+N+AN+Dim+Pl+Px1Pl: nipahkwêsikanisisinânak
+     pahkwêsikan+N+AN+Dim+Pl+Px12Pl: kipahkwêsikanisisinawak
+     pahkwêsikan+N+AN+Dim+Pl+Px2Pl: kipahkwêsikanisisiwâwak
+     pahkwêsikan+N+AN+Dim+Pl+Px3Pl+Obv: opahkwêsikanisisiwâwa
+     pahkwêsikan+N+AN+Dim+Pl+Px3iPl+Obv: opahkwêsikanisisiyiwa
+
+     pahkwêsikan+N+AN+Px1Sg+Loc: nipahkwêsikanihk
+     pahkwêsikan+N+AN+Px2Sg+Loc: kipahkwêsikanihk
+     pahkwêsikan+N+AN+Px3Sg+Loc: opahkwêsikanihk
+     pahkwêsikan+N+AN+Px3iSg+Loc: opahkwêsikaniyihk
+     pahkwêsikan+N+AN+Px1Pl+Loc: nipahkwêsikaninânihk
+     pahkwêsikan+N+AN+Px12Pl+Loc: kipahkwêsikaninâhk
+     pahkwêsikan+N+AN+Px2Pl+Loc: kipahkwêsikaniwâwihk
+     pahkwêsikan+N+AN+Px3Pl+Loc: opahkwêsikaniwâwihk
+     pahkwêsikan+N+AN+Px3iPl+Loc: opahkwêsikaniyihk
+
+     pahkwêsikan+N+AN+Dim+Px1Sg+Loc: nipahkwêsikanisisihk
+     pahkwêsikan+N+AN+Dim+Px2Sg+Loc: kipahkwêsikanisisihk
+     pahkwêsikan+N+AN+Dim+Px3Sg+Loc: opahkwêsikanisisihk
+     pahkwêsikan+N+AN+Dim+Px3iSg+Loc: opahkwêsikanisisiyihk
+     pahkwêsikan+N+AN+Dim+Px1Pl+Loc: nipahkwêsikanisisinânihk
+     pahkwêsikan+N+AN+Dim+Px12Pl+Loc: kipahkwêsikanisisinâhk
+     pahkwêsikan+N+AN+Dim+Px2Pl+Loc: kipahkwêsikanisisiwâwihk
+     pahkwêsikan+N+AN+Dim+Px3Pl+Loc: opahkwêsikanisisiwâwihk
+     pahkwêsikan+N+AN+Dim+Px3iPl+Loc: opahkwêsikanisisiyihk
