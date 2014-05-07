@@ -3,23 +3,26 @@
 
 !!The declinations for Animates
 
+ * LEXICON ANIMDECL  for the animate declension, extra -im in poss Okimasis p. 134
+
+
  * LEXICON ANDECL  for the animate declension
 
 
 
  * LEXICON ANDECLPROF  Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
- * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim.
+ * LEXICON ANIRRDECL	 is there to handle the highly irregular atim and mistatim.
 
- * LEXICON FAMILYINFL  The lexicon gives a base form N+AN
+ * LEXICON ANKININFL  The lexicon gives a base form N+AN
 
- * LEXICON FAMILYINFL_IY   Special treatment for nouns ending with -iy
-
-
- * LEXICON FAMILYINFL_HALFPAR  No bigami
+ * LEXICON ANKININFL_IY   Special treatment for nouns ending with -iy
 
 
- * LEXICON IRREGULARINFL  is also there to handle the highly irregular atim and mistatim
+ * LEXICON ANKININFL_MONOG  No bigami
+
+
+ * LEXICON ANIRRINFL  is also there to handle the highly irregular atim and mistatim
 
  * LEXICON ANKWDECL  takes -om as extra suffix in possessed form
 
@@ -99,10 +102,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 
 
- * LEXICON ANKWDECL_SUFF_SG  
-
-
- * LEXICON ANKWDECL_SUFF_PL  
 
 
 

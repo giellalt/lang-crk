@@ -128,7 +128,6 @@ Nominal MSP
  * t2 		  Prefix in possessives 
 
  * ^%EGLOT    glottal stop after e, for eh- in conjunctive mood
- * ^%EA      ê to â in 1, 2 person of ê-stems
 
 Flagdiacritics 
 
@@ -215,6 +214,7 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
  * @U.noun.3ipl@ 
 
  * @U.noun.abs@  
+ * @U.noun.dep@ 
 
 
   LEXICON Root          is where it all starts
@@ -233,6 +233,8 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
  *  %^EGLOT:0  Conjunctive êh trigger
  *  %^POS:0    Possessive alternation trigger
  *  %^EA:0     ê to â in 1, 2 person of ê verbs
+
+
 
 
 
@@ -274,9 +276,12 @@ __locative alternation naahk 1		__ adds nâhk after êw/ôw, change w to n. Okim
 
 __possessive prefixes__ 
 
-__-Vw:m alternation in front of possessive suffixes__ -Vw:m alternation in front of possessive suffixes 
+__-Vw:m alternation in front of possessive suffixes__ -Vw:m alternation in front of possessive suffixes, Okimasis p. 136
+
+__o:oo- alternation initially in possessive forms__ o:oo- alternation initially in possessive forms, Okimasis p. 135
 
 __wis:os in possessive prefix, step 1__ wis:os in possessive prefix, step 1. Okimasis p. 138 ! 
+
 
 __wis:os in possessive prefix, step 2__ wis:os in possessive prefix, step 2. Okimasis p. 138 ! 
 
@@ -299,6 +304,7 @@ __In Vow+y final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, 
 __In Vow+w final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 
 __In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
+
 
 __In Vow+y final stems with Diminutives, part 3: delete i in suffix __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 
@@ -344,7 +350,6 @@ Flag diacritics direct to possessive declension later on
 
 
 
-
 IN redirects to INSTEMS in two ways:
 Without prefixes, forming the absolutive (non-Px) declension
 
@@ -354,7 +359,6 @@ With prefixes, forming the possessive declension
 
 
 INALIENABLE redirects to INALIENABLESTEMS
-
 
 
 
@@ -378,10 +382,12 @@ ANSTEM_kw is for a set of nouns that take an additional suffix in the possessive
 
 
 
-possessive paradigm
+possessive paradigm Okim. p 135
 
 
 !Inanimate Nouns
+
+
 
 
 
@@ -512,23 +518,26 @@ The stems
 
 !!The declinations for Animates
 
+ * LEXICON ANIMDECL  for the animate declension, extra -im in poss Okimasis p. 134
+
+
  * LEXICON ANDECL  for the animate declension
 
 
 
  * LEXICON ANDECLPROF  Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
- * LEXICON IRREGULARDECL	 is there to handle the highly irregular atim and mistatim.
+ * LEXICON ANIRRDECL	 is there to handle the highly irregular atim and mistatim.
 
- * LEXICON FAMILYINFL  The lexicon gives a base form N+AN
+ * LEXICON ANKININFL  The lexicon gives a base form N+AN
 
- * LEXICON FAMILYINFL_IY   Special treatment for nouns ending with -iy
-
-
- * LEXICON FAMILYINFL_HALFPAR  No bigami
+ * LEXICON ANKININFL_IY   Special treatment for nouns ending with -iy
 
 
- * LEXICON IRREGULARINFL  is also there to handle the highly irregular atim and mistatim
+ * LEXICON ANKININFL_MONOG  No bigami
+
+
+ * LEXICON ANIRRINFL  is also there to handle the highly irregular atim and mistatim
 
  * LEXICON ANKWDECL  takes -om as extra suffix in possessed form
 
@@ -608,10 +617,6 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 
 
- * LEXICON ANKWDECL_SUFF_SG  
-
-
- * LEXICON ANKWDECL_SUFF_PL  
 
 
 
