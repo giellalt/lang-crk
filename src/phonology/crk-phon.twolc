@@ -115,6 +115,11 @@ t2:t <=> _ %>:0 Vow ;
 !! __@RULENAME@__ -Vw:m alternation in front of possessive suffixes, Okimasis p. 136
 w:m <=> Vow - a _ %>:0  %^POS:0  ; ! iskwêw nitiskwêm
  
+"o:oo- alternation initially in possessive forms"
+!! __@RULENAME@__ o:oo- alternation initially in possessive forms, Okimasis p. 135
+o:ô <=> %>:0 _ k :*  w:m %>:0  %^POS:0  ; ! okimâw:niôkimâm ! first only in front of k
+  		_ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ;
+ 
 "wis:os in possessive prefix, step 1"
 !! __@RULENAME@__ wis:os in possessive prefix, step 1. Okimasis p. 138 ! 
 w:0 <=> .#. _  i:o s :* %>:0  %^POS:0  ; 
@@ -159,7 +164,9 @@ w:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 
 "In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
-[ o:ô | i:î | a:â ] <=> _ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ;
+[ i:î | a:â ] <=> _ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ; ! moved o:ô up to another rule
+
+![ o:ô | i:î | a:â ] <=> _ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ;
 
 "In Vow+y final stems with Diminutives, part 3: delete i in suffix" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
