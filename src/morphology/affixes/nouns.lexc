@@ -5,6 +5,19 @@
 
 !! !!The declinations for Animates
 
+LEXICON ANIMDECL !!= * @CODE@ for the animate declension, extra -im in poss Okimasis p. 134
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
+< "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; !
++N+AN+Sg:im%> AN_SUFF_SG ;
++N+AN+Pl:im%> AN_SUFF_PL ;
++N+AN:%> AN_DIM_SG ;
++N+AN:%> AN_DIM_PL ;
++N+AN:%> AN_SUFF_LOC ;
++N+AN:%> AN_DIM_LOC ;
+
+
 LEXICON ANDECL !!= * @CODE@ for the animate declension
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
@@ -42,9 +55,9 @@ LEXICON ANKININFL_IY  !!= * @CODE@ Special treatment for nouns ending with -iy
 < "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
 +N+AN+Sg: AN_SUFF_SG_IY ;
 +N+AN+Pl: AN_SUFF_PL_IY ;
-+N+AN: AN_DIM_IRR_SG ; ! overgen?
-+N+AN: AN_DIM_IRR_PL ; ! overgen?
-+N+AN:%> AN_IRREG_SUFF_LOC ; ! overgen?
++N+AN: AN_DIM_IRR_SG ;  
++N+AN: AN_DIM_IRR_PL ;  
++N+AN:%> AN_SUFF_LOC ;  
 
 
 LEXICON ANKININFL_MONOG !!= * @CODE@ No bigami
@@ -65,14 +78,14 @@ LEXICON ANIRRINFL !!= * @CODE@ is also there to handle the highly irregular atim
 +N+AN+Pl: AN_SUFF_PL ;
 +N+AN: AN_DIM_IRR_SG ;
 +N+AN: AN_DIM_IRR_PL ;
-+N+AN:%> AN_IRREG_SUFF_LOC ;
++N+AN:%> AN_SUFF_LOC ;
 
 LEXICON ANKWDECL !!= * @CODE@ takes -om as extra suffix in possessed form
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !
+< "+N":w "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":w "+AN":0 "+Pl":0 "@U.noun.abs@" >  PL_AK ; !should it be -kw?
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
-+N+AN+Sg: ANKWDECL_SUFF_SG ;
-+N+AN+Pl: ANKWDECL_SUFF_PL ;
++N+AN+Sg:om AN_SUFF_SG ;
++N+AN+Pl:om AN_SUFF_PL ;
 
 
 
@@ -263,28 +276,28 @@ LEXICON IN_SUFF_LOC
 
 
 
-LEXICON ANKWDECL_SUFF_SG !!= * @CODE@ 
-< "+Px1Sg":%^POS  0:o 0:m                     "@U.noun.1sg@"  > SG_ ; !
-< "+Px2Sg":%^POS  0:o 0:m                     "@U.noun.2sg@"  > SG_ ; !
-< "+Px3Sg":%^POS  0:o 0:m 0:a                 "@U.noun.3sg@"  > SG_ ; ! OBVIATIVE
-< "+Px3iSg":%^POS 0:o 0:m 0:i 0:y 0:i 0:w 0:a "@U.noun.3isg@" > SG_ ; ! OBVIATIVE
-< "+Px1Pl":%^POS  0:o 0:m 0:i 0:n 0:â 0:n     "@U.noun.1pl@"  > SG_ ;   ! exclusive Pl
-< "+Px12Pl":%^POS 0:o 0:m 0:i 0:n 0:a 0:w     "@U.noun.12pl@" > SG_ ; ! inclusive Pl
-< "+Px2Pl":%^POS  0:o 0:m 0:i 0:w 0:â 0:w     "@U.noun.2pl@"  > SG_ ; !
-< "+Px3Pl":%^POS  0:o 0:m 0:i 0:w 0:â 0:w 0:a "@U.noun.3pl@"  > SG_ ; ! OBVIATIVE
-< "+Px3iPl":%^POS 0:o 0:m 0:i 0:y 0:i 0:w 0:a "@U.noun.3isg@" > SG_ ; ! obviative plural possessor OBVIATIVE
-
-
-LEXICON ANKWDECL_SUFF_PL !!= * @CODE@ 
-< "+Px1Sg":%^POS  0:o 0:m                     "@U.noun.1sg@"  > PL_AK ; !
-< "+Px2Sg":%^POS  0:o 0:m                     "@U.noun.2sg@"  > PL_AK ; !
-< "+Px3Sg":%^POS  0:o 0:m 0:a                 "@U.noun.3sg@"  > SG_ ; ! OBVIATIVE
-< "+Px3iSg":%^POS 0:o 0:m 0:i 0:y 0:i 0:w 0:a "@U.noun.3isg@" > SG_ ; ! OBVIATIVE
-< "+Px1Pl":%^POS  0:o 0:m 0:i 0:n 0:â 0:n     "@U.noun.1pl@"  > PL_AK ;   ! exclusive Pl
-< "+Px12Pl":%^POS 0:o 0:m 0:i 0:n 0:a 0:w     "@U.noun.12pl@" > PL_AK ; ! inclusive Pl
-< "+Px2Pl":%^POS  0:o 0:m 0:i 0:w 0:â 0:w     "@U.noun.2pl@"  > PL_AK ; !
-< "+Px3Pl":%^POS  0:o 0:m 0:i 0:w 0:â 0:w 0:a "@U.noun.3pl@"  > SG_ ; ! OBVIATIVE
-< "+Px3iPl":%^POS 0:o 0:m 0:i 0:y 0:i 0:w 0:a "@U.noun.3isg@" > SG_ ; ! obviative plural possessor OBVIATIVE
+!LEXICON ANKWDECL_SUFF_SG   
+!< "+Px1Sg":%^POS  0:o 0:m                     "@U.noun.1sg@"  > SG_ ; !
+!< "+Px2Sg":%^POS  0:o 0:m                     "@U.noun.2sg@"  > SG_ ; !
+!< "+Px3Sg":%^POS  0:o 0:m 0:a                 "@U.noun.3sg@"  > SG_ ; ! OBVIATIVE
+!< "+Px3iSg":%^POS 0:o 0:m 0:i 0:y 0:i 0:w 0:a "@U.noun.3isg@" > SG_ ; ! OBVIATIVE
+!< "+Px1Pl":%^POS  0:o 0:m 0:i 0:n 0:â 0:n     "@U.noun.1pl@"  > SG_ ;   ! exclusive Pl
+!< "+Px12Pl":%^POS 0:o 0:m 0:i 0:n 0:a 0:w     "@U.noun.12pl@" > SG_ ; ! inclusive Pl
+!< "+Px2Pl":%^POS  0:o 0:m 0:i 0:w 0:â 0:w     "@U.noun.2pl@"  > SG_ ; !
+!< "+Px3Pl":%^POS  0:o 0:m 0:i 0:w 0:â 0:w 0:a "@U.noun.3pl@"  > SG_ ; ! OBVIATIVE
+!< "+Px3iPl":%^POS 0:o 0:m 0:i 0:y 0:i 0:w 0:a "@U.noun.3isg@" > SG_ ; ! obviative plural possessor OBVIATIVE
+!
+!
+!LEXICON ANKWDECL_SUFF_PL   
+!< "+Px1Sg":%^POS  0:o 0:m                     "@U.noun.1sg@"  > PL_AK ; !
+!< "+Px2Sg":%^POS  0:o 0:m                     "@U.noun.2sg@"  > PL_AK ; !
+!< "+Px3Sg":%^POS  0:o 0:m 0:a                 "@U.noun.3sg@"  > SG_ ; ! OBVIATIVE
+!< "+Px3iSg":%^POS 0:o 0:m 0:i 0:y 0:i 0:w 0:a "@U.noun.3isg@" > SG_ ; ! OBVIATIVE
+!< "+Px1Pl":%^POS  0:o 0:m 0:i 0:n 0:â 0:n     "@U.noun.1pl@"  > PL_AK ;   ! exclusive Pl
+!< "+Px12Pl":%^POS 0:o 0:m 0:i 0:n 0:a 0:w     "@U.noun.12pl@" > PL_AK ; ! inclusive Pl
+!< "+Px2Pl":%^POS  0:o 0:m 0:i 0:w 0:â 0:w     "@U.noun.2pl@"  > PL_AK ; !
+!< "+Px3Pl":%^POS  0:o 0:m 0:i 0:w 0:â 0:w 0:a "@U.noun.3pl@"  > SG_ ; ! OBVIATIVE
+!< "+Px3iPl":%^POS 0:o 0:m 0:i 0:y 0:i 0:w 0:a "@U.noun.3isg@" > SG_ ; ! obviative plural possessor OBVIATIVE
 
 
 !LEXICON INAL_SUFF_PL Not in use
@@ -316,16 +329,16 @@ LEXICON AN_SUFF_PL_IY
 < "+Px3iPl":%^POS 0:i 0:y 0:i 0:w    "@U.noun.3isg@" >  OBVIATIVE ; ! obviative plural possessor, hence Pl is -a
 
 
-LEXICON AN_IRREG_SUFF_LOC
-< "+Px1Sg":%^POS                  "@U.noun.1sg@"  > LOC ; !
-< "+Px2Sg":%^POS                  "@U.noun.2sg@"  > LOC ; !
-< "+Px3Sg":%^POS                  "@U.noun.3sg@"  > LOC ; !
-< "+Px3iSg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > LOC ; !
-< "+Px1Pl":%^POS  0:i 0:n 0:â 0:n "@U.noun.1pl@"  > LOC ;   ! exclusive Pl
-< "+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" > LOC ; ! inclusive Pl
-< "+Px2Pl":%^POS  0:i 0:w 0:â 0:w "@U.noun.2pl@"  > LOC ; !
-< "+Px3Pl":%^POS  0:i 0:w 0:â 0:w "@U.noun.3pl@"  > LOC ; !
-< "+Px3iPl":%^POS 0:i 0:y 0:i 0:w     "@U.noun.3isg@" > LOC ; ! obviative plural possessor
+!LEXICON AN_IRREG_SUFF_LOC
+!< "+Px1Sg":%^POS                  "@U.noun.1sg@"  > LOC ; !
+!< "+Px2Sg":%^POS                  "@U.noun.2sg@"  > LOC ; !
+!< "+Px3Sg":%^POS                  "@U.noun.3sg@"  > LOC ; !
+!< "+Px3iSg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > LOC ; !
+!< "+Px1Pl":%^POS  0:i 0:n 0:â 0:n "@U.noun.1pl@"  > LOC ;   ! exclusive Pl
+!< "+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" > LOC ; ! inclusive Pl
+!< "+Px2Pl":%^POS  0:i 0:w 0:â 0:w "@U.noun.2pl@"  > LOC ; !
+!< "+Px3Pl":%^POS  0:i 0:w 0:â 0:w "@U.noun.3pl@"  > LOC ; !
+!< "+Px3iPl":%^POS 0:i 0:y 0:i 0:w     "@U.noun.3isg@" > LOC ; ! obviative plural possessor
 
 !! !Singular/plural possessed suffixes
 
