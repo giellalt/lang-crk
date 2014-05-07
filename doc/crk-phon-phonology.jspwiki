@@ -1,5 +1,6 @@
 
  *  t2:0       t between prefix and vowel-initial stem
+ *  i2:0       i can change to o and ô in the possession element
  *  %>:0       affix boundary
  *  %^LC:0     Locative suffix alternation trigger
  *  %^DIM:0    Diminutive alternation trigger
@@ -19,16 +20,18 @@
 !!!Rules
 
 
+__h glottal stop for initial vowel stems in Conjunctive__
 
-__Suffix vowel deletion in vowel final stems __ deletes stem vowel in vowel final stems 
+__Suffix vowel deletion in vowel final stems __
 
-__i deletion in vowel final stems__ deletes i in vowel final stems 
+__i deletion in vowel final stems__ 
 
 __w Insertion in Front of Vowel Initial Suffix after ksv c__ inserts w after k in front of plural -ak
 Note that this rule probably is wrong, and that the -w- is
 a morphological affix rather than a phonological variant.
 
 
+__w Insertion in Front of Vowel Initial Suffix after ksv c__  This rule is applying in places where it should not. The usefulness of this rule needs to be rethought before it is re-isntated
 
 
 __locative alternations o__ Okimasis 2004: 26, Rule 1: -k + ohk
@@ -49,14 +52,18 @@ __locative alternation naahk 1		__ adds nâhk after êw/ôw, change w to n. Okim
 
 __possessive prefixes__ 
 
-__-Vw:m alternation in front of possessive suffixes__ -Vw:m alternation in front of possessive suffixes, Okimasis p. 136
+__i2:o in possessive element__ 
 
-__o:oo- alternation initially in possessive forms__ o:oo- alternation initially in possessive forms, Okimasis p. 135
-
-__wis:os in possessive prefix, step 1__ wis:os in possessive prefix, step 1. Okimasis p. 138 ! 
+__i2:0 in possessive element__ 
 
 
-__wis:os in possessive prefix, step 2__ wis:os in possessive prefix, step 2. Okimasis p. 138 ! 
+__-Vw:m alternation in front of possessive suffixes__ , Okimasis p. 136
+
+__o:oo- alternation initially in possessive forms__ , Okimasis p. 135
+
+__wis:os in possessive prefix, step 1__ , step 1. Okimasis p. 138 ! 
+
+__wis:os in possessive prefix, step 2__ , step 2. Okimasis p. 138 ! 
 
 
 __i to a in prefixes in front of nasals__ 
@@ -65,7 +72,6 @@ __i to a in prefixes in front of nasals__
 __Double consonant deletion__ 
 
 
-__Double consonant deletion__ 
 
 
 !!Rules for generating the correct surface forms of -isis the diminutive suffix
@@ -87,10 +93,12 @@ __Diminutives rule change ending to os with k-final stems 1 __ Okimasis 2004: 14
 
 __Diminutives rule change ending to os with k-final stems 2 __ Okimasis 2004: 14, Examples listed in 5.
 
+__Diminutives rule change ending delete i with nouns ending in kwa__
 
 
 
 
+__ee to aa rule in first and second person__
 
 
 
