@@ -117,7 +117,6 @@ Nominal MSP
  * t2 		  Prefix in possessives 
 
  * ^%EGLOT    glottal stop after e, for eh- in conjunctive mood
- * ^%EA      ê to â in 1, 2 person of ê-stems
 
 Flagdiacritics 
 
@@ -204,6 +203,7 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
  * @U.noun.3ipl@ 
 
  * @U.noun.abs@  
+ * @U.noun.dep@ 
 
 
   LEXICON Root          is where it all starts
