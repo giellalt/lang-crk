@@ -151,10 +151,12 @@ LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in 
 !! !! Intransitive inanimate
 !     ====================
 
-!! These have no prefixes, so we go directly to the __IISTEM__ lexicon.
+
 
 LEXICON II 
-IISTEM ;
+<                "@U.verb.NULL@"   > IISTEM ; ! Independent mode
+<  0:ê 0:%-      "@U.verb.sbjPrs@" > IISTEM ; !"
+<  0:ê 0:%^EGLOT "@U.verb.sbjPrs@" > IISTEM ;
 
 
 !! !! Transitive animate
@@ -210,9 +212,34 @@ atoskêw:atoskê IACONJ "work" ; !!= @CODE@ test
 akwahow:akwaho IACONJ "to cover oneself" ; ! Source: Wolvengrey dictionary
 nêhiyawêw:nêhiyawê IACONJ "work" ; !!= @CODE@
 
-LEXICON IISTEM   !!= @CODE@  = VII
-mispon IICONJ "it is snowing" ;
 
+! colour terms
+
+wâpiskisiw:wâpiskisi IACONJ "be white" ;
+kaskitêsiw:kaskitêsi IACONJ "be black" ;
+kaskitêwinâkosiw:kaskitêwinâkosi IACONJ "appear black" ;
+mihkosiw:mihkosi  IACONJ "be red" ;
+sîpihkosiw:sîpihkosi  IACONJ "be blue" ;
+askitahkosiw:askitahkosi  IACONJ "be green" ;
+wâposâwisiw:wâposâwisi  IACONJ "be yellow" ;
+osâwisiw:osâwisi  IACONJ "be orange" ;
+nîpâmâyâtisiw:nîpâmâyâtisi  IACONJ "be purple" ;
+wâpinâkosiw:wâpinâkosi IACONJ "appear white" ;
+
+itasinâsw:itansinâso IACONJ "what colour is" ;
+
+LEXICON IISTEM   !!= @CODE@  = VII
+! Note: the final consonant here is dropped in the future conditional
+! The best solution seems to be to add a twolc rule for that.
+! There is such a rule, but outcommented (Stem Final n), it might be
+! changed to affect only predesigned n-s (say, n2).
+! I leave it for now, as it involves a look at the whole system.
+wâsêskwan  IICONJ "it is sunny" ;
+mispon IICONJ "it is snowing" ;
+yôtin IICONJ "it is windy" ;
+sôhkiyowêw IICONJ "it is a strong wind" ;
+sîkipêstâw IICONJ "it is pouring" ;
+kaskaniwipêscâsin IICONJ "it is misth" ;
 
 LEXICON TASTEM   !!= @CODE@ = VTA
 
