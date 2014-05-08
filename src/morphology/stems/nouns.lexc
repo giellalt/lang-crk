@@ -24,17 +24,11 @@
 LEXICON Nouns 
 
 AN-IN ; ! Animate nouns
-!IN ; ! Inanimate nouns
-INALIENABLE ;
-!ANSTEM_kw ; ! Animate nouns whose stems end in kw
-IRREGAN ; !mistatim, atim
+INALIENABLE ; 
 
 
 LEXICON AN-IN
-!! @LEXNAME@ redirects to ANSTEMS
-!! At the moment it is just a copy of INSTEMS, 
-!! pretending animates and inanimates are identical
-!! Flag diacritics direct to possessive declension later on
+!! @LEXNAME@ redirects to STEMS
 
 @U.noun.abs@ STEMLIST ; 
 
@@ -49,29 +43,12 @@ LEXICON AN-IN
 < 0:o     "@U.noun.3ipl@" 0:"t2" > STEMS ; ! 3-plural-obviate
 
 
-LEXICON IRREGAN
-
-@U.noun.abs@ IRREGANSTEMSLIST ; 
-
-!< 0:m 0:i "@U.noun.dep@"  > IRREGANSTEMS ; ! base-form for dep nouns
-< 0:n 0:i "@U.noun.1sg@" >  IRREGANSTEMS ; ! 1
-< 0:k 0:i "@U.noun.2sg@" >  IRREGANSTEMS ; ! 2
-< 0:o     "@U.noun.3sg@" >  IRREGANSTEMS ; ! 3
-< 0:o     "@U.noun.3isg@" > IRREGANSTEMS ; ! 3-singular-obviative
-< 0:n 0:i "@U.noun.1pl@" >  IRREGANSTEMS ; ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@" > IRREGANSTEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@" >  IRREGANSTEMS ; ! 2pl 
-< 0:o     "@U.noun.3pl@" >  IRREGANSTEMS ; ! 3pl
-< 0:o     "@U.noun.3ipl@" > IRREGANSTEMS ; ! 3-plural-obviate
-
-
-
 
 LEXICON INALIENABLE
 !! @LEXNAME@ redirects to INALIENABLESTEMS
 
 < "@U.noun.abs@" >  INALIENABLESTEMS ; 
-!< 0:m "@U.noun.dep@"  > INALIENABLESTEMS ; ! base form for dep nouns
+
 < 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
 < 0:w    "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
@@ -79,7 +56,7 @@ LEXICON INALIENABLE
 < 0:n "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
 < 0:k "@U.noun.12pl@" > INALIENABLESTEMS ; ! inclusive Pl
 < 0:k "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
-< 0:w  "@U.noun.3pl@"  > INALIENABLESTEMS;       ! 3pl note: is prefix o- correct?
+< 0:w  "@U.noun.3pl@"  > INALIENABLESTEMS;  ! 3pl note: is prefix o- correct?
 < 0:w  "@U.noun.3ipl@"  > INALIENABLESTEMS;       ! 
 
 
@@ -178,38 +155,14 @@ atâwewikamik INDECL "store" ;
 atâwewikamik+Dim:atâwewikamikosis INDECLPROF "small store" ;
 ôtenaw INDECL "city" ;
 ôtenaw+Dim:ocenâsis INDECLPROF "town" ;
-
-
-LEXICON INALIENABLESTEMS  ! dependent nouns
-maniway:aniway INALIENABLEPOSS ; !"someone's cheek" !yaml
-!otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
-!otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
-otehye:otehye INALIENABLEPOSS ;  ! this gives wotehye
-mîpit:îpit INALIENABLEPOSS "tooth" ;
-mikiwâhp:iki INALIENABLEPOSS_SG "home" ;
-mikiwâhp+N+IN:mikiwâhp # ;
-mahkwan:ahkwan INALIENABLEPOSS "heel" ;
-mispiton:ispiton INALIENABLEPOSS "arm" ; !o- in stead of w-
-micihciy:icihciy INALIENABLEPOSS "hand" ; !OBS -iy New lexicon?
-micihciy+Dim:icihcîsis INALIENABLEPOSS "small hand" ; 
-mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
-
-
-LEXICON IRREGANSTEMS
- :%> IRREGANSTEMSLIST ;
- :%> KINSTEMLIST ;
-
-LEXICON IRREGANSTEMSLIST 
 atim ANIRRDECL "dog" ; ! -wak, -ohk, -wa !yaml  
 atim:têm ANIRRINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 mistatim ANIRRDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
 mistatim:têm ANIRRINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
 mitâs:tâs ANIRRINFL "pants" ;
 mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
-mostos ANIRRDECL "cow" ;
-mostos:stos ANIRRDECL "cow" ; !ostos?
 
-LEXICON KINSTEMLIST
+!KINSHIP
 otânisimâw:tânis ANKININFL "daughter" ;
 okosisimâw:kosis ANKININFL "son" ;
 omisimâw:mis ANKININFL "older sister" ;
@@ -231,6 +184,23 @@ onâpêmiwâw:nâpêm ANKININFL_MONOG "husband" ;
 wîkimâkan:wîkimâkan ANKININFL_MONOG "spouse" ; 
 okâwîmâw:kâw ANKININFL_IY "mother" ;! -iy- dissappears Okimasis p. 140, 
 ôhtâwimâw:ôhtâw ANKININFL_IY "father" ;  
+
+
+
+LEXICON INALIENABLESTEMS  ! dependent nouns
+maniway:aniway INALIENABLEPOSS ; !"someone's cheek" !yaml
+!otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
+!otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
+otehye:otehye INALIENABLEPOSS ;  ! this gives wotehye
+mîpit:îpit INALIENABLEPOSS "tooth" ;
+mikiwâhp:iki INALIENABLEPOSS_SG "home" ;
+mikiwâhp+N+IN:mikiwâhp # ;
+mahkwan:ahkwan INALIENABLEPOSS "heel" ;
+mispiton:ispiton INALIENABLEPOSS "arm" ; !o- in stead of w-
+micihciy:icihciy INALIENABLEPOSS "hand" ; !OBS -iy New lexicon?
+micihciy+Dim:icihcîsis INALIENABLEPOSS "small hand" ; 
+mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
+
 
 
 ! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
