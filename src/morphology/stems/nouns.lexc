@@ -75,63 +75,63 @@ LEXICON STEMLIST
 apiscacihkos ANDECL "antelope" ;	
 apisimôsos ANDECL "deer" ; ! apisimôsosak	
 !apisimôsos:apisimôsosis ANDIMDERIVATION "little deer" ; ! apisimôsosak
-apisimôsosis ANDIMDECL "little deer" ; ! apisimôsosak
+apisimôsosis ANDIM "little deer" ; ! apisimôsosak
 anikwacâs ANDECLisis "squirrel" ; !yaml
 asikan ANDECL "sock" ;	!yaml
 !asikan:asikanis ANDIMDERIVATION "little sock" ; 	
-asikanis ANDIMDECL "little sock" ;	
+asikanis ANDIM "little sock" ;	
 asiniy ANDECL "stone" ;	
 atihk ANDECL "caribou" ;	
 !atihk:acihkos ANDIMDERIVATION "little caribou" ;
-acihkos ANDIMDECL "little caribou" ;
+acihkos ANDIM "little caribou" ;
 cahcahkâyow ANDECL "blackbird" ; !yaml
 inini ANDECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.	
 iskwêw ANDECL "a woman" ; !yaml
 maskwa ANDECLis "bear" ; ! maskwak	
-maskosis ANDIMDECL "little moose" ; 
+maskosis ANDIM "little moose" ; 
 !maskwa:maskosis ANDIMDERIVATION "little moose" ; 
-maskosis ANDIMDECL "little moose" ; 
+maskosis ANDIM "little moose" ; 
 mâyatihk ANDECL "bighorn sheep" ;	
 !mâyatihk:mâyacihkos ANDIMDERIVATION "little bighorn sheep" ;	
-mâyacihkos ANDIMDECL "little bighorn sheep" ;	
+mâyacihkos ANDIM "little bighorn sheep" ;	
 mostos ANDECL "cow" ;	!GG p 16: pl is mostoswak. Move to IRREGANSTEMSLIST?
 !mostos:mostosis ANDIMDERIVATION "little cow" ;	
-mostosis ANDIMDECL "little cow" ;	
+mostosis ANDIM "little cow" ;	
 môswa ANDECL "moose" ; ! môswak	
 !môswa:môsos ANDIMDERIVATION "little moose" ; 
-môsos ANDIMDECL "little moose" ; 
+môsos ANDIM "little moose" ; 
 nâpês ANDECL "boy" ;	
 !nâpês:nâpêsis ANDIMDERIVATION "little boy" ;	
-nâpêsis ANDIMDECL "little boy" ;	
+nâpêsis ANDIM "little boy" ;	
 nehiyaw ANDECL "Cree Person" ;	
 niska ANDECL "Canada goose" ; !yaml
 ôhôw ANDECL "owl" ; !yaml
 okistatowân ANDECL "grizzly bear" ; ! okistatowânak	
 !okistatowân:okiscacowânis ANDIMDERIVATION "little grizzly bear" ; !
-okiscacowânis ANDIMDECL "little grizzly bear" ; 
+okiscacowânis ANDIM "little grizzly bear" ; 
 oskâtâsk ANDECL "carrot" ;	
 sônîyâw ANDECL "money" ;
 oskâtâsk:oskâcâskos ANDIMDERIVATION "little carrot" ;	
-oskâcâskos ANDIMDECL "little carrot" ;	
+oskâcâskos ANDIM "little carrot" ;	
 pisiw ANDECL "cougar" ;
 sihkihp ANDECL "boil, carbuncle" ; !yaml
 sihkihp ANDECL "grebe, diving bird" ; !doublet,
 sikâk ANDECL "skunk" ;	!yaml
 sikâk:sikâkos ANDIMDERIVATION "little skunk" ;
-sikâkos ANDIMDECL "little skunk" ;
+sikâkos ANDIM "little skunk" ;
 wâpask ANDECL "polar bear" ; ! wâpaskwak	
 wâpask:wâpaskos ANDIMDERIVATION "little polar bear" ; 
-wâpaskos ANDIMDECL "little polar bear" ; 
+wâpaskos ANDIM "little polar bear" ; 
 wâwaskesiw ANDECL "elk" ;
 wayasit ANDECL "hoof" ; !yaml !possibly -is in Dim
 !mistatim:miscacimosis ANDIMDERIVATION ;
-miscacimosis ANDIMDECL ;
+miscacimosis ANDIM ;
 pîsim ANDECL "month, sun" ;
 pahkwêsikan ANimDECL "bannock" ; ! exstra -im in poss, Okimasis
 minôs ANimDECL "cat" ; ! exstra -im in poss GG p 25
-!minôs+Dim:minôsis ANDIMDECL "little cat" ;	!minôsisis GG p 17
+!minôs+Dim:minôsis ANDIM "little cat" ;	!minôsisis GG p 17
 sîsîp ANimDECL "duck" ;	! exstra -im in poss GG p 25
-!sîsîp+Dim:sîsîpis ANDIMDECL "duckling" ;	! sîsîpisis
+!sîsîp+Dim:sîsîpis ANDIM "duckling" ;	! sîsîpisis
 tatâwewkamik ANimDECL ; ! GG p 25
 tohtôsâpoy ANimDECL ; ! GG p 25
 okimâw ANimDECL "boss" ; ! GG p 25
@@ -148,40 +148,40 @@ mîcimâpoy INDECL "soup" ;
 sîsîpiwâwi INDECL "duck egg" ;
 wâwi INDECL "egg" ; ! <== Analysed with hfst, but not with xfst.
 !wâwi:wâwis INDIMDERIVATION "little egg" ; !Proficient speakers use abbreviated diminutive
-wâwis INDIMDECL "little egg" ;
+wâwis INDIM "little egg" ;
 ôtênaw INDECL "city" ;
 ôtênaw:ôcênâs INDIMDERIVATION "little city" ; !Proficient speakers use abbreviated diminutive
-ôcênâs INDIMDECL "little city" ; 
+ôcênâs INDIM "little city" ; 
 maskisin INDECL "shoe" ; !yaml
 !maskisin:maskisinis INDIMDERIVATION "little shoe" ;
-maskisinis INDIMDECL "little shoe" ;
+maskisinis INDIM "little shoe" ;
 mistikowat INDECL "box" ;
 !mistikowat:miscikowacis INDIMDERIVATION "little box" ;
-miscikowacis INDIMDECL "little box" ;
+miscikowacis INDIM "little box" ;
 pikiw INDECL "gum" ; !Dim: pikis
 iskwâhtêm INDECL "door" ;
 !iskwâhtêm:iskwâhcêmis INDIMDERIVATION "little door" ;
-iskwâhcêmis INDIMDECL "little door" ;
+iskwâhcêmis INDIM "little door" ;
 môhkomân INDECL  "knife" ;
 !môhkomân:môhkomânis INDIMDERIVATION  "little knife" ;
-môhkomânis INDIMDECL  "little knife" ;
+môhkomânis INDIM  "little knife" ;
 iskotêw INDECL "fire" ;
 iskotêw:iskocês INDIMDERIVATION "fire" ;
-iskocês INDIMDECL "fire" ;
+iskocês INDIM "fire" ;
 ôskan INDECL "bone" ;
 !ôskan:ôskanis INDIMDERIVATION "little bone" ;
-ôskanis INDIMDECL "little bone" ;
+ôskanis INDIM "little bone" ;
 wiyâkan INDECL "bowl" ;
 !wiyâkan:wiyâkanis INDIMDERIVATION "bowl" ;
-wiyâkanis INDIMDECL "bowl" ;
+wiyâkanis INDIM "bowl" ;
 kîkisepâ INDECLisis "morning" ;
 ôsi INDECL "canoe" ; !yaml
 atâwewikamik INDECLis "store" ;
 atâwewikamik:atâwewikamikosis INDIMDERIVATION "small store" ;
-atâwewikamikosis INDIMDECL "small store" ;
+atâwewikamikosis INDIM "small store" ;
 ôtenaw INDECL "city" ;
 !ôtenaw:ocenâsis INDIMDERIVATION "town" ;
-ocenâsis INDIMDECL "town" ;
+ocenâsis INDIM "town" ;
 atim ANIRRDECL "dog" ; ! -wak, -ohk, -wa !yaml  
 atim:têm ANIRRINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 mistatim ANIRRDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
