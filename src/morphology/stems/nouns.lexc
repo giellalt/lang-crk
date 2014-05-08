@@ -137,11 +137,11 @@ tohtôsâpoy ANIMDECL ; ! GG p 25
 okimâw ANIMDECL "boss" ; ! GG p 25
 
 
-wâposw:wâpos ANKWDECL "rabbit" ; !how is plural -kwak?
-amiskw:amisk ANKWDECL "beaver" ;
-mistikw:mistik ANKWDECL "stick" ;
-askihkw:askihk ANKWDECL "pail" ;
-mahkahkw:mahkahk ANKWDECL "tub/barrel" ;
+wâposw:wâpos ANkwDECL "rabbit" ; !how is plural -kwak?
+amiskw:amisk ANkwDECL "beaver" ;
+mistikw:mistik ANkwDECL "stick" ;
+askihkw:askihk ANkwDECL "pail" ;
+mahkahkw:mahkahk ANkwDECL "tub/barrel" ;
 
 sakâw INDECL "bush" ;
 mîcimâpoy INDECL "soup" ;
@@ -189,7 +189,7 @@ mistatim:têm ANIRRINFL "horse-possessed" ; !"my horse" is nitêm, no other poss
 mitâs:tâs ANIRRINFL "pants" ;
 mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
 
-!! !KINSHIP nouns come here, they also in STEMLIST lexicon
+!! !KINSHIP nouns come here, they are in STEMLIST lexicon
 otânisimâw:tânis ANKININFL "daughter" ;
 okosisimâw:kosis ANKININFL "son" ;
 omisimâw:mis ANKININFL "older sister" ;
@@ -209,8 +209,8 @@ nicâhkos:câhkos ANKININFL "cousin/sister in law" ;
 nôsisim:ôsisim ANKININFL "grandchild" ;
 onâpêmiwâw:nâpêm ANKININFL_MONOG "husband" ;
 wîkimâkan:wîkimâkan ANKININFL_MONOG "spouse" ; 
-okâwîmâw:kâw ANKININFL_IY "mother" ;! -iy- dissappears Okimasis p. 140, 
-ôhtâwimâw:ôhtâw ANKININFL_IY "father" ;  
+okâwîmâw:kâw ANKINiyINFL "mother" ;! -iy- dissappears Okimasis p. 140, 
+ôhtâwimâw:ôhtâw ANKINiyINFL "father" ;  
 
 
 
@@ -227,7 +227,8 @@ mikiwâhp+N+IN:mikiwâhp # ;
 mahkwan:ahkwan INALIENABLEPOSS "heel" ;
 mispiton:ispiton INALIENABLEPOSS "arm" ; !o- in stead of w-
 micihciy:icihciy INALIENABLEPOSS "hand" ; !OBS -iy New lexicon?
-micihciy+Dim:icihcîsis INALIENABLEPOSS "small hand" ; 
+micihciy:icihcîsis INALIENABLEDERIVATION "small hand" ; 
+micihcîsis:icihcîsis INALIENABLEPOSS "small hand" ; 
 mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
 
 
