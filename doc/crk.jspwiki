@@ -106,6 +106,7 @@ Nominal MSP
  * +Px2Pl	 
  * +Px3Pl	 
  * +Px3iPl	 
+ * +Dim/Der 
 
  * +IA       intransitive with animate subject, 
  * +II       intransitive with inanimate subject, 
@@ -370,12 +371,12 @@ INALIENABLE redirects to INALIENABLESTEMS
 
 STEMS add a affismark and redirects to STEMLIST
 
-
 STEMLIST contains most of the nouns
 
 
 
 
+!KINSHIP nouns come here, they also in STEMLIST lexicon
 
 
 
@@ -519,6 +520,8 @@ The stems
 
  * LEXICON ANDECLPROF  Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
+ * LEXICON ANDIMDERIVATION  To be continued 
+
  * LEXICON ANIRRDECL	 is there to handle the highly irregular atim and mistatim.
 
  * LEXICON ANKININFL  The lexicon gives a base form N+AN
@@ -538,6 +541,9 @@ The stems
 !!The declinations for Inanimates
 
  * LEXICON INDECL  for the inanimate declension
+
+ * LEXICON INDIMDERIVATION  To be continued
+
 
 LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
