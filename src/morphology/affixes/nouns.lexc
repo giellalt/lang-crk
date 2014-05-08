@@ -45,7 +45,7 @@ LEXICON ANDECLPROF !!= * @CODE@ Declensions for nouns taking reduced diminutive 
 +N+AN+Pl+Dim:%> AN_SUFF_PL ;
 +N+AN+Dim:%> AN_SUFF_LOC ;
 
-LEXICON ANDIMDERIVATION  
+LEXICON ANDIMDERIVATION !!= * @CODE@ To be continued 
 < "+N":0 "+AN":0 "+Der/Dim":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 
 LEXICON ANIRRDECL	!!= * @CODE@ is there to handle the highly irregular atim and mistatim.
@@ -110,7 +110,7 @@ LEXICON INDECL !!= * @CODE@ for the inanimate declension
 +N+IN:%> IN_DIM_LOC ;
 +N+IN:%> IN_SUFF_LOC ;
 
-LEXICON INDIMDERIVATION  
+LEXICON INDIMDERIVATION !!= * @CODE@ To be continued
 < "+N":0 "+IN":0 "+Der/Dim":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 
 
