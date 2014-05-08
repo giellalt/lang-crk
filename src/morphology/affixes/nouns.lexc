@@ -47,7 +47,7 @@ LEXICON ANDECLis !!= * @CODE@ for the animate declension, -is diminutive
 +N+AN:%> ANSUFF_LOC ;
 +N+AN+Der/Dim:%>%^DIMis%> ANDIM ;
 
-LEXICON ANDECL !!= * @CODE@ for the animate declension, both -isis and -is diminutive
+LEXICON ANDECL !!= * @CODE@ for the animate declension, both -isis and -is diminutives
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
@@ -60,11 +60,10 @@ LEXICON ANDECL !!= * @CODE@ for the animate declension, both -isis and -is dimin
 +N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
 
 
-
-LEXICON ANDIMDERIVATION !!= * @CODE@ 
+LEXICON ANDIMDERIVATION !!= * @CODE@ for hardcoded diminutives
 +N+AN+Der/Dim: ANDIM ; 
 
-LEXICON ANDIM !!= * @CODE@ for diminutives
+LEXICON ANDIM !!= * @CODE@ both for lexicalised and derivated diminutives
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
 +N+AN: ANSUFF_LOC ;
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
@@ -90,7 +89,7 @@ LEXICON ANIRRDECL	!!= * @CODE@ for atim and mistatim.
 +N+AN+Der/Dim:%>os%^DIMis%> ANDIM ;
 
 
-LEXICON ANKININFL !!= * @CODE@ The lexicon gives a base form N+AN
+LEXICON ANKININFL !!= * @CODE@ The lexicon gives a base form N+AN (if we want it)
 < "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
  ANIRRINFL ;
 
