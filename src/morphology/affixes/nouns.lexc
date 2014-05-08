@@ -5,20 +5,24 @@
 
 !! !!The declinations for Animates
 
-LEXICON ANIMDECL !!= * @CODE@ for the animate declension, possessive element Okimasis p. 134
+LEXICON ANimDECL !!= * @CODE@ for the animate declension, possessive element Okimasis p. 134
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
 < "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; !
 +N+AN+Sg:i2m%> ANSUFF_SG ;
 +N+AN+Pl:i2m%> ANSUFF_PL ;
-+N+AN:%> ANDIMis_SG ;
-+N+AN:%> ANDIMis_PL ;
-+N+AN:i2m%> ANDIMis_SUFF_SG ; !Grammar p. 27: possessive element
-+N+AN:i2m%> ANDIMis_SUFF_PL ;  
 +N+AN:i2m%> ANSUFF_LOC ;
-+N+AN:%> ANDIMis_LOC ;
-+N+AN:i2m%> ANDIMis_SUFF_LOC ;
++N+AN+Der/Dim:%> ANimDIM ;
+
+
+LEXICON ANimDIM !!= * @CODE@ the diminutives with possessive element Okimasis p. 134
+< "+N":%^DIM "+AN":i 0:s "@U.noun.abs@" >  LOC ; !
++N+AN:im%^DIMis%> ANSUFF_LOC ;
+< "+N":%^DIM "+AN":i "+Sg":s "@U.noun.abs@" >  SG_ ; !
+< "+N":%^DIM "+AN":i "+Pl":s "@U.noun.abs@" >  PLak ; !
++N+AN+Sg:im%^DIM%>is ANSUFF_SG ;
++N+AN+Pl:im%^DIM%>is ANSUFF_PL ;
 
 
 LEXICON ANDECL !!= * @CODE@ for the animate declension
@@ -28,12 +32,19 @@ LEXICON ANDECL !!= * @CODE@ for the animate declension
 < "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; !
 +N+AN+Sg:%> ANSUFF_SG ;
 +N+AN+Pl:%> ANSUFF_PL ;
-+N+AN:%> ANDIMisis_SG ;
-+N+AN:%> ANDIMisis_PL ;
-+N+AN:%> ANDIMisis_SUFF_SG ;
-+N+AN:%> ANDIMisis_SUFF_PL ;
 +N+AN:%> ANSUFF_LOC ;
-+N+AN:%> ANDIMisis_LOC ;
++N+AN:%> ANSUFF_LOC ;
++N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
+
+
+LEXICON ANDIM !!= * @CODE@ for diminutives
+< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
++N+AN: ANSUFF_LOC ;
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
++N+AN+Sg: ANSUFF_SG ;
++N+AN+Pl: ANSUFF_PL ;
+
 
 LEXICON ANDIMDERIVATION !!= * @CODE@ 
 +N+AN+Der/Dim: ANDIMDERDECL ; 
@@ -47,7 +58,7 @@ LEXICON ANDIMDERDECL !!= * @CODE@
 +N+AN:%> ANSUFF_LOC ;
 
 
-LEXICON ANDECLPROF !!= * @CODE@ Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+LEXICON ANDIMDECL !!= * @CODE@ Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 < "+N":0 "+AN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0 "+Pl":0 "+Dim":0 "@U.noun.abs@" >  PLak ; !
 < "+N":0 "+AN":0 "+Dim":0 "@U.noun.abs@" >  LOC ; !
@@ -56,12 +67,13 @@ LEXICON ANDECLPROF !!= * @CODE@ Declensions for nouns taking reduced diminutive 
 +N+AN+Dim:%> ANSUFF_LOC ;
 
 
-LEXICON ANIRRDECL	!!= * @CODE@ is there to handle the highly irregular atim and mistatim.
+LEXICON ANIRRDECL	!!= * @CODE@ for atim and mistatim.
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLwak ; !
-< "+N":0 "+AN":0 "@U.noun.abs@" >  IRREG_LOC ; ! ohk
-< "+N":0 "+AN":0 "@U.noun.abs@" >  IRREG_OBVIATIVE ; ! -wa
-+N+AN: ANDIMIRR_ABS ;
+< "+N":0 "+AN":0 "@U.noun.abs@" >  ANohk_LOC ; ! ohk
+< "+N":0 "+AN":0 "@U.noun.abs@" >  ANwa_OBV ; ! -wa
++N+AN+Der/Dim:%>os%^DIMis%> ANDIM ;
+
 
 LEXICON ANKININFL !!= * @CODE@ The lexicon gives a base form N+AN
 < "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
@@ -71,8 +83,7 @@ LEXICON ANKINiyINFL  !!= * @CODE@ Special treatment for nouns ending with -iy
 < "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
 +N+AN+Sg: ANiySUFF_SG ;
 +N+AN+Pl: ANiySUFF_PL ;
-+N+AN: ANDIMIRR_SG ;  
-+N+AN: ANDIMIRR_PL ;  
++N+AN+Der/Dim:%>%^DIMisis%> ANDIMIRR ;  
 +N+AN:%> ANSUFF_LOC ;  
 
 
@@ -92,8 +103,7 @@ LEXICON ANIRRINFL !!= * @CODE@ is also there to handle the highly irregular atim
 !< "+N":0 "+AN":0 "@U.noun.dep@" > # ; !Base form for dep nouns
 +N+AN+Sg: ANSUFF_SG ;
 +N+AN+Pl: ANSUFF_PL ;
-+N+AN: ANDIMIRR_SG ;
-+N+AN: ANDIMIRR_PL ;
++N+AN+Der/Dim:%>is%^DIMis%> ANDIMIRR ;
 +N+AN:%> ANSUFF_LOC ;
 
 LEXICON ANkwDECL !!= * @CODE@ takes -om as extra suffix in possessed form
@@ -113,10 +123,19 @@ LEXICON INDECL !!= * @CODE@ for the inanimate declension
 < "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
-+N+IN:%> INDIM_SG ;
-+N+IN:%> INDIM_PL ;
-+N+IN:%> INDIM_LOC ;
 +N+IN:%> INSUFF_LOC ;
++N+IN+Der/Dim:%>is%^DIMis%> INDIM ;
+
+
+LEXICON INDIM !!= * @CODE@ for the inanimate diminutives
+< "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
++N+IN: INSUFF_LOC ;
+< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PLa ; !
++N+IN+Sg: INSUFF_SG ;
++N+IN+Pl: INSUFF_PL ;
+
+
 
 LEXICON INDIMDERIVATION !!= * @CODE@
 +N+IN+Der/Dim:  INDIMDERDECL ;
@@ -129,7 +148,7 @@ LEXICON INDIMDERDECL !!= * @CODE@
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
 
-LEXICON INDECLPROF !!= Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+LEXICON INDIMDECL !!= Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 < "+N":0 "+IN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+IN":0 "+Pl":0 "+Dim":0 "@U.noun.abs@" >  PLa ; !
 < "+N":0 "+IN":0 "+Dim":0 "@U.noun.abs@" >  LOC ; !
@@ -156,37 +175,20 @@ LEXICON INALIENABLEPOSS_SG !!= * @CODE@ inanimate possessive declension, only Sg
 
 !!  !Diminutive suffixes in animate stems
 
-LEXICON ANDIMisis_SG !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-
 LEXICON ANDIMis_SG !!= * @CODE@
 < "+Dim":i 0:s 0:%^DIM "+Sg":0 "@U.noun.abs@" >  SG_ ; !
 
 
-LEXICON ANDIMisis_SUFF_SG !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 >  ANSUFF_SG ;
-
 LEXICON ANDIMis_SUFF_SG !!= * @CODE@
 < "+Dim":i 0:s 0:%^DIM "+Sg":0 >  ANSUFF_SG ;
-
-
-LEXICON ANDIMisis_PL !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PLak ; !
 
 LEXICON ANDIMis_PL !!= * @CODE@
 < "+Dim":i 0:s 0:%^DIM  "+Pl":0 "@U.noun.abs@" >  PLak ; !
 
 
-LEXICON ANDIMisis_SUFF_PL !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 >   ANSUFF_PL ; !
-
-LEXICON ANDIMis_SUFF_PL !!= * @CODE@
+LEXICON ANDIMis_SUFF_PL 
 < "+Dim":i 0:s 0:%^DIM "+Pl":0 >   ANSUFF_PL ; !
 
-
-LEXICON ANDIMisis_LOC !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "@U.noun.abs@" >  LOC ; !
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s > ANSUFF_LOC ;
 
 LEXICON ANDIMis_LOC !!= * @CODE@
 < "+Dim":i 0:s 0:%^DIM  "@U.noun.abs@" >  LOC ; !
@@ -196,38 +198,10 @@ LEXICON ANDIMis_SUFF_LOC !!= * @CODE@
 
 !! !Diminutive suffixes in animate stems taking the form -osis
 
-LEXICON ANDIMIRR_SG !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 >   ANSUFF_SG ; !
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s >   ANSUFF_LOC ;
-
-LEXICON ANDIMIRR_PL !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 >   ANSUFF_PL ; !
-
-LEXICON ANDIMIRR_ABS !!= * @CODE@
-< "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+Dim":o 0:s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PLak ; !
-< "+Dim":o 0:s 0:%^DIM 0:i 0:s         "@U.noun.abs@" >  LOC ; !
-
-!!  !Diminutive suffixes in inanimate stems
-
-LEXICON INDIM_SG !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Sg":0 >  INSUFF_SG ;
-
-LEXICON INDIM_PL !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 "@U.noun.abs@" >  PLa ; !
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "+Pl":0 >   INSUFF_PL ; !
-
-LEXICON INDIM_LOC !!= * @CODE@
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s "@U.noun.abs@" >  LOC ; !
-< "+Dim":i 0:s 0:%^DIM 0:i 0:s > INSUFF_LOC ;
-
-
-
-
-
-
-
+LEXICON ANDIMIRR !!= * @CODE@
++N+AN+Sg: ANSUFF_SG ; !
++N+AN+Pl: ANSUFF_PL ; !
++N+AN: ANSUFF_LOC ;
 
 
 !! !!Animate inflectional suffixes
@@ -345,7 +319,7 @@ LEXICON ANiySUFF_PL
 !:%>nân SG_ ;
 
 
-!LEXICON SGwaaw
+!LEXICON SGwaaw Not in use
 !:%>wâw SG_ ;
 
 
@@ -353,8 +327,8 @@ LEXICON ANiySUFF_PL
 !:%>nânak # ;
 
 
-LEXICON PLwaaw_ak !!= * @CODE@ Not in use
-:%>wâwak # ;
+!LEXICON PLwaaw_ak  Not in use
+!:%>wâwak # ;
 
 
 !LEXICON PL_waaw_A  Not in use
@@ -382,7 +356,7 @@ LEXICON PLwak !!= * @CODE@
 LEXICON LOC !!= * @CODE@ 
 +Loc:%>i%^LChk  # ;
 
-LEXICON IRREG_LOC !!= * @CODE@ 
+LEXICON ANohk_LOC !!= * @CODE@ 
 +Loc:%>o%^LChk # ;
 
 
@@ -390,5 +364,5 @@ LEXICON IRREG_LOC !!= * @CODE@
 LEXICON OBVIATIVE
 +Obv:%>a # ;
 
-LEXICON IRREG_OBVIATIVE
+LEXICON ANwa_OBV
 +Obv:%>wa # ;
