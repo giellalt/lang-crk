@@ -3,22 +3,34 @@
 
 !!The declinations for Animates
 
- * LEXICON ANIMDECL  for the animate declension, possessive element Okimasis p. 134
+ * LEXICON ANimDECL  for the animate declension, possessive element Okimasis p. 134
 
 
- * LEXICON ANDECL  for the animate declension
+ * LEXICON ANimDIM  the diminutives with possessive element Okimasis p. 134
+
+
+ * LEXICON ANDECLisis  for the animate declension, -isis diminutive
+
+ * LEXICON ANDECLis  for the animate declension, -is diminutive
+
+ * LEXICON ANDECL  for the animate declension, both -isis and -is diminutive
 
 
 
- * LEXICON ANDECLPROF  Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+ * LEXICON ANDIMDERIVATION  
 
- * LEXICON ANDIMDERIVATION  To be continued 
+ * LEXICON ANDIM  for diminutives
 
- * LEXICON ANIRRDECL	 is there to handle the highly irregular atim and mistatim.
+
+ * LEXICON ANDIMDECL  Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+
+
+ * LEXICON ANIRRDECL	 for atim and mistatim.
+
 
  * LEXICON ANKININFL  The lexicon gives a base form N+AN
 
- * LEXICON ANKININFL_IY   Special treatment for nouns ending with -iy
+ * LEXICON ANKINiyINFL   Special treatment for nouns ending with -iy
 
 
  * LEXICON ANKININFL_MONOG  No bigami
@@ -26,7 +38,7 @@
 
  * LEXICON ANIRRINFL  is also there to handle the highly irregular atim and mistatim
 
- * LEXICON ANKWDECL  takes -om as extra suffix in possessed form
+ * LEXICON ANkwDECL  takes -om as extra suffix in possessed form
 
 
 
@@ -34,12 +46,24 @@
 
  * LEXICON INDECL  for the inanimate declension
 
- * LEXICON INDIMDERIVATION  To be continued
+ * LEXICON INDECLisis  for the inanimate declension
+
+ * LEXICON INDECLis  for the inanimate declension
 
 
-LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+ * LEXICON INDIMDERIVATION 
+
+
+ * LEXICON INDIM  for the inanimate diminutives
+
+
+LEXICON INDIMDECL   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+
+ * LEXICON INALIENABLEDERIVATION 
 
  * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
+
+
 
  * LEXICON INALIENABLEPOSS_SG  inanimate possessive declension, only Sg
 
@@ -48,62 +72,31 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
  !Diminutive suffixes in animate stems
 
- * LEXICON AN_DIM_ISIS_SG 
-
- * LEXICON AN_DIM_IS_SG 
+ * LEXICON ANDIMis_SG 
 
 
- * LEXICON AN_DIM_ISIS_SUFF_SG 
+ * LEXICON ANDIMis_SUFF_SG 
 
- * LEXICON AN_DIM_IS_SUFF_SG 
-
-
- * LEXICON AN_DIM_ISIS_PL 
-
- * LEXICON AN_DIM_IS_PL 
+ * LEXICON ANDIMis_PL 
 
 
- * LEXICON AN_DIM_ISIS_SUFF_PL 
-
- * LEXICON AN_DIM_IS_SUFF_PL 
 
 
- * LEXICON AN_DIM_ISIS_LOC 
+ * LEXICON ANDIMis_LOC 
 
- * LEXICON AN_DIM_IS_LOC 
-
- * LEXICON AN_DIM_IS_SUFF_LOC 
+ * LEXICON ANDIMis_SUFF_LOC 
 
 !Diminutive suffixes in animate stems taking the form -osis
 
- * LEXICON AN_DIM_IRR_SG 
-
- * LEXICON AN_DIM_IRR_PL 
-
- * LEXICON AN_DIM_IRR_ABS 
-
- !Diminutive suffixes in inanimate stems
-
- * LEXICON IN_DIM_SG 
-
- * LEXICON IN_DIM_PL 
-
- * LEXICON IN_DIM_LOC 
-
-
-
-
-
-
-
+ * LEXICON ANDIMIRR 
 
 
 !!Animate inflectional suffixes
 
- * LEXICON AN_SUFF_SG  
+ * LEXICON ANSUFF_SG  
 
 
- * LEXICON AN_SUFF_PL  
+ * LEXICON ANSUFF_PL  
 
 
 
@@ -112,10 +105,10 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 !!Inanimate inflectional suffixes
 
 
- * LEXICON IN_SUFF_SG  
+ * LEXICON INSUFF_SG  
 
 
- * LEXICON IN_SUFF_PL  
+ * LEXICON INSUFF_PL  
 
 
 
@@ -131,12 +124,10 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
 
 
 
- * LEXICON SG_waaw  
 
 
 
 
- * LEXICON PL_waaw_AK  Not in use
 
 
 
@@ -144,20 +135,20 @@ LEXICON INDECLPROF   Declensions for nouns taking reduced diminutive at by more 
  * LEXICON SG_  
 
 
- * LEXICON PL_A  
+ * LEXICON PLa  
 
 
- * LEXICON PL_AK  
+ * LEXICON PLak  
 
 
- * LEXICON PL_WAK  
+ * LEXICON PLwak  
 
 
 !Locative suffixes
 
  * LEXICON LOC  
 
- * LEXICON IRREG_LOC  
+ * LEXICON ANohk_LOC  
 
 
 
