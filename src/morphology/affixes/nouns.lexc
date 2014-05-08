@@ -35,6 +35,16 @@ LEXICON ANDECL !!= * @CODE@ for the animate declension
 +N+AN:%> ANSUFF_LOC ;
 +N+AN:%> ANDIMisis_LOC ;
 
+LEXICON ANDIMDERIVATION !!= * @CODE@ 
++N+AN+Der/Dim: ANDIMDERDECL ; 
+
+LEXICON ANDIMDERDECL !!= * @CODE@
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
+< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
++N+AN+Sg:%> ANSUFF_SG ;
++N+AN+Pl:%> ANSUFF_PL ;
++N+AN:%> ANSUFF_LOC ;
 
 
 LEXICON ANDECLPROF !!= * @CODE@ Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
@@ -45,8 +55,6 @@ LEXICON ANDECLPROF !!= * @CODE@ Declensions for nouns taking reduced diminutive 
 +N+AN+Pl+Dim:%> ANSUFF_PL ;
 +N+AN+Dim:%> ANSUFF_LOC ;
 
-LEXICON ANDIMDERIVATION !!= * @CODE@ To be continued 
-< "+N":0 "+AN":0 "+Der/Dim":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 
 LEXICON ANIRRDECL	!!= * @CODE@ is there to handle the highly irregular atim and mistatim.
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
@@ -110,11 +118,10 @@ LEXICON INDECL !!= * @CODE@ for the inanimate declension
 +N+IN:%> INDIM_LOC ;
 +N+IN:%> INSUFF_LOC ;
 
-LEXICON INDIMDERIVATION !!= * @CODE@ To be continued
-< "+N":0 "+IN":0 "+Der/Dim":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+LEXICON INDIMDERIVATION !!= * @CODE@
++N+IN+Der/Dim:  INDIMDERDECL ;
 
-
-LEXICON INDECLPROF !!= Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+LEXICON INDIMDERDECL !!= * @CODE@
 < "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PLa ; !
 < "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
@@ -122,13 +129,22 @@ LEXICON INDECLPROF !!= Declensions for nouns taking reduced diminutive at by mor
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
 
+LEXICON INDECLPROF !!= Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
+< "+N":0 "+IN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+IN":0 "+Pl":0 "+Dim":0 "@U.noun.abs@" >  PLa ; !
+< "+N":0 "+IN":0 "+Dim":0 "@U.noun.abs@" >  LOC ; !
++N+IN+Sg+Dim:%> INSUFF_SG ;
++N+IN+Pl+Dim:%> INSUFF_PL ;
++N+IN+Dim:%> INSUFF_LOC ;
+
+LEXICON INALIENABLEDERIVATION !!= * @CODE@
++N+IN+Der/Dim:  INALIENABLEPOSS ;
+
 LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
 !< "+N":0 "+IN":0 "@U.noun.dep@" > # ; !Base form for dep nouns
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
 
-LEXICON INALIENABLEDERIVATION !!= * @CODE@ To be continued
-< "+N":0 "+IN":0 "+Der/Dim":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 
 
 LEXICON INALIENABLEPOSS_SG !!= * @CODE@ inanimate possessive declension, only Sg
