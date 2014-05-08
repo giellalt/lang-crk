@@ -160,7 +160,7 @@ INABSDECL ;
 +N+IN+Pl: INSUFF_PL ;
 
 LEXICON INABSDECL !!= * @CODE@ for inanimate absolute declension
-< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  Sg_ ; !
+< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
 < "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PLa ; !
 < "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
 
