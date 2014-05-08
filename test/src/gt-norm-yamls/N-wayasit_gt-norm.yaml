@@ -13,9 +13,9 @@ Tests:
      wayasit+N+AN+Sg: wayasit
      wayasit+N+AN+Pl: wayasitak
      wayasit+N+AN+Loc: wayasitihk
-     wayasit+N+AN+Dim+Sg: wayasicisis
-     wayasit+N+AN+Dim+Pl: wayasicisisak
-     wayasit+N+AN+Dim+Loc: wayasicisisihk
+     wayasit+N+AN+Der/Dim+N+AN+Sg: wayasicisis
+     wayasit+N+AN+Der/Dim+N+AN+Pl: wayasicisisak
+     wayasit+N+AN+Der/Dim+N+AN+Loc: wayasicisisihk
 
      wayasit+N+AN+Sg+Px1Sg: niwayasit
      wayasit+N+AN+Sg+Px2Sg: kiwayasit
@@ -37,25 +37,25 @@ Tests:
      wayasit+N+AN+Pl+Px3Pl+Obv: owayasitiwâwa
      wayasit+N+AN+Pl+Px3iPl+Obv: owayasitiyiwa
 
-     wayasit+N+AN+Dim+Sg+Px1Sg: niwayasicisis
-     wayasit+N+AN+Dim+Sg+Px2Sg: kiwayasicisis
-     wayasit+N+AN+Dim+Sg+Px3Sg+Obv: owayasicisisa
-     wayasit+N+AN+Dim+Sg+Px3iSg+Obv: owayasicisisiyiwa
-     wayasit+N+AN+Dim+Sg+Px1Pl: niwayasicisisinân
-     wayasit+N+AN+Dim+Sg+Px12Pl: kiwayasicisisinaw
-     wayasit+N+AN+Dim+Sg+Px2Pl: kiwayasicisisiwâw
-     wayasit+N+AN+Dim+Sg+Px3Pl+Obv: owayasicisisiwâwa
-     wayasit+N+AN+Dim+Sg+Px3iPl+Obv: owayasicisisiyiwa
+     wayasit+N+AN+Der/Dim+N+AN+Sg+Px1Sg: niwayasicisis
+     wayasit+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kiwayasicisis
+     wayasit+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: owayasicisisa
+     wayasit+N+AN+Der/Dim+N+AN+Sg+Px3iSg+Obv: owayasicisisiyiwa
+     wayasit+N+AN+Der/Dim+N+AN+Sg+Px1Pl: niwayasicisisinân
+     wayasit+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kiwayasicisisinaw
+     wayasit+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kiwayasicisisiwâw
+     wayasit+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: owayasicisisiwâwa
+     wayasit+N+AN+Der/Dim+N+AN+Sg+Px3iPl+Obv: owayasicisisiyiwa
 
-     wayasit+N+AN+Dim+Pl+Px1Sg: niwayasicisisak
-     wayasit+N+AN+Dim+Pl+Px2Sg: kiwayasicisisak
-     wayasit+N+AN+Dim+Pl+Px3Sg+Obv: owayasicisisa
-     wayasit+N+AN+Dim+Pl+Px3iSg+Obv: owayasicisisiyiwa
-     wayasit+N+AN+Dim+Pl+Px1Pl: niwayasicisisinânak
-     wayasit+N+AN+Dim+Pl+Px12Pl: kiwayasicisisinawak
-     wayasit+N+AN+Dim+Pl+Px2Pl: kiwayasicisisiwâwak
-     wayasit+N+AN+Dim+Pl+Px3Pl+Obv: owayasicisisiwâwa
-     wayasit+N+AN+Dim+Pl+Px3iPl+Obv: owayasicisisiyiwa
+     wayasit+N+AN+Der/Dim+N+AN+Pl+Px1Sg: niwayasicisisak
+     wayasit+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kiwayasicisisak
+     wayasit+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: owayasicisisa
+     wayasit+N+AN+Der/Dim+N+AN+Pl+Px3iSg+Obv: owayasicisisiyiwa
+     wayasit+N+AN+Der/Dim+N+AN+Pl+Px1Pl: niwayasicisisinânak
+     wayasit+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kiwayasicisisinawak
+     wayasit+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kiwayasicisisiwâwak
+     wayasit+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: owayasicisisiwâwa
+     wayasit+N+AN+Der/Dim+N+AN+Pl+Px3iPl+Obv: owayasicisisiyiwa
 
      wayasit+N+AN+Px1Sg+Loc: niwayasitihk
      wayasit+N+AN+Px2Sg+Loc: kiwayasitihk
@@ -67,12 +67,12 @@ Tests:
      wayasit+N+AN+Px3Pl+Loc: owayasitiwâwihk 
      wayasit+N+AN+Px3iPl+Loc: owayasitiyihk
 
-     wayasit+N+AN+Dim+Px1Sg+Loc: niwayasicisisihk
-     wayasit+N+AN+Dim+Px2Sg+Loc: kiwayasicisisihk
-     wayasit+N+AN+Dim+Px3Sg+Loc: owayasicisisihk
-     wayasit+N+AN+Dim+Px3iSg+Loc: owayasicisisiyihk
-     wayasit+N+AN+Dim+Px1Pl+Loc: niwayasicisisinânihk
-     wayasit+N+AN+Dim+Px12Pl+Loc: kiwayasicisisinâhk
-     wayasit+N+AN+Dim+Px2Pl+Loc: kiwayasicisisiwâwihk
-     wayasit+N+AN+Dim+Px3Pl+Loc: owayasicisisiwâwihk
-     wayasit+N+AN+Dim+Px3iPl+Loc: owayasicisisiyihk
+     wayasit+N+AN+Der/Dim+N+AN+Px1Sg+Loc: niwayasicisisihk
+     wayasit+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kiwayasicisisihk
+     wayasit+N+AN+Der/Dim+N+AN+Px3Sg+Loc: owayasicisisihk
+     wayasit+N+AN+Der/Dim+N+AN+Px3iSg+Loc: owayasicisisiyihk
+     wayasit+N+AN+Der/Dim+N+AN+Px1Pl+Loc: niwayasicisisinânihk
+     wayasit+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kiwayasicisisinâhk
+     wayasit+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kiwayasicisisiwâwihk
+     wayasit+N+AN+Der/Dim+N+AN+Px3Pl+Loc: owayasicisisiwâwihk
+     wayasit+N+AN+Der/Dim+N+AN+Px3iPl+Loc: owayasicisisiyihk

@@ -13,9 +13,9 @@ Tests:
      niska+N+AN+Sg: niska
      niska+N+AN+Pl: niskak
      niska+N+AN+Loc: niskihk
-     niska+N+AN+Dim+Sg: niskasis # also niskisis
-     niska+N+AN+Dim+Pl: niskasisak # also niskisisak
-     niska+N+AN+Dim+Loc: niskasisihk
+     niska+N+AN+Der/Dim+N+AN+Sg: niskasis # also niskisis
+     niska+N+AN+Der/Dim+N+AN+Pl: niskasisak # also niskisisak
+     niska+N+AN+Der/Dim+N+AN+Loc: niskasisihk
 
      niska+N+AN+Sg+Px1Sg: niniska
      niska+N+AN+Sg+Px2Sg: kiniska
@@ -37,25 +37,25 @@ Tests:
      niska+N+AN+Pl+Px3Pl+Obv: oniskiwâwa
      niska+N+AN+Pl+Px3iPl+Obv: oniskiyiwa
 
-     niska+N+AN+Dim+Sg+Px1Sg: niniskasis
-     niska+N+AN+Dim+Sg+Px2Sg: kiniskasis
-     niska+N+AN+Dim+Sg+Px3Sg+Obv: oniskasisa
-     niska+N+AN+Dim+Sg+Px3iSg+Obv: oniskasisiyiwa
-     niska+N+AN+Dim+Sg+Px1Pl: niniskasisinân
-     niska+N+AN+Dim+Sg+Px12Pl: kiniskasisinaw
-     niska+N+AN+Dim+Sg+Px2Pl: kiniskasisiwâw
-     niska+N+AN+Dim+Sg+Px3Pl+Obv: oniskasisiwâwa
-     niska+N+AN+Dim+Sg+Px3iPl+Obv: oniskasisiyiwa
+     niska+N+AN+Der/Dim+N+AN+Sg+Px1Sg: niniskasis
+     niska+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kiniskasis
+     niska+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: oniskasisa
+     niska+N+AN+Der/Dim+N+AN+Sg+Px3iSg+Obv: oniskasisiyiwa
+     niska+N+AN+Der/Dim+N+AN+Sg+Px1Pl: niniskasisinân
+     niska+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kiniskasisinaw
+     niska+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kiniskasisiwâw
+     niska+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: oniskasisiwâwa
+     niska+N+AN+Der/Dim+N+AN+Sg+Px3iPl+Obv: oniskasisiyiwa
  
-     niska+N+AN+Dim+Pl+Px1Sg: niniskasisak
-     niska+N+AN+Dim+Pl+Px2Sg: kiniskasisak
-     niska+N+AN+Dim+Pl+Px3Sg+Obv: oniskasisa
-     niska+N+AN+Dim+Pl+Px3iSg+Obv: oniskasisiyiwa
-     niska+N+AN+Dim+Pl+Px1Pl: niniskasisinânak
-     niska+N+AN+Dim+Pl+Px12Pl: kiniskasisinawak
-     niska+N+AN+Dim+Pl+Px2Pl: kiniskasisiwâwak
-     niska+N+AN+Dim+Pl+Px3Pl+Obv: oniskasisiwâwa
-     niska+N+AN+Dim+Pl+Px3iPl+Obv: oniskasisiyiwa
+     niska+N+AN+Der/Dim+N+AN+Pl+Px1Sg: niniskasisak
+     niska+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kiniskasisak
+     niska+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: oniskasisa
+     niska+N+AN+Der/Dim+N+AN+Pl+Px3iSg+Obv: oniskasisiyiwa
+     niska+N+AN+Der/Dim+N+AN+Pl+Px1Pl: niniskasisinânak
+     niska+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kiniskasisinawak
+     niska+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kiniskasisiwâwak
+     niska+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: oniskasisiwâwa
+     niska+N+AN+Der/Dim+N+AN+Pl+Px3iPl+Obv: oniskasisiyiwa
      
      niska+N+AN+Px1Sg+Loc: niniskihk # niniskahk ?
      niska+N+AN+Px2Sg+Loc: kiniskihk # kiniskahk ?
@@ -67,12 +67,12 @@ Tests:
      niska+N+AN+Px3Pl+Loc: oniskiwâwihk 
      niska+N+AN+Px3iPl+Loc: oniskiyihk
 
-     niska+N+AN+Dim+Px1Sg+Loc: niniskasisihk
-     niska+N+AN+Dim+Px2Sg+Loc: kiniskasisihk
-     niska+N+AN+Dim+Px3Sg+Loc: oniskasisihk
-     niska+N+AN+Dim+Px3iSg+Loc: oniskasisiyihk
-     niska+N+AN+Dim+Px1Pl+Loc: niniskasisinânihk
-     niska+N+AN+Dim+Px12Pl+Loc: kiniskasisinâhk
-     niska+N+AN+Dim+Px2Pl+Loc: kiniskasisiwâwihk
-     niska+N+AN+Dim+Px3Pl+Loc: oniskasisiwâwihk
-     niska+N+AN+Dim+Px3iPl+Loc: oniskasisiyihk
+     niska+N+AN+Der/Dim+N+AN+Px1Sg+Loc: niniskasisihk
+     niska+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kiniskasisihk
+     niska+N+AN+Der/Dim+N+AN+Px3Sg+Loc: oniskasisihk
+     niska+N+AN+Der/Dim+N+AN+Px3iSg+Loc: oniskasisiyihk
+     niska+N+AN+Der/Dim+N+AN+Px1Pl+Loc: niniskasisinânihk
+     niska+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kiniskasisinâhk
+     niska+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kiniskasisiwâwihk
+     niska+N+AN+Der/Dim+N+AN+Px3Pl+Loc: oniskasisiwâwihk
+     niska+N+AN+Der/Dim+N+AN+Px3iPl+Loc: oniskasisiyihk

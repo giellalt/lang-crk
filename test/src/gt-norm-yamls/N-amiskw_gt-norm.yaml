@@ -13,9 +13,9 @@ Tests:
      maskisin+N+IN+Sg: maskisin
      maskisin+N+IN+Pl: maskisina
      maskisin+N+IN+Loc: maskisinihk
-     maskisin+N+IN+Dim+Sg: maskisinisis
-     maskisin+N+IN+Dim+Pl: maskisinisisa
-     maskisin+N+IN+Dim+Loc: maskisinisisihk
+     maskisin+N+IN+Der/Dim+N+IN+Sg: maskisinisis
+     maskisin+N+IN+Der/Dim+N+IN+Pl: maskisinisisa
+     maskisin+N+IN+Der/Dim+N+IN+Loc: maskisinisisihk
      
      maskisin+N+IN+Sg+Px1Sg: nimaskisin
      maskisin+N+IN+Sg+Px2Sg: kimaskisin
@@ -37,25 +37,25 @@ Tests:
      maskisin+N+IN+Pl+Px3Pl: omaskisiniwâwa
      maskisin+N+IN+Pl+Px3iPl: omaskisiniyiwa
      
-     maskisin+N+IN+Dim+Sg+Px1Sg: nimaskisinisis
-     maskisin+N+IN+Dim+Sg+Px2Sg: kimaskisinisis
-     maskisin+N+IN+Dim+Sg+Px3Sg: omaskisinisis
-     maskisin+N+IN+Dim+Sg+Px3iSg: omaskisinisisiyiw
-     maskisin+N+IN+Dim+Sg+Px1Pl: nimaskisinisisinân
-     maskisin+N+IN+Dim+Sg+Px12Pl: kimaskisinisisinaw
-     maskisin+N+IN+Dim+Sg+Px2Pl: kimaskisinisisiwâw
-     maskisin+N+IN+Dim+Sg+Px3Pl: omaskisinisisiwâw
-     maskisin+N+IN+Dim+Sg+Px3iPl: omaskisinisisiyiw
+     maskisin+N+IN+Der/Dim+N+IN+Sg+Px1Sg: nimaskisinisis
+     maskisin+N+IN+Der/Dim+N+IN+Sg+Px2Sg: kimaskisinisis
+     maskisin+N+IN+Der/Dim+N+IN+Sg+Px3Sg: omaskisinisis
+     maskisin+N+IN+Der/Dim+N+IN+Sg+Px3iSg: omaskisinisisiyiw
+     maskisin+N+IN+Der/Dim+N+IN+Sg+Px1Pl: nimaskisinisisinân
+     maskisin+N+IN+Der/Dim+N+IN+Sg+Px12Pl: kimaskisinisisinaw
+     maskisin+N+IN+Der/Dim+N+IN+Sg+Px2Pl: kimaskisinisisiwâw
+     maskisin+N+IN+Der/Dim+N+IN+Sg+Px3Pl: omaskisinisisiwâw
+     maskisin+N+IN+Der/Dim+N+IN+Sg+Px3iPl: omaskisinisisiyiw
      
-     maskisin+N+IN+Dim+Pl+Px1Sg: nimaskisinisisa
-     maskisin+N+IN+Dim+Pl+Px2Sg: kimaskisinisisa
-     maskisin+N+IN+Dim+Pl+Px3Sg: omaskisinisisa
-     maskisin+N+IN+Dim+Pl+Px3iSg: omaskisinisisiyiwa
-     maskisin+N+IN+Dim+Pl+Px1Pl: nimaskisinisisinâna
-     maskisin+N+IN+Dim+Pl+Px12Pl: kimaskisinisisinawa
-     maskisin+N+IN+Dim+Pl+Px2Pl: kimaskisinisisiwâwa
-     maskisin+N+IN+Dim+Pl+Px3Pl: omaskisinisisiwâwa
-     maskisin+N+IN+Dim+Pl+Px3iPl: omaskisinisisiyiwa
+     maskisin+N+IN+Der/Dim+N+IN+Pl+Px1Sg: nimaskisinisisa
+     maskisin+N+IN+Der/Dim+N+IN+Pl+Px2Sg: kimaskisinisisa
+     maskisin+N+IN+Der/Dim+N+IN+Pl+Px3Sg: omaskisinisisa
+     maskisin+N+IN+Der/Dim+N+IN+Pl+Px3iSg: omaskisinisisiyiwa
+     maskisin+N+IN+Der/Dim+N+IN+Pl+Px1Pl: nimaskisinisisinâna
+     maskisin+N+IN+Der/Dim+N+IN+Pl+Px12Pl: kimaskisinisisinawa
+     maskisin+N+IN+Der/Dim+N+IN+Pl+Px2Pl: kimaskisinisisiwâwa
+     maskisin+N+IN+Der/Dim+N+IN+Pl+Px3Pl: omaskisinisisiwâwa
+     maskisin+N+IN+Der/Dim+N+IN+Pl+Px3iPl: omaskisinisisiyiwa
      
      maskisin+N+IN+Px1Sg+Loc: nimaskisinihk
      maskisin+N+IN+Px2Sg+Loc: kimaskisinihk
@@ -67,12 +67,12 @@ Tests:
      maskisin+N+IN+Px3Pl+Loc: omaskisiniwâwihk
      maskisin+N+IN+Px3iPl+Loc: omaskisiniyihk
 
-     maskisin+N+IN+Dim+Px1Sg+Loc: nimaskisinisisihk
-     maskisin+N+IN+Dim+Px2Sg+Loc: kimaskisinisisihk
-     maskisin+N+IN+Dim+Px3Sg+Loc: omaskisinisisihk
-     maskisin+N+IN+Dim+Px3iSg+Loc: omaskisinisisiyihk
-     maskisin+N+IN+Dim+Px1Pl+Loc: nimaskisinisisinânihk
-     maskisin+N+IN+Dim+Px12Pl+Loc: kimaskisinisisinâhk
-     maskisin+N+IN+Dim+Px2Pl+Loc: kimaskisinisisiwâwihk
-     maskisin+N+IN+Dim+Px3Pl+Loc: omaskisinisisiwâwihk
-     maskisin+N+IN+Dim+Px3iPl+Loc: omaskisinisisiyihk
+     maskisin+N+IN+Der/Dim+N+IN+Px1Sg+Loc: nimaskisinisisihk
+     maskisin+N+IN+Der/Dim+N+IN+Px2Sg+Loc: kimaskisinisisihk
+     maskisin+N+IN+Der/Dim+N+IN+Px3Sg+Loc: omaskisinisisihk
+     maskisin+N+IN+Der/Dim+N+IN+Px3iSg+Loc: omaskisinisisiyihk
+     maskisin+N+IN+Der/Dim+N+IN+Px1Pl+Loc: nimaskisinisisinânihk
+     maskisin+N+IN+Der/Dim+N+IN+Px12Pl+Loc: kimaskisinisisinâhk
+     maskisin+N+IN+Der/Dim+N+IN+Px2Pl+Loc: kimaskisinisisiwâwihk
+     maskisin+N+IN+Der/Dim+N+IN+Px3Pl+Loc: omaskisinisisiwâwihk
+     maskisin+N+IN+Der/Dim+N+IN+Px3iPl+Loc: omaskisinisisiyihk

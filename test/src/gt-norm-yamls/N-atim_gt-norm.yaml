@@ -14,9 +14,9 @@ Tests:
      atim+N+AN+Pl: atimwak #test
      atim+N+AN+Obv: atimwa
      atim+N+AN+Loc: atimohk # really rare form
-     atim+N+AN+Dim+Sg: acimosis
-     atim+N+AN+Dim+Pl: acimosisak
-     atim+N+AN+Dim+Loc: acimosisihk
+     atim+N+AN+Der/Dim+N+AN+Sg: acimosis
+     atim+N+AN+Der/Dim+N+AN+Pl: acimosisak
+     atim+N+AN+Der/Dim+N+AN+Loc: acimosisihk
      
      atim+N+AN+Sg+Px1Sg: nitêm
      atim+N+AN+Sg+Px2Sg: kitêm
@@ -38,24 +38,24 @@ Tests:
      atim+N+AN+Pl+Px3Pl+Obv: otêmiwâwa
      atim+N+AN+Pl+Px3iPl+Obv: otêmiyiwa
      
-     atim+N+AN+Dim+Sg+Px1Sg: nicêmisis
-     atim+N+AN+Dim+Sg+Px2Sg: kicêmisis
-     atim+N+AN+Dim+Sg+Px3Sg+Obv: ocêmisisa
-     atim+N+AN+Dim+Sg+Px3iSg+Obv: ocêmisisiyiwa
-     atim+N+AN+Dim+Sg+Px1Pl: nicêmisisinân
-     atim+N+AN+Dim+Sg+Px12Pl: kicêmisisinaw
-     atim+N+AN+Dim+Sg+Px2Pl: kicêmisisiwâw
-     atim+N+AN+Dim+Sg+Px3Pl+Obv: ocêmisisiwâwa
+     atim+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicêmisis
+     atim+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicêmisis
+     atim+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: ocêmisisa
+     atim+N+AN+Der/Dim+N+AN+Sg+Px3iSg+Obv: ocêmisisiyiwa
+     atim+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nicêmisisinân
+     atim+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kicêmisisinaw
+     atim+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kicêmisisiwâw
+     atim+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: ocêmisisiwâwa
      
-     atim+N+AN+Dim+Pl+Px1Sg: nicêmisisak
-     atim+N+AN+Dim+Pl+Px2Sg: kicêmisisak
-     atim+N+AN+Dim+Pl+Px3Sg+Obv: ocêmisisa
-     atim+N+AN+Dim+Pl+Px3iSg+Obv: ocêmisisiyiwa
-     atim+N+AN+Dim+Pl+Px1Pl: nicêmisisinânak
-     atim+N+AN+Dim+Pl+Px12Pl: kicêmisisinawak
-     atim+N+AN+Dim+Pl+Px2Pl: kicêmisisiwâwak
-     atim+N+AN+Dim+Pl+Px3Pl+Obv: ocêmisisiwâwa
-     atim+N+AN+Dim+Pl+Px3iPl+Obv: ocêmisisiyiwa
+     atim+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nicêmisisak
+     atim+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kicêmisisak
+     atim+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: ocêmisisa
+     atim+N+AN+Der/Dim+N+AN+Pl+Px3iSg+Obv: ocêmisisiyiwa
+     atim+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nicêmisisinânak
+     atim+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kicêmisisinawak
+     atim+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kicêmisisiwâwak
+     atim+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: ocêmisisiwâwa
+     atim+N+AN+Der/Dim+N+AN+Pl+Px3iPl+Obv: ocêmisisiyiwa
      
      atim+N+AN+Px1Sg+Loc: nitêmihk
      atim+N+AN+Px2Sg+Loc: kitêmihk
@@ -67,12 +67,12 @@ Tests:
      atim+N+AN+Px3Pl+Loc: otêmiwâwihk # otêmiwâw-ihk
      atim+N+AN+Px3iPl+Loc: otêmiyihk  # otêmiyiw-ihk?
      
-     atim+N+AN+Dim+Px1Sg+Loc: nicêmisisihk
-     atim+N+AN+Dim+Px2Sg+Loc: kicêmisisihk
-     atim+N+AN+Dim+Px3Sg+Loc: ocêmisisihk
-     atim+N+AN+Dim+Px3iSg+Loc: ocêmisisiyihk
-     atim+N+AN+Dim+Px1Pl+Loc: nicêmisisinânihk
-     atim+N+AN+Dim+Px12Pl+Loc: kicêmisisinâhk
-     atim+N+AN+Dim+Px2Pl+Loc: kicêmisisiwâwihk
-     atim+N+AN+Dim+Px3Pl+Loc: ocêmisisiwâwihk
-     atim+N+AN+Dim+Px3iPl+Loc: ocêmisisiyihk # ocêmisisiwâwihk ?
+     atim+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nicêmisisihk
+     atim+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kicêmisisihk
+     atim+N+AN+Der/Dim+N+AN+Px3Sg+Loc: ocêmisisihk
+     atim+N+AN+Der/Dim+N+AN+Px3iSg+Loc: ocêmisisiyihk
+     atim+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nicêmisisinânihk
+     atim+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kicêmisisinâhk
+     atim+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kicêmisisiwâwihk
+     atim+N+AN+Der/Dim+N+AN+Px3Pl+Loc: ocêmisisiwâwihk
+     atim+N+AN+Der/Dim+N+AN+Px3iPl+Loc: ocêmisisiyihk # ocêmisisiwâwihk ?

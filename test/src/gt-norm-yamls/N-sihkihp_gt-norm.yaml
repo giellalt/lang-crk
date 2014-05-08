@@ -13,9 +13,9 @@ Tests:
      sihkihp+N+AN+Sg: sihkihp
      sihkihp+N+AN+Pl: sihkihpwak
      sihkihp+N+AN+Loc: sihkihpihk
-     sihkihp+N+AN+Dim+Sg: sihkihpisis
-     sihkihp+N+AN+Dim+Pl: sihkihpisisak
-     sihkihp+N+AN+Dim+Loc: sihkihpisisihk
+     sihkihp+N+AN+Der/Dim+N+AN+Sg: sihkihpisis
+     sihkihp+N+AN+Der/Dim+N+AN+Pl: sihkihpisisak
+     sihkihp+N+AN+Der/Dim+N+AN+Loc: sihkihpisisihk
 
      sihkihp+N+AN+Sg+Px1Sg: nisihkihp
      sihkihp+N+AN+Sg+Px2Sg: kisihkihp
@@ -37,25 +37,25 @@ Tests:
      sihkihp+N+AN+Pl+Px3Pl+Obv: osihkihpiwâwa
      sihkihp+N+AN+Pl+Px3iPl+Obv: osihkihpiyiwa
 
-     sihkihp+N+AN+Dim+Sg+Px1Sg: nisihkihpisis
-     sihkihp+N+AN+Dim+Sg+Px2Sg: kisihkihpisis
-     sihkihp+N+AN+Dim+Sg+Px3Sg+Obv: osihkihpisisa
-     sihkihp+N+AN+Dim+Sg+Px3iSg+Obv: osihkihpisisiyiwa
-     sihkihp+N+AN+Dim+Sg+Px1Pl: nisihkihpisisinân
-     sihkihp+N+AN+Dim+Sg+Px12Pl: kisihkihpisisinaw
-     sihkihp+N+AN+Dim+Sg+Px2Pl: kisihkihpisisiwâw
-     sihkihp+N+AN+Dim+Sg+Px3Pl+Obv: osihkihpisisiwâwa
-     sihkihp+N+AN+Dim+Sg+Px3iPl+Obv: osihkihpisisiyiwa
+     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nisihkihpisis
+     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kisihkihpisis
+     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: osihkihpisisa
+     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px3iSg+Obv: osihkihpisisiyiwa
+     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nisihkihpisisinân
+     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kisihkihpisisinaw
+     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kisihkihpisisiwâw
+     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: osihkihpisisiwâwa
+     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px3iPl+Obv: osihkihpisisiyiwa
 
-     sihkihp+N+AN+Dim+Pl+Px1Sg: nisihkihpisisak
-     sihkihp+N+AN+Dim+Pl+Px2Sg: kisihkihpisisak
-     sihkihp+N+AN+Dim+Pl+Px3Sg+Obv: osihkihpisisa
-     sihkihp+N+AN+Dim+Pl+Px3iSg+Obv: osihkihpisisiyiwa
-     sihkihp+N+AN+Dim+Pl+Px1Pl: nisihkihpisisinânak
-     sihkihp+N+AN+Dim+Pl+Px12Pl: kisihkihpisisinawak
-     sihkihp+N+AN+Dim+Pl+Px2Pl: kisihkihpisisiwâwak
-     sihkihp+N+AN+Dim+Pl+Px3Pl+Obv: osihkihpisisiwâwa
-     sihkihp+N+AN+Dim+Pl+Px3iPl+Obv: osihkihpisisiyiwa
+     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nisihkihpisisak
+     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kisihkihpisisak
+     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: osihkihpisisa
+     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px3iSg+Obv: osihkihpisisiyiwa
+     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nisihkihpisisinânak
+     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kisihkihpisisinawak
+     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kisihkihpisisiwâwak
+     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: osihkihpisisiwâwa
+     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px3iPl+Obv: osihkihpisisiyiwa
 
      sihkihp+N+AN+Px1Sg+Loc: nisihkihpihk
      sihkihp+N+AN+Px2Sg+Loc: kisihkihpihk
@@ -67,12 +67,12 @@ Tests:
      sihkihp+N+AN+Px3Pl+Loc: osihkihpiwâwihk
      sihkihp+N+AN+Px3iPl+Loc: osihkihpiyihk
 
-     sihkihp+N+AN+Dim+Px1Sg+Loc: nisihkihpisisihk
-     sihkihp+N+AN+Dim+Px2Sg+Loc: kisihkihpisisihk
-     sihkihp+N+AN+Dim+Px3Sg+Loc: osihkihpisisihk
-     sihkihp+N+AN+Dim+Px3iSg+Loc: osihkihpisisiyihk
-     sihkihp+N+AN+Dim+Px1Pl+Loc: nisihkihpisisinânihk
-     sihkihp+N+AN+Dim+Px12Pl+Loc: kisihkihpisisinâhk
-     sihkihp+N+AN+Dim+Px2Pl+Loc: kisihkihpisisiwâwihk
-     sihkihp+N+AN+Dim+Px3Pl+Loc: osihkihpisisiwâwihk
-     sihkihp+N+AN+Dim+Px3iPl+Loc: osihkihpisisiyihk
+     sihkihp+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nisihkihpisisihk
+     sihkihp+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kisihkihpisisihk
+     sihkihp+N+AN+Der/Dim+N+AN+Px3Sg+Loc: osihkihpisisihk
+     sihkihp+N+AN+Der/Dim+N+AN+Px3iSg+Loc: osihkihpisisiyihk
+     sihkihp+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nisihkihpisisinânihk
+     sihkihp+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kisihkihpisisinâhk
+     sihkihp+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kisihkihpisisiwâwihk
+     sihkihp+N+AN+Der/Dim+N+AN+Px3Pl+Loc: osihkihpisisiwâwihk
+     sihkihp+N+AN+Der/Dim+N+AN+Px3iPl+Loc: osihkihpisisiyihk

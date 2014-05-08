@@ -13,9 +13,9 @@ Tests:
      ôhôw+N+AN+Sg: ôhôw
      ôhôw+N+AN+Pl: ôhôwak
      ôhôw+N+AN+Loc: ôhônâhk
-     ôhôw+N+AN+Dim+Sg: ôhôsis
-     ôhôw+N+AN+Dim+Pl: ôhôsisak
-     ôhôw+N+AN+Dim+Loc: ôhôsisihk
+     ôhôw+N+AN+Der/Dim+N+AN+Sg: ôhôsis
+     ôhôw+N+AN+Der/Dim+N+AN+Pl: ôhôsisak
+     ôhôw+N+AN+Der/Dim+N+AN+Loc: ôhôsisihk
 
      ôhôw+N+AN+Sg+Px1Sg: nitôhôm
      ôhôw+N+AN+Sg+Px2Sg: kitôhôm
@@ -37,25 +37,25 @@ Tests:
      ôhôw+N+AN+Pl+Px3Pl+Obv: otôhômiwâwa
      ôhôw+N+AN+Pl+Px3iPl+Obv: otôhômiyiwa
 
-     ôhôw+N+AN+Dim+Sg+Px1Sg: nitôhôsis
-     ôhôw+N+AN+Dim+Sg+Px2Sg: kitôhôsis
-     ôhôw+N+AN+Dim+Sg+Px3Sg+Obv: otôhôsisa
-     ôhôw+N+AN+Dim+Sg+Px3iSg+Obv: otôhôsisiyiwa
-     ôhôw+N+AN+Dim+Sg+Px1Pl: nitôhôsisinân
-     ôhôw+N+AN+Dim+Sg+Px12Pl: kitôhôsisinaw
-     ôhôw+N+AN+Dim+Sg+Px2Pl: kitôhôsisiwâw
-     ôhôw+N+AN+Dim+Sg+Px3Pl+Obv: otôhôsisiwâwa
-     ôhôw+N+AN+Dim+Sg+Px3iPl+Obv: otôhôsisiyiwa
+     ôhôw+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nitôhôsis
+     ôhôw+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kitôhôsis
+     ôhôw+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: otôhôsisa
+     ôhôw+N+AN+Der/Dim+N+AN+Sg+Px3iSg+Obv: otôhôsisiyiwa
+     ôhôw+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nitôhôsisinân
+     ôhôw+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kitôhôsisinaw
+     ôhôw+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kitôhôsisiwâw
+     ôhôw+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: otôhôsisiwâwa
+     ôhôw+N+AN+Der/Dim+N+AN+Sg+Px3iPl+Obv: otôhôsisiyiwa
 
-     ôhôw+N+AN+Dim+Pl+Px1Sg: nitôhôsisak
-     ôhôw+N+AN+Dim+Pl+Px2Sg: kitôhôsisak
-     ôhôw+N+AN+Dim+Pl+Px3Sg+Obv: otôhôsisa
-     ôhôw+N+AN+Dim+Pl+Px3iSg+Obv: otôhôsisiyiwa
-     ôhôw+N+AN+Dim+Pl+Px1Pl: nitôhôsisinânak
-     ôhôw+N+AN+Dim+Pl+Px12Pl: kitôhôsisinawak
-     ôhôw+N+AN+Dim+Pl+Px2Pl: kitôhôsisiwâwak
-     ôhôw+N+AN+Dim+Pl+Px3Pl+Obv: otôhôsisiwâwa
-     ôhôw+N+AN+Dim+Pl+Px3iPl+Obv: otôhôsisiyiwa
+     ôhôw+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nitôhôsisak
+     ôhôw+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kitôhôsisak
+     ôhôw+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: otôhôsisa
+     ôhôw+N+AN+Der/Dim+N+AN+Pl+Px3iSg+Obv: otôhôsisiyiwa
+     ôhôw+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nitôhôsisinânak
+     ôhôw+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kitôhôsisinawak
+     ôhôw+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kitôhôsisiwâwak
+     ôhôw+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: otôhôsisiwâwa
+     ôhôw+N+AN+Der/Dim+N+AN+Pl+Px3iPl+Obv: otôhôsisiyiwa
 
      ôhôw+N+AN+Px1Sg+Loc: nitôhômihk
      ôhôw+N+AN+Px2Sg+Loc: kitôhômihk
@@ -67,12 +67,12 @@ Tests:
      ôhôw+N+AN+Px3Pl+Loc: otôhômiwâwihk 
      ôhôw+N+AN+Px3iPl+Loc: otôhômiyihk
 
-     ôhôw+N+AN+Dim+Px1Sg+Loc: nitôhôsisihk
-     ôhôw+N+AN+Dim+Px2Sg+Loc: kitôhôsisihk
-     ôhôw+N+AN+Dim+Px3Sg+Loc: otôhôsisihk
-     ôhôw+N+AN+Dim+Px3iSg+Loc: otôhôsisiyihk
-     ôhôw+N+AN+Dim+Px1Pl+Loc: nitôhôsisinânihk
-     ôhôw+N+AN+Dim+Px12Pl+Loc: kitôhôsisinâhk
-     ôhôw+N+AN+Dim+Px2Pl+Loc: kitôhôsisiwâwihk
-     ôhôw+N+AN+Dim+Px3Pl+Loc: otôhôsisiwâwihk
-     ôhôw+N+AN+Dim+Px3iPl+Loc: otôhôsisiyihk
+     ôhôw+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nitôhôsisihk
+     ôhôw+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kitôhôsisihk
+     ôhôw+N+AN+Der/Dim+N+AN+Px3Sg+Loc: otôhôsisihk
+     ôhôw+N+AN+Der/Dim+N+AN+Px3iSg+Loc: otôhôsisiyihk
+     ôhôw+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nitôhôsisinânihk
+     ôhôw+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kitôhôsisinâhk
+     ôhôw+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kitôhôsisiwâwihk
+     ôhôw+N+AN+Der/Dim+N+AN+Px3Pl+Loc: otôhôsisiwâwihk
+     ôhôw+N+AN+Der/Dim+N+AN+Px3iPl+Loc: otôhôsisiyihk
