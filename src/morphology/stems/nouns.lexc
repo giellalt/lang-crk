@@ -22,8 +22,8 @@
 !! !! The prefixes
 
 LEXICON Nouns 
-
-AN-IN ; ! Animate nouns
+!! @LEXNAME@ redirects to AN-IN and INALIENABLE
+AN-IN ; ! Animate and inanimate nouns
 INALIENABLE ; 
 
 
@@ -52,12 +52,12 @@ LEXICON INALIENABLE
 < 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
 < 0:w    "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
-< 0:w "@U.noun.3isg@" > INALIENABLESTEMS ;     ! 3indef
+< 0:w "@U.noun.3isg@" > INALIENABLESTEMS ;  ! 3indef
 < 0:n "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
 < 0:k "@U.noun.12pl@" > INALIENABLESTEMS ; ! inclusive Pl
 < 0:k "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
 < 0:w  "@U.noun.3pl@"  > INALIENABLESTEMS;  ! 3pl note: is prefix o- correct?
-< 0:w  "@U.noun.3ipl@"  > INALIENABLESTEMS;       ! 
+< 0:w  "@U.noun.3ipl@"  > INALIENABLESTEMS;     ! 
 
 
 
@@ -67,9 +67,11 @@ LEXICON INALIENABLE
 !    =============
 
 LEXICON STEMS
+!! @LEXNAME@ add a affismark and redirects to STEMLIST
  0:%> STEMLIST ;
 
 LEXICON STEMLIST
+!! @LEXNAME@ contains most of the nouns
 apiscacihkos ANDECL "antelope" ;	
 apisimôsos ANDECL "deer" ; ! apisimôsosak	
 apisimôsos+Dim:apisimôsosis ANDECLPROF "little deer" ; ! apisimôsosak
@@ -162,7 +164,7 @@ mistatim:têm ANIRRINFL "horse-possessed" ; !"my horse" is nitêm, no other poss
 mitâs:tâs ANIRRINFL "pants" ;
 mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
 
-!KINSHIP
+!! !KINSHIP nouns come here, they also in STEMLIST lexicon
 otânisimâw:tânis ANKININFL "daughter" ;
 okosisimâw:kosis ANKININFL "son" ;
 omisimâw:mis ANKININFL "older sister" ;
@@ -188,6 +190,8 @@ okâwîmâw:kâw ANKININFL_IY "mother" ;! -iy- dissappears Okimasis p. 140,
 
 
 LEXICON INALIENABLESTEMS  ! dependent nouns
+!! @LEXNAME@ contains dependent nouns which are not kinskip terms
+
 maniway:aniway INALIENABLEPOSS ; !"someone's cheek" !yaml
 !otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
 !otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
