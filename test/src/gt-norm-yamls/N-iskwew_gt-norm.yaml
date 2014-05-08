@@ -13,9 +13,9 @@ Tests:
      iskwêw+N+AN+Sg: iskwêw
      iskwêw+N+AN+Pl: iskwêwak
      iskwêw+N+AN+Loc: iskwênâhk
-     iskwêw+N+AN+Dim+Sg: iskwêsis
-     iskwêw+N+AN+Dim+Pl: iskwêsisak
-     iskwêw+N+AN+Dim+Loc: iskwêsisihk
+     iskwêw+N+AN+Der/Dim+N+AN+Sg: iskwêsis
+     iskwêw+N+AN+Der/Dim+N+AN+Pl: iskwêsisak
+     iskwêw+N+AN+Der/Dim+N+AN+Loc: iskwêsisihk
      
      iskwêw+N+AN+Sg+Px1Sg: nitiskwêm
      iskwêw+N+AN+Sg+Px2Sg: kitiskwêm
@@ -37,25 +37,25 @@ Tests:
      iskwêw+N+AN+Pl+Px3Pl+Obv: otiskwêmiwâwa
      iskwêw+N+AN+Pl+Px3iPl+Obv: otiskwêmiyiwa
      
-     iskwêw+N+AN+Dim+Sg+Px1Sg: nitiskwêsis
-     iskwêw+N+AN+Dim+Sg+Px2Sg: kitiskwêsis
-     iskwêw+N+AN+Dim+Sg+Px3Sg+Obv: otiskwêsisa
-     iskwêw+N+AN+Dim+Sg+Px3iSg+Obv: otiskwêsisiyiwa
-     iskwêw+N+AN+Dim+Sg+Px1Pl: nitiskwêsisinân
-     iskwêw+N+AN+Dim+Sg+Px12Pl: kitiskwêsisinaw
-     iskwêw+N+AN+Dim+Sg+Px2Pl: kitiskwêsisiwâw
-     iskwêw+N+AN+Dim+Sg+Px3Pl+Obv: otiskwêsisiwâwa
-     iskwêw+N+AN+Dim+Sg+Px3iPl+Obv: otiskwêsisiyiwa
+     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nitiskwêsis
+     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kitiskwêsis
+     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: otiskwêsisa
+     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px3iSg+Obv: otiskwêsisiyiwa
+     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nitiskwêsisinân
+     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kitiskwêsisinaw
+     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kitiskwêsisiwâw
+     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: otiskwêsisiwâwa
+     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px3iPl+Obv: otiskwêsisiyiwa
      
-     iskwêw+N+AN+Dim+Pl+Px1Sg: nitiskwêsisak
-     iskwêw+N+AN+Dim+Pl+Px2Sg: kitiskwêsisak
-     iskwêw+N+AN+Dim+Pl+Px3Sg+Obv: otiskwêsisa
-     iskwêw+N+AN+Dim+Pl+Px3iSg+Obv: otiskwêsisiyiwa
-     iskwêw+N+AN+Dim+Pl+Px1Pl: nitiskwêsisinânak
-     iskwêw+N+AN+Dim+Pl+Px12Pl: kitiskwêsisinawak
-     iskwêw+N+AN+Dim+Pl+Px2Pl: kitiskwêsisiwâwak
-     iskwêw+N+AN+Dim+Pl+Px3Pl+Obv: otiskwêsisiwâwa
-     iskwêw+N+AN+Dim+Pl+Px3iPl+Obv: otiskwêsisiyiwa
+     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nitiskwêsisak
+     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kitiskwêsisak
+     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: otiskwêsisa
+     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px3iSg+Obv: otiskwêsisiyiwa
+     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nitiskwêsisinânak
+     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kitiskwêsisinawak
+     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kitiskwêsisiwâwak
+     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: otiskwêsisiwâwa
+     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px3iPl+Obv: otiskwêsisiyiwa
      
      iskwêw+N+AN+Px1Sg+Loc: nitiskwêmihk
      iskwêw+N+AN+Px2Sg+Loc: kitiskwêmihk
@@ -67,12 +67,12 @@ Tests:
      iskwêw+N+AN+Px3Pl+Loc: otiskwêmiwâwihk
      iskwêw+N+AN+Px3iPl+Loc: otiskwêmiyihk
 
-     iskwêw+N+AN+Dim+Px1Sg+Loc: nitiskwêsisihk
-     iskwêw+N+AN+Dim+Px2Sg+Loc: kitiskwêsisihk
-     iskwêw+N+AN+Dim+Px3Sg+Loc: otiskwêsisihk
-     iskwêw+N+AN+Dim+Px3iSg+Loc: otiskwêsisiyihk
-     iskwêw+N+AN+Dim+Px1Pl+Loc: nitiskwêsisinânihk
-     iskwêw+N+AN+Dim+Px12Pl+Loc: kitiskwêsisinâhk # kitiskwêsisinawihk ?
-     iskwêw+N+AN+Dim+Px2Pl+Loc: kitiskwêsisiwâwihk
-     iskwêw+N+AN+Dim+Px3Pl+Loc: otiskwêsisiwâwihk
-     iskwêw+N+AN+Dim+Px3iPl+Loc: otiskwêsisiyihk
+     iskwêw+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nitiskwêsisihk
+     iskwêw+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kitiskwêsisihk
+     iskwêw+N+AN+Der/Dim+N+AN+Px3Sg+Loc: otiskwêsisihk
+     iskwêw+N+AN+Der/Dim+N+AN+Px3iSg+Loc: otiskwêsisiyihk
+     iskwêw+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nitiskwêsisinânihk
+     iskwêw+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kitiskwêsisinâhk # kitiskwêsisinawihk ?
+     iskwêw+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kitiskwêsisiwâwihk
+     iskwêw+N+AN+Der/Dim+N+AN+Px3Pl+Loc: otiskwêsisiwâwihk
+     iskwêw+N+AN+Der/Dim+N+AN+Px3iPl+Loc: otiskwêsisiyihk
