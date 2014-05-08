@@ -25,7 +25,7 @@ LEXICON ANimDIM !!= * @CODE@ the diminutives with possessive element Okimasis p.
 +N+AN+Pl:im%^DIM%>is ANSUFF_PL ;
 
 
-LEXICON ANDECL !!= * @CODE@ for the animate declension
+LEXICON ANDECLisis !!= * @CODE@ for the animate declension, -isis diminutive
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
 < "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
@@ -35,6 +35,31 @@ LEXICON ANDECL !!= * @CODE@ for the animate declension
 +N+AN:%> ANSUFF_LOC ;
 +N+AN:%> ANSUFF_LOC ;
 +N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
+
+LEXICON ANDECLis !!= * @CODE@ for the animate declension, -is diminutive
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
+< "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; !
++N+AN+Sg:%> ANSUFF_SG ;
++N+AN+Pl:%> ANSUFF_PL ;
++N+AN:%> ANSUFF_LOC ;
++N+AN:%> ANSUFF_LOC ;
++N+AN+Der/Dim:%>%^DIMis%> ANDIM ;
+
+LEXICON ANDECL !!= * @CODE@ for the animate declension, both -isis and -is diminutive
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
+< "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; !
++N+AN+Sg:%> ANSUFF_SG ;
++N+AN+Pl:%> ANSUFF_PL ;
++N+AN:%> ANSUFF_LOC ;
++N+AN:%> ANSUFF_LOC ;
++N+AN+Der/Dim:%>%^DIMis%> ANDIM ;
++N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
+
+
 
 LEXICON ANDIMDERIVATION !!= * @CODE@ 
 +N+AN+Der/Dim: ANDIM ; 
@@ -115,6 +140,25 @@ LEXICON INDECL !!= * @CODE@ for the inanimate declension
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
 +N+IN+Der/Dim:%>is%^DIMis%> INDIM ;
++N+IN+Der/Dim:%>%^DIMis%> INDIM ;
+
+LEXICON INDECLisis !!= * @CODE@ for the inanimate declension
+< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PLa ; !
+< "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
++N+IN+Sg:%> INSUFF_SG ;
++N+IN+Pl:%> INSUFF_PL ;
++N+IN:%> INSUFF_LOC ;
++N+IN+Der/Dim:%>is%^DIMis%> INDIM ;
+
+LEXICON INDECLis !!= * @CODE@ for the inanimate declension
+< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+< "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PLa ; !
+< "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
++N+IN+Sg:%> INSUFF_SG ;
++N+IN+Pl:%> INSUFF_PL ;
++N+IN:%> INSUFF_LOC ;
++N+IN+Der/Dim:%>%^DIMis%> INDIM ;
 
 
 LEXICON INDIMDERIVATION !!= * @CODE@
