@@ -521,22 +521,20 @@ The stems
 
  * LEXICON ANDECLis  for the animate declension, -is diminutive
 
- * LEXICON ANDECL  for the animate declension, both -isis and -is diminutive
+ * LEXICON ANDECL  for the animate declension, both -isis and -is diminutives
 
 
+ * LEXICON ANDIMDERIVATION  for hardcoded diminutives
 
- * LEXICON ANDIMDERIVATION  
-
- * LEXICON ANDIM  for diminutives
+ * LEXICON ANDIM  both for lexicalised and derivated diminutives
 
 
- * LEXICON ANDIMDECL  Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
 
  * LEXICON ANIRRDECL	 for atim and mistatim.
 
 
- * LEXICON ANKININFL  The lexicon gives a base form N+AN
+ * LEXICON ANKININFL  The lexicon gives a base form N+AN (if we want it)
 
  * LEXICON ANKINiyINFL   Special treatment for nouns ending with -iy
 
@@ -565,7 +563,6 @@ The stems
  * LEXICON INDIM  for the inanimate diminutives
 
 
-LEXICON INDIMDECL   Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 
  * LEXICON INALIENABLEDERIVATION 
 
@@ -578,21 +575,6 @@ LEXICON INDIMDECL   Declensions for nouns taking reduced diminutive at by more p
 
 !!Diminutive suffixes
 
- !Diminutive suffixes in animate stems
-
- * LEXICON ANDIMis_SG 
-
-
- * LEXICON ANDIMis_SUFF_SG 
-
- * LEXICON ANDIMis_PL 
-
-
-
-
- * LEXICON ANDIMis_LOC 
-
- * LEXICON ANDIMis_SUFF_LOC 
 
 !Diminutive suffixes in animate stems taking the form -osis
 
