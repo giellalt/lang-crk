@@ -36,6 +36,8 @@ LEXICON ANDECL !!= * @CODE@ for the animate declension
 +N+AN:%> ANSUFF_LOC ;
 +N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
 
+LEXICON ANDIMDERIVATION !!= * @CODE@ 
++N+AN+Der/Dim: ANDIM ; 
 
 LEXICON ANDIM !!= * @CODE@ for diminutives
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
@@ -44,18 +46,6 @@ LEXICON ANDIM !!= * @CODE@ for diminutives
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
 +N+AN+Sg: ANSUFF_SG ;
 +N+AN+Pl: ANSUFF_PL ;
-
-
-LEXICON ANDIMDERIVATION !!= * @CODE@ 
-+N+AN+Der/Dim: ANDIMDERDECL ; 
-
-LEXICON ANDIMDERDECL !!= * @CODE@
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
-< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
-+N+AN+Sg:%> ANSUFF_SG ;
-+N+AN+Pl:%> ANSUFF_PL ;
-+N+AN:%> ANSUFF_LOC ;
 
 
 LEXICON ANDIMDECL !!= * @CODE@ Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
@@ -127,6 +117,10 @@ LEXICON INDECL !!= * @CODE@ for the inanimate declension
 +N+IN+Der/Dim:%>is%^DIMis%> INDIM ;
 
 
+LEXICON INDIMDERIVATION !!= * @CODE@
++N+IN+Der/Dim:  INDIM ;
+
+
 LEXICON INDIM !!= * @CODE@ for the inanimate diminutives
 < "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
 +N+IN: INSUFF_LOC ;
@@ -135,18 +129,6 @@ LEXICON INDIM !!= * @CODE@ for the inanimate diminutives
 +N+IN+Sg: INSUFF_SG ;
 +N+IN+Pl: INSUFF_PL ;
 
-
-
-LEXICON INDIMDERIVATION !!= * @CODE@
-+N+IN+Der/Dim:  INDIMDERDECL ;
-
-LEXICON INDIMDERDECL !!= * @CODE@
-< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
-< "+N":0 "+IN":0 "+Pl":0 "@U.noun.abs@" >  PLa ; !
-< "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
-+N+IN+Sg:%> INSUFF_SG ;
-+N+IN+Pl:%> INSUFF_PL ;
-+N+IN:%> INSUFF_LOC ;
 
 LEXICON INDIMDECL !!= Declensions for nouns taking reduced diminutive at by more proficient speakers -> ie already carrying the reduced diminuitve suffixes
 < "+N":0 "+IN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
