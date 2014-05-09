@@ -7,19 +7,36 @@
 
 LEXICON ANimDECL !!= * @CODE@ for the animate declension, possessive element Okimasis p. 134
 ANABSDECL ;
-+N+AN+Sg:i2m%> ANSUFF_SG ;
-+N+AN+Pl:i2m%> ANSUFF_PL ;
-+N+AN:i2m%> ANSUFF_LOC ;
++N+AN+Sg:%>i2m ANSUFF_SG ;
++N+AN+Pl:%>i2m ANSUFF_PL ;
++N+AN:%>i2m ANSUFF_LOC ;
 +N+AN+Der/Dim:%> ANimDIM ;
 
 
 LEXICON ANimDIM !!= * @CODE@ the diminutives with possessive element Okimasis p. 134
-< "+N":%^DIM "+AN":i 0:s "@U.noun.abs@" >  LOC ; !
-+N+AN:im%^DIMis%> ANSUFF_LOC ;
-< "+N":%^DIM "+AN":i "+Sg":s "@U.noun.abs@" >  SG_ ; !
-< "+N":%^DIM "+AN":i "+Pl":s "@U.noun.abs@" >  PLak ; !
-+N+AN+Sg:im%^DIM%>is ANSUFF_SG ;
-+N+AN+Pl:im%^DIM%>is ANSUFF_PL ;
+< "+N":i "+AN":s 0:%^DIM "@U.noun.abs@" >  LOC ; !
++N+AN:i2m%^DIMis%> ANSUFF_LOC ;
+< "+N":i "+AN":s "+Sg":%^DIM "@U.noun.abs@" >  SG_ ; !
+< "+N":i "+AN":s "+Pl":%^DIM "@U.noun.abs@" >  PLak ; !
++N+AN+Sg:i2m%^DIM%>is ANSUFF_SG ;
++N+AN+Pl:i2m%^DIM%>is ANSUFF_PL ;
+
+
+LEXICON ANimDECLw !!= * @CODE@ for the animate declension, possessive element Okimasis p. 134
+ :w ANABSDECL ;
++N+AN+Sg:%>i2m ANSUFF_SG ;
++N+AN+Pl:%>i2m ANSUFF_PL ;
++N+AN:%>i2m ANSUFF_LOC ;
++N+AN+Der/Dim:%> ANimDIMw ;
+
+
+LEXICON ANimDIMw !!= * @CODE@ the diminutives with possessive element Okimasis p. 134
+< "+N":i2 "+AN":s 0:%^DIM 0:i 0:s "@U.noun.abs@" >  LOC ; !
++N+AN:i2m%^DIMis%> ANSUFF_LOC ;
+< "+N":i2 "+AN":s 0:%^DIM 0:i "+Sg":s "@U.noun.abs@" >  SG_ ; !
+< "+N":i2 "+AN":s 0:%^DIM 0:i "+Pl":s "@U.noun.abs@" >  PLak ; !
++N+AN+Sg:i2m%^DIM%>is ANSUFF_SG ;
++N+AN+Pl:i2m%^DIM%>is ANSUFF_PL ;
 
 
 LEXICON ANDECLisis !!= * @CODE@ for the animate declension, -isis diminutive
@@ -44,7 +61,7 @@ ANABSDECL ;
 +N+AN+Pl:%> ANSUFF_PL ;
 +N+AN:%> ANSUFF_LOC ;
 +N+AN:%> ANSUFF_LOC ;
-+N+AN+Der/Dim:%>%^DIMis%> ANDIM ;
+!+N+AN+Der/Dim:%>%^DIMis%> ANDIM ;
 +N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
 
 
