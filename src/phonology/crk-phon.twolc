@@ -115,16 +115,16 @@ t2:t <=> _ %>:0 Vow ;
 
 "i2:o in possessive element"
 !! __@RULENAME@__ 
-i2:o <=> k _ m %>:0 %^POS:0  ;
+i2:o <=> k %>:0  _ m %^POS:0  ;
 
 "i2:i in possessive element"
 !! __@RULENAME@__ 
-i2:i <=> [ n | s | p ] _ m %>:0  ;
+i2:i <=> [ n | s | p ] %>:0  _ m  ;
 
 
 "i2:0 in possessive element"
 !! __@RULENAME@__ 
-i2:0 <=> [ â | ô ] w _ m %>:0 %^POS:0  ; ! possessive element, doesn't work yet
+i2:0 <=> [ â | ô | ê ]  %>:0 _ [ m | s ] ( %^DIM:0 )  ; ! possessive element
 
 
 "-Vw:m alternation in front of possessive suffixes"
@@ -133,13 +133,12 @@ w:m <=> Vow - a _ %>:0  %^POS:0  ; ! iskwêw nitiskwêm
  
 "o:oo- alternation initially in possessive forms"
 !! __@RULENAME@__ , Okimasis p. 135
-o:ô <=> %>:0 _ k :*  w:m %>:0  %^POS:0  ; ! okimâw:niôkimâm ! first only in front of k
-  		_ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ;
+o:ô <=> t2: %>:0 _  :* i2:0  ; ! okimâw:nitôkimâm ! first only in front of k
+ 		_ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ;
  
 "wis:os in possessive prefix, step 1"
 !! __@RULENAME@__ , step 1. Okimasis p. 138 ! 
 w:0 <=> .#. _  i:o s :* %>:0  %^POS:0  ; 
-!	     .#. \Pos [ â | ô ] _ i2:0 m %>:0  %^POS:0  ; ! possessive element, doesn't work yet
     
 "wis:os in possessive prefix, step 2"
 !! __@RULENAME@__ , step 2. Okimasis p. 138 ! 
@@ -173,12 +172,12 @@ t:c <=> [ h | Vow | %>:0 ]  _ Vow :* %^DIM:0 ;  ! iskwâhtêm
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
 y:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 
-"In Vow+w final stems with Diminutives, part 1: delete y" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
+"In Vow+w final stems with Diminutives, part 1: delete w" 
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
 w:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 
 "In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
 [ i:î | a:â ] <=> _ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ; ! moved o:ô up to another rule
 
 ![ o:ô | i:î | a:â ] <=> _ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ;
