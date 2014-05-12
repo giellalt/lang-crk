@@ -266,7 +266,9 @@ __w Insertion in Front of Vowel Initial Suffix after ksv c__  This rule is apply
 
 __locative alternations o__ Okimasis 2004: 26, Rule 1: -k + ohk
 
-__locative alternations aaw 1__ (first) : Okimasis 2004: 26, Rule 2, 8: delete i, a, o: -Vow + (w/y) + ihk
+__locative alternations aaw 1__ (first) : Okimasis 2004: 26, Rule 2, 8: delete i, a, o: -Vow + (w/y) + ihk  OBS
+
+__o:oo- alternation initially in possessive forms__ , Okimasis p. 135  OBS
 
 __locative alternations aaw 2__ (second) : Okimasis 2004: 26, Rule 2: delete w / y
 
@@ -292,7 +294,6 @@ __i2:0 in possessive element__
 
 __-Vw:m alternation in front of possessive suffixes__ , Okimasis p. 136
 
-__o:oo- alternation initially in possessive forms__ , Okimasis p. 135
 
 __wis:os in possessive prefix, step 1__ , step 1. Okimasis p. 138 ! 
 
@@ -376,12 +377,16 @@ STEMLIST contains most of the nouns
 
 
 
+
+
+
+
+
 !KINSHIP nouns come here, they are in STEMLIST lexicon
 
 
 
 INALIENABLESTEMS contains dependent nouns which are not kinskip terms
-
 
 
 
@@ -498,7 +503,6 @@ The stems
 
 
 
-
  LEXICON IISTEM     = VII
 
  LEXICON TASTEM    = VTA
@@ -560,6 +564,19 @@ The stems
 
 
 !!The declinations for Inanimates
+
+ * LEXICON INimDECL  for the animate declension, possessive element Okimasis p. 134
+
+
+ * LEXICON INimDIM  the diminutives with possessive element Okimasis p. 134
+
+
+ * LEXICON INimDECLw  for the animate declension, possessive element Okimasis p. 134
+
+ * LEXICON INimDECLy  for the animate declension, possessive element Okimasis p. 134
+
+ * LEXICON INimDIMw  the diminutives with possessive element Okimasis p. 134
+
 
  * LEXICON INDECL  for the inanimate declension
 
