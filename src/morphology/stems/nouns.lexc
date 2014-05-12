@@ -88,6 +88,7 @@ cahcahkâyow ANDECL "blackbird" ; !yaml
 inini ANDECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.	
 iskwêw:iskwê ANimDECLw "a woman" ; !yaml
 !iskwêw ANDECL "a woman" ; !yaml
+kôhkôs ANDECL "pig" ; !GG 26
 maskwa ANDECLis "bear" ; ! maskwak	
 maskosis ANDIM "little moose" ; 
 !maskwa:maskosis ANDIMDERIVATION "little moose" ; 
@@ -143,7 +144,6 @@ minôs ANimDECL "cat" ; ! exstra -im in poss GG p 25
 !minôs+Dim:minôsis ANDIM "little cat" ;	!minôsisis GG p 17
 sîsîp ANimDECL "duck" ;	! exstra -im in poss GG p 25
 !sîsîp+Dim:sîsîpis ANDIM "duckling" ;	! sîsîpisis
-tatâwewkamik ANimDECL ; ! GG p 25
 !tohtôsâpoy ANimDECL ; ! GGII p 25 AN, p. 12 and dict: IN
 okimâw:okimâ ANimDECLw "boss" ; ! GG p 25
 
@@ -154,10 +154,12 @@ mistikw:mistik ANkwDECL "stick" ;
 askihkw:askihk ANkwDECL "pail" ;
 mahkahkw:mahkahk ANkwDECL "tub/barrel" ;
 
+tehtapiwin INDECL "chair" ; ! GGI p 26
+atâwewkamik INimDECL "store" ; ! GGI p 26, GGII 25
 sakâw INDECL "bush" ;
 mîcimâpoy INDECL "soup" ; !GG 12
 sîsîpiwâwi INDECL "duck egg" ;
-wâwi INimDECL "egg" ; !  GG pl: wâwa
+wâwi INimDECL "egg" ; !  GG 12 pl: wâwa
 askipwâwi INimDECL "potato" ; ! GG 12 askipwâwa Pl
 wâwis INDIM "little egg" ; ! Proficient speakers' abbr. dimin
 ôtênaw INDECL "city" ;
@@ -198,10 +200,10 @@ tohtôsâpoy:tohtôsâpo INimDECLy "milk" ; ! GG 12
 maskihkiwâpoy INDECL "tea" ; ! GG 12
 sîwihtâkan INDECL "salt" ; ! GG 12
 papeskomina INDECL "pepper" ; ! GG 12 treat as sg
-tohtôsâpôpimiy INimDECL "butter" ; ! GG 12
+tohtôsâpôpimiy:tohtôsâpôpimi INimDECLy "butter" ; ! GG 12
 cîscayisîpwâkanis INDECL "fork" ; ! GG 12
-wîyâkan INDECL "dish, plate" ;
-minihkewewîyâkanis INDECL "cup" ;
+wîyâkan INDECL "dish, plate" ; ! GG 12
+minihkewewîyâkanis INDECL "cup" ; ! GG 12
 
 
 atim ANIRRDECL "dog" ; ! -wak, -ohk, -wa !yaml  
@@ -210,6 +212,7 @@ mistatim ANIRRDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
 mistatim:têm ANIRRINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
 mitâs:tâs ANIRRINFL "pants" ;
 mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
+
 
 !! !KINSHIP nouns come here, they are in STEMLIST lexicon
 otânisimâw:tânis ANKININFL "daughter" ;
@@ -252,7 +255,15 @@ micihciy:icihciy INALIENABLEPOSS "hand" ; !OBS -iy New lexicon?
 micihciy:icihcîsis INALIENABLEDERIVATION "small hand" ; 
 micihcîsis:icihcîsis INALIENABLEPOSS "small hand" ; 
 mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
-
+misit:isit INALIENABLEPOSS "foot" ;
+mistikwân:istikwân INALIENABLEPOSS "head" ;
+mîscakâs:îscakâs INALIENABLEPOSS "hair" ;
+mîskât:îskât INALIENABLEPOSS "leg" ;
+mitôn:itôn INALIENABLEPOSS "mouth" ;
+miskîsik:iskîsik INALIENABLEPOSS "eye" ;
+mikot:ikot INALIENABLEPOSS "nose" ;
+mîhtawakay:îhtawakay INALIENABLEPOSS "ear" ;
+mîyaw:îyaw INALIENABLEPOSS "body" ;
 
 
 ! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
