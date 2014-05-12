@@ -22,13 +22,13 @@ kiyânaw+Pron+Pers+12Pl:kiyânaw # ;
 kiyawâw+Pron+Pers+2Pl:kiyawâw # ;
 wiyawâw+Pron+Pers+3Pl:wiyawâw # ;
 
-nista+Pron+Pers+1Sg+Incl:nista # ;
-kista+Pron+Pers+2Sg+Incl:kista # ;
-wista+Pron+Pers+3Sg+Incl:wista # ;
-nistanân+Pron+Pers+1Pl+Incl:nistanân # ;
-kistanaw+Pron+Pers+12Pl+Incl:kistanaw # ;
-kistawâw+Pron+Pers+2Pl+Incl:kistawâw # ;
-wistawâw+Pron+Pers+3Pl+Incl:wistawâw # ;
+nîsta+Pron+Pers+1Sg+Incl:nîsta # ;
+kîsta+Pron+Pers+2Sg+Incl:kîsta # ;
+wîsta+Pron+Pers+3Sg+Incl:wîsta # ;
+nîstanân+Pron+Pers+1Pl+Incl:nîstanân # ;
+kîstanaw+Pron+Pers+12Pl+Incl:kîstanaw # ;
+kîstawâw+Pron+Pers+2Pl+Incl:kîstawâw # ;
+wîstawâw+Pron+Pers+3Pl+Incl:wîstawâw # ;
 
 
 LEXICON Interrogative 
@@ -48,5 +48,11 @@ awiyak+Pron+Indef+AN+Sg:awiyak # "someone" ;
 awiyak+Pron+Indef+AN+Pl:awiyakak # "some people" ;
 
 LEXICON Demonstrative 
-awa+Pron+Dem+Sg:awa # "this" ;
-awa+Pron+Dem+Pl:ôki # "these" ;
+awa+Pron+AN+Dem+Sg:awa # "this" ;
+ana+Pron+AN+Dem+Sg:ana # "that" ;
+ôma+Pron+IN+Dem+Sg:ôma # "this" ;
+anima+Pron+IN+Dem+Sg:anima # "that" ;
+ôki+Pron+AN+Dem+Pl:ôki # "these" ;
+aniki+Pron+AN+Dem+Pl:aniki # "those" ;
+ôhi+Pron+IN+Dem+Pl:ôhi # "these" ;
+anihi+Pron+IN+Dem+Pl:anihi # "those" ;
