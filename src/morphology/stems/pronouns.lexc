@@ -15,7 +15,9 @@ ci+Qst:ci # ; ! This one shall go in a particle file.
 
 LEXICON Personal 
 niya+Pron+Pers+1Sg:niya # ;
+niya+Pron+Pers+1Sg:nîya # ; ! GG
 kiya+Pron+Pers+2Sg:kiya # ;
+kiya+Pron+Pers+2Sg:kîya # ; ! GG
 wiya+Pron+Pers+3Sg:wiya # ;
 niiyanân+Pron+Pers+1Pl:niyanân # ;
 kiyânaw+Pron+Pers+12Pl:kiyânaw # ;
@@ -32,15 +34,11 @@ wîstawâw+Pron+Pers+3Pl+Incl:wîstawâw # ;
 
 
 LEXICON Interrogative 
-awîna+Pron+Interr+Sg:awîna # "who" ;
+awîna+Pron+Interr+Sg:awîna # "who,whose" ;
 awîna+Pron+Interr+Pl:awîniki # "who" ;
 kîkwây+Pron+Interr+Sg:kîkwây # "what" ;
+kîkwây+Pron+Interr+Pl:kîkwây # "what" ; !Wolvengrey
 kîkwây+Pron+Interr+Pl:kîkwâya # "what" ;
-
-tânisi+Pron+Interr+Sg:tânisi # "how" ;
-tânispîhk+Pron+Interr+Sg:tânispîhk # "when" ;
-tânêhki+Pron+Interr+Sg:tânêhki # "why" ;
-tânitê+Pron+Interr+Sg:tânitê # "where" ;
 tânitowahk+Pron+Interr+Sg:tânitowahk # "what kind" ;
 
 LEXICON Indefinite 
