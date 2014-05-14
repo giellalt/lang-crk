@@ -96,7 +96,6 @@ maskosis ANDIM "little moose" ;
 mâyatihk ANDECL "bighorn sheep" ;	
 !mâyatihk:mâyacihkos ANDIMDERIVATION "little bighorn sheep" ;	
 mâyacihkos ANDIM "little bighorn sheep" ;	
-mostos ANDECL "cow" ;	!GG p 16: pl is mostoswak. Move to IRREGANSTEMSLIST?
 !mostos:mostosis ANDIMDERIVATION "little cow" ;	
 mostosis ANDIM "little cow" ;	
 môswa ANDECL "moose" ; ! môswak	
@@ -215,7 +214,8 @@ mistatim ANIRRDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
 mistatim:têm ANIRRINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
 mitâs:tâs ANIRRINFL "pants" ;
 mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
-
+mostos ANIRRINFL "cow" ;	!GG p 16: pl is mostoswak.
+mostos ANIRRDECL ;
 
 !! !KINSHIP nouns come here, they are in STEMLIST lexicon
 otânisimâw:tânis ANKININFL "daughter" ;
@@ -258,15 +258,15 @@ micihciy:icihciy INALIENABLEPOSS "hand" ; !OBS -iy New lexicon?
 micihciy:icihcîsis INALIENABLEDERIVATION "small hand" ; 
 micihcîsis:icihcîsis INALIENABLEPOSS "small hand" ; 
 mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
-misit:isit INALIENABLEPOSS "foot" ;
-mistikwân:istikwân INALIENABLEPOSS "head" ;
-mîscakâs:îscakâs INALIENABLEPOSS "hair" ;
-mîskât:îskât INALIENABLEPOSS "leg" ;
-mitôn:itôn INALIENABLEPOSS "mouth" ;
-miskîsik:iskîsik INALIENABLEPOSS "eye" ;
-mikot:ikot INALIENABLEPOSS "nose" ;
-mîhtawakay:îhtawakay INALIENABLEPOSS "ear" ;
-mîyaw:îyaw INALIENABLEPOSS "body" ;
+misit:isit INALIENABLEPOSS "foot" ; !GG
+mistikwân:istikwân INALIENABLEPOSS "head" ; !GG
+mîscakâs:îscakâs INALIENABLEPOSS "hair" ; !GG
+mîskât:îskât INALIENABLEPOSS "leg" ; !GG
+mitôn:itôn INALIENABLEPOSS "mouth" ; !GG
+miskîsik:iskîsik INALIENABLEPOSS "eye" ; !GG
+mikot:ikot INALIENABLEPOSS "nose" ; !GG
+mîhtawakay:îhtawakay INALIENABLEPOSS "ear" ; !GG
+mîyaw:îyaw INALIENABLEPOSS "body" ; !GG
 
 
 ! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
