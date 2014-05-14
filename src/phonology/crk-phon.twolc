@@ -32,6 +32,7 @@ Sets
 Definitions 
  
  Pos = :* %^POS:0 :* ;
+ Dim = :* %^DIM:0 :* ;
 
 !! !!!Rules
 
@@ -77,7 +78,7 @@ Vx:0 <=>  _ [ w: | y: ] %>:0  i: %^LC:0 ;
 
 "o:oo- alternation initially in possessive forms"
 !! __@RULENAME@__ , Okimasis p. 135  OBS
-o:ô <=> t2: %>:0 _  k :* i2:0  ; ! okimâw:nitôkimâm ! first only in front of k
+o:ô <=> t2: %>:0 _  k :* i2: m %^POS:0  ; ! okimâw:nitôkimâm ! first only in front of k
  		 %>:0 t _  h :* i2:0  ; ! nitohtôsâpom
  		_ [ w: | y: ] %>:0 i: s: %^DIM:0 i: s: ;
       
@@ -165,10 +166,14 @@ Cx:0 <=> _ %>:0 Cx ;
 
 !! !!Rules for generating the correct surface forms of -isis the diminutive suffix
 
-"Diminutives - all stem t change to c with diminutives" 
+"Diminutives - all stem t change to c" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
-t:c <=> [ h | Vow | %>:0 ]  _ Vow :* %^DIM:0 ;  ! iskwâhtêm
-		  _ %>:0 Vow :* %^DIM:0 ; ! wayasit
+t:c <=> [ h | Vow | %>:0 ]  _ Vow Dim .#. ;  ! iskwâhtêm
+		  _ %>:0 Vow Dim .#. ; ! wayasit
+
+!"Diminutives - t2 changes to c" 
+!  unsure about this
+!t2:c <=>  _ %>:0 Vow Dim .#. ; 
 
 "In Vow+y final stems with Diminutives, part 1: delete y" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
