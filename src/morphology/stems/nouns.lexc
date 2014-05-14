@@ -76,7 +76,7 @@ apiscacihkos ANDECL "antelope" ;
 apisimôsos ANDECL "deer" ; ! apisimôsosak	
 !apisimôsos:apisimôsosis ANDIMDERIVATION "little deer" ; ! apisimôsosak
 apisimôsosis ANDIM "little deer" ; ! apisimôsosak
-anikwacâs ANDECLisis "squirrel" ; !yaml
+anikwacâs ANimDECL "squirrel" ; !yaml
 asikan ANDECL "sock" ;	!yaml
 !asikan:asikanis ANDIMDERIVATION "little sock" ; 	
 asikanis ANDIM "little sock" ;	
@@ -86,8 +86,8 @@ atihk ANDECL "caribou" ;
 acihkos ANDIM "little caribou" ;
 cahcahkâyow ANDECL "blackbird" ; !yaml
 inini ANDECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.	
-iskwêw:iskwê ANimDECLw "a woman" ; !yaml
-!iskwêw ANDECL "a woman" ; !yaml
+iskwêw:iskwê ANiskwew "woman" ; !yaml
+iskwêsis ANimDECL "girl" ;
 kôhkôs ANDECL "pig" ; !GG 26
 maskwa ANDECLis "bear" ; ! maskwak	
 maskosis ANDIM "little moose" ; 
