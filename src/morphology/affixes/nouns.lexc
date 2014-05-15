@@ -294,8 +294,10 @@ LEXICON ANSUFF_LOC
 < "+Px3iSg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > LOC ; !
 < "+Px1Pl":%^POS  0:i 0:n 0:â 0:n "@U.noun.1pl@"  > LOC ;   ! exclusive Pl
 < "+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" > LOC ; ! inclusive Pl
-< "+Px2Pl":%^POS  0:i 0:w 0:â 0:w "@U.noun.2pl@"  > LOC ; !
-< "+Px3Pl":%^POS  0:i 0:w 0:â 0:w "@U.noun.3pl@"  > LOC ; !
+!< "+Px2Pl":%^POS  0:i 0:w 0:â 0:w "@U.noun.2pl@"  > LOC ; !
+!< "+Px3Pl":%^POS  0:i 0:w 0:â 0:w "@U.noun.3pl@"  > LOC ; !
+< "+Px2Pl":%^POS  0:i 0:w "@U.noun.2pl@"  > LOCahk ; !
+< "+Px3Pl":%^POS  0:i 0:w "@U.noun.3pl@"  > LOCahk ; !
 < "+Px3iPl":%^POS 0:i 0:y 0:i 0:w     "@U.noun.3isg@" > LOC ; ! obviative plural possessor
 
 
@@ -416,6 +418,10 @@ LEXICON LOC !!= * @CODE@
 
 LEXICON ANohk_LOC !!= * @CODE@ 
 +Loc:%>o%^LChk # ;
+
+LEXICON LOCahk !!= * @CODE@ 
++Loc:%>â%^LChk  # ;
+
 
 
 !!Obviative suffix
