@@ -69,7 +69,12 @@ ANABSDECL ;
 !+N+AN+Der/Dim:%>%^DIMis%> ANDIM ;
 +N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
 
-
+LEXICON AN-NOPXw !!= * @CODE@ for the animate absolute declension and diminutive, ôhow
++N+AN+Der/Dim:%>s%^DIMis%> ANABSDECL ;
+< "+N":w "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+N":w "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
+< "+N":w "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
+< "+N":n "+AN":0         "@U.noun.abs@" >  LOCahk ; !
 
 
 LEXICON ANDIMDERIVATION !!= * @CODE@ for hardcoded diminutives
@@ -86,8 +91,7 @@ LEXICON ANABSDECL !!= * @CODE@ for the animate absolute declension
 < "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
 < "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; !
-
-
+< "+N":i "+AN":n         "@U.noun.abs@" >  LOCahk ; !
 
 !LEXICON ANDIMDECL ! Declensions for animate diminutives, adding +Dim
 !< "+N":0 "+AN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
@@ -209,6 +213,20 @@ INABSDECL ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
 +N+IN+Der/Dim:%>%^DIMis%> INDIM ;
+
+LEXICON INDECLosi !!= * @CODE@ for the inanimate declension of ôsi, an irregular noun
+< "+N":s "+IN":i "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+N":s "+IN":a "+Pl":0 "@U.noun.abs@" >  PLa ; !
+< "+N":s "+IN":0 "@U.noun.abs@" >  LOC ; !
+< "+N":t "+IN":0 "@U.noun.abs@" >  LOC ; !
++N+IN+Sg:s%> INSUFF_SG ;
++N+IN+Pl:s%> INSUFF_PL ;
++N+IN:s%> INSUFF_LOC ;
++N+IN+Sg:t%> INSUFF_SG ;
++N+IN+Pl:t%> INSUFF_PL ;
++N+IN:t%> INSUFF_LOC ;
++N+IN+Der/Dim:s%>%^DIMis%> INDIM ;
++N+IN+Der/Dim:c%>%^DIMis%> INDIM ;
 
 
 LEXICON INDIMDERIVATION !!= * @CODE@
