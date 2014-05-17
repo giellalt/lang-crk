@@ -106,8 +106,8 @@ nâpês ANDECL "boy" ;
 !nâpês:nâpêsis ANDIMDERIVATION "little boy" ;	
 nâpêsis ANDIM "little boy" ;	
 nehiyaw ANDECL "Cree Person" ;	
-niska ANDECL "Canada goose" ; !yaml
-ôhow:ôho AN-NOPXw "owl" ; !yaml !NOT PX
+niska ANimDECL "Canada goose" ; !yaml
+ôhow:ôho AN-NOPOSSw "owl" ; !yaml 
 okistatowân ANDECL "grizzly bear" ; ! okistatowânak	
 !okistatowân:okiscacowânis ANDIMDERIVATION "little grizzly bear" ; !
 okiscacowânis ANDIM "little grizzly bear" ; 
@@ -116,8 +116,8 @@ sônîyâw ANDECL "money" ;
 oskâtâsk:oskâcâskos ANDIMDERIVATION "little carrot" ;	
 oskâcâskos ANDIM "little carrot" ;	
 pisiw ANDECL "cougar" ;
-sihkihp ANDECL "boil, carbuncle" ; !yaml
-sihkihp ANDECL "grebe, diving bird" ; !doublet,
+sihkihp ANimDECL "boil, carbuncle" ; !yaml
+!sihkihp ANDECL "grebe, diving bird" ; !doublet,
 sikâk ANDECL "skunk" ;	!yaml
 sikâk:sikâkos ANDIMDERIVATION "little skunk" ;
 sikâkos ANDIM "little skunk" ;
@@ -133,7 +133,8 @@ kinosew ANDECL "fish" ; ! GG 12
 sîwinikan ANDECL "sugar" ; ! GG 12 
 emihkwânis ANDECL "spoon" ; ! GG 12 
 emihkwân ANDECL "spoon" ; !  ? youTube
-
+awâsis ANimDECL "child" ; ! GG nitâwâsimisak, nicawâsimisak
+âmow ANDECL "bee" ; 
 
 !mistatim:miscacimosis ANDIMDERIVATION ;
 miscacimosis ANDIM ;
@@ -167,7 +168,7 @@ wâwis INDIM "little egg" ; ! Proficient speakers' abbr. dimin
 ôtênaw INDECL "city" ;
 ôtênaw:ôcênâs INDIMDERIVATION "little city" ; !Proficient speakers' abbr. dimin
 ôcênâs INDIM "little city" ; 
-maskisin INDECL "shoe" ; !yaml
+maskisin INDECLis "shoe" ; !yaml
 !maskisin:maskisinis INDIMDERIVATION "little shoe" ;
 maskisinis INDIM "little shoe" ;
 mistikowat INDECL "box" ;
@@ -206,7 +207,7 @@ tohtôsâpôpimiy:tohtôsâpôpimi INimDECLy "butter" ; ! GG 12
 cîscayisîpwâkanis INDECL "fork" ; ! GG 12
 wîyâkan INDECL "dish, plate" ; ! GG 12
 minihkewewîyâkanis INDECL "cup" ; ! GG 12
-
+masinahikan INDECL "book" ; !GG
 
 atim ANIRRDECL "dog" ; ! -wak, -ohk, -wa !yaml  
 atim:têm ANIRRINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
@@ -217,35 +218,33 @@ mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
 mostos ANIRRINFL "cow" ;	!GG p 16: pl is mostoswak.
 mostos ANIRRDECL ;
 
-!! !KINSHIP nouns come here, they are in STEMLIST lexicon
-otânisimâw:tânis ANKININFL "daughter" ;
-okosisimâw:kosis ANKININFL "son" ;
-omisimâw:mis ANKININFL "older sister" ;
-otisânimâw:tisân ANKININFL "sister/brother" ; !Lene invented the base form
-omosômimâw:mosôm ANKININFL "grandfather" ;
-ôhkomimâw:ôhkom ANKININFL "grandmother" ; 
-nikâwis:kâwis ANKININFL "mother's sister" ;
-nisis:sis ANKININFL "mother's brother" ;
-nikosis:kosis ANKININFL "father's sister" ;
-nohcâwis:ohcâwis ANKININFL "father's brother" ;
-nihciwâmis:hciwâmis ANKININFL "cousin" ;
-nisîmis:sîmis ANKININFL "father's brother's sons" ;
-nistês:stês ANKININFL "father's brother's sons" ;
-niscâs:scâs ANKININFL "cousin/brother in law" ;
-nîcimos:cimos ANKININFL "mother's brother's son" ;
-nicâhkos:câhkos ANKININFL "cousin/sister in law" ;
-nôsisim:ôsisim ANKININFL "grandchild" ;
-onâpêmiwâw:nâpêm ANKININFL_MONOG "husband" ;
-wîkimâkan:wîkimâkan ANKININFL_MONOG "spouse" ; 
-okâwîmâw:kâw ANKINiyINFL "mother" ;! -iy- dissappears Okimasis p. 140, 
-ôhtâwimâw:ôhtâw ANKINiyINFL "father" ;  
-
-
-
 LEXICON INALIENABLESTEMS  ! dependent nouns
-!! @LEXNAME@ contains dependent nouns which are not kinskip terms
+otânisimâw:itânis ANKININFL "daughter" ;
+okosisimâw:ikosis ANKININFL "son" ;
+onekihikomâw:inekihik ANKININFL "parent" ; !only Pl? ninekihikwak
+omosômimâw:imosôm ANKININFL "grandfather" ;
+ôhkomimâw:ôhkom ANKININFL "grandmother" ; 
+nîcisân:îcisân ANKININFL "sibling" ; 
+nisîmis:isîmis ANKININFL "younger sibling" ; 
+nitôtem:itôtem ANKININFL "friend" ; 
+okâwîmâw:ikâw ANKINiyINFL "mother" ;! -iy- dissappears Okimasis p. 140, 
+ohtâwimâw:ohtâw ANKINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy
+omisimâw:imis ANKININFL "older sister" ;
+nikâwis:ikâwis ANKININFL "mother's sister" ;
+nisis:isis ANKININFL "mother's brother" ;
+nikosis:ikosis ANKININFL "father's sister" ;
+nohcâwis:ohcâwis ANKININFL "father's brother" ;
+nihciwâmis:ihciwâmis ANKININFL "cousin" ;
+nisîmis:isîmis ANKININFL "father's brother's sons" ;
+nistês:istês ANKININFL "father's brother's sons" ;
+niscâs:iscâs ANKININFL "cousin/brother in law" ;
+nîcimos:îcimos ANKININFL "mother's brother's son" ;
+nicâhkos:icâhkos ANKININFL "cousin/sister in law" ;
+nôsisim:ôsisim ANKININFL "grandchild" ;
+onâpêmiwâw:inâpêm ANKININFL_MONOG "husband" ;
+wîkimâkan:iwîkimâkan ANKININFL_MONOG "spouse" ; 
 
-maniway:aniway INALIENABLEPOSS ; !"someone's cheek" !yaml
+maniway:aniwa INALIENABLEPOSS_SG ; !"someone's cheek" !yaml
 !otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
 !otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
 otehye:otehye INALIENABLEPOSS ;  ! this gives wotehye
@@ -266,8 +265,8 @@ mitôn:itôn INALIENABLEPOSS "mouth" ; !GG
 miskîsik:iskîsik INALIENABLEPOSS "eye" ; !GG
 mikot:ikot INALIENABLEPOSS "nose" ; !GG
 mîhtawakay:îhtawakay INALIENABLEPOSS "ear" ; !GG
-mîyaw:îyaw INALIENABLEPOSS "body" ; !GG
-
+miyaw:iyaw INALIENABLEPOSS "body" ; !GG
+niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ;
 
 ! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
 ! The issue: There is one string, wâw, that does not work with xfst.
