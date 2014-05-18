@@ -45,8 +45,8 @@ Rules
 
 "Suffix vowel deletion in vowel final stems" 
 !! __@RULENAME@__
-Vx:0 <=> Cons _ %>:0 ( %^POS:0 ) ( %>:0 ) Vow ;
-	where Vx in ( a e o â ê î ô ) ; 
+Vx:0 <=> Cons _ %>:0 ( %^POS:0 ) ( %>:0 )  Vow ;
+	where Vx in ( a e o â ê î ô ) ;  !niska
 
 "i deletion in vowel final stems"
 !! __@RULENAME@__ 
@@ -76,7 +76,7 @@ i:o <=> k %>:0 _  %^LC:0 ;
 !! __@RULENAME@__ (first) : Okimasis 2004: 26, Rule 2, 8: delete i, a, o: -Vow + (w/y) + ihk  OBS
 Vx:0 <=> Cons  _ [ w: | y: ] %>:0  i: %^LC:0 ;   
 !Vx:0 <=> .#. \Pos _ [ w: | y: ] %>:0  i: %^LC:0 ;   
-    where Vx in ( i a o ) ; ! cahcahkâyow > cahcahkâyôhk, NB: tohtôsâpoyôhk cahcahkâyowôhk
+    where Vx in ( i a o ) ; ! cahcahkâyow > cahcahkâyôhk, tohtôsâpoyôhk cahcahkâyowôhk
 
 "o:oo- alternation initially in possessive forms"
 !! __@RULENAME@__ , Okimasis p. 135  OBS
@@ -143,8 +143,7 @@ w:0 <=> [ Vow | o: ] _  %>:0 [ %^POS:0 | i2: | %^DIM:0 ] [ i: | m: | s: ] ; ! ok
 
 "y:0 in front of possessive suffix"
 !! __@RULENAME@__ 
-y:0 <=> w a: _  %>:0 %^POS:0  i: ; ! maniway
-
+y:0 <=> Cons a: _  %>:0 %^POS:0  i: ; ! maniway waniwayiyiw > waniwâiyiw
  
 "o:w in possessive prefix"
 !! __@RULENAME@__ , step 1. Okimasis p. 138 ! 
@@ -198,7 +197,7 @@ w:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 
 "a:aa in Vow+y/w final stems with Diminutives" 
 !! __@RULENAME@__
-a:â  <=> Cons _ [ y: | w: ] %>:0 %^POS:0  i: ;  !Not functioning yet        ! maniway
+a:â  <=> Cons _ [ y:0 | w:0 ] %>:0 %^POS:0  i: ;  !Not functioning waniwayiyiw > waniwâiyiw
 
 ![ o:ô | i:î | a:â ] <=> _ [ y: | w: ] %>:0 i: s: %^DIM:0 i: s: ;
 
