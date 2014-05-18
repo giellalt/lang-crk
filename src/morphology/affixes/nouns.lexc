@@ -5,7 +5,7 @@
 
 !! !!The declinations for Animates
 
-LEXICON ANniska
+LEXICON ANniska !!= * @CODE@ for the irregular niska N+AN
 < "+N":a "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
 < "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
 < "+N":a "+AN":k "+Pl":0 "@U.noun.abs@" >  # ; ! why not niskwak ??
@@ -25,8 +25,10 @@ ANABSDECL ;
 +N+AN+Sg:%>i2m ANSUFF_SG ;
 +N+AN+Pl:%>i2m ANSUFF_PL ;
 +N+AN:%>i2m ANSUFF_LOC ;
-+N+AN+Der/Dim:%>%^DIMis%> ANDIMim ;
-+N+AN+Der/Dim:%>is%^DIMis%> ANDIMim ;
++N+AN+Der/Dim:%>%^DIMis%> ANDIMim ; !poss element after diminutiv suffix
++N+AN+Der/Dim:%>is%^DIMis%> ANDIMim ; !poss element after diminutiv suffix
++N+AN+Der/Dim:i2m%>%^DIMis%> ANDIM ; !poss element before diminutiv suffix
++N+AN+Der/Dim:i2m%>is%^DIMis%> ANDIM ; !poss element before diminutiv suffix
 
 
 LEXICON ANDIMim !!= * @CODE@ the diminutives with possessive element Okimasis p. 134
@@ -36,12 +38,13 @@ LEXICON ANDIMim !!= * @CODE@ the diminutives with possessive element Okimasis p.
 +N+AN+Pl:%>im ANSUFF_PL ;
 
 
-LEXICON ANiskwew !!= * @CODE@ for iskwêw
+LEXICON ANiskwew !!= * @CODE@ for iskwêw, because of diminutive
  :w ANABSDECL ;
 +N+AN+Sg:%>m ANSUFF_SG ;
 +N+AN+Pl:%>m ANSUFF_PL ;
 +N+AN:%>m ANSUFF_LOC ;
 +N+AN+Der/Dim:%>%^DIMs%> ANimDIMw ;
++N+AN+Der/Dim:m%>%^DIMis%> ANDIM ; !poss element before diminutiv suffix
 
 
 LEXICON ANimDECLw !!= * @CODE@ for the animate declension, possessive element Okimasis p. 134
@@ -50,8 +53,7 @@ LEXICON ANimDECLw !!= * @CODE@ for the animate declension, possessive element Ok
 +N+AN+Pl:w%>i2m ANSUFF_PL ;
 +N+AN:w%>i2m ANSUFF_LOC ;
 +N+AN+Der/Dim:w%>%^DIMsis%> ANimDIMw ;
-
-
++N+AN+Der/Dim:m%>%^DIMis%> ANDIM ; !poss element before diminutiv suffix
 
 
 LEXICON ANimDIMw !!= * @CODE@ the diminutives with possessive element Okimasis p. 134
@@ -109,7 +111,7 @@ LEXICON ANABSDECL !!= * @CODE@ for the animate absolute declension
 < "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; !
 < "+N":i "+AN":n         "@U.noun.abs@" >  LOCahk ; !
 
-!LEXICON ANDIMDECL ! Declensions for animate diminutives, adding +Dim
+!LEXICON ANDIMDECL ! Declension for animate diminutives, adding +Dim
 !< "+N":0 "+AN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
 !< "+N":0 "+AN":0 "+Pl":0 "+Dim":0 "@U.noun.abs@" >  PLak ; !
 !< "+N":0 "+AN":0 "+Dim":0 "@U.noun.abs@" >  LOC ; !
