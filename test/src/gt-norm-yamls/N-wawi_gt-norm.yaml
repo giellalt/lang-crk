@@ -1,0 +1,78 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - wâwi - ok : # -m inanimate noun with poss element, egg
+     wâwi+N+IN+Sg: wâwi
+     wâwi+N+IN+Pl: wâwa
+     wâwi+N+IN+Loc: wâwihk
+     wâwi+N+IN+Der/Dim+N+IN+Sg: wâwis
+     wâwi+N+IN+Der/Dim+N+IN+Pl: wâwisak
+     wâwi+N+IN+Der/Dim+N+IN+Loc: wâwisihk
+     
+     wâwi+N+IN+Sg+Px1Sg: niwâwim
+     wâwi+N+IN+Sg+Px2Sg: kiwâwim
+     wâwi+N+IN+Sg+Px3Sg: owâwim
+     wâwi+N+IN+Sg+Px3iSg: owâwimiyiw
+     wâwi+N+IN+Sg+Px1Pl: niwâwiminân
+     wâwi+N+IN+Sg+Px12Pl: kiwâwiminaw
+     wâwi+N+IN+Sg+Px2Pl: kiwâwimiwâw
+     wâwi+N+IN+Sg+Px3Pl: owâwimiwâw
+     wâwi+N+IN+Sg+Px3iPl: owâwimiyiw
+     
+     wâwi+N+IN+Pl+Px1Sg: niwâwima
+     wâwi+N+IN+Pl+Px2Sg: kiwâwima
+     wâwi+N+IN+Pl+Px3Sg: owâwima
+     wâwi+N+IN+Pl+Px3iSg: owâwimiyiwa
+     wâwi+N+IN+Pl+Px1Pl: niwâwiminâna
+     wâwi+N+IN+Pl+Px12Pl: kiwâwiminawa
+     wâwi+N+IN+Pl+Px2Pl: kiwâwimiwâwa
+     wâwi+N+IN+Pl+Px3Pl: owâwimiwâwa
+     wâwi+N+IN+Pl+Px3iPl: owâwimiyiwa
+     
+     wâwi+N+IN+Der/Dim+N+IN+Sg+Px1Sg: niwâwimis
+     wâwi+N+IN+Der/Dim+N+IN+Sg+Px2Sg: kiwâwimis
+     wâwi+N+IN+Der/Dim+N+IN+Sg+Px3Sg: owâwimis
+     wâwi+N+IN+Der/Dim+N+IN+Sg+Px3iSg: owâwimisiyiw
+     wâwi+N+IN+Der/Dim+N+IN+Sg+Px1Pl: niwâwimisinân
+     wâwi+N+IN+Der/Dim+N+IN+Sg+Px12Pl: kiwâwimisinaw
+     wâwi+N+IN+Der/Dim+N+IN+Sg+Px2Pl: kiwâwimisiwâw
+     wâwi+N+IN+Der/Dim+N+IN+Sg+Px3Pl: owâwimisiwâw
+     wâwi+N+IN+Der/Dim+N+IN+Sg+Px3iPl: owâwimisiyiw
+     
+     wâwi+N+IN+Der/Dim+N+IN+Pl+Px1Sg: niwâwimisa
+     wâwi+N+IN+Der/Dim+N+IN+Pl+Px2Sg: kiwâwimisa
+     wâwi+N+IN+Der/Dim+N+IN+Pl+Px3Sg: owâwimisa
+     wâwi+N+IN+Der/Dim+N+IN+Pl+Px3iSg: owâwimisiyiwa
+     wâwi+N+IN+Der/Dim+N+IN+Pl+Px1Pl: niwâwimisinâna
+     wâwi+N+IN+Der/Dim+N+IN+Pl+Px12Pl: kiwâwimisinawa
+     wâwi+N+IN+Der/Dim+N+IN+Pl+Px2Pl: kiwâwimisiwâwa
+     wâwi+N+IN+Der/Dim+N+IN+Pl+Px3Pl: owâwimisiwâwa
+     wâwi+N+IN+Der/Dim+N+IN+Pl+Px3iPl: owâwimisiyiwa
+     
+     wâwi+N+IN+Px1Sg+Loc: niwâwimihk
+     wâwi+N+IN+Px2Sg+Loc: kiwâwimihk
+     wâwi+N+IN+Px3Sg+Loc: owâwimihk
+     wâwi+N+IN+Px3iSg+Loc: owâwimiyihk
+     wâwi+N+IN+Px1Pl+Loc: niwâwiminâhk
+     wâwi+N+IN+Px12Pl+Loc: kiwâwiminâhk
+     wâwi+N+IN+Px2Pl+Loc: kiwâwimiwâhk
+     wâwi+N+IN+Px3Pl+Loc: owâwimiwâhk
+     wâwi+N+IN+Px3iPl+Loc: owâwimiyihk
+
+     wâwi+N+IN+Der/Dim+N+IN+Px1Sg+Loc: niwâwimisihk
+     wâwi+N+IN+Der/Dim+N+IN+Px2Sg+Loc: kiwâwimisihk
+     wâwi+N+IN+Der/Dim+N+IN+Px3Sg+Loc: owâwimisihk
+     wâwi+N+IN+Der/Dim+N+IN+Px3iSg+Loc: owâwimisiyihk
+     wâwi+N+IN+Der/Dim+N+IN+Px1Pl+Loc: niwâwimisinâhk
+     wâwi+N+IN+Der/Dim+N+IN+Px12Pl+Loc: kiwâwimisinâhk
+     wâwi+N+IN+Der/Dim+N+IN+Px2Pl+Loc: kiwâwimisiwâhk
+     wâwi+N+IN+Der/Dim+N+IN+Px3Pl+Loc: owâwimisiwâhk
+     wâwi+N+IN+Der/Dim+N+IN+Px3iPl+Loc: owâwimisiyihk
