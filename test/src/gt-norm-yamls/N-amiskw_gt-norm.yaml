@@ -9,70 +9,72 @@ Config:
 
 Tests:
   
-  Noun - maskisin - ok : # -m inanimate noun, shoe
-     maskisin+N+IN+Sg: maskisin
-     maskisin+N+IN+Pl: maskisina
-     maskisin+N+IN+Loc: maskisinihk
-     maskisin+N+IN+Der/Dim+N+IN+Sg: maskisinisis
-     maskisin+N+IN+Der/Dim+N+IN+Pl: maskisinisisa
-     maskisin+N+IN+Der/Dim+N+IN+Loc: maskisinisisihk
+  Noun - amiskw - ok : # -m animate noun, beaver # quite unsure about the diminutives
+     amisk+N+AN+Sg: amisk
+     amisk+N+AN+Pl: amiskwak
+     amisk+N+AN+Loc: amiskohk
+     amisk+N+AN+Obv: amiska
+     amisk+N+AN+Der/Dim+N+AN+Sg: amiskis 
+     amisk+N+AN+Der/Dim+N+AN+Pl: amiskisak
+     amisk+N+AN+Der/Dim+N+AN+Loc: amiskisihk
      
-     maskisin+N+IN+Sg+Px1Sg: nimaskisin
-     maskisin+N+IN+Sg+Px2Sg: kimaskisin
-     maskisin+N+IN+Sg+Px3Sg: omaskisin
-     maskisin+N+IN+Sg+Px3iSg: omaskisiniyiw
-     maskisin+N+IN+Sg+Px1Pl: nimaskisininân
-     maskisin+N+IN+Sg+Px12Pl: kimaskisininaw
-     maskisin+N+IN+Sg+Px2Pl: kimaskisiniwâw
-     maskisin+N+IN+Sg+Px3Pl: omaskisiniwâw
-     maskisin+N+IN+Sg+Px3iPl: omaskisiniyiw
+     amisk+N+AN+Sg+Px1Sg: nitamiskom
+     amisk+N+AN+Sg+Px2Sg: kitamiskom
+     amisk+N+AN+Sg+Px3Sg+Obv: otamiskoma
+     amisk+N+AN+Sg+Px3iSg+Obv: otamiskomiyiwa
+     amisk+N+AN+Sg+Px1Pl: nitamiskominân
+     amisk+N+AN+Sg+Px12Pl: kitamiskominaw
+     amisk+N+AN+Sg+Px2Pl: kitamiskomiwâw
+     amisk+N+AN+Sg+Px3Pl+Obv: otamiskomiwâwa
+     amisk+N+AN+Sg+Px3iPl+Obv: otamiskomiyiwa
      
-     maskisin+N+IN+Pl+Px1Sg: nimaskisina
-     maskisin+N+IN+Pl+Px2Sg: kimaskisina
-     maskisin+N+IN+Pl+Px3Sg: omaskisina
-     maskisin+N+IN+Pl+Px3iSg: omaskisiniyiwa
-     maskisin+N+IN+Pl+Px1Pl: nimaskisininâna
-     maskisin+N+IN+Pl+Px12Pl: kimaskisininawa
-     maskisin+N+IN+Pl+Px2Pl: kimaskisiniwâwa
-     maskisin+N+IN+Pl+Px3Pl: omaskisiniwâwa
-     maskisin+N+IN+Pl+Px3iPl: omaskisiniyiwa
+     amisk+N+AN+Pl+Px1Sg: nitamiskomak
+     amisk+N+AN+Pl+Px2Sg: kitamiskomak
+     amisk+N+AN+Pl+Px3Sg+Obv: otamiskoma
+     amisk+N+AN+Pl+Px3iSg+Obv: otamiskomiyiwa
+     amisk+N+AN+Pl+Px1Pl: nitamiskominânak
+     amisk+N+AN+Pl+Px12Pl: kitamiskominawak
+     amisk+N+AN+Pl+Px2Pl: kitamiskomiwâwak
+     amisk+N+AN+Pl+Px3Pl+Obv: otamiskomiwâwa
+     amisk+N+AN+Pl+Px3iPl+Obv: otamiskomiyiwa
      
-     maskisin+N+IN+Der/Dim+N+IN+Sg+Px1Sg: nimaskisinisis
-     maskisin+N+IN+Der/Dim+N+IN+Sg+Px2Sg: kimaskisinisis
-     maskisin+N+IN+Der/Dim+N+IN+Sg+Px3Sg: omaskisinisis
-     maskisin+N+IN+Der/Dim+N+IN+Sg+Px3iSg: omaskisinisisiyiw
-     maskisin+N+IN+Der/Dim+N+IN+Sg+Px1Pl: nimaskisinisisinân
-     maskisin+N+IN+Der/Dim+N+IN+Sg+Px12Pl: kimaskisinisisinaw
-     maskisin+N+IN+Der/Dim+N+IN+Sg+Px2Pl: kimaskisinisisiwâw
-     maskisin+N+IN+Der/Dim+N+IN+Sg+Px3Pl: omaskisinisisiwâw
-     maskisin+N+IN+Der/Dim+N+IN+Sg+Px3iPl: omaskisinisisiyiw
+     amisk+N+AN+Der/Dim+N+AN+Sg+Px1Sg: [nitamiskisim, nitamiskosisim] 
+     amisk+N+AN+Der/Dim+N+AN+Sg+Px2Sg: [kitamiskisim, kitamiskosisim]
+     amisk+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: [otamiskisima, otamiskosisima]
+     amisk+N+AN+Der/Dim+N+AN+Sg+Px3iSg+Obv: [otamiskisimiyiwa, otamiskosisimiyiwa]
+     amisk+N+AN+Der/Dim+N+AN+Sg+Px1Pl: [nitamiskisiminân, nitamiskosisiminân]
+     amisk+N+AN+Der/Dim+N+AN+Sg+Px12Pl: [kitamiskisiminaw, kitamiskosisiminaw]
+     amisk+N+AN+Der/Dim+N+AN+Sg+Px2Pl: [kitamiskisimiwâw, kitamiskosisimiwâw]
+     amisk+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: [otamiskisimiwâwa, otamiskosisimiwâwa]
+     amisk+N+AN+Der/Dim+N+AN+Sg+Px3iPl+Obv: [otamiskisimiyiwa, otamiskosisimiyiwa]
      
-     maskisin+N+IN+Der/Dim+N+IN+Pl+Px1Sg: nimaskisinisisa
-     maskisin+N+IN+Der/Dim+N+IN+Pl+Px2Sg: kimaskisinisisa
-     maskisin+N+IN+Der/Dim+N+IN+Pl+Px3Sg: omaskisinisisa
-     maskisin+N+IN+Der/Dim+N+IN+Pl+Px3iSg: omaskisinisisiyiwa
-     maskisin+N+IN+Der/Dim+N+IN+Pl+Px1Pl: nimaskisinisisinâna
-     maskisin+N+IN+Der/Dim+N+IN+Pl+Px12Pl: kimaskisinisisinawa
-     maskisin+N+IN+Der/Dim+N+IN+Pl+Px2Pl: kimaskisinisisiwâwa
-     maskisin+N+IN+Der/Dim+N+IN+Pl+Px3Pl: omaskisinisisiwâwa
-     maskisin+N+IN+Der/Dim+N+IN+Pl+Px3iPl: omaskisinisisiyiwa
+     amisk+N+AN+Der/Dim+N+AN+Pl+Px1Sg: [nitamiskisimak, nitamiskosisimak]
+     amisk+N+AN+Der/Dim+N+AN+Pl+Px2Sg: [kitamiskisimak, kitamiskosisimak]
+     amisk+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: [otamiskisima, otamiskosisima]
+     amisk+N+AN+Der/Dim+N+AN+Pl+Px3iSg+Obv: [otamiskisimiyiwa, otamiskosisimiyiwa]
+     amisk+N+AN+Der/Dim+N+AN+Pl+Px1Pl: [nitamiskosisiminânak, nitamiskisiminânak]
+     amisk+N+AN+Der/Dim+N+AN+Pl+Px12Pl: [kitamiskosisiminawak, kitamiskisiminawak]
+     amisk+N+AN+Der/Dim+N+AN+Pl+Px2Pl: [kitamiskosisimiwâwak, kitamiskisimiwâwak]
+     amisk+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: [otamiskisimiwâwa, otamiskosisimiwâwa]
+     amisk+N+AN+Der/Dim+N+AN+Pl+Px3iPl+Obv: [otamiskisimiyiwa, otamiskosisimiyiwa]
      
-     maskisin+N+IN+Px1Sg+Loc: nimaskisinihk
-     maskisin+N+IN+Px2Sg+Loc: kimaskisinihk
-     maskisin+N+IN+Px3Sg+Loc: omaskisinihk
-     maskisin+N+IN+Px3iSg+Loc: omaskisiniyihk
-     maskisin+N+IN+Px1Pl+Loc: nimaskisininânihk
-     maskisin+N+IN+Px12Pl+Loc: kimaskisininâhk
-     maskisin+N+IN+Px2Pl+Loc: kimaskisiniwâwihk
-     maskisin+N+IN+Px3Pl+Loc: omaskisiniwâwihk
-     maskisin+N+IN+Px3iPl+Loc: omaskisiniyihk
+     amisk+N+AN+Px1Sg+Loc: nitamiskomihk
+     amisk+N+AN+Px2Sg+Loc: kitamiskomihk
+     amisk+N+AN+Px3Sg+Loc: otamiskomihk
+     amisk+N+AN+Px3iSg+Loc: otamiskomiyihk
+     amisk+N+AN+Px1Pl+Loc: nitamiskominâhk
+     amisk+N+AN+Px12Pl+Loc: kitamiskominihk
+     amisk+N+AN+Px2Pl+Loc: kitamiskomiwâhk
+     amisk+N+AN+Px3Pl+Loc: otamiskomiwâhk
+     amisk+N+AN+Px3iPl+Loc: otamiskomiyihk
 
-     maskisin+N+IN+Der/Dim+N+IN+Px1Sg+Loc: nimaskisinisisihk
-     maskisin+N+IN+Der/Dim+N+IN+Px2Sg+Loc: kimaskisinisisihk
-     maskisin+N+IN+Der/Dim+N+IN+Px3Sg+Loc: omaskisinisisihk
-     maskisin+N+IN+Der/Dim+N+IN+Px3iSg+Loc: omaskisinisisiyihk
-     maskisin+N+IN+Der/Dim+N+IN+Px1Pl+Loc: nimaskisinisisinânihk
-     maskisin+N+IN+Der/Dim+N+IN+Px12Pl+Loc: kimaskisinisisinâhk
-     maskisin+N+IN+Der/Dim+N+IN+Px2Pl+Loc: kimaskisinisisiwâwihk
-     maskisin+N+IN+Der/Dim+N+IN+Px3Pl+Loc: omaskisinisisiwâwihk
-     maskisin+N+IN+Der/Dim+N+IN+Px3iPl+Loc: omaskisinisisiyihk
+     amisk+N+AN+Der/Dim+N+AN+Px1Sg+Loc: [nitamiskosisimihk, nitamiskisimihk]
+     amisk+N+AN+Der/Dim+N+AN+Px2Sg+Loc: [kitamiskosisimihk, kitamiskisimihk]
+     amisk+N+AN+Der/Dim+N+AN+Px3Sg+Loc: [otamiskosisimihk, otamiskisimihk]
+     amisk+N+AN+Der/Dim+N+AN+Px3iSg+Loc: [otamiskosisimiyihk, otamiskisimiyihk]
+     amisk+N+AN+Der/Dim+N+AN+Px1Pl+Loc: [nitamiskosisiminâhk, nitamiskisiminâhk]
+     amisk+N+AN+Der/Dim+N+AN+Px12Pl+Loc: [kitamiskosisiminihk, kitamiskisiminihk]
+     amisk+N+AN+Der/Dim+N+AN+Px2Pl+Loc: [kitamiskosisimiwâhk, kitamiskisimiwâhk]
+     amisk+N+AN+Der/Dim+N+AN+Px3Pl+Loc: [otamiskosisimiwâhk, otamiskisimiwâhk]
+     amisk+N+AN+Der/Dim+N+AN+Px3iPl+Loc: [otamiskosisimiyihk, otamiskisimiyihk]
+     
