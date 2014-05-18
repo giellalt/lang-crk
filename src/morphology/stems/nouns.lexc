@@ -26,7 +26,6 @@ LEXICON Nouns
 AN-IN ; ! Animate and inanimate nouns
 INALIENABLE ; 
 
-
 LEXICON AN-IN
 !! @LEXNAME@ redirects to STEMS
 
@@ -51,13 +50,13 @@ LEXICON INALIENABLE
 
 < 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
-< 0:w    "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
-< 0:w "@U.noun.3isg@" > INALIENABLESTEMS ;  ! 3indef
+< 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
+< 0:o "@U.noun.3isg@" > INALIENABLESTEMS ;  ! 3indef
 < 0:n "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
 < 0:k "@U.noun.12pl@" > INALIENABLESTEMS ; ! inclusive Pl
 < 0:k "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
-< 0:w  "@U.noun.3pl@"  > INALIENABLESTEMS;  ! 3pl note: is prefix o- correct?
-< 0:w  "@U.noun.3ipl@"  > INALIENABLESTEMS;     ! 
+< 0:o "@U.noun.3pl@"  > INALIENABLESTEMS ;  ! 3pl note: is prefix o- correct?
+< 0:o "@U.noun.3ipl@"  > INALIENABLESTEMS ;     ! 
 
 
 
@@ -125,7 +124,6 @@ wâpask ANDECL "polar bear" ; ! wâpaskwak
 wâpask:wâpaskos ANDIMDERIVATION "little polar bear" ; 
 wâpaskos ANDIM "little polar bear" ; 
 wâwaskesiw ANDECL "elk" ;
-wayasit ANDECL "hoof" ; !yaml !possibly -is in Dim
 kôhkôsowîyin ANDECL "bacon" ; ! GG 12
 mahtâmin ANDECL "corn" ; ! GG 12 pl
 oskâtâsk ANDECL "carrot" ; ! GG 12 pl
@@ -149,7 +147,7 @@ okimâw:okimâ ANimDECLw "boss" ; ! GG p 25
 
 
 wâposw:wâpos ANkwDECL "rabbit" ; !how is plural -kwak?
-amiskw:amisk ANkwDECL "beaver" ;
+amisk ANimDECL "beaver" ;
 mistikw:mistik ANkwDECL "stick" ;
 askihkw:askihk ANkwDECL "pail" ;
 mahkahkw:mahkahk ANkwDECL "tub/barrel" ;
@@ -160,7 +158,7 @@ mîcisowkamik INimDECL "restaurant" ; ! GGII18 im?
 sônîyâwkamik INimDECL "bank" ; ! GGII18 im?
 sakâw INDECL "bush" ;
 mîcimâpoy INDECL "soup" ; !GG 12
-sîsîpiwâwi INDECL "duck egg" ;
+sîsîpiwâwi INimDECL "duck egg" ;
 wâwi INimDECL "egg" ; !  GG 12 pl: wâwa
 askipwâwi INimDECL "potato" ; ! GG 12 askipwâwa Pl
 meskanaw INDECL "road" ; !GGII18
@@ -208,6 +206,9 @@ cîscayisîpwâkanis INDECL "fork" ; ! GG 12
 wîyâkan INDECL "dish, plate" ; ! GG 12
 minihkewewîyâkanis INDECL "cup" ; ! GG 12
 masinahikan INDECL "book" ; !GG
+mîkiwâhp INDECL "tipi" ;
+wîkiwin INDECL "home" ;
+wayasit INDECLis "hoof" ; !yaml !possibly -is in Dim
 
 atim ANIRRDECL "dog" ; ! -wak, -ohk, -wa !yaml  
 atim:têm ANIRRINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
@@ -219,12 +220,16 @@ mostos ANIRRINFL "cow" ;	!GG p 16: pl is mostoswak.
 mostos ANIRRDECL ;
 
 LEXICON INALIENABLESTEMS  ! dependent nouns
+ 0:%> INABLESTEMLIST ;
+
+
+LEXICON INABLESTEMLIST
 otânisimâw:itânis ANKININFL "daughter" ;
 okosisimâw:ikosis ANKININFL "son" ;
-onekihikomâw:inekihik ANKININFL "parent" ; !only Pl? ninekihikwak
+onekihikomâw:inekihik ANKININFL "parent" ; !only Pl? ninekihikwak onikihkomaw
 omosômimâw:imosôm ANKININFL "grandfather" ;
 ôhkomimâw:ôhkom ANKININFL "grandmother" ; 
-nîcisân:îcisân ANKININFL "sibling" ; 
+nîtisân:îtisân ANKININFL "sibling" ; 
 nisîmis:isîmis ANKININFL "younger sibling" ; 
 nitôtem:itôtem ANKININFL "friend" ; 
 okâwîmâw:ikâw ANKINiyINFL "mother" ;! -iy- dissappears Okimasis p. 140, 
@@ -244,13 +249,13 @@ nôsisim:ôsisim ANKININFL "grandchild" ;
 onâpêmiwâw:inâpêm ANKININFL_MONOG "husband" ;
 wîkimâkan:iwîkimâkan ANKININFL_MONOG "spouse" ; 
 
-maniway:aniwa INALIENABLEPOSS_SG ; !"someone's cheek" !yaml
+maniway:aniway INALIENABLEPOSS_SG ; !"someone's cheek" !yaml
+maniwaw:aniwaw INALIENABLEPOSS_SG ; !"someone's cheek" !yaml
 !otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
 !otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
-otehye:otehye INALIENABLEPOSS ;  ! this gives wotehye
+otehye:otehye INALIENABLEPOSS ;  ! 
 mîpit:îpit INALIENABLEPOSS "tooth" ;
-mikiwâhp:iki INALIENABLEPOSS_SG "home" ;
-mikiwâhp+N+IN:mikiwâhp # ;
+wîkiwân:îki INALIENABLEPOSS_SG "home" ; !GG
 mahkwan:ahkwan INALIENABLEPOSS "heel" ;
 mispiton:ispiton INALIENABLEPOSS "arm" ; !o- in stead of w-
 micihciy:icihciy INALIENABLEPOSS "hand" ; !OBS -iy New lexicon?
@@ -265,7 +270,7 @@ mitôn:itôn INALIENABLEPOSS "mouth" ; !GG
 miskîsik:iskîsik INALIENABLEPOSS "eye" ; !GG
 mikot:ikot INALIENABLEPOSS "nose" ; !GG
 mîhtawakay:îhtawakay INALIENABLEPOSS "ear" ; !GG
-miyaw:iyaw INALIENABLEPOSS "body" ; !GG
+mîyaw:îyaw INALIENABLEPOSS "body" ; !GG
 niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ;
 
 ! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
