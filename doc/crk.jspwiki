@@ -310,7 +310,8 @@ __Double consonant deletion__
 
 !!Rules for generating the correct surface forms of -isis the diminutive suffix
 
-__Diminutives - all stem t change to c with diminutives __ Okimasis 2004: 13, Rule 2.
+__Diminutives - all stem t change to c __ Okimasis 2004: 13, Rule 2.
+
 
 __In Vow+y final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
 
@@ -353,7 +354,6 @@ The prefixes
 
 Nouns redirects to AN-IN and INALIENABLE
 
-
 AN-IN redirects to STEMS
 
 
@@ -380,13 +380,6 @@ STEMLIST contains most of the nouns
 
 
 
-
-
-!KINSHIP nouns come here, they are in STEMLIST lexicon
-
-
-
-INALIENABLESTEMS contains dependent nouns which are not kinskip terms
 
 
 
@@ -511,6 +504,7 @@ The stems
 
 
 
+
                           !!!Plains Cree noun morphology                           
 
 !!The declinations for Animates
@@ -518,10 +512,15 @@ The stems
  * LEXICON ANimDECL  for the animate declension, possessive element Okimasis p. 134
 
 
- * LEXICON ANimDIM  the diminutives with possessive element Okimasis p. 134
+ * LEXICON ANDIMim  the diminutives with possessive element Okimasis p. 134
+
+
+ * LEXICON ANiskwew  for iskwêw
 
 
  * LEXICON ANimDECLw  for the animate declension, possessive element Okimasis p. 134
+
+
 
 
  * LEXICON ANimDIMw  the diminutives with possessive element Okimasis p. 134
@@ -533,7 +532,7 @@ The stems
 
  * LEXICON ANDECL  for the animate declension, both -isis and -is diminutives
 
-
+ * LEXICON AN-NOPOSSw  for the animate absolute declension and diminutive, ôhow
 
 
  * LEXICON ANDIMDERIVATION  for hardcoded diminutives
@@ -541,8 +540,6 @@ The stems
  * LEXICON ANDIM  both for lexicalised and derivated diminutives
 
  * LEXICON ANABSDECL  for the animate absolute declension
-
-
 
 
 
@@ -584,6 +581,8 @@ The stems
 
  * LEXICON INDECLis  for the inanimate declension
 
+ * LEXICON INDECLosi  for the inanimate declension of ôsi, an irregular noun
+
 
  * LEXICON INDIMDERIVATION 
 
@@ -598,7 +597,6 @@ The stems
  * LEXICON INALIENABLEDERIVATION 
 
  * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
-
 
 
  * LEXICON INALIENABLEPOSS_SG  inanimate possessive declension, only Sg
@@ -670,6 +668,9 @@ The stems
  * LEXICON LOC  
 
  * LEXICON ANohk_LOC  
+
+ * LEXICON LOCahk  
+
 
 
 
