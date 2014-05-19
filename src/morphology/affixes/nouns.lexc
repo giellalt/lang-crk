@@ -84,7 +84,7 @@ ANABSDECL ;
 +N+AN+Sg:%> ANSUFF_SG ;
 +N+AN+Pl:%> ANSUFF_PL ;
 +N+AN:%> ANSUFF_LOC ;
-!+N+AN+Der/Dim:%>%^DIMis%> ANDIM ;
++N+AN+Der/Dim:%>%^DIMis%> ANDIM ;
 +N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
 
 LEXICON AN-NOPOSSw !!= * @CODE@ for the animate absolute declension and diminutive, ôhow
@@ -275,10 +275,18 @@ LEXICON INALIENABLEDERIVATION !!= * @CODE@
 +N+IN+Der/Dim:  INALIENABLEPOSS ;
 
 LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
-< "+N":0 "+IN":0 "+Sg":0 "@U.noun.3ipl@" > # ; !Poss. generic form (?)
+< "+N":0 "+IN":0 "@U.noun.abs@" > INABLGENERIC ; !Generic form
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
+
+LEXICON INABLGENERIC
++Sg: SG_ ;
++Pl: PLa ;
+ LOC ;
++Der/Dim+N+IN+Sg:%>%^DIMis%> SG_ ;
++Der/Dim+N+IN+Pl:%>%^DIMis%> PLa ;
+
 
 
 LEXICON INALIENABLEPOSS_SG !!= * @CODE@ inanimate possessive declension, only Sg

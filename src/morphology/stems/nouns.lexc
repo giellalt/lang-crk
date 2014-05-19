@@ -43,6 +43,7 @@ LEXICON AN-IN
 
 LEXICON BODY
 !! @LEXNAME@ for bodyparts, similar to INALIENABLE but it give the generic form m-. Redirects to BODYSTEMS. 
+< 0:m "@U.noun.abs@"  > BODYSTEMS ; ! 1
 < 0:n "@U.noun.1sg@"  > BODYSTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > BODYSTEMS ; ! 2
 < 0:o "@U.noun.3sg@"  > BODYSTEMS ;     ! 3
@@ -96,7 +97,7 @@ cahcahkâyow:cahcahkâyo ANimDECLw "blackbird" ; !yaml
 inini ANDECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.	
 iskwêw:iskwê ANiskwew "woman" ; !yaml
 iskwêsis ANimDECL "girl" ;
-kôhkôs ANDECL "pig" ; !GG 26
+kôhkôs ANDECL "pig" ; !GG 26 dim: kôhkôsis GGI p 55
 maskwa ANDECLis "bear" ; ! maskwak	
 maskosis ANDIM "little moose" ; 
 !maskwa:maskosis ANDIMDERIVATION "little moose" ; 
