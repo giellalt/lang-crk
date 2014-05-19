@@ -43,7 +43,6 @@ LEXICON AN-IN
 
 LEXICON BODY
 !! @LEXNAME@ for bodyparts, similar to INALIENABLE but it give the generic form m-. Redirects to BODYSTEMS. 
-< 0:m "@U.noun.abs@" >  BODYSTEMS ; ! generic form
 < 0:n "@U.noun.1sg@"  > BODYSTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > BODYSTEMS ; ! 2
 < 0:o "@U.noun.3sg@"  > BODYSTEMS ;     ! 3
@@ -153,7 +152,7 @@ minôs ANimDECL "cat" ; ! exstra -im in poss GG p 25
 sîsîp ANimDECL "duck" ;	! exstra -im in poss GG p 25
 !sîsîp+Dim:sîsîpis ANDIM "duckling" ;	! sîsîpisis
 okimâw:okimâ ANimDECLw "boss" ; ! GG p 25
-
+wîkimâkan ANimDECL "spouse" ; !both NA and NDA
 wâposw:wâpos ANkwDECL "rabbit" ; !yaml
 amisk ANimDECL "beaver" ; !yaml
 mistikw:mistik ANkwDECL "stick" ; !Wolfart freqv list: mistikohk
@@ -235,27 +234,25 @@ LEXICON INABLESTEMLIST
 !! @LEXNAME@ for dependent nouns
 otânisimâw:itânis ANKININFL "daughter" ; !yaml
 okosisimâw:ikosis ANKININFL "son" ;
-onekihikomâw:inekihik ANKININFL "parent" ; !only Pl? ninekihikwak onikihkomaw
+onîkihikomâw:inekihik ANKININFL "parent" ; ! NB! generic form? ninekihikwak onikihkomaw
 omosômimâw:imosôm ANKININFL "grandfather" ;
-ôhkomimâw:ôhkom ANKININFL "grandmother" ; 
-nîtisân:îtisân ANKININFL "sibling" ; 
-nisîmis:isîmis ANKININFL "younger sibling" ; 
-nitôtem:itôtem ANKININFL "friend" ; 
+ôhkomimâw:ôhkom ANKININFL "grandmother" ; !NB! twolc gives oô-
+nîtisân:îtisân ANKININFL "sibling" ; !NB! twolc gives oî-
+osîmisimâw:isîmis ANKININFL "younger sibling" ; 
+otôtemimâw:itôtem ANKININFL "friend" ; 
 okâwîmâw:ikâw ANKINiyINFL "mother" ;! -iy- dissappears Okimasis p. 140,  !yaml
 ohtâwimâw:ohtâw ANKINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy
 omisimâw:imis ANKININFL "older sister" ;
-nikâwis:ikâwis ANKININFL "mother's sister" ;
-nisis:isis ANKININFL "mother's brother" ;
-nikosis:ikosis ANKININFL "father's sister" ;
-nohcâwis:ohcâwis ANKININFL "father's brother" ;
-nihciwâmis:ihciwâmis ANKININFL "cousin" ;
-nisîmis:isîmis ANKININFL "father's brother's sons" ;
-nistês:istês ANKININFL "father's brother's sons" ;
-niscâs:iscâs ANKININFL "cousin/brother in law" ;
-nîcimos:îcimos ANKININFL "mother's brother's son" ;
-nicâhkos:icâhkos ANKININFL "cousin/sister in law" ;
-nôsisim:ôsisim ANKININFL "grandchild" ;
-onâpêmiwâw:inâpêm ANKININFL_MONOG "husband" ;
+nikâwis:ikâwis ANKININFL "mother's sister" ; ! gen.form okâwisimâw??
+osisimâw:isis ANKININFL "mother's brother, father's sister husband" ; 
+ohcâwîsimâw:ohcâwîs ANKININFL "father's brother" ; !NB! twolc gives oo-
+nihciwâmis:ihciwâmis ANKININFL "cousin" ;  ! gen.form ohciwâmisimâw??
+ostêsimâw:istês ANKININFL "oldest brother" ;
+niscâs:iscâs ANKININFL "cousin/brother in law" ; ! gen.form??
+nîcimos:îcimos ANKININFL "mother's brother's son" ; ! gen.form?? !NB! twolc gives oî-
+nicâhkos:icâhkos ANKININFL "cousin/sister in law" ;! gen.form ocâhkosimâw??
+nôsisim:ôsisim ANKININFL "grandchild" ;!NB! twolc gives oô-  gen.form ôsisimimâw??
+onâpêmimâw:inâpêm ANKININFL_MONOG "husband" ;
 wîkimâkan:iwîkimâkan ANKININFL_MONOG "spouse" ; 
 otehye:otehye INALIENABLEPOSS ;  ! 
 !otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";

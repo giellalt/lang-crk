@@ -129,11 +129,11 @@ LEXICON ANIRRDECL	!!= * @CODE@ for atim and mistatim.
 
 
 LEXICON ANKININFL !!= * @CODE@ The lexicon gives a base form N+AN+Sg (if we want it)
-< "+N":i "+AN":m "+Sg":m 0:â 0:w "@U.noun.3ipl@" > # ;
+< "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > # ; !generic form
  ANIRRINFL ;
 
 LEXICON ANKINiyINFL  !!= * @CODE@ Special treatment for nouns ending with -iy
-< "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
+< "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > # ; !generic form
 +N+AN+Sg: ANiySUFF_SG ;
 +N+AN+Pl: ANiySUFF_PL ;
 +N+AN+Der/Dim:%^DIMisis%> ANDIMIRR ;  
@@ -141,6 +141,7 @@ LEXICON ANKINiyINFL  !!= * @CODE@ Special treatment for nouns ending with -iy
 
 
 LEXICON ANKININFL_MONOG !!= * @CODE@ No bigami
+< "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > # ; !generic form
 < "+N":0 "+AN":0 "+Sg":0 "+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
 < "+N":0 "+AN":0 "+Sg":0 "+Px2Sg":%^POS                  "@U.noun.2sg@"  > SG_ ; !
 < "+N":0 "+AN":0 "+Sg":0 "+Px3Sg":%^POS                  "@U.noun.3sg@"  > OBVIATIVE ; !
@@ -274,7 +275,7 @@ LEXICON INALIENABLEDERIVATION !!= * @CODE@
 +N+IN+Der/Dim:  INALIENABLEPOSS ;
 
 LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
-< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" > # ; !Base form for dep nouns
+< "+N":0 "+IN":0 "+Sg":0 "@U.noun.3ipl@" > # ; !Poss. generic form (?)
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
