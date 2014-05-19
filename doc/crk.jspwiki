@@ -291,20 +291,20 @@ __i2:i in possessive element__
 
 __i2:0 in possessive element__ 
 
+__w:0 in front of possessive suffix__ 
 
-__-Vw:m alternation in front of possessive suffixes__ , Okimasis p. 136
+__y:0 in front of possessive suffix__ 
+
+__o:w in possessive prefix__ , step 1. Okimasis p. 138 ! 
 
 
-__wis:os in possessive prefix, step 1__ , step 1. Okimasis p. 138 ! 
-
-__wis:os in possessive prefix, step 2__ , step 2. Okimasis p. 138 ! 
+__o:0 in possessive prefix__ , step 1. Okimasis p. 138 ! 
 
 
 __i to a in prefixes in front of nasals__ 
 
 
 __Double consonant deletion__ 
-
 
 
 
@@ -317,10 +317,13 @@ __In Vow+y final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, 
 
 __In Vow+w final stems with Diminutives, part 1: delete w __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
 
-__In Vow+y final stems with Diminutives, part 2: lengthen stem final vowel __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
+__In Vow+y/w final stems with Diminutives, part 2: lengthen stem final vowel __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
 
 
-__In Vow+y final stems with Diminutives, part 3: delete i in suffix __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
+__a:aa in Vow+y/w final stems with Diminutives __
+
+
+__In Vow+y/w final stems with Diminutives, part 3: delete i in suffix __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
 
 
 
@@ -352,11 +355,12 @@ The file
 
 The prefixes
 
-Nouns redirects to AN-IN and INALIENABLE
+Nouns redirects to AN-IN, BODY and INALIENABLE
 
-AN-IN redirects to STEMS
+AN-IN for both animate and inanimate nouns, redirects to STEMS
 
 
+BODY for bodyparts, similar to INALIENABLE but it give the generic form m-. Redirects to BODYSTEMS. 
 
 
 
@@ -364,24 +368,24 @@ INALIENABLE redirects to INALIENABLESTEMS
 
 
 
-
-
 !!The stems
 
 !Animate and inanimate Nouns
 
-STEMS add a affismark and redirects to STEMLIST
+STEMS add a affixmark and redirects to STEMLIST
 
 STEMLIST contains most of the nouns
 
 
 
 
+INALIENABLESTEMS adds a affixmark and redirects to INABLESTEMLIST
 
+INABLESTEMLIST for dependent nouns
 
+BODYSTEMS adds a affixmark and redirects to BODYSTEMLIST
 
-
-
+BODYSTEMLIST for dependent bodypartnouns. It generates a generic form m-
 
 
 
@@ -484,14 +488,16 @@ Transitive inanimate
 The stems
 
  LEXICON IASTEM    = VAI
- nipâw:nipâ IACONJ "sleep" ;  
- mâto IACONJ "sleep" ; 
- mîciso IACONJ "sleep" ;  Variation in length of first vowel, here following Okimâsis
+ nipâw:nipâ IACONJ "sleep" ;  GG
+ mâto IACONJ "cry" ;  GG
+ mîciso IACONJ "eat" ;  Variation in length of first vowel, here following Okimâsis. !GG
  waniskâw IACONJ "rise, get up" ;  
  micisiw IACONJ "eat" ; 
  nohtehkatew IACONJ "be hungry" ; 
  atoskêw:atoskê IACONJ "work" ;  test
  nêhiyawêw:nêhiyawê IACONJ "work" ; 
+
+
 
 
 
@@ -509,21 +515,22 @@ The stems
 
 !!The declinations for Animates
 
- * LEXICON ANimDECL  for the animate declension, possessive element Okimasis p. 134
+ * LEXICON ANniska  for the irregular niska N+AN
 
 
- * LEXICON ANDIMim  the diminutives with possessive element Okimasis p. 134
+ * LEXICON ANimDECL  for the animate declension, poss.-im-
 
 
- * LEXICON ANiskwew  for iskwêw
+ * LEXICON ANDIMim  the diminutives with poss.-im- after the dim.suffix
 
 
- * LEXICON ANimDECLw  for the animate declension, possessive element Okimasis p. 134
+ * LEXICON ANiskwew  for iskwêw. Special lexicon because of diminutive iskwês
 
 
+ * LEXICON ANimDECLw  for the animate declension, poss.-im-. For nouns with final -w when poss -im- comes before diminutive. We could do the job in twolc instead. 
 
 
- * LEXICON ANimDIMw  the diminutives with possessive element Okimasis p. 134
+ * LEXICON ANimDIMw  the diminutives with poss.-im-.
 
 
  * LEXICON ANDECLisis  for the animate declension, -isis diminutive
@@ -546,7 +553,7 @@ The stems
  * LEXICON ANIRRDECL	 for atim and mistatim.
 
 
- * LEXICON ANKININFL  The lexicon gives a base form N+AN (if we want it)
+ * LEXICON ANKININFL  The lexicon gives a base form N+AN+Sg (if we want it)
 
  * LEXICON ANKINiyINFL   Special treatment for nouns ending with -iy
 
@@ -600,7 +607,6 @@ The stems
 
 
  * LEXICON INALIENABLEPOSS_SG  inanimate possessive declension, only Sg
-
 
 !!Diminutive suffixes
 

@@ -20,43 +20,43 @@ LEXICON ANniska !!= * @CODE@ for the irregular niska N+AN
 +N+AN+Der/Dim+N+AN+Pl:is%>%^DIMisim ANSUFF_PL ;
 
 
-LEXICON ANimDECL !!= * @CODE@ for the animate declension, possessive element Okimasis p. 134
+LEXICON ANimDECL !!= * @CODE@ for the animate declension, poss.-im-
 ANABSDECL ;
 +N+AN+Sg:%>i2m ANSUFF_SG ;
 +N+AN+Pl:%>i2m ANSUFF_PL ;
 +N+AN:%>i2m ANSUFF_LOC ;
-+N+AN+Der/Dim:%>%^DIMis%> ANDIMim ; !poss element after diminutiv suffix
-+N+AN+Der/Dim:%>is%^DIMis%> ANDIMim ; !poss element after diminutiv suffix
-+N+AN+Der/Dim:i2m%>%^DIMis%> ANDIM ; !poss element before diminutiv suffix
-+N+AN+Der/Dim:i2m%>is%^DIMis%> ANDIM ; !poss element before diminutiv suffix
++N+AN+Der/Dim:%>%^DIMis%> ANDIMim ; !poss.-im- after dim.suffix
++N+AN+Der/Dim:%>is%^DIMis%> ANDIMim ; !poss.-im- after dim.suffix
++N+AN+Der/Dim:i2m%>%^DIMis%> ANDIM ; !poss.-im- before dim.suffix
++N+AN+Der/Dim:i2m%>is%^DIMis%> ANDIM ; !poss.-im- before dim.suffix
 
 
-LEXICON ANDIMim !!= * @CODE@ the diminutives with possessive element Okimasis p. 134
+LEXICON ANDIMim !!= * @CODE@ the diminutives with poss.-im- after the dim.suffix
 +N+AN:%>im ANSUFF_LOC ;
  ANABSDECL ;
 +N+AN+Sg:%>im ANSUFF_SG ;
 +N+AN+Pl:%>im ANSUFF_PL ;
 
 
-LEXICON ANiskwew !!= * @CODE@ for iskwêw, because of diminutive
+LEXICON ANiskwew !!= * @CODE@ for iskwêw. Special lexicon because of diminutive iskwês
  :w ANABSDECL ;
 +N+AN+Sg:%>m ANSUFF_SG ;
 +N+AN+Pl:%>m ANSUFF_PL ;
 +N+AN:%>m ANSUFF_LOC ;
 +N+AN+Der/Dim:%>%^DIMs%> ANimDIMw ;
-+N+AN+Der/Dim:m%>%^DIMis%> ANDIM ; !poss element before diminutiv suffix
++N+AN+Der/Dim:m%>%^DIMis%> ANDIM ; !-im- before dim.suffix
 
 
-LEXICON ANimDECLw !!= * @CODE@ for the animate declension, possessive element Okimasis p. 134
+LEXICON ANimDECLw !!= * @CODE@ for the animate declension, poss.-im-. For nouns with final -w when poss -im- comes before diminutive. We could do the job in twolc instead. 
  :w ANABSDECL ;
 +N+AN+Sg:w%>i2m ANSUFF_SG ;
 +N+AN+Pl:w%>i2m ANSUFF_PL ;
 +N+AN:w%>i2m ANSUFF_LOC ;
 +N+AN+Der/Dim:w%>%^DIMsis%> ANimDIMw ;
-+N+AN+Der/Dim:m%>%^DIMis%> ANDIM ; !poss element before diminutiv suffix
++N+AN+Der/Dim:m%>%^DIMis%> ANDIM ; !-im- before dim.suffix
 
 
-LEXICON ANimDIMw !!= * @CODE@ the diminutives with possessive element Okimasis p. 134
+LEXICON ANimDIMw !!= * @CODE@ the diminutives with poss.-im-.
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
 +N+AN:i2m ANSUFF_LOC ;
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
@@ -111,7 +111,7 @@ LEXICON ANABSDECL !!= * @CODE@ for the animate absolute declension
 < "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; !
 < "+N":i "+AN":n         "@U.noun.abs@" >  LOCahk ; !
 
-!LEXICON ANDIMDECL ! Declension for animate diminutives, adding +Dim
+!LEXICON ANDIMDECL ! Declension for animate diminutives, adding +Dim-tag. Not in use now.
 !< "+N":0 "+AN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
 !< "+N":0 "+AN":0 "+Pl":0 "+Dim":0 "@U.noun.abs@" >  PLak ; !
 !< "+N":0 "+AN":0 "+Dim":0 "@U.noun.abs@" >  LOC ; !
@@ -128,8 +128,8 @@ LEXICON ANIRRDECL	!!= * @CODE@ for atim and mistatim.
 +N+AN+Der/Dim:%>os%^DIMis%> ANDIM ;
 
 
-LEXICON ANKININFL !!= * @CODE@ The lexicon gives a base form N+AN (if we want it)
-< "+N":i "+AN":m 0:â 0:w "@U.noun.3ipl@" > # ;
+LEXICON ANKININFL !!= * @CODE@ The lexicon gives a base form N+AN+Sg (if we want it)
+< "+N":i "+AN":m "+Sg":m 0:â 0:w "@U.noun.3ipl@" > # ;
  ANIRRINFL ;
 
 LEXICON ANKINiyINFL  !!= * @CODE@ Special treatment for nouns ending with -iy
@@ -274,13 +274,14 @@ LEXICON INALIENABLEDERIVATION !!= * @CODE@
 +N+IN+Der/Dim:  INALIENABLEPOSS ;
 
 LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
-!< "+N":0 "+IN":0 "@U.noun.dep@" > # ; !Base form for dep nouns
+< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" > # ; !Base form for dep nouns
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
++N+IN:%> INSUFF_LOC ;
 
 
 LEXICON INALIENABLEPOSS_SG !!= * @CODE@ inanimate possessive declension, only Sg
-!< "+N":0 "+IN":0 "@U.noun.dep@" > # ; !Base form for dep nouns
+< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" > # ; !Base form for dep nouns
 +N+IN+Sg:%> INSUFF_SG ;
 
 !! !!Diminutive suffixes

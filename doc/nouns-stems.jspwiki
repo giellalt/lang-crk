@@ -6,11 +6,12 @@ The file
 
 The prefixes
 
-Nouns redirects to AN-IN and INALIENABLE
+Nouns redirects to AN-IN, BODY and INALIENABLE
 
-AN-IN redirects to STEMS
+AN-IN for both animate and inanimate nouns, redirects to STEMS
 
 
+BODY for bodyparts, similar to INALIENABLE but it give the generic form m-. Redirects to BODYSTEMS. 
 
 
 
@@ -18,24 +19,24 @@ INALIENABLE redirects to INALIENABLESTEMS
 
 
 
-
-
 !!The stems
 
 !Animate and inanimate Nouns
 
-STEMS add a affismark and redirects to STEMLIST
+STEMS add a affixmark and redirects to STEMLIST
 
 STEMLIST contains most of the nouns
 
 
 
 
+INALIENABLESTEMS adds a affixmark and redirects to INABLESTEMLIST
 
+INABLESTEMLIST for dependent nouns
 
+BODYSTEMS adds a affixmark and redirects to BODYSTEMLIST
 
-
-
+BODYSTEMLIST for dependent bodypartnouns. It generates a generic form m-
 
 
 
