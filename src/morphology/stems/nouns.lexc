@@ -110,15 +110,15 @@ niska:nisk ANniska "Canada goose" ; !yaml
 okistatowân ANDECL "grizzly bear" ; ! okistatowânak	
 !okistatowân:okiscacowânis ANDIMDERIVATION "little grizzly bear" ; !
 okiscacowânis ANDIM "little grizzly bear" ; 
-oskâtâsk ANDECL "carrot" ;	
-sônîyâw ANDECL "money" ;
+oskâtâsk ANDECL "carrot" ; !GG	
+sônîyâw ANDECL "money" ; !GG
 oskâtâsk:oskâcâskos ANDIMDERIVATION "little carrot" ;	
 oskâcâskos ANDIM "little carrot" ;	
 pisiw ANDECL "cougar" ;
 sihkihp ANimDECL "boil, carbuncle" ; !yaml
 !sihkihp ANDECL "grebe, diving bird" ; !doublet,
-sikâk ANDECL "skunk" ;	!yaml
-sikâk:sikâkos ANDIMDERIVATION "little skunk" ;
+sikâk ANimDECL "skunk" ;	!yaml
+sikâk:sikâkos ANDIMDERIVATION "little skunk" ; 
 sikâkos ANDIM "little skunk" ;
 wâpask ANDECL "polar bear" ; ! wâpaskwak	
 wâpask:wâpaskos ANDIMDERIVATION "little polar bear" ; 
@@ -133,47 +133,47 @@ emihkwânis ANDECL "spoon" ; ! GG 12
 emihkwân ANDECL "spoon" ; !  ? youTube
 awâsis ANimDECL "child" ; ! GG nitâwâsimisak, nicawâsimisak
 âmow ANDECL "bee" ; 
-
+picikwâs ANDECL "apple" ; !GG
 !mistatim:miscacimosis ANDIMDERIVATION ;
 miscacimosis ANDIM ;
 pîsim ANDECL "month, sun" ;
-pahkwêsikan ANimDECL "bannock" ; ! exstra -im in poss, Okimasis 134, GG 12
+pahkwêsikan ANimDECL "bannock" ; ! Okimasis 134, GG 12 !yaml !Wolfart freqv list:  pahkwêsikanihk
 minôs ANimDECL "cat" ; ! exstra -im in poss GG p 25
 !minôs+Dim:minôsis ANDIM "little cat" ;	!minôsisis GG p 17
 sîsîp ANimDECL "duck" ;	! exstra -im in poss GG p 25
 !sîsîp+Dim:sîsîpis ANDIM "duckling" ;	! sîsîpisis
-!tohtôsâpoy ANimDECL ; ! GGII p 25 AN, p. 12 and dict: IN
 okimâw:okimâ ANimDECLw "boss" ; ! GG p 25
 
 
-wâposw:wâpos ANkwDECL "rabbit" ; !how is plural -kwak?
-amisk ANimDECL "beaver" ;
-mistikw:mistik ANkwDECL "stick" ;
+wâposw:wâpos ANkwDECL "rabbit" ; !yaml
+amisk ANimDECL "beaver" ; !yaml
+mistikw:mistik ANkwDECL "stick" ; !Wolfart freqv list: mistikohk
 askihkw:askihk ANkwDECL "pail" ;
-mahkahkw:mahkahk ANkwDECL "tub/barrel" ;
+mahkahkw:mahkahk ANkwDECL "tub/barrel" ; !Wolfart freqv list: mahkahkohk
 
-tehtapiwin INDECL "chair" ; ! GGI p 26
-atâwewkamik INimDECL "store" ; ! GGI p 26, GGII 25
+tehtapiwin INDECL "chair" ; ! GGI p 26 !dim cehcapiwinisis GGI s 46
+atâwewikamik INimDECL "store" ; ! GGI p 26, GGII 25  !Wolfart freqv list: atâwêwikamikohk
+atâwewikamik:atâwew'kamik INimDECL "store" ; ! GGI p 26, GGII 25
 mîcisowkamik INimDECL "restaurant" ; ! GGII18 im?
 sônîyâwkamik INimDECL "bank" ; ! GGII18 im?
 sakâw INDECL "bush" ;
 mîcimâpoy INDECL "soup" ; !GG 12
 sîsîpiwâwi INimDECL "duck egg" ;
-wâwi INimDECL "egg" ; !  GG 12 pl: wâwa
+wâwi INimDECL "egg" ; !  GG 12 pl: wâwa !yaml
 askipwâwi INimDECL "potato" ; ! GG 12 askipwâwa Pl
 meskanaw INDECL "road" ; !GGII18
 wâwis INDIM "little egg" ; ! Proficient speakers' abbr. dimin
 ôtênaw INDECL "city" ;
 ôtênaw:ôcênâs INDIMDERIVATION "little city" ; !Proficient speakers' abbr. dimin
-ôcênâs INDIM "little city" ; 
-maskisin INDECLis "shoe" ; !yaml
+ôcênâs INDIM "little city" ; !Wolfart freqv list: ôcênâsihk
+maskisin INDECLis "shoe" ; !yaml !GG !Wolfart freqv list: maskisinihk
 !maskisin:maskisinis INDIMDERIVATION "little shoe" ;
 maskisinis INDIM "little shoe" ;
-mistikowat INDECL "box" ;
+mistikowat INDECL "box" ; !Wolfart freqv list: mistikowatihk 
 !mistikowat:miscikowacis INDIMDERIVATION "little box" ;
 miscikowacis INDIM "little box" ;
 pikiw INDECL "gum" ; !Dim: pikis
-iskwâhtêm INDECL "door" ;
+iskwâhtêm INDECL "door" ; !Wolfart freqv list: iskwâhtêmihk
 !iskwâhtêm:iskwâhcêmis INDIMDERIVATION "little door" ;
 iskwâhcêmis INDIM "little door" ;
 môhkomân INDECL  "knife" ; ! GG 12 
@@ -185,28 +185,28 @@ iskocês INDIM "fire" ;
 ôskan INDECL "bone" ;
 !ôskan:ôskanis INDIMDERIVATION "little bone" ;
 ôskanis INDIM "little bone" ;
-wiyâkan INDECL "bowl" ;
 !wiyâkan:wiyâkanis INDIMDERIVATION "bowl" ;
-wiyâkanis INDIM "bowl" ;
+wiyâkanis INDIM "bowl" ; !Wolfart's list: wiyâkanisihk
 kîkisepâ INDECLisis "morning" ;
-ôsi:ô INDECLosi "canoe" ; !yaml
+ôsi:ô INDECLosi "canoe" ; !yaml !Wolfart's list: ôsihk
 atâwewikamik INDECLis "store" ;
 atâwewikamik:atâwewikamikosis INDIMDERIVATION "small store" ;
 atâwewikamikosis INDIM "small store" ;
 ôtenaw INDECL "city" ;
 !ôtenaw:ocenâsis INDIMDERIVATION "town" ;
 ocenâsis INDIM "town" ;
-wiyâs INimDECL "meat" ; ! exstra -im in poss, Okimasis 134 !OBS wîyâs GG 12
-tohtôsâpoy:tohtôsâpo INimDECLy "milk" ; ! GG 12
+wiyâs INimDECL "meat" ; ! Okimasis 134 !OBS wîyâs GG 12
+tohtôsâpoy:tohtôsâpo INimDECLy "milk" ; ! GG 12 !yaml
+nipîy:nipî INimDECLy "water" ; ! GG 12
 maskihkiwâpoy INDECL "tea" ; ! GG 12
 sîwihtâkan INDECL "salt" ; ! GG 12
 papeskomina INDECL "pepper" ; ! GG 12 treat as sg
 tohtôsâpôpimiy:tohtôsâpôpimi INimDECLy "butter" ; ! GG 12
 cîscayisîpwâkanis INDECL "fork" ; ! GG 12
-wîyâkan INDECL "dish, plate" ; ! GG 12
-minihkewewîyâkanis INDECL "cup" ; ! GG 12
+wîyâkan INDECL "dish, plate" ; ! GG 12 !Wolfart's list:  wiyâkanihk
+minihkwewîyâkanis INDECL "cup" ; ! GG 12
 masinahikan INDECL "book" ; !GG
-mîkiwâhp INDECL "tipi" ;
+mîkiwâhp INDECL "tipi" ; !Wolfart's list: mîkiwâhpihk
 wîkiwin INDECL "home" ;
 wayasit INDECLis "hoof" ; !yaml !possibly -is in Dim
 
@@ -214,17 +214,16 @@ atim ANIRRDECL "dog" ; ! -wak, -ohk, -wa !yaml
 atim:têm ANIRRINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 mistatim ANIRRDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
 mistatim:têm ANIRRINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
-mitâs:tâs ANIRRINFL "pants" ;
+mitâs:tâs ANIRRINFL "pants" ; !Wolfart's list: otâsihk
 mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
 mostos ANIRRINFL "cow" ;	!GG p 16: pl is mostoswak.
-mostos ANIRRDECL ;
 
 LEXICON INALIENABLESTEMS  ! dependent nouns
  0:%> INABLESTEMLIST ;
 
 
 LEXICON INABLESTEMLIST
-otânisimâw:itânis ANKININFL "daughter" ;
+otânisimâw:itânis ANKININFL "daughter" ; !yaml
 okosisimâw:ikosis ANKININFL "son" ;
 onekihikomâw:inekihik ANKININFL "parent" ; !only Pl? ninekihikwak onikihkomaw
 omosômimâw:imosôm ANKININFL "grandfather" ;
@@ -232,7 +231,7 @@ omosômimâw:imosôm ANKININFL "grandfather" ;
 nîtisân:îtisân ANKININFL "sibling" ; 
 nisîmis:isîmis ANKININFL "younger sibling" ; 
 nitôtem:itôtem ANKININFL "friend" ; 
-okâwîmâw:ikâw ANKINiyINFL "mother" ;! -iy- dissappears Okimasis p. 140, 
+okâwîmâw:ikâw ANKINiyINFL "mother" ;! -iy- dissappears Okimasis p. 140,  !yaml
 ohtâwimâw:ohtâw ANKINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy
 omisimâw:imis ANKININFL "older sister" ;
 nikâwis:ikâwis ANKININFL "mother's sister" ;
@@ -250,14 +249,13 @@ onâpêmiwâw:inâpêm ANKININFL_MONOG "husband" ;
 wîkimâkan:iwîkimâkan ANKININFL_MONOG "spouse" ; 
 
 maniway:aniway INALIENABLEPOSS_SG ; !"someone's cheek" !yaml
-manitay:anitay INALIENABLEPOSS_SG ; !"someone's cheek" !yaml
 !otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
 !otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
 otehye:otehye INALIENABLEPOSS ;  ! 
-mîpit:îpit INALIENABLEPOSS "tooth" ;
-wîkiwân:îki INALIENABLEPOSS_SG "home" ; !GG
+mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml
+wîkiwân:îki INALIENABLEPOSS_SG "home" ; !GG !Wolfart's list: wîkiwâhk, nîkinâhk
 mahkwan:ahkwan INALIENABLEPOSS "heel" ;
-mispiton:ispiton INALIENABLEPOSS "arm" ; !o- in stead of w-
+mispiton:ispiton INALIENABLEPOSS "arm" ; !yaml
 micihciy:icihciy INALIENABLEPOSS "hand" ; !OBS -iy New lexicon?
 micihciy:icihcîsis INALIENABLEDERIVATION "small hand" ; 
 micihcîsis:icihcîsis INALIENABLEPOSS "small hand" ; 
