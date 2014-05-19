@@ -22,15 +22,15 @@
 !! !! The prefixes
 
 LEXICON Nouns 
-!! @LEXNAME@ redirects to AN-IN and INALIENABLE
+!! @LEXNAME@ redirects to AN-IN, BODY and INALIENABLE
 AN-IN ; ! Animate and inanimate nouns
-INALIENABLE ; 
+BODY ; ! Inanimate bodypart, get generic form with m-
+INALIENABLE ; !
 
 LEXICON AN-IN
-!! @LEXNAME@ redirects to STEMS
+!! @LEXNAME@ for both animate and inanimate nouns, redirects to STEMS
 
-@U.noun.abs@ STEMLIST ; 
-
+@U.noun.abs@ STEMS ; 
 < 0:n 0:i "@U.noun.1sg@"  0:"t2" > STEMS ; ! 1
 < 0:k 0:i "@U.noun.2sg@"  0:"t2" > STEMS ; ! 2
 < 0:o     "@U.noun.3sg@"  0:"t2" > STEMS ; ! 3
@@ -41,13 +41,23 @@ LEXICON AN-IN
 < 0:o     "@U.noun.3pl@"  0:"t2" > STEMS ; ! 3pl
 < 0:o     "@U.noun.3ipl@" 0:"t2" > STEMS ; ! 3-plural-obviate
 
+LEXICON BODY
+!! @LEXNAME@ for bodyparts, similar to INALIENABLE but it give the generic form m-. Redirects to BODYSTEMS. 
+< 0:m "@U.noun.abs@" >  BODYSTEMS ; ! generic form
+< 0:n "@U.noun.1sg@"  > BODYSTEMS ; ! 1
+< 0:k "@U.noun.2sg@"  > BODYSTEMS ; ! 2
+< 0:o "@U.noun.3sg@"  > BODYSTEMS ;     ! 3
+< 0:o "@U.noun.3isg@" > BODYSTEMS ;  ! 
+< 0:n "@U.noun.1pl@"  > BODYSTEMS ;   !
+< 0:k "@U.noun.12pl@" > BODYSTEMS ; ! 
+< 0:k "@U.noun.2pl@"  > BODYSTEMS ;  ! 
+< 0:o "@U.noun.3pl@"  > BODYSTEMS ;  ! 
+< 0:o "@U.noun.3ipl@"  > BODYSTEMS ;  !   ! 
+
 
 
 LEXICON INALIENABLE
 !! @LEXNAME@ redirects to INALIENABLESTEMS
-
-< "@U.noun.abs@" >  INALIENABLESTEMS ; 
-
 < 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
 < 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
@@ -66,7 +76,7 @@ LEXICON INALIENABLE
 !    =============
 
 LEXICON STEMS
-!! @LEXNAME@ add a affismark and redirects to STEMLIST
+!! @LEXNAME@ add a affixmark and redirects to STEMLIST
  0:%> STEMLIST ;
 
 LEXICON STEMLIST
@@ -144,7 +154,6 @@ sîsîp ANimDECL "duck" ;	! exstra -im in poss GG p 25
 !sîsîp+Dim:sîsîpis ANDIM "duckling" ;	! sîsîpisis
 okimâw:okimâ ANimDECLw "boss" ; ! GG p 25
 
-
 wâposw:wâpos ANkwDECL "rabbit" ; !yaml
 amisk ANimDECL "beaver" ; !yaml
 mistikw:mistik ANkwDECL "stick" ; !Wolfart freqv list: mistikohk
@@ -219,10 +228,11 @@ mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
 mostos ANIRRINFL "cow" ;	!GG p 16: pl is mostoswak.
 
 LEXICON INALIENABLESTEMS  ! dependent nouns
+!! @LEXNAME@ adds a affixmark and redirects to INABLESTEMLIST
  0:%> INABLESTEMLIST ;
 
-
 LEXICON INABLESTEMLIST
+!! @LEXNAME@ for dependent nouns
 otânisimâw:itânis ANKININFL "daughter" ; !yaml
 okosisimâw:ikosis ANKININFL "son" ;
 onekihikomâw:inekihik ANKININFL "parent" ; !only Pl? ninekihikwak onikihkomaw
@@ -247,16 +257,23 @@ nicâhkos:icâhkos ANKININFL "cousin/sister in law" ;
 nôsisim:ôsisim ANKININFL "grandchild" ;
 onâpêmiwâw:inâpêm ANKININFL_MONOG "husband" ;
 wîkimâkan:iwîkimâkan ANKININFL_MONOG "spouse" ; 
-
-maniway:aniway INALIENABLEPOSS_SG ; !"someone's cheek" !yaml
+otehye:otehye INALIENABLEPOSS ;  ! 
 !otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
 !otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
-otehye:otehye INALIENABLEPOSS ;  ! 
-mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml
 wîkiwân:îki INALIENABLEPOSS_SG "home" ; !GG !Wolfart's list: wîkiwâhk, nîkinâhk
+niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ;
+
+LEXICON BODYSTEMS ! dependent nouns
+!! @LEXNAME@ adds a affixmark and redirects to BODYSTEMLIST
+ 0:%> BODYSTEMLIST ;
+
+LEXICON BODYSTEMLIST
+!! @LEXNAME@ for dependent bodypartnouns. It generates a generic form m-
+maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml
+mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml
 mahkwan:ahkwan INALIENABLEPOSS "heel" ;
 mispiton:ispiton INALIENABLEPOSS "arm" ; !yaml
-micihciy:icihciy INALIENABLEPOSS "hand" ; !OBS -iy New lexicon?
+micihciy:icihciy INALIENABLEPOSS "hand" ; !
 micihciy:icihcîsis INALIENABLEDERIVATION "small hand" ; 
 micihcîsis:icihcîsis INALIENABLEPOSS "small hand" ; 
 mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
@@ -269,7 +286,6 @@ miskîsik:iskîsik INALIENABLEPOSS "eye" ; !GG
 mikot:ikot INALIENABLEPOSS "nose" ; !GG
 mîhtawakay:îhtawakay INALIENABLEPOSS "ear" ; !GG
 mîyaw:îyaw INALIENABLEPOSS "body" ; !GG
-niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ;
 
 ! These are nonsens forms for debugging, to be removed after an evt.  xfst fix.
 ! The issue: There is one string, wâw, that does not work with xfst.
