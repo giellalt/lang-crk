@@ -175,8 +175,8 @@ Cx:0 <=> _ %>:0 Cx ;
 
 "Diminutives - all stem t change to c" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
-t:c <=> [ h | Vow | %>:0 | i:0 ]  _ Vow Dim .#. ;  ! iskwâhtêm  ocânisisisa
-		[ Vow | h ]   _ %>:0 Dim .#. ; ! wayasit 
+!t:c <=> [ h | Vow | %>:0 | i:0 ]  _ Vow Dim .#. ;  ! iskwâhtêm  ocânisisisa
+t:c <=>  _ :*  %>:0 Dim .#. ; ! cehcapiwinisis
 
 !"Diminutives - t2 changes to c" 
 !  unsure about this
