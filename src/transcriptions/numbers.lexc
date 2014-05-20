@@ -161,14 +161,17 @@ LEXICON LOHKAIT
 THOUSANDS ;
 
 LEXICON TENST
-göökteluhkie:2   TENT ;
-golmeluhkie:3    TENT ;
-njieljieluhkie:4 TENT ;
-vïjhteluhkie:5   TENT ;
-govhteluhkie:6   TENT ;
-tjïjhtjeluhkie:7 TENT ;
-gaektsieluhkie:8 TENT ;
-uktsieluhkie:9   TENT ;
+nîs:2   TANAW ;
+nistomi:3    TANAW ;
+nemi:4 TANAW ;
+nîyânanomi:5   TANAW ;
+nikotwâsomi:6   TANAW ;
+tepakohpimi:7 TANAW ;
+ayinânewomi:8 TANAW ;
+kekâmitâtahtomi:9   TANAW ;
+
+LEXICON TANAW
+tanaw: TENT ;
 
 LEXICON TENT
 :%0 THOUSANDS ;
@@ -176,19 +179,17 @@ akte:1 THOUSANDS ;
 ONEST ;
 
 LEXICON ONEST
-göökte:2 THOUSANDS ;
-golme:3 THOUSANDS ;
-njieljie:4 THOUSANDS ;
-vïjhte:5 THOUSANDS ;
-govhte:6 THOUSANDS ;
-tjïjhtje:7 THOUSANDS ;
-gaektsie:8 THOUSANDS ;
-uktsie:9 THOUSANDS ;
+nîso:2 THOUSANDS ;
+nisto:3 THOUSANDS ;
+newo:4 THOUSANDS ;
+nîyânan:5 THOUSANDS ;
+nikotwâsik:6 THOUSANDS ;
+tepakohp:7 THOUSANDS ;
+ayinânew:8 THOUSANDS ;
+kekâmitâtaht:9 THOUSANDS ;
 
 LEXICON THOUSANDS      ! x > 1
 tåvsene: THOUSAND ;
-stoerretjuetie+Use/NG: THOUSAND ; 
-stoeretjuetie+Use/NG: THOUSAND ; 
 
 LEXICON THOUSAND
 UNDERTHOUSAND ;	   ! 1100-1999
@@ -203,18 +204,18 @@ UNDERTHOUSAND ;	   ! 1100-1999
 
 LEXICON UNDERTHOUSAND
 HUNDREDS ;
-tjuetie:1 HUNDRED ;
+mitâtahtomitanaw:1 HUNDRED ;
 tjuatede:1  CUODAAT ;
 
 LEXICON HUNDREDS
-göökte:2   CUODI ;
-golme:3    CUODI ;
-njieljie:4 CUODI ;
-vïjhte:5   CUODI ;
-govhte:6   CUODI ;
-tjïjhtje:7 CUODI ;
-gaektsie:8 CUODI ;
-uktsie:9   CUODI ;
+nîso:2   CUODI ;
+nisto:3    CUODI ;
+newo:4 CUODI ;
+nîyânan:5   CUODI ;
+nikotwâsik:6   CUODI ;
+tepakohp:7 CUODI ;
+ayinânew:8 CUODI ;
+kekâmitâtaht:9   CUODI ;
 
 LEXICON CUODI
 mitâtahtomitanaw:   HUNDRED ;
