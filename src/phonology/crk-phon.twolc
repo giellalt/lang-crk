@@ -227,9 +227,14 @@ i:0 <=>  a: %>:0 _ s: %^DIM:0 ;
 !i:0 <=> â: ( w:0 ) %>:0 _ %^LC:0 ; ! kitiskwêmiwâhk or kitiskwêsisiwâwihk  CHECK!
 
 
-"ee to aa rule in first and second person"
+"e and ee to aa rule in first and second person"
 !! __@RULENAME@__
-ê:â <=> _ %>:0 %^EA:0 ;
+Vx:â <=> _ %>:0 %^EA:0 ;
+	where Vx in (ê e) ;
+
+!"ee to aa rule in first and second person"
+!!! __@RULENAME@__
+!ê:â <=> _ %>:0 %^EA:0 ;
 
 
 
