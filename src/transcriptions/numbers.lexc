@@ -19,11 +19,13 @@ Multichar_Symbols
   +NumNum    ! Tag to denote real numbers in one form or another
 
 LEXICON Root
-< %+String [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|â|ê|î|ô|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Â|Ê|Î|Ô]* > COMMA ; ! This first line is to allow all letter strings.
-+NumNum NUMBERSECTION ;
-+NumNum COMMASECTION ;
 
-LEXICON NUMBERSECTION
+!These 4 lines are for TTS, they are commented out.
+!< %+String [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|â|ê|î|ô|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Â|Ê|Î|Ô]* > COMMA ; ! This first line is to allow all letter strings.
+!+NumNum NUMBERSECTION ;
+!+NumNum COMMASECTION ;
+!LEXICON NUMBERSECTION
+
 HUNDREDSM ;		! 200M
 mitâtahtomitanaw:1 HUNDREDM ;	! 100M
 TENSM ;			! 20-99M
