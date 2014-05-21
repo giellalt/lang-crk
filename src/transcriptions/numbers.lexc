@@ -31,7 +31,7 @@ mitâtahtomitanaw% :1 HUNDREDM ;	! 100M
 TENSM ;			! 20-99M
 TEENSM ;		! 10-19M
 ONESM ;			! 1-9M
-HUNDREDST ;		! 200000-999999
+!HUNDREDST ;		! 200000-999999 NB
 mitâtahtomitanaw:1 HUNDREDT ;	! 100000-100999
 TENST ;			! 20000-99999,10000-10999
 TEENST ;		! 11000-19999
@@ -214,11 +214,11 @@ LEXICON HUNDREDS
 nîso:2   CUODI ;
 nisto:3    CUODI ;
 newo:4 CUODI ;
-nîyânan:5   CUODI ;
-nikotwâsik:6   CUODI ;
-tepakohp:7 CUODI ;
-ayinânew:8 CUODI ;
-kekâmitâtaht:9   CUODI ;
+nîyânano:5   CUODI ;  !OBS
+nikotwâsiko:6   CUODI ;
+tepakohpo:7 CUODI ;
+ayinânewo:8 CUODI ;
+kekâmitâtahto:9   CUODI ;
 
 LEXICON CUODI
 mitâtahtomitanaw% :   HUNDRED ;
