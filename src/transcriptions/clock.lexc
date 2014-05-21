@@ -83,9 +83,9 @@ LEXICON Root
 @U.TIME.11@:@U.TIME.11@1%0   BEFpunkt ;     !10:20 - 10:59
 @U.TIME.11@:@U.TIME.11@11    AFTpunkt ;     !11:00 - 11:59
 @U.TIME.12@:@U.TIME.12@11    BEFpunkt ;     !11:19 - 11:59
-nîsosâp:12%:%0%0        TIHAHIKAN        ;     !12:00
-nîsosâp:12%.%0%0+Use/NA        TIHAHIKAN        ;     !12.00
-nîsosâp:12+Use/NA       TIHAHIKAN        ;     !12.00
+nîsosâp:12%:%0%0        TIPAHIKAN        ;     !12:00
+nîsosâp:12%.%0%0+Use/NA        TIPAHIKAN        ;     !12.00
+nîsosâp:12+Use/NA       TIPAHIKAN        ;     !12.00
 
 
 
@@ -131,10 +131,10 @@ LEXICON BEF
  peyak% :59                  TO ;
 
 LEXICON AFT
- %0%0:                     HOUR ;
- %01:peyak%                 OVER ;
- %02:nîso%               OVER ;
- %03:nisto%                OVER ;
+ :%0%0                     HOUR ;
+ peyak% :%01                 OVER ;
+ nîso% :%02               OVER ;
+ nisto% :%03                OVER ;
  newo% :%04             OVER ;
  nîyânan% :%05               OVER ;
  nikotwâsik% :%06               OVER ;
@@ -163,10 +163,10 @@ LEXICON AFT
  nîstanawkekâmitâtaht% :29                  OVER ;
 
 LEXICON TO
- cipahikanis% pâmayes:          HOUR ;
+ cipahikanis% pâmayes% :          HOUR ;
 
 LEXICON OVER
- cipahikanis% mîyâskam:                HOUR ;
+ cipahikanis% mîyâskam% :                HOUR ;
 
 LEXICON HALFHOUR
 peyak@U.TIME.1@:@U.TIME.1@          HALF ;           
@@ -184,22 +184,22 @@ nîsosâp@U.TIME.12@:@U.TIME.12@     HALF ;
 
 LEXICON HALF
  % mînâpihtaw: # ; !Not obligatory to add tipahikan
- % mînâpihtaw: TIHAHIKAN ; 
+ % mînâpihtaw: TIPAHIKAN ; 
 
 
 LEXICON HOUR
-peyak@U.TIME.1@:@U.TIME.1@          TIHAHIKAN ;           
-nîso@U.TIME.2@:@U.TIME.2@         TIHAHIKAN ;         
-nisto@U.TIME.3@:@U.TIME.3@          TIHAHIKAN ;          
-newo@U.TIME.4@:@U.TIME.4@       TIHAHIKAN ;       
-nîyânan@U.TIME.5@:@U.TIME.5@         TIHAHIKAN ;         
-nikotwâsik@U.TIME.6@:@U.TIME.6@         TIHAHIKAN ;         
-tepakohp@U.TIME.7@:@U.TIME.7@       TIHAHIKAN ;       
-ayinânew@U.TIME.8@:@U.TIME.8@       TIHAHIKAN ;       
-kekâmitâtaht@U.TIME.9@:@U.TIME.9@         TIHAHIKAN ;         
-mitâtaht@U.TIME.10@:@U.TIME.10@       TIHAHIKAN ;       
-peyakosâp@U.TIME.11@:@U.TIME.11@   TIHAHIKAN ;   
-nîsosâp@U.TIME.12@:@U.TIME.12@     TIHAHIKAN ; 
+peyak@U.TIME.1@:@U.TIME.1@          TIPAHIKAN ;           
+nîso@U.TIME.2@:@U.TIME.2@         TIPAHIKAN ;         
+nisto@U.TIME.3@:@U.TIME.3@          TIPAHIKAN ;          
+newo@U.TIME.4@:@U.TIME.4@       TIPAHIKAN ;       
+nîyânan@U.TIME.5@:@U.TIME.5@         TIPAHIKAN ;         
+nikotwâsik@U.TIME.6@:@U.TIME.6@         TIPAHIKAN ;         
+tepakohp@U.TIME.7@:@U.TIME.7@       TIPAHIKAN ;       
+ayinânew@U.TIME.8@:@U.TIME.8@       TIPAHIKAN ;       
+kekâmitâtaht@U.TIME.9@:@U.TIME.9@         TIPAHIKAN ;         
+mitâtaht@U.TIME.10@:@U.TIME.10@       TIPAHIKAN ;       
+peyakosâp@U.TIME.11@:@U.TIME.11@   TIPAHIKAN ;   
+nîsosâp@U.TIME.12@:@U.TIME.12@     TIPAHIKAN ; 
 
-LEXICON TIHAHIKAN
+LEXICON TIPAHIKAN
  % tipahikan: # ;
