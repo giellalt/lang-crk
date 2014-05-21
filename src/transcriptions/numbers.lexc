@@ -27,7 +27,7 @@ LEXICON Root
 !LEXICON NUMBERSECTION
 
 HUNDREDSM ;		! 200M
-mitâtahtomitanaw:1 HUNDREDM ;	! 100M
+mitâtahtomitanaw% :1 HUNDREDM ;	! 100M
 TENSM ;			! 20-99M
 TEENSM ;		! 10-19M
 ONESM ;			! 1-9M
@@ -138,7 +138,7 @@ LEXICON CUODIT
 mitâtahtomitanaw: HUNDREDT ;	! 100000-199999
 
 LEXICON HUNDREDT	! X = 1-9, Y = 0-9
-TENST ;			! X2XYYY, X10YYY
+% : TENST ;			! X2XYYY, X10YYY
 TEENST ;		! X1XYYY
 akte:%01 THOUSANDS ;
 :%0 ONEST ;		! XX0YYY
@@ -173,7 +173,8 @@ ayinânewomi:8 TANAW ;
 kekâmitâtahtomi:9   TANAW ;
 
 LEXICON TANAW
-tanaw: TENT ;
+tanaw% :%0 COMMA ;
+tanaw% : ONESTONEXT ;
 
 LEXICON TENT
 :%0 THOUSANDS ;
@@ -206,7 +207,7 @@ UNDERTHOUSAND ;	   ! 1100-1999
 
 LEXICON UNDERTHOUSAND
 HUNDREDS ;
-mitâtahtomitanaw:1 HUNDRED ;
+mitâtahtomitanaw% :1 HUNDRED ;
 tjuatede:1  CUODAAT ;
 
 LEXICON HUNDREDS
@@ -220,7 +221,7 @@ ayinânew:8 CUODI ;
 kekâmitâtaht:9   CUODI ;
 
 LEXICON CUODI
-mitâtahtomitanaw:   HUNDRED ;
+mitâtahtomitanaw% :   HUNDRED ;
 tjuatede:  CUODAAT ;
 
 LEXICON HUNDRED
@@ -247,7 +248,20 @@ kekâmitâtahtomi:9 TEN ;
 LEXICON TEN
 tanaw:%0 COMMA ;
 låhkede:%0%. COMMA ;
-tanaw% : TEENS ;
+tanaw% : ONESTONEXT ;
+
+LEXICON ONESTONEXT
+piyakosâp:1 COMMA ;
+nîsosâp:2 COMMA ;
+nistosâp:3 COMMA ;
+nêwosâposâp:4 COMMA ;
+niyânanosâp:5 COMMA ;
+nikotwâsiksâp:6 COMMA ;
+têpakohposâp:7 COMMA ;
+ayinânêwosâp:8 COMMA ;
+kîkâmitâtahtosâp:9 COMMA ;
+
+
 
 LEXICON TEENS
 piyakosâp:11 COMMA ;
