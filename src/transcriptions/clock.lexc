@@ -83,35 +83,10 @@ LEXICON Root
 1%0@U.TIME.11@:@U.TIME.11@   BEFpunkt ;     !10:20 - 10:59
 11@U.TIME.11@:@U.TIME.11@    AFTpunkt ;     !11:00 - 11:59
 11@U.TIME.12@:@U.TIME.12@    BEFpunkt ;     !11:19 - 11:59
-12%:%0%0:nîsosâp        #        ;     !12:00
+12%:%0%0:nîsosâp        TIHAHIKAN        ;     !12:00
+12%.%0%0+Use/NA:nîsosâp        TIHAHIKAN        ;     !12.00
+12+Use/NA:nîsosâp        TIHAHIKAN        ;     !12.00
 
-!12@U.TIME.12@:@U.TIME.12@    AFTpunkt ;     !12:00 - 12:19
-!12@U.TIME.1@:@U.TIME.1@      BEFpunkt ;     !12:19 - 12:59
-!13@U.TIME.1@:@U.TIME.1@      AFTpunkt ;     !13:00 - 13:19
-!13@U.TIME.2@:@U.TIME.2@      BEFpunkt ;     !13:19 - 13:59
-!14@U.TIME.2@:@U.TIME.2@      AFTpunkt ;     !14:00 - 114:19
-!14@U.TIME.3@:@U.TIME.3@      BEFpunkt ;     !14:19 - 14:59
-!15@U.TIME.3@:@U.TIME.3@      AFTpunkt ;     !15:00 - 15:19
-!15@U.TIME.4@:@U.TIME.4@      BEFpunkt ;     !15:19 - 15:59
-!16@U.TIME.4@:@U.TIME.4@      AFTpunkt ;     !16:00 - 16:19
-!16@U.TIME.5@:@U.TIME.5@      BEFpunkt ;     !16:19 - 16:59
-!17@U.TIME.5@:@U.TIME.5@      AFTpunkt ;     !17:00 - 17:19
-!17@U.TIME.6@:@U.TIME.6@      BEFpunkt ;     !17:19 - 17:59
-!18@U.TIME.6@:@U.TIME.6@      AFTpunkt ;     !18:00 - 18:19
-!18@U.TIME.7@:@U.TIME.7@      BEFpunkt ;     !18:19 - 18:59
-!19@U.TIME.7@:@U.TIME.7@      AFTpunkt ;     !19:00 - 19:19
-!19@U.TIME.8@:@U.TIME.8@      BEFpunkt ;     !19:20 - 19:59
-!2%0@U.TIME.8@:@U.TIME.8@     AFTpunkt ;     !20:00 - 20:19
-!2%0@U.TIME.9@:@U.TIME.9@     BEFpunkt ;     !20:20 - 20:59
-!21@U.TIME.9@:@U.TIME.9@      AFTpunkt ;     !21:00 - 21:19
-!21@U.TIME.10@:@U.TIME.10@    BEFpunkt ;     !21:20 - 21:59
-!22@U.TIME.10@:@U.TIME.10@    AFTpunkt ;     !22:00 - 22:19
-!22@U.TIME.11@:@U.TIME.11@    BEFpunkt ;     !22:19 - 22:59
-!23@U.TIME.11@:@U.TIME.11@    AFTpunkt ;     !23:00 - 23:19
-!23@U.TIME.12@:@U.TIME.12@    BEFpunkt ;     !23:19 - 23:59
-!%0%0@U.TIME.12@:@U.TIME.12@  AFTpunkt ;     !00:00 - 00:19
-!%0%0@U.TIME.1@:@U.TIME.1@    BEFpunkt ;     !00:19 - 00:59
-!24%:%0%0:luhkiegöökte        #        ;     !24:00
 
 
 LEXICON BEFpunkt
@@ -153,7 +128,7 @@ LEXICON BEF
  56:nêwo%              TO ;  
  57:nisto%                 TO ;
  58:nîso%                TO ; 
- 59:piyak%                  TO ;
+ 59:peyak%                  TO ;
 
 LEXICON AFT
  %0%0:                     HOUR ;
@@ -187,14 +162,8 @@ LEXICON AFT
  28:nîstanawayinânew%                OVER ; 
  29:nîstanawkekâmitâtaht%                  OVER ;
 
-!LEXICON TOHALF
-! :åvtelen% bielie%         HOUR ;
-!
-!LEXICON OVERHALF
-! :bijjelen% bielie%        HOUR ;
-
 LEXICON TO
-        :cipahikanis% pâmayes%          HOUR ;
+ :cipahikanis% pâmayes%          HOUR ;
 
 LEXICON OVER
  :cipahikanis% mîyâskam%                HOUR ;
@@ -214,8 +183,8 @@ LEXICON HALFHOUR
 @U.TIME.12@:nîsosâp@U.TIME.12@     HALF ; 
 
 LEXICON HALF
- :% mînâpihtaw # ;
- :% mînâpihtaw TIHAHIKAN ;
+ :% mînâpihtaw # ; !Not obligatory to add tipahikan
+ :% mînâpihtaw TIHAHIKAN ; 
 
 
 LEXICON HOUR
