@@ -51,11 +51,23 @@ awiyak+Pron+Indef+AN+Sg:awiyak # "someone" ;
 awiyak+Pron+Indef+AN+Pl:awiyakak # "some people" ;
 
 LEXICON Demonstrative 
-awa+Pron+AN+Dem+Sg:awa # "this" ;
-ana+Pron+AN+Dem+Sg:ana # "that" ;
-ôma+Pron+IN+Dem+Sg:ôma # "this" ;
-anima+Pron+IN+Dem+Sg:anima # "that" ;
-ôki+Pron+AN+Dem+Pl:ôki # "these" ;
-aniki+Pron+AN+Dem+Pl:aniki # "those" ;
-ôhi+Pron+IN+Dem+Pl:ôhi # "these" ;
-anihi+Pron+IN+Dem+Pl:anihi # "those" ;
+!ANIMATE
+awa+Pron+Dem+Prox+AN+Sg:awa # "this" ;
+awa+Pron+Dem+Prox+AN+Pl:ôki # "these" ;
+
+awa+Pron+Dem+Med+AN+Sg:ana # "that" ;
+awa+Pron+Dem+Med+AN+Pl:aniki # "those" ;
+
+awa+Pron+Dem+Dist+AN+Sg:nâha # "that yonder" ;
+awa+Pron+Dem+Dist+AN+Pl:nêki # "those yonder" ;
+
+!INANIMATE
+
+awa+Pron+Dem+Prox+IN+Sg:ôma # "this" ;
+awa+Pron+Dem+Prox+IN+Pl:ôhi # "these" ;
+
+awa+Pron+Dem+Med+IN+Sg:anima # "that" ;
+awa+Pron+Dem+Med+IN+Pl:anihi # "those" ;
+
+awa+Pron+Dem+Dist+IN+Sg:nêma # "that yonder" ;
+awa+Pron+Dem+Dist+IN+Pl:nêhi # "those yonder" ;
