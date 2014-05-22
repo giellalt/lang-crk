@@ -22,95 +22,129 @@
 
 Multichar_Symbols
 
-@U.MONTH.1@ 
-@U.MONTH.2@ 
-@U.MONTH.3@ 
-@U.MONTH.4@ 
-@U.MONTH.5@ 
-@U.MONTH.6@ 
-@U.MONTH.7@ 
-@U.MONTH.8@ 
-@U.MONTH.9@ 
-@U.MONTH.10@ 
-@U.MONTH.11@ 
-@U.MONTH.12@ 
 
 +Use/NG ! For substandard month names used in Oahpa
 ! They will be accepted but not generated.
  
 LEXICON Root
- 
-kisepîsim% @U.MONTH.1@:@U.MONTH.1@ 31DAYS ;
-mikisowipîsim% @U.MONTH.2@:@U.MONTH.2@ 29DAYS ;
-niskipîsim% @U.MONTH.3@:@U.MONTH.3@ 31DAYS ;
-ayikipîsim% @U.MONTH.4@:@U.MONTH.4@ 30DAYS ;
-opiniyâwewowipîsim% @U.MONTH.5@:@U.MONTH.5@ 31DAYS ;
-opâskâwewowipîsim% @U.MONTH.6@:@U.MONTH.6@ 30DAYS ;
-opaskowipîsim% @U.MONTH.7@:@U.MONTH.7@ 31DAYS ;
-ohpahowipîsim% @U.MONTH.8@:@U.MONTH.8@ 31DAYS ;
-onôcihitowipîsim% @U.MONTH.9@:@U.MONTH.9@ 30DAYS ;
-kaskatinowipîsim% @U.MONTH.10@:@U.MONTH.10@ 31DAYS ;
-iyikopîwipîsim% @U.MONTH.11@:@U.MONTH.11@ 30DAYS ;
-manitow% kîsikan% pîsim% @U.MONTH.12@:@U.MONTH.12@ 31DAYS ;
-pawahcakinasîs% pîsim% @U.MONTH.12@:@U.MONTH.12@ 31DAYS ;
+ SINGLEDAYS ;
+ DAYS ;
+ ZERO ;
 
+LEXICON ZERO
+ :%0 SINGLEDAYS ;
  
-LEXICON 29DAYS
-1.:1 B ;
-2.:2 B ;
-3.:3 B ;
-4.:4 B ;
-5.:5 B ;
-6.:6 B ;
-7.:7 B ;
-8.:8 B ;
-9.:9 B ;
-1%0.:1%0 B ;
-11.:11 B ;
-12.:12 B ;
-13.:13 B ;
-14.:14 B ;
-15.:15 B ;
-16.:16 B ;
-17.:17 B ;
-18.:18 B ;
-19.:19 B ;
-20.:2%0 B ;
-21.:21 B ;
-22.:22 B ;
-23.:23 B ;
-24.:24 B ;
-25.:25 B ;
-26.:26 B ;
-27.:27 B ;
-28.:28 B ;
-29.:29 B ;
- 
-LEXICON 30DAYS
-3%0.:3%0 B ;
-29DAYS ;
- 
-LEXICON 31DAYS
-31.:31 B ;
-30DAYS ;
- 
-LEXICON B
-% päivä:%. MONTH ;
- 
-LEXICON MONTH
-@U.MONTH.1@:1@U.MONTH.1@ X ;
-@U.MONTH.2@:2@U.MONTH.2@ X ;
-@U.MONTH.3@:3@U.MONTH.3@ X ;
-@U.MONTH.4@:4@U.MONTH.4@ X ;
-@U.MONTH.5@:5@U.MONTH.5@ X ;
-@U.MONTH.6@:6@U.MONTH.6@ X ;
-@U.MONTH.7@:7@U.MONTH.7@ X ;
-@U.MONTH.8@:8@U.MONTH.8@ X ;
-@U.MONTH.9@:9@U.MONTH.9@ X ;
-@U.MONTH.10@:1%0@U.MONTH.10@ X ;
-@U.MONTH.11@:11@U.MONTH.11@ X ;
-@U.MONTH.12@:12@U.MONTH.12@ X ;
- 
-LEXICON X
+LEXICON SINGLEDAYS
+peyak% :1 EHAKIMIHT ;
+nîso% :2 EHAKIMIHT ;
+nisto% :3 EHAKIMIHT ;
+newo% :4 EHAKIMIHT ;
+nîyânan% :5 EHAKIMIHT ;
+nikotwâsik% :6 EHAKIMIHT ;
+tepakohp% :7 EHAKIMIHT ;
+ayinânew% :8 EHAKIMIHT ;
+kekâmitâtaht% :9 EHAKIMIHT ;
+
+LEXICON DAYS
+mitâtaht% :1%0 EHAKIMIHT ;
+piyakosâp% :11 EHAKIMIHT ;
+nîsosâp% :12 EHAKIMIHT ;
+nistosâp% :13 EHAKIMIHT ;
+nêwosâposâp% :14 EHAKIMIHT ;
+niyânanosâp% :15 EHAKIMIHT ;
+nikotwâsiksâp% :16 EHAKIMIHT ;
+têpakohposâp% :17 EHAKIMIHT ;
+ayinânêwosâp% :18 EHAKIMIHT ;
+kîkâmitâtahtosâp% :19 EHAKIMIHT ;
+nîstanaw% :2%0 EHAKIMIHT ;
+nîstanaw% piyakosâp% :21 EHAKIMIHT ;
+nîstanaw% nîsosâp% :22 EHAKIMIHT ;
+nîstanaw% nistosâp% :23 EHAKIMIHT ;
+nîstanaw% nêwosâposâp% :24 EHAKIMIHT ;
+nîstanaw% niyânanosâp% :25 EHAKIMIHT ;
+nîstanaw% nikotwâsiksâp% :26 EHAKIMIHT ;
+nîstanaw% têpakohposâp% :27 EHAKIMIHT ;
+nîstanaw% ayinânêwosâp% :28 EHAKIMIHT ;
+nîstanaw% kîkâmitâtahtosâp% :29 EHAKIMIHT ;
+nistomi% ehakimiht% :3%0 EHAKIMIHT30 ;
+nistomi% ehakimiht% :3%1 EHAKIMIHT31 ;
+
+LEXICON EHAKIMIHT
+ehakimiht% :%. 29MONTHS ;
+ehakimiht% :%. 29MONTHS-SINGLE ;
+ehakimiht% :%. ZEROMONTH ;
+
+LEXICON ZEROMONTH
+ :%0 29MONTHS-SINGLE ;
+
+LEXICON 29MONTHS-SINGLE
+mikisowipîsimohk:2 ENDLEX ; !Febr
+ayikipîsimohk:4 ENDLEX ;!April
+opâskâwewowipîsimohk:6 ENDLEX ; !June
+onôcihitowipîsimohk:9 ENDLEX ; !Sept
+iyikopîwipîsimohk:11 ENDLEX ; !Nov
+kisepîsimohk:1 ENDLEX ; !Jan
+niskipîsimohk:3 ENDLEX ; !March
+opiniyâwewowipîsimohk:5 ENDLEX ; !May
+opaskowipîsimohk:7 ENDLEX ;!July
+ohpahowipîsimohk:8 ENDLEX ; !Aug
+
+LEXICON 29MONTHS
+kaskatinowipîsimohk:1%0 ENDLEX ; !Oct
+manitow% kîsikan% pîsimohk:12 ENDLEX ; !Dec
+pawahcakinasîs:12 ENDLEX ; !Dec
+
+LEXICON EHAKIMIHT30
+ehakimiht% :%. 30MONTHS ;
+ehakimiht% :%. 30MONTHS-SINGLE ;
+ehakimiht% :%. ZEROMONTH30 ;
+
+LEXICON ZEROMONTH30
+ :%0 30MONTHS-SINGLE ;
+
+
+LEXICON 30MONTHS-SINGLE
+ayikipîsimohk:4 ENDLEX ;!April
+opâskâwewowipîsimohk:6 ENDLEX ; !June
+onôcihitowipîsimohk:9 ENDLEX ; !Sept
+iyikopîwipîsimohk:11 ENDLEX ; !Nov
+kisepîsimohk:1 ENDLEX ; !Jan
+niskipîsimohk:3 ENDLEX ; !March
+opiniyâwewowipîsimohk:5 ENDLEX ; !May
+opaskowipîsimohk:7 ENDLEX ;!July
+ohpahowipîsimohk:8 ENDLEX ; !Aug
+kaskatinowipîsimohk:1%0 ENDLEX ; !Oct
+manitow% kîsikan% pîsimohk:12 ENDLEX ; !Dec
+pawahcakinasîs:12 ENDLEX ; !Dec
+
+LEXICON 30MONTHS
+kaskatinowipîsimohk:1%0 ENDLEX ; !Oct
+manitow% kîsikan% pîsimohk:12 ENDLEX ; !Dec
+pawahcakinasîs:12 ENDLEX ; !Dec
+
+
+LEXICON EHAKIMIHT31
+ehakimiht% :%. 31MONTHS ;
+ehakimiht% :%. 31MONTHS-SINGLE ;
+ehakimiht% :%. ZEROMONTH31 ;
+
+LEXICON ZEROMONTH31
+ :%0 31MONTHS-SINGLE ;
+
+
+LEXICON 31MONTHS-SINGLE
+kisepîsimohk:1 ENDLEX ; !Jan
+niskipîsimohk:3 ENDLEX ; !March
+opiniyâwewowipîsimohk:5 ENDLEX ; !May
+opaskowipîsimohk:7 ENDLEX ;!July
+ohpahowipîsimohk:8 ENDLEX ; !Aug
+
+LEXICON 31MONTHS
+kaskatinowipîsimohk:1%0 ENDLEX ; !Oct
+manitow% kîsikan% pîsimohk:12 ENDLEX ; !Dec
+pawahcakinasîs:12 ENDLEX ; !Dec
+
+  
+LEXICON ENDLEX
 :%. # ;
 ! # ; ! sloppy punctuation
