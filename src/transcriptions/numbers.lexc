@@ -21,9 +21,9 @@ Multichar_Symbols
 LEXICON Root
 
 !These 4 lines are for TTS, they are commented out.
-!< %+String [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|â|ê|î|ô|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Â|Ê|Î|Ô]* > COMMA ; ! This first line is to allow all letter strings.
+!< %+String [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|â|ê|î|ô|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Â|Ê|Î|Ô]* > ENDLEX ; ! This first line is to allow all letter strings.
 !+NumNum NUMBERSECTION ;
-!+NumNum COMMASECTION ;
+!+NumNum ENDLEXSECTION ;
 !LEXICON NUMBERSECTION
 
 HUNDREDSM ;		! 200M
@@ -122,7 +122,7 @@ tåvsene:%0%01 THOUSAND ;	!   1.000.000
 :%0%0%0%0 TENS ;
 :%0%0%0%0 TEENS ;
 :%0%0%0%0%0 ONES ;
-:%0%0%0%0%0%0 COMMA ;	!  x000000
+:%0%0%0%0%0%0 ENDLEX ;	!  x000000
 
 LEXICON HUNDREDST
 nîso:2   CUODIT ;	! 200000-299999
@@ -173,7 +173,7 @@ ayinânewomi:8 TANAW ;
 kekâmitâtahtomi:9   TANAW ;
 
 LEXICON TANAW
-tanaw% :%0 COMMA ;
+tanaw% :%0 ENDLEX ;
 tanaw% : ONESTONEXT ;
 
 LEXICON TENT
@@ -199,7 +199,7 @@ UNDERTHOUSAND ;	   ! 1100-1999
 :%0 TENS ;	   ! 1020-1099
 :%0 TEENS ;	   ! 1010-1019
 :%0%0 ONES ;	   ! 1001-1009
-:%0%0%0 COMMA ;	   ! 1000
+:%0%0%0 ENDLEX ;	   ! 1000
 
 !===========================
 !Here starts the 999 numbers
@@ -228,14 +228,14 @@ LEXICON HUNDRED
       TENS ;
       TEENS ;
 :%0   ONES ;
-:%0%0 COMMA ;
+:%0%0 ENDLEX ;
 
 LEXICON CUODAAT
-:%0%0%.    COMMA ;
+:%0%0%.    ENDLEX ;
 
 LEXICON TENS
-mitâtaht:1%0 COMMA ;
-låhkede:1%0%. COMMA ;
+mitâtaht:1%0 ENDLEX ;
+låhkede:1%0%. ENDLEX ;
 nîs:2 TEN ;
 nistomi:3 TEN ;
 nemi:4 TEN ;
@@ -246,75 +246,74 @@ ayinânewomi:8 TEN ;
 kekâmitâtahtomi:9 TEN ;
 
 LEXICON TEN
-tanaw:%0 COMMA ;
-låhkede:%0%. COMMA ;
+låhkede:%0%. ENDLEX ;
 tanaw% : ONESTONEXT ;
 
 LEXICON ONESTONEXT
-piyakosâp:1 COMMA ;
-nîsosâp:2 COMMA ;
-nistosâp:3 COMMA ;
-nêwosâposâp:4 COMMA ;
-niyânanosâp:5 COMMA ;
-nikotwâsiksâp:6 COMMA ;
-têpakohposâp:7 COMMA ;
-ayinânêwosâp:8 COMMA ;
-kîkâmitâtahtosâp:9 COMMA ;
+piyakosâp:1 ENDLEX ;
+nîsosâp:2 ENDLEX ;
+nistosâp:3 ENDLEX ;
+nêwosâposâp:4 ENDLEX ;
+niyânanosâp:5 ENDLEX ;
+nikotwâsiksâp:6 ENDLEX ;
+têpakohposâp:7 ENDLEX ;
+ayinânêwosâp:8 ENDLEX ;
+kîkâmitâtahtosâp:9 ENDLEX ;
 
 
 
 LEXICON TEENS
-piyakosâp:11 COMMA ;
-nîsosâp:12 COMMA ;
-nistosâp:13 COMMA ;
-nêwosâposâp:14 COMMA ;
-niyânanosâp:15 COMMA ;
-nikotwâsiksâp:16 COMMA ;
-têpakohposâp:17 COMMA ;
-ayinânêwosâp:18 COMMA ;
-kîkâmitâtahtosâp:19 COMMA ;
+piyakosâp:11 ENDLEX ;
+nîsosâp:12 ENDLEX ;
+nistosâp:13 ENDLEX ;
+nêwosâposâp:14 ENDLEX ;
+niyânanosâp:15 ENDLEX ;
+nikotwâsiksâp:16 ENDLEX ;
+têpakohposâp:17 ENDLEX ;
+ayinânêwosâp:18 ENDLEX ;
+kîkâmitâtahtosâp:19 ENDLEX ;
 
 LEXICON ONES
 CARDINAL ;
 ORDINAL ;
 
 LEXICON CARDINAL
-piyak:1 COMMA ;
-nîso:2 COMMA ;
-nisto:3 COMMA ;
-nêwo:4 COMMA ;
-niyânan:5 COMMA ;
-nikotwâsik:6 COMMA ;
-têpakohp:7 COMMA ;
-ayinânêw:8 COMMA ;
-kîkâmitâtaht:9 COMMA ;
+piyak:1 ENDLEX ;
+nîso:2 ENDLEX ;
+nisto:3 ENDLEX ;
+nêwo:4 ENDLEX ;
+niyânan:5 ENDLEX ;
+nikotwâsik:6 ENDLEX ;
+têpakohp:7 ENDLEX ;
+ayinânêw:8 ENDLEX ;
+kîkâmitâtaht:9 ENDLEX ;
 
 LEXICON ORDINAL
-voestes:1%.     COMMA ;
-mubpie:2%.   COMMA ;
-gåalmede:3%.   COMMA ;
-njealjede:4%. COMMA ;
-vïjhtede:5%.   COMMA ;
-govhtede:6%.   COMMA ;
-tjïjhtjede:7%.    COMMA ;
-gaaktsede:8%.   COMMA ;
-åktsede:9%.    COMMA ;
+voestes:1%.     ENDLEX ;
+mubpie:2%.   ENDLEX ;
+gåalmede:3%.   ENDLEX ;
+njealjede:4%. ENDLEX ;
+vïjhtede:5%.   ENDLEX ;
+govhtede:6%.   ENDLEX ;
+tjïjhtjede:7%.    ENDLEX ;
+gaaktsede:8%.   ENDLEX ;
+åktsede:9%.    ENDLEX ;
 
-LEXICON COMMA
- ENDLEX ;
- COMMASECTION ;
-
-LEXICON COMMASECTION  ! these are not spellchecked!!!
-                  ENDLEX ;
-! % komma% :,      Root ;
-! % tjuohkkis% :%. Root ;
-! % kolon% :%:     Root ;
-! % sárggis% :%-   Root ; 
- % la% :%=         Root ; 
- % gráda% :%°      Root ; 
- % paragráfa% :§   Root ; 
-! % násti% :%*     Root ; 
- % ja% :&          Root ; 
+!LEXICON ENDLEX
+! ENDLEX ;
+! ENDLEXSECTION ;
+!
+!LEXICON ENDLEXSECTION  ! these are not spellchecked!!!
+!                  ENDLEX ;
+!! % komma% :,      Root ;
+!! % tjuohkkis% :%. Root ;
+!! % kolon% :%:     Root ;
+!! % sárggis% :%-   Root ; 
+! % la% :%=         Root ; 
+! % gráda% :%°      Root ; 
+! % paragráfa% :§   Root ; 
+!! % násti% :%*     Root ; 
+! % ja% :&          Root ; 
 
 LEXICON ENDLEX
  # ;
