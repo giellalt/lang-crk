@@ -148,60 +148,18 @@ for the inverse objective conjugation, the flag refers to
 the __prefix__, not to the subject. So ''indsg1'' refers to either
 subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
- * @U.verb.ind1sg@   
- * @U.verb.ind2sg@   
- * @U.verb.ind3sg@   
- * @U.verb.ind3osg@   
- * @U.verb.ind1pl@   
- * @U.verb.ind12pl@   
- * @U.verb.ind2pl@   
- * @U.verb.ind3pl@   
- * @U.verb.ind3opl@ 
-
-@U.verb.indprt1sg@    flag diacritics for past tense inflections in idicatives
- * @U.verb.indprt1sg@ 
- * @U.verb.indprt2sg@ 
- * @U.verb.indprt3sg@ 
- * @U.verb.ind3osg@ 
- * @U.verb.indprt1pl@ 
- * @U.verb.indprt12pl@ 
- * @U.verb.indprt2pl@ 
- * @U.verb.indprt3pl@ 
- * @U.verb.indprt3opl@  
 
 
- * @U.verb.indFutDef1sg@  Future definite
- * @U.verb.indFutDef2sg@  Future definite
- * @U.verb.indFutDef3sg@  Future definite
- * @U.verb.indFutDef3osg@  Future definite
- * @U.verb.indFutDef1pl@  Future definite
- * @U.verb.indFutDef12pl@  Future definite
- * @U.verb.indFutDef2pl@  Future definite
- * @U.verb.indFutDef3pl@  Future definite
- * @U.verb.indFutDef3opl@  Future definite
-
- * @U.verb.indFutInt1sg@  Future Intentional
- * @U.verb.indFutInt2sg@  Future Intentional 
- * @U.verb.indFutInt3sg@  Future Intentional 
- * @U.verb.indFutInt3osg@  Future Intentional
- * @U.verb.indFutInt1pl@  Future Intentional
- * @U.verb.indFutInt12pl@  Future Intentional
- * @U.verb.indFutInt2pl@  Future Intentional 
- * @U.verb.indFutInt3pl@  Future Intentional 
- * @U.verb.indFutInt3opl@  Future Intentional
 
 
  * @U.verb.FutCon@  Future Conditional
-
 
  * @U.verb.sbj@   Subjunctive (Conjunct)
  * @U.verb.fut@   Future Conditional
 
 
- * @U.verb.imp2sg@ 
- * @U.verb.imp1pl@ 
- * @U.verb.imp2pl@ 
- * @U.verb.imp12pl@ 
+
+
 
  * @U.verb.1sgindep@ 
  * @U.verb.2sgindep@ 
@@ -454,13 +412,7 @@ Intransitive animate
 
 
 
-
-
-
-
  LEXICON IA_SUBJUNCTIV    gives prefixes and flags for person-number in subjunctive
-
-
 
 
 
@@ -700,8 +652,6 @@ Words marked GG are from Plains Cree Grammar guide and glossaryd
 Plains Cree verb morphology                  
 
 
-__Note__ ''This file is copied from Ojibwe, and may contain Ojibwe things that should be removed.''
-
 The Plains Cree verbs are divided in four groups:
 
 # IA: Intransitive animate
@@ -712,62 +662,27 @@ The Plains Cree verbs are divided in four groups:
 
 Intransitive animate (IA)
 
- LEXICON IACONJ  splits in 3 conjugations
+ LEXICON IACONJ  splits in 4 moods
 
- LEXICON IA_IND  gives positive and negative
+ LEXICON IA_IND  First mode, indicative
 
-
-
-
-!!IA finite forms
 
  LEXICON IA_IND_PRS  gives person suffixes
 
 
 
+ LEXICON IA_FUT_CON   Second mode mode, Fut Cond
 
 
 
+ LEXICON IA_SBJ  Third mode, subjunctive
 
 
 
-
-
- LEXICON IA_SBJ  gives flag diacritics and directs to subjunctive person suffixes
-
+ LEXICON IA_IMP   Fourth mode, imperative
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- LEXICON IA_IMP   gives flag diacritics and directs to imperative person suffixes
-
-
-
-
-
-
-
-
-
-
-
-this looks like Ojibwe :-/ what is correct?
 
 
 
@@ -782,7 +697,7 @@ Intransitive inanimate (II)
 
 
 
-Transitive animate (TA)
+!!!Transitive animate (TA)
 
 The VTA verbs split in different moods.
 There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
