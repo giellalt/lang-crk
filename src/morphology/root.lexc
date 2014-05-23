@@ -155,62 +155,13 @@ i2 		!!= * @CODE@  Possessive element
 !! the __prefix__, not to the subject. So ''indsg1'' refers to either
 !! subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
-@U.verb.ind1sg@  !!= * @CODE@ 
-@U.verb.ind2sg@  !!= * @CODE@ 
-@U.verb.ind3sg@  !!= * @CODE@ 
-@U.verb.ind3osg@ !!= * @CODE@  
-@U.verb.ind1pl@  !!= * @CODE@ 
-@U.verb.ind12pl@ !!= * @CODE@  
-@U.verb.ind2pl@  !!= * @CODE@ 
-@U.verb.ind3pl@  !!= * @CODE@ 
-@U.verb.ind3opl@ !!= * @CODE@
 
-@U.verb.indprt1sg@  !!= flag diacritics for past tense inflections in idicatives
-@U.verb.indprt1sg@ !!= * @CODE@
-@U.verb.indprt2sg@ !!= * @CODE@
-@U.verb.indprt3sg@ !!= * @CODE@
-@U.verb.ind3osg@ !!= * @CODE@
-@U.verb.indprt1pl@ !!= * @CODE@
-@U.verb.indprt12pl@ !!= * @CODE@
-@U.verb.indprt2pl@ !!= * @CODE@
-@U.verb.indprt3pl@ !!= * @CODE@
-@U.verb.indprt3opl@  !!= * @CODE@
 
 !!The subjunctive always has
 !!the ê- prefix, and future conditional never has a prefix.
 
-@U.verb.indFutDef1sg@ !!= * @CODE@ Future definite
-@U.verb.indFutDef2sg@ !!= * @CODE@ Future definite
-@U.verb.indFutDef3sg@ !!= * @CODE@ Future definite
-@U.verb.indFutDef3osg@ !!= * @CODE@ Future definite
-@U.verb.indFutDef1pl@ !!= * @CODE@ Future definite
-@U.verb.indFutDef12pl@ !!= * @CODE@ Future definite
-@U.verb.indFutDef2pl@ !!= * @CODE@ Future definite
-@U.verb.indFutDef3pl@ !!= * @CODE@ Future definite
-@U.verb.indFutDef3opl@ !!= * @CODE@ Future definite
-
-@U.verb.indFutInt1sg@ !!= * @CODE@ Future Intentional
-@U.verb.indFutInt2sg@ !!= * @CODE@ Future Intentional 
-@U.verb.indFutInt3sg@ !!= * @CODE@ Future Intentional 
-@U.verb.indFutInt3osg@ !!= * @CODE@ Future Intentional
-@U.verb.indFutInt1pl@ !!= * @CODE@ Future Intentional
-@U.verb.indFutInt12pl@ !!= * @CODE@ Future Intentional
-@U.verb.indFutInt2pl@ !!= * @CODE@ Future Intentional 
-@U.verb.indFutInt3pl@ !!= * @CODE@ Future Intentional 
-@U.verb.indFutInt3opl@ !!= * @CODE@ Future Intentional
-
 
 @U.verb.FutCon@ !!= * @CODE@ Future Conditional
-
-!@U.verb.FutCon1sg@   * @CODE@ Future Conditional
-!@U.verb.FutCon2sg@   * @CODE@ Future Conditional
-!@U.verb.FutCon3sg@   * @CODE@ Future Conditional
-!@U.verb.FutCon3osg@  * @CODE@ Future Conditional
-!@U.verb.FutCon1pl@   * @CODE@ Future Conditional
-!@U.verb.FutCon12pl@  * @CODE@ Future Conditional
-!@U.verb.FutCon2pl@   * @CODE@ Future Conditional
-!@U.verb.FutCon3pl@   * @CODE@ Future Conditional
-!@U.verb.FutCon3opl@  * @CODE@ Future Conditional
 
 @U.verb.sbj@  !!= * @CODE@ Subjunctive (Conjunct)
 @U.verb.fut@  !!= * @CODE@ Future Conditional
@@ -222,10 +173,19 @@ i2 		!!= * @CODE@  Possessive element
 @U.verb.NI@ ! test
 @U.verb.KI@ ! test
 
-@U.verb.imp2sg@ !!= * @CODE@
-@U.verb.imp1pl@ !!= * @CODE@
-@U.verb.imp2pl@ !!= * @CODE@
-@U.verb.imp12pl@ !!= * @CODE@
+! Test:
+@U.verb.Prs@
+@U.verb.Prt@  
+@U.verb.FutDef@
+@U.verb.FutInt@
+@U.verb.FutCon@
+
+@U.tm.Prs@
+@U.tm.Prt@  
+@U.tm.FutDef@
+@U.tm.FutInt@
+@U.tm.FutCon@
+
 
 @U.verb.1sgindep@ !!= * @CODE@
 @U.verb.2sgindep@ !!= * @CODE@
