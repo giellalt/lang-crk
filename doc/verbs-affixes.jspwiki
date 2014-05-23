@@ -2,8 +2,6 @@
 Plains Cree verb morphology                  
 
 
-__Note__ ''This file is copied from Ojibwe, and may contain Ojibwe things that should be removed.''
-
 The Plains Cree verbs are divided in four groups:
 
 # IA: Intransitive animate
@@ -14,62 +12,27 @@ The Plains Cree verbs are divided in four groups:
 
 Intransitive animate (IA)
 
- LEXICON IACONJ  splits in 3 conjugations
+ LEXICON IACONJ  splits in 4 moods
 
- LEXICON IA_IND  gives positive and negative
+ LEXICON IA_IND  First mode, indicative
 
-
-
-
-!!IA finite forms
 
  LEXICON IA_IND_PRS  gives person suffixes
 
 
 
+ LEXICON IA_FUT_CON   Second mode mode, Fut Cond
 
 
 
+ LEXICON IA_SBJ  Third mode, subjunctive
 
 
 
-
-
- LEXICON IA_SBJ  gives flag diacritics and directs to subjunctive person suffixes
-
+ LEXICON IA_IMP   Fourth mode, imperative
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- LEXICON IA_IMP   gives flag diacritics and directs to imperative person suffixes
-
-
-
-
-
-
-
-
-
-
-
-this looks like Ojibwe :-/ what is correct?
 
 
 
@@ -84,7 +47,7 @@ Intransitive inanimate (II)
 
 
 
-Transitive animate (TA)
+!!!Transitive animate (TA)
 
 The VTA verbs split in different moods.
 There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
