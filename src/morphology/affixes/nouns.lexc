@@ -129,11 +129,13 @@ LEXICON ANIRRDECL	!!= * @CODE@ for atim and mistatim.
 
 
 LEXICON ANKININFL !!= * @CODE@ The lexicon gives a base form N+AN+Sg (if we want it)
-< "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > # ; !generic form
+< "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > SG_ ; !generic form
+< "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > PLak ; !generic form
  ANIRRINFL ;
 
 LEXICON ANKINiyINFL  !!= * @CODE@ Special treatment for nouns ending with -iy
-< "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > # ; !generic form
+< "+N":î "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > SG_ ; !generic form
+< "+N":î "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > PLak ; !generic form
 +N+AN+Sg: ANiySUFF_SG ;
 +N+AN+Pl: ANiySUFF_PL ;
 +N+AN+Der/Dim:%^DIMisis%> ANDIMIRR ;  
@@ -275,7 +277,7 @@ LEXICON INALIENABLEDERIVATION !!= * @CODE@
 +N+IN+Der/Dim:  INALIENABLEPOSS ;
 
 LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
-< "+N":0 "+IN":0 "@U.noun.abs@" > INABLGENERIC ; !Generic form
+< "+N":0 "+IN":0  "@U.noun.abs@" > INABLGENERIC ; !Generic form wîkiwân
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
