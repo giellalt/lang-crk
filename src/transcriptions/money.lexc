@@ -39,13 +39,13 @@ LEXICON PREFIX
  :$1%. QUARTS ;
 
 LEXICON DISALLOW
-   @N.dollar.zero@ CCARDINAL ;
+   @N.dollar.zero@ CCARDINAL ; !we disallow mînâpihtaw for $0.50, but we get it for $1.50 and more 
 
  
 LEXICON QUARTS 
-niyânan:25  QUART ; !$1.25
-nikotwâsik:5%0  QUART ; !$1.50
-têpakohp:75  QUART ; !$1.75
+niyânan:25  QUART ; !$1.25 = 5 quarts
+nikotwâsik:5%0  QUART ; !$1.50 = 6 quarts
+têpakohp:75  QUART ; !$1.75 = 7 quarts
 
 
 LEXICON TENS
@@ -99,13 +99,13 @@ ayinânêw:8 DOLLAR ;
 kîkâmitâtaht:9 DOLLAR ;
 
 
-LEXICON ONEDOLLAR
+LEXICON ONEDOLLAR ! singularis
 % newopehikan:%. MONEY ;
 % newopehikan:%.%0%0 ENDLEX ;
 % newopehikan: ENDLEX ;
 
 
-LEXICON DOLLAR
+LEXICON DOLLAR ! pluralis
 % newopehikanak:%. MONEY ;
 % newopehikanak:%.%0%0 ENDLEX ;
 % newopehikanak: ENDLEX ;
