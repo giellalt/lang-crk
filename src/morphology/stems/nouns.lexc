@@ -41,6 +41,7 @@ LEXICON AN-IN
 < 0:o     "@U.noun.3pl@"  0:"t2" > STEMS ; ! 3pl
 < 0:o     "@U.noun.3ipl@" 0:"t2" > STEMS ; ! 3-plural-obviate
 
+
 LEXICON BODY
 !! @LEXNAME@ for bodyparts, similar to INALIENABLE but it give the generic form m-. Redirects to BODYSTEMS. 
 < 0:m "@U.noun.abs@"  > BODYSTEMS ; ! 1
@@ -218,7 +219,7 @@ masinahikan INDECL "book" ; !GG
 mîkiwâhp INDECL "tipi" ; !Wolfart's list: mîkiwâhpihk
 wîkiwin INDECL "home" ;
 wayasit INDECLis "hoof" ; !yaml !possibly -is in Dim
-
+wâskahikan INDECL "house" ; !GG
 atim ANIRRDECL "dog" ; ! -wak, -ohk, -wa !yaml  
 atim:têm ANIRRINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 mistatim ANIRRDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
@@ -242,7 +243,7 @@ nîtisân:îtisân ANKININFL "sibling" ; !NB! twolc gives oî-
 osîmisimâw:isîmis ANKININFL "younger sibling" ; 
 otôtemimâw:itôtem ANKININFL "friend" ; 
 okâwîmâw:ikâw ANKINiyINFL "mother" ;! -iy- dissappears Okimasis p. 140,  !yaml
-ohtâwimâw:ohtâw ANKINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy
+ohtâwîmâw:ohtâw ANKINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy
 omisimâw:imis ANKININFL "older sister" ;
 nikâwis:ikâwis ANKININFL "mother's sister" ; ! gen.form okâwisimâw??
 osisimâw:isis ANKININFL "mother's brother, father's sister husband" ; 
