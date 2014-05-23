@@ -54,67 +54,24 @@ LEXICON IA   !!= @CODE@ divides in independent, subjunctive and imperative
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
 
-!Present tense
+!PREFIX
 
-< 0:n 0:i "@U.verb.ind1sg@"  0:"t2" > IALIST ; !"
-< 0:k 0:i "@U.verb.ind2sg@"  0:"t2" > IALIST ; !"
-<         "@U.verb.ind3sg@"         > IALIST ; !"
-<         "@U.verb.ind3osg@"        > IALIST ; !"
-< 0:n 0:i "@U.verb.ind1pl@"  0:"t2" > IALIST ;   ! exclusive Pl
-< 0:k 0:i "@U.verb.ind12pl@" 0:"t2" > IALIST ;   ! inclusive Pl
-< 0:k 0:i "@U.verb.ind2pl@"  0:"t2" > IALIST ;   !"
-<         "@U.verb.ind3pl@"         > IALIST ; !"
-<         "@U.verb.ind3opl@"        > IALIST ; !"
+< 0:n 0:i "@U.verb.NI@"  0:"t2" > IATNS ; !"
+< 0:k 0:i "@U.verb.KI@"  0:"t2" > IATNS ; !"
+<         "@U.verb.NULL@"         > IATNS ; !"
 
 !Past/Preterite tense
 
-< 0:n 0:i 0:k 0:î 0:%- "@U.verb.indprt1sg@"  > IALIST ; !"
-< 0:k 0:i 0:k 0:î 0:%- "@U.verb.indprt2sg@"  > IALIST ; !"
-<         0:k 0:î 0:%- "@U.verb.indprt3sg@"  > IALIST ; !"
-<         0:k 0:î 0:%- "@U.verb.indprt3osg@" > IALIST ; !"
-< 0:n 0:i 0:k 0:î 0:%- "@U.verb.indprt1pl@"  > IALIST ;   ! exclusive Pl
-< 0:k 0:i 0:k 0:î 0:%- "@U.verb.indprt12pl@" > IALIST ;   ! inclusive Pl
-< 0:k 0:i 0:k 0:î 0:%- "@U.verb.indprt2pl@"  > IALIST ;   !"
-<         0:k 0:î 0:%- "@U.verb.indprt3pl@"  > IALIST ; !"
-<         0:k 0:î 0:%- "@U.verb.indprt3opl@" > IALIST ; !"
-
-!Future definite tense
-
-< 0:n 0:i 0:k 0:a 0:%- "@U.verb.indFutDef1sg@"   > IALIST ; !"Okimâsis 2004: 33 and 39
-< 0:k 0:i 0:k 0:a 0:%- "@U.verb.indFutDef2sg@"   > IALIST ; !"
-<         0:k 0:a 0:%- "@U.verb.indFutDef3sg@"   >  IALIST ; !"
-<         0:k 0:a 0:%- "@U.verb.indFutDef3osg@"  > IALIST ; !"
-< 0:n 0:i 0:k 0:a 0:%-  "@U.verb.indFutDef1pl@"  > IALIST ;   ! exclusive Pl
-< 0:k 0:i 0:k 0:a 0:%-  "@U.verb.indFutDef12pl@" > IALIST ;   ! inclusive Pl
-< 0:k 0:i 0:k 0:a 0:%-  "@U.verb.indFutDef2pl@"  > IALIST ;   !"
-<         0:k 0:a 0:%-  "@U.verb.indFutDef3pl@"  > IALIST ; !"
-<         0:k 0:a 0:%-  "@U.verb.indFutDef3opl@" > IALIST ; !"
-
-!Future intentional tense
-
-< 0:n 0:i 0:w 0:î 0:%- "@U.verb.indFutInt1sg@"  > IALIST ; !"Okimâsis 2004: 33 and 39
-< 0:k 0:i 0:w 0:î 0:%- "@U.verb.indFutInt2sg@"  > IALIST ; !"
-<         0:w 0:î 0:%- "@U.verb.indFutInt3sg@"  > IALIST ; !"
-<         0:w 0:î 0:%- "@U.verb.indFutInt3osg@" > IALIST ; !"
-< 0:n 0:i 0:w 0:î 0:%- "@U.verb.indFutInt1pl@"  > IALIST ; ! exclusive Pl
-< 0:k 0:i 0:w 0:î 0:%- "@U.verb.indFutInt12pl@" > IALIST ; ! inclusive Pl
-< 0:k 0:i 0:w 0:î 0:%- "@U.verb.indFutInt2pl@"  > IALIST ; !"
-<         0:w 0:î 0:%- "@U.verb.indFutInt3pl@"  > IALIST ; !"
-<         0:w 0:î 0:%- "@U.verb.indFutInt3opl@" > IALIST ; !"
+LEXICON IATNS
+<              "@U.tm.Prs@"     > IALIST ; !"
+< 0:k 0:î 0:%- "@U.tm.Prt@"     > IALIST ; !"
+< 0:k 0:a 0:%- "@U.tm.FutDef@"  > IALIST ; !"
+< 0:w 0:î 0:%- "@U.tm.FutInt@"  > IALIST ; !"
 
 
 LEXICON IA_FUTURE_CONDITIONAL
-< "@U.verb.FutCon@" > IALIST ;
+< "@U.tm.FutCon@" > IALIST ;
 
-!@U.verb.FutCon1sg@ IALIST ;
-!@U.verb.FutCon2sg@ IALIST ;
-!@U.verb.FutCon3sg@ IALIST ;
-!@U.verb.FutCon3osg@ IALIST ;
-!@U.verb.FutCon1pl@ IALIST ;
-!@U.verb.FutCon12pl@ IALIST ;
-!@U.verb.FutCon2pl@ IALIST ;
-!@U.verb.FutCon3pl@ IALIST ;
-!@U.verb.FutCon3opl@ IALIST ;
 
 LEXICON IALIST
  :%> IAPREVERB ;
@@ -122,31 +79,15 @@ LEXICON IALIST
 
 
 LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
-!Present
-< "@U.verb.sbjPrs@" > IAPREVERB ;
 
-! Preterite
-< 0:k 0:î 0:%- "@U.verb.sbjPrt@" > IAPREVERB ;  ! Is this correct? TT
+<              "@U.tm.Prs@"    > IAPREVERB ; !Present
+< 0:k 0:î 0:%- "@U.tm.Prt@"    > IAPREVERB ;  ! Preterite,  Is this correct? TT
+< 0:w 0:î 0:%- "@U.tm.FutInt@" > IAPREVERB ; ! Future Intentional
 
-! Future Intentional
-< 0:w 0:î 0:%- "@U.verb.sbjFutureInt@" > IAPREVERB ;
-
-!@U.verb.sbj1sg@ IAPREVERB ;
-!@U.verb.sbj2sg@ IAPREVERB ;
-!@U.verb.sbj3sg@ IAPREVERB ;
-!@U.verb.sbj3osg@ IAPREVERB ;
-
-!@U.verb.sbj1pl@  IAPREVERB ;   ! exclusive Pl
-!@U.verb.sbj12pl@  IAPREVERB ; ! inclusive Pl
-!@U.verb.sbj2pl@  IAPREVERB ;   
-!@U.verb.sbj3pl@ IAPREVERB ;
-!@U.verb.sbj3opl@ IAPREVERB ;
 
 
 LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
-@U.verb.imp2sg@  IAPREVERB ;
-@U.verb.imp2pl@  IAPREVERB ;   
-@U.verb.imp12pl@  IAPREVERB ;   ! inclusive Pl
+@U.verb.NULL@  IAPREVERB ;
 
 !! !! Intransitive inanimate
 !     ====================
