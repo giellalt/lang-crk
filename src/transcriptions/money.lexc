@@ -1,0 +1,152 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@samediggi.no
+
+Multichar_Symbols
+
+  +Use/NG    ! Do not generate, for isme-ped.fst and apertium
+  +String    ! Tag to denote non-numeric strings
+  +NumNum    ! Tag to denote real numbers in one form or another
+  @D.dollar.dis@
+  @N.dollar.zero@
+  
+LEXICON Root
+
+!These 4 lines are for TTS, they are commented out.
+!< %+String [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|â|ê|î|ô|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Â|Ê|Î|Ô]* > ENDLEX ; ! This first line is to allow all letter strings.
+!+NumNum NUMBERSECTION ;
+!+NumNum ENDLEXSECTION ;
+!LEXICON NUMBERSECTION
+
+PREFIX ;
+
+LEXICON PREFIX
+ :$ TENS ;			! 20-99
+ :$ TEENS ;			! 10-19
+ :$ ONES ;			! 1-9
+ :$1%. QUARTS ;
+ :$%0%. DISALLOW ;
+ :$1%. QUARTS ;
+
+LEXICON DISALLOW
+   @N.dollar.zero@ CCARDINAL ;
+
+ 
+LEXICON QUARTS 
+niyânan:25  QUART ; !$1.25
+nikotwâsik:5%0  QUART ; !$1.50
+têpakohp:75  QUART ; !$1.75
+
+
+LEXICON TENS
+mitâtaht:1%0 DOLLAR ;
+nîs:2 TEN ;
+nistomi:3 TEN ;
+nemi:4 TEN ;
+nîyânanomi:5 TEN ;
+nikotwâsomi:6 TEN ;
+tepakohpimi:7 TEN ;
+ayinânewomi:8 TEN ;
+kekâmitâtahtomi:9 TEN ;
+
+LEXICON TEN
+tanaw% : ONESTONEXT ;
+
+LEXICON ONESTONEXT
+piyakosâp:1 DOLLAR ;
+nîsosâp:2 DOLLAR ;
+nistosâp:3 DOLLAR ;
+nêwosâposâp:4 DOLLAR ;
+niyânanosâp:5 DOLLAR ;
+nikotwâsiksâp:6 DOLLAR ;
+têpakohposâp:7 DOLLAR ;
+ayinânêwosâp:8 DOLLAR ;
+kîkâmitâtahtosâp:9 DOLLAR ;
+
+LEXICON TEENS
+piyakosâp:11 DOLLAR ;
+nîsosâp:12 DOLLAR ;
+nistosâp:13 DOLLAR ;
+nêwosâposâp:14 DOLLAR ;
+niyânanosâp:15 DOLLAR ;
+nikotwâsiksâp:16 DOLLAR ;
+têpakohposâp:17 DOLLAR ;
+ayinânêwosâp:18 DOLLAR ;
+kîkâmitâtahtosâp:19 DOLLAR ;
+
+LEXICON ONES
+DCARDINAL ;
+
+LEXICON DCARDINAL
+piyak:1 ONEDOLLAR ;
+nîso:2 DOLLAR ;
+nisto:3 DOLLAR ;
+nêwo:4 DOLLAR ;
+niyânan:5 DOLLAR ;
+nikotwâsik:6 DOLLAR ;
+têpakohp:7 DOLLAR ;
+ayinânêw:8 DOLLAR ;
+kîkâmitâtaht:9 DOLLAR ;
+
+
+LEXICON ONEDOLLAR
+% newopehikan:%. MONEY ;
+% newopehikan:%.%0%0 ENDLEX ;
+% newopehikan: ENDLEX ;
+
+
+LEXICON DOLLAR
+% newopehikanak:%. MONEY ;
+% newopehikanak:%.%0%0 ENDLEX ;
+% newopehikanak: ENDLEX ;
+
+
+LEXICON MONEY
+% : CCARDINAL ;
+ 
+LEXICON CCARDINAL
+niyânan:%05 CENT ;
+mitâtaht:1%0 CENT ;
+niyânansâp:15 CENT ;
+nîstanaw:2%0 CENT ;
+nîstanaw% niyânanosâp:25 CENT ;
+peyak:25 QUART ;
+nistomitanaw:3%0 CENT ;
+nistomitanaw% niyânanosâp:35 CENT ;
+nemitanaw:4%0 CENT ;
+nemitanaw% niyânanosâp:45 CENT ;
+nîyânanomitanaw:5%0 CENT ;
+nîso:5%0 QUART ;
+mînâpihtaw:5%0 HALFDOLLAR ;
+nîyânanomitanaw% niyânanosâp:55 CENT ;
+nîyânanomitanaw:6%0 CENT ;
+nikotwâsomitanaw% niyânanosâp:65 CENT ;
+tepakohpimitanaw:7%0 CENT ;
+tepakohpimitanaw% niyânanosâp:75 CENT ;
+nisto:75 QUART ;
+ayinânewomitanaw:8%0 CENT ;
+ayinânewomitanaw% niyânanosâp:85 CENT ;
+kekâmitâtahtomitanaw:9%0 CENT ;
+kekâmitâtahtomitanaw% niyânanosâp:95 CENT ;
+
+LEXICON CENT
+% pîwâpiskos: ENDLEX ;
+
+LEXICON QUART
+% sônîyâs: ENDLEX ;
+
+LEXICON HALFDOLLAR
+@D.dollar.dis@ ENDLEX ;
+
+LEXICON ENDLEX
+ # ;
