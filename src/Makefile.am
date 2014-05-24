@@ -135,7 +135,7 @@ if CAN_XFST
 GT_ANALYSERS_XFST+=analyser-gt-desc-syll.xfst
 GT_GENERATORS_XFST+=generator-gt-norm-syll.xfst
 GT_TRANSFORMERS_XFST+=transcriptor-money2text-desc.xfst \
-					  transcriptor-text2clock-desc.xfst 
+					  transcriptor-text2money-desc.xfst 
 endif # CAN_XFST
 
 #### HFST transducers
@@ -143,7 +143,7 @@ if CAN_HFST
 GT_ANALYSERS_HFST+=analyser-gt-desc-syll.hfst
 GT_GENERATORS_HFST+=generator-gt-norm-syll.hfst
 GT_TRANSFORMERS_XFST+=transcriptor-money2text-desc.hfst \
-					  transcriptor-text2clock-desc.hfst 
+					  transcriptor-text2money-desc.hfst 
 endif # CAN_HFST
 
 
