@@ -45,12 +45,12 @@ LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
 < 0:"^EA"  "+1Sg":0 "@U.verb.NI@"   0:n                 > # ; !"
 < 0:"^EA"  "+2Sg":0 "@U.verb.KI@"   0:n                 > # ; !"
 <          "+3Sg":0 "@U.verb.NULL@" 0:w                 > # ; !"
-<         "+3oSg":0 "@U.verb.NULL@" 0:y 0:i 0:w 0:a     > # ; !"
+<         "+4Sg":0 "@U.verb.NULL@" 0:y 0:i 0:w 0:a     > # ; !"
 < 0:"^EA"  "+1Pl":0 "@U.verb.NI@"   0:n 0:â 0:n         > # ;   ! exclusive Pl
 < 0:"^EA" "+12Pl":0 "@U.verb.KI@"   0:n 0:a 0:w         > # ; ! inclusive Pl
 < 0:"^EA"  "+2Pl":0 "@U.verb.KI@"   0:n 0:â 0:w 0:â 0:w > # ;           !
 <          "+3Pl":0 "@U.verb.NULL@" 0:w 0:a 0:k         > # ;   !
-<         "+3oPl":0 "@U.verb.NULL@" 0:y 0:i 0:w 0:a     > # ;   !
+<         "+4Pl":0 "@U.verb.NULL@" 0:y 0:i 0:w 0:a     > # ;   !
 
 
 
@@ -61,12 +61,12 @@ LEXICON IA_FUT_CON_SUF
   +1Sg:%>yâni  # ; 
   +2Sg:%>yani  # ; 
   +3Sg:%>ci    # ; 
- +3oSg:%>yici  # ; 
+ +4Sg:%>yici  # ; 
   +1Pl:%>yâhki # ; ! exclusive Pl
  +12Pl:%>yahko # ; ! inclusive Pl
   +2Pl:%>yêko  # ; 
   +3Pl:%>twâwi # ; 
- +3oPl:%>yici  # ; 
+ +4Pl:%>yici  # ; 
 
 
 LEXICON IA_SBJ !!= @CODE@ Third mode, subjunctive
@@ -78,12 +78,12 @@ LEXICON subjunctives
      +1Sg:%>yân #;
      +2Sg:%>yan	#;
      +3Sg:%>t	#;
-    +3oSg:%>yit #;
+    +4Sg:%>yit #;
      +1Pl:%>yâhk #;
     +12Pl:%>yahk #;
      +2Pl:%>yêk #;  ! NOTE: corrected according to dt, earlier we said %>nyêk
      +3Pl:%>cik #;
-    +3oPl:%>yit #;
+    +4Pl:%>yit #;
 
 
 LEXICON IA_IMP  !!= @CODE@ Fourth mode, imperative
@@ -127,9 +127,9 @@ LEXICON II_SBJ_FLAG
  
 LEXICON II_IND_PRS   !!= @CODE@ is positive present
 +3Sg: # ;
-+3oSg:%>yik # ;
++4Sg:%>yik # ;
 +3Pl:%>a # ;
-+3oPl:%>yiwa # ;
++4Pl:%>yiwa # ;
 
 LEXICON II_SBJ 
     :%>k # ; ! Both these entries now give wrong forms (ê-misponk pro ê-mispok etc.)
@@ -202,16 +202,16 @@ LEXICON VTA_NULL_O
 !+3Pl+3SgO:%>kow	  # ; ! Oki 77
 +3Pl+3SgO:%>êwak	  # ; ! Oki 77
 
-+3oSg+3SgO:%>êyiwa	  # ;
-+3oSg+3PlO:%>êyiwa	  # ;
-+3oSg+3SgO:%>ikoyiwa  # ;
-+3oSg+3PlO:%>ikoyiwa  # ;
-+3oSg+3oPlO:%>ikoyiwa  # ;
++4Sg+3SgO:%>êyiwa	  # ;
++4Sg+3PlO:%>êyiwa	  # ;
++4Sg+3SgO:%>ikoyiwa  # ;
++4Sg+3PlO:%>ikoyiwa  # ;
++4Sg+4PlO:%>ikoyiwa  # ;
 
 +3Pl+3PlO:%>ikowak	  # ;
 +3Pl+3PlO:%>êwak	  # ;
-+3oPl+3SgO:%>êyiwa	  # ;
-+3oPl+3PlO:%>êyiwa	  # ;
++4Pl+3SgO:%>êyiwa	  # ;
++4Pl+3PlO:%>êyiwa	  # ;
 
 
 
@@ -238,7 +238,7 @@ LEXICON TA_SBJ_SUF !!= @CODE@ gives subj + obj tag and suf
 +2Pl+3SgO:%>âyêk	   # ;
 +2Pl+3PlO:%>âyêkok	   # ;
 
-+3Sg+3oPlO:%>ikocik	   # ;
++3Sg+4PlO:%>ikocik	   # ;
 +3Sg+3SgO:%>ât		   # ;
 +3Sg+3PlO:%>ât		   # ;
 +3Sg+2SgO:%>isk		   # ;
@@ -247,7 +247,7 @@ LEXICON TA_SBJ_SUF !!= @CODE@ gives subj + obj tag and suf
 +3Sg+1PlO:%>ikoyâhk	   # ;
 +3Sg+12PlO:%>ikoyahk   # ;
 
-+3Pl+3oPlO:%>ikocik	   # ;
++3Pl+4PlO:%>ikocik	   # ;
 +3Pl+3SgO:%>âcik	   # ;
 +3Pl+3PlO:%>âcik	   # ;
 +3Pl+2SgO:%>iskik	   # ;
@@ -256,16 +256,16 @@ LEXICON TA_SBJ_SUF !!= @CODE@ gives subj + obj tag and suf
 +3Pl+1PlO:%>ikoyâhkik  # ;
 +3Pl+12PlO:%>ikoyâhkok # ;
 
-+3oSg+3oSgO:%>koyit	   # ;
-+3oSg+3oPlO:%>ikoyit   # ;
-+3oSg+3SgO:%>âyit	   # ;
-+3oSg+3PlO:%>ikocik	   # ;
++4Sg+4SgO:%>koyit	   # ;
++4Sg+4PlO:%>ikoyit   # ;
++4Sg+3SgO:%>âyit	   # ;
++4Sg+3PlO:%>ikocik	   # ;
 
-+3oPl+3oSgO:%>koyit	   # ;
-+3oPl+3oPlO:%>ikoyit   # ;
-+3oPl+3SgO:%>âyit	   # ;
-+3oPl+3SgO:%>ikot	   # ;
-+3oPl+3PlO:%>ikocik	   # ;
++4Pl+4SgO:%>koyit	   # ;
++4Pl+4PlO:%>ikoyit   # ;
++4Pl+3SgO:%>âyit	   # ;
++4Pl+3SgO:%>ikot	   # ;
++4Pl+3PlO:%>ikocik	   # ;
 
 
 LEXICON TA_FUT !!= @CODE@ gives flag diacritic and directs to subjunctive person suffixes
@@ -286,7 +286,7 @@ LEXICON TA_FUT_SUF
 +2Pl+3SgO:%>âyêko	   # ;
 +2Pl+3PlO:%>âyêkwâwi   # ;
 					   
-+3Sg+3oSgO:%>âyici	   # ;
++3Sg+4SgO:%>âyici	   # ;
 +3Sg+3SgO:%>âci		   # ;
 +3Sg+3PlO:%>ikotwâwi   # ;
 +3Sg+2SgO:%>iski	   # ;
@@ -299,12 +299,12 @@ LEXICON TA_FUT_SUF
 +3Pl+3PlO:%>âtwâwi	   # ;
 +3Pl+3PlO:%>ikotwâwi   # ;
 					   
-+3oSg+3oPlO:%>ikoyici  # ;
-+3oSg+3SgO:%>ikoci	   # ;
-+3oSg+3PlO:%>âyici	   # ;
-+3oPl+3oPlO:%>ikoyici  # ;
-+3oPl+3SgO:%>ikoci	   # ;
-+3oPl+3PlO:%>âyici	   # ;
++4Sg+4PlO:%>ikoyici  # ;
++4Sg+3SgO:%>ikoci	   # ;
++4Sg+3PlO:%>âyici	   # ;
++4Pl+4PlO:%>ikoyici  # ;
++4Pl+3SgO:%>ikoci	   # ;
++4Pl+3PlO:%>âyici	   # ;
 
 
 
@@ -358,7 +358,7 @@ LEXICON TI_IND_SUFF
 +1Sg@U.verb.1sgindep@:n@U.verb.1sgindep@ # ;
 +2Sg@U.verb.2sgindep@:n@U.verb.2sgindep@ # ;
 +3Sg@U.verb.3sgindep@:m@U.verb.3sgindep@ # ;
-+3oSg000@U.verb.3osgindep@:miyiwa@U.verb.3osgindep@ # ;
++4Sg000@U.verb.3osgindep@:miyiwa@U.verb.3osgindep@ # ;
 !+3iSg@U.verb.3isgindep@:m@U.verb.3isgindep@ # ;
 +1Pl@U.verb.1plindep@:nân@U.verb.1plindep@ # ;   ! exclusive Pl
 +12Pl@U.verb.12plindep@:naw@U.verb.12plindep@ # ; ! inclusive Pl
