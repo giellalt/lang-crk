@@ -28,6 +28,7 @@
 !! !!! Intransitive animate (IA)
 
 LEXICON IACONJ !!= @CODE@ splits in 4 moods
++V+IA:      # ; !Baseform
 +V+IA+Ind:      IA_IND ;
 +V+IA+Cnj:      IA_SBJ ; 
 +V+IA:%>        IA_IMP ;
@@ -86,19 +87,19 @@ LEXICON subjunctives
 
 
 LEXICON IA_IMP  !!= @CODE@ Fourth mode, imperative
-< "+Imp":0 "@U.verb.NULL@" > imp ;
+< "+Imp":0 "@U.verb.NULL@" > imp ; !
 
 
 LEXICON imp
-+Imm+2Sg:0   # ;
-+Imm+2Pl:%>k	 # ;
-+Imm+12Pl:%>tân	  # ;
-+Del+2Sg:%>hkan   # ;
-+Del+2Pl:%>hkêk   # ;
-+Del+12Pl:%>hkahk   # ;
++Imm+2Sg:0   # ; !
++Imm+2Pl:%>k	 # ; !
++Imm+12Pl:%>tân	  # ; !
++Del+2Sg:%>hkan   # ; !
++Del+2Pl:%>hkêk   # ; !
++Del+12Pl:%>hkahk   # ; !
 
 LEXICON IA_IMP_LONG_E
-< "+Imp":0 "@U.verb.NULL@" > imp-long-E ;
+< "+Imp":0 "@U.verb.NULL@" > imp-long-E ;!
 
 LEXICON imp-long-E
 +Imm+2Sg:ê   # ;
