@@ -134,12 +134,16 @@ if CAN_XFST
 # Transducers using syllabic writing system
 GT_ANALYSERS_XFST+=analyser-gt-desc-syll.xfst
 GT_GENERATORS_XFST+=generator-gt-norm-syll.xfst
+GT_TRANSFORMERS_XFST+=transcriptor-money2text-desc.xfst \
+					  transcriptor-text2clock-desc.xfst 
 endif # CAN_XFST
 
 #### HFST transducers
 if CAN_HFST
 GT_ANALYSERS_HFST+=analyser-gt-desc-syll.hfst
 GT_GENERATORS_HFST+=generator-gt-norm-syll.hfst
+GT_TRANSFORMERS_XFST+=transcriptor-money2text-desc.hfst \
+					  transcriptor-text2clock-desc.hfst 
 endif # CAN_HFST
 
 
@@ -179,6 +183,25 @@ generator-gt-norm-syll.xfst: generator-gt-norm.xfst \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST) -q
+
+
+# money
+
+# raw lexical transducer building rules:
+
+# for HFST:
+transcriptions/transcriptor-money2text-raw.hfst: transcriptions/money.lexc
+	$(AM_V_HLEXC)$(HFST_LEXC) $(VERBOSITY) \
+		$(HFST_LEXC_FLAGS) -f openfst-tropical -o $@ $^
+
+# for XFST:
+
+transcriptions/transcriptor-money2text-raw.xfst: transcriptions/money.lexc
+	$(AM_V_at)$(PRINTF) \
+		"compile-source $^\nsave-source $@\nquit\n" \
+		> $@.script
+	$(AM_V_LEXC)$(LEXC) $(VERBOSITY) < $@.script
+	$(AM_V_at)rm -f $@.script
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
