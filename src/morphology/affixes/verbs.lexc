@@ -28,14 +28,14 @@
 !! !!! Intransitive animate (IA)
 
 LEXICON IACONJ !!= @CODE@ splits in 4 moods
-+V+IA:      # ; !Baseform
+< "+V":0 "+IA":0 "@U.tm.Prs@" "@U.verb.NULL@" >     # ; !Baseform
 +V+IA+Ind:      IA_IND ;
 +V+IA+Cnj:      IA_SBJ ; 
 +V+IA:%>        IA_IMP ;
 +V+IA+Fut+Cond: IA_FUT_CON ;
 
 LEXICON IA_IND !!= @CODE@ First mode, indicative
-< "@U.tm.Prs@"    "+Prs":%>          > IA_IND_PRS ;
+< "@U.tm.Prs@"    "+Prs":%>          > IA_IND_PRS ; !
 < "@U.tm.Prt@"    "+Prt":%>          > IA_IND_PRS ; !test
 < "@U.tm.FutDef@" "+Fut":0 "+Def":%> > IA_IND_PRS ; !Future definite - Ind Fut?
 < "@U.tm.FutInt@" "+Fut":0 "+Int":%> > IA_IND_PRS ; !Future intentional
