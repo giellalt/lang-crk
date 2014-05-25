@@ -1,8 +1,299 @@
-!! Numerals
-!! --------
-!! Numerals in UNDEFINED language are numbers.
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@hum.uit.no
+
+! ========================================================================== !
+!!                           !!!Plains Cree particles                           
+! ========================================================================== !
+
+!! The file
 
 LEXICON Numerals
-numeral    #   ;
+HUNDREDSM ;		! 200M
+mitâtahtomitanaw HUNDREDM ;	! 100M
+TENSM ;			! 20-99M
+TEENSM ;		! 10-19M
+ONESM ;			! 1-9M
+!HUNDREDST ;		! 200000-999999 NB
+mitâtahtomitanaw HUNDREDT ;	! 100000-100999
+TENST ;			! 20000-99999,10000-10999
+TEENST ;		! 11000-19999
+ONEST ;			! 2000-9999
+tåvsene THOUSAND ;	! 1000-1999
+UNDERTHOUSAND ;		! 100-999
+TENS ;			! 20-99
+TEENS ;			! 10-19
+ONES ;			! 1-9
 
-! vim: set ft=xfst-lexc:
+
+LEXICON HUNDREDSM
+nîso  CUODIM ;
+nisto CUODIM ;
+newo CUODIM ; ! Google: 459
+nîyânan CUODIM ;
+nikotwâsik CUODIM ;
+tepakohp CUODIM ;
+ayinânew CUODIM ;
+kekâmitâtaht CUODIM ;
+
+LEXICON CUODIM
+mitâtahtomitanaw HUNDREDM ;
+
+LEXICON HUNDREDM
+ TENSM ;
+ TEENSM ;
+ ONESM ;
+ MILJON ;
+
+LEXICON TEENSM
+luhkie TEENM ;
+
+LEXICON TEENM
+peyak     LOHKAIM ;
+nîso   LOHKAIM ;
+nisto    LOHKAIM ;
+newo LOHKAIM ;
+nîyânan   LOHKAIM ;
+nikotwâsik   LOHKAIM ;
+tepakohp LOHKAIM ;
+ayinânew LOHKAIM ;
+kekâmitâtaht   LOHKAIM ;
+
+LEXICON LOHKAIM
+MILJON ;
+
+LEXICON TENSM
+luhkie MILJON ;
+nîso   TENM ;
+nisto    TENM ;
+newo TENM ;
+nîyânan   TENM ;
+nikotwâsik   TENM ;
+tepakohp TENM ;
+ayinânew TENM ;
+kekâmitâtaht  TENM ;
+
+LEXICON TENM
+luhkie MILJON ;
+luhkie   ONESM ;
+
+LEXICON ONESM
+akte% miljon  OVERTHOUSANDS ;
+nîso   MILJON ;
+nisto          MILJON ;
+newo       MILJON ;
+nîyânan     MILJON ;
+nikotwâsik         MILJON ;
+tepakohp       MILJON ;
+ayinânew       MILJON ;
+kekâmitâtaht  MILJON ; 
+
+LEXICON MILJON
+% miljona OVERTHOUSANDS ;
+
+! =================
+! Under the million
+! =================
+
+LEXICON OVERTHOUSANDS
+HUNDREDST ;		! x00.000.000
+mitâtahtomitanaw HUNDREDT ;	! 100.000.000
+ TENST ;		!  20.000.000
+ TEENST ;		!  10.000.000
+ ONEST ;		!   2.000.000
+tåvsene THOUSAND ;	!   1.000.000
+ UNDERTHOUSAND ;	
+ TENS ;
+ TEENS ;
+ ONES ;
+ NUM ;	!  x000000
+
+LEXICON HUNDREDST
+nîso  CUODIT ;	! 200000-299999
+nisto    CUODIT ;	! 300000-399999
+newo CUODIT ;	! 400000-499999
+nîyânan   CUODIT ;	! 500000-599999
+nikotwâsik   CUODIT ;	! 600000-699999
+tepakohp CUODIT ;	! 700000-799999
+ayinânew CUODIT ;	! 800000-899999
+kekâmitâtaht  CUODIT ;	! 900000-999999
+
+LEXICON CUODIT
+mitâtahtomitanaw HUNDREDT ;	! 100000-199999
+
+LEXICON HUNDREDT	! X = 1-9, Y = 0-9
+ TENST ;			! X2XYYY, X10YYY
+ TEENST ;		! X1XYYY
+ THOUSANDS ;
+ ONEST ;		! XX0YYY
+ THOUSANDS ;	! X00YYY
+
+LEXICON TEENST
+luhkie  TEENT ;
+luhkie THOUSANDS ;
+
+LEXICON TEENT
+peyak    LOHKAIT ;
+nîso   LOHKAIT ;
+nisto    LOHKAIT ;
+newo LOHKAIT ;
+nîyânan   LOHKAIT ;
+nikotwâsik   LOHKAIT ;
+tepakohp LOHKAIT ;
+ayinânew LOHKAIT ;
+kekâmitâtaht   LOHKAIT ;
+
+LEXICON LOHKAIT
+THOUSANDS ;
+
+LEXICON TENST
+nîs  TANAW ;
+nistomi    TANAW ;
+nemi TANAW ;
+nîyânanomi   TANAW ;
+nikotwâsomi   TANAW ;
+tepakohpimi TANAW ;
+ayinânewomi TANAW ;
+kekâmitâtahtomi   TANAW ;
+
+LEXICON TANAW
+tanaw%  NUM ;
+tanaw%  ONESTONEXT ;
+
+LEXICON TENT
+ THOUSANDS ;
+akte THOUSANDS ;
+ONEST ;
+
+LEXICON ONEST
+nîso THOUSANDS ;
+nisto THOUSANDS ;
+newo THOUSANDS ;
+nîyânan THOUSANDS ;
+nikotwâsik THOUSANDS ;
+tepakohp THOUSANDS ;
+ayinânew THOUSANDS ;
+kekâmitâtaht THOUSANDS ;
+
+LEXICON THOUSANDS      ! x > 1
+tåvsene THOUSAND ;
+
+LEXICON THOUSAND
+UNDERTHOUSAND ;	   ! 1100-1999
+ TENS ;	   ! 1020-1099
+ TEENS ;	   ! 1010-1019
+ ONES ;	   ! 1001-1009
+ NUM ;	   ! 1000
+
+!===========================
+!Here starts the 999 numbers
+!===========================
+
+LEXICON UNDERTHOUSAND
+HUNDREDS ;
+mitâtahtomitanaw%  HUNDRED ;
+!tjuatede  CUODAAT ;
+
+LEXICON HUNDREDS
+nîso   CUODI ;
+nisto    CUODI ;
+newo CUODI ;
+nîyânano   CUODI ;  !OBS
+nikotwâsiko   CUODI ;
+tepakohpo CUODI ;
+ayinânewo CUODI ;
+kekâmitâtahto  CUODI ;
+
+LEXICON CUODI
+mitâtahtomitanaw%   HUNDRED ;
+!tjuatede  CUODAAT ;
+
+LEXICON HUNDRED
+ TENS ;
+ TEENS ;
+ ONES ;
+ NUM ;
+
+!LEXICON CUODAAT
+!    NUM ;
+
+LEXICON TENS
+mitâtaht NUM ;
+låhkede NUM ;
+nîs TEN ;
+nistomi TEN ;
+nemi TEN ;
+nîyânanomi TEN ;
+nikotwâsomi TEN ;
+tepakohpimi TEN ;
+ayinânewomi TEN ;
+kekâmitâtahtomi TEN ;
+
+LEXICON TEN
+låhkede NUM ;
+tanaw%  ONESTONEXT ;
+
+LEXICON ONESTONEXT
+peyakosâp NUM ;
+nîsosâp NUM ;
+nistosâp NUM ;
+nêwosâposâp NUM ;
+niyânanosâp NUM ;
+nikotwâsiksâp NUM ;
+têpakohposâp NUM ;
+ayinânêwosâp NUM ;
+kîkâmitâtahtosâp NUM ;
+
+
+
+LEXICON TEENS
+peyakosâp NUM ;
+nîsosâp NUM ;
+nistosâp NUM ;
+nêwosâposâp NUM ;
+niyânanosâp NUM ;
+nikotwâsiksâp NUM ;
+têpakohposâp NUM ;
+ayinânêwosâp NUM ;
+kîkâmitâtahtosâp NUM ;
+
+LEXICON ONES
+CARDINAL ;
+!ORDINAL ;
+
+LEXICON CARDINAL
+peyak NUM ;
+nîso NUM ;
+nisto NUM ;
+nêwo NUM ;
+niyânan NUM ;
+nikotwâsik NUM ;
+têpakohp NUM ;
+ayinânêw NUM ;
+kîkâmitâtaht NUM ;
+
+!LEXICON ORDINAL
+!voestes:1%.     NUM ;
+!mubpie:2%.   NUM ;
+!gåalmede:3%.   NUM ;
+!njealjede:4%. NUM ;
+!vïjhtede:5%.   NUM ;
+!govhtede:6%.   NUM ;
+!tjïjhtjede:7%.    NUM ;
+!gaaktsede:8%.   NUM ;
+!åktsede:9%.    NUM ;
+
+LEXICON NUM
++Num: # ;
+
+
