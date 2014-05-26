@@ -62,29 +62,28 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 !Past/Preterite tense
 
 LEXICON IATNS
-<                   "@U.tm.Prs@"     > IALIST ; !"
-< 0:k 0:î 0:%^EGLOT "@U.tm.Prt@"     > IALIST ; !" removed hyph
-< 0:k 0:î 0:%-      "@U.tm.Prt@"     > IALIST ; !
-< 0:k 0:a 0:%^EGLOT "@U.tm.FutDef@"  > IALIST ; !"
-< 0:k 0:a 0:%-      "@U.tm.FutDef@"  > IALIST ; !"
-< 0:w 0:î 0:%^EGLOT "@U.tm.FutInt@"  > IALIST ; !"
-< 0:w 0:î 0:%-      "@U.tm.FutInt@"  > IALIST ; !"
+<                   "@U.tense.Prs@"     > IALIST ; !"
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IALIST ; !" removed hyph
+< 0:k 0:î 0:%-      "@U.tense.Prt@"     > IALIST ; !
+< 0:k 0:a 0:%^EGLOT "@U.mood.FutDef@"  > IALIST ; !"
+< 0:k 0:a 0:%-      "@U.mood.FutDef@"  > IALIST ; !"
+< 0:w 0:î 0:%^EGLOT "@U.mood.FutInt@"  > IALIST ; !"
+< 0:w 0:î 0:%-      "@U.mood.FutInt@"  > IALIST ; !"
 
 
 LEXICON IA_FUTURE_CONDITIONAL
-< "@U.tm.FutCon@" > IALIST ;
-
+< "@U.mood.FutCon@" > IALIST ;
 
 
 LEXICON IA_CONJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
 
-<              "@U.verb.sbj@" "@U.tm.Prs@"    > IALIST ; !Present
-< 0:k 0:î 0:%- "@U.verb.sbj@" "@U.tm.Prt@"    > IALIST ;  ! Preterite,  Is this correct? TT
-< 0:w 0:î 0:%- "@U.verb.sbj@" "@U.tm.FutInt@" > IALIST ; ! Future Intentional
+<              "@U.mood.cnj@" "@U.tense.Prs@"    > IALIST ; !Present
+< 0:k 0:î 0:%- "@U.mood.cnj@" "@U.tense.Prt@"    > IALIST ;  ! Preterite,  Is this correct? TT
+< 0:w 0:î 0:%- "@U.mood.cnj@" "@U.mood.FutInt@" > IALIST ; ! Future Intentional
 
 
 LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
-@U.tm.imp@  IALIST ;
+@U.mood.imp@  IALIST ;
 
 
 LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
@@ -97,7 +96,7 @@ LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
 
 
 LEXICON II 
-<                "@U.tm.indep@"    > IISTEM ; ! Independent mode
+<                "@U.mood.indep@"    > IISTEM ; ! Independent mode
 <  0:ê 0:%-      "@U.verb.sbjPrs@" > IISTEM ; !"
 <  0:ê 0:%^EGLOT "@U.verb.sbjPrs@" > IISTEM ;
 
@@ -118,14 +117,14 @@ LEXICON TA_INDEPENDENT  !!= @CODE@ gives prefixes ni/ki/NULL and corresponding f
 <         "@U.perspref.NULL@"      > TALIST ; !"
 
 LEXICON TA_CONJUNCTIV !!= @CODE@ gives flag for conjunctive (no prefix)
-@U.verb.sbj@ TALIST ;
+@U.mood.cnj@ TALIST ;
 
 LEXICON TA_FUTURE  !!= @CODE@ gives flag for future (no prefix)
 @U.verb.fut@ TALIST ;
 
 
 LEXICON TA_IMPERATIV   !!= @CODE@ gives flag for TA imperative
-@U.tm.imp@  TALIST ;   
+@U.mood.imp@  TALIST ;   
 
 
 
