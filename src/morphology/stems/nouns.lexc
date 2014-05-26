@@ -26,6 +26,7 @@ LEXICON Nouns
 AN-IN ; ! Animate and inanimate nouns
 BODY ; ! Inanimate bodypart, get generic form with m-
 INALIENABLE ; !
+EXPER ;
 
 LEXICON AN-IN
 !! @LEXNAME@ for both animate and inanimate nouns, redirects to STEMS
@@ -40,6 +41,9 @@ LEXICON AN-IN
 < 0:k 0:i "@U.noun.2pl@"  0:"t2" > STEMS ; ! 2pl 
 < 0:o     "@U.noun.3pl@"  0:"t2" > STEMS ; ! 3pl
 < 0:o     "@U.noun.3ipl@" 0:"t2" > STEMS ; ! 3-plural-obviate
+
+LEXICON EXPER
+< 0:i "@U.noun.exp@"  > BODY ; ! 1
 
 
 LEXICON BODY
@@ -148,7 +152,7 @@ picikwâs ANDECL "apple" ; !GG
 !mistatim:miscacimosis ANDIMDERIVATION ;
 miscacimosis ANDIM ;
 pîsim ANDECL "month, sun" ;
-pahkwêsikan ANimDECL "bannock" ; ! Okimasis 134, GG 12 !yaml !Wolfart freqv list:  pahkwêsikanihk
+pahkwesikan ANimDECL "bannock" ; ! Okimasis 134, GG 12 !yaml !Wolfart freqv list:  pahkwêsikanihk
 minôs ANimDECL "cat" ; ! exstra -im in poss GG p 25
 !minôs+Dim:minôsis ANDIM "little cat" ;	!minôsisis GG p 17
 sîsîp ANimDECL "duck" ;	! exstra -im in poss GG p 25
@@ -223,7 +227,7 @@ wâskahikan INDECL "house" ; !GG
 atim ANIRRDECL "dog" ; ! -wak, -ohk, -wa !yaml  
 atim:têm ANIRRINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
 mistatim ANIRRDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
-mistatim:têm ANIRRINFL "horse-possessed" ; !"my horse" is nitêm, no other possessive inflection for mistatim. 
+mistatim+N+AN+Sg+Px1Sg:nitêm  # "horse-possessed" ; !"my horse" is nitêm, no other poss.infl.  
 mitâs:tâs ANIRRINFL "pants" ; !Wolfart's list: otâsihk
 mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
 mostos ANIRRINFL "cow" ;	!GG p 16: pl is mostoswak.
@@ -239,28 +243,28 @@ okosisimâw:ikosis ANKININFL "son" ;
 onîkihikomâw:inekihik ANKININFL "parent" ; ! NB! generic form? ninekihikwak onikihkomaw
 omosômimâw:imosôm ANKININFL "grandfather" ;
 ôhkomimâw:ôhkom ANKININFL "grandmother" ; !NB! twolc gives oô-
-nîtisân:îtisân ANKININFL "sibling" ; !NB! twolc gives oî-
+nîtisân:îtisân ANKININFLni "sibling" ; !NB! twolc gives oî-
 osîmisimâw:isîmis ANKININFL "younger sibling" ; 
 otôtemimâw:itôtem ANKININFL "friend" ; 
 okâwîmâw:ikâw ANKINiyINFL "mother" ;! -iy- dissappears Okimasis p. 140,  !yaml
 ohtâwîmâw:ohtâw ANKINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy
 omisimâw:imis ANKININFL "older sister" ;
-nikâwis:ikâwis ANKININFL "mother's sister" ; ! gen.form okâwisimâw??
+nikâwis:ikâwis ANKININFLni "mother's sister" ; ! gen.form okâwisimâw??
 osisimâw:isis ANKININFL "mother's brother, father's sister husband" ; 
 ohcâwîsimâw:ohcâwîs ANKININFL "father's brother" ; !NB! twolc gives oo-
-nihciwâmis:ihciwâmis ANKININFL "cousin" ;  ! gen.form ohciwâmisimâw??
+nihciwâmis:ihciwâmis ANKININFLni "cousin" ;  ! gen.form ohciwâmisimâw??
 ostêsimâw:istês ANKININFL "oldest brother" ;
-niscâs:iscâs ANKININFL "cousin/brother in law" ; ! gen.form??
-nîcimos:îcimos ANKININFL "mother's brother's son" ; ! gen.form?? !NB! twolc gives oî-
-nicâhkos:icâhkos ANKININFL "cousin/sister in law" ;! gen.form ocâhkosimâw??
-nôsisim:ôsisim ANKININFL "grandchild" ;!NB! twolc gives oô-  gen.form ôsisimimâw??
+niscâs:iscâs ANKININFLni "cousin/brother in law" ; ! gen.form??
+nîcimos:îcimos ANKININFLni "mother's brother's son" ; ! gen.form?? !NB! twolc gives oî-
+nicâhkos:icâhkos ANKININFLni "cousin/sister in law" ;! gen.form ocâhkosimâw??
+nôsisim:ôsisim ANKININFLni "grandchild" ;!NB! twolc gives oô-  gen.form ôsisimimâw??
 onâpêmimâw:inâpêm ANKININFL_MONOG "husband" ;
 wîkimâkan:iwîkimâkan ANKININFL_MONOG "spouse" ; 
 otehye:otehye INALIENABLEPOSS ;  ! 
 !otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
 !otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
 wîkiwân:îki INALIENABLEPOSS_SG "home" ; !GG !Wolfart's list: wîkiwâhk, nîkinâhk
-niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ;
+niskotâkay:iskotâkayni INALIENABLEPOSS "jacket" ;
 
 LEXICON BODYSTEMS ! dependent nouns
 !! @LEXNAME@ adds a affixmark and redirects to BODYSTEMLIST

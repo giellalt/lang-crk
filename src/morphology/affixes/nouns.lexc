@@ -128,10 +128,15 @@ LEXICON ANIRRDECL	!!= * @CODE@ for atim and mistatim.
 +N+AN+Der/Dim:%>os%^DIMis%> ANDIM ;
 
 
-LEXICON ANKININFL !!= * @CODE@ The lexicon gives generic forms
+LEXICON ANKININFL !!= * @CODE@ The lexicon gives generic forms to kinship terms
 < "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > SG_ ; !generic form
-< "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > PLak ; !generic form
+< "+N":i "+AN":m "+Pl":â 0:w "@U.noun.3ipl@" > PLak ; !generic form
  ANIRRINFL ;
+
+LEXICON ANKININFLni !!= * @CODE@ Lexicon for kinship terms, baseform = PxSg1
+< "+N":0 "+AN":0 "+Sg":%^POS "@U.noun.1sg@"  > SG_ ; !
+ ANIRRINFL ;
+
 
 LEXICON ANKINiyINFL  !!= * @CODE@ Special treatment for kinship nouns ending with -iy
 < "+N":î "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > SG_ ; !generic form
@@ -156,7 +161,8 @@ LEXICON ANKININFL_MONOG !!= * @CODE@ Lexicon with reduces possessive paradigm: o
 
 
 LEXICON ANIRRINFL !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
-!< "+N":0 "+AN":0 "@U.noun.dep@" > # ; !Base form for dep nouns
+!< "+N":0 "+AN":0 "@U.noun.abs@" > SG_ ; !Baseform for dep nouns
+ANABSDECL ;
 +N+AN+Sg: ANSUFF_SG ;
 +N+AN+Pl: ANSUFF_PL ;
 +N+AN+Der/Dim:%>is%^DIMis%> ANDIMIRR ;
@@ -292,7 +298,7 @@ LEXICON INABLGENERIC !!= * @CODE@ generic forms Sg, Pl, Loc and diminutives
 
 
 LEXICON INALIENABLEPOSS_SG !!= * @CODE@ inanimate possessive declension, only Sg
-< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" > # ; !Base form for dep nouns
+< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" > # ; !Baseform for dep nouns
 +N+IN+Sg:%> INSUFF_SG ;
 
 !! !!Diminutive suffixes
