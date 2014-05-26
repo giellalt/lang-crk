@@ -64,8 +64,11 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 
 LEXICON IATNS
 <              "@U.tm.Prs@"     > IALIST ; !"
-< 0:k 0:î 0:%- "@U.tm.Prt@"     > IALIST ; !"
+< 0:k 0:î 0:%^EGLOT "@U.tm.Prt@"  > IALIST ; !" removed hyph
+< 0:k 0:î 0:%- "@U.tm.Prt@"     > IALIST ; !
+< 0:k 0:a 0:%^EGLOT "@U.tm.FutDef@"  > IALIST ; !"
 < 0:k 0:a 0:%- "@U.tm.FutDef@"  > IALIST ; !"
+< 0:w 0:î 0:%^EGLOT "@U.tm.FutInt@"  > IALIST ; !"
 < 0:w 0:î 0:%- "@U.tm.FutInt@"  > IALIST ; !"
 
 
@@ -80,9 +83,9 @@ LEXICON IALIST
 
 LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
 
-<              "@U.tm.Prs@"    > IAPREVERB ; !Present
-< 0:k 0:î 0:%- "@U.tm.Prt@"    > IAPREVERB ;  ! Preterite,  Is this correct? TT
-< 0:w 0:î 0:%- "@U.tm.FutInt@" > IAPREVERB ; ! Future Intentional
+<              "@U.verb.sbj@" "@U.tm.Prs@"    > IALIST ; !Present
+< 0:k 0:î 0:%- "@U.verb.sbj@" "@U.tm.Prt@"    > IALIST ;  ! Preterite,  Is this correct? TT
+< 0:w 0:î 0:%- "@U.verb.sbj@" "@U.tm.FutInt@" > IALIST ; ! Future Intentional
 
 
 
@@ -172,15 +175,15 @@ kihci   IASTEM "large" ;
 
 
 LEXICON IASTEM
-nipâw:nipâ IACONJ "sleep" ; !!= @CODE@ GG
+nipâw:nipâ IACONJw "sleep" ; !!= @CODE@ GG
 mâto IACONJ "cry" ; !!= @CODE@ GG
 mîciso IACONJ "eat" ; !!= @CODE@ Variation in length of first vowel, here following Okimâsis. !GG
 waniskâw IACONJ "rise, get up" ; !!= @CODE@ 
 micisiw IACONJ "eat" ; !!= @CODE@
 nohtehkatew IACONJ "be hungry" ; !!= @CODE@
-atoskêw:atoskê IACONJ "work" ; !!= @CODE@ test
-akwahow:akwaho IACONJ "to cover oneself" ; ! Source: Wolvengrey dictionary
-nêhiyawêw:nêhiyawê IACONJ "work" ; !!= @CODE@
+atoskêw:atoskê IACONJw "work" ; !!= @CODE@ test
+akwahow:akwaho IACONJw "to cover oneself" ; ! Source: Wolvengrey dictionary
+nêhiyawêw:nêhiyawê IACONJw "work" ; !!= @CODE@
 pimohte IACONJ "walk" ; !GG
 ximohtâ IACONJ "testing " ; !GG
 pîkiskwe IACONJ "speak" ; !GG
@@ -208,18 +211,18 @@ pihtokwe IACONJ "enter" ; !GG
 
 ! colour terms
 
-wâpiskisiw:wâpiskisi IACONJ "be white" ;
-kaskitêsiw:kaskitêsi IACONJ "be black" ;
-kaskitêwinâkosiw:kaskitêwinâkosi IACONJ "appear black" ;
-mihkosiw:mihkosi  IACONJ "be red" ;
-sîpihkosiw:sîpihkosi  IACONJ "be blue" ;
-askitahkosiw:askitahkosi  IACONJ "be green" ;
-wâposâwisiw:wâposâwisi  IACONJ "be yellow" ;
-osâwisiw:osâwisi  IACONJ "be orange" ;
-nîpâmâyâtisiw:nîpâmâyâtisi  IACONJ "be purple" ;
-wâpinâkosiw:wâpinâkosi IACONJ "appear white" ;
+wâpiskisiw:wâpiskisi IACONJw "be white" ;
+kaskitêsiw:kaskitêsi IACONJw "be black" ;
+kaskitêwinâkosiw:kaskitêwinâkosi IACONJw "appear black" ;
+mihkosiw:mihkosi  IACONJw "be red" ;
+sîpihkosiw:sîpihkosi  IACONJw "be blue" ;
+askitahkosiw:askitahkosi  IACONJw "be green" ;
+wâposâwisiw:wâposâwisi  IACONJw "be yellow" ;
+osâwisiw:osâwisi  IACONJw "be orange" ;
+nîpâmâyâtisiw:nîpâmâyâtisi  IACONJw "be purple" ;
+wâpinâkosiw:wâpinâkosi IACONJw "appear white" ;
 
-itasinâsw:itansinâso IACONJ "what colour is" ;
+itasinâsw:itansinâso IACONJw "what colour is" ;
 
 LEXICON IISTEM   !!= @CODE@  = VII
 ! Note: the final consonant here is dropped in the future conditional
