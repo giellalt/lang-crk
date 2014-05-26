@@ -55,9 +55,9 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 
 !PREFIX
 
-< 0:n 0:i "@U.verb.NI@"  0:"t2" > IATNS ; !"
-< 0:k 0:i "@U.verb.KI@"  0:"t2" > IATNS ; !"
-<         "@U.verb.NULL@"         > IATNS ; !"
+< 0:n 0:i "@U.perspref.NI@"  0:"t2" > IATNS ; !"
+< 0:k 0:i "@U.perspref.KI@"  0:"t2" > IATNS ; !"
+<         "@U.perspref.NULL@"       > IATNS ; !"
 
 !Past/Preterite tense
 
@@ -75,10 +75,6 @@ LEXICON IA_FUTURE_CONDITIONAL
 < "@U.tm.FutCon@" > IALIST ;
 
 
-LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
- :%> IAPREVERB ;
-
-
 
 LEXICON IA_CONJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
 
@@ -87,9 +83,13 @@ LEXICON IA_CONJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in
 < 0:w 0:î 0:%- "@U.verb.sbj@" "@U.tm.FutInt@" > IALIST ; ! Future Intentional
 
 
-
 LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
-@U.verb.NULL@  IAPREVERB ;
+@U.tm.imp@  IALIST ;
+
+
+LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
+ :%> IAPREVERB ;
+
 
 !! !! Intransitive inanimate
 !     ====================
@@ -97,7 +97,7 @@ LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in 
 
 
 LEXICON II 
-<                "@U.verb.NULL@"   > IISTEM ; ! Independent mode
+<                "@U.tm.indep@"    > IISTEM ; ! Independent mode
 <  0:ê 0:%-      "@U.verb.sbjPrs@" > IISTEM ; !"
 <  0:ê 0:%^EGLOT "@U.verb.sbjPrs@" > IISTEM ;
 
@@ -113,9 +113,9 @@ LEXICON TA  !!= @CODE@ divides TA in independent, conjunctive, imperative and fu
           TA_IMPERATIV ;
 
 LEXICON TA_INDEPENDENT  !!= @CODE@ gives prefixes ni/ki/NULL and corresponding flags
-< 0:n 0:i "@U.verb.NI@" 0:"t2" > TALIST ; !"
-< 0:k 0:i "@U.verb.KI@" 0:"t2" > TALIST ; !"
-<         "@U.verb.NULL@"      > TALIST ; !"
+< 0:n 0:i "@U.perspref.NI@" 0:"t2" > TALIST ; !"
+< 0:k 0:i "@U.perspref.KI@" 0:"t2" > TALIST ; !"
+<         "@U.perspref.NULL@"      > TALIST ; !"
 
 LEXICON TA_CONJUNCTIV !!= @CODE@ gives flag for conjunctive (no prefix)
 @U.verb.sbj@ TALIST ;
@@ -124,12 +124,8 @@ LEXICON TA_FUTURE  !!= @CODE@ gives flag for future (no prefix)
 @U.verb.fut@ TALIST ;
 
 
-LEXICON TA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
-
-@U.verb.NULL@  TALIST ;
-@U.verb.NULL@  TALIST ;   ! exclusive Pl
-@U.verb.NULL@  TALIST ;   
-               TA_FUTURE ;
+LEXICON TA_IMPERATIV   !!= @CODE@ gives flag for TA imperative
+@U.tm.imp@  TALIST ;   
 
 
 
