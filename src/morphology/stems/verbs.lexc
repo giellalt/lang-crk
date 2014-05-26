@@ -44,7 +44,7 @@ TA ; ! transitive animate
 !! !! Intransitive animate
 !     ====================
 
-LEXICON IA   !!= @CODE@ divides in independent, conjunctive, imperative and future conditional
+LEXICON IA   !!= @CODE@ divides IA in independent, conjunctive, imperative and future conditional
           IA_INDEPENDENT ;		  !!= * @CODE@
 :ê-       IA_CONJUNCTIV ;		  !!= * @CODE@ , note: two versions of conjunctive
 :ê%^EGLOT IA_CONJUNCTIV ;		  !!= * @CODE@ 
@@ -75,7 +75,7 @@ LEXICON IA_FUTURE_CONDITIONAL
 < "@U.tm.FutCon@" > IALIST ;
 
 
-LEXICON IALIST
+LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
  :%> IAPREVERB ;
 
 
@@ -105,24 +105,22 @@ LEXICON II
 !! !! Transitive animate
 !     ==================
 
-LEXICON TA  !!= @CODE@ is still not written
-
+LEXICON TA  !!= @CODE@ divides TA in independent, conjunctive, imperative and future conditional
           TA_INDEPENDENT ;
 :ê-       TA_CONJUNCTIV ;
 :ê%^EGLOT TA_CONJUNCTIV ;
           TA_FUTURE ;
           TA_IMPERATIV ;
 
-LEXICON TA_INDEPENDENT
-
+LEXICON TA_INDEPENDENT  !!= @CODE@ gives prefixes ni/ki/NULL and corresponding flags
 < 0:n 0:i "@U.verb.NI@" 0:"t2" > TALIST ; !"
 < 0:k 0:i "@U.verb.KI@" 0:"t2" > TALIST ; !"
 <         "@U.verb.NULL@"      > TALIST ; !"
 
-LEXICON TA_CONJUNCTIV 
+LEXICON TA_CONJUNCTIV !!= @CODE@ gives flag for conjunctive (no prefix)
 @U.verb.sbj@ TALIST ;
 
-LEXICON TA_FUTURE 
+LEXICON TA_FUTURE  !!= @CODE@ gives flag for future (no prefix)
 @U.verb.fut@ TALIST ;
 
 
@@ -135,7 +133,7 @@ LEXICON TA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in 
 
 
 
-LEXICON TALIST
+LEXICON TALIST  !!= @CODE@ just adds the prefix boundary
  :%> TASTEM ;
 
 

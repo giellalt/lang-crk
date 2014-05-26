@@ -395,14 +395,18 @@ The Plains Cree verbs are divided in four groups:
 # TA: Transitive animate
 # TI: Transitive inanimate
 
- LEXICON Verbs  divides the verbs in four transitivity classes
+ LEXICON Verbs  divides the verbs in these four transitivity classes
 
 
 
 Intransitive animate
 
- LEXICON IA    divides in independent, subjunctive and imperative
-
+ LEXICON IA    divides IA in independent, conjunctive, imperative and future conditional
+ *           IA_INDEPENDENT ;		  
+ * :ê-       IA_CONJUNCTIV ;		   , note: two versions of conjunctive
+ * :ê%^EGLOT IA_CONJUNCTIV ;		   
+ *           IA_IMPERATIV ;		  
+ *           IA_FUTURE_CONDITIONAL ; 
 
  LEXICON IA_INDEPENDENT    gives prefixes and flags for person-number in indicative
 
@@ -413,10 +417,11 @@ Intransitive animate
 
 
 
+ LEXICON IALIST   just adds the prefix boundary
 
 
 
- LEXICON IA_SUBJUNCTIV    gives prefixes and flags for person-number in subjunctive
+ LEXICON IA_CONJUNCTIV    gives prefixes and flags for person-number in subjunctive
 
 
 
@@ -431,16 +436,21 @@ Intransitive inanimate
 
 Transitive animate
 
- LEXICON TA   is still not written
+ LEXICON TA   divides TA in independent, conjunctive, imperative and future conditional
 
+ LEXICON TA_INDEPENDENT   gives prefixes ni/ki/NULL and corresponding flags
 
+ LEXICON TA_CONJUNCTIV  gives flag for conjunctive (no prefix)
 
-
-
+ LEXICON TA_FUTURE   gives flag for future (no prefix)
 
 
  LEXICON TA_IMPERATIV    gives prefixes and flags for person-number in imperative
 
+
+
+
+ LEXICON TALIST   just adds the prefix boundary
 
 
 Transitive inanimate
