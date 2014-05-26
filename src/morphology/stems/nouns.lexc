@@ -63,6 +63,7 @@ LEXICON BODY
 
 LEXICON INALIENABLE
 !! @LEXNAME@ redirects to INALIENABLESTEMS
+@U.noun.abs@ INALIENABLESTEMS ; 
 < 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
 < 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
@@ -164,6 +165,9 @@ amisk ANimDECL "beaver" ; !yaml
 mistikw:mistik ANkwDECL "stick" ; !Wolfart freqv list: mistikohk
 askihkw:askihk ANkwDECL "pail" ;
 mahkahkw:mahkahk ANkwDECL "tub/barrel" ; !Wolfart freqv list: mahkahkohk
+mostos ANkwDECL "cow" ;	!GG p 16: pl is mostoswak, are there other nouns of this kind?
+mostos+N+AN+Sg:mostos NOPREFIX "cow" ;	!baseform
+
 
 tehtapiwin INDECL "chair" ; ! GGI p 26 !dim cehcapiwinisis GGI s 46
 atâwewikamik INimDECL "store" ; ! GGI p 26, GGII 25  !Wolfart freqv list: atâwêwikamikohk
@@ -224,13 +228,14 @@ mîkiwâhp INDECL "tipi" ; !Wolfart's list: mîkiwâhpihk
 wîkiwin INDECL "home" ;
 wayasit INDECLis "hoof" ; !yaml !possibly -is in Dim
 wâskahikan INDECL "house" ; !GG
-atim ANIRRDECL "dog" ; ! -wak, -ohk, -wa !yaml  
-atim:têm ANIRRINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
-mistatim ANIRRDECL "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
-mistatim+N+AN+Sg+Px1Sg:nitêm  # "horse-possessed" ; !"my horse" is nitêm, no other poss.infl.  
+atim ANDECLatim "dog" ; ! -wak, -ohk, -wa !yaml  
+atim:têm ANPOSSatim "dog-possessed" ; !this is the stem for atim when it is inflected for person
+mistatim ANDECLatim "horse" ; ! mistatimwa Intr.Cree s. 46 Dim: miscacimosis
+mistatim+N+AN+Sg+Px1Sg:nitêm NOPREFIX "horse-possessed" ; !"my horse" is nitêm, no other poss.infl.  
 mitâs:tâs ANIRRINFL "pants" ; !Wolfart's list: otâsihk
+mitâs+N+AN+Sg:mitâs NOPREFIX "pants" ; !Wolfart's list: otâsihk
 mitîhiy:tîhiy ANIRRINFL "shoulderblade" ; !OBS -iy
-mostos ANIRRINFL "cow" ;	!GG p 16: pl is mostoswak.
+mitîhiy+N+AN+Sg:mitîhiy NOPREFIX "shoulderblade" ; !OBS -iy
 
 LEXICON INALIENABLESTEMS  ! dependent nouns
 !! @LEXNAME@ adds a affixmark and redirects to INABLESTEMLIST
@@ -259,12 +264,13 @@ nîcimos:îcimos ANKININFLni "mother's brother's son" ; ! gen.form?? !NB! twolc 
 nicâhkos:icâhkos ANKININFLni "cousin/sister in law" ;! gen.form ocâhkosimâw??
 nôsisim:ôsisim ANKININFLni "grandchild" ;!NB! twolc gives oô-  gen.form ôsisimimâw??
 onâpêmimâw:inâpêm ANKININFL_MONOG "husband" ;
-wîkimâkan:iwîkimâkan ANKININFL_MONOG "spouse" ; 
+!wîkimâkan:îkimâkan ANKININFL_MONOG "spouse" ;  !OBS!
 otehye:otehye INALIENABLEPOSS ;  ! 
 !otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
 !otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
 wîkiwân:îki INALIENABLEPOSS_SG "home" ; !GG !Wolfart's list: wîkiwâhk, nîkinâhk
-niskotâkay:iskotâkayni INALIENABLEPOSS "jacket" ;
+wîkiwân+N+IN+Sg:wîkiwân NOPREFIX "home" ;
+niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ; !OBS!
 
 LEXICON BODYSTEMS ! dependent nouns
 !! @LEXNAME@ adds a affixmark and redirects to BODYSTEMLIST
@@ -273,6 +279,7 @@ LEXICON BODYSTEMS ! dependent nouns
 LEXICON BODYSTEMLIST
 !! @LEXNAME@ for dependent bodypartnouns. It generates a generic form m-
 maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml
+maniway+N+IN+Sg:maniway NOPREFIX "cheek" ; !yaml
 mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml
 mahkwan:ahkwan INALIENABLEPOSS "heel" ;
 mispiton:ispiton INALIENABLEPOSS "arm" ; !yaml
