@@ -60,13 +60,13 @@ Verbal MSP
  * +1Sg     first singular
  * +2Sg     etc
  * +3Sg    
- * +3oSg    3o is obviative,
+ * +4Sg    3o is obviative,
  * +3iSg    3i is indefinite
 
  * +1Pl     1Pl is exclusive plural (I, them, not you)
  * +2Pl    
  * +3Pl    
- * +3oPl   
+ * +4Pl   
  * +3iPl   
  * +12Pl    12Pl is inclusive plural (I, you, ...)
 
@@ -74,13 +74,13 @@ Verbal MSP
  * +2SgO   
  * +3SgO   
  * +SgO    
- * +3oSgO   obviative with objective conjugation
+ * +4SgO   obviative with objective conjugation
  * +3iSgO  
  * +1PlO   
  * +P2lO   
  * +3PlO   
  * +PlO    
- * +3oPlO  
+ * +4PlO  
  * +3iPlO  
 
  * +Inf     infinitive (infinite?)
@@ -95,12 +95,12 @@ Nominal MSP
  * +Px1Sg	  person prefixes for nouns
  * +Px2Sg	 
  * +Px3Sg	 
- * +Px3iSg	 
+ * +Px4Sg	 
  * +Px1Pl	  obviative
  * +Px12Pl	  inclusive
  * +Px2Pl	 
  * +Px3Pl	 
- * +Px3iPl	 
+ * +Px4Pl	 
  * +Dim/Der 
 
  * +IA       intransitive with animate subject, 
@@ -122,6 +122,7 @@ Nominal MSP
 
  * %^LC      Locative
  * t2 		  Prefix in possessives 
+ * h2 		  Prefix in possessives 
  * i2 		  Possessive element 
 
  * ^%EGLOT    glottal stop after e, for eh- in conjunctive mood
@@ -180,4 +181,5 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
  * Pronoun ;             
  * Punctuation ;         
  * Particles ;           
+ * Numerals ;           
 

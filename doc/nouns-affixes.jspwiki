@@ -18,7 +18,7 @@
  * LEXICON ANimDECLw  for the animate declension, poss.-im-. For nouns with final -w when poss -im- comes before diminutive. We could do the job in twolc instead. 
 
 
- * LEXICON ANimDIMw  the diminutives with poss.-im-.
+ * LEXICON ANimDIMw  poss.-im- after the the diminutive tag
 
 
  * LEXICON ANDECLisis  for the animate declension, -isis diminutive
@@ -30,7 +30,7 @@
  * LEXICON AN-NOPOSSw  for the animate absolute declension and diminutive, ôhow
 
 
- * LEXICON ANDIMDERIVATION  for hardcoded diminutives
+ * LEXICON ANDIMDERIVATION  for hardcoded noun:diminutive
 
  * LEXICON ANDIM  both for lexicalised and derivated diminutives
 
@@ -38,15 +38,20 @@
 
 
 
- * LEXICON ANIRRDECL	 for atim and mistatim.
+ * LEXICON ANDECLatim	 for atim and mistatim.
 
 
- * LEXICON ANKININFL  The lexicon gives a base form N+AN+Sg (if we want it)
+ * LEXICON ANKININFL  The lexicon gives generic forms to kinship terms
 
- * LEXICON ANKINiyINFL   Special treatment for nouns ending with -iy
+ * LEXICON ANKININFLni  Lexicon for kinship terms, baseform = PxSg1
 
 
- * LEXICON ANKININFL_MONOG  No bigami
+ * LEXICON ANKINiyINFL   Special treatment for kinship nouns ending with -iy
+
+
+ * LEXICON ANKININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
+
+ * LEXICON ANPOSSatim  is also there to handle the highly irregular atim and mistatim
 
 
  * LEXICON ANIRRINFL  is also there to handle the highly irregular atim and mistatim
@@ -57,29 +62,29 @@
 
 !!The declinations for Inanimates
 
- * LEXICON INimDECL  for the animate declension, possessive element Okimasis p. 134
+ * LEXICON INimDECL  for the animate declension, possessive element 
 
 
- * LEXICON INimDIM  the diminutives with possessive element Okimasis p. 134
+ * LEXICON INimDIM  the diminutives with possessive element 
 
 
- * LEXICON INimDECLw  for the animate declension, possessive element Okimasis p. 134
+ * LEXICON INimDECLw  for the animate declension, possessive element
 
- * LEXICON INimDECLy  for the animate declension, possessive element Okimasis p. 134
+ * LEXICON INimDECLy  for the animate declension, possessive element
 
- * LEXICON INimDIMw  the diminutives with possessive element Okimasis p. 134
+ * LEXICON INimDIMw  the diminutives with possessive element
 
 
- * LEXICON INDECL  for the inanimate declension
+ * LEXICON INDECL  for the inanimate declension, diminutive: -is- and -isis-
 
- * LEXICON INDECLisis  for the inanimate declension
+ * LEXICON INDECLisis  for the inanimate declension, diminutive: -isis-
 
- * LEXICON INDECLis  for the inanimate declension
+ * LEXICON INDECLis  for the inanimate declension, diminutive: -is-
 
  * LEXICON INDECLosi  for the inanimate declension of ôsi, an irregular noun
 
 
- * LEXICON INDIMDERIVATION 
+ * LEXICON INDIMDERIVATION  for hardcoded noun:diminutive
 
 
  * LEXICON INDIM  for the inanimate diminutives
@@ -89,10 +94,11 @@
 
 
 
- * LEXICON INALIENABLEDERIVATION 
+ * LEXICON INALIENABLEDERIVATION   for hardcoded noun:diminutive for inalienables
 
  * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
 
+ * LEXICON INABLGENERIC  generic forms Sg, Pl, Loc and diminutives
 
 
 
@@ -113,6 +119,7 @@
 
  * LEXICON ANSUFF_PL  
 
+ * LEXICON ANSUFF_LOC 
 
 
 
@@ -128,10 +135,13 @@
 
 
 
+ * LEXICON INSUFF_LOC 
 
 
+ * LEXICON ANiySUFF_SG  
 
 
+ * LEXICON ANiySUFF_PL 
 
 
 !Singular/plural possessed suffixes

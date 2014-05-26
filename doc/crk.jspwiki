@@ -71,13 +71,13 @@ Verbal MSP
  * +1Sg     first singular
  * +2Sg     etc
  * +3Sg    
- * +3oSg    3o is obviative,
+ * +4Sg    3o is obviative,
  * +3iSg    3i is indefinite
 
  * +1Pl     1Pl is exclusive plural (I, them, not you)
  * +2Pl    
  * +3Pl    
- * +3oPl   
+ * +4Pl   
  * +3iPl   
  * +12Pl    12Pl is inclusive plural (I, you, ...)
 
@@ -85,13 +85,13 @@ Verbal MSP
  * +2SgO   
  * +3SgO   
  * +SgO    
- * +3oSgO   obviative with objective conjugation
+ * +4SgO   obviative with objective conjugation
  * +3iSgO  
  * +1PlO   
  * +P2lO   
  * +3PlO   
  * +PlO    
- * +3oPlO  
+ * +4PlO  
  * +3iPlO  
 
  * +Inf     infinitive (infinite?)
@@ -106,12 +106,12 @@ Nominal MSP
  * +Px1Sg	  person prefixes for nouns
  * +Px2Sg	 
  * +Px3Sg	 
- * +Px3iSg	 
+ * +Px4Sg	 
  * +Px1Pl	  obviative
  * +Px12Pl	  inclusive
  * +Px2Pl	 
  * +Px3Pl	 
- * +Px3iPl	 
+ * +Px4Pl	 
  * +Dim/Der 
 
  * +IA       intransitive with animate subject, 
@@ -133,6 +133,7 @@ Nominal MSP
 
  * %^LC      Locative
  * t2 		  Prefix in possessives 
+ * h2 		  Prefix in possessives 
  * i2 		  Possessive element 
 
  * ^%EGLOT    glottal stop after e, for eh- in conjunctive mood
@@ -191,6 +192,7 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
  * Pronoun ;             
  * Punctuation ;         
  * Particles ;           
+ * Numerals ;           
 
 
  *  t2:0       t between prefix and vowel-initial stem
@@ -215,6 +217,7 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
 
 __h glottal stop for initial vowel stems in Conjunctive__
+
 
 __Suffix vowel deletion in vowel final stems __
 
@@ -246,7 +249,7 @@ __locative alternation naahk 1		__ adds nâhk after êw/ôw, change w to n. Okim
 
 
 
-__possessive prefixes__ 
+__t2:t between prefix and vowel__ 
 
 __i2:o in possessive element__ 
 
@@ -277,9 +280,8 @@ __Double consonant deletion__
 __Diminutives - all stem t change to c __ Okimasis 2004: 13, Rule 2.
 
 
-__In Vow+y final stems with Diminutives, part 1: delete y __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
+__In Vow+y/w final stems with Diminutives, part 1: delete y/w __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
 
-__In Vow+w final stems with Diminutives, part 1: delete w __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
 
 __In Vow+y/w final stems with Diminutives, part 2: lengthen stem final vowel __ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
 
@@ -327,6 +329,7 @@ AN-IN for both animate and inanimate nouns, redirects to STEMS
 
 
 
+
 BODY for bodyparts, similar to INALIENABLE but it give the generic form m-. Redirects to BODYSTEMS. 
 
 
@@ -342,6 +345,7 @@ INALIENABLE redirects to INALIENABLESTEMS
 STEMS add a affixmark and redirects to STEMLIST
 
 STEMLIST contains most of the nouns
+
 
 
 INALIENABLESTEMS adds a affixmark and redirects to INABLESTEMLIST
@@ -454,14 +458,14 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
- nipâw:nipâ IACONJ "sleep" ;  GG
+ nipâw:nipâ IACONJw "sleep" ;  GG
  mâto IACONJ "cry" ;  GG
  mîciso IACONJ "eat" ;  Variation in length of first vowel, here following Okimâsis. !GG
  waniskâw IACONJ "rise, get up" ;  
  micisiw IACONJ "eat" ; 
  nohtehkatew IACONJ "be hungry" ; 
- atoskêw:atoskê IACONJ "work" ;  test
- nêhiyawêw:nêhiyawê IACONJ "work" ; 
+ atoskêw:atoskê IACONJw "work" ;  test
+ nêhiyawêw:nêhiyawê IACONJw "work" ; 
 
 
 
@@ -496,7 +500,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
  * LEXICON ANimDECLw  for the animate declension, poss.-im-. For nouns with final -w when poss -im- comes before diminutive. We could do the job in twolc instead. 
 
 
- * LEXICON ANimDIMw  the diminutives with poss.-im-.
+ * LEXICON ANimDIMw  poss.-im- after the the diminutive tag
 
 
  * LEXICON ANDECLisis  for the animate declension, -isis diminutive
@@ -508,7 +512,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
  * LEXICON AN-NOPOSSw  for the animate absolute declension and diminutive, ôhow
 
 
- * LEXICON ANDIMDERIVATION  for hardcoded diminutives
+ * LEXICON ANDIMDERIVATION  for hardcoded noun:diminutive
 
  * LEXICON ANDIM  both for lexicalised and derivated diminutives
 
@@ -516,15 +520,20 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
- * LEXICON ANIRRDECL	 for atim and mistatim.
+ * LEXICON ANDECLatim	 for atim and mistatim.
 
 
- * LEXICON ANKININFL  The lexicon gives a base form N+AN+Sg (if we want it)
+ * LEXICON ANKININFL  The lexicon gives generic forms to kinship terms
 
- * LEXICON ANKINiyINFL   Special treatment for nouns ending with -iy
+ * LEXICON ANKININFLni  Lexicon for kinship terms, baseform = PxSg1
 
 
- * LEXICON ANKININFL_MONOG  No bigami
+ * LEXICON ANKINiyINFL   Special treatment for kinship nouns ending with -iy
+
+
+ * LEXICON ANKININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
+
+ * LEXICON ANPOSSatim  is also there to handle the highly irregular atim and mistatim
 
 
  * LEXICON ANIRRINFL  is also there to handle the highly irregular atim and mistatim
@@ -535,29 +544,29 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 !!The declinations for Inanimates
 
- * LEXICON INimDECL  for the animate declension, possessive element Okimasis p. 134
+ * LEXICON INimDECL  for the animate declension, possessive element 
 
 
- * LEXICON INimDIM  the diminutives with possessive element Okimasis p. 134
+ * LEXICON INimDIM  the diminutives with possessive element 
 
 
- * LEXICON INimDECLw  for the animate declension, possessive element Okimasis p. 134
+ * LEXICON INimDECLw  for the animate declension, possessive element
 
- * LEXICON INimDECLy  for the animate declension, possessive element Okimasis p. 134
+ * LEXICON INimDECLy  for the animate declension, possessive element
 
- * LEXICON INimDIMw  the diminutives with possessive element Okimasis p. 134
+ * LEXICON INimDIMw  the diminutives with possessive element
 
 
- * LEXICON INDECL  for the inanimate declension
+ * LEXICON INDECL  for the inanimate declension, diminutive: -is- and -isis-
 
- * LEXICON INDECLisis  for the inanimate declension
+ * LEXICON INDECLisis  for the inanimate declension, diminutive: -isis-
 
- * LEXICON INDECLis  for the inanimate declension
+ * LEXICON INDECLis  for the inanimate declension, diminutive: -is-
 
  * LEXICON INDECLosi  for the inanimate declension of ôsi, an irregular noun
 
 
- * LEXICON INDIMDERIVATION 
+ * LEXICON INDIMDERIVATION  for hardcoded noun:diminutive
 
 
  * LEXICON INDIM  for the inanimate diminutives
@@ -567,10 +576,11 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
- * LEXICON INALIENABLEDERIVATION 
+ * LEXICON INALIENABLEDERIVATION   for hardcoded noun:diminutive for inalienables
 
  * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
 
+ * LEXICON INABLGENERIC  generic forms Sg, Pl, Loc and diminutives
 
 
 
@@ -591,6 +601,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON ANSUFF_PL  
 
+ * LEXICON ANSUFF_LOC 
 
 
 
@@ -606,10 +617,13 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
+ * LEXICON INSUFF_LOC 
 
 
+ * LEXICON ANiySUFF_SG  
 
 
+ * LEXICON ANiySUFF_PL 
 
 
 !Singular/plural possessed suffixes
@@ -664,6 +678,11 @@ Intransitive animate (IA)
 
  LEXICON IACONJ  splits in 4 moods
 
+ LEXICON IACONJw  splits in 4 moods, for verbs with final -w
+
+
+
+
  LEXICON IA_IND  First mode, indicative
 
 
@@ -676,6 +695,9 @@ Intransitive animate (IA)
 
 
  LEXICON IA_SBJ  Third mode, subjunctive
+
+
+ LEXICON subjunctives  gives flag diacritic and directs to subjunctive person suffixes
 
 
 
