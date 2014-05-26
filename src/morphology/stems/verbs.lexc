@@ -65,7 +65,7 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 LEXICON IATNS
 <              "@U.tm.Prs@"     > IALIST ; !"
 < 0:k 0:î 0:%^EGLOT "@U.tm.Prt@"  > IALIST ; !" removed hyph
-!< 0:k 0:î 0:%- "@U.tm.Prt@"     > IALIST ; !
+< 0:k 0:î 0:%- "@U.tm.Prt@"     > IALIST ; !
 < 0:k 0:a 0:%^EGLOT "@U.tm.FutDef@"  > IALIST ; !"
 < 0:k 0:a 0:%- "@U.tm.FutDef@"  > IALIST ; !"
 < 0:w 0:î 0:%^EGLOT "@U.tm.FutInt@"  > IALIST ; !"
@@ -138,7 +138,7 @@ LEXICON TA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in 
 !! !! Transitive inanimate
 
 
-!LEXICON TI  != @CODE@ is still not written, and perhaps does not exist.
+!LEXICON TI  ! is still not written, and perhaps does not exist.
 !# ;
 
 
