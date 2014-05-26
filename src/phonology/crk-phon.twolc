@@ -41,7 +41,8 @@ Rules
 
 "h glottal stop for initial vowel stems in Conjunctive"
 !! __@RULENAME@__
-%^EGLOT:h <=> _ :Vow ;
+%^EGLOT:h <=>  _  Vow: ;
+
 
 "Suffix vowel deletion in vowel final stems" 
 !! __@RULENAME@__
@@ -119,9 +120,9 @@ w:n <=> [ ê | ô ] _  %>:0 i: %^LC:0  ;
 !!i:0 <=> Vow %> _ %^LC:0  ;
 
 
-"possessive prefixes"
+"t2:t between prefix and vowel"
 !! __@RULENAME@__ 
-t2:t <=> _ %>:0 Vow ;
+t2:t  <=> _ %>:0 Vow ;
 
 "i2:o in possessive element"
 !! __@RULENAME@__ 
@@ -175,20 +176,17 @@ Cx:0 <=> _ %>:0 Cx ;
 
 "Diminutives - all stem t change to c" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
-!t:c <=> [ h | Vow | %>:0 | i:0 ]  _ Vow Dim .#. ;  ! iskwâhtêm  ocânisisisa
 t:c <=>  _ :*  %>:0 Dim .#. ; ! cehcapiwinisis
 
 !"Diminutives - t2 changes to c" 
 !  unsure about this
 !t2:c <=>  _ %>:0 Vow Dim .#. ; 
 
-"In Vow+y final stems with Diminutives, part 1: delete y" 
+"In Vow+y/w final stems with Diminutives, part 1: delete y/w" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
-y:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
+Vx:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
+	where Vx in (w y) ;
 
-"In Vow+w final stems with Diminutives, part 1: delete w" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
-w:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
 
 "In Vow+y/w final stems with Diminutives, part 2: lengthen stem final vowel" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
