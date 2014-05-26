@@ -29,10 +29,19 @@
 
 LEXICON IACONJ !!= @CODE@ splits in 4 moods
 < "+V":0 "+IA":0 "@U.tm.Prs@" "@U.verb.NULL@" >     # ; !Baseform
+ IACONJ-CONT ;
+ 
+LEXICON IACONJw !!= @CODE@ splits in 4 moods, for verbs with final -w
+< "+V":w "+IA":0 "@U.tm.Prs@" "@U.verb.NULL@" >     # ; !Baseform
+ IACONJ-CONT ;
+
+
+LEXICON IACONJ-CONT
 +V+IA+Ind:      IA_IND ;
 +V+IA+Cnj:      IA_SBJ ; 
 +V+IA:%>        IA_IMP ;
 +V+IA+Fut+Cond: IA_FUT_CON ;
+
 
 LEXICON IA_IND !!= @CODE@ First mode, indicative
 < "@U.tm.Prs@"    "+Prs":%>          > IA_IND_PRS ; !
@@ -74,7 +83,12 @@ LEXICON IA_SBJ !!= @CODE@ Third mode, subjunctive
 < "+Prt":0          "@U.tm.Prt@"    > subjunctives ; !"
 < "+Fut":0 "+Int":0 "@U.tm.FutInt@" > subjunctives ; !"
 
-LEXICON subjunctives
+
+LEXICON subjunctives !!= @CODE@ gives flag diacritic and directs to subjunctive person suffixes
+@U.verb.sbj@ IA_SBJ_SUF ;
+
+
+LEXICON IA_SBJ_SUF
      +1Sg:%>yân #;
      +2Sg:%>yan	#;
      +3Sg:%>t	#;
@@ -84,7 +98,6 @@ LEXICON subjunctives
      +2Pl:%>yêk #;  ! NOTE: corrected according to dt, earlier we said %>nyêk
      +3Pl:%>cik #;
     +4Pl:%>yit #;
-
 
 LEXICON IA_IMP  !!= @CODE@ Fourth mode, imperative
 < "+Imp":0 "@U.verb.NULL@" > imp ; !
