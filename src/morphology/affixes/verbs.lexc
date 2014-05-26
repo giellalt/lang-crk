@@ -28,19 +28,19 @@
 !! !!! Intransitive animate (IA)
 
 LEXICON IACONJ !!= @CODE@ splits in 4 moods
-< "+V":0 "+IA":0 "@U.tm.Prs@" "@U.verb.NULL@" >     # ; !Baseform
- IACONJ-CONT ;
+< "+V":0 "+IA":0 "@U.tm.Prs@" "@U.perspref.NULL@" >     # ; !Baseform
++V+IA: IACONJ-CONT ;
  
 LEXICON IACONJw !!= @CODE@ splits in 4 moods, for verbs with final -w
-< "+V":w "+IA":0 "@U.tm.Prs@" "@U.verb.NULL@" >     # ; !Baseform
- IACONJ-CONT ;
+< "+V":w "+IA":0 "@U.tm.Prs@" "@U.perspref.NULL@" >     # ; !Baseform
++V+IA: IACONJ-CONT ;
 
 
 LEXICON IACONJ-CONT
-+V+IA+Ind:      IA_IND ;
-+V+IA+Cnj:      IA_SBJ ; 
-+V+IA:%>        IA_IMP ;
-+V+IA+Fut+Cond: IA_FUT_CON ;
++Ind:      IA_IND ;
++Cnj:      IA_SBJ ; 
+:%>        IA_IMP ;
++Fut+Cond: IA_FUT_CON ;
 
 
 LEXICON IA_IND !!= @CODE@ First mode, indicative
@@ -51,31 +51,31 @@ LEXICON IA_IND !!= @CODE@ First mode, indicative
 
 
 LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
-< 0:"^EA"  "+1Sg":0 "@U.verb.NI@"   0:n                 > # ; !"
-< 0:"^EA"  "+2Sg":0 "@U.verb.KI@"   0:n                 > # ; !"
-<          "+3Sg":0 "@U.verb.NULL@" 0:w                 > # ; !"
-<         "+4Sg":0 "@U.verb.NULL@" 0:y 0:i 0:w 0:a     > # ; !"
-< 0:"^EA"  "+1Pl":0 "@U.verb.NI@"   0:n 0:â 0:n         > # ;   ! exclusive Pl
-< 0:"^EA" "+12Pl":0 "@U.verb.KI@"   0:n 0:a 0:w         > # ; ! inclusive Pl
-< 0:"^EA"  "+2Pl":0 "@U.verb.KI@"   0:n 0:â 0:w 0:â 0:w > # ;           !
-<          "+3Pl":0 "@U.verb.NULL@" 0:w 0:a 0:k         > # ;   !
-<         "+4Pl":0 "@U.verb.NULL@" 0:y 0:i 0:w 0:a     > # ;   !
+< 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:n                 > # ; !"
+< 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:n                 > # ; !"
+<          "+3Sg":0 "@U.perspref.NULL@" 0:w                 > # ; !"
+<          "+4Sg":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ; !"
+< 0:"^EA"  "+1Pl":0 "@U.perspref.NI@"   0:n 0:â 0:n         > # ;   ! exclusive Pl
+< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:a 0:w         > # ; ! inclusive Pl
+< 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:n 0:â 0:w 0:â 0:w > # ;           !
+<          "+3Pl":0 "@U.perspref.NULL@" 0:w 0:a 0:k         > # ;   !
+<          "+4Pl":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ;   !
 
 
 
 LEXICON IA_FUT_CON  !!= @CODE@ Second mode mode, Fut Cond
-< "@U.verb.FutCon@" > IA_FUT_CON_SUF ;
+< "@U.tm.FutCon@" > IA_FUT_CON_SUF ;
 
 LEXICON IA_FUT_CON_SUF
   +1Sg:%>yâni  # ; 
   +2Sg:%>yani  # ; 
   +3Sg:%>ci    # ; 
- +4Sg:%>yici  # ; 
+  +4Sg:%>yici  # ; 
   +1Pl:%>yâhki # ; ! exclusive Pl
  +12Pl:%>yahko # ; ! inclusive Pl
   +2Pl:%>yêko  # ; 
   +3Pl:%>twâwi # ; 
- +4Pl:%>yici  # ; 
+  +4Pl:%>yici  # ; 
 
 
 LEXICON IA_SBJ !!= @CODE@ Third mode, subjunctive
@@ -100,7 +100,7 @@ LEXICON IA_SBJ_SUF
     +4Pl:%>yit #;
 
 LEXICON IA_IMP  !!= @CODE@ Fourth mode, imperative
-< "+Imp":0 "@U.verb.NULL@" > imp ; !
+< "+Imp":0 "@U.tm.imp@" > imp ; !
 
 
 LEXICON imp
@@ -130,10 +130,10 @@ LEXICON imp-long-E
 
 LEXICON IICONJ  !!= @CODE@ splits according to conjugation
 +V+II+Ind+Prs: II_IND_PRS_FLAG ;
-+V+II+Cnj: II_SBJ_FLAG ;
++V+II+Cnj:     II_SBJ_FLAG ;
 
 LEXICON II_IND_PRS_FLAG
-@U.verb.NULL@ II_IND_PRS ;
+@U.tm.indep@ II_IND_PRS ;
 
 LEXICON II_SBJ_FLAG
 @U.verb.sbjPrs@ II_SBJ ;
@@ -175,8 +175,8 @@ LEXICON TA_IND !!= @CODE@ gives prs
 +Prs: TA_IND_PRS ;
 
 LEXICON TA_IND_PRS !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
-@U.verb.NI@   VTA_NI_O ;  !
-@U.verb.KI@   VTA_KI_O ;  !
+@U.perspref.NI@   VTA_NI_O ;  !
+@U.perspref.KI@   VTA_KI_O ;  !
 @U.verb.NULL@   VTA_NULL_O ;  !
 
 
