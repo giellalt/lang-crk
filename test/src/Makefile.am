@@ -45,6 +45,7 @@ endif # CAN_YAML_TEST
 XFAIL_TESTS=run-dict-gt-desc-anayaml-testcases.sh \
             run-dict-gt-norm-genyaml-testcases.sh \
             run-gt-desc-yaml-testcases.sh \
+            run-gt-norm-yaml-testcases.sh \
             run-gt-norm-anayaml-testcases.sh \
             run-gt-norm-genyaml-testcases.sh \
             run-lexc-testcases.sh
