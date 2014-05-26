@@ -178,7 +178,7 @@ i2 		!!= * @CODE@  Possessive element
 
 @U.verb.FutCon@ !!= * @CODE@ Future Conditional
 
-@U.verb.sbj@  !!= * @CODE@ Conjunctive (Conjunct)
+@U.mood.cnj@  !!= * @CODE@ Conjunctive (Conjunct)
 @U.verb.fut@  !!= * @CODE@ Future Conditional
 @U.verb.sbjPrt@ !!=*@CODE@ Past tense Conjunct mode
 @U.verb.sbjPrs@ !!=*@CODE@ Present tense Conjunct mode
@@ -196,14 +196,14 @@ i2 		!!= * @CODE@  Possessive element
 @U.verb.FutDef@
 @U.verb.FutInt@
 @U.verb.FutCon@
-@U.tm.imp@
+@U.mood.imp@
 
-	@U.tm.indep@
-@U.tm.Prs@
-@U.tm.Prt@  
-@U.tm.FutDef@
-@U.tm.FutInt@
-@U.tm.FutCon@
+	@U.mood.indep@
+@U.tense.Prs@
+@U.tense.Prt@  
+@U.mood.FutDef@
+@U.mood.FutInt@
+@U.mood.FutCon@
 
 
 @U.verb.1sgindep@ !!= * @CODE@

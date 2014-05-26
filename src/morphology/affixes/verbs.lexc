@@ -28,11 +28,11 @@
 !! !!! Intransitive animate (IA)
 
 LEXICON IACONJ !!= @CODE@ splits in 4 moods
-< "+V":0 "+IA":0 "@U.tm.Prs@" "@U.perspref.NULL@" >     # ; !Baseform
+< "+V":0 "+IA":0 "@U.tense.Prs@" "@U.perspref.NULL@" >     # ; !Baseform
 +V+IA: IACONJ-CONT ;
  
 LEXICON IACONJw !!= @CODE@ splits in 4 moods, for verbs with final -w
-< "+V":w "+IA":0 "@U.tm.Prs@" "@U.perspref.NULL@" >     # ; !Baseform
+< "+V":w "+IA":0 "@U.tense.Prs@" "@U.perspref.NULL@" >     # ; !Baseform
 +V+IA: IACONJ-CONT ;
 
 
@@ -44,10 +44,10 @@ LEXICON IACONJ-CONT
 
 
 LEXICON IA_IND !!= @CODE@ First mode, indicative
-< "@U.tm.Prs@"    "+Prs":%>          > IA_IND_PRS ; !
-< "@U.tm.Prt@"    "+Prt":%>          > IA_IND_PRS ; !test
-< "@U.tm.FutDef@" "+Fut":0 "+Def":%> > IA_IND_PRS ; !Future definite - Ind Fut?
-< "@U.tm.FutInt@" "+Fut":0 "+Int":%> > IA_IND_PRS ; !Future intentional
+< "@U.tense.Prs@"    "+Prs":%>          > IA_IND_PRS ; !
+< "@U.tense.Prt@"    "+Prt":%>          > IA_IND_PRS ; !test
+< "@U.mood.FutDef@" "+Fut":0 "+Def":%> > IA_IND_PRS ; !Future definite - Ind Fut?
+< "@U.mood.FutInt@" "+Fut":0 "+Int":%> > IA_IND_PRS ; !Future intentional
 
 
 LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
@@ -64,7 +64,7 @@ LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
 
 
 LEXICON IA_FUT_CON  !!= @CODE@ Second mode mode, Fut Cond
-< "@U.tm.FutCon@" > IA_FUT_CON_SUF ;
+< "@U.mood.FutCon@" > IA_FUT_CON_SUF ;
 
 LEXICON IA_FUT_CON_SUF
   +1Sg:%>yâni  # ; 
@@ -79,13 +79,13 @@ LEXICON IA_FUT_CON_SUF
 
 
 LEXICON IA_SBJ !!= @CODE@ Third mode, subjunctive
-< "+Prs":0          "@U.tm.Prs@"    > subjunctives ; !"
-< "+Prt":0          "@U.tm.Prt@"    > subjunctives ; !"
-< "+Fut":0 "+Int":0 "@U.tm.FutInt@" > subjunctives ; !"
+< "+Prs":0          "@U.tense.Prs@"    > subjunctives ; !"
+< "+Prt":0          "@U.tense.Prt@"    > subjunctives ; !"
+< "+Fut":0 "+Int":0 "@U.mood.FutInt@" > subjunctives ; !"
 
 
 LEXICON subjunctives !!= @CODE@ gives flag diacritic and directs to subjunctive person suffixes
-@U.verb.sbj@ IA_SBJ_SUF ;
+@U.mood.cnj@ IA_SBJ_SUF ;
 
 
 LEXICON IA_SBJ_SUF
@@ -100,7 +100,7 @@ LEXICON IA_SBJ_SUF
     +4Pl:%>yit #;
 
 LEXICON IA_IMP  !!= @CODE@ Fourth mode, imperative
-< "+Imp":0 "@U.tm.imp@" > imp ; !
+< "+Imp":0 "@U.mood.imp@" > imp ; !
 
 
 LEXICON imp
@@ -133,7 +133,7 @@ LEXICON IICONJ  !!= @CODE@ splits according to conjugation
 +V+II+Cnj:     II_SBJ_FLAG ;
 
 LEXICON II_IND_PRS_FLAG
-@U.tm.indep@ II_IND_PRS ;
+@U.mood.indep@ II_IND_PRS ;
 
 LEXICON II_SBJ_FLAG
 @U.verb.sbjPrs@ II_SBJ ;
@@ -233,7 +233,7 @@ LEXICON VTA_NULL_O
 
 
 LEXICON TA_SBJ !!= @CODE@ gives flag diacritic and directs to subjunctive person suffixes
-@U.verb.sbj@ TA_SBJ_SUF ;
+@U.mood.cnj@ TA_SBJ_SUF ;
 
 LEXICON TA_SBJ_SUF !!= @CODE@ gives subj + obj tag and suf
 
