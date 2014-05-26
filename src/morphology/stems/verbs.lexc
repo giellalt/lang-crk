@@ -33,7 +33,7 @@
 !! # TA: Transitive animate
 !! # TI: Transitive inanimate
 
-LEXICON Verbs !!= @CODE@ divides the verbs in four transitivity classes
+LEXICON Verbs !!= @CODE@ divides the verbs in these four transitivity classes
 
 IA ; ! intransitive animate
 II ; ! intransitive inanimate
@@ -44,13 +44,12 @@ TA ; ! transitive animate
 !! !! Intransitive animate
 !     ====================
 
-LEXICON IA   !!= @CODE@ divides in independent, subjunctive and imperative
-
-          IA_INDEPENDENT ;
-:ê-       IA_SUBJUNCTIV ;
-:ê%^EGLOT IA_SUBJUNCTIV ;
-          IA_IMPERATIV ;
-          IA_FUTURE_CONDITIONAL ;
+LEXICON IA   !!= @CODE@ divides in independent, conjunctive, imperative and future conditional
+          IA_INDEPENDENT ;		  !!= * @CODE@
+:ê-       IA_CONJUNCTIV ;		  !!= * @CODE@ , note: two versions of conjunctive
+:ê%^EGLOT IA_CONJUNCTIV ;		  !!= * @CODE@ 
+          IA_IMPERATIV ;		  !!= * @CODE@
+          IA_FUTURE_CONDITIONAL ; !!= * @CODE@
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
 
@@ -63,13 +62,13 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 !Past/Preterite tense
 
 LEXICON IATNS
-<              "@U.tm.Prs@"     > IALIST ; !"
-< 0:k 0:î 0:%^EGLOT "@U.tm.Prt@"  > IALIST ; !" removed hyph
-< 0:k 0:î 0:%- "@U.tm.Prt@"     > IALIST ; !
+<                   "@U.tm.Prs@"     > IALIST ; !"
+< 0:k 0:î 0:%^EGLOT "@U.tm.Prt@"     > IALIST ; !" removed hyph
+< 0:k 0:î 0:%-      "@U.tm.Prt@"     > IALIST ; !
 < 0:k 0:a 0:%^EGLOT "@U.tm.FutDef@"  > IALIST ; !"
-< 0:k 0:a 0:%- "@U.tm.FutDef@"  > IALIST ; !"
+< 0:k 0:a 0:%-      "@U.tm.FutDef@"  > IALIST ; !"
 < 0:w 0:î 0:%^EGLOT "@U.tm.FutInt@"  > IALIST ; !"
-< 0:w 0:î 0:%- "@U.tm.FutInt@"  > IALIST ; !"
+< 0:w 0:î 0:%-      "@U.tm.FutInt@"  > IALIST ; !"
 
 
 LEXICON IA_FUTURE_CONDITIONAL
@@ -81,7 +80,7 @@ LEXICON IALIST
 
 
 
-LEXICON IA_SUBJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
+LEXICON IA_CONJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
 
 <              "@U.verb.sbj@" "@U.tm.Prs@"    > IALIST ; !Present
 < 0:k 0:î 0:%- "@U.verb.sbj@" "@U.tm.Prt@"    > IALIST ;  ! Preterite,  Is this correct? TT
@@ -109,30 +108,35 @@ LEXICON II
 LEXICON TA  !!= @CODE@ is still not written
 
           TA_INDEPENDENT ;
-:ê-       TA_SUBJUNCTIV ;
-:ê%^EGLOT TA_SUBJUNCTIV ;
+:ê-       TA_CONJUNCTIV ;
+:ê%^EGLOT TA_CONJUNCTIV ;
           TA_FUTURE ;
           TA_IMPERATIV ;
 
 LEXICON TA_INDEPENDENT
 
-< 0:n 0:i "@U.verb.NI@"   > TASTEM ; !"
-< 0:k 0:i "@U.verb.KI@"   > TASTEM ; !"
-<         "@U.verb.NULL@" > TASTEM ; !"
+< 0:n 0:i "@U.verb.NI@" 0:"t2" > TALIST ; !"
+< 0:k 0:i "@U.verb.KI@" 0:"t2" > TALIST ; !"
+<         "@U.verb.NULL@"      > TALIST ; !"
 
-LEXICON TA_SUBJUNCTIV 
-@U.verb.sbj@ TASTEM ;
+LEXICON TA_CONJUNCTIV 
+@U.verb.sbj@ TALIST ;
 
 LEXICON TA_FUTURE 
-@U.verb.fut@ TASTEM ;
+@U.verb.fut@ TALIST ;
 
 
 LEXICON TA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
 
-@U.verb.NULL@  TASTEM ;
-@U.verb.NULL@  TASTEM ;   ! exclusive Pl
-@U.verb.NULL@  TASTEM ;   
+@U.verb.NULL@  TALIST ;
+@U.verb.NULL@  TALIST ;   ! exclusive Pl
+@U.verb.NULL@  TALIST ;   
                TA_FUTURE ;
+
+
+
+LEXICON TALIST
+ :%> TASTEM ;
 
 
 !! !! Transitive inanimate
