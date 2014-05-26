@@ -41,7 +41,7 @@ Rules
 
 "h glottal stop for initial vowel stems in Conjunctive"
 !! __@RULENAME@__
-%^EGLOT:h <=>  _  Vow: ;
+%^EGLOT:h <=>  _  %>:0 Vow: ;
 
 
 "Suffix vowel deletion in vowel final stems" 
