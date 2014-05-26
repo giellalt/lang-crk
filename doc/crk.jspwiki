@@ -122,14 +122,17 @@ Nominal MSP
  * +AN		  animate noun
  * +IN		  inanimate noun
 
- * %> 		  suffix border
-
- * +WAK  	  tag to keep track of -wak plurals
-
- * +Use/Sub  tag for substandard forms
 
  * +Incl     me too, etc.
  * +Qst      yes-no question particle ci
+
+!!Auxiliary symbols
+
+These symbols either shape or govern the
+morphophonological structure
+
+ * %> 		  suffix border
+ * +WAK  	  tag to keep track of -wak plurals
 
  * %^LC      Locative
  * t2 		  Prefix in possessives 
@@ -138,6 +141,18 @@ Nominal MSP
 
  * ^%EGLOT    glottal stop after e, for eh- in conjunctive mood
  * ^%EA      ê to â in 1, 2 person of ê-stems
+
+
+!!Usage tags
+
+These tags distinguish different special-purpose analysers
+and generators from each other. Thus, for examples, we have
+normative and descriptive analysers, and generators for different purposes.
+
+ * +Use/Sub  tag for substandard forms
+ * +Use/NG   not-generate, for ped generation isme-ped.fst
+
+
 
 Flagdiacritics 
 
@@ -151,13 +166,19 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
 
 
-
+The conjunctive always has
+the ê- prefix, and future conditional never has a prefix.
 
  * @U.verb.FutCon@  Future Conditional
 
- * @U.verb.sbj@   Subjunctive (Conjunct)
+ * @U.verb.sbj@   Conjunctive (Conjunct)
  * @U.verb.fut@   Future Conditional
 
+Prefixes with a certain phonological content:
+
+ * @U.perspref.NULL@   test
+ * @U.perspref.NI@   test
+ * @U.perspref.KI@   test
 
 
 
@@ -417,16 +438,16 @@ Intransitive animate
 
 
 
- LEXICON IALIST   just adds the prefix boundary
-
-
 
  LEXICON IA_CONJUNCTIV    gives prefixes and flags for person-number in subjunctive
 
 
 
-
  LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
+
+
+ LEXICON IALIST   just adds the prefix boundary
+
 
 Intransitive inanimate
 
@@ -445,8 +466,7 @@ Transitive animate
  LEXICON TA_FUTURE   gives flag for future (no prefix)
 
 
- LEXICON TA_IMPERATIV    gives prefixes and flags for person-number in imperative
-
+ LEXICON TA_IMPERATIV    gives flag for TA imperative
 
 
 
