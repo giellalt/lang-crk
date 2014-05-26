@@ -40,16 +40,16 @@ Intransitive animate
 
 
 
- LEXICON IALIST   just adds the prefix boundary
-
-
 
  LEXICON IA_CONJUNCTIV    gives prefixes and flags for person-number in subjunctive
 
 
 
-
  LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
+
+
+ LEXICON IALIST   just adds the prefix boundary
+
 
 Intransitive inanimate
 
@@ -68,8 +68,7 @@ Transitive animate
  LEXICON TA_FUTURE   gives flag for future (no prefix)
 
 
- LEXICON TA_IMPERATIV    gives prefixes and flags for person-number in imperative
-
+ LEXICON TA_IMPERATIV    gives flag for TA imperative
 
 
 
