@@ -60,10 +60,11 @@ ayinânewomi:8 TEN ;
 kekâmitâtahtomi:9 TEN ;
 
 LEXICON TEN
+tanaw% :%0 DOLLAR ;
 tanaw% : ONESTONEXT ;
 
 LEXICON ONESTONEXT
-piyakosâp:1 DOLLAR ;
+peyakosâp:1 DOLLAR ;
 nîsosâp:2 DOLLAR ;
 nistosâp:3 DOLLAR ;
 nêwosâposâp:4 DOLLAR ;
@@ -74,7 +75,7 @@ ayinânêwosâp:8 DOLLAR ;
 kîkâmitâtahtosâp:9 DOLLAR ;
 
 LEXICON TEENS
-piyakosâp:11 DOLLAR ;
+peyakosâp:11 DOLLAR ;
 nîsosâp:12 DOLLAR ;
 nistosâp:13 DOLLAR ;
 nêwosâposâp:14 DOLLAR ;
@@ -88,7 +89,7 @@ LEXICON ONES
 DCARDINAL ;
 
 LEXICON DCARDINAL
-piyak:1 ONEDOLLAR ;
+peyak:1 ONEDOLLAR ;
 nîso:2 DOLLAR ;
 nisto:3 DOLLAR ;
 nêwo:4 DOLLAR ;
