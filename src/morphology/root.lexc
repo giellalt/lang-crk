@@ -126,14 +126,17 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 +AN		 !!= * @CODE@ animate noun
 +IN		 !!= * @CODE@ inanimate noun
 
-%> 		 !!= * @CODE@ suffix border
-
-+WAK  	 !!= * @CODE@ tag to keep track of -wak plurals
-
-+Use/Sub !!= * @CODE@ tag for substandard forms
 
 +Incl    !!= * @CODE@ me too, etc.
 +Qst     !!= * @CODE@ yes-no question particle ci
+
+!! !!Auxiliary symbols
+
+!! These symbols either shape or govern the
+!! morphophonological structure
+
+%> 		 !!= * @CODE@ suffix border
++WAK  	 !!= * @CODE@ tag to keep track of -wak plurals
 
 %^LC    !!= * @CODE@  Locative
 t2 		!!= * @CODE@  Prefix in possessives 
@@ -145,6 +148,18 @@ i2 		!!= * @CODE@  Possessive element
 
 ^%EGLOT  !!= * @CODE@  glottal stop after e, for eh- in conjunctive mood
 ^%EA    !!= * @CODE@  ê to â in 1, 2 person of ê-stems
+
+
+!! !!Usage tags
+
+!! These tags distinguish different special-purpose analysers
+!! and generators from each other. Thus, for examples, we have
+!! normative and descriptive analysers, and generators for different purposes.
+
++Use/Sub !!= * @CODE@ tag for substandard forms
++Use/NG  !!= * @CODE@ not-generate, for ped generation isme-ped.fst
+
+
 
 !! !! Flagdiacritics 
 
@@ -158,21 +173,22 @@ i2 		!!= * @CODE@  Possessive element
 
 
 
-!!The subjunctive always has
-!!the ê- prefix, and future conditional never has a prefix.
-
+!! The conjunctive always has
+!! the ê- prefix, and future conditional never has a prefix.
 
 @U.verb.FutCon@ !!= * @CODE@ Future Conditional
 
-@U.verb.sbj@  !!= * @CODE@ Subjunctive (Conjunct)
+@U.verb.sbj@  !!= * @CODE@ Conjunctive (Conjunct)
 @U.verb.fut@  !!= * @CODE@ Future Conditional
 @U.verb.sbjPrt@ !!=*@CODE@ Past tense Conjunct mode
 @U.verb.sbjPrs@ !!=*@CODE@ Present tense Conjunct mode
 @U.verb.sbjFutureInt@ !!=*@CODE@ Future intentional tense Conjunct mode
 
-@U.verb.NULL@ ! test
-@U.verb.NI@ ! test
-@U.verb.KI@ ! test
+!! Prefixes with a certain phonological content:
+
+@U.perspref.NULL@ !!= * @CODE@  test
+@U.perspref.NI@ !!= * @CODE@  test
+@U.perspref.KI@ !!= * @CODE@  test
 
 ! Test:
 @U.verb.Prs@
@@ -180,7 +196,9 @@ i2 		!!= * @CODE@  Possessive element
 @U.verb.FutDef@
 @U.verb.FutInt@
 @U.verb.FutCon@
+@U.tm.imp@
 
+	@U.tm.indep@
 @U.tm.Prs@
 @U.tm.Prt@  
 @U.tm.FutDef@
