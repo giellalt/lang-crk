@@ -147,15 +147,14 @@ w:0 <=> [ Vow | o: ] _  %>:0 [ %^POS:0 | i2: | %^DIM:0 ] [ i: | m: | s: ] ; ! ok
 y:0 <=> Cons a: _  %>:0 %^POS:0  i: ; ! maniway waniwayiyiw > waniwâiyiw
  
 "o:w in possessive prefix"
-!! __@RULENAME@__ , step 1. Okimasis p. 138 ! 
-!o:w <=> .#. _  %>:0 [ î: | a: | â: ] Cns :* %^POS:0  ;  !
-o:w <=> .#. _  %>:0 [ î: | a: | â: ] Cns :* %^POS:0  ;  !
- 
+!! __@RULENAME@__ , w- in front of î, a, â (?) in possessive forms
+o:w <=> .#. _  %>:0 [ î: | a: | â: ] [ Cns | y ] :* %^POS:0  ;  !
+! mahkwan:wahkwan, mîpit:wîpit, mîyaw:wîyaw
  
 "o:0 in possessive prefix"
-!! __@RULENAME@__ , step 1. Okimasis p. 138 ! 
+!! __@RULENAME@__ , Okimasis p. 140 
 o:0 <=> .#. _  %>:0 [ ô: | o: ] Cns  ;  !
- 
+! ohtâwîmâw:ôhtâwiya 
  
 "i to a in prefixes in front of nasals"
 !! __@RULENAME@__ 

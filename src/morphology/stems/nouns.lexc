@@ -29,7 +29,7 @@ INALIENABLE ; !
 EXPER ;
 
 LEXICON AN-IN
-!! @LEXNAME@ for both animate and inanimate nouns, redirects to STEMS
+!! @LEXNAME@ adding prefixes ni-, ki-, o-. Redirects to STEMS
 
 @U.noun.abs@ STEMS ; 
 < 0:n 0:i "@U.noun.1sg@"  0:"t2" > STEMS ; ! 1
@@ -47,7 +47,7 @@ LEXICON EXPER
 
 
 LEXICON BODY
-!! @LEXNAME@ for bodyparts, similar to INALIENABLE but it give the generic form m-. Redirects to BODYSTEMS. 
+!! @LEXNAME@ adding prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS. 
 < 0:m "@U.noun.abs@"  > BODYSTEMS ; ! 1
 < 0:n "@U.noun.1sg@"  > BODYSTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > BODYSTEMS ; ! 2
@@ -62,7 +62,7 @@ LEXICON BODY
 
 
 LEXICON INALIENABLE
-!! @LEXNAME@ redirects to INALIENABLESTEMS
+!! @LEXNAME@ adding prefixes n-, k-, o-. redirects to INALIENABLESTEMS
 @U.noun.abs@ INALIENABLESTEMS ; 
 < 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
@@ -86,7 +86,7 @@ LEXICON STEMS
  0:%> STEMLIST ;
 
 LEXICON STEMLIST
-!! @LEXNAME@ contains most of the nouns
+!! @LEXNAME@ for nouns getting prefixes ni-, ki-, o-
 apiscacihkos ANDECL "antelope" ;	
 apisimôsos ANDECL "deer" ; ! apisimôsosak	
 !apisimôsos:apisimôsosis ANDIMDERIVATION "little deer" ; ! apisimôsosak
@@ -197,7 +197,7 @@ iskwâhcêmis INDIM "little door" ;
 môhkomân INDECL  "knife" ; ! GG 12 
 !môhkomân:môhkomânis INDIMDERIVATION  "little knife" ; !GG 12
 môhkomânis INDIM  "little knife" ;
-iskotêw INDECL "fire" ;
+iskotêw INimDECL "fire" ; !Wolfart p.28
 iskotêw:iskocês INDIMDERIVATION "fire" ;
 iskocês INDIM "fire" ;
 ôskan INDECL "bone" ;
@@ -207,7 +207,6 @@ iskocês INDIM "fire" ;
 wiyâkanis INDIM "bowl" ; !Wolfart's list: wiyâkanisihk
 kîkisepâ INDECLisis "morning" ;
 ôsi:ô INDECLosi "canoe" ; !yaml !Wolfart's list: ôsihk
-atâwewikamik INDECLis "store" ;
 atâwewikamik:atâwewikamikosis INDIMDERIVATION "small store" ;
 atâwewikamikosis INDIM "small store" ;
 ôtenaw INDECL "city" ;
@@ -242,7 +241,7 @@ LEXICON INALIENABLESTEMS  ! dependent nouns
  0:%> INABLESTEMLIST ;
 
 LEXICON INABLESTEMLIST
-!! @LEXNAME@ for dependent nouns
+!! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o-
 otânisimâw:itânis ANKININFL "daughter" ; !yaml
 okosisimâw:ikosis ANKININFL "son" ;
 onîkihikomâw:inekihik ANKININFL "parent" ; ! NB! generic form? ninekihikwak onikihkomaw
@@ -265,19 +264,16 @@ nicâhkos:icâhkos ANKININFLni "cousin/sister in law" ;! gen.form ocâhkosimâw?
 nôsisim:ôsisim ANKININFLni "grandchild" ;!NB! twolc gives oô-  gen.form ôsisimimâw??
 onâpêmimâw:inâpêm ANKININFL_MONOG "husband" ;
 !wîkimâkan:îkimâkan ANKININFL_MONOG "spouse" ;  !OBS!
-otehye:otehye INALIENABLEPOSS ;  ! 
-!otehye+N+IN+Sg+Px3Sg:otehye # ; !"his-shoulderblade";
-!otehye+N+IN+Pl+Px3Sg:otehya # ;  ! Wolvergrey: mitîhiy animate
-wîkiwân:îki INALIENABLEPOSS_SG "home" ; !GG !Wolfart's list: wîkiwâhk, nîkinâhk
-wîkiwân+N+IN+Sg:wîkiwân NOPREFIX "home" ;
 niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ; !OBS!
+mîkiwâhp+N+IN+Sg:mîkiwâhp NOPREFIX "home" ; !Okimasis p 137
 
 LEXICON BODYSTEMS ! dependent nouns
 !! @LEXNAME@ adds a affixmark and redirects to BODYSTEMLIST
  0:%> BODYSTEMLIST ;
 
 LEXICON BODYSTEMLIST
-!! @LEXNAME@ for dependent bodypartnouns. It generates a generic form m-
+!! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o-, pluss generic form m-
+mîkiwâhp:îki INALIENABLEPOSS_SG "home" ; !GG !Wolfart's list: wîkiwâhk, nîkinâhk !Okimasis p 137
 maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml
 maniway+N+IN+Sg:maniway NOPREFIX "cheek" ; !yaml
 mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml
