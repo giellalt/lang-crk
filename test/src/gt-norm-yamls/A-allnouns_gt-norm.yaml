@@ -289,10 +289,10 @@ Tests:
   Noun - cahcahkayo - ok : # -m animate noun, blackbird
      cahcahkâyow+N+AN+Sg: cahcahkâyow
      cahcahkâyow+N+AN+Pl: cahcahkâyowak
-     cahcahkâyow+N+AN+Loc: cahcahkâyôhk 
+     cahcahkâyow+N+AN+Loc: [cahcahkâyôhk, cahcahkâyowinâhk] 
      cahcahkâyow+N+AN+Der/Dim+N+AN+Sg: cahcahkâyôsis
      cahcahkâyow+N+AN+Der/Dim+N+AN+Pl: cahcahkâyôsisak
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Loc: cahcahkâyôsisihk
+     cahcahkâyow+N+AN+Der/Dim+N+AN+Loc: [cahcahkâyôsisihk, cahcahkâyôsisinâhk]
 
      cahcahkâyow+N+AN+Sg+Px1Sg: nicahcahkâyôm
      cahcahkâyow+N+AN+Sg+Px2Sg: kicahcahkâyôm
@@ -360,9 +360,9 @@ Tests:
      iskwêw+N+AN+Pl: iskwêwak
      iskwêw+N+AN+Loc: iskwênâhk
      iskwêw+N+AN+Obv: iskwêwa
-     iskwêw+N+AN+Der/Dim+N+AN+Sg: iskwês
-     iskwêw+N+AN+Der/Dim+N+AN+Pl: iskwêsak
-     iskwêw+N+AN+Der/Dim+N+AN+Loc: [iskwêsihk, iskwêsinâhk]
+     iskwêw+N+AN+Der/Dim+N+AN+Sg: [iskwês, iskwêsis] # both are documented
+     iskwêw+N+AN+Der/Dim+N+AN+Pl: [iskwêsak, iskwêsisak]
+     iskwêw+N+AN+Der/Dim+N+AN+Loc: [iskwêsihk, iskwêsinâhk, iskwêsisinâhk‚ iskwêsisihk]
      
      iskwêw+N+AN+Sg+Px1Sg: nitiskwêm
      iskwêw+N+AN+Sg+Px2Sg: kitiskwêm
@@ -430,7 +430,7 @@ Tests:
      maniway+N+IN+Sg+Px1Sg: naniway
      maniway+N+IN+Sg+Px2Sg: kaniway
      maniway+N+IN+Sg+Px3Sg: waniway
-     maniway+N+IN+Sg+Px4Sg: waniwâiyiw
+     maniway+N+IN+Sg+Px4Sg: waniwâyiw
      maniway+N+IN+Sg+Px1Pl: naniwânân
      maniway+N+IN+Sg+Px12Pl: kaniwânaw
      maniway+N+IN+Sg+Px2Pl: kaniwâyâw #?
@@ -1041,7 +1041,7 @@ Tests:
   Noun - sikâk - ok : # -k final animate noun 'goose'
      sikâk+N+AN+Sg: sikâk
      sikâk+N+AN+Pl: sikâkwak
-     sikâk+N+AN+Loc: sikâkohk
+     sikâk+N+AN+Loc: [sikâkohk, sikâkinâhk]
      sikâk+N+AN+Der/Dim+N+AN+Sg: sikâkos
      sikâk+N+AN+Der/Dim+N+AN+Pl: sikâkosak
      sikâk+N+AN+Der/Dim+N+AN+Loc: [sikâkosihk, sikâkosinâhk]
@@ -1111,69 +1111,70 @@ Tests:
      tohtôsâpoy+N+IN+Sg: tohtôsâpoy
      tohtôsâpoy+N+IN+Pl: tohtôsâpoya
      tohtôsâpoy+N+IN+Loc: tohtôsâpôhk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg: cohcôsâposis
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl: cohcôsâposisak
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Loc: cohcôsâposisihk
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg: cohcôsâpôsis
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl: cohcôsâpôsisak
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Loc: cohcôsâpôsisihk
      
-     tohtôsâpoy+N+IN+Sg+Px1Sg: nitôhtôsâpom
-     tohtôsâpoy+N+IN+Sg+Px2Sg: kitôhtôsâpom
-     tohtôsâpoy+N+IN+Sg+Px3Sg: otôhtôsâpom
-     tohtôsâpoy+N+IN+Sg+Px4Sg: otôhtôsâpomiyiw
-     tohtôsâpoy+N+IN+Sg+Px1Pl: nitôhtôsâpominân
-     tohtôsâpoy+N+IN+Sg+Px12Pl: kitôhtôsâpominaw
-     tohtôsâpoy+N+IN+Sg+Px2Pl: kitôhtôsâpomiwâw
-     tohtôsâpoy+N+IN+Sg+Px3Pl: otôhtôsâpomiwâw
-     tohtôsâpoy+N+IN+Sg+Px4Pl: otôhtôsâpomiyiw
+     tohtôsâpoy+N+IN+Sg+Px1Sg: nitôhtôsâpôm
+     tohtôsâpoy+N+IN+Sg+Px2Sg: kitôhtôsâpôm
+     tohtôsâpoy+N+IN+Sg+Px3Sg: otôhtôsâpôm
+     tohtôsâpoy+N+IN+Sg+Px4Sg: otôhtôsâpômiyiw
+     tohtôsâpoy+N+IN+Sg+Px1Pl: nitôhtôsâpôminân
+     tohtôsâpoy+N+IN+Sg+Px12Pl: kitôhtôsâpôminaw
+     tohtôsâpoy+N+IN+Sg+Px2Pl: kitôhtôsâpômiwâw
+     tohtôsâpoy+N+IN+Sg+Px3Pl: otôhtôsâpômiwâw
+     tohtôsâpoy+N+IN+Sg+Px4Pl: otôhtôsâpômiyiw
      
-     tohtôsâpoy+N+IN+Pl+Px1Sg: nitôhtôsâpoma
-     tohtôsâpoy+N+IN+Pl+Px2Sg: kitôhtôsâpoma
-     tohtôsâpoy+N+IN+Pl+Px3Sg: otôhtôsâpoma
-     tohtôsâpoy+N+IN+Pl+Px4Sg: otôhtôsâpomiyiwa
-     tohtôsâpoy+N+IN+Pl+Px1Pl: nitôhtôsâpominâna
-     tohtôsâpoy+N+IN+Pl+Px12Pl: kitôhtôsâpominawa
-     tohtôsâpoy+N+IN+Pl+Px2Pl: kitôhtôsâpomiwâwa
-     tohtôsâpoy+N+IN+Pl+Px3Pl: otôhtôsâpomiwâwa
-     tohtôsâpoy+N+IN+Pl+Px4Pl: otôhtôsâpomiyiwa
+     tohtôsâpoy+N+IN+Pl+Px1Sg: nitôhtôsâpôma
+     tohtôsâpoy+N+IN+Pl+Px2Sg: kitôhtôsâpôma
+     tohtôsâpoy+N+IN+Pl+Px3Sg: otôhtôsâpôma
+     tohtôsâpoy+N+IN+Pl+Px4Sg: otôhtôsâpômiyiwa
+     tohtôsâpoy+N+IN+Pl+Px1Pl: nitôhtôsâpôminâna
+     tohtôsâpoy+N+IN+Pl+Px12Pl: kitôhtôsâpôminawa
+     tohtôsâpoy+N+IN+Pl+Px2Pl: kitôhtôsâpômiwâwa
+     tohtôsâpoy+N+IN+Pl+Px3Pl: otôhtôsâpômiwâwa
+     tohtôsâpoy+N+IN+Pl+Px4Pl: otôhtôsâpômiyiwa
      
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px1Sg: nicohcôsâpomis
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px2Sg: kicohcôsâpomis
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px3Sg: ocohcôsâpomis
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px4Sg: ocohcôsâpomisiyiw
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px1Pl: nicohcôsâpomisinân
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px12Pl: kicohcôsâpomisinaw
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px2Pl: kicohcôsâpomisiwâw
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px3Pl: ocohcôsâpomisiwâw
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px4Pl: ocohcôsâpomisiyiw
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px1Sg: nicohcôsâpômis
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px2Sg: kicohcôsâpômis
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px3Sg: ocohcôsâpômis
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px4Sg: ocohcôsâpômisiyiw
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px1Pl: nicohcôsâpômisinân
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px12Pl: kicohcôsâpômisinaw
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px2Pl: kicohcôsâpômisiwâw
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px3Pl: ocohcôsâpômisiwâw
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px4Pl: ocohcôsâpômisiyiw
      
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px1Sg: nicohcôsâpomisa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px2Sg: kicohcôsâpomisa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px3Sg: ocohcôsâpomisa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px4Sg: ocohcôsâpomisiyiwa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px1Pl: nicohcôsâpomisinâna
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px12Pl: kicohcôsâpomisinawa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px2Pl: kicohcôsâpomisiwâwa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px3Pl: ocohcôsâpomisiwâwa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px4Pl: ocohcôsâpomisiyiwa
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px1Sg: nicohcôsâpômisa
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px2Sg: kicohcôsâpômisa
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px3Sg: ocohcôsâpômisa
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px4Sg: ocohcôsâpômisiyiwa
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px1Pl: nicohcôsâpômisinâna
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px12Pl: kicohcôsâpômisinawa
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px2Pl: kicohcôsâpômisiwâwa
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px3Pl: ocohcôsâpômisiwâwa
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px4Pl: ocohcôsâpômisiyiwa
      
-     tohtôsâpoy+N+IN+Px1Sg+Loc: nitôhtôsâpomihk
-     tohtôsâpoy+N+IN+Px2Sg+Loc: kitôhtôsâpomihk
-     tohtôsâpoy+N+IN+Px3Sg+Loc: otôhtôsâpomihk
-     tohtôsâpoy+N+IN+Px4Sg+Loc: otôhtôsâpomiyihk
-     tohtôsâpoy+N+IN+Px1Pl+Loc: nitôhtôsâpominâhk
-     tohtôsâpoy+N+IN+Px12Pl+Loc: kitôhtôsâpominâhk
-     tohtôsâpoy+N+IN+Px2Pl+Loc: kitôhtôsâpomiwâhk
-     tohtôsâpoy+N+IN+Px3Pl+Loc: otôhtôsâpomiwâhk
-     tohtôsâpoy+N+IN+Px4Pl+Loc: otôhtôsâpomiyihk
+     tohtôsâpoy+N+IN+Px1Sg+Loc: nitôhtôsâpômihk
+     tohtôsâpoy+N+IN+Px2Sg+Loc: kitôhtôsâpômihk
+     tohtôsâpoy+N+IN+Px3Sg+Loc: otôhtôsâpômihk
+     tohtôsâpoy+N+IN+Px4Sg+Loc: otôhtôsâpômiyihk
+     tohtôsâpoy+N+IN+Px1Pl+Loc: nitôhtôsâpôminâhk
+     tohtôsâpoy+N+IN+Px12Pl+Loc: kitôhtôsâpôminâhk
+     tohtôsâpoy+N+IN+Px2Pl+Loc: kitôhtôsâpômiwâhk
+     tohtôsâpoy+N+IN+Px3Pl+Loc: otôhtôsâpômiwâhk
+     tohtôsâpoy+N+IN+Px4Pl+Loc: otôhtôsâpômiyihk
 
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px1Sg+Loc: nicohcôsâpomisihk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px2Sg+Loc: kicohcôsâpomisihk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px3Sg+Loc: ocohcôsâpomisihk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px4Sg+Loc: ocohcôsâpomisiyihk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px1Pl+Loc: nicohcôsâpomisinâhk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px12Pl+Loc: kicohcôsâpomisinâhk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px2Pl+Loc: kicohcôsâpomisiwâhk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px3Pl+Loc: ocohcôsâpomisiwâhk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px4Pl+Loc: ocohcôsâpomisiyihk
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px1Sg+Loc: nicohcôsâpômisihk
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px2Sg+Loc: kicohcôsâpômisihk
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px3Sg+Loc: ocohcôsâpômisihk
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px4Sg+Loc: ocohcôsâpômisiyihk
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px1Pl+Loc: nicohcôsâpômisinâhk
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px12Pl+Loc: kicohcôsâpômisinâhk
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px2Pl+Loc: kicohcôsâpômisiwâhk
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px3Pl+Loc: ocohcôsâpômisiwâhk
+     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px4Pl+Loc: ocohcôsâpômisiyihk
+
   
   Noun - wâposw - ok : # -m animate noun, rabbit paradim Okim. p 135 
      
