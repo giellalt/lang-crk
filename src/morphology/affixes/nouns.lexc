@@ -14,10 +14,10 @@ LEXICON ANniska !!= * @CODE@ for the irregular niska N+AN
 +N+AN+Sg:i%>i2m ANSUFF_SG ;
 +N+AN+Pl:i%>i2m ANSUFF_PL ;
 +N+AN:i%>i2m ANniskaSUFFLOC ;
-+N+AN+Der/Dim+N+AN:imis%>%^DIMis ANniskaSUFFLOC ;
-+N+AN+Der/Dim:as%>%^DIMis%> ANABSDECL ;
-+N+AN+Der/Dim+N+AN+Sg:imis%>%^DIMis ANSUFF_SG ;
-+N+AN+Der/Dim+N+AN+Pl:imis%>%^DIMis ANSUFF_PL ;
++N+AN+Der/Dim+N+AN:im%>is%^DIMis ANniskaSUFFLOC ;
++N+AN+Der/Dim:as%>is%^DIM%> ANABSDECL ;
++N+AN+Der/Dim+N+AN+Sg:im%>is%^DIMis ANSUFF_SG ;
++N+AN+Der/Dim+N+AN+Pl:im%>is%^DIMis ANSUFF_PL ;
 
 LEXICON ANniskaSUFFLOC !!= * @CODE@ for the irregular niska N+AN
 
@@ -37,7 +37,7 @@ ANABSDECL ;
 +N+AN+Sg:%>i2m ANSUFF_SG ;
 +N+AN+Pl:%>i2m ANSUFF_PL ;
 +N+AN:%>i2m ANSUFF_LOC ;
-!+N+AN+Der/Dim:%>%^DIMis%> ANDIMim ; !poss.-im- after dim.suffix
+!+N+AN+Der/Dim:%>is%^DIM%> ANDIMim ; !poss.-im- after dim.suffix
 !+N+AN+Der/Dim:%>is%^DIMis%> ANDIMim ; !poss.-im- after dim.suffix
 +N+AN+Der/Dim:%>is%^DIM%> ANABSDECL ; !
 +N+AN+Der/Dim+N+AN:%>i2m%^DIMis%> ANSUFF_LOC ; !
@@ -100,14 +100,14 @@ ANABSDECL ;
 +N+AN+Sg:%> ANSUFF_SG ;
 +N+AN+Pl:%> ANSUFF_PL ;
 +N+AN:%> ANSUFF_LOC ;
-+N+AN+Der/Dim:%>%^DIMis%> ANDIM ;
++N+AN+Der/Dim:%>is%^DIM%> ANDIM ;
 
 LEXICON ANDECL !!= * @CODE@ for the animate declension, both -isis and -is diminutives
 ANABSDECL ;
 +N+AN+Sg:%> ANSUFF_SG ;
 +N+AN+Pl:%> ANSUFF_PL ;
 +N+AN:%> ANSUFF_LOC ;
-+N+AN+Der/Dim:%>%^DIMis%> ANDIM ;
++N+AN+Der/Dim:%>is%^DIM%> ANDIM ;
 +N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
 
 LEXICON AN-NOPOSSw !!= * @CODE@ for the animate absolute declension and diminutive, ôhow
@@ -166,7 +166,7 @@ LEXICON ANKINiyINFL  !!= * @CODE@ Special treatment for kinship nouns ending wit
 < "+N":î "+AN":m "+Pl":â 0:w "@U.noun.3ipl@" > PLak ; !generic form
 +N+AN+Sg: ANiySUFF_SG ;
 +N+AN+Pl: ANiySUFF_PL ;
-+N+AN+Der/Dim:%^DIMisis%> ANDIMIRR ;  
++N+AN+Der/Dim:is%^DIMis%> ANDIMIRR ;  
 +N+AN: ANSUFF_LOC ;  
 
 
@@ -206,7 +206,7 @@ LEXICON ANkwDECL !!= * @CODE@ takes -om as extra suffix in possessed form
 +N+AN+Sg:om ANSUFF_SG ;
 +N+AN+Pl:om ANSUFF_PL ;
 +N+AN:om ANSUFF_LOC ;
-+N+AN+Der/Dim:w%>%^DIMis%> ANDIM ;
++N+AN+Der/Dim:w%>is%^DIM%> ANDIM ;
 
 
 
@@ -258,7 +258,7 @@ INABSDECL ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
 +N+IN+Der/Dim:%>is%^DIMis%> INDIM ;
-+N+IN+Der/Dim:%>%^DIMis%> INDIM ;
++N+IN+Der/Dim:%>is%^DIM%> INDIM ;
 
 LEXICON INDECLisis !!= * @CODE@ for the inanimate declension, diminutive: -isis-
 INABSDECL ;
@@ -272,7 +272,7 @@ INABSDECL ;
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
-+N+IN+Der/Dim:%>%^DIMis%> INDIM ;
++N+IN+Der/Dim:%>is%^DIM%> INDIM ;
 
 LEXICON INDECLosi !!= * @CODE@ for the inanimate declension of ôsi, an irregular noun
 < "+N":s "+IN":i "+Sg":0 "@U.noun.abs@" >  SG_ ; !
@@ -281,7 +281,7 @@ LEXICON INDECLosi !!= * @CODE@ for the inanimate declension of ôsi, an irregula
 +N+IN+Sg:s%> INSUFF_SG ;
 +N+IN+Pl:s%> INSUFF_PL ;
 +N+IN:s%> INSUFF_LOC ;
-+N+IN+Der/Dim:s%>%^DIMis%> INDIM ;
++N+IN+Der/Dim:s%>is%^DIM%> INDIM ;
 
 
 LEXICON INDIMDERIVATION !!= * @CODE@ for hardcoded noun:diminutive
@@ -322,8 +322,8 @@ LEXICON INABLGENERIC !!= * @CODE@ generic forms Sg, Pl, Loc and diminutives
 +Sg: SG_ ;
 +Pl: PLa ;
  LOC ;
-+Der/Dim+N+IN+Sg:%>%^DIMis%> SG_ ;
-+Der/Dim+N+IN+Pl:%>%^DIMis%> PLa ;
++Der/Dim+N+IN+Sg:%>is%^DIM%> SG_ ;
++Der/Dim+N+IN+Pl:%>is%^DIM%> PLa ;
 
 
 
