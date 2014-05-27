@@ -12,11 +12,11 @@ Tests:
   Noun - anikwacâs - ok : # -m animate noun, squirrel
      anikwacâs+N+AN+Sg: anikwacâs
      anikwacâs+N+AN+Pl: anikwacâsak
-     anikwacâs+N+AN+Loc: anikwacâsihk
+     anikwacâs+N+AN+Loc: [anikwacâsihk, anikwacâsinâhk]
      anikwacâs+N+AN+Obv: anikwacâsa
      anikwacâs+N+AN+Der/Dim+N+AN+Sg: anikwacâsis
      anikwacâs+N+AN+Der/Dim+N+AN+Pl: anikwacâsisak
-     anikwacâs+N+AN+Der/Dim+N+AN+Loc: anikwacâsisihk
+     anikwacâs+N+AN+Der/Dim+N+AN+Loc: [anikwacâsisinâhk, anikwacâsisihk]
 
      anikwacâs+N+AN+Sg+Px1Sg: nitanikwacâsim
      anikwacâs+N+AN+Sg+Px2Sg: kitanikwacâsim
@@ -38,25 +38,22 @@ Tests:
      anikwacâs+N+AN+Pl+Px3Pl+Obv: otanikwacâsimiwâwa
      anikwacâs+N+AN+Pl+Px4Pl+Obv: otanikwacâsimiyiwa
 
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nitanikwacâsisim
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kitanikwacâsisim
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: otanikwacâsisima
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: otanikwacâsisimiyiwa
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nitanikwacâsisiminân
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kitanikwacâsisiminaw
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kitanikwacâsisimiwâw
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: otanikwacâsisimiwâwa
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: otanikwacâsisimiyiwa
+     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nitanikwacâsimis
+     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kitanikwacâsimis
+     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: otanikwacâsimisa
+     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: otanikwacâsimisiyiwa
+     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nitanikwacâsimisinân
+     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kitanikwacâsimisinaw
+     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kitanikwacâsimisiwâw
+     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: otanikwacâsimisiwâwa
+     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: otanikwacâsimisiyiwa
 
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nitanikwacâsisimak
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kitanikwacâsisimak
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: otanikwacâsisima
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: otanikwacâsisimiyiwa
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nitanikwacâsisiminânak
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kitanikwacâsisiminawak
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kitanikwacâsisimiwâwak
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: otanikwacâsisimiwâwa
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: otanikwacâsisimiyiwa
+     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nitanikwacâsimisak
+     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px2Sg:  kitanikwacâsimisak
+     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: otanikwacâsimisa
+     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: otanikwacâsimisiyiwa
+     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nitanikwacâsimisinânak
+     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kitanikwacâsimisinawak
 
      anikwacâs+N+AN+Px1Sg+Loc: nitanikwacâsimihk
      anikwacâs+N+AN+Px2Sg+Loc: kitanikwacâsimihk
@@ -68,12 +65,12 @@ Tests:
      anikwacâs+N+AN+Px3Pl+Loc: otanikwacâsimiwâhk 
      anikwacâs+N+AN+Px4Pl+Loc: otanikwacâsimiyihk
 
-     anikwacâs+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nitanikwacâsisimihk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kitanikwacâsisimihk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px3Sg+Loc: otanikwacâsisimihk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px4Sg+Loc: otanikwacâsisimiyihk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nitanikwacâsisiminâhk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kitanikwacâsisiminâhk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kitanikwacâsisimiwâhk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px3Pl+Loc: otanikwacâsisimiwâhk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px4Pl+Loc: otanikwacâsisimiyihk
+     anikwacâs+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nitanikwacâsimisihk
+     anikwacâs+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kitanikwacâsimisihk
+     anikwacâs+N+AN+Der/Dim+N+AN+Px3Sg+Loc: otanikwacâsimisihk
+     anikwacâs+N+AN+Der/Dim+N+AN+Px4Sg+Loc: otanikwacâsimisiyihk
+     anikwacâs+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nitanikwacâsimisinâhk
+     anikwacâs+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kitanikwacâsimisinâhk
+     anikwacâs+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kitanikwacâsimisiwâhk
+     anikwacâs+N+AN+Der/Dim+N+AN+Px3Pl+Loc: otanikwacâsimisiwâhk
+     anikwacâs+N+AN+Der/Dim+N+AN+Px4Pl+Loc: otanikwacâsimisiyihk
