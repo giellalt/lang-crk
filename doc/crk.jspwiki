@@ -171,7 +171,7 @@ the ê- prefix, and future conditional never has a prefix.
 
  * @U.verb.FutCon@  Future Conditional
 
- * @U.verb.sbj@   Conjunctive (Conjunct)
+ * @U.mood.cnj@   Conjunctive (Conjunct)
  * @U.verb.fut@   Future Conditional
 
 Prefixes with a certain phonological content:
@@ -249,25 +249,22 @@ Note that this rule probably is wrong, and that the -w- is
 a morphological affix rather than a phonological variant.
 
 
-__w Insertion in Front of Vowel Initial Suffix after ksv c__  This rule is applying in places where it should not. The usefulness of this rule needs to be rethought before it is re-isntated
-
 
 __locative alternations o__ Okimasis 2004: 26, Rule 1: -k + ohk
 
-__locative alternations aaw 1__ (first) : Okimasis 2004: 26, Rule 2, 8: delete i, a, o: -Vow + (w/y) + ihk  OBS
+__locative alternations: Vow:0 in front of  w/y__ (first) : Okimasis 2004: 26, Rule 2, 8: delete i, a, o: -Vow + (w/y) + ihk  OBS
 
 __o:oo- alternation initially in possessive forms__ , Okimasis p. 135  OBS
 
-__locative alternations aaw 2__ (second) : Okimasis 2004: 26, Rule 2: delete w / y
+__locative alternations: x/y:0__ (second) : Okimasis 2004: 26, Rule 2: delete w / y
 
-__locative alternations aaw 3a__ (third) : Okimasis 2004: 26, Rule 2: -âhk
+__locative alternations: i:aa__ (third) : Okimasis 2004: 26, Rule 2: -âhk
 
-__locative alternation iihk 3i__  Okimasis 2004: 26, Rule 3: -îhk
+__locative alternations: i:aa__  Okimasis 2004: 26, Rule 3: -îhk
 
 __locative alternation oohk io__ Okimasis 2004: 26, Rule 4: -ôhk
 
 __locative alternation naahk 1		__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
-
 
 
 __t2:t between prefix and vowel__ 
@@ -281,13 +278,10 @@ __i2:0 in possessive element__
 
 __w:0 in front of possessive suffix__ 
 
-__y:0 in front of possessive suffix__ 
 
-__o:w in possessive prefix__ , step 1. Okimasis p. 138 ! 
+__o:w in possessive prefix__ , w- in front of î, a, â (?) in possessive forms
 
-
-__o:0 in possessive prefix__ , step 1. Okimasis p. 138 ! 
-
+__o:0 in possessive prefix__ , Okimasis p. 140 
 
 __i to a in prefixes in front of nasals__ 
 
@@ -346,16 +340,16 @@ The prefixes
 
 Nouns redirects to AN-IN, BODY and INALIENABLE
 
-AN-IN for both animate and inanimate nouns, redirects to STEMS
+AN-IN adding prefixes ni-, ki-, o-. Redirects to STEMS
 
 
 
 
-BODY for bodyparts, similar to INALIENABLE but it give the generic form m-. Redirects to BODYSTEMS. 
+BODY adding prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS. 
 
 
 
-INALIENABLE redirects to INALIENABLESTEMS
+INALIENABLE adding prefixes n-, k-, o-. redirects to INALIENABLESTEMS
 
 
 
@@ -365,17 +359,17 @@ INALIENABLE redirects to INALIENABLESTEMS
 
 STEMS add a affixmark and redirects to STEMLIST
 
-STEMLIST contains most of the nouns
+STEMLIST for nouns getting prefixes ni-, ki-, o-
 
 
 
 INALIENABLESTEMS adds a affixmark and redirects to INABLESTEMLIST
 
-INABLESTEMLIST for dependent nouns
+INABLESTEMLIST for dependent nouns getting prefixes n-, k-, o-
 
 BODYSTEMS adds a affixmark and redirects to BODYSTEMLIST
 
-BODYSTEMLIST for dependent bodypartnouns. It generates a generic form m-
+BODYSTEMLIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m-
 
 
 
@@ -517,20 +511,20 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON ANniska  for the irregular niska N+AN
 
+ * LEXICON ANniskaSUFFLOC  for the irregular niska N+AN
+
+
 
  * LEXICON ANimDECL  for the animate declension, poss.-im-
 
 
- * LEXICON ANDIMim  the diminutives with poss.-im- after the dim.suffix
 
 
  * LEXICON ANiskwew  for iskwêw. Special lexicon because of diminutive iskwês
 
-
  * LEXICON ANimDECLw  for the animate declension, poss.-im-. For nouns with final -w when poss -im- comes before diminutive. We could do the job in twolc instead. 
 
 
- * LEXICON ANimDIMw  poss.-im- after the the diminutive tag
 
 
  * LEXICON ANDECLisis  for the animate declension, -isis diminutive
