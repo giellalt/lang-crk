@@ -49,11 +49,10 @@ Rules
 Vx:0 <=> Cons _ %>:0 ( %^POS:0 ) ( %>:0 )  Vow ;
 	where Vx in ( a e o â ê î ô ) ;  !niska
 
-"i deletion in vowel final stems"
-!! __@RULENAME@__ 
-i:0 <=> _ %>:0 %>:0 i ; 
-        _ w:0 %>:0 %^POS:0 i: ;
-        Vow w: _ %>:0 [ a: | i: ] ; !wâwi+a wâwi+ihk
+"i deletion in vowel final stems"					  
+!! __@RULENAME@__ For diminutives we have a special rule, because of lengthened								  
+i:0 <=> _ w:0 %>:0 %^POS:0 i: ;     !o+pikiw+iyiwa	 				  
+        Vow w: _ %>:0 [ a: | i: ] ; !wâwi+a wâwi+ihk wâwi+is
 
 "w Insertion in Front of Vowel Initial Suffix after ksv c"
 !! __@RULENAME@__ inserts w after k in front of plural -ak
@@ -128,10 +127,10 @@ i2:i <=> [ n | s | p ] ( %>:0 )  _ m  ;
 !! __@RULENAME@__ 
 i2:0 <=> [ â | ô | ê | o: | i: ] ( w: )  %>:0  _ [ m | s ]  ; ! possessive element
 
-"w:0 in front of possessive suffix"
+"w/y:0 in front of suffixes"
 !! __@RULENAME@__ 
-[ w:0 | y:0 ] <=> [ Vow | o: ] _  %>:0 [ %^POS:0 | i2: | %^DIM:0 ] [ i: | m: | s: ] ; ! okimâw, maniway
-
+[ w:0 | y:0 ] <=> [ Vow: | o: | i: ] _  %>:0 [ %^POS:0 | i2:] [ i: | m: | s: ] ; ! okimâw, maniway 
+                  Vow _ %>:0  i: s:  %^DIM:0 ; !pikiw+is
  
 "o:w in possessive prefix"
 !! __@RULENAME@__ , w- in front of î, a, â (?) in possessive forms
@@ -168,10 +167,10 @@ t:c <=>  _ :*  %>:0 Dim .#. ; ! cehcapiwinisis
 !  unsure about this
 !t2:c <=>  _ %>:0 Vow Dim .#. ; 
 
-"In Vow+y/w final stems with Diminutives, part 1: delete y/w" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
-Vx:0 <=> Vow _ %>:0 i: s: %^DIM:0 i: s: ;
-	where Vx in (w y) ;
+!"In Vow+y/w final stems with Diminutives, part 1: delete y/w" 
+!!! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth vowels are lengthened
+!Vx:0 <=> Vow _ %>:0  %^DIM:0 i: s: ;  ! pikiw+is
+!	where Vx in (w y) ;
 
 
 "In Vow+y/w final stems with Diminutives, part 2: lengthen stem final vowel" 
@@ -187,7 +186,7 @@ a:â  <=> Cons _ [ y:0 | w:0 ] %>:0 %^POS:0  i: ;  !Not functioning waniwayiyiw 
 
 "In Vow+y/w final stems with Diminutives, part 3: delete i in suffix" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 3. Vw final stems lose the w, shorth voewels are lengthened
-i:0 <=> [ o: | a: | e: | ê: | :î | ô: ] [ y:| w: ] %>:0 _ s: %^DIM:0 i: s: ;
+i:0 <=> [ o: | a: | e: | ê: | :î | ô: | i: ] [ y: | w: ] %>:0 _ s: %^DIM:0  ; ! pikiw+is
 
 !"Vowel lengthening in iw final nouns with diminutives" !Is covered by part 2
 !i:î <=> _ [ y:| w: ] %>:0 i: s: %^DIM:0 i: s: ;
