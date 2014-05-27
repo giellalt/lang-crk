@@ -62,10 +62,6 @@ i:0 <=> _ %>:0 %>:0 i ;
 0:w <=> [ k: | o: | ô: ] %>:0 _ a k ; ! sikâk:sikâkwak ôhô:ôhôwak cahcahkayo:cahcahkayowak ninekihikwak ninekihik - ak
          h: p: %>:0 _ a k ; ! sihkihp:sihkihpwak
  
- 
-!"Stem Final n" 
-!! __@RULENAME@__  This rule is applying in places where it should not. The usefulness of this rule needs to be rethought before it is re-isntated
-!n:0 <=> _ %>:0 Cns ; 
 
 
 "locative alternations o"
@@ -73,35 +69,33 @@ i:0 <=> _ %>:0 %>:0 i ;
 i:o <=> k %>:0 _  %^LC:0 ; 
 
 ! first
-"locative alternations aaw 1"
+"locative alternations: Vow:0 in front of  w/y"
 !! __@RULENAME@__ (first) : Okimasis 2004: 26, Rule 2, 8: delete i, a, o: -Vow + (w/y) + ihk  OBS
 Vx:0 <=> Cons  _ [ w: | y: ] %>:0  i: %^LC:0 ;   
-!Vx:0 <=> .#. \Pos _ [ w: | y: ] %>:0  i: %^LC:0 ;   
     where Vx in ( i a o ) ; ! cahcahkâyow > cahcahkâyôhk, tohtôsâpoyôhk cahcahkâyowôhk
 
 "o:oo- alternation initially in possessive forms"
 !! __@RULENAME@__ , Okimasis p. 135  OBS
-o:ô <=> t2: %>:0 _  k :* i2: m %^POS:0  ; ! okimâw:nitôkimâm ! first only in front of k
+o:ô <=> t2: %>:0 _  k :* i2:   ; ! okimâw:nitôkimâm ! careful: only in front of k
  		 %>:0 t _  h :* i2:0  ; ! nitohtôsâpom tohtôsâpoy
- 		_ [ w: | y: ] %>:0 i2: \Loc ; ! cahcahkâyow > nicahcahkâyôm
+ 		_ [ w: | y: ] %>:0 i2: m: ; ! cahcahkâyow > nicahcahkâyôm
 		_ [ w: | y: ] %>:0 %^DIM:0 s: i: ;
       
 ! second
-"locative alternations aaw 2"
+"locative alternations: x/y:0"
 !! __@RULENAME@__ (second) : Okimasis 2004: 26, Rule 2: delete w / y
 !Cx:0 <=> [ a: | i: | o: ] _  %>:0  i: %^LC:0 ;  ! cahcahkâyow > cahcahkâyôhk
 Cx:0 <=> .#. \Pos [ a: | i: | o: ] _  %>:0  i: %^LC:0 ;  
     where Cx in ( w y ) ;
 
 ! third
-"locative alternations aaw 3a"
+"locative alternations: i:aa"
 !! __@RULENAME@__ (third) : Okimasis 2004: 26, Rule 2: -âhk
 i:â <=>  [ ô | ê | a: ] [ w: | y: ]  %>:0  _ %^LC:0 ; 
-!i:â <=>  .#. \Pos [ ô | ê | a: ] [ w: | y: ]  %>:0  _ %^LC:0 ; 
 
-"locative alternation iihk 3i"
-!! __@RULENAME@__  Okimasis 2004: 26, Rule 3: -îhk
-i:î <=> i: y:  %>:0  _ %^LC:0 .#. ; 
+!"locative alternation iihk 3i"
+!!! __@RULENAME@__  Okimasis 2004: 26, Rule 3: -îhk
+!i:î <=> i: y:  %>:0  _ %^LC:0 .#. ; 
 
 "locative alternation oohk io"
 !! __@RULENAME@__ Okimasis 2004: 26, Rule 4: -ôhk
@@ -116,9 +110,6 @@ i:ô <=> o: [ y: | w: ]  %>:0  _ %^LC:0  ;
 !! __@RULENAME@__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
 w:n <=> [ ê | ô ] _  %>:0 i: %^LC:0  ;
 
-!"Double i-vowel with locatives"
-!!i:0 <=> Vow %> _ %^LC:0  ;
-
 
 "t2:t between prefix and vowel"
 !! __@RULENAME@__ 
@@ -126,7 +117,7 @@ t2:t  <=> _ %>:0 Vow ;
 
 "i2:o in possessive element"
 !! __@RULENAME@__ 
-i2:o <=> k %>:0  _ m %^POS:0  ;
+i2:o <=> k %>:0  _ m  ;
 
 "i2:i in possessive element"
 !! __@RULENAME@__ 
@@ -135,16 +126,12 @@ i2:i <=> [ n | s | p ] ( %>:0 )  _ m  ;
 
 "i2:0 in possessive element"
 !! __@RULENAME@__ 
-i2:0 <=> [ â | ô | ê | o: | i: ] ( w: )  %>:0  _ [ m | s ] ( %^DIM:0 )  ; ! possessive element
+i2:0 <=> [ â | ô | ê | o: | i: ] ( w: )  %>:0  _ [ m | s ]  ; ! possessive element
 
 "w:0 in front of possessive suffix"
 !! __@RULENAME@__ 
-!w:0 <=> Vow _  %>:0 %^POS:0 i: ;
-w:0 <=> [ Vow | o: ] _  %>:0 [ %^POS:0 | i2: | %^DIM:0 ] [ i: | m: | s: ] ; ! okimâw
+[ w:0 | y:0 ] <=> [ Vow | o: ] _  %>:0 [ %^POS:0 | i2: | %^DIM:0 ] [ i: | m: | s: ] ; ! okimâw, maniway
 
-"y:0 in front of possessive suffix"
-!! __@RULENAME@__ 
-y:0 <=> Cons a: _  %>:0 %^POS:0  i: ; ! maniway waniwayiyiw > waniwâiyiw
  
 "o:w in possessive prefix"
 !! __@RULENAME@__ , w- in front of î, a, â (?) in possessive forms

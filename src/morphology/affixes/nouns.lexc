@@ -13,7 +13,7 @@ LEXICON ANniska !!= * @CODE@ for the irregular niska N+AN
 < "+N":i "+AN":n         "@U.noun.abs@" >  LOCahk ; !
 +N+AN+Sg:i%>i2m ANSUFF_SG ;
 +N+AN+Pl:i%>i2m ANSUFF_PL ;
-+N+AN:i%>i2m ANSUFF_LOC ;
++N+AN:i%>i2m ANniskaSUFFLOC ;
 +N+AN+Der/Dim+N+AN:imis%>%^DIMis ANniskaSUFFLOC ;
 +N+AN+Der/Dim:as%>%^DIMis%> ANABSDECL ;
 +N+AN+Der/Dim+N+AN+Sg:imis%>%^DIMis ANSUFF_SG ;
@@ -24,12 +24,12 @@ LEXICON ANniskaSUFFLOC !!= * @CODE@ for the irregular niska N+AN
 < "+Px1Sg":%^POS  0:i 0:n "@U.noun.1sg@"  > LOCahk ; !
 < "+Px2Sg":%^POS  0:i 0:n "@U.noun.2sg@"  > LOCahk ; !
 < "+Px3Sg":%^POS  0:i 0:n "@U.noun.3sg@"  > LOCahk ; !
-< "+Px4Sg":%^POS 0:i 0:y 0:i 0:n "@U.noun.3isg@" > LOCahk ; !
-< "+Px1Pl":%^POS  0:i 0:n 0:â 0:n "@U.noun.1pl@"  > LOCahk ;   ! exclusive Pl
-< "+Px12Pl":%^POS 0:i 0:n 0:â 0:n "@U.noun.12pl@" > LOCahk ; ! inclusive Pl
-< "+Px2Pl":%^POS  0:i 0:w 0:â 0:n "@U.noun.2pl@"  > LOCahk ; !
-< "+Px3Pl":%^POS  0:i 0:w 0:â 0:n "@U.noun.3pl@"  > LOCahk ; !
-< "+Px4Pl":%^POS 0:i 0:y 0:i 0:n "@U.noun.3isg@" > LOCahk ; !
+< "+Px4Sg":%^POS 0:i 0:y "@U.noun.3isg@" > LOC ; !
+< "+Px1Pl":%^POS  0:i 0:n  "@U.noun.1pl@"  > LOCahk ;   ! exclusive Pl
+< "+Px12Pl":%^POS 0:i 0:n  "@U.noun.12pl@" > LOCahk ; ! inclusive Pl
+< "+Px2Pl":%^POS  0:i 0:w  "@U.noun.2pl@"  > LOCahk ; !
+< "+Px3Pl":%^POS  0:i 0:w  "@U.noun.3pl@"  > LOCahk ; !
+< "+Px4Pl":%^POS 0:i 0:y "@U.noun.3isg@" > LOC ; !
 
 
 LEXICON ANimDECL !!= * @CODE@ for the animate declension, poss.-im-
@@ -39,23 +39,30 @@ ANABSDECL ;
 +N+AN:%>i2m ANSUFF_LOC ;
 !+N+AN+Der/Dim:%>%^DIMis%> ANDIMim ; !poss.-im- after dim.suffix
 !+N+AN+Der/Dim:%>is%^DIMis%> ANDIMim ; !poss.-im- after dim.suffix
-+N+AN+Der/Dim:i2m%>%^DIMis%> ANDIM ; !poss.-im- before dim.suffix
-+N+AN+Der/Dim:i2m%>is%^DIMis%> ANDIM ; !poss.-im- before dim.suffix
++N+AN+Der/Dim:%>is%^DIM%> ANABSDECL ; !
++N+AN+Der/Dim+N+AN:%>i2m%^DIMis%> ANSUFF_LOC ; !
++N+AN+Der/Dim+N+AN+Sg:%>i2m%^DIMis%> ANSUFF_SG ; !
++N+AN+Der/Dim+N+AN+Pl:%>i2m%^DIMis%> ANSUFF_PL ; !
 
 
-LEXICON ANDIMim !!= * @CODE@ the diminutives with poss.-im- after the dim.suffix
-+N+AN:%>im ANSUFF_LOC ;
- ANABSDECL ;
-+N+AN+Sg:%>im ANSUFF_SG ;
-+N+AN+Pl:%>im ANSUFF_PL ;
+!LEXICON ANDIMim ! the diminutives with poss.-im- after the dim.suffix
+!+N+AN:%>im ANSUFF_LOC ;
+! ANABSDECL ;
+!+N+AN+Sg:%>im ANSUFF_SG ;
+!+N+AN+Pl:%>im ANSUFF_PL ;
 
 
 LEXICON ANiskwew !!= * @CODE@ for iskwêw. Special lexicon because of diminutive iskwês
- :w ANABSDECL ;
+< "+N":w "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+N":w "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
+< "+N":w "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
+< "+N":w "+AN":0         "@U.noun.abs@" >  LOC ; !
+!< "+N":i "+AN":n         "@U.noun.abs@" >  LOCahk ; !
 +N+AN+Sg:%>m ANSUFF_SG ;
 +N+AN+Pl:%>m ANSUFF_PL ;
 +N+AN:%>m ANSUFF_LOC ;
 !+N+AN+Der/Dim:%>%^DIMs%> ANimDIMw ;
++N+AN+Der/Dim:%>%^DIMs%> ANABSDECL ; !
 +N+AN+Der/Dim+N+AN:m%>%^DIMis%> ANSUFF_LOC ; !-im- before dim.suffix
 +N+AN+Der/Dim+N+AN+Sg:m%>%^DIMis%> ANSUFF_SG ; !-im- before dim.suffix
 +N+AN+Der/Dim+N+AN+Pl:m%>%^DIMis%> ANSUFF_PL ; !-im- before dim.suffix
@@ -66,10 +73,10 @@ LEXICON ANimDECLw !!= * @CODE@ for the animate declension, poss.-im-. For nouns 
 +N+AN+Pl:w%>i2m ANSUFF_PL ;
 +N+AN:w%>i2m ANSUFF_LOC ;
 !+N+AN+Der/Dim:w%>%^DIMsis%> ANimDIMw ;
-+N+AN+Der/Dim+N+AN:m%>%^DIMis%> ANSUFF_LOC ; !-im- before dim.suffix
-+N+AN+Der/Dim+N+AN+Sg:m%>%^DIMis%> ANSUFF_SG ; !-im- before dim.suffix
-+N+AN+Der/Dim+N+AN+Pl:m%>%^DIMis%> ANSUFF_PL ; !-im- before dim.suffix
-+N+AN+Der/Dim:%>%^DIMis%> ANABSDECL ; 
++N+AN+Der/Dim+N+AN:w%>i2m%^DIMis%> ANSUFF_LOC ; !-im- before dim.suffix
++N+AN+Der/Dim+N+AN+Sg:w%>i2m%^DIMis%> ANSUFF_SG ; !-im- before dim.suffix
++N+AN+Der/Dim+N+AN+Pl:w%>i2m%^DIMis%> ANSUFF_PL ; !-im- before dim.suffix
++N+AN+Der/Dim:%>s%^DIMis%> ANABSDECL ; 
 
 
 !LEXICON ANimDIMw 
@@ -392,7 +399,7 @@ LEXICON INSUFF_SG !!= * @CODE@
 < "+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" > SG_ ; ! inclusive Pl
 < "+Px2Pl":%^POS  0:i 0:w 0:â 0:w "@U.noun.2pl@"  > SG_ ; !
 < "+Px3Pl":%^POS  0:i 0:w 0:â 0:w "@U.noun.3pl@"  > SG_ ; !
-< "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > SG_ ; ! obviative plural possessor
+< "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > SG_ ; !
 
 
 LEXICON INSUFF_PL !!= * @CODE@ 
