@@ -8,16 +8,16 @@ The prefixes
 
 Nouns redirects to AN-IN, BODY and INALIENABLE
 
-AN-IN for both animate and inanimate nouns, redirects to STEMS
+AN-IN adding prefixes ni-, ki-, o-. Redirects to STEMS
 
 
 
 
-BODY for bodyparts, similar to INALIENABLE but it give the generic form m-. Redirects to BODYSTEMS. 
+BODY adding prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS. 
 
 
 
-INALIENABLE redirects to INALIENABLESTEMS
+INALIENABLE adding prefixes n-, k-, o-. redirects to INALIENABLESTEMS
 
 
 
@@ -27,17 +27,17 @@ INALIENABLE redirects to INALIENABLESTEMS
 
 STEMS add a affixmark and redirects to STEMLIST
 
-STEMLIST contains most of the nouns
+STEMLIST for nouns getting prefixes ni-, ki-, o-
 
 
 
 INALIENABLESTEMS adds a affixmark and redirects to INABLESTEMLIST
 
-INABLESTEMLIST for dependent nouns
+INABLESTEMLIST for dependent nouns getting prefixes n-, k-, o-
 
 BODYSTEMS adds a affixmark and redirects to BODYSTEMLIST
 
-BODYSTEMLIST for dependent bodypartnouns. It generates a generic form m-
+BODYSTEMLIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m-
 
 
 
