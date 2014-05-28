@@ -80,17 +80,6 @@ LEXICON ANiskwew !!= * @CODE@ for iskwêw. Special lexicon because of diminutive
 +N+AN+Der/Dim+N+AN+Sg:m%>%^DIMis%> ANSUFF_SG ; !-im- before dim.suffix
 +N+AN+Der/Dim+N+AN+Pl:m%>%^DIMis%> ANSUFF_PL ; !-im- before dim.suffix
 
-LEXICON ANimDECLw !!= * @CODE@ for the animate declension, poss.-im-. For nouns with final -w when poss -im- comes before diminutive. We could do the job in twolc instead. 
- :w ANABSDECL ;
-+N+AN+Sg:w%>i2m ANSUFF_SG ;
-+N+AN+Pl:w%>i2m ANSUFF_PL ;
-+N+AN:w%>i2m ANSUFF_LOC ;
-!+N+AN+Der/Dim:w%>%^DIMsis%> ANimDIMw ;
-+N+AN+Der/Dim+N+AN:w%>i2m%^DIMis%> ANSUFF_LOC ; !-im- before dim.suffix
-+N+AN+Der/Dim+N+AN+Sg:w%>i2m%^DIMis%> ANSUFF_SG ; !-im- before dim.suffix
-+N+AN+Der/Dim+N+AN+Pl:w%>i2m%^DIMis%> ANSUFF_PL ; !-im- before dim.suffix
-+N+AN+Der/Dim:%>s%^DIMis%> ANABSDECL ; 
-
 
 !LEXICON ANimDIMw 
 !< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
@@ -101,12 +90,12 @@ LEXICON ANimDECLw !!= * @CODE@ for the animate declension, poss.-im-. For nouns 
 !+N+AN+Pl:i2m ANSUFF_PL ;
 
 
-LEXICON ANDECLisis !!= * @CODE@ for the animate declension, -isis diminutive
-ANABSDECL ;
-+N+AN+Sg:%> ANSUFF_SG ;
-+N+AN+Pl:%> ANSUFF_PL ;
-+N+AN:%> ANSUFF_LOC ;
-+N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
+!LEXICON ANDECLisis for the animate declension, -isis diminutive, not in use as the moment
+!ANABSDECL ;
+!+N+AN+Sg:%> ANSUFF_SG ;
+!+N+AN+Pl:%> ANSUFF_PL ;
+!+N+AN:%> ANSUFF_LOC ;
+!+N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
 
 LEXICON ANDECLis !!= * @CODE@ for the animate declension, -is diminutive
 ANABSDECL ;
