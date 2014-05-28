@@ -94,9 +94,15 @@ i:î <=> Cons _ [ w: | y: ] %>:0 [ i: | i2: ] ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %
 !i:î <=> i: y:  %>:0  _ %^LC:0 .#. ; !piwik OBS
 
                                     
-!"locative alternation naahk 1"		
-!!! __@RULENAME@__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
-!w:n <=> [ ê | ô ] _  %>:0 i: %^LC:0  ; OBS
+"locative alternation naahk 1"		
+!! __@RULENAME@__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
+!! iskwêw+ikh
+w:n <=> [ ê | ô ] _  %>:0 i: %^LC:0  ; 
+
+"locative alternation naahk 2"		
+!! __@RULENAME@__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
+!! iskwên+ikh
+i:â <=> [ ê | ô ] w:n  %>:0 _ %^LC:0  ; 
 
 
 "t2:t between prefix and vowel"
