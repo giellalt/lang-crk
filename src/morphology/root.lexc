@@ -191,21 +191,19 @@ i2 		!!= * @CODE@  Possessive element
 @U.perspref.KI@ !!= * @CODE@  test
 
 ! Test:
-@U.verb.Prs@
-@U.verb.Prt@  
-@U.verb.FutDef@
-@U.verb.FutInt@
-@U.verb.FutCon@
 @U.mood.imp@
-
-	@U.mood.indep@
+@U.mood.indep@
 @U.tense.Prs@
 @U.tense.Prt@  
-@U.mood.FutDef@
+@U.tense.FutDef@
+@U.tense.FutInt@
+@U.tense.FutCon@
+@U.mood.indep@
 @U.mood.FutInt@
 @U.mood.FutCon@
-
-
+@D.mood@
+@D.tense@
+@R.mood.cnj@
 @U.verb.1sgindep@ !!= * @CODE@
 @U.verb.2sgindep@ !!= * @CODE@
 @U.verb.3osgindep@ !!= * @CODE@

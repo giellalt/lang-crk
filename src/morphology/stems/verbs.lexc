@@ -45,11 +45,11 @@ TA ; ! transitive animate
 !     ====================
 
 LEXICON IA   !!= @CODE@ divides IA in independent, conjunctive, imperative and future conditional
-          IA_INDEPENDENT ;		  !!= * @CODE@
-!:ê-       IA_CONJUNCTIV ;		  !!= * @CODE@ , note: two versions of conjunctive
-!:ê%^EGLOT IA_CONJUNCTIV ;		  !!= * @CODE@ 
-!          IA_IMPERATIV ;		  !!= * @CODE@
-!          IA_FUTURE_CONDITIONAL ; !!= * @CODE@
+ IA_INDEPENDENT ;		  !!= * @CODE@
+ IA_CONJUNCTIV ;		  !!= * @CODE@ , note: two versions of conjunctive
+ IA_CONJUNCTIV ;		  !!= * @CODE@ 
+ IA_IMPERATIV ;		      !!= * @CODE@
+ IA_FUTURE_CONDITIONAL ;  !!= * @CODE@
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
 
@@ -64,26 +64,27 @@ LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number i
 LEXICON IATNS
 <                   "@U.tense.Prs@"     > IALIST ; !"
 < 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IALIST ; !" removed hyph
-!< 0:k 0:î 0:%-      "@U.tense.Prt@"     > IALIST ; !
-!< 0:k 0:a 0:%^EGLOT "@U.mood.FutDef@"  > IALIST ; !"
-!< 0:k 0:a 0:%-      "@U.mood.FutDef@"  > IALIST ; !"
-!< 0:w 0:î 0:%^EGLOT "@U.mood.FutInt@"  > IALIST ; !"
-!< 0:w 0:î 0:%-      "@U.mood.FutInt@"  > IALIST ; !"
+< 0:k 0:î 0:%-      "@U.tense.Prt@"     > IALIST ; !
+< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@"  > IALIST ; !"
+< 0:k 0:a 0:%-      "@U.tense.FutDef@"  > IALIST ; !"
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > IALIST ; !"
+< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > IALIST ; !"
 
 
-!LEXICON IA_FUTURE_CONDITIONAL
-!< "@U.mood.FutCon@" > IALIST ;
-!
-!
-!LEXICON IA_CONJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
-!
-!<              "@U.mood.cnj@" "@U.tense.Prs@"    > IALIST ; !Present
-!< 0:k 0:î 0:%- "@U.mood.cnj@" "@U.tense.Prt@"    > IALIST ;  ! Preterite,  Is this correct? TT
-!< 0:w 0:î 0:%- "@U.mood.cnj@" "@U.mood.FutInt@" > IALIST ; ! Future Intentional
-!
-!
-!LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
-!@U.mood.imp@  IALIST ;
+LEXICON IA_FUTURE_CONDITIONAL
+< "@U.mood.FutCon@" > IALIST ;
+
+
+LEXICON IA_CONJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
+< 0:ê 0:%- "@U.mood.cnj@" "@U.tense.Prs@"    > IALIST ; !Present
+
+< 0:ê 0:%^EGLOT "@U.mood.cnj@" "@U.tense.Prs@"    > IALIST ; !Present
+< 0:k 0:î 0:%- "@U.mood.cnj@" "@U.tense.Prt@"    > IALIST ;  ! Preterite,  Is this correct? TT
+< 0:w 0:î 0:%- "@U.mood.cnj@" "@U.tense.FutInt@" > IALIST ; ! Future Intentional
+
+
+LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
+@U.mood.imp@  IALIST ;
 
 
 LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
