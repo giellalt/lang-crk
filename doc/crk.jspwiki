@@ -331,16 +331,16 @@ The prefixes
 
 Nouns redirects to AN-IN, BODY and INALIENABLE
 
-AN-IN adding prefixes ni-, ki-, o-. Redirects to STEMS
+AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
 
 
 
 
-BODY adding prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS. 
+BODY  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
 
 
 
-INALIENABLE adding prefixes n-, k-, o-. redirects to INALIENABLESTEMS
+INALIENABLE  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
 
 
 
@@ -348,17 +348,17 @@ INALIENABLE adding prefixes n-, k-, o-. redirects to INALIENABLESTEMS
 
 !Animate and inanimate Nouns
 
-STEMS add a affixmark and redirects to STEMLIST
+STEMS adds an affixmark and redirects to STEMLIST
 
 STEMLIST for nouns getting prefixes ni-, ki-, o-
 
 
 
-INALIENABLESTEMS adds a affixmark and redirects to INABLESTEMLIST
+INALIENABLESTEMS adds an affixmark and redirects to INABLESTEMLIST
 
 INABLESTEMLIST for dependent nouns getting prefixes n-, k-, o-
 
-BODYSTEMS adds a affixmark and redirects to BODYSTEMLIST
+BODYSTEMS adds an affixmark and redirects to BODYSTEMLIST
 
 BODYSTEMLIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m-
 
@@ -505,18 +505,14 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
- * LEXICON ANimDECL  for the animate declension, poss.-im-
+ * LEXICON ANimDECL  for the animate declension, poss.-im-, dim. -is
 
- * LEXICON ANimDECLisis  for the animate declension, poss.-im-
+ * LEXICON ANimDECLisis  for the animate declension, poss.-im-, dim.-isis
 
-
-
-
- * LEXICON ANiskwew  for iskwêw. Special lexicon because of diminutive iskwês
+!LEXICON ANDIMim for diminutives with poss.-im- after the dim.suffix, not in use
 
 
-
-
+!LEXICON ANDECLisis for the animate declension, -isis diminutive, not in use as the moment
 
  * LEXICON ANDECLis  for the animate declension, -is diminutive
 
@@ -529,22 +525,25 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON ANDIM  both for lexicalised and derivated diminutives
 
+
  * LEXICON ANABSDECL  for the animate absolute declension
 
+!LEXICON ANDIMDECL Declension for animate diminutives, adding +Dim-tag to the string. Not in use now.
 
 
- * LEXICON ANDECLatim	 for atim and mistatim.
 
+ * LEXICON ANKININFL  The lexicon gives generic forms to kinship terms and then redirect to ANIRRINFL
 
- * LEXICON ANKININFL  The lexicon gives generic forms to kinship terms
-
- * LEXICON ANKININFLni  Lexicon for kinship terms, baseform = PxSg1
+ * LEXICON ANKININFLni  Lexicon for kinship terms to which I haven't found documented generic form. Baseform = PxSg1, and then redirect to ANIRRINFL
 
 
  * LEXICON ANKINiyINFL   Special treatment for kinship nouns ending with -iy
 
 
  * LEXICON ANKININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
+
+ * LEXICON ANDECLatim	 for atim and mistatim.
+
 
  * LEXICON ANPOSSatim  is also there to handle the highly irregular atim and mistatim
 
@@ -553,23 +552,24 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON ANkwDECL  takes -om as extra suffix in possessed form
 
+ * LEXICON ANDIMIRR  Possessive suffixes to diminutives
 
 
 !!The declinations for Inanimates
 
- * LEXICON INimDECL  for the animate declension, possessive element 
+ * LEXICON INimDECL  for the animate declension, poss.-im-, dim. -is
 
- * LEXICON INimDECLis  for the animate declension, possessive element 
-
-
- * LEXICON INimDIMis  the diminutives with possessive element 
+ * LEXICON INimDECLisis  for the animate declension, poss.-im-, dim. -isis
 
 
- * LEXICON INimDIM  the diminutives with possessive element 
+ * LEXICON INimDIMisis  the diminutives with poss.-im-, dim. -isis
 
- * LEXICON INimDECLy  for the animate declension, possessive element
 
- * LEXICON INimDIMw  the diminutives with possessive element
+ * LEXICON INimDIM  the diminutives with poss.-im-, dim. -is
+
+ * LEXICON INimDECLy  for the animate declension, poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
+
+ * LEXICON INimDIMy  the diminutives with poss.-im-. poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
 
 
  * LEXICON INDECL  for the inanimate declension, diminutive: -is- and -isis-
@@ -590,6 +590,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
+!LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON INALIENABLEDERIVATION   for hardcoded noun:diminutive for inalienables
 
@@ -601,20 +602,13 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON INALIENABLEPOSS_SG  inanimate possessive declension, only Sg
 
-!!Diminutive suffixes
-
-
-!Diminutive suffixes in animate stems taking the form -osis
-
- * LEXICON ANDIMIRR 
-
 
 !!Animate inflectional suffixes
 
- * LEXICON ANSUFF_SG  
+ * LEXICON ANSUFF_SG 
 
 
- * LEXICON ANSUFF_PL  
+ * LEXICON ANSUFF_PL 
 
  * LEXICON ANSUFF_LOC 
 
