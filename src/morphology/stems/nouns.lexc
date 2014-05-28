@@ -31,7 +31,7 @@ EXPER ;
 LEXICON AN-IN
 !! @LEXNAME@ adding prefixes ni-, ki-, o-. Redirects to STEMS
 
-@U.noun.abs@ STEMS ; 
+           @U.noun.abs@            STEMS ; 
 < 0:n 0:i "@U.noun.1sg@"  0:"t2" > STEMS ; ! 1
 < 0:k 0:i "@U.noun.2sg@"  0:"t2" > STEMS ; ! 2
 < 0:o     "@U.noun.3sg@"  0:"t2" > STEMS ; ! 3
@@ -47,17 +47,17 @@ LEXICON EXPER
 
 
 LEXICON BODY
-!! @LEXNAME@ adding prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS. 
-< 0:m "@U.noun.abs@"  > BODYSTEMS ; ! 1
-< 0:n "@U.noun.1sg@"  > BODYSTEMS ; ! 1
-< 0:k "@U.noun.2sg@"  > BODYSTEMS ; ! 2
-< 0:o "@U.noun.3sg@"  > BODYSTEMS ;     ! 3
-< 0:o "@U.noun.3isg@" > BODYSTEMS ;  ! 
-< 0:n "@U.noun.1pl@"  > BODYSTEMS ;   !
-< 0:k "@U.noun.12pl@" > BODYSTEMS ; ! 
-< 0:k "@U.noun.2pl@"  > BODYSTEMS ;  ! 
-< 0:o "@U.noun.3pl@"  > BODYSTEMS ;  ! 
-< 0:o "@U.noun.3ipl@"  > BODYSTEMS ;  !   ! 
+!! @LEXNAME@ adding prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
+< 0:m "@U.noun.abs@"  > BODYSTEMS ; !
+< 0:n "@U.noun.1sg@"  > BODYSTEMS ; !
+< 0:k "@U.noun.2sg@"  > BODYSTEMS ; !
+< 0:o "@U.noun.3sg@"  > BODYSTEMS ; !
+< 0:o "@U.noun.3isg@" > BODYSTEMS ; !
+< 0:n "@U.noun.1pl@"  > BODYSTEMS ; !
+< 0:k "@U.noun.12pl@" > BODYSTEMS ; !
+< 0:k "@U.noun.2pl@"  > BODYSTEMS ; !
+< 0:o "@U.noun.3pl@"  > BODYSTEMS ; !
+< 0:o "@U.noun.3ipl@" > BODYSTEMS ; !
 
 
 
@@ -66,13 +66,13 @@ LEXICON INALIENABLE
 @U.noun.abs@ INALIENABLESTEMS ; 
 < 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
-< 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ;     ! 3
-< 0:o "@U.noun.3isg@" > INALIENABLESTEMS ;  ! 3indef
-< 0:n "@U.noun.1pl@"  > INALIENABLESTEMS ;   ! exclusive Pl
+< 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ; ! 3
+< 0:o "@U.noun.3isg@" > INALIENABLESTEMS ; ! 3indef
+< 0:n "@U.noun.1pl@"  > INALIENABLESTEMS ; ! exclusive Pl
 < 0:k "@U.noun.12pl@" > INALIENABLESTEMS ; ! inclusive Pl
-< 0:k "@U.noun.2pl@"  > INALIENABLESTEMS ;  ! 2pl 
-< 0:o "@U.noun.3pl@"  > INALIENABLESTEMS ;  ! 3pl note: is prefix o- correct?
-< 0:o "@U.noun.3ipl@"  > INALIENABLESTEMS ;     ! 
+< 0:k "@U.noun.2pl@"  > INALIENABLESTEMS ; ! 2pl 
+< 0:o "@U.noun.3pl@"  > INALIENABLESTEMS ; ! 3pl note: is prefix o- correct?
+< 0:o "@U.noun.3ipl@" > INALIENABLESTEMS ; ! 
 
 
 
