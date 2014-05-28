@@ -180,9 +180,6 @@ Prefixes with a certain phonological content:
  * @U.perspref.NI@   test
  * @U.perspref.KI@   test
 
-
-
-
  * @U.verb.1sgindep@ 
  * @U.verb.2sgindep@ 
  * @U.verb.3osgindep@ 
@@ -411,11 +408,11 @@ The Plains Cree verbs are divided in four groups:
 Intransitive animate
 
  LEXICON IA    divides IA in independent, conjunctive, imperative and future conditional
- *           IA_INDEPENDENT ;		  
- * !:ê-       IA_CONJUNCTIV ;		   , note: two versions of conjunctive
- * !:ê%^EGLOT IA_CONJUNCTIV ;		   
- * !          IA_IMPERATIV ;		  
- * !          IA_FUTURE_CONDITIONAL ; 
+ *  IA_INDEPENDENT ;		  
+ *  IA_CONJUNCTIV ;		   , note: two versions of conjunctive
+ *  IA_CONJUNCTIV ;		   
+ *  IA_IMPERATIV ;		      
+ *  IA_FUTURE_CONDITIONAL ;  
 
  LEXICON IA_INDEPENDENT    gives prefixes and flags for person-number in indicative
 
@@ -424,8 +421,13 @@ Intransitive animate
 
 
 
- !LEXICON IA_CONJUNCTIV    gives prefixes and flags for person-number in subjunctive
- !LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
+
+
+ LEXICON IA_CONJUNCTIV    gives prefixes and flags for person-number in subjunctive
+
+
+
+ LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
 
 
  LEXICON IALIST   just adds the prefix boundary
@@ -709,8 +711,6 @@ Intransitive animate (IA)
 
  LEXICON IA_SBJ  Third mode, subjunctive
 
-
- LEXICON subjunctives  gives flag diacritic and directs to subjunctive person suffixes
 
 
 
