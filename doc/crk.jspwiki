@@ -603,7 +603,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
  * LEXICON INALIENABLEPOSS_SG  inanimate possessive declension, only Sg
 
 
-!!Animate inflectional suffixes
+!!Animate possessive suffixes
 
  * LEXICON ANSUFF_SG 
 
@@ -615,7 +615,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
-!!Inanimate inflectional suffixes
+!!Inanimate possessive suffixes
 
 
  * LEXICON INSUFF_SG  
@@ -635,7 +635,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
  * LEXICON ANiySUFF_PL 
 
 
-!Singular/plural possessed suffixes
+!!Singular/plural suffixes
 
 
 
@@ -660,7 +660,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
  * LEXICON PLwak  
 
 
-!Locative suffixes
+!!Locative suffixes
 
  * LEXICON LOC  
 
@@ -670,6 +670,13 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
+!!Obviative suffix
+ * LEXICON OBVIATIVE 
+
+ * LEXICON ANwa_OBV 
+
+!!Special cases
+ * LEXICON NOPREFIX  gives diacr.flag for no prefix. Used for hardcoded forms in the lexicon
 
 
 Plains Cree verb morphology                  
