@@ -107,7 +107,7 @@
  * LEXICON INALIENABLEPOSS_SG  inanimate possessive declension, only Sg
 
 
-!!Animate inflectional suffixes
+!!Animate possessive suffixes
 
  * LEXICON ANSUFF_SG 
 
@@ -119,7 +119,7 @@
 
 
 
-!!Inanimate inflectional suffixes
+!!Inanimate possessive suffixes
 
 
  * LEXICON INSUFF_SG  
@@ -139,7 +139,7 @@
  * LEXICON ANiySUFF_PL 
 
 
-!Singular/plural possessed suffixes
+!!Singular/plural suffixes
 
 
 
@@ -164,7 +164,7 @@
  * LEXICON PLwak  
 
 
-!Locative suffixes
+!!Locative suffixes
 
  * LEXICON LOC  
 
@@ -174,4 +174,11 @@
 
 
 
+!!Obviative suffix
+ * LEXICON OBVIATIVE 
+
+ * LEXICON ANwa_OBV 
+
+!!Special cases
+ * LEXICON NOPREFIX  gives diacr.flag for no prefix. Used for hardcoded forms in the lexicon
 
