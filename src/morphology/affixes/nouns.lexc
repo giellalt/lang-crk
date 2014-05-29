@@ -140,16 +140,16 @@ LEXICON ANKINiyINFL  !!= * @CODE@ Special treatment for kinship nouns ending wit
 
 
 LEXICON ANKININFL_MONOG !!= * @CODE@ Lexicon with reduces possessive paradigm: only one wife/husband
-< "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > # ; !generic form
-< "+N":0 "+AN":0 "+Sg":0 "+Px1Sg":%^POS                  "@U.noun.1sg@"  > SG_ ; !
-< "+N":0 "+AN":0 "+Sg":0 "+Px2Sg":%^POS                  "@U.noun.2sg@"  > SG_ ; !
-< "+N":0 "+AN":0 "+Sg":0 "+Px3Sg":%^POS                  "@U.noun.3sg@"  > OBVIATIVE ; !
-< "+N":0 "+AN":0 "+Sg":0 "+Px4Sg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > OBVIATIVE ; !
-< "+N":0 "+AN":0 "+Pl":0 "+Px1Pl":%^POS  0:i 0:n 0:â 0:n  "@U.noun.1pl@"  >  PLak ;   ! exclusive Pl
-< "+N":0 "+AN":0 "+Pl":0 "+Px12Pl":%^POS 0:i 0:n 0:a 0:w      "@U.noun.12pl@" >  PLak ; ! inclusive Pl
-< "+N":0 "+AN":0 "+Pl":0 "+Px2Pl":%^POS  0:i 0:w 0:â 0:w  "@U.noun.2pl@"  >  PLak ; !
-< "+N":0 "+AN":0 "+Pl":0 "+Px3Pl":%^POS  0:i 0:w 0:â 0:w  "@U.noun.3pl@"  >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
-< "+N":0 "+AN":0 "+Pl":0 "+Px4Pl":%^POS 0:i 0:y 0:i 0:w      "@U.noun.3isg@" >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
+< "+N":i "+AN":m "+Sg":â                             0:w "@U.noun.3ipl@" > #         ; !generic form
+< "+N":0 "+AN":0 "+Sg":0  "+Px1Sg":%^POS                 "@U.noun.1sg@"  > SG_       ; !
+< "+N":0 "+AN":0 "+Sg":0  "+Px2Sg":%^POS                 "@U.noun.2sg@"  > SG_       ; !
+< "+N":0 "+AN":0 "+Sg":0  "+Px3Sg":%^POS                 "@U.noun.3sg@"  > OBVIATIVE ; !
+< "+N":0 "+AN":0 "+Sg":0  "+Px4Sg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > OBVIATIVE ; !
+< "+N":0 "+AN":0 "+Pl":0  "+Px1Pl":%^POS 0:i 0:n 0:â 0:n "@U.noun.1pl@"  > PLak      ; ! exclusive Pl
+< "+N":0 "+AN":0 "+Pl":0 "+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" > PLak      ; ! inclusive Pl
+< "+N":0 "+AN":0 "+Pl":0  "+Px2Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.2pl@"  > PLak      ; !
+< "+N":0 "+AN":0 "+Pl":0  "+Px3Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.3pl@"  > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
+< "+N":0 "+AN":0 "+Pl":0  "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 
 LEXICON ANDECLatim	!!= * @CODE@ for atim and mistatim.
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  #         ; !
