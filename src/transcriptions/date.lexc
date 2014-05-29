@@ -27,25 +27,25 @@ Multichar_Symbols
 ! They will be accepted but not generated.
  
 LEXICON Root
- SINGLEDAYS ; 
  DAYS ;
 ! ZERODAY ; !If we want digits, this path adds 0
 
 !LEXICON ZERODAY !If we want digits, this lexicon adds 0
 ! :%0 SINGLEDAYS ; 
  
-LEXICON SINGLEDAYS !This lexicon makes it possible to add 0
-peyak% :1 EHAKIMIHT ;
-nîso% :2 EHAKIMIHT ;
-nisto% :3 EHAKIMIHT ;
+LEXICON DAYS !This lexicon makes it possible to add 0
+peyak% :1 EHAKIMIHT-1 ;
+peyak% :1st EHAKIMIHT-ST ;
+nîso% :2 EHAKIMIHT-1 ;
+nîso% :2nd EHAKIMIHT-ST ;
+nisto% :3 EHAKIMIHT-1 ;
+nisto% :3rd EHAKIMIHT-ST ;
 newo% :4 EHAKIMIHT ;
 nîyânan% :5 EHAKIMIHT ;
 nikotwâsik% :6 EHAKIMIHT ;
 tepakohp% :7 EHAKIMIHT ;
 ayinânew% :8 EHAKIMIHT ;
 kekâmitâtaht% :9 EHAKIMIHT ;
-
-LEXICON DAYS
 mitâtaht% :1%0 EHAKIMIHT ;
 peyakosâp% :11 EHAKIMIHT ;
 nîsosâp% :12 EHAKIMIHT ;
@@ -57,9 +57,12 @@ têpakohposâp% :17 EHAKIMIHT ;
 ayinânêwosâp% :18 EHAKIMIHT ;
 kîkâmitâtahtosâp% :19 EHAKIMIHT ;
 nîstanaw% :2%0 EHAKIMIHT ;
-nîstanaw% peyakosâp% :21 EHAKIMIHT ;
-nîstanaw% nîsosâp% :22 EHAKIMIHT ;
-nîstanaw% nistosâp% :23 EHAKIMIHT ;
+nîstanaw% peyakosâp% :21 EHAKIMIHT-1 ;
+nîstanaw% peyakosâp% :21st EHAKIMIHT-ST ;
+nîstanaw% nîsosâp% :22 EHAKIMIHT-1 ;
+nîstanaw% nîsosâp% :22nd EHAKIMIHT-ST ;
+nîstanaw% nistosâp% :23 EHAKIMIHT-1 ;
+nîstanaw% nistosâp% :23rd EHAKIMIHT-ST ;
 nîstanaw% nêwosâposâp% :24 EHAKIMIHT ;
 nîstanaw% niyânanosâp% :25 EHAKIMIHT ;
 nîstanaw% nikotwâsiksâp% :26 EHAKIMIHT ;
@@ -67,55 +70,52 @@ nîstanaw% têpakohposâp% :27 EHAKIMIHT ;
 nîstanaw% ayinânêwosâp% :28 EHAKIMIHT ;
 nîstanaw% kîkâmitâtahtosâp% :29 EHAKIMIHT ;
 nistomitanaw% :3%0 EHAKIMIHT30 ;
+nistomitanaw% :3%0th EHAKIMIHT30-ST ;
 nistomitanaw% peyakosâp% :3%1 EHAKIMIHT31 ;
+nistomitanaw% peyakosâp% :3%1st EHAKIMIHT31-ST ;
 
 LEXICON EHAKIMIHT
+  EHAKIMIHT-1 ;
+ :th  EHAKIMIHT-ST ;
+
+LEXICON EHAKIMIHT-1
 ehakimiht% :%.%  29MONTHS ; !5. September
-ehakimiht% :%.%  29MONTHS-SINGLE ; !5. May
 ehakimiht% :%.  29MONTHS ; !5.September
-ehakimiht% :%.  29MONTHS-SINGLE ; !5.May
 ehakimiht% :%  29MONTHS ; !5 September
-ehakimiht% :%  29MONTHS-SINGLE ; !5 May
-!ehakimiht% :%.%  ZEROMONTH ; !If we want digits, this path adds 0
 
-!LEXICON ZEROMONTH !If we want digits, this lexicon adds 0
-! :%0 29MONTHS-SINGLE ;
+LEXICON EHAKIMIHT-ST
+ehakimiht% :% of%  30MONTHS ; !5 September
 
-LEXICON 29MONTHS-SINGLE
+
+LEXICON 29MONTHS
 mikisowipîsimohk:February ENDLEX ; 
 ayikipîsimohk:April ENDLEX ;
 opâskâwewowipîsimohk:June ENDLEX ; 
 onôcihitowipîsimohk:September ENDLEX ; 
-iyikopîwipîsimohk:November ENDLEX ; 
 kisepîsimohk:January ENDLEX ; 
 niskipîsimohk:March ENDLEX ; 
 opiniyâwewowipîsimohk:May ENDLEX ;
 opaskowipîsimohk:July ENDLEX ;
 ohpahowipîsimohk:August ENDLEX ; 
-
-LEXICON 29MONTHS
 kaskatinowipîsimohk:October ENDLEX ;
 manitow% kîsikan% pîsimohk:December ENDLEX ; 
 pawahcakinasîs:December ENDLEX ; 
+iyikopîwipîsimohk:November ENDLEX ; 
 
 LEXICON EHAKIMIHT30
 ehakimiht% :%.%  30MONTHS ; !5. September
-ehakimiht% :%.%  30MONTHS-SINGLE ; !5. May
 ehakimiht% :%.  30MONTHS ;!5.September
-ehakimiht% :%.  30MONTHS-SINGLE ; !5.May
 ehakimiht% :%  30MONTHS ; !5 September
-ehakimiht% :%  30MONTHS-SINGLE ; !5 May
-!ehakimiht% :%.%  ZEROMONTH30 ; !If we want digits, this path adds 0
 
-!LEXICON ZEROMONTH30 !If we want digits, this lexicon adds 0
-! :%0 30MONTHS-SINGLE ;
+LEXICON EHAKIMIHT30-ST
+ehakimiht% :% of%  30MONTHS ; !5 September
 
 
-LEXICON 30MONTHS-SINGLE
+LEXICON 30MONTHS
 ayikipîsimohk:April ENDLEX ;
 opâskâwewowipîsimohk:June ENDLEX ; 
 onôcihitowipîsimohk:September ENDLEX ;
-iyikopîwipîsimohk:Novebmer ENDLEX ; 
+iyikopîwipîsimohk:November ENDLEX ; 
 kisepîsimohk:January ENDLEX ; 
 niskipîsimohk:March ENDLEX ; 
 opiniyâwewowipîsimohk:May ENDLEX ;
@@ -124,8 +124,6 @@ ohpahowipîsimohk:August ENDLEX ;
 kaskatinowipîsimohk:October ENDLEX ; 
 manitow% kîsikan% pîsimohk:December ENDLEX ;
 pawahcakinasîs:December ENDLEX ;
-
-LEXICON 30MONTHS
 kaskatinowipîsimohk:October ENDLEX ; 
 manitow% kîsikan% pîsimohk:December ENDLEX ;
 pawahcakinasîs:December ENDLEX ;
@@ -133,25 +131,19 @@ pawahcakinasîs:December ENDLEX ;
 
 LEXICON EHAKIMIHT31
 ehakimiht% :%.%  31MONTHS ; !5. January
-ehakimiht% :%.%  31MONTHS-SINGLE ; !5. May
 ehakimiht% :%.  31MONTHS ; !5.January
-ehakimiht% :%.  31MONTHS-SINGLE ;  !5.May
 ehakimiht% :%  31MONTHS ; !5 January
-ehakimiht% :%  31MONTHS-SINGLE ;  !5 May
-!ehakimiht% :%. ZEROMONTH31 ; !If we want digits, this path adds 0
 
-!LEXICON ZEROMONTH31 !If we want digits, this lexicon adds 0
-! :%0 31MONTHS-SINGLE ;
+LEXICON EHAKIMIHT31-ST
+ehakimiht% :% of%  31MONTHS ; !5 September
 
 
-LEXICON 31MONTHS-SINGLE
+LEXICON 31MONTHS
 kisepîsimohk:January ENDLEX ;
 niskipîsimohk:March ENDLEX ;
 opiniyâwewowipîsimohk:May ENDLEX ;
 opaskowipîsimohk:July ENDLEX ;
 ohpahowipîsimohk:August ENDLEX ;
-
-LEXICON 31MONTHS
 kaskatinowipîsimohk:October ENDLEX ;
 manitow% kîsikan% pîsimohk:December ENDLEX ;
 pawahcakinasîs:December ENDLEX ;
