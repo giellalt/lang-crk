@@ -22,11 +22,12 @@
 !! !! The prefixes
 
 LEXICON Nouns 
-!! @LEXNAME@ redirects to AN-IN, BODY and INALIENABLE
-AN-IN ; ! Animate and inanimate nouns
-BODY ; ! Inanimate bodypart, get generic form with m-
-INALIENABLE ; !
-EXPER ;
+!! @LEXNAME@ redirects to AN-IN, BODY, INALIENABLE and EXPER
+
+AN-IN       ; ! Animate and inanimate nouns
+BODY        ; ! Inanimate bodypart, get generic form with m-
+INALIENABLE ;
+EXPER       ;
 
 LEXICON AN-IN
 !! @LEXNAME@ adds the prefixes ni-, ki-, o-. Redirects to STEMS
