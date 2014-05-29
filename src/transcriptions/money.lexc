@@ -23,7 +23,7 @@ Multichar_Symbols
 LEXICON Root
 
 !These 4 lines are for TTS, they are commented out.
-!< %+String [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|â|ê|î|ô|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Â|Ê|Î|Ô]* > ENDLEX ; ! This first line is to allow all letter strings.
+!< %+String [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|â|e|î|ô|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Â|Ê|Î|Ô]* > ENDLEX ; ! This first line is to allow all letter strings.
 !+NumNum NUMBERSECTION ;
 !+NumNum ENDLEXSECTION ;
 !LEXICON NUMBERSECTION
@@ -45,7 +45,7 @@ LEXICON DISALLOW
 LEXICON QUARTS 
 niyânan:25  QUART ; !$1.25 = 5 quarts
 nikotwâsik:5%0  QUART ; !$1.50 = 6 quarts
-têpakohp:75  QUART ; !$1.75 = 7 quarts
+tepakohp:75  QUART ; !$1.75 = 7 quarts
 
 
 LEXICON TENS
@@ -67,22 +67,22 @@ LEXICON ONESTONEXT
 peyakosâp:1 DOLLAR ;
 nîsosâp:2 DOLLAR ;
 nistosâp:3 DOLLAR ;
-nêwosâposâp:4 DOLLAR ;
+newosâposâp:4 DOLLAR ;
 niyânanosâp:5 DOLLAR ;
 nikotwâsiksâp:6 DOLLAR ;
-têpakohposâp:7 DOLLAR ;
-ayinânêwosâp:8 DOLLAR ;
+tepakohposâp:7 DOLLAR ;
+ayinânewosâp:8 DOLLAR ;
 kîkâmitâtahtosâp:9 DOLLAR ;
 
 LEXICON TEENS
 peyakosâp:11 DOLLAR ;
 nîsosâp:12 DOLLAR ;
 nistosâp:13 DOLLAR ;
-nêwosâposâp:14 DOLLAR ;
+newosâposâp:14 DOLLAR ;
 niyânanosâp:15 DOLLAR ;
 nikotwâsiksâp:16 DOLLAR ;
-têpakohposâp:17 DOLLAR ;
-ayinânêwosâp:18 DOLLAR ;
+tepakohposâp:17 DOLLAR ;
+ayinânewosâp:18 DOLLAR ;
 kîkâmitâtahtosâp:19 DOLLAR ;
 
 LEXICON ONES
@@ -92,11 +92,11 @@ LEXICON DCARDINAL
 peyak:1 ONEDOLLAR ;
 nîso:2 DOLLAR ;
 nisto:3 DOLLAR ;
-nêwo:4 DOLLAR ;
+newo:4 DOLLAR ;
 niyânan:5 DOLLAR ;
 nikotwâsik:6 DOLLAR ;
-têpakohp:7 DOLLAR ;
-ayinânêw:8 DOLLAR ;
+tepakohp:7 DOLLAR ;
+ayinânew:8 DOLLAR ;
 kîkâmitâtaht:9 DOLLAR ;
 
 
