@@ -6,30 +6,31 @@
 !! !!The declinations for Animates
 
 LEXICON ANniska !!= * @CODE@ for the irregular niska N+AN
-< "+N":a "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+N":0 "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
-< "+N":a "+AN":k "+Pl":0 "@U.noun.abs@" >  # ; ! why not niskwak ??
-!< "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; !
-< "+N":i "+AN":n         "@U.noun.abs@" >  LOCahk ; !
-+N+AN+Sg:i%>i2m ANSUFF_SG ;
-+N+AN+Pl:i%>i2m ANSUFF_PL ;
-+N+AN:i%>i2m ANniskaSUFFLOC ;
-+N+AN+Der/Dim+N+AN:im%>is%^DIMis ANniskaSUFFLOC ;
-+N+AN+Der/Dim:as%>is%^DIM%> ANABSDECL ;
-+N+AN+Der/Dim+N+AN+Sg:im%>is%^DIMis ANSUFF_SG ;
-+N+AN+Der/Dim+N+AN+Pl:im%>is%^DIMis ANSUFF_PL ;
+ < "+N":a "+AN":0 "+Sg":0 "@U.noun.abs@" > SG_       ; !
+ < "+N":0 "+AN":0         "@U.noun.abs@" > OBVIATIVE ; !
+ < "+N":a "+AN":k "+Pl":0 "@U.noun.abs@" > #         ; ! why not niskwak ??
+!< "+N":0 "+AN":0         "@U.noun.abs@" > LOC       ; !
+ < "+N":i "+AN":n         "@U.noun.abs@" > LOCahk    ; !
+
+             +N+AN+Sg:i%>i2m               ANSUFF_SG      ;
+             +N+AN+Pl:i%>i2m               ANSUFF_PL      ;
+                +N+AN:i%>i2m               ANniskaSUFFLOC ;
+   +N+AN+Der/Dim+N+AN:im%>is%^DIMis        ANniskaSUFFLOC ;
+        +N+AN+Der/Dim:as%>is%^DIM%>        ANABSDECL      ;
++N+AN+Der/Dim+N+AN+Sg:im%>is%^DIMis        ANSUFF_SG      ;
++N+AN+Der/Dim+N+AN+Pl:im%>is%^DIMis        ANSUFF_PL      ;
 
 LEXICON ANniskaSUFFLOC !!= * @CODE@ for the irregular niska N+AN
 
-< "+Px1Sg":%^POS  0:i 0:n "@U.noun.1sg@"  > LOCahk ; !
-< "+Px2Sg":%^POS  0:i 0:n "@U.noun.2sg@"  > LOCahk ; !
-< "+Px3Sg":%^POS  0:i 0:n "@U.noun.3sg@"  > LOCahk ; !
-< "+Px4Sg":%^POS 0:i 0:y "@U.noun.3isg@" > LOC ; !
-< "+Px1Pl":%^POS  0:i 0:n  "@U.noun.1pl@"  > LOCahk ;   ! exclusive Pl
-< "+Px12Pl":%^POS 0:i 0:n  "@U.noun.12pl@" > LOCahk ; ! inclusive Pl
-< "+Px2Pl":%^POS  0:i 0:w  "@U.noun.2pl@"  > LOCahk ; !
-< "+Px3Pl":%^POS  0:i 0:w  "@U.noun.3pl@"  > LOCahk ; !
-< "+Px4Pl":%^POS 0:i 0:y "@U.noun.3isg@" > LOC ; !
+< "+Px1Sg":%^POS 0:i 0:n "@U.noun.1sg@"  > LOCahk ; !
+< "+Px2Sg":%^POS 0:i 0:n "@U.noun.2sg@"  > LOCahk ; !
+< "+Px3Sg":%^POS 0:i 0:n "@U.noun.3sg@"  > LOCahk ; !
+< "+Px4Sg":%^POS 0:i 0:y "@U.noun.3isg@" > LOC    ; !
+< "+Px1Pl":%^POS 0:i 0:n "@U.noun.1pl@"  > LOCahk ; ! exclusive Pl
+<"+Px12Pl":%^POS 0:i 0:n "@U.noun.12pl@" > LOCahk ; ! inclusive Pl
+< "+Px2Pl":%^POS 0:i 0:w "@U.noun.2pl@"  > LOCahk ; !
+< "+Px3Pl":%^POS 0:i 0:w "@U.noun.3pl@"  > LOCahk ; !
+< "+Px4Pl":%^POS 0:i 0:y "@U.noun.3isg@" > LOC    ; !
 
 
 LEXICON ANimDECL !!= * @CODE@ for the animate declension, poss.-im-, dim. -is
@@ -37,24 +38,24 @@ LEXICON ANimDECL !!= * @CODE@ for the animate declension, poss.-im-, dim. -is
              +N+AN+Sg:%>i2m          ANSUFF_SG  ;
              +N+AN+Pl:%>i2m          ANSUFF_PL  ;
                 +N+AN:%>i2m          ANSUFF_LOC ;
-!       +N+AN+Der/Dim:%>is%^DIM%>    ANDIMim ; !poss.-im- after dim.suffix
-!       +N+AN+Der/Dim:%>is%^DIMis%>  ANDIMim ; !poss.-im- after dim.suffix
-        +N+AN+Der/Dim:%>is%^DIM%>    ANABSDECL ; !
+!       +N+AN+Der/Dim:%>is%^DIM%>    ANDIMim    ; !poss.-im- after dim.suffix
+!       +N+AN+Der/Dim:%>is%^DIMis%>  ANDIMim    ; !poss.-im- after dim.suffix
+        +N+AN+Der/Dim:%>is%^DIM%>    ANABSDECL  ; !
    +N+AN+Der/Dim+N+AN:%>i2m%^DIMis%> ANSUFF_LOC ; !
-+N+AN+Der/Dim+N+AN+Sg:%>i2m%^DIMis%> ANSUFF_SG ; !
-+N+AN+Der/Dim+N+AN+Pl:%>i2m%^DIMis%> ANSUFF_PL ; !
++N+AN+Der/Dim+N+AN+Sg:%>i2m%^DIMis%> ANSUFF_SG  ; !
++N+AN+Der/Dim+N+AN+Pl:%>i2m%^DIMis%> ANSUFF_PL  ; !
 
 LEXICON ANimDECLisis !!= * @CODE@ for the animate declension, poss.-im-, dim.-isis
-ANABSDECL ;
-+N+AN+Sg:%>i2m ANSUFF_SG ;
-+N+AN+Pl:%>i2m ANSUFF_PL ;
-+N+AN:%>i2m ANSUFF_LOC ;
-!+N+AN+Der/Dim:%>is%^DIM%> ANDIMim ; !poss.-im- after dim.suffix
-!+N+AN+Der/Dim:%>is%^DIMis%> ANDIMim ; !poss.-im- after dim.suffix
-+N+AN+Der/Dim:%>is%^DIMis%> ANABSDECL ; !
-+N+AN+Der/Dim+N+AN:%>i2m%^DIMis%> ANSUFF_LOC ; !
-+N+AN+Der/Dim+N+AN+Sg:%>i2m%^DIMis%> ANSUFF_SG ; !
-+N+AN+Der/Dim+N+AN+Pl:%>i2m%^DIMis%> ANSUFF_PL ; !
+                                     ANABSDECL  ;
+             +N+AN+Sg:%>i2m          ANSUFF_SG  ;
+             +N+AN+Pl:%>i2m          ANSUFF_PL  ;
+                +N+AN:%>i2m          ANSUFF_LOC ;
+!       +N+AN+Der/Dim:%>is%^DIM%>    ANDIMim    ; !poss.-im- after dim.suffix
+!       +N+AN+Der/Dim:%>is%^DIMis%>  ANDIMim    ; !poss.-im- after dim.suffix
+        +N+AN+Der/Dim:%>is%^DIMis%>  ANABSDECL  ;
+   +N+AN+Der/Dim+N+AN:%>i2m%^DIMis%> ANSUFF_LOC ;
++N+AN+Der/Dim+N+AN+Sg:%>i2m%^DIMis%> ANSUFF_SG  ;
++N+AN+Der/Dim+N+AN+Pl:%>i2m%^DIMis%> ANSUFF_PL  ;
 
 !! !LEXICON ANDIMim for diminutives with poss.-im- after the dim.suffix, not in use
 !+N+AN:%>im ANSUFF_LOC ;
