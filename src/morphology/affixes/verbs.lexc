@@ -28,45 +28,41 @@
 !! !!! Intransitive animate (IA)
 
 LEXICON IACONJ !!= @CODE@ splits in 4 moods
-< "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@D.mood@"   >     # ; !Baseform
+< "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+IA: IACONJ-CONT ;
  
 LEXICON IACONJw !!= @CODE@ splits in 4 moods, for verbs with final -w
-< "+V":w "+IA":0 "@U.tense.Prs@" "@U.perspref.NULL@" "@D.mood@" >     # ; !Baseform
+< "+V":w "+IA":0 "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@" >     # ; !Baseform
 +V+IA: IACONJ-CONT ;
 
 
 LEXICON IACONJ-CONT
-< "+Ind":0  "@D.mood@" >  IA_IND ;
-< "+Cnj":0  "@R.mood.cnj@" > IA_SBJ ; 
-< 0:%>    "@D.tense@"  >  IA_IMP ;
-+Fut+Cond: IA_FUT_CON ;
+< "+Ind":0  "@U.mood.indep@" >  IA_IND ; !
+< "+Cnj":0  "@R.mood.cnj@" > IA_CNJ ; !
+< 0:%>    "@D.tense@"  >  IA_IMP ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > IA_FUT_CON ;
 
 
 LEXICON IA_IND !!= @CODE@ First mode, indicative
 < "@U.tense.Prs@"    "+Prs":%>          > IA_IND_PRS ; !
-< "@U.tense.Prt@"    "+Prt":%>          > IA_IND_PRS ; !test
-< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > IA_IND_PRS ; !Future definite - Ind Fut?
-< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > IA_IND_PRS ; !Future intentional
+< "@U.tense.Prt@"    "+Prt":%>          > IA_IND_PRS ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > IA_IND_PRS ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > IA_IND_PRS ; !
 
 
 LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
-< 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:n                 > # ; !"
-< 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:n                 > # ; !"
-<          "+3Sg":0 "@U.perspref.NULL@" 0:w                 > # ; !"
-<          "+4Sg":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ; !"
-< 0:"^EA"  "+1Pl":0 "@U.perspref.NI@"   0:n 0:â 0:n         > # ;   ! exclusive Pl
-< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:a 0:w         > # ; ! inclusive Pl
+< 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:n                 > # ; !
+< 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:n                 > # ; !
+<          "+3Sg":0 "@U.perspref.NULL@" 0:w                 > # ; !
+<          "+4Sg":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ; !
+< 0:"^EA"  "+1Pl":0 "@U.perspref.NI@"   0:n 0:â 0:n         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:a 0:w         > # ; !
 < 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:n 0:â 0:w 0:â 0:w > # ;           !
 <          "+3Pl":0 "@U.perspref.NULL@" 0:w 0:a 0:k         > # ;   !
 <          "+4Pl":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ;   !
 
 
-
-LEXICON IA_FUT_CON  !!= @CODE@ Second mode mode, Fut Cond
-< "@R.mood.FutCon@" > IA_FUT_CON_SUF ;
-
-LEXICON IA_FUT_CON_SUF
+LEXICON IA_FUT_CON
   +1Sg:%>yâni  # ; 
   +2Sg:%>yani  # ; 
   +3Sg:%>ci    # ; 
@@ -78,14 +74,14 @@ LEXICON IA_FUT_CON_SUF
   +4Pl:%>yici  # ; 
 
 
-LEXICON IA_SBJ !!= @CODE@ Third mode, subjunctive
-< "+Prs":0          "@U.tense.Prs@"    > IA_SBJ_SUF ; !"
-< "+Prt":0          "@U.tense.Prt@"    > IA_SBJ_SUF ; !"
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > IA_SBJ_SUF ; !"
+LEXICON IA_CNJ !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > IA_CNJ_SUF ; !
+< "+Prt":0          "@U.tense.Prt@"    > IA_CNJ_SUF ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > IA_CNJ_SUF ; !
 
 
 
-LEXICON IA_SBJ_SUF
+LEXICON IA_CNJ_SUF
      +1Sg:%>yân #;
      +2Sg:%>yan	#;
      +3Sg:%>t	#;
@@ -133,7 +129,7 @@ LEXICON II_IND_PRS_FLAG
 @U.mood.indep@ II_IND_PRS ;
 
 LEXICON II_SBJ_FLAG
-@U.verb.sbjPrs@ II_SBJ ;
+@U.mood.sbjPrs@ II_SBJ ;
  
 LEXICON II_IND_PRS   !!= @CODE@ is positive present
 +3Sg: # ;
@@ -155,27 +151,33 @@ LEXICON II_SBJ
 !! There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
 
 LEXICON TACONJ_1 !!= @CODE@ 
-< "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@D.mood@"   >     # ; !Baseform
-+V+TA+Ind: TA_IND ;
-+V+TA+Cnj: TA_SBJ ;
-+V+TA+Fut: TA_FUT ;
-+V+TA+Imp: TA_IMP ;
+< "+V":0 "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+TA: TACONJ-CONT ;
 
 
 LEXICON TACONJ_2  !!= * @CODE@ splits in 4. The -aw shall be removed from some forms.
-+V+TA+Ind:aw TA_IND ;
-+V+TA+Cnj:aw TA_SBJ ;
-+V+TA+Fut:aw TA_FUT ;
-+V+TA+Imp:aw TA_IMP ;
+< "+V":a "+TA":w   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+TA:aw TACONJ-CONT ;
 
+
+LEXICON TACONJ-CONT
+< "+Ind":0 "@U.mood.indep@" > TA_IND ; !
+< "+Cnj":0 "@U.mood.cnj@" > TA_CNJ ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUT ; !
+< "+Imp":0 "@U.mood.imp@" > TA_IMP ; !
 
 LEXICON TA_IND !!= @CODE@ gives prs
-+Prs: TA_IND_PRS ;
+< "@U.tense.Prs@"    "+Prs":%> > TA_IND_PERSPREF ;!
+< "@U.tense.Prt@"    "+Prt":%>          > TA_IND_PERSPREF ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > TA_IND_PERSPREF ; !Future definite 
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > TA_IND_PERSPREF ; !Future intentional
 
-LEXICON TA_IND_PRS !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
+LEXICON TA_IND_PERSPREF !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
 @U.perspref.NI@   VTA_NI_O ;  !
 @U.perspref.KI@   VTA_KI_O ;  !
-@U.verb.NULL@   VTA_NULL_O ;  !
+@U.perspref.NULL@   VTA_NULL_O ;  !
+
+
 
 
 LEXICON VTA_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
@@ -226,14 +228,13 @@ LEXICON VTA_NULL_O
 
 
 
-!LEXICON TA_IND_PRT ! Dummy lexicon
-!# ;
+LEXICON TA_CNJ !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > TA_CNJ_SUF ; !
+< "+Prt":0          "@U.tense.Prt@"    > TA_CNJ_SUF ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TA_CNJ_SUF ; !
 
 
-LEXICON TA_SBJ !!= @CODE@ gives flag diacritic and directs to subjunctive person suffixes
-@U.mood.cnj@ TA_SBJ_SUF ;
-
-LEXICON TA_SBJ_SUF !!= @CODE@ gives subj + obj tag and suf
+LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 
 +1Sg+3SgO:%>ak		   # ;
 +1Sg+3PlO:%>akik	   # ;
@@ -279,11 +280,7 @@ LEXICON TA_SBJ_SUF !!= @CODE@ gives subj + obj tag and suf
 +4Pl+3PlO:%>ikocik	   # ;
 
 
-LEXICON TA_FUT !!= @CODE@ gives flag diacritic and directs to subjunctive person suffixes
-@U.verb.fut@ TA_FUT_SUF ;
-
-
-LEXICON TA_FUT_SUF
+LEXICON TA_FUT
 
 +1Sg+3SgO:%>aki		   # ;
 +1Sg+3PlO:%>akwâwi	   # ;

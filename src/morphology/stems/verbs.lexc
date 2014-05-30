@@ -46,22 +46,22 @@ TA ; ! transitive animate
 
 LEXICON IA   !!= @CODE@ divides IA in independent, conjunctive, imperative and future conditional
  IA_INDEPENDENT ;		  !!= * @CODE@
- IA_CONJUNCTIV ;		  !!= * @CODE@ , note: two versions of conjunctive
  IA_CONJUNCTIV ;		  !!= * @CODE@ 
  IA_IMPERATIV ;		      !!= * @CODE@
  IA_FUTURE_CONDITIONAL ;  !!= * @CODE@
 
 LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
+ @U.mood.indep@ IA_PERSPREF ; !"
 
-!PREFIX
 
-< 0:n 0:i "@U.perspref.NI@"  0:"t2" > IATNS ; !"
-< 0:k 0:i "@U.perspref.KI@"  0:"t2" > IATNS ; !"
-<         "@U.perspref.NULL@"       > IATNS ; !"
+LEXICON IA_PERSPREF
+< 0:n 0:i "@U.perspref.NI@"  0:"t2" > IA_TENSE ; !"
+< 0:k 0:i "@U.perspref.KI@"  0:"t2" > IA_TENSE ; !"
+<         "@U.perspref.NULL@"       > IA_TENSE ; !"
 
 !Past/Preterite tense
 
-LEXICON IATNS
+LEXICON IA_TENSE
 <                   "@U.tense.Prs@"     > IALIST ; !"
 < 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IALIST ; !" removed hyph
 < 0:k 0:î 0:%-      "@U.tense.Prt@"     > IALIST ; !
@@ -98,30 +98,45 @@ LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
 
 LEXICON II 
 <                "@U.mood.indep@"    > IISTEM ; ! Independent mode
-<  0:ê 0:%-      "@U.verb.sbjPrs@" > IISTEM ; !"
-<  0:ê 0:%^EGLOT "@U.verb.sbjPrs@" > IISTEM ;
+<  0:ê 0:%-      "@U.mood.sbjPrs@" > IISTEM ; !"
+<  0:ê 0:%^EGLOT "@U.mood.sbjPrs@" > IISTEM ;
 
 
 !! !! Transitive animate
 !     ==================
 
 LEXICON TA  !!= @CODE@ divides TA in independent, conjunctive, imperative and future conditional
-          TA_INDEPENDENT ;
-:ê-       TA_CONJUNCTIV ;
-:ê%^EGLOT TA_CONJUNCTIV ;
-          TA_FUTURE ;
-          TA_IMPERATIV ;
+ TA_INDEPENDENT ;
+ TA_CONJUNCTIV ;
+ TA_FUTURE_CONDITIONAL ;
+ TA_IMPERATIV ;
 
 LEXICON TA_INDEPENDENT  !!= @CODE@ gives prefixes ni/ki/NULL and corresponding flags
-< 0:n 0:i "@U.perspref.NI@" 0:"t2" > TALIST ; !"
-< 0:k 0:i "@U.perspref.KI@" 0:"t2" > TALIST ; !"
-<         "@U.perspref.NULL@"      > TALIST ; !"
+ @U.mood.indep@ TA_PERSPREF ; !
+
+LEXICON TA_PERSPREF
+< 0:n 0:i "@U.perspref.NI@" 0:"t2" > TA_TENSE ; !
+< 0:k 0:i "@U.perspref.KI@" 0:"t2" > TA_TENSE ; !
+<         "@U.perspref.NULL@"      > TA_TENSE ; !
 
 LEXICON TA_CONJUNCTIV !!= @CODE@ gives flag for conjunctive (no prefix)
-@U.mood.cnj@ TALIST ;
+<  0:ê 0:%-      "@U.mood.cnj@" > TA_TENSE ; !
+<  0:ê 0:%^EGLOT "@U.mood.cnj@" > TA_TENSE ;
 
-LEXICON TA_FUTURE  !!= @CODE@ gives flag for future (no prefix)
-@U.verb.fut@ TALIST ;
+
+LEXICON TA_TENSE
+<                   "@U.tense.Prs@"     > TALIST ; !
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > TALIST ; !
+< 0:k 0:î 0:%-      "@U.tense.Prt@"     > TALIST ; !
+< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@"  > TALIST ; !
+< 0:k 0:a 0:%-      "@U.tense.FutDef@"  > TALIST ; !
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > TALIST ; !
+< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > TALIST ; !
+
+
+
+LEXICON TA_FUTURE_CONDITIONAL
+< "@U.mood.FutCon@" > TALIST ;
 
 
 LEXICON TA_IMPERATIV   !!= @CODE@ gives flag for TA imperative
