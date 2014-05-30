@@ -9,13 +9,13 @@ Config:
 
 Tests:
   
-  Noun - niska - ok : # -m animate noun, Canada goose
+  Noun - niska - ok : # -m animate noun, Canada goose, acc. Wolvengrey
      niska+N+AN+Sg: niska
      niska+N+AN+Pl: niskak
-     niska+N+AN+Loc: niskinâhk
-     niska+N+AN+Der/Dim+N+AN+Sg: niskasis # also niskisis
-     niska+N+AN+Der/Dim+N+AN+Pl: niskasisak # also niskisisak
-     niska+N+AN+Der/Dim+N+AN+Loc: [niskasisinâhk, niskasisihk]
+     niska+N+AN+Loc: niskohk
+     niska+N+AN+Der/Dim+N+AN+Sg: niskisis # also niskisis
+     niska+N+AN+Der/Dim+N+AN+Pl: niskisisak # also niskisisak
+     niska+N+AN+Der/Dim+N+AN+Loc: [niskisisinâhk, niskisisihk]
 
      niska+N+AN+Sg+Px1Sg: niniskim
      niska+N+AN+Sg+Px2Sg: kiniskim
@@ -57,22 +57,3 @@ Tests:
      niska+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: oniskimisisiwâwa
      niska+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: oniskimisisiyiwa
      
-     niska+N+AN+Px1Sg+Loc: niniskiminâhk
-     niska+N+AN+Px2Sg+Loc: kiniskiminâhk
-     niska+N+AN+Px3Sg+Loc: oniskiminâhk 
-     niska+N+AN+Px4Sg+Loc: oniskimiyihk
-     niska+N+AN+Px1Pl+Loc: niniskiminâhk
-     niska+N+AN+Px12Pl+Loc: kiniskiminâhk
-     niska+N+AN+Px2Pl+Loc: kiniskimiwâhk
-     niska+N+AN+Px3Pl+Loc: oniskimiwâhk 
-     niska+N+AN+Px4Pl+Loc: oniskimiyihk
-
-     niska+N+AN+Der/Dim+N+AN+Px1Sg+Loc: niniskimisisinâhk
-     niska+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kiniskimisisinâhk
-     niska+N+AN+Der/Dim+N+AN+Px3Sg+Loc: oniskimisisinâhk
-     niska+N+AN+Der/Dim+N+AN+Px4Sg+Loc: oniskimisisiyihk
-     niska+N+AN+Der/Dim+N+AN+Px1Pl+Loc: niniskimisisinâhk
-     niska+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kiniskimisisinâhk
-     niska+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kiniskimisisiwâhk
-     niska+N+AN+Der/Dim+N+AN+Px3Pl+Loc: oniskimisisiwâhk
-     niska+N+AN+Der/Dim+N+AN+Px4Pl+Loc: oniskimisisiyihk
