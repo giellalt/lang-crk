@@ -25,14 +25,14 @@ LEXICON Nouns
 !! @LEXNAME@ redirects to AN-IN, BODY, INALIENABLE and EXPER
 
 AN-IN       ; ! Animate and inanimate nouns
-BODY        ; ! Inanimate bodypart, get generic form with m-
+BODY        ; ! Inanimate, generic form with m-
 INALIENABLE ;
-EXPER       ;
+!EXPER       ;
 
 LEXICON AN-IN
 !! @LEXNAME@ adds the prefixes ni-, ki-, o-. Redirects to STEMS
 
-           @U.noun.abs@            STEMS ; 
+  @U.noun.abs@       STEMS ; 
 < 0:n 0:i "@U.noun.1sg@"  0:"t2" > STEMS ; ! 1
 < 0:k 0:i "@U.noun.2sg@"  0:"t2" > STEMS ; ! 2
 < 0:o     "@U.noun.3sg@"  0:"t2" > STEMS ; ! 3
@@ -43,8 +43,8 @@ LEXICON AN-IN
 < 0:o     "@U.noun.3pl@"  0:"t2" > STEMS ; ! 3pl
 < 0:o     "@U.noun.3ipl@" 0:"t2" > STEMS ; ! 3-plural-obviate
 
-LEXICON EXPER
-< 0:i "@U.noun.exp@"  > BODY ; ! 1
+!LEXICON EXPER
+!< 0:i "@U.noun.exp@"  > BODY ; ! 1
 
 
 LEXICON BODY
@@ -64,7 +64,7 @@ LEXICON BODY
 
 LEXICON INALIENABLE
 !! @LEXNAME@  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
-@U.noun.abs@ INALIENABLESTEMS ; 
+ <  "@U.noun.abs@"    > INALIENABLESTEMS ; 
 < 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
 < 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ; ! 3
@@ -97,6 +97,7 @@ asikan ANDECL "sock" ;	!yaml
 !asikan:asikanis ANDIMDERIVATION "little sock" ; 	
 asikanis ANDIM "little sock" ;	
 asiniy ANDECL "stone" ;	
+ayapiy ANDECL "net" ;	
 atihk ANDECL "caribou" ;	
 !atihk:acihkos ANDIMDERIVATION "little caribou" ;
 acihkos ANDIM "little caribou" ;
@@ -123,6 +124,7 @@ nâpês ANDECL "boy" ;
 nâpêsis ANDIM "little boy" ;	
 nehiyaw ANDECL "Cree Person" ;	
 niska:nisk ANniska "Canada goose" ; !yaml
+sihta:siht ANniska "spruce" ;
 ôhow:ôho AN-NOPOSSw "owl" ; !yaml 
 okistatowân ANDECL "grizzly bear" ; ! okistatowânak	
 !okistatowân:okiscacowânis ANDIMDERIVATION "little grizzly bear" ; !
@@ -166,8 +168,20 @@ mistikw:mistik ANkwDECL "stick" ; !Wolfart freqv list: mistikohk
 askihkw:askihk ANkwDECL "pail" ;
 mahkahkw:mahkahk ANkwDECL "tub/barrel" ; !Wolfart freqv list: mahkahkohk
 mostos ANkwDECL "cow" ;	!GG p 16: pl is mostoswak, are there other nouns of this kind?
+ihkwa:ihk ANkwaDECL "louse" ; !Wolvengrey
+wâhkw:wâhk ANkwDECL "shell" ;!Wolvengrey
+esa:esi ANimDECL "shell" ;!Wolvengrey
+kihcôkiniy ANDECL "tomato" ; !Wolvengrey
+masinahikanâhtik ANDECL "pencil" ; !Wolvengrey
 mostos+N+AN+Sg:mostos NOPREFIX "cow" ;	!baseform
-
+astotin INDECL "hat" ; !Wolvengrey
+cîmân INDECL "canoe" ; !Wolvengrey
+mîkisasâkay INDECL "jacket" ; !OBS! Wolvengrey nimîkisasâkânân
+oskasâkay INDECL "new coat" ; !OBS! Wolvengrey
+pahkêkinw INDECL "leather" ; !OBS! Wolvengrey -o-
+askêkinw:askêkin INwDECL "rawhide" ; !OBS! Wolvengrey -o-
+mihkw INimDECL "blood" ; !OBS! Wolvengrey -o- ONLY SG
+oskây:oskâyi INimDECL "new thing" ; !OBS! Wolvengrey 
 
 tehtapiwin INDECL "chair" ; ! GGI:26 !dim cehcapiwinisis GGI:46
 atâwewikamik INimDECL "store" ; ! GGI:26, GGII:25  !Wolfart freqv list: atâwêwikamikohk
@@ -264,7 +278,7 @@ nicâhkos:icâhkos ANKININFLni "cousin/sister in law" ;! gen.form ocâhkosimâw?
 nôsisim:ôsisim ANKININFLni "grandchild" ;!NB! twolc gives oô-  gen.form ôsisimimâw??
 onâpêmimâw:inâpêm ANKININFL_MONOG "husband" ;
 !wîkimâkan:îkimâkan ANKININFL_MONOG "spouse" ;  !OBS!
-niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ; !OBS!
+niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ; !OBS! 
 mîkiwâhp+N+IN+Sg:mîkiwâhp NOPREFIX "home" ; !Okimasis:137
 
 LEXICON BODYSTEMS ! dependent nouns

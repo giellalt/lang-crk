@@ -5,7 +5,7 @@
 
 !! !!The declinations for Animates
 
-LEXICON ANniska !!= * @CODE@ for the irregular niska N+AN
+LEXICON ANniska !!= * @CODE@ for the irregular niska and sihta N+AN
  < "+N":a "+AN":0 "+Sg":0 "@U.noun.abs@" > SG_       ; !
  < "+N":0 "+AN":0         "@U.noun.abs@" > OBVIATIVE ; !
  < "+N":a "+AN":k "+Pl":0 "@U.noun.abs@" > #         ; ! why not niskwak ??
@@ -31,7 +31,6 @@ LEXICON ANniskaSUFFLOC !!= * @CODE@ for the irregular niska N+AN
 < "+Px2Pl":%^POS 0:i 0:w "@U.noun.2pl@"  > LOCahk ; !
 < "+Px3Pl":%^POS 0:i 0:w "@U.noun.3pl@"  > LOCahk ; !
 < "+Px4Pl":%^POS 0:i 0:y "@U.noun.3isg@" > LOC    ; !
-
 
 LEXICON ANimDECL !!= * @CODE@ for the animate declension, poss.-im-, dim. -is
                                      ANABSDECL  ;
@@ -179,6 +178,16 @@ ANABSDECL ;
 +N+AN+Der/Dim:%>is%^DIMis%> ANDIMIRR ;
 +N+AN:%> ANSUFF_LOC ;
 
+LEXICON ANkwaDECL !!= * @CODE@ takes -om as extra suffix in possessed form
+< "+N":w "+AN":a "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+N":w "+AN":a "+Pl":0 "@U.noun.abs@" >  PLak ; 
+< "+N":w "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
+< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
++N+AN+Sg:om ANSUFF_SG ;
++N+AN+Pl:om ANSUFF_PL ;
++N+AN:om ANSUFF_LOC ;
+
+
 LEXICON ANkwDECL !!= * @CODE@ takes -om as extra suffix in possessed form
 < "+N":w "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
 < "+N":w "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; 
@@ -188,6 +197,8 @@ LEXICON ANkwDECL !!= * @CODE@ takes -om as extra suffix in possessed form
 +N+AN+Pl:om ANSUFF_PL ;
 +N+AN:om ANSUFF_LOC ;
 +N+AN+Der/Dim:w%>is%^DIM%> ANDIM ;
+
+
 
 LEXICON ANDIMIRR !!= * @CODE@ Possessive suffixes to diminutives
 +N+AN+Sg: ANSUFF_SG ; !
@@ -236,13 +247,23 @@ LEXICON INimDECLy !!= * @CODE@ for the animate declension, poss.-im-, nipîy, to
 +N+IN:%>i2m INSUFF_LOC ;
 +N+IN+Der/Dim:%> INimDIMy ;
 
-LEXICON INimDIMy !!= * @CODE@ the diminutives with poss.-im-. poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
+LEXICON INimDIMy !!= * @CODE@ the diminutives with poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
 < "+N":i2 "+IN":s 0:%^DIM 0:i 0:s "@U.noun.abs@" >  LOC ; !
 +N+IN:i2m%^DIMis%> INSUFF_LOC ;
 < "+N":i2 "+IN":s 0:%^DIM 0:i "+Sg":s "@U.noun.abs@" >  SG_ ; !
 < "+N":i2 "+IN":s 0:%^DIM 0:i "+Pl":s "@U.noun.abs@" >  PLak ; !
 +N+IN+Sg:i2m%^DIM%>is INSUFF_SG ;
 +N+IN+Pl:i2m%^DIM%>is INSUFF_PL ;
+
+
+LEXICON INwDECL !!= * @CODE@ takes -om as extra suffix in possessed form
+< "+N":w "+IN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+< "+N":w "+IN":0 "+Pl":0 "@U.noun.abs@" >  PLa ; 
+< "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
++N+IN+Sg:om INSUFF_SG ;
++N+IN+Pl:om INSUFF_PL ;
++N+IN:om INSUFF_LOC ;
++N+IN+Der/Dim:w%>is%^DIM%> INDIM ;
 
 
 LEXICON INDECL !!= * @CODE@ for the inanimate declension, diminutive: -is- and -isis-
@@ -271,10 +292,17 @@ LEXICON INDECLosi !!= * @CODE@ for the inanimate declension of ôsi, an irregula
 < "+N":s "+IN":i "+Sg":0 "@U.noun.abs@" >  SG_ ; !
 < "+N":s "+IN":0 "+Pl":0 "@U.noun.abs@" >  PLa ; !
 < "+N":s "+IN":0 "@U.noun.abs@" >  LOC ; !
-+N+IN+Sg:s%> INSUFF_SG ;
-+N+IN+Pl:s%> INSUFF_PL ;
-+N+IN:s%> INSUFF_LOC ;
-+N+IN+Der/Dim:s%>is%^DIM%> INDIM ;
++N+IN+Sg:t%> INSUFF_SG ;
++N+IN+Pl:t%> INSUFF_PL ;
++N+IN:t%> INSUFF_LOC ;
++N+IN+Der/Dim:t%>is%^DIM%> INDIM ; 
+
+LEXICON INDIMosi
+INABSDECL ;
++N+IN: INSUFF_LOC ;
++N+IN+Sg: INSUFF_SG ;
++N+IN+Pl: INSUFF_PL ;
+
 
 
 LEXICON INDIMDERIVATION !!= * @CODE@ for hardcoded noun:diminutive
@@ -342,30 +370,30 @@ LEXICON ANSUFF_SG !!= * @CODE@
 LEXICON ANSUFF_PL !!= * @CODE@
 < "+Px1Sg":%^POS                 "@U.noun.1sg@"  >  PLak ; !
 < "+Px2Sg":%^POS                 "@U.noun.2sg@"  >  PLak ; !
-< "+Px3Sg":%^POS                 "@U.noun.3sg@"  >  OBVIATIVE ; !3rd person  possessor, hence Pl is -a
-< "+Px4Sg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
-< "+Px1Pl":%^POS 0:i 0:n 0:â 0:n "@U.noun.1pl@"  >  PLak ;   ! exclusive Pl
-<"+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" >  PLak ; ! inclusive Pl
+< "+Px3Sg":%^POS                 "@U.noun.3sg@"  >  OBVIATIVE ; !
+< "+Px4Sg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" >  OBVIATIVE ; ! 
+< "+Px1Pl":%^POS 0:i 0:n 0:â 0:n "@U.noun.1pl@"  >  PLak ;   ! 
+<"+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" >  PLak ; ! 
 < "+Px2Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.2pl@"  >  PLak ; !
-< "+Px3Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.3pl@"  >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
-< "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" >  OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
+< "+Px3Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.3pl@"  >  OBVIATIVE ; ! 
+< "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" >  OBVIATIVE ; ! 
 
 LEXICON ANSUFF_LOC !!= * @CODE@
 < "+Px1Sg":%^POS         "@U.noun.1sg@"  > LOC ; !
 < "+Px2Sg":%^POS         "@U.noun.2sg@"  > LOC ; !
 < "+Px3Sg":%^POS         "@U.noun.3sg@"  > LOC ; !
 < "+Px4Sg":%^POS 0:i 0:y "@U.noun.3isg@" > LOC ; !
-< "+Px1Pl":%^POS 0:i 0:n "@U.noun.1pl@"  > LOCahk ;   ! exclusive Pl
-<"+Px12Pl":%^POS 0:i 0:n "@U.noun.12pl@" > LOCahk ; ! inclusive Pl
+< "+Px1Pl":%^POS 0:i 0:n "@U.noun.1pl@"  > LOCahk ;   ! 
+<"+Px12Pl":%^POS 0:i 0:n "@U.noun.12pl@" > LOCahk ; ! 
 < "+Px2Pl":%^POS 0:i 0:w "@U.noun.2pl@"  > LOCahk ; !
 < "+Px3Pl":%^POS 0:i 0:w "@U.noun.3pl@"  > LOCahk ; !
-< "+Px4Pl":%^POS 0:i 0:y "@U.noun.3isg@" > LOC ; ! obviative plural possessor
+< "+Px4Pl":%^POS 0:i 0:y "@U.noun.3isg@" > LOC ; ! 
 !< "+Px4Sg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > LOC ; !
-!< "+Px1Pl":%^POS 0:i 0:n 0:â 0:n "@U.noun.1pl@"  > LOC ;   ! exclusive Pl
-!<"+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" > LOC ; ! inclusive Pl
+!< "+Px1Pl":%^POS 0:i 0:n 0:â 0:n "@U.noun.1pl@"  > LOC ;   ! 
+!<"+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" > LOC ; ! 
 !< "+Px2Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.2pl@"  > LOC ; !
 !< "+Px3Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.3pl@"  > LOC ; !
-!< "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > LOC ; ! obviative plural possessor
+!< "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > LOC ; ! 
 
 
 
