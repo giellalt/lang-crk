@@ -22,7 +22,8 @@
 !! !! The prefixes
 
 LEXICON Nouns 
-!! @LEXNAME@ redirects to AN-IN, BODY, INALIENABLE and EXPER
+!! @LEXNAME@ redirects to AN-IN, BODY, INALIENABLE
+! and EXPER
 
 AN-IN       ; ! Animate and inanimate nouns
 BODY        ; ! Inanimate, generic form with m-
@@ -32,7 +33,7 @@ INALIENABLE ;
 LEXICON AN-IN
 !! @LEXNAME@ adds the prefixes ni-, ki-, o-. Redirects to STEMS
 
-  @U.noun.abs@       STEMS ; 
+           @U.noun.abs@            STEMS ; 
 < 0:n 0:i "@U.noun.1sg@"  0:"t2" > STEMS ; ! 1
 < 0:k 0:i "@U.noun.2sg@"  0:"t2" > STEMS ; ! 2
 < 0:o     "@U.noun.3sg@"  0:"t2" > STEMS ; ! 3
@@ -64,7 +65,7 @@ LEXICON BODY
 
 LEXICON INALIENABLE
 !! @LEXNAME@  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
- <  "@U.noun.abs@"    > INALIENABLESTEMS ; 
+       @U.noun.abs@     INALIENABLESTEMS ; 
 < 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
 < 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ; ! 3
