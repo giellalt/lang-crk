@@ -45,42 +45,42 @@ TA ; ! transitive animate
 !     ====================
 
 LEXICON IA   !!= @CODE@ divides IA in independent, conjunctive, imperative and future conditional
- IA_INDEPENDENT ;		  !!= * @CODE@
- IA_CONJUNCTIV ;		  !!= * @CODE@ 
+@U.mood.indep@ IA_INDEPENDENT ;		  !!= * @CODE@
+@U.mood.cnj@ IA_CONJUNCTIV ;		  !!= * @CODE@ 
  IA_IMPERATIV ;		      !!= * @CODE@
  IA_FUTURE_CONDITIONAL ;  !!= * @CODE@
 
-LEXICON IA_INDEPENDENT   !!= @CODE@ gives prefixes and flags for person-number in indicative
- @U.mood.indep@ IA_PERSPREF ; !"
+
+LEXICON IA_INDEPENDENT
+< 0:n 0:i "@U.perspref.NI@"  0:"t2" > IA_IND_TENSE ; !
+< 0:k 0:i "@U.perspref.KI@"  0:"t2" > IA_IND_TENSE ; !
+<         "@U.perspref.NULL@"       > IA_IND_TENSE ; !
 
 
-LEXICON IA_PERSPREF
-< 0:n 0:i "@U.perspref.NI@"  0:"t2" > IA_TENSE ; !"
-< 0:k 0:i "@U.perspref.KI@"  0:"t2" > IA_TENSE ; !"
-<         "@U.perspref.NULL@"       > IA_TENSE ; !"
-
-!Past/Preterite tense
-
-LEXICON IA_TENSE
-<                   "@U.tense.Prs@"     > IALIST ; !"
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IALIST ; !" removed hyph
+LEXICON IA_IND_TENSE
+<                   "@U.tense.Prs@"     > IALIST ; !
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IALIST ; ! removed hyph
 < 0:k 0:î 0:%-      "@U.tense.Prt@"     > IALIST ; !
-< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@"  > IALIST ; !"
-< 0:k 0:a 0:%-      "@U.tense.FutDef@"  > IALIST ; !"
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > IALIST ; !"
-< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > IALIST ; !"
+< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@"  > IALIST ; !
+< 0:k 0:a 0:%-      "@U.tense.FutDef@"  > IALIST ; !
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > IALIST ; !
+< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > IALIST ; !
 
 
 LEXICON IA_FUTURE_CONDITIONAL
-< "@U.mood.FutCon@" > IALIST ;
+@U.mood.FutCon@ IALIST ;
+
+LEXICON IA_CONJUNCTIV !!= @CODE@ gives flag for conjunctive (no prefix)
+<  0:ê 0:%-       > IA_CNJ_TENSE ; !
+<  0:ê 0:%^EGLOT   > IA_CNJ_TENSE ; !
 
 
-LEXICON IA_CONJUNCTIV   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
-< 0:ê 0:%- "@U.mood.cnj@" "@U.tense.Prs@"    > IALIST ; !Present
-
-< 0:ê 0:%^EGLOT "@U.mood.cnj@" "@U.tense.Prs@"    > IALIST ; !Present
-< 0:k 0:î 0:%- "@U.mood.cnj@" "@U.tense.Prt@"    > IALIST ;  ! Preterite,  Is this correct? TT
-< 0:w 0:î 0:%- "@U.mood.cnj@" "@U.tense.FutInt@" > IALIST ; ! Future Intentional
+LEXICON IA_CNJ_TENSE   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
+<        			"@U.tense.Prs@"    > IALIST ; !Present
+< 0:k 0:î 0:%-  	"@U.tense.Prt@"    > IALIST ;  ! Preterite, 
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"    > IALIST ;  ! Preterite,
+< 0:w 0:î 0:%-  	"@U.tense.FutInt@" > IALIST ; ! Future Intentional
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" > IALIST ; ! Future Intentional
 
 
 LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
@@ -97,34 +97,64 @@ LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
 
 
 LEXICON II 
-<                "@U.mood.indep@"    > IISTEM ; ! Independent mode
-<  0:ê 0:%-      "@U.mood.sbjPrs@" > IISTEM ; !"
-<  0:ê 0:%^EGLOT "@U.mood.sbjPrs@" > IISTEM ;
+@U.mood.indep@ II_IND_TENSE ; ! Independent mode
+@U.mood.cnj@ II_CONJUNCTIV ; 
+@U.mood.FutCon@ IISTEM ;
+
+LEXICON II_CONJUNCTIV !!= @CODE@ gives flag for conjunctive (no prefix)
+<  0:ê 0:%-       > II_CNJ_TENSE ; !
+<  0:ê 0:%^EGLOT   > II_CNJ_TENSE ; !
+
+
+LEXICON II_CNJ_TENSE !!= @CODE@ gives flag for conjunctive (no prefix)
+<             		"@U.tense.Prs@" > IILIST ; !
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IILIST ; !
+< 0:k 0:î 0:%-      "@U.tense.Prt@"     > IILIST ; !
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > IILIST ; !
+< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > IILIST ; !
+
+
+LEXICON II_IND_TENSE
+<                   "@U.tense.Prs@"     > IISTEM ; !
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IISTEM ; !
+< 0:k 0:î 0:%-      "@U.tense.Prt@"     > IISTEM ; !
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > IISTEM ; !
+< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > IISTEM ; !
+
+LEXICON IILIST
+ :%> IISTEM ;
+
 
 
 !! !! Transitive animate
 !     ==================
 
 LEXICON TA  !!= @CODE@ divides TA in independent, conjunctive, imperative and future conditional
- TA_INDEPENDENT ;
- TA_CONJUNCTIV ;
+@U.mood.indep@ TA_INDEPENDENT ;
+@U.mood.cnj@ TA_CONJUNCTIV ;
  TA_FUTURE_CONDITIONAL ;
  TA_IMPERATIV ;
 
-LEXICON TA_INDEPENDENT  !!= @CODE@ gives prefixes ni/ki/NULL and corresponding flags
- @U.mood.indep@ TA_PERSPREF ; !
 
-LEXICON TA_PERSPREF
-< 0:n 0:i "@U.perspref.NI@" 0:"t2" > TA_TENSE ; !
-< 0:k 0:i "@U.perspref.KI@" 0:"t2" > TA_TENSE ; !
-<         "@U.perspref.NULL@"      > TA_TENSE ; !
+LEXICON TA_INDEPENDENT
+< 0:n 0:i "@U.perspref.NI@" 0:"t2" > TA_IND_TENSE ; !
+< 0:k 0:i "@U.perspref.KI@" 0:"t2" > TA_IND_TENSE ; !
+<         "@U.perspref.NULL@"      > TA_IND_TENSE ; !
 
-LEXICON TA_CONJUNCTIV !!= @CODE@ gives flag for conjunctive (no prefix)
-<  0:ê 0:%-      "@U.mood.cnj@" > TA_TENSE ; !
-<  0:ê 0:%^EGLOT "@U.mood.cnj@" > TA_TENSE ;
+LEXICON TA_CONJUNCTIV
+< 0:ê 0:%-         > TA_CNJ_TENSE ; !
+< 0:ê 0:%^EGLOT    > TA_CNJ_TENSE ; !
 
 
-LEXICON TA_TENSE
+LEXICON TA_CNJ_TENSE !!= @CODE@ gives flag for conjunctive (no prefix)
+<             		"@U.tense.Prs@" > TALIST ; !
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > TALIST ; !
+< 0:k 0:î 0:%-      "@U.tense.Prt@"     > TALIST ; !
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > TALIST ; !
+< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > TALIST ; !
+
+
+LEXICON TA_IND_TENSE
 <                   "@U.tense.Prs@"     > TALIST ; !
 < 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > TALIST ; !
 < 0:k 0:î 0:%-      "@U.tense.Prt@"     > TALIST ; !
@@ -136,7 +166,7 @@ LEXICON TA_TENSE
 
 
 LEXICON TA_FUTURE_CONDITIONAL
-< "@U.mood.FutCon@" > TALIST ;
+@U.mood.FutCon@ TALIST ;
 
 
 LEXICON TA_IMPERATIV   !!= @CODE@ gives flag for TA imperative
@@ -247,7 +277,7 @@ wâsêskwan  IICONJ "it is sunny" ;
 mispon IICONJ "it is snowing" ;
 yôtin IICONJ "it is windy" ;
 sôhkiyowêw IICONJ "it is a strong wind" ;
-sîkipêstâw IICONJ "it is pouring" ;
+sîkipêstâw:sîkipêstâ IICONJw "it is pouring" ;
 kaskaniwipêscâsin IICONJ "it is misth" ;
 
 LEXICON TASTEM   !!= @CODE@ = VTA
