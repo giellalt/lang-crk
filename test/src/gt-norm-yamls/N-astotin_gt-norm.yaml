@@ -1,0 +1,48 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - astotin - ok : # -m inanimate noun, hat
+     astotin+N+IN+Sg: astotin
+     astotin+N+IN+Sg+Px1Sg: nitastotin
+     astotin+N+IN+Sg+Px2Sg: kitastotin
+     astotin+N+IN+Sg+Px1Pl: nitastotininân
+     astotin+N+IN+Sg+Px12Pl: kitastotininaw
+     astotin+N+IN+Sg+Px2Pl: kitastotiniwâw
+     astotin+N+IN+Sg+Px3Sg: otastotin
+     astotin+N+IN+Sg+Px3Pl: otastotiniwâw
+     astotin+N+IN+Sg+Px4Pl: otastotiniyiw
+
+     astotin+N+IN+Pl: astotina
+     astotin+N+IN+Pl+Px1Sg: nitastotina
+     astotin+N+IN+Pl+Px2Sg: kitastotina
+     astotin+N+IN+Pl+Px1Pl: nitastotininâna
+     astotin+N+IN+Pl+Px12Pl: kitastotininawa
+     astotin+N+IN+Pl+Px2Pl: kitastotiniwâwa
+     astotin+N+IN+Pl+Px3Sg: otastotina
+     astotin+N+IN+Pl+Px3Pl: otastotiniwâwa
+     astotin+N+IN+Pl+Px4Pl: otastotiniyiwa
+
+     astotin+N+IN+Loc: astotinihk
+     astotin+N+IN+Px1Sg+Loc: nitastotinihk
+     astotin+N+IN+Px2Sg+Loc: kitastotinihk
+     astotin+N+IN+Px1Pl+Loc: nitastotininâhk
+     astotin+N+IN+Px12Pl+Loc: kitastotininâhk
+     astotin+N+IN+Px2Pl+Loc: kitastotiniwâhk
+     astotin+N+IN+Px3Sg+Loc: otastotinihk
+     astotin+N+IN+Px3Pl+Loc: otastotiniwâhk
+     astotin+N+IN+Px4Pl+Loc: otastotiniyihk
+
+     astotin+N+IN+Der/Dim+N+IN+Sg: [ascocinis, ascocinisis]
+     astotin+N+IN+Der/Dim+N+IN+Pl: [ascocinisa, ascocinisisa]
+     astotin+N+IN+Der/Dim+N+IN+Loc: [ascocinisihk, ascocinisisihk]
+     astotin+N+IN+Der/Dim+N+IN+Sg+Px1Sg: [nicascocinis, nicascocinisis]
+     astotin+N+IN+Der/Dim+N+IN+Sg+Px2Sg: [kicascocinis, kicascocinisis]
+     astotin+N+IN+Der/Dim+N+IN+Sg+Px3Sg: [ocascocinis, ocascocinisis]
