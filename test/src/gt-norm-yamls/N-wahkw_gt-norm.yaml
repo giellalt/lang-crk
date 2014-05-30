@@ -1,0 +1,48 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/aANlyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/aANlyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - wâhkw - ok : # -m animate noun, roe
+     wâhkw+N+AN+Sg: wâhkw
+     wâhkw+N+AN+Sg+Px1Sg: niwâhkom
+     wâhkw+N+AN+Sg+Px2Sg: kiwâhkom
+     wâhkw+N+AN+Sg+Px3Sg+Obv: owâhkoma
+     wâhkw+N+AN+Sg+Px4Sg+Obv: owâhkomiyiwa
+     wâhkw+N+AN+Sg+Px1Pl: niwâhkominân
+     wâhkw+N+AN+Sg+Px12Pl: kiwâhkominaw
+     wâhkw+N+AN+Sg+Px2Pl: kiwâhkomiwâw
+     wâhkw+N+AN+Sg+Px3Pl+Obv: owâhkomiwâwa
+     wâhkw+N+AN+Sg+Px4Pl+Obv: owâhkomiyiwa
+
+     wâhkw+N+AN+Pl: wâhkwak
+     wâhkw+N+AN+Pl+Px1Sg: niwâhkomak
+     wâhkw+N+AN+Pl+Px2Sg: kiwâhkomak
+     wâhkw+N+AN+Pl+Px3Sg+Obv: owâhkoma
+     wâhkw+N+AN+Pl+Px4Sg+Obv: owâhkomiyiwa
+     wâhkw+N+AN+Pl+Px1Pl: niwâhkominânak
+     wâhkw+N+AN+Pl+Px12Pl: kiwâhkominawak
+     wâhkw+N+AN+Pl+Px2Pl: kiwâhkomiwâwak
+     wâhkw+N+AN+Pl+Px3Pl+Obv: owâhkomiwâwa
+     wâhkw+N+AN+Pl+Px4Pl+Obv: owâhkomiyiwa
+
+     wâhkw+N+AN+Obv: wâhkwa
+     wâhkw+N+AN+Loc: wâhkohk
+     wâhkw+N+AN+Px1Sg+Loc: niwâhkomihk
+     wâhkw+N+AN+Px2Sg+Loc: kiwâhkomihk
+     wâhkw+N+AN+Px3Sg+Loc: owâhkomihk
+     wâhkw+N+AN+Px4Sg+Loc: owâhkomiyihk
+     wâhkw+N+AN+Px1Pl+Loc: niwâhkominâhk
+     wâhkw+N+AN+Px12Pl+Loc: kiwâhkominâhk
+     wâhkw+N+AN+Px2Pl+Loc: kiwâhkomiwâhk
+     wâhkw+N+AN+Px3Pl+Loc: owâhkomiwâhk
+     wâhkw+N+AN+Px4Pl+Loc: owâhkomiyihk
+
+     wâhkw+N+AN+Der/Dim+N+AN+Sg: wâhkwis
+     wâhkw+N+AN+Der/Dim+N+AN+Pl: wâhkwisak

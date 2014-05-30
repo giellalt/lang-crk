@@ -1,0 +1,47 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - cîmân - ok : # -m inanimate noun, canoe
+     cîmân+N+IN+Sg: cîmân
+     cîmân+N+IN+Sg+Px1Sg: nicîmân
+     cîmân+N+IN+Sg+Px2Sg: kicîmân
+     cîmân+N+IN+Sg+Px1Pl: nicîmâninân
+     cîmân+N+IN+Sg+Px12Pl: kicîmâninaw
+     cîmân+N+IN+Sg+Px2Pl: kicîmâniwâw
+     cîmân+N+IN+Sg+Px3Sg: ocîmân
+     cîmân+N+IN+Sg+Px3Pl: ocîmâniwâw
+     cîmân+N+IN+Sg+Px4Pl: ocîmâniyiw
+
+     cîmân+N+IN+Pl: cîmâna
+     cîmân+N+IN+Pl+Px1Sg: nicîmâna
+     cîmân+N+IN+Pl+Px2Sg: kicîmâna
+     cîmân+N+IN+Pl+Px1Pl: nicîmâninâna
+     cîmân+N+IN+Pl+Px12Pl: kicîmâninawa
+     cîmân+N+IN+Pl+Px2Pl: kicîmâniwâwa
+     cîmân+N+IN+Pl+Px3Sg: ocîmâna
+     cîmân+N+IN+Pl+Px3Pl: ocîmâniwâwa
+     cîmân+N+IN+Pl+Px4Pl: ocîmâniyiwa
+
+     cîmân+N+IN+Loc: cîmânihk
+     cîmân+N+IN+Px1Sg+Loc: nicîmânihk
+     cîmân+N+IN+Px2Sg+Loc: kicîmânihk
+     cîmân+N+IN+Px1Pl+Loc: nicîmâninâhk
+     cîmân+N+IN+Px12Pl+Loc: kicîmâninâhk
+     cîmân+N+IN+Px2Pl+Loc: kicîmâniwâhk
+     cîmân+N+IN+Px3Sg+Loc: ocîmânihk
+     cîmân+N+IN+Px3Pl+Loc: ocîmâniwâhk
+     cîmân+N+IN+Px4Pl+Loc: ocîmâniyihk
+
+     cîmân+N+IN+Der/Dim+N+IN+Sg: [cîmânis, cîmânisis]
+     cîmân+N+IN+Der/Dim+N+IN+Pl: [cîmânisa, cîmânisisa]
+     cîmân+N+IN+Der/Dim+N+IN+Loc: [cîmânisihk, cîmânisisihk]
+     cîmân+N+IN+Der/Dim+N+IN+Sg+Px1Sg: [nicîmânis, nicîmânisis]
+     cîmân+N+IN+Der/Dim+N+IN+Px1Sg+Loc: [nicîmânisihk, nicîmânisisihk]
