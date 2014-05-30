@@ -28,7 +28,7 @@
 !! !!! Intransitive animate (IA)
 
 LEXICON IACONJ !!= @CODE@ splits in 4 moods
-< "+V":0 "+IA":0   "@U.tense.Prs@" "@D.tense.FutDef@"    >     # ; !Baseform
+< "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@D.mood@"   >     # ; !Baseform
 +V+IA: IACONJ-CONT ;
  
 LEXICON IACONJw !!= @CODE@ splits in 4 moods, for verbs with final -w
@@ -155,6 +155,7 @@ LEXICON II_SBJ
 !! There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
 
 LEXICON TACONJ_1 !!= @CODE@ 
+< "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@D.mood@"   >     # ; !Baseform
 +V+TA+Ind: TA_IND ;
 +V+TA+Cnj: TA_SBJ ;
 +V+TA+Fut: TA_FUT ;

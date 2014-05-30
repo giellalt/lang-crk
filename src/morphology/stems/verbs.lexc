@@ -88,7 +88,7 @@ LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in 
 
 
 LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
- :%> IAPREVERB ;
+ :%> IASTEM ;
 
 
 !! !! Intransitive inanimate
@@ -148,14 +148,14 @@ LEXICON TALIST  !!= @CODE@ just adds the prefix boundary
 
 ! This and the next lexicon experiment with preverbs, Okimâsis p. 17.
 
-LEXICON IAPREVERB   !!= @CODE@ = VAI
-IASLOT2 ; ! business as usual
+!LEXICON IAPREVERB   
+!IASLOT2 ; ! business as usual
 !ati	    IASLOT2 "begin" ;
 !nôhtê   IASLOT2 "want" ;
 !kakwê   IASLOT2 "try" ;
 
-LEXICON IASLOT2
-IASTEM ; ! business as usual
+!LEXICON IASLOT2
+!IASTEM ; ! business as usual
 !mâci    IASTEM "begin" ;
 !nihtâ   IASTEM "have the ability to do well" ;
 !pêyako  IASTEM "only" ;
