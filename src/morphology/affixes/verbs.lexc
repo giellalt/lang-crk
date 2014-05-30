@@ -402,24 +402,82 @@ LEXICON 12Pl_Imp
 !     =========================
 
 
-LEXICON TICONJ  !!= * @CODE@ not yet written
-+V+TI+Ind: TI_IND ;
+LEXICON TICONJ  !!= * @CODE@
+< "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+TI: TICONJ-CONT ;
+
+ 
+
+LEXICON TICONJ-CONT
+< "+Ind":0  "@U.mood.indep@" >  TI_IND ; !
+< "+Cnj":0  "@U.mood.cnj@" > TI_CNJ ; !
+< 0:%>    "@D.tense@"  >  TI_IMP ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TI_FUT_CON ;
 
 
-LEXICON TI_IND
- TI_IND_SUFF ;
- 
- 
-LEXICON TI_IND_SUFF
-+1Sg@U.verb.1sgindep@:n@U.verb.1sgindep@ # ;
-+2Sg@U.verb.2sgindep@:n@U.verb.2sgindep@ # ;
-+3Sg@U.verb.3sgindep@:m@U.verb.3sgindep@ # ;
-+4Sg000@U.verb.3osgindep@:miyiwa@U.verb.3osgindep@ # ;
-!+3iSg@U.verb.3isgindep@:m@U.verb.3isgindep@ # ;
-+1Pl@U.verb.1plindep@:nân@U.verb.1plindep@ # ;   ! exclusive Pl
-+12Pl@U.verb.12plindep@:naw@U.verb.12plindep@ # ; ! inclusive Pl
-+2Pl@U.verb.2plindep@:nâwâw@U.verb.2plindep@ # ;
-+3Pl@U.verb.3plindep@:wak@U.verb.3plindep@ # ;
+LEXICON TI_IND !!= @CODE@ First mode, indicative
+< "@U.tense.Prs@"    "+Prs":%>          > TI_IND_PRS ; !
+< "@U.tense.Prt@"    "+Prt":%>          > TI_IND_PRS ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > TI_IND_PRS ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > TI_IND_PRS ; !
+
+
+LEXICON TI_IND_PRS !!= @CODE@ gives person suffixes
+< 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:n                 > # ; !
+< 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:n                 > # ; !
+<          "+3Sg":0 "@U.perspref.NULL@" 0:m                 > # ; !
+< 0:"^EA"  "+1Pl":0 "@U.perspref.NI@"   0:n 0:â 0:n         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:a 0:w         > # ; !
+< 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:n 0:â 0:w 0:â 0:w > # ; !
+<          "+3Pl":0 "@U.perspref.NULL@" 0:m 0:w 0:a 0:k         > # ; !
+<          "+4Pl":0 "@U.perspref.NULL@" 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
+
+
+LEXICON TI_FUT_CON
+  +1Sg:%>yâni  # ; 
+  +2Sg:%>yani  # ; 
+  +3Sg:%>ci    # ; 
+  +4Sg:%>yici  # ; 
+  +1Pl:%>yâhki # ; ! exclusive Pl
+ +12Pl:%>yahko # ; ! inclusive Pl
+  +2Pl:%>yêko  # ; 
+  +3Pl:%>twâwi # ; 
+  +4Pl:%>yici  # ; 
+
+
+LEXICON TI_CNJ !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > IA_CNJ_SUF ; !
+< "+Prt":0          "@U.tense.Prt@"    > IA_CNJ_SUF ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > IA_CNJ_SUF ; !
+
+
+
+LEXICON TI_CNJ_SUF
+     +1Sg:%>mân #;
+     +2Sg:%>man	#;
+     +3Sg:%>hk	#;
+     +1Pl:%>mâhk #;
+    +12Pl:%>mahk #;
+     +2Pl:%>mek #;  !
+     +3Pl:%>hkik #;
+    +4Pl:%>miyit #;
+
+LEXICON TI_IMP  !!= @CODE@ Fourth mode, imperative
+< "+Imp":0 "@U.mood.imp@" > TI_imp ; !
+
+
+LEXICON TI_imp
++Imm+2Sg:0   # ; !
++Imm+12Pl:%>etân	  # ; !
++Del+2Pl:%>mok   # ; !
+
+LEXICON TA_IMP_LONG_E
+< "+Imp":0 "@U.verb.NULL@" > imp-long-E ;!
+
+LEXICON TI_imp-long-E
++Imm+2Sg:%>mohkan  # ; !
++Imm+12Pl:%>mohkahk	  # ; !
++Del+2Pl:%>mohkek   # ; !
 
 
 
