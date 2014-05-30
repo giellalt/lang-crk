@@ -3,10 +3,7 @@
 
 !!The declinations for Animates
 
- * LEXICON ANniska  for the irregular niska N+AN
-
-
- * LEXICON ANniskaSUFFLOC  for the irregular niska N+AN
+ * LEXICON ANniska  for the irregular niska and sihta N+AN
 
 
 
@@ -57,7 +54,12 @@
 
  * LEXICON ANIRRINFL  is also there to handle the highly irregular atim and mistatim
 
+ * LEXICON ANkwaDECL  takes -om as extra suffix in possessed form
+
+
  * LEXICON ANkwDECL  takes -om as extra suffix in possessed form
+
+
 
  * LEXICON ANDIMIRR  Possessive suffixes to diminutives
 
@@ -76,7 +78,11 @@
 
  * LEXICON INimDECLy  for the animate declension, poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
 
- * LEXICON INimDIMy  the diminutives with poss.-im-. poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
+ * LEXICON INimDIMy  the diminutives with poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
+
+
+ * LEXICON INwDECL  for ex. askekinw  
+
 
 
  * LEXICON INDECL  for the inanimate declension, diminutive: -is- and -isis-
@@ -86,6 +92,8 @@
  * LEXICON INDECLis  for the inanimate declension, diminutive: -is-
 
  * LEXICON INDECLosi  for the inanimate declension of ôsi, an irregular noun
+
+
 
 
  * LEXICON INDIMDERIVATION  for hardcoded noun:diminutive
@@ -131,6 +139,11 @@
  * LEXICON INSUFF_PL  
 
 
+ * LEXICON INSUFFohk_LOC 
+
+ * LEXICON INSUFFoSG  
+
+ * LEXICON INSUFFoPL  
 
 
  * LEXICON INSUFF_LOC 
@@ -171,7 +184,7 @@
 
  * LEXICON LOC  
 
- * LEXICON ANohk_LOC  
+ * LEXICON ohk_LOC  
 
  * LEXICON LOCahk  
 

@@ -244,8 +244,8 @@ sihkihp:sihkihpwak
 mostos:mostoswak is not included in this rule, but is done in lexc
 
 
-
 __locative alternations o__ Okimasis 2004: 26, Rule 1: -k + ohk, the stem vowel can be e.g. -i- : amisk+ihk = amiskohk
+
 
 __i:0 after w/y __ (first) : Okimasis 2004: 26, Rule 2, 8: Vow + (w/y) + ihk 
 cahcahkâyow+ihk, tohtôsâpoy+ihk, cahcahkâyow+is, cohcôsâpoy+is, o+pikiw+iyiwa	 maniway+i
@@ -274,7 +274,7 @@ __t2:t between prefix and vowel__
 
 __i2:o in possessive element__ 
 
-__i2:i in possessive element__ 
+__i2:i in possessive element __ 
 
 
 __i2:0 in possessive element__ 
@@ -294,8 +294,9 @@ __o:0 in possessive prefix__
 __Double consonant deletion__ 
 
 
-__Diminutives - all stem t change to c __ Okimasis 2004: 13, Rule 2.
+__t:c in diminutives __ Okimasis 2004: 13, Rule 2.
 
+__Diminutives - t2 changes to c __
 
 
 __Diminutives rule change ending to os with k-final stems 1 __ Okimasis 2004: 14, Examples listed in 5.
@@ -304,6 +305,8 @@ __Diminutives rule change ending to os with k-final stems 2 __ Okimasis 2004: 14
 
 __Diminutives rule change ending delete i with nouns ending in kwa__
 
+
+VERBS
 
 __h glottal stop for initial vowel stems in verbs: Conjunctive__
 
@@ -329,7 +332,7 @@ The file
 
 The prefixes
 
-Nouns redirects to AN-IN, BODY, INALIENABLE and EXPER
+Nouns redirects to AN-IN, BODY, INALIENABLE
 
 
 AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
@@ -352,7 +355,6 @@ INALIENABLE  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
 STEMS adds an affixmark and redirects to STEMLIST
 
 STEMLIST for nouns getting prefixes ni-, ki-, o-
-
 
 
 INALIENABLESTEMS adds an affixmark and redirects to INABLESTEMLIST
@@ -500,10 +502,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 !!The declinations for Animates
 
- * LEXICON ANniska  for the irregular niska N+AN
-
-
- * LEXICON ANniskaSUFFLOC  for the irregular niska N+AN
+ * LEXICON ANniska  for the irregular niska and sihta N+AN
 
 
 
@@ -554,7 +553,12 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON ANIRRINFL  is also there to handle the highly irregular atim and mistatim
 
+ * LEXICON ANkwaDECL  takes -om as extra suffix in possessed form
+
+
  * LEXICON ANkwDECL  takes -om as extra suffix in possessed form
+
+
 
  * LEXICON ANDIMIRR  Possessive suffixes to diminutives
 
@@ -573,7 +577,11 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON INimDECLy  for the animate declension, poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
 
- * LEXICON INimDIMy  the diminutives with poss.-im-. poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
+ * LEXICON INimDIMy  the diminutives with poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
+
+
+ * LEXICON INwDECL  for ex. askekinw  
+
 
 
  * LEXICON INDECL  for the inanimate declension, diminutive: -is- and -isis-
@@ -583,6 +591,8 @@ Words marked GG are from Plains Cree Grammar guide and glossary
  * LEXICON INDECLis  for the inanimate declension, diminutive: -is-
 
  * LEXICON INDECLosi  for the inanimate declension of ôsi, an irregular noun
+
+
 
 
  * LEXICON INDIMDERIVATION  for hardcoded noun:diminutive
@@ -628,6 +638,11 @@ Words marked GG are from Plains Cree Grammar guide and glossary
  * LEXICON INSUFF_PL  
 
 
+ * LEXICON INSUFFohk_LOC 
+
+ * LEXICON INSUFFoSG  
+
+ * LEXICON INSUFFoPL  
 
 
  * LEXICON INSUFF_LOC 
@@ -668,7 +683,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON LOC  
 
- * LEXICON ANohk_LOC  
+ * LEXICON ohk_LOC  
 
  * LEXICON LOCahk  
 
