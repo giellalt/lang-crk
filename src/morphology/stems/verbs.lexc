@@ -94,8 +94,6 @@ LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
 !! !! Intransitive inanimate
 !     ====================
 
-
-
 LEXICON II 
 @U.mood.indep@ II_IND_TENSE ; ! Independent mode
 @U.mood.cnj@ II_CONJUNCTIV ; 
@@ -249,6 +247,8 @@ pâhpi IACONJ "laught" ; !GG
 nîmihito IACONJ "dance" ; !GG
 kîwe IACONJ "go home" ; !GG
 pihtokwe IACONJ "enter" ; !GG
+nitohta TICONJ "listen" ;
+nisitohta TICONJ "understand" ;
 
 
 
@@ -303,7 +303,7 @@ atoskaw:atosk	TACONJ_2 "work for him/her" ;
 kapêsistaw:kapêsist TACONJ_2 ;
 
 !LEXICON TISTEM  !VTI
-!nisitohta  "understand" ;
-!nitohta "listen" ;
+!nisitohta TICONJ "understand" ;
+!nitohta TICONJ "listen" ;
 
 
