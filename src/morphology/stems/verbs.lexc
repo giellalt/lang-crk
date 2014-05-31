@@ -36,8 +36,8 @@
 LEXICON Verbs !!= @CODE@ divides the verbs in these four transitivity classes
 
 IA ; ! intransitive animate
-II ; ! intransitive inanimate
-TA ; ! transitive animate
+!II ; ! intransitive inanimate
+!TA ; ! transitive animate
 !TI ; ! transitive inanimate
 
 
@@ -91,90 +91,90 @@ LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
  :%> IASTEM ;
 
 
-!! !! Intransitive inanimate
-!     ====================
-
-LEXICON II 
-@U.mood.indep@ II_IND_TENSE ; ! Independent mode
-@U.mood.cnj@ II_CONJUNCTIV ; 
-@U.mood.FutCon@ IISTEM ;
-
-LEXICON II_CONJUNCTIV !!= @CODE@ gives flag for conjunctive (no prefix)
-<  0:ê 0:%-       > II_CNJ_TENSE ; !
-<  0:ê 0:%^EGLOT   > II_CNJ_TENSE ; !
-
-
-LEXICON II_CNJ_TENSE !!= @CODE@ gives flag for conjunctive (no prefix)
-<             		"@U.tense.Prs@" > IILIST ; !
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IILIST ; !
-< 0:k 0:î 0:%-      "@U.tense.Prt@"     > IILIST ; !
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > IILIST ; !
-< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > IILIST ; !
-
-
-LEXICON II_IND_TENSE
-<                   "@U.tense.Prs@"     > IISTEM ; !
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IISTEM ; !
-< 0:k 0:î 0:%-      "@U.tense.Prt@"     > IISTEM ; !
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > IISTEM ; !
-< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > IISTEM ; !
-
-LEXICON IILIST
- :%> IISTEM ;
-
-
-
-!! !! Transitive animate
-!     ==================
-
-LEXICON TA  !!= @CODE@ divides TA in independent, conjunctive, imperative and future conditional
-@U.mood.indep@ TA_INDEPENDENT ;
-@U.mood.cnj@ TA_CONJUNCTIV ;
- TA_FUTURE_CONDITIONAL ;
- TA_IMPERATIV ;
-
-
-LEXICON TA_INDEPENDENT
-< 0:n 0:i "@U.perspref.NI@" 0:"t2" > TA_IND_TENSE ; !
-< 0:k 0:i "@U.perspref.KI@" 0:"t2" > TA_IND_TENSE ; !
-<         "@U.perspref.NULL@"      > TA_IND_TENSE ; !
-
-LEXICON TA_CONJUNCTIV
-< 0:ê 0:%-         > TA_CNJ_TENSE ; !
-< 0:ê 0:%^EGLOT    > TA_CNJ_TENSE ; !
-
-
-LEXICON TA_CNJ_TENSE !!= @CODE@ gives flag for conjunctive (no prefix)
-<             		"@U.tense.Prs@" > TALIST ; !
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > TALIST ; !
-< 0:k 0:î 0:%-      "@U.tense.Prt@"     > TALIST ; !
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > TALIST ; !
-< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > TALIST ; !
-
-
-LEXICON TA_IND_TENSE
-<                   "@U.tense.Prs@"     > TALIST ; !
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > TALIST ; !
-< 0:k 0:î 0:%-      "@U.tense.Prt@"     > TALIST ; !
-< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@"  > TALIST ; !
-< 0:k 0:a 0:%-      "@U.tense.FutDef@"  > TALIST ; !
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > TALIST ; !
-< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > TALIST ; !
-
-
-
-LEXICON TA_FUTURE_CONDITIONAL
-@U.mood.FutCon@ TALIST ;
-
-
-LEXICON TA_IMPERATIV   !!= @CODE@ gives flag for TA imperative
-@U.mood.imp@  TALIST ;   
-
-
-
-LEXICON TALIST  !!= @CODE@ just adds the prefix boundary
- :%> TASTEM ;
-
+!!! !! Intransitive inanimate
+!!     ====================
+!
+!LEXICON II 
+!@U.mood.indep@ II_IND_TENSE ; ! Independent mode
+!@U.mood.cnj@ II_CONJUNCTIV ; 
+!@U.mood.FutCon@ IISTEM ;
+!
+!LEXICON II_CONJUNCTIV !!= @CODE@ gives flag for conjunctive (no prefix)
+!<  0:ê 0:%-       > II_CNJ_TENSE ; !
+!<  0:ê 0:%^EGLOT   > II_CNJ_TENSE ; !
+!
+!
+!LEXICON II_CNJ_TENSE !!= @CODE@ gives flag for conjunctive (no prefix)
+!<             		"@U.tense.Prs@" > IILIST ; !
+!< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IILIST ; !
+!< 0:k 0:î 0:%-      "@U.tense.Prt@"     > IILIST ; !
+!< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > IILIST ; !
+!< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > IILIST ; !
+!
+!
+!LEXICON II_IND_TENSE
+!<                   "@U.tense.Prs@"     > IISTEM ; !
+!< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IISTEM ; !
+!< 0:k 0:î 0:%-      "@U.tense.Prt@"     > IISTEM ; !
+!< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > IISTEM ; !
+!< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > IISTEM ; !
+!
+!LEXICON IILIST
+! :%> IISTEM ;
+!
+!
+!
+!!! !! Transitive animate
+!!     ==================
+!
+!LEXICON TA  !!= @CODE@ divides TA in independent, conjunctive, imperative and future conditional
+!@U.mood.indep@ TA_INDEPENDENT ;
+!@U.mood.cnj@ TA_CONJUNCTIV ;
+! TA_FUTURE_CONDITIONAL ;
+! TA_IMPERATIV ;
+!
+!
+!LEXICON TA_INDEPENDENT
+!< 0:n 0:i "@U.perspref.NI@" 0:"t2" > TA_IND_TENSE ; !
+!< 0:k 0:i "@U.perspref.KI@" 0:"t2" > TA_IND_TENSE ; !
+!<         "@U.perspref.NULL@"      > TA_IND_TENSE ; !
+!
+!LEXICON TA_CONJUNCTIV
+!< 0:ê 0:%-         > TA_CNJ_TENSE ; !
+!< 0:ê 0:%^EGLOT    > TA_CNJ_TENSE ; !
+!
+!
+!LEXICON TA_CNJ_TENSE !!= @CODE@ gives flag for conjunctive (no prefix)
+!<             		"@U.tense.Prs@" > TALIST ; !
+!< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > TALIST ; !
+!< 0:k 0:î 0:%-      "@U.tense.Prt@"     > TALIST ; !
+!< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > TALIST ; !
+!< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > TALIST ; !
+!
+!
+!LEXICON TA_IND_TENSE
+!<                   "@U.tense.Prs@"     > TALIST ; !
+!< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > TALIST ; !
+!< 0:k 0:î 0:%-      "@U.tense.Prt@"     > TALIST ; !
+!< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@"  > TALIST ; !
+!< 0:k 0:a 0:%-      "@U.tense.FutDef@"  > TALIST ; !
+!< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > TALIST ; !
+!< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > TALIST ; !
+!
+!
+!
+!LEXICON TA_FUTURE_CONDITIONAL
+!@U.mood.FutCon@ TALIST ;
+!
+!
+!LEXICON TA_IMPERATIV   !!= @CODE@ gives flag for TA imperative
+!@U.mood.imp@  TALIST ;   
+!
+!
+!
+!LEXICON TALIST  !!= @CODE@ just adds the prefix boundary
+! :%> TASTEM ;
+!
 
 !! !! Transitive inanimate
 
@@ -250,8 +250,6 @@ pihtokwe IACONJ "enter" ; !GG
 nitohta TICONJ "listen" ;
 nisitohta TICONJ "understand" ;
 
-
-
 ! colour terms
 
 wâpiskisiw:wâpiskisi IACONJw "be white" ;
@@ -264,10 +262,9 @@ wâposâwisiw:wâposâwisi  IACONJw "be yellow" ;
 osâwisiw:osâwisi  IACONJw "be orange" ;
 nîpâmâyâtisiw:nîpâmâyâtisi  IACONJw "be purple" ;
 wâpinâkosiw:wâpinâkosi IACONJw "appear white" ;
-
 itasinâsw:itansinâso IACONJw "what colour is" ;
 
-LEXICON IISTEM   !!= @CODE@  = VII
+!LEXICON IISTEM   !!= @CODE@  = VII
 ! Note: the final consonant here is dropped in the future conditional
 ! The best solution seems to be to add a twolc rule for that.
 ! There is such a rule, but outcommented (Stem Final n), it might be
@@ -280,7 +277,7 @@ sôhkiyowêw IICONJ "it is a strong wind" ;
 sîkipêstâw:sîkipêstâ IICONJw "it is pouring" ;
 kaskaniwipêscâsin IICONJ "it is misth" ;
 
-LEXICON TASTEM   !!= @CODE@ = VTA
+!LEXICON TASTEM   !!= @CODE@ = VTA
 
 wâpam TACONJ_1 "see" ;
 wicih TACONJ_1 "help" ;
