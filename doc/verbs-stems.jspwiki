@@ -25,23 +25,21 @@ The Plains Cree verbs are divided in four groups:
 Intransitive animate
 
  LEXICON IA    divides IA in independent, conjunctive, imperative and future conditional
- *  IA_INDEPENDENT ;		  
- *  IA_CONJUNCTIV ;		   , note: two versions of conjunctive
- *  IA_CONJUNCTIV ;		   
+ * @U.mood.indep@ IA_INDEPENDENT ;		  
+ * @U.mood.cnj@ IA_CONJUNCTIV ;		   
  *  IA_IMPERATIV ;		      
  *  IA_FUTURE_CONDITIONAL ;  
 
- LEXICON IA_INDEPENDENT    gives prefixes and flags for person-number in indicative
 
 
 
 
 
 
+ LEXICON IA_CONJUNCTIV  gives flag for conjunctive (no prefix)
 
 
- LEXICON IA_CONJUNCTIV    gives prefixes and flags for person-number in subjunctive
-
+ LEXICON IA_CNJ_TENSE    gives prefixes and flags for person-number in subjunctive
 
 
  LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
@@ -51,28 +49,12 @@ Intransitive animate
 
 
 Intransitive inanimate
-
-
-
-
-
+    ====================
 Transitive animate
-
- LEXICON TA   divides TA in independent, conjunctive, imperative and future conditional
-
- LEXICON TA_INDEPENDENT   gives prefixes ni/ki/NULL and corresponding flags
-
- LEXICON TA_CONJUNCTIV  gives flag for conjunctive (no prefix)
-
- LEXICON TA_FUTURE   gives flag for future (no prefix)
-
-
- LEXICON TA_IMPERATIV    gives flag for TA imperative
-
-
-
- LEXICON TALIST   just adds the prefix boundary
-
+    ==================
+ !LEXICON TA   divides TA in independent, conjunctive, imperative and future conditional
+ !LEXICON TA_IMPERATIV    gives flag for TA imperative
+ !LEXICON TALIST   just adds the prefix boundary
 
 Transitive inanimate
 
@@ -85,7 +67,6 @@ The stems
 Words marked GG are from Plains Cree Grammar guide and glossary
 
 
- LEXICON IAPREVERB    = VAI
 
 
 
@@ -100,12 +81,11 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
+ !LEXICON IISTEM     = VII
 
 
 
- LEXICON IISTEM     = VII
-
- LEXICON TASTEM    = VTA
+ !LEXICON TASTEM    = VTA
 
 
 

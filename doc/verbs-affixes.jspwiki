@@ -26,11 +26,8 @@ Intransitive animate (IA)
 
 
 
- LEXICON IA_FUT_CON   Second mode mode, Fut Cond
 
-
-
- LEXICON IA_SBJ  Third mode, subjunctive
+ LEXICON IA_CNJ  Third mode, conjunctive
 
 
 
@@ -47,9 +44,28 @@ Intransitive inanimate (II)
 
  LEXICON IICONJ   splits according to conjugation
 
+ LEXICON IICONJw   splits according to conjugation
 
 
- LEXICON II_IND_PRS    is positive present
+
+
+
+ LEXICON II_IND  First mode, indicative
+
+ LEXICON II_INDw  First mode, indicative
+
+ LEXICON II_CNJ  Third mode, conjunctive
+
+
+ LEXICON II_IND_PERS    is positive present
+
+ LEXICON II_IND_PERSw    is positive present
+
+
+ LEXICON II_CNJ_PERS    is positive present
+
+ LEXICON II_CNJ_PERShk    is positive present
+
 
 
 
@@ -64,9 +80,12 @@ There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
  * LEXICON TACONJ_2   splits in 4. The -aw shall be removed from some forms.
 
 
+
  LEXICON TA_IND  gives prs
 
- LEXICON TA_IND_PRS  gives tags for subject, flag for object, and directs to obj suffs
+ LEXICON TA_IND_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
+
+
 
 
  LEXICON VTA_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
@@ -78,13 +97,10 @@ There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
 
 
 
+ LEXICON TA_CNJ  Third mode, conjunctive
 
 
- LEXICON TA_SBJ  gives flag diacritic and directs to subjunctive person suffixes
-
- LEXICON TA_SBJ_SUF  gives subj + obj tag and suf
-
-
+ LEXICON TA_CNJ_SUF  gives conj + obj tag and suf
 
 
 
@@ -93,7 +109,6 @@ There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
 
 
 
- LEXICON TA_FUT  gives flag diacritic and directs to subjunctive person suffixes
 
 
 
@@ -118,7 +133,26 @@ There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
 Transitive Inanimate (TI)
 
 
- * LEXICON TICONJ   not yet written
+ * LEXICON TICONJ  
+
+
+
+
+
+ LEXICON TI_IND  First mode, indicative
+
+
+ LEXICON TI_IND_PRS  gives person suffixes
+
+
+
+
+ LEXICON TI_CNJ  Third mode, conjunctive
+
+
+
+
+ LEXICON TI_IMP   Fourth mode, imperative
 
 
 
