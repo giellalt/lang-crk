@@ -1,0 +1,33 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - mihkwâw - ok : # Ordinary VII base on Wolvengrey
+     mihkwâw+V+II: mihkwâw
+     mihkwâw+V+II+Ind+Prs+3Sg: mihkwâw
+     mihkwâw+V+II+Ind+Prs+3Pl: mihkwâwa
+     mihkwâw+V+II+Ind+Prs+4Sg: mihkwâyiw
+     mihkwâw+V+II+Ind+Prs+4Pl: mihkwâyiwa
+
+     mihkwâw+V+II+Ind+Prt+3Sg: [kî-mihkwâw, kîmihkwâw]
+     mihkwâw+V+II+Ind+Prt+3Pl: [kî-mihkwâwa, kîmihkwâwa]
+     mihkwâw+V+II+Ind+Prt+4Sg: [kî-mihkwâyiw, kîmihkwâyiw]
+     mihkwâw+V+II+Ind+Prt+4Pl: [kî-mihkwâyiwa, kîmihkwâyiwa]
+
+
+     mihkwâw+V+II+Cnj+Prs+3Sg: [ê-mihkwâk, êmihkwâk]
+     mihkwâw+V+II+Cnj+Prs+3Pl: [ê-mihkwâki, êmihkwâki]
+     mihkwâw+V+II+Cnj+Prs+4Sg: [ê-mihkwâyik, êmihkwâyik]
+     mihkwâw+V+II+Cnj+Prs+4Pl: [ê-mihkwâyiki, êmihkwâyiki]
+
+     mihkwâw+V+II+Cnj+Prt+3Sg: [ê-kî-mihkwâk, êkîmihkwâk, ê-kîmihkwâk, êkî-mihkwâk]
+     mihkwâw+V+II+Cnj+Prt+3Pl: [ê-kî-mihkwâki, êkîmihkwâki, ê-kîmihkwâki, êkî-mihkwâki]
+     mihkwâw+V+II+Cnj+Prt+4Sg: [ê-kî-mihkwâyik, êkîmihkwâyik, ê-kîmihkwâyik, êkî-mihkwâyik]
+     mihkwâw+V+II+Cnj+Prt+4Pl: [ê-kî-mihkwâyiki, êkîmihkwâyiki, ê-kîmihkwâyiki, êkî-mihkwâyiki]
