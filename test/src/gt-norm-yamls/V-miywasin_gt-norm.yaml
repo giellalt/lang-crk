@@ -1,0 +1,32 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - miywasin - ok : # Ordinary VII base on Wolvengrey
+     miywâsin+V+II+Ind+Prs+3Sg: miywâsin
+     miywâsin+V+II+Ind+Prs+3Pl: miywâsinwa
+     miywâsin+V+II+Ind+Prs+4Sg: miywâsiniyiw
+     miywâsin+V+II+Ind+Prs+4Pl: miywâsiniyiwa
+
+     miywâsin+V+II+Ind+Prt+3Sg: [kî-miywâsin, kîmiywâsin]
+     miywâsin+V+II+Ind+Prt+3Pl: [kî-miywâsinwa, kîmiywâsinwa]
+     miywâsin+V+II+Ind+Prt+4Sg: [kî-miywâsiniyiw, kîmiywâsiniyiw]
+     miywâsin+V+II+Ind+Prt+4Pl: [kî-miywâsiniyiwa, kîmiywâsiniyiwa]
+
+
+     miywâsin+V+II+Cnj+Prs+3Sg: [ê-miywâsik, êmiywâsik]
+     miywâsin+V+II+Cnj+Prs+3Pl: [ê-miywâsiki, êmiywâsiki]
+     miywâsin+V+II+Cnj+Prs+4Sg: [ê-miywâsiniyik, êmiywâsiniyik]
+     miywâsin+V+II+Cnj+Prs+4Pl: [ê-miywâsiniyiki, êmiywâsiniyiki]
+
+     miywâsin+V+II+Cnj+Prt+3Sg: [ê-kî-miywâsik, êkîmiywâsik, ê-kîmiywâsik, êkî-miywâsik]
+     miywâsin+V+II+Cnj+Prt+3Pl: [ê-kî-miywâsiki, êkîmiywâsiki, ê-kîmiywâsiki, êkî-miywâsiki]
+     miywâsin+V+II+Cnj+Prt+4Sg: [ê-kî-miywâsiniyik, êkîmiywâsiniyik, ê-kîmiywâsiniyik, êkî-miywâsiniyik]
+     miywâsin+V+II+Cnj+Prt+4Pl: [ê-kî-miywâsiniyiki, êkîmiywâsiniyiki, ê-kîmiywâsiniyiki, êkî-miywâsiniyiki]
