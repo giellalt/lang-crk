@@ -122,24 +122,40 @@ LEXICON imp-long-E
 
 
 LEXICON IICONJ  !!= @CODE@ splits according to conjugation
-< "+V":0 "+II":0  "@U.tense.Prs@" "@U.mood.indep@" > # ; !baseform
-+V+II: IICONJ-CONT ;
+< "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS ;
+
+LEXICON IICONJFORMS
+< "@U.tense.Prs@" "@U.mood.indep@" >  # ; !baseform
+ IICONJ-CONT ; 
+
 
 LEXICON IICONJw  !!= @CODE@ splits according to conjugation
-< "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" > # ; !baseform
-+V+II: IICONJ-CONT ;
+< "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
+< "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw ;
 
+LEXICON IICONJ-CONTw
+< "+Ind":0  "@U.mood.indep@" >  II_INDw ; !
+< "+Cnj":0  "@U.mood.cnj@" > II_CNJw ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw ;!
 
 LEXICON IICONJ-CONT
 < "+Ind":0  "@U.mood.indep@" >  II_IND ; !
 < "+Cnj":0  "@U.mood.cnj@" > II_CNJ ; !
 < "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS ;!
 
-LEXICON IICONJ-CONTw
-< "+Ind":0  "@U.mood.indep@" >  II_INDw ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJ_PERS ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw ;
 
+
+LEXICON II_INDw !!= @CODE@ First mode, indicative
+< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERSw ; !
+< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERSw ; !
+!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS ; !
+!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS ; !
+
+
+LEXICON II_CNJw !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERSw ; !
+< "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERSw ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERSw ; !
 
 LEXICON II_IND !!= @CODE@ First mode, indicative
 < "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERS ; !
@@ -147,11 +163,6 @@ LEXICON II_IND !!= @CODE@ First mode, indicative
 !< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS ; !
 !< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS ; !
 
-LEXICON II_INDw !!= @CODE@ First mode, indicative
-< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERSw ; !
-< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERSw ; !
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERSw ; !
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERSw ; !
 
 LEXICON II_CNJ !!= @CODE@ Third mode, conjunctive
 < "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERS ; !
@@ -159,30 +170,32 @@ LEXICON II_CNJ !!= @CODE@ Third mode, conjunctive
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERS ; !
 
  
-LEXICON II_IND_PERS   !!= @CODE@ is positive present
+LEXICON II_IND_PERSw   !!= @CODE@ vowel final, regular 
++3Sg:%>w # ;
++3Pl:%>wa # ;
++4Sg:%>yiw # ;
++4Pl:%>yiwa # ;
+
+LEXICON II_IND_PERS   !!= @CODE@ -an final 
 +3Sg: # ;
-+4Sg:%>a # ;
-+3Pl:%>yiw # ;
-+4Pl:%>yiwa # ;
-
-LEXICON II_IND_PERSw   !!= @CODE@ is positive present
-+3Sg:w # ;
-+4Sg:%>a # ;
-+3Pl:%>yiw # ;
-+4Pl:%>yiwa # ;
++3Pl:%>wa # ;
++4Sg:%>iyiw # ;
++4Pl:%>iyiwa # ;
 
 
-LEXICON II_CNJ_PERS   !!= @CODE@ is positive present
+LEXICON II_CNJ_PERSw   !!= @CODE@  
 +3Sg:%>k # ;
-+4Sg:%>ki # ;
-+3Pl:%>iyik # ;
++3Pl:%>ki # ;
++4Sg:%>yik # ;
++4Pl:%>yiki # ;
+
+LEXICON II_CNJ_PERS   !!= @CODE@  
++3Sg:%>k # ;
++3Pl:%>ki # ;
++4Sg:%>iyik # ;
 +4Pl:%>iyiki # ;
 
-LEXICON II_CNJ_PERShk   !!= @CODE@ is positive present
-+3Sg:%>hk # ;
-+4Sg:%>hki # ;
-+3Pl:%>iyik # ;
-+4Pl:%>iyiki # ;
+
 
 
 !LEXICON II_IND_PERS 
