@@ -76,7 +76,7 @@ i:0 <=>  \PosDim [ o: | i: ]  [ w: | y: ] %>:0  _ %^LC:0 ;   ! cahcahkâyow+ihk,
 !! okimâw:nitôkimâm, nitohtôsâpom tohtôsâpoy tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
 o:ô <=> t2: %>:0 _  k :* i2:   ; ! okimâw:nitôkimâm ! careful: only in front of k first
  		 %>:0 t _  h :* i2:0  ; ! nitohtôsâpom tohtôsâpoy
- 		_ [ w: | y: ] %>:0 [ i: | i2: ] ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ; ! tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
+ 		\Pos _ [ w: | y: ] %>:0 [ i: | i2: ] ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ; ! tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
       
 "a:aa- alternations"
 !! __@RULENAME@__ , maniway+i- maniwâ - doesn't function
@@ -129,7 +129,8 @@ i2:0 <=> [ â | ô | ê | o: ] ( w: | y: )  %>:0  _ [ m | s ]  ; ! OBS: not wâw
 !! okimâw, maniway+i, pikiw+is cahcahkâyow+is tohtôsâpoy+is, cahcahkâyow+ihk, tohtôsâpoy+ihk
 [ w:0 | y:0 ] <=> [ Vow: | o: | i: ] _ %>:0 [ %^POS:0 | i2:] [ i: | m: | s: ] ; ! okimâw, maniway+i 
                   [ Vow: | o: | i: ] _ %>:0  i: s:  %^DIM:0 ; !pikiw+is cahcahkâyow+is tohtôsâpoy+is
-                 \Dim  o: _ %>:0  i: %^LC:0 ; ! cahcahkâyow+ihk, tohtôsâpoy+ihk  
+!                 \PosDim o:  _ %>:0  i: %^LC:0 ; ! cahcahkâyow+ihk, tohtôsâpoy+ihk  
+                 \PosDim [ o: | a: ] _ %>:0  i: %^LC:0 ; ! cahcahkâyow+ihk, tohtôsâpoy+ihk  
                  
    
 "o:w in possessive prefix"
@@ -176,8 +177,9 @@ i:o <=> k %>:0 _ s: %^DIM:0 ;
 i:0 <=> .#. o: %>:0 _ [ t: | k | m | n | s | h | c | w ] ; !prefix kinshipterms
 		w:  a: %>:0 _ s: %^DIM:0 ; ! OBS
 
-!"Remove locative i when poss -wâ"
-!i:0 <=> â: ( w:0 ) %>:0 _ %^LC:0 ; ! kitiskwêmiwâhk or kitiskwêsisiwâwihk  CHECK!
+"Remove locative i when poss -wâ"
+!i:0 <=>  â:  ( w:0 ) %>:0 _ %^LC:0 ; ! kitiskwêmiwâhk or kitiskwêsisiwâwihk  CHECK! ôtênâhk
+i:0 <=> [ â: | a: ] w:0 %>:0 _ %^LC:0 ; ! kitiskwêmiwâhk or kitiskwêsisiwâwihk  CHECK! ôtênâhk
 
 !! !! VERBS
 
