@@ -315,6 +315,8 @@ __e and ee to aa rule in first and second person__
 
 __e and ee to aa rule in first and second person__
 
+__n:0 before k-suffix__
+
 
 
 
@@ -720,29 +722,40 @@ Intransitive animate (IA)
 Intransitive inanimate (II)
 
 
- LEXICON IICONJ   splits according to conjugation
+ LEXICON IICONJ   adds the flag for no personprefixes
 
- LEXICON IICONJw   splits according to conjugation
-
-
+ LEXICON IICONJFORMS  adds a baseform = Prs+3Sg
 
 
+ LEXICON IICONJw    w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 
- LEXICON II_IND  First mode, indicative
+ LEXICON IICONJ-CONTw  w final. Splits according to mood
 
- LEXICON II_INDw  First mode, indicative
-
- LEXICON II_CNJ  Third mode, conjunctive
-
-
- LEXICON II_IND_PERS    is positive present
-
- LEXICON II_IND_PERSw    is positive present
+ LEXICON IICONJ-CONT  splits according to mood
 
 
- LEXICON II_CNJ_PERS    is positive present
 
- LEXICON II_CNJ_PERShk    is positive present
+ LEXICON II_INDw  indicative for w final
+
+
+ LEXICON II_CNJw  conjunctive for w final
+
+ LEXICON II_IND  indicative
+
+
+ LEXICON II_CNJ  conjunctive
+
+
+ LEXICON II_IND_PERSw    w final 
+
+ LEXICON II_IND_PERS    -n final 
+
+
+ LEXICON II_CNJ_PERSw    w final 
+
+ LEXICON II_CNJ_PERS    -n final 
+
+
 
 
 
