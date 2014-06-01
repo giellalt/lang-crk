@@ -31,15 +31,27 @@ LEXICON IACONJ !!= @CODE@ splits in 4 moods
 < "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+IA: IACONJ-CONT ;
  
+ 
+ 
 LEXICON IACONJw !!= @CODE@ splits in 4 moods, for verbs with final -w
 < "+V":w "+IA":0 "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@" >     # ; !Baseform
 +V+IA: IACONJ-CONT ;
 
+LEXICON IACONJn !!= @CODE@ splits in 4 moods, for verbs with final -n
+< "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+IA: IACONJ-CONTn ;
+
 
 LEXICON IACONJ-CONT
 < "+Ind":0  "@U.mood.indep@" >  IA_IND ; !
-< "+Cnj":0  "@R.mood.cnj@" > IA_CNJ ; !
-< 0:%>    "@D.tense@"  >  IA_IMP ; !
+< "+Cnj":0  "@U.mood.cnj@" > IA_CNJ ; !
+< "+Imp":%>    "@U.mood.imp@"  >  IA_IMP ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > IA_FUT_CON ;
+
+LEXICON IACONJ-CONTn
+< "+Ind":0  "@U.mood.indep@" >  IA_INDn ; !
+< "+Cnj":0  "@U.mood.cnj@" > IA_CNJn ; !
+< "+Imp":%>     "@U.mood.imp@"  >  IA_IMPn ; !
 < "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > IA_FUT_CON ;
 
 
@@ -48,6 +60,13 @@ LEXICON IA_IND !!= @CODE@ First mode, indicative
 < "@U.tense.Prt@"    "+Prt":%>          > IA_IND_PRS ; !
 < "@U.tense.FutDef@" "+Fut":0 "+Def":%> > IA_IND_PRS ; !
 < "@U.tense.FutInt@" "+Fut":0 "+Int":%> > IA_IND_PRS ; !
+
+LEXICON IA_INDn !!= @CODE@ First mode, indicative
+< "@U.tense.Prs@"    "+Prs":%>          > IA_IND_PRSn ; !
+< "@U.tense.Prt@"    "+Prt":%>          > IA_IND_PRSn ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > IA_IND_PRSn ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > IA_IND_PRSn ; !
+
 
 
 LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
@@ -60,6 +79,20 @@ LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
 < 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:n 0:â 0:w 0:â 0:w > # ; !
 <          "+3Pl":0 "@U.perspref.NULL@" 0:w 0:a 0:k         > # ; !
 <          "+4Pl":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ; !
+
+
+LEXICON IA_IND_PRSn !!= @CODE@ gives person suffixes
+< 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:i 0:n                 > # ; !
+< 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:i 0:n                 > # ; !
+<          "+3Sg":0 "@U.perspref.NULL@"                    > # ; !
+<          "+4Sg":0 "@U.perspref.NULL@" 0:i 0:y 0:i 0:w 0:a     > # ; !
+< 0:"^EA"  "+1Pl":0 "@U.perspref.NI@"   0:i 0:n 0:â 0:n         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:i 0:n 0:a 0:w         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:i 0:n 0:â 0:n 0:a 0:w         > # ; !
+< 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:i 0:n 0:â 0:w 0:â 0:w > # ; !
+<          "+3Pl":0 "@U.perspref.NULL@"  0:w 0:a 0:k         > # ; !
+<          "+4Pl":0 "@U.perspref.NULL@" 0:i 0:y 0:i 0:w 0:a     > # ; !
+
 
 
 LEXICON IA_FUT_CON
@@ -79,6 +112,10 @@ LEXICON IA_CNJ !!= @CODE@ Third mode, conjunctive
 < "+Prt":0          "@U.tense.Prt@"    > IA_CNJ_SUF ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > IA_CNJ_SUF ; !
 
+LEXICON IA_CNJn !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > IA_CNJ_SUFn ; !
+< "+Prt":0          "@U.tense.Prt@"    > IA_CNJ_SUFn ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > IA_CNJ_SUFn ; !
 
 
 LEXICON IA_CNJ_SUF
@@ -92,17 +129,35 @@ LEXICON IA_CNJ_SUF
      +3Pl:%>cik #;
     +4Pl:%>yit #;
 
+
+LEXICON IA_CNJ_SUFn
+     +1Sg:%>iyân #;
+     +2Sg:%>iyan	#;
+     +3Sg:%>hk	#;
+    +4Sg:%>iyit #;
+     +1Pl:%>iyâhk #;
+    +12Pl:%>iyahk #;
+     +2Pl:%>iyêk #;  ! NOTE: corrected according to dt, earlier we said %>nyêk
+     +3Pl:%>hkik #;
+    +4Pl:%>iyit #;
+
 LEXICON IA_IMP  !!= @CODE@ Fourth mode, imperative
-< "+Imp":0 "@U.mood.imp@" > imp ; !
-
-
-LEXICON imp
 +Imm+2Sg:0   # ; !
-+Imm+2Pl:%>k	 # ; !
 +Imm+12Pl:%>tân	  # ; !
++Imm+2Pl:%>k	 # ; !
 +Del+2Sg:%>hkan   # ; !
-+Del+2Pl:%>hkêk   # ; !
 +Del+12Pl:%>hkahk   # ; !
++Del+2Pl:%>hkêk   # ; !
+
+LEXICON IA_IMPn  !!= @CODE@ Fourth mode, imperative
++Imm+2Sg:i   # ; !
++Imm+12Pl:%>îtân	  # ; !
++Imm+2Pl:%>ik	 # ; !
++Del+2Sg:%>îhkan   # ; !
++Del+12Pl:%>îhkahk   # ; !
++Del+2Pl:%>îhkêk   # ; !
+
+
 
 LEXICON IA_IMP_LONG_E
 < "+Imp":0 "@U.verb.NULL@" > imp-long-E ;!
@@ -124,7 +179,7 @@ LEXICON imp-long-E
 LEXICON IICONJ  !!= @CODE@ adds the flag for no personprefixes
 < "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS ;
 
-LEXICON IICONJ-SG  !!= @CODE@ adds the flag for no personprefixes
+LEXICON IICONJ-SG  !!= @CODE@ adds the flag for no personprefixes, only Sg forms
 < "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS-SG ;
 
 
@@ -141,7 +196,7 @@ LEXICON IICONJw  !!= @CODE@  w final. Adds a baseform = Prs+3Sg and more diacr.f
 < "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
 < "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw ;
 
-LEXICON IICONJw-SG  !!= @CODE@  w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
+LEXICON IICONJw-SG  !!= @CODE@  w final, only Sg forms Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 < "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
 < "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw-SG ;
 
