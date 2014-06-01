@@ -14,25 +14,42 @@ Intransitive animate (IA)
 
  LEXICON IACONJ  splits in 4 moods
 
+
+
  LEXICON IACONJw  splits in 4 moods, for verbs with final -w
+
+ LEXICON IACONJn  splits in 4 moods, for verbs with final -n
+
 
 
 
 
  LEXICON IA_IND  First mode, indicative
 
+ LEXICON IA_INDn  First mode, indicative
+
+
 
  LEXICON IA_IND_PRS  gives person suffixes
+
+
+ LEXICON IA_IND_PRSn  gives person suffixes
+
 
 
 
 
  LEXICON IA_CNJ  Third mode, conjunctive
 
+ LEXICON IA_CNJn  Third mode, conjunctive
+
+
 
 
 
  LEXICON IA_IMP   Fourth mode, imperative
+
+ LEXICON IA_IMPn   Fourth mode, imperative
 
 
 
@@ -44,36 +61,69 @@ Intransitive inanimate (II)
 
  LEXICON IICONJ   adds the flag for no personprefixes
 
+ LEXICON IICONJ-SG   adds the flag for no personprefixes, only Sg forms
+
+
  LEXICON IICONJFORMS  adds a baseform = Prs+3Sg
+
+ LEXICON IICONJFORMS-SG  adds a baseform = Prs+3Sg
 
 
  LEXICON IICONJw    w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 
+ LEXICON IICONJw-SG    w final, only Sg forms Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
+
+
  LEXICON IICONJ-CONTw  w final. Splits according to mood
+
+ LEXICON IICONJ-CONTw-SG  w final. Splits according to mood
+
 
  LEXICON IICONJ-CONT  splits according to mood
 
+ LEXICON IICONJ-CONT-SG  splits according to mood
 
 
  LEXICON II_INDw  indicative for w final
 
 
+ LEXICON II_INDw-SG  indicative for w final
+
+
  LEXICON II_CNJw  conjunctive for w final
 
+ LEXICON II_CNJw-SG  conjunctive for w final
+
+
+
  LEXICON II_IND  indicative
+
+ LEXICON II_IND-SG  indicative
 
 
  LEXICON II_CNJ  conjunctive
 
-
- LEXICON II_IND_PERSw    w final 
-
- LEXICON II_IND_PERS    -n final 
+ LEXICON II_CNJ-SG  conjunctive
 
 
- LEXICON II_CNJ_PERSw    w final 
 
- LEXICON II_CNJ_PERS    -n final 
+ LEXICON II_IND_PERSw-SG    w final 
+
+ LEXICON II_IND_PERSw-PL    w final 
+
+ LEXICON II_IND_PERS-SG    -n final 
+
+ LEXICON II_IND_PERS-PL    -n final 
+
+ LEXICON II_CNJ_PERSw-SG    w final 
+
+ LEXICON II_CNJ_PERSw-PL    w final 
+
+
+
+ LEXICON II_CNJ_PERS-SG    -n final 
+
+ LEXICON II_CNJ_PERS-PL    -n final 
 
 
 
