@@ -161,7 +161,7 @@ LEXICON IA_IMPn  !!= @CODE@ Fourth mode, imperative
 
 
 LEXICON IA_IMP_LONG_E
-< "+Imp":0 "@U.verb.NULL@" > imp-long-E ;!
+< "+Imp":0 "@U.perspref.NULL@" > imp-long-E ;!
 
 LEXICON imp-long-E
 +Imm+2Sg:ê   # ;
@@ -373,7 +373,7 @@ LEXICON VTA_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 
 +1Sg+3SgO:%>âw		  # ;
 +1Sg+3PlO:%>âwak	  # ;
 +3Sg+1SgO:%>ik        # ;
-+3Sg+1PlO:%>ik        # ;
+!+3Sg+1PlO:%>ik        # ;
 +3Sg+1PlO:%>ikonân	  # ;
 +3Pl+1SgO:%>ikwak	  # ;
 +1Pl+3SgO:%>ânân	  # ;
@@ -405,12 +405,12 @@ LEXICON VTA_NULL_O
 +3Pl+3SgO:%>êwak	  # ; ! Oki 77
 
 +4Sg+3SgO:%>êyiwa	  # ;
+!+4Sg+3SgO:%>ikoyiwa  # ; !??
 +4Sg+3PlO:%>êyiwa	  # ;
-+4Sg+3SgO:%>ikoyiwa  # ;
-+4Sg+3PlO:%>ikoyiwa  # ;
-+4Sg+4PlO:%>ikoyiwa  # ;
+!+4Sg+3PlO:%>ikoyiwa  # ; !??
++4Sg+4PlO:%>ikoyiwa  # ; !??
 
-+3Pl+3PlO:%>ikowak	  # ;
+!+3Pl+3PlO:%>ikowak	  # ; ??
 +3Pl+3PlO:%>êwak	  # ;
 +4Pl+3SgO:%>êyiwa	  # ;
 +4Pl+3PlO:%>êyiwa	  # ;
@@ -465,7 +465,7 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +4Pl+4SgO:%>koyit	   # ;
 +4Pl+4PlO:%>ikoyit   # ;
 +4Pl+3SgO:%>âyit	   # ;
-+4Pl+3SgO:%>ikot	   # ;
+!+4Pl+3SgO:%>ikot	   # ;
 +4Pl+3PlO:%>ikocik	   # ;
 
 
@@ -494,7 +494,7 @@ LEXICON TA_FUT
 					   
 +3Pl+3SgO:%>âtwâwi	   # ;
 +3Pl+3PlO:%>âtwâwi	   # ;
-+3Pl+3PlO:%>ikotwâwi   # ;
+!+3Pl+3PlO:%>ikotwâwi   # ; ??
 					   
 +4Sg+4PlO:%>ikoyici  # ;
 +4Sg+3SgO:%>ikoci	   # ;
@@ -506,9 +506,9 @@ LEXICON TA_FUT
 
 
 LEXICON TA_IMP
-@U.verb.NULL@  2Sg_Imp ;
-@U.verb.NULL@  2Pl_Imp ;
-@U.verb.NULL@ 12Pl_Imp ;
+@U.perspref.NULL@  2Sg_Imp ;
+@U.perspref.NULL@  2Pl_Imp ;
+@U.perspref.NULL@ 12Pl_Imp ;
 
 !@U.verb.imp2sg@  2Sg_Imp ;
 !@U.verb.imp1pl@  2Pl_Imp ;
@@ -613,7 +613,7 @@ LEXICON TI_imp
 +Del+2Pl:%>mok   # ; !
 
 LEXICON TA_IMP_LONG_E
-< "+Imp":0 "@U.verb.NULL@" > imp-long-E ;!
+< "+Imp":0 "@U.perspref.NULL@" > imp-long-E ;!
 
 LEXICON TI_imp-long-E
 +Imm+2Sg:%>mohkan  # ; !
