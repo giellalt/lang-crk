@@ -272,14 +272,14 @@ itasinâsw:itansinâso IACONJw "what colour is" ;
 ! I leave it for now, as it involves a look at the whole system.
 
 
-wâsêskwan  IICONJ "it is sunny" ;
-mispon IICONJ "it is snowing" ;
-yôtin IICONJ "it is windy" ;
-sôhkiyowêw:sôhkiyowê IICONJw "it is a strong wind" ;
-sîkipêstâw:sîkipêstâ IICONJw "it is pouring" ;
-kaskaniwipêscâsin IICONJ "it is misth" ;
-miywâsin IICONJ ; !yaml
-mihkwâw:mihkwâ IICONJw ; !yaml
+wâsêskwan  IICONJ-SG "it is sunny" ;
+mispon IICONJ-SG "it is snowing" ;
+yôtin IICONJ-SG "it is windy" ;
+sôhkiyowêw:sôhkiyowê IICONJw-SG "it is a strong wind" ;
+sîkipêstâw:sîkipêstâ IICONJw-SG "it is pouring" ;
+kaskaniwipêscâsin IICONJ-SG "it is misth" ;
+miywâsin IICONJ "it is good" ; !yaml
+mihkwâw:mihkwâ IICONJw "it is red" ; !yaml
 
 !LEXICON TASTEM   !!= @CODE@ = VTA
 
