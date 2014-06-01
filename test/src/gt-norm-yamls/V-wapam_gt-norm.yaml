@@ -12,23 +12,36 @@ Tests:
   Verb - wâpam - ok : # Ordinary TA verb - full paradigm
      wâpam+V+TA+Ind+Prs+1Sg+3SgO: niwâpamâw
      wâpam+V+TA+Ind+Prs+2Sg+3SgO: kiwâpamâw
-     wâpam+V+TA+Ind+Prs+3Sg+3SgO: wâpamêw
-     wâpam+V+TA+Ind+Prs+4Sg+3SgO: wâpamêyiwa
      wâpam+V+TA+Ind+Prs+1Pl+3SgO: niwâpamânân
      wâpam+V+TA+Ind+Prs+12Pl+3SgO: kiwâpamânaw
      wâpam+V+TA+Ind+Prs+2Pl+3SgO: kiwâpamâwâw
-     wâpam+V+TA+Ind+Prs+3Pl+3SgO: wâpamêwak
+     wâpam+V+TA+Ind+Prs+3Sg+3SgO: wâpamêw
+     wâpam+V+TA+Ind+Prs+4Sg+3SgO: wâpamêyiwa
+
+     wâpam+V+TA+Ind+Prs+1Sg+3PlO: niwâpamâwak
+     wâpam+V+TA+Ind+Prs+2Sg+3PlO: kiwâpamâwak
+     wâpam+V+TA+Ind+Prs+1Pl+3PlO: niwâpamânânak
+     wâpam+V+TA+Ind+Prs+12Pl+3PlO: kiwâpamânawak
+     wâpam+V+TA+Ind+Prs+2Pl+3PlO: kiwâpamâwâwak
+     wâpam+V+TA+Ind+Prs+3Pl+3PlO: wâpamêwak
+     wâpam+V+TA+Ind+Prs+4Sg+3PlO: wâpamêyiwa
      wâpam+V+TA+Ind+Prs+4Pl+3SgO: wâpamêyiwa
      
-     wâpam+V+TA+Cnj+1Sg+3SgO: [ê-wâpamak, êwâpamak]
-     wâpam+V+TA+Cnj+2Sg+3SgO: [ê-wâpamat, êwâpamat]
-     wâpam+V+TA+Cnj+3Sg+3SgO: [ê-wâpamât, êwâpamât]
-     wâpam+V+TA+Cnj+4Sg+3SgO: [ê-wâpamâyit, êwâpamâyit]
-     wâpam+V+TA+Cnj+1Pl+3SgO: [ê-wâpamâyâhk, êwâpamâyâhk]
-     wâpam+V+TA+Cnj+12Pl+3SgO: [ê-wâpamâyahk, êwâpamâyahk]
-     wâpam+V+TA+Cnj+2Pl+3SgO: [ê-wâpamâyêk, êwâpamâyêk]
-     wâpam+V+TA+Cnj+3Pl+3SgO: [ê-wâpamâcik, êwâpamâcik]
-     wâpam+V+TA+Cnj+4Pl+3SgO: [ê-wâpamâyit, êwâpamâyit]
+#     wâpam+V+TA+Ind+Prs+2Sg+1Sg: kiwīcihin not done yet
+#     wâpam+V+TA+Ind+Prs+2Sg+1Pl: kiwîcihinân
+#     wâpam+V+TA+Ind+Prs+2Pl+1Sg: kiwîcihinâwâw
+     
+     
+     
+     wâpam+V+TA+Cnj+Prs+1Sg+3SgO: [ê-wâpamak, êwâpamak]
+     wâpam+V+TA+Cnj+Prs+2Sg+3SgO: [ê-wâpamat, êwâpamat]
+     wâpam+V+TA+Cnj+Prs+3Sg+3SgO: [ê-wâpamât, êwâpamât]
+     wâpam+V+TA+Cnj+Prs+4Sg+3SgO: [ê-wâpamâyit, êwâpamâyit]
+     wâpam+V+TA+Cnj+Prs+1Pl+3SgO: [ê-wâpamâyâhk, êwâpamâyâhk]
+     wâpam+V+TA+Cnj+Prs+12Pl+3SgO: [ê-wâpamâyahk, êwâpamâyahk]
+     wâpam+V+TA+Cnj+Prs+2Pl+3SgO: [ê-wâpamâyêk, êwâpamâyêk]
+     wâpam+V+TA+Cnj+Prs+3Pl+3SgO: [ê-wâpamâcik, êwâpamâcik]
+     wâpam+V+TA+Cnj+Prs+4Pl+3SgO: [ê-wâpamâyit, êwâpamâyit]
 
      wâpam+V+TA+Imp+Imm+2Sg+3SgO: wâpam
      wâpam+V+TA+Imp+Imm+12Pl+3SgO: wâpamâtân
