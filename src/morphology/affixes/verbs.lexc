@@ -76,6 +76,7 @@ LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
 <          "+4Sg":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ; !
 < 0:"^EA"  "+1Pl":0 "@U.perspref.NI@"   0:n 0:â 0:n         > # ; !
 < 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:a 0:w         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
 < 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:n 0:â 0:w 0:â 0:w > # ; !
 <          "+3Pl":0 "@U.perspref.NULL@" 0:w 0:a 0:k         > # ; !
 <          "+4Pl":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ; !
