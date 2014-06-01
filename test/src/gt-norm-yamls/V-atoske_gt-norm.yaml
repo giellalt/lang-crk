@@ -9,27 +9,27 @@ Config:
 
 Tests:
   
-  Verb - atoskê - ok : # Ordinary IA verb - full paradigm
+  Verb - atoskêw - ok : # Ordinary IA verb - full paradigm
   
      atoskêw+V+IA+Ind+Prs+1Sg: nitatoskân
      atoskêw+V+IA+Ind+Prs+2Sg: kitatoskân
      atoskêw+V+IA+Ind+Prs+3Sg: atoskêw
      atoskêw+V+IA+Ind+Prs+4Sg: atoskêyiwa
      atoskêw+V+IA+Ind+Prs+1Pl: nitatoskânân
-     atoskêw+V+IA+Ind+Prs+12Pl: kitatoskânaw
+     atoskêw+V+IA+Ind+Prs+12Pl: [kitatoskânaw, kitatoskânânaw]
      atoskêw+V+IA+Ind+Prs+2Pl: kitatoskânâwâw
      atoskêw+V+IA+Ind+Prs+3Pl: atoskêwak
      atoskêw+V+IA+Ind+Prs+4Pl: atoskêyiwa
 
-     atoskêw+V+IA+Ind+Prt+1Sg: nikî-atoskân
-     atoskêw+V+IA+Ind+Prt+2Sg: kikî-atoskân
-     atoskêw+V+IA+Ind+Prt+3Sg: kî-atoskêw
-     atoskêw+V+IA+Ind+Prt+4Sg: kî-atoskêyiwa
-     atoskêw+V+IA+Ind+Prt+1Pl: nikî-atoskânân
-     atoskêw+V+IA+Ind+Prt+12Pl: kikî-atoskânaw
-     atoskêw+V+IA+Ind+Prt+2Pl: kikî-atoskânâwâw
-     atoskêw+V+IA+Ind+Prt+3Pl: kî-atoskêwak
-     atoskêw+V+IA+Ind+Prt+4Pl: kî-atoskêyiwa
+     atoskêw+V+IA+Ind+Prt+1Sg: [nikî-atoskân, nikîhatoskân]
+     atoskêw+V+IA+Ind+Prt+2Sg: [kikî-atoskân, kikîhatoskân]
+     atoskêw+V+IA+Ind+Prt+3Sg: [kî-atoskêw, kîhatoskêw]
+     atoskêw+V+IA+Ind+Prt+4Sg: [kî-atoskêyiwa, kîhatoskêyiwa]
+     atoskêw+V+IA+Ind+Prt+1Pl: [nikî-atoskânân, nikîhatoskânân]
+     atoskêw+V+IA+Ind+Prt+12Pl: [kikî-atoskânaw, kikîhatoskânaw, kikî-atoskânânaw, kikîhatoskânânaw]
+     atoskêw+V+IA+Ind+Prt+2Pl: [kikî-atoskânâwâw, kikîhatoskânâwâw]
+     atoskêw+V+IA+Ind+Prt+3Pl: [kî-atoskêwak, kîhatoskêwak]
+     atoskêw+V+IA+Ind+Prt+4Pl: [kî-atoskêyiwa, kîhatoskêyiwa]
      
      atoskêw+V+IA+Cnj+Prs+1Sg: [ê-atoskêyân, êhatoskêyân]
      atoskêw+V+IA+Cnj+Prs+2Sg: [ê-atoskêyan, êhatoskêyan]
