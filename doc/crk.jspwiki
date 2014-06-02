@@ -480,6 +480,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
+
                           !!!Plains Cree noun morphology                           
 
 !!The declinations for Animates
@@ -878,7 +879,10 @@ Transitive Inanimate (TI)
  * LEXICON TICONJ  
 
 
+ * LEXICON TICONJ-V   adds baseform and directs to IACONJ-CONT
 
+
+ * LEXICON TICONJ-CONT 
 
 
  LEXICON TI_IND  First mode, indicative
@@ -887,18 +891,23 @@ Transitive Inanimate (TI)
  LEXICON TI_IND_PRS  gives person suffixes
 
 
+ * LEXICON TI_FUT_CON 
 
 
  LEXICON TI_CNJ  Third mode, conjunctive
 
 
 
+ * LEXICON TI_CNJ_SUF 
 
  LEXICON TI_IMP   Fourth mode, imperative
 
 
+ * LEXICON TI_imp 
 
+ * LEXICON TA_IMP_LONG_E 
 
+ * LEXICON TI_imp-long-E 
 
 
 
