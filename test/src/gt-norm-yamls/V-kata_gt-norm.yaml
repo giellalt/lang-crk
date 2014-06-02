@@ -1,0 +1,55 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - katâ - ok : # Ordinary TI verb - full paradigm  
+     katâ+V+TI: katâ
+     katâ+V+TI+Imp+Imm+2Sg: katâ
+     katâ+V+TI+Imp+Imm+12Pl: katâtân
+     katâ+V+TI+Imp+Imm+2Pl: katâk
+     katâ+V+TI+Imp+Del+2Sg: katâhkan
+     katâ+V+TI+Imp+Del+12Pl: katâhkahk
+     katâ+V+TI+Imp+Del+2Pl: katâhkêk
+
+     katâ+V+TI+Ind+Prs+1Sg: nikatân
+     katâ+V+TI+Ind+Prs+2Sg: kikatân
+     katâ+V+TI+Ind+Prs+1Pl: nikatânân
+     katâ+V+TI+Ind+Prs+12Pl: [kikatânaw, kikatânânaw]
+     katâ+V+TI+Ind+Prs+2Pl: kikatânâwâw
+     katâ+V+TI+Ind+Prs+3Sg: katâw
+     katâ+V+TI+Ind+Prs+3Pl: katâwak
+     katâ+V+TI+Ind+Prs+4Pl: katâyiwa
+
+     katâ+V+TI+Ind+Prt+1Sg: [nikîkatân, nikî-katân]
+     katâ+V+TI+Ind+Prt+2Sg: [kikîkatân, kikî-katân]
+     katâ+V+TI+Ind+Prt+1Pl: [nikîkatânân, nikî-katânân]
+     katâ+V+TI+Ind+Prt+12Pl: [kikîkatânaw, kikî-katânaw, kikîkatânânaw, kikî-katânânaw]
+     katâ+V+TI+Ind+Prt+2Pl: [kikîkatânâwâw, kikî-katânâwâw]
+     katâ+V+TI+Ind+Prt+3Sg: [kîkatâw, kî-katâw]
+     katâ+V+TI+Ind+Prt+3Pl: [kî-katâwak, kîkatâwak]
+     katâ+V+TI+Ind+Prt+4Pl: [kî-katâyiwa, kîkatâyiwa]
+
+     katâ+V+TI+Cnj+Prs+1Sg: [ê-katâyân, êkatâyân]
+     katâ+V+TI+Cnj+Prs+2Sg: [ê-katâyan, êkatâyan]
+     katâ+V+TI+Cnj+Prs+1Pl: [ê-katâyâhk, êkatâyâhk]
+     katâ+V+TI+Cnj+Prs+12Pl: [ê-katâyahk, êkatâyahk]
+     katâ+V+TI+Cnj+Prs+2Pl: [ê-katâyêk, êkatâyêk]
+     katâ+V+TI+Cnj+Prs+3Sg: [ê-katât, êkatât]
+     katâ+V+TI+Cnj+Prs+3Pl: [ê-katâcik, êkatâcik]
+     katâ+V+TI+Cnj+Prs+4Pl: [ê-katâyit, êkatâyit]
+
+     katâ+V+TI+Cnj+Prt+1Sg: [ê-kîkatâyân, ê-kî-katâyân, êkîkatâyân, êkî-katâyân]
+     katâ+V+TI+Cnj+Prt+2Sg: [ê-kîkatâyan, ê-kî-katâyan, êkî-katâyan, êkîkatâyan]
+     katâ+V+TI+Cnj+Prt+1Pl: [ê-kîkatâyâhk, ê-kî-katâyâhk, êkî-katâyâhk, êkîkatâyâhk]
+     katâ+V+TI+Cnj+Prt+12Pl: [ê-kîkatâyahk, ê-kî-katâyahk, ê-kîkatâyahk, ê-kî-katâyahk, êkî-katâyahk, êkîkatâyahk]
+     katâ+V+TI+Cnj+Prt+2Pl: [ê-kîkatâyêk, ê-kî-katâyêk, êkî-katâyêk, êkîkatâyêk]
+     katâ+V+TI+Cnj+Prt+3Sg: [ê-kîkatât, ê-kî-katât, êkîkatât, êkî-katât]
+     katâ+V+TI+Cnj+Prt+3Pl: [ê-kî-katâcik, ê-kîkatâcik, êkî-katâcik, êkîkatâcik]
+     katâ+V+TI+Cnj+Prt+4Pl: [ê-kî-katâyit, ê-kîkatâyit, êkî-katâyit, êkîkatâyit]
