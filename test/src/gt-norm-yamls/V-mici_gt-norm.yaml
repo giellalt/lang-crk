@@ -1,0 +1,55 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - mîci - ok : # Ordinary TI verb - full paradigm  
+     mîci+V+TI: mîci
+     mîci+V+TI+Imp+Imm+2Sg: mîci
+     mîci+V+TI+Imp+Imm+12Pl: mîcitân
+     mîci+V+TI+Imp+Imm+2Pl: mîcik
+     mîci+V+TI+Imp+Del+2Sg: mîcihkan
+     mîci+V+TI+Imp+Del+12Pl: mîcihkahk
+     mîci+V+TI+Imp+Del+2Pl: mîcihkêk
+
+     mîci+V+TI+Ind+Prs+1Sg: nimîcin
+     mîci+V+TI+Ind+Prs+2Sg: kimîcin
+     mîci+V+TI+Ind+Prs+1Pl: nimîcinân
+     mîci+V+TI+Ind+Prs+12Pl: [kimîcinaw, kimîcinânaw]
+     mîci+V+TI+Ind+Prs+2Pl: kimîcinâwâw
+     mîci+V+TI+Ind+Prs+3Sg: mîciw
+     mîci+V+TI+Ind+Prs+3Pl: mîciwak
+     mîci+V+TI+Ind+Prs+4Pl: mîciyiwa
+
+     mîci+V+TI+Ind+Prt+1Sg: [nikîmîcin, nikî-mîcin]
+     mîci+V+TI+Ind+Prt+2Sg: [kikîmîcin, kikî-mîcin]
+     mîci+V+TI+Ind+Prt+1Pl: [nikîmîcinân, nikî-mîcinân]
+     mîci+V+TI+Ind+Prt+12Pl: [kikîmîcinaw, kikî-mîcinaw, kikîmîcinânaw, kikî-mîcinânaw]
+     mîci+V+TI+Ind+Prt+2Pl: [kikîmîcinâwâw, kikî-mîcinâwâw]
+     mîci+V+TI+Ind+Prt+3Sg: [kîmîciw, kî-mîciw]
+     mîci+V+TI+Ind+Prt+3Pl: [kî-mîciwak, kîmîciwak]
+     mîci+V+TI+Ind+Prt+4Pl: [kî-mîciyiwa, kîmîciyiwa]
+
+     mîci+V+TI+Cnj+Prs+1Sg: [ê-mîciyân, êmîciyân]
+     mîci+V+TI+Cnj+Prs+2Sg: [ê-mîciyan, êmîciyan]
+     mîci+V+TI+Cnj+Prs+1Pl: [ê-mîciyâhk, êmîciyâhk]
+     mîci+V+TI+Cnj+Prs+12Pl: [ê-mîciyahk, êmîciyahk]
+     mîci+V+TI+Cnj+Prs+2Pl: [ê-mîciyêk, êmîciyêk]
+     mîci+V+TI+Cnj+Prs+3Sg: [ê-mîcit, êmîcit]
+     mîci+V+TI+Cnj+Prs+3Pl: [ê-mîcicik, êmîcicik]
+     mîci+V+TI+Cnj+Prs+4Pl: [ê-mîciyit, êmîciyit]
+
+     mîci+V+TI+Cnj+Prt+1Sg: [ê-kîmîciyân, ê-kî-mîciyân, êkîmîciyân, êkî-mîciyân]
+     mîci+V+TI+Cnj+Prt+2Sg: [ê-kîmîciyan, ê-kî-mîciyan, êkî-mîciyan, êkîmîciyan]
+     mîci+V+TI+Cnj+Prt+1Pl: [ê-kîmîciyâhk, ê-kî-mîciyâhk, êkî-mîciyâhk, êkîmîciyâhk]
+     mîci+V+TI+Cnj+Prt+12Pl: [ê-kîmîciyahk, ê-kî-mîciyahk, ê-kîmîciyahk, ê-kî-mîciyahk, êkî-mîciyahk, êkîmîciyahk]
+     mîci+V+TI+Cnj+Prt+2Pl: [ê-kîmîciyêk, ê-kî-mîciyêk, êkî-mîciyêk, êkîmîciyêk]
+     mîci+V+TI+Cnj+Prt+3Sg: [ê-kîmîcit, ê-kî-mîcit, êkîmîcit, êkî-mîcit]
+     mîci+V+TI+Cnj+Prt+3Pl: [ê-kî-mîcicik, ê-kîmîcicik, êkî-mîcicik, êkîmîcicik]
+     mîci+V+TI+Cnj+Prt+4Pl: [ê-kî-mîciyit, ê-kîmîciyit, êkî-mîciyit, êkîmîciyit]
