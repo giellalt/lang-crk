@@ -10,10 +10,10 @@ LEXICON ANniska !!= * @CODE@ for the irregular niska and sihta N+AN
  < "+N":0 "+AN":0         "@U.noun.abs@" > OBVIATIVE ; !
  < "+N":a "+AN":k "+Pl":0 "@U.noun.abs@" > #         ; ! why not niskwak ??
  < "+N":0 "+AN":0         "@U.noun.abs@" > LOC       ; !
-! < "+N":i "+AN":n         "@U.noun.abs@" > LOCahk    ; !
+!< "+N":i "+AN":n         "@U.noun.abs@" > LOCahk    ; !
 
-             +N+AN+Sg:%>im               ANSUFF_SG      ; !om?
-             +N+AN+Pl:%>im               ANSUFF_PL      ;!om?
+             +N+AN+Sg:%>im                 ANSUFF_SG      ; !om?
+             +N+AN+Pl:%>im                 ANSUFF_PL      ;!om?
         +N+AN+Der/Dim:is%>is%^DIM%>        ANABSDECL      ;
 +N+AN+Der/Dim+N+AN+Sg:im%>is%^DIMis        ANSUFF_SG      ;
 +N+AN+Der/Dim+N+AN+Pl:im%>is%^DIMis        ANSUFF_PL      ;
