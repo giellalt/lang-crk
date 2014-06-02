@@ -178,8 +178,8 @@ i:0 <=> .#. o: %>:0 _ [ t: | k | m | n | s | h | c | w ] ; !prefix kinshipterms
 		w:  a: %>:0 _ s: %^DIM:0 ; ! OBS
 
 "Remove locative i when poss -wâ"
-!i:0 <=>  â:  ( w:0 ) %>:0 _ %^LC:0 ; ! kitiskwêmiwâhk or kitiskwêsisiwâwihk  CHECK! ôtênâhk
-i:0 <=> [ â: | a: ] w:0 %>:0 _ %^LC:0 ; ! kitiskwêmiwâhk or kitiskwêsisiwâwihk  CHECK! ôtênâhk
+!i:0 <=>  â:  ( w:0 ) %>:0 _ %^LC:0 ; !  ôtênâhk
+i:0 <=> [ â: | a: ] w:0 %>:0 _ %^LC:0 ; !  ôtênâhk
 
 !! !! VERBS
 
@@ -192,6 +192,11 @@ i:0 <=> [ â: | a: ] w:0 %>:0 _ %^LC:0 ; ! kitiskwêmiwâhk or kitiskwêsisiwâw
 !! __@RULENAME@__
 Vx:â <=> _ %>:0 %^EA:0 ;
 	where Vx in (ê e) ;
+
+"a to ee rule in first and second person"
+!! __@RULENAME@__
+a:ê <=> _ %>:0 %^EA:0 ; ! wâpahta:niwâpahtên
+
 
 !"ee to aa rule in first and second person"
 !!! __@RULENAME@__

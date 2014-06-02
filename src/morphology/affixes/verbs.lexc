@@ -543,12 +543,12 @@ LEXICON 12Pl_Imp
 !     =========================
 
 
-LEXICON TICONJ  !!= * @CODE@
-< "+V":a "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
+LEXICON TICONJa  !!= * @CODE@
+< "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TI: TICONJ-CONT ;
 
  
-LEXICON TICONJ-V  !!= * @CODE@ adds baseform and directs to IACONJ-CONT
+LEXICON TICONJ  !!= * @CODE@ adds baseform and directs to IACONJ-CONT
 < "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TI: IACONJ-CONT ; 
 
@@ -556,7 +556,7 @@ LEXICON TICONJ-V  !!= * @CODE@ adds baseform and directs to IACONJ-CONT
 LEXICON TICONJ-CONT !!= * @CODE@
 < "+Ind":0  "@U.mood.indep@" >  TI_IND ; !
 < "+Cnj":0  "@U.mood.cnj@" > TI_CNJ ; !
-< 0:%>    "@D.tense@"  >  TI_IMP ; !
+<     "@D.tense@"  >  TI_IMP ; !
 < "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TI_FUT_CON ;
 
 
@@ -568,15 +568,15 @@ LEXICON TI_IND !!= @CODE@ First mode, indicative
 
 
 LEXICON TI_IND_PRS !!= @CODE@ gives person suffixes
-< 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:ê 0:n                 > # ; !
-< 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:ê 0:n                 > # ; !
-<          "+3Sg":0 "@U.perspref.NULL@" 0:a 0:m                 > # ; !
-< 0:"^EA"  "+1Pl":0 "@U.perspref.NI@"   0:ê 0:n 0:â 0:n         > # ; !
-< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:ê 0:n 0:a 0:w         > # ; !
-< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:ê 0:n 0:â 0:n 0:a 0:w         > # ; !
-< 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:ê 0:n 0:â 0:w 0:â 0:w > # ; !
-<          "+3Pl":0 "@U.perspref.NULL@" 0:a 0:m 0:w 0:a 0:k         > # ; !
-<          "+4Pl":0 "@U.perspref.NULL@" 0:a 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
+< 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:n                 > # ; !
+< 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:n                 > # ; !
+<          "+3Sg":0 "@U.perspref.NULL@" 0:m                 > # ; !
+< 0:"^EA"  "+1Pl":0 "@U.perspref.NI@"   0:n 0:â 0:n         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:a 0:w         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
+< 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:n 0:â 0:w 0:â 0:w > # ; !
+<          "+3Pl":0 "@U.perspref.NULL@" 0:m 0:w 0:a 0:k         > # ; !
+<          "+4Pl":0 "@U.perspref.NULL@" 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
 
 
 LEXICON TI_FUT_CON !!= * @CODE@
@@ -613,12 +613,12 @@ LEXICON TI_IMP  !!= @CODE@ Fourth mode, imperative
 
 
 LEXICON TI_imp !!= * @CODE@
-+Imm+2Sg:a   # ; !
-+Imm+12Pl:%>êtân	  # ; !
-+Imm+2Pl:%>amok   # ; !
-+Del+2Sg:%>amôhkan   # ; !
-+Del+12Pl:%>amôhkahk	  # ; !
-+Del+2Pl:%>amôhkêk   # ; !
++Imm+2Sg:   # ; !
++Imm+12Pl:%>^EAtân	  # ; !
++Imm+2Pl:%>mok   # ; !
++Del+2Sg:%>môhkan   # ; !
++Del+12Pl:%>môhkahk	  # ; !
++Del+2Pl:%>môhkêk   # ; !
 
 LEXICON TA_IMP_LONG_E !!= * @CODE@
 < "+Imp":0 "@U.perspref.NULL@" > imp-long-E ;!
