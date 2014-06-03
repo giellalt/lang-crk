@@ -60,11 +60,12 @@ tail +11 test/src/gt-norm-yamls/V* | grep -v "==" >>  U-all_gt-norm.yaml
 
 
 ! Make a new yaml-file
-The example is for an inanimate noun. You still have to do a little editing afterwords. Compare with another yamlfile
+The example is for an inanimate noun. Use a already functioning yaml-file as a starting point (here N-amiskw_gt-norm.yaml). You still have to do a little editing afterwords, like correcting to info, and making it more readable by adding empty lines, and you must of course correct the output. 
+
 {{{
 head -12 test/src/gt-norm-yamls/N-amiskw_gt-norm.yaml > test/src/gt-norm-yamls/N-otenaw_gt-norm.yaml 
 
-cat test/data/NI-par.txt | sed 's/^/ôtênaw/' | dcrk | tr '\t' ':' | sed 's/:/: /' | grep -v '^$' |sed 's/^/     /'   >> test/src/gt-norm-yamls/N-otenaw_gt-norm.yaml
+cat test/data/NI-par.txt | sed 's/^/ôtênaw/' | dcrk | tr '\t' ':' | sed 's/:/: /' | grep -v '^$' |sed 's/^/     /' >> test/src/gt-norm-yamls/N-otenaw_gt-norm.yaml
 }}}
 
 Comment: The last sed-command should give 5 whitespaces
