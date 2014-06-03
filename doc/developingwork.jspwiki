@@ -5,7 +5,7 @@ Here are some tips for the linguist, all commands are based on working in the cr
 
 Add this to your .bashrc or .profile: 
 {{{
-alias crk="pushd ~/gtsvn/langs/crk" 
+alias crk="pushd ~/main/langs/crk" 
 }}}
 
 Anywhere in the catalogue structure, write 'crk' in you terminal window.
