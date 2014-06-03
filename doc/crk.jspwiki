@@ -314,7 +314,10 @@ __h glottal stop for initial vowel stems in verbs: Conjunctive__
 
 __e and ee to aa rule in first and second person__
 
-__e and ee to aa rule in first and second person__
+__a to ee rule in first and second person__
+
+
+__a to ee rule in first and second person__
 
 __n:0 before k-suffix__
 
@@ -393,56 +396,50 @@ Plains Cree verb stems
 
 
 The verbs are analysed as follows:
-* We split the Verb lexicon in 4 groups according to transitivity class
-* For each group, we add the prefixes, and mark them with ''flag diacritics'' (the @ symbols)
+* The verbs get prefixes in this file, marked with ''flag diacritics'' (the @ symbols)
 * Then come the stems themselves
 * Finally, and in another file, come the suffixes, including flag diacritics
   to ensure that the correct prefixes and suffixes are matched together
 
 
-The Plains Cree verbs are divided in four groups:
 
+The Plains Cree verbs are divided in four groups, but all of them are in the same verblexicon:
 # IA: Intransitive animate
 # II: Intransitive inanimate
 # TA: Transitive animate
 # TI: Transitive inanimate
 
- LEXICON Verbs  divides the verbs in these four transitivity classes
+ LEXICON Verbs  divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
 
 
 
-Intransitive animate
-
- LEXICON IA    divides IA in independent, conjunctive, imperative and future conditional
- * @U.mood.indep@ IA_INDEPENDENT ;		  
- * @U.mood.cnj@ IA_CONJUNCTIV ;		   
- *  IA_IMPERATIV ;		      
- *  IA_FUTURE_CONDITIONAL ;  
+ * @U.mood.indep@ INDEPENDENT ;		  
+ * @U.mood.cnj@ CONJUNCTIV ;		   
+ *  IMPERATIV ;		      
+ *  FUTURE_CONDITIONAL ;  
 
 
+ LEXICON INDEPENDENT  gives flags and prefixes for personprefix
 
 
+ LEXICON IND_TENSE  gives flags and prefixes for tense 
 
 
+ LEXICON FUTURE_CONDITIONAL  gives flags for future conditional (no prefix)
 
- LEXICON IA_CONJUNCTIV  gives flag for conjunctive (no prefix)
-
-
- LEXICON IA_CNJ_TENSE    gives prefixes and flags for person-number in subjunctive
+ LEXICON CONJUNCTIV  gives flag for conjunctive and prefix ê-
 
 
- LEXICON IA_IMPERATIV    gives prefixes and flags for person-number in imperative
+ LEXICON CNJ_TENSE    gives prefixes and flags for tense in conjunctive
 
 
- LEXICON IALIST   just adds the prefix boundary
+ LEXICON IMPERATIV    gives flag for imperative (no prefixes)
 
 
-Intransitive inanimate
-    ====================
-Transitive animate
+ LEXICON VERBLIST   just adds the prefix boundary
+
+
     ==================
- !LEXICON TA_IMPERATIV    gives flag for TA imperative
- !LEXICON TALIST   just adds the prefix boundary
 
 Transitive inanimate
 
@@ -457,7 +454,9 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
+The stems
 
+ LEXICON VERBSTEMS  here come all the verbstems
  nipâw:nipâ IACONJw "sleep" ;  GG
  mâto IACONJ "cry" ;  GG
  mîciso IACONJ "eat" ;  Variation in length of first vowel, here following Okimâsis. !GG
@@ -469,11 +468,9 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
- !LEXICON IISTEM     = VII
 
 
 
- !LEXICON TASTEM    = VTA
 
 
 
@@ -876,10 +873,10 @@ There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
 Transitive Inanimate (TI)
 
 
- * LEXICON TICONJ  
+ * LEXICON TICONJa  
 
 
- * LEXICON TICONJ-V   adds baseform and directs to IACONJ-CONT
+ * LEXICON TICONJ   adds baseform and directs to IACONJ-CONT
 
 
  * LEXICON TICONJ-CONT 
