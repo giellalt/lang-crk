@@ -1,4 +1,4 @@
-!!!How to test the output of the FST, when you are developing it
+!!!How to look the output of the FST, when you are developing it
 Here are some tips for the linguist, all commands are based on working in the crk-catalogue
 
 !!Make an alias to the crk-catalog
@@ -60,7 +60,7 @@ tail +11 test/src/gt-norm-yamls/V* | grep -v "==" >>  U-all_gt-norm.yaml
 
 
 ! Make a new yaml-file
-The example is for an inanimate noun. You still have to do some editing afterwords. Compare with another yamlfile
+The example is for an inanimate noun. You still have to do a little editing afterwords. Compare with another yamlfile
 {{{
 head -12 test/src/gt-norm-yamls/N-amiskw_gt-norm.yaml > test/src/gt-norm-yamls/N-otenaw_gt-norm.yaml 
 
