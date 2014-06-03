@@ -59,7 +59,7 @@ tail +11 test/src/gt-norm-yamls/V* | grep -v "==" >>  U-all_gt-norm.yaml
 }}}
 
 
-! Make a new yaml-file
+!! Make a new yaml-file
 The example is for the inanimate noun ôtênaw. Use an already functioning yaml-file as a starting point (here N-amiskw_gt-norm.yaml). You still have to do a little editing afterwords, like correcting the info about the lemma, and making it more readable by adding empty lines. And you must of course correct the output. 
 
 {{{
