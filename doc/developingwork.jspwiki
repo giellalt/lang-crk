@@ -10,6 +10,20 @@ alias crk="pushd ~/gtsvn/langs/crk"
 
 Anywhere in the catalogue structure, write 'crk' in you terminal window.
 
+!!Look at fst-output
+
+! A certain form for all lemmas
+The example is for an animates nouns, all the continuation lexicons for these nouns start with AN
+{{{
+grep ' AN' src/morphology/stems/nouns.lexc | egrep -v '^(\!|LEX)' | tr ":" " " | cut -d " " -f1 | sed 's/$/+N+AN+Loc/' | dcrk | less
+}}}
+
+! The paradigm for a certain lemma
+The example is for an animate noun, but one can use any of the paradigms in the test/data-catalogue
+{{{
+cat test/data/NI-par.txt | sed 's/^/ôtênaw/' | dcrk | less
+}}}
+
 
 !!Run only one yaml-test
 Remove all yamltests (check in your local modifications first!):
@@ -43,4 +57,18 @@ The example is for verbs.
 head -11 test/src/gt-norm-yamls/V-mato_gt-norm.yaml > U-all_gt-norm.yaml 
 tail +11 test/src/gt-norm-yamls/V* | grep -v "==" >>  U-all_gt-norm.yaml
 }}}
+
+
+! Make a new yaml-file
+The example is for an inanimate noun. You still have to do some editing afterwords. Compare with another yamlfile
+{{{
+head -12 test/src/gt-norm-yamls/N-amiskw_gt-norm.yaml > test/src/gt-norm-yamls/N-otenaw_gt-norm.yaml 
+
+cat test/data/NI-par.txt | sed 's/^/ôtênaw/' | dcrk | tr '\t' ':' | sed 's/:/: /' | grep -v '^$' |sed 's/^/     /'   >> test/src/gt-norm-yamls/N-otenaw_gt-norm.yaml
+}}}
+
+Comment: The last sed-command should give 5 whitespaces
+
+
+
 
