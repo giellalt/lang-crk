@@ -19,80 +19,76 @@
 
 
 !! The verbs are analysed as follows:
-!! * We split the Verb lexicon in 4 groups according to transitivity class
-!! * For each group, we add the prefixes, and mark them with ''flag diacritics'' (the @ symbols)
+!! * The verbs get prefixes in this file, marked with ''flag diacritics'' (the @ symbols)
 !! * Then come the stems themselves
 !! * Finally, and in another file, come the suffixes, including flag diacritics
 !!   to ensure that the correct prefixes and suffixes are matched together
 
 
-!! The Plains Cree verbs are divided in four groups:
 
+!! The Plains Cree verbs are divided in four groups, but all of them are in the same verblexicon:
 !! # IA: Intransitive animate
 !! # II: Intransitive inanimate
 !! # TA: Transitive animate
 !! # TI: Transitive inanimate
 
-LEXICON Verbs !!= @CODE@ divides the verbs in these four transitivity classes
+LEXICON Verbs !!= @CODE@ divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
 
-IA ; ! we try with both verb in one lexicon
+!IA ; ! we try with both verb in one lexicon
 !II ; ! intransitive inanimate
 !TA ; ! transitive animate
 !TI ; ! transitive inanimate
 
 
-!! !! Intransitive animate
+!LEXICON IA    
+@U.mood.indep@ INDEPENDENT ;		  !!= * @CODE@
+@U.mood.cnj@ CONJUNCTIV ;		  !!= * @CODE@ 
+ IMPERATIV ;		      !!= * @CODE@
+ FUTURE_CONDITIONAL ;  !!= * @CODE@
+
+
+LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
+< 0:n 0:i "@U.perspref.NI@"  0:"t2" > IND_TENSE ; !
+< 0:k 0:i "@U.perspref.KI@"  0:"t2" > IND_TENSE ; !
+<         "@U.perspref.NULL@"       > IND_TENSE ; !
+
+
+LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
+<                   "@U.tense.Prs@"     > VERBLIST ; !
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > VERBLIST ; ! removed hyph
+< 0:k 0:î 0:%-      "@U.tense.Prt@"     > VERBLIST ; !
+< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@"  > VERBLIST ; !
+< 0:k 0:a 0:%-      "@U.tense.FutDef@"  > VERBLIST ; !
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > VERBLIST ; !
+< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > VERBLIST ; !
+
+
+LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
+@U.mood.FutCon@ VERBLIST ;
+
+LEXICON CONJUNCTIV !!= @CODE@ gives flag for conjunctive and prefix ê-
+<  0:ê 0:%-       > CNJ_TENSE ; !
+<  0:ê 0:%^EGLOT   > CNJ_TENSE ; !
+
+
+LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
+<        			"@U.tense.Prs@"    > VERBLIST ; !Present
+< 0:k 0:î 0:%-  	"@U.tense.Prt@"    > VERBLIST ;  ! Preterite, 
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"    > VERBLIST ;  ! Preterite,
+< 0:w 0:î 0:%-  	"@U.tense.FutInt@" > VERBLIST ; ! Future Intentional
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" > VERBLIST ; ! Future Intentional
+
+
+LEXICON IMPERATIV   !!= @CODE@ gives flag for imperative (no prefixes)
+@U.mood.imp@  VERBLIST ;
+
+
+LEXICON VERBLIST  !!= @CODE@ just adds the prefix boundary
+ :%> VERBSTEMS ;
+
+
+! Intransitive inanimate
 !     ====================
-
-LEXICON IA   !!= @CODE@ divides IA in independent, conjunctive, imperative and future conditional
-@U.mood.indep@ IA_INDEPENDENT ;		  !!= * @CODE@
-@U.mood.cnj@ IA_CONJUNCTIV ;		  !!= * @CODE@ 
- IA_IMPERATIV ;		      !!= * @CODE@
- IA_FUTURE_CONDITIONAL ;  !!= * @CODE@
-
-
-LEXICON IA_INDEPENDENT
-< 0:n 0:i "@U.perspref.NI@"  0:"t2" > IA_IND_TENSE ; !
-< 0:k 0:i "@U.perspref.KI@"  0:"t2" > IA_IND_TENSE ; !
-<         "@U.perspref.NULL@"       > IA_IND_TENSE ; !
-
-
-LEXICON IA_IND_TENSE
-<                   "@U.tense.Prs@"     > IALIST ; !
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > IALIST ; ! removed hyph
-< 0:k 0:î 0:%-      "@U.tense.Prt@"     > IALIST ; !
-< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@"  > IALIST ; !
-< 0:k 0:a 0:%-      "@U.tense.FutDef@"  > IALIST ; !
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > IALIST ; !
-< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > IALIST ; !
-
-
-LEXICON IA_FUTURE_CONDITIONAL
-@U.mood.FutCon@ IALIST ;
-
-LEXICON IA_CONJUNCTIV !!= @CODE@ gives flag for conjunctive (no prefix)
-<  0:ê 0:%-       > IA_CNJ_TENSE ; !
-<  0:ê 0:%^EGLOT   > IA_CNJ_TENSE ; !
-
-
-LEXICON IA_CNJ_TENSE   !!= @CODE@ gives prefixes and flags for person-number in subjunctive
-<        			"@U.tense.Prs@"    > IALIST ; !Present
-< 0:k 0:î 0:%-  	"@U.tense.Prt@"    > IALIST ;  ! Preterite, 
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"    > IALIST ;  ! Preterite,
-< 0:w 0:î 0:%-  	"@U.tense.FutInt@" > IALIST ; ! Future Intentional
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" > IALIST ; ! Future Intentional
-
-
-LEXICON IA_IMPERATIV   !!= @CODE@ gives prefixes and flags for person-number in imperative
-@U.mood.imp@  IALIST ;
-
-
-LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
- :%> IASTEM ;
-
-
-!!! !! Intransitive inanimate
-!!     ====================
 !
 !LEXICON II 
 !@U.mood.indep@ II_IND_TENSE ; ! Independent mode
@@ -124,7 +120,7 @@ LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
 !
 !
 !
-!!! !! Transitive animate
+! Transitive animate
 !!     ==================
 !
 !LEXICON TA  
@@ -167,12 +163,12 @@ LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
 !@U.mood.FutCon@ TALIST ;
 !
 !
-!LEXICON TA_IMPERATIV   !!= @CODE@ gives flag for TA imperative
+!LEXICON TA_IMPERATIV    gives flag for TA imperative
 !@U.mood.imp@  TALIST ;   
 !
 !
 !
-!LEXICON TALIST  !!= @CODE@ just adds the prefix boundary
+!LEXICON TALIST    just adds the prefix boundary
 ! :%> TASTEM ;
 !
 
@@ -198,24 +194,26 @@ LEXICON IALIST  !!= @CODE@ just adds the prefix boundary
 !kakwê   IASLOT2 "try" ;
 
 !LEXICON IASLOT2
-!IASTEM ; ! business as usual
-!mâci    IASTEM "begin" ;
-!nihtâ   IASTEM "have the ability to do well" ;
-!pêyako  IASTEM "only" ;
-!pôni    IASTEM "stop" ;
-!nitawi  IASTEM "go and" ;
-!pê	    IASTEM "toward speaker" ;
-!mêcî    IASTEM "toward speaker" ;
-!sâpo    IASTEM "through" ;
-!yôski   IASTEM "soft" ;
-!miyo    IASTEM "well" ;
-!mâyi    IASTEM "bad" ;
-!sôhki   IASTEM "hard" ;
-!pisci   IASTEM "by mistake" ;
-!kihci   IASTEM "large" ;
+!VERBSTEMS ; ! business as usual
+!mâci    VERBSTEMS "begin" ;
+!nihtâ   VERBSTEMS "have the ability to do well" ;
+!pêyako  VERBSTEMS "only" ;
+!pôni    VERBSTEMS "stop" ;
+!nitawi  VERBSTEMS "go and" ;
+!pê	    VERBSTEMS "toward speaker" ;
+!mêcî    VERBSTEMS "toward speaker" ;
+!sâpo    VERBSTEMS "through" ;
+!yôski   VERBSTEMS "soft" ;
+!miyo    VERBSTEMS "well" ;
+!mâyi    VERBSTEMS "bad" ;
+!sôhki   VERBSTEMS "hard" ;
+!pisci   VERBSTEMS "by mistake" ;
+!kihci   VERBSTEMS "large" ;
 
+!! !!! The stems
+!     ==========
 
-LEXICON IASTEM
+LEXICON VERBSTEMS !!= @CODE@ here come all the verbstems
 nipâw:nipâ IACONJw "sleep" ; !!= @CODE@ GG
 mâto IACONJ "cry" ; !!= @CODE@ GG
 mîciso IACONJ "eat" ; !!= @CODE@ Variation in length of first vowel, here following Okimâsis. !GG
@@ -265,7 +263,7 @@ nîpâmâyâtisiw:nîpâmâyâtisi  IACONJw "be purple" ;
 wâpinâkosiw:wâpinâkosi IACONJw "appear white" ;
 itasinâsw:itansinâso IACONJw "what colour is" ;
 
-!LEXICON IISTEM   !!= @CODE@  = VII
+!LEXICON IISTEM 
 ! Note: the final consonant here is dropped in the future conditional
 ! The best solution seems to be to add a twolc rule for that.
 ! There is such a rule, but outcommented (Stem Final n), it might be
@@ -282,7 +280,7 @@ kaskaniwipêscâsin IICONJ-SG "it is misth" ;
 miywâsin IICONJ "it is good" ; !yaml
 mihkwâw:mihkwâ IICONJw "it is red" ; !yaml
 
-!LEXICON TASTEM   !!= @CODE@ = VTA
+!LEXICON TASTEM 
 
 wâpam TACONJ_1 "see" ;
 wîcih TACONJ_1 "help" ;
