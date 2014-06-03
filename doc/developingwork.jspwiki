@@ -1,0 +1,46 @@
+!!!How to test the output of the FST, when you are developing it
+Here are some tips for the linguist, all commands are based on working in the crk-catalogue
+
+!!Make an alias to the crk-catalog
+
+Add this to your .bashrc or .profile: 
+{{{
+alias crk="pushd ~/gtsvn/langs/crk" 
+}}}
+
+Anywhere in the catalogue structure, write 'crk' in you terminal window.
+
+
+!!Run only one yaml-test
+Remove all yamltests (check in your local modifications first!):
+
+{{{
+rm test/src/gt-norm-yamls/*
+}}}
+Get for the yaml-file you want to test, e.g.: 
+{{{
+svn up test/src/gt-norm-yamls/V-mato_gt-norm.yaml
+
+make check
+}}}
+
+!!Compare the lingvistic output of all yaml-tests for a certain PoS
+Remove all yamltests (check in your local modifications first!) - the example is for verbs:
+{{{
+rm test/src/gt-norm-yamls/*
+}}}
+
+Get for the yaml-file you want to test, e.g.: 
+{{{
+svn up test/src/gt-norm-yamls//U-all_gt-norm.yaml
+}}}
+
+make check
+
+!!Make/update all yaml-tests in one for a certain PoS
+The example is for verbs. 
+{{{
+head -11 test/src/gt-norm-yamls/V-mato_gt-norm.yaml > U-all_gt-norm.yaml 
+tail +11 test/src/gt-norm-yamls/V* | grep -v "==" >>  U-all_gt-norm.yaml
+}}}
+
