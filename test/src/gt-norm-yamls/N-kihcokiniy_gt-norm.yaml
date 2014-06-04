@@ -1,0 +1,49 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - kihcôkiniy - ok : # -m animate noun, tomato, Wolvengrey
+     kihcôkiniy+N+AN+Sg: kihcôkiniy
+     kihcôkiniy+N+AN+Sg+Px1Sg: nikihcôkiniy
+     kihcôkiniy+N+AN+Sg+Px2Sg: kikihcôkiniy
+     kihcôkiniy+N+AN+Sg+Px3Sg+Obv: okihcôkiniya
+     kihcôkiniy+N+AN+Sg+Px4Sg+Obv: okihcôkinîyiwa
+     kihcôkiniy+N+AN+Sg+Px1Pl: nikihcôkinînân
+     kihcôkiniy+N+AN+Sg+Px12Pl: kikihcôkinînaw
+     kihcôkiniy+N+AN+Sg+Px2Pl: kikihcôkinîwâw
+     kihcôkiniy+N+AN+Sg+Px3Pl+Obv: okihcôkinîwâwa
+     kihcôkiniy+N+AN+Sg+Px4Pl+Obv: okihcôkinîyiwa
+     
+     kihcôkiniy+N+AN+Pl: kihcôkiniyak
+     kihcôkiniy+N+AN+Pl+Px1Sg: nikihcôkiniyak
+     kihcôkiniy+N+AN+Pl+Px2Sg: kikihcôkiniyak
+     kihcôkiniy+N+AN+Pl+Px3Sg+Obv: okihcôkiniya
+     kihcôkiniy+N+AN+Pl+Px4Sg+Obv: okihcôkinîyiwa
+     kihcôkiniy+N+AN+Pl+Px1Pl: nikihcôkinînânak
+     kihcôkiniy+N+AN+Pl+Px12Pl: kikihcôkinînawak
+     kihcôkiniy+N+AN+Pl+Px2Pl: kikihcôkinîwâwak
+     kihcôkiniy+N+AN+Pl+Px3Pl+Obv: okihcôkinîwâwa
+     kihcôkiniy+N+AN+Pl+Px4Pl+Obv: okihcôkinîyiwa
+     
+     kihcôkiniy+N+AN+Obv: kihcôkiniya
+     
+     kihcôkiniy+N+AN+Loc: [kihcôkinîhk, kihcôkiniyinâhk]
+     kihcôkiniy+N+AN+Px1Sg+Loc: nikihcôkinîhk
+     kihcôkiniy+N+AN+Px2Sg+Loc: kikihcôkinîhk
+     kihcôkiniy+N+AN+Px3Sg+Loc: okihcôkinîhk
+     kihcôkiniy+N+AN+Px4Sg+Loc: okihcôkinîyihk
+     kihcôkiniy+N+AN+Px1Pl+Loc: nikihcôkinînâhk
+     kihcôkiniy+N+AN+Px12Pl+Loc: kikihcôkinînâhk
+     kihcôkiniy+N+AN+Px2Pl+Loc: kikihcôkinîwâhk
+     kihcôkiniy+N+AN+Px3Pl+Loc: okihcôkinîwâhk
+     kihcôkiniy+N+AN+Px4Pl+Loc: okihcôkinîyihk
+     
+     kihcôkiniy+N+AN+Der/Dim+N+AN+Sg: [kihcôkinîs, kihcôkinîsis]
+     kihcôkiniy+N+AN+Der/Dim+N+AN+Pl: [kihcôkinîsak, kihcôkinîsisak]

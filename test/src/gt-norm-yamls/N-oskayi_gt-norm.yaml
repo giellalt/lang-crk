@@ -1,0 +1,49 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/aANlyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/aANlyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - oskây - ok : # -m inanimate noun, new thing, Wolvengrey
+     oskâyi+N+IN+Sg: oskâyi
+     oskâyi+N+IN+Sg+Px1Sg: nitôskâyim
+     oskâyi+N+IN+Sg+Px2Sg: kitôskâyim
+     oskâyi+N+IN+Sg+Px1Pl: nitôskâyiminân
+     oskâyi+N+IN+Sg+Px12Pl: kitôskâyiminaw
+     oskâyi+N+IN+Sg+Px2Pl: kitôskâyimiwâw
+     oskâyi+N+IN+Sg+Px3Sg: otôskâyim
+     oskâyi+N+IN+Sg+Px3Pl: otôskâyimiwâw
+     oskâyi+N+IN+Sg+Px4Pl: otôskâyimiyiw
+     
+     oskâyi+N+IN+Pl: oskâya
+     oskâyi+N+IN+Pl+Px1Sg: nitôskâyima
+     oskâyi+N+IN+Pl+Px2Sg: kitôskâyima
+     oskâyi+N+IN+Pl+Px1Pl: nitôskâyiminâna
+     oskâyi+N+IN+Pl+Px12Pl: kitôskâyiminawa
+     oskâyi+N+IN+Pl+Px2Pl: kitôskâyimiwâwa
+     oskâyi+N+IN+Pl+Px3Sg: otôskâyima
+     oskâyi+N+IN+Pl+Px3Pl: otôskâyimiwâwa
+     oskâyi+N+IN+Pl+Px4Pl: otôskâyimiyiwa
+     
+     oskâyi+N+IN+Loc: oskâyihk
+     oskâyi+N+IN+Px1Sg+Loc: nitôskâyimihk
+     oskâyi+N+IN+Px2Sg+Loc: kitôskâyimihk
+     oskâyi+N+IN+Px1Pl+Loc: nitôskâyiminâhk
+     oskâyi+N+IN+Px12Pl+Loc: kitôskâyiminâhk
+     oskâyi+N+IN+Px2Pl+Loc: kitôskâyimiwâhk
+     oskâyi+N+IN+Px3Sg+Loc: otôskâyimihk
+     oskâyi+N+IN+Px3Pl+Loc: otôskâyimiwâhk
+     oskâyi+N+IN+Px4Pl+Loc: otôskâyimiyihk
+     
+     oskâyi+N+IN+Der/Dim+N+IN+Sg: oskâyis
+     oskâyi+N+IN+Der/Dim+N+IN+Pl: oskâyisak
+     oskâyi+N+IN+Der/Dim+N+IN+Loc: oskâyisihk
+     oskâyi+N+IN+Der/Dim+N+IN+Sg+Px1Sg: nicôskâyimis
+     oskâyi+N+IN+Der/Dim+N+IN+Sg+Px2Sg: kicôskâyimis
+     oskâyi+N+IN+Der/Dim+N+IN+Sg+Px3Sg: ocôskâyimis
+     oskâyi+N+IN+Der/Dim+N+IN+Sg+Px4Sg: ocôskâyimisiyiw
