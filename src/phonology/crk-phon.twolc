@@ -44,7 +44,7 @@ Rules
 
 "Suffix vowel deletion in vowel final stems" 
 !! __@RULENAME@__ : niska, wâwi+a wâwi+ihk wâwi+is
-Vx:0 <=> [ Cons | s: | w: ] _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i2: | i: ] ;
+Vx:0 <=> Cns _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i2: | i: ] ;
 	where Vx in ( a e o â ê î ô i ) ;  ! esa:esihk, esa:esak, esa:esis
 
 "w Insertion in Front of Vowel Initial Suffix after ksv c"
@@ -81,13 +81,12 @@ o:ô <=> t2: %>:0 _  k :* i2:   ; ! okimâw:nitôkimâm ! careful: only in front
 "a:aa- alternations"
 !! __@RULENAME@__ , maniway+i- maniwâ - doesn't function
 a:â <=> _ [ w: | y: ] %>:0  [ i: | i2: ] ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ; ! 
-        Cons _ [ w: | y: ] %>:0 %^POS:0  i:0  ; ! maniway+i > maniwâ OBS! doesn't function
+        Cns _ [ w: | y: ] %>:0 %^POS:0  i:0  ; ! maniway+i > maniwâ 
 
 
 "i:ii- alternationa"
-!! __@RULENAME@__ , Okimasis p. 13 pikiw : pikîs - doesn't function 
-i:î <=> Cons _ [ w: | y: ] %>:0 [ i: | i2: ] ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ; ! 
-        Cons _ [ w: | y: ] %>:0 i: s %^DIM:0  ; !OBS pikiw : pikîs doesn't function Okimasis p. 13
+!! __@RULENAME@__ , Okimasis p. 13 pikiw : pikîs
+i:î <=> Cns _ [ w: | y: ] %>:0 [ i: | i2: ] ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ;
 
 
 !"locative alternation iihk 3i"
@@ -129,8 +128,7 @@ i2:0 <=> [ â | ô | ê | o: ] ( w: | y: )  %>:0  _ [ m | s ]  ; ! OBS: not wâw
 !! okimâw, maniway+i, pikiw+is cahcahkâyow+is tohtôsâpoy+is, cahcahkâyow+ihk, tohtôsâpoy+ihk
 [ w:0 | y:0 ] <=> [ Vow: | o: | i: ] _ %>:0 [ %^POS:0 | i2:] [ i: | m: | s: ] ; ! okimâw, maniway+i 
                   [ Vow: | o: | i: ] _ %>:0  i: s:  %^DIM:0 ; !pikiw+is cahcahkâyow+is tohtôsâpoy+is
-!                 \PosDim o:  _ %>:0  i: %^LC:0 ; ! cahcahkâyow+ihk, tohtôsâpoy+ihk  
-                 \PosDim [ o: | a: ] _ %>:0  i: %^LC:0 ; ! cahcahkâyow+ihk, tohtôsâpoy+ihk  
+                 \PosDim [ o: | a: | i: ] _ %>:0  i: %^LC:0 ; ! cahcahkâyow+ihk, tohtôsâpoy+ihk, pikiw+ihk
                  
    
 "o:w in possessive prefix"
