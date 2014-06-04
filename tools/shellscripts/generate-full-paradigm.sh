@@ -2,6 +2,17 @@
 
 # generate-full-paradigm 1:base 2:yaml
 
+# usage: ./tools/shellscripts/generate-full-paradigm.sh iskwêw test/src/gt-norm-yamls/N-iskwew_gt-norm.yaml | dcrk | less
+
+# Output example:
+# iskwêw+N+AN+Sg  iskwêw
+#
+# iskwêw+N+AN+Pl  iskwêwak
+#
+# iskwêw+N+AN+Loc iskwêwinâhk
+# iskwêw+N+AN+Loc iskwênâhk
+
+
 echo $1 |
 gawk -v YAML=$2 'BEGIN { yaml_file=YAML; }
 { base=$1;
