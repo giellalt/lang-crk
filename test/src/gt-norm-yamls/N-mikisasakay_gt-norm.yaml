@@ -1,0 +1,50 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mîkisasâkay - ok : # -m inanimate noun, beaded coat, Wolvengrey
+
+
+     mîkisasâkay+N+IN+Sg: mîkisasâkay
+     mîkisasâkay+N+IN+Sg+Px1Sg: nimîkisasâkay
+     mîkisasâkay+N+IN+Sg+Px2Sg: kimîkisasâkay
+     mîkisasâkay+N+IN+Sg+Px1Pl: nimîkisasâkânân
+     mîkisasâkay+N+IN+Sg+Px12Pl: kimîkisasâkânaw
+     mîkisasâkay+N+IN+Sg+Px2Pl: kimîkisasâkâwâw
+     mîkisasâkay+N+IN+Sg+Px3Sg: omîkisasâkay
+     mîkisasâkay+N+IN+Sg+Px3Pl: omîkisasâkâwâw
+     mîkisasâkay+N+IN+Sg+Px4Pl: omîkisasâkâyiw
+
+     mîkisasâkay+N+IN+Pl: mîkisasâkaya
+     mîkisasâkay+N+IN+Pl+Px1Sg: nimîkisasâkaya
+     mîkisasâkay+N+IN+Pl+Px2Sg: kimîkisasâkaya
+     mîkisasâkay+N+IN+Pl+Px1Pl: nimîkisasâkânâna
+     mîkisasâkay+N+IN+Pl+Px12Pl: kimîkisasâkânawa
+     mîkisasâkay+N+IN+Pl+Px2Pl: kimîkisasâkâwâwa
+     mîkisasâkay+N+IN+Pl+Px3Sg: omîkisasâkaya
+     mîkisasâkay+N+IN+Pl+Px3Pl: omîkisasâkâwâwa
+     mîkisasâkay+N+IN+Pl+Px4Pl: omîkisasâkâyiwa
+
+     mîkisasâkay+N+IN+Loc: mîkisasâkâhk
+     mîkisasâkay+N+IN+Px1Sg+Loc: nimîkisasâkâhk
+     mîkisasâkay+N+IN+Px2Sg+Loc: kimîkisasâkâhk
+     mîkisasâkay+N+IN+Px1Pl+Loc: nimîkisasâkânâhk
+     mîkisasâkay+N+IN+Px12Pl+Loc: kimîkisasâkânâhk
+     mîkisasâkay+N+IN+Px2Pl+Loc: kimîkisasâkâwâhk
+     mîkisasâkay+N+IN+Px3Sg+Loc: omîkisasâkâhk
+     mîkisasâkay+N+IN+Px3Pl+Loc: omîkisasâkâwâhk
+     mîkisasâkay+N+IN+Px4Pl+Loc: omîkisasâkâyihk
+
+     mîkisasâkay+N+IN+Der/Dim+N+IN+Sg: [mîkisasâkâs, mîkisasâkâsis]
+     mîkisasâkay+N+IN+Der/Dim+N+IN+Pl: [mîkisasâkâsa, mîkisasâkâsisa]
+     mîkisasâkay+N+IN+Der/Dim+N+IN+Loc: [mîkisasâkâsihk, mîkisasâkâsisihk]
+     mîkisasâkay+N+IN+Der/Dim+N+IN+Sg+Px1Sg: [nimîkisasâkâs, nimîkisasâkâsis]
+     mîkisasâkay+N+IN+Der/Dim+N+IN+Sg+Px2Sg: [kimîkisasâkâs, kimîkisasâkâsis]
+     mîkisasâkay+N+IN+Der/Dim+N+IN+Sg+Px3Sg: [omîkisasâkâs, omîkisasâkâsis]

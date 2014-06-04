@@ -1,0 +1,49 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - oskasâkay - ok : # -m inanimate noun, new coat, Wolvengrey
+     oskasâkay+N+IN+Sg: oskasâkay
+     oskasâkay+N+IN+Sg+Px1Sg: nitoskasâkay
+     oskasâkay+N+IN+Sg+Px2Sg: kitoskasâkay
+     oskasâkay+N+IN+Sg+Px1Pl: nitoskasâkânân
+     oskasâkay+N+IN+Sg+Px12Pl: kitoskasâkânaw
+     oskasâkay+N+IN+Sg+Px2Pl: kitoskasâkâwâw
+     oskasâkay+N+IN+Sg+Px3Sg: otoskasâkay
+     oskasâkay+N+IN+Sg+Px3Pl: otoskasâkâwâw
+     oskasâkay+N+IN+Sg+Px4Pl: otoskasâkâyiw
+     oskasâkay+N+IN+Pl: oskasâkaya
+     
+     oskasâkay+N+IN+Pl+Px1Sg: nitoskasâkaya
+     oskasâkay+N+IN+Pl+Px2Sg: kitoskasâkaya
+     oskasâkay+N+IN+Pl+Px1Pl: nitoskasâkânâna
+     oskasâkay+N+IN+Pl+Px12Pl: kitoskasâkânawa
+     oskasâkay+N+IN+Pl+Px2Pl: kitoskasâkâwâwa
+     oskasâkay+N+IN+Pl+Px3Sg: otoskasâkaya
+     oskasâkay+N+IN+Pl+Px3Pl: otoskasâkâwâwa
+     oskasâkay+N+IN+Pl+Px4Pl: otoskasâkâyiwa
+     
+     oskasâkay+N+IN+Loc: oskasâkâhk
+     oskasâkay+N+IN+Px1Sg+Loc: nitoskasâkâhk
+     oskasâkay+N+IN+Px2Sg+Loc: kitoskasâkâhk
+     oskasâkay+N+IN+Px1Pl+Loc: nitoskasâkânâhk
+     oskasâkay+N+IN+Px12Pl+Loc: kitoskasâkânâhk
+     oskasâkay+N+IN+Px2Pl+Loc: kitoskasâkâwâhk
+     oskasâkay+N+IN+Px3Sg+Loc: otoskasâkâhk
+     oskasâkay+N+IN+Px3Pl+Loc: otoskasâkâwâhk
+     oskasâkay+N+IN+Px4Pl+Loc: otoskasâkâyihk
+     
+     oskasâkay+N+IN+Der/Dim+N+IN+Sg: [oskasâkâs, oskasâkâsis]
+     oskasâkay+N+IN+Der/Dim+N+IN+Pl: [oskasâkâsa, oskasâkâsisa]
+     oskasâkay+N+IN+Der/Dim+N+IN+Loc: [oskasâkâsihk, oskasâkâsisihk]
+     oskasâkay+N+IN+Der/Dim+N+IN+Sg+Px1Sg: [nicoskasâkâs, nicoskasâkâsis]
+     oskasâkay+N+IN+Der/Dim+N+IN+Sg+Px2Sg: [kicoskasâkâs, kicoskasâkâsis]
+     oskasâkay+N+IN+Der/Dim+N+IN+Sg+Px3Sg: [ocoskasâkâs, ocoskasâkâsis]
+     oskasâkay+N+IN+Der/Dim+N+IN+Sg+Px4Sg: [ocoskasâkâsiyiw, ocoskasâkâsisiyiw]
