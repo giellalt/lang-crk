@@ -13,12 +13,12 @@
 ! giellatekno@hum.uit.no or divvun@hum.uit.no
 
 ! ========================================================================== !
-!!                           !!!Plains Cree particles                           
+!!                           !!!Plains Cree numerals                           
 ! ========================================================================== !
 
-!! The file
+!! !The file for numerals
 
-LEXICON Numerals
+LEXICON Numerals !! * @CODE@
 HUNDREDSM ;		! 200M
 mitâtahtomitanaw HUNDREDM ;	! 100M
 TENSM ;			! 20-99M
@@ -35,8 +35,9 @@ TENS ;			! 20-99
 TEENS ;			! 10-19
 ONES ;			! 1-9
 
+!! !!More than mill
 
-LEXICON HUNDREDSM
+LEXICON HUNDREDSM !! * @CODE@ 
 nîso  CUODIM ;
 nisto CUODIM ;
 newo CUODIM ; ! Google: 459
@@ -46,19 +47,19 @@ tepakohp CUODIM ;
 ayinânew CUODIM ;
 kekâmitâtaht CUODIM ;
 
-LEXICON CUODIM
+LEXICON CUODIM !! * @CODE@
 mitâtahtomitanaw HUNDREDM ;
 
-LEXICON HUNDREDM
+LEXICON HUNDREDM !! * @CODE@
  TENSM ;
  TEENSM ;
  ONESM ;
  MILJON ;
 
-LEXICON TEENSM
+LEXICON TEENSM !! * @CODE@
 luhkie TEENM ;
 
-LEXICON TEENM
+LEXICON TEENM !! * @CODE@
 peyak     LOHKAIM ;
 nîso   LOHKAIM ;
 nisto    LOHKAIM ;
@@ -69,10 +70,10 @@ tepakohp LOHKAIM ;
 ayinânew LOHKAIM ;
 kekâmitâtaht   LOHKAIM ;
 
-LEXICON LOHKAIM
+LEXICON LOHKAIM !! * @CODE@
 MILJON ;
 
-LEXICON TENSM
+LEXICON TENSM !! * @CODE@
 luhkie MILJON ;
 nîso   TENM ;
 nisto    TENM ;
@@ -83,11 +84,11 @@ tepakohp TENM ;
 ayinânew TENM ;
 kekâmitâtaht  TENM ;
 
-LEXICON TENM
+LEXICON TENM !! * @CODE@
 luhkie MILJON ;
 luhkie   ONESM ;
 
-LEXICON ONESM
+LEXICON ONESM !! * @CODE@
 akte% miljon  OVERTHOUSANDS ;
 nîso   MILJON ;
 nisto          MILJON ;
@@ -98,14 +99,14 @@ tepakohp       MILJON ;
 ayinânew       MILJON ;
 kekâmitâtaht  MILJON ; 
 
-LEXICON MILJON
+LEXICON MILJON !! * @CODE@
 % miljona OVERTHOUSANDS ;
 
 ! =================
-! Under the million
+!! !!Under the million
 ! =================
 
-LEXICON OVERTHOUSANDS
+LEXICON OVERTHOUSANDS !! * @CODE@
 HUNDREDST ;		! x00.000.000
 mitâtahtomitanaw HUNDREDT ;	! 100.000.000
  TENST ;		!  20.000.000
@@ -118,7 +119,7 @@ tåvsene THOUSAND ;	!   1.000.000
  ONES ;
  NUM ;	!  x000000
 
-LEXICON HUNDREDST
+LEXICON HUNDREDST !! * @CODE@
 nîso  CUODIT ;	! 200000-299999
 nisto    CUODIT ;	! 300000-399999
 newo CUODIT ;	! 400000-499999
@@ -128,21 +129,21 @@ tepakohp CUODIT ;	! 700000-799999
 ayinânew CUODIT ;	! 800000-899999
 kekâmitâtaht  CUODIT ;	! 900000-999999
 
-LEXICON CUODIT
+LEXICON CUODIT !! * @CODE@
 mitâtahtomitanaw HUNDREDT ;	! 100000-199999
 
-LEXICON HUNDREDT	! X = 1-9, Y = 0-9
+LEXICON HUNDREDT !! * @CODE@	X = 1-9, Y = 0-9
  TENST ;			! X2XYYY, X10YYY
  TEENST ;		! X1XYYY
  THOUSANDS ;
  ONEST ;		! XX0YYY
  THOUSANDS ;	! X00YYY
 
-LEXICON TEENST
+LEXICON TEENST !! * @CODE@
 luhkie  TEENT ;
 luhkie THOUSANDS ;
 
-LEXICON TEENT
+LEXICON TEENT !! * @CODE@
 peyak    LOHKAIT ;
 nîso   LOHKAIT ;
 nisto    LOHKAIT ;
@@ -153,10 +154,10 @@ tepakohp LOHKAIT ;
 ayinânew LOHKAIT ;
 kekâmitâtaht   LOHKAIT ;
 
-LEXICON LOHKAIT
+LEXICON LOHKAIT !! * @CODE@
 THOUSANDS ;
 
-LEXICON TENST
+LEXICON TENST !! * @CODE@
 nîs  TANAW ;
 nistomi    TANAW ;
 nemi TANAW ;
@@ -166,16 +167,16 @@ tepakohpimi TANAW ;
 ayinânewomi TANAW ;
 kekâmitâtahtomi   TANAW ;
 
-LEXICON TANAW
+LEXICON TANAW !! * @CODE@
 tanaw%  NUM ;
 tanaw%  ONESTONEXT ;
 
-LEXICON TENT
+LEXICON TENT !! * @CODE@
  THOUSANDS ;
 akte THOUSANDS ;
 ONEST ;
 
-LEXICON ONEST
+LEXICON ONEST !! * @CODE@
 nîso THOUSANDS ;
 nisto THOUSANDS ;
 newo THOUSANDS ;
@@ -185,10 +186,10 @@ tepakohp THOUSANDS ;
 ayinânew THOUSANDS ;
 kekâmitâtaht THOUSANDS ;
 
-LEXICON THOUSANDS      ! x > 1
+LEXICON THOUSANDS   !! * @CODE@  x > 1
 tåvsene THOUSAND ;
 
-LEXICON THOUSAND
+LEXICON THOUSAND !! * @CODE@
 UNDERTHOUSAND ;	   ! 1100-1999
  TENS ;	   ! 1020-1099
  TEENS ;	   ! 1010-1019
@@ -196,15 +197,15 @@ UNDERTHOUSAND ;	   ! 1100-1999
  NUM ;	   ! 1000
 
 !===========================
-!Here starts the 999 numbers
+!! !!Here starts the 999 numbers
 !===========================
 
-LEXICON UNDERTHOUSAND
+LEXICON UNDERTHOUSAND !! * @CODE@
 HUNDREDS ;
 mitâtahtomitanaw%  HUNDRED ;
 !tjuatede  CUODAAT ;
 
-LEXICON HUNDREDS
+LEXICON HUNDREDS !! * @CODE@
 nîso   CUODI ;
 nisto    CUODI ;
 newo CUODI ;
@@ -214,11 +215,11 @@ tepakohpo CUODI ;
 ayinânewo CUODI ;
 kekâmitâtahto  CUODI ;
 
-LEXICON CUODI
+LEXICON CUODI !! * @CODE@
 mitâtahtomitanaw%   HUNDRED ;
 !tjuatede  CUODAAT ;
-
-LEXICON HUNDRED
+ 
+LEXICON HUNDRED !! * @CODE@
  TENS ;
  TEENS ;
  ONES ;
@@ -227,7 +228,7 @@ LEXICON HUNDRED
 !LEXICON CUODAAT
 !    NUM ;
 
-LEXICON TENS
+LEXICON TENS !! * @CODE@
 mitâtaht NUM ;
 låhkede NUM ;
 nîs TEN ;
@@ -239,11 +240,11 @@ tepakohpimi TEN ;
 ayinânewomi TEN ;
 kekâmitâtahtomi TEN ;
 
-LEXICON TEN
+LEXICON TEN !! * @CODE@
 låhkede NUM ;
 tanaw%  ONESTONEXT ;
 
-LEXICON ONESTONEXT
+LEXICON ONESTONEXT !! * @CODE@
 peyakosâp NUM ;
 nîsosâp NUM ;
 nistosâp NUM ;
@@ -256,7 +257,7 @@ kîkâmitâtahtosâp NUM ;
 
 
 
-LEXICON TEENS
+LEXICON TEENS !! * @CODE@
 peyakosâp NUM ;
 nîsosâp NUM ;
 nistosâp NUM ;
@@ -267,11 +268,11 @@ têpakohposâp NUM ;
 ayinânêwosâp NUM ;
 kîkâmitâtahtosâp NUM ;
 
-LEXICON ONES
+LEXICON ONES !! * @CODE@
 CARDINAL ;
 !ORDINAL ;
 
-LEXICON CARDINAL
+LEXICON CARDINAL !! * @CODE@
 peyak NUM ;
 nîso NUM ;
 nisto NUM ;
@@ -293,7 +294,7 @@ kîkâmitâtaht NUM ;
 !gaaktsede:8%.   NUM ;
 !åktsede:9%.    NUM ;
 
-LEXICON NUM
-+Num: # ;
+LEXICON NUM !! * @CODE@
++Num+Ipc: # ;
 
 
