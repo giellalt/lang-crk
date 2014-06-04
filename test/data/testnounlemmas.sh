@@ -1,4 +1,5 @@
 # This script tests if words which are used as lemmas in nouns.lexc can be generated as N+Animacy+Sg
+# command: sh testnounlemmas.sh
 
 grep ' A' $GTHOME/langs/crk/src/morphology/stems/nouns.lexc |egrep -v '^(LEX|\!|[A-Z].|<|@)' | tr ':' ' ' | cut -d ' ' -f1 > $GTHOME/langs/crk/dev/anouns
 grep ' I' $GTHOME/langs/crk/src/morphology/stems/nouns.lexc |egrep -v '^(LEX|\!|[A-Z].|<|@)' | tr ':' ' ' | cut -d ' ' -f1 > $GTHOME/langs/crk/dev/inouns
