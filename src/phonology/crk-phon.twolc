@@ -70,7 +70,7 @@ i:o <=> k %>:0 _  %^LC:0 ;  !
 !! cahcahkâyow+ihk, tohtôsâpoy+ihk, cahcahkâyow+is, cohcôsâpoy+is, o+pikiw+iyiwa	 maniway+i
 i:0 <=>  \PosDim [ o: | i: ]  [ w: | y: ] %>:0  _ %^LC:0 ;   ! cahcahkâyow+ihk, tohtôsâpoy+ihk
          [ Vow: | o: ] [ w: | y: ] %>:0  _ s %^DIM:0 ; ! cahcahkâyow+is, cohcôsâpoy+is
-          [ a: | i: ] [ w: | y: ] %>:0 %^POS:0 ( %>:0 ) _  ; !o+pikiw+iyiwa	 maniway+i
+         \Pos [ a: | i: | â: ] [ w: | y: ] %>:0 ( %^POS:0 ) ( %>:0 ) _  ; !o+pikiw+iyiwa	 maniway+i
 
           	
 "o:oo- alternations"
@@ -81,9 +81,9 @@ o:ô <=> t2: %>:0 _  [ k | s ] :* i2:   ; ! okimâw:nitôkimâm, oskâyi ! caref
  		\Pos _ [ w: | y: ] %>:0 [ i: | i2: ] ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ; ! tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
       
 "a:aa- alternations"
-!! __@RULENAME@__ , maniway+i- maniwâ - doesn't function
+!! __@RULENAME@__ , maniway+i- maniwâ 
 a:â <=> _ [ w: | y: ] %>:0  [ i: | i2: ] ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ; ! 
-        Cns _ [ w: | y: ] %>:0 %^POS:0  i:0  ; ! maniway+i > maniwâ 
+        Cns _ [ w: | y: ] %>:0 %^POS:0 ( %>:0 )  i:0  ; ! maniway+i > maniwâ 
 
 
 "i:ii- alternationa"
@@ -171,10 +171,8 @@ i:o <=> k %>:0 _ s: %^DIM:0 ;
 "Diminutives rule change ending delete i with nouns ending in kwa"
 !! __@RULENAME@__
 i:0 <=> .#. o: %>:0 _ [ t: | k | m | n | s | h | c | w ] ; !prefix kinshipterms
-		w:  a: %>:0 _ s: %^DIM:0 ; ! OBS
+		k:  w:  a: %>:0 _ s: %^DIM:0 ; ! OBS
 
-"Remove locative i when poss -wâ"
-i:0 <=> [ â: | a: ] w:0 %>:0 _ %^LC:0 ; !  ôtênâhk
 
 !! !! VERBS
 
