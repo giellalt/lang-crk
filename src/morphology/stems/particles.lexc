@@ -18,11 +18,11 @@
 
 !! The file
 
-LEXICON pcle
+LEXICON pcle !!= * @CODE@ adds +Ipc
 +Ipc: # ;
 
 
-LEXICON Particles
+LEXICON Particles !!= * @CODE@
 cî+Ipc+Qst:cî # ; !GG
 namoya+Ipc+Neg:namoya # ; !GG
 sisone pcle ; !"along"
