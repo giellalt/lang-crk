@@ -11,10 +11,10 @@
 
  * LEXICON ANimDECLisis  for the animate declension, poss.-im-, dim.-isis
 
-!LEXICON ANDIMim for diminutives with poss.-im- after the dim.suffix, not in use
+*LEXICON ANDIMim for diminutives with poss.-im- after the dim.suffix, not in use
 
 
-!LEXICON ANDECLisis for the animate declension, -isis diminutive, not in use as the moment
+*LEXICON ANDECLisis for the animate declension, -isis diminutive, not in use as the moment
 
  * LEXICON ANDECLis  for the animate declension, -is diminutive
 
@@ -32,7 +32,7 @@
 
  * LEXICON NON_LOCahk  for the animate absolute except LOC on ahk
 
-!LEXICON ANDIMDECL Declension for animate diminutives, adding +Dim-tag to the string. Not in use now.
+*LEXICON ANDIMDECL Declension for animate diminutives, adding +Dim-tag to the string. Not in use now.
 
 
 
@@ -105,7 +105,7 @@
 
 
 
-!LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
+*LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON INALIENABLEDERIVATION   for hardcoded noun:diminutive for inalienables
 
