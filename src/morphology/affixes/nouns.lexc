@@ -43,14 +43,14 @@ LEXICON ANimDECLisis !!= * @CODE@ for the animate declension, poss.-im-, dim.-is
 +N+AN+Der/Dim+N+AN+Sg:%>i2m%^DIMis%> ANSUFF_SG  ;
 +N+AN+Der/Dim+N+AN+Pl:%>i2m%^DIMis%> ANSUFF_PL  ;
 
-!! !LEXICON ANDIMim for diminutives with poss.-im- after the dim.suffix, not in use
+!! *LEXICON ANDIMim for diminutives with poss.-im- after the dim.suffix, not in use
 !+N+AN:%>im ANSUFF_LOC ;
 ! ANABSDECL ;
 !+N+AN+Sg:%>im ANSUFF_SG ;
 !+N+AN+Pl:%>im ANSUFF_PL ;
 
 
-!! !LEXICON ANDECLisis for the animate declension, -isis diminutive, not in use as the moment
+!! *LEXICON ANDECLisis for the animate declension, -isis diminutive, not in use as the moment
 !ANABSDECL ;
 !+N+AN+Sg:%> ANSUFF_SG ;
 !+N+AN+Pl:%> ANSUFF_PL ;
@@ -100,7 +100,7 @@ LEXICON NON_LOCahk !!= * @CODE@ for the animate absolute except LOC on ahk
  +Pl: PLak      ;
       LOC       ;
 
-!! !LEXICON ANDIMDECL Declension for animate diminutives, adding +Dim-tag to the string. Not in use now.
+!! *LEXICON ANDIMDECL Declension for animate diminutives, adding +Dim-tag to the string. Not in use now.
 !< "+N":0 "+AN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
 !< "+N":0 "+AN":0 "+Pl":0 "+Dim":0 "@U.noun.abs@" >  PLak ; !
 !< "+N":0 "+AN":0 "+Dim":0 "@U.noun.abs@" >  LOC ; !
@@ -311,7 +311,7 @@ LEXICON INABSDECL !!= * @CODE@ for inanimate absolute declension
 
 
 
-!! !LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
+!! *LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 !< "+N":0 "+IN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
 !< "+N":0 "+IN":0 "+Pl":0 "+Dim":0 "@U.noun.abs@" >  PLa ; !
 !< "+N":0 "+IN":0 "+Dim":0 "@U.noun.abs@" >  LOC ; !
