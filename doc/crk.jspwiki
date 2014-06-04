@@ -215,6 +215,7 @@ Prefixes with a certain phonological content:
 
 
  *  t2:0       t between prefix and vowel-initial stem
+ *  y2:y       t between prefix and vowel-initial stem
  *  i2:0       i can change to o and ô in the possession element
  *  %>:0       affix boundary
  *  %^LC:0     Locative suffix alternation trigger
@@ -236,7 +237,7 @@ Prefixes with a certain phonological content:
 
 
 
-__Suffix vowel deletion in vowel final stems __ : niska, wâwi+a wâwi+ihk wâwi+is
+__Suffix vowel deletion in vowel final stems __ : niska, wâwi+a wâwi+ihk wâwi+is, oskâyi+a
 
 __w Insertion in Front of Vowel Initial Suffix after ksv c__ inserts w after k in front of plural -ak: 
 Note that this rule probably is wrong, and that the -w- is
@@ -255,13 +256,10 @@ cahcahkâyow+ihk, tohtôsâpoy+ihk, cahcahkâyow+is, cohcôsâpoy+is, o+pikiw+iy
 __o:oo- alternations__ , Okimasis p. 135 
 okimâw:nitôkimâm, nitohtôsâpom tohtôsâpoy tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
 
-__a:aa- alternations__ , maniway+i- maniwâ - doesn't function
+__a:aa- alternations__ , maniway+i- maniwâ 
 
 
-__i:ii- alternationa__ , Okimasis p. 13 pikiw : pikîs - doesn't function 
-
-
-__i:ii- alternationa__  Okimasis 2004: 26, Rule 3: -îhk
+__i:ii- alternationa__ , Okimasis p. 13 pikiw : pikîs
 
 
 __locative alternation naahk 1		__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
@@ -490,10 +488,10 @@ The stems
 
  * LEXICON ANimDECLisis  for the animate declension, poss.-im-, dim.-isis
 
-!LEXICON ANDIMim for diminutives with poss.-im- after the dim.suffix, not in use
+*LEXICON ANDIMim for diminutives with poss.-im- after the dim.suffix, not in use
 
 
-!LEXICON ANDECLisis for the animate declension, -isis diminutive, not in use as the moment
+*LEXICON ANDECLisis for the animate declension, -isis diminutive, not in use as the moment
 
  * LEXICON ANDECLis  for the animate declension, -is diminutive
 
@@ -511,7 +509,7 @@ The stems
 
  * LEXICON NON_LOCahk  for the animate absolute except LOC on ahk
 
-!LEXICON ANDIMDECL Declension for animate diminutives, adding +Dim-tag to the string. Not in use now.
+*LEXICON ANDIMDECL Declension for animate diminutives, adding +Dim-tag to the string. Not in use now.
 
 
 
@@ -584,7 +582,7 @@ The stems
 
 
 
-!LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
+*LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON INALIENABLEDERIVATION   for hardcoded noun:diminutive for inalienables
 
