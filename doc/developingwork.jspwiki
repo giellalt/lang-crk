@@ -57,11 +57,17 @@ svn up test/src/gt-norm-yamls/U-all_gt-norm.yaml
 
 make check
 
-!!Make/update all yaml-tests in one for a certain PoS
-The example is for verbs. 
+!!Make/update all yaml-tests in one for a certain PoS (and a certain pattern?)
+This example is adding all verbs into one file:
 {{{
 head -11 test/src/gt-norm-yamls/V-mato_gt-norm.yaml > U-all_gt-norm.yaml 
 tail +11 test/src/gt-norm-yamls/V* | grep -v "==" >>  U-all_gt-norm.yaml
+}}}
+
+This example is adding all nouns with final -y into one file:
+{{{
+head -11 test/src/gt-norm-yamls/N-amiskw_gt-norm.yaml > A-all_gt-norm.yaml 
+tail +11 test/src/gt-norm-yamls/N*y_gt-norm.yaml | grep -v "==" >>  U-all_gt-norm.yaml
 }}}
 
 
