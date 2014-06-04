@@ -79,7 +79,7 @@ sed 's/^/     /' >> test/src/gt-norm-yamls/N-otenaw_gt-norm.yaml
 
 Comment: The last sed-command should give 5 whitespaces
 
-!! Resources about unix-commands
+!! Documentation on unix-commands
 * [Unix for linguists|http://giellatekno.uit.no/doc/tools/docu-unix.html]
 * [Some unix commands explained, with examples, and example files, but in Saami|http://giellatekno.uit.no/doc/tools/unix_korpus_kursa.html]
 * [Basic unix-commands, external link|http://mally.stanford.edu/~sr/computing/basic-unix.html]
