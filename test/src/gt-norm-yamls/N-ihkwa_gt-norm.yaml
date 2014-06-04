@@ -1,0 +1,52 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/aANlyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/aANlyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - ihkwa - ok : # -m animate noun, louse
+     ihkwa+N+AN+Sg: ihkwa
+     ihkwa+N+AN+Sg+Px1Sg: nitihkom
+     ihkwa+N+AN+Sg+Px2Sg: kitihkom
+     ihkwa+N+AN+Sg+Px3Sg+Obv: otihkoma
+     ihkwa+N+AN+Sg+Px4Sg+Obv: otihkomiyiwa
+     ihkwa+N+AN+Sg+Px1Pl: nitihkominân
+     ihkwa+N+AN+Sg+Px12Pl: kitihkominaw
+     ihkwa+N+AN+Sg+Px2Pl: kitihkomiwâw
+     ihkwa+N+AN+Sg+Px3Pl+Obv: otihkomiwâwa
+     ihkwa+N+AN+Sg+Px4Pl+Obv: otihkomiyiwa
+
+     ihkwa+N+AN+Pl: ihkwak
+     ihkwa+N+AN+Pl+Px1Sg: nitihkomak
+     ihkwa+N+AN+Pl+Px2Sg: kitihkomak
+     ihkwa+N+AN+Pl+Px3Sg+Obv: otihkoma
+     ihkwa+N+AN+Pl+Px4Sg+Obv: otihkomiyiwa
+     ihkwa+N+AN+Pl+Px1Pl: nitihkominânak
+     ihkwa+N+AN+Pl+Px12Pl: kitihkominawak
+     ihkwa+N+AN+Pl+Px2Pl: kitihkomiwâwak
+     ihkwa+N+AN+Pl+Px3Pl+Obv: otihkomiwâwa
+     ihkwa+N+AN+Pl+Px4Pl+Obv: otihkomiyiwa
+
+     ihkwa+N+AN+Obv: ihkwa
+     ihkwa+N+AN+Loc: ihkohk
+     ihkwa+N+AN+Px1Sg+Loc: nitihkomihk
+     ihkwa+N+AN+Px2Sg+Loc: kitihkomihk
+     ihkwa+N+AN+Px3Sg+Loc: otihkomihk
+     ihkwa+N+AN+Px4Sg+Loc: otihkomiyihk
+     ihkwa+N+AN+Px1Pl+Loc: nitihkominâhk
+     ihkwa+N+AN+Px12Pl+Loc: kitihkominâhk
+     ihkwa+N+AN+Px2Pl+Loc: kitihkomiwâhk
+     ihkwa+N+AN+Px3Pl+Loc: otihkomiwâhk
+     ihkwa+N+AN+Px4Pl+Loc: otihkomiyihk
+
+     ihkwa+N+AN+Der/Dim+N+AN+Sg: ihkosis
+     ihkwa+N+AN+Der/Dim+N+AN+Pl: ihkosisak
+     ihkwa+N+AN+Der/Dim+N+AN+Loc: [ihkosisinâhk, ihkosisihk]
+     ihkwa+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicihkosis
+     ihkwa+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicihkosis
+
