@@ -59,10 +59,6 @@ Vx:0 <=> Cns _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i2: | i: ] ;
          h: p: %>:0 _ a k ; ! 
 
 
-"locative alternations o"
-!! __@RULENAME@__ Okimasis 2004: 26, Rule 1: -k + ohk, the stem vowel can be e.g. -i- : amisk+ihk = amiskohk
-i:o <=> k %>:0 _  %^LC:0 ;  ! 
-
 
 ! first
 "i:0 after w/y "
@@ -166,7 +162,12 @@ s:0 <=> k %>:0 _ %^DIM:0 ;
 "Diminutives rule change ending to os with k-final stems 2" 
 !! __@RULENAME@__ Okimasis 2004: 14, Examples listed in 5.
 i:o <=> k %>:0 _ s: %^DIM:0 ;
-!        n w: %>:0 _ s: %^DIM:0 ;
+ 
+"locative alternations o"
+!! __@RULENAME@__ Okimasis 2004: 26, Rule 1: -k + ohk, the stem vowel can be e.g. -i- : amisk+ihk = amiskohk
+i:o <=> k %>:0 ( %^POS:0 ) ( %>:0 ) _  ( %^LC:0 ) [ n: | w: | h: | y: ] ;  ! nimasinahikanâhtikonân, kimasinahikanâhtikowâw
+
+ 
          
 "Diminutives rule change ending delete i with nouns ending in kwa"
 !! __@RULENAME@__
