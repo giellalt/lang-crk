@@ -8,13 +8,13 @@ LEXICON Punctuation
 
 ! Clause boundary symbols
 
-%,+CLB:%,           # ;
-%.+CLB:%.           # ;
-%.%.+CLB:%.%.       # ;
+%,+CLB:%,           # ; !!= @CODE@
+%.+CLB:%.           # ; !!= @CODE@
+%.%.+CLB:%.%.       # ; !!= @CODE@
 %.%.%.+CLB:%.%.%.   # ;
 %:+CLB:%:           # ;
 %;+CLB:%;	        # ;
-^excl+CLB:%!	    # ;	!^C^
+^excl+CLB:%!	    # ;	!!= @CODE@ !^C^
 %?+CLB:%?	        # ;
 …+CLB:…		        # ;
 ¿+CLB:¿		        # ;	! Only seen as noise.

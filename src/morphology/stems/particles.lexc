@@ -19,19 +19,19 @@
 !! The file
 
 LEXICON pcle !!= * @CODE@ adds +Ipc
-+Ipc: # ;
++Ipc: # ; 
 
 
-LEXICON Particles !!= * @CODE@
-cî+Ipc+Qst:cî # ; !GG
-namoya+Ipc+Neg:namoya # ; !GG
-sisone pcle ; !"along"
-ekota pcle ; !"here"
-ohci pcle ; !"for/from"
+LEXICON Particles !!= * @CODE@ \\
+cî+Ipc+Qst:cî # ; !!= * @CODE@
+namoya+Ipc+Neg:namoya # ; !!= * @CODE@
+sisone pcle "along" ; !
+ekota pcle "here" ; !
+ohci pcle "for/from" ; !
 keyâpic pcle ; !"furtermore, once again, still, more, some more, again"
 ekwa pcle ; !"and, now"
 kâwe pcle ; !"again, another time, once more (Alternate spelling kawi)"
-ekota-ohci  pcle ; 
+ekota-ohci pcle ; 
 tânisi pcle "how" ; !GG
 tânisi:tân'si pcle "how" ; !GG
 tânispî pcle "when, spes." ; !GG

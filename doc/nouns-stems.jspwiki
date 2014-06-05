@@ -28,16 +28,23 @@ INALIENABLE  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
 
 STEMS adds an affixmark and redirects to STEMLIST
 
-STEMLIST for nouns getting prefixes ni-, ki-, o-
+STEMLIST for nouns getting prefixes ni-, ki-, o- \\
+ apiscacihkos ANDECL "antelope" ; 	
+ apisimôsos ANDECL "deer" ; ! 	 
 
 
 INALIENABLESTEMS adds an affixmark and redirects to INABLESTEMLIST
 
-INABLESTEMLIST for dependent nouns getting prefixes n-, k-, o-
+INABLESTEMLIST for dependent nouns getting prefixes n-, k-, o- \\
+ otânisimâw:itânis ANKININFL "daughter" ; !yaml 
+ okosisimâw:ikosis ANKININFL "son" ; 	
 
-BODYSTEMS adds an affixmark and redirects to BODYSTEMLIST
+BODYSTEMS adds an affixmark and redirects to BODYSTEMLIST 
 
-BODYSTEMLIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m-
+BODYSTEMLIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
+ maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml 	
+ maniway+N+IN+Sg:maniway NOPREFIX "cheek" ; !yaml 	
+ mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml  	
 
 
 
