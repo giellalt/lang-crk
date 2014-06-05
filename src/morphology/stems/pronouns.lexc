@@ -1,23 +1,19 @@
-!! Pronouns
-! --------
-!! !!!Plains Cree pronouns
+!! !!Plains Cree pronouns
 
 !! There are more pronoums to be added here.
 
-LEXICON Pronoun
-
-ci+Qst:ci # ; ! This one shall go in a particle file.
+LEXICON Pronoun !!= @CODE@
 
  Personal ;
  Interrogative ;
  Indefinite ;
  Demonstrative ;
 
-LEXICON Personal 
-niya+Pron+Pers+1Sg:niya # ;
-niya+Pron+Pers+1Sg:nîya # ; ! GG
-kiya+Pron+Pers+2Sg:kiya # ;
-kiya+Pron+Pers+2Sg:kîya # ; ! GG
+LEXICON Personal !!= @CODE@ \\
+niya+Pron+Pers+1Sg:niya # ; !!= @CODE@
+niya+Pron+Pers+1Sg:nîya # ; !!= @CODE@ 
+kiya+Pron+Pers+2Sg:kiya # ; !!= @CODE@
+kiya+Pron+Pers+2Sg:kîya # ; 
 wiya+Pron+Pers+3Sg:wiya # ;
 wiya+Pron+Pers+3Sg:wîya # ;
 niyanân+Pron+Pers+1Pl:niyanân # ;
@@ -38,22 +34,22 @@ kîstawâw+Pron+Pers+2Pl+Incl:kîstawâw # ;
 wîstawâw+Pron+Pers+3Pl+Incl:wîstawâw # ;
 
 
-LEXICON Interrogative 
-awîna+Pron+Interr+Sg:awîna # "who,whose" ;
-awîna+Pron+Interr+Pl:awîniki # "who" ;
+LEXICON Interrogative  !!= @CODE@ \\
+awîna+Pron+Interr+Sg:awîna # "who,whose" ;!!= @CODE@
+awîna+Pron+Interr+Pl:awîniki # "who" ;!!= @CODE@
 kîkwây+Pron+Interr+Sg:kîkwây # "what" ;
 kîkwây+Pron+Interr+Pl:kîkwây # "what" ; !Wolvengrey
 kîkwây+Pron+Interr+Pl:kîkwâya # "what" ;
 tânitowahk+Pron+Interr+Sg:tânitowahk # "what kind" ;
 
-LEXICON Indefinite 
-awiyak+Pron+Indef+AN+Sg:awiyak # "someone" ;
-awiyak+Pron+Indef+AN+Pl:awiyakak # "some people" ;
+LEXICON Indefinite !!= @CODE@ \\
+awiyak+Pron+Indef+AN+Sg:awiyak # "someone" ; !!= @CODE@
+awiyak+Pron+Indef+AN+Pl:awiyakak # "some people" ;!!= @CODE@
 
-LEXICON Demonstrative 
-!ANIMATE
-awa+Pron+Dem+Prox+AN+Sg:awa # "this" ;
-awa+Pron+Dem+Prox+AN+Pl:ôki # "these" ;
+LEXICON Demonstrative !!= @CODE@   \\
+!! ANIMATE \\
+awa+Pron+Dem+Prox+AN+Sg:awa # "this" ; !!= @CODE@
+awa+Pron+Dem+Prox+AN+Pl:ôki # "these" ; !!= @CODE@
 
 awa+Pron+Dem+Med+AN+Sg:ana # "that" ;
 awa+Pron+Dem+Med+AN+Pl:aniki # "those" ;
@@ -61,10 +57,10 @@ awa+Pron+Dem+Med+AN+Pl:aniki # "those" ;
 awa+Pron+Dem+Dist+AN+Sg:nâha # "that yonder" ;
 awa+Pron+Dem+Dist+AN+Pl:nêki # "those yonder" ;
 
-!INANIMATE
+!! INANIMATE \\
 
-awa+Pron+Dem+Prox+IN+Sg:ôma # "this" ;
-awa+Pron+Dem+Prox+IN+Pl:ôhi # "these" ;
+awa+Pron+Dem+Prox+IN+Sg:ôma # "this" ; !!= @CODE@
+awa+Pron+Dem+Prox+IN+Pl:ôhi # "these" ; !!= @CODE@
 
 awa+Pron+Dem+Med+IN+Sg:anima # "that" ;
 awa+Pron+Dem+Med+IN+Pl:anihi # "those" ;

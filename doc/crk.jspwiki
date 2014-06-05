@@ -360,16 +360,23 @@ INALIENABLE  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
 
 STEMS adds an affixmark and redirects to STEMLIST
 
-STEMLIST for nouns getting prefixes ni-, ki-, o-
+STEMLIST for nouns getting prefixes ni-, ki-, o- \\
+ apiscacihkos ANDECL "antelope" ; 	
+ apisimôsos ANDECL "deer" ; ! 	 
 
 
 INALIENABLESTEMS adds an affixmark and redirects to INABLESTEMLIST
 
-INABLESTEMLIST for dependent nouns getting prefixes n-, k-, o-
+INABLESTEMLIST for dependent nouns getting prefixes n-, k-, o- \\
+ otânisimâw:itânis ANKININFL "daughter" ; !yaml 
+ okosisimâw:ikosis ANKININFL "son" ; 	
 
-BODYSTEMS adds an affixmark and redirects to BODYSTEMLIST
+BODYSTEMS adds an affixmark and redirects to BODYSTEMLIST 
 
-BODYSTEMLIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m-
+BODYSTEMLIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
+ maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml 	
+ maniway+N+IN+Sg:maniway NOPREFIX "cheek" ; !yaml 	
+ mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml  	
 
 
 
@@ -453,7 +460,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
- LEXICON VERBSTEMS  here come all the verbstems
+ LEXICON VERBSTEMS  here come all the verbstems \\
  nipâw:nipâ IACONJw "sleep" ;  GG
  mâto IACONJ "cry" ;  GG
  mîciso IACONJ "eat" ;  Variation in length of first vowel, here following Okimâsis. !GG
@@ -772,25 +779,43 @@ The file
  * LEXICON pcle  adds +Ipc
 
 
- * LEXICON Particles 
+ * LEXICON Particles  \\
+ * cî+Ipc+Qst:cî # ; 
+ * namoya+Ipc+Neg:namoya # ; 
 
-Pronouns
-!!!Plains Cree pronouns
+!!Plains Cree pronouns
 
 There are more pronoums to be added here.
 
+ LEXICON Pronoun 
+
+
+ LEXICON Personal  \\
+ niya+Pron+Pers+1Sg:niya # ; 
+ niya+Pron+Pers+1Sg:nîya # ;  
+ kiya+Pron+Pers+2Sg:kiya # ; 
 
 
 
+ LEXICON Interrogative   \\
+ awîna+Pron+Interr+Sg:awîna # "who,whose" ;
+ awîna+Pron+Interr+Pl:awîniki # "who" ;
+
+ LEXICON Indefinite  \\
+ awiyak+Pron+Indef+AN+Sg:awiyak # "someone" ; 
+ awiyak+Pron+Indef+AN+Pl:awiyakak # "some people" ;
+
+ LEXICON Demonstrative    \\
+ANIMATE \\
+ awa+Pron+Dem+Prox+AN+Sg:awa # "this" ; 
+ awa+Pron+Dem+Prox+AN+Pl:ôki # "these" ; 
 
 
 
+INANIMATE \\
 
-
-
-
-
-
+ awa+Pron+Dem+Prox+IN+Sg:ôma # "this" ; 
+ awa+Pron+Dem+Prox+IN+Pl:ôhi # "these" ; 
 
 
 Punctuation marks 
@@ -799,6 +824,10 @@ Punctuation marks
 Punctuation contains period, comma, parentheses, etc.
 
 
+ %,+CLB:%,           # ; 
+ %.+CLB:%.           # ; 
+ %.%.+CLB:%.%.       # ; 
+ ^excl+CLB:%!	    # ;	 !^C^
 
 
 

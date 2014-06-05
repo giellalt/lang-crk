@@ -88,9 +88,9 @@ LEXICON STEMS
  0:%> STEMLIST ;
 
 LEXICON STEMLIST
-!! @LEXNAME@ for nouns getting prefixes ni-, ki-, o-
-apiscacihkos ANDECL "antelope" ;	
-apisimôsos ANDECL "deer" ; ! apisimôsosak	
+!! @LEXNAME@ for nouns getting prefixes ni-, ki-, o- \\
+apiscacihkos ANDECL "antelope" ; !!= @CODE@	
+apisimôsos ANDECL "deer" ; ! !!= @CODE@	 
 !apisimôsos:apisimôsosis ANDIMDERIVATION "little deer" ; ! apisimôsosak
 apisimôsosis ANDIM "little deer" ; ! apisimôsosak
 anikwacâs ANimDECL "squirrel" ; !yaml
@@ -256,9 +256,9 @@ LEXICON INALIENABLESTEMS  ! dependent nouns
  0:%> INABLESTEMLIST ;
 
 LEXICON INABLESTEMLIST
-!! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o-
-otânisimâw:itânis ANKININFL "daughter" ; !yaml
-okosisimâw:ikosis ANKININFL "son" ;
+!! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o- \\
+otânisimâw:itânis ANKININFL "daughter" ; !yaml !!= @CODE@
+okosisimâw:ikosis ANKININFL "son" ; !!= @CODE@	
 onîkihikomâw:inekihik ANKININFL "parent" ; ! NB! generic form? ninekihikwak onikihkomaw
 omosômimâw:imosôm ANKININFL "grandfather" ;
 ôhkomimâw:ôhkom ANKININFL "grandmother" ; !NB! twolc gives oô-
@@ -283,15 +283,15 @@ niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ; !OBS!
 mîkiwâhp+N+IN+Sg:mîkiwâhp NOPREFIX "home" ; !Okimasis:137
 
 LEXICON BODYSTEMS ! dependent nouns
-!! @LEXNAME@ adds an affixmark and redirects to BODYSTEMLIST
+!! @LEXNAME@ adds an affixmark and redirects to BODYSTEMLIST 
  0:%> BODYSTEMLIST ;
 
 LEXICON BODYSTEMLIST
-!! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o-, pluss generic form m-
+!! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
 mîkiwâhp:îki INALIENABLEPOSS_SG "home" ; !GGI !Wolfart's list: wîkiwâhk, nîkinâhk !Okimasis p 137
-maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml
-maniway+N+IN+Sg:maniway NOPREFIX "cheek" ; !yaml
-mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml
+maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml !!= @CODE@	
+maniway+N+IN+Sg:maniway NOPREFIX "cheek" ; !yaml !!= @CODE@	
+mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml  !!= @CODE@	
 mahkwan:ahkwan INALIENABLEPOSS "heel" ;
 mispiton:ispiton INALIENABLEPOSS "arm" ; !yaml
 micihciy:icihciy INALIENABLEPOSS "hand" ; !
