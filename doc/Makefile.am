@@ -14,6 +14,10 @@ JSP_PAGES=root-morphology.jspwiki    \
 		  nouns-stems.jspwiki        \
 		  verbs-stems.jspwiki        \
 		  nouns-affixes.jspwiki      \
+		  numerals-stems.jspwiki 	\
+		  particles-stems.jspwiki 	\
+		  pronouns-stems.jspwiki    \
+          punctuation-stems.jspwiki  \
 		  verbs-affixes.jspwiki
 # clitics-morphology.jspwiki       \
 # compounding-morphology.jspwiki   \
@@ -28,9 +32,7 @@ JSP_PAGES=root-morphology.jspwiki    \
 # nouns-oahpa-stems.jspwiki        \
 # numerals-stems.jspwiki           \
 # particles-stems.jspwiki          \
-# pronouns-stems.jspwiki           \
 # propernouns-stems.jspwiki        \
-# punctuation-stems.jspwiki        \
 # smi-propernouns-stems.jspwiki    \
 # subjunctions-stems.jspwiki       \
 # adjectives-oahpa-affixes.jspwiki \
