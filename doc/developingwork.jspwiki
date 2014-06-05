@@ -8,7 +8,7 @@ Add this to your .bashrc or .profile:
 alias crk="pushd ~/main/langs/crk" 
 }}}
 
-Open a new terminal window: In any catalogue, write 'crk' enter.
+Open a new terminal window: In any catalogue, write 'crk' ENTER.
 
 !!Test that all noun lemmas are possible to generate as base form
 {{{
@@ -26,7 +26,7 @@ sed 's/$/+N+AN+Loc/' | dcrk | less
 }}}
 
 ! The paradigm for a certain lemma
-The example is for an animate noun, but one can use any of the paradigms in the test/data-catalogue
+The example is for an inanimate noun, but one can use any of the paradigms in the test/data-catalogue
 {{{
 cat test/data/NI-par.txt | sed 's/^/ôtênaw/' | dcrk | less
 }}}
@@ -67,7 +67,7 @@ tail +11 test/src/gt-norm-yamls/V* | grep -v "==" >>  U-all_gt-norm.yaml
 This example is adding all nouns with final -y into one file:
 {{{
 head -11 test/src/gt-norm-yamls/N-amiskw_gt-norm.yaml > A-all_gt-norm.yaml 
-tail +11 test/src/gt-norm-yamls/N*y_gt-norm.yaml | grep -v "==" >>  U-all_gt-norm.yaml
+tail +11 test/src/gt-norm-yamls/N*y_gt-norm.yaml | grep -v "==" >>  A-all_gt-norm.yaml
 }}}
 
 
