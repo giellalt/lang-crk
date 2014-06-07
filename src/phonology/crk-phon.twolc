@@ -31,7 +31,8 @@ Sets
  Dummy = %> %^LC %^DIM %^EGLOT %^POS %^EA ;
  
 Definitions 
- 
+
+ Affb = :* %>:0 :* ; 
  Pos = :* %^POS:0 :* ;
  Dim = :* %^DIM:0 :* ;
  Loc = :* %^LOC:0 :* ;
@@ -42,137 +43,68 @@ Definitions
 
 Rules
 
-
-"Suffix vowel deletion in vowel final stems" 
-!! __@RULENAME@__ : niska, wâwi+a wâwi+ihk wâwi+is, oskâyi+a
-Vx:0 <=> Cns _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i2: | i: ] ;
-         y: _   %>:0 [ a | i2: | i: ]   ;
-	where Vx in ( a e o â ê î ô i ) ;  ! esa:esihk, esa:esak, esa:esis
-
-"w Insertion in Front of Vowel Initial Suffix after ksv c"
-!! __@RULENAME@__ inserts w after k in front of plural -ak: 
-!! Note that this rule probably is wrong, and that the -w- is
-!! a morphological affix rather than a phonological variant.
-!! sihkihp:sihkihpwak
-!! mostos:mostoswak is not included in this rule, but is done in lexc
-0:w <=> [ k: | o: | ô: ] %>:0 _ a k ; ! sikâk:sikâkwak ôhô:ôhôwak cahcahkayo:cahcahkayowak ninekihikwak ninekihik - ak
-         h: p: %>:0 _ a k ; ! 
-
-
-
-! first
-"i:0 after w/y "
-!! __@RULENAME@__ (first) : Okimasis 2004: 26, Rule 2, 8: Vow + (w/y) + ihk 
-!! cahcahkâyow+ihk, tohtôsâpoy+ihk, cahcahkâyow+is, cohcôsâpoy+is, o+pikiw+iyiwa	 maniway+i
-i:0 <=>  \PosDim [ o: | i: ]  [ w: | y: ] %>:0  _ %^LC:0 ;   ! cahcahkâyow+ihk, tohtôsâpoy+ihk
-         [ Vow: | o: ] [ w: | y: ] %>:0  _ s %^DIM:0 ; ! cahcahkâyow+is, cohcôsâpoy+is
-         \Pos [ a: | i: | â: ] [ w: | y: ] %>:0 ( %^POS:0 ) ( %>:0 ) _  ; !o+pikiw+iyiwa	 maniway+i
-
-          	
-"o:oo- alternations"
-!! __@RULENAME@__ , Okimasis p. 135 
-!! okimâw:nitôkimâm, nitohtôsâpom tohtôsâpoy tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
-o:ô <=> t2: %>:0 _  [ k | s ] :* i2:   ; ! okimâw:nitôkimâm, oskâyi ! careful: only in front of k and s first
- 		 %>:0 t _  h :* i2:0  ; ! nitohtôsâpom tohtôsâpoy
- 		\Pos _ [ w: | y: ] %>:0 [ i: | i2: ] ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ; ! tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
-      
-"a:aa- alternations"
-!! __@RULENAME@__ , maniway+i- maniwâ 
-a:â <=> _ [ w: | y: ] %>:0  [ i: | i2: ] ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ; ! 
-        Cns _ [ w: | y: ] %>:0 %^POS:0 ( %>:0 )  i:0  ; ! maniway+i > maniwâ 
-
-
-"i:ii- alternationa"
-!! __@RULENAME@__ , Okimasis p. 13 pikiw : pikîs
-i:î <=> Cns _ [ w: | y: ] %>:0 [ i: | i2: ] ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ;
-	    Cns _ [ w: | y: ] %>:0 %^POS:0 ( %>:0 )  i: ;
-
-                                    
-"locative alternation naahk 1"		
-!! __@RULENAME@__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
-!! iskwêw+ikh
-w:n <=> [ ê | ô ] _  %>:0 i: %^LC:0  ; 
-
-"locative alternation naahk 2"		
-!! __@RULENAME@__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
-!! iskwên+ikh
-i:â <=> [ ê | ô ] w:n  %>:0 _ %^LC:0  ; 
+"t:c in diminutives" 
+!! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
+t:c <=>  _ :*  %>:0 Dim .#. ; ! cehcapiwinisis
 
 
 "t2:t between prefix and vowel"
 !! __@RULENAME@__ 
 t2:t  <=> _ %>:0 Vow ;
 
-"i2:o in possessive element"
-!! __@RULENAME@__ 
-i2:o <=> k %>:0  _ m  ;
-
-"i2:i in possessive element" 
-!! __@RULENAME@__ 
-i2:i <=> [ n | s | p | a: ] ( %>:0 )  _ m  ; ! esa:nitesim
-         [ w | y ]  i: %>:0   _ m  ; ! wâwi oskâyi
-
-
-"i2:0 in possessive element"
-!! __@RULENAME@__ 
-i2:0 <=> [ â | ô | ê | o: ] ( w: | y: )  %>:0  _ [ m | s ]  ; ! OBS: not wâwi (removed i )
-
-"w/y:0 in front of suffixes"
-!! __@RULENAME@__ 
-!! okimâw, maniway+i, pikiw+is cahcahkâyow+is tohtôsâpoy+is, cahcahkâyow+ihk, tohtôsâpoy+ihk
-[ w:0 | y:0 ] <=> [ Vow: | o: | i: ] _ %>:0 [ %^POS:0 | i2:] ( %>:0 ) [ i: | m: | s: ] ; ! okimâw, maniway+i 
-                  [ Vow: | o: | i: ] _ %>:0  i: s:  %^DIM:0 ; !pikiw+is cahcahkâyow+is tohtôsâpoy+is
-                 \PosDim [ o: | a: | i: ] _ %>:0  i: %^LC:0 ; ! pikiw+ihk, otanikwacâsimiyihk
-                 
-   
-"o:w in possessive prefix"
-!! __@RULENAME@__ , w- in front of î, a, â (?) in possessive forms: 
-!! mahkwan:wahkwan, mîpit:wîpit, mîyaw:wîyaw
-o:w <=> .#. _  %>:0 [ î: | a: | â: ] [ Cns | y ] :* %^POS:0  ;  !
- 
-"o:0 in possessive prefix"
-!! __@RULENAME@__ , Okimasis p. 140 
-o:0 <=> .#. _  %>:0 [ ô: | o: ] Cns  ;  !
-! ohtâwîmâw:ôhtâwiya 
- 
-!"i to a in prefixes in front of nasals"
-!! __@RULENAME@__ 
-!i:a <=> .#. n _ %>:0 [ n | m ] i	;
-
-
-"Double consonant deletion"
-!! __@RULENAME@__ 
-Cx:0 <=> _ %>:0 Cx ;
-	where Cx in ( b c d f g h j k l m n p q r s v w x z ) ;
-
-
-"t:c in diminutives" 
-!! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
-t:c <=>  _ :*  %>:0 Dim .#. ; ! cehcapiwinisis
-
 "Diminutives - t2 changes to c" 
 !! !! __@RULENAME@__
 t2:c <=>  _ %>:0 Vow Dim .#. ; 
 
+"i:o alternations" 
+!! __@RULENAME@__  
+i:o <=> Cns w: %>:0 ( %^POS:0 ) ( %>:0 ) _  ; !  
 
-"Diminutives rule change ending to os with k-final stems 1" 
-!! __@RULENAME@__ Okimasis 2004: 14, Examples listed in 5.
-s:0 <=> k %>:0 _ %^DIM:0 ;
+"Suffix vowel deletion in vowel final stems" 
+!! __@RULENAME@__ : niska, wâwi+a wâwi+ihk wâwi+is, oskâyi+a
+Vx:0 <=> Cns _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i: ] ;
+         y: _   %>:0 [ a | i: ]   ;
+	where Vx in ( a e o â ê î ô i ) ;  ! esa:esihk, esa:esak, esa:esis
 
-"Diminutives rule change ending to os with k-final stems 2" 
-!! __@RULENAME@__ Okimasis 2004: 14, Examples listed in 5.
-i:o <=> k %>:0 _ s: %^DIM:0 ;
- 
-"locative alternations o"
-!! __@RULENAME@__ Okimasis 2004: 26, Rule 1: -k + ohk, the stem vowel can be e.g. -i- : amisk+ihk = amiskohk
-i:o <=> k %>:0 ( %^POS:0 ) ( %>:0 ) _  ( %^LC:0 ) [ n: | w: | h: | y: ] ;  ! nimasinahikanâhtikonân, kimasinahikanâhtikowâw
 
- 
-         
-"Diminutives rule change ending delete i with nouns ending in kwa"
-!! __@RULENAME@__
-i:0 <=> .#. o: %>:0 _ [ t: | k | m | n | s | h | c | w ] ; !prefix kinshipterms
-		k:  w:  a: %>:0 _ s: %^DIM:0 ; ! OBS
+
+"w:0 alternations" 
+!! __@RULENAME@__  
+w:0 <=> \Pos Cns _ %>:0 ( %^POS:0 ) ( %>:0 )  i:  ; !  askihkw:askihkos nitihkom
+        \Pos Cns _ ( %>:0 ) ( %^POS:0 )  .#. ;
+
+
+
+"i:ii- alternations"
+!! __@RULENAME@__ , Okimasis p. 13 pikiw : pikîs
+i:î <=> Cns _ [ w: | y: ] %>:0  i: ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ;
+	    Cns _ [ w: | y: ] %>:0 %^POS:0 ( %>:0 )  i: ;
+
+"o:oo- alternations"
+!! __@RULENAME@__ , Okimasis p. 135 
+!! okimâw:nitôkimâm, nitohtôsâpom tohtôsâpoy tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
+o:ô <=> t2: %>:0 _  [ k | s ] :* i: m  ; ! okimâw:nitôkimâm, oskâyi ! careful: only in front of k and s first
+ 		 %>:0 t _  h :* i: m  ; ! nitohtôsâpom tohtôsâpoy
+ 		\Pos _ [ w: | y: ] %>:0 i: ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ; ! tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
+
+
+"a:aa alternations" 
+!! __@RULENAME@__  
+a:â <=>  _ y: %>:0  :* i: [ n: | w: | y: | s: | %^LC:0 ]  ;  ! 
+
+
+"y:0 alternations" 
+!! __@RULENAME@__  
+y:0 <=> \Pos [ i: | o: | a: ]  _ %>:0   :*  i: [ n: | w: | y: | s: | %^LC:0 ]  ; 
+!        [ i: | o: ]  _ ( %>:0 )  ( %^POS:0 )  i:  %>:0 %^LC:0 h: ; 
+
+
+"i:0 after w/y "
+!! __@RULENAME@__ (first) : Okimasis 2004: 26, Rule 2, 8: Vow + (w/y) + ihk 
+!! cahcahkâyow+ihk, tohtôsâpoy+ihk, cahcahkâyow+is, cohcôsâpoy+is, o+pikiw+iyiwa	 maniway+i
+i:0 <=>  \PosDim [ o: | i: ]  [ w: | y: ] %>:0  _ %^LC:0 ;   ! cahcahkâyow+ihk, tohtôsâpoy+ihk
+         [ Vow: | o: ] [ w: | y: ] %>:0  _ s %^DIM:0 ; ! cahcahkâyow+is, cohcôsâpoy+is
+         \Pos [ a: | i: | â: ] [ w: | y: ] %>:0 ( %^POS:0 ) ( %>:0 ) _  ; !o+pikiw+iyiwa	 maniway+i
 
 
 !! !! VERBS
