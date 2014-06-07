@@ -10,150 +10,14 @@ Config:
 Tests:
   
   
-  Noun - amiskw - ok : # -m animate noun, beaver # quite unsure about the diminutives
-     amisk+N+AN+Sg: amisk
-     amisk+N+AN+Pl: amiskwak
-     amisk+N+AN+Loc: [amiskohk, amiskinâhk]
-     amisk+N+AN+Obv: amiska
-     amisk+N+AN+Der/Dim+N+AN+Sg: amiskos 
-     amisk+N+AN+Der/Dim+N+AN+Pl: amiskosak
-     amisk+N+AN+Der/Dim+N+AN+Loc: [amiskosihk, amiskosinâhk]
-     
-     amisk+N+AN+Sg+Px1Sg: nitamiskom
-     amisk+N+AN+Sg+Px2Sg: kitamiskom
-     amisk+N+AN+Sg+Px3Sg+Obv: otamiskoma
-     amisk+N+AN+Sg+Px4Sg+Obv: otamiskomiyiwa
-     amisk+N+AN+Sg+Px1Pl: nitamiskominân
-     amisk+N+AN+Sg+Px12Pl: kitamiskominaw
-     amisk+N+AN+Sg+Px2Pl: kitamiskomiwâw
-     amisk+N+AN+Sg+Px3Pl+Obv: otamiskomiwâwa
-     amisk+N+AN+Sg+Px4Pl+Obv: otamiskomiyiwa
-     
-     amisk+N+AN+Pl+Px1Sg: nitamiskomak
-     amisk+N+AN+Pl+Px2Sg: kitamiskomak
-     amisk+N+AN+Pl+Px3Sg+Obv: otamiskoma
-     amisk+N+AN+Pl+Px4Sg+Obv: otamiskomiyiwa
-     amisk+N+AN+Pl+Px1Pl: nitamiskominânak
-     amisk+N+AN+Pl+Px12Pl: kitamiskominawak
-     amisk+N+AN+Pl+Px2Pl: kitamiskomiwâwak
-     amisk+N+AN+Pl+Px3Pl+Obv: otamiskomiwâwa
-     amisk+N+AN+Pl+Px4Pl+Obv: otamiskomiyiwa
-     
-     amisk+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicamiskomis 
-     amisk+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicamiskomis
-     amisk+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: ocamiskomisa
-     amisk+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: ocamiskomisiyiwa
-     amisk+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nicamiskomisinân
-     amisk+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kicamiskomisinaw
-     amisk+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kicamiskomisiwâw
-     amisk+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: ocamiskomisiwâwa
-     amisk+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: ocamiskomisiyiwa
-     
-     amisk+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nicamiskomisak
-     amisk+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kicamiskomisak
-     amisk+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: ocamiskomisa
-     amisk+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: ocamiskomisiyiwa
-     amisk+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nicamiskomisinânak
-     amisk+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kicamiskomisinawak
-     amisk+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kicamiskomisiwâwak
-     amisk+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: ocamiskomisiwâwa
-     amisk+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: ocamiskomisiyiwa
-     
-     amisk+N+AN+Px1Sg+Loc: nitamiskomihk
-     amisk+N+AN+Px2Sg+Loc: kitamiskomihk
-     amisk+N+AN+Px3Sg+Loc: otamiskomihk
-     amisk+N+AN+Px4Sg+Loc: otamiskomiyihk
-     amisk+N+AN+Px1Pl+Loc: nitamiskominâhk
-     amisk+N+AN+Px12Pl+Loc: kitamiskominâhk
-     amisk+N+AN+Px2Pl+Loc: kitamiskomiwâhk
-     amisk+N+AN+Px3Pl+Loc: otamiskomiwâhk
-     amisk+N+AN+Px4Pl+Loc: otamiskomiyihk
-
-     amisk+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nicamiskomisihk
-     amisk+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kicamiskomisihk
-     amisk+N+AN+Der/Dim+N+AN+Px3Sg+Loc: ocamiskomisihk
-     amisk+N+AN+Der/Dim+N+AN+Px4Sg+Loc: ocamiskomisiyihk
-     amisk+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nicamiskomisinâhk
-     amisk+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kicamiskomisinâhk
-     amisk+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kicamiskomisiwâhk
-     amisk+N+AN+Der/Dim+N+AN+Px3Pl+Loc: ocamiskomisiwâhk
-     amisk+N+AN+Der/Dim+N+AN+Px4Pl+Loc: ocamiskomisiyihk
-     
-  
-  Noun - anikwacâs - ok : # -m animate noun, squirrel
-     anikwacâs+N+AN+Sg: anikwacâs
-     anikwacâs+N+AN+Pl: anikwacâsak
-     anikwacâs+N+AN+Loc: [anikwacâsihk, anikwacâsinâhk]
-     anikwacâs+N+AN+Obv: anikwacâsa
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg: anikwacâsis
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl: anikwacâsisak
-     anikwacâs+N+AN+Der/Dim+N+AN+Loc: [anikwacâsisinâhk, anikwacâsisihk]
-
-     anikwacâs+N+AN+Sg+Px1Sg: nitanikwacâsim
-     anikwacâs+N+AN+Sg+Px2Sg: kitanikwacâsim
-     anikwacâs+N+AN+Sg+Px3Sg+Obv: otanikwacâsima
-     anikwacâs+N+AN+Sg+Px4Sg+Obv: otanikwacâsimiyiwa
-     anikwacâs+N+AN+Sg+Px1Pl: nitanikwacâsiminân
-     anikwacâs+N+AN+Sg+Px12Pl: kitanikwacâsiminaw
-     anikwacâs+N+AN+Sg+Px2Pl: kitanikwacâsimiwâw
-     anikwacâs+N+AN+Sg+Px3Pl+Obv: otanikwacâsimiwâwa
-     anikwacâs+N+AN+Sg+Px4Pl+Obv: otanikwacâsimiyiwa
-     
-     anikwacâs+N+AN+Pl+Px1Sg: nitanikwacâsimak
-     anikwacâs+N+AN+Pl+Px2Sg: kitanikwacâsimak
-     anikwacâs+N+AN+Pl+Px3Sg+Obv: otanikwacâsima
-     anikwacâs+N+AN+Pl+Px4Sg+Obv: otanikwacâsimiyiwa
-     anikwacâs+N+AN+Pl+Px1Pl: nitanikwacâsiminânak
-     anikwacâs+N+AN+Pl+Px12Pl: kitanikwacâsiminawak
-     anikwacâs+N+AN+Pl+Px2Pl: kitanikwacâsimiwâwak
-     anikwacâs+N+AN+Pl+Px3Pl+Obv: otanikwacâsimiwâwa
-     anikwacâs+N+AN+Pl+Px4Pl+Obv: otanikwacâsimiyiwa
-
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicanikwacâsimis
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicanikwacâsimis
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: ocanikwacâsimisa
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: ocanikwacâsimisiyiwa
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nicanikwacâsimisinân
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kicanikwacâsimisinaw
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kicanikwacâsimisiwâw
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: ocanikwacâsimisiwâwa
-     anikwacâs+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: ocanikwacâsimisiyiwa
-
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nicanikwacâsimisak
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px2Sg:  kicanikwacâsimisak
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: ocanikwacâsimisa
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: ocanikwacâsimisiyiwa
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nicanikwacâsimisinânak
-     anikwacâs+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kicanikwacâsimisinawak
-
-     anikwacâs+N+AN+Px1Sg+Loc: nitanikwacâsimihk
-     anikwacâs+N+AN+Px2Sg+Loc: kitanikwacâsimihk
-     anikwacâs+N+AN+Px3Sg+Loc: otanikwacâsimihk
-     anikwacâs+N+AN+Px4Sg+Loc: otanikwacâsimiyihk
-     anikwacâs+N+AN+Px1Pl+Loc: nitanikwacâsiminâhk
-     anikwacâs+N+AN+Px12Pl+Loc: kitanikwacâsiminâhk
-     anikwacâs+N+AN+Px2Pl+Loc: kitanikwacâsimiwâhk
-     anikwacâs+N+AN+Px3Pl+Loc: otanikwacâsimiwâhk 
-     anikwacâs+N+AN+Px4Pl+Loc: otanikwacâsimiyihk
-
-     anikwacâs+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nicanikwacâsimisihk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kicanikwacâsimisihk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px3Sg+Loc: ocanikwacâsimisihk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px4Sg+Loc: ocanikwacâsimisiyihk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nicanikwacâsimisinâhk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kicanikwacâsimisinâhk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kicanikwacâsimisiwâhk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px3Pl+Loc: ocanikwacâsimisiwâhk
-     anikwacâs+N+AN+Der/Dim+N+AN+Px4Pl+Loc: ocanikwacâsimisiyihk
-  
   Noun - asikan - ok : # -m animate noun, sock paradigm from Okisis p. 133
      asikan+N+AN+Sg: asikan
      asikan+N+AN+Pl: asikanak
-     asikan+N+AN+Loc: [asikanihk, asikaninâhk]
+     asikan+N+AN+Loc: asikanihk
      asikan+N+AN+Obv: asikana
      asikan+N+AN+Der/Dim+N+AN+Sg: [asikanisis, asikanis]
      asikan+N+AN+Der/Dim+N+AN+Pl: [asikanisisak, asikanisak]
-     asikan+N+AN+Der/Dim+N+AN+Loc: [asikanisisihk, asikanisisinâhk, asikanisinâhk, asikanisihk]
+     asikan+N+AN+Der/Dim+N+AN+Loc: [asikanisisihk, asikanisihk]
           
      asikan+N+AN+Sg+Px1Sg: nitasikan
      asikan+N+AN+Sg+Px2Sg: kitasikan
@@ -219,87 +83,87 @@ Tests:
 
   
   Noun - askekinw - ok : # -m inanimate noun, rawhide
-     askekinw+N+IN+Sg: askekin
-     askekinw+N+IN+Sg+Px1Sg: nitaskekin
-     askekinw+N+IN+Sg+Px2Sg: kitaskekin
-     askekinw+N+IN+Sg+Px1Pl: nitaskekinonân
-     askekinw+N+IN+Sg+Px12Pl: kitaskekinonaw
-     askekinw+N+IN+Sg+Px2Pl: kitaskekinowâw
-     askekinw+N+IN+Sg+Px3Sg: otaskekin
-     askekinw+N+IN+Sg+Px3Pl: otaskekinowâw
-     askekinw+N+IN+Sg+Px4Pl: otaskekinoyiw
+     askekin+N+IN+Sg: askekin
+     askekin+N+IN+Sg+Px1Sg: nitaskekin
+     askekin+N+IN+Sg+Px2Sg: kitaskekin
+     askekin+N+IN+Sg+Px1Pl: nitaskekinonân
+     askekin+N+IN+Sg+Px12Pl: kitaskekinonaw
+     askekin+N+IN+Sg+Px2Pl: kitaskekinowâw
+     askekin+N+IN+Sg+Px3Sg: otaskekin
+     askekin+N+IN+Sg+Px3Pl: otaskekinowâw
+     askekin+N+IN+Sg+Px4Pl: otaskekinoyiw
      
-     askekinw+N+IN+Pl: askekinwa
-     askekinw+N+IN+Pl+Px1Sg: nitaskekinwa
-     askekinw+N+IN+Pl+Px2Sg: kitaskekinwa
-     askekinw+N+IN+Pl+Px1Pl: nitaskekinonâna
-     askekinw+N+IN+Pl+Px12Pl: kitaskekinonawa
-     askekinw+N+IN+Pl+Px2Pl: kitaskekinowâwa
-     askekinw+N+IN+Pl+Px3Sg: otaskekinwa
-     askekinw+N+IN+Pl+Px3Pl: otaskekinowâwa
-     askekinw+N+IN+Pl+Px4Pl: otaskekinoyiwa
+     askekin+N+IN+Pl: askekinwa
+     askekin+N+IN+Pl+Px1Sg: nitaskekinwa
+     askekin+N+IN+Pl+Px2Sg: kitaskekinwa
+     askekin+N+IN+Pl+Px1Pl: nitaskekinonâna
+     askekin+N+IN+Pl+Px12Pl: kitaskekinonawa
+     askekin+N+IN+Pl+Px2Pl: kitaskekinowâwa
+     askekin+N+IN+Pl+Px3Sg: otaskekinwa
+     askekin+N+IN+Pl+Px3Pl: otaskekinowâwa
+     askekin+N+IN+Pl+Px4Pl: otaskekinoyiwa
      
-     askekinw+N+IN+Loc: askekinohk
-     askekinw+N+IN+Px1Sg+Loc: nitaskekinohk
-     askekinw+N+IN+Px2Sg+Loc: kitaskekinohk
-     askekinw+N+IN+Px1Pl+Loc: nitaskekinonâhk
-     askekinw+N+IN+Px12Pl+Loc: kitaskekinonâhk
-     askekinw+N+IN+Px2Pl+Loc: kitaskekinowâhk
-     askekinw+N+IN+Px3Sg+Loc: otaskekinohk
-     askekinw+N+IN+Px3Pl+Loc: otaskekinowâhk
-     askekinw+N+IN+Px4Pl+Loc: otaskekinoyihk
+     askekin+N+IN+Loc: askekinohk
+     askekin+N+IN+Px1Sg+Loc: nitaskekinohk
+     askekin+N+IN+Px2Sg+Loc: kitaskekinohk
+     askekin+N+IN+Px1Pl+Loc: nitaskekinonâhk
+     askekin+N+IN+Px12Pl+Loc: kitaskekinonâhk
+     askekin+N+IN+Px2Pl+Loc: kitaskekinowâhk
+     askekin+N+IN+Px3Sg+Loc: otaskekinohk
+     askekin+N+IN+Px3Pl+Loc: otaskekinowâhk
+     askekin+N+IN+Px4Pl+Loc: otaskekinoyihk
      
-     askekinw+N+IN+Der/Dim+N+IN+Sg: askekinos
-     askekinw+N+IN+Der/Dim+N+IN+Pl: askekinosa
-     askekinw+N+IN+Der/Dim+N+IN+Loc: askekinosihk
-     askekinw+N+IN+Der/Dim+N+IN+Sg+Px1Sg: nicaskekinos
-     askekinw+N+IN+Der/Dim+N+IN+Sg+Px2Sg: kicaskekinos
-     askekinw+N+IN+Der/Dim+N+IN+Sg+Px3Sg: ocaskekinos
-     askekinw+N+IN+Der/Dim+N+IN+Sg+Px4Sg: ocaskekinosiyiw
+     askekin+N+IN+Der/Dim+N+IN+Sg: [askekinos, askekinosis]
+     askekin+N+IN+Der/Dim+N+IN+Pl: [askekinosa, askekinosisa]
+     askekin+N+IN+Der/Dim+N+IN+Loc: [askekinosihk, askekinosisihk]
+     askekin+N+IN+Der/Dim+N+IN+Sg+Px1Sg: [nicaskekinos, nicaskekinosis]
+     askekin+N+IN+Der/Dim+N+IN+Sg+Px2Sg: [kicaskekinos, kicaskekinosis]
+     askekin+N+IN+Der/Dim+N+IN+Sg+Px3Sg: [ocaskekinos, ocaskekinosis]
+     askekin+N+IN+Der/Dim+N+IN+Sg+Px4Sg: [ocaskekinosiyiw, ocaskekinosisiyiw]
 
   
   Noun - askihkw - ok : # -m animate noun, Canada goose
-     askihkw+N+AN+Sg: askihkw
-     askihkw+N+AN+Sg+Px1Sg: nitaskihkom
-     askihkw+N+AN+Sg+Px2Sg: kitaskihkom
-     askihkw+N+AN+Sg+Px3Sg+Obv: otaskihkoma
-     askihkw+N+AN+Sg+Px4Sg+Obv: otaskihkomiyiwa
-     askihkw+N+AN+Sg+Px1Pl: nitaskihkominân
-     askihkw+N+AN+Sg+Px12Pl: kitaskihkominaw
-     askihkw+N+AN+Sg+Px2Pl: kitaskihkomiwâw
-     askihkw+N+AN+Sg+Px3Pl+Obv: otaskihkomiwâwa
-     askihkw+N+AN+Sg+Px4Pl+Obv: otaskihkomiyiwa
+     askihk+N+AN+Sg: askihk
+     askihk+N+AN+Sg+Px1Sg: nitaskihkom
+     askihk+N+AN+Sg+Px2Sg: kitaskihkom
+     askihk+N+AN+Sg+Px3Sg+Obv: otaskihkoma
+     askihk+N+AN+Sg+Px4Sg+Obv: otaskihkomiyiwa
+     askihk+N+AN+Sg+Px1Pl: nitaskihkominân
+     askihk+N+AN+Sg+Px12Pl: kitaskihkominaw
+     askihk+N+AN+Sg+Px2Pl: kitaskihkomiwâw
+     askihk+N+AN+Sg+Px3Pl+Obv: otaskihkomiwâwa
+     askihk+N+AN+Sg+Px4Pl+Obv: otaskihkomiyiwa
 
-     askihkw+N+AN+Pl: askihkwak
-     askihkw+N+AN+Pl+Px1Sg: nitaskihkomak
-     askihkw+N+AN+Pl+Px2Sg: kitaskihkomak
-     askihkw+N+AN+Pl+Px3Sg+Obv: otaskihkoma
-     askihkw+N+AN+Pl+Px4Sg+Obv: otaskihkomiyiwa
-     askihkw+N+AN+Pl+Px1Pl: nitaskihkominânak
-     askihkw+N+AN+Pl+Px12Pl: kitaskihkominawak
-     askihkw+N+AN+Pl+Px2Pl: kitaskihkomiwâwak
-     askihkw+N+AN+Pl+Px3Pl+Obv: otaskihkomiwâwa
-     askihkw+N+AN+Pl+Px4Pl+Obv: otaskihkomiyiwa
+     askihk+N+AN+Pl: askihkwak
+     askihk+N+AN+Pl+Px1Sg: nitaskihkomak
+     askihk+N+AN+Pl+Px2Sg: kitaskihkomak
+     askihk+N+AN+Pl+Px3Sg+Obv: otaskihkoma
+     askihk+N+AN+Pl+Px4Sg+Obv: otaskihkomiyiwa
+     askihk+N+AN+Pl+Px1Pl: nitaskihkominânak
+     askihk+N+AN+Pl+Px12Pl: kitaskihkominawak
+     askihk+N+AN+Pl+Px2Pl: kitaskihkomiwâwak
+     askihk+N+AN+Pl+Px3Pl+Obv: otaskihkomiwâwa
+     askihk+N+AN+Pl+Px4Pl+Obv: otaskihkomiyiwa
 
-     askihkw+N+AN+Obv: askihkwa
-     askihkw+N+AN+Loc: askihkohk
-     askihkw+N+AN+Px1Sg+Loc: nitaskihkomihk
-     askihkw+N+AN+Px2Sg+Loc: kitaskihkomihk
-     askihkw+N+AN+Px3Sg+Loc: otaskihkomihk
-     askihkw+N+AN+Px4Sg+Loc: otaskihkomiyihk
-     askihkw+N+AN+Px1Pl+Loc: nitaskihkominâhk
-     askihkw+N+AN+Px12Pl+Loc: kitaskihkominâhk
-     askihkw+N+AN+Px2Pl+Loc: kitaskihkomiwâhk
-     askihkw+N+AN+Px3Pl+Loc: otaskihkomiwâhk
-     askihkw+N+AN+Px4Pl+Loc: otaskihkomiyihk
+     askihk+N+AN+Obv: askihkwa
+     askihk+N+AN+Loc: askihkohk
+     askihk+N+AN+Px1Sg+Loc: nitaskihkomihk
+     askihk+N+AN+Px2Sg+Loc: kitaskihkomihk
+     askihk+N+AN+Px3Sg+Loc: otaskihkomihk
+     askihk+N+AN+Px4Sg+Loc: otaskihkomiyihk
+     askihk+N+AN+Px1Pl+Loc: nitaskihkominâhk
+     askihk+N+AN+Px12Pl+Loc: kitaskihkominâhk
+     askihk+N+AN+Px2Pl+Loc: kitaskihkomiwâhk
+     askihk+N+AN+Px3Pl+Loc: otaskihkomiwâhk
+     askihk+N+AN+Px4Pl+Loc: otaskihkomiyihk
 
-     askihkw+N+AN+Der/Dim+N+AN+Sg: askihkos
-     askihkw+N+AN+Der/Dim+N+AN+Pl: askihkosak
-     askihkw+N+AN+Der/Dim+N+AN+Loc: [askihkosihk, askihkosinâhk]
-     askihkw+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicaskihkos
-     askihkw+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicaskihkos
-     askihkw+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: ocaskihkosa
-     askihkw+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: ocaskihkosiyiwa
+     askihk+N+AN+Der/Dim+N+AN+Sg: [askihkos, askihkosis]
+     askihk+N+AN+Der/Dim+N+AN+Pl: [askihkosak, askihkosisak]
+     askihk+N+AN+Der/Dim+N+AN+Loc: [askihkosihk, askihkosisihk]
+     askihk+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicaskihkomis
+     askihk+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicaskihkomis
+     askihk+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: ocaskihkomisa
+     askihk+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: ocaskihkomisiyiwa
 
   
   Noun - astotin - ok : # -m inanimate noun, hat
@@ -340,74 +204,6 @@ Tests:
      astotin+N+IN+Der/Dim+N+IN+Sg+Px2Sg: [kicascocinis, kicascocinisis]
      astotin+N+IN+Der/Dim+N+IN+Sg+Px3Sg: [ocascocinis, ocascocinisis]
 
-  
-  Noun - atim - ok : # -m animate noun
-     atim+N+AN+Sg: atim # asdf
-     atim+N+AN+Pl: atimwak #test
-     atim+N+AN+Obv: atimwa
-     atim+N+AN+Loc: atimohk # really rare form
-     atim+N+AN+Der/Dim+N+AN+Sg: acimosis
-     atim+N+AN+Der/Dim+N+AN+Pl: acimosisak
-     atim+N+AN+Der/Dim+N+AN+Loc: [acimosisihk, acimosisinâhk]
-     
-     atim+N+AN+Sg+Px1Sg: nitêm
-     atim+N+AN+Sg+Px2Sg: kitêm
-     atim+N+AN+Sg+Px3Sg+Obv: otêma
-     atim+N+AN+Sg+Px4Sg+Obv: otêmiyiwa
-     atim+N+AN+Sg+Px1Pl: nitêminân
-     atim+N+AN+Sg+Px12Pl: kitêminaw
-     atim+N+AN+Sg+Px2Pl: kitêmiwâw
-     atim+N+AN+Sg+Px3Pl+Obv: otêmiwâwa
-     atim+N+AN+Sg+Px4Pl+Obv: otêmiyiwa
-     
-     atim+N+AN+Pl+Px1Sg: nitêmak
-     atim+N+AN+Pl+Px2Sg: kitêmak
-     atim+N+AN+Pl+Px3Sg+Obv: otêma
-     atim+N+AN+Pl+Px4Sg+Obv: otêmiyiwa
-     atim+N+AN+Pl+Px1Pl: nitêminânak
-     atim+N+AN+Pl+Px12Pl: kitêminawak
-     atim+N+AN+Pl+Px2Pl: kitêmiwâwak
-     atim+N+AN+Pl+Px3Pl+Obv: otêmiwâwa
-     atim+N+AN+Pl+Px4Pl+Obv: otêmiyiwa
-     
-     atim+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicêmisis
-     atim+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicêmisis
-     atim+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: ocêmisisa
-     atim+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: ocêmisisiyiwa
-     atim+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nicêmisisinân
-     atim+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kicêmisisinaw
-     atim+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kicêmisisiwâw
-     atim+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: ocêmisisiwâwa
-     
-     atim+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nicêmisisak
-     atim+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kicêmisisak
-     atim+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: ocêmisisa
-     atim+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: ocêmisisiyiwa
-     atim+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nicêmisisinânak
-     atim+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kicêmisisinawak
-     atim+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kicêmisisiwâwak
-     atim+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: ocêmisisiwâwa
-     atim+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: ocêmisisiyiwa
-     
-     atim+N+AN+Px1Sg+Loc: nitêmihk
-     atim+N+AN+Px2Sg+Loc: kitêmihk
-     atim+N+AN+Px3Sg+Loc: otêmihk
-     atim+N+AN+Px4Sg+Loc: otêmiyihk
-     atim+N+AN+Px1Pl+Loc: nitêminâhk
-     atim+N+AN+Px12Pl+Loc: kitêminâhk
-     atim+N+AN+Px2Pl+Loc: kitêmiwâhk
-     atim+N+AN+Px3Pl+Loc: otêmiwâhk 
-     atim+N+AN+Px4Pl+Loc: otêmiyihk
-     
-     atim+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nicêmisisihk
-     atim+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kicêmisisihk
-     atim+N+AN+Der/Dim+N+AN+Px3Sg+Loc: ocêmisisihk
-     atim+N+AN+Der/Dim+N+AN+Px4Sg+Loc: ocêmisisiyihk
-     atim+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nicêmisisinâhk
-     atim+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kicêmisisinâhk
-     atim+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kicêmisisiwâhk
-     atim+N+AN+Der/Dim+N+AN+Px3Pl+Loc: ocêmisisiwâhk
-     atim+N+AN+Der/Dim+N+AN+Px4Pl+Loc: ocêmisisiyihk 
   Noun - ayapiy - ok : # -m animate noun, net, Wolvengrey
      ayapiy+N+AN+Sg: ayapiy
      ayapiy+N+AN+Sg+Px1Sg: nitayapiy
@@ -432,7 +228,7 @@ Tests:
      ayapiy+N+AN+Pl+Px4Pl+Obv: otayapîyiwa
      
      ayapiy+N+AN+Obv: ayapiya
-     ayapiy+N+AN+Loc: [ayapiyinâhk, ayapîhk]
+     ayapiy+N+AN+Loc: ayapîhk
      ayapiy+N+AN+Px1Sg+Loc: nitayapîhk
      ayapiy+N+AN+Px2Sg+Loc: kitayapîhk
      ayapiy+N+AN+Px3Sg+Loc: otayapîhk
@@ -448,75 +244,6 @@ Tests:
      
      ayapiy+N+AN+Der/Dim+N+AN+Sg+Px1Sg: [nicayapîs, nicayapîsis]
      ayapiy+N+AN+Der/Dim+N+AN+Sg+Px2Sg: [kicayapîs, kicayapîsis]
-
-  
-  Noun - cahcahkayo - ok : # -m animate noun, blackbird
-     cahcahkâyow+N+AN+Sg: cahcahkâyow
-     cahcahkâyow+N+AN+Pl: cahcahkâyowak
-     cahcahkâyow+N+AN+Loc: [cahcahkâyôhk, cahcahkâyowinâhk] 
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Sg: cahcahkâyôsis
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Pl: cahcahkâyôsisak
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Loc: [cahcahkâyôsisihk, cahcahkâyôsisinâhk]
-
-     cahcahkâyow+N+AN+Sg+Px1Sg: nicahcahkâyôm
-     cahcahkâyow+N+AN+Sg+Px2Sg: kicahcahkâyôm
-     cahcahkâyow+N+AN+Sg+Px3Sg+Obv: ocahcahkâyôma
-     cahcahkâyow+N+AN+Sg+Px4Sg+Obv: ocahcahkâyômiyiwa
-     cahcahkâyow+N+AN+Sg+Px1Pl: nicahcahkâyôminân
-     cahcahkâyow+N+AN+Sg+Px12Pl: kicahcahkâyôminaw
-     cahcahkâyow+N+AN+Sg+Px2Pl: kicahcahkâyômiwâw
-     cahcahkâyow+N+AN+Sg+Px3Pl+Obv: ocahcahkâyômiwâwa
-     cahcahkâyow+N+AN+Sg+Px4Pl+Obv: ocahcahkâyômiyiwa
-
-     cahcahkâyow+N+AN+Pl+Px1Sg: nicahcahkâyômak
-     cahcahkâyow+N+AN+Pl+Px2Sg: kicahcahkâyômak
-     cahcahkâyow+N+AN+Pl+Px3Sg+Obv: ocahcahkâyôma
-     cahcahkâyow+N+AN+Pl+Px4Sg+Obv: ocahcahkâyômiyiwa
-     cahcahkâyow+N+AN+Pl+Px1Pl: nicahcahkâyôminânak
-     cahcahkâyow+N+AN+Pl+Px12Pl: kicahcahkâyôminawak
-     cahcahkâyow+N+AN+Pl+Px2Pl: kicahcahkâyômiwâwak
-     cahcahkâyow+N+AN+Pl+Px3Pl+Obv: ocahcahkâyômiwâwa
-     cahcahkâyow+N+AN+Pl+Px4Pl+Obv: ocahcahkâyômiyiwa
-
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicahcahkâyômis
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicahcahkâyômis
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: ocahcahkâyômisa
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: ocahcahkâyômisiyiwa
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nicahcahkâyômisinân
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kicahcahkâyômisinaw
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kicahcahkâyômisiwâw
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: ocahcahkâyômisiwâwa
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: ocahcahkâyômisiyiwa
-
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nicahcahkâyômisak
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kicahcahkâyômisak
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: ocahcahkâyômisa
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: ocahcahkâyômisiyiwa
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nicahcahkâyômisinânak
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kicahcahkâyômisinawak
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kicahcahkâyômisiwâwak
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: ocahcahkâyômisiwâwa
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: ocahcahkâyômisiyiwa
-
-     cahcahkâyow+N+AN+Px1Sg+Loc: nicahcahkâyômihk
-     cahcahkâyow+N+AN+Px2Sg+Loc: kicahcahkâyômihk
-     cahcahkâyow+N+AN+Px3Sg+Loc: ocahcahkâyômihk
-     cahcahkâyow+N+AN+Px4Sg+Loc: ocahcahkâyômiyihk 
-     cahcahkâyow+N+AN+Px1Pl+Loc: nicahcahkâyôminâhk # kicahcahkâyominâhk ?
-     cahcahkâyow+N+AN+Px12Pl+Loc: kicahcahkâyôminâhk 
-     cahcahkâyow+N+AN+Px2Pl+Loc: kicahcahkâyômiwâhk
-     cahcahkâyow+N+AN+Px3Pl+Loc: ocahcahkâyômiwâhk 
-     cahcahkâyow+N+AN+Px4Pl+Loc: ocahcahkâyômiyihk # ocahcahkâyomiyiwihk?
-
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nicahcahkâyômisihk
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kicahcahkâyômisihk
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Px3Sg+Loc: ocahcahkâyômisihk
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Px4Sg+Loc: ocahcahkâyômisiyihk
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nicahcahkâyômisinâhk
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kicahcahkâyômisinâhk
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kicahcahkâyômisiwâhk
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Px3Pl+Loc: ocahcahkâyômisiwâhk
-     cahcahkâyow+N+AN+Der/Dim+N+AN+Px4Pl+Loc: ocahcahkâyômisiyihk
 
   
   Noun - cîmân - ok : # -m inanimate noun, canoe
@@ -592,9 +319,9 @@ Tests:
      esa+N+AN+Px3Pl+Loc: otesimiwâhk
      esa+N+AN+Px4Pl+Loc: otesimiyihk
 
-     esa+N+AN+Der/Dim+N+AN+Sg: esis
-     esa+N+AN+Der/Dim+N+AN+Pl: esisak
-     esa+N+AN+Der/Dim+N+AN+Loc: esisinâhk
+     esa+N+AN+Der/Dim+N+AN+Sg: [esis, esisis]
+     esa+N+AN+Der/Dim+N+AN+Pl: [esisak, esisisak]
+     esa+N+AN+Der/Dim+N+AN+Loc: [esisihk, esisisihk]
 
      esa+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kicesimisiwâw
      esa+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: ocesimisiwâwa
@@ -623,7 +350,7 @@ Tests:
      ihkwa+N+AN+Pl+Px3Pl+Obv: otihkomiwâwa
      ihkwa+N+AN+Pl+Px4Pl+Obv: otihkomiyiwa
 
-     ihkwa+N+AN+Obv: ihkwa
+     ihkwa+N+AN+Sg+Obv: ihkwa
      ihkwa+N+AN+Loc: ihkohk
      ihkwa+N+AN+Px1Sg+Loc: nitihkomihk
      ihkwa+N+AN+Px2Sg+Loc: kitihkomihk
@@ -637,80 +364,10 @@ Tests:
 
      ihkwa+N+AN+Der/Dim+N+AN+Sg: ihkosis
      ihkwa+N+AN+Der/Dim+N+AN+Pl: ihkosisak
-     ihkwa+N+AN+Der/Dim+N+AN+Loc: [ihkosisinâhk, ihkosisihk]
-     ihkwa+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicihkosis
-     ihkwa+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicihkosis
+     ihkwa+N+AN+Der/Dim+N+AN+Loc: ihkosisihk
+     ihkwa+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicihkomis
+     ihkwa+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicihkomis
 
-
-  
-  Noun - iskwêw - ok : # -m animate noun
-     iskwêw+N+AN+Sg: iskwêw
-     iskwêw+N+AN+Pl: iskwêwak
-     iskwêw+N+AN+Loc: iskwênâhk
-     iskwêw+N+AN+Obv: iskwêwa
-     iskwêw+N+AN+Der/Dim+N+AN+Sg: iskwês
-     iskwêw+N+AN+Der/Dim+N+AN+Pl: iskwêsak
-     iskwêw+N+AN+Der/Dim+N+AN+Loc: [iskwêsihk, iskwêsinâhk]
-     
-     iskwêw+N+AN+Sg+Px1Sg: nitiskwêm
-     iskwêw+N+AN+Sg+Px2Sg: kitiskwêm
-     iskwêw+N+AN+Sg+Px3Sg+Obv: otiskwêma
-     iskwêw+N+AN+Sg+Px4Sg+Obv: otiskwêmiyiwa
-     iskwêw+N+AN+Sg+Px1Pl: nitiskwêminân
-     iskwêw+N+AN+Sg+Px12Pl: kitiskwêminaw
-     iskwêw+N+AN+Sg+Px2Pl: kitiskwêmiwâw
-     iskwêw+N+AN+Sg+Px3Pl+Obv: otiskwêmiwâwa
-     iskwêw+N+AN+Sg+Px4Pl+Obv: otiskwêmiyiwa
-     
-     iskwêw+N+AN+Pl+Px1Sg: nitiskwêmak
-     iskwêw+N+AN+Pl+Px2Sg: kitiskwêmak
-     iskwêw+N+AN+Pl+Px3Sg+Obv: otiskwêma
-     iskwêw+N+AN+Pl+Px4Sg+Obv: otiskwêmiyiwa
-     iskwêw+N+AN+Pl+Px1Pl: nitiskwêminânak
-     iskwêw+N+AN+Pl+Px12Pl: kitiskwêminawak
-     iskwêw+N+AN+Pl+Px2Pl: kitiskwêmiwâwak
-     iskwêw+N+AN+Pl+Px3Pl+Obv: otiskwêmiwâwa
-     iskwêw+N+AN+Pl+Px4Pl+Obv: otiskwêmiyiwa
-     
-     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px1Sg: niciskwêmis
-     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kiciskwêmis
-     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: ociskwêmisa
-     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: ociskwêmisiyiwa
-     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px1Pl: niciskwêmisinân
-     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kiciskwêmisinaw
-     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kiciskwêmisiwâw
-     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: ociskwêmisiwâwa
-     iskwêw+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: ociskwêmisiyiwa
-     
-     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px1Sg: niciskwêmisak
-     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kiciskwêmisak
-     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: ociskwêmisa
-     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: ociskwêmisiyiwa
-     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px1Pl: niciskwêmisinânak
-     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kiciskwêmisinawak
-     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kiciskwêmisiwâwak
-     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: ociskwêmisiwâwa
-     iskwêw+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: ociskwêmisiyiwa
-     
-     iskwêw+N+AN+Px1Sg+Loc: nitiskwêmihk
-     iskwêw+N+AN+Px2Sg+Loc: kitiskwêmihk
-     iskwêw+N+AN+Px3Sg+Loc: otiskwêmihk
-     iskwêw+N+AN+Px4Sg+Loc: otiskwêmiyihk
-     iskwêw+N+AN+Px1Pl+Loc: nitiskwêminâhk
-     iskwêw+N+AN+Px12Pl+Loc: kitiskwêminâhk
-     iskwêw+N+AN+Px2Pl+Loc: kitiskwêmiwâhk
-     iskwêw+N+AN+Px3Pl+Loc: otiskwêmiwâhk
-     iskwêw+N+AN+Px4Pl+Loc: otiskwêmiyihk
-
-     iskwêw+N+AN+Der/Dim+N+AN+Px1Sg+Loc: niciskwêmisihk
-     iskwêw+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kiciskwêmisihk
-     iskwêw+N+AN+Der/Dim+N+AN+Px3Sg+Loc: ociskwêmisihk
-     iskwêw+N+AN+Der/Dim+N+AN+Px4Sg+Loc: ociskwêmisiyihk
-     iskwêw+N+AN+Der/Dim+N+AN+Px1Pl+Loc: niciskwêmisinâhk
-     iskwêw+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kiciskwêmisinâhk
-     iskwêw+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kiciskwêmisiwâhk
-     iskwêw+N+AN+Der/Dim+N+AN+Px3Pl+Loc: ociskwêmisiwâhk
-     iskwêw+N+AN+Der/Dim+N+AN+Px4Pl+Loc: ociskwêmisiyihk
 
   
   Noun - kihcôkiniy - ok : # -m animate noun, tomato, Wolvengrey
@@ -738,7 +395,7 @@ Tests:
      
      kihcôkiniy+N+AN+Obv: kihcôkiniya
      
-     kihcôkiniy+N+AN+Loc: [kihcôkinîhk, kihcôkiniyinâhk]
+     kihcôkiniy+N+AN+Loc: kihcôkinîhk
      kihcôkiniy+N+AN+Px1Sg+Loc: nikihcôkinîhk
      kihcôkiniy+N+AN+Px2Sg+Loc: kikihcôkinîhk
      kihcôkiniy+N+AN+Px3Sg+Loc: okihcôkinîhk
@@ -753,25 +410,11 @@ Tests:
      kihcôkiniy+N+AN+Der/Dim+N+AN+Pl: [kihcôkinîsak, kihcôkinîsisak]
 
   
-  Noun - maniway - ok : # -m inanimate noun
-     
-     maniway+N+IN+Sg+Px1Sg: naniway
-     maniway+N+IN+Sg+Px2Sg: kaniway
-     maniway+N+IN+Sg+Px3Sg: waniway
-     maniway+N+IN+Sg+Px4Sg: waniwâyiw
-     maniway+N+IN+Sg+Px1Pl: naniwânân
-     maniway+N+IN+Sg+Px12Pl: kaniwânaw
-     maniway+N+IN+Sg+Px2Pl: kaniwâwâw #?
-     maniway+N+IN+Sg+Px3Pl: waniwâwâw #?
-     maniway+N+IN+Sg+Px4Pl: waniwâyiw
-     
-
-  
   Noun - masinahikanâhtik - ok : # -m animate noun, pencil, Wolvengrey
      masinahikanâhtik+N+AN+Sg: masinahikanâhtik
      masinahikanâhtik+N+AN+Sg+Px1Sg: nimasinahikanâhtik
      masinahikanâhtik+N+AN+Sg+Px2Sg: kimasinahikanâhtik
-     masinahikanâhtik+N+AN+Sg+Px3Sg+Obv: omasinahikanâhtika
+     masinahikanâhtik+N+AN+Sg+Px3Sg+Obv: omasinahikanâhtikwa
      masinahikanâhtik+N+AN+Sg+Px4Sg+Obv: omasinahikanâhtikoyiwa
      masinahikanâhtik+N+AN+Sg+Px1Pl: nimasinahikanâhtikonân
      masinahikanâhtik+N+AN+Sg+Px12Pl: kimasinahikanâhtikonaw
@@ -780,9 +423,9 @@ Tests:
      masinahikanâhtik+N+AN+Sg+Px4Pl+Obv: omasinahikanâhtikoyiwa
      
      masinahikanâhtik+N+AN+Pl: masinahikanâhtikwak
-     masinahikanâhtik+N+AN+Pl+Px1Sg: nimasinahikanâhtikak
-     masinahikanâhtik+N+AN+Pl+Px2Sg: kimasinahikanâhtikak
-     masinahikanâhtik+N+AN+Pl+Px3Sg+Obv: omasinahikanâhtika
+     masinahikanâhtik+N+AN+Pl+Px1Sg: nimasinahikanâhtikwak
+     masinahikanâhtik+N+AN+Pl+Px2Sg: kimasinahikanâhtikwak
+     masinahikanâhtik+N+AN+Pl+Px3Sg+Obv: omasinahikanâhtikwa
      masinahikanâhtik+N+AN+Pl+Px4Sg+Obv: omasinahikanâhtikoyiwa
      masinahikanâhtik+N+AN+Pl+Px1Pl: nimasinahikanâhtikonânak
      masinahikanâhtik+N+AN+Pl+Px12Pl: kimasinahikanâhtikonawak
@@ -791,7 +434,7 @@ Tests:
      masinahikanâhtik+N+AN+Pl+Px4Pl+Obv: omasinahikanâhtikoyiwa
      
      masinahikanâhtik+N+AN+Obv: masinahikanâhtikwa
-     masinahikanâhtik+N+AN+Loc: [masinahikanâhtikohk, masinahikanâhtikinâhk]
+     masinahikanâhtik+N+AN+Loc: masinahikanâhtikohk
      masinahikanâhtik+N+AN+Px1Sg+Loc: nimasinahikanâhtikohk
      masinahikanâhtik+N+AN+Px2Sg+Loc: kimasinahikanâhtikohk
      masinahikanâhtik+N+AN+Px3Sg+Loc: omasinahikanâhtikohk
@@ -943,59 +586,13 @@ Tests:
      mîkisasâkay+N+IN+Der/Dim+N+IN+Sg+Px3Sg: [omîkisasâkâs, omîkisasâkâsis]
 
   
-  Noun - mîpit - ok : # -m inanimate noun
-     
-     mîpit+N+IN+Sg+Px1Sg: nîpit
-     mîpit+N+IN+Sg+Px2Sg: kîpit
-     mîpit+N+IN+Sg+Px3Sg: wîpit
-     mîpit+N+IN+Sg+Px4Sg: wîpitiyiw
-     mîpit+N+IN+Sg+Px1Pl: nîpitinân
-     mîpit+N+IN+Sg+Px12Pl: kîpitinaw
-     mîpit+N+IN+Sg+Px2Pl: kîpitiwâw
-     mîpit+N+IN+Sg+Px3Pl: wîpitiwâw
-     mîpit+N+IN+Sg+Px4Pl: wîpitiyiw
-
-     mîpit+N+IN+Pl+Px1Sg: nîpita
-     mîpit+N+IN+Pl+Px2Sg: kîpita
-     mîpit+N+IN+Pl+Px3Sg: wîpita
-     mîpit+N+IN+Pl+Px4Sg: wîpitiyiwa
-     mîpit+N+IN+Pl+Px1Pl: nîpitinâna
-     mîpit+N+IN+Pl+Px12Pl: kîpitinawa
-     mîpit+N+IN+Pl+Px2Pl: kîpitiwâwa
-     mîpit+N+IN+Pl+Px3Pl: wîpitiwâwa
-     mîpit+N+IN+Pl+Px4Pl: wîpitiyiwa
-
-  
-  Noun - mispiton - ok : # -m inanimate noun
-     
-     mispiton+N+IN+Sg+Px1Sg: nispiton
-     mispiton+N+IN+Sg+Px2Sg: kispiton
-     mispiton+N+IN+Sg+Px3Sg: ospiton
-     mispiton+N+IN+Sg+Px4Sg: ospitoniyiw
-     mispiton+N+IN+Sg+Px1Pl: nispitoninân
-     mispiton+N+IN+Sg+Px12Pl: kispitoninaw
-     mispiton+N+IN+Sg+Px2Pl: kispitoniwâw
-     mispiton+N+IN+Sg+Px3Pl: ospitoniwâw
-     mispiton+N+IN+Sg+Px4Pl: ospitoniyiw
-
-     mispiton+N+IN+Pl+Px1Sg: nispitona
-     mispiton+N+IN+Pl+Px2Sg: kispitona
-     mispiton+N+IN+Pl+Px3Sg: ospitona
-     mispiton+N+IN+Pl+Px4Sg: ospitoniyiwa
-     mispiton+N+IN+Pl+Px1Pl: nispitoninâna
-     mispiton+N+IN+Pl+Px12Pl: kispitoninawa
-     mispiton+N+IN+Pl+Px2Pl: kispitoniwâwa
-     mispiton+N+IN+Pl+Px3Pl: ospitoniwâwa
-     mispiton+N+IN+Pl+Px4Pl: ospitoniyiwa
-
-  
   Noun - niska - ok : # -m animate noun, Canada goose, acc. Wolvengrey
      niska+N+AN+Sg: niska
      niska+N+AN+Pl: niskak
      niska+N+AN+Loc: niskohk
      niska+N+AN+Der/Dim+N+AN+Sg: niskisis # also niskisis
      niska+N+AN+Der/Dim+N+AN+Pl: niskisisak # also niskisisak
-     niska+N+AN+Der/Dim+N+AN+Loc: [niskisisinâhk, niskisisihk]
+     niska+N+AN+Der/Dim+N+AN+Loc: niskisisihk
 
      niska+N+AN+Sg+Px1Sg: niniskim
      niska+N+AN+Sg+Px2Sg: kiniskim
@@ -1037,149 +634,6 @@ Tests:
      niska+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: oniskimisisiwâwa
      niska+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: oniskimisisiyiwa
      
-
-  
-  Noun - ôhow - ok : # -m animate noun, owl
-     ôhow+N+AN+Sg: ôhow
-     ôhow+N+AN+Pl: ôhowak 
-     ôhow+N+AN+Loc: ôhonâhk # ôhônâhk
-     ôhow+N+AN+Der/Dim+N+AN+Sg: ôhosis # ôhôsis
-     ôhow+N+AN+Der/Dim+N+AN+Pl: ôhosisak # ôhôsisak
-     ôhow+N+AN+Der/Dim+N+AN+Loc: [ôhosisinâhk, ôhosisihk]
-
-  
-  Noun - okimâw - ok : # -m animate noun, chief, poss.paradigm Okimasis p 135
-
-     okimâw+N+AN+Sg: okimâw
-     okimâw+N+AN+Pl: okimâwak
-     okimâw+N+AN+Loc: [okimâwihk, okimâwinâhk]
-     okimâw+N+AN+Obv: okimâwa
-     okimâw+N+AN+Der/Dim+N+AN+Sg: okimâsis
-     okimâw+N+AN+Der/Dim+N+AN+Pl: okimâsisak
-     okimâw+N+AN+Der/Dim+N+AN+Loc: [okimâsisihk, okimâsisinâhk]
-     
-     okimâw+N+AN+Sg+Px1Sg: nitôkimâm
-     okimâw+N+AN+Sg+Px2Sg: kitôkimâm
-     okimâw+N+AN+Sg+Px3Sg+Obv: otôkimâma
-     okimâw+N+AN+Sg+Px4Sg+Obv: otôkimâmiyiwa
-     okimâw+N+AN+Sg+Px1Pl: nitôkimâminân
-     okimâw+N+AN+Sg+Px12Pl: kitôkimâminaw
-     okimâw+N+AN+Sg+Px2Pl: kitôkimâmiwâw
-     okimâw+N+AN+Sg+Px3Pl+Obv: otôkimâmiwâwa
-     okimâw+N+AN+Sg+Px4Pl+Obv: otôkimâmiyiwa
-     
-     okimâw+N+AN+Pl+Px1Sg: nitôkimâmak
-     okimâw+N+AN+Pl+Px2Sg: kitôkimâmak
-     okimâw+N+AN+Pl+Px3Sg+Obv: otôkimâma
-     okimâw+N+AN+Pl+Px4Sg+Obv: otôkimâmiyiwa
-     okimâw+N+AN+Pl+Px1Pl: nitôkimâminânak
-     okimâw+N+AN+Pl+Px12Pl: kitôkimâminawak
-     okimâw+N+AN+Pl+Px2Pl: kitôkimâmiwâwak
-     okimâw+N+AN+Pl+Px3Pl+Obv: otôkimâmiwâwa
-     okimâw+N+AN+Pl+Px4Pl+Obv: otôkimâmiyiwa
-     
-     okimâw+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicôkimâmis
-     okimâw+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicôkimâmis
-     okimâw+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: ocôkimâmisa
-     okimâw+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: ocôkimâmisiyiwa
-     okimâw+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nicôkimâmisinân
-     okimâw+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kicôkimâmisinaw
-     okimâw+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kicôkimâmisiwâw
-     okimâw+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: ocôkimâmisiwâwa
-     okimâw+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: ocôkimâmisiyiwa
-     
-     okimâw+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nicôkimâmisak
-     okimâw+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kicôkimâmisak
-     okimâw+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: ocôkimâmisa
-     okimâw+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: ocôkimâmisiyiwa
-     okimâw+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nicôkimâmisinânak
-     okimâw+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kicôkimâmisinawak
-     okimâw+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kicôkimâmisiwâwak
-     okimâw+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: ocôkimâmisiwâwa
-     okimâw+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: ocôkimâmisiyiwa
-     
-     okimâw+N+AN+Px1Sg+Loc: nitôkimâmihk
-     okimâw+N+AN+Px2Sg+Loc: kitôkimâmihk
-     okimâw+N+AN+Px3Sg+Loc: otôkimâmihk
-     okimâw+N+AN+Px4Sg+Loc: otôkimâmiyihk
-     okimâw+N+AN+Px1Pl+Loc: nitôkimâminâhk
-     okimâw+N+AN+Px12Pl+Loc: kitôkimâminâhk
-     okimâw+N+AN+Px2Pl+Loc: kitôkimâmiwâhk
-     okimâw+N+AN+Px3Pl+Loc: otôkimâmiwâhk
-     okimâw+N+AN+Px4Pl+Loc: otôkimâmiyihk
-     
-     okimâw+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nicôkimâmisihk
-     okimâw+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kicôkimâmisihk
-     okimâw+N+AN+Der/Dim+N+AN+Px3Sg+Loc: ocôkimâmisihk
-     okimâw+N+AN+Der/Dim+N+AN+Px4Sg+Loc: ocôkimâmisiyihk
-     okimâw+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nicôkimâmisinâhk
-     okimâw+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kicôkimâmisinâhk
-     okimâw+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kicôkimâmisiwâhk
-     okimâw+N+AN+Der/Dim+N+AN+Px3Pl+Loc: ocôkimâmisiwâhk
-     okimâw+N+AN+Der/Dim+N+AN+Px4Pl+Loc: ocôkimâmisiyihk
-
-  
-  Noun - okâwîmâw - ok : # -m dep. animate noun, mother, poss.paradigm Okimasis p 140
-
-     okâwîmâw+N+AN+Sg+Px1Sg: nikâwiy
-     okâwîmâw+N+AN+Sg+Px2Sg: kikâwiy
-     okâwîmâw+N+AN+Sg+Px3Sg+Obv: okâwiya
-     okâwîmâw+N+AN+Sg+Px4Sg+Obv: okâwiyiwa
-     okâwîmâw+N+AN+Sg+Px1Pl: nikâwinân
-     okâwîmâw+N+AN+Sg+Px12Pl: kikâwinaw
-     okâwîmâw+N+AN+Sg+Px2Pl: kikâwiwâw
-     okâwîmâw+N+AN+Sg+Px3Pl+Obv: okâwiwâwa
-     okâwîmâw+N+AN+Sg+Px4Pl+Obv: okâwiyiwa
-
-     okâwîmâw+N+AN+Pl+Px1Sg: nikâwiyak
-     okâwîmâw+N+AN+Pl+Px2Sg: kikâwiyak
-     okâwîmâw+N+AN+Pl+Px3Sg+Obv: okâwiya
-     okâwîmâw+N+AN+Pl+Px4Sg+Obv: okâwiyiwa
-     okâwîmâw+N+AN+Pl+Px1Pl: nikâwinânak
-     okâwîmâw+N+AN+Pl+Px12Pl: kikâwinawak
-     okâwîmâw+N+AN+Pl+Px2Pl: kikâwiwâwak
-     okâwîmâw+N+AN+Pl+Px3Pl+Obv: okâwiwâwa
-     okâwîmâw+N+AN+Pl+Px4Pl+Obv: okâwiyiwa
-
-     okâwîmâw+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nikâwisis
-     okâwîmâw+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kikâwisis
-     okâwîmâw+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: okâwisisa
-     okâwîmâw+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: okâwisisiyiwa
-     okâwîmâw+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nikâwisisinân
-     okâwîmâw+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kikâwisisinaw
-     okâwîmâw+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kikâwisisiwâw
-     okâwîmâw+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: okâwisisiwâwa
-     okâwîmâw+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: okâwisisiyiwa
-
-     okâwîmâw+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nikâwisisak
-     okâwîmâw+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kikâwisisak
-     okâwîmâw+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: okâwisisa
-     okâwîmâw+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: okâwisisiyiwa
-     okâwîmâw+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nikâwisisinânak
-     okâwîmâw+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kikâwisisinawak
-     okâwîmâw+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kikâwisisiwâwak
-     okâwîmâw+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: okâwisisiwâwa
-     okâwîmâw+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: okâwisisiyiwa
-
-     okâwîmâw+N+AN+Px1Sg+Loc: nikâwihk
-     okâwîmâw+N+AN+Px2Sg+Loc: kikâwihk
-     okâwîmâw+N+AN+Px3Sg+Loc: okâwihk
-     okâwîmâw+N+AN+Px4Sg+Loc: okâwiyihk
-     okâwîmâw+N+AN+Px1Pl+Loc: nikâwinâhk
-     okâwîmâw+N+AN+Px12Pl+Loc: kikâwinâhk
-     okâwîmâw+N+AN+Px2Pl+Loc: kikâwiwâhk
-     okâwîmâw+N+AN+Px3Pl+Loc: okâwiwâhk
-     okâwîmâw+N+AN+Px4Pl+Loc: okâwiyihk
-
-     okâwîmâw+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nikâwisisihk
-     okâwîmâw+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kikâwisisihk
-     okâwîmâw+N+AN+Der/Dim+N+AN+Px3Sg+Loc: okâwisisihk
-     okâwîmâw+N+AN+Der/Dim+N+AN+Px4Sg+Loc: okâwisisiyihk
-     okâwîmâw+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nikâwisisinâhk
-     okâwîmâw+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kikâwisisinâhk
-     okâwîmâw+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kikâwisisiwâhk
-     okâwîmâw+N+AN+Der/Dim+N+AN+Px3Pl+Loc: okâwisisiwâhk
-     okâwîmâw+N+AN+Der/Dim+N+AN+Px4Pl+Loc: okâwisisiyihk
 
   
   Noun - ôsi - ok : # -m animate noun
@@ -1332,451 +786,154 @@ Tests:
      oskâyi+N+IN+Der/Dim+N+IN+Sg+Px4Sg: ocôskâyimisiyiw
 
   
-  Noun - otânisimâw - ok : # -m dep. animate noun, daughter, poss.paradigm Okimasis p 140
-
-     otânisimâw+N+AN+Sg+Px1Sg: nitânis
-     otânisimâw+N+AN+Sg+Px2Sg: kitânis
-     otânisimâw+N+AN+Sg+Px3Sg+Obv: otânisa
-     otânisimâw+N+AN+Sg+Px4Sg+Obv: otânisiyiwa
-     otânisimâw+N+AN+Sg+Px1Pl: nitânisinân
-     otânisimâw+N+AN+Sg+Px12Pl: kitânisinaw
-     otânisimâw+N+AN+Sg+Px2Pl: kitânisiwâw
-     otânisimâw+N+AN+Sg+Px3Pl+Obv: otânisiwâwa 
-     otânisimâw+N+AN+Sg+Px4Pl+Obv: otânisiyiwa
-
-     otânisimâw+N+AN+Pl+Px1Sg: nitânisak
-     otânisimâw+N+AN+Pl+Px2Sg: kitânisak
-     otânisimâw+N+AN+Pl+Px3Sg+Obv: otânisa
-     otânisimâw+N+AN+Pl+Px4Sg+Obv: otânisiyiwa
-     otânisimâw+N+AN+Pl+Px1Pl: nitânisinânak
-     otânisimâw+N+AN+Pl+Px12Pl: kitânisinawak
-     otânisimâw+N+AN+Pl+Px2Pl: kitânisiwâwak
-     otânisimâw+N+AN+Pl+Px3Pl+Obv: otânisiwâwa
-     otânisimâw+N+AN+Pl+Px4Pl+Obv: otânisiyiwa
-
-     otânisimâw+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nicânisisis
-     otânisimâw+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kicânisisis
-     otânisimâw+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: ocânisisisa
-     otânisimâw+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: ocânisisisiyiwa
-     otânisimâw+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nicânisisisinân
-     otânisimâw+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kicânisisisinaw
-     otânisimâw+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kicânisisisiwâw
-     otânisimâw+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: ocânisisisiwâwa
-     otânisimâw+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: ocânisisisiyiwa
-
-     otânisimâw+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nicânisisisak
-     otânisimâw+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kicânisisisak
-     otânisimâw+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: ocânisisisa
-     otânisimâw+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: ocânisisisiyiwa
-     otânisimâw+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nicânisisisinânak
-     otânisimâw+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kicânisisisinawak
-     otânisimâw+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kicânisisisiwâwak
-     otânisimâw+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: ocânisisisiwâwa
-     otânisimâw+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: ocânisisisiyiwa
-
-     otânisimâw+N+AN+Px1Sg+Loc: nitânisihk
-     otânisimâw+N+AN+Px2Sg+Loc: kitânisihk
-     otânisimâw+N+AN+Px3Sg+Loc: otânisihk
-     otânisimâw+N+AN+Px4Sg+Loc: otânisiyihk
-     otânisimâw+N+AN+Px1Pl+Loc: nitânisinâhk
-     otânisimâw+N+AN+Px12Pl+Loc: kitânisinâhk
-     otânisimâw+N+AN+Px2Pl+Loc: kitânisiwâhk
-     otânisimâw+N+AN+Px3Pl+Loc: otânisiwâhk
-     otânisimâw+N+AN+Px4Pl+Loc: otânisiyihk
-
-     otânisimâw+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nicânisisisihk
-     otânisimâw+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kicânisisisihk
-     otânisimâw+N+AN+Der/Dim+N+AN+Px3Sg+Loc: ocânisisisihk
-     otânisimâw+N+AN+Der/Dim+N+AN+Px4Sg+Loc: ocânisisisiyihk
-     otânisimâw+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nicânisisisinâhk
-     otânisimâw+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kicânisisisinâhk
-     otânisimâw+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kicânisisisiwâhk
-     otânisimâw+N+AN+Der/Dim+N+AN+Px3Pl+Loc: ocânisisisiwâhk
-     otânisimâw+N+AN+Der/Dim+N+AN+Px4Pl+Loc: ocânisisisiyihk
+  Noun - pahkêkinw - ok : # -m inanimate noun, leather
+     pahkêkin+N+IN+Sg: pahkêkin
+     pahkêkin+N+IN+Sg+Px1Sg: nipahkêkin
+     pahkêkin+N+IN+Sg+Px2Sg: kipahkêkin
+     pahkêkin+N+IN+Sg+Px1Pl: nipahkêkinonân
+     pahkêkin+N+IN+Sg+Px12Pl: kipahkêkinonaw
+     pahkêkin+N+IN+Sg+Px2Pl: kipahkêkinowâw
+     pahkêkin+N+IN+Sg+Px3Sg: opahkêkin
+     pahkêkin+N+IN+Sg+Px3Pl: opahkêkinowâw
+     pahkêkin+N+IN+Sg+Px4Pl: opahkêkinoyiw
+     
+     pahkêkin+N+IN+Pl: pahkêkinwa
+     pahkêkin+N+IN+Pl+Px1Sg: nipahkêkinwa
+     pahkêkin+N+IN+Pl+Px2Sg: kipahkêkinwa
+     pahkêkin+N+IN+Pl+Px1Pl: nipahkêkinonâna
+     pahkêkin+N+IN+Pl+Px12Pl: kipahkêkinonawa
+     pahkêkin+N+IN+Pl+Px2Pl: kipahkêkinowâwa
+     pahkêkin+N+IN+Pl+Px3Sg: opahkêkinwa
+     pahkêkin+N+IN+Pl+Px3Pl: opahkêkinowâwa
+     pahkêkin+N+IN+Pl+Px4Pl: opahkêkinoyiwa
+     
+     pahkêkin+N+IN+Loc: pahkêkinohk
+     pahkêkin+N+IN+Px1Sg+Loc: nipahkêkinohk
+     pahkêkin+N+IN+Px2Sg+Loc: kipahkêkinohk
+     pahkêkin+N+IN+Px1Pl+Loc: nipahkêkinonâhk
+     pahkêkin+N+IN+Px12Pl+Loc: kipahkêkinonâhk
+     pahkêkin+N+IN+Px2Pl+Loc: kipahkêkinowâhk
+     pahkêkin+N+IN+Px3Sg+Loc: opahkêkinohk
+     pahkêkin+N+IN+Px3Pl+Loc: opahkêkinowâhk
+     pahkêkin+N+IN+Px4Pl+Loc: opahkêkinoyihk
+     
+     pahkêkin+N+IN+Der/Dim+N+IN+Sg: [pahkêkinos, pahkêkinosis]
+     pahkêkin+N+IN+Der/Dim+N+IN+Pl: [pahkêkinosa, pahkêkinosisa]
+     pahkêkin+N+IN+Der/Dim+N+IN+Loc: [pahkêkinosihk, pahkêkinosisihk]
+     pahkêkin+N+IN+Der/Dim+N+IN+Sg+Px1Sg: [nipahkêkinos, nipahkêkinosis]
+     pahkêkin+N+IN+Der/Dim+N+IN+Sg+Px2Sg: [kipahkêkinos, kipahkêkinosis]
+     pahkêkin+N+IN+Der/Dim+N+IN+Sg+Px3Sg: [opahkêkinos, opahkêkinosis]
+     pahkêkin+N+IN+Der/Dim+N+IN+Sg+Px4Sg: [opahkêkinosiyiw, opahkêkinosisiyiw]
 
   
-  Noun - pahkekinw - ok : # -m inanimate noun, leather
-     pahkekinw+N+IN+Sg: pahkekin
-     pahkekinw+N+IN+Sg+Px1Sg: nipahkekin
-     pahkekinw+N+IN+Sg+Px2Sg: kipahkekin
-     pahkekinw+N+IN+Sg+Px1Pl: nipahkekinonân
-     pahkekinw+N+IN+Sg+Px12Pl: kipahkekinonaw
-     pahkekinw+N+IN+Sg+Px2Pl: kipahkekinowâw
-     pahkekinw+N+IN+Sg+Px3Sg: opahkekin
-     pahkekinw+N+IN+Sg+Px3Pl: opahkekinowâw
-     pahkekinw+N+IN+Sg+Px4Pl: opahkekinoyiw
+  Noun - pahkwêsikan - ok : # -m animate noun, bannock, Grammar guide p. 27
      
-     pahkekinw+N+IN+Pl: pahkekinwa
-     pahkekinw+N+IN+Pl+Px1Sg: nipahkekinwa
-     pahkekinw+N+IN+Pl+Px2Sg: kipahkekinwa
-     pahkekinw+N+IN+Pl+Px1Pl: nipahkekinonâna
-     pahkekinw+N+IN+Pl+Px12Pl: kipahkekinonawa
-     pahkekinw+N+IN+Pl+Px2Pl: kipahkekinowâwa
-     pahkekinw+N+IN+Pl+Px3Sg: opahkekinwa
-     pahkekinw+N+IN+Pl+Px3Pl: opahkekinowâwa
-     pahkekinw+N+IN+Pl+Px4Pl: opahkekinoyiwa
-     
-     pahkekinw+N+IN+Loc: pahkekinohk
-     pahkekinw+N+IN+Px1Sg+Loc: nipahkekinohk
-     pahkekinw+N+IN+Px2Sg+Loc: kipahkekinohk
-     pahkekinw+N+IN+Px1Pl+Loc: nipahkekinonâhk
-     pahkekinw+N+IN+Px12Pl+Loc: kipahkekinonâhk
-     pahkekinw+N+IN+Px2Pl+Loc: kipahkekinowâhk
-     pahkekinw+N+IN+Px3Sg+Loc: opahkekinohk
-     pahkekinw+N+IN+Px3Pl+Loc: opahkekinowâhk
-     pahkekinw+N+IN+Px4Pl+Loc: opahkekinoyihk
-     
-     pahkekinw+N+IN+Der/Dim+N+IN+Sg: pahkekinos
-     pahkekinw+N+IN+Der/Dim+N+IN+Pl: pahkekinosa
-     pahkekinw+N+IN+Der/Dim+N+IN+Loc: pahkekinosihk
-     pahkekinw+N+IN+Der/Dim+N+IN+Sg+Px1Sg: nipahkekinos
-     pahkekinw+N+IN+Der/Dim+N+IN+Sg+Px2Sg: kipahkekinos
-     pahkekinw+N+IN+Der/Dim+N+IN+Sg+Px3Sg: opahkekinos
-     pahkekinw+N+IN+Der/Dim+N+IN+Sg+Px4Sg: opahkekinosiyiw
+     pahkwêsikan+N+AN+Sg: pahkwêsikan
+     pahkwêsikan+N+AN+Pl: pahkwêsikanak
+     pahkwêsikan+N+AN+Loc: pahkwêsikanihk
+     pahkwêsikan+N+AN+Obv: pahkwêsikana
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Sg: [pahkwêsikanis, pahkwêsikanisis]
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Pl: [pahkwêsikanisak, pahkwêsikanisisak]
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Loc: [pahkwêsikanisihk, pahkwêsikanisisihk]
 
-  
-  Noun - pahkwesikan - ok : # -m animate noun, bannock, Grammar guide p. 27
-     
-     pahkwesikan+N+AN+Sg: pahkwesikan
-     pahkwesikan+N+AN+Pl: pahkwesikanak
-     pahkwesikan+N+AN+Loc: [pahkwesikanihk, pahkwesikaninâhk]
-     pahkwesikan+N+AN+Obv: pahkwesikana
-     pahkwesikan+N+AN+Der/Dim+N+AN+Sg: pahkwesikanis
-     pahkwesikan+N+AN+Der/Dim+N+AN+Pl: pahkwesikanisak
-     pahkwesikan+N+AN+Der/Dim+N+AN+Loc: [pahkwesikanisihk, pahkwesikanisinâhk]
+     pahkwêsikan+N+AN+Sg+Px1Sg: nipahkwêsikanim
+     pahkwêsikan+N+AN+Sg+Px2Sg: kipahkwêsikanim
+     pahkwêsikan+N+AN+Sg+Px3Sg+Obv: opahkwêsikanima
+     pahkwêsikan+N+AN+Sg+Px4Sg+Obv: opahkwêsikanimiyiwa
+     pahkwêsikan+N+AN+Sg+Px1Pl: nipahkwêsikaniminân
+     pahkwêsikan+N+AN+Sg+Px12Pl: kipahkwêsikaniminaw
+     pahkwêsikan+N+AN+Sg+Px2Pl: kipahkwêsikanimiwâw
+     pahkwêsikan+N+AN+Sg+Px3Pl+Obv: opahkwêsikanimiwâwa
+     pahkwêsikan+N+AN+Sg+Px4Pl+Obv: opahkwêsikanimiyiwa
 
-     pahkwesikan+N+AN+Sg+Px1Sg: nipahkwesikanim
-     pahkwesikan+N+AN+Sg+Px2Sg: kipahkwesikanim
-     pahkwesikan+N+AN+Sg+Px3Sg+Obv: opahkwesikanima
-     pahkwesikan+N+AN+Sg+Px4Sg+Obv: opahkwesikanimiyiwa
-     pahkwesikan+N+AN+Sg+Px1Pl: nipahkwesikaniminân
-     pahkwesikan+N+AN+Sg+Px12Pl: kipahkwesikaniminaw
-     pahkwesikan+N+AN+Sg+Px2Pl: kipahkwesikanimiwâw
-     pahkwesikan+N+AN+Sg+Px3Pl+Obv: opahkwesikanimiwâwa
-     pahkwesikan+N+AN+Sg+Px4Pl+Obv: opahkwesikanimiyiwa
+     pahkwêsikan+N+AN+Pl+Px1Sg: nipahkwêsikanimak
+     pahkwêsikan+N+AN+Pl+Px2Sg: kipahkwêsikanimak
+     pahkwêsikan+N+AN+Pl+Px3Sg+Obv: opahkwêsikanima
+     pahkwêsikan+N+AN+Pl+Px4Sg+Obv: opahkwêsikanimiyiwa
+     pahkwêsikan+N+AN+Pl+Px1Pl: nipahkwêsikaniminânak
+     pahkwêsikan+N+AN+Pl+Px12Pl: kipahkwêsikaniminawak
+     pahkwêsikan+N+AN+Pl+Px2Pl: kipahkwêsikanimiwâwak
+     pahkwêsikan+N+AN+Pl+Px3Pl+Obv: opahkwêsikanimiwâwa
+     pahkwêsikan+N+AN+Pl+Px4Pl+Obv: opahkwêsikanimiyiwa
 
-     pahkwesikan+N+AN+Pl+Px1Sg: nipahkwesikanimak
-     pahkwesikan+N+AN+Pl+Px2Sg: kipahkwesikanimak
-     pahkwesikan+N+AN+Pl+Px3Sg+Obv: opahkwesikanima
-     pahkwesikan+N+AN+Pl+Px4Sg+Obv: opahkwesikanimiyiwa
-     pahkwesikan+N+AN+Pl+Px1Pl: nipahkwesikaniminânak
-     pahkwesikan+N+AN+Pl+Px12Pl: kipahkwesikaniminawak
-     pahkwesikan+N+AN+Pl+Px2Pl: kipahkwesikanimiwâwak
-     pahkwesikan+N+AN+Pl+Px3Pl+Obv: opahkwesikanimiwâwa
-     pahkwesikan+N+AN+Pl+Px4Pl+Obv: opahkwesikanimiyiwa
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nipahkwêsikanimis
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kipahkwêsikanimis
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: opahkwêsikanimisa
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: opahkwêsikanimisiyiwa
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nipahkwêsikanimisinân
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kipahkwêsikanimisinaw
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kipahkwêsikanimisiwâw
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: opahkwêsikanimisiwâwa
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: opahkwêsikanimisiyiwa
 
-     pahkwesikan+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nipahkwesikanimis
-     pahkwesikan+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kipahkwesikanimis
-     pahkwesikan+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: opahkwesikanimisa
-     pahkwesikan+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: opahkwesikanimisiyiwa
-     pahkwesikan+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nipahkwesikanimisinân
-     pahkwesikan+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kipahkwesikanimisinaw
-     pahkwesikan+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kipahkwesikanimisiwâw
-     pahkwesikan+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: opahkwesikanimisiwâwa
-     pahkwesikan+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: opahkwesikanimisiyiwa
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nipahkwêsikanimisak
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kipahkwêsikanimisak
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: opahkwêsikanimisa
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: opahkwêsikanimisiyiwa
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nipahkwêsikanimisinânak
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kipahkwêsikanimisinawak
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kipahkwêsikanimisiwâwak
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: opahkwêsikanimisiwâwa
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: opahkwêsikanimisiyiwa
 
-     pahkwesikan+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nipahkwesikanimisak
-     pahkwesikan+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kipahkwesikanimisak
-     pahkwesikan+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: opahkwesikanimisa
-     pahkwesikan+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: opahkwesikanimisiyiwa
-     pahkwesikan+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nipahkwesikanimisinânak
-     pahkwesikan+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kipahkwesikanimisinawak
-     pahkwesikan+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kipahkwesikanimisiwâwak
-     pahkwesikan+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: opahkwesikanimisiwâwa
-     pahkwesikan+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: opahkwesikanimisiyiwa
+     pahkwêsikan+N+AN+Px1Sg+Loc: nipahkwêsikanimihk
+     pahkwêsikan+N+AN+Px2Sg+Loc: kipahkwêsikanimihk
+     pahkwêsikan+N+AN+Px3Sg+Loc: opahkwêsikanimihk
+     pahkwêsikan+N+AN+Px4Sg+Loc: opahkwêsikanimiyihk
+     pahkwêsikan+N+AN+Px1Pl+Loc: nipahkwêsikaniminâhk
+     pahkwêsikan+N+AN+Px12Pl+Loc: kipahkwêsikaniminâhk
+     pahkwêsikan+N+AN+Px2Pl+Loc: kipahkwêsikanimiwâhk
+     pahkwêsikan+N+AN+Px3Pl+Loc: opahkwêsikanimiwâhk
+     pahkwêsikan+N+AN+Px4Pl+Loc: opahkwêsikanimiyihk
 
-     pahkwesikan+N+AN+Px1Sg+Loc: nipahkwesikanimihk
-     pahkwesikan+N+AN+Px2Sg+Loc: kipahkwesikanimihk
-     pahkwesikan+N+AN+Px3Sg+Loc: opahkwesikanimihk
-     pahkwesikan+N+AN+Px4Sg+Loc: opahkwesikanimiyihk
-     pahkwesikan+N+AN+Px1Pl+Loc: nipahkwesikaniminâhk
-     pahkwesikan+N+AN+Px12Pl+Loc: kipahkwesikaniminâhk
-     pahkwesikan+N+AN+Px2Pl+Loc: kipahkwesikanimiwâhk
-     pahkwesikan+N+AN+Px3Pl+Loc: opahkwesikanimiwâhk
-     pahkwesikan+N+AN+Px4Pl+Loc: opahkwesikanimiyihk
-
-     pahkwesikan+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nipahkwesikanimisihk
-     pahkwesikan+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kipahkwesikanimisihk
-     pahkwesikan+N+AN+Der/Dim+N+AN+Px3Sg+Loc: opahkwesikanimisihk
-     pahkwesikan+N+AN+Der/Dim+N+AN+Px4Sg+Loc: opahkwesikanimisiyihk
-     pahkwesikan+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nipahkwesikanimisinâhk
-     pahkwesikan+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kipahkwesikanimisinâhk
-     pahkwesikan+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kipahkwesikanimisiwâhk
-     pahkwesikan+N+AN+Der/Dim+N+AN+Px3Pl+Loc: opahkwesikanimisiwâhk
-     pahkwesikan+N+AN+Der/Dim+N+AN+Px4Pl+Loc: opahkwesikanimisiyihk
-
-  
-  Noun - sihkihp - ok : # -m animate noun, blackbird
-     sihkihp+N+AN+Sg: sihkihp
-     sihkihp+N+AN+Pl: sihkihpwak
-     sihkihp+N+AN+Loc: [sihkihpihk, sihkihpinâhk]
-     sihkihp+N+AN+Der/Dim+N+AN+Sg: sihkihpis
-     sihkihp+N+AN+Der/Dim+N+AN+Pl: sihkihpisak
-     sihkihp+N+AN+Der/Dim+N+AN+Loc: [sihkihpisihk, sihkihpisinâhk]
-
-     sihkihp+N+AN+Sg+Px1Sg: nisihkihpim
-     sihkihp+N+AN+Sg+Px2Sg: kisihkihpim
-     sihkihp+N+AN+Sg+Px3Sg+Obv: osihkihpima
-     sihkihp+N+AN+Sg+Px4Sg+Obv: osihkihpimiyiwa
-     sihkihp+N+AN+Sg+Px1Pl: nisihkihpiminân
-     sihkihp+N+AN+Sg+Px12Pl: kisihkihpiminaw
-     sihkihp+N+AN+Sg+Px2Pl: kisihkihpimiwâw
-     sihkihp+N+AN+Sg+Px3Pl+Obv: osihkihpimiwâwa
-     sihkihp+N+AN+Sg+Px4Pl+Obv: osihkihpimiyiwa
-
-     sihkihp+N+AN+Pl+Px1Sg: nisihkihpimak
-     sihkihp+N+AN+Pl+Px2Sg: kisihkihpimak
-     sihkihp+N+AN+Pl+Px3Sg+Obv: osihkihpima
-     sihkihp+N+AN+Pl+Px4Sg+Obv: osihkihpimiyiwa
-     sihkihp+N+AN+Pl+Px1Pl: nisihkihpiminânak
-     sihkihp+N+AN+Pl+Px12Pl: kisihkihpiminawak
-     sihkihp+N+AN+Pl+Px2Pl: kisihkihpimiwâwak
-     sihkihp+N+AN+Pl+Px3Pl+Obv: osihkihpimiwâwa
-     sihkihp+N+AN+Pl+Px4Pl+Obv: osihkihpimiyiwa
-
-     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nisihkihpimis
-     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kisihkihpimis
-     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: osihkihpimisa
-     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: osihkihpimisiyiwa
-     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nisihkihpimisinân
-     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kisihkihpimisinaw
-     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kisihkihpimisiwâw
-     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: osihkihpimisiwâwa
-     sihkihp+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: osihkihpimisiyiwa
-
-     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nisihkihpimisak
-     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kisihkihpimisak
-     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: osihkihpimisa
-     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: osihkihpimisiyiwa
-     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nisihkihpimisinânak
-     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kisihkihpimisinawak
-     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kisihkihpimisiwâwak
-     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: osihkihpimisiwâwa
-     sihkihp+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: osihkihpimisiyiwa
-
-     sihkihp+N+AN+Px1Sg+Loc: nisihkihpimihk
-     sihkihp+N+AN+Px2Sg+Loc: kisihkihpimihk
-     sihkihp+N+AN+Px3Sg+Loc: osihkihpimihk
-     sihkihp+N+AN+Px4Sg+Loc: osihkihpimiyihk
-     sihkihp+N+AN+Px1Pl+Loc: nisihkihpiminâhk
-     sihkihp+N+AN+Px12Pl+Loc: kisihkihpiminâhk
-     sihkihp+N+AN+Px2Pl+Loc: kisihkihpimiwâhk
-     sihkihp+N+AN+Px3Pl+Loc: osihkihpimiwâhk
-     sihkihp+N+AN+Px4Pl+Loc: osihkihpimiyihk
-
-     sihkihp+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nisihkihpimisihk
-     sihkihp+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kisihkihpimisihk
-     sihkihp+N+AN+Der/Dim+N+AN+Px3Sg+Loc: osihkihpimisihk
-     sihkihp+N+AN+Der/Dim+N+AN+Px4Sg+Loc: osihkihpimisiyihk
-     sihkihp+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nisihkihpimisinâhk
-     sihkihp+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kisihkihpimisinâhk
-     sihkihp+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kisihkihpimisiwâhk
-     sihkihp+N+AN+Der/Dim+N+AN+Px3Pl+Loc: osihkihpimisiwâhk
-     sihkihp+N+AN+Der/Dim+N+AN+Px4Pl+Loc: osihkihpimisiyihk
-
-  
-  Noun - sikâk - ok : # -k final animate noun 'goose'
-     sikâk+N+AN+Sg: sikâk
-     sikâk+N+AN+Pl: sikâkwak
-     sikâk+N+AN+Loc: [sikâkohk, sikâkinâhk]
-     sikâk+N+AN+Der/Dim+N+AN+Sg: sikâkos
-     sikâk+N+AN+Der/Dim+N+AN+Pl: sikâkosak
-     sikâk+N+AN+Der/Dim+N+AN+Loc: [sikâkosihk, sikâkosinâhk]
-
-     sikâk+N+AN+Sg+Px1Sg: nisikâkom
-     sikâk+N+AN+Sg+Px2Sg: kisikâkom
-     sikâk+N+AN+Sg+Px3Sg+Obv: osikâkoma
-     sikâk+N+AN+Sg+Px4Sg+Obv: osikâkomiyiwa
-     sikâk+N+AN+Sg+Px1Pl: nisikâkominân
-     sikâk+N+AN+Sg+Px12Pl: kisikâkominaw
-     sikâk+N+AN+Sg+Px2Pl: kisikâkomiwâw
-     sikâk+N+AN+Sg+Px3Pl+Obv: osikâkomiwâwa
-     sikâk+N+AN+Sg+Px4Pl+Obv: osikâkomiyiwa
-
-     sikâk+N+AN+Pl+Px1Sg: nisikâkomak
-     sikâk+N+AN+Pl+Px2Sg: kisikâkomak
-     sikâk+N+AN+Pl+Px3Sg+Obv: osikâkoma
-     sikâk+N+AN+Pl+Px4Sg+Obv: osikâkomiyiwa
-     sikâk+N+AN+Pl+Px1Pl: nisikâkominânak
-     sikâk+N+AN+Pl+Px12Pl: kisikâkominawak
-     sikâk+N+AN+Pl+Px2Pl: kisikâkomiwâwak
-     sikâk+N+AN+Pl+Px3Pl+Obv: osikâkomiwâwa
-     sikâk+N+AN+Pl+Px4Pl+Obv: osikâkomiyiwa
-
-     sikâk+N+AN+Der/Dim+N+AN+Sg+Px1Sg: nisikâkomis
-     sikâk+N+AN+Der/Dim+N+AN+Sg+Px2Sg: kisikâkomis
-     sikâk+N+AN+Der/Dim+N+AN+Sg+Px3Sg+Obv: osikâkomisa
-     sikâk+N+AN+Der/Dim+N+AN+Sg+Px4Sg+Obv: osikâkomisiyiwa
-     sikâk+N+AN+Der/Dim+N+AN+Sg+Px1Pl: nisikâkomisinân
-     sikâk+N+AN+Der/Dim+N+AN+Sg+Px12Pl: kisikâkomisinaw
-     sikâk+N+AN+Der/Dim+N+AN+Sg+Px2Pl: kisikâkomisiwâw
-     sikâk+N+AN+Der/Dim+N+AN+Sg+Px3Pl+Obv: osikâkomisiwâwa
-     sikâk+N+AN+Der/Dim+N+AN+Sg+Px4Pl+Obv: osikâkomisiyiwa
- 
-     sikâk+N+AN+Der/Dim+N+AN+Pl+Px1Sg: nisikâkomisak
-     sikâk+N+AN+Der/Dim+N+AN+Pl+Px2Sg: kisikâkomisak
-     sikâk+N+AN+Der/Dim+N+AN+Pl+Px3Sg+Obv: osikâkomisa
-     sikâk+N+AN+Der/Dim+N+AN+Pl+Px4Sg+Obv: osikâkomisiyiwa
-     sikâk+N+AN+Der/Dim+N+AN+Pl+Px1Pl: nisikâkomisinânak
-     sikâk+N+AN+Der/Dim+N+AN+Pl+Px12Pl: kisikâkomisinawak
-     sikâk+N+AN+Der/Dim+N+AN+Pl+Px2Pl: kisikâkomisiwâwak
-     sikâk+N+AN+Der/Dim+N+AN+Pl+Px3Pl+Obv: osikâkomisiwâwa
-     sikâk+N+AN+Der/Dim+N+AN+Pl+Px4Pl+Obv: osikâkomisiyiwa
-     
-     sikâk+N+AN+Px1Sg+Loc: nisikâkomihk
-     sikâk+N+AN+Px2Sg+Loc: kisikâkomihk
-     sikâk+N+AN+Px3Sg+Loc: osikâkomihk
-     sikâk+N+AN+Px4Sg+Loc: osikâkomiyihk 
-     sikâk+N+AN+Px1Pl+Loc: nisikâkominâhk
-     sikâk+N+AN+Px12Pl+Loc: kisikâkominâhk
-     sikâk+N+AN+Px2Pl+Loc: kisikâkomiwâhk
-     sikâk+N+AN+Px3Pl+Loc: osikâkomiwâhk 
-     sikâk+N+AN+Px4Pl+Loc: osikâkomiyihk
-
-     sikâk+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nisikâkomisihk
-     sikâk+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kisikâkomisihk
-     sikâk+N+AN+Der/Dim+N+AN+Px3Sg+Loc: osikâkomisihk
-     sikâk+N+AN+Der/Dim+N+AN+Px4Sg+Loc: osikâkomisiyihk
-     sikâk+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nisikâkomisinâhk
-     sikâk+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kisikâkomisinâhk
-     sikâk+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kisikâkomisiwâhk
-     sikâk+N+AN+Der/Dim+N+AN+Px3Pl+Loc: osikâkomisiwâhk
-     sikâk+N+AN+Der/Dim+N+AN+Px4Pl+Loc: osikâkomisiyihk
-
-  
-  Noun - tohtôsâpoy - ok : # -m inanimate noun, milk, with poss. element
-     tohtôsâpoy+N+IN+Sg: tohtôsâpoy
-     tohtôsâpoy+N+IN+Pl: tohtôsâpoya
-     tohtôsâpoy+N+IN+Loc: tohtôsâpôhk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg: cohcôsâpôsis
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl: cohcôsâpôsisak
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Loc: cohcôsâpôsisihk
-     
-     tohtôsâpoy+N+IN+Sg+Px1Sg: nitôhtôsâpôm
-     tohtôsâpoy+N+IN+Sg+Px2Sg: kitôhtôsâpôm
-     tohtôsâpoy+N+IN+Sg+Px3Sg: otôhtôsâpôm
-     tohtôsâpoy+N+IN+Sg+Px4Sg: otôhtôsâpômiyiw
-     tohtôsâpoy+N+IN+Sg+Px1Pl: nitôhtôsâpôminân
-     tohtôsâpoy+N+IN+Sg+Px12Pl: kitôhtôsâpôminaw
-     tohtôsâpoy+N+IN+Sg+Px2Pl: kitôhtôsâpômiwâw
-     tohtôsâpoy+N+IN+Sg+Px3Pl: otôhtôsâpômiwâw
-     tohtôsâpoy+N+IN+Sg+Px4Pl: otôhtôsâpômiyiw
-     
-     tohtôsâpoy+N+IN+Pl+Px1Sg: nitôhtôsâpôma
-     tohtôsâpoy+N+IN+Pl+Px2Sg: kitôhtôsâpôma
-     tohtôsâpoy+N+IN+Pl+Px3Sg: otôhtôsâpôma
-     tohtôsâpoy+N+IN+Pl+Px4Sg: otôhtôsâpômiyiwa
-     tohtôsâpoy+N+IN+Pl+Px1Pl: nitôhtôsâpôminâna
-     tohtôsâpoy+N+IN+Pl+Px12Pl: kitôhtôsâpôminawa
-     tohtôsâpoy+N+IN+Pl+Px2Pl: kitôhtôsâpômiwâwa
-     tohtôsâpoy+N+IN+Pl+Px3Pl: otôhtôsâpômiwâwa
-     tohtôsâpoy+N+IN+Pl+Px4Pl: otôhtôsâpômiyiwa
-     
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px1Sg: nicohcôsâpômis
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px2Sg: kicohcôsâpômis
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px3Sg: ocohcôsâpômis
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px4Sg: ocohcôsâpômisiyiw
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px1Pl: nicohcôsâpômisinân
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px12Pl: kicohcôsâpômisinaw
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px2Pl: kicohcôsâpômisiwâw
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px3Pl: ocohcôsâpômisiwâw
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Sg+Px4Pl: ocohcôsâpômisiyiw
-     
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px1Sg: nicohcôsâpômisa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px2Sg: kicohcôsâpômisa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px3Sg: ocohcôsâpômisa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px4Sg: ocohcôsâpômisiyiwa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px1Pl: nicohcôsâpômisinâna
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px12Pl: kicohcôsâpômisinawa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px2Pl: kicohcôsâpômisiwâwa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px3Pl: ocohcôsâpômisiwâwa
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Pl+Px4Pl: ocohcôsâpômisiyiwa
-     
-     tohtôsâpoy+N+IN+Px1Sg+Loc: nitôhtôsâpômihk
-     tohtôsâpoy+N+IN+Px2Sg+Loc: kitôhtôsâpômihk
-     tohtôsâpoy+N+IN+Px3Sg+Loc: otôhtôsâpômihk
-     tohtôsâpoy+N+IN+Px4Sg+Loc: otôhtôsâpômiyihk
-     tohtôsâpoy+N+IN+Px1Pl+Loc: nitôhtôsâpôminâhk
-     tohtôsâpoy+N+IN+Px12Pl+Loc: kitôhtôsâpôminâhk
-     tohtôsâpoy+N+IN+Px2Pl+Loc: kitôhtôsâpômiwâhk
-     tohtôsâpoy+N+IN+Px3Pl+Loc: otôhtôsâpômiwâhk
-     tohtôsâpoy+N+IN+Px4Pl+Loc: otôhtôsâpômiyihk
-
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px1Sg+Loc: nicohcôsâpômisihk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px2Sg+Loc: kicohcôsâpômisihk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px3Sg+Loc: ocohcôsâpômisihk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px4Sg+Loc: ocohcôsâpômisiyihk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px1Pl+Loc: nicohcôsâpômisinâhk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px12Pl+Loc: kicohcôsâpômisinâhk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px2Pl+Loc: kicohcôsâpômisiwâhk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px3Pl+Loc: ocohcôsâpômisiwâhk
-     tohtôsâpoy+N+IN+Der/Dim+N+IN+Px4Pl+Loc: ocohcôsâpômisiyihk
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Px1Sg+Loc: nipahkwêsikanimisihk
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Px2Sg+Loc: kipahkwêsikanimisihk
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Px3Sg+Loc: opahkwêsikanimisihk
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Px4Sg+Loc: opahkwêsikanimisiyihk
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Px1Pl+Loc: nipahkwêsikanimisinâhk
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Px12Pl+Loc: kipahkwêsikanimisinâhk
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Px2Pl+Loc: kipahkwêsikanimisiwâhk
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Px3Pl+Loc: opahkwêsikanimisiwâhk
+     pahkwêsikan+N+AN+Der/Dim+N+AN+Px4Pl+Loc: opahkwêsikanimisiyihk
 
   
   Noun - wâhkw - ok : # -m animate noun, roe
-     wâhkw+N+AN+Sg: wâhkw
-     wâhkw+N+AN+Sg+Px1Sg: niwâhkom
-     wâhkw+N+AN+Sg+Px2Sg: kiwâhkom
-     wâhkw+N+AN+Sg+Px3Sg+Obv: owâhkoma
-     wâhkw+N+AN+Sg+Px4Sg+Obv: owâhkomiyiwa
-     wâhkw+N+AN+Sg+Px1Pl: niwâhkominân
-     wâhkw+N+AN+Sg+Px12Pl: kiwâhkominaw
-     wâhkw+N+AN+Sg+Px2Pl: kiwâhkomiwâw
-     wâhkw+N+AN+Sg+Px3Pl+Obv: owâhkomiwâwa
-     wâhkw+N+AN+Sg+Px4Pl+Obv: owâhkomiyiwa
+     wâhkwa+N+AN+Sg: wâhkwa
+     wâhkwa+N+AN+Sg+Px1Sg: niwâhkom
+     wâhkwa+N+AN+Sg+Px2Sg: kiwâhkom
+     wâhkwa+N+AN+Sg+Px3Sg+Obv: owâhkoma
+     wâhkwa+N+AN+Sg+Px4Sg+Obv: owâhkomiyiwa
+     wâhkwa+N+AN+Sg+Px1Pl: niwâhkominân
+     wâhkwa+N+AN+Sg+Px12Pl: kiwâhkominaw
+     wâhkwa+N+AN+Sg+Px2Pl: kiwâhkomiwâw
+     wâhkwa+N+AN+Sg+Px3Pl+Obv: owâhkomiwâwa
+     wâhkwa+N+AN+Sg+Px4Pl+Obv: owâhkomiyiwa
 
-     wâhkw+N+AN+Pl: wâhkwak
-     wâhkw+N+AN+Pl+Px1Sg: niwâhkomak
-     wâhkw+N+AN+Pl+Px2Sg: kiwâhkomak
-     wâhkw+N+AN+Pl+Px3Sg+Obv: owâhkoma
-     wâhkw+N+AN+Pl+Px4Sg+Obv: owâhkomiyiwa
-     wâhkw+N+AN+Pl+Px1Pl: niwâhkominânak
-     wâhkw+N+AN+Pl+Px12Pl: kiwâhkominawak
-     wâhkw+N+AN+Pl+Px2Pl: kiwâhkomiwâwak
-     wâhkw+N+AN+Pl+Px3Pl+Obv: owâhkomiwâwa
-     wâhkw+N+AN+Pl+Px4Pl+Obv: owâhkomiyiwa
+     wâhkwa+N+AN+Pl: wâhkwak
+     wâhkwa+N+AN+Pl+Px1Sg: niwâhkomak
+     wâhkwa+N+AN+Pl+Px2Sg: kiwâhkomak
+     wâhkwa+N+AN+Pl+Px3Sg+Obv: owâhkoma
+     wâhkwa+N+AN+Pl+Px4Sg+Obv: owâhkomiyiwa
+     wâhkwa+N+AN+Pl+Px1Pl: niwâhkominânak
+     wâhkwa+N+AN+Pl+Px12Pl: kiwâhkominawak
+     wâhkwa+N+AN+Pl+Px2Pl: kiwâhkomiwâwak
+     wâhkwa+N+AN+Pl+Px3Pl+Obv: owâhkomiwâwa
+     wâhkwa+N+AN+Pl+Px4Pl+Obv: owâhkomiyiwa
 
-     wâhkw+N+AN+Obv: wâhkwa
-     wâhkw+N+AN+Loc: wâhkohk
-     wâhkw+N+AN+Px1Sg+Loc: niwâhkomihk
-     wâhkw+N+AN+Px2Sg+Loc: kiwâhkomihk
-     wâhkw+N+AN+Px3Sg+Loc: owâhkomihk
-     wâhkw+N+AN+Px4Sg+Loc: owâhkomiyihk
-     wâhkw+N+AN+Px1Pl+Loc: niwâhkominâhk
-     wâhkw+N+AN+Px12Pl+Loc: kiwâhkominâhk
-     wâhkw+N+AN+Px2Pl+Loc: kiwâhkomiwâhk
-     wâhkw+N+AN+Px3Pl+Loc: owâhkomiwâhk
-     wâhkw+N+AN+Px4Pl+Loc: owâhkomiyihk
+     wâhkwa+N+AN+Sg+Obv: wâhkwa
+     wâhkwa+N+AN+Loc: wâhkohk
+     wâhkwa+N+AN+Px1Sg+Loc: niwâhkomihk
+     wâhkwa+N+AN+Px2Sg+Loc: kiwâhkomihk
+     wâhkwa+N+AN+Px3Sg+Loc: owâhkomihk
+     wâhkwa+N+AN+Px4Sg+Loc: owâhkomiyihk
+     wâhkwa+N+AN+Px1Pl+Loc: niwâhkominâhk
+     wâhkwa+N+AN+Px12Pl+Loc: kiwâhkominâhk
+     wâhkwa+N+AN+Px2Pl+Loc: kiwâhkomiwâhk
+     wâhkwa+N+AN+Px3Pl+Loc: owâhkomiwâhk
+     wâhkwa+N+AN+Px4Pl+Loc: owâhkomiyihk
 
-     wâhkw+N+AN+Der/Dim+N+AN+Sg: wâhkos
-     wâhkw+N+AN+Der/Dim+N+AN+Pl: wâhkosak
-
-  
-  Noun - wâposw - ok : # -m animate noun, rabbit paradim Okim. p 135 
-     
-     wâposw+N+AN+Sg: wâposw
-     wâposw+N+AN+Pl: wâposwak # not in Okimasis
-     wâposw+N+AN+Loc: wâposihk # not in Okimasis
-     
-     wâposw+N+AN+Sg+Px1Sg: niwâposom
-     wâposw+N+AN+Sg+Px2Sg: kiwâposom
-     wâposw+N+AN+Sg+Px3Sg+Obv: owâposoma
-     wâposw+N+AN+Sg+Px4Sg+Obv: owâposomiyiwa
-     wâposw+N+AN+Sg+Px1Pl: niwâposominân
-     wâposw+N+AN+Sg+Px12Pl: kiwâposominaw
-     wâposw+N+AN+Sg+Px2Pl: kiwâposomiwâw
-     wâposw+N+AN+Sg+Px3Pl+Obv: owâposomiwâwa
-     wâposw+N+AN+Sg+Px4Pl+Obv: owâposomiyiwa
-
-     wâposw+N+AN+Pl+Px1Sg: niwâposomak
-     wâposw+N+AN+Pl+Px2Sg: kiwâposomak
-     wâposw+N+AN+Pl+Px3Sg+Obv: owâposoma
-     wâposw+N+AN+Pl+Px4Sg+Obv: owâposomiyiwa
-     wâposw+N+AN+Pl+Px1Pl: niwâposominânak
-     wâposw+N+AN+Pl+Px12Pl: kiwâposominawak
-     wâposw+N+AN+Pl+Px2Pl: kiwâposomiwâwak
-     wâposw+N+AN+Pl+Px3Pl+Obv: owâposomiwâwa
-     wâposw+N+AN+Pl+Px4Pl+Obv: owâposomiyiwa
+     wâhkwa+N+AN+Der/Dim+N+AN+Sg: wâhkosis
+     wâhkwa+N+AN+Der/Dim+N+AN+Pl: wâhkosisak
 
   
   Noun - wâwi - ok : # -m inanimate noun with poss element, egg
@@ -1846,72 +1003,3 @@ Tests:
      wâwi+N+IN+Der/Dim+N+IN+Px2Pl+Loc: kiwâwimisiwâhk
      wâwi+N+IN+Der/Dim+N+IN+Px3Pl+Loc: owâwimisiwâhk
      wâwi+N+IN+Der/Dim+N+IN+Px4Pl+Loc: owâwimisiyihk
-
-  
-  Noun - wayasit - ok : # -m animate noun, hoof
-     wayasit+N+IN+Sg: wayasit
-     wayasit+N+IN+Pl: wayasita
-     wayasit+N+IN+Loc: wayasitihk
-     wayasit+N+IN+Der/Dim+N+IN+Sg: wayasicis
-     wayasit+N+IN+Der/Dim+N+IN+Pl: wayasicisa
-     wayasit+N+IN+Der/Dim+N+IN+Loc: wayasicisihk
-
-     wayasit+N+IN+Sg+Px1Sg: niwayasit
-     wayasit+N+IN+Sg+Px2Sg: kiwayasit
-     wayasit+N+IN+Sg+Px3Sg: owayasit
-     wayasit+N+IN+Sg+Px4Sg: owayasitiyiw
-     wayasit+N+IN+Sg+Px1Pl: niwayasitinân
-     wayasit+N+IN+Sg+Px12Pl: kiwayasitinaw
-     wayasit+N+IN+Sg+Px2Pl: kiwayasitiwâw
-     wayasit+N+IN+Sg+Px3Pl: owayasitiwâw
-     wayasit+N+IN+Sg+Px4Pl: owayasitiyiw
-
-     wayasit+N+IN+Pl+Px1Sg: niwayasita
-     wayasit+N+IN+Pl+Px2Sg: kiwayasita
-     wayasit+N+IN+Pl+Px3Sg: owayasita
-     wayasit+N+IN+Pl+Px4Sg: owayasitiyiwa
-     wayasit+N+IN+Pl+Px1Pl: niwayasitinâna
-     wayasit+N+IN+Pl+Px12Pl: kiwayasitinawa
-     wayasit+N+IN+Pl+Px2Pl: kiwayasitiwâwa
-     wayasit+N+IN+Pl+Px3Pl: owayasitiwâwa
-     wayasit+N+IN+Pl+Px4Pl: owayasitiyiwa
-
-     wayasit+N+IN+Der/Dim+N+IN+Sg+Px1Sg: niwayasicis
-     wayasit+N+IN+Der/Dim+N+IN+Sg+Px2Sg: kiwayasicis
-     wayasit+N+IN+Der/Dim+N+IN+Sg+Px3Sg: owayasicis
-     wayasit+N+IN+Der/Dim+N+IN+Sg+Px4Sg: owayasicisiyiw
-     wayasit+N+IN+Der/Dim+N+IN+Sg+Px1Pl: niwayasicisinân
-     wayasit+N+IN+Der/Dim+N+IN+Sg+Px12Pl: kiwayasicisinaw
-     wayasit+N+IN+Der/Dim+N+IN+Sg+Px2Pl: kiwayasicisiwâw
-     wayasit+N+IN+Der/Dim+N+IN+Sg+Px3Pl: owayasicisiwâw
-     wayasit+N+IN+Der/Dim+N+IN+Sg+Px4Pl: owayasicisiyiw
-
-     wayasit+N+IN+Der/Dim+N+IN+Pl+Px1Sg: niwayasicisa
-     wayasit+N+IN+Der/Dim+N+IN+Pl+Px2Sg: kiwayasicisa
-     wayasit+N+IN+Der/Dim+N+IN+Pl+Px3Sg: owayasicisa
-     wayasit+N+IN+Der/Dim+N+IN+Pl+Px4Sg: owayasicisiyiwa
-     wayasit+N+IN+Der/Dim+N+IN+Pl+Px1Pl: niwayasicisinâna
-     wayasit+N+IN+Der/Dim+N+IN+Pl+Px12Pl: kiwayasicisinawa
-     wayasit+N+IN+Der/Dim+N+IN+Pl+Px2Pl: kiwayasicisiwâwa
-     wayasit+N+IN+Der/Dim+N+IN+Pl+Px3Pl: owayasicisiwâwa
-     wayasit+N+IN+Der/Dim+N+IN+Pl+Px4Pl: owayasicisiyiwa
-
-     wayasit+N+IN+Px1Sg+Loc: niwayasitihk
-     wayasit+N+IN+Px2Sg+Loc: kiwayasitihk
-     wayasit+N+IN+Px3Sg+Loc: owayasitihk
-     wayasit+N+IN+Px4Sg+Loc: owayasitiyihk
-     wayasit+N+IN+Px1Pl+Loc: niwayasitinâhk
-     wayasit+N+IN+Px12Pl+Loc: kiwayasitinâhk
-     wayasit+N+IN+Px2Pl+Loc: kiwayasitiwâhk
-     wayasit+N+IN+Px3Pl+Loc: owayasitiwâhk 
-     wayasit+N+IN+Px4Pl+Loc: owayasitiyihk
-
-     wayasit+N+IN+Der/Dim+N+IN+Px1Sg+Loc: niwayasicisihk
-     wayasit+N+IN+Der/Dim+N+IN+Px2Sg+Loc: kiwayasicisihk
-     wayasit+N+IN+Der/Dim+N+IN+Px3Sg+Loc: owayasicisihk
-     wayasit+N+IN+Der/Dim+N+IN+Px4Sg+Loc: owayasicisiyihk
-     wayasit+N+IN+Der/Dim+N+IN+Px1Pl+Loc: niwayasicisinâhk
-     wayasit+N+IN+Der/Dim+N+IN+Px12Pl+Loc: kiwayasicisinâhk
-     wayasit+N+IN+Der/Dim+N+IN+Px2Pl+Loc: kiwayasicisiwâhk
-     wayasit+N+IN+Der/Dim+N+IN+Px3Pl+Loc: owayasicisiwâhk
-     wayasit+N+IN+Der/Dim+N+IN+Px4Pl+Loc: owayasicisiyihk
