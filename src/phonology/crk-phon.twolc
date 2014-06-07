@@ -43,25 +43,26 @@ Definitions
 
 Rules
 
+
+
+"t2:t between prefix and vowel"
+!! __@RULENAME@__ , joiner for nouns with initial vowel. If consonant, t2:0, defined in the Alphabet
+t2:t  <=> _ %>:0 Vow ;
+
 "t:c in diminutives" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
 t:c <=>  _ :*  %>:0 Dim .#. ; ! cehcapiwinisis
 
-
-"t2:t between prefix and vowel"
-!! __@RULENAME@__ 
-t2:t  <=> _ %>:0 Vow ;
-
 "Diminutives - t2 changes to c" 
-!! !! __@RULENAME@__
+!! !! __@RULENAME@__ , for the joiner. There are exeptions, but for they we have to make rules, or mark them with a dummy
 t2:c <=>  _ %>:0 Vow Dim .#. ; 
 
 "i:o alternations" 
-!! __@RULENAME@__  
+!! __@RULENAME@__  for suffix initial vowel, stem final -Cw
 i:o <=> Cns w: %>:0 ( %^POS:0 ) ( %>:0 ) _  ; !  
 
-"Suffix vowel deletion in vowel final stems" 
-!! __@RULENAME@__ : niska, wâwi+a wâwi+ihk wâwi+is, oskâyi+a
+"Vowel final stems: vowel deletion when suffix has initial a or i" 
+!! __@RULENAME@__ , when the suffix  niska, wâwi+a wâwi+ihk wâwi+is, oskâyi+a
 Vx:0 <=> Cns _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i: ] ;
          y: _   %>:0 [ a | i: ]   ;
 	where Vx in ( a e o â ê î ô i ) ;  ! esa:esihk, esa:esak, esa:esis
@@ -69,37 +70,37 @@ Vx:0 <=> Cns _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i: ] ;
 
 
 "w:0 alternations" 
-!! __@RULENAME@__  
+!! __@RULENAME@__  in -Cw stems
 w:0 <=> \Pos Cns _ %>:0 ( %^POS:0 ) ( %>:0 )  i:  ; !  askihkw:askihkos nitihkom
         \Pos Cns _ ( %>:0 ) ( %^POS:0 )  .#. ;
 
 
 
-"i:ii- alternations"
+"i:ii- alternations in stem"
 !! __@RULENAME@__ , Okimasis p. 13 pikiw : pikîs
 i:î <=> Cns _ [ w: | y: ] %>:0  i: ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ;
 	    Cns _ [ w: | y: ] %>:0 %^POS:0 ( %>:0 )  i: ;
 
-"o:oo- alternations"
-!! __@RULENAME@__ , Okimasis p. 135 
+"o:oo- alternations in stem"
+!! __@RULENAME@__ , initially in stem, and for stem vowel when final -oy/ow
 !! okimâw:nitôkimâm, nitohtôsâpom tohtôsâpoy tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
 o:ô <=> t2: %>:0 _  [ k | s ] :* i: m  ; ! okimâw:nitôkimâm, oskâyi ! careful: only in front of k and s first
  		 %>:0 t _  h :* i: m  ; ! nitohtôsâpom tohtôsâpoy
  		\Pos _ [ w: | y: ] %>:0 i: ( s ) ( m ) [ %^DIM:0 | %^LC:0 | %^POS:0 ] ; ! tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
 
 
-"a:aa alternations" 
-!! __@RULENAME@__  
+"a:aa alternations in stem" 
+!! __@RULENAME@__  for stem vowel when final -ay
 a:â <=>  _ y: %>:0  :* i: [ n: | w: | y: | s: | %^LC:0 ]  ;  ! 
 
 
 "y:0 alternations" 
-!! __@RULENAME@__  
+!! __@RULENAME@__  for stem vowel when final -Vy
 y:0 <=> \Pos [ i: | o: | a: ]  _ %>:0   :*  i: [ n: | w: | y: | s: | %^LC:0 ]  ; 
 !        [ i: | o: ]  _ ( %>:0 )  ( %^POS:0 )  i:  %>:0 %^LC:0 h: ; 
 
 
-"i:0 after w/y "
+"i:0 in suffix for stem final -Vw/Vy "
 !! __@RULENAME@__ (first) : Okimasis 2004: 26, Rule 2, 8: Vow + (w/y) + ihk 
 !! cahcahkâyow+ihk, tohtôsâpoy+ihk, cahcahkâyow+is, cohcôsâpoy+is, o+pikiw+iyiwa	 maniway+i
 i:0 <=>  \PosDim [ o: | i: ]  [ w: | y: ] %>:0  _ %^LC:0 ;   ! cahcahkâyow+ihk, tohtôsâpoy+ihk
