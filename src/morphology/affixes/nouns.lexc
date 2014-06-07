@@ -41,7 +41,7 @@ LEXICON ANimDECLw !!= * @CODE@ for the animate declension, poss.-im-, dim. -is
 < "+N":a "+AN":0 "+Sg":0 "@U.noun.abs@" > SG_  ; ! -a
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" > OBVIATIVE  ;
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" > PLak  ;
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" > LOC  ;
+< "+N":0 "+AN":0 "@U.noun.abs@" > LOC  ;
              +N+AN+Sg:%>im          ANSUFF_SG  ;
              +N+AN+Pl:%>im          ANSUFF_PL  ;
                 +N+AN:%>im          ANSUFF_LOC ;
