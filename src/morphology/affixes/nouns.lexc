@@ -5,64 +5,6 @@
 
 !! !!The declinations for Animates
 
-LEXICON ANniska !!= * @CODE@ for the irregular niska and sihta N+AN
- < "+N":a "+AN":0 "+Sg":0 "@U.noun.abs@" > SG_       ; !
- < "+N":0 "+AN":0         "@U.noun.abs@" > OBVIATIVE ; !
- < "+N":a "+AN":k "+Pl":0 "@U.noun.abs@" > #         ; ! why not niskwak ??
- < "+N":0 "+AN":0         "@U.noun.abs@" > LOC       ; !
-!< "+N":i "+AN":n         "@U.noun.abs@" > LOCahk    ; !
-
-             +N+AN+Sg:%>im                 ANSUFF_SG      ; !om?
-             +N+AN+Pl:%>im                 ANSUFF_PL      ;!om?
-        +N+AN+Der/Dim:is%>is%^DIM%>        ANABSDECL      ;
-+N+AN+Der/Dim+N+AN+Sg:im%>is%^DIMis        ANSUFF_SG      ;
-+N+AN+Der/Dim+N+AN+Pl:im%>is%^DIMis        ANSUFF_PL      ;
-
-
-LEXICON ANimDECL !!= * @CODE@ for the animate declension, poss.-im-, dim. -is
-                                     ANABSDECL  ;
-             +N+AN+Sg:%>i2m          ANSUFF_SG  ;
-             +N+AN+Pl:%>i2m          ANSUFF_PL  ;
-                +N+AN:%>i2m          ANSUFF_LOC ;
-!       +N+AN+Der/Dim:%>is%^DIM%>    ANDIMim    ; !poss.-im- after dim.suffix
-!       +N+AN+Der/Dim:%>is%^DIMis%>  ANDIMim    ; !poss.-im- after dim.suffix
-        +N+AN+Der/Dim:%>is%^DIM%>    ANABSDECL  ; !
-   +N+AN+Der/Dim+N+AN:%>i2m%^DIMis%> ANSUFF_LOC ; !
-+N+AN+Der/Dim+N+AN+Sg:%>i2m%^DIMis%> ANSUFF_SG  ; !
-+N+AN+Der/Dim+N+AN+Pl:%>i2m%^DIMis%> ANSUFF_PL  ; !
-
-LEXICON ANimDECLisis !!= * @CODE@ for the animate declension, poss.-im-, dim.-isis
-                                     ANABSDECL  ;
-             +N+AN+Sg:%>i2m          ANSUFF_SG  ;
-             +N+AN+Pl:%>i2m          ANSUFF_PL  ;
-                +N+AN:%>i2m          ANSUFF_LOC ;
-!       +N+AN+Der/Dim:%>is%^DIM%>    ANDIMim    ; !poss.-im- after dim.suffix
-!       +N+AN+Der/Dim:%>is%^DIMis%>  ANDIMim    ; !poss.-im- after dim.suffix
-        +N+AN+Der/Dim:%>is%^DIMis%>  ANABSDECL  ;
-   +N+AN+Der/Dim+N+AN:%>i2m%^DIMis%> ANSUFF_LOC ;
-+N+AN+Der/Dim+N+AN+Sg:%>i2m%^DIMis%> ANSUFF_SG  ;
-+N+AN+Der/Dim+N+AN+Pl:%>i2m%^DIMis%> ANSUFF_PL  ;
-
-!! *LEXICON ANDIMim for diminutives with poss.-im- after the dim.suffix, not in use
-!+N+AN:%>im ANSUFF_LOC ;
-! ANABSDECL ;
-!+N+AN+Sg:%>im ANSUFF_SG ;
-!+N+AN+Pl:%>im ANSUFF_PL ;
-
-
-!! *LEXICON ANDECLisis for the animate declension, -isis diminutive, not in use as the moment
-!ANABSDECL ;
-!+N+AN+Sg:%> ANSUFF_SG ;
-!+N+AN+Pl:%> ANSUFF_PL ;
-!+N+AN:%> ANSUFF_LOC ;
-!+N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
-
-LEXICON ANDECLis !!= * @CODE@ for the animate declension, -is diminutive
-ANABSDECL ;
-+N+AN+Sg:%> ANSUFF_SG ;
-+N+AN+Pl:%> ANSUFF_PL ;
-+N+AN:%> ANSUFF_LOC ;
-+N+AN+Der/Dim:%>is%^DIM%> ANDIM ;
 
 LEXICON ANDECL !!= * @CODE@ for the animate declension, both -isis and -is diminutives
 ANABSDECL ;
@@ -72,16 +14,43 @@ ANABSDECL ;
 +N+AN+Der/Dim:%>is%^DIM%> ANDIM ;
 +N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
 
-LEXICON AN-NOPOSSw !!= * @CODE@ for the animate absolute declension and diminutive, ôhow
-        +N+AN+Der/Dim:%>s%^DIMis%>         ANABSDECL ;
-< "+N":w "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_       ; !
-< "+N":w "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
-< "+N":w "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak      ; !
-< "+N":n "+AN":0         "@U.noun.abs@" >  LOCahk    ; !
+
+LEXICON ANimDECL !!= * @CODE@ for the animate declension, poss.-im-, dim. -is
+                                     ANABSDECL  ;
+             +N+AN+Sg:%>im          ANSUFF_SG  ;
+             +N+AN+Pl:%>im          ANSUFF_PL  ;
+                +N+AN:%>im          ANSUFF_LOC ;
+        +N+AN+Der/Dim:%>is%^DIM%>    ANABSDECL  ; !
+        +N+AN+Der/Dim:%>is%^DIMis%>    ANABSDECL  ; !ihkosis
+   +N+AN+Der/Dim+N+AN:%>im%^DIMis%> ANSUFF_LOC ; !
++N+AN+Der/Dim+N+AN+Sg:%>im%^DIMis%> ANSUFF_SG  ; !
++N+AN+Der/Dim+N+AN+Pl:%>im%^DIMis%> ANSUFF_PL  ; !
+
+LEXICON ANimDECLis !!= * @CODE@ for the animate declension, poss.-im-, dim. -is
+                                     ANABSDECL  ;
+             +N+AN+Sg:%>im          ANSUFF_SG  ;
+             +N+AN+Pl:%>im          ANSUFF_PL  ;
+                +N+AN:%>im          ANSUFF_LOC ;
+        +N+AN+Der/Dim:%>is%^DIMis%>    ANABSDECL  ; !ihkosis
+   +N+AN+Der/Dim+N+AN:%>im%^DIMisis%> ANSUFF_LOC ; !
++N+AN+Der/Dim+N+AN+Sg:%>im%^DIMisis%> ANSUFF_SG  ; !
++N+AN+Der/Dim+N+AN+Pl:%>im%^DIMisis%> ANSUFF_PL  ; !
 
 
-LEXICON ANDIMDERIVATION !!= * @CODE@ for hardcoded noun:diminutive
-+N+AN+Der/Dim: ANDIM ; 
+LEXICON ANimDECLw !!= * @CODE@ for the animate declension, poss.-im-, dim. -is
+< "+N":a "+AN":0 "+Sg":0 "@U.noun.abs@" > SG_  ; ! -a
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" > OBVIATIVE  ;
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" > PLak  ;
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" > LOC  ;
+             +N+AN+Sg:%>im          ANSUFF_SG  ;
+             +N+AN+Pl:%>im          ANSUFF_PL  ;
+                +N+AN:%>im          ANSUFF_LOC ;
+!        +N+AN+Der/Dim:%>is%^DIM%>    ANABSDECL  ; !
+        +N+AN+Der/Dim:%>is%^DIMis%>    ANABSDECL  ; !ihkosis
+   +N+AN+Der/Dim+N+AN:%>im%^DIMis%> ANSUFF_LOC ; !
++N+AN+Der/Dim+N+AN+Sg:%>im%^DIMis%> ANSUFF_SG  ; !
++N+AN+Der/Dim+N+AN+Pl:%>im%^DIMis%> ANSUFF_PL  ; !
+
 
 LEXICON ANDIM !!= * @CODE@ both for lexicalised and derivated diminutives
    +N+AN: ANSUFF_LOC ;
@@ -89,10 +58,9 @@ LEXICON ANDIM !!= * @CODE@ both for lexicalised and derivated diminutives
 +N+AN+Sg: ANSUFF_SG  ;
 +N+AN+Pl: ANSUFF_PL  ;
 
-
 LEXICON ANABSDECL !!= * @CODE@ for the animate absolute declension
 < "+N":0 "+AN":0 "@U.noun.abs@" >  NON_LOCahk ; !
-< "+N":i "+AN":n "@U.noun.abs@" >  LOCahk ; !
+!< "+N":i "+AN":n "@U.noun.abs@" >  LOCahk ; !
 
 LEXICON NON_LOCahk !!= * @CODE@ for the animate absolute except LOC on ahk
  +Sg: SG_       ;
@@ -100,169 +68,21 @@ LEXICON NON_LOCahk !!= * @CODE@ for the animate absolute except LOC on ahk
  +Pl: PLak      ;
       LOC       ;
 
-!! *LEXICON ANDIMDECL Declension for animate diminutives, adding +Dim-tag to the string. Not in use now.
-!< "+N":0 "+AN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
-!< "+N":0 "+AN":0 "+Pl":0 "+Dim":0 "@U.noun.abs@" >  PLak ; !
-!< "+N":0 "+AN":0 "+Dim":0 "@U.noun.abs@" >  LOC ; !
-!+N+AN+Sg+Dim:%> ANSUFF_SG ;
-!+N+AN+Pl+Dim:%> ANSUFF_PL ;
-!+N+AN+Dim:%> ANSUFF_LOC ;
-
-
-
-LEXICON ANKININFL !!= * @CODE@ The lexicon gives generic forms to kinship terms and then redirect to ANIRRINFL
-< "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > SG_       ; ! generic form
-< "+N":i "+AN":m "+Pl":â 0:w "@U.noun.3ipl@" > PLak      ; ! generic form
-                                               ANIRRINFL ;
-
-LEXICON ANKININFLni !!= * @CODE@ Lexicon for kinship terms to which I haven't found documented generic form. Baseform = PxSg1, and then redirect to ANIRRINFL
-< "+N":0 "+AN":0 "+Sg":%^POS "@U.noun.1sg@" > SG_       ; !
-                                              ANIRRINFL ;
-
-
-LEXICON ANKINiyINFL  !!= * @CODE@ Special treatment for kinship nouns ending with -iy
-< "+N":î "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > SG_ ; !generic form
-< "+N":î "+AN":m "+Pl":â 0:w "@U.noun.3ipl@" > PLak ; !generic form
-+N+AN+Sg: ANiySUFF_SG ;
-+N+AN+Pl: ANiySUFF_PL ;
-+N+AN+Der/Dim:is%^DIMis%> ANDIMIRR ;  
-+N+AN: ANSUFF_LOC ;  
-
-
-LEXICON ANKININFL_MONOG !!= * @CODE@ Lexicon with reduces possessive paradigm: only one wife/husband
-< "+N":i "+AN":m "+Sg":â                             0:w "@U.noun.3ipl@" > #         ; !generic form
-< "+N":0 "+AN":0 "+Sg":0  "+Px1Sg":%^POS                 "@U.noun.1sg@"  > SG_       ; !
-< "+N":0 "+AN":0 "+Sg":0  "+Px2Sg":%^POS                 "@U.noun.2sg@"  > SG_       ; !
-< "+N":0 "+AN":0 "+Sg":0  "+Px3Sg":%^POS                 "@U.noun.3sg@"  > OBVIATIVE ; !
-< "+N":0 "+AN":0 "+Sg":0  "+Px4Sg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > OBVIATIVE ; !
-< "+N":0 "+AN":0 "+Pl":0  "+Px1Pl":%^POS 0:i 0:n 0:â 0:n "@U.noun.1pl@"  > PLak      ; ! exclusive Pl
-< "+N":0 "+AN":0 "+Pl":0 "+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" > PLak      ; ! inclusive Pl
-< "+N":0 "+AN":0 "+Pl":0  "+Px2Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.2pl@"  > PLak      ; !
-< "+N":0 "+AN":0 "+Pl":0  "+Px3Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.3pl@"  > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
-< "+N":0 "+AN":0 "+Pl":0  "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
-
-LEXICON ANDECLatim	!!= * @CODE@ for atim and mistatim.
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  #         ; !
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLwak     ; !
-< "+N":0 "+AN":0         "@U.noun.abs@" >  ohk_LOC ; ! ohk
-< "+N":0 "+AN":0         "@U.noun.abs@" >  ANwa_OBV  ; ! -wa
-        +N+AN+Der/Dim:%>os%^DIMis%>        ANABSDECL ;
-
-
-LEXICON ANPOSSatim !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
-!< "+N":0 "+AN":0 "@U.noun.abs@" > SG_ ; !Baseform for dep nouns
-+N+AN+Sg: ANSUFF_SG ;
-+N+AN+Pl: ANSUFF_PL ;
-+N+AN+Der/Dim:%>is%^DIMis%> ANDIMIRR ;
-+N+AN:%> ANSUFF_LOC ;
-
-
-LEXICON ANIRRINFL !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
-!< "+N":0 "+AN":0 "@U.noun.abs@" > SG_ ; !Baseform for dep nouns
-ANABSDECL ;
-+N+AN+Sg: ANSUFF_SG ;
-+N+AN+Pl: ANSUFF_PL ;
-+N+AN+Der/Dim:%>is%^DIMis%> ANDIMIRR ;
-+N+AN:%> ANSUFF_LOC ;
-
-LEXICON ANkwaDECL !!= * @CODE@ takes -om as extra suffix in possessed form
-< "+N":w "+AN":a "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+N":w "+AN":a "+Pl":0 "@U.noun.abs@" >  PLak ; 
-< "+N":w "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
-< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
-+N+AN+Sg:om ANSUFF_SG ;
-+N+AN+Pl:om ANSUFF_PL ;
-+N+AN:om ANSUFF_LOC ;
-+N+AN+Der/Dim:%>os%^DIMis%> ANDIM ;
-
-
-LEXICON ANkwDECL !!= * @CODE@ takes -om as extra suffix in possessed form
-< "+N":w "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+N":w "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; 
-< "+N":w "+AN":0         "@U.noun.abs@" >  OBVIATIVE ; !
-< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC ; !
-+N+AN+Sg:om ANSUFF_SG ;
-+N+AN+Pl:om ANSUFF_PL ;
-+N+AN:om ANSUFF_LOC ;
-+N+AN+Der/Dim:%>os%^DIM%> ANDIM ;
-
-
-
-LEXICON ANDIMIRR !!= * @CODE@ Possessive suffixes to diminutives
-+N+AN+Sg: ANSUFF_SG ; !
-+N+AN+Pl: ANSUFF_PL ; !
-+N+AN: ANSUFF_LOC ;
-
-
 !! !!The declinations for Inanimates
+
+LEXICON INimDECLw-ONESYLL-SG !!= * @CODE@ for the inanimate declension, poss.-im-, dim. -is
+< "+N":o "+IN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; ! Adds -o
+< "+N":w "+IN":0 "@U.noun.abs@" >  LOC ; !
++N+IN+Sg:w%>im INSUFF_SG ;
++N+IN:w%>im INSUFF_LOC ;
++N+IN+Der/Dim:w%> INimDIM-SG ;
 
 LEXICON INimDECL !!= * @CODE@ for the inanimate declension, poss.-im-, dim. -is
 INABSDECL ;
-+N+IN+Sg:%>i2m INSUFF_SG ;
-+N+IN+Pl:%>i2m INSUFF_PL ;
-+N+IN:%>i2m INSUFF_LOC ;
++N+IN+Sg:%>im INSUFF_SG ;
++N+IN+Pl:%>im INSUFF_PL ;
++N+IN:%>im INSUFF_LOC ;
 +N+IN+Der/Dim:%> INimDIM ;
-
-LEXICON INimDECL_SG !!= * @CODE@ for inanimate declension of mihkw/mihko
-< "+N":o "+IN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
-!< "+N":0 "+IN":0 "@U.noun.abs@" >  LOCahk ; !
-+N+IN+Sg:%>i2m INSUFF_SG ;
-+N+IN:%>i2m INSUFF_LOC ;
-+N+IN+Der/Dim:%> INimDIM ;
-
-
-LEXICON INimDECLisis !!= * @CODE@ for the inanimate declension, poss.-im-, dim. -isis
-INABSDECL ;
-+N+IN+Sg:%>i2m INSUFF_SG ;
-+N+IN+Pl:%>i2m INSUFF_PL ;
-+N+IN:%>i2m INSUFF_LOC ;
-+N+IN+Der/Dim:%> INimDIMisis ;
-
-
-LEXICON INimDIMisis !!= * @CODE@ the diminutives with poss.-im-, dim. -isis
-< "+N":i "+IN":s 0:%^DIM 0:i 0:s "@U.noun.abs@" >  LOC ; !
-+N+IN:i2m%^DIMis%> INSUFF_LOC ;
-< "+N":i "+IN":s "+Sg":%^DIM 0:i 0:s "@U.noun.abs@" >  SG_ ; !
-< "+N":i "+IN":s "+Pl":%^DIM 0:i 0:s "@U.noun.abs@" >  PLak ; !
-+N+IN+Sg:i2m%^DIM%>is INSUFF_SG ;
-+N+IN+Pl:i2m%^DIM%>is INSUFF_PL ;
-
-
-LEXICON INimDIM !!= * @CODE@ the diminutives with poss.-im-, dim. -is
-< "+N":i "+IN":s 0:%^DIM "@U.noun.abs@" >  LOC ; !
-+N+IN:i2m%^DIMis%> INSUFF_LOC ;
-< "+N":i "+IN":s "+Sg":%^DIM "@U.noun.abs@" >  SG_ ; !
-< "+N":i "+IN":s "+Pl":%^DIM "@U.noun.abs@" >  PLak ; !
-+N+IN+Sg:i2m%^DIM%>is INSUFF_SG ;
-+N+IN+Pl:i2m%^DIM%>is INSUFF_PL ;
-
-LEXICON INimDECLy !!= * @CODE@ for the animate declension, poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
- :y INABSDECL ;
-+N+IN+Sg:%>i2m INSUFF_SG ;
-+N+IN+Pl:%>i2m INSUFF_PL ;
-+N+IN:%>i2m INSUFF_LOC ;
-+N+IN+Der/Dim:%> INimDIMy ;
-
-LEXICON INimDIMy !!= * @CODE@ the diminutives with poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
-< "+N":i2 "+IN":s 0:%^DIM 0:i 0:s "@U.noun.abs@" >  LOC ; !
-+N+IN:i2m%^DIMis%> INSUFF_LOC ;
-< "+N":i2 "+IN":s 0:%^DIM 0:i "+Sg":s "@U.noun.abs@" >  SG_ ; !
-< "+N":i2 "+IN":s 0:%^DIM 0:i "+Pl":s "@U.noun.abs@" >  PLak ; !
-+N+IN+Sg:i2m%^DIM%>is INSUFF_SG ;
-+N+IN+Pl:i2m%^DIM%>is INSUFF_PL ;
-
-
-LEXICON INwDECL !!= * @CODE@ for ex. askekinw  
-< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+N":w "+IN":0 "+Pl":0 "@U.noun.abs@" >  PLa ; !
-< "+N":0 "+IN":0 "@U.noun.abs@" >  ohk_LOC ; !
-+N+IN+Sg: INSUFFoSG ;
-+N+IN+Pl: INSUFFoPL ;
-+N+IN: INSUFFohk_LOC ;
-+N+IN+Der/Dim:%>os%^DIM%> INDIM ;
-
-
 
 
 LEXICON INDECL !!= * @CODE@ for the inanimate declension, diminutive: -is- and -isis-
@@ -273,14 +93,7 @@ INABSDECL ;
 +N+IN+Der/Dim:%>is%^DIMis%> INDIM ;
 +N+IN+Der/Dim:%>is%^DIM%> INDIM ;
 
-LEXICON INDECLisis !!= * @CODE@ for the inanimate declension, diminutive: -isis-
-INABSDECL ;
-+N+IN+Sg:%> INSUFF_SG ;
-+N+IN+Pl:%> INSUFF_PL ;
-+N+IN:%> INSUFF_LOC ;
-+N+IN+Der/Dim:%>is%^DIMis%> INDIM ;
-
-LEXICON INDECLis !!= * @CODE@ for the inanimate declension, diminutive: -is-
+LEXICON INDECLis !!= * @CODE@ for the inanimate declension, diminutive: -is- and -isis-
 INABSDECL ;
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
@@ -296,17 +109,6 @@ LEXICON INDECLosi !!= * @CODE@ for the inanimate declension of ôsi, an irregula
 +N+IN:t%> INSUFF_LOC ;
 +N+IN+Der/Dim:t%>is%^DIMis%> INDIM ; 
 
-!LEXICON INDIMosi
-!INABSDECL ;
-!+N+IN: INSUFF_LOC ;
-!+N+IN+Sg: INSUFF_SG ;
-!+N+IN+Pl: INSUFF_PL ;
-
-
-
-LEXICON INDIMDERIVATION !!= * @CODE@ for hardcoded noun:diminutive
-+N+IN+Der/Dim:  INDIM ;
-
 
 LEXICON INDIM !!= * @CODE@ for the inanimate diminutives
 INABSDECL ;
@@ -320,37 +122,28 @@ LEXICON INABSDECL !!= * @CODE@ for inanimate absolute declension
 < "+N":0 "+IN":0 "@U.noun.abs@" >  LOC ; !
 !< "+N":0 "+IN":0 "@U.noun.abs@" >  LOCahk ; !
 
+LEXICON INimDIM !!= * @CODE@ the diminutives with poss.-im-, dim. -is
+< "+N":i "+IN":s 0:%^DIM "@U.noun.abs@" >  LOC ; !
++N+IN:im%^DIMis%> INSUFF_LOC ;
+< "+N":i "+IN":s "+Sg":%^DIM "@U.noun.abs@" >  SG_ ; !
+< "+N":i "+IN":s "+Pl":%^DIM "@U.noun.abs@" >  PLak ; !
++N+IN+Sg:im%^DIM%>is INSUFF_SG ;
++N+IN+Pl:im%^DIM%>is INSUFF_PL ;
+
+LEXICON INimDIM-SG !!= * @CODE@ the diminutives with poss.-im-, dim. -is
+< "+N":i "+IN":s 0:%^DIM "@U.noun.abs@" >  LOC ; !
++N+IN:im%^DIMis%> INSUFF_LOC ;
+< "+N":i "+IN":s "+Sg":%^DIM "@U.noun.abs@" >  SG_ ; !
++N+IN+Sg:im%^DIM%>is INSUFF_SG ;
 
 
-!! *LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
+!! LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 !< "+N":0 "+IN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
 !< "+N":0 "+IN":0 "+Pl":0 "+Dim":0 "@U.noun.abs@" >  PLa ; !
 !< "+N":0 "+IN":0 "+Dim":0 "@U.noun.abs@" >  LOC ; !
 !+N+IN+Sg+Dim:%> INSUFF_SG ;
 !+N+IN+Pl+Dim:%> INSUFF_PL ;
 !+N+IN+Dim:%> INSUFF_LOC ;
-
-LEXICON INALIENABLEDERIVATION !!= * @CODE@  for hardcoded noun:diminutive for inalienables
-+N+IN+Der/Dim:  INALIENABLEPOSS ;
-
-LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
-< "+N":0 "+IN":0  "@U.noun.abs@" > INABLGENERIC ; !Generic form 
-+N+IN+Sg:%> INSUFF_SG ;
-+N+IN+Pl:%> INSUFF_PL ;
-+N+IN:%> INSUFF_LOC ;
-
-LEXICON INABLGENERIC !!= * @CODE@ generic forms Sg, Pl, Loc and diminutives
-+Sg: SG_ ;
-+Pl: PLa ;
- LOC ;
-+Der/Dim+N+IN+Sg:%>is%^DIM%> SG_ ;
-+Der/Dim+N+IN+Pl:%>is%^DIM%> PLa ;
-
-
-
-LEXICON INALIENABLEPOSS_SG !!= * @CODE@ inanimate possessive declension, only Sg
-!< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" > # ; !Baseform for dep nouns OBS!
-+N+IN+Sg:%> INSUFF_SG ;
 
 
 !! !!Animate possessive suffixes
