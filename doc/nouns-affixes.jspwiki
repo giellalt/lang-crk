@@ -3,123 +3,48 @@
 
 !!The declinations for Animates
 
- * LEXICON ANniska  for the irregular niska and sihta N+AN
 
+ * LEXICON ANDECL  for the animate declension, both -isis and -is diminutives
 
 
  * LEXICON ANimDECL  for the animate declension, poss.-im-, dim. -is
 
- * LEXICON ANimDECLisis  for the animate declension, poss.-im-, dim.-isis
-
-*LEXICON ANDIMim for diminutives with poss.-im- after the dim.suffix, not in use
+ * LEXICON ANimDECLis  for the animate declension, poss.-im-, dim. -is
 
 
-*LEXICON ANDECLisis for the animate declension, -isis diminutive, not in use as the moment
+ * LEXICON ANimDECLw  for the animate declension, poss.-im-, dim. -is
 
- * LEXICON ANDECLis  for the animate declension, -is diminutive
-
- * LEXICON ANDECL  for the animate declension, both -isis and -is diminutives
-
- * LEXICON AN-NOPOSSw  for the animate absolute declension and diminutive, ôhow
-
-
- * LEXICON ANDIMDERIVATION  for hardcoded noun:diminutive
 
  * LEXICON ANDIM  both for lexicalised and derivated diminutives
-
 
  * LEXICON ANABSDECL  for the animate absolute declension
 
  * LEXICON NON_LOCahk  for the animate absolute except LOC on ahk
 
-*LEXICON ANDIMDECL Declension for animate diminutives, adding +Dim-tag to the string. Not in use now.
-
-
-
- * LEXICON ANKININFL  The lexicon gives generic forms to kinship terms and then redirect to ANIRRINFL
-
- * LEXICON ANKININFLni  Lexicon for kinship terms to which I haven't found documented generic form. Baseform = PxSg1, and then redirect to ANIRRINFL
-
-
- * LEXICON ANKINiyINFL   Special treatment for kinship nouns ending with -iy
-
-
- * LEXICON ANKININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
-
- * LEXICON ANDECLatim	 for atim and mistatim.
-
-
- * LEXICON ANPOSSatim  is also there to handle the highly irregular atim and mistatim
-
-
- * LEXICON ANIRRINFL  is also there to handle the highly irregular atim and mistatim
-
- * LEXICON ANkwaDECL  takes -om as extra suffix in possessed form
-
-
- * LEXICON ANkwDECL  takes -om as extra suffix in possessed form
-
-
-
- * LEXICON ANDIMIRR  Possessive suffixes to diminutives
-
-
 !!The declinations for Inanimates
 
+ * LEXICON INimDECLw-ONESYLL-SG  for the inanimate declension, poss.-im-, dim. -is
+
  * LEXICON INimDECL  for the inanimate declension, poss.-im-, dim. -is
-
- * LEXICON INimDECL_SG  for inanimate declension of mihkw/mihko
-
-
- * LEXICON INimDECLisis  for the inanimate declension, poss.-im-, dim. -isis
-
-
- * LEXICON INimDIMisis  the diminutives with poss.-im-, dim. -isis
-
-
- * LEXICON INimDIM  the diminutives with poss.-im-, dim. -is
-
- * LEXICON INimDECLy  for the animate declension, poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
-
- * LEXICON INimDIMy  the diminutives with poss.-im-, nipîy, tohtôsâpôpimiy. Do we need this lexicon?
-
-
- * LEXICON INwDECL  for ex. askekinw  
-
-
 
 
  * LEXICON INDECL  for the inanimate declension, diminutive: -is- and -isis-
 
- * LEXICON INDECLisis  for the inanimate declension, diminutive: -isis-
-
- * LEXICON INDECLis  for the inanimate declension, diminutive: -is-
+ * LEXICON INDECLis  for the inanimate declension, diminutive: -is- and -isis-
 
  * LEXICON INDECLosi  for the inanimate declension of ôsi, an irregular noun
-
-
-
-
- * LEXICON INDIMDERIVATION  for hardcoded noun:diminutive
 
 
  * LEXICON INDIM  for the inanimate diminutives
 
  * LEXICON INABSDECL  for inanimate absolute declension
 
+ * LEXICON INimDIM  the diminutives with poss.-im-, dim. -is
+
+ * LEXICON INimDIM-SG  the diminutives with poss.-im-, dim. -is
 
 
-*LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
-
- * LEXICON INALIENABLEDERIVATION   for hardcoded noun:diminutive for inalienables
-
- * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
-
- * LEXICON INABLGENERIC  generic forms Sg, Pl, Loc and diminutives
-
-
-
- * LEXICON INALIENABLEPOSS_SG  inanimate possessive declension, only Sg
+LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
 
 !!Animate possessive suffixes
