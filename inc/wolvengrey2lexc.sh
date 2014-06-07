@@ -2,7 +2,7 @@
 
 # wolvengrey2lexc
 
-# transforms Wolvengrey's dictionary content to the lexc format an coding
+# transforms Wolvengrey's dictionary content to the lexc format
 
 # LEXICON STEMLIST
 # @LEXNAME@ for nouns getting prefixes ni-, ki-, o- \\
