@@ -1,0 +1,46 @@
+Prefixes
+--------
+Prefixes in UNDEFINED language are bound to beginning of other words.
+
+
+Nouns redirects to AN-IN, BODY, INALIENABLE
+
+
+AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
+
+
+
+
+BODY  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
+
+
+
+INALIENABLE  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
+
+
+ LEXICON Verbs  divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
+
+
+
+ * @U.mood.indep@ INDEPENDENT ;		  
+ * @U.mood.cnj@ CONJUNCTIV ;		   
+ *  IMPERATIV ;		      
+ *  FUTURE_CONDITIONAL ;  
+
+
+ LEXICON INDEPENDENT  gives flags and prefixes for personprefix
+
+
+ LEXICON IND_TENSE  gives flags and prefixes for tense 
+
+
+ LEXICON FUTURE_CONDITIONAL  gives flags for future conditional (no prefix)
+
+ LEXICON CONJUNCTIV  gives flag for conjunctive and prefix ê-
+
+
+ LEXICON CNJ_TENSE    gives prefixes and flags for tense in conjunctive
+
+
+ LEXICON IMPERATIV    gives flag for imperative (no prefixes)
+
