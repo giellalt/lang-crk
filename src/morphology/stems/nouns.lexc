@@ -16,8 +16,29 @@
 !!                           !!!Plains Cree noun stems                           
 ! ========================================================================== !
 
-!! The file
 
+!! Wolvengrey types:
+
+!! * NI1  C-Initial Regular NI Stem : cîmân– “canoe, boat”
+!! * NI1  V-Initial Regular NI Stem : astotin– “hat, cap”
+!! * NI2  C-Initial VW NI Stem : mîkisasâkay– “beaded coat, beaded dress”
+!! * NI2  V-Initial VW NI Stem : oskasâkay– “new coat, new dress”
+!! * NI3  C-Initial Cw NI Stem : pahkêkinw– “leather, rawhide”
+!! * NI3  V-Initial Cw NI Stem : askêkinw– “fresh rawhide”
+!! * NI4  C-Initial Single-Syllable NI Stem : wâw– “egg”
+!! * NI4  V-Initial Single-Syllable NI Stem : osk-ây– “new item, new thing”
+!! * NI4  V-Initial Single-Syllable irregular NI Stem : ôs– “canoe, boat”
+!! * NI4w C-Initial Single-Syllable-/w/ NI Stem : mihkw– “blood”
+!! * NA1  C-Initial Regular NA Stem : pahkwêsikan– “bannock”
+!! * NA1  V-Initial Regular NA Stem : asikan– “sock”
+!! * NA2  C-Initial V-Glide NA Stem : kihc-ôkiniy– “tomato”
+!! * NA2  V-Initial V-Glide NA Stem : ayapiy– “net”
+!! * NA3  C-Initial C-/w/ NA Stem : masinahikanâhtikw– “pencil”
+!! * NA3  V-Initial C-/w/ NA Stem : askihkw– “kettle, pail”
+!! * NA4  C-Initial Single-Syllable NA Stem : nisk– “goose” (and siht– “spruce”)
+!! * NA4  V-Initial Single-Syllable NA Stem : ês– “clam; shell”
+!! * NA4w C-Initial Single-Syllable-/w/ NA Stem : wâhkw– “roe, fish eggs; lump of roe”
+!! * NA4w V-Initial Single-Syllable-/w/ NA Stem : ihkw– “louse”
 
 
 !! !!The stems
@@ -30,126 +51,132 @@ LEXICON STEMS
  0:%> STEMLIST ;
 
 LEXICON STEMLIST
-!! @LEXNAME@ for nouns getting prefixes ni-, ki-, o- \\
-!! asikan ANDECL ; !!= * @CODE@ Wolv: NA1 
-!! pahkwêsikan ANimDECL ; !!= * @CODE@  Wolv: NA1 + im
-!! astotin INDECL ; !!= * @CODE@ Wolv: NI1
-!! cîmân INDECL ; !!= @CODE@ Wolv: NI1 
-!! maskisin INDECLis ; !!= * @CODE@ INDECL but only -is Dim
-!! ayapiy ANDECL ; !!= * @CODE@ Wolv: NA2
-!! kihcôkiniy ANDECL ; !!= @CODE@ Wolv: NA2
-!! oskasâkay INDECL ; !!= * @CODE@ Wolv: NI2
-!! mîkisasâkay INDECL ; !!= @CODE@ Wolv: NI2
-!! masinahikanâhtik:masinahikanâhtikw ANDECL ; !!= * @CODE@ Wolv: NA3
-!! pahkêkin:pahkêkinw INDECL ; !!= * @CODE@ Wolv: NI3w
-!! askekin:askekinw INDECL ; !!= @CODE@ Wolv: NI3w
-!! askihk:askihkw ANimDECL ; !!= * @CODE@ * Wolv: NA3w + im
-!! esa ANimDECL ; !!= * @CODE@ Wolv: NA4 +im
-!! niska ANimDECLisis ; !!= * @CODE@ Wolv: NA4 +im, only Dim is
-!! oskâyi INimDECL ; !!= * @CODE@ Wolv: NI4 +im
-!! wâwi INimDECL ; !!= @CODE@ Wolv: NI4 +im
-!! ôsi:ô INDECLosi ; !!= * @CODE@ Wolv: NI4 irr. stem
-!! ihkwa:ihkw ANimDECLw ; !!= * @CODE@ Wolv: NA4w +im
-!! wâhkwa:wâhkw ANimDECLw ; !!= @CODE@ Wolv: NA4w +im
-!! mihko:mihk INimDECLw-ONESYLL-SG ; !!= * @CODE@ Wolv: NI4w -o, only Sg
-!! amisk:amiskw ANimDECL "beaver" ; !yaml
-!! anikwacâs ANimDECLis "squirrel" ; !yaml
-!! apiscacihkos ANDECL "antelope" ; 
-!! apisimôsos ANDECL "deer" ; ! 
-!! apisimôsosis ANDIM "little deer" ; ! apisimôsosak
-!! asiniy ANDECL "stone" ;	
-!! atihk:atihkw ANDECL "caribou" ;	 !-w?
-!! cahcahkâyow ANimDECLisis "blackbird" ; !yaml
-!! inini ANDECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.	
-!! iskwêw ANimDECLis "woman" ; !yaml
-!! iskwêsis ANimDECL "girl" ;
-!! kôhkôs ANDECL "pig" ; !GGI:26 dim: kôhkôsis GGI:55
-!! maskwa ANDECLis "bear" ; ! maskwak	
-!! mâyatihk ANDECL "bighorn sheep" ;	
-!! môswa ANDECL "moose" ; ! môswak	
-!! nâpêw ANimDECL "man" ;	!OBS ê ?
-!! nâpês ANDECL "boy" ;	
-!! nehiyaw ANDECL "Cree Person" ;	
-!! sihta ANimDECLis "spruce" ;
-!! ôho:ôhow ANDECL-NOPOSS "owl" ; !yaml 
-!! okistatowân ANDECL "grizzly bear" ; ! okistatowânak	
-!! oskâtâsk ANDECL "carrot" ; !GGI	
-!! sônîyâw ANDECL "money" ; !GGI
-!! pisiw ANDECL "cougar" ;
-!! sihkihp ANimDECLis "boil, carbuncle" ; !yaml
-!! sikâk:sikâkw ANimDECLis "skunk" ;	!yaml
-!! wâpask ANDECLis "polar bear" ; ! wâpaskwak	
-!! wâwaskesiw ANDECL "elk" ;
-!! kôhkôsowîyin ANDECL "bacon" ; ! GGI:12
-!! mahtâmin ANDECL "corn" ; ! GGI:12 pl
-!! oskâtâsk ANDECL "carrot" ; ! GGI:12 pl
-!! kinosew ANDECL "fish" ; ! GGI:12 
-!! sîwinikan ANDECL "sugar" ; ! GGI:12 
-!! emihkwânis ANDECL "spoon" ; ! GGI:12 
-!! emihkwân ANDECL "spoon" ; !  ? youTube
-!! awâsis ANimDECL "child" ; ! GGI:nitâwâsimisak, nicawâsimisak
-!! âmow ANDECL "bee" ; 
-!! picikwâs ANDECL "apple" ; !GGI
-!! miscacimosis ANDIM ;
-!! pîsim ANDECL "month, sun" ;
-!! sîsîp ANimDECL "duck" ;	! exstra -im in poss GGI:25
-!! okimâw ANimDECL "boss" ; ! GGI:25
-!! wîkimâkan ANimDECL "spouse" ; !both NA and NDA
-!! wâpos:wâposw ANimDECL "rabbit" ; !yaml
-!! mistik:mistikw ANDECL "stick" ; !Wolfart freqv list: mistikohk
-!! mahkahk:mahkahkw ANDECL "tub/barrel" ; !Wolfart freqv list: mahkahkohk
-!! mostos:mostosw ANDECL "cow" ;	!GG p 16: pl is mostoswak, are there other nouns of this kind?
-!! tehtapiwin INDECL "chair" ; ! GGI:26 !dim cehcapiwinisis GGI:46
-!! atâwewikamik INimDECL "store" ; ! GGI:26, GGII:25  !Wolfart freqv list: atâwêwikamikohk
-!! atâwewikamik:atâwew'kamik INimDECL "store" ; ! GGI:26
-!! mîcisowkamik INimDECL "restaurant" ; ! GGII:18 im?
-!! sônîyâwkamik INimDECL "bank" ; ! GGII:18 im?
-!! sakâw INDECL "bush" ;
-!! mîcimâpoy INDECL "soup" ; !GG:12
-!! sîsîpiwâwi INimDECL "duck egg" ;
-!! askipwâwi INimDECL "potato" ; ! GG:12 askipwâwa Pl
-!! meskanaw INDECL "road" ; !GGII:18
-!! wâwis INDIM "little egg" ; ! Proficient speakers' abbr. dimin
-!! ôtênaw INDECL "city" ;
-!! ôcênâs INDIM "little city" ; !Wolfart freqv list: ôcênâsihk
-!! maskisin INDECLis "shoe" ; !yaml !GGI !Wolfart freqv list: maskisinihk
-!! mistikowat INDECL "box" ; !Wolfart freqv list: mistikowatihk 
-!! pikiw INDECL "gum" ; !Dim: pikîs
-!! iskwâhtêm INDECL "door" ; !Wolfart freqv list: iskwâhtêmihk
-!! môhkomân INDECL  "knife" ; ! GG 12 
-!! môhkomânis INDIM  "little knife" ;
-!! iskotêw INimDECL "fire" ; !Wolfart p.28
-!! !iskotêw:iskocês INDIMDERIVATION "fire" ;
-!! iskocês INDIM "fire" ;
-!! ôskan INDECL "bone" ;
-!! wiyâkanis INDIM "bowl" ; !Wolfart's list: wiyâkanisihk
-!! kîkisepâ INDECLisis "morning" ;
-!! atâwewikamikosis INDIM "small store" ;
-!! ôtênaw INDECL "city" ;
-!! ocenâsis INDIM "town" ;
-!! wiyâs INimDECL "meat" ; ! Okimasis:134 !OBS wîyâs GGI:12
-!! tohtôsâpoy INimDECLisis "milk" ; ! GGI:12 !yaml
-!! nipîy INimDECL "water" ; ! GGI:12
-!! maskihkiwâpoy INDECL "tea" ; ! GGI:12
-!! sîwihtâkan INDECL "salt" ; ! GGI:12
-!! papeskomina INDECL "pepper" ; ! GGI:12 treated as sg
-!! tohtôsâpôpimiy INimDECL "butter" ; ! GGI:12
-!! cîscayisîpwâkanis INDECL "fork" ; ! GGI:12
-!! wîyâkan INDECL "dish, plate" ; ! GGI:12 !Wolfart's list:  wiyâkanihk
-!! minihkwewîyâkanis INDECL "cup" ; ! GGI:12
-!! masinahikan INDECL "book" ; !GGI
-!! mîkiwâhp INDECL "tipi" ; !Wolfart's list: mîkiwâhpihk
-!! wîkiwin INDECL "home" ;
-!! wayasit INDECLis "hoof" ; !yaml !possibly -is in Dim
-!! wâskahikan INDECL "house" ; !GGI
-!! atim ANDECLatim "dog" ; ! -wak, -ohk, -wa !yaml  
-!! atim:têm ANPOSSatim "dog-possessed" ; !this is the stem for atim when it is inflected for person
-!! mistatim ANDECLatim "horse" ; ! mistatimwa GGI:46 Dim: miscacimosis
-!! mistatim+N+AN+Sg+Px1Sg:nitêm NOPREFIX "horse-possessed" ; !"my horse" is nitêm, no other poss.infl.  
-!! mitâs:tâs ANKINPOSS "pants" ; !Wolfart's list: otâsihk
-!! mitâs+N+AN+Sg:mitâs NOPREFIX "pants" ; !Wolfart's list: otâsihk
-!! mitîhiy:tîhiy ANKINPOSS "shoulderblade" ; !OBS -iy
-!! mitîhiy+N+AN+Sg:mitîhiy NOPREFIX "shoulderblade" ; !OBS -iy
+
+! Internal note: If we comment out a line containing the 
+! "excl excl equal" symbol string, then this string cannot
+! be kept, as the documentation does not compile. Replace it
+! back from !x= if you reintroduce these lines
+
+! @LEXNAME@ for nouns getting prefixes ni-, ki-, o- \\
+! asikan ANDECL ; !x= * @CODE@ Wolv: NA1 
+! pahkwêsikan ANimDECL ; !x= * @CODE@  Wolv: NA1 + im
+! astotin INDECL ; !x= * @CODE@ Wolv: NI1
+! cîmân INDECL ; !x= @CODE@ Wolv: NI1 
+! maskisin INDECLis ; !x= * @CODE@ INDECL but only -is Dim
+! ayapiy ANDECL ; !x= * @CODE@ Wolv: NA2
+! kihcôkiniy ANDECL ; !x= @CODE@ Wolv: NA2
+! oskasâkay INDECL ; !x= * @CODE@ Wolv: NI2
+! mîkisasâkay INDECL ; !x= @CODE@ Wolv: NI2
+! masinahikanâhtik:masinahikanâhtikw ANDECL ; !x= * @CODE@ Wolv: NA3
+! pahkêkin:pahkêkinw INDECL ; !x= * @CODE@ Wolv: NI3w
+! askekin:askekinw INDECL ; !x= @CODE@ Wolv: NI3w
+! askihk:askihkw ANimDECL ; !x= * @CODE@ * Wolv: NA3w + im
+! esa ANimDECL ; !x= * @CODE@ Wolv: NA4 +im
+! niska ANimDECLisis ; !x= * @CODE@ Wolv: NA4 +im, only Dim is
+! oskâyi INimDECL ; !x= * @CODE@ Wolv: NI4 +im
+! wâwi INimDECL ; !x= @CODE@ Wolv: NI4 +im
+! ôsi:ô INDECLosi ; !x= * @CODE@ Wolv: NI4 irr. stem
+! ihkwa:ihkw ANimDECLw ; !x= * @CODE@ Wolv: NA4w +im
+! wâhkwa:wâhkw ANimDECLw ; !x= @CODE@ Wolv: NA4w +im
+! mihko:mihk INimDECLw-ONESYLL-SG ; !x= * @CODE@ Wolv: NI4w -o, only Sg
+! amisk:amiskw ANimDECL "beaver" ; !yaml
+! anikwacâs ANimDECLis "squirrel" ; !yaml
+! apiscacihkos ANDECL "antelope" ; 
+! apisimôsos ANDECL "deer" ; ! 
+! apisimôsosis ANDIM "little deer" ; ! apisimôsosak
+! asiniy ANDECL "stone" ;	
+! atihk:atihkw ANDECL "caribou" ;	 !-w?
+! cahcahkâyow ANimDECLisis "blackbird" ; !yaml
+! inini ANDECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.	
+! iskwêw ANimDECLis "woman" ; !yaml
+! iskwêsis ANimDECL "girl" ;
+! kôhkôs ANDECL "pig" ; !GGI:26 dim: kôhkôsis GGI:55
+! maskwa ANDECLis "bear" ; ! maskwak	
+! mâyatihk ANDECL "bighorn sheep" ;	
+! môswa ANDECL "moose" ; ! môswak	
+! nâpêw ANimDECL "man" ;	!OBS ê ?
+! nâpês ANDECL "boy" ;	
+! nehiyaw ANDECL "Cree Person" ;	
+! sihta ANimDECLis "spruce" ;
+! ôho:ôhow ANDECL-NOPOSS "owl" ; !yaml 
+! okistatowân ANDECL "grizzly bear" ; ! okistatowânak	
+! oskâtâsk ANDECL "carrot" ; !GGI	
+! sônîyâw ANDECL "money" ; !GGI
+! pisiw ANDECL "cougar" ;
+! sihkihp ANimDECLis "boil, carbuncle" ; !yaml
+! sikâk:sikâkw ANimDECLis "skunk" ;	!yaml
+! wâpask ANDECLis "polar bear" ; ! wâpaskwak	
+! wâwaskesiw ANDECL "elk" ;
+! kôhkôsowîyin ANDECL "bacon" ; ! GGI:12
+! mahtâmin ANDECL "corn" ; ! GGI:12 pl
+! oskâtâsk ANDECL "carrot" ; ! GGI:12 pl
+! kinosew ANDECL "fish" ; ! GGI:12 
+! sîwinikan ANDECL "sugar" ; ! GGI:12 
+! emihkwânis ANDECL "spoon" ; ! GGI:12 
+! emihkwân ANDECL "spoon" ; !  ? youTube
+! awâsis ANimDECL "child" ; ! GGI:nitâwâsimisak, nicawâsimisak
+! âmow ANDECL "bee" ; 
+! picikwâs ANDECL "apple" ; !GGI
+! miscacimosis ANDIM ;
+! pîsim ANDECL "month, sun" ;
+! sîsîp ANimDECL "duck" ;	! exstra -im in poss GGI:25
+! okimâw ANimDECL "boss" ; ! GGI:25
+! wîkimâkan ANimDECL "spouse" ; !both NA and NDA
+! wâpos:wâposw ANimDECL "rabbit" ; !yaml
+! mistik:mistikw ANDECL "stick" ; !Wolfart freqv list: mistikohk
+! mahkahk:mahkahkw ANDECL "tub/barrel" ; !Wolfart freqv list: mahkahkohk
+! mostos:mostosw ANDECL "cow" ;	!GG p 16: pl is mostoswak, are there other nouns of this kind?
+! tehtapiwin INDECL "chair" ; ! GGI:26 !dim cehcapiwinisis GGI:46
+! atâwewikamik INimDECL "store" ; ! GGI:26, GGII:25  !Wolfart freqv list: atâwêwikamikohk
+! atâwewikamik:atâwew'kamik INimDECL "store" ; ! GGI:26
+! mîcisowkamik INimDECL "restaurant" ; ! GGII:18 im?
+! sônîyâwkamik INimDECL "bank" ; ! GGII:18 im?
+! sakâw INDECL "bush" ;
+! mîcimâpoy INDECL "soup" ; !GG:12
+! sîsîpiwâwi INimDECL "duck egg" ;
+! askipwâwi INimDECL "potato" ; ! GG:12 askipwâwa Pl
+! meskanaw INDECL "road" ; !GGII:18
+! wâwis INDIM "little egg" ; ! Proficient speakers' abbr. dimin
+! ôtênaw INDECL "city" ;
+! ôcênâs INDIM "little city" ; !Wolfart freqv list: ôcênâsihk
+! maskisin INDECLis "shoe" ; !yaml !GGI !Wolfart freqv list: maskisinihk
+! mistikowat INDECL "box" ; !Wolfart freqv list: mistikowatihk 
+! pikiw INDECL "gum" ; !Dim: pikîs
+! iskwâhtêm INDECL "door" ; !Wolfart freqv list: iskwâhtêmihk
+! môhkomân INDECL  "knife" ; ! GG 12 
+! môhkomânis INDIM  "little knife" ;
+! iskotêw INimDECL "fire" ; !Wolfart p.28
+! !iskotêw:iskocês INDIMDERIVATION "fire" ;
+! iskocês INDIM "fire" ;
+! ôskan INDECL "bone" ;
+! wiyâkanis INDIM "bowl" ; !Wolfart's list: wiyâkanisihk
+! kîkisepâ INDECLisis "morning" ;
+! atâwewikamikosis INDIM "small store" ;
+! ôtênaw INDECL "city" ;
+! ocenâsis INDIM "town" ;
+! wiyâs INimDECL "meat" ; ! Okimasis:134 !OBS wîyâs GGI:12
+! tohtôsâpoy INimDECLisis "milk" ; ! GGI:12 !yaml
+! nipîy INimDECL "water" ; ! GGI:12
+! maskihkiwâpoy INDECL "tea" ; ! GGI:12
+! sîwihtâkan INDECL "salt" ; ! GGI:12
+! papeskomina INDECL "pepper" ; ! GGI:12 treated as sg
+! tohtôsâpôpimiy INimDECL "butter" ; ! GGI:12
+! cîscayisîpwâkanis INDECL "fork" ; ! GGI:12
+! wîyâkan INDECL "dish, plate" ; ! GGI:12 !Wolfart's list:  wiyâkanihk
+! minihkwewîyâkanis INDECL "cup" ; ! GGI:12
+! masinahikan INDECL "book" ; !GGI
+! mîkiwâhp INDECL "tipi" ; !Wolfart's list: mîkiwâhpihk
+! wîkiwin INDECL "home" ;
+! wayasit INDECLis "hoof" ; !yaml !possibly -is in Dim
+! wâskahikan INDECL "house" ; !GGI
+! atim ANDECLatim "dog" ; ! -wak, -ohk, -wa !yaml  
+! atim:têm ANPOSSatim "dog-possessed" ; !this is the stem for atim when it is inflected for person
+! mistatim ANDECLatim "horse" ; ! mistatimwa GGI:46 Dim: miscacimosis
+! mistatim+N+AN+Sg+Px1Sg:nitêm NOPREFIX "horse-possessed" ; !"my horse" is nitêm, no other poss.infl.  
+! mitâs:tâs ANKINPOSS "pants" ; !Wolfart's list: otâsihk
+! mitâs+N+AN+Sg:mitâs NOPREFIX "pants" ; !Wolfart's list: otâsihk
+! mitîhiy:tîhiy ANKINPOSS "shoulderblade" ; !OBS -iy
+! mitîhiy+N+AN+Sg:mitîhiy NOPREFIX "shoulderblade" ; !OBS -iy
 
 acâhkos ANDECL "star" ;
 acâwêwikamikos INDECL "little store, shop" ;
