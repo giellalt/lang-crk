@@ -86,7 +86,7 @@ Vx:0 <=> Cns _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i: ] ;
 !! __@RULENAME@__  in -Cw stems
 w:0 <=> \Pos Cns _ %>:0 ( %^POS:0 ) ( %>:0 )  i:  ; !  askihkw:askihkos nitihkom
         \Pos Cns _ ( %>:0 ) ( %^POS:0 )  .#. ;
-        \Pos  [ o: | â: ] _ %>:0 ( %^POS:0 )  i: ; !cahcahkâyow  , okimâw
+        \Pos  [ o: | â: ] _ %>:0 ( %^POS:0 )  i: [ s: | m: | n: | %^LC:0 ] ; !cahcahkâyow  , okimâw
         \Pos  [ ê: | â: ] _ %>:0 ( %^POS:0 )  i: [ s: | m: ] ( %>:0 ) [ %^DIM:0 | %^POS:0 ]  ; !iskwêw, okimâw 
 
 
@@ -129,7 +129,7 @@ y:0 <=> \Pos [ i: | o: | a: ]  _ %>:0   :*  i: [ n: | m | w: | y: | s: | %^LC:0 
 !! cahcahkâyow+ihk, tohtôsâpoy+ihk, cahcahkâyow+is, cohcôsâpoy+is, o+pikiw+iyiwa	 maniway+i
 i:0 <=>  \PosDim [ o: | i: ]  [ w: | y: ] %>:0  _ %^LC:0 ;   ! cahcahkâyow+ihk, tohtôsâpoy+ihk
          [ Vow: | o: ] [ w: | y: ] %>:0  _ [ s | m ] %^DIM:0 ; ! cahcahkâyow+is, cohcôsâpoy+is
-         \Pos [ a: | i: | â: | o: ] [ w: | y: ] %>:0 ( %^POS:0 ) ( %>:0 ) _  ; !o+pikiw+iyiwa maniway+i
+         \Pos [ a: | i: | â: | o: ] [ w: | y: ] %>:0 ( %^POS:0 ) ( %>:0 ) _   ; !o+pikiw+iyiwa maniway+i
          \Pos  ê: w: %>:0 ( %^POS:0 )  _ [ s: | m: ] ( %>:0 ) [ %^DIM:0 | %^POS:0 ]  ; !iskwêw  
          
 
