@@ -43,7 +43,7 @@ STEMLIST for nouns getting prefixes ni-, ki-, o- \\
  askekin:askekinw INDECL ;  Wolv: NI3w
  * askihk:askihkw ANimDECL ;  * Wolv: NA3w + im
  * esa ANimDECL ;  Wolv: NA4 +im
- * niska ANimDECLis ;  Wolv: NA4 +im, only Dim is
+ * niska ANimDECLisis ;  Wolv: NA4 +im, only Dim is
  * oskâyi INimDECL ;  Wolv: NI4 +im
  wâwi INimDECL ;  Wolv: NI4 +im
  * ôsi:ô INDECLosi ;  Wolv: NI4 irr. stem
@@ -51,4 +51,17 @@ STEMLIST for nouns getting prefixes ni-, ki-, o- \\
  wâhkwa:wâhkw ANimDECLw ;  Wolv: NA4w +im
  * mihko:mihk INimDECLw-ONESYLL-SG ;  Wolv: NI4w -o, only Sg
 
+
+INALIENABLESTEMS adds an affixmark and redirects to INABLESTEMLIST
+
+INABLESTEMLIST for dependent nouns getting prefixes n-, k-, o- \\
+ otânisimâw:itânis ANKININFL "daughter" ; !yaml 
+ okosisimâw:ikosis ANKININFL "son" ; 	
+
+BODYSTEMS adds an affixmark and redirects to BODYSTEMLIST 
+
+BODYSTEMLIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
+ maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml 	
+ maniway+N+IN+Sg:maniway NOPREFIX "cheek" ; !yaml 	
+ mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml  	
 
