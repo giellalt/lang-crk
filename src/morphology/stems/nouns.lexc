@@ -103,16 +103,167 @@ pahkêkin:pahkêkinw INDECL ; !!= * @CODE@ Wolv: NI3w
 askekin:askekinw INDECL ; !!= @CODE@ Wolv: NI3w
 askihk:askihkw ANimDECL ; !!= * @CODE@ * Wolv: NA3w + im
 esa ANimDECL ; !!= * @CODE@ Wolv: NA4 +im
-niska ANimDECLis ; !!= * @CODE@ Wolv: NA4 +im, only Dim is
+niska ANimDECLisis ; !!= * @CODE@ Wolv: NA4 +im, only Dim is
 oskâyi INimDECL ; !!= * @CODE@ Wolv: NI4 +im
 wâwi INimDECL ; !!= @CODE@ Wolv: NI4 +im
 ôsi:ô INDECLosi ; !!= * @CODE@ Wolv: NI4 irr. stem
 ihkwa:ihkw ANimDECLw ; !!= * @CODE@ Wolv: NA4w +im
 wâhkwa:wâhkw ANimDECLw ; !!= @CODE@ Wolv: NA4w +im
 mihko:mihk INimDECLw-ONESYLL-SG ; !!= * @CODE@ Wolv: NI4w -o, only Sg
+amisk:amiskw ANimDECL "beaver" ; !yaml
+anikwacâs ANimDECLis "squirrel" ; !yaml
+apiscacihkos ANDECL "antelope" ; 
+apisimôsos ANDECL "deer" ; ! 
+apisimôsosis ANDIM "little deer" ; ! apisimôsosak
+asiniy ANDECL "stone" ;	
+atihk:atihkw ANDECL "caribou" ;	 !-w?
+cahcahkâyow ANimDECLisis "blackbird" ; !yaml
+inini ANDECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.	
+iskwêw ANimDECLis "woman" ; !yaml
+iskwêsis ANimDECL "girl" ;
+kôhkôs ANDECL "pig" ; !GGI:26 dim: kôhkôsis GGI:55
+maskwa ANDECLis "bear" ; ! maskwak	
+mâyatihk ANDECL "bighorn sheep" ;	
+môswa ANDECL "moose" ; ! môswak	
+nâpêw ANimDECL "man" ;	!OBS ê ?
+nâpês ANDECL "boy" ;	
+nehiyaw ANDECL "Cree Person" ;	
+sihta ANimDECLis "spruce" ;
+ôho:ôhow ANDECL-NOPOSS "owl" ; !yaml 
+okistatowân ANDECL "grizzly bear" ; ! okistatowânak	
+oskâtâsk ANDECL "carrot" ; !GGI	
+sônîyâw ANDECL "money" ; !GGI
+pisiw ANDECL "cougar" ;
+sihkihp ANimDECLis "boil, carbuncle" ; !yaml
+sikâk:sikâkw ANimDECLis "skunk" ;	!yaml
+wâpask ANDECLis "polar bear" ; ! wâpaskwak	
+wâwaskesiw ANDECL "elk" ;
+kôhkôsowîyin ANDECL "bacon" ; ! GGI:12
+mahtâmin ANDECL "corn" ; ! GGI:12 pl
+oskâtâsk ANDECL "carrot" ; ! GGI:12 pl
+kinosew ANDECL "fish" ; ! GGI:12 
+sîwinikan ANDECL "sugar" ; ! GGI:12 
+emihkwânis ANDECL "spoon" ; ! GGI:12 
+emihkwân ANDECL "spoon" ; !  ? youTube
+awâsis ANimDECL "child" ; ! GGI:nitâwâsimisak, nicawâsimisak
+âmow ANDECL "bee" ; 
+picikwâs ANDECL "apple" ; !GGI
+miscacimosis ANDIM ;
+pîsim ANDECL "month, sun" ;
+sîsîp ANimDECL "duck" ;	! exstra -im in poss GGI:25
+okimâw ANimDECL "boss" ; ! GGI:25
+wîkimâkan ANimDECL "spouse" ; !both NA and NDA
+wâpos:wâposw ANimDECL "rabbit" ; !yaml
+mistik:mistikw ANDECL "stick" ; !Wolfart freqv list: mistikohk
+mahkahk:mahkahkw ANDECL "tub/barrel" ; !Wolfart freqv list: mahkahkohk
+mostos:mostosw ANDECL "cow" ;	!GG p 16: pl is mostoswak, are there other nouns of this kind?
+tehtapiwin INDECL "chair" ; ! GGI:26 !dim cehcapiwinisis GGI:46
+atâwewikamik INimDECL "store" ; ! GGI:26, GGII:25  !Wolfart freqv list: atâwêwikamikohk
+atâwewikamik:atâwew'kamik INimDECL "store" ; ! GGI:26
+mîcisowkamik INimDECL "restaurant" ; ! GGII:18 im?
+sônîyâwkamik INimDECL "bank" ; ! GGII:18 im?
+sakâw INDECL "bush" ;
+mîcimâpoy INDECL "soup" ; !GG:12
+sîsîpiwâwi INimDECL "duck egg" ;
+askipwâwi INimDECL "potato" ; ! GG:12 askipwâwa Pl
+meskanaw INDECL "road" ; !GGII:18
+wâwis INDIM "little egg" ; ! Proficient speakers' abbr. dimin
+ôtênaw INDECL "city" ;
+ôcênâs INDIM "little city" ; !Wolfart freqv list: ôcênâsihk
+maskisin INDECLis "shoe" ; !yaml !GGI !Wolfart freqv list: maskisinihk
+mistikowat INDECL "box" ; !Wolfart freqv list: mistikowatihk 
+pikiw INDECL "gum" ; !Dim: pikîs
+iskwâhtêm INDECL "door" ; !Wolfart freqv list: iskwâhtêmihk
+môhkomân INDECL  "knife" ; ! GG 12 
+môhkomânis INDIM  "little knife" ;
+iskotêw INimDECL "fire" ; !Wolfart p.28
+!iskotêw:iskocês INDIMDERIVATION "fire" ;
+iskocês INDIM "fire" ;
+ôskan INDECL "bone" ;
+wiyâkanis INDIM "bowl" ; !Wolfart's list: wiyâkanisihk
+kîkisepâ INDECLisis "morning" ;
+atâwewikamikosis INDIM "small store" ;
+ôtênaw INDECL "city" ;
+ocenâsis INDIM "town" ;
+wiyâs INimDECL "meat" ; ! Okimasis:134 !OBS wîyâs GGI:12
+tohtôsâpoy INimDECLisis "milk" ; ! GGI:12 !yaml
+nipîy INimDECL "water" ; ! GGI:12
+maskihkiwâpoy INDECL "tea" ; ! GGI:12
+sîwihtâkan INDECL "salt" ; ! GGI:12
+papeskomina INDECL "pepper" ; ! GGI:12 treated as sg
+tohtôsâpôpimiy INimDECL "butter" ; ! GGI:12
+cîscayisîpwâkanis INDECL "fork" ; ! GGI:12
+wîyâkan INDECL "dish, plate" ; ! GGI:12 !Wolfart's list:  wiyâkanihk
+minihkwewîyâkanis INDECL "cup" ; ! GGI:12
+masinahikan INDECL "book" ; !GGI
+mîkiwâhp INDECL "tipi" ; !Wolfart's list: mîkiwâhpihk
+wîkiwin INDECL "home" ;
+wayasit INDECLis "hoof" ; !yaml !possibly -is in Dim
+wâskahikan INDECL "house" ; !GGI
+atim ANDECLatim "dog" ; ! -wak, -ohk, -wa !yaml  
+atim:têm ANPOSSatim "dog-possessed" ; !this is the stem for atim when it is inflected for person
+mistatim ANDECLatim "horse" ; ! mistatimwa GGI:46 Dim: miscacimosis
+mistatim+N+AN+Sg+Px1Sg:nitêm NOPREFIX "horse-possessed" ; !"my horse" is nitêm, no other poss.infl.  
+mitâs:tâs ANKINPOSS "pants" ; !Wolfart's list: otâsihk
+mitâs+N+AN+Sg:mitâs NOPREFIX "pants" ; !Wolfart's list: otâsihk
+mitîhiy:tîhiy ANKINPOSS "shoulderblade" ; !OBS -iy
+mitîhiy+N+AN+Sg:mitîhiy NOPREFIX "shoulderblade" ; !OBS -iy
 
-LEXICON BODYSTEMS
- # ;
- 
-LEXICON INALIENABLESTEMS  
- # ;
+
+LEXICON INALIENABLESTEMS  ! dependent nouns
+!! @LEXNAME@ adds an affixmark and redirects to INABLESTEMLIST
+ 0:%> INABLESTEMLIST ;
+
+LEXICON INABLESTEMLIST
+!! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o- \\
+otânisimâw:itânis ANKININFL "daughter" ; !yaml !!= @CODE@
+okosisimâw:ikosis ANKININFL "son" ; !!= @CODE@	
+onîkihikomâw:inekihik ANKININFL "parent" ; ! NB! generic form? ninekihikwak onikihkomaw
+omosômimâw:imosôm ANKININFL "grandfather" ;
+ôhkomimâw:ôhkom ANKININFL "grandmother" ; !NB! twolc gives oô-
+nîtisân:îtisân ANKININFLni "sibling" ; !NB! twolc gives oî-
+osîmisimâw:isîmis ANKININFL "younger sibling" ; 
+otôtemimâw:itôtem ANKININFL "friend" ; 
+okâwîmâw:ikâw ANKINiyINFL "mother" ;! -iy- dissappears Okimasis p. 140,  !yaml
+ohtâwîmâw:ohtâw ANKININFL "father" ;   !OBS nohtâwiy, ohtâwiy
+omisimâw:imis ANKININFL "older sister" ;
+nikâwis:ikâwis ANKININFLni "mother's sister" ; ! gen.form okâwisimâw??
+osisimâw:isis ANKININFL "mother's brother, father's sister husband" ; 
+ohcâwîsimâw:ohcâwîs ANKININFL "father's brother" ; !NB! twolc gives oo-
+nihciwâmis:ihciwâmis ANKININFLni "cousin" ;  ! gen.form ohciwâmisimâw??
+ostêsimâw:istês ANKININFL "oldest brother" ;
+niscâs:iscâs ANKININFLni "cousin/brother in law" ; ! gen.form??
+nîcimos:îcimos ANKININFLni "mother's brother's son" ; ! gen.form?? !NB! twolc gives oî-
+nicâhkos:icâhkos ANKININFLni "cousin/sister in law" ;! gen.form ocâhkosimâw??
+nôsisim:ôsisim ANKININFLni "grandchild" ;!NB! twolc gives oô-  gen.form ôsisimimâw??
+onâpêmimâw:inâpêm ANKININFL_MONOG "husband" ;
+!wîkimâkan:îkimâkan ANKININFL_MONOG "spouse" ;  !OBS!
+niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ; !OBS! 
+mîkiwâhp+N+IN+Sg:mîkiwâhp NOPREFIX "home" ; !Okimasis:137
+
+LEXICON BODYSTEMS ! dependent nouns
+!! @LEXNAME@ adds an affixmark and redirects to BODYSTEMLIST 
+ 0:%> BODYSTEMLIST ;
+
+LEXICON BODYSTEMLIST
+!! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
+mîkiwâhp:îki INALIENABLEPOSS_SG "home" ; !GGI !Wolfart's list: wîkiwâhk, nîkinâhk !Okimasis p 137
+maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml !!= @CODE@	
+maniway+N+IN+Sg:maniway NOPREFIX "cheek" ; !yaml !!= @CODE@	
+mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml  !!= @CODE@	
+mahkwan:ahkwan INALIENABLEPOSS "heel" ;
+mispiton:ispiton INALIENABLEPOSS "arm" ; !yaml
+micihciy:icihciy INALIENABLEPOSS "hand" ; !
+micihciy:icihcîsis INALIENABLEDERIVATION "hand" ; 
+micihcîsis:icihcîsis INALIENABLEPOSS "small hand" ; 
+mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
+misit:isit INALIENABLEPOSS "foot" ; !GGI
+mistikwân:istikwân INALIENABLEPOSS "head" ; !GGI
+mîscakâs:îscakâs INALIENABLEPOSS "hair" ; !GGI
+mîskât:îskât INALIENABLEPOSS "leg" ; !GGI
+mitôn:itôn INALIENABLEPOSS "mouth" ; !GGI
+miskîsik:iskîsik INALIENABLEPOSS "eye" ; !GGI
+mikot:ikot INALIENABLEPOSS "nose" ; !GGI
+mîhtawakay:îhtawakay INALIENABLEPOSS "ear" ; !GGI
+mîyaw:îyaw INALIENABLEPOSS "body" ; !GGI
+
