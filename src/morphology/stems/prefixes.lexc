@@ -3,8 +3,112 @@
 !! Prefixes in UNDEFINED language are bound to beginning of other words.
 
 LEXICON Prefixes
-nounprefix-     Nouns   ;
-verbprefix-     Verbs   ;
+ Nouns  ;
+ Verbs ;
+
+LEXICON Nouns
+!! @LEXNAME@ redirects to AN-IN, BODY, INALIENABLE
+! and EXPER
+
+AN-IN       ; ! Animate and inanimate nouns
+BODY        ; ! Inanimate, generic form with m-
+INALIENABLE ;
+!EXPER ;
+
+LEXICON AN-IN
+!! @LEXNAME@ adds the prefixes ni-, ki-, o-. Redirects to STEMS
+
+           @U.noun.abs@            STEMS ; 
+< 0:n 0:i "@U.noun.1sg@"  0:"t2" > STEMS ; ! 1
+< 0:k 0:i "@U.noun.2sg@"  0:"t2" > STEMS ; ! 2
+< 0:o     "@U.noun.3sg@"  0:"t2" > STEMS ; ! 3
+< 0:o     "@U.noun.3isg@" 0:"t2" > STEMS ; ! 3-singular-obviative
+< 0:n 0:i "@U.noun.1pl@"  0:"t2" > STEMS ; ! exclusive Pl
+< 0:k 0:i "@U.noun.12pl@" 0:"t2" > STEMS ; ! inclusive Pl
+< 0:k 0:i "@U.noun.2pl@"  0:"t2" > STEMS ; ! 2pl 
+< 0:o     "@U.noun.3pl@"  0:"t2" > STEMS ; ! 3pl
+< 0:o     "@U.noun.3ipl@" 0:"t2" > STEMS ; ! 3-plural-obviate
+
+!LEXICON EXPER
+!< 0:i "@U.noun.exp@"  > BODY ; ! 1
 
 
-! vim: set ft=xfst-lexc:
+LEXICON BODY
+!! @LEXNAME@  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
+< 0:m "@U.noun.abs@"  > BODYSTEMS ; !
+< 0:n "@U.noun.1sg@"  > BODYSTEMS ; !
+< 0:k "@U.noun.2sg@"  > BODYSTEMS ; !
+< 0:o "@U.noun.3sg@"  > BODYSTEMS ; !
+< 0:o "@U.noun.3isg@" > BODYSTEMS ; !
+< 0:n "@U.noun.1pl@"  > BODYSTEMS ; !
+< 0:k "@U.noun.12pl@" > BODYSTEMS ; !
+< 0:k "@U.noun.2pl@"  > BODYSTEMS ; !
+< 0:o "@U.noun.3pl@"  > BODYSTEMS ; !
+< 0:o "@U.noun.3ipl@" > BODYSTEMS ; !
+
+
+
+LEXICON INALIENABLE
+!! @LEXNAME@  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
+       @U.noun.abs@     INALIENABLESTEMS ; 
+< 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
+< 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
+< 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ; ! 3
+< 0:o "@U.noun.3isg@" > INALIENABLESTEMS ; ! 3indef
+< 0:n "@U.noun.1pl@"  > INALIENABLESTEMS ; ! exclusive Pl
+< 0:k "@U.noun.12pl@" > INALIENABLESTEMS ; ! inclusive Pl
+< 0:k "@U.noun.2pl@"  > INALIENABLESTEMS ; ! 2pl 
+< 0:o "@U.noun.3pl@"  > INALIENABLESTEMS ; ! 3pl note: is prefix o- correct?
+< 0:o "@U.noun.3ipl@" > INALIENABLESTEMS ; ! 
+
+
+LEXICON Verbs !!= @CODE@ divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
+
+!IA ; ! we try with both verb in one lexicon
+!II ; ! intransitive inanimate
+!TA ; ! transitive animate
+!TI ; ! transitive inanimate
+
+
+!LEXICON IA    
+@U.mood.indep@ INDEPENDENT ;		  !!= * @CODE@
+@U.mood.cnj@ CONJUNCTIV ;		  !!= * @CODE@ 
+ IMPERATIV ;		      !!= * @CODE@
+ FUTURE_CONDITIONAL ;  !!= * @CODE@
+
+
+LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
+< 0:n 0:i "@U.perspref.NI@"  0:"t2" > IND_TENSE ; !
+< 0:k 0:i "@U.perspref.KI@"  0:"t2" > IND_TENSE ; !
+<         "@U.perspref.NULL@"       > IND_TENSE ; !
+
+
+LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
+<                   "@U.tense.Prs@"     > VERBLIST ; !
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > VERBLIST ; ! removed hyph
+< 0:k 0:î 0:%-      "@U.tense.Prt@"     > VERBLIST ; !
+< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@"  > VERBLIST ; !
+< 0:k 0:a 0:%-      "@U.tense.FutDef@"  > VERBLIST ; !
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > VERBLIST ; !
+< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > VERBLIST ; !
+
+
+LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
+@U.mood.FutCon@ VERBLIST ;
+
+LEXICON CONJUNCTIV !!= @CODE@ gives flag for conjunctive and prefix ê-
+<  0:ê 0:%-       > CNJ_TENSE ; !
+<  0:ê 0:%^EGLOT   > CNJ_TENSE ; !
+
+
+LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
+<        			"@U.tense.Prs@"    > VERBLIST ; !Present
+< 0:k 0:î 0:%-  	"@U.tense.Prt@"    > VERBLIST ;  ! Preterite, 
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"    > VERBLIST ;  ! Preterite,
+< 0:w 0:î 0:%-  	"@U.tense.FutInt@" > VERBLIST ; ! Future Intentional
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" > VERBLIST ; ! Future Intentional
+
+
+LEXICON IMPERATIV   !!= @CODE@ gives flag for imperative (no prefixes)
+@U.mood.imp@  VERBLIST ;
+
