@@ -216,7 +216,6 @@ Prefixes with a certain phonological content:
 
  *  t2:0       t between prefix and vowel-initial stem
  *  y2:y       t between prefix and vowel-initial stem
- *  i2:0       i can change to o and ô in the possession element
  *  %>:0       affix boundary
  *  %^LC:0     Locative suffix alternation trigger
  *  %^DIM:0    Diminutive alternation trigger
@@ -235,6 +234,13 @@ Prefixes with a certain phonological content:
 
 !!!Rules
 
+
+__o:w in possessive prefix__ , w- in front of î, a, â (?) in possessive forms: 
+mahkwan:wahkwan, mîpit:wîpit, mîyaw:wîyaw
+
+__o:0 in possessive prefix__ , Okimasis p. 140 
+
+__i:0 after possessive prefix__ , ospiton 
 
 
 
@@ -266,8 +272,20 @@ __a:aa alternations in stem __  for stem vowel when final -ay
 __y:0 alternations __  for stem vowel when final -Vy
 
 
+okimâw, maniway+i, pikiw+is cahcahkâyow+is tohtôsâpoy+is, cahcahkâyow+ihk, tohtôsâpoy+ihk
+
+
+
 __i:0 in suffix for stem final -Vw/Vy __ (first) : Okimasis 2004: 26, Rule 2, 8: Vow + (w/y) + ihk 
 cahcahkâyow+ihk, tohtôsâpoy+ihk, cahcahkâyow+is, cohcôsâpoy+is, o+pikiw+iyiwa	 maniway+i
+
+
+
+__locative alternation naahk 1		__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
+iskwêw+ikh
+
+__locative alternation naahk 2		__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
+iskwên+ikh
 
 
 VERBS
@@ -338,7 +356,7 @@ STEMLIST for nouns getting prefixes ni-, ki-, o- \\
  askekin:askekinw INDECL ;  Wolv: NI3w
  * askihk:askihkw ANimDECL ;  * Wolv: NA3w + im
  * esa ANimDECL ;  Wolv: NA4 +im
- * niska ANimDECLis ;  Wolv: NA4 +im, only Dim is
+ * niska ANimDECLisis ;  Wolv: NA4 +im, only Dim is
  * oskâyi INimDECL ;  Wolv: NI4 +im
  wâwi INimDECL ;  Wolv: NI4 +im
  * ôsi:ô INDECLosi ;  Wolv: NI4 irr. stem
@@ -346,6 +364,19 @@ STEMLIST for nouns getting prefixes ni-, ki-, o- \\
  wâhkwa:wâhkw ANimDECLw ;  Wolv: NA4w +im
  * mihko:mihk INimDECLw-ONESYLL-SG ;  Wolv: NI4w -o, only Sg
 
+
+INALIENABLESTEMS adds an affixmark and redirects to INABLESTEMLIST
+
+INABLESTEMLIST for dependent nouns getting prefixes n-, k-, o- \\
+ otânisimâw:itânis ANKININFL "daughter" ; !yaml 
+ okosisimâw:ikosis ANKININFL "son" ; 	
+
+BODYSTEMS adds an affixmark and redirects to BODYSTEMLIST 
+
+BODYSTEMLIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
+ maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml 	
+ maniway+N+IN+Sg:maniway NOPREFIX "cheek" ; !yaml 	
+ mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml  	
 
 
 Plains Cree verb stems                       
@@ -437,33 +468,65 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 !!The declinations for Animates
 
 
- * LEXICON ANDECL  for the animate declension, both -isis and -is diminutives
+ * LEXICON ANDECL  for the animate declension, Dim: -isis and -is 
+
+ * LEXICON ANDECLis  for the animate declension, Dim: -is diminutives
 
 
- * LEXICON ANimDECL  for the animate declension, poss.-im-, dim. -is
+ * LEXICON ANimDECL  for the animate declension, poss.-im-, Dim: -is
 
- * LEXICON ANimDECLis  for the animate declension, poss.-im-, dim. -is
+ * LEXICON ANimDECLisis  for the animate declension, poss.-im-, Dim: -isis
+
+ * LEXICON ANimDECLis  for the animate declension, poss.-im-, Dim: -is
 
 
- * LEXICON ANimDECLw  for the animate declension, poss.-im-, dim. -is
+ * LEXICON ANimDECLw  for the animate declension, stem -w, poss.-im-, Dim: -is
 
 
  * LEXICON ANDIM  both for lexicalised and derivated diminutives
 
  * LEXICON ANABSDECL  for the animate absolute declension
 
- * LEXICON NON_LOCahk  for the animate absolute except LOC on ahk
+
+ * LEXICON ANKININFL  The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
+
+ * LEXICON ANKININFLni  Lexicon for kinship terms to which I haven't found documented generic form. Baseform = PxSg1, and then redirect to ANKINPOSS
+
+ * LEXICON ANDECL-NOPOSS  for the animate absolute declension and diminutive, ôho
+
+
+
+
+ * LEXICON ANKININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
+
+ * LEXICON ANDECLatim	 for atim and mistatim.
+
+
+ * LEXICON ANPOSSatim  is also there to handle the highly irregular atim and mistatim
+
+
+ * LEXICON ANKINPOSS  
+
+ * LEXICON ANDIMPOSS  Possessive suffixes to diminutives
+
+ * LEXICON ANKINiyINFL   Special treatment for kinship nouns ending with -iy - should be done in twolc?
+
 
 !!The declinations for Inanimates
 
- * LEXICON INimDECLw-ONESYLL-SG  for the inanimate declension, poss.-im-, dim. -is
+ * LEXICON INimDECLw-ONESYLL-SG  for the inanimate declension, stem -w, poss.-im-, dim. -is, only Sg
 
  * LEXICON INimDECL  for the inanimate declension, poss.-im-, dim. -is
 
+ * LEXICON INimDECLisis  for the inanimate declension, poss.-im-, dim. -isis
 
- * LEXICON INDECL  for the inanimate declension, diminutive: -is- and -isis-
 
- * LEXICON INDECLis  for the inanimate declension, diminutive: -is- and -isis-
+ * LEXICON INDECL  for the inanimate declension, Dim: -is- and -isis-
+
+ * LEXICON INDECLis  for the inanimate declension, Dim: -is- 
+
+ * LEXICON INDECLisis  for the inanimate declension, Dim:: -isis-
+
 
  * LEXICON INDECLosi  for the inanimate declension of ôsi, an irregular noun
 
@@ -472,13 +535,25 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON INABSDECL  for inanimate absolute declension
 
- * LEXICON INimDIM  the diminutives with poss.-im-, dim. -is
+ * LEXICON INimDIM  the diminutives with poss.-im-, Dim: -is
 
- * LEXICON INimDIM-SG  the diminutives with poss.-im-, dim. -is
+ * LEXICON INimDIMisis  the diminutives with poss.-im-, Dim: -isis
+
+
+ * LEXICON INimDIM-SG  the diminutives with poss.-im-, Dim: -is
 
 
 LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
+ * LEXICON INALIENABLEDERIVATION   for hardcoded noun:diminutive for inalienables
+
+ * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
+
+ * LEXICON INABLGENERIC  generic forms Sg, Pl, Loc and diminutives
+
+
+
+ * LEXICON INALIENABLEPOSS_SG  inanimate possessive declension, only Sg
 
 !!Animate possessive suffixes
 
@@ -500,12 +575,6 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON INSUFF_PL  
 
-
- * LEXICON INSUFFohk_LOC 
-
- * LEXICON INSUFFoSG  
-
- * LEXICON INSUFFoPL  
 
 
  * LEXICON INSUFF_LOC 
