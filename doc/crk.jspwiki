@@ -206,7 +206,7 @@ Prefixes with a certain phonological content:
 
   LEXICON Root          is where it all starts
 
- * Nouns ;               
+ * Prefixes ;               
  * Verbs ;               
  * Pronoun ;             
  * Punctuation ;         
@@ -317,23 +317,6 @@ __n:0 before k-suffix__
 The file
 
 
-The prefixes
-
-Nouns redirects to AN-IN, BODY, INALIENABLE
-
-
-AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
-
-
-
-
-BODY  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
-
-
-
-INALIENABLE  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
-
-
 
 !!The stems
 
@@ -397,39 +380,8 @@ The Plains Cree verbs are divided in four groups, but all of them are in the sam
 # TA: Transitive animate
 # TI: Transitive inanimate
 
- LEXICON Verbs  divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
-
-
-
- * @U.mood.indep@ INDEPENDENT ;		  
- * @U.mood.cnj@ CONJUNCTIV ;		   
- *  IMPERATIV ;		      
- *  FUTURE_CONDITIONAL ;  
-
-
- LEXICON INDEPENDENT  gives flags and prefixes for personprefix
-
-
- LEXICON IND_TENSE  gives flags and prefixes for tense 
-
-
- LEXICON FUTURE_CONDITIONAL  gives flags for future conditional (no prefix)
-
- LEXICON CONJUNCTIV  gives flag for conjunctive and prefix ê-
-
-
- LEXICON CNJ_TENSE    gives prefixes and flags for tense in conjunctive
-
-
- LEXICON IMPERATIV    gives flag for imperative (no prefixes)
-
 
  LEXICON VERBLIST   just adds the prefix boundary
-
-
-    ==================
-
-
 
 
 
@@ -726,6 +678,52 @@ The file
  * LEXICON Particles  \\
  * cî+Ipc+Qst:cî # ; 
  * namoya+Ipc+Neg:namoya # ; 
+
+Prefixes
+--------
+Prefixes in UNDEFINED language are bound to beginning of other words.
+
+
+Nouns redirects to AN-IN, BODY, INALIENABLE
+
+
+AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
+
+
+
+
+BODY  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
+
+
+
+INALIENABLE  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
+
+
+ LEXICON Verbs  divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
+
+
+
+ * @U.mood.indep@ INDEPENDENT ;		  
+ * @U.mood.cnj@ CONJUNCTIV ;		   
+ *  IMPERATIV ;		      
+ *  FUTURE_CONDITIONAL ;  
+
+
+ LEXICON INDEPENDENT  gives flags and prefixes for personprefix
+
+
+ LEXICON IND_TENSE  gives flags and prefixes for tense 
+
+
+ LEXICON FUTURE_CONDITIONAL  gives flags for future conditional (no prefix)
+
+ LEXICON CONJUNCTIV  gives flag for conjunctive and prefix ê-
+
+
+ LEXICON CNJ_TENSE    gives prefixes and flags for tense in conjunctive
+
+
+ LEXICON IMPERATIV    gives flag for imperative (no prefixes)
 
 !!Plains Cree pronouns
 
