@@ -53,18 +53,35 @@
 # mihko:mihk INimDECLw-ONESYLL-SG ; !Wolv: NI4w
 # ôsi:ô INDECLosi ; !Wolv: NI4 irr. stem
 
-gawk 'BEGIN { FS="\t"; }
+# STEM VARIATION CASES
+
+# askihk:askihkw ANimDECL ; !Wolv: NA3
+# masinahikanâhtik:masinahikanâhtikw ANDECL ; !Wolv: NA3
+# ihkwa:ihkw ANimDECLw ; !Wolv: NA4w
+# wâhkwa:wâhkw ANimDECLw ; !Wolv: NA4w
+# askekin:askekinw INDECL ; !Wolv: NI3
+# pahkêkin:pahkêkinw INDECL ; !Wolv: NI3
+# mihko:mihk INimDECLw-ONESYLL-SG ; !Wolv: NI4w
+# ôsi:ô INDECLosi ; !Wolv: NI4 irr. stem
+
+
+tr -d '"' |
+
+gawk 'BEGIN { FS="\t"; print "LEXICON STEMLIST"; print ""; }
 NR>1 { lex=$1; pos=$3; gloss=$4; stem=$15; clex="";
 gsub("^[ ]*","",stem); gsub("-$","",stem);
 gsub("[ ]*","",pos); gsub("^[ ]*","",gloss);
 if(pos=="NA-1" || pos=="NA-2") clex="ANDECL";
-if(pos=="NA-3" || pos=="NA-4") clex="ANimDECL";
+if(pos=="NA-3") clex="ANimDECL";
+if(pos=="NA-4") clex="ANimDECL";
 if(pos=="NA-4w") clex="ANimDECLw";
-if(pos=="NI-1" || pos=="NI-2" || pos=="NI-3") clex="INDECL";
-if(pos=="NI-4") clex="INimDECL";
-if(pos=="NI-4w") clex="INimDECLw-ONESYLL-SG";
-if(clex!="" && lex!=stem)
+if(pos=="NI-1" || pos=="NI-2")  clex="INDECL";
+if(pos=="NI-3") clex=="INDECL";
+if(pos=="NI-4") { clex="INimDECL"; gloss=gloss" ! NI-4"; }
+if(pos=="NI-4w") { clex="INimDECLw-ONESYLL-SG"; gsub(".$","",stem); }
+if(clex!="" && lex!=stem && (pos=="NA-3" || pos=="NA-4w" || pos=="NI-3" || pos=="NI-4w"))
    printf "%s:%s %s \"%s\" ;\n", lex, stem, clex, gloss;
-if(clex!="" && lex==stem)
-   printf "%s %s \"%s\" ;\n", lex, clex, gloss;
+else
+  if(clex!="")
+    printf "%s %s \"%s\" ;\n", lex, clex, gloss;
 }'
