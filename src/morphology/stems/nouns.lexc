@@ -19,26 +19,44 @@
 
 !! Wolvengrey types:
 
-!! * NI1  C-Initial Regular NI Stem : cîmân– “canoe, boat”
-!! * NI1  V-Initial Regular NI Stem : astotin– “hat, cap”
-!! * NI2  C-Initial VW NI Stem : mîkisasâkay– “beaded coat, beaded dress”
-!! * NI2  V-Initial VW NI Stem : oskasâkay– “new coat, new dress”
-!! * NI3  C-Initial Cw NI Stem : pahkêkinw– “leather, rawhide”
-!! * NI3  V-Initial Cw NI Stem : askêkinw– “fresh rawhide”
+!! * NI1  C-Initial Regular NI Stem : cîmân “canoe, boat”
+!! * NI1  V-Initial Regular NI Stem : astotin “hat, cap”
+!! * NI2  C-Initial VW NI Stem : mîkisasâkay “beaded coat, beaded dress”
+!! * NI2  V-Initial VW NI Stem : oskasâkay “new coat, new dress”
+!! * NI3  C-Initial Cw NI Stem : pahkêkinw:pahkêkinw “leather, rawhide”
+!! * NI3  V-Initial Cw NI Stem : askêkin:askêkinw “fresh rawhide”
 !! * NI4  C-Initial Single-Syllable NI Stem : wâw– “egg”
 !! * NI4  V-Initial Single-Syllable NI Stem : osk-ây– “new item, new thing”
 !! * NI4  V-Initial Single-Syllable irregular NI Stem : ôs– “canoe, boat”
 !! * NI4w C-Initial Single-Syllable-/w/ NI Stem : mihkw– “blood”
-!! * NA1  C-Initial Regular NA Stem : pahkwêsikan– “bannock”
-!! * NA1  V-Initial Regular NA Stem : asikan– “sock”
-!! * NA2  C-Initial V-Glide NA Stem : kihc-ôkiniy– “tomato”
-!! * NA2  V-Initial V-Glide NA Stem : ayapiy– “net”
-!! * NA3  C-Initial C-/w/ NA Stem : masinahikanâhtikw– “pencil”
+
+!! * NA1  C-Initial Regular NA Stem : pahkwêsikan “bannock”
+!! * NA1  V-Initial Regular NA Stem : asikan “sock”
+!! * NA2  C-Initial V-Glide NA Stem : kihc-ôkiniy “tomato”
+!! * NA2  V-Initial V-Glide NA Stem : ayapiy “net”
+!! * NA3  C-Initial C-/w/ NA Stem : masinahikanâhtik:masinahikanâhtikw– “pencil”
 !! * NA3  V-Initial C-/w/ NA Stem : askihkw– “kettle, pail”
-!! * NA4  C-Initial Single-Syllable NA Stem : nisk– “goose” (and siht– “spruce”)
-!! * NA4  V-Initial Single-Syllable NA Stem : ês– “clam; shell”
-!! * NA4w C-Initial Single-Syllable-/w/ NA Stem : wâhkw– “roe, fish eggs; lump of roe”
-!! * NA4w V-Initial Single-Syllable-/w/ NA Stem : ihkw– “louse”
+!! * NA4  C-Initial Single-Syllable NA Stem : niska “goose” (and siht– “spruce”)
+!! * NA4  V-Initial Single-Syllable NA Stem : esa “clam; shell”
+!! * NA4w C-Initial Single-Syllable-/w/ NA Stem : wâhkwa:wâhkw “roe, fish eggs; lump of roe”
+!! * NA4w V-Initial Single-Syllable-/w/ NA Stem : ihkwa:ihkw “louse”
+
+! Target forms:
+! astotin				INDECL					NI1
+! oskasâkay				INDECL					NI2
+! pahkêkin:pahkêkinw	INDECL					NI3w
+! oskâyi				INimDECL				NI4 +im
+! ôsi:ô					INDECLosi				NI4 irr. stem
+! mihko:mihk			INimDECLw-ONESYLL-SG	NI4w -o, only Sg
+! 
+! asikan				ANDECL					NA1		
+! pahkwêsikan			ANimDECL				NA1 + im
+! ayapiy				ANDECL					NA2
+! askihk:askihkw		ANDECL					NA3
+! askihk:askihkw		ANimDECL				NA3w + im
+! esa					ANimDECL				NA4 +im
+! niska					ANimDECLisis			NA4 +im, only Dim is
+! ihkwa:ihkw			ANimDECLw				NA4w +im
 
 
 !! !!The stems
