@@ -17,12 +17,81 @@
 ! ========================================================================== !
 
 
+
+
 !! The Plains Cree verbs are divided in four groups:
 
 !! # IA: Intransitive animate
 !! # II: Intransitive inanimate
 !! # TA: Transitive animate
 !! # TI: Transitive inanimate
+
+
+
+!! !!!Prefixes
+
+
+LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
+
+@U.mood.indep@ INDEPENDENT ;		 !!= * @CODE@
+@U.mood.cnj@   CONJUNCTIV ;		     !!= * @CODE@ 
+               IMPERATIV ;		     !!= * @CODE@
+               FUTURE_CONDITIONAL ;  !!= * @CODE@
+
+
+LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
+< 0:n 0:i "@U.perspref.NI@"  0:"t2" > IND_TENSE ; !
+< 0:k 0:i "@U.perspref.KI@"  0:"t2" > IND_TENSE ; !
+<         "@U.perspref.NULL@"       > IND_TENSE ; !
+
+
+LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
+<                   "@U.tense.Prs@"     > VERBLIST ; !
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > VERBLIST ; ! removed hyph
+< 0:k 0:î 0:%-      "@U.tense.Prt@"     > VERBLIST ; !
+< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@"  > VERBLIST ; !
+< 0:k 0:a 0:%-      "@U.tense.FutDef@"  > VERBLIST ; !
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > VERBLIST ; !
+< 0:w 0:î 0:%-      "@U.tense.FutInt@"  > VERBLIST ; !
+
+
+LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
+@U.mood.FutCon@ VERBLIST ;
+
+LEXICON CONJUNCTIV !!= @CODE@ gives flag for conjunctive and prefix ê-
+<  0:ê 0:%-       > CNJ_TENSE ; !
+<  0:ê 0:%^EGLOT   > CNJ_TENSE ; !
+
+
+LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
+<        			"@U.tense.Prs@"    > VERBLIST ; !Present
+< 0:k 0:î 0:%-  	"@U.tense.Prt@"    > VERBLIST ;  ! Preterite, 
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"    > VERBLIST ;  ! Preterite,
+< 0:w 0:î 0:%-  	"@U.tense.FutInt@" > VERBLIST ; ! Future Intentional
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" > VERBLIST ; ! Future Intentional
+
+
+LEXICON IMPERATIV   !!= @CODE@ gives flag for imperative (no prefixes)
+@U.mood.imp@  VERBLIST ;
+
+
+
+
+!! Now, lexc directs us to the ../stems/nouns.lexc file,
+!! where we find all the nominal stems. The suffixes are then
+!! found at the end of this file.
+
+
+! ===============================================================
+! ===============================================================
+! ===============================================================
+! ===============================================================
+! ===============================================================
+
+
+
+!! !!!Suffixes
+
 
 
 
