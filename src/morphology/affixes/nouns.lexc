@@ -267,7 +267,7 @@ LEXICON INABLGENERIC !!= * @CODE@ generic forms Sg, Pl, Loc and diminutives
 
 
 LEXICON INALIENABLEPOSS_SG !!= * @CODE@ inanimate possessive declension, only Sg
-!< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" > # ; !Baseform for dep nouns OBS!
+< "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" > # ; !Baseform for dep nouns OBS!
 +N+IN+Sg:%> INSUFF_SG ;
 
 !! !!Animate possessive suffixes
