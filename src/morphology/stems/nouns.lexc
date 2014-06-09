@@ -3854,7 +3854,7 @@ nôsisim:ôsisim ANKININFLni "grandchild" ;!NB! twolc gives oô-  gen.form ôsis
 onâpêmimâw:inâpêm ANKININFL_MONOG "husband" ;
 !wîkimâkan:îkimâkan ANKININFL_MONOG "spouse" ;  !OBS!
 niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ; !OBS! 
-mîkiwâhp+N+IN+Sg:mîkiwâhp NOPREFIX "home" ; !Okimasis:137
+!mîkiwâhp+N+IN+Sg:mîkiwâhp NOPREFIX "home" ; !Okimasis:137
 
 LEXICON BODYSTEMS ! dependent nouns
 !! @LEXNAME@ adds an affixmark and redirects to BODYSTEMLIST 
@@ -3864,7 +3864,7 @@ LEXICON BODYSTEMLIST
 !! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
 mîkiwâhp:îki INALIENABLEPOSS_SG "home" ; !GGI !Wolfart's list: wîkiwâhk, nîkinâhk !Okimasis p 137
 maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml !!= @CODE@	
-maniway+N+IN+Sg:aniway NOPREFIX "cheek" ; !yaml !!= @CODE@	
+!maniway+N+IN+Sg:aniway NOPREFIX "cheek" ; !yaml !!= @CODE@	
 mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml  !!= @CODE@	
 mahkwan:ahkwan INALIENABLEPOSS "heel" ;
 mispiton:ispiton INALIENABLEPOSS "arm" ; !yaml
