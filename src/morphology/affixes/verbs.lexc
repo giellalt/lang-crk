@@ -25,6 +25,32 @@
 !! # TI: Transitive inanimate
 
 
+
+! Auxiliary lexica for the verb dump
+
+LEXICON IACONJ_n 
+IACONJ ;
+LEXICON IACONJ_v 
+IACONJ ;
+LEXICON IICONJ_n 
+IICONJ ;
+LEXICON IICONJ_v 
+IICONJ ;
+
+LEXICON TACONJ_3 
+TACONJ_1 ;
+LEXICON TACONJ_4 
+TACONJ_1 ;
+LEXICON TACONJ_5 
+TACONJ_1 ;
+LEXICON TICONJ_1 
+TICONJ ;
+LEXICON TICONJ_2 
+TICONJ ;
+LEXICON TICONJ_3 
+TICONJ ;
+
+
 !! !!! Intransitive animate (IA)
 
 LEXICON IACONJ !!= @CODE@ splits in 4 moods
