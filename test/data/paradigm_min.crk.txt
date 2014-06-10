@@ -7,17 +7,25 @@
 # It is not possible to mark alternation of the different tags.
 
 	
-N+Gender+Diminutive?+Number
-N+Gender+Diminutive?+Number+Px1Sg+Obviative?
-N+Gender+Diminutive?+Number+Px3Sg+Obviative?
+N+Gender+Number
+N+Gender+Loc
+N+Gender+Number+Px1Sg
+N+Gender+Number+Px4Sg+Obviative?
+N+Gender+Der/Dim+N+Gender+Number
 V+IA
 V+IA+Ind+Prs+1Sg
 V+IA+Ind+Prs+3Sg
+V+IA+Ind+Prs+4Sg
 V+II
+V+II+Ind+Prs+1Sg
 V+II+Ind+Prs+3Sg
+V+II+Ind+Prs+4Sg
 V+TA
-V+TA+Ind+Prs+Aspect?+3Sg+3SgO
+V+TA+Ind+Prs+1Sg+2SgO
+V+TA+Ind+Prs+3Sg+3SgO
+V+TA+Ind+Prs+3Sg+3SgO
 V+TI
+V+TI+Ind+Prs+1Sg
 V+TI+Ind+Prs+3Sg
 
 
