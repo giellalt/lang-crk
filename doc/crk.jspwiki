@@ -206,11 +206,12 @@ Prefixes with a certain phonological content:
 
   LEXICON Root          is where it all starts
 
- * Prefixes ;               
+ * NounPrefixes ;        
+ * VerbPrefixes ;        
  * Pronoun ;             
  * Punctuation ;         
  * Particles ;           
- * Numerals ;           
+ * Numerals ;            
 
 
  *  t2:0       t between prefix and vowel-initial stem
@@ -348,6 +349,8 @@ STEMS adds an affixmark and redirects to STEMLIST
 
 
 
+STEMLIST for nouns getting prefixes ni-, ki-, o- \\
+
 
 
 INALIENABLESTEMS adds an affixmark and redirects to INABLESTEMLIST
@@ -360,8 +363,9 @@ BODYSTEMS adds an affixmark and redirects to BODYSTEMLIST
 
 BODYSTEMLIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
  maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml 	
- maniway+N+IN+Sg:maniway NOPREFIX "cheek" ; !yaml 	
+ !maniway+N+IN+Sg:aniway NOPREFIX "cheek" ; !yaml 	
  mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml  	
+
 
 
 Plains Cree verb stems                       
@@ -421,6 +425,37 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
                           !!!Plains Cree noun morphology                           
 
+
+!!!Prefixes
+
+
+
+NounPrefixes redirects to AN-IN, BODY, INALIENABLE
+
+
+AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
+
+
+
+
+BODY  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
+
+
+
+INALIENABLE  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
+
+
+
+Now, lexc directs us to the ../stems/nouns.lexc file,
+where we find all the nominal stems. The suffixes are then
+found at the end of this file.
+
+
+
+
+!!!Suffixes
+
+
 !!The declinations for Animates
 
 
@@ -428,6 +463,8 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON ANDECLis  for the animate declension, Dim: -is diminutives
 
+
+ * LEXICON ANDECLisis  for the animate declension, Dim: -isis diminutives
 
  * LEXICON ANimDECL  for the animate declension, poss.-im-, Dim: -is
 
@@ -455,10 +492,10 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON ANKININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
 
- * LEXICON ANDECLatim	 for atim and mistatim.
+ * LEXICON ANDECL-ATIM	 for atim and mistatim.
 
 
- * LEXICON ANPOSSatim  is also there to handle the highly irregular atim and mistatim
+ * LEXICON ANPOSS-ATIM  is also there to handle the highly irregular atim and mistatim
 
 
  * LEXICON ANKINPOSS  
@@ -481,10 +518,10 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
  * LEXICON INDECLis  for the inanimate declension, Dim: -is- 
 
- * LEXICON INDECLisis  for the inanimate declension, Dim:: -isis-
+ * LEXICON INDECLisis  for the inanimate declension, Dim: -isis-
 
 
- * LEXICON INDECLosi  for the inanimate declension of ôsi, an irregular noun
+ * LEXICON INDECL-OSI  for the inanimate declension of ôsi, an irregular noun
 
 
  * LEXICON INDIM  for the inanimate diminutives
@@ -564,23 +601,15 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
  * LEXICON PLak  
 
 
- * LEXICON PLwak  
-
-
 !!Locative suffixes
 
  * LEXICON LOC  
 
- * LEXICON ohk_LOC  
-
  * LEXICON LOCahk  
-
-
 
 !!Obviative suffix
  * LEXICON OBVIATIVE 
 
- * LEXICON ANwa_OBV 
 
 !!Special cases
  * LEXICON NOPREFIX  gives diacr.flag for no prefix. Used for hardcoded forms in the lexicon
@@ -688,47 +717,6 @@ Prefixes
 Prefixes in UNDEFINED language are bound to beginning of other words.
 
 
-Nouns redirects to AN-IN, BODY, INALIENABLE
-
-
-AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
-
-
-
-
-BODY  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
-
-
-
-INALIENABLE  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
-
-
- LEXICON Verbs  divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
-
-
-
- * @U.mood.indep@ INDEPENDENT ;		  
- * @U.mood.cnj@ CONJUNCTIV ;		   
- *  IMPERATIV ;		      
- *  FUTURE_CONDITIONAL ;  
-
-
- LEXICON INDEPENDENT  gives flags and prefixes for personprefix
-
-
- LEXICON IND_TENSE  gives flags and prefixes for tense 
-
-
- LEXICON FUTURE_CONDITIONAL  gives flags for future conditional (no prefix)
-
- LEXICON CONJUNCTIV  gives flag for conjunctive and prefix ê-
-
-
- LEXICON CNJ_TENSE    gives prefixes and flags for tense in conjunctive
-
-
- LEXICON IMPERATIV    gives flag for imperative (no prefixes)
-
 !!Plains Cree pronouns
 
 There are more pronoums to be added here.
@@ -783,12 +771,59 @@ Punctuation contains period, comma, parentheses, etc.
 Plains Cree verb morphology                  
 
 
+
+
 The Plains Cree verbs are divided in four groups:
 
 # IA: Intransitive animate
 # II: Intransitive inanimate
 # TA: Transitive animate
 # TI: Transitive inanimate
+
+
+
+!!!Prefixes
+
+
+ LEXICON VerbPrefixes   divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
+
+ * @U.mood.indep@ INDEPENDENT ;		 
+ * @U.mood.cnj@   CONJUNCTIV ;		      
+ *                IMPERATIV ;		     
+ *                FUTURE_CONDITIONAL ;  
+
+
+ LEXICON INDEPENDENT  gives flags and prefixes for personprefix
+
+
+ LEXICON IND_TENSE  gives flags and prefixes for tense 
+
+
+ LEXICON FUTURE_CONDITIONAL  gives flags for future conditional (no prefix)
+
+ LEXICON CONJUNCTIV  gives flag for conjunctive and prefix ê-
+
+
+ LEXICON CNJ_TENSE    gives prefixes and flags for tense in conjunctive
+
+
+ LEXICON IMPERATIV    gives flag for imperative (no prefixes)
+
+
+
+
+Now, lexc directs us to the ../stems/nouns.lexc file,
+where we find all the nominal stems. The suffixes are then
+found at the end of this file.
+
+
+
+
+
+!!!Suffixes
+
+
+
 
 
 
