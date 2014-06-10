@@ -622,7 +622,7 @@ aywêpiwin INDECL "rest; resting; resting place, campground" ; ! singular cf. VA
 âhkwatihcikan INDECL "refrigerator, fridge; freezer" ; ! singular 
 âhkwâtisiwin INDECL "wickedness, viciousness" ; ! singular 
 âhpin INDECL "rawhide" ; ! singular 
-âhpin-ôsi:âhpin-ô INDECLosi "rawhide boat" ; ! singular; plural: âhpin-ôsa  NI-4
+âhpin-ôsi:âhpin-ô INDECL-OSI "rawhide boat" ; ! singular; plural: âhpin-ôsa  NI-4
 âhtascikan INDECL "surveyor's pole; object used to move things from one place to another" ; ! singular 
 âhtaskicikan INDECL "transplant, transplanted vegetable" ; ! singular 
 âkawâstêhon INDECL "umbrella; wagon cover" ; ! singular 
@@ -2724,7 +2724,7 @@ oski-ayisiyiniw ANDECL "young person" ; ! singular
 oski-iskwêw ANimDECLis "young woman" ; ! singular 
 oski-iyinîs ANDECL "young person, young Indian person" ; ! singular, diminutive 
 oski-mînis INDECL "fresh berry" ; ! singular plural generally
-oski-ôsi:oski-ô INDECLosi "new boat" ; ! singular; plural: oski-ôsa  NI-4
+oski-ôsi:oski-ô INDECL-OSI "new boat" ; ! singular; plural: oski-ôsa  NI-4
 oski-pimiy INDECL "fresh lard, fresh grease" ; ! singular 
 oski-wâwi INimDECL "fresh egg" ; ! singular; plural: oski-wâwa  NI-4
 oski-wiyasiwêwin INDECL "new commandment" ; ! singular 
@@ -2776,7 +2776,6 @@ otâhkosiw ANDECL "sick person, patient" ; ! singular
 otâkwanacâhkos ANDECL "evening star" ; ! singular, diminutive 
 otâkwani-mîcisowin INDECL "supper, evening meal" ; ! singular 
 otâmahikan INDECL "hammer" ; ! singular 
-!otânisimâw ANDECL "daughter" ; ! singular only in non-possessed form KINTERM
 otâpahâkan ANDECL "horse, dog, ox used for pulling things; driving horse" ; ! singular 
 otâpân INDECL "wagon" ; ! singular 
 otâpânâsk:otâpânâskw ANDECL "vehicle; tobaggan, sled, car, wagon" ; ! singular 
@@ -2840,7 +2839,7 @@ oyâpiskâtahikan INDECL "anvil" ; ! singular
 ôhow ANDECL-NOPOSS "owl" ; ! singular 
 ôhôsis ANDECL "owlet, young owl" ; ! singular, diminutive 
 ôkîkwa:ôkîkw INDECL "gills (of fish)" ; ! plural 
-ôsi:ô INDECLosi "boat; canoe" ; ! singular; plural: ôsa cf. 1sPoss: nitôt; locative: ôtihk NI-4
+ôsi:ô INDECL-OSI "boat; canoe" ; ! singular; plural: ôsa cf. 1sPoss: nitôt; locative: ôtihk NI-4
 ôtênaw INDECL "town, camp-circle, settlement; city" ; ! singular 
 ôtênâwiwin INDECL "township; realm" ; ! singular 
 pahkahokowin INDECL "pulse" ; ! singular 
@@ -3741,7 +3740,7 @@ waskitaskisin INDECL "overshoe" ; ! singular
 waskitowêyâpiy INDECL "bridging of harness" ; ! singular 
 waskow INDECL "cloud" ; ! singular 
 waskway ANDECL "birch, birch tree" ; ! singular 
-waskway-ôsi:waskway-ô INDECLosi "birch bark canoe" ; ! singular; plural: waskway-ôsa  NI-4
+waskway-ôsi:waskway-ô INDECL-OSI "birch bark canoe" ; ! singular; plural: waskway-ôsa  NI-4
 waskwayâhtik:waskwayâhtikw ANDECL "birch tree, birch wood" ; ! singular 
 waskwayâkan INDECL "birch bark pan" ; ! singular 
 waskwayâpoy INDECL "birch sap" ; ! singular 
@@ -4122,8 +4121,8 @@ omosômimâw:imosôm ANKININFL "grandfather" ;
 nîtisân:îtisân ANKININFLni "sibling" ; !NB! twolc gives oî-
 osîmisimâw:isîmis ANKININFL "younger sibling" ; 
 otôtemimâw:itôtem ANKININFL "friend" ; 
-okâwîmâw:ikâw ANKINiyINFL "mother" ;! -iy- dissappears Okimasis p. 140,  !yaml
-ohtâwîmâw:ohtâw ANKININFL "father" ;   !OBS nohtâwiy, ohtâwiy
+okâwîmâw:ikâw ANKINiyINFL "mother" ;!  !yaml
+ohtâwîmâw:ohtâw ANKINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy, kôhtâwînaw
 omisimâw:imis ANKININFL "older sister" ;
 nikâwis:ikâwis ANKININFLni "mother's sister" ; ! gen.form okâwisimâw??
 osisimâw:isis ANKININFL "mother's brother, father's sister husband" ; 
@@ -4158,10 +4157,21 @@ mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
 misit:isit INALIENABLEPOSS "foot" ; !GGI
 mistikwân:istikwân INALIENABLEPOSS "head" ; !GGI
 mîscakâs:îscakâs INALIENABLEPOSS "hair" ; !GGI
-mîskât:îskât INALIENABLEPOSS "leg" ; !GGI
+mêscakâs:êscakâs INALIENABLEPOSS "hair" ; !Wolv
+miskât:iskât INALIENABLEPOSS "leg" ; !GGI
 mitôn:itôn INALIENABLEPOSS "mouth" ; !GGI
 miskîsik:iskîsik INALIENABLEPOSS "eye" ; !GGI
 mikot:ikot INALIENABLEPOSS "nose" ; !GGI
-mîhtawakay:îhtawakay INALIENABLEPOSS "ear" ; !GGI
-mîyaw:îyaw INALIENABLEPOSS "body" ; !GGI
+mihtawakay:ihtawakay INALIENABLEPOSS "ear" ; !GGI
+miyaw:iyaw INALIENABLEPOSS "body" ; !GGI
+macâs:acâs INALIENABLEPOSS "small stomach, small belly" ;
+mahkwanêyâpiy:ahkwanêyâpiy INALIENABLEPOSS "achilles tendon, tendon at back of heel" ;
+mahkwanikan:ahkwanikan INALIENABLEPOSS "heelbone" ;
+masakay:asakay INALIENABLEPOSS "skin" ;
+maskasiy:askasiy INALIENABLEPOSS "fingernail; claw" ;
+maskatay:askatay INALIENABLEPOSS "stomach-covering; abdominal-wall, belly" ;
+matay:atay INALIENABLEPOSS "belly, abdomen; stomach" ;
+mayakask:ayakaskw INALIENABLEPOSS "palate" ;
+mâskikan:âskikan INALIENABLEPOSS "chest, breast" ;
+
 
