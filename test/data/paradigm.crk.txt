@@ -7,8 +7,8 @@
 # It is not possible to mark alternation of the different tags.
 
 	
-N+Gender+Diminutive?+Number+PossessiveSuffix?
-V+Class+Mood?+Tense?+Aspect?+PersonNumber+PersonNumberObj
+N+Animacy+Diminutive?+Number+PossessiveSuffix?+Obviative?
+V+Class+Mood?+Tense?+Aspect?+PersonNumber+PersonNumberObj?
 
 
 
