@@ -98,9 +98,16 @@ Cond Conditional
 4Sg Fourth Person singular obviative
 1Pl First Person plural exclusive
 12Pl First Person plural inclusive
+2Pl Second Person plural
 3Pl Third Person plural
 4Pl Fourth Person plural obviative
 #PersonNumber
+
+2Sg Second Person singular
+12Pl First Person plural exclusive
+2Pl Third Person plural
+#ImpPersonNumber
+
 
 1SgO FirstO PersonO singular
 2SgO SecondO PersonO singular
@@ -108,6 +115,7 @@ Cond Conditional
 4SgO FourthO PersonO singularO obviative
 1PlO FirstO PersonO pluralO exclusive
 12PlO FirstO PersonO pluralO inclusive
+2PlO Second PersonO plural
 3PlO ThirdO PersonO plural
 4PlO FourthO PersonO pluralO obviative
 #PersonNumberObj
