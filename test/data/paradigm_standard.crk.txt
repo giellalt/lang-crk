@@ -8,11 +8,13 @@
 
 	
 N+Gender+Diminutive?+Number+PossessiveSuffix?+Obviative?
-V+ClassIA+Mood+Tense?+Aspect?+PersonNumber
-V+ClassII+Mood+Tense?+Aspect?+PersonNumber
-V+ClassTrans+Mood+Tense?+Aspect?+PersonNumber+PersonNumberObj
-V+ClassIA+Impmood+ImpTense+ImpPersonNumber
-V+ClassTrans+Impmood+ImpTense+ImpPersonNumber+PersonNumberObj
+V+IA+Mood+Tense+PersonNumber
+V+IA+Ind+Fut+Aspect+PersonNumber
+V+IA+Imp+ImpTense+ImpPersonNumber
+V+IA+Fut+Cond+PersonNumber
+V+II+Mood+Tense+PersonNumber
+V+TA+Mood+Tense+PersonNumber+PersonNumberObj
+V+TI+Imp+ImpTense+ImpPersonNumber
 
 
 #V+IA+Mood?+Tense?+Aspect?+PersonNumber?
