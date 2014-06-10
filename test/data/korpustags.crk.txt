@@ -6,9 +6,8 @@
 
 %     Table of contents
 %  0. A short explanation
-%  1. Structure of the different POS (the details of sect. 1 are just the sme ones)
-%  2. List of the tags, and their internal distribution (these lists are the smj ones)
-
+%  1. Structure of the different POS  
+%  2. List of the tags, and their internal distribution 
 
 
 % The Document has two parts. 
@@ -38,10 +37,10 @@
 % Verb: V
 % Class: IA|II|TA|TI
 % Pol: Neg
-% Mood: Ind|Imp|Sbj
-% Tense Prs
-% Aspect Imm|Int|Dur
-% PersonNumber: 1Sg|2Sg|3Sg|3oSg|3iSg|1Pl|12Pl|3Pl|3oPl
+% Mood: Ind|Imp|Cnj
+% Tense: Prs|Prt|Fut
+% Aspect: Imm|Def|Int|Cond
+% PersonNumber: 1Sg|2Sg|3Sg|4Sg|1Pl|12Pl|3Pl|4Pl
 
 % Pronoun: Pron
 
@@ -56,45 +55,46 @@ N Noun
 IA Intransitive Animate
 II Intransitive Inanimate
 TA Transitive Animate
-TI Trnasitive Inanimate
+TI Transitive Inanimate
 #Class
 
 Neg Negative
 #Pol
 
-Ind Indicative
+Ind Independent
 Imp Imperative
-Sbj Subjunctive
+Cnj Conjunctive
 #Mood
 
 Imm Immediate
-Int Intermediate
-Dur Durative
+Def Definitive
+Int Intentional
+Cond Conditional
 #Aspect
 
 1Sg First Person singular
 2Sg Second Person singular
 3Sg Third Person singular
-3oSg Third Person singular obviative
+4Sg Fourth Person singular obviative
 1Pl First Person plural exclusive
 12Pl First Person plural inclusive
 3Pl Third Person plural
-3oPl Third Person plural obviative
+4Pl Fourth Person plural obviative
 #PersonNumber
 
 1SgO FirstO PersonO singular
 2SgO SecondO PersonO singular
 3SgO ThirdO PersonO singular
-3oSgO ThirdO PersonO singularO obviative
+4SgO FourthO PersonO singularO obviative
 1PlO FirstO PersonO pluralO exclusive
 12PlO FirstO PersonO pluralO inclusive
 3PlO ThirdO PersonO plural
-3oPlO ThirdO PersonO pluralO obviative
+4PlO FourthO PersonO pluralO obviative
 #PersonNumberObj
 
 Prs
 Fut
-Del
+Prt
 #Tense
 
 AN Animate noun
@@ -104,13 +104,19 @@ IN Inanimate noun
 Dim Diminutive
 #Diminutive
 
-+Px1Sg First Person singular possessive suffix
-+Px2Sg Second Person singular possessive suffix 
-+Px3Sg Third Person singular possessive suffix
-+Px1Pl First Person plural possessive suffix exclusive
-+Px12Pl First Person plural possessive suffix inclusive
-+Px2Pl Second Person plural possessive suffix
-+Px3Pl Third Person plural possessive suffix
+Obv Obviative
+#Obviative
+
+
+Px1Sg First Person singular possessive suffix
+Px2Sg Second Person singular possessive suffix 
+Px3Sg Third Person singular possessive suffix
+Px4Sg Fourth Person singular possessive suffix
+Px1Pl First Person plural possessive suffix exclusive
+Px12Pl First Person plural possessive suffix inclusive
+Px2Pl Second Person plural possessive suffix
+Px3Pl Third Person plural possessive suffix
+Px4Pl Fourth Person plural possessive suffix
 #PossessiveSuffix
 
 Pl Plural
