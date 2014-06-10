@@ -58,16 +58,19 @@ TA Transitive Animate
 TI Transitive Inanimate
 #Class
 
-Neg Negative
-#Pol
-
 Ind Independent
 Imp Imperative
 Cnj Conjunctive
 #Mood
 
+Prs
+Fut
+Prt
+#Tense
+
 Imm Immediate
 Def Definitive
+Del Delayed
 Int Intentional
 Cond Conditional
 #Aspect
@@ -92,11 +95,6 @@ Cond Conditional
 4PlO FourthO PersonO pluralO obviative
 #PersonNumberObj
 
-Prs
-Fut
-Prt
-#Tense
-
 AN Animate noun
 IN Inanimate noun
 #Gender
@@ -106,7 +104,6 @@ Dim Diminutive
 
 Obv Obviative
 #Obviative
-
 
 Px1Sg First Person singular possessive suffix
 Px2Sg Second Person singular possessive suffix 
