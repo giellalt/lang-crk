@@ -98,6 +98,12 @@ ANABSDECL ;
 +N+AN:%> ANSUFF_LOC ;
 +N+AN+Der/Dim:%>is%^DIM%> ANDIM ;
 
+! LEXICON ANDECLisis !!= * @CODE@ for the animate declension, Dim: -isis diminutives
+! ANABSDECL ;
+! +N+AN+Sg:%> ANSUFF_SG ;
+! +N+AN+Pl:%> ANSUFF_PL ;
+! +N+AN:%> ANSUFF_LOC ;
+! +N+AN+Der/Dim:%>is%^DIM%is> ANDIM ;
 
 LEXICON ANimDECL !!= * @CODE@ for the animate declension, poss.-im-, Dim: -is
                                      ANABSDECL  ;
@@ -263,7 +269,7 @@ INABSDECL ;
 +N+IN:%> INSUFF_LOC ;
 +N+IN+Der/Dim:%>is%^DIM%> INDIM ;
 
-LEXICON INDECLisis !!= * @CODE@ for the inanimate declension, Dim:: -isis-
+LEXICON INDECLisis !!= * @CODE@ for the inanimate declension, Dim: -isis-
 INABSDECL ;
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
