@@ -40,6 +40,8 @@ found at the end of this file.
  * LEXICON ANDECLis  for the animate declension, Dim: -is diminutives
 
 
+ * LEXICON ANDECLisis  for the animate declension, Dim: -isis diminutives
+
  * LEXICON ANimDECL  for the animate declension, poss.-im-, Dim: -is
 
  * LEXICON ANimDECLisis  for the animate declension, poss.-im-, Dim: -isis
@@ -66,10 +68,10 @@ found at the end of this file.
 
  * LEXICON ANKININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
 
- * LEXICON ANDECLatim	 for atim and mistatim.
+ * LEXICON ANDECL-ATIM	 for atim and mistatim.
 
 
- * LEXICON ANPOSSatim  is also there to handle the highly irregular atim and mistatim
+ * LEXICON ANPOSS-ATIM  is also there to handle the highly irregular atim and mistatim
 
 
  * LEXICON ANKINPOSS  
@@ -92,10 +94,10 @@ found at the end of this file.
 
  * LEXICON INDECLis  for the inanimate declension, Dim: -is- 
 
- * LEXICON INDECLisis  for the inanimate declension, Dim:: -isis-
+ * LEXICON INDECLisis  for the inanimate declension, Dim: -isis-
 
 
- * LEXICON INDECLosi  for the inanimate declension of ôsi, an irregular noun
+ * LEXICON INDECL-OSI  for the inanimate declension of ôsi, an irregular noun
 
 
  * LEXICON INDIM  for the inanimate diminutives
@@ -175,23 +177,15 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
  * LEXICON PLak  
 
 
- * LEXICON PLwak  
-
-
 !!Locative suffixes
 
  * LEXICON LOC  
 
- * LEXICON ohk_LOC  
-
  * LEXICON LOCahk  
-
-
 
 !!Obviative suffix
  * LEXICON OBVIATIVE 
 
- * LEXICON ANwa_OBV 
 
 !!Special cases
  * LEXICON NOPREFIX  gives diacr.flag for no prefix. Used for hardcoded forms in the lexicon
