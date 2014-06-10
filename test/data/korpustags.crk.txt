@@ -59,26 +59,46 @@ TI Transitive Inanimate
 #Class
 
 Ind Independent
-Imp Imperative
 Cnj Conjunctive
 #Mood
 
 Prs
 Fut
 Prt
-Imm
-Del
 #Tense
 
-Def Definitive
+Imp
+#Impmood
+
+
+Imm 
+Def 
+#ImpTense
+
+
+Del Delayed
 Int Intentional
 Cond Conditional
 #Aspect
 
 1Sg First Person singular
+2Sg Second Person singular
+3Sg Third Person singular
+4Sg Fourth Person singular obviative
+1Pl First Person plural exclusive
+12Pl First Person plural inclusive
+3Pl Third Person plural
+4Pl Fourth Person plural obviative
 #PersonNumber
 
 1SgO FirstO PersonO singular
+2SgO SecondO PersonO singular
+3SgO ThirdO PersonO singular
+4SgO FourthO PersonO singularO obviative
+1PlO FirstO PersonO pluralO exclusive
+12PlO FirstO PersonO pluralO inclusive
+3PlO ThirdO PersonO plural
+4PlO FourthO PersonO pluralO obviative
 #PersonNumberObj
 
 AN Animate noun
@@ -92,6 +112,14 @@ Obv Obviative
 #Obviative
 
 Px1Sg First Person singular possessive suffix
+Px2Sg Second Person singular possessive suffix 
+Px3Sg Third Person singular possessive suffix
+Px4Sg Fourth Person singular possessive suffix
+Px1Pl First Person plural possessive suffix exclusive
+Px12Pl First Person plural possessive suffix inclusive
+Px2Pl Second Person plural possessive suffix
+Px3Pl Third Person plural possessive suffix
+Px4Pl Fourth Person plural possessive suffix
 #PossessiveSuffix
 
 Pl Plural
