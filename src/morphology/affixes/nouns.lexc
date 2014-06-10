@@ -98,6 +98,8 @@ ANABSDECL ;
 +N+AN:%> ANSUFF_LOC ;
 +N+AN+Der/Dim:%>is%^DIM%> ANDIM ;
 
+! The following does not seem to work, even though it is a carbon copy of ANDECLis and INDECLisis
+
 ! LEXICON ANDECLisis !!= * @CODE@ for the animate declension, Dim: -isis diminutives
 ! ANABSDECL ;
 ! +N+AN+Sg:%> ANSUFF_SG ;
