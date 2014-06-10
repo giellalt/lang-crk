@@ -100,12 +100,12 @@ ANABSDECL ;
 
 ! The following does not seem to work, even though it is a carbon copy of ANDECLis and INDECLisis
 
-! LEXICON ANDECLisis !!= * @CODE@ for the animate declension, Dim: -isis diminutives
-! ANABSDECL ;
-! +N+AN+Sg:%> ANSUFF_SG ;
-! +N+AN+Pl:%> ANSUFF_PL ;
-! +N+AN:%> ANSUFF_LOC ;
-! +N+AN+Der/Dim:%>is%^DIM%is> ANDIM ;
+LEXICON ANDECLisis !!= * @CODE@ for the animate declension, Dim: -isis diminutives
+ ANABSDECL ;
++N+AN+Sg:%> ANSUFF_SG ;
++N+AN+Pl:%> ANSUFF_PL ;
++N+AN:%> ANSUFF_LOC ;
++N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
 
 LEXICON ANimDECL !!= * @CODE@ for the animate declension, poss.-im-, Dim: -is
                                      ANABSDECL  ;
