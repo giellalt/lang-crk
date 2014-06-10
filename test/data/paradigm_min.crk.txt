@@ -7,12 +7,14 @@
 # It is not possible to mark alternation of the different tags.
 
 	
-N+Gender+Diminutive?+Number+PossessiveSuffix?+Obviative?
-V+ClassIA+Mood+Tense?+Aspect?+PersonNumber
-V+ClassII+Mood+Tense?+Aspect?+PersonNumber
-V+ClassTrans+Mood+Tense?+Aspect?+PersonNumber+PersonNumberObj
-V+ClassIA+Impmood+ImpTense+ImpPersonNumber
-V+ClassTrans+Impmood+ImpTense+ImpPersonNumber+PersonNumberObj
+N+Gender+Diminutive?+Number
+N+Gender+Diminutive?+Number+Px1Sg+Obviative?
+N+Gender+Diminutive?+Number+Px3Sg+Obviative?
+V+IA+Ind+Prs+Aspect?+1Sg
+V+IA+Ind+Prs+Aspect?+3Sg
+V+II+Ind+Prs+Aspect?+3Sg
+V+TA+Ind+Prs+Aspect?+3Sg+3SgO
+V+TI+Ind+Prs+3Sg
 
 
 #V+IA+Mood?+Tense?+Aspect?+PersonNumber?
