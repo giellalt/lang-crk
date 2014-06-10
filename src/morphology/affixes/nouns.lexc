@@ -278,7 +278,7 @@ INABSDECL ;
 +N+IN+Der/Dim:%>is%^DIMis%> INDIM ;
 
 
-LEXICON INDECLosi !!= * @CODE@ for the inanimate declension of ôsi, an irregular noun
+LEXICON INDECL-OSI !!= * @CODE@ for the inanimate declension of ôsi, an irregular noun
 < "+N":s "+IN":i "+Sg":0 "@U.noun.abs@" >  SG_ ; !
 < "+N":s "+IN":0 "+Pl":0 "@U.noun.abs@" >  PLa ; !
 < "+N":s "+IN":0 "@U.noun.abs@" >  LOC ; !
