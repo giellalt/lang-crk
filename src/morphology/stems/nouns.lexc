@@ -78,7 +78,7 @@ LEXICON STEMLIST
 !! @LEXNAME@ for nouns getting prefixes ni-, ki-, o- \\
 ! asikan ANDECL ; !x= * @CODE@ Wolv: NA1 
 ! pahkwêsikan ANimDECL ; !x= * @CODE@  Wolv: NA1 + im
-! astotin INDECL ; !x= * @CODE@ Wolv: NI1
+!astotin INDECL ; !x= * @CODE@ Wolv: NI1
 ! cîmân INDECL ; !x= @CODE@ Wolv: NI1 
 ! maskisin INDECLis ; !x= * @CODE@ INDECL but only -is Dim
 ! ayapiy ANDECL ; !x= * @CODE@ Wolv: NA2
@@ -88,8 +88,8 @@ LEXICON STEMLIST
 ! masinahikanâhtik:masinahikanâhtikw ANDECL ; !x= * @CODE@ Wolv: NA3
 ! pahkêkin:pahkêkinw INDECL ; !x= * @CODE@ Wolv: NI3w
 ! askekin:askekinw INDECL ; !x= @CODE@ Wolv: NI3w
-! askihk:askihkw ANimDECL ; !x= * @CODE@ * Wolv: NA3w + im
-! esa ANimDECL ; !x= * @CODE@ Wolv: NA4 +im
+! askihk:askihkw ANimDECL ; !x= * @CODE@ * Wolv: NA3w + im 
+esa ANimDECL ; !x= * @CODE@ Wolv: NA4 +im
 ! niska ANimDECLisis ; !x= * @CODE@ Wolv: NA4 +im, only Dim is
 ! oskâyi INimDECL ; !x= * @CODE@ Wolv: NI4 +im
 ! wâwi INimDECL ; !x= @CODE@ Wolv: NI4 +im
@@ -185,12 +185,12 @@ LEXICON STEMLIST
 ! masinahikan INDECL "book" ; !GGI
 ! mîkiwâhp INDECL "tipi" ; !Wolfart's list: mîkiwâhpihk
 ! wîkiwin INDECL "home" ;
-! wayasit INDECLis "hoof" ; !yaml !possibly -is in Dim
+wayasit INDECLis "hoof" ; !yaml !possibly -is in Dim
 ! wâskahikan INDECL "house" ; !GGI
-! atim ANDECLatim "dog" ; ! -wak, -ohk, -wa !yaml  
-! atim:têm ANPOSSatim "dog-possessed" ; !this is the stem for atim when it is inflected for person
-! mistatim ANDECLatim "horse" ; ! mistatimwa GGI:46 Dim: miscacimosis
-! mistatim+N+AN+Sg+Px1Sg:nitêm NOPREFIX "horse-possessed" ; !"my horse" is nitêm, no other poss.infl.  
+!atim ANDECL-ATIM "dog" ; ! -wak, -ohk, -wa !yaml  
+!atim:têm ANPOSS-ATIM "dog-possessed" ; !this is the stem for atim when it is inflected for person
+!mistatim ANDECL-ATIM "horse" ; ! mistatimwa GGI:46 Dim: miscacimosis
+!mistatim+N+AN+Sg+Px1Sg:nitêm NOPREFIX "horse-possessed" ; !"my horse" is nitêm, no other poss.infl.  
 ! mitâs:tâs ANKINPOSS "pants" ; !Wolfart's list: otâsihk
 ! mitâs+N+AN+Sg:mitâs NOPREFIX "pants" ; !Wolfart's list: otâsihk
 ! mitîhiy:tîhiy ANKINPOSS "shoulderblade" ; !OBS -iy
@@ -263,7 +263,7 @@ akwâkopiy INDECL "green, slimy water" ; ! singular
 akwâkopîwi-sâkahikan INDECL "Green Lake, SK" ; ! singular 
 akwâminakasiy ANDECL "thorn, thorn-bush" ; ! singular 
 akwâwân INDECL "drying rack" ; ! singular 
-amisk:amiskw ANDECL "beaver" ; ! singular 
+amisk:amiskw ANimDECL "beaver" ; ! singular 
 amisko-kipahikan INDECL "beaver dam" ; ! singular 
 amisko-sâkahikan INDECL "Amisk Lake, SK; literally: beaver lake" ; ! singular 
 amisko-sîpiy INDECL "beaver river" ; ! singular 
@@ -292,7 +292,7 @@ anâskânâhtikwa:anâskânâhtikw INDECL "floor boards, flooring" ; ! plural
 anâskânis INDECL "baby blanket; small sheet, mat, matting, blanket" ; ! singular, diminutive 
 anâskâsimon INDECL "mattress" ; ! singular 
 anâskêwin INDECL "flooring, linoleum; something used as matting" ; ! singular 
-anikwacâs ANDECL "squirrel; gopher" ; ! singular 
+anikwacâs ANimDECLis "squirrel; gopher" ; ! singular 
 anikwacâsi-mîciwin INDECL "peanut butter" ; ! singular 
 anikwacâsi-pimiy INDECL "gopher fat" ; ! singular 
 anohc-kaskâpiskahikana INDECL "today's canned goods" ; ! plural plural reference only
@@ -312,7 +312,7 @@ apihkêsîs ANDECL "spider" ; ! singular, diminutive diminutivized nominalizatio
 apihkêsîs-ayapiy ANDECL "spider web" ; ! singular 
 apihkêsîs-sakimêwayân ANDECL "spider web" ; ! singular 
 apisâsin:apisâsinw INDECL "small thing" ; ! singular conversion of an Independent VII stem for use as a noun
-apiscatim:apiscatimw ANDECL "small dog" ; ! singular 
+apiscatim:apiscatimw ANDECL-ATIM "small dog" ; ! singular 
 apiscawâsis ANDECL "small child; newborn baby" ; ! singular 
 apiscânakos ANDECL "small female dog, bitch" ; ! singular, diminutive 
 apiscâpânis INDECL "buggy; small car" ; ! singular, diminutive 
@@ -400,8 +400,8 @@ askâhtik:askâhtikw INDECL "green wood (cut from green logs)" ; ! singular
 askâhtikwâhtik:askâhtikwâhtikw ANDECL "green tree; freshly peeled tree" ; ! singular 
 askâhtikwâhtik:askâhtikwâhtikw INDECL "freshly peeled log or stick" ; ! singular 
 askêkin:askêkinw INDECL "fresh rawhide" ; ! singular 
-aski-pahkwêsikan ANDECL "flour" ; ! singular 
-askihk:askihkw ANDECL "pail, bucket; kettle; pot" ; ! singular wC slang: my vagina
+aski-pahkwêsikan ANimDECL "flour" ; ! singular 
+askihk:askihkw ANimDECL "pail, bucket; kettle; pot" ; ! singular wC slang: my vagina
 askihkohkân ANDECL "train engine, steam engine; engine, motor" ; ! singular 
 askihkohkânis ANDECL "tractor; motor" ; ! singular, diminutive 
 askihkos ANDECL "little pail; little kettle, pot ;; outboard motor" ; ! singular, diminutive see also askihkohkân, pakâhcikan-askihk
@@ -479,7 +479,8 @@ atihkowayân ANDECL "caribou hide" ; ! singular
 atihkowiyâs INDECL "caribou meat; venison" ; ! singular 
 atihkwasiniy ANDECL "hockey stone; caribou testicle" ; ! singular 
 atihkwâpêmak:atihkwâpêmakw ANDECL "birch or deer willow" ; ! singular possibly NI-3
-atim:atimw ANDECL "dog; horse; beast of burden" ; ! singular 
+atim:atimw ANDECL-ATIM "dog; horse; beast of burden" ; ! singular 
+atim:têm ANPOSS-ATIM "dog-possessed" ; !
 atimo-kisêyiniw ANDECL "dog of an old man" ; ! singular used as a curse; also voc
 atimo-mîciwin INDECL "dog food" ; ! singular 
 atimocisk ANDECL "dog's ass" ; ! singular conversion from NI-1; used as an insult
@@ -497,7 +498,7 @@ atoskêhâkan ANDECL "nursing aide, orderly" ; ! singular
 atoskêwin INDECL "work, labour, employment" ; ! singular 
 atoskêwitâs ANDECL "overalls; work pants" ; ! singular 
 atoskêyâkan ANDECL "servant, workman" ; ! singular [ý] as alternant for /h/; **hý
-atoskêyâkaniskwêw ANDECL "female servant" ; ! singular [ý] as alternant for /h/; **hý
+atoskêyâkaniskwêw ANimDECLis "female servant" ; ! singular [ý] as alternant for /h/; **hý
 atôspiy ANDECL "older tree; orange-coloured willow" ; ! singular 
 atôspowinânâhtik:atôspowinânâhtikw INDECL "table" ; ! singular 
 awahkâkan ANDECL "slave" ; ! singular 
@@ -539,7 +540,7 @@ ayamihêwi-saskamon INDECL "the host; Holy Communion" ; ! singular
 ayamihêwikamik:ayamihêwikamikw INDECL "church, church building" ; ! singular 
 ayamihêwikimâw ANDECL "minister, preacher, priest, missionary" ; ! singular 
 ayamihêwisîhtwâwin INDECL "Christian living" ; ! singular 
-ayamihêwiskwêw ANDECL "nun" ; ! singular 
+ayamihêwiskwêw ANimDECLis "nun" ; ! singular 
 ayamihêwiyiniw ANDECL "priest, minister, preacher, missionary" ; ! singular 
 ayamiwin INDECL "speech, word; language" ; ! singular more commonly wC and sC
 ayapacinâs INDECL "small hill; rolling hill country" ; ! singular, diminutive 
@@ -558,7 +559,7 @@ ayâwin INDECL "possession, thing owned" ; ! singular
 ayâwin INDECL "place of residence; state of being" ; ! singular 
 ayêhkwêsis ANDECL "young castrated bull; steer" ; ! singular, diminutive 
 ayêhkwêw ANDECL "castrated animal, bull; ox" ; ! singular 
-ayêhkwêwatim:ayêhkwêwatimw ANDECL "castrated horse (gelding) or dog" ; ! singular 
+ayêhkwêwatim:ayêhkwêwatimw ANDECL-ATIM "castrated horse (gelding) or dog" ; ! singular 
 ayi INimDECL "one, thing" ; ! singular; plural: aya generally only found in NI-4 compounds NI-4
 ayicîminak ANDECL "peas" ; ! plural 
 ayis ANDECL "someone" ; ! singular, diminutive generally only occurs in compounds with a preceding descriptor
@@ -628,7 +629,7 @@ aywêpiwin INDECL "rest; resting; resting place, campground" ; ! singular cf. VA
 âkayâsîmowin INDECL "the English language; speaking English" ; ! singular 
 âkayâsîw ANDECL "Englishman" ; ! singular 
 âkayâsîwi-ayamihêwiyiniw ANDECL "Anglican minister" ; ! singular 
-âkayâsîwiskwêw ANDECL "English woman" ; ! singular 
+âkayâsîwiskwêw ANimDECLis "English woman" ; ! singular 
 âkayâsîwiyiniw ANDECL "English speaker" ; ! singular 
 âkohkwêhon INDECL "veil, shade for eyes; blinders" ; ! singular 
 âkwâhonihtak:âkwâhonihtakw INDECL "driftwood" ; ! singular 
@@ -675,7 +676,7 @@ aywêpiwin INDECL "rest; resting; resting place, campground" ; ! singular cf. VA
 âpihkwahikanis INDECL "small lock; little key" ; ! singular, diminutive 
 âpiht INDECL "flint for starting fire" ; ! singular 
 âpihtawikosisân ANDECL "Métis, halfbreed" ; ! singular 
-âpihtawikosisâniskwêw ANDECL "Métis woman, halfbreed woman" ; ! singular 
+âpihtawikosisâniskwêw ANimDECLis "Métis woman, halfbreed woman" ; ! singular 
 âpihtâ-kîsikani-mîcisowin INDECL "lunch, dinner; literally: mid-day meal" ; ! singular 
 âpihtâ-kîsikâwi-mîcisowin INDECL "noon meal, lunch, dinner; literally: mid-day meal" ; ! singular 
 âpihtâ-piponi-pîsim:âpihtâ-piponi-pîsimw ANDECL "Mid-Winter Moon; January" ; ! singular 
@@ -706,12 +707,12 @@ aywêpiwin INDECL "rest; resting; resting place, campground" ; ! singular cf. VA
 âyiman INDECL "difficult thing" ; ! singular conversion from VII-n; cf. kâ-âýimahk
 âyimihtowin INDECL "trouble" ; ! singular 
 âyimisiwin INDECL "hardship" ; ! singular 
-âyimisîwatim:âyimisîwatimw ANDECL "wild, difficult horse" ; ! singular 
+âyimisîwatim:âyimisîwatimw ANDECL-ATIM "wild, difficult horse" ; ! singular 
 âyimôhtowin INDECL "gossip; talking about one another" ; ! singular 
 âyimômitowin INDECL "gossip; talking about one another" ; ! singular 
 cacêkahkwân INDECL "lance, dart" ; ! singular 
 cacêmâpicês ANDECL "short-toothed person" ; ! singular, diminutive, reduplicated /cacêm-/: cf. reduplicated form of /cim-/
-cahcahkâyow ANDECL "blackbird" ; ! singular 
+cahcahkâyow ANimDECLisis "blackbird" ; ! singular 
 cahcahkâyôsis ANDECL "small blackbird, blackbird hatchling" ; ! singular, diminutive 
 cahcahkiw ANDECL "pelican; crane" ; ! singular 
 cahcakipêwasinastêwêkin:cahcakipêwasinastêwêkinw INDECL "polka dot material" ; ! singular 
@@ -802,7 +803,7 @@ côhkâp ANDECL "person with wide-open eyes" ; ! singular nickname formed by sou
 côwêhkanâpisîs ANDECL "dragonfly" ; ! singular, diminutive 
 êmihkwân ANDECL "spoon; ladle" ; ! singular 
 êmihkwânis ANDECL "table spoon, teaspoon" ; ! singular, diminutive 
-êsa ANDECL "clam; clam shell, seashell" ; ! singular 
+êsa ANimDECL "clam; clam shell, seashell" ; ! singular 
 êsahamânis ANDECL "spoon; clam used as a spoon" ; ! singular, diminutive 
 êsawêhkwak:êsawêhkwakw ANDECL "square needle for sewing leather" ; ! plural 
 êsawêhkwakos ANDECL "small square needle for sewing leather" ; ! singular, diminutive 
@@ -812,7 +813,7 @@ côwêhkanâpisîs ANDECL "dragonfly" ; ! singular, diminutive
 êskan ANDECL "horn, antler" ; ! singular 
 êskanikan ANDECL "part of a horn, antler" ; ! singular 
 êyihkwêw ANDECL "steer; castrated animal ;; transvestite, hermaphrodite" ; ! singular 
-êyihkwêwatim:êyihkwêwatimw ANDECL "gelding" ; ! singular 
+êyihkwêwatim:êyihkwêwatimw ANDECL-ATIM "gelding" ; ! singular 
 êyik:êyikw ANDECL "ant" ; ! singular wC: ant, spider
 êyiko-wîsti INimDECL "anthill" ; ! singular; plural: êýiko-wîsta  NI-4
 êyikos ANDECL "ant, small ant" ; ! singular, diminutive wC: ant; spider
@@ -864,7 +865,7 @@ iskwêsis ANDECL "girl, little girl" ; ! singular, diminutive
 iskwêsisâpoy INDECL "beer" ; ! singular 
 iskwêsisihkân ANDECL "barley ;; girl doll" ; ! singular also NI-1
 iskwêsisihkânâpoy INDECL "beer; literally: barley liquid" ; ! singular 
-iskwêw ANDECL "woman, female adult" ; ! singular 
+iskwêw ANimDECLis "woman, female adult" ; ! singular 
 iskwêw-atoskêwin INDECL "woman's work" ; ! singular 
 iskwêw-atoskêyâkan ANDECL "maid, female servant; woman's servant" ; ! singular 
 iskwêw-âya ANDECL "female being" ; ! singular 
@@ -910,7 +911,7 @@ itwêwin INDECL "word; the saying so, such speech" ; ! singular
 iyâpêsis ANDECL "young bull; young male animal" ; ! singular, diminutive 
 iyâpêw ANDECL "buck, bull moose; male animal" ; ! singular 
 iyikopiwi-pîsim:iyikopiwi-pîsimw ANDECL "Frost Moon; November" ; ! singular 
-iyinaskihk:iyinaskihkw ANDECL "kettle" ; ! singular 
+iyinaskihk:iyinaskihkw ANimDECL "kettle" ; ! singular 
 iyinâhtik:iyinâhtikw ANDECL "white spruce" ; ! singular 
 iyini-kinosêw ANDECL "large fish, ordinary fish; pike, jackfish" ; ! singular 
 iyinico-pimîs INDECL "ordinary grease" ; ! singular, diminutive 
@@ -926,7 +927,7 @@ iyiniwacis ANDECL "bean, green bean" ; ! singular, diminutive
 iyinîhkân ANDECL "an image, likeness of man" ; ! singular 
 iyinîsiwin INDECL "wisdom, intelligence; knowledge" ; ! singular 
 iyinîwistikwân INDECL "human head" ; ! singular 
-iyipahtâwatim:iyipahtâwatimw ANDECL "trotting horse" ; ! singular 
+iyipahtâwatim:iyipahtâwatimw ANDECL-ATIM "trotting horse" ; ! singular 
 iyisâhowin INDECL "resistance, resisting temptation, restraint" ; ! singular 
 iyîhkwêw ANDECL "transvestite" ; ! singular 
 iyîpêhcâw INDECL "sloping ground" ; ! singular 
@@ -994,7 +995,7 @@ kaskitêwahkêsiw ANDECL "black fox" ; ! singular
 kaskitêwasâkay INDECL "black coat" ; ! singular 
 kaskitêwaskisin INDECL "black shoe" ; ! singular 
 kaskitêwastim:kaskitêwastimw ANDECL "black horse" ; ! singular 
-kaskitêwatim:kaskitêwatimw ANDECL "dark horse, black horse, black dog" ; ! singular 
+kaskitêwatim:kaskitêwatimw ANDECL-ATIM "dark horse, black horse, black dog" ; ! singular 
 kaskitêwatisikan INDECL "black dye" ; ! singular 
 kaskitêwayasit ANDECL "Blackfoot Indian" ; ! singular 
 kaskitêwayân INDECL "black pelt, black clothing" ; ! singular 
@@ -1063,7 +1064,7 @@ kâskikwâcikanis INDECL "rake" ; ! singular, diminutive
 kâskipâson INDECL "razor" ; ! singular 
 kâsôhikan INDECL "hunting blind" ; ! singular kâsô- itself is undoubtedly derived from /kâT-/ + /-o/ with lengthened final vowel
 kâsôstâtowin INDECL "hide and seek game" ; ! singular 
-kâspi-pahkwêsikan ANDECL "biscuit" ; ! singular 
+kâspi-pahkwêsikan ANimDECL "biscuit" ; ! singular 
 kâspisikan INDECL "coffee" ; ! singular 
 kâtikan INDECL "bead used in hide and guess game" ; ! singular 
 kâwiy ANDECL "porcupine-quill" ; ! singular pl generally: kâwiyak
@@ -1072,7 +1073,7 @@ kêhkêhk:kêhkêhkw ANDECL "hawk, sparrow hawk; falcon" ; ! singular possible o
 kêhkêhkowêw ANDECL "Hawk-Voice, Speaks as a Hawk" ; ! singular 
 kêhtê-amisk:kêhtê-amiskw ANDECL "old beaver" ; ! singular 
 kêhtê-aya ANDECL "elder, old-one, old person" ; ! singular 
-kêhtê-iskwêw ANDECL "old woman" ; ! singular 
+kêhtê-iskwêw ANimDECLis "old woman" ; ! singular 
 kêhtê-wêmistikôsiw ANDECL "an old Frenchman" ; ! singular 
 kêhtêskwêw ANDECL "old woman; respected elder woman" ; ! singular 
 kêhtêstim:kêhtêstimw ANDECL "old horse; old dog" ; ! singular 
@@ -1104,10 +1105,10 @@ kihci-mihti INimDECL "big club, big stick" ; ! singular; plural: kihci-mihta  NI
 kihci-môhkomân ANDECL "American; literally: great-knife" ; ! singular 
 kihci-môhkomân INDECL "a big knife" ; ! singular 
 kihci-môhkomânaskiy INDECL "the USA; literally: great-knife-land" ; ! singular 
-kihci-niska ANDECL "Canada goose" ; ! singular 
+kihci-niska ANimDECLisis "Canada goose" ; ! singular 
 kihci-okimâhkân ANDECL "great chief" ; ! singular 
 kihci-okimâskwêw ANDECL "queen" ; ! singular 
-kihci-okimâw ANDECL "king ;; government" ; ! singular 
+kihci-okimâw ANimDECL "king ;; government" ; ! singular 
 kihci-okimâw-apiwin INDECL "throne, royal throne" ; ! singular 
 kihci-okimâw-astotin INDECL "crown" ; ! singular 
 kihci-okimâwikamik:kihci-okimâwikamikw INDECL "palace, castle; royal residence" ; ! singular 
@@ -1198,7 +1199,7 @@ kisêwâtisiwin INDECL "kindness, compassion, goodness" ; ! singular
 kisêyiniw ANDECL "old man, male elder" ; ! singular in some areas of wC: kisîtiniw
 kisêyinîpan ANDECL "deceased old man" ; ! singular, absentative 
 kisêyinîsis ANDECL "little old man" ; ! singular, diminutive 
-kisêyinîwatim:kisêyinîwatimw ANDECL "old dog, old horse" ; ! singular 
+kisêyinîwatim:kisêyinîwatimw ANDECL-ATIM "old dog, old horse" ; ! singular 
 kisêyinîwânês ANDECL "little old man" ; ! singular, diminutive 
 kisin INDECL "the cold" ; ! singular converted from VII-v kisin-
 kisinâtin INDECL "cold wind" ; ! singular 
@@ -1236,7 +1237,7 @@ kiskinwahamawâkan ANDECL "student" ; ! singular
 kiskinwahamâkêw ANDECL "teacher" ; ! singular 
 kiskinwahamâkêwikamik:kiskinwahamâkêwikamikw INDECL "school building" ; ! singular 
 kiskinwahamâkêwin INDECL "teaching, education; lessons, instructions" ; ! singular 
-kiskinwahamâkêwiskwêw ANDECL "school mistress, female teacher" ; ! singular 
+kiskinwahamâkêwiskwêw ANimDECLis "school mistress, female teacher" ; ! singular 
 kiskinwahamâkosiwin INDECL "learning, being a student, attending school; schoolwork, homework" ; ! singular 
 kiskinwahamâsowin INDECL "self instruction" ; ! singular 
 kiskinwahamâtowikamik:kiskinwahamâtowikamikw INDECL "school, school-house" ; ! singular 
@@ -1342,9 +1343,9 @@ kîskipocikan INDECL "saw, cross-cut saw" ; ! singular
 kîskipocikanis INDECL "cross-cut saw" ; ! singular, diminutive 
 kîskipotamâkêw ANDECL "one who saws (for others)" ; ! singular 
 kîskitâs ANDECL "woman's leggings" ; ! singular 
-kîskîskwêhkâniskwêw ANDECL "silly woman" ; ! singular, reduplicated 
+kîskîskwêhkâniskwêw ANimDECLis "silly woman" ; ! singular, reduplicated 
 kîskwêhkân ANDECL "fool; mentally sick person" ; ! singular 
-kîskwêhkâniskwêw ANDECL "silly woman" ; ! singular 
+kîskwêhkâniskwêw ANimDECLis "silly woman" ; ! singular 
 kîskwêpêsk ANDECL "drunkard" ; ! singular, habitual clipped nominal form of VAI-v kîskwêpêski-
 kîskwêpêwin INDECL "intoxication, drunkenness; drinking" ; ! singular 
 kîskwêpêwiyiniw ANDECL "drinking man" ; ! singular 
@@ -1358,7 +1359,7 @@ kîsôwahon INDECL "warm clothes; warm parka" ; ! singular
 kîsôwahpison ANDECL "scarf" ; ! singular 
 kîsôwahpisowin INDECL "warm scarf" ; ! singular 
 kîwâci-awâsis ANDECL "orphan" ; ! singular, diminutive 
-kîwâci-iskwêw ANDECL "bereaved woman, woman without relatives" ; ! singular 
+kîwâci-iskwêw ANimDECLis "bereaved woman, woman without relatives" ; ! singular 
 kîwâci-nâpêw ANDECL "bereaved man, man without relatives" ; ! singular 
 kîwâtêyimowin INDECL "loneliness, depression" ; ! singular 
 kîwâtis ANDECL "orphan, bereaved person" ; ! singular clipped nominal form of VAI-v kîwâtisi-
@@ -1399,7 +1400,7 @@ kotawân ANDECL "campfire, bonfire; fireplace" ; ! singular also NI-1
 kotawânâpisk:kotawânâpiskw INDECL "stove, oven" ; ! singular also NA-3
 kotâwîwi-pîsim:kotâwîwi-pîsimw ANDECL "eclipse; literally: sun sinking under ground" ; ! singular 
 kotikonikan INDECL "breech-loading gun" ; ! singular 
-kotiskâwêwatim:kotiskâwêwatimw ANDECL "race-horse" ; ! singular 
+kotiskâwêwatim:kotiskâwêwatimw ANDECL-ATIM "race-horse" ; ! singular 
 kôhkomipaninaw ANDECL "cucumber; literally: our deceased grandmother" ; ! singular; 2p possessive, absentative 
 kôna ANDECL "snow" ; ! singular, mass noun 
 kônikamik:kônikamikw INDECL "snow house" ; ! singular 
@@ -1442,7 +1443,7 @@ macêkin:macêkinw INDECL "tipi" ; ! singular
 macêyihtamowin INDECL "hatred, contempt; suspicion" ; ! singular 
 maci-awâsis ANDECL "bad child" ; ! singular, diminutive 
 maci-ayisiyiniw ANDECL "bad person, evil person; [plural:] bad people, evil people" ; ! singular 
-maci-iskwêw ANDECL "bad woman" ; ! singular 
+maci-iskwêw ANimDECLis "bad woman" ; ! singular 
 maci-itêyihtamowin INDECL "evil thoughts, wishing evil" ; ! singular 
 maci-itwêwin INDECL "swearing, profanity" ; ! singular 
 maci-kîkway INDECL "bad thing, things" ; ! singular only non-locative forms
@@ -1538,7 +1539,7 @@ masinahikêwin INDECL "writing ;; letter, character ;; debt, thing given on cred
 masinahikêwinâhtik:masinahikêwinâhtikw INDECL "writing table, desk" ; ! singular 
 masinahikêwiyiniw ANDECL "clerk" ; ! singular 
 masinâskisikan INDECL "branding iron; brand" ; ! singular 
-masinâsowatim:masinâsowatimw ANDECL "pinto ;; zebra" ; ! singular 
+masinâsowatim:masinâsowatimw ANDECL-ATIM "pinto ;; zebra" ; ! singular 
 masinâsowin INDECL "state of being marked, striped or coloured" ; ! singular 
 masinipayiwin INDECL "picture, photograph" ; ! singular 
 masinipêhikan INDECL "paint" ; ! singular 
@@ -1570,7 +1571,7 @@ maskihkîwâhtik:maskihkîwâhtikw INDECL "poverty weed, ragweed; medicinal plan
 maskihkîwâpoy INDECL "tea; liquid medicine" ; ! singular 
 maskihkîwikamik:maskihkîwikamikw INDECL "clinic; pharmacy; hospital" ; ! singular 
 maskihkîwin INDECL "medicine; medicinal ingredient" ; ! singular conversion from VII-n maskihkîwin-
-maskihkîwiskwêw ANDECL "nurse" ; ! singular 
+maskihkîwiskwêw ANimDECLis "nurse" ; ! singular 
 maskihkîwiskwêwikamik:maskihkîwiskwêwikamikw INDECL "nursing station; clinic" ; ! singular 
 maskihkîwiwat INDECL "medicine bag" ; ! singular 
 maskihkîwiyiniw ANDECL "doctor, physician ;; medicine man" ; ! singular 
@@ -1578,7 +1579,7 @@ maskimocis INDECL "little bag, small sack ;; pocket" ; ! singular, diminutive
 maskimocis ANDECL "bean; literally: little bag" ; ! singular, diminutive 
 maskimot INDECL "bag, sack" ; ! singular 
 maskimotêkin:maskimotêkinw INDECL "sacking, cloth from flour-sacks" ; ! singular 
-maskisin INDECL "moccasin; shoe" ; ! singular also NA-1 in some dialects
+maskisin INDECLis "moccasin; shoe" ; ! singular also NA-1 in some dialects
 maskisinêyâpiy INDECL "moccasin string, shoe lace" ; ! singular 
 maskisinihkêwin INDECL "making or supply of moccasins or shoes" ; ! singular 
 maskisinis INDECL "little moccasin, child's shoe" ; ! singular, diminutive 
@@ -1799,7 +1800,7 @@ minôs ANDECL "cat" ; ! singular, diminutive
 minôsis ANDECL "kitten, little cat" ; ! singular, diminutive 
 misacimosis ANDECL "little horse, pony, foal, colt" ; ! singular, diminutive 
 misasiniy ANDECL "big stone" ; ! singular 
-misatim:misatimw ANDECL "horse" ; ! singular 
+misatim:misatimw ANDECL-ATIM "horse" ; ! singular 
 misatimokamik:misatimokamikw INDECL "horse-barn, stable" ; ! singular 
 misatimosimowin INDECL "horse dance; mounted dance" ; ! singular 
 misatimwaskasiy ANDECL "hoof, horse's hoof" ; ! singular 
@@ -1810,7 +1811,7 @@ misâskwatômina INDECL "saskatoon berries" ; ! plural
 misâskwatôminâhtik:misâskwatôminâhtikw ANDECL "saskatoon willow" ; ! singular 
 misâskwatwâhtik:misâskwatwâhtikw ANDECL "saskatoon willow" ; ! singular 
 miscacimosis ANDECL "pony; little horse" ; ! singular, diminutive 
-miscanikwacâs ANDECL "gopher" ; ! singular, diminutive 
+miscanikwacâs ANimDECLis "gopher" ; ! singular, diminutive 
 miscanikwacâsôsôsa INDECL "horsetail grass; literally: gopher tails" ; ! plural, diminutive plural generally
 miscikowacis INDECL "small box" ; ! singular, diminutive 
 miscikôsis INDECL "wooden boat" ; ! singular, diminutive 
@@ -1862,15 +1863,16 @@ mistahkêsiw ANDECL "lion" ; ! singular
 mistamêk:mistamêkw ANDECL "whale" ; ! singular 
 mistanask:mistanaskw ANDECL "badger" ; ! singular 
 mistanaskwayân ANDECL "badger skin" ; ! singular 
-mistanikwacâs ANDECL "gopher" ; ! singular, diminutive 
+mistanikwacâs ANimDECLis "gopher" ; ! singular, diminutive 
 mistanikwacâsâyow INDECL "skunk grass; literally: gopher tail" ; ! singular 
 mistanikwacâsiwayân ANDECL "gopher skin" ; ! singular 
 mistasiniy ANDECL "big stone" ; ! singular 
-mistaskihk:mistaskihkw ANDECL "large pail, kettle" ; ! singular 
+mistaskihk:mistaskihkw ANimDECL "large pail, kettle" ; ! singular 
 mistaskosîmin INDECL "wild turnip; wild onion" ; ! singular 
 mistaskosîminâna INDECL "bed of wild turnips" ; ! plural 
 mistatay INDECL "big stomach, big belly" ; ! singular 
-mistatim:mistatimw ANDECL "horse" ; ! singular 
+mistatim:mistatimw ANDECL-ATIM "horse" ; ! singular 
+mistatim+N+AN+Sg+Px1Sg:nitêm NOPREFIX "horse-possessed" ; !"my horse" is nitêm, no other poss.infl.  
 mistatimosoy INDECL "horse-tail" ; ! singular 
 mistatimotâpânâsk:mistatimotâpânâskw ANDECL "sled, sleigh, wagon, horse-drawn vehicle" ; ! singular 
 mistawâsis ANDECL "Mistawasis; prominent Cree chief, signatory to Treaty 6; literally: big-child ;; Mistawasis First Nation, SK; Plains Cree reserve" ; ! singular 
@@ -1899,7 +1901,7 @@ mistikowat INDECL "box, trunk, chest; wagon box" ; ! singular loc: mistikowatihk
 mistikoyâkan INDECL "wooden bowl" ; ! singular 
 mistikôsi INimDECL "boat, wooden boat" ; ! singular; plural: mistikôsa  NI-4
 mistikôsiw ANDECL "Frenchman, French person" ; ! singular 
-mistikwaskihk:mistikwaskihkw ANDECL "drum" ; ! singular 
+mistikwaskihk:mistikwaskihkw ANimDECL "drum" ; ! singular 
 mistikwaskihkos ANDECL "small drum" ; ! singular, diminutive 
 mistikwaskihkwâhtik:mistikwaskihkwâhtikw INDECL "wooden part of drum, drum box" ; ! singular 
 mistikwaskisin ANDECL "Dutchman, Netherlander" ; ! singular conversion from NI-1
@@ -2085,7 +2087,7 @@ môsâhkinikêwin INDECL "collection" ; ! singular
 môsâpêw ANDECL "spouseless man, bachelor, widower" ; ! singular 
 môsihowin INDECL "sensation of feeling" ; ! singular 
 môsihowinis INDECL "nerve" ; ! singular, diminutive plural: môsihowinisa
-môsiskwêw ANDECL "single woman, widow" ; ! singular 
+môsiskwêw ANimDECLis "single woman, widow" ; ! singular 
 môso-pahkêkin:môso-pahkêkinw INDECL "finished moose-hide" ; ! singular 
 môsokot INDECL "moose nose" ; ! singular 
 môsomin INDECL "low bush cranberry; literally: moose berry" ; ! singular 
@@ -2104,14 +2106,14 @@ môtêyâpiskos INDECL "small bottle, small flask" ; ! singular, diminutive /mô
 mwâkwa:mwâkw ANimDECLw "loon" ; ! singular 
 mwâskêsiwân INDECL "a water-reed with edible stem; bullrush stalk" ; ! singular 
 na-nîswascêyâpês ANDECL "bear" ; ! singular, diminutive, reduplicated this name is connected with a constellation legend
-nahâhkaniskwêw ANDECL "daughter-in-law" ; ! singular 
+nahâhkaniskwêw ANimDECLis "daughter-in-law" ; ! singular 
 nahâhkis ANDECL "son-in-law; bridegroom" ; ! singular 1: ninahâhkisîm my son-in-law
 nahâwinikêwin INDECL "compact storage (of cargo)" ; ! singular 
 nahêyihtamowin INDECL "contentment; satisfaction" ; ! singular 
 nahêyihtowin INDECL "satisfactory agreement" ; ! singular 
 nahinikêwin INDECL "burial" ; ! singular 
 nahkawêwin INDECL "speaking Saulteaux, the Saulteaux language" ; ! singular 
-nahkawiskwêw ANDECL "Saulteaux woman" ; ! singular 
+nahkawiskwêw ANimDECLis "Saulteaux woman" ; ! singular 
 nahkawiyiniw ANDECL "Saulteaux, Ojibway; Saulteaux person, Ojibway person" ; ! singular 
 nahkawiyinîs ANDECL "little Saulteaux, young Saulteaux man, short Saulteaux man" ; ! singular, diminutive 
 nakacihiwêwin INDECL "the ability to read people and get along with them" ; ! singular 
@@ -2217,7 +2219,7 @@ nêhiyaw-ayisiyiniw ANDECL "a Cree person" ; ! singular
 nêhiyaw-isîhcikêwin INDECL "Cree culture, Cree ceremony; Indian culture, Indian ceremony" ; ! singular 
 nêhiyaw-iskonikan INDECL "Cree reserve, Cree land" ; ! singular 
 nêhiyaw-iskwêsis ANDECL "Cree girl" ; ! singular, diminutive 
-nêhiyaw-iskwêw ANDECL "a Cree woman, Cree Indian woman" ; ! singular 
+nêhiyaw-iskwêw ANimDECLis "a Cree woman, Cree Indian woman" ; ! singular 
 nêhiyaw-masinîwin INDECL "Cree design, Cree motif, Indian design, Indian motif" ; ! singular 
 nêhiyaw-maskihkiy INDECL "Cree medicine; Indian medicine" ; ! singular 
 nêhiyaw-mawimoscikêwin INDECL "Cree ceremony, Cree prayer" ; ! singular 
@@ -2250,7 +2252,7 @@ nihtâwikihcikêwiyiniw ANDECL "farmer" ; ! singular
 nihtâwikiwin INDECL "birthday" ; ! singular 
 nihtâwikwâsowin INDECL "fancy sewing" ; ! singular 
 nihtiy INDECL "tea" ; ! singular 
-nihtîwaskihk:nihtîwaskihkw ANDECL "teakettle" ; ! singular 
+nihtîwaskihk:nihtîwaskihkw ANimDECL "teakettle" ; ! singular 
 nikamon INDECL "song; hymn" ; ! singular 
 nikamowin INDECL "song, singing" ; ! singular cf. Saulteaux: nakamowin
 nikik:nikikw ANDECL "otter" ; ! singular 
@@ -2280,7 +2282,7 @@ nipîs INDECL "small amount of water" ; ! singular, diminutive
 nipîwêpicikan INDECL "water mill" ; ! singular 
 nipwâhkâwin INDECL "cleverness" ; ! singular 
 nisitohtamowin INDECL "understanding" ; ! singular 
-niska ANDECL "goose" ; ! singular 
+niska ANimDECLisis "goose" ; ! singular 
 niskasiniya INDECL "birdshot, buckshot, shotgun shells" ; ! plural plural generally
 niskaskwa:niskaskw INDECL "goose grass" ; ! plural 
 niski-pimiy INDECL "goose oil" ; ! singular 
@@ -2360,7 +2362,7 @@ nôsê-minôs ANDECL "female cat" ; ! singular
 nôsê-mistâhkêsiw ANDECL "lioness" ; ! singular 
 nôsê-pâhkahahkwân ANDECL "hen, female chicken" ; ! singular 
 nôsê-pihêw ANDECL "female partridge" ; ! singular 
-nôsê-wâpos:nôsê-wâposw ANDECL "doe, female rabbit" ; ! singular 
+nôsê-wâpos:nôsê-wâposw ANimDECL "doe, female rabbit" ; ! singular 
 nôsêmêk:nôsêmêkw ANDECL "spawn" ; ! singular 
 nôsêsip ANDECL "female duck" ; ! singular 
 nôsêstim:nôsêstimw ANDECL "bitch, female dog; mare, female horse" ; ! singular 
@@ -2446,7 +2448,7 @@ okakihcimosk ANDECL "boaster, braggart" ; ! singular, habitual alternatively: cl
 okakiyâskisk ANDECL "liar" ; ! singular, habitual, reduplicated cf. reduplicated: ka-kiýâskiw
 okakiyâskiwâcimon INDECL "tale of falsehoods" ; ! singular, reduplicated cf. reduplicated: ka-kiýâskiw s/he keeps lying
 okanawâpokêw ANDECL "house-sitter; one who watches the camp" ; ! singular 
-okanawêwitipiskwêw ANDECL "night watchman" ; ! singular 
+okanawêwitipiskwêw ANimDECLis "night watchman" ; ! singular 
 okanawêyihcikêw ANDECL "guard; caretaker; resource officer" ; ! singular 
 okanawêyimatihkowêw ANDECL "shepherd" ; ! singular cf. okanawêýimâýatihkowêw
 okanawêyimâwasow ANDECL "babysitter" ; ! singular 
@@ -2464,7 +2466,7 @@ okâsîcihkomîs ANDECL "kindergarten pupil" ; ! singular, diminutive
 okâskipâsowêw ANDECL "barber; one who uses a razor" ; ! singular 
 okâskiskahwân INDECL "shoulder (of moose)" ; ! singular 
 okâw ANDECL "pickerel; walleye; perch" ; ! singular 
-okâwîmâw ANDECL "mother" ; ! singular cf. 1: nikâwiy my mother
+!okâwîmâw ANDECL "mother" ; ! singular cf. 1: nikâwiy my mother KINTERM
 okâwîmâwaskiy INDECL "mother earth" ; ! singular 
 okihcitâw ANDECL "warrior, worthy young man" ; ! singular 
 okihcitâwikamik:okihcitâwikamikw INDECL "lodge of warriors' society" ; ! singular 
@@ -2477,7 +2479,7 @@ okimâhkâniwiwin INDECL "chieftaincy" ; ! singular
 okimâsis ANDECL "little chief, boss; office clerk; prince; [in jest:] noble ;; Littlechief, personal and family name from White Bear First Nation, SK ;; Okemasis, personal name of Cree chief and Saskatchewan Reserve; see Beardy's and Okemasis" ; ! singular, diminutive 
 okimâskwêsis ANDECL "chief's daughter; daughter of anyone known as okimâw; princess" ; ! singular, diminutive 
 okimâskwêw ANDECL "queen; female boss, female of high position; chief's wife, wife of anyone known as okimâw" ; ! singular 
-okimâw ANDECL "chief, leader, head person, man of high position; king; boss; one's superior" ; ! singular also a personal name; cf. okimâhkân; poss: -(t)ôkimâm-, cf. 1: nitôkimâm my chief
+okimâw ANimDECL "chief, leader, head person, man of high position; king; boss; one's superior" ; ! singular also a personal name; cf. okimâhkân; poss: -(t)ôkimâm-, cf. 1: nitôkimâm my chief
 okimâwastotin INDECL "crown" ; ! singular 
 okimâwayân ANDECL "chief's robe, bearskin; ermine pelt; king or queen's robe" ; ! singular 
 okimâwikamik:okimâwikamikw INDECL "governor's residence" ; ! singular 
@@ -2704,7 +2706,7 @@ oskani-pimiy INDECL "bone-marrow; oil taken after boiling bones" ; ! singular
 oskasakay ANDECL "new skin" ; ! singular 
 oskasâkay INDECL "new garment (e.g. dress, coat, jacket)" ; ! singular 
 oskasikan ANDECL "new sock" ; ! singular 
-oskaskihk:oskaskihkw ANDECL "new pail, new kettle" ; ! singular 
+oskaskihk:oskaskihkw ANimDECL "new pail, new kettle" ; ! singular 
 oskaskisin INDECL "new shoe, new moccasin, new boot" ; ! singular 
 oskaskosiya INDECL "new grass, fresh hay" ; ! plural 
 oskastis ANDECL "new glove, new mitt" ; ! singular 
@@ -2719,7 +2721,7 @@ oskânak:oskânakw ANDECL "bitch, female dog" ; ! singular
 oskâpêwis ANDECL "elder's helper, helper at ceremonies" ; ! singular, diminutive note apparent uncharacteristic lack of contraction across the stem final glide /w/
 oskâtâsk:oskâtâskw ANDECL "carrot" ; ! singular 
 oski-ayisiyiniw ANDECL "young person" ; ! singular 
-oski-iskwêw ANDECL "young woman" ; ! singular 
+oski-iskwêw ANimDECLis "young woman" ; ! singular 
 oski-iyinîs ANDECL "young person, young Indian person" ; ! singular, diminutive 
 oski-mînis INDECL "fresh berry" ; ! singular plural generally
 oski-ôsi:oski-ô INDECLosi "new boat" ; ! singular; plural: oski-ôsa  NI-4
@@ -2733,7 +2735,7 @@ oskihtêkom ANDECL "seed (e.g. apple)" ; ! singular
 oskihtêpak:oskihtêpakw INDECL "plant" ; ! singular 
 oskinîkiskwês ANDECL "female youth, teenage girl" ; ! singular, diminutive 
 oskinîkiskwêsis ANDECL "teenage girl" ; ! singular, diminutive 
-oskinîkiskwêw ANDECL "young woman; maiden; virgin" ; ! singular 
+oskinîkiskwêw ANimDECLis "young woman; maiden; virgin" ; ! singular 
 oskinîkiw ANDECL "young man, male youth" ; ! singular 
 oskinîkîs ANDECL "youth, boy, teenage boy" ; ! singular, diminutive 
 oskitiy INDECL "pipestem, ceremonial pipe" ; ! singular 
@@ -2774,7 +2776,7 @@ otâhkosiw ANDECL "sick person, patient" ; ! singular
 otâkwanacâhkos ANDECL "evening star" ; ! singular, diminutive 
 otâkwani-mîcisowin INDECL "supper, evening meal" ; ! singular 
 otâmahikan INDECL "hammer" ; ! singular 
-otânisimâw ANDECL "daughter" ; ! singular only in non-possessed form
+!otânisimâw ANDECL "daughter" ; ! singular only in non-possessed form KINTERM
 otâpahâkan ANDECL "horse, dog, ox used for pulling things; driving horse" ; ! singular 
 otâpân INDECL "wagon" ; ! singular 
 otâpânâsk:otâpânâskw ANDECL "vehicle; tobaggan, sled, car, wagon" ; ! singular 
@@ -2835,7 +2837,7 @@ oyâpiskâtahikan INDECL "anvil" ; ! singular
 ôcês ANDECL "housefly" ; ! singular, diminutive 
 ôcêsis ANDECL "small fly; insect" ; ! singular, diminutive 
 ôcêw ANDECL "housefly, maggot" ; ! singular 
-ôhow ANDECL "owl" ; ! singular 
+ôhow ANDECL-NOPOSS "owl" ; ! singular 
 ôhôsis ANDECL "owlet, young owl" ; ! singular, diminutive 
 ôkîkwa:ôkîkw INDECL "gills (of fish)" ; ! plural 
 ôsi:ô INDECLosi "boat; canoe" ; ! singular; plural: ôsa cf. 1sPoss: nitôt; locative: ôtihk NI-4
@@ -2852,7 +2854,7 @@ pahkisimowin INDECL "sunset" ; ! singular
 pahkitêwâpoy INDECL "gasoline" ; ! singular 
 pahkwâcîs ANDECL "bat" ; ! singular, diminutive 
 pahkwêsâwâcikan ANDECL "slice of bread" ; ! singular 
-pahkwêsikan ANDECL "bannock, bread; flour" ; ! singular 
+pahkwêsikan ANimDECL "bannock, bread; flour" ; ! singular 
 pahkwêsikanihkân ANDECL "flour" ; ! singular alternatively: pahkwêsikan- + /-ihkân/
 pahkwêsikanis ANDECL "cookie; small bannock, bit of bread; bit of flour" ; ! singular, diminutive 
 pahkwêsikaniwat INDECL "flour-bag" ; ! singular 
@@ -3027,7 +3029,7 @@ pihêsis ANDECL "little prairie-chicken" ; ! singular, diminutive
 pihêsiw ANDECL "thunderbird" ; ! singular 
 pihêw ANDECL "prairie chicken; grouse; partridge" ; ! singular 
 pihêw-motay INDECL "partridge's crop" ; ! singular 
-pihêwayasit INDECL "club (at cards)" ; ! singular pihêw osit prairie chicken's foot
+pihêwayasit INDECLis "club (at cards)" ; ! singular pihêw osit prairie chicken's foot
 pihêwokas ANDECL "partridge claw" ; ! singular legendary male personal name
 pihkahcêwâpôs INDECL "coffee" ; ! singular, diminutive 
 pihkahtêwâhtik:pihkahtêwâhtikw ANDECL "burnt stick" ; ! singular legendary female personal name
@@ -3116,7 +3118,7 @@ piscipowin INDECL "poison" ; ! singular
 pisikwâcis ANDECL "one who lives as a prostitute" ; ! singular alternatively: diminutive clipping from VAI-v piskwâtisi- - [i]
 pisikwâtinâpêw ANDECL "pimp, male prostitute" ; ! singular 
 pisikwâtisiwin INDECL "adultery; prostitution" ; ! singular 
-pisikwâtiskwêw ANDECL "whore, prostitute" ; ! singular 
+pisikwâtiskwêw ANimDECLis "whore, prostitute" ; ! singular 
 pisiskês ANDECL "raccoon" ; ! singular, diminutive 
 pisiskêyihtamowin INDECL "care; attention" ; ! singular 
 pisiskisîs ANDECL "animal, small animal (including birds)" ; ! singular, diminutive 
@@ -3138,7 +3140,7 @@ pistôsiw INDECL "tornado; whirlwind" ; ! singular
 pitikomin ANDECL "dried prune" ; ! singular 
 pitikonikan INDECL "round raft; small float for clothes" ; ! singular 
 pitikonikanâpoy INDECL "meatball soup" ; ! singular 
-pitikwayasit ANDECL "club foot" ; ! singular 
+pitikwayasit INDECLis "club foot" ; ! singular 
 piyêsiw ANDECL "thunderbird; thunder" ; ! singular 
 piyêsiwacistwan INDECL "Thunderer's nest" ; ! singular 
 piyêsîs ANDECL "bird, small bird" ; ! singular, diminutive 
@@ -3221,7 +3223,7 @@ pîskwa:pîskw ANimDECLw "mosquito-hawk; night-hawk" ; ! singular some dialects 
 pîstêw INDECL "foam, froth" ; ! singular 
 pîstêwatahikan INDECL "egg-beater" ; ! singular 
 pîswê-maskimot INDECL "flannel bag" ; ! singular 
-pîswê-maskisin INDECL "felt, woollen boot liner" ; ! singular 
+pîswê-maskisin INDECLis "felt, woollen boot liner" ; ! singular 
 pîswê-pîway ANDECL "down from geese or ducks" ; ! singular 
 pîswê-pîwayân INDECL "raw wool" ; ! singular 
 pîswêhkasikan ANDECL "leavened bread; baking powder; yeast" ; ! singular 
@@ -3233,7 +3235,7 @@ pîswêwayân INDECL "flannel" ; ! singular
 pîswêyân INDECL "woollen garment (e.g. sweater)" ; ! singular 
 pîswêyâs INDECL "cotton batting" ; ! singular, diminutive 
 pîtatowêw ANDECL "European, immigrant" ; ! singular 
-pîtosiskwêw ANDECL "foreign woman" ; ! singular 
+pîtosiskwêw ANimDECLis "foreign woman" ; ! singular 
 pîtosiyiniw ANDECL "foreigner, foreign man, enemy" ; ! singular 
 pîwahcikan INDECL "crumb; a bit of food" ; ! singular 
 pîway INDECL "hair from a hide, fur, bristles; feathers, plumage" ; ! singular plural generally: pîwaya
@@ -3243,7 +3245,7 @@ pîwâpisko-miciminikan INDECL "iron tongs" ; ! singular
 pîwâpisko-wanihikan INDECL "iron trap" ; ! singular 
 pîwâpiskominis ANDECL "bead of metal" ; ! singular, diminutive 
 pîwâpiskos ANDECL "penny, cent; coin; wire; needle" ; ! singular, diminutive plural rarely used
-pîwâpiskowaskihk:pîwâpiskowaskihkw ANDECL "iron or metal kettle" ; ! singular 
+pîwâpiskowaskihk:pîwâpiskowaskihkw ANimDECL "iron or metal kettle" ; ! singular 
 pîwâpiskowâsis ANDECL "metal child [male personal name]" ; ! singular 
 pîwâpiskoyâkan INDECL "iron or metal dish" ; ! singular 
 pîwâpiskoyâkanis INDECL "small iron or metal dish" ; ! singular, diminutive 
@@ -3365,7 +3367,7 @@ sâsâkwâpiskos ANDECL "chipmunk; striped gopher" ; ! singular, diminutive
 sâsâpiskisikan ANDECL "frying pan" ; ! singular 
 sâsêskihkwân ANDECL "frying pan" ; ! singular 
 sâsîw ANDECL "Sarcee" ; ! singular 
-sâsîwiskwêw ANDECL "Sarcee woman" ; ! singular 
+sâsîwiskwêw ANimDECLis "Sarcee woman" ; ! singular 
 sêhispwâkanân INDECL "pipe cleaner" ; ! singular 
 sêhkê-pimipayîs ANDECL "automobile, car" ; ! singular, diminutive 
 sêhkêpayîs ANDECL "automobile, car" ; ! singular, diminutive 
@@ -3386,7 +3388,7 @@ sêskicês INDECL "roach, men's pow-wow head regalia" ; ! singular
 sêstak:sêstakw ANDECL "yarn, thread" ; ! singular 
 sêwêpicikan INDECL "phone, telephone" ; ! singular 
 sêwêyâkan ANDECL "bell" ; ! singular 
-sihkihp ANDECL "water hen, hell-diver, diver duck, coot" ; ! singular 
+sihkihp ANimDECLis "water hen, hell-diver, diver duck, coot" ; ! singular 
 sihkihp-sâkahikan INDECL "Waterhen, SK; literally: waterhen lake; Cree reserve name" ; ! singular 
 sihkos ANDECL "weasel; ermine" ; ! singular 
 sihkosiw ANDECL "weasel; ermine" ; ! singular 
@@ -3397,7 +3399,7 @@ sihkosiwayâninêtâs ANDECL "weaselskin breeches" ; ! singular
 sihkowin INDECL "spittle, saliva" ; ! singular 
 sihta ANDECL "spruce, evergreen" ; ! singular 
 sihtapihkwan ANDECL "button on fir tree branch; pine cone" ; ! singular 
-sikâk:sikâkw ANDECL "skunk" ; ! singular 
+sikâk:sikâkw ANimDECLis "skunk" ; ! singular 
 sikâkos ANDECL "small, young skunk" ; ! singular, diminutive 
 sikihkwâmisk ANDECL "bed-wetter" ; ! singular, habitual alterantively: clipping from VAI-v sikihkwâmiski- - [i]
 sikiwin INDECL "urine" ; ! singular 
@@ -3415,7 +3417,7 @@ simâkanisihkân ANDECL "soldier; special constable; security officer" ; ! singu
 simâkanisikimâw ANDECL "officer, commanding officer" ; ! singular 
 simâkanisiwikamik:simâkanisiwikamikw INDECL "police station, police barracks" ; ! singular 
 simâkanisiwikimâw ANDECL "officer" ; ! singular 
-simâkaniskwêw ANDECL "policewoman" ; ! singular 
+simâkaniskwêw ANimDECLis "policewoman" ; ! singular 
 sinikohtahikan INDECL "scrubbing brush, washboard" ; ! singular 
 sinikohtakahikan INDECL "scrub-brush, floor-brush, brush for wood" ; ! singular 
 sinikohtakahikanis INDECL "small scrub-brush" ; ! singular, diminutive 
@@ -3438,7 +3440,7 @@ sîhtâskwahon INDECL "girdle; corset" ; ! singular
 sîhtwahpicikan INDECL "bandage" ; ! singular 
 sîkahon INDECL "comb" ; ! singular 
 sîkahowinis INDECL "small comb" ; ! singular, diminutive 
-sîkâwiskwêw ANDECL "widow" ; ! singular 
+sîkâwiskwêw ANimDECLis "widow" ; ! singular 
 sîkihp INDECL "boil, skin eruption" ; ! singular 
 sîkonikan INDECL "piece of cloth for straining; [plural:] refuse" ; ! singular 
 sîkopwâtinikan INDECL "strainer" ; ! singular 
@@ -3479,7 +3481,7 @@ sîsîkwêw ANDECL "rattlesnake" ; ! singular
 sîsîp ANDECL "duck" ; ! singular 
 sîsîp-wâwi INimDECL "duck egg" ; ! singular; plural: sîsîp-wâwa  NI-4
 sîsîpasiniya INDECL "duck shot" ; ! plural commonly plural
-sîsîpaskihk:sîsîpaskihkw ANDECL "teapot, tea kettle, kettle with spout" ; ! singular 
+sîsîpaskihk:sîsîpaskihkw ANimDECL "teapot, tea kettle, kettle with spout" ; ! singular 
 sîsîpi-mîcimâpoy INDECL "duck soup" ; ! singular 
 sîsîpi-pîway INDECL "duck feathers, duck-down" ; ! singular 
 sîsîpis ANDECL "small duck" ; ! singular, diminutive 
@@ -3515,7 +3517,7 @@ sôkâwâhtik:sôkâwâhtikw ANDECL "sugar maple" ; ! singular
 sôkâwâspinêwin INDECL "diabetes" ; ! Independent, 3s 
 sôkâwiyâkanis INDECL "sugar bowl" ; ! singular, diminutive 
 sômin ANDECL "grape, raisin" ; ! singular 
-sômin-pahkwêsikan ANDECL "raisin bannock, raisin bread; fruit bread" ; ! singular 
+sômin-pahkwêsikan ANimDECL "raisin bannock, raisin bread; fruit bread" ; ! singular 
 sôminâhtik:sôminâhtikw ANDECL "berry tree; grape vine" ; ! singular 
 sôminâpoy INDECL "wine" ; ! singular 
 sôminis ANDECL "currant; little grape, raisin" ; ! singular, diminutive 
@@ -3524,7 +3526,7 @@ sôniskwâtahikêwin INDECL "skating; hockey" ; ! singular
 sôniyâs ANDECL "money; change; [singular:] quarter dollar; a quarter, twenty-five cents" ; ! singular, diminutive plural rarely used
 sôniyâw ANDECL "money, wages; gold, silver" ; ! singular 
 sôniyâw-masinahikan INDECL "money order or cheque" ; ! singular 
-sôniyâw-okimâw ANDECL "Indian Agent, money-boss" ; ! singular 
+sôniyâw-okimâw ANimDECL "Indian Agent, money-boss" ; ! singular 
 sôniyâw-wâskahikan INDECL "bank" ; ! singular 
 sôniyâwacis INDECL "purse; change purse" ; ! singular, diminutive 
 sôniyâwasinahikan INDECL "cheque; money order" ; ! singular 
@@ -3547,7 +3549,7 @@ sôskwanâtahiwâkan INDECL "skate" ; ! singular
 sôskwâpisk:sôskwâpiskw INDECL "hone" ; ! singular 
 sôskwêkin:sôskwêkinw INDECL "velvet" ; ! singular 
 sôsowacimos ANDECL "young mule" ; ! singular, diminutive 
-sôsowatim:sôsowatimw ANDECL "mule" ; ! singular 
+sôsowatim:sôsowatimw ANDECL-ATIM "mule" ; ! singular 
 sôsôsis ANDECL "donkey" ; ! singular, diminutive 
 tahkahcikan INDECL "spear; dagger; pool cue, billiard cue" ; ! singular 
 tahkascikan INDECL "refrigerator" ; ! singular 
@@ -3570,7 +3572,7 @@ tahpisiminak ANDECL "necklace of beads" ; ! plural
 tahtahkiw ANDECL "crane, pelican" ; ! singular 
 tahtinikan INDECL "trigger" ; ! singular 
 takahkastim:takahkastimw ANDECL "good horse; good dog" ; ! singular 
-takahkatim:takahkatimw ANDECL "good horse; good dog" ; ! singular 
+takahkatim:takahkatimw ANDECL-ATIM "good horse; good dog" ; ! singular 
 takahkêyimowin INDECL "self-confidence" ; ! singular 
 takopayiwin INDECL "arrival" ; ! singular 
 takwahikan INDECL "chopper; press" ; ! singular 
@@ -3590,7 +3592,7 @@ tastawahikanapasoya INDECL "main poles of the tipi" ; ! plural plural generally
 tastawasakay ANDECL "web, webbed membrane, webbing of web-footed waterbirds" ; ! singular 
 tastawâpitêhikan INDECL "forked stick" ; ! singular 
 tastawicihcân INDECL "middle finger" ; ! singular 
-taswêkanikwacâs ANDECL "flying squirrel" ; ! singular 
+taswêkanikwacâs ANimDECLis "flying squirrel" ; ! singular 
 tawatahikan INDECL "blazed trail" ; ! singular 
 tâcikwêwin INDECL "scream" ; ! singular 
 tâhcipohâkan ANDECL "feeder cow or pig; animal being fattened" ; ! singular 
@@ -3680,14 +3682,14 @@ tipwêhamân INDECL "curl; ringlet" ; ! singular
 tisamân INDECL "smudge" ; ! singular 
 tisamâwin INDECL "smoke bucket, smudge" ; ! singular 
 tiy INDECL "tea" ; ! singular 
-tîwaskihk:tîwaskihkw ANDECL "tea kettle" ; ! singular 
+tîwaskihk:tîwaskihkw ANimDECL "tea kettle" ; ! singular 
 tîwaskihkos ANDECL "tea pot" ; ! singular, diminutive 
 tîwâpoy INDECL "infused tea" ; ! singular 
 tîwâpôhkêwin INDECL "the making of tea" ; ! singular 
 tîwipakwa:tîwipakw INDECL "tea leaves (after infusion)" ; ! plural plural generally
 tohtôs ANDECL "breast; teat" ; ! singular 
-tohtôsâpoy INDECL "milk" ; ! singular 
-tohtôsâpoy-askihk:tohtôsâpoy-askihkw ANDECL "milk pail" ; ! singular 
+tohtôsâpoy INimDECLisis "milk" ; ! singular 
+tohtôsâpoy-askihk:tohtôsâpoy-askihkw ANimDECL "milk pail" ; ! singular 
 tohtôsâpôs INDECL "bit of milk" ; ! singular, diminutive 
 tohtôsâpôwask:tohtôsâpôwaskw INDECL "milkweed; Brassica orientalis" ; ! singular 
 tohtôsâpôwikamik:tohtôsâpôwikamikw INDECL "dairy" ; ! singular 
@@ -3815,7 +3817,7 @@ wâpask:wâpaskw ANDECL "white bear; polar bear" ; ! singular
 wâpaskominânâhtik:wâpaskominânâhtikw INDECL "tree with whitish leaves" ; ! singular 
 wâpastim:wâpastimw ANDECL "white horse; white dog" ; ! singular 
 wâpatihk:wâpatihkw ANDECL "goat" ; ! singular 
-wâpatim:wâpatimw ANDECL "white dog" ; ! singular 
+wâpatim:wâpatimw ANDECL-ATIM "white dog" ; ! singular 
 wâpatonask ANDECL "white clay, white face paint" ; ! singular 
 wâpatonisk ANDECL "white clay, white face paint" ; ! singular 
 wâpayôminak ANDECL "rice" ; ! plural plural generally
@@ -3854,7 +3856,7 @@ wâpiski-mîkwan ANDECL "white feather" ; ! singular
 wâpiski-mîmês ANDECL "white dove" ; ! singular, diminutive 
 wâpiski-mîmêw ANDECL "white pigeon" ; ! singular 
 wâpiski-sopêhikan INDECL "white paint; calamine lotion" ; ! singular 
-wâpiski-wâpos:wâpiski-wâposw ANDECL "white rabbit" ; ! singular 
+wâpiski-wâpos:wâpiski-wâposw ANimDECL "white rabbit" ; ! singular 
 wâpiski-wiyâs INDECL "white meat" ; ! singular 
 wâpiskihkwêhon INDECL "face powder" ; ! singular 
 wâpiskimin ANDECL "white bead" ; ! singular 
@@ -3865,7 +3867,7 @@ wâpistân ANDECL "martin" ; ! singular
 wâpistikwân INDECL "white head or hair" ; ! singular 
 wâpistikwân ANDECL "person with white head or hair" ; ! singular 
 wâpiwin INDECL "eyesight" ; ! singular 
-wâpos:wâposw ANDECL "rabbit, hare" ; ! singular also NA-1; plural: wâposwak OR wâposak
+wâpos:wâposw ANimDECL "rabbit, hare" ; ! singular also NA-1; plural: wâposwak OR wâposak
 wâposâwi-pakwahtêhon INDECL "yellow belt" ; ! singular 
 wâposo-mêskanâs INDECL "rabbit road or path" ; ! singular, diminutive 
 wâposo-mîcimâpoy INDECL "rabbit soup" ; ! singular 
@@ -3926,7 +3928,7 @@ wâwâskêsiwi-pîwayêw ANDECL "horse with a coat like an elk" ; ! singular
 wâwâskêsiwistikwân INDECL "elk head" ; ! singular 
 wâwâskîsiw INDECL "Waskesiu, SK; [literally: elk]" ; ! singular 
 wâwi INimDECL "egg" ; ! singular; plural: wâwa  NI-4
-wâwi-pahkwêsikan ANDECL "cake; noodle dough" ; ! singular 
+wâwi-pahkwêsikan ANimDECL "cake; noodle dough" ; ! singular 
 wâwis INDECL "small egg" ; ! singular, diminutive 
 wâwiyê-pîsim:wâwiyê-pîsimw ANDECL "full moon, round moon" ; ! singular 
 wâwiyêsiwi-pîsim:wâwiyêsiwi-pîsimw ANDECL "full moon" ; ! singular 
@@ -3941,7 +3943,7 @@ wâyisitêhikan INDECL "horseshoe" ; ! singular
 wêcîpwayân ANDECL "a Chipewyan, Dene Indian" ; ! singular 
 wêcîpwayâniw ANDECL "Dene, Dene man, Dene Indian, Chipewyan" ; ! singular 
 wêhwêw ANDECL "wavey-duck, snow goose" ; ! singular onomatopoeia
-wêmistikôsiskwêw ANDECL "Frenchwoman" ; ! singular 
+wêmistikôsiskwêw ANimDECLis "Frenchwoman" ; ! singular 
 wêmistikôsiw ANDECL "Frenchman, French Canadian; white man" ; ! singular 
 wêmistikôsîmowin INDECL "French language" ; ! singular 
 wêpahikan INDECL "broom" ; ! singular 

@@ -195,16 +195,15 @@ LEXICON ANKININFL_MONOG !!= * @CODE@ Lexicon with reduces possessive paradigm: o
 < "+N":0 "+AN":0 "+Pl":0  "+Px3Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.3pl@"  > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 < "+N":0 "+AN":0 "+Pl":0  "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 
-LEXICON ANDECLatim	!!= * @CODE@ for atim and mistatim.
+LEXICON ANDECL-ATIM	!!= * @CODE@ for atim and mistatim.
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  #         ; !
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLwak     ; !
-< "+N":w "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE      ; !
-< "+N":0 "+AN":0         "@U.noun.abs@" >  ohk_LOC ; ! ohk
-< "+N":0 "+AN":0         "@U.noun.abs@" >  ANwa_OBV  ; ! -wa
-        +N+AN+Der/Dim:%>os%^DIMis%>        ANABSDECL ;
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak     ; !
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE      ; !
+< "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; ! ohk
+        +N+AN+Der/Dim:%>is%^DIMis%>        ANABSDECL ;
 
 
-LEXICON ANPOSSatim !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
+LEXICON ANPOSS-ATIM !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
 !< "+N":0 "+AN":0 "@U.noun.abs@" > SG_ ; !Baseform for dep nouns
 +N+AN+Sg: ANSUFF_SG ;
 +N+AN+Pl: ANSUFF_PL ;
@@ -493,29 +492,18 @@ LEXICON PLak !!= * @CODE@
 :%>ak # ;
 
 
-LEXICON PLwak !!= * @CODE@ 
-:%>wak # ;
-
-
 !! !!Locative suffixes
 
 LEXICON LOC !!= * @CODE@ 
 +Loc:%>i%^LChk  # ;
 
-LEXICON ohk_LOC !!= * @CODE@ 
-+Loc:%>o%^LChk # ;
-
 LEXICON LOCahk !!= * @CODE@ 
 +Loc:%>â%^LChk  # ;
-
-
 
 !! !!Obviative suffix
 LEXICON OBVIATIVE !!= * @CODE@
 +Obv:%>a # ;
 
-LEXICON ANwa_OBV !!= * @CODE@
-+Obv:%>wa # ;
 
 !! !!Special cases
 LEXICON NOPREFIX !!= * @CODE@ gives diacr.flag for no prefix. Used for hardcoded forms in the lexicon
