@@ -58,38 +58,33 @@ TA Transitive Animate
 TI Transitive Inanimate
 #Class
 
-IA Intransitive Animate
-#ClassIA
-
-II Intransitive Inanimate
-#ClassII
-
-TA Transitive Animate
-TI Transitive Inanimate
-#ClassTrans
-
-
 Ind Independent
 Cnj Conjunctive
 #Mood
 
 Prs
-Fut
 Prt
 #Tense
 
+Fut
+#Futurum
+
 Imp
-#Impmood
+#Imperative
 
 
-Imm 
-Def 
+Imm Immediate
+Del Delayed
 #ImpTense
+
+Cond Conditional
+#Conditional
 
 
 Int Intentional
-Cond Conditional
+Def Definite
 #Aspect
+
 
 1Sg First Person singular
 2Sg Second Person singular
@@ -125,6 +120,10 @@ IN Inanimate noun
 
 Der/Dim Diminutive
 #Diminutive
+
+Loc Locative
+#Locative
+
 
 Obv Obviative
 #Obviative
