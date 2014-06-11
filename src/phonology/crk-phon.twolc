@@ -66,6 +66,9 @@ t2:t  <=> _ %>:0 Vow ;
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
 t:c <=>  _ :*  %>:0 Dim .#. ; ! cehcapiwinisis
 
+
+
+
 "Diminutives - t2 changes to c" 
 !! !! __@RULENAME@__ , for the joiner. There are exeptions, but for they we have to make rules, or mark them with a dummy
 t2:c <=>  _ %>:0 Vow Dim .#. ; 
@@ -86,7 +89,7 @@ Vx:0 <=> Cns _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i: ] ;
 !! __@RULENAME@__  in -Cw stems
 w:0 <=> \Pos Cns _ %>:0 ( %^POS:0 ) ( %>:0 )  i:  ; !  askihkw:askihkos nitihkom
         \Pos Cns _ ( %>:0 ) ( %^POS:0 )  .#. ;
-        \Pos  [ o: | â: ] _ %>:0 ( %^POS:0 )  i: [ s: | m: | n: | %^LOC:0 ] ; !cahcahkâyow  , okimâw
+        \Pos  [ o: | â: | a: ] _ %>:0 ( %^POS:0 )  i: [ s: | m: | n: | %^LOC:0 ] ; !cahcahkâyow , okimâw, ôtênaw
         \Pos  [ ê: | â: ] _ %>:0 ( %^POS:0 )  i: [ s: | m: ] ( %>:0 ) [ %^DIM:0 | %^POS:0 ]  ; !iskwêw, okimâw 
 
 
