@@ -1,0 +1,48 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - pimisin - lie down : # Ordinary VAI verb,  
+     mâham+V+TI: mâha
+     mâham+V+TI+Imp+Imm+2Sg: mâha
+     mâham+V+TI+Imp+Imm+2Pl: mâhamok
+     mâham+V+TI+Imp+Imm+12Pl: mâhêtân
+     mâham+V+TI+Imp+Del+2Sg: mâhamôhkan
+     mâham+V+TI+Imp+Del+2Pl: mâhamôhkêk
+     mâham+V+TI+Imp+Del+12Pl: mâhamôhkahk
+
+     mâham+V+TI+Ind+Prs+1Sg: nimâhên
+     mâham+V+TI+Ind+Prs+2Sg: kimâhên
+     mâham+V+TI+Ind+Prs+3Sg: mâham
+     mâham+V+TI+Ind+Prs+4Sg: mâhamiyiwa
+     mâham+V+TI+Ind+Prs+1Pl: nimâhênân
+     mâham+V+TI+Ind+Prs+12Pl: kimâhênânaw
+     mâham+V+TI+Ind+Prs+12Pl: [kimâhênaw, kimâhênânaw]
+     mâham+V+TI+Ind+Prs+2Pl: kimâhênâwâw
+     mâham+V+TI+Ind+Prs+3Pl: mâhamwak
+     mâham+V+TI+Ind+Prs+4Pl: mâhamiyiwa
+
+     mâham+V+TI+Ind+Prt+1Sg: [nikîmâhên, nikî-mâhên]
+     mâham+V+TI+Ind+Prt+2Sg: [kikîmâhên, kikî-mâhên]
+     mâham+V+TI+Ind+Prt+3Sg: [kîmâham, kî-mâham]
+
+     mâham+V+TI+Ind+Fut+Def+1Sg: [nikamâhên,nika-mâhên]
+     mâham+V+TI+Ind+Fut+Def+2Sg: [kikamâhên, kika-mâhên]
+     mâham+V+TI+Ind+Fut+Def+3Sg: [kamâham, ka-mâham]
+
+     mâham+V+TI+Cnj+Prs+1Sg: [êmâhamân, ê-mâhamân]
+     mâham+V+TI+Cnj+Prs+2Sg: [êmâhaman, ê-mâhaman]
+     mâham+V+TI+Cnj+Prs+3Sg: [êmâhahk, ê-mâhahk]
+     mâham+V+TI+Cnj+Prs+4Sg: [êmâhamiyit, ê-mâhamiyit]
+     mâham+V+TI+Cnj+Prs+1Pl: [êmâhamâhk, ê-mâhamâhk]
+     mâham+V+TI+Cnj+Prs+12Pl: [êmâhamahk, ê-mâhamahk]
+     mâham+V+TI+Cnj+Prs+2Pl: [êmâhamêk, ê-mâhamêk]
+     mâham+V+TI+Cnj+Prs+3Pl: [êmâhahkik, ê-mâhahkik]
+
