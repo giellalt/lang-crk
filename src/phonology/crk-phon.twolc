@@ -5,8 +5,7 @@ Alphabet
  Â Ê Î Ô
  
  t2:0      !!= * @CODE@ t between prefix and vowel-initial stem
- y2:y      !!= * @CODE@ t between prefix and vowel-initial stem
- w2:w      !!= * @CODE@ t between prefix and vowel-initial stem
+ w2:w      !!= * @CODE@ for keeping the final -w in mow
  %>:0      !!= * @CODE@ affix boundary
            ! To discuss:
            ! * affix boundaries should be visible, i.e. %>
@@ -61,10 +60,6 @@ o:0 <=> .#. _  %>:0 [ ô: | o: ] Cns  ;  !
 "i:0 after possessive prefix"
 !! __@RULENAME@__ , ospiton 
 i:0 <=> .#. o %>:0 _ Cns  ;  ! o+ispiton
-
-"w2:w in verbs"
-!! __@RULENAME@__ , mow 
-w2:w <=> _ ;
 
 "t2:t between prefix and vowel"
 !! __@RULENAME@__ , joiner for nouns with initial vowel. If consonant, t2:0, defined in the Alphabet
@@ -166,10 +161,6 @@ Vx:â <=> _ %>:0 %^EA:0 ;
 !! __@RULENAME@__
 a:ê <=> _ %>:0 %^EA:0 ; ! wâpahta:niwâpahtên
 
-
-!"ee to aa rule in first and second person"
-!!! __@RULENAME@__
-!ê:â <=> _ %>:0 %^EA:0 ;
 
 "n:0 before k-suffix"
 !! __@RULENAME@__
