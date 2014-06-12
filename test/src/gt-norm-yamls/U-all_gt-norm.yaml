@@ -1,131 +1,13 @@
 Config:
-  hfst:
-    Gen: ../../../src/generator-gt-norm.hfst
-    Morph: ../../../src/analyser-gt-norm.hfst
-  xerox:
-    Gen: ../../../src/generator-gt-norm.xfst
-    Morph: ../../../src/analyser-gt-norm.xfst
-    App: lookup
+ hfst:
+  Gen: ../../../src/generator-gt-norm.hfst
+  Morph: ../../../src/analyser-gt-norm.hfst
+ xerox:
+  Gen: ../../../src/generator-gt-norm.xfst
+  Morph: ../../../src/analyser-gt-norm.xfst
+  App: lookup
 
 Tests:
-  
-  
-  Verb - atoskah - help : # Ordinary TA verb - full paradigm
-     atoskah+V+TA+Ind+Prs+1Sg+3SgO: nitatoskahâw
-     atoskah+V+TA+Ind+Prs+2Sg+3SgO: kitatoskahâw
-     atoskah+V+TA+Ind+Prs+3Sg+3SgO: atoskahêw
-     atoskah+V+TA+Ind+Prs+4Sg+3SgO: atoskahêyiwa
-
-     atoskah+V+TA+Ind+Prs+1Pl+3SgO: nitatoskahânân
-     atoskah+V+TA+Ind+Prs+12Pl+3SgO: kitatoskahânaw
-     atoskah+V+TA+Ind+Prs+2Pl+3SgO: kitatoskahâwâw
-     atoskah+V+TA+Ind+Prs+3Pl+3SgO: atoskahêwak
-     atoskah+V+TA+Ind+Prs+4Pl+3SgO: atoskahêyiwa
-
-     atoskah+V+TA+Ind+Prs+1Sg+3PlO: nitatoskahâwak
-     atoskah+V+TA+Ind+Prs+2Sg+3PlO: kitatoskahâwak
-     atoskah+V+TA+Ind+Prs+3Sg+3PlO: atoskahêw
-     atoskah+V+TA+Ind+Prs+4Sg+3PlO: atoskahêyiwa
-     atoskah+V+TA+Ind+Prs+4Sg+4PlO: atoskahikoyiwa
-
-     atoskah+V+TA+Ind+Prs+1Pl+3PlO: nitatoskahânânak
-     atoskah+V+TA+Ind+Prs+12Pl+3PlO: kitatoskahânawak
-     atoskah+V+TA+Ind+Prs+2Pl+3PlO: kitatoskahâwâwak
-     atoskah+V+TA+Ind+Prs+3Pl+3PlO: atoskahikowak
-     atoskah+V+TA+Ind+Prs+3Pl+3PlO: atoskahêwak
-     atoskah+V+TA+Ind+Prs+4Pl+3PlO: atoskahêyiwa
-
-     atoskah+V+TA+Ind+Prs+3Sg+1SgO: nitatoskahik
-     atoskah+V+TA+Ind+Prs+3Sg+2SgO: kitatoskahik
-     atoskah+V+TA+Ind+Prs+3Sg+1PlO: nitatoskahikonân
-     atoskah+V+TA+Ind+Prs+3Sg+12PlO: kitatoskahikonaw
-     atoskah+V+TA+Ind+Prs+3Sg+2PlO: kitatoskahikowâw
-     
-     atoskah+V+TA+Ind+Prs+3Pl+1SgO: nitatoskahikwak
-     atoskah+V+TA+Ind+Prs+3Pl+2SgO: kitatoskahikwak
-     atoskah+V+TA+Ind+Prs+3Pl+1PlO: nitatoskahikonânak
-     atoskah+V+TA+Ind+Prs+3Pl+12PlO: kitatoskahikonawak
-     atoskah+V+TA+Ind+Prs+3Pl+2PlO: kitatoskahikowâwak
-     
-     atoskah+V+TA+Cnj+Prs+1Sg+3SgO: [ê-atoskahak, êhatoskahak]
-     atoskah+V+TA+Cnj+Prs+1Sg+3PlO: [ê-atoskahakik, êhatoskahakik]
-     atoskah+V+TA+Cnj+Prs+1Pl+3SgO: [ê-atoskahâyâhk, êhatoskahâyâhk]
-     atoskah+V+TA+Cnj+Prs+1Pl+3PlO: [ê-atoskahâyâhkik, êhatoskahâyâhkik]
-     atoskah+V+TA+Cnj+Prs+12Pl+3SgO: [ê-atoskahâyahk, êhatoskahâyahk]
-     atoskah+V+TA+Cnj+Prs+12Pl+3PlO: [ê-atoskahâyâhkok, êhatoskahâyâhkok]
-     
-     atoskah+V+TA+Cnj+Prs+2Sg+3SgO: [ê-atoskahat, êhatoskahat]
-     atoskah+V+TA+Cnj+Prs+2Sg+3PlO: [ê-atoskahacik, êhatoskahacik]
-     atoskah+V+TA+Cnj+Prs+2Pl+3SgO: [ê-atoskahâyêk, êhatoskahâyêk]
-     atoskah+V+TA+Cnj+Prs+2Pl+3PlO: [ê-atoskahâyêkok, êhatoskahâyêkok]
-
-     atoskah+V+TA+Cnj+Prs+3Pl+4PlO: [ê-atoskahikocik, êhatoskahikocik]
-     atoskah+V+TA+Cnj+Prs+3Pl+3SgO: [ê-atoskahâcik, êhatoskahâcik]
-     atoskah+V+TA+Cnj+Prs+3Pl+3PlO: [ê-atoskahâcik, êhatoskahâcik]
-     atoskah+V+TA+Cnj+Prs+3Pl+2SgO: [ê-atoskahiskik, êhatoskahiskik]
-     atoskah+V+TA+Cnj+Prs+3Pl+2PlO: [ê-atoskahikoyêkok, êhatoskahikoyêkok]
-     atoskah+V+TA+Cnj+Prs+3Pl+1SgO: [ê-atoskahicik, êhatoskahicik]
-     atoskah+V+TA+Cnj+Prs+3Pl+1PlO: [ê-atoskahikoyâhkik, êhatoskahikoyâhkik]
-     atoskah+V+TA+Cnj+Prs+3Pl+12PlO: [ê-atoskahikoyâhkok, êhatoskahikoyâhkok]
-
-     atoskah+V+TA+Cnj+Prs+3Sg+4PlO: [ê-atoskahikocik, êhatoskahikocik]
-     atoskah+V+TA+Cnj+Prs+3Sg+3SgO: [ê-atoskahât, êhatoskahât]
-     atoskah+V+TA+Cnj+Prs+3Sg+3PlO: [ê-atoskahât, êhatoskahât]
-     atoskah+V+TA+Cnj+Prs+3Sg+2SgO: [ê-atoskahisk, êhatoskahisk]
-     atoskah+V+TA+Cnj+Prs+3Sg+2PlO: [ê-atoskahikoyêk, êhatoskahikoyêk]
-     atoskah+V+TA+Cnj+Prs+3Sg+1SgO: [ê-atoskahit, êhatoskahit]
-     atoskah+V+TA+Cnj+Prs+3Sg+1PlO: [ê-atoskahikoyâhk, êhatoskahikoyâhk]
-     atoskah+V+TA+Cnj+Prs+3Sg+12PlO: [ê-atoskahikoyahk, êhatoskahikoyahk]
-
-     atoskah+V+TA+Cnj+Prs+4Sg+4SgO: [ê-atoskahkoyit, êhatoskahkoyit]
-     atoskah+V+TA+Cnj+Prs+4Sg+4PlO: [ê-atoskahikoyit, êhatoskahikoyit]
-     atoskah+V+TA+Cnj+Prs+4Sg+3SgO: [ê-atoskahâyit, êhatoskahâyit]
-     atoskah+V+TA+Cnj+Prs+4Sg+3PlO: [ê-atoskahikocik, êhatoskahikocik]
-
-     atoskah+V+TA+Cnj+Prs+4Pl+4SgO: [ê-atoskahkoyit, êhatoskahkoyit]
-     atoskah+V+TA+Cnj+Prs+4Pl+4PlO: [ê-atoskahikoyit, êhatoskahikoyit]
-     atoskah+V+TA+Cnj+Prs+4Pl+3SgO: [ê-atoskahkot, êhatoskahkot]
-     atoskah+V+TA+Cnj+Prs+4Pl+3SgO: [ê-atoskahikot, êhatoskahikot]
-     atoskah+V+TA+Cnj+Prs+4Pl+3PlO: [ê-atoskahikocik, êhatoskahikocik]
-
-
-     atoskah+V+TA+Fut+Cond+1Sg+3SgO: atoskahaki
-     atoskah+V+TA+Fut+Cond+1Sg+3PlO: atoskahakwâwi
-     atoskah+V+TA+Fut+Cond+1Pl+3SgO: atoskahâyâhki
-     atoskah+V+TA+Fut+Cond+1Pl+3PlO: atoskahâyâhkwâwi
-     atoskah+V+TA+Fut+Cond+12Pl+3SgO: atoskahâyâhko
-     atoskah+V+TA+Fut+Cond+12Pl+3PlO: atoskahâyâhkwâwi
-
-     atoskah+V+TA+Fut+Cond+2Sg+3SgO: atoskahaci
-     atoskah+V+TA+Fut+Cond+2Sg+3PlO: atoskahatwâwi
-     atoskah+V+TA+Fut+Cond+2Pl+3SgO: atoskahâyêko
-     atoskah+V+TA+Fut+Cond+2Pl+3PlO: atoskahâyêkwâwi
-
-     atoskah+V+TA+Fut+Cond+3Sg+3SgO: atoskahâci
-     atoskah+V+TA+Fut+Cond+3Sg+4SgO: atoskahâyici
-     atoskah+V+TA+Fut+Cond+3Sg+3PlO: atoskahikotwâwi
-     atoskah+V+TA+Fut+Cond+3Sg+1SgO: atoskahici
-     atoskah+V+TA+Fut+Cond+3Sg+2SgO: atoskahiski
-     atoskah+V+TA+Fut+Cond+3Sg+1PlO: atoskahikoyâhki
-     atoskah+V+TA+Fut+Cond+3Sg+2PlO: atoskahikoyêko
-     atoskah+V+TA+Fut+Cond+3Sg+12PlO: atoskahikoyahko
-
-     atoskah+V+TA+Fut+Cond+3Pl+3SgO: atoskahâtwâwi
-     atoskah+V+TA+Fut+Cond+3Pl+3PlO: atoskahâtwâwi
-     atoskah+V+TA+Fut+Cond+3Pl+3PlO: atoskahikotwâwi
-
-
-     atoskah+V+TA+Fut+Cond+4Sg+3SgO: atoskahikoci
-     atoskah+V+TA+Fut+Cond+4Sg+3PlO: atoskahâyici
-     atoskah+V+TA+Fut+Cond+4Pl+3SgO: atoskahikoci
-     atoskah+V+TA+Fut+Cond+4Pl+3PlO: atoskahâyici
-     atoskah+V+TA+Fut+Cond+4Sg+4PlO: atoskahikoyici
-     atoskah+V+TA+Fut+Cond+4Pl+4PlO: atoskahikoyici
-
-
-
-
-
 
   
   Verb - atoskêw - ok : # Ordinary IA verb - full paradigm
@@ -168,52 +50,6 @@ Tests:
      atoskêw+V+IA+Imp+Del+2Pl: atoskêhkêk
      atoskêw+V+IA+Imp+Del+12Pl: atoskêhkahk
 
-  
-  Verb - katâ - ok : # Ordinary TI verb - full paradigm  
-     katâ+V+TI: katâ
-     katâ+V+TI+Imp+Imm+2Sg: katâ
-     katâ+V+TI+Imp+Imm+12Pl: katâtân
-     katâ+V+TI+Imp+Imm+2Pl: katâk
-     katâ+V+TI+Imp+Del+2Sg: katâhkan
-     katâ+V+TI+Imp+Del+12Pl: katâhkahk
-     katâ+V+TI+Imp+Del+2Pl: katâhkêk
-
-     katâ+V+TI+Ind+Prs+1Sg: nikatân
-     katâ+V+TI+Ind+Prs+2Sg: kikatân
-     katâ+V+TI+Ind+Prs+1Pl: nikatânân
-     katâ+V+TI+Ind+Prs+12Pl: [kikatânaw, kikatânânaw]
-     katâ+V+TI+Ind+Prs+2Pl: kikatânâwâw
-     katâ+V+TI+Ind+Prs+3Sg: katâw
-     katâ+V+TI+Ind+Prs+3Pl: katâwak
-     katâ+V+TI+Ind+Prs+4Pl: katâyiwa
-
-     katâ+V+TI+Ind+Prt+1Sg: [nikîkatân, nikî-katân]
-     katâ+V+TI+Ind+Prt+2Sg: [kikîkatân, kikî-katân]
-     katâ+V+TI+Ind+Prt+1Pl: [nikîkatânân, nikî-katânân]
-     katâ+V+TI+Ind+Prt+12Pl: [kikîkatânaw, kikî-katânaw, kikîkatânânaw, kikî-katânânaw]
-     katâ+V+TI+Ind+Prt+2Pl: [kikîkatânâwâw, kikî-katânâwâw]
-     katâ+V+TI+Ind+Prt+3Sg: [kîkatâw, kî-katâw]
-     katâ+V+TI+Ind+Prt+3Pl: [kî-katâwak, kîkatâwak]
-     katâ+V+TI+Ind+Prt+4Pl: [kî-katâyiwa, kîkatâyiwa]
-
-     katâ+V+TI+Cnj+Prs+1Sg: [ê-katâyân, êkatâyân]
-     katâ+V+TI+Cnj+Prs+2Sg: [ê-katâyan, êkatâyan]
-     katâ+V+TI+Cnj+Prs+1Pl: [ê-katâyâhk, êkatâyâhk]
-     katâ+V+TI+Cnj+Prs+12Pl: [ê-katâyahk, êkatâyahk]
-     katâ+V+TI+Cnj+Prs+2Pl: [ê-katâyêk, êkatâyêk]
-     katâ+V+TI+Cnj+Prs+3Sg: [ê-katât, êkatât]
-     katâ+V+TI+Cnj+Prs+3Pl: [ê-katâcik, êkatâcik]
-     katâ+V+TI+Cnj+Prs+4Pl: [ê-katâyit, êkatâyit]
-
-     katâ+V+TI+Cnj+Prt+1Sg: [ê-kîkatâyân, ê-kî-katâyân, êkîkatâyân, êkî-katâyân]
-     katâ+V+TI+Cnj+Prt+2Sg: [ê-kîkatâyan, ê-kî-katâyan, êkî-katâyan, êkîkatâyan]
-     katâ+V+TI+Cnj+Prt+1Pl: [ê-kîkatâyâhk, ê-kî-katâyâhk, êkî-katâyâhk, êkîkatâyâhk]
-     katâ+V+TI+Cnj+Prt+12Pl: [ê-kîkatâyahk, ê-kî-katâyahk, ê-kîkatâyahk, ê-kî-katâyahk, êkî-katâyahk, êkîkatâyahk]
-     katâ+V+TI+Cnj+Prt+2Pl: [ê-kîkatâyêk, ê-kî-katâyêk, êkî-katâyêk, êkîkatâyêk]
-     katâ+V+TI+Cnj+Prt+3Sg: [ê-kîkatât, ê-kî-katât, êkîkatât, êkî-katât]
-     katâ+V+TI+Cnj+Prt+3Pl: [ê-kî-katâcik, ê-kîkatâcik, êkî-katâcik, êkîkatâcik]
-     katâ+V+TI+Cnj+Prt+4Pl: [ê-kî-katâyit, ê-kîkatâyit, êkî-katâyit, êkîkatâyit]
-
 
   Verb - mâto - cry : # Ordinary IA verb - full paradigm
 
@@ -250,52 +86,6 @@ Tests:
      mâto+V+IA+Imp+Del+12Pl: mâtohkahk
 
   
-  Verb - mîci - ok : # Ordinary TI verb - full paradigm  
-     mîci+V+TI: mîci
-     mîci+V+TI+Imp+Imm+2Sg: mîci
-     mîci+V+TI+Imp+Imm+12Pl: mîcitân
-     mîci+V+TI+Imp+Imm+2Pl: mîcik
-     mîci+V+TI+Imp+Del+2Sg: mîcihkan
-     mîci+V+TI+Imp+Del+12Pl: mîcihkahk
-     mîci+V+TI+Imp+Del+2Pl: mîcihkêk
-
-     mîci+V+TI+Ind+Prs+1Sg: nimîcin
-     mîci+V+TI+Ind+Prs+2Sg: kimîcin
-     mîci+V+TI+Ind+Prs+1Pl: nimîcinân
-     mîci+V+TI+Ind+Prs+12Pl: [kimîcinaw, kimîcinânaw]
-     mîci+V+TI+Ind+Prs+2Pl: kimîcinâwâw
-     mîci+V+TI+Ind+Prs+3Sg: mîciw
-     mîci+V+TI+Ind+Prs+3Pl: mîciwak
-     mîci+V+TI+Ind+Prs+4Pl: mîciyiwa
-
-     mîci+V+TI+Ind+Prt+1Sg: [nikîmîcin, nikî-mîcin]
-     mîci+V+TI+Ind+Prt+2Sg: [kikîmîcin, kikî-mîcin]
-     mîci+V+TI+Ind+Prt+1Pl: [nikîmîcinân, nikî-mîcinân]
-     mîci+V+TI+Ind+Prt+12Pl: [kikîmîcinaw, kikî-mîcinaw, kikîmîcinânaw, kikî-mîcinânaw]
-     mîci+V+TI+Ind+Prt+2Pl: [kikîmîcinâwâw, kikî-mîcinâwâw]
-     mîci+V+TI+Ind+Prt+3Sg: [kîmîciw, kî-mîciw]
-     mîci+V+TI+Ind+Prt+3Pl: [kî-mîciwak, kîmîciwak]
-     mîci+V+TI+Ind+Prt+4Pl: [kî-mîciyiwa, kîmîciyiwa]
-
-     mîci+V+TI+Cnj+Prs+1Sg: [ê-mîciyân, êmîciyân]
-     mîci+V+TI+Cnj+Prs+2Sg: [ê-mîciyan, êmîciyan]
-     mîci+V+TI+Cnj+Prs+1Pl: [ê-mîciyâhk, êmîciyâhk]
-     mîci+V+TI+Cnj+Prs+12Pl: [ê-mîciyahk, êmîciyahk]
-     mîci+V+TI+Cnj+Prs+2Pl: [ê-mîciyêk, êmîciyêk]
-     mîci+V+TI+Cnj+Prs+3Sg: [ê-mîcit, êmîcit]
-     mîci+V+TI+Cnj+Prs+3Pl: [ê-mîcicik, êmîcicik]
-     mîci+V+TI+Cnj+Prs+4Pl: [ê-mîciyit, êmîciyit]
-
-     mîci+V+TI+Cnj+Prt+1Sg: [ê-kîmîciyân, ê-kî-mîciyân, êkîmîciyân, êkî-mîciyân]
-     mîci+V+TI+Cnj+Prt+2Sg: [ê-kîmîciyan, ê-kî-mîciyan, êkî-mîciyan, êkîmîciyan]
-     mîci+V+TI+Cnj+Prt+1Pl: [ê-kîmîciyâhk, ê-kî-mîciyâhk, êkî-mîciyâhk, êkîmîciyâhk]
-     mîci+V+TI+Cnj+Prt+12Pl: [ê-kîmîciyahk, ê-kî-mîciyahk, ê-kîmîciyahk, ê-kî-mîciyahk, êkî-mîciyahk, êkîmîciyahk]
-     mîci+V+TI+Cnj+Prt+2Pl: [ê-kîmîciyêk, ê-kî-mîciyêk, êkî-mîciyêk, êkîmîciyêk]
-     mîci+V+TI+Cnj+Prt+3Sg: [ê-kîmîcit, ê-kî-mîcit, êkîmîcit, êkî-mîcit]
-     mîci+V+TI+Cnj+Prt+3Pl: [ê-kî-mîcicik, ê-kîmîcicik, êkî-mîcicik, êkîmîcicik]
-     mîci+V+TI+Cnj+Prt+4Pl: [ê-kî-mîciyit, ê-kîmîciyit, êkî-mîciyit, êkîmîciyit]
-
-  
   Verb - mîciso - ok : # Ordinary VAI verb "eat" - full paradigm
      mîciso+V+IA+Ind+Prs+1Sg: nimîcison
      mîciso+V+IA+Ind+Prs+2Sg: kimîcison
@@ -324,185 +114,6 @@ Tests:
      mîciso+V+IA+Imp+Del+2Sg: mîcisohkan
      mîciso+V+IA+Imp+Del+2Pl: mîcisohkêk
      mîciso+V+IA+Imp+Del+12Pl: mîcisohkahk
-
-
-  
-  Verb - mihkwâw - ok : # Ordinary VII base on Wolvengrey
-     mihkwâw+V+II: mihkwâw
-     mihkwâw+V+II+Ind+Prs+3Sg: mihkwâw
-     mihkwâw+V+II+Ind+Prs+3Pl: mihkwâwa
-     mihkwâw+V+II+Ind+Prs+4Sg: mihkwâyiw
-     mihkwâw+V+II+Ind+Prs+4Pl: mihkwâyiwa
-
-     mihkwâw+V+II+Ind+Prt+3Sg: [kî-mihkwâw, kîmihkwâw]
-     mihkwâw+V+II+Ind+Prt+3Pl: [kî-mihkwâwa, kîmihkwâwa]
-     mihkwâw+V+II+Ind+Prt+4Sg: [kî-mihkwâyiw, kîmihkwâyiw]
-     mihkwâw+V+II+Ind+Prt+4Pl: [kî-mihkwâyiwa, kîmihkwâyiwa]
-
-
-     mihkwâw+V+II+Cnj+Prs+3Sg: [ê-mihkwâk, êmihkwâk]
-     mihkwâw+V+II+Cnj+Prs+3Pl: [ê-mihkwâki, êmihkwâki]
-     mihkwâw+V+II+Cnj+Prs+4Sg: [ê-mihkwâyik, êmihkwâyik]
-     mihkwâw+V+II+Cnj+Prs+4Pl: [ê-mihkwâyiki, êmihkwâyiki]
-
-     mihkwâw+V+II+Cnj+Prt+3Sg: [ê-kî-mihkwâk, êkîmihkwâk, ê-kîmihkwâk, êkî-mihkwâk]
-     mihkwâw+V+II+Cnj+Prt+3Pl: [ê-kî-mihkwâki, êkîmihkwâki, ê-kîmihkwâki, êkî-mihkwâki]
-     mihkwâw+V+II+Cnj+Prt+4Sg: [ê-kî-mihkwâyik, êkîmihkwâyik, ê-kîmihkwâyik, êkî-mihkwâyik]
-     mihkwâw+V+II+Cnj+Prt+4Pl: [ê-kî-mihkwâyiki, êkîmihkwâyiki, ê-kîmihkwâyiki, êkî-mihkwâyiki]
-
-  
-  Verb - miywasin - ok : # Ordinary VII base on Wolvengrey
-     miywâsin+V+II: miywâsin
-     miywâsin+V+II+Ind+Prs+3Sg: miywâsin
-     miywâsin+V+II+Ind+Prs+3Pl: miywâsinwa
-     miywâsin+V+II+Ind+Prs+4Sg: miywâsiniyiw
-     miywâsin+V+II+Ind+Prs+4Pl: miywâsiniyiwa
-
-     miywâsin+V+II+Ind+Prt+3Sg: [kî-miywâsin, kîmiywâsin]
-     miywâsin+V+II+Ind+Prt+3Pl: [kî-miywâsinwa, kîmiywâsinwa]
-     miywâsin+V+II+Ind+Prt+4Sg: [kî-miywâsiniyiw, kîmiywâsiniyiw]
-     miywâsin+V+II+Ind+Prt+4Pl: [kî-miywâsiniyiwa, kîmiywâsiniyiwa]
-
-
-     miywâsin+V+II+Cnj+Prs+3Sg: [ê-miywâsik, êmiywâsik]
-     miywâsin+V+II+Cnj+Prs+3Pl: [ê-miywâsiki, êmiywâsiki]
-     miywâsin+V+II+Cnj+Prs+4Sg: [ê-miywâsiniyik, êmiywâsiniyik]
-     miywâsin+V+II+Cnj+Prs+4Pl: [ê-miywâsiniyiki, êmiywâsiniyiki]
-
-     miywâsin+V+II+Cnj+Prt+3Sg: [ê-kî-miywâsik, êkîmiywâsik, ê-kîmiywâsik, êkî-miywâsik]
-     miywâsin+V+II+Cnj+Prt+3Pl: [ê-kî-miywâsiki, êkîmiywâsiki, ê-kîmiywâsiki, êkî-miywâsiki]
-     miywâsin+V+II+Cnj+Prt+4Sg: [ê-kî-miywâsiniyik, êkîmiywâsiniyik, ê-kîmiywâsiniyik, êkî-miywâsiniyik]
-     miywâsin+V+II+Cnj+Prt+4Pl: [ê-kî-miywâsiniyiki, êkîmiywâsiniyiki, ê-kîmiywâsiniyiki, êkî-miywâsiniyiki]
-
-  
-  Verb - mow - help : # Ordinary TA verb - full paradigm
-     mow+V+TA+Ind+Prs+1Sg+3SgO: nimowâw
-     mow+V+TA+Ind+Prs+2Sg+3SgO: kimowâw
-     mow+V+TA+Ind+Prs+3Sg+3SgO: mowêw
-     mow+V+TA+Ind+Prs+4Sg+3SgO: mowêyiwa
-
-     mow+V+TA+Ind+Prs+1Pl+3SgO: nimowânân
-     mow+V+TA+Ind+Prs+12Pl+3SgO: kimowânaw
-     mow+V+TA+Ind+Prs+2Pl+3SgO: kimowâwâw
-     mow+V+TA+Ind+Prs+3Pl+3SgO: mowêwak
-     mow+V+TA+Ind+Prs+4Pl+3SgO: mowêyiwa
-
-     mow+V+TA+Ind+Prs+1Sg+3PlO: nimowâwak
-     mow+V+TA+Ind+Prs+2Sg+3PlO: kimowâwak
-     mow+V+TA+Ind+Prs+3Sg+3PlO: mowêw
-     mow+V+TA+Ind+Prs+4Sg+3PlO: mowêyiwa
-     mow+V+TA+Ind+Prs+4Sg+4PlO: mowikoyiwa
-
-     mow+V+TA+Ind+Prs+1Pl+3PlO: nimowânânak
-     mow+V+TA+Ind+Prs+12Pl+3PlO: kimowânawak
-     mow+V+TA+Ind+Prs+2Pl+3PlO: kimowâwâwak
-     mow+V+TA+Ind+Prs+3Pl+3PlO: mowikowak
-     mow+V+TA+Ind+Prs+3Pl+3PlO: mowêwak
-     mow+V+TA+Ind+Prs+4Pl+3PlO: mowêyiwa
-
-     mow+V+TA+Ind+Prs+3Sg+1SgO: nimowik
-     mow+V+TA+Ind+Prs+3Sg+2SgO: kimowik
-     mow+V+TA+Ind+Prs+3Sg+1PlO: nimowikonân
-     mow+V+TA+Ind+Prs+3Sg+12PlO: kimowikonaw
-     mow+V+TA+Ind+Prs+3Sg+2PlO: kimowikowâw
-     
-     mow+V+TA+Ind+Prs+3Pl+1SgO: nimowikwak
-     mow+V+TA+Ind+Prs+3Pl+2SgO: kimowikwak
-     mow+V+TA+Ind+Prs+3Pl+1PlO: nimowikonânak
-     mow+V+TA+Ind+Prs+3Pl+12PlO: kimowikonawak
-     mow+V+TA+Ind+Prs+3Pl+2PlO: kimowikowâwak
-
-     mow+V+TA+Cnj+Prs+1Sg+3SgO: [ê-mowak, êmowak]
-     mow+V+TA+Cnj+Prs+1Sg+3PlO: [ê-mowakik, êmowakik]
-     mow+V+TA+Cnj+Prs+1Pl+3SgO: [ê-mowâyâhk, êmowâyâhk]
-     mow+V+TA+Cnj+Prs+1Pl+3PlO: [ê-mowâyâhkik, êmowâyâhkik]
-     mow+V+TA+Cnj+Prs+12Pl+3SgO: [ê-mowâyahk, êmowâyahk]
-     mow+V+TA+Cnj+Prs+12Pl+3PlO: [ê-mowâyâhkok, êmowâyâhkok]
-     
-     mow+V+TA+Cnj+Prs+2Sg+3SgO: [ê-mowat, êmowat]
-     mow+V+TA+Cnj+Prs+2Sg+3PlO: [ê-mowacik, êmowacik]
-     mow+V+TA+Cnj+Prs+2Pl+3SgO: [ê-mowâyêk, êmowâyêk]
-     mow+V+TA+Cnj+Prs+2Pl+3PlO: [ê-mowâyêkok, êmowâyêkok]
-
-     mow+V+TA+Cnj+Prs+3Pl+4PlO: [ê-mowikocik, êmowikocik]
-     mow+V+TA+Cnj+Prs+3Pl+3SgO: [ê-mowâcik, êmowâcik]
-     mow+V+TA+Cnj+Prs+3Pl+3PlO: [ê-mowâcik, êmowâcik]
-     mow+V+TA+Cnj+Prs+3Pl+2SgO: [ê-mowiskik, êmowiskik]
-     mow+V+TA+Cnj+Prs+3Pl+2PlO: [ê-mowikoyêkok, êmowikoyêkok]
-     mow+V+TA+Cnj+Prs+3Pl+1SgO: [ê-mowicik, êmowicik]
-     mow+V+TA+Cnj+Prs+3Pl+1PlO: [ê-mowikoyâhkik, êmowikoyâhkik]
-     mow+V+TA+Cnj+Prs+3Pl+12PlO: [ê-mowikoyâhkok, êmowikoyâhkok]
-
-     mow+V+TA+Cnj+Prs+3Sg+4PlO: [ê-mowikocik, êmowikocik]
-     mow+V+TA+Cnj+Prs+3Sg+3SgO: [ê-mowât, êmowât]
-     mow+V+TA+Cnj+Prs+3Sg+3PlO: [ê-mowât, êmowât]
-     mow+V+TA+Cnj+Prs+3Sg+2SgO: [ê-mowisk, êmowisk]
-     mow+V+TA+Cnj+Prs+3Sg+2PlO: [ê-mowikoyêk, êmowikoyêk]
-     mow+V+TA+Cnj+Prs+3Sg+1SgO: [ê-mowit, êmowit]
-     mow+V+TA+Cnj+Prs+3Sg+1PlO: [ê-mowikoyâhk, êmowikoyâhk]
-     mow+V+TA+Cnj+Prs+3Sg+12PlO: [ê-mowikoyahk, êmowikoyahk]
-
-     mow+V+TA+Cnj+Prs+4Pl+4SgO: [ê-mowkoyit, êmowkoyit]
-     mow+V+TA+Cnj+Prs+4Pl+4PlO: [ê-mowikoyit, êmowikoyit]
-     mow+V+TA+Cnj+Prs+4Pl+3SgO: [ê-mowâyit, êmowâyit]
-     mow+V+TA+Cnj+Prs+4Pl+3PlO: [ê-mowikocik, êmowikocik]
-
-     mow+V+TA+Cnj+Prs+4Sg+4SgO: [ê-mowkoyit, êmowkoyit]
-     mow+V+TA+Cnj+Prs+4Sg+4PlO: [ê-mowikoyit, êmowikoyit]
-     mow+V+TA+Cnj+Prs+4Sg+3SgO: [ê-mowâyit, êmowâyit]
-     mow+V+TA+Cnj+Prs+4Sg+3PlO: [ê-mowikocik, êmowikocik]
-
-
-     mow+V+TA+Fut+Cond+1Sg+3SgO: mowaki
-     mow+V+TA+Fut+Cond+1Sg+3PlO: mowakwâwi
-     mow+V+TA+Fut+Cond+1Pl+3SgO: mowâyâhki
-     mow+V+TA+Fut+Cond+1Pl+3PlO: mowâyâhkwâwi
-     mow+V+TA+Fut+Cond+12Pl+3SgO: mowâyâhko
-     mow+V+TA+Fut+Cond+12Pl+3PlO: mowâyâhkwâwi
-
-     mow+V+TA+Fut+Cond+2Sg+3SgO: mowaci
-     mow+V+TA+Fut+Cond+2Sg+3PlO: mowatwâwi
-     mow+V+TA+Fut+Cond+2Pl+3SgO: mowâyêko
-     mow+V+TA+Fut+Cond+2Pl+3PlO: mowâyêkwâwi
-
-     mow+V+TA+Fut+Cond+3Sg+3SgO: mowâci
-     mow+V+TA+Fut+Cond+3Sg+4SgO: mowâyici
-     mow+V+TA+Fut+Cond+3Sg+3PlO: mowikotwâwi
-     mow+V+TA+Fut+Cond+3Sg+1SgO: mowici
-     mow+V+TA+Fut+Cond+3Sg+2SgO: mowiski
-     mow+V+TA+Fut+Cond+3Sg+1PlO: mowikoyâhki
-     mow+V+TA+Fut+Cond+3Sg+2PlO: mowikoyêko
-     mow+V+TA+Fut+Cond+3Sg+12PlO: mowikoyahko
-
-     mow+V+TA+Fut+Cond+3Pl+3SgO: mowâtwâwi
-     mow+V+TA+Fut+Cond+3Pl+3PlO: mowâtwâwi
-     mow+V+TA+Fut+Cond+3Pl+3PlO: mowikotwâwi
-
-     mow+V+TA+Fut+Cond+4Sg+3SgO: mowikoci
-     mow+V+TA+Fut+Cond+4Sg+3PlO: mowâyici
-     mow+V+TA+Fut+Cond+4Pl+3SgO: mowikoci
-     mow+V+TA+Fut+Cond+4Pl+3PlO: mowâyici
-     mow+V+TA+Fut+Cond+4Sg+4PlO: mowikoyici
-     mow+V+TA+Fut+Cond+4Pl+4PlO: mowikoyici
-
-     mow+V+TA+Imp+Imm+2Sg+3SgO: mow
-     mow+V+TA+Imp+Imm+2Pl+3SgO: mowihk
-     mow+V+TA+Imp+Imm+12Pl+3SgO: mowâtân
-     mow+V+TA+Imp+Imm+2Sg+3PlO: mowik
-     mow+V+TA+Imp+Imm+2Pl+3PlO: mowihkok
-     mow+V+TA+Imp+Imm+12Pl+3PlO: mowâtânik
-
-     mow+V+TA+Imp+Del+2Sg+3SgO: mowâhkan
-     mow+V+TA+Imp+Del+2Pl+3SgO: mowâhkêk
-     mow+V+TA+Imp+Del+12Pl+3SgO: mowâhkahk
-     mow+V+TA+Imp+Del+2Sg+3PlO: mowâhkanik
-     mow+V+TA+Imp+Del+2Pl+3PlO: mowâhkêkok
-     mow+V+TA+Imp+Del+12Pl+3PlO: mowâhkahkok
-
-
-
-
-
 
 
   
@@ -706,34 +317,301 @@ Tests:
      
      
      
-
-  Verb - wâpahta -  : # Ordinary TA verb - full paradigm
   
-     wâpahta+V+TI: wâpahta
-     wâpahta+V+TI+Imp+Imm+2Sg: wâpahta
-     wâpahta+V+TI+Imp+Imm+12Pl: wâpahtêtân
-     wâpahta+V+TI+Imp+Imm+2Pl: wâpahtamok
-     wâpahta+V+TI+Imp+Del+2Sg: wâpahtamôhkan
-     wâpahta+V+TI+Imp+Del+12Pl: wâpahtamôhkahk
-     wâpahta+V+TI+Imp+Del+2Pl: wâpahtamôhkêk
+  Verb - mihkwâw - ok : # Ordinary VII base on Wolvengrey
+     mihkwâw+V+II: mihkwâw
+     mihkwâw+V+II+Ind+Prs+3Sg: mihkwâw
+     mihkwâw+V+II+Ind+Prs+3Pl: mihkwâwa
+     mihkwâw+V+II+Ind+Prs+4Sg: mihkwâyiw
+     mihkwâw+V+II+Ind+Prs+4Pl: mihkwâyiwa
 
-     wâpahta+V+TI+Ind+Prs+1Sg: niwâpahtên
-     wâpahta+V+TI+Ind+Prs+2Sg: kiwâpahtên
-     wâpahta+V+TI+Ind+Prs+1Pl: niwâpahtênân
-     wâpahta+V+TI+Ind+Prs+12Pl: [kiwâpahtênaw, kiwâpahtênânaw]
-     wâpahta+V+TI+Ind+Prs+2Pl: kiwâpahtênâwâw
-     wâpahta+V+TI+Ind+Prs+3Sg: wâpahtam
-     wâpahta+V+TI+Ind+Prs+3Pl: wâpahtamwak
-     wâpahta+V+TI+Ind+Prs+4Pl: wâpahtamiyiwa
+     mihkwâw+V+II+Ind+Prt+3Sg: [kî-mihkwâw, kîmihkwâw]
+     mihkwâw+V+II+Ind+Prt+3Pl: [kî-mihkwâwa, kîmihkwâwa]
+     mihkwâw+V+II+Ind+Prt+4Sg: [kî-mihkwâyiw, kîmihkwâyiw]
+     mihkwâw+V+II+Ind+Prt+4Pl: [kî-mihkwâyiwa, kîmihkwâyiwa]
 
-     wâpahta+V+TI+Ind+Prt+1Sg: [nikîwâpahtên, nikî-wâpahtên]
-     wâpahta+V+TI+Ind+Prt+2Sg: [kikîwâpahtên, kikî-wâpahtên]
-     wâpahta+V+TI+Ind+Prt+1Pl: [nikîwâpahtênân, nikî-wâpahtênân]
-     wâpahta+V+TI+Ind+Prt+12Pl: [kikîwâpahtênaw, kikî-wâpahtênaw, kikîwâpahtênânaw, kikî-wâpahtênânaw]
-     wâpahta+V+TI+Ind+Prt+2Pl: [kikîwâpahtênâwâw, kikî-wâpahtênâwâw]
-     wâpahta+V+TI+Ind+Prt+3Sg: [kîwâpahtam, kî-wâpahtam]
-     wâpahta+V+TI+Ind+Prt+3Pl: [kî-wâpahtamwak, kîwâpahtamwak]
-     wâpahta+V+TI+Ind+Prt+4Pl: [kîwâpahtamiyiwa, kî-wâpahtamiyiwa]
+
+     mihkwâw+V+II+Cnj+Prs+3Sg: [ê-mihkwâk, êmihkwâk]
+     mihkwâw+V+II+Cnj+Prs+3Pl: [ê-mihkwâki, êmihkwâki]
+     mihkwâw+V+II+Cnj+Prs+4Sg: [ê-mihkwâyik, êmihkwâyik]
+     mihkwâw+V+II+Cnj+Prs+4Pl: [ê-mihkwâyiki, êmihkwâyiki]
+
+     mihkwâw+V+II+Cnj+Prt+3Sg: [ê-kî-mihkwâk, êkîmihkwâk, ê-kîmihkwâk, êkî-mihkwâk]
+     mihkwâw+V+II+Cnj+Prt+3Pl: [ê-kî-mihkwâki, êkîmihkwâki, ê-kîmihkwâki, êkî-mihkwâki]
+     mihkwâw+V+II+Cnj+Prt+4Sg: [ê-kî-mihkwâyik, êkîmihkwâyik, ê-kîmihkwâyik, êkî-mihkwâyik]
+     mihkwâw+V+II+Cnj+Prt+4Pl: [ê-kî-mihkwâyiki, êkîmihkwâyiki, ê-kîmihkwâyiki, êkî-mihkwâyiki]
+
+  
+  Verb - miywasin - ok : # Ordinary VII base on Wolvengrey
+     miywâsin+V+II: miywâsin
+     miywâsin+V+II+Ind+Prs+3Sg: miywâsin
+     miywâsin+V+II+Ind+Prs+3Pl: miywâsinwa
+     miywâsin+V+II+Ind+Prs+4Sg: miywâsiniyiw
+     miywâsin+V+II+Ind+Prs+4Pl: miywâsiniyiwa
+
+     miywâsin+V+II+Ind+Prt+3Sg: [kî-miywâsin, kîmiywâsin]
+     miywâsin+V+II+Ind+Prt+3Pl: [kî-miywâsinwa, kîmiywâsinwa]
+     miywâsin+V+II+Ind+Prt+4Sg: [kî-miywâsiniyiw, kîmiywâsiniyiw]
+     miywâsin+V+II+Ind+Prt+4Pl: [kî-miywâsiniyiwa, kîmiywâsiniyiwa]
+
+
+     miywâsin+V+II+Cnj+Prs+3Sg: [ê-miywâsik, êmiywâsik]
+     miywâsin+V+II+Cnj+Prs+3Pl: [ê-miywâsiki, êmiywâsiki]
+     miywâsin+V+II+Cnj+Prs+4Sg: [ê-miywâsiniyik, êmiywâsiniyik]
+     miywâsin+V+II+Cnj+Prs+4Pl: [ê-miywâsiniyiki, êmiywâsiniyiki]
+
+     miywâsin+V+II+Cnj+Prt+3Sg: [ê-kî-miywâsik, êkîmiywâsik, ê-kîmiywâsik, êkî-miywâsik]
+     miywâsin+V+II+Cnj+Prt+3Pl: [ê-kî-miywâsiki, êkîmiywâsiki, ê-kîmiywâsiki, êkî-miywâsiki]
+     miywâsin+V+II+Cnj+Prt+4Sg: [ê-kî-miywâsiniyik, êkîmiywâsiniyik, ê-kîmiywâsiniyik, êkî-miywâsiniyik]
+     miywâsin+V+II+Cnj+Prt+4Pl: [ê-kî-miywâsiniyiki, êkîmiywâsiniyiki, ê-kîmiywâsiniyiki, êkî-miywâsiniyiki]
+
+  
+  Verb - atoskah - help : # Ordinary TA verb - full paradigm
+     atoskah+V+TA+Ind+Prs+1Sg+3SgO: nitatoskahâw
+     atoskah+V+TA+Ind+Prs+2Sg+3SgO: kitatoskahâw
+     atoskah+V+TA+Ind+Prs+3Sg+3SgO: atoskahêw
+     atoskah+V+TA+Ind+Prs+4Sg+3SgO: atoskahêyiwa
+
+     atoskah+V+TA+Ind+Prs+1Pl+3SgO: nitatoskahânân
+     atoskah+V+TA+Ind+Prs+12Pl+3SgO: kitatoskahânaw
+     atoskah+V+TA+Ind+Prs+2Pl+3SgO: kitatoskahâwâw
+     atoskah+V+TA+Ind+Prs+3Pl+3SgO: atoskahêwak
+     atoskah+V+TA+Ind+Prs+4Pl+3SgO: atoskahêyiwa
+
+     atoskah+V+TA+Ind+Prs+1Sg+3PlO: nitatoskahâwak
+     atoskah+V+TA+Ind+Prs+2Sg+3PlO: kitatoskahâwak
+     atoskah+V+TA+Ind+Prs+3Sg+3PlO: atoskahêw
+     atoskah+V+TA+Ind+Prs+4Sg+3PlO: atoskahêyiwa
+     atoskah+V+TA+Ind+Prs+4Sg+4PlO: atoskahikoyiwa
+
+     atoskah+V+TA+Ind+Prs+1Pl+3PlO: nitatoskahânânak
+     atoskah+V+TA+Ind+Prs+12Pl+3PlO: kitatoskahânawak
+     atoskah+V+TA+Ind+Prs+2Pl+3PlO: kitatoskahâwâwak
+     atoskah+V+TA+Ind+Prs+3Pl+3PlO: atoskahikowak
+     atoskah+V+TA+Ind+Prs+3Pl+3PlO: atoskahêwak
+     atoskah+V+TA+Ind+Prs+4Pl+3PlO: atoskahêyiwa
+
+     atoskah+V+TA+Ind+Prs+3Sg+1SgO: nitatoskahik
+     atoskah+V+TA+Ind+Prs+3Sg+2SgO: kitatoskahik
+     atoskah+V+TA+Ind+Prs+3Sg+1PlO: nitatoskahikonân
+     atoskah+V+TA+Ind+Prs+3Sg+12PlO: kitatoskahikonaw
+     atoskah+V+TA+Ind+Prs+3Sg+2PlO: kitatoskahikowâw
+     
+     atoskah+V+TA+Ind+Prs+3Pl+1SgO: nitatoskahikwak
+     atoskah+V+TA+Ind+Prs+3Pl+2SgO: kitatoskahikwak
+     atoskah+V+TA+Ind+Prs+3Pl+1PlO: nitatoskahikonânak
+     atoskah+V+TA+Ind+Prs+3Pl+12PlO: kitatoskahikonawak
+     atoskah+V+TA+Ind+Prs+3Pl+2PlO: kitatoskahikowâwak
+     
+     atoskah+V+TA+Cnj+Prs+1Sg+3SgO: [ê-atoskahak, êhatoskahak]
+     atoskah+V+TA+Cnj+Prs+1Sg+3PlO: [ê-atoskahakik, êhatoskahakik]
+     atoskah+V+TA+Cnj+Prs+1Pl+3SgO: [ê-atoskahâyâhk, êhatoskahâyâhk]
+     atoskah+V+TA+Cnj+Prs+1Pl+3PlO: [ê-atoskahâyâhkik, êhatoskahâyâhkik]
+     atoskah+V+TA+Cnj+Prs+12Pl+3SgO: [ê-atoskahâyahk, êhatoskahâyahk]
+     atoskah+V+TA+Cnj+Prs+12Pl+3PlO: [ê-atoskahâyâhkok, êhatoskahâyâhkok]
+     
+     atoskah+V+TA+Cnj+Prs+2Sg+3SgO: [ê-atoskahat, êhatoskahat]
+     atoskah+V+TA+Cnj+Prs+2Sg+3PlO: [ê-atoskahacik, êhatoskahacik]
+     atoskah+V+TA+Cnj+Prs+2Pl+3SgO: [ê-atoskahâyêk, êhatoskahâyêk]
+     atoskah+V+TA+Cnj+Prs+2Pl+3PlO: [ê-atoskahâyêkok, êhatoskahâyêkok]
+
+     atoskah+V+TA+Cnj+Prs+3Pl+4PlO: [ê-atoskahikocik, êhatoskahikocik]
+     atoskah+V+TA+Cnj+Prs+3Pl+3SgO: [ê-atoskahâcik, êhatoskahâcik]
+     atoskah+V+TA+Cnj+Prs+3Pl+3PlO: [ê-atoskahâcik, êhatoskahâcik]
+     atoskah+V+TA+Cnj+Prs+3Pl+2SgO: [ê-atoskahiskik, êhatoskahiskik]
+     atoskah+V+TA+Cnj+Prs+3Pl+2PlO: [ê-atoskahikoyêkok, êhatoskahikoyêkok]
+     atoskah+V+TA+Cnj+Prs+3Pl+1SgO: [ê-atoskahicik, êhatoskahicik]
+     atoskah+V+TA+Cnj+Prs+3Pl+1PlO: [ê-atoskahikoyâhkik, êhatoskahikoyâhkik]
+     atoskah+V+TA+Cnj+Prs+3Pl+12PlO: [ê-atoskahikoyâhkok, êhatoskahikoyâhkok]
+
+     atoskah+V+TA+Cnj+Prs+3Sg+4PlO: [ê-atoskahikocik, êhatoskahikocik]
+     atoskah+V+TA+Cnj+Prs+3Sg+3SgO: [ê-atoskahât, êhatoskahât]
+     atoskah+V+TA+Cnj+Prs+3Sg+3PlO: [ê-atoskahât, êhatoskahât]
+     atoskah+V+TA+Cnj+Prs+3Sg+2SgO: [ê-atoskahisk, êhatoskahisk]
+     atoskah+V+TA+Cnj+Prs+3Sg+2PlO: [ê-atoskahikoyêk, êhatoskahikoyêk]
+     atoskah+V+TA+Cnj+Prs+3Sg+1SgO: [ê-atoskahit, êhatoskahit]
+     atoskah+V+TA+Cnj+Prs+3Sg+1PlO: [ê-atoskahikoyâhk, êhatoskahikoyâhk]
+     atoskah+V+TA+Cnj+Prs+3Sg+12PlO: [ê-atoskahikoyahk, êhatoskahikoyahk]
+
+     atoskah+V+TA+Cnj+Prs+4Sg+4SgO: [ê-atoskahkoyit, êhatoskahkoyit]
+     atoskah+V+TA+Cnj+Prs+4Sg+4PlO: [ê-atoskahikoyit, êhatoskahikoyit]
+     atoskah+V+TA+Cnj+Prs+4Sg+3SgO: [ê-atoskahâyit, êhatoskahâyit]
+     atoskah+V+TA+Cnj+Prs+4Sg+3PlO: [ê-atoskahikocik, êhatoskahikocik]
+
+     atoskah+V+TA+Cnj+Prs+4Pl+4SgO: [ê-atoskahkoyit, êhatoskahkoyit]
+     atoskah+V+TA+Cnj+Prs+4Pl+4PlO: [ê-atoskahikoyit, êhatoskahikoyit]
+     atoskah+V+TA+Cnj+Prs+4Pl+3SgO: [ê-atoskahkot, êhatoskahkot]
+     atoskah+V+TA+Cnj+Prs+4Pl+3SgO: [ê-atoskahikot, êhatoskahikot]
+     atoskah+V+TA+Cnj+Prs+4Pl+3PlO: [ê-atoskahikocik, êhatoskahikocik]
+
+
+     atoskah+V+TA+Fut+Cond+1Sg+3SgO: atoskahaki
+     atoskah+V+TA+Fut+Cond+1Sg+3PlO: atoskahakwâwi
+     atoskah+V+TA+Fut+Cond+1Pl+3SgO: atoskahâyâhki
+     atoskah+V+TA+Fut+Cond+1Pl+3PlO: atoskahâyâhkwâwi
+     atoskah+V+TA+Fut+Cond+12Pl+3SgO: atoskahâyâhko
+     atoskah+V+TA+Fut+Cond+12Pl+3PlO: atoskahâyâhkwâwi
+
+     atoskah+V+TA+Fut+Cond+2Sg+3SgO: atoskahaci
+     atoskah+V+TA+Fut+Cond+2Sg+3PlO: atoskahatwâwi
+     atoskah+V+TA+Fut+Cond+2Pl+3SgO: atoskahâyêko
+     atoskah+V+TA+Fut+Cond+2Pl+3PlO: atoskahâyêkwâwi
+
+     atoskah+V+TA+Fut+Cond+3Sg+3SgO: atoskahâci
+     atoskah+V+TA+Fut+Cond+3Sg+4SgO: atoskahâyici
+     atoskah+V+TA+Fut+Cond+3Sg+3PlO: atoskahikotwâwi
+     atoskah+V+TA+Fut+Cond+3Sg+1SgO: atoskahici
+     atoskah+V+TA+Fut+Cond+3Sg+2SgO: atoskahiski
+     atoskah+V+TA+Fut+Cond+3Sg+1PlO: atoskahikoyâhki
+     atoskah+V+TA+Fut+Cond+3Sg+2PlO: atoskahikoyêko
+     atoskah+V+TA+Fut+Cond+3Sg+12PlO: atoskahikoyahko
+
+     atoskah+V+TA+Fut+Cond+3Pl+3SgO: atoskahâtwâwi
+     atoskah+V+TA+Fut+Cond+3Pl+3PlO: atoskahâtwâwi
+     atoskah+V+TA+Fut+Cond+3Pl+3PlO: atoskahikotwâwi
+
+
+     atoskah+V+TA+Fut+Cond+4Sg+3SgO: atoskahikoci
+     atoskah+V+TA+Fut+Cond+4Sg+3PlO: atoskahâyici
+     atoskah+V+TA+Fut+Cond+4Pl+3SgO: atoskahikoci
+     atoskah+V+TA+Fut+Cond+4Pl+3PlO: atoskahâyici
+     atoskah+V+TA+Fut+Cond+4Sg+4PlO: atoskahikoyici
+     atoskah+V+TA+Fut+Cond+4Pl+4PlO: atoskahikoyici
+
+
+
+
+
+
+  
+  Verb - mow - help : # Ordinary TA verb - full paradigm
+     mow+V+TA+Ind+Prs+1Sg+3SgO: nimowâw
+     mow+V+TA+Ind+Prs+2Sg+3SgO: kimowâw
+     mow+V+TA+Ind+Prs+3Sg+3SgO: mowêw
+     mow+V+TA+Ind+Prs+4Sg+3SgO: mowêyiwa
+
+     mow+V+TA+Ind+Prs+1Pl+3SgO: nimowânân
+     mow+V+TA+Ind+Prs+12Pl+3SgO: kimowânaw
+     mow+V+TA+Ind+Prs+2Pl+3SgO: kimowâwâw
+     mow+V+TA+Ind+Prs+3Pl+3SgO: mowêwak
+     mow+V+TA+Ind+Prs+4Pl+3SgO: mowêyiwa
+
+     mow+V+TA+Ind+Prs+1Sg+3PlO: nimowâwak
+     mow+V+TA+Ind+Prs+2Sg+3PlO: kimowâwak
+     mow+V+TA+Ind+Prs+3Sg+3PlO: mowêw
+     mow+V+TA+Ind+Prs+4Sg+3PlO: mowêyiwa
+     mow+V+TA+Ind+Prs+4Sg+4PlO: mowikoyiwa
+
+     mow+V+TA+Ind+Prs+1Pl+3PlO: nimowânânak
+     mow+V+TA+Ind+Prs+12Pl+3PlO: kimowânawak
+     mow+V+TA+Ind+Prs+2Pl+3PlO: kimowâwâwak
+     mow+V+TA+Ind+Prs+3Pl+3PlO: mowikowak
+     mow+V+TA+Ind+Prs+3Pl+3PlO: mowêwak
+     mow+V+TA+Ind+Prs+4Pl+3PlO: mowêyiwa
+
+     mow+V+TA+Ind+Prs+3Sg+1SgO: nimowik
+     mow+V+TA+Ind+Prs+3Sg+2SgO: kimowik
+     mow+V+TA+Ind+Prs+3Sg+1PlO: nimowikonân
+     mow+V+TA+Ind+Prs+3Sg+12PlO: kimowikonaw
+     mow+V+TA+Ind+Prs+3Sg+2PlO: kimowikowâw
+     
+     mow+V+TA+Ind+Prs+3Pl+1SgO: nimowikwak
+     mow+V+TA+Ind+Prs+3Pl+2SgO: kimowikwak
+     mow+V+TA+Ind+Prs+3Pl+1PlO: nimowikonânak
+     mow+V+TA+Ind+Prs+3Pl+12PlO: kimowikonawak
+     mow+V+TA+Ind+Prs+3Pl+2PlO: kimowikowâwak
+
+     mow+V+TA+Cnj+Prs+1Sg+3SgO: [ê-mowak, êmowak]
+     mow+V+TA+Cnj+Prs+1Sg+3PlO: [ê-mowakik, êmowakik]
+     mow+V+TA+Cnj+Prs+1Pl+3SgO: [ê-mowâyâhk, êmowâyâhk]
+     mow+V+TA+Cnj+Prs+1Pl+3PlO: [ê-mowâyâhkik, êmowâyâhkik]
+     mow+V+TA+Cnj+Prs+12Pl+3SgO: [ê-mowâyahk, êmowâyahk]
+     mow+V+TA+Cnj+Prs+12Pl+3PlO: [ê-mowâyâhkok, êmowâyâhkok]
+     
+     mow+V+TA+Cnj+Prs+2Sg+3SgO: [ê-mowat, êmowat]
+     mow+V+TA+Cnj+Prs+2Sg+3PlO: [ê-mowacik, êmowacik]
+     mow+V+TA+Cnj+Prs+2Pl+3SgO: [ê-mowâyêk, êmowâyêk]
+     mow+V+TA+Cnj+Prs+2Pl+3PlO: [ê-mowâyêkok, êmowâyêkok]
+
+     mow+V+TA+Cnj+Prs+3Pl+4PlO: [ê-mowikocik, êmowikocik]
+     mow+V+TA+Cnj+Prs+3Pl+3SgO: [ê-mowâcik, êmowâcik]
+     mow+V+TA+Cnj+Prs+3Pl+3PlO: [ê-mowâcik, êmowâcik]
+     mow+V+TA+Cnj+Prs+3Pl+2SgO: [ê-mowiskik, êmowiskik]
+     mow+V+TA+Cnj+Prs+3Pl+2PlO: [ê-mowikoyêkok, êmowikoyêkok]
+     mow+V+TA+Cnj+Prs+3Pl+1SgO: [ê-mowicik, êmowicik]
+     mow+V+TA+Cnj+Prs+3Pl+1PlO: [ê-mowikoyâhkik, êmowikoyâhkik]
+     mow+V+TA+Cnj+Prs+3Pl+12PlO: [ê-mowikoyâhkok, êmowikoyâhkok]
+
+     mow+V+TA+Cnj+Prs+3Sg+4PlO: [ê-mowikocik, êmowikocik]
+     mow+V+TA+Cnj+Prs+3Sg+3SgO: [ê-mowât, êmowât]
+     mow+V+TA+Cnj+Prs+3Sg+3PlO: [ê-mowât, êmowât]
+     mow+V+TA+Cnj+Prs+3Sg+2SgO: [ê-mowisk, êmowisk]
+     mow+V+TA+Cnj+Prs+3Sg+2PlO: [ê-mowikoyêk, êmowikoyêk]
+     mow+V+TA+Cnj+Prs+3Sg+1SgO: [ê-mowit, êmowit]
+     mow+V+TA+Cnj+Prs+3Sg+1PlO: [ê-mowikoyâhk, êmowikoyâhk]
+     mow+V+TA+Cnj+Prs+3Sg+12PlO: [ê-mowikoyahk, êmowikoyahk]
+
+     mow+V+TA+Cnj+Prs+4Pl+4SgO: [ê-mowkoyit, êmowkoyit]
+     mow+V+TA+Cnj+Prs+4Pl+4PlO: [ê-mowikoyit, êmowikoyit]
+     mow+V+TA+Cnj+Prs+4Pl+3SgO: [ê-mowâyit, êmowâyit]
+     mow+V+TA+Cnj+Prs+4Pl+3PlO: [ê-mowikocik, êmowikocik]
+
+     mow+V+TA+Cnj+Prs+4Sg+4SgO: [ê-mowkoyit, êmowkoyit]
+     mow+V+TA+Cnj+Prs+4Sg+4PlO: [ê-mowikoyit, êmowikoyit]
+     mow+V+TA+Cnj+Prs+4Sg+3SgO: [ê-mowâyit, êmowâyit]
+     mow+V+TA+Cnj+Prs+4Sg+3PlO: [ê-mowikocik, êmowikocik]
+
+
+     mow+V+TA+Fut+Cond+1Sg+3SgO: mowaki
+     mow+V+TA+Fut+Cond+1Sg+3PlO: mowakwâwi
+     mow+V+TA+Fut+Cond+1Pl+3SgO: mowâyâhki
+     mow+V+TA+Fut+Cond+1Pl+3PlO: mowâyâhkwâwi
+     mow+V+TA+Fut+Cond+12Pl+3SgO: mowâyâhko
+     mow+V+TA+Fut+Cond+12Pl+3PlO: mowâyâhkwâwi
+
+     mow+V+TA+Fut+Cond+2Sg+3SgO: mowaci
+     mow+V+TA+Fut+Cond+2Sg+3PlO: mowatwâwi
+     mow+V+TA+Fut+Cond+2Pl+3SgO: mowâyêko
+     mow+V+TA+Fut+Cond+2Pl+3PlO: mowâyêkwâwi
+
+     mow+V+TA+Fut+Cond+3Sg+3SgO: mowâci
+     mow+V+TA+Fut+Cond+3Sg+4SgO: mowâyici
+     mow+V+TA+Fut+Cond+3Sg+3PlO: mowikotwâwi
+     mow+V+TA+Fut+Cond+3Sg+1SgO: mowici
+     mow+V+TA+Fut+Cond+3Sg+2SgO: mowiski
+     mow+V+TA+Fut+Cond+3Sg+1PlO: mowikoyâhki
+     mow+V+TA+Fut+Cond+3Sg+2PlO: mowikoyêko
+     mow+V+TA+Fut+Cond+3Sg+12PlO: mowikoyahko
+
+     mow+V+TA+Fut+Cond+3Pl+3SgO: mowâtwâwi
+     mow+V+TA+Fut+Cond+3Pl+3PlO: mowâtwâwi
+     mow+V+TA+Fut+Cond+3Pl+3PlO: mowikotwâwi
+
+     mow+V+TA+Fut+Cond+4Sg+3SgO: mowikoci
+     mow+V+TA+Fut+Cond+4Sg+3PlO: mowâyici
+     mow+V+TA+Fut+Cond+4Pl+3SgO: mowikoci
+     mow+V+TA+Fut+Cond+4Pl+3PlO: mowâyici
+     mow+V+TA+Fut+Cond+4Sg+4PlO: mowikoyici
+     mow+V+TA+Fut+Cond+4Pl+4PlO: mowikoyici
+
+     mow+V+TA+Imp+Imm+2Sg+3SgO: mow
+     mow+V+TA+Imp+Imm+2Pl+3SgO: mowihk
+     mow+V+TA+Imp+Imm+12Pl+3SgO: mowâtân
+     mow+V+TA+Imp+Imm+2Sg+3PlO: mowik
+     mow+V+TA+Imp+Imm+2Pl+3PlO: mowihkok
+     mow+V+TA+Imp+Imm+12Pl+3PlO: mowâtânik
+
+     mow+V+TA+Imp+Del+2Sg+3SgO: mowâhkan
+     mow+V+TA+Imp+Del+2Pl+3SgO: mowâhkêk
+     mow+V+TA+Imp+Del+12Pl+3SgO: mowâhkahk
+     mow+V+TA+Imp+Del+2Sg+3PlO: mowâhkanik
+     mow+V+TA+Imp+Del+2Pl+3PlO: mowâhkêkok
+     mow+V+TA+Imp+Del+12Pl+3PlO: mowâhkahkok
+
+
+
+
+
 
 
   
@@ -911,4 +789,175 @@ Tests:
 
 
 
+
+
+  
+  Verb - katâ - ok : # Ordinary TI verb - full paradigm  
+     katâ+V+TI: katâ
+     katâ+V+TI+Imp+Imm+2Sg: katâ
+     katâ+V+TI+Imp+Imm+12Pl: katâtân
+     katâ+V+TI+Imp+Imm+2Pl: katâk
+     katâ+V+TI+Imp+Del+2Sg: katâhkan
+     katâ+V+TI+Imp+Del+12Pl: katâhkahk
+     katâ+V+TI+Imp+Del+2Pl: katâhkêk
+
+     katâ+V+TI+Ind+Prs+1Sg: nikatân
+     katâ+V+TI+Ind+Prs+2Sg: kikatân
+     katâ+V+TI+Ind+Prs+1Pl: nikatânân
+     katâ+V+TI+Ind+Prs+12Pl: [kikatânaw, kikatânânaw]
+     katâ+V+TI+Ind+Prs+2Pl: kikatânâwâw
+     katâ+V+TI+Ind+Prs+3Sg: katâw
+     katâ+V+TI+Ind+Prs+3Pl: katâwak
+     katâ+V+TI+Ind+Prs+4Pl: katâyiwa
+
+     katâ+V+TI+Ind+Prt+1Sg: [nikîkatân, nikî-katân]
+     katâ+V+TI+Ind+Prt+2Sg: [kikîkatân, kikî-katân]
+     katâ+V+TI+Ind+Prt+1Pl: [nikîkatânân, nikî-katânân]
+     katâ+V+TI+Ind+Prt+12Pl: [kikîkatânaw, kikî-katânaw, kikîkatânânaw, kikî-katânânaw]
+     katâ+V+TI+Ind+Prt+2Pl: [kikîkatânâwâw, kikî-katânâwâw]
+     katâ+V+TI+Ind+Prt+3Sg: [kîkatâw, kî-katâw]
+     katâ+V+TI+Ind+Prt+3Pl: [kî-katâwak, kîkatâwak]
+     katâ+V+TI+Ind+Prt+4Pl: [kî-katâyiwa, kîkatâyiwa]
+
+     katâ+V+TI+Cnj+Prs+1Sg: [ê-katâyân, êkatâyân]
+     katâ+V+TI+Cnj+Prs+2Sg: [ê-katâyan, êkatâyan]
+     katâ+V+TI+Cnj+Prs+1Pl: [ê-katâyâhk, êkatâyâhk]
+     katâ+V+TI+Cnj+Prs+12Pl: [ê-katâyahk, êkatâyahk]
+     katâ+V+TI+Cnj+Prs+2Pl: [ê-katâyêk, êkatâyêk]
+     katâ+V+TI+Cnj+Prs+3Sg: [ê-katât, êkatât]
+     katâ+V+TI+Cnj+Prs+3Pl: [ê-katâcik, êkatâcik]
+     katâ+V+TI+Cnj+Prs+4Pl: [ê-katâyit, êkatâyit]
+
+     katâ+V+TI+Cnj+Prt+1Sg: [ê-kîkatâyân, ê-kî-katâyân, êkîkatâyân, êkî-katâyân]
+     katâ+V+TI+Cnj+Prt+2Sg: [ê-kîkatâyan, ê-kî-katâyan, êkî-katâyan, êkîkatâyan]
+     katâ+V+TI+Cnj+Prt+1Pl: [ê-kîkatâyâhk, ê-kî-katâyâhk, êkî-katâyâhk, êkîkatâyâhk]
+     katâ+V+TI+Cnj+Prt+12Pl: [ê-kîkatâyahk, ê-kî-katâyahk, ê-kîkatâyahk, ê-kî-katâyahk, êkî-katâyahk, êkîkatâyahk]
+     katâ+V+TI+Cnj+Prt+2Pl: [ê-kîkatâyêk, ê-kî-katâyêk, êkî-katâyêk, êkîkatâyêk]
+     katâ+V+TI+Cnj+Prt+3Sg: [ê-kîkatât, ê-kî-katât, êkîkatât, êkî-katât]
+     katâ+V+TI+Cnj+Prt+3Pl: [ê-kî-katâcik, ê-kîkatâcik, êkî-katâcik, êkîkatâcik]
+     katâ+V+TI+Cnj+Prt+4Pl: [ê-kî-katâyit, ê-kîkatâyit, êkî-katâyit, êkîkatâyit]
+
+  
+  Verb - mâham -  : # Ordinary VTI am-final verb,  Wolvengrey p 397
+     mâham+V+TI: mâha
+     mâham+V+TI+Imp+Imm+2Sg: mâha
+     mâham+V+TI+Imp+Imm+2Pl: mâhamok
+     mâham+V+TI+Imp+Imm+12Pl: mâhêtân
+     mâham+V+TI+Imp+Del+2Sg: mâhamôhkan
+     mâham+V+TI+Imp+Del+2Pl: mâhamôhkêk
+     mâham+V+TI+Imp+Del+12Pl: mâhamôhkahk
+
+     mâham+V+TI+Ind+Prs+1Sg: nimâhên
+     mâham+V+TI+Ind+Prs+2Sg: kimâhên
+     mâham+V+TI+Ind+Prs+3Sg: mâham
+     mâham+V+TI+Ind+Prs+4Sg: mâhamiyiwa
+     mâham+V+TI+Ind+Prs+1Pl: nimâhênân
+     mâham+V+TI+Ind+Prs+12Pl: kimâhênânaw
+     mâham+V+TI+Ind+Prs+12Pl: [kimâhênaw, kimâhênânaw]
+     mâham+V+TI+Ind+Prs+2Pl: kimâhênâwâw
+     mâham+V+TI+Ind+Prs+3Pl: mâhamwak
+     mâham+V+TI+Ind+Prs+4Pl: mâhamiyiwa
+
+     mâham+V+TI+Ind+Prt+1Sg: [nikîmâhên, nikî-mâhên]
+     mâham+V+TI+Ind+Prt+2Sg: [kikîmâhên, kikî-mâhên]
+     mâham+V+TI+Ind+Prt+3Sg: [kîmâham, kî-mâham]
+
+     mâham+V+TI+Ind+Fut+Def+1Sg: [nikamâhên,nika-mâhên]
+     mâham+V+TI+Ind+Fut+Def+2Sg: [kikamâhên, kika-mâhên]
+     mâham+V+TI+Ind+Fut+Def+3Sg: [kamâham, ka-mâham]
+
+     mâham+V+TI+Cnj+Prs+1Sg: [êmâhamân, ê-mâhamân]
+     mâham+V+TI+Cnj+Prs+2Sg: [êmâhaman, ê-mâhaman]
+     mâham+V+TI+Cnj+Prs+3Sg: [êmâhahk, ê-mâhahk]
+     mâham+V+TI+Cnj+Prs+4Sg: [êmâhamiyit, ê-mâhamiyit]
+     mâham+V+TI+Cnj+Prs+1Pl: [êmâhamâhk, ê-mâhamâhk]
+     mâham+V+TI+Cnj+Prs+12Pl: [êmâhamahk, ê-mâhamahk]
+     mâham+V+TI+Cnj+Prs+2Pl: [êmâhamêk, ê-mâhamêk]
+     mâham+V+TI+Cnj+Prs+3Pl: [êmâhahkik, ê-mâhahkik]
+
+
+  
+  Verb - mîci - ok : # Ordinary TI verb - full paradigm  
+     mîci+V+TI: mîci
+     mîci+V+TI+Imp+Imm+2Sg: mîci
+     mîci+V+TI+Imp+Imm+12Pl: mîcitân
+     mîci+V+TI+Imp+Imm+2Pl: mîcik
+     mîci+V+TI+Imp+Del+2Sg: mîcihkan
+     mîci+V+TI+Imp+Del+12Pl: mîcihkahk
+     mîci+V+TI+Imp+Del+2Pl: mîcihkêk
+
+     mîci+V+TI+Ind+Prs+1Sg: nimîcin
+     mîci+V+TI+Ind+Prs+2Sg: kimîcin
+     mîci+V+TI+Ind+Prs+1Pl: nimîcinân
+     mîci+V+TI+Ind+Prs+12Pl: [kimîcinaw, kimîcinânaw]
+     mîci+V+TI+Ind+Prs+2Pl: kimîcinâwâw
+     mîci+V+TI+Ind+Prs+3Sg: mîciw
+     mîci+V+TI+Ind+Prs+3Pl: mîciwak
+     mîci+V+TI+Ind+Prs+4Pl: mîciyiwa
+
+     mîci+V+TI+Ind+Prt+1Sg: [nikîmîcin, nikî-mîcin]
+     mîci+V+TI+Ind+Prt+2Sg: [kikîmîcin, kikî-mîcin]
+     mîci+V+TI+Ind+Prt+1Pl: [nikîmîcinân, nikî-mîcinân]
+     mîci+V+TI+Ind+Prt+12Pl: [kikîmîcinaw, kikî-mîcinaw, kikîmîcinânaw, kikî-mîcinânaw]
+     mîci+V+TI+Ind+Prt+2Pl: [kikîmîcinâwâw, kikî-mîcinâwâw]
+     mîci+V+TI+Ind+Prt+3Sg: [kîmîciw, kî-mîciw]
+     mîci+V+TI+Ind+Prt+3Pl: [kî-mîciwak, kîmîciwak]
+     mîci+V+TI+Ind+Prt+4Pl: [kî-mîciyiwa, kîmîciyiwa]
+
+     mîci+V+TI+Cnj+Prs+1Sg: [ê-mîciyân, êmîciyân]
+     mîci+V+TI+Cnj+Prs+2Sg: [ê-mîciyan, êmîciyan]
+     mîci+V+TI+Cnj+Prs+1Pl: [ê-mîciyâhk, êmîciyâhk]
+     mîci+V+TI+Cnj+Prs+12Pl: [ê-mîciyahk, êmîciyahk]
+     mîci+V+TI+Cnj+Prs+2Pl: [ê-mîciyêk, êmîciyêk]
+     mîci+V+TI+Cnj+Prs+3Sg: [ê-mîcit, êmîcit]
+     mîci+V+TI+Cnj+Prs+3Pl: [ê-mîcicik, êmîcicik]
+     mîci+V+TI+Cnj+Prs+4Pl: [ê-mîciyit, êmîciyit]
+
+     mîci+V+TI+Cnj+Prt+1Sg: [ê-kîmîciyân, ê-kî-mîciyân, êkîmîciyân, êkî-mîciyân]
+     mîci+V+TI+Cnj+Prt+2Sg: [ê-kîmîciyan, ê-kî-mîciyan, êkî-mîciyan, êkîmîciyan]
+     mîci+V+TI+Cnj+Prt+1Pl: [ê-kîmîciyâhk, ê-kî-mîciyâhk, êkî-mîciyâhk, êkîmîciyâhk]
+     mîci+V+TI+Cnj+Prt+12Pl: [ê-kîmîciyahk, ê-kî-mîciyahk, ê-kîmîciyahk, ê-kî-mîciyahk, êkî-mîciyahk, êkîmîciyahk]
+     mîci+V+TI+Cnj+Prt+2Pl: [ê-kîmîciyêk, ê-kî-mîciyêk, êkî-mîciyêk, êkîmîciyêk]
+     mîci+V+TI+Cnj+Prt+3Sg: [ê-kîmîcit, ê-kî-mîcit, êkîmîcit, êkî-mîcit]
+     mîci+V+TI+Cnj+Prt+3Pl: [ê-kî-mîcicik, ê-kîmîcicik, êkî-mîcicik, êkîmîcicik]
+     mîci+V+TI+Cnj+Prt+4Pl: [ê-kî-mîciyit, ê-kîmîciyit, êkî-mîciyit, êkîmîciyit]
+
+
+  Verb - wâpahta -  : # Ordinary TA verb - full paradigm
+  
+     wâpahta+V+TI: wâpahta
+     wâpahta+V+TI+Imp+Imm+2Sg: wâpahta
+     wâpahta+V+TI+Imp+Imm+12Pl: wâpahtêtân
+     wâpahta+V+TI+Imp+Imm+2Pl: wâpahtamok
+     wâpahta+V+TI+Imp+Del+2Sg: wâpahtamôhkan
+     wâpahta+V+TI+Imp+Del+12Pl: wâpahtamôhkahk
+     wâpahta+V+TI+Imp+Del+2Pl: wâpahtamôhkêk
+
+     wâpahta+V+TI+Ind+Prs+1Sg: niwâpahtên
+     wâpahta+V+TI+Ind+Prs+2Sg: kiwâpahtên
+     wâpahta+V+TI+Ind+Prs+1Pl: niwâpahtênân
+     wâpahta+V+TI+Ind+Prs+12Pl: [kiwâpahtênaw, kiwâpahtênânaw]
+     wâpahta+V+TI+Ind+Prs+2Pl: kiwâpahtênâwâw
+     wâpahta+V+TI+Ind+Prs+3Sg: wâpahtam
+     wâpahta+V+TI+Ind+Prs+3Pl: wâpahtamwak
+     wâpahta+V+TI+Ind+Prs+4Pl: wâpahtamiyiwa
+
+     wâpahta+V+TI+Cnj+Prs+1Sg: [êwâpahtamân, ê-wâpahtamân]
+     wâpahta+V+TI+Cnj+Prs+2Sg: [êwâpahtaman, ê-wâpahtaman]
+     wâpahta+V+TI+Cnj+Prs+1Pl: [êwâpahtamâhk, ê-wâpahtamâhk]
+     wâpahta+V+TI+Cnj+Prs+12Pl: [êwâpahtamahk, ê-wâpahtamahk]
+     wâpahta+V+TI+Cnj+Prs+2Pl: [êwâpahtamêk, ê-wâpahtamêk]
+     wâpahta+V+TI+Cnj+Prs+3Sg: [êwâpahtahk, ê-wâpahtahk]
+     wâpahta+V+TI+Cnj+Prs+3Pl: [êwâpahtahkik, ê-wâpahtahkik]
+     wâpahta+V+TI+Cnj+Prs+4Pl: [êwâpahtamiyit, ê-wâpahtamiyit]
+
+
+     wâpahta+V+TI+Ind+Prt+1Sg: [nikîwâpahtên, nikî-wâpahtên]
+     wâpahta+V+TI+Ind+Prt+2Sg: [kikîwâpahtên, kikî-wâpahtên]
+     wâpahta+V+TI+Ind+Prt+1Pl: [nikîwâpahtênân, nikî-wâpahtênân]
+     wâpahta+V+TI+Ind+Prt+12Pl: [kikîwâpahtênaw, kikî-wâpahtênaw, kikîwâpahtênânaw, kikî-wâpahtênânaw]
+     wâpahta+V+TI+Ind+Prt+2Pl: [kikîwâpahtênâwâw, kikî-wâpahtênâwâw]
+     wâpahta+V+TI+Ind+Prt+3Sg: [kîwâpahtam, kî-wâpahtam]
+     wâpahta+V+TI+Ind+Prt+3Pl: [kî-wâpahtamwak, kîwâpahtamwak]
+     wâpahta+V+TI+Ind+Prt+4Pl: [kîwâpahtamiyiwa, kî-wâpahtamiyiwa]
 
