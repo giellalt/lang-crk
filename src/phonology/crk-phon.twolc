@@ -6,6 +6,7 @@ Alphabet
  
  t2:0      !!= * @CODE@ t between prefix and vowel-initial stem
  y2:y      !!= * @CODE@ t between prefix and vowel-initial stem
+ w2:      !!= * @CODE@ t between prefix and vowel-initial stem
  %>:0      !!= * @CODE@ affix boundary
  %^LOC:0    !!= * @CODE@ Locative suffix alternation trigger
  %^DIM:0   !!= * @CODE@ Diminutive alternation trigger
@@ -56,7 +57,9 @@ o:0 <=> .#. _  %>:0 [ ô: | o: ] Cns  ;  !
 !! __@RULENAME@__ , ospiton 
 i:0 <=> .#. o %>:0 _ Cns  ;  ! o+ispiton
 
-
+"w2:w in verbs"
+!! __@RULENAME@__ , mow 
+w2:w <=> _ ;
 
 "t2:t between prefix and vowel"
 !! __@RULENAME@__ , joiner for nouns with initial vowel. If consonant, t2:0, defined in the Alphabet
@@ -118,12 +121,6 @@ a:â <=> _ [ w: | y: ] %>:0  [ i: ] ( s ) ( m ) [ %^DIM:0 | %^LOC:0 | %^POS:0 ] 
 y:0 <=> \Pos [ i: | o: | a: ]  _ %>:0   :*  i: [ n: | m | w: | y: | s: | %^LOC:0 ]  ; 
 !        [ i: | o: ]  _ ( %>:0 )  ( %^POS:0 )  i:  %>:0 %^LOC:0 h: ; 
 
-
-!"w/y:0 alternations in front of suffixes"
-!!! okimâw, maniway+i, pikiw+is cahcahkâyow+is tohtôsâpoy+is, cahcahkâyow+ihk, tohtôsâpoy+ihk
-![ w:0 | y:0 ] <=> \Pos [ a: | o: | i: ] _ %>:0 [ %^POS:0 | i: ] ( %>:0 ) [ i: | m: | s: ] ; ! okimâw, maniway+i 
-!                 \Pos [ a: | o: | i: ] _ %>:0  i: s:  %^DIM:0 ; !pikiw+is cahcahkâyow+is tohtôsâpoy+is
-!                 \PosDim [ o: | a: | i: ] _ %>:0  i: %^LOC:0 ; ! pikiw+ihk, otanikwacâsimiyihk
 
 
 
