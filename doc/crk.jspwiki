@@ -135,6 +135,7 @@ morphophonological structure
  * +WAK  	  tag to keep track of -wak plurals
 
  * %^LOC      Locative
+ * w2    
  * t2 		  Prefix in possessives 
  * h2 		  Prefix in possessives 
  * i2 		  Possessive element 
@@ -216,6 +217,7 @@ Prefixes with a certain phonological content:
 
  *  t2:0       t between prefix and vowel-initial stem
  *  y2:y       t between prefix and vowel-initial stem
+ *  w2:       t between prefix and vowel-initial stem
  *  %>:0       affix boundary
  *  %^LOC:0     Locative suffix alternation trigger
  *  %^DIM:0    Diminutive alternation trigger
@@ -242,11 +244,14 @@ __o:0 in possessive prefix__ , Okimasis p. 140
 
 __i:0 after possessive prefix__ , ospiton 
 
-
+__w2:w in verbs__ , mow 
 
 __t2:t between prefix and vowel__ , joiner for nouns with initial vowel. If consonant, t2:0, defined in the Alphabet
 
 __t:c in diminutives __ Okimasis 2004: 13, Rule 2.
+
+
+
 
 __Diminutives - t2 changes to c __ , for the joiner. There are exeptions, but for they we have to make rules, or mark them with a dummy
 
@@ -271,8 +276,6 @@ __a:aa alternations in stem __  for stem vowel when final -ay
 
 __y:0 alternations __  for stem vowel when final -Vy
 
-
-okimâw, maniway+i, pikiw+is cahcahkâyow+is tohtôsâpoy+is, cahcahkâyow+ihk, tohtôsâpoy+ihk
 
 
 
@@ -454,7 +457,7 @@ found at the end of this file.
 !!!Suffixes
 
 
-!!The declinations for Animates
+!!The declensions for Animates 
 
 
  * LEXICON ANDECL  for the animate declension, Dim: -isis and -is 
@@ -502,6 +505,10 @@ found at the end of this file.
 
  * LEXICON ANKINiyINFL   Special treatment for kinship nouns ending with -iy - should be done in twolc?
 
+ * LEXICON ANINALIENABLEPOSS  for the inanimate possessive declension
+
+ * LEXICON ANABLGENERIC  generic forms Sg, Pl, Loc and diminutives
+
 
 !!The declinations for Inanimates
 
@@ -539,6 +546,7 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
  * LEXICON INALIENABLEDERIVATION   for hardcoded noun:diminutive for inalienables
 
  * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
+
 
  * LEXICON INABLGENERIC  generic forms Sg, Pl, Loc and diminutives
 
@@ -856,6 +864,7 @@ Intransitive animate (IA)
 
 
 
+
  LEXICON IA_CNJ  Third mode, conjunctive
 
  LEXICON IA_CNJn  Third mode, conjunctive
@@ -956,6 +965,8 @@ There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
 
 
  * LEXICON TACONJ_2   splits in 4. The -aw shall be removed from some forms.
+
+
 
 
 

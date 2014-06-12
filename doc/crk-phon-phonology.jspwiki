@@ -1,6 +1,7 @@
 
  *  t2:0       t between prefix and vowel-initial stem
  *  y2:y       t between prefix and vowel-initial stem
+ *  w2:       t between prefix and vowel-initial stem
  *  %>:0       affix boundary
  *  %^LOC:0     Locative suffix alternation trigger
  *  %^DIM:0    Diminutive alternation trigger
@@ -27,11 +28,14 @@ __o:0 in possessive prefix__ , Okimasis p. 140
 
 __i:0 after possessive prefix__ , ospiton 
 
-
+__w2:w in verbs__ , mow 
 
 __t2:t between prefix and vowel__ , joiner for nouns with initial vowel. If consonant, t2:0, defined in the Alphabet
 
 __t:c in diminutives __ Okimasis 2004: 13, Rule 2.
+
+
+
 
 __Diminutives - t2 changes to c __ , for the joiner. There are exeptions, but for they we have to make rules, or mark them with a dummy
 
@@ -56,8 +60,6 @@ __a:aa alternations in stem __  for stem vowel when final -ay
 
 __y:0 alternations __  for stem vowel when final -Vy
 
-
-okimâw, maniway+i, pikiw+is cahcahkâyow+is tohtôsâpoy+is, cahcahkâyow+ihk, tohtôsâpoy+ihk
 
 
 
