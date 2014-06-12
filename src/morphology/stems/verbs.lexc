@@ -106,6 +106,7 @@ kîwe IACONJ "go home" ; !GG
 pihtokwe IACONJ "enter" ; !GG
 nitohta TICONJ "listen" ;
 nisitohta TICONJ "understand" ;
+mâham TICONJ "s/he canoes downriver, s/he paddles downstream, s/he rows downstream, s/he goes downstream (by canoe)" ; ! Independent, 3s(-0') 
 
 ! colour terms
 
@@ -129,13 +130,15 @@ itasinâsw:itansinâso IACONJw "what colour is" ;
 ! I leave it for now, as it involves a look at the whole system.
 
 
-wâsêskwan IICONJ-SG "it is sunny" ;
+wâsêskwan IICONJ-SG "it is sunny" ; !
+mâyâtan IICONJ ; !Wolv
 mispon IICONJ-SG "it is snowing" ;
+pimâmon IICONJ-SG ; !Wolv
 yôtin IICONJ-SG "it is windy" ;
 sôhkiyowêw:sôhkiyowê IICONJw-SG "it is a strong wind" ;
 sîkipêstâw:sîkipêstâ IICONJw-SG "it is pouring" ;
 kaskaniwipêscâsin IICONJ-SG "it is misth" ;
-miywâsin IICONJ "it is good" ; !yaml
+miywâsin IICONJ "it is good" ; !yaml !Wolv
 mihkwâw:mihkwâ IICONJw "it is red" ; !yaml
 
 !LEXICON TASTEM 
@@ -3807,7 +3810,7 @@ mâh-misimêw TACONJ_1 "s/he reports s.o. repeatedly, s/he tells on s.o. repeate
 mâh-mînomêw TACONJ_1 "s/he corrects s.o.'s behaviour or attitude" ; ! Independent, 3s-3' 
 mâh-mîsaham TICONJ_1 "s/he mends s.t. in several places" ; ! Independent, 3s-0', reduplicated 
 mâh-mîsahwêw TACONJ_3 "s/he mends s.o. in several places" ; ! Independent, 3s-3', reduplicated 
-mâham TICONJ_1 "s/he canoes downriver, s/he paddles downstream, s/he rows downstream, s/he goes downstream (by canoe)" ; ! Independent, 3s(-0') 
+!mâham TICONJ_1 "s/he canoes downriver, s/he paddles downstream, s/he rows downstream, s/he goes downstream (by canoe)" ; ! Independent, 3s(-0') 
 mâhâpayiw IACONJ_v "s/he drifts downstream" ; ! Independent, 3s 
 mâhâpocikêw IACONJ_v "s/he drives logs, s/he floats logs downstream" ; ! Independent, 3s 
 mâhâpokow IACONJ_v "s/he canoes downstream" ; ! Independent, 3s 
@@ -4243,7 +4246,7 @@ mihkwâpiskisiw IACONJ_v "it is red hot (e.g. a stove)" ; ! Independent, 3s
 mihkwâpiskiswêw TACONJ_3 "s/he reddens s.o. (e.g. stone) by heat" ; ! Independent, 3s-3' 
 mihkwâsin IICONJ_n "it is quite red (as a bruise)" ; ! Independent, 0s, diminutive 
 mihkwâskikanêw IACONJ_v "it has a red breast (e.g. a robin)" ; ! Independent, 3s 
-mihkwâw IICONJ_v "it is red" ; ! Independent, 0s 
+!mihkwâw IICONJ_v "it is red" ; ! Independent, 0s 
 mihtamipayiw IACONJ_v "it goes tight" ; ! Independent, 3s 
 mihtamisiw IACONJ_v "it is tight" ; ! Independent, 3s 
 mihtawêskiw IACONJ_v "s/he pouts all the time; s/he is prone to dissatisfaction" ; ! Independent, 3s, habitual 
@@ -5313,7 +5316,7 @@ nêhiyawasinahikêw IACONJ_v "s/he writes in Cree" ; ! Independent, 3s
 nêhiyawastâw TICONJ_2 "s/he writes s.t. in Cree, s/he translates s.t. into Cree" ; ! Independent, 3s-0' 
 nêhiyawâtisiw IACONJ_v "s/he has the Cree cultural tradition, s/he lives a traditional Cree life" ; ! Independent, 3s 
 nêhiyawêmototawêw TACONJ_2 "s/he speak Cree to s.o." ; ! Independent, 3s-3' 
-nêhiyawêw IACONJ_v "s/he speaks Cree" ; ! Independent, 3s 
+!nêhiyawêw IACONJ_v "s/he speaks Cree" ; ! Independent, 3s 
 nêhiyawi-kiskinwahamawêw TACONJ_2 "s/he teaches s.o. Cree, Cree ways" ; ! Independent, 3s-3' 
 nêhiyawi-kiskinwahamâkosiw IACONJ_v "s/he learns Cree, Cree ways; s/he attends Cree school" ; ! Independent, 3s 
 nêhiyawi-pîkiskwêw IACONJ_v "s/he speaks Cree, use Cree words" ; ! Independent, 3s 
@@ -5488,7 +5491,7 @@ nipâsiw IACONJ_v "s/he dozes, naps, sleeps a little" ; ! Independent, 3s, dimin
 nipâskâkow TACONJ_2 "it makes one sleep" ; ! Independent, 0'-3s (inanimate actor) restricted, VTA-2 stem *nipâskaw- not typically used outside of inanimate actor
 nipâskiw IACONJ_v "s/he sleeps all the time, s/he sleeps constantly, s/he likes to sleep" ; ! Independent, 3s, habitual 
 nipâtwêwitam TICONJ_1 "s/he talks constantly" ; ! Independent, 3s-0' 
-nipâw IACONJ_v "s/he sleeps, s/he is asleep" ; ! Independent, 3s 
+!nipâw IACONJ_v "s/he sleeps, s/he is asleep" ; ! Independent, 3s 
 nipêhêw TACONJ_1 "s/he makes s.o. sleep, s/he puts s.o. to sleep" ; ! Independent, 3s-3' 
 nipêhkâsow IACONJ_v "s/he pretends to sleep" ; ! Independent, 3s 
 nipêpayiw IACONJ_v "s/he falls asleep, doze off" ; ! Independent, 3s 
@@ -7398,7 +7401,7 @@ pimipiciw IACONJ_v "s/he moves camp, s/he travels, s/he goes past in a wagon wit
 pimisêwêw IACONJ_v "s/he is heard passing by (with bells on)" ; ! Independent, 3s 
 pimisimêw TACONJ_1 "s/he lays s.o. extended, s/he lays s.o. on the ground or bed" ; ! Independent, 3s-3' 
 pimisimow IACONJ_v "s/he dances by, s/he dances along" ; ! Independent, 3s 
-pimisin IACONJ_n "s/he lies, s/he lies down, s/he lies extended" ; ! Independent, 3s 
+!pimisin IACONJ_n "s/he lies, s/he lies down, s/he lies extended" ; ! Independent, 3s 
 pimiskanawêw IACONJ_v "s/he makes tracks" ; ! Independent, 3s 
 pimiskâw IACONJ_v "s/he swims by; s/he paddles by in a canoe, boat; s/he paddles, s/he rows" ; ! Independent, 3s 
 pimitamow IICONJ_v "it is a crosswise road, it lies crosswise" ; ! Independent, 0s 

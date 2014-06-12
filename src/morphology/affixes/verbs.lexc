@@ -459,6 +459,8 @@ LEXICON TACONJ-CONT
 < "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUT ; !
 < "+Imp":0 "@U.mood.imp@" > TA_IMP ; !
 
+
+
 LEXICON TA_IND !!= @CODE@ gives prs
 < "@U.tense.Prs@"    "+Prs":%> > TA_IND_PERSPREF ;!
 < "@U.tense.Prt@"    "+Prt":%>          > TA_IND_PERSPREF ; !
@@ -569,7 +571,7 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +4Pl+4SgO:%>koyit	   # ;
 +4Pl+4PlO:%>ikoyit   # ;
 +4Pl+3SgO:%>âyit	   # ;
-+4Pl+3SgO:%>ikot	   # ;
+!+4Pl+3SgO:%>ikot	   # ;
 +4Pl+3PlO:%>ikocik	   # ;
 
 
@@ -649,12 +651,19 @@ LEXICON 12Pl_Imp
 
 LEXICON TICONJa  !!= * @CODE@
 < "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
-+V+TI: TICONJ-CONT ;
++V+TI: TICONJ-CONTa ;
 
  
 LEXICON TICONJ  !!= * @CODE@ adds baseform and directs to IACONJ-CONT
 < "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TI: IACONJ-CONT ; 
+
+
+LEXICON TICONJ-CONTa !!= * @CODE@
+< "+Ind":0  "@U.mood.indep@" >  TI_IND ; !
+< "+Cnj":0  "@U.mood.cnj@" > TI_CNJa ; !
+<     "@D.tense@"  >  TI_IMP ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TI_FUT_CON ;
 
 
 LEXICON TICONJ-CONT !!= * @CODE@
@@ -700,6 +709,10 @@ LEXICON TI_CNJ !!= @CODE@ Third mode, conjunctive
 < "+Prt":0          "@U.tense.Prt@"    > IA_CNJ_SUF ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > IA_CNJ_SUF ; !
 
+LEXICON TI_CNJa !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > TI_CNJ_SUF ; !
+< "+Prt":0          "@U.tense.Prt@"    > TI_CNJ_SUF ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TI_CNJ_SUF ; !
 
 
 LEXICON TI_CNJ_SUF !!= * @CODE@
