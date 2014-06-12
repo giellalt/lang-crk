@@ -230,6 +230,19 @@ LEXICON ANKINiyINFL  !!= * @CODE@ Special treatment for kinship nouns ending wit
 +N+AN+Der/Dim:is%^DIMis%> ANDIMPOSS ;  
 +N+AN: ANSUFF_LOC ;  
 
+LEXICON ANINALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
+< "+N":0 "+AN":0  "@U.noun.abs@" > ANABLGENERIC ; !Generic form 
++N+AN+Sg:%> ANSUFF_SG ;
++N+AN+Pl:%> ANSUFF_PL ;
++N+AN:%> ANSUFF_LOC ;
+
+LEXICON ANABLGENERIC !!= * @CODE@ generic forms Sg, Pl, Loc and diminutives
++Sg: SG_ ;
++Pl: PLak ;
+ LOC ;
++Der/Dim+N+AN+Sg:%>is%^DIM%> SG_ ;
++Der/Dim+N+AN+Pl:%>is%^DIM%> PLak ;
+
 
 !! !!The declinations for Inanimates
 
@@ -340,6 +353,7 @@ LEXICON INALIENABLEPOSS !!= * @CODE@ for the inanimate possessive declension
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
+
 
 LEXICON INABLGENERIC !!= * @CODE@ generic forms Sg, Pl, Loc and diminutives
 +Sg: SG_ ;
