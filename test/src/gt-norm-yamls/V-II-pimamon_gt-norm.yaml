@@ -1,0 +1,34 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - pimâmon - adsf : #  VII2on acc. Wolvengrey p. 394
+  
+     pimâmon+V+II: pimâmon
+     pimâmon+V+II+Ind+Prs+3Sg: pimâmon
+     pimâmon+V+II+Ind+Prs+3Pl: pimâmonwa
+     pimâmon+V+II+Ind+Prs+4Sg: pimâmoniyiw
+     pimâmon+V+II+Ind+Prs+4Pl: pimâmoniyiwa
+
+     pimâmon+V+II+Ind+Prt+3Sg: [kîpimâmon, kî-pimâmon]
+     pimâmon+V+II+Ind+Prt+3Pl: [kîpimâmonwa, kî-pimâmonwa]
+     pimâmon+V+II+Ind+Prt+4Sg: [kîpimâmoniyiw, kî-pimâmoniyiw]
+     pimâmon+V+II+Ind+Prt+4Pl: [kîpimâmoniyiwa, kî-pimâmoniyiwa]
+
+     pimâmon+V+II+Cnj+Prs+3Sg: [êpimâmok, ê-pimâmok]
+     pimâmon+V+II+Cnj+Prs+3Pl: [êpimâmoki, ê-pimâmoki]
+     pimâmon+V+II+Cnj+Prs+4Sg: [êpimâmoniyik, ê-pimâmoniyik]
+     pimâmon+V+II+Cnj+Prs+4Pl: [êpimâmoniyiki, ê-pimâmoniyiki]
+
+     pimâmon+V+II+Cnj+Prt+3Sg: [êkîpimâmok, êkî-pimâmok, ê-kîpimâmok, ê-kî-pimâmok]
+     pimâmon+V+II+Cnj+Prt+3Pl: [êkîpimâmoki, êkî-pimâmoki, ê-kîpimâmoki, ê-kî-pimâmoki]
+     pimâmon+V+II+Cnj+Prt+4Sg: [êkîpimâmoniyik, êkî-pimâmoniyik, ê-kîpimâmoniyik,  ê-kî-pimâmoniyik]
+     pimâmon+V+II+Cnj+Prt+4Pl: [êkîpimâmoniyiki, êkî-pimâmoniyiki, ê-kîpimâmoniyiki, ê-kî-pimâmoniyiki]
+
