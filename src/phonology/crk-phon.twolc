@@ -8,7 +8,12 @@ Alphabet
  y2:y      !!= * @CODE@ t between prefix and vowel-initial stem
  w2:w      !!= * @CODE@ t between prefix and vowel-initial stem
  %>:0      !!= * @CODE@ affix boundary
- %^LOC:0    !!= * @CODE@ Locative suffix alternation trigger
+           ! To discuss:
+           ! * affix boundaries should be visible, i.e. %>
+           ! * do we want to differentiate between prefix boundaries %<
+           !   and suffix boundaries %> ? And the same for derivation boundaries
+           !   « and »?
+ %^LOC:0   !!= * @CODE@ Locative suffix alternation trigger
  %^DIM:0   !!= * @CODE@ Diminutive alternation trigger
  %^EGLOT:0 !!= * @CODE@ Conjunctive êh trigger
  %^POS:0   !!= * @CODE@ Possessive alternation trigger
