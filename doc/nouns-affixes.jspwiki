@@ -32,7 +32,7 @@ found at the end of this file.
 !!!Suffixes
 
 
-!!The declinations for Animates
+!!The declensions for Animates 
 
 
  * LEXICON ANDECL  for the animate declension, Dim: -isis and -is 
@@ -80,6 +80,10 @@ found at the end of this file.
 
  * LEXICON ANKINiyINFL   Special treatment for kinship nouns ending with -iy - should be done in twolc?
 
+ * LEXICON ANINALIENABLEPOSS  for the inanimate possessive declension
+
+ * LEXICON ANABLGENERIC  generic forms Sg, Pl, Loc and diminutives
+
 
 !!The declinations for Inanimates
 
@@ -117,6 +121,7 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
  * LEXICON INALIENABLEDERIVATION   for hardcoded noun:diminutive for inalienables
 
  * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
+
 
  * LEXICON INABLGENERIC  generic forms Sg, Pl, Loc and diminutives
 
