@@ -462,7 +462,7 @@ LEXICON TACONJ-CONT
 
 
 LEXICON TA_IND !!= @CODE@ gives prs
-< "@U.tense.Prs@"    "+Prs":%> > TA_IND_PERSPREF ;!
+< "@U.tense.Prs@"    "+Prs":%>          > TA_IND_PERSPREF ;!
 < "@U.tense.Prt@"    "+Prt":%>          > TA_IND_PERSPREF ; !
 < "@U.tense.FutDef@" "+Fut":0 "+Def":%> > TA_IND_PERSPREF ; !Future definite 
 < "@U.tense.FutInt@" "+Fut":0 "+Int":%> > TA_IND_PERSPREF ; !Future intentional
