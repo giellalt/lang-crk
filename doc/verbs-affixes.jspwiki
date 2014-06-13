@@ -204,7 +204,10 @@ There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
 
  LEXICON VTA_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
 
+
+
  LEXICON VTA_KI_O 	     gives the objects suffixes matching 2Sg subject
+
 
 
 
@@ -244,6 +247,8 @@ There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
 
 
 
+
+
 Transitive Inanimate (TI)
 
 
@@ -251,6 +256,9 @@ Transitive Inanimate (TI)
 
 
  * LEXICON TICONJ   adds baseform and directs to IACONJ-CONT
+
+
+ * LEXICON TICONJ-CONTa 
 
 
  * LEXICON TICONJ-CONT 
@@ -267,6 +275,7 @@ Transitive Inanimate (TI)
 
  LEXICON TI_CNJ  Third mode, conjunctive
 
+ LEXICON TI_CNJa  Third mode, conjunctive
 
 
  * LEXICON TI_CNJ_SUF 

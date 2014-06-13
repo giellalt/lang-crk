@@ -1,9 +1,8 @@
 
  *  t2:0       t between prefix and vowel-initial stem
- *  y2:y       t between prefix and vowel-initial stem
- *  w2:       t between prefix and vowel-initial stem
+ *  w2:w       for keeping the final -w in mow
  *  %>:0       affix boundary
- *  %^LOC:0     Locative suffix alternation trigger
+ *  %^LOC:0    Locative suffix alternation trigger
  *  %^DIM:0    Diminutive alternation trigger
  *  %^EGLOT:0  Conjunctive êh trigger
  *  %^POS:0    Possessive alternation trigger
@@ -27,8 +26,6 @@ mahkwan:wahkwan, mîpit:wîpit, mîyaw:wîyaw
 __o:0 in possessive prefix__ , Okimasis p. 140 
 
 __i:0 after possessive prefix__ , ospiton 
-
-__w2:w in verbs__ , mow 
 
 __t2:t between prefix and vowel__ , joiner for nouns with initial vowel. If consonant, t2:0, defined in the Alphabet
 
@@ -85,10 +82,9 @@ __e and ee to aa rule in first and second person__
 __a to ee rule in first and second person__
 
 
-__a to ee rule in first and second person__
-
 __n:0 before k-suffix__
 
+__n:h before k-suffix__
 
 
 

@@ -216,10 +216,9 @@ Prefixes with a certain phonological content:
 
 
  *  t2:0       t between prefix and vowel-initial stem
- *  y2:y       t between prefix and vowel-initial stem
- *  w2:       t between prefix and vowel-initial stem
+ *  w2:w       for keeping the final -w in mow
  *  %>:0       affix boundary
- *  %^LOC:0     Locative suffix alternation trigger
+ *  %^LOC:0    Locative suffix alternation trigger
  *  %^DIM:0    Diminutive alternation trigger
  *  %^EGLOT:0  Conjunctive êh trigger
  *  %^POS:0    Possessive alternation trigger
@@ -243,8 +242,6 @@ mahkwan:wahkwan, mîpit:wîpit, mîyaw:wîyaw
 __o:0 in possessive prefix__ , Okimasis p. 140 
 
 __i:0 after possessive prefix__ , ospiton 
-
-__w2:w in verbs__ , mow 
 
 __t2:t between prefix and vowel__ , joiner for nouns with initial vowel. If consonant, t2:0, defined in the Alphabet
 
@@ -301,10 +298,9 @@ __e and ee to aa rule in first and second person__
 __a to ee rule in first and second person__
 
 
-__a to ee rule in first and second person__
-
 __n:0 before k-suffix__
 
+__n:h before k-suffix__
 
 
 
@@ -409,6 +405,8 @@ Words marked GG are from Plains Cree Grammar guide and glossary
  nohtehkatew:nohtehkate IACONJ "be hungry" ; 
  atoskêw:atoskê IACONJw "work" ;  test
  nêhiyawêw:nêhiyawê IACONJw "work" ; 
+
+
 
 
 
@@ -979,7 +977,10 @@ There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
 
  LEXICON VTA_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
 
+
+
  LEXICON VTA_KI_O 	     gives the objects suffixes matching 2Sg subject
+
 
 
 
@@ -1019,6 +1020,8 @@ There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
 
 
 
+
+
 Transitive Inanimate (TI)
 
 
@@ -1026,6 +1029,9 @@ Transitive Inanimate (TI)
 
 
  * LEXICON TICONJ   adds baseform and directs to IACONJ-CONT
+
+
+ * LEXICON TICONJ-CONTa 
 
 
  * LEXICON TICONJ-CONT 
@@ -1042,6 +1048,7 @@ Transitive Inanimate (TI)
 
  LEXICON TI_CNJ  Third mode, conjunctive
 
+ LEXICON TI_CNJa  Third mode, conjunctive
 
 
  * LEXICON TI_CNJ_SUF 
