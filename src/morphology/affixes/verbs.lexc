@@ -485,6 +485,12 @@ LEXICON VTA_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 
 +1Pl+3SgO:%>ânân	  # ;
 +1Pl+3PlO:%>ânânak	  # ;
 +3Pl+1PlO:%>ikonânak  # ;
++1Sg+2SgO:%>âwak         # ;
++1Pl+2SgO:%>âwak         # ; !OBS
++1Sg+2PlO:%>âwak         # ;
++1Pl+2PlO:%>âwak         # ;
+
+
 
 LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 +2Sg+3SgO:%>âw		  # ;
@@ -499,6 +505,11 @@ LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 +2Pl+3SgO:%>âwâw	  # ;
 +2Pl+3PlO:%>âwâwak	  # ;
 +3Pl+2PlO:%>ikowâwak  # ;
++2Sg+1SgO:%>in         # ;
++2Sg+1PlO:%>inân       # ;
++2Pl+1PlO:%>inân       # ;
++2Pl+1SgO:%>inâwâw     # ;
+
 				  
 LEXICON VTA_NULL_O 	  
 +3Sg+3SgO:%>êw		  # ; ! Oki 77
@@ -509,12 +520,13 @@ LEXICON VTA_NULL_O
 !+3Sg+3PlO:%>ikak	  # ; ! Oki 77
 !+3Pl+3SgO:%>kow	  # ; ! Oki 77
 +3Pl+3SgO:%>êwak	  # ; ! Oki 77
++4Sg+4PlO:%>in	  # ;
 
-+4Sg+3SgO:%>êyiwa	  # ;
++4Sg+3SgO:%>êyiwa	  # ; !OBS
 !+4Sg+3SgO:%>ikoyiwa  # ; !??
-+4Sg+3PlO:%>êyiwa	  # ;
++4Sg+3PlO:%>êyiwa	  # ; !OBS
 !+4Sg+3PlO:%>ikoyiwa  # ; !??
-+4Sg+4PlO:%>ikoyiwa  # ; !??
++4Sg+4SgO:%>ikoyiwa  # ; !
 
 !+3Pl+3PlO:%>ikowak	  # ; ??
 +3Pl+3PlO:%>êwak	  # ;
@@ -549,7 +561,7 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +3Sg+3SgO:%>ât		   # ;
 +3Sg+3PlO:%>ât		   # ;
 +3Sg+2SgO:%>isk		   # ;
-+3Sg+2PlO:%>ikoyêk	   # ;
++3Sg+2PlO:%>ikoyek	   # ;
 +3Sg+1SgO:%>it		   # ;
 +3Sg+1PlO:%>ikoyâhk	   # ;
 +3Sg+12PlO:%>ikoyahk   # ;
@@ -559,20 +571,31 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +3Pl+3PlO:%>âcik	   # ;
 +3Pl+2SgO:%>iskik	   # ;
 +3Pl+2PlO:%>ikoyêkok   # ;
-+3Pl+1SgO:%>icik	   # ;
++3Pl+1SgO:%>iticik	   # ;
 +3Pl+1PlO:%>ikoyâhkik  # ;
-+3Pl+12PlO:%>ikoyâhkok # ;
++3Pl+12PlO:%>ikoyahkok # ;
+
++2Sg+1SgO:%>iyan       # ;
++2Sg+1PlO:%>iyâhk       # ;
++2Pl+1PlO:%>iyâhk       # ;
++2Pl+1SgO:%>iyêk       # ;
+
 
 +4Sg+4SgO:%>koyit	   # ;
 +4Sg+4PlO:%>ikoyit   # ;
-+4Sg+3SgO:%>âyit	   # ;
++4Sg+3SgO:%>ikot	   # ;
 +4Sg+3PlO:%>ikocik	   # ;
 
 +4Pl+4SgO:%>koyit	   # ;
-+4Pl+4PlO:%>ikoyit   # ;
++4Pl+4PlO:%>ikocik   # ;
 +4Pl+3SgO:%>âyit	   # ;
 !+4Pl+3SgO:%>ikot	   # ;
 +4Pl+3PlO:%>ikocik	   # ;
+
++1Sg+2SgO:%>itân         # ;
++1Pl+2SgO:%>itâhk         # ; 
++1Pl+2PlO:%>itâhk         # ; 
++1Sg+2PlO:%>itakok         # ;
 
 
 LEXICON TA_FUT
@@ -621,16 +644,23 @@ LEXICON TA_IMP
 !@U.verb.imp2pl@ 12Pl_Imp ;
 
 LEXICON 2Sg_Imp
++Imm+2Sg+1SgO:%>in # ;
++Imm+2Sg+1PlO:%>inân # ;
 +Imm+2Sg+3SgO: # ;
 +Imm+2Sg+3PlO:%>ik # ;
 +Del+2Sg+3SgO:%>âhkan # ;
 +Del+2Sg+3PlO:%>âhkanik # ;
++Del+2Sg+1SgO:%>îhkan # ;
++Del+2Sg+2PlO:%>îhkâhk # ;
++Del+2Sg+1PlO:%>îhkâhk # ;
 
 LEXICON 2Pl_Imp
++Imm+2Pl+1SgO:%>ik # ;
 +Imm+2Pl+3SgO:%>ihk # ;
 +Imm+2Pl+3PlO:%>ihkok # ;
 +Del+2Pl+3SgO:%>âhkêk # ;
 +Del+2Pl+3PlO:%>âhkêkok # ;
++Del+2Pl+1SgO:%>îhkêk # ;
 
 LEXICON 12Pl_Imp
 +Imm+12Pl+3SgO:%>âtân # ;
