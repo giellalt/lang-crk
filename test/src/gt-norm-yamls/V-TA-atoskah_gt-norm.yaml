@@ -10,28 +10,30 @@ Config:
 Tests:
   
   Verb - atoskah - help : # Ordinary TA verb - full paradigm
+  
      atoskah+V+TA+Ind+Prs+1Sg+3SgO: nitatoskahâw
      atoskah+V+TA+Ind+Prs+2Sg+3SgO: kitatoskahâw
+     atoskah+V+TA+Ind+Prs+1Pl+3SgO: nitatoskahânân
+     atoskah+V+TA+Ind+Prs+12Pl+3SgO: kitatoskahânaw
      atoskah+V+TA+Ind+Prs+3Sg+3SgO: atoskahêw
      atoskah+V+TA+Ind+Prs+4Sg+3SgO: atoskahêyiwa
 
-     atoskah+V+TA+Ind+Prs+1Pl+3SgO: nitatoskahânân
-     atoskah+V+TA+Ind+Prs+12Pl+3SgO: kitatoskahânaw
      atoskah+V+TA+Ind+Prs+2Pl+3SgO: kitatoskahâwâw
      atoskah+V+TA+Ind+Prs+3Pl+3SgO: atoskahêwak
      atoskah+V+TA+Ind+Prs+4Pl+3SgO: atoskahêyiwa
 
      atoskah+V+TA+Ind+Prs+1Sg+3PlO: nitatoskahâwak
      atoskah+V+TA+Ind+Prs+2Sg+3PlO: kitatoskahâwak
-     atoskah+V+TA+Ind+Prs+3Sg+3PlO: atoskahêw
-     atoskah+V+TA+Ind+Prs+4Sg+3PlO: atoskahêyiwa
-     atoskah+V+TA+Ind+Prs+4Sg+4PlO: atoskahikoyiwa
-
      atoskah+V+TA+Ind+Prs+1Pl+3PlO: nitatoskahânânak
      atoskah+V+TA+Ind+Prs+12Pl+3PlO: kitatoskahânawak
      atoskah+V+TA+Ind+Prs+2Pl+3PlO: kitatoskahâwâwak
-     atoskah+V+TA+Ind+Prs+3Pl+3PlO: atoskahikowak
+     atoskah+V+TA+Ind+Prs+3Sg+3PlO: atoskahêw
      atoskah+V+TA+Ind+Prs+3Pl+3PlO: atoskahêwak
+
+     atoskah+V+TA+Ind+Prs+4Sg+3PlO: atoskahêyiwa
+     atoskah+V+TA+Ind+Prs+4Sg+4PlO: atoskahikoyiwa
+
+     atoskah+V+TA+Ind+Prs+3Pl+3PlO: atoskahikowak
      atoskah+V+TA+Ind+Prs+4Pl+3PlO: atoskahêyiwa
 
      atoskah+V+TA+Ind+Prs+3Sg+1SgO: nitatoskahik
