@@ -113,7 +113,7 @@ LIST Der/Dim = Der/Dim ;
 
 LIST WORD = N V Ipc Interj ;
 
-LIST VFIN = 1Sg 2Sg 3Sg 4Sg 5Sg 1Pl 2Pl 3Pl 4Pl 5Pl ;
+LIST VFIN = (V 1Sg) (V 2Sg) (V 3Sg) (V 4Sg) (V 5Sg) (V 1Pl) (V 2Pl) (V 3Pl) (V 4Pl) (V 5Pl) ;
 
 SET NOT-VERB = WORD - V ;
 

@@ -87,7 +87,6 @@ LIST Prox = Prox ;
 LIST Prs = Prs ;
 LIST Prt = Prt ;
 LIST Qst = Qst ;
-LIST Sbj = Sbj ;
 
 LIST SgO = SgO ;
 LIST P2lO = P2lO ;
@@ -141,6 +140,8 @@ LIST @-FMAINV = @-FMAINV ;
 LIST @-FAUXV = @-FAUXV ;
 
 LIST @ADVL = @ADVL ;
+LIST @ADVL> = @ADVL> ;
+LIST @<ADVL = @<ADVL ;
 
  
 LIST @>N = @>N ;
@@ -219,7 +220,7 @@ LIST WORD = N V Ipc Interj ;
 # Verb sets
 # ---------
 
-LIST VFIN = 1Sg 2Sg 3Sg 4Sg 5Sg 1Pl 2Pl 3Pl 4Pl 5Pl ;
+LIST VFIN = (V 1Sg) (V 2Sg) (V 3Sg) (V 4Sg) (V 5Sg) (V 1Pl) (V 2Pl) (V 3Pl) (V 4Pl) (V 5Pl) ;
 
 # Verbs and their complements
 # - - - - - - - - - - - - - -
@@ -235,9 +236,12 @@ BEFORE-SECTIONS
 
 SECTION
 
-MAP @ADVL Loc ;
-MAP @ADVL Ipc ;
+MAP @<ADVL Loc OR Ipc  (-1 VFIN) ;
+MAP @ADVL> Loc OR Ipc  (*1 VFIN) ;
+MAP @ADVL Loc OR Ipc  ;
 MAP @+FMAINV VFIN ;
+MAP @>N (Pron Dem) (1 N)  ;
+MAP @N< (Pron Dem) (-1 N)  ;
 
 
 MAP @X (?) ;
