@@ -15,12 +15,9 @@ Tests:
      atoskah+V+TA+Ind+Prs+2Sg+3SgO: kitatoskahâw
      atoskah+V+TA+Ind+Prs+1Pl+3SgO: nitatoskahânân
      atoskah+V+TA+Ind+Prs+12Pl+3SgO: kitatoskahânaw
-     atoskah+V+TA+Ind+Prs+3Sg+3SgO: atoskahêw
-     atoskah+V+TA+Ind+Prs+4Sg+3SgO: atoskahêyiwa
-
      atoskah+V+TA+Ind+Prs+2Pl+3SgO: kitatoskahâwâw
+     atoskah+V+TA+Ind+Prs+3Sg+3SgO: atoskahêw
      atoskah+V+TA+Ind+Prs+3Pl+3SgO: atoskahêwak
-     atoskah+V+TA+Ind+Prs+4Pl+3SgO: atoskahêyiwa
 
      atoskah+V+TA+Ind+Prs+1Sg+3PlO: nitatoskahâwak
      atoskah+V+TA+Ind+Prs+2Sg+3PlO: kitatoskahâwak
@@ -30,11 +27,13 @@ Tests:
      atoskah+V+TA+Ind+Prs+3Sg+3PlO: atoskahêw
      atoskah+V+TA+Ind+Prs+3Pl+3PlO: atoskahêwak
 
-     atoskah+V+TA+Ind+Prs+4Sg+3PlO: atoskahêyiwa
-     atoskah+V+TA+Ind+Prs+4Sg+4PlO: atoskahikoyiwa
+     atoskah+V+TA+Ind+Prs+4Sg+4SgO: atoskahêyiwa
+     atoskah+V+TA+Ind+Prs+4Sg+4PlO: atoskahêyiwa     
 
-     atoskah+V+TA+Ind+Prs+3Pl+3PlO: atoskahikowak
-     atoskah+V+TA+Ind+Prs+4Pl+3PlO: atoskahêyiwa
+     atoskah+V+TA+Ind+Prs+2Sg+1SgO: kiatoskahin
+     atoskah+V+TA+Ind+Prs+2Sg+1PlO: kiatoskahinân
+     atoskah+V+TA+Ind+Prs+2Pl+1PlO: kiatoskahinân
+     atoskah+V+TA+Ind+Prs+2Pl+1SgO: kiatoskahinâwâw
 
      atoskah+V+TA+Ind+Prs+3Sg+1SgO: nitatoskahik
      atoskah+V+TA+Ind+Prs+3Sg+2SgO: kitatoskahik
@@ -48,6 +47,15 @@ Tests:
      atoskah+V+TA+Ind+Prs+3Pl+12PlO: kitatoskahikonawak
      atoskah+V+TA+Ind+Prs+3Pl+2PlO: kitatoskahikowâwak
      
+     atoskah+V+TA+Ind+Prs+4Sg+3SgO: atoskahik
+     atoskah+V+TA+Ind+Prs+4Sg+3PlO: atoskahikwak
+     atoskah+V+TA+Ind+Prs+5Sg+4SgO: atoskahikoyiwa
+
+     atoskah+V+TA+Ind+Prs+1Sg+2SgO: kiatoskahitin
+     atoskah+V+TA+Ind+Prs+1Pl+2SgO: kiatoskahitinân
+     atoskah+V+TA+Ind+Prs+1Pl+2PlO: kiatoskahitinân
+     atoskah+V+TA+Ind+Prs+1Sg+2PlO: kiatoskahitinânâw
+
      atoskah+V+TA+Cnj+Prs+1Sg+3SgO: [ê-atoskahak, êhatoskahak]
      atoskah+V+TA+Cnj+Prs+1Sg+3PlO: [ê-atoskahakik, êhatoskahakik]
      atoskah+V+TA+Cnj+Prs+1Pl+3SgO: [ê-atoskahâyâhk, êhatoskahâyâhk]
