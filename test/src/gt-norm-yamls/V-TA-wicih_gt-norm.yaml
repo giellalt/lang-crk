@@ -9,127 +9,105 @@ Config:
 
 Tests:
   
-  Verb - wîcih - help : # Ordinary TA verb - full paradigm
+  Verb - wîcih - ok : # Wolvengrey VTA1 verb - p 401
+
+
+
+
      wîcih+V+TA+Ind+Prs+1Sg+3SgO: niwîcihâw
      wîcih+V+TA+Ind+Prs+2Sg+3SgO: kiwîcihâw
-     wîcih+V+TA+Ind+Prs+3Sg+3SgO: wîcihêw
-     wîcih+V+TA+Ind+Prs+4Sg+3SgO: wîcihêyiwa
-
      wîcih+V+TA+Ind+Prs+1Pl+3SgO: niwîcihânân
      wîcih+V+TA+Ind+Prs+12Pl+3SgO: kiwîcihânaw
      wîcih+V+TA+Ind+Prs+2Pl+3SgO: kiwîcihâwâw
+     wîcih+V+TA+Ind+Prs+3Sg+3SgO: wîcihêw
      wîcih+V+TA+Ind+Prs+3Pl+3SgO: wîcihêwak
-     wîcih+V+TA+Ind+Prs+4Pl+3SgO: wîcihêyiwa
+     wîcih+V+TA+Ind+Prs+4Sg+4SgO: wîcihêyiwa
+     wîcih+V+TA+Ind+Prs+4Sg+4PlO: wîcihêyiwa
 
-     wîcih+V+TA+Ind+Prs+1Sg+3PlO: niwîcihâwak
-     wîcih+V+TA+Ind+Prs+2Sg+3PlO: kiwîcihâwak
-     wîcih+V+TA+Ind+Prs+3Sg+3PlO: wîcihêw
-     wîcih+V+TA+Ind+Prs+4Sg+3PlO: wîcihêyiwa
-     wîcih+V+TA+Ind+Prs+4Sg+4PlO: wîcihikoyiwa
-
-     wîcih+V+TA+Ind+Prs+1Pl+3PlO: niwîcihânânak
-     wîcih+V+TA+Ind+Prs+12Pl+3PlO: kiwîcihânawak
-     wîcih+V+TA+Ind+Prs+2Pl+3PlO: kiwîcihâwâwak
-     wîcih+V+TA+Ind+Prs+3Pl+3PlO: wîcihêwak
-     wîcih+V+TA+Ind+Prs+4Pl+3PlO: wîcihêyiwa
+     wîcih+V+TA+Ind+Prs+2Sg+1SgO: kiwîcihin
+     wîcih+V+TA+Ind+Prs+2Sg+1PlO: kiwîcihinân
+     wîcih+V+TA+Ind+Prs+2Pl+1PlO: kiwîcihinân
+     wîcih+V+TA+Ind+Prs+2Pl+1SgO: kiwîcihinâwâw
 
      wîcih+V+TA+Ind+Prs+3Sg+1SgO: niwîcihik
      wîcih+V+TA+Ind+Prs+3Sg+2SgO: kiwîcihik
      wîcih+V+TA+Ind+Prs+3Sg+1PlO: niwîcihikonân
      wîcih+V+TA+Ind+Prs+3Sg+12PlO: kiwîcihikonaw
      wîcih+V+TA+Ind+Prs+3Sg+2PlO: kiwîcihikowâw
-     
+
      wîcih+V+TA+Ind+Prs+3Pl+1SgO: niwîcihikwak
      wîcih+V+TA+Ind+Prs+3Pl+2SgO: kiwîcihikwak
      wîcih+V+TA+Ind+Prs+3Pl+1PlO: niwîcihikonânak
      wîcih+V+TA+Ind+Prs+3Pl+12PlO: kiwîcihikonawak
      wîcih+V+TA+Ind+Prs+3Pl+2PlO: kiwîcihikowâwak
-     
+     wîcih+V+TA+Ind+Prs+4Sg+3SgO: wîcihik
+     wîcih+V+TA+Ind+Prs+4Sg+3PlO: wîcihikwak
+     wîcih+V+TA+Ind+Prs+5Sg+4SgO: wîcihikoyiwa
+
+     wîcih+V+TA+Ind+Prs+1Sg+2SgO: kiwîcihitin
+     wîcih+V+TA+Ind+Prs+1Pl+2SgO: kiwîcihitinân
+     wîcih+V+TA+Ind+Prs+1Pl+2PlO: kiwîcihitinân
+     wîcih+V+TA+Ind+Prs+1Sg+2PlO: kiwîcihitinânâw
+
      wîcih+V+TA+Cnj+Prs+1Sg+3SgO: [ê-wîcihak, êwîcihak]
      wîcih+V+TA+Cnj+Prs+1Sg+3PlO: [ê-wîcihakik, êwîcihakik]
+     wîcih+V+TA+Cnj+Prs+2Sg+3SgO: [ê-wîcihat, êwîcihat]
+     wîcih+V+TA+Cnj+Prs+2Sg+3PlO: [ê-wîcihacik, êwîcihacik]
      wîcih+V+TA+Cnj+Prs+1Pl+3SgO: [ê-wîcihâyâhk, êwîcihâyâhk]
      wîcih+V+TA+Cnj+Prs+1Pl+3PlO: [ê-wîcihâyâhkik, êwîcihâyâhkik]
      wîcih+V+TA+Cnj+Prs+12Pl+3SgO: [ê-wîcihâyahk, êwîcihâyahk]
      wîcih+V+TA+Cnj+Prs+12Pl+3PlO: [ê-wîcihâyâhkok, êwîcihâyâhkok]
 
-     wîcih+V+TA+Cnj+Prs+2Sg+3SgO: [ê-wîcihat, êwîcihat]
-     wîcih+V+TA+Cnj+Prs+2Sg+3PlO: [ê-wîcihacik, êwîcihacik]
      wîcih+V+TA+Cnj+Prs+2Pl+3SgO: [ê-wîcihâyêk, êwîcihâyêk]
      wîcih+V+TA+Cnj+Prs+2Pl+3PlO: [ê-wîcihâyêkok, êwîcihâyêkok]
+     wîcih+V+TA+Cnj+Prs+3Sg+4SgO: [ê-wîcihât, êwîcihât]
+     wîcih+V+TA+Cnj+Prs+3Sg+4PlO: [ê-wîcihât, êwîcihât]
+     wîcih+V+TA+Cnj+Prs+3Pl+4PlO: [ê-wîcihâcik, êwîcihâcik]
+     wîcih+V+TA+Cnj+Prs+3Pl+4SgO: [ê-wîcihâcik, êwîcihâcik]
+     wîcih+V+TA+Cnj+Prs+4Sg+5SgO: [ê-wîcihâyit, êwîcihâyit]
+  
+     wîcih+V+TA+Cnj+Prs+2Sg+1SgO: [ê-wîcihiyan, êwîcihiyan]
+     wîcih+V+TA+Cnj+Prs+2Sg+1PlO: [ê-wîcihiyâhk, êwîcihiyâhk]
+     wîcih+V+TA+Cnj+Prs+2Pl+1PlO: [ê-wîcihiyâhk, êwîcihiyâhk]
+     wîcih+V+TA+Cnj+Prs+2Pl+1SgO: [ê-wîcihiyêk, êwîcihiyêk]
 
-     wîcih+V+TA+Cnj+Prs+3Pl+1SgO: [ê-wîcihicik, êwîcihicik]
-     wîcih+V+TA+Cnj+Prs+3Pl+1PlO: [ê-wîcihikoyâhkik, êwîcihikoyâhkik]
-     wîcih+V+TA+Cnj+Prs+3Pl+12PlO: [ê-wîcihikoyâhkok, êwîcihikoyâhkok]
-     wîcih+V+TA+Cnj+Prs+3Pl+2SgO: [ê-wîcihiskik, êwîcihiskik]
-     wîcih+V+TA+Cnj+Prs+3Pl+2PlO: [ê-wîcihikoyêkok, êwîcihikoyêkok]
-     wîcih+V+TA+Cnj+Prs+3Pl+3SgO: [ê-wîcihâcik, êwîcihâcik]
-     wîcih+V+TA+Cnj+Prs+3Pl+3PlO: [ê-wîcihâcik, êwîcihâcik]
-     wîcih+V+TA+Cnj+Prs+3Pl+4PlO: [ê-wîcihikocik, êwîcihikocik]
-
-     wîcih+V+TA+Cnj+Prs+3Sg+4PlO: [ê-wîcihikocik, êwîcihikocik]
-     wîcih+V+TA+Cnj+Prs+3Sg+3SgO: [ê-wîcihât, êwîcihât]
-     wîcih+V+TA+Cnj+Prs+3Sg+3PlO: [ê-wîcihât, êwîcihât]
-     wîcih+V+TA+Cnj+Prs+3Sg+2SgO: [ê-wîcihisk, êwîcihisk]
-     wîcih+V+TA+Cnj+Prs+3Sg+2PlO: [ê-wîcihikoyêk, êwîcihikoyêk]
      wîcih+V+TA+Cnj+Prs+3Sg+1SgO: [ê-wîcihit, êwîcihit]
+     wîcih+V+TA+Cnj+Prs+3Sg+2SgO: [ê-wîcihisk, êwîcihisk]
      wîcih+V+TA+Cnj+Prs+3Sg+1PlO: [ê-wîcihikoyâhk, êwîcihikoyâhk]
      wîcih+V+TA+Cnj+Prs+3Sg+12PlO: [ê-wîcihikoyahk, êwîcihikoyahk]
+     wîcih+V+TA+Cnj+Prs+3Sg+2PlO: [ê-wîcihikoyek, êwîcihikoyek]
 
-     wîcih+V+TA+Cnj+Prs+4Pl+4SgO: [ê-wîcihkoyit, êwîcihkoyit]
-     wîcih+V+TA+Cnj+Prs+4Pl+4PlO: [ê-wîcihikoyit, êwîcihikoyit]
-     wîcih+V+TA+Cnj+Prs+4Pl+3SgO: [ê-wîcihâyit, êwîcihâyit]
-     wîcih+V+TA+Cnj+Prs+4Pl+3PlO: [ê-wîcihikocik, êwîcihikocik]
-     wîcih+V+TA+Cnj+Prs+4Sg+4SgO: [ê-wîcihkoyit, êwîcihkoyit]
-     wîcih+V+TA+Cnj+Prs+4Sg+4PlO: [ê-wîcihikoyit, êwîcihikoyit]
-     wîcih+V+TA+Cnj+Prs+4Sg+3SgO: [ê-wîcihâyit, êwîcihâyit]
+     wîcih+V+TA+Cnj+Prs+3Pl+1SgO: [ê-wîcihiticik, êwîcihiticik]
+     wîcih+V+TA+Cnj+Prs+3Pl+2SgO: [ê-wîcihiskik, êwîcihiskik]
+     wîcih+V+TA+Cnj+Prs+3Pl+1PlO: [ê-wîcihikoyâhkik, êwîcihikoyâhkik]
+     wîcih+V+TA+Cnj+Prs+3Pl+12PlO: [ê-wîcihikoyahkok, êwîcihikoyahkok]
+     wîcih+V+TA+Cnj+Prs+3Pl+2PlO: [ê-wîcihikoyêkok, êwîcihikoyêkok]
+     wîcih+V+TA+Cnj+Prs+4Sg+3SgO: [ê-wîcihikot, êwîcihikot]
      wîcih+V+TA+Cnj+Prs+4Sg+3PlO: [ê-wîcihikocik, êwîcihikocik]
+     wîcih+V+TA+Cnj+Prs+4Sg+4PlO: [ê-wîcihikoyit, êwîcihikoyit]
 
-
-     wîcih+V+TA+Fut+Cond+1Sg+3SgO: wîcihaki
-     wîcih+V+TA+Fut+Cond+1Sg+3PlO: wîcihakwâwi
-     wîcih+V+TA+Fut+Cond+1Pl+3SgO: wîcihâyâhki
-     wîcih+V+TA+Fut+Cond+1Pl+3PlO: wîcihâyâhkwâwi
-     wîcih+V+TA+Fut+Cond+12Pl+3SgO: wîcihâyâhko
-     wîcih+V+TA+Fut+Cond+12Pl+3PlO: wîcihâyâhkwâwi
-     wîcih+V+TA+Fut+Cond+2Sg+3SgO: wîcihaci
-     wîcih+V+TA+Fut+Cond+2Sg+3PlO: wîcihatwâwi
-     wîcih+V+TA+Fut+Cond+2Pl+3SgO: wîcihâyêko
-     wîcih+V+TA+Fut+Cond+2Pl+3PlO: wîcihâyêkwâwi
-     wîcih+V+TA+Fut+Cond+3Sg+3SgO: wîcihâci
-     wîcih+V+TA+Fut+Cond+3Sg+4SgO: wîcihâyici
-     wîcih+V+TA+Fut+Cond+3Sg+3PlO: wîcihikotwâwi
-     wîcih+V+TA+Fut+Cond+3Sg+1SgO: wîcihici
-     wîcih+V+TA+Fut+Cond+3Sg+2SgO: wîcihiski
-     wîcih+V+TA+Fut+Cond+3Sg+1PlO: wîcihikoyâhki
-     wîcih+V+TA+Fut+Cond+3Sg+2PlO: wîcihikoyêko
-     wîcih+V+TA+Fut+Cond+3Sg+12PlO: wîcihikoyahko
-     wîcih+V+TA+Fut+Cond+3Pl+3SgO: wîcihâtwâwi
-     wîcih+V+TA+Fut+Cond+3Pl+3PlO: wîcihâtwâwi
-     wîcih+V+TA+Fut+Cond+4Sg+3SgO: wîcihikoci
-     wîcih+V+TA+Fut+Cond+4Sg+3PlO: wîcihâyici
-     wîcih+V+TA+Fut+Cond+4Pl+3SgO: wîcihikoci
-     wîcih+V+TA+Fut+Cond+4Pl+3PlO: wîcihâyici
-     wîcih+V+TA+Fut+Cond+4Sg+4PlO: wîcihikoyici
-     wîcih+V+TA+Fut+Cond+4Pl+4PlO: wîcihikoyici
+     wîcih+V+TA+Cnj+Prs+1Sg+2SgO: [ê-wîcihitân, êwîcihitân]
+     wîcih+V+TA+Cnj+Prs+1Pl+2SgO: [ê-wîcihitâhk, êwîcihitâhk]
+     wîcih+V+TA+Cnj+Prs+1Pl+2PlO: [ê-wîcihitâhk, êwîcihitâhk]
+     wîcih+V+TA+Cnj+Prs+1Sg+2PlO: [ê-wîcihitakok, êwîcihitakok]
 
      wîcih+V+TA+Imp+Imm+2Sg+3SgO: wîcih
-     wîcih+V+TA+Imp+Imm+2Pl+3SgO: wîcihihk
      wîcih+V+TA+Imp+Imm+12Pl+3SgO: wîcihâtân
-
+     wîcih+V+TA+Imp+Imm+2Pl+3SgO: wîcihihk
      wîcih+V+TA+Imp+Imm+2Sg+3PlO: wîcihik
-     wîcih+V+TA+Imp+Imm+2Pl+3PlO: wîcihihkok
      wîcih+V+TA+Imp+Imm+12Pl+3PlO: wîcihâtânik
+     wîcih+V+TA+Imp+Imm+2Pl+3PlO: wîcihihkok
 
      wîcih+V+TA+Imp+Del+2Sg+3SgO: wîcihâhkan
-     wîcih+V+TA+Imp+Del+2Pl+3SgO: wîcihâhkêk
      wîcih+V+TA+Imp+Del+12Pl+3SgO: wîcihâhkahk
-
+     wîcih+V+TA+Imp+Del+2Pl+3SgO: wîcihâhkêk
      wîcih+V+TA+Imp+Del+2Sg+3PlO: wîcihâhkanik
-     wîcih+V+TA+Imp+Del+2Pl+3PlO: wîcihâhkêkok
      wîcih+V+TA+Imp+Del+12Pl+3PlO: wîcihâhkahkok
+     wîcih+V+TA+Imp+Del+2Pl+3PlO: wîcihâhkêkok
 
-
-
-
-
-
+     wîcih+V+TA+Imp+Imm+2Sg+1SgO: wîcihin
+     wîcih+V+TA+Imp+Imm+2Sg+1PlO: wîcihinân
+     wîcih+V+TA+Imp+Imm+2Pl+1SgO: wîcihik
+     wîcih+V+TA+Imp+Del+2Sg+1SgO: wîcihîhkan
+     wîcih+V+TA+Imp+Del+2Sg+1PlO: wîcihîhkâhk
+     wîcih+V+TA+Imp+Del+2Pl+1SgO: wîcihîhkêk
