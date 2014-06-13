@@ -11,9 +11,6 @@ Tests:
   
   Verb - wîcih - ok : # Wolvengrey VTA1 verb - p 401
 
-
-
-
      wîcih+V+TA+Ind+Prs+1Sg+3SgO: niwîcihâw
      wîcih+V+TA+Ind+Prs+2Sg+3SgO: kiwîcihâw
      wîcih+V+TA+Ind+Prs+1Pl+3SgO: niwîcihânân
@@ -21,8 +18,17 @@ Tests:
      wîcih+V+TA+Ind+Prs+2Pl+3SgO: kiwîcihâwâw
      wîcih+V+TA+Ind+Prs+3Sg+3SgO: wîcihêw
      wîcih+V+TA+Ind+Prs+3Pl+3SgO: wîcihêwak
+     
+     wîcih+V+TA+Ind+Prs+1Sg+3PlO: niwîcihâwak
+     wîcih+V+TA+Ind+Prs+2Sg+3PlO: kiwîcihâwak
+     wîcih+V+TA+Ind+Prs+1Pl+3PlO: niwîcihânânak
+     wîcih+V+TA+Ind+Prs+12Pl+3PlO: kiwîcihânawak
+     wîcih+V+TA+Ind+Prs+2Pl+3PlO: kiwîcihâwâwak
+     wîcih+V+TA+Ind+Prs+3Sg+3PlO: wîcihêw
+     wîcih+V+TA+Ind+Prs+3Pl+3PlO: wîcihêwak
+
      wîcih+V+TA+Ind+Prs+4Sg+4SgO: wîcihêyiwa
-     wîcih+V+TA+Ind+Prs+4Sg+4PlO: wîcihêyiwa
+     wîcih+V+TA+Ind+Prs+4Sg+4PlO: wîcihêyiwa     
 
      wîcih+V+TA+Ind+Prs+2Sg+1SgO: kiwîcihin
      wîcih+V+TA+Ind+Prs+2Sg+1PlO: kiwîcihinân
@@ -40,6 +46,7 @@ Tests:
      wîcih+V+TA+Ind+Prs+3Pl+1PlO: niwîcihikonânak
      wîcih+V+TA+Ind+Prs+3Pl+12PlO: kiwîcihikonawak
      wîcih+V+TA+Ind+Prs+3Pl+2PlO: kiwîcihikowâwak
+     
      wîcih+V+TA+Ind+Prs+4Sg+3SgO: wîcihik
      wîcih+V+TA+Ind+Prs+4Sg+3PlO: wîcihikwak
      wîcih+V+TA+Ind+Prs+5Sg+4SgO: wîcihikoyiwa
@@ -50,20 +57,21 @@ Tests:
      wîcih+V+TA+Ind+Prs+1Sg+2PlO: kiwîcihitinânâw
 
      wîcih+V+TA+Cnj+Prs+1Sg+3SgO: [ê-wîcihak, êwîcihak]
-     wîcih+V+TA+Cnj+Prs+1Sg+3PlO: [ê-wîcihakik, êwîcihakik]
      wîcih+V+TA+Cnj+Prs+2Sg+3SgO: [ê-wîcihat, êwîcihat]
-     wîcih+V+TA+Cnj+Prs+2Sg+3PlO: [ê-wîcihacik, êwîcihacik]
      wîcih+V+TA+Cnj+Prs+1Pl+3SgO: [ê-wîcihâyâhk, êwîcihâyâhk]
-     wîcih+V+TA+Cnj+Prs+1Pl+3PlO: [ê-wîcihâyâhkik, êwîcihâyâhkik]
      wîcih+V+TA+Cnj+Prs+12Pl+3SgO: [ê-wîcihâyahk, êwîcihâyahk]
-     wîcih+V+TA+Cnj+Prs+12Pl+3PlO: [ê-wîcihâyâhkok, êwîcihâyâhkok]
-
      wîcih+V+TA+Cnj+Prs+2Pl+3SgO: [ê-wîcihâyêk, êwîcihâyêk]
+
+     wîcih+V+TA+Cnj+Prs+1Sg+3PlO: [ê-wîcihakik, êwîcihakik]
+     wîcih+V+TA+Cnj+Prs+2Sg+3PlO: [ê-wîcihacik, êwîcihacik]
+     wîcih+V+TA+Cnj+Prs+1Pl+3PlO: [ê-wîcihâyâhkik, êwîcihâyâhkik]
+     wîcih+V+TA+Cnj+Prs+12Pl+3PlO: [ê-wîcihâyâhkok, êwîcihâyâhkok]
      wîcih+V+TA+Cnj+Prs+2Pl+3PlO: [ê-wîcihâyêkok, êwîcihâyêkok]
+
      wîcih+V+TA+Cnj+Prs+3Sg+4SgO: [ê-wîcihât, êwîcihât]
+     wîcih+V+TA+Cnj+Prs+3Pl+4SgO: [ê-wîcihâcik, êwîcihâcik]
      wîcih+V+TA+Cnj+Prs+3Sg+4PlO: [ê-wîcihât, êwîcihât]
      wîcih+V+TA+Cnj+Prs+3Pl+4PlO: [ê-wîcihâcik, êwîcihâcik]
-     wîcih+V+TA+Cnj+Prs+3Pl+4SgO: [ê-wîcihâcik, êwîcihâcik]
      wîcih+V+TA+Cnj+Prs+4Sg+5SgO: [ê-wîcihâyit, êwîcihâyit]
   
      wîcih+V+TA+Cnj+Prs+2Sg+1SgO: [ê-wîcihiyan, êwîcihiyan]
@@ -82,6 +90,7 @@ Tests:
      wîcih+V+TA+Cnj+Prs+3Pl+1PlO: [ê-wîcihikoyâhkik, êwîcihikoyâhkik]
      wîcih+V+TA+Cnj+Prs+3Pl+12PlO: [ê-wîcihikoyahkok, êwîcihikoyahkok]
      wîcih+V+TA+Cnj+Prs+3Pl+2PlO: [ê-wîcihikoyêkok, êwîcihikoyêkok]
+
      wîcih+V+TA+Cnj+Prs+4Sg+3SgO: [ê-wîcihikot, êwîcihikot]
      wîcih+V+TA+Cnj+Prs+4Sg+3PlO: [ê-wîcihikocik, êwîcihikocik]
      wîcih+V+TA+Cnj+Prs+4Sg+4PlO: [ê-wîcihikoyit, êwîcihikoyit]
