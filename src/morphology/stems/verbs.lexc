@@ -104,6 +104,7 @@ pâhpi IACONJ "laught" ; !GG
 nîmihito IACONJ "dance" ; !GG
 kîwe IACONJ "go home" ; !GG
 pihtokwe IACONJ "enter" ; !GG
+ayâw:ayâ IACONJw "s/he is, s/he is there; s/he lives there, s/he stays there" ; ! Independent, 3s 
 
 ! colour terms
 
@@ -137,6 +138,7 @@ sîkipêstâw:sîkipêstâ IICONJw-SG "it is pouring" ;
 kaskaniwipêscâsin IICONJ-SG "it is misth" ;
 miywâsin IICONJ "it is good" ; !yaml !Wolv
 mihkwâw:mihkwâ IICONJw "it is red" ; !yaml
+ayâw:ayâ IICONJw "it is, it is there" ; ! Independent, 0s 
 
 !LEXICON TASTEM 
 
@@ -156,9 +158,11 @@ asênamaw TACONJ_1 "return X to Y" ;
 askowêh TACONJ_1 "follow X" ;
 atoskah TACONJ_1 "hire X" ;
 awih TACONJ_1 "loan X to Y" ;
-ayâw TACONJ_1 "have X" ;
+ayâw:ay TACONJ_2 "have X" ; !?
 atoskaw:atosk TACONJ_2 "work for him/her" ;
 kapêsistaw:kapêsist TACONJ_2 ;
+
+
 
 !LEXICON TISTEM  !VTI
 nisitohta TICONJa "understand" ;
@@ -169,6 +173,7 @@ katâ TICONJ ;
 nitohta TICONJa "listen" ;
 nisitohta TICONJa "understand" ;
 mâham:mâha TICONJa "s/he canoes downriver, s/he paddles downstream, s/he rows downstream, s/he goes downstream (by canoe)" ; ! Independent, 3s(-0') 
+!ayâw TICONJ_2 "s/he has s.t., s/he owns s.t." ; ! Independent, 3s-0' 
 
 
 
@@ -740,9 +745,9 @@ ayâtastâw TICONJ_2 "s/he places s.t. in solid" ; ! Independent, 3s-0'
 ayâtastêw IICONJ_v "it rests firmly in place" ; ! Independent, 0s 
 ayâtinam TICONJ_1 "s/he holds s.t. firmly" ; ! Independent, 3s-0' 
 ayâtinêw TACONJ_1 "s/he holds s.o. firmly" ; ! Independent, 3s-3' 
-ayâw IICONJ_v "it is, it is there" ; ! Independent, 0s 
-ayâw TICONJ_2 "s/he has s.t., s/he owns s.t." ; ! Independent, 3s-0' 
-ayâw IACONJ_v "s/he is, s/he is there; s/he lives there, s/he stays there" ; ! Independent, 3s 
+!ayâw IICONJ_v "it is, it is there" ; ! Independent, 0s 
+!ayâw TICONJ_2 "s/he has s.t., s/he owns s.t." ; ! Independent, 3s-0' 
+!ayâw IACONJ_v "s/he is, s/he is there; s/he lives there, s/he stays there" ; ! Independent, 3s 
 ayâwahkaham TICONJ_1 "s/he buries s.t. in the ground" ; ! Independent, 3s-0' 
 ayâwahkahwêw TACONJ_3 "s/he buries s.o. in the ground" ; ! Independent, 3s-3' 
 ayâwêw TACONJ_1 "s/he has s.o., s/he owns s.o." ; ! Independent, 3s-3' 
