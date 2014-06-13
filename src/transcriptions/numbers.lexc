@@ -41,6 +41,7 @@ UNDERTHOUSAND ;		! 100-999
 TENS ;			! 20-99
 TEENS ;			! 10-19
 ONES ;			! 1-9
+NEARLY ;			! 29-99
 
 LEXICON HUNDREDSM
 nîso:2  CUODIM ;
@@ -171,6 +172,7 @@ nikotwâsomi:6   TANAW ;
 tepakohpimi:7 TANAW ;
 ayinânewomi:8 TANAW ;
 kekâmitâtahtomi:9   TANAW ;
+kâmitâtahtomi:9   TANAW ;
 
 LEXICON TANAW
 tanaw% :%0 ENDLEX ;
@@ -237,6 +239,7 @@ LEXICON TENS
 mitâtaht:1%0 ENDLEX ;
 låhkede:1%0%. ENDLEX ;
 nîs:2 TEN ;
+nîsi:2 TEN ;
 nistomi:3 TEN ;
 nemi:4 TEN ;
 nîyânanomi:5 TEN ;
@@ -250,6 +253,23 @@ låhkede:%0%. ENDLEX ;
 tanaw% : ONESTONEXT ;
 tanaw% :%0 ENDLEX ;
 
+LEXICON NEARLY
+kekâc-nistomi:29 NEARLY-TEN ;
+kekâc-nemi:39 NEARLY-TEN ;
+kekâc-nîyânanomi:49 NEARLY-TEN ;
+kekâc-nikotwâsomi:59 NEARLY-TEN ;
+kekâc-tepakohpimi:69 NEARLY-TEN ;
+kekâc-ayinânewomi:79 NEARLY-TEN ;
+kekâc-ayenânewomi:79 NEARLY-TEN ;
+kekâc-kekâ-mitâtahtomi:89 NEARLY-TEN ;
+kekâ-mitatahtomi:90 NEARLY-TEN ;
+kekâ-mitatahtomitanaw% kekâ-mitâtaht:99 ENDLEX ;
+
+LEXICON NEARLY-TEN
+tanaw: ENDLEX ;
+
+
+
 LEXICON ONESTONEXT
 peyakosâp:1 ENDLEX ;
 nîsosâp:2 ENDLEX ;
@@ -260,7 +280,7 @@ nikotwâsosâp:6 ENDLEX ;
 tepakohposâp:7 ENDLEX ;
 ayinânewosâp:8 ENDLEX ;
 kekâmitâtahtosâp:9 ENDLEX ;
-
+ayiwâk% : CARDINAL ;
 
 
 LEXICON TEENS
@@ -287,6 +307,7 @@ niyânan:5 ENDLEX ;
 nikotwâsik:6 ENDLEX ;
 tepakohp:7 ENDLEX ;
 ayinânew:8 ENDLEX ;
+ayenânew:8 ENDLEX ;
 kekâmitâtaht:9 ENDLEX ;
 
 LEXICON ORDINAL
