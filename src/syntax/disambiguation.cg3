@@ -1,8 +1,8 @@
 
 
-# ===================== #
-# Faroese disambiguator #
-# ===================== #
+#   ============================ #
+#!! !!!Plains Cree disambiguator 
+#   ============================ #
 
 
 # ========== #
@@ -50,6 +50,7 @@ LIST ConNeg = ConNeg ;
 LIST Cond = Cond ;
 LIST Def = Def ;
 LIST Del = Del ;
+LIST Dem = Dem ;
 LIST Dim = Dim ;
 LIST Dim/Der = Dim/Der ;
 LIST Dist = Dist ;
@@ -60,6 +61,7 @@ LIST Incl = Incl ;
 LIST Ind = Ind ;
 LIST Inf = Inf ;
 LIST Int = Int ;
+LIST Interr = Interr ;
 LIST Loc = Loc ;
 LIST Med = Med ;
 LIST Neg = Neg ;
@@ -81,6 +83,7 @@ LIST PlO = PlO ;
 LIST 12Pl = 12Pl ;
 LIST 1Pl = 1Pl ;
 LIST 1PlO = 1PlO ;
+LIST Sg = Sg ;
 LIST 1Sg = 1Sg ;
 LIST 1SgO = 1SgO ;
 LIST 2Pl = 2Pl ;
@@ -117,6 +120,9 @@ LIST VFIN = (V 1Sg) (V 2Sg) (V 3Sg) (V 4Sg) (V 5Sg) (V 1Pl) (V 2Pl) (V 3Pl) (V 4
 
 SET NOT-VERB = WORD - V ;
 
+LIST NUMBER = Sg Pl ;
+LIST GENDER = AN IN ;
+SET NUMBERGENDER = (AN Sg) OR (AN Pl) OR (IN Sg) OR (IN PL) ;
 
 # Noun sets
 
@@ -144,13 +150,28 @@ BEFORE-SECTIONS
 SECTION
 
 # We remove the particle if the word can be something more interesting:
-REMOVE Ipc (0 N OR V) ;
+REMOVE:NotIpc Ipc (0 N OR V) ;
 
 # We like finite verbs:
-SELECT VFIN ;
+SELECT:Vfin VFIN ;
 
 # We go for derivation, more to look at when we are searching a lemme in Korp:
-SELECT Der/Dim (0C N) ;
+SELECT:DerYes Der/Dim (0C N) ;
+
+# We say postnominal words are determiners, not particles, if they agree
+REMOVE:DemNotIpc Ipc (-1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
+	## Mîcisowinâhtik ôma.
+
+# Demonstratives follow nouns.
+REMOVE:IpcNotDem Dem (NOT -1 N)(0 Ipc) ;
+
+# Interrogatives in questions
+REMOVE:InterrNotN N (0 Interr)(NOT *-1 Interr)(*1 ("?"));
+
+# NP-internal agreement
+REMOVE:SgAgr Sg (0 N OR Pron)(1C Dem + Pl) ;
+REMOVE:PlAgr Pl (0 N OR Pron)(1C Dem + Sg) ;
+
 
 AFTER-SECTIONS 
 
