@@ -84,7 +84,7 @@ tr -d '"' |
 
 gawk -v CLASS=$1 'BEGIN { FS="\t"; class=CLASS; print "LEXICON STEMLIST"; print ""; }
 NR>1 { lex=$1; pos=$3; gloss=$4; note1=$10; note2=$11; stem=$15; clex="";
-gsub("ý","y",lex); gsub("[ ]*$","",lex);
+gsub("ý","y",lex); gsub("[ ]*$","",lex); gsub("[!?]","",lex);
 gsub("^[ ]*","",stem); gsub("[ ]*$","",stem); gsub("[-]$","",stem); gsub("ý","y",stem);
 gsub("[ ]*","",pos); gsub("^[ ]*","",gloss);
 gsub("^[ ]*","",note1); gsub("^[ ]*","",note2);
@@ -114,6 +114,7 @@ if(class=="N")
     else
       printf "\n";
 }
+
 if(class=="V")
 {
 #  if(pos=="VAI-n") clex="IACONJ_n";
@@ -147,6 +148,18 @@ if(pos=="VAI-n" || pos=="VAI-v")
       printf "\n";
 }
 
+if(class=="I")
+{ if(pos=="IPC" || pos=="IPJ" || pos=="IPC ;; IPJ")
+    clex="pcle";
+  if(pos=="IPH")
+    { clex="pcle";
+      gsub(" ","% ",lex);
+    }
+  if(index(gloss,"!")!=0)
+    gsub("!"," [excl]",gloss);
+  if(clex!="")
+    printf "%s %s \"%s\" ;\n", lex, clex, gloss;
+}
 }'
 
 #  191 IACONJ_n
@@ -161,3 +174,11 @@ if(pos=="VAI-n" || pos=="VAI-v")
 # 1468 TICONJ_1
 #  360 TICONJ_2
 #    6 TICONJ_3
+
+# 934  IPC
+# 250  IPV
+# 160  IPH
+#  91  IPJ
+#  64  IPN
+#   9  IPC ;; IPJ
+#   4  IPP
