@@ -84,8 +84,8 @@ tr -d '"' |
 
 gawk -v CLASS=$1 'BEGIN { FS="\t"; class=CLASS; print "LEXICON STEMLIST"; print ""; }
 NR>1 { lex=$1; pos=$3; gloss=$4; note1=$10; note2=$11; stem=$15; clex="";
-gsub("ý","y",lex);
-gsub("^[ ]*","",stem); gsub("-$","",stem); gsub("ý","y",stem);
+gsub("ý","y",lex); gsub("[ ]*$","",lex);
+gsub("^[ ]*","",stem); gsub("[ ]*$","",stem); gsub("[-]$","",stem); gsub("ý","y",stem);
 gsub("[ ]*","",pos); gsub("^[ ]*","",gloss);
 gsub("^[ ]*","",note1); gsub("^[ ]*","",note2);
 
@@ -116,25 +116,34 @@ if(class=="N")
 }
 if(class=="V")
 {
-  if(pos=="VAI-n") clex="IACONJ_n";
-  if(pos=="VAI-v") clex="IACONJ_v";
-  if(pos=="VII-n") clex="IICONJ_n";
-  if(pos=="VII-v") clex="IICONJ_v";
-  if(pos=="VTA-1") clex="TACONJ_1";
-  if(pos=="VTA-2") clex="TACONJ_2";
-  if(pos=="VTA-3") clex="TACONJ_3";
-  if(pos=="VTA-4") clex="TACONJ_4";
-  if(pos=="VTA-5") clex="TACONJ_5";
-  if(pos=="VTI-1") clex="TICONJ_1";
-  if(pos=="VTI-2") clex="TICONJ_2";
-  if(pos=="VTI-3") clex="TICONJ_3";
+#  if(pos=="VAI-n") clex="IACONJ_n";
+#  if(pos=="VAI-v") clex="IACONJ_v";
+#  if(pos=="VII-n") clex="IICONJ_n";
+#  if(pos=="VII-v") clex="IICONJ_v";
+#  if(pos=="VTA-1") clex="TACONJ_1";
+#  if(pos=="VTA-2") clex="TACONJ_2";
+#  if(pos=="VTA-3") clex="TACONJ_3";
+#  if(pos=="VTA-4") clex="TACONJ_4";
+#  if(pos=="VTA-5") clex="TACONJ_5";
+#  if(pos=="VTI-1") clex="TICONJ_1";
+#  if(pos=="VTI-2") clex="TICONJ_2";
+#  if(pos=="VTI-3") clex="TICONJ_3";
 
-  if(clex!="")
-    printf "%s %s \"%s\" ;", lex, clex, gloss;
-  if(clex!="")
-    if(note1!="" || note2!="")
-       printf " ! %s %s\n", note1, note2;
+if(pos=="VAI-n" || pos=="VAI-v")
+  { if(stem!=lex && match(lex,"w$")!=0)
+      clex="IACONJw";
     else
+      clex="IACONJ";
+  }
+
+  if(clex!="" && stem==lex)
+    printf "%s %s \"%s\" ;", lex, clex, gloss;
+  if(clex!="" && stem!=lex)
+    printf "%s:%s %s \"%s\" ;", lex, stem, clex, gloss;
+  if(clex!="")
+#    if(note1!="" || note2!="")
+#       printf " ! %s %s\n", note1, note2;
+#    else
       printf "\n";
 }
 
