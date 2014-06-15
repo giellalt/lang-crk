@@ -160,10 +160,11 @@ SELECT:DerYes Der/Dim (0C N) ;
 
 # We say postnominal words are determiners, not particles, if they agree
 REMOVE:DemNotIpc Ipc (-1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
+REMOVE:DemNotIpc Ipc ( 1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
 	## Mîcisowinâhtik ôma.
 
 # Demonstratives follow nouns.
-REMOVE:IpcNotDem Dem (NOT -1 N)(0 Ipc) ;
+REMOVE:IpcNotDem Dem (NOT -1 N)(NOT 1 N)(0 Ipc) ;
 
 # Interrogatives in questions
 REMOVE:InterrNotN N (0 Interr)(NOT *-1 Interr)(*1 ("?"));
@@ -171,6 +172,21 @@ REMOVE:InterrNotN N (0 Interr)(NOT *-1 Interr)(*1 ("?"));
 # NP-internal agreement
 REMOVE:SgAgr Sg (0 N OR Pron)(1C Dem + Pl) ;
 REMOVE:PlAgr Pl (0 N OR Pron)(1C Dem + Sg) ;
+
+# N Px number agreement
+REMOVE:PxSg Px3Pl (-1 N + Sg);
+REMOVE:PxPl Px3Sg (-1 N + Pl);
+
+# Singular object
+REMOVE:SgIfObjSg 3PlO (0 3SgO)(*0 Sg + Obv);
+REMOVE:PlIfObjSg 3SgO (0 3SgO)(*0 Pl + Obv);
+
+# Mood rules -- do not understand moods yet
+
+REMOVE Fut (0 Ind);
+REMOVE Imp (0 Ind)(*0 N + Sg);
+
+
 
 
 AFTER-SECTIONS 
