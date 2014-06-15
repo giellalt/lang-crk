@@ -88,6 +88,7 @@ LIST Prs = Prs ;
 LIST Prt = Prt ;
 LIST Qst = Qst ;
 
+LIST Sg = Sg ;
 LIST SgO = SgO ;
 LIST P2lO = P2lO ;
 LIST Pl = Pl ;
@@ -242,6 +243,19 @@ MAP @ADVL Loc OR Ipc  ;
 MAP @+FMAINV VFIN ;
 MAP @>N (Pron Dem) (1 N)  ;
 MAP @N< (Pron Dem) (-1 N)  ;
+
+
+MAP @OBJ> N IF (0 Sg + Obv)(*1 TA + 3SgO);
+MAP @<OBJ N IF (0 Sg + Obv)(*-1 TA + 3SgO);
+
+MAP @SUBJ> N IF (0 AN + Sg)(*1 TA + 3Sg);
+MAP @<SUBJ N IF (0 AN + Sg)(*-1 TA + 3Sg);
+
+MAP @SUBJ> N IF (0 AN + Sg)(*1 TA + 4Sg);
+MAP @<SUBJ N IF (0 AN + Sg)(*-1 TA + 4Sg);
+
+MAP @SUBJ> N IF (0 IN + Sg)(*1 II + 3Sg);
+MAP @<SUBJ N IF (0 IN + Sg)(*-1 II + 3Sg);
 
 
 MAP @X (?) ;
