@@ -27,7 +27,7 @@ POS
 
  * +N	         
  * +V	         
- * +A	         
+ * +Prop	         
 
  * +Adv         
  * +CC	         
@@ -42,6 +42,7 @@ POS
 
   * +Ipc		 Indeclinable Particle
 
+ * +Dem         Demonstrative 
  * +Prox	     Demonstrative Proximate
  * +Med	     Demonstrative Medial
  * +Dist	     Demonstrative Distal
@@ -207,6 +208,7 @@ Prefixes with a certain phonological content:
  * NounPrefixes ;        
  * VerbPrefixes ;        
  * Pronoun ;             
+ * Propernouns ;         
  * Punctuation ;         
  * Particles ;           
  * Numerals ;            
@@ -813,15 +815,17 @@ The Plains Cree verbs are divided in four groups:
 
 
 
-Now, lexc directs us to the ../stems/nouns.lexc file,
-where we find all the nominal stems. The suffixes are then
-found at the end of this file.
+Now, lexc directs us to the ../stems/verbs.lexc file,
+where we find all the verbal stems. The suffixes are then
+found in the section "Suffixes" right underneath.
 
 
 
 
 
 !!!Suffixes
+
+
 
 
 
