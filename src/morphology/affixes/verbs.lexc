@@ -77,9 +77,9 @@ LEXICON IMPERATIV   !!= @CODE@ gives flag for imperative (no prefixes)
 
 
 
-!! Now, lexc directs us to the ../stems/nouns.lexc file,
-!! where we find all the nominal stems. The suffixes are then
-!! found at the end of this file.
+!! Now, lexc directs us to the ../stems/verbs.lexc file,
+!! where we find all the verbal stems. The suffixes are then
+!! found in the section "Suffixes" right underneath.
 
 
 ! ===============================================================
@@ -101,17 +101,19 @@ LEXICON IACONJ_n
 IACONJ ;
 LEXICON IACONJ_v 
 IACONJ ;
+
 LEXICON IICONJ_n 
 IICONJ ;
 LEXICON IICONJ_v 
 IICONJ ;
 
 LEXICON TACONJ_3 
-TACONJ_1 ;
+TACONJ_2 ;
 LEXICON TACONJ_4 
 TACONJ_1 ;
-LEXICON TACONJ_5 
-TACONJ_1 ;
+LEXICON TACONJ_5 ! name kept just to see link to Wolv
+TACONJw ;
+
 LEXICON TICONJ_1 
 TICONJ ;
 LEXICON TICONJ_2 
@@ -452,6 +454,9 @@ LEXICON TACONJ_2  !!= * @CODE@ splits in 4. The -aw shall be removed from some f
 < "+V":a "+TA":w   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA:aw TACONJ-CONT ;
 
+LEXICON TACONJw ! This is just guessing, I do not know how the VTA-5 vers are inflected.
+< "+V":w "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+TA:w TACONJ-CONT ;
 
 LEXICON TACONJ-CONT
 < "+Ind":0 "@U.mood.indep@" > TA_IND ; !
@@ -525,7 +530,7 @@ LEXICON VTA_NULL_O
 +4Sg+3SgO:%>ik	  # ; !OBS
 +5Sg+3SgO:%>ikoyiwa  # ; 
 +4Sg+3PlO:%>ikwak	  # ; !OBS
-!+4Sg+3PlO:%>ikoyiwa  # ; !??
++5Sg+4SgO:%>ikoyiwa  # ; !??
 +4Sg+4SgO:%>êyiwa  # ; !
 
 !+3Pl+3PlO:%>ikowak	  # ; ??
