@@ -1,12 +1,35 @@
 # Plains Cree long vowel variation.
 
+â (->) ā, # a + combining macron U+0304
+ê (->) ē, # e + combining macron U+0304
+î (->) ī, # i + combining macron U+0304
+ô (->) ō, # o + combining macron U+0304
 
-â (->) ā,
-ê (->) ē,
-e (->) ê,
-o (->) ô,
-î (->) ī,
-ô (->) ō, 
+Â (->) Ā, # A + combining macron U+0304
+Ê (->) Ē, # E + combining macron U+0304
+Î (->) Ī, # I + combining macron U+0304
+Ô (->) Ō, # O + combining macron U+0304
+
+â (->) ā, # a macron
+ê (->) ē, # e macron
+î (->) ī, # i macron
+ô (->) ō, # o macron
+
+Â (->) Ā, # A macron
+Ê (->) Ē, # E macron
+Î (->) Ī, # I macron
+Ô (->) Ō, # O macron
+
+â (->) â, # a + combining circumflex accent U+0302
+ê (->) ê, # e + combining circumflex accent U+0302
+î (->) î, # i + combining circumflex accent U+0302
+ô (->) ô, # o + combining circumflex accent U+0302
+
+Â (->) Â, # A + combining circumflex accent U+0302
+Ê (->) Ê, # E + combining circumflex accent U+0302
+Î (->) Î, # I + combining circumflex accent U+0302
+Ô (->) Ô, # O + combining circumflex accent U+0302
+
 â (->) a, # THESE to be deleted when the SoMe variant is running
 ê (->) e, # THESE to be deleted when the SoMe variant is running
 î (->) i, # THESE to be deleted when the SoMe variant is running
