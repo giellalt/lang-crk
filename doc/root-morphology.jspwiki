@@ -16,7 +16,7 @@ POS
 
  * +N	         
  * +V	         
- * +A	         
+ * +Prop	         
 
  * +Adv         
  * +CC	         
@@ -31,6 +31,7 @@ POS
 
   * +Ipc		 Indeclinable Particle
 
+ * +Dem         Demonstrative 
  * +Prox	     Demonstrative Proximate
  * +Med	     Demonstrative Medial
  * +Dist	     Demonstrative Distal
@@ -196,6 +197,7 @@ Prefixes with a certain phonological content:
  * NounPrefixes ;        
  * VerbPrefixes ;        
  * Pronoun ;             
+ * Propernouns ;         
  * Punctuation ;         
  * Particles ;           
  * Numerals ;            
