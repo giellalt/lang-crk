@@ -4812,6 +4812,8 @@ ayâw:ayâ IICONJw "it is, it is there" ; ! Independent, 0s
 
 !LEXICON TASTEM 
 
+! VTA1
+
 wâpam TACONJ_1 "see" ;
 wîcih TACONJ_1 "help" ;
 mow:mow2 TACONJ_1 "eat X" ;
@@ -4828,11 +4830,20 @@ asênamaw TACONJ_1 "return X to Y" ;
 askowêh TACONJ_1 "follow X" ;
 atoskah TACONJ_1 "hire X" ;
 awih TACONJ_1 "loan X to Y" ;
-ayâw:ay TACONJ_2 "have X" ; !?
-atoskaw:atosk TACONJ_2 "work for him/her" ;
-kapêsistaw:kapêsist TACONJ_2 ;
 
 
+! VTA-2
+âsiskawêw:âsiskaw TACONJ_2 "arrives before s.o." ;
+
+! VTA-3
+kîskiswêw:kîskisw TACONJ_3 "asdf" ;
+
+! TA-4
+nâtêw:nât3 TACONJ_4 "fetch" ;
+
+! to be done
+
+! VTA-5
 
 !LEXICON TISTEM  !VTI
 nisitohta TICONJa "understand" ;
@@ -4843,5 +4854,5 @@ katâ TICONJ ;
 nitohta TICONJa "listen" ;
 nisitohta TICONJa "understand" ;
 mâham:mâha TICONJa "s/he canoes downriver, s/he paddles downstream, s/he rows downstream, s/he goes downstream (by canoe)" ; ! Independent, 3s(-0') 
-!ayâw TICONJ_2 "s/he has s.t., s/he owns s.t." ; ! Independent, 3s-0' 
 
+ayâw:ay TICONJ_2 "have X" ; ! Independent, 3s-0' 
