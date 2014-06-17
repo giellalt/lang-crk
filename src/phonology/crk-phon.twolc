@@ -5,6 +5,7 @@ Alphabet
  Â Ê Î Ô
  
  t2:0      !!= * @CODE@ t between prefix and vowel-initial stem
+ t3:t      !!= * @CODE@ t to s in VTA-4
  w2:w      !!= * @CODE@ for keeping the final -w in mow
  %>:0      !!= * @CODE@ affix boundary
            ! To discuss:
@@ -17,7 +18,7 @@ Alphabet
  %^EGLOT:0 !!= * @CODE@ Conjunctive êh trigger
  %^POS:0   !!= * @CODE@ Possessive alternation trigger
  %^EA:0    !!= * @CODE@ ê to â in 1, 2 person of ê verbs
-
+ %^TS:0    !!= * @CODE@  t3 to s in VTA-4 verbs before some i-init suf
  ;
 
 Sets
@@ -32,7 +33,7 @@ Sets
  Nas = m n ;
  NonNas = b c d f g h j k l p q r s t v w x z  ;
 
- Dummy = %> %^LOC %^DIM %^EGLOT %^POS %^EA ;
+ Dummy = %> %^LOC %^DIM %^EGLOT %^POS %^EA %^TS ;
  
 Definitions 
 
@@ -75,6 +76,8 @@ t:c <=>  _ :*  %>:0 Dim .#. ; ! cehcapiwinisis
 "Diminutives - t2 changes to c" 
 !! !! __@RULENAME@__ , for the joiner. There are exeptions, but for they we have to make rules, or mark them with a dummy
 t2:c <=>  _ %>:0 Vow Dim .#. ; 
+
+
 
 "i:o alternations" 
 !! __@RULENAME@__  for suffix initial vowel, stem final -Cw
@@ -170,6 +173,8 @@ n:0 <=>  [ i | o ] _ %>:0 ( h ) k ; !pimisin+hk Wolvengrey p. 394 "n usually/som
 !! __@RULENAME@__
 n:h <=> a _ %>:0 k ; !mâyâtan:emâyâtahk Wolvengrey p. 393 
 
+"t3:s in VTA-4 verbs"
+t3:s <=> _ %>:0 %^TS:0 i ;
 
 
 
