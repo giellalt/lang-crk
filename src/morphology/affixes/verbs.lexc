@@ -92,7 +92,13 @@ LEXICON IMPERATIV   !!= @CODE@ gives flag for imperative (no prefixes)
 
 !! !!!Suffixes
 
-
+! fst:
+! IACONJ:  stem
+! IACONJw: stem (excl w)
+! 
+! Wolv:
+! IACONJ_n
+! IACONJ_w
 
 
 ! Auxiliary lexica for the verb dump
@@ -109,10 +115,9 @@ IICONJ ;
 
 LEXICON TACONJ_3 
 TACONJ_2 ;
+
 LEXICON TACONJ_4 
-TACONJ_1 ;
-LEXICON TACONJ_5 ! name kept just to see link to Wolv
-TACONJw ;
+TACONJ_2 ;
 
 LEXICON TICONJ_1 
 TICONJ ;
@@ -443,18 +448,17 @@ LEXICON II_CNJ_PERS-PL   !!= @CODE@ -n final
 !     =======================
 
 !! The VTA verbs split in different moods.
-!! There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
+!! There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 LEXICON TACONJ_1 !!= @CODE@ 
 < "+V":0 "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA: TACONJ-CONT ;
 
-
 LEXICON TACONJ_2  !!= * @CODE@ splits in 4. The -aw shall be removed from some forms.
-< "+V":a "+TA":w   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
-+V+TA:aw TACONJ-CONT ;
+< "+V":0 "+TA":0 0:ê 0:w "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+TA: TACONJ-CONT ;
 
-LEXICON TACONJw ! This is just guessing, I do not know how the VTA-5 vers are inflected.
+LEXICON TACONJ_5 ! This is just guessing, I do not know how the VTA-5 vers are inflected.
 < "+V":w "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA:w TACONJ-CONT ;
 
@@ -467,17 +471,15 @@ LEXICON TACONJ-CONT
 
 
 LEXICON TA_IND !!= @CODE@ gives prs
-< "@U.tense.Prs@"    "+Prs":%>          > TA_IND_PERSPREF ;!
-< "@U.tense.Prt@"    "+Prt":%>          > TA_IND_PERSPREF ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > TA_IND_PERSPREF ; !Future definite 
-< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > TA_IND_PERSPREF ; !Future intentional
+< "@U.tense.Prs@"    "+Prs":0          > TA_IND_PERSPREF ;!
+< "@U.tense.Prt@"    "+Prt":0          > TA_IND_PERSPREF ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > TA_IND_PERSPREF ; !Future definite 
+< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_IND_PERSPREF ; !Future intentional
 
 LEXICON TA_IND_PERSPREF !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
 @U.perspref.NI@   VTA_NI_O ;  !
 @U.perspref.KI@   VTA_KI_O ;  !
-@U.perspref.NULL@   VTA_NULL_O ;  !
-
-
+@U.perspref.NULL@ VTA_NULL_O ;  !
 
 
 LEXICON VTA_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
@@ -490,7 +492,6 @@ LEXICON VTA_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 
 +1Pl+3SgO:%>ânân	  # ;
 +1Pl+3PlO:%>ânânak	  # ;
 +3Pl+1PlO:%>ikonânak  # ;
-
 
 
 LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
@@ -506,10 +507,10 @@ LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 +2Pl+3SgO:%>âwâw	  # ;
 +2Pl+3PlO:%>âwâwak	  # ;
 +3Pl+2PlO:%>ikowâwak  # ;
-+2Sg+1SgO:%>in         # ;
-+2Sg+1PlO:%>inân       # ;
-+2Pl+1PlO:%>inân       # ;
-+2Pl+1SgO:%>inâwâw     # ;
++2Sg+1SgO:%>%^TSin         # ;
++2Sg+1PlO:%>%^TSinân       # ;
++2Pl+1PlO:%>%^TSinân       # ;
++2Pl+1SgO:%>%^TSinâwâw     # ;
 +1Sg+2SgO:%>itin         # ;
 +1Pl+2SgO:%>itinân         # ; !OBS
 +1Sg+2PlO:%>itinânâw         # ;
@@ -567,7 +568,7 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +3Sg+3PlO:%>ât		   # ;
 +3Sg+2SgO:%>isk		   # ;
 +3Sg+2PlO:%>ikoyek	   # ;
-+3Sg+1SgO:%>it		   # ;
++3Sg+1SgO:%>%^TSit		   # ;
 +3Sg+1PlO:%>ikoyâhk	   # ;
 +3Sg+12PlO:%>ikoyahk   # ;
 +3Pl+4SgO:%>âcik      # ;
@@ -576,14 +577,14 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +3Pl+3PlO:%>âcik	   # ;
 +3Pl+2SgO:%>iskik	   # ;
 +3Pl+2PlO:%>ikoyêkok   # ;
-+3Pl+1SgO:%>iticik	   # ;
++3Pl+1SgO:%>%^TSiticik	   # ;
 +3Pl+1PlO:%>ikoyâhkik  # ;
 +3Pl+12PlO:%>ikoyahkok # ;
 
-+2Sg+1SgO:%>iyan       # ;
-+2Sg+1PlO:%>iyâhk       # ;
-+2Pl+1PlO:%>iyâhk       # ;
-+2Pl+1SgO:%>iyêk       # ;
++2Sg+1SgO:%>%^TSiyan       # ;
++2Sg+1PlO:%>%^TSiyâhk       # ;
++2Pl+1PlO:%>%^TSiyâhk       # ;
++2Pl+1SgO:%>%^TSiyêk       # ;
 
 
 +4Sg+4SgO:%>koyit	   # ;
@@ -769,7 +770,7 @@ LEXICON TI_IMP  !!= @CODE@ Fourth mode, imperative
 
 LEXICON TI_imp !!= * @CODE@
 +Imm+2Sg:   # ; !
-+Imm+12Pl:%>^EAtân	  # ; !
++Imm+12Pl:%>%^EAtân	  # ; !
 +Imm+2Pl:%>mok   # ; !
 +Del+2Sg:%>môhkan   # ; !
 +Del+12Pl:%>môhkahk	  # ; !
