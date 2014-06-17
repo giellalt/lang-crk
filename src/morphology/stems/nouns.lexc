@@ -2749,6 +2749,7 @@ ospwâkanêhikan INDECL "stovepipe" ;
 ospwâkanihkân INDECL "stovepipe" ;
 ospwâkanis ANDIM "little pipe" ;
 ostêsimâw ANDECL "oldest brother, eldest brohter, firstborn male" ; ! singular cf. 1: nistês my older brother
+nistês ANDECL "oldest brother, eldest brohter, firstborn male" ; ! OAHPA
 ostêsimâwasinahikan INDECL "treaty, constitution" ;
 ostêsimâwasinahikêwin INDECL "writing or negotiating a treaty, constitution" ;
 ostêsimâwoyasiwêwin INDECL "constitution; treaty" ;
@@ -4116,26 +4117,39 @@ LEXICON INALIENABLESTEMS  ! dependent nouns
 LEXICON INABLESTEMLIST
 !! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o- \\
 otânisimâw:itânis ANKININFL "daughter" ; !yaml !!= @CODE@
+nitânis:itânis ANKININFL "daughter" ; ! OAHPA
 okosisimâw:ikosis ANKININFL "son" ; !!= @CODE@	
+nikosis:ikosis ANKININFL "son" ; !OAHPA	
 onîkihikomâw:inekihik ANKININFL "parent" ; ! NB! generic form? ninekihikwak onikihkomaw
+ninekihik:inekihik ANKININFL "parent" ; !OAHPA
 omosômimâw:imosôm ANKININFL "grandfather" ;
-ôhkomimâw:ôhkom ANKININFL "grandmother" ; !NB! twolc gives oô-
-nîtisân:îtisân ANKININFLni "sibling" ; !NB! twolc gives oî-
+nimosôm:imosôm ANKININFL "grandfather" ; !OAHPA
+ôhkomimâw:ôhkom ANKININFL "grandmother" ; !NB!
+nôhkom:ôhkom ANKININFL "grandmother" ; !OAHPA
+nîtisân:îtisân ANKININFLni "sibling" ; !NB! 
 osîmisimâw:isîmis ANKININFL "younger sibling" ; 
+nisîmis:isîmis ANKININFL "younger sibling" ; !OAHPA
 otôtemimâw:itôtem ANKININFL "friend" ; 
+nitôtem:itôtem ANKININFL "friend" ; !OAHPA
 okâwîmâw:ikâw ANKINiyINFL "mother" ;!  !yaml
+nikâwiy:ikâw ANKINiyINFL "mother" ;! !OAHPA
 ohtâwîmâw:ohtâw ANKINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy, kôhtâwînaw
+nohtâwiy:ohtâw ANKINiyINFL "father" ;   !OAHPA
 omisimâw:imis ANKININFL "older sister" ;
+nimis:imis ANKININFL "older sister" ;!OAHPA
 nikâwis:ikâwis ANKININFLni "mother's sister" ; ! gen.form okâwisimâw??
 osisimâw:isis ANKININFL "mother's brother, father's sister husband" ; 
-ohcâwîsimâw:ohcâwîs ANKININFL "father's brother" ; !NB! twolc gives oo-
+nisis:isis ANKININFL "mother's brother, father's sister husband" ;!OAHPA 
+ohcâwîsimâw:ohcâwîs ANKININFL "father's brother" ; !
+nohcâwîs:ohcâwîs ANKININFL "father's brother" ; !OAHPA
 nihciwâmis:ihciwâmis ANKININFLni "cousin" ;  ! gen.form ohciwâmisimâw??
 ostêsimâw:istês ANKININFL "oldest brother" ;
 niscâs:iscâs ANKININFLni "cousin/brother in law" ; ! gen.form??
-nîcimos:îcimos ANKININFLni "mother's brother's son" ; ! gen.form?? !NB! twolc gives oî-
+nîcimos:îcimos ANKININFLni "mother's brother's son" ; ! gen.form?? !
 nicâhkos:icâhkos ANKININFLni "cousin/sister in law" ;! gen.form ocâhkosimâw??
-nôsisim:ôsisim ANKININFLni "grandchild" ;!NB! twolc gives oô-  gen.form ôsisimimâw??
+nôsisim:ôsisim ANKININFLni "grandchild" ;!
 onâpêmimâw:inâpêm ANKININFL_MONOG "husband" ;
+ninâpêm:inâpêm ANKININFL_MONOG "husband" ; !OAHPA
 !wîkimâkan:îkimâkan ANKININFL_MONOG "spouse" ;  !OBS!
 niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ; !OBS! 
 !mîkiwâhp+N+IN+Sg:mîkiwâhp NOPREFIX "home" ; !Okimasis:137
@@ -4148,24 +4162,39 @@ LEXICON BODYSTEMLIST
 !! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
 mîkiwâhp:îki INALIENABLEPOSS_SG "home" ; !GGI !Wolfart's list: wîkiwâhk, nîkinâhk !Okimasis p 137
 maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml !!= @CODE@	
+naniway:aniway INALIENABLEPOSS_SG "cheek" ; !OAHPA	
 !maniway+N+IN+Sg:aniway NOPREFIX "cheek" ; !yaml !!= @CODE@	
 mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml  !!= @CODE@	
+nîpit:îpit INALIENABLEPOSS "tooth" ; !OAHPA	
 mahkwan:ahkwan INALIENABLEPOSS "heel" ;
+nahkwan:ahkwan INALIENABLEPOSS "heel" ; !OAHPA
 mispiton:ispiton INALIENABLEPOSS "arm" ; !yaml
+nispiton:ispiton INALIENABLEPOSS "arm" ; !OAHPA
 micihciy:icihciy INALIENABLEPOSS "hand" ; !
+nicihciy:icihciy INALIENABLEPOSS "hand" ; !OAHPA
 micihciy:icihcîsis INALIENABLEDERIVATION "hand" ; 
 micihcîsis:icihcîsis INALIENABLEPOSS "small hand" ; 
 mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
+nihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;!OAHPA
 misit:isit INALIENABLEPOSS "foot" ; !GGI
+nisit:isit INALIENABLEPOSS "foot" ; !OAHPA
 mistikwân:istikwân INALIENABLEPOSS "head" ; !GGI
+nistikwân:istikwân INALIENABLEPOSS "head" ; !OAHPA
 mîscakâs:îscakâs INALIENABLEPOSS "hair" ; !GGI
+nîscakâs:îscakâs INALIENABLEPOSS "hair" ; !OAHPA
 mêscakâs:êscakâs INALIENABLEPOSS "hair" ; !Wolv
 miskât:iskât INALIENABLEPOSS "leg" ; !GGI
+niskât:iskât INALIENABLEPOSS "leg" ; !OAHPA
 mitôn:itôn INALIENABLEPOSS "mouth" ; !GGI
+nitôn:itôn INALIENABLEPOSS "mouth" ; !OAHPA
 miskîsik:iskîsik INALIENABLEPOSS "eye" ; !GGI
+niskîsik:iskîsik INALIENABLEPOSS "eye" ; !OAHPA
 mikot:ikot INALIENABLEPOSS "nose" ; !GGI
+nikot:ikot INALIENABLEPOSS "nose" ; !OAHPA
 mihtawakay:ihtawakay INALIENABLEPOSS "ear" ; !GGI
+nihtawakay:ihtawakay INALIENABLEPOSS "ear" ; !OAHPA
 miyaw:iyaw INALIENABLEPOSS "body" ; !GGI
+niyaw:iyaw INALIENABLEPOSS "body" ; !OAHPA
 macâs:acâs INALIENABLEPOSS "small stomach, small belly" ;
 mahkwanêyâpiy:ahkwanêyâpiy INALIENABLEPOSS "achilles tendon, tendon at back of heel" ;
 mahkwanikan:ahkwanikan INALIENABLEPOSS "heelbone" ;
