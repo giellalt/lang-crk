@@ -133,13 +133,15 @@ morphophonological structure
  * +WAK  	  tag to keep track of -wak plurals
 
  * %^LOC      Locative
- * w2       mow:mov2
+ * w2       mow:mow2
  * t2 		  Prefix in possessives 
- * h2 		  Prefix in possessives 
- * i2 		  Possessive element 
+ * t3       t to s in VTA-4
 
- * ^%EGLOT    glottal stop after e, for eh- in conjunctive mood
- * ^%EA      ê to â in 1, 2 person of ê-stems
+ * h2 		  Prefix in possessives 
+
+ * %^EGLOT    glottal stop after e, for eh- in conjunctive mood
+ * %^EA      ê to â in 1, 2 person of ê-stems
+ * %^TS      t3 to s in VTA-4 verbs before some i-init suf
 
 
 !!Usage tags
@@ -215,6 +217,7 @@ Prefixes with a certain phonological content:
 
 
  *  t2:0       t between prefix and vowel-initial stem
+ *  t3:t       t to s in VTA-4
  *  w2:w       for keeping the final -w in mow
  *  %>:0       affix boundary
  *  %^LOC:0    Locative suffix alternation trigger
@@ -222,7 +225,7 @@ Prefixes with a certain phonological content:
  *  %^EGLOT:0  Conjunctive êh trigger
  *  %^POS:0    Possessive alternation trigger
  *  %^EA:0     ê to â in 1, 2 person of ê verbs
-
+ *  %^TS:0      t3 to s in VTA-4 verbs before some i-init suf
 
 
 
@@ -250,6 +253,8 @@ __t:c in diminutives __ Okimasis 2004: 13, Rule 2.
 
 
 __Diminutives - t2 changes to c __ , for the joiner. There are exeptions, but for they we have to make rules, or mark them with a dummy
+
+
 
 __i:o alternations __  for suffix initial vowel, stem final -Cw
 
@@ -396,14 +401,18 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
  LEXICON VERBSTEMS  here come all the verbstems \\
- nipâw:nipâ IACONJw "sleep" ;  GG
- mâto IACONJ "cry" ;  GG
- mîciso IACONJ "eat" ;  Variation in length of first vowel, here following Okimâsis. !GG
- waniskâw:waniskâ IACONJ "rise, get up" ;  
- micisiw:micisi IACONJ "eat" ; 
- nohtehkatew:nohtehkate IACONJ "be hungry" ; 
- atoskêw:atoskê IACONJw "work" ;  test
- nêhiyawêw:nêhiyawê IACONJw "work" ; 
+ !nipâw:nipâ IACONJw "sleep" ;  GG
+ !mâto IACONJ "cry" ;  GG
+ !mîciso IACONJ "eat" ;  Variation in length of first vowel, here following Okimâsis. !GG
+ !waniskâw:waniskâ IACONJ "rise, get up" ;  
+ !micisiw:micisi IACONJ "eat" ; 
+ !nohtehkatew:nohtehkate IACONJ "be hungry" ; 
+ !atoskêw:atoskê IACONJw "work" ;  test
+ !nêhiyawêw:nêhiyawê IACONJw "work" ; 
+
+
+
+
 
 
 
@@ -715,6 +724,8 @@ The file
  * cî+Ipc+Qst:cî # ; 
  * namoya+Ipc+Neg:namoya # ; 
 
+
+
 Prefixes
 --------
 Prefixes in UNDEFINED language are bound to beginning of other words.
@@ -958,10 +969,9 @@ Intransitive inanimate (II)
 !!!Transitive animate (TA)
 
 The VTA verbs split in different moods.
-There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
+There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
  LEXICON TACONJ_1  
-
 
  * LEXICON TACONJ_2   splits in 4. The -aw shall be removed from some forms.
 
@@ -974,10 +984,7 @@ There are 4 stem classes, 1-4 (VTA-1 through VTA-4)
  LEXICON TA_IND_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
 
 
-
-
  LEXICON VTA_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
-
 
 
  LEXICON VTA_KI_O 	     gives the objects suffixes matching 2Sg subject

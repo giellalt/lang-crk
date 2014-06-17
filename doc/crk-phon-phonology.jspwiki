@@ -1,5 +1,6 @@
 
  *  t2:0       t between prefix and vowel-initial stem
+ *  t3:t       t to s in VTA-4
  *  w2:w       for keeping the final -w in mow
  *  %>:0       affix boundary
  *  %^LOC:0    Locative suffix alternation trigger
@@ -7,7 +8,7 @@
  *  %^EGLOT:0  Conjunctive êh trigger
  *  %^POS:0    Possessive alternation trigger
  *  %^EA:0     ê to â in 1, 2 person of ê verbs
-
+ *  %^TS:0      t3 to s in VTA-4 verbs before some i-init suf
 
 
 
@@ -35,6 +36,8 @@ __t:c in diminutives __ Okimasis 2004: 13, Rule 2.
 
 
 __Diminutives - t2 changes to c __ , for the joiner. There are exeptions, but for they we have to make rules, or mark them with a dummy
+
+
 
 __i:o alternations __  for suffix initial vowel, stem final -Cw
 
