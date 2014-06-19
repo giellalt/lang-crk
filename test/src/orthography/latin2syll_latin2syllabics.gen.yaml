@@ -1,0 +1,12 @@
+Config:
+  hfst:
+    Gen:   ../../../src/latin2syllabics.hfst
+  xerox:
+    Gen:   ../../../src/latin2syllabics.xfst
+    App: lookup
+
+Tests:
+
+# A number of tests to check that latin to syllabics conversion is working
+  Latin to syllabics:
+    atim: ᐊᑎᒼ
