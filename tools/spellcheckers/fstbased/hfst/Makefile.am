@@ -146,10 +146,10 @@ $(GT_SYLLSPELLER_ACCEPTOR): $(GT_SYLLSPELLER_HFST) easteregg.hfst
 
 # Finally build the zhfst file, and make a copy in a subdir named '3', so that
 # we can test it without installing it (the '3' dir is a voikko requirement):
-$(GT_SYLLSPELLING_HFST): index.Cans.xml \
+$(GT_SYLLSPELLING_HFST): $(srcdir)/index.Cans.xml \
 					 $(GT_SYLLERRMODELS) \
 					 $(GT_SYLLSPELLER_ACCEPTOR)
-	$(AM_V_GEN)rm -f $@ && cp index.Cans.xml index.xml && \
+	$(AM_V_GEN)rm -f $@ && cp $(srcdir)/index.Cans.xml index.xml && \
 		$(ZIP) $(ZIPFLAGS) $@ index.xml \
 			$(GT_SYLLERRMODELS) $(GT_SYLLSPELLER_ACCEPTOR) && \
 		$(MKDIR_P) 3 && \
