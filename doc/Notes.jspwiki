@@ -3,45 +3,7 @@
 !!!Questions:
 
 !!Baseform
-Should the verb baseforms (the form to quote as a lemma) be 3Sg (nîpaw) or should it be the stem (nîpa)? Now we have the former but Okimâsis the latter.
-
-
-!!Alternating stems for IRREGULARECL vs IRREGULARINFL
-
-! atim
-
-Quoting log message 85515:
-
-Changed	the stem têm to	atim for atim, thus from the line
-
-{{{
-têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
-}}}
-to the line
-{{{
-atim:têm IRREGULARINFL "dog-possessed" ; !this is the stem for atim when it is inflected for person
-}}}
-
-Also changed the yaml file from
-     
-{{tê+N+AN+Sg+Px1Pl: nitêminân}}
-
-to
-
-{{atim+N+AN+Sg+Px1Pl: nitêminân}}
-
-Another	question is whether this is the	optimal	analysis. One could think of two rules here:
-
-# delete initial vowel whenever there is a vowel-final prefix
-# Lower -i- to -ê- in the possessive paradigm.
-
-Which solution is the best one (a. rules 1, 2 vs. b. hard-code a stem in 
-the lexicon) is dependent upon how general this process is. If it is
-for atim and a handful of words, then
-fine. If it is a general rule, then we should consider moving it to twolc.
-
-Judging from the comments, 
-
+Should the verb baseforms (the form to quote as a lemma) be 3Sg (nîpaw)?
 
 !!Diminutives
 
@@ -52,7 +14,7 @@ atim
 atim	atim+N+AN+Sg
 
 acimosis
-acimosis	atim+N+AN+Dim+Sg
+acimosis	atim+N+AN+Der/Dim++N+AN+Sg
 }}}
 
 This is a good thing for a regular process. But another approach would
@@ -80,13 +42,16 @@ The result of ths would be homonymy, two analyses of the same word:
 
 {{{
 acimosis
-acimosis	atim+N+AN+Dim+Sg
+acimosis	atim+N+AN+Der/Dim++N+AN+Sg
 acimosis	acimosis+N+AN+Sg
 }}}
 
 This could then be handled in a further analyser, with one of two rules:
 
-* (for the morphologist): choose the +Dim form
-* (for the lexicographer): remove the +Dim form
+* (for the morphologist): choose the +Der/Dim form
+* (for the lexicographer): remove the +Der/Dim form
 
+!!Possessive -im
+* Which words? 
+* Before or after the diminutive suffix? 
 
