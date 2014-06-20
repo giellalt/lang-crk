@@ -317,7 +317,7 @@ LEXICON INimDIM !!= * @CODE@ the diminutives with poss.-im-, Dim: -is
 < "+N":i "+IN":s 0:%^DIM "@U.noun.abs@" >  LOC ; !
 +N+IN:im%^DIMis%> INSUFF_LOC ;
 < "+N":i "+IN":s "+Sg":%^DIM "@U.noun.abs@" >  SG_ ; !
-< "+N":i "+IN":s "+Pl":%^DIM "@U.noun.abs@" >  PLak ; !
+< "+N":i "+IN":s "+Pl":%^DIM "@U.noun.abs@" >  PLa ; !
 +N+IN+Sg:im%^DIM%>is INSUFF_SG ;
 +N+IN+Pl:im%^DIM%>is INSUFF_PL ;
 
