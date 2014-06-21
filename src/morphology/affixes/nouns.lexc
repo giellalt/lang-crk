@@ -31,9 +31,6 @@ LEXICON AN-IN
 < 0:o     "@U.noun.3pl@"  0:"t2" > STEMS ; ! 3pl
 < 0:o     "@U.noun.3ipl@" 0:"t2" > STEMS ; ! 3-plural-obviate
 
-!LEXICON EXPER
-!< 0:i "@U.noun.exp@"  > BODY ; ! 1
-
 
 LEXICON BODY
 !! @LEXNAME@  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
@@ -52,7 +49,7 @@ LEXICON BODY
 
 LEXICON INALIENABLE
 !! @LEXNAME@  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
-       @U.noun.abs@     INALIENABLESTEMS ; 
+!       @U.noun.abs@     INALIENABLESTEMS ; 
 < 0:n "@U.noun.1sg@"  > INALIENABLESTEMS ; ! 1
 < 0:k "@U.noun.2sg@"  > INALIENABLESTEMS ; ! 2
 < 0:o "@U.noun.3sg@"  > INALIENABLESTEMS ; ! 3
@@ -60,7 +57,7 @@ LEXICON INALIENABLE
 < 0:n "@U.noun.1pl@"  > INALIENABLESTEMS ; ! exclusive Pl
 < 0:k "@U.noun.12pl@" > INALIENABLESTEMS ; ! inclusive Pl
 < 0:k "@U.noun.2pl@"  > INALIENABLESTEMS ; ! 2pl 
-< 0:o "@U.noun.3pl@"  > INALIENABLESTEMS ; ! 3pl note: is prefix o- correct?
+< 0:o "@U.noun.3pl@"  > INALIENABLESTEMS ; ! 3pl note
 < 0:o "@U.noun.3ipl@" > INALIENABLESTEMS ; ! 
 
 
@@ -90,6 +87,7 @@ ANABSDECL ;
 +N+AN:%> ANSUFF_LOC ;
 +N+AN+Der/Dim:%>is%^DIM%> ANDIM ;
 +N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
+
 
 LEXICON ANDECLis !!= * @CODE@ for the animate declension, Dim: -is diminutives
 ANABSDECL ;
@@ -141,8 +139,8 @@ LEXICON ANimDECLis !!= * @CODE@ for the animate declension, poss.-im-, Dim: -is
 
 LEXICON ANimDECLw !!= * @CODE@ for the animate declension, stem -w, poss.-im-, Dim: -is
 < "+N":a "+AN":0 "+Sg":0 "@U.noun.abs@" > SG_  ; ! -a
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" > OBVIATIVE  ;
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" > PLak  ;
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" > OBVIATIVE  ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" > PLak  ; !
 < "+N":0 "+AN":0 "@U.noun.abs@" > LOC  ;
              +N+AN+Sg:%>im          ANSUFF_SG  ;
              +N+AN+Pl:%>im          ANSUFF_PL  ;
@@ -163,14 +161,15 @@ LEXICON ANDIM !!= * @CODE@ both for lexicalised and derivated diminutives
 LEXICON ANABSDECL !!= * @CODE@ for the animate absolute declension
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;!
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC       ;
 
 
+
 LEXICON ANGENERIC
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.3ipl@" > SG_       ; ! generic form
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.3ipl@" > PLak      ; ! generic form
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.3ipl@" > SG_       ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.3ipl@" > PLak      ; !
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;!
 
 
 LEXICON ANKININFL !!= * @CODE@ The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
@@ -375,27 +374,36 @@ LEXICON INALIENABLEPOSS_SG !!= * @CODE@ inanimate possessive declension, only Sg
 !! !!Animate possessive suffixes
 
 LEXICON ANSUFF_SG !!= * @CODE@
-< "+Px1Sg":%^POS                 "@U.noun.1sg@"  > SG_ ; !
-< "+Px2Sg":%^POS                 "@U.noun.2sg@"  > SG_ ; !
+< "+Px1Sg":%^POS                 "@U.noun.1sg@"  > SG_OBV ; !
+< "+Px2Sg":%^POS                 "@U.noun.2sg@"  > SG_OBV ; !
 < "+Px3Sg":%^POS                 "@U.noun.3sg@"  > OBVIATIVE ; !
 < "+Px4Sg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" > OBVIATIVE ; !
-< "+Px1Pl":%^POS 0:i 0:n 0:â 0:n "@U.noun.1pl@"  > SG_ ; ! exclusive Pl -nân not -inân CHECK ??
-<"+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" > SG_ ; ! inclusive Pl CHECK OK? 
-< "+Px2Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.2pl@"  > SG_ ; !
+< "+Px1Pl":%^POS 0:i 0:n 0:â 0:n "@U.noun.1pl@"  > SG_OBV ; !
+<"+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" > SG_OBV ; !
+< "+Px2Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.2pl@"  > SG_OBV ; !
 < "+Px3Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.3pl@"  > OBVIATIVE ; !
-< "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3ipl@" > OBVIATIVE ; ! obviative plural possessor - Okimasis corrected
+< "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3ipl@" > OBVIATIVE ; ! 
 
+LEXICON SG_OBV !!= * @CODE@
+  SG_ ;
+  OBVIATIVE ;
 
 LEXICON ANSUFF_PL !!= * @CODE@
-< "+Px1Sg":%^POS                 "@U.noun.1sg@"  >  PLak ; !
-< "+Px2Sg":%^POS                 "@U.noun.2sg@"  >  PLak ; !
+< "+Px1Sg":%^POS                 "@U.noun.1sg@"  >  PL_OBV ; !
+< "+Px2Sg":%^POS                 "@U.noun.2sg@"  >  PL_OBV ; !
 < "+Px3Sg":%^POS                 "@U.noun.3sg@"  >  OBVIATIVE ; !
 < "+Px4Sg":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" >  OBVIATIVE ; ! 
-< "+Px1Pl":%^POS 0:i 0:n 0:â 0:n "@U.noun.1pl@"  >  PLak ;   ! 
-<"+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" >  PLak ; ! 
-< "+Px2Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.2pl@"  >  PLak ; !
+< "+Px1Pl":%^POS 0:i 0:n 0:â 0:n "@U.noun.1pl@"  >  PL_OBV ;   ! 
+<"+Px12Pl":%^POS 0:i 0:n 0:a 0:w "@U.noun.12pl@" >  PL_OBV ; ! 
+< "+Px2Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.2pl@"  >  PL_OBV ; !
 < "+Px3Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.3pl@"  >  OBVIATIVE ; ! 
 < "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.3isg@" >  OBVIATIVE ; ! 
+
+LEXICON PL_OBV !!= * @CODE@
+  PLak ;
+  OBVIATIVE ;
+
+
 
 LEXICON ANSUFF_LOC !!= * @CODE@
 < "+Px1Sg":%^POS         "@U.noun.1sg@"  > LOC ; !
@@ -517,6 +525,7 @@ LEXICON LOC !!= * @CODE@
 
 LEXICON LOCahk !!= * @CODE@ 
 +Loc:%>â%^LOChk  # ;
+
 
 !! !!Obviative suffix
 LEXICON OBVIATIVE !!= * @CODE@
