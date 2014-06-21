@@ -167,9 +167,13 @@ LEXICON ANABSDECL !!= * @CODE@ for the animate absolute declension
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC       ;
 
 
+LEXICON ANGENERIC
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.3ipl@" > SG_       ; ! generic form
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.3ipl@" > PLak      ; ! generic form
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;
+
+
 LEXICON ANKININFL !!= * @CODE@ The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
-< "+N":i "+AN":m "+Sg":â 0:w "@U.noun.3ipl@" > SG_       ; ! generic form
-< "+N":i "+AN":m "+Pl":â 0:w "@U.noun.3ipl@" > PLak      ; ! generic form
                                                ANKINPOSS ;
 
 LEXICON ANKININFLni !!= * @CODE@ Lexicon for kinship terms to which I haven't found documented generic form. Baseform = PxSg1, and then redirect to ANKINPOSS
