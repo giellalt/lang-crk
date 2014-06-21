@@ -7,7 +7,8 @@ Alphabet
  t2:0      !!= * @CODE@ t between prefix and vowel-initial stem
  t3:t      !!= * @CODE@ t to s in VTA-4
  w2:w      !!= * @CODE@ for keeping the final -w in mow
- %>:0      !!= * @CODE@ affix boundary
+ %>:0      !!= * @CODE@ suffix boundary
+ %<:0      !!= * @CODE@ prefix boundary
            ! To discuss:
            ! * affix boundaries should be visible, i.e. %>
            ! * do we want to differentiate between prefix boundaries %<
@@ -63,7 +64,7 @@ o:0 <=> .#. _  %>:0 [ ô: | o: ] Cns  ;  !
 i:0 <=> .#. o %>:0 _ Cns  ;  ! o+ispiton
 
 "t2:t between prefix and vowel"
-!! __@RULENAME@__ , joiner for nouns with initial vowel. If consonant, t2:0, defined in the Alphabet
+!! __@RULENAME@__ , joiner for nouns with initial vowel.
 t2:t  <=> _ %>:0 Vow ;
 
 "t:c in diminutives" 
@@ -167,11 +168,11 @@ a:ê <=> _ %>:0 %^EA:0 ; ! wâpahta:niwâpahtên
 
 "n:0 before k-suffix"
 !! __@RULENAME@__
-n:0 <=>  [ i | o ] _ %>:0 ( h ) k ; !pimisin+hk Wolvengrey p. 394 "n usually/sometimes dropped"
+n:0 <=>  [ i | o ] _ %>:0 ( h ) k ; !pimisin+hk Wolvengrey p. 394 "n usually/sometimes dropped", not common in VAI-stems
 	
 "n:h before k-suffix"
 !! __@RULENAME@__
-n:h <=> a _ %>:0 k ; !mâyâtan:emâyâtahk Wolvengrey p. 393 
+n:h <=> a _ %>:0 k ; !mâyâtan:emâyâtahk Wolvengrey p. 393 II, but also in VAI-stems
 
 "t3:s in VTA-4 verbs"
 t3:s <=> _ %>:0 %^TS:0 i ;
