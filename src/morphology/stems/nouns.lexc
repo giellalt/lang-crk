@@ -204,7 +204,7 @@ acikâsimin INDECL "evergreen berry; kinnikinnick berry, ground cedar berry" ;
 acikâsipakwa:acikâsipakw INDECL "bearberry leaves; plant-like evergreen (mixed with tobacco); Arctostaphylos uva-ursi" ; ! plural singular (rare): acikâsipak
 acimomêyisimin INDECL "cactus berry, red berry from a cactus; literally: little dog-feces berry" ;
 acimosis ANDIM "pup, puppy; small dog" ;
-acos ANDIM "arrow, little arrow" ;
+acos ANDECL "arrow, little arrow" ; !also atos
 acosis ANDIM "arrow, little arrow" ;
 ahcahk:ahcahkw ANDECL "soul, spirit" ;
 ahcahkowin INDECL "spirituality" ;
@@ -2692,13 +2692,13 @@ osîkinikêw ANDECL "bartender" ;
 osîmimâs ANDIM "youngest sibling" ;
 osîmimâw ANDECL "youngest sibling, youngest brother or sister" ; ! singular cf. osîmimâs, 1: nisîm my younger sibling
 osîmisimâw ANDECL "younger sibling" ; ! singular cf. 1: nisîmis my younger sibling
-osk-âya ANDECL "young one, young person, young creature; the young" ; ! singular; plural: osk-âyak 
+osk-âya ANimDECL "young one, young person, young creature; the young" ; ! singular; plural: osk-âyak 
 osk-âyi INimDECL "new thing, young creature" ; ! singular; plural: osk-âya  NI-4
 osk-âyis ANDIM "young one; young animal, young bird" ;
 osk-âyisis ANDIM "young creature" ;
 osk-âyisiyiniw ANDECL "young person" ;
 osk-îskwêw ANDECL "young woman" ;
-osk-îyinîs ANDIM "young person, young Indian person" ;
+oski-iyinîs ANDIM "young person, young Indian person" ;
 oskacânisip ANDECL "mudhen" ;
 oskahtâmin ANDECL "young kernel (of corn) or stone (of fruit)" ;
 oskan INDECL "bone; his/her bone" ;
@@ -4108,7 +4108,20 @@ yîwahikanâpisk:yîwahikanâpiskw INDECL "meat chopper, meat grinder" ;
 yôhtênikan INDECL "door knob" ;
 yôskihtak:yôskihtakw ANDECL "crumbly log" ;
 yôspisiwin INDECL "gentleness" ;
-
+!otânisimâw
+!okosisimâw
+!onîkihikomâw
+!omosômimâw
+!ôhkomimâw
+!osîmisimâw
+!otôtemimâw
+!okâwîmâw
+!ohtâwîmâw
+!omisimâw
+!osisimâw
+!ohcâwîsimâw
+!ostêsimâw
+!onâpêmimâw
 
 LEXICON INALIENABLESTEMS  ! dependent nouns
 !! @LEXNAME@ adds an affixmark and redirects to INABLESTEMLIST
@@ -4116,42 +4129,43 @@ LEXICON INALIENABLESTEMS  ! dependent nouns
 
 LEXICON INABLESTEMLIST
 !! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o- \\
-otânisimâw:itânis ANKININFL "daughter" ; !yaml !!= @CODE@
-nitânis:itânis ANKININFL "daughter" ; ! OAHPA
-okosisimâw:ikosis ANKININFL "son" ; !!= @CODE@	
-nikosis:ikosis ANKININFL "son" ; !OAHPA	
-onîkihikomâw:inekihik ANKININFL "parent" ; ! NB! generic form? ninekihikwak onikihkomaw
-ninekihik:inekihik ANKININFL "parent" ; !OAHPA
-omosômimâw:imosôm ANKININFL "grandfather" ;
-nimosôm:imosôm ANKININFL "grandfather" ; !OAHPA
-ôhkomimâw:ôhkom ANKININFL "grandmother" ; !NB!
-nôhkom:ôhkom ANKININFL "grandmother" ; !OAHPA
-nîtisân:îtisân ANKININFLni "sibling" ; !NB! 
-osîmisimâw:isîmis ANKININFL "younger sibling" ; 
-nisîmis:isîmis ANKININFL "younger sibling" ; !OAHPA
-otôtemimâw:itôtem ANKININFL "friend" ; 
-nitôtem:itôtem ANKININFL "friend" ; !OAHPA
-okâwîmâw:ikâw ANKINiyINFL "mother" ;!  !yaml
-nikâwiy:ikâw ANKINiyINFL "mother" ;! !OAHPA
-ohtâwîmâw:ohtâw ANKINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy, kôhtâwînaw
-nohtâwiy:ohtâw ANKINiyINFL "father" ;   !OAHPA
-omisimâw:imis ANKININFL "older sister" ;
-nimis:imis ANKININFL "older sister" ;!OAHPA
-nikâwis:ikâwis ANKININFLni "mother's sister" ; ! gen.form okâwisimâw??
-osisimâw:isis ANKININFL "mother's brother, father's sister husband" ; 
-nisis:isis ANKININFL "mother's brother, father's sister husband" ;!OAHPA 
-ohcâwîsimâw:ohcâwîs ANKININFL "father's brother" ; !
-nohcâwîs:ohcâwîs ANKININFL "father's brother" ; !OAHPA
-nihciwâmis:ihciwâmis ANKININFLni "cousin" ;  ! gen.form ohciwâmisimâw??
-ostêsimâw:istês ANKININFL "oldest brother" ;
-niscâs:iscâs ANKININFLni "cousin/brother in law" ; ! gen.form??
-nîcimos:îcimos ANKININFLni "mother's brother's son" ; ! gen.form?? !
-nicâhkos:icâhkos ANKININFLni "cousin/sister in law" ;! gen.form ocâhkosimâw??
-nôsisim:ôsisim ANKININFLni "grandchild" ;!
-onâpêmimâw:inâpêm ANKININFL_MONOG "husband" ;
-ninâpêm:inâpêm ANKININFL_MONOG "husband" ; !OAHPA
+
+-tânis:itânis ANKININFL "daughter" ; !yaml !!= @CODE@
+!nitânis:itânis ANKININFL "daughter" ; ! OAHPA
+-kosis:ikosis ANKININFL "son" ; !!= @CODE@	
+!nikosis:ikosis ANKININFL "son" ; !OAHPA	
+-nekihik:inekihik ANKININFL "parent" ; ! 
+!ninekihik:inekihik ANKININFL "parent" ; !OAHPA
+-mosôm:imosôm ANKININFL "grandfather" ;
+!nimosôm:imosôm ANKININFL "grandfather" ; !OAHPA
+-ohkom:ôhkom ANKININFL "grandmother" ; !NB!
+!nôhkom:ôhkom ANKININFL "grandmother" ; !OAHPA
+-tisân:îtisân ANKININFL "sibling" ; !NB! 
+-sîmis:isîmis ANKININFL "younger sibling" ; 
+!nisîmis:isîmis ANKININFL "younger sibling" ; !OAHPA
+-tôtem:itôtem ANKININFL "friend" ; 
+!nitôtem:itôtem ANKININFL "friend" ; !OAHPA
+-kâwiy:ikâw ANKINiyINFL "mother" ;!  !yaml
+!nikâwiy:ikâw ANKINiyINFL "mother" ;! !OAHPA !Not dim!
+-ohtâwiy:ohtâw ANKINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy, kôhtâwînaw
+!nohtâwiy:ohtâw ANKINiyINFL "father" ;   !OAHPA !Not dim!
+-mis:imis ANKININFL "older sister" ;
+!nimis:imis ANKININFL "older sister" ;!OAHPA
+-kâwîs:ikâwîs ANKININFL "mother's sister" ; !  !Not dim!
+-sis:isis ANKININFL "mother's brother, father's sister husband" ; 
+!nisis:isis ANKININFL "mother's brother, father's sister husband" ;!OAHPA !Not dim!
+ohcâwîs:ohcâwîs ANKININFL "father's brother" ; !
+!nohcâwîs:ohcâwîs ANKININFL "father's brother" ; !OAHPA
+-hciwâmis:ihciwâmis ANKININFL "cousin" ;  
+-stês:istês ANKININFL "oldest brother" ;
+-scâs:iscâs ANKININFL "cousin/brother in law" ; !
+-îcimos:îcimos ANKININFL "mother's brother's son" ; ! 
+-câhkos:icâhkos ANKININFL "cousin/sister in law" ;! 
+-ôsisim:ôsisim ANKININFL "grandchild" ;!
+-nâpêm:inâpêm ANKININFL_MONOG "husband" ;
+!ninâpêm:inâpêm ANKININFL_MONOG "husband" ; !OAHPA
 !wîkimâkan:îkimâkan ANKININFL_MONOG "spouse" ;  !OBS!
-niskotâkay:iskotâkay INALIENABLEPOSS "jacket" ; !OBS! 
+-skotâkay:iskotâkay INALIENABLEPOSS "jacket" ; !OBS! 
 !mîkiwâhp+N+IN+Sg:mîkiwâhp NOPREFIX "home" ; !Okimasis:137
 
 LEXICON BODYSTEMS ! dependent nouns
