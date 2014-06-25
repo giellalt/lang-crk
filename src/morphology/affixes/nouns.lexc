@@ -78,30 +78,30 @@ LEXICON DEP-KINTERMS
 !! !!The declensions for Animates 
 
 
-LEXICON ANDECL !!= * @CODE@ for the animate declension, Dim: -isis and -is 
+LEXICON AN_DECL !!= * @CODE@ for the animate declension, Dim: -isis and -is 
 ANABSDECL ;
 +N+AN+Sg:%> ANSUFF_SG ;
 +N+AN+Pl:%> ANSUFF_PL ;
 !+N+AN:%> ANSUFF_LOC ;
-+N+AN+Der/Dim:%>is%^DIM%> ANDIM ;
-+N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
++N+AN+Der/Dim:%>is%^DIM%> AN_DIM ;
++N+AN+Der/Dim:%>is%^DIMis%> AN_DIM ;
 
 
-LEXICON ANDECLis !!= * @CODE@ for the animate declension, Dim: -is diminutives
+LEXICON AN_DECLis !!= * @CODE@ for the animate declension, Dim: -is diminutives
 ANABSDECL ;
 +N+AN+Sg:%> ANSUFF_SG ;
 +N+AN+Pl:%> ANSUFF_PL ;
 !+N+AN:%> ANSUFF_LOC ;
-+N+AN+Der/Dim:%>is%^DIM%> ANDIM ;
++N+AN+Der/Dim:%>is%^DIM%> AN_DIM ;
 
-! The following does not seem to work, even though it is a carbon copy of ANDECLis and INDECLisis
+! The following does not seem to work, even though it is a carbon copy of AN_DECLis and IN_DECLisis
 
-LEXICON ANDECLisis !!= * @CODE@ for the animate declension, Dim: -isis diminutives
+LEXICON AN_DECLisis !!= * @CODE@ for the animate declension, Dim: -isis diminutives
  ANABSDECL ;
 +N+AN+Sg:%> ANSUFF_SG ;
 +N+AN+Pl:%> ANSUFF_PL ;
 !+N+AN:%> ANSUFF_LOC ;
-+N+AN+Der/Dim:%>is%^DIMis%> ANDIM ;
++N+AN+Der/Dim:%>is%^DIMis%> AN_DIM ;
 
 LEXICON ANimDECL !!= * @CODE@ for the animate declension, poss.-im-, Dim: -is
                                      ANABSDECL  ;
@@ -150,7 +150,7 @@ LEXICON ANimDECLw !!= * @CODE@ for the animate declension, stem -w, poss.-im-, D
 +N+AN+Der/Dim+N+AN+Pl:%>im%^DIMis%> ANSUFF_PL  ; !
 
 
-LEXICON ANDIM !!= * @CODE@ both for lexicalised and derivated diminutives
+LEXICON AN_DIM !!= * @CODE@ both for lexicalised and derivated diminutives
 !   +N+AN: ANSUFF_LOC ;
           ANABSDECL  ;
 +N+AN+Sg: ANSUFF_SG  ;
@@ -185,17 +185,17 @@ LEXICON ANABSDECL !!= * @CODE@ for the animate absolute declension
 < "+N":0 "+AN":0 "@U.noun.abs@" >  LOC       ;
 
 
-LEXICON ANGENERIC
+LEXICON AN_GENERIC
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.4pl@" > SG_       ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.4pl@" > PLak      ; !
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;!
 
 
-LEXICON ANKININFL !!= * @CODE@ The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
+LEXICON AN_KININFL !!= * @CODE@ The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
                                                ANKINPOSS ;
 
 
-LEXICON ANKININFL_MONOG !!= * @CODE@ Lexicon with reduces possessive paradigm: only one wife/husband
+LEXICON AN_KININFL_MONOG !!= * @CODE@ Lexicon with reduces possessive paradigm: only one wife/husband
 < "+N":i "+AN":m "+Sg":â                             0:w "@U.noun.4pl@" > #         ; !generic form
 < "+N":0 "+AN":0 "+Sg":0  "+Px1Sg":%^POS                 "@U.noun.1sg@"  > SG_       ; !
 < "+N":0 "+AN":0 "+Sg":0  "+Px2Sg":%^POS                 "@U.noun.2sg@"  > SG_       ; !
@@ -207,7 +207,7 @@ LEXICON ANKININFL_MONOG !!= * @CODE@ Lexicon with reduces possessive paradigm: o
 < "+N":0 "+AN":0 "+Pl":0  "+Px3Pl":%^POS 0:i 0:w 0:â 0:w "@U.noun.3pl@"  > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 < "+N":0 "+AN":0 "+Pl":0  "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.4sg@" > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 
-LEXICON ANDECL-ATIM	!!= * @CODE@ for atim and mistatim.
+LEXICON AN_DECL-ATIM	!!= * @CODE@ for atim and mistatim.
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  #         ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak     ; !
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE      ; !
@@ -219,28 +219,28 @@ LEXICON ANPOSS-ATIM !!= * @CODE@ is also there to handle the highly irregular at
 !< "+N":0 "+AN":0 "@U.noun.abs@" > SG_ ; !Baseform for dep nouns
 +N+AN+Sg: ANSUFF_SG ;
 +N+AN+Pl: ANSUFF_PL ;
-+N+AN+Der/Dim:%>is%^DIMis%> ANDIMPOSS ;
++N+AN+Der/Dim:%>is%^DIMis%> AN_DIMPOSS ;
 !+N+AN:%> ANSUFF_LOC ;
 
 
 LEXICON ANKINPOSS !!= * @CODE@ 
 +N+AN+Sg: ANSUFF_SG ;
 +N+AN+Pl: ANSUFF_PL ;
-+N+AN+Der/Dim:%>is%^DIMis%> ANDIMPOSS ;
++N+AN+Der/Dim:%>is%^DIMis%> AN_DIMPOSS ;
 
-LEXICON ANDIMPOSS !!= * @CODE@ Possessive suffixes to diminutives
+LEXICON AN_DIMPOSS !!= * @CODE@ Possessive suffixes to diminutives
 +N+AN+Sg: ANSUFF_SG ; !
 +N+AN+Pl: ANSUFF_PL ; !
 !+N+AN: ANSUFF_LOC ;
 
-LEXICON ANKINiyINFL  !!= * @CODE@ Special treatment for kinship nouns ending with -iy - should be done in twolc?
+LEXICON AN_KINiyINFL  !!= * @CODE@ Special treatment for kinship nouns ending with -iy - should be done in twolc?
 < "+N":î "+AN":m "+Sg":â 0:w "@U.noun.4pl@" > SG_ ; !generic form
 < "+N":î "+AN":m "+Pl":â 0:w "@U.noun.4pl@" > PLak ; !generic form
 +N+AN+Sg: ANiySUFF_SG ;
 +N+AN+Pl: ANiySUFF_PL ;
-+N+AN+Der/Dim:is%^DIMis%> ANDIMPOSS ;  
++N+AN+Der/Dim:is%^DIMis%> AN_DIMPOSS ;  
 
-LEXICON ANDEP-INIT-M !!= * @CODE@ for the inanimate possessive declension
+LEXICON AN_DEP_INIT_M !!= * @CODE@ for the inanimate possessive declension
 < "+N":0 "+AN":0  "@U.noun.abs@" > ANABLGENERIC ; !Generic form 
 +N+AN+Sg:%> ANSUFF_SG ;
 +N+AN+Pl:%> ANSUFF_PL ;
@@ -255,7 +255,7 @@ LEXICON ANABLGENERIC !!= * @CODE@ generic forms Sg, Pl, Loc and diminutives
 
 !! !!The declinations for Inanimates
 
-LEXICON INimDECLw-ONESYLL-SG !!= * @CODE@ for the inanimate declension, stem -w, poss.-im-, dim. -is, only Sg
+LEXICON INimDECLw_ONESYLL_SG !!= * @CODE@ for the inanimate declension, stem -w, poss.-im-, dim. -is, only Sg
 < "+N":o "+IN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; ! Adds -o
 < "+N":w "+IN":0 "@U.noun.abs@" >  LOC ; !
 +N+IN+Sg:w%>im INSUFF_SG ;
@@ -277,40 +277,40 @@ INABSDECL ;
 +N+IN+Der/Dim:%> INimDIMisis ;
 
 
-LEXICON INDECL !!= * @CODE@ for the inanimate declension, Dim: -is- and -isis-
+LEXICON IN_DECL !!= * @CODE@ for the inanimate declension, Dim: -is- and -isis-
 INABSDECL ;
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
-+N+IN+Der/Dim:%>is%^DIMis%> INDIM ;
-+N+IN+Der/Dim:%>is%^DIM%> INDIM ;
++N+IN+Der/Dim:%>is%^DIMis%> IN_DIM ;
++N+IN+Der/Dim:%>is%^DIM%> IN_DIM ;
 
-LEXICON INDECLis !!= * @CODE@ for the inanimate declension, Dim: -is- 
+LEXICON IN_DECLis !!= * @CODE@ for the inanimate declension, Dim: -is- 
 INABSDECL ;
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
-+N+IN+Der/Dim:%>is%^DIM%> INDIM ;
++N+IN+Der/Dim:%>is%^DIM%> IN_DIM ;
 
-LEXICON INDECLisis !!= * @CODE@ for the inanimate declension, Dim: -isis-
+LEXICON IN_DECLisis !!= * @CODE@ for the inanimate declension, Dim: -isis-
 INABSDECL ;
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
-+N+IN+Der/Dim:%>is%^DIMis%> INDIM ;
++N+IN+Der/Dim:%>is%^DIMis%> IN_DIM ;
 
 
-LEXICON INDECL-OSI !!= * @CODE@ for the inanimate declension of ôsi, an irregular noun
+LEXICON IN_DECL_OSI !!= * @CODE@ for the inanimate declension of ôsi, an irregular noun
 < "+N":s "+IN":i "+Sg":0 "@U.noun.abs@" >  SG_ ; !
 < "+N":s "+IN":0 "+Pl":0 "@U.noun.abs@" >  PLa ; !
 < "+N":s "+IN":0 "@U.noun.abs@" >  LOC ; !
 +N+IN+Sg:t%> INSUFF_SG ;
 +N+IN+Pl:t%> INSUFF_PL ;
 +N+IN:t%> INSUFF_LOC ;
-+N+IN+Der/Dim:t%>is%^DIMis%> INDIM ; 
++N+IN+Der/Dim:t%>is%^DIMis%> IN_DIM ; 
 
 
-LEXICON INDIM !!= * @CODE@ for the inanimate diminutives
+LEXICON IN_DIM !!= * @CODE@ for the inanimate diminutives
 INABSDECL ;
 +N+IN: INSUFF_LOC ;
 +N+IN+Sg: INSUFF_SG ;
@@ -346,7 +346,7 @@ LEXICON INimDIM-SG !!= * @CODE@ the diminutives with poss.-im-, Dim: -is
 +N+IN+Sg:im%^DIM%>is INSUFF_SG ;
 
 
-!! LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
+!! LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 !< "+N":0 "+IN":0 "+Sg":0 "+Dim":0 "@U.noun.abs@" >  # ; !
 !< "+N":0 "+IN":0 "+Pl":0 "+Dim":0 "@U.noun.abs@" >  PLa ; !
 !< "+N":0 "+IN":0 "+Dim":0 "@U.noun.abs@" >  LOC ; !
@@ -354,10 +354,10 @@ LEXICON INimDIM-SG !!= * @CODE@ the diminutives with poss.-im-, Dim: -is
 !+N+IN+Pl+Dim:%> INSUFF_PL ;
 !+N+IN+Dim:%> INSUFF_LOC ;
 
-LEXICON INDEP-DERIV-M-SG !!= * @CODE@  for hardcoded noun:diminutive for inalienables
-+N+IN+Der/Dim:  INDEP-INIT-M ;
+LEXICON INDEP-DERIV_M_SG !!= * @CODE@  for hardcoded noun:diminutive for inalienables
++N+IN+Der/Dim:  IN_DEP_INIT_M ;
 
-LEXICON INDEP-INIT-M !!= * @CODE@ for the inanimate possessive declension
+LEXICON IN_DEP_INIT_M !!= * @CODE@ for the inanimate possessive declension
 < "+N":0 "+IN":0  "@U.noun.abs@" > INABLGENERIC ; !Generic form 
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
@@ -373,7 +373,7 @@ LEXICON INABLGENERIC !!= * @CODE@ generic forms Sg, Pl, Loc and diminutives
 
 
 
-LEXICON INDEP-INIT-M-SG !!= * @CODE@ inanimate possessive declension, only Sg
+LEXICON IN_DEP_INIT_M_SG !!= * @CODE@ inanimate possessive declension, only Sg
 < "+N":0 "+IN":0 "+Sg":0 "@U.noun.abs@" > # ; !Baseform for dep nouns OBS!
 +N+IN+Sg:%> INSUFF_SG ;
 
