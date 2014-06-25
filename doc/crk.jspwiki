@@ -28,7 +28,9 @@ POS
  * +N	         
  * +V	         
  * +Prop	         
-
+ * +PreV        experiment for preverbs
+ * +PreV+        experiment for preverbs
+ * PreV+        experiment for preverbs
  * +Adv         
  * +CC	         
  * +CS	         
@@ -47,7 +49,6 @@ POS
  * +Med	     Demonstrative Medial
  * +Dist	     Demonstrative Distal
 
- * +Dial/A     Alberta dialect
 
 
 Verbal MSP
@@ -194,18 +195,15 @@ Prefixes with a certain phonological content:
  * @U.noun.1sg@ 
  * @U.noun.2sg@ 
  * @U.noun.3sg@ 
- * @U.noun.3isg@ 
- * @U.noun.3osg@ 
+ * @U.noun.4sg@ 
  * @U.noun.1pl@ 
  * @U.noun.12pl@ 
  * @U.noun.2pl@ 
  * @U.noun.3pl@ 
- * @U.noun.3ipl@ 
+ * @U.noun.4pl@ 
 
  * @U.noun.abs@  
  * @U.noun.dep@ 
-
- * @U.dial.A@  go get the Alberta tag
 
 
   LEXICON Root          is where it all starts
@@ -217,6 +215,8 @@ Prefixes with a certain phonological content:
  * Punctuation ;         
  * Particles ;           
  * Numerals ;            
+
+!!!Alphabet
 
 
  *  t2:0       t between prefix and vowel-initial stem
@@ -288,14 +288,6 @@ __i:0 in suffix for stem final -Vw/Vy __ (first) : Okimasis 2004: 26, Rule 2, 8:
 cahcahkâyow+ihk, tohtôsâpoy+ihk, cahcahkâyow+is, cohcôsâpoy+is, o+pikiw+iyiwa	 maniway+i
 
 
-
-__locative alternation naahk 1		__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
-iskwêw+ikh
-
-__locative alternation naahk 2		__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
-iskwên+ikh
-
-
 VERBS
 
 __h glottal stop for initial vowel stems in verbs: Conjunctive__
@@ -359,19 +351,19 @@ STEMS adds an affixmark and redirects to STEMLIST
 STEMLIST for nouns getting prefixes ni-, ki-, o- \\
 
 
-INALIENABLESTEMS adds an affixmark and redirects to INABLESTEMLIST
+KINTERMSSTEMS adds an affixmark and redirects to KINTERMLIST
 
-INABLESTEMLIST for dependent nouns getting prefixes n-, k-, o- \\
+KINTERMLIST for dependent nouns getting prefixes n-, k-, o- \\
 
  -tânis:itânis ANKININFL "daughter" ; !yaml 
  -kosis:ikosis ANKININFL "son" ; 	
 
-BODYSTEMS adds an affixmark and redirects to BODYSTEMLIST 
+DEP-M-INIT-STEMS adds an affixmark and redirects to DEP-M-LIST 
 
-BODYSTEMLIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
- maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml 	
+DEP-M-LIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
+ maniway:aniway INDEP-INIT-M-SG "cheek" ; !yaml 	
  !maniway+N+IN+Sg:aniway NOPREFIX "cheek" ; !yaml 	
- mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml  	
+ mîpit:îpit INDEP-INIT-M "tooth" ; !yaml  	
 
 Plains Cree verb stems                       
 
@@ -455,11 +447,11 @@ AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
 
 
 
-BODY  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
+DEP-M-INIT  adds the prefixes n-, k-, o- (which alternate to w- in twolc), and generic form m- . Redirects to DEP-M-INIT.
 
 
 
-INALIENABLE  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
+KINTERMS  adds the prefixes n-, k-, o- (which alternate to w- in twolc) Redirects to KINTERMSSTEMS
 
 
 
@@ -496,19 +488,21 @@ found at the end of this file.
 
  * LEXICON ANDIM  both for lexicalised and derivated diminutives
 
+
+ * LEXICON ANimDECLnaahk  for the animate declension, poss.-im-, Dim: -is, , with collectiv loc
+
+ * LEXICON ANABSDECLnaahk  for the animate absolute declension, with collectiv loc
+
+
+ * LEXICON ANimDECLnaahk-NOPOSS  for the animate declension, poss.-im-, Dim: -is, , with collectiv loc
+
+
  * LEXICON ANABSDECL  for the animate absolute declension
 
 
 
 
-
  * LEXICON ANKININFL  The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
-
- * LEXICON ANKININFLni  Lexicon for kinship terms to which I haven't found documented generic form. Baseform = PxSg1, and then redirect to ANKINPOSS
-
- * LEXICON ANDECL-NOPOSS  for the animate absolute declension and diminutive, ôho
-
-
 
 
  * LEXICON ANKININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
@@ -525,7 +519,7 @@ found at the end of this file.
 
  * LEXICON ANKINiyINFL   Special treatment for kinship nouns ending with -iy - should be done in twolc?
 
- * LEXICON ANINALIENABLEPOSS  for the inanimate possessive declension
+ * LEXICON ANDEP-INIT-M  for the inanimate possessive declension
 
  * LEXICON ANABLGENERIC  generic forms Sg, Pl, Loc and diminutives
 
@@ -563,16 +557,16 @@ found at the end of this file.
 
 LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
- * LEXICON INALIENABLEDERIVATION   for hardcoded noun:diminutive for inalienables
+ * LEXICON INDEP-DERIV-M-SG   for hardcoded noun:diminutive for inalienables
 
- * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
+ * LEXICON INDEP-INIT-M  for the inanimate possessive declension
 
 
  * LEXICON INABLGENERIC  generic forms Sg, Pl, Loc and diminutives
 
 
 
- * LEXICON INALIENABLEPOSS_SG  inanimate possessive declension, only Sg
+ * LEXICON INDEP-INIT-M-SG  inanimate possessive declension, only Sg
 
 !!Animate possessive suffixes
 
@@ -586,7 +580,6 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
 
 
- * LEXICON ANSUFF_LOC 
 
 
 
@@ -614,15 +607,6 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
 
 
-
-
-
-
-
-
-
-
-
  * LEXICON SG_  
 
 
@@ -638,6 +622,7 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON LOCahk  
 
+ * LEXICON LOCinaahk  For collective locative
 
 !!Obviative suffix
  * LEXICON OBVIATIVE 
