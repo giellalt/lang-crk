@@ -13,11 +13,11 @@ AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
 
 
 
-BODY  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
+DEP-M-INIT  adds the prefixes n-, k-, o- (which alternate to w- in twolc), and generic form m- . Redirects to DEP-M-INIT.
 
 
 
-INALIENABLE  adds the prefixes n-, k-, o-. Redirects to INALIENABLESTEMS
+KINTERMS  adds the prefixes n-, k-, o- (which alternate to w- in twolc) Redirects to KINTERMSSTEMS
 
 
 
@@ -54,19 +54,21 @@ found at the end of this file.
 
  * LEXICON ANDIM  both for lexicalised and derivated diminutives
 
+
+ * LEXICON ANimDECLnaahk  for the animate declension, poss.-im-, Dim: -is, , with collectiv loc
+
+ * LEXICON ANABSDECLnaahk  for the animate absolute declension, with collectiv loc
+
+
+ * LEXICON ANimDECLnaahk-NOPOSS  for the animate declension, poss.-im-, Dim: -is, , with collectiv loc
+
+
  * LEXICON ANABSDECL  for the animate absolute declension
 
 
 
 
-
  * LEXICON ANKININFL  The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
-
- * LEXICON ANKININFLni  Lexicon for kinship terms to which I haven't found documented generic form. Baseform = PxSg1, and then redirect to ANKINPOSS
-
- * LEXICON ANDECL-NOPOSS  for the animate absolute declension and diminutive, ôho
-
-
 
 
  * LEXICON ANKININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
@@ -83,7 +85,7 @@ found at the end of this file.
 
  * LEXICON ANKINiyINFL   Special treatment for kinship nouns ending with -iy - should be done in twolc?
 
- * LEXICON ANINALIENABLEPOSS  for the inanimate possessive declension
+ * LEXICON ANDEP-INIT-M  for the inanimate possessive declension
 
  * LEXICON ANABLGENERIC  generic forms Sg, Pl, Loc and diminutives
 
@@ -121,16 +123,16 @@ found at the end of this file.
 
 LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
- * LEXICON INALIENABLEDERIVATION   for hardcoded noun:diminutive for inalienables
+ * LEXICON INDEP-DERIV-M-SG   for hardcoded noun:diminutive for inalienables
 
- * LEXICON INALIENABLEPOSS  for the inanimate possessive declension
+ * LEXICON INDEP-INIT-M  for the inanimate possessive declension
 
 
  * LEXICON INABLGENERIC  generic forms Sg, Pl, Loc and diminutives
 
 
 
- * LEXICON INALIENABLEPOSS_SG  inanimate possessive declension, only Sg
+ * LEXICON INDEP-INIT-M-SG  inanimate possessive declension, only Sg
 
 !!Animate possessive suffixes
 
@@ -144,7 +146,6 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
 
 
- * LEXICON ANSUFF_LOC 
 
 
 
@@ -172,15 +173,6 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
 
 
-
-
-
-
-
-
-
-
-
  * LEXICON SG_  
 
 
@@ -196,6 +188,7 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON LOCahk  
 
+ * LEXICON LOCinaahk  For collective locative
 
 !!Obviative suffix
  * LEXICON OBVIATIVE 

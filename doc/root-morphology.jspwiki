@@ -17,7 +17,9 @@ POS
  * +N	         
  * +V	         
  * +Prop	         
-
+ * +PreV        experiment for preverbs
+ * +PreV+        experiment for preverbs
+ * PreV+        experiment for preverbs
  * +Adv         
  * +CC	         
  * +CS	         
@@ -36,7 +38,6 @@ POS
  * +Med	     Demonstrative Medial
  * +Dist	     Demonstrative Distal
 
- * +Dial/A     Alberta dialect
 
 
 Verbal MSP
@@ -183,18 +184,15 @@ Prefixes with a certain phonological content:
  * @U.noun.1sg@ 
  * @U.noun.2sg@ 
  * @U.noun.3sg@ 
- * @U.noun.3isg@ 
- * @U.noun.3osg@ 
+ * @U.noun.4sg@ 
  * @U.noun.1pl@ 
  * @U.noun.12pl@ 
  * @U.noun.2pl@ 
  * @U.noun.3pl@ 
- * @U.noun.3ipl@ 
+ * @U.noun.4pl@ 
 
  * @U.noun.abs@  
  * @U.noun.dep@ 
-
- * @U.dial.A@  go get the Alberta tag
 
 
   LEXICON Root          is where it all starts
