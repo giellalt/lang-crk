@@ -47,6 +47,7 @@ POS
  * +Med	     Demonstrative Medial
  * +Dist	     Demonstrative Distal
 
+ * +Dial/A     Alberta dialect
 
 
 Verbal MSP
@@ -204,6 +205,8 @@ Prefixes with a certain phonological content:
  * @U.noun.abs@  
  * @U.noun.dep@ 
 
+ * @U.dial.A@  go get the Alberta tag
+
 
   LEXICON Root          is where it all starts
 
@@ -219,7 +222,8 @@ Prefixes with a certain phonological content:
  *  t2:0       t between prefix and vowel-initial stem
  *  t3:t       t to s in VTA-4
  *  w2:w       for keeping the final -w in mow
- *  %>:0       affix boundary
+ *  %>:0       suffix boundary
+ *  %<:0       prefix boundary
  *  %^LOC:0    Locative suffix alternation trigger
  *  %^DIM:0    Diminutive alternation trigger
  *  %^EGLOT:0  Conjunctive êh trigger
@@ -245,7 +249,7 @@ __o:0 in possessive prefix__ , Okimasis p. 140
 
 __i:0 after possessive prefix__ , ospiton 
 
-__t2:t between prefix and vowel__ , joiner for nouns with initial vowel. If consonant, t2:0, defined in the Alphabet
+__t2:t between prefix and vowel__ , joiner for nouns with initial vowel.
 
 __t:c in diminutives __ Okimasis 2004: 13, Rule 2.
 
@@ -355,12 +359,12 @@ STEMS adds an affixmark and redirects to STEMLIST
 STEMLIST for nouns getting prefixes ni-, ki-, o- \\
 
 
-
 INALIENABLESTEMS adds an affixmark and redirects to INABLESTEMLIST
 
 INABLESTEMLIST for dependent nouns getting prefixes n-, k-, o- \\
- otânisimâw:itânis ANKININFL "daughter" ; !yaml 
- okosisimâw:ikosis ANKININFL "son" ; 	
+
+ -tânis:itânis ANKININFL "daughter" ; !yaml 
+ -kosis:ikosis ANKININFL "son" ; 	
 
 BODYSTEMS adds an affixmark and redirects to BODYSTEMLIST 
 
@@ -400,6 +404,11 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 
+
+
+
+
+
  LEXICON VERBSTEMS  here come all the verbstems \\
  !nipâw:nipâ IACONJw "sleep" ;  GG
  !mâto IACONJ "cry" ;  GG
@@ -409,6 +418,8 @@ Words marked GG are from Plains Cree Grammar guide and glossary
  !nohtehkatew:nohtehkate IACONJ "be hungry" ; 
  !atoskêw:atoskê IACONJw "work" ;  test
  !nêhiyawêw:nêhiyawê IACONJw "work" ; 
+
+
 
 
 
@@ -444,7 +455,6 @@ AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
 
 
 
-
 BODY  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
 
 
@@ -468,6 +478,7 @@ found at the end of this file.
 
  * LEXICON ANDECL  for the animate declension, Dim: -isis and -is 
 
+
  * LEXICON ANDECLis  for the animate declension, Dim: -is diminutives
 
 
@@ -486,6 +497,9 @@ found at the end of this file.
  * LEXICON ANDIM  both for lexicalised and derivated diminutives
 
  * LEXICON ANABSDECL  for the animate absolute declension
+
+
+
 
 
  * LEXICON ANKININFL  The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
@@ -564,8 +578,13 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON ANSUFF_SG 
 
+ * LEXICON SG_OBV 
 
  * LEXICON ANSUFF_PL 
+
+ * LEXICON PL_OBV 
+
+
 
  * LEXICON ANSUFF_LOC 
 
@@ -618,6 +637,7 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
  * LEXICON LOC  
 
  * LEXICON LOCahk  
+
 
 !!Obviative suffix
  * LEXICON OBVIATIVE 
