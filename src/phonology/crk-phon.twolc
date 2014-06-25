@@ -1,4 +1,6 @@
 Alphabet
+!! !!!Alphabet
+
  a b c d e f g h i j k l m n o p q r s t u v w x y z
  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
  â ê î ô
@@ -98,6 +100,7 @@ w:0 <=> \Pos Cns _ %>:0 ( %^POS:0 ) ( %>:0 )  i:  ; !  askihkw:askihkos nitihkom
         \Pos Cns _ ( %>:0 ) ( %^POS:0 )  .#. ;
         \Pos  [ o: | â: | a: ] _ %>:0 ( %^POS:0 )  i: [ s: | m: | n: | w: | y: | %^LOC:0 ] ; !cahcahkâyow , okimâw, ôtênaw
         \Pos  [ ê: | â: ] _ %>:0 ( %^POS:0 )  i: [ s: | m: ] ( %>:0 ) [ %^DIM:0 | %^POS:0 ]  ; !iskwêw, okimâw 
+        \Pos  Vow _ %>:0 i: n â %^LOC:0 ; ! 
 
 
 
@@ -135,18 +138,7 @@ i:0 <=>  \PosDim [ o: | i: ]  [ w: | y: ] %>:0  _ %^LOC:0 ;   ! cahcahkâyow+ihk
          [ Vow: | o: ] [ w: | y: ] %>:0  _ [ s | m ] %^DIM:0 ; ! cahcahkâyow+is, cohcôsâpoy+is
          \Pos [ a: | i: | â: | o: ] [ w: | y: ] %>:0 ( %^POS:0 ) ( %>:0 ) _   ; !o+pikiw+iyiwa maniway+i
          \Pos  ê: w: %>:0 ( %^POS:0 )  _ [ s: | m: ] ( %>:0 ) [ %^DIM:0 | %^POS:0 ]  ; !iskwêw  
-         
-
-
-"locative alternation naahk 1"		
-!! __@RULENAME@__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
-!! iskwêw+ikh
-w:n <=> [ ê | ô ] _  %>:0 i: %^LOC:0  ; 
-
-"locative alternation naahk 2"		
-!! __@RULENAME@__ adds nâhk after êw/ôw, change w to n. Okimasis 2004: 26, Rule 5
-!! iskwên+ikh
-i:â <=> [ ê | ô ] w:n  %>:0 _ %^LOC:0  ; 
+         Vow  w: %>:0 _ n â %^LOC:0 ;
 
 
 !! !! VERBS
