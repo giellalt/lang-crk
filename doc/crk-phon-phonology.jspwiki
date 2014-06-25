@@ -2,7 +2,8 @@
  *  t2:0       t between prefix and vowel-initial stem
  *  t3:t       t to s in VTA-4
  *  w2:w       for keeping the final -w in mow
- *  %>:0       affix boundary
+ *  %>:0       suffix boundary
+ *  %<:0       prefix boundary
  *  %^LOC:0    Locative suffix alternation trigger
  *  %^DIM:0    Diminutive alternation trigger
  *  %^EGLOT:0  Conjunctive êh trigger
@@ -28,7 +29,7 @@ __o:0 in possessive prefix__ , Okimasis p. 140
 
 __i:0 after possessive prefix__ , ospiton 
 
-__t2:t between prefix and vowel__ , joiner for nouns with initial vowel. If consonant, t2:0, defined in the Alphabet
+__t2:t between prefix and vowel__ , joiner for nouns with initial vowel.
 
 __t:c in diminutives __ Okimasis 2004: 13, Rule 2.
 

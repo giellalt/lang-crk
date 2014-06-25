@@ -13,7 +13,6 @@ AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
 
 
 
-
 BODY  adds the prefixes n-, k-, o-, and generic form m- . Redirects to BODYSTEMS.
 
 
@@ -37,6 +36,7 @@ found at the end of this file.
 
  * LEXICON ANDECL  for the animate declension, Dim: -isis and -is 
 
+
  * LEXICON ANDECLis  for the animate declension, Dim: -is diminutives
 
 
@@ -55,6 +55,9 @@ found at the end of this file.
  * LEXICON ANDIM  both for lexicalised and derivated diminutives
 
  * LEXICON ANABSDECL  for the animate absolute declension
+
+
+
 
 
  * LEXICON ANKININFL  The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
@@ -133,8 +136,13 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON ANSUFF_SG 
 
+ * LEXICON SG_OBV 
 
  * LEXICON ANSUFF_PL 
+
+ * LEXICON PL_OBV 
+
+
 
  * LEXICON ANSUFF_LOC 
 
@@ -187,6 +195,7 @@ LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
  * LEXICON LOC  
 
  * LEXICON LOCahk  
+
 
 !!Obviative suffix
  * LEXICON OBVIATIVE 
