@@ -9,52 +9,159 @@ Config:
 
 Tests:
   
-  Verb - wâpam - ok : # Ordinary TA verb - full paradigm
+  Verb - wâpamêw - ok : # Wolvengrey VTA1 verb - p 401
+
      wâpamêw+V+TA+Ind+Prs+1Sg+3SgO: niwâpamâw
      wâpamêw+V+TA+Ind+Prs+2Sg+3SgO: kiwâpamâw
      wâpamêw+V+TA+Ind+Prs+1Pl+3SgO: niwâpamânân
      wâpamêw+V+TA+Ind+Prs+12Pl+3SgO: kiwâpamânaw
      wâpamêw+V+TA+Ind+Prs+2Pl+3SgO: kiwâpamâwâw
      wâpamêw+V+TA+Ind+Prs+3Sg+3SgO: wâpamêw
-     wâpamêw+V+TA+Ind+Prs+4Sg+3SgO: wâpamêyiwa
-
+     wâpamêw+V+TA+Ind+Prs+3Pl+3SgO: wâpamêwak
+     
      wâpamêw+V+TA+Ind+Prs+1Sg+3PlO: niwâpamâwak
      wâpamêw+V+TA+Ind+Prs+2Sg+3PlO: kiwâpamâwak
      wâpamêw+V+TA+Ind+Prs+1Pl+3PlO: niwâpamânânak
      wâpamêw+V+TA+Ind+Prs+12Pl+3PlO: kiwâpamânawak
      wâpamêw+V+TA+Ind+Prs+2Pl+3PlO: kiwâpamâwâwak
+     wâpamêw+V+TA+Ind+Prs+3Sg+3PlO: wâpamêw
      wâpamêw+V+TA+Ind+Prs+3Pl+3PlO: wâpamêwak
-     wâpamêw+V+TA+Ind+Prs+4Sg+3PlO: wâpamêyiwa
-     wâpamêw+V+TA+Ind+Prs+4Pl+3SgO: wâpamêyiwa
+
+     wâpamêw+V+TA+Ind+Prs+4Sg+4SgO: wâpamêyiwa
+     wâpamêw+V+TA+Ind+Prs+4Sg+4PlO: wâpamêyiwa     
+
+     wâpamêw+V+TA+Ind+Prs+2Sg+1SgO: kiwâpamin
+     wâpamêw+V+TA+Ind+Prs+2Sg+1PlO: kiwâpaminân
+     wâpamêw+V+TA+Ind+Prs+2Pl+1PlO: kiwâpaminân
+     wâpamêw+V+TA+Ind+Prs+2Pl+1SgO: kiwâpaminâwâw
+
+     wâpamêw+V+TA+Ind+Prs+3Sg+1SgO: niwâpamik
+     wâpamêw+V+TA+Ind+Prs+3Sg+2SgO: kiwâpamik
+     wâpamêw+V+TA+Ind+Prs+3Sg+1PlO: niwâpamikonân # inv +0Sg+1PlO
+     wâpamêw+V+TA+Ind+Prs+3Sg+12PlO: kiwâpamikonaw
+     wâpamêw+V+TA+Ind+Prs+3Sg+2PlO: kiwâpamikowâw
+
+     wâpamêw+V+TA+Ind+Prs+3Pl+1SgO: niwâpamikwak
+     wâpamêw+V+TA+Ind+Prs+3Pl+2SgO: kiwâpamikwak
+     wâpamêw+V+TA+Ind+Prs+3Pl+1PlO: niwâpamikonânak
+     wâpamêw+V+TA+Ind+Prs+3Pl+12PlO: kiwâpamikonawak
+     wâpamêw+V+TA+Ind+Prs+3Pl+2PlO: kiwâpamikowâwak
      
-#     wâpamêw+V+TA+Ind+Prs+2Sg+1Sg: kiwīcihin not done yet
-#     wâpamêw+V+TA+Ind+Prs+2Sg+1Pl: kiwîcihinân
-#     wâpamêw+V+TA+Ind+Prs+2Pl+1Sg: kiwîcihinâwâw
-     
-     
-     
+     wâpamêw+V+TA+Ind+Prs+4Sg+3SgO: wâpamik
+     wâpamêw+V+TA+Ind+Prs+4Sg+3PlO: wâpamikwak
+     wâpamêw+V+TA+Ind+Prs+5Sg+4SgO: wâpamikoyiwa
+
+     wâpamêw+V+TA+Ind+Prs+1Sg+2SgO: kiwâpamitin
+     wâpamêw+V+TA+Ind+Prs+1Pl+2SgO: kiwâpamitinân
+     wâpamêw+V+TA+Ind+Prs+1Pl+2PlO: kiwâpamitinân
+     wâpamêw+V+TA+Ind+Prs+1Sg+2PlO: kiwâpamitinânâw
+
+     wâpamêw+V+TA+Ind+Prt+1Sg+3SgO: [nikîwâpamâw, nikî-wâpamâw]
+     wâpamêw+V+TA+Ind+Prt+2Sg+3SgO: [kikîwâpamâw, kikî-wâpamâw]
+     wâpamêw+V+TA+Ind+Prt+1Pl+3SgO: [nikîwâpamânân, nikî-wâpamânân]
+     wâpamêw+V+TA+Ind+Prt+12Pl+3SgO: [kikîwâpamânaw, kikî-wâpamânaw]
+     wâpamêw+V+TA+Ind+Prt+2Pl+3SgO: [kikîwâpamâwâw, kikî-wâpamâwâw]
+     wâpamêw+V+TA+Ind+Prt+3Sg+3SgO: [kîwâpamêw, kî-wâpamêw]
+     wâpamêw+V+TA+Ind+Prt+3Pl+3SgO: [kîwâpamêwak, kî-wâpamêwak]
+
+     wâpamêw+V+TA+Ind+Prt+1Sg+3PlO: [nikîwâpamâwak, nikî-wâpamâwak]
+     wâpamêw+V+TA+Ind+Prt+2Sg+3PlO: [kikîwâpamâwak, kikî-wâpamâwak]
+     wâpamêw+V+TA+Ind+Prt+1Pl+3PlO: [nikîwâpamânânak, nikî-wâpamânânak]
+     wâpamêw+V+TA+Ind+Prt+12Pl+3PlO: [kikîwâpamânawak, kikî-wâpamânawak]
+     wâpamêw+V+TA+Ind+Prt+2Pl+3PlO: [kikîwâpamâwâwak, kikî-wâpamâwâwak]
+     wâpamêw+V+TA+Ind+Prt+3Sg+3PlO: [kîwâpamêw, kî-wâpamêw]
+     wâpamêw+V+TA+Ind+Prt+3Pl+3PlO: [kîwâpamêwak, kî-wâpamêwak]
+
+     wâpamêw+V+TA+Ind+Prt+4Sg+4SgO: [kîwâpamêyiwa, kî-wâpamêyiwa]
+     wâpamêw+V+TA+Ind+Prt+4Sg+4PlO: [kîwâpamêyiwa, kî-wâpamêyiwa]
+
+     wâpamêw+V+TA+Ind+Prt+2Sg+1SgO: [kikîwâpamin, kikî-wâpamin]
+     wâpamêw+V+TA+Ind+Prt+2Sg+1PlO: [kikîwâpaminân, kikî-wâpaminân]
+     wâpamêw+V+TA+Ind+Prt+2Pl+1PlO: [kikîwâpaminân, kikî-wâpaminân]
+     wâpamêw+V+TA+Ind+Prt+2Pl+1SgO: [kikîwâpaminâwâw, kikî-wâpaminâwâw]
+
+     wâpamêw+V+TA+Ind+Prt+3Sg+1SgO: [nikîwâpamik, nikî-wâpamik]
+     wâpamêw+V+TA+Ind+Prt+3Sg+2SgO: [kikîwâpamik, kikî-wâpamik]
+     wâpamêw+V+TA+Ind+Prt+3Sg+1PlO: [nikîwâpamikonân, nikî-wâpamikonân]
+     wâpamêw+V+TA+Ind+Prt+3Sg+12PlO: [kikîwâpamikonaw, kikî-wâpamikonaw]
+     wâpamêw+V+TA+Ind+Prt+3Sg+2PlO: [kikîwâpamikowâw, kikî-wâpamikowâw]
+
+     wâpamêw+V+TA+Ind+Prt+3Pl+1SgO: [nikîwâpamikwak, nikî-wâpamikwak]
+     wâpamêw+V+TA+Ind+Prt+3Pl+2SgO: [kikîwâpamikwak, kikî-wâpamikwak]
+     wâpamêw+V+TA+Ind+Prt+3Pl+1PlO: [nikîwâpamikonânak, nikî-wâpamikonânak]
+     wâpamêw+V+TA+Ind+Prt+3Pl+12PlO: [kikîwâpamikonawak, kikî-wâpamikonawak]
+     wâpamêw+V+TA+Ind+Prt+3Pl+2PlO: [kikîwâpamikowâwak, kikî-wâpamikowâwak]
+
+     wâpamêw+V+TA+Ind+Prt+4Sg+3SgO: [kîwâpamik, kî-wâpamik]
+     wâpamêw+V+TA+Ind+Prt+4Sg+3PlO: [kîwâpamikwak, kî-wâpamikwak]
+     wâpamêw+V+TA+Ind+Prt+5Sg+4SgO: [kîwâpamikoyiwa, kî-wâpamikoyiwa]
+
+     wâpamêw+V+TA+Ind+Prt+1Sg+2SgO: [kikîwâpamitin, kikî-wâpamitin]
+     wâpamêw+V+TA+Ind+Prt+1Pl+2SgO: [kikîwâpamitinân, kikî-wâpamitinân]
+     wâpamêw+V+TA+Ind+Prt+1Pl+2PlO: [kikîwâpamitinân, kikî-wâpamitinân]
+     wâpamêw+V+TA+Ind+Prt+1Sg+2PlO: [kikîwâpamitinânâw, kikî-wâpamitinânâw]
+
      wâpamêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-wâpamak, êwâpamak]
      wâpamêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-wâpamat, êwâpamat]
-     wâpamêw+V+TA+Cnj+Prs+3Sg+3SgO: [ê-wâpamât, êwâpamât]
-     wâpamêw+V+TA+Cnj+Prs+4Sg+3SgO: [ê-wâpamâyit, êwâpamâyit]
      wâpamêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-wâpamâyâhk, êwâpamâyâhk]
      wâpamêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-wâpamâyahk, êwâpamâyahk]
      wâpamêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-wâpamâyêk, êwâpamâyêk]
-     wâpamêw+V+TA+Cnj+Prs+3Pl+3SgO: [ê-wâpamâcik, êwâpamâcik]
-     wâpamêw+V+TA+Cnj+Prs+4Pl+3SgO: [ê-wâpamâyit, êwâpamâyit]
+
+     wâpamêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-wâpamakik, êwâpamakik]
+     wâpamêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-wâpamacik, êwâpamacik]
+     wâpamêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-wâpamâyâhkik, êwâpamâyâhkik]
+     wâpamêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-wâpamâyâhkok, êwâpamâyâhkok]
+     wâpamêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-wâpamâyêkok, êwâpamâyêkok]
+
+     wâpamêw+V+TA+Cnj+Prs+3Sg+4SgO: [ê-wâpamât, êwâpamât]
+     wâpamêw+V+TA+Cnj+Prs+3Pl+4SgO: [ê-wâpamâcik, êwâpamâcik]
+     wâpamêw+V+TA+Cnj+Prs+3Sg+4PlO: [ê-wâpamât, êwâpamât]
+     wâpamêw+V+TA+Cnj+Prs+3Pl+4PlO: [ê-wâpamâcik, êwâpamâcik]
+     wâpamêw+V+TA+Cnj+Prs+4Sg+5SgO: [ê-wâpamâyit, êwâpamâyit]
+  
+     wâpamêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-wâpamiyan, êwâpamiyan]
+     wâpamêw+V+TA+Cnj+Prs+2Sg+1PlO: [ê-wâpamiyâhk, êwâpamiyâhk]
+     wâpamêw+V+TA+Cnj+Prs+2Pl+1PlO: [ê-wâpamiyâhk, êwâpamiyâhk]
+     wâpamêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-wâpamiyêk, êwâpamiyêk]
+
+     wâpamêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-wâpamit, êwâpamit]
+     wâpamêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-wâpamisk, êwâpamisk]
+     wâpamêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-wâpamikoyâhk, êwâpamikoyâhk]
+     wâpamêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-wâpamikoyahk, êwâpamikoyahk]
+     wâpamêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-wâpamikoyek, êwâpamikoyek]
+
+     wâpamêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-wâpamiticik, êwâpamiticik]
+     wâpamêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-wâpamiskik, êwâpamiskik]
+     wâpamêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-wâpamikoyâhkik, êwâpamikoyâhkik]
+     wâpamêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-wâpamikoyahkok, êwâpamikoyahkok]
+     wâpamêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-wâpamikoyêkok, êwâpamikoyêkok]
+
+     wâpamêw+V+TA+Cnj+Prs+4Sg+3SgO: [ê-wâpamikot, êwâpamikot]
+     wâpamêw+V+TA+Cnj+Prs+4Sg+3PlO: [ê-wâpamikocik, êwâpamikocik]
+     wâpamêw+V+TA+Cnj+Prs+4Sg+4PlO: [ê-wâpamikoyit, êwâpamikoyit]
+
+     wâpamêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-wâpamitân, êwâpamitân]
+     wâpamêw+V+TA+Cnj+Prs+1Pl+2SgO: [ê-wâpamitâhk, êwâpamitâhk]
+     wâpamêw+V+TA+Cnj+Prs+1Pl+2PlO: [ê-wâpamitâhk, êwâpamitâhk]
+     wâpamêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-wâpamitakok, êwâpamitakok]
 
      wâpamêw+V+TA+Imp+Imm+2Sg+3SgO: wâpam
      wâpamêw+V+TA+Imp+Imm+12Pl+3SgO: wâpamâtân
-     wâpamêw+V+TA+Imp+Imm+2Pl+3SgO: wâpamihk     
+     wâpamêw+V+TA+Imp+Imm+2Pl+3SgO: wâpamihk
      wâpamêw+V+TA+Imp+Imm+2Sg+3PlO: wâpamik
      wâpamêw+V+TA+Imp+Imm+12Pl+3PlO: wâpamâtânik
      wâpamêw+V+TA+Imp+Imm+2Pl+3PlO: wâpamihkok
-     
+
      wâpamêw+V+TA+Imp+Del+2Sg+3SgO: wâpamâhkan
      wâpamêw+V+TA+Imp+Del+12Pl+3SgO: wâpamâhkahk
      wâpamêw+V+TA+Imp+Del+2Pl+3SgO: wâpamâhkêk
      wâpamêw+V+TA+Imp+Del+2Sg+3PlO: wâpamâhkanik
      wâpamêw+V+TA+Imp+Del+12Pl+3PlO: wâpamâhkahkok
      wâpamêw+V+TA+Imp+Del+2Pl+3PlO: wâpamâhkêkok
-     
 
+     wâpamêw+V+TA+Imp+Imm+2Sg+1SgO: wâpamin
+     wâpamêw+V+TA+Imp+Imm+2Sg+1PlO: wâpaminân
+     wâpamêw+V+TA+Imp+Imm+2Pl+1SgO: wâpamik
+     wâpamêw+V+TA+Imp+Del+2Sg+1SgO: wâpamîhkan
+     wâpamêw+V+TA+Imp+Del+2Sg+1PlO: wâpamîhkâhk
+     wâpamêw+V+TA+Imp+Del+2Pl+1SgO: wâpamîhkêk
