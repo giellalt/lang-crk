@@ -352,15 +352,15 @@ DEP-KINTERMSSTEMS adds an affixmark and redirects to KINTERMLIST
 
 DEP-KINTERMLIST for dependent nouns getting prefixes n-, k-, o- \\
 
- -tânis:itânis ANKININFL "daughter" ; !yaml 
- -kosis:ikosis ANKININFL "son" ; 	
+ -tânis:itânis AN_KININFL "daughter" ; !yaml 
+ -kosis:ikosis AN_KININFL "son" ; 	
 
 DEP-M-INIT-STEMS adds an affixmark and redirects to DEP-M-LIST 
 
 DEP-M-LIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
- maniway:aniway INDEP-INIT-M-SG "cheek" ; !yaml 	
+ maniway:aniway IN_DEP_INIT_M_SG "cheek" ; !yaml 	
  !maniway+N+IN+Sg:aniway NOPREFIX "cheek" ; !yaml 	
- mîpit:îpit INDEP-INIT-M "tooth" ; !yaml  	
+ mîpit:îpit IN_DEP_INIT_M "tooth" ; !yaml  	
 
 Plains Cree verb stems                       
 
@@ -465,13 +465,13 @@ found at the end of this file.
 !!The declensions for Animates 
 
 
- * LEXICON ANDECL  for the animate declension, Dim: -isis and -is 
+ * LEXICON AN_DECL  for the animate declension, Dim: -isis and -is 
 
 
- * LEXICON ANDECLis  for the animate declension, Dim: -is diminutives
+ * LEXICON AN_DECLis  for the animate declension, Dim: -is diminutives
 
 
- * LEXICON ANDECLisis  for the animate declension, Dim: -isis diminutives
+ * LEXICON AN_DECLisis  for the animate declension, Dim: -isis diminutives
 
  * LEXICON ANimDECL  for the animate declension, poss.-im-, Dim: -is
 
@@ -483,7 +483,7 @@ found at the end of this file.
  * LEXICON ANimDECLw  for the animate declension, stem -w, poss.-im-, Dim: -is
 
 
- * LEXICON ANDIM  both for lexicalised and derivated diminutives
+ * LEXICON AN_DIM  both for lexicalised and derivated diminutives
 
 
  * LEXICON ANimDECLnaahk  for the animate declension, poss.-im-, Dim: -is, , with collectiv loc
@@ -499,12 +499,12 @@ found at the end of this file.
 
 
 
- * LEXICON ANKININFL  The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
+ * LEXICON AN_KININFL  The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
 
 
- * LEXICON ANKININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
+ * LEXICON AN_KININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
 
- * LEXICON ANDECL-ATIM	 for atim and mistatim.
+ * LEXICON AN_DECL-ATIM	 for atim and mistatim.
 
 
  * LEXICON ANPOSS-ATIM  is also there to handle the highly irregular atim and mistatim
@@ -512,35 +512,35 @@ found at the end of this file.
 
  * LEXICON ANKINPOSS  
 
- * LEXICON ANDIMPOSS  Possessive suffixes to diminutives
+ * LEXICON AN_DIMPOSS  Possessive suffixes to diminutives
 
- * LEXICON ANKINiyINFL   Special treatment for kinship nouns ending with -iy - should be done in twolc?
+ * LEXICON AN_KINiyINFL   Special treatment for kinship nouns ending with -iy - should be done in twolc?
 
- * LEXICON ANDEP-INIT-M  for the inanimate possessive declension
+ * LEXICON AN_DEP_INIT_M  for the inanimate possessive declension
 
  * LEXICON ANABLGENERIC  generic forms Sg, Pl, Loc and diminutives
 
 
 !!The declinations for Inanimates
 
- * LEXICON INimDECLw-ONESYLL-SG  for the inanimate declension, stem -w, poss.-im-, dim. -is, only Sg
+ * LEXICON INimDECLw_ONESYLL_SG  for the inanimate declension, stem -w, poss.-im-, dim. -is, only Sg
 
  * LEXICON INimDECL  for the inanimate declension, poss.-im-, dim. -is
 
  * LEXICON INimDECLisis  for the inanimate declension, poss.-im-, dim. -isis
 
 
- * LEXICON INDECL  for the inanimate declension, Dim: -is- and -isis-
+ * LEXICON IN_DECL  for the inanimate declension, Dim: -is- and -isis-
 
- * LEXICON INDECLis  for the inanimate declension, Dim: -is- 
+ * LEXICON IN_DECLis  for the inanimate declension, Dim: -is- 
 
- * LEXICON INDECLisis  for the inanimate declension, Dim: -isis-
-
-
- * LEXICON INDECL-OSI  for the inanimate declension of ôsi, an irregular noun
+ * LEXICON IN_DECLisis  for the inanimate declension, Dim: -isis-
 
 
- * LEXICON INDIM  for the inanimate diminutives
+ * LEXICON IN_DECL_OSI  for the inanimate declension of ôsi, an irregular noun
+
+
+ * LEXICON IN_DIM  for the inanimate diminutives
 
  * LEXICON INABSDECL  for inanimate absolute declension
 
@@ -552,18 +552,18 @@ found at the end of this file.
  * LEXICON INimDIM-SG  the diminutives with poss.-im-, Dim: -is
 
 
-LEXICON INDIMDECL Declensions inanimate diminutives, adding +Dim , not in use
+LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
- * LEXICON INDEP-DERIV-M-SG   for hardcoded noun:diminutive for inalienables
+ * LEXICON INDEP-DERIV_M_SG   for hardcoded noun:diminutive for inalienables
 
- * LEXICON INDEP-INIT-M  for the inanimate possessive declension
+ * LEXICON IN_DEP_INIT_M  for the inanimate possessive declension
 
 
  * LEXICON INABLGENERIC  generic forms Sg, Pl, Loc and diminutives
 
 
 
- * LEXICON INDEP-INIT-M-SG  inanimate possessive declension, only Sg
+ * LEXICON IN_DEP_INIT_M_SG  inanimate possessive declension, only Sg
 
 !!Animate possessive suffixes
 
