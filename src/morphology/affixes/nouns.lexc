@@ -14,7 +14,7 @@ LEXICON NounPrefixes
 
 AN-IN       ; ! Animate and inanimate nouns
 DEP-M-INIT  ; ! Dependent nouns, generic form with m-
-KINTERMS ; ! Dependent nouns. The generic form is in the stem lexicon on its own.
+DEP-KINTERMS ; ! Dependent nouns. The generic form is in the stem lexicon on its own.
 
 LEXICON AN-IN
 !! @LEXNAME@ adds the prefixes ni-, ki-, o-. Redirects to STEMS
@@ -46,17 +46,17 @@ LEXICON DEP-M-INIT
 
 
 
-LEXICON KINTERMS
-!! @LEXNAME@  adds the prefixes n-, k-, o- (which alternate to w- in twolc) Redirects to KINTERMSSTEMS
-< 0:n "@U.noun.1sg@"  > KINTERMSSTEMS ; ! 1
-< 0:k "@U.noun.2sg@"  > KINTERMSSTEMS ; ! 2
-< 0:o "@U.noun.3sg@"  > KINTERMSSTEMS ; ! 3
-< 0:o "@U.noun.4sg@" > KINTERMSSTEMS ; ! 3indef
-< 0:n "@U.noun.1pl@"  > KINTERMSSTEMS ; ! exclusive Pl
-< 0:k "@U.noun.12pl@" > KINTERMSSTEMS ; ! inclusive Pl
-< 0:k "@U.noun.2pl@"  > KINTERMSSTEMS ; ! 2pl 
-< 0:o "@U.noun.3pl@"  > KINTERMSSTEMS ; ! 3pl 
-< 0:o "@U.noun.4pl@" > KINTERMSSTEMS ; ! 
+LEXICON DEP-KINTERMS
+!! @LEXNAME@  adds the prefixes n-, k-, o- (which alternate to w- in twolc) Redirects to DEP-KINTERMSSTEMS
+< 0:n "@U.noun.1sg@"  > DEP-KINTERMSSTEMS ; ! 1
+< 0:k "@U.noun.2sg@"  > DEP-KINTERMSSTEMS ; ! 2
+< 0:o "@U.noun.3sg@"  > DEP-KINTERMSSTEMS ; ! 3
+< 0:o "@U.noun.4sg@" > DEP-KINTERMSSTEMS ; ! 3indef
+< 0:n "@U.noun.1pl@"  > DEP-KINTERMSSTEMS ; ! exclusive Pl
+< 0:k "@U.noun.12pl@" > DEP-KINTERMSSTEMS ; ! inclusive Pl
+< 0:k "@U.noun.2pl@"  > DEP-KINTERMSSTEMS ; ! 2pl 
+< 0:o "@U.noun.3pl@"  > DEP-KINTERMSSTEMS ; ! 3pl 
+< 0:o "@U.noun.4pl@" > DEP-KINTERMSSTEMS ; ! 
 
 
 
