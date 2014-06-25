@@ -4123,11 +4123,11 @@ ohcâwîsimâw ANGENERIC ;
 ostêsimâw ANGENERIC ;
 onâpêmimâw ANGENERIC ;
 
-LEXICON KINTERMSSTEMS  ! dependent nouns
+LEXICON DEP-KINTERMSSTEMS  ! dependent nouns
 !! @LEXNAME@ adds an affixmark and redirects to KINTERMLIST
- 0:%> KINTERMLIST ;
+ 0:%> DEP-KINTERMLIST ;
 
-LEXICON KINTERMLIST
+LEXICON DEP-KINTERMLIST
 !! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o- \\
 
 -tânis:itânis ANKININFL "daughter" ; !yaml !!= @CODE@

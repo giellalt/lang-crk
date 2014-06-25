@@ -348,9 +348,9 @@ STEMS adds an affixmark and redirects to STEMLIST
 STEMLIST for nouns getting prefixes ni-, ki-, o- \\
 
 
-KINTERMSSTEMS adds an affixmark and redirects to KINTERMLIST
+DEP-KINTERMSSTEMS adds an affixmark and redirects to KINTERMLIST
 
-KINTERMLIST for dependent nouns getting prefixes n-, k-, o- \\
+DEP-KINTERMLIST for dependent nouns getting prefixes n-, k-, o- \\
 
  -tânis:itânis ANKININFL "daughter" ; !yaml 
  -kosis:ikosis ANKININFL "son" ; 	
@@ -448,7 +448,7 @@ DEP-M-INIT  adds the prefixes n-, k-, o- (which alternate to w- in twolc), and g
 
 
 
-KINTERMS  adds the prefixes n-, k-, o- (which alternate to w- in twolc) Redirects to KINTERMSSTEMS
+DEP-KINTERMS  adds the prefixes n-, k-, o- (which alternate to w- in twolc) Redirects to DEP-KINTERMSSTEMS
 
 
 
