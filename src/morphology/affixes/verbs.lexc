@@ -47,11 +47,11 @@ LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
 <                   "@U.tense.Prs@"     > VERBLIST ; !
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > VERBLIST ; ! removed hyph
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"     > VERBLIST ; ! 
 < 0:k 0:î 0:%-      "@U.tense.Prt@"     > VERBLIST ; !
 < 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@"  > VERBLIST ; !
 < 0:k 0:a 0:%-      "@U.tense.FutDef@"  > VERBLIST ; !
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > VERBLIST ; !
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@"  > VERBLIST ; ! OBS - move to a next lexicon
 < 0:w 0:î 0:%-      "@U.tense.FutInt@"  > VERBLIST ; !
 
 
@@ -349,8 +349,8 @@ LEXICON II_INDw !!= @CODE@ indicative for w final
 LEXICON II_INDw-SG !!= @CODE@ indicative for w final
 < "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERSw-SG ; !
 < "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERSw-SG ; !
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-SG ; !
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-SG ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; ! pros aspect
 
 
 LEXICON II_CNJw !!= @CODE@ conjunctive for w final
