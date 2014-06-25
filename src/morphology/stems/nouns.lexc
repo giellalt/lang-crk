@@ -4123,11 +4123,11 @@ ohcâwîsimâw ANGENERIC ;
 ostêsimâw ANGENERIC ;
 onâpêmimâw ANGENERIC ;
 
-LEXICON INALIENABLESTEMS  ! dependent nouns
-!! @LEXNAME@ adds an affixmark and redirects to INABLESTEMLIST
- 0:%> INABLESTEMLIST ;
+LEXICON KINTERMSSTEMS  ! dependent nouns
+!! @LEXNAME@ adds an affixmark and redirects to KINTERMLIST
+ 0:%> KINTERMLIST ;
 
-LEXICON INABLESTEMLIST
+LEXICON KINTERMLIST
 !! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o- \\
 
 -tânis:itânis ANKININFL "daughter" ; !yaml !!= @CODE@
@@ -4165,140 +4165,140 @@ ohcâwîs:ohcâwîs ANKININFL "father's brother" ; !
 -nâpêm:inâpêm ANKININFL_MONOG "husband" ;
 !ninâpêm:inâpêm ANKININFL_MONOG "husband" ; !OAHPA
 !wîkimâkan:îkimâkan ANKININFL_MONOG "spouse" ;  !OBS!
--skotâkay:iskotâkay INALIENABLEPOSS "jacket" ; !OBS! 
+-skotâkay:iskotâkay INDEP-INIT-M "jacket" ; !OBS! 
 !mîkiwâhp+N+IN+Sg:mîkiwâhp NOPREFIX "home" ; !Okimasis:137
 
-LEXICON BODYSTEMS ! dependent nouns
-!! @LEXNAME@ adds an affixmark and redirects to BODYSTEMLIST 
- 0:%> BODYSTEMLIST ;
+LEXICON DEP-M-INIT-STEMS ! dependent nouns
+!! @LEXNAME@ adds an affixmark and redirects to DEP-M-LIST 
+ 0:%> DEP-M-LIST ;
 
-LEXICON BODYSTEMLIST
+LEXICON DEP-M-LIST
 !! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
-mîkiwâhp:îki INALIENABLEPOSS_SG "home" ; !GGI !Wolfart's list: wîkiwâhk, nîkinâhk !Okimasis p 137
-maniway:aniway INALIENABLEPOSS_SG "cheek" ; !yaml !!= @CODE@	
-naniway:aniway INALIENABLEPOSS_SG "cheek" ; !OAHPA	
+mîkiwâhp:îki INDEP-INIT-M-SG "home" ; !GGI !Wolfart's list: wîkiwâhk, nîkinâhk !Okimasis p 137
+maniway:aniway INDEP-INIT-M-SG "cheek" ; !yaml !!= @CODE@	
+naniway:aniway INDEP-INIT-M-SG "cheek" ; !OAHPA	
 !maniway+N+IN+Sg:aniway NOPREFIX "cheek" ; !yaml !!= @CODE@	
-mîpit:îpit INALIENABLEPOSS "tooth" ; !yaml  !!= @CODE@	
-nîpit:îpit INALIENABLEPOSS "tooth" ; !OAHPA	
-mahkwan:ahkwan INALIENABLEPOSS "heel" ;
-nahkwan:ahkwan INALIENABLEPOSS "heel" ; !OAHPA
-mispiton:ispiton INALIENABLEPOSS "arm" ; !yaml
-nispiton:ispiton INALIENABLEPOSS "arm" ; !OAHPA
-micihciy:icihciy INALIENABLEPOSS "hand" ; !
-nicihciy:icihciy INALIENABLEPOSS "hand" ; !OAHPA
-micihciy:icihcîsis INALIENABLEDERIVATION "hand" ; 
-micihcîsis:icihcîsis INALIENABLEPOSS "small hand" ; 
-mihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;
-nihkwâkan:ihkwâkan INALIENABLEPOSS "face" ;!OAHPA
-misit:isit INALIENABLEPOSS "foot" ; !GGI
-nisit:isit INALIENABLEPOSS "foot" ; !OAHPA
-mistikwân:istikwân INALIENABLEPOSS "head" ; !GGI
-nistikwân:istikwân INALIENABLEPOSS "head" ; !OAHPA
-mîscakâs:îscakâs INALIENABLEPOSS "hair" ; !GGI
-nîscakâs:îscakâs INALIENABLEPOSS "hair" ; !OAHPA
-mêscakâs:êscakâs INALIENABLEPOSS "hair" ; !Wolv
-miskât:iskât INALIENABLEPOSS "leg" ; !GGI
-niskât:iskât INALIENABLEPOSS "leg" ; !OAHPA
-mitôn:itôn INALIENABLEPOSS "mouth" ; !GGI
-nitôn:itôn INALIENABLEPOSS "mouth" ; !OAHPA
-miskîsik:iskîsik INALIENABLEPOSS "eye" ; !GGI
-niskîsik:iskîsik INALIENABLEPOSS "eye" ; !OAHPA
-mikot:ikot INALIENABLEPOSS "nose" ; !GGI
-nikot:ikot INALIENABLEPOSS "nose" ; !OAHPA
-mihtawakay:ihtawakay INALIENABLEPOSS "ear" ; !GGI
-nihtawakay:ihtawakay INALIENABLEPOSS "ear" ; !OAHPA
-miyaw:iyaw INALIENABLEPOSS "body" ; !GGI
-niyaw:iyaw INALIENABLEPOSS "body" ; !OAHPA
-macâs:acâs INALIENABLEPOSS "small stomach, small belly" ;
-mahkwanêyâpiy:ahkwanêyâpiy INALIENABLEPOSS "achilles tendon, tendon at back of heel" ;
-mahkwanikan:ahkwanikan INALIENABLEPOSS "heelbone" ;
-masakay:asakay INALIENABLEPOSS "skin" ;
-maskasiy:askasiy INALIENABLEPOSS "fingernail; claw" ;
-maskatay:askatay INALIENABLEPOSS "stomach-covering; abdominal-wall, belly" ;
-matay:atay INALIENABLEPOSS "belly, abdomen; stomach" ;
-mayakask:ayakaskw INALIENABLEPOSS "palate" ;
-mâskikan:âskikan INALIENABLEPOSS "chest, breast" ;
-mâwikan:âwikan INALIENABLEPOSS ;
-mêstakaya:êstakaya INALIENABLEPOSS ;
-micêhis:icêhis INALIENABLEPOSS ;
-micêstatay:icêstatay INALIENABLEPOSS ;
-micêstatayêyâpiy:icêstatayêyâpiy INALIENABLEPOSS ;
-micicâskay:icicâskay INALIENABLEPOSS ;
-micicâskâs:icicâskâs INALIENABLEPOSS ;
-micisk:icisk INALIENABLEPOSS ;
-miciskakisiy:iciskakisiy INALIENABLEPOSS ;
-miciskêyâpiy:iciskêyâpiy INALIENABLEPOSS ;
-micôskwanis:icôskwanis INALIENABLEPOSS ;
-mihcikwan:ihcikwan INALIENABLEPOSS ;
-mihcikwanikan:ihcikwanikan INALIENABLEPOSS ;
-mikitik:ikitik INALIENABLEPOSS ;
-mikohcaskwayêyâpîsa:ikohcaskwayêyâpîsa INALIENABLEPOSS ;
-mikohtaskway:ikohtaskway INALIENABLEPOSS ;
-mikohtaskwayêyâpiy:ikohtaskwayêyâpiy INALIENABLEPOSS ;
-mikohtâkan:ikohtâkan INALIENABLEPOSS ;
-mikwayaw:ikwayaw INALIENABLEPOSS ;
-mikwayawikan:ikwayawikan INALIENABLEPOSS ;
-mikwâskonêw:ikwâskonêw INALIENABLEPOSS ;
-mikwâskonêwikan:ikwâskonêwikan INALIENABLEPOSS ;
-mipwâm:ipwâm INALIENABLEPOSS ;
-mipwâmikan:ipwâmikan INALIENABLEPOSS ;
-mipwâm:ipwâm INALIENABLEPOSS ;
-mipwâmikan:ipwâmikan INALIENABLEPOSS ;
-miskan:iskan INALIENABLEPOSS ;
-miskanis:iskanis INALIENABLEPOSS ;
-miskâhtik:iskâhtik INALIENABLEPOSS ;
-miskâhtikwanikan:iskâhtikwanikan INALIENABLEPOSS ;
-miskâtikan:iskâtikan INALIENABLEPOSS ;
-miskiwan:iskiwan INALIENABLEPOSS ;
-miskiwanikan:iskiwanikan INALIENABLEPOSS ;
-miskîsikohkâna:iskîsikohkâna INALIENABLEPOSS ;
-miskîsikos:iskîsikos INALIENABLEPOSS ;
-miskîsikwâpitân:iskîsikwâpitân INALIENABLEPOSS ;
-miskocâkâs:iskocâkâs INALIENABLEPOSS ;
-miskon:iskon INALIENABLEPOSS ;
-miskotâkay:iskotâkay INALIENABLEPOSS ;
-misôkan:isôkan INALIENABLEPOSS ;
-mispikay:ispikay INALIENABLEPOSS ;
-mispikêkan:ispikêkan INALIENABLEPOSS ;
-mispiskwan:ispiskwan INALIENABLEPOSS ;
-mistikwânaskatihkway:istikwânaskatihkway INALIENABLEPOSS ;
-mistikwânikan:istikwânikan INALIENABLEPOSS ;
-mitahtahkwan:itahtahkwan INALIENABLEPOSS ;
-mitakay:itakay INALIENABLEPOSS ;
-mitakisiya:itakisiya INALIENABLEPOSS ;
-mitapiskohkêw:itapiskohkêw INALIENABLEPOSS ;
-mitasiskitân:itasiskitân INALIENABLEPOSS ;
-mitâpiskan:itâpiskan INALIENABLEPOSS ;
-mitêh:itêh INALIENABLEPOSS ;
-mitêyaniy:itêyaniy INALIENABLEPOSS ;
-mitêyaniyâpiy:itêyaniyâpiy INALIENABLEPOSS ;
-mitêyikom:itêyikom INALIENABLEPOSS ;
-mitihtikon:itihtikon INALIENABLEPOSS ;
-mitihtiman:itihtiman INALIENABLEPOSS ;
-mitihtimanikan:itihtimanikan INALIENABLEPOSS ;
-mitisiy:itisiy INALIENABLEPOSS ;
-mitisiyêyâpiy:itisiyêyâpiy INALIENABLEPOSS ;
-mitiskwêspiy:itiskwêspiy INALIENABLEPOSS ;
-mitiy:itiy INALIENABLEPOSS ;
-mitîhikan:itîhikan INALIENABLEPOSS ;
-mitîhkôkan:itîhkôkan INALIENABLEPOSS ;
-mitokan:itokan INALIENABLEPOSS ;
-mitôskwan:itôskwan INALIENABLEPOSS ;
-mîpicikan:îpicikan INALIENABLEPOSS ;
-mîpitihkâna:îpitihkâna INALIENABLEPOSS ;
-mîtihp:îtihp INALIENABLEPOSS ;
-micâsis:icâsis ANINALIENABLEPOSS ; !needs m-
-micîhcîkom:icîhcîkom ANINALIENABLEPOSS ;
-micohcôsimis:icohcôsimis ANINALIENABLEPOSS ;
-mispayowak:ispayowak ANINALIENABLEPOSS ;
-mitakikom:itakikom ANINALIENABLEPOSS ;
-mitâkay:itâkay ANINALIENABLEPOSS ;
-mitâs:itâs ANINALIENABLEPOSS ;
-mitâsiyân:itâsiyân ANINALIENABLEPOSS ;
-mitêskan:itêskan ANINALIENABLEPOSS ;
-mitihtihkos:itihtihkos ANINALIENABLEPOSS ;
-mitihtihkosiw:itihtihkosiw ANINALIENABLEPOSS ;
-mitihtihkosiy:itihtihkosiy ANINALIENABLEPOSS ;
-mitisowayak:itisowayak ANINALIENABLEPOSS ;
-mitîhiy:itîhiy ANINALIENABLEPOSS ;
-mitohtôsim:itohtôsim ANINALIENABLEPOSS ;
+mîpit:îpit INDEP-INIT-M "tooth" ; !yaml  !!= @CODE@	
+nîpit:îpit INDEP-INIT-M "tooth" ; !OAHPA	
+mahkwan:ahkwan INDEP-INIT-M "heel" ;
+nahkwan:ahkwan INDEP-INIT-M "heel" ; !OAHPA
+mispiton:ispiton INDEP-INIT-M "arm" ; !yaml
+nispiton:ispiton INDEP-INIT-M "arm" ; !OAHPA
+micihciy:icihciy INDEP-INIT-M "hand" ; !
+nicihciy:icihciy INDEP-INIT-M "hand" ; !OAHPA
+micihciy:icihcîsis INDEP-DERIV-M-SG "hand" ; 
+micihcîsis:icihcîsis INDEP-INIT-M "small hand" ; 
+mihkwâkan:ihkwâkan INDEP-INIT-M "face" ;
+nihkwâkan:ihkwâkan INDEP-INIT-M "face" ;!OAHPA
+misit:isit INDEP-INIT-M "foot" ; !GGI
+nisit:isit INDEP-INIT-M "foot" ; !OAHPA
+mistikwân:istikwân INDEP-INIT-M "head" ; !GGI
+nistikwân:istikwân INDEP-INIT-M "head" ; !OAHPA
+mîscakâs:îscakâs INDEP-INIT-M "hair" ; !GGI
+nîscakâs:îscakâs INDEP-INIT-M "hair" ; !OAHPA
+mêscakâs:êscakâs INDEP-INIT-M "hair" ; !Wolv
+miskât:iskât INDEP-INIT-M "leg" ; !GGI
+niskât:iskât INDEP-INIT-M "leg" ; !OAHPA
+mitôn:itôn INDEP-INIT-M "mouth" ; !GGI
+nitôn:itôn INDEP-INIT-M "mouth" ; !OAHPA
+miskîsik:iskîsik INDEP-INIT-M "eye" ; !GGI
+niskîsik:iskîsik INDEP-INIT-M "eye" ; !OAHPA
+mikot:ikot INDEP-INIT-M "nose" ; !GGI
+nikot:ikot INDEP-INIT-M "nose" ; !OAHPA
+mihtawakay:ihtawakay INDEP-INIT-M "ear" ; !GGI
+nihtawakay:ihtawakay INDEP-INIT-M "ear" ; !OAHPA
+miyaw:iyaw INDEP-INIT-M "body" ; !GGI
+niyaw:iyaw INDEP-INIT-M "body" ; !OAHPA
+macâs:acâs INDEP-INIT-M "small stomach, small belly" ;
+mahkwanêyâpiy:ahkwanêyâpiy INDEP-INIT-M "achilles tendon, tendon at back of heel" ;
+mahkwanikan:ahkwanikan INDEP-INIT-M "heelbone" ;
+masakay:asakay INDEP-INIT-M "skin" ;
+maskasiy:askasiy INDEP-INIT-M "fingernail; claw" ;
+maskatay:askatay INDEP-INIT-M "stomach-covering; abdominal-wall, belly" ;
+matay:atay INDEP-INIT-M "belly, abdomen; stomach" ;
+mayakask:ayakaskw INDEP-INIT-M "palate" ;
+mâskikan:âskikan INDEP-INIT-M "chest, breast" ;
+mâwikan:âwikan INDEP-INIT-M ;
+mêstakaya:êstakaya INDEP-INIT-M ;
+micêhis:icêhis INDEP-INIT-M ;
+micêstatay:icêstatay INDEP-INIT-M ;
+micêstatayêyâpiy:icêstatayêyâpiy INDEP-INIT-M ;
+micicâskay:icicâskay INDEP-INIT-M ;
+micicâskâs:icicâskâs INDEP-INIT-M ;
+micisk:icisk INDEP-INIT-M ;
+miciskakisiy:iciskakisiy INDEP-INIT-M ;
+miciskêyâpiy:iciskêyâpiy INDEP-INIT-M ;
+micôskwanis:icôskwanis INDEP-INIT-M ;
+mihcikwan:ihcikwan INDEP-INIT-M ;
+mihcikwanikan:ihcikwanikan INDEP-INIT-M ;
+mikitik:ikitik INDEP-INIT-M ;
+mikohcaskwayêyâpîsa:ikohcaskwayêyâpîsa INDEP-INIT-M ;
+mikohtaskway:ikohtaskway INDEP-INIT-M ;
+mikohtaskwayêyâpiy:ikohtaskwayêyâpiy INDEP-INIT-M ;
+mikohtâkan:ikohtâkan INDEP-INIT-M ;
+mikwayaw:ikwayaw INDEP-INIT-M ;
+mikwayawikan:ikwayawikan INDEP-INIT-M ;
+mikwâskonêw:ikwâskonêw INDEP-INIT-M ;
+mikwâskonêwikan:ikwâskonêwikan INDEP-INIT-M ;
+mipwâm:ipwâm INDEP-INIT-M ;
+mipwâmikan:ipwâmikan INDEP-INIT-M ;
+mipwâm:ipwâm INDEP-INIT-M ;
+mipwâmikan:ipwâmikan INDEP-INIT-M ;
+miskan:iskan INDEP-INIT-M ;
+miskanis:iskanis INDEP-INIT-M ;
+miskâhtik:iskâhtik INDEP-INIT-M ;
+miskâhtikwanikan:iskâhtikwanikan INDEP-INIT-M ;
+miskâtikan:iskâtikan INDEP-INIT-M ;
+miskiwan:iskiwan INDEP-INIT-M ;
+miskiwanikan:iskiwanikan INDEP-INIT-M ;
+miskîsikohkâna:iskîsikohkâna INDEP-INIT-M ;
+miskîsikos:iskîsikos INDEP-INIT-M ;
+miskîsikwâpitân:iskîsikwâpitân INDEP-INIT-M ;
+miskocâkâs:iskocâkâs INDEP-INIT-M ;
+miskon:iskon INDEP-INIT-M ;
+miskotâkay:iskotâkay INDEP-INIT-M ;
+misôkan:isôkan INDEP-INIT-M ;
+mispikay:ispikay INDEP-INIT-M ;
+mispikêkan:ispikêkan INDEP-INIT-M ;
+mispiskwan:ispiskwan INDEP-INIT-M ;
+mistikwânaskatihkway:istikwânaskatihkway INDEP-INIT-M ;
+mistikwânikan:istikwânikan INDEP-INIT-M ;
+mitahtahkwan:itahtahkwan INDEP-INIT-M ;
+mitakay:itakay INDEP-INIT-M ;
+mitakisiya:itakisiya INDEP-INIT-M ;
+mitapiskohkêw:itapiskohkêw INDEP-INIT-M ;
+mitasiskitân:itasiskitân INDEP-INIT-M ;
+mitâpiskan:itâpiskan INDEP-INIT-M ;
+mitêh:itêh INDEP-INIT-M ;
+mitêyaniy:itêyaniy INDEP-INIT-M ;
+mitêyaniyâpiy:itêyaniyâpiy INDEP-INIT-M ;
+mitêyikom:itêyikom INDEP-INIT-M ;
+mitihtikon:itihtikon INDEP-INIT-M ;
+mitihtiman:itihtiman INDEP-INIT-M ;
+mitihtimanikan:itihtimanikan INDEP-INIT-M ;
+mitisiy:itisiy INDEP-INIT-M ;
+mitisiyêyâpiy:itisiyêyâpiy INDEP-INIT-M ;
+mitiskwêspiy:itiskwêspiy INDEP-INIT-M ;
+mitiy:itiy INDEP-INIT-M ;
+mitîhikan:itîhikan INDEP-INIT-M ;
+mitîhkôkan:itîhkôkan INDEP-INIT-M ;
+mitokan:itokan INDEP-INIT-M ;
+mitôskwan:itôskwan INDEP-INIT-M ;
+mîpicikan:îpicikan INDEP-INIT-M ;
+mîpitihkâna:îpitihkâna INDEP-INIT-M ;
+mîtihp:îtihp INDEP-INIT-M ;
+micâsis:icâsis ANDEP-INIT-M ; !
+micîhcîkom:icîhcîkom ANDEP-INIT-M ;
+micohcôsimis:icohcôsimis ANDEP-INIT-M ;
+mispayowak:ispayowak ANDEP-INIT-M ;
+mitakikom:itakikom ANDEP-INIT-M ;
+mitâkay:itâkay ANDEP-INIT-M ;
+mitâs:itâs ANDEP-INIT-M ;
+mitâsiyân:itâsiyân ANDEP-INIT-M ;
+mitêskan:itêskan ANDEP-INIT-M ;
+mitihtihkos:itihtihkos ANDEP-INIT-M ;
+mitihtihkosiw:itihtihkosiw ANDEP-INIT-M ;
+mitihtihkosiy:itihtihkosiy ANDEP-INIT-M ;
+mitisowayak:itisowayak ANDEP-INIT-M ;
+mitîhiy:itîhiy ANDEP-INIT-M ;
+mitohtôsim:itohtôsim ANDEP-INIT-M ;
