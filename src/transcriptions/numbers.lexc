@@ -191,24 +191,24 @@ akte:1 THOUSANDS ;
 ONEST ;
 
 LEXICON ONEST
-nîso:2 THOUSANDS ;
-nisto:3 THOUSANDS ;
-newo:4 THOUSANDS ;
-nîyânan:5 THOUSANDS ;
-nikotwâsik:6 THOUSANDS ;
-tepakohp:7 THOUSANDS ;
-ayinânew:8 THOUSANDS ;
-kekâmitâtaht:9 THOUSANDS ;
+nîso% :2 THOUSANDS ;
+nisto% :3 THOUSANDS ;
+newo% :4 THOUSANDS ;
+nîyânan% :5 THOUSANDS ;
+nikotwâsik% :6 THOUSANDS ;
+tepakohp% :7 THOUSANDS ;
+ayinânew% :8 THOUSANDS ;
+kekâmitâtaht% :9 THOUSANDS ;
 
 LEXICON THOUSANDS      ! x > 1
-peyak% kihci% mitâtahtomtanaw: THOUSAND ;
-peyak% kihci% mitâtahtomitanaw: THOUSAND ;
+kihci% mitâtahtomtanaw: THOUSAND ;
+kihci% mitâtahtomitanaw: THOUSAND ;
 
 LEXICON THOUSAND
-UNDERTHOUSAND ;	   ! 1100-1999
-:%0 TENS ;	   ! 1020-1099
-:%0 TEENS ;	   ! 1010-1019
-:%0%0 ONES ;	   ! 1001-1009
+% ayiwak% : UNDERTHOUSAND ;	   ! 1100-1999
+% ayiwak% :%0 TENS ;	   ! 1020-1099
+% ayiwak% :%0 TEENS ;	   ! 1010-1019
+% ayiwak% :%0%0 ONES ;	   ! 1001-1009
 :%0%0%0 ENDLEX ;	   ! 1000
 
 !===========================
@@ -221,25 +221,25 @@ mitâtahtomitanaw% :1 HUNDRED ;
 mitâtahtomtanaw% :1 HUNDRED ;
 
 LEXICON HUNDREDS
-nîso:2   CUODI ;
-nisto:3    CUODI ;
-newo:4 CUODI ;
-nîyânano:5   CUODI ;  !OBS
-nikotwâsiko:6   CUODI ;
-tepakohpo:7 CUODI ;
-ayinânewo:8 CUODI ;
-kekâmitâtahto:9   CUODI ;
+nîso% :2   CUODI ;
+nisto% :3    CUODI ;
+newo% :4 CUODI ;
+nîyânano% :5   CUODI ;  !OBS
+nikotwâsiko% :6   CUODI ;
+tepakohpo% :7 CUODI ;
+ayinânewo% :8 CUODI ;
+kekâmitâtahto% :9   CUODI ;
 
 LEXICON CUODI
 mitâtahtomitanaw% :   HUNDRED ;
 mitâtahtomtanaw% :   HUNDRED ;
 
 LEXICON HUNDRED
-      TENS ;
-      TEENS ;
+!      TENS ;
+!      TEENS ;
 ayiwak% :  TENS ;
 ayiwak% :  TEENS ;
-:%0   ONES ;
+!:%0   ONES ;
 ayiwak% :%0   ONES ;
 :%0%0 ENDLEX ;
 
