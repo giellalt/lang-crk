@@ -127,16 +127,65 @@ TICONJ ;
 !! !! Preverbs
 
 LEXICON IACONJ
-< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJ-MAIN ;
 < "@U.preverb.NULL@" > IACONJ-MAIN ;
+< "+PV/ati":0 "@U.preverb.ati@" > IACONJ-MAIN ;
+< "+PV/nohte":0 "@U.preverb.nohte@" > IACONJ-MAIN ;
+< "+PV/kakwe":0 "@U.preverb.kakwe@" > IACONJ-MAIN ;
+< "+PV/maci":0 "@U.preverb.maci@" > IACONJ-MAIN ;
+< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJ-MAIN ;
+< "+PV/peyako":0 "@U.preverb.peyako@" > IACONJ-MAIN ;
+< "+PV/poni":0 "@U.preverb.poni@" > IACONJ-MAIN ;
+< "+PV/nitowi":0 "@U.preverb.nitowi@" > IACONJ-MAIN ;
+< "+PV/pe":0 "@U.preverb.pe@" > IACONJ-MAIN ;
+< "+PV/moci":0 "@U.preverb.moci@" > IACONJ-MAIN ;
+< "+PV/sapo":0 "@U.preverb.sapo@" > IACONJ-MAIN ;
+< "+PV/yoski":0 "@U.preverb.yoski@" > IACONJ-MAIN ;
+< "+PV/miyo":0 "@U.preverb.miyo@" > IACONJ-MAIN ;
+< "+PV/mayi":0 "@U.preverb.mayi@" > IACONJ-MAIN ;
+< "+PV/sohki":0 "@U.preverb.sohki@" > IACONJ-MAIN ;
+< "+PV/pisci":0 "@U.preverb.pisci@" > IACONJ-MAIN ;
+< "+PV/kihci":0 "@U.preverb.kihci@" > IACONJ-MAIN ;
+
 
 LEXICON IACONJw
-< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJw-MAIN ;
 < "@U.preverb.NULL@" > IACONJw-MAIN ;
+< "+PV/ati":0 "@U.preverb.ati@" > IACONJw-MAIN ;
+< "+PV/nohte":0 "@U.preverb.nohte@" > IACONJw-MAIN ;
+< "+PV/kakwe":0 "@U.preverb.kakwe@" > IACONJw-MAIN ;
+< "+PV/maci":0 "@U.preverb.maci@" > IACONJw-MAIN ;
+< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJw-MAIN ;
+< "+PV/peyako":0 "@U.preverb.peyako@" > IACONJw-MAIN ;
+< "+PV/poni":0 "@U.preverb.poni@" > IACONJw-MAIN ;
+< "+PV/nitowi":0 "@U.preverb.nitowi@" > IACONJw-MAIN ;
+< "+PV/pe":0 "@U.preverb.pe@" > IACONJw-MAIN ;
+< "+PV/moci":0 "@U.preverb.moci@" > IACONJw-MAIN ;
+< "+PV/sapo":0 "@U.preverb.sapo@" > IACONJw-MAIN ;
+< "+PV/yoski":0 "@U.preverb.yoski@" > IACONJw-MAIN ;
+< "+PV/miyo":0 "@U.preverb.miyo@" > IACONJw-MAIN ;
+< "+PV/mayi":0 "@U.preverb.mayi@" > IACONJw-MAIN ;
+< "+PV/sohki":0 "@U.preverb.sohki@" > IACONJw-MAIN ;
+< "+PV/pisci":0 "@U.preverb.pisci@" > IACONJw-MAIN ;
+< "+PV/kihci":0 "@U.preverb.kihci@" > IACONJw-MAIN ;
 
 LEXICON IACONJn
-< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJn-MAIN ;
 < "@U.preverb.NULL@" > IACONJn-MAIN ;
+< "+PV/ati":0 "@U.preverb.ati@" > IACONJn-MAIN ;
+< "+PV/nohte":0 "@U.preverb.nohte@" > IACONJn-MAIN ;
+< "+PV/kakwe":0 "@U.preverb.kakwe@" > IACONJn-MAIN ;
+< "+PV/maci":0 "@U.preverb.maci@" > IACONJn-MAIN ;
+< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJn-MAIN ;
+< "+PV/peyako":0 "@U.preverb.peyako@" > IACONJn-MAIN ;
+< "+PV/poni":0 "@U.preverb.poni@" > IACONJn-MAIN ;
+< "+PV/nitowi":0 "@U.preverb.nitowi@" > IACONJn-MAIN ;
+< "+PV/pe":0 "@U.preverb.pe@" > IACONJn-MAIN ;
+< "+PV/moci":0 "@U.preverb.moci@" > IACONJn-MAIN ;
+< "+PV/sapo":0 "@U.preverb.sapo@" > IACONJn-MAIN ;
+< "+PV/yoski":0 "@U.preverb.yoski@" > IACONJn-MAIN ;
+< "+PV/miyo":0 "@U.preverb.miyo@" > IACONJn-MAIN ;
+< "+PV/mayi":0 "@U.preverb.mayi@" > IACONJn-MAIN ;
+< "+PV/sohki":0 "@U.preverb.sohki@" > IACONJn-MAIN ;
+< "+PV/pisci":0 "@U.preverb.pisci@" > IACONJn-MAIN ;
+< "+PV/kihci":0 "@U.preverb.kihci@" > IACONJn-MAIN ;
 
 
 !! !!! Intransitive animate (IA)
@@ -463,16 +512,64 @@ LEXICON II_CNJ_PERS-PL   !!= @CODE@ -n final
 ! Preverbs
 
 LEXICON TACONJ_1
-< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_1-MAIN ;
 < "@U.preverb.NULL@" > TACONJ_1-MAIN ;
+< "+PV/ati":0 "@U.preverb.ati@" > TACONJ_1-MAIN ;
+< "+PV/nohte":0 "@U.preverb.nohte@" > TACONJ_1-MAIN ;
+< "+PV/kakwe":0 "@U.preverb.kakwe@" > TACONJ_1-MAIN ;
+< "+PV/maci":0 "@U.preverb.maci@" > TACONJ_1-MAIN ;
+< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_1-MAIN ;
+< "+PV/peyako":0 "@U.preverb.peyako@" > TACONJ_1-MAIN ;
+< "+PV/poni":0 "@U.preverb.poni@" > TACONJ_1-MAIN ;
+< "+PV/nitowi":0 "@U.preverb.nitowi@" > TACONJ_1-MAIN ;
+< "+PV/pe":0 "@U.preverb.pe@" > TACONJ_1-MAIN ;
+< "+PV/moci":0 "@U.preverb.moci@" > TACONJ_1-MAIN ;
+< "+PV/sapo":0 "@U.preverb.sapo@" > TACONJ_1-MAIN ;
+< "+PV/yoski":0 "@U.preverb.yoski@" > TACONJ_1-MAIN ;
+< "+PV/miyo":0 "@U.preverb.miyo@" > TACONJ_1-MAIN ;
+< "+PV/mayi":0 "@U.preverb.mayi@" > TACONJ_1-MAIN ;
+< "+PV/sohki":0 "@U.preverb.sohki@" > TACONJ_1-MAIN ;
+< "+PV/pisci":0 "@U.preverb.pisci@" > TACONJ_1-MAIN ;
+< "+PV/kihci":0 "@U.preverb.kihci@" > TACONJ_1-MAIN ;
 
 LEXICON TACONJ_2
-< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_2-MAIN ;
 < "@U.preverb.NULL@" > TACONJ_2-MAIN ;
+< "+PV/ati":0 "@U.preverb.ati@" > TACONJ_2-MAIN ;
+< "+PV/nohte":0 "@U.preverb.nohte@" > TACONJ_2-MAIN ;
+< "+PV/kakwe":0 "@U.preverb.kakwe@" > TACONJ_2-MAIN ;
+< "+PV/maci":0 "@U.preverb.maci@" > TACONJ_2-MAIN ;
+< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_2-MAIN ;
+< "+PV/peyako":0 "@U.preverb.peyako@" > TACONJ_2-MAIN ;
+< "+PV/poni":0 "@U.preverb.poni@" > TACONJ_2-MAIN ;
+< "+PV/nitowi":0 "@U.preverb.nitowi@" > TACONJ_2-MAIN ;
+< "+PV/pe":0 "@U.preverb.pe@" > TACONJ_2-MAIN ;
+< "+PV/moci":0 "@U.preverb.moci@" > TACONJ_2-MAIN ;
+< "+PV/sapo":0 "@U.preverb.sapo@" > TACONJ_2-MAIN ;
+< "+PV/yoski":0 "@U.preverb.yoski@" > TACONJ_2-MAIN ;
+< "+PV/miyo":0 "@U.preverb.miyo@" > TACONJ_2-MAIN ;
+< "+PV/mayi":0 "@U.preverb.mayi@" > TACONJ_2-MAIN ;
+< "+PV/sohki":0 "@U.preverb.sohki@" > TACONJ_2-MAIN ;
+< "+PV/pisci":0 "@U.preverb.pisci@" > TACONJ_2-MAIN ;
+< "+PV/kihci":0 "@U.preverb.kihci@" > TACONJ_2-MAIN ;
 
 LEXICON TACONJ_5
-< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_5-MAIN ;
 < "@U.preverb.NULL@" > TACONJ_5-MAIN ;
+< "+PV/ati":0 "@U.preverb.ati@" > TACONJ_5-MAIN ;
+< "+PV/nohte":0 "@U.preverb.nohte@" > TACONJ_5-MAIN ;
+< "+PV/kakwe":0 "@U.preverb.kakwe@" > TACONJ_5-MAIN ;
+< "+PV/maci":0 "@U.preverb.maci@" > TACONJ_5-MAIN ;
+< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_5-MAIN ;
+< "+PV/peyako":0 "@U.preverb.peyako@" > TACONJ_5-MAIN ;
+< "+PV/poni":0 "@U.preverb.poni@" > TACONJ_5-MAIN ;
+< "+PV/nitowi":0 "@U.preverb.nitowi@" > TACONJ_5-MAIN ;
+< "+PV/pe":0 "@U.preverb.pe@" > TACONJ_5-MAIN ;
+< "+PV/moci":0 "@U.preverb.moci@" > TACONJ_5-MAIN ;
+< "+PV/sapo":0 "@U.preverb.sapo@" > TACONJ_5-MAIN ;
+< "+PV/yoski":0 "@U.preverb.yoski@" > TACONJ_5-MAIN ;
+< "+PV/miyo":0 "@U.preverb.miyo@" > TACONJ_5-MAIN ;
+< "+PV/mayi":0 "@U.preverb.mayi@" > TACONJ_5-MAIN ;
+< "+PV/sohki":0 "@U.preverb.sohki@" > TACONJ_5-MAIN ;
+< "+PV/pisci":0 "@U.preverb.pisci@" > TACONJ_5-MAIN ;
+< "+PV/kihci":0 "@U.preverb.kihci@" > TACONJ_5-MAIN ;
 
 
 ! Main verb stems
