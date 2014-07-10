@@ -57,9 +57,9 @@ IASLOT2 ;
 %-:%- IASLOT2 ;
 
 LEXICON IASLOT2
-VERBSTEMS ; ! business as usual
+< "@U.preverb.NULL@" > VERBSTEMS ; ! business as usual
 mâci:mâci    VERBSTEMSPRE "begin" ;
-nihtâ:nihtâ   VERBSTEMSPRE "have the ability to do well" ;
+< 0:n 0:i 0:h 0:t 0:â 0:%- "@U.preverb.nihta@" >  VERBSTEMSPRE "have the ability to do well" ;
 pêyako:pêyako  VERBSTEMSPRE "only" ;
 pôni:pôni    VERBSTEMSPRE "stop" ;
 nitawi:nitawi  VERBSTEMSPRE "go and" ;
@@ -76,7 +76,7 @@ kihci:kihci   VERBSTEMSPRE "large" ;
 
 LEXICON VERBSTEMSPRE
 VERBSTEMS ;
-%-:%- VERBSTEMS ;
+!-:%- VERBSTEMS ;
 
 
 
