@@ -13,11 +13,11 @@
 ! giellatekno@hum.uit.no or divvun@hum.uit.no
 
 ! ========================================================================== !
-!!            !!!Plains Cree morphological analyser                      
+!!            !!!Plains Cree morphological analyser
 ! ========================================================================== !
 
 !! INTRODUCTION TO THE MORPHOLOGICAL ANALYSER OF Plains Cree .
- 
+
 
 Multichar_Symbols  !!≈ !!!@CODE@ definitions
 
@@ -29,15 +29,15 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 
 !! POS
 
-+N	        !!= * @CODE@ 
-+V	        !!= * @CODE@ 
-+Prop	        !!= * @CODE@ 
-+Adv        !!= * @CODE@ 
-+CC	        !!= * @CODE@ 
-+CS	        !!= * @CODE@ 
-+Interj     !!= * @CODE@ 
-+Pron       !!= * @CODE@ 
-+Num        !!= * @CODE@ 
++N	        !!= * @CODE@
++V	        !!= * @CODE@
++Prop	        !!= * @CODE@
++Adv        !!= * @CODE@
++CC	        !!= * @CODE@
++CS	        !!= * @CODE@
++Interj     !!= * @CODE@
++Pron       !!= * @CODE@
++Num        !!= * @CODE@
 
 +Loc        !!= * @CODE@ Locative
 
@@ -45,7 +45,7 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 
 +Ipc		!!=  * @CODE@ Indeclinable Particle
 
-+Dem        !!= * @CODE@ Demonstrative 
++Dem        !!= * @CODE@ Demonstrative
 +Prox	    !!= * @CODE@ Demonstrative Proximate
 +Med	    !!= * @CODE@ Demonstrative Medial
 +Dist	    !!= * @CODE@ Demonstrative Distal
@@ -53,12 +53,12 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 
 
 !! Verbal MSP
-+Prs  !!= * @CODE@ 
++Prs  !!= * @CODE@
 +Fut  !!= * @CODE@
 
-+Prt  !!= * @CODE@ 
-+Prf  !!= * @CODE@ 
-+Cnj  !!= * @CODE@ 
++Prt  !!= * @CODE@
++Prf  !!= * @CODE@
++Cnj  !!= * @CODE@
 +Int  !!= * @CODE@ This tag is for the Future Intentional
 +Def  !!= * @CODE@ This tag is for the Future Definite
 
@@ -115,9 +115,9 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 +Px4Pl	 !!= * @CODE@
 +Dim/Der !!= * @CODE@
 
-+IA      !!= * @CODE@ intransitive with animate subject, 
-+II      !!= * @CODE@ intransitive with inanimate subject, 
-+TA      !!= * @CODE@ transitive with animate object, and 
++IA      !!= * @CODE@ intransitive with animate subject,
++II      !!= * @CODE@ intransitive with inanimate subject,
++TA      !!= * @CODE@ transitive with animate object, and
 +TI      !!= * @CODE@ transitive with inanimate object.
 
 +AN		 !!= * @CODE@ animate noun
@@ -137,10 +137,10 @@ Multichar_Symbols  !!≈ !!!@CODE@ definitions
 
 %^LOC    !!= * @CODE@  Locative
 w2      !!= * @CODE@ mow:mow2
-t2 		!!= * @CODE@  Prefix in possessives 
+t2 		!!= * @CODE@  Prefix in possessives
 t3      !!= * @CODE@ t to s in VTA-4
 
-h2 		!!= * @CODE@  Prefix in possessives 
+h2 		!!= * @CODE@  Prefix in possessives
 %^DIM	!!=* @CODE@  Diminutive suffix
 %^POS    !!=* @CODE@  Possessive suffix
 +Obv	!!=* @CODE@  Label for nouns marked in the obviative, especially in 3-on-3 cases when it blocks potential plural marking
@@ -161,7 +161,7 @@ h2 		!!= * @CODE@  Prefix in possessives
 
 
 
-!! !! Flagdiacritics 
+!! !! Flagdiacritics
 
 !! These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
 
@@ -194,7 +194,7 @@ h2 		!!= * @CODE@  Prefix in possessives
 @U.mood.imp@
 @U.mood.indep@
 @U.tense.Prs@
-@U.tense.Prt@  
+@U.tense.Prt@
 @U.tense.FutDef@
 @U.tense.FutInt@
 @U.tense.FutCon@
@@ -235,11 +235,11 @@ h2 		!!= * @CODE@  Prefix in possessives
 
 LEXICON Root         !!=  @CODE@ is where it all starts
 
-NounPrefixes ;       !!= * @CODE@ 
-VerbPrefixes ;       !!= * @CODE@ 
-Pronoun ;            !!= * @CODE@ 
-Propernouns ;        !!= * @CODE@ 
-Punctuation ;        !!= * @CODE@ 
-Particles ;          !!= * @CODE@ 
-Numerals ;           !!= * @CODE@ 
+NounPrefixes ;       !!= * @CODE@
+VerbPrefixes ;       !!= * @CODE@
+Pronoun ;            !!= * @CODE@
+Propernouns ;        !!= * @CODE@
+Punctuation ;        !!= * @CODE@
+Particles ;          !!= * @CODE@
+Numerals ;           !!= * @CODE@
 
