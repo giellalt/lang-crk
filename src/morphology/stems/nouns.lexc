@@ -4235,12 +4235,12 @@ micihciy:icihciy IN_DEP_INIT_M "hand" ; !
 nicihciy:icihciy IN_DEP_INIT_M "hand" ; !OAHPA
 micihciy:icihcîsis INDEP-DERIV_M_SG "hand" ; 
 micihcîsis:icihcîsis IN_DEP_INIT_M "small hand" ; 
-micihcîs:icihcîs IN_DEP_INIT_M "small mouth" ; 
-mihcawakâs:ihcawakâs IN_DEP_INIT_M "little ear" ;
-mihkwâkanis:ihkwâkanis IN_DEP_INIT_M "face" ;
-miscikwânis:iscikwânis IN_DEP_INIT_M "little head" ;
-misicis:isicis IN_DEP_INIT_M "small foot" ;
-mispiconis:ispiconis IN_DEP_INIT_M "little arm" ;
+micihcîs:icihcîs IN_DEP_INIT_M_DIM "small mouth" ; 
+mihcawakâs:ihcawakâs IN_DEP_INIT_M_DIM "little ear" ;
+mihkwâkanis:ihkwâkanis IN_DEP_INIT_M_DIM "face" ;
+miscikwânis:iscikwânis IN_DEP_INIT_M_DIM "little head" ;
+misicis:isicis IN_DEP_INIT_M_DIM "small foot" ;
+mispiconis:ispiconis IN_DEP_INIT_M_DIM "little arm" ;
 mihkwâkan:ihkwâkan IN_DEP_INIT_M "face" ;
 nihkwâkan:ihkwâkan IN_DEP_INIT_M "face" ;!OAHPA
 misit:isit IN_DEP_INIT_M "foot" ; !GGI
@@ -4254,7 +4254,7 @@ miskât:iskât IN_DEP_INIT_M "leg" ; !GGI
 niskât:iskât IN_DEP_INIT_M "leg" ; !OAHPA
 mitôn:itôn IN_DEP_INIT_M "mouth" ; !GGI
 nitôn:itôn IN_DEP_INIT_M "mouth" ; !OAHPA
-micônis:icônis  IN_DEP_INIT_M "small hand" ;
+micônis:icônis IN_DEP_INIT_M_DIM "small hand" ;
 miskîsik:iskîsik IN_DEP_INIT_M "eye" ; !GGI
 niskîsik:iskîsik IN_DEP_INIT_M "eye" ; !OAHPA
 mikot:ikot IN_DEP_INIT_M "nose" ; !GGI
@@ -4282,7 +4282,7 @@ micicâskâs:icicâskâs IN_DEP_INIT_M ;
 micisk:icisk IN_DEP_INIT_M ;
 miciskakisiy:iciskakisiy IN_DEP_INIT_M ;
 miciskêyâpiy:iciskêyâpiy IN_DEP_INIT_M ;
-micôskwanis:icôskwanis IN_DEP_INIT_M ;
+micôskwanis:icôskwanis IN_DEP_INIT_M_DIM ;
 mihcikwan:ihcikwan IN_DEP_INIT_M ;
 mihcikwanikan:ihcikwanikan IN_DEP_INIT_M ;
 mikitik:ikitik IN_DEP_INIT_M ;
@@ -4299,7 +4299,7 @@ mipwâmikan:ipwâmikan IN_DEP_INIT_M ;
 mipwâm:ipwâm IN_DEP_INIT_M ;
 mipwâmikan:ipwâmikan IN_DEP_INIT_M ;
 miskan:iskan IN_DEP_INIT_M ;
-miskanis:iskanis IN_DEP_INIT_M ;
+miskanis:iskanis IN_DEP_INIT_M_DIM ;
 miskâhtik:iskâhtik IN_DEP_INIT_M ;
 miskâhtikwanikan:iskâhtikwanikan IN_DEP_INIT_M ;
 miskâtikan:iskâtikan IN_DEP_INIT_M ;
