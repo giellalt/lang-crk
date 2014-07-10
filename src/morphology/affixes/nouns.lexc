@@ -371,6 +371,13 @@ LEXICON INABLGENERIC !!= * @CODE@ generic forms Sg, Pl, Loc and diminutives
 +Der/Dim+N+IN+Sg:%>is%^DIM%> SG_ ;
 +Der/Dim+N+IN+Pl:%>is%^DIM%> PLa ;
 
+LEXICON IN_DEP_INIT_M_DIM !!= * @CODE@ for the inanimate possessive declension
+< "+N":0 "+IN":0 "+Sg":0  "@U.noun.abs@" > SG_ ; !Generic form 
+< "+N":0 "+IN":0 "+Pl":0  "@U.noun.abs@" > PLa ; !Generic form 
+< "+N":0 "+IN":0  "@U.noun.abs@" > LOC ; 
++N+IN+Sg:%> INSUFF_SG ;
++N+IN+Pl:%> INSUFF_PL ;
++N+IN:%> INSUFF_LOC ;
 
 
 LEXICON IN_DEP_INIT_M_SG !!= * @CODE@ inanimate possessive declension, only Sg
