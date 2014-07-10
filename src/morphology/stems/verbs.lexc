@@ -34,7 +34,7 @@
 
 
 LEXICON VERBLIST  !!= @CODE@ just adds the prefix boundary
- :%> IAPREVERB ;
+ :%> PREVERBS ;
 
 
 
@@ -46,33 +46,37 @@ LEXICON VERBLIST  !!= @CODE@ just adds the prefix boundary
 
 ! This and the next lexicon experiment with preverbs, Okimâsis p. 17.
 
-LEXICON IAPREVERB   
-IASLOT2 ; ! business as usual
-ati:ati	    IASLOT2PRE "begin" ;
-nôhtê:nôhtê   IASLOT2PRE "want" ;
-kakwê:kakwê   IASLOT2PRE "try" ;
+LEXICON PREVERBS   
+VERBSTEMS ; ! business even more as usual
+PVSLOT2 ; ! business as usual
+!IASLOT2PRE ; ! preverbs
+! ati:ati	    IASLOT2PRE "begin" ;
+! nôhtê:nôhtê   IASLOT2PRE "want" ;
+! kakwê:kakwê   IASLOT2PRE "try" ;
 
-LEXICON IASLOT2PRE
-IASLOT2 ;
-%-:%- IASLOT2 ;
+!LEXICON IASLOT2PRE
+!IASLOT2 ;
+! %-:%- IASLOT2 ;
 
-LEXICON IASLOT2
+LEXICON PVSLOT2
 < "@U.preverb.NULL@" > VERBSTEMS ; ! business as usual
-mâci:mâci    VERBSTEMSPRE "begin" ;
+< 0:a 0:t 0:i 0:%- "@U.preverb.ati@" > VERBSTEMSPRE "begin" ;
+< 0:n 0:ô 0:h 0:t 0:ê 0:%- "@U.preverb.nohte@" > VERBSTEMSPRE "want" ;
+< 0:k 0:a 0:k 0:w 0:ê 0:%- "@U.preverb.kakwe@" > VERBSTEMSPRE "try" ;
+< 0:m 0:â 0:c 0:i 0:%- "@U.preverb.maci@" > VERBSTEMSPRE "begin" ;
 < 0:n 0:i 0:h 0:t 0:â 0:%- "@U.preverb.nihta@" >  VERBSTEMSPRE "have the ability to do well" ;
-pêyako:pêyako  VERBSTEMSPRE "only" ;
-pôni:pôni    VERBSTEMSPRE "stop" ;
-nitawi:nitawi  VERBSTEMSPRE "go and" ;
-pê:pê	    VERBSTEMSPRE "toward speaker" ;
-mêcî:mêcî    VERBSTEMSPRE "toward speaker" ;
-sâpo:sâpo    VERBSTEMSPRE "through" ;
-yôski:yôski   VERBSTEMSPRE "soft" ;
-miyo:miyo    VERBSTEMSPRE "well" ;
-mâyi:mâyi    VERBSTEMSPRE "bad" ;
-sôhki:sôhki   VERBSTEMSPRE "hard" ;
-pisci:pisci   VERBSTEMSPRE "by mistake" ;
-kihci:kihci   VERBSTEMSPRE "large" ;
-
+< 0:p 0:ê 0:y 0:a 0:k 0:o 0:%- "@U.preverb.peyako@" >  VERBSTEMSPRE "only" ;
+< 0:p 0:ô 0:n 0:i 0:%- "@U.preverb.poni@" >   VERBSTEMSPRE "stop" ;
+< 0:n 0:i 0:t 0:a 0:w 0:i 0:%- "@U.preverb.nitowi@" > VERBSTEMSPRE "go and" ;
+< 0:p 0:ê 0:%- "@U.preverb.pe@" > VERBSTEMSPRE "toward speaker" ;
+< 0:m 0:ê 0:c 0:î 0:%- "@U.preverb.moci@" > VERBSTEMSPRE "toward speaker" ;
+< 0:s 0:â 0:p 0:o 0:%- "@U.preverb.sapo@" >  VERBSTEMSPRE "through" ;
+< 0:y 0:ô 0:s 0:k 0:i 0:%- "@U.preverb.yoski@" > VERBSTEMSPRE "soft" ;
+< 0:m 0:i 0:y 0:o 0:%- "@U.preverb.miyo@" > VERBSTEMSPRE "well" ;
+< 0:m 0:â 0:y 0:i 0:%- "@U.preverb.mayi@" > VERBSTEMSPRE "bad" ;
+< 0:s 0:ô 0:h 0:k 0:i 0:%- "@U.preverb.sohki@" > VERBSTEMSPRE "hard" ;
+< 0:p 0:i 0:s 0:c 0:i 0:%- "@U.preverb.pisci@" > VERBSTEMSPRE "by mistake" ;
+< 0:k 0:i 0:h 0:c 0:i 0:%- "@U.preverb.kihci@" > VERBSTEMSPRE "large" ;
 
 LEXICON VERBSTEMSPRE
 VERBSTEMS ;
