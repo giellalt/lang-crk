@@ -75,8 +75,6 @@ LEXICON IMPERATIV   !!= @CODE@ gives flag for imperative (no prefixes)
 @U.mood.imp@  VERBLIST ;
 
 
-
-
 !! Now, lexc directs us to the ../stems/verbs.lexc file,
 !! where we find all the verbal stems. The suffixes are then
 !! found in the section "Suffixes" right underneath.
@@ -126,20 +124,32 @@ TICONJ ;
 LEXICON TICONJ_3 
 TICONJ ;
 
+!! !! Preverbs
+
+LEXICON IACONJ
+< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJ-MAIN ;
+< "@U.preverb.NULL@" > IACONJ-MAIN ;
+
+LEXICON IACONJw
+< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJw-MAIN ;
+< "@U.preverb.NULL@" > IACONJw-MAIN ;
+
+LEXICON IACONJn
+< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJn-MAIN ;
+< "@U.preverb.NULL@" > IACONJn-MAIN ;
+
 
 !! !!! Intransitive animate (IA)
 
-LEXICON IACONJ !!= @CODE@ splits in 4 moods
+LEXICON IACONJ-MAIN !!= @CODE@ splits in 4 moods
 < "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+IA: IACONJ-CONT ;
  
- 
- 
-LEXICON IACONJw !!= @CODE@ splits in 4 moods, for verbs with final -w
+LEXICON IACONJw-MAIN !!= @CODE@ splits in 4 moods, for verbs with final -w
 < "+V":w "+IA":0 "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@" >     # ; !Baseform
 +V+IA: IACONJ-CONT ;
 
-LEXICON IACONJn !!= @CODE@ splits in 4 moods, for verbs with final -n
+LEXICON IACONJn-MAIN !!= @CODE@ splits in 4 moods, for verbs with final -n
 < "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+IA: IACONJ-CONTn ;
 
@@ -450,15 +460,32 @@ LEXICON II_CNJ_PERS-PL   !!= @CODE@ -n final
 !! The VTA verbs split in different moods.
 !! There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
-LEXICON TACONJ_1 !!= @CODE@ 
+! Preverbs
+
+LEXICON TACONJ_1
+< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_1-MAIN ;
+< "@U.preverb.NULL@" > TACONJ_1-MAIN ;
+
+LEXICON TACONJ_2
+< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_2-MAIN ;
+< "@U.preverb.NULL@" > TACONJ_2-MAIN ;
+
+LEXICON TACONJ_5
+< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_5-MAIN ;
+< "@U.preverb.NULL@" > TACONJ_5-MAIN ;
+
+
+! Main verb stems
+
+LEXICON TACONJ_1-MAIN !!= @CODE@ 
 < "+V":0 "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA: TACONJ-CONT ;
 
-LEXICON TACONJ_2  !!= * @CODE@ splits in 4. The -aw shall be removed from some forms.
+LEXICON TACONJ_2-MAIN  !!= * @CODE@ splits in 4. The -aw shall be removed from some forms.
 < "+V":0 "+TA":0 0:ê 0:w "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA: TACONJ-CONT ;
 
-LEXICON TACONJ_5 ! This is just guessing, I do not know how the VTA-5 vers are inflected.
+LEXICON TACONJ_5-MAIN ! This is just guessing, I do not know how the VTA-5 vers are inflected.
 < "+V":w "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA:w TACONJ-CONT ;
 
