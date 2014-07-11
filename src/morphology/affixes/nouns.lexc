@@ -186,17 +186,14 @@ LEXICON ANABSDECL !!= * @CODE@ for the animate absolute declension
 
 
 LEXICON AN_GENERIC
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.4pl@" > SG_       ; !
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.4pl@" > PLak      ; !
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" > SG_       ; !
+< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" > PLak      ; !
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;!
 
 
-LEXICON AN_KININFL !!= * @CODE@ The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
-                                               ANKINPOSS ;
-
 
 LEXICON AN_KININFL_MONOG !!= * @CODE@ Lexicon with reduces possessive paradigm: only one wife/husband
-< "+N":i "+AN":m "+Sg":â                             0:w "@U.noun.4pl@" > #         ; !generic form
+!< "+N":i "+AN":m "+Sg":â                             0:w "@U.noun.4pl@" > #         ; !generic form
 < "+N":0 "+AN":0 "+Sg":0  "+Px1Sg":%^POS                 "@U.noun.1sg@"  > SG_       ; !
 < "+N":0 "+AN":0 "+Sg":0  "+Px2Sg":%^POS                 "@U.noun.2sg@"  > SG_       ; !
 < "+N":0 "+AN":0 "+Sg":0  "+Px3Sg":%^POS                 "@U.noun.3sg@"  > OBVIATIVE ; !
@@ -223,8 +220,12 @@ LEXICON ANPOSS-ATIM !!= * @CODE@ is also there to handle the highly irregular at
 !+N+AN:%> ANSUFF_LOC ;
 
 
-LEXICON ANKINPOSS !!= * @CODE@ 
+LEXICON AN_KININFL !!= * @CODE@ 
 +N+AN+Sg: ANSUFF_SG ;
++N+AN+Pl: ANSUFF_PL ;
++N+AN+Der/Dim:%>is%^DIMis%> AN_DIMPOSS ;
+
+LEXICON AN_KININFL_PL !!= * @CODE@ 
 +N+AN+Pl: ANSUFF_PL ;
 +N+AN+Der/Dim:%>is%^DIMis%> AN_DIMPOSS ;
 

@@ -4122,6 +4122,7 @@ osisimâw AN_GENERIC ;
 ohcâwîsimâw AN_GENERIC ;
 ostêsimâw AN_GENERIC ;
 onâpêmimâw AN_GENERIC ;
+ohpan AN_GENERIC ;
 
 LEXICON DEP-KINTERMSSTEMS  ! dependent nouns
 !! @LEXNAME@ adds an affixmark and redirects to KINTERMLIST
@@ -4148,6 +4149,7 @@ LEXICON DEP-KINTERMLIST
 -kâwiy:ikâw AN_KINiyINFL "mother" ;!  !yaml
 !nikâwiy:ikâw AN_KINiyINFL "mother" ;! !OAHPA !Not dim!
 -ohtâwiy:ohtâw AN_KINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy, kôhtâwînaw
+-ohtâwiy:ôhtâw AN_KINiyINFL "heavenly father" ;   !OBS nohtâwiy, ohtâwiy, kôhtâwînaw
 !nohtâwiy:ohtâw AN_KINiyINFL "father" ;   !OAHPA !Not dim!
 -mis:imis AN_KININFL "older sister" ;
 !nimis:imis AN_KININFL "older sister" ;!OAHPA
@@ -4212,8 +4214,55 @@ ohcâwîs:ohcâwîs AN_KININFL "father's brother" ; !
 -nâpêm:inâpêm AN_KININFL_MONOG "husband" ;
 !ninâpêm:inâpêm AN_KININFL_MONOG "husband" ; !OAHPA
 !wîkimâkan:îkimâkan AN_KININFL_MONOG "spouse" ;  !OBS!
+-iyinîmak:itiyinîm AN_KININFL_PL "people; followers" ;
+-ôskinîkîm:itôskinîkîm AN_KININFL "young man" ;
+-ôskinîkîmis:itôskinîkîmis AN_DIMPOSS "young man" ; 
+-yihkwak:iyihkw AN_KININFL_PL "glands" ; !w
+-îci-âyis:îc-âyis AN_KININFL "fellow youngster" ;
+-îci-âyis:îci-âyis AN_KININFL "fellow youngster" ;
+-îci-atoskêyâkan:îci-atoskêyâkan AN_KININFL "fellow employee" ;
+-îci-ayisiyiniw:îci-ayisiyiniw AN_KININFL "fellow human" ;
+-îci-ayisiyinîm:îci-ayisiyinîm AN_KININFL "fellow human" ;
+-îci-kiskinwahamawâkan:îci-kiskinwahamawâkan AN_KININFL "fellow student" ;
+-îci-kisêyiniw:îci-kisêyiniw AN_KININFL "fellow old man" ;
+-îci-kîhkâw:îci-kîhkâw AN_KININFL "aged spouse" ;
+-îci-nahâhkis:îci-nahâhkis AN_KININFL "brother-in-law" ;
+-îci-nâpêw:îci-nâpêw AN_KININFL "fellow man" ;
+-îci-nêhiyaw:îci-nêhiyaw AN_KININFL "fellow Cree" ;
+-îci-nônimâkan:îci-nônimâkan AN_KININFL "foster sibling" ;
+-îcisân:îcisân AN_KININFL "sibling" ;
+-îcisânis:îcisânis AN_DIMPOSS "sibling" ; 
+-îscâs:îscâs AN_KININFL "male cross-cousin" ;
+-îskwa:îskwa AN_KININFL "fellow wife" ; !w
+-îstâw:îstâw AN_KININFL "male cross-cousin" ;
+-îtim:îtimw AN_KININFL "cross-cousin of the opposite gender" ;
+-îw:îw AN_KININFL "wife" ;
+-îwahikan:îwahikan AN_KININFL "pounded meat" ;
+-ohcâwîs:ôhcâwîs AN_KININFL "parallel uncle" ;
+-ohkomipan:ôhkomipan AN_KININFL "deceased grandmother" ;
+-ohkomis:ôhkomis AN_KININFL "uncle" ;
+-ohpan:ôhpan AN_KININFL "lung" ;
+-ohtâwîhkâwin:ôhtâwîhkâwin AN_KININFL "step-father" ;
+-ohtâwîpan:ôhtâwîpan AN_KININFL "deceased father" ;
 -skotâkay:iskotâkay IN_DEP_INIT_M "jacket" ; !OBS! 
 !mîkiwâhp+N+IN+Sg:mîkiwâhp NOPREFIX "home" ; !Okimasis:137
+-mistikom:imistikom IN_DEP_INIT_M "penis" ;
+-mwâhkohkêw:imwâhkohkêw IN_DEP_INIT_M "biceps" ;
+-nipîm:inipîm IN_DEP_INIT_M "urine" ;
+-nîkânim:inîkânîm IN_DEP_INIT_M "future" ;
+-pêminak:ipêminakw IN_DEP_INIT_M "shin" ; !-w-
+-pîhtawâwikanân:ipîhtawâwikanân IN_DEP_INIT_M "spinal chord" ;
+-sikwâkan:isikwâkan IN_DEP_INIT_M "back of knee" ;
+-soy:isoy IN_DEP_INIT_M "tail" ;
+-sêkitikom:isêkitikom IN_DEP_INIT_M "knotted hair" ;
+-sôs:isôs IN_DEP_INIT_M "little tail" ; !DIM
+-ostikwânim:itostikwânim IN_DEP_INIT_M "severed head" ;
+-ôsim:itôsim IN_DEP_INIT_M "boat" ;
+-îki:îki IN_DEP_INIT_M "home" ;
+-îkis:îkis IN_DEP_INIT_M "small home" ; !DIM
+-îni:îni IN_DEP_INIT_M "bone-marrow" ; 
+-îwas:îwas IN_DEP_INIT_M "sacred pack" ; 
+-itâmiyawa:titâmiyawa IN_DEP_INIT_M "sacred pack" ; 
 
 LEXICON DEP-M-INIT-STEMS ! dependent nouns
 !! @LEXNAME@ adds an affixmark and redirects to DEP-M-LIST 
@@ -4221,7 +4270,6 @@ LEXICON DEP-M-INIT-STEMS ! dependent nouns
 
 LEXICON DEP-M-LIST
 !! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
-mîkiwâhp:îki IN_DEP_INIT_M_SG "home" ; !GGI !Wolfart's list: wîkiwâhk, nîkinâhk !Okimasis p 137
 maniway:aniway IN_DEP_INIT_M_SG "cheek" ; !yaml !!= @CODE@	
 naniway:aniway IN_DEP_INIT_M_SG "cheek" ; !OAHPA	
 !maniway+N+IN+Sg:aniway NOPREFIX "cheek" ; !yaml !!= @CODE@	
