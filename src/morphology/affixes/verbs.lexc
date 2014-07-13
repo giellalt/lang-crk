@@ -34,8 +34,8 @@
 LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
 
 @U.mood.indep@ INDEPENDENT ;		 !!= * @CODE@
-@U.mood.cnj@   CONJUNCTIV ;		     !!= * @CODE@ 
-               IMPERATIV ;		     !!= * @CODE@
+@U.mood.cnj@   CONJUNCTIVE ;		     !!= * @CODE@ 
+               IMPERATIVE ;		     !!= * @CODE@
                FUTURE_CONDITIONAL ;  !!= * @CODE@
 
 
@@ -58,7 +58,7 @@ LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense
 LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
 @U.mood.FutCon@ VERBLIST ;
 
-LEXICON CONJUNCTIV !!= @CODE@ gives flag for conjunctive and prefix ê-
+LEXICON CONJUNCTIVE !!= @CODE@ gives flag for conjunctive and prefix ê-
 <  0:ê 0:%-       > CNJ_TENSE ; !
 <  0:ê 0:%^EGLOT   > CNJ_TENSE ; !
 
@@ -71,7 +71,7 @@ LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
 < 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" > VERBLIST ; ! Future Intentional
 
 
-LEXICON IMPERATIV   !!= @CODE@ gives flag for imperative (no prefixes)
+LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
 @U.mood.imp@  VERBLIST ;
 
 
