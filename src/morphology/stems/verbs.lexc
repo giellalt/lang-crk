@@ -33,57 +33,6 @@
 !! # TI: Transitive inanimate
 
 
-LEXICON VERBLIST  !!= @CODE@ just adds the prefix boundary
- :%> PREVERBS ;
-
-
-
-! ! Preverbs
-!     ==========
-
-
-!! Words marked GG are from Plains Cree Grammar guide and glossary
-
-! This and the next lexicon experiment with preverbs, Okimâsis p. 17.
-
-LEXICON PREVERBS   
-! VERBSTEMS ; ! business even more as usual
-PVSLOT2 ; ! business as usual
-!IASLOT2PRE ; ! preverbs
-! ati:ati	    IASLOT2PRE "begin" ;
-! nôhtê:nôhtê   IASLOT2PRE "want" ;
-! kakwê:kakwê   IASLOT2PRE "try" ;
-
-!LEXICON IASLOT2PRE
-!IASLOT2 ;
-! %-:%- IASLOT2 ;
-
-LEXICON PVSLOT2
-< "@U.preverb.NULL@" > VERBSTEMS ; ! business as usual
-< 0:a 0:t 0:i 0:%- "@U.preverb.ati@" > VERBSTEMSPRE "begin" ;
-< 0:n 0:ô 0:h 0:t 0:ê 0:%- "@U.preverb.nohte@" > VERBSTEMSPRE "want" ;
-< 0:k 0:a 0:k 0:w 0:ê 0:%- "@U.preverb.kakwe@" > VERBSTEMSPRE "try" ;
-< 0:m 0:â 0:c 0:i 0:%- "@U.preverb.maci@" > VERBSTEMSPRE "begin" ;
-< 0:n 0:i 0:h 0:t 0:â 0:%- "@U.preverb.nihta@" >  VERBSTEMSPRE "have the ability to do well" ;
-< 0:p 0:ê 0:y 0:a 0:k 0:o 0:%- "@U.preverb.peyako@" >  VERBSTEMSPRE "only" ;
-< 0:p 0:ô 0:n 0:i 0:%- "@U.preverb.poni@" >   VERBSTEMSPRE "stop" ;
-< 0:n 0:i 0:t 0:a 0:w 0:i 0:%- "@U.preverb.nitowi@" > VERBSTEMSPRE "go and" ;
-< 0:p 0:ê 0:%- "@U.preverb.pe@" > VERBSTEMSPRE "toward speaker" ;
-< 0:m 0:ê 0:c 0:î 0:%- "@U.preverb.moci@" > VERBSTEMSPRE "toward speaker" ;
-< 0:s 0:â 0:p 0:o 0:%- "@U.preverb.sapo@" >  VERBSTEMSPRE "through" ;
-< 0:y 0:ô 0:s 0:k 0:i 0:%- "@U.preverb.yoski@" > VERBSTEMSPRE "soft" ;
-< 0:m 0:i 0:y 0:o 0:%- "@U.preverb.miyo@" > VERBSTEMSPRE "well" ;
-< 0:m 0:â 0:y 0:i 0:%- "@U.preverb.mayi@" > VERBSTEMSPRE "bad" ;
-< 0:s 0:ô 0:h 0:k 0:i 0:%- "@U.preverb.sohki@" > VERBSTEMSPRE "hard" ;
-< 0:p 0:i 0:s 0:c 0:i 0:%- "@U.preverb.pisci@" > VERBSTEMSPRE "by mistake" ;
-< 0:k 0:i 0:h 0:c 0:i 0:%- "@U.preverb.kihci@" > VERBSTEMSPRE "large" ;
-
-LEXICON VERBSTEMSPRE
-VERBSTEMS ;
-!-:%- VERBSTEMS ;
-
-
-
 ! The stems
 !     ==========
 
@@ -4819,9 +4768,11 @@ pimâmon IICONJ ; !Wolv  OBS: â or a ?
 yôtin IICONJ-SG "it is windy" ; !Der/Dim yôcisin
 sôhkiyowêw:sôhkiyowê IICONJw-SG "it is a strong wind" ;
 sîkipêstâw:sîkipêstâ IICONJw-SG "it is pouring" ; !*sîkipêscâsin Der/Dim
+kîskatâwahkâw:kîskatâwahkâ IICONJw-SG "it is a steep river bank; it is an abrupt drop, it is a long way down" ;
 kaskaniwipêscâsin IICONJ-SG "it is misty" ; !diminutive form   Der/Dim
 miywâsin IICONJ "it is good" ; !yaml !Wolv !frozen diminutive form
 mihkwâw:mihkwâ IICONJw "it is red" ; !yaml
+ispâw:ispâ IICONJw "it is high, it is so high, it is so tall" ;
 ayâw:ayâ IICONJw "it is, it is there" ; ! Independent, 0s 
 
 !LEXICON TASTEM 
@@ -7279,8 +7230,11 @@ yôwamêw:yôwam TACONJ_1 "s/he draws at s.o. by suction" ; ! VTA-1
 ! Wolvengrey VTA dump END
 
 !LEXICON TISTEM  !VTI
+sâkwêyihtam:sâkwêyihta TICONJa "s/he fears s.t. to is too difficult" ;
+mamihcihta TICONJa "s/he praises s.t." ;
 nisitohta TICONJa "understand" ;
 nitohta TICONJa "listen" ;
+otihtaham:otihtaha TICONJa "s/he reaches s.t." ;
 wâpahta TICONJa ;
 mîci TICONJ ;
 katâ TICONJ ;
