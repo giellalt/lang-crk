@@ -75,6 +75,52 @@ LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
 @U.mood.imp@  VERBLIST ;
 
 
+! ! Preverbs
+!     ==========
+
+LEXICON VERBLIST  !!= @CODE@ just adds the prefix boundary
+ :%> PREVERBS ;
+
+!! Words marked GG are from Plains Cree Grammar guide and glossary
+
+! This and the next lexicon experiment with preverbs, Okimâsis p. 17.
+
+LEXICON PREVERBS   
+! VERBSTEMS ; ! business even more as usual
+PVSLOT2 ; ! business as usual
+!IASLOT2PRE ; ! preverbs
+! ati:ati	    IASLOT2PRE "begin" ;
+! nôhtê:nôhtê   IASLOT2PRE "want" ;
+! kakwê:kakwê   IASLOT2PRE "try" ;
+
+!LEXICON IASLOT2PRE
+!IASLOT2 ;
+! %-:%- IASLOT2 ;
+
+LEXICON PVSLOT2
+< "@U.preverb.NULL@" > VERBSTEMS ; ! business as usual
+< 0:a 0:t 0:i "@U.preverb.ati@" > VERBSTEMSPRE "begin" ;
+< 0:n 0:ô 0:h 0:t 0:ê "@U.preverb.nohte@" > VERBSTEMSPRE "want" ;
+< 0:k 0:a 0:k 0:w 0:ê "@U.preverb.kakwe@" > VERBSTEMSPRE "try" ;
+< 0:m 0:â 0:c 0:i "@U.preverb.maci@" > VERBSTEMSPRE "begin" ;
+< 0:n 0:i 0:h 0:t 0:â "@U.preverb.nihta@" >  VERBSTEMSPRE "have the ability to do well" ;
+< 0:p 0:ê 0:y 0:a 0:k 0:o "@U.preverb.peyako@" >  VERBSTEMSPRE "only" ;
+< 0:p 0:ô 0:n 0:i "@U.preverb.poni@" >   VERBSTEMSPRE "stop" ;
+< 0:n 0:i 0:t 0:o 0:w 0:i "@U.preverb.nitowi@" > VERBSTEMSPRE "go and" ;
+< 0:p 0:ê "@U.preverb.pe@" > VERBSTEMSPRE "toward speaker" ;
+< 0:m 0:ê 0:c 0:î "@U.preverb.moci@" > VERBSTEMSPRE "toward speaker" ;
+< 0:s 0:â 0:p 0:o "@U.preverb.sapo@" >  VERBSTEMSPRE "through" ;
+< 0:y 0:ô 0:s 0:k 0:i "@U.preverb.yoski@" > VERBSTEMSPRE "soft" ;
+< 0:m 0:i 0:y 0:o "@U.preverb.miyo@" > VERBSTEMSPRE "well" ;
+< 0:m 0:â 0:y 0:i "@U.preverb.mayi@" > VERBSTEMSPRE "bad" ;
+< 0:s 0:ô 0:h 0:k 0:i "@U.preverb.sohki@" > VERBSTEMSPRE "hard" ;
+< 0:p 0:i 0:s 0:c 0:i "@U.preverb.pisci@" > VERBSTEMSPRE "by mistake" ;
+< 0:k 0:i 0:h 0:c 0:i "@U.preverb.kihci@" > VERBSTEMSPRE "large" ;
+
+LEXICON VERBSTEMSPRE
+0:%- VERBSTEMS ;
+VERBSTEMS ;
+
 !! Now, lexc directs us to the ../stems/verbs.lexc file,
 !! where we find all the verbal stems. The suffixes are then
 !! found in the section "Suffixes" right underneath.
@@ -809,15 +855,55 @@ LEXICON 12Pl_Imp
 !     =========================
 !     =========================
 
+LEXICON TICONJa
+< "@U.preverb.NULL@" > TICONJa-MAIN ;
+< "+PV/ati":0 "@U.preverb.ati@" > TICONJa-MAIN ;
+< "+PV/nohte":0 "@U.preverb.nohte@" > TICONJa-MAIN ;
+< "+PV/kakwe":0 "@U.preverb.kakwe@" > TICONJa-MAIN ;
+< "+PV/maci":0 "@U.preverb.maci@" > TICONJa-MAIN ;
+< "+PV/nihta":0 "@U.preverb.nihta@" > TICONJa-MAIN ;
+< "+PV/peyako":0 "@U.preverb.peyako@" > TICONJa-MAIN ;
+< "+PV/poni":0 "@U.preverb.poni@" > TICONJa-MAIN ;
+< "+PV/nitowi":0 "@U.preverb.nitowi@" > TICONJa-MAIN ;
+< "+PV/pe":0 "@U.preverb.pe@" > TICONJa-MAIN ;
+< "+PV/moci":0 "@U.preverb.moci@" > TICONJa-MAIN ;
+< "+PV/sapo":0 "@U.preverb.sapo@" > TICONJa-MAIN ;
+< "+PV/yoski":0 "@U.preverb.yoski@" > TICONJa-MAIN ;
+< "+PV/miyo":0 "@U.preverb.miyo@" > TICONJa-MAIN ;
+< "+PV/mayi":0 "@U.preverb.mayi@" > TICONJa-MAIN ;
+< "+PV/sohki":0 "@U.preverb.sohki@" > TICONJa-MAIN ;
+< "+PV/pisci":0 "@U.preverb.pisci@" > TICONJa-MAIN ;
+< "+PV/kihci":0 "@U.preverb.kihci@" > TICONJa-MAIN ;
 
-LEXICON TICONJa  !!= * @CODE@
+LEXICON TICONJ
+< "@U.preverb.NULL@" > TICONJ-MAIN ;
+< "+PV/ati":0 "@U.preverb.ati@" > TICONJ-MAIN ;
+< "+PV/nohte":0 "@U.preverb.nohte@" > TICONJ-MAIN ;
+< "+PV/kakwe":0 "@U.preverb.kakwe@" > TICONJ-MAIN ;
+< "+PV/maci":0 "@U.preverb.maci@" > TICONJ-MAIN ;
+< "+PV/nihta":0 "@U.preverb.nihta@" > TICONJ-MAIN ;
+< "+PV/peyako":0 "@U.preverb.peyako@" > TICONJ-MAIN ;
+< "+PV/poni":0 "@U.preverb.poni@" > TICONJ-MAIN ;
+< "+PV/nitowi":0 "@U.preverb.nitowi@" > TICONJ-MAIN ;
+< "+PV/pe":0 "@U.preverb.pe@" > TICONJ-MAIN ;
+< "+PV/moci":0 "@U.preverb.moci@" > TICONJ-MAIN ;
+< "+PV/sapo":0 "@U.preverb.sapo@" > TICONJ-MAIN ;
+< "+PV/yoski":0 "@U.preverb.yoski@" > TICONJ-MAIN ;
+< "+PV/miyo":0 "@U.preverb.miyo@" > TICONJ-MAIN ;
+< "+PV/mayi":0 "@U.preverb.mayi@" > TICONJ-MAIN ;
+< "+PV/sohki":0 "@U.preverb.sohki@" > TICONJ-MAIN ;
+< "+PV/pisci":0 "@U.preverb.pisci@" > TICONJ-MAIN ;
+< "+PV/kihci":0 "@U.preverb.kihci@" > TICONJ-MAIN ;
+
+
+LEXICON TICONJa-MAIN  !!= * @CODE@
 < "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TI: TICONJ-CONTa ;
 
  
-LEXICON TICONJ  !!= * @CODE@ adds baseform and directs to IACONJ-CONT
+LEXICON TICONJ-MAIN  !!= * @CODE@ adds baseform and directs to IACONJ-CONT
 < "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
-+V+TI: IACONJ-CONT ; 
++V+TI: TICONJ-CONT ; 
 
 
 LEXICON TICONJ-CONTa !!= * @CODE@
@@ -907,6 +993,3 @@ LEXICON TI_imp-long-E !!= * @CODE@
 +Imm+2Sg:%>mohkan  # ; !
 +Imm+12Pl:%>mohkahk	  # ; !
 +Imm+2Pl:%>mohkek   # ; !
-
-
-
