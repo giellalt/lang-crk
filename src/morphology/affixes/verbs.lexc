@@ -116,6 +116,7 @@ LEXICON PVSLOT2
 < 0:s 0:ô 0:h 0:k 0:i "@U.preverb.sohki@" > VERBSTEMSPRE "hard" ;
 < 0:p 0:i 0:s 0:c 0:i "@U.preverb.pisci@" > VERBSTEMSPRE "by mistake" ;
 < 0:k 0:i 0:h 0:c 0:i "@U.preverb.kihci@" > VERBSTEMSPRE "large" ;
+< 0:n 0:i 0:t 0:a 0:w 0:i "@U.preverb.nitawi@" > VERBSTEMSPRE "go and, go to; engaged in" ;
 
 LEXICON VERBSTEMSPRE
 0:%- VERBSTEMS ;
@@ -191,6 +192,7 @@ LEXICON IACONJ
 < "+PV/sohki":0 "@U.preverb.sohki@" > IACONJ-MAIN ;
 < "+PV/pisci":0 "@U.preverb.pisci@" > IACONJ-MAIN ;
 < "+PV/kihci":0 "@U.preverb.kihci@" > IACONJ-MAIN ;
+< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
 
 
 LEXICON IACONJw
@@ -212,6 +214,7 @@ LEXICON IACONJw
 < "+PV/sohki":0 "@U.preverb.sohki@" > IACONJw-MAIN ;
 < "+PV/pisci":0 "@U.preverb.pisci@" > IACONJw-MAIN ;
 < "+PV/kihci":0 "@U.preverb.kihci@" > IACONJw-MAIN ;
+< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
 
 LEXICON IACONJn
 < "@U.preverb.NULL@" > IACONJn-MAIN ;
@@ -232,6 +235,7 @@ LEXICON IACONJn
 < "+PV/sohki":0 "@U.preverb.sohki@" > IACONJn-MAIN ;
 < "+PV/pisci":0 "@U.preverb.pisci@" > IACONJn-MAIN ;
 < "+PV/kihci":0 "@U.preverb.kihci@" > IACONJn-MAIN ;
+< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
 
 
 !! !!! Intransitive animate (IA)
@@ -576,6 +580,7 @@ LEXICON TACONJ_1
 < "+PV/sohki":0 "@U.preverb.sohki@" > TACONJ_1-MAIN ;
 < "+PV/pisci":0 "@U.preverb.pisci@" > TACONJ_1-MAIN ;
 < "+PV/kihci":0 "@U.preverb.kihci@" > TACONJ_1-MAIN ;
+< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
 
 LEXICON TACONJ_2
 < "@U.preverb.NULL@" > TACONJ_2-MAIN ;
@@ -596,6 +601,7 @@ LEXICON TACONJ_2
 < "+PV/sohki":0 "@U.preverb.sohki@" > TACONJ_2-MAIN ;
 < "+PV/pisci":0 "@U.preverb.pisci@" > TACONJ_2-MAIN ;
 < "+PV/kihci":0 "@U.preverb.kihci@" > TACONJ_2-MAIN ;
+< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
 
 LEXICON TACONJ_5
 < "@U.preverb.NULL@" > TACONJ_5-MAIN ;
@@ -616,6 +622,7 @@ LEXICON TACONJ_5
 < "+PV/sohki":0 "@U.preverb.sohki@" > TACONJ_5-MAIN ;
 < "+PV/pisci":0 "@U.preverb.pisci@" > TACONJ_5-MAIN ;
 < "+PV/kihci":0 "@U.preverb.kihci@" > TACONJ_5-MAIN ;
+< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
 
 
 ! Main verb stems
@@ -874,6 +881,7 @@ LEXICON TICONJa
 < "+PV/sohki":0 "@U.preverb.sohki@" > TICONJa-MAIN ;
 < "+PV/pisci":0 "@U.preverb.pisci@" > TICONJa-MAIN ;
 < "+PV/kihci":0 "@U.preverb.kihci@" > TICONJa-MAIN ;
+< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
 
 LEXICON TICONJ
 < "@U.preverb.NULL@" > TICONJ-MAIN ;
@@ -894,6 +902,7 @@ LEXICON TICONJ
 < "+PV/sohki":0 "@U.preverb.sohki@" > TICONJ-MAIN ;
 < "+PV/pisci":0 "@U.preverb.pisci@" > TICONJ-MAIN ;
 < "+PV/kihci":0 "@U.preverb.kihci@" > TICONJ-MAIN ;
+< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
 
 
 LEXICON TICONJa-MAIN  !!= * @CODE@
