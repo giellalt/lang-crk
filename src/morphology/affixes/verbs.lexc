@@ -99,6 +99,257 @@ PVSLOT2 ; ! business as usual
 
 LEXICON PVSLOT2
 < "@U.preverb.NULL@" > VERBSTEMS ; ! business as usual
+!< 0:a 0:c 0:i 0:c 0:i "@U.preverb.acici@" > VERBSTEMSPRE "head down; upside down" ; ! Position
+!< 0:a 0:h 0:c 0:a 0:h 0:k 0:o 0:w 0:i "@U.preverb.ahcahkowi@" > VERBSTEMSPRE "spiritual" ; ! Spirituality
+!< 0:a 0:k 0:â 0:w 0:â 0:c 0:i "@U.preverb.akawaci@" > VERBSTEMSPRE "wishfully" ; ! Manner
+!< 0:a 0:k 0:o "@U.preverb.ako@" > VERBSTEMSPRE "sticking on; attached" ;
+!< 0:a 0:k 0:o 0:c 0:i "@U.preverb.akoci@" > VERBSTEMSPRE "hanging" ; ! Position
+!< 0:a 0:p 0:i 0:h 0:c 0:i "@U.preverb.apihci@" > VERBSTEMSPRE "small" ; ! Size
+!< 0:a 0:p 0:i 0:s 0:c 0:i "@U.preverb.apisci@" > VERBSTEMSPRE "small, little" ; ! Size
+!< 0:a 0:p 0:i 0:s 0:i "@U.preverb.apisi@" > VERBSTEMSPRE "small, tiny" ; ! Size
+!< 0:a 0:p 0:i 0:s 0:î 0:s 0:i "@U.preverb.apisisi@" > VERBSTEMSPRE "small" ; ! Size
+!< 0:a 0:s 0:ê "@U.preverb.ase@" > VERBSTEMSPRE "backwards, back, motion going backwards" ;
+!< 0:a 0:s 0:ê 0:y 0:a "@U.preverb.aseya@" > VERBSTEMSPRE "in a group" ;
+!< 0:a 0:t 0:i "@U.preverb.ati@" > VERBSTEMSPRE "begin to, beginning; progressively, proceed to, going on, progressing; on the way" ;
+!< 0:a 0:t 0:i 0:m 0:i "@U.preverb.atimi@" > VERBSTEMSPRE "going away from speaker, towards addressee" ;
+!< 0:a 0:y 0:a 0:m 0:i 0:h 0:â 0:w 0:i "@U.preverb.ayamihawi@" > VERBSTEMSPRE "prayer, pertaining to Christian prayer; of the Christian religion, of church" ;
+!< 0:a 0:y 0:a 0:m 0:i 0:h 0:ê 0:w 0:i "@U.preverb.ayamihewi@" > VERBSTEMSPRE "of the Christian religion, of church" ;
+!< 0:a 0:y 0:â 0:s 0:ô "@U.preverb.ayaso@" > VERBSTEMSPRE "a little here and there" ;
+!< 0:a 0:y 0:i "@U.preverb.ayi@" > VERBSTEMSPRE "ah, hm" ;
+!< 0:â 0:h 0:c 0:i "@U.preverb.ahci@" > VERBSTEMSPRE "to a different place" ;
+!< 0:â 0:h 0:k 0:a 0:m 0:i "@U.preverb.ahkami@" > VERBSTEMSPRE "persistently, untiringly, unfailingly, unceasingly, unwaveringly; keep on, persevere" ;
+!< 0:â 0:k 0:ô "@U.preverb.ako@" > VERBSTEMSPRE "covered, shielded" ;
+!< 0:â 0:k 0:w 0:â "@U.preverb.akwa@" > VERBSTEMSPRE "quite a lot; well on its way, in progress of time" ;
+!< 0:â 0:m 0:i "@U.preverb.ami@" > VERBSTEMSPRE "almost" ;
+!< 0:â 0:n 0:i 0:s 0:k 0:i "@U.preverb.aniski@" > VERBSTEMSPRE "succession, extension" ;
+!< 0:â 0:p 0:i 0:h 0:c 0:i "@U.preverb.apihci@" > VERBSTEMSPRE "halfway" ;
+!< 0:â 0:p 0:i 0:h 0:t 0:a 0:w 0:i "@U.preverb.apihtawi@" > VERBSTEMSPRE "half" ;
+!< 0:â 0:p 0:i 0:h 0:t 0:â "@U.preverb.apihta@" > VERBSTEMSPRE "half" ;
+!< 0:â 0:p 0:i 0:h 0:t 0:â 0:%- 0:k 0:î 0:s 0:i 0:k 0:â 0:w 0:i "@U.preverb.apihta-kisikawi@" > VERBSTEMSPRE "at noon" ;
+!< 0:â 0:s 0:a 0:w 0:i "@U.preverb.asawi@" > VERBSTEMSPRE "in passing something on" ;
+!< 0:â 0:s 0:ê "@U.preverb.ase@" > VERBSTEMSPRE "see: asê-" ;
+!< 0:â 0:s 0:o 0:w 0:i "@U.preverb.asowi@" > VERBSTEMSPRE "in turn, in succession" ;
+!< 0:â 0:s 0:t 0:ê "@U.preverb.aste@" > VERBSTEMSPRE "ceasing; quit" ;
+!< 0:â 0:t 0:a "@U.preverb.ata@" > VERBSTEMSPRE "although, in vain" ;
+!< 0:â 0:y 0:î 0:c 0:i "@U.preverb.ayici@" > VERBSTEMSPRE "firmly, tightly" ;
+!< 0:c 0:î 0:p 0:ê 0:h 0:t 0:a 0:k 0:o "@U.preverb.cipehtako@" > VERBSTEMSPRE "blue, greyish blue, grey" ;
+!< 0:ê "@U.preverb.e@" > VERBSTEMSPRE "[grammatical preverb: complementizer; defines a changed conjunct clause]" ;
+!< 0:i 0:s 0:i "@U.preverb.isi@" > VERBSTEMSPRE "so, this way, thus, thither, such" ;
+!< 0:i 0:s 0:k 0:o "@U.preverb.isko@" > VERBSTEMSPRE "so far, to such an extent" ;
+!< 0:i 0:s 0:p 0:i "@U.preverb.ispi@" > VERBSTEMSPRE "then, when" ;
+!< 0:i 0:s 0:p 0:î 0:h 0:c 0:i "@U.preverb.ispihci@" > VERBSTEMSPRE "meanwhile, beforehand" ;
+!< 0:i 0:t 0:a 0:h 0:t 0:o "@U.preverb.itahto@" > VERBSTEMSPRE "in such number" ;
+!< 0:î 0:k 0:a 0:t 0:ê "@U.preverb.ikate@" > VERBSTEMSPRE "aside, off to one side" ;
+!< 0:k 0:a "@U.preverb.ka@" > VERBSTEMSPRE "grammatical preverb: future; will, shall; infinitive; optative; ought, should" ;
+!< 0:k 0:a 0:%- 0:k 0:î "@U.preverb.ka-ki@" > VERBSTEMSPRE "can, be able to; may; should, ought to" ;
+!< 0:k 0:a 0:k 0:ê 0:p 0:â 0:c 0:i "@U.preverb.kakepaci@" > VERBSTEMSPRE "stupidly" ;
+!< 0:k 0:a 0:k 0:w 0:â 0:h 0:y 0:a 0:k 0:i "@U.preverb.kakwahyaki@" > VERBSTEMSPRE "greatly, extremely, overwhelmingly; with startled surprise" ;
+!< 0:k 0:a 0:k 0:w 0:â 0:y 0:a 0:k 0:i "@U.preverb.kakwayaki@" > VERBSTEMSPRE "greatly, extremely" ;
+!< 0:k 0:a 0:k 0:w 0:ê "@U.preverb.kakwe@" > VERBSTEMSPRE "try to, attempt to" ;
+!< 0:k 0:a 0:k 0:w 0:ê 0:c 0:i "@U.preverb.kakweci@" > VERBSTEMSPRE "inquire" ;
+!< 0:k 0:a 0:n 0:â 0:c 0:i "@U.preverb.kanaci@" > VERBSTEMSPRE "clean" ;
+!< 0:k 0:a 0:p 0:ê "@U.preverb.kape@" > VERBSTEMSPRE "for the full duration of; always" ;
+!< 0:k 0:a 0:s 0:k 0:i "@U.preverb.kaski@" > VERBSTEMSPRE "dense" ;
+!< 0:k 0:a 0:s 0:k 0:i 0:t 0:ê 0:w 0:i "@U.preverb.kaskitewi@" > VERBSTEMSPRE "black" ;
+!< 0:k 0:a 0:y 0:â 0:s 0:i "@U.preverb.kayasi@" > VERBSTEMSPRE "old" ;
+!< 0:k 0:â "@U.preverb.ka@" > VERBSTEMSPRE "[grammatical preverb; defines a changed conjunct clause; often a relative clause, i.e. who, which]" ;
+!< 0:k 0:â 0:h "@U.preverb.kah@" > VERBSTEMSPRE "would, ought to; likely to" ;
+!< 0:k 0:â 0:h 0:%- 0:k 0:a 0:p 0:ê "@U.preverb.kah-kape@" > VERBSTEMSPRE "all the time" ;
+!< 0:k 0:â 0:m 0:w 0:â 0:c 0:i "@U.preverb.kamwaci@" > VERBSTEMSPRE "quietly" ;
+!< 0:k 0:â 0:s 0:p 0:i "@U.preverb.kaspi@" > VERBSTEMSPRE "crunching" ;
+!< 0:k 0:â 0:w 0:i "@U.preverb.kawi@" > VERBSTEMSPRE "again; back, in return" ;
+!< 0:k 0:ê "@U.preverb.ke@" > VERBSTEMSPRE "grammatical preverb; future, conditional: shall; defines a changed conjunct clause" ;
+!< 0:k 0:ê 0:k 0:â 0:c 0:i "@U.preverb.kekaci@" > VERBSTEMSPRE "almost" ;
+!< 0:k 0:ê 0:t "@U.preverb.ket@" > VERBSTEMSPRE "take off, remove" ;
+!< 0:k 0:ê 0:t 0:i 0:s 0:k 0:i "@U.preverb.ketiski@" > VERBSTEMSPRE "to exact measure" ;
+!< 0:k 0:i 0:c 0:i "@U.preverb.kici@" > VERBSTEMSPRE "so that" ;
+!< 0:k 0:i 0:h 0:c 0:i "@U.preverb.kihci@" > VERBSTEMSPRE "great, big, important" ;
+!< 0:k 0:i 0:k 0:a "@U.preverb.kika@" > VERBSTEMSPRE "grammatical preverb; future; defines a conjunct clause" ;
+!< 0:k 0:i 0:p 0:i "@U.preverb.kipi@" > VERBSTEMSPRE "blocking" ;
+!< 0:k 0:i 0:s 0:c 0:i "@U.preverb.kisci@" > VERBSTEMSPRE "big" ;
+!< 0:k 0:i 0:s 0:ê "@U.preverb.kise@" > VERBSTEMSPRE "great, gentle" ;
+!< 0:k 0:i 0:s 0:i 0:p 0:i "@U.preverb.kisipi@" > VERBSTEMSPRE "end, finish, ending" ;
+!< 0:k 0:i 0:s 0:i 0:s 0:k 0:â "@U.preverb.kisiska@" > VERBSTEMSPRE "fast, quickly" ;
+!< 0:k 0:i 0:s 0:i 0:w 0:i "@U.preverb.kisiwi@" > VERBSTEMSPRE "anger" ;
+!< 0:k 0:i 0:s 0:î 0:w 0:i "@U.preverb.kisiwi@" > VERBSTEMSPRE "angrily, in anger" ;
+!< 0:k 0:i 0:t 0:a "@U.preverb.kita@" > VERBSTEMSPRE "[grammatical preverb]; future: will, shall; infinitive; optative: ought, should" ;
+!< 0:k 0:i 0:t 0:a 0:%- 0:k 0:î "@U.preverb.kita-ki@" > VERBSTEMSPRE "can, be able to; may; ought to" ;
+!< 0:k 0:i 0:t 0:i 0:m 0:â 0:k 0:i "@U.preverb.kitimaki@" > VERBSTEMSPRE "pitiable, pitiably" ;
+!< 0:k 0:i 0:y 0:ê "@U.preverb.kiye@" > VERBSTEMSPRE "[grammatical preverb; future; in changed conjunct clauses]" ;
+!< 0:k 0:i 0:y 0:i "@U.preverb.kiyi@" > VERBSTEMSPRE "[grammatical preverb; future; defines a conjunct clause]" ;
+!< 0:k 0:î "@U.preverb.ki@" > VERBSTEMSPRE "[grammatical preverb; past, completion]" ;
+!< 0:k 0:î 0:m 0:ô 0:c 0:i "@U.preverb.kimoci@" > VERBSTEMSPRE "secretly, by stealth" ;
+!< 0:k 0:î 0:p 0:i "@U.preverb.kipi@" > VERBSTEMSPRE "quickly" ;
+!< 0:k 0:î 0:s 0:i "@U.preverb.kisi@" > VERBSTEMSPRE "finish; completely, to completion; completing, having done" ;
+!< 0:k 0:î 0:s 0:k 0:i "@U.preverb.kiski@" > VERBSTEMSPRE "severing, breaking, cutting off" ;
+!< 0:k 0:î 0:s 0:o 0:p 0:w 0:ê "@U.preverb.kisopwe@" > VERBSTEMSPRE "with hot weather" ;
+!< 0:k 0:î 0:w 0:â 0:c 0:i "@U.preverb.kiwaci@" > VERBSTEMSPRE "orphaned, stray; lonely, desolately" ;
+!< 0:k 0:î 0:w 0:ê "@U.preverb.kiwe@" > VERBSTEMSPRE "back, homeward" ;
+!< 0:k 0:o 0:c 0:i "@U.preverb.koci@" > VERBSTEMSPRE "try to" ;
+!< 0:k 0:ô 0:t 0:a "@U.preverb.kota@" > VERBSTEMSPRE "long for, be deprived of" ;
+!< 0:k 0:ô 0:t 0:a 0:t 0:ê "@U.preverb.kotate@" > VERBSTEMSPRE "at a loss, making no attempt" ;
+!< 0:k 0:w 0:a 0:t 0:a 0:k 0:i "@U.preverb.kwataki@" > VERBSTEMSPRE "distressing, tormenting, tortuous" ;
+!< 0:k 0:w 0:a 0:y 0:a 0:k 0:o "@U.preverb.kwayako@" > VERBSTEMSPRE "taking out, directly" ;
+!< 0:k 0:w 0:a 0:y 0:a 0:s 0:k 0:i "@U.preverb.kwayaski@" > VERBSTEMSPRE "properly" ;
+!< 0:k 0:w 0:a 0:y 0:a 0:s 0:k 0:o "@U.preverb.kwayasko@" > VERBSTEMSPRE "straight; properly, correctly" ;
+!< 0:k 0:w 0:a 0:y 0:â 0:c 0:i "@U.preverb.kwayaci@" > VERBSTEMSPRE "in readiness, already; in preparation; beforehand" ;
+!< 0:k 0:w 0:â 0:h 0:c 0:i "@U.preverb.kwahci@" > VERBSTEMSPRE "far off" ;
+!< 0:k 0:w 0:â 0:s 0:k 0:w 0:ê "@U.preverb.kwaskwe@" > VERBSTEMSPRE "upwards" ;
+!< 0:k 0:w 0:â 0:t 0:a 0:k 0:i "@U.preverb.kwataki@" > VERBSTEMSPRE "distressing, tormenting, tortuous" ;
+!< 0:k 0:w 0:ê 0:s 0:k 0:i "@U.preverb.kweski@" > VERBSTEMSPRE "turning" ;
+!< 0:k 0:w 0:ê 0:t 0:a 0:w 0:i "@U.preverb.kwetawi@" > VERBSTEMSPRE "doubtful" ;
+!< 0:k 0:w 0:î 0:t 0:a 0:w 0:i "@U.preverb.kwitawi@" > VERBSTEMSPRE "impatiently" ;
+!< 0:m 0:a 0:c 0:i "@U.preverb.maci@" > VERBSTEMSPRE "bad, evil, wicked, wrong, ill" ;
+!< 0:m 0:a 0:c 0:i 0:%- 0:m 0:a 0:n 0:i 0:t 0:o 0:w 0:i "@U.preverb.maci-manitowi@" > VERBSTEMSPRE "evil, devilish; Devil's" ;
+!< 0:m 0:a 0:n 0:â "@U.preverb.mana@" > VERBSTEMSPRE "beware of, careful not to, avoid doing" ;
+!< 0:m 0:a 0:n 0:i "@U.preverb.mani@" > VERBSTEMSPRE "with the intent of, with the purpose of" ;
+!< 0:m 0:a 0:s 0:t 0:â "@U.preverb.masta@" > VERBSTEMSPRE "later" ;
+!< 0:m 0:a 0:t 0:w 0:ê "@U.preverb.matwe@" > VERBSTEMSPRE "audibly, visibly; perceptibly; loudly; heard or seen from a distance" ;
+!< 0:m 0:â 0:c 0:i "@U.preverb.maci@" > VERBSTEMSPRE "begin to, start to; commencement; initially" ;
+!< 0:m 0:â 0:h 0:i "@U.preverb.mahi@" > VERBSTEMSPRE "downstream" ;
+!< 0:m 0:â 0:m 0:a 0:w 0:i "@U.preverb.mamawi@" > VERBSTEMSPRE "together; in full number of them all, altogether, all together as a group" ;
+!< 0:m 0:â 0:n 0:i 0:n 0:â 0:k 0:i 0:s 0:k 0:o "@U.preverb.maninakisko@" > VERBSTEMSPRE "without hesitation, entirely" ;
+!< 0:m 0:â 0:s 0:k 0:i "@U.preverb.maski@" > VERBSTEMSPRE "crippled; defective, deformed" ;
+!< 0:m 0:â 0:y 0:â 0:c 0:i "@U.preverb.mayaci@" > VERBSTEMSPRE "bad" ;
+!< 0:m 0:â 0:y 0:i "@U.preverb.mayi@" > VERBSTEMSPRE "bad, evil; badly, evilly, wickedly" ;
+!< 0:m 0:ê 0:c 0:i 0:m 0:w 0:â 0:c 0:i "@U.preverb.mecimwaci@" > VERBSTEMSPRE "permanently, for good" ;
+!< 0:m 0:ê 0:k 0:w 0:â "@U.preverb.mekwa@" > VERBSTEMSPRE "currently, presently, right now; while, during, in the meantime, in the act or place" ;
+!< 0:m 0:ê 0:s 0:c 0:i "@U.preverb.mesci@" > VERBSTEMSPRE "exhaustively, till all is gone" ;
+!< 0:m 0:ê 0:s 0:t 0:i "@U.preverb.mesti@" > VERBSTEMSPRE "it is used up, it is burnt out, it is spent" ;
+!< 0:m 0:i 0:h 0:k 0:o "@U.preverb.mihko@" > VERBSTEMSPRE "red" ;
+!< 0:m 0:i 0:h 0:y 0:a 0:w 0:ê "@U.preverb.mihyawe@" > VERBSTEMSPRE "with fur or body hair" ;
+!< 0:m 0:i 0:s 0:a 0:k 0:â 0:m 0:ê "@U.preverb.misakame@" > VERBSTEMSPRE "all the way" ;
+!< 0:m 0:i 0:s 0:i "@U.preverb.misi@" > VERBSTEMSPRE "big, greatly; much, a lot; very, extremely, to the extreme" ;
+!< 0:m 0:i 0:s 0:t 0:i 0:k 0:o "@U.preverb.mistiko@" > VERBSTEMSPRE "wood, of wood, wooden" ;
+!< 0:m 0:i 0:y 0:o "@U.preverb.miyo@" > VERBSTEMSPRE "good, well, beautifully" ;
+!< 0:m 0:o 0:s 0:c 0:i "@U.preverb.mosci@" > VERBSTEMSPRE "just, merely, plainly, simply, directly, without mediation, without instrumentality; by hand" ;
+!< 0:m 0:ô 0:h 0:c 0:o "@U.preverb.mohco@" > VERBSTEMSPRE "silly, crazy" ;
+!< 0:m 0:w 0:a 0:y 0:î "@U.preverb.mwayi@" > VERBSTEMSPRE "before, prior to" ;
+!< 0:n 0:a 0:h 0:i "@U.preverb.nahi@" > VERBSTEMSPRE "well, fair" ;
+!< 0:n 0:a 0:h 0:t 0:â "@U.preverb.nahta@" > VERBSTEMSPRE "able; good at, competent, practised, experienced, skillful at, expert at, known as one who does s.t. habitually; well" ;
+!< 0:n 0:a 0:k 0:i "@U.preverb.naki@" > VERBSTEMSPRE "stopping" ;
+!< 0:n 0:a 0:p 0:a 0:k 0:i "@U.preverb.napaki@" > VERBSTEMSPRE "flat" ;
+!< 0:n 0:a 0:s 0:p 0:â 0:c 0:i "@U.preverb.naspaci@" > VERBSTEMSPRE "opposite, contrarily" ;
+!< 0:n 0:a 0:t 0:a 0:w 0:i "@U.preverb.natawi@" > VERBSTEMSPRE "go to" ;
+!< 0:n 0:a 0:w 0:a 0:c 0:i "@U.preverb.nawaci@" > VERBSTEMSPRE "better" ;
+!< 0:n 0:â 0:c 0:i "@U.preverb.naci@" > VERBSTEMSPRE "getting" ;
+!< 0:n 0:â 0:n 0:i 0:t 0:a 0:w "@U.preverb.nanitaw@" > VERBSTEMSPRE "[in negative clauses:] any" ;
+!< 0:n 0:â 0:t 0:a 0:k 0:â 0:s 0:i "@U.preverb.natakasi@" > VERBSTEMSPRE "into the bush country" ;
+!< 0:n 0:â 0:w 0:a 0:y 0:a 0:w 0:i "@U.preverb.nawayawi@" > VERBSTEMSPRE "one behind the other, in a row" ;
+!< 0:n 0:ê 0:h 0:i 0:y 0:a 0:w 0:i "@U.preverb.nehiyawi@" > VERBSTEMSPRE "Cree, in Cree" ;
+!< 0:n 0:i 0:h 0:t 0:â "@U.preverb.nihta@" > VERBSTEMSPRE "able; good at, competent, practised, experienced, skillful at, expert at, known as one who does s.t. habitually; well" ;
+!< 0:n 0:i 0:p 0:a 0:h 0:i "@U.preverb.nipahi@" > VERBSTEMSPRE "really, very, extremely" ;
+!< 0:n 0:i 0:s 0:î 0:h 0:k 0:â 0:c 0:i "@U.preverb.nisihkaci@" > VERBSTEMSPRE "gently, carefully, slowly" ;
+!< 0:n 0:i 0:t 0:a 0:w 0:i "@U.preverb.nitawi@" > VERBSTEMSPRE "go and, go to; engaged in" ;
+!< 0:n 0:î 0:h 0:c 0:i "@U.preverb.nihci@" > VERBSTEMSPRE "down, downwards; bottom" ;
+!< 0:n 0:î 0:h 0:t 0:a 0:c 0:i 0:w 0:ê "@U.preverb.nihtaciwe@" > VERBSTEMSPRE "downhill, down" ;
+!< 0:n 0:î 0:k 0:â 0:n 0:i "@U.preverb.nikani@" > VERBSTEMSPRE "in front, ahead, at the head, in the future" ;
+!< 0:n 0:î 0:m 0:i "@U.preverb.nimi@" > VERBSTEMSPRE "take along" ;
+!< 0:n 0:î 0:p 0:â "@U.preverb.nipa@" > VERBSTEMSPRE "at night, in the dark" ;
+!< 0:n 0:î 0:s 0:o "@U.preverb.niso@" > VERBSTEMSPRE "two" ;
+!< 0:n 0:ô 0:h 0:t 0:ê "@U.preverb.nohte@" > VERBSTEMSPRE "want to, desire to; lack" ;
+!< 0:o 0:c 0:i 0:h 0:c 0:i "@U.preverb.ocihci@" > VERBSTEMSPRE "back in time; far back; from before, earlier; having lived long enough for something; chance to, live to, live to see" ;
+!< 0:o 0:h 0:c 0:i "@U.preverb.ohci@" > VERBSTEMSPRE "from there; with, by means of; because, for that reason, therefore, thence; [grammatical preverb; past preverb in negative clauses]" ;
+!< 0:o 0:h 0:t 0:i 0:s 0:k 0:a 0:w 0:i "@U.preverb.ohtiskawi@" > VERBSTEMSPRE "facing" ;
+!< 0:o 0:s 0:â 0:m 0:i "@U.preverb.osami@" > VERBSTEMSPRE "too much, because of excess, for" ;
+!< 0:o 0:s 0:â 0:w 0:a 0:s 0:k 0:i "@U.preverb.osawaski@" > VERBSTEMSPRE "green, blue-green" ;
+!< 0:o 0:s 0:â 0:w 0:i "@U.preverb.osawi@" > VERBSTEMSPRE "yellow, brown" ;
+!< 0:o 0:s 0:k 0:i "@U.preverb.oski@" > VERBSTEMSPRE "new, young, first" ;
+!< 0:o 0:t 0:a 0:m 0:i "@U.preverb.otami@" > VERBSTEMSPRE "busy, occupied, delayed" ;
+!< 0:ô "@U.preverb.o@" > VERBSTEMSPRE "from there, for that reason; with, by means of; [grammatical preverb]" ;
+!< 0:ô 0:h "@U.preverb.oh@" > VERBSTEMSPRE "from there, for that reason; with, by means of; [past preverb in negative clauses]" ;
+!< 0:p 0:a 0:c 0:i "@U.preverb.paci@" > VERBSTEMSPRE "wrongly, in error" ;
+!< 0:p 0:a 0:h 0:k 0:i "@U.preverb.pahki@" > VERBSTEMSPRE "portion of" ;
+!< 0:p 0:a 0:k 0:w 0:â 0:n 0:o "@U.preverb.pakwano@" > VERBSTEMSPRE "from memory" ;
+!< 0:p 0:a 0:p 0:â "@U.preverb.papa@" > VERBSTEMSPRE "go around, about, all over" ;
+!< 0:p 0:a 0:p 0:â 0:m 0:i "@U.preverb.papami@" > VERBSTEMSPRE "around, about, all over, here and there, hither and thither" ;
+!< 0:p 0:a 0:p 0:â 0:s 0:i "@U.preverb.papasi@" > VERBSTEMSPRE "fast, in a hurry, quick" ;
+!< 0:p 0:a 0:s 0:i 0:k 0:ô "@U.preverb.pasiko@" > VERBSTEMSPRE "get up (from sitting)" ;
+!< 0:p 0:a 0:s 0:p 0:i "@U.preverb.paspi@" > VERBSTEMSPRE "through narrow opening" ;
+!< 0:p 0:â 0:h 0:k 0:a 0:c 0:i "@U.preverb.pahkaci@" > VERBSTEMSPRE "fixed, not moving; locked in to a previously stated obligation" ;
+!< 0:p 0:â 0:h 0:k 0:o "@U.preverb.pahko@" > VERBSTEMSPRE "dry" ;
+!< 0:p 0:â 0:s 0:c 0:i "@U.preverb.pasci@" > VERBSTEMSPRE "over, beyond" ;
+!< 0:p 0:â 0:s 0:i 0:c 0:i "@U.preverb.pasici@" > VERBSTEMSPRE "stepping over, skipping" ;
+!< 0:p 0:ê "@U.preverb.pe@" > VERBSTEMSPRE "come and; towards, approaching; hither; thence, from there on down; [towards focus]" ;
+!< 0:p 0:ê 0:y 0:a 0:k 0:o "@U.preverb.peyako@" > VERBSTEMSPRE "alone, only; as one" ;
+!< 0:p 0:i 0:m 0:i "@U.preverb.pimi@" > VERBSTEMSPRE "along, in linear progression; while moving in linear progression" ;
+!< 0:p 0:i 0:m 0:i 0:c 0:i "@U.preverb.pimici@" > VERBSTEMSPRE "crosswise, from side, at right angle" ;
+!< 0:p 0:i 0:m 0:i 0:p 0:a 0:h 0:c 0:i "@U.preverb.pimipahci@" > VERBSTEMSPRE "running, on the run" ;
+!< 0:p 0:i 0:s 0:c 0:i "@U.preverb.pisci@" > VERBSTEMSPRE "accidentally, mistakenly, erroneously" ;
+!< 0:p 0:î 0:h 0:c 0:i "@U.preverb.pihci@" > VERBSTEMSPRE "inside, in, within" ;
+!< 0:p 0:î 0:h 0:t 0:a 0:w 0:ê "@U.preverb.pihtawe@" > VERBSTEMSPRE "under; double" ;
+!< 0:p 0:î 0:h 0:t 0:o 0:k 0:ê "@U.preverb.pihtoke@" > VERBSTEMSPRE "entering to the inside, entering house" ;
+!< 0:p 0:î 0:k 0:i 0:s 0:k 0:â 0:c 0:i "@U.preverb.pikiskaci@" > VERBSTEMSPRE "sorry, sad, lonely" ;
+!< 0:p 0:î 0:m 0:i "@U.preverb.pimi@" > VERBSTEMSPRE "twisted" ;
+!< 0:p 0:î 0:t 0:o 0:s 0:i "@U.preverb.pitosi@" > VERBSTEMSPRE "different, foreign" ;
+!< 0:p 0:î 0:w 0:i "@U.preverb.piwi@" > VERBSTEMSPRE "small" ;
+!< 0:p 0:ô 0:n 0:i "@U.preverb.poni@" > VERBSTEMSPRE "stop, terminate, cease; after" ;
+!< 0:p 0:ô 0:s 0:k 0:o "@U.preverb.posko@" > VERBSTEMSPRE "the same" ;
+!< 0:p 0:w 0:â 0:n 0:a "@U.preverb.pwana@" > VERBSTEMSPRE "unable, fail to" ;
+!< 0:p 0:w 0:â 0:t 0:a 0:w 0:i "@U.preverb.pwatawi@" > VERBSTEMSPRE "unable to do, failing" ;
+!< 0:s 0:a 0:s 0:k 0:a 0:c 0:i "@U.preverb.saskaci@" > VERBSTEMSPRE "weary, tired of" ;
+!< 0:s 0:â 0:k 0:ê 0:w 0:ê "@U.preverb.sakewe@" > VERBSTEMSPRE "behind obstacle to vision, into view" ;
+!< 0:s 0:â 0:p 0:o "@U.preverb.sapo@" > VERBSTEMSPRE "fully, exhaustively, through, through and through, right through, from end to end; beyond" ;
+!< 0:s 0:â 0:p 0:o 0:s 0:c 0:i "@U.preverb.saposci@" > VERBSTEMSPRE "through" ;
+!< 0:s 0:â 0:s 0:a 0:k 0:i 0:c 0:i "@U.preverb.sasakici@" > VERBSTEMSPRE "backwards; supine" ;
+!< 0:s 0:ê 0:h 0:k 0:ê "@U.preverb.sehke@" > VERBSTEMSPRE "by itself, of own accord; move ahead of own accord; willingly" ;
+!< 0:s 0:ê 0:s 0:â 0:w 0:i "@U.preverb.sesawi@" > VERBSTEMSPRE "stretching, exercising" ;
+!< 0:s 0:i 0:k 0:a 0:c 0:i "@U.preverb.sikaci@" > VERBSTEMSPRE "impatiently, bored with" ;
+!< 0:s 0:i 0:m 0:a 0:c 0:i "@U.preverb.simaci@" > VERBSTEMSPRE "upright; straightened" ;
+!< 0:s 0:i 0:p 0:w 0:ê "@U.preverb.sipwe@" > VERBSTEMSPRE "leaving, departing, going away; starting out, commencement" ;
+!< 0:s 0:i 0:s 0:i 0:k 0:o 0:c 0:i "@U.preverb.sisikoci@" > VERBSTEMSPRE "suddenly" ;
+!< 0:s 0:i 0:s 0:i 0:w 0:ê "@U.preverb.sisiwe@" > VERBSTEMSPRE "spread, scatter" ;
+!< 0:s 0:î 0:k 0:a 0:w 0:i "@U.preverb.sikawi@" > VERBSTEMSPRE "pouring, flooding" ;
+!< 0:s 0:ô 0:h 0:k 0:a 0:h 0:â 0:t "@U.preverb.sohkahat@" > VERBSTEMSPRE "greatly, powerfully" ;
+!< 0:s 0:ô 0:h 0:k 0:i "@U.preverb.sohki@" > VERBSTEMSPRE "hard, strongly, intensively, vigourously, properly" ;
+!< 0:s 0:ô 0:n 0:i 0:y 0:â 0:w 0:i "@U.preverb.soniyawi@" > VERBSTEMSPRE "with respect to money, in financial matters" ;
+!< 0:t 0:a "@U.preverb.ta@" > VERBSTEMSPRE "[grammatical preverb: future; infinitive]" ;
+!< 0:t 0:a 0:%- 0:k 0:î "@U.preverb.ta-ki@" > VERBSTEMSPRE "can, be able to; should, ought to" ;
+!< 0:t 0:a 0:h 0:c 0:i "@U.preverb.tahci@" > VERBSTEMSPRE "coming apart, undone" ;
+!< 0:t 0:a 0:h 0:k 0:i "@U.preverb.tahki@" > VERBSTEMSPRE "repeated action, always, constantly ; receiving a chill, cold" ;
+!< 0:t 0:a 0:h 0:k 0:o 0:h 0:c 0:i "@U.preverb.tahkohci@" > VERBSTEMSPRE "on top" ;
+!< 0:t 0:a 0:h 0:t 0:o "@U.preverb.tahto@" > VERBSTEMSPRE "as many as" ;
+!< 0:t 0:a 0:k 0:a 0:h 0:k 0:i "@U.preverb.takahki@" > VERBSTEMSPRE "good, nice" ;
+!< 0:t 0:a 0:k 0:o "@U.preverb.tako@" > VERBSTEMSPRE "in addition to, on top, over and above; with, having along, also" ;
+!< 0:t 0:a 0:s 0:i "@U.preverb.tasi@" > VERBSTEMSPRE "for such a time, for the duration; an action at a time, while" ;
+!< 0:t 0:â 0:h "@U.preverb.tah@" > VERBSTEMSPRE "would, ought to; likely to" ;
+!< 0:t 0:â 0:h 0:c 0:i "@U.preverb.tahci@" > VERBSTEMSPRE "on the top" ;
+!< 0:t 0:â 0:p 0:i "@U.preverb.tapi@" > VERBSTEMSPRE "through the same place" ;
+!< 0:t 0:â 0:p 0:i 0:s 0:i "@U.preverb.tapisi@" > VERBSTEMSPRE "threading, inserting" ;
+!< 0:t 0:ê 0:h 0:c 0:i "@U.preverb.tehci@" > VERBSTEMSPRE "on, on top of something" ;
+!< 0:t 0:ê 0:p 0:i "@U.preverb.tepi@" > VERBSTEMSPRE "sufficiently; enough; reaching" ;
+!< 0:t 0:ê 0:w 0:i "@U.preverb.tewi@" > VERBSTEMSPRE "pain" ;
+!< 0:t 0:ê 0:y 0:i "@U.preverb.teyi@" > VERBSTEMSPRE "pain" ;
+!< 0:t 0:i 0:p 0:i "@U.preverb.tipi@" > VERBSTEMSPRE "equal" ;
+!< 0:t 0:i 0:t 0:a "@U.preverb.tita@" > VERBSTEMSPRE "[grammatical preverb; future]" ;
+!< 0:t 0:ô 0:m 0:i "@U.preverb.tomi@" > VERBSTEMSPRE "oily, greasy" ;
+!< 0:w 0:a 0:h 0:k 0:ê "@U.preverb.wahke@" > VERBSTEMSPRE "addicted to, easily led to" ;
+!< 0:w 0:a 0:n 0:i "@U.preverb.wani@" > VERBSTEMSPRE "dim, dark, indistinctly, blurred; ; lose; destroy" ;
+!< 0:w 0:a 0:y 0:a 0:w 0:î "@U.preverb.wayawi@" > VERBSTEMSPRE "outside; out from inside, out from the tipi" ;
+!< 0:w 0:a 0:y 0:ê 0:s 0:i "@U.preverb.wayesi@" > VERBSTEMSPRE "deceitfully" ;
+!< 0:w 0:â "@U.preverb.wa@" > VERBSTEMSPRE "intend to, be about to" ;
+!< 0:w 0:â 0:h "@U.preverb.wah@" > VERBSTEMSPRE "whenever in future" ;
+!< 0:w 0:â 0:k 0:i "@U.preverb.waki@" > VERBSTEMSPRE "curving" ;
+!< 0:w 0:â 0:p 0:a 0:n 0:i "@U.preverb.wapani@" > VERBSTEMSPRE "dawn; at, until dawn" ;
+!< 0:w 0:â 0:p 0:ô 0:h 0:k 0:i "@U.preverb.wapohki@" > VERBSTEMSPRE "white" ;
+!< 0:w 0:â 0:s 0:â "@U.preverb.wasa@" > VERBSTEMSPRE "around" ;
+!< 0:w 0:â 0:s 0:ê "@U.preverb.wase@" > VERBSTEMSPRE "clear; bright" ;
+!< 0:w 0:â 0:w 0:i 0:y 0:ê "@U.preverb.wawiye@" > VERBSTEMSPRE "round, spherical" ;
+!< 0:w 0:ê 0:h 0:c 0:i "@U.preverb.wehci@" > VERBSTEMSPRE "easily" ;
+!< 0:w 0:i 0:y 0:î 0:p 0:i "@U.preverb.wiyipi@" > VERBSTEMSPRE "dirty looking; dull brown, drab" ;
+!< 0:w 0:î "@U.preverb.wi@" > VERBSTEMSPRE "intend to, be about to" ;
+!< 0:w 0:î 0:c 0:i "@U.preverb.wici@" > VERBSTEMSPRE "together with" ;
+!< 0:w 0:î 0:h 0:p 0:i "@U.preverb.wihpi@" > VERBSTEMSPRE "hollowing out" ;
+!< 0:w 0:î 0:n 0:i "@U.preverb.wini@" > VERBSTEMSPRE "soil, dirty" ;
+!< 0:w 0:î 0:p 0:i "@U.preverb.wipi@" > VERBSTEMSPRE "dirty, unclean" ;
+!< 0:w 0:î 0:p 0:o "@U.preverb.wipo@" > VERBSTEMSPRE "narrow" ;
+!< 0:w 0:î 0:s 0:a 0:k 0:i "@U.preverb.wisaki@" > VERBSTEMSPRE "painfully" ;
+!< 0:w 0:î 0:t 0:o "@U.preverb.wito@" > VERBSTEMSPRE "want, intend" ;
+!< 0:y 0:a 0:h 0:k 0:i "@U.preverb.yahki@" > VERBSTEMSPRE "act of pushing forward; increasing, increasingly, adding, more and more" ;
+!< 0:y 0:î 0:k 0:a 0:t 0:ê "@U.preverb.yikate@" > VERBSTEMSPRE "aside" ;
+!< 0:y 0:î 0:p 0:ê "@U.preverb.yipe@" > VERBSTEMSPRE "on a slant, on a slope, on the side, sideways" ;
+!< 0:y 0:ô 0:s 0:k 0:i "@U.preverb.yoski@" > VERBSTEMSPRE "soft, softly" ;
+
 < 0:a 0:t 0:i "@U.preverb.ati@" > VERBSTEMSPRE "begin" ;
 < 0:n 0:ô 0:h 0:t 0:ê "@U.preverb.nohte@" > VERBSTEMSPRE "want" ;
 < 0:k 0:a 0:k 0:w 0:ê "@U.preverb.kakwe@" > VERBSTEMSPRE "try" ;
@@ -158,84 +409,358 @@ IICONJ ;
 LEXICON IICONJ_v 
 IICONJ ;
 
-LEXICON TACONJ_3 
-TACONJ_2 ;
+! LEXICON TACONJ_3 
+! TACONJ_2 ;
 
-LEXICON TACONJ_4 
-TACONJ_2 ;
+! LEXICON TACONJ_4 
+! TACONJ_2 ;
 
 LEXICON TICONJ_1 
 TICONJ ;
-LEXICON TICONJ_2 
-TICONJ ;
+
+! LEXICON TICONJ_2 
+!TICONJ ;
+
 LEXICON TICONJ_3 
 TICONJ ;
 
-!! !! Preverbs
+!! Adding the flag diacritics for each subtype of conjugation class
 
 LEXICON IACONJ
-< "@U.preverb.NULL@" > IACONJ-MAIN ;
-< "+PV/ati":0 "@U.preverb.ati@" > IACONJ-MAIN ;
-< "+PV/nohte":0 "@U.preverb.nohte@" > IACONJ-MAIN ;
-< "+PV/kakwe":0 "@U.preverb.kakwe@" > IACONJ-MAIN ;
-< "+PV/maci":0 "@U.preverb.maci@" > IACONJ-MAIN ;
-< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJ-MAIN ;
-< "+PV/peyako":0 "@U.preverb.peyako@" > IACONJ-MAIN ;
-< "+PV/poni":0 "@U.preverb.poni@" > IACONJ-MAIN ;
-< "+PV/nitowi":0 "@U.preverb.nitowi@" > IACONJ-MAIN ;
-< "+PV/pe":0 "@U.preverb.pe@" > IACONJ-MAIN ;
-< "+PV/moci":0 "@U.preverb.moci@" > IACONJ-MAIN ;
-< "+PV/sapo":0 "@U.preverb.sapo@" > IACONJ-MAIN ;
-< "+PV/yoski":0 "@U.preverb.yoski@" > IACONJ-MAIN ;
-< "+PV/miyo":0 "@U.preverb.miyo@" > IACONJ-MAIN ;
-< "+PV/mayi":0 "@U.preverb.mayi@" > IACONJ-MAIN ;
-< "+PV/sohki":0 "@U.preverb.sohki@" > IACONJ-MAIN ;
-< "+PV/pisci":0 "@U.preverb.pisci@" > IACONJ-MAIN ;
-< "+PV/kihci":0 "@U.preverb.kihci@" > IACONJ-MAIN ;
-< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
-
-
-LEXICON IACONJw
-< "@U.preverb.NULL@" > IACONJw-MAIN ;
-< "+PV/ati":0 "@U.preverb.ati@" > IACONJw-MAIN ;
-< "+PV/nohte":0 "@U.preverb.nohte@" > IACONJw-MAIN ;
-< "+PV/kakwe":0 "@U.preverb.kakwe@" > IACONJw-MAIN ;
-< "+PV/maci":0 "@U.preverb.maci@" > IACONJw-MAIN ;
-< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJw-MAIN ;
-< "+PV/peyako":0 "@U.preverb.peyako@" > IACONJw-MAIN ;
-< "+PV/poni":0 "@U.preverb.poni@" > IACONJw-MAIN ;
-< "+PV/nitowi":0 "@U.preverb.nitowi@" > IACONJw-MAIN ;
-< "+PV/pe":0 "@U.preverb.pe@" > IACONJw-MAIN ;
-< "+PV/moci":0 "@U.preverb.moci@" > IACONJw-MAIN ;
-< "+PV/sapo":0 "@U.preverb.sapo@" > IACONJw-MAIN ;
-< "+PV/yoski":0 "@U.preverb.yoski@" > IACONJw-MAIN ;
-< "+PV/miyo":0 "@U.preverb.miyo@" > IACONJw-MAIN ;
-< "+PV/mayi":0 "@U.preverb.mayi@" > IACONJw-MAIN ;
-< "+PV/sohki":0 "@U.preverb.sohki@" > IACONJw-MAIN ;
-< "+PV/pisci":0 "@U.preverb.pisci@" > IACONJw-MAIN ;
-< "+PV/kihci":0 "@U.preverb.kihci@" > IACONJw-MAIN ;
-< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
+< "@U.conj.IACONJ@" > PREVERBSFEATURES ;
 
 LEXICON IACONJn
-< "@U.preverb.NULL@" > IACONJn-MAIN ;
-< "+PV/ati":0 "@U.preverb.ati@" > IACONJn-MAIN ;
-< "+PV/nohte":0 "@U.preverb.nohte@" > IACONJn-MAIN ;
-< "+PV/kakwe":0 "@U.preverb.kakwe@" > IACONJn-MAIN ;
-< "+PV/maci":0 "@U.preverb.maci@" > IACONJn-MAIN ;
-< "+PV/nihta":0 "@U.preverb.nihta@" > IACONJn-MAIN ;
-< "+PV/peyako":0 "@U.preverb.peyako@" > IACONJn-MAIN ;
-< "+PV/poni":0 "@U.preverb.poni@" > IACONJn-MAIN ;
-< "+PV/nitowi":0 "@U.preverb.nitowi@" > IACONJn-MAIN ;
-< "+PV/pe":0 "@U.preverb.pe@" > IACONJn-MAIN ;
-< "+PV/moci":0 "@U.preverb.moci@" > IACONJn-MAIN ;
-< "+PV/sapo":0 "@U.preverb.sapo@" > IACONJn-MAIN ;
-< "+PV/yoski":0 "@U.preverb.yoski@" > IACONJn-MAIN ;
-< "+PV/miyo":0 "@U.preverb.miyo@" > IACONJn-MAIN ;
-< "+PV/mayi":0 "@U.preverb.mayi@" > IACONJn-MAIN ;
-< "+PV/sohki":0 "@U.preverb.sohki@" > IACONJn-MAIN ;
-< "+PV/pisci":0 "@U.preverb.pisci@" > IACONJn-MAIN ;
-< "+PV/kihci":0 "@U.preverb.kihci@" > IACONJn-MAIN ;
-< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
+< "@U.conj.IACONJn@" > PREVERBSFEATURES ;
+
+LEXICON IACONJw
+< "@U.conj.IACONJw@" > PREVERBSFEATURES ;
+
+LEXICON IICONJ-SG
+< "@U.conj.IICONJ-SG@" > PREVERBSFEATURES ;
+
+LEXICON IICONJ 
+< "@U.conj.IICONJ@" > PREVERBSFEATURES ;
+
+LEXICON IICONJw-SG
+< "@U.conj.IICONJw-SG@" > PREVERBSFEATURES ;
+
+LEXICON IICONJw
+< "@U.conj.IICONJw@" > PREVERBSFEATURES ;
+
+LEXICON TACONJ_1
+< "@U.conj.TACONJ_1@" > PREVERBSFEATURES ;
+
+LEXICON TACONJ_2
+< "@U.conj.TACONJ_2@" > PREVERBSFEATURES ;
+
+LEXICON TACONJ_3
+< "@U.conj.TACONJ_3@" > PREVERBSFEATURES ;
+
+LEXICON TACONJ_4
+< "@U.conj.TACONJ_4@" > PREVERBSFEATURES ;
+
+LEXICON TICONJ
+< "@U.conj.TICONJ@" > PREVERBSFEATURES ;
+
+LEXICON TICONJ_2
+< "@U.conj.TICONJ_2@" > PREVERBSFEATURES ; ! This should be the same as TICONJ
+
+LEXICON TICONJa
+< "@U.conj.TICONJa@" > PREVERBSFEATURES ;
+
+
+!! !! Preverbs
+
+LEXICON PREVERBSFEATURES
+< "@U.preverb.NULL@" > VERBMAIN ;
+!< "+PV/acici":0 "@U.preverb.acici@" > VERBMAIN ;
+!< "+PV/ahcahkowi":0 "@U.preverb.ahcahkowi@" > VERBMAIN ;
+!< "+PV/akawaci":0 "@U.preverb.akawaci@" > VERBMAIN ;
+!< "+PV/ako":0 "@U.preverb.ako@" > VERBMAIN ;
+!< "+PV/akoci":0 "@U.preverb.akoci@" > VERBMAIN ;
+!< "+PV/apihci":0 "@U.preverb.apihci@" > VERBMAIN ;
+!< "+PV/apisci":0 "@U.preverb.apisci@" > VERBMAIN ;
+!< "+PV/apisi":0 "@U.preverb.apisi@" > VERBMAIN ;
+!< "+PV/apisisi":0 "@U.preverb.apisisi@" > VERBMAIN ;
+!< "+PV/ase":0 "@U.preverb.ase@" > VERBMAIN ;
+!< "+PV/aseya":0 "@U.preverb.aseya@" > VERBMAIN ;
+!< "+PV/ati":0 "@U.preverb.ati@" > VERBMAIN ;
+!< "+PV/atimi":0 "@U.preverb.atimi@" > VERBMAIN ;
+!< "+PV/ayamihawi":0 "@U.preverb.ayamihawi@" > VERBMAIN ;
+!< "+PV/ayamihewi":0 "@U.preverb.ayamihewi@" > VERBMAIN ;
+!< "+PV/ayaso":0 "@U.preverb.ayaso@" > VERBMAIN ;
+!< "+PV/ayi":0 "@U.preverb.ayi@" > VERBMAIN ;
+!< "+PV/ahci":0 "@U.preverb.ahci@" > VERBMAIN ;
+!< "+PV/ahkami":0 "@U.preverb.ahkami@" > VERBMAIN ;
+!< "+PV/ako":0 "@U.preverb.ako@" > VERBMAIN ;
+!< "+PV/akwa":0 "@U.preverb.akwa@" > VERBMAIN ;
+!< "+PV/ami":0 "@U.preverb.ami@" > VERBMAIN ;
+!< "+PV/aniski":0 "@U.preverb.aniski@" > VERBMAIN ;
+!< "+PV/apihci":0 "@U.preverb.apihci@" > VERBMAIN ;
+!< "+PV/apihtawi":0 "@U.preverb.apihtawi@" > VERBMAIN ;
+!< "+PV/apihta":0 "@U.preverb.apihta@" > VERBMAIN ;
+!< "+PV/apihta-kisikawi":0 "@U.preverb.apihta_kisikawi@" > VERBMAIN ;
+!< "+PV/asawi":0 "@U.preverb.asawi@" > VERBMAIN ;
+!< "+PV/ase":0 "@U.preverb.ase@" > VERBMAIN ;
+!< "+PV/asowi":0 "@U.preverb.asowi@" > VERBMAIN ;
+!< "+PV/aste":0 "@U.preverb.aste@" > VERBMAIN ;
+!< "+PV/ata":0 "@U.preverb.ata@" > VERBMAIN ;
+!< "+PV/ayici":0 "@U.preverb.ayici@" > VERBMAIN ;
+!< "+PV/cipehtako":0 "@U.preverb.cipehtako@" > VERBMAIN ;
+!< "+PV/e":0 "@U.preverb.e@" > VERBMAIN ;
+!< "+PV/isi":0 "@U.preverb.isi@" > VERBMAIN ;
+!< "+PV/isko":0 "@U.preverb.isko@" > VERBMAIN ;
+!< "+PV/ispi":0 "@U.preverb.ispi@" > VERBMAIN ;
+!< "+PV/ispihci":0 "@U.preverb.ispihci@" > VERBMAIN ;
+!< "+PV/itahto":0 "@U.preverb.itahto@" > VERBMAIN ;
+!< "+PV/ikate":0 "@U.preverb.ikate@" > VERBMAIN ;
+!< "+PV/ka":0 "@U.preverb.ka@" > VERBMAIN ;
+!< "+PV/ka-ki":0 "@U.preverb.ka_ki@" > VERBMAIN ;
+!< "+PV/kakepaci":0 "@U.preverb.kakepaci@" > VERBMAIN ;
+!< "+PV/kakwahyaki":0 "@U.preverb.kakwahyaki@" > VERBMAIN ;
+!< "+PV/kakwayaki":0 "@U.preverb.kakwayaki@" > VERBMAIN ;
+!< "+PV/kakwe":0 "@U.preverb.kakwe@" > VERBMAIN ;
+!< "+PV/kakweci":0 "@U.preverb.kakweci@" > VERBMAIN ;
+!< "+PV/kanaci":0 "@U.preverb.kanaci@" > VERBMAIN ;
+!< "+PV/kape":0 "@U.preverb.kape@" > VERBMAIN ;
+!< "+PV/kaski":0 "@U.preverb.kaski@" > VERBMAIN ;
+!< "+PV/kaskitewi":0 "@U.preverb.kaskitewi@" > VERBMAIN ;
+!< "+PV/kayasi":0 "@U.preverb.kayasi@" > VERBMAIN ;
+!< "+PV/ka":0 "@U.preverb.ka@" > VERBMAIN ;
+!< "+PV/kah":0 "@U.preverb.kah@" > VERBMAIN ;
+!< "+PV/kah-kape":0 "@U.preverb.kah_kape@" > VERBMAIN ;
+!< "+PV/kamwaci":0 "@U.preverb.kamwaci@" > VERBMAIN ;
+!< "+PV/kaspi":0 "@U.preverb.kaspi@" > VERBMAIN ;
+!< "+PV/kawi":0 "@U.preverb.kawi@" > VERBMAIN ;
+!< "+PV/ke":0 "@U.preverb.ke@" > VERBMAIN ;
+!< "+PV/kekaci":0 "@U.preverb.kekaci@" > VERBMAIN ;
+!< "+PV/ket":0 "@U.preverb.ket@" > VERBMAIN ;
+!< "+PV/ketiski":0 "@U.preverb.ketiski@" > VERBMAIN ;
+!< "+PV/kici":0 "@U.preverb.kici@" > VERBMAIN ;
+!< "+PV/kihci":0 "@U.preverb.kihci@" > VERBMAIN ;
+!< "+PV/kika":0 "@U.preverb.kika@" > VERBMAIN ;
+!< "+PV/kipi":0 "@U.preverb.kipi@" > VERBMAIN ;
+!< "+PV/kisci":0 "@U.preverb.kisci@" > VERBMAIN ;
+!< "+PV/kise":0 "@U.preverb.kise@" > VERBMAIN ;
+!< "+PV/kisipi":0 "@U.preverb.kisipi@" > VERBMAIN ;
+!< "+PV/kisiska":0 "@U.preverb.kisiska@" > VERBMAIN ;
+!< "+PV/kisiwi":0 "@U.preverb.kisiwi@" > VERBMAIN ;
+!< "+PV/kisiwi":0 "@U.preverb.kisiwi@" > VERBMAIN ;
+!< "+PV/kita":0 "@U.preverb.kita@" > VERBMAIN ;
+!< "+PV/kita-ki":0 "@U.preverb.kita_ki@" > VERBMAIN ;
+!< "+PV/kitimaki":0 "@U.preverb.kitimaki@" > VERBMAIN ;
+!< "+PV/kiye":0 "@U.preverb.kiye@" > VERBMAIN ;
+!< "+PV/kiyi":0 "@U.preverb.kiyi@" > VERBMAIN ;
+!< "+PV/ki":0 "@U.preverb.ki@" > VERBMAIN ;
+!< "+PV/kimoci":0 "@U.preverb.kimoci@" > VERBMAIN ;
+!< "+PV/kipi":0 "@U.preverb.kipi@" > VERBMAIN ;
+!< "+PV/kisi":0 "@U.preverb.kisi@" > VERBMAIN ;
+!< "+PV/kiski":0 "@U.preverb.kiski@" > VERBMAIN ;
+!< "+PV/kisopwe":0 "@U.preverb.kisopwe@" > VERBMAIN ;
+!< "+PV/kiwaci":0 "@U.preverb.kiwaci@" > VERBMAIN ;
+!< "+PV/kiwe":0 "@U.preverb.kiwe@" > VERBMAIN ;
+!< "+PV/koci":0 "@U.preverb.koci@" > VERBMAIN ;
+!< "+PV/kota":0 "@U.preverb.kota@" > VERBMAIN ;
+!< "+PV/kotate":0 "@U.preverb.kotate@" > VERBMAIN ;
+!< "+PV/kwataki":0 "@U.preverb.kwataki@" > VERBMAIN ;
+!< "+PV/kwayako":0 "@U.preverb.kwayako@" > VERBMAIN ;
+!< "+PV/kwayaski":0 "@U.preverb.kwayaski@" > VERBMAIN ;
+!< "+PV/kwayasko":0 "@U.preverb.kwayasko@" > VERBMAIN ;
+!< "+PV/kwayaci":0 "@U.preverb.kwayaci@" > VERBMAIN ;
+!< "+PV/kwahci":0 "@U.preverb.kwahci@" > VERBMAIN ;
+!< "+PV/kwaskwe":0 "@U.preverb.kwaskwe@" > VERBMAIN ;
+!< "+PV/kwataki":0 "@U.preverb.kwataki@" > VERBMAIN ;
+!< "+PV/kweski":0 "@U.preverb.kweski@" > VERBMAIN ;
+!< "+PV/kwetawi":0 "@U.preverb.kwetawi@" > VERBMAIN ;
+!< "+PV/kwitawi":0 "@U.preverb.kwitawi@" > VERBMAIN ;
+!< "+PV/maci":0 "@U.preverb.maci@" > VERBMAIN ;
+!< "+PV/maci-manitowi":0 "@U.preverb.maci_manitowi@" > VERBMAIN ;
+!< "+PV/mana":0 "@U.preverb.mana@" > VERBMAIN ;
+!< "+PV/mani":0 "@U.preverb.mani@" > VERBMAIN ;
+!< "+PV/masta":0 "@U.preverb.masta@" > VERBMAIN ;
+!< "+PV/matwe":0 "@U.preverb.matwe@" > VERBMAIN ;
+!< "+PV/maci":0 "@U.preverb.maci@" > VERBMAIN ;
+!< "+PV/mahi":0 "@U.preverb.mahi@" > VERBMAIN ;
+!< "+PV/mamawi":0 "@U.preverb.mamawi@" > VERBMAIN ;
+!< "+PV/maninakisko":0 "@U.preverb.maninakisko@" > VERBMAIN ;
+!< "+PV/maski":0 "@U.preverb.maski@" > VERBMAIN ;
+!< "+PV/mayaci":0 "@U.preverb.mayaci@" > VERBMAIN ;
+!< "+PV/mayi":0 "@U.preverb.mayi@" > VERBMAIN ;
+!< "+PV/mecimwaci":0 "@U.preverb.mecimwaci@" > VERBMAIN ;
+!< "+PV/mekwa":0 "@U.preverb.mekwa@" > VERBMAIN ;
+!< "+PV/mesci":0 "@U.preverb.mesci@" > VERBMAIN ;
+!< "+PV/mesti":0 "@U.preverb.mesti@" > VERBMAIN ;
+!< "+PV/mihko":0 "@U.preverb.mihko@" > VERBMAIN ;
+!< "+PV/mihyawe":0 "@U.preverb.mihyawe@" > VERBMAIN ;
+!< "+PV/misakame":0 "@U.preverb.misakame@" > VERBMAIN ;
+!< "+PV/misi":0 "@U.preverb.misi@" > VERBMAIN ;
+!< "+PV/mistiko":0 "@U.preverb.mistiko@" > VERBMAIN ;
+!< "+PV/miyo":0 "@U.preverb.miyo@" > VERBMAIN ;
+!< "+PV/mosci":0 "@U.preverb.mosci@" > VERBMAIN ;
+!< "+PV/mohco":0 "@U.preverb.mohco@" > VERBMAIN ;
+!< "+PV/mwayi":0 "@U.preverb.mwayi@" > VERBMAIN ;
+!< "+PV/nahi":0 "@U.preverb.nahi@" > VERBMAIN ;
+!< "+PV/nahta":0 "@U.preverb.nahta@" > VERBMAIN ;
+!< "+PV/naki":0 "@U.preverb.naki@" > VERBMAIN ;
+!< "+PV/napaki":0 "@U.preverb.napaki@" > VERBMAIN ;
+!< "+PV/naspaci":0 "@U.preverb.naspaci@" > VERBMAIN ;
+!< "+PV/natawi":0 "@U.preverb.natawi@" > VERBMAIN ;
+!< "+PV/nawaci":0 "@U.preverb.nawaci@" > VERBMAIN ;
+!< "+PV/naci":0 "@U.preverb.naci@" > VERBMAIN ;
+!< "+PV/nanitaw":0 "@U.preverb.nanitaw@" > VERBMAIN ;
+!< "+PV/natakasi":0 "@U.preverb.natakasi@" > VERBMAIN ;
+!< "+PV/nawayawi":0 "@U.preverb.nawayawi@" > VERBMAIN ;
+!< "+PV/nehiyawi":0 "@U.preverb.nehiyawi@" > VERBMAIN ;
+!< "+PV/nihta":0 "@U.preverb.nihta@" > VERBMAIN ;
+!< "+PV/nipahi":0 "@U.preverb.nipahi@" > VERBMAIN ;
+!< "+PV/nisihkaci":0 "@U.preverb.nisihkaci@" > VERBMAIN ;
+!< "+PV/nitawi":0 "@U.preverb.nitawi@" > VERBMAIN ;
+!< "+PV/nihci":0 "@U.preverb.nihci@" > VERBMAIN ;
+!< "+PV/nihtaciwe":0 "@U.preverb.nihtaciwe@" > VERBMAIN ;
+!< "+PV/nikani":0 "@U.preverb.nikani@" > VERBMAIN ;
+!< "+PV/nimi":0 "@U.preverb.nimi@" > VERBMAIN ;
+!< "+PV/nipa":0 "@U.preverb.nipa@" > VERBMAIN ;
+!< "+PV/niso":0 "@U.preverb.niso@" > VERBMAIN ;
+!< "+PV/nohte":0 "@U.preverb.nohte@" > VERBMAIN ;
+!< "+PV/ocihci":0 "@U.preverb.ocihci@" > VERBMAIN ;
+!< "+PV/ohci":0 "@U.preverb.ohci@" > VERBMAIN ;
+!< "+PV/ohtiskawi":0 "@U.preverb.ohtiskawi@" > VERBMAIN ;
+!< "+PV/osami":0 "@U.preverb.osami@" > VERBMAIN ;
+!< "+PV/osawaski":0 "@U.preverb.osawaski@" > VERBMAIN ;
+!< "+PV/osawi":0 "@U.preverb.osawi@" > VERBMAIN ;
+!< "+PV/oski":0 "@U.preverb.oski@" > VERBMAIN ;
+!< "+PV/otami":0 "@U.preverb.otami@" > VERBMAIN ;
+!< "+PV/o":0 "@U.preverb.o@" > VERBMAIN ;
+!< "+PV/oh":0 "@U.preverb.oh@" > VERBMAIN ;
+!< "+PV/paci":0 "@U.preverb.paci@" > VERBMAIN ;
+!< "+PV/pahki":0 "@U.preverb.pahki@" > VERBMAIN ;
+!< "+PV/pakwano":0 "@U.preverb.pakwano@" > VERBMAIN ;
+!< "+PV/papa":0 "@U.preverb.papa@" > VERBMAIN ;
+!< "+PV/papami":0 "@U.preverb.papami@" > VERBMAIN ;
+!< "+PV/papasi":0 "@U.preverb.papasi@" > VERBMAIN ;
+!< "+PV/pasiko":0 "@U.preverb.pasiko@" > VERBMAIN ;
+!< "+PV/paspi":0 "@U.preverb.paspi@" > VERBMAIN ;
+!< "+PV/pahkaci":0 "@U.preverb.pahkaci@" > VERBMAIN ;
+!< "+PV/pahko":0 "@U.preverb.pahko@" > VERBMAIN ;
+!< "+PV/pasci":0 "@U.preverb.pasci@" > VERBMAIN ;
+!< "+PV/pasici":0 "@U.preverb.pasici@" > VERBMAIN ;
+!< "+PV/pe":0 "@U.preverb.pe@" > VERBMAIN ;
+!< "+PV/peyako":0 "@U.preverb.peyako@" > VERBMAIN ;
+!< "+PV/pimi":0 "@U.preverb.pimi@" > VERBMAIN ;
+!< "+PV/pimici":0 "@U.preverb.pimici@" > VERBMAIN ;
+!< "+PV/pimipahci":0 "@U.preverb.pimipahci@" > VERBMAIN ;
+!< "+PV/pisci":0 "@U.preverb.pisci@" > VERBMAIN ;
+!< "+PV/pihci":0 "@U.preverb.pihci@" > VERBMAIN ;
+!< "+PV/pihtawe":0 "@U.preverb.pihtawe@" > VERBMAIN ;
+!< "+PV/pihtoke":0 "@U.preverb.pihtoke@" > VERBMAIN ;
+!< "+PV/pikiskaci":0 "@U.preverb.pikiskaci@" > VERBMAIN ;
+!< "+PV/pimi":0 "@U.preverb.pimi@" > VERBMAIN ;
+!< "+PV/pitosi":0 "@U.preverb.pitosi@" > VERBMAIN ;
+!< "+PV/piwi":0 "@U.preverb.piwi@" > VERBMAIN ;
+!< "+PV/poni":0 "@U.preverb.poni@" > VERBMAIN ;
+!< "+PV/posko":0 "@U.preverb.posko@" > VERBMAIN ;
+!< "+PV/pwana":0 "@U.preverb.pwana@" > VERBMAIN ;
+!< "+PV/pwatawi":0 "@U.preverb.pwatawi@" > VERBMAIN ;
+!< "+PV/saskaci":0 "@U.preverb.saskaci@" > VERBMAIN ;
+!< "+PV/sakewe":0 "@U.preverb.sakewe@" > VERBMAIN ;
+!< "+PV/sapo":0 "@U.preverb.sapo@" > VERBMAIN ;
+!< "+PV/saposci":0 "@U.preverb.saposci@" > VERBMAIN ;
+!< "+PV/sasakici":0 "@U.preverb.sasakici@" > VERBMAIN ;
+!< "+PV/sehke":0 "@U.preverb.sehke@" > VERBMAIN ;
+!< "+PV/sesawi":0 "@U.preverb.sesawi@" > VERBMAIN ;
+!< "+PV/sikaci":0 "@U.preverb.sikaci@" > VERBMAIN ;
+!< "+PV/simaci":0 "@U.preverb.simaci@" > VERBMAIN ;
+!< "+PV/sipwe":0 "@U.preverb.sipwe@" > VERBMAIN ;
+!< "+PV/sisikoci":0 "@U.preverb.sisikoci@" > VERBMAIN ;
+!< "+PV/sisiwe":0 "@U.preverb.sisiwe@" > VERBMAIN ;
+!< "+PV/sikawi":0 "@U.preverb.sikawi@" > VERBMAIN ;
+!< "+PV/sohkahat":0 "@U.preverb.sohkahat@" > VERBMAIN ;
+!< "+PV/sohki":0 "@U.preverb.sohki@" > VERBMAIN ;
+!< "+PV/soniyawi":0 "@U.preverb.soniyawi@" > VERBMAIN ;
+!< "+PV/ta":0 "@U.preverb.ta@" > VERBMAIN ;
+!< "+PV/ta-ki":0 "@U.preverb.ta_ki@" > VERBMAIN ;
+!< "+PV/tahci":0 "@U.preverb.tahci@" > VERBMAIN ;
+!< "+PV/tahki":0 "@U.preverb.tahki@" > VERBMAIN ;
+!< "+PV/tahkohci":0 "@U.preverb.tahkohci@" > VERBMAIN ;
+!< "+PV/tahto":0 "@U.preverb.tahto@" > VERBMAIN ;
+!< "+PV/takahki":0 "@U.preverb.takahki@" > VERBMAIN ;
+!< "+PV/tako":0 "@U.preverb.tako@" > VERBMAIN ;
+!< "+PV/tasi":0 "@U.preverb.tasi@" > VERBMAIN ;
+!< "+PV/tah":0 "@U.preverb.tah@" > VERBMAIN ;
+!< "+PV/tahci":0 "@U.preverb.tahci@" > VERBMAIN ;
+!< "+PV/tapi":0 "@U.preverb.tapi@" > VERBMAIN ;
+!< "+PV/tapisi":0 "@U.preverb.tapisi@" > VERBMAIN ;
+!< "+PV/tehci":0 "@U.preverb.tehci@" > VERBMAIN ;
+!< "+PV/tepi":0 "@U.preverb.tepi@" > VERBMAIN ;
+!< "+PV/tewi":0 "@U.preverb.tewi@" > VERBMAIN ;
+!< "+PV/teyi":0 "@U.preverb.teyi@" > VERBMAIN ;
+!< "+PV/tipi":0 "@U.preverb.tipi@" > VERBMAIN ;
+!< "+PV/tita":0 "@U.preverb.tita@" > VERBMAIN ;
+!< "+PV/tomi":0 "@U.preverb.tomi@" > VERBMAIN ;
+!< "+PV/wahke":0 "@U.preverb.wahke@" > VERBMAIN ;
+!< "+PV/wani":0 "@U.preverb.wani@" > VERBMAIN ;
+!< "+PV/wayawi":0 "@U.preverb.wayawi@" > VERBMAIN ;
+!< "+PV/wayesi":0 "@U.preverb.wayesi@" > VERBMAIN ;
+!< "+PV/wa":0 "@U.preverb.wa@" > VERBMAIN ;
+!< "+PV/wah":0 "@U.preverb.wah@" > VERBMAIN ;
+!< "+PV/waki":0 "@U.preverb.waki@" > VERBMAIN ;
+!< "+PV/wapani":0 "@U.preverb.wapani@" > VERBMAIN ;
+!< "+PV/wapohki":0 "@U.preverb.wapohki@" > VERBMAIN ;
+!< "+PV/wasa":0 "@U.preverb.wasa@" > VERBMAIN ;
+!< "+PV/wase":0 "@U.preverb.wase@" > VERBMAIN ;
+!< "+PV/wawiye":0 "@U.preverb.wawiye@" > VERBMAIN ;
+!< "+PV/wehci":0 "@U.preverb.wehci@" > VERBMAIN ;
+!< "+PV/wiyipi":0 "@U.preverb.wiyipi@" > VERBMAIN ;
+!< "+PV/wi":0 "@U.preverb.wi@" > VERBMAIN ;
+!< "+PV/wici":0 "@U.preverb.wici@" > VERBMAIN ;
+!< "+PV/wihpi":0 "@U.preverb.wihpi@" > VERBMAIN ;
+!< "+PV/wini":0 "@U.preverb.wini@" > VERBMAIN ;
+!< "+PV/wipi":0 "@U.preverb.wipi@" > VERBMAIN ;
+!< "+PV/wipo":0 "@U.preverb.wipo@" > VERBMAIN ;
+!< "+PV/wisaki":0 "@U.preverb.wisaki@" > VERBMAIN ;
+!< "+PV/wito":0 "@U.preverb.wito@" > VERBMAIN ;
+!< "+PV/yahki":0 "@U.preverb.yahki@" > VERBMAIN ;
+!< "+PV/yikate":0 "@U.preverb.yikate@" > VERBMAIN ;
+!< "+PV/yipe":0 "@U.preverb.yipe@" > VERBMAIN ;
+!< "+PV/yoski":0 "@U.preverb.yoski@" > VERBMAIN ;
+
+< "+PV/ati":0 "@U.preverb.ati@" > VERBMAIN ;
+< "+PV/nohte":0 "@U.preverb.nohte@" > VERBMAIN ;
+< "+PV/kakwe":0 "@U.preverb.kakwe@" > VERBMAIN ;
+< "+PV/maci":0 "@U.preverb.maci@" > VERBMAIN ;
+< "+PV/nihta":0 "@U.preverb.nihta@" > VERBMAIN ;
+< "+PV/peyako":0 "@U.preverb.peyako@" > VERBMAIN ;
+< "+PV/poni":0 "@U.preverb.poni@" > VERBMAIN ;
+< "+PV/nitowi":0 "@U.preverb.nitowi@" > VERBMAIN ;
+< "+PV/pe":0 "@U.preverb.pe@" > VERBMAIN ;
+< "+PV/moci":0 "@U.preverb.moci@" > VERBMAIN ;
+< "+PV/sapo":0 "@U.preverb.sapo@" > VERBMAIN ;
+< "+PV/yoski":0 "@U.preverb.yoski@" > VERBMAIN ;
+< "+PV/miyo":0 "@U.preverb.miyo@" > VERBMAIN ;
+< "+PV/mayi":0 "@U.preverb.mayi@" > VERBMAIN ;
+< "+PV/sohki":0 "@U.preverb.sohki@" > VERBMAIN ;
+< "+PV/pisci":0 "@U.preverb.pisci@" > VERBMAIN ;
+< "+PV/kihci":0 "@U.preverb.kihci@" > VERBMAIN ;
+< "+PV/nitawi":0 "@U.preverb.nitawi@" > VERBMAIN ;
+
+
+!! Directing to the various subtypes of conjugation classes
+
+LEXICON VERBMAIN
+< "@U.conj.IACONJ@" > IACONJ-MAIN ;
+< "@U.conj.IACONJn@" > IACONJn-MAIN ;
+< "@U.conj.IACONJw@" > IACONJw-MAIN ;
+< "@U.conj.IICONJ-SG@" > IICONJ-SG-MAIN ;
+< "@U.conj.IICONJ@" > IICONJ-MAIN ;
+< "@U.conj.IICONJw-SG@" > IICONJw-SG-MAIN ;
+< "@U.conj.IICONJw@" > IICONJw-MAIN ;
+< "@U.conj.TACONJ_1@" > TACONJ_1-MAIN ;
+< "@U.conj.TACONJ_2@" > TACONJ_2-MAIN ;
+! < "@U.conj.TACONJ_3@" > TACONJ_3-MAIN ;
+! < "@U.conj.TACONJ_4@" > TACONJ_4-MAIN ;
+< "@U.conj.TICONJ@" >  TICONJ-MAIN ;
+! < "@U.conj.TICONJ_2@" > TICONJ_2-MAIN ; ! This should be the same as TICONJ
+< "@U.conj.TICONJa@" > TICONJa-MAIN ;
 
 
 !! !!! Intransitive animate (IA)
@@ -397,10 +922,10 @@ LEXICON imp-long-E
 !      ===========================
 
 
-LEXICON IICONJ  !!= @CODE@ adds the flag for no personprefixes
+LEXICON IICONJ-MAIN  !!= @CODE@ adds the flag for no personprefixes
 < "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS ;
 
-LEXICON IICONJ-SG  !!= @CODE@ adds the flag for no personprefixes, only Sg forms
+LEXICON IICONJ-SG-MAIN  !!= @CODE@ adds the flag for no personprefixes, only Sg forms
 < "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS-SG ;
 
 
@@ -413,11 +938,11 @@ LEXICON IICONJFORMS-SG !!= @CODE@ adds a baseform = Prs+3Sg
  IICONJ-CONT-SG ; 
 
 
-LEXICON IICONJw  !!= @CODE@  w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
+LEXICON IICONJw-MAIN  !!= @CODE@  w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 < "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
 < "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw ;
 
-LEXICON IICONJw-SG  !!= @CODE@  w final, only Sg forms Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
+LEXICON IICONJw-SG-MAIN  !!= @CODE@  w final, only Sg forms Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 < "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
 < "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw-SG ;
 
@@ -558,72 +1083,6 @@ LEXICON II_CNJ_PERS-PL   !!= @CODE@ -n final
 
 !! The VTA verbs split in different moods.
 !! There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
-
-! Preverbs
-
-LEXICON TACONJ_1
-< "@U.preverb.NULL@" > TACONJ_1-MAIN ;
-< "+PV/ati":0 "@U.preverb.ati@" > TACONJ_1-MAIN ;
-< "+PV/nohte":0 "@U.preverb.nohte@" > TACONJ_1-MAIN ;
-< "+PV/kakwe":0 "@U.preverb.kakwe@" > TACONJ_1-MAIN ;
-< "+PV/maci":0 "@U.preverb.maci@" > TACONJ_1-MAIN ;
-< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_1-MAIN ;
-< "+PV/peyako":0 "@U.preverb.peyako@" > TACONJ_1-MAIN ;
-< "+PV/poni":0 "@U.preverb.poni@" > TACONJ_1-MAIN ;
-< "+PV/nitowi":0 "@U.preverb.nitowi@" > TACONJ_1-MAIN ;
-< "+PV/pe":0 "@U.preverb.pe@" > TACONJ_1-MAIN ;
-< "+PV/moci":0 "@U.preverb.moci@" > TACONJ_1-MAIN ;
-< "+PV/sapo":0 "@U.preverb.sapo@" > TACONJ_1-MAIN ;
-< "+PV/yoski":0 "@U.preverb.yoski@" > TACONJ_1-MAIN ;
-< "+PV/miyo":0 "@U.preverb.miyo@" > TACONJ_1-MAIN ;
-< "+PV/mayi":0 "@U.preverb.mayi@" > TACONJ_1-MAIN ;
-< "+PV/sohki":0 "@U.preverb.sohki@" > TACONJ_1-MAIN ;
-< "+PV/pisci":0 "@U.preverb.pisci@" > TACONJ_1-MAIN ;
-< "+PV/kihci":0 "@U.preverb.kihci@" > TACONJ_1-MAIN ;
-< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
-
-LEXICON TACONJ_2
-< "@U.preverb.NULL@" > TACONJ_2-MAIN ;
-< "+PV/ati":0 "@U.preverb.ati@" > TACONJ_2-MAIN ;
-< "+PV/nohte":0 "@U.preverb.nohte@" > TACONJ_2-MAIN ;
-< "+PV/kakwe":0 "@U.preverb.kakwe@" > TACONJ_2-MAIN ;
-< "+PV/maci":0 "@U.preverb.maci@" > TACONJ_2-MAIN ;
-< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_2-MAIN ;
-< "+PV/peyako":0 "@U.preverb.peyako@" > TACONJ_2-MAIN ;
-< "+PV/poni":0 "@U.preverb.poni@" > TACONJ_2-MAIN ;
-< "+PV/nitowi":0 "@U.preverb.nitowi@" > TACONJ_2-MAIN ;
-< "+PV/pe":0 "@U.preverb.pe@" > TACONJ_2-MAIN ;
-< "+PV/moci":0 "@U.preverb.moci@" > TACONJ_2-MAIN ;
-< "+PV/sapo":0 "@U.preverb.sapo@" > TACONJ_2-MAIN ;
-< "+PV/yoski":0 "@U.preverb.yoski@" > TACONJ_2-MAIN ;
-< "+PV/miyo":0 "@U.preverb.miyo@" > TACONJ_2-MAIN ;
-< "+PV/mayi":0 "@U.preverb.mayi@" > TACONJ_2-MAIN ;
-< "+PV/sohki":0 "@U.preverb.sohki@" > TACONJ_2-MAIN ;
-< "+PV/pisci":0 "@U.preverb.pisci@" > TACONJ_2-MAIN ;
-< "+PV/kihci":0 "@U.preverb.kihci@" > TACONJ_2-MAIN ;
-< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
-
-LEXICON TACONJ_5
-< "@U.preverb.NULL@" > TACONJ_5-MAIN ;
-< "+PV/ati":0 "@U.preverb.ati@" > TACONJ_5-MAIN ;
-< "+PV/nohte":0 "@U.preverb.nohte@" > TACONJ_5-MAIN ;
-< "+PV/kakwe":0 "@U.preverb.kakwe@" > TACONJ_5-MAIN ;
-< "+PV/maci":0 "@U.preverb.maci@" > TACONJ_5-MAIN ;
-< "+PV/nihta":0 "@U.preverb.nihta@" > TACONJ_5-MAIN ;
-< "+PV/peyako":0 "@U.preverb.peyako@" > TACONJ_5-MAIN ;
-< "+PV/poni":0 "@U.preverb.poni@" > TACONJ_5-MAIN ;
-< "+PV/nitowi":0 "@U.preverb.nitowi@" > TACONJ_5-MAIN ;
-< "+PV/pe":0 "@U.preverb.pe@" > TACONJ_5-MAIN ;
-< "+PV/moci":0 "@U.preverb.moci@" > TACONJ_5-MAIN ;
-< "+PV/sapo":0 "@U.preverb.sapo@" > TACONJ_5-MAIN ;
-< "+PV/yoski":0 "@U.preverb.yoski@" > TACONJ_5-MAIN ;
-< "+PV/miyo":0 "@U.preverb.miyo@" > TACONJ_5-MAIN ;
-< "+PV/mayi":0 "@U.preverb.mayi@" > TACONJ_5-MAIN ;
-< "+PV/sohki":0 "@U.preverb.sohki@" > TACONJ_5-MAIN ;
-< "+PV/pisci":0 "@U.preverb.pisci@" > TACONJ_5-MAIN ;
-< "+PV/kihci":0 "@U.preverb.kihci@" > TACONJ_5-MAIN ;
-< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
-
 
 ! Main verb stems
 
@@ -853,57 +1312,9 @@ LEXICON 12Pl_Imp
 +Del+12Pl+3PlO:%>âhkahkok # ;
 
 
-
-
-
-
-
 !! !! Transitive Inanimate (TI)
 !     =========================
 !     =========================
-
-LEXICON TICONJa
-< "@U.preverb.NULL@" > TICONJa-MAIN ;
-< "+PV/ati":0 "@U.preverb.ati@" > TICONJa-MAIN ;
-< "+PV/nohte":0 "@U.preverb.nohte@" > TICONJa-MAIN ;
-< "+PV/kakwe":0 "@U.preverb.kakwe@" > TICONJa-MAIN ;
-< "+PV/maci":0 "@U.preverb.maci@" > TICONJa-MAIN ;
-< "+PV/nihta":0 "@U.preverb.nihta@" > TICONJa-MAIN ;
-< "+PV/peyako":0 "@U.preverb.peyako@" > TICONJa-MAIN ;
-< "+PV/poni":0 "@U.preverb.poni@" > TICONJa-MAIN ;
-< "+PV/nitowi":0 "@U.preverb.nitowi@" > TICONJa-MAIN ;
-< "+PV/pe":0 "@U.preverb.pe@" > TICONJa-MAIN ;
-< "+PV/moci":0 "@U.preverb.moci@" > TICONJa-MAIN ;
-< "+PV/sapo":0 "@U.preverb.sapo@" > TICONJa-MAIN ;
-< "+PV/yoski":0 "@U.preverb.yoski@" > TICONJa-MAIN ;
-< "+PV/miyo":0 "@U.preverb.miyo@" > TICONJa-MAIN ;
-< "+PV/mayi":0 "@U.preverb.mayi@" > TICONJa-MAIN ;
-< "+PV/sohki":0 "@U.preverb.sohki@" > TICONJa-MAIN ;
-< "+PV/pisci":0 "@U.preverb.pisci@" > TICONJa-MAIN ;
-< "+PV/kihci":0 "@U.preverb.kihci@" > TICONJa-MAIN ;
-< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
-
-LEXICON TICONJ
-< "@U.preverb.NULL@" > TICONJ-MAIN ;
-< "+PV/ati":0 "@U.preverb.ati@" > TICONJ-MAIN ;
-< "+PV/nohte":0 "@U.preverb.nohte@" > TICONJ-MAIN ;
-< "+PV/kakwe":0 "@U.preverb.kakwe@" > TICONJ-MAIN ;
-< "+PV/maci":0 "@U.preverb.maci@" > TICONJ-MAIN ;
-< "+PV/nihta":0 "@U.preverb.nihta@" > TICONJ-MAIN ;
-< "+PV/peyako":0 "@U.preverb.peyako@" > TICONJ-MAIN ;
-< "+PV/poni":0 "@U.preverb.poni@" > TICONJ-MAIN ;
-< "+PV/nitowi":0 "@U.preverb.nitowi@" > TICONJ-MAIN ;
-< "+PV/pe":0 "@U.preverb.pe@" > TICONJ-MAIN ;
-< "+PV/moci":0 "@U.preverb.moci@" > TICONJ-MAIN ;
-< "+PV/sapo":0 "@U.preverb.sapo@" > TICONJ-MAIN ;
-< "+PV/yoski":0 "@U.preverb.yoski@" > TICONJ-MAIN ;
-< "+PV/miyo":0 "@U.preverb.miyo@" > TICONJ-MAIN ;
-< "+PV/mayi":0 "@U.preverb.mayi@" > TICONJ-MAIN ;
-< "+PV/sohki":0 "@U.preverb.sohki@" > TICONJ-MAIN ;
-< "+PV/pisci":0 "@U.preverb.pisci@" > TICONJ-MAIN ;
-< "+PV/kihci":0 "@U.preverb.kihci@" > TICONJ-MAIN ;
-< "+PV/nitawi":0 "@U.preverb.nitawi@" > IACONJ-MAIN ;
-
 
 LEXICON TICONJa-MAIN  !!= * @CODE@
 < "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
