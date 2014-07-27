@@ -18,9 +18,9 @@ The Plains Cree verbs are divided in four groups:
 
  LEXICON VerbPrefixes   divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
 
- * @U.mood.indep@ INDEPENDENT ;		 
- * @U.mood.cnj@   CONJUNCTIV ;		      
- *                IMPERATIV ;		     
+ * @U.mood.indep@ INDEPENDENT ;         
+ * @U.mood.cnj@   CONJUNCT ;             
+ *                IMPERATIVE ;          
  *                FUTURE_CONDITIONAL ;  
 
 
@@ -32,13 +32,23 @@ The Plains Cree verbs are divided in four groups:
 
  LEXICON FUTURE_CONDITIONAL  gives flags for future conditional (no prefix)
 
- LEXICON CONJUNCTIV  gives flag for conjunctive and prefix ê-
+ LEXICON CONJUNCT  gives flag for conjunctive and prefix ê-
 
 
  LEXICON CNJ_TENSE    gives prefixes and flags for tense in conjunctive
 
 
- LEXICON IMPERATIV    gives flag for imperative (no prefixes)
+ LEXICON IMPERATIVE    gives flag for imperative (no prefixes)
+
+Words marked GG are from Plains Cree Grammar guide and glossary
+
+
+
+ LEXICON PREVERBS   just adds the prefix boundary
+
+
+
+
 
 
 
@@ -46,8 +56,6 @@ The Plains Cree verbs are divided in four groups:
 Now, lexc directs us to the ../stems/verbs.lexc file,
 where we find all the verbal stems. The suffixes are then
 found in the section "Suffixes" right underneath.
-
-
 
 
 
@@ -62,15 +70,41 @@ found in the section "Suffixes" right underneath.
 
 
 
+
+Adding the flag diacritics for each subtype of conjugation class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Preverbs
+
+
+
+
+
+Directing to the various subtypes of conjugation classes
+
+
+
 Intransitive animate (IA)
 
- LEXICON IACONJ  splits in 4 moods
+ LEXICON IACONJ-MAIN  splits in 4 moods
 
+ LEXICON IACONJw-MAIN  splits in 4 moods, for verbs with final -w
 
-
- LEXICON IACONJw  splits in 4 moods, for verbs with final -w
-
- LEXICON IACONJn  splits in 4 moods, for verbs with final -n
+ LEXICON IACONJn-MAIN  splits in 4 moods, for verbs with final -n
 
 
 
@@ -112,9 +146,9 @@ Intransitive animate (IA)
 Intransitive inanimate (II)
 
 
- LEXICON IICONJ   adds the flag for no personprefixes
+ LEXICON IICONJ-MAIN   adds the flag for no personprefixes
 
- LEXICON IICONJ-SG   adds the flag for no personprefixes, only Sg forms
+ LEXICON IICONJ-SG-MAIN   adds the flag for no personprefixes, only Sg forms
 
 
  LEXICON IICONJFORMS  adds a baseform = Prs+3Sg
@@ -122,9 +156,9 @@ Intransitive inanimate (II)
  LEXICON IICONJFORMS-SG  adds a baseform = Prs+3Sg
 
 
- LEXICON IICONJw    w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
+ LEXICON IICONJw-MAIN    w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 
- LEXICON IICONJw-SG    w final, only Sg forms Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
+ LEXICON IICONJw-SG-MAIN    w final, only Sg forms Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 
 
  LEXICON IICONJ-CONTw  w final. Splits according to mood
@@ -188,9 +222,10 @@ Intransitive inanimate (II)
 The VTA verbs split in different moods.
 There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
- LEXICON TACONJ_1  
 
- * LEXICON TACONJ_2   splits in 4. The -aw shall be removed from some forms.
+ LEXICON TACONJ_1-MAIN  
+
+ * LEXICON TACONJ_2-MAIN   splits in 4. The -aw shall be removed from some forms.
 
 
 
@@ -242,18 +277,12 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
-
-
-
-
-
 Transitive Inanimate (TI)
 
+ * LEXICON TICONJa-MAIN  
 
- * LEXICON TICONJa  
 
-
- * LEXICON TICONJ   adds baseform and directs to IACONJ-CONT
+ * LEXICON TICONJ-MAIN   adds baseform and directs to IACONJ-CONT
 
 
  * LEXICON TICONJ-CONTa 
@@ -286,6 +315,3 @@ Transitive Inanimate (TI)
  * LEXICON TA_IMP_LONG_E 
 
  * LEXICON TI_imp-long-E 
-
-
-

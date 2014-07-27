@@ -68,8 +68,6 @@ found at the end of this file.
 
 
 
- * LEXICON AN_KININFL  The lexicon gives generic forms to kinship terms and then redirect to ANKINABS
-
 
  * LEXICON AN_KININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
 
@@ -79,7 +77,9 @@ found at the end of this file.
  * LEXICON ANPOSS-ATIM  is also there to handle the highly irregular atim and mistatim
 
 
- * LEXICON ANKINPOSS  
+ * LEXICON AN_KININFL  
+
+ * LEXICON AN_KININFL_PL  
 
  * LEXICON AN_DIMPOSS  Possessive suffixes to diminutives
 
@@ -130,6 +130,7 @@ LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON INABLGENERIC  generic forms Sg, Pl, Loc and diminutives
 
+ * LEXICON IN_DEP_INIT_M_DIM  for the inanimate possessive declension
 
 
  * LEXICON IN_DEP_INIT_M_SG  inanimate possessive declension, only Sg
