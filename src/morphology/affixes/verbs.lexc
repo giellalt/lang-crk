@@ -21,7 +21,7 @@
 
 !! The Plains Cree verbs are divided in four groups:
 
-!! # IA: Intransitive animate
+!! # AI: Intransitive animate
 !! # II: Intransitive inanimate
 !! # TA: Transitive animate
 !! # TI: Transitive inanimate
@@ -661,20 +661,20 @@ LEXICON VERBSTEMSPRE
 !! !!!Suffixes
 
 ! fst:
-! IACONJ:  stem
-! IACONJw: stem (excl w)
+! AICONJ:  stem
+! AICONJw: stem (excl w)
 ! 
 ! Wolv:
-! IACONJ_n
-! IACONJ_w
+! AICONJ_n
+! AICONJ_w
 
 
 ! Auxiliary lexica for the verb dump
 
-LEXICON IACONJ_n 
-IACONJ ;
-LEXICON IACONJ_v 
-IACONJ ;
+LEXICON AICONJ_n 
+AICONJ ;
+LEXICON AICONJ_v 
+AICONJ ;
 
 LEXICON IICONJ_n 
 IICONJ ;
@@ -698,14 +698,14 @@ TICONJ ;
 
 !! Adding the flag diacritics for each subtype of conjugation class
 
-LEXICON IACONJ
-< "@U.conj.IACONJ@" > PREVERBSFEATURES ;
+LEXICON AICONJ
+< "@U.conj.AICONJ@" > PREVERBSFEATURES ;
 
-LEXICON IACONJn
-< "@U.conj.IACONJn@" > PREVERBSFEATURES ;
+LEXICON AICONJn
+< "@U.conj.AICONJn@" > PREVERBSFEATURES ;
 
-LEXICON IACONJw
-< "@U.conj.IACONJw@" > PREVERBSFEATURES ;
+LEXICON AICONJw
+< "@U.conj.AICONJw@" > PREVERBSFEATURES ;
 
 LEXICON IICONJ-SG
 < "@U.conj.IICONJ-SG@" > PREVERBSFEATURES ;
@@ -1040,9 +1040,9 @@ LEXICON PREVERBSFEATURES2
 !! Directing to the various subtypes of conjugation classes
 
 LEXICON VERBMAIN
-< "@U.conj.IACONJ@" > IACONJ-MAIN ;
-< "@U.conj.IACONJn@" > IACONJn-MAIN ;
-< "@U.conj.IACONJw@" > IACONJw-MAIN ;
+< "@U.conj.AICONJ@" > AICONJ-MAIN ;
+< "@U.conj.AICONJn@" > AICONJn-MAIN ;
+< "@U.conj.AICONJw@" > AICONJw-MAIN ;
 < "@U.conj.IICONJ-SG@" > IICONJ-SG-MAIN ;
 < "@U.conj.IICONJ@" > IICONJ-MAIN ;
 < "@U.conj.IICONJw-SG@" > IICONJw-SG-MAIN ;
@@ -1056,49 +1056,49 @@ LEXICON VERBMAIN
 < "@U.conj.TICONJa@" > TICONJa-MAIN ;
 
 
-!! !!! Intransitive animate (IA)
+!! !!! Intransitive animate (AI)
 
-LEXICON IACONJ-MAIN !!= @CODE@ splits in 4 moods
-< "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
-+V+IA: IACONJ-CONT ;
+LEXICON AICONJ-MAIN !!= @CODE@ splits in 4 moods
+< "+V":0 "+AI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+AI: AICONJ-CONT ;
  
-LEXICON IACONJw-MAIN !!= @CODE@ splits in 4 moods, for verbs with final -w
-< "+V":w "+IA":0 "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@" >     # ; !Baseform
-+V+IA: IACONJ-CONT ;
+LEXICON AICONJw-MAIN !!= @CODE@ splits in 4 moods, for verbs with final -w
+< "+V":w "+AI":0 "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@" >     # ; !Baseform
++V+AI: AICONJ-CONT ;
 
-LEXICON IACONJn-MAIN !!= @CODE@ splits in 4 moods, for verbs with final -n
-< "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
-+V+IA: IACONJ-CONTn ;
-
-
-LEXICON IACONJ-CONT
-< "+Ind":0  "@U.mood.indep@" >  IA_IND ; !
-< "+Cnj":0  "@U.mood.cnj@" > IA_CNJ ; !
-< "+Imp":%>    "@U.mood.imp@"  >  IA_IMP ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > IA_FUT_CON ;
-
-LEXICON IACONJ-CONTn
-< "+Ind":0  "@U.mood.indep@" >  IA_INDn ; !
-< "+Cnj":0  "@U.mood.cnj@" > IA_CNJn ; !
-< "+Imp":%>     "@U.mood.imp@"  >  IA_IMPn ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > IA_FUT_CON ;
+LEXICON AICONJn-MAIN !!= @CODE@ splits in 4 moods, for verbs with final -n
+< "+V":0 "+AI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+AI: AICONJ-CONTn ;
 
 
-LEXICON IA_IND !!= @CODE@ First mode, indicative
-< "@U.tense.Prs@"    "+Prs":%>          > IA_IND_PRS ; !
-< "@U.tense.Prt@"    "+Prt":%>          > IA_IND_PRS ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > IA_IND_PRS ; !
-< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > IA_IND_PRS ; !
+LEXICON AICONJ-CONT
+< "+Ind":0  "@U.mood.indep@" >  AI_IND ; !
+< "+Cnj":0  "@U.mood.cnj@" > AI_CNJ ; !
+< "+Imp":%>    "@U.mood.imp@"  >  AI_IMP ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CON ;
 
-LEXICON IA_INDn !!= @CODE@ First mode, indicative
-< "@U.tense.Prs@"    "+Prs":%>          > IA_IND_PRSn ; !
-< "@U.tense.Prt@"    "+Prt":%>          > IA_IND_PRSn ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > IA_IND_PRSn ; !
-< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > IA_IND_PRSn ; !
+LEXICON AICONJ-CONTn
+< "+Ind":0  "@U.mood.indep@" >  AI_INDn ; !
+< "+Cnj":0  "@U.mood.cnj@" > AI_CNJn ; !
+< "+Imp":%>     "@U.mood.imp@"  >  AI_IMPn ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CON ;
+
+
+LEXICON AI_IND !!= @CODE@ First mode, indicative
+< "@U.tense.Prs@"    "+Prs":%>          > AI_IND_PRS ; !
+< "@U.tense.Prt@"    "+Prt":%>          > AI_IND_PRS ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > AI_IND_PRS ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > AI_IND_PRS ; !
+
+LEXICON AI_INDn !!= @CODE@ First mode, indicative
+< "@U.tense.Prs@"    "+Prs":%>          > AI_IND_PRSn ; !
+< "@U.tense.Prt@"    "+Prt":%>          > AI_IND_PRSn ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > AI_IND_PRSn ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > AI_IND_PRSn ; !
 
 
 
-LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
+LEXICON AI_IND_PRS !!= @CODE@ gives person suffixes
 < 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:n                 > # ; !
 < 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:n                 > # ; !
 <          "+3Sg":0 "@U.perspref.NULL@" 0:w                 > # ; !
@@ -1111,7 +1111,7 @@ LEXICON IA_IND_PRS !!= @CODE@ gives person suffixes
 <          "+4Pl":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ; !
 
 
-LEXICON IA_IND_PRSn !!= @CODE@ gives person suffixes
+LEXICON AI_IND_PRSn !!= @CODE@ gives person suffixes
 < 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:i 0:n                 > # ; !
 < 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:i 0:n                 > # ; !
 <          "+3Sg":0 "@U.perspref.NULL@"                    > # ; !
@@ -1134,7 +1134,7 @@ LEXICON IA_IND_PRSn !!= @CODE@ gives person suffixes
 !<  "+3Pl":0 "@U.verb.indFutInt3pl@"  0:w 0:a 0:k         > # ;   !
 !< "+3oPl":0 "@U.verb.indFutInt3opl@" 0:y 0:i 0:w 0:a     > # ;   !
 
-LEXICON IA_FUT_CON
+LEXICON AI_FUT_CON
   +1Sg:%>yâni  # ; 
   +2Sg:%>yani  # ; 
   +3Sg:%>ci    # ; 
@@ -1146,18 +1146,18 @@ LEXICON IA_FUT_CON
   +4Pl:%>yici  # ; 
 
 
-LEXICON IA_CNJ !!= @CODE@ Third mode, conjunctive
-< "+Prs":0          "@U.tense.Prs@"    > IA_CNJ_SUF ; !
-< "+Prt":0          "@U.tense.Prt@"    > IA_CNJ_SUF ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > IA_CNJ_SUF ; !
+LEXICON AI_CNJ !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > AI_CNJ_SUF ; !
+< "+Prt":0          "@U.tense.Prt@"    > AI_CNJ_SUF ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > AI_CNJ_SUF ; !
 
-LEXICON IA_CNJn !!= @CODE@ Third mode, conjunctive
-< "+Prs":0          "@U.tense.Prs@"    > IA_CNJ_SUFn ; !
-< "+Prt":0          "@U.tense.Prt@"    > IA_CNJ_SUFn ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > IA_CNJ_SUFn ; !
+LEXICON AI_CNJn !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > AI_CNJ_SUFn ; !
+< "+Prt":0          "@U.tense.Prt@"    > AI_CNJ_SUFn ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > AI_CNJ_SUFn ; !
 
 
-LEXICON IA_CNJ_SUF
+LEXICON AI_CNJ_SUF
      +1Sg:%>yân #;
      +2Sg:%>yan	#;
      +3Sg:%>t	#;
@@ -1169,7 +1169,7 @@ LEXICON IA_CNJ_SUF
     +4Pl:%>yit #;
 
 
-LEXICON IA_CNJ_SUFn
+LEXICON AI_CNJ_SUFn
      +1Sg:%>iyân #;
      +2Sg:%>iyan	#;
      +3Sg:%>hk	#;
@@ -1180,7 +1180,7 @@ LEXICON IA_CNJ_SUFn
      +3Pl:%>hkik #;
     +4Pl:%>iyit #;
 
-LEXICON IA_IMP  !!= @CODE@ Fourth mode, imperative
+LEXICON AI_IMP  !!= @CODE@ Fourth mode, imperative
 +Imm+2Sg:0   # ; !
 +Imm+12Pl:%>tân	  # ; !
 +Imm+2Pl:%>k	 # ; !
@@ -1188,7 +1188,7 @@ LEXICON IA_IMP  !!= @CODE@ Fourth mode, imperative
 +Del+12Pl:%>hkahk   # ; !
 +Del+2Pl:%>hkêk   # ; !
 
-LEXICON IA_IMPn  !!= @CODE@ Fourth mode, imperative
+LEXICON AI_IMPn  !!= @CODE@ Fourth mode, imperative
 +Imm+2Sg:i   # ; !
 +Imm+12Pl:%>îtân	  # ; !
 +Imm+2Pl:%>ik	 # ; !
@@ -1198,7 +1198,7 @@ LEXICON IA_IMPn  !!= @CODE@ Fourth mode, imperative
 
 
 
-LEXICON IA_IMP_LONG_E
+LEXICON AI_IMP_LONG_E
 < "+Imp":0 "@U.perspref.NULL@" > imp-long-E ;!
 
 LEXICON imp-long-E
@@ -1614,7 +1614,7 @@ LEXICON TICONJa-MAIN  !!= * @CODE@
 +V+TI: TICONJ-CONTa ;
 
  
-LEXICON TICONJ-MAIN  !!= * @CODE@ adds baseform and directs to IACONJ-CONT
+LEXICON TICONJ-MAIN  !!= * @CODE@ adds baseform and directs to TICONJ-CONT
 < "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TI: TICONJ-CONT ; 
 
@@ -1666,9 +1666,9 @@ LEXICON TI_FUT_CON !!= * @CODE@
 
 
 LEXICON TI_CNJ !!= @CODE@ Third mode, conjunctive
-< "+Prs":0          "@U.tense.Prs@"    > IA_CNJ_SUF ; !
-< "+Prt":0          "@U.tense.Prt@"    > IA_CNJ_SUF ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > IA_CNJ_SUF ; !
+< "+Prs":0          "@U.tense.Prs@"    > TI_CNJ_SUF ; ! earlier IA_CNJ_SUF must have been an error
+< "+Prt":0          "@U.tense.Prt@"    > TI_CNJ_SUF ; ! earlier IA_CNJ_SUF must have been an error
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TI_CNJ_SUF ; ! earlier IA_CNJ_SUF must have been an error
 
 LEXICON TI_CNJa !!= @CODE@ Third mode, conjunctive
 < "+Prs":0          "@U.tense.Prs@"    > TI_CNJ_SUF ; !
