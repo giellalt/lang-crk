@@ -111,7 +111,7 @@ Nominal MSP
  * +Px4Pl	 
  * +Dim/Der 
 
- * +IA       intransitive with animate subject,
+ * +AI       intransitive with animate subject,
  * +II       intransitive with inanimate subject,
  * +TA       transitive with animate object, and
  * +TI       transitive with inanimate object.
@@ -168,7 +168,6 @@ Conjugation classes
 
 
 Preverbs
-
 
 
 
@@ -385,7 +384,7 @@ The verbs are analysed as follows:
 
 
 The Plains Cree verbs are divided in four groups, but all of them are in the same verblexicon:
-# IA: Intransitive animate
+# AI: Intransitive animate
 # II: Intransitive inanimate
 # TA: Transitive animate
 # TI: Transitive inanimate
@@ -393,14 +392,14 @@ The Plains Cree verbs are divided in four groups, but all of them are in the sam
 
 
  LEXICON VERBSTEMS  here come all the verbstems \\
- !nipâw:nipâ IACONJw "sleep" ;  GG
- !mâto IACONJ "cry" ;  GG
- !mîciso IACONJ "eat" ;  Variation in length of first vowel, here following Okimâsis. !GG
- !waniskâw:waniskâ IACONJ "rise, get up" ;  
- !micisiw:micisi IACONJ "eat" ; 
- !nohtehkatew:nohtehkate IACONJ "be hungry" ; 
- !atoskêw:atoskê IACONJw "work" ;  test
- !nêhiyawêw:nêhiyawê IACONJw "work" ; 
+ !nipâw:nipâ AICONJw "sleep" ;  GG
+ !mâto AICONJ "cry" ;  GG
+ !mîciso AICONJ "eat" ;  Variation in length of first vowel, here following Okimâsis. !GG
+ !waniskâw:waniskâ AICONJ "rise, get up" ;  
+ !micisiw:micisi AICONJ "eat" ; 
+ !nohtehkatew:nohtehkate AICONJ "be hungry" ; 
+ !atoskêw:atoskê AICONJw "work" ;  test
+ !nêhiyawêw:nêhiyawê AICONJw "work" ; 
 
 
 
@@ -786,7 +785,7 @@ Plains Cree verb morphology
 
 The Plains Cree verbs are divided in four groups:
 
-# IA: Intransitive animate
+# AI: Intransitive animate
 # II: Intransitive inanimate
 # TA: Transitive animate
 # TI: Transitive inanimate
@@ -878,45 +877,45 @@ Directing to the various subtypes of conjugation classes
 
 
 
-Intransitive animate (IA)
+Intransitive animate (AI)
 
- LEXICON IACONJ-MAIN  splits in 4 moods
+ LEXICON AICONJ-MAIN  splits in 4 moods
 
- LEXICON IACONJw-MAIN  splits in 4 moods, for verbs with final -w
+ LEXICON AICONJw-MAIN  splits in 4 moods, for verbs with final -w
 
- LEXICON IACONJn-MAIN  splits in 4 moods, for verbs with final -n
-
-
-
-
-
- LEXICON IA_IND  First mode, indicative
-
- LEXICON IA_INDn  First mode, indicative
-
-
-
- LEXICON IA_IND_PRS  gives person suffixes
-
-
- LEXICON IA_IND_PRSn  gives person suffixes
+ LEXICON AICONJn-MAIN  splits in 4 moods, for verbs with final -n
 
 
 
 
 
+ LEXICON AI_IND  First mode, indicative
 
- LEXICON IA_CNJ  Third mode, conjunctive
-
- LEXICON IA_CNJn  Third mode, conjunctive
-
+ LEXICON AI_INDn  First mode, indicative
 
 
 
+ LEXICON AI_IND_PRS  gives person suffixes
 
- LEXICON IA_IMP   Fourth mode, imperative
 
- LEXICON IA_IMPn   Fourth mode, imperative
+ LEXICON AI_IND_PRSn  gives person suffixes
+
+
+
+
+
+
+ LEXICON AI_CNJ  Third mode, conjunctive
+
+ LEXICON AI_CNJn  Third mode, conjunctive
+
+
+
+
+
+ LEXICON AI_IMP   Fourth mode, imperative
+
+ LEXICON AI_IMPn   Fourth mode, imperative
 
 
 
@@ -1062,7 +1061,7 @@ Transitive Inanimate (TI)
  * LEXICON TICONJa-MAIN  
 
 
- * LEXICON TICONJ-MAIN   adds baseform and directs to IACONJ-CONT
+ * LEXICON TICONJ-MAIN   adds baseform and directs to TICONJ-CONT
 
 
  * LEXICON TICONJ-CONTa 
