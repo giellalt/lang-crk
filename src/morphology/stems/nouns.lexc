@@ -2749,7 +2749,7 @@ ospwâkanêhikan IN_DECL "stovepipe" ;
 ospwâkanihkân IN_DECL "stovepipe" ;
 ospwâkanis AN_DIM "little pipe" ;
 ostêsimâw AN_DECL "oldest brother, eldest brohter, firstborn male" ; ! singular cf. 1: nistês my older brother
-nistês AN_DECL "oldest brother, eldest brohter, firstborn male" ; ! OAHPA
+!nistês AN_DECL "oldest brother, eldest brohter, firstborn male" ; ! OAHPA
 ostêsimâwasinahikan IN_DECL "treaty, constitution" ;
 ostêsimâwasinahikêwin IN_DECL "writing or negotiating a treaty, constitution" ;
 ostêsimâwoyasiwêwin IN_DECL "constitution; treaty" ;
@@ -4271,16 +4271,16 @@ LEXICON DEP-M-INIT-STEMS ! dependent nouns
 LEXICON DEP-M-LIST
 !! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
 maniway:aniway IN_DEP_INIT_M_SG "cheek" ; !yaml !!= @CODE@	
-naniway:aniway IN_DEP_INIT_M_SG "cheek" ; !OAHPA	
+!naniway:aniway IN_DEP_INIT_M_SG "cheek" ; !OAHPA	
 !maniway+N+IN+Sg:aniway NOPREFIX "cheek" ; !yaml !!= @CODE@	
 mîpit:îpit IN_DEP_INIT_M "tooth" ; !yaml  !!= @CODE@	
-nîpit:îpit IN_DEP_INIT_M "tooth" ; !OAHPA	
+!nîpit:îpit IN_DEP_INIT_M "tooth" ; !OAHPA	
 mahkwan:ahkwan IN_DEP_INIT_M "heel" ;
-nahkwan:ahkwan IN_DEP_INIT_M "heel" ; !OAHPA
+!nahkwan:ahkwan IN_DEP_INIT_M "heel" ; !OAHPA
 mispiton:ispiton IN_DEP_INIT_M "arm" ; !yaml
-nispiton:ispiton IN_DEP_INIT_M "arm" ; !OAHPA
+!nispiton:ispiton IN_DEP_INIT_M "arm" ; !OAHPA
 micihciy:icihciy IN_DEP_INIT_M "hand" ; !
-nicihciy:icihciy IN_DEP_INIT_M "hand" ; !OAHPA
+!nicihciy:icihciy IN_DEP_INIT_M "hand" ; !OAHPA
 micihciy:icihcîsis INDEP-DERIV_M_SG "hand" ; 
 micihcîsis:icihcîsis IN_DEP_INIT_M "small hand" ; 
 micihcîs:icihcîs IN_DEP_INIT_M_DIM "small mouth" ; 
@@ -4290,27 +4290,27 @@ miscikwânis:iscikwânis IN_DEP_INIT_M_DIM "little head" ;
 misicis:isicis IN_DEP_INIT_M_DIM "small foot" ;
 mispiconis:ispiconis IN_DEP_INIT_M_DIM "little arm" ;
 mihkwâkan:ihkwâkan IN_DEP_INIT_M "face" ;
-nihkwâkan:ihkwâkan IN_DEP_INIT_M "face" ;!OAHPA
+!nihkwâkan:ihkwâkan IN_DEP_INIT_M "face" ;!OAHPA
 misit:isit IN_DEP_INIT_M "foot" ; !GGI
-nisit:isit IN_DEP_INIT_M "foot" ; !OAHPA
+!nisit:isit IN_DEP_INIT_M "foot" ; !OAHPA
 mistikwân:istikwân IN_DEP_INIT_M "head" ; !GGI
-nistikwân:istikwân IN_DEP_INIT_M "head" ; !OAHPA
+!nistikwân:istikwân IN_DEP_INIT_M "head" ; !OAHPA
 mîscakâs:îscakâs IN_DEP_INIT_M "hair" ; !GGI
-nîscakâs:îscakâs IN_DEP_INIT_M "hair" ; !OAHPA
+!nîscakâs:îscakâs IN_DEP_INIT_M "hair" ; !OAHPA
 mêscakâs:êscakâs IN_DEP_INIT_M "hair" ; !Wolv
 miskât:iskât IN_DEP_INIT_M "leg" ; !GGI
-niskât:iskât IN_DEP_INIT_M "leg" ; !OAHPA
+!niskât:iskât IN_DEP_INIT_M "leg" ; !OAHPA
 mitôn:itôn IN_DEP_INIT_M "mouth" ; !GGI
-nitôn:itôn IN_DEP_INIT_M "mouth" ; !OAHPA
+!nitôn:itôn IN_DEP_INIT_M "mouth" ; !OAHPA
 micônis:icônis IN_DEP_INIT_M_DIM "small hand" ;
 miskîsik:iskîsik IN_DEP_INIT_M "eye" ; !GGI
-niskîsik:iskîsik IN_DEP_INIT_M "eye" ; !OAHPA
+!niskîsik:iskîsik IN_DEP_INIT_M "eye" ; !OAHPA
 mikot:ikot IN_DEP_INIT_M "nose" ; !GGI
-nikot:ikot IN_DEP_INIT_M "nose" ; !OAHPA
+!nikot:ikot IN_DEP_INIT_M "nose" ; !OAHPA
 mihtawakay:ihtawakay IN_DEP_INIT_M "ear" ; !GGI
-nihtawakay:ihtawakay IN_DEP_INIT_M "ear" ; !OAHPA
+!nihtawakay:ihtawakay IN_DEP_INIT_M "ear" ; !OAHPA
 miyaw:iyaw IN_DEP_INIT_M "body" ; !GGI
-niyaw:iyaw IN_DEP_INIT_M "body" ; !OAHPA
+!niyaw:iyaw IN_DEP_INIT_M "body" ; !OAHPA
 macâs:acâs IN_DEP_INIT_M "small stomach, small belly" ;
 mahkwanêyâpiy:ahkwanêyâpiy IN_DEP_INIT_M "achilles tendon, tendon at back of heel" ;
 mahkwanikan:ahkwanikan IN_DEP_INIT_M "heelbone" ;
