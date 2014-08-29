@@ -140,7 +140,7 @@ LEXICON PVSLOT1
 < 0:â 0:p 0:i 0:h 0:c 0:i "@U.preverb1.apihci@" > PVSLOT2PRE "halfway" ;
 < 0:â 0:p 0:i 0:h 0:t 0:a 0:w 0:i "@U.preverb1.apihtawi@" > PVSLOT2PRE "half" ;
 < 0:â 0:p 0:i 0:h 0:t 0:â "@U.preverb1.apihta@" > PVSLOT2PRE "half" ;
-< 0:â 0:p 0:i 0:h 0:t 0:â 0:%- 0:k 0:î 0:s 0:i 0:k 0:â 0:w 0:i "@U.preverb1.apihta_kisikawi@" "@U.joiner.hyphen@" > PVSLOT2PRE "at noon" ;
+< 0:â 0:p 0:i 0:h 0:t 0:â 0:%- 0:k 0:î 0:s 0:i 0:k 0:â 0:w 0:i "@U.preverb1.apihta_kisikawi@" > PVSLOT2PRE "at noon" ;
 < 0:â 0:s 0:a 0:w 0:i "@U.preverb1.asawi@" > PVSLOT2PRE "in passing something on" ;
 < 0:â 0:s 0:ê "@U.preverb1.ase@" > PVSLOT2PRE "see: asê-" ;
 < 0:â 0:s 0:o 0:w 0:i "@U.preverb1.asowi@" > PVSLOT2PRE "in turn, in succession" ;
@@ -417,7 +417,7 @@ LEXICON PVSLOT2
 < 0:â 0:p 0:i 0:h 0:c 0:i "@U.preverb2.apihci@" > VERBSTEMSPRE "halfway" ;
 < 0:â 0:p 0:i 0:h 0:t 0:a 0:w 0:i "@U.preverb2.apihtawi@" > VERBSTEMSPRE "half" ;
 < 0:â 0:p 0:i 0:h 0:t 0:â "@U.preverb2.apihta@" > VERBSTEMSPRE "half" ;
-< 0:â 0:p 0:i 0:h 0:t 0:â 0:%- 0:k 0:î 0:s 0:i 0:k 0:â 0:w 0:i "@U.preverb2.apihta_kisikawi@" "@U.joiner.hyphen@" > VERBSTEMSPRE "at noon" ;
+< 0:â 0:p 0:i 0:h 0:t 0:â 0:%- 0:k 0:î 0:s 0:i 0:k 0:â 0:w 0:i "@U.preverb2.apihta_kisikawi@" > VERBSTEMSPRE "at noon" ;
 < 0:â 0:s 0:a 0:w 0:i "@U.preverb2.asawi@" > VERBSTEMSPRE "in passing something on" ;
 < 0:â 0:s 0:ê "@U.preverb2.ase@" > VERBSTEMSPRE "see: asê-" ;
 < 0:â 0:s 0:o 0:w 0:i "@U.preverb2.asowi@" > VERBSTEMSPRE "in turn, in succession" ;
