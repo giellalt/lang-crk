@@ -13,3 +13,4 @@ NR>=2 && $3 ~ /^NA-1/ { sub("-$","",$15);
     printf "\n"; }'
 
 
+less ~/Dropbox/CreeFST/Wolvengrey/Wolvengrey.csv | gawk 'BEGIN { FS="\t"; } $3 ~ /^VAI/ { sub("-$","",$15); diff=$1; sub($15,"",diff); if(diff=="") printf " "; else printf "%s ", diff; if($1!=$15) printf "%s:%s", $1, $15; else printf "%s", $1; printf " CONTLEX"; printf " \"%s\"", $4; printf " ;"; printf " ! %s %s", $10, $11; printf "\n"; }' | cut -f1 -d" " | sort | uniq -c | sort -nr | less
