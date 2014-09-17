@@ -15,17 +15,6 @@
 ## You should have received a copy of the GNU General Public License
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-####### Source file defs: ########
-
-# need to check way to list build targets like automake
-#! @param GT_REGEX_SRCS required, list all regular expressions used
-EXTRA_DIST=$(GT_REGEX_SRCS)
-
-####### Automake targets: ########
-
-# @param GT_REGEX_TARGETS required
-noinst_DATA=$(GT_REGEX_TARGETS)
-
 ####### HFST build rules: ########
 
 # By default, and for Xerox compatibility, all regexes are semicolon separated
@@ -39,9 +28,5 @@ noinst_DATA=$(GT_REGEX_TARGETS)
 .regex.xfst:
 	$(AM_V_XFST)$(PRINTF) "read regex @re\"$<\";\nsave stack $@\nquit\n" |\
 		$(XFST) $(XFSTFLAGS)
-
-####### Other targets: ###########
-clean-local:
-	-rm -f $(GT_REGEX_TARGETS)
 
 # vim: set ft=automake:
