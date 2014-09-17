@@ -15,25 +15,31 @@
 ## You should have received a copy of the GNU General Public License
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# Define variable before using it:
+####### Source file and target defs: ########
+
+# These will be included in the distribution:
+EXTRA_DIST=$(GT_FILTER_SRCS)
+
+# This is what we build:
+noinst_DATA=$(GT_FILTER_TARGETS)
+
+# Automatically detect the targets to be built:
 GT_FILTER_TARGETS=
 
-# List any local additions here:
-GT_FILTER_LOCAL_SRCS=
-
-# Add the target of local additions here:
-# HFST targets here:
+if WANT_APERTIUM
 if CAN_HFST
-GT_FILTER_TARGETS+=
+GT_FILTER_TARGETS+=$(patsubst %.regex,%.hfst,$(GT_FILTER_SRCS))
+endif # CAN_HFST
 
-endif
-
-# And Xerox targets here:
 if CAN_XFST
-GT_FILTER_TARGETS+=
+GT_FILTER_TARGETS+=$(patsubst %.regex,%.xfst,$(GT_FILTER_SRCS))
+endif # CAN_XFST
+endif # WANT_APERTIUM
 
-endif
+##########################################
+# General build rules included from here:#
 
-include $(top_srcdir)/am-shared/src-filters-dir-include.am
+include $(top_srcdir)/am-shared/regex-include.am
+include $(top_srcdir)/am-shared/silent_build-include.am
 
 # vim: set ft=automake:
