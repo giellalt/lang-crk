@@ -205,10 +205,10 @@ kihci% mitâtahtomtanaw: THOUSAND ;
 kihci% mitâtahtomitanaw: THOUSAND ;
 
 LEXICON THOUSAND
-% ayiwak% : UNDERTHOUSAND ;	   ! 1100-1999
-% ayiwak% :%0 TENS ;	   ! 1020-1099
-% ayiwak% :%0 TEENS ;	   ! 1010-1019
-% ayiwak% :%0%0 ONES ;	   ! 1001-1009
+% ayiwâk% : UNDERTHOUSAND ;	   ! 1100-1999
+% ayiwâk% :%0 TENS ;	   ! 1020-1099
+% ayiwâk% :%0 TEENS ;	   ! 1010-1019
+% ayiwâk% :%0%0 ONES ;	   ! 1001-1009
 :%0%0%0 ENDLEX ;	   ! 1000
 
 !===========================
@@ -237,10 +237,10 @@ mitâtahtomtanaw% :   HUNDRED ;
 LEXICON HUNDRED
 !      TENS ;
 !      TEENS ;
-ayiwak% :  TENS ;
-ayiwak% :  TEENS ;
+ayiwâk% :  TENS ;
+ayiwâk% :  TEENS ;
 !:%0   ONES ;
-ayiwak% :%0   ONES ;
+ayiwâk% :%0   ONES ;
 :%0%0 ENDLEX ;
 
 
@@ -271,7 +271,7 @@ kekâc% tepakohpim:69 NEARLY-TEN ;
 kekâc% ayinânewom:79 NEARLY-TEN ;
 kekâc% kekâ% mitâtahtom:89 NEARLY-TEN ;
 kekâ% mitâtahtom:90 NEARLY-TEN ;
-kekâ% mitatahtomtanaw% ayiwak% kekâ% mitâtaht:99 ENDLEX ;
+kekâ% mitatahtomtanaw% ayiwâk% kekâ% mitâtaht:99 ENDLEX ;
 kekâc-nistomi:29 NEARLY-TEN ;
 kekâc-nemi:39 NEARLY-TEN ;
 kekâc-nîyânanomi:49 NEARLY-TEN ;
