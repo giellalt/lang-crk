@@ -16,7 +16,7 @@
 #
 # sort | uniq -c | sort -k2,2n -k1,1nr -k3,3
 
-gawk-4.1.1 -v CLASS=$1 'BEGIN { FS="\t"; 
+gawk-4.1.1 -v CLASS=$1 'BEGIN { FS="\t"; OFS="\t";
   class=CLASS;
 }
 { if(match($3,class)!=0)
@@ -62,6 +62,7 @@ for(s in ndiff)
      PROCINFO["sorted_in"]="@val_str_asc";
      for(i in lemma)
         if(s==suffix[i])
+#          print line[i];
           printf "%s=%s\t%s%s%s\t\"%s\"\n", stem[i], suffix[i], lemma[i], lvs[i], stem[i], gloss[i]
      printf "\n";
    }
