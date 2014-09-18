@@ -1,0 +1,78 @@
+#!/bin/sh
+
+# gawk -v CLASS=$1 'BEGIN { FS="\t"; 
+#  class=CLASS;
+#  printf "SUMMARY for %s:\n\n", class; }
+#{ if(match($3,class)!=0)
+#  { sub("-$","",$15);
+#    diff=$1;
+#    sub("^"$15,"",diff);
+#    l=length(diff);
+#    if(diff=="")
+#      diff="0";
+#    print l, "-"diff;
+#  }
+#}' |
+#
+# sort | uniq -c | sort -k2,2n -k1,1nr -k3,3
+
+gawk-4.1.1 -v CLASS=$1 'BEGIN { FS="\t"; 
+  class=CLASS;
+}
+{ if(match($3,class)!=0)
+  { sub("-[ ]*$","",$15); sub("[ ]*$","",$1);
+     if(length($1)>length($15))
+       { diff=$1; lcmp=">";
+         sub("^"$15,"",diff);
+       }
+     else
+       { diff=$15;
+         sub("^"$1,"",diff);
+         if(diff=="")
+           lcmp="=";
+         else
+           lcmp="<";
+       }
+     if(diff=="")
+       diff="0";
+     if(!(diff in ndiff))
+       ndiff[diff]=0;
+     ndiff[diff]++;
+     line[++nr]=$0;
+     if(length($1)>length($15))
+       { lemma[nr]=$1;
+         stem[nr]=$15;
+       }
+     else
+       { lemma[nr]=$15;
+         stem[nr]=$1;
+       }
+     gloss[nr]=$4; suffix[nr]=diff; lvs[nr]=lcmp;
+  }
+}
+
+END { printf "SUMMARY of SUFFIX frequencies for CLASS: %s\n\n", class;
+PROCINFO["sorted_in"]="@val_num_desc";
+for(s in ndiff)
+   printf "%i\t-%s\n", ndiff[s], s;
+
+printf "\nSUFFIX-SPECIFIC DETAILS\n\n"; 
+for(s in ndiff)
+   { printf "SUFFIX: -%s\tN: %i\n", s, ndiff[s];
+     PROCINFO["sorted_in"]="@val_str_asc";
+     for(i in lemma)
+        if(s==suffix[i])
+          printf "%s=%s\t%s%s%s\t\"%s\"\n", stem[i], suffix[i], lemma[i], lvs[i], stem[i], gloss[i]
+     printf "\n";
+   }
+
+#  for(i=1; i<=nr; i++)
+#     printf "%s %s %s\n", ndiff[suffix[i]], "-"suffix[i], line[i];
+}' # |
+
+# sort -k1,1nr -k2,2
+
+# PROCINFO["sorted_in"]
+# If  this  element  exists in PROCINFO, then its value controls the order in which array elements are traversed in for loops.  Supported values
+# are "@ind_str_asc", "@ind_num_asc",  "@val_type_asc",  "@val_str_asc",  "@val_num_asc",  "@ind_str_desc",  "@ind_num_desc",  "@val_type_desc",
+# "@val_str_desc", "@val_num_desc", and "@unsorted".  The value can also be the name of any comparison function defined as follows:
