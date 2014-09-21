@@ -16,23 +16,27 @@
 #
 # sort | uniq -c | sort -k2,2n -k1,1nr -k3,3
 
-gawk -v CLASS=$1 'BEGIN { FS="\t"; 
-  class=CLASS;
+gawk -v CLASS=$1 -v REPORT=$2 'BEGIN { FS="\t"; 
+  class=CLASS; report=REPORT;
 }
 { if(match($3,class)!=0)
   { lemma=$1; stem=$15; pos=$3; gloss=$4;
     sub("-[ ]*$","",stem); sub("[ ]+$","",stem); sub("[ ]+","",lemma); sub("^[ ]+","",stem); sub("^[ ]+","",lemma);
-    if(stem=="") stem="0";
+    if(stem=="") stem="@";
     ll=length(lemma); ls=length(stem);
 
     if(ll>ls)
       { lcmp=">";
         split(lemma,segs,stem);
+        if(segs[1]==lemma && segs[2]=="")
+         { diff="?";
+           lcmp="<>";
+         }
         if(segs[1]=="" && segs[2]!="")
           { diff="-"segs[2];
             stem=stem"-";
           }
-        if(segs[1]!="" && segs[2]=="")
+        if(segs[1]!="" && segs[2]=="" && segs[1]!=lemma)
           { diff=segs[1]"-";
             stem="-"stem;
           }
@@ -41,9 +45,13 @@ gawk -v CLASS=$1 'BEGIN { FS="\t";
             stem="-"stem"-";
           }
       }
-    if(ll<ls)
+    if(ll<ls && index(stem," ;; ")==0)
       { lcmp="<";
         split(stem,segs,lemma);
+        if(segs[1]==stem && segs[2]=="")
+          { diff="?";
+            lcmp="<>";
+          }
         if(segs[1]=="" && segs[2]!="")
           { diff="-"segs[2];
             lemma=lemma"-";
@@ -57,6 +65,10 @@ gawk -v CLASS=$1 'BEGIN { FS="\t";
             lemma="-"lemma"-";
           }
       }
+    if(ll<ls && index(stem," ;; ")!=0)
+      { diff="?";
+        lcmp="<>";
+      }
     if(ll==ls && lemma==stem)
       { lcmp="="; diff="0"; }
     if(ll==ls && lemma!=stem)
@@ -69,39 +81,42 @@ gawk -v CLASS=$1 'BEGIN { FS="\t";
     
     ndiff[diff]++; 
     line[++nr]=$0;
-    lemmas[nr]=lemma; stems[nr]=stem; glosses[nr]=$4; suffixes[nr]=diff; lcmps[nr]=lcmp;
+    lemmas[nr]=lemma; stems[nr]=stem; pos2[nr]=pos; glosses[nr]=gloss; suffixes[nr]=diff; lcmps[nr]=lcmp;
   }
 }
 
-END { printf "SUMMARY of LEMMA/STEM difference frequencies for CLASS: %s\n\n", class;
-PROCINFO["sorted_in"]="@val_num_desc";
-for(s in ndiff)
-  printf "%i\t%s\n", ndiff[s], s;
-
-printf "\nDIFFERENCE-SPECIFIC DETAILS\n\n"; 
-for(s in ndiff)
-   { affix="DIFFERENCE(s)";
-     if(match(s,"-$")!=0) affix="PREFIX(es)";
-     if(match(s,"^-")!=0) affix="SUFFIX(es)";
-     if(match(s,"- -")!=0) affix="CIRCUMFIX(es)";
-     printf "%s: %s\tN: %i\n", affix, s, ndiff[s];
-     PROCINFO["sorted_in"]="@val_str_asc";
-     for(i in lemmas)
-        if(s==suffixes[i])
-          { # if(lcmps[i]=="<")
-            #   printf "%s:%s", lemmas[i], suffixes[i];
-            # if(lcmps[i]==">")
-            #   printf "%s:%s", stems[i], suffixes[i];
-            # if(lcmps[i]=="=")
-            #   printf "%s:0", stems[i];
-            # if(lcmps[i]=="<>")
-            #   printf "0:0";
-            printf "%s %s %s\t\"%s\"\n", lemmas[i], lcmps[i], stems[i], glosses[i];
-          }
-     printf "\n";
-   }
-
-}'
+END { if(report!="specific")
+{ printf "SUMMARY of LEMMA/STEM differences and their frequencies for CLASS: %s (N=%i)\n\n", class, nr;
+  PROCINFO["sorted_in"]="@val_num_desc";
+  for(s in ndiff)
+     printf "%i\t%s\n", ndiff[s], s;
+  printf "\n";
+}
+if(report!="summary")
+{ printf "DIFFERENCE-SPECIFIC DETAILS\n\n"; 
+  for(s in ndiff)
+     { affix="DIFFERENCE(s)";
+       if(match(s,"-$")!=0) affix="PREFIX(es)";
+       if(match(s,"^-")!=0) affix="SUFFIX(es)";
+       if(match(s,"- -")!=0) affix="CIRCUMFIX(es)";
+       if(s=="0") affix="EQUIVALENT";
+       printf "%s: %s\tN: %i\n", affix, s, ndiff[s];
+       PROCINFO["sorted_in"]="@val_str_asc";
+       for(i in lemmas)
+          if(s==suffixes[i])
+            { # if(lcmps[i]=="<")
+              #   printf "%s:%s", lemmas[i], suffixes[i];
+              # if(lcmps[i]==">")
+              #   printf "%s:%s", stems[i], suffixes[i];
+              # if(lcmps[i]=="=")
+              #   printf "%s:0", stems[i];
+              # if(lcmps[i]=="<>")
+              #   printf "0:0";
+              printf "%s %s %s\t%s\t\"%s\"\n", lemmas[i], lcmps[i], stems[i], pos2[i], glosses[i];
+            }
+       printf "-----\n";
+     }
+} }'
 
 # PROCINFO["sorted_in"]
 # If  this  element  exists in PROCINFO, then its value controls the order in which array elements are traversed in for loops.  Supported values
