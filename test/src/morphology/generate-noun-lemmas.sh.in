@@ -54,26 +54,28 @@ Fail=0
 for f in $fsttype; do
 	if [ $f == "xfst" ]; then
 		lookuptool="@LOOKUP@ -q -flags mbTT"
+		suffix="xfst"
 	elif [ $f == "hfst" ]; then
 		lookuptool="@HFST_LOOKUP@ -q"
+		suffix="hfstol"
 	else
 	    Fail=1
 		printf "ERROR: Unknown fst type! "
 	    echo "$f - FAIL"
 	    continue
 	fi
-	if [ -f "$generatorfile.$f" ]; then
+	if [ -f "$generatorfile.$suffix" ]; then
 		let "transducer_found += 1"
 
 ###### Test non-comopunds: #######
 		# generate animate nouns:
-		sed 's/$/+N+AN+Sg/' $lemmas | $lookuptool $generatorfile.$f \
+		sed 's/$/+N+AN+Sg/' $lemmas | $lookuptool $generatorfile.$suffix \
 			| cut -f2 | fgrep -v "+N+Sg" | grep -v "^$" | sort -u \
 			> $generatedlemmas.$f.txt 
 		# generate inanimate nouns:
-		sed 's/$/+N+AN+Sg/' $lemmas | $lookuptool $generatorfile.$f \
+		sed 's/$/+N+AN+Sg/' $lemmas | $lookuptool $generatorfile.$suffix \
 			| cut -f2 | grep "N+" | cut -d "+" -f1 | sed 's/$/+N+IN+Sg/' \
-			| $lookuptool $generatorfile.$f | cut -f2 \
+			| $lookuptool $generatorfile.$suffix | cut -f2 \
 			| grep -v "^$" >> $generatedlemmas.$f.txt 
 
 ###### Collect results: #######
