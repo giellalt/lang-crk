@@ -79,13 +79,13 @@ define ywêComposeRule [ ᔦ ᐧ ]   -> [ y w ê ] ;
 define ywîComposeRule [ ᔩ ᐧ ]   -> [ y w î ] ;
 define ywôComposeRule [ ᔫ ᐧ ]   -> [ y w ô ] ;
 	
-   define waComposeRule [ ᐊ ᐧ ]   -> [ w a ] ;
-   define wiComposeRule [ ᐃ ᐧ ]   -> [ w i ] ;
-   define woComposeRule [ ᐅ ᐧ ]   -> [ w o ] ;
-   define wâComposeRule [ ᐋ ᐧ ]   -> [ w â ] ;
-   define wêComposeRule [ ᐁ ᐧ ]   -> [ w ê ] ;
-   define wîComposeRule [ ᐄ ᐧ ]   -> [ w î ] ;
-   define wôComposeRule [ ᐆ ᐧ ]     -> [ w ô ] ;
+define waComposeRule [ ᐊ ᐧ ]   -> [ w a ] ;
+define wiComposeRule [ ᐃ ᐧ ]   -> [ w i ] ;
+define woComposeRule [ ᐅ ᐧ ]   -> [ w o ] ;
+define wâComposeRule [ ᐋ ᐧ ]   -> [ w â ] ;
+define wêComposeRule [ ᐁ ᐧ ]   -> [ w ê ] ;
+define wîComposeRule [ ᐄ ᐧ ]   -> [ w î ] ;
+define wôComposeRule [ ᐆ ᐧ ]   -> [ w ô ] ;
 		
 	
 	
@@ -500,5 +500,3 @@ read regex [ cwaComposeRule
 .o. rRule 
 
 .o. FullStopRule ] ; 
- 
-invert net
