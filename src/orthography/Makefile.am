@@ -14,6 +14,7 @@ GT_ORTHOGRAPHIC_REGEX_SRCS=\
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
 		allcaps.xfscript      \
 		downcase-derived_proper-strings.xfscript \
+		latin2syllabics.xfscript \
 		syllabics2latin.xfscript
 
 # General build rules included from here:

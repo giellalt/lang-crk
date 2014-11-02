@@ -62,34 +62,34 @@ endif # CAN_HFST
 #### Add language-specific build rules here: ####
 
 analyser-gt-desc-syll.hfst: analyser-gt-desc.tmp.hfst \
-							orthography/syllabics2latin.hfst
+							orthography/syllabics2latin.compose.hfst
 	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) -F -1 $< \
-			-2 orthography/syllabics2latin.hfst \
+			-2 orthography/syllabics2latin.compose.hfst \
 		| $(HFST_MINIMIZE) $(HFST_FLAGS) \
 		| $(HFST_INVERT) $(HFST_FLAGS)\
 		-o $@
 
 generator-gt-norm-syll.hfst: generator-gt-norm.tmp.hfst \
-							 orthography/latin2syllabics.hfst
+							 orthography/latin2syllabics.compose.hfst
 	$(AM_V_GEN)$(HFST_INVERT) $(HFST_FLAGS) \
-			orthography/latin2syllabics.hfst \
+			orthography/latin2syllabics.compose.hfst \
 		| $(HFST_COMPOSE) $(HFST_FLAGS) -F -1 $< \
 		| $(HFST_MINIMIZE) $(HFST_FLAGS) \
 		-o $@
 
 analyser-gt-desc-syll.xfst: analyser-gt-desc.xfst \
-							orthography/latin2syllabics.xfst
+							orthography/latin2syllabics.lookup.xfst
 	$(AM_V_GEN)$(PRINTF) "read regex \
 			    @\"$<\" \
-			.o. @\"orthography/latin2syllabics.xfst\".i        \
+			.o. @\"orthography/latin2syllabics.lookup.xfst\".i        \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST) -q
 
 generator-gt-norm-syll.xfst: generator-gt-norm.xfst \
-							 orthography/latin2syllabics.xfst
+							 orthography/latin2syllabics.lookup.xfst
 	$(AM_V_GEN)$(PRINTF) "read regex \
-			    @\"orthography/latin2syllabics.xfst\"        \
+			    @\"orthography/latin2syllabics.lookup.xfst\"        \
 			.o. @\"$<\" \
 			;\n\
 		 save stack $@\n\
