@@ -12,7 +12,8 @@ if CAN_YAML_TEST
 # Add your shell scripts for running python-based tests below here, so that
 # they are only run if the preconditions for yaml tests are met.
 
-TESTS+=run-initcaps-genyaml-testcases.sh
+TESTS+=run-initcaps-genyaml-testcases.sh \
+       run-latin2syll-genyaml-testcases.sh
 
 endif # CAN_YAML_TEST
 
