@@ -1344,22 +1344,57 @@ LEXICON II_IND_PERS-PL   !!= @CODE@ -n final
 +4Pl:%>iyiwa # ;
 
 LEXICON II_CNJ_PERSw-SG   !!= @CODE@ w final 
-+3Sg:%>k # ;
++3Sg:%>%^NIIk # ;
 +4Sg:%>yik # ;
 
 LEXICON II_CNJ_PERSw-PL   !!= @CODE@ w final 
-+3Pl:%>ki # ;
++3Pl:%>%^NIIki # ;
 +4Pl:%>yiki # ;
 
 
 
 LEXICON II_CNJ_PERS-SG   !!= @CODE@ -n final 
-+3Sg:%>k # ;
++3Sg:%>%^NIIk # ;
 +4Sg:%>iyik # ;
 
 LEXICON II_CNJ_PERS-PL   !!= @CODE@ -n final 
-+3Pl:%>ki # ;
++3Pl:%>%^NIIki # ;
 +4Pl:%>iyiki # ;
+
+
+
+
+! LEXICON II_IND_PERSv-SG   !!= @CODE@ v final 
+! +3Sg:%>w # ;
+! +4Sg:%>yiw # ;
+! 
+! LEXICON II_IND_PERSv-PL   !!= @CODE@ v final 
+! +3Pl:%>wa # ;
+! +4Pl:%>yiwa # ;
+! 
+! LEXICON II_CNJ_PERSv-SG   !!= @CODE@ v final 
+! +3Sg:%>%^NIIk # ;
+! +4Sg:%>yik # ;
+! 
+! LEXICON II_CNJ_PERSv-PL   !!= @CODE@ v final 
+! +3Pl:%>%^NIIki # ;
+! +4Pl:%>yiki # ;
+! 
+! LEXICON II_IND_PERSan-SG   !!= @CODE@ -an final 
+! +3Sg: # ;
+! +4Sg:%>iyiw # ;
+! 
+! LEXICON II_IND_PERSan-PL   !!= @CODE@ -an final 
+! +3Pl:%>wa # ;
+! +4Pl:%>iyiwa # ;
+! 
+! LEXICON II_CNJ_PERSan-SG   !!= @CODE@ -an final 
+! +3Sg:%>%^NIIk # ;
+! +4Sg:%>iyik # ;
+! 
+! LEXICON II_CNJ_PERSan-PL   !!= @CODE@ -an final 
+! +3Pl:%>%^NIIki # ;
+! +4Pl:%>iyiki # ;
 
 
 
