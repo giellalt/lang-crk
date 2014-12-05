@@ -1727,15 +1727,15 @@ LEXICON TI_IMP  !!= @CODE@ Fourth mode, imperative
 
 
 LEXICON TI_imp !!= * @CODE@
-+Imm+2Sg:   # ; !
++Imm+2Sg:0   # ; !
 +Imm+12Pl:%>%^EAtân	  # ; !
 +Imm+2Pl:%>mok   # ; !
 +Del+2Sg:%>môhkan   # ; !
 +Del+12Pl:%>môhkahk	  # ; !
 +Del+2Pl:%>môhkêk   # ; !
 
-LEXICON TA_IMP_LONG_E !!= * @CODE@
-< "+Imp":0 "@U.perspref.NULL@" > imp-long-E ;!
+LEXICON TI_IMP_LONG_E !!= * @CODE@
+< "+Imp":0 "@U.perspref.NULL@" > TI_imp-long-E ;!
 
 LEXICON TI_imp-long-E !!= * @CODE@
 +Imm+2Sg:%>mohkan  # ; !
