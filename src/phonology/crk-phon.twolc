@@ -159,22 +159,21 @@ Vx:â <=> _ %>:0 %^EA:0 ;
 a:ê <=> _ %>:0 %^EA:0 ; ! wâpahta:niwâpahtên
 
 
-"n:0 before k-suffix"
+! "n:0 before k-suffix"
 !! __@RULENAME@__
-n:0 <=>  [ i | o ] _ %>:0 ( h ) k ; !pimisin+hk Wolvengrey p. 394 "n usually/sometimes dropped", not common in VAI-stems
+! n:0 <=>  [ i | o ] _ %>:0 ( h ) k ; !pimisin+hk Wolvengrey p. 394 "n usually/ sometimes dropped", not common in VAI-stems
 	
-"n:h before k-suffix"
+! "n:h before k-suffix"
 !! __@RULENAME@__
-n:h <=> a _ %>:0 k ; !mâyâtan:emâyâtahk Wolvengrey p. 393 II, but also in VAI-stems
+! n:h <=> a _ %>:0 k ; !mâyâtan:emâyâtahk Wolvengrey p. 393 II, but also in VAI-stems
 
 "t3:s in VTA-4 verbs"
 t3:s <=> _ %>:0 %^TS:0 i ;
 
-"n:h or n:0 before k suf in VII"
+"n:h before k suf in VII"
+!! __@RULENAME@__
 n:h <=> a _ %>:0 %^NII:0 k ;
-n:0 <=> [ o: | i: ] _ %>:0 %^NII:0 k ;
 
-
-
-
-
+"n:0 before k suf in VII"
+!! __@RULENAME@__
+n:0 <=> [ o | i ] _ %>:0 %^NII:0 k ;
