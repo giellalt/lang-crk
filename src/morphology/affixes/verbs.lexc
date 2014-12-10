@@ -81,7 +81,7 @@ LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
 !! Words marked GG are from Plains Cree Grammar guide and glossary
 
 
-! ! Preverbs
+!! !! Preverbs
 !     ==========
 
 LEXICON PREVERBS  !!= @CODE@ just adds the prefix boundary
@@ -660,13 +660,13 @@ LEXICON VERBSTEMSPRE
 
 !! !!!Suffixes
 
-! fst:
-! AICONJ:  stem
-! AICONJw: stem (excl w)
+!! fst:
+!! AICONJ:  stem
+!! AICONJw: stem (excl w)
 ! 
-! Wolv:
-! AICONJ_n
-! AICONJ_w
+!! Wolv:
+!! AICONJ_n
+!! AICONJ_w
 
 
 ! Auxiliary lexica for the verb dump
@@ -741,7 +741,7 @@ LEXICON TICONJa
 < "@U.conj.TICONJa@" > PREVERBSFEATURES ;
 
 
-!! !! Preverbs
+!! !!Preverbs
 
 LEXICON PREVERBSFEATURES
 < "@U.preverb1.NULL@" > PREVERBSFEATURES2 ;
@@ -1300,16 +1300,16 @@ LEXICON II_IND !!= @CODE@ indicative
 < "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERS-PL ; !
 < "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERS-SG ; !
 < "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERS-PL ; !
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-SG ; !
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-PL ; !
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; !
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-PL ; !
+!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-SG ; 
+!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-PL ; 
+!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; 
+!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-PL ; 
 
 LEXICON II_IND-SG !!= @CODE@ indicative
 < "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERS-SG ; !
 < "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERS-SG ; !
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-SG ; !
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; !
+!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-SG ; 
+!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; 
 
 
 LEXICON II_CNJ !!= @CODE@ conjunctive
@@ -1364,35 +1364,35 @@ LEXICON II_CNJ_PERS-PL   !!= @CODE@ -n final
 
 
 
-! LEXICON II_IND_PERSv-SG   !!= @CODE@ v final 
+! LEXICON II_IND_PERSv-SG   !@CODE@ v final 
 ! +3Sg:%>w # ;
 ! +4Sg:%>yiw # ;
 ! 
-! LEXICON II_IND_PERSv-PL   !!= @CODE@ v final 
+! LEXICON II_IND_PERSv-PL   !@CODE@ v final 
 ! +3Pl:%>wa # ;
 ! +4Pl:%>yiwa # ;
 ! 
-! LEXICON II_CNJ_PERSv-SG   !!= @CODE@ v final 
+! LEXICON II_CNJ_PERSv-SG   !@CODE@ v final 
 ! +3Sg:%>%^NIIk # ;
 ! +4Sg:%>yik # ;
 ! 
-! LEXICON II_CNJ_PERSv-PL   !!= @CODE@ v final 
+! LEXICON II_CNJ_PERSv-PL   !@CODE@ v final 
 ! +3Pl:%>%^NIIki # ;
 ! +4Pl:%>yiki # ;
 ! 
-! LEXICON II_IND_PERSan-SG   !!= @CODE@ -an final 
+! LEXICON II_IND_PERSan-SG   !@CODE@ -an final 
 ! +3Sg: # ;
 ! +4Sg:%>iyiw # ;
 ! 
-! LEXICON II_IND_PERSan-PL   !!= @CODE@ -an final 
+! LEXICON II_IND_PERSan-PL   !@CODE@ -an final 
 ! +3Pl:%>wa # ;
 ! +4Pl:%>iyiwa # ;
 ! 
-! LEXICON II_CNJ_PERSan-SG   !!= @CODE@ -an final 
+! LEXICON II_CNJ_PERSan-SG   !@CODE@ -an final 
 ! +3Sg:%>%^NIIk # ;
 ! +4Sg:%>iyik # ;
 ! 
-! LEXICON II_CNJ_PERSan-PL   !!= @CODE@ -an final 
+! LEXICON II_CNJ_PERSan-PL   !@CODE@ -an final 
 ! +3Pl:%>%^NIIki # ;
 ! +4Pl:%>iyiki # ;
 
@@ -1400,9 +1400,9 @@ LEXICON II_CNJ_PERS-PL   !!= @CODE@ -n final
 
 
 !LEXICON II_IND_PERS 
-!    :%>k # ; ! Both these entries now give wrong forms (ê-misponk pro ê-mispok etc.)
-!+Fut:%>i # ; ! We need to decide whether to solve it in lexc (more lexica) or
-!             ! in twolc (more abstract representation)
+!    :%>k # ;  Both these entries now give wrong forms (ê-misponk pro ê-mispok etc.)
+!+Fut:%>i # ;  We need to decide whether to solve it in lexc (more lexica) or
+!              in twolc (more abstract representation)
 
 
 !! !!!Transitive animate (TA)
