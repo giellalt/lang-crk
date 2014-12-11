@@ -1,0 +1,134 @@
+!!!How to handle variation in lexc
+
+!!Different orthographies
+lexc is written with SRO orthography
+
+From this we can compile FSTs with systematic variation:
+* macron-FST 
+* circumflex-FST
+* no-length-marking-FST
+
+Words with another orthography, from other dialects
+* if systematic, it can be done in the compiling process
+* if not systematic: use tag, e.g. Dial/Mask. They with be included in the compiling when we ask for it.
+
+!!Non-normative forms: Err/Sub
+These are forms, which don't follow orthographic prinsips, but still we find them in texts and we want them to be analysed.
+
+!ex.: "fálahas" is a non-normative form of the lemma "fáláhas"
+The normative form on the left side, and so the lemma in the analysis will be a normative form and can be found e.g. in the dictionary.
+
+{{fáláhas:fáláhass JOHTOLAT ; }} \\
+{{fáláhas+Err/Sub:fálahass JOHTOLAT ; }}
+
+The descriptive FST will inflect both fálahas and fáláhas, but the line with the tag Err/Sub is removed from the normative analyser/generator during the compilation prosess. 
+{{{
+fáláhasat 
+fáláhasat	fáláhas+N+Pl+Nom
+
+fálahasat
+fálahasat	fáláhas+Err/Sub+N+Pl+Nom
+}}}
+
+The normative analyser:
+{{{
+fáláhasat 
+fáláhasat	fáláhas+N+Pl+Nom
+
+
+fálahasat
+fálahasat	fálahasat	+?
+}}}
+
+
+
+!!The word itself is non-normative: Err/LexSub
+Ex. brillefutterála which is a slightly adapated loanword from Norwegian to North Saami. The normative word is čalbmelássaskuohppu
+
+{{brillefutterála+Use/LexSub:brille#futterál SOSIAL}}
+
+The descriptive FST will inflect brillefutterála, but the line with the tag Err/LexSub is removed from the normative analyser/generator during the compilation prosess. 
+{{{
+brillefutterálat 
+brillefutterálat	brillefutterála+N+Pl+Nom
+}}}
+
+The normative analyser:
+{{{
+brillefutterálat
+brillefutterálat	brillefutterálat	+?
+}}}
+
+
+!!Lexical homonymi: how to identify the correct lemma e.g. in a dictionary
+Two lemmas, which base forms are homonyms, have different paradigms and semantics. 
+
+!The lemmas belong to different stem-categories: Add morphogical tags
+Example from North Saami. G3 tag for Grade 3 for consonantgradation 
+
+{{beassi:beassi BEARRI "reir" ;}} \\
+{{beassi+G3:beas'si AIGI "never" ; }}
+ 
+Analysis:
+{{{
+beassi
+beassi	beassi+N+G3+Sg+Nom
+beassi	beassi+N+G3+Sg+Acc
+beassi	beassi+N+G3+Sg+Gen
+beassi	beassi+N+Sg+Nom
+
+beasi
+beasi	beassi+N+Sg+Gen
+beasi	beassi+N+Sg+Acc
+}}}
+ 
+ 
+Example from North Saami. NomAg tag for derivation Nomen Agent 
+
+{{vuovdi+NomAg:vuovdi ACTOR "salesman" ;}} \\
+{{vuovdi+G3:vuov'di AIGI "forest" ; }}
+
+Analysis:
+{{{
+vuovdi
+vuovdi	vuovdi+N+NomAg+Sg+Nom
+vuovdi	vuovdi+N+NomAg+Sg+Acc
+vuovdi	vuovdi+N+NomAg+Sg+Gen
+vuovdi	vuovdi+N+Sg+Nom
+
+vuovddi
+vuovddi	vuovdi+N+Sg+Gen
+vuovddi	vuovdi+N+Sg+Acc
+}}}
+ 
+
+!There is no reason for adding morphogical tags: Add homonymi tags
+Example from South Saami:
+
+{{govledh+Hom1:govl TJOEHPEDH_TV "höra" ;}} \\
+{{govledh+Hom2:govl VÅÅJNEDH "höras" ;}}
+
+Analysis:
+
+{{{
+gåvla
+gåvla	govledh+Hom1+V+TV+Ind+Prs+Sg3
+
+govloe
+govloe	govledh+Hom2+V+IV+Ind+Prs+Sg3
+}}}
+
+
+!!Orthograpic variants of the same lemma: tags v1, v2...
+
+Orthograpic variants of the same lemma, for base form and at least parts of the inflection paradigm, should be under the same lemma. But we can add a variants tag as a help to recognize the correct base form for the paradigm.
+
+Example from North Saami. 
+
+{{mandáhta+v2:mandáhtta GOAHTI-A ; }} \\
+{{mandáhta+v1:mandáhta STAHTA ;}}
+
+If the base forms are identical, but there are variants in the inflection, we don't use these tags.
+
+
+
