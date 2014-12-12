@@ -1221,6 +1221,8 @@ LEXICON IICONJ-MAIN  !!= @CODE@ adds the flag for no personprefixes
 LEXICON IICONJ-SG-MAIN  !!= @CODE@ adds the flag for no personprefixes, only Sg forms
 < "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS-SG ;
 
+LEXICON IICONJ-PL-MAIN  !!= @CODE@ adds the flag for no personprefixes, only Pl forms
+< "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS-PL ;
 
 LEXICON IICONJFORMS !!= @CODE@ adds a baseform = Prs+3Sg
 < "@U.tense.Prs@" "@U.mood.indep@" >  # ; !baseform
@@ -1230,6 +1232,10 @@ LEXICON IICONJFORMS-SG !!= @CODE@ adds a baseform = Prs+3Sg
 < "@U.tense.Prs@" "@U.mood.indep@" >  # ; !baseform
  IICONJ-CONT-SG ; 
 
+LEXICON IICONJFORMS-PL !!= @CODE@ adds a baseform = Prs+3Pl
+< "@U.tense.Prs@" "@U.mood.indep@" >  # ; !baseform
+ IICONJ-CONT-PL ; 
+
 
 LEXICON IICONJw-MAIN  !!= @CODE@  w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 < "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
@@ -1238,6 +1244,10 @@ LEXICON IICONJw-MAIN  !!= @CODE@  w final. Adds a baseform = Prs+3Sg and more di
 LEXICON IICONJw-SG-MAIN  !!= @CODE@  w final, only Sg forms Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 < "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
 < "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw-SG ;
+
+LEXICON IICONJw-PL-MAIN  !!= @CODE@  w final, only Pl forms Adds a baseform = Prs+3Pl and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
+< "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
+< "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw-PL ;
 
 
 LEXICON IICONJ-CONTw !!= @CODE@ w final. Splits according to mood
@@ -1251,6 +1261,10 @@ LEXICON IICONJ-CONTw-SG !!= @CODE@ w final. Splits according to mood
 < "+Cnj":0  "@U.mood.cnj@" > II_CNJw-SG ; !
 < "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw-SG ;!
 
+LEXICON IICONJ-CONTw-PL !!= @CODE@ w final. Splits according to mood
+< "+Ind":0  "@U.mood.indep@" >  II_INDw-PL ; !
+< "+Cnj":0  "@U.mood.cnj@" > II_CNJw-PL ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw-PL ;!
 
 LEXICON IICONJ-CONT !!= @CODE@ splits according to mood
 < "+Ind":0  "@U.mood.indep@" >  II_IND ; !
@@ -1263,6 +1277,10 @@ LEXICON IICONJ-CONT-SG !!= @CODE@ splits according to mood
 < "+Cnj":0  "@U.mood.cnj@" > II_CNJ-SG ; !
 < "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS-SG ;!
 
+LEXICON IICONJ-CONT-PL !!= @CODE@ splits according to mood
+< "+Ind":0  "@U.mood.indep@" >  II_IND-PL ; !
+< "+Cnj":0  "@U.mood.cnj@" > II_CNJ-PL ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS-PL ;!
 
 LEXICON II_INDw !!= @CODE@ indicative for w final
 < "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERSw-SG ; !
@@ -1279,6 +1297,11 @@ LEXICON II_INDw-SG !!= @CODE@ indicative for w final
 < "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-SG ; !
 < "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; ! pros aspect
 
+LEXICON II_INDw-PL !!= @CODE@ indicative for w final
+< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERSw-PL ; !
+< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERSw-PL ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-PL ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-PL ; ! pros aspect
 
 LEXICON II_CNJw !!= @CODE@ conjunctive for w final
 < "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERSw-SG ; !
@@ -1293,6 +1316,10 @@ LEXICON II_CNJw-SG !!= @CODE@ conjunctive for w final
 < "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERSw-SG ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERSw-SG ; !
 
+LEXICON II_CNJw-PL !!= @CODE@ conjunctive for w final
+< "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERSw-PL ; !
+< "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERSw-PL ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERSw-PL ; !
 
 
 LEXICON II_IND !!= @CODE@ indicative
@@ -1311,6 +1338,12 @@ LEXICON II_IND-SG !!= @CODE@ indicative
 !< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-SG ; 
 !< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; 
 
+LEXICON II_IND-PL !!= @CODE@ indicative
+< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERS-PL ; !
+< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERS-PL ; !
+!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-PL ; 
+!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-PL ; 
+
 
 LEXICON II_CNJ !!= @CODE@ conjunctive
 < "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERS-SG ; !
@@ -1325,6 +1358,10 @@ LEXICON II_CNJ-SG !!= @CODE@ conjunctive
 < "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERS-SG ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERS-SG ; !
 
+LEXICON II_CNJ-PL !!= @CODE@ conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERS-PL ; !
+< "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERS-PL ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERS-PL ; !
 
  
 LEXICON II_IND_PERSw-SG   !!= @CODE@ w final 
@@ -1350,8 +1387,6 @@ LEXICON II_CNJ_PERSw-SG   !!= @CODE@ w final
 LEXICON II_CNJ_PERSw-PL   !!= @CODE@ w final 
 +3Pl:%>%^NIIki # ;
 +4Pl:%>yiki # ;
-
-
 
 LEXICON II_CNJ_PERS-SG   !!= @CODE@ -n final 
 +3Sg:%>%^NIIk # ;
