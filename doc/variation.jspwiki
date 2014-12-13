@@ -1,12 +1,15 @@
 !!!How to handle variation in lexc
 
 !!Different orthographies
-lexc is written with SRO orthography
+The lexc can be written with SRO (The Standard Roman Orthography) 
 
-From this we can compile FSTs with systematic variation:
+From this one can compile alternative FSTs with systematic variation, as a base for generation of spell checker program, ICALL-programs.
 * macron-FST 
 * circumflex-FST
 * no-length-marking-FST
+* converting to syllabics
+
+For an analyser to be used for analysing texts, one can use spell relax to get the analyser to understand all orthographies.
 
 Words with another orthography, from other dialects
 * if systematic, it can be done in the compiling process
@@ -43,14 +46,14 @@ fálahasat	fálahasat	+?
 
 
 !!The word itself is non-normative: Err/LexSub
-Ex. brillefutterála which is a slightly adapated loanword from Norwegian to North Saami. The normative word is čalbmelássaskuohppu
+Ex. "brillefutterála" which is a slightly adapated loanword from Norwegian to North Saami. The normative word is "čalbmelássaskuohppu"
 
 {{brillefutterála+Use/LexSub:brille#futterál SOSIAL}}
 
-The descriptive FST will inflect brillefutterála, but the line with the tag Err/LexSub is removed from the normative analyser/generator during the compilation prosess. 
+The descriptive FST will inflect "brillefutterála", but the line with the tag Err/LexSub is removed from the normative analyser/generator during the compilation prosess. 
 {{{
 brillefutterálat 
-brillefutterálat	brillefutterála+N+Pl+Nom
+brillefutterálat	brillefutterála+N+Err/LexSub+Pl+Nom
 }}}
 
 The normative analyser:
@@ -61,10 +64,10 @@ brillefutterálat	brillefutterálat	+?
 
 
 !!Lexical homonymi: how to identify the correct lemma e.g. in a dictionary
-Two lemmas, which base forms are homonyms, have different paradigms and semantics. 
+Two lemmas, which base forms are homonyms, but with different paradigms and semantics. 
 
 !The lemmas belong to different stem-categories: Add morphogical tags
-Example from North Saami. G3 tag for Grade 3 for consonantgradation 
+Example from North Saami. G3 tag for Grade 3 for consonant gradation 
 
 {{beassi:beassi BEARRI "reir" ;}} \\
 {{beassi+G3:beas'si AIGI "never" ; }}
@@ -102,7 +105,7 @@ vuovddi	vuovdi+N+Sg+Acc
 }}}
  
 
-!There is no reason for adding morphogical tags: Add homonymi tags
+!In stead of morphogical tags, one can add homonymi tags
 Example from South Saami:
 
 {{govledh+Hom1:govl TJOEHPEDH_TV "höra" ;}} \\
@@ -119,7 +122,7 @@ govloe	govledh+Hom2+V+IV+Ind+Prs+Sg3
 }}}
 
 
-!!Orthograpic variants of the same lemma: tags v1, v2...
+!!Orthograpic variants (all normative) of the same lemma: tags v1, v2...
 
 Orthograpic variants of the same lemma, for base form and at least parts of the inflection paradigm, should be under the same lemma. But we can add a variants tag as a help to recognize the correct base form for the paradigm.
 
