@@ -3,44 +3,44 @@
 !!Different orthographies
 The lexc can be written with SRO (The Standard Roman Orthography) 
 
-From this one can compile alternative FSTs with systematic variation, as a base for generation of spell checker program, ICALL-programs.
-* macron-FST 
-* circumflex-FST
+From this one can compile alternative FSTs with systematic variation, as a base for generation of spell checker programs and ICALL-programs.
+* with macron-FST 
+* with circumflex-FST
 * no-length-marking-FST
-* converting to syllabics
+* with converting to syllabics
 
-For an analyser to be used for analysing texts, one can use spell relax to get the analyser to understand all orthographies.
+For an analyser to be used for analysing texts, one can use spell relax to get the analyser to understand all orthographies. With spell relax there will not be  any tags in the output to tell which kind of orthography is used.
 
-Words with another orthography, from other dialects
+Words with another orthography, from other dialects:
 * if systematic, it can be done in the compiling process
-* if not systematic: use tag, e.g. Dial/Mask. They with be included in the compiling when we ask for it.
+* if not systematic, one can use tags, e.g. Dial/Mask. They with be included in the compiling when one asks for it.
 
 !!Non-normative forms: Err/Sub
-These are forms, which don't follow orthographic prinsips, but still we find them in texts and we want them to be analysed.
+These are forms, which don't follow orthographic principles, but still they are in texts, which we want to analyse.
 
-!ex.: "fálahas" is a non-normative form of the lemma "fáláhas"
-The normative form on the left side, and so the lemma in the analysis will be a normative form and can be found e.g. in the dictionary.
+!ex. from North Saami: "bázáhus" is a non-normative form of the lemma "bázahus"
+The normative form should be on the left side, and then the lemma in the analysis will be a normative form and can be found e.g. in the dictionary.
 
-{{fáláhas:fáláhass JOHTOLAT ; }} \\
-{{fáláhas+Err/Sub:fálahass JOHTOLAT ; }}
+{{bázahus:bázahuss JOHTOLAT "remainder" ; }} \\
+{{bázahus+Err/Sub:bázáhuss JOHTOLAT "remainder" ; }}
 
-The descriptive FST will inflect both fálahas and fáláhas, but the line with the tag Err/Sub is removed from the normative analyser/generator during the compilation prosess. 
+The descriptive FST will inflect both "bázahus" and "bázáhus", but the string with the tag Err/Sub is removed from the normative analyser/generator during the compilation prosess. 
 {{{
-fáláhasat 
-fáláhasat	fáláhas+N+Pl+Nom
+bázahusat 
+bázahusat	bázahus+N+Pl+Nom
 
-fálahasat
-fálahasat	fáláhas+Err/Sub+N+Pl+Nom
+bázáhusat
+bázáhusat	bázahus+Err/Sub+N+Pl+Nom
 }}}
 
 The normative analyser:
 {{{
-fáláhasat 
-fáláhasat	fáláhas+N+Pl+Nom
+bázahusat 
+bázahusat	bázahus+N+Pl+Nom
 
 
-fálahasat
-fálahasat	fálahasat	+?
+bázáhusat
+bázáhusat	bázáhusat	+?
 }}}
 
 
@@ -48,7 +48,7 @@ fálahasat	fálahasat	+?
 !!The word itself is non-normative: Err/LexSub
 Ex. "brillefutterála" which is a slightly adapated loanword from Norwegian to North Saami. The normative word is "čalbmelássaskuohppu"
 
-{{brillefutterála+Use/LexSub:brille#futterál SOSIAL}}
+{{brillefutterála+Use/LexSub:brille#futterál SOSIAL "spectacle case" ;}}
 
 The descriptive FST will inflect "brillefutterála", but the line with the tag Err/LexSub is removed from the normative analyser/generator during the compilation prosess. 
 {{{
@@ -64,13 +64,13 @@ brillefutterálat	brillefutterálat	+?
 
 
 !!Lexical homonymi: how to identify the correct lemma e.g. in a dictionary
-Two lemmas, which base forms are homonyms, but with different paradigms and semantics. 
+Two lemmas can have identical base forms, but different paradigms and semantics. 
 
 !The lemmas belong to different stem-categories: Add morphogical tags
-Example from North Saami. G3 tag for Grade 3 for consonant gradation 
+Example from North Saami. G3 = Grade 3 in consonant gradation 
 
-{{beassi:beassi BEARRI "reir" ;}} \\
-{{beassi+G3:beas'si AIGI "never" ; }}
+{{beassi:beassi BEARRI "nest" ;}} \\
+{{beassi+G3:beas'si AIGI "birchbark" ; }}
  
 Analysis:
 {{{
@@ -86,7 +86,7 @@ beasi	beassi+N+Sg+Acc
 }}}
  
  
-Example from North Saami. NomAg tag for derivation Nomen Agent 
+Example from North Saami. NomAg tag for derivation Nomen Agentis 
 
 {{vuovdi+NomAg:vuovdi ACTOR "salesman" ;}} \\
 {{vuovdi+G3:vuov'di AIGI "forest" ; }}
@@ -106,10 +106,10 @@ vuovddi	vuovdi+N+Sg+Acc
  
 
 !In stead of morphogical tags, one can add homonymi tags
-Example from South Saami:
+Example from South Saami, two verbs:
 
-{{govledh+Hom1:govl TJOEHPEDH_TV "höra" ;}} \\
-{{govledh+Hom2:govl VÅÅJNEDH "höras" ;}}
+{{govledh+Hom1:govl TJOEHPEDH_TV "hear" ;}} \\
+{{govledh+Hom2:govl VÅÅJNEDH "sound" ;}}
 
 Analysis:
 
@@ -124,12 +124,22 @@ govloe	govledh+Hom2+V+IV+Ind+Prs+Sg3
 
 !!Orthograpic variants (all normative) of the same lemma: tags v1, v2...
 
-Orthograpic variants of the same lemma, for base form and at least parts of the inflection paradigm, should be under the same lemma. But we can add a variants tag as a help to recognize the correct base form for the paradigm.
+One lemma can have orthograpic variants for base form and at least parts of the inflection paradigm. We can add a variants tag as a help to recognize the correct base form for the paradigm.
 
-Example from North Saami. 
+Example from North Saami: 
 
-{{mandáhta+v2:mandáhtta GOAHTI-A ; }} \\
-{{mandáhta+v1:mandáhta STAHTA ;}}
+{{mandáhta+v2:mandáhtta GOAHTI-A "mandate" ; }} \\
+{{mandáhta+v1:mandáhta STAHTA "mandate" ;}}
+
+Generation with normative generator gives:
+{{{
+mandáhta+v2+N+Ess
+mandáhta+v2+N+Ess	mandáhttan
+
+mandáhta+v1+N+Ess
+mandáhta+v1+N+Ess	mandáhtan
+}}}
+
 
 If the base forms are identical, but there are variants in the inflection, we don't use these tags.
 
