@@ -70,6 +70,8 @@ AC_SUBST([GTLANG], [crk])
 # should be the ISO 639-1 two-letter code if possible, otherwise usually same
 # as above
 AC_SUBST([GTLANG2], [crk])
+# GTLANGUAGE is the full language name as given by the ISO 639-3 file
+AC_SUBST([GTLANGUAGE], ["Plains Cree"])
 
 # We need special treatment of Java paths in Cygwin:
 AC_CANONICAL_HOST
