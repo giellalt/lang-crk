@@ -420,6 +420,11 @@ The Plains Cree verbs are divided in four groups, but all of them are in the sam
 
 
 
+
+
+
+
+
                           !!!Plains Cree noun morphology                           
 
 
@@ -854,7 +859,13 @@ AICONJ_w
 
 
 
+
+
+
 Adding the flag diacritics for each subtype of conjugation class
+
+
+
 
 
 
@@ -933,48 +944,60 @@ Intransitive inanimate (II)
 
  LEXICON IICONJ-SG-MAIN   adds the flag for no personprefixes, only Sg forms
 
+ LEXICON IICONJ-PL-MAIN   adds the flag for no personprefixes, only Pl forms
 
  LEXICON IICONJFORMS  adds a baseform = Prs+3Sg
 
  LEXICON IICONJFORMS-SG  adds a baseform = Prs+3Sg
+
+ LEXICON IICONJFORMS-PL  adds a baseform = Prs+3Pl
 
 
  LEXICON IICONJw-MAIN    w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 
  LEXICON IICONJw-SG-MAIN    w final, only Sg forms Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 
+ LEXICON IICONJw-PL-MAIN    w final, only Pl forms Adds a baseform = Prs+3Pl and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
+
 
  LEXICON IICONJ-CONTw  w final. Splits according to mood
 
  LEXICON IICONJ-CONTw-SG  w final. Splits according to mood
 
+ LEXICON IICONJ-CONTw-PL  w final. Splits according to mood
 
  LEXICON IICONJ-CONT  splits according to mood
 
  LEXICON IICONJ-CONT-SG  splits according to mood
 
+ LEXICON IICONJ-CONT-PL  splits according to mood
 
  LEXICON II_INDw  indicative for w final
 
 
  LEXICON II_INDw-SG  indicative for w final
 
+ LEXICON II_INDw-PL  indicative for w final
 
  LEXICON II_CNJw  conjunctive for w final
 
  LEXICON II_CNJw-SG  conjunctive for w final
 
+ LEXICON II_CNJw-PL  conjunctive for w final
 
 
  LEXICON II_IND  indicative
 
  LEXICON II_IND-SG  indicative
 
+ LEXICON II_IND-PL  indicative
+
 
  LEXICON II_CNJ  conjunctive
 
  LEXICON II_CNJ-SG  conjunctive
 
+ LEXICON II_CNJ-PL  conjunctive
 
 
  LEXICON II_IND_PERSw-SG    w final 
@@ -989,8 +1012,6 @@ Intransitive inanimate (II)
 
  LEXICON II_CNJ_PERSw-PL    w final 
 
-
-
  LEXICON II_CNJ_PERS-SG    -n final 
 
  LEXICON II_CNJ_PERS-PL    -n final 
@@ -998,14 +1019,6 @@ Intransitive inanimate (II)
 
 
 
- ! LEXICON II_IND_PERSv-SG    v final 
- ! LEXICON II_IND_PERSv-PL    v final 
- ! LEXICON II_CNJ_PERSv-SG    v final 
- ! LEXICON II_CNJ_PERSv-PL    v final 
- ! LEXICON II_IND_PERSan-SG    -an final 
- ! LEXICON II_IND_PERSan-PL    -an final 
- ! LEXICON II_CNJ_PERSan-SG    -an final 
- ! LEXICON II_CNJ_PERSan-PL    -an final 
 
 
 
