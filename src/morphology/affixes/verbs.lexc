@@ -686,7 +686,7 @@ AICONJ ;
 ! LEXICON TACONJ_4 
 ! TACONJ_2 ;
 
-LEXICON TICONJi  ! Trond dymmy delete
+! LEXICON TICONJi  ! Trond dymmy delete
 # ;
 
 LEXICON TICONJ_1 
@@ -743,11 +743,11 @@ LEXICON TACONJ_4
 LEXICON TICONJ
 < "@U.conj.TICONJ@" > PREVERBSFEATURES ;
 
-LEXICON TICONJ_2
-< "@U.conj.TICONJ_2@" > PREVERBSFEATURES ; ! This should be the same as TICONJ
+LEXICON TICONJi
+< "@U.conj.TICONJi@" > PREVERBSFEATURES ; ! This should be the same as TICONJ
 
-LEXICON TICONJa
-< "@U.conj.TICONJa@" > PREVERBSFEATURES ;
+LEXICON TICONJâ
+< "@U.conj.TICONJâ@" > PREVERBSFEATURES ;
 
 
 !! !!Preverbs
@@ -1063,8 +1063,10 @@ LEXICON VERBMAIN
 ! < "@U.conj.TACONJ_3@" > TACONJ_3-MAIN ;
 ! < "@U.conj.TACONJ_4@" > TACONJ_4-MAIN ;
 < "@U.conj.TICONJ@" >  TICONJ-MAIN ;
+< "@U.conj.TICONJi@" >  TICONJi-MAIN ;
+< "@U.conj.TICONJâ@" >  TICONJâ-MAIN ;
 ! < "@U.conj.TICONJ_2@" > TICONJ_2-MAIN ; ! This should be the same as TICONJ
-< "@U.conj.TICONJa@" > TICONJa-MAIN ;
+! < "@U.conj.TICONJa@" > TICONJa-MAIN ;
 
 
 !! !!! Intransitive animate (AI)
@@ -1690,21 +1692,18 @@ LEXICON 12Pl_Imp
 !     =========================
 !     =========================
 
-LEXICON TICONJa-MAIN  !!= * @CODE@
-< "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
-+V+TI: TICONJ-CONTa ;
-
- 
 LEXICON TICONJ-MAIN  !!= * @CODE@ adds baseform and directs to TICONJ-CONT
 < "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
-+V+TI: TICONJ-CONT ; 
++V+TI: TICONJ-CONT ;
 
+LEXICON TICONJi-MAIN  !!= * @CODE@ adds baseform and directs to TICONJi-CONT
+< "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+TI: TICONJi-CONT ; 
 
-LEXICON TICONJ-CONTa !!= * @CODE@
-< "+Ind":0  "@U.mood.indep@" >  TI_IND ; !
-< "+Cnj":0  "@U.mood.cnj@" > TI_CNJa ; !
-<     "@D.tense@"  >  TI_IMP ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TI_FUT_CON ;
+LEXICON TICONJâ-MAIN  !!= * @CODE@ adds baseform and directs to TICONJâ-CONT
+< "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+TI: TICONJi-CONT ; 
+
 
 
 LEXICON TICONJ-CONT !!= * @CODE@
@@ -1713,6 +1712,18 @@ LEXICON TICONJ-CONT !!= * @CODE@
 <     "@D.tense@"  >  TI_IMP ; !
 < "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TI_FUT_CON ;
 
+LEXICON TICONJi-CONT !!= * @CODE@
+< "+Ind":0  "@U.mood.indep@" >  TI_INDi ; !
+< "+Cnj":0  "@U.mood.cnj@" > TI_CNJi ; !
+<     "@D.tense@"  >  TI_IMPi ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TI_FUTi_CON ;
+
+LEXICON TICONJâ-CONT !!= * @CODE@
+< "+Ind":0  "@U.mood.indep@" >  TI_INDâ ; !
+< "+Cnj":0  "@U.mood.cnj@" > TI_CNJâ ; !
+<     "@D.tense@"  >  TI_IMPâ ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TI_FUTâ_CON ;
+
 
 LEXICON TI_IND !!= @CODE@ First mode, indicative
 < "@U.tense.Prs@"    "+Prs":%>          > TI_IND_PRS ; !
@@ -1720,21 +1731,68 @@ LEXICON TI_IND !!= @CODE@ First mode, indicative
 < "@U.tense.FutDef@" "+Fut":0 "+Def":%> > TI_IND_PRS ; !
 < "@U.tense.FutInt@" "+Fut":0 "+Int":%> > TI_IND_PRS ; !
 
+LEXICON TI_INDi !!= @CODE@ First mode, indicative
+< "@U.tense.Prs@"    "+Prs":%>          > TI_INDi_PRS ; !
+< "@U.tense.Prt@"    "+Prt":%>          > TI_INDi_PRS ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > TI_INDi_PRS ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > TI_INDi_PRS ; !
+
+LEXICON TI_INDâ !!= @CODE@ First mode, indicative
+< "@U.tense.Prs@"    "+Prs":%>          > TI_INDâ_PRS ; !
+< "@U.tense.Prt@"    "+Prt":%>          > TI_INDâ_PRS ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > TI_INDâ_PRS ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > TI_INDâ_PRS ; !
+
 
 LEXICON TI_IND_PRS !!= @CODE@ gives person suffixes
-< 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:n                 > # ; !
-< 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:n                 > # ; !
-<          "+3Sg":0 "@U.perspref.NULL@" 0:m                 > # ; !
-<          "+4Sg":0 "@U.perspref.NULL@" 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
-< 0:"^EA"  "+1Pl":0 "@U.perspref.NI@"   0:n 0:â 0:n         > # ; !
-< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:a 0:w         > # ; !
-< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
-< 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:n 0:â 0:w 0:â 0:w > # ; !
-<          "+3Pl":0 "@U.perspref.NULL@" 0:m 0:w 0:a 0:k         > # ; !
-<          "+4Pl":0 "@U.perspref.NULL@" 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
+<   "+1Sg":0 "@U.perspref.NI@"   0:ê 0:n                 > # ; !
+<   "+2Sg":0 "@U.perspref.KI@"   0:ê 0:n                 > # ; !
+<   "+3Sg":0 "@U.perspref.NULL@" 0:a 0:m                 > # ; !
+<   "+4Sg":0 "@U.perspref.NULL@" 0:a 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
+<   "+1Pl":0 "@U.perspref.NI@"   0:ê 0:n 0:â 0:n         > # ; !
+<   "+12Pl":0 "@U.perspref.KI@"  0:ê 0:n 0:a 0:w         > # ; !
+<   "+12Pl":0 "@U.perspref.KI@"  0:ê 0:n 0:â 0:n 0:a 0:w         > # ; !
+<   "+2Pl":0 "@U.perspref.KI@"   0:ê 0:n 0:â 0:w 0:â 0:w > # ; !
+<   "+3Pl":0 "@U.perspref.NULL@" 0:a 0:m 0:w 0:a 0:k         > # ; !
+<   "+4Pl":0 "@U.perspref.NULL@" 0:a 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
+
+LEXICON TI_INDi_PRS !!= @CODE@ gives person suffixes
+<   "+1Sg":0 "@U.perspref.NI@"    0:n                 > # ; !
+<   "+2Sg":0 "@U.perspref.KI@"    0:n                 > # ; !
+<   "+3Sg":0 "@U.perspref.NULL@"  0:w                 > # ; !
+<   "+4Sg":0 "@U.perspref.NULL@"  0:y 0:i 0:w 0:a     > # ; !
+<   "+1Pl":0 "@U.perspref.NI@"    0:n 0:â 0:n         > # ; !
+<   "+12Pl":0 "@U.perspref.KI@"   0:n 0:a 0:w         > # ; !
+<   "+12Pl":0 "@U.perspref.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
+<   "+2Pl":0 "@U.perspref.KI@"    0:n 0:â 0:w 0:â 0:w > # ; !
+<   "+3Pl":0 "@U.perspref.NULL@"  0:w 0:a 0:k         > # ; !
+<   "+4Pl":0 "@U.perspref.NULL@"  0:y 0:i 0:w 0:a     > # ; !
+
+LEXICON TI_INDâ_PRS !!= @CODE@ gives person suffixes
+<   "+1Sg":0 "@U.perspref.NI@"   0:â 0:n                 > # ; !
+<   "+2Sg":0 "@U.perspref.KI@"   0:â 0:n                 > # ; !
+<   "+3Sg":0 "@U.perspref.NULL@" 0:â 0:m                 > # ; !
+<   "+4Sg":0 "@U.perspref.NULL@" 0:â 0:i 0:y 0:i 0:w 0:a     > # ; !
+<   "+1Pl":0 "@U.perspref.NI@"   0:â 0:n 0:â 0:n         > # ; !
+<   "+12Pl":0 "@U.perspref.KI@"  0:â 0:n 0:a 0:w         > # ; !
+<   "+12Pl":0 "@U.perspref.KI@"  0:â 0:n 0:â 0:n 0:a 0:w         > # ; !
+<   "+2Pl":0 "@U.perspref.KI@"   0:â 0:n 0:â 0:w 0:â 0:w > # ; !
+<   "+3Pl":0 "@U.perspref.NULL@" 0:â 0:w 0:a 0:k         > # ; !
+<   "+4Pl":0 "@U.perspref.NULL@" 0:â 0:i 0:y 0:i 0:w 0:a     > # ; !
 
 
 LEXICON TI_FUT_CON !!= * @CODE@
+  +1Sg:%>mâni  # ; 
+  +2Sg:%>mani  # ; 
+  +3Sg:%>hki    # ; 
+  +4Sg:%>miyici  # ; 
+  +1Pl:%>mâhki # ; ! exclusive Pl
+ +12Pl:%>mahki # ; ! inclusive Pl
+  +2Pl:%>mêko  # ; 
+  +3Pl:%>hkwâwi # ; 
+  +4Pl:%>miyici  # ;
+  
+LEXICON TI_FUTi_CON !!= * @CODE@
   +1Sg:%>yâni  # ; 
   +2Sg:%>yani  # ; 
   +3Sg:%>ci    # ; 
@@ -1745,17 +1803,31 @@ LEXICON TI_FUT_CON !!= * @CODE@
   +3Pl:%>twâwi # ; 
   +4Pl:%>yici  # ; 
 
+LEXICON TI_FUTâ_CON !!= * @CODE@
+  +1Sg:%>yâni  # ; 
+  +2Sg:%>yani  # ; 
+  +3Sg:%>ci    # ; 
+  +4Sg:%>yici  # ; 
+  +1Pl:%>yâhki # ; ! exclusive Pl
+ +12Pl:%>yahko # ; ! inclusive Pl
+  +2Pl:%>yêko  # ; 
+  +3Pl:%>twâwi # ; 
+  +4Pl:%>yici  # ; 
 
 LEXICON TI_CNJ !!= @CODE@ Third mode, conjunctive
 < "+Prs":0          "@U.tense.Prs@"    > TI_CNJ_SUF ; ! earlier IA_CNJ_SUF must have been an error
 < "+Prt":0          "@U.tense.Prt@"    > TI_CNJ_SUF ; ! earlier IA_CNJ_SUF must have been an error
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TI_CNJ_SUF ; ! earlier IA_CNJ_SUF must have been an error
 
-LEXICON TI_CNJa !!= @CODE@ Third mode, conjunctive
-< "+Prs":0          "@U.tense.Prs@"    > TI_CNJ_SUF ; !
-< "+Prt":0          "@U.tense.Prt@"    > TI_CNJ_SUF ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TI_CNJ_SUF ; !
+LEXICON TI_CNJi !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > TI_CNJi_SUF ; !
+< "+Prt":0          "@U.tense.Prt@"    > TI_CNJi_SUF ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TI_CNJi_SUF ; !
 
+LEXICON TI_CNJâ !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > TI_CNJâ_SUF ; !
+< "+Prt":0          "@U.tense.Prt@"    > TI_CNJâ_SUF ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TI_CNJâ_SUF ; !
 
 LEXICON TI_CNJ_SUF !!= * @CODE@
      +1Sg:%>amân #;
@@ -1768,17 +1840,57 @@ LEXICON TI_CNJ_SUF !!= * @CODE@
      +3Pl:%>ahkik #;
     +4Pl:%>amiyit #;
 
-LEXICON TI_IMP  !!= @CODE@ Fourth mode, imperative
-< "+Imp":0 "@U.mood.imp@" > TI_imp ; !
+LEXICON TI_CNJi_SUF !!= * @CODE@
+     +1Sg:%>yân #;
+     +2Sg:%>yan	#;
+     +3Sg:%>t	#;
+     +4Sg:%>yit	#;
+     +1Pl:%>yâhk #;
+    +12Pl:%>yahk #;
+     +2Pl:%>yek #;  !
+     +3Pl:%>cik #;
+    +4Pl:%>yit #;
+    
+LEXICON TI_CNJâ_SUF !!= * @CODE@
+     +1Sg:%>âyân #;
+     +2Sg:%>âyan	#;
+     +3Sg:%>ât	#;
+     +4Sg:%>âyit	#;
+     +1Pl:%>âyâhk #;
+    +12Pl:%>âyahk #;
+     +2Pl:%>âyek #;  !
+     +3Pl:%>âcik #;
+    +4Pl:%>âyit #;
 
 
-LEXICON TI_imp !!= * @CODE@
-+Imm+2Sg:0   # ; !
-+Imm+12Pl:%>%^EAtân	  # ; !
-+Imm+2Pl:%>mok   # ; !
-+Del+2Sg:%>môhkan   # ; !
-+Del+12Pl:%>môhkahk	  # ; !
-+Del+2Pl:%>môhkêk   # ; !
+
+
+
+LEXICON TI_IMP !!= * @CODE@
+< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 %>:0 0:a > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 %>:0 0:ê 0:t 0:â 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 %>:0 0:a 0:m 0:o 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 %>:0 0:a 0:m 0:o 0:k 0:a 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 %>:0 0:a 0:m 0:o 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 %>:0 0:a 0:m 0:o 0:k 0:a 0:h 0:k 0:ê 0:k > # ; !
+
+LEXICON TI_IMPi !!= * @CODE@
+< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 %>:0 > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 %>:0 0:t 0:â 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 %>:0 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 %>:0 0:h 0:k 0:a 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 %>:0 0:h 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 %>:0 0:h 0:k 0:ê 0:k > # ; !
+
+
+LEXICON TI_IMPâ !!= * @CODE@
+< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 %>:0 0:â > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 %>:0 0:â 0:t 0:â 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 %>:0 0:â 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 %>:0 0:â 0:h 0:k 0:a 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 %>:0 0:â 0:h 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 %>:0 0:â 0:h 0:k 0:ê 0:k > # ; !
+
 
 LEXICON TI_IMP_LONG_E !!= * @CODE@
 < "+Imp":0 "@U.perspref.NULL@" > TI_imp-long-E ;!
