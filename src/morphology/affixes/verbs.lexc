@@ -1867,29 +1867,29 @@ LEXICON TI_CNJâ_SUF !!= * @CODE@
 
 
 LEXICON TI_IMP !!= * @CODE@
-< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 %>:0 0:a > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 %>:0 0:ê 0:t 0:â 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 %>:0 0:a 0:m 0:o 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 %>:0 0:a 0:m 0:o 0:k 0:a 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 %>:0 0:a 0:m 0:o 0:k 0:a 0:h 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 %>:0 0:a 0:m 0:o 0:k 0:a 0:h 0:k 0:ê 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 0:%> 0:a > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:%> 0:ê 0:t 0:â 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:%> 0:a 0:m 0:o 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 0:%> 0:a 0:m 0:o 0:k 0:a 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 0:%> 0:a 0:m 0:o 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 0:%> 0:a 0:m 0:o 0:k 0:a 0:h 0:k 0:ê 0:k > # ; !
 
 LEXICON TI_IMPi !!= * @CODE@
-< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 %>:0 > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 %>:0 0:t 0:â 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 %>:0 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 %>:0 0:h 0:k 0:a 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 %>:0 0:h 0:k 0:a 0:h 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 %>:0 0:h 0:k 0:ê 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 0:%> > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:%> 0:t 0:â 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:%> 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 0:%> 0:h 0:k 0:a 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 0:%> 0:h 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 0:%> 0:h 0:k 0:ê 0:k > # ; !
 
 
 LEXICON TI_IMPâ !!= * @CODE@
-< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 %>:0 0:â > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 %>:0 0:â 0:t 0:â 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 %>:0 0:â 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 %>:0 0:â 0:h 0:k 0:a 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 %>:0 0:â 0:h 0:k 0:a 0:h 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 %>:0 0:â 0:h 0:k 0:ê 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 0:%> 0:â > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:%> 0:â 0:t 0:â 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:%> 0:â 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 0:%> 0:â 0:h 0:k 0:a 0:n > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 0:%> 0:â 0:h 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 0:%> 0:â 0:h 0:k 0:ê 0:k > # ; !
 
 
 LEXICON TI_IMP_LONG_E !!= * @CODE@
