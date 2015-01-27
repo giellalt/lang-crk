@@ -425,6 +425,11 @@ The Plains Cree verbs are divided in four groups, but all of them are in the sam
 
 
 
+
+
+
+
+
                           !!!Plains Cree noun morphology                           
 
 
@@ -862,6 +867,7 @@ AICONJ_w
 
 
 
+
 Adding the flag diacritics for each subtype of conjugation class
 
 
@@ -1087,38 +1093,64 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 Transitive Inanimate (TI)
 
- * LEXICON TICONJa-MAIN  
-
-
  * LEXICON TICONJ-MAIN   adds baseform and directs to TICONJ-CONT
 
+ * LEXICON TICONJi-MAIN   adds baseform and directs to TICONJi-CONT
 
- * LEXICON TICONJ-CONTa 
+ * LEXICON TICONJâ-MAIN   adds baseform and directs to TICONJâ-CONT
+
 
 
  * LEXICON TICONJ-CONT 
 
+ * LEXICON TICONJi-CONT 
+
+ * LEXICON TICONJâ-CONT 
+
 
  LEXICON TI_IND  First mode, indicative
+
+ LEXICON TI_INDi  First mode, indicative
+
+ LEXICON TI_INDâ  First mode, indicative
 
 
  LEXICON TI_IND_PRS  gives person suffixes
 
+ LEXICON TI_INDi_PRS  gives person suffixes
+
+ LEXICON TI_INDâ_PRS  gives person suffixes
+
 
  * LEXICON TI_FUT_CON 
 
+ * LEXICON TI_FUTi_CON 
+
+ * LEXICON TI_FUTâ_CON 
 
  LEXICON TI_CNJ  Third mode, conjunctive
 
- LEXICON TI_CNJa  Third mode, conjunctive
+ LEXICON TI_CNJi  Third mode, conjunctive
 
+ LEXICON TI_CNJâ  Third mode, conjunctive
 
  * LEXICON TI_CNJ_SUF 
 
- LEXICON TI_IMP   Fourth mode, imperative
+ * LEXICON TI_CNJi_SUF 
+
+ * LEXICON TI_CNJâ_SUF 
 
 
- * LEXICON TI_imp 
+
+
+
+ * LEXICON TI_IMP 
+
+ * LEXICON TI_IMPi 
+
+
+ * LEXICON TI_IMPâ 
+
 
  * LEXICON TI_IMP_LONG_E 
 
