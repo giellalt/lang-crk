@@ -78,18 +78,18 @@ generator-gt-norm-syll.hfst: generator-gt-norm.tmp.hfst \
 		-o $@
 
 analyser-gt-desc-syll.xfst: analyser-gt-desc.xfst \
-							orthography/latin2syllabics.lookup.xfst
+							orthography/latin2syllabics.compose.xfst
 	$(AM_V_GEN)$(PRINTF) "read regex \
 			    @\"$<\" \
-			.o. @\"orthography/latin2syllabics.lookup.xfst\".i        \
+			.o. @\"orthography/latin2syllabics.compose.xfst\"        \
 			;\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST) -q
 
 generator-gt-norm-syll.xfst: generator-gt-norm.xfst \
-							 orthography/latin2syllabics.lookup.xfst
+							 orthography/latin2syllabics.compose.xfst
 	$(AM_V_GEN)$(PRINTF) "read regex \
-			    @\"orthography/latin2syllabics.lookup.xfst\"        \
+			    @\"orthography/latin2syllabics.compose.xfst\"        \
 			.o. @\"$<\" \
 			;\n\
 		 save stack $@\n\
