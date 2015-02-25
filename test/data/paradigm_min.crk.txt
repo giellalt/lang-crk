@@ -12,9 +12,9 @@ N+Gender+Locative
 N+Gender+Number+Px1Sg
 N+Gender+Number+Px4Sg+Obviative?
 N+Gender+Diminutive+N+Gender+Number
-V+IA+Ind+Prs+1Sg
-V+IA+Ind+Prs+3Sg
-V+IA+Ind+Prs+4Sg
+V+AI+Ind+Prs+1Sg
+V+AI+Ind+Prs+3Sg
+V+AI+Ind+Prs+4Sg
 V+II+Ind+Prs+3Sg
 V+II+Ind+Prs+3Pl
 V+II+Ind+Prs+4Sg
@@ -27,7 +27,7 @@ V+TI+Ind+Prs+3Sg
 V+TI+Ind+Prs+4Sg
 
 
-#V+IA+Mood?+Tense?+Aspect?+PersonNumber?
+#V+AI+Mood?+Tense?+Aspect?+PersonNumber?
 #V+II+Mood?+Tense?+Aspect?+PersonNumber?
 #V+TA+Mood?+Tense?+Aspect?+PersonNumber?+PersonNumberObj?
 #V+TI+Mood?+Tense?+Aspect?+PersonNumber?+PersonNumberObj?

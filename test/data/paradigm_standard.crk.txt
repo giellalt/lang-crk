@@ -10,10 +10,10 @@
 N+Gender+Number+PossessiveSuffix?+Obviative?
 N+Gender+Loc
 N+Gender+Diminutive+N+Gender+Number
-V+IA+Mood+Tense+PersonNumber
-V+IA+Ind+Fut+Aspect+PersonNumber
-V+IA+Imp+ImpTense+ImpPersonNumber
-V+IA+Fut+Cond+PersonNumber
+V+AI+Mood+Tense+PersonNumber
+V+AI+Ind+Fut+Aspect+PersonNumber
+V+AI+Imp+ImpTense+ImpPersonNumber
+V+AI+Fut+Cond+PersonNumber
 V+II+Mood+Tense+PersonNumber
 V+TA+Mood+Tense+PersonNumber+PersonNumberObj
 V+TI+Imp+ImpTense+ImpPersonNumber
@@ -21,7 +21,7 @@ V+TI+Mood+Tense+PersonNumber
 V+TA+Imp+ImpTense+PersonNumber+PersonNumberObj
 
 
-#V+IA+Mood?+Tense?+Aspect?+PersonNumber?
+#V+AI+Mood?+Tense?+Aspect?+PersonNumber?
 #V+II+Mood?+Tense?+Aspect?+PersonNumber?
 #V+TA+Mood?+Tense?+Aspect?+PersonNumber?+PersonNumberObj?
 #V+TI+Mood?+Tense?+Aspect?+PersonNumber?+PersonNumberObj?
