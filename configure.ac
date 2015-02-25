@@ -61,7 +61,7 @@ _required_hfst_version=3.8.2
 # can be done programmatically with a regex or xfscript. If not, resources
 # for multiple WS's must be developed and maintained as separate languages.
 AC_SUBST([DEFAULT_WS], [Latn])
-AC_SUBST([ALT_WSS], [""])
+AC_SUBST([ALT_WSS], ["Cans"])
 AM_CONDITIONAL([HAVE_ALT_WSS], [test "x$ALT_WSS" != "x"])
 
 # Names for default and alternate orthographies. The names are free form, but
