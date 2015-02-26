@@ -9,7 +9,8 @@
 GT_ORTHOGRAPHIC_REGEX_SRCS=\
 		inituppercase.regex \
 		spellrelax.regex    \
-		spellrelax-mobile-keyboard.regex
+		spellrelax-mobile-keyboard.regex \
+		spellrelax.Cans.regex
 
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
 		allcaps.xfscript      \
