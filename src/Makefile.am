@@ -47,53 +47,19 @@ GT_GENERATORS_XFST=
 #### Xerox transducers:
 if CAN_XFST
 # Transducers using syllabic writing system
-GT_ANALYSERS_XFST+=analyser-gt-desc-syll.xfst
-GT_GENERATORS_XFST+=generator-gt-norm-syll.xfst
+GT_ANALYSERS_XFST+=
+GT_GENERATORS_XFST+=
 endif # CAN_XFST
 
 #### HFST transducers
 if CAN_HFST
-GT_ANALYSERS_HFST+=analyser-gt-desc-syll.hfst
-GT_GENERATORS_HFST+=generator-gt-norm-syll.hfst
+GT_ANALYSERS_HFST+=
+GT_GENERATORS_HFST+=
 endif # CAN_HFST
 
 
 #################################################
 #### Add language-specific build rules here: ####
-
-analyser-gt-desc-syll.hfst: analyser-gt-desc.tmp.hfst \
-							orthography/syllabics2latin.compose.hfst
-	$(AM_V_GEN)$(HFST_COMPOSE) $(HFST_FLAGS) -F -1 $< \
-			-2 orthography/syllabics2latin.compose.hfst \
-		| $(HFST_MINIMIZE) $(HFST_FLAGS) \
-		| $(HFST_INVERT) $(HFST_FLAGS)\
-		-o $@
-
-generator-gt-norm-syll.hfst: generator-gt-norm.tmp.hfst \
-							 orthography/latin2syllabics.compose.hfst
-	$(AM_V_GEN)$(HFST_INVERT) $(HFST_FLAGS) \
-			orthography/latin2syllabics.compose.hfst \
-		| $(HFST_COMPOSE) $(HFST_FLAGS) -F -1 $< \
-		| $(HFST_MINIMIZE) $(HFST_FLAGS) \
-		-o $@
-
-analyser-gt-desc-syll.xfst: analyser-gt-desc.xfst \
-							orthography/latin2syllabics.compose.xfst
-	$(AM_V_GEN)$(PRINTF) "read regex \
-			    @\"$<\" \
-			.o. @\"orthography/latin2syllabics.compose.xfst\"        \
-			;\n\
-		 save stack $@\n\
-		 quit\n" | $(XFST) -q
-
-generator-gt-norm-syll.xfst: generator-gt-norm.xfst \
-							 orthography/latin2syllabics.compose.xfst
-	$(AM_V_GEN)$(PRINTF) "read regex \
-			    @\"orthography/latin2syllabics.compose.xfst\"        \
-			.o. @\"$<\" \
-			;\n\
-		 save stack $@\n\
-		 quit\n" | $(XFST) -q
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
