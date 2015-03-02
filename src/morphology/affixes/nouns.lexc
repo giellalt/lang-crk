@@ -516,7 +516,7 @@ LEXICON PLak !!= * @CODE@
 !! !!Locative suffixes
 
 LEXICON LOC !!= * @CODE@ 
-+Loc:%>i%^LOChk  FLAG ;
++Loc:%>i%^LOChk  NOPREFIX ;
 
 LEXICON LOCahk !!= * @CODE@ 
 +Loc:%>â%^LOChk  # ;
@@ -526,10 +526,8 @@ LEXICON LOCinaahk !!= * @CODE@ For collective locative
 
 !! !!Obviative suffix
 LEXICON OBVIATIVE !!= * @CODE@
-+Obv:%>a FLAG ;
-
-LEXICON FLAG
-@U.noun.abs@ # ;
++Loc:%>a NOPREFIX ; !this tag should be +Obv but it doesn't work
++Obv:%>a NOPREFIX ;
 
 !! !!Special cases
 LEXICON NOPREFIX !!= * @CODE@ gives diacr.flag for no prefix. Used for hardcoded forms in the lexicon
