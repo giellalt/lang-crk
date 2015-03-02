@@ -8,10 +8,12 @@
 
 	
 N+Gender+Number
-N+Gender+Locative
+N+Gender+Loc
 N+Gender+Number+Px1Sg
-N+Gender+Number+Px4Sg+Obviative?
-N+Gender+Diminutive+N+Gender+Number
+N+IN+Number+Px4Sg
+N+AN+Number+Px4Sg+Obviative
+N+AN+Diminutive+N+AN+Number
+N+IN+Diminutive+N+IN+Number
 V+AI+Ind+Prs+1Sg
 V+AI+Ind+Prs+3Sg
 V+AI+Ind+Prs+4Sg
