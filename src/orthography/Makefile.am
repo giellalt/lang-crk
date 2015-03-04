@@ -10,7 +10,8 @@ GT_ORTHOGRAPHIC_REGEX_SRCS=\
 		inituppercase.regex \
 		spellrelax.regex    \
 		spellrelax-mobile-keyboard.regex \
-		spellrelax.Cans.regex
+		spellrelax.Cans.regex \
+		SRO-to-saskatchewan.regex
 
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
 		allcaps.xfscript      \

@@ -1,0 +1,16 @@
+# Plains Cree long vowel SRO to saskatchewan-SRO conversion:
+# cirkumflex to macron.
+
+â -> ā, # a macron
+ê -> ē, # e macron
+î -> ī, # i macron
+ô -> ō, # o macron
+Â -> Ā, # A macron
+Ê -> Ē, # E macron
+Î -> Ī, # I macron
+Ô -> Ō; # O macron
+
+# Explanation:
+# lexical side (->) input 
+# Or, in other words:
+# correct (->) in use out there
