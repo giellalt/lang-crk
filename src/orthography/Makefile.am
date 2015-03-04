@@ -11,7 +11,8 @@ GT_ORTHOGRAPHIC_REGEX_SRCS=\
 		spellrelax.regex    \
 		spellrelax-mobile-keyboard.regex \
 		spellrelax.Cans.regex \
-		SRO-to-saskatchewan.regex
+		SRO-to-saskatchewan.regex \
+		spellrelax.saskatchewan.regex
 
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
 		allcaps.xfscript      \
