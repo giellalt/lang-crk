@@ -78,8 +78,8 @@ AM_CONDITIONAL([HAVE_COUNTRIES], [test "x$COUNTRIES" != "x"])
 # empty. If there are alternate orthographies, also the default must have a name.
 # It is assumed that conversion from the default orthography to the alternate
 # orthographies can be done programmatically with a regex or xfscript.
-AC_SUBST([DEFAULT_ORTH], [""])
-AC_SUBST([ALT_ORTHS], [""])
+AC_SUBST([DEFAULT_ORTH], ["SRO"])
+AC_SUBST([ALT_ORTHS], ["saskatchewan"])
 AM_CONDITIONAL([HAVE_ALT_ORTHS], [test "x$ALT_ORTHS" != "x"] -a "x$DEFAULT_ORTH" != "x"])
 
 # Specify the tags for all dialects in this variable, leave it empty if you do
