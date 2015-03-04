@@ -1,13 +1,40 @@
 # Plains Cree long vowel variation.
 
-ā (->) a, # a macron
-ē (->) e, # e macron
-ī (->) i, # i macron
-ō (->) o, # o macron
-Ā (->) A, # A macron
-Ē (->) E, # E macron
-Ī (->) I, # I macron
-Ō (->) O; # O macron
+ā (->) a,
+ē (->) e,
+ī (->) i,
+ō (->) o,
+Ā (->) A,
+Ē (->) E,
+Ī (->) I,
+Ō (->) O,
+
+ā (->) ā, # a + combining macron U+0304
+ē (->) ē, # e + combining macron U+0304
+ī (->) ī, # i + combining macron U+0304
+ō (->) ō, # o + combining macron U+0304
+Ā (->) Ā, # A + combining macron U+0304
+Ē (->) Ē, # E + combining macron U+0304
+Ī (->) Ī, # I + combining macron U+0304
+Ō (->) Ō, # O + combining macron U+0304
+
+ā (->) â, # a circumflex
+ē (->) ê, # e circumflex
+ī (->) î, # i circumflex
+ō (->) ô, # o circumflex
+Ā (->) Â, # A circumflex
+Ē (->) Ê, # E circumflex
+Ī (->) Î, # I circumflex
+Ō (->) Ô, # O circumflex
+
+ā (->) â, # a a + combining circumflex accent U+0302
+ē (->) ê, # e a + combining circumflex accent U+0302
+ī (->) î, # i a + combining circumflex accent U+0302
+ō (->) ô, # o a + combining circumflex accent U+0302
+Ā (->) Â, # A a + combining circumflex accent U+0302
+Ē (->) Ê, # E a + combining circumflex accent U+0302
+Ī (->) Î, # I a + combining circumflex accent U+0302
+Ō (->) Ô; # O a + combining circumflex accent U+0302
 
 
 # Explanation:
