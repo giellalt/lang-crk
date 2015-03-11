@@ -34,7 +34,6 @@ The Plains Cree verbs are divided in four groups:
 
  LEXICON CONJUNCT  gives flag for conjunctive and prefix ê-
 
-
  LEXICON CNJ_TENSE    gives prefixes and flags for tense in conjunctive
 
 
@@ -49,15 +48,11 @@ Preverbs
 
 
 
-
-
-
-
+ ! LEXICON PREVERBS   just adds the prefix boundary
 
 Now, lexc directs us to the ../stems/verbs.lexc file,
 where we find all the verbal stems. The suffixes are then
 found in the section "Suffixes" right underneath.
-
 
 
 !!!Suffixes
@@ -81,44 +76,18 @@ AICONJ_w
 
 
 
-
-Adding the flag diacritics for each subtype of conjugation class
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 !!Preverbs
-
-
-
-
 
 Directing to the various subtypes of conjugation classes
 
 
-
 Intransitive animate (AI)
 
- LEXICON AICONJ-MAIN  splits in 4 moods
+ LEXICON AICONJ  splits in 4 moods
 
- LEXICON AICONJw-MAIN  splits in 4 moods, for verbs with final -w
+ LEXICON AICONJw  splits in 4 moods, for verbs with final -w
 
- LEXICON AICONJn-MAIN  splits in 4 moods, for verbs with final -n
+ LEXICON AICONJn  splits in 4 moods, for verbs with final -n
 
 
 
@@ -160,11 +129,11 @@ Intransitive animate (AI)
 Intransitive inanimate (II)
 
 
- LEXICON IICONJ-MAIN   adds the flag for no personprefixes
+ LEXICON IICONJ   adds the flag for no personprefixes
 
- LEXICON IICONJ-SG-MAIN   adds the flag for no personprefixes, only Sg forms
+ LEXICON IICONJ-SG   adds the flag for no personprefixes, only Sg forms
 
- LEXICON IICONJ-PL-MAIN   adds the flag for no personprefixes, only Pl forms
+ LEXICON IICONJ-PL   adds the flag for no personprefixes, only Pl forms
 
  LEXICON IICONJFORMS  adds a baseform = Prs+3Sg
 
@@ -173,11 +142,11 @@ Intransitive inanimate (II)
  LEXICON IICONJFORMS-PL  adds a baseform = Prs+3Pl
 
 
- LEXICON IICONJw-MAIN    w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
+ LEXICON IICONJw    w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 
- LEXICON IICONJw-SG-MAIN    w final, only Sg forms Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
+ LEXICON IICONJw-SG    w final, only Sg forms Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 
- LEXICON IICONJw-PL-MAIN    w final, only Pl forms Adds a baseform = Prs+3Pl and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
+ LEXICON IICONJw-PL    w final, only Pl forms Adds a baseform = Prs+3Pl and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
 
 
  LEXICON IICONJ-CONTw  w final. Splits according to mood
@@ -251,9 +220,9 @@ The VTA verbs split in different moods.
 There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
- LEXICON TACONJ_1-MAIN  
+ LEXICON TACONJ_1  
 
- * LEXICON TACONJ_2-MAIN   splits in 4. The -aw shall be removed from some forms.
+ * LEXICON TACONJ_2   splits in 4. The -aw shall be removed from some forms.
 
 
 
@@ -307,11 +276,11 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 Transitive Inanimate (TI)
 
- * LEXICON TICONJ-MAIN   adds baseform and directs to TICONJ-CONT
+ * LEXICON TICONJ   adds baseform and directs to TICONJ-CONT
 
- * LEXICON TICONJi-MAIN   adds baseform and directs to TICONJi-CONT
+ * LEXICON TICONJi   adds baseform and directs to TICONJi-CONT
 
- * LEXICON TICONJâ-MAIN   adds baseform and directs to TICONJâ-CONT
+ * LEXICON TICONJâ   adds baseform and directs to TICONJâ-CONT
 
 
 
