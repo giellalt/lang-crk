@@ -57,10 +57,10 @@ GT_SYLLSPELLER_HFST=generator-fstspeller-gt-norm-syll.hfst
 GT_SYLLSPELLER_ACCEPTOR=acceptor.syll.hfst
 
 $(GT_SYLLSPELLER_HFST): ../$(GT_SPELLER_HFST) \
-		../../../../src/orthography/latin2syllabics.hfst
+		../../../../src/orthography/Latn-to-Cans.compose.hfst
 	$(AM_V_GEN)$(HFST_COMPOSE_INTERSECT) $(HFST_FLAGS) \
 		-1 $< \
-		-2 ../../../../src/orthography/latin2syllabics.hfst \
+		-2 ../../../../src/orthography/Latn-to-Cans.compose.hfst \
 		| $(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 ####### Automake targets: ########
