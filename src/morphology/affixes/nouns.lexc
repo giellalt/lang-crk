@@ -528,9 +528,6 @@ LEXICON LOCinaahk !!= * @CODE@ For collective locative
 LEXICON OBVIATIVE !!= * @CODE@
 +Loc:%>a NOPREFIX ; !this tag should be +Obv but it doesn't work
 +Obv:%>a NOPREFIX ;
-+Bvo:%>a NOPREFIX ;
-+Ovb:%>a NOPREFIX ;
-+Bbv:%>a NOPREFIX ;
 
 !! !!Special cases
 LEXICON NOPREFIX !!= * @CODE@ gives diacr.flag for no prefix. Used for hardcoded forms in the lexicon
