@@ -501,7 +501,6 @@ found at the end of this file.
 
 
 
-
  * LEXICON AN_KININFL_MONOG  Lexicon with reduces possessive paradigm: only one wife/husband
 
  * LEXICON AN_DECL-ATIM	 for atim and mistatim.
@@ -626,8 +625,6 @@ LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
 !!Obviative suffix
  * LEXICON OBVIATIVE 
-
-
 
 !!Special cases
  * LEXICON NOPREFIX  gives diacr.flag for no prefix. Used for hardcoded forms in the lexicon
