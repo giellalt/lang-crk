@@ -5,7 +5,7 @@
 # over by the test runner.
 
 ###### Variables - set as suitable for each shell script: #######
-transducer=latin2syllabics
+transducer=Latn-to-Cans
 halftest=gen # generation test
 yaml_file_subdir=.
 
