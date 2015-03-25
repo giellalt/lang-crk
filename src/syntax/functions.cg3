@@ -132,6 +132,8 @@ LIST Der/Dim = Der/Dim ;
 LIST COMMA = "," ;
 LIST ¶ = ¶;
 
+LIST DEPVERB = ("ê-.*"r) ;
+
 # Syntactic tags
 # --------------
 
@@ -189,7 +191,7 @@ LIST @VOC = @VOC ;
 
 LIST @CVP = @CVP ;
 LIST @CNP = @CNP ;
-
+LIST @FS-VFIN< = @FS-VFIN< ;
 
 LIST @X = @X ;
 
@@ -244,7 +246,7 @@ MAP @+FMAINV VFIN ;
 MAP @>N (Pron Dem) (1 N)  ;
 MAP @N< (Pron Dem) (-1 N)  ;
 
-
+MAP @FS-VFIN< DEPVERB (*-1 @+FMAINV OR (?)) ;
 MAP @OBJ> N IF (0 Sg + Obv)(*1 TA + 3SgO);
 MAP @<OBJ N IF (0 Sg + Obv)(*-1 TA + 3SgO);
 
@@ -256,6 +258,7 @@ MAP @<SUBJ N IF (0 AN + Sg)(*-1 TA + 4Sg);
 
 MAP @SUBJ> N IF (0 IN + Sg)(*1 II + 3Sg);
 MAP @<SUBJ N IF (0 IN + Sg)(*-1 II + 3Sg);
+
 
 
 MAP @X (?) ;
