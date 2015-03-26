@@ -60,27 +60,26 @@ make check
 !!Make/update all yaml-tests in one for a certain PoS (and a certain pattern?)
 This example is adding all verbs into one file:
 {{{
-head -11 test/src/gt-norm-yamls/V-mato_gt-norm.yaml > U-all_gt-norm.yaml 
-tail +11 test/src/gt-norm-yamls/V* | grep -v "==" >>  U-all_gt-norm.yaml
-}}}
+head -11 test/src/gt-norm-yamls/V-AI-matow_gt-norm.yaml > test/src/gt-norm-yamls/U-all_gt-norm.yaml
+tail +11 test/src/gt-norm-yamls/V* | grep -v "==" >> test/src/gt-norm-yamls/U-all_gt-norm.yaml}}}
 
 This example is adding all nouns with final -y into one file:
 {{{
-head -11 test/src/gt-norm-yamls/N-amiskw_gt-norm.yaml > A-all_gt-norm.yaml 
-tail +11 test/src/gt-norm-yamls/N*y_gt-norm.yaml | grep -v "==" >>  A-all_gt-norm.yaml
+head -11 test/src/gt-norm-yamls/N-AN-amisk_gt-norm.yaml > test/src/gt-norm-yamls/A-Ny-all_gt-norm.yaml 
+tail +11 test/src/gt-norm-yamls/N*y_gt-norm.yaml | grep -v "==" >>  test/src/gt-norm-yamls/A-Ny-all_gt-norm.yaml
 }}}
 
 
 !! Make a new yaml-file
-The example is for the inanimate noun ôtênaw. Use an already functioning yaml-file as a starting point (here N-amiskw_gt-norm.yaml). You still have to do a little editing afterwords, like correcting the docu about the lemma, and making it more readable by adding empty lines. And you must of course correct the output. 
+The example is for the inanimate noun ôtênaw. Use an already functioning yaml-file as a starting point (here N-AN-amiskw_gt-norm.yaml). You still have to do a little editing afterwords, like correcting the docu about the lemma, and making it more readable by adding empty lines. And you must of course correct the output. 
 
 {{{
-head -12 test/src/gt-norm-yamls/N-amiskw_gt-norm.yaml\
-> test/src/gt-norm-yamls/N-otenaw_gt-norm.yaml
+head -12 test/src/gt-norm-yamls/N-AN-amisk_gt-norm.yaml\
+> test/src/gt-norm-yamls/N-IN-otenaw_gt-norm.yaml
 
 cat test/data/NI-par.txt | sed 's/^/ôtênaw/' | dcrk |\
 tr '\t' ':' | sed 's/:/: /' | grep -v '^$' |\
-sed 's/^/     /' >> test/src/gt-norm-yamls/N-otenaw_gt-norm.yaml
+sed 's/^/     /' >> test/src/gt-norm-yamls/N-IN-otenaw_gt-norm.yaml
 }}}
 
 Comment: The last sed-command should give 5 whitespaces
