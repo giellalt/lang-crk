@@ -1,319 +1,319 @@
 Config:
-  hfst:
-    Gen: ../../../src/generator-gt-norm.hfst
-    Morph: ../../../src/analyser-gt-norm.hfst
-  xerox:
-    Gen: ../../../src/generator-gt-norm.xfst
-    Morph: ../../../src/analyser-gt-norm.xfst
-    App: lookup
+ hfst:
+  Gen: ../../../src/generator-gt-norm.hfst
+  Morph: ../../../src/analyser-gt-norm.hfst
+ xerox:
+  Gen: ../../../src/generator-gt-norm.xfst
+  Morph: ../../../src/analyser-gt-norm.xfst
+  App: lookup
 
 Tests:
-  
-  
-  Verb - atoskêw - ok : # Ordinary IA verb - full paradigm
-  
-     atoskêw+V+IA+Ind+Prs+1Sg: nitatoskân
-     atoskêw+V+IA+Ind+Prs+2Sg: kitatoskân
-     atoskêw+V+IA+Ind+Prs+3Sg: atoskêw
-     atoskêw+V+IA+Ind+Prs+4Sg: atoskêyiwa
-     atoskêw+V+IA+Ind+Prs+1Pl: nitatoskânân
-     atoskêw+V+IA+Ind+Prs+12Pl: [kitatoskânaw, kitatoskânânaw]
-     atoskêw+V+IA+Ind+Prs+2Pl: kitatoskânâwâw
-     atoskêw+V+IA+Ind+Prs+3Pl: atoskêwak
-     atoskêw+V+IA+Ind+Prs+4Pl: atoskêyiwa
 
-     atoskêw+V+IA+Ind+Prt+1Sg: [nikî-atoskân, nikîhatoskân]
-     atoskêw+V+IA+Ind+Prt+2Sg: [kikî-atoskân, kikîhatoskân]
-     atoskêw+V+IA+Ind+Prt+3Sg: [kî-atoskêw, kîhatoskêw]
-     atoskêw+V+IA+Ind+Prt+4Sg: [kî-atoskêyiwa, kîhatoskêyiwa]
-     atoskêw+V+IA+Ind+Prt+1Pl: [nikî-atoskânân, nikîhatoskânân]
-     atoskêw+V+IA+Ind+Prt+12Pl: [kikî-atoskânaw, kikîhatoskânaw, kikî-atoskânânaw, kikîhatoskânânaw]
-     atoskêw+V+IA+Ind+Prt+2Pl: [kikî-atoskânâwâw, kikîhatoskânâwâw]
-     atoskêw+V+IA+Ind+Prt+3Pl: [kî-atoskêwak, kîhatoskêwak]
-     atoskêw+V+IA+Ind+Prt+4Pl: [kî-atoskêyiwa, kîhatoskêyiwa]
+  
+  Verb - atoskêw - ok : # Ordinary AI verb - full paradigm
+  
+     atoskêw+V+AI+Ind+Prs+1Sg: nitatoskân
+     atoskêw+V+AI+Ind+Prs+2Sg: kitatoskân
+     atoskêw+V+AI+Ind+Prs+3Sg: atoskêw
+     atoskêw+V+AI+Ind+Prs+4Sg: atoskêyiwa
+     atoskêw+V+AI+Ind+Prs+1Pl: nitatoskânân
+     atoskêw+V+AI+Ind+Prs+12Pl: [kitatoskânaw, kitatoskânânaw]
+     atoskêw+V+AI+Ind+Prs+2Pl: kitatoskânâwâw
+     atoskêw+V+AI+Ind+Prs+3Pl: atoskêwak
+     atoskêw+V+AI+Ind+Prs+4Pl: atoskêyiwa
+
+     atoskêw+V+AI+Ind+Prt+1Sg: [nikî-atoskân, nikîhatoskân]
+     atoskêw+V+AI+Ind+Prt+2Sg: [kikî-atoskân, kikîhatoskân]
+     atoskêw+V+AI+Ind+Prt+3Sg: [kî-atoskêw, kîhatoskêw]
+     atoskêw+V+AI+Ind+Prt+4Sg: [kî-atoskêyiwa, kîhatoskêyiwa]
+     atoskêw+V+AI+Ind+Prt+1Pl: [nikî-atoskânân, nikîhatoskânân]
+     atoskêw+V+AI+Ind+Prt+12Pl: [kikî-atoskânaw, kikîhatoskânaw, kikî-atoskânânaw, kikîhatoskânânaw]
+     atoskêw+V+AI+Ind+Prt+2Pl: [kikî-atoskânâwâw, kikîhatoskânâwâw]
+     atoskêw+V+AI+Ind+Prt+3Pl: [kî-atoskêwak, kîhatoskêwak]
+     atoskêw+V+AI+Ind+Prt+4Pl: [kî-atoskêyiwa, kîhatoskêyiwa]
      
-     atoskêw+V+IA+Cnj+Prs+1Sg: [ê-atoskêyân, êhatoskêyân]
-     atoskêw+V+IA+Cnj+Prs+2Sg: [ê-atoskêyan, êhatoskêyan]
-     atoskêw+V+IA+Cnj+Prs+3Sg: [ê-atoskêt, êhatoskêt]
-     atoskêw+V+IA+Cnj+Prs+4Sg: [ê-atoskêyit, êhatoskêyit]
-     atoskêw+V+IA+Cnj+Prs+1Pl: [ê-atoskêyâhk, êhatoskêyâhk]
-     atoskêw+V+IA+Cnj+Prs+12Pl: [ê-atoskêyahk, êhatoskêyahk]
-     atoskêw+V+IA+Cnj+Prs+2Pl: [ê-atoskêyêk, êhatoskêyêk]
-     atoskêw+V+IA+Cnj+Prs+3Pl: [ê-atoskêcik, êhatoskêcik]
-     atoskêw+V+IA+Cnj+Prs+4Pl: [ê-atoskêyit, êhatoskêyit]
+     atoskêw+V+AI+Cnj+Prs+1Sg: [ê-atoskêyân, êhatoskêyân]
+     atoskêw+V+AI+Cnj+Prs+2Sg: [ê-atoskêyan, êhatoskêyan]
+     atoskêw+V+AI+Cnj+Prs+3Sg: [ê-atoskêt, êhatoskêt]
+     atoskêw+V+AI+Cnj+Prs+4Sg: [ê-atoskêyit, êhatoskêyit]
+     atoskêw+V+AI+Cnj+Prs+1Pl: [ê-atoskêyâhk, êhatoskêyâhk]
+     atoskêw+V+AI+Cnj+Prs+12Pl: [ê-atoskêyahk, êhatoskêyahk]
+     atoskêw+V+AI+Cnj+Prs+2Pl: [ê-atoskêyêk, êhatoskêyêk]
+     atoskêw+V+AI+Cnj+Prs+3Pl: [ê-atoskêcik, êhatoskêcik]
+     atoskêw+V+AI+Cnj+Prs+4Pl: [ê-atoskêyit, êhatoskêyit]
 
-     atoskêw+V+IA+Imp+Imm+2Sg: atoskê
-     atoskêw+V+IA+Imp+Imm+2Pl: atoskêk
-     atoskêw+V+IA+Imp+Imm+12Pl: atoskêtân
+     atoskêw+V+AI+Imp+Imm+2Sg: atoskê
+     atoskêw+V+AI+Imp+Imm+2Pl: atoskêk
+     atoskêw+V+AI+Imp+Imm+12Pl: atoskêtân
      
-     atoskêw+V+IA+Imp+Del+2Sg: atoskêhkan
-     atoskêw+V+IA+Imp+Del+2Pl: atoskêhkêk
-     atoskêw+V+IA+Imp+Del+12Pl: atoskêhkahk
+     atoskêw+V+AI+Imp+Del+2Sg: atoskêhkan
+     atoskêw+V+AI+Imp+Del+2Pl: atoskêhkêk
+     atoskêw+V+AI+Imp+Del+12Pl: atoskêhkahk
 
 
-  Verb - mâto - cry : # Ordinary IA verb - full paradigm
+  Verb - mâto - cry : # Ordinary AI verb - full paradigm
 
-     mâtow+V+IA+Ind+Prs+1Sg: nimâton
-     mâtow+V+IA+Ind+Prs+2Sg: kimâton
-     mâtow+V+IA+Ind+Prs+3Sg: mâtow
-     mâtow+V+IA+Ind+Prs+4Sg: mâtoyiwa
-     mâtow+V+IA+Ind+Prs+1Pl: nimâtonân
-     mâtow+V+IA+Ind+Prs+12Pl: [kimâtonaw, kimâtonânaw]
-     mâtow+V+IA+Ind+Prs+2Pl: kimâtonâwâw
-     mâtow+V+IA+Ind+Prs+3Pl: mâtowak
-     mâtow+V+IA+Ind+Prs+4Pl: mâtoyiwa
+     mâtow+V+AI+Ind+Prs+1Sg: nimâton
+     mâtow+V+AI+Ind+Prs+2Sg: kimâton
+     mâtow+V+AI+Ind+Prs+3Sg: mâtow
+     mâtow+V+AI+Ind+Prs+4Sg: mâtoyiwa
+     mâtow+V+AI+Ind+Prs+1Pl: nimâtonân
+     mâtow+V+AI+Ind+Prs+12Pl: [kimâtonaw, kimâtonânaw]
+     mâtow+V+AI+Ind+Prs+2Pl: kimâtonâwâw
+     mâtow+V+AI+Ind+Prs+3Pl: mâtowak
+     mâtow+V+AI+Ind+Prs+4Pl: mâtoyiwa
    
-     mâtow+V+IA+Ind+Prt+1Sg: [nikîmâton, nikî-mâton]
-     mâtow+V+IA+Ind+Prt+2Sg: [kikîmâton, kikî-mâton]
-     mâtow+V+IA+Ind+Prt+3Sg: [kîmâtow, kî-mâtow]
+     mâtow+V+AI+Ind+Prt+1Sg: [nikîmâton, nikî-mâton]
+     mâtow+V+AI+Ind+Prt+2Sg: [kikîmâton, kikî-mâton]
+     mâtow+V+AI+Ind+Prt+3Sg: [kîmâtow, kî-mâtow]
    
-     mâtow+V+IA+Cnj+Prs+1Sg: [ê-mâtoyân, êmâtoyân]
-     mâtow+V+IA+Cnj+Prs+2Sg: [ê-mâtoyan, êmâtoyan]
-     mâtow+V+IA+Cnj+Prs+3Sg: [ê-mâtot, êmâtot]
-     mâtow+V+IA+Cnj+Prs+4Sg: [ê-mâtoyit, êmâtoyit]
-     mâtow+V+IA+Cnj+Prs+1Pl: [ê-mâtoyâhk, êmâtoyâhk]
-     mâtow+V+IA+Cnj+Prs+12Pl: [ê-mâtoyahk, êmâtoyahk]
-     mâtow+V+IA+Cnj+Prs+2Pl: [ê-mâtoyêk, êmâtoyêk]
-     mâtow+V+IA+Cnj+Prs+3Pl: [ê-mâtocik, êmâtocik]
-     mâtow+V+IA+Cnj+Prs+4Pl: [ê-mâtoyit, êmâtoyit]
+     mâtow+V+AI+Cnj+Prs+1Sg: [ê-mâtoyân, êmâtoyân]
+     mâtow+V+AI+Cnj+Prs+2Sg: [ê-mâtoyan, êmâtoyan]
+     mâtow+V+AI+Cnj+Prs+3Sg: [ê-mâtot, êmâtot]
+     mâtow+V+AI+Cnj+Prs+4Sg: [ê-mâtoyit, êmâtoyit]
+     mâtow+V+AI+Cnj+Prs+1Pl: [ê-mâtoyâhk, êmâtoyâhk]
+     mâtow+V+AI+Cnj+Prs+12Pl: [ê-mâtoyahk, êmâtoyahk]
+     mâtow+V+AI+Cnj+Prs+2Pl: [ê-mâtoyêk, êmâtoyêk]
+     mâtow+V+AI+Cnj+Prs+3Pl: [ê-mâtocik, êmâtocik]
+     mâtow+V+AI+Cnj+Prs+4Pl: [ê-mâtoyit, êmâtoyit]
    
-     mâtow+V+IA+Imp+Imm+2Sg: mâto
-     mâtow+V+IA+Imp+Imm+2Pl: mâtok
-     mâtow+V+IA+Imp+Imm+12Pl: mâtotân
+     mâtow+V+AI+Imp+Imm+2Sg: mâto
+     mâtow+V+AI+Imp+Imm+2Pl: mâtok
+     mâtow+V+AI+Imp+Imm+12Pl: mâtotân
    
-     mâtow+V+IA+Imp+Del+2Sg: mâtohkan
-     mâtow+V+IA+Imp+Del+2Pl: mâtohkêk
-     mâtow+V+IA+Imp+Del+12Pl: mâtohkahk
+     mâtow+V+AI+Imp+Del+2Sg: mâtohkan
+     mâtow+V+AI+Imp+Del+2Pl: mâtohkêk
+     mâtow+V+AI+Imp+Del+12Pl: mâtohkahk
 
   
   Verb - mîciso - ok : # Ordinary VAI verb "eat" - full paradigm
-     mîcisow+V+IA+Ind+Prs+1Sg: nimîcison
-     mîcisow+V+IA+Ind+Prs+2Sg: kimîcison
-     mîcisow+V+IA+Ind+Prs+3Sg: mîcisow
-     mîcisow+V+IA+Ind+Prs+4Sg: mîcisoyiwa
-     mîcisow+V+IA+Ind+Prs+1Pl: nimîcisonân
-     mîcisow+V+IA+Ind+Prs+12Pl: [kimîcisonaw, kimîcisonânaw]
-     mîcisow+V+IA+Ind+Prs+2Pl: kimîcisonâwâw
-     mîcisow+V+IA+Ind+Prs+3Pl: mîcisowak
-     mîcisow+V+IA+Ind+Prs+4Pl: mîcisoyiwa
+     mîcisow+V+AI+Ind+Prs+1Sg: nimîcison
+     mîcisow+V+AI+Ind+Prs+2Sg: kimîcison
+     mîcisow+V+AI+Ind+Prs+3Sg: mîcisow
+     mîcisow+V+AI+Ind+Prs+4Sg: mîcisoyiwa
+     mîcisow+V+AI+Ind+Prs+1Pl: nimîcisonân
+     mîcisow+V+AI+Ind+Prs+12Pl: [kimîcisonaw, kimîcisonânaw]
+     mîcisow+V+AI+Ind+Prs+2Pl: kimîcisonâwâw
+     mîcisow+V+AI+Ind+Prs+3Pl: mîcisowak
+     mîcisow+V+AI+Ind+Prs+4Pl: mîcisoyiwa
      
-     mîcisow+V+IA+Cnj+Prs+1Sg: [ê-mîcisoyân, êmîcisoyân]
-     mîcisow+V+IA+Cnj+Prs+2Sg: [ê-mîcisoyan, êmîcisoyan]
-     mîcisow+V+IA+Cnj+Prs+3Sg: [ê-mîcisot, êmîcisot]
-     mîcisow+V+IA+Cnj+Prs+4Sg: [ê-mîcisoyit, êmîcisoyit]
-     mîcisow+V+IA+Cnj+Prs+1Pl: [ê-mîcisoyâhk, êmîcisoyâhk]
-     mîcisow+V+IA+Cnj+Prs+12Pl: [ê-mîcisoyahk, êmîcisoyahk]
-     mîcisow+V+IA+Cnj+Prs+2Pl: [ê-mîcisoyêk, êmîcisoyêk]
-     mîcisow+V+IA+Cnj+Prs+3Pl: [ê-mîcisocik, êmîcisocik]
-     mîcisow+V+IA+Cnj+Prs+4Pl: [ê-mîcisoyit, êmîcisoyit]
+     mîcisow+V+AI+Cnj+Prs+1Sg: [ê-mîcisoyân, êmîcisoyân]
+     mîcisow+V+AI+Cnj+Prs+2Sg: [ê-mîcisoyan, êmîcisoyan]
+     mîcisow+V+AI+Cnj+Prs+3Sg: [ê-mîcisot, êmîcisot]
+     mîcisow+V+AI+Cnj+Prs+4Sg: [ê-mîcisoyit, êmîcisoyit]
+     mîcisow+V+AI+Cnj+Prs+1Pl: [ê-mîcisoyâhk, êmîcisoyâhk]
+     mîcisow+V+AI+Cnj+Prs+12Pl: [ê-mîcisoyahk, êmîcisoyahk]
+     mîcisow+V+AI+Cnj+Prs+2Pl: [ê-mîcisoyêk, êmîcisoyêk]
+     mîcisow+V+AI+Cnj+Prs+3Pl: [ê-mîcisocik, êmîcisocik]
+     mîcisow+V+AI+Cnj+Prs+4Pl: [ê-mîcisoyit, êmîcisoyit]
 
-     mîcisow+V+IA+Imp+Imm+2Sg: mîciso
-     mîcisow+V+IA+Imp+Imm+2Pl: mîcisok
-     mîcisow+V+IA+Imp+Imm+12Pl: mîcisotân
+     mîcisow+V+AI+Imp+Imm+2Sg: mîciso
+     mîcisow+V+AI+Imp+Imm+2Pl: mîcisok
+     mîcisow+V+AI+Imp+Imm+12Pl: mîcisotân
   
-     mîcisow+V+IA+Imp+Del+2Sg: mîcisohkan
-     mîcisow+V+IA+Imp+Del+2Pl: mîcisohkêk
-     mîcisow+V+IA+Imp+Del+12Pl: mîcisohkahk
+     mîcisow+V+AI+Imp+Del+2Sg: mîcisohkan
+     mîcisow+V+AI+Imp+Del+2Pl: mîcisohkêk
+     mîcisow+V+AI+Imp+Del+12Pl: mîcisohkahk
 
 
   
   Verb - nêhiyawêw - help : # Ordinary VAI verb - full paradigm
 
-     nêhiyawêw+V+IA+Ind+Prs+1Sg: ninêhiyawân
-     nêhiyawêw+V+IA+Ind+Prs+2Sg: kinêhiyawân
-     nêhiyawêw+V+IA+Ind+Prs+3Sg: nêhiyawêw
-     nêhiyawêw+V+IA+Ind+Prs+4Sg: nêhiyawêyiwa
-     nêhiyawêw+V+IA+Ind+Prs+1Pl: ninêhiyawânân
-     nêhiyawêw+V+IA+Ind+Prs+12Pl: [kinêhiyawânaw, kinêhiyawânânaw]
-     nêhiyawêw+V+IA+Ind+Prs+2Pl: kinêhiyawânâwâw
-     nêhiyawêw+V+IA+Ind+Prs+3Pl: nêhiyawêwak
-     nêhiyawêw+V+IA+Ind+Prs+4Pl: nêhiyawêyiwa
+     nêhiyawêw+V+AI+Ind+Prs+1Sg: ninêhiyawân
+     nêhiyawêw+V+AI+Ind+Prs+2Sg: kinêhiyawân
+     nêhiyawêw+V+AI+Ind+Prs+3Sg: nêhiyawêw
+     nêhiyawêw+V+AI+Ind+Prs+4Sg: nêhiyawêyiwa
+     nêhiyawêw+V+AI+Ind+Prs+1Pl: ninêhiyawânân
+     nêhiyawêw+V+AI+Ind+Prs+12Pl: [kinêhiyawânaw, kinêhiyawânânaw]
+     nêhiyawêw+V+AI+Ind+Prs+2Pl: kinêhiyawânâwâw
+     nêhiyawêw+V+AI+Ind+Prs+3Pl: nêhiyawêwak
+     nêhiyawêw+V+AI+Ind+Prs+4Pl: nêhiyawêyiwa
      
-     nêhiyawêw+V+IA+Ind+Prt+1Sg: [nikî-nêhiyawân, nikînêhiyawân]
-     nêhiyawêw+V+IA+Ind+Prt+2Sg: [kikî-nêhiyawân, kikînêhiyawân]
-     nêhiyawêw+V+IA+Ind+Prt+3Sg: [kî-nêhiyawêw, kînêhiyawêw]
-     nêhiyawêw+V+IA+Ind+Prt+4Sg: [kî-nêhiyawêyiwa, kînêhiyawêyiwa]
-     nêhiyawêw+V+IA+Ind+Prt+1Pl: [nikî-nêhiyawânân, nikînêhiyawânân]
-     nêhiyawêw+V+IA+Ind+Prt+12Pl: [kikî-nêhiyawânaw, kikînêhiyawânaw, kikî-nêhiyawânânaw, kikînêhiyawânânaw]
-     nêhiyawêw+V+IA+Ind+Prt+2Pl: [kikî-nêhiyawânâwâw, kikînêhiyawânâwâw]
-     nêhiyawêw+V+IA+Ind+Prt+3Pl: [kî-nêhiyawêwak, kînêhiyawêwak]
-     nêhiyawêw+V+IA+Ind+Prt+4Pl: [kî-nêhiyawêyiwa, kînêhiyawêyiwa]
+     nêhiyawêw+V+AI+Ind+Prt+1Sg: [nikî-nêhiyawân, nikînêhiyawân]
+     nêhiyawêw+V+AI+Ind+Prt+2Sg: [kikî-nêhiyawân, kikînêhiyawân]
+     nêhiyawêw+V+AI+Ind+Prt+3Sg: [kî-nêhiyawêw, kînêhiyawêw]
+     nêhiyawêw+V+AI+Ind+Prt+4Sg: [kî-nêhiyawêyiwa, kînêhiyawêyiwa]
+     nêhiyawêw+V+AI+Ind+Prt+1Pl: [nikî-nêhiyawânân, nikînêhiyawânân]
+     nêhiyawêw+V+AI+Ind+Prt+12Pl: [kikî-nêhiyawânaw, kikînêhiyawânaw, kikî-nêhiyawânânaw, kikînêhiyawânânaw]
+     nêhiyawêw+V+AI+Ind+Prt+2Pl: [kikî-nêhiyawânâwâw, kikînêhiyawânâwâw]
+     nêhiyawêw+V+AI+Ind+Prt+3Pl: [kî-nêhiyawêwak, kînêhiyawêwak]
+     nêhiyawêw+V+AI+Ind+Prt+4Pl: [kî-nêhiyawêyiwa, kînêhiyawêyiwa]
 
-     nêhiyawêw+V+IA+Ind+Fut+Def+1Sg: [nika-nêhiyawân, nikanêhiyawân]
-     nêhiyawêw+V+IA+Ind+Fut+Def+2Sg: [kika-nêhiyawân, kikanêhiyawân]
-     nêhiyawêw+V+IA+Ind+Fut+Def+3Sg: [ka-nêhiyawêw, kanêhiyawêw]
-     nêhiyawêw+V+IA+Ind+Fut+Def+4Sg: [ka-nêhiyawêyiwa, kanêhiyawêyiwa]
-     nêhiyawêw+V+IA+Ind+Fut+Def+1Pl: [nika-nêhiyawânân, nikanêhiyawânân]
-     nêhiyawêw+V+IA+Ind+Fut+Def+12Pl: [kika-nêhiyawânaw, kikanêhiyawânaw, kikanêhiyawânânaw, kika-nêhiyawânânaw]
-     nêhiyawêw+V+IA+Ind+Fut+Def+2Pl: [kika-nêhiyawânâwâw, kikanêhiyawânâwâw]
-     nêhiyawêw+V+IA+Ind+Fut+Def+3Pl: [ka-nêhiyawêwak, kanêhiyawêwak]
-     nêhiyawêw+V+IA+Ind+Fut+Def+4Pl: [ka-nêhiyawêyiwa, kanêhiyawêyiwa]
+     nêhiyawêw+V+AI+Ind+Fut+Def+1Sg: [nika-nêhiyawân, nikanêhiyawân]
+     nêhiyawêw+V+AI+Ind+Fut+Def+2Sg: [kika-nêhiyawân, kikanêhiyawân]
+     nêhiyawêw+V+AI+Ind+Fut+Def+3Sg: [ka-nêhiyawêw, kanêhiyawêw]
+     nêhiyawêw+V+AI+Ind+Fut+Def+4Sg: [ka-nêhiyawêyiwa, kanêhiyawêyiwa]
+     nêhiyawêw+V+AI+Ind+Fut+Def+1Pl: [nika-nêhiyawânân, nikanêhiyawânân]
+     nêhiyawêw+V+AI+Ind+Fut+Def+12Pl: [kika-nêhiyawânaw, kikanêhiyawânaw, kikanêhiyawânânaw, kika-nêhiyawânânaw]
+     nêhiyawêw+V+AI+Ind+Fut+Def+2Pl: [kika-nêhiyawânâwâw, kikanêhiyawânâwâw]
+     nêhiyawêw+V+AI+Ind+Fut+Def+3Pl: [ka-nêhiyawêwak, kanêhiyawêwak]
+     nêhiyawêw+V+AI+Ind+Fut+Def+4Pl: [ka-nêhiyawêyiwa, kanêhiyawêyiwa]
      
-     nêhiyawêw+V+IA+Cnj+Prs+1Sg: [ênêhiyawêyân, ê-nêhiyawêyân]
-     nêhiyawêw+V+IA+Cnj+Prs+2Sg: [ênêhiyawêyan, ê-nêhiyawêyan]
-     nêhiyawêw+V+IA+Cnj+Prs+3Sg: [ênêhiyawêt, ê-nêhiyawêt]
-     nêhiyawêw+V+IA+Cnj+Prs+4Sg: [ênêhiyawêyit, ê-nêhiyawêyit]
-     nêhiyawêw+V+IA+Cnj+Prs+1Pl: [ênêhiyawêyâhk, ê-nêhiyawêyâhk]
-     nêhiyawêw+V+IA+Cnj+Prs+12Pl: [ênêhiyawêyahk, ê-nêhiyawêyahk]
-     nêhiyawêw+V+IA+Cnj+Prs+2Pl: [ênêhiyawêyêk, ê-nêhiyawêyêk]
-     nêhiyawêw+V+IA+Cnj+Prs+3Pl: [ênêhiyawêcik, ê-nêhiyawêcik]
+     nêhiyawêw+V+AI+Cnj+Prs+1Sg: [ênêhiyawêyân, ê-nêhiyawêyân]
+     nêhiyawêw+V+AI+Cnj+Prs+2Sg: [ênêhiyawêyan, ê-nêhiyawêyan]
+     nêhiyawêw+V+AI+Cnj+Prs+3Sg: [ênêhiyawêt, ê-nêhiyawêt]
+     nêhiyawêw+V+AI+Cnj+Prs+4Sg: [ênêhiyawêyit, ê-nêhiyawêyit]
+     nêhiyawêw+V+AI+Cnj+Prs+1Pl: [ênêhiyawêyâhk, ê-nêhiyawêyâhk]
+     nêhiyawêw+V+AI+Cnj+Prs+12Pl: [ênêhiyawêyahk, ê-nêhiyawêyahk]
+     nêhiyawêw+V+AI+Cnj+Prs+2Pl: [ênêhiyawêyêk, ê-nêhiyawêyêk]
+     nêhiyawêw+V+AI+Cnj+Prs+3Pl: [ênêhiyawêcik, ê-nêhiyawêcik]
      
-     nêhiyawêw+V+IA+Cnj+Prt+1Sg: [êkînêhiyawêyân, êkî-nêhiyawêyân, ê-kînêhiyawêyân, ê-kî-nêhiyawêyân]
-     nêhiyawêw+V+IA+Cnj+Prt+2Sg: [êkînêhiyawêyan, êkî-nêhiyawêyan, ê-kînêhiyawêyan, ê-kî-nêhiyawêyan]
-     nêhiyawêw+V+IA+Cnj+Prt+3Sg: [êkînêhiyawêt, êkî-nêhiyawêt, ê-kînêhiyawêt, ê-kî-nêhiyawêt]
-     nêhiyawêw+V+IA+Cnj+Prt+4Sg: [êkînêhiyawêyit, êkî-nêhiyawêyit, ê-kînêhiyawêyit, ê-kî-nêhiyawêyit]
+     nêhiyawêw+V+AI+Cnj+Prt+1Sg: [êkînêhiyawêyân, êkî-nêhiyawêyân, ê-kînêhiyawêyân, ê-kî-nêhiyawêyân]
+     nêhiyawêw+V+AI+Cnj+Prt+2Sg: [êkînêhiyawêyan, êkî-nêhiyawêyan, ê-kînêhiyawêyan, ê-kî-nêhiyawêyan]
+     nêhiyawêw+V+AI+Cnj+Prt+3Sg: [êkînêhiyawêt, êkî-nêhiyawêt, ê-kînêhiyawêt, ê-kî-nêhiyawêt]
+     nêhiyawêw+V+AI+Cnj+Prt+4Sg: [êkînêhiyawêyit, êkî-nêhiyawêyit, ê-kînêhiyawêyit, ê-kî-nêhiyawêyit]
 
      
-     nêhiyawêw+V+IA+Fut+Cond+1Sg: nêhiyawêyâni
-     nêhiyawêw+V+IA+Fut+Cond+2Sg: nêhiyawêyani
-     nêhiyawêw+V+IA+Fut+Cond+3Sg: nêhiyawêci
-     nêhiyawêw+V+IA+Fut+Cond+4Sg: nêhiyawêyici
-     nêhiyawêw+V+IA+Fut+Cond+1Pl: nêhiyawêyâhki
-     nêhiyawêw+V+IA+Fut+Cond+12Pl: nêhiyawêyahko
-     nêhiyawêw+V+IA+Fut+Cond+2Pl: nêhiyawêyêko
-     nêhiyawêw+V+IA+Fut+Cond+3Pl: nêhiyawêtwâwi
-     nêhiyawêw+V+IA+Fut+Cond+4Pl: nêhiyawêyici
+     nêhiyawêw+V+AI+Fut+Cond+1Sg: nêhiyawêyâni
+     nêhiyawêw+V+AI+Fut+Cond+2Sg: nêhiyawêyani
+     nêhiyawêw+V+AI+Fut+Cond+3Sg: nêhiyawêci
+     nêhiyawêw+V+AI+Fut+Cond+4Sg: nêhiyawêyici
+     nêhiyawêw+V+AI+Fut+Cond+1Pl: nêhiyawêyâhki
+     nêhiyawêw+V+AI+Fut+Cond+12Pl: nêhiyawêyahko
+     nêhiyawêw+V+AI+Fut+Cond+2Pl: nêhiyawêyêko
+     nêhiyawêw+V+AI+Fut+Cond+3Pl: nêhiyawêtwâwi
+     nêhiyawêw+V+AI+Fut+Cond+4Pl: nêhiyawêyici
 
-     nêhiyawêw+V+IA+Imp+Imm+2Sg: nêhiyawê
-     nêhiyawêw+V+IA+Imp+Imm+2Pl: nêhiyawêk
-     nêhiyawêw+V+IA+Imp+Imm+12Pl: nêhiyawêtân
+     nêhiyawêw+V+AI+Imp+Imm+2Sg: nêhiyawê
+     nêhiyawêw+V+AI+Imp+Imm+2Pl: nêhiyawêk
+     nêhiyawêw+V+AI+Imp+Imm+12Pl: nêhiyawêtân
      
-     nêhiyawêw+V+IA+Imp+Del+2Sg: nêhiyawêhkan
-     nêhiyawêw+V+IA+Imp+Del+2Pl: nêhiyawêhkêk
-     nêhiyawêw+V+IA+Imp+Del+12Pl: nêhiyawêhkahk
+     nêhiyawêw+V+AI+Imp+Del+2Sg: nêhiyawêhkan
+     nêhiyawêw+V+AI+Imp+Del+2Pl: nêhiyawêhkêk
+     nêhiyawêw+V+AI+Imp+Del+12Pl: nêhiyawêhkahk
      
 
   
   Verb - nipâ - sleep : # Ordinary VAI verb - full paradigm
      
-     nipâw+V+IA+Ind+Prs+1Sg: ninipân
-     nipâw+V+IA+Ind+Prs+2Sg: kinipân
-     nipâw+V+IA+Ind+Prs+3Sg: nipâw
-     nipâw+V+IA+Ind+Prs+4Sg: nipâyiwa
-     nipâw+V+IA+Ind+Prs+1Pl: ninipânân
-     nipâw+V+IA+Ind+Prs+12Pl: [kinipânaw, kinipânânaw]
-     nipâw+V+IA+Ind+Prs+2Pl: kinipânâwâw
-     nipâw+V+IA+Ind+Prs+3Pl: nipâwak
-     nipâw+V+IA+Ind+Prs+4Pl: nipâyiwa
+     nipâw+V+AI+Ind+Prs+1Sg: ninipân
+     nipâw+V+AI+Ind+Prs+2Sg: kinipân
+     nipâw+V+AI+Ind+Prs+3Sg: nipâw
+     nipâw+V+AI+Ind+Prs+4Sg: nipâyiwa
+     nipâw+V+AI+Ind+Prs+1Pl: ninipânân
+     nipâw+V+AI+Ind+Prs+12Pl: [kinipânaw, kinipânânaw]
+     nipâw+V+AI+Ind+Prs+2Pl: kinipânâwâw
+     nipâw+V+AI+Ind+Prs+3Pl: nipâwak
+     nipâw+V+AI+Ind+Prs+4Pl: nipâyiwa
      
-     nipâw+V+IA+Ind+Prt+1Sg: [nikî-nipân, nikînipân] 
-     nipâw+V+IA+Ind+Prt+2Sg: [kikî-nipân, kikînipân]
-     nipâw+V+IA+Ind+Prt+3Sg: [kî-nipâw, kînipâw]
-     nipâw+V+IA+Ind+Prt+4Sg: [kî-nipâyiwa, kînipâyiwa]
-     nipâw+V+IA+Ind+Prt+1Pl: [nikî-nipânân, nikînipânân]
-     nipâw+V+IA+Ind+Prt+12Pl: [kikî-nipânaw, kikînipânaw, kikînipânânaw, kikî-nipânânaw]
-     nipâw+V+IA+Ind+Prt+2Pl: [kikî-nipânâwâw, kikînipânâwâw]
-     nipâw+V+IA+Ind+Prt+3Pl: [kî-nipâwak, kînipâwak]
-     nipâw+V+IA+Ind+Prt+4Pl: [kî-nipâyiwa, kînipâyiwa]
+     nipâw+V+AI+Ind+Prt+1Sg: [nikî-nipân, nikînipân] 
+     nipâw+V+AI+Ind+Prt+2Sg: [kikî-nipân, kikînipân]
+     nipâw+V+AI+Ind+Prt+3Sg: [kî-nipâw, kînipâw]
+     nipâw+V+AI+Ind+Prt+4Sg: [kî-nipâyiwa, kînipâyiwa]
+     nipâw+V+AI+Ind+Prt+1Pl: [nikî-nipânân, nikînipânân]
+     nipâw+V+AI+Ind+Prt+12Pl: [kikî-nipânaw, kikînipânaw, kikînipânânaw, kikî-nipânânaw]
+     nipâw+V+AI+Ind+Prt+2Pl: [kikî-nipânâwâw, kikînipânâwâw]
+     nipâw+V+AI+Ind+Prt+3Pl: [kî-nipâwak, kînipâwak]
+     nipâw+V+AI+Ind+Prt+4Pl: [kî-nipâyiwa, kînipâyiwa]
      
-     nipâw+V+IA+Ind+Fut+Def+1Sg: [nika-nipân, nikanipân]
-     nipâw+V+IA+Ind+Fut+Def+2Sg: [kika-nipân, kikanipân]
-     nipâw+V+IA+Ind+Fut+Def+3Sg: [ka-nipâw, kanipâw]
-     nipâw+V+IA+Ind+Fut+Def+4Sg: [ka-nipâyiwa, kanipâyiwa]
-     nipâw+V+IA+Ind+Fut+Def+1Pl: [nika-nipânân, nikanipânân]
-     nipâw+V+IA+Ind+Fut+Def+12Pl: [kika-nipânaw, kikanipânaw, kika-nipânânaw, kikanipânânaw]
-     nipâw+V+IA+Ind+Fut+Def+2Pl: [kika-nipânâwâw,kikanipânâwâw] 
-     nipâw+V+IA+Ind+Fut+Def+3Pl: [ka-nipâwak, kanipâwak]
-     nipâw+V+IA+Ind+Fut+Def+4Pl: [ka-nipâyiwa, kanipâyiwa]
+     nipâw+V+AI+Ind+Fut+Def+1Sg: [nika-nipân, nikanipân]
+     nipâw+V+AI+Ind+Fut+Def+2Sg: [kika-nipân, kikanipân]
+     nipâw+V+AI+Ind+Fut+Def+3Sg: [ka-nipâw, kanipâw]
+     nipâw+V+AI+Ind+Fut+Def+4Sg: [ka-nipâyiwa, kanipâyiwa]
+     nipâw+V+AI+Ind+Fut+Def+1Pl: [nika-nipânân, nikanipânân]
+     nipâw+V+AI+Ind+Fut+Def+12Pl: [kika-nipânaw, kikanipânaw, kika-nipânânaw, kikanipânânaw]
+     nipâw+V+AI+Ind+Fut+Def+2Pl: [kika-nipânâwâw,kikanipânâwâw] 
+     nipâw+V+AI+Ind+Fut+Def+3Pl: [ka-nipâwak, kanipâwak]
+     nipâw+V+AI+Ind+Fut+Def+4Pl: [ka-nipâyiwa, kanipâyiwa]
      
-     nipâw+V+IA+Ind+Fut+Int+1Sg: [niwî-nipân, niwînipân]
-     nipâw+V+IA+Ind+Fut+Int+2Sg: [kiwî-nipân, kiwînipân]
-     nipâw+V+IA+Ind+Fut+Int+3Sg: [wî-nipâw, wînipâw]
-     nipâw+V+IA+Ind+Fut+Int+4Sg: [wî-nipâyiwa, wînipâyiwa]
-     nipâw+V+IA+Ind+Fut+Int+1Pl: [niwî-nipânân, niwînipânân]
-     nipâw+V+IA+Ind+Fut+Int+12Pl: [kiwî-nipânaw, kiwînipânaw, kiwî-nipânânaw, kiwînipânânaw]
-     nipâw+V+IA+Ind+Fut+Int+2Pl: [kiwî-nipânâwâw, kiwînipânâwâw]
-     nipâw+V+IA+Ind+Fut+Int+3Pl: [wî-nipâwak, wînipâwak]
-     nipâw+V+IA+Ind+Fut+Int+4Pl: [wî-nipâyiwa, wînipâyiwa]
+     nipâw+V+AI+Ind+Fut+Int+1Sg: [niwî-nipân, niwînipân]
+     nipâw+V+AI+Ind+Fut+Int+2Sg: [kiwî-nipân, kiwînipân]
+     nipâw+V+AI+Ind+Fut+Int+3Sg: [wî-nipâw, wînipâw]
+     nipâw+V+AI+Ind+Fut+Int+4Sg: [wî-nipâyiwa, wînipâyiwa]
+     nipâw+V+AI+Ind+Fut+Int+1Pl: [niwî-nipânân, niwînipânân]
+     nipâw+V+AI+Ind+Fut+Int+12Pl: [kiwî-nipânaw, kiwînipânaw, kiwî-nipânânaw, kiwînipânânaw]
+     nipâw+V+AI+Ind+Fut+Int+2Pl: [kiwî-nipânâwâw, kiwînipânâwâw]
+     nipâw+V+AI+Ind+Fut+Int+3Pl: [wî-nipâwak, wînipâwak]
+     nipâw+V+AI+Ind+Fut+Int+4Pl: [wî-nipâyiwa, wînipâyiwa]
      
-     nipâw+V+IA+Cnj+Prs+1Sg: [ê-nipâyân, ênipâyân]
-     nipâw+V+IA+Cnj+Prs+2Sg: [ê-nipâyan, ênipâyan]
-     nipâw+V+IA+Cnj+Prs+3Sg: [ê-nipât, ênipât]
-     nipâw+V+IA+Cnj+Prs+4Sg: [ê-nipâyit, ênipâyit]
-     nipâw+V+IA+Cnj+Prs+1Pl: [ê-nipâyâhk, ênipâyâhk]
-     nipâw+V+IA+Cnj+Prs+12Pl: [ê-nipâyahk, ênipâyahk]
-     nipâw+V+IA+Cnj+Prs+2Pl: [ê-nipâyêk, ênipâyêk]
-     nipâw+V+IA+Cnj+Prs+3Pl: [ê-nipâcik, ênipâcik]
+     nipâw+V+AI+Cnj+Prs+1Sg: [ê-nipâyân, ênipâyân]
+     nipâw+V+AI+Cnj+Prs+2Sg: [ê-nipâyan, ênipâyan]
+     nipâw+V+AI+Cnj+Prs+3Sg: [ê-nipât, ênipât]
+     nipâw+V+AI+Cnj+Prs+4Sg: [ê-nipâyit, ênipâyit]
+     nipâw+V+AI+Cnj+Prs+1Pl: [ê-nipâyâhk, ênipâyâhk]
+     nipâw+V+AI+Cnj+Prs+12Pl: [ê-nipâyahk, ênipâyahk]
+     nipâw+V+AI+Cnj+Prs+2Pl: [ê-nipâyêk, ênipâyêk]
+     nipâw+V+AI+Cnj+Prs+3Pl: [ê-nipâcik, ênipâcik]
 
-     nipâw+V+IA+Cnj+Prt+1Sg: [ê-kî-nipâyân, êkînipâyân, ê-kînipâyân, êkî-nipâyân]
-     nipâw+V+IA+Cnj+Prt+2Sg: [ê-kî-nipâyan, êkînipâyan, ê-kînipâyan, êkî-nipâyan]
-     nipâw+V+IA+Cnj+Prt+3Sg: [ê-kî-nipât, êkînipât, ê-kînipât, êkî-nipât]
-     nipâw+V+IA+Cnj+Prt+4Sg: [ê-kî-nipâyit, êkînipâyit, ê-kînipâyit, êkî-nipâyit]
-     nipâw+V+IA+Cnj+Prt+1Pl: [ê-kî-nipâyâhk, êkînipâyâhk, ê-kînipâyâhk, êkî-nipâyâhk]
-     nipâw+V+IA+Cnj+Prt+12Pl: [ê-kî-nipâyahk, êkînipâyahk, ê-kînipâyahk, êkî-nipâyahk]
-     nipâw+V+IA+Cnj+Prt+2Pl: [ê-kî-nipâyêk, êkînipâyêk, ê-kînipâyêk, êkî-nipâyêk]
-     nipâw+V+IA+Cnj+Prt+3Pl: [ê-kî-nipâcik, êkînipâcik, ê-kînipâcik,êkî-nipâcik]
+     nipâw+V+AI+Cnj+Prt+1Sg: [ê-kî-nipâyân, êkînipâyân, ê-kînipâyân, êkî-nipâyân]
+     nipâw+V+AI+Cnj+Prt+2Sg: [ê-kî-nipâyan, êkînipâyan, ê-kînipâyan, êkî-nipâyan]
+     nipâw+V+AI+Cnj+Prt+3Sg: [ê-kî-nipât, êkînipât, ê-kînipât, êkî-nipât]
+     nipâw+V+AI+Cnj+Prt+4Sg: [ê-kî-nipâyit, êkînipâyit, ê-kînipâyit, êkî-nipâyit]
+     nipâw+V+AI+Cnj+Prt+1Pl: [ê-kî-nipâyâhk, êkînipâyâhk, ê-kînipâyâhk, êkî-nipâyâhk]
+     nipâw+V+AI+Cnj+Prt+12Pl: [ê-kî-nipâyahk, êkînipâyahk, ê-kînipâyahk, êkî-nipâyahk]
+     nipâw+V+AI+Cnj+Prt+2Pl: [ê-kî-nipâyêk, êkînipâyêk, ê-kînipâyêk, êkî-nipâyêk]
+     nipâw+V+AI+Cnj+Prt+3Pl: [ê-kî-nipâcik, êkînipâcik, ê-kînipâcik,êkî-nipâcik]
      
-     nipâw+V+IA+Cnj+Fut+Int+1Sg: [ê-wî-nipâyân, êwînipâyân, ê-wînipâyân, êwî-nipâyân]
-     nipâw+V+IA+Cnj+Fut+Int+2Sg: [ê-wî-nipâyan, êwînipâyan, ê-wînipâyan, êwî-nipâyan]
-     nipâw+V+IA+Cnj+Fut+Int+3Sg: [ê-wî-nipât, êwînipât, ê-wînipât, êwî-nipât]
-     nipâw+V+IA+Cnj+Fut+Int+4Sg: [ê-wî-nipâyit, êwînipâyit, ê-wînipâyit, êwî-nipâyit]
-     nipâw+V+IA+Cnj+Fut+Int+1Pl: [ê-wî-nipâyâhk, êwînipâyâhk, ê-wînipâyâhk, êwî-nipâyâhk]
-     nipâw+V+IA+Cnj+Fut+Int+12Pl: [ê-wî-nipâyahk, êwînipâyahk, ê-wînipâyahk, êwî-nipâyahk]
-     nipâw+V+IA+Cnj+Fut+Int+2Pl: [ê-wî-nipâyêk, êwînipâyêk, ê-wînipâyêk, êwî-nipâyêk]
-     nipâw+V+IA+Cnj+Fut+Int+3Pl: [ê-wî-nipâcik, êwînipâcik, ê-wînipâcik, êwî-nipâcik]
+     nipâw+V+AI+Cnj+Fut+Int+1Sg: [ê-wî-nipâyân, êwînipâyân, ê-wînipâyân, êwî-nipâyân]
+     nipâw+V+AI+Cnj+Fut+Int+2Sg: [ê-wî-nipâyan, êwînipâyan, ê-wînipâyan, êwî-nipâyan]
+     nipâw+V+AI+Cnj+Fut+Int+3Sg: [ê-wî-nipât, êwînipât, ê-wînipât, êwî-nipât]
+     nipâw+V+AI+Cnj+Fut+Int+4Sg: [ê-wî-nipâyit, êwînipâyit, ê-wînipâyit, êwî-nipâyit]
+     nipâw+V+AI+Cnj+Fut+Int+1Pl: [ê-wî-nipâyâhk, êwînipâyâhk, ê-wînipâyâhk, êwî-nipâyâhk]
+     nipâw+V+AI+Cnj+Fut+Int+12Pl: [ê-wî-nipâyahk, êwînipâyahk, ê-wînipâyahk, êwî-nipâyahk]
+     nipâw+V+AI+Cnj+Fut+Int+2Pl: [ê-wî-nipâyêk, êwînipâyêk, ê-wînipâyêk, êwî-nipâyêk]
+     nipâw+V+AI+Cnj+Fut+Int+3Pl: [ê-wî-nipâcik, êwînipâcik, ê-wînipâcik, êwî-nipâcik]
 
-     nipâw+V+IA+Fut+Cond+1Sg: nipâyâni
-     nipâw+V+IA+Fut+Cond+2Sg: nipâyani
-     nipâw+V+IA+Fut+Cond+3Sg: nipâci
-     nipâw+V+IA+Fut+Cond+4Sg: nipâyici
-     nipâw+V+IA+Fut+Cond+1Pl: nipâyâhki
-     nipâw+V+IA+Fut+Cond+12Pl: nipâyahko
-     nipâw+V+IA+Fut+Cond+2Pl: nipâyêko
-     nipâw+V+IA+Fut+Cond+3Pl: nipâtwâwi
-     nipâw+V+IA+Fut+Cond+4Pl: nipâyici
+     nipâw+V+AI+Fut+Cond+1Sg: nipâyâni
+     nipâw+V+AI+Fut+Cond+2Sg: nipâyani
+     nipâw+V+AI+Fut+Cond+3Sg: nipâci
+     nipâw+V+AI+Fut+Cond+4Sg: nipâyici
+     nipâw+V+AI+Fut+Cond+1Pl: nipâyâhki
+     nipâw+V+AI+Fut+Cond+12Pl: nipâyahko
+     nipâw+V+AI+Fut+Cond+2Pl: nipâyêko
+     nipâw+V+AI+Fut+Cond+3Pl: nipâtwâwi
+     nipâw+V+AI+Fut+Cond+4Pl: nipâyici
 
-     nipâw+V+IA+Imp+Imm+2Sg: nipâ
-     nipâw+V+IA+Imp+Imm+2Pl: nipâk
-     nipâw+V+IA+Imp+Imm+12Pl: nipâtân
+     nipâw+V+AI+Imp+Imm+2Sg: nipâ
+     nipâw+V+AI+Imp+Imm+2Pl: nipâk
+     nipâw+V+AI+Imp+Imm+12Pl: nipâtân
      
-     nipâw+V+IA+Imp+Del+2Sg: nipâhkan
-     nipâw+V+IA+Imp+Del+2Pl: nipâhkêk
-     nipâw+V+IA+Imp+Del+12Pl: nipâhkahk
+     nipâw+V+AI+Imp+Del+2Sg: nipâhkan
+     nipâw+V+AI+Imp+Del+2Pl: nipâhkêk
+     nipâw+V+AI+Imp+Del+12Pl: nipâhkahk
      
      
   
   Verb - pimisin - lie down : # Ordinary VAI verb,  
 
-     pimisin+V+IA+Imp+Imm+2Sg: pimisini
-     pimisin+V+IA+Imp+Imm+2Pl: pimisinik
-     pimisin+V+IA+Imp+Imm+12Pl: pimisinîtân
-     pimisin+V+IA+Imp+Del+2Sg: pimisinîhkan
-     pimisin+V+IA+Imp+Del+2Pl: pimisinîhkêk
-     pimisin+V+IA+Imp+Del+12Pl: pimisinîhkahk
+     pimisin+V+AI+Imp+Imm+2Sg: pimisini
+     pimisin+V+AI+Imp+Imm+2Pl: pimisinik
+     pimisin+V+AI+Imp+Imm+12Pl: pimisinîtân
+     pimisin+V+AI+Imp+Del+2Sg: pimisinîhkan
+     pimisin+V+AI+Imp+Del+2Pl: pimisinîhkêk
+     pimisin+V+AI+Imp+Del+12Pl: pimisinîhkahk
     
-     pimisin+V+IA+Ind+Prs+1Sg: nipimisinin
-     pimisin+V+IA+Ind+Prs+2Sg: kipimisinin
-     pimisin+V+IA+Ind+Prs+3Sg: pimisin
-     pimisin+V+IA+Ind+Prs+4Sg: pimisiniyiwa
-     pimisin+V+IA+Ind+Prs+1Pl: nipimisininân
-     pimisin+V+IA+Ind+Prs+12Pl: [kipimisininaw, kipimisininânaw]
-     pimisin+V+IA+Ind+Prs+2Pl: kipimisininâwâw
-     pimisin+V+IA+Ind+Prs+3Pl: pimisinwak
-     pimisin+V+IA+Ind+Prs+4Pl: pimisiniyiwa
+     pimisin+V+AI+Ind+Prs+1Sg: nipimisinin
+     pimisin+V+AI+Ind+Prs+2Sg: kipimisinin
+     pimisin+V+AI+Ind+Prs+3Sg: pimisin
+     pimisin+V+AI+Ind+Prs+4Sg: pimisiniyiwa
+     pimisin+V+AI+Ind+Prs+1Pl: nipimisininân
+     pimisin+V+AI+Ind+Prs+12Pl: [kipimisininaw, kipimisininânaw]
+     pimisin+V+AI+Ind+Prs+2Pl: kipimisininâwâw
+     pimisin+V+AI+Ind+Prs+3Pl: pimisinwak
+     pimisin+V+AI+Ind+Prs+4Pl: pimisiniyiwa
      
-     pimisin+V+IA+Ind+Prt+1Sg: [nikî-pimisinin, nikîpimisinin] 
-     pimisin+V+IA+Ind+Prt+2Sg: [kikî-pimisinin, kikîpimisinin]
-     pimisin+V+IA+Ind+Prt+3Sg: [kî-pimisin, kîpimisin]
+     pimisin+V+AI+Ind+Prt+1Sg: [nikî-pimisinin, nikîpimisinin] 
+     pimisin+V+AI+Ind+Prt+2Sg: [kikî-pimisinin, kikîpimisinin]
+     pimisin+V+AI+Ind+Prt+3Sg: [kî-pimisin, kîpimisin]
      
-     pimisin+V+IA+Ind+Fut+Def+1Sg: [nika-pimisinin, nikapimisinin]
-     pimisin+V+IA+Ind+Fut+Def+2Sg: [kika-pimisinin, kikapimisinin]
-     pimisin+V+IA+Ind+Fut+Def+3Sg: [ka-pimisin, kapimisin]
+     pimisin+V+AI+Ind+Fut+Def+1Sg: [nika-pimisinin, nikapimisinin]
+     pimisin+V+AI+Ind+Fut+Def+2Sg: [kika-pimisinin, kikapimisinin]
+     pimisin+V+AI+Ind+Fut+Def+3Sg: [ka-pimisin, kapimisin]
      
-     pimisin+V+IA+Ind+Fut+Int+1Sg: [niwî-pimisinin, niwîpimisinin]
-     pimisin+V+IA+Ind+Fut+Int+2Sg: [kiwî-pimisinin, kiwîpimisinin]
-     pimisin+V+IA+Ind+Fut+Int+3Sg: [wî-pimisin, wîpimisin]
+     pimisin+V+AI+Ind+Fut+Int+1Sg: [niwî-pimisinin, niwîpimisinin]
+     pimisin+V+AI+Ind+Fut+Int+2Sg: [kiwî-pimisinin, kiwîpimisinin]
+     pimisin+V+AI+Ind+Fut+Int+3Sg: [wî-pimisin, wîpimisin]
      
-     pimisin+V+IA+Cnj+Prs+1Sg: [ê-pimisiniyân, êpimisiniyân]
-     pimisin+V+IA+Cnj+Prs+2Sg: [ê-pimisiniyan, êpimisiniyan]
-     pimisin+V+IA+Cnj+Prs+3Sg: [ê-pimisihk, êpimisihk]
-     pimisin+V+IA+Cnj+Prs+4Sg: [ê-pimisiniyit, êpimisiniyit]
-     pimisin+V+IA+Cnj+Prs+1Pl: [ê-pimisiniyâhk, êpimisiniyâhk]
-     pimisin+V+IA+Cnj+Prs+12Pl: [ê-pimisiniyahk, êpimisiniyahk]
-     pimisin+V+IA+Cnj+Prs+2Pl: [ê-pimisiniyêk, êpimisiniyêk]
-     pimisin+V+IA+Cnj+Prs+3Pl: [ê-pimisihkik, êpimisihkik]
+     pimisin+V+AI+Cnj+Prs+1Sg: [ê-pimisiniyân, êpimisiniyân]
+     pimisin+V+AI+Cnj+Prs+2Sg: [ê-pimisiniyan, êpimisiniyan]
+     pimisin+V+AI+Cnj+Prs+3Sg: [ê-pimisihk, êpimisihk]
+     pimisin+V+AI+Cnj+Prs+4Sg: [ê-pimisiniyit, êpimisiniyit]
+     pimisin+V+AI+Cnj+Prs+1Pl: [ê-pimisiniyâhk, êpimisiniyâhk]
+     pimisin+V+AI+Cnj+Prs+12Pl: [ê-pimisiniyahk, êpimisiniyahk]
+     pimisin+V+AI+Cnj+Prs+2Pl: [ê-pimisiniyêk, êpimisiniyêk]
+     pimisin+V+AI+Cnj+Prs+3Pl: [ê-pimisihkik, êpimisihkik]
 
-     pimisin+V+IA+Cnj+Prt+1Sg: [ê-kîpimisiniyân, ê-kî-pimisiniyân, êkî-pimisiniyân, êkîpimisiniyân]
+     pimisin+V+AI+Cnj+Prt+1Sg: [ê-kîpimisiniyân, ê-kî-pimisiniyân, êkî-pimisiniyân, êkîpimisiniyân]
      
      
      
@@ -571,191 +571,191 @@ Tests:
   
   Verb - mow - ok : # Wolvengrey VTA1 verb - p 401
 
-     mow+V+TA+Ind+Prs+1Sg+3SgO: nimowâw
-     mow+V+TA+Ind+Prs+2Sg+3SgO: kimowâw
-     mow+V+TA+Ind+Prs+1Pl+3SgO: nimowânân
-     mow+V+TA+Ind+Prs+12Pl+3SgO: kimowânaw
-     mow+V+TA+Ind+Prs+2Pl+3SgO: kimowâwâw
-     mow+V+TA+Ind+Prs+3Sg+3SgO: mowêw
-     mow+V+TA+Ind+Prs+3Pl+3SgO: mowêwak
+     mowêw+V+TA+Ind+Prs+1Sg+3SgO: nimowâw
+     mowêw+V+TA+Ind+Prs+2Sg+3SgO: kimowâw
+     mowêw+V+TA+Ind+Prs+1Pl+3SgO: nimowânân
+     mowêw+V+TA+Ind+Prs+12Pl+3SgO: kimowânaw
+     mowêw+V+TA+Ind+Prs+2Pl+3SgO: kimowâwâw
+     mowêw+V+TA+Ind+Prs+3Sg+3SgO: mowêw
+     mowêw+V+TA+Ind+Prs+3Pl+3SgO: mowêwak
      
-     mow+V+TA+Ind+Prs+1Sg+3PlO: nimowâwak
-     mow+V+TA+Ind+Prs+2Sg+3PlO: kimowâwak
-     mow+V+TA+Ind+Prs+1Pl+3PlO: nimowânânak
-     mow+V+TA+Ind+Prs+12Pl+3PlO: kimowânawak
-     mow+V+TA+Ind+Prs+2Pl+3PlO: kimowâwâwak
-     mow+V+TA+Ind+Prs+3Sg+3PlO: mowêw
-     mow+V+TA+Ind+Prs+3Pl+3PlO: mowêwak
+     mowêw+V+TA+Ind+Prs+1Sg+3PlO: nimowâwak
+     mowêw+V+TA+Ind+Prs+2Sg+3PlO: kimowâwak
+     mowêw+V+TA+Ind+Prs+1Pl+3PlO: nimowânânak
+     mowêw+V+TA+Ind+Prs+12Pl+3PlO: kimowânawak
+     mowêw+V+TA+Ind+Prs+2Pl+3PlO: kimowâwâwak
+     mowêw+V+TA+Ind+Prs+3Sg+3PlO: mowêw
+     mowêw+V+TA+Ind+Prs+3Pl+3PlO: mowêwak
 
-     mow+V+TA+Ind+Prs+4Sg+4SgO: mowêyiwa
-     mow+V+TA+Ind+Prs+4Sg+4PlO: mowêyiwa     
+     mowêw+V+TA+Ind+Prs+4Sg+4SgO: mowêyiwa
+     mowêw+V+TA+Ind+Prs+4Sg+4PlO: mowêyiwa     
 
-     mow+V+TA+Ind+Prs+2Sg+1SgO: kimowin
-     mow+V+TA+Ind+Prs+2Sg+1PlO: kimowinân
-     mow+V+TA+Ind+Prs+2Pl+1PlO: kimowinân
-     mow+V+TA+Ind+Prs+2Pl+1SgO: kimowinâwâw
+     mowêw+V+TA+Ind+Prs+2Sg+1SgO: kimowin
+     mowêw+V+TA+Ind+Prs+2Sg+1PlO: kimowinân
+     mowêw+V+TA+Ind+Prs+2Pl+1PlO: kimowinân
+     mowêw+V+TA+Ind+Prs+2Pl+1SgO: kimowinâwâw
 
-     mow+V+TA+Ind+Prs+3Sg+1SgO: nimowik
-     mow+V+TA+Ind+Prs+3Sg+2SgO: kimowik
-     mow+V+TA+Ind+Prs+3Sg+1PlO: nimowikonân # inv +0Sg+1PlO
-     mow+V+TA+Ind+Prs+3Sg+12PlO: kimowikonaw
-     mow+V+TA+Ind+Prs+3Sg+2PlO: kimowikowâw
+     mowêw+V+TA+Ind+Prs+3Sg+1SgO: nimowik
+     mowêw+V+TA+Ind+Prs+3Sg+2SgO: kimowik
+     mowêw+V+TA+Ind+Prs+3Sg+1PlO: nimowikonân # inv +0Sg+1PlO
+     mowêw+V+TA+Ind+Prs+3Sg+12PlO: kimowikonaw
+     mowêw+V+TA+Ind+Prs+3Sg+2PlO: kimowikowâw
 
-     mow+V+TA+Ind+Prs+3Pl+1SgO: nimowikwak
-     mow+V+TA+Ind+Prs+3Pl+2SgO: kimowikwak
-     mow+V+TA+Ind+Prs+3Pl+1PlO: nimowikonânak
-     mow+V+TA+Ind+Prs+3Pl+12PlO: kimowikonawak
-     mow+V+TA+Ind+Prs+3Pl+2PlO: kimowikowâwak
+     mowêw+V+TA+Ind+Prs+3Pl+1SgO: nimowikwak
+     mowêw+V+TA+Ind+Prs+3Pl+2SgO: kimowikwak
+     mowêw+V+TA+Ind+Prs+3Pl+1PlO: nimowikonânak
+     mowêw+V+TA+Ind+Prs+3Pl+12PlO: kimowikonawak
+     mowêw+V+TA+Ind+Prs+3Pl+2PlO: kimowikowâwak
      
-     mow+V+TA+Ind+Prs+4Sg+3SgO: mowik
-     mow+V+TA+Ind+Prs+4Sg+3PlO: mowikwak
-     mow+V+TA+Ind+Prs+5Sg+4SgO: mowikoyiwa
+     mowêw+V+TA+Ind+Prs+4Sg+3SgO: mowik
+     mowêw+V+TA+Ind+Prs+4Sg+3PlO: mowikwak
+     mowêw+V+TA+Ind+Prs+5Sg+4SgO: mowikoyiwa
 
-     mow+V+TA+Ind+Prs+1Sg+2SgO: kimowitin
-     mow+V+TA+Ind+Prs+1Pl+2SgO: kimowitinân
-     mow+V+TA+Ind+Prs+1Pl+2PlO: kimowitinân
-     mow+V+TA+Ind+Prs+1Sg+2PlO: kimowitinânâw
+     mowêw+V+TA+Ind+Prs+1Sg+2SgO: kimowitin
+     mowêw+V+TA+Ind+Prs+1Pl+2SgO: kimowitinân
+     mowêw+V+TA+Ind+Prs+1Pl+2PlO: kimowitinân
+     mowêw+V+TA+Ind+Prs+1Sg+2PlO: kimowitinânâw
 
-     mow+V+TA+Ind+Prt+1Sg+3SgO: [nikîmowâw, nikî-mowâw]
-     mow+V+TA+Ind+Prt+2Sg+3SgO: [kikîmowâw, kikî-mowâw]
-     mow+V+TA+Ind+Prt+1Pl+3SgO: [nikîmowânân, nikî-mowânân]
-     mow+V+TA+Ind+Prt+12Pl+3SgO: [kikîmowânaw, kikî-mowânaw]
-     mow+V+TA+Ind+Prt+2Pl+3SgO: [kikîmowâwâw, kikî-mowâwâw]
-     mow+V+TA+Ind+Prt+3Sg+3SgO: [kîmowêw, kî-mowêw]
-     mow+V+TA+Ind+Prt+3Pl+3SgO: [kîmowêwak, kî-mowêwak]
+     mowêw+V+TA+Ind+Prt+1Sg+3SgO: [nikîmowâw, nikî-mowâw]
+     mowêw+V+TA+Ind+Prt+2Sg+3SgO: [kikîmowâw, kikî-mowâw]
+     mowêw+V+TA+Ind+Prt+1Pl+3SgO: [nikîmowânân, nikî-mowânân]
+     mowêw+V+TA+Ind+Prt+12Pl+3SgO: [kikîmowânaw, kikî-mowânaw]
+     mowêw+V+TA+Ind+Prt+2Pl+3SgO: [kikîmowâwâw, kikî-mowâwâw]
+     mowêw+V+TA+Ind+Prt+3Sg+3SgO: [kîmowêw, kî-mowêw]
+     mowêw+V+TA+Ind+Prt+3Pl+3SgO: [kîmowêwak, kî-mowêwak]
 
-     mow+V+TA+Ind+Prt+1Sg+3PlO: [nikîmowâwak, nikî-mowâwak]
-     mow+V+TA+Ind+Prt+2Sg+3PlO: [kikîmowâwak, kikî-mowâwak]
-     mow+V+TA+Ind+Prt+1Pl+3PlO: [nikîmowânânak, nikî-mowânânak]
-     mow+V+TA+Ind+Prt+12Pl+3PlO: [kikîmowânawak, kikî-mowânawak]
-     mow+V+TA+Ind+Prt+2Pl+3PlO: [kikîmowâwâwak, kikî-mowâwâwak]
-     mow+V+TA+Ind+Prt+3Sg+3PlO: [kîmowêw, kî-mowêw]
-     mow+V+TA+Ind+Prt+3Pl+3PlO: [kîmowêwak, kî-mowêwak]
+     mowêw+V+TA+Ind+Prt+1Sg+3PlO: [nikîmowâwak, nikî-mowâwak]
+     mowêw+V+TA+Ind+Prt+2Sg+3PlO: [kikîmowâwak, kikî-mowâwak]
+     mowêw+V+TA+Ind+Prt+1Pl+3PlO: [nikîmowânânak, nikî-mowânânak]
+     mowêw+V+TA+Ind+Prt+12Pl+3PlO: [kikîmowânawak, kikî-mowânawak]
+     mowêw+V+TA+Ind+Prt+2Pl+3PlO: [kikîmowâwâwak, kikî-mowâwâwak]
+     mowêw+V+TA+Ind+Prt+3Sg+3PlO: [kîmowêw, kî-mowêw]
+     mowêw+V+TA+Ind+Prt+3Pl+3PlO: [kîmowêwak, kî-mowêwak]
 
-     mow+V+TA+Ind+Prt+4Sg+4SgO: [kîmowêyiwa, kî-mowêyiwa]
-     mow+V+TA+Ind+Prt+4Sg+4PlO: [kîmowêyiwa, kî-mowêyiwa]
+     mowêw+V+TA+Ind+Prt+4Sg+4SgO: [kîmowêyiwa, kî-mowêyiwa]
+     mowêw+V+TA+Ind+Prt+4Sg+4PlO: [kîmowêyiwa, kî-mowêyiwa]
 
-     mow+V+TA+Ind+Prt+2Sg+1SgO: [kikîmowin, kikî-mowin]
-     mow+V+TA+Ind+Prt+2Sg+1PlO: [kikîmowinân, kikî-mowinân]
-     mow+V+TA+Ind+Prt+2Pl+1PlO: [kikîmowinân, kikî-mowinân]
-     mow+V+TA+Ind+Prt+2Pl+1SgO: [kikîmowinâwâw, kikî-mowinâwâw]
+     mowêw+V+TA+Ind+Prt+2Sg+1SgO: [kikîmowin, kikî-mowin]
+     mowêw+V+TA+Ind+Prt+2Sg+1PlO: [kikîmowinân, kikî-mowinân]
+     mowêw+V+TA+Ind+Prt+2Pl+1PlO: [kikîmowinân, kikî-mowinân]
+     mowêw+V+TA+Ind+Prt+2Pl+1SgO: [kikîmowinâwâw, kikî-mowinâwâw]
 
-     mow+V+TA+Ind+Prt+3Sg+1SgO: [nikîmowik, nikî-mowik]
-     mow+V+TA+Ind+Prt+3Sg+2SgO: [kikîmowik, kikî-mowik]
-     mow+V+TA+Ind+Prt+3Sg+1PlO: [nikîmowikonân, nikî-mowikonân]
-     mow+V+TA+Ind+Prt+3Sg+12PlO: [kikîmowikonaw, kikî-mowikonaw]
-     mow+V+TA+Ind+Prt+3Sg+2PlO: [kikîmowikowâw, kikî-mowikowâw]
+     mowêw+V+TA+Ind+Prt+3Sg+1SgO: [nikîmowik, nikî-mowik]
+     mowêw+V+TA+Ind+Prt+3Sg+2SgO: [kikîmowik, kikî-mowik]
+     mowêw+V+TA+Ind+Prt+3Sg+1PlO: [nikîmowikonân, nikî-mowikonân]
+     mowêw+V+TA+Ind+Prt+3Sg+12PlO: [kikîmowikonaw, kikî-mowikonaw]
+     mowêw+V+TA+Ind+Prt+3Sg+2PlO: [kikîmowikowâw, kikî-mowikowâw]
 
-     mow+V+TA+Ind+Prt+3Pl+1SgO: [nikîmowikwak, nikî-mowikwak]
-     mow+V+TA+Ind+Prt+3Pl+2SgO: [kikîmowikwak, kikî-mowikwak]
-     mow+V+TA+Ind+Prt+3Pl+1PlO: [nikîmowikonânak, nikî-mowikonânak]
-     mow+V+TA+Ind+Prt+3Pl+12PlO: [kikîmowikonawak, kikî-mowikonawak]
-     mow+V+TA+Ind+Prt+3Pl+2PlO: [kikîmowikowâwak, kikî-mowikowâwak]
+     mowêw+V+TA+Ind+Prt+3Pl+1SgO: [nikîmowikwak, nikî-mowikwak]
+     mowêw+V+TA+Ind+Prt+3Pl+2SgO: [kikîmowikwak, kikî-mowikwak]
+     mowêw+V+TA+Ind+Prt+3Pl+1PlO: [nikîmowikonânak, nikî-mowikonânak]
+     mowêw+V+TA+Ind+Prt+3Pl+12PlO: [kikîmowikonawak, kikî-mowikonawak]
+     mowêw+V+TA+Ind+Prt+3Pl+2PlO: [kikîmowikowâwak, kikî-mowikowâwak]
 
-     mow+V+TA+Ind+Prt+4Sg+3SgO: [kîmowik, kî-mowik]
-     mow+V+TA+Ind+Prt+4Sg+3PlO: [kîmowikwak, kî-mowikwak]
-     mow+V+TA+Ind+Prt+5Sg+4SgO: [kîmowikoyiwa, kî-mowikoyiwa]
+     mowêw+V+TA+Ind+Prt+4Sg+3SgO: [kîmowik, kî-mowik]
+     mowêw+V+TA+Ind+Prt+4Sg+3PlO: [kîmowikwak, kî-mowikwak]
+     mowêw+V+TA+Ind+Prt+5Sg+4SgO: [kîmowikoyiwa, kî-mowikoyiwa]
 
-     mow+V+TA+Ind+Prt+1Sg+2SgO: [kikîmowitin, kikî-mowitin]
-     mow+V+TA+Ind+Prt+1Pl+2SgO: [kikîmowitinân, kikî-mowitinân]
-     mow+V+TA+Ind+Prt+1Pl+2PlO: [kikîmowitinân, kikî-mowitinân]
-     mow+V+TA+Ind+Prt+1Sg+2PlO: [kikîmowitinânâw, kikî-mowitinânâw]
+     mowêw+V+TA+Ind+Prt+1Sg+2SgO: [kikîmowitin, kikî-mowitin]
+     mowêw+V+TA+Ind+Prt+1Pl+2SgO: [kikîmowitinân, kikî-mowitinân]
+     mowêw+V+TA+Ind+Prt+1Pl+2PlO: [kikîmowitinân, kikî-mowitinân]
+     mowêw+V+TA+Ind+Prt+1Sg+2PlO: [kikîmowitinânâw, kikî-mowitinânâw]
 
-     mow+V+TA+Cnj+Prs+1Sg+3SgO: [ê-mowak, êmowak]
-     mow+V+TA+Cnj+Prs+2Sg+3SgO: [ê-mowat, êmowat]
-     mow+V+TA+Cnj+Prs+1Pl+3SgO: [ê-mowâyâhk, êmowâyâhk]
-     mow+V+TA+Cnj+Prs+12Pl+3SgO: [ê-mowâyahk, êmowâyahk]
-     mow+V+TA+Cnj+Prs+2Pl+3SgO: [ê-mowâyêk, êmowâyêk]
+     mowêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-mowak, êmowak]
+     mowêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-mowat, êmowat]
+     mowêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-mowâyâhk, êmowâyâhk]
+     mowêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-mowâyahk, êmowâyahk]
+     mowêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-mowâyêk, êmowâyêk]
 
-     mow+V+TA+Cnj+Prs+1Sg+3PlO: [ê-mowakik, êmowakik]
-     mow+V+TA+Cnj+Prs+2Sg+3PlO: [ê-mowacik, êmowacik]
-     mow+V+TA+Cnj+Prs+1Pl+3PlO: [ê-mowâyâhkik, êmowâyâhkik]
-     mow+V+TA+Cnj+Prs+12Pl+3PlO: [ê-mowâyâhkok, êmowâyâhkok]
-     mow+V+TA+Cnj+Prs+2Pl+3PlO: [ê-mowâyêkok, êmowâyêkok]
+     mowêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-mowakik, êmowakik]
+     mowêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-mowacik, êmowacik]
+     mowêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-mowâyâhkik, êmowâyâhkik]
+     mowêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-mowâyâhkok, êmowâyâhkok]
+     mowêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-mowâyêkok, êmowâyêkok]
 
-     mow+V+TA+Cnj+Prs+3Sg+4SgO: [ê-mowât, êmowât]
-     mow+V+TA+Cnj+Prs+3Pl+4SgO: [ê-mowâcik, êmowâcik]
-     mow+V+TA+Cnj+Prs+3Sg+4PlO: [ê-mowât, êmowât]
-     mow+V+TA+Cnj+Prs+3Pl+4PlO: [ê-mowâcik, êmowâcik]
-     mow+V+TA+Cnj+Prs+4Sg+5SgO: [ê-mowâyit, êmowâyit]
+     mowêw+V+TA+Cnj+Prs+3Sg+4SgO: [ê-mowât, êmowât]
+     mowêw+V+TA+Cnj+Prs+3Pl+4SgO: [ê-mowâcik, êmowâcik]
+     mowêw+V+TA+Cnj+Prs+3Sg+4PlO: [ê-mowât, êmowât]
+     mowêw+V+TA+Cnj+Prs+3Pl+4PlO: [ê-mowâcik, êmowâcik]
+     mowêw+V+TA+Cnj+Prs+4Sg+5SgO: [ê-mowâyit, êmowâyit]
   
-     mow+V+TA+Cnj+Prs+2Sg+1SgO: [ê-mowiyan, êmowiyan]
-     mow+V+TA+Cnj+Prs+2Sg+1PlO: [ê-mowiyâhk, êmowiyâhk]
-     mow+V+TA+Cnj+Prs+2Pl+1PlO: [ê-mowiyâhk, êmowiyâhk]
-     mow+V+TA+Cnj+Prs+2Pl+1SgO: [ê-mowiyêk, êmowiyêk]
+     mowêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-mowiyan, êmowiyan]
+     mowêw+V+TA+Cnj+Prs+2Sg+1PlO: [ê-mowiyâhk, êmowiyâhk]
+     mowêw+V+TA+Cnj+Prs+2Pl+1PlO: [ê-mowiyâhk, êmowiyâhk]
+     mowêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-mowiyêk, êmowiyêk]
 
-     mow+V+TA+Cnj+Prs+3Sg+1SgO: [ê-mowit, êmowit]
-     mow+V+TA+Cnj+Prs+3Sg+2SgO: [ê-mowisk, êmowisk]
-     mow+V+TA+Cnj+Prs+3Sg+1PlO: [ê-mowikoyâhk, êmowikoyâhk]
-     mow+V+TA+Cnj+Prs+3Sg+12PlO: [ê-mowikoyahk, êmowikoyahk]
-     mow+V+TA+Cnj+Prs+3Sg+2PlO: [ê-mowikoyek, êmowikoyek]
+     mowêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-mowit, êmowit]
+     mowêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-mowisk, êmowisk]
+     mowêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-mowikoyâhk, êmowikoyâhk]
+     mowêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-mowikoyahk, êmowikoyahk]
+     mowêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-mowikoyek, êmowikoyek]
 
-     mow+V+TA+Cnj+Prs+3Pl+1SgO: [ê-mowiticik, êmowiticik]
-     mow+V+TA+Cnj+Prs+3Pl+2SgO: [ê-mowiskik, êmowiskik]
-     mow+V+TA+Cnj+Prs+3Pl+1PlO: [ê-mowikoyâhkik, êmowikoyâhkik]
-     mow+V+TA+Cnj+Prs+3Pl+12PlO: [ê-mowikoyahkok, êmowikoyahkok]
-     mow+V+TA+Cnj+Prs+3Pl+2PlO: [ê-mowikoyêkok, êmowikoyêkok]
+     mowêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-mowiticik, êmowiticik]
+     mowêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-mowiskik, êmowiskik]
+     mowêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-mowikoyâhkik, êmowikoyâhkik]
+     mowêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-mowikoyahkok, êmowikoyahkok]
+     mowêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-mowikoyêkok, êmowikoyêkok]
 
-     mow+V+TA+Cnj+Prs+4Sg+3SgO: [ê-mowikot, êmowikot]
-     mow+V+TA+Cnj+Prs+4Sg+3PlO: [ê-mowikocik, êmowikocik]
-     mow+V+TA+Cnj+Prs+4Sg+4PlO: [ê-mowikoyit, êmowikoyit]
+     mowêw+V+TA+Cnj+Prs+4Sg+3SgO: [ê-mowikot, êmowikot]
+     mowêw+V+TA+Cnj+Prs+4Sg+3PlO: [ê-mowikocik, êmowikocik]
+     mowêw+V+TA+Cnj+Prs+4Sg+4PlO: [ê-mowikoyit, êmowikoyit]
 
-     mow+V+TA+Cnj+Prs+1Sg+2SgO: [ê-mowitân, êmowitân]
-     mow+V+TA+Cnj+Prs+1Pl+2SgO: [ê-mowitâhk, êmowitâhk]
-     mow+V+TA+Cnj+Prs+1Pl+2PlO: [ê-mowitâhk, êmowitâhk]
-     mow+V+TA+Cnj+Prs+1Sg+2PlO: [ê-mowitakok, êmowitakok]
+     mowêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-mowitân, êmowitân]
+     mowêw+V+TA+Cnj+Prs+1Pl+2SgO: [ê-mowitâhk, êmowitâhk]
+     mowêw+V+TA+Cnj+Prs+1Pl+2PlO: [ê-mowitâhk, êmowitâhk]
+     mowêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-mowitakok, êmowitakok]
 
-     mow+V+TA+Imp+Imm+2Sg+3SgO: mow
-     mow+V+TA+Imp+Imm+12Pl+3SgO: mowâtân
-     mow+V+TA+Imp+Imm+2Pl+3SgO: mowihk
-     mow+V+TA+Imp+Imm+2Sg+3PlO: mowik
-     mow+V+TA+Imp+Imm+12Pl+3PlO: mowâtânik
-     mow+V+TA+Imp+Imm+2Pl+3PlO: mowihkok
+     mowêw+V+TA+Imp+Imm+2Sg+3SgO: mow
+     mowêw+V+TA+Imp+Imm+12Pl+3SgO: mowâtân
+     mowêw+V+TA+Imp+Imm+2Pl+3SgO: mowihk
+     mowêw+V+TA+Imp+Imm+2Sg+3PlO: mowik
+     mowêw+V+TA+Imp+Imm+12Pl+3PlO: mowâtânik
+     mowêw+V+TA+Imp+Imm+2Pl+3PlO: mowihkok
 
-     mow+V+TA+Imp+Del+2Sg+3SgO: mowâhkan
-     mow+V+TA+Imp+Del+12Pl+3SgO: mowâhkahk
-     mow+V+TA+Imp+Del+2Pl+3SgO: mowâhkêk
-     mow+V+TA+Imp+Del+2Sg+3PlO: mowâhkanik
-     mow+V+TA+Imp+Del+12Pl+3PlO: mowâhkahkok
-     mow+V+TA+Imp+Del+2Pl+3PlO: mowâhkêkok
+     mowêw+V+TA+Imp+Del+2Sg+3SgO: mowâhkan
+     mowêw+V+TA+Imp+Del+12Pl+3SgO: mowâhkahk
+     mowêw+V+TA+Imp+Del+2Pl+3SgO: mowâhkêk
+     mowêw+V+TA+Imp+Del+2Sg+3PlO: mowâhkanik
+     mowêw+V+TA+Imp+Del+12Pl+3PlO: mowâhkahkok
+     mowêw+V+TA+Imp+Del+2Pl+3PlO: mowâhkêkok
 
-     mow+V+TA+Imp+Imm+2Sg+1SgO: mowin
-     mow+V+TA+Imp+Imm+2Sg+1PlO: mowinân
-     mow+V+TA+Imp+Imm+2Pl+1SgO: mowik
-     mow+V+TA+Imp+Del+2Sg+1SgO: mowîhkan
-     mow+V+TA+Imp+Del+2Sg+1PlO: mowîhkâhk
-     mow+V+TA+Imp+Del+2Pl+1SgO: mowîhkêk
+     mowêw+V+TA+Imp+Imm+2Sg+1SgO: mowin
+     mowêw+V+TA+Imp+Imm+2Sg+1PlO: mowinân
+     mowêw+V+TA+Imp+Imm+2Pl+1SgO: mowik
+     mowêw+V+TA+Imp+Del+2Sg+1SgO: mowîhkan
+     mowêw+V+TA+Imp+Del+2Sg+1PlO: mowîhkâhk
+     mowêw+V+TA+Imp+Del+2Pl+1SgO: mowîhkêk
 
-     mow+V+TA+Fut+Cond+1Sg+3SgO: mowaki
-     mow+V+TA+Fut+Cond+1Sg+3PlO: mowakwâwi
-     mow+V+TA+Fut+Cond+1Pl+3SgO: mowâyâhki
-     mow+V+TA+Fut+Cond+1Pl+3PlO: mowâyâhkwâwi
-     mow+V+TA+Fut+Cond+12Pl+3SgO: mowâyâhko
-     mow+V+TA+Fut+Cond+12Pl+3PlO: mowâyâhkwâwi
+     mowêw+V+TA+Fut+Cond+1Sg+3SgO: mowaki
+     mowêw+V+TA+Fut+Cond+1Sg+3PlO: mowakwâwi
+     mowêw+V+TA+Fut+Cond+1Pl+3SgO: mowâyâhki
+     mowêw+V+TA+Fut+Cond+1Pl+3PlO: mowâyâhkwâwi
+     mowêw+V+TA+Fut+Cond+12Pl+3SgO: mowâyâhko
+     mowêw+V+TA+Fut+Cond+12Pl+3PlO: mowâyâhkwâwi
 
-     mow+V+TA+Fut+Cond+2Sg+3SgO: mowaci
-     mow+V+TA+Fut+Cond+2Sg+3PlO: mowatwâwi
-     mow+V+TA+Fut+Cond+2Pl+3SgO: mowâyêko
-     mow+V+TA+Fut+Cond+2Pl+3PlO: mowâyêkwâwi
+     mowêw+V+TA+Fut+Cond+2Sg+3SgO: mowaci
+     mowêw+V+TA+Fut+Cond+2Sg+3PlO: mowatwâwi
+     mowêw+V+TA+Fut+Cond+2Pl+3SgO: mowâyêko
+     mowêw+V+TA+Fut+Cond+2Pl+3PlO: mowâyêkwâwi
 
-     mow+V+TA+Fut+Cond+3Sg+3SgO: mowâci
-     mow+V+TA+Fut+Cond+3Sg+4SgO: mowâyici
-     mow+V+TA+Fut+Cond+3Sg+3PlO: mowikotwâwi
-     mow+V+TA+Fut+Cond+3Sg+1SgO: mowici
-     mow+V+TA+Fut+Cond+3Sg+2SgO: mowiski
-     mow+V+TA+Fut+Cond+3Sg+1PlO: mowikoyâhki
-     mow+V+TA+Fut+Cond+3Sg+2PlO: mowikoyêko
-     mow+V+TA+Fut+Cond+3Sg+12PlO: mowikoyahko
+     mowêw+V+TA+Fut+Cond+3Sg+3SgO: mowâci
+     mowêw+V+TA+Fut+Cond+3Sg+4SgO: mowâyici
+     mowêw+V+TA+Fut+Cond+3Sg+3PlO: mowikotwâwi
+     mowêw+V+TA+Fut+Cond+3Sg+1SgO: mowici
+     mowêw+V+TA+Fut+Cond+3Sg+2SgO: mowiski
+     mowêw+V+TA+Fut+Cond+3Sg+1PlO: mowikoyâhki
+     mowêw+V+TA+Fut+Cond+3Sg+2PlO: mowikoyêko
+     mowêw+V+TA+Fut+Cond+3Sg+12PlO: mowikoyahko
 
-     mow+V+TA+Fut+Cond+3Pl+3SgO: mowâtwâwi
-     mow+V+TA+Fut+Cond+3Pl+3PlO: mowâtwâwi
+     mowêw+V+TA+Fut+Cond+3Pl+3SgO: mowâtwâwi
+     mowêw+V+TA+Fut+Cond+3Pl+3PlO: mowâtwâwi
 
-     mow+V+TA+Fut+Cond+4Sg+3SgO: mowikoci
-     mow+V+TA+Fut+Cond+4Sg+3PlO: mowâyici
-     mow+V+TA+Fut+Cond+4Pl+3SgO: mowikoci
-     mow+V+TA+Fut+Cond+4Pl+3PlO: mowâyici
-     mow+V+TA+Fut+Cond+4Sg+4PlO: mowikoyici
-     mow+V+TA+Fut+Cond+4Pl+4PlO: mowikoyici
+     mowêw+V+TA+Fut+Cond+4Sg+3SgO: mowikoci
+     mowêw+V+TA+Fut+Cond+4Sg+3PlO: mowâyici
+     mowêw+V+TA+Fut+Cond+4Pl+3SgO: mowikoci
+     mowêw+V+TA+Fut+Cond+4Pl+3PlO: mowâyici
+     mowêw+V+TA+Fut+Cond+4Sg+4PlO: mowikoyici
+     mowêw+V+TA+Fut+Cond+4Pl+4PlO: mowikoyici
   
   Verb - wâpamêw - ok : # Wolvengrey VTA1 verb - p 401
 
@@ -1073,41 +1073,40 @@ Tests:
      wîcihêw+V+TA+Imp+Del+2Pl+1SgO: wîcihîhkêk
 
   
-  Verb - katâ - asfd : # Wolvengrey VTI2 verb, p. 399
-     katâ+V+TI: katâ
-     katâ+V+TI+Imp+Imm+2Sg: katâ
-     katâ+V+TI+Imp+Imm+12Pl: katâtân
-     katâ+V+TI+Imp+Imm+2Pl: katâk
-     katâ+V+TI+Imp+Del+2Sg: katâhkan
-     katâ+V+TI+Imp+Del+12Pl: katâhkahk
-     katâ+V+TI+Imp+Del+2Pl: katâhkêk
+  Verb - kâtâ - asfd : # Wolvengrey VTI2 verb, p. 399
+     kâtâw+V+TI+Imp+Imm+2Sg: kâtâ
+     kâtâw+V+TI+Imp+Imm+12Pl: kâtâtân
+     kâtâw+V+TI+Imp+Imm+2Pl: kâtâk
+     kâtâw+V+TI+Imp+Del+2Sg: kâtâhkan
+     kâtâw+V+TI+Imp+Del+12Pl: kâtâhkahk
+     kâtâw+V+TI+Imp+Del+2Pl: kâtâhkêk
 
-     katâ+V+TI+Ind+Prs+1Sg: nikatân
-     katâ+V+TI+Ind+Prs+2Sg: kikatân
-     katâ+V+TI+Ind+Prs+1Pl: nikatânân
-     katâ+V+TI+Ind+Prs+12Pl: [kikatânânaw, kikatânaw]
-     katâ+V+TI+Ind+Prs+2Pl: kikatânâwâw
-     katâ+V+TI+Ind+Prs+3Sg: katâw
-     katâ+V+TI+Ind+Prs+3Pl: katâwak
-     katâ+V+TI+Ind+Prs+4Sg: katâyiwa
-     katâ+V+TI+Ind+Prs+4Pl: katâyiwa
+     kâtâw+V+TI+Ind+Prs+1Sg: nikâtân
+     kâtâw+V+TI+Ind+Prs+2Sg: kikâtân
+     kâtâw+V+TI+Ind+Prs+1Pl: nikâtânân
+     kâtâw+V+TI+Ind+Prs+12Pl: [kikâtânânaw, kikâtânaw]
+     kâtâw+V+TI+Ind+Prs+2Pl: kikâtânâwâw
+     kâtâw+V+TI+Ind+Prs+3Sg: kâtâw
+     kâtâw+V+TI+Ind+Prs+3Pl: kâtâwak
+     kâtâw+V+TI+Ind+Prs+4Sg: kâtâyiwa
+     kâtâw+V+TI+Ind+Prs+4Pl: kâtâyiwa
 
-     katâ+V+TI+Ind+Prt+1Sg: [nikîkatân, nikî-katân]
-     katâ+V+TI+Ind+Prt+2Sg: [kikîkatân, kikî-katân]
-     katâ+V+TI+Ind+Prt+1Pl: [nikîkatânân, nikî-katânân]
+     kâtâw+V+TI+Ind+Prt+1Sg: [nikîkâtân, nikî-kâtân]
+     kâtâw+V+TI+Ind+Prt+2Sg: [kikîkâtân, kikî-kâtân]
+     kâtâw+V+TI+Ind+Prt+1Pl: [nikîkâtânân, nikî-kâtânân]
 
-     katâ+V+TI+Cnj+Prs+1Sg: [êkatâyân, ê-katâyân]
-     katâ+V+TI+Cnj+Prs+2Sg: [êkatâyan, ê-katâyan]
-     katâ+V+TI+Cnj+Prs+1Pl: [êkatâyâhk, ê-katâyâhk]
-     katâ+V+TI+Cnj+Prs+12Pl: [êkatâyahk, ê-katâyahk]
-     katâ+V+TI+Cnj+Prs+2Pl: [êkatâyêk, ê-katâyêk]
-     katâ+V+TI+Cnj+Prs+3Sg: [êkatât, ê-katât]
-     katâ+V+TI+Cnj+Prs+3Pl: [êkatâcik, ê-katâcik]
-     katâ+V+TI+Cnj+Prs+4Sg: [êkatâyit, ê-katâyit]
-     katâ+V+TI+Cnj+Prs+4Pl: [êkatâyit, ê-katâyit]
+     kâtâw+V+TI+Cnj+Prs+1Sg: [êkâtâyân, ê-kâtâyân]
+     kâtâw+V+TI+Cnj+Prs+2Sg: [êkâtâyan, ê-kâtâyan]
+     kâtâw+V+TI+Cnj+Prs+1Pl: [êkâtâyâhk, ê-kâtâyâhk]
+     kâtâw+V+TI+Cnj+Prs+12Pl: [êkâtâyahk, ê-kâtâyahk]
+     kâtâw+V+TI+Cnj+Prs+2Pl: [êkâtâyêk, ê-kâtâyêk]
+     kâtâw+V+TI+Cnj+Prs+3Sg: [êkâtât, ê-kâtât]
+     kâtâw+V+TI+Cnj+Prs+3Pl: [êkâtâcik, ê-kâtâcik]
+     kâtâw+V+TI+Cnj+Prs+4Sg: [êkâtâyit, ê-kâtâyit]
+     kâtâw+V+TI+Cnj+Prs+4Pl: [êkâtâyit, ê-kâtâyit]
  
-     katâ+V+TI+Cnj+Prt+1Sg: [êkîkatâyân, êkî-katâyân, ê-kîkatâyân, ê-kî-katâyân]
-     katâ+V+TI+Cnj+Prt+2Sg: [êkîkatâyan, êkî-katâyan, ê-kîkatâyan, ê-kî-katâyan]
+     kâtâw+V+TI+Cnj+Prt+1Sg: [êkîkâtâyân, êkî-kâtâyân, ê-kîkâtâyân, ê-kî-kâtâyân]
+     kâtâw+V+TI+Cnj+Prt+2Sg: [êkîkâtâyan, êkî-kâtâyan, ê-kîkâtâyan, ê-kî-kâtâyan]
 
 
   
@@ -1151,86 +1150,84 @@ Tests:
 
   
   Verb - mîci - ok : # Wolvengrey VTI3 verb - p. 400 
-     mîci+V+TI: mîci
-     mîci+V+TI+Imp+Imm+2Sg: mîci
-     mîci+V+TI+Imp+Imm+12Pl: mîcitân
-     mîci+V+TI+Imp+Imm+2Pl: mîcik
-     mîci+V+TI+Imp+Del+2Sg: mîcihkan
-     mîci+V+TI+Imp+Del+12Pl: mîcihkahk
-     mîci+V+TI+Imp+Del+2Pl: mîcihkêk
+     mîciw+V+TI+Imp+Imm+2Sg: mîci
+     mîciw+V+TI+Imp+Imm+12Pl: mîcitân
+     mîciw+V+TI+Imp+Imm+2Pl: mîcik
+     mîciw+V+TI+Imp+Del+2Sg: mîcihkan
+     mîciw+V+TI+Imp+Del+12Pl: mîcihkahk
+     mîciw+V+TI+Imp+Del+2Pl: mîcihkêk
 
-     mîci+V+TI+Ind+Prs+1Sg: nimîcin
-     mîci+V+TI+Ind+Prs+2Sg: kimîcin
-     mîci+V+TI+Ind+Prs+1Pl: nimîcinân
-     mîci+V+TI+Ind+Prs+12Pl: [kimîcinaw, kimîcinânaw]
-     mîci+V+TI+Ind+Prs+2Pl: kimîcinâwâw
-     mîci+V+TI+Ind+Prs+3Sg: mîciw
-     mîci+V+TI+Ind+Prs+3Pl: mîciwak
-     mîci+V+TI+Ind+Prs+4Pl: mîciyiwa
+     mîciw+V+TI+Ind+Prs+1Sg: nimîcin
+     mîciw+V+TI+Ind+Prs+2Sg: kimîcin
+     mîciw+V+TI+Ind+Prs+1Pl: nimîcinân
+     mîciw+V+TI+Ind+Prs+12Pl: [kimîcinaw, kimîcinânaw]
+     mîciw+V+TI+Ind+Prs+2Pl: kimîcinâwâw
+     mîciw+V+TI+Ind+Prs+3Sg: mîciw
+     mîciw+V+TI+Ind+Prs+3Pl: mîciwak
+     mîciw+V+TI+Ind+Prs+4Pl: mîciyiwa
 
-     mîci+V+TI+Ind+Prt+1Sg: [nikîmîcin, nikî-mîcin]
-     mîci+V+TI+Ind+Prt+2Sg: [kikîmîcin, kikî-mîcin]
-     mîci+V+TI+Ind+Prt+1Pl: [nikîmîcinân, nikî-mîcinân]
-     mîci+V+TI+Ind+Prt+12Pl: [kikîmîcinaw, kikî-mîcinaw, kikîmîcinânaw, kikî-mîcinânaw]
-     mîci+V+TI+Ind+Prt+2Pl: [kikîmîcinâwâw, kikî-mîcinâwâw]
-     mîci+V+TI+Ind+Prt+3Sg: [kîmîciw, kî-mîciw]
-     mîci+V+TI+Ind+Prt+3Pl: [kî-mîciwak, kîmîciwak]
-     mîci+V+TI+Ind+Prt+4Pl: [kî-mîciyiwa, kîmîciyiwa]
+     mîciw+V+TI+Ind+Prt+1Sg: [nikîmîcin, nikî-mîcin]
+     mîciw+V+TI+Ind+Prt+2Sg: [kikîmîcin, kikî-mîcin]
+     mîciw+V+TI+Ind+Prt+1Pl: [nikîmîcinân, nikî-mîcinân]
+     mîciw+V+TI+Ind+Prt+12Pl: [kikîmîcinaw, kikî-mîcinaw, kikîmîcinânaw, kikî-mîcinânaw]
+     mîciw+V+TI+Ind+Prt+2Pl: [kikîmîcinâwâw, kikî-mîcinâwâw]
+     mîciw+V+TI+Ind+Prt+3Sg: [kîmîciw, kî-mîciw]
+     mîciw+V+TI+Ind+Prt+3Pl: [kî-mîciwak, kîmîciwak]
+     mîciw+V+TI+Ind+Prt+4Pl: [kî-mîciyiwa, kîmîciyiwa]
 
-     mîci+V+TI+Cnj+Prs+1Sg: [ê-mîciyân, êmîciyân]
-     mîci+V+TI+Cnj+Prs+2Sg: [ê-mîciyan, êmîciyan]
-     mîci+V+TI+Cnj+Prs+1Pl: [ê-mîciyâhk, êmîciyâhk]
-     mîci+V+TI+Cnj+Prs+12Pl: [ê-mîciyahk, êmîciyahk]
-     mîci+V+TI+Cnj+Prs+2Pl: [ê-mîciyêk, êmîciyêk]
-     mîci+V+TI+Cnj+Prs+3Sg: [ê-mîcit, êmîcit]
-     mîci+V+TI+Cnj+Prs+3Pl: [ê-mîcicik, êmîcicik]
-     mîci+V+TI+Cnj+Prs+4Pl: [ê-mîciyit, êmîciyit]
+     mîciw+V+TI+Cnj+Prs+1Sg: [ê-mîciyân, êmîciyân]
+     mîciw+V+TI+Cnj+Prs+2Sg: [ê-mîciyan, êmîciyan]
+     mîciw+V+TI+Cnj+Prs+1Pl: [ê-mîciyâhk, êmîciyâhk]
+     mîciw+V+TI+Cnj+Prs+12Pl: [ê-mîciyahk, êmîciyahk]
+     mîciw+V+TI+Cnj+Prs+2Pl: [ê-mîciyêk, êmîciyêk]
+     mîciw+V+TI+Cnj+Prs+3Sg: [ê-mîcit, êmîcit]
+     mîciw+V+TI+Cnj+Prs+3Pl: [ê-mîcicik, êmîcicik]
+     mîciw+V+TI+Cnj+Prs+4Pl: [ê-mîciyit, êmîciyit]
 
-     mîci+V+TI+Cnj+Prt+1Sg: [ê-kîmîciyân, ê-kî-mîciyân, êkîmîciyân, êkî-mîciyân]
-     mîci+V+TI+Cnj+Prt+2Sg: [ê-kîmîciyan, ê-kî-mîciyan, êkî-mîciyan, êkîmîciyan]
-     mîci+V+TI+Cnj+Prt+1Pl: [ê-kîmîciyâhk, ê-kî-mîciyâhk, êkî-mîciyâhk, êkîmîciyâhk]
-     mîci+V+TI+Cnj+Prt+12Pl: [ê-kîmîciyahk, ê-kî-mîciyahk, ê-kîmîciyahk, ê-kî-mîciyahk, êkî-mîciyahk, êkîmîciyahk]
-     mîci+V+TI+Cnj+Prt+2Pl: [ê-kîmîciyêk, ê-kî-mîciyêk, êkî-mîciyêk, êkîmîciyêk]
-     mîci+V+TI+Cnj+Prt+3Sg: [ê-kîmîcit, ê-kî-mîcit, êkîmîcit, êkî-mîcit]
-     mîci+V+TI+Cnj+Prt+3Pl: [ê-kî-mîcicik, ê-kîmîcicik, êkî-mîcicik, êkîmîcicik]
-     mîci+V+TI+Cnj+Prt+4Pl: [ê-kî-mîciyit, ê-kîmîciyit, êkî-mîciyit, êkîmîciyit]
+     mîciw+V+TI+Cnj+Prt+1Sg: [ê-kîmîciyân, ê-kî-mîciyân, êkîmîciyân, êkî-mîciyân]
+     mîciw+V+TI+Cnj+Prt+2Sg: [ê-kîmîciyan, ê-kî-mîciyan, êkî-mîciyan, êkîmîciyan]
+     mîciw+V+TI+Cnj+Prt+1Pl: [ê-kîmîciyâhk, ê-kî-mîciyâhk, êkî-mîciyâhk, êkîmîciyâhk]
+     mîciw+V+TI+Cnj+Prt+12Pl: [ê-kîmîciyahk, ê-kî-mîciyahk, ê-kîmîciyahk, ê-kî-mîciyahk, êkî-mîciyahk, êkîmîciyahk]
+     mîciw+V+TI+Cnj+Prt+2Pl: [ê-kîmîciyêk, ê-kî-mîciyêk, êkî-mîciyêk, êkîmîciyêk]
+     mîciw+V+TI+Cnj+Prt+3Sg: [ê-kîmîcit, ê-kî-mîcit, êkîmîcit, êkî-mîcit]
+     mîciw+V+TI+Cnj+Prt+3Pl: [ê-kî-mîcicik, ê-kîmîcicik, êkî-mîcicik, êkîmîcicik]
+     mîciw+V+TI+Cnj+Prt+4Pl: [ê-kî-mîciyit, ê-kîmîciyit, êkî-mîciyit, êkîmîciyit]
 
 
   Verb - wâpahta -  : # Ordinary TA verb - full paradigm
   
-     wâpahta+V+TI: wâpahta
-     wâpahta+V+TI+Imp+Imm+2Sg: wâpahta
-     wâpahta+V+TI+Imp+Imm+12Pl: wâpahtêtân
-     wâpahta+V+TI+Imp+Imm+2Pl: wâpahtamok
-     wâpahta+V+TI+Imp+Del+2Sg: wâpahtamôhkan
-     wâpahta+V+TI+Imp+Del+12Pl: wâpahtamôhkahk
-     wâpahta+V+TI+Imp+Del+2Pl: wâpahtamôhkêk
+     wâpahtam+V+TI+Imp+Imm+2Sg: wâpahta
+     wâpahtam+V+TI+Imp+Imm+12Pl: wâpahtêtân
+     wâpahtam+V+TI+Imp+Imm+2Pl: wâpahtamok
+     wâpahtam+V+TI+Imp+Del+2Sg: wâpahtamôhkan
+     wâpahtam+V+TI+Imp+Del+12Pl: wâpahtamôhkahk
+     wâpahtam+V+TI+Imp+Del+2Pl: wâpahtamôhkêk
 
-     wâpahta+V+TI+Ind+Prs+1Sg: niwâpahtên
-     wâpahta+V+TI+Ind+Prs+2Sg: kiwâpahtên
-     wâpahta+V+TI+Ind+Prs+1Pl: niwâpahtênân
-     wâpahta+V+TI+Ind+Prs+12Pl: [kiwâpahtênaw, kiwâpahtênânaw]
-     wâpahta+V+TI+Ind+Prs+2Pl: kiwâpahtênâwâw
-     wâpahta+V+TI+Ind+Prs+3Sg: wâpahtam
-     wâpahta+V+TI+Ind+Prs+3Pl: wâpahtamwak
-     wâpahta+V+TI+Ind+Prs+4Pl: wâpahtamiyiwa
+     wâpahtam+V+TI+Ind+Prs+1Sg: niwâpahtên
+     wâpahtam+V+TI+Ind+Prs+2Sg: kiwâpahtên
+     wâpahtam+V+TI+Ind+Prs+1Pl: niwâpahtênân
+     wâpahtam+V+TI+Ind+Prs+12Pl: [kiwâpahtênaw, kiwâpahtênânaw]
+     wâpahtam+V+TI+Ind+Prs+2Pl: kiwâpahtênâwâw
+     wâpahtam+V+TI+Ind+Prs+3Sg: wâpahtam
+     wâpahtam+V+TI+Ind+Prs+3Pl: wâpahtamwak
+     wâpahtam+V+TI+Ind+Prs+4Pl: wâpahtamiyiwa
 
-     wâpahta+V+TI+Cnj+Prs+1Sg: [êwâpahtamân, ê-wâpahtamân]
-     wâpahta+V+TI+Cnj+Prs+2Sg: [êwâpahtaman, ê-wâpahtaman]
-     wâpahta+V+TI+Cnj+Prs+1Pl: [êwâpahtamâhk, ê-wâpahtamâhk]
-     wâpahta+V+TI+Cnj+Prs+12Pl: [êwâpahtamahk, ê-wâpahtamahk]
-     wâpahta+V+TI+Cnj+Prs+2Pl: [êwâpahtamêk, ê-wâpahtamêk]
-     wâpahta+V+TI+Cnj+Prs+3Sg: [êwâpahtahk, ê-wâpahtahk]
-     wâpahta+V+TI+Cnj+Prs+3Pl: [êwâpahtahkik, ê-wâpahtahkik]
-     wâpahta+V+TI+Cnj+Prs+4Pl: [êwâpahtamiyit, ê-wâpahtamiyit]
+     wâpahtam+V+TI+Cnj+Prs+1Sg: [êwâpahtamân, ê-wâpahtamân]
+     wâpahtam+V+TI+Cnj+Prs+2Sg: [êwâpahtaman, ê-wâpahtaman]
+     wâpahtam+V+TI+Cnj+Prs+1Pl: [êwâpahtamâhk, ê-wâpahtamâhk]
+     wâpahtam+V+TI+Cnj+Prs+12Pl: [êwâpahtamahk, ê-wâpahtamahk]
+     wâpahtam+V+TI+Cnj+Prs+2Pl: [êwâpahtamêk, ê-wâpahtamêk]
+     wâpahtam+V+TI+Cnj+Prs+3Sg: [êwâpahtahk, ê-wâpahtahk]
+     wâpahtam+V+TI+Cnj+Prs+3Pl: [êwâpahtahkik, ê-wâpahtahkik]
+     wâpahtam+V+TI+Cnj+Prs+4Pl: [êwâpahtamiyit, ê-wâpahtamiyit]
 
 
-     wâpahta+V+TI+Ind+Prt+1Sg: [nikîwâpahtên, nikî-wâpahtên]
-     wâpahta+V+TI+Ind+Prt+2Sg: [kikîwâpahtên, kikî-wâpahtên]
-     wâpahta+V+TI+Ind+Prt+1Pl: [nikîwâpahtênân, nikî-wâpahtênân]
-     wâpahta+V+TI+Ind+Prt+12Pl: [kikîwâpahtênaw, kikî-wâpahtênaw, kikîwâpahtênânaw, kikî-wâpahtênânaw]
-     wâpahta+V+TI+Ind+Prt+2Pl: [kikîwâpahtênâwâw, kikî-wâpahtênâwâw]
-     wâpahta+V+TI+Ind+Prt+3Sg: [kîwâpahtam, kî-wâpahtam]
-     wâpahta+V+TI+Ind+Prt+3Pl: [kî-wâpahtamwak, kîwâpahtamwak]
-     wâpahta+V+TI+Ind+Prt+4Pl: [kîwâpahtamiyiwa, kî-wâpahtamiyiwa]
+     wâpahtam+V+TI+Ind+Prt+1Sg: [nikîwâpahtên, nikî-wâpahtên]
+     wâpahtam+V+TI+Ind+Prt+2Sg: [kikîwâpahtên, kikî-wâpahtên]
+     wâpahtam+V+TI+Ind+Prt+1Pl: [nikîwâpahtênân, nikî-wâpahtênân]
+     wâpahtam+V+TI+Ind+Prt+12Pl: [kikîwâpahtênaw, kikî-wâpahtênaw, kikîwâpahtênânaw, kikî-wâpahtênânaw]
+     wâpahtam+V+TI+Ind+Prt+2Pl: [kikîwâpahtênâwâw, kikî-wâpahtênâwâw]
+     wâpahtam+V+TI+Ind+Prt+3Sg: [kîwâpahtam, kî-wâpahtam]
+     wâpahtam+V+TI+Ind+Prt+3Pl: [kî-wâpahtamwak, kîwâpahtamwak]
+     wâpahtam+V+TI+Ind+Prt+4Pl: [kîwâpahtamiyiwa, kî-wâpahtamiyiwa]
 
