@@ -22,7 +22,7 @@ These are forms, which don't follow orthographic principles, but still they are 
 The normative form should be on the left side, and then the lemma in the analysis will be a normative form and can be found e.g. in the dictionary.
 
 {{bázahus:bázahuss JOHTOLAT "remainder" ; }} \\
-{{bázahus+Err/Sub:bázáhuss JOHTOLAT "remainder" ; }}
+{{bázahus+Err/Orth:bázáhuss JOHTOLAT "remainder" ; }}
 
 The descriptive FST will inflect both "bázahus" and "bázáhus", but the string with the tag Err/Sub is removed from the normative analyser/generator during the compilation prosess. 
 {{{
@@ -30,7 +30,7 @@ bázahusat
 bázahusat	bázahus+N+Pl+Nom
 
 bázáhusat
-bázáhusat	bázahus+Err/Sub+N+Pl+Nom
+bázáhusat	bázahus+Err/Orth+N+Pl+Nom
 }}}
 
 The normative analyser:
