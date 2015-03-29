@@ -48,12 +48,12 @@ bázáhusat	bázáhusat	+?
 !!The word itself is non-normative: Err/LexSub
 Ex. "brillefutterála" which is a slightly adapated loanword from Norwegian to North Saami. The normative word is "čalbmelássaskuohppu"
 
-{{brillefutterála+Err/LexSub:brille#futterál SOSIAL "spectacle case" ;}}
+{{brillefutterála+Err/Lex:brille#futterál SOSIAL "spectacle case" ;}}
 
 The descriptive FST will inflect "brillefutterála", but the line with the tag Err/LexSub is removed from the normative analyser/generator during the compilation prosess. 
 {{{
 brillefutterálat 
-brillefutterálat	brillefutterála+N+Err/LexSub+Pl+Nom
+brillefutterálat	brillefutterála+N+Err/Lex+Pl+Nom
 }}}
 
 The normative analyser:
