@@ -27,19 +27,19 @@ LEXICON Root
 !LEXICON NUMBERSECTION
 
 HUNDREDSM ;		! 200M
-mitâtahtomitanaw% :1 HUNDREDM ;	! 100M
-mitâtahtomtanaw% :1 HUNDREDM ;	! 100M
+1:mitâtahtomitanaw%   HUNDREDM ;	! 100M
+1:mitâtahtomtanaw%   HUNDREDM ;	! 100M
 TENSM ;			! 20-99M
 TEENSM ;		! 10-19M
 ONESM ;			! 1-9M
 !HUNDREDST ;		! 200000-999999 NB
-mitâtahtomitanaw:1 HUNDREDT ;	! 100000-100999
-mitâtahtomtanaw:1 HUNDREDT ;	! 100000-100999
+1:mitâtahtomitanaw  HUNDREDT ;	! 100000-100999
+1:mitâtahtomtanaw HUNDREDT ;	! 100000-100999
 TENST ;			! 20000-99999,10000-10999
 TEENST ;		! 11000-19999
 ONEST ;			! 2000-9999
-peyak% kihci% mitâtahtomtanaw:1 THOUSAND ;
-peyak% kihci% mitâtahtomitanaw:1 THOUSAND ;
+1:peyak% kihci% mitâtahtomtanaw THOUSAND ;
+1:peyak% kihci% mitâtahtomitanaw THOUSAND ;
 UNDERTHOUSAND ;		! 100-999
 TENS ;			! 20-99
 TEENS ;			! 10-19
@@ -47,70 +47,70 @@ ONES ;			! 1-9
 NEARLY ;			! 29-99
 
 LEXICON HUNDREDSM
-nîso:2  CUODIM ;
-nisto:3 CUODIM ;
-newo:4 CUODIM ; ! Google: 459
-nîyânan:5 CUODIM ;
-nikotwâsik:6 CUODIM ;
-tepakohp:7 CUODIM ;
-ayinânew:8 CUODIM ;
-kekâmitâtaht:9 CUODIM ;
+2:nîso  CUODIM ;
+3:nisto CUODIM ;
+4:newo CUODIM ; ! Google: 459
+5:nîyânan CUODIM ;
+6:nikotwâsik CUODIM ;
+7:tepakohp CUODIM ;
+8:ayinânew CUODIM ;
+9:kekâmitâtaht CUODIM ;
 
 LEXICON CUODIM
-mitâtahtomitanaw: HUNDREDM ;
-mitâtahtomtanaw: HUNDREDM ;
+:mitâtahtomitanaw HUNDREDM ;
+:mitâtahtomtanaw HUNDREDM ;
 
 LEXICON HUNDREDM
       TENSM ;
       TEENSM ;
-:%0   ONESM ;
-:%0%0 MILJON ;
+%0:   ONESM ;
+%0%0: MILJON ;
 
 LEXICON TEENSM
-luhkie:1 TEENM ;
+1:luhkie TEENM ;
 
 LEXICON TEENM
-peyak:1     LOHKAIM ;
-nîso:2   LOHKAIM ;
-nisto:3    LOHKAIM ;
-newo:4 LOHKAIM ;
-nîyânan:5   LOHKAIM ;
-nikotwâsik:6   LOHKAIM ;
-tepakohp:7 LOHKAIM ;
-ayinânew:8 LOHKAIM ;
-kekâmitâtaht:9   LOHKAIM ;
+1:peyak     LOHKAIM ;
+2:nîso   LOHKAIM ;
+3:nisto    LOHKAIM ;
+4:newo LOHKAIM ;
+5:nîyânan   LOHKAIM ;
+6:nikotwâsik   LOHKAIM ;
+7:tepakohp LOHKAIM ;
+8:ayinânew LOHKAIM ;
+9:kekâmitâtaht   LOHKAIM ;
 
 LEXICON LOHKAIM
 MILJON ;
 
 LEXICON TENSM
-luhkie:1%0 MILJON ;
-nîso:2   TENM ;
-nisto:3    TENM ;
-newo:4 TENM ;
-nîyânan:5   TENM ;
-nikotwâsik:6   TENM ;
-tepakohp:7 TENM ;
-ayinânew:8 TENM ;
-kekâmitâtaht:9   TENM ;
+1%0:luhkie MILJON ;
+2:nîso   TENM ;
+3:nisto    TENM ;
+4:newo TENM ;
+5:nîyânan   TENM ;
+6:nikotwâsik   TENM ;
+7:tepakohp TENM ;
+8:ayinânew TENM ;
+9:kekâmitâtaht   TENM ;
 
 LEXICON TENM
-luhkie:%0 MILJON ;
-luhkie:   ONESM ;
+%0:luhkie MILJON ;
+:luhkie   ONESM ;
 
 LEXICON ONESM
-akte% miljon% :1 OVERTHOUSANDS ;
-nîso:2         MILJON ;
-nisto:3          MILJON ;
-newo:4       MILJON ;
-nîyânan:5         MILJON ;
-nikotwâsik:6         MILJON ;
-tepakohp:7       MILJON ;
-ayinânew:8       MILJON ;
-kekâmitâtaht:9         MILJON ; 
+1:akte% miljon%  OVERTHOUSANDS ;
+2:nîso         MILJON ;
+3:nisto          MILJON ;
+4:newo       MILJON ;
+5:nîyânan         MILJON ;
+6:nikotwâsik         MILJON ;
+7:tepakohp       MILJON ;
+8:ayinânew       MILJON ;
+9:kekâmitâtaht         MILJON ; 
 
 LEXICON MILJON
-% miljona% : OVERTHOUSANDS ;
+:% miljona%  OVERTHOUSANDS ;
 
 ! =================
 ! Under the million
@@ -118,98 +118,98 @@ LEXICON MILJON
 
 LEXICON OVERTHOUSANDS
 HUNDREDST ;		! x00.000.000
-mitâtahtomitanaw:1 HUNDREDT ;	! 100.000.000
-mitâtahtomtanaw:1 HUNDREDT ;	! 100.000.000
-:%0 TENST ;		!  20.000.000
-:%0 TEENST ;		!  10.000.000
-:%0%0 ONEST ;		!   2.000.000
-peyak% kihci% mitâtahtomtanaw:%0%01 THOUSAND ;
-peyak% kihci% mitâtahtomitanaw:%0%01 THOUSAND ;
-:%0%0%0 UNDERTHOUSAND ;	
-:%0%0%0%0 TENS ;
-:%0%0%0%0 TEENS ;
-:%0%0%0%0%0 ONES ;
-:%0%0%0%0%0%0 ENDLEX ;	!  x000000
+1:mitâtahtomitanaw HUNDREDT ;	! 100.000.000
+1:mitâtahtomtanaw HUNDREDT ;	! 100.000.000
+%0: TENST ;		!  20.000.000
+%0: TEENST ;		!  10.000.000
+%0%0: ONEST ;		!   2.000.000
+%0%01:peyak% kihci% mitâtahtomtanaw THOUSAND ;
+%0%01:peyak% kihci% mitâtahtomitanaw THOUSAND ;
+%0%0%0: UNDERTHOUSAND ;	
+%0%0%0%0: TENS ;
+%0%0%0%0: TEENS ;
+%0%0%0%0%0: ONES ;
+%0%0%0%0%0%0: ENDLEX ;	!  x000000
 
 LEXICON HUNDREDST
-nîso:2   CUODIT ;	! 200000-299999
-nisto:3    CUODIT ;	! 300000-399999
-newo:4 CUODIT ;	! 400000-499999
-nîyânan:5   CUODIT ;	! 500000-599999
-nikotwâsik:6   CUODIT ;	! 600000-699999
-tepakohp:7 CUODIT ;	! 700000-799999
-ayinânew:8 CUODIT ;	! 800000-899999
-kekâmitâtaht:9   CUODIT ;	! 900000-999999
+2:nîso   CUODIT ;	! 200000-299999
+3:nisto    CUODIT ;	! 300000-399999
+4:newo CUODIT ;	! 400000-499999
+5:nîyânan   CUODIT ;	! 500000-599999
+6:nikotwâsik   CUODIT ;	! 600000-699999
+7:tepakohp CUODIT ;	! 700000-799999
+8:ayinânew CUODIT ;	! 800000-899999
+9:kekâmitâtaht   CUODIT ;	! 900000-999999
 
 LEXICON CUODIT
-mitâtahtomitanaw: HUNDREDT ;	! 100000-199999
-mitâtahtomtanaw: HUNDREDT ;	! 100000-199999
+:mitâtahtomitanaw HUNDREDT ;	! 100000-199999
+:mitâtahtomtanaw HUNDREDT ;	! 100000-199999
 
 LEXICON HUNDREDT	! X = 1-9, Y = 0-9
-% : TENST ;			! X2XYYY, X10YYY
+:%  TENST ;			! X2XYYY, X10YYY
 TEENST ;		! X1XYYY
-akte:%01 THOUSANDS ;
-:%0 ONEST ;		! XX0YYY
-:%0%0 THOUSANDS ;	! X00YYY
+%01:akte THOUSANDS ;
+%0: ONEST ;		! XX0YYY
+%0%0: THOUSANDS ;	! X00YYY
 
 LEXICON TEENST
-luhkie:1   TEENT ;
-luhkie:1%0 THOUSANDS ;
+1:luhkie   TEENT ;
+1%0:luhkie THOUSANDS ;
 
 LEXICON TEENT
-peyak:1     LOHKAIT ;
-nîso:2   LOHKAIT ;
-nisto:3    LOHKAIT ;
-newo:4 LOHKAIT ;
-nîyânan:5   LOHKAIT ;
-nikotwâsik:6   LOHKAIT ;
-tepakohp:7 LOHKAIT ;
-ayinânew:8 LOHKAIT ;
-kekâmitâtaht:9   LOHKAIT ;
+1:peyak     LOHKAIT ;
+2:nîso   LOHKAIT ;
+3:nisto    LOHKAIT ;
+4:newo LOHKAIT ;
+5:nîyânan   LOHKAIT ;
+6:nikotwâsik   LOHKAIT ;
+7:tepakohp LOHKAIT ;
+8:ayinânew LOHKAIT ;
+9:kekâmitâtaht   LOHKAIT ;
 
 LEXICON LOHKAIT
 THOUSANDS ;
 
 LEXICON TENST
-nîs:2   TANAW ;
-nistomi:3    TANAW ;
-nemi:4 TANAW ;
-nîyânanomi:5   TANAW ;
-nikotwâsomi:6   TANAW ;
-tepakohpimi:7 TANAW ;
-ayinânewomi:8 TANAW ;
-kekâmitâtahtomi:9   TANAW ;
-kâmitâtahtomi:9   TANAW ;
+2:nîs   TANAW ;
+3:nistomi    TANAW ;
+4:nemi TANAW ;
+5:nîyânanomi   TANAW ;
+6:nikotwâsomi   TANAW ;
+7:tepakohpimi TANAW ;
+8:ayinânewomi TANAW ;
+9:kekâmitâtahtomi   TANAW ;
+9:kâmitâtahtomi   TANAW ;
 
 LEXICON TANAW
-tanaw% :%0 ENDLEX ;
-tanaw% : ONESTONEXT ;
+%0:tanaw%  ENDLEX ;
+:tanaw%  ONESTONEXT ;
 
 LEXICON TENT
-:%0 THOUSANDS ;
-akte:1 THOUSANDS ;
+%0: THOUSANDS ;
+1:akte THOUSANDS ; ! error sma
 ONEST ;
 
 LEXICON ONEST
-nîso% :2 THOUSANDS ;
-nisto% :3 THOUSANDS ;
-newo% :4 THOUSANDS ;
-nîyânan% :5 THOUSANDS ;
-nikotwâsik% :6 THOUSANDS ;
-tepakohp% :7 THOUSANDS ;
-ayinânew% :8 THOUSANDS ;
-kekâmitâtaht% :9 THOUSANDS ;
+2:nîso%  THOUSANDS ;
+3:nisto%  THOUSANDS ;
+4:newo%  THOUSANDS ;
+5:nîyânan%  THOUSANDS ;
+6:nikotwâsik%  THOUSANDS ;
+7:tepakohp%  THOUSANDS ;
+8:ayinânew%  THOUSANDS ;
+9:kekâmitâtaht%  THOUSANDS ;
 
 LEXICON THOUSANDS      ! x > 1
-kihci% mitâtahtomtanaw: THOUSAND ;
-kihci% mitâtahtomitanaw: THOUSAND ;
+:kihci% mitâtahtomtanaw THOUSAND ;
+:kihci% mitâtahtomitanaw THOUSAND ;
 
 LEXICON THOUSAND
-% ayiwâk% : UNDERTHOUSAND ;	   ! 1100-1999
-% ayiwâk% :%0 TENS ;	   ! 1020-1099
-% ayiwâk% :%0 TEENS ;	   ! 1010-1019
-% ayiwâk% :%0%0 ONES ;	   ! 1001-1009
-:%0%0%0 ENDLEX ;	   ! 1000
+:% ayiwâk%  UNDERTHOUSAND ;	   ! 1100-1999
+%0:% ayiwâk%  TENS ;	   ! 1020-1099
+%0:% ayiwâk%  TEENS ;	   ! 1010-1019
+%0%0:% ayiwâk%  ONES ;	   ! 1001-1009
+%0%0%0: ENDLEX ;	   ! 1000
 
 !===========================
 !Here starts the 999 numbers
@@ -217,125 +217,122 @@ LEXICON THOUSAND
 
 LEXICON UNDERTHOUSAND
 HUNDREDS ;
-mitâtahtomitanaw% :1 HUNDRED ;
-mitâtahtomtanaw% :1 HUNDRED ;
+1:mitâtahtomitanaw%  HUNDRED ;
+1:mitâtahtomtanaw%  HUNDRED ;
 
 LEXICON HUNDREDS
-nîso% :2   CUODI ;
-nisto% :3    CUODI ;
-newo% :4 CUODI ;
-nîyânano% :5   CUODI ;  !OBS
-nikotwâsiko% :6   CUODI ;
-tepakohpo% :7 CUODI ;
-ayinânewo% :8 CUODI ;
-kekâmitâtahto% :9   CUODI ;
+2:nîso%    CUODI ;
+3:nisto%     CUODI ;
+4:newo%  CUODI ;
+5:nîyânano%    CUODI ;  !OBS
+6:nikotwâsiko%    CUODI ;
+7:tepakohpo%  CUODI ;
+8:ayinânewo%  CUODI ;
+9:kekâmitâtahto%    CUODI ;
 
 LEXICON CUODI
-mitâtahtomitanaw% :   HUNDRED ;
-mitâtahtomtanaw% :   HUNDRED ;
+:mitâtahtomitanaw%    HUNDRED ;
+:mitâtahtomtanaw%   HUNDRED ;
 
 LEXICON HUNDRED
-!      TENS ;
-!      TEENS ;
-ayiwâk% :  TENS ;
-ayiwâk% :  TEENS ;
-!:%0   ONES ;
-ayiwâk% :%0   ONES ;
-:%0%0 ENDLEX ;
+:ayiwâk%   TENS ;
+:ayiwâk%   TEENS ;
+%0:ayiwâk%    ONES ;
+%0%0: ENDLEX ;
 
 
 LEXICON TENS
-mitâtaht:1%0 ENDLEX ;
-låhkede:1%0%. ENDLEX ;
-nîs:2 TEN ;
-nîsi:2 TEN ;
-nistomi:3 TEN ;
-nemi:4 TEN ;
-nîyânanomi:5 TEN ;
-nikotwâsomi:6 TEN ;
-tepakohpimi:7 TEN ;
-ayinânewomi:8 TEN ;
-kekâmitâtahtomi:9 TEN ;
+1%0:mitâtaht ENDLEX ;
+1%0%.:låhkede ENDLEX ;
+2:nîs TEN ;
+2:nîsi TEN ;
+3:nistomi TEN ;
+4:nemi TEN ;
+5:nîyânanomi TEN ;
+6:nikotwâsomi TEN ;
+7:tepakohpimi TEN ;
+8:ayinânewomi TEN ;
+9:kekâmitâtahtomi TEN ;
 
-LEXICON TEN
-låhkede:%0%. ENDLEX ;
-tanaw% : ONESTONEXT ;
-tanaw% :%0 ENDLEX ;
+LEXICON TEN 
+%0%.:låhkede ENDLEX ; ! låhkede to be removed or replaced
+:tanaw%  ONESTONEXT ;
+%0:tanaw%  ENDLEX ;
 
 LEXICON NEARLY
-kekâc% nistôm:29 NEARLY-TEN ;
-kekâc% newôm:39 NEARLY-TEN ;
-kekâc% nîyânôm:49 NEARLY-TEN ;
-kekâc% nikotwâsom:59 NEARLY-TEN ;
-kekâc% tepakohpim:69 NEARLY-TEN ;
-kekâc% ayinânewom:79 NEARLY-TEN ;
-kekâc% kekâ% mitâtahtom:89 NEARLY-TEN ;
-kekâ% mitâtahtom:90 NEARLY-TEN ;
-kekâ% mitatahtomtanaw% ayiwâk% kekâ% mitâtaht:99 ENDLEX ;
-kekâc-nistomi:29 NEARLY-TEN ;
-kekâc-nemi:39 NEARLY-TEN ;
-kekâc-nîyânanomi:49 NEARLY-TEN ;
-kekâc-nikotwâsomi:59 NEARLY-TEN ;
-kekâc-tepakohpimi:69 NEARLY-TEN ;
-kekâc-ayinânewomi:79 NEARLY-TEN ;
-kekâc-ayenânewomi:79 NEARLY-TEN ;
-kekâc-kekâ-mitâtahtomi:89 NEARLY-TEN ;
-kekâ-mitatahtomi:90 NEARLY-TEN ;
-kekâ-mitatahtomitanaw% kekâ-mitâtaht:99 ENDLEX ;
+29:kekâc% nistôm NEARLY-TEN ;
+39:kekâc% newôm NEARLY-TEN ;
+49:kekâc% nîyânôm NEARLY-TEN ;
+59:kekâc% nikotwâsom NEARLY-TEN ;
+69:kekâc% tepakohpim NEARLY-TEN ;
+79:kekâc% ayinânewom NEARLY-TEN ;
+89:kekâc% kekâ% mitâtahtom NEARLY-TEN ;
+90:kekâ% mitâtahtom NEARLY-TEN ;
+99:kekâ% mitatahtomtanaw% ayiwâk% kekâ% mitâtaht ENDLEX ;
+29:kekâc-nistomi NEARLY-TEN ;
+39:kekâc-nemi NEARLY-TEN ;
+49:kekâc-nîyânanomi NEARLY-TEN ;
+59:kekâc-nikotwâsomi NEARLY-TEN ;
+69:kekâc-tepakohpimi NEARLY-TEN ;
+79:kekâc-ayinânewomi NEARLY-TEN ;
+79:kekâc-ayenânewomi NEARLY-TEN ;
+89:kekâc-kekâ-mitâtahtomi NEARLY-TEN ;
+90:kekâ-mitatahtomi NEARLY-TEN ;
+99:kekâ-mitatahtomitanaw% kekâ-mitâtaht ENDLEX ;
 
 LEXICON NEARLY-TEN
-tanaw: ENDLEX ;
+:tanaw ENDLEX ;
 
 
 
 LEXICON ONESTONEXT
-peyakosâp:1 ENDLEX ;
-nîsosâp:2 ENDLEX ;
-nistosâp:3 ENDLEX ;
-newosâp:4 ENDLEX ;
-niyânanosâp:5 ENDLEX ;
-nikotwâsosâp:6 ENDLEX ;
-tepakohposâp:7 ENDLEX ;
-ayinânewosâp:8 ENDLEX ;
-kekâmitâtahtosâp:9 ENDLEX ;
-peyako-sâp:1 ENDLEX ;
-nîso-sâp:2 ENDLEX ;
-nisto-sâp:3 ENDLEX ;
-newo-sâp:4 ENDLEX ;
-niyânano-sâp:5 ENDLEX ;
-nikotwâso-sâp:6 ENDLEX ;
-tepakohp-sâp:7 ENDLEX ;
-ayinânewo-sâp:8 ENDLEX ;
-kekâc% nîstanaw:9 ENDLEX ;
-ayiwâk% : CARDINAL ;
+1:peyakosâp ENDLEX ;
+2:nîsosâp ENDLEX ;
+3:nistosâp ENDLEX ;
+4:newosâp ENDLEX ;
+5:niyânanosâp ENDLEX ;
+6:nikotwâsosâp ENDLEX ;
+7:tepakohposâp ENDLEX ;
+8:ayinânewosâp ENDLEX ;
+9:kekâmitâtahtosâp ENDLEX ;
+1:peyako-sâp ENDLEX ;
+2:nîso-sâp ENDLEX ;
+3:nisto-sâp ENDLEX ;
+4:newo-sâp ENDLEX ;
+5:niyânano-sâp ENDLEX ;
+6:nikotwâso-sâp ENDLEX ;
+7:tepakohp-sâp ENDLEX ;
+8:ayinânewo-sâp ENDLEX ;
+9:kekâc% nîstanaw ENDLEX ;
+:ayiwâk%  CARDINAL ;
 
 
 LEXICON TEENS
-peyakosâp:11 ENDLEX ;
-nîsosâp:12 ENDLEX ;
-nistosâp:13 ENDLEX ;
-newosâp:14 ENDLEX ;
-niyânanosâp:15 ENDLEX ;
-nikotwâsosâp:16 ENDLEX ;
-tepakohposâp:17 ENDLEX ;
-ayinânewosâp:18 ENDLEX ;
-kekâmitâtahtosâp:19 ENDLEX ;
-kekâc% nîstanaw:19 ENDLEX ;
+11:peyakosâp ENDLEX ;
+12:nîsosâp ENDLEX ;
+13:nistosâp ENDLEX ;
+14:newosâp ENDLEX ;
+15:niyânanosâp ENDLEX ;
+16:nikotwâsosâp ENDLEX ;
+17:tepakohposâp ENDLEX ;
+18:ayinânewosâp ENDLEX ;
+19:kekâmitâtahtosâp ENDLEX ;
+19:kekâc% nîstanaw ENDLEX ;
 
 LEXICON ONES
 CARDINAL ;
 
 LEXICON CARDINAL
-peyak:1 ENDLEX ;
-nîso:2 ENDLEX ;
-nisto:3 ENDLEX ;
-newo:4 ENDLEX ;
-niyânan:5 ENDLEX ;
-nikotwâsik:6 ENDLEX ;
-tepakohp:7 ENDLEX ;
-ayinânew:8 ENDLEX ;
-ayenânew:8 ENDLEX ;
-kekâmitâtaht:9 ENDLEX ;
+1:peyak ENDLEX ;
+2:nîso ENDLEX ;
+3:nisto ENDLEX ;
+4:newo ENDLEX ;
+5:niyânan ENDLEX ;
+6:nikotwâsik ENDLEX ;
+7:tepakohp ENDLEX ;
+8:ayinânew ENDLEX ;
+8:ayenânew ENDLEX ;
+9:kekâmitâtaht ENDLEX ;
 
 
 !LEXICON ENDLEX
