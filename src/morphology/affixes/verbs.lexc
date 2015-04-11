@@ -917,11 +917,11 @@ LEXICON AICONJ_v
 AICONJ ;
 
 
-LEXICON TACONJ_3 
-TACONJ_2 ;
-
-LEXICON TACONJ_4 
-TACONJ_2 ;
+!! LEXICON TACONJ_3 
+!! TACONJ_2 ;
+!! 
+!! LEXICON TACONJ_4 
+!! TACONJ_2 ;
 
 ! LEXICON TICONJi  ! Trond dymmy delete
 ! # ;
@@ -1687,9 +1687,17 @@ LEXICON TACONJ_1 !!= @CODE@
 < "+V":0 "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA: TACONJ-CONT ;
 
-LEXICON TACONJ_2  !!= * @CODE@ splits in 4. The -aw shall be removed from some forms.
+LEXICON TACONJ_2  !!= * @CODE@ Vw + i suf deletes w and i.
 < "+V":0 "+TA":0 0:ê 0:w "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
-+V+TA: TACONJ-CONT ;
++V+TA: TACONJ-CONTVw ;
+
+LEXICON TACONJ_3  !!= * @CODE@ Cw where w + i become o
+< "+V":0 "+TA":0 0:ê 0:w "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+TA: TACONJ-CONTCw ;
+
+LEXICON TACONJ_4  !!= * @CODE@ TS
+< "+V":0 "+TA":0 0:ê 0:w "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
++V+TA: TACONJ-CONTTS ;
 
 LEXICON TACONJ_5 ! This is just guessing, I do not know how the VTA-5 vers are inflected.
 < "+V":w "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
@@ -1701,6 +1709,24 @@ LEXICON TACONJ-CONT
 < "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUT ; !
 < "+Imp":0 "@U.mood.imp@" > TA_IMP ; !
 
+LEXICON TACONJ-CONTTS
+< "+Ind":0 "@U.mood.indep@" > TA_INDTS ; !
+< "+Cnj":0 "@U.mood.cnj@" > TA_CNJTS ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUT ; !
+< "+Imp":0 "@U.mood.imp@" > TATS_IMP ; !
+
+LEXICON TACONJ-CONTVw
+< "+Ind":0 "@U.mood.indep@" > TA_INDVw ;
+< "+Cnj":0 "@U.mood.cnj@" > TA_CNJVw ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TAVw_FUT ; !
+< "+Imp":0 "@U.mood.imp@" > TAVw_IMP ; !
+
+LEXICON TACONJ-CONTCw
+< "+Ind":0 "@U.mood.indep@" > TA_INDCw ; !
+< "+Cnj":0 "@U.mood.cnj@" > TA_CNJCw ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TACw_FUT ; !
+< "+Imp":0 "@U.mood.imp@" > TACw_IMP ; !
+
 
 
 LEXICON TA_IND !!= @CODE@ gives prs
@@ -1709,10 +1735,44 @@ LEXICON TA_IND !!= @CODE@ gives prs
 < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > TA_IND_PERSPREF ; !Future definite 
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_IND_PERSPREF ; !Future intentional
 
+LEXICON TA_INDTS !!= @CODE@ gives prs
+< "@U.tense.Prs@"    "+Prs":0          > TA_INDTS_PERSPREF ;!
+< "@U.tense.Prt@"    "+Prt":0          > TA_INDTS_PERSPREF ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > TA_INDTS_PERSPREF ; !Future definite 
+< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_INDTS_PERSPREF ; !Future intentional
+
+LEXICON TA_INDVw !!= @CODE@ gives prs
+< "@U.tense.Prs@"    "+Prs":0          > TA_INDVw_PERSPREF ;!
+< "@U.tense.Prt@"    "+Prt":0          > TA_INDVw_PERSPREF ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > TA_INDVw_PERSPREF ; !Future definite 
+< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_INDVw_PERSPREF ; !Future intentional
+
+LEXICON TA_INDCw !!= @CODE@ gives prs
+< "@U.tense.Prs@"    "+Prs":0          > TA_INDCw_PERSPREF ;!
+< "@U.tense.Prt@"    "+Prt":0          > TA_INDCw_PERSPREF ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > TA_INDCw_PERSPREF ; !Future definite 
+< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_INDCw_PERSPREF ; !Future intentional
+
 LEXICON TA_IND_PERSPREF !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
 @U.perspref.NI@   VTA_NI_O ;  !
 @U.perspref.KI@   VTA_KI_O ;  !
 @U.perspref.NULL@ VTA_NULL_O ;  !
+
+LEXICON TA_INDTS_PERSPREF !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
+@U.perspref.NI@   VTA_NI_O ;  !
+@U.perspref.KI@   VTATS_KI_O ;  !
+@U.perspref.NULL@ VTATS_NULL_O ;  !
+
+LEXICON TA_INDVw_PERSPREF !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
+@U.perspref.NI@   VTAVw_NI_O ;  !
+@U.perspref.KI@   VTAVw_KI_O ;  !
+@U.perspref.NULL@ VTAVw_NULL_O ;  !
+
+LEXICON TA_INDCw_PERSPREF !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
+@U.perspref.NI@   VTACw_NI_O ;  !
+@U.perspref.KI@   VTACw_KI_O ;  !
+@U.perspref.NULL@ VTACw_NULL_O ;  !
+
 
 
 LEXICON VTA_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
@@ -1740,10 +1800,10 @@ LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 +2Pl+3SgO:%>âwâw	  # ;
 +2Pl+3PlO:%>âwâwak	  # ;
 +3Pl+2PlO:%>ikowâwak  # ;
-+2Sg+1SgO:%>%^TSin         # ;
-+2Sg+1PlO:%>%^TSinân       # ;
-+2Pl+1PlO:%>%^TSinân       # ;
-+2Pl+1SgO:%>%^TSinâwâw     # ;
++2Sg+1SgO:%>in         # ;
++2Sg+1PlO:%>inân       # ;
++2Pl+1PlO:%>inân       # ;
++2Pl+1SgO:%>inâwâw     # ;
 +1Sg+2SgO:%>itin         # ;
 +1Pl+2SgO:%>itinân         # ; !OBS
 +1Sg+2PlO:%>itinânâw         # ;
@@ -1772,12 +1832,186 @@ LEXICON VTA_NULL_O
 +4Pl+3SgO:%>êyiwa	  # ;
 +4Pl+3PlO:%>êyiwa	  # ;
 
+LEXICON VTATS_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
++2Sg+3SgO:%>âw		  # ;
++2Sg+3PlO:%>âwak	  # ;
++3Sg+2SgO:%>ik		  # ;
++3Pl+2SgO:%>ikwak	  # ;
++12Pl+3SgO:%>ânaw	  # ;
++12Pl+3PlO:%>ânawak	  # ;
++3Sg+12PlO:%>ikonaw	  # ;
++3Sg+2PlO:%>ikowâw	  # ;
++3Pl+12PlO:%>ikonawak # ;
++2Pl+3SgO:%>âwâw	  # ;
++2Pl+3PlO:%>âwâwak	  # ;
++3Pl+2PlO:%>ikowâwak  # ;
++2Sg+1SgO:%>%^TSin         # ;
++2Sg+1PlO:%>%^TSinân       # ;
++2Pl+1PlO:%>%^TSinân       # ;
++2Pl+1SgO:%>%^TSinâwâw     # ;
++1Sg+2SgO:%>itin         # ;
++1Pl+2SgO:%>itinân         # ; !OBS
++1Sg+2PlO:%>itinânâw         # ;
++1Pl+2PlO:%>itinân         # ;
+
+				  
+LEXICON VTATS_NULL_O 	  
++3Sg+3SgO:%>êw		  # ; ! Oki 77
+!+3Sg+3SgO:%>ik		  # ; ! Oki 77
+!+3Sg+3SgO:%>kow	  # ; ! Oki 77
++3Sg+3PlO:%>êw		  # ; ! Oki 77
+!+3Sg+3PlO:%>ikowak	  # ; ! Oki 77
+!+3Sg+3PlO:%>ikak	  # ; ! Oki 77
+!+3Pl+3SgO:%>kow	  # ; ! Oki 77
++3Pl+3SgO:%>êwak	  # ; ! Oki 77
++4Sg+4PlO:%>êyiwa	  # ;
+
++4Sg+3SgO:%>ik	  # ; !OBS
++5Sg+3SgO:%>ikoyiwa  # ; 
++4Sg+3PlO:%>ikwak	  # ; !OBS
++5Sg+4SgO:%>ikoyiwa  # ; !??
++4Sg+4SgO:%>êyiwa  # ; !
+
+!+3Pl+3PlO:%>ikowak	  # ; ??
++3Pl+3PlO:%>êwak	  # ;
++4Pl+3SgO:%>êyiwa	  # ;
++4Pl+3PlO:%>êyiwa	  # ;
+
+LEXICON VTAVw_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
++1Sg+3SgO:%>âw		  # ;
++1Sg+3PlO:%>âwak	  # ;
++3Sg+1SgO:%>%^WIk        # ;
+!+3Sg+1PlO:%>%^WIk        # ;
++3Sg+1PlO:%>%^WIkonân	  # ;
++3Pl+1SgO:%>%^WIkwak	  # ;
++1Pl+3SgO:%>ânân	  # ;
++1Pl+3PlO:%>ânânak	  # ;
++3Pl+1PlO:%>%^WIkonânak  # ;
+
+
+LEXICON VTAVw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
++2Sg+3SgO:%>âw		  # ;
++2Sg+3PlO:%>âwak	  # ;
++3Sg+2SgO:%>ik		  # ;
++3Pl+2SgO:%>%^WIkwak	  # ;
++12Pl+3SgO:%>ânaw	  # ;
++12Pl+3PlO:%>ânawak	  # ;
++3Sg+12PlO:%>%^WIkonaw	  # ;
++3Sg+2PlO:%>%^WIkowâw	  # ;
++3Pl+12PlO:%>%^WIkonawak # ;
++2Pl+3SgO:%>âwâw	  # ;
++2Pl+3PlO:%>âwâwak	  # ;
++3Pl+2PlO:%>%^WIkowâwak  # ;
++2Sg+1SgO:%>%^WIn         # ;
++2Sg+1PlO:%>%^WInân       # ;
++2Pl+1PlO:%>%^WInân       # ;
++2Pl+1SgO:%>%^WInâwâw     # ;
++1Sg+2SgO:%>%^WItin         # ;
++1Pl+2SgO:%>%^WItinân         # ; !OBS
++1Sg+2PlO:%>%^WItinânâw         # ;
++1Pl+2PlO:%>%^WItinân         # ;
+
+				  
+LEXICON VTAVw_NULL_O 	  
++3Sg+3SgO:%>êw		  # ; ! Oki 77
+!+3Sg+3SgO:%>ik		  # ; ! Oki 77
+!+3Sg+3SgO:%>kow	  # ; ! Oki 77
++3Sg+3PlO:%>êw		  # ; ! Oki 77
+!+3Sg+3PlO:%>ikowak	  # ; ! Oki 77
+!+3Sg+3PlO:%>ikak	  # ; ! Oki 77
+!+3Pl+3SgO:%>kow	  # ; ! Oki 77
++3Pl+3SgO:%>êwak	  # ; ! Oki 77
++4Sg+4PlO:%>êyiwa	  # ;
+
++4Sg+3SgO:%>%^WIk	  # ; !OBS
++5Sg+3SgO:%>%^WIkoyiwa  # ; 
++4Sg+3PlO:%>%^WIkwak	  # ; !OBS
++5Sg+4SgO:%>%^WIkoyiwa  # ; !??
++4Sg+4SgO:%>êyiwa  # ; !
+
+!+3Pl+3PlO:%>%^WIkowak	  # ; ??
++3Pl+3PlO:%>êwak	  # ;
++4Pl+3SgO:%>êyiwa	  # ;
++4Pl+3PlO:%>êyiwa	  # ;
+
+LEXICON VTACw_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
++1Sg+3SgO:%>âw		  # ;
++1Sg+3PlO:%>âwak	  # ;
++3Sg+1SgO:%>%^IOik        # ;
+!+3Sg+1PlO:%>%^IOik        # ;
++3Sg+1PlO:%>%^IOikonân	  # ;
++3Pl+1SgO:%>%^IOikwak	  # ;
++1Pl+3SgO:%>ânân	  # ;
++1Pl+3PlO:%>ânânak	  # ;
++3Pl+1PlO:%>%^IOikonânak  # ;
+
+
+LEXICON VTACw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
++2Sg+3SgO:%>âw		  # ;
++2Sg+3PlO:%>âwak	  # ;
++3Sg+2SgO:%>ik		  # ;
++3Pl+2SgO:%>%^IOikwak	  # ;
++12Pl+3SgO:%>ânaw	  # ;
++12Pl+3PlO:%>ânawak	  # ;
++3Sg+12PlO:%>%^IOikonaw	  # ;
++3Sg+2PlO:%>%^IOikowâw	  # ;
++3Pl+12PlO:%>%^IOikonawak # ;
++2Pl+3SgO:%>âwâw	  # ;
++2Pl+3PlO:%>âwâwak	  # ;
++3Pl+2PlO:%>%^IOikowâwak  # ;
++2Sg+1SgO:%>%^IOin         # ;
++2Sg+1PlO:%>%^IOinân       # ;
++2Pl+1PlO:%>%^IOinân       # ;
++2Pl+1SgO:%>%^IOinâwâw     # ;
++1Sg+2SgO:%>%^IOitin         # ;
++1Pl+2SgO:%>%^IOitinân         # ; !OBS
++1Sg+2PlO:%>%^IOitinânâw         # ;
++1Pl+2PlO:%>%^IOitinân         # ;
+
+				  
+LEXICON VTACw_NULL_O 	  
++3Sg+3SgO:%>êw		  # ; ! Oki 77
+!+3Sg+3SgO:%>ik		  # ; ! Oki 77
+!+3Sg+3SgO:%>kow	  # ; ! Oki 77
++3Sg+3PlO:%>êw		  # ; ! Oki 77
+!+3Sg+3PlO:%>ikowak	  # ; ! Oki 77
+!+3Sg+3PlO:%>ikak	  # ; ! Oki 77
+!+3Pl+3SgO:%>kow	  # ; ! Oki 77
++3Pl+3SgO:%>êwak	  # ; ! Oki 77
++4Sg+4PlO:%>êyiwa	  # ;
+
++4Sg+3SgO:%>%^IOik	  # ; !OBS
++5Sg+3SgO:%>%^IOikoyiwa  # ; 
++4Sg+3PlO:%>%^IOikwak	  # ; !OBS
++5Sg+4SgO:%>%^IOikoyiwa  # ; !??
++4Sg+4SgO:%>êyiwa  # ; !
+
+!+3Pl+3PlO:%>%^IOikowak	  # ; ??
++3Pl+3PlO:%>êwak	  # ;
++4Pl+3SgO:%>êyiwa	  # ;
++4Pl+3PlO:%>êyiwa	  # ;
+
 
 
 LEXICON TA_CNJ !!= @CODE@ Third mode, conjunctive
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJ_SUF ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJ_SUF ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TA_CNJ_SUF ; !
+
+LEXICON TA_CNJTS !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > TA_CNJTS_SUF ; !
+< "+Prt":0          "@U.tense.Prt@"    > TA_CNJTS_SUF ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TA_CNJTS_SUF ; !
+
+LEXICON TA_CNJVw !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > TA_CNJVw_SUF ; !
+< "+Prt":0          "@U.tense.Prt@"    > TA_CNJVw_SUF ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TA_CNJVw_SUF ; !
+
+LEXICON TA_CNJCw !!= @CODE@ Third mode, conjunctive
+< "+Prs":0          "@U.tense.Prs@"    > TA_CNJCw_SUF ; !
+< "+Prt":0          "@U.tense.Prt@"    > TA_CNJCw_SUF ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TA_CNJCw_SUF ; !
 
 
 LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
@@ -1837,6 +2071,180 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +1Sg+2PlO:%>itakok         # ;
 +3Sg+4SgO:%>ât	   # ;
 
+LEXICON TA_CNJTS_SUF !!= @CODE@ gives conj + obj tag and suf
+
++1Sg+3SgO:%>ak		   # ;
++1Sg+3PlO:%>akik	   # ;
+
++1Pl+3SgO:%>âyâhk	   # ;
++1Pl+3PlO:%>âyâhkik	   # ;
+
++12Pl+3SgO:%>âyahk	   # ;
++12Pl+3PlO:%>âyâhkok   # ;
+
++2Sg+3SgO:%>at		   # ;
++2Sg+3PlO:%>acik	   # ;
++2Pl+3SgO:%>âyêk	   # ;
++2Pl+3PlO:%>âyêkok	   # ;
+
++3Sg+4PlO:%>ât	   # ;
++3Sg+3SgO:%>ât		   # ;
++3Sg+3PlO:%>ât		   # ;
++3Sg+2SgO:%>isk		   # ;
++3Sg+2PlO:%>ikoyek	   # ;
++3Sg+1SgO:%>%^TSit		   # ;
++3Sg+1PlO:%>ikoyâhk	   # ;
++3Sg+12PlO:%>ikoyahk   # ;
++3Pl+4SgO:%>âcik      # ;
++3Pl+4PlO:%>âcik	   # ;
++3Pl+3SgO:%>âcik	   # ;
++3Pl+3PlO:%>âcik	   # ;
++3Pl+2SgO:%>iskik	   # ;
++3Pl+2PlO:%>ikoyêkok   # ;
++3Pl+1SgO:%>%^TSiticik	   # ;
++3Pl+1PlO:%>ikoyâhkik  # ;
++3Pl+12PlO:%>ikoyahkok # ;
+
++2Sg+1SgO:%>%^TSiyan       # ;
++2Sg+1PlO:%>%^TSiyâhk       # ;
++2Pl+1PlO:%>%^TSiyâhk       # ;
++2Pl+1SgO:%>%^TSiyêk       # ;
+
+
++4Sg+4SgO:%>koyit	   # ;
++4Sg+4PlO:%>ikoyit   # ;
++4Sg+3SgO:%>ikot	   # ;
++4Sg+3PlO:%>ikocik	   # ;
++4Sg+5SgO:%>âyit	   # ; ! former 3SgO
+
++4Pl+4SgO:%>koyit	   # ;
++4Pl+4PlO:%>ikocik   # ;
+!+4Pl+3SgO:%>ikot	   # ;
++4Pl+3PlO:%>ikocik	   # ;
+
++1Sg+2SgO:%>itân         # ;
++1Pl+2SgO:%>itâhk         # ; 
++1Pl+2PlO:%>itâhk         # ; 
++1Sg+2PlO:%>itakok         # ;
++3Sg+4SgO:%>ât	   # ;
+
+LEXICON TA_CNJVw_SUF !!= @CODE@ gives conj + obj tag and suf
+
++1Sg+3SgO:%>ak		   # ;
++1Sg+3PlO:%>akik	   # ;
+
++1Pl+3SgO:%>âyâhk	   # ;
++1Pl+3PlO:%>âyâhkik	   # ;
+
++12Pl+3SgO:%>âyahk	   # ;
++12Pl+3PlO:%>âyâhkok   # ;
+
++2Sg+3SgO:%>at		   # ;
++2Sg+3PlO:%>acik	   # ;
++2Pl+3SgO:%>âyêk	   # ;
++2Pl+3PlO:%>âyêkok	   # ;
+
++3Sg+4PlO:%>ât	   # ;
++3Sg+3SgO:%>ât		   # ;
++3Sg+3PlO:%>ât		   # ;
++3Sg+2SgO:%>%^WIsk		   # ;
++3Sg+2PlO:%>%^WIkoyek	   # ;
++3Sg+1SgO:%>%^WIt		   # ;
++3Sg+1PlO:%>%^WIkoyâhk	   # ;
++3Sg+12PlO:%>%^WIkoyahk   # ;
++3Pl+4SgO:%>âcik      # ;
++3Pl+4PlO:%>âcik	   # ;
++3Pl+3SgO:%>âcik	   # ;
++3Pl+3PlO:%>âcik	   # ;
++3Pl+2SgO:%>%^WIskik	   # ;
++3Pl+2PlO:%>%^WIkoyêkok   # ;
++3Pl+1SgO:%>%^TSiticik	   # ;
++3Pl+1PlO:%>%^WIkoyâhkik  # ;
++3Pl+12PlO:%>%^WIkoyahkok # ;
+
++2Sg+1SgO:%>%^WIyan       # ;
++2Sg+1PlO:%>%^WIyâhk       # ;
++2Pl+1PlO:%>%^WIyâhk       # ;
++2Pl+1SgO:%>%^WIyêk       # ;
+
+
++4Sg+4SgO:%>%^WIkoyit	   # ;
++4Sg+4PlO:%>%^WIkoyit   # ;
++4Sg+3SgO:%>%^WIkot	   # ;
++4Sg+3PlO:%>%^WIkocik	   # ;
++4Sg+5SgO:%>âyit	   # ; ! former 3SgO
+
++4Pl+4SgO:%>%^WIkoyit	   # ;
++4Pl+4PlO:%>%^WIkocik   # ;
+!+4Pl+3SgO:%>%^WIkot	   # ;
++4Pl+3PlO:%>%^WIkocik	   # ;
+
++1Sg+2SgO:%>%^WItân         # ;
++1Pl+2SgO:%>%^WItâhk         # ; 
++1Pl+2PlO:%>%^WItâhk         # ; 
++1Sg+2PlO:%>%^WItakok         # ;
++3Sg+4SgO:%>ât	   # ;
+
+
+
+LEXICON TA_CNJCw_SUF !!= @CODE@ gives conj + obj tag and suf
+
++1Sg+3SgO:%>ak		   # ;
++1Sg+3PlO:%>akik	   # ;
+
++1Pl+3SgO:%>âyâhk	   # ;
++1Pl+3PlO:%>âyâhkik	   # ;
+
++12Pl+3SgO:%>âyahk	   # ;
++12Pl+3PlO:%>âyâhkok   # ;
+
++2Sg+3SgO:%>at		   # ;
++2Sg+3PlO:%>acik	   # ;
++2Pl+3SgO:%>âyêk	   # ;
++2Pl+3PlO:%>âyêkok	   # ;
+
++3Sg+4PlO:%>ât	   # ;
++3Sg+3SgO:%>ât		   # ;
++3Sg+3PlO:%>ât		   # ;
++3Sg+2SgO:%>%^IOisk		   # ;
++3Sg+2PlO:%>%^IOikoyek	   # ;
++3Sg+1SgO:%>%^IOit		   # ;
++3Sg+1PlO:%>%^IOikoyâhk	   # ;
++3Sg+12PlO:%>%^IOikoyahk   # ;
++3Pl+4SgO:%>âcik      # ;
++3Pl+4PlO:%>âcik	   # ;
++3Pl+3SgO:%>âcik	   # ;
++3Pl+3PlO:%>âcik	   # ;
++3Pl+2SgO:%>%^IOiskik	   # ;
++3Pl+2PlO:%>%^IOikoyêkok   # ;
++3Pl+1SgO:%>%^TSiticik	   # ;
++3Pl+1PlO:%>%^IOikoyâhkik  # ;
++3Pl+12PlO:%>%^IOikoyahkok # ;
+
++2Sg+1SgO:%>%^IOiyan       # ;
++2Sg+1PlO:%>%^IOiyâhk       # ;
++2Pl+1PlO:%>%^IOiyâhk       # ;
++2Pl+1SgO:%>%^IOiyêk       # ;
+
+
++4Sg+4SgO:%>%^IOikoyit	   # ;
++4Sg+4PlO:%>%^IOikoyit   # ;
++4Sg+3SgO:%>%^IOikot	   # ;
++4Sg+3PlO:%>%^IOikocik	   # ;
++4Sg+5SgO:%>âyit	   # ; ! former 3SgO
+
++4Pl+4SgO:%>%^IOikoyit	   # ;
++4Pl+4PlO:%>%^IOikocik   # ;
+!+4Pl+3SgO:%>%^IOikot	   # ;
++4Pl+3PlO:%>%^IOikocik	   # ;
+
++1Sg+2SgO:%>%^IOitân         # ;
++1Pl+2SgO:%>%^IOitâhk         # ; 
++1Pl+2PlO:%>%^IOitâhk         # ; 
++1Sg+2PlO:%>%^IOitakok         # ;
++3Sg+4SgO:%>ât	   # ;
+
+
 
 LEXICON TA_FUT
 
@@ -1874,6 +2282,75 @@ LEXICON TA_FUT
 
 
 
+LEXICON TAVw_FUT
+
++1Sg+3SgO:%>aki		   # ;
++1Sg+3PlO:%>akwâwi	   # ;
++1Pl+3SgO:%>âyâhki	   # ;
++1Pl+3PlO:%>âyâhkwâwi  # ;
++12Pl+3SgO:%>âyâhko	   # ;
++12Pl+3PlO:%>âyâhkwâwi # ;
+
++2Sg+3SgO:%>aci		   # ;
++2Sg+3PlO:%>atwâwi	   # ;
++2Pl+3SgO:%>âyêko	   # ;
++2Pl+3PlO:%>âyêkwâwi   # ;
+					   
++3Sg+4SgO:%>âyici	   # ;
++3Sg+3SgO:%>âci		   # ;
++3Sg+3PlO:%>%^WIkotwâwi   # ;
++3Sg+2SgO:%>%^WIski	   # ;
++3Sg+2PlO:%>%^WIkoyêko	   # ;
++3Sg+1SgO:%>%^WIci		   # ;
++3Sg+1PlO:%>%^WIkoyâhki   # ;
++3Sg+12PlO:%>%^WIkoyahko  # ;
+					   
++3Pl+3SgO:%>âtwâwi	   # ;
++3Pl+3PlO:%>âtwâwi	   # ;
+!+3Pl+3PlO:%>ikotwâwi   # ; ??
+					   
++4Sg+4PlO:%>%^WIkoyici  # ;
++4Sg+3SgO:%>%^WIkoci	   # ;
++4Sg+3PlO:%>âyici	   # ;
++4Pl+4PlO:%>%^WIkoyici  # ;
++4Pl+3SgO:%>%^WIkoci	   # ;
++4Pl+3PlO:%>âyici	   # ;
+
+LEXICON TACw_FUT
+
++1Sg+3SgO:%>aki		   # ;
++1Sg+3PlO:%>akwâwi	   # ;
++1Pl+3SgO:%>âyâhki	   # ;
++1Pl+3PlO:%>âyâhkwâwi  # ;
++12Pl+3SgO:%>âyâhko	   # ;
++12Pl+3PlO:%>âyâhkwâwi # ;
+
++2Sg+3SgO:%>aci		   # ;
++2Sg+3PlO:%>atwâwi	   # ;
++2Pl+3SgO:%>âyêko	   # ;
++2Pl+3PlO:%>âyêkwâwi   # ;
+					   
++3Sg+4SgO:%>âyici	   # ;
++3Sg+3SgO:%>âci		   # ;
++3Sg+3PlO:%>%^IOikotwâwi   # ;
++3Sg+2SgO:%>%^IOiski	   # ;
++3Sg+2PlO:%>%^IOikoyêko	   # ;
++3Sg+1SgO:%>%^IOici		   # ;
++3Sg+1PlO:%>%^IOikoyâhki   # ;
++3Sg+12PlO:%>%^IOikoyahko  # ;
+					   
++3Pl+3SgO:%>âtwâwi	   # ;
++3Pl+3PlO:%>âtwâwi	   # ;
+!+3Pl+3PlO:%>ikotwâwi   # ; ??
+					   
++4Sg+4PlO:%>%^IOikoyici  # ;
++4Sg+3SgO:%>%^IOikoci	   # ;
++4Sg+3PlO:%>âyici	   # ;
++4Pl+4PlO:%>%^IOikoyici  # ;
++4Pl+3SgO:%>%^IOikoci	   # ;
++4Pl+3PlO:%>âyici	   # ;
+
+
 LEXICON TA_IMP
 @U.perspref.NULL@  2Sg_Imp ;
 @U.perspref.NULL@  2Pl_Imp ;
@@ -1882,6 +2359,34 @@ LEXICON TA_IMP
 !@U.verb.imp2sg@  2Sg_Imp ;
 !@U.verb.imp1pl@  2Pl_Imp ;
 !@U.verb.imp2pl@ 12Pl_Imp ;
+
+LEXICON TATS_IMP
+@U.perspref.NULL@  2SgTS_Imp ;
+@U.perspref.NULL@  2PlTS_Imp ;
+@U.perspref.NULL@ 12PlTS_Imp ;
+
+!@U.verb.imp2sg@  2SgTS_Imp ;
+!@U.verb.imp1pl@  2PlTS_Imp ;
+!@U.verb.imp2pl@ 12PlTS_Imp ;
+
+LEXICON TAVw_IMP
+@U.perspref.NULL@  2SgVw_Imp ;
+@U.perspref.NULL@  2PlVw_Imp ;
+@U.perspref.NULL@   12Pl_Imp ;
+
+!@U.verb.imp2sg@  2SgVw_Imp ;
+!@U.verb.imp1pl@  2PlVw_Imp ;
+!@U.verb.imp2pl@   12Pl_Imp ;
+
+LEXICON TACw_IMP
+@U.perspref.NULL@  2SgCw_Imp ;
+@U.perspref.NULL@  2PlCw_Imp ;
+@U.perspref.NULL@ 12PlCw_Imp ;
+
+!@U.verb.imp2sg@  2SgCw_Imp ;
+!@U.verb.imp1pl@  2PlCw_Imp ;
+!@U.verb.imp2pl@ 12PlCw_Imp ;
+
 
 LEXICON 2Sg_Imp
 +Imm+2Sg+1SgO:%>in # ;
@@ -1903,6 +2408,81 @@ LEXICON 2Pl_Imp
 +Del+2Pl+1SgO:%>îhkêk # ;
 
 LEXICON 12Pl_Imp
++Imm+12Pl+3SgO:%>âtân # ;
++Imm+12Pl+3PlO:%>âtânik # ;
++Del+12Pl+3SgO:%>âhkahk # ;
++Del+12Pl+3PlO:%>âhkahkok # ;
+
+LEXICON 2SgTS_Imp
++Imm+2Sg+1SgO:%>%^TSin # ;
++Imm+2Sg+1PlO:%>%^TSinân # ;
++Imm+2Sg+3SgO: # ;
++Imm+2Sg+3PlO:%>%^TSik # ;
++Del+2Sg+3SgO:%>%^TSâhkan # ;
++Del+2Sg+3PlO:%>%^TSâhkanik # ;
++Del+2Sg+1SgO:%>%^TSîhkan # ;
++Del+2Sg+2PlO:%>%^TSîhkâhk # ;
++Del+2Sg+1PlO:%>%^TSîhkâhk # ;
+
+LEXICON 2PlTS_Imp
++Imm+2Pl+1SgO:%>%^TSik # ;
++Imm+2Pl+3SgO:%>ihk # ;
++Imm+2Pl+3PlO:%>ihkok # ;
++Del+2Pl+3SgO:%>âhkêk # ;
++Del+2Pl+3PlO:%>âhkêkok # ;
++Del+2Pl+1SgO:%>%^TSîhkêk # ;
+
+LEXICON 12PlTS_Imp
++Imm+12Pl+3SgO:%>âtân # ;
++Imm+12Pl+3PlO:%>âtânik # ;
++Del+12Pl+3SgO:%>âhkahk # ;
++Del+12Pl+3PlO:%>âhkahkok # ;
+
+LEXICON 2SgVw_Imp
++Imm+2Sg+1SgO:%>%^WIn # ;
++Imm+2Sg+1PlO:%>%^WInân # ;
++Imm+2Sg+3SgO: # ;
++Imm+2Sg+3PlO:%>%^WIk # ;
++Del+2Sg+3SgO:%>âhkan # ;
++Del+2Sg+3PlO:%>âhkanik # ;
++Del+2Sg+1SgO:%>%^WIhkan # ;
++Del+2Sg+2PlO:%>%^WIhkâhk # ;
++Del+2Sg+1PlO:%>%^WIhkâhk # ;
+
+LEXICON 2PlVw_Imp
++Imm+2Pl+1SgO:%>%^WIk # ;
++Imm+2Pl+3SgO:%>%^WIhk # ;
++Imm+2Pl+3PlO:%>%^WIhkok # ;
++Del+2Pl+3SgO:%>âhkêk # ;
++Del+2Pl+3PlO:%>âhkêkok # ;
++Del+2Pl+1SgO:%>%^WIhkêk # ;
+
+!! LEXICON 12PlVw_Imp
+!! +Imm+12Pl+3SgO:%>âtân # ;
+!! +Imm+12Pl+3PlO:%>âtânik # ;
+!! +Del+12Pl+3SgO:%>âhkahk # ;
+!! +Del+12Pl+3PlO:%>âhkahkok # ;
+
+LEXICON 2SgCw_Imp
++Imm+2Sg+1SgO:%>%^IOin # ;
++Imm+2Sg+1PlO:%>%^IOinân # ;
++Imm+2Sg+3SgO: # ;
++Imm+2Sg+3PlO:%>%^IOik # ;
++Del+2Sg+3SgO:%>âhkan # ;
++Del+2Sg+3PlO:%>âhkanik # ;
++Del+2Sg+1SgO:%>%^IOihkan # ;
++Del+2Sg+2PlO:%>%^IOihkâhk # ;
++Del+2Sg+1PlO:%>%^IOihkâhk # ;
+
+LEXICON 2PlCw_Imp
++Imm+2Pl+1SgO:%>%^IOik # ;
++Imm+2Pl+3SgO:%>%^IOihk # ;
++Imm+2Pl+3PlO:%>%^IOihkok # ;
++Del+2Pl+3SgO:%>âhkêk # ;
++Del+2Pl+3PlO:%>âhkêkok # ;
++Del+2Pl+1SgO:%>%^IOihkêk # ;
+
+LEXICON 12PlCw_Imp
 +Imm+12Pl+3SgO:%>âtân # ;
 +Imm+12Pl+3PlO:%>âtânik # ;
 +Del+12Pl+3SgO:%>âhkahk # ;
