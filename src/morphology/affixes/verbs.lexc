@@ -1902,10 +1902,10 @@ LEXICON VTAVw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subje
 +2Pl+3SgO:%>âwâw	  # ;
 +2Pl+3PlO:%>âwâwak	  # ;
 +3Pl+2PlO:%>%^WIkowâwak  # ;
-+2Sg+1SgO:%>%^WIn         # ;
-+2Sg+1PlO:%>%^WInân       # ;
-+2Pl+1PlO:%>%^WInân       # ;
-+2Pl+1SgO:%>%^WInâwâw     # ;
++2Sg+1SgO:%>in         # ;
++2Sg+1PlO:%>inân       # ;
++2Pl+1PlO:%>inân       # ;
++2Pl+1SgO:%>inâwâw     # ;
 +1Sg+2SgO:%>%^WItin         # ;
 +1Pl+2SgO:%>%^WItinân         # ; !OBS
 +1Sg+2PlO:%>%^WItinânâw         # ;
@@ -2035,7 +2035,7 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +3Sg+3PlO:%>ât		   # ;
 +3Sg+2SgO:%>isk		   # ;
 +3Sg+2PlO:%>ikoyek	   # ;
-+3Sg+1SgO:%>%^TSit		   # ;
++3Sg+1SgO:%>it		   # ;
 +3Sg+1PlO:%>ikoyâhk	   # ;
 +3Sg+12PlO:%>ikoyahk   # ;
 +3Pl+4SgO:%>âcik      # ;
@@ -2044,14 +2044,14 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +3Pl+3PlO:%>âcik	   # ;
 +3Pl+2SgO:%>iskik	   # ;
 +3Pl+2PlO:%>ikoyêkok   # ;
-+3Pl+1SgO:%>%^TSiticik	   # ;
++3Pl+1SgO:%>iticik	   # ;
 +3Pl+1PlO:%>ikoyâhkik  # ;
 +3Pl+12PlO:%>ikoyahkok # ;
 
-+2Sg+1SgO:%>%^TSiyan       # ;
-+2Sg+1PlO:%>%^TSiyâhk       # ;
-+2Pl+1PlO:%>%^TSiyâhk       # ;
-+2Pl+1SgO:%>%^TSiyêk       # ;
++2Sg+1SgO:%>iyan       # ;
++2Sg+1PlO:%>iyâhk       # ;
++2Pl+1PlO:%>iyâhk       # ;
++2Pl+1SgO:%>iyêk       # ;
 
 
 +4Sg+4SgO:%>koyit	   # ;
@@ -2149,7 +2149,7 @@ LEXICON TA_CNJVw_SUF !!= @CODE@ gives conj + obj tag and suf
 +3Sg+3PlO:%>ât		   # ;
 +3Sg+2SgO:%>%^WIsk		   # ;
 +3Sg+2PlO:%>%^WIkoyek	   # ;
-+3Sg+1SgO:%>%^WIt		   # ;
++3Sg+1SgO:%>it		   # ;
 +3Sg+1PlO:%>%^WIkoyâhk	   # ;
 +3Sg+12PlO:%>%^WIkoyahk   # ;
 +3Pl+4SgO:%>âcik      # ;
@@ -2158,14 +2158,14 @@ LEXICON TA_CNJVw_SUF !!= @CODE@ gives conj + obj tag and suf
 +3Pl+3PlO:%>âcik	   # ;
 +3Pl+2SgO:%>%^WIskik	   # ;
 +3Pl+2PlO:%>%^WIkoyêkok   # ;
-+3Pl+1SgO:%>%^TSiticik	   # ;
++3Pl+1SgO:%>iticik	   # ;
 +3Pl+1PlO:%>%^WIkoyâhkik  # ;
 +3Pl+12PlO:%>%^WIkoyahkok # ;
 
-+2Sg+1SgO:%>%^WIyan       # ;
-+2Sg+1PlO:%>%^WIyâhk       # ;
-+2Pl+1PlO:%>%^WIyâhk       # ;
-+2Pl+1SgO:%>%^WIyêk       # ;
++2Sg+1SgO:%>iyan       # ;
++2Sg+1PlO:%>iyâhk       # ;
++2Pl+1PlO:%>iyâhk       # ;
++2Pl+1SgO:%>iyêk       # ;
 
 
 +4Sg+4SgO:%>%^WIkoyit	   # ;
