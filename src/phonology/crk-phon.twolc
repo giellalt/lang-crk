@@ -23,6 +23,7 @@ Alphabet
  %^EA:0    !!= * @CODE@ ê to â in 1, 2 person of ê verbs
  %^TS:0    !!= * @CODE@  t to s in VTA-4 verbs before some i-init suf
  %^NII:0   !!= * @CODE@  n to h or 0 in VII verbs when before k-init suf
+ %^WI     !!= * @CODE@  w to 0 in vta-2 verbs when before k-init suf
  %^IO:0   !!= * @CODE@  VTACw w + i becom o
  ;
 
@@ -176,11 +177,15 @@ t:s <=> _ %>:0 %^TS:0 i ;
 !! __@RULENAME@__
 n:h <=> a _ %>:0 %^NII:0 k ;
 
+"w:0 before i-init suf in VTA-Vw"
+!! __@RULENAME@__
+w:0 <=>  _ %>:0 %^WI:0 t ;
+
 "n:0 before k suf in VII"
 !! __@RULENAME@__
 n:0 <=> [ o | i ] _ %>:0 %^NII:0 k ;
 
-"VTACw i to o when after %^IO"
+"i:o i to o when after %^IO in VTACw"
 !! __@RULENAME@__
 i:o <=> %^IO:0 _ k ;
 
