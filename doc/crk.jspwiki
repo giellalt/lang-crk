@@ -143,6 +143,9 @@ morphophonological structure
  * %^EA       ê to â in 1, 2 person of ê-stems
  * %^TS       t3 to s in VTA-4 verbs before some i-init suf
  * %^NII      n to h or 0 in VII verbs when before k-init suf
+ * %^WI       w to 0 in vta-2 verbs when before i-init suf
+ * %^IO       VTACw w + i becom o
+
 
 !!Usage tags
 
@@ -236,8 +239,10 @@ Prefixes with a certain phonological content:
  *  %^EGLOT:0  Conjunctive êh trigger
  *  %^POS:0    Possessive alternation trigger
  *  %^EA:0     ê to â in 1, 2 person of ê verbs
- *  %^TS:0      t3 to s in VTA-4 verbs before some i-init suf
+ *  %^TS:0      t to s in VTA-4 verbs before some i-init suf
  *  %^NII:0     n to h or 0 in VII verbs when before k-init suf
+ *  %^WI:0       w to 0 in vta-2 verbs when before k-init suf
+ *  %^IO:0     VTACw w + i becom o
 
 
 
@@ -311,9 +316,18 @@ __a to ee rule in first and second person__
 __a to ee rule in first and second person__
 
 
+
 __n:h before k suf in VII__
 
+__i:0 in VTA-Vw__
+
+__w:0 in VTA-Vw__
+
 __n:0 before k suf in VII__
+
+__i:o i to o when after %^IO in VTACw__
+
+__VTACw w to nothing when before %^IO__
 
                           !!!Plains Cree noun stems                           
 
@@ -853,7 +867,11 @@ AICONJ_w
 
 
 
+LEXICON TACONJ_3 
+TACONJ_2 ;
 
+LEXICON TACONJ_4 
+TACONJ_2 ;
 
 
 
@@ -1008,7 +1026,14 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
  LEXICON TACONJ_1  
 
- * LEXICON TACONJ_2   splits in 4. The -aw shall be removed from some forms.
+ * LEXICON TACONJ_2   Vw + i suf deletes w and i.
+
+ * LEXICON TACONJ_3   Cw where w + i become o
+
+ * LEXICON TACONJ_4   TS
+
+
+
 
 
 
@@ -1016,7 +1041,20 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
  LEXICON TA_IND  gives prs
 
+ LEXICON TA_INDTS  gives prs
+
+ LEXICON TA_INDVw  gives prs
+
+ LEXICON TA_INDCw  gives prs
+
  LEXICON TA_IND_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
+
+ LEXICON TA_INDTS_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
+
+ LEXICON TA_INDVw_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
+
+ LEXICON TA_INDCw_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
+
 
 
  LEXICON VTA_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
@@ -1028,9 +1066,39 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+ LEXICON VTATS_KI_O 	     gives the objects suffixes matching 2Sg subject
+
+
+
+
+
+ LEXICON VTAVw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
+
+
+ LEXICON VTAVw_KI_O 	     gives the objects suffixes matching 2Sg subject
+
+
+
+
+
+ LEXICON VTACw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
+
+
+ LEXICON VTACw_KI_O 	     gives the objects suffixes matching 2Sg subject
+
+
+
+
+
 
 
  LEXICON TA_CNJ  Third mode, conjunctive
+
+ LEXICON TA_CNJTS  Third mode, conjunctive
+
+ LEXICON TA_CNJVw  Third mode, conjunctive
+
+ LEXICON TA_CNJCw  Third mode, conjunctive
 
 
  LEXICON TA_CNJ_SUF  gives conj + obj tag and suf
@@ -1045,6 +1113,7 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+ LEXICON TA_CNJTS_SUF  gives conj + obj tag and suf
 
 
 
@@ -1055,6 +1124,78 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+ LEXICON TA_CNJVw_SUF  gives conj + obj tag and suf
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TA_CNJCw_SUF  gives conj + obj tag and suf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LEXICON 12PlVw_Imp
++Imm+12Pl+3SgO:%>âtân # ;
++Imm+12Pl+3PlO:%>âtânik # ;
++Del+12Pl+3SgO:%>âhkahk # ;
++Del+12Pl+3PlO:%>âhkahkok # ;
 
 
 

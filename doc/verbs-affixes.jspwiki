@@ -66,7 +66,11 @@ AICONJ_w
 
 
 
+LEXICON TACONJ_3 
+TACONJ_2 ;
 
+LEXICON TACONJ_4 
+TACONJ_2 ;
 
 
 
@@ -221,7 +225,14 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
  LEXICON TACONJ_1  
 
- * LEXICON TACONJ_2   splits in 4. The -aw shall be removed from some forms.
+ * LEXICON TACONJ_2   Vw + i suf deletes w and i.
+
+ * LEXICON TACONJ_3   Cw where w + i become o
+
+ * LEXICON TACONJ_4   TS
+
+
+
 
 
 
@@ -229,7 +240,20 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
  LEXICON TA_IND  gives prs
 
+ LEXICON TA_INDTS  gives prs
+
+ LEXICON TA_INDVw  gives prs
+
+ LEXICON TA_INDCw  gives prs
+
  LEXICON TA_IND_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
+
+ LEXICON TA_INDTS_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
+
+ LEXICON TA_INDVw_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
+
+ LEXICON TA_INDCw_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
+
 
 
  LEXICON VTA_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
@@ -241,9 +265,39 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+ LEXICON VTATS_KI_O 	     gives the objects suffixes matching 2Sg subject
+
+
+
+
+
+ LEXICON VTAVw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
+
+
+ LEXICON VTAVw_KI_O 	     gives the objects suffixes matching 2Sg subject
+
+
+
+
+
+ LEXICON VTACw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
+
+
+ LEXICON VTACw_KI_O 	     gives the objects suffixes matching 2Sg subject
+
+
+
+
+
 
 
  LEXICON TA_CNJ  Third mode, conjunctive
+
+ LEXICON TA_CNJTS  Third mode, conjunctive
+
+ LEXICON TA_CNJVw  Third mode, conjunctive
+
+ LEXICON TA_CNJCw  Third mode, conjunctive
 
 
  LEXICON TA_CNJ_SUF  gives conj + obj tag and suf
@@ -258,6 +312,7 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+ LEXICON TA_CNJTS_SUF  gives conj + obj tag and suf
 
 
 
@@ -268,6 +323,78 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+ LEXICON TA_CNJVw_SUF  gives conj + obj tag and suf
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TA_CNJCw_SUF  gives conj + obj tag and suf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LEXICON 12PlVw_Imp
++Imm+12Pl+3SgO:%>âtân # ;
++Imm+12Pl+3PlO:%>âtânik # ;
++Del+12Pl+3SgO:%>âhkahk # ;
++Del+12Pl+3PlO:%>âhkahkok # ;
 
 
 
