@@ -142,8 +142,8 @@ esa ANimDECL ; !x= * @CODE@ Wolv: NA4 +im
 ! wîkimâkan ANimDECL "spouse" ; !both NA and NDA
 ! wâpos:wâposw ANimDECL "rabbit" ; !yaml
 ! mistik:mistikw AN_DECL "stick" ; !Wolfart freqv list: mistikohk
-! mahkahk:mahkahkw AN_DECL "tub/barrel" ; !Wolfart freqv list: mahkahkohk
-! mostos:mostosw AN_DECL "cow" ;	!GG p 16: pl is mostoswak, are there other nouns of this kind?
+! mahkahk:mahkahkw AN_DECL-ATIM "tub/barrel" ; !Wolfart freqv list: mahkahkohk
+! mostos:mostosw AN_DECL-ATIM "cow" ;	!GG p 16: pl is mostoswak, are there other nouns of this kind?
 ! tehtapiwin IN_DECL "chair" ; ! GGI:26 !dim cehcapiwinisis GGI:46
 ! atâwewikamik INimDECL "store" ; ! GGI:26, GGII:25  !Wolfart freqv list: atâwêwikamikohk
 ! atâwewikamik:atâwew'kamik INimDECL "store" ; ! GGI:26
@@ -457,7 +457,7 @@ astotin IN_DECL "hat, cap, headgear" ; ! singular poss: (-im)
 atamiskay IN_DECL "gristle" ;
 atamiskâkêwin IN_DECL "greeting by handshake or kiss" ;
 atamiskâtowin IN_DECL "greetings" ;
-atâhk:atâhkw AN_DECL "star" ;
+atâhk:atâhkw AN_DECL-ATIM "star" ;
 atâhkakohp AN_DECL "Starblanket, prominent Cree chief, signatory to Treaty 6 ;; Ahtahkakoop First Nation, Cree reserve" ;
 atâmayiwinis AN_DIM "underwear" ;
 atâmâkan AN_DECL "buyer of furs; salesperson" ;
@@ -473,7 +473,7 @@ atâwêwikamik:atâwêwikamikw IN_DECL "store, trading-post" ;
 atâwêwikamikowiyiniw AN_DECL "storekeeper" ;
 atâwêwin IN_DECL "purchase; buying; [plural:] groceries, supplies" ;
 atâwêwiyiniw AN_DECL "storekeeper" ;
-atihk:atihkw AN_DECL "caribou; goat" ;
+atihk:atihkw AN_DECL-ATIM "caribou; goat" ;
 atihkamêk:atihkamêkw AN_DECL "whitefish" ;
 atihkowayân AN_DECL "caribou hide" ;
 atihkowiyâs IN_DECL "caribou meat; venison" ;
@@ -532,7 +532,7 @@ ayamihcikêwin IN_DECL "reading ;; [Christian:] bible verse" ;
 ayamihêmina IN_DECL "rosary beads, rosaries, prayer beads" ; ! plural 
 ayamihêstamâkêwin IN_DECL "prayer offered by a group" ;
 ayamihêwasinahikan IN_DECL "prayer book" ;
-ayamihêwâhtik:ayamihêwâhtikw AN_DECL "cross; crucifix (of wood)" ;
+ayamihêwâhtik:ayamihêwâhtikw AN_DECL-ATIM "cross; crucifix (of wood)" ;
 ayamihêwâtisiw AN_DECL "Christian" ; ! singular conversion of VAI-v to use as noun
 ayamihêwi-kîsikâw IN_DECL "Sunday; literally: prayer-day" ; ! singular conversion of VII-v to use as a noun
 ayamihêwi-nikamowin IN_DECL "hymn" ;
@@ -1141,7 +1141,7 @@ kimiwanâpoy IN_DECL "rain water" ;
 kimiwanêyâpiy IN_DECL "rainbow" ;
 kimotisk AN_DECL "thief" ; ! singular clipped from kimotiski-, or alternatively kimoti- + /-sk/ nominal derivative
 kimotiwin IN_DECL "theft; thing stolen" ;
-kinêpik:kinêpikw AN_DECL "snake" ;
+kinêpik:kinêpikw AN_DECL-ATIM "snake" ;
 kinêpikos AN_DIM "little snake" ;
 kinêpikosis AN_DIM "tiny snake" ;
 kinêpikowiyiniw AN_DECL "Snake Indian, Shoshoni Indian" ;
@@ -1378,7 +1378,7 @@ kohkôsis AN_DIM "piglet" ;
 kohkôsiwasakay AN_DECL "pigskin" ;
 kohkôsiwikamik:kohkôsiwikamikw IN_DECL "pig barn; pig pen" ;
 kohkôsiwiyâs IN_DECL "pork" ;
-kohkôsiwiyin:kohkôsiwiyinw IN_DECL "bacon" ; ! singular, mass noun sometimes NA-3
+kohkôsiwiyin:kohkôsiwiyinw AN_DECL-ATIM "bacon" ; ! singular, mass noun sometimes NA-3
 kohkôsiyâkan IN_DECL "pig trough" ;
 kohkôsopwâm IN_DECL "ham" ; ! singular count noun
 kohtaskwahikan IN_DECL "stovepipe" ;
@@ -1397,7 +1397,7 @@ kostâkan AN_DECL "enemy" ;
 kotahâskwâcikan IN_DECL "target, bull's-eye" ;
 kotahâskwêwin IN_DECL "target practice" ;
 kotawân AN_DECL "campfire, bonfire; fireplace" ; ! singular also NI-1
-kotawânâpisk:kotawânâpiskw IN_DECL "stove, oven" ; ! singular also NA-3
+kotawânâpisk:kotawânâpiskw AN_DECL-ATIM "stove, oven" ; ! singular also NA-3
 kotâwîwi-pîsim:kotâwîwi-pîsimw AN_DECL "eclipse; literally: sun sinking under ground" ;
 kotikonikan IN_DECL "breech-loading gun" ;
 kotiskâwêwatim:kotiskâwêwatimw AN_DECL-ATIM "race-horse" ;
@@ -1525,8 +1525,8 @@ masânâhtik:masânâhtikw AN_DECL "nettle stalk" ;
 masinahamâtowin IN_DECL "correspondence; debt" ;
 masinahikan IN_DECL "book; letter; written document, report, paper; magazine; will" ;
 masinahikanâhcikos AN_DIM "pencil" ; ! singular, diminutive also NI-1
-masinahikanâhtik:masinahikanâhtikw AN_DECL "pencil, pen" ; ! singular also NI-3
-masinahikanâpisk:masinahikanâpiskw AN_DECL "slate ;; pen" ;
+masinahikanâhtik:masinahikanâhtikw AN_DECL-ATIM "pencil, pen" ; ! singular also NI-3
+masinahikanâpisk:masinahikanâpiskw AN_DECL-ATIM "slate ;; pen" ;
 masinahikanâpiskos AN_DIM "pen" ;
 masinahikanâpoy IN_DECL "ink" ;
 masinahikanêkin:masinahikanêkinw IN_DECL "paper; wrapping paper; tar paper roofing" ; ! singular sometimes NI-1
@@ -1843,7 +1843,7 @@ misiwanâtisiwin IN_DECL "decaying, spoiling" ;
 misiwê-ayiwinisa IN_DECL "coveralls, skidoo suit" ; ! plural 
 misiwêpayihcikan IN_DECL "pill, medication" ;
 misiwêpayihcikanis IN_DIM "pill" ;
-misiwêtâpânâsk:misiwêtâpânâskw AN_DECL "van" ;
+misiwêtâpânâsk:misiwêtâpânâskw AN_DECL-ATIM "van" ;
 misiwêtâs AN_DECL "overalls" ;
 misiwêyêkin:misiwêyêkinw IN_DECL "full piece of cloth" ;
 misiyâpiskâw IN_DECL "rust" ; ! singular conversion of VII-v misiyâpiskâ-
@@ -2155,7 +2155,7 @@ nanâtawihowin IN_DECL "remedy; curing ceremony; healing" ;
 napakamêkos AN_DIM "gold eye (fish); literally: little flat fish" ;
 napakaskisin IN_DECL "flat moccasin, flat shoe" ;
 napakâhtik:napakâhtikw IN_DECL "flat board, plank" ;
-napakâhtik:napakâhtikw AN_DECL "sled, toboggan" ;
+napakâhtik:napakâhtikw AN_DECL-ATIM "sled, toboggan" ;
 napakâsiht AN_DECL "balsam pine; cedar" ;
 napakâsihtak:napakâsihtakw IN_DECL "cedar plank" ;
 napakâsihtak:napakâsihtakw AN_DECL "balsam pine, silver pine" ;
@@ -2720,7 +2720,7 @@ oskâhtako-pihêw AN_DECL "spruce partridge" ;
 oskâhtikosiskâw IN_DECL "land full of young trees, jackpines" ;
 oskânak:oskânakw AN_DECL "bitch, female dog" ;
 oskâpêwis AN_DIM "elder's helper, helper at ceremonies" ; ! singular, diminutive note apparent uncharacteristic lack of contraction across the stem final glide /w/
-oskâtâsk:oskâtâskw AN_DECL "carrot" ;
+oskâtâsk:oskâtâskw AN_DECL-ATIM "carrot" ;
 oski-ayisiyiniw AN_DECL "young person" ;
 oski-iskwêw ANimDECLnaahk "young woman" ;
 oski-iyinîs AN_DIM "young person, young Indian person" ;
@@ -3386,7 +3386,7 @@ sêsêsiw AN_DECL "snipe; snow snipe; long legged duck; yellow legs, plover; wat
 sêsêskinâkosiwin IN_DECL "frightful appearance" ; ! singular, reduplicated 
 sêsêwiyâkan AN_DECL "bell" ;
 sêskicês IN_DECL "roach, men's pow-wow head regalia" ;
-sêstak:sêstakw AN_DECL "yarn, thread" ;
+sêstak:sêstakw AN_DECL-ATIM "yarn, thread" ;
 sêwêpicikan IN_DECL "phone, telephone" ;
 sêwêyâkan AN_DECL "bell" ;
 sihkihp ANimDECLnaahk "water hen, hell-diver, diver duck, coot" ;
@@ -3706,7 +3706,7 @@ tôstôkan IN_DECL "floating log" ;
 tôtamowin IN_DECL "way of doing (so)" ;
 tôtâtowin IN_DECL "mutual treatment (so)" ;
 twâhipân IN_DECL "water hole in ice" ;
-wacask:wacaskw AN_DECL "muskrat" ;
+wacask:wacaskw AN_DECL-ATIM "muskrat" ;
 wacasko-wanihikan IN_DECL "muskrat trap" ;
 wacasko-wâti INimDECL "muskrat hole" ; ! singular; plural: wacasko-wâta  NI-4
 wacasko-wîsti INimDECL "muskrat house" ; ! singular; plural: wacasko-wîsta  NI-4
