@@ -263,7 +263,7 @@ akwâkopiy IN_DECL "green, slimy water" ;
 akwâkopîwi-sâkahikan IN_DECL "Green Lake, SK" ;
 akwâminakasiy AN_DECL "thorn, thorn-bush" ;
 akwâwân IN_DECL "drying rack" ;
-amisk:amiskw ANimDECLnaahk "beaver" ;
+amisk:amiskw ANimDECL "beaver" ;
 amisko-kipahikan IN_DECL "beaver dam" ;
 amisko-sâkahikan IN_DECL "Amisk Lake, SK; literally: beaver lake" ;
 amisko-sîpiy IN_DECL "beaver river" ;
@@ -1677,7 +1677,7 @@ mâyacihkos AN_DIM "lamb, small sheep" ;
 mâyacihkwayân AN_DECL "sheepskin" ;
 mâyacihkwayânasâkay IN_DECL "sheepskin coat" ;
 mâyamêk:mâyamêkw AN_DECL "catfish" ;
-mâyatihk:mâyatihkw AN_DECL "sheep" ;
+mâyatihk:mâyatihkw AN_DECL-ATIM "sheep" ;
 mâyatihkokamik:mâyatihkokamikw IN_DECL "sheep barn" ;
 mâyatihkopîway IN_DECL "sheep's fleece; wool" ;
 mâyatihkowiyâs IN_DECL "mutton" ;
@@ -2044,7 +2044,7 @@ moscosis AN_DIM "calf" ;
 mosêskatêwin IN_DECL "nudity" ;
 mostakocîs IN_DIM "automobile" ;
 mostâhtakâw IN_DECL "bare ground" ;
-mostos:mostosw AN_DECL "cow; buffalo; [plural:] cattle" ; ! singular NA-1 for some speakers
+mostos:mostosw AN_DECL-ATIM "cow; buffalo; [plural:] cattle" ; ! singular NA-1 for some speakers
 mostoso-kwâskohtisîs AN_DIM "a certain grasshopper" ;
 mostosokamik:mostosokamikw IN_DECL "cow barn" ;
 mostososimowin IN_DECL "Buffalo Society dance" ;
@@ -3211,7 +3211,7 @@ pîsâpikwaniy IN_DECL "small flower" ;
 pîscêwaciwasôs AN_DECL "meadowlark" ; ! Independent, 3s chosen as a sound-alike word for the call of the meadowlark
 pîsi-kiscikânis IN_DIM "vegetable; seed" ;
 pîsi-kiscikânisi-mêskanâs IN_DIM "garden row" ;
-pîsim:pîsimw AN_DECL "sun; moon; month" ;
+pîsim:pîsimw AN_DECL-ATIM "sun; moon; month" ;
 pîsimohkân AN_DECL "clock, watch" ;
 pîsimohkânêyâpiy IN_DECL "watch chain" ;
 pîsimohkânis AN_DIM "watch" ;
@@ -3400,7 +3400,7 @@ sihkosiwayâninêtâs AN_DECL "weaselskin breeches" ;
 sihkowin IN_DECL "spittle, saliva" ;
 sihta AN_DECL "spruce, evergreen" ;
 sihtapihkwan AN_DECL "button on fir tree branch; pine cone" ;
-sikâk:sikâkw ANimDECLnaahk "skunk" ;
+sikâk:sikâkw ANimDECL "skunk" ;
 sikâkos AN_DIM "small, young skunk" ;
 sikihkwâmisk AN_DECL "bed-wetter" ; ! singular, habitual alterantively: clipping from VAI-v sikihkwâmiski- - [i]
 sikiwin IN_DECL "urine" ;
@@ -3815,7 +3815,7 @@ wâpanêwask:wâpanêwaskw IN_DECL "yarrow, herb known as yarrow" ;
 wâpańôminak AN_DECL "kernels of white rice" ; ! plural plural generally
 wâpasâkay IN_DECL "white dress; white coat" ;
 wâpasiskiy IN_DECL "white mud" ;
-wâpask:wâpaskw AN_DECL "white bear; polar bear" ;
+wâpask:wâpaskw AN_DECL-ATIM "white bear; polar bear" ;
 wâpaskominânâhtik:wâpaskominânâhtikw IN_DECL "tree with whitish leaves" ;
 wâpastim:wâpastimw AN_DECL "white horse; white dog" ;
 wâpatihk:wâpatihkw AN_DECL "goat" ;
