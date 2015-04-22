@@ -16,6 +16,7 @@ Alphabet
            ! * do we want to differentiate between prefix boundaries %<
            !   and suffix boundaries %> ? And the same for derivation boundaries
            !   « and »?
+ %^w:0     !!= * @CODE@ NA -wak PL trigger
  %^LOC:0   !!= * @CODE@ Locative suffix alternation trigger
  %^DIM:0   !!= * @CODE@ Diminutive alternation trigger
  %^EGLOT:0 !!= * @CODE@ Conjunctive êh trigger
@@ -76,6 +77,9 @@ t2:t  <=> _ %>:0 Vow ;
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
 t:c <=>  _ :*  %>:0 Dim .#. ; ! cehcapiwinisis
 
+"w:0 in AN_DECL-ATIM" 
+!! __@RULENAME@__ 
+w:0 <=>  _ %>:0 %^w:0 ; 
 
 
 
@@ -97,13 +101,13 @@ Vx:0 <=> Cns _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i: ] ;
 
 
 
-"w:0 alternations" 
-!! __@RULENAME@__  in -Cw stems
-w:0 <=> \Pos Cns _ %>:0 ( %^POS:0 ) ( %>:0 )  i:  ; !  askihkw:askihkos nitihkom
-        \Pos Cns _ ( %>:0 ) ( %^POS:0 )  .#. ;
-        \Pos  [ o: | â: | a: ] _ %>:0 ( %^POS:0 )  i: [ s: | m: | n: | w: | y: | %^LOC:0 ] ; !cahcahkâyow , okimâw, ôtênaw
-        \Pos  [ ê: | â: ] _ %>:0 ( %^POS:0 )  i: [ s: | m: ] ( %>:0 ) [ %^DIM:0 | %^POS:0 ]  ; !iskwêw, okimâw 
-        \Pos  Vow _ %>:0 i: n â %^LOC:0 ; ! 
+! "w:0 alternations" 
+! !! __@RULENAME@__  in -Cw stems
+! w:0 <=> \Pos Cns _ %>:0 ( %^POS:0 ) ( %>:0 )  i:  ; !  askihkw:askihkos nitihkom
+!         \Pos Cns _ ( %>:0 ) ( %^POS:0 )  .#. ;
+!         \Pos  [ o: | â: | a: ] _ %>:0 ( %^POS:0 )  i: [ s: | m: | n: | w: | y: | %^LOC:0 ] ; !cahcahkâyow , okimâw, ôtênaw
+!         \Pos  [ ê: | â: ] _ %>:0 ( %^POS:0 )  i: [ s: | m: ] ( %>:0 ) [ %^DIM:0 | %^POS:0 ]  ; !iskwêw, okimâw 
+!         \Pos  Vow _ %>:0 i: n â %^LOC:0 ; ! 
 
 
 
@@ -177,9 +181,13 @@ t:s <=> _ %>:0 %^TS:0 i ;
 !! __@RULENAME@__
 n:h <=> a _ %>:0 %^NII:0 k ;
 
-"i:0 in VTA-Vw"
+"i:0 before t in VTA-Vw"
 !! __@RULENAME@__
-i:0 <=> %^WI:0 _ [ k | t ] ;
+i:0 <=> %>:0 %^WI:0 _ t ;
+
+"i:0 before k in VTA-Vw"
+!! __@RULENAME@__
+i:0 <=> %>:0 %^WI:0 _ k ;
 
 "w:0 in VTA-Vw"
 !! __@RULENAME@__
@@ -195,4 +203,5 @@ i:o <=> %^IO:0 _ k ;
 
 "VTACw w to nothing when before %^IO"
 !! __@RULENAME@__
-w:0 <=> _ %>:0 %^IO:0 i:o ;
+w:0 <=> _ %>:0 %^IO:0 i: ;
+
