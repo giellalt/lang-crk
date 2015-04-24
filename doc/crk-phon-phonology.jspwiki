@@ -6,6 +6,7 @@
  *  w2:w       for keeping the final -w in mow
  *  %>:0       suffix boundary
  *  %<:0       prefix boundary
+ *  %^w:0      NA -wak PL trigger
  *  %^LOC:0    Locative suffix alternation trigger
  *  %^DIM:0    Diminutive alternation trigger
  *  %^EGLOT:0  Conjunctive êh trigger
@@ -38,6 +39,7 @@ __t2:t between prefix and vowel__ , joiner for nouns with initial vowel.
 
 __t:c in diminutives __ Okimasis 2004: 13, Rule 2.
 
+__w:0 in AN_DECL-ATIM __ 
 
 
 
@@ -51,7 +53,7 @@ __Vowel final stems: vowel deletion when suffix has initial a or i __ , when the
 
 
 
-__w:0 alternations __  in -Cw stems
+__Vowel final stems: vowel deletion when suffix has initial a or i __  in -Cw stems
 
 
 
@@ -91,7 +93,9 @@ __a to ee rule in first and second person__
 
 __n:h before k suf in VII__
 
-__i:0 in VTA-Vw__
+__i:0 before t in VTA-Vw__
+
+__i:0 before k in VTA-Vw__
 
 __w:0 in VTA-Vw__
 
@@ -100,3 +104,4 @@ __n:0 before k suf in VII__
 __i:o i to o when after %^IO in VTACw__
 
 __VTACw w to nothing when before %^IO__
+
