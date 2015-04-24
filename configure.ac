@@ -78,7 +78,7 @@ AM_CONDITIONAL([HAVE_COUNTRIES], [test "x$COUNTRIES" != "x"])
 # empty. If there are alternate orthographies, also the default must have a name.
 # It is assumed that conversion from the default orthography to the alternate
 # orthographies can be done programmatically with a regex or xfscript.
-AC_SUBST([DEFAULT_ORTH], ["circumflex"])
+AC_SUBST([DEFAULT_ORTH], ["circumfl"])
 AC_SUBST([ALT_ORTHS], ["macron"])
 AM_CONDITIONAL([HAVE_ALT_ORTHS], [test "x$ALT_ORTHS" != "x"] -a "x$DEFAULT_ORTH" != "x"])
 
