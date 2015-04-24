@@ -22,11 +22,11 @@ include $(top_srcdir)/am-shared/tools-spellcheckers-fstbased-hfst-dir-include.am
 GT_SYLLSPELLER_HFST=generator-fstspeller-gt-norm-syll.hfst
 GT_SYLLSPELLER_ACCEPTOR=acceptor.syll.hfst
 
-$(GT_SYLLSPELLER_HFST): ../$(GT_SPELLER_HFST) \
-		../../../../src/orthography/Latn-to-Cans.compose.hfst
+$(GT_SYLLSPELLER_HFST): $(GT_SPELLER_HFST) \
+		$(top_builddir)/src/orthography/Latn-to-Cans.compose.hfst
 	$(AM_V_GEN)$(HFST_COMPOSE_INTERSECT) $(HFST_FLAGS) \
 		-1 $< \
-		-2 ../../../../src/orthography/Latn-to-Cans.compose.hfst \
+		-2 $(top_builddir)/src/orthography/Latn-to-Cans.compose.hfst \
 		| $(HFST_MINIMIZE) $(HFST_FLAGS) -o $@
 
 ####### Automake targets: ########
