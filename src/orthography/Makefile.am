@@ -12,7 +12,7 @@ GT_ORTHOGRAPHIC_REGEX_SRCS=\
 		spellrelax-mobile-keyboard.regex \
 		spellrelax.Cans.regex \
 		spellrelax.macron.regex \
-		circumflex-to-macron.regex
+		circumfl-to-macron.regex
 
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
 		allcaps.xfscript      \
