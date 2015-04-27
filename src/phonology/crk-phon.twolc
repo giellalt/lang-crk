@@ -5,7 +5,8 @@ Alphabet
  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
  â ê î ô
  Â Ê Î Ô
- 
+  %-
+
  t2:0      !!= * @CODE@ t between prefix and vowel-initial stem
  t3:t      !!= * @CODE@ t to s in VTA-4
  w2:w      !!= * @CODE@ for keeping the final -w in mow
@@ -30,12 +31,15 @@ Alphabet
 
 Sets
 
- Vow = a e i o u â ê î ô
-       A E I O U Â Ê Î Ô ;
+ Vow = a e i o u y â ê î ô
+       A E I O U Y Â Ê Î Ô ;
 
  LongVow = â ê î ô Â Ê Î Ô ;
  
  Cns = b c d f g h j k l m n p q r s t v w x z  ;
+ 
+  Lts = a e i o u â ê î ô b c d f g h j k l m n p q r s t v w x y z %- %> %^LOC ;
+
  
  Nas = m n ;
  NonNas = b c d f g h j k l p q r s t v w x z  ;
@@ -71,7 +75,7 @@ i:0 <=> .#. o %>:0 _ Cns  ;  ! o+ispiton
 
 "t2:t between prefix and vowel"
 !! __@RULENAME@__ , joiner for nouns with initial vowel.
-t2:t  <=> _ %>:0 Vow ;
+t2:t  <=> _ %>:0 Vow Lts:+  %^POS:0 Lts:* .#. ;
 
 "t:c in diminutives" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
