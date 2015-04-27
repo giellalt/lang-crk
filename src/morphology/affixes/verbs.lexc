@@ -1293,15 +1293,15 @@ TICONJ ;
 !! !!! Intransitive animate (AI)
 
 LEXICON AICONJ !!= @CODE@ splits in 4 moods
-< "+V":0 "+AI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
+!< "+V":0 "+AI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+AI: AICONJ-CONT ;
  
 LEXICON AICONJw !!= @CODE@ splits in 4 moods, for verbs with final -w
-< "+V":w "+AI":0 "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@" >     # ; !Baseform
+!< "+V":w "+AI":0 "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@" >     # ; !Baseform
 +V+AI: AICONJ-CONT ;
 
 LEXICON AICONJn !!= @CODE@ splits in 4 moods, for verbs with final -n
-< "+V":0 "+AI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
+!< "+V":0 "+AI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+AI: AICONJ-CONTn ;
 
 
@@ -1684,23 +1684,23 @@ LEXICON II_CNJ_PERS-PL   !!= @CODE@ -n final
 ! Main verb stems
 
 LEXICON TACONJ_1 !!= @CODE@ 
-< "+V":0 "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
+!< "+V":0 "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA: TACONJ-CONT ;
 
 LEXICON TACONJ_2  !!= * @CODE@ Vw + i suf deletes w and i.
-< "+V":0 "+TA":0 0:ê 0:w "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
+!< "+V":0 "+TA":0 0:ê 0:w "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA: TACONJ-CONTVw ;
 
 LEXICON TACONJ_3  !!= * @CODE@ Cw where w + i become o
-< "+V":0 "+TA":0 0:ê 0:w "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
+!< "+V":0 "+TA":0 0:ê 0:w "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA: TACONJ-CONTCw ;
 
 LEXICON TACONJ_4  !!= * @CODE@ TS
-< "+V":0 "+TA":0 0:ê 0:w "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
+!< "+V":0 "+TA":0 0:ê 0:w "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA: TACONJ-CONTTS ;
 
 LEXICON TACONJ_5 ! This is just guessing, I do not know how the VTA-5 vers are inflected.
-< "+V":w "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
+!< "+V":w "+TA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TA:w TACONJ-CONT ;
 
 LEXICON TACONJ-CONT
@@ -2494,15 +2494,15 @@ LEXICON 12PlCw_Imp
 !     =========================
 
 LEXICON TICONJ  !!= * @CODE@ adds baseform and directs to TICONJ-CONT
-< "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
+!< "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TI: TICONJ-CONT ;
 
 LEXICON TICONJi  !!= * @CODE@ adds baseform and directs to TICONJi-CONT
-< "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
+!< "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TI: TICONJi-CONT ; 
 
 LEXICON TICONJâ  !!= * @CODE@ adds baseform and directs to TICONJâ-CONT
-< "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
+!< "+V":0 "+TI":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform
 +V+TI: TICONJi-CONT ; 
 
 
@@ -2668,29 +2668,29 @@ LEXICON TI_CNJâ_SUF !!= * @CODE@
 
 
 LEXICON TI_IMP !!= * @CODE@
-< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 0:%> 0:a > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:%> 0:ê 0:t 0:â 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:%> 0:a 0:m 0:o 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 0:%> 0:a 0:m 0:o 0:k 0:a 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 0:%> 0:a 0:m 0:o 0:k 0:a 0:h 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 0:%> 0:a 0:m 0:o 0:k 0:a 0:h 0:k 0:ê 0:k > # ; !
+< "+Imp":%> "@U.mood.imp@"  "+Imm":0 "+2Sg":0 0:a > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:ê 0:t 0:â 0:n > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:a 0:m 0:o 0:k > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Sg":0 0:a 0:m 0:ô 0:h 0:k 0:a 0:n > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Del":0 "+12Pl":0 0:a 0:m 0:ô 0:h 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Pl":0 0:a 0:m 0:ô 0:h 0:k 0:ê 0:k > # ; !
 
 LEXICON TI_IMPi !!= * @CODE@
-< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 0:%> > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:%> 0:t 0:â 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:%> 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 0:%> 0:h 0:k 0:a 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 0:%> 0:h 0:k 0:a 0:h 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 0:%> 0:h 0:k 0:ê 0:k > # ; !
+< "+Imp":%> "@U.mood.imp@"  "+Imm":0 "+2Sg":0 > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:t 0:â 0:n > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:k > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Sg":0 0:h 0:k 0:a 0:n > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Del":0 "+12Pl":0 0:h 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Pl":0 0:h 0:k 0:ê 0:k > # ; !
 
 
 LEXICON TI_IMPâ !!= * @CODE@
-< "+Imp":0 "@U.mood.imp@"  "+Imm":0 "+2Sg":0 0:%> 0:â > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:%> 0:â 0:t 0:â 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:%> 0:â 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Sg":0 0:%> 0:â 0:h 0:k 0:a 0:n > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+12Pl":0 0:%> 0:â 0:h 0:k 0:a 0:h 0:k > # ; !
-< "+Imp":0 "@U.mood.imp@" "+Del":0 "+2Pl":0 0:%> 0:â 0:h 0:k 0:ê 0:k > # ; !
+< "+Imp":%> "@U.mood.imp@"  "+Imm":0 "+2Sg":0 0:â > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:â 0:t 0:â 0:n > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:â 0:k > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Sg":0 0:â 0:h 0:k 0:a 0:n > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Del":0 "+12Pl":0 0:â 0:h 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Pl":0 0:â 0:h 0:k 0:ê 0:k > # ; !
 
 
 LEXICON TI_IMP_LONG_E !!= * @CODE@
