@@ -205,7 +205,7 @@ LEXICON AN_KININFL_MONOG !!= * @CODE@ Lexicon with reduces possessive paradigm: 
 < "+N":0 "+AN":0 "+Pl":0  "+Px4Pl":%^POS 0:i 0:y 0:i 0:w "@U.noun.4sg@" > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 
 LEXICON AN_DECL-ATIM	!!= * @CODE@ for atim and mistatim.
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  SGw         ; !
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  #         ; !
 < "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak     ; !
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE      ; !
 < "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; ! ohk
@@ -503,9 +503,6 @@ LEXICON ANiySUFF_PL !!= * @CODE@
 
 LEXICON SG_ !!= * @CODE@ 
  # ;
-
-LEXICON SGw !!= * @CODE@ 
- :%>%^w # ;
 
 
 LEXICON PLa !!= * @CODE@ 
