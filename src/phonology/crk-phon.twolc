@@ -92,8 +92,8 @@ t2:c <=>  _ %>:0 Vow Dim .#. ;
 i:o <=> Cns w: %>:0 ( %^POS:0 ) ( %>:0 ) _  ; !  
 
 "Vowel final stems: vowel deletion when suffix has initial a or i" 
-!! __@RULENAME@__ , when the suffix  niska, wâwi+a wâwi+ihk wâwi+is, oskâyi+a
-Vx:0 <=> Cns _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i: ] ;
+!! __@RULENAME@__ , when the suffix  niska, wâwi+a wâwi+ihk wâwi+is, oskâyi+a, êsa+ihk
+Vx:0 <=> Cns _ %>:0 ( %^POS:0 ) ( %>:0 ) [ Vow | i: ] [ .#. | Cns | %^LOC:0 ]   ;
          y: _   %>:0 [ a | i: ]   ;
 	where Vx in ( a e o â ê î ô i ) ;  ! esa:esihk, esa:esak, esa:esis
 
