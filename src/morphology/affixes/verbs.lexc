@@ -1459,28 +1459,28 @@ LEXICON IICONJ-PL  !!= @CODE@ adds the flag for no personprefixes, only Pl forms
 < "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS-PL ;
 
 LEXICON IICONJFORMS !!= @CODE@ adds a baseform = Prs+3Sg
-< "@U.tense.Prs@" "@U.mood.indep@" >  # ; !baseform
+!< "@U.tense.Prs@" "@U.mood.indep@" >  # ; !baseform
  IICONJ-CONT ; 
 
 LEXICON IICONJFORMS-SG !!= @CODE@ adds a baseform = Prs+3Sg
-< "@U.tense.Prs@" "@U.mood.indep@" >  # ; !baseform
+!< "@U.tense.Prs@" "@U.mood.indep@" >  # ; !baseform
  IICONJ-CONT-SG ; 
 
 LEXICON IICONJFORMS-PL !!= @CODE@ adds a baseform = Prs+3Pl
-< "@U.tense.Prs@" "@U.mood.indep@" >  # ; !baseform
+!< "@U.tense.Prs@" "@U.mood.indep@" >  # ; !baseform
  IICONJ-CONT-PL ; 
 
 
 LEXICON IICONJw  !!= @CODE@  w final. Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
-< "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
+!< "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
 < "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw ;
 
 LEXICON IICONJw-SG  !!= @CODE@  w final, only Sg forms Adds a baseform = Prs+3Sg and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
-< "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
+!< "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
 < "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw-SG ;
 
 LEXICON IICONJw-PL  !!= @CODE@  w final, only Pl forms Adds a baseform = Prs+3Pl and more diacr.flags. Be aware that two of the flags are identical, and couse overgeneration for hfst. See bz. 1859.
-< "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
+!< "+V":w "+II":0  "@U.tense.Prs@" "@U.mood.indep@" "@U.perspref.NULL@" > # ; !baseform
 < "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw-PL ;
 
 
