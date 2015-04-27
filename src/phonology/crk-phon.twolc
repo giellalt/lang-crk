@@ -189,7 +189,8 @@ w:0 <=>  _ %>:0 %^WI:0 i:0 ;
 
 "n:0 before k suf in VII"
 !! __@RULENAME@__
-n:0 <=> [ o | i ] _ %>:0 %^NII:0 k ;
+n:0 <=> [ o | i ] _ %>:0 [ h | %^NII:0 ] k ;  
+! n:0 <=>  [ i | o ] _ %>:0 ( h ) k -- do we need %^NII at all?
 
 "i:o i to o when after %^IO in VTACw"
 !! __@RULENAME@__
