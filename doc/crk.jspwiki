@@ -109,7 +109,7 @@ Nominal MSP
  * +Px2Pl	 
  * +Px3Pl	 
  * +Px4Pl	 
- * +Dim/Der 
+ * +Der/Dim  diminutive derivation
 
  * +AI       intransitive with animate subject,
  * +II       intransitive with inanimate subject,
@@ -140,7 +140,6 @@ morphophonological structure
  * t3       t to s in VTA-4
 
  * h2 		  Prefix in possessives
-
 
  * %^EGLOT    glottal stop after e, for eh- in conjunctive mood
  * %^EA       ê to â in 1, 2 person of ê-stems
@@ -247,6 +246,8 @@ Prefixes with a certain phonological content:
  *  %^NII:0     n to h or 0 in VII verbs when before k-init suf
  *  %^WI:0       w to 0 in vta-2 verbs when before k-init suf
  *  %^IO:0     VTACw w + i becom o
+
+
 
 
 
@@ -629,8 +630,6 @@ LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
 
  * LEXICON SG_  
-
- * LEXICON SGw  
 
 
  * LEXICON PLa  
