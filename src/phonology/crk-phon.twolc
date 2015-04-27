@@ -36,7 +36,7 @@ Sets
  LongVow = â ê î ô Â Ê Î Ô ;
  
  Cns = b c d f g h j k l m n p q r s t v w x z  ;
-  Lts = a e i o u â ê î ô b c d f g h j k l m n p q r s t v w x y z %- %> %^LOC %^EA ;
+  Lts = a e i o u â ê î ô b c d f g h j k l m n p q r s t v w x y z %- %> %^LOC %^EA %^POS ;
 
  Nas = m n ;
  NonNas = b c d f g h j k l p q r s t v w x z  ;
@@ -72,7 +72,7 @@ i:0 <=> .#. o %>:0 _ Cns  ;  ! o+ispiton
 
 "t2:t between prefix and vowel"
 !! __@RULENAME@__ , joiner for nouns with initial vowel.
-t2:t  <=> _ %>:0 Vow Lts:+  %^POS:0 Lts:* .#. ;
+t2:t  <=> _ %>:0 Vow Lts:+ .#. ;
 
 "t:c in diminutives" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
