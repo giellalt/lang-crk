@@ -88,6 +88,7 @@ LEXICON PREVERBS  !!= @CODE@ just adds the prefix boundary
  :%> PVSLOT ;
 
 LEXICON PVSLOT
+REDUPL ;
 VERBSTEMS ;
 PV/acici+:acici VERBSTEMSPRE "head down; upside down" ; ! Position
 PV/ahcahkowi+:ahcahkowi VERBSTEMSPRE "spiritual" ; ! Spirituality
@@ -356,12 +357,24 @@ PV/yoski+:yôski VERBSTEMSPRE "soft, softly" ;
 LEXICON VERBSTEMSPRE
 <      "@U.joiner.NULL@"   > PREVERBS ;
 < 0:%- "@U.joiner.hyphen@" > PREVERBS ;
+<      "@U.joiner.NULL@"   > REDUPL ;
+< 0:%- "@U.joiner.hyphen@" > REDUPL ;
 <      "@U.joiner.NULL@"   > VERBSTEMS ;
 < 0:%- "@U.joiner.hyphen@" > VERBSTEMS ;
 !0:%- PREVERBS ;
 !PREVERBS ;
 !0:%- VERBSTEMS ;
 !VERBSTEMS ;
+
+LEXICON REDUPL
+< "RdplW+":0 0:%^DUPL1 0:a > VERBSTEMSPRE_REDUPL ;
+< "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
+< "RdplW+":0 0:%^DUPL2 0:a "@U.joiner.NULL@" "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
+< "RdplW+":0 0:%^DUPL2 0:a "@U.joiner.hyphen@" 0:%- "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
+
+LEXICON VERBSTEMSPRE_REDUPL
+< 0:0  0:%< "@U.joiner.NULL@"   > VERBSTEMS ;
+< 0:%- 0:%< "@U.joiner.hyphen@" > VERBSTEMS ;
 
 ! The following preverb structure is now defunct to the tagging preverbs where they are observed
 ! LEXICON PREVERBS  != @CODE@ just adds the prefix boundary
