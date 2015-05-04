@@ -21,6 +21,8 @@ Alphabet
  %^DIM:0   !!= * @CODE@ Diminutive alternation trigger
  %^EGLOT:0 !!= * @CODE@ Conjunctive êh trigger
  %^POS:0   !!= * @CODE@ Possessive alternation trigger
+ %^DUPL1:0  !!= * @CODE@ Reduplication consonant place holder 
+ %^DUPL2:0  !!= * @CODE@ Reduplication consonant place holder 
  %^EA:0    !!= * @CODE@ ê to â in 1, 2 person of ê verbs
  %^TS:0    !!= * @CODE@  t to s in VTA-4 verbs before some i-init suf
  %^NII:0   !!= * @CODE@  n to h or 0 in VII verbs when before k-init suf
@@ -36,12 +38,12 @@ Sets
  LongVow = â ê î ô Â Ê Î Ô ;
  
  Cns = b c d f g h j k l m n p q r s t v w x z  ;
-  Lts = a e i o u â ê î ô b c d f g h j k l m n p q r s t v w x y z %- %> %^LOC %^EA %^POS ;
+  Lts = a e i o u â ê î ô b c d f g h j k l m n p q r s t v w x y z %- %< %> %^LOC %^EA %^POS ;
 
  Nas = m n ;
  NonNas = b c d f g h j k l p q r s t v w x z  ;
 
- Dummy = %> %^LOC %^DIM %^EGLOT %^POS %^EA %^TS %^NII ;
+ Dummy = %< %> %^LOC %^DIM %^EGLOT %^DUPL1 %^DUPL2 %^POS %^EA %^TS %^NII ;
  
 Definitions 
 
@@ -199,3 +201,38 @@ i:o <=> %^IO:0 _ k ;
 "VTACw w to nothing when before %^IO"
 !! __@RULENAME@__
 w:0 <=> _ %>:0 %^IO:0 i:o ;
+
+"Matching weak/strong reduplication consonant placeholder %^DUPL1 with stem-initial consonant"
+!! __@RULENAME@__
+%^DUPL1:Cx <=> _ [ a | â h ] ( %-: ) %<:0 Cy: ;
+   where Cx in ( c k m n p s t w y )
+         Cy in ( c k m n p s t w y )
+   matched ;
+
+"Setting double weak+strong reduplication consonant placeholder %^DUPL2 with stem-initial consonant"
+!! __@RULENAME@__
+%^DUPL2:Cx <=> _ a ( %-: ) %^DUPL1:Cy ;
+   where Cx in ( c k m n p s t w y )
+         Cy in ( c k m n p s t w y )
+   matched ;
+
+"Deleting weak reduplication vowel placeholder %^DUPL1:0 with stem-initial vowel"
+!! __@RULENAME@__
+%^DUPL1:a <=> _ a: ( %-: ) %<:0 Vow: ;
+
+"Setting weak reduplication y-joiner with stem-initial vowel"
+!! __@RULENAME@__
+a:y <=> %^DUPL1:a _ ( %-: ) %<:0 Vow: ;
+
+"Deleting strong reduplication vowel placeholder %^DUPL1:0 with stem-initial vowel"
+!! __@RULENAME@__
+%^DUPL1:0 <=> _ â h ( %-: ) %<:0 Vow: ;
+
+"Setting strong+weak reduplication vowel placeholder %^DUPL2 with stem-initial vowel"
+!! __@RULENAME@__
+%^DUPL2:a <=> _ a: ( %-: ) %^DUPL1:0 â h ( %-: ) %<:0 Vow ; 
+
+"Setting strong+weak reduplication y-joiner with stem-initial vowel"
+!! __@RULENAME@__
+a:y <=> %^DUPL2:a _ ( %-: ) %^DUPL1:0 â h ( %-: ) %<:0 Vow ; 
+    
