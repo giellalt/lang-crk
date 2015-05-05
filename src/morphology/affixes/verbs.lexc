@@ -367,10 +367,10 @@ LEXICON VERBSTEMSPRE
 !VERBSTEMS ;
 
 LEXICON REDUPL
-< "RdplW+":0 0:%^DUPL1 0:a > VERBSTEMSPRE_REDUPL ;
+< "RdplW+":0 0:%^DUPL1 0:a 0:"y2" > VERBSTEMSPRE_REDUPL ;
 < "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
-< "RdplW+":0 0:%^DUPL2 0:a "@U.joiner.NULL@" "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
-< "RdplW+":0 0:%^DUPL2 0:a "@U.joiner.hyphen@" 0:%- "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
+< "RdplW+":0 0:%^DUPL2 0:a 0:"y3" "@U.joiner.NULL@" "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
+< "RdplW+":0 0:%^DUPL2 0:a 0:"y3" "@U.joiner.hyphen@" 0:%- "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
 
 LEXICON VERBSTEMSPRE_REDUPL
 < 0:0  0:%< "@U.joiner.NULL@"   > VERBSTEMS ;
