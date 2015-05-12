@@ -40,12 +40,12 @@ ONES ;			! 1-9
 LEXICON HUNDREDSM !!= * @CODE@
 nîso  CUODIM ;
 nisto CUODIM ;
-newo CUODIM ; ! Google: 459
+nêwo CUODIM ; ! Google: 459
 nîyânan CUODIM ;
 nikotwâsik CUODIM ;
-tepakohp CUODIM ;
-ayinânew CUODIM ;
-kekâmitâtaht CUODIM ;
+têpakohp CUODIM ;
+ayinânêw CUODIM ;
+kêkâmitâtaht CUODIM ;
 
 LEXICON CUODIM !!= * @CODE@
 mitâtahtomitanaw HUNDREDM ;
@@ -60,15 +60,15 @@ LEXICON TEENSM !!= * @CODE@
 luhkie TEENM ;
 
 LEXICON TEENM !!= * @CODE@
-peyak     LOHKAIM ;
+pêyak     LOHKAIM ;
 nîso   LOHKAIM ;
 nisto    LOHKAIM ;
-newo LOHKAIM ;
+nêwo LOHKAIM ;
 nîyânan   LOHKAIM ;
 nikotwâsik   LOHKAIM ;
-tepakohp LOHKAIM ;
-ayinânew LOHKAIM ;
-kekâmitâtaht   LOHKAIM ;
+têpakohp LOHKAIM ;
+ayinânêw LOHKAIM ;
+kêkâmitâtaht   LOHKAIM ;
 
 LEXICON LOHKAIM !!= * @CODE@
 MILJON ;
@@ -77,12 +77,12 @@ LEXICON TENSM !!= * @CODE@
 luhkie MILJON ;
 nîso   TENM ;
 nisto    TENM ;
-newo TENM ;
+nêwo TENM ;
 nîyânan   TENM ;
 nikotwâsik   TENM ;
-tepakohp TENM ;
-ayinânew TENM ;
-kekâmitâtaht  TENM ;
+têpakohp TENM ;
+ayinânêw TENM ;
+kêkâmitâtaht  TENM ;
 
 LEXICON TENM !!= * @CODE@
 luhkie MILJON ;
@@ -92,12 +92,12 @@ LEXICON ONESM !!= * @CODE@
 akte% miljon  OVERTHOUSANDS ;
 nîso   MILJON ;
 nisto          MILJON ;
-newo       MILJON ;
+nêwo       MILJON ;
 nîyânan     MILJON ;
 nikotwâsik         MILJON ;
-tepakohp       MILJON ;
-ayinânew       MILJON ;
-kekâmitâtaht  MILJON ; 
+têpakohp       MILJON ;
+ayinânêw       MILJON ;
+kêkâmitâtaht  MILJON ; 
 
 LEXICON MILJON !!= * @CODE@
 % miljona OVERTHOUSANDS ;
@@ -122,12 +122,12 @@ tåvsene THOUSAND ;	!   1.000.000
 LEXICON HUNDREDST !!= * @CODE@
 nîso  CUODIT ;	! 200000-299999
 nisto    CUODIT ;	! 300000-399999
-newo CUODIT ;	! 400000-499999
+nêwo CUODIT ;	! 400000-499999
 nîyânan   CUODIT ;	! 500000-599999
 nikotwâsik   CUODIT ;	! 600000-699999
-tepakohp CUODIT ;	! 700000-799999
-ayinânew CUODIT ;	! 800000-899999
-kekâmitâtaht  CUODIT ;	! 900000-999999
+têpakohp CUODIT ;	! 700000-799999
+ayinânêw CUODIT ;	! 800000-899999
+kêkâmitâtaht  CUODIT ;	! 900000-999999
 
 LEXICON CUODIT !!= * @CODE@
 mitâtahtomitanaw HUNDREDT ;	! 100000-199999
@@ -147,12 +147,12 @@ LEXICON TEENT !!= * @CODE@
 peyak    LOHKAIT ;
 nîso   LOHKAIT ;
 nisto    LOHKAIT ;
-newo LOHKAIT ;
+nêwo LOHKAIT ;
 nîyânan   LOHKAIT ;
 nikotwâsik   LOHKAIT ;
-tepakohp LOHKAIT ;
-ayinânew LOHKAIT ;
-kekâmitâtaht   LOHKAIT ;
+têpakohp LOHKAIT ;
+ayinânêw LOHKAIT ;
+kêkâmitâtaht   LOHKAIT ;
 
 LEXICON LOHKAIT !!= * @CODE@
 THOUSANDS ;
@@ -160,12 +160,12 @@ THOUSANDS ;
 LEXICON TENST !!= * @CODE@
 nîs  TANAW ;
 nistomi    TANAW ;
-nemi TANAW ;
+nêmi TANAW ;
 nîyânanomi   TANAW ;
 nikotwâsomi   TANAW ;
-tepakohpimi TANAW ;
-ayinânewomi TANAW ;
-kekâmitâtahtomi   TANAW ;
+têpakohpimi TANAW ;
+ayinânêwomi TANAW ;
+kêkâmitâtahtomi   TANAW ;
 
 LEXICON TANAW !!= * @CODE@
 tanaw%  NUM ;
@@ -173,18 +173,18 @@ tanaw%  ONESTONEXT ;
 
 LEXICON TENT !!= * @CODE@
  THOUSANDS ;
-akte THOUSANDS ;
+aktê THOUSANDS ;
 ONEST ;
 
 LEXICON ONEST !!= * @CODE@
 nîso THOUSANDS ;
 nisto THOUSANDS ;
-newo THOUSANDS ;
+nêwo THOUSANDS ;
 nîyânan THOUSANDS ;
 nikotwâsik THOUSANDS ;
-tepakohp THOUSANDS ;
-ayinânew THOUSANDS ;
-kekâmitâtaht THOUSANDS ;
+têpakohp THOUSANDS ;
+ayinânêw THOUSANDS ;
+kêkâmitâtaht THOUSANDS ;
 
 LEXICON THOUSANDS   !!= * @CODE@  x > 1
 tåvsene THOUSAND ;
@@ -208,12 +208,12 @@ mitâtahtomitanaw%  HUNDRED ;
 LEXICON HUNDREDS !!= * @CODE@
 nîso   CUODI ;
 nisto    CUODI ;
-newo CUODI ;
+nêwo CUODI ;
 nîyânano   CUODI ;  !OBS
 nikotwâsiko   CUODI ;
-tepakohpo CUODI ;
-ayinânewo CUODI ;
-kekâmitâtahto  CUODI ;
+têpakohpo CUODI ;
+ayinânêwo CUODI ;
+kêkâmitâtahto  CUODI ;
 
 LEXICON CUODI !!= * @CODE@
 mitâtahtomitanaw%   HUNDRED ;
@@ -233,19 +233,19 @@ mitâtaht NUM ;
 låhkede NUM ;
 nîs TEN ;
 nistomi TEN ;
-nemi TEN ;
+nêmi TEN ;
 nîyânanomi TEN ;
 nikotwâsomi TEN ;
-tepakohpimi TEN ;
-ayinânewomi TEN ;
-kekâmitâtahtomi TEN ;
+têpakohpimi TEN ;
+ayinânêwomi TEN ;
+kêkâmitâtahtomi TEN ;
 
 LEXICON TEN !!= * @CODE@
 låhkede NUM ;
 tanaw%  ONESTONEXT ;
 
 LEXICON ONESTONEXT !!= * @CODE@
-peyakosâp NUM ;
+pêyakosâp NUM ;
 nîsosâp NUM ;
 nistosâp NUM ;
 nêwosâposâp NUM ;
@@ -253,12 +253,12 @@ niyânanosâp NUM ;
 nikotwâsiksâp NUM ;
 têpakohposâp NUM ;
 ayinânêwosâp NUM ;
-kîkâmitâtahtosâp NUM ;
+kêkâmitâtahtosâp NUM ;
 
 
 
 LEXICON TEENS !!= * @CODE@
-peyakosâp NUM ;
+pêyakosâp NUM ;
 nîsosâp NUM ;
 nistosâp NUM ;
 nêwosâposâp NUM ;
@@ -266,14 +266,14 @@ niyânanosâp NUM ;
 nikotwâsiksâp NUM ;
 têpakohposâp NUM ;
 ayinânêwosâp NUM ;
-kîkâmitâtahtosâp NUM ;
+kêkâmitâtahtosâp NUM ;
 
 LEXICON ONES !!= * @CODE@
 CARDINAL ;
 !ORDINAL ;
 
 LEXICON CARDINAL !!= * @CODE@
-peyak NUM ;
+pêyak NUM ;
 nîso NUM ;
 nisto NUM ;
 nêwo NUM ;
@@ -281,7 +281,7 @@ niyânan NUM ;
 nikotwâsik NUM ;
 têpakohp NUM ;
 ayinânêw NUM ;
-kîkâmitâtaht NUM ;
+kêkâmitâtaht NUM ;
 
 !LEXICON ORDINAL
 !voestes:1%.     NUM ;
