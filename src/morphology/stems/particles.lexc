@@ -376,6 +376,7 @@ ispîhci pcle "for now, in the meantime" ;
 ispîhci% wiya pcle "instead of" ;
 ispîhk pcle "when" ;
 ita pcle "there; where; there where; exactly there" ;
+itahto pcle "barely" ; ! from NS 152
 itâp pcle "then (in the future); sometime later, afterwards" ;
 itê pcle "there, thereabouts, over there, thither, wherever" ;
 itêhkê pcle "in that direction" ;
@@ -445,25 +446,47 @@ kêhcinâs pcle "assuredly, definitely; maybe, perhaps" ;
 kêhciwâk pcle "near, nearby; without mediation, by immediate contact" ;
 kêhtinâc pcle "surely" ;
 kêkâ pcle "almost, in immediate prospect, impendingly" ;
-kêkâ-mitâtaht pcle "nine" ;
-kêkâ-mitâtahtomitanaw pcle "ninety" ;
-kêkâ-mitâtahtomitanawâw pcle "ninety times" ;
-kêkâ-mitâtahtosâp pcle "nineteen" ;
-kêkâ-mitâtahtwâpisk pcle "nine dollars" ;
-kêkâ-mitâtahtwâw pcle "nine times" ;
-kêkâ-nistomitanaw pcle "twenty-nine" ;
-kêkâ-nîsitanaw pcle "nineteen" ;
+
+kêkâ-mitâtaht+Err/Sub:kêkâmitâtaht pcle "nine" ;
+kêkâ-mitâtahtomitanaw+Err/Sub:kêkâmitâtahtomitanaw pcle "ninety" ;
+kêkâ-mitâtahtomitanawâw+Err/Sub:kêkâmitâtahtomitanawâw pcle "ninety times" ;
+kêkâ-mitâtahtosâp+Err/Sub:kêkâmitâtahtosâp pcle "nineteen" ;
+kêkâ-mitâtahtwâpisk+Err/Sub:kêkâmitâtahtwâpisk pcle "nine dollars" ;
+kêkâ-mitâtahtwâw+Err/Sub:kêkâmitâtahtwâw pcle "nine times" ;
+kêkâ-nistomitanaw+Err/Sub:kêkânistomitanaw pcle "twenty-nine" ;
+kêkâ-nîsitanaw+Err/Sub:kêkânîsitanaw pcle "nineteen" ;
 kêkâc pcle "just about, almost, nearly" ;
-kêkâc-ayinânêmitanaw pcle "seventy-nine" ;
-kêkâc-kêkâ-mitâtahtomitanaw pcle "eighty-nine" ;
-kêkâc-mitâtaht pcle "nine" ;
-kêkâc-mitâtahtomitanaw pcle "ninety-nine" ;
-kêkâc-nêmitanaw pcle "thirty-nine" ;
-kêkâc-nikotwâsomitanaw pcle "fifty-nine" ;
-kêkâc-nistomitanaw pcle "twenty-nine" ;
-kêkâc-niyânanomitanaw pcle "forty-nine" ;
-kêkâc-nîsitanaw pcle "nineteen" ;
-kêkâc-têpakohpomitanaw pcle "sixty-nine" ;
+kêkâc-ayinânêmitanaw+Err/Sub:kêkâcayinânêmitanaw pcle "seventy-nine" ;
+kêkâc-kêkâ-mitâtahtomitanaw+Err/Sub:kêkâckêkâmitâtahtomitanaw pcle "eighty-nine" ;
+kêkâc-mitâtaht+Err/Sub:kêkâcmitâtaht pcle "nine" ;
+kêkâc-mitâtahtomitanaw+Err/Sub:kêkâcmitâtahtomitanaw pcle "ninety-nine" ;
+kêkâc-nêmitanaw+Err/Sub:kêkâcnêmitanaw pcle "thirty-nine" ;
+kêkâc-nikotwâsomitanaw+Err/Sub:kêkâcnikotwâsomitanaw pcle "fifty-nine" ;
+kêkâc-nistomitanaw+Err/Sub:kêkâcnistomitanaw pcle "twenty-nine" ;
+kêkâc-niyânanomitanaw+Err/Sub:kêkâcniyânanomitanaw pcle "forty-nine" ;
+kêkâc-nîsitanaw+Err/Sub:kêkâcnîsitanaw pcle "nineteen" ;
+kêkâc-têpakohpomitanaw+Err/Sub:kêkâctêpakohpomitanaw pcle "sixty-nine" ;
+
+kêkâmitâtaht pcle "nine" ;
+kêkâmitâtahtomitanaw pcle "ninety" ;
+kêkâmitâtahtomitanawâw pcle "ninety times" ;
+kêkâmitâtahtosâp pcle "nineteen" ;
+kêkâmitâtahtwâpisk pcle "nine dollars" ;
+kêkâmitâtahtwâw pcle "nine times" ;
+kêkânistomitanaw pcle "twentynine" ;
+kêkânîsitanaw pcle "nineteen" ;
+kêkâc pcle "just about, almost, nearly" ;
+kêkâcayinânêmitanaw pcle "seventynine" ;
+kêkâckêkâmitâtahtomitanaw pcle "eightynine" ;
+kêkâcmitâtaht pcle "nine" ;
+kêkâcmitâtahtomitanaw pcle "ninetynine" ;
+kêkâcnêmitanaw pcle "thirtynine" ;
+kêkâcnikotwâsomitanaw pcle "fiftynine" ;
+kêkâcnistomitanaw pcle "twentynine" ;
+kêkâcniyânanomitanaw pcle "fortynine" ;
+kêkâcnîsitanaw pcle "nineteen" ;
+kêkâctêpakohpomitanaw pcle "sixtynine" ;
+
 kêkât pcle "just about, almost" ;
 kêkisêp pcle "this morning" ;
 kêkoc pcle "in proper person, oneself" ;
@@ -512,6 +535,7 @@ kiyikaw pcle "in addition, additionally" ;
 kiyikaw pcle "all over, pell mell; every kind" ;
 kiyipa pcle "quickly; soon, hurry up" ;
 kiyomâ pcle "continually" ;
+kiyôhci pcle "you're from" ; ! from NS 152
 kîhipa pcle "quickly, in a hurry; hurry up" ;
 kîhkêhtakâhk pcle "in the corner" ;
 kîhkîhk pcle "in spite, nevertheless" ;
@@ -548,6 +572,7 @@ kosâ pcle "making it superfluous" ;
 kosikwan pcle "pounds unit of measure" ;
 kosikwanis pcle "ounces unit of measure" ;
 kospâyihk pcle "away from the thing, away from lodge fire" ;
+kotak pcle "another, other" ; ! from NS 152
 kotak% ispayiki pcle "next week" ;
 kotak% mîna pcle "another" ;
 kotak% pîsim pcle "next month" ;
@@ -569,6 +594,7 @@ ma% cî pcle "is it not the case? was it not? not so?" ;
 ma% nâ pcle "is that not so" ;
 mah pcle "listen, hark" ;
 mahci pcle "come, let's see" ;
+mahtêsa pcle "please" ; ! from NS 152
 mahti pcle "well, then, please; come, let's see hortatory" ;
 mahti% êsa pcle "please; let's see" ;
 mahti% mâka pcle "well ..." ;
@@ -598,6 +624,8 @@ mâka pcle "but, then; still" ;
 mâka% awa pcle "but here s/he is, speak of the devil" ;
 mâka% mîna pcle "as usual" ;
 mâka% ôma pcle "but here it is" ;
+mâkayiman pcle "but it seems difficult" ; ! from NS 152
+mâmaskâc pcle "astonishing!" ; ! from NS 152
 mâmawêyas pcle "where all are assembled" ;
 mâmawo-kayâs pcle "at the very earliest time" ;
 mâmawô pcle "all together" ;
@@ -625,6 +653,7 @@ mâwaci% iyikohk pcle "best, most" ;
 mâwaci-kihci-mitâtahtomitanaw pcle "one million, 1,000,000; literally: an extreme-great-hundred; an extreme thousand" ;
 mâwacîs pcle "all" ;
 mâwasako pcle "all together" ;
+mâyotâkosin pcle "tonight is a bad evening" ; ! from NS 152
 mêkwayâhtik pcle "among the trees" ;
 mêkwayês pcle "among" ;
 mêkwâc pcle "currently, presently, right now; while, during, in the course of, in the meantime, during the time; ago" ;
@@ -878,6 +907,7 @@ nîpihki pcle "next summer; in the (coming) summer, when it's summer" ;
 nîpinohk pcle "last summer" ;
 nîpitê pcle "all in a row" ;
 nîsitanaw pcle "twenty" ;
+nîstanaw pcle "twenty" ; ! from NS 152
 nîsitanaw% tahtwâpisk pcle "twenty dollars" ;
 nîsitanawâw pcle "twenty times" ;
 nîso pcle "two" ;
@@ -977,6 +1007,7 @@ pêci pcle "hither, to here; thence, from there on down; approach" ;
 pêci-nâway pcle "from back then; down from the distant past" ;
 pêh-pêyak pcle "one by one, individually" ;
 pêskis pcle "at the same time, simultaneously; also, besides, as well" ;
+pêyahtik pcle "carefully" ; ! from NS 152
 pêyak pcle "one; alone, single; the only one" ;
 pêyak-askiy pcle "one year" ;
 pêyak-ispayin pcle "one week" ;
@@ -1011,6 +1042,7 @@ piko% itowahk pcle "of any kind, of all kinds" ;
 piko% itowihk pcle "in any place, in all places" ;
 piko% iyikohk pcle "any amount" ;
 piko% iyiwas pcle "entirely" ;
+pikokîkway pcle "anything" ; ! from NS 152
 pikonita pcle "wasted efforts; for nothing, to no purpose" ;
 pikoyikohk pcle "no matter how much, to any extent" ;
 pikw% îta pcle "anywhere" ;
