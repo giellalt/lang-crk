@@ -211,13 +211,6 @@ LEXICON AN_DECL-ATIM	!!= * @CODE@ for atim and mistatim.
 < "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; ! ohk
         +N+AN+Der/Dim:%>%^wo%^DIMsis%>        ANABSDECL ;
 
-LEXICON AN_DECL-w-is	!!= * @CODE@ for atim and mistatim.
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  SGw         ; ! Anybody have this missing sublexicon anywhere?
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak     ; !
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE      ; !
-< "+N":0 "+AN":0         "@U.noun.abs@" >  LOC ; ! ohk
-        +N+AN+Der/Dim:%>%^w%^DIMis%>        ANABSDECL ;
-
 LEXICON ANPOSS-ATIM !!= * @CODE@ is also there to handle the highly irregular atim and mistatim
 !< "+N":0 "+AN":0 "@U.noun.abs@" > SG_ ; !Baseform for dep nouns
 +N+AN+Sg: ANSUFF_SG ;
