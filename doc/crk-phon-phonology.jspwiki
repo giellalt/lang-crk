@@ -4,17 +4,22 @@
  *  t2:0       t between prefix and vowel-initial stem
  *  t3:t       t to s in VTA-4
  *  w2:w       for keeping the final -w in mow
+ *  y2:0       epenthetic joiner in reduplication of vowe-initial stems
+ *  y3:0       epenthetic joiner in reduplication of vowe-initial stems
  *  %>:0       suffix boundary
  *  %<:0       prefix boundary
  *  %^LOC:0    Locative suffix alternation trigger
  *  %^DIM:0    Diminutive alternation trigger
  *  %^EGLOT:0  Conjunctive êh trigger
  *  %^POS:0    Possessive alternation trigger
+ *  %^DUPL1:0   Reduplication consonant place holder 
+ *  %^DUPL2:0   Reduplication consonant place holder 
  *  %^EA:0     ê to â in 1, 2 person of ê verbs
  *  %^TS:0      t to s in VTA-4 verbs before some i-init suf
  *  %^NII:0     n to h or 0 in VII verbs when before k-init suf
  *  %^WI:0       w to 0 in vta-2 verbs when before k-init suf
  *  %^IO:0     VTACw w + i becom o
+
 
 
 
@@ -100,3 +105,11 @@ __n:0 before k suf in VII__
 __i:o i to o when after %^IO in VTACw__
 
 __VTACw w to nothing when before %^IO__
+
+__Matching weak/strong reduplication consonant placeholder %^DUPL1 with stem-initial consonant__
+
+__Setting double weak+strong reduplication consonant placeholder %^DUPL2 with stem-initial consonant__
+
+__Inserting epenthetic y in weak reduplication of vowel-initial stem__
+
+__Inserting epenthetic y in strong+weak reduplication of vowel-initial stem__
