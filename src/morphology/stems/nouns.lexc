@@ -3655,6 +3655,7 @@ têhtahokan IN_DECL "platform" ;
 têhtapiwaskisin IN_DECL "riding boot" ;
 têhtapiwin IN_DECL "chair, seat; saddle" ;
 têhtapiwin AN_DECL "mount, horse" ;
+têhtapîwatim:tehtapiwatimw AN_DECL "saddle horse" ;
 têhtapîwitâs AN_DECL "riding legging, riding breeches" ;
 têhtascikêwin IN_DECL "shelf" ;
 tênikan AN_DECL "playing card" ;
@@ -4283,7 +4284,7 @@ ohcâwîs:ohcâwîs AN_KININFL "father's brother" ; !
 -îni:îni IN_DEP_INIT_M "bone-marrow" ; 
 -îwas:îwas IN_DEP_INIT_M "sacred pack" ; 
 -itâmiyawa:titâmiyawa IN_DEP_INIT_M "sacred pack" ; 
-
+-îyâw:îyâw IN_DEP_INIT_M "body" ; 
 LEXICON DEP-M-INIT-STEMS ! dependent nouns
 !! @LEXNAME@ adds an affixmark and redirects to DEP-M-LIST 
  0:%> DEP-M-LIST ;
