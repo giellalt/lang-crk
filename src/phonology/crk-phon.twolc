@@ -188,7 +188,7 @@ n:h <=> a _ %>:0 %^NII:0 k ;
 
 "i:0 in VTA-Vw"
 !! __@RULENAME@__
-i:0 <=> %^WI:0 _ [ k | t ] ;
+i:0 <=> %^WI:0 _ [ h | k | t ] ;
 
 "w:0 in VTA-Vw"
 !! __@RULENAME@__
@@ -201,7 +201,7 @@ n:0 <=> [ o | i ] _ %>:0 [ h | %^NII:0 ] k ;
 
 "i:o i to o when after %^IO in VTACw"
 !! __@RULENAME@__
-i:o <=> %^IO:0 _ k ;
+i:o <=> %^IO:0 _ [ k | t | n ] ;
 
 "VTACw w to nothing when before %^IO"
 !! __@RULENAME@__
