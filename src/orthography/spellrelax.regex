@@ -21,6 +21,11 @@ i (->) %', # short-i elision
 Î (->) Ī, # I macron
 Ô (->) Ō, # O macron
 
+a (->) Â, # THESE to be deleted when the SoMe variant is running
+e (->) Ê, # THESE to be deleted when the SoMe variant is running
+i (->) Î, # THESE to be deleted when the SoMe variant is running
+o (->) Ô, # THESE to be deleted when the SoMe variant is running
+
 â (->) â, # a + combining circumflex accent U+0302
 ê (->) ê, # e + combining circumflex accent U+0302
 î (->) î, # i + combining circumflex accent U+0302
@@ -36,12 +41,17 @@ i (->) %', # short-i elision
 î (->) i, # THESE to be deleted when the SoMe variant is running
 ô (->) o, # THESE to be deleted when the SoMe variant is running
 
-Â (->) A, # THESE to be deleted when the SoMe variant is running
-Ê (->) E, # THESE to be deleted when the SoMe variant is running
-Î (->) I, # THESE to be deleted when the SoMe variant is running
-Ô (->) O,  # THESE to be deleted when the SoMe variant is running
-
 # NS 152 materials consistantly write some vowels as long where Arok's write them as short. E.G. NS 152 give 'askîy' and Arok gives 'askiy.'
+
+â (->) A, # THESE to be deleted when the SoMe variant is running
+ê (->) E, # THESE to be deleted when the SoMe variant is running
+î (->) I, # THESE to be deleted when the SoMe variant is running
+ô (->) O,  # THESE to be deleted when the SoMe variant is running
+
+a (->) A, # THESE to be deleted when the SoMe variant is running
+e (->) E, # THESE to be deleted when the SoMe variant is running
+i (->) I, # THESE to be deleted when the SoMe variant is running
+o (->) O,  # THESE to be deleted when the SoMe variant is running
 
 a (->) â, # THESE to be deleted when the SoMe variant is running
 e (->) ê, # THESE to be deleted when the SoMe variant is running
