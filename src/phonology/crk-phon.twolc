@@ -38,6 +38,8 @@ Sets
  Vow = a e i o u y â ê î ô
        A E I O U Y Â Ê Î Ô ;
 
+ ShortVow = a ê i o A E I O ;
+ 
  LongVow = â ê î ô Â Ê Î Ô ;
  
  Vow2 = a e i o u â ê î ô
@@ -194,6 +196,13 @@ i:0 <=> %^WI:0 _ [ h | k | t ] ;
 "w2:0 in VTA-Vw"
 !! __@RULENAME@__
 w2:0 <=>  _ %>:0 %^WI:0 i:0 ;
+
+"Lengthening of vowels before dissappearing stem final <w>"
+!! __@RULENAME@__
+Vx:Vy <=> _ w2:0 %>:0 ;
+   where Vx in ShortVow
+         Vy in LongVow
+   matched ;
 
 "n:0 before k suf in VII"
 !! __@RULENAME@__
