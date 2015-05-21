@@ -1906,7 +1906,7 @@ LEXICON VTAVw_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject o
 LEXICON VTAVw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 +2Sg+3SgO:%>âw		  # ;
 +2Sg+3PlO:%>âwak	  # ;
-+3Sg+2SgO:%>ik		  # ;
++3Sg+2SgO:%>%^WIik		  # ;
 +3Pl+2SgO:%>%^WIikwak	  # ;
 +12Pl+3SgO:%>ânaw	  # ;
 +12Pl+3PlO:%>ânawak	  # ;
@@ -2058,7 +2058,7 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +3Pl+3PlO:%>âcik	   # ;
 +3Pl+2SgO:%>iskik	   # ;
 +3Pl+2PlO:%>ikoyêkok   # ;
-+3Pl+1SgO:%>iticik	   # ;
++3Pl+1SgO:%>icik	   # ;
 +3Pl+1PlO:%>ikoyâhkik  # ;
 +3Pl+12PlO:%>ikoyahkok # ;
 
@@ -2172,7 +2172,7 @@ LEXICON TA_CNJVw_SUF !!= @CODE@ gives conj + obj tag and suf
 +3Pl+3PlO:%>âcik	   # ;
 +3Pl+2SgO:%>%^WIiskik	   # ;
 +3Pl+2PlO:%>%^WIikoyêkok   # ;
-+3Pl+1SgO:%>iticik	   # ;
++3Pl+1SgO:%>icik	   # ;
 +3Pl+1PlO:%>%^WIikoyâhkik  # ;
 +3Pl+12PlO:%>%^WIikoyahkok # ;
 
@@ -2453,23 +2453,23 @@ LEXICON 12PlTS_Imp
 +Del+12Pl+3PlO:%>âhkahkok # ;
 
 LEXICON 2SgVw_Imp
-+Imm+2Sg+1SgO:%>%^WIin # ;
-+Imm+2Sg+1PlO:%>%^WIinân # ;
++Imm+2Sg+1SgO:%>in # ;
++Imm+2Sg+1PlO:%>inân # ;
 +Imm+2Sg+3SgO: # ;
-+Imm+2Sg+3PlO:%>%^WIik # ;
++Imm+2Sg+3PlO:%>ik # ;
 +Del+2Sg+3SgO:%>âhkan # ;
 +Del+2Sg+3PlO:%>âhkanik # ;
-+Del+2Sg+1SgO:%>%^WIihkan # ;
-+Del+2Sg+2PlO:%>%^WIihkâhk # ;
-+Del+2Sg+1PlO:%>%^WIihkâhk # ;
++Del+2Sg+1SgO:%>îhkan # ;
++Del+2Sg+2PlO:%>îhkâhk # ;
++Del+2Sg+1PlO:%>îhkâhk # ;
 
 LEXICON 2PlVw_Imp
-+Imm+2Pl+1SgO:%>%^WIik # ;
++Imm+2Pl+1SgO:%>%^ik # ;
 +Imm+2Pl+3SgO:%>%^WIihk # ;
 +Imm+2Pl+3PlO:%>%^WIihkok # ;
 +Del+2Pl+3SgO:%>âhkêk # ;
 +Del+2Pl+3PlO:%>âhkêkok # ;
-+Del+2Pl+1SgO:%>%^WIihkêk # ;
++Del+2Pl+1SgO:%>îhkêk # ;
 
 !! LEXICON 12PlVw_Imp
 !! +Imm+12Pl+3SgO:%>âtân # ;

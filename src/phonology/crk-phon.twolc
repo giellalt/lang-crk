@@ -191,7 +191,7 @@ n:h <=> a _ %>:0 %^NII:0 k ;
 
 "i:0 in VTA-Vw"
 !! __@RULENAME@__
-i:0 <=> %^WI:0 _ [ h | k | t ] ;
+i:0 <=> %^WI:0 _ [ h | k | t | s ] ;
  
 "w2:0 in VTA-Vw"
 !! __@RULENAME@__
@@ -199,9 +199,9 @@ w2:0 <=>  _ %>:0 %^WI:0 i:0 ;
 
 "Lengthening of vowels before dissappearing stem final <w>"
 !! __@RULENAME@__
-Vx:Vy <=> _ w2:0 %>:0 ;
-   where Vx in ShortVow
-         Vy in LongVow
+Vx:Vy <=> _ w2:0 %>:0 %^WI:0 ;
+   where Vx in ( a i o ) 
+         Vy in ( â î ô )
    matched ;
 
 "n:0 before k suf in VII"
