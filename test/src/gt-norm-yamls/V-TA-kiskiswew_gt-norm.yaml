@@ -1,0 +1,158 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - kîskiswêw - cut him/her through : # VTA-Cw verb - full paradigm
+  
+     kîskiswêw+V+TA+Ind+Prs+1Sg+3SgO: nikîskiswâw
+     kîskiswêw+V+TA+Ind+Prs+2Sg+3SgO: kikîskiswâw
+     kîskiswêw+V+TA+Ind+Prs+1Pl+3SgO: nikîskiswânân
+     kîskiswêw+V+TA+Ind+Prs+12Pl+3SgO: kikîskiswânaw
+     kîskiswêw+V+TA+Ind+Prs+2Pl+3SgO: kikîskiswâwâw
+     kîskiswêw+V+TA+Ind+Prs+3Sg+3SgO: kîskiswêw
+     kîskiswêw+V+TA+Ind+Prs+3Pl+3SgO: kîskiswêwak
+
+     kîskiswêw+V+TA+Ind+Prs+1Sg+3PlO: nikîskiswâwak
+     kîskiswêw+V+TA+Ind+Prs+2Sg+3PlO: kikîskiswâwak
+     kîskiswêw+V+TA+Ind+Prs+1Pl+3PlO: nikîskiswânânak
+     kîskiswêw+V+TA+Ind+Prs+12Pl+3PlO: kikîskiswânawak
+     kîskiswêw+V+TA+Ind+Prs+2Pl+3PlO: kikîskiswâwâwak
+     kîskiswêw+V+TA+Ind+Prs+3Sg+3PlO: kîskiswêw
+     kîskiswêw+V+TA+Ind+Prs+3Pl+3PlO: kîskiswêwak
+
+     kîskiswêw+V+TA+Ind+Prs+4Sg+4SgO: kîskiswêyiwa
+     kîskiswêw+V+TA+Ind+Prs+4Sg+4PlO: kîskiswêyiwa     
+
+     kîskiswêw+V+TA+Ind+Prs+2Sg+1SgO: kikîskison
+     kîskiswêw+V+TA+Ind+Prs+2Sg+1PlO: kikîskisonân
+     kîskiswêw+V+TA+Ind+Prs+2Pl+1PlO: kikîskisonân
+     kîskiswêw+V+TA+Ind+Prs+2Pl+1SgO: kikîskisonâwâw
+
+     kîskiswêw+V+TA+Ind+Prs+3Sg+1SgO: nikîskisok
+     kîskiswêw+V+TA+Ind+Prs+3Sg+2SgO: kikîskisok
+     kîskiswêw+V+TA+Ind+Prs+3Sg+1PlO: nikîskisokonân
+     kîskiswêw+V+TA+Ind+Prs+3Sg+12PlO: kikîskisokonaw
+     kîskiswêw+V+TA+Ind+Prs+3Sg+2PlO: kikîskisokowâw
+     
+     kîskiswêw+V+TA+Ind+Prs+3Pl+1SgO: nikîskisokwak
+     kîskiswêw+V+TA+Ind+Prs+3Pl+2SgO: kikîskisokwak
+     kîskiswêw+V+TA+Ind+Prs+3Pl+1PlO: nikîskisokonânak
+     kîskiswêw+V+TA+Ind+Prs+3Pl+12PlO: kikîskisokonawak
+     kîskiswêw+V+TA+Ind+Prs+3Pl+2PlO: kikîskisokowâwak
+     
+     kîskiswêw+V+TA+Ind+Prs+4Sg+3SgO: kîskisok
+     kîskiswêw+V+TA+Ind+Prs+4Sg+3PlO: kîskisokwak
+     kîskiswêw+V+TA+Ind+Prs+5Sg+4SgO: kîskisokoyiwa
+
+     kîskiswêw+V+TA+Ind+Prs+1Sg+2SgO: kikîskisotin
+     kîskiswêw+V+TA+Ind+Prs+1Pl+2SgO: kikîskisotinân
+     kîskiswêw+V+TA+Ind+Prs+1Pl+2PlO: kikîskisotinân
+     kîskiswêw+V+TA+Ind+Prs+1Sg+2PlO: kikîskisotinâwâw
+
+     kîskiswêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-kîskiswak, êhkîskiswak]
+     kîskiswêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-kîskiswat, êhkîskiswat]
+     kîskiswêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-kîskiswâyâhk, êhkîskiswâyâhk]
+     kîskiswêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-kîskiswâyahk, êhkîskiswâyahk]
+     kîskiswêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-kîskiswâyêk, êhkîskiswâyêk]
+
+     kîskiswêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-kîskiswakik, êhkîskiswakik]
+     kîskiswêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-kîskiswacik, êhkîskiswacik]
+     kîskiswêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-kîskiswâyâhkik, êhkîskiswâyâhkik]
+     kîskiswêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-kîskiswâyahkok, êhkîskiswâyâhkok]
+     kîskiswêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-kîskiswâyêkok, êhkîskiswâyêkok]     
+
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+4SgO: [ê-kîskiswât, êhkîskiswât]
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+4SgO: [ê-kîskiswâcik, êhkîskiswâcik]
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+4PlO: [ê-kîskiswât, êhkîskiswât]
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+4PlO: [ê-kîskiswâcik, êhkîskiswâcik]
+     kîskiswêw+V+TA+Cnj+Prs+4Sg+5SgO: [ê-kîskiswâyit, êhkîskiswâyit]
+
+     kîskiswêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-kîskisoyan, êhkîskisoyan]
+     kîskiswêw+V+TA+Cnj+Prs+2Sg+1PlO: [ê-kîskisoyâhk, êhkîskisoyâhk]
+     kîskiswêw+V+TA+Cnj+Prs+2Pl+1PlO: [ê-kîskisoyâhk, êhkîskisoyâhk]
+     kîskiswêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-kîskisoyêk, êhkîskisoyêk]
+
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-kîskisot, êhkîskisot]
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-kîskisosk, êhkîskisosk]
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-kîskisokoyâhk, êhkîskisokoyâhk]
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-kîskisokoyahk, êhkîskisokoyahk]
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-kîskisokoyêk, êhkîskisokoyêk]
+
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-kîskisicik, êhkîskisicik]
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-kîskisoskik, êhkîskisoskik]
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-kîskisokoyâhkik, êhkîskisokoyâhkik]
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-kîskisokoyahkok, êhkîskisokoyahkok]
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-kîskisokoyêkok, êhkîskisokoyêkok]
+
+     kîskiswêw+V+TA+Cnj+Prs+4Sg+3SgO: [ê-kîskisokot, êhkîskisokot]
+     kîskiswêw+V+TA+Cnj+Prs+4Sg+3PlO: [ê-kîskisokocik, êhkîskisokocik]
+     kîskiswêw+V+TA+Cnj+Prs+4Sg+4PlO: [ê-kîskisokoyit, êhkîskisokoyit]
+
+     kîskiswêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-kîskisotân, êhkîskisotân]
+     kîskiswêw+V+TA+Cnj+Prs+1Pl+2SgO: [ê-kîskisotâhk, êhkîskisotâhk]
+     kîskiswêw+V+TA+Cnj+Prs+1Pl+2PlO: [ê-kîskisotâhk, êhkîskisotâhk]
+     kîskiswêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-kîskisotakok, êhkîskisotakok]
+
+     kîskiswêw+V+TA+Imp+Imm+2Sg+3SgO: kîskis
+     kîskiswêw+V+TA+Imp+Imm+12Pl+3SgO: kîskiswâtân
+     kîskiswêw+V+TA+Imp+Imm+2Pl+3SgO: kîskisohk
+     kîskiswêw+V+TA+Imp+Imm+2Sg+3PlO: kîskisok
+     kîskiswêw+V+TA+Imp+Imm+12Pl+3PlO: kîskiswâtânik
+     kîskiswêw+V+TA+Imp+Imm+2Pl+3PlO: kîskisohkok
+
+     kîskiswêw+V+TA+Imp+Del+2Sg+3SgO: kîskiswâhkan
+     kîskiswêw+V+TA+Imp+Del+12Pl+3SgO: kîskiswâhkahk
+     kîskiswêw+V+TA+Imp+Del+2Pl+3SgO: kîskiswâhkêk
+     kîskiswêw+V+TA+Imp+Del+2Sg+3PlO: kîskiswâhkanik
+     kîskiswêw+V+TA+Imp+Del+12Pl+3PlO: kîskiswâhkahkok
+     kîskiswêw+V+TA+Imp+Del+2Pl+3PlO: kîskiswâhkêkok
+
+     kîskiswêw+V+TA+Imp+Imm+2Sg+1SgO: kîskison
+     kîskiswêw+V+TA+Imp+Imm+2Sg+1PlO: kîskisonân
+     kîskiswêw+V+TA+Imp+Imm+2Pl+1SgO: kîskisok
+     kîskiswêw+V+TA+Imp+Del+2Sg+1SgO: kîskisohkan
+     kîskiswêw+V+TA+Imp+Del+2Sg+1PlO: kîskisohkâhk
+     kîskiswêw+V+TA+Imp+Del+2Pl+1SgO: kîskisohkêk
+
+     kîskiswêw+V+TA+Fut+Cond+1Sg+3SgO: kîskiswaki
+     kîskiswêw+V+TA+Fut+Cond+1Sg+3PlO: kîskiswakwâwi
+     kîskiswêw+V+TA+Fut+Cond+1Pl+3SgO: kîskiswâyâhki
+     kîskiswêw+V+TA+Fut+Cond+1Pl+3PlO: kîskiswâyâhkwâwi
+     kîskiswêw+V+TA+Fut+Cond+12Pl+3SgO: kîskiswâyâhki
+     kîskiswêw+V+TA+Fut+Cond+12Pl+3PlO: kîskiswâyâhkwâwi
+
+     kîskiswêw+V+TA+Fut+Cond+2Sg+3SgO: kîskiswaci
+     kîskiswêw+V+TA+Fut+Cond+2Sg+3PlO: kîskiswatwâwi
+     kîskiswêw+V+TA+Fut+Cond+2Pl+3SgO: kîskiswâyêko
+     kîskiswêw+V+TA+Fut+Cond+2Pl+3PlO: kîskiswâyahkwâwi
+
+
+     kîskiswêw+V+TA+Fut+Cond+3Sg+4SgO: kîskiswâci
+          
+     kîskiswêw+V+TA+Fut+Cond+3Sg+1SgO: kîskisoci
+     kîskiswêw+V+TA+Fut+Cond+3Sg+2SgO: kîskisoski
+     kîskiswêw+V+TA+Fut+Cond+3Sg+1PlO: kîskisokoyâhki
+     kîskiswêw+V+TA+Fut+Cond+3Sg+2PlO: kîskisokoyêko
+     kîskiswêw+V+TA+Fut+Cond+3Sg+12PlO: kîskisokoyahko
+
+
+     kîskiswêw+V+TA+Fut+Cond+4Sg+3SgO: kîskisokoci
+    
+     kîskiswêw+V+TA+Fut+Cond+4Sg+3PlO: kîskisokotwâwi
+    
+     kîskiswêw+V+TA+Fut+Cond+4Pl+3SgO: kîskisokoci
+     
+     kîskiswêw+V+TA+Fut+Cond+4Pl+3PlO: kîskisokotwâwi
+     
+     kîskiswêw+V+TA+Fut+Cond+4Sg+5PlO: kîskisokoyici
+
+
+
+

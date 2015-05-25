@@ -1,0 +1,153 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - miskaw - find him/her : # VTA-Vw verb - full paradigm
+  
+     miskawêw+V+TA+Ind+Prs+1Sg+3SgO: nimiskawâw
+     miskawêw+V+TA+Ind+Prs+2Sg+3SgO: kimiskawâw
+     miskawêw+V+TA+Ind+Prs+1Pl+3SgO: nimiskawânân
+     miskawêw+V+TA+Ind+Prs+12Pl+3SgO: kimiskawânaw
+     miskawêw+V+TA+Ind+Prs+2Pl+3SgO: kimiskawâwâw
+     miskawêw+V+TA+Ind+Prs+3Sg+3SgO: miskawêw
+     miskawêw+V+TA+Ind+Prs+3Pl+3SgO: miskawêwak
+
+     miskawêw+V+TA+Ind+Prs+1Sg+3PlO: nimiskawâwak
+     miskawêw+V+TA+Ind+Prs+2Sg+3PlO: kimiskawâwak
+     miskawêw+V+TA+Ind+Prs+1Pl+3PlO: nimiskawânânak
+     miskawêw+V+TA+Ind+Prs+12Pl+3PlO: kimiskawânawak
+     miskawêw+V+TA+Ind+Prs+2Pl+3PlO: kimiskawâwâwak
+     miskawêw+V+TA+Ind+Prs+3Sg+3PlO: miskawêw
+     miskawêw+V+TA+Ind+Prs+3Pl+3PlO: miskawêwak
+
+     miskawêw+V+TA+Ind+Prs+4Sg+4SgO: miskawêyiwa
+     miskawêw+V+TA+Ind+Prs+4Sg+4PlO: miskawêyiwa     
+
+     miskawêw+V+TA+Ind+Prs+2Sg+1SgO: kimiskawin
+     miskawêw+V+TA+Ind+Prs+2Sg+1PlO: kimiskawinân
+     miskawêw+V+TA+Ind+Prs+2Pl+1PlO: kimiskawinân
+     miskawêw+V+TA+Ind+Prs+2Pl+1SgO: kimiskawinâwâw
+
+     miskawêw+V+TA+Ind+Prs+3Sg+1SgO: nimiskâk
+     miskawêw+V+TA+Ind+Prs+3Sg+2SgO: kimiskâk
+     miskawêw+V+TA+Ind+Prs+3Sg+1PlO: nimiskâkonân
+     miskawêw+V+TA+Ind+Prs+3Sg+12PlO: kimiskâkonaw
+     miskawêw+V+TA+Ind+Prs+3Sg+2PlO: kimiskâkowâw
+     
+     miskawêw+V+TA+Ind+Prs+3Pl+1SgO: nimiskâkwak
+     miskawêw+V+TA+Ind+Prs+3Pl+2SgO: kimiskâkwak
+     miskawêw+V+TA+Ind+Prs+3Pl+1PlO: nimiskâkonânak
+     miskawêw+V+TA+Ind+Prs+3Pl+12PlO: kimiskâkonawak
+     miskawêw+V+TA+Ind+Prs+3Pl+2PlO: kimiskâkowâwak
+     
+     miskawêw+V+TA+Ind+Prs+4Sg+3SgO: miskâk
+     miskawêw+V+TA+Ind+Prs+4Sg+3PlO: miskâkwak
+     miskawêw+V+TA+Ind+Prs+5Sg+4SgO: miskâkoyiwa
+
+     miskawêw+V+TA+Ind+Prs+1Sg+2SgO: kimiskâtin
+     miskawêw+V+TA+Ind+Prs+1Pl+2SgO: kimiskâtinân
+     miskawêw+V+TA+Ind+Prs+1Pl+2PlO: kimiskâtinân
+     miskawêw+V+TA+Ind+Prs+1Sg+2PlO: kimiskâtinâwâw
+
+     miskawêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-miskawak, êhmiskawak]
+     miskawêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-miskawat, êhmiskawat]
+     miskawêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-miskawâyâhk, êhmiskawâyâhk]
+     miskawêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-miskawâyahk, êhmiskawâyahk]
+     miskawêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-miskawâyêk, êhmiskawâyêk]
+
+     miskawêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-miskawakik, êhmiskawakik]
+     miskawêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-miskawacik, êhmiskawacik]
+     miskawêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-miskawâyâhkik, êhmiskawâyâhkik]
+     miskawêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-miskawâyâhkok, êhmiskawâyâhkok]
+     miskawêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-miskawâyêkok, êhmiskawâyêkok]     
+
+     miskawêw+V+TA+Cnj+Prs+3Sg+4SgO: [ê-miskawât, êhmiskawât]
+     miskawêw+V+TA+Cnj+Prs+3Pl+4SgO: [ê-miskawâcik, êhmiskawâcik]
+     miskawêw+V+TA+Cnj+Prs+3Sg+4PlO: [ê-miskawât, êhmiskawât]
+     miskawêw+V+TA+Cnj+Prs+3Pl+4PlO: [ê-miskawâcik, êhmiskawâcik]
+     miskawêw+V+TA+Cnj+Prs+4Sg+5SgO: [ê-miskawâyit, êhmiskawâyit]
+
+     miskawêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-miskawiyan, êhmiskawiyan]
+     miskawêw+V+TA+Cnj+Prs+2Sg+1PlO: [ê-miskawiyâhk, êhmiskawiyâhk]
+     miskawêw+V+TA+Cnj+Prs+2Pl+1PlO: [ê-miskawiyâhk, êhmiskawiyâhk]
+     miskawêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-miskawiyêk, êhmiskawiyêk]
+
+     miskawêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-miskawit, êhmiskât]
+     miskawêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-miskâsk, êhmiskâsk]
+     miskawêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-miskâkoyâhk, êhmiskâkoyâhk]
+     miskawêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-miskâkoyahk, êhmiskâkoyahk]
+     miskawêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-miskâkoyek, êhmiskâkoyek]
+
+     miskawêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-miskawicik, êhmiskâcik]
+     miskawêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-miskâskik, êhmiskâskik]
+     miskawêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-miskâkoyâhkik, êhmiskâkoyâhkik]
+     miskawêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-miskâkoyahkok, êhmiskâkoyahkok]
+     miskawêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-miskâkoyêkok, êhmiskâkoyêkok]
+
+     miskawêw+V+TA+Cnj+Prs+4Sg+3SgO: [ê-miskâkot, êhmiskâkot]
+     miskawêw+V+TA+Cnj+Prs+4Sg+3PlO: [ê-miskâkocik, êhmiskâkocik]
+     miskawêw+V+TA+Cnj+Prs+4Sg+4PlO: [ê-miskâkoyit, êhmiskâkoyit]
+
+     miskawêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-miskâtân, êhmiskâtân]
+     miskawêw+V+TA+Cnj+Prs+1Pl+2SgO: [ê-miskâtâhk, êhmiskâtâhk]
+     miskawêw+V+TA+Cnj+Prs+1Pl+2PlO: [ê-miskâtâhk, êhmiskâtâhk]
+     miskawêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-miskâtakok, êhmiskâtakok]
+
+     miskawêw+V+TA+Imp+Imm+2Sg+3SgO: miskaw
+     miskawêw+V+TA+Imp+Imm+12Pl+3SgO: miskawâtân
+     miskawêw+V+TA+Imp+Imm+2Pl+3SgO: miskâhk
+     miskawêw+V+TA+Imp+Imm+2Sg+3PlO: miskawik
+     miskawêw+V+TA+Imp+Imm+12Pl+3PlO: miskawâtânik
+     miskawêw+V+TA+Imp+Imm+2Pl+3PlO: miskâhkok
+
+     miskawêw+V+TA+Imp+Del+2Sg+3SgO: miskawâhkan
+     miskawêw+V+TA+Imp+Del+12Pl+3SgO: miskawâhkahk
+     miskawêw+V+TA+Imp+Del+2Pl+3SgO: miskawâhkêk
+     miskawêw+V+TA+Imp+Del+2Sg+3PlO: miskawâhkanik
+     miskawêw+V+TA+Imp+Del+12Pl+3PlO: miskawâhkahkok
+     miskawêw+V+TA+Imp+Del+2Pl+3PlO: miskawâhkêkok
+
+     miskawêw+V+TA+Imp+Imm+2Sg+1SgO: miskawin
+     miskawêw+V+TA+Imp+Imm+2Sg+1PlO: miskawinân
+     miskawêw+V+TA+Imp+Imm+2Pl+1SgO: miskawik
+     miskawêw+V+TA+Imp+Del+2Sg+1SgO: miskawîhkan
+     miskawêw+V+TA+Imp+Del+2Sg+1PlO: miskawîhkâhk
+     miskawêw+V+TA+Imp+Del+2Pl+1SgO: miskawîhkêk
+
+     miskawêw+V+TA+Fut+Cond+1Sg+3SgO: miskawaki
+     miskawêw+V+TA+Fut+Cond+1Sg+3PlO: miskawakwâwi
+     miskawêw+V+TA+Fut+Cond+1Pl+3SgO: miskawâyâhki
+     miskawêw+V+TA+Fut+Cond+1Pl+3PlO: miskawâyâhkwâwi
+     miskawêw+V+TA+Fut+Cond+12Pl+3SgO: miskawâyahko
+     miskawêw+V+TA+Fut+Cond+12Pl+3PlO: miskawâyahkwâwi
+
+     miskawêw+V+TA+Fut+Cond+2Sg+3SgO: miskawaci
+     miskawêw+V+TA+Fut+Cond+2Sg+3PlO: miskawatwâwi
+     miskawêw+V+TA+Fut+Cond+2Pl+3SgO: miskawâyêko
+     miskawêw+V+TA+Fut+Cond+2Pl+3PlO: miskawâyêkwâwi
+
+     miskawêw+V+TA+Fut+Cond+3Sg+4SgO: miskawâci
+     miskawêw+V+TA+Fut+Cond+3Sg+1SgO: miskawici
+     miskawêw+V+TA+Fut+Cond+3Sg+2SgO: miskâski
+     miskawêw+V+TA+Fut+Cond+3Sg+1PlO: miskâkoyâhki
+     miskawêw+V+TA+Fut+Cond+3Sg+2PlO: miskâkoyêko
+     miskawêw+V+TA+Fut+Cond+3Sg+12PlO: miskâkoyahki
+
+     miskawêw+V+TA+Fut+Cond+4Sg+3SgO: miskâkoci
+     miskawêw+V+TA+Fut+Cond+4Sg+3PlO: miskawâkotwâwi
+     miskawêw+V+TA+Fut+Cond+4Pl+3SgO: miskâkoci
+     miskawêw+V+TA+Fut+Cond+4Pl+3PlO: miskawâkotwâwi
+     miskawêw+V+TA+Fut+Cond+4Sg+5PlO: miskâkoyici
+     miskawêw+V+TA+Fut+Cond+4Pl+5PlO: miskâkoyici
+
+
+
+
+
