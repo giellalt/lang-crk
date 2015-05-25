@@ -1,0 +1,160 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - nâtêw - cut him/her through : # VTA-TS verb - full paradigm
+  
+     nâtêw+V+TA+Ind+Prs+1Sg+3SgO: ninâtâw
+     nâtêw+V+TA+Ind+Prs+2Sg+3SgO: kinâtâw
+     nâtêw+V+TA+Ind+Prs+1Pl+3SgO: ninâtânân
+     nâtêw+V+TA+Ind+Prs+12Pl+3SgO: kinâtânaw
+     nâtêw+V+TA+Ind+Prs+2Pl+3SgO: kinâtâwâw
+     nâtêw+V+TA+Ind+Prs+3Sg+4SgO: nâtêw
+     nâtêw+V+TA+Ind+Prs+3Pl+4SgO: nâtêwak
+
+     nâtêw+V+TA+Ind+Prs+1Sg+3PlO: ninâtâwak
+     nâtêw+V+TA+Ind+Prs+2Sg+3PlO: kinâtâwak
+     nâtêw+V+TA+Ind+Prs+1Pl+3PlO: ninâtânânak
+     nâtêw+V+TA+Ind+Prs+12Pl+3PlO: kinâtânawak
+     nâtêw+V+TA+Ind+Prs+2Pl+3PlO: kinâtâwâwak
+     nâtêw+V+TA+Ind+Prs+3Sg+4PlO: nâtêw
+     nâtêw+V+TA+Ind+Prs+3Pl+4PlO: nâtêwak
+
+     nâtêw+V+TA+Ind+Prs+4Sg+5SgO: nâtêyiwa
+     nâtêw+V+TA+Ind+Prs+4Sg+5PlO: nâtêyiwa     
+
+     nâtêw+V+TA+Ind+Prs+2Sg+1SgO: kinâsin
+     nâtêw+V+TA+Ind+Prs+2Sg+1PlO: kinâsinân
+     nâtêw+V+TA+Ind+Prs+2Pl+1PlO: kinâsinân
+     nâtêw+V+TA+Ind+Prs+2Pl+1SgO: kinâsinâwâw
+
+     nâtêw+V+TA+Ind+Prs+3Sg+1SgO: ninâsik
+     nâtêw+V+TA+Ind+Prs+3Sg+2SgO: kinâsik
+     nâtêw+V+TA+Ind+Prs+3Sg+1PlO: ninâtikonân
+     nâtêw+V+TA+Ind+Prs+3Sg+12PlO: kinâtikonaw
+     nâtêw+V+TA+Ind+Prs+3Sg+2PlO: kinâtkowâw
+     
+     nâtêw+V+TA+Ind+Prs+3Pl+1SgO: ninâtikwak
+     nâtêw+V+TA+Ind+Prs+3Pl+2SgO: kinâtikwak
+     nâtêw+V+TA+Ind+Prs+3Pl+1PlO: ninâtikonânak
+     nâtêw+V+TA+Ind+Prs+3Pl+12PlO: kinâtikonawak
+     nâtêw+V+TA+Ind+Prs+3Pl+2PlO: kinâtikowâwak
+     
+     nâtêw+V+TA+Ind+Prs+4Sg+3SgO: nâtik
+     nâtêw+V+TA+Ind+Prs+4Sg+3PlO: nâtikwak
+     nâtêw+V+TA+Ind+Prs+5Sg+4SgO: nâtikoyiwa
+
+     nâtêw+V+TA+Ind+Prs+1Sg+2SgO: kinâtitin
+     nâtêw+V+TA+Ind+Prs+1Pl+2SgO: kinâtitinân
+     nâtêw+V+TA+Ind+Prs+1Pl+2PlO: kinâtitinân
+     nâtêw+V+TA+Ind+Prs+1Sg+2PlO: kinâtitinâwâw
+
+     nâtêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-nâtak, êhnâtak]
+     nâtêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-nâtat, êhnâtat]
+     nâtêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-nâtâyâhk, êhnâtâyâhk]
+     nâtêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-nâtâyahk, êhnâtâyahk]
+     nâtêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-nâtâyêk, êhnâtâyêk]
+
+     nâtêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-nâtakik, êhnâtakik]
+     nâtêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-nâtacik, êhnâtacik]
+     nâtêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-nâtâyâhkik, êhnâtâyâhkik]
+     nâtêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-nâtâyahkok, êhnâtâyâhkok]
+     nâtêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-nâtâyêkok, êhnâtâyêkok]     
+
+     nâtêw+V+TA+Cnj+Prs+3Sg+4SgO: [ê-nâtât, êhnâtât]
+     nâtêw+V+TA+Cnj+Prs+3Pl+4SgO: [ê-nâtâcik, êhnâtâcik]
+     nâtêw+V+TA+Cnj+Prs+3Sg+4PlO: [ê-nâtât, êhnâtât]
+     nâtêw+V+TA+Cnj+Prs+3Pl+4PlO: [ê-nâtâcik, êhnâtâcik]
+     nâtêw+V+TA+Cnj+Prs+4Sg+5SgO: [ê-nâtâyit, êhnâtâyit]
+
+     nâtêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-nâsiyan, êhnâsiyan]
+     nâtêw+V+TA+Cnj+Prs+2Sg+1PlO: [ê-nâsiyâhk, êhnâsiyâhk]
+     nâtêw+V+TA+Cnj+Prs+2Pl+1PlO: [ê-nâsiyâhk, êhnâsiyâhk]
+     nâtêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-nâsiyêk, êhnâsiyêk]
+
+     nâtêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-nâsit, êhnâsit]
+     nâtêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-nâtisk, êhnâtisk]
+     nâtêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-nâtikoyâhk, êhnâtikoyâhk]
+     nâtêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-nâtikoyahk, êhnâtikoyahk]
+     nâtêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-nâtikoyêk, êhnâtikoyêk]
+
+     nâtêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-nâsicik, êhnâsicik]
+     nâtêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-nâtiskik, êhnâtiskik]
+     nâtêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-nâtikoyâhkik, êhnâtikoyâhkik]
+     nâtêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-nâtikoyahkok, êhnâtikoyahkok]
+     nâtêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-nâtikoyêkok, êhnâtikoyêkok]
+
+     nâtêw+V+TA+Cnj+Prs+4Sg+3SgO: [ê-nâtikot, êhnâtikot]
+     nâtêw+V+TA+Cnj+Prs+4Sg+3PlO: [ê-nâtikocik, êhnâtikocik]
+     nâtêw+V+TA+Cnj+Prs+4Sg+4PlO: [ê-nâtikoyit, êhnâtikoyit]
+
+     nâtêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-nâtitân, êhnâtitân]
+     nâtêw+V+TA+Cnj+Prs+1Pl+2SgO: [ê-nâtitâhk, êhnâtitâhk]
+     nâtêw+V+TA+Cnj+Prs+1Pl+2PlO: [ê-nâtitâhk, êhnâtitâhk]
+     nâtêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-nâtitakok, êhnâtitakok]
+
+     nâtêw+V+TA+Imp+Imm+2Sg+3SgO: nâsik
+     nâtêw+V+TA+Imp+Imm+12Pl+3SgO: nâtâtân
+     nâtêw+V+TA+Imp+Imm+2Pl+3SgO: nâtihk
+     nâtêw+V+TA+Imp+Imm+2Sg+3PlO: nâsik
+     nâtêw+V+TA+Imp+Imm+12Pl+3PlO: nâtâtânik
+     nâtêw+V+TA+Imp+Imm+2Pl+3PlO: nâtihkok
+
+     nâtêw+V+TA+Imp+Del+2Sg+3SgO: nâtâhkan
+     nâtêw+V+TA+Imp+Del+12Pl+3SgO: nâtâhkahk
+     nâtêw+V+TA+Imp+Del+2Pl+3SgO: nâtâhkêk
+     nâtêw+V+TA+Imp+Del+2Sg+3PlO: nâtâhkanik
+     nâtêw+V+TA+Imp+Del+12Pl+3PlO: nâtâhkahkok
+     nâtêw+V+TA+Imp+Del+2Pl+3PlO: nâtâhkêkok
+
+     nâtêw+V+TA+Imp+Imm+2Sg+1SgO: nâsin
+     nâtêw+V+TA+Imp+Imm+2Sg+1PlO: nâsinân
+     nâtêw+V+TA+Imp+Imm+2Pl+1SgO: nâsik
+     nâtêw+V+TA+Imp+Del+2Sg+1SgO: nâsîhkan
+     nâtêw+V+TA+Imp+Del+2Sg+1PlO: nâsîhkâhk
+     nâtêw+V+TA+Imp+Del+2Pl+1SgO: nâsîhkêk
+
+     nâtêw+V+TA+Fut+Cond+1Sg+3SgO: nâtaki
+     nâtêw+V+TA+Fut+Cond+1Sg+3PlO: nâtakwâwi
+     nâtêw+V+TA+Fut+Cond+1Pl+3SgO: nâtâyâhki
+     nâtêw+V+TA+Fut+Cond+1Pl+3PlO: nâtâyâhkwâwi
+     nâtêw+V+TA+Fut+Cond+12Pl+3SgO: nâtâyahko
+     nâtêw+V+TA+Fut+Cond+12Pl+3PlO: nâtâyâhkwâwi
+
+     nâtêw+V+TA+Fut+Cond+2Sg+3SgO: nâtaci
+     nâtêw+V+TA+Fut+Cond+2Sg+3PlO: nâtatwâwi
+     nâtêw+V+TA+Fut+Cond+2Pl+3SgO: nâtâyêko
+     nâtêw+V+TA+Fut+Cond+2Pl+3PlO: nâtâyêkwâwi
+
+
+     nâtêw+V+TA+Fut+Cond+3Sg+4SgO: nâtâci
+          
+     nâtêw+V+TA+Fut+Cond+3Sg+1SgO: nâsici
+     nâtêw+V+TA+Fut+Cond+3Sg+2SgO: nâtiski
+     nâtêw+V+TA+Fut+Cond+3Sg+1PlO: nâtikoyâhki
+     nâtêw+V+TA+Fut+Cond+3Sg+2PlO: nâtikoyêko
+     nâtêw+V+TA+Fut+Cond+3Sg+12PlO: nâtikoyahki
+
+
+     nâtêw+V+TA+Fut+Cond+4Sg+3SgO: nâtikoci
+    
+     nâtêw+V+TA+Fut+Cond+4Sg+3PlO: nâtikotwâwi
+    
+     nâtêw+V+TA+Fut+Cond+4Pl+3SgO: nâsikoci
+     
+     nâtêw+V+TA+Fut+Cond+4Pl+3PlO: nâtikotwâwi
+     
+     nâtêw+V+TA+Fut+Cond+4Sg+5PlO: nâtikoyici
+     nâtêw+V+TA+Fut+Cond+4Pl+5PlO: nâtikoyici
+
+
+
+
+
