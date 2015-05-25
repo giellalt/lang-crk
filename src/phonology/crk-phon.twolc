@@ -211,7 +211,7 @@ n:0 <=> [ o | i ] _ %>:0 [ h | %^NII:0 ] k ;
 
 "i:o i to o when after %^IO in VTACw"
 !! __@RULENAME@__
-i:o <=> %^IO:0 _ [ k | t | n ] ;
+i:o <=> %^IO:0 _ [ h | c | s | y | k | t | n ] ;
 
 "VTACw w to nothing when before %^IO"
 !! __@RULENAME@__

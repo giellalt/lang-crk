@@ -2302,8 +2302,8 @@ LEXICON TAVw_FUT
 +1Sg+3PlO:%>akwâwi	   # ;
 +1Pl+3SgO:%>âyâhki	   # ;
 +1Pl+3PlO:%>âyâhkwâwi  # ;
-+12Pl+3SgO:%>âyâhko	   # ;
-+12Pl+3PlO:%>âyâhkwâwi # ;
++12Pl+3SgO:%>âkoyahko	   # ;
++12Pl+3PlO:%>âkoyahkwâwi # ;
 
 +2Sg+3SgO:%>aci		   # ;
 +2Sg+3PlO:%>atwâwi	   # ;
@@ -2336,15 +2336,15 @@ LEXICON TACw_FUT
 +1Sg+3PlO:%>akwâwi	   # ;
 +1Pl+3SgO:%>âyâhki	   # ;
 +1Pl+3PlO:%>âyâhkwâwi  # ;
-+12Pl+3SgO:%>âyâhko	   # ;
++12Pl+3SgO:%>âyâhki	   # ;
 +12Pl+3PlO:%>âyâhkwâwi # ;
 
 +2Sg+3SgO:%>aci		   # ;
 +2Sg+3PlO:%>atwâwi	   # ;
 +2Pl+3SgO:%>âyêko	   # ;
-+2Pl+3PlO:%>âyêkwâwi   # ;
++2Pl+3PlO:%>âyahkwâwi   # ;
 					   
-+3Sg+4SgO:%>âyici	   # ;
++3Sg+4SgO:%>âci	   # ;
 +3Sg+3SgO:%>âci		   # ;
 +3Sg+3PlO:%>%^IOikotwâwi   # ;
 +3Sg+2SgO:%>%^IOiski	   # ;
@@ -2359,11 +2359,11 @@ LEXICON TACw_FUT
 					   
 +4Sg+4PlO:%>%^IOikoyici  # ;
 +4Sg+3SgO:%>%^IOikoci	   # ;
-+4Sg+3PlO:%>âyici	   # ;
++4Sg+3PlO:%>%^IOitwâwi	   # ;
++4Sg+5PlO:%>%^IOikoyici	   # ;
 +4Pl+4PlO:%>%^IOikoyici  # ;
 +4Pl+3SgO:%>%^IOikoci	   # ;
-+4Pl+3PlO:%>âyici	   # ;
-
++4Pl+3PlO:%>%^IOitwâwi	   # ;
 
 LEXICON TA_IMP
 @U.perspref.NULL@  2Sg_Imp ;
