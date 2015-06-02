@@ -1732,14 +1732,14 @@ LEXICON TACONJ-CONTTS
 LEXICON TACONJ-CONTVw
 < "+Ind":0 "@U.mood.indep@" > TA_INDVw ;
 < "+Cnj":0 "@U.mood.cnj@" > TA_CNJVw ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TAVw_FUT ; !
-< "+Imp":0 "@U.mood.imp@" > TAVw_IMP ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTVw ; !
+< "+Imp":0 "@U.mood.imp@" > TA_IMPVw ; !
 
 LEXICON TACONJ-CONTCw
 < "+Ind":0 "@U.mood.indep@" > TA_INDCw ; !
 < "+Cnj":0 "@U.mood.cnj@" > TA_CNJCw ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TACw_FUT ; !
-< "+Imp":0 "@U.mood.imp@" > TACw_IMP ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTCw ; !
+< "+Imp":0 "@U.mood.imp@" > TA_IMPCw ; !
 
 
 
@@ -2296,7 +2296,7 @@ LEXICON TA_FUT
 
 
 
-LEXICON TAVw_FUT
+LEXICON TA_FUTVw
 
 +1Sg+3SgO:%>aki		   # ;
 +1Sg+3PlO:%>akwâwi	   # ;
@@ -2330,7 +2330,7 @@ LEXICON TAVw_FUT
 +4Pl+3SgO:%>%^WIikoci	   # ;
 +4Pl+3PlO:%>âyici	   # ;
 
-LEXICON TACw_FUT
+LEXICON TA_FUTCw
 
 +1Sg+3SgO:%>aki		   # ;
 +1Sg+3PlO:%>akwâwi	   # ;
@@ -2383,7 +2383,7 @@ LEXICON TATS_IMP
 !@U.verb.imp1pl@  2PlTS_Imp ;
 !@U.verb.imp2pl@ 12PlTS_Imp ;
 
-LEXICON TAVw_IMP
+LEXICON TA_IMPVw
 @U.perspref.NULL@  2SgVw_Imp ;
 @U.perspref.NULL@  2PlVw_Imp ;
 @U.perspref.NULL@   12Pl_Imp ;
@@ -2392,7 +2392,7 @@ LEXICON TAVw_IMP
 !@U.verb.imp1pl@  2PlVw_Imp ;
 !@U.verb.imp2pl@   12Pl_Imp ;
 
-LEXICON TACw_IMP
+LEXICON TA_IMPCw
 @U.perspref.NULL@  2SgCw_Imp ;
 @U.perspref.NULL@  2PlCw_Imp ;
 @U.perspref.NULL@ 12PlCw_Imp ;
