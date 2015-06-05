@@ -256,7 +256,10 @@ Prefixes with a certain phonological content:
  *  %^TS:0      t to s in VTA-4 verbs before some i-init suf
  *  %^NII:0     n to h or 0 in VII verbs when before k-init suf
  *  %^WI:0       w to 0 in vta-2 verbs when before k-init suf
- *  %^IO:0     VTACw w + i becom o
+ *  %^IO:0     VTACw w + i become o
+ *  %^VS:0     Ruling out verbs from the w/i deletions in conjunction with possessives. 
+ *  %^w:w     NA -wak PL trigger
+
 
 
 
@@ -336,7 +339,10 @@ __n:h before k suf in VII__
 
 __i:0 in VTA-Vw__
 
-__w:0 in VTA-Vw__
+__w2:0 in VTA-Vw__
+
+__Lengthening of vowels before dissappearing stem final <w>__
+
 
 __n:0 before k suf in VII__
 
@@ -392,19 +398,20 @@ STEMS adds an affixmark and redirects to STEMLIST
 STEMLIST for nouns getting prefixes ni-, ki-, o- \\
 
 
+
 DEP-KINTERMSSTEMS adds an affixmark and redirects to KINTERMLIST
 
 DEP-KINTERMLIST for dependent nouns getting prefixes n-, k-, o- \\
 
  -tânis:itânis AN_KININFL "daughter" ; !yaml 
  -kosis:ikosis AN_KININFL "son" ; 	
-
 DEP-M-INIT-STEMS adds an affixmark and redirects to DEP-M-LIST 
 
 DEP-M-LIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
  maniway:aniway IN_DEP_INIT_M_SG "cheek" ; !yaml 	
  !maniway+N+IN+Sg:aniway NOPREFIX "cheek" ; !yaml 	
  mîpit:îpit IN_DEP_INIT_M "tooth" ; !yaml  	
+
 
 Plains Cree verb stems                       
 
@@ -435,6 +442,9 @@ The Plains Cree verbs are divided in four groups, but all of them are in the sam
  !nohtehkatew:nohtehkate AICONJ "be hungry" ; 
  !atoskêw:atoskê AICONJw "work" ;  test
  !nêhiyawêw:nêhiyawê AICONJw "work" ; 
+
+
+
 
 
 
@@ -1167,7 +1177,6 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
  LEXICON TA_CNJCw_SUF  gives conj + obj tag and suf
-
 
 
 

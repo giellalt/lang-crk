@@ -18,7 +18,10 @@
  *  %^TS:0      t to s in VTA-4 verbs before some i-init suf
  *  %^NII:0     n to h or 0 in VII verbs when before k-init suf
  *  %^WI:0       w to 0 in vta-2 verbs when before k-init suf
- *  %^IO:0     VTACw w + i becom o
+ *  %^IO:0     VTACw w + i become o
+ *  %^VS:0     Ruling out verbs from the w/i deletions in conjunction with possessives. 
+ *  %^w:w     NA -wak PL trigger
+
 
 
 
@@ -98,7 +101,10 @@ __n:h before k suf in VII__
 
 __i:0 in VTA-Vw__
 
-__w:0 in VTA-Vw__
+__w2:0 in VTA-Vw__
+
+__Lengthening of vowels before dissappearing stem final <w>__
+
 
 __n:0 before k suf in VII__
 
