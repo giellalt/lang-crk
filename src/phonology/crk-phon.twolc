@@ -199,10 +199,11 @@ w2:0 <=>  _ %>:0 %^WI:0 i:0 ;
 
 "Lengthening of vowels before dissappearing stem final <w>"
 !! __@RULENAME@__
-Vx:Vy <=> _ w2:0 %>:0 %^WI:0 ;
+Vx:Vy <=> Cns: _ w2:0 %>:0 %^WI:0 ;
    where Vx in ( a i o ) 
          Vy in ( â î ô )
    matched ;
+
 
 "n:0 before k suf in VII"
 !! __@RULENAME@__
