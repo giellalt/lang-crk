@@ -378,7 +378,7 @@ LEXICON VERBSTEMSPRE_REDUPL
 < 0:%- 0:%< "@U.joiner.hyphen@" > VERBSTEMS ;
 
 ! The following preverb structure is now defunct to the tagging preverbs where they are observed
-! LEXICON PREVERBS  != @CODE@ just adds the prefix boundary
+! LEXICON PREVERBS   just adds the prefix boundary
 ! :%> PVSLOT1PRE ;
 !
 ! LEXICON PVSLOT1PRE
