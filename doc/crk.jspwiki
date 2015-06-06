@@ -34,6 +34,10 @@ POS
  * +Interj     
  * +Pron       
  * +Num        
+ * +PUNCT       = punctuation symbols
+ * +LEFT        = the left part of a paired punctuation symbol
+ * +RIGHT       = the right part of a paired punctuation symbol
+ * +CLB         = clause boundary symbols
 
  * +Loc         Locative
 
