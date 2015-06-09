@@ -1,5 +1,5 @@
-! Divvun & Giellatekno - open source grammars for UNDEFINED language
-! Copyright © 2012 The University of Tromsø & the Norwegian Sámi Parliament
+! Divvun & Giellatekno - open source grammars for __UNDEFINED__ language
+! Copyright © 2015 The University of Tromsø & the Norwegian Sámi Parliament
 ! http://giellatekno.uit.no & http://divvun.no
 !
 ! This program is free software; you can redistribute and/or modify
@@ -10,21 +10,20 @@
 ! also available in the file $GTHOME/LICENSE.txt.
 !
 ! Other licensing options are available upon request, please contact
-! giellatekno@hum.uit.no or divvun@hum.uit.no
+! giellatekno@uit.no or feedback@divvun.no
 
 ! ========================================================================== !
 !!            !!!Plains Cree morphological analyser
 ! ========================================================================== !
+!! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF __UNDEFINED__ LANGUAGE.
+ 
 
-!! INTRODUCTION TO THE MORPHOLOGICAL ANALYSER OF Plains Cree .
-
-
-Multichar_Symbols  !!≈ !!!@CODE@ definitions
+Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! !!Analysis symbols
 
 !! The morphological analyses of wordforms of Plains Cree are presented
-!! in this system in terms of following symbols.
+!! in this system in terms of the following symbols.
 !! (It is highly suggested to follow existing standards when adding new tags).
 
 !! POS
