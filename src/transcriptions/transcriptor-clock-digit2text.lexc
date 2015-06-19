@@ -108,87 +108,87 @@ LEXICON AFTpunkt
 
 LEXICON BEF
 3%0:                      HALFHOUR ;
-31:nîstanaw% kekâmitâtahtosâp%  TO ;
-32:nîstanaw% ayinânewosâp%  TO ;
-33:nîstanaw% tepakohposâp%  TO ;
+31:nîstanaw% kêkâmitâtahtosâp%  TO ;
+32:nîstanaw% ayinânêwosâp%  TO ;
+33:nîstanaw% têpakohposâp%  TO ;
 34:nîstanaw% nikotwâsosâp%  TO ;
-35:nîstanaw% nîyânanosâp%  TO ;
-36:nîstanaw% newosâp%  TO ;
+35:nîstanaw% niyânanosâp%  TO ;
+36:nîstanaw% nêwosâp%  TO ;
 37:nîstanaw% nistosâp%  TO ;
 38:nîstanaw% nîsosâp%  TO ; 
-39:nîstanaw% peyakosâp%  TO ;
+39:nîstanaw% pêyakosâp%  TO ;
 4%0:nîstanaw%  TO ;
 41:kîkâmitâtahtosâp%  TO ;
-42:ayinânewosâp%  TO ;
-43:tepakohposâp%  TO ;
+42:ayinânêwosâp%  TO ;
+43:têpakohposâp%  TO ;
 44:nikotwâsiksâp%  TO ;
 45:niyânanosâp%  TO ;
-46:newosâposâp%  TO ;
+46:nêwosâposâp%  TO ;
 47:nistosâp%  TO ;
 48:nîsosâp%  TO ;
-49:peyakosâp%  TO ;
+49:pêyakosâp%  TO ;
 5%0:mitâtaht%  TO ;
 51:kîkâmitâtaht%  TO ;
-52:ayinânew%  TO ;
-53:tepakohp%  TO ;
+52:ayinânêw%  TO ;
+53:têpakohp%  TO ;
 54:nikotwâsik%  TO ;
 55:niyânan%  TO ;  
-56:newo%  TO ;  
+56:nêwo%  TO ;  
 57:nisto%  TO ;
 58:nîso%  TO ; 
-59:peyak%  TO ;
+59:pêyak%  TO ;
 
 LEXICON AFT
 %0%0:  HOUR ;
-%01:peyak%  OVER ;
+%01:pêyak%  OVER ;
 %02:nîso%  OVER ;
 %03:nisto%  OVER ;
-%04:newo%  OVER ;
-%05:nîyânan%  OVER ;
+%04:nêwo%  OVER ;
+%05:niyânan%  OVER ;
 %06:nikotwâsik%  OVER ;
-%07:tepakohp%  OVER ;
-%08:ayinânew%  OVER ;
-%09:kekâmitâtaht%  OVER ;
+%07:têpakohp%  OVER ;
+%08:ayinânêw%  OVER ;
+%09:kêkâmitâtaht%  OVER ;
 1%0:mitâtaht%  OVER ;
-11:peyakosâp%  OVER ;
+11:pêyakosâp%  OVER ;
 12:nîsosâp%  OVER ;
 13:nistosâp%  OVER ;
-14:newosâposâp%  OVER ;
+14:nêwosâposâp%  OVER ;
 15:niyânanosâp%  OVER ; 
 16:nikotwâsiksâp%  OVER ;
-17:tepakohposâp%  OVER ;
-18:ayinânewosâp%  OVER ;
+17:têpakohposâp%  OVER ;
+18:ayinânêwosâp%  OVER ;
 19:kîkâmitâtahtosâp%  OVER ;
 2%0:nîstanaw%  OVER ;
-21:nîstanaw% peyakosâp%  OVER ;
+21:nîstanaw% pêyakosâp%  OVER ;
 22:nîstanaw% nîsosâp%  OVER ;
 23:nîstanaw% nistosâp%  OVER ;
-24:nîstanaw% newosâp%  OVER ;
-25:nîstanaw% nîyânanosâp%  OVER ;  
+24:nîstanaw% nêwosâp%  OVER ;
+25:nîstanaw% niyânanosâp%  OVER ;  
 26:nîstanaw% nikotwâosâp%  OVER ;  
-27:nîstanaw% tepakohposâp%  OVER ;
-28:nîstanaw% ayinânewosâp%  OVER ; 
-29:nîstanaw% kekâmitâtahtosâp%  OVER ;
+27:nîstanaw% têpakohposâp%  OVER ;
+28:nîstanaw% ayinânêwosâp%  OVER ; 
+29:nîstanaw% kêkâmitâtahtosâp%  OVER ;
 
 LEXICON TO
- :cipahikanis% pâmayes%  HOUR ;
+ :cipahikanis% pâmayês%  HOUR ;
 
 LEXICON OVER
- :cipahikanis% mîyâskam%  HOUR ;
+ :cipahikanis% miyâskam%  HOUR ;
 
 LEXICON HALFHOUR
 @U.TIME.1@:nîsosâp@U.TIME.1@          HALF ;           
-@U.TIME.2@:peyak@U.TIME.2@         HALF ;         
+@U.TIME.2@:pêyak@U.TIME.2@         HALF ;         
 @U.TIME.3@:nîso@U.TIME.3@          HALF ;          
 @U.TIME.4@:nisto@U.TIME.4@       HALF ;       
-@U.TIME.5@:newo@U.TIME.5@         HALF ;         
-@U.TIME.6@:nîyânan@U.TIME.6@         HALF ;         
+@U.TIME.5@:nêwo@U.TIME.5@         HALF ;         
+@U.TIME.6@:niyânan@U.TIME.6@         HALF ;         
 @U.TIME.7@:nikotwâsik@U.TIME.7@       HALF ;       
-@U.TIME.8@:tepakohp@U.TIME.8@       HALF ;       
-@U.TIME.9@:ayinânew@U.TIME.9@         HALF ;         
-@U.TIME.10@:kekâmitâtaht@U.TIME.10@       HALF ;       
+@U.TIME.8@:têpakohp@U.TIME.8@       HALF ;       
+@U.TIME.9@:ayinânêw@U.TIME.9@         HALF ;         
+@U.TIME.10@:kêkâmitâtaht@U.TIME.10@       HALF ;       
 @U.TIME.11@:mitâtaht@U.TIME.11@   HALF ;   
-@U.TIME.12@:peyakosâp@U.TIME.12@     HALF ; 
+@U.TIME.12@:pêyakosâp@U.TIME.12@     HALF ; 
 
 LEXICON HALF
  :% mînâpihtaw # ; !Not obligatory to add tipahikan
@@ -196,17 +196,17 @@ LEXICON HALF
 
 
 LEXICON HOUR
-@U.TIME.1@:peyak@U.TIME.1@          TIPAHIKAN ;           
+@U.TIME.1@:pêyak@U.TIME.1@          TIPAHIKAN ;           
 @U.TIME.2@:nîso@U.TIME.2@         TIPAHIKAN ;         
 @U.TIME.3@:nisto@U.TIME.3@          TIPAHIKAN ;          
-@U.TIME.4@:newo@U.TIME.4@       TIPAHIKAN ;       
-@U.TIME.5@:nîyânan@U.TIME.5@         TIPAHIKAN ;         
+@U.TIME.4@:nêwo@U.TIME.4@       TIPAHIKAN ;       
+@U.TIME.5@:niyânan@U.TIME.5@         TIPAHIKAN ;         
 @U.TIME.6@:nikotwâsik@U.TIME.6@         TIPAHIKAN ;         
-@U.TIME.7@:tepakohp@U.TIME.7@       TIPAHIKAN ;       
-@U.TIME.8@:ayinânew@U.TIME.8@       TIPAHIKAN ;       
-@U.TIME.9@:kekâmitâtaht@U.TIME.9@         TIPAHIKAN ;         
+@U.TIME.7@:têpakohp@U.TIME.7@       TIPAHIKAN ;       
+@U.TIME.8@:ayinânêw@U.TIME.8@       TIPAHIKAN ;       
+@U.TIME.9@:kêkâmitâtaht@U.TIME.9@         TIPAHIKAN ;         
 @U.TIME.10@:mitâtaht@U.TIME.10@       TIPAHIKAN ;       
-@U.TIME.11@:peyakosâp@U.TIME.11@   TIPAHIKAN ;   
+@U.TIME.11@:pêyakosâp@U.TIME.11@   TIPAHIKAN ;   
 @U.TIME.12@:nîsosâp@U.TIME.12@     TIPAHIKAN ; 
 
 LEXICON TIPAHIKAN

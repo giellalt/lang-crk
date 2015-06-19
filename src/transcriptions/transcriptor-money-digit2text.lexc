@@ -46,7 +46,7 @@ LEXICON DISALLOW
 LEXICON QUARTS 
 25:niyânan QUART ; !$1.25 = 5 quarts
 5%0:nikotwâsik  QUART ; !$1.50 = 6 quarts
-75:tepakohp  QUART ; !$1.75 = 7 quarts
+75:têpakohp  QUART ; !$1.75 = 7 quarts
 
 
 LEXICON TENS
@@ -56,8 +56,8 @@ LEXICON TENS
 4:nemi TEN ;
 5:nîyânanomi TEN ;
 6:nikotwâsomi TEN ;
-7:tepakohpimi TEN ;
-8:ayinânewomi TEN ;
+7:têpakohpimi TEN ;
+8:ayinânêwomi TEN ;
 9:kekâmitâtahtomi TEN ;
 
 LEXICON TEN
@@ -65,52 +65,52 @@ LEXICON TEN
  :tanaw%  ONESTONEXT ;
 
 LEXICON ONESTONEXT
-1:peyakosâp DOLLAR ;
+1:pêyakosâp DOLLAR ;
 2:nîsosâp DOLLAR ;
 3:nistosâp DOLLAR ;
-4:newosâposâp DOLLAR ;
+4:nêwosâposâp DOLLAR ;
 5:niyânanosâp DOLLAR ;
 6:nikotwâsiksâp DOLLAR ;
-7:tepakohposâp DOLLAR ;
-8:ayinânewosâp DOLLAR ;
+7:têpakohposâp DOLLAR ;
+8:ayinânêwosâp DOLLAR ;
 9:kîkâmitâtahtosâp DOLLAR ;
 
 LEXICON TEENS
-11:peyakosâp DOLLAR ;
+11:pêyakosâp DOLLAR ;
 12:nîsosâp DOLLAR ;
 13:nistosâp DOLLAR ;
-14:newosâposâp DOLLAR ;
+14:nêwosâposâp DOLLAR ;
 15:niyânanosâp DOLLAR ;
 16:nikotwâsiksâp DOLLAR ;
-17:tepakohposâp DOLLAR ;
-18:ayinânewosâp DOLLAR ;
+17:têpakohposâp DOLLAR ;
+18:ayinânêwosâp DOLLAR ;
 19:kîkâmitâtahtosâp DOLLAR ;
 
 LEXICON ONES
 DCARDINAL ;
 
 LEXICON DCARDINAL
-1:peyak  ONEDOLLAR ;
+1:pêyak  ONEDOLLAR ;
 2:nîso  DOLLAR ;
 3:nisto  DOLLAR ;
-4:newo  DOLLAR ;
+4:nêwo  DOLLAR ;
 5:niyânan  DOLLAR ;
 6:nikotwâsik  DOLLAR ;
-7:tepakohp  DOLLAR ;
-8:ayinânew  DOLLAR ;
+7:têpakohp  DOLLAR ;
+8:ayinânêw  DOLLAR ;
 9:kîkâmitâtaht  DOLLAR ;
 
 
 LEXICON ONEDOLLAR ! singularis
-%.% :newopehikan MONEY ;
-%.%0%0:% newopehikan ENDLEX ;
-:% newopehikan ENDLEX ;
+%.% :nêwopêhikan MONEY ;
+%.%0%0:% nêwopêhikan ENDLEX ;
+:% nêwopêhikan ENDLEX ;
 
 
 LEXICON DOLLAR ! pluralis
-%.:% newopehikanak MONEY ;
-%.%0%0:% newopehikanak ENDLEX ;
-:% newopehikanak ENDLEX ;
+%.:% nêwopêhikanak MONEY ;
+%.%0%0:% nêwopêhikanak ENDLEX ;
+:% nêwopêhikanak ENDLEX ;
 
 
 LEXICON MONEY
@@ -122,30 +122,30 @@ LEXICON CCARDINAL
 15:niyânansâp CENT ;
 2%0:nîstanaw CENT ;
 25:nîstanaw% niyânanosâp CENT ;
-25:peyak QUART ;
+25:pêyak QUART ;
 3%0:nistomitanaw CENT ;
 35:nistomitanaw% niyânanosâp CENT ;
-4%0:nemitanaw CENT ;
-45:nemitanaw% niyânanosâp CENT ;
-5%0:nîyânanomitanaw CENT ;
+4%0:nêmitanaw CENT ;
+45:nêmitanaw% niyânanosâp CENT ;
+5%0:niyânanomitanaw CENT ;
 5%0:nîso QUART ;
 5%0:mînâpihtaw HALFDOLLAR ;
-55:nîyânanomitanaw% niyânanosâp CENT ;
-6%0:nîyânanomitanaw CENT ;
+55:niyânanomitanaw% niyânanosâp CENT ;
+6%0:niyânanomitanaw CENT ;
 65:nikotwâsomitanaw% niyânanosâp CENT ;
-7%0:tepakohpimitanaw CENT ;
-75:tepakohpimitanaw% niyânanosâp CENT ;
+7%0:têpakohpimitanaw CENT ;
+75:têpakohpimitanaw% niyânanosâp CENT ;
 75:nisto QUART ;
-8%0:ayinânewomitanaw CENT ;
-85:ayinânewomitanaw% niyânanosâp CENT ;
-9%0:kekâmitâtahtomitanaw CENT ;
-95:kekâmitâtahtomitanaw% niyânanosâp CENT ;
+8%0:ayinânêwomitanaw CENT ;
+85:ayinânêwomitanaw% niyânanosâp CENT ;
+9%0:kêkâmitâtahtomitanaw CENT ;
+95:kêkâmitâtahtomitanaw% niyânanosâp CENT ;
 
 LEXICON CENT
 :% pîwâpiskos ENDLEX ;
 
 LEXICON QUART
-:% sônîyâs ENDLEX ;
+:% sôniyâs ENDLEX ;
 
 LEXICON HALFDOLLAR
 @D.dollar.dis@ ENDLEX ;
