@@ -20,6 +20,8 @@
     cat *verblemmas | sort -u > allverblemmas
     cat verbgenlemmas | grep '[a-z]' | sort -u > sortverbgenlemmas
     comm -23 allverblemmas sortverbgenlemmas > missingverbs.txt
+        rm *verblemmas *genlemmas
+
 
     open missingverbs.txt
 
