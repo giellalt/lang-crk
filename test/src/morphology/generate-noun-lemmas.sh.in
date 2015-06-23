@@ -17,7 +17,7 @@
     cat ANnounlemmas INnounlemmas plANnounlemmas plINnounlemmas | sort -u > allnounlemmas
     cat noungenlemmas | grep '[a-z]' | sort -u > sortnoungenlemmas
     comm -23 allnounlemmas sortnoungenlemmas > missingnouns.txt
-#        rm noungenlemmas depgenlemmas ANnounlemmas INnounlemmas plINnounlemmas plANnounlemmas
+        rm noungenlemmas depgenlemmas ANnounlemmas INnounlemmas plINnounlemmas plANnounlemmas
 
 
     open missingnouns.txt
