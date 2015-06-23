@@ -11,7 +11,7 @@ Participants: Antti, Atticus
 	3. Add -ikawi- unspecified actor suffix
 	4. fix VTA 5 definition/conj. This is the same as VTA 1 but the IMM IMP add <-i> to stem.
 	6. include reciprocals and ensure they show up only in the sg. 
-	7. Go through IICONJ and verify with Arok which are SG or Pl only. Infrastructure for this is implemented, there just needs to be coding in the stems file to redirect to relevant lexica. 
+	7. Go through IICONJ and verify with Arok which are SG or Pl only. Infrastructure for this is implemented, there just needs to be coding in the stems file to redirect to relevant lexica. After II verbs, Do this process systematically for AICONJ, TICONJ and TACONJ verbs.
 	
 	These will take more work and research to implement:
 
