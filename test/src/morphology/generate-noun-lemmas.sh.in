@@ -2,18 +2,22 @@
 
 
     egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN' |egrep -v '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > ANnounlemmas
+    egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN.*PL' |egrep -v '^\-' |  tr '+:' ' ' | cut -d ' ' -f1 > plANnounlemmas
     egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN' |egrep '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > depANnounlemmas
     egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN' |egrep -v '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > INnounlemmas
+    egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN.*PL'' |egrep -v '^\-' |  tr '+:' ' ' | cut -d ' ' -f1 > plINnounlemmas
     egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN' |egrep '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > depINnounlemmas
     cat ANnounlemmas |sed 's/$/+N+AN+Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 > noungenlemmas
     cat INnounlemmas |sed 's/$/+N+IN+Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
+    cat plANnounlemmas |sed 's/$/+N+AN+Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
+    cat plINnounlemmas |sed 's/$/+N+IN+Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
     cat depANnounlemmas |sed 's/$/+N+AN+Sg+Px1Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 > depgenlemmas
     cat depINnounlemmas |sed 's/$/+N+IN+Sg+Px1Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> depgenlemmas
     
-    cat ANnounlemmas INnounlemmas | sort -u > allnounlemmas
+    cat ANnounlemmas INnounlemmas plANnounlemmas plINnounlemmas | sort -u > allnounlemmas
     cat noungenlemmas | grep '[a-z]' | sort -u > sortnoungenlemmas
     comm -23 allnounlemmas sortnoungenlemmas > missingnouns.txt
-        rm noungenlemmas depgenlemmas ANnounlemmas INnounlemmas
+#        rm noungenlemmas depgenlemmas ANnounlemmas INnounlemmas plINnounlemmas plANnounlemmas
 
 
     open missingnouns.txt
