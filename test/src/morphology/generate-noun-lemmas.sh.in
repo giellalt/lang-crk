@@ -1,24 +1,29 @@
 #Script adapted to Cree
 
 
-    egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN' |egrep -v '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > ANnounlemmas
-    egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN.*PL' |egrep -v '^\-' |  tr '+:' ' ' | cut -d ' ' -f1 > plANnounlemmas
-    egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN' |egrep '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > depANnounlemmas
-    egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN' |egrep -v '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > INnounlemmas
-    egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN.*PL'' |egrep -v '^\-' |  tr '+:' ' ' | cut -d ' ' -f1 > plINnounlemmas
-    egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN' |egrep '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > depINnounlemmas
-    cat ANnounlemmas |sed 's/$/+N+AN+Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 > noungenlemmas
-    cat INnounlemmas |sed 's/$/+N+IN+Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
-    cat plANnounlemmas |sed 's/$/+N+AN+Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
-    cat plINnounlemmas |sed 's/$/+N+IN+Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
-    cat depANnounlemmas |sed 's/$/+N+AN+Sg+Px1Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 > depgenlemmas
-    cat depINnounlemmas |sed 's/$/+N+IN+Sg+Px1Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> depgenlemmas
-    
-    cat ANnounlemmas INnounlemmas plANnounlemmas plINnounlemmas | sort -u > allnounlemmas
-    cat noungenlemmas | grep '[a-z]' | sort -u > sortnoungenlemmas
-    comm -23 allnounlemmas sortnoungenlemmas > missingnouns.txt
-        rm noungenlemmas depgenlemmas ANnounlemmas INnounlemmas plINnounlemmas plANnounlemmas
+egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN' |egrep -v '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > ANnounlemmas
+egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN.*PL' |egrep -v '^\-' |  tr '+:' ' ' | cut -d ' ' -f1 > plANnounlemmas
+egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN' |egrep -v '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > INnounlemmas
+egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN.*PL' |egrep -v '^\-' |  tr '+:' ' ' | cut -d ' ' -f1 > plINnounlemmas
+
+egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep '^\-.* AN_KIN' |grep -v 'PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+AN+Sg+Px1Sg/' >  noungenlemmas  
+ #   ehco 'adfs,asfd,afsd' | tr ',' '\n' > depINnounlemmas
+
+cat ANnounlemmas |sed 's/$/+N+AN+Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
+cat INnounlemmas |sed 's/$/+N+IN+Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
+cat plANnounlemmas |sed 's/$/+N+AN+Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
+cat plINnounlemmas |sed 's/$/+N+IN+Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
+cat depANnounlemmas |sed 's/$/+N+AN+Sg+Px1Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
+#    cat depINnounlemmas |sed 's/$/+N+IN+Sg+Px1Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
+ 
+echo 'nasakay,naskasiy,nêkâ,nicawâsimis,nicâhkos,nicâhkosê,nicânis,nicâpân,nicâpânis,nicâsis,nicêhis,nicêmisis,niciwâm,niciwâmis,niciwâmiskwêm,niciwâ,nicîhcâwâw,nicîhcîkom,nicohcôsimis,nicôcêmisis,nikayâsim,nikâwiy,nikâwîs,nikâ,nikisêyinîm,nikocâk,nikocâsiskwêm,nikosê,nikosim,nikosis,nikwêmês,nikwêmê,nimanâcimâkan,nimanitôm,nimâmâ,niminôsimis,nimis,nimisê,nimosôm,nimosômipan,nimosô,ninahâhkaniskwêm,ninahâhkim,ninahâhkisîm,ninâpêm,ninîkihik,ninôtokwêm,nipawâkan,nipâpâ,nipêpîm,nipêyakokosisân,nisikos,nisikosê,nisis,nisisê,nisîm,nisîmê,nisîmis,nispayowak,nistês,nistêsê,nistim,nistimihkâwin,nitakikom,nitaskihkom,nitawâsimis,nitawêmâw,nitawêmâ,nitayisiyinîm,nitâkay,nitânis,nitâniskocâpân,nitâniskocâpânis,nitâniskotâpân,nitân,nitâpân,nitâs,nitâyim,nitêm,nitihkom,nitihkwatim,nitihkwâ,nitihtâwâw,nitihtihkos,nitihtihkosiw,nitihtihkosiy,nitiskwêm,nitisowayak,nitiyinîmak,nitîhiy,nitohtôsim,nitôkimâm,nitôkimâskwêm,nitôsim,nitôsimiskwêm,nitôsis,nitôskinîkiskwêm,nitôskinîkîm,nitôskinîkîmis,nitôtêm,niwâhkômâkan,niwiyihkosak,niwiyihkwak,niwîcêwâkan,niwîcêwâkanis,niwîkimâkan,niwîtatoskêmâkan,niyihkos,niyihkwak,nîcimos,nîcisân,nîcisânis,nîscâs,nîskwa,nîstâw,nîtim,nîtisân,nîwa,nîwahikan,nôhcâwîs,nôhkom,nôhkomipan,nôhkomis,nôhkô,nôhpan,nôhtâwiy,nôhtâwîhkâwin,nôhtâwîpan,nôhtâ,nôsisê,nôsisim' | tr ',' '\n' > allnounlemmas
+
+cat ANnounlemmas INnounlemmas plANnounlemmas plINnounlemmas  >> allnounlemmas
+sort -u -o allnounlemmas allnounlemmas
+cat noungenlemmas | grep '[a-z]' | sort -u > sortnoungenlemmas
+comm -23 allnounlemmas sortnoungenlemmas > missingnouns.txt
+rm noungenlemmas depgenlemmas ANnounlemmas INnounlemmas plINnounlemmas plANnounlemmas
 
 
-    open missingnouns.txt
+open missingnouns.txt
 
