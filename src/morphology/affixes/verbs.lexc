@@ -1881,6 +1881,10 @@ LEXICON VTA_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 
 +1Pl+4Sg/PlO:%>imânâna	  # ; ! From NS 152
 +3Pl+1PlO:%>ikonânak  # ;
 
++4Sg/Pl+1SgO:%>ikoyiwa	   # ; ! FROM NS 152
++4Sg/Pl+1PlO:%>ikonân	   # ; ! FROM NS 152
+
+
 
 
 LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
@@ -1908,6 +1912,10 @@ LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 +1Sg+2PlO:%>itinâwâw         # ;
 +1Pl+2PlO:%>itinân         # ;
 
++4Sg/Pl+2SgO:%>ikoyiwa	   # ; ! FROM NS 152
++4Sg/Pl+2PlO:%>ikowâw	   # ; ! FROM NS 152
++4Sg/Pl+12PlO:%>ikonaw	   # ; ! FROM NS 152
+
 				  
 LEXICON VTA_NULL_O 	  
 +3Sg+4Sg/PlO:%>êw		  # ; ! Implementing forth, fifth persons 
@@ -1930,6 +1938,10 @@ LEXICON VTA_NULL_O
 !+3Pl+3PlO:%>êwak	  # ;
 !+4Pl+3SgO:%>êyiwa	  # ;
 !+4Pl+3PlO:%>êyiwa	  # ;
+
++4Sg/Pl+3SgO:%>ik	   # ; ! FROM NS 152
++4Sg/Pl+3PlO:%>ikwak	   # ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>ikoyiwa	   # ; ! FROM NS 152
 
 LEXICON VTATS_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 +2Sg+3SgO:%>âw		  # ;
@@ -1956,6 +1968,10 @@ LEXICON VTATS_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subje
 +1Sg+2PlO:%>itinâwâw         # ;
 +1Pl+2PlO:%>itinân         # ;
 
++4Sg/Pl+2SgO:%>ikoyiwa	   # ; ! FROM NS 152
++4Sg/Pl+2PlO:%>ikowâw	   # ; ! FROM NS 152
++4Sg/Pl+12PlO:%>ikonaw	   # ; ! FROM NS 152
+
 				  
 LEXICON VTATS_NULL_O 	  
 +3Sg+4Sg/PlO:%>êw		  # ; ! Implementing forth, fifth persons
@@ -1979,6 +1995,10 @@ LEXICON VTATS_NULL_O
 !+4Pl+3SgO:%>êyiwa	  # ;
 !+4Pl+3PlO:%>êyiwa	  # ;
 
++4Sg/Pl+3SgO:%>ik	   # ; ! FROM NS 152
++4Sg/Pl+3PlO:%>ikwak	   # ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>ikoyiwa	   # ; ! FROM NS 152
+
 LEXICON VTAVw_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
 +1Sg+3SgO:%>âw		  # ;
 +1Sg+3PlO:%>âwak	  # ;
@@ -1994,6 +2014,9 @@ LEXICON VTAVw_NI_O-PL  !!= @CODE@  Plural forms
 +1Pl+3PlO:%>ânânak	  # ;
 +1Pl+4Sg/PlO:%>imânâna	  # ;   ! From NS 152
 +3Pl+1PlO:%>%^WIikonânak  # ;
+
++4Sg/Pl+1SgO:%>%^WIikoyiwa	   # ; ! FROM NS 152
++4Sg/Pl+1PlO:%>%^WIikonân	   # ; ! FROM NS 152
 
 
 LEXICON VTAVw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
@@ -2025,6 +2048,9 @@ LEXICON VTAVw_KI_O-PL 	    !!= @CODE@ plural forms
 +1Pl+2SgO:%>%^WIitinân         # ; !OBS
 +1Pl+2PlO:%>%^WIitinân         # ;
 
++4Sg/Pl+2SgO:%>%^WIikoyiwa	   # ; ! FROM NS 152
++4Sg/Pl+2PlO:%>%^WIikowâw	   # ; ! FROM NS 152
++4Sg/Pl+12PlO:%>%^WIikonaw	   # ; ! FROM NS 152
 
 				  
 LEXICON VTAVw_NULL_O !!= * @CODE@	  
@@ -2050,6 +2076,10 @@ LEXICON VTAVw_NULL_O-PL !!= * @CODE@
 !+4Pl+3SgO:%>êyiwa	  # ;
 !+4Pl+3PlO:%>êyiwa	  # ;
 
++4Sg/Pl+3SgO:%>%^WIik	   # ; ! FROM NS 152
++4Sg/Pl+3PlO:%>%^WIikwak	   # ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>%^WIikoyiwa	   # ; ! FROM NS 152
+
 
 
 LEXICON VTACw_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
@@ -2064,6 +2094,9 @@ LEXICON VTACw_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject o
 +1Pl+3PlO:%>ânânak	  # ;
 +1Pl+3Sg/PlO:%>imânâna	  # ; ! From NS 152
 +3Pl+1PlO:%>%^IOikonânak  # ;
+
++4Sg/Pl+1SgO:%>%^IOikoyiwa	   # ; ! FROM NS 152
++4Sg/Pl+1PlO:%>%^IOikonân	   # ; ! FROM NS 152
 
 
 LEXICON VTACw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
@@ -2091,6 +2124,11 @@ LEXICON VTACw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subje
 +1Sg+2PlO:%>%^IOitinâwâw         # ;
 +1Pl+2PlO:%>%^IOitinân         # ;
 
++4Sg/Pl+2SgO:%>%^IOikoyiwa	   # ; ! FROM NS 152
++4Sg/Pl+2PlO:%>%^IOikowâw	   # ; ! FROM NS 152
++4Sg/Pl+12PlO:%>%^IOikonaw	   # ; ! FROM NS 152
+
+
 				  
 LEXICON VTACw_NULL_O !!= * @CODE@	  
 +3Sg+4Sg/PlO:%>êw		  # ; ! Implementing forth, fifth persons
@@ -2103,16 +2141,20 @@ LEXICON VTACw_NULL_O !!= * @CODE@
 +3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing forth, fifth persons
 +4Sg+5Sg/PlO:%>êyiwa	  # ;
 
-+4Sg+3SgO:%>%^IOik	  # ; !OBS
-+5Sg+3SgO:%>%^IOikoyiwa  # ; 
-+4Sg+3PlO:%>%^IOikwak	  # ; !OBS
-+5Sg+4SgO:%>%^IOikoyiwa  # ; !??
-+4Sg+4SgO:%>êyiwa  # ; !
+!+4Sg+3SgO:%>%^IOik	  # ; !OBS
+!+5Sg+3SgO:%>%^IOikoyiwa  # ; 
+!+4Sg+3PlO:%>%^IOikwak	  # ; !OBS
+!+5Sg+4SgO:%>%^IOikoyiwa  # ; !??
+!+4Sg+4SgO:%>êyiwa  # ; !
 
 !+3Pl+3PlO:%>%^IOikowak	  # ; ??
 !+3Pl+3PlO:%>êwak	  # ;
 !+4Pl+3SgO:%>êyiwa	  # ;
 !+4Pl+3PlO:%>êyiwa	  # ;
+
++4Sg/Pl+3SgO:%>%^IOik	   # ; ! FROM NS 152
++4Sg/Pl+3PlO:%>%^IOikwak	   # ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>%^IOikoyiwa	   # ; ! FROM NS 152
 
 
 
@@ -2190,22 +2232,33 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +2Pl+1SgO:%>iyêk       # ;
 
 
-+4Sg+4SgO:%>ikoyit	   # ;
-+4Sg+4PlO:%>ikoyit   # ;
-+4Sg+3SgO:%>ikot	   # ;
-+4Sg+3PlO:%>ikocik	   # ;
+!+4Sg+4SgO:%>ikoyit	   # ;
+!+4Sg+4PlO:%>ikoyit   # ;
+!+4Sg+3SgO:%>ikot	   # ;
+!+4Sg+3PlO:%>ikocik	   # ;
 +4Sg/Pl+5Sg/PlO:%>âyit	   # ; ! former 3SgO
 
-+4Pl+4SgO:%>ikoyit	   # ;
-+4Pl+4PlO:%>ikocik   # ;
-!+4Pl+3SgO:%>ikot	   # ;
-+4Pl+3PlO:%>ikocik	   # ;
+!+4Pl+4SgO:%>ikoyit	   # ;
+!+4Pl+4PlO:%>ikocik   # ;
+!!+4Pl+3SgO:%>ikot	   # ;
+!+4Pl+3PlO:%>ikocik	   # ;
 
 +1Sg+2SgO:%>itân         # ;
 +1Pl+2SgO:%>itâhk         # ; 
 +1Pl+2PlO:%>itâhk         # ; 
 +1Sg+2PlO:%>itakok         # ;
-+3Sg+4SgO:%>ât	   # ;
++3Sg+4Sg/PlO:%>ât	   # ;
+
++4Sg/Pl+1SgO:%>iyit	   # ; ! FROM NS 152
++4Sg/Pl+1PlO:%>ikoyâhk	   # ; ! FROM NS 152
+
++4Sg/Pl+2SgO:%>isk	   # ; ! FROM NS 152
++4Sg/Pl+2PlO:%>ikoyêk	   # ; ! FROM NS 152
++4Sg/Pl+12PlO:%>ikoyahk	   # ; ! FROM NS 152
+
++4Sg/Pl+3SgO:%>ikot	   # ; ! FROM NS 152
++4Sg/Pl+3PlO:%>ikocik	   # ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>ikoyit	   # ; ! FROM NS 152
 
 LEXICON TA_CNJTS_SUF !!= @CODE@ gives conj + obj tag and suf
 
@@ -2253,22 +2306,36 @@ LEXICON TA_CNJTS_SUF !!= @CODE@ gives conj + obj tag and suf
 +2Pl+1SgO:%>%^TSiyêk       # ;
 
 
-+4Sg+4SgO:%>ikoyit	   # ;
-+4Sg+4PlO:%>ikoyit   # ;
-+4Sg+3SgO:%>ikot	   # ;
-+4Sg+3PlO:%>ikocik	   # ;
+!+4Sg+4SgO:%>ikoyit	   # ;
+!+4Sg+4PlO:%>ikoyit   # ;
+!+4Sg+3SgO:%>ikot	   # ;
+!+4Sg+3PlO:%>ikocik	   # ;
 +4Sg/Pl+5Sg/PlO:%>âyit	   # ; ! former 3SgO
 
-+4Pl+4SgO:%>ikoyit	   # ;
-+4Pl+4PlO:%>ikocik   # ;
-!+4Pl+3SgO:%>ikot	   # ;
-+4Pl+3PlO:%>ikocik	   # ;
+!+4Pl+4SgO:%>ikoyit	   # ;
+!+4Pl+4PlO:%>ikocik   # ;
+!!+4Pl+3SgO:%>ikot	   # ;
+!+4Pl+3PlO:%>ikocik	   # ;
 
 +1Sg+2SgO:%>itân         # ;
 +1Pl+2SgO:%>itâhk         # ; 
 +1Pl+2PlO:%>itâhk         # ; 
 +1Sg+2PlO:%>itakok         # ;
 +3Sg+4SgO:%>ât	   # ;
+
+
++4Sg/Pl+1SgO:%>iyit	   # ; ! FROM NS 152
++4Sg/Pl+1PlO:%>ikoyâhk	   # ; ! FROM NS 152
+
++4Sg/Pl+2SgO:%>isk	   # ; ! FROM NS 152
++4Sg/Pl+2PlO:%>ikoyêk	   # ; ! FROM NS 152
++4Sg/Pl+12PlO:%>ikoyahk	   # ; ! FROM NS 152
+
++4Sg/Pl+3SgO:%>ikot	   # ; ! FROM NS 152
++4Sg/Pl+3PlO:%>ikocik	   # ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>ikoyit	   # ; ! FROM NS 152
+
+
 
 LEXICON TA_CNJVw_SUF !!= @CODE@ gives conj + obj tag and suf
 +1Sg+3SgO:%>ak		   # ;
@@ -2291,10 +2358,10 @@ LEXICON TA_CNJVw_SUF !!= @CODE@ gives conj + obj tag and suf
 +2Sg+1SgO:%>iyan       # ;
 +2Sg+1PlO:%>iyâhk       # ;
 
-+4Sg+4SgO:%>%^WIikoyit	   # ;
-+4Sg+4PlO:%>%^WIikoyit   # ;
-+4Sg+3SgO:%>%^WIikot	   # ;
-+4Sg+3PlO:%>%^WIikocik	   # ;
++!4Sg+4SgO:%>%^WIikoyit	   # ;
+!+4Sg+4PlO:%>%^WIikoyit   # ;
+!+4Sg+3SgO:%>%^WIikot	   # ;
+!+4Sg+3PlO:%>%^WIikocik	   # ;
 +4Sg/Pl+5Sg/PlO:%>âyit	   # ; ! former 3SgO
 
 +1Sg+2SgO:%>%^WIitân         # ;
@@ -2329,13 +2396,24 @@ LEXICON TA_CNJVw_SUF-PL !!= @CODE@ gives conj + obj tag and suf, plural forms
 +2Pl+1PlO:%>iyâhk       # ;
 +2Pl+1SgO:%>iyêk       # ;
 
-+4Pl+4SgO:%>%^WIikoyit	   # ;
-+4Pl+4PlO:%>%^WIikocik   # ;
+!+4Pl+4SgO:%>%^WIikoyit	   # ;
+!+4Pl+4PlO:%>%^WIikocik   # ;
 !+4Pl+3SgO:%>%^WIikot	   # ;
-+4Pl+3PlO:%>%^WIikocik	   # ;
+!+4Pl+3PlO:%>%^WIikocik	   # ;
 
 +1Pl+2SgO:%>%^WIitâhk         # ; 
 +1Pl+2PlO:%>%^WIitâhk         # ; 
+
++4Sg/Pl+1SgO:%>%^WIiyit	   # ; ! FROM NS 152
++4Sg/Pl+1PlO:%>%^WIikoyâhk	   # ; ! FROM NS 152
+
++4Sg/Pl+2SgO:%>%^WIisk	   # ; ! FROM NS 152
++4Sg/Pl+2PlO:%>%^WIikoyêk	   # ; ! FROM NS 152
++4Sg/Pl+12PlO:%>%^WIikoyahk	   # ; ! FROM NS 152
+
++4Sg/Pl+3SgO:%>%^WIikot	   # ; ! FROM NS 152
++4Sg/Pl+3PlO:%>%^WIikocik	   # ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>%^WIikoyit	   # ; ! FROM NS 152
 
 
 LEXICON TA_CNJCw_SUF !!= @CODE@ gives conj + obj tag and suf
@@ -2382,24 +2460,33 @@ LEXICON TA_CNJCw_SUF !!= @CODE@ gives conj + obj tag and suf
 +2Pl+1SgO:%>%^IOiyêk       # ;
 
 
-+4Sg+4SgO:%>%^IOikoyit	   # ;
-+4Sg+4PlO:%>%^IOikoyit   # ;
-+4Sg+3SgO:%>%^IOikot	   # ;
-+4Sg+3PlO:%>%^IOikocik	   # ;
+!+4Sg+4SgO:%>%^IOikoyit	   # ;
+!+4Sg+4PlO:%>%^IOikoyit   # ;
+!+4Sg+3SgO:%>%^IOikot	   # ;
+!+4Sg+3PlO:%>%^IOikocik	   # ;
 +4Sg/Pl+5Sg/PlO:%>âyit	   # ; ! former 3SgO
 
-+4Pl+4SgO:%>%^IOikoyit	   # ;
-+4Pl+4PlO:%>%^IOikocik   # ;
+!+4Pl+4SgO:%>%^IOikoyit	   # ;
+!+4Pl+4PlO:%>%^IOikocik   # ;
 !+4Pl+3SgO:%>%^IOikot	   # ;
-+4Pl+3PlO:%>%^IOikocik	   # ;
+!+4Pl+3PlO:%>%^IOikocik	   # ;
 
 +1Sg+2SgO:%>%^IOitân         # ;
 +1Pl+2SgO:%>%^IOitâhk         # ; 
 +1Pl+2PlO:%>%^IOitâhk         # ; 
 +1Sg+2PlO:%>%^IOitakok         # ;
-+3Sg+4SgO:%>ât	   # ;
+!+3Sg+4SgO:%>ât	   # ;
 
++4Sg/Pl+1SgO:%>%^IOiyit	   # ; ! FROM NS 152
++4Sg/Pl+1PlO:%>%^IOikoyâhk	   # ; ! FROM NS 152
 
++4Sg/Pl+2SgO:%>%^IOisk	   # ; ! FROM NS 152
++4Sg/Pl+2PlO:%>%^IOikoyêk	   # ; ! FROM NS 152
++4Sg/Pl+12PlO:%>%^IOikoyahk	   # ; ! FROM NS 152
+
++4Sg/Pl+3SgO:%>%^IOikot	   # ; ! FROM NS 152
++4Sg/Pl+3PlO:%>%^IOikocik	   # ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>%^IOikoyit	   # ; ! FROM NS 152
 
 LEXICON TA_FUT !!= * @CODE@
 
@@ -2511,6 +2598,8 @@ LEXICON TA_FUTCw !!= * @CODE@
 +4Pl+4PlO:%>%^IOikoyici  # ;
 +4Pl+3SgO:%>%^IOikoci	   # ;
 +4Pl+3PlO:%>%^IOitwâwi	   # ;
+
+
 
 LEXICON TA_IMP
 @U.perspref.NULL@  2Sg_Imp ;
