@@ -1918,19 +1918,19 @@ LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 
 				  
 LEXICON VTA_NULL_O 	  
-+3Sg+4Sg/PlO:%>êw		  # ; ! Implementing forth, fifth persons 
++3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons 
 !+3Sg+3SgO:%>ik		  # ; ! Oki 77
 !+3Sg+3SgO:%>kow	  # ; ! Oki 77
-!+3Sg+Sg/PlO:%>êw		  # ; ! Oki 77
+!+3Sg+3Sg/PlO:%>êw		  # ; ! Oki 77
 !+3Sg+3PlO:%>ikowak	  # ; ! Oki 77
 !+3Sg+3PlO:%>ikak	  # ; ! Oki 77
 !+3Pl+3SgO:%>kow	  # ; ! Oki 77
-+3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing forth, fifth persons
-+4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing forth, fifth persons
++3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing fourth, fifth persons
++4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing fourth, fifth persons
 
-+4Sg/Pl+3SgO:%>ik	  # ; ! Implementing forth, fifth persons
-+5Sg/Pl+4Sg/PlO:%>ikoyiwa  # ; ! Implementing forth, fifth persons
-+4Sg/Pl+3PlO:%>ikwak	  # ; ! Implementing forth, fifth persons
++4Sg/Pl+3SgO:%>ik	  # ; ! Implementing fourth, fifth persons
++5Sg/Pl+4Sg/PlO:%>ikoyiwa  # ; ! Implementing fourth, fifth persons
++4Sg/Pl+3PlO:%>ikwak	  # ; ! Implementing fourth, fifth persons
 !+5Sg+4SgO:%>ikoyiwa  # ; !??
 !+4Sg+4SgO:%>êyiwa  # ; !
 
@@ -1974,7 +1974,7 @@ LEXICON VTATS_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subje
 
 				  
 LEXICON VTATS_NULL_O 	  
-+3Sg+4Sg/PlO:%>êw		  # ; ! Implementing forth, fifth persons
++3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons
 !+3Sg+3SgO:%>ik		  # ; ! Oki 77
 !+3Sg+3SgO:%>kow	  # ; ! Oki 77
 !+3Sg+3PlO:%>êw		  # ; ! Oki 77
@@ -1982,13 +1982,13 @@ LEXICON VTATS_NULL_O
 !+3Sg+3PlO:%>ikak	  # ; ! Oki 77
 !+3Pl+3SgO:%>kow	  # ; ! Oki 77
 +3Pl+4Sg/PlO:%>êwak	  # ; ! Oki 77
-+4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing forth, fifth persons
++4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing fourth, fifth persons
 
-+4Sg/Pl+3SgO:%>ik	  # ; ! Implementing forth, fifth persons
-+5Sg/Pl+4Sg/PlO:%>ikoyiwa  # ; ! Implementing forth, fifth persons 
-+4Sg/Pl+3PlO:%>ikwak	  # ; ! Implementing forth, fifth persons
-!+5Sg+4SgO:%>ikoyiwa  # ; ! Implementing forth, fifth persons
-!+4Sg+4SgO:%>êyiwa  # ; ! Implementing forth, fifth persons
++4Sg/Pl+3SgO:%>ik	  # ; ! Implementing fourth, fifth persons
++5Sg/Pl+4Sg/PlO:%>ikoyiwa  # ; ! Implementing fourth, fifth persons 
++4Sg/Pl+3PlO:%>ikwak	  # ; ! Implementing fourth, fifth persons
+!+5Sg+4SgO:%>ikoyiwa  # ; ! Implementing fourth, fifth persons
+!+4Sg+4SgO:%>êyiwa  # ; ! Implementing fourth, fifth persons
 
 !+3Pl+3PlO:%>ikowak	  # ; ??
 !+3Pl+3PlO:%>êwak	  # ;
@@ -2054,23 +2054,23 @@ LEXICON VTAVw_KI_O-PL 	    !!= @CODE@ plural forms
 
 				  
 LEXICON VTAVw_NULL_O !!= * @CODE@	  
-+3Sg+4Sg/PlO:%>êw		  # ; ! Implementing forth, fifth persons
++3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons
 !+3Sg+3SgO:%>ik		  # ; ! Oki 77
 !+3Sg+3SgO:%>kow	  # ; ! Oki 77
 !+3Sg+3PlO:%>êw		  # ; ! Oki 77
 !+3Sg+3PlO:%>ikowak	  # ; ! Oki 77
 !+3Sg+3PlO:%>ikak	  # ; ! Oki 77
-+4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing forth, fifth persons
++4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing fourth, fifth persons
 
 +4Sg+3SgO:%>%^WIik	  # ; !OBS
-+5Sg/Pl+3Sg/PlO:%>%^WIikoyiwa  # ; ! Implementing forth, fifth persons
++5Sg/Pl+3Sg/PlO:%>%^WIikoyiwa  # ; ! Implementing fourth, fifth persons
 +4Sg+3PlO:%>%^WIikwak	  # ; !OBS
 !+5Sg+4SgO:%>%^WIikoyiwa  # ; !??
 !+4Sg+4SgO:%>êyiwa  # ; !
 
 LEXICON VTAVw_NULL_O-PL !!= * @CODE@	  
 !+3Pl+3SgO:%>kow	  # ; ! Oki 77
-+3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing forth, fifth persons
++3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing fourth, fifth persons
 !+3Pl+3PlO:%>%^WIikowak	  # ; ??
 !+3Pl+3PlO:%>êwak	  # ;
 !+4Pl+3SgO:%>êyiwa	  # ;
@@ -2131,14 +2131,14 @@ LEXICON VTACw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subje
 
 				  
 LEXICON VTACw_NULL_O !!= * @CODE@	  
-+3Sg+4Sg/PlO:%>êw		  # ; ! Implementing forth, fifth persons
++3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons
 !+3Sg+3SgO:%>ik		  # ; ! Oki 77
 !+3Sg+3SgO:%>kow	  # ; ! Oki 77
-!+3Sg+3PlO:%>êw		  # ; ! Oki 77 ! Implementing forth, fifth persons
+!+3Sg+3PlO:%>êw		  # ; ! Oki 77 ! Implementing fourth, fifth persons
 !+3Sg+3PlO:%>ikowak	  # ; ! Oki 77
 !+3Sg+3PlO:%>ikak	  # ; ! Oki 77
 !+3Pl+3SgO:%>kow	  # ; ! Oki 77
-+3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing forth, fifth persons
++3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing fourth, fifth persons
 +4Sg+5Sg/PlO:%>êyiwa	  # ;
 
 !+4Sg+3SgO:%>%^IOik	  # ; !OBS
@@ -2358,7 +2358,7 @@ LEXICON TA_CNJVw_SUF !!= @CODE@ gives conj + obj tag and suf
 +2Sg+1SgO:%>iyan       # ;
 +2Sg+1PlO:%>iyâhk       # ;
 
-+!4Sg+4SgO:%>%^WIikoyit	   # ;
++4Sg+4SgO:%>%^WIikoyit	   # ;
 !+4Sg+4PlO:%>%^WIikoyit   # ;
 !+4Sg+3SgO:%>%^WIikot	   # ;
 !+4Sg+3PlO:%>%^WIikocik	   # ;
