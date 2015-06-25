@@ -27,9 +27,6 @@ Tests:
      atoskahêw+V+TA+Ind+Prs+3Sg+3PlO: atoskahêw
      atoskahêw+V+TA+Ind+Prs+3Pl+3PlO: atoskahêwak
 
-     atoskahêw+V+TA+Ind+Prs+4Sg+4SgO: atoskahêyiwa
-     atoskahêw+V+TA+Ind+Prs+4Sg+4PlO: atoskahêyiwa     
-
      atoskahêw+V+TA+Ind+Prs+2Sg+1SgO: kitatoskahin
      atoskahêw+V+TA+Ind+Prs+2Sg+1PlO: kitatoskahinân
      atoskahêw+V+TA+Ind+Prs+2Pl+1PlO: kitatoskahinân
@@ -47,9 +44,28 @@ Tests:
      atoskahêw+V+TA+Ind+Prs+3Pl+12PlO: kitatoskahikonawak
      atoskahêw+V+TA+Ind+Prs+3Pl+2PlO: kitatoskahikowâwak
      
-     atoskahêw+V+TA+Ind+Prs+4Sg+3SgO: atoskahik
-     atoskahêw+V+TA+Ind+Prs+4Sg+3PlO: atoskahikwak
-     atoskahêw+V+TA+Ind+Prs+5Sg+4SgO: atoskahikoyiwa
+     atoskahêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: nitatoskahimâwa
+     atoskahêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: nitatoskahimânâna
+
+     atoskahêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: kitatoskahimâwa
+     atoskahêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: kitatoskahimâwâwa
+     atoskahêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: kitatoskahimânawa
+     
+     atoskahêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: nitatoskahêw
+     atoskahêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: nitatoskahêwak
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: nitatoskahêyiwa
+     
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: nitatoskahikoyiwa
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: nitatoskahikonân
+
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: kitatoskahikoyiwa
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: kitatoskahikowâw
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: kitatoskahikonaw
+     
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: atoskahik
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: atoskahikwak
+     atoskahêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: atoskahikoyiwa
+
 
      atoskahêw+V+TA+Ind+Prs+1Sg+2SgO: kitatoskahitin
      atoskahêw+V+TA+Ind+Prs+1Pl+2SgO: kitatoskahitinân
@@ -68,12 +84,29 @@ Tests:
      atoskahêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-atoskahâyâhkok, êhatoskahâyâhkok]
      atoskahêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-atoskahâyêkok, êhatoskahâyêkok]     
 
-     atoskahêw+V+TA+Cnj+Prs+3Sg+4SgO: [ê-atoskahât, êhatoskahât]
-     atoskahêw+V+TA+Cnj+Prs+3Pl+4SgO: [ê-atoskahâcik, êhatoskahâcik]
-     atoskahêw+V+TA+Cnj+Prs+3Sg+4PlO: [ê-atoskahât, êhatoskahât]
-     atoskahêw+V+TA+Cnj+Prs+3Pl+4PlO: [ê-atoskahâcik, êhatoskahâcik]
-     atoskahêw+V+TA+Cnj+Prs+4Sg+5SgO: [ê-atoskahâyit, êhatoskahâyit]
+     atoskahêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: [ê-atoskahimak, êhatoskahimak]
+     atoskahêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: [ê-atoskahimâyâhk, êhatoskahimâyâhk]
 
+     atoskahêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: [ê-atoskahimat, êhatoskahimat]
+     atoskahêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: [ê-atoskahimâyek, êhatoskahimâyek]
+     atoskahêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: [ê-atoskahimâyahk, êhatoskahimâyahk]
+     
+     atoskahêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: [ê-atoskahât, êhatoskahât]
+     atoskahêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: [ê-atoskahâcik, êhatoskahâcik]
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: [ê-atoskahâyit, êhatoskahâyit]
+     
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: [ê-atoskahiyit, êhatoskahiyit]
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: [ê-atoskahikoyâhk, êhatoskahikoyâhk]
+
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: [ê-atoskahisk, êhatoskahisk]
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: [ê-atoskahikoyêk, êhatoskahiikoyêk]
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: [ê-atoskahikoyahk, êhatoskahikoyahk]
+     
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: [ê-atoskahikot, êhatoskahikot]
+     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: [ê-atoskahikocik, êhatoskahikocik]
+     atoskahêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: [ê-atoskahikoyit, êhatoskahikoyit]
+
+     
      atoskahêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-atoskahiyan, êhatoskahiyan]
      atoskahêw+V+TA+Cnj+Prs+2Sg+1PlO: [ê-atoskahiyâhk, êhatoskahiyâhk]
      atoskahêw+V+TA+Cnj+Prs+2Pl+1PlO: [ê-atoskahiyâhk, êhatoskahiyâhk]
@@ -90,10 +123,6 @@ Tests:
      atoskahêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-atoskahikoyâhkik, êhatoskahikoyâhkik]
      atoskahêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-atoskahikoyahkok, êhatoskahikoyahkok]
      atoskahêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-atoskahikoyêkok, êhatoskahikoyêkok]
-
-     atoskahêw+V+TA+Cnj+Prs+4Sg+3SgO: [ê-atoskahikot, êhatoskahikot]
-     atoskahêw+V+TA+Cnj+Prs+4Sg+3PlO: [ê-atoskahikocik, êhatoskahikocik]
-     atoskahêw+V+TA+Cnj+Prs+4Sg+4PlO: [ê-atoskahikoyit, êhatoskahikoyit]
 
      atoskahêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-atoskahitân, êhatoskahitân]
      atoskahêw+V+TA+Cnj+Prs+1Pl+2SgO: [ê-atoskahitâhk, êhatoskahitâhk]

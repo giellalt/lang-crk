@@ -27,8 +27,28 @@ Tests:
      miskawêw+V+TA+Ind+Prs+3Sg+3PlO: miskawêw
      miskawêw+V+TA+Ind+Prs+3Pl+3PlO: miskawêwak
 
-     miskawêw+V+TA+Ind+Prs+4Sg+4SgO: miskawêyiwa
-     miskawêw+V+TA+Ind+Prs+4Sg+4PlO: miskawêyiwa     
+     miskawêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: nimiskâmâwa
+     miskawêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: nimiskâmânâna
+
+     miskawêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: kimiskâmâwa
+     miskawêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: kimiskâmâwâwa
+     miskawêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: kimiskâmânawa
+     
+     miskawêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: nimiskawêw
+     miskawêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: nimiskawêwak
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: nimiskawêyiwa
+
+    
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: nimiskâkoyiwa
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: nimiskâkonân
+
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: kimiskâkoyiwa
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: kimiskâkowâw
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: kimiskâkonaw
+     
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: miskâk
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: miskâkwak
+     miskawêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: miskâkoyiwa
 
      miskawêw+V+TA+Ind+Prs+2Sg+1SgO: kimiskawin
      miskawêw+V+TA+Ind+Prs+2Sg+1PlO: kimiskawinân
@@ -46,10 +66,6 @@ Tests:
      miskawêw+V+TA+Ind+Prs+3Pl+1PlO: nimiskâkonânak
      miskawêw+V+TA+Ind+Prs+3Pl+12PlO: kimiskâkonawak
      miskawêw+V+TA+Ind+Prs+3Pl+2PlO: kimiskâkowâwak
-     
-     miskawêw+V+TA+Ind+Prs+4Sg+3SgO: miskâk
-     miskawêw+V+TA+Ind+Prs+4Sg+3PlO: miskâkwak
-     miskawêw+V+TA+Ind+Prs+5Sg+4SgO: miskâkoyiwa
 
      miskawêw+V+TA+Ind+Prs+1Sg+2SgO: kimiskâtin
      miskawêw+V+TA+Ind+Prs+1Pl+2SgO: kimiskâtinân
@@ -66,13 +82,30 @@ Tests:
      miskawêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-miskawacik, êhmiskawacik]
      miskawêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-miskawâyâhkik, êhmiskawâyâhkik]
      miskawêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-miskawâyâhkok, êhmiskawâyâhkok]
-     miskawêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-miskawâyêkok, êhmiskawâyêkok]     
+     miskawêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-miskawâyêkok, êhmiskawâyêkok]
+     
+     miskawêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: [ê-miskâmak, êhmiskâmak]
+     miskawêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: [ê-miskâmâyâhk, êhmiskâmâyâhk]
 
-     miskawêw+V+TA+Cnj+Prs+3Sg+4SgO: [ê-miskawât, êhmiskawât]
-     miskawêw+V+TA+Cnj+Prs+3Pl+4SgO: [ê-miskawâcik, êhmiskawâcik]
-     miskawêw+V+TA+Cnj+Prs+3Sg+4PlO: [ê-miskawât, êhmiskawât]
-     miskawêw+V+TA+Cnj+Prs+3Pl+4PlO: [ê-miskawâcik, êhmiskawâcik]
-     miskawêw+V+TA+Cnj+Prs+4Sg+5SgO: [ê-miskawâyit, êhmiskawâyit]
+     miskawêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: [ê-miskâmat, êhmiskâmat]
+     miskawêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: [ê-miskâmâyek, êhmiskâmâyek]
+     miskawêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: [ê-miskâmâyahk, êhmiskâmâyahk]
+     
+     miskawêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: [ê-miskawât, êhmiskawât]
+     miskawêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: [ê-miskawâcik, êhmiskawâcik]
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: [ê-miskawâyit, êhmiskawâyit]
+     
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: [ê-miskâyit, êhmiskâyit]
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: [ê-miskâkoyâhk, êhmiskâkoyâhk]
+
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: [ê-miskâsk, êhmiskâsk]
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: [ê-miskâkoyêk, êhmiskâikoyêk]
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: [ê-miskâkoyahk, êhmiskâkoyahk]
+     
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: [ê-miskâkot, êhmiskâkot]
+     miskawêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: [ê-miskâkocik, êhmiskâkocik]
+     miskawêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: [ê-miskâkoyit, êhmiskâkoyit]
+
 
      miskawêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-miskawiyan, êhmiskawiyan]
      miskawêw+V+TA+Cnj+Prs+2Sg+1PlO: [ê-miskawiyâhk, êhmiskawiyâhk]
