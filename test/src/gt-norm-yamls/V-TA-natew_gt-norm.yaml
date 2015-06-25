@@ -24,19 +24,25 @@ Tests:
      nâtêw+V+TA+Ind+Prs+1Pl+3PlO: ninâtânânak
      nâtêw+V+TA+Ind+Prs+12Pl+3PlO: kinâtânawak
      nâtêw+V+TA+Ind+Prs+2Pl+3PlO: kinâtâwâwak
-     nâtêw+V+TA+Ind+Prs+3Sg+4PlO: nâtêw
-     nâtêw+V+TA+Ind+Prs+3Pl+4PlO: nâtêwak
+ 
+     nâtêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: ninâtimâwa
+     nâtêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: ninâtimânâna
 
-     nâtêw+V+TA+Ind+Prs+4Sg+5SgO: nâtêyiwa
-     nâtêw+V+TA+Ind+Prs+4Sg+5PlO: nâtêyiwa     
+     nâtêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: kinâtimâwa
+     nâtêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: kinâtimâwâwa
+     nâtêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: kinâtimânawa
+     
+     nâtêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: ninâtêw
+     nâtêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: ninâtêwak
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: ninâtêyiwa   
 
      nâtêw+V+TA+Ind+Prs+2Sg+1SgO: kinâsin
      nâtêw+V+TA+Ind+Prs+2Sg+1PlO: kinâsinân
      nâtêw+V+TA+Ind+Prs+2Pl+1PlO: kinâsinân
      nâtêw+V+TA+Ind+Prs+2Pl+1SgO: kinâsinâwâw
 
-     nâtêw+V+TA+Ind+Prs+3Sg+1SgO: ninâsik
-     nâtêw+V+TA+Ind+Prs+3Sg+2SgO: kinâsik
+     nâtêw+V+TA+Ind+Prs+3Sg+1SgO: ninâtik
+     nâtêw+V+TA+Ind+Prs+3Sg+2SgO: kinâtik
      nâtêw+V+TA+Ind+Prs+3Sg+1PlO: ninâtikonân
      nâtêw+V+TA+Ind+Prs+3Sg+12PlO: kinâtikonaw
      nâtêw+V+TA+Ind+Prs+3Sg+2PlO: kinâtkowâw
@@ -47,10 +53,17 @@ Tests:
      nâtêw+V+TA+Ind+Prs+3Pl+12PlO: kinâtikonawak
      nâtêw+V+TA+Ind+Prs+3Pl+2PlO: kinâtikowâwak
      
-     nâtêw+V+TA+Ind+Prs+4Sg+3SgO: nâtik
-     nâtêw+V+TA+Ind+Prs+4Sg+3PlO: nâtikwak
-     nâtêw+V+TA+Ind+Prs+5Sg+4SgO: nâtikoyiwa
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: ninâtikoyiwa
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: ninâtikonân
 
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: kinâtikoyiwa
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: kinâtikowâw
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: kinâtikonaw
+     
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: nâtik
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: nâtikwak
+     nâtêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: nâtikoyiwa
+ 
      nâtêw+V+TA+Ind+Prs+1Sg+2SgO: kinâtitin
      nâtêw+V+TA+Ind+Prs+1Pl+2SgO: kinâtitinân
      nâtêw+V+TA+Ind+Prs+1Pl+2PlO: kinâtitinân
@@ -68,11 +81,16 @@ Tests:
      nâtêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-nâtâyahkok, êhnâtâyâhkok]
      nâtêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-nâtâyêkok, êhnâtâyêkok]     
 
-     nâtêw+V+TA+Cnj+Prs+3Sg+4SgO: [ê-nâtât, êhnâtât]
-     nâtêw+V+TA+Cnj+Prs+3Pl+4SgO: [ê-nâtâcik, êhnâtâcik]
-     nâtêw+V+TA+Cnj+Prs+3Sg+4PlO: [ê-nâtât, êhnâtât]
-     nâtêw+V+TA+Cnj+Prs+3Pl+4PlO: [ê-nâtâcik, êhnâtâcik]
-     nâtêw+V+TA+Cnj+Prs+4Sg+5SgO: [ê-nâtâyit, êhnâtâyit]
+     nâtêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: [ê-nâtimak, êhnâtimak]
+     nâtêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: [ê-nâtimâyâhk, êhnâtimâyâhk]
+
+     nâtêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: [ê-nâtimat, êhnâtimat]
+     nâtêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: [ê-nâtimâyek, êhnâtimâyek]
+     nâtêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: [ê-nâtimâyahk, êhnâtimâyahk]
+     
+     nâtêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: [ê-nâtât, êhnâtât]
+     nâtêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: [ê-nâtâcik, êhnâtâcik]
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: [ê-nâtâyit, êhnâtâyit]
 
      nâtêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-nâsiyan, êhnâsiyan]
      nâtêw+V+TA+Cnj+Prs+2Sg+1PlO: [ê-nâsiyâhk, êhnâsiyâhk]
@@ -91,9 +109,16 @@ Tests:
      nâtêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-nâtikoyahkok, êhnâtikoyahkok]
      nâtêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-nâtikoyêkok, êhnâtikoyêkok]
 
-     nâtêw+V+TA+Cnj+Prs+4Sg+3SgO: [ê-nâtikot, êhnâtikot]
-     nâtêw+V+TA+Cnj+Prs+4Sg+3PlO: [ê-nâtikocik, êhnâtikocik]
-     nâtêw+V+TA+Cnj+Prs+4Sg+4PlO: [ê-nâtikoyit, êhnâtikoyit]
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: [ê-nâtiyit, êhnâtiyit]
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: [ê-nâtikoyâhk, êhnâtikoyâhk]
+
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: [ê-nâtisk, êhnâtisk]
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: [ê-nâtikoyêk, êhnâtiikoyêk]
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: [ê-nâtikoyahk, êhnâtikoyahk]
+     
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: [ê-nâtikot, êhnâtikot]
+     nâtêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: [ê-nâtikocik, êhnâtikocik]
+     nâtêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: [ê-nâtikoyit, êhnâtikoyit]
 
      nâtêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-nâtitân, êhnâtitân]
      nâtêw+V+TA+Cnj+Prs+1Pl+2SgO: [ê-nâtitâhk, êhnâtitâhk]
