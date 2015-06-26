@@ -11,11 +11,11 @@
     cat iiverblemmas |sed 's/$/+V+II+Ind+Prs+3Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 > verbgenlemmas
     cat tiverblemmas |sed 's/$/+V+TI+Ind+Prs+3Sg/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
     cat aiverblemmas |sed 's/$/+V+AI+Ind+Prs+3Sg/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
-    cat taverblemmas |sed 's/$/+V+TA+Ind+Prs+3Sg+3SgO/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
+    cat taverblemmas |sed 's/$/+V+TA+Ind+Prs+3Sg+4Sg\/PlO/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
     cat iiplverblemmas |sed 's/$/+V+II+Ind+Prs+3Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
     cat tiplverblemmas |sed 's/$/+V+TI+Ind+Prs+3Pl/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
     cat aiplverblemmas |sed 's/$/+V+AI+Ind+Prs+3Pl/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
-    cat taplverblemmas |sed 's/$/+V+TA+Ind+Prs+3Pl+3SgO/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
+    cat taplverblemmas |sed 's/$/+V+TA+Ind+Prs+3Pl+4Sg\/PlO/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
     
     cat *verblemmas | sort -u > allverblemmas
     cat verbgenlemmas | grep '[a-z]' | sort -u > sortverbgenlemmas
