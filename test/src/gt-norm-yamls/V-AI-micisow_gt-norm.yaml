@@ -10,31 +10,65 @@ Config:
 Tests:
   
   Verb - mîciso - ok : # Ordinary VAI verb "eat" - full paradigm
+
      mîcisow+V+AI+Ind+Prs+1Sg: nimîcison
      mîcisow+V+AI+Ind+Prs+2Sg: kimîcison
      mîcisow+V+AI+Ind+Prs+3Sg: mîcisow
-     mîcisow+V+AI+Ind+Prs+4Sg: mîcisoyiwa
+     mîcisow+V+AI+Ind+Prs+4Sg/Pl: mîcisoyiwa
      mîcisow+V+AI+Ind+Prs+1Pl: nimîcisonân
      mîcisow+V+AI+Ind+Prs+12Pl: [kimîcisonaw, kimîcisonânaw]
      mîcisow+V+AI+Ind+Prs+2Pl: kimîcisonâwâw
      mîcisow+V+AI+Ind+Prs+3Pl: mîcisowak
-     mîcisow+V+AI+Ind+Prs+4Pl: mîcisoyiwa
+
+     mîcisow+V+AI+Ind+Prt+1Sg: [nikî-mîcison, nikîmîcison]
+     mîcisow+V+AI+Ind+Prt+2Sg: [kikî-mîcison, kikîmîcison]
+     mîcisow+V+AI+Ind+Prt+3Sg: [kî-mîcisow, kîmîcisow]
+     mîcisow+V+AI+Ind+Prt+4Sg/Pl: [kî-mîcisoyiwa, kîmîcisoyiwa]
+     mîcisow+V+AI+Ind+Prt+1Pl: [nikî-mîcisonân, nikîmîcisonân]
+     mîcisow+V+AI+Ind+Prt+12Pl: [kikî-mîcisonaw, kikîmîcisonaw, kikî-mîcisonânaw, kikîmîcisonânaw]
+     mîcisow+V+AI+Ind+Prt+2Pl: [kikî-mîcisonâwâw, kikîmîcisonâwâw]
+     mîcisow+V+AI+Ind+Prt+3Pl: [kî-mîcisowak, kîmîcisowak]
+     
+     mîcisow+V+AI+Ind+Fut+Def+1Sg: [nika-mîcison, nikamîcison]
+     mîcisow+V+AI+Ind+Fut+Def+2Sg: [kika-mîcison, kikamîcison]
+     mîcisow+V+AI+Ind+Fut+Def+3Sg: [ka-mîcisow, kamîcisow]
+     mîcisow+V+AI+Ind+Fut+Def+4Sg/Pl: [ka-mîcisoyiwa, kamîcisoyiwa]
+     mîcisow+V+AI+Ind+Fut+Def+1Pl: [nika-mîcisonân, nikamîcisonân]
+     mîcisow+V+AI+Ind+Fut+Def+12Pl: [kika-mîcisonaw, kikamîcisonaw, kikamîcisonânaw, kika-mîcisonânaw]
+     mîcisow+V+AI+Ind+Fut+Def+2Pl: [kika-mîcisonâwâw, kikamîcisonâwâw]
+     mîcisow+V+AI+Ind+Fut+Def+3Pl: [ka-mîcisowak, kamîcisowak]
+     
+     mîcisow+V+AI+Ind+Fut+Int+1Sg: [niwî-mîcison, niwîmîcison]
+     mîcisow+V+AI+Ind+Fut+Int+2Sg: [kiwî-mîcison, kiwîmîcison]
+     mîcisow+V+AI+Ind+Fut+Int+3Sg: [wî-mîcisow, wîmîcisow]
+     mîcisow+V+AI+Ind+Fut+Int+4Sg/Pl: [wî-mîcisoyiwa, wîmîcisoyiwa]
+     mîcisow+V+AI+Ind+Fut+Int+1Pl: [niwî-mîcisonân, niwîmîcisonân]
+     mîcisow+V+AI+Ind+Fut+Int+12Pl: [kiwî-mîcisonaw, kiwîmîcisonaw, kiwî-mîcisonânaw, kiwîmîcisonânaw]
+     mîcisow+V+AI+Ind+Fut+Int+2Pl: [kiwî-mîcisonâwâw, kiwîmîcisonâwâw]
+     mîcisow+V+AI+Ind+Fut+Int+3Pl: [wî-mîcisowak, wîmîcisowak]
      
      mîcisow+V+AI+Cnj+Prs+1Sg: [ê-mîcisoyân, êmîcisoyân]
      mîcisow+V+AI+Cnj+Prs+2Sg: [ê-mîcisoyan, êmîcisoyan]
      mîcisow+V+AI+Cnj+Prs+3Sg: [ê-mîcisot, êmîcisot]
-     mîcisow+V+AI+Cnj+Prs+4Sg: [ê-mîcisoyit, êmîcisoyit]
+     mîcisow+V+AI+Cnj+Prs+4Sg/Pl: [ê-mîcisoyit, êmîcisoyit]
      mîcisow+V+AI+Cnj+Prs+1Pl: [ê-mîcisoyâhk, êmîcisoyâhk]
      mîcisow+V+AI+Cnj+Prs+12Pl: [ê-mîcisoyahk, êmîcisoyahk]
      mîcisow+V+AI+Cnj+Prs+2Pl: [ê-mîcisoyêk, êmîcisoyêk]
      mîcisow+V+AI+Cnj+Prs+3Pl: [ê-mîcisocik, êmîcisocik]
-     mîcisow+V+AI+Cnj+Prs+4Pl: [ê-mîcisoyit, êmîcisoyit]
+     
+     mîcisow+V+AI+Fut+Cond+1Sg: mîcisoyâni
+     mîcisow+V+AI+Fut+Cond+2Sg: mîcisoyani
+     mîcisow+V+AI+Fut+Cond+3Sg: mîcisoci
+     mîcisow+V+AI+Fut+Cond+4Sg/Pl: mîcisoyici
+     mîcisow+V+AI+Fut+Cond+1Pl: mîcisoyâhki
+     mîcisow+V+AI+Fut+Cond+12Pl: [mîcisoyahko, mîcisoyahki]
+     mîcisow+V+AI+Fut+Cond+2Pl: mîcisoyêko
+     mîcisow+V+AI+Fut+Cond+3Pl: mîcisotwâwi
 
      mîcisow+V+AI+Imp+Imm+2Sg: mîciso
      mîcisow+V+AI+Imp+Imm+2Pl: mîcisok
      mîcisow+V+AI+Imp+Imm+12Pl: mîcisotân
-  
+     
      mîcisow+V+AI+Imp+Del+2Sg: mîcisohkan
      mîcisow+V+AI+Imp+Del+2Pl: mîcisohkêk
      mîcisow+V+AI+Imp+Del+12Pl: mîcisohkahk
-
