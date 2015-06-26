@@ -201,7 +201,7 @@ acâwêwikamikos IN_DIM "little store, shop" ;
 acihkos AN_DIM "caribou calf, fawn" ;
 acihkosis AN_DIM "caribou calf, fawn" ;
 acikâsimin IN_DECL "evergreen berry; kinnikinnick berry, ground cedar berry" ;
-acikâsipakwa:acikâsipakw IN_DECL "bearberry leaves; plant-like evergreen (mixed with tobacco); Arctostaphylos uva-ursi" ; ! plural singular (rare): acikâsipak
+acikâsipakwa:acikâsipakw IN_DECL_PL "bearberry leaves; plant-like evergreen (mixed with tobacco); Arctostaphylos uva-ursi" ; ! plural singular (rare): acikâsipak
 acimomêyisimin IN_DECL "cactus berry, red berry from a cactus; literally: little dog-feces berry" ;
 acimosis AN_DIM "pup, puppy; small dog" ;
 acos AN_DECL "arrow, little arrow" ; !also atos
@@ -270,7 +270,7 @@ amisko-sâkahikan IN_DECL "Amisk Lake, SK; literally: beaver lake" ;
 amisko-sîpiy IN_DECL "beaver river" ;
 amisko-wâti INimDECL "beaver hole" ; ! singular; pl: amisko-wâta  NI-4
 amisko-wâtihkân IN_DECL "beaver hole" ;
-amisko-wîhkaskwa:amisko-wîhkaskw IN_DECL "mint; literally: beaver-sweetgrass" ; ! plural 
+amisko-wîhkaskwa:amisko-wîhkaskw IN_DECL_PL "mint; literally: beaver-sweetgrass" ; ! plural 
 amisko-wîsti INimDECL "beaver lodge" ; ! singular; pl: amisko-wîsta  NI-4
 amiskohôsiwayân AN_DECL "beaver pelt" ;
 amiskomin AN_DECL "yellow blackberry; literally: beaver-berry" ;
@@ -289,7 +289,7 @@ anâskason IN_DECL "mattress pad; cushion, potholder; an item placed under onese
 anâskasowin IN_DECL "bedding" ;
 anâskân IN_DECL "mat, matting; floor, floor covering, carpet; sheet; quilt" ;
 anâskânâhtik:anâskânâhtikw IN_DECL "floor board" ;
-anâskânâhtikwa:anâskânâhtikw IN_DECL "floor boards, flooring" ; ! plural 
+anâskânâhtikwa:anâskânâhtikw IN_DECL_PL "floor boards, flooring" ; ! plural 
 anâskânis IN_DIM "baby blanket; small sheet, mat, matting, blanket" ;
 anâskâsimon IN_DECL "mattress" ;
 anâskêwin IN_DECL "flooring, linoleum; something used as matting" ;
@@ -448,12 +448,12 @@ aspiyihkâsowin IN_DECL "surname, last name" ;
 astahcikowin IN_DECL "cache" ;
 astâkanask:astâkanaskw IN_DECL "reed" ;
 astâsiwin IN_DECL "fearful apprehension" ;
-astâskamikwa:astâskamikw IN_DECL "moss; roots" ; ! plural 
+astâskamikwa:astâskamikw IN_DECL_PL "moss; roots" ; ! plural 
 astinwân IN_DECL "sinew" ;
 astipahkwân IN_DECL "top flap of tipi; [plural:] the flaps which control the airflow into the tipi from the top" ;
 astis IN_DECL "thread made from dried sinew" ;
 astis AN_DECL "mitt, mitten; glove" ; ! singular dim: ascisis
-astisêwakwa:astisêwakw IN_DECL "lengthwise muscles on back" ; ! plural 
+astisêwakwa:astisêwakw IN_DECL_PL "lengthwise muscles on back" ; ! plural 
 astisiy IN_DECL "thread made from sinew" ;
 astotin IN_DECL "hat, cap, headgear" ; ! singular poss: (-im)
 atamiskay IN_DECL "gristle" ;
@@ -655,7 +655,7 @@ aywêpiwin IN_DECL "rest; resting; resting place, campground" ; ! singular cf. V
 âniskokanân IN_DECL "joint; [plural:] vertebrae" ;
 âniskotâpân IN_DECL "thing next in order" ;
 âniskotâpân AN_DECL "great great grandparent, great great grandchild" ;
-âniskowaskwa:âniskowaskw IN_DECL "reeds, bullrushes" ; ! plural 
+âniskowaskwa:âniskowaskw IN_DECL_PL "reeds, bullrushes" ; ! plural 
 âniskôhôcikan IN_DECL "string of beads tied end to end" ;
 ânwêhtamowin IN_DECL "disbelief" ;
 âpacihcikan IN_DECL "utensil, tool, implement; appliance; machine" ;
@@ -751,7 +751,7 @@ cikahkwân AN_DECL "gambling toy shaped like a knife-blade; stick in woman's sti
 cikahkwêwin IN_DECL "stick game" ;
 cikâscêpayîs IN_DIM "film, movie" ;
 cikâsimin IN_DECL "partridge berry" ;
-cikâsipakwa:cikâsipakw IN_DECL "bearberry leaves, partridge berry plants; used as traditional tobacco; Arctostaphylos uva-ursi" ; ! plural also NA-3
+cikâsipakwa:cikâsipakw IN_DECL_PL "bearberry leaves, partridge berry plants; used as traditional tobacco; Arctostaphylos uva-ursi" ; ! plural also NA-3
 cikâstêpayihcikan IN_DECL "television, t.v." ;
 cikâstêpicikan IN_DECL "movie camera; movie; picture frame" ;
 cikâstêpison IN_DECL "picture, photograph" ;
@@ -1032,7 +1032,7 @@ kayâsasâkay IN_DECL "old jacket, old coat" ;
 kayâsaskisin IN_DECL "old shoe" ;
 kayâsi-mêskanaw IN_DECL "old road, old trail" ;
 kayâsi-wâskahikan IN_DECL "old-house" ;
-kayâsipakwa:kayâsipakw IN_DECL "withered leaves" ; ! plural 
+kayâsipakwa:kayâsipakw IN_DECL_PL "withered leaves" ; ! plural 
 kayêyisiwin IN_DECL "cheating, cunning" ;
 kâ-nihcâwâhcawêpayîsis AN_DIM "squirrel" ;
 kâ-têpwêwisîpîwiyiniwak AN_DECL "Calling River People; division of the Cree traditionally located near the Qu'Appelle Valley, SK" ; ! plural 
@@ -1131,7 +1131,7 @@ kihci-wîkihtowin-âhcanis AN_DECL "wedding ring" ;
 kihcihtwâwi-mêriy AN_DECL "Holy Mary, mother of Jesus" ;
 kihcikamiy IN_DECL "sea, ocean; a great body of water" ;
 kihcikamîwaskosiy IN_DECL "seaweed" ;
-kihcikamîwaskwa:kihcikamîwaskw IN_DECL "bullrushes" ; ! plural 
+kihcikamîwaskwa:kihcikamîwaskw IN_DECL_PL "bullrushes" ; ! plural 
 kihcikamîwiyin AN_DECL "Ocean Man; Cree name for Nakota chief" ;
 kihcinisk IN_DECL "right hand" ;
 kihciyiniw AN_DECL "head man, leader" ;
@@ -1471,7 +1471,7 @@ macihtwâwin IN_DECL "sin, wickedness, bad temper, disobedience" ;
 macikosisân AN_DECL "bad son" ;
 macikwanâs IN_DIM "garbage, rubbish; weed" ;
 macikwanâsi-maskimot IN_DECL "garbage bag" ;
-macipakwa:macipakw IN_DECL "bad weeds; bad herbs" ; ! plural plural generally
+macipakwa:macipakw IN_DECL_PL "bad weeds; bad herbs" ; ! plural plural generally
 macipayiwin IN_DECL "bad experience" ;
 macispakosiwin IN_DECL "bad taste" ;
 macitêhêwin IN_DECL "cruelty, wickedness" ;
@@ -1572,7 +1572,7 @@ maskêk:maskêkw IN_DECL "muskeg, swamp" ;
 maskêko-sâkahikan IN_DECL "Fishing Lake, SK; literally Muskeg Lake" ;
 maskêkomin IN_DECL "muskeg berry" ;
 maskêkominâna IN_DECL "cranberries" ; ! plural 
-maskêkopakwa:maskêkopakw IN_DECL "muskeg tea; native tea plant known as the Labrador tea plant" ; ! plural 
+maskêkopakwa:maskêkopakw IN_DECL_PL "muskeg tea; native tea plant known as the Labrador tea plant" ; ! plural 
 maskêkowaskiy IN_DECL "muskeg, swampland" ;
 maskêkowiyiniw AN_DECL "Swampy Cree person; [plural:] Swampy Crees, Swampy Cree Indians; Muskeg people ;; person from Muskeg Lake; [plural:] members of Muskeg Lake First Nation, SK" ;
 maskêkwâpoy IN_DECL "Labrador tea, muskeg tea" ;
@@ -1770,7 +1770,7 @@ mihkwâkamîwi-sîpiy IN_DECL "Red River, MB" ;
 mihkwâkanihkân IN_DECL "mask" ;
 mihkwâpêmakohp AN_DECL "red willow bark" ; ! singular haplology: mihkwâpêm(ak) + akohp
 mihkwâpêmakomin IN_DECL "berry of red willow" ;
-mihkwâpêmakwa:mihkwâpêmakw IN_DECL "red willow scrapings; red willow; the stringy cambium or inner bark of red-osier dogwood" ; ! plural plural generally; also NA-3
+mihkwâpêmakwa:mihkwâpêmakw IN_DECL_PL "red willow scrapings; red willow; the stringy cambium or inner bark of red-osier dogwood" ; ! plural plural generally; also NA-3
 mihkwâpêmakwâhtik:mihkwâpêmakwâhtikw AN_DECL "red willow tree" ;
 mihkwâpowêyân IN_DECL "red blanket" ;
 mihkwâpoy IN_DECL "blood soup; red liquid" ;
@@ -1870,7 +1870,7 @@ miskwamîs AN_DIM "ice" ;
 miskwamîwikamik:miskwamîwikamikw IN_DECL "ice-house" ;
 mistah-âya AN_DECL "bear, grizzly bear; literally: big one" ;
 mistahâpêw AN_DECL "giant" ;
-mistahi-maskwa:mistahi-maskw AN_DECL "Big Bear; prominent Cree chief, signatory to an adhesion to Treaty 6; wrongfully persecuted and imprisoned in the backlash to the Riel Resistance" ;
+mistahi-maskwa:mistahi-maskw AN_DECL "Big Bear; prominent Cree chief, signatory to an adhesion to Treaty 6; wrongfully persecuted and imprisoned in the backlash to the Riel Resistance" ; 
 mistahi-sâkahikan IN_DECL "Lac La Ronge; literally: big lake" ;
 mistahiminis IN_DIM "peach" ;
 mistahkêsiw AN_DECL "lion" ;
@@ -1969,7 +1969,7 @@ miyonâkosiwin IN_DECL "good looks" ;
 miyopayiwin IN_DECL "good luck; welfare; prosperity; good heart" ;
 miyosiwin IN_DECL "beauty" ;
 miyoskamikâw IN_DECL "rich land" ;
-miyoskaminowi-pîsimwak:miyoskaminowi-pîsimw AN_DECL "spring months; March, April, and May" ; ! plural 
+miyoskaminowi-pîsimwak:miyoskaminowi-pîsimw AN_DECL_PL "spring months; March, April, and May" ; ! plural 
 miyoskamiw IN_DECL "early spring" ;
 miyoskwêw AN_DECL "fine woman" ;
 miyotêhêwin IN_DECL "good-heartedness, kindness; consolation" ;
@@ -2207,7 +2207,7 @@ nayahcikan IN_DECL "sacred bundle; pack for carrying on back; back pack" ;
 nayahcikanêyâpiy IN_DECL "braces for carrying; pack strap" ;
 nayahcikêwin IN_DECL "thing carried on back" ;
 nayôhcikêwin IN_DECL "thing carried on back" ;
-nânikaskwa:nânikaskw IN_DECL "broad hay, broad expanse of hay, a meadow of hay" ; ! plural 
+nânikaskwa:nânikaskw IN_DECL_PL "broad hay, broad expanse of hay, a meadow of hay" ; ! plural 
 nâpê-atoskêyâkan AN_DECL "male servant" ;
 nâpê-aya AN_DECL "male being; male animal, male creature" ;
 nâpê-kohkôs AN_DECL "boar, male pig" ;
@@ -2304,7 +2304,7 @@ nipwâhkâwin IN_DECL "cleverness" ;
 nisitohtamowin IN_DECL "understanding" ;
 niska ANimDECLnaahk "goose" ;
 niskasiniya IN_DECL "birdshot, buckshot, shotgun shells" ; ! plural plural generally
-niskaskwa:niskaskw IN_DECL "goose grass" ; ! plural 
+niskaskwa:niskaskw IN_DECL_PL "goose grass" ; ! plural 
 niski-pimiy IN_DECL "goose oil" ;
 niski-pîsim:niski-pîsimw AN_DECL "Goose Moon; March" ; ! singular obviative: niski-pîsimwa
 niski-pîway IN_DECL "goose down" ;
@@ -2359,7 +2359,7 @@ nîsôhkamâkêwin IN_DECL "assistance; help" ;
 nîsôhkamâtowin IN_DECL "mutual assistance" ;
 nîsôtêw AN_DECL "twin" ;
 nîswaskanôs IN_DIM "double-barreled gun" ;
-nohtâ AN_DECL "(my) Father! (a call for him)" ; ! From NS 152
+nôhtâ AN_DECL "(my) Father! (a call for him)" ; ! From NS 152
 nôcihcikêwaskiy IN_DECL "trapping territory, trapline" ;
 nôcihcikêwin IN_DECL "trapline; trapping, hunting" ;
 nôcihiskwêwêsk AN_DECL "womanizer, man given to chasing women" ; ! singular, habitual alternatively: derived by clipping from VAI nôcihiskwêwêski- (i.e. - [-i])
@@ -2554,7 +2554,7 @@ okosimân IN_DECL "cucumber" ;
 okosisimâw AN_DECL "womb, uterus" ;
 okosisimâw AN_DECL "son" ; ! singular cf. 1: nikosis my son
 okoskohiwêw AN_DECL "startler, one who startles others; name for prairie chicken in âtayôhkâna (legends)" ;
-okôhtakanaskwa:okôhtakanaskw IN_DECL "water-reeds; goose grass" ; ! plural 
+okôhtakanaskwa:okôhtakanaskw IN_DECL_PL "water-reeds; goose grass" ; ! plural 
 okôhtaskisahikan IN_DECL "stovepipe" ;
 okôhtâskwahikan IN_DECL "stovepipe" ;
 okwâskohcîs AN_DIM "grasshopper" ;
@@ -2679,7 +2679,7 @@ osâwasapâp AN_DECL "yellow thread" ;
 osâwasâkay IN_DECL "yellow dress, coat" ;
 osâwasêstak:osâwasêstakw AN_DECL "yellow yarn" ;
 osâwask:osâwaskw AN_DECL "brown bear" ;
-osâwaskwa:osâwaskw IN_DECL "yellow grass" ; ! plural 
+osâwaskwa:osâwaskw IN_DECL_PL "yellow grass" ; ! plural 
 osâwaskwâpês AN_DECL "jackfish" ;
 osâwastim:osâwastimw AN_DECL "sorrel horse" ;
 osâwastotin IN_DECL "yellow hat" ;
@@ -2862,7 +2862,7 @@ oyâpiskâtahikan IN_DECL "anvil" ;
 ôcêw AN_DECL "housefly, maggot" ;
 ôhow ANimDECLnaahk-NOPOSS "owl" ;
 ôhôsis AN_DIM "owlet, young owl" ;
-ôkîkwa:ôkîkw IN_DECL "gills (of fish)" ; ! plural 
+ôkîkwa:ôkîkw IN_DECL_PL "gills (of fish)" ; ! plural 
 ôsi:ô IN_DECL_OSI "boat; canoe" ; ! singular; plural: ôsa cf. 1sPoss: nitôt; locative: ôtihk NI-4
 ôtênaw IN_DECL "town, camp-circle, settlement; city" ;
 ôtênâwiwin IN_DECL "township; realm" ;
@@ -2963,7 +2963,7 @@ paskwâwi-mostos:paskwâwi-mostosw AN_DECL "buffalo, bison" ; ! singular also NA
 paskwâwi-mostosowiyâs IN_DECL "buffalo meat" ;
 paskwâwinîmowin IN_DECL "Plains Cree language, the Plains or Y-dialect of Cree" ;
 paskwâwiyiniw AN_DECL "Plains Cree; Plains Indian" ;
-paskwâwîhkwaskwa:paskwâwîhkwaskw IN_DECL "sage" ; ! plural plural generally
+paskwâwîhkwaskwa:paskwâwîhkwaskw IN_DECL_PL "sage" ; ! plural plural generally
 paspaskiw AN_DECL "partridge, wood partridge, birch grouse, ruffed grouse; quail" ;
 paspîwin IN_DECL "escape, close call" ;
 patâpahtamowin IN_DECL "oversight, mistake" ;
@@ -3219,7 +3219,7 @@ pîkwêyihtamowin IN_DECL "mental anguish; anxiety" ;
 pîmahikan IN_DECL "screwdriver; auger; tourniquet" ;
 pîmahowi-sakahikan IN_DECL "screw" ;
 pîmahôpakos IN_DIM "chickweed; Alsine media" ;
-pîmahôpakwa:pîmahôpakw IN_DECL "wild buckwheat [polygonum convolvulus]" ; ! plural 
+pîmahôpakwa:pîmahôpakw IN_DECL_PL "wild buckwheat [polygonum convolvulus]" ; ! plural 
 pîmakâmêpisona IN_DECL "suspenders" ; ! plural plural generally
 pîmastêhikan IN_DECL "spinning wheel" ;
 pîmâpiskahikan IN_DECL "gimlet, drill bit" ;
@@ -3527,7 +3527,7 @@ sîwicîs AN_DIM "piece of candy" ;
 sîwihkasikan AN_DECL "cake; sweet baked goods" ;
 sîwinikan AN_DECL "sugar, sweetener" ;
 sîwinikanâspinêwin IN_DECL "diabetes" ;
-sîwipakwa:sîwipakw IN_DECL "rhubarb" ; ! plural plural generally
+sîwipakwa:sîwipakw IN_DECL_PL "rhubarb" ; ! plural plural generally
 sîwîhtâkan IN_DECL "salt" ;
 sîwîhtâkan-sâposikan IN_DECL "epsom salts" ;
 sîwîhtâkanêwâpoy IN_DECL "brine" ;
@@ -3719,7 +3719,7 @@ tîwaskihk:tîwaskihkw ANimDECL "tea kettle" ;
 tîwaskihkos AN_DIM "tea pot" ;
 tîwâpoy IN_DECL "infused tea" ;
 tîwâpôhkêwin IN_DECL "the making of tea" ;
-tîwipakwa:tîwipakw IN_DECL "tea leaves (after infusion)" ; ! plural plural generally
+tîwipakwa:tîwipakw IN_DECL_PL "tea leaves (after infusion)" ; ! plural plural generally
 tohtôs AN_DECL "breast; teat" ;
 tohtôsâpoy INimDECLisis "milk" ;
 tohtôsâpoy-askihk:tohtôsâpoy-askihkw ANimDECL "milk pail" ;
@@ -4014,7 +4014,7 @@ wiyâsikamik:wiyâsikamikw IN_DECL "butcher shop" ;
 wiyâsis IN_DIM "bit of meat, piece of meat" ;
 wiyâsisâpoy IN_DECL "meat broth" ;
 wiyâsiyiniw AN_DECL "butcher" ;
-wiyihkwak:wiyihkw AN_DECL "glands" ; ! plural plural generally; also NDA-3; cf. wiýihkwa his/her gland(s)
+wiyihkwak:wiyihkw AN_DECL_PL "glands" ; ! plural plural generally; also NDA-3; cf. wiýihkwa his/her gland(s)
 wiyin:wiyinw IN_DECL "fat, animal fat, piece of unprocessed fat; fat meat" ;
 wiyinwâpisk:wiyinwâpiskw IN_DECL "a certain kind of stone which feels oily (e.g. mica); soapstone" ;
 wiyasowew AN_DIM "lawyer" ; ! From NS 152
@@ -4031,7 +4031,7 @@ wîhcêkatâmowin IN_DECL "bad breath, halitosis" ;
 wîhcêkitâpân IN_DECL "automobile" ;
 wîhkanos IN_DECL "piece of fruit" ;
 wîhkasko-kisêyin AN_DECL "Chief Sweetgrass, Old-man-sweetgrass, Crow man who became one of the leading Plains Cree chiefs in the Battleford region" ;
-wîhkaskwa:wîhkaskw IN_DECL "sweetgrass" ; ! plural plural generally
+wîhkaskwa:wîhkaskw IN_DECL_PL "sweetgrass" ; ! plural plural generally
 wîhkês IN_DECL "muskrat root, rat root, sweet-flag, water arum" ;
 wîhki-pahkwêsikanis AN_DIM "cookie" ;
 wîhkihkasikan AN_DECL "cake" ;
@@ -4044,7 +4044,7 @@ wîhkimâsikan IN_DECL "incense" ;
 wîhkohkêwin IN_DECL "banquet" ;
 wîhkohtowin IN_DECL "feast" ;
 wîhkomitowin IN_DECL "invitation" ;
-wîhkwaskwa:wîhkwaskw IN_DECL "sweetgrass" ; ! plural plural generally
+wîhkwaskwa:wîhkwaskw IN_DECL_PL "sweetgrass" ; ! plural plural generally
 wîhkway IN_DECL "bladder" ;
 wîhkwâs IN_DIM "balloon" ;
 wîhkwêhtakâw IN_DECL "corner made by wooden walls" ;
