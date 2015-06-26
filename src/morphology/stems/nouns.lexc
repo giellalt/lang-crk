@@ -1870,7 +1870,7 @@ miskwamîs AN_DIM "ice" ;
 miskwamîwikamik:miskwamîwikamikw IN_DECL "ice-house" ;
 mistah-âya AN_DECL "bear, grizzly bear; literally: big one" ;
 mistahâpêw AN_DECL "giant" ;
-mistahi-maskwa:mistahi-maskw AN_DECL "Big Bear; prominent Cree chief, signatory to an adhesion to Treaty 6; wrongfully persecuted and imprisoned in the backlash to the Riel Resistance" ; 
+mistahi-maskwa:mistahi-maskw ANimDECLw "Big Bear; prominent Cree chief, signatory to an adhesion to Treaty 6; wrongfully persecuted and imprisoned in the backlash to the Riel Resistance" ; 
 mistahi-sâkahikan IN_DECL "Lac La Ronge; literally: big lake" ;
 mistahiminis IN_DIM "peach" ;
 mistahkêsiw AN_DECL "lion" ;
@@ -4166,33 +4166,22 @@ LEXICON DEP-KINTERMLIST
 !! @LEXNAME@ for dependent nouns getting prefixes n-, k-, o- \\
 
 -tânis:itânis AN_KININFL "daughter" ; !yaml !!= @CODE@
-!nitânis:itânis AN_KININFL "daughter" ; ! OAHPA
 -kosis:ikosis AN_KININFL "son" ; !!= @CODE@	
-!nikosis:ikosis AN_KININFL "son" ; !OAHPA	
 -nekihik:inekihik AN_KININFL "parent" ; ! 
-!ninekihik:inekihik AN_KININFL "parent" ; !OAHPA
 -mosôm:imosôm AN_KININFL "grandfather" ;
 -mosô:imosô AN_KININFL "grandfather! (a call for him)" ; ! From NS 152
-!nimosôm:imosôm AN_KININFL "grandfather" ; !OAHPA
 -ohkom:ôhkom AN_KININFL "grandmother" ; !NB!
-!nôhkom:ôhkom AN_KININFL "grandmother" ; !OAHPA
 -tisân:îtisân AN_KININFL "sibling" ; !NB! 
 -sîmis:isîmis AN_KININFL "younger sibling" ; 
-!nisîmis:isîmis AN_KININFL "younger sibling" ; !OAHPA
--tôtem:itôtem AN_KININFL "friend" ; 
-!nitôtem:itôtem AN_KININFL "friend" ; !OAHPA
+-tôtêm:itôtêm AN_KININFL "friend" ; 
+-côcêmisis:icôcêmisis AN_DIMPOSS "young friend" ; 
 -kâwiy:ikâw AN_KINiyINFL "mother" ;!  !yaml
-!nikâwiy:ikâw AN_KINiyINFL "mother" ;! !OAHPA !Not dim!
 -ohtâwiy:ohtâw AN_KINiyINFL "father" ;   !OBS nohtâwiy, ohtâwiy, kôhtâwînaw
 -ohtâwiy:ôhtâw AN_KINiyINFL "heavenly father" ;   !OBS nohtâwiy, ohtâwiy, kôhtâwînaw
-!nohtâwiy:ohtâw AN_KINiyINFL "father" ;   !OAHPA !Not dim!
 -mis:imis AN_KININFL "older sister" ;
-!nimis:imis AN_KININFL "older sister" ;!OAHPA
 -kâwîs:ikâwîs AN_KININFL "mother's sister" ; !  !Not dim!
 -sis:isis AN_KININFL "mother's brother, father's sister husband" ; 
-!nisis:isis AN_KININFL "mother's brother, father's sister husband" ;!OAHPA !Not dim!
 ohcâwîs:ohcâwîs AN_KININFL "father's brother" ; !
-!nohcâwîs:ohcâwîs AN_KININFL "father's brother" ; !OAHPA
 -hciwâmis:ihciwâmis AN_KININFL "cousin" ;  
 -ciwâm:ihciwâm AN_KININFL "male parallel cousin" ;  
 -cânis:icânis AN_KININFL "daughter" ;
@@ -4248,13 +4237,12 @@ ohcâwîs:ohcâwîs AN_KININFL "father's brother" ; !
 -câhkos:icâhkos AN_KININFL "cousin/sister in law" ;! 
 -ôsisim:ôsisim AN_KININFL "grandchild" ;!
 -nâpêm:inâpêm AN_KININFL_MONOG "husband" ;
-!ninâpêm:inâpêm AN_KININFL_MONOG "husband" ; !OAHPA
 !wîkimâkan:îkimâkan AN_KININFL_MONOG "spouse" ;  !OBS!
 -iyinîmak:itiyinîm AN_KININFL_PL "people; followers" ;
 -ôskinîkîm:itôskinîkîm AN_KININFL "young man" ;
 -ôskinîkîmis:itôskinîkîmis AN_DIMPOSS "young man" ; 
 -yihkwak:iyihkw AN_KININFL_PL "glands" ; !w
--îci-âyis:îc-âyis AN_KININFL "fellow youngster" ;
+-îci-ayis:îc-ayis AN_KININFL "fellow youngster" ;
 -îci-âyis:îci-âyis AN_KININFL "fellow youngster" ;
 -îci-atoskêyâkan:îci-atoskêyâkan AN_KININFL "fellow employee" ;
 -îci-ayisiyiniw:îci-ayisiyiniw AN_KININFL "fellow human" ;
