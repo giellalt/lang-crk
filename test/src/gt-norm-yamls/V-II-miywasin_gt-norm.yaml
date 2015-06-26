@@ -9,7 +9,8 @@ Config:
 
 Tests:
   
-  Verb - miywasin - ok : # Ordinary VII base on Wolvengrey
+  Verb - miywasin - ok : # Ordinary VII bases on Wolvengrey, Okimāsis for Fut+Cond
+  
      miywâsin+V+II+Ind+Prs+3Sg: miywâsin
      miywâsin+V+II+Ind+Prs+3Pl: miywâsinwa
      miywâsin+V+II+Ind+Prs+4Sg: miywâsiniyiw
@@ -19,14 +20,24 @@ Tests:
      miywâsin+V+II+Ind+Prt+3Pl: [kî-miywâsinwa, kîmiywâsinwa]
      miywâsin+V+II+Ind+Prt+4Sg: [kî-miywâsiniyiw, kîmiywâsiniyiw]
      miywâsin+V+II+Ind+Prt+4Pl: [kî-miywâsiniyiwa, kîmiywâsiniyiwa]
-
+     
+     miywâsin+V+II+Ind+Fut+Def+3Sg: [ka-miywâsin, kamiywâsin]
+     miywâsin+V+II+Ind+Fut+Def+3Pl: [ka-miywâsinwa, kamiywâsinwa]
+     miywâsin+V+II+Ind+Fut+Def+4Sg: [ka-miywâsiniyiw, kamiywâsiniyiw]
+     miywâsin+V+II+Ind+Fut+Def+4Pl: [ka-miywâsiniyiwa, kamiywâsiniyiwa]
+     
+     miywâsin+V+II+Ind+Fut+Int+3Sg: [wî-miywâsin, kîmiywâsin]
+     miywâsin+V+II+Ind+Fut+Int+3Pl: [wî-miywâsinwa, kîmiywâsinwa]
+     miywâsin+V+II+Ind+Fut+Int+4Sg: [wî-miywâsiniyiw, kîmiywâsiniyiw]
+     miywâsin+V+II+Ind+Fut+Int+4Pl: [wî-miywâsiniyiwa, wîmiywâsiniyiwa]
 
      miywâsin+V+II+Cnj+Prs+3Sg: [ê-miywâsik, êmiywâsik]
      miywâsin+V+II+Cnj+Prs+3Pl: [ê-miywâsiki, êmiywâsiki]
      miywâsin+V+II+Cnj+Prs+4Sg: [ê-miywâsiniyik, êmiywâsiniyik]
      miywâsin+V+II+Cnj+Prs+4Pl: [ê-miywâsiniyiki, êmiywâsiniyiki]
-
+     
      miywâsin+V+II+Cnj+Prt+3Sg: [ê-kî-miywâsik, êkîmiywâsik]
      miywâsin+V+II+Cnj+Prt+3Pl: [ê-kî-miywâsiki, êkîmiywâsiki]
-     miywâsin+V+II+Cnj+Prt+4Sg: [ê-kî-miywâsiniyik, êkîmiywâsiniyik]
-     miywâsin+V+II+Cnj+Prt+4Pl: [ê-kî-miywâsiniyiki, êkîmiywâsiniyiki]
+     miywâsin+V+II+Cnj+Prt+4Sg: [ê-kî-miywâsiyik, êkîmiywâsiyik]
+     miywâsin+V+II+Cnj+Prt+4Pl: [ê-kî-miywâsiyiki, êkîmiywâsiyiki]
+
