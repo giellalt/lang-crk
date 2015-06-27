@@ -1,0 +1,92 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - mâham -  : #  VAI am-final verb,  Wolvengrey p 397
+
+     mâham+V+AI+Ind+Prs+1Sg: nimâhên
+     mâham+V+AI+Ind+Prs+2Sg: kimâhên
+     mâham+V+AI+Ind+Prs+3Sg: mâham
+     mâham+V+AI+Ind+Prs+4Sg/Pl: mâhamiyiwa
+     mâham+V+AI+Ind+Prs+1Pl: nimâhênân
+     mâham+V+AI+Ind+Prs+12Pl: [kimâhênaw, kimâhênânaw]
+     mâham+V+AI+Ind+Prs+2Pl: kimâhênâwâw
+     mâham+V+AI+Ind+Prs+3Pl: mâhamwak
+
+     mâham+V+AI+Ind+Prt+1Sg: [nikî-mâhên, nikîmâhên]
+     mâham+V+AI+Ind+Prt+2Sg: [kikî-mâhên, kikîmâhên]
+     mâham+V+AI+Ind+Prt+3Sg: [kî-mâham, kîmâham]
+     mâham+V+AI+Ind+Prt+4Sg/Pl: [kî-mâhamiyiwa, kîmâhamiyiwa]
+     mâham+V+AI+Ind+Prt+1Pl: [nikî-mâhênân, nikîmâhênân]
+     mâham+V+AI+Ind+Prt+12Pl: [kikî-mâhênaw, kikîmâhênaw, kikî-mâhênânaw, kikîmâhênânaw]
+     mâham+V+AI+Ind+Prt+2Pl: [kikî-mâhênâwâw, kikîmâhênâwâw]
+     mâham+V+AI+Ind+Prt+3Pl: [kî-mâhamwak, kîmâhamwak]
+     
+     mâham+V+AI+Ind+Fut+Def+1Sg: [nika-mâhên, nikamâhên]
+     mâham+V+AI+Ind+Fut+Def+2Sg: [kika-mâhên, kikamâhên]
+     mâham+V+AI+Ind+Fut+Def+3Sg: [ka-mâham, kamâham]
+     mâham+V+AI+Ind+Fut+Def+4Sg/Pl: [ka-mâhamiyiwa, kamâhamiyiwa]
+     mâham+V+AI+Ind+Fut+Def+1Pl: [nika-mâhênân, nikamâhênân]
+     mâham+V+AI+Ind+Fut+Def+12Pl: [kika-mâhênaw, kikamâhênaw, kikamâhênânaw, kika-mâhênânaw]
+     mâham+V+AI+Ind+Fut+Def+2Pl: [kika-mâhênâwâw, kikamâhênâwâw]
+     mâham+V+AI+Ind+Fut+Def+3Pl: [ka-mâhamwak, kamâhamwak]
+     
+     mâham+V+AI+Ind+Fut+Int+1Sg: [niwî-mâhên, niwîmâhên]
+     mâham+V+AI+Ind+Fut+Int+2Sg: [kiwî-mâhên, kiwîmâhên]
+     mâham+V+AI+Ind+Fut+Int+3Sg: [wî-mâham, wîmâham]
+     mâham+V+AI+Ind+Fut+Int+4Sg/Pl: [wî-mâhamiyiwa, wîmâhamiyiwa]
+     mâham+V+AI+Ind+Fut+Int+1Pl: [niwî-mâhênân, niwîmâhênân]
+     mâham+V+AI+Ind+Fut+Int+12Pl: [kiwî-mâhênaw, kiwîmâhênaw, kiwî-mâhênânaw, kiwîmâhênânaw]
+     mâham+V+AI+Ind+Fut+Int+2Pl: [kiwî-mâhênâwâw, kiwîmâhênâwâw]
+     mâham+V+AI+Ind+Fut+Int+3Pl: [wî-mâhamwak, wîmâhamwak]
+     
+     mâham+V+AI+Cnj+Prs+1Sg: [ê-mâhamân, êmâhamân]
+     mâham+V+AI+Cnj+Prs+2Sg: [ê-mâhaman, êmâhaman]
+     mâham+V+AI+Cnj+Prs+3Sg: [ê-mâhahk, êmâhahk]
+     mâham+V+AI+Cnj+Prs+4Sg/Pl: [ê-mâhamiyit, êmâhamiyit]
+     mâham+V+AI+Cnj+Prs+1Pl: [ê-mâhamâhk, êmâhamâhk]
+     mâham+V+AI+Cnj+Prs+12Pl: [ê-mâhamahk, êmâhamahk]
+     mâham+V+AI+Cnj+Prs+2Pl: [ê-mâhamêk, êmâhamêk]
+     mâham+V+AI+Cnj+Prs+3Pl: [ê-mâhahkik, êmâhahkik]
+     
+     mâham+V+AI+Cnj+Prt+1Sg: [ê-kî-mâhamân, êkîmâhamân]
+     mâham+V+AI+Cnj+Prt+2Sg: [ê-kî-mâhaman, êkîmâhaman]
+     mâham+V+AI+Cnj+Prt+3Sg: [ê-kî-mâhahk, êkîmâhahk]
+     mâham+V+AI+Cnj+Prt+4Sg/Pl: [ê-kî-mâhamiyit, êkîmâhamiyit]
+     mâham+V+AI+Cnj+Prt+1Pl: [ê-kî-mâhamâhk, êkîmâhamâhk]
+     mâham+V+AI+Cnj+Prt+12Pl: [ê-kî-mâhamahk, êkîmâhamahk]
+     mâham+V+AI+Cnj+Prt+2Pl: [ê-kî-mâhamêk, êkîmâhamêk]
+     mâham+V+AI+Cnj+Prt+3Pl: [ê-kî-mâhahkik, êkîmâhahkik]
+     
+     mâham+V+AI+Cnj+Fut+Int+1Sg: [ê-wî-mâhamân, êwîmâhamân]
+     mâham+V+AI+Cnj+Fut+Int+2Sg: [ê-wî-mâhaman, êwîmâhaman]
+     mâham+V+AI+Cnj+Fut+Int+3Sg: [ê-wî-mâhahk, êwîmâhahk]
+     mâham+V+AI+Cnj+Fut+Int+4Sg/Pl: [ê-wî-mâhamiyit, êwîmâhamiyit]
+     mâham+V+AI+Cnj+Fut+Int+1Pl: [ê-wî-mâhamâhk, êwîmâhamâhk]
+     mâham+V+AI+Cnj+Fut+Int+12Pl: [ê-wî-mâhamahk, êwîmâhamahk]
+     mâham+V+AI+Cnj+Fut+Int+2Pl: [ê-wî-mâhamêk, êwîmâhamêk]
+     mâham+V+AI+Cnj+Fut+Int+3Pl: [ê-wî-mâhahkik, êwîmâhahkik]
+     
+     mâham+V+AI+Fut+Cond+1Sg: mâhamâni
+     mâham+V+AI+Fut+Cond+2Sg: mâhamani
+     mâham+V+AI+Fut+Cond+3Sg: mâhêci
+     mâham+V+AI+Fut+Cond+4Sg/Pl: mâhamici
+     mâham+V+AI+Fut+Cond+1Pl: mâhamâhki
+     mâham+V+AI+Fut+Cond+12Pl: [mâhamahko, mâhamahki]
+     mâham+V+AI+Fut+Cond+2Pl: mâhamêko
+     mâham+V+AI+Fut+Cond+3Pl: mâhahkwâwi
+
+     mâham+V+AI+Imp+Imm+2Sg: mâha
+     mâham+V+AI+Imp+Imm+2Pl: mâhamok
+     mâham+V+AI+Imp+Imm+12Pl: mâhêtan
+     
+     mâham+V+AI+Imp+Del+2Sg: mâhamôhkan
+     mâham+V+AI+Imp+Del+2Pl: mâhamôhkêk
+     mâham+V+AI+Imp+Del+12Pl: mâhamôhkahk
