@@ -7,8 +7,10 @@ egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep 
 egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN.*PL' |egrep -v '^\-' |  tr '+:' ' ' | cut -d ' ' -f1 > plINnounlemmas
 
 # Generate dependent lemmas in Poss Px1Sg
-egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep '^\-.* AN_KIN' |grep -v 'PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+AN+Sg+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >  noungenlemmas  
+egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |egrep '^\-.* (AN_KIN|AN_DIMPOSS)' |grep -v 'PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+AN+Sg+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >  noungenlemmas  
 egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep '^\-.* AN_KIN.*PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+AN+Pl+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >>  noungenlemmas  
+egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep '^\-.* IN_DEP' |grep -v 'PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+IN+Sg+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >>  noungenlemmas  
+
 
 # Generate independent lemmas
 cat ANnounlemmas |sed 's/$/+N+AN+Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
@@ -19,6 +21,8 @@ cat plINnounlemmas |sed 's/$/+N+IN+Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator
 
 # Dependent lemmas in Poss Px1Sg, from wolvengrey:
 echo 'nêkâ,nicawâsimis,nicâhkos,nicâhkosê,nicânis,nicâpân,nicâpânis,niciwâm,niciwâmis,niciwâmiskwêm,niciwâ,nicîhcâwâw,nicôcêmisis,nikayâsim,nikâwiy,nikâwîs,nikâ,nikêhtê-ayim,nikihci-âniskotâpân,nikisêyinîm,nikocâk,nikocâsiskwêm,nikosê,nikosim,nikosis,nikwêmês,nikwêmê,nimanitôm,nimâmâ,niminôsimis,nimis,nimisê,nimosôm,nimosômipan,nimosô,ninahâhkim,ninahâhkisîm,ninâpêm,ninôtokwêm,nipâpâ,nipê-wîci-ispîhcisîmâkan,nipêpîm,nipêyakokosisân,nisikos,nisikosê,nisis,nisisê,nisîm,nisîmê,nisîmis,nistês,nistêsê,nistim,nistimihkâwin,nitawâsimis,nitawêmâw,nitawêmâ,nitayisiyinîm,nitânis,nitâniskocâpân,nitâniskocâpânis,nitân,nitâpân,nitâyim,nitihkwatim,nitihkwâ,nitihtâwâw,nitiyinîmak,nitôkimâskwêm,nitôsim,nitôsimiskwêm,nitôsis,nitôskinîkîm,nitôskinîkîmis,nitôtêm,niwîtatoskêmâkan,niyihkos,niyihkwak,nîc-âyis,nîci-atoskêyâkan,nîci-ayis,nîci-ayisiyiniw,nîci-ayisiyinîm,nîci-kisêyiniw,nîci-kisêyin,nîci-kiskinwahamawâkan,nîci-nahâhkis,nîci-nâpêw,nîci-nêhiyaw,nîci-nônimâkan,nîcimos,nîcisân,nîcisânis,nîscâs,nîskwa,nîstâw,nîtim,nîtisân,nîwa,nîwahikan,nôhcâwîs,nôhkom,nôhkomipan,nôhkomis,nôhkô,nôhpan,nôhtâwiy,nôhtâwîhkâwin,nôhtâwîpan,nôhtâ,nôsisê,nôsisim,' | tr ',' '\n' > allnounlemmas
+
+echo 'niskotâkay,nimistikom,nimwâhkohkêw,ninipîm,ninîkânîm,nipêminak,nipîhtawâwikanân,nisikwâkan,nisoy,nisêkitikom,nisôs,nitostikwânim,nitôsim,nîki,nîkis,nîni,nîwas,nitâmiyawa,nîyâw,' | tr ',' '\n' >> allnounlemmas
 
 cat ANnounlemmas INnounlemmas plANnounlemmas plINnounlemmas  >> allnounlemmas
 sort -u -o allnounlemmas allnounlemmas
