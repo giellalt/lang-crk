@@ -10,45 +10,83 @@ Config:
 Tests:
   
   Verb - mîci - ok : # Wolvengrey VTI3 verb - p. 400 
-     mîciw+V+TI+Imp+Imm+2Sg: mîci
-     mîciw+V+TI+Imp+Imm+12Pl: mîcitân
-     mîciw+V+TI+Imp+Imm+2Pl: mîcik
-     mîciw+V+TI+Imp+Del+2Sg: mîcihkan
-     mîciw+V+TI+Imp+Del+12Pl: mîcihkahk
-     mîciw+V+TI+Imp+Del+2Pl: mîcihkêk
+    
+     mîciw+V+AI+Ind+Prs+1Sg: nimîcin
+     mîciw+V+AI+Ind+Prs+2Sg: kimîcin
+     mîciw+V+AI+Ind+Prs+3Sg: mîciw
+     mîciw+V+AI+Ind+Prs+4Sg/Pl: mîciyiwa
+     mîciw+V+AI+Ind+Prs+1Pl: nimîcinân
+     mîciw+V+AI+Ind+Prs+12Pl: [kimîcinaw, kimîcinânaw]
+     mîciw+V+AI+Ind+Prs+2Pl: kimîcinâwâw
+     mîciw+V+AI+Ind+Prs+3Pl: mîciwak
+     
+     mîciw+V+AI+Ind+Prt+1Sg: [nikî-mîcin, nikîmîcin] 
+     mîciw+V+AI+Ind+Prt+2Sg: [kikî-mîcin, kikîmîcin]
+     mîciw+V+AI+Ind+Prt+3Sg: [kî-mîciw, kîmîciw]
+     mîciw+V+AI+Ind+Prt+4Sg/Pl: [kî-mîciyiwa, kîmîciyiwa]
+     mîciw+V+AI+Ind+Prt+1Pl: [nikî-mîcinân, nikîmîcinân]
+     mîciw+V+AI+Ind+Prt+12Pl: [kikî-mîcinaw, kikîmîcinaw, kikîmîcinânaw, kikî-mîcinânaw]
+     mîciw+V+AI+Ind+Prt+2Pl: [kikî-mîcinâwâw, kikîmîcinâwâw]
+     mîciw+V+AI+Ind+Prt+3Pl: [kî-mîciwak, kîmîciwak]
+     
+     mîciw+V+AI+Ind+Fut+Def+1Sg: [nika-mîcin, nikamîcin]
+     mîciw+V+AI+Ind+Fut+Def+2Sg: [kika-mîcin, kikamîcin]
+     mîciw+V+AI+Ind+Fut+Def+3Sg: [ka-mîciw, kamîciw]
+     mîciw+V+AI+Ind+Fut+Def+4Sg/Pl: [ka-mîciyiwa, kamîciyiwa]
+     mîciw+V+AI+Ind+Fut+Def+1Pl: [nika-mîcinân, nikamîcinân]
+     mîciw+V+AI+Ind+Fut+Def+12Pl: [kika-mîcinaw, kikamîcinaw, kika-mîcinânaw, kikamîcinânaw]
+     mîciw+V+AI+Ind+Fut+Def+2Pl: [kika-mîcinâwâw,kikamîcinâwâw] 
+     mîciw+V+AI+Ind+Fut+Def+3Pl: [ka-mîciwak, kamîciwak]
+     
+     mîciw+V+AI+Ind+Fut+Int+1Sg: [niwî-mîcin, niwîmîcin]
+     mîciw+V+AI+Ind+Fut+Int+2Sg: [kiwî-mîcin, kiwîmîcin]
+     mîciw+V+AI+Ind+Fut+Int+3Sg: [wî-mîciw, wîmîciw]
+     mîciw+V+AI+Ind+Fut+Int+4Sg/Pl: [wî-mîciyiwa, wîmîciyiwa]
+     mîciw+V+AI+Ind+Fut+Int+1Pl: [niwî-mîcinân, niwîmîcinân]
+     mîciw+V+AI+Ind+Fut+Int+12Pl: [kiwî-mîcinaw, kiwîmîcinaw, kiwî-mîcinânaw, kiwîmîcinânaw]
+     mîciw+V+AI+Ind+Fut+Int+2Pl: [kiwî-mîcinâwâw, kiwîmîcinâwâw]
+     mîciw+V+AI+Ind+Fut+Int+3Pl: [wî-mîciwak, wîmîciwak]
+     
+     mîciw+V+AI+Cnj+Prs+1Sg: [ê-mîciyân, êmîciyân]
+     mîciw+V+AI+Cnj+Prs+2Sg: [ê-mîciyan, êmîciyan]
+     mîciw+V+AI+Cnj+Prs+3Sg: [ê-mîcit, êmîcit]
+     mîciw+V+AI+Cnj+Prs+4Sg/Pl: [ê-mîciyit, êmîciyit]
+     mîciw+V+AI+Cnj+Prs+1Pl: [ê-mîciyâhk, êmîciyâhk]
+     mîciw+V+AI+Cnj+Prs+12Pl: [ê-mîciyahk, êmîciyahk]
+     mîciw+V+AI+Cnj+Prs+2Pl: [ê-mîciyêk, êmîciyêk]
+     mîciw+V+AI+Cnj+Prs+3Pl: [ê-mîcicik, êmîcicik]
+     
+     mîciw+V+AI+Cnj+Prt+1Sg: [ê-kî-mîciyân, êkîmîciyân]
+     mîciw+V+AI+Cnj+Prt+2Sg: [ê-kî-mîciyan, êkîmîciyan]
+     mîciw+V+AI+Cnj+Prt+3Sg: [ê-kî-mîcit, êkîmîcit]
+     mîciw+V+AI+Cnj+Prt+4Sg/Pl: [ê-kî-mîciyit, êkîmîciyit]
+     mîciw+V+AI+Cnj+Prt+1Pl: [ê-kî-mîciyâhk, êkîmîciyâhk]
+     mîciw+V+AI+Cnj+Prt+12Pl: [ê-kî-mîciyahk, êkîmîciyahk]
+     mîciw+V+AI+Cnj+Prt+2Pl: [ê-kî-mîciyêk, êkîmîciyêk]
+     mîciw+V+AI+Cnj+Prt+3Pl: [ê-kî-mîcicik, êkîmîcicik]
+     
+     mîciw+V+AI+Cnj+Fut+Int+1Sg: [ê-wî-mîciyân, êwîmîciyân]
+     mîciw+V+AI+Cnj+Fut+Int+2Sg: [ê-wî-mîciyan, êwîmîciyan]
+     mîciw+V+AI+Cnj+Fut+Int+3Sg: [ê-wî-mîcit, êwîmîcit]
+     mîciw+V+AI+Cnj+Fut+Int+4Sg/Pl: [ê-wî-mîciyit, êwîmîciyit]
+     mîciw+V+AI+Cnj+Fut+Int+1Pl: [ê-wî-mîciyâhk, êwîmîciyâhk]
+     mîciw+V+AI+Cnj+Fut+Int+12Pl: [ê-wî-mîciyahk, êwîmîciyahk]
+     mîciw+V+AI+Cnj+Fut+Int+2Pl: [ê-wî-mîciyêk, êwîmîciyêk]
+     mîciw+V+AI+Cnj+Fut+Int+3Pl: [ê-wî-mîcicik, êwîmîcicik]
 
-     mîciw+V+TI+Ind+Prs+1Sg: nimîcin
-     mîciw+V+TI+Ind+Prs+2Sg: kimîcin
-     mîciw+V+TI+Ind+Prs+1Pl: nimîcinân
-     mîciw+V+TI+Ind+Prs+12Pl: [kimîcinaw, kimîcinânaw]
-     mîciw+V+TI+Ind+Prs+2Pl: kimîcinâwâw
-     mîciw+V+TI+Ind+Prs+3Sg: mîciw
-     mîciw+V+TI+Ind+Prs+3Pl: mîciwak
-     mîciw+V+TI+Ind+Prs+4Pl: mîciyiwa
+     mîciw+V+AI+Fut+Cond+1Sg: mîciyâni
+     mîciw+V+AI+Fut+Cond+2Sg: mîciyani
+     mîciw+V+AI+Fut+Cond+3Sg: mîcici
+     mîciw+V+AI+Fut+Cond+4Sg/Pl: mîciyici
+     mîciw+V+AI+Fut+Cond+1Pl: mîciyâhki
+     mîciw+V+AI+Fut+Cond+12Pl: mîciyahko
+     mîciw+V+AI+Fut+Cond+2Pl: mîciyêko
+     mîciw+V+AI+Fut+Cond+3Pl: mîcitwâwi
 
-     mîciw+V+TI+Ind+Prt+1Sg: [nikîmîcin, nikî-mîcin]
-     mîciw+V+TI+Ind+Prt+2Sg: [kikîmîcin, kikî-mîcin]
-     mîciw+V+TI+Ind+Prt+1Pl: [nikîmîcinân, nikî-mîcinân]
-     mîciw+V+TI+Ind+Prt+12Pl: [kikîmîcinaw, kikî-mîcinaw, kikîmîcinânaw, kikî-mîcinânaw]
-     mîciw+V+TI+Ind+Prt+2Pl: [kikîmîcinâwâw, kikî-mîcinâwâw]
-     mîciw+V+TI+Ind+Prt+3Sg: [kîmîciw, kî-mîciw]
-     mîciw+V+TI+Ind+Prt+3Pl: [kî-mîciwak, kîmîciwak]
-     mîciw+V+TI+Ind+Prt+4Pl: [kî-mîciyiwa, kîmîciyiwa]
-
-     mîciw+V+TI+Cnj+Prs+1Sg: [ê-mîciyân, êmîciyân]
-     mîciw+V+TI+Cnj+Prs+2Sg: [ê-mîciyan, êmîciyan]
-     mîciw+V+TI+Cnj+Prs+1Pl: [ê-mîciyâhk, êmîciyâhk]
-     mîciw+V+TI+Cnj+Prs+12Pl: [ê-mîciyahk, êmîciyahk]
-     mîciw+V+TI+Cnj+Prs+2Pl: [ê-mîciyêk, êmîciyêk]
-     mîciw+V+TI+Cnj+Prs+3Sg: [ê-mîcit, êmîcit]
-     mîciw+V+TI+Cnj+Prs+3Pl: [ê-mîcicik, êmîcicik]
-     mîciw+V+TI+Cnj+Prs+4Pl: [ê-mîciyit, êmîciyit]
-
-     mîciw+V+TI+Cnj+Prt+1Sg: [ê-kî-mîciyân, êkîmîciyân]
-     mîciw+V+TI+Cnj+Prt+2Sg: [ê-kî-mîciyan, êkîmîciyan]
-     mîciw+V+TI+Cnj+Prt+1Pl: [ê-kî-mîciyâhk, êkîmîciyâhk]
-     mîciw+V+TI+Cnj+Prt+12Pl: [ê-kî-mîciyahk, êkîmîciyahk]
-     mîciw+V+TI+Cnj+Prt+2Pl: [ê-kî-mîciyêk, êkîmîciyêk]
-     mîciw+V+TI+Cnj+Prt+3Sg: [ê-kî-mîcit, êkîmîcit]
-     mîciw+V+TI+Cnj+Prt+3Pl: [ê-kî-mîcicik, êkîmîcicik]
-     mîciw+V+TI+Cnj+Prt+4Pl: [ê-kî-mîciyit, êkîmîciyit]
+     mîciw+V+AI+Imp+Imm+2Sg: mîci
+     mîciw+V+AI+Imp+Imm+2Pl: mîcik
+     mîciw+V+AI+Imp+Imm+12Pl: mîcitân
+     
+     mîciw+V+AI+Imp+Del+2Sg: mîcihkan
+     mîciw+V+AI+Imp+Del+2Pl: mîcihkêk
+     mîciw+V+AI+Imp+Del+12Pl: mîcihkahk
