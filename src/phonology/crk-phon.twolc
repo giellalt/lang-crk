@@ -86,7 +86,7 @@ t2:t  <=> _ %>:0 Vow Lts:+ .#. ;
 
 "t:c in diminutives" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
-t:c <=>  _ :*  %>:0 Dim .#. ; ! cehcapiwinisis
+t:c <=>  _ :*  %>:0 :* %^DIM:0 :* .#. ; ! cehcapiwinisis
 
 
 
@@ -99,7 +99,7 @@ t2:c <=>  _ %>:0 Vow Dim .#. ;
 
 "i:o alternations" 
 !! __@RULENAME@__  for suffix initial vowel, stem final -Cw
-i:o <=> Cns w: %>:0 ( %^POS:0 ) ( %>:0 ) _  ; !  
+i:o <=> Cns w: %>: ( %^POS:0 ) ( %>:0 ) _  ; !  
 
 "Vowel final stems: vowel deletion when suffix has initial a or i" 
 !! __@RULENAME@__ , when the suffix  niska, wâwi+a wâwi+ihk wâwi+is, oskâyi+a, êsa+ihk
@@ -128,7 +128,7 @@ i:î <=> Cns _ [ w: | y: ] %>:0  i: ( s ) ( m ) [ %^DIM:0 | %^LOC:0 | %^POS:0 ] 
 !! __@RULENAME@__ , initially in stem, and for stem vowel when final -oy/ow
 !! okimâw:nitôkimâm, nitohtôsâpom tohtôsâpoy tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
 o:ô <=> t2: %>:0 _  [ k | s ] :* i: m  ; ! okimâw:nitôkimâm, oskâyi ! careful: only in front of k and s first
- 		 %>:0 t _  h :* i: m  ; ! nitohtôsâpom tohtôsâpoy
+ 		 %>:0 t _  h :* %>: i: m  ; ! nitohtôsâpom tohtôsâpoy
  		\Pos _ [ w: | y: ] %>:0 i: ( s ) ( m ) ( n ) ( â ) [ %^DIM:0 | %^LOC:0 | %^POS:0 ] ; ! tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
 
 
@@ -199,7 +199,7 @@ w2:0 <=>  _ %>:0 %^WI:0 i:0 ;
 
 "Lengthening of vowels before dissappearing stem final <w>"
 !! __@RULENAME@__
-Vx:Vy <=> Cns: _ w2:0 %>:0 %^WI:0 ;
+Vx:Vy <=> Cns _ w2:0 %>:0 %^WI:0 ;
    where Vx in ( a i o ) 
          Vy in ( â î ô )
    matched ;
