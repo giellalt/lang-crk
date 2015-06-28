@@ -1,15 +1,22 @@
-#Script adapted to Cree
+# Script adapted to Cree
 
-# Pick lemmas
+# Pick AN lemmas
 egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN' |egrep -v '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > ANnounlemmas
+
+# Pick AN -PL lemmas
 egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN.*PL' |egrep -v '^\-' |  tr '+:' ' ' | cut -d ' ' -f1 > plANnounlemmas
+
+# Pick IN lemmas
 egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN' |egrep -v '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > INnounlemmas
+
+# Pick IN PL lemmas
 egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN.*PL' |egrep -v '^\-' |  tr '+:' ' ' | cut -d ' ' -f1 > plINnounlemmas
 
-# Generate dependent lemmas in Poss Px1Sg
+# Generate dependent lemmas in Poss Px1Sg, and add to lemmaslist
 egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |egrep '^\-.* (AN_KIN|AN_DIMPOSS)' |grep -v 'PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+AN+Sg+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >  noungenlemmas  
 egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep '^\-.* AN_KIN.*PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+AN+Pl+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >>  noungenlemmas  
 egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep '^\-.* IN_DEP' |grep -v 'PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+IN+Sg+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >>  noungenlemmas  
+egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep '^\-.* IN_DEP.*PL' |grep -v 'PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+IN+Pl+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >>  noungenlemmas  
 
 
 # Generate independent lemmas
@@ -17,12 +24,9 @@ cat ANnounlemmas |sed 's/$/+N+AN+Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-g
 cat INnounlemmas |sed 's/$/+N+IN+Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
 cat plANnounlemmas |sed 's/$/+N+AN+Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
 cat plINnounlemmas |sed 's/$/+N+IN+Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
-#    cat depINnounlemmas |sed 's/$/+N+IN+Sg+Px1Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
 
-# Dependent lemmas in Poss Px1Sg, from wolvengrey:
-echo 'nêkâ,nicawâsimis,nicâhkos,nicâhkosê,nicânis,nicâpân,nicâpânis,niciwâm,niciwâmis,niciwâmiskwêm,niciwâ,nicîhcâwâw,nicôcêmisis,nikayâsim,nikâwiy,nikâwîs,nikâ,nikêhtê-ayim,nikihci-âniskotâpân,nikisêyinîm,nikocâk,nikocâsiskwêm,nikosê,nikosim,nikosis,nikwêmês,nikwêmê,nimanitôm,nimâmâ,niminôsimis,nimis,nimisê,nimosôm,nimosômipan,nimosô,ninahâhkim,ninahâhkisîm,ninâpêm,ninôtokwêm,nipâpâ,nipê-wîci-ispîhcisîmâkan,nipêpîm,nipêyakokosisân,nisikos,nisikosê,nisis,nisisê,nisîm,nisîmê,nisîmis,nistês,nistêsê,nistim,nistimihkâwin,nitawâsimis,nitawêmâw,nitawêmâ,nitayisiyinîm,nitânis,nitâniskocâpân,nitâniskocâpânis,nitân,nitâpân,nitâyim,nitihkwatim,nitihkwâ,nitihtâwâw,nitiyinîmak,nitôkimâskwêm,nitôsim,nitôsimiskwêm,nitôsis,nitôskinîkîm,nitôskinîkîmis,nitôtêm,niwîtatoskêmâkan,niyihkos,niyihkwak,nîc-âyis,nîci-atoskêyâkan,nîci-ayis,nîci-ayisiyiniw,nîci-ayisiyinîm,nîci-kisêyiniw,nîci-kisêyin,nîci-kiskinwahamawâkan,nîci-nahâhkis,nîci-nâpêw,nîci-nêhiyaw,nîci-nônimâkan,nîcimos,nîcisân,nîcisânis,nîscâs,nîskwa,nîstâw,nîtim,nîtisân,nîwa,nîwahikan,nôhcâwîs,nôhkom,nôhkomipan,nôhkomis,nôhkô,nôhpan,nôhtâwiy,nôhtâwîhkâwin,nôhtâwîpan,nôhtâ,nôsisê,nôsisim,' | tr ',' '\n' > allnounlemmas
-
-echo 'niskotâkay,nimistikom,nimwâhkohkêw,ninipîm,ninîkânîm,nipêminak,nipîhtawâwikanân,nisikwâkan,nisoy,nisêkitikom,nisôs,nitostikwânim,nitôsim,nîki,nîkis,nîni,nîwas,nitâmiyawa,nîyâw,' | tr ',' '\n' >> allnounlemmas
+# Pick dependent lemmas' Px1Sg form (is comment in stems file) :
+egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc | grep '¢' | cut -d '¢' -f2 |cut -d ' ' -f1 > allnounlemmas
 
 cat ANnounlemmas INnounlemmas plANnounlemmas plINnounlemmas  >> allnounlemmas
 sort -u -o allnounlemmas allnounlemmas
