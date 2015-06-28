@@ -228,6 +228,8 @@ LEXICON ANPOSS-ATIM !!= * @CODE@ is also there to handle the highly irregular at
 +N+AN+Der/Dim:%>is%^DIMis%> AN_DIMPOSS ;
 !+N+AN:%> ANSUFF_LOC ;
 
+LEXICON ANVOC !!= * @CODE@ 
++N+AN+Sg: # ;
 
 LEXICON AN_KININFL !!= * @CODE@ 
 +N+AN+Sg: ANSUFF_SG ;
@@ -380,6 +382,9 @@ LEXICON INimDIM-SG !!= * @CODE@ the diminutives with poss.-im-, Dim: -is
 
 LEXICON INDEP-DERIV_M_SG !!= * @CODE@  for hardcoded noun:diminutive for inalienables
 +N+IN+Der/Dim:  IN_DEP_INIT_M ;
+
+LEXICON IN_DEP_INIT_M_PL !!= * @CODE@ for the inanimate possessive declension, plural lemmas
+IN_DEP_INIT_M ;
 
 LEXICON IN_DEP_INIT_M !!= * @CODE@ for the inanimate possessive declension
 < "+N":0 "+IN":0  "@U.noun.abs@" > INABLGENERIC ; !Generic form 
