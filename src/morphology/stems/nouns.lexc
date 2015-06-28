@@ -3666,7 +3666,7 @@ têhtahokan IN_DECL "platform" ;
 têhtapiwaskisin IN_DECL "riding boot" ;
 têhtapiwin IN_DECL "chair, seat; saddle" ;
 têhtapiwin AN_DECL "mount, horse" ;
-têhtapîwatim:tehtapiwatimw AN_DECL "saddle horse" ;
+têhtapîwatim:têhtapîwatimw AN_DECL "saddle horse" ;
 têhtapîwitâs AN_DECL "riding legging, riding breeches" ;
 têhtascikêwin IN_DECL "shelf" ;
 tênikan AN_DECL "playing card" ;
@@ -4173,12 +4173,12 @@ nimosô:imosô ANVOC "grandfather (a call for him)" ; !
 -sîmis:isîmis AN_KININFL "younger sibling" ; !¢nisîmis 
 -tôtêm:itôtêm AN_KININFL "friend" ; !¢nitôtêm 
 -côcêmisis:icôcêmisis AN_DIMPOSS "young friend" ; !¢nicôcêmisis 
--kâwiy:ikâw AN_KINiyINFL "mother" ;!¢nikâw   !yaml
--ohtâwiy:ôhtâw AN_KINiyINFL "heavenly father" ;   !¢nohtâwiy ! ohtâwiy, kôhtâwînaw
+-kâwiy:ikâw AN_KINiyINFL "mother" ;!¢nikâwiy   !yaml
+-ohtâwiy:ohtâw AN_KINiyINFL "heavenly father" ;   !¢nohtâwiy ! ohtâwiy, kôhtâwînaw
 -mis:imis AN_KININFL "older sister" ; !¢nimis 
 -kâwîs:ikâwîs AN_KININFL "mother's sister" ; !¢nikâwîs   !Not dim!
 -sis:isis AN_KININFL "mother's brother, father's sister husband" ; !¢nisis  
--ohcâwîs:ohcâwîs AN_KININFL "father's brother" ; !¢nôhcâwîs 
+-ôhcâwîs:ôhcâwîs AN_KININFL "father's brother" ; !¢nôhcâwîs 
 -hciwâmis:ihciwâmis AN_KININFL "cousin" ; !  OBS!
 -ciwâm+Err/Orth:ihciwâm AN_KININFL "male parallel cousin" ; !¢niciwâm  
 -ciwâm:iciwâm AN_KININFL "male parallel cousin" ;!¢niciwâm 
@@ -4229,15 +4229,15 @@ nimosô:imosô ANVOC "grandfather (a call for him)" ; !
 -wîtatoskêmâkan:iwîtatoskêmâkan AN_KININFL "co-worker" ;!¢niwîtatoskêmâkan 
 -iyihkos:iyihkos AN_KININFL "gland" ;!¢niyihkos 
 -stês:istês AN_KININFL "oldest brother" ;!¢nistês 
--scâs:iscâs AN_KININFL "cousin/brother in law" ; !¢ OBS
+-scâs:iscâs AN_KININFL "cousin/brother in law" ; ! OBS
 -îcimos:îcimos AN_KININFL "mother's brother's son" ; !¢nîcimos  
--câhkos:icâhkos AN_KININFL "cousin/sister in law" ;!¢  OBS
+-câhkos:icâhkos AN_KININFL "cousin/sister in law" ;!  OBS
 -ôsisim:ôsisim AN_KININFL "grandchild" ;!¢nôsisim 
 -nâpêm:inâpêm AN_KININFL_MONOG "husband" ;!¢ninâpêm 
 -iyinîmak:itiyinîm AN_KININFL_PL "people; followers" ;!¢nitiyinîmak 
 -yihkwak:iyihkw AN_KININFL_PL "glands" ;!¢niyihkwak  !w
 !-îci%-ayis:îc-ayis AN_KININFL "fellow youngster" ;!¢ 
--îci%-âyis:îci-ayis AN_KININFL "fellow youngster" ;!¢nîci-ayis 
+-îci-ayis:îci-ayis AN_KININFL "fellow youngster" ;!¢nîci-ayis 
 -îci-atoskêyâkan:îci-atoskêyâkan AN_KININFL "fellow employee" ;!¢nîci-atoskêyâkan 
 -îci-ayisiyiniw:îci-ayisiyiniw AN_KININFL "fellow human" ;!¢nîci-ayisiyiniw 
 -îci-ayisiyinîm:îci-ayisiyinîm AN_KININFL "fellow human" ;!¢nîci-ayisiyinîm 
@@ -4261,7 +4261,7 @@ nimosô:imosô ANVOC "grandfather (a call for him)" ; !
 -ohpan:ôhpan AN_KININFL "lung" ;!¢nôhpan 
 -ohtâwîhkâwin:ôhtâwîhkâwin AN_KININFL "step-father" ;!¢nôhtâwîhkâwin 
 -ohtâwîpan:ôhtâwîpan AN_KININFL "deceased father" ;!¢nôhtâwîpan 
-!-skotâkay:iskotâkay IN_DEP_INIT_M "jacket" ; !¢niskotâkay  !OBS! 
+!-skotâkay:iskotâkay IN_DEP_INIT_M "jacket" ; !¢niskotâkay   
 
 !! IN dependent nouns, which have no m-form(?) in Wolvengrey
 -mistikom:imistikom IN_DEP_INIT_M "penis" ;!¢nimistikom 
