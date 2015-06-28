@@ -2325,6 +2325,7 @@ nîkânikât IN_DECL "front leg" ; ! singular alternatively: a clipping from VAI
 nîkânitwêwin IN_DECL "preface, foreword (of a book)" ;
 ńîkihcanakwêwisip AN_DECL "blue wing duck" ;
 nîkihik:nîkihikw AN_DECL "parent" ; ! singular commonly plural and NDA-3: ninîkihikwak my parents
+nîkihik+Err/Orth:nekihikw AN_DECL "parent" ; ! NS 152
 nîkihikomâw AN_DECL "parent" ;
 nîmâskwâkan IN_DECL "weapon" ;
 nîmâskwân IN_DECL "weapon(s); gun carried along with one" ;
@@ -4156,6 +4157,7 @@ ohcâwîsimâw AN_GENERIC ;
 ostêsimâw AN_GENERIC ;
 onâpêmimâw AN_GENERIC ;
 ohpan AN_GENERIC ;
+nimosô ANVOC "grandfather (a call for him)" ; !  
 
 LEXICON DEP-KINTERMSSTEMS  ! dependent nouns
 !! @LEXNAME@ adds an affixmark and redirects to KINTERMLIST
@@ -4166,8 +4168,6 @@ LEXICON DEP-KINTERMLIST
 
 -tânis:itânis AN_KININFL "daughter" ; !¢nicânis yaml !!= @CODE@
 -kosis:ikosis AN_KININFL "son" ; !¢nikosis !!= @CODE@	
--nekihik:inekihik AN_KININFL "parent" ; !¢ninîkihik   OBS!
-nimosô:imosô ANVOC "grandfather (a call for him)" ; !  
 -ohkom:ôhkom AN_KININFL "grandmother" ; !¢nôhkom 
 -tisân:îtisân AN_KININFL "sibling" ; !¢nîtisân  
 -sîmis:isîmis AN_KININFL "younger sibling" ; !¢nisîmis 
@@ -4304,7 +4304,7 @@ mispiconis:ispiconis IN_DEP_INIT_M_DIM "little arm" ;
 mihkwâkan:ihkwâkan IN_DEP_INIT_M "face" ;
 misit:isit IN_DEP_INIT_M "foot" ; 
 mistikwân:istikwân IN_DEP_INIT_M "head" ; 
-mîscakâsa:îscakâs IN_DEP_INIT_M_PL "hair" ; !GGI PL
+mîscakâsa:îscakâs IN_DEP_INIT_M_PL "hair" ; !NS152 PL
 mêscakâsa:êscakâs IN_DEP_INIT_M_PL "hair" ; !Wolv PL
 miskât:iskât IN_DEP_INIT_M "leg" ; 
 mitôn:itôn IN_DEP_INIT_M "mouth" ; 
