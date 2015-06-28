@@ -78,6 +78,7 @@ found at the end of this file.
 
  * LEXICON ANPOSS-ATIM  is also there to handle the highly irregular atim and mistatim
 
+ * LEXICON ANVOC  
 
  * LEXICON AN_KININFL  
 
@@ -132,6 +133,8 @@ found at the end of this file.
 LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON INDEP-DERIV_M_SG   for hardcoded noun:diminutive for inalienables
+
+ * LEXICON IN_DEP_INIT_M_PL  for the inanimate possessive declension, plural lemmas
 
  * LEXICON IN_DEP_INIT_M  for the inanimate possessive declension
 
