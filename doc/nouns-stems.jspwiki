@@ -44,12 +44,13 @@ DEP-KINTERMSSTEMS adds an affixmark and redirects to KINTERMLIST
 
 DEP-KINTERMLIST for dependent nouns getting prefixes n-, k-, o- \\
 
- -tânis:itânis AN_KININFL "daughter" ; !yaml 
- -kosis:ikosis AN_KININFL "son" ; 	
+ -tânis:itânis AN_KININFL "daughter" ; !¢nicânis yaml 
+ -kosis:ikosis AN_KININFL "son" ; !¢nikosis 	
+
+IN dependent nouns, which have no m-form(?) in Wolvengrey
+
 DEP-M-INIT-STEMS adds an affixmark and redirects to DEP-M-LIST 
 
 DEP-M-LIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
  maniway:aniway IN_DEP_INIT_M_SG "cheek" ; !yaml 	
- !maniway+N+IN+Sg:aniway NOPREFIX "cheek" ; !yaml 	
  mîpit:îpit IN_DEP_INIT_M "tooth" ; !yaml  	
-
