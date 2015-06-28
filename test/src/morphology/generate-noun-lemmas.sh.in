@@ -34,7 +34,7 @@ cat noungenlemmas | grep '[a-z]' | sort -u > sortnoungenlemmas
 
 # Compare the list of lemmas with the list of generated lemmas
 comm -23 allnounlemmas sortnoungenlemmas > missingnouns.txt
-rm noungenlemmas depgenlemmas ANnounlemmas INnounlemmas plINnounlemmas plANnounlemmas
+rm noungenlemmas allnounlemmas depgenlemmas ANnounlemmas INnounlemmas plINnounlemmas plANnounlemmas
 
 
 open missingnouns.txt
