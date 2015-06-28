@@ -323,7 +323,12 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
  LEXICON VTA_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
 
 
+
+
+
  LEXICON VTA_KI_O 	     gives the objects suffixes matching 2Sg subject
+
+
 
 
 
@@ -335,9 +340,12 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
  LEXICON VTAVw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
 
  LEXICON VTAVw_NI_O-PL    Plural forms
+
 
 
  LEXICON VTAVw_KI_O 	     gives the objects suffixes matching 2Sg subject
@@ -354,13 +362,18 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
  LEXICON VTACw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
+
 
 
  LEXICON VTACw_KI_O 	     gives the objects suffixes matching 2Sg subject
 
 
+
+
  * LEXICON VTACw_NULL_O 	  
+
 
 
 
@@ -390,7 +403,20 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
+
+
  LEXICON TA_CNJTS_SUF  gives conj + obj tag and suf
+
+
+
+
+
+
+
+
+
 
 
 
@@ -410,6 +436,7 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
  LEXICON TA_CNJVw_SUF-PL  gives conj + obj tag and suf, plural forms
 
 
@@ -419,7 +446,11 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
+
  LEXICON TA_CNJCw_SUF  gives conj + obj tag and suf
+
 
 
 
@@ -455,6 +486,8 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
  * LEXICON TA_FUTCw 
+
+
 
 
 

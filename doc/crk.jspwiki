@@ -74,26 +74,26 @@ Verbal MSP
  * +1Sg     first singular
  * +2Sg     etc
  * +3Sg    
- * +4Sg    3o is obviative (Wolvengrey 3’, cf. W diss. p. xi.)
- * +5Sg    5Sg is further obviative person (Wolvengrey 3’’ cf. p. xi.)
 
  * +1Pl     1Pl is exclusive plural (I, them, not you)
  * +2Pl    
  * +3Pl    
- * +4Pl   
  * +12Pl    12Pl is inclusive plural (I, you, ...)
+ * +4Sg     Fourth Person inanimate singlar (used only in the VII paradigms)
+ * +4Pl     Fourth Person inanimate plural (used only in the VII paradigms)
+ * +4Sg/Pl    
+ * +5Sg/Pl    
 
  * +1SgO    objective conjugation
  * +2SgO   
  * +3SgO   
  * +SgO    
- * +4SgO   obviative with objective conjugation
  * +1PlO   
- * +P2lO   
+ * +2PlO   
  * +3PlO   
  * +PlO    
- * +4PlO  
- * +4Sg/4PlO  ambiguous 4th person (both Singular and Plural)
+ * +4Sg/PlO  ambiguous 4th person (both Singular and Plural)
+ * +5Sg/PlO  ambiguous 5th person (both Singular and Plural)
 
  * +Inf     infinitive (infinite?)
  * +Pos     postitive
@@ -522,6 +522,7 @@ found at the end of this file.
 
  * LEXICON AN_DECL  for the animate declension, Dim: -isis and -is 
 
+ * LEXICON AN_DECL_PL  for the animate declension, Dim: -isis and -is 
 
  * LEXICON AN_DECLis  for the animate declension, Dim: -is diminutives
 
@@ -550,6 +551,8 @@ found at the end of this file.
 
 
  * LEXICON ANABSDECL  for the animate absolute declension
+
+ * LEXICON ANABSDECL_PL  for the animate absolute declension
 
 
 
@@ -586,6 +589,9 @@ found at the end of this file.
 
  * LEXICON IN_DECL  for the inanimate declension, Dim: -is- and -isis-
 
+ * LEXICON IN_DECL_PL  for the inanimate declension, plural Dim: -is- and -isis-
+
+
  * LEXICON IN_DECLis  for the inanimate declension, Dim: -is- 
 
  * LEXICON IN_DECLisis  for the inanimate declension, Dim: -isis-
@@ -597,6 +603,9 @@ found at the end of this file.
  * LEXICON IN_DIM  for the inanimate diminutives
 
  * LEXICON INABSDECL  for inanimate absolute declension
+
+ * LEXICON INABSDECL_PL  for inanimate absolute declension
+
 
  * LEXICON INimDIM  the diminutives with poss.-im-, Dim: -is
 
@@ -1166,7 +1175,12 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
  LEXICON VTA_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
 
 
+
+
+
  LEXICON VTA_KI_O 	     gives the objects suffixes matching 2Sg subject
+
+
 
 
 
@@ -1178,9 +1192,12 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
  LEXICON VTAVw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
 
  LEXICON VTAVw_NI_O-PL    Plural forms
+
 
 
  LEXICON VTAVw_KI_O 	     gives the objects suffixes matching 2Sg subject
@@ -1197,13 +1214,18 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
  LEXICON VTACw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
+
 
 
  LEXICON VTACw_KI_O 	     gives the objects suffixes matching 2Sg subject
 
 
+
+
  * LEXICON VTACw_NULL_O 	  
+
 
 
 
@@ -1233,7 +1255,20 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
+
+
  LEXICON TA_CNJTS_SUF  gives conj + obj tag and suf
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1253,6 +1288,7 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
  LEXICON TA_CNJVw_SUF-PL  gives conj + obj tag and suf, plural forms
 
 
@@ -1262,7 +1298,11 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
+
  LEXICON TA_CNJCw_SUF  gives conj + obj tag and suf
+
 
 
 
@@ -1298,6 +1338,8 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
  * LEXICON TA_FUTCw 
+
+
 
 
 

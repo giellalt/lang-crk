@@ -36,6 +36,7 @@ found at the end of this file.
 
  * LEXICON AN_DECL  for the animate declension, Dim: -isis and -is 
 
+ * LEXICON AN_DECL_PL  for the animate declension, Dim: -isis and -is 
 
  * LEXICON AN_DECLis  for the animate declension, Dim: -is diminutives
 
@@ -64,6 +65,8 @@ found at the end of this file.
 
 
  * LEXICON ANABSDECL  for the animate absolute declension
+
+ * LEXICON ANABSDECL_PL  for the animate absolute declension
 
 
 
@@ -100,6 +103,9 @@ found at the end of this file.
 
  * LEXICON IN_DECL  for the inanimate declension, Dim: -is- and -isis-
 
+ * LEXICON IN_DECL_PL  for the inanimate declension, plural Dim: -is- and -isis-
+
+
  * LEXICON IN_DECLis  for the inanimate declension, Dim: -is- 
 
  * LEXICON IN_DECLisis  for the inanimate declension, Dim: -isis-
@@ -111,6 +117,9 @@ found at the end of this file.
  * LEXICON IN_DIM  for the inanimate diminutives
 
  * LEXICON INABSDECL  for inanimate absolute declension
+
+ * LEXICON INABSDECL_PL  for inanimate absolute declension
+
 
  * LEXICON INimDIM  the diminutives with poss.-im-, Dim: -is
 
