@@ -1,13 +1,13 @@
 #Script adapted to Cree
 
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' IIC' | tr '+:' ' ' | cut -d ' ' -f1 > iiverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TIC' | tr '+:' ' ' | cut -d ' ' -f1 > tiverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' AIC' | tr '+:' ' ' | cut -d ' ' -f1 > aiverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TAC' | tr '+:' ' ' | cut -d ' ' -f1 > taverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' IIPLC' | tr '+:' ' ' | cut -d ' ' -f1 > iiplverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TIPLC' | tr '+:' ' ' | cut -d ' ' -f1 > tiplverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' AIPLC' | tr '+:' ' ' | cut -d ' ' -f1 > aiplverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TAPLC' | tr '+:' ' ' | cut -d ' ' -f1 > taplverblemmas
+    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' II' | tr '+:' ' ' | cut -d ' ' -f1 > iiverblemmas
+    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TI' | tr '+:' ' ' | cut -d ' ' -f1 > tiverblemmas
+    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' AI' | tr '+:' ' ' | cut -d ' ' -f1 > aiverblemmas
+    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TA' | tr '+:' ' ' | cut -d ' ' -f1 > taverblemmas
+    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' II.*PL' | tr '+:' ' ' | cut -d ' ' -f1 > iiplverblemmas
+    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TI.*PL' | tr '+:' ' ' | cut -d ' ' -f1 > tiplverblemmas
+    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' AI.*PL' | tr '+:' ' ' | cut -d ' ' -f1 > aiplverblemmas
+    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TA.*PL' | tr '+:' ' ' | cut -d ' ' -f1 > taplverblemmas
     cat iiverblemmas |sed 's/$/+V+II+Ind+Prs+3Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 > verbgenlemmas
     cat tiverblemmas |sed 's/$/+V+TI+Ind+Prs+3Sg/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
     cat aiverblemmas |sed 's/$/+V+AI+Ind+Prs+3Sg/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
@@ -17,7 +17,7 @@
     cat aiplverblemmas |sed 's/$/+V+AI+Ind+Prs+3Pl/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
     cat taplverblemmas |sed 's/$/+V+TA+Ind+Prs+3Pl+4Sg\/PlO/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
     
-    cat *verblemmas | sort -u > allverblemmas
+    cat iiverblemmas tiverblemmas aiverblemmas taverblemmas | sort -u > allverblemmas
     cat verbgenlemmas | grep '[a-z]' | sort -u > sortverbgenlemmas
     comm -23 allverblemmas sortverbgenlemmas > missingverbs.txt
         rm *verblemmas *genlemmas
