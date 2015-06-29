@@ -11,139 +11,193 @@ Tests:
   
   Verb - wîcihêw - ok : # Wolvengrey VTA1 verb - p 401
 
-     wîcihêw+V+TA+Ind+Prs+1Sg+3SgO: niwîcihâw
+     wîcihêw+V+TA+Ind+Prs+1Sg+3SgO: niwîcihâw # SET I
      wîcihêw+V+TA+Ind+Prs+2Sg+3SgO: kiwîcihâw
      wîcihêw+V+TA+Ind+Prs+1Pl+3SgO: niwîcihânân
      wîcihêw+V+TA+Ind+Prs+12Pl+3SgO: kiwîcihânaw
      wîcihêw+V+TA+Ind+Prs+2Pl+3SgO: kiwîcihâwâw
-     wîcihêw+V+TA+Ind+Prs+3Sg+3SgO: wîcihêw
-     wîcihêw+V+TA+Ind+Prs+3Pl+3SgO: wîcihêwak
      
-     wîcihêw+V+TA+Ind+Prs+1Sg+3PlO: niwîcihâwak
+     wîcihêw+V+TA+Ind+Prs+1Sg+3PlO: niwîcihâwak # SET I-Pl
      wîcihêw+V+TA+Ind+Prs+2Sg+3PlO: kiwîcihâwak
      wîcihêw+V+TA+Ind+Prs+1Pl+3PlO: niwîcihânânak
      wîcihêw+V+TA+Ind+Prs+12Pl+3PlO: kiwîcihânawak
      wîcihêw+V+TA+Ind+Prs+2Pl+3PlO: kiwîcihâwâwak
-     wîcihêw+V+TA+Ind+Prs+3Sg+3PlO: wîcihêw
-     wîcihêw+V+TA+Ind+Prs+3Pl+3PlO: wîcihêwak
-
-     wîcihêw+V+TA+Ind+Prs+4Sg+4SgO: wîcihêyiwa
-     wîcihêw+V+TA+Ind+Prs+4Sg+4PlO: wîcihêyiwa     
-
-     wîcihêw+V+TA+Ind+Prs+2Sg+1SgO: kiwîcihin
-     wîcihêw+V+TA+Ind+Prs+2Sg+1PlO: kiwîcihinân
-     wîcihêw+V+TA+Ind+Prs+2Pl+1PlO: kiwîcihinân
+     
+     wîcihêw+V+TA+Ind+Prs+2Sg+1SgO: kiwîcihin # SET II
+     wîcihêw+V+TA+Ind+Prs+2Sg/Pl+1PlO: kiwîcihinân
      wîcihêw+V+TA+Ind+Prs+2Pl+1SgO: kiwîcihinâwâw
+     
+     wîcihêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: wîcihêw # SET III
+     wîcihêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: wîcihêwak
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: wîcihêyiwa
+     wîcihêw+V+TA+Ind+Prs+3Sg+5Sg/PlO: wîcihimêw # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     wîcihêw+V+TA+Ind+Prs+3Pl+5Sg/PlO: wîcihimêwak # From Wolvengrey P.C. 27/6/15 (See /doc/)
 
-     wîcihêw+V+TA+Ind+Prs+3Sg+1SgO: niwîcihik
+     wîcihêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: niwîcihimâwa # SET IV
+     wîcihêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: kiwîcihimâwa
+     wîcihêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: niwîcihimânâna
+     wîcihêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: kiwîcihimânawa
+     wîcihêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: kiwîcihimâwâwa
+     
+     
+     
+     
+     
+     wîcihêw+V+TA+Ind+Prt+1Sg+3SgO: [nikî-wîcihâw, nikîwîcihâw] # SET I (past)
+     wîcihêw+V+TA+Ind+Prt+2Sg+3SgO: [kikî-wîcihâw, kikîwîcihâw]
+     wîcihêw+V+TA+Ind+Prt+1Pl+3SgO: [nikî-wîcihânân, nikîwîcihânân]
+     wîcihêw+V+TA+Ind+Prt+12Pl+3SgO: [kikî-wîcihânaw, kikîwîcihânaw]
+     wîcihêw+V+TA+Ind+Prt+2Pl+3SgO: [kikî-wîcihâwâw, kikîwîcihâwâw]
+     
+     wîcihêw+V+TA+Ind+Prt+1Sg+3PlO: [nikî-wîcihâwak, nikîwîcihâwak] # SET I-Pl (past)
+     wîcihêw+V+TA+Ind+Prt+2Sg+3PlO: [kikî-wîcihâwak, kikîwîcihâwak]
+     wîcihêw+V+TA+Ind+Prt+1Pl+3PlO: [nikî-wîcihânânak, nikîwîcihânânak]
+     wîcihêw+V+TA+Ind+Prt+12Pl+3PlO: [kikî-wîcihânawak, kikîwîcihânawak]
+     wîcihêw+V+TA+Ind+Prt+2Pl+3PlO: [kikî-wîcihâwâwak, kikîwîcihâwâwak]
+     
+     wîcihêw+V+TA+Ind+Prt+2Sg+1SgO: [kikî-wîcihin, kikîwîcihin] # SET II (past)
+     wîcihêw+V+TA+Ind+Prt+2Sg/Pl+1PlO: [kikî-wîcihinân, kikîwîcihinân]
+     wîcihêw+V+TA+Ind+Prt+2Pl+1SgO: [kikî-wîcihinâwâw, kikîwîcihinâwâw
+     
+     wîcihêw+V+TA+Ind+Prt+3Sg+4Sg/PlO: [kî-wîcihêw, kîwîcihêw] # SET III (past)
+     wîcihêw+V+TA+Ind+Prt+3Pl+4Sg/PlO: [kî-wîcihêwak, kîwîcihêwak]
+     wîcihêw+V+TA+Ind+Prt+4Sg/Pl+5Sg/PlO: [kî-wîcihêyiwa, kîwîcihêyiwa]
+     wîcihêw+V+TA+Ind+Prt+3Sg+5Sg/PlO: [kî-wîcihimêw, kîwîcihimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     wîcihêw+V+TA+Ind+Prt+3Pl+5Sg/PlO: [kî-wîcihimêwak, kîwîcihimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+     wîcihêw+V+TA+Ind+Prt+1Sg+4Sg/PlO: [nikî-wîcihimâwa, nikîwîcihimâwa] # SET IV (past)
+     wîcihêw+V+TA+Ind+Prt+2Sg+4Sg/PlO: [kikî-wîcihimâwa, kikîwîcihimâwa]
+     wîcihêw+V+TA+Ind+Prt+1Pl+4Sg/PlO: [nikî-wîcihimânâna, nikîwîcihimânâna]
+     wîcihêw+V+TA+Ind+Prt+12Pl+4Sg/PlO: [kikî-wîcihimânawa, kikîwîcihimânawa]
+     wîcihêw+V+TA+Ind+Prt+2Pl+4Sg/PlO: [kikî-wîcihimâwâwa, kikîwîcihimâwâwa]
+     
+     
+     
+     
+     
+     wîcihêw+V+TA+Ind+Fut+Def+1Sg+3SgO: [nika-wîcihâw, nikawîcihâw] # SET I (Fut+Def)
+     wîcihêw+V+TA+Ind+Fut+Def+2Sg+3SgO: [kika-wîcihâw, kikawîcihâw]
+     wîcihêw+V+TA+Ind+Fut+Def+1Pl+3SgO: [nika-wîcihânân, nikawîcihânân]
+     wîcihêw+V+TA+Ind+Fut+Def+12Pl+3SgO: [kika-wîcihânaw, kikawîcihânaw]
+     wîcihêw+V+TA+Ind+Fut+Def+2Pl+3SgO: [kika-wîcihâwâw, kikawîcihâwâw]
+     
+     wîcihêw+V+TA+Ind+Fut+Def+1Sg+3PlO: [nika-wîcihâwak, nikawîcihâwak] # SET I-Pl (Fut+Def)
+     wîcihêw+V+TA+Ind+Fut+Def+2Sg+3PlO: [kika-wîcihâwak, kikawîcihâwak]
+     wîcihêw+V+TA+Ind+Fut+Def+1Pl+3PlO: [nika-wîcihânânak, nikawîcihânânak]
+     wîcihêw+V+TA+Ind+Fut+Def+12Pl+3PlO: [kika-wîcihânawak, kikawîcihânawak]
+     wîcihêw+V+TA+Ind+Fut+Def+2Pl+3PlO: [kika-wîcihâwâwak, kikawîcihâwâwak]
+     
+     wîcihêw+V+TA+Ind+Fut+Def+2Sg+1SgO: [kika-wîcihin, kikawîcihin] # SET II (Fut+Def)
+     wîcihêw+V+TA+Ind+Fut+Def+2Sg/Pl+1PlO: [kika-wîcihinân, kikawîcihinân]
+     wîcihêw+V+TA+Ind+Fut+Def+2Pl+1SgO: [kika-wîcihinâwâw, kikawîcihinâwâw
+     
+     wîcihêw+V+TA+Ind+Fut+Def+3Sg+4Sg/PlO: [ka-wîcihêw, kawîcihêw] # SET III (Fut+Def)
+     wîcihêw+V+TA+Ind+Fut+Def+3Pl+4Sg/PlO: [ka-wîcihêwak, kawîcihêwak]
+     wîcihêw+V+TA+Ind+Fut+Def+4Sg/Pl+5Sg/PlO: [ka-wîcihêyiwa, kawîcihêyiwa]
+     wîcihêw+V+TA+Ind+Fut+Def+3Sg+5Sg/PlO: [ka-wîcihimêw, kawîcihimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     wîcihêw+V+TA+Ind+Fut+Def+3Pl+5Sg/PlO: [ka-wîcihimêwak, kawîcihimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+     wîcihêw+V+TA+Ind+Fut+Def+1Sg+4Sg/PlO: [nika-wîcihimâwa, nikawîcihimâwa] # SET IV (Fut+Def)
+     wîcihêw+V+TA+Ind+Fut+Def+2Sg+4Sg/PlO: [kika-wîcihimâwa, kikawîcihimâwa]
+     wîcihêw+V+TA+Ind+Fut+Def+1Pl+4Sg/PlO: [nika-wîcihimânâna, nikawîcihimânâna]
+     wîcihêw+V+TA+Ind+Fut+Def+12Pl+4Sg/PlO: [kika-wîcihimânawa, kikawîcihimânawa]
+     wîcihêw+V+TA+Ind+Fut+Def+2Pl+4Sg/PlO: [kika-wîcihimâwâwa, kikawîcihimâwâwa]
+     
+     
+     
+
+
+     wîcihêw+V+TA+Ind+Prs+3Sg+1SgO: niwîcihik  # SET I inv
      wîcihêw+V+TA+Ind+Prs+3Sg+2SgO: kiwîcihik
-     wîcihêw+V+TA+Ind+Prs+3Sg+1PlO: niwîcihikonân # inv +0Sg+1PlO
+     wîcihêw+V+TA+Ind+Prs+3Sg+1PlO: niwîcihikonân
      wîcihêw+V+TA+Ind+Prs+3Sg+12PlO: kiwîcihikonaw
      wîcihêw+V+TA+Ind+Prs+3Sg+2PlO: kiwîcihikowâw
-
-     wîcihêw+V+TA+Ind+Prs+3Pl+1SgO: niwîcihikwak
+     
+     wîcihêw+V+TA+Ind+Prs+3Pl+1SgO: niwîcihikwak # SET I-Pl inv
      wîcihêw+V+TA+Ind+Prs+3Pl+2SgO: kiwîcihikwak
      wîcihêw+V+TA+Ind+Prs+3Pl+1PlO: niwîcihikonânak
      wîcihêw+V+TA+Ind+Prs+3Pl+12PlO: kiwîcihikonawak
      wîcihêw+V+TA+Ind+Prs+3Pl+2PlO: kiwîcihikowâwak
      
-     wîcihêw+V+TA+Ind+Prs+4Sg+3SgO: wîcihik
-     wîcihêw+V+TA+Ind+Prs+4Sg+3PlO: wîcihikwak
-     wîcihêw+V+TA+Ind+Prs+5Sg+4SgO: wîcihikoyiwa
+     wîcihêw+V+TA+Ind+Prs+1Sg+2SgO: kiwîcihitin # SET II inv
+     wîcihêw+V+TA+Ind+Prs+1Pl+2Sg/PlO: kiwîcihitinân
+     wîcihêw+V+TA+Ind+Prs+1Sg+2PlO: kiwîcihitinâwâw
+     
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: wîcihik # SET III inv (no 5-3 according to Wolvengrey)
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: wîcihikwak
+     wîcihêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: wîcihikoyiwa
+          
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: niwîcihikoyiwa # SET IV inv
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: kiwîcihikoyiwa
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: niwîcihikonâna
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: kiwîcihikonawa
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: kiwîcihikowâwa
+     
 
-     wîcihêw+V+TA+Ind+Prs+1Sg+2SgO: kiwîcihitin
-     wîcihêw+V+TA+Ind+Prs+1Pl+2SgO: kiwîcihitinân
-     wîcihêw+V+TA+Ind+Prs+1Pl+2PlO: kiwîcihitinân
-     wîcihêw+V+TA+Ind+Prs+1Sg+2PlO: kiwîcihitinânâw
 
-     wîcihêw+V+TA+Ind+Prt+1Sg+3SgO: [nikîwîcihâw, nikî-wîcihâw]
-     wîcihêw+V+TA+Ind+Prt+2Sg+3SgO: [kikîwîcihâw, kikî-wîcihâw]
-     wîcihêw+V+TA+Ind+Prt+1Pl+3SgO: [nikîwîcihânân, nikî-wîcihânân]
-     wîcihêw+V+TA+Ind+Prt+12Pl+3SgO: [kikîwîcihânaw, kikî-wîcihânaw]
-     wîcihêw+V+TA+Ind+Prt+2Pl+3SgO: [kikîwîcihâwâw, kikî-wîcihâwâw]
-     wîcihêw+V+TA+Ind+Prt+3Sg+3SgO: [kîwîcihêw, kî-wîcihêw]
-     wîcihêw+V+TA+Ind+Prt+3Pl+3SgO: [kîwîcihêwak, kî-wîcihêwak]
 
-     wîcihêw+V+TA+Ind+Prt+1Sg+3PlO: [nikîwîcihâwak, nikî-wîcihâwak]
-     wîcihêw+V+TA+Ind+Prt+2Sg+3PlO: [kikîwîcihâwak, kikî-wîcihâwak]
-     wîcihêw+V+TA+Ind+Prt+1Pl+3PlO: [nikîwîcihânânak, nikî-wîcihânânak]
-     wîcihêw+V+TA+Ind+Prt+12Pl+3PlO: [kikîwîcihânawak, kikî-wîcihânawak]
-     wîcihêw+V+TA+Ind+Prt+2Pl+3PlO: [kikîwîcihâwâwak, kikî-wîcihâwâwak]
-     wîcihêw+V+TA+Ind+Prt+3Sg+3PlO: [kîwîcihêw, kî-wîcihêw]
-     wîcihêw+V+TA+Ind+Prt+3Pl+3PlO: [kîwîcihêwak, kî-wîcihêwak]
 
-     wîcihêw+V+TA+Ind+Prt+4Sg+4SgO: [kîwîcihêyiwa, kî-wîcihêyiwa]
-     wîcihêw+V+TA+Ind+Prt+4Sg+4PlO: [kîwîcihêyiwa, kî-wîcihêyiwa]
-
-     wîcihêw+V+TA+Ind+Prt+2Sg+1SgO: [kikîwîcihin, kikî-wîcihin]
-     wîcihêw+V+TA+Ind+Prt+2Sg+1PlO: [kikîwîcihinân, kikî-wîcihinân]
-     wîcihêw+V+TA+Ind+Prt+2Pl+1PlO: [kikîwîcihinân, kikî-wîcihinân]
-     wîcihêw+V+TA+Ind+Prt+2Pl+1SgO: [kikîwîcihinâwâw, kikî-wîcihinâwâw]
-
-     wîcihêw+V+TA+Ind+Prt+3Sg+1SgO: [nikîwîcihik, nikî-wîcihik]
-     wîcihêw+V+TA+Ind+Prt+3Sg+2SgO: [kikîwîcihik, kikî-wîcihik]
-     wîcihêw+V+TA+Ind+Prt+3Sg+1PlO: [nikîwîcihikonân, nikî-wîcihikonân]
-     wîcihêw+V+TA+Ind+Prt+3Sg+12PlO: [kikîwîcihikonaw, kikî-wîcihikonaw]
-     wîcihêw+V+TA+Ind+Prt+3Sg+2PlO: [kikîwîcihikowâw, kikî-wîcihikowâw]
-
-     wîcihêw+V+TA+Ind+Prt+3Pl+1SgO: [nikîwîcihikwak, nikî-wîcihikwak]
-     wîcihêw+V+TA+Ind+Prt+3Pl+2SgO: [kikîwîcihikwak, kikî-wîcihikwak]
-     wîcihêw+V+TA+Ind+Prt+3Pl+1PlO: [nikîwîcihikonânak, nikî-wîcihikonânak]
-     wîcihêw+V+TA+Ind+Prt+3Pl+12PlO: [kikîwîcihikonawak, kikî-wîcihikonawak]
-     wîcihêw+V+TA+Ind+Prt+3Pl+2PlO: [kikîwîcihikowâwak, kikî-wîcihikowâwak]
-
-     wîcihêw+V+TA+Ind+Prt+4Sg+3SgO: [kîwîcihik, kî-wîcihik]
-     wîcihêw+V+TA+Ind+Prt+4Sg+3PlO: [kîwîcihikwak, kî-wîcihikwak]
-     wîcihêw+V+TA+Ind+Prt+5Sg+4SgO: [kîwîcihikoyiwa, kî-wîcihikoyiwa]
-
-     wîcihêw+V+TA+Ind+Prt+1Sg+2SgO: [kikîwîcihitin, kikî-wîcihitin]
-     wîcihêw+V+TA+Ind+Prt+1Pl+2SgO: [kikîwîcihitinân, kikî-wîcihitinân]
-     wîcihêw+V+TA+Ind+Prt+1Pl+2PlO: [kikîwîcihitinân, kikî-wîcihitinân]
-     wîcihêw+V+TA+Ind+Prt+1Sg+2PlO: [kikîwîcihitinânâw, kikî-wîcihitinânâw]
-
-     wîcihêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-wîcihak, êwîcihak]
+     wîcihêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-wîcihak, êwîcihak] # SET I
      wîcihêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-wîcihat, êwîcihat]
      wîcihêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-wîcihâyâhk, êwîcihâyâhk]
      wîcihêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-wîcihâyahk, êwîcihâyahk]
      wîcihêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-wîcihâyêk, êwîcihâyêk]
 
-     wîcihêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-wîcihakik, êwîcihakik]
+     wîcihêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-wîcihakik, êwîcihakik] # SET I-Pl
      wîcihêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-wîcihacik, êwîcihacik]
      wîcihêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-wîcihâyâhkik, êwîcihâyâhkik]
-     wîcihêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-wîcihâyâhkok, êwîcihâyâhkok]
-     wîcihêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-wîcihâyêkok, êwîcihâyêkok]
+     wîcihêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-wîcihâyahkok, êwîcihâyahkok]
+     wîcihêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-wîcihâyêkok, êwîcihâyêkok] 
+     
+     wîcihêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-wîcihiyan, êwîcihiyan] # SET II
+     wîcihêw+V+TA+Cnj+Prs+2Sg/Pl+1PlO: [ê-wîcihiyâhk, êwîcihiyâhk]
+     wîcihêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-wîcihiyêk, êwîcihiyêk]    
+     
+     wîcihêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: [ê-wîcihât, êwîcihât] # SET III
+     wîcihêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: [ê-wîcihâcik, êwîcihâcik]
+     wîcihêw+V+TA+Ind+Prs+3Sg+5Sg/PlO: [ê-wîcihimât, êwîcihimât]
+     wîcihêw+V+TA+Ind+Prs+3Pl+5Sg/PlO: [ê-wîcihimâcik, êwîcihimâcik]
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: [ê-wîcihâyit, êwîcihâyit]
 
-     wîcihêw+V+TA+Cnj+Prs+3Sg+4SgO: [ê-wîcihât, êwîcihât]
-     wîcihêw+V+TA+Cnj+Prs+3Pl+4SgO: [ê-wîcihâcik, êwîcihâcik]
-     wîcihêw+V+TA+Cnj+Prs+3Sg+4PlO: [ê-wîcihât, êwîcihât]
-     wîcihêw+V+TA+Cnj+Prs+3Pl+4PlO: [ê-wîcihâcik, êwîcihâcik]
-     wîcihêw+V+TA+Cnj+Prs+4Sg+5SgO: [ê-wîcihâyit, êwîcihâyit]
-  
-     wîcihêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-wîcihiyan, êwîcihiyan]
-     wîcihêw+V+TA+Cnj+Prs+2Sg+1PlO: [ê-wîcihiyâhk, êwîcihiyâhk]
-     wîcihêw+V+TA+Cnj+Prs+2Pl+1PlO: [ê-wîcihiyâhk, êwîcihiyâhk]
-     wîcihêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-wîcihiyêk, êwîcihiyêk]
-
-     wîcihêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-wîcihit, êwîcihit]
+     wîcihêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: [ê-wîcihimak, êwîcihimak] # SET IV
+     wîcihêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: [ê-wîcihimat, êwîcihimat]
+     wîcihêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: [ê-wîcihimâyâhk, êwîcihimâyâhk]
+     wîcihêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: [ê-wîcihimâyahk, êwîcihimâyahk]
+     wîcihêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: [ê-wîcihimâyek, êwîcihimâyek]
+     
+     
+     
+     
+     
+     wîcihêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-wîcihit, êwîcihit] # SET I inv
      wîcihêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-wîcihisk, êwîcihisk]
      wîcihêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-wîcihikoyâhk, êwîcihikoyâhk]
      wîcihêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-wîcihikoyahk, êwîcihikoyahk]
      wîcihêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-wîcihikoyek, êwîcihikoyek]
 
-     wîcihêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-wîcihiticik, êwîcihiticik]
+     wîcihêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-wîcihicik, êwîcihicik] # SET I-Pl inv
      wîcihêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-wîcihiskik, êwîcihiskik]
      wîcihêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-wîcihikoyâhkik, êwîcihikoyâhkik]
      wîcihêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-wîcihikoyahkok, êwîcihikoyahkok]
      wîcihêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-wîcihikoyêkok, êwîcihikoyêkok]
 
-     wîcihêw+V+TA+Cnj+Prs+4Sg+3SgO: [ê-wîcihikot, êwîcihikot]
-     wîcihêw+V+TA+Cnj+Prs+4Sg+3PlO: [ê-wîcihikocik, êwîcihikocik]
-     wîcihêw+V+TA+Cnj+Prs+4Sg+4PlO: [ê-wîcihikoyit, êwîcihikoyit]
-
-     wîcihêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-wîcihitân, êwîcihitân]
-     wîcihêw+V+TA+Cnj+Prs+1Pl+2SgO: [ê-wîcihitâhk, êwîcihitâhk]
-     wîcihêw+V+TA+Cnj+Prs+1Pl+2PlO: [ê-wîcihitâhk, êwîcihitâhk]
+     wîcihêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-wîcihitân, êwîcihitân] # SET II inv
+     wîcihêw+V+TA+Cnj+Prs+1Pl+2Sg/PlO: [ê-wîcihitâhk, êwîcihitâhk]
      wîcihêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-wîcihitakok, êwîcihitakok]
+
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: [ê-wîcihikot, êwîcihikot] # SET III inv
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: [ê-wîcihikocik, êwîcihikocik]
+     wîcihêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: [ê-wîcihikoyit, êwîcihikoyit]
+          
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: [ê-wîcihiyit, êwîcihiyit] # SET IV inv
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: [ê-wîcihiyisk, êwîcihiyisk]
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: [ê-wîcihikoyâhk, êwîcihikoyâhk, ê-wîcihikowâyâhk, êwîcihikowâyâhk]
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: [ê-wîcihikoyêk, êwîcihikoyêk, ê-wîcihikowâyêk, êwîcihikowâyêk]
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: [ê-wîcihikoyahk, êwîcihikoyahk, ê-wîcihikowâyahk, êwîcihikowâyahk]
+     
+
+
+
 
      wîcihêw+V+TA+Imp+Imm+2Sg+3SgO: wîcih
      wîcihêw+V+TA+Imp+Imm+12Pl+3SgO: wîcihâtân
@@ -165,3 +219,33 @@ Tests:
      wîcihêw+V+TA+Imp+Del+2Sg+1SgO: wîcihîhkan
      wîcihêw+V+TA+Imp+Del+2Sg+1PlO: wîcihîhkâhk
      wîcihêw+V+TA+Imp+Del+2Pl+1SgO: wîcihîhkêk
+     
+     
+     
+     
+
+     wîcihêw+V+TA+Fut+Cond+1Sg+3SgO: wîcihaki
+     wîcihêw+V+TA+Fut+Cond+1Sg+3PlO: wîcihakwâwi
+     wîcihêw+V+TA+Fut+Cond+1Pl+3SgO: wîcihâyâhki
+     wîcihêw+V+TA+Fut+Cond+1Pl+3PlO: wîcihâyâhkwâwi
+     wîcihêw+V+TA+Fut+Cond+12Pl+3SgO: wîcihâyâhki
+     wîcihêw+V+TA+Fut+Cond+12Pl+3PlO: wîcihâyâhkwâwi
+
+     wîcihêw+V+TA+Fut+Cond+2Sg+3SgO: wîcihaci
+     wîcihêw+V+TA+Fut+Cond+2Sg+3PlO: wîcihatwâwi
+     wîcihêw+V+TA+Fut+Cond+2Pl+3SgO: wîcihâyêko
+     wîcihêw+V+TA+Fut+Cond+2Pl+3PlO: wîcihâyêkwâwi
+
+     wîcihêw+V+TA+Fut+Cond+3Sg+4SgO: wîcihâci
+     wîcihêw+V+TA+Fut+Cond+3Sg+1SgO: wîcihici
+     wîcihêw+V+TA+Fut+Cond+3Sg+2SgO: wîcihiski
+     wîcihêw+V+TA+Fut+Cond+3Sg+1PlO: wîcihikoyâhki
+     wîcihêw+V+TA+Fut+Cond+3Sg+2PlO: wîcihikoyêko
+     wîcihêw+V+TA+Fut+Cond+3Sg+12PlO: wîcihikoyahko
+
+     wîcihêw+V+TA+Fut+Cond+4Sg+3SgO: wîcihikoci
+     wîcihêw+V+TA+Fut+Cond+4Sg+3PlO: wîcihâyici
+     wîcihêw+V+TA+Fut+Cond+4Pl+3SgO: wîcihikoci
+     wîcihêw+V+TA+Fut+Cond+4Pl+3PlO: wîcihâyici
+     wîcihêw+V+TA+Fut+Cond+4Sg+4PlO: wîcihikoyici
+     wîcihêw+V+TA+Fut+Cond+4Pl+4PlO: wîcihikoyici

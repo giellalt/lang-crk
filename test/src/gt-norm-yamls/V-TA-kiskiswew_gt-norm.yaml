@@ -11,117 +11,193 @@ Tests:
   
   Verb - kîskiswêw - cut him/her through : # VTA-Cw verb - full paradigm
   
-     kîskiswêw+V+TA+Ind+Prs+1Sg+3SgO: nikîskiswâw
+    kîskiswêw+V+TA+Ind+Prs+1Sg+3SgO: nikîskiswâw # SET I
      kîskiswêw+V+TA+Ind+Prs+2Sg+3SgO: kikîskiswâw
      kîskiswêw+V+TA+Ind+Prs+1Pl+3SgO: nikîskiswânân
      kîskiswêw+V+TA+Ind+Prs+12Pl+3SgO: kikîskiswânaw
      kîskiswêw+V+TA+Ind+Prs+2Pl+3SgO: kikîskiswâwâw
      
-     kîskiswêw+V+TA+Ind+Prs+1Sg+3PlO: nikîskiswâwak
+     kîskiswêw+V+TA+Ind+Prs+1Sg+3PlO: nikîskiswâwak # SET I-Pl
      kîskiswêw+V+TA+Ind+Prs+2Sg+3PlO: kikîskiswâwak
      kîskiswêw+V+TA+Ind+Prs+1Pl+3PlO: nikîskiswânânak
      kîskiswêw+V+TA+Ind+Prs+12Pl+3PlO: kikîskiswânawak
      kîskiswêw+V+TA+Ind+Prs+2Pl+3PlO: kikîskiswâwâwak
      
-     kîskiswêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: nikîskisomâwa
-     kîskiswêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: nikîskisomânâna
-
-     kîskiswêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: kikîskisomâwa
-     kîskiswêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: kikîskisomâwâwa
-     kîskiswêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: kikîskisomânawa
+     kîskiswêw+V+TA+Ind+Prs+2Sg+1SgO: kikîskison # SET II
+     kîskiswêw+V+TA+Ind+Prs+2Sg/Pl+1PlO: kikîskisonân
+     kîskiswêw+V+TA+Ind+Prs+2Pl+1SgO: kikîskisonâwâw
      
-     kîskiswêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: kîskiswêw
+     kîskiswêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: kîskiswêw # SET III
      kîskiswêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: kîskiswêwak
      kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: kîskiswêyiwa
+     kîskiswêw+V+TA+Ind+Prs+3Sg+5Sg/PlO: kîskisomêw # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     kîskiswêw+V+TA+Ind+Prs+3Pl+5Sg/PlO: kîskisomêwak # From Wolvengrey P.C. 27/6/15 (See /doc/)
 
-     kîskiswêw+V+TA+Ind+Prs+2Sg+1SgO: kikîskison
-     kîskiswêw+V+TA+Ind+Prs+2Sg+1PlO: kikîskisonân
-     kîskiswêw+V+TA+Ind+Prs+2Pl+1PlO: kikîskisonân
-     kîskiswêw+V+TA+Ind+Prs+2Pl+1SgO: kikîskisonâwâw
+     kîskiswêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: nikîskisomâwa # SET IV
+     kîskiswêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: kikîskisomâwa
+     kîskiswêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: nikîskisomânâna
+     kîskiswêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: kikîskisomânawa
+     kîskiswêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: kikîskisomâwâwa
+     
+     
+     
+     
+     
+     kîskiswêw+V+TA+Ind+Prt+1Sg+3SgO: [nikî-kîskiswâw, nikîkîskiswâw] # SET I (past)
+     kîskiswêw+V+TA+Ind+Prt+2Sg+3SgO: [kikî-kîskiswâw, kikîkîskiswâw]
+     kîskiswêw+V+TA+Ind+Prt+1Pl+3SgO: [nikî-kîskiswânân, nikîkîskiswânân]
+     kîskiswêw+V+TA+Ind+Prt+12Pl+3SgO: [kikî-kîskiswânaw, kikîkîskiswânaw]
+     kîskiswêw+V+TA+Ind+Prt+2Pl+3SgO: [kikî-kîskiswâwâw, kikîkîskiswâwâw]
+     
+     kîskiswêw+V+TA+Ind+Prt+1Sg+3PlO: [nikî-kîskiswâwak, nikîkîskiswâwak] # SET I-Pl (past)
+     kîskiswêw+V+TA+Ind+Prt+2Sg+3PlO: [kikî-kîskiswâwak, kikîkîskiswâwak]
+     kîskiswêw+V+TA+Ind+Prt+1Pl+3PlO: [nikî-kîskiswânânak, nikîkîskiswânânak]
+     kîskiswêw+V+TA+Ind+Prt+12Pl+3PlO: [kikî-kîskiswânawak, kikîkîskiswânawak]
+     kîskiswêw+V+TA+Ind+Prt+2Pl+3PlO: [kikî-kîskiswâwâwak, kikîkîskiswâwâwak]
+     
+     kîskiswêw+V+TA+Ind+Prt+2Sg+1SgO: [kikî-kîskison, kikîkîskison] # SET II (past)
+     kîskiswêw+V+TA+Ind+Prt+2Sg/Pl+1PlO: [kikî-kîskisonân, kikîkîskisonân]
+     kîskiswêw+V+TA+Ind+Prt+2Pl+1SgO: [kikî-kîskisonâwâw, kikîkîskisonâwâw
+     
+     kîskiswêw+V+TA+Ind+Prt+3Sg+4Sg/PlO: [kî-kîskiswêw, kîkîskiswêw] # SET III (past)
+     kîskiswêw+V+TA+Ind+Prt+3Pl+4Sg/PlO: [kî-kîskiswêwak, kîkîskiswêwak]
+     kîskiswêw+V+TA+Ind+Prt+4Sg/Pl+5Sg/PlO: [kî-kîskiswêyiwa, kîkîskiswêyiwa]
+     kîskiswêw+V+TA+Ind+Prt+3Sg+5Sg/PlO: [kî-kîskisomêw, kîkîskisomêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     kîskiswêw+V+TA+Ind+Prt+3Pl+5Sg/PlO: [kî-kîskisomêwak, kîkîskisomêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
 
-     kîskiswêw+V+TA+Ind+Prs+3Sg+1SgO: nikîskisok
+     kîskiswêw+V+TA+Ind+Prt+1Sg+4Sg/PlO: [nikî-kîskisomâwa, nikîkîskisomâwa] # SET IV (past)
+     kîskiswêw+V+TA+Ind+Prt+2Sg+4Sg/PlO: [kikî-kîskisomâwa, kikîkîskisomâwa]
+     kîskiswêw+V+TA+Ind+Prt+1Pl+4Sg/PlO: [nikî-kîskisomânâna, nikîkîskisomânâna]
+     kîskiswêw+V+TA+Ind+Prt+12Pl+4Sg/PlO: [kikî-kîskisomânawa, kikîkîskisomânawa]
+     kîskiswêw+V+TA+Ind+Prt+2Pl+4Sg/PlO: [kikî-kîskisomâwâwa, kikîkîskisomâwâwa]
+     
+     
+     
+     
+     
+     kîskiswêw+V+TA+Ind+Fut+Def+1Sg+3SgO: [nika-kîskiswâw, nikakîskiswâw] # SET I (Fut+Def)
+     kîskiswêw+V+TA+Ind+Fut+Def+2Sg+3SgO: [kika-kîskiswâw, kikakîskiswâw]
+     kîskiswêw+V+TA+Ind+Fut+Def+1Pl+3SgO: [nika-kîskiswânân, nikakîskiswânân]
+     kîskiswêw+V+TA+Ind+Fut+Def+12Pl+3SgO: [kika-kîskiswânaw, kikakîskiswânaw]
+     kîskiswêw+V+TA+Ind+Fut+Def+2Pl+3SgO: [kika-kîskiswâwâw, kikakîskiswâwâw]
+     
+     kîskiswêw+V+TA+Ind+Fut+Def+1Sg+3PlO: [nika-kîskiswâwak, nikakîskiswâwak] # SET I-Pl (Fut+Def)
+     kîskiswêw+V+TA+Ind+Fut+Def+2Sg+3PlO: [kika-kîskiswâwak, kikakîskiswâwak]
+     kîskiswêw+V+TA+Ind+Fut+Def+1Pl+3PlO: [nika-kîskiswânânak, nikakîskiswânânak]
+     kîskiswêw+V+TA+Ind+Fut+Def+12Pl+3PlO: [kika-kîskiswânawak, kikakîskiswânawak]
+     kîskiswêw+V+TA+Ind+Fut+Def+2Pl+3PlO: [kika-kîskiswâwâwak, kikakîskiswâwâwak]
+     
+     kîskiswêw+V+TA+Ind+Fut+Def+2Sg+1SgO: [kika-kîskison, kikakîskison] # SET II (Fut+Def)
+     kîskiswêw+V+TA+Ind+Fut+Def+2Sg/Pl+1PlO: [kika-kîskisonân, kikakîskisonân]
+     kîskiswêw+V+TA+Ind+Fut+Def+2Pl+1SgO: [kika-kîskisonâwâw, kikakîskisonâwâw
+     
+     kîskiswêw+V+TA+Ind+Fut+Def+3Sg+4Sg/PlO: [ka-kîskiswêw, kakîskiswêw] # SET III (Fut+Def)
+     kîskiswêw+V+TA+Ind+Fut+Def+3Pl+4Sg/PlO: [ka-kîskiswêwak, kakîskiswêwak]
+     kîskiswêw+V+TA+Ind+Fut+Def+4Sg/Pl+5Sg/PlO: [ka-kîskiswêyiwa, kakîskiswêyiwa]
+     kîskiswêw+V+TA+Ind+Fut+Def+3Sg+5Sg/PlO: [ka-kîskisomêw, kakîskisomêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     kîskiswêw+V+TA+Ind+Fut+Def+3Pl+5Sg/PlO: [ka-kîskisomêwak, kakîskisomêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+     kîskiswêw+V+TA+Ind+Fut+Def+1Sg+4Sg/PlO: [nika-kîskisomâwa, nikakîskisomâwa] # SET IV (Fut+Def)
+     kîskiswêw+V+TA+Ind+Fut+Def+2Sg+4Sg/PlO: [kika-kîskisomâwa, kikakîskisomâwa]
+     kîskiswêw+V+TA+Ind+Fut+Def+1Pl+4Sg/PlO: [nika-kîskisomânâna, nikakîskisomânâna]
+     kîskiswêw+V+TA+Ind+Fut+Def+12Pl+4Sg/PlO: [kika-kîskisomânawa, kikakîskisomânawa]
+     kîskiswêw+V+TA+Ind+Fut+Def+2Pl+4Sg/PlO: [kika-kîskisomâwâwa, kikakîskisomâwâwa]
+     
+     
+     
+
+
+     kîskiswêw+V+TA+Ind+Prs+3Sg+1SgO: nikîskisok  # SET I inv
      kîskiswêw+V+TA+Ind+Prs+3Sg+2SgO: kikîskisok
      kîskiswêw+V+TA+Ind+Prs+3Sg+1PlO: nikîskisokonân
      kîskiswêw+V+TA+Ind+Prs+3Sg+12PlO: kikîskisokonaw
      kîskiswêw+V+TA+Ind+Prs+3Sg+2PlO: kikîskisokowâw
      
-     kîskiswêw+V+TA+Ind+Prs+3Pl+1SgO: nikîskisokwak
+     kîskiswêw+V+TA+Ind+Prs+3Pl+1SgO: nikîskisokwak # SET I-Pl inv
      kîskiswêw+V+TA+Ind+Prs+3Pl+2SgO: kikîskisokwak
      kîskiswêw+V+TA+Ind+Prs+3Pl+1PlO: nikîskisokonânak
      kîskiswêw+V+TA+Ind+Prs+3Pl+12PlO: kikîskisokonawak
      kîskiswêw+V+TA+Ind+Prs+3Pl+2PlO: kikîskisokowâwak
      
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: nikîskisokoyiwa
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: nikîskisokonân
-
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: kikîskisokoyiwa
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: kikîskisokowâw
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: kikîskisokonaw
+     kîskiswêw+V+TA+Ind+Prs+1Sg+2SgO: kikîskisotin # SET II inv
+     kîskiswêw+V+TA+Ind+Prs+1Pl+2Sg/PlO: kikîskisotinân
+     kîskiswêw+V+TA+Ind+Prs+1Sg+2PlO: kikîskisotinâwâw
      
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: kîskisok
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: kîskisok # SET III inv (no 5-3 according to Wolvengrey)
      kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: kîskisokwak
      kîskiswêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: kîskisokoyiwa
-
-     kîskiswêw+V+TA+Ind+Prs+1Sg+2SgO: kikîskisotin
-     kîskiswêw+V+TA+Ind+Prs+1Pl+2SgO: kikîskisotinân
-     kîskiswêw+V+TA+Ind+Prs+1Pl+2PlO: kikîskisotinân
-     kîskiswêw+V+TA+Ind+Prs+1Sg+2PlO: kikîskisotinâwâw
-
-     kîskiswêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-kîskiswak, êhkîskiswak]
-     kîskiswêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-kîskiswat, êhkîskiswat]
-     kîskiswêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-kîskiswâyâhk, êhkîskiswâyâhk]
-     kîskiswêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-kîskiswâyahk, êhkîskiswâyahk]
-     kîskiswêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-kîskiswâyêk, êhkîskiswâyêk]
-
-     kîskiswêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-kîskiswakik, êhkîskiswakik]
-     kîskiswêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-kîskiswacik, êhkîskiswacik]
-     kîskiswêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-kîskiswâyâhkik, êhkîskiswâyâhkik]
-     kîskiswêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-kîskiswâyahkok, êhkîskiswâyâhkok]
-     kîskiswêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-kîskiswâyêkok, êhkîskiswâyêkok]     
-
-     kîskiswêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: [ê-kîskisomak, êhkîskisomak]
-     kîskiswêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: [ê-kîskisomâyâhk, êhkîskisomâyâhk]
-
-     kîskiswêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: [ê-kîskisomat, êhkîskisomat]
-     kîskiswêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: [ê-kîskisomâyek, êhkîskisomâyek]
-     kîskiswêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: [ê-kîskisomâyahk, êhkîskisomâyahk]
+          
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: nikîskisokoyiwa # SET IV inv
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: kikîskisokoyiwa
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: nikîskisokonâna
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: kikîskisokonawa
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: kikîskisokowâwa
      
-     kîskiswêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: [ê-kîskiswât, êhkîskiswât]
-     kîskiswêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: [ê-kîskisocik, êhkîskisocik]
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: [ê-kîskiswâyit, êhkîskiswâyit]
 
-     kîskiswêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-kîskisoyan, êhkîskisoyan]
-     kîskiswêw+V+TA+Cnj+Prs+2Sg+1PlO: [ê-kîskisoyâhk, êhkîskisoyâhk]
-     kîskiswêw+V+TA+Cnj+Prs+2Pl+1PlO: [ê-kîskisoyâhk, êhkîskisoyâhk]
-     kîskiswêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-kîskisoyêk, êhkîskisoyêk]
 
-     kîskiswêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-kîskisot, êhkîskisot]
-     kîskiswêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-kîskisosk, êhkîskisosk]
-     kîskiswêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-kîskisokoyâhk, êhkîskisokoyâhk]
-     kîskiswêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-kîskisokoyahk, êhkîskisokoyahk]
-     kîskiswêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-kîskisokoyêk, êhkîskisokoyêk]
 
-     kîskiswêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-kîskisicik, êhkîskisicik]
-     kîskiswêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-kîskisoskik, êhkîskisoskik]
-     kîskiswêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-kîskisokoyâhkik, êhkîskisokoyâhkik]
-     kîskiswêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-kîskisokoyahkok, êhkîskisokoyahkok]
-     kîskiswêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-kîskisokoyêkok, êhkîskisokoyêkok]
 
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: [ê-kîskisoyit, êhkîskisoyit]
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: [ê-kîskisokoyâhk, êhkîskisokoyâhk]
+     kîskiswêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-kîskiswak, êkîskiswak] # SET I
+     kîskiswêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-kîskiswat, êkîskiswat]
+     kîskiswêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-kîskiswâyâhk, êkîskiswâyâhk]
+     kîskiswêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-kîskiswâyahk, êkîskiswâyahk]
+     kîskiswêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-kîskiswâyêk, êkîskiswâyêk]
 
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: [ê-kîskisosk, êhkîskisosk]
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: [ê-kîskisokoyêk, êhkîskisoikoyêk]
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: [ê-kîskisokoyahk, êhkîskisokoyahk]
+     kîskiswêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-kîskiswakik, êkîskiswakik] # SET I-Pl
+     kîskiswêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-kîskiswacik, êkîskiswacik]
+     kîskiswêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-kîskiswâyâhkik, êkîskiswâyâhkik]
+     kîskiswêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-kîskiswâyahkok, êkîskiswâyahkok]
+     kîskiswêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-kîskiswâyêkok, êkîskiswâyêkok] 
      
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: [ê-kîskisokot, êhkîskisokot]
-     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: [ê-kîskisokocik, êhkîskisokocik]
-     kîskiswêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: [ê-kîskisokoyit, êhkîskisokoyit]
+     kîskiswêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-kîskisoyan, êkîskisoyan] # SET II
+     kîskiswêw+V+TA+Cnj+Prs+2Sg/Pl+1PlO: [ê-kîskisoyâhk, êkîskisoyâhk]
+     kîskiswêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-kîskisoyêk, êkîskisoyêk]    
      
-     kîskiswêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-kîskisotân, êhkîskisotân]
-     kîskiswêw+V+TA+Cnj+Prs+1Pl+2SgO: [ê-kîskisotâhk, êhkîskisotâhk]
-     kîskiswêw+V+TA+Cnj+Prs+1Pl+2PlO: [ê-kîskisotâhk, êhkîskisotâhk]
-     kîskiswêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-kîskisotakok, êhkîskisotakok]
+     kîskiswêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: [ê-kîskiswât, êkîskiswât] # SET III
+     kîskiswêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: [ê-kîskiswâcik, êkîskiswâcik]
+     kîskiswêw+V+TA+Ind+Prs+3Sg+5Sg/PlO: [ê-kîskisomât, êkîskisomât]
+     kîskiswêw+V+TA+Ind+Prs+3Pl+5Sg/PlO: [ê-kîskisomâcik, êkîskisomâcik]
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: [ê-kîskiswâyit, êkîskiswâyit]
+
+     kîskiswêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: [ê-kîskisomak, êkîskisomak] # SET IV
+     kîskiswêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: [ê-kîskisomat, êkîskisomat]
+     kîskiswêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: [ê-kîskisomâyâhk, êkîskisomâyâhk]
+     kîskiswêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: [ê-kîskisomâyahk, êkîskisomâyahk]
+     kîskiswêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: [ê-kîskisomâyek, êkîskisomâyek]
+     
+     
+     
+     
+     
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-kîskisot, êkîskisot] # SET I inv
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-kîskisosk, êkîskisosk]
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-kîskisokoyâhk, êkîskisokoyâhk]
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-kîskisokoyahk, êkîskisokoyahk]
+     kîskiswêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-kîskisokoyek, êkîskisokoyek]
+
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-kîskisocik, êkîskisocik] # SET I-Pl inv
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-kîskisoskik, êkîskisoskik]
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-kîskisokoyâhkik, êkîskisokoyâhkik]
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-kîskisokoyahkok, êkîskisokoyahkok]
+     kîskiswêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-kîskisokoyêkok, êkîskisokoyêkok]
+
+     kîskiswêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-kîskisotân, êkîskisotân] # SET II inv
+     kîskiswêw+V+TA+Cnj+Prs+1Pl+2Sg/PlO: [ê-kîskisotâhk, êkîskisotâhk]
+     kîskiswêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-kîskisotakok, êkîskisotakok]
+
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: [ê-kîskisokot, êkîskisokot] # SET III inv
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: [ê-kîskisokocik, êkîskisokocik]
+     kîskiswêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: [ê-kîskisokoyit, êkîskisokoyit]
+          
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: [ê-kîskisoyit, êkîskisoyit] # SET IV inv
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: [ê-kîskisoyisk, êkîskisoyisk]
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: [ê-kîskisokoyâhk, êkîskisokoyâhk, ê-kîskisokowâyâhk, êkîskisokowâyâhk]
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: [ê-kîskisokoyêk, êkîskisokoyêk, ê-kîskisokowâyêk, êkîskisokowâyêk]
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: [ê-kîskisokoyahk, êkîskisokoyahk, ê-kîskisokowâyahk, êkîskisokowâyahk]
+     
+
+
+
 
      kîskiswêw+V+TA+Imp+Imm+2Sg+3SgO: kîskis
      kîskiswêw+V+TA+Imp+Imm+12Pl+3SgO: kîskiswâtân
@@ -140,37 +216,39 @@ Tests:
      kîskiswêw+V+TA+Imp+Imm+2Sg+1SgO: kîskison
      kîskiswêw+V+TA+Imp+Imm+2Sg+1PlO: kîskisonân
      kîskiswêw+V+TA+Imp+Imm+2Pl+1SgO: kîskisok
-     kîskiswêw+V+TA+Imp+Del+2Sg+1SgO: kîskisohkan
-     kîskiswêw+V+TA+Imp+Del+2Sg+1PlO: kîskisohkâhk
-     kîskiswêw+V+TA+Imp+Del+2Pl+1SgO: kîskisohkêk
+     kîskiswêw+V+TA+Imp+Del+2Sg+1SgO: kîskisôhkan
+     kîskiswêw+V+TA+Imp+Del+2Sg+1PlO: kîskisôhkâhk
+     kîskiswêw+V+TA+Imp+Del+2Pl+1SgO: kîskisôhkêk
+     
+     
+     
+     
 
      kîskiswêw+V+TA+Fut+Cond+1Sg+3SgO: kîskiswaki
      kîskiswêw+V+TA+Fut+Cond+1Sg+3PlO: kîskiswakwâwi
      kîskiswêw+V+TA+Fut+Cond+1Pl+3SgO: kîskiswâyâhki
      kîskiswêw+V+TA+Fut+Cond+1Pl+3PlO: kîskiswâyâhkwâwi
-     kîskiswêw+V+TA+Fut+Cond+12Pl+3SgO: kîskiswâyahki
-     kîskiswêw+V+TA+Fut+Cond+12Pl+3PlO: kîskiswâyahkwâwi
+     kîskiswêw+V+TA+Fut+Cond+12Pl+3SgO: kîskiswâyâhki
+     kîskiswêw+V+TA+Fut+Cond+12Pl+3PlO: kîskiswâyâhkwâwi
 
      kîskiswêw+V+TA+Fut+Cond+2Sg+3SgO: kîskiswaci
      kîskiswêw+V+TA+Fut+Cond+2Sg+3PlO: kîskiswatwâwi
      kîskiswêw+V+TA+Fut+Cond+2Pl+3SgO: kîskiswâyêko
-     kîskiswêw+V+TA+Fut+Cond+2Pl+3PlO: kîskiswâyahkwâwi
-
+     kîskiswêw+V+TA+Fut+Cond+2Pl+3PlO: kîskiswâyêkwâwi
 
      kîskiswêw+V+TA+Fut+Cond+3Sg+4SgO: kîskiswâci
-          
      kîskiswêw+V+TA+Fut+Cond+3Sg+1SgO: kîskisoci
      kîskiswêw+V+TA+Fut+Cond+3Sg+2SgO: kîskisoski
      kîskiswêw+V+TA+Fut+Cond+3Sg+1PlO: kîskisokoyâhki
      kîskiswêw+V+TA+Fut+Cond+3Sg+2PlO: kîskisokoyêko
      kîskiswêw+V+TA+Fut+Cond+3Sg+12PlO: kîskisokoyahko
 
-
      kîskiswêw+V+TA+Fut+Cond+4Sg+3SgO: kîskisokoci
-     kîskiswêw+V+TA+Fut+Cond+4Sg+3PlO: kîskisokotwâwi
+     kîskiswêw+V+TA+Fut+Cond+4Sg+3PlO: kîskiswâyici
      kîskiswêw+V+TA+Fut+Cond+4Pl+3SgO: kîskisokoci
-     kîskiswêw+V+TA+Fut+Cond+4Pl+3PlO: kîskisokotwâwi
-     kîskiswêw+V+TA+Fut+Cond+4Sg+5PlO: kîskisokoyici
+     kîskiswêw+V+TA+Fut+Cond+4Pl+3PlO: kîskiswâyici
+     kîskiswêw+V+TA+Fut+Cond+4Sg+4PlO: kîskisokoyici
+     kîskiswêw+V+TA+Fut+Cond+4Pl+4PlO: kîskisokoyici
 
 
 

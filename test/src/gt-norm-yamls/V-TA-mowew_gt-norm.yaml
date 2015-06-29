@@ -11,139 +11,193 @@ Tests:
   
   Verb - mow - ok : # Wolvengrey VTA1 verb - p 401
 
-     mowêw+V+TA+Ind+Prs+1Sg+3SgO: nimowâw
+     mowêw+V+TA+Ind+Prs+1Sg+3SgO: nimowâw # SET I
      mowêw+V+TA+Ind+Prs+2Sg+3SgO: kimowâw
      mowêw+V+TA+Ind+Prs+1Pl+3SgO: nimowânân
      mowêw+V+TA+Ind+Prs+12Pl+3SgO: kimowânaw
      mowêw+V+TA+Ind+Prs+2Pl+3SgO: kimowâwâw
-     mowêw+V+TA+Ind+Prs+3Sg+3SgO: mowêw
-     mowêw+V+TA+Ind+Prs+3Pl+3SgO: mowêwak
      
-     mowêw+V+TA+Ind+Prs+1Sg+3PlO: nimowâwak
+     mowêw+V+TA+Ind+Prs+1Sg+3PlO: nimowâwak # SET I-Pl
      mowêw+V+TA+Ind+Prs+2Sg+3PlO: kimowâwak
      mowêw+V+TA+Ind+Prs+1Pl+3PlO: nimowânânak
      mowêw+V+TA+Ind+Prs+12Pl+3PlO: kimowânawak
      mowêw+V+TA+Ind+Prs+2Pl+3PlO: kimowâwâwak
-     mowêw+V+TA+Ind+Prs+3Sg+3PlO: mowêw
-     mowêw+V+TA+Ind+Prs+3Pl+3PlO: mowêwak
-
-     mowêw+V+TA+Ind+Prs+4Sg+4SgO: mowêyiwa
-     mowêw+V+TA+Ind+Prs+4Sg+4PlO: mowêyiwa     
-
-     mowêw+V+TA+Ind+Prs+2Sg+1SgO: kimowin
-     mowêw+V+TA+Ind+Prs+2Sg+1PlO: kimowinân
-     mowêw+V+TA+Ind+Prs+2Pl+1PlO: kimowinân
+     
+     mowêw+V+TA+Ind+Prs+2Sg+1SgO: kimowin # SET II
+     mowêw+V+TA+Ind+Prs+2Sg/Pl+1PlO: kimowinân
      mowêw+V+TA+Ind+Prs+2Pl+1SgO: kimowinâwâw
+     
+     mowêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: mowêw # SET III
+     mowêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: mowêwak
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: mowêyiwa
+     mowêw+V+TA+Ind+Prs+3Sg+5Sg/PlO: mowimêw # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     mowêw+V+TA+Ind+Prs+3Pl+5Sg/PlO: mowimêwak # From Wolvengrey P.C. 27/6/15 (See /doc/)
 
-     mowêw+V+TA+Ind+Prs+3Sg+1SgO: nimowik
+     mowêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: nimowimâwa # SET IV
+     mowêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: kimowimâwa
+     mowêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: nimowimânâna
+     mowêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: kimowimânawa
+     mowêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: kimowimâwâwa
+     
+     
+     
+     
+     
+     mowêw+V+TA+Ind+Prt+1Sg+3SgO: [nikî-mowâw, nikîmowâw] # SET I (past)
+     mowêw+V+TA+Ind+Prt+2Sg+3SgO: [kikî-mowâw, kikîmowâw]
+     mowêw+V+TA+Ind+Prt+1Pl+3SgO: [nikî-mowânân, nikîmowânân]
+     mowêw+V+TA+Ind+Prt+12Pl+3SgO: [kikî-mowânaw, kikîmowânaw]
+     mowêw+V+TA+Ind+Prt+2Pl+3SgO: [kikî-mowâwâw, kikîmowâwâw]
+     
+     mowêw+V+TA+Ind+Prt+1Sg+3PlO: [nikî-mowâwak, nikîmowâwak] # SET I-Pl (past)
+     mowêw+V+TA+Ind+Prt+2Sg+3PlO: [kikî-mowâwak, kikîmowâwak]
+     mowêw+V+TA+Ind+Prt+1Pl+3PlO: [nikî-mowânânak, nikîmowânânak]
+     mowêw+V+TA+Ind+Prt+12Pl+3PlO: [kikî-mowânawak, kikîmowânawak]
+     mowêw+V+TA+Ind+Prt+2Pl+3PlO: [kikî-mowâwâwak, kikîmowâwâwak]
+     
+     mowêw+V+TA+Ind+Prt+2Sg+1SgO: [kikî-mowin, kikîmowin] # SET II (past)
+     mowêw+V+TA+Ind+Prt+2Sg/Pl+1PlO: [kikî-mowinân, kikîmowinân]
+     mowêw+V+TA+Ind+Prt+2Pl+1SgO: [kikî-mowinâwâw, kikîmowinâwâw
+     
+     mowêw+V+TA+Ind+Prt+3Sg+4Sg/PlO: [kî-mowêw, kîmowêw] # SET III (past)
+     mowêw+V+TA+Ind+Prt+3Pl+4Sg/PlO: [kî-mowêwak, kîmowêwak]
+     mowêw+V+TA+Ind+Prt+4Sg/Pl+5Sg/PlO: [kî-mowêyiwa, kîmowêyiwa]
+     mowêw+V+TA+Ind+Prt+3Sg+5Sg/PlO: [kî-mowimêw, kîmowimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     mowêw+V+TA+Ind+Prt+3Pl+5Sg/PlO: [kî-mowimêwak, kîmowimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+     mowêw+V+TA+Ind+Prt+1Sg+4Sg/PlO: [nikî-mowimâwa, nikîmowimâwa] # SET IV (past)
+     mowêw+V+TA+Ind+Prt+2Sg+4Sg/PlO: [kikî-mowimâwa, kikîmowimâwa]
+     mowêw+V+TA+Ind+Prt+1Pl+4Sg/PlO: [nikî-mowimânâna, nikîmowimânâna]
+     mowêw+V+TA+Ind+Prt+12Pl+4Sg/PlO: [kikî-mowimânawa, kikîmowimânawa]
+     mowêw+V+TA+Ind+Prt+2Pl+4Sg/PlO: [kikî-mowimâwâwa, kikîmowimâwâwa]
+     
+     
+     
+     
+     
+     mowêw+V+TA+Ind+Fut+Def+1Sg+3SgO: [nika-mowâw, nikamowâw] # SET I (Fut+Def)
+     mowêw+V+TA+Ind+Fut+Def+2Sg+3SgO: [kika-mowâw, kikamowâw]
+     mowêw+V+TA+Ind+Fut+Def+1Pl+3SgO: [nika-mowânân, nikamowânân]
+     mowêw+V+TA+Ind+Fut+Def+12Pl+3SgO: [kika-mowânaw, kikamowânaw]
+     mowêw+V+TA+Ind+Fut+Def+2Pl+3SgO: [kika-mowâwâw, kikamowâwâw]
+     
+     mowêw+V+TA+Ind+Fut+Def+1Sg+3PlO: [nika-mowâwak, nikamowâwak] # SET I-Pl (Fut+Def)
+     mowêw+V+TA+Ind+Fut+Def+2Sg+3PlO: [kika-mowâwak, kikamowâwak]
+     mowêw+V+TA+Ind+Fut+Def+1Pl+3PlO: [nika-mowânânak, nikamowânânak]
+     mowêw+V+TA+Ind+Fut+Def+12Pl+3PlO: [kika-mowânawak, kikamowânawak]
+     mowêw+V+TA+Ind+Fut+Def+2Pl+3PlO: [kika-mowâwâwak, kikamowâwâwak]
+     
+     mowêw+V+TA+Ind+Fut+Def+2Sg+1SgO: [kika-mowin, kikamowin] # SET II (Fut+Def)
+     mowêw+V+TA+Ind+Fut+Def+2Sg/Pl+1PlO: [kika-mowinân, kikamowinân]
+     mowêw+V+TA+Ind+Fut+Def+2Pl+1SgO: [kika-mowinâwâw, kikamowinâwâw
+     
+     mowêw+V+TA+Ind+Fut+Def+3Sg+4Sg/PlO: [ka-mowêw, kamowêw] # SET III (Fut+Def)
+     mowêw+V+TA+Ind+Fut+Def+3Pl+4Sg/PlO: [ka-mowêwak, kamowêwak]
+     mowêw+V+TA+Ind+Fut+Def+4Sg/Pl+5Sg/PlO: [ka-mowêyiwa, kamowêyiwa]
+     mowêw+V+TA+Ind+Fut+Def+3Sg+5Sg/PlO: [ka-mowimêw, kamowimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     mowêw+V+TA+Ind+Fut+Def+3Pl+5Sg/PlO: [ka-mowimêwak, kamowimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+     mowêw+V+TA+Ind+Fut+Def+1Sg+4Sg/PlO: [nika-mowimâwa, nikamowimâwa] # SET IV (Fut+Def)
+     mowêw+V+TA+Ind+Fut+Def+2Sg+4Sg/PlO: [kika-mowimâwa, kikamowimâwa]
+     mowêw+V+TA+Ind+Fut+Def+1Pl+4Sg/PlO: [nika-mowimânâna, nikamowimânâna]
+     mowêw+V+TA+Ind+Fut+Def+12Pl+4Sg/PlO: [kika-mowimânawa, kikamowimânawa]
+     mowêw+V+TA+Ind+Fut+Def+2Pl+4Sg/PlO: [kika-mowimâwâwa, kikamowimâwâwa]
+     
+     
+     
+
+
+     mowêw+V+TA+Ind+Prs+3Sg+1SgO: nimowik  # SET I inv
      mowêw+V+TA+Ind+Prs+3Sg+2SgO: kimowik
-     mowêw+V+TA+Ind+Prs+3Sg+1PlO: nimowikonân # inv +0Sg+1PlO
+     mowêw+V+TA+Ind+Prs+3Sg+1PlO: nimowikonân
      mowêw+V+TA+Ind+Prs+3Sg+12PlO: kimowikonaw
      mowêw+V+TA+Ind+Prs+3Sg+2PlO: kimowikowâw
-
-     mowêw+V+TA+Ind+Prs+3Pl+1SgO: nimowikwak
+     
+     mowêw+V+TA+Ind+Prs+3Pl+1SgO: nimowikwak # SET I-Pl inv
      mowêw+V+TA+Ind+Prs+3Pl+2SgO: kimowikwak
      mowêw+V+TA+Ind+Prs+3Pl+1PlO: nimowikonânak
      mowêw+V+TA+Ind+Prs+3Pl+12PlO: kimowikonawak
      mowêw+V+TA+Ind+Prs+3Pl+2PlO: kimowikowâwak
      
-     mowêw+V+TA+Ind+Prs+4Sg+3SgO: mowik
-     mowêw+V+TA+Ind+Prs+4Sg+3PlO: mowikwak
-     mowêw+V+TA+Ind+Prs+5Sg+4SgO: mowikoyiwa
+     mowêw+V+TA+Ind+Prs+1Sg+2SgO: kimowitin # SET II inv
+     mowêw+V+TA+Ind+Prs+1Pl+2Sg/PlO: kimowitinân
+     mowêw+V+TA+Ind+Prs+1Sg+2PlO: kimowitinâwâw
+     
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: mowik # SET III inv (no 5-3 according to Wolvengrey)
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: mowikwak
+     mowêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: mowikoyiwa
+          
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: nimowikoyiwa # SET IV inv
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: kimowikoyiwa
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: nimowikonâna
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: kimowikonawa
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: kimowikowâwa
+     
 
-     mowêw+V+TA+Ind+Prs+1Sg+2SgO: kimowitin
-     mowêw+V+TA+Ind+Prs+1Pl+2SgO: kimowitinân
-     mowêw+V+TA+Ind+Prs+1Pl+2PlO: kimowitinân
-     mowêw+V+TA+Ind+Prs+1Sg+2PlO: kimowitinânâw
 
-     mowêw+V+TA+Ind+Prt+1Sg+3SgO: [nikîmowâw, nikî-mowâw]
-     mowêw+V+TA+Ind+Prt+2Sg+3SgO: [kikîmowâw, kikî-mowâw]
-     mowêw+V+TA+Ind+Prt+1Pl+3SgO: [nikîmowânân, nikî-mowânân]
-     mowêw+V+TA+Ind+Prt+12Pl+3SgO: [kikîmowânaw, kikî-mowânaw]
-     mowêw+V+TA+Ind+Prt+2Pl+3SgO: [kikîmowâwâw, kikî-mowâwâw]
-     mowêw+V+TA+Ind+Prt+3Sg+3SgO: [kîmowêw, kî-mowêw]
-     mowêw+V+TA+Ind+Prt+3Pl+3SgO: [kîmowêwak, kî-mowêwak]
 
-     mowêw+V+TA+Ind+Prt+1Sg+3PlO: [nikîmowâwak, nikî-mowâwak]
-     mowêw+V+TA+Ind+Prt+2Sg+3PlO: [kikîmowâwak, kikî-mowâwak]
-     mowêw+V+TA+Ind+Prt+1Pl+3PlO: [nikîmowânânak, nikî-mowânânak]
-     mowêw+V+TA+Ind+Prt+12Pl+3PlO: [kikîmowânawak, kikî-mowânawak]
-     mowêw+V+TA+Ind+Prt+2Pl+3PlO: [kikîmowâwâwak, kikî-mowâwâwak]
-     mowêw+V+TA+Ind+Prt+3Sg+3PlO: [kîmowêw, kî-mowêw]
-     mowêw+V+TA+Ind+Prt+3Pl+3PlO: [kîmowêwak, kî-mowêwak]
 
-     mowêw+V+TA+Ind+Prt+4Sg+4SgO: [kîmowêyiwa, kî-mowêyiwa]
-     mowêw+V+TA+Ind+Prt+4Sg+4PlO: [kîmowêyiwa, kî-mowêyiwa]
-
-     mowêw+V+TA+Ind+Prt+2Sg+1SgO: [kikîmowin, kikî-mowin]
-     mowêw+V+TA+Ind+Prt+2Sg+1PlO: [kikîmowinân, kikî-mowinân]
-     mowêw+V+TA+Ind+Prt+2Pl+1PlO: [kikîmowinân, kikî-mowinân]
-     mowêw+V+TA+Ind+Prt+2Pl+1SgO: [kikîmowinâwâw, kikî-mowinâwâw]
-
-     mowêw+V+TA+Ind+Prt+3Sg+1SgO: [nikîmowik, nikî-mowik]
-     mowêw+V+TA+Ind+Prt+3Sg+2SgO: [kikîmowik, kikî-mowik]
-     mowêw+V+TA+Ind+Prt+3Sg+1PlO: [nikîmowikonân, nikî-mowikonân]
-     mowêw+V+TA+Ind+Prt+3Sg+12PlO: [kikîmowikonaw, kikî-mowikonaw]
-     mowêw+V+TA+Ind+Prt+3Sg+2PlO: [kikîmowikowâw, kikî-mowikowâw]
-
-     mowêw+V+TA+Ind+Prt+3Pl+1SgO: [nikîmowikwak, nikî-mowikwak]
-     mowêw+V+TA+Ind+Prt+3Pl+2SgO: [kikîmowikwak, kikî-mowikwak]
-     mowêw+V+TA+Ind+Prt+3Pl+1PlO: [nikîmowikonânak, nikî-mowikonânak]
-     mowêw+V+TA+Ind+Prt+3Pl+12PlO: [kikîmowikonawak, kikî-mowikonawak]
-     mowêw+V+TA+Ind+Prt+3Pl+2PlO: [kikîmowikowâwak, kikî-mowikowâwak]
-
-     mowêw+V+TA+Ind+Prt+4Sg+3SgO: [kîmowik, kî-mowik]
-     mowêw+V+TA+Ind+Prt+4Sg+3PlO: [kîmowikwak, kî-mowikwak]
-     mowêw+V+TA+Ind+Prt+5Sg+4SgO: [kîmowikoyiwa, kî-mowikoyiwa]
-
-     mowêw+V+TA+Ind+Prt+1Sg+2SgO: [kikîmowitin, kikî-mowitin]
-     mowêw+V+TA+Ind+Prt+1Pl+2SgO: [kikîmowitinân, kikî-mowitinân]
-     mowêw+V+TA+Ind+Prt+1Pl+2PlO: [kikîmowitinân, kikî-mowitinân]
-     mowêw+V+TA+Ind+Prt+1Sg+2PlO: [kikîmowitinânâw, kikî-mowitinânâw]
-
-     mowêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-mowak, êmowak]
+     mowêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-mowak, êmowak] # SET I
      mowêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-mowat, êmowat]
      mowêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-mowâyâhk, êmowâyâhk]
      mowêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-mowâyahk, êmowâyahk]
      mowêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-mowâyêk, êmowâyêk]
 
-     mowêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-mowakik, êmowakik]
+     mowêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-mowakik, êmowakik] # SET I-Pl
      mowêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-mowacik, êmowacik]
      mowêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-mowâyâhkik, êmowâyâhkik]
-     mowêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-mowâyâhkok, êmowâyâhkok]
-     mowêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-mowâyêkok, êmowâyêkok]
+     mowêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-mowâyahkok, êmowâyahkok]
+     mowêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-mowâyêkok, êmowâyêkok] 
+     
+     mowêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-mowiyan, êmowiyan] # SET II
+     mowêw+V+TA+Cnj+Prs+2Sg/Pl+1PlO: [ê-mowiyâhk, êmowiyâhk]
+     mowêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-mowiyêk, êmowiyêk]    
+     
+     mowêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: [ê-mowât, êmowât] # SET III
+     mowêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: [ê-mowâcik, êmowâcik]
+     mowêw+V+TA+Ind+Prs+3Sg+5Sg/PlO: [ê-mowimât, êmowimât]
+     mowêw+V+TA+Ind+Prs+3Pl+5Sg/PlO: [ê-mowimâcik, êmowimâcik]
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: [ê-mowâyit, êmowâyit]
 
-     mowêw+V+TA+Cnj+Prs+3Sg+4SgO: [ê-mowât, êmowât]
-     mowêw+V+TA+Cnj+Prs+3Pl+4SgO: [ê-mowâcik, êmowâcik]
-     mowêw+V+TA+Cnj+Prs+3Sg+4PlO: [ê-mowât, êmowât]
-     mowêw+V+TA+Cnj+Prs+3Pl+4PlO: [ê-mowâcik, êmowâcik]
-     mowêw+V+TA+Cnj+Prs+4Sg+5SgO: [ê-mowâyit, êmowâyit]
-  
-     mowêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-mowiyan, êmowiyan]
-     mowêw+V+TA+Cnj+Prs+2Sg+1PlO: [ê-mowiyâhk, êmowiyâhk]
-     mowêw+V+TA+Cnj+Prs+2Pl+1PlO: [ê-mowiyâhk, êmowiyâhk]
-     mowêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-mowiyêk, êmowiyêk]
-
-     mowêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-mowit, êmowit]
+     mowêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: [ê-mowimak, êmowimak] # SET IV
+     mowêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: [ê-mowimat, êmowimat]
+     mowêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: [ê-mowimâyâhk, êmowimâyâhk]
+     mowêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: [ê-mowimâyahk, êmowimâyahk]
+     mowêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: [ê-mowimâyek, êmowimâyek]
+     
+     
+     
+     
+     
+     mowêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-mowit, êmowit] # SET I inv
      mowêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-mowisk, êmowisk]
      mowêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-mowikoyâhk, êmowikoyâhk]
      mowêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-mowikoyahk, êmowikoyahk]
      mowêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-mowikoyek, êmowikoyek]
 
-     mowêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-mowiticik, êmowiticik]
+     mowêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-mowicik, êmowicik] # SET I-Pl inv
      mowêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-mowiskik, êmowiskik]
      mowêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-mowikoyâhkik, êmowikoyâhkik]
      mowêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-mowikoyahkok, êmowikoyahkok]
      mowêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-mowikoyêkok, êmowikoyêkok]
 
-     mowêw+V+TA+Cnj+Prs+4Sg+3SgO: [ê-mowikot, êmowikot]
-     mowêw+V+TA+Cnj+Prs+4Sg+3PlO: [ê-mowikocik, êmowikocik]
-     mowêw+V+TA+Cnj+Prs+4Sg+4PlO: [ê-mowikoyit, êmowikoyit]
-
-     mowêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-mowitân, êmowitân]
-     mowêw+V+TA+Cnj+Prs+1Pl+2SgO: [ê-mowitâhk, êmowitâhk]
-     mowêw+V+TA+Cnj+Prs+1Pl+2PlO: [ê-mowitâhk, êmowitâhk]
+     mowêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-mowitân, êmowitân] # SET II inv
+     mowêw+V+TA+Cnj+Prs+1Pl+2Sg/PlO: [ê-mowitâhk, êmowitâhk]
      mowêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-mowitakok, êmowitakok]
+
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: [ê-mowikot, êmowikot] # SET III inv
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: [ê-mowikocik, êmowikocik]
+     mowêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: [ê-mowikoyit, êmowikoyit]
+          
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: [ê-mowiyit, êmowiyit] # SET IV inv
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: [ê-mowiyisk, êmowiyisk]
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: [ê-mowikoyâhk, êmowikoyâhk, ê-mowikowâyâhk, êmowikowâyâhk]
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: [ê-mowikoyêk, êmowikoyêk, ê-mowikowâyêk, êmowikowâyêk]
+     mowêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: [ê-mowikoyahk, êmowikoyahk, ê-mowikowâyahk, êmowikowâyahk]
+     
+
+
+
 
      mowêw+V+TA+Imp+Imm+2Sg+3SgO: mow
      mowêw+V+TA+Imp+Imm+12Pl+3SgO: mowâtân
@@ -165,18 +219,22 @@ Tests:
      mowêw+V+TA+Imp+Del+2Sg+1SgO: mowîhkan
      mowêw+V+TA+Imp+Del+2Sg+1PlO: mowîhkâhk
      mowêw+V+TA+Imp+Del+2Pl+1SgO: mowîhkêk
+     
+     
+     
+     
 
      mowêw+V+TA+Fut+Cond+1Sg+3SgO: mowaki
      mowêw+V+TA+Fut+Cond+1Sg+3PlO: mowakwâwi
      mowêw+V+TA+Fut+Cond+1Pl+3SgO: mowâyâhki
      mowêw+V+TA+Fut+Cond+1Pl+3PlO: mowâyâhkwâwi
-     mowêw+V+TA+Fut+Cond+12Pl+3SgO: mowâyahki
-     mowêw+V+TA+Fut+Cond+12Pl+3PlO: mowâyahkwâwi
+     mowêw+V+TA+Fut+Cond+12Pl+3SgO: mowâyâhki
+     mowêw+V+TA+Fut+Cond+12Pl+3PlO: mowâyâhkwâwi
 
      mowêw+V+TA+Fut+Cond+2Sg+3SgO: mowaci
      mowêw+V+TA+Fut+Cond+2Sg+3PlO: mowatwâwi
      mowêw+V+TA+Fut+Cond+2Pl+3SgO: mowâyêko
-     mowêw+V+TA+Fut+Cond+2Pl+3PlO: mowâyahkwâwi
+     mowêw+V+TA+Fut+Cond+2Pl+3PlO: mowâyêkwâwi
 
      mowêw+V+TA+Fut+Cond+3Sg+4SgO: mowâci
      mowêw+V+TA+Fut+Cond+3Sg+1SgO: mowici
@@ -186,7 +244,8 @@ Tests:
      mowêw+V+TA+Fut+Cond+3Sg+12PlO: mowikoyahko
 
      mowêw+V+TA+Fut+Cond+4Sg+3SgO: mowikoci
-     mowêw+V+TA+Fut+Cond+4Sg+3PlO: mowokotwâwi
+     mowêw+V+TA+Fut+Cond+4Sg+3PlO: mowâyici
      mowêw+V+TA+Fut+Cond+4Pl+3SgO: mowikoci
-     mowêw+V+TA+Fut+Cond+4Pl+3PlO: mowokotwâwi
-     mowêw+V+TA+Fut+Cond+4Sg+5PlO: mowikoyici
+     mowêw+V+TA+Fut+Cond+4Pl+3PlO: mowâyici
+     mowêw+V+TA+Fut+Cond+4Sg+4PlO: mowikoyici
+     mowêw+V+TA+Fut+Cond+4Pl+4PlO: mowikoyici
