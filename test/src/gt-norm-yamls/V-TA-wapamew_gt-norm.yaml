@@ -9,7 +9,7 @@ Config:
 
 Tests:
   
-  Verb - wâpamêw - ok : # Wolvengrey VTA1 verb - p 401
+  Verb - wâpamêw - ok : # Wolvengrey VTA1 verb -  Wolvengrey p. 401; Fut+Cond from Okimāsis pp. 79, 103
 
      wâpamêw+V+TA+Ind+Prs+1Sg+3SgO: niwâpamâw # SET I
      wâpamêw+V+TA+Ind+Prs+2Sg+3SgO: kiwâpamâw
@@ -224,28 +224,34 @@ Tests:
      
      
 
-     wâpamêw+V+TA+Fut+Cond+1Sg+3SgO: wâpamaki
-     wâpamêw+V+TA+Fut+Cond+1Sg+3PlO: wâpamakwâwi
-     wâpamêw+V+TA+Fut+Cond+1Pl+3SgO: wâpamâyâhki
-     wâpamêw+V+TA+Fut+Cond+1Pl+3PlO: wâpamâyâhkwâwi
-     wâpamêw+V+TA+Fut+Cond+12Pl+3SgO: wâpamâyâhki
-     wâpamêw+V+TA+Fut+Cond+12Pl+3PlO: wâpamâyâhkwâwi
-
+     wâpamêw+V+TA+Fut+Cond+1Sg+3SgO: wâpamaki # 1 and 2-3Sg
      wâpamêw+V+TA+Fut+Cond+2Sg+3SgO: wâpamaci
-     wâpamêw+V+TA+Fut+Cond+2Sg+3PlO: wâpamatwâwi
+     wâpamêw+V+TA+Fut+Cond+1Pl+3SgO: wâpamâyâhki
+     wâpamêw+V+TA+Fut+Cond+12Pl+3SgO: [wâpamâyahko, wâpamâyahki]
      wâpamêw+V+TA+Fut+Cond+2Pl+3SgO: wâpamâyêko
+
+     wâpamêw+V+TA+Fut+Cond+3Sg+4Sg/PlO: wâpamâci # 3-4, 4-5
+     wâpamêw+V+TA+Fut+Cond+3Pl+4Sg/PlO: wâpamâtwâwi
+     wâpamêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: wâpamâyici
+     
+     wâpamêw+V+TA+Fut+Cond+1Sg+3PlO: wâpamakwâwi # 1 and 2-3Pl
+     wâpamêw+V+TA+Fut+Cond+2Sg+3PlO: wâpamatwâwi
+     wâpamêw+V+TA+Fut+Cond+1Pl+3PlO: wâpamâyâhkwâwi
+     wâpamêw+V+TA+Fut+Cond+12Pl+3PlO: wâpamâyahkwâwi
      wâpamêw+V+TA+Fut+Cond+2Pl+3PlO: wâpamâyêkwâwi
 
-     wâpamêw+V+TA+Fut+Cond+3Sg+4SgO: wâpamâci
-     wâpamêw+V+TA+Fut+Cond+3Sg+1SgO: wâpamici
+     wâpamêw+V+TA+Fut+Cond+3Sg+1SgO: wâpamici # 1 and 2-3Sg INVERSE (3Sg-1 and 2)
      wâpamêw+V+TA+Fut+Cond+3Sg+2SgO: wâpamiski
      wâpamêw+V+TA+Fut+Cond+3Sg+1PlO: wâpamikoyâhki
+     wâpamêw+V+TA+Fut+Cond+3Sg+12PlO: [wâpamikoyahko, wâpamikoyahki]
      wâpamêw+V+TA+Fut+Cond+3Sg+2PlO: wâpamikoyêko
-     wâpamêw+V+TA+Fut+Cond+3Sg+12PlO: wâpamikoyahko
-
-     wâpamêw+V+TA+Fut+Cond+4Sg+3SgO: wâpamikoci
-     wâpamêw+V+TA+Fut+Cond+4Sg+3PlO: wâpamâyici
-     wâpamêw+V+TA+Fut+Cond+4Pl+3SgO: wâpamikoci
-     wâpamêw+V+TA+Fut+Cond+4Pl+3PlO: wâpamâyici
-     wâpamêw+V+TA+Fut+Cond+4Sg+4PlO: wâpamikoyici
-     wâpamêw+V+TA+Fut+Cond+4Pl+4PlO: wâpamikoyici
+     
+     wâpamêw+V+TA+Fut+Cond+4Sg/Pl+3SgO: wâpamikoci # 3-4, 4-5 INVERSE (4-3, 5-4)
+     wâpamêw+V+TA+Fut+Cond+4Sg/Pl+3PlO: wâpamikotwâwi 
+     wâpamêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: wâpamikoyici
+     
+     wâpamêw+V+TA+Fut+Cond+3Pl+1SgO: wâpamitwâwi # 1 and 2-3Pl INVERSE (3Pl-1 and 2)
+     wâpamêw+V+TA+Fut+Cond+3Pl+2SgO: wâpamiskwâwi
+     wâpamêw+V+TA+Fut+Cond+3Pl+1PlO: wâpamikoyâhkwâwi
+     wâpamêw+V+TA+Fut+Cond+3Pl+12PlO: wâpamikoyahkwâwi
+     wâpamêw+V+TA+Fut+Cond+3Pl+2PlO: wâpamikoyêkwâwi
