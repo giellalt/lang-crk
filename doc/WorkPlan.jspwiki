@@ -24,16 +24,15 @@
 !! Modeling of morphology: background and modeling decisions
 
 * Various conjunct form prefixes beyond 'ê-': kâ-, etc.
-
 ** historically changed conjunct form replaced by ê-/kâ- and regular conjunct form (e.g. nêpâyan / nipâyan → ê-nipâyan) in Plains Cree (but not in East Cree).
 ** conjunct forms expressing some level of antecedent (at discourse level) or TAM and/or evidentiality.
 ** worthwhile reference: Clare Cook (2008) "The syntax and semantics of clause-typing in Plains Cree"
 ** one solution would be to explictly mark which grammatical preverb precedes the actual conjunct form, allowing also for the absence of such a preverb in some cases. This grammatical preverb info could also be used for determining subsequent analysis of the suffix, as well as set set constraints on allowable conjunct-preverb + suffix combinations, resulting in e.g. the following analyses for conjunct forms of nîpâw (this is in fact quite similar to the East Cree situation):
-
+{{{
 ê-nipâyan	PV/e+nipâw+V+AI+Cnj+Prs+1Sg
 kâ-nipâyan	PV/ka+nipâw+V+AI+Cnj+Prs+1Sg
 nipâyan	nipâw+V+AI+Cnj+Prs+1Sg
-
+}}}
 * Subjunctive vs. Future Conditional
 ** coding as +Fut+Cond might make more sense than +Subjn.
 * Coding obviation in the context of various third person features
