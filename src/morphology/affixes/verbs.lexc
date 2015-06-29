@@ -63,9 +63,11 @@ LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no pre
 @U.mood.FutCon@ PREVERBS ;
 
 LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-
-< 0:ê 0:%-      "@P.joiner.hyphen@" > CNJ_TENSE ; !
-< 0:ê 0:%^EGLOT "@P.joiner.NULL@"   > CNJ_TENSE ; !
-!< 0:0           "@P.joiner.NULL@"   > CNJ_TENSE ; ! Option to allow for the occasional omission of the ê-prefix
+< 0:ê 0:%-      "PV/e+":0 "@P.joiner.hyphen@"     > CNJ_TENSE ; !
+< 0:ê 0:%^EGLOT "@P.joiner.NULL@"                 > CNJ_TENSE ; !
+! < 0:k 0:â 0:%-  "PV/ka+":0 "@P.joiner.hyphen@"    > CNJ_TENSE ; ! Not implemented yet
+! < 0:k 0:â 0:%^EGLOT  "PV/ka+":0 "@P.joiner.NULL@" > CNJ_TENSE ; ! Not implemented yet
+! < 0:0           "@P.joiner.NULL@"                 > CNJ_TENSE ; ! Option to allow for the occasional omission of the ê- or kâ- prefix
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
 <                   "@U.tense.Prs@"                        > PREVERBS ; ! Present
@@ -1534,7 +1536,7 @@ LEXICON IICONJ  !!= @CODE@ adds the flag for no personprefixes
 LEXICON IICONJ-SG  !!= @CODE@ adds the flag for no personprefixes, only Sg forms
 < "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS-SG ;
 
-LEXICON IIPLCONJ  !!= @CODE@ adds the flag for no personprefixes, only Pl forms
+LEXICON IICONJ-PL  !!= @CODE@ adds the flag for no personprefixes, only Pl forms
 < "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS-PL ;
 
 LEXICON IICONJFORMS !!= @CODE@
@@ -1553,7 +1555,7 @@ LEXICON IICONJw  !!= @CODE@  w final
 LEXICON IICONJw-SG  !!= @CODE@  w final, only Sg forms
 < "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw-SG ;
 
-LEXICON IIPLCONJw  !!= @CODE@  w final, only Pl forms
+LEXICON IICONJw-PL  !!= @CODE@  w final, only Pl forms
 < "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw-PL ;
 
 
