@@ -9,7 +9,7 @@ Config:
 
 Tests:
   
-  Verb - mow - ok : # Wolvengrey VTA1 verb - p 401
+  Verb - mow - ok : # Wolvengrey VTA1 verb - p 401; Fut+Cond from Okimāsis pp. 79, 103
 
      mowêw+V+TA+Ind+Prs+1Sg+3SgO: nimowâw # SET I
      mowêw+V+TA+Ind+Prs+2Sg+3SgO: kimowâw
@@ -224,28 +224,34 @@ Tests:
      
      
 
-     mowêw+V+TA+Fut+Cond+1Sg+3SgO: mowaki
-     mowêw+V+TA+Fut+Cond+1Sg+3PlO: mowakwâwi
-     mowêw+V+TA+Fut+Cond+1Pl+3SgO: mowâyâhki
-     mowêw+V+TA+Fut+Cond+1Pl+3PlO: mowâyâhkwâwi
-     mowêw+V+TA+Fut+Cond+12Pl+3SgO: mowâyâhki
-     mowêw+V+TA+Fut+Cond+12Pl+3PlO: mowâyâhkwâwi
-
+     mowêw+V+TA+Fut+Cond+1Sg+3SgO: mowaki # 1 and 2-3Sg
      mowêw+V+TA+Fut+Cond+2Sg+3SgO: mowaci
-     mowêw+V+TA+Fut+Cond+2Sg+3PlO: mowatwâwi
+     mowêw+V+TA+Fut+Cond+1Pl+3SgO: mowâyâhki
+     mowêw+V+TA+Fut+Cond+12Pl+3SgO: [mowâyahko, mowâyahki]
      mowêw+V+TA+Fut+Cond+2Pl+3SgO: mowâyêko
+
+     mowêw+V+TA+Fut+Cond+3Sg+4Sg/PlO: mowâci # 3-4, 4-5
+     mowêw+V+TA+Fut+Cond+3Pl+4Sg/PlO: mowâtwâwi
+     mowêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: mowâyici
+     
+     mowêw+V+TA+Fut+Cond+1Sg+3PlO: mowakwâwi # 1 and 2-3Pl
+     mowêw+V+TA+Fut+Cond+2Sg+3PlO: mowatwâwi
+     mowêw+V+TA+Fut+Cond+1Pl+3PlO: mowâyâhkwâwi
+     mowêw+V+TA+Fut+Cond+12Pl+3PlO: mowâyahkwâwi
      mowêw+V+TA+Fut+Cond+2Pl+3PlO: mowâyêkwâwi
 
-     mowêw+V+TA+Fut+Cond+3Sg+4SgO: mowâci
-     mowêw+V+TA+Fut+Cond+3Sg+1SgO: mowici
+     mowêw+V+TA+Fut+Cond+3Sg+1SgO: mowici # 1 and 2-3Sg INVERSE (3Sg-1 and 2)
      mowêw+V+TA+Fut+Cond+3Sg+2SgO: mowiski
      mowêw+V+TA+Fut+Cond+3Sg+1PlO: mowikoyâhki
+     mowêw+V+TA+Fut+Cond+3Sg+12PlO: [mowikoyahko, mowikoyahki]
      mowêw+V+TA+Fut+Cond+3Sg+2PlO: mowikoyêko
-     mowêw+V+TA+Fut+Cond+3Sg+12PlO: mowikoyahko
-
-     mowêw+V+TA+Fut+Cond+4Sg+3SgO: mowikoci
-     mowêw+V+TA+Fut+Cond+4Sg+3PlO: mowâyici
-     mowêw+V+TA+Fut+Cond+4Pl+3SgO: mowikoci
-     mowêw+V+TA+Fut+Cond+4Pl+3PlO: mowâyici
-     mowêw+V+TA+Fut+Cond+4Sg+4PlO: mowikoyici
-     mowêw+V+TA+Fut+Cond+4Pl+4PlO: mowikoyici
+     
+     mowêw+V+TA+Fut+Cond+4Sg/Pl+3SgO: mowikoci # 3-4, 4-5 INVERSE (4-3, 5-4)
+     mowêw+V+TA+Fut+Cond+4Sg/Pl+3PlO: mowikotwâwi 
+     mowêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: mowikoyici
+     
+     mowêw+V+TA+Fut+Cond+3Pl+1SgO: mowitwâwi # 1 and 2-3Pl INVERSE (3Pl-1 and 2)
+     mowêw+V+TA+Fut+Cond+3Pl+2SgO: mowiskwâwi
+     mowêw+V+TA+Fut+Cond+3Pl+1PlO: mowikoyâhkwâwi
+     mowêw+V+TA+Fut+Cond+3Pl+12PlO: mowikoyahkwâwi
+     mowêw+V+TA+Fut+Cond+3Pl+2PlO: mowikoyêkwâwi

@@ -9,7 +9,7 @@ Config:
 
 Tests:
   
-  Verb - wîcihêw - ok : # Wolvengrey VTA1 verb - p 401
+  Verb - wîcihêw - ok : # Wolvengrey VTA1 verb - Wolvengrey p. 401; Fut+Cond from Okimāsis pp. 79, 103
 
      wîcihêw+V+TA+Ind+Prs+1Sg+3SgO: niwîcihâw # SET I
      wîcihêw+V+TA+Ind+Prs+2Sg+3SgO: kiwîcihâw
@@ -224,28 +224,35 @@ Tests:
      
      
 
-     wîcihêw+V+TA+Fut+Cond+1Sg+3SgO: wîcihaki
-     wîcihêw+V+TA+Fut+Cond+1Sg+3PlO: wîcihakwâwi
-     wîcihêw+V+TA+Fut+Cond+1Pl+3SgO: wîcihâyâhki
-     wîcihêw+V+TA+Fut+Cond+1Pl+3PlO: wîcihâyâhkwâwi
-     wîcihêw+V+TA+Fut+Cond+12Pl+3SgO: wîcihâyâhki
-     wîcihêw+V+TA+Fut+Cond+12Pl+3PlO: wîcihâyâhkwâwi
-
+     wîcihêw+V+TA+Fut+Cond+1Sg+3SgO: wîcihaki # 1 and 2-3Sg
      wîcihêw+V+TA+Fut+Cond+2Sg+3SgO: wîcihaci
-     wîcihêw+V+TA+Fut+Cond+2Sg+3PlO: wîcihatwâwi
+     wîcihêw+V+TA+Fut+Cond+1Pl+3SgO: wîcihâyâhki
+     wîcihêw+V+TA+Fut+Cond+12Pl+3SgO: [wîcihâyahko, wîcihâyahki]
      wîcihêw+V+TA+Fut+Cond+2Pl+3SgO: wîcihâyêko
+
+     wîcihêw+V+TA+Fut+Cond+3Sg+4Sg/PlO: wîcihâci # 3-4, 4-5
+     wîcihêw+V+TA+Fut+Cond+3Pl+4Sg/PlO: wîcihâtwâwi
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: wîcihâyici
+     
+     wîcihêw+V+TA+Fut+Cond+1Sg+3PlO: wîcihakwâwi # 1 and 2-3Pl
+     wîcihêw+V+TA+Fut+Cond+2Sg+3PlO: wîcihatwâwi
+     wîcihêw+V+TA+Fut+Cond+1Pl+3PlO: wîcihâyâhkwâwi
+     wîcihêw+V+TA+Fut+Cond+12Pl+3PlO: wîcihâyahkwâwi
      wîcihêw+V+TA+Fut+Cond+2Pl+3PlO: wîcihâyêkwâwi
 
-     wîcihêw+V+TA+Fut+Cond+3Sg+4SgO: wîcihâci
-     wîcihêw+V+TA+Fut+Cond+3Sg+1SgO: wîcihici
+     wîcihêw+V+TA+Fut+Cond+3Sg+1SgO: wîcihici # 1 and 2-3Sg INVERSE (3Sg-1 and 2)
      wîcihêw+V+TA+Fut+Cond+3Sg+2SgO: wîcihiski
      wîcihêw+V+TA+Fut+Cond+3Sg+1PlO: wîcihikoyâhki
+     wîcihêw+V+TA+Fut+Cond+3Sg+12PlO: [wîcihikoyahko, wîcihikoyahki]
      wîcihêw+V+TA+Fut+Cond+3Sg+2PlO: wîcihikoyêko
-     wîcihêw+V+TA+Fut+Cond+3Sg+12PlO: wîcihikoyahko
+     
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+3SgO: wîcihikoci # 3-4, 4-5 INVERSE (4-3, 5-4)
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+3PlO: wîcihikotwâwi 
+     wîcihêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: wîcihikoyici
+     
+     wîcihêw+V+TA+Fut+Cond+3Pl+1SgO: wîcihitwâwi # 1 and 2-3Pl INVERSE (3Pl-1 and 2)
+     wîcihêw+V+TA+Fut+Cond+3Pl+2SgO: wîcihiskwâwi
+     wîcihêw+V+TA+Fut+Cond+3Pl+1PlO: wîcihikoyâhkwâwi
+     wîcihêw+V+TA+Fut+Cond+3Pl+12PlO: wîcihikoyahkwâwi
+     wîcihêw+V+TA+Fut+Cond+3Pl+2PlO: wîcihikoyêkwâwi
 
-     wîcihêw+V+TA+Fut+Cond+4Sg+3SgO: wîcihikoci
-     wîcihêw+V+TA+Fut+Cond+4Sg+3PlO: wîcihâyici
-     wîcihêw+V+TA+Fut+Cond+4Pl+3SgO: wîcihikoci
-     wîcihêw+V+TA+Fut+Cond+4Pl+3PlO: wîcihâyici
-     wîcihêw+V+TA+Fut+Cond+4Sg+4PlO: wîcihikoyici
-     wîcihêw+V+TA+Fut+Cond+4Pl+4PlO: wîcihikoyici

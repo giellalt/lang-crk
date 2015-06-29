@@ -9,7 +9,7 @@ Config:
 
 Tests:
   
-  Verb - miskaw - find him/her : # VTA-Vw verb - full paradigm; Wolvengrey pg. 404
+  Verb - miskaw - find him/her : # VTA-Vw verb - full paradigm; Wolvengrey p. 404; Fut+Cond from Okimāsis pp. 84, 107
   
      miskawêw+V+TA+Ind+Prs+1Sg+3SgO: nimiskawâw # SET I
      miskawêw+V+TA+Ind+Prs+2Sg+3SgO: kimiskawâw
@@ -224,33 +224,34 @@ Tests:
      
      
 
-     miskawêw+V+TA+Fut+Cond+1Sg+3SgO: miskawaki
-     miskawêw+V+TA+Fut+Cond+1Sg+3PlO: miskawakwâwi
-     miskawêw+V+TA+Fut+Cond+1Pl+3SgO: miskawâyâhki
-     miskawêw+V+TA+Fut+Cond+1Pl+3PlO: miskawâyâhkwâwi
-     miskawêw+V+TA+Fut+Cond+12Pl+3SgO: miskawâyâhki
-     miskawêw+V+TA+Fut+Cond+12Pl+3PlO: miskawâyâhkwâwi
-
+     miskawêw+V+TA+Fut+Cond+1Sg+3SgO: miskawaki # 1 and 2-3Sg
      miskawêw+V+TA+Fut+Cond+2Sg+3SgO: miskawaci
-     miskawêw+V+TA+Fut+Cond+2Sg+3PlO: miskawatwâwi
+     miskawêw+V+TA+Fut+Cond+1Pl+3SgO: miskawâyâhki
+     miskawêw+V+TA+Fut+Cond+12Pl+3SgO: [miskawâyahko, miskawâyahki]
      miskawêw+V+TA+Fut+Cond+2Pl+3SgO: miskawâyêko
+
+     miskawêw+V+TA+Fut+Cond+3Sg+4Sg/PlO: miskawâci # 3-4, 4-5
+     miskawêw+V+TA+Fut+Cond+3Pl+4Sg/PlO: miskawâtwâwi
+     miskawêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: miskawâyici
+     
+     miskawêw+V+TA+Fut+Cond+1Sg+3PlO: miskawakwâwi # 1 and 2-3Pl
+     miskawêw+V+TA+Fut+Cond+2Sg+3PlO: miskawatwâwi
+     miskawêw+V+TA+Fut+Cond+1Pl+3PlO: miskawâyâhkwâwi
+     miskawêw+V+TA+Fut+Cond+12Pl+3PlO: miskawâyahkwâwi
      miskawêw+V+TA+Fut+Cond+2Pl+3PlO: miskawâyêkwâwi
 
-     miskawêw+V+TA+Fut+Cond+3Sg+4SgO: miskawâci
-     miskawêw+V+TA+Fut+Cond+3Sg+1SgO: miskâci
+     miskawêw+V+TA+Fut+Cond+3Sg+1SgO: miskawici # 1 and 2-3Sg INVERSE (3Sg-1 and 2)
      miskawêw+V+TA+Fut+Cond+3Sg+2SgO: miskâski
      miskawêw+V+TA+Fut+Cond+3Sg+1PlO: miskâkoyâhki
+     miskawêw+V+TA+Fut+Cond+3Sg+12PlO: [miskâkoyahko, miskâkoyahki]
      miskawêw+V+TA+Fut+Cond+3Sg+2PlO: miskâkoyêko
-     miskawêw+V+TA+Fut+Cond+3Sg+12PlO: miskâkoyahko
-
-     miskawêw+V+TA+Fut+Cond+4Sg+3SgO: miskâkoci
-     miskawêw+V+TA+Fut+Cond+4Sg+3PlO: miskawâyici
-     miskawêw+V+TA+Fut+Cond+4Pl+3SgO: miskâkoci
-     miskawêw+V+TA+Fut+Cond+4Pl+3PlO: miskawâyici
-     miskawêw+V+TA+Fut+Cond+4Sg+4PlO: miskâkoyici
-     miskawêw+V+TA+Fut+Cond+4Pl+4PlO: miskâkoyici
-
-
-
-
-
+     
+     miskawêw+V+TA+Fut+Cond+4Sg/Pl+3SgO: miskâkoci # 3-4, 4-5 INVERSE (4-3, 5-4)
+     miskawêw+V+TA+Fut+Cond+4Sg/Pl+3PlO: miskâkotwâwi 
+     miskawêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: miskâikoyici
+     
+     miskawêw+V+TA+Fut+Cond+3Pl+1SgO: miskawitwâwi # 1 and 2-3Pl INVERSE (3Pl-1 and 2)
+     miskawêw+V+TA+Fut+Cond+3Pl+2SgO: miskâskwâwi
+     miskawêw+V+TA+Fut+Cond+3Pl+1PlO: miskâkoyâhkwâwi
+     miskawêw+V+TA+Fut+Cond+3Pl+12PlO: miskâkoyahkwâwi
+     miskawêw+V+TA+Fut+Cond+3Pl+2PlO: miskâkoyêkwâwi

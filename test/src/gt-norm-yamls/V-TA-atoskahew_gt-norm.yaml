@@ -9,7 +9,7 @@ Config:
 
 Tests:
   
-  Verb - atoskah - help : # Ordinary TA verb - full paradigm
+  Verb - atoskah - help : # Ordinary TA verb - full paradigm; Wolvengrey p. 401; Fut+Cond from Okimāsis pp. 79, 103
   
      atoskahêw+V+TA+Ind+Prs+1Sg+3SgO: nitatoskahâw # SET I
      atoskahêw+V+TA+Ind+Prs+2Sg+3SgO: kitatoskahâw
@@ -224,32 +224,34 @@ Tests:
      
      
 
-     atoskahêw+V+TA+Fut+Cond+1Sg+3SgO: atoskahaki
-     atoskahêw+V+TA+Fut+Cond+1Sg+3PlO: atoskahakwâwi
-     atoskahêw+V+TA+Fut+Cond+1Pl+3SgO: atoskahâyâhki
-     atoskahêw+V+TA+Fut+Cond+1Pl+3PlO: atoskahâyâhkwâwi
-     atoskahêw+V+TA+Fut+Cond+12Pl+3SgO: atoskahâyâhki
-     atoskahêw+V+TA+Fut+Cond+12Pl+3PlO: atoskahâyâhkwâwi
-
+     atoskahêw+V+TA+Fut+Cond+1Sg+3SgO: atoskahaki # 1 and 2-3Sg
      atoskahêw+V+TA+Fut+Cond+2Sg+3SgO: atoskahaci
-     atoskahêw+V+TA+Fut+Cond+2Sg+3PlO: atoskahatwâwi
+     atoskahêw+V+TA+Fut+Cond+1Pl+3SgO: atoskahâyâhki
+     atoskahêw+V+TA+Fut+Cond+12Pl+3SgO: [atoskahâyahko, atoskahâyahki]
      atoskahêw+V+TA+Fut+Cond+2Pl+3SgO: atoskahâyêko
+
+     atoskahêw+V+TA+Fut+Cond+3Sg+4Sg/PlO: atoskahâci # 3-4, 4-5
+     atoskahêw+V+TA+Fut+Cond+3Pl+4Sg/PlO: atoskahâtwâwi
+     atoskahêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: atoskahâyici
+     
+     atoskahêw+V+TA+Fut+Cond+1Sg+3PlO: atoskahakwâwi # 1 and 2-3Pl
+     atoskahêw+V+TA+Fut+Cond+2Sg+3PlO: atoskahatwâwi
+     atoskahêw+V+TA+Fut+Cond+1Pl+3PlO: atoskahâyâhkwâwi
+     atoskahêw+V+TA+Fut+Cond+12Pl+3PlO: atoskahâyahkwâwi
      atoskahêw+V+TA+Fut+Cond+2Pl+3PlO: atoskahâyêkwâwi
 
-     atoskahêw+V+TA+Fut+Cond+3Sg+4SgO: atoskahâci
-     atoskahêw+V+TA+Fut+Cond+3Sg+1SgO: atoskahici
+     atoskahêw+V+TA+Fut+Cond+3Sg+1SgO: atoskahici # 1 and 2-3Sg INVERSE (3Sg-1 and 2)
      atoskahêw+V+TA+Fut+Cond+3Sg+2SgO: atoskahiski
      atoskahêw+V+TA+Fut+Cond+3Sg+1PlO: atoskahikoyâhki
+     atoskahêw+V+TA+Fut+Cond+3Sg+12PlO: [atoskahikoyahko, atoskahikoyahki]
      atoskahêw+V+TA+Fut+Cond+3Sg+2PlO: atoskahikoyêko
-     atoskahêw+V+TA+Fut+Cond+3Sg+12PlO: atoskahikoyahko
-
-     atoskahêw+V+TA+Fut+Cond+4Sg+3SgO: atoskahikoci
-     atoskahêw+V+TA+Fut+Cond+4Sg+3PlO: atoskahâyici
-     atoskahêw+V+TA+Fut+Cond+4Pl+3SgO: atoskahikoci
-     atoskahêw+V+TA+Fut+Cond+4Pl+3PlO: atoskahâyici
-     atoskahêw+V+TA+Fut+Cond+4Sg+4PlO: atoskahikoyici
-     atoskahêw+V+TA+Fut+Cond+4Pl+4PlO: atoskahikoyici
-
-
-
-
+     
+     atoskahêw+V+TA+Fut+Cond+4Sg/Pl+3SgO: atoskahikoci # 3-4, 4-5 INVERSE (4-3, 5-4)
+     atoskahêw+V+TA+Fut+Cond+4Sg/Pl+3PlO: atoskahikotwâwi 
+     atoskahêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: atoskahikoyici
+     
+     atoskahêw+V+TA+Fut+Cond+3Pl+1SgO: atoskahitwâwi # 1 and 2-3Pl INVERSE (3Pl-1 and 2)
+     atoskahêw+V+TA+Fut+Cond+3Pl+2SgO: atoskahiskwâwi
+     atoskahêw+V+TA+Fut+Cond+3Pl+1PlO: atoskahikoyâhkwâwi
+     atoskahêw+V+TA+Fut+Cond+3Pl+12PlO: atoskahikoyahkwâwi
+     atoskahêw+V+TA+Fut+Cond+3Pl+2PlO: atoskahikoyêkwâwi

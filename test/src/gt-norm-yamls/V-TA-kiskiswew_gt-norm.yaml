@@ -9,7 +9,7 @@ Config:
 
 Tests:
   
-  Verb - kîskiswêw - cut him/her through : # VTA-Cw verb - full paradigm
+  Verb - kîskiswêw - cut him/her through : # VTA-Cw verb - Wolvengrey p. 407; Fut+Cond from Okimāsis pp. 87-88, 110
   
     kîskiswêw+V+TA+Ind+Prs+1Sg+3SgO: nikîskiswâw # SET I
      kîskiswêw+V+TA+Ind+Prs+2Sg+3SgO: kikîskiswâw
@@ -199,57 +199,34 @@ Tests:
 
 
 
-     kîskiswêw+V+TA+Imp+Imm+2Sg+3SgO: kîskis
-     kîskiswêw+V+TA+Imp+Imm+12Pl+3SgO: kîskiswâtân
-     kîskiswêw+V+TA+Imp+Imm+2Pl+3SgO: kîskisohk
-     kîskiswêw+V+TA+Imp+Imm+2Sg+3PlO: kîskisok
-     kîskiswêw+V+TA+Imp+Imm+12Pl+3PlO: kîskiswâtânik
-     kîskiswêw+V+TA+Imp+Imm+2Pl+3PlO: kîskisohkok
-
-     kîskiswêw+V+TA+Imp+Del+2Sg+3SgO: kîskiswâhkan
-     kîskiswêw+V+TA+Imp+Del+12Pl+3SgO: kîskiswâhkahk
-     kîskiswêw+V+TA+Imp+Del+2Pl+3SgO: kîskiswâhkêk
-     kîskiswêw+V+TA+Imp+Del+2Sg+3PlO: kîskiswâhkanik
-     kîskiswêw+V+TA+Imp+Del+12Pl+3PlO: kîskiswâhkahkok
-     kîskiswêw+V+TA+Imp+Del+2Pl+3PlO: kîskiswâhkêkok
-
-     kîskiswêw+V+TA+Imp+Imm+2Sg+1SgO: kîskison
-     kîskiswêw+V+TA+Imp+Imm+2Sg+1PlO: kîskisonân
-     kîskiswêw+V+TA+Imp+Imm+2Pl+1SgO: kîskisok
-     kîskiswêw+V+TA+Imp+Del+2Sg+1SgO: kîskisôhkan
-     kîskiswêw+V+TA+Imp+Del+2Sg+1PlO: kîskisôhkâhk
-     kîskiswêw+V+TA+Imp+Del+2Pl+1SgO: kîskisôhkêk
-     
-     
-     
-     
-
-     kîskiswêw+V+TA+Fut+Cond+1Sg+3SgO: kîskiswaki
-     kîskiswêw+V+TA+Fut+Cond+1Sg+3PlO: kîskiswakwâwi
-     kîskiswêw+V+TA+Fut+Cond+1Pl+3SgO: kîskiswâyâhki
-     kîskiswêw+V+TA+Fut+Cond+1Pl+3PlO: kîskiswâyâhkwâwi
-     kîskiswêw+V+TA+Fut+Cond+12Pl+3SgO: kîskiswâyâhki
-     kîskiswêw+V+TA+Fut+Cond+12Pl+3PlO: kîskiswâyâhkwâwi
-
+     kîskiswêw+V+TA+Fut+Cond+1Sg+3SgO: kîskiswaki # 1 and 2-3Sg
      kîskiswêw+V+TA+Fut+Cond+2Sg+3SgO: kîskiswaci
-     kîskiswêw+V+TA+Fut+Cond+2Sg+3PlO: kîskiswatwâwi
+     kîskiswêw+V+TA+Fut+Cond+1Pl+3SgO: kîskiswâyâhki
+     kîskiswêw+V+TA+Fut+Cond+12Pl+3SgO: [kîskiswâyahko, kîskiswâyahki]
      kîskiswêw+V+TA+Fut+Cond+2Pl+3SgO: kîskiswâyêko
+
+     kîskiswêw+V+TA+Fut+Cond+3Sg+4Sg/PlO: kîskiswâci # 3-4, 4-5
+     kîskiswêw+V+TA+Fut+Cond+3Pl+4Sg/PlO: kîskiswâcik
+     kîskiswêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: kîskiswâyici
+     
+     kîskiswêw+V+TA+Fut+Cond+1Sg+3PlO: kîskiswakwâwi # 1 and 2-3Pl
+     kîskiswêw+V+TA+Fut+Cond+2Sg+3PlO: kîskiswatwâwi
+     kîskiswêw+V+TA+Fut+Cond+1Pl+3PlO: kîskiswâyâhkwâwi
+     kîskiswêw+V+TA+Fut+Cond+12Pl+3PlO: kîskiswâyahkwâwi
      kîskiswêw+V+TA+Fut+Cond+2Pl+3PlO: kîskiswâyêkwâwi
 
-     kîskiswêw+V+TA+Fut+Cond+3Sg+4SgO: kîskiswâci
-     kîskiswêw+V+TA+Fut+Cond+3Sg+1SgO: kîskisoci
+     kîskiswêw+V+TA+Fut+Cond+3Sg+1SgO: kîskisoci # 1 and 2-3Sg INVERSE (3Sg-1 and 2)
      kîskiswêw+V+TA+Fut+Cond+3Sg+2SgO: kîskisoski
      kîskiswêw+V+TA+Fut+Cond+3Sg+1PlO: kîskisokoyâhki
+     kîskiswêw+V+TA+Fut+Cond+3Sg+12PlO: [kîskisokoyahko, kîskisokoyahki]
      kîskiswêw+V+TA+Fut+Cond+3Sg+2PlO: kîskisokoyêko
-     kîskiswêw+V+TA+Fut+Cond+3Sg+12PlO: kîskisokoyahko
-
-     kîskiswêw+V+TA+Fut+Cond+4Sg+3SgO: kîskisokoci
-     kîskiswêw+V+TA+Fut+Cond+4Sg+3PlO: kîskiswâyici
-     kîskiswêw+V+TA+Fut+Cond+4Pl+3SgO: kîskisokoci
-     kîskiswêw+V+TA+Fut+Cond+4Pl+3PlO: kîskiswâyici
-     kîskiswêw+V+TA+Fut+Cond+4Sg+4PlO: kîskisokoyici
-     kîskiswêw+V+TA+Fut+Cond+4Pl+4PlO: kîskisokoyici
-
-
-
-
+     
+     kîskiswêw+V+TA+Fut+Cond+4Sg/Pl+3SgO: kîskisokoci # 3-4, 4-5 INVERSE (4-3, 5-4)
+     kîskiswêw+V+TA+Fut+Cond+4Sg/Pl+3PlO: kîskisokotwâwi 
+     kîskiswêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: kîskisoikoyici
+     
+     kîskiswêw+V+TA+Fut+Cond+3Pl+1SgO: kîskiotwâwi # 1 and 2-3Pl INVERSE (3Pl-1 and 2)
+     kîskiswêw+V+TA+Fut+Cond+3Pl+2SgO: kîskisoskwâwi
+     kîskiswêw+V+TA+Fut+Cond+3Pl+1PlO: kîskisokoyâhkwâwi
+     kîskiswêw+V+TA+Fut+Cond+3Pl+12PlO: kîskisokoyahkwâwi
+     kîskiswêw+V+TA+Fut+Cond+3Pl+2PlO: kîskisokoyêkwâwi
