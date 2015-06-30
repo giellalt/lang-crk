@@ -1381,7 +1381,7 @@ LEXICON AI_IND_PRS !!= @CODE@ gives person suffixes
 < 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:n                 > # ; !
 < 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:n                 > # ; !
 <          "+3Sg":0 "@U.perspref.NULL@" 0:w                 > # ; !
-<          "+4Sg":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ; !
+
  AIPL_IND_PRS ;
 
 LEXICON AIPL_IND_PRS !!= @CODE@ gives person suffixes, only plural forms
@@ -1390,7 +1390,9 @@ LEXICON AIPL_IND_PRS !!= @CODE@ gives person suffixes, only plural forms
 < 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
 < 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:n 0:â 0:w 0:â 0:w > # ; !
 <          "+3Pl":0 "@U.perspref.NULL@" 0:w 0:a 0:k         > # ; !
-<          "+4Pl":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ; !
+<          "+4Sg/Pl":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ; !
+<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
+<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
 
 
 
@@ -1398,7 +1400,6 @@ LEXICON AI_IND_PRSn !!= @CODE@ gives person suffixes
 < 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:i 0:n                 > # ; !
 < 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:i 0:n                 > # ; !
 <          "+3Sg":0 "@U.perspref.NULL@"                    > # ; !
-<          "+4Sg":0 "@U.perspref.NULL@" 0:i 0:y 0:i 0:w 0:a     > # ; !
 AI_IND_PRSn-PL ;
 
 LEXICON AI_IND_PRSn-PL !!= @CODE@ gives person suffixes
@@ -1407,7 +1408,10 @@ LEXICON AI_IND_PRSn-PL !!= @CODE@ gives person suffixes
 < 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:i 0:n 0:â 0:n 0:a 0:w         > # ; !
 < 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:i 0:n 0:â 0:w 0:â 0:w > # ; !
 <          "+3Pl":0 "@U.perspref.NULL@"  0:w 0:a 0:k         > # ; !
-<          "+4Pl":0 "@U.perspref.NULL@" 0:i 0:y 0:i 0:w 0:a     > # ; !
+<          "+4Sg/Pl":0 "@U.perspref.NULL@" 0:i 0:y 0:i 0:w 0:a     > # ; !
+<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
+<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
+
 
 
 
@@ -1418,13 +1422,16 @@ LEXICON AI_IND_PRSn-PL !!= @CODE@ gives person suffixes
 !< "+12Pl":0 "@U.verb.indFutInt12pl@" 0:n 0:a 0:w         > # ; ! inclusive Pl
 !<  "+2Pl":0 "@U.verb.indFutInt2pl@"  0:n 0:â 0:w 0:â 0:w > # ;           !
 !<  "+3Pl":0 "@U.verb.indFutInt3pl@"  0:w 0:a 0:k         > # ;   !
-!< "+3oPl":0 "@U.verb.indFutInt3opl@" 0:y 0:i 0:w 0:a     > # ;   !
+!< "+4Sg/Pl":0 "@U.verb.indFutInt3opl@" 0:y 0:i 0:w 0:a     > # ;   !
+<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
+<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
+
+
 
 LEXICON AI_FUT_CON !!= @CODE@ 
   +1Sg:%>yâni  # ; 
   +2Sg:%>yani  # ; 
   +3Sg:%>ci    # ; 
-  +4Sg:%>yici  # ; 
   AI_FUT_CON-PL ;
 
 LEXICON AI_FUT_CON-PL !!= @CODE@ only plural forms.
@@ -1432,7 +1439,9 @@ LEXICON AI_FUT_CON-PL !!= @CODE@ only plural forms.
  +12Pl:%>yahko # ; ! inclusive Pl
   +2Pl:%>yêko  # ; 
   +3Pl:%>twâwi # ; 
-  +4Pl:%>yici  # ; 
+  +4Sg/Pl:%>yici  # ; 
+  +Unspec:%>hki # ; ! FROM Okimāsis p. 118
+
 
 
 LEXICON AI_CNJ !!= @CODE@ Third mode, conjunctive
@@ -1461,7 +1470,6 @@ LEXICON AI_CNJ_SUF !!= @CODE@ singular forms
      +1Sg:%>yân # ;
      +2Sg:%>yan	# ;
      +3Sg:%>t	# ;
-    +4Sg:%>yit # ;
     AIPL_CNJ_SUF ;
 
 LEXICON AIPL_CNJ_SUF !!= @CODE@  plural forms
@@ -1469,15 +1477,14 @@ LEXICON AIPL_CNJ_SUF !!= @CODE@  plural forms
     +12Pl:%>yahk # ;
      +2Pl:%>yêk # ;  ! NOTE: corrected according to dt, earlier we said %>nyêk
      +3Pl:%>cik # ;
-    +4Pl:%>yit # ;
-
+    +4Sg/Pl:%>yit # ;
+    +Unspec:%>hk # ; ! FROM Okimāsis p. 118
 
 
 LEXICON AI_CNJ_SUFn !!= @CODE@
      +1Sg:%>iyân #;
      +2Sg:%>iyan	#;
      +3Sg:%>hk	#;
-    +4Sg:%>iyit #;
  AI_CNJ_SUFn-PL ;
 
 LEXICON AI_CNJ_SUFn-PL !!= @CODE@
@@ -1485,7 +1492,8 @@ LEXICON AI_CNJ_SUFn-PL !!= @CODE@
     +12Pl:%>iyahk #;
      +2Pl:%>iyêk #;  ! NOTE: corrected according to dt, earlier we said %>nyêk
      +3Pl:%>hkik #;
-    +4Pl:%>iyit #;
+    +4Sg/Pl:%>iyit #;
+    +Unspec:%>hk # ; ! FROM Okimāsis p. 118
 
 
 LEXICON AI_IMP  !!= @CODE@ Fourth mode, imperative singular forms
@@ -1944,6 +1952,7 @@ LEXICON VTA_NULL_O
 +4Sg/Pl+3SgO:%>ik	   # ; ! FROM NS 152
 +4Sg/Pl+3PlO:%>ikwak	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>ikoyiwa	   # ; ! FROM NS 152
+
 
 LEXICON VTATS_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 +2Sg+3SgO:%>âw		  # ;
@@ -2418,6 +2427,8 @@ LEXICON TA_CNJVw_SUF-PL !!= @CODE@ gives conj + obj tag and suf, plural forms
 +5Sg/Pl+4Sg/PlO:%>%^WIikoyit	   # ; ! FROM NS 152
 
 
+
+
 LEXICON TA_CNJCw_SUF !!= @CODE@ gives conj + obj tag and suf
 
 +1Sg+3SgO:%>ak		   # ;
@@ -2524,82 +2535,147 @@ LEXICON TA_FUT !!= * @CODE@
 +4Pl+3SgO:%>ikoci	   # ;
 +4Pl+3PlO:%>âyici	   # ;
 
++1Sg+Unspec:%>%ikawiyâni	   # ;
++2Sg+Unspec:%>%ikawiyani	   # ;
++3Sg+Unspec:%>%ihci	   # ;
++1Pl+Unspec:%>%ikawiyâhki	   # ;
++12Pl+Unspec:%>%ikawiyahki	   # ;
++12Pl+Unspec:%>%ikawiyahko	   # ;
++2Pl+Unspec:%>%ikawiyêko	   # ;
++3Pl+Unspec:%>%ihtwâwi	   # ;
++4Sg/Pl+Unspec:%>%imihci	   # ;
+
 
 
 LEXICON TA_FUTVw !!= * @CODE@
 +1Sg+3SgO:%>aki		   # ;
-+1Sg+3PlO:%>akwâwi	   # ;
-
 +2Sg+3SgO:%>aci		   # ;
-+2Sg+3PlO:%>atwâwi	   # ;
-					   
-+3Sg+4SgO:%>âyici	   # ;
-+3Sg+3SgO:%>âci		   # ;
-+3Sg+3PlO:%>%^WIikotwâwi   # ;
-+3Sg+2SgO:%>%^WIiski	   # ;
-+3Sg+2PlO:%>%^WIikoyêko	   # ;
-+3Sg+1SgO:%>%^WIici		   # ;
-+3Sg+1PlO:%>%^WIikoyâhki   # ;
-+3Sg+12PlO:%>%^WIikoyahko  # ;
-					   					   
-+4Sg+4PlO:%>%^WIikoyici  # ;
-+4Sg+3SgO:%>%^WIikoci	   # ;
-+4Sg+3PlO:%>âyici	   # ;
++1Pl+3SgO:%>âyâhki		   # ;
++12Pl+3SgO:%>âyahko		   # ; 
++12Pl+3SgO:%>âyahki		   # ;
++2Pl+3SgO:%>âyêko		   # ;
+
++3Sg+4Sg/PlO:%>âci		   # ;
++3Pl+4Sg/PlO:%>âtwâwi		   # ;
++4Sg/Pl+5Sg/PlO:%>âyici		   # ;
+
++1Sg+3PlO:%>akwâwi		   # ;
++2Sg+3PlO:%>atwâwi		   # ;
++1Pl+3PlO:%>âyâhkwâwi		   # ;
++12Pl+3PlO:%>âyahkwâwi		   # ;
++2Pl+3PlO:%>âyêkwâwi		   # ;
+
++3Sg+1SgO:%>ici		   # ;
++3Sg+2SgO:%>%^WIiski		   # ;
++3Sg+1PlO:%>%^WIikoyâhki		   # ;
++3Sg+12PlO:%>%^WIikoyahko 		   # ;
++3Sg+12PlO:%>%^WIikoyahki		   # ;
++3Sg+2PlO:%>%^WIikoyêko		   # ; 
+
++4Sg/Pl+3SgO:%>%^WIikoci		   # ;
++4Sg/Pl+3PlO:%>%^WIikotwâwi		   # ;
++5Sg/Pl+4Sg/PlO:%>%^WIiikoyici		   # ;
+
++3Pl+1SgO:%>itwâwi		   # ;
++3Pl+2SgO:%>%^WIiskwâwi		   # ;
++3Pl+1PlO:%>%^WIikoyâhkwâwi		   # ;
++3Pl+12PlO:%>%^WIikoyahkwâwi		   # ;
++3Pl+2PlO:%>%^WIikoyêkwâwi		   # ;
+
++1Sg+Unspec:%>%^WIikawiyâni	   # ;
++2Sg+Unspec:%>%^WIikawiyani	   # ;
++3Sg+Unspec:%>%^WIihci	   # ;
++1Pl+Unspec:%>%^WIikawiyâhki	   # ;
++12Pl+Unspec:%>%^WIikawiyahki	   # ;
++12Pl+Unspec:%>%^WIikawiyahko	   # ;
++2Pl+Unspec:%>%^WIikawiyêko	   # ;
++3Pl+Unspec:%>%^WIihtwâwi	   # ;
++4Sg/Pl+Unspec:%>%^WIimihci	   # ;
+
 TA_FUTVw-PL ;
 
 
 LEXICON TA_FUTVw-PL !!= * @CODE@ plural
-+1Pl+3SgO:%>âyâhki	   # ;
-+1Pl+3PlO:%>âyâhkwâwi  # ;
-+12Pl+3SgO:%>âkoyahko	   # ;
-+12Pl+3PlO:%>âkoyahkwâwi # ;
 
-+2Pl+3SgO:%>âyêko	   # ;
-+2Pl+3PlO:%>âyêkwâwi   # ;
-					   					   
-+3Pl+3SgO:%>âtwâwi	   # ;
-+3Pl+3PlO:%>âtwâwi	   # ;
-!+3Pl+3PlO:%>ikotwâwi   # ; ??
-					   
-+4Pl+4PlO:%>%^WIikoyici  # ;
-+4Pl+3SgO:%>%^WIikoci	   # ;
-+4Pl+3PlO:%>âyici	   # ;
++1Pl+3SgO:%>âyâhki		   # ;
++12Pl+3SgO:%>âyahko		   # ; 
++12Pl+3SgO:%>âyahki		   # ;
++2Pl+3SgO:%>âyêko		   # ;
 
++3Pl+4Sg/PlO:%>âtwâwi		   # ;
++4Sg/Pl+5Sg/PlO:%>âyici		   # ;
+
+
++1Pl+3PlO:%>âyâhkwâwi		   # ;
++12Pl+3PlO:%>âyahkwâwi		   # ;
++2Pl+3PlO:%>âyêkwâwi		   # ;
+
++4Sg/Pl+3SgO:%>%^WIikoci		   # ;
++4Sg/Pl+3PlO:%>%^WIikotwâwi		   # ;
++5Sg/Pl+4Sg/PlO:%>%^WIiikoyici		   # ;
+
++3Pl+1SgO:%>itwâwi		   # ;
++3Pl+2SgO:%>%^WIiskwâwi		   # ;
++3Pl+1PlO:%>%^WIikoyâhkwâwi		   # ;
++3Pl+12PlO:%>%^WIikoyahkwâwi		   # ;
++3Pl+2PlO:%>%^WIikoyêkwâwi		   # ;
+
+
++1Pl+Unspec:%>%^WIikawiyâhki	   # ;
++12Pl+Unspec:%>%^WIikawiyahki	   # ;
++12Pl+Unspec:%>%^WIikawiyahko	   # ;
++2Pl+Unspec:%>%^WIikawiyêko	   # ;
++3Pl+Unspec:%>%^WIihtwâwi	   # ;
++4Sg/Pl+Unspec:%>%^WIimihci	   # ;
 
 LEXICON TA_FUTCw !!= * @CODE@
 
-+1Sg+3SgO:%>aki		   # ;
-+1Sg+3PlO:%>akwâwi	   # ;
++1Sg+3SgO:%>aki	   # ;
++2Sg+3SgO:%>aci	   # ;
 +1Pl+3SgO:%>âyâhki	   # ;
-+1Pl+3PlO:%>âyâhkwâwi  # ;
-+12Pl+3SgO:%>âyâhki	   # ;
-+12Pl+3PlO:%>âyâhkwâwi # ;
++12Pl+3SgO:%>âyahko		   # ;
++12Pl+3SgO:%>âyahki	   # ;
++2Pl+3SgO:%>âyêko		   # ; 
 
-+2Sg+3SgO:%>aci		   # ;
++3Sg+4Sg/PlO:%>âci	   # ; 
++3Pl+4Sg/PlO:%>âcik		   # ; 
++4Sg/Pl+5Sg/PlO:%>âyici	   # ;
+ 
++1Sg+3PlO:%>akwâwi	   # ;
 +2Sg+3PlO:%>atwâwi	   # ;
-+2Pl+3SgO:%>âyêko	   # ;
-+2Pl+3PlO:%>âyahkwâwi   # ;
-					   
-+3Sg+4SgO:%>âci	   # ;
-+3Sg+3SgO:%>âci		   # ;
-+3Sg+3PlO:%>%^IOikotwâwi   # ;
-+3Sg+2SgO:%>%^IOiski	   # ;
-+3Sg+2PlO:%>%^IOikoyêko	   # ;
-+3Sg+1SgO:%>%^IOici		   # ;
-+3Sg+1PlO:%>%^IOikoyâhki   # ;
-+3Sg+12PlO:%>%^IOikoyahko  # ;
-					   
-+3Pl+3SgO:%>âtwâwi	   # ;
-+3Pl+3PlO:%>âtwâwi	   # ;
-!+3Pl+3PlO:%>ikotwâwi   # ; ??
-					   
-+4Sg+4PlO:%>%^IOikoyici  # ;
-+4Sg+3SgO:%>%^IOikoci	   # ;
-+4Sg+3PlO:%>%^IOitwâwi	   # ;
-+4Sg+5PlO:%>%^IOikoyici	   # ;
-+4Pl+4PlO:%>%^IOikoyici  # ;
-+4Pl+3SgO:%>%^IOikoci	   # ;
-+4Pl+3PlO:%>%^IOitwâwi	   # ;
++1Pl+3PlO:%>âyâhkwâwi	   # ;
++12Pl+3PlO:%>âyahkwâwi	   # ;
++2Pl+3PlO:%>âyêkwâwi	   # ;
+
++3Sg+1SgO:%>%^IOci	   # ;
++3Sg+2SgO:%>%^IOski	   # ;
++3Sg+1PlO:%>%^IOkoyâhki	   # ;
++3Sg+12PlO:%>%^IOkoyahko		   # ; 
++3Sg+12PlO:%>%^IOkoyahki	   # ;
++3Sg+2PlO:%>%^IOkoyêko		   # ; 
+ 
++4Sg/Pl+3SgO:%>%^IOkoci	   # ; 
++4Sg/Pl+3PlO:%>%^IOkotwâwi	   # ; 
++5Sg/Pl+4Sg/PlO:%>%^IOikoyici	   # ;
+ 
++3Pl+1SgO:%>%^IOitwâwi	   # ;
++3Pl+2SgO:%>%^IOiskwâwi	   # ;
++3Pl+1PlO:%>%^IOikoyâhkwâwi	   # ;
++3Pl+12PlO:%>%^IOikoyahkwâwi	   # ;
++3Pl+2PlO:%>%^IOikoyêkwâwi	   # ;
+
++1Sg+Unspec:%>%^IOikawiyâni	   # ;
++2Sg+Unspec:%>%^IOikawiyani	   # ;
++3Sg+Unspec:%>%^IOihci	   # ;
++1Pl+Unspec:%>%^IOikawiyâhki	   # ;
++12Pl+Unspec:%>%^IOikawiyahki	   # ;
++12Pl+Unspec:%>%^IOikawiyahko	   # ;
++2Pl+Unspec:%>%^IOikawiyêko	   # ;
++3Pl+Unspec:%>%^IOihtwâwi	   # ;
++4Sg/Pl+Unspec:%>%^IOimihci	   # ;
+
+
+
 
 
 
