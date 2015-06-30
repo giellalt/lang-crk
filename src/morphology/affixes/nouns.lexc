@@ -229,7 +229,7 @@ LEXICON ANPOSS-ATIM !!= * @CODE@ is also there to handle the highly irregular at
 !+N+AN:%> ANSUFF_LOC ;
 
 LEXICON ANVOC !!= * @CODE@ 
-+N+AN+Sg: # ;
++N+AN+Sg+Px1Sg: # ;
 
 LEXICON AN_KININFL !!= * @CODE@ 
 +N+AN+Sg: ANSUFF_SG ;
