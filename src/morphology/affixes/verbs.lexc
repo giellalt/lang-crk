@@ -1794,7 +1794,7 @@ LEXICON TACONJ-CONT !!= * @CODE@
 LEXICON TACONJ-CONTTS !!= * @CODE@
 < "+Ind":0 "@U.mood.indep@" > TA_INDTS ; !
 < "+Cnj":0 "@U.mood.cnj@" > TA_CNJTS ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUT ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTTS ; !
 < "+Imp":0 "@U.mood.imp@" > TATS_IMP ; !
 
 LEXICON TACONJ-CONTVw !!= * @CODE@
@@ -2623,6 +2623,58 @@ LEXICON TA_FUT !!= * @CODE@
 +4Sg/Pl+Unspec:%>%imihci	   # ;
 
 
+LEXICON TA_FUTTS !!= * @CODE@
+
++1Sg+3SgO:%>aki		   # ;
++1Sg+3PlO:%>akwâwi	   # ;
++1Pl+3SgO:%>âyâhki	   # ;
++1Pl+3PlO:%>âyâhkwâwi  # ;
++12Pl+3SgO:%>âyâhko	   # ;
++12Pl+3PlO:%>âyâhkwâwi # ;
+
++2Sg+3SgO:%>aci		   # ;
++2Sg+3PlO:%>atwâwi	   # ;
++2Pl+3SgO:%>âyêko	   # ;
++2Pl+3PlO:%>âyêkwâwi   # ;
+					   
++3Sg+4SgO:%>âyici	   # ;
++3Sg+3SgO:%>âci		   # ;
++3Sg+3PlO:%>ikotwâwi   # ;
++3Sg+2SgO:%>iski	   # ;
++3Sg+2PlO:%>ikoyêko	   # ;
++3Sg+1SgO:%>ici		   # ;
++3Sg+1PlO:%>ikoyâhki   # ;
++3Sg+12PlO:%>ikoyahko  # ;
+					   
++3Pl+3SgO:%>âtwâwi	   # ;
++3Pl+3PlO:%>âtwâwi	   # ;
+!+3Pl+3PlO:%>ikotwâwi   # ; ??
+					   
++4Sg+4PlO:%>ikoyici  # ;
++4Sg+3SgO:%>ikoci	   # ;
++4Sg+3PlO:%>âyici	   # ;
++4Pl+4PlO:%>ikoyici  # ;
++4Pl+3SgO:%>ikoci	   # ;
++4Pl+3PlO:%>âyici	   # ;
+
++1Sg+Unspec:%>%ikawiyâni	   # ;
++2Sg+Unspec:%>%ikawiyani	   # ;
++3Sg+Unspec:%>%ihci	   # ;
++1Pl+Unspec:%>%ikawiyâhki	   # ;
++12Pl+Unspec:%>%ikawiyahki	   # ;
++12Pl+Unspec:%>%ikawiyahko	   # ;
++2Pl+Unspec:%>%ikawiyêko	   # ;
++3Pl+Unspec:%>%ihtwâwi	   # ;
++4Sg/Pl+Unspec:%>%imihci	   # ;
+
++2Sg+1SgO:%>%^TSiyani # Local sets (2-1) Okimāsis 114
++2Pl+1SgO:%>%^TSiyêko
++2Sg/Pl+1PlO:%>%^TSiyâhki
+
++1Sg+2SgO:%>itâni # Local sets INV (1-2) Okimāsis 114
++1Sg+2PlO:%>itako
++1Pl+2Sg/PlO:%>itâhki
+
 
 LEXICON TA_FUTVw !!= * @CODE@
 +1Sg+3SgO:%>aki		   # ;
@@ -2669,6 +2721,12 @@ LEXICON TA_FUTVw !!= * @CODE@
 +3Pl+Unspec:%>%^WIihtwâwi	   # ;
 +4Sg/Pl+Unspec:%>%^WIimihci	   # ;
 
++2Sg+1SgO:%>iyani # Local sets (2-1) Okimāsis 117
+
++1Sg+2SgO:%>%^IOitâni # Local sets INV (1-2) Okimāsis 117
++1Sg+2PlO:%>%^IOitako
+
+
 TA_FUTVw-PL ;
 
 
@@ -2704,6 +2762,11 @@ LEXICON TA_FUTVw-PL !!= * @CODE@ plural
 +2Pl+Unspec:%>%^WIikawiyêko	   # ;
 +3Pl+Unspec:%>%^WIihtwâwi	   # ;
 +4Sg/Pl+Unspec:%>%^WIimihci	   # ;
+
++2Pl+1SgO:%>iyêko # Local sets (2-1) Okimāsis 117
++2Sg/Pl+1PlO:%>iyâhki
+
++1Pl+2Sg/PlO:%>%^IOitâhki # Local sets INV (1-2) Okimāsis 117
 
 LEXICON TA_FUTCw !!= * @CODE@
 
@@ -2752,8 +2815,13 @@ LEXICON TA_FUTCw !!= * @CODE@
 +4Sg/Pl+Unspec:%>%^IOimihci	   # ;
 
 
++2Sg+1SgO:%>%^IOiyani # Local sets (2-1) Okimāsis 117
++2Pl+1SgO:%>%^IOiyêko
++2Sg/Pl+1PlO:%>%^IOiyâhki
 
-
++1Sg+2SgO:%>%^IOitâni # Local sets INV (1-2) Okimāsis 117
++1Sg+2PlO:%>%^IOitako
++1Pl+2Sg/PlO:%>%^IOitâhki
 
 
 LEXICON TA_IMP
@@ -2974,7 +3042,6 @@ LEXICON TI_IND_PRS !!= @CODE@ gives person suffixes singular
 <   "+1Sg":0 "@U.perspref.NI@"   0:ê 0:n                 > # ; !
 <   "+2Sg":0 "@U.perspref.KI@"   0:ê 0:n                 > # ; !
 <   "+3Sg":0 "@U.perspref.NULL@" 0:a 0:m                 > # ; !
-<   "+4Sg":0 "@U.perspref.NULL@" 0:a 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
 TI_IND_PRS-PL ;
 
 LEXICON TI_IND_PRS-PL !!= @CODE@ gives person suffixes plural
@@ -2983,66 +3050,61 @@ LEXICON TI_IND_PRS-PL !!= @CODE@ gives person suffixes plural
 <   "+12Pl":0 "@U.perspref.KI@"  0:ê 0:n 0:â 0:n 0:a 0:w         > # ; !
 <   "+2Pl":0 "@U.perspref.KI@"   0:ê 0:n 0:â 0:w 0:â 0:w > # ; !
 <   "+3Pl":0 "@U.perspref.NULL@" 0:a 0:m 0:w 0:a 0:k         > # ; !
-<   "+4Pl":0 "@U.perspref.NULL@" 0:a 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
+<   "+4Sg/Pl":0 "@U.perspref.NULL@" 0:a 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
 
 
 LEXICON TI_INDi_PRS !!= @CODE@ gives person suffixes
 <   "+1Sg":0 "@U.perspref.NI@"    0:n                 > # ; !
 <   "+2Sg":0 "@U.perspref.KI@"    0:n                 > # ; !
 <   "+3Sg":0 "@U.perspref.NULL@"  0:w                 > # ; !
-<   "+4Sg":0 "@U.perspref.NULL@"  0:y 0:i 0:w 0:a     > # ; !
 <   "+1Pl":0 "@U.perspref.NI@"    0:n 0:â 0:n         > # ; !
 <   "+12Pl":0 "@U.perspref.KI@"   0:n 0:a 0:w         > # ; !
 <   "+12Pl":0 "@U.perspref.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
 <   "+2Pl":0 "@U.perspref.KI@"    0:n 0:â 0:w 0:â 0:w > # ; !
 <   "+3Pl":0 "@U.perspref.NULL@"  0:w 0:a 0:k         > # ; !
-<   "+4Pl":0 "@U.perspref.NULL@"  0:y 0:i 0:w 0:a     > # ; !
+<   "+4Sg/Pl":0 "@U.perspref.NULL@"  0:y 0:i 0:w 0:a     > # ; !
 
 LEXICON TI_INDâ_PRS !!= @CODE@ gives person suffixes
 <   "+1Sg":0 "@U.perspref.NI@"   0:â 0:n                 > # ; !
 <   "+2Sg":0 "@U.perspref.KI@"   0:â 0:n                 > # ; !
 <   "+3Sg":0 "@U.perspref.NULL@" 0:â 0:m                 > # ; !
-<   "+4Sg":0 "@U.perspref.NULL@" 0:â 0:i 0:y 0:i 0:w 0:a     > # ; !
 <   "+1Pl":0 "@U.perspref.NI@"   0:â 0:n 0:â 0:n         > # ; !
 <   "+12Pl":0 "@U.perspref.KI@"  0:â 0:n 0:a 0:w         > # ; !
 <   "+12Pl":0 "@U.perspref.KI@"  0:â 0:n 0:â 0:n 0:a 0:w         > # ; !
 <   "+2Pl":0 "@U.perspref.KI@"   0:â 0:n 0:â 0:w 0:â 0:w > # ; !
 <   "+3Pl":0 "@U.perspref.NULL@" 0:â 0:w 0:a 0:k         > # ; !
-<   "+4Pl":0 "@U.perspref.NULL@" 0:â 0:i 0:y 0:i 0:w 0:a     > # ; !
+<   "+4Sg/Pl":0 "@U.perspref.NULL@" 0:â 0:i 0:y 0:i 0:w 0:a     > # ; !
 
 
 LEXICON TI_FUT_CON !!= * @CODE@
   +1Sg:%>mâni  # ; 
   +2Sg:%>mani  # ; 
   +3Sg:%>hki    # ; 
-  +4Sg:%>miyici  # ; 
   +1Pl:%>mâhki # ; ! exclusive Pl
  +12Pl:%>mahki # ; ! inclusive Pl
   +2Pl:%>mêko  # ; 
   +3Pl:%>hkwâwi # ; 
-  +4Pl:%>miyici  # ;
+  +4Sg/Pl:%>miyici  # ;
   
 LEXICON TI_FUTi_CON !!= * @CODE@
   +1Sg:%>yâni  # ; 
   +2Sg:%>yani  # ; 
   +3Sg:%>ci    # ; 
-  +4Sg:%>yici  # ; 
   +1Pl:%>yâhki # ; ! exclusive Pl
  +12Pl:%>yahko # ; ! inclusive Pl
   +2Pl:%>yêko  # ; 
   +3Pl:%>twâwi # ; 
-  +4Pl:%>yici  # ; 
+  +4Sg/Pl:%>yici  # ; 
 
 LEXICON TI_FUTâ_CON !!= * @CODE@
   +1Sg:%>yâni  # ; 
   +2Sg:%>yani  # ; 
   +3Sg:%>ci    # ; 
-  +4Sg:%>yici  # ; 
   +1Pl:%>yâhki # ; ! exclusive Pl
  +12Pl:%>yahko # ; ! inclusive Pl
   +2Pl:%>yêko  # ; 
   +3Pl:%>twâwi # ; 
-  +4Pl:%>yici  # ; 
+  +4Sg/Pl:%>yici  # ; 
 
 LEXICON TI_CNJ !!= @CODE@ Third mode, conjunctive
 < "+Prs":0          "@U.tense.Prs@"    > TI_CNJ_SUF ; ! earlier IA_CNJ_SUF must have been an error
@@ -3063,34 +3125,31 @@ LEXICON TI_CNJ_SUF !!= * @CODE@
      +1Sg:%>amân #;
      +2Sg:%>aman	#;
      +3Sg:%>ahk	#;
-     +4Sg:%>amiyit	#;
      +1Pl:%>amâhk #;
     +12Pl:%>amahk #;
      +2Pl:%>amêk #;  !
      +3Pl:%>ahkik #;
-    +4Pl:%>amiyit #;
+    +4Sg/Pl:%>amiyit #;
 
 LEXICON TI_CNJi_SUF !!= * @CODE@
      +1Sg:%>yân #;
      +2Sg:%>yan	#;
      +3Sg:%>t	#;
-     +4Sg:%>yit	#;
      +1Pl:%>yâhk #;
     +12Pl:%>yahk #;
      +2Pl:%>yêk #;  !
      +3Pl:%>cik #;
-    +4Pl:%>yit #;
+    +4Sg/Pl:%>yit #;
     
 LEXICON TI_CNJâ_SUF !!= * @CODE@
      +1Sg:%>âyân #;
      +2Sg:%>âyan	#;
      +3Sg:%>ât	#;
-     +4Sg:%>âyit	#;
      +1Pl:%>âyâhk #;
     +12Pl:%>âyahk #;
      +2Pl:%>âyek #;  !
      +3Pl:%>âcik #;
-    +4Pl:%>âyit #;
+    +4Sg/Pl:%>âyit #;
 
 
 
