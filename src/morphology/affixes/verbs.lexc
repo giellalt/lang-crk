@@ -1576,28 +1576,28 @@ LEXICON IICONJ-CONTw !!= @CODE@ w final. Splits according to mood
 LEXICON IICONJ-CONTw-SG !!= @CODE@ w final. Splits according to mood
 < "+Ind":0  "@U.mood.indep@" >  II_INDw-SG ; !
 < "+Cnj":0  "@U.mood.cnj@" > II_CNJw-SG ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw-SG ;!
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw_Fut-SG ;!
 
 LEXICON IICONJ-CONTw-PL !!= @CODE@ w final. Splits according to mood
 < "+Ind":0  "@U.mood.indep@" >  II_INDw-PL ; !
 < "+Cnj":0  "@U.mood.cnj@" > II_CNJw-PL ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw-PL ;!
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw_Fut-PL ;!
 
 LEXICON IICONJ-CONT !!= @CODE@ splits according to mood
 < "+Ind":0  "@U.mood.indep@" >  II_IND ; !
 < "+Cnj":0  "@U.mood.cnj@" > II_CNJ ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS-SG ;!
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS-PL ;!
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS_Fut-SG ;!
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS_Fut-PL ;!
 
 LEXICON IICONJ-CONT-SG !!= @CODE@ splits according to mood
 < "+Ind":0  "@U.mood.indep@" >  II_IND-SG ; !
 < "+Cnj":0  "@U.mood.cnj@" > II_CNJ-SG ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS-SG ;!
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS_Fut-SG ;!
 
 LEXICON IICONJ-CONT-PL !!= @CODE@ splits according to mood
 < "+Ind":0  "@U.mood.indep@" >  II_IND-PL ; !
 < "+Cnj":0  "@U.mood.cnj@" > II_CNJ-PL ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS-PL ;!
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS_Fut-PL ;!
 
 LEXICON II_INDw !!= @CODE@ indicative for w final
 < "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERSw-SG ; !
@@ -1685,17 +1685,34 @@ LEXICON II_IND_PERSw-SG   !!= @CODE@ w final
 +3Sg:%>w # ;
 +4Sg:%>yiw # ;
 
+LEXICON II_IND_PERSw_Fut-SG   !!= @CODE@ w final 
++3Sg:%>%^NIIki # ;
++4Sg:%>yiki # ;
+
+
 LEXICON II_IND_PERSw-PL   !!= @CODE@ w final 
 +3Pl:%>wa # ;
 +4Pl:%>yiwa # ;
+
+LEXICON II_IND_PERSw_Fut-PL   !!= @CODE@ w final 
++3Pl:%>%^NIIkwawi # ;
++4Pl:%>yiki # ;
 
 LEXICON II_IND_PERS-SG   !!= @CODE@ -n final 
 +3Sg: # ;
 +4Sg:%>iyiw # ;
 
+LEXICON II_IND_PERS_Fut-SG   !!= @CODE@ -n final 
++3Sg:%>%^NIIki # ;
++4Sg:%>iyiki # ;
+
 LEXICON II_IND_PERS-PL   !!= @CODE@ -n final 
 +3Pl:%>wa # ;
 +4Pl:%>iyiwa # ;
+
+LEXICON II_IND_PERS_Fut-PL   !!= @CODE@ -n final 
++3Pl:%>%^NIIkwawi # ;
++4Pl:%>iyikwâwi # ;
 
 LEXICON II_CNJ_PERSw-SG   !!= @CODE@ w final 
 +3Sg:%>%^NIIk # ;
@@ -1703,7 +1720,7 @@ LEXICON II_CNJ_PERSw-SG   !!= @CODE@ w final
 
 LEXICON II_CNJ_PERSw-PL   !!= @CODE@ w final 
 +3Pl:%>%^NIIki # ;
-+4Pl:%>yiki # ;
++4Pl:%>iyiki # ;
 
 LEXICON II_CNJ_PERS-SG   !!= @CODE@ -n final 
 +3Sg:%>%^NIIk # ;
