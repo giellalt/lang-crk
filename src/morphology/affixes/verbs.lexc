@@ -218,7 +218,7 @@ PV/maski+:mâski VERBSTEMSPRE "crippled; defective, deformed" ;
 PV/mayaci+:mâyâci VERBSTEMSPRE "bad" ; 
 PV/mayi+:mâyi VERBSTEMSPRE "bad, evil; badly, evilly, wickedly" ; 
 PV/mecimwaci+:mêcimwâci VERBSTEMSPRE "permanently, for good" ; 
-PV/mekwa+:mêkwâ VERBSTEMSPRE "currently, presently, right now; while, during, in the meantime, in the act or place" ; 
+PV/mêkwa+:mêkwâ VERBSTEMSPRE "currently, presently, right now; while, during, in the meantime, in the act or place" ; 
 PV/mesci+:mêsci VERBSTEMSPRE "exhaustively, till all is gone" ; 
 PV/mesti+:mêsti VERBSTEMSPRE "it is used up, it is burnt out, it is spent" ; 
 PV/mihko+:mihko VERBSTEMSPRE "red" ; 
@@ -503,7 +503,7 @@ LEXICON VERBSTEMSPRE_REDUPL
 ! < 0:m 0:â 0:y 0:â 0:c 0:i "@U.preverb1.mayaci@" > PVSLOT2PRE "bad" ;
 ! < 0:m 0:â 0:y 0:i "@U.preverb1.mayi@" > PVSLOT2PRE "bad, evil; badly, evilly, wickedly" ;
 ! < 0:m 0:ê 0:c 0:i 0:m 0:w 0:â 0:c 0:i "@U.preverb1.mecimwaci@" > PVSLOT2PRE "permanently, for good" ;
-! < 0:m 0:ê 0:k 0:w 0:â "@U.preverb1.mekwa@" > PVSLOT2PRE "currently, presently, right now; while, during, in the meantime, in the act or place" ;
+! < 0:m 0:ê 0:k 0:w 0:â "@U.preverb1.mêkwa@" > PVSLOT2PRE "currently, presently, right now; while, during, in the meantime, in the act or place" ;
 ! < 0:m 0:ê 0:s 0:c 0:i "@U.preverb1.mesci@" > PVSLOT2PRE "exhaustively, till all is gone" ;
 ! < 0:m 0:ê 0:s 0:t 0:i "@U.preverb1.mesti@" > PVSLOT2PRE "it is used up, it is burnt out, it is spent" ;
 ! < 0:m 0:i 0:h 0:k 0:o "@U.preverb1.mihko@" > PVSLOT2PRE "red" ;
@@ -761,7 +761,7 @@ LEXICON VERBSTEMSPRE_REDUPL
 ! < 0:m 0:â 0:y 0:â 0:c 0:i "@U.preverb2.mayaci@" > VERBSTEMSPRE "bad" ;
 ! < 0:m 0:â 0:y 0:i "@U.preverb2.mayi@" > VERBSTEMSPRE "bad, evil; badly, evilly, wickedly" ;
 ! < 0:m 0:ê 0:c 0:i 0:m 0:w 0:â 0:c 0:i "@U.preverb2.mecimwaci@" > VERBSTEMSPRE "permanently, for good" ;
-! < 0:m 0:ê 0:k 0:w 0:â "@U.preverb2.mekwa@" > VERBSTEMSPRE "currently, presently, right now; while, during, in the meantime, in the act or place" ;
+! < 0:m 0:ê 0:k 0:w 0:â "@U.preverb2.mêkwa@" > VERBSTEMSPRE "currently, presently, right now; while, during, in the meantime, in the act or place" ;
 ! < 0:m 0:ê 0:s 0:c 0:i "@U.preverb2.mesci@" > VERBSTEMSPRE "exhaustively, till all is gone" ;
 ! < 0:m 0:ê 0:s 0:t 0:i "@U.preverb2.mesti@" > VERBSTEMSPRE "it is used up, it is burnt out, it is spent" ;
 ! < 0:m 0:i 0:h 0:k 0:o "@U.preverb2.mihko@" > VERBSTEMSPRE "red" ;
@@ -1145,7 +1145,7 @@ TICONJ ;
 ! < "+PV/mayaci":0 "@U.preverb2.mayaci@" > VERBMAIN ;
 ! < "+PV/mayi":0 "@U.preverb2.mayi@" > VERBMAIN ;
 ! < "+PV/mecimwaci":0 "@U.preverb2.mecimwaci@" > VERBMAIN ;
-! < "+PV/mekwa":0 "@U.preverb2.mekwa@" > VERBMAIN ;
+! < "+PV/mêkwa":0 "@U.preverb2.mêkwa@" > VERBMAIN ;
 ! < "+PV/mesci":0 "@U.preverb2.mesci@" > VERBMAIN ;
 ! < "+PV/mesti":0 "@U.preverb2.mesti@" > VERBMAIN ;
 ! < "+PV/mihko":0 "@U.preverb2.mihko@" > VERBMAIN ;
@@ -2599,85 +2599,73 @@ LEXICON TA_CNJCw_SUF !!= @CODE@ gives conj + obj tag and suf
 
 LEXICON TA_FUT !!= * @CODE@
 
-+1Sg+3SgO:%>ak		   # ;
-+1Sg+3PlO:%>akik	   # ;
-+1Sg+4Sg/PlO:%>imak	   # ; ! From NS 152
++1Sg+3SgO:%>aki		   # ;
++1Sg+3PlO:%>akwâwi	   # ;
 
-+1Pl+3SgO:%>âyâhk	   # ;
-+1Pl+3PlO:%>âyâhkik	   # ;
-+1Pl+4Sg/PlO:%>imâyâhk	   # ; ! From NS 152
++1Pl+3SgO:%>âyâhki	   # ;
++1Pl+3PlO:%>âyâhkwâwi	   # ;
 
-+12Pl+3SgO:%>âyahk	   # ;
-+12Pl+3PlO:%>âyâhkok   # ;
-+12Pl+4Sg/PlO:%>imâyahk   # ; ! From NS 152
++12Pl+3SgO:%>âyahko	   # ;
++12Pl+3SgO:%>âyahki	   # ;
++12Pl+3PlO:%>âyahkwâwi   # ;
 
 
-+2Sg+3SgO:%>at		   # ;
-+2Sg+3PlO:%>acik	   # ;
-+2Sg+4Sg/PlO:%>imat	   # ; ! From NS 152
-+2Pl+3SgO:%>âyêk	   # ;
-+2Pl+3PlO:%>âyêkok	   # ;
-+2Pl+4Sg/PlO:%>imâyek   # ; ! From NS 152
++2Sg+3SgO:%>aci		   # ;
++2Sg+3PlO:%>atwâwi	   # ;
++2Pl+3SgO:%>âyêko	   # ;
++2Pl+3PlO:%>âyêkwâwi	   # ;
 
-+3Sg+4Sg/PlO:%>ât	   # ;
++3Sg+4Sg/PlO:%>âci	   # ;
 !+3Sg+3SgO:%>ât		   # ;
 !+3Sg+3PlO:%>ât		   # ;
-+3Sg+2SgO:%>isk		   # ;
-+3Sg+2PlO:%>ikoyek	   # ;
-+3Sg+1SgO:%>it		   # ;
-+3Sg+1PlO:%>ikoyâhk	   # ;
-+3Sg+12PlO:%>ikoyahk   # ;
-+3Pl+4Sg/PlO:%>âcik      # ; ! From NS 152
++3Sg+2SgO:%>iski		   # ;
++3Sg+2PlO:%>ikoyêko	   # ;
++3Sg+1SgO:%>ici		   # ;
++3Sg+1PlO:%>ikoyâhki	   # ;
++3Sg+12PlO:%>ikoyahko   # ;
++3Sg+12PlO:%>ikoyahki   # ;
++3Pl+4Sg/PlO:%>âtwâwi      # ; ! From NS 152
 !+3Pl+4PlO:%>âcik	   # ;
 !+3Pl+3SgO:%>âcik	   # ;
 !+3Pl+3PlO:%>âcik	   # ;
-+3Pl+2SgO:%>iskik	   # ;
-+3Pl+2PlO:%>ikoyêkok   # ;
-+3Pl+1SgO:%>icik	   # ;
-+3Pl+1PlO:%>ikoyâhkik  # ;
-+3Pl+12PlO:%>ikoyahkok # ;
-+4Sg/PlO+5Sg/PlO:%>âyit      # ; ! From NS 152
++3Pl+2SgO:%>isakwâwi	   # ;
++3Pl+2PlO:%>ikoyêkwâwi   # ;
++3Pl+1SgO:%>itwâwi	   # ;
++3Pl+1PlO:%>ikoyâhkwâwi  # ;
++3Pl+12PlO:%>ikoyahkwâwi # ;
++4Sg/PlO+5Sg/PlO:%>âyici      # ; ! From NS 152
 
-+2Sg+1SgO:%>iyan       # ;
-+2Sg+1PlO:%>iyâhk       # ;
-+2Pl+1PlO:%>iyâhk       # ;
-+2Pl+1SgO:%>iyêk       # ;
++2Sg+1SgO:%>iyani       # ;
++2Sg/Pl+1PlO:%>iyâhki       # ;
++2Pl+1SgO:%>iyêko       # ;
 
 
 !+4Sg+4SgO:%>ikoyit	   # ;
 !+4Sg+4PlO:%>ikoyit   # ;
 !+4Sg+3SgO:%>ikot	   # ;
 !+4Sg+3PlO:%>ikocik	   # ;
-+4Sg/Pl+5Sg/PlO:%>âyit	   # ; ! former 3SgO
 
 !+4Pl+4SgO:%>ikoyit	   # ;
 !+4Pl+4PlO:%>ikocik   # ;
 !!+4Pl+3SgO:%>ikot	   # ;
 !+4Pl+3PlO:%>ikocik	   # ;
 
-+1Sg+2SgO:%>itân         # ;
-+1Pl+2SgO:%>itâhk         # ; 
-+1Pl+2PlO:%>itâhk         # ; 
-+1Sg+2PlO:%>itakok         # ;
-+3Sg+4Sg/PlO:%>ât	   # ;
++1Sg+2SgO:%>itâni         # ;
++1Pl+2Sg/PlO:%>itâhki         # ; 
++1Sg+2PlO:%>itako         # ;
 
-+4Sg/Pl+1SgO:%>iyit	   # ; ! FROM NS 152
-+4Sg/Pl+1PlO:%>ikoyâhk	   # ; ! FROM NS 152
 
-+4Sg/Pl+2SgO:%>isk	   # ; ! FROM NS 152
-+4Sg/Pl+2PlO:%>ikoyêk	   # ; ! FROM NS 152
-+4Sg/Pl+12PlO:%>ikoyahk	   # ; ! FROM NS 152
 
-+4Sg/Pl+3SgO:%>ikot	   # ; ! FROM NS 152
-+4Sg/Pl+3PlO:%>ikocik	   # ; ! FROM NS 152
-+5Sg/Pl+4Sg/PlO:%>ikoyit	   # ; ! FROM NS 152
++4Sg/Pl+3SgO:%>ikoci	   # ; ! FROM NS 152
++4Sg/Pl+3PlO:%>ikotwâwi	   # ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>ikoyici	   # ; ! FROM NS 152
 
 +1Sg+4Sg/PlO:%>imaki	   # ;
 +2Sg+4Sg/PlO:%>imati	   # ;
 +1Pl+4Sg/PlO:%>imâyâhki	   # ;
-+12Pl+4Sg/PlO:%>nâtimâyahko	   # ;
-+12Pl+4Sg/PlO:%>nâtimâyahki	   # ;
-+2Pl+4Sg/PlO:%>imâyeko	   # ;
++12Pl+4Sg/PlO:%>imâyahko	   # ;
++12Pl+4Sg/PlO:%>imâyahki	   # ;
++2Pl+4Sg/PlO:%>imâyêko	   # ;
 
 +4Sg/Pl+1SgO:%>iyiti	   # ;
 +4Sg/Pl+2SgO:%>iyiski	   # ; 
@@ -2701,13 +2689,6 @@ LEXICON TA_FUT !!= * @CODE@
 +3Pl+Unspec:%>%ihtwâwi	   # ;
 +4Sg/Pl+Unspec:%>%imihci	   # ;
 
-+2Sg+1SgO:%>iyani	   # ;
-+2Pl+1SgO:%>iyêko	   # ;
-+2Sg/Pl+1PlO:%>iyâhki	   # ;
-
-+1Sg+2SgO:%>itâni	   # ;
-+1Sg+2PlO:%>itako	   # ;
-+1Pl+2Sg/PlO:%>itâhki	   # ;
 
 
 LEXICON TA_FUTTS !!= * @CODE@
@@ -2749,7 +2730,7 @@ LEXICON TA_FUTTS !!= * @CODE@
 +1Pl+4Sg/PlO:%>imâyâhki	   # ;
 +12Pl+4Sg/PlO:%>nâtimâyahko	   # ;
 +12Pl+4Sg/PlO:%>nâtimâyahki	   # ;
-+2Pl+4Sg/PlO:%>imâyeko	   # ;
++2Pl+4Sg/PlO:%>imâyêko	   # ;
 
 +4Sg/Pl+1SgO:%>iyiti	   # ;
 +4Sg/Pl+2SgO:%>iyiski	   # ; 
@@ -2865,7 +2846,7 @@ LEXICON TA_FUTVw-PL !!= * @CODE@ plural
 +1Pl+4Sg/PlO:%>^WIimâyâhki	   # ;
 +12Pl+4Sg/PlO:%>^WInâtimâyahko	   # ;
 +12Pl+4Sg/PlO:%>^WInâtimâyahki	   # ;
-+2Pl+4Sg/PlO:%>^WIimâyeko	   # ;
++2Pl+4Sg/PlO:%>^WIimâyêko	   # ;
 
 +4Sg/Pl+1SgO:%>^WIiyiti	   # ;
 +4Sg/Pl+2SgO:%>^WIiyiski	   # ; 
@@ -2932,7 +2913,7 @@ LEXICON TA_FUTCw !!= * @CODE@
 +1Pl+4Sg/PlO:%>^IOimâyâhki	   # ;
 +12Pl+4Sg/PlO:%>^IOnâtimâyahko	   # ;
 +12Pl+4Sg/PlO:%>^IOnâtimâyahki	   # ;
-+2Pl+4Sg/PlO:%>^IOimâyeko	   # ;
++2Pl+4Sg/PlO:%>^IOimâyêko	   # ;
 
 +4Sg/Pl+1SgO:%>^IOiyiti	   # ;
 +4Sg/Pl+2SgO:%>^IOiyiski	   # ; 
@@ -3218,20 +3199,22 @@ LEXICON TI_INDâ_PRS !!= @CODE@ gives person suffixes
 
 
 LEXICON TI_FUT_CON !!= * @CODE@
-  +1Sg:%>mâni  # ; 
-  +2Sg:%>mani  # ; 
-  +3Sg:%>hki    # ; 
-  +1Pl:%>mâhki # ; ! exclusive Pl
- +12Pl:%>mahki # ; ! inclusive Pl
-  +2Pl:%>mêko  # ; 
-  +3Pl:%>hkwâwi # ; 
-  +4Sg/Pl:%>miyici  # ;
+  +1Sg:%>amâni  # ; 
+  +2Sg:%>amani  # ; 
+  +3Sg:%>ahki    # ; 
+  +1Pl:%>amâhki # ; ! exclusive Pl
+ +12Pl:%>amahki # ; ! inclusive Pl
+ +12Pl:%>amahko # ; ! inclusive Pl
+  +2Pl:%>amêko  # ; 
+  +3Pl:%>ahkwâwi # ; 
+  +4Sg/Pl:%>amiyici  # ;
   
 LEXICON TI_FUTi_CON !!= * @CODE@
   +1Sg:%>yâni  # ; 
   +2Sg:%>yani  # ; 
   +3Sg:%>ci    # ; 
   +1Pl:%>yâhki # ; ! exclusive Pl
+  +12Pl:%>yahki # ; ! inclusive Pl
  +12Pl:%>yahko # ; ! inclusive Pl
   +2Pl:%>yêko  # ; 
   +3Pl:%>twâwi # ; 
@@ -3242,6 +3225,7 @@ LEXICON TI_FUTâ_CON !!= * @CODE@
   +2Sg:%>yani  # ; 
   +3Sg:%>ci    # ; 
   +1Pl:%>yâhki # ; ! exclusive Pl
+  +12Pl:%>yahki # ; ! inclusive Pl
  +12Pl:%>yahko # ; ! inclusive Pl
   +2Pl:%>yêko  # ; 
   +3Pl:%>twâwi # ; 
