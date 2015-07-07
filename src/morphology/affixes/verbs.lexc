@@ -2284,6 +2284,8 @@ LEXICON TI_IND_PRS !!= @CODE@ gives person suffixes singular
 <   "+2Sg":0 "@U.perspref.KI@"   0:ê 0:n                 > # ; !
 <   "+3Sg":0 "@U.perspref.NULL@" 0:a 0:m                 > # ; !
 TI_IND_PRS-PL ;
+<   "+Unspec+3SgO":0 "@U.perspref.NULL@" 0  0:i 0:k 0:â 0:t 0:ê 0:w > # ; !
+<   "+Unspec+4SgO":0 "@U.perspref.NULL@" 0  0:i 0:k 0:â 0:t 0:ê 0:w 0:a > # ; !
 
 LEXICON TI_IND_PRS-PL !!= @CODE@ gives person suffixes plural
 <   "+1Pl":0 "@U.perspref.NI@"   0:ê 0:n 0:â 0:n         > # ; !
@@ -2292,6 +2294,10 @@ LEXICON TI_IND_PRS-PL !!= @CODE@ gives person suffixes plural
 <   "+2Pl":0 "@U.perspref.KI@"   0:ê 0:n 0:â 0:w 0:â 0:w > # ; !
 <   "+3Pl":0 "@U.perspref.NULL@" 0:a 0:m 0:w 0:a 0:k         > # ; !
 <   "+4Sg/Pl":0 "@U.perspref.NULL@" 0:a 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
+<   "+Unspec+3PlO":0 "@U.perspref.NULL@" 0  0:i 0:k 0:â 0:t 0:e 0:y 0:i 0:k > # ;
+<   "+Unspec+4PlO":0 "@U.perspref.NULL@" 0 0:i 0:k 0:â 0:t 0:e 0:y 0:i 0:k 0:i > # ;
+TI_IND_PRS-PL ;
+
 
 
 LEXICON TI_INDi_PRS !!= @CODE@ gives person suffixes
@@ -2388,6 +2394,8 @@ LEXICON TI_CNJ_SUF !!= * @CODE@
      +2Pl:%>amêk #;  !
      +3Pl:%>ahkik #;
     +4Sg/Pl:%>amiyit #;
+    +Unspec+3Sg0:%>ikâtêk #;
+    +Unspec+4Sg0:%>ikâtêyik #;
 
 LEXICON TI_CNJ_SUF-PL !!= * @CODE@
      +1Pl:%>amâhk #;
@@ -2395,6 +2403,8 @@ LEXICON TI_CNJ_SUF-PL !!= * @CODE@
      +2Pl:%>amêk #;  !
      +3Pl:%>ahkik #;
     +4Sg/Pl:%>amiyit #;
+    +Unspec+3Pl0:%>ikâtêki #;
+    +Unspec+4Pl0:%>ikâtêyiki #;
 
 LEXICON TI_CNJi_SUF !!= * @CODE@
      +1Sg:%>yân #;
