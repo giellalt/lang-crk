@@ -104,7 +104,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +PlO    !!= * @CODE@
 +4Sg/PlO !!= * @CODE@ ambiguous 4th person (both Singular and Plural)
 +5Sg/PlO !!= * @CODE@ ambiguous 5th person (both Singular and Plural)
++UnspecTI1 !!= * @CODE@ Unspecified actor forms Okimāsis, where TI -t stem becomes -c p. 118
 +Unspec !!= * @CODE@ Unspecified actor forms Okimāsis p. 118
+
 
 +Inf    !!= * @CODE@ infinitive (infinite?)
 +Pos    !!= * @CODE@ postitive
@@ -744,6 +746,9 @@ h2 		!!= * @CODE@  Prefix in possessives
 @U.perspref.NULL@ !!= * @CODE@  test
 @U.perspref.NI@ !!= * @CODE@  test
 @U.perspref.KI@ !!= * @CODE@  test
+@U.person.NULL@ !!= * @CODE@  test
+@U.person.NI@ !!= * @CODE@  test
+@U.person.KI@ !!= * @CODE@  test
 
 ! Test:
 @U.mood.imp@

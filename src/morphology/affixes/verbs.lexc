@@ -40,13 +40,13 @@ LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independen
 
 
 LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
-< 0:n 0:i  "@U.perspref.NI@" 0:"t2"                       > IND_TENSE ; !
-< 0:k 0:i  "@U.perspref.KI@" 0:"t2"                       > IND_TENSE ; !
-!< 0:n 0:i "@U.perspref.NI@" 0:"t2" "@P.joiner.NULL@"     > IND_TENSE ; !
-!< 0:n 0:i "@U.perspref.NI@" 0:%-   "@P.joiner.hyphen@"   > IND_TENSE ; !
-!< 0:k 0:i "@U.perspref.KI@" 0:"t2" "@P.joiner.NULL@"     > IND_TENSE ; !
-!< 0:k 0:i "@U.perspref.KI@" 0:"t2" "@P.joiner.NULL@"     > IND_TENSE ; !
-<         "@U.perspref.NULL@" > IND_TENSE ; !
+< 0:n 0:i  "@U.person.NI@" 0:"t2"                       > IND_TENSE ; !
+< 0:k 0:i  "@U.person.KI@" 0:"t2"                       > IND_TENSE ; !
+!< 0:n 0:i "@U.person.NI@" 0:"t2" "@P.joiner.NULL@"     > IND_TENSE ; !
+!< 0:n 0:i "@U.person.NI@" 0:%-   "@P.joiner.hyphen@"   > IND_TENSE ; !
+!< 0:k 0:i "@U.person.KI@" 0:"t2" "@P.joiner.NULL@"     > IND_TENSE ; !
+!< 0:k 0:i "@U.person.KI@" 0:"t2" "@P.joiner.NULL@"     > IND_TENSE ; !
+<         "@U.person.NULL@" > IND_TENSE ; !
 
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
@@ -498,39 +498,39 @@ LEXICON AI_INDn-PL !!= @CODE@ First mode, indicative
 
 
 LEXICON AI_IND_PRS !!= @CODE@ gives person suffixes
-< 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:n                 > # ; !
-< 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:n                 > # ; !
-<          "+3Sg":0 "@U.perspref.NULL@" 0:w                 > # ; !
+< 0:"^EA"  "+1Sg":0 "@U.person.NI@"   0:n                 > # ; !
+< 0:"^EA"  "+2Sg":0 "@U.person.KI@"   0:n                 > # ; !
+<          "+3Sg":0 "@U.person.NULL@" 0:w                 > # ; !
 
  AI_IND_PRS-PL ;
 
 LEXICON AI_IND_PRS-PL !!= @CODE@ gives person suffixes, only plural forms
-< 0:"^EA"  "+1Pl":0 "@U.perspref.NI@"   0:n 0:â 0:n         > # ; !
-< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:a 0:w         > # ; !
-< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
-< 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:n 0:â 0:w 0:â 0:w > # ; !
-<          "+3Pl":0 "@U.perspref.NULL@" 0:w 0:a 0:k         > # ; !
-<          "+4Sg/Pl":0 "@U.perspref.NULL@" 0:y 0:i 0:w 0:a     > # ; !
-<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
-<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
+< 0:"^EA"  "+1Pl":0 "@U.person.NI@"   0:n 0:â 0:n         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.person.KI@"   0:n 0:a 0:w         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.person.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
+< 0:"^EA"  "+2Pl":0 "@U.person.KI@"   0:n 0:â 0:w 0:â 0:w > # ; !
+<          "+3Pl":0 "@U.person.NULL@" 0:w 0:a 0:k         > # ; !
+<          "+4Sg/Pl":0 "@U.person.NULL@" 0:y 0:i 0:w 0:a     > # ; !
+<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
+<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
 
 
 
 LEXICON AI_IND_PRSn !!= @CODE@ gives person suffixes
-< 0:"^EA"  "+1Sg":0 "@U.perspref.NI@"   0:i 0:n                 > # ; !
-< 0:"^EA"  "+2Sg":0 "@U.perspref.KI@"   0:i 0:n                 > # ; !
-<          "+3Sg":0 "@U.perspref.NULL@"                    > # ; !
+< 0:"^EA"  "+1Sg":0 "@U.person.NI@"   0:i 0:n                 > # ; !
+< 0:"^EA"  "+2Sg":0 "@U.person.KI@"   0:i 0:n                 > # ; !
+<          "+3Sg":0 "@U.person.NULL@"                    > # ; !
 AI_IND_PRSn-PL ;
 
 LEXICON AI_IND_PRSn-PL !!= @CODE@ gives person suffixes
-< 0:"^EA"  "+1Pl":0 "@U.perspref.NI@"   0:i 0:n 0:â 0:n         > # ; !
-< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:i 0:n 0:a 0:w         > # ; !
-< 0:"^EA" "+12Pl":0 "@U.perspref.KI@"   0:i 0:n 0:â 0:n 0:a 0:w         > # ; !
-< 0:"^EA"  "+2Pl":0 "@U.perspref.KI@"   0:i 0:n 0:â 0:w 0:â 0:w > # ; !
-<          "+3Pl":0 "@U.perspref.NULL@"  0:w 0:a 0:k         > # ; !
-<          "+4Sg/Pl":0 "@U.perspref.NULL@" 0:i 0:y 0:i 0:w 0:a     > # ; !
-<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
-<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
+< 0:"^EA"  "+1Pl":0 "@U.person.NI@"   0:i 0:n 0:â 0:n         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.person.KI@"   0:i 0:n 0:a 0:w         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.person.KI@"   0:i 0:n 0:â 0:n 0:a 0:w         > # ; !
+< 0:"^EA"  "+2Pl":0 "@U.person.KI@"   0:i 0:n 0:â 0:w 0:â 0:w > # ; !
+<          "+3Pl":0 "@U.person.NULL@"  0:w 0:a 0:k         > # ; !
+<          "+4Sg/Pl":0 "@U.person.NULL@" 0:i 0:y 0:i 0:w 0:a     > # ; !
+<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
+<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
 
 
 
@@ -543,8 +543,8 @@ LEXICON AI_IND_PRSn-PL !!= @CODE@ gives person suffixes
 !<  "+2Pl":0 "@U.verb.indFutInt2pl@"  0:n 0:â 0:w 0:â 0:w > # ;           !
 !<  "+3Pl":0 "@U.verb.indFutInt3pl@"  0:w 0:a 0:k         > # ;   !
 !< "+4Sg/Pl":0 "@U.verb.indFutInt3opl@" 0:y 0:i 0:w 0:a     > # ;   !
-<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
-<          "+Unspec":0 "@U.perspref.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
+<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
+<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
 
 
 
@@ -642,7 +642,7 @@ LEXICON AI_IMPn-PL  !!= @CODE@ Fourth mode, imperative
 
 
 LEXICON AI_IMP_LONG_E !!= @CODE@
-< "+Imp":0 "@U.perspref.NULL@" > imp-long-E ;!
+< "+Imp":0 "@U.person.NULL@" > imp-long-E ;!
 
 LEXICON imp-long-E !!= @CODE@
 +Imm+2Sg:ê   # ;
@@ -659,13 +659,13 @@ LEXICON imp-long-E !!= @CODE@
 
 
 LEXICON IICONJ  !!= @CODE@ adds the flag for no personprefixes
-< "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS ;
+< "+V":0 "+II":0 "@U.person.NULL@" > IICONJFORMS ;
 
 LEXICON IICONJ-SG  !!= @CODE@ adds the flag for no personprefixes, only Sg forms
-< "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS-SG ;
+< "+V":0 "+II":0 "@U.person.NULL@" > IICONJFORMS-SG ;
 
 LEXICON IICONJ-PL  !!= @CODE@ adds the flag for no personprefixes, only Pl forms
-< "+V":0 "+II":0 "@U.perspref.NULL@" > IICONJFORMS-PL ;
+< "+V":0 "+II":0 "@U.person.NULL@" > IICONJFORMS-PL ;
 
 LEXICON IICONJFORMS !!= @CODE@
  IICONJ-CONT ; 
@@ -678,13 +678,13 @@ LEXICON IICONJFORMS-PL !!= @CODE@
 
 
 LEXICON IICONJw  !!= @CODE@  w final
-< "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw ;
+< "+V":0 "+II":0  "@U.person.NULL@" > IICONJ-CONTw ;
 
 LEXICON IICONJw-SG  !!= @CODE@  w final, only Sg forms
-< "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw-SG ;
+< "+V":0 "+II":0  "@U.person.NULL@" > IICONJ-CONTw-SG ;
 
 LEXICON IICONJw-PL  !!= @CODE@  w final, only Pl forms
-< "+V":0 "+II":0  "@U.perspref.NULL@" > IICONJ-CONTw-PL ;
+< "+V":0 "+II":0  "@U.person.NULL@" > IICONJ-CONTw-PL ;
 
 
 LEXICON IICONJ-CONTw !!= @CODE@ w final. Splits according to mood
@@ -988,30 +988,30 @@ LEXICON TA_INDCw !!= @CODE@ gives prs
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_INDCw_PERSPREF ; !Future intentional
 
 LEXICON TA_IND_PERSPREF !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
-@U.perspref.NI@   VTA_NI_O ;  !
-@U.perspref.KI@   VTA_KI_O ;  !
-@U.perspref.NULL@ VTA_NULL_O ;  !
+@U.person.NI@   VTA_NI_O ;  !
+@U.person.KI@   VTA_KI_O ;  !
+@U.person.NULL@ VTA_NULL_O ;  !
 
 LEXICON TA_INDTS_PERSPREF !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
-@U.perspref.NI@   VTA_NI_O ;  !
-@U.perspref.KI@   VTATS_KI_O ;  !
-@U.perspref.NULL@ VTATS_NULL_O ;  !
+@U.person.NI@   VTA_NI_O ;  !
+@U.person.KI@   VTATS_KI_O ;  !
+@U.person.NULL@ VTATS_NULL_O ;  !
 
 LEXICON TA_INDVw_PERSPREF !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
-@U.perspref.NI@   VTAVw_NI_O ;  !
-@U.perspref.KI@   VTAVw_KI_O ;  !
-@U.perspref.NULL@ VTAVw_NULL_O ;  !
+@U.person.NI@   VTAVw_NI_O ;  !
+@U.person.KI@   VTAVw_KI_O ;  !
+@U.person.NULL@ VTAVw_NULL_O ;  !
 
 LEXICON TA_INDVw_PERSPREF-PL !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs. Plural forms
-@U.perspref.NI@   VTAVw_NI_O-PL ;  !
-@U.perspref.KI@   VTAVw_KI_O-PL ;  !
-@U.perspref.NULL@ VTAVw_NULL_O-PL ;  !
+@U.person.NI@   VTAVw_NI_O-PL ;  !
+@U.person.KI@   VTAVw_KI_O-PL ;  !
+@U.person.NULL@ VTAVw_NULL_O-PL ;  !
 
 
 LEXICON TA_INDCw_PERSPREF !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
-@U.perspref.NI@   VTACw_NI_O ;  !
-@U.perspref.KI@   VTACw_KI_O ;  !
-@U.perspref.NULL@ VTACw_NULL_O ;  !
+@U.person.NI@   VTACw_NI_O ;  !
+@U.person.KI@   VTACw_KI_O ;  !
+@U.person.NULL@ VTACw_NULL_O ;  !
 
 
 
@@ -2067,41 +2067,41 @@ LEXICON TA_FUTCw !!= * @CODE@
 
 
 LEXICON TA_IMP
-@U.perspref.NULL@  2Sg_Imp ;
-@U.perspref.NULL@  2Pl_Imp ;
-@U.perspref.NULL@ 12Pl_Imp ;
+@U.person.NULL@  2Sg_Imp ;
+@U.person.NULL@  2Pl_Imp ;
+@U.person.NULL@ 12Pl_Imp ;
 
 !@U.verb.imp2sg@  2Sg_Imp ;
 !@U.verb.imp1pl@  2Pl_Imp ;
 !@U.verb.imp2pl@ 12Pl_Imp ;
 
 LEXICON TATS_IMP
-@U.perspref.NULL@  2SgTS_Imp ;
-@U.perspref.NULL@  2PlTS_Imp ;
-@U.perspref.NULL@ 12PlTS_Imp ;
+@U.person.NULL@  2SgTS_Imp ;
+@U.person.NULL@  2PlTS_Imp ;
+@U.person.NULL@ 12PlTS_Imp ;
 
 !@U.verb.imp2sg@  2SgTS_Imp ;
 !@U.verb.imp1pl@  2PlTS_Imp ;
 !@U.verb.imp2pl@ 12PlTS_Imp ;
 
 LEXICON TA_IMPVw
-@U.perspref.NULL@  2SgVw_Imp ;
-@U.perspref.NULL@  2PlVw_Imp ;
-@U.perspref.NULL@   12Pl_Imp ;
+@U.person.NULL@  2SgVw_Imp ;
+@U.person.NULL@  2PlVw_Imp ;
+@U.person.NULL@   12Pl_Imp ;
 
 !@U.verb.imp2sg@  2SgVw_Imp ;
 !@U.verb.imp1pl@  2PlVw_Imp ;
 !@U.verb.imp2pl@   12Pl_Imp ;
 
 LEXICON TA_IMPVw-PL !!= * @CODE@ plural
-@U.perspref.NULL@  2PlVw_Imp ;
-@U.perspref.NULL@   12Pl_Imp ;
+@U.person.NULL@  2PlVw_Imp ;
+@U.person.NULL@   12Pl_Imp ;
 
 
 LEXICON TA_IMPCw !!= * @CODE@
-@U.perspref.NULL@  2SgCw_Imp ;
-@U.perspref.NULL@  2PlCw_Imp ;
-@U.perspref.NULL@ 12PlCw_Imp ;
+@U.person.NULL@  2SgCw_Imp ;
+@U.person.NULL@  2PlCw_Imp ;
+@U.person.NULL@ 12PlCw_Imp ;
 
 !@U.verb.imp2sg@  2SgCw_Imp ;
 !@U.verb.imp1pl@  2PlCw_Imp ;
@@ -2280,47 +2280,60 @@ LEXICON TI_INDâ !!= @CODE@ First mode, indicative
 
 
 LEXICON TI_IND_PRS !!= @CODE@ gives person suffixes singular
-<   "+1Sg":0 "@U.perspref.NI@"   0:ê 0:n                 > # ; !
-<   "+2Sg":0 "@U.perspref.KI@"   0:ê 0:n                 > # ; !
-<   "+3Sg":0 "@U.perspref.NULL@" 0:a 0:m                 > # ; !
-TI_IND_PRS-PL ;
-<   "+Unspec+3SgO":0 "@U.perspref.NULL@" 0  0:i 0:k 0:â 0:t 0:ê 0:w > # ; !
-<   "+Unspec+4SgO":0 "@U.perspref.NULL@" 0  0:i 0:k 0:â 0:t 0:ê 0:w 0:a > # ; !
+@U.person.NI@+1Sg:@U.person.NI@ên # ;
+
+
+@U.person.KI@+2Sg:@U.person.KI@ên # ;
+
+@U.person.NULL@+3Sg:@U.person.NULL@am # ;
+
+ TI_IND_PRS-PL ;
+
+@U.person.NULL@+Unspec+3SgO:@U.person.NULL@ikâtêw # ;
+@U.person.NULL@+Unspec+4SgO:@U.person.NULL@ikâtêwa # ;
 
 LEXICON TI_IND_PRS-PL !!= @CODE@ gives person suffixes plural
-<   "+1Pl":0 "@U.perspref.NI@"   0:ê 0:n 0:â 0:n         > # ; !
-<   "+12Pl":0 "@U.perspref.KI@"  0:ê 0:n 0:a 0:w         > # ; !
-<   "+12Pl":0 "@U.perspref.KI@"  0:ê 0:n 0:â 0:n 0:a 0:w         > # ; !
-<   "+2Pl":0 "@U.perspref.KI@"   0:ê 0:n 0:â 0:w 0:â 0:w > # ; !
-<   "+3Pl":0 "@U.perspref.NULL@" 0:a 0:m 0:w 0:a 0:k         > # ; !
-<   "+4Sg/Pl":0 "@U.perspref.NULL@" 0:a 0:m 0:i 0:y 0:i 0:w 0:a     > # ; !
-<   "+Unspec+3PlO":0 "@U.perspref.NULL@" 0  0:i 0:k 0:â 0:t 0:e 0:y 0:i 0:k > # ;
-<   "+Unspec+4PlO":0 "@U.perspref.NULL@" 0 0:i 0:k 0:â 0:t 0:e 0:y 0:i 0:k 0:i > # ;
+@U.person.NI@+1Pl:@U.person.NI@ênân # ;
+
+@U.person.KI@+12Pl:@U.person.KI@ênaw # ;
+
+@U.person.KI@+12Pl:@U.person.KI@ênânaw # ;
+
+@U.person.KI@+2Pl:@U.person.KI@ênâwaw # ;
+
+@U.person.NULL@+3Pl:@U.person.NULL@amwak # ;
+
+@U.person.NULL@+4Sg/Pl:@U.person.NULL@amiyiwa # ;
+
+
+@U.person.NULL@+Unspec+3PlO:@U.person.NULL@ikâtêyiw # ;
+@U.person.NULL@+Unspec+4PlO:@U.person.NULL@ikâtêyiwa # ;
+
 TI_IND_PRS-PL ;
 
 
 
 LEXICON TI_INDi_PRS !!= @CODE@ gives person suffixes
-<   "+1Sg":0 "@U.perspref.NI@"    0:n                 > # ; !
-<   "+2Sg":0 "@U.perspref.KI@"    0:n                 > # ; !
-<   "+3Sg":0 "@U.perspref.NULL@"  0:w                 > # ; !
-<   "+1Pl":0 "@U.perspref.NI@"    0:n 0:â 0:n         > # ; !
-<   "+12Pl":0 "@U.perspref.KI@"   0:n 0:a 0:w         > # ; !
-<   "+12Pl":0 "@U.perspref.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
-<   "+2Pl":0 "@U.perspref.KI@"    0:n 0:â 0:w 0:â 0:w > # ; !
-<   "+3Pl":0 "@U.perspref.NULL@"  0:w 0:a 0:k         > # ; !
-<   "+4Sg/Pl":0 "@U.perspref.NULL@"  0:y 0:i 0:w 0:a     > # ; !
+<   "+1Sg":0 "@U.person.NI@"    0:n                 > # ; !
+<   "+2Sg":0 "@U.person.KI@"    0:n                 > # ; !
+<   "+3Sg":0 "@U.person.NULL@"  0:w                 > # ; !
+<   "+1Pl":0 "@U.person.NI@"    0:n 0:â 0:n         > # ; !
+<   "+12Pl":0 "@U.person.KI@"   0:n 0:a 0:w         > # ; !
+<   "+12Pl":0 "@U.person.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
+<   "+2Pl":0 "@U.person.KI@"    0:n 0:â 0:w 0:â 0:w > # ; !
+<   "+3Pl":0 "@U.person.NULL@"  0:w 0:a 0:k         > # ; !
+<   "+4Sg/Pl":0 "@U.person.NULL@"  0:y 0:i 0:w 0:a     > # ; !
 
 LEXICON TI_INDâ_PRS !!= @CODE@ gives person suffixes
-<   "+1Sg":0 "@U.perspref.NI@"   0:â 0:n                 > # ; !
-<   "+2Sg":0 "@U.perspref.KI@"   0:â 0:n                 > # ; !
-<   "+3Sg":0 "@U.perspref.NULL@" 0:â 0:m                 > # ; !
-<   "+1Pl":0 "@U.perspref.NI@"   0:â 0:n 0:â 0:n         > # ; !
-<   "+12Pl":0 "@U.perspref.KI@"  0:â 0:n 0:a 0:w         > # ; !
-<   "+12Pl":0 "@U.perspref.KI@"  0:â 0:n 0:â 0:n 0:a 0:w         > # ; !
-<   "+2Pl":0 "@U.perspref.KI@"   0:â 0:n 0:â 0:w 0:â 0:w > # ; !
-<   "+3Pl":0 "@U.perspref.NULL@" 0:â 0:w 0:a 0:k         > # ; !
-<   "+4Sg/Pl":0 "@U.perspref.NULL@" 0:â 0:i 0:y 0:i 0:w 0:a     > # ; !
+<   "+1Sg":0 "@U.person.NI@"   0:â 0:n                 > # ; !
+<   "+2Sg":0 "@U.person.KI@"   0:â 0:n                 > # ; !
+<   "+3Sg":0 "@U.person.NULL@" 0:â 0:m                 > # ; !
+<   "+1Pl":0 "@U.person.NI@"   0:â 0:n 0:â 0:n         > # ; !
+<   "+12Pl":0 "@U.person.KI@"  0:â 0:n 0:a 0:w         > # ; !
+<   "+12Pl":0 "@U.person.KI@"  0:â 0:n 0:â 0:n 0:a 0:w         > # ; !
+<   "+2Pl":0 "@U.person.KI@"   0:â 0:n 0:â 0:w 0:â 0:w > # ; !
+<   "+3Pl":0 "@U.person.NULL@" 0:â 0:w 0:a 0:k         > # ; !
+<   "+4Sg/Pl":0 "@U.person.NULL@" 0:â 0:i 0:y 0:i 0:w 0:a     > # ; !
 
 
 LEXICON TI_FUT_CON !!= * @CODE@
@@ -2460,7 +2473,7 @@ LEXICON TI_IMPâ !!= * @CODE@
 
 
 LEXICON TI_IMP_LONG_E !!= * @CODE@
-< "+Imp":0 "@U.perspref.NULL@" > TI_imp-long-E ;!
+< "+Imp":0 "@U.person.NULL@" > TI_imp-long-E ;!
 
 LEXICON TI_imp-long-E !!= * @CODE@
 +Imm+2Sg:%>mohkan  # ; !
