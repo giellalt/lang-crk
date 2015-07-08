@@ -62,12 +62,18 @@ LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense
 LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
 @U.mood.FutCon@ PREVERBS ;
 
-LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-
-< 0:ê 0:%-      "PV/e+":0 "@P.joiner.hyphen@"     > CNJ_TENSE ; !
-< 0:ê 0:%^EGLOT "@P.joiner.NULL@"                 > CNJ_TENSE ; !
-! < 0:k 0:â 0:%-  "PV/ka+":0 "@P.joiner.hyphen@"    > CNJ_TENSE ; ! Not implemented yet
-! < 0:k 0:â 0:%^EGLOT  "PV/ka+":0 "@P.joiner.NULL@" > CNJ_TENSE ; ! Not implemented yet
-! < 0:0           "@P.joiner.NULL@"                 > CNJ_TENSE ; ! Option to allow for the occasional omission of the ê- or kâ- prefix
+
+LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâki-
+@P.joiner.hyphen@PV/e+:@P.joiner.hyphen@ê%- CNJ_TENSE ;
+@P.joiner.NULL@PV/e+:@P.joiner.NULL@ê%^EGLOT CNJ_TENSE ;
+
+@P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ%- CNJ_TENSE ;
+@P.joiner.NULL@PV/kaa+:@P.joiner.NULL@kâ%^EGLOT CNJ_TENSE ;
+@P.joiner.hyphen@PV/kaa_ki+:@P.joiner.hyphen@kâ%-ki%- CNJ_TENSE ;
+@P.joiner.NULL@PV/kaa_ki+:@P.joiner.NULL@kâki%^EGLOT CNJ_TENSE ;
+
+CNJ_TENSE ; ! Option to allow for the occasional omission of the ê- or kâ- prefix
+
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
 <                   "@U.tense.Prs@"                        > PREVERBS ; ! Present
@@ -136,10 +142,10 @@ PV/ispi+:ispi VERBSTEMSPRE "then, when" ;
 PV/ispihci+:ispîhci VERBSTEMSPRE "meanwhile, beforehand" ; 
 PV/itahto+:itahto VERBSTEMSPRE "in such number" ; 
 PV/ikate+:îkatê VERBSTEMSPRE "aside, off to one side" ; 
-PV/ka+:ka VERBSTEMSPRE "grammatical preverb: future will, shall; infinitive; optative ought, should" ; 
+! PV/ka+:ka VERBSTEMSPRE "grammatical preverb: future will, shall; infinitive; optative ought, should" ; 
 ! PV/ka_ki+:ka-kî VERBSTEMSPRE "can, be able to; may; should, ought to" ; 
-< 0:k 0:a 0:%- 0:k 0:î "PV/ka_ki+":0 "@U.joiner.hyphen@" > VERBSTEMSPRE ;
-< 0:k 0:a 0:k 0:î "PV/ka_ki+":0 "@U.joiner.NULL@" > VERBSTEMSPRE ;
+@U.joiner.hyphen@PV/ka_ki+:@U.joiner.hyphen@ka%-kî VERBSTEMSPRE ;
+@U.joiner.NULL@PV/ka_ki+:@U.joiner.NULL@kakî VERBSTEMSPRE ;
 PV/kakepaci+:kakêpâci VERBSTEMSPRE "stupidly" ; 
 PV/kakwahyaki+:kakwâhyaki VERBSTEMSPRE "greatly, extremely, overwhelmingly; with startled surprise" ; 
 PV/kakwayaki+:kakwâyaki VERBSTEMSPRE "greatly, extremely" ; 
@@ -150,7 +156,7 @@ PV/kape+:kapê VERBSTEMSPRE "for the full duration of; always" ;
 PV/kaski+:kaski VERBSTEMSPRE "dense" ; 
 PV/kaskitewi+:kaskitêwi VERBSTEMSPRE "black" ; 
 PV/kayasi+:kayâsi VERBSTEMSPRE "old" ; 
-PV/kaa+:kâ VERBSTEMSPRE "[grammatical preverb; defines a changed conjunct clause; often a relative clause, i.e. who, which]" ; 
+! PV/kaa+:kaâ VERBSTEMSPRE "[grammatical preverb; defines a changed conjunct clause; often a relative clause, i.e. who, which]" ; 
 PV/kah+:kâh VERBSTEMSPRE "would, ought to; likely to" ; 
 ! PV/kah-kape+:kâh-kapê VERBSTEMSPRE "all the time" ; 
 < 0:k 0:â 0:h 0:%- 0:k 0:a 0:p 0:ê "PV/kah_kape+":0 "@U.joiner.hyphen@" > VERBSTEMSPRE ;
