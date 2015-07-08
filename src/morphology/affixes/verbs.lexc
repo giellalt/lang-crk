@@ -2281,28 +2281,21 @@ LEXICON TI_INDâ !!= @CODE@ First mode, indicative
 
 LEXICON TI_IND_PRS !!= @CODE@ gives person suffixes singular
 @U.person.NI@+1Sg:@U.person.NI@ên # ;
-
-
 @U.person.KI@+2Sg:@U.person.KI@ên # ;
-
 @U.person.NULL@+3Sg:@U.person.NULL@am # ;
-
- TI_IND_PRS-PL ;
 
 @U.person.NULL@+Unspec+3SgO:@U.person.NULL@ikâtêw # ;
 @U.person.NULL@+Unspec+4SgO:@U.person.NULL@ikâtêwa # ;
 
+TI_IND_PRS-PL ;
+
+
 LEXICON TI_IND_PRS-PL !!= @CODE@ gives person suffixes plural
 @U.person.NI@+1Pl:@U.person.NI@ênân # ;
-
 @U.person.KI@+12Pl:@U.person.KI@ênaw # ;
-
 @U.person.KI@+12Pl:@U.person.KI@ênânaw # ;
-
 @U.person.KI@+2Pl:@U.person.KI@ênâwaw # ;
-
 @U.person.NULL@+3Pl:@U.person.NULL@amwak # ;
-
 @U.person.NULL@+4Sg/Pl:@U.person.NULL@amiyiwa # ;
 
 
@@ -2314,27 +2307,28 @@ TI_IND_PRS-PL ;
 
 
 LEXICON TI_INDi_PRS !!= @CODE@ gives person suffixes
-<   "+1Sg":0 "@U.person.NI@"    0:n                 > # ; !
-<   "+2Sg":0 "@U.person.KI@"    0:n                 > # ; !
-<   "+3Sg":0 "@U.person.NULL@"  0:w                 > # ; !
-<   "+1Pl":0 "@U.person.NI@"    0:n 0:â 0:n         > # ; !
-<   "+12Pl":0 "@U.person.KI@"   0:n 0:a 0:w         > # ; !
-<   "+12Pl":0 "@U.person.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
-<   "+2Pl":0 "@U.person.KI@"    0:n 0:â 0:w 0:â 0:w > # ; !
-<   "+3Pl":0 "@U.person.NULL@"  0:w 0:a 0:k         > # ; !
-<   "+4Sg/Pl":0 "@U.person.NULL@"  0:y 0:i 0:w 0:a     > # ; !
+@U.person.NI@+1Sg:@U.person.NI@n # ;
+@U.person.KI@+2Sg:@U.person.KI@n # ;
+@U.person.NULL@+3Sg:@U.person.NULL@w # ;
+
+@U.person.NI@+1Pl:@U.person.NI@nân # ;
+@U.person.KI@+12Pl:@U.person.KI@naw # ;
+@U.person.KI@+12Pl:@U.person.KI@nânaw # ;
+@U.person.KI@+2Pl:@U.person.KI@ênâwaw # ;
+@U.person.NULL@+3Pl:@U.person.NULL@wak # ;
+@U.person.NULL@+4Sg/Pl:@U.person.NULL@yiwa # ;
 
 LEXICON TI_INDâ_PRS !!= @CODE@ gives person suffixes
-<   "+1Sg":0 "@U.person.NI@"   0:â 0:n                 > # ; !
-<   "+2Sg":0 "@U.person.KI@"   0:â 0:n                 > # ; !
-<   "+3Sg":0 "@U.person.NULL@" 0:â 0:m                 > # ; !
-<   "+1Pl":0 "@U.person.NI@"   0:â 0:n 0:â 0:n         > # ; !
-<   "+12Pl":0 "@U.person.KI@"  0:â 0:n 0:a 0:w         > # ; !
-<   "+12Pl":0 "@U.person.KI@"  0:â 0:n 0:â 0:n 0:a 0:w         > # ; !
-<   "+2Pl":0 "@U.person.KI@"   0:â 0:n 0:â 0:w 0:â 0:w > # ; !
-<   "+3Pl":0 "@U.person.NULL@" 0:â 0:w 0:a 0:k         > # ; !
-<   "+4Sg/Pl":0 "@U.person.NULL@" 0:â 0:i 0:y 0:i 0:w 0:a     > # ; !
+@U.person.NI@+1Sg:@U.person.NI@ân # ;
+@U.person.KI@+2Sg:@U.person.KI@ân # ;
+@U.person.NULL@+3Sg:@U.person.NULL@w # ;
 
+@U.person.NI@+1Pl:@U.person.NI@ânân # ;
+@U.person.KI@+12Pl:@U.person.KI@ânaw # ;
+@U.person.KI@+12Pl:@U.person.KI@ânânaw # ;
+@U.person.KI@+2Pl:@U.person.KI@ânâwaw # ;
+@U.person.NULL@+3Pl:@U.person.NULL@awak # ;
+@U.person.NULL@+4Sg/Pl:@U.person.NULL@ayiwa # ;
 
 LEXICON TI_FUT_CON !!= * @CODE@
   +1Sg:%>amâni  # ; 
