@@ -859,40 +859,6 @@ LEXICON II_CNJ_PERS-PL   !!= @CODE@ -n final
 
 
 
-! LEXICON II_IND_PERSv-SG   !@CODE@ v final 
-! +3Sg:%>w # ;
-! +4Sg:%>yiw # ;
-! 
-! LEXICON II_IND_PERSv-PL   !@CODE@ v final 
-! +3Pl:%>wa # ;
-! +4Pl:%>yiwa # ;
-! 
-! LEXICON II_CNJ_PERSv-SG   !@CODE@ v final 
-! +3Sg:%>%^NIIk # ;
-! +4Sg:%>yik # ;
-! 
-! LEXICON II_CNJ_PERSv-PL   !@CODE@ v final 
-! +3Pl:%>%^NIIki # ;
-! +4Pl:%>yiki # ;
-! 
-! LEXICON II_IND_PERSan-SG   !@CODE@ -an final 
-! +3Sg: # ;
-! +4Sg:%>iyiw # ;
-! 
-! LEXICON II_IND_PERSan-PL   !@CODE@ -an final 
-! +3Pl:%>wa # ;
-! +4Pl:%>iyiwa # ;
-! 
-! LEXICON II_CNJ_PERSan-SG   !@CODE@ -an final 
-! +3Sg:%>%^NIIk # ;
-! +4Sg:%>iyik # ;
-! 
-! LEXICON II_CNJ_PERSan-PL   !@CODE@ -an final 
-! +3Pl:%>%^NIIki # ;
-! +4Pl:%>iyiki # ;
-
-
-
 
 !LEXICON II_IND_PERS 
 !    :%>k # ;  Both these entries now give wrong forms (ê-misponk pro ê-mispok etc.)
@@ -2293,6 +2259,8 @@ LEXICON TI_IND_PRS !!= @CODE@ gives person suffixes singular
 @U.person.NULL@+Unspec+3SgO:@U.person.NULL@ikâtêw # ;
 @U.person.NULL@+Unspec+4SgO:@U.person.NULL@ikâtêwa # ;
 
+
+
 TI_IND_PRS-PL ;
 
 
@@ -2308,8 +2276,6 @@ LEXICON TI_IND_PRS-PL !!= @CODE@ gives person suffixes plural
 @U.person.NULL@+Unspec+3PlO:@U.person.NULL@ikâtêyiw # ;
 @U.person.NULL@+Unspec+4PlO:@U.person.NULL@ikâtêyiwa # ;
 
-TI_IND_PRS-PL ;
-
 
 
 LEXICON TI_INDi_PRS !!= @CODE@ gives person suffixes
@@ -2324,6 +2290,9 @@ LEXICON TI_INDi_PRS !!= @CODE@ gives person suffixes
 @U.person.NULL@+3Pl:@U.person.NULL@wak # ;
 @U.person.NULL@+4Sg/Pl:@U.person.NULL@yiwa # ;
 
+@U.person.NULL@+Unspec:@U.person.NULL@nâniwiw # ;
+@U.person.NULL@+Unspec:@U.person.NULL@nâniwan # ;
+
 LEXICON TI_INDâ_PRS !!= @CODE@ gives person suffixes
 @U.person.NI@+1Sg:@U.person.NI@ân # ;
 @U.person.KI@+2Sg:@U.person.KI@ân # ;
@@ -2335,6 +2304,16 @@ LEXICON TI_INDâ_PRS !!= @CODE@ gives person suffixes
 @U.person.KI@+2Pl:@U.person.KI@ânâwaw # ;
 @U.person.NULL@+3Pl:@U.person.NULL@awak # ;
 @U.person.NULL@+4Sg/Pl:@U.person.NULL@ayiwa # ;
+
+@U.person.NULL@+Unspec+3SgO:@U.person.NULL@ikâtêw # ;
+@U.person.NULL@+Unspec+4SgO:@U.person.NULL@ikâtêwa # ;
+@U.person.NULL@+Unspec+3PlO:@U.person.NULL@ikâtêyiw # ;
+@U.person.NULL@+Unspec+4PlO:@U.person.NULL@ikâtêyiwa # ;
+
+@U.person.NULL@+Unspec+3SgO:@U.person.NULL@nâniwiw # ;
+@U.person.NULL@+Unspec+4SgO:@U.person.NULL@nâniwan # ;
+@U.person.NULL@+Unspec+3PlO:@U.person.NULL@nâniwiw # ;
+@U.person.NULL@+Unspec+4PlO:@U.person.NULL@nâniwan # ;
 
 LEXICON TI_FUT_CON !!= * @CODE@
   +1Sg:%>amâni  # ; 
@@ -2357,6 +2336,9 @@ LEXICON TI_FUTi_CON !!= * @CODE@
   +2Pl:%>yêko  # ; 
   +3Pl:%>twâwi # ; 
   +4Sg/Pl:%>yici  # ; 
+  
+  +Unspec:%>hki  # ; 
+
 
 LEXICON TI_FUTâ_CON !!= * @CODE@
   +1Sg:%>yâni  # ; 
@@ -2367,8 +2349,15 @@ LEXICON TI_FUTâ_CON !!= * @CODE@
  +12Pl:%>yahko # ; ! inclusive Pl
   +2Pl:%>yêko  # ; 
   +3Pl:%>twâwi # ; 
-  +4Sg/Pl:%>yici  # ; 
+  +4Sg/Pl:%>yici  # ;
+  
+  +Unspec+3Sg:%>%^NIIki # ;
+  +Unspec+4Sg:%>iyiki # ;
+  +Unspec+3Pl:%>%^NIIkwawi # ;
+  +Unspec+4Pl:%>iyikwâwi # ;
 
+  +Unspec:%>hki  # ; 
+  
 LEXICON TI_FUT_CON-PL !!= * @CODE@
   +1Pl:%>amâhki # ; ! exclusive Pl
  +12Pl:%>amahki # ; ! inclusive Pl
@@ -2407,17 +2396,18 @@ LEXICON TI_CNJ_SUF !!= * @CODE@
      +2Pl:%>amêk #;  !
      +3Pl:%>ahkik #;
     +4Sg/Pl:%>amiyit #;
-    +Unspec+3Sg0:%>ikâtêk #;
-    +Unspec+4Sg0:%>ikâtêyik #;
-
+    +Unspec+4Sg/PlO:%>ikâtêk #;
+    +Unspec+4Sg/PlO:%>ikâtêyik #;
+    +Unspec:%>amihk #;
+    
 LEXICON TI_CNJ_SUF-PL !!= * @CODE@
      +1Pl:%>amâhk #;
     +12Pl:%>amahk #;
      +2Pl:%>amêk #;  !
      +3Pl:%>ahkik #;
     +4Sg/Pl:%>amiyit #;
-    +Unspec+3Pl0:%>ikâtêki #;
-    +Unspec+4Pl0:%>ikâtêyiki #;
+    +Unspec+3Sg:%>ikâtêk #;
+    +Unspec+4Sg:%>ikâtêyik #;
 
 LEXICON TI_CNJi_SUF !!= * @CODE@
      +1Sg:%>yân #;
@@ -2428,6 +2418,7 @@ LEXICON TI_CNJi_SUF !!= * @CODE@
      +2Pl:%>yêk #;  !
      +3Pl:%>cik #;
     +4Sg/Pl:%>yit #;
+    +Unspec+4Sg:%>hk #;
     
 LEXICON TI_CNJâ_SUF !!= * @CODE@
      +1Sg:%>âyân #;
@@ -2438,6 +2429,14 @@ LEXICON TI_CNJâ_SUF !!= * @CODE@
      +2Pl:%>âyek #;  !
      +3Pl:%>âcik #;
     +4Sg/Pl:%>âyit #;
+    +Unspec+3Sg:%>ikâtêk #;
+    +Unspec+4Sg:%>ikâtêyik #;
+    +Unspec+3PlO:%>amihki #;
+    +Unspec+4PlO:%>amihyiki #;
+    
+    +Unspec+4Sg:%>hk #;
+
+    
 
 LEXICON TI_IMP !!= * @CODE@
 < "+Imp":%> "@U.mood.imp@"  "+Imm":0 "+2Sg":0 0:a > # ; !
