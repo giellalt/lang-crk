@@ -72,15 +72,15 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâ
 @P.joiner.hyphen@PV/kaa_ki+:@P.joiner.hyphen@kâ%-ki%- CNJ_TENSE ;
 @P.joiner.NULL@PV/kaa_ki+:@P.joiner.NULL@kâki%^EGLOT CNJ_TENSE ;
 
-CNJ_TENSE ; ! Option to allow for the occasional omission of the ê- or kâ- prefix
+@P.cnj.CC@ CNJ_TENSE ; ! Option to allow for the occasional omission of the ê- or kâ- prefix
 
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
 <                   "@U.tense.Prs@"                        > PREVERBS ; ! Present
-< 0:k 0:î 0:%-      "@U.tense.Prt@" "@U.joiner.hyphen@"    > PREVERBS ; ! Preterite, 
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@" "@U.joiner.NULL@"      > PREVERBS ; ! Preterite,
-< 0:w 0:î 0:%-      "@U.tense.FutInt@" "@U.joiner.hyphen@" > PREVERBS ; ! Future Intentional
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@U.joiner.NULL@"   > PREVERBS ; ! Future Intentional
+< 0:k 0:î 0:%-      "@U.tense.Prt@" "@U.joiner.hyphen@" "@C.cnj@"    > PREVERBS ; ! Preterite, 
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@" "@U.joiner.NULL@" "@C.cnj@"      > PREVERBS ; ! Preterite,
+< 0:w 0:î 0:%-      "@U.tense.FutInt@" "@U.joiner.hyphen@" "@C.cnj@" > PREVERBS ; ! Future Intentional
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@U.joiner.NULL@" "@C.cnj@"   > PREVERBS ; ! Future Intentional
 
 
 LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
@@ -364,12 +364,12 @@ PV/yipe+:yîpê VERBSTEMSPRE "on a slant, on a slope, on the side, sideways" ;
 PV/yoski+:yôski VERBSTEMSPRE "soft, softly" ; 
 
 LEXICON VERBSTEMSPRE
-<      "@U.joiner.NULL@"   > PREVERBS ;
-< 0:%- "@U.joiner.hyphen@" > PREVERBS ;
-<      "@U.joiner.NULL@"   > REDUPL ;
-< 0:%- "@U.joiner.hyphen@" > REDUPL ;
-<      "@U.joiner.NULL@"   > VERBSTEMS ;
-< 0:%- "@U.joiner.hyphen@" > VERBSTEMS ;
+<      "@U.joiner.NULL@" "@C.cnj@"   > PREVERBS ;
+< 0:%- "@U.joiner.hyphen@" "@C.cnj@" > PREVERBS ;
+<      "@U.joiner.NULL@" "@C.cnj@"   > REDUPL ;
+< 0:%- "@U.joiner.hyphen@" "@C.cnj@" > REDUPL ;
+<      "@U.joiner.NULL@" "@C.cnj@"   > VERBSTEMS ;
+< 0:%- "@U.joiner.hyphen@" "@C.cnj@" > VERBSTEMS ;
 !0:%- PREVERBS ;
 !PREVERBS ;
 !0:%- VERBSTEMS ;
@@ -382,8 +382,8 @@ LEXICON REDUPL
 < "RdplW+":0 0:%^DUPL2 0:a 0:"y3" "@U.joiner.hyphen@" 0:%- "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
 
 LEXICON VERBSTEMSPRE_REDUPL
-< 0:0  0:%< "@U.joiner.NULL@"   > VERBSTEMS ;
-< 0:%- 0:%< "@U.joiner.hyphen@" > VERBSTEMS ;
+< 0:0  0:%< "@U.joiner.NULL@" "@C.cnj@"   > VERBSTEMS ;
+< 0:%- 0:%< "@U.joiner.hyphen@" "@C.cnj@" > VERBSTEMS ;
 
 !! Now, lexc directs us to the ../stems/verbs.lexc file,
 !! where we find all the verbal stems. The suffixes are then
