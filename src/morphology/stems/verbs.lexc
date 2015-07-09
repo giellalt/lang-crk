@@ -37,6 +37,11 @@
 !     ==========
 
 LEXICON VERBSTEMS !!= @CODE@ here come all the verbstems \\
+VERBSTEMS-REGULAR ;
+@R.cnj.CC@ VERBSTEMS-CHANGED-CONJUNCT ;
+
+LEXICON VERBSTEMS-REGULAR
+
 !nipâw:nipâ AICONJw "sleep" ; !!= @CODE@ GG
 !mâto AICONJ "cry" ; !!= @CODE@ GG
 !mîciso AICONJ "eat" ; !!= @CODE@ Variation in length of first vowel, here following Okimâsis. !GG
@@ -10588,3 +10593,6 @@ yôskipotâw:yôskipotâ TICONJâ "s/he softens s.t. by scraping (e.g. hide)" ; 
 yôwahtam:yôwaht TICONJ "s/he draws at s.t. by suction" ; ! VTI-1 Independent, 3s-0’
 
 ! Wolvengrey Dump for VTI verbs END
+
+LEXICON VERBSTEMS-CHANGED-CONJUNCT
+nipâw:nêpâ AICONJw "s/he sleeps, s/he is asleep" ;
