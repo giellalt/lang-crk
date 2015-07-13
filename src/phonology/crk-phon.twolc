@@ -9,6 +9,7 @@ Alphabet
 
  t2:0      !!= * @CODE@ t between prefix and vowel-initial stem
  t3:t      !!= * @CODE@ t to s in VTA-4
+ t4:c      !!= * @CODE@ t to c in VTI-1
  w2:w      !!= * @CODE@ for keeping the final -w in mow
  y2:0      !!= * @CODE@ epenthetic joiner in reduplication of vowe-initial stems
  y3:0      !!= * @CODE@ epenthetic joiner in reduplication of vowe-initial stems
@@ -30,7 +31,8 @@ Alphabet
  %^NII:0   !!= * @CODE@  n to h or 0 in VII verbs when before k-init suf
  %^WI:0     !!= * @CODE@  w to 0 in vta-2 verbs when before k-init suf
  %^IO:0   !!= * @CODE@  VTACw w + i become o
- %^VS:0   !!= * @CODE@  Ruling out verbs from the w/i deletions in conjunction with possessives. 
+ %^VS:0   !!= * @CODE@  Ruling out verbs from the w/i deletions in conjunction with possessives.
+  
  ;
 
 Sets
@@ -239,3 +241,7 @@ y2:y <=> %^DUPL1:0 a _ ( %-: ) %<:0 Vow2: ;
 "Inserting epenthetic y in strong+weak reduplication of vowel-initial stem"
 !! __@RULENAME@__
 y3:y <=> %^DUPL2:0   a _ ( %-: ) %^DUPL1:0 ;
+
+"Unspecified Actor t:c in VTAVw"
+!! __@RULENAME@__
+t4:c <= _ %>:0 i: k: â: :+ ;
