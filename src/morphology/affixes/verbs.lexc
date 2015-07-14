@@ -50,17 +50,17 @@ LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
 
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
-<                   "@U.tense.Prs@"                        > PREVERBS ; !
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"    "@P.joiner.NULL@"   > PREVERBS ; ! 
-< 0:k 0:î 0:%-      "@U.tense.Prt@"    "@P.joiner.hyphen@" > PREVERBS ; !
-< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@" "@P.joiner.NULL@"   > PREVERBS ; !
-< 0:k 0:a 0:%-      "@U.tense.FutDef@" "@P.joiner.hyphen@" > PREVERBS ; !
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@P.joiner.NULL@"   > PREVERBS ; ! N.B. - move to a next lexicon
-< 0:w 0:î 0:%-      "@U.tense.FutInt@" "@P.joiner.hyphen@" > PREVERBS ; !
+<                   "@U.tense.Prs@"                        > WICI ; !
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"    "@P.joiner.NULL@"   > WICI ; ! 
+< 0:k 0:î 0:%-      "@U.tense.Prt@"    "@P.joiner.hyphen@" > WICI ; !
+< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@" "@P.joiner.NULL@"   > WICI ; !
+< 0:k 0:a 0:%-      "@U.tense.FutDef@" "@P.joiner.hyphen@" > WICI ; !
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@P.joiner.NULL@"   > WICI ; ! N.B. - move to a next lexicon
+< 0:w 0:î 0:%-      "@U.tense.FutInt@" "@P.joiner.hyphen@" > WICI ; !
 
 
 LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
-@U.mood.FutCon@ PREVERBS ;
+@U.mood.FutCon@ WICI ;
 
 
 LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâki-
@@ -76,15 +76,15 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâ
 
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
-<                   "@U.tense.Prs@"                        > PREVERBS ; ! Present
-< 0:k 0:î 0:%-      "@U.tense.Prt@" "@U.joiner.hyphen@" "@C.cnj@"    > PREVERBS ; ! Preterite, 
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@" "@U.joiner.NULL@" "@C.cnj@"      > PREVERBS ; ! Preterite,
-< 0:w 0:î 0:%-      "@U.tense.FutInt@" "@U.joiner.hyphen@" "@C.cnj@" > PREVERBS ; ! Future Intentional
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@U.joiner.NULL@" "@C.cnj@"   > PREVERBS ; ! Future Intentional
+<                   "@U.tense.Prs@"                        > WICI ; ! Present
+< 0:k 0:î 0:%-      "@U.tense.Prt@" "@U.joiner.hyphen@" "@C.cnj@"    > WICI ; ! Preterite, 
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@" "@U.joiner.NULL@" "@C.cnj@"      > WICI ; ! Preterite,
+< 0:w 0:î 0:%-      "@U.tense.FutInt@" "@U.joiner.hyphen@" "@C.cnj@" > WICI ; ! Future Intentional
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@U.joiner.NULL@" "@C.cnj@"   > WICI ; ! Future Intentional
 
 
 LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
-@U.mood.imp@  PREVERBS ;
+@U.mood.imp@  WICI ;
 
 !! Words marked GG are from Plains Cree Grammar guide and glossary
 
@@ -92,12 +92,23 @@ LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
 !! !! Preverbs
 !     ==========
 
+LEXICON WICI
+@U.wici.NULL@ VERBSTEMS ;
+@U.wici.NULL@ PVSLOT ;
+@U.wici.NULL@ REDUPL ; 
+@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci VERBSTEMS ;
+@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci PVSLOT ;
+@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci REDUPL ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci%- VERBSTEMS ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci%- PVSLOT ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci%- REDUPL ;
+
 LEXICON PREVERBS  !!= @CODE@ just adds the prefix boundary
  :%> PVSLOT ;
 
 LEXICON PVSLOT
-REDUPL ;
 VERBSTEMS ;
+REDUPL ;
 PV/acici+:acici VERBSTEMSPRE "head down; upside down" ; ! Position
 PV/ahcahkowi+:ahcahkowi VERBSTEMSPRE "spiritual" ; ! Spirituality
 PV/akawaci+:akâwâci VERBSTEMSPRE "wishfully" ; ! Manner
@@ -351,7 +362,7 @@ PV/wawiye+:wâwiyê VERBSTEMSPRE "round, spherical" ;
 PV/wehci+:wêhci VERBSTEMSPRE "easily" ; 
 PV/wiyipi+:wiyîpi VERBSTEMSPRE "dirty looking; dull brown, drab" ; 
 ! PV/wi+:wî VERBSTEMSPRE "intend to, be about to" ; 
-PV/wici+:wîci VERBSTEMSPRE "together with" ; 
+! PV/wici+:wîci VERBSTEMSPRE "together with" ; 
 PV/wihpi+:wîhpi VERBSTEMSPRE "hollowing out" ; 
 PV/wini+:wîni VERBSTEMSPRE "soil, dirty" ; 
 PV/wipi+:wîpi VERBSTEMSPRE "dirty, unclean" ; 
@@ -362,6 +373,7 @@ PV/yahki+:yahki VERBSTEMSPRE "act of pushing forward; increasing, increasingly, 
 PV/yikate+:yîkatê VERBSTEMSPRE "aside" ; 
 PV/yipe+:yîpê VERBSTEMSPRE "on a slant, on a slope, on the side, sideways" ; 
 PV/yoski+:yôski VERBSTEMSPRE "soft, softly" ; 
+
 
 LEXICON VERBSTEMSPRE
 <      "@U.joiner.NULL@" "@C.cnj@"   > PREVERBS ;
@@ -452,16 +464,48 @@ LEXICON AICONJn-PL !!= @CODE@ splits in 4 moods, for verbs with final -n
 
 
 LEXICON AICONJ-CONT !!= @CODE@ 
-< "+Ind":0  "@U.mood.indep@" >  AI_IND ; !
-< "+Cnj":0  "@U.mood.cnj@" > AI_CNJ ; !
-< "+Imp":%>    "@U.mood.imp@"  >  AI_IMP ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CON ; !
+< "+Ind":0  "@U.mood.indep@" >  AI_IND_WICI ; !
+< "+Cnj":0  "@U.mood.cnj@" > AI_CNJ_WICI ; !
+< "+Imp":%>    "@U.mood.imp@"  >  AI_IMP_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CON_WICI ; !
+
+LEXICON AI_IND_WICI
+@U.wici.NULL@ AI_IND ;
+@U.wici.wici@+Rel:@U.wici.wici@mi AI_IND ;
+
+LEXICON AI_CNJ_WICI
+@U.wici.NULL@ AI_CNJ ;
+@U.wici.wici@+Rel:@U.wici.wici@mi AI_CNJ ;
+
+LEXICON AI_IMP_WICI
+@U.wici.NULL@ AI_IMP ;
+@U.wici.wici@+Rel:@U.wici.wici@mi AI_IMP ;
+
+LEXICON AI_FUT_CON_WICI
+@U.wici.NULL@ AI_FUT_CON ;
+@U.wici.wici@+Rel:@U.wici.wici@mi AI_FUT_CON ; 
 
 LEXICON AICONJ-CONT-PL !!= @CODE@ only plural forms.
-< "+Ind":0  "@U.mood.indep@" >  AI_IND-PL ; !
-< "+Cnj":0  "@U.mood.cnj@" > AI_CNJ-PL ; !
-< "+Imp":%>    "@U.mood.imp@"  >  AI_IMP-PL ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CON-PL ; !
+	< "+Ind":0  "@U.mood.indep@" >  AI_IND-PL_WICI ; !
+< "+Cnj":0  "@U.mood.cnj@" > AI_CNJ-PL_WICI ; !
+< "+Imp":%>    "@U.mood.imp@"  >  AI_IMP-PL_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CON-PL_WICI ; !
+
+LEXICON AI_IND-PL_WICI
+@U.wici.NULL@ AI_IND-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@mi AI_IND-PL ;
+
+LEXICON AI_CNJ-PL_WICI
+@U.wici.NULL@ AI_CNJ-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@mi AI_CNJ-PL ;
+
+LEXICON AI_IMP-PL_WICI
+@U.wici.NULL@ AI_IMP-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@mi AI_IMP-PL ;
+
+LEXICON AI_FUT_CON-PL_WICI
+@U.wici.NULL@ AI_FUT_CON-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@mi AI_FUT_CON-PL ; 
 
 
 LEXICON AICONJ-CONTn !!= @CODE@ 
@@ -590,6 +634,8 @@ LEXICON AI_CNJn-PL !!= @CODE@ Third mode, conjunctive
 < "+Prs":0          "@U.tense.Prs@"    > AI_CNJ_SUFn-PL ; !
 < "+Prt":0          "@U.tense.Prt@"    > AI_CNJ_SUFn-PL ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > AI_CNJ_SUFn-PL ; !
+
+
 
 
 LEXICON AI_CNJ_SUF !!= @CODE@ singular forms
