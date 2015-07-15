@@ -26,6 +26,7 @@ Alphabet
  %^POS:0   !!= * @CODE@ Possessive alternation trigger
  %^DUPL1:0  !!= * @CODE@ Reduplication consonant place holder 
  %^DUPL2:0  !!= * @CODE@ Reduplication consonant place holder 
+ %^MI:0    !!= * @CODE@ wici-mi consonant place holder 
  %^EA:0    !!= * @CODE@ ê to â in 1, 2 person of ê verbs
  %^TS:0    !!= * @CODE@  t to s in VTA-4 verbs before some i-init suf
  %^NII:0   !!= * @CODE@  n to h or 0 in VII verbs when before k-init suf
@@ -53,7 +54,7 @@ Sets
  Nas = m n ;
  NonNas = b c d f g h j k l p q r s t v w x z  ;
 
- Dummy = %< %> %^LOC %^DIM %^EGLOT %^DUPL1 %^DUPL2 %^POS %^EA %^TS %^NII ;
+ Dummy = %< %> %^LOC %^DIM %^EGLOT %^DUPL1 %^DUPL2 %^MI %^POS %^EA %^TS %^NII ;
  
 Definitions 
 
@@ -246,6 +247,24 @@ y3:y <=> %^DUPL2:0   a _ ( %-: ) %^DUPL1:0 ;
 !! __@RULENAME@__
 t4:c <= _ %>:0 i: k: â: :+ ;
 
-"Unspecified Actor t:c in VTAVw"
+"Cns mi epenthesis"
 !! __@RULENAME@__
-i:0 <=> %>:0 m _ .#. ;
+0:i <=> m %^MI:0 ( %>:0 ) _ Cns ;
+ 
+"Cns mi epenthesis2"
+!! __@RULENAME@__
+0:i <=> Cns _ m %^MI:0 ;
+
+
+! "epenthetic i deletion at word-end in wici--m circumfix"
+! !! __@RULENAME@__
+! i:0 <= %>:0 m _ .#. ;
+! 
+! "epenthetic i in vai-n wici--m circumfix"
+! !! __@RULENAME@__
+! 0:i <=> n _ m :+ ;
+! 
+! "deletion of ii to i vai-n wici--m circumfix"
+! !! __@RULENAME@__
+! i:0 <=>  _ i: n: :+ ;
+
