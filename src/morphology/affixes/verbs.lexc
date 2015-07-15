@@ -471,19 +471,19 @@ LEXICON AICONJ-CONT !!= @CODE@
 
 LEXICON AI_IND_WICI
 @U.wici.NULL@ AI_IND ;
-@U.wici.wici@+Rel:@U.wici.wici@mi AI_IND ;
+@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_IND ;
 
 LEXICON AI_CNJ_WICI
 @U.wici.NULL@ AI_CNJ ;
-@U.wici.wici@+Rel:@U.wici.wici@mi AI_CNJ ;
+@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_CNJ ;
 
 LEXICON AI_IMP_WICI
 @U.wici.NULL@ AI_IMP ;
-@U.wici.wici@+Rel:@U.wici.wici@mi AI_IMP ;
+@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_IMP ;
 
 LEXICON AI_FUT_CON_WICI
 @U.wici.NULL@ AI_FUT_CON ;
-@U.wici.wici@+Rel:@U.wici.wici@mi AI_FUT_CON ; 
+@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_FUT_CON ; 
 
 LEXICON AICONJ-CONT-PL !!= @CODE@ only plural forms.
 	< "+Ind":0  "@U.mood.indep@" >  AI_IND-PL_WICI ; !
@@ -493,32 +493,65 @@ LEXICON AICONJ-CONT-PL !!= @CODE@ only plural forms.
 
 LEXICON AI_IND-PL_WICI
 @U.wici.NULL@ AI_IND-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@mi AI_IND-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_IND-PL ;
 
 LEXICON AI_CNJ-PL_WICI
 @U.wici.NULL@ AI_CNJ-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@mi AI_CNJ-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_CNJ-PL ;
 
 LEXICON AI_IMP-PL_WICI
 @U.wici.NULL@ AI_IMP-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@mi AI_IMP-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_IMP-PL ;
 
 LEXICON AI_FUT_CON-PL_WICI
 @U.wici.NULL@ AI_FUT_CON-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@mi AI_FUT_CON-PL ; 
+@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_FUT_CON-PL ; 
 
 
 LEXICON AICONJ-CONTn !!= @CODE@ 
-< "+Ind":0  "@U.mood.indep@" >  AI_INDn ; !
-< "+Cnj":0  "@U.mood.cnj@" > AI_CNJn ; !
-< "+Imp":%>     "@U.mood.imp@"  >  AI_IMPn ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CON ;
+< "+Ind":0  "@U.mood.indep@" >  AI_INDn_WICI ; !
+< "+Cnj":0  "@U.mood.cnj@" > AI_CNJn_WICI ; !
+< "+Imp":%>     "@U.mood.imp@"  >  AI_IMPn_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CONn_WICI ;
+
+LEXICON AI_INDn_WICI
+@U.wici.NULL@ AI_INDn ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_INDn ;
+
+LEXICON AI_CNJn_WICI
+@U.wici.NULL@ AI_CNJn ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_CNJn ;
+
+LEXICON AI_IMPn_WICI
+@U.wici.NULL@ AI_IMPn ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_IMPn ;
+
+LEXICON AI_FUT_CONn_WICI
+@U.wici.NULL@ AI_FUT_CON ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_FUT_CON ; 
+
 
 LEXICON AICONJ-CONTn-PL !!= @CODE@ 
-< "+Ind":0  "@U.mood.indep@" >  AI_INDn-PL ; !
-< "+Cnj":0  "@U.mood.cnj@" > AI_CNJn-PL ; !
-< "+Imp":%>     "@U.mood.imp@"  >  AI_IMPn-PL ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CON-PL ;
+< "+Ind":0  "@U.mood.indep@" >  AI_INDn-PL_WICI ; !
+< "+Cnj":0  "@U.mood.cnj@" > AI_CNJn-PL_WICI ; !
+< "+Imp":%>     "@U.mood.imp@"  >  AI_IMPn-PL_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CONn-PL_WICI ;
+
+LEXICON AI_INDn-PL_WICI
+@U.wici.NULL@ AI_INDn-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@m%^MI AI_INDn-PL ;
+
+LEXICON AI_CNJn-PL_WICI
+@U.wici.NULL@ AI_CNJn-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@m%^MI AI_CNJn-PL ;
+
+LEXICON AI_IMPn-PL_WICI
+@U.wici.NULL@ AI_IMPn-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@m%^MI AI_IMPn-PL ;
+
+LEXICON AI_FUT_CONn-PL_WICI
+@U.wici.NULL@ AI_FUT_CON-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@m%^MI AI_FUT_CON-PL ; 
 
 
 LEXICON AI_IND !!= @CODE@ First mode, indicative
