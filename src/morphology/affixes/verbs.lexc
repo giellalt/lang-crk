@@ -539,19 +539,19 @@ LEXICON AICONJ-CONTn-PL !!= @CODE@
 
 LEXICON AI_INDn-PL_WICI
 @U.wici.NULL@ AI_INDn-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@m%^MI AI_INDn-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_INDn-PL ;
 
 LEXICON AI_CNJn-PL_WICI
 @U.wici.NULL@ AI_CNJn-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@m%^MI AI_CNJn-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_CNJn-PL ;
 
 LEXICON AI_IMPn-PL_WICI
 @U.wici.NULL@ AI_IMPn-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@m%^MI AI_IMPn-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_IMPn-PL ;
 
 LEXICON AI_FUT_CONn-PL_WICI
 @U.wici.NULL@ AI_FUT_CON-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@m%^MI AI_FUT_CON-PL ; 
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_FUT_CON-PL ; 
 
 
 LEXICON AI_IND !!= @CODE@ First mode, indicative
@@ -974,65 +974,83 @@ LEXICON TACONJ_5 !!= * @CODE@ This is just guessing, I do not know how the VTA-5
 +V+TA:w TACONJ-CONT ;
 
 LEXICON TACONJ-CONT !!= * @CODE@
-< "+Ind":0 "@U.mood.indep@" > TA_IND ; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJ ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUT ; !
-< "+Imp":0 "@U.mood.imp@" > TA_IMP ; !
+< "+Ind":0 "@U.mood.indep@" > TA_IND_WICI ; !
+< "+Cnj":0 "@U.mood.cnj@" > TA_CNJ_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUT_WICI ; !
+< "+Imp":0 "@U.mood.imp@" > TA_IMP_WICI ; !
 
 LEXICON TACONJ-CONTTS !!= * @CODE@
-< "+Ind":0 "@U.mood.indep@" > TA_INDTS ; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJTS ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTTS ; !
-< "+Imp":0 "@U.mood.imp@" > TATS_IMP ; !
+< "+Ind":0 "@U.mood.indep@" > TA_INDTS_WICI ; !
+< "+Cnj":0 "@U.mood.cnj@" > TA_CNJTS_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTTS_WICI ; !
+< "+Imp":0 "@U.mood.imp@" > TATS_IMP_WICI ; !
 
 LEXICON TACONJ-CONTVw !!= * @CODE@
-< "+Ind":0 "@U.mood.indep@" > TA_INDVw ; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJVw ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTVw ; !
-< "+Imp":0 "@U.mood.imp@" > TA_IMPVw ; !
+< "+Ind":0 "@U.mood.indep@" > TA_INDVw_WICI ; !
+< "+Cnj":0 "@U.mood.cnj@" > TA_CNJVw_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTVw_WICI ; !
+< "+Imp":0 "@U.mood.imp@" > TA_IMPVw_WICI ; !
 
 LEXICON TACONJ-CONTVw-PL !!= * @CODE@ plural forms
-< "+Ind":0 "@U.mood.indep@" > TA_INDVw-PL ; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJVw-PL ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTVw-PL ; !
-< "+Imp":0 "@U.mood.imp@" > TA_IMPVw-PL ; !
+< "+Ind":0 "@U.mood.indep@" > TA_INDVw-PL_WICI; !
+< "+Cnj":0 "@U.mood.cnj@" > TA_CNJVw-PL_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTVw-PL_WICI ; !
+< "+Imp":0 "@U.mood.imp@" > TA_IMPVw-PL_WICI ; !
 
 
 LEXICON TACONJ-CONTCw !!= * @CODE@
-< "+Ind":0 "@U.mood.indep@" > TA_INDCw ; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJCw ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTCw ; !
-< "+Imp":0 "@U.mood.imp@" > TA_IMPCw ; !
+< "+Ind":0 "@U.mood.indep@" > TA_INDCw_WICI ; !
+< "+Cnj":0 "@U.mood.cnj@" > TA_CNJCw_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTCw_WICI ; !
+< "+Imp":0 "@U.mood.imp@" > TA_IMPCw_WICI ; !
 
 
 
-LEXICON TA_IND !!= @CODE@ gives prs
+LEXICON TA_IND_WICI !!= @CODE@ gives prs
+@U.wici.NULL@ TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+
 < "@U.tense.Prs@"    "+Prs":0          > TA_IND_PERSPREF ;!
 < "@U.tense.Prt@"    "+Prt":0          > TA_IND_PERSPREF ; !
 < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > TA_IND_PERSPREF ; !Future definite 
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_IND_PERSPREF ; !Future intentional
 
-LEXICON TA_INDTS !!= @CODE@ gives prs
+LEXICON TA_INDTS_WICI !!= @CODE@ gives prs
+@U.wici.NULL@ TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+
 < "@U.tense.Prs@"    "+Prs":0          > TA_INDTS_PERSPREF ;!
 < "@U.tense.Prt@"    "+Prt":0          > TA_INDTS_PERSPREF ; !
 < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > TA_INDTS_PERSPREF ; !Future definite 
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_INDTS_PERSPREF ; !Future intentional
 
-LEXICON TA_INDVw !!= @CODE@ gives prs
+LEXICON TA_INDVw_WICI !!= @CODE@ gives prs
+
+@U.wici.NULL@ TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+
 < "@U.tense.Prs@"    "+Prs":0          > TA_INDVw_PERSPREF ;!
 < "@U.tense.Prt@"    "+Prt":0          > TA_INDVw_PERSPREF ; !
 < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > TA_INDVw_PERSPREF ; !Future definite 
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_INDVw_PERSPREF ; !Future intentional
 
 
-LEXICON TA_INDVw-PL !!= @CODE@ gives prs, plural forms
+LEXICON TA_INDVw-PL_WICI !!= @CODE@ gives prs, plural forms
+
+@U.wici.NULL@ TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+
 < "@U.tense.Prs@"    "+Prs":0          > TA_INDVw_PERSPREF-PL ;!
 < "@U.tense.Prt@"    "+Prt":0          > TA_INDVw_PERSPREF-PL ; !
 < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > TA_INDVw_PERSPREF-PL ; !Future definite 
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_INDVw_PERSPREF-PL ; !Future intentional
 
 
-LEXICON TA_INDCw !!= @CODE@ gives prs
+LEXICON TA_INDCw_WICI !!= @CODE@ gives prs
+
+@U.wici.NULL@ TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+
 < "@U.tense.Prs@"    "+Prs":0          > TA_INDCw_PERSPREF ;!
 < "@U.tense.Prt@"    "+Prt":0          > TA_INDCw_PERSPREF ; !
 < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > TA_INDCw_PERSPREF ; !Future definite 
@@ -1398,28 +1416,48 @@ LEXICON VTACw_NULL_O !!= * @CODE@
 
 
 
-LEXICON TA_CNJ !!= @CODE@ Third mode, conjunctive
+LEXICON TA_CNJ_WICI !!= @CODE@ Third mode, conjunctive
+
+@U.wici.NULL@ TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJ_SUF ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJ_SUF ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TA_CNJ_SUF ; !
 
-LEXICON TA_CNJTS !!= @CODE@ Third mode, conjunctive
+LEXICON TA_CNJTS_WICI !!= @CODE@ Third mode, conjunctive
+
+@U.wici.NULL@ TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJTS_SUF ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJTS_SUF ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TA_CNJTS_SUF ; !
 
-LEXICON TA_CNJVw !!= @CODE@ Third mode, conjunctive
+LEXICON TA_CNJVw_WICI !!= @CODE@ Third mode, conjunctive
+
+@U.wici.NULL@ TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJVw_SUF ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJVw_SUF ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TA_CNJVw_SUF ; !
 
-LEXICON TA_CNJVw-PL !!= @CODE@ Third mode, conjunctive, plural forms
+LEXICON TA_CNJVw-PL_WICI !!= @CODE@ Third mode, conjunctive, plural forms
+
+@U.wici.NULL@ TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJVw_SUF-PL ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJVw_SUF-PL ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TA_CNJVw_SUF-PL ; !
 
 
-LEXICON TA_CNJCw !!= @CODE@ Third mode, conjunctive
+LEXICON TA_CNJCw_WICI !!= @CODE@ Third mode, conjunctive
+
+@U.wici.NULL@ TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJCw_SUF ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJCw_SUF ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TA_CNJCw_SUF ; !
@@ -1768,7 +1806,11 @@ LEXICON TA_CNJCw_SUF !!= @CODE@ gives conj + obj tag and suf
 
 
 
-LEXICON TA_FUT !!= * @CODE@
+LEXICON TA_FUT_WICI !!= * @CODE@
+
+@U.wici.NULL@ TA_FUT_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_FUT_WICI ;
+
 
 +1Sg+3SgO:%>aki		   # ;
 +1Sg+3PlO:%>akwâwi	   # ;
@@ -1862,7 +1904,10 @@ LEXICON TA_FUT !!= * @CODE@
 
 
 
-LEXICON TA_FUTTS !!= * @CODE@
+LEXICON TA_FUTTS_WICI !!= * @CODE@
+
+@U.wici.NULL@ TA_FUTTS_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_FUTTS_WICI ;
 
 +1Sg+3SgO:%>aki		   # ;
 +1Sg+3PlO:%>akwâwi	   # ;
@@ -1933,7 +1978,7 @@ LEXICON TA_FUTTS !!= * @CODE@
 +1Pl+2Sg/PlO:%>itâhki	   # ;
 
 
-LEXICON TA_FUTVw !!= * @CODE@
+LEXICON TA_FUTVw_WICI !!= * @CODE@
 +1Sg+3SgO:%>aki		   # ;
 +2Sg+3SgO:%>aci		   # ;
 +1Pl+3SgO:%>âyâhki		   # ;
@@ -1984,10 +2029,13 @@ LEXICON TA_FUTVw !!= * @CODE@
 +1Sg+2PlO:%>%^IOitako	   # ;
 
 
-TA_FUTVw-PL ;
+TA_FUTVw-PL_WICI ;
 
 
-LEXICON TA_FUTVw-PL !!= * @CODE@ plural
+LEXICON TA_FUTVw-PL_WICI !!= * @CODE@ plural
+
+@U.wici.NULL@ TA_FUTVw-PL_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_FUTVw-PL_WICI ;
 
 +1Pl+3SgO:%>âyâhki		   # ;
 +12Pl+3SgO:%>âyahko		   # ; 
@@ -2043,7 +2091,10 @@ LEXICON TA_FUTVw-PL !!= * @CODE@ plural
 
 +1Pl+2Sg/PlO:%>%^IOitâhki	   # ;
 
-LEXICON TA_FUTCw !!= * @CODE@
+LEXICON TA_FUTCw_WICI !!= * @CODE@
+
+@U.wici.NULL@ TA_FUTCw_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_FUTCw_WICI ;
 
 +1Sg+3SgO:%>aki	   # ;
 +2Sg+3SgO:%>aci	   # ;
@@ -2117,7 +2168,11 @@ LEXICON TA_FUTCw !!= * @CODE@
 +1Pl+2Sg/PlO:%>%^IOitâhki	   # ;
 
 
-LEXICON TA_IMP
+LEXICON TA_IMP_WICI
+
+@U.wici.NULL@ TA_IMP_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMP_WICI ;
+
 @U.person.NULL@  2Sg_Imp ;
 @U.person.NULL@  2Pl_Imp ;
 @U.person.NULL@ 12Pl_Imp ;
@@ -2126,7 +2181,11 @@ LEXICON TA_IMP
 !@U.verb.imp1pl@  2Pl_Imp ;
 !@U.verb.imp2pl@ 12Pl_Imp ;
 
-LEXICON TATS_IMP
+LEXICON TATS_IMP_WICI
+
+@U.wici.NULL@ TATS_IMP_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TATS_IMP_WICI ;
+
 @U.person.NULL@  2SgTS_Imp ;
 @U.person.NULL@  2PlTS_Imp ;
 @U.person.NULL@ 12PlTS_Imp ;
@@ -2135,7 +2194,11 @@ LEXICON TATS_IMP
 !@U.verb.imp1pl@  2PlTS_Imp ;
 !@U.verb.imp2pl@ 12PlTS_Imp ;
 
-LEXICON TA_IMPVw
+LEXICON TA_IMPVw_WICI
+
+@U.wici.NULL@ TA_IMP_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPVw_WICI ;
+
 @U.person.NULL@  2SgVw_Imp ;
 @U.person.NULL@  2PlVw_Imp ;
 @U.person.NULL@   12Pl_Imp ;
@@ -2144,12 +2207,20 @@ LEXICON TA_IMPVw
 !@U.verb.imp1pl@  2PlVw_Imp ;
 !@U.verb.imp2pl@   12Pl_Imp ;
 
-LEXICON TA_IMPVw-PL !!= * @CODE@ plural
+LEXICON TA_IMPVw-PL_WICI !!= * @CODE@ plural
+
+@U.wici.NULL@ TA_IMPVw-PL_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPVw-PL_WICI ;
+
 @U.person.NULL@  2PlVw_Imp ;
 @U.person.NULL@   12Pl_Imp ;
 
 
-LEXICON TA_IMPCw !!= * @CODE@
+LEXICON TA_IMPCw_WICI !!= * @CODE@
+
+@U.wici.NULL@ TA_IMPCw_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPCw_WICI ;
+
 @U.person.NULL@  2SgCw_Imp ;
 @U.person.NULL@  2PlCw_Imp ;
 @U.person.NULL@ 12PlCw_Imp ;
