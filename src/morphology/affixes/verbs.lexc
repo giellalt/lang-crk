@@ -1017,7 +1017,7 @@ LEXICON TA_IND_WICI !!= @CODE@ gives prs
 
 LEXICON TA_INDTS_WICI !!= @CODE@ gives prs
 @U.wici.NULL@ TA_IND_PERSPREF ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim TA_INDTS_PERSPREF ;
 
 < "@U.tense.Prs@"    "+Prs":0          > TA_INDTS_PERSPREF ;!
 < "@U.tense.Prt@"    "+Prt":0          > TA_INDTS_PERSPREF ; !
@@ -1428,7 +1428,7 @@ LEXICON TA_CNJ_WICI !!= @CODE@ Third mode, conjunctive
 LEXICON TA_CNJTS_WICI !!= @CODE@ Third mode, conjunctive
 
 @U.wici.NULL@ TA_IND_PERSPREF ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_PERSPREF ;
+@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim%^MI TA_IND_PERSPREF ;
 
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJTS_SUF ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJTS_SUF ; !
@@ -2184,7 +2184,7 @@ LEXICON TA_IMP_WICI
 LEXICON TATS_IMP_WICI
 
 @U.wici.NULL@ TATS_IMP_WICI ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TATS_IMP_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim%^MI TATS_IMP_WICI ;
 
 @U.person.NULL@  2SgTS_Imp ;
 @U.person.NULL@  2PlTS_Imp ;
