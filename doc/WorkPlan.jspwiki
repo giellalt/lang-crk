@@ -104,16 +104,16 @@ __Verbs:__
 
 # __DONE!__ Add -wici- -m- forms (Atticus)
 # __DONE!__  Add -ikawi- unspecified actor suffix (Atticus)
-# fully implement VTA-5 paradigm (instead of using VTA-1 as the default). According to Arok, VTA-5 is basically the same as VTA-1, with the addition of <i> to the stem in the Immediate Imperative forms (Atticus)
+# __DONE!__ fully implement VTA-5 paradigm (instead of using VTA-1 as the default). According to Arok, VTA-5 is basically the same as VTA-1, with the addition of <i> to the stem in the Immediate Imperative forms (Atticus)
 # include reciprocals and ensure they show up only in the Singular forms (Atticus) 
 # Go through IICONJ stems and verify with Arok which are SG or PL only. Infrastructure for this is already implemented in affixes/verbs.lexc; one only needs to adjust the coding in the stems file to redirect to relevant continuation lexica. After II verbs, do this process systematically for AICONJ, TICONJ and TACONJ verbs. (Atticus)
 # implement reduplication for o-inital verb stems as discussed above (Antti)
     
 The following will take more work and research to implement:
 
-# Implementation of <kâ-> prefixed conjunct forms (line 68 in affixes/verbs.lexc). Research to be done to determine how kâ- (and other grammatical preverbs such as kâ-kî-) interacts with the various verb moods and functions (relativizer, infinitivizer), and how we could code this. One solution would be mark explicltly the grammatic preverb preceding a conjunct form, allowing also for the absence of such grammatical preverb (cf. above) (Atticus)
+# __DONE!__ Implementation of <kâ-> prefixed conjunct forms (line 68 in affixes/verbs.lexc). Research to be done to determine how kâ- (and other grammatical preverbs such as kâ-kî-) interacts with the various verb moods and functions (relativizer, infinitivizer), and how we could code this. One solution would be mark explicltly the grammatic preverb preceding a conjunct form, allowing also for the absence of such grammatical preverb (cf. above) (Atticus)
 # Deal with two/three-letter preverb problematics (analysing the reduction of a potential -ta- as a reduced -t-, instead of as an epenthetic -t-). This can be partially solved with requiring hyphens as joiners, as well as with some restrictions on preverb combinatorics. Arok to provide some categorical restrictions, if possible, but otherwise to be explored based on Wolfart corpus data (Antti, Arok)
-# Change preverb tags to represent vowel length accurately (to distinguish e.g. maci- 'start' from mâci- 'bad') (Antti)
+# __DONE!__ Change preverb tags to represent vowel length accurately (to distinguish e.g. maci- 'start' from mâci- 'bad') (Antti)
 # Allow for analysis of forms with -h- joiners,  but not their generation. (TBD)
 
 __Nouns:__
