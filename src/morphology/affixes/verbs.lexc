@@ -970,8 +970,8 @@ LEXICON TACONJ_3  !!= * @CODE@ Cw where w + i become o
 LEXICON TACONJ_4  !!= * @CODE@ TS
 +V+TA: TACONJ-CONTTS ;
 
-LEXICON TACONJ_5 !!= * @CODE@ This is just guessing, I do not know how the VTA-5 vers are inflected.
-+V+TA:w TACONJ-CONT ;
+LEXICON TACONJ_5 !!= * @CODE@ 
++V+TA: TACONJ-CONTi ;
 
 LEXICON TACONJ-CONT !!= * @CODE@
 < "+Ind":0 "@U.mood.indep@" > TA_IND_WICI ; !
@@ -997,12 +997,17 @@ LEXICON TACONJ-CONTVw-PL !!= * @CODE@ plural forms
 < "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTVw-PL_WICI ; !
 < "+Imp":0 "@U.mood.imp@" > TA_IMPVw-PL_WICI ; !
 
-
 LEXICON TACONJ-CONTCw !!= * @CODE@
 < "+Ind":0 "@U.mood.indep@" > TA_INDCw_WICI ; !
 < "+Cnj":0 "@U.mood.cnj@" > TA_CNJCw_WICI ; !
 < "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTCw_WICI ; !
 < "+Imp":0 "@U.mood.imp@" > TA_IMPCw_WICI ; !
+
+LEXICON TACONJ-CONTi !!= * @CODE@
+< "+Ind":0 "@U.mood.indep@" > TA_IND_WICI ; !
+< "+Cnj":0 "@U.mood.cnj@" > TA_CNJ_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUT_WICI ; !
+< "+Imp":0 "@U.mood.imp@" > TA_IMPi_WICI ; !
 
 
 
@@ -1056,6 +1061,8 @@ LEXICON TA_INDCw_WICI !!= @CODE@ gives prs
 < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > TA_INDCw_PERSPREF ; !Future definite 
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_INDCw_PERSPREF ; !Future intentional
 
+
+
 LEXICON TA_IND_PERSPREF !!= @CODE@ gives tags for subject, flag for object, and directs to obj suffs
 @U.person.NI@   VTA_NI_O ;  !
 @U.person.KI@   VTA_KI_O ;  !
@@ -1081,6 +1088,7 @@ LEXICON TA_INDCw_PERSPREF !!= @CODE@ gives tags for subject, flag for object, an
 @U.person.NI@   VTACw_NI_O ;  !
 @U.person.KI@   VTACw_KI_O ;  !
 @U.person.NULL@ VTACw_NULL_O ;  !
+
 
 
 
@@ -1461,6 +1469,7 @@ LEXICON TA_CNJCw_WICI !!= @CODE@ Third mode, conjunctive
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJCw_SUF ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJCw_SUF ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TA_CNJCw_SUF ; !
+
 
 
 LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
@@ -2253,6 +2262,15 @@ LEXICON TA_IMPCw_WICI !!= * @CODE@
 !@U.verb.imp2pl@ 12PlCw_Imp ;
 
 
+LEXICON TA_IMPi_WICI
+
+@U.wici.NULL@ TA_IMPi_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPi_WICI ;
+
+@U.person.NULL@  2Sgi_Imp ;
+@U.person.NULL@  2Pl_Imp ;
+@U.person.NULL@   12Pl_Imp ;
+
 LEXICON 2Sg_Imp !!= * @CODE@
 +Imm+2Sg+1SgO:%>in # ;
 +Imm+2Sg+1PlO:%>inân # ;
@@ -2352,6 +2370,18 @@ LEXICON 12PlCw_Imp !!= * @CODE@
 +Imm+12Pl+3PlO:%>âtânik # ;
 +Del+12Pl+3SgO:%>âhkahk # ;
 +Del+12Pl+3PlO:%>âhkahkok # ;
+
+LEXICON 2Sgi_Imp !!= * @CODE@
++Imm+2Sg+1SgO:%>in # ;
++Imm+2Sg+1PlO:%>inân # ;
++Imm+2Sg+3SgO:%>i # ;
++Imm+2Sg+3PlO:%>ik # ;
++Del+2Sg+3SgO:%>âhkan # ;
++Del+2Sg+3PlO:%>âhkanik # ;
++Del+2Sg+1SgO:%>îhkan # ;
++Del+2Sg+2PlO:%>îhkâhk # ;
++Del+2Sg+1PlO:%>îhkâhk # ;
+
 
 
 !! !! Transitive Inanimate (TI)
