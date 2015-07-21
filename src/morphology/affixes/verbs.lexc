@@ -973,6 +973,10 @@ LEXICON TACONJ_4  !!= * @CODE@ TS
 LEXICON TACONJ_5 !!= * @CODE@ 
 +V+TA: TACONJ-CONTi ;
 
+LEXICON TACONJ_5-TS !!= * @CODE@ 
++V+TA: TACONJ-CONTTSi ;
+
+
 LEXICON TACONJ-CONT !!= * @CODE@
 < "+Ind":0 "@U.mood.indep@" > TA_IND_WICI ; !
 < "+Cnj":0 "@U.mood.cnj@" > TA_CNJ_WICI ; !
@@ -1009,6 +1013,11 @@ LEXICON TACONJ-CONTi !!= * @CODE@
 < "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUT_WICI ; !
 < "+Imp":0 "@U.mood.imp@" > TA_IMPi_WICI ; !
 
+LEXICON TACONJ-CONTTSi !!= * @CODE@
+< "+Ind":0 "@U.mood.indep@" > TA_INDTS_WICI ; !
+< "+Cnj":0 "@U.mood.cnj@" > TA_CNJTS_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTTS_WICI ; !
+< "+Imp":0 "@U.mood.imp@" > TATSi_IMP_WICI ; !
 
 
 LEXICON TA_IND_WICI !!= @CODE@ gives prs
@@ -2271,6 +2280,19 @@ LEXICON TA_IMPi_WICI
 @U.person.NULL@  2Pl_Imp ;
 @U.person.NULL@   12Pl_Imp ;
 
+LEXICON TATSi_IMP_WICI
+
+@U.wici.NULL@ TATSi_IMP_WICI ;
+@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim%^MI TATSi_IMP_WICI ;
+
+@U.person.NULL@  2SgTSi_Imp ;
+@U.person.NULL@  2PlTS_Imp ;
+@U.person.NULL@ 12PlTS_Imp ;
+
+!@U.verb.imp2sg@  2SgTS_Imp ;
+!@U.verb.imp1pl@  2PlTS_Imp ;
+!@U.verb.imp2pl@ 12PlTS_Imp ;
+
 LEXICON 2Sg_Imp !!= * @CODE@
 +Imm+2Sg+1SgO:%>in # ;
 +Imm+2Sg+1PlO:%>inân # ;
@@ -2381,6 +2403,17 @@ LEXICON 2Sgi_Imp !!= * @CODE@
 +Del+2Sg+1SgO:%>îhkan # ;
 +Del+2Sg+2PlO:%>îhkâhk # ;
 +Del+2Sg+1PlO:%>îhkâhk # ;
+
+LEXICON 2SgTSi_Imp !!= * @CODE@
++Imm+2Sg+1SgO:%>%^TSin # ;
++Imm+2Sg+1PlO:%>%^TSinân # ;
++Imm+2Sg+3SgO:%>%^TSi # ;
++Imm+2Sg+3PlO:%>%^TSik # ;
++Del+2Sg+3SgO:%>%^TSâhkan # ;
++Del+2Sg+3PlO:%>%^TSâhkanik # ;
++Del+2Sg+1SgO:%>%^TSîhkan # ;
++Del+2Sg+2PlO:%>%^TSîhkâhk # ;
++Del+2Sg+1PlO:%>%^TSîhkâhk # ;
 
 
 
