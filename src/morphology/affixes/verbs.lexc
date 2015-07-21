@@ -1030,6 +1030,7 @@ LEXICON TA_IND_WICI !!= @CODE@ gives prs
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > TA_IND_PERSPREF ; !Future intentional
 
 LEXICON TA_INDTS_WICI !!= @CODE@ gives prs
+
 @U.wici.NULL@ TA_INDTS_PERSPREF ;
 @U.wici.wici@+Rel:@U.wici.wici@%>%^TSim TA_INDTS_PERSPREF ;
 
@@ -2211,8 +2212,10 @@ LEXICON TA_FUTCw_WICI !!= * @CODE@
 
 LEXICON TA_IMP_WICI
 
-@U.wici.NULL@ TA_IMP_WICI ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMP_WICI ;
+@U.wici.NULL@ TA_IMP ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMP ;
+
+LEXICON TA_IMP
 
 @U.person.NULL@  2Sg_Imp ;
 @U.person.NULL@  2Pl_Imp ;
@@ -2224,8 +2227,10 @@ LEXICON TA_IMP_WICI
 
 LEXICON TATS_IMP_WICI
 
-@U.wici.NULL@ TATS_IMP_WICI ;
-@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim%^MI TATS_IMP_WICI ;
+@U.wici.NULL@ TATS_IMP ;
+@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim%^MI TATS_IMP ;
+
+LEXICON TATS_IMP
 
 @U.person.NULL@  2SgTS_Imp ;
 @U.person.NULL@  2PlTS_Imp ;
@@ -2237,8 +2242,10 @@ LEXICON TATS_IMP_WICI
 
 LEXICON TA_IMPVw_WICI
 
-@U.wici.NULL@ TA_IMP_WICI ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPVw_WICI ;
+@U.wici.NULL@ TA_IMPVw ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPVw ;
+
+LEXICON TA_IMPVw
 
 @U.person.NULL@  2SgVw_Imp ;
 @U.person.NULL@  2PlVw_Imp ;
@@ -2250,8 +2257,11 @@ LEXICON TA_IMPVw_WICI
 
 LEXICON TA_IMPVw-PL_WICI !!= * @CODE@ plural
 
-@U.wici.NULL@ TA_IMPVw-PL_WICI ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPVw-PL_WICI ;
+@U.wici.NULL@ TA_IMPVw-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPVw-PL ;
+
+
+LEXICON TA_IMPVw-PL !!= * @CODE@ plural
 
 @U.person.NULL@  2PlVw_Imp ;
 @U.person.NULL@   12Pl_Imp ;
@@ -2259,8 +2269,10 @@ LEXICON TA_IMPVw-PL_WICI !!= * @CODE@ plural
 
 LEXICON TA_IMPCw_WICI !!= * @CODE@
 
-@U.wici.NULL@ TA_IMPCw_WICI ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPCw_WICI ;
+@U.wici.NULL@ TA_IMPCw ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPCw ;
+
+LEXICON TA_IMPCw !!= * @CODE@
 
 @U.person.NULL@  2SgCw_Imp ;
 @U.person.NULL@  2PlCw_Imp ;
@@ -2273,8 +2285,10 @@ LEXICON TA_IMPCw_WICI !!= * @CODE@
 
 LEXICON TA_IMPi_WICI
 
-@U.wici.NULL@ TA_IMPi_WICI ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPi_WICI ;
+@U.wici.NULL@ TA_IMPi ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPi ;
+
+LEXICON TA_IMPi
 
 @U.person.NULL@  2Sgi_Imp ;
 @U.person.NULL@  2Pl_Imp ;
@@ -2282,8 +2296,10 @@ LEXICON TA_IMPi_WICI
 
 LEXICON TATSi_IMP_WICI
 
-@U.wici.NULL@ TATSi_IMP_WICI ;
-@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim%^MI TATSi_IMP_WICI ;
+@U.wici.NULL@ TATSi_IMP ;
+@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim%^MI TATSi_IMP ;
+
+LEXICON TATSi_IMP
 
 @U.person.NULL@  2SgTSi_Imp ;
 @U.person.NULL@  2PlTS_Imp ;
