@@ -13,6 +13,7 @@ Alphabet
  w2:w      !!= * @CODE@ for keeping the final -w in mow
  y2:0      !!= * @CODE@ epenthetic joiner in reduplication of vowe-initial stems
  y3:0      !!= * @CODE@ epenthetic joiner in reduplication of vowe-initial stems
+ i2:0      !!= * @CODE@ vta5-i epenthesis
  %>:0      !!= * @CODE@ suffix boundary
  %<:0      !!= * @CODE@ prefix boundary
            ! To discuss:
@@ -272,3 +273,6 @@ t4:c <= _ %>:0 i: k: â: :+ ;
 !! __@RULENAME@__
 s:0 <=> _ t3:s %>:0 ;
 
+"i2:i in vta-5i"
+!! __@RULENAME@__
+i2:i <=> _ .#. ;
