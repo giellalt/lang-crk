@@ -50,12 +50,12 @@
 ! mihko:mihk			INimDECLw_ONESYLL_SG	NI4w -o, only Sg
 ! 
 ! asikan				AN_DECL					NA1		
-! pahkwêsikan			ANimDECL				NA1 + im
+! pahkwêsikan			AN_DECL				NA1 + im
 ! ayapiy				AN_DECL					NA2
 ! askihk:askihkw		AN_DECL					NA3
-! askihk:askihkw		ANimDECL				NA3w + im
-! esa					ANimDECL				NA4 +im
-! niska					ANimDECLisis			NA4 +im, only Dim is
+! askihk:askihkw		AN_DECL				NA3w + im
+! esa					AN_DECL				NA4 +im
+! niska					AN_DECLisis			NA4 +im, only Dim is
 ! ihkwa:ihkw			ANimDECLw				NA4w +im
 
 
@@ -77,7 +77,7 @@ LEXICON STEMLIST
 
 !! @LEXNAME@ for nouns getting prefixes ni-, ki-, o- \\
 ! asikan AN_DECL ; !x= * @CODE@ Wolv: NA1 
-! pahkwêsikan ANimDECL ; !x= * @CODE@  Wolv: NA1 + im
+! pahkwêsikan AN_DECL ; !x= * @CODE@  Wolv: NA1 + im
 !astotin IN_DECL ; !x= * @CODE@ Wolv: NI1
 ! cîmân IN_DECL ; !x= @CODE@ Wolv: NI1 
 ! maskisin IN_DECLis ; !x= * @CODE@ IN_DECL but only -is Dim
@@ -88,31 +88,31 @@ LEXICON STEMLIST
 ! masinahikanâhtik:masinahikanâhtikw AN_DECL ; !x= * @CODE@ Wolv: NA3
 ! pahkêkin:pahkêkinw IN_DECL ; !x= * @CODE@ Wolv: NI3w
 ! askekin:askekinw IN_DECL ; !x= @CODE@ Wolv: NI3w
-! askihk:askihkw ANimDECL ; !x= * @CODE@ * Wolv: NA3w + im 
-esa ANimDECL ; !x= * @CODE@ Wolv: NA4 +im
-! niska ANimDECLisis ; !x= * @CODE@ Wolv: NA4 +im, only Dim is
+! askihk:askihkw AN_DECL ; !x= * @CODE@ * Wolv: NA3w + im 
+esa AN_DECL ; !x= * @CODE@ Wolv: NA4 +im
+! niska AN_DECLisis ; !x= * @CODE@ Wolv: NA4 +im, only Dim is
 ! oskâyi INimDECL ; !x= * @CODE@ Wolv: NI4 +im
 ! wâwi INimDECL ; !x= @CODE@ Wolv: NI4 +im
 ! ôsi:ô IN_DECLosi; !x= * @CODE@ Wolv: NI4 irr. stem
 ! ihkwa:ihkw ANimDECLw ; !x= * @CODE@ Wolv: NA4w +im
 ! wâhkwa:wâhkw ANimDECLw ; !x= @CODE@ Wolv: NA4w +im
 ! mihko:mihk INimDECLw_ONESYLL_SG ; !x= * @CODE@ Wolv: NI4w -o, only Sg
-! amisk:amiskw ANimDECL "beaver" ; !yaml
+! amisk:amiskw AN_DECL "beaver" ; !yaml
 ! anikwacâs ANimDECLnaahk "squirrel" ; !yaml
 ! apiscacihkos AN_DECL "antelope" ; 
 ! apisimôsos AN_DECL "deer" ; ! 
 ! apisimôsosis AN_DIM "little deer" ; ! apisimôsosak
 ! asiniy AN_DECL "stone" ;	
 ! atihk:atihkw AN_DECL "caribou" ;	 !-w?
-! cahcahkâyow ANimDECLisis "blackbird" ; !yaml
+! cahcahkâyow AN_DECLisis "blackbird" ; !yaml
 ! inini AN_DECL "man" ; !DThunder says this should be iyiniw meaning person. Not in dictionary however.	
 ! iskwêw ANimDECLnaahk "woman" ; !yaml
-! iskwêsis ANimDECL "girl" ;
+! iskwêsis AN_DECL "girl" ;
 ! kôhkôs AN_DECL "pig" ; !GGI:26 dim: kôhkôsis GGI:55
 ! maskwa AN_DECLis "bear" ; ! maskwak	
 ! mâyatihk AN_DECL "bighorn sheep" ;	
 ! môswa AN_DECL "moose" ; ! môswak	
-! nâpêw ANimDECL "man" ;	!OBS ê ?
+! nâpêw AN_DECL "man" ;	!OBS ê ?
 ! nâpês AN_DECL "boy" ;	
 ! nehiyaw AN_DECL "Cree Person" ;	
 ! sihta ANimDECLnaahk "spruce" ;
@@ -132,15 +132,15 @@ esa ANimDECL ; !x= * @CODE@ Wolv: NA4 +im
 ! sîwinikan AN_DECL "sugar" ; ! GGI:12 
 ! emihkwânis AN_DECL "spoon" ; ! GGI:12 
 ! emihkwân AN_DECL "spoon" ; !  ? youTube
-! awâsis ANimDECL "child" ; ! GGI:nitâwâsimisak, nicawâsimisak
+! awâsis AN_DECL "child" ; ! GGI:nitâwâsimisak, nicawâsimisak
 ! âmow AN_DECL "bee" ; 
 ! picikwâs AN_DECL "apple" ; !GGI
 ! miscacimosis AN_DIM ;
 ! pîsim AN_DECL "month, sun" ;
-! sîsîp ANimDECL "duck" ;	! exstra -im in poss GGI:25
-! okimâw ANimDECL "boss" ; ! GGI:25
-! wîkimâkan ANimDECL "spouse" ; !both NA and NDA
-! wâpos:wâposw ANimDECL "rabbit" ; !yaml
+! sîsîp AN_DECL "duck" ;	! exstra -im in poss GGI:25
+! okimâw AN_DECL "boss" ; ! GGI:25
+! wîkimâkan AN_DECL "spouse" ; !both NA and NDA
+! wâpos:wâposw AN_DECL "rabbit" ; !yaml
 ! mistik:mistikw AN_DECL "stick" ; !Wolfart freqv list: mistikohk
 ! mahkahk:mahkahkw AN_DECL "tub/barrel" ; !Wolfart freqv list: mahkahkohk
 ! mostos:mostosw AN_DECL "cow" ;	!GG p 16: pl is mostoswak, are there other nouns of this kind?
@@ -355,7 +355,7 @@ asascikana IN_DECL "things piled together" ; ! plural
 asastân IN_DECL "pile of cordwood" ;
 asawâpiwikamik:asawâpiwikamikw IN_DECL "watchtower; lighthouse" ;
 asawâpiwin IN_DECL "hunting-blind; a place to watch from; look-out, lighthouse, watchtower; looking out" ;
-asâm AN_DECL "snowshoe" ;
+asâm AN_DECL_0POSS "snowshoe" ;
 asâmâhtik:asâmâhtikw AN_DECL "stick for making a snowshoe" ;
 asâmêyâpiy IN_DECL "strap of snowshoe" ;
 asâsowêw AN_DECL "one who tattoos, tattoo artist" ;
@@ -366,7 +366,7 @@ ascipahkwânis IN_DIM "tentpole pin" ; ! singular, diminutive pl: the 14 pins ho
 ascisis AN_DIM "small mitten" ;
 ascocinis IN_DIM "bonnet; small cap" ;
 asêsin IN_DECL "vamp, tongue of moccasin" ;
-asikan AN_DECL "sock, stocking" ; ! singular possessive form usually does not, but can take /-im/; diminutive: asikanis
+asikan AN_DECL_0POSS "sock, stocking" ; ! singular possessive form usually does not, but can take /-im/; diminutive: asikanis
 asikanêyâpiy IN_DECL "yarn" ;
 asikanihkâkan IN_DECL "knitting needle" ;
 asimâkanisihkân-askiy IN_DECL "Asimakaniseekan Askiy; urban reserve in Saskatoon, SK; literally: soldier/veteran land" ; ! singular initial [a] is unexplained
@@ -401,14 +401,14 @@ askâhtik:askâhtikw IN_DECL "green wood (cut from green logs)" ;
 askâhtikwâhtik:askâhtikwâhtikw AN_DECL "green tree; freshly peeled tree" ;
 askâhtikwâhtik:askâhtikwâhtikw IN_DECL "freshly peeled log or stick" ;
 askêkin:askêkinw IN_DECL "fresh rawhide" ;
-aski-pahkwêsikan ANimDECL "flour" ;
-askihk:askihkw ANimDECL "pail, bucket; kettle; pot" ; ! singular wC slang: my vagina
+aski-pahkwêsikan AN_DECL "flour" ;
+askihk:askihkw AN_DECL "pail, bucket; kettle; pot" ; ! singular wC slang: my vagina
 askihkohkân AN_DECL "train engine, steam engine; engine, motor" ;
 askihkohkânis AN_DIM "tractor; motor" ;
 askihkos AN_DIM "little pail; little kettle, pot ;; outboard motor" ; ! singular, diminutive see also askihkohkân, pakâhcikan-askihk
 askihtak:askihtakw IN_DECL "green wood (cut from green logs)" ;
 askihtako-kîsowahpison AN_DECL "green scarf" ;
-askihtakwasikan AN_DECL "green sock" ;
+askihtakwasikan AN_DECL_0POSS "green sock" ;
 askihtakwâpakwaniy IN_DECL "blue flower" ;
 askipwâwi INimDECL "potato, wild potato" ; ! singular; plural: askipwâwa the original derivation, a conversion from VII-v askipwâwa they are raw food, was confused with NI-4 wâwa eggs, and the singular form, askipwâwi, was created as a backformation NI-4
 askipahkwesikan AN_DECL "flour or raw bread" ; ! FROM NS 152
@@ -452,7 +452,7 @@ astâskamikwa:astâskamikw IN_DECL_PL "moss; roots" ; ! plural
 astinwân IN_DECL "sinew" ;
 astipahkwân IN_DECL "top flap of tipi; [plural:] the flaps which control the airflow into the tipi from the top" ;
 astis IN_DECL "thread made from dried sinew" ;
-astis AN_DECL "mitt, mitten; glove" ; ! singular dim: ascisis
+astis AN_DECL_0POSS "mitt, mitten; glove" ; ! singular dim: ascisis
 astisêwakwa:astisêwakw IN_DECL_PL "lengthwise muscles on back" ; ! plural 
 astisiy IN_DECL "thread made from sinew" ;
 astotin IN_DECL "hat, cap, headgear" ; ! singular poss: (-im)
@@ -499,7 +499,7 @@ atoskahâkan AN_DECL "employee, hired man" ;
 atoskâkowin IN_DECL "work done for one" ;
 atoskêhâkan AN_DECL "nursing aide, orderly" ;
 atoskêwin IN_DECL "work, labour, employment" ;
-atoskêwitâs AN_DECL "overalls; work pants" ;
+atoskêwitâs AN_DECL_0POSS "overalls; work pants" ;
 atoskêyâkan AN_DECL "servant, workman" ; ! singular [ý] as alternant for /h/; **hý
 atoskêyâkaniskwêw ANimDECLnaahk "female servant" ; ! singular [ý] as alternant for /h/; **hý
 atôspiy AN_DECL "older tree; orange-coloured willow" ;
@@ -717,7 +717,7 @@ apisimôsos+Err/Orth:âpisimôsis AN_DECL "deer" ; ! From NS 152
 âyimômitowin IN_DECL "gossip; talking about one another" ;
 cacêkahkwân IN_DECL "lance, dart" ;
 cacêmâpicês AN_DIM "short-toothed person" ; ! singular, diminutive, reduplicated /cacêm-/: cf. reduplicated form of /cim-/
-cahcahkâyow ANimDECLisis "blackbird" ;
+cahcahkâyow AN_DECLisis "blackbird" ;
 cahcahkâyôsis AN_DIM "small blackbird, blackbird hatchling" ;
 cahcahkiw AN_DECL "pelican; crane" ;
 cahcakipêwasinastêwêkin:cahcakipêwasinastêwêkinw IN_DECL "polka dot material" ;
@@ -809,7 +809,7 @@ côhkâp AN_DECL "person with wide-open eyes" ; ! singular nickname formed by so
 côwêhkanâpisîs AN_DIM "dragonfly" ;
 êmihkwân AN_DECL "spoon; ladle" ;
 êmihkwânis AN_DIM "table spoon, teaspoon" ;
-êsa ANimDECL "clam; clam shell, seashell" ;
+êsa AN_DECL "clam; clam shell, seashell" ;
 êsahamânis AN_DIM "spoon; clam used as a spoon" ;
 êsawêhkwak:êsawêhkwakw AN_DECL "square needle for sewing leather" ; ! plural 
 êsawêhkwakos AN_DIM "small square needle for sewing leather" ;
@@ -917,7 +917,7 @@ itwêwin IN_DECL "word; the saying so, such speech" ;
 iyâpêsis AN_DIM "young bull; young male animal" ;
 iyâpêw AN_DECL "buck, bull moose; male animal" ;
 iyikopiwi-pîsim:iyikopiwi-pîsimw AN_DECL "Frost Moon; November" ;
-iyinaskihk:iyinaskihkw ANimDECL "kettle" ;
+iyinaskihk:iyinaskihkw AN_DECL "kettle" ;
 iyinâhtik:iyinâhtikw AN_DECL "white spruce" ;
 iyini-kinosêw AN_DECL "large fish, ordinary fish; pike, jackfish" ;
 iyinico-pimîs IN_DIM "ordinary grease" ;
@@ -1020,8 +1020,8 @@ kawâhtik:kawâhtikw AN_DECL "fallen tree" ;
 kawikahikan IN_DECL "felled tree; tool for felling trees" ;
 kawikîhkâwin IN_DECL "old age, lifetime" ;
 kayâs-akohp IN_DECL "old blanket" ;
-kayâs-asâm AN_DECL "old snowshoe" ;
-kayâs-astis AN_DECL "old glove, old mitt" ;
+kayâs-asâm AN_DECL_0POSS "old snowshoe" ;
+kayâs-astis AN_DECL_0POSS "old glove, old mitt" ;
 kayâs-astotin IN_DECL "old hat" ;
 kayâs-âcimowin IN_DECL "old-time story" ;
 kayâs-âyâna IN_DECL "old clothing" ; ! plural 
@@ -1071,7 +1071,7 @@ kâskikwâcikanis IN_DIM "rake" ;
 kâskipâson IN_DECL "razor" ;
 kâsôhikan IN_DECL "hunting blind" ; ! singular kâsô- itself is undoubtedly derived from /kâT-/ + /-o/ with lengthened final vowel
 kâsôstâtowin IN_DECL "hide and seek game" ;
-kâspi-pahkwêsikan ANimDECL "biscuit" ;
+kâspi-pahkwêsikan AN_DECL "biscuit" ;
 kâspisikan IN_DECL "coffee" ;
 kâtikan IN_DECL "bead used in hide and guess game" ;
 kâwiy AN_DECL "porcupine-quill" ; ! singular pl generally: kâwiyak
@@ -1112,10 +1112,10 @@ kihci-mihti INimDECL "big club, big stick" ; ! singular; plural: kihci-mihta  NI
 kihci-môhkomân AN_DECL "American; literally: great-knife" ;
 kihci-môhkomân IN_DECL "a big knife" ;
 kihci-môhkomânaskiy IN_DECL "the USA; literally: great-knife-land" ;
-kihci-niska ANimDECLisis "Canada goose" ;
+kihci-niska AN_DECLisis "Canada goose" ;
 kihci-okimâhkân AN_DECL "great chief" ;
 kihci-okimâskwêw AN_DECL "queen" ;
-kihci-okimâw ANimDECL "king ;; government" ;
+kihci-okimâw AN_DECL "king ;; government" ;
 kihci-okimâw-apiwin IN_DECL "throne, royal throne" ;
 kihci-okimâw-astotin IN_DECL "crown" ;
 kihci-okimâwikamik:kihci-okimâwikamikw IN_DECL "palace, castle; royal residence" ;
@@ -1536,7 +1536,7 @@ masânâhtik:masânâhtikw AN_DECL "nettle stalk" ;
 masinahamâtowin IN_DECL "correspondence; debt" ;
 masinahikan IN_DECL "book; letter; written document, report, paper; magazine; will" ;
 masinahikanâhcikos AN_DIM "pencil" ; ! singular, diminutive also NI-1
-masinahikanâhtik:masinahikanâhtikw AN_DECL "pencil, pen" ; ! singular also NI-3
+masinahikanâhtik:masinahikanâhtikw AN_DECL_0POSS "pencil, pen" ; ! singular also NI-3
 masinahikanâpisk:masinahikanâpiskw AN_DECL "slate ;; pen" ;
 masinahikanâpiskos AN_DIM "pen" ;
 masinahikanâpoy IN_DECL "ink" ;
@@ -1785,7 +1785,7 @@ mihtikowâhp IN_DECL "wooden lodge" ;
 mihtikwan IN_DECL "pile of firewood" ; ! singular conversion from VII-n mihtikwan-
 mihtos IN_DECL "raft" ;
 mihyawêsâkay IN_DECL "fur coat" ;
-mihyawêstis AN_DECL "fur glove or mitten" ;
+mihyawêstis AN_DECL_0POSS "fur glove or mitten" ;
 mihyawêstotin IN_DECL "fur cap" ;
 mihyawêyiniw AN_DECL "hairy man" ;
 mikisiw AN_DECL "eagle, bald eagle; golden eagle; small eagle" ;
@@ -1809,7 +1809,7 @@ minihkwêwiyâkan IN_DIM "cup" ; ! From NS 152
 minihkwêwiyâkanis IN_DIM "drinking glass" ; ! From NS 152
 miniscikos IN_DIM "small island" ;
 ministik:ministikw IN_DECL "island" ;
-minôs AN_DIM "cat" ;
+minôs AN_DECL "cat" ;
 minôsis AN_DIM "kitten, little cat" ;
 misacimosis AN_DIM "little horse, pony, foal, colt" ;
 misasiniy AN_DECL "big stone" ;
@@ -1881,7 +1881,7 @@ mistanikwacâs ANimDECLnaahk "gopher" ;
 mistanikwacâsâyow IN_DECL "skunk grass; literally: gopher tail" ;
 mistanikwacâsiwayân AN_DECL "gopher skin" ;
 mistasiniy AN_DECL "big stone" ;
-mistaskihk:mistaskihkw ANimDECL "large pail, kettle" ;
+mistaskihk:mistaskihkw AN_DECL "large pail, kettle" ;
 mistaskosîmin IN_DECL "wild turnip; wild onion" ;
 mistaskosîminâna IN_DECL "bed of wild turnips" ; ! plural 
 mistatay IN_DECL "big stomach, big belly" ;
@@ -1915,7 +1915,7 @@ mistikowat IN_DECL "box, trunk, chest; wagon box" ; ! singular loc: mistikowatih
 mistikoyâkan IN_DECL "wooden bowl" ;
 mistikôsi INimDECL "boat, wooden boat" ; ! singular; plural: mistikôsa  NI-4
 mistikôsiw AN_DECL "Frenchman, French person" ;
-mistikwaskihk:mistikwaskihkw ANimDECL "drum" ;
+mistikwaskihk:mistikwaskihkw AN_DECL "drum" ;
 mistikwaskihkos AN_DIM "small drum" ;
 mistikwaskihkwâhtik:mistikwaskihkwâhtikw IN_DECL "wooden part of drum, drum box" ;
 mistikwaskisin AN_DECL "Dutchman, Netherlander" ; ! singular conversion from NI-1
@@ -2221,7 +2221,7 @@ nâpêsis AN_DIM "boy, little boy" ;
 nâpêstim:nâpêstimw AN_DECL "stallion, male horse; male dog" ;
 nâpêw ANimDECLnaahk "man, male adult, male being; husband" ;
 nâpêwasâkay IN_DECL "man's coat" ;
-nâpêwasikan AN_DECL "man's sock" ;
+nâpêwasikan AN_DECL_0POSS "man's sock" ;
 nâpêwin IN_DECL "maleness" ;
 nâpêyâpos:nâpêyâposw AN_DECL "male rabbit" ;
 nâpihkwân IN_DECL "ship" ;
@@ -2271,7 +2271,7 @@ nihtâwikihcikêwiyiniw AN_DECL "farmer" ;
 nihtâwikiwin IN_DECL "birthday" ;
 nihtâwikwâsowin IN_DECL "fancy sewing" ;
 nihtiy IN_DECL "tea" ;
-nihtîwaskihk:nihtîwaskihkw ANimDECL "teakettle" ;
+nihtîwaskihk:nihtîwaskihkw AN_DECL "teakettle" ;
 nikamon IN_DECL "song; hymn" ;
 nikamowin IN_DECL "song, singing" ; ! singular cf. Saulteaux: nakamowin
 nikik:nikikw AN_DECL "otter" ;
@@ -2701,7 +2701,7 @@ osâwi-sôniyâwâpisk:osâwi-sôniyâwâpiskw AN_DECL "gold ore, gold coin" ; !
 osâwipak:osâwipakw AN_DECL "pumpkin" ;
 osâwisip AN_DECL "brown duck, yellow duck [also used as a personal name]" ;
 osâwistikwân AN_DECL "yellow head, blonde; a fair-haired person" ;
-osâwitâs AN_DECL "a yellow or orange pair of pants" ;
+osâwitâs AN_DECL_0POSS "a yellow or orange pair of pants" ;
 oscikwânis AN_DIM "little head, small head; used as a female personal name" ;
 osêskicês IN_DECL "roach (traditional men's pow-wow headdress made of porcupine quills)" ;
 osikiyâs AN_DIM "lizard, water dog" ;
@@ -2715,7 +2715,7 @@ osîkinikêw AN_DECL "bartender" ;
 osîmimâs AN_DIM "youngest sibling" ;
 osîmimâw AN_DECL "youngest sibling, youngest brother or sister" ; ! singular cf. osîmimâs, 1: nisîm my younger sibling
 osîmisimâw AN_DECL "younger sibling" ; ! singular cf. 1: nisîmis my younger sibling
-osk-âya ANimDECL "young one, young person, young creature; the young" ; ! singular; plural: osk-âyak 
+osk-âya AN_DECL "young one, young person, young creature; the young" ; ! singular; plural: osk-âyak 
 osk-âyi INimDECL "new thing, young creature" ; ! singular; plural: osk-âya  NI-4
 osk-âyis AN_DIM "young one; young animal, young bird" ;
 osk-âyisis AN_DIM "young creature" ;
@@ -2728,11 +2728,11 @@ oskanêw AN_DECL "bull finch" ;
 oskani-pimiy IN_DECL "bone-marrow; oil taken after boiling bones" ;
 oskasakay AN_DECL "new skin" ;
 oskasâkay IN_DECL "new garment (e.g. dress, coat, jacket)" ;
-oskasikan AN_DECL "new sock" ;
-oskaskihk:oskaskihkw ANimDECL "new pail, new kettle" ;
+oskasikan AN_DECL_0POSS "new sock" ;
+oskaskihk:oskaskihkw AN_DECL "new pail, new kettle" ;
 oskaskisin IN_DECL "new shoe, new moccasin, new boot" ;
 oskaskosiya IN_DECL "new grass, fresh hay" ; ! plural 
-oskastis AN_DECL "new glove, new mitt" ;
+oskastis AN_DECL_0POSS "new glove, new mitt" ;
 oskawâsis AN_DIM "newborn baby, infant, young child" ;
 oskayiwinis IN_DIM "new article of clothing" ; ! singular, diminutive plural generally
 oskâcâskos AN_DIM "carrot" ;
@@ -2877,7 +2877,7 @@ pahkisimowin IN_DECL "sunset" ;
 pahkitêwâpoy IN_DECL "gasoline" ;
 pahkwâcîs AN_DIM "bat" ;
 pahkwêsâwâcikan AN_DECL "slice of bread" ;
-pahkwêsikan ANimDECL "bannock, bread; flour" ;
+pahkwêsikan AN_DECL "bannock, bread; flour" ;
 pahkwêsikanihkân AN_DECL "flour" ; ! singular alternatively: pahkwêsikan- + /-ihkân/
 pahkwêsikanis AN_DIM "cookie; small bannock, bit of bread; bit of flour" ;
 pahkwêsikaniwat IN_DECL "flour-bag" ;
@@ -3270,14 +3270,14 @@ pîwâpisko-miciminikan IN_DECL "iron tongs" ;
 pîwâpisko-wanihikan IN_DECL "iron trap" ;
 pîwâpiskominis AN_DIM "bead of metal" ;
 pîwâpiskos AN_DIM "penny, cent; coin; wire; needle" ; ! singular, diminutive plural rarely used
-pîwâpiskowaskihk:pîwâpiskowaskihkw ANimDECL "iron or metal kettle" ;
+pîwâpiskowaskihk:pîwâpiskowaskihkw AN_DECL "iron or metal kettle" ;
 pîwâpiskowâsis AN_DECL "metal child [male personal name]" ;
 pîwâpiskoyâkan IN_DECL "iron or metal dish" ;
 pîwâpiskoyâkanis IN_DIM "small iron or metal dish" ;
 pîwâpiskwastotin IN_DECL "steel helmet" ;
 pîwâpiskwastotin AN_DECL "German" ;
 pîwâpiskwêyâpiy IN_DECL "chain" ;
-pîwêsikan AN_DECL "sock" ;
+pîwêsikan AN_DECL_0POSS "sock" ;
 pîwi-kiscikânis AN_DIM "garden seed" ;
 pîwi-kiscikânis IN_DIM "vegetable" ;
 pîwi-kistikân IN_DECL "vegetable garden" ;
@@ -3507,10 +3507,10 @@ sîsîkwan AN_DECL "rattle" ;
 sîsîkwanis AN_DIM "small rattle ;; member of the Little Rattle dance society" ;
 sîsîkwêsis AN_DIM "little rattlesnake" ; ! singular, diminutive also family name
 sîsîkwêw AN_DECL "rattlesnake" ;
-sîsîp ANimDECL "duck" ;
+sîsîp AN_DECL "duck" ;
 sîsîp-wâwi INimDECL "duck egg" ; ! singular; plural: sîsîp-wâwa  NI-4
 sîsîpasiniya IN_DECL "duck shot" ; ! plural commonly plural
-sîsîpaskihk:sîsîpaskihkw ANimDECL "teapot, tea kettle, kettle with spout" ;
+sîsîpaskihk:sîsîpaskihkw AN_DECL "teapot, tea kettle, kettle with spout" ;
 sîsîpi-mîcimâpoy IN_DECL "duck soup" ;
 sîsîpi-pîway IN_DECL "duck feathers, duck-down" ;
 sîsîpis AN_DIM "small duck" ;
@@ -3546,7 +3546,7 @@ sôkâwâhtik:sôkâwâhtikw AN_DECL "sugar maple" ;
 sôkâwâspinêwin IN_DECL "diabetes" ; ! Independent, 3s 
 sôkâwiyâkanis IN_DIM "sugar bowl" ;
 sômin AN_DECL "grape, raisin" ;
-sômin-pahkwêsikan ANimDECL "raisin bannock, raisin bread; fruit bread" ;
+sômin-pahkwêsikan AN_DECL "raisin bannock, raisin bread; fruit bread" ;
 sôminâhtik:sôminâhtikw AN_DECL "berry tree; grape vine" ;
 sôminâpoy IN_DECL "wine" ;
 sôminis AN_DIM "currant; little grape, raisin" ;
@@ -3556,7 +3556,7 @@ sôniyâs AN_DIM "money; change; [singular:] quarter dollar; a quarter, twenty-f
 sôniyâw AN_DECL "money, wages; gold, silver" ;
 sôniyâw-masinahikan IN_DECL "money order or cheque" ;
 sôniyâwmasinahikan IN_DECL "money order or cheque" ; ! From NS 152
-sôniyâw-okimâw ANimDECL "Indian Agent, money-boss" ;
+sôniyâw-okimâw AN_DECL "Indian Agent, money-boss" ;
 sôniyâw-wâskahikan IN_DECL "bank" ;
 sôniyâwacis IN_DIM "purse; change purse" ;
 sôniyâwasinahikan IN_DECL "cheque; money order" ;
@@ -3715,14 +3715,14 @@ tipwêhamân IN_DECL "curl; ringlet" ;
 tisamân IN_DECL "smudge" ;
 tisamâwin IN_DECL "smoke bucket, smudge" ;
 tiy IN_DECL "tea" ;
-tîwaskihk:tîwaskihkw ANimDECL "tea kettle" ;
+tîwaskihk:tîwaskihkw AN_DECL "tea kettle" ;
 tîwaskihkos AN_DIM "tea pot" ;
 tîwâpoy IN_DECL "infused tea" ;
 tîwâpôhkêwin IN_DECL "the making of tea" ;
 tîwipakwa:tîwipakw IN_DECL_PL "tea leaves (after infusion)" ; ! plural plural generally
 tohtôs AN_DECL "breast; teat" ;
 tohtôsâpoy INimDECLisis "milk" ;
-tohtôsâpoy-askihk:tohtôsâpoy-askihkw ANimDECL "milk pail" ;
+tohtôsâpoy-askihk:tohtôsâpoy-askihkw AN_DECL "milk pail" ;
 tohtôsâpôs IN_DIM "bit of milk" ;
 tohtôsâpôwask:tohtôsâpôwaskw IN_DECL "milkweed; Brassica orientalis" ;
 tohtôsâpôwikamik:tohtôsâpôwikamikw IN_DECL "dairy" ;
@@ -3962,7 +3962,7 @@ wâwâskêsiwi-pîwayêw AN_DECL "horse with a coat like an elk" ;
 wâwâskêsiwistikwân IN_DECL "elk head" ;
 wâwâskîsiw IN_DECL "Waskesiu, SK; [literally: elk]" ;
 wâwi INimDECL "egg" ; ! singular; plural: wâwa  NI-4
-wâwi-pahkwêsikan ANimDECL "cake; noodle dough" ;
+wâwi-pahkwêsikan AN_DECL "cake; noodle dough" ;
 wâwis IN_DIM "small egg" ;
 wâwiyê-pîsim:wâwiyê-pîsimw AN_DECL "full moon, round moon" ;
 wâwiyêsiwi-pîsim:wâwiyêsiwi-pîsimw AN_DECL "full moon" ;
@@ -4124,7 +4124,7 @@ yêhyêwin IN_DECL "breathing, breath" ;
 yêkaw IN_DECL "sand" ;
 yêkawaciy IN_DECL "sand hill" ;
 yiyihkopîwi-pîsim:yiyihkopîwi-pîsimw AN_DECL "Frost Moon, November" ;
-yiyîkastis AN_DECL "glove" ;
+yiyîkastis AN_DECL_0POSS "glove" ;
 yiyîkicihcân IN_DECL "finger" ;
 yiyîkicihcîs IN_DIM "finger" ;
 yiyîkisitân IN_DECL "toe" ;
