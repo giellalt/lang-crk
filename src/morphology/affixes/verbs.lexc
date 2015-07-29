@@ -93,21 +93,15 @@ LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
 !     ==========
 
 LEXICON WICI
-@U.wici.NULL@ RFLX ;
-@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@ RFLX ;
-@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@%- RFLX ;
-
-LEXICON RFLX
-@U.rflx.NULL@ VERBSTEMS ;
-@U.rflx.NULL@ PVSLOT ;
-@U.rflx.NULL@ REDUPL ; 
-@U.rflx.rflx@@U.joiner.NULL@:@U.rflx.rflx@@U.joiner.NULL@ VERBSTEMS ;
-@U.rflx.rflx@@U.joiner.NULL@:@U.rflx.rflx@@U.joiner.NULL@ PVSLOT ;
-@U.rflx.rflx@@U.joiner.NULL@:@U.rflx.rflx@@U.joiner.NULL@ REDUPL ;
-@U.rflx.rflx@@U.joiner.hyphen@:@U.rflx.rflx@@U.joiner.hyphen@%- VERBSTEMS ;
-@U.rflx.rflx@@U.joiner.hyphen@:@U.rflx.rflx@@U.joiner.hyphen@%- PVSLOT ;
-@U.rflx.rflx@@U.joiner.hyphen@:@U.rflx.rflx@@U.joiner.hyphen@%- REDUPL ;
-
+@U.wici.NULL@ VERBSTEMS ;
+@U.wici.NULL@ PVSLOT ;
+@U.wici.NULL@ REDUPL ; 
+@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci VERBSTEMS ;
+@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci PVSLOT ;
+@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci REDUPL ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci%- VERBSTEMS ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci%- PVSLOT ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci%- REDUPL ;
 
 LEXICON PREVERBS  !!= @CODE@ just adds the prefix boundary
  :%> PVSLOT ;
@@ -367,8 +361,6 @@ PV/wase+:wâsê VERBSTEMSPRE "clear; bright" ;
 PV/wawiye+:wâwiyê VERBSTEMSPRE "round, spherical" ; 
 PV/wehci+:wêhci VERBSTEMSPRE "easily" ; 
 PV/wiyipi+:wiyîpi VERBSTEMSPRE "dirty looking; dull brown, drab" ; 
-! PV/wi+:wî VERBSTEMSPRE "intend to, be about to" ; 
-! PV/wici+:wîci VERBSTEMSPRE "together with" ; 
 PV/wihpi+:wîhpi VERBSTEMSPRE "hollowing out" ; 
 PV/wini+:wîni VERBSTEMSPRE "soil, dirty" ; 
 PV/wipi+:wîpi VERBSTEMSPRE "dirty, unclean" ; 
@@ -1028,14 +1020,10 @@ LEXICON TACONJ-CONTTSi !!= * @CODE@
 
 LEXICON TA_IND_WICI !!= @CODE@ gives prs
 
-@U.wici.NULL@ TA_IND_RFLX ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND_RFLX ;
+@U.wici.NULL@ TA_IND ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND ;
 
-LEXICON TA_IND_RFLX !!= @CODE@ gives prs
-
-@U.rflx.NULL@ TA_IND_PERSPREF ;
-@U.rflx.rflx@+Rflx:@U.rflx.rflx@iso AICONJ-CONT ;
-
+LEXICON TA_IND !!= @CODE@ gives prs
 
 < "@U.tense.Prs@"    "+Prs":0          > TA_IND_PERSPREF ;!
 < "@U.tense.Prt@"    "+Prt":0          > TA_IND_PERSPREF ; !
@@ -1044,8 +1032,10 @@ LEXICON TA_IND_RFLX !!= @CODE@ gives prs
 
 LEXICON TA_INDTS_WICI !!= @CODE@ gives prs
 
-@U.wici.NULL@ TA_IND_PERSPREF ;
-@U.wici.wici@+Rel:@U.wici.wici@%>^TSim%^MI TA_IND_PERSPREF ;
+@U.wici.NULL@ TA_INDTS ;
+@U.wici.wici@+Rel:@U.wici.wici@%>^TSim%^MI TA_INDTS ;
+
+LEXICON TA_INDTS!!= @CODE@ gives prs
 
 < "@U.tense.Prs@"    "+Prs":0          > TA_INDTS_PERSPREF ;!
 < "@U.tense.Prt@"    "+Prt":0          > TA_INDTS_PERSPREF ; !
@@ -1054,8 +1044,10 @@ LEXICON TA_INDTS_WICI !!= @CODE@ gives prs
 
 LEXICON TA_INDVw_WICI !!= @CODE@ gives prs
 
-@U.wici.NULL@ TA_INDVw_PERSPREF ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_INDVw_PERSPREF ;
+@U.wici.NULL@ TA_INDVw ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_INDVw ;
+
+LEXICON TA_INDVw!!= @CODE@ gives prs
 
 < "@U.tense.Prs@"    "+Prs":0          > TA_INDVw_PERSPREF ;!
 < "@U.tense.Prt@"    "+Prt":0          > TA_INDVw_PERSPREF ; !
@@ -1065,8 +1057,10 @@ LEXICON TA_INDVw_WICI !!= @CODE@ gives prs
 
 LEXICON TA_INDVw-PL_WICI !!= @CODE@ gives prs, plural forms
 
-@U.wici.NULL@ TA_INDVw_PERSPREF-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_INDVw_PERSPREF-PL ;
+@U.wici.NULL@ TA_INDVw-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_INDVw-PL ;
+
+LEXICON TA_INDVw-PL!!= @CODE@ gives prs
 
 
 < "@U.tense.Prs@"    "+Prs":0          > TA_INDVw_PERSPREF-PL ;!
@@ -1077,8 +1071,10 @@ LEXICON TA_INDVw-PL_WICI !!= @CODE@ gives prs, plural forms
 
 LEXICON TA_INDCw_WICI !!= @CODE@ gives prs
 
-@U.wici.NULL@ TA_INDCw_PERSPREF ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_INDCw_PERSPREF ;
+@U.wici.NULL@ TA_INDCw ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_INDCw ;
+
+LEXICON TA_INDCw !!= @CODE@ gives prs
 
 < "@U.tense.Prs@"    "+Prs":0          > TA_INDCw_PERSPREF ;!
 < "@U.tense.Prt@"    "+Prt":0          > TA_INDCw_PERSPREF ; !
