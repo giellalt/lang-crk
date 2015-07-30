@@ -1446,8 +1446,11 @@ LEXICON VTACw_NULL_O !!= * @CODE@
 
 LEXICON TA_CNJ_WICI !!= @CODE@ Third mode, conjunctive
 
-@U.wici.NULL@ TA_CNJ_SUF ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJ_SUF ;
+@U.wici.NULL@ TA_CNJ ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJ ;
+
+LEXICON TA_CNJ !!= @CODE@ Third mode, conjunctive
+
 
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJ_SUF ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJ_SUF ; !
@@ -1455,8 +1458,10 @@ LEXICON TA_CNJ_WICI !!= @CODE@ Third mode, conjunctive
 
 LEXICON TA_CNJTS_WICI !!= @CODE@ Third mode, conjunctive
 
-@U.wici.NULL@ TA_CNJTS_SUF ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJTS_SUF ;
+@U.wici.NULL@ TA_CNJTS ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJTS ;
+
+LEXICON TA_CNJTS !!= @CODE@ Third mode, conjunctive
 
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJTS_SUF ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJTS_SUF ; !
@@ -1464,8 +1469,11 @@ LEXICON TA_CNJTS_WICI !!= @CODE@ Third mode, conjunctive
 
 LEXICON TA_CNJVw_WICI !!= @CODE@ Third mode, conjunctive
 
-@U.wici.NULL@ TA_CNJVw_SUF ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJVw_SUF ;
+@U.wici.NULL@ TA_CNJVw ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJVw ;
+
+LEXICON TA_CNJVw !!= @CODE@ Third mode, conjunctive
+
 
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJVw_SUF ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJVw_SUF ; !
@@ -1473,8 +1481,11 @@ LEXICON TA_CNJVw_WICI !!= @CODE@ Third mode, conjunctive
 
 LEXICON TA_CNJVw-PL_WICI !!= @CODE@ Third mode, conjunctive, plural forms
 
-@U.wici.NULL@ TA_CNJVw_SUF-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJVw_SUF-PL ;
+@U.wici.NULL@ TA_CNJVw-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJVw-PL ;
+
+LEXICON TA_CNJVw-PL !!= @CODE@ Third mode, conjunctive, plural forms
+
 
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJVw_SUF-PL ; !
 < "+Prt":0          "@U.tense.Prt@"    > TA_CNJVw_SUF-PL ; !
@@ -1483,8 +1494,10 @@ LEXICON TA_CNJVw-PL_WICI !!= @CODE@ Third mode, conjunctive, plural forms
 
 LEXICON TA_CNJCw_WICI !!= @CODE@ Third mode, conjunctive
 
-@U.wici.NULL@ TA_CNJCw_SUF ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJCw_SUF ;
+@U.wici.NULL@ TA_CNJCw ;
+@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJCw ;
+
+LEXICON TA_CNJCw !!= @CODE@ Third mode, conjunctive
 
 
 < "+Prs":0          "@U.tense.Prs@"    > TA_CNJCw_SUF ; !
