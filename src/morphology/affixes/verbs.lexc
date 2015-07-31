@@ -742,13 +742,13 @@ LEXICON imp-long-E !!= @CODE@
 
 
 LEXICON IICONJ  !!= @CODE@ adds the flag for no personprefixes
-< "+V":0 "+II":0 "@U.person.NULL@" > IICONJFORMS ;
+< "+V":0 "+II":0  "@U.wici.NULL@" "@U.person.NULL@" > IICONJFORMS ;
 
 LEXICON IICONJ-SG  !!= @CODE@ adds the flag for no personprefixes, only Sg forms
-< "+V":0 "+II":0 "@U.person.NULL@" > IICONJFORMS-SG ;
+< "+V":0 "+II":0 "@U.wici.NULL@" "@U.person.NULL@" > IICONJFORMS-SG ;
 
 LEXICON IICONJ-PL  !!= @CODE@ adds the flag for no personprefixes, only Pl forms
-< "+V":0 "+II":0 "@U.person.NULL@" > IICONJFORMS-PL ;
+< "+V":0 "+II":0 "@U.wici.NULL@" "@U.person.NULL@" > IICONJFORMS-PL ;
 
 LEXICON IICONJFORMS !!= @CODE@
  IICONJ-CONT ; 
@@ -761,13 +761,13 @@ LEXICON IICONJFORMS-PL !!= @CODE@
 
 
 LEXICON IICONJw  !!= @CODE@  w final
-< "+V":0 "+II":0  "@U.person.NULL@" > IICONJ-CONTw ;
+< "+V":0 "+II":0 "@U.wici.NULL@" "@U.person.NULL@" > IICONJ-CONTw ;
 
 LEXICON IICONJw-SG  !!= @CODE@  w final, only Sg forms
-< "+V":0 "+II":0  "@U.person.NULL@" > IICONJ-CONTw-SG ;
+< "+V":0 "+II":0 "@U.wici.NULL@" "@U.person.NULL@" > IICONJ-CONTw-SG ;
 
 LEXICON IICONJw-PL  !!= @CODE@  w final, only Pl forms
-< "+V":0 "+II":0  "@U.person.NULL@" > IICONJ-CONTw-PL ;
+< "+V":0 "+II":0 "@U.wici.NULL@" "@U.person.NULL@" > IICONJ-CONTw-PL ;
 
 
 LEXICON IICONJ-CONTw !!= @CODE@ w final. Splits according to mood
@@ -842,6 +842,8 @@ LEXICON II_CNJw-PL !!= @CODE@ conjunctive for w final
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERSw-PL ; !
 
 
+
+
 LEXICON II_IND !!= @CODE@ indicative
 < "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERS-SG ; !
 < "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERS-PL ; !
@@ -851,6 +853,7 @@ LEXICON II_IND !!= @CODE@ indicative
 !< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-PL ; 
 !< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; 
 !< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-PL ; 
+
 
 LEXICON II_IND-SG !!= @CODE@ indicative
 < "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERS-SG ; !
