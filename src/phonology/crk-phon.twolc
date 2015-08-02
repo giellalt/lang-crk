@@ -55,7 +55,7 @@ Sets
  Nas = m n ;
  NonNas = b c d f g h j k l p q r s t v w x z  ;
 
- Dummy = %< %> %^LOC %^DIM %^EGLOT %^DUPL1 %^DUPL2 %^MI %^POS %^EA %^TS %^NII ;
+ Dummy = %< %> %^LOC %^DIM %^EGLOT %^DUPL1 %^DUPL2 %^MI %^POS %^EA %^TS %^NII %^MI;
  
 Definitions 
 
@@ -164,7 +164,7 @@ i:0 <=>  \PosDim [ o: | i: ]  [ w: | y: ] %>:0  _ %^LOC:0 ;   ! cahcahkâyow+ihk
 
 "h glottal stop for initial vowel stems in verbs: Conjunctive"
 !! __@RULENAME@__
-%^EGLOT:h <=>  _  %>:0 Vow: ;
+%^EGLOT:h <=>  _  ( %>:0 ) Vow: ;
 
 
 "e and ee to aa rule in first and second person"
@@ -224,7 +224,7 @@ w:0 <=> _ %>:0 %^IO:0 i:o ;
 
 "Matching weak/strong reduplication consonant placeholder %^DUPL1 with stem-initial consonant"
 !! __@RULENAME@__
-%^DUPL1:Cx <=> _ [ a y2: | â h ] ( %-: ) %<:0 Cy: ;
+%^DUPL1:Cx <=> _ [ a y2: | â h ] ( %-: ) %>:0 Cy: ;
    where Cx in ( c k m n p s t w y )
          Cy in ( c k m n p s t w y )
    matched ;
@@ -238,7 +238,7 @@ w:0 <=> _ %>:0 %^IO:0 i:o ;
 
 "Inserting epenthetic y in weak reduplication of vowel-initial stem"
 !! __@RULENAME@__
-y2:y <=> %^DUPL1:0 a _ ( %-: ) %<:0 Vow2: ;
+y2:y <=> %^DUPL1:0 a _ ( %-: ) %>:0 Vow2: ;
 
 "Inserting epenthetic y in strong+weak reduplication of vowel-initial stem"
 !! __@RULENAME@__
