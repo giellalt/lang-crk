@@ -64,13 +64,13 @@ LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no pre
 
 
 LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâki-
-@P.joiner.hyphen@PV/e+:@P.joiner.hyphen@ê%- CNJ_TENSE ;
-@P.joiner.NULL@PV/e+:@P.joiner.NULL@ê%^EGLOT CNJ_TENSE ;
+@P.joiner.hyphen@PV/e+:@P.joiner.hyphen@ê- CNJ_TENSE ;
+@P.joiner.NULL@PV/e+:@P.joiner.NULL@ê^EGLOT CNJ_TENSE ;
 
-@P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ%- CNJ_TENSE ;
-@P.joiner.NULL@PV/kaa+:@P.joiner.NULL@kâ%^EGLOT CNJ_TENSE ;
-@P.joiner.hyphen@PV/kaa_ki+:@P.joiner.hyphen@kâ%-ki%- CNJ_TENSE ;
-@P.joiner.NULL@PV/kaa_ki+:@P.joiner.NULL@kâki%^EGLOT CNJ_TENSE ;
+@P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ- CNJ_TENSE ;
+@P.joiner.NULL@PV/kaa+:@P.joiner.NULL@kâ^EGLOT CNJ_TENSE ;
+@P.joiner.hyphen@PV/kaa_ki+:@P.joiner.hyphen@kâ-ki- CNJ_TENSE ;
+@P.joiner.NULL@PV/kaa_ki+:@P.joiner.NULL@kâki^EGLOT CNJ_TENSE ;
 
 @P.cnj.CC@ CNJ_TENSE ; ! Option to allow for the occasional omission of the ê- or kâ- prefix
 
@@ -99,9 +99,9 @@ LEXICON WICI
 @U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci VERBSTEMS ;
 @U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci PVSLOT ;
 @U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci REDUPL ;
-@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci%- VERBSTEMS ;
-@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci%- PVSLOT ;
-@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci%- REDUPL ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci- VERBSTEMS ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci- PVSLOT ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci- REDUPL ;
 
 LEXICON PREVERBS  !!= @CODE@ just adds the prefix boundary
  :%> PVSLOT ;
@@ -392,8 +392,8 @@ LEXICON REDUPL
 < "RdplW+":0 0:%^DUPL2 0:a 0:"y3" "@U.joiner.hyphen@" 0:%- "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
 
 LEXICON VERBSTEMSPRE_REDUPL
-< 0:0  0:%< "@U.joiner.NULL@" "@C.cnj@"   > VERBSTEMS ;
-< 0:%- 0:%< "@U.joiner.hyphen@" "@C.cnj@" > VERBSTEMS ;
+< 0:0  0:%> "@U.joiner.NULL@" "@C.cnj@"   > VERBSTEMS ;
+< 0:%- 0:%> "@U.joiner.hyphen@" "@C.cnj@" > VERBSTEMS ;
 
 !! Now, lexc directs us to the ../stems/verbs.lexc file,
 !! where we find all the verbal stems. The suffixes are then
@@ -469,19 +469,19 @@ LEXICON AICONJ-CONT !!= @CODE@
 
 LEXICON AI_IND_WICI
 @U.wici.NULL@ AI_IND ;
-@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_IND ;
+@U.wici.wici@+Rel:@U.wici.wici@mi^MI AI_IND ;
 
 LEXICON AI_CNJ_WICI
 @U.wici.NULL@ AI_CNJ ;
-@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_CNJ ;
+@U.wici.wici@+Rel:@U.wici.wici@mi^MI AI_CNJ ;
 
 LEXICON AI_IMP_WICI
 @U.wici.NULL@ AI_IMP ;
-@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_IMP ;
+@U.wici.wici@+Rel:@U.wici.wici@mi^MI AI_IMP ;
 
 LEXICON AI_FUT_CON_WICI
 @U.wici.NULL@ AI_FUT_CON ;
-@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_FUT_CON ; 
+@U.wici.wici@+Rel:@U.wici.wici@mi^MI AI_FUT_CON ; 
 
 LEXICON AICONJ-CONT-PL !!= @CODE@ only plural forms.
 	< "+Ind":0  "@U.mood.indep@" >  AI_IND-PL_WICI ; !
@@ -491,19 +491,19 @@ LEXICON AICONJ-CONT-PL !!= @CODE@ only plural forms.
 
 LEXICON AI_IND-PL_WICI
 @U.wici.NULL@ AI_IND-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_IND-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@mi^MI AI_IND-PL ;
 
 LEXICON AI_CNJ-PL_WICI
 @U.wici.NULL@ AI_CNJ-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_CNJ-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@mi^MI AI_CNJ-PL ;
 
 LEXICON AI_IMP-PL_WICI
 @U.wici.NULL@ AI_IMP-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_IMP-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@mi^MI AI_IMP-PL ;
 
 LEXICON AI_FUT_CON-PL_WICI
 @U.wici.NULL@ AI_FUT_CON-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@mi%^MI AI_FUT_CON-PL ; 
+@U.wici.wici@+Rel:@U.wici.wici@mi^MI AI_FUT_CON-PL ; 
 
 
 LEXICON AICONJ-CONTn !!= @CODE@ 
@@ -514,19 +514,19 @@ LEXICON AICONJ-CONTn !!= @CODE@
 
 LEXICON AI_INDn_WICI
 @U.wici.NULL@ AI_INDn ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_INDn ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI AI_INDn ;
 
 LEXICON AI_CNJn_WICI
 @U.wici.NULL@ AI_CNJn ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_CNJn ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI AI_CNJn ;
 
 LEXICON AI_IMPn_WICI
 @U.wici.NULL@ AI_IMPn ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_IMPn ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI AI_IMPn ;
 
 LEXICON AI_FUT_CONn_WICI
 @U.wici.NULL@ AI_FUT_CON ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_FUT_CON ; 
+@U.wici.wici@+Rel:@U.wici.wici@im^MI AI_FUT_CON ; 
 
 
 LEXICON AICONJ-CONTn-PL !!= @CODE@ 
@@ -537,19 +537,19 @@ LEXICON AICONJ-CONTn-PL !!= @CODE@
 
 LEXICON AI_INDn-PL_WICI
 @U.wici.NULL@ AI_INDn-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_INDn-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI AI_INDn-PL ;
 
 LEXICON AI_CNJn-PL_WICI
 @U.wici.NULL@ AI_CNJn-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_CNJn-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI AI_CNJn-PL ;
 
 LEXICON AI_IMPn-PL_WICI
 @U.wici.NULL@ AI_IMPn-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_IMPn-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI AI_IMPn-PL ;
 
 LEXICON AI_FUT_CONn-PL_WICI
 @U.wici.NULL@ AI_FUT_CON-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI AI_FUT_CON-PL ; 
+@U.wici.wici@+Rel:@U.wici.wici@im^MI AI_FUT_CON-PL ; 
 
 
 LEXICON AI_IND !!= @CODE@ First mode, indicative
@@ -742,13 +742,13 @@ LEXICON imp-long-E !!= @CODE@
 
 
 LEXICON IICONJ  !!= @CODE@ adds the flag for no personprefixes
-< "+V":0 "+II":0  "@U.wici.NULL@" "@U.person.NULL@" > IICONJFORMS ;
+< "+V":0 "+II":0 "@U.person.NULL@" "@U.wici.NULL@" > IICONJFORMS ;
 
 LEXICON IICONJ-SG  !!= @CODE@ adds the flag for no personprefixes, only Sg forms
-< "+V":0 "+II":0 "@U.wici.NULL@" "@U.person.NULL@" > IICONJFORMS-SG ;
+< "+V":0 "+II":0 "@U.person.NULL@" "@U.wici.NULL@" > IICONJFORMS-SG ;
 
 LEXICON IICONJ-PL  !!= @CODE@ adds the flag for no personprefixes, only Pl forms
-< "+V":0 "+II":0 "@U.wici.NULL@" "@U.person.NULL@" > IICONJFORMS-PL ;
+< "+V":0 "+II":0 "@U.person.NULL@" "@U.wici.NULL@" > IICONJFORMS-PL ;
 
 LEXICON IICONJFORMS !!= @CODE@
  IICONJ-CONT ; 
@@ -761,13 +761,13 @@ LEXICON IICONJFORMS-PL !!= @CODE@
 
 
 LEXICON IICONJw  !!= @CODE@  w final
-< "+V":0 "+II":0 "@U.wici.NULL@" "@U.person.NULL@" > IICONJ-CONTw ;
+< "+V":0 "+II":0  "@U.person.NULL@" "@U.wici.NULL@" > IICONJ-CONTw ;
 
 LEXICON IICONJw-SG  !!= @CODE@  w final, only Sg forms
-< "+V":0 "+II":0 "@U.wici.NULL@" "@U.person.NULL@" > IICONJ-CONTw-SG ;
+< "+V":0 "+II":0  "@U.person.NULL@" "@U.wici.NULL@" > IICONJ-CONTw-SG ;
 
 LEXICON IICONJw-PL  !!= @CODE@  w final, only Pl forms
-< "+V":0 "+II":0 "@U.wici.NULL@" "@U.person.NULL@" > IICONJ-CONTw-PL ;
+< "+V":0 "+II":0  "@U.person.NULL@" "@U.wici.NULL@" > IICONJ-CONTw-PL ;
 
 
 LEXICON IICONJ-CONTw !!= @CODE@ w final. Splits according to mood
@@ -1024,7 +1024,7 @@ LEXICON TACONJ-CONTTSi !!= * @CODE@
 LEXICON TA_IND_WICI !!= @CODE@ gives prs
 
 @U.wici.NULL@ TA_IND ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IND ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_IND ;
 
 LEXICON TA_IND !!= @CODE@ gives prs
 
@@ -1036,7 +1036,7 @@ LEXICON TA_IND !!= @CODE@ gives prs
 LEXICON TA_INDTS_WICI !!= @CODE@ gives prs
 
 @U.wici.NULL@ TA_INDTS ;
-@U.wici.wici@+Rel:@U.wici.wici@%>^TSim%^MI TA_INDTS ;
+@U.wici.wici@+Rel:@U.wici.wici@%>^TSim^MI TA_INDTS ;
 
 LEXICON TA_INDTS!!= @CODE@ gives prs
 
@@ -1048,7 +1048,7 @@ LEXICON TA_INDTS!!= @CODE@ gives prs
 LEXICON TA_INDVw_WICI !!= @CODE@ gives prs
 
 @U.wici.NULL@ TA_INDVw ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_INDVw ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_INDVw ;
 
 LEXICON TA_INDVw!!= @CODE@ gives prs
 
@@ -1061,7 +1061,7 @@ LEXICON TA_INDVw!!= @CODE@ gives prs
 LEXICON TA_INDVw-PL_WICI !!= @CODE@ gives prs, plural forms
 
 @U.wici.NULL@ TA_INDVw-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_INDVw-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_INDVw-PL ;
 
 LEXICON TA_INDVw-PL!!= @CODE@ gives prs
 
@@ -1075,7 +1075,7 @@ LEXICON TA_INDVw-PL!!= @CODE@ gives prs
 LEXICON TA_INDCw_WICI !!= @CODE@ gives prs
 
 @U.wici.NULL@ TA_INDCw ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_INDCw ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_INDCw ;
 
 LEXICON TA_INDCw !!= @CODE@ gives prs
 
@@ -1450,7 +1450,7 @@ LEXICON VTACw_NULL_O !!= * @CODE@
 LEXICON TA_CNJ_WICI !!= @CODE@ Third mode, conjunctive
 
 @U.wici.NULL@ TA_CNJ ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJ ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_CNJ ;
 
 LEXICON TA_CNJ !!= @CODE@ Third mode, conjunctive
 
@@ -1462,7 +1462,7 @@ LEXICON TA_CNJ !!= @CODE@ Third mode, conjunctive
 LEXICON TA_CNJTS_WICI !!= @CODE@ Third mode, conjunctive
 
 @U.wici.NULL@ TA_CNJTS ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJTS ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_CNJTS ;
 
 LEXICON TA_CNJTS !!= @CODE@ Third mode, conjunctive
 
@@ -1473,7 +1473,7 @@ LEXICON TA_CNJTS !!= @CODE@ Third mode, conjunctive
 LEXICON TA_CNJVw_WICI !!= @CODE@ Third mode, conjunctive
 
 @U.wici.NULL@ TA_CNJVw ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJVw ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_CNJVw ;
 
 LEXICON TA_CNJVw !!= @CODE@ Third mode, conjunctive
 
@@ -1485,7 +1485,7 @@ LEXICON TA_CNJVw !!= @CODE@ Third mode, conjunctive
 LEXICON TA_CNJVw-PL_WICI !!= @CODE@ Third mode, conjunctive, plural forms
 
 @U.wici.NULL@ TA_CNJVw-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJVw-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_CNJVw-PL ;
 
 LEXICON TA_CNJVw-PL !!= @CODE@ Third mode, conjunctive, plural forms
 
@@ -1498,7 +1498,7 @@ LEXICON TA_CNJVw-PL !!= @CODE@ Third mode, conjunctive, plural forms
 LEXICON TA_CNJCw_WICI !!= @CODE@ Third mode, conjunctive
 
 @U.wici.NULL@ TA_CNJCw ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_CNJCw ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_CNJCw ;
 
 LEXICON TA_CNJCw !!= @CODE@ Third mode, conjunctive
 
@@ -1855,7 +1855,7 @@ LEXICON TA_CNJCw_SUF !!= @CODE@ gives conj + obj tag and suf
 LEXICON TA_FUT_WICI !!= * @CODE@
 
 @U.wici.NULL@ TA_FUT ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_FUT ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_FUT ;
 
 LEXICON TA_FUT !!= * @CODE@
 
@@ -1953,7 +1953,7 @@ LEXICON TA_FUT !!= * @CODE@
 LEXICON TA_FUTTS_WICI !!= * @CODE@
 
 @U.wici.NULL@ TA_FUTTS ;
-@U.wici.wici@+Rel:@U.wici.wici@%>^TSim%^MI TA_FUTTS ;
+@U.wici.wici@+Rel:@U.wici.wici@%>^TSim^MI TA_FUTTS ;
 
 LEXICON TA_FUTTS !!= * @CODE@
 
@@ -2053,7 +2053,7 @@ LEXICON TA_FUTTS !!= * @CODE@
 LEXICON TA_FUTVw_WICI !!= * @CODE@
 
 @U.wici.NULL@ TA_FUTVw ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_FUTVw ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_FUTVw ;
 
 LEXICON TA_FUTVw !!= * @CODE@
 
@@ -2112,7 +2112,7 @@ TA_FUTVw-PL ;
 LEXICON TA_FUTVw-PL_WICI
 
 @U.wici.NULL@ TA_FUTVw-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_FUTVw-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_FUTVw-PL ;
 
 LEXICON TA_FUTVw-PL !!= * @CODE@ plural
 
@@ -2176,7 +2176,7 @@ LEXICON TA_FUTVw-PL !!= * @CODE@ plural
 LEXICON TA_FUTCw_WICI !!= * @CODE@
 
 @U.wici.NULL@ TA_FUTCw ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_FUTCw ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_FUTCw ;
 
 LEXICON TA_FUTCw
  
@@ -2255,7 +2255,7 @@ LEXICON TA_FUTCw
 LEXICON TA_IMP_WICI
 
 @U.wici.NULL@ TA_IMP ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMP ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_IMP ;
 
 LEXICON TA_IMP
 
@@ -2271,7 +2271,7 @@ LEXICON TA_IMP
 LEXICON TATS_IMP_WICI
 
 @U.wici.NULL@ TATS_IMP ;
-@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim%^MI TATS_IMP ;
+@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim^MI TATS_IMP ;
 
 LEXICON TATS_IMP
 
@@ -2287,7 +2287,7 @@ LEXICON TATS_IMP
 LEXICON TA_IMPVw_WICI
 
 @U.wici.NULL@ TA_IMPVw ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPVw ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_IMPVw ;
 
 LEXICON TA_IMPVw
 
@@ -2305,7 +2305,7 @@ LEXICON TA_IMPVw
 LEXICON TA_IMPVw-PL_WICI !!= * @CODE@ plural
 
 @U.wici.NULL@ TA_IMPVw-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPVw-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_IMPVw-PL ;
 
 
 LEXICON TA_IMPVw-PL
@@ -2316,7 +2316,7 @@ LEXICON TA_IMPVw-PL
 LEXICON TA_IMPCw_WICI
 
 @U.wici.NULL@ TA_IMPCw ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TA_IMPCw ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TA_IMPCw ;
 
 LEXICON TA_IMPCw !!= * @CODE@
 
@@ -2332,7 +2332,7 @@ LEXICON TA_IMPCw !!= * @CODE@
 LEXICON TA_IMPi_WICI
 
 @U.wici.NULL@ TA_IMPi ;
-@U.wici.wici@+Rel:@U.wici.wici@%>m%^MI TA_IMPi ;
+@U.wici.wici@+Rel:@U.wici.wici@%>m^MI TA_IMPi ;
 
 LEXICON TA_IMPi
 
@@ -2344,7 +2344,7 @@ LEXICON TA_IMPi
 LEXICON TATSi_IMP_WICI
 
 @U.wici.NULL@ TATSi_IMP ;
-@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim%^MI TATSi_IMP ;
+@U.wici.wici@+Rel:@U.wici.wici@%>%^TSim^MI TATSi_IMP ;
 
 LEXICON TATSi_IMP
 
@@ -2525,71 +2525,71 @@ LEXICON TICONJâ-CONT !!= * @CODE@
 
 LEXICON TI_IND_WICI
 @U.wici.NULL@ TI_IND ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_IND ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_IND ;
 
 LEXICON TI_CNJ_WICI
 @U.wici.NULL@ TI_CNJ ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_CNJ ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_CNJ ;
 
 LEXICON TI_IMP_WICI
 @U.wici.NULL@ TI_IMP ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_IMP ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_IMP ;
 
 LEXICON TI_FUT_CON_WICI
 @U.wici.NULL@ TI_FUT_CON ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_FUT_CON ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_FUT_CON ;
 
 
 
 LEXICON TI_IND-PL_WICI
 @U.wici.NULL@ TI_IND-PL;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_IND-PL;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_IND-PL;
 
 LEXICON TI_CNJ-PL_WICI
 @U.wici.NULL@ TI_CNJ-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_CNJ-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_CNJ-PL ;
 
 LEXICON TI_IMP-PL_WICI
 @U.wici.NULL@ TI_IMP-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_IMP-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_IMP-PL ;
 
 LEXICON TI_FUT_CON-PL_WICI
 @U.wici.NULL@ TI_FUT_CON-PL ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_FUT_CON-PL ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_FUT_CON-PL ;
 
 
 LEXICON TI_INDi_WICI
 @U.wici.NULL@ TI_INDi ;
-@U.wici.wici@+Rel:@U.wici.wici@m%^MI TI_INDi ;
+@U.wici.wici@+Rel:@U.wici.wici@m^MI TI_INDi ;
 
 LEXICON TI_CNJi_WICI
 @U.wici.NULL@ TI_CNJi ;
-@U.wici.wici@+Rel:@U.wici.wici@m%^MI TI_CNJi ;
+@U.wici.wici@+Rel:@U.wici.wici@m^MI TI_CNJi ;
 
 LEXICON TI_IMPi_WICI
 @U.wici.NULL@ TI_IMPi ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_IMPi ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_IMPi ;
 
 LEXICON TI_FUTi_CON_WICI
 @U.wici.NULL@ TI_FUTi_CON ;
-@U.wici.wici@+Rel:@U.wici.wici@m%^MI TI_FUTi_CON ;
+@U.wici.wici@+Rel:@U.wici.wici@m^MI TI_FUTi_CON ;
 
 
 LEXICON TI_INDâ_WICI
 @U.wici.NULL@ TI_INDâ ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_INDâ ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_INDâ ;
 
 LEXICON TI_CNJâ_WICI
 @U.wici.NULL@ TI_CNJâ ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_CNJâ ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_CNJâ ;
 
 LEXICON TI_IMPâ_WICI
 @U.wici.NULL@ TI_IMPâ ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_IMPâ ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_IMPâ ;
 
 LEXICON TI_FUTâ_CON_WICI
 @U.wici.NULL@ TI_FUTâ_CON ;
-@U.wici.wici@+Rel:@U.wici.wici@im%^MI TI_FUTâ_CON ;
+@U.wici.wici@+Rel:@U.wici.wici@im^MI TI_FUTâ_CON ;
 
 
 
