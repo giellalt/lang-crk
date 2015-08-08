@@ -86,7 +86,7 @@ i:0 <=> .#. o %>:0 _ Cns  ;  ! o+ispiton
 
 "t2:t between prefix and vowel"
 !! __@RULENAME@__ , joiner for nouns with initial vowel.
-t2:t  <=> _ %>:0 Vow Lts:+ .#. ;
+t2:t  <=> _ ( %>:0 ) Vow Lts:+ .#. ;
 
 "t:c in diminutives" 
 !! __@RULENAME@__ Okimasis 2004: 13, Rule 2.
