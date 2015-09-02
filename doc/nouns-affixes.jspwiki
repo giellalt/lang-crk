@@ -34,7 +34,8 @@ found at the end of this file.
 !!The declensions for Animates 
 
 
- * LEXICON AN_DECL  for the animate declension, Dim: -isis and -is 
+
+ * LEXICON AN_DECL_0POSS  for the animate declension, Dim: -isis and -is 
 
  * LEXICON AN_DECL_PL  for the animate declension, Dim: -isis and -is 
 
@@ -43,8 +44,10 @@ found at the end of this file.
 
  * LEXICON AN_DECLisis  for the animate declension, Dim: -isis diminutives
 
- * LEXICON ANimDECL  for the animate declension, poss.-im-, Dim: -is
 
+
+
+ * LEXICON AN_DECL  for the animate declension, poss.-im-, Dim: -is
  * LEXICON ANimDECLisis  for the animate declension, poss.-im-, Dim: -isis
 
  * LEXICON ANimDECLis  for the animate declension, poss.-im-, Dim: -is
@@ -150,7 +153,14 @@ LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON ANSUFF_SG 
 
+ * LEXICON ANSUFF_0POSS 
+
  * LEXICON SG_OBV 
+
+
+
+ * LEXICON ANSUFF_Pl_0POSS 
+
 
  * LEXICON ANSUFF_PL 
 

@@ -32,7 +32,11 @@ The Plains Cree verbs are divided in four groups:
 
  LEXICON FUTURE_CONDITIONAL  gives flags for future conditional (no prefix)
 
- LEXICON CONJUNCT  gives flag for conjunctive and prefix ê-
+
+ LEXICON CONJUNCT  gives flag for conjunctive and prefix ê-, kâ-, kâki-
+
+
+
 
  LEXICON CNJ_TENSE    gives prefixes and flags for tense in conjunctive
 
@@ -43,6 +47,7 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 
 Preverbs
+
 
  LEXICON PREVERBS   just adds the prefix boundary
 
@@ -79,40 +84,50 @@ TACONJ_2 ;
 
 
 
-
-
-!!Preverbs
-
-Directing to the various subtypes of conjugation classes
-
-
 Intransitive animate (AI)
 
  LEXICON AICONJ  splits in 4 moods
 
- LEXICON AIPLCONJ   splits in 4 moods, gives only plural forms.
+ LEXICON AICONJ-PL   splits in 4 moods, gives only plural forms.
 
 
  LEXICON AICONJw  splits in 4 moods, for verbs with final -w
 
  LEXICON AICONJn  splits in 4 moods, for verbs with final -n
 
- LEXICON AIPLCONJn  splits in 4 moods, for verbs with final -n
+ LEXICON AICONJn-PL  splits in 4 moods, for verbs with final -n
 
 
  LEXICON AICONJ-CONT  
 
- LEXICON AIPLCONJ-CONT  only plural forms.
+
+
+
+
+ LEXICON AICONJ-CONT-PL  only plural forms.
+
+
+
+
 
 
  LEXICON AICONJ-CONTn  
 
- LEXICON AIPLCONJ-CONTn  
+
+
+
+
+
+ LEXICON AICONJ-CONTn-PL  
+
+
+
+
 
 
  LEXICON AI_IND  First mode, indicative
 
- LEXICON AIPL_IND  First mode, indicative, only plural forms
+ LEXICON AI_IND-PL  First mode, indicative, only plural forms
 
 
  LEXICON AI_INDn  First mode, indicative
@@ -122,7 +137,8 @@ Intransitive animate (AI)
 
  LEXICON AI_IND_PRS  gives person suffixes
 
- LEXICON AIPL_IND_PRS  gives person suffixes, only plural forms
+
+ LEXICON AI_IND_PRS-PL  gives person suffixes, only plural forms
 
 
 
@@ -133,14 +149,18 @@ Intransitive animate (AI)
 
 
 
+
+
+
  LEXICON AI_FUT_CON  
 
  LEXICON AI_FUT_CON-PL  only plural forms.
 
 
+
  LEXICON AI_CNJ  Third mode, conjunctive
 
- LEXICON AIPL_CNJ  Third mode, conjunctive, only plural forms
+ LEXICON AI_CNJ-PL  Third mode, conjunctive, only plural forms
 
 
  LEXICON AI_CNJn  Third mode, conjunctive
@@ -148,10 +168,11 @@ Intransitive animate (AI)
  LEXICON AI_CNJn-PL  Third mode, conjunctive
 
 
+
+
  LEXICON AI_CNJ_SUF  singular forms
 
- LEXICON AIPL_CNJ_SUF   plural forms
-
+ LEXICON AI_CNJ_SUF-PL   plural forms
 
 
  LEXICON AI_CNJ_SUFn 
@@ -161,7 +182,7 @@ Intransitive animate (AI)
 
  LEXICON AI_IMP   Fourth mode, imperative singular forms
 
- LEXICON AIPL_IMP   Fourth mode, imperative, plural forms
+ LEXICON AI_IMP-PL   Fourth mode, imperative, plural forms
 
 
  LEXICON AI_IMPn   Fourth mode, imperative
@@ -182,7 +203,7 @@ Intransitive inanimate (II)
 
  LEXICON IICONJ-SG   adds the flag for no personprefixes, only Sg forms
 
- LEXICON IIPLCONJ   adds the flag for no personprefixes, only Pl forms
+ LEXICON IICONJ-PL   adds the flag for no personprefixes, only Pl forms
 
  LEXICON IICONJFORMS 
 
@@ -195,7 +216,7 @@ Intransitive inanimate (II)
 
  LEXICON IICONJw-SG    w final, only Sg forms
 
- LEXICON IIPLCONJw    w final, only Pl forms
+ LEXICON IICONJw-PL    w final, only Pl forms
 
 
  LEXICON IICONJ-CONTw  w final. Splits according to mood
@@ -224,7 +245,10 @@ Intransitive inanimate (II)
  LEXICON II_CNJw-PL  conjunctive for w final
 
 
+
+
  LEXICON II_IND  indicative
+
 
  LEXICON II_IND-SG  indicative
 
@@ -240,11 +264,20 @@ Intransitive inanimate (II)
 
  LEXICON II_IND_PERSw-SG    w final 
 
+ LEXICON II_IND_PERSw_Fut-SG    w final 
+
+
  LEXICON II_IND_PERSw-PL    w final 
+
+ LEXICON II_IND_PERSw_Fut-PL    w final 
 
  LEXICON II_IND_PERS-SG    -n final 
 
+ LEXICON II_IND_PERS_Fut-SG    -n final 
+
  LEXICON II_IND_PERS-PL    -n final 
+
+ LEXICON II_IND_PERS_Fut-PL    -n final 
 
  LEXICON II_CNJ_PERSw-SG    w final 
 
@@ -253,9 +286,6 @@ Intransitive inanimate (II)
  LEXICON II_CNJ_PERS-SG    -n final 
 
  LEXICON II_CNJ_PERS-PL    -n final 
-
-
-
 
 
 
@@ -273,14 +303,17 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
  * LEXICON TACONJ_2   Vw + i suf deletes w and i.
 
- * LEXICON TAPLCONJ_2   Vw + i suf deletes w and i. plural forms
+ * LEXICON TACONJ_2-PL   Vw + i suf deletes w and i. plural forms
 
 
  * LEXICON TACONJ_3   Cw where w + i become o
 
  * LEXICON TACONJ_4   TS
 
- * LEXICON TACONJ_5  This is just guessing, I do not know how the VTA-5 vers are inflected.
+ * LEXICON TACONJ_5  
+
+ * LEXICON TACONJ_5-TS  
+
 
  * LEXICON TACONJ-CONT 
 
@@ -288,24 +321,49 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
  * LEXICON TACONJ-CONTVw 
 
- * LEXICON TAPLCONJ-CONTVw  plural forms
-
+ * LEXICON TACONJ-CONTVw-PL  plural forms
 
  * LEXICON TACONJ-CONTCw 
 
+ * LEXICON TACONJ-CONTi 
+
+ * LEXICON TACONJ-CONTTSi 
+
+
+ LEXICON TA_IND_WICI  gives prs
 
 
  LEXICON TA_IND  gives prs
 
- LEXICON TA_INDTS  gives prs
 
- LEXICON TA_INDVw  gives prs
+ LEXICON TA_INDTS_WICI  gives prs
 
 
- LEXICON TA_INDVw-PL  gives prs, plural forms
+ LEXICON TA_INDTS gives prs
+
+
+ LEXICON TA_INDVw_WICI  gives prs
+
+
+ LEXICON TA_INDVw gives prs
+
+
+
+ LEXICON TA_INDVw-PL_WICI  gives prs, plural forms
+
+
+ LEXICON TA_INDVw-PL gives prs
+
+
+
+
+ LEXICON TA_INDCw_WICI  gives prs
 
 
  LEXICON TA_INDCw  gives prs
+
+
+
 
  LEXICON TA_IND_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
 
@@ -320,13 +378,18 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
  LEXICON VTA_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
 
 
 
 
 
+
  LEXICON VTA_KI_O 	     gives the objects suffixes matching 2Sg subject
+
+
+
 
 
 
@@ -342,13 +405,18 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
  LEXICON VTAVw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
+
+
 
  LEXICON VTAVw_NI_O-PL    Plural forms
 
 
 
+
  LEXICON VTAVw_KI_O 	     gives the objects suffixes matching 2Sg subject
+
 
 
  LEXICON VTAVw_KI_O-PL 	     plural forms
@@ -362,8 +430,8 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
-
  LEXICON VTACw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
+
 
 
 
@@ -379,16 +447,42 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+ LEXICON TA_CNJ_WICI  Third mode, conjunctive
+
+
  LEXICON TA_CNJ  Third mode, conjunctive
+
+
+
+ LEXICON TA_CNJTS_WICI  Third mode, conjunctive
+
 
  LEXICON TA_CNJTS  Third mode, conjunctive
 
+
+ LEXICON TA_CNJVw_WICI  Third mode, conjunctive
+
+
  LEXICON TA_CNJVw  Third mode, conjunctive
+
+
+
+ LEXICON TA_CNJVw-PL_WICI  Third mode, conjunctive, plural forms
+
 
  LEXICON TA_CNJVw-PL  Third mode, conjunctive, plural forms
 
 
+
+
+ LEXICON TA_CNJCw_WICI  Third mode, conjunctive
+
+
  LEXICON TA_CNJCw  Third mode, conjunctive
+
+
+
 
 
  LEXICON TA_CNJ_SUF  gives conj + obj tag and suf
@@ -407,7 +501,9 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
  LEXICON TA_CNJTS_SUF  gives conj + obj tag and suf
+
 
 
 
@@ -449,6 +545,9 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
+
  LEXICON TA_CNJCw_SUF  gives conj + obj tag and suf
 
 
@@ -464,6 +563,12 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
+
+ * LEXICON TA_FUT_WICI 
+
+
  * LEXICON TA_FUT 
 
 
@@ -473,7 +578,57 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+ * LEXICON TA_FUTTS_WICI 
+
+
+ * LEXICON TA_FUTTS 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * LEXICON TA_FUTVw_WICI 
+
+
  * LEXICON TA_FUTVw 
+
+
+
+
+
+
+
+
+
 
 
 
@@ -485,7 +640,18 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
- * LEXICON TA_FUTCw 
+
+
+
+
+
+
+
+
+
+
+
+ * LEXICON TA_FUTCw_WICI 
 
 
 
@@ -500,10 +666,48 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
- * LEXICON TA_IMPVw-PL  plural
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * LEXICON TA_IMPVw-PL_WICI  plural
+
+
+
+
+
 
 
  * LEXICON TA_IMPCw 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -535,12 +739,17 @@ LEXICON 12PlVw_Imp
 
  * LEXICON 12PlCw_Imp 
 
+ * LEXICON 2Sgi_Imp 
+
+ * LEXICON 2SgTSi_Imp 
+
+
 
 Transitive Inanimate (TI)
 
  * LEXICON TICONJ   
 
- * LEXICON TIPLCONJ    Plural
+ * LEXICON TICONJ-PL    Plural
 
 
  * LEXICON TICONJi   
@@ -548,10 +757,9 @@ Transitive Inanimate (TI)
  * LEXICON TICONJâ   
 
 
-
  * LEXICON TICONJ-CONT 
 
- * LEXICON TIPLCONJ-CONT  plural
+ * LEXICON TICONJ-CONT-PL  plural
 
 
  * LEXICON TICONJi-CONT 
@@ -559,9 +767,30 @@ Transitive Inanimate (TI)
  * LEXICON TICONJâ-CONT 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  LEXICON TI_IND  First mode, indicative
 
- LEXICON TIPL_IND  First mode, indicative
+ LEXICON TI_IND-PL  First mode, indicative
 
 
  LEXICON TI_INDi  First mode, indicative
@@ -571,27 +800,50 @@ Transitive Inanimate (TI)
 
  LEXICON TI_IND_PRS  gives person suffixes singular
 
+
+
+
+
+
  LEXICON TI_IND_PRS-PL  gives person suffixes plural
+
+
+
 
 
  LEXICON TI_INDi_PRS  gives person suffixes
 
+
+
  LEXICON TI_INDâ_PRS  gives person suffixes
+
+
 
 
  * LEXICON TI_FUT_CON 
 
  * LEXICON TI_FUTi_CON 
 
+
+
  * LEXICON TI_FUTâ_CON 
 
+
+
+ * LEXICON TI_FUT_CON-PL 
+
+
  LEXICON TI_CNJ  Third mode, conjunctive
+
+ LEXICON TI_CNJ-PL  Third mode, conjunctive
 
  LEXICON TI_CNJi  Third mode, conjunctive
 
  LEXICON TI_CNJâ  Third mode, conjunctive
 
  * LEXICON TI_CNJ_SUF 
+
+ * LEXICON TI_CNJ_SUF-PL 
 
  * LEXICON TI_CNJi_SUF 
 
@@ -600,8 +852,10 @@ Transitive Inanimate (TI)
 
 
 
-
  * LEXICON TI_IMP 
+
+ * LEXICON TI_IMP-PL 
+
 
  * LEXICON TI_IMPi 
 
