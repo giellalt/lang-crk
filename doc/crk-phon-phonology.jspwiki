@@ -3,9 +3,11 @@
 
  *  t2:0       t between prefix and vowel-initial stem
  *  t3:t       t to s in VTA-4
+ *  t4:c       t to c in VTI-1
  *  w2:w       for keeping the final -w in mow
  *  y2:0       epenthetic joiner in reduplication of vowe-initial stems
  *  y3:0       epenthetic joiner in reduplication of vowe-initial stems
+ *  i2:0       vta5-i epenthesis
  *  %>:0       suffix boundary
  *  %<:0       prefix boundary
  *  %^LOC:0    Locative suffix alternation trigger
@@ -14,12 +16,14 @@
  *  %^POS:0    Possessive alternation trigger
  *  %^DUPL1:0   Reduplication consonant place holder 
  *  %^DUPL2:0   Reduplication consonant place holder 
+ *  %^MI:0     wici-mi consonant place holder 
  *  %^EA:0     ê to â in 1, 2 person of ê verbs
  *  %^TS:0      t to s in VTA-4 verbs before some i-init suf
  *  %^NII:0     n to h or 0 in VII verbs when before k-init suf
  *  %^WI:0       w to 0 in vta-2 verbs when before k-init suf
  *  %^IO:0     VTACw w + i become o
- *  %^VS:0     Ruling out verbs from the w/i deletions in conjunction with possessives. 
+ *  %^VS:0     Ruling out verbs from the w/i deletions in conjunction with possessives.
+
 
 
 
@@ -118,3 +122,18 @@ __Setting double weak+strong reduplication consonant placeholder %^DUPL2 with st
 __Inserting epenthetic y in weak reduplication of vowel-initial stem__
 
 __Inserting epenthetic y in strong+weak reduplication of vowel-initial stem__
+
+__Unspecified Actor t:c in VTAVw__
+
+__Cns mi epenthesis__
+
+__Cns mi epenthesis2__
+
+
+__Cns mi epenthesis2__
+__Cns mi epenthesis2__
+__Cns mi epenthesis2__
+
+__s:0 in kost- VTA-4__
+
+__i2:i in vta-5i__

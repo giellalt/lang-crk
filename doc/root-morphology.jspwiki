@@ -85,6 +85,9 @@ Verbal MSP
  * +PlO    
  * +4Sg/PlO  ambiguous 4th person (both Singular and Plural)
  * +5Sg/PlO  ambiguous 5th person (both Singular and Plural)
+ * +UnspecTI1  Unspecified actor forms Okimāsis, where TI -t stem becomes -c p. 118
+ * +Unspec  Unspecified actor forms Okimāsis p. 118
+
 
  * +Inf     infinitive (infinite?)
  * +Pos     postitive
@@ -134,9 +137,10 @@ morphophonological structure
  * w2       mowêw:mow2
  * t2 		  Prefix in possessives
  * t3       t to s in VTA-4
+ * t4       t:c in VTI-1 with unspecified actor
  * y2       epenthetic joiner in reduplication of vowel-initial stems
  * y3       epenthetic joiner in reduplication of vowel-initial stems
-
+ * i2       vta-5i epenthesis.
 
  * h2 		  Prefix in possessives
 
@@ -146,6 +150,9 @@ morphophonological structure
  * %^NII      n to h or 0 in VII verbs when before k-init suf
  * %^WI       w to 0 in vta-2 verbs when before i-init suf
  * %^IO       VTACw w + i becom o
+ * %^MI     Wici epenthesis
+
+
 
 
 !!Usage tags
@@ -180,7 +187,6 @@ Preverbs
 
 
 
-
 The conjunct form always has
 the ê- prefix, and future conditional never has a prefix.
 
@@ -194,6 +200,11 @@ Prefixes with a certain phonological content:
  * @U.perspref.NULL@   test
  * @U.perspref.NI@   test
  * @U.perspref.KI@   test
+ * @U.person.NULL@   test
+ * @U.person.NI@   test
+ * @U.person.KI@   test
+
+
 
 
  * @U.verb.1sgindep@ 
