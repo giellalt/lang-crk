@@ -1,29 +1,222 @@
+#!/bin/bash
+# @configure_input@
+
+# Automake interprets the exit status as follows:
+# - an exit status of 0 will denote a success
+# - an exit status of 77 a skipped test
+# - an exit status of 99 a hard error
+# - any other exit status will denote a failure.
+
+# To run this test script only, do:
+#
+# make check TESTS=generate-noun-lemmas.sh
+
+# This test script will test that all noun lemmas do generate as themselves.
+# Extend as needed, and copy to new files to adapt to other parts of speech.
+# The changes usually needed are:
+#
+# 1. change the reference to the source file (line 23)
+# 2. extend the extract lemmas egrep expression (lines 53 ff)
+# 3. adapt the tag addition and lemma generation instructions (lines 79 ff)
+
 #Script adapted to Cree
 
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' II' | tr '+:' ' ' | cut -d ' ' -f1 > iiverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TI' | tr '+:' ' ' | cut -d ' ' -f1 > tiverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' AI' | tr '+:' ' ' | cut -d ' ' -f1 > aiverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TA' | tr '+:' ' ' | cut -d ' ' -f1 > taverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' II.*PL' | tr '+:' ' ' | cut -d ' ' -f1 > iiplverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TI.*PL' | tr '+:' ' ' | cut -d ' ' -f1 > tiplverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' AI.*PL' | tr '+:' ' ' | cut -d ' ' -f1 > aiplverblemmas
-    egrep -v '^\!' ../../../src/morphology/stems/verbs.lexc |cut -d ' ' -f1,2 | grep ' TA.*PL' | tr '+:' ' ' | cut -d ' ' -f1 > taplverblemmas
-    cat iiverblemmas |sed 's/$/+V+II+Ind+Prs+3Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 > verbgenlemmas
-    cat tiverblemmas |sed 's/$/+V+TI+Ind+Prs+3Sg/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
-    cat aiverblemmas |sed 's/$/+V+AI+Ind+Prs+3Sg/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
-    cat taverblemmas |sed 's/$/+V+TA+Ind+Prs+3Sg+4Sg\/PlO/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
-    cat iiplverblemmas |sed 's/$/+V+II+Ind+Prs+3Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
-    cat tiplverblemmas |sed 's/$/+V+TI+Ind+Prs+3Pl/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
-    cat aiplverblemmas |sed 's/$/+V+AI+Ind+Prs+3Pl/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
-    cat taplverblemmas |sed 's/$/+V+TA+Ind+Prs+3Pl+4Sg\/PlO/'|$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> verbgenlemmas
-    
-    cat iiverblemmas tiverblemmas aiverblemmas taverblemmas | sort -u > allverblemmas
-    cat verbgenlemmas | grep '[a-z]' | sort -u > sortverbgenlemmas
-    comm -23 allverblemmas sortverbgenlemmas > missingverbs.txt
-        rm *verblemmas *genlemmas
+###### Variables: #######
+POS=verbs
+### in ###
+source_file=${srcdir}/../../../src/morphology/stems/${POS}.lexc
+generator_file=./../../../src/generator-gt-norm
+analyser_file=./../../../src/analyser-gt-norm
 
+### out ###
+ii_verb_lemmas=./filtered-ii-${POS}.txt
+ti_verb_lemmas=./filtered-ti-${POS}.txt
+ai_verb_lemmas=./filtered-ai-${POS}.txt
+ta_verb_lemmas=./filtered-ta-${POS}.txt
+iipl_verb_lemmas=./filtered-iipl-${POS}.txt
+tipl_verb_lemmas=./filtered-tipl-${POS}.txt
+aipl_verb_lemmas=./filtered-aipl-${POS}.txt
+tapl_verb_lemmas=./filtered-tapl-${POS}.txt
+all_verb_lemmas=./filtered-all-${POS}.txt
+generated_lemmas=./generated-${POS}
+result_file=missing_${POS}_lemmas
+gen_result_file=generated_missing_${POS}_lemmas
+ana_result_file=analysed_missing_${POS}_lemmas
 
-    open missingverbs.txt
+# SKIP if source file does not exist:
+if [ ! -f $source_file ]; then
+    echo
+    echo "*** Warning: Source file $source_file not found."
+    echo
+    exit 77
+fi
 
-    
-    
+# Use autotools mechanisms to only run the configured fst types in the tests:
+fsttype=
+@CAN_HFST_TRUE@fsttype="$fsttype hfst"
+@CAN_XFST_TRUE@fsttype="$fsttype xfst"
+
+# Exit if both hfst and xerox have been shut off:
+if test -z "$fsttype" ; then
+    echo "All transducer types have been shut off at configure time."
+    echo "Nothing to test. Skipping."
+    exit 77
+fi
+
+# Get external Mac editor for viewing failed results from configure:
+EXTEDITOR=@SEE@
+
+##### Extract lemmas - add additional egrep pattern as parameters: #####
+##### --include "(pattern1|pattern2|...)"                          #####
+##### --exclude "(pattern1|pattern2|...)"                          #####
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " II" \
+    $source_file > $ii_verb_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " TI" \
+    $source_file > $ti_verb_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " AI" \
+    $source_file > $ai_verb_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " TA" \
+    $source_file > $ta_verb_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " II.*PL" \
+    $source_file > $iipl_verb_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " TI.*PL" \
+    $source_file > $tipl_verb_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " AI.*PL" \
+    $source_file > $aipl_verb_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " TA.*PL" \
+    $source_file > $tapl_verb_lemmas
+
+###### Start testing: #######
+transducer_found=0
+Fail=0
+
+# The script tests both Xerox and Hfst transducers if available:
+for f in $fsttype; do
+    if [ $f == "xfst" ]; then
+        lookup_tool="@LOOKUP@ -flags mbTT"
+        suffix="xfst"
+        # Does lookup support -q / quiet mode?
+        lookup_quiet=$($lookup_tool -q 2>&1 | grep USAGES)
+        if ! [[ $lookup_quiet == *"USAGES"* ]] ; then
+            # it does support quiet mode, add the -q flag:
+            lookup_tool="@LOOKUP@ -q -flags mbTT"
+        fi
+    elif [ $f == "hfst" ]; then
+        lookup_tool="@HFST_OPTIMIZED_LOOKUP@ -q"
+        suffix="hfstol"
+    else
+        Fail=1
+        printf "ERROR: Unknown fst type! "
+        echo "$f - FAIL"
+        continue
+    fi
+    if [ -f "$generator_file.$suffix" ]; then
+        let "transducer_found += 1"
+
+###### Generate lemmas: #######
+        # generate verbs in 3Sg Prs, extract the resulting generated lemma,
+        # store it:
+        sed 's/$/+V+II+Ind+Prs+3Sg/' $ii_verb_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >  $generated_lemmas.$f.txt 
+        sed 's/$/+V+TI+Ind+Prs+3Sg/' $ti_verb_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        sed 's/$/+V+AI+Ind+Prs+3Sg/' $ai_verb_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        sed 's/$/+V+TA+Ind+Prs+3Sg+4Sg\/PlO/' $ta_verb_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        sed 's/$/+V+II+Ind+Prs+3Pl/' $iipl_verb_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        sed 's/$/+V+TI+Ind+Prs+3Pl/' $tipl_verb_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        sed 's/$/+V+AI+Ind+Prs+3Pl/' $aipl_verb_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        sed 's/$/+V+TA+Ind+Prs+3Pl+4Sg\/PlO/' $tapl_verb_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+
+###### Collect results, and generate debug info if FAIL: #######
+        # Sort and compare original input with resulting output - the diff is
+        # used to generate lemmas which are opened in SEE:
+        cat $ii_verb_lemmas $ti_verb_lemmas $ai_verb_lemmas $ta_verb_lemmas \
+            $iipl_verb_lemmas $tipl_verb_lemmas \
+            $aipl_verb_lemmas $tapl_verb_lemmas \
+            | sort -u > $all_verb_lemmas
+        grep '[a-z]' $generated_lemmas.$f.txt > $generated_lemmas.$f.tmp.txt
+        sort -u $generated_lemmas.$f.tmp.txt > $generated_lemmas.$f.txt 
+        comm -23 $all_verb_lemmas $generated_lemmas.$f.txt > $result_file.$f.txt
+
+        # Open the diff file in SubEthaEdit (if there is a diff):
+        if [ -s $result_file.$f.txt ]; then
+        # Outcommented for now in Cree, needs adaption:
+        #   grep -v '^$' $result_file.$f.txt \
+        #     | sed 's/$/+V+Inf/' \
+        #     | $lookup_tool $generator_file.$suffix \
+        #     > $gen_result_file.$f.txt
+        #   # If we have an analyser, analyse the missing lemmas as well:
+        #   if test -e $analyser_file.$suffix ; then
+        #       grep -v '^$' $result_file.$f.txt \
+        #         | $lookup_tool $analyser_file.$suffix \
+        #         > $ana_result_file.$f.txt
+        #   fi
+            # Only open the failed lemmas in see if @SEE@ is defined:
+            if [ "$EXTEDITOR" ]; then
+                $EXTEDITOR $result_file.$f.txt
+        #       $EXTEDITOR $gen_result_file.$f.txt
+        #       $EXTEDITOR $ana_result_file.$f.txt
+            else
+                echo "There where problem lemmas. Details in:"
+                echo "* $result_file.$f.txt    "
+        #       echo "* $gen_result_file.$f.txt"
+        #       echo "* $ana_result_file.$f.txt"
+            fi
+            Fail=1
+            echo "$f - FAIL"
+            continue
+        fi
+        echo "$f - PASS"
+    fi
+done
+
+# When done, remove the generated data file:
+rm -f $ii_verb_lemmas   \
+      $ti_verb_lemmas   \
+      $ai_verb_lemmas   \
+      $ta_verb_lemmas   \
+      $iipl_verb_lemmas \
+      $tipl_verb_lemmas \
+      $aipl_verb_lemmas \
+      $tapl_verb_lemmas \
+      $all_verb_lemmas
+
+# At least one of the Xerox or HFST tests failed:
+if [ "$Fail" = "1" ]; then
+    exit 1
+fi
+
+if [ $transducer_found -eq 0 ]; then
+    echo ERROR: No transducer found
+    exit 77
+fi

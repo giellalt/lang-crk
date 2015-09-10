@@ -1,41 +1,237 @@
+#!/bin/bash
+# @configure_input@
+
+# Automake interprets the exit status as follows:
+# - an exit status of 0 will denote a success
+# - an exit status of 77 a skipped test
+# - an exit status of 99 a hard error
+# - any other exit status will denote a failure.
+
+# To run this test script only, do:
+#
+# make check TESTS=generate-noun-lemmas.sh
+
+# This test script will test that all noun lemmas do generate as themselves.
+# Extend as needed, and copy to new files to adapt to other parts of speech.
+# The changes usually needed are:
+#
+# 1. change the reference to the source file (line 23)
+# 2. extend the extract lemmas egrep expression (lines 53 ff)
+# 3. adapt the tag addition and lemma generation instructions (lines 79 ff)
+
 # Script adapted to Cree
 
-# Pick AN lemmas
-egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN' |egrep -v '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > ANnounlemmas
+###### Variables: #######
+POS=nouns
+### in ###
+source_file=${srcdir}/../../../src/morphology/stems/${POS}.lexc
+generator_file=./../../../src/generator-gt-norm
+analyser_file=./../../../src/analyser-gt-norm
 
-# Pick AN -PL lemmas
-egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' AN.*PL' |egrep -v '^\-' |  tr '+:' ' ' | cut -d ' ' -f1 > plANnounlemmas
+### out ###
+AN_noun_lemmas=./filtered-AN-${POS}.txt
+ANpl_noun_lemmas=./filtered-ANpl-${POS}.txt
+IN_noun_lemmas=./filtered-IN-${POS}.txt
+INpl_noun_lemmas=./filtered-INpl-${POS}.txt
+Dep_AN_noun_lemmas=./filtered-dep-AN-${POS}.txt
+Dep_ANpl_noun_lemmas=./filtered-dep-ANpl-${POS}.txt
+Dep_IN_noun_lemmas=./filtered-dep-IN-${POS}.txt
+Dep_INpl_noun_lemmas=./filtered-dep-INpl-${POS}.txt
+all_noun_lemmas=./filtered-all-${POS}.txt
+generated_lemmas=./generated-${POS}
+result_file=missing_${POS}_lemmas
+gen_result_file=generated_missing_${POS}_lemmas
+ana_result_file=analysed_missing_${POS}_lemmas
 
-# Pick IN lemmas
-egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN' |egrep -v '(^\-|PL)' |  tr '+:' ' ' | cut -d ' ' -f1 > INnounlemmas
+# SKIP if source file does not exist:
+if [ ! -f $source_file ]; then
+    echo
+    echo "*** Warning: Source file $source_file not found."
+    echo
+    exit 77
+fi
 
-# Pick IN PL lemmas
-egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep ' IN.*PL' |egrep -v '^\-' |  tr '+:' ' ' | cut -d ' ' -f1 > plINnounlemmas
+# Use autotools mechanisms to only run the configured fst types in the tests:
+fsttype=
+@CAN_HFST_TRUE@fsttype="$fsttype hfst"
+@CAN_XFST_TRUE@fsttype="$fsttype xfst"
 
-# Generate dependent lemmas in Poss Px1Sg, and add to lemmaslist
-egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |egrep '^\-.* (AN_KIN|AN_DIMPOSS)' |grep -v 'PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+AN+Sg+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >  noungenlemmas  
-egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep '^\-.* AN_KIN.*PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+AN+Pl+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >>  noungenlemmas  
-egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep '^\-.* IN_DEP' |grep -v 'PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+IN+Sg+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >>  noungenlemmas  
-egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc |cut -d ' ' -f1,2 |grep '^\-.* IN_DEP.*PL' |grep -v 'PL' |  tr '+:' ' ' | cut -d ' ' -f1 |sed 's/$/+N+IN+Pl+Px1Sg/' | $LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >>  noungenlemmas  
+# Exit if both hfst and xerox have been shut off:
+if test -z "$fsttype" ; then
+    echo "All transducer types have been shut off at configure time."
+    echo "Nothing to test. Skipping."
+    exit 77
+fi
+
+# Get external Mac editor for viewing failed results from configure:
+EXTEDITOR=@SEE@
+
+##### Extract lemmas - add additional egrep pattern as parameters: #####
+##### --include "(pattern1|pattern2|...)"                          #####
+##### --exclude "(pattern1|pattern2|...)"                          #####
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " AN" \
+    --exclude "(^\-|PL)" \
+    $source_file > $AN_noun_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " AN.*PL" \
+    --exclude "^\-" \
+    $source_file > $ANpl_noun_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " IN" \
+    --exclude "(^\-|PL)" \
+    $source_file > $IN_noun_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include " IN.*PL" \
+    --exclude "^\-" \
+    $source_file > $INpl_noun_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include "^\-.* (AN_KIN|AN_DIMPOSS)" \
+    --exclude "PL" \
+    $source_file > $Dep_AN_noun_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include "^\-.* AN_KIN.*PL" \
+    $source_file > $Dep_ANpl_noun_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include "^\-.* IN_DEP" \
+    --exclude "PL" \
+    $source_file > $Dep_IN_noun_lemmas
+@GTCORE@/scripts/extract-lemmas.sh \
+    --include "^\-.* IN_DEP.*PL" \
+    --exclude "PL" \
+    $source_file > $Dep_INpl_noun_lemmas
+
+###### Start testing: #######
+transducer_found=0
+Fail=0
+
+# The script tests both Xerox and Hfst transducers if available:
+for f in $fsttype; do
+    if [ $f == "xfst" ]; then
+        lookup_tool="@LOOKUP@ -flags mbTT"
+        suffix="xfst"
+        # Does lookup support -q / quiet mode?
+        lookup_quiet=$($lookup_tool -q 2>&1 | grep USAGES)
+        if ! [[ $lookup_quiet == *"USAGES"* ]] ; then
+            # it does support quiet mode, add the -q flag:
+            lookup_tool="@LOOKUP@ -q -flags mbTT"
+        fi
+    elif [ $f == "hfst" ]; then
+        lookup_tool="@HFST_OPTIMIZED_LOOKUP@ -q"
+        suffix="hfstol"
+    else
+        Fail=1
+        printf "ERROR: Unknown fst type! "
+        echo "$f - FAIL"
+        continue
+    fi
+    if [ -f "$generator_file.$suffix" ]; then
+        let "transducer_found += 1"
+
+###### Generate lemmas: #######
+        # Animate singular:
+        sed 's/$/+N+AN+Sg/' $AN_noun_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >  $generated_lemmas.$f.txt 
+        # Animate plural:
+        sed 's/$/+N+AN+Pl/' $ANpl_noun_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        # Inanimate singular:
+        sed 's/$/+N+IN+Sg/' $IN_noun_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        # Inanimate plural:
+        sed 's/$/+N+IN+Pl/' $INpl_noun_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        # Dependent animate singular:
+        sed 's/$/+N+AN+Sg+Px1Sg/' $Dep_AN_noun_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        # Dependent animate plural:
+        sed 's/$/+N+AN+Pl+Px1Sg/' $Dep_ANpl_noun_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        # Dependent inanimate singular:
+        sed 's/$/+N+IN+Sg+Px1Sg/' $Dep_IN_noun_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+        # Dependent inanimate plural:
+        sed 's/$/+N+IN+Pl+Px1Sg/' $Dep_INpl_noun_lemmas \
+            | $lookup_tool $generator_file.$suffix \
+            | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
+            >> $generated_lemmas.$f.txt 
+
+###### Collect results, and generate debug info if FAIL: #######
+        # Sort and compare original input with resulting output - the diff is
+        # used to generate lemmas which are opened in SEE:
+        # Pick dependent lemmas' Px1Sg form (is comment in stems file) :
+        egrep -v '^\!' $source_file | grep '¢' | cut -d '¢' -f2 \
+            | cut -d ' ' -f1 > $all_noun_lemmas
+        cat $AN_noun_lemmas $ANpl_noun_lemmas \
+            $IN_noun_lemmas $INpl_noun_lemmas >> $all_noun_lemmas
+        sort -u -o $all_noun_lemmas $all_noun_lemmas
+        sort -u -o $generated_lemmas.$f.txt $generated_lemmas.$f.txt 
+        comm -23 $all_noun_lemmas $generated_lemmas.$f.txt > $result_file.$f.txt
+
+        # Open the diff file in SubEthaEdit (if there is a diff):
+        if [ -s $result_file.$f.txt ]; then
+        # Commented out for Cree for now, needs special treatment:
+        #   grep -v '^$' $result_file.$f.txt \
+        #     | sed 's/$/+N+Sg+Nom/' \
+        #     | $lookup_tool $generator_file.$suffix \
+        #     > $gen_result_file.$f.txt
+        #   # If we have an analyser, analyse the missing lemmas as well:
+        #   if test -e $analyser_file.$suffix ; then
+        #       grep -v '^$' $result_file.$f.txt \
+        #         | $lookup_tool $analyser_file.$suffix \
+        #         > $ana_result_file.$f.txt
+        #   fi
+            # Only open the failed lemmas in see if @SEE@ is defined:
+            if [ "$EXTEDITOR" ]; then
+                $EXTEDITOR $result_file.$f.txt
+        #       $EXTEDITOR $gen_result_file.$f.txt
+        #       $EXTEDITOR $ana_result_file.$f.txt
+            else
+                echo "There where problem lemmas. Details in:"
+                echo "* $result_file.$f.txt    "
+        #       echo "* $gen_result_file.$f.txt"
+        #       echo "* $ana_result_file.$f.txt"
+            fi
+            Fail=1
+            echo "$f - FAIL"
+            continue
+        fi
+        echo "$f - PASS"
+    fi
+done
+
+# When done, remove the generated data file:
+rm -f $AN_noun_lemmas       \
+      $ANpl_noun_lemmas     \
+      $IN_noun_lemmas       \
+      $INpl_noun_lemmas     \
+      $Dep_AN_noun_lemmas   \
+      $Dep_ANpl_noun_lemmas \
+      $Dep_IN_noun_lemmas   \
+      $Dep_INpl_noun_lemmas \
+      $all_noun_lemmas
 
 
-# Generate independent lemmas
-cat ANnounlemmas |sed 's/$/+N+AN+Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
-cat INnounlemmas |sed 's/$/+N+IN+Sg/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
-cat plANnounlemmas |sed 's/$/+N+AN+Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
-cat plINnounlemmas |sed 's/$/+N+IN+Pl/' |$LOOKUP $GTHOME/langs/crk/src/generator-gt-norm.xfst |cut -f2 >> noungenlemmas
+# At least one of the Xerox or HFST tests failed:
+if [ "$Fail" = "1" ]; then
+    exit 1
+fi
 
-# Pick dependent lemmas' Px1Sg form (is comment in stems file) :
-egrep -v '^\!' ../../../src/morphology/stems/nouns.lexc | grep '¢' | cut -d '¢' -f2 |cut -d ' ' -f1 > allnounlemmas
-
-cat ANnounlemmas INnounlemmas plANnounlemmas plINnounlemmas  >> allnounlemmas
-sort -u -o allnounlemmas allnounlemmas
-cat noungenlemmas | grep '[a-z]' | sort -u > sortnoungenlemmas
-
-# Compare the list of lemmas with the list of generated lemmas
-comm -23 allnounlemmas sortnoungenlemmas > missingnouns.txt
-rm noungenlemmas allnounlemmas depgenlemmas ANnounlemmas INnounlemmas plINnounlemmas plANnounlemmas
-
-
-open missingnouns.txt
-
+if [ $transducer_found -eq 0 ]; then
+    echo ERROR: No transducer found
+    exit 77
+fi
