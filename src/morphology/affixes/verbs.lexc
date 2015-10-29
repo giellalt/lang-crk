@@ -50,17 +50,17 @@ LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
 
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
-<                   "@U.tense.Prs@"                        > WICI ; !
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"    "@P.joiner.NULL@"   > WICI ; ! 
-< 0:k 0:î 0:%-      "@U.tense.Prt@"    "@P.joiner.hyphen@" > WICI ; !
-< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@" "@P.joiner.NULL@"   > WICI ; !
-< 0:k 0:a 0:%-      "@U.tense.FutDef@" "@P.joiner.hyphen@" > WICI ; !
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@P.joiner.NULL@"   > WICI ; ! N.B. - move to a next lexicon
-< 0:w 0:î 0:%-      "@U.tense.FutInt@" "@P.joiner.hyphen@" > WICI ; !
+<                   "@U.tense.Prs@"                        > PREVERBS ; !
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"    "@P.joiner.NULL@"   > PREVERBS ; ! 
+< 0:k 0:î 0:%-      "@U.tense.Prt@"    "@P.joiner.hyphen@" > PREVERBS ; !
+< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@" "@P.joiner.NULL@"   > PREVERBS ; !
+< 0:k 0:a 0:%-      "@U.tense.FutDef@" "@P.joiner.hyphen@" > PREVERBS ; !
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@P.joiner.NULL@"   > PREVERBS ; ! N.B. - move to a next lexicon
+< 0:w 0:î 0:%-      "@U.tense.FutInt@" "@P.joiner.hyphen@" > PREVERBS ; !
 
 
 LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
-@U.mood.FutCon@ WICI ;
+@U.mood.FutCon@ PREVERBS ;
 
 
 LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâki-
@@ -76,15 +76,15 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâ
 
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
-<                   "@U.tense.Prs@"                        > WICI ; ! Present
-< 0:k 0:î 0:%-      "@U.tense.Prt@" "@U.joiner.hyphen@" "@C.cnj@"    > WICI ; ! Preterite, 
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@" "@U.joiner.NULL@" "@C.cnj@"      > WICI ; ! Preterite,
-< 0:w 0:î 0:%-      "@U.tense.FutInt@" "@U.joiner.hyphen@" "@C.cnj@" > WICI ; ! Future Intentional
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@U.joiner.NULL@" "@C.cnj@"   > WICI ; ! Future Intentional
+<                   "@U.tense.Prs@"                        > PREVERBS ; ! Present
+< 0:k 0:î 0:%-      "@U.tense.Prt@" "@U.joiner.hyphen@" "@C.cnj@"    > PREVERBS ; ! Preterite, 
+< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@" "@U.joiner.NULL@" "@C.cnj@"      > PREVERBS ; ! Preterite,
+< 0:w 0:î 0:%-      "@U.tense.FutInt@" "@U.joiner.hyphen@" "@C.cnj@" > PREVERBS ; ! Future Intentional
+< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@U.joiner.NULL@" "@C.cnj@"   > PREVERBS ; ! Future Intentional
 
 
 LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
-@U.mood.imp@  WICI ;
+@U.mood.imp@  PREVERBS ;
 
 !! Words marked GG are from Plains Cree Grammar guide and glossary
 
@@ -92,23 +92,12 @@ LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
 !! !! Preverbs
 !     ==========
 
-LEXICON WICI
-@U.wici.NULL@ VERBSTEMS ;
-@U.wici.NULL@ PVSLOT ;
-@U.wici.NULL@ REDUPL ; 
-@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci VERBSTEMS ;
-@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci PVSLOT ;
-@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci REDUPL ;
-@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci- VERBSTEMS ;
-@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci- PVSLOT ;
-@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci- REDUPL ;
-
 LEXICON PREVERBS  !!= @CODE@ just adds the prefix boundary
  :%> PVSLOT ;
 
 LEXICON PVSLOT
-VERBSTEMS ;
 REDUPL ;
+WICI ;
 PV/acici+:acici VERBSTEMSPRE "head down; upside down" ; ! Position
 PV/ahcahkowi+:ahcahkowi VERBSTEMSPRE "spiritual" ; ! Spirituality
 PV/akawaci+:akâwâci VERBSTEMSPRE "wishfully" ; ! Manner
@@ -378,8 +367,8 @@ LEXICON VERBSTEMSPRE
 < 0:%- "@U.joiner.hyphen@" "@C.cnj@" > PREVERBS ;
 <      "@U.joiner.NULL@" "@C.cnj@"   > REDUPL ;
 < 0:%- "@U.joiner.hyphen@" "@C.cnj@" > REDUPL ;
-<      "@U.joiner.NULL@" "@C.cnj@"   > VERBSTEMS ;
-< 0:%- "@U.joiner.hyphen@" "@C.cnj@" > VERBSTEMS ;
+<      "@U.joiner.NULL@" "@C.cnj@"   > WICI ;
+< 0:%- "@U.joiner.hyphen@" "@C.cnj@" > WICI ;
 !0:%- PREVERBS ;
 !PREVERBS ;
 !0:%- VERBSTEMS ;
@@ -392,8 +381,13 @@ LEXICON REDUPL
 < "RdplW+":0 0:%^DUPL2 0:a 0:"y3" "@U.joiner.hyphen@" 0:%- "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
 
 LEXICON VERBSTEMSPRE_REDUPL
-< 0:0  0:%> "@U.joiner.NULL@" "@C.cnj@"   > VERBSTEMS ;
-< 0:%- 0:%> "@U.joiner.hyphen@" "@C.cnj@" > VERBSTEMS ;
+< 0:0  0:%> "@U.joiner.NULL@" "@C.cnj@"   > WICI ;
+< 0:%- 0:%> "@U.joiner.hyphen@" "@C.cnj@" > WICI ;
+
+LEXICON WICI
+@U.wici.NULL@ VERBSTEMS ;
+@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci VERBSTEMS ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci- VERBSTEMS ;
 
 !! Now, lexc directs us to the ../stems/verbs.lexc file,
 !! where we find all the verbal stems. The suffixes are then
