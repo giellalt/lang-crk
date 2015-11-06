@@ -1326,18 +1326,11 @@ LEXICON VTAVw_KI_O-PL 	    !!= @CODE@ plural forms
 				  
 LEXICON VTAVw_NULL_O !!= * @CODE@	  
 +3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons
-!+3Sg+3SgO:%>ik		  # ; ! Oki 77
-!+3Sg+3SgO:%>kow	  # ; ! Oki 77
-!+3Sg+3PlO:%>êw		  # ; ! Oki 77
-!+3Sg+3PlO:%>ikowak	  # ; ! Oki 77
-!+3Sg+3PlO:%>ikak	  # ; ! Oki 77
 +4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing fourth, fifth persons
+ 
+VTAVw_NULL_O-PL ;
 
-!+4Sg+3SgO:%>%^WIik	  # ; !OBS
 +5Sg/Pl+3Sg/PlO:%>%^WIikoyiwa  # ; ! Implementing fourth, fifth persons
-!+4Sg+3PlO:%>%^WIikwak	  # ; !OBS
-!+5Sg+4SgO:%>%^WIikoyiwa  # ; !??
-!+4Sg+4SgO:%>êyiwa  # ; !
 
 LEXICON VTAVw_NULL_O-PL !!= * @CODE@	  
 !+3Pl+3SgO:%>kow	  # ; ! Oki 77

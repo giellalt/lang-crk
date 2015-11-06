@@ -9,7 +9,7 @@ Config:
 
 Tests:
   
-  Verb - atoskah - help : # Ordinary TA verb - full paradigm; Wolvengrey p. 401; Fut+Cond from Okimāsis pp. 79, 103
+  Verb - atoskahêw - help : # Ordinary TA verb - full paradigm; Wolvengrey p. 401; Fut+Cond from Okimāsis pp. 79, 103
   
      atoskahêw+V+TA+Ind+Prs+1Sg+3SgO: nitatoskahâw # SET I
      atoskahêw+V+TA+Ind+Prs+2Sg+3SgO: kitatoskahâw
@@ -42,22 +42,21 @@ Tests:
      
      
      
+     atoskahêw+V+TA+Ind+Prt+1Sg+3SgO: [nikî-atoskahâw, nikîatoskahâw] # SET I (past)
+     atoskahêw+V+TA+Ind+Prt+2Sg+3SgO: [kikî-atoskahâw, kikîatoskahâw]
+     atoskahêw+V+TA+Ind+Prt+1Pl+3SgO: [nikî-atoskahânân, nikîatoskahânân]
+     atoskahêw+V+TA+Ind+Prt+12Pl+3SgO: [kikî-atoskahânaw, kikîatoskahânaw]
+     atoskahêw+V+TA+Ind+Prt+2Pl+3SgO: [kikî-atoskahâwâw, kikîatoskahâwâw]
      
-     atoskahêw+V+TA+Ind+Prt+1Sg+3SgO: [nikî-atoskahâw, nikîtatoskahâw] # SET I (past)
-     atoskahêw+V+TA+Ind+Prt+2Sg+3SgO: [kikî-atoskahâw, kikîtatoskahâw]
-     atoskahêw+V+TA+Ind+Prt+1Pl+3SgO: [nikî-atoskahânân, nikîtatoskahânân]
-     atoskahêw+V+TA+Ind+Prt+12Pl+3SgO: [kikî-atoskahânaw, kikîtatoskahânaw]
-     atoskahêw+V+TA+Ind+Prt+2Pl+3SgO: [kikî-atoskahâwâw, kikîtatoskahâwâw]
+     atoskahêw+V+TA+Ind+Prt+1Sg+3PlO: [nikî-atoskahâwak, nikîatoskahâwak] # SET I-Pl (past)
+     atoskahêw+V+TA+Ind+Prt+2Sg+3PlO: [kikî-atoskahâwak, kikîatoskahâwak]
+     atoskahêw+V+TA+Ind+Prt+1Pl+3PlO: [nikî-atoskahânânak, nikîatoskahânânak]
+     atoskahêw+V+TA+Ind+Prt+12Pl+3PlO: [kikî-atoskahânawak, kikîatoskahânawak]
+     atoskahêw+V+TA+Ind+Prt+2Pl+3PlO: [kikî-atoskahâwâwak, kikîatoskahâwâwak]
      
-     atoskahêw+V+TA+Ind+Prt+1Sg+3PlO: [nikî-atoskahâwak, nikîtatoskahâwak] # SET I-Pl (past)
-     atoskahêw+V+TA+Ind+Prt+2Sg+3PlO: [kikî-atoskahâwak, kikîtatoskahâwak]
-     atoskahêw+V+TA+Ind+Prt+1Pl+3PlO: [nikî-atoskahânânak, nikîtatoskahânânak]
-     atoskahêw+V+TA+Ind+Prt+12Pl+3PlO: [kikî-atoskahânawak, kikîtatoskahânawak]
-     atoskahêw+V+TA+Ind+Prt+2Pl+3PlO: [kikî-atoskahâwâwak, kikîtatoskahâwâwak]
-     
-     atoskahêw+V+TA+Ind+Prt+2Sg+1SgO: [kikî-atoskahin, kikîtatoskahin] # SET II (past)
-     atoskahêw+V+TA+Ind+Prt+2Sg/Pl+1PlO: [kikî-atoskahinân, kikîtatoskahinân]
-     atoskahêw+V+TA+Ind+Prt+2Pl+1SgO: [kikî-atoskahinâwâw, kikîtatoskahinâwâw]
+     atoskahêw+V+TA+Ind+Prt+2Sg+1SgO: [kikî-atoskahin, kikîatoskahin] # SET II (past)
+     atoskahêw+V+TA+Ind+Prt+2Sg/Pl+1PlO: [kikî-atoskahinân, kikîatoskahinân]
+     atoskahêw+V+TA+Ind+Prt+2Pl+1SgO: [kikî-atoskahinâwâw, kikîatoskahinâwâw]
      
      atoskahêw+V+TA+Ind+Prt+3Sg+4Sg/PlO: [kî-atoskahêw, kîtatoskahêw] # SET III (past)
      atoskahêw+V+TA+Ind+Prt+3Pl+4Sg/PlO: [kî-atoskahêwak, kîtatoskahêwak]
@@ -65,12 +64,40 @@ Tests:
      atoskahêw+V+TA+Ind+Prt+3Sg+5Sg/PlO: [kî-atoskahimêw, kîtatoskahimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
      atoskahêw+V+TA+Ind+Prt+3Pl+5Sg/PlO: [kî-atoskahimêwak, kîtatoskahimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
 
-     atoskahêw+V+TA+Ind+Prt+1Sg+4Sg/PlO: [nikî-atoskahimâwa, nikîtatoskahimâwa] # SET IV (past)
-     atoskahêw+V+TA+Ind+Prt+2Sg+4Sg/PlO: [kikî-atoskahimâwa, kikîtatoskahimâwa]
-     atoskahêw+V+TA+Ind+Prt+1Pl+4Sg/PlO: [nikî-atoskahimânâna, nikîtatoskahimânâna]
-     atoskahêw+V+TA+Ind+Prt+12Pl+4Sg/PlO: [kikî-atoskahimânawa, kikîtatoskahimânawa]
-     atoskahêw+V+TA+Ind+Prt+2Pl+4Sg/PlO: [kikî-atoskahimâwâwa, kikîtatoskahimâwâwa]
+     atoskahêw+V+TA+Ind+Prt+1Sg+4Sg/PlO: [nikî-atoskahimâwa, nikîatoskahimâwa] # SET IV (past)
+     atoskahêw+V+TA+Ind+Prt+2Sg+4Sg/PlO: [kikî-atoskahimâwa, kikîatoskahimâwa]
+     atoskahêw+V+TA+Ind+Prt+1Pl+4Sg/PlO: [nikî-atoskahimânâna, nikîatoskahimânâna]
+     atoskahêw+V+TA+Ind+Prt+12Pl+4Sg/PlO: [kikî-atoskahimânawa, kikîatoskahimânawa]
+     atoskahêw+V+TA+Ind+Prt+2Pl+4Sg/PlO: [kikî-atoskahimâwâwa, kikîatoskahimâwâwa]
      
+     
+     atoskahêw+V+TA+Ind+Fut+Int+1Sg+3SgO: [niwî-atoskahâw, niwîatoskahâw] # SET I (past)
+     atoskahêw+V+TA+Ind+Fut+Int+2Sg+3SgO: [kiwî-atoskahâw, kiwîatoskahâw]
+     atoskahêw+V+TA+Ind+Fut+Int+1Pl+3SgO: [niwî-atoskahânân, niwîatoskahânân]
+     atoskahêw+V+TA+Ind+Fut+Int+12Pl+3SgO: [kiwî-atoskahânaw, kiwîatoskahânaw]
+     atoskahêw+V+TA+Ind+Fut+Int+2Pl+3SgO: [kiwî-atoskahâwâw, kiwîatoskahâwâw]
+     
+     atoskahêw+V+TA+Ind+Fut+Int+1Sg+3PlO: [niwî-atoskahâwak, niwîatoskahâwak] # SET I-Pl (past)
+     atoskahêw+V+TA+Ind+Fut+Int+2Sg+3PlO: [kiwî-atoskahâwak, kiwîatoskahâwak]
+     atoskahêw+V+TA+Ind+Fut+Int+1Pl+3PlO: [niwî-atoskahânânak, niwîatoskahânânak]
+     atoskahêw+V+TA+Ind+Fut+Int+12Pl+3PlO: [kiwî-atoskahânawak, kiwîatoskahânawak]
+     atoskahêw+V+TA+Ind+Fut+Int+2Pl+3PlO: [kiwî-atoskahâwâwak, kiwîatoskahâwâwak]
+     
+     atoskahêw+V+TA+Ind+Fut+Int+2Sg+1SgO: [kiwî-atoskahin, kiwîatoskahin] # SET II (past)
+     atoskahêw+V+TA+Ind+Fut+Int+2Sg/Pl+1PlO: [kiwî-atoskahinân, kiwîatoskahinân]
+     atoskahêw+V+TA+Ind+Fut+Int+2Pl+1SgO: [kiwî-atoskahinâwâw, kiwîatoskahinâwâw]
+     
+     atoskahêw+V+TA+Ind+Fut+Int+3Sg+4Sg/PlO: [wî-atoskahêw, wîtatoskahêw] # SET III (past)
+     atoskahêw+V+TA+Ind+Fut+Int+3Pl+4Sg/PlO: [wî-atoskahêwak, wîtatoskahêwak]
+     atoskahêw+V+TA+Ind+Fut+Int+4Sg/Pl+5Sg/PlO: [wî-atoskahêyiwa, wîtatoskahêyiwa]
+     atoskahêw+V+TA+Ind+Fut+Int+3Sg+5Sg/PlO: [wî-atoskahimêw, wîtatoskahimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     atoskahêw+V+TA+Ind+Fut+Int+3Pl+5Sg/PlO: [wî-atoskahimêwak, wîtatoskahimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+     atoskahêw+V+TA+Ind+Fut+Int+1Sg+4Sg/PlO: [niwî-atoskahimâwa, niwîatoskahimâwa] # SET IV (past)
+     atoskahêw+V+TA+Ind+Fut+Int+2Sg+4Sg/PlO: [kiwî-atoskahimâwa, kiwîatoskahimâwa]
+     atoskahêw+V+TA+Ind+Fut+Int+1Pl+4Sg/PlO: [niwî-atoskahimânâna, niwîatoskahimânâna]
+     atoskahêw+V+TA+Ind+Fut+Int+12Pl+4Sg/PlO: [kiwî-atoskahimânawa, kiwîatoskahimânawa]
+     atoskahêw+V+TA+Ind+Fut+Int+2Pl+4Sg/PlO: [kiwî-atoskahimâwâwa, kiwîatoskahimâwâwa]
      
      
      
@@ -136,66 +163,152 @@ Tests:
 
 
 
-
-     atoskahêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-atoskahak, êhatoskahak] # SET I
-     atoskahêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-atoskahat, êhatoskahat]
-     atoskahêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-atoskahâyâhk, êhatoskahâyâhk]
-     atoskahêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-atoskahâyahk, êhatoskahâyahk]
-     atoskahêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-atoskahâyêk, êhatoskahâyêk]
-
-     atoskahêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-atoskahakik, êhatoskahakik] # SET I-Pl
-     atoskahêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-atoskahacik, êhatoskahacik]
-     atoskahêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-atoskahâyâhkik, êhatoskahâyâhkik]
-     atoskahêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-atoskahâyahkok, êhatoskahâyahkok]
-     atoskahêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-atoskahâyêkok, êhatoskahâyêkok] 
-     
-     atoskahêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-atoskahiyan, êhatoskahiyan] # SET II
-     atoskahêw+V+TA+Cnj+Prs+2Sg/Pl+1PlO: [ê-atoskahiyâhk, êhatoskahiyâhk]
-     atoskahêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-atoskahiyêk, êhatoskahiyêk]    
-     
-     atoskahêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: [ê-atoskahât, êhatoskahât] # SET III
-     atoskahêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: [ê-atoskahâcik, êhatoskahâcik]
-     atoskahêw+V+TA+Ind+Prs+3Sg+5Sg/PlO: [ê-atoskahimât, êhatoskahimât]
-     atoskahêw+V+TA+Ind+Prs+3Pl+5Sg/PlO: [ê-atoskahimâcik, êhatoskahimâcik]
-     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: [ê-atoskahâyit, êhatoskahâyit]
-
-     atoskahêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: [ê-atoskahimak, êhatoskahimak] # SET IV
-     atoskahêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: [ê-atoskahimat, êhatoskahimat]
-     atoskahêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: [ê-atoskahimâyâhk, êhatoskahimâyâhk]
-     atoskahêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: [ê-atoskahimâyahk, êhatoskahimâyahk]
-     atoskahêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: [ê-atoskahimâyek, êhatoskahimâyek]
-     
-     
-     
-     
-     
-     atoskahêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-atoskahit, êhatoskahit] # SET I inv
-     atoskahêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-atoskahisk, êhatoskahisk]
-     atoskahêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-atoskahikoyâhk, êhatoskahikoyâhk]
-     atoskahêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-atoskahikoyahk, êhatoskahikoyahk]
-     atoskahêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-atoskahikoyek, êhatoskahikoyek]
-
-     atoskahêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-atoskahicik, êhatoskahicik] # SET I-Pl inv
-     atoskahêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-atoskahiskik, êhatoskahiskik]
-     atoskahêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-atoskahikoyâhkik, êhatoskahikoyâhkik]
-     atoskahêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-atoskahikoyahkok, êhatoskahikoyahkok]
-     atoskahêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-atoskahikoyêkok, êhatoskahikoyêkok]
-
-     atoskahêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-atoskahitân, êhatoskahitân] # SET II inv
-     atoskahêw+V+TA+Cnj+Prs+1Pl+2Sg/PlO: [ê-atoskahitâhk, êhatoskahitâhk]
-     atoskahêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-atoskahitakok, êhatoskahitakok]
-
-     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: [ê-atoskahikot, êhatoskahikot] # SET III inv
-     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: [ê-atoskahikocik, êhatoskahikocik]
-     atoskahêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: [ê-atoskahikoyit, êhatoskahikoyit]
-          
-     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: [ê-atoskahiyit, êhatoskahiyit] # SET IV inv
-     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: [ê-atoskahiyisk, êhatoskahiyisk]
-     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: [ê-atoskahikoyâhk, êhatoskahikoyâhk, ê-atoskahikowâyâhk, êhatoskahikowâyâhk]
-     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: [ê-atoskahikoyêk, êhatoskahikoyêk, ê-atoskahikowâyêk, êhatoskahikowâyêk]
-     atoskahêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: [ê-atoskahikoyahk, êhatoskahikoyahk, ê-atoskahikowâyahk, êhatoskahikowâyahk]
      
 
+     PV/e+atoskahêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-atoskahak, êhatoskahak] # SET I
+     PV/e+atoskahêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-atoskahat, êhatoskahat]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-atoskahâyâhk, êhatoskahâyâhk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-atoskahâyahk, êhatoskahâyahk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-atoskahâyêk, êhatoskahâyêk]
+	 
+     PV/e+atoskahêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-atoskahakik, êhatoskahakik] # SET I-Pl
+     PV/e+atoskahêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-atoskahacik, êhatoskahacik]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-atoskahâyâhkik, êhatoskahâyâhkik]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-atoskahâyahkok, êhatoskahâyahkok]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-atoskahâyêkok, êhatoskahâyêkok] 
+     
+     PV/e+atoskahêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-atoskahiyan, êhatoskahiyan] # SET II
+     PV/e+atoskahêw+V+TA+Cnj+Prs+2Sg/Pl+1PlO: [ê-atoskahiyâhk, êhatoskahiyâhk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-atoskahiyêk, êhatoskahiyêk]    
+     
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Sg+4Sg/PlO: [ê-atoskahât, êhatoskahât] # SET III
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Pl+4Sg/PlO: [ê-atoskahâcik, êhatoskahâcik]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Sg+5Sg/PlO: [ê-atoskahimât, êhatoskahimât]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Pl+5Sg/PlO: [ê-atoskahimâcik, êhatoskahimâcik]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+5Sg/PlO: [ê-atoskahâyit, êhatoskahâyit]
+	 				
+     PV/e+atoskahêw+V+TA+Cnj+Prs+1Sg+4Sg/PlO: [ê-atoskahimak, êhatoskahimak] # SET IV
+     PV/e+atoskahêw+V+TA+Cnj+Prs+2Sg+4Sg/PlO: [ê-atoskahimat, êhatoskahimat]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+1Pl+4Sg/PlO: [ê-atoskahimâyâhk, êhatoskahimâyâhk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+12Pl+4Sg/PlO: [ê-atoskahimâyahk, êhatoskahimâyahk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+2Pl+4Sg/PlO: [ê-atoskahimâyek, êhatoskahimâyek]
+     
+     
+     
+     
+     			
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-atoskahit, êhatoskahit] # SET I inv
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-atoskahisk, êhatoskahisk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-atoskahikoyâhk, êhatoskahikoyâhk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-atoskahikoyahk, êhatoskahikoyahk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-atoskahikoyek, êhatoskahikoyek]
+	 				
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-atoskahicik, êhatoskahicik] # SET I-Pl inv
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-atoskahiskik, êhatoskahiskik]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-atoskahikoyâhkik, êhatoskahikoyâhkik]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-atoskahikoyahkok, êhatoskahikoyahkok]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-atoskahikoyêkok, êhatoskahikoyêkok]
+	 				
+     PV/e+atoskahêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-atoskahitân, êhatoskahitân] # SET II inv
+     PV/e+atoskahêw+V+TA+Cnj+Prs+1Pl+2Sg/PlO: [ê-atoskahitâhk, êhatoskahitâhk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-atoskahitakok, êhatoskahitakok]
+	 				
+     PV/e+atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+3SgO: [ê-atoskahikot, êhatoskahikot] # SET III inv
+     PV/e+atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+3PlO: [ê-atoskahikocik, êhatoskahikocik]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+5Sg/Pl+4Sg/PlO: [ê-atoskahikoyit, êhatoskahikoyit]
+          			
+     PV/e+atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+1SgO: [ê-atoskahiyit, êhatoskahiyit] # SET IV inv
+     PV/e+atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+2SgO: [ê-atoskahiyisk, êhatoskahiyisk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+1PlO: [ê-atoskahikoyâhk, êhatoskahikoyâhk, ê-atoskahikowâyâhk, êhatoskahikowâyâhk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+2PlO: [ê-atoskahikoyêk, êhatoskahikoyêk, ê-atoskahikowâyêk, êhatoskahikowâyêk]
+     PV/e+atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+12PlO: [ê-atoskahikoyahk, êhatoskahikoyahk, ê-atoskahikowâyahk, êhatoskahikowâyahk]
+     
+          atoskahêw+V+TA+Cnj+Prs+1Sg+3SgO: [atoskahak, atoskahak] # SET I
+     atoskahêw+V+TA+Cnj+Prs+2Sg+3SgO: [atoskahat, atoskahat]
+     atoskahêw+V+TA+Cnj+Prs+1Pl+3SgO: [atoskahâyâhk, atoskahâyâhk]
+     atoskahêw+V+TA+Cnj+Prs+12Pl+3SgO: [atoskahâyahk, atoskahâyahk]
+     atoskahêw+V+TA+Cnj+Prs+2Pl+3SgO: [atoskahâyêk, atoskahâyêk]
+
+     atoskahêw+V+TA+Cnj+Prs+1Sg+3PlO: [atoskahakik, atoskahakik] # SET I-Pl
+     atoskahêw+V+TA+Cnj+Prs+2Sg+3PlO: [atoskahacik, atoskahacik]
+     atoskahêw+V+TA+Cnj+Prs+1Pl+3PlO: [atoskahâyâhkik, atoskahâyâhkik]
+     atoskahêw+V+TA+Cnj+Prs+12Pl+3PlO: [atoskahâyahkok, atoskahâyahkok]
+     atoskahêw+V+TA+Cnj+Prs+2Pl+3PlO: [atoskahâyêkok, atoskahâyêkok] 
+     
+     atoskahêw+V+TA+Cnj+Prs+2Sg+1SgO: [atoskahiyan, atoskahiyan] # SET II
+     atoskahêw+V+TA+Cnj+Prs+2Sg/Pl+1PlO: [atoskahiyâhk, atoskahiyâhk]
+     atoskahêw+V+TA+Cnj+Prs+2Pl+1SgO: [atoskahiyêk, atoskahiyêk]    
+     
+     atoskahêw+V+TA+Cnj+Prs+3Sg+4Sg/PlO: [atoskahât, atoskahât] # SET III
+     atoskahêw+V+TA+Cnj+Prs+3Pl+4Sg/PlO: [atoskahâcik, atoskahâcik]
+     atoskahêw+V+TA+Cnj+Prs+3Sg+5Sg/PlO: [atoskahimât, atoskahimât]
+     atoskahêw+V+TA+Cnj+Prs+3Pl+5Sg/PlO: [atoskahimâcik, atoskahimâcik]
+     atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+5Sg/PlO: [atoskahâyit, atoskahâyit]
+					
+     atoskahêw+V+TA+Cnj+Prs+1Sg+4Sg/PlO: [atoskahimak, atoskahimak] # SET IV
+     atoskahêw+V+TA+Cnj+Prs+2Sg+4Sg/PlO: [atoskahimat, atoskahimat]
+     atoskahêw+V+TA+Cnj+Prs+1Pl+4Sg/PlO: [atoskahimâyâhk, atoskahimâyâhk]
+     atoskahêw+V+TA+Cnj+Prs+12Pl+4Sg/PlO: [atoskahimâyahk, atoskahimâyahk]
+     atoskahêw+V+TA+Cnj+Prs+2Pl+4Sg/PlO: [atoskahimâyek, atoskahimâyek]
+     			
+     			
+     			
+     			
+     			
+     atoskahêw+V+TA+Cnj+Prs+3Sg+1SgO: [atoskahit, atoskahit] # SET I inv
+     atoskahêw+V+TA+Cnj+Prs+3Sg+2SgO: [atoskahisk, atoskahisk]
+     atoskahêw+V+TA+Cnj+Prs+3Sg+1PlO: [atoskahikoyâhk, atoskahikoyâhk]
+     atoskahêw+V+TA+Cnj+Prs+3Sg+12PlO: [atoskahikoyahk, atoskahikoyahk]
+     atoskahêw+V+TA+Cnj+Prs+3Sg+2PlO: [atoskahikoyek, atoskahikoyek]
+					
+     atoskahêw+V+TA+Cnj+Prs+3Pl+1SgO: [atoskahicik, atoskahicik] # SET I-Pl inv
+     atoskahêw+V+TA+Cnj+Prs+3Pl+2SgO: [atoskahiskik, atoskahiskik]
+     atoskahêw+V+TA+Cnj+Prs+3Pl+1PlO: [atoskahikoyâhkik, atoskahikoyâhkik]
+     atoskahêw+V+TA+Cnj+Prs+3Pl+12PlO: [atoskahikoyahkok, atoskahikoyahkok]
+     atoskahêw+V+TA+Cnj+Prs+3Pl+2PlO: [atoskahikoyêkok, atoskahikoyêkok]
+					
+     atoskahêw+V+TA+Cnj+Prs+1Sg+2SgO: [atoskahitân, atoskahitân] # SET II inv
+     atoskahêw+V+TA+Cnj+Prs+1Pl+2Sg/PlO: [atoskahitâhk, atoskahitâhk]
+     atoskahêw+V+TA+Cnj+Prs+1Sg+2PlO: [atoskahitakok, atoskahitakok]
+					
+     atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+3SgO: [atoskahikot, atoskahikot] # SET III inv
+     atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+3PlO: [atoskahikocik, atoskahikocik]
+     atoskahêw+V+TA+Cnj+Prs+5Sg/Pl+4Sg/PlO: [atoskahikoyit, atoskahikoyit]
+          			
+     atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+1SgO: [atoskahiyit, atoskahiyit] # SET IV inv
+     atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+2SgO: [atoskahiyisk, atoskahiyisk]
+     atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+1PlO: [atoskahikoyâhk, atoskahikoyâhk, atoskahikowâyâhk, atoskahikowâyâhk]
+     atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+2PlO: [atoskahikoyêk, atoskahikoyêk, atoskahikowâyêk, atoskahikowâyêk]
+     atoskahêw+V+TA+Cnj+Prs+4Sg/Pl+12PlO: [atoskahikoyahk, atoskahikoyahk, atoskahikowâyahk, atoskahikowâyahk]
+     
+     
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+1Sg+3SgO: [niwî-wîci-atoskahimâw, niwîwîciatoskahimâw] # SET I (past)
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+2Sg+3SgO: [kiwî-wîci-atoskahimâw, kiwîwîciatoskahimâw]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+1Pl+3SgO: [niwî-wîci-atoskahimânân, niwîwîciatoskahimânân]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+12Pl+3SgO: [kiwî-wîci-atoskahimânaw, kiwîwîciatoskahimânaw]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+2Pl+3SgO: [kiwî-wîci-atoskahimâwâw, kiwîwîciatoskahimâwâw]
+     
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+1Sg+3PlO: [niwî-wîci-atoskahimâwak, niwîwîciatoskahimâwak] # SET I-Pl (past)
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+2Sg+3PlO: [kiwî-wîci-atoskahimâwak, kiwîwîciatoskahimâwak]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+1Pl+3PlO: [niwî-wîci-atoskahimânânak, niwîwîciatoskahimânânak]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+12Pl+3PlO: [kiwî-wîci-atoskahimânawak, kiwîwîciatoskahimânawak]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+2Pl+3PlO: [kiwî-wîci-atoskahimâwâwak, kiwîwîciatoskahimâwâwak]
+     
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+2Sg+1SgO: [kiwî-wîci-atoskahimin, kiwîwîciatoskahimin] # SET II (past)
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+2Sg/Pl+1PlO: [kiwî-wîci-atoskahiminân, kiwîwîciatoskahiminân]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+2Pl+1SgO: [kiwî-wîci-atoskahiminâwâw, kiwîwîciatoskahiminâwâw]
+     
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+3Sg+4Sg/PlO: [wî-wîci-atoskahimêw, wîwîciatoskahimêw] # SET III (past)
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+3Pl+4Sg/PlO: [wî-wîci-atoskahimêwak, wîwîciatoskahimêwak]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+4Sg/Pl+5Sg/PlO: [wî-wîci-atoskahimêyiwa, wîwîciatoskahimêyiwa]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+3Sg+5Sg/PlO: [wî-wîci-atoskahimimêw, wîwîciatoskahimimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+3Pl+5Sg/PlO: [wî-wîci-atoskahimimêwak, wîwîciatoskahimimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+1Sg+4Sg/PlO: [niwî-wîci-atoskahimimâwa, niwîwîciatoskahimimâwa] # SET IV (past)
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+2Sg+4Sg/PlO: [kiwî-wîci-atoskahimimâwa, kiwîwîciatoskahimimâwa]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+1Pl+4Sg/PlO: [niwî-wîci-atoskahimimânâna, niwîwîciatoskahimimânâna]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+12Pl+4Sg/PlO: [kiwî-wîci-atoskahimimânawa, kiwîwîciatoskahimimânawa]
+     atoskahêw+V+TA+Ind+Rel+Fut+Int+2Pl+4Sg/PlO: [kiwî-wîci-atoskahimimâwâwa, kiwîwîciatoskahimimâwâwa]
 
 
 
