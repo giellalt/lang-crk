@@ -21,14 +21,14 @@ Tests:
      atoskêw+V+AI+Ind+Prs+2Pl: kitatoskânâwâw
      atoskêw+V+AI+Ind+Prs+3Pl: atoskêwak
 
-     atoskêw+V+AI+Ind+Prt+1Sg: [nikî-atoskân, nikîhatoskân]
-     atoskêw+V+AI+Ind+Prt+2Sg: [kikî-atoskân, kikîhatoskân]
-     atoskêw+V+AI+Ind+Prt+3Sg: [kî-atoskêw, kîhatoskêw]
-     atoskêw+V+AI+Ind+Prt+4Sg/Pl: [kî-atoskêyiwa, kîhatoskêyiwa]
-     atoskêw+V+AI+Ind+Prt+1Pl: [nikî-atoskânân, nikîhatoskânân]
-     atoskêw+V+AI+Ind+Prt+12Pl: [kikî-atoskânaw, kikîhatoskânaw, kikî-atoskânânaw, kikîhatoskânânaw]
-     atoskêw+V+AI+Ind+Prt+2Pl: [kikî-atoskânâwâw, kikîhatoskânâwâw]
-     atoskêw+V+AI+Ind+Prt+3Pl: [kî-atoskêwak, kîhatoskêwak]
+     atoskêw+V+AI+Ind+Prt+1Sg: [nikî-atoskân, nikîatoskân]
+     atoskêw+V+AI+Ind+Prt+2Sg: [kikî-atoskân, kikîatoskân]
+     atoskêw+V+AI+Ind+Prt+3Sg: [kî-atoskêw, kîatoskêw]
+     atoskêw+V+AI+Ind+Prt+4Sg/Pl: [kî-atoskêyiwa, kîatoskêyiwa]
+     atoskêw+V+AI+Ind+Prt+1Pl: [nikî-atoskânân, nikîatoskânân]
+     atoskêw+V+AI+Ind+Prt+12Pl: [kikî-atoskânaw, kikîatoskânaw, kikî-atoskânânaw, kikîatoskânânaw]
+     atoskêw+V+AI+Ind+Prt+2Pl: [kikî-atoskânâwâw, kikîatoskânâwâw]
+     atoskêw+V+AI+Ind+Prt+3Pl: [kî-atoskêwak, kîatoskêwak]
      
      atoskêw+V+AI+Ind+Fut+Def+1Sg: [nika-atoskân, nikaatoskân]
      atoskêw+V+AI+Ind+Fut+Def+2Sg: [kika-atoskân, kikaatoskân]
@@ -48,33 +48,50 @@ Tests:
      atoskêw+V+AI+Ind+Fut+Int+2Pl: [kiwî-atoskânâwâw, kiwîatoskânâwâw]
      atoskêw+V+AI+Ind+Fut+Int+3Pl: [wî-atoskêwak, wîatoskêwak]
      
+     atoskêw+V+AI+Cnj+Prs+1Sg: [atoskêyân, atoskêyân]
+     atoskêw+V+AI+Cnj+Prs+2Sg: [atoskêyan, atoskêyan]
+     atoskêw+V+AI+Cnj+Prs+3Sg: [atoskêt, atoskêt]
+     atoskêw+V+AI+Cnj+Prs+4Sg/Pl: [atoskêyit, atoskêyit]
+     atoskêw+V+AI+Cnj+Prs+1Pl: [atoskêyâhk, atoskêyâhk]
+     atoskêw+V+AI+Cnj+Prs+12Pl: [atoskêyahk, atoskêyahk]
+     atoskêw+V+AI+Cnj+Prs+2Pl: [atoskêyêk, atoskêyêk]
+     atoskêw+V+AI+Cnj+Prs+3Pl: [atoskêcik, atoskêcik]
      
-     atoskêw+V+AI+Cnj+Prs+1Sg: [ê-atoskêyân, êhatoskêyân]
-     atoskêw+V+AI+Cnj+Prs+2Sg: [ê-atoskêyan, êhatoskêyan]
-     atoskêw+V+AI+Cnj+Prs+3Sg: [ê-atoskêt, êhatoskêt]
-     atoskêw+V+AI+Cnj+Prs+4Sg/Pl: [ê-atoskêyit, êhatoskêyit]
-     atoskêw+V+AI+Cnj+Prs+1Pl: [ê-atoskêyâhk, êhatoskêyâhk]
-     atoskêw+V+AI+Cnj+Prs+12Pl: [ê-atoskêyahk, êhatoskêyahk]
-     atoskêw+V+AI+Cnj+Prs+2Pl: [ê-atoskêyêk, êhatoskêyêk]
-     atoskêw+V+AI+Cnj+Prs+3Pl: [ê-atoskêcik, êhatoskêcik]
+     PV/e+atoskêw+V+AI+Cnj+Prs+1Sg: [ê-atoskêyân, êatoskêyân]
+     PV/e+atoskêw+V+AI+Cnj+Prs+2Sg: [ê-atoskêyan, êatoskêyan]
+     PV/e+atoskêw+V+AI+Cnj+Prs+3Sg: [ê-atoskêt, êatoskêt]
+     PV/e+atoskêw+V+AI+Cnj+Prs+4Sg/Pl: [ê-atoskêyit, êatoskêyit]
+     PV/e+atoskêw+V+AI+Cnj+Prs+1Pl: [ê-atoskêyâhk, êatoskêyâhk]
+     PV/e+atoskêw+V+AI+Cnj+Prs+12Pl: [ê-atoskêyahk, êatoskêyahk]
+     PV/e+atoskêw+V+AI+Cnj+Prs+2Pl: [ê-atoskêyêk, êatoskêyêk]
+     PV/e+atoskêw+V+AI+Cnj+Prs+3Pl: [ê-atoskêcik, êatoskêcik]
+         
+     atoskêw+V+AI+Cnj+Prt+1Sg: [kî-atoskêyân, kîatoskêyân]
+     atoskêw+V+AI+Cnj+Prt+2Sg: [kî-atoskêyan, kîatoskêyan]
+     atoskêw+V+AI+Cnj+Prt+3Sg: [kî-atoskêt, kîatoskêt]
+     atoskêw+V+AI+Cnj+Prt+4Sg/Pl: [kî-atoskêyit, kîatoskêyit]
+     atoskêw+V+AI+Cnj+Prt+1Pl: [kî-atoskêyâhk, kîatoskêyâhk]
+     atoskêw+V+AI+Cnj+Prt+12Pl: [kî-atoskêyahk, kîatoskêyahk]
+     atoskêw+V+AI+Cnj+Prt+2Pl: [kî-atoskêyêk, kîatoskêyêk]
+     atoskêw+V+AI+Cnj+Prt+3Pl: [kî-atoskêcik, kîatoskêcik]
      
-     atoskêw+V+AI+Cnj+Prt+1Sg: [ê-kî-atoskêyân, êkîhatoskêyân]
-     atoskêw+V+AI+Cnj+Prt+2Sg: [ê-kî-atoskêyan, êkîhatoskêyan]
-     atoskêw+V+AI+Cnj+Prt+3Sg: [ê-kî-atoskêt, êkîhatoskêt]
-     atoskêw+V+AI+Cnj+Prt+4Sg/Pl: [ê-kî-atoskêyit, êkîhatoskêyit]
-     atoskêw+V+AI+Cnj+Prt+1Pl: [ê-kî-atoskêyâhk, êkîhatoskêyâhk]
-     atoskêw+V+AI+Cnj+Prt+12Pl: [ê-kî-atoskêyahk, êkîhatoskêyahk]
-     atoskêw+V+AI+Cnj+Prt+2Pl: [ê-kî-atoskêyêk, êkîhatoskêyêk]
-     atoskêw+V+AI+Cnj+Prt+3Pl: [ê-kî-atoskêcik, êkîhatoskêcik]
+     atoskêw+V+AI+Cnj+Fut+Int+1Sg: [wî-atoskêyân, wîatoskêyân]
+     atoskêw+V+AI+Cnj+Fut+Int+2Sg: [wî-atoskêyan, wîatoskêyan]
+     atoskêw+V+AI+Cnj+Fut+Int+3Sg: [wî-atoskêt, wîatoskêt]
+     atoskêw+V+AI+Cnj+Fut+Int+4Sg/Pl: [wî-atoskêyit, wîatoskêyit]
+     atoskêw+V+AI+Cnj+Fut+Int+1Pl: [wî-atoskêyâhk, wîatoskêyâhk]
+     atoskêw+V+AI+Cnj+Fut+Int+12Pl: [wî-atoskêyahk, wîatoskêyahk]
+     atoskêw+V+AI+Cnj+Fut+Int+2Pl: [wî-atoskêyêk, wîatoskêyêk]
+     atoskêw+V+AI+Cnj+Fut+Int+3Pl: [wî-atoskêcik, wîatoskêcik]
      
-     atoskêw+V+AI+Cnj+Fut+Int+1Sg: [ê-wî-atoskêyân, êwîhatoskêyân]
-     atoskêw+V+AI+Cnj+Fut+Int+2Sg: [ê-wî-atoskêyan, êwîhatoskêyan]
-     atoskêw+V+AI+Cnj+Fut+Int+3Sg: [ê-wî-atoskêt, êwîhatoskêt]
-     atoskêw+V+AI+Cnj+Fut+Int+4Sg/Pl: [ê-wî-atoskêyit, êwîhatoskêyit]
-     atoskêw+V+AI+Cnj+Fut+Int+1Pl: [ê-wî-atoskêyâhk, êwîhatoskêyâhk]
-     atoskêw+V+AI+Cnj+Fut+Int+12Pl: [ê-wî-atoskêyahk, êwîhatoskêyahk]
-     atoskêw+V+AI+Cnj+Fut+Int+2Pl: [ê-wî-atoskêyêk, êwîhatoskêyêk]
-     atoskêw+V+AI+Cnj+Fut+Int+3Pl: [ê-wî-atoskêcik, êwîhatoskêcik]
+     atoskêw+V+AI+Cnj+Rel+Fut+Int+1Sg: [wî-wîci-atoskêmiyân, wîwîciatoskêmiyân]
+     atoskêw+V+AI+Cnj+Rel+Fut+Int+2Sg: [wî-wîci-atoskêmiyan, wîwîciatoskêmiyan]
+     atoskêw+V+AI+Cnj+Rel+Fut+Int+3Sg: [wî-wîci-atoskêmit, wîwîciatoskêmit]
+     atoskêw+V+AI+Cnj+Rel+Fut+Int+4Sg/Pl: [wî-wîci-atoskêmiyit, wîwîciatoskêmiyit]
+     atoskêw+V+AI+Cnj+Rel+Fut+Int+1Pl: [wî-wîci-atoskêmiyâhk, wîwîciatoskêmiyâhk]
+     atoskêw+V+AI+Cnj+Rel+Fut+Int+12Pl: [wî-wîci-atoskêmiyahk, wîwîciatoskêmiyahk]
+     atoskêw+V+AI+Cnj+Rel+Fut+Int+2Pl: [wî-wîci-atoskêmiyêk, wîwîciatoskêmiyêk]
+     atoskêw+V+AI+Cnj+Rel+Fut+Int+3Pl: [wî-wîci-atoskêmicik, wîwîciatoskêmicik]
      
      atoskêw+V+AI+Fut+Cond+1Sg: atoskêyâni
      atoskêw+V+AI+Fut+Cond+2Sg: atoskêyani
@@ -84,6 +101,8 @@ Tests:
      atoskêw+V+AI+Fut+Cond+12Pl: [atoskêyahko, atoskêyahki]
      atoskêw+V+AI+Fut+Cond+2Pl: atoskêyêko
      atoskêw+V+AI+Fut+Cond+3Pl: atoskêtwâwi
+     
+     
 
 
      atoskêw+V+AI+Imp+Imm+2Sg: atoskê
