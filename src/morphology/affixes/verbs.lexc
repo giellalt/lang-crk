@@ -455,6 +455,8 @@ LEXICON AICONJn-PL !!= @CODE@ splits in 4 moods, for verbs with final -n
 +V+AI: AICONJ-CONTn-PL ;
 
 
+!! !!! AI CONJ-CONT can take the wici- circumfix
+
 LEXICON AICONJ-CONT !!= @CODE@ 
 < "+Ind":0  "@U.mood.indep@" >  AI_IND_WICI ; !
 < "+Cnj":0  "@U.mood.cnj@" > AI_CNJ_WICI ; !
@@ -476,6 +478,9 @@ LEXICON AI_IMP_WICI
 LEXICON AI_FUT_CON_WICI
 @U.wici.NULL@ AI_FUT_CON ;
 @U.wici.wici@+Rel:@U.wici.wici@mi^MI AI_FUT_CON ; 
+
+
+!! !!! AI CONJ-CONT-PL can take the wici- circumfix (plural only)
 
 LEXICON AICONJ-CONT-PL !!= @CODE@ only plural forms.
 	< "+Ind":0  "@U.mood.indep@" >  AI_IND-PL_WICI ; !
@@ -500,6 +505,8 @@ LEXICON AI_FUT_CON-PL_WICI
 @U.wici.wici@+Rel:@U.wici.wici@mi^MI AI_FUT_CON-PL ; 
 
 
+!! !!! AI CONJ-CONTn class Conjugations can take the wici- circumfix
+
 LEXICON AICONJ-CONTn !!= @CODE@ 
 < "+Ind":0  "@U.mood.indep@" >  AI_INDn_WICI ; !
 < "+Cnj":0  "@U.mood.cnj@" > AI_CNJn_WICI ; !
@@ -522,6 +529,8 @@ LEXICON AI_FUT_CONn_WICI
 @U.wici.NULL@ AI_FUT_CON ;
 @U.wici.wici@+Rel:@U.wici.wici@im^MI AI_FUT_CON ; 
 
+
+!! !!! AI n-sub class Conjugations can take the wici- circumfix (PL only)
 
 LEXICON AICONJ-CONTn-PL !!= @CODE@ 
 < "+Ind":0  "@U.mood.indep@" >  AI_INDn-PL_WICI ; !
@@ -546,6 +555,8 @@ LEXICON AI_FUT_CONn-PL_WICI
 @U.wici.wici@+Rel:@U.wici.wici@im^MI AI_FUT_CON-PL ; 
 
 
+!! !!! IND forms
+
 LEXICON AI_IND !!= @CODE@ First mode, indicative
 < "@U.tense.Prs@"    "+Prs":%>          > AI_IND_PRS ; !
 < "@U.tense.Prt@"    "+Prt":%>          > AI_IND_PRS ; !
@@ -560,24 +571,34 @@ LEXICON AI_IND-PL !!= @CODE@ First mode, indicative, only plural forms
 
 
 LEXICON AI_INDn !!= @CODE@ First mode, indicative
-< "@U.tense.Prs@"    "+Prs":%>          > AI_IND_PRSn ; !
-< "@U.tense.Prt@"    "+Prt":%>          > AI_IND_PRSn ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > AI_IND_PRSn ; !
-< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > AI_IND_PRSn ; !
+< "@U.tense.Prs@"    "+Prs":%>          > AI_INDn_PRS ; !
+< "@U.tense.Prt@"    "+Prt":%>          > AI_INDn_PRS ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > AI_INDn_PRS ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > AI_INDn_PRS ; !
 
 LEXICON AI_INDn-PL !!= @CODE@ First mode, indicative
-< "@U.tense.Prs@"    "+Prs":%>          > AI_IND_PRSn-PL ; !
-< "@U.tense.Prt@"    "+Prt":%>          > AI_IND_PRSn-PL ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > AI_IND_PRSn-PL ; !
-< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > AI_IND_PRSn-PL ; !
+< "@U.tense.Prs@"    "+Prs":%>          > AI_INDn_PRS-PL ; !
+< "@U.tense.Prt@"    "+Prt":%>          > AI_INDn_PRS-PL ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > AI_INDn_PRS-PL ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > AI_INDn_PRS-PL ; !
+
+
+!! !!! Suffixation begins for AI IND classes
 
 
 LEXICON AI_IND_PRS !!= @CODE@ gives person suffixes
 < 0:"^EA"  "+1Sg":0 "@U.person.NI@"   0:n                 > # ; !
 < 0:"^EA"  "+2Sg":0 "@U.person.KI@"   0:n                 > # ; !
 <          "+3Sg":0 "@U.person.NULL@" 0:w                 > # ; !
+< 0:"^EA"  "+1Pl":0 "@U.person.NI@"   0:n 0:â 0:n         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.person.KI@"   0:n 0:a 0:w         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.person.KI@"   0:n 0:â 0:n 0:a 0:w         > # ; !
+< 0:"^EA"  "+2Pl":0 "@U.person.KI@"   0:n 0:â 0:w 0:â 0:w > # ; !
+<          "+3Pl":0 "@U.person.NULL@" 0:w 0:a 0:k         > # ; !
+<          "+4Sg/Pl":0 "@U.person.NULL@" 0:y 0:i 0:w 0:a     > # ; !
+<          "+X":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
+<          "+X":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
 
- AI_IND_PRS-PL ;
 
 LEXICON AI_IND_PRS-PL !!= @CODE@ gives person suffixes, only plural forms
 < 0:"^EA"  "+1Pl":0 "@U.person.NI@"   0:n 0:â 0:n         > # ; !
@@ -586,40 +607,34 @@ LEXICON AI_IND_PRS-PL !!= @CODE@ gives person suffixes, only plural forms
 < 0:"^EA"  "+2Pl":0 "@U.person.KI@"   0:n 0:â 0:w 0:â 0:w > # ; !
 <          "+3Pl":0 "@U.person.NULL@" 0:w 0:a 0:k         > # ; !
 <          "+4Sg/Pl":0 "@U.person.NULL@" 0:y 0:i 0:w 0:a     > # ; !
-<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
-<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
+<          "+X":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
+<          "+X":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
 
 
 
-LEXICON AI_IND_PRSn !!= @CODE@ gives person suffixes
+LEXICON AI_INDn_PRS !!= @CODE@ gives person suffixes
 < 0:"^EA"  "+1Sg":0 "@U.person.NI@"   0:i 0:n                 > # ; !
 < 0:"^EA"  "+2Sg":0 "@U.person.KI@"   0:i 0:n                 > # ; !
 <          "+3Sg":0 "@U.person.NULL@"                    > # ; !
-AI_IND_PRSn-PL ;
-
-LEXICON AI_IND_PRSn-PL !!= @CODE@ gives person suffixes
 < 0:"^EA"  "+1Pl":0 "@U.person.NI@"   0:i 0:n 0:â 0:n         > # ; !
 < 0:"^EA" "+12Pl":0 "@U.person.KI@"   0:i 0:n 0:a 0:w         > # ; !
 < 0:"^EA" "+12Pl":0 "@U.person.KI@"   0:i 0:n 0:â 0:n 0:a 0:w         > # ; !
 < 0:"^EA"  "+2Pl":0 "@U.person.KI@"   0:i 0:n 0:â 0:w 0:â 0:w > # ; !
 <          "+3Pl":0 "@U.person.NULL@"  0:w 0:a 0:k         > # ; !
 <          "+4Sg/Pl":0 "@U.person.NULL@" 0:i 0:y 0:i 0:w 0:a     > # ; !
-<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
-<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
+<          "+X":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
+<          "+X":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
 
 
-
-
-!<  "+2Sg":0 "@U.verb.indFutInt2sg@"  0:n                 > # ; !
-!<  "+3Sg":0 "@U.verb.indFutInt3sg@"  0:w                 > # ; !
-!<  "+3oSg":0 "@U.verb.indFutInt3osg@" 0:y 0:i 0:w 0:a    > # ; !
-!<  "+1Pl":0 "@U.verb.indFutInt1pl@"  0:n 0:â 0:n         > # ;   ! exclusive Pl
-!< "+12Pl":0 "@U.verb.indFutInt12pl@" 0:n 0:a 0:w         > # ; ! inclusive Pl
-!<  "+2Pl":0 "@U.verb.indFutInt2pl@"  0:n 0:â 0:w 0:â 0:w > # ;           !
-!<  "+3Pl":0 "@U.verb.indFutInt3pl@"  0:w 0:a 0:k         > # ;   !
-!< "+4Sg/Pl":0 "@U.verb.indFutInt3opl@" 0:y 0:i 0:w 0:a     > # ;   !
-<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
-<          "+Unspec":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
+LEXICON AI_INDn_PRS-PL !!= @CODE@ gives person suffixes
+< 0:"^EA"  "+1Pl":0 "@U.person.NI@"   0:i 0:n 0:â 0:n         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.person.KI@"   0:i 0:n 0:a 0:w         > # ; !
+< 0:"^EA" "+12Pl":0 "@U.person.KI@"   0:i 0:n 0:â 0:n 0:a 0:w         > # ; !
+< 0:"^EA"  "+2Pl":0 "@U.person.KI@"   0:i 0:n 0:â 0:w 0:â 0:w > # ; !
+<          "+3Pl":0 "@U.person.NULL@"  0:w 0:a 0:k         > # ; !
+<          "+4Sg/Pl":0 "@U.person.NULL@" 0:i 0:y 0:i 0:w 0:a     > # ; !
+<          "+X":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:i 0:w    > # ; ! from Okimāsis 118
+<          "+X":0 "@U.person.NULL@" 0:n 0:â 0:n 0:i 0:w 0:a 0:n    > # ; ! from Okimāsis 118
 
 
 
@@ -627,7 +642,13 @@ LEXICON AI_FUT_CON !!= @CODE@
   +1Sg:%>yâni  # ; 
   +2Sg:%>yani  # ; 
   +3Sg:%>ci    # ; 
-  AI_FUT_CON-PL ;
+  +1Pl:%>yâhki # ; ! exclusive Pl
+ +12Pl:%>yahko # ; ! inclusive Pl
+  +2Pl:%>yêko  # ; 
+  +3Pl:%>twâwi # ; 
+  +4Sg/Pl:%>yici  # ; 
+  +X:%>hki # ; ! FROM Okimāsis p. 118
+
 
 LEXICON AI_FUT_CON-PL !!= @CODE@ only plural forms.
   +1Pl:%>yâhki # ; ! exclusive Pl
@@ -635,62 +656,72 @@ LEXICON AI_FUT_CON-PL !!= @CODE@ only plural forms.
   +2Pl:%>yêko  # ; 
   +3Pl:%>twâwi # ; 
   +4Sg/Pl:%>yici  # ; 
-  +Unspec:%>hki # ; ! FROM Okimāsis p. 118
+  +X:%>hki # ; ! FROM Okimāsis p. 118
 
 
 
 LEXICON AI_CNJ !!= @CODE@ Third mode, conjunctive
-< "+Prs":0          "@U.tense.Prs@"    > AI_CNJ_SUF ; !
-< "+Prt":0          "@U.tense.Prt@"    > AI_CNJ_SUF ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > AI_CNJ_SUF ; !
+< "+Prs":0          "@U.tense.Prs@"    > AI_CNJ_PRS ; !
+< "+Prt":0          "@U.tense.Prt@"    > AI_CNJ_PRS ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > AI_CNJ_PRS ; !
 
 LEXICON AI_CNJ-PL !!= @CODE@ Third mode, conjunctive, only plural forms
-< "+Prs":0          "@U.tense.Prs@"    > AI_CNJ_SUF-PL ; !
-< "+Prt":0          "@U.tense.Prt@"    > AI_CNJ_SUF-PL ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > AI_CNJ_SUF-PL ; !
+< "+Prs":0          "@U.tense.Prs@"    > AI_CNJ_PRS-PL ; !
+< "+Prt":0          "@U.tense.Prt@"    > AI_CNJ_PRS-PL ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > AI_CNJ_PRS-PL ; !
 
 
 LEXICON AI_CNJn !!= @CODE@ Third mode, conjunctive
-< "+Prs":0          "@U.tense.Prs@"    > AI_CNJ_SUFn ; !
-< "+Prt":0          "@U.tense.Prt@"    > AI_CNJ_SUFn ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > AI_CNJ_SUFn ; !
+< "+Prs":0          "@U.tense.Prs@"    > AI_CNJn_PRS ; !
+< "+Prt":0          "@U.tense.Prt@"    > AI_CNJn_PRS ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > AI_CNJn_PRS ; !
 
 LEXICON AI_CNJn-PL !!= @CODE@ Third mode, conjunctive
-< "+Prs":0          "@U.tense.Prs@"    > AI_CNJ_SUFn-PL ; !
-< "+Prt":0          "@U.tense.Prt@"    > AI_CNJ_SUFn-PL ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > AI_CNJ_SUFn-PL ; !
+< "+Prs":0          "@U.tense.Prs@"    > AI_CNJn_PRS-PL ; !
+< "+Prt":0          "@U.tense.Prt@"    > AI_CNJn_PRS-PL ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > AI_CNJn_PRS-PL ; !
 
 
 
 
-LEXICON AI_CNJ_SUF !!= @CODE@ singular forms
+LEXICON AI_CNJ_PRS !!= @CODE@ singular forms
      +1Sg:%>yân # ;
      +2Sg:%>yan	# ;
      +3Sg:%>t	# ;
-    AI_CNJ_SUF-PL ;
+    +12Pl:%>yahk # ;
+     +2Pl:%>yêk # ;  ! NOTE: corrected according to dt, earlier we said %>nyêk
+     +3Pl:%>cik # ;
+    +4Sg/Pl:%>yit # ;
+    +X:%>hk # ; ! FROM Okimāsis p. 118
 
-LEXICON AI_CNJ_SUF-PL !!= @CODE@  plural forms
+LEXICON AI_CNJ_PRS-PL !!= @CODE@  plural forms
      +1Pl:%>yâhk # ;
     +12Pl:%>yahk # ;
      +2Pl:%>yêk # ;  ! NOTE: corrected according to dt, earlier we said %>nyêk
      +3Pl:%>cik # ;
     +4Sg/Pl:%>yit # ;
-    +Unspec:%>hk # ; ! FROM Okimāsis p. 118
+    +X:%>hk # ; ! FROM Okimāsis p. 118
 
 
-LEXICON AI_CNJ_SUFn !!= @CODE@
+LEXICON AI_CNJn_PRS !!= @CODE@
      +1Sg:%>iyân #;
      +2Sg:%>iyan	#;
      +3Sg:%>hk	#;
- AI_CNJ_SUFn-PL ;
-
-LEXICON AI_CNJ_SUFn-PL !!= @CODE@
      +1Pl:%>iyâhk #;
     +12Pl:%>iyahk #;
      +2Pl:%>iyêk #;  ! NOTE: corrected according to dt, earlier we said %>nyêk
      +3Pl:%>hkik #;
     +4Sg/Pl:%>iyit #;
-    +Unspec:%>hk # ; ! FROM Okimāsis p. 118
+    +X:%>hk # ; ! FROM Okimāsis p. 118
+
+
+LEXICON AI_CNJn_PRS-PL !!= @CODE@
+     +1Pl:%>iyâhk #;
+    +12Pl:%>iyahk #;
+     +2Pl:%>iyêk #;  ! NOTE: corrected according to dt, earlier we said %>nyêk
+     +3Pl:%>hkik #;
+    +4Sg/Pl:%>iyit #;
+    +X:%>hk # ; ! FROM Okimāsis p. 118
 
 
 LEXICON AI_IMP  !!= @CODE@ Fourth mode, imperative singular forms
@@ -735,198 +766,158 @@ LEXICON imp-long-E !!= @CODE@
 !      ===========================
 
 
-LEXICON IICONJ  !!= @CODE@ adds the flag for no personprefixes
-< "+V":0 "+II":0 "@U.person.NULL@" "@U.wici.NULL@" > IICONJFORMS ;
+LEXICON IICONJ !!= @CODE@ splits in 4 moods
++V+II: IICONJ-CONT ;
 
-LEXICON IICONJ-SG  !!= @CODE@ adds the flag for no personprefixes, only Sg forms
-< "+V":0 "+II":0 "@U.person.NULL@" "@U.wici.NULL@" > IICONJFORMS-SG ;
+LEXICON IICONJ-SG !!= @CODE@  splits in 4 moods, gives only plural forms.
++V+II: IICONJ-CONT-SG ;
 
-LEXICON IICONJ-PL  !!= @CODE@ adds the flag for no personprefixes, only Pl forms
-< "+V":0 "+II":0 "@U.person.NULL@" "@U.wici.NULL@" > IICONJFORMS-PL ;
-
-LEXICON IICONJFORMS !!= @CODE@
- IICONJ-CONT ; 
-
-LEXICON IICONJFORMS-SG !!= @CODE@
- IICONJ-CONT-SG ; 
-
-LEXICON IICONJFORMS-PL !!= @CODE@ 
- IICONJ-CONT-PL ; 
+LEXICON IICONJ-PL !!= @CODE@ splits in 4 moods, for verbs with final -n
++V+II: IICONJ-CONT-PL ;
 
 
-LEXICON IICONJw  !!= @CODE@  w final
-< "+V":0 "+II":0  "@U.person.NULL@" "@U.wici.NULL@" > IICONJ-CONTw ;
+!! !!! II Conjugation for stems ending in -w
 
-LEXICON IICONJw-SG  !!= @CODE@  w final, only Sg forms
-< "+V":0 "+II":0  "@U.person.NULL@" "@U.wici.NULL@" > IICONJ-CONTw-SG ;
+LEXICON IICONJw !!= @CODE@ splits in 4 moods
++V+II: IICONJw-CONT ;
 
-LEXICON IICONJw-PL  !!= @CODE@  w final, only Pl forms
-< "+V":0 "+II":0  "@U.person.NULL@" "@U.wici.NULL@" > IICONJ-CONTw-PL ;
+LEXICON IICONJw-SG !!= @CODE@  splits in 4 moods, gives only plural forms.
++V+II: IICONJw-CONT-SG ;
+
+LEXICON IICONJw-PL !!= @CODE@ splits in 4 moods, for verbs with final -n
++V+II: IICONJw-CONT-PL ;
 
 
-LEXICON IICONJ-CONTw !!= @CODE@ w final. Splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_INDw ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJw ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw-SG ;!
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw-PL ;!
-
-LEXICON IICONJ-CONTw-SG !!= @CODE@ w final. Splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_INDw-SG ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJw-SG ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw_Fut-SG ;!
-
-LEXICON IICONJ-CONTw-PL !!= @CODE@ w final. Splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_INDw-PL ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJw-PL ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERSw_Fut-PL ;!
+!! !!! IICONJ-CONT splits into 4 moods
 
 LEXICON IICONJ-CONT !!= @CODE@ splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_IND ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJ ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS_Fut-SG ;!
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS_Fut-PL ;!
+< "+Ind":0  "@U.mood.indep@" >  II_IND_PRS ; !
+< "+Cnj":0  "@U.mood.cnj@" > II_CNJ_PRS ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PRS_Fut-SG ;!
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PRS_Fut-PL ;!
 
 LEXICON IICONJ-CONT-SG !!= @CODE@ splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_IND-SG ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJ-SG ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS_Fut-SG ;!
+< "+Ind":0  "@U.mood.indep@" >  II_IND_PRS-SG ; !
+< "+Cnj":0  "@U.mood.cnj@" > II_CNJ_PRS-SG ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PRS_Fut-SG ;!
 
 LEXICON IICONJ-CONT-PL !!= @CODE@ splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_IND-PL ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJ-PL ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PERS_Fut-PL ;!
-
-LEXICON II_INDw !!= @CODE@ indicative for w final
-< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERSw-SG ; !
-< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERSw-PL ; !
-< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERSw-SG ; !
-< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERSw-PL ; !
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS ; !
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS ; !
-
-
-LEXICON II_INDw-SG !!= @CODE@ indicative for w final
-< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERSw-SG ; !
-< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERSw-SG ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-SG ; !
-< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; ! pros aspect
-
-LEXICON II_INDw-PL !!= @CODE@ indicative for w final
-< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERSw-PL ; !
-< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERSw-PL ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-PL ; !
-< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-PL ; ! pros aspect
-
-LEXICON II_CNJw !!= @CODE@ conjunctive for w final
-< "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERSw-SG ; !
-< "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERSw-PL ; !
-< "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERSw-SG ; !
-< "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERSw-PL ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERSw-SG ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERSw-PL ; !
-
-LEXICON II_CNJw-SG !!= @CODE@ conjunctive for w final
-< "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERSw-SG ; !
-< "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERSw-SG ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERSw-SG ; !
-
-LEXICON II_CNJw-PL !!= @CODE@ conjunctive for w final
-< "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERSw-PL ; !
-< "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERSw-PL ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERSw-PL ; !
+< "+Ind":0  "@U.mood.indep@" >  II_IND_PRS-PL ; !
+< "+Cnj":0  "@U.mood.cnj@" > II_CNJ_PRS-PL ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PRS_Fut-PL ;!
 
 
 
+!! !!! IICONJw-CONT splits into 4 moods
 
-LEXICON II_IND !!= @CODE@ indicative
-< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERS-SG ; !
-< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERS-PL ; !
-< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERS-SG ; !
-< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERS-PL ; !
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-SG ; 
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-PL ; 
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; 
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-PL ; 
+LEXICON IICONJw-CONT !!= @CODE@ w final. Splits according to mood
+< "+Ind":0  "@U.mood.indep@" >  II_INDw_PRS ; !
+< "+Cnj":0  "@U.mood.cnj@" > II_CNJw_PRS ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS-SG ;!
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS-PL ;!
 
+LEXICON IICONJw-CONT-SG !!= @CODE@ w final. Splits according to mood
+< "+Ind":0  "@U.mood.indep@" >  II_INDw_PRS-SG ; !
+< "+Cnj":0  "@U.mood.cnj@" > II_CNJw_PRS-SG ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS_Fut-SG ;!
 
-LEXICON II_IND-SG !!= @CODE@ indicative
-< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERS-SG ; !
-< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERS-SG ; !
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-SG ; 
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-SG ; 
-
-LEXICON II_IND-PL !!= @CODE@ indicative
-< "@U.tense.Prs@"    "+Prs":%>          > II_IND_PERS-PL ; !
-< "@U.tense.Prt@"    "+Prt":%>          > II_IND_PERS-PL ; !
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > II_IND_PERS-PL ; 
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > II_IND_PERS-PL ; 
+LEXICON IICONJw-CONT-PL !!= @CODE@ w final. Splits according to mood
+< "+Ind":0  "@U.mood.indep@" >  II_INDw_PRS-PL ; !
+< "+Cnj":0  "@U.mood.cnj@" > II_CNJw_PRS-PL ; !
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS_Fut-PL ;
 
 
-LEXICON II_CNJ !!= @CODE@ conjunctive
-< "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERS-SG ; !
-< "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERS-PL ; !
-< "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERS-SG ; !
-< "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERS-PL ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERS-SG ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERS-PL ; !
 
-LEXICON II_CNJ-SG !!= @CODE@ conjunctive
-< "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERS-SG ; !
-< "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERS-SG ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERS-SG ; !
+!! !!! Suffixation begins for II IND classes
 
-LEXICON II_CNJ-PL !!= @CODE@ conjunctive
-< "+Prs":0          "@U.tense.Prs@"    > II_CNJ_PERS-PL ; !
-< "+Prt":0          "@U.tense.Prt@"    > II_CNJ_PERS-PL ; !
-< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > II_CNJ_PERS-PL ; !
-
- 
-LEXICON II_IND_PERSw-SG   !!= @CODE@ w final 
+LEXICON II_INDw_PRS   !!= @CODE@ w final 
 +3Sg:%>w # ;
 +4Sg:%>yiw # ;
-
-LEXICON II_IND_PERSw_Fut-SG   !!= @CODE@ w final 
-+3Sg:%>%^NIIki # ;
-+4Sg:%>yiki # ;
-
-
-LEXICON II_IND_PERSw-PL   !!= @CODE@ w final 
 +3Pl:%>wa # ;
 +4Pl:%>yiwa # ;
 
-LEXICON II_IND_PERSw_Fut-PL   !!= @CODE@ w final 
+LEXICON II_INDw_PRS-SG   !!= @CODE@ w final 
++3Sg:%>w # ;
++4Sg:%>yiw # ;
+
+LEXICON II_INDw_PRS-PL   !!= @CODE@ w final 
++3Pl:%>wa # ;
++4Pl:%>yiwa # ;
+
+
+LEXICON II_INDw_PRS_Fut   !!= @CODE@ w final 
++3Sg:%>%^NIIki # ;
++4Sg:%>yiki # ;
 +3Pl:%>%^NIIkwawi # ;
 +4Pl:%>yiki # ;
 
-LEXICON II_IND_PERS-SG   !!= @CODE@ -n final 
+LEXICON II_INDw_PRS_Fut-SG   !!= @CODE@ w final 
++3Sg:%>%^NIIki # ;
++4Sg:%>yiki # ;
+
+LEXICON II_INDw_PRS_Fut-PL   !!= @CODE@ w final 
++3Pl:%>%^NIIkwawi # ;
++4Pl:%>yiki # ;
+
+
+LEXICON II_IND_PRS   !!= @CODE@ -n final 
 +3Sg: # ;
 +4Sg:%>iyiw # ;
-
-LEXICON II_IND_PERS_Fut-SG   !!= @CODE@ -n final 
-+3Sg:%>%^NIIki # ;
-+4Sg:%>iyiki # ;
-
-LEXICON II_IND_PERS-PL   !!= @CODE@ -n final 
 +3Pl:%>wa # ;
 +4Pl:%>iyiwa # ;
 
-LEXICON II_IND_PERS_Fut-PL   !!= @CODE@ -n final 
+LEXICON II_IND_PRS-SG   !!= @CODE@ -n final 
++3Sg: # ;
++4Sg:%>iyiw # ;
+
+LEXICON II_IND_PRS-PL   !!= @CODE@ -n final 
++3Pl:%>wa # ;
++4Pl:%>iyiwa # ;
+
+
+
+LEXICON II_IND_PRS_Fut   !!= @CODE@ -n final 
++3Sg:%>%^NIIki # ;
++4Sg:%>iyiki # ;
 +3Pl:%>%^NIIkwawi # ;
 +4Pl:%>iyikwâwi # ;
 
-LEXICON II_CNJ_PERSw-SG   !!= @CODE@ w final 
-+3Sg:%>%^NIIk # ;
-+4Sg:%>yik # ;
+LEXICON II_IND_PRS_Fut-SG   !!= @CODE@ -n final 
++3Sg:%>%^NIIki # ;
++4Sg:%>iyiki # ;
 
-LEXICON II_CNJ_PERSw-PL   !!= @CODE@ w final 
+LEXICON II_IND_PRS_Fut-PL   !!= @CODE@ -n final 
++3Pl:%>%^NIIkwawi # ;
++4Pl:%>iyikwâwi # ;
+
+
+!! !!! Suffixation begins for II CNJ classes
+
+LEXICON II_CNJ_PRS   !!= @CODE@ -n final 
++3Sg:%>%^NIIk # ;
++4Sg:%>iyik # ;
 +3Pl:%>%^NIIki # ;
 +4Pl:%>iyiki # ;
 
-LEXICON II_CNJ_PERS-SG   !!= @CODE@ -n final 
+LEXICON II_CNJ_PRS-SG   !!= @CODE@ -n final 
 +3Sg:%>%^NIIk # ;
 +4Sg:%>iyik # ;
 
-LEXICON II_CNJ_PERS-PL   !!= @CODE@ -n final 
+LEXICON II_CNJ_PRS-PL   !!= @CODE@ -n final 
++3Pl:%>%^NIIki # ;
++4Pl:%>iyiki # ;
+
+LEXICON II_CNJw_PRS   !!= @CODE@ w final 
++3Sg:%>%^NIIk # ;
++4Sg:%>yik # ;
++3Pl:%>%^NIIki # ;
++4Pl:%>iyiki # ;
+
+LEXICON II_CNJw_PRS-SG   !!= @CODE@ w final 
++3Sg:%>%^NIIk # ;
++4Sg:%>yik # ;
+
+LEXICON II_CNJw_PRS-PL   !!= @CODE@ w final 
 +3Pl:%>%^NIIki # ;
 +4Pl:%>iyiki # ;
 
@@ -1125,8 +1116,8 @@ LEXICON VTA_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 
 +4Sg/Pl+1SgO:%>ikoyiwa	   # ; ! FROM NS 152
 +4Sg/Pl+1PlO:%>ikonân	   # ; ! FROM NS 152
 
-+1Sg+Unspec:%>ikawin	   # ;
-+1Pl+Unspec:%>ikawinân	   # ;
++1Sg+X:%>ikawin	   # ;
++1Pl+X:%>ikawinân	   # ;
 
 
 
@@ -1160,9 +1151,9 @@ LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
 +4Sg/Pl+2PlO:%>ikowâw	   # ; ! FROM NS 152
 +4Sg/Pl+12PlO:%>ikonaw	   # ; ! FROM NS 152
 
-+2Sg+Unspec:%>ikawin	   # ;
-+12Pl+Unspec:%>ikawinaw	   # ;
-+2Pl+Unspec:%>ikawinâwâw	   # ;
++2Sg+X:%>ikawin	   # ;
++12Pl+X:%>ikawinaw	   # ;
++2Pl+X:%>ikawinâwâw	   # ;
 
 				  
 LEXICON VTA_NULL_O 	  
@@ -1179,21 +1170,14 @@ LEXICON VTA_NULL_O
 +4Sg/Pl+3SgO:%>ik	  # ; ! Implementing fourth, fifth persons
 +5Sg/Pl+4Sg/PlO:%>ikoyiwa  # ; ! Implementing fourth, fifth persons
 +4Sg/Pl+3PlO:%>ikwak	  # ; ! Implementing fourth, fifth persons
-!+5Sg+4SgO:%>ikoyiwa  # ; !??
-!+4Sg+4SgO:%>êyiwa  # ; !
-
-!+3Pl+3PlO:%>ikowak	  # ; ??
-!+3Pl+3PlO:%>êwak	  # ;
-!+4Pl+3SgO:%>êyiwa	  # ;
-!+4Pl+3PlO:%>êyiwa	  # ;
 
 +4Sg/Pl+3SgO:%>ik	   # ; ! FROM NS 152
 +4Sg/Pl+3PlO:%>ikwak	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>ikoyiwa	   # ; ! FROM NS 152
 
-+3Sg+Unspec:%>âw	   # ;
-+3Pl+Unspec:%>imâwak	   # ;
-+4Sg/Pl+Unspec:%>imâwa	   # ;
++3Sg+X:%>âw	   # ;
++3Pl+X:%>imâwak	   # ;
++4Sg/Pl+X:%>imâwa	   # ;
 
 
 LEXICON VTATS_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
@@ -1225,9 +1209,9 @@ LEXICON VTATS_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subje
 +4Sg/Pl+2PlO:%>ikowâw	   # ; ! FROM NS 152
 +4Sg/Pl+12PlO:%>ikonaw	   # ; ! FROM NS 152
 
-+2Sg+Unspec:%>ikawin	   # ;
-+12Pl+Unspec:%>ikawinaw	   # ;
-+2Pl+Unspec:%>ikawinâwâw	   # ;
++2Sg+X:%>ikawin	   # ;
++12Pl+X:%>ikawinaw	   # ;
++2Pl+X:%>ikawinâwâw	   # ;
 				  
 LEXICON VTATS_NULL_O 	  
 +3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons
@@ -1255,9 +1239,9 @@ LEXICON VTATS_NULL_O
 +4Sg/Pl+3PlO:%>ikwak	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>ikoyiwa	   # ; ! FROM NS 152
 
-+3Sg+Unspec:%>âw	   # ;
-+3Pl+Unspec:%>imâwak	   # ;
-+4Sg/Pl+Unspec:%>imâwa	   # ;
++3Sg+X:%>âw	   # ;
++3Pl+X:%>imâwak	   # ;
++4Sg/Pl+X:%>imâwa	   # ;
 
 LEXICON VTAVw_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
 +1Sg+3SgO:%>âw		  # ;
@@ -1267,7 +1251,7 @@ LEXICON VTAVw_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject o
 !+3Sg+1PlO:%>%^WIik        # ;
 +3Sg+1PlO:%>%^WIikonân	  # ;
 
-+1Sg+Unspec:%>%^WIikawin	   # ;
++1Sg+X:%>%^WIikawin	   # ;
 
 VTAVw_NI_O-PL ;
 
@@ -1281,7 +1265,7 @@ LEXICON VTAVw_NI_O-PL  !!= @CODE@  Plural forms
 +4Sg/Pl+1SgO:%>%^WIikoyiwa	   # ; ! FROM NS 152
 +4Sg/Pl+1PlO:%>%^WIikonân	   # ; ! FROM NS 152
 
-+1Pl+Unspec:%>%^WIikawinân	   # ;
++1Pl+X:%>%^WIikawinân	   # ;
 
 
 LEXICON VTAVw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
@@ -1296,9 +1280,9 @@ LEXICON VTAVw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subje
 +1Sg+2PlO:%>%^WIitinâwâw         # ;
 +2Sg+4Sg/PlO:%>imâwa	  # ;  ! From NS 152
 
-+2Sg+Unspec:%>%^WIikawin	   # ;
-+12Pl+Unspec:%>%^WIikawinaw	   # ;
-+2Pl+Unspec:%>%^WIikawinâwâw	   # ;
++2Sg+X:%>%^WIikawin	   # ;
++12Pl+X:%>%^WIikawinaw	   # ;
++2Pl+X:%>%^WIikawinâwâw	   # ;
 VTAVw_KI_O-PL ;
 
 
@@ -1321,8 +1305,8 @@ LEXICON VTAVw_KI_O-PL 	    !!= @CODE@ plural forms
 +4Sg/Pl+2PlO:%>%^WIikowâw	   # ; ! FROM NS 152
 +4Sg/Pl+12PlO:%>%^WIikonaw	   # ; ! FROM NS 152
 
-+12Pl+Unspec:%>%^WIikawinaw	   # ;
-+2Pl+Unspec:%>%^WIikawinâwâw	   # ;
++12Pl+X:%>%^WIikawinaw	   # ;
++2Pl+X:%>%^WIikawinâwâw	   # ;
 				  
 LEXICON VTAVw_NULL_O !!= * @CODE@	  
 +3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons
@@ -1344,9 +1328,9 @@ LEXICON VTAVw_NULL_O-PL !!= * @CODE@
 +4Sg/Pl+3PlO:%>%^WIikwak	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>%^WIikoyiwa	   # ; ! FROM NS 152
 
-+3Sg+Unspec:%>âw	   # ;
-+3Pl+Unspec:%>imâwak	   # ;
-+4Sg/Pl+Unspec:%>imâwa	   # ;
++3Sg+X:%>âw	   # ;
++3Pl+X:%>imâwak	   # ;
++4Sg/Pl+X:%>imâwa	   # ;
 
 LEXICON VTACw_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 1Sg object
 +1Sg+3SgO:%>âw		  # ;
@@ -1364,8 +1348,8 @@ LEXICON VTACw_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject o
 +4Sg/Pl+1SgO:%>%^IOikoyiwa	   # ; ! FROM NS 152
 +4Sg/Pl+1PlO:%>%^IOikonân	   # ; ! FROM NS 152
 
-+1Sg+Unspec:%>%^IOikawin	   # ;
-+1Pl+Unspec:%>%^IOikawinân	   # ;
++1Sg+X:%>%^IOikawin	   # ;
++1Pl+X:%>%^IOikawinân	   # ;
 
 
 LEXICON VTACw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
@@ -1397,9 +1381,9 @@ LEXICON VTACw_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subje
 +4Sg/Pl+2PlO:%>%^IOikowâw	   # ; ! FROM NS 152
 +4Sg/Pl+12PlO:%>%^IOikonaw	   # ; ! FROM NS 152
 
-+2Sg+Unspec:%>%^IOikawin	   # ;
-+12Pl+Unspec:%>%^IOikawinaw	   # ;
-+2Pl+Unspec:%>%^IOikawinâwâw	   # ;
++2Sg+X:%>%^IOikawin	   # ;
++12Pl+X:%>%^IOikawinaw	   # ;
++2Pl+X:%>%^IOikawinâwâw	   # ;
 
 				  
 LEXICON VTACw_NULL_O !!= * @CODE@	  
@@ -1428,9 +1412,9 @@ LEXICON VTACw_NULL_O !!= * @CODE@
 +4Sg/Pl+3PlO:%>%^IOikwak	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>%^IOikoyiwa	   # ; ! FROM NS 152
 
-+3Sg+Unspec:%>âw	   # ;
-+3Pl+Unspec:%>imâwak	   # ;
-+4Sg/Pl+Unspec:%>imâwa	   # ;
++3Sg+X:%>âw	   # ;
++3Pl+X:%>imâwak	   # ;
++4Sg/Pl+X:%>imâwa	   # ;
 
 
 
@@ -1571,14 +1555,14 @@ LEXICON TA_CNJ_SUF !!= @CODE@ gives conj + obj tag and suf
 +4Sg/Pl+3PlO:%>ikocik	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>ikoyit	   # ; ! FROM NS 152
 
-+1Sg+Unspec:%>%ikawiyân	   # ;
-+2Sg+Unspec:%>%ikawiyan	   # ;
-+3Sg+Unspec:%>%iht	   # ;
-+1Pl+Unspec:%>%ikawiyâhk	   # ;
-+12Pl+Unspec:%>%ikawiyahk	   # ;
-+2Pl+Unspec:%>%ikawiyêk	   # ;
-+3Pl+Unspec:%>%ihcik	   # ;
-+4Sg/Pl+Unspec:%>%imiht	   # ;
++1Sg+X:%>%ikawiyân	   # ;
++2Sg+X:%>%ikawiyan	   # ;
++3Sg+X:%>%iht	   # ;
++1Pl+X:%>%ikawiyâhk	   # ;
++12Pl+X:%>%ikawiyahk	   # ;
++2Pl+X:%>%ikawiyêk	   # ;
++3Pl+X:%>%ihcik	   # ;
++4Sg/Pl+X:%>%imiht	   # ;
 
 LEXICON TA_CNJTS_SUF !!= @CODE@ gives conj + obj tag and suf
 
@@ -1655,14 +1639,14 @@ LEXICON TA_CNJTS_SUF !!= @CODE@ gives conj + obj tag and suf
 +4Sg/Pl+3PlO:%>ikocik	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>ikoyit	   # ; ! FROM NS 152
 
-+1Sg+Unspec:%>%ikawiyân	   # ;
-+2Sg+Unspec:%>%ikawiyan	   # ;
-+3Sg+Unspec:%>%iht	   # ;
-+1Pl+Unspec:%>%ikawiyâhk	   # ;
-+12Pl+Unspec:%>%ikawiyahk	   # ;
-+2Pl+Unspec:%>%ikawiyêk	   # ;
-+3Pl+Unspec:%>%ihcik	   # ;
-+4Sg/Pl+Unspec:%>%imiht	   # ;
++1Sg+X:%>%ikawiyân	   # ;
++2Sg+X:%>%ikawiyan	   # ;
++3Sg+X:%>%iht	   # ;
++1Pl+X:%>%ikawiyâhk	   # ;
++12Pl+X:%>%ikawiyahk	   # ;
++2Pl+X:%>%ikawiyêk	   # ;
++3Pl+X:%>%ihcik	   # ;
++4Sg/Pl+X:%>%imiht	   # ;
 
 
 
@@ -1744,14 +1728,14 @@ LEXICON TA_CNJVw_SUF-PL !!= @CODE@ gives conj + obj tag and suf, plural forms
 +4Sg/Pl+3PlO:%>%^WIikocik	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>%^WIikoyit	   # ; ! FROM NS 152
 
-+1Sg+Unspec:%>%^WIikawiyân	   # ;
-+2Sg+Unspec:%>%^WIikawiyan	   # ;
-+3Sg+Unspec:%>%^WIiht	   # ;
-+1Pl+Unspec:%>%^WIikawiyâhk	   # ;
-+12Pl+Unspec:%>%^WIikawiyahk	   # ;
-+2Pl+Unspec:%>%^WIikawiyêk	   # ;
-+3Pl+Unspec:%>%^WIihcik	   # ;
-+4Sg/Pl+Unspec:%>%^WIimiht	   # ;
++1Sg+X:%>%^WIikawiyân	   # ;
++2Sg+X:%>%^WIikawiyan	   # ;
++3Sg+X:%>%^WIiht	   # ;
++1Pl+X:%>%^WIikawiyâhk	   # ;
++12Pl+X:%>%^WIikawiyahk	   # ;
++2Pl+X:%>%^WIikawiyêk	   # ;
++3Pl+X:%>%^WIihcik	   # ;
++4Sg/Pl+X:%>%^WIimiht	   # ;
 
 
 
@@ -1828,14 +1812,14 @@ LEXICON TA_CNJCw_SUF !!= @CODE@ gives conj + obj tag and suf
 +4Sg/Pl+3PlO:%>%^IOikocik	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>%^IOikoyit	   # ; ! FROM NS 152
 
-+1Sg+Unspec:%>%^IOikawiyân	   # ;
-+2Sg+Unspec:%>%^IOikawiyan	   # ;
-+3Sg+Unspec:%>%^IOiht	   # ;
-+1Pl+Unspec:%>%^IOikawiyâhk	   # ;
-+12Pl+Unspec:%>%^IOikawiyahk	   # ;
-+2Pl+Unspec:%>%^IOikawiyêk	   # ;
-+3Pl+Unspec:%>%^IOihcik	   # ;
-+4Sg/Pl+Unspec:%>%^IOimiht	   # ;
++1Sg+X:%>%^IOikawiyân	   # ;
++2Sg+X:%>%^IOikawiyan	   # ;
++3Sg+X:%>%^IOiht	   # ;
++1Pl+X:%>%^IOikawiyâhk	   # ;
++12Pl+X:%>%^IOikawiyahk	   # ;
++2Pl+X:%>%^IOikawiyêk	   # ;
++3Pl+X:%>%^IOihcik	   # ;
++4Sg/Pl+X:%>%^IOimiht	   # ;
 
 
 
@@ -1926,15 +1910,15 @@ LEXICON TA_FUT !!= * @CODE@
 +4Sg/Pl+12PlO:%>ikowâyahki	   # ;
 
 
-+1Sg+Unspec:%>%ikawiyâni	   # ;
-+2Sg+Unspec:%>%ikawiyani	   # ;
-+3Sg+Unspec:%>%ihci	   # ;
-+1Pl+Unspec:%>%ikawiyâhki	   # ;
-+12Pl+Unspec:%>%ikawiyahki	   # ;
-+12Pl+Unspec:%>%ikawiyahko	   # ;
-+2Pl+Unspec:%>%ikawiyêko	   # ;
-+3Pl+Unspec:%>%ihtwâwi	   # ;
-+4Sg/Pl+Unspec:%>%imihci	   # ;
++1Sg+X:%>%ikawiyâni	   # ;
++2Sg+X:%>%ikawiyani	   # ;
++3Sg+X:%>%ihci	   # ;
++1Pl+X:%>%ikawiyâhki	   # ;
++12Pl+X:%>%ikawiyahki	   # ;
++12Pl+X:%>%ikawiyahko	   # ;
++2Pl+X:%>%ikawiyêko	   # ;
++3Pl+X:%>%ihtwâwi	   # ;
++4Sg/Pl+X:%>%imihci	   # ;
 
 
 LEXICON TA_FUTTS_WICI !!= * @CODE@
@@ -2025,15 +2009,15 @@ LEXICON TA_FUTTS !!= * @CODE@
 +4Sg/Pl+12PlO:%>ikowâyahki	   # ;
 
 
-+1Sg+Unspec:%>%ikawiyâni	   # ;
-+2Sg+Unspec:%>%ikawiyani	   # ;
-+3Sg+Unspec:%>%ihci	   # ;
-+1Pl+Unspec:%>%ikawiyâhki	   # ;
-+12Pl+Unspec:%>%ikawiyahki	   # ;
-+12Pl+Unspec:%>%ikawiyahko	   # ;
-+2Pl+Unspec:%>%ikawiyêko	   # ;
-+3Pl+Unspec:%>%ihtwâwi	   # ;
-+4Sg/Pl+Unspec:%>%imihci	   # ;
++1Sg+X:%>%ikawiyâni	   # ;
++2Sg+X:%>%ikawiyani	   # ;
++3Sg+X:%>%ihci	   # ;
++1Pl+X:%>%ikawiyâhki	   # ;
++12Pl+X:%>%ikawiyahki	   # ;
++12Pl+X:%>%ikawiyahko	   # ;
++2Pl+X:%>%ikawiyêko	   # ;
++3Pl+X:%>%ihtwâwi	   # ;
++4Sg/Pl+X:%>%imihci	   # ;
 
 
 
@@ -2078,15 +2062,15 @@ LEXICON TA_FUTVw !!= * @CODE@
 +3Pl+12PlO:%>%^WIikoyahkwâwi		   # ;
 +3Pl+2PlO:%>%^WIikoyêkwâwi		   # ;
 
-+1Sg+Unspec:%>%^WIikawiyâni	   # ;
-+2Sg+Unspec:%>%^WIikawiyani	   # ;
-+3Sg+Unspec:%>%^WIihci	   # ;
-+1Pl+Unspec:%>%^WIikawiyâhki	   # ;
-+12Pl+Unspec:%>%^WIikawiyahki	   # ;
-+12Pl+Unspec:%>%^WIikawiyahko	   # ;
-+2Pl+Unspec:%>%^WIikawiyêko	   # ;
-+3Pl+Unspec:%>%^WIihtwâwi	   # ;
-+4Sg/Pl+Unspec:%>%^WIimihci	   # ;
++1Sg+X:%>%^WIikawiyâni	   # ;
++2Sg+X:%>%^WIikawiyani	   # ;
++3Sg+X:%>%^WIihci	   # ;
++1Pl+X:%>%^WIikawiyâhki	   # ;
++12Pl+X:%>%^WIikawiyahki	   # ;
++12Pl+X:%>%^WIikawiyahko	   # ;
++2Pl+X:%>%^WIikawiyêko	   # ;
++3Pl+X:%>%^WIihtwâwi	   # ;
++4Sg/Pl+X:%>%^WIimihci	   # ;
 
 +2Sg+1SgO:%>iyani	   # ;
 
@@ -2148,12 +2132,12 @@ LEXICON TA_FUTVw-PL !!= * @CODE@ plural
 +4Sg/Pl+12PlO:%>^WIikowâyahki	   # ;
 
 
-+1Pl+Unspec:%>%^WIikawiyâhki	   # ;
-+12Pl+Unspec:%>%^WIikawiyahki	   # ;
-+12Pl+Unspec:%>%^WIikawiyahko	   # ;
-+2Pl+Unspec:%>%^WIikawiyêko	   # ;
-+3Pl+Unspec:%>%^WIihtwâwi	   # ;
-+4Sg/Pl+Unspec:%>%^WIimihci	   # ;
++1Pl+X:%>%^WIikawiyâhki	   # ;
++12Pl+X:%>%^WIikawiyahki	   # ;
++12Pl+X:%>%^WIikawiyahko	   # ;
++2Pl+X:%>%^WIikawiyêko	   # ;
++3Pl+X:%>%^WIihtwâwi	   # ;
++4Sg/Pl+X:%>%^WIimihci	   # ;
 
 +2Pl+1SgO:%>iyêko	   # ;
 +2Sg/Pl+1PlO:%>iyâhki	   # ;
@@ -2219,15 +2203,15 @@ LEXICON TA_FUTCw
 +4Sg/Pl+12PlO:%>^IOikowâyahko	   # ;
 +4Sg/Pl+12PlO:%>^IOikowâyahki	   # ;
 
-+1Sg+Unspec:%>%^IOikawiyâni	   # ;
-+2Sg+Unspec:%>%^IOikawiyani	   # ;
-+3Sg+Unspec:%>%^IOihci	   # ;
-+1Pl+Unspec:%>%^IOikawiyâhki	   # ;
-+12Pl+Unspec:%>%^IOikawiyahki	   # ;
-+12Pl+Unspec:%>%^IOikawiyahko	   # ;
-+2Pl+Unspec:%>%^IOikawiyêko	   # ;
-+3Pl+Unspec:%>%^IOihtwâwi	   # ;
-+4Sg/Pl+Unspec:%>%^IOimihci	   # ;
++1Sg+X:%>%^IOikawiyâni	   # ;
++2Sg+X:%>%^IOikawiyani	   # ;
++3Sg+X:%>%^IOihci	   # ;
++1Pl+X:%>%^IOikawiyâhki	   # ;
++12Pl+X:%>%^IOikawiyahki	   # ;
++12Pl+X:%>%^IOikawiyahko	   # ;
++2Pl+X:%>%^IOikawiyêko	   # ;
++3Pl+X:%>%^IOihtwâwi	   # ;
++4Sg/Pl+X:%>%^IOimihci	   # ;
 
 
 +2Sg+1SgO:%>%^IOiyani	   # ;
@@ -2611,8 +2595,8 @@ LEXICON TI_IND_PRS !!= @CODE@ gives person suffixes singular
 @U.person.KI@+2Sg:@U.person.KI@ên # ;
 @U.person.NULL@+3Sg:@U.person.NULL@am # ;
 
-@U.person.NULL@+Unspec+3SgO:@U.person.NULL@ikâtêw # ;
-@U.person.NULL@+Unspec+4SgO:@U.person.NULL@ikâtêwa # ;
+@U.person.NULL@+X+3SgO:@U.person.NULL@ikâtêw # ;
+@U.person.NULL@+X+4SgO:@U.person.NULL@ikâtêwa # ;
 
 
 
@@ -2628,8 +2612,8 @@ LEXICON TI_IND_PRS-PL !!= @CODE@ gives person suffixes plural
 @U.person.NULL@+4Sg/Pl:@U.person.NULL@amiyiwa # ;
 
 
-@U.person.NULL@+Unspec+3PlO:@U.person.NULL@ikâtêyiw # ;
-@U.person.NULL@+Unspec+4PlO:@U.person.NULL@ikâtêyiwa # ;
+@U.person.NULL@+X+3PlO:@U.person.NULL@ikâtêyiw # ;
+@U.person.NULL@+X+4PlO:@U.person.NULL@ikâtêyiwa # ;
 
 
 
@@ -2645,8 +2629,8 @@ LEXICON TI_INDi_PRS !!= @CODE@ gives person suffixes
 @U.person.NULL@+3Pl:@U.person.NULL@wak # ;
 @U.person.NULL@+4Sg/Pl:@U.person.NULL@yiwa # ;
 
-@U.person.NULL@+Unspec:@U.person.NULL@nâniwiw # ;
-@U.person.NULL@+Unspec:@U.person.NULL@nâniwan # ;
+@U.person.NULL@+X:@U.person.NULL@nâniwiw # ;
+@U.person.NULL@+X:@U.person.NULL@nâniwan # ;
 
 LEXICON TI_INDâ_PRS !!= @CODE@ gives person suffixes
 @U.person.NI@+1Sg:@U.person.NI@ân # ;
@@ -2660,15 +2644,15 @@ LEXICON TI_INDâ_PRS !!= @CODE@ gives person suffixes
 @U.person.NULL@+3Pl:@U.person.NULL@awak # ;
 @U.person.NULL@+4Sg/Pl:@U.person.NULL@ayiwa # ;
 
-@U.person.NULL@+Unspec+3SgO:@U.person.NULL@ikâtêw # ;
-@U.person.NULL@+Unspec+4SgO:@U.person.NULL@ikâtêwa # ;
-@U.person.NULL@+Unspec+3PlO:@U.person.NULL@ikâtêyiw # ;
-@U.person.NULL@+Unspec+4PlO:@U.person.NULL@ikâtêyiwa # ;
+@U.person.NULL@+X+3SgO:@U.person.NULL@ikâtêw # ;
+@U.person.NULL@+X+4SgO:@U.person.NULL@ikâtêwa # ;
+@U.person.NULL@+X+3PlO:@U.person.NULL@ikâtêyiw # ;
+@U.person.NULL@+X+4PlO:@U.person.NULL@ikâtêyiwa # ;
 
-@U.person.NULL@+Unspec+3SgO:@U.person.NULL@nâniwiw # ;
-@U.person.NULL@+Unspec+4SgO:@U.person.NULL@nâniwan # ;
-@U.person.NULL@+Unspec+3PlO:@U.person.NULL@nâniwiw # ;
-@U.person.NULL@+Unspec+4PlO:@U.person.NULL@nâniwan # ;
+@U.person.NULL@+X+3SgO:@U.person.NULL@nâniwiw # ;
+@U.person.NULL@+X+4SgO:@U.person.NULL@nâniwan # ;
+@U.person.NULL@+X+3PlO:@U.person.NULL@nâniwiw # ;
+@U.person.NULL@+X+4PlO:@U.person.NULL@nâniwan # ;
 
 LEXICON TI_FUT_CON !!= * @CODE@
   +1Sg:%>amâni  # ; 
@@ -2692,7 +2676,7 @@ LEXICON TI_FUTi_CON !!= * @CODE@
   +3Pl:%>twâwi # ; 
   +4Sg/Pl:%>yici  # ; 
   
-  +Unspec:%>hki  # ; 
+  +X:%>hki  # ; 
 
 
 LEXICON TI_FUTâ_CON !!= * @CODE@
@@ -2706,12 +2690,12 @@ LEXICON TI_FUTâ_CON !!= * @CODE@
   +3Pl:%>twâwi # ; 
   +4Sg/Pl:%>yici  # ;
   
-  +Unspec+3Sg:%>%^NIIki # ;
-  +Unspec+4Sg:%>iyiki # ;
-  +Unspec+3Pl:%>%^NIIkwawi # ;
-  +Unspec+4Pl:%>iyikwâwi # ;
+  +X+3Sg:%>%^NIIki # ;
+  +X+4Sg:%>iyiki # ;
+  +X+3Pl:%>%^NIIkwawi # ;
+  +X+4Pl:%>iyikwâwi # ;
 
-  +Unspec:%>hki  # ; 
+  +X:%>hki  # ; 
   
 LEXICON TI_FUT_CON-PL !!= * @CODE@
   +1Pl:%>amâhki # ; ! exclusive Pl
@@ -2751,9 +2735,9 @@ LEXICON TI_CNJ_SUF !!= * @CODE@
      +2Pl:%>amêk #;  !
      +3Pl:%>ahkik #;
     +4Sg/Pl:%>amiyit #;
-    +Unspec+4Sg/PlO:%>ikâtêk #;
-    +Unspec+4Sg/PlO:%>ikâtêyik #;
-    +Unspec:%>amihk #;
+    +X+4Sg/PlO:%>ikâtêk #;
+    +X+4Sg/PlO:%>ikâtêyik #;
+    +X:%>amihk #;
     
 LEXICON TI_CNJ_SUF-PL !!= * @CODE@
      +1Pl:%>amâhk #;
@@ -2761,8 +2745,8 @@ LEXICON TI_CNJ_SUF-PL !!= * @CODE@
      +2Pl:%>amêk #;  !
      +3Pl:%>ahkik #;
     +4Sg/Pl:%>amiyit #;
-    +Unspec+3Sg:%>ikâtêk #;
-    +Unspec+4Sg:%>ikâtêyik #;
+    +X+3Sg:%>ikâtêk #;
+    +X+4Sg:%>ikâtêyik #;
 
 LEXICON TI_CNJi_SUF !!= * @CODE@
      +1Sg:%>yân #;
@@ -2773,7 +2757,7 @@ LEXICON TI_CNJi_SUF !!= * @CODE@
      +2Pl:%>yêk #;  !
      +3Pl:%>cik #;
     +4Sg/Pl:%>yit #;
-    +Unspec+4Sg:%>hk #;
+    +X+4Sg:%>hk #;
     
 LEXICON TI_CNJâ_SUF !!= * @CODE@
      +1Sg:%>âyân #;
@@ -2784,12 +2768,12 @@ LEXICON TI_CNJâ_SUF !!= * @CODE@
      +2Pl:%>âyek #;  !
      +3Pl:%>âcik #;
     +4Sg/Pl:%>âyit #;
-    +Unspec+3Sg:%>ikâtêk #;
-    +Unspec+4Sg:%>ikâtêyik #;
-    +Unspec+3PlO:%>amihki #;
-    +Unspec+4PlO:%>amihyiki #;
+    +X+3Sg:%>ikâtêk #;
+    +X+4Sg:%>ikâtêyik #;
+    +X+3PlO:%>amihki #;
+    +X+4PlO:%>amihyiki #;
     
-    +Unspec+4Sg:%>hk #;
+    +X+4Sg:%>hk #;
 
     
 
