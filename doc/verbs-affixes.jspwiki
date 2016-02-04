@@ -48,8 +48,8 @@ Words marked GG are from Plains Cree Grammar guide and glossary
 
 Preverbs
 
-
  LEXICON PREVERBS   just adds the prefix boundary
+
 
 
 
@@ -98,11 +98,16 @@ Intransitive animate (AI)
  LEXICON AICONJn-PL  splits in 4 moods, for verbs with final -n
 
 
+AI CONJ-CONT can take the wici- circumfix
+
  LEXICON AICONJ-CONT  
 
 
 
 
+
+
+AI CONJ-CONT-PL can take the wici- circumfix (plural only)
 
  LEXICON AICONJ-CONT-PL  only plural forms.
 
@@ -111,6 +116,8 @@ Intransitive animate (AI)
 
 
 
+AI CONJ-CONTn class Conjugations can take the wici- circumfix
+
  LEXICON AICONJ-CONTn  
 
 
@@ -118,12 +125,16 @@ Intransitive animate (AI)
 
 
 
+AI n-sub class Conjugations can take the wici- circumfix (PL only)
+
  LEXICON AICONJ-CONTn-PL  
 
 
 
 
 
+
+IND forms
 
  LEXICON AI_IND  First mode, indicative
 
@@ -135,6 +146,9 @@ Intransitive animate (AI)
  LEXICON AI_INDn-PL  First mode, indicative
 
 
+Suffixation begins for AI IND classes
+
+
  LEXICON AI_IND_PRS  gives person suffixes
 
 
@@ -142,17 +156,15 @@ Intransitive animate (AI)
 
 
 
- LEXICON AI_IND_PRSn  gives person suffixes
-
- LEXICON AI_IND_PRSn-PL  gives person suffixes
+ LEXICON AI_INDn_PRS  gives person suffixes
 
 
-
-
+ LEXICON AI_INDn_PRS-PL  gives person suffixes
 
 
 
  LEXICON AI_FUT_CON  
+
 
  LEXICON AI_FUT_CON-PL  only plural forms.
 
@@ -170,14 +182,15 @@ Intransitive animate (AI)
 
 
 
- LEXICON AI_CNJ_SUF  singular forms
+ LEXICON AI_CNJ_PRS  singular forms
 
- LEXICON AI_CNJ_SUF-PL   plural forms
+ LEXICON AI_CNJ_PRS-PL   plural forms
 
 
- LEXICON AI_CNJ_SUFn 
+ LEXICON AI_CNJn_PRS 
 
- LEXICON AI_CNJ_SUFn-PL 
+
+ LEXICON AI_CNJn_PRS-PL 
 
 
  LEXICON AI_IMP   Fourth mode, imperative singular forms
@@ -199,31 +212,23 @@ Intransitive animate (AI)
 Intransitive inanimate (II)
 
 
- LEXICON IICONJ   adds the flag for no personprefixes
+ LEXICON IICONJ  splits in 4 moods
 
- LEXICON IICONJ-SG   adds the flag for no personprefixes, only Sg forms
+ LEXICON IICONJ-SG   splits in 4 moods, gives only plural forms.
 
- LEXICON IICONJ-PL   adds the flag for no personprefixes, only Pl forms
-
- LEXICON IICONJFORMS 
-
- LEXICON IICONJFORMS-SG 
-
- LEXICON IICONJFORMS-PL  
+ LEXICON IICONJ-PL  splits in 4 moods, for verbs with final -n
 
 
- LEXICON IICONJw    w final
+II Conjugation for stems ending in -w
 
- LEXICON IICONJw-SG    w final, only Sg forms
+ LEXICON IICONJw  splits in 4 moods
 
- LEXICON IICONJw-PL    w final, only Pl forms
+ LEXICON IICONJw-SG   splits in 4 moods, gives only plural forms.
+
+ LEXICON IICONJw-PL  splits in 4 moods, for verbs with final -n
 
 
- LEXICON IICONJ-CONTw  w final. Splits according to mood
-
- LEXICON IICONJ-CONTw-SG  w final. Splits according to mood
-
- LEXICON IICONJ-CONTw-PL  w final. Splits according to mood
+IICONJ-CONT splits into 4 moods
 
  LEXICON IICONJ-CONT  splits according to mood
 
@@ -231,61 +236,62 @@ Intransitive inanimate (II)
 
  LEXICON IICONJ-CONT-PL  splits according to mood
 
- LEXICON II_INDw  indicative for w final
 
 
- LEXICON II_INDw-SG  indicative for w final
+IICONJw-CONT splits into 4 moods
 
- LEXICON II_INDw-PL  indicative for w final
+ LEXICON IICONJw-CONT  w final. Splits according to mood
 
- LEXICON II_CNJw  conjunctive for w final
+ LEXICON IICONJw-CONT-SG  w final. Splits according to mood
 
- LEXICON II_CNJw-SG  conjunctive for w final
-
- LEXICON II_CNJw-PL  conjunctive for w final
+ LEXICON IICONJw-CONT-PL  w final. Splits according to mood
 
 
 
+Suffixation begins for II IND classes
 
- LEXICON II_IND  indicative
+ LEXICON II_INDw_PRS    w final 
 
+ LEXICON II_INDw_PRS-SG    w final 
 
- LEXICON II_IND-SG  indicative
-
- LEXICON II_IND-PL  indicative
-
-
- LEXICON II_CNJ  conjunctive
-
- LEXICON II_CNJ-SG  conjunctive
-
- LEXICON II_CNJ-PL  conjunctive
+ LEXICON II_INDw_PRS-PL    w final 
 
 
- LEXICON II_IND_PERSw-SG    w final 
+ LEXICON II_INDw_PRS_Fut    w final 
 
- LEXICON II_IND_PERSw_Fut-SG    w final 
+ LEXICON II_INDw_PRS_Fut-SG    w final 
+
+ LEXICON II_INDw_PRS_Fut-PL    w final 
 
 
- LEXICON II_IND_PERSw-PL    w final 
+ LEXICON II_IND_PRS    -n final 
 
- LEXICON II_IND_PERSw_Fut-PL    w final 
+ LEXICON II_IND_PRS-SG    -n final 
 
- LEXICON II_IND_PERS-SG    -n final 
+ LEXICON II_IND_PRS-PL    -n final 
 
- LEXICON II_IND_PERS_Fut-SG    -n final 
 
- LEXICON II_IND_PERS-PL    -n final 
 
- LEXICON II_IND_PERS_Fut-PL    -n final 
+ LEXICON II_IND_PRS_Fut    -n final 
 
- LEXICON II_CNJ_PERSw-SG    w final 
+ LEXICON II_IND_PRS_Fut-SG    -n final 
 
- LEXICON II_CNJ_PERSw-PL    w final 
+ LEXICON II_IND_PRS_Fut-PL    -n final 
 
- LEXICON II_CNJ_PERS-SG    -n final 
 
- LEXICON II_CNJ_PERS-PL    -n final 
+Suffixation begins for II CNJ classes
+
+ LEXICON II_CNJ_PRS    -n final 
+
+ LEXICON II_CNJ_PRS-SG    -n final 
+
+ LEXICON II_CNJ_PRS-PL    -n final 
+
+ LEXICON II_CNJw_PRS    w final 
+
+ LEXICON II_CNJw_PRS-SG    w final 
+
+ LEXICON II_CNJw_PRS-PL    w final 
 
 
 
@@ -396,7 +402,6 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
-
  LEXICON VTATS_KI_O 	     gives the objects suffixes matching 2Sg subject
 
 
@@ -424,6 +429,7 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
  * LEXICON VTAVw_NULL_O 	  
+
 
 
  * LEXICON VTAVw_NULL_O-PL 	  
