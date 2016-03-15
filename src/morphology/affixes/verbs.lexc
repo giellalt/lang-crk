@@ -767,13 +767,14 @@ LEXICON imp-long-E !!= @CODE@
 
 
 LEXICON IICONJ !!= @CODE@ splits in 4 moods
-+V+II: IICONJ-CONT ;
++V+II: IICONJ-CONT_wici ;
 
 LEXICON IICONJ-SG !!= @CODE@  splits in 4 moods, gives only plural forms.
-+V+II: IICONJ-CONT-SG ;
++V+II: IICONJ-CONT-SG_wici ;
 
 LEXICON IICONJ-PL !!= @CODE@ splits in 4 moods, for verbs with final -n
-+V+II: IICONJ-CONT-PL ;
++V+II: IICONJ-CONT-PL_wici ;
+
 
 
 !! !!! II Conjugation for stems ending in -w
@@ -787,6 +788,25 @@ LEXICON IICONJw-SG !!= @CODE@  splits in 4 moods, gives only plural forms.
 LEXICON IICONJw-PL !!= @CODE@ splits in 4 moods, for verbs with final -n
 +V+II: IICONJw-CONT-PL ;
 
+
+LEXICON IICONJ-CONT_wici
+@U.wici.NULL@ IICONJ-CONT ;
+
+LEXICON IICONJ-CONT-SG_wici
+@U.wici.NULL@ IICONJ-CONT-SG ;
+
+LEXICON IICONJ-CONT-PL_wici
+@U.wici.NULL@ IICONJ-CONT-PL ;
+
+!! IICONJw wici chamber
+LEXICON IICONJw-CONT_wici
+@U.wici.NULL@ IICONJw-CONT ;
+
+LEXICON IICONJw-CONT-SG_wici
+@U.wici.NULL@ IICONJw-CONT-SG ;
+
+LEXICON IICONJw-CONT-PL_wici
+@U.wici.NULL@ IICONJw-CONT-PL ;
 
 !! !!! IICONJ-CONT splits into 4 moods
 
@@ -813,8 +833,8 @@ LEXICON IICONJ-CONT-PL !!= @CODE@ splits according to mood
 LEXICON IICONJw-CONT !!= @CODE@ w final. Splits according to mood
 < "+Ind":0  "@U.mood.indep@" >  II_INDw_PRS ; !
 < "+Cnj":0  "@U.mood.cnj@" > II_CNJw_PRS ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS-SG ;!
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS-PL ;!
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS_Fut ;!
+< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS_Fut ;!
 
 LEXICON IICONJw-CONT-SG !!= @CODE@ w final. Splits according to mood
 < "+Ind":0  "@U.mood.indep@" >  II_INDw_PRS-SG ; !
