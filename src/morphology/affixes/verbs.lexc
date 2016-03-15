@@ -1124,15 +1124,14 @@ LEXICON VTA_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 
 +1Sg+3SgO:%>âw		  # ;
 +1Sg+3PlO:%>âwak	  # ;
 +1Sg+4Sg/PlO:%>imâwa	  # ; ! From NS 152
-+3Sg+1SgO:%>ik        # ;
-!+3Sg+1PlO:%>ik        # ;
-+3Sg+1PlO:%>ikonân	  # ;
-+3Pl+1SgO:%>ikwak	  # ;
 +1Pl+3SgO:%>ânân	  # ;
 +1Pl+3PlO:%>ânânak	  # ;
 +1Pl+4Sg/PlO:%>imânâna	  # ; ! From NS 152
-+3Pl+1PlO:%>ikonânak  # ;
 
++3Sg+1SgO:%>ik        # ; ! start of inverse forms
++3Sg+1PlO:%>ikonân	  # ;
++3Pl+1SgO:%>ikwak	  # ;
++3Pl+1PlO:%>ikonânak  # ;
 +4Sg/Pl+1SgO:%>ikoyiwa	   # ; ! FROM NS 152
 +4Sg/Pl+1PlO:%>ikonân	   # ; ! FROM NS 152
 
@@ -1143,47 +1142,45 @@ LEXICON VTA_NI_O  !!= @CODE@ gives the objects suffixes matching 1Sg subject or 
 
 
 LEXICON VTA_KI_O 	    !!= @CODE@ gives the objects suffixes matching 2Sg subject
-+2Sg+3SgO:%>âw		  # ;
++2Sg+1SgO:%>in         # ; ! 2->1 pairs
++2Sg+1PlO:%>inân       # ;
++2Pl+1SgO:%>inâwâw     # ;
++2Pl+1PlO:%>inân       # ;
+
++2Sg+3SgO:%>âw		  # ; ! 2->3/4 pairs
 +2Sg+3PlO:%>âwak	  # ;
 +2Sg+4Sg/PlO:%>imâwa	  # ; ! From NS 152
-+3Sg+2SgO:%>ik		  # ;
-+3Pl+2SgO:%>ikwak	  # ;
-+12Pl+3SgO:%>ânaw	  # ;
-+12Pl+3PlO:%>ânawak	  # ;
-+12Pl+4Sg/PlO:%>imânawa	  # ; ! From NS 152
-+3Sg+12PlO:%>ikonaw	  # ;
-+3Sg+2PlO:%>ikowâw	  # ;
-+3Pl+12PlO:%>ikonawak # ;
 +2Pl+3SgO:%>âwâw	  # ;
 +2Pl+3PlO:%>âwâwak	  # ;
 +2Pl+4Sg/PlO:%>imâwâwa	  # ; ! From NS 152
+
++12Pl+3SgO:%>ânaw	  # ; ! 12Pl forms
++12Pl+3PlO:%>ânawak	  # ;
++12Pl+4Sg/PlO:%>imânawa	  # ; ! From NS 152
+
++3Sg+2SgO:%>ik		  # ; ! Inverse 3->2 forms
++3Pl+2SgO:%>ikwak	  # ;
++3Sg+12PlO:%>ikonaw	  # ;
++3Sg+2PlO:%>ikowâw	  # ;
++3Pl+12PlO:%>ikonawak # ;
 +3Pl+2PlO:%>ikowâwak  # ;
-+2Sg+1SgO:%>in         # ;
-+2Sg+1PlO:%>inân       # ;
-+2Pl+1PlO:%>inân       # ;
-+2Pl+1SgO:%>inâwâw     # ;
-+1Sg+2SgO:%>itin         # ;
+
++1Sg+2SgO:%>itin         # ; ! inverse 1->2 forms
 +1Pl+2SgO:%>itinân         # ; !OBS
 +1Sg+2PlO:%>itinâwâw         # ;
 +1Pl+2PlO:%>itinân         # ;
 
-+4Sg/Pl+2SgO:%>ikoyiwa	   # ; ! FROM NS 152
++4Sg/Pl+2SgO:%>ikoyiwa	   # ; ! FROM NS 152 ! inverse 4->2 forms
 +4Sg/Pl+2PlO:%>ikowâw	   # ; ! FROM NS 152
 +4Sg/Pl+12PlO:%>ikonaw	   # ; ! FROM NS 152
 
-+2Sg+X:%>ikawin	   # ;
++2Sg+X:%>ikawin	   # ; ! 2->X forms
 +12Pl+X:%>ikawinaw	   # ;
 +2Pl+X:%>ikawinâwâw	   # ;
 
 				  
 LEXICON VTA_NULL_O 	  
 +3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons 
-!+3Sg+3SgO:%>ik		  # ; ! Oki 77
-!+3Sg+3SgO:%>kow	  # ; ! Oki 77
-!+3Sg+3Sg/PlO:%>êw		  # ; ! Oki 77
-!+3Sg+3PlO:%>ikowak	  # ; ! Oki 77
-!+3Sg+3PlO:%>ikak	  # ; ! Oki 77
-!+3Pl+3SgO:%>kow	  # ; ! Oki 77
 +3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing fourth, fifth persons
 +4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing fourth, fifth persons
 
