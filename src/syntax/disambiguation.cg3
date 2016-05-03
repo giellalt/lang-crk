@@ -111,13 +111,14 @@ LIST Px4Pl = Px4Pl ;
 LIST Px4Sg = Px4Sg ;
 LIST Der/Dim = Der/Dim ;
 
+LIST PV/kah = "PV/kah" ;
+LIST RdplS = "RdplS" ;
 
 # Sets
 # ====
 
-LIST WORD = N V Ipc Interj ;
+LIST WORD = N V Ipc Interj Pron ;
 
-LIST VFIN = (V 1Sg) (V 2Sg) (V 3Sg) (V 4Sg) (V 5Sg) (V 1Pl) (V 2Pl) (V 3Pl) (V 4Pl) (V 5Pl) ;
 
 SET NOT-VERB = WORD - V ;
 
@@ -150,12 +151,16 @@ BEFORE-SECTIONS
 
 SECTION
 
+# Different taste, different analysis
+#SELECT PV/kah IF (0 RdplS) ;
+REMOVE PV/kah IF (0 RdplS) ;
+
 # We remove the particle if the word can be something more interesting:
-REMOVE:NotIpc Ipc (0 N OR V) ;
+SELECT:ChooseIpc Ipc IF (0 N OR V) ;
 
-# We like finite verbs:
-SELECT:Vfin VFIN ;
-
+# Sentence-final niyâ is a particle
+SELECT:1SgIfV1Sg 1Sg if (0 ("niya"))(*0C V + 1Sg);
+	
 # We go for derivation, more to look at when we are searching a lemme in Korp:
 SELECT:DerYes Der/Dim (0C N) ;
 
@@ -165,7 +170,9 @@ REMOVE:DemNotIpc Ipc ( 1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
 	## Mîcisowinâhtik ôma.
 
 # Demonstratives follow nouns.
-REMOVE:IpcNotDem Dem (NOT -1 N)(NOT 1 N)(0 Ipc) ;
+#REMOVE:IpcNotDem Dem (NOT -1 N)(NOT 1 N)(0 Ipc) ;
+SELECT:IpcNotDem Dem (0 Ipc)(1 N) ;
+SELECT:IpcNotDem Dem (-1 N)(0 Ipc) ;
 
 # Interrogatives in questions
 REMOVE:InterrNotN N (0 Interr)(NOT *-1 Interr)(*1 ("?"));
@@ -186,6 +193,9 @@ REMOVE:PlIfObjSg 3SgO (0 3SgO)(*0 Pl + Obv);
 
 REMOVE Fut (0 Ind);
 REMOVE Imp (0 Ind)(*0 N + Sg);
+
+REMOVE:2SgWrong 2Sg IF (0 ("<.*ân>"r) + 1Sg) ;
+REMOVE:12PlWrong 12Pl IF (0 ("<.*âhk>"r) + 1Pl) ;
 
 
 
