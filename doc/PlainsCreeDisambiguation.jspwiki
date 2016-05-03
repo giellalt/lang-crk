@@ -1,0 +1,28 @@
+
+This file gives an nverview of some still ad hoc solutions for disambiguation.
+
+!!!Prerequisites:
+
+* vislcg3 installed A text corpus. 
+
+!!!How to analyse
+
+Plains Cree differs from the other languuages in not having an adjusted
+version of the preprocessor yet. While waiting , we do some ad hoc
+solutions. Here is a pipeline that gives an analysis.
+
+
+{{{
+cat misc/7C_Mary_Wells.txt |sed 's/\([.,:;‘’"]\)/ \1 /g;'|tr '[  ]' '\n'|\
+grep -v '~$'|grep -v '^$'|ucrk|grep '?'|sort|uniq -c|sort -nr|l
+}}}
+
+
+!!!Strategies for disambiguation
+
+Look at common ambiguity patterns
+
+* [Grammar ambiguity|data/grammarambiguity.html]
+* [Word ambiguity|data/wordambiguity.html]
+
+To create similar statics, use the {{sum-cg.pl}} script (write ''sum-cg.pl --help'' in order to get just that.
