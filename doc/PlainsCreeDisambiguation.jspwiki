@@ -26,3 +26,44 @@ Look at common ambiguity patterns
 * [Word ambiguity|data/wordambiguity.html]
 
 To create similar statics, use the {{sum-cg.pl}} script (write ''sum-cg.pl --help'' in order to get just that.
+
+!!vislcg3 rules
+* [tutorial|http://beta.visl.sdu.dk/cg3.html]
+* [documentation of syntax|http://beta.visl.sdu.dk/cg3/single/]
+
+!Operators:
+* DELIMITERS : 
+** This will work as an on-the-fly sentence (disambiguation window) delimiter.
+* LIST KIN = "daughter" "mother" "father" "aunt" "uncle" ; 
+* LIST WORD = N ADJ V ADV NUM ;
+* LIST NP-MOD = ADJ ADV ;
+* LIST @Kinship = @Kinship ;
+* SET NOT-NP-MOD = WORD - NP-MOD ;
+* SELECT INFM IF (1 INF) ; 
+** Singles out a reading from the cohort that matches the target, and if all contextual tests are satisfied it will delete all other readings except the matched one.
+* REMOVE INFM IF (NOT 1 INF) ; 
+** Singles out a reading from the cohort that matches the target, and if all contextual tests are satisfied it will delete the mached reading.
+* SELECT N IF (*-1 ART BARRIER NOT-NP-MOD) ;
+* SELECT N IF (*-1 ART CBARRIER V) ;  
+* REMOVE INF (NEGATE -1 N LINK -1 INF LINK -1 INFM ) ;
+* MAP @Kinship TARGET KIN + N ;
+* ADD  
+** Appends tag to matching readings. Will not block for adding further tags
+* MAP @3SERR TARGET (-3S)(-1 (S NOM) OR (3S NOM)) ; 
+** Appends tags to matching readings, and blocks other MAP, ADD
+* SUBSTITUTE (N S NOM) (N S Nom) N ; 
+** Replaces the tags in the first list with the tags in the second list. 
+
+!Careful mode: 
+* 1C NOM (the only reading left is NOM)
+
+
+! Apply function tags
+ 
+Make a set for the function tag, and make one or more rules: 
+* LIST @SUBJ = @SUBJ ;
+* MAP @SUBJ TARGET NOM IF (1 VFIN) ;
+* LIST @SUBJ> = @SUBJ> ;
+* MAP @SUBJ> TARGET NOM IF (1 VFIN) ; (with arrow towards the finite verb)
+
+
