@@ -42,10 +42,14 @@ grep -v '~$'|grep -v '^$'|lookup src/analyser-gt-desc.xfst |grep '?'|sort|uniq -
 
 !!!Strategies for disambiguation
 
-Look at common ambiguity patterns
+Look at common ambiguity patterns in some texts.
 
-* [Grammar ambiguity|data/grammarambiguity.html]
-* [Word ambiguity|data/wordambiguity.html]
+* Grammar ambiguity
+** [Mary Wells|data/grammarambiguity.html]
+** [Bloomfiel|data/pct.grammar.html]
+* Word ambiguity
+** [Mary Wells|data/wordambiguity.html]
+** [Bloomfield|data/pct.words.html
 
 To create similar statics, use the {{sum-cg.pl}} script (write ''sum-cg.pl --help'' 
 in order to get just that. The input to the script should be the analysed text __before__
