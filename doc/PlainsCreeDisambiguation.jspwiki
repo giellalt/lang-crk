@@ -55,7 +55,8 @@ To create similar statics, use the {{sum-cg.pl}} script (write ''sum-cg.pl --hel
 ** Replaces the tags in the first list with the tags in the second list. 
 
 !Careful mode: 
-* 1C NOM (the only reading left is NOM)
+* 1C NOM 
+** if the only reading left is NOM
 
 
 ! Apply function tags
@@ -64,6 +65,7 @@ Make a set for the function tag, and make one or more rules:
 * LIST @SUBJ = @SUBJ ;
 * MAP @SUBJ TARGET NOM IF (1 VFIN) ;
 * LIST @SUBJ> = @SUBJ> ;
-* MAP @SUBJ> TARGET NOM IF (1 VFIN) ; (with arrow towards the finite verb)
+* MAP @SUBJ> TARGET NOM IF (1 VFIN) ; 
+** with arrow towards the finite verb
 
 
