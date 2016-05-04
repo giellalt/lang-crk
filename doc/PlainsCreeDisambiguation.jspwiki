@@ -47,7 +47,19 @@ Look at common ambiguity patterns
 * [Grammar ambiguity|data/grammarambiguity.html]
 * [Word ambiguity|data/wordambiguity.html]
 
-To create similar statics, use the {{sum-cg.pl}} script (write ''sum-cg.pl --help'' in order to get just that.
+To create similar statics, use the {{sum-cg.pl}} script (write ''sum-cg.pl --help'' 
+in order to get just that. The input to the script should be the analysed text __before__
+disambiguation:
+
+{{{
+cat misc/CORR_Dog_Biscuits.txt |preprocess|lookup src/analyser-gt-desc.xfst | lookup2cg > xxdogbiscuits.multi
+
+sum-cg.pl --grammar xxdogbiscuits.multi | less
+}}}
+
+You may of course also take the disambiguated text as input, and use the sum-cg 
+as a script to find where to go next.
+
 
 !!vislcg3 rules
 * [tutorial|http://beta.visl.sdu.dk/cg3_howto.pdf]
