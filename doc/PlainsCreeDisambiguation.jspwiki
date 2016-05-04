@@ -36,6 +36,8 @@ cat misc/CORR_Dog_Biscuits.txt |preprocess|lookup src/analyser-gt-desc.xfst |gre
 
 cat misc/7C_Mary_Wells.txt |sed 's/\([.,:;‘’"]\)/ \1 /g;'|tr '[  ]' '\n'|\
 grep -v '~$'|grep -v '^$'|lookup src/analyser-gt-desc.xfst |grep '?'|sort|uniq -c|sort -nr|less
+
+cat misc/PCT.txt|ucrk|grep '?'|sort|uniq -c|sort -nr|less
 }}}
 
 
