@@ -66,7 +66,78 @@
 
 LEXICON STEMS
 !! @LEXNAME@ adds an affixmark and redirects to STEMLIST
- 0:%> STEMLIST ;
+0:%> PRENOUNS ;
+0:%> STEMLIST ;
+
+LEXICON PRENOUNS
+amisko STEMLISTPRE "beaver, pertaining to the beaver" ;
+anikwacâsi STEMLISTPRE "squirrel, pertaining to the squirrel" ;
+apihci STEMLISTPRE "small" ;
+apisci STEMLISTPRE "small, little" ;
+apisi STEMLISTPRE "small, tiny" ;
+apist STEMLISTPRE "small" ;
+asinîskâwi STEMLISTPRE "rocky, stoney; pertaining to an area of many stones; pertaining to the area of the Canadian Shield" ;
+asiskîwi STEMLISTPRE "of mud, of clay" ;
+aski STEMLISTPRE "raw, fresh" ;
+askihtako STEMLISTPRE "green; blue, blue-green" ;
+askîwi STEMLISTPRE "of the earth, pertaining to the earth" ;
+atimo STEMLISTPRE "pertaining to the dog, doglike" ;
+ayakaski STEMLISTPRE "wide" ;
+ayîki STEMLISTPRE "frog, pertaining to the frog or toad" ;
+âhkiko STEMLISTPRE "seal, pertaining to the seal" ;
+âhkwaci STEMLISTPRE "hard, frozen, frozen solid" ;
+âkayâsîwi STEMLISTPRE "English, pertaining to the English" ;
+âpakosîsi STEMLISTPRE "mouse, pertaining to the mouse" ;
+cimâsko STEMLISTPRE "short, stout; truncated" ;
+êyiko STEMLISTPRE "ant, pertaining to the ant" ;
+iyini STEMLISTPRE "common, plain" ;
+iyinito STEMLISTPRE "common, plain" ;
+kayâsi STEMLISTPRE "old; long ago, old-time" ;
+kâspi STEMLISTPRE "crunchy" ;
+kêhtê STEMLISTPRE "old, respected by age" ;
+kihci STEMLISTPRE "great, big" ;
+kihcihtwâwi STEMLISTPRE "of exalted character; venerable, holy" ;
+kinêpiko STEMLISTPRE "of or pertaining to the snake" ;
+kino STEMLISTPRE "long, length" ;
+kîski STEMLISTPRE "severed, amputated, cut off" ;
+kîsô STEMLISTPRE "warmth" ;
+kîwâci STEMLISTPRE "lonely, desolate, bereaved" ;
+kohkôsi STEMLISTPRE "porcine, pertaining to the pig, piggish" ;
+mahihkani STEMLISTPRE "pertaining to the wolf, wolfish, wolf-like, wolven" ;
+mahkêsîsi STEMLISTPRE "pertaining to the fox, fox-like" ;
+mahki STEMLISTPRE "big, large" ;
+manitowi STEMLISTPRE "spiritual, of or pertaining to spirits; of or pertaining to the Creator, God" ;
+mâci STEMLISTPRE "beginning" ;
+mâski STEMLISTPRE "crippled, lame; deformed" ;
+mâyi STEMLISTPRE "bad, ugly, nasty, evil, wicked" ;
+mihkowi STEMLISTPRE "bloody" ;
+mikisiwi STEMLISTPRE "pertaining to the eagle" ;
+misi STEMLISTPRE "big, large, great" ;
+miyo STEMLISTPRE "good; beautiful, valuable" ;
+mostoso STEMLISTPRE "cow; buffalo; pertaining to cattle or buffalo" ;
+môniyâw STEMLISTPRE "White, White-Man's" ;
+môniyâwi STEMLISTPRE "White-Man's" ;
+môso STEMLISTPRE "of or pertaining to the moose" ;
+namêwi STEMLISTPRE "of or pertaining to the sturgeon" ;
+nâpê STEMLISTPRE "male, maleness" ;
+nêhiyawi STEMLISTPRE "Cree" ;
+niski STEMLISTPRE "pertaining to the goose" ;
+nîci STEMLISTPRE "my fellow ..." ;
+nôsê STEMLISTPRE "female" ;
+oski STEMLISTPRE "young, new, fresh" ;
+sîpihko STEMLISTPRE "blue" ;
+sîsîpi STEMLISTPRE "duck, pertaining to a duck" ;
+takahki STEMLISTPRE "good, nice" ;
+wacasko STEMLISTPRE "muskrat, pertaining to muskrat" ;
+wâpi STEMLISTPRE "white" ;
+wâpiski STEMLISTPRE "white" ;
+wâposo STEMLISTPRE "rabbit, pertaining to rabbits" ;
+wîci STEMLISTPRE "one of his/her own kind; fellow" ;
+wîhki STEMLISTPRE "sweet; fragrant" ;
+
+LEXICON STEMLISTPRE
+%-:%> STEMLIST ;
+%-:%-%> STEMLIST ;
 
 LEXICON STEMLIST
 
@@ -1100,7 +1171,7 @@ kihci-ayamihêwikamik:kihci-ayamihêwikamikw IN_DECL "cathedral, temple, church"
 kihci-ayamihêwiyiniw AN_DECL "bishop" ;
 kihci-ayisiyiniw AN_DECL "man of importance" ;
 kihci-itwêwin IN_DECL "oath-taking (on the Bible)" ;
-kihci-kiskinwahamâtowikamik:kihci-kiskinwahamâtowikamikw IN_DECL "university" ;
+kihci-kiskinwahamâtowikamik[kiht/i/kiskinw/ah/amaw/itowi/kamikw]:kihci-kiskinwahamâtowikamikw IN_DECL "university" ;
 kihci-kîsik:kihci-kîsikw IN_DECL "heaven; outer space" ; ! singular loc: -ohk
 kihci-kîsikow AN_DECL "angel" ;
 kihci-manitow AN_DECL "the Creator; Great Spirit, God" ;
@@ -2384,7 +2455,7 @@ nôsê-minôs AN_DECL "female cat" ;
 nôsê-mistâhkêsiw AN_DECL "lioness" ;
 nôsê-pâhkahahkwân AN_DECL "hen, female chicken" ;
 nôsê-pihêw AN_DECL "female partridge" ;
-nôsê-wâpos:nôsê-wâposw ANimDECLnaahk "doe, female rabbit" ;
+    nôsê-wâpos:nôsê-wâposw ANimDECLnaahk "doe, female rabbit" ;
 nôsêmêk:nôsêmêkw AN_DECL "spawn" ;
 nôsêsip AN_DECL "female duck" ;
 nôsêstim:nôsêstimw AN_DECL "bitch, female dog; mare, female horse" ;
