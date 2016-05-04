@@ -11,11 +11,33 @@ Plains Cree differs from the other languuages in not having an adjusted
 version of the preprocessor yet. While waiting , we do some ad hoc
 solutions. Here is a pipeline that gives an analysis.
 
+{{{
+cat misc/CORR_Dog_Biscuits.txt |preprocess|lookup src/analyser-gt-desc.xfst | lookup2cg | vislcg3 -g src/syntax/disambiguation.cg3
+}}}
+
+The string ''lookup src/analyser-gt-desc.xfst'' might be express as the alias ''ucrk''.
+
+Dog Biscuits does not use the ' symbol as a letter, so we may use ''preprocess''. 
+With the Mary Wells text (and possibly other texts) using this letter, we use an ad hoc set of commands instead of ''preprocess'', as below. The command below is there to build a
 
 {{{
 cat misc/7C_Mary_Wells.txt |sed 's/\([.,:;‘’"]\)/ \1 /g;'|tr '[  ]' '\n'|\
-grep -v '~$'|grep -v '^$'|ucrk|grep '?'|sort|uniq -c|sort -nr|l
+grep -v '~$'|grep -v '^$'|lookup src/analyser-gt-desc.xfst | lookup2cg | vislcg3 -g src/syntax/disambiguation.cg3
 }}}
+
+!!!Missing list
+
+In order to make good analyses, we need the words of the text in the analyser, 
+i.e. we need to build a ''missing list'', and add its word to the analyser. Here is 
+a command for making a missing list (for the two texts, respectively).
+
+{{{
+cat misc/CORR_Dog_Biscuits.txt |preprocess|lookup src/analyser-gt-desc.xfst |grep '?'|sort|uniq -c|sort -nr|less
+
+cat misc/7C_Mary_Wells.txt |sed 's/\([.,:;‘’"]\)/ \1 /g;'|tr '[  ]' '\n'|\
+grep -v '~$'|grep -v '^$'|lookup src/analyser-gt-desc.xfst |grep '?'|sort|uniq -c|sort -nr|less
+}}}
+
 
 
 !!!Strategies for disambiguation
