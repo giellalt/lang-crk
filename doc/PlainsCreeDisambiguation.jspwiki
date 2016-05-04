@@ -104,3 +104,13 @@ Make a set for the function tag, and make one or more rules:
 ** with arrow towards the finite verb
 
 
+!!!Aliases
+
+Put these in your .profile or .bashrc folder
+
+{{{
+alias crkdep="sent-proc.sh -l crk -s dep"
+alias crkdept="sent-proc.sh -l crk -s dep -t"
+alias crkdis="sent-proc.sh -l crk -s dis"
+alias crkdist="sent-proc.sh -l crk -s dis -t"
+}}}
