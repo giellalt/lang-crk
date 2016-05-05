@@ -40,7 +40,7 @@ LIST CS = CS ;
 LIST AN = AN ;
 LIST IN = IN ;
 
-LIST IA = IA ;
+LIST IA = AI ;
 LIST II = II ;
 LIST TA = TA ;
 LIST TI = TI ;
@@ -99,6 +99,8 @@ LIST 4PlO = 4PlO ;
 LIST 4Sg = 4Sg ;
 LIST 4SgO = 4SgO ;
 LIST 5Sg = 5Sg ;
+LIST 4Sg/Pl = 4Sg/Pl ;
+LIST 4Sg/PlO = 4Sg/PlO ;
 
 LIST Px12Pl = Px12Pl ;
 LIST Px1Pl = Px1Pl ;
@@ -113,6 +115,8 @@ LIST Der/Dim = Der/Dim ;
 
 LIST PV/kah = "PV/kah" ;
 LIST RdplS = "RdplS" ;
+LIST @Act = @Act ;
+LIST @Goal = @Goal ;
 
 # Sets
 # ====
@@ -197,8 +201,28 @@ REMOVE Imp (0 Ind)(*0 N + Sg);
 REMOVE:2SgWrong 2Sg IF (0 ("<.*ân>"r) + 1Sg) ;
 REMOVE:12PlWrong 12Pl IF (0 ("<.*âhk>"r) + 1Pl) ;
 
+#Actor and goal rules for 3 and 3’ animate nouns
+MAP:TAGoalObv @Goal TARGET Obv IF (*0 TA + 4Sg/PlO BARRIER V) ;
+MAP:TAGoal3 @Goal TARGET N + AN IF (NOT 0 Obv LINK *0 TA + 3PlO OR 3SgO BARRIER V) ;
+MAP:TAActor @Act TARGET N + AN IF (NOT 0 Obv LINK *0 TA + 3Pl OR 3Sg BARRIER V) ;
 
+#TI and AI actors
+MAP:AITIActor @Act TARGET N + AN IF (*0 IA OR TI + 3Pl OR 3Sg OR 4Sg/Pl BARRIER V) ;
 
+#II actors
+MAP:IIActor3 @Act TARGET N + IN IF (*0 II + 3Sg OR II + 3Pl BARRIER V) ;
+MAP:IIActor4 @Act TARGET N + IN + Px3Sg OR Px3Pl IF (*0 II + 4Sg OR II + 4Pl BARRIER V) ;
+
+#kikway disambiguation
+REMOVE:kikway Pron IF (0 ("kîkway")) ;
+SELECT:INkikway IN IF (0 ("kîkway") LINK *0 TI) ;
+
+#ka-ki disambiguation
+SELECT:kaPrt Prt IF (0 ("PV/kaa") + ("<kâ-.*>"r)) ;
+
+#2>3/3>4 disambiguation
+SELECT:disambig23Sg 3Sg IF (0 TA + ("<.*ât>"r)) ;
+SELECT:disambig23Pl 3Pl IF (0 TA + ("<.*âcik>"r)) ;
 
 AFTER-SECTIONS 
 
