@@ -77,11 +77,15 @@ LIST Prt = Prt ;
 LIST Qst = Qst ;
 LIST Sbj = Sbj ;
 
+LIST @ACTOR = @ACTOR ;
+LIST @GOAL = @ GOAL ;
+
 LIST SgO = SgO ;
 LIST P2lO = P2lO ;
 LIST Pl = Pl ;
 LIST PlO = PlO ;
 LIST 12Pl = 12Pl ;
+LIST 12PlO = 12PlO ;
 LIST 1Pl = 1Pl ;
 LIST 1PlO = 1PlO ;
 LIST Sg = Sg ;
@@ -115,8 +119,8 @@ LIST Der/Dim = Der/Dim ;
 
 LIST CLB = CLB ;
 
-LIST PV/kah = "PV/kah" ;
-LIST RdplS = "RdplS" ;
+LIST PV/kah = "PV/kah" PV/kah ;
+LIST RdplS = "RdplS" RdplS ;
 LIST @Act = @Act ;
 LIST @Goal = @Goal ;
 
@@ -132,6 +136,12 @@ SET NOT-NOUN = WORD - N ;
 LIST NUMBER = Sg Pl ;
 LIST GENDER = AN IN ;
 SET NUMBERGENDER = (AN Sg) OR (AN Pl) OR (IN Sg) OR (IN PL) ;
+
+LIST LONGVERBEND = ("<.*âhk>"r) ("<.*âhkik>"r) ("<.*ân>"r) ;
+LIST SHORTVERBEND = ("<.*ahk>"r) ("<.*ahkik>"r) ("<.*an>"r) ;
+
+
+# LIST SIERRA-GUOVLU = (".*guovlu"r) "suomabealli" "norggabealli" "riddu" "ruoŧabealli" # "ruoššabealli" ;
 
 # Noun sets
 
@@ -207,8 +217,20 @@ REMOVE:PlIfObjSg 3SgO (0 3SgO)(*0 Pl + Obv);
 REMOVE Fut (0 Ind);
 REMOVE Imp (0 Ind)(*0 N + Sg);
 
-REMOVE:2SgWrong 2Sg IF (0 ("<.*ân>"r) + 1Sg) ;
-REMOVE:12PlWrong 12Pl IF (0 ("<.*âhk>"r) + 1Pl) ;
+# REMOVE:2SgWrong 2Sg IF (0 ("<.*ân>"r) + 1Sg) ;
+# REMOVE:1SgWrong 1Sg IF (0 ("<.*an>"r) + 2Sg) ;
+# REMOVE:12PlWrong 12Pl IF (0 ("<.*âhk>"r) + 1Pl) ;
+# REMOVE:1PlWrong 1Pl IF (0 ("<.*ahk>"r) + 12Pl) ;
+# 
+REMOVE:12PlOWrong 12PlO IF (0 TA + LONGVERBEND + 1PlO) ;
+REMOVE:1PlOWrong 1PlO IF (0 TA + SHORTVERBEND + 12PlO) ;
+
+
+REMOVE:2SgWrong 2Sg IF (0 LONGVERBEND + 1Sg) ;
+REMOVE:1SgWrong 1Sg IF (0 SHORTVERBEND + 2Sg) ;
+
+
+
 
 #Actor and goal rules for 3 and 3’ animate nouns
 MAP:TAGoalObv @Goal TARGET Obv IF (*0 TA + 4Sg/PlO BARRIER V) ;
@@ -233,5 +255,13 @@ SELECT:kaPrt Prt IF (0 ("PV/kaa") + ("<kâ-.*>"r)) ;
 SELECT:disambig23Sg 3Sg IF (0 TA + ("<.*ât>"r)) ;
 SELECT:disambig23Pl 3Pl IF (0 TA + ("<.*âcik>"r)) ;
 
+#Remove RdplW if Kâ
+REMOVE:rdplwkaa ("RdplW") IF (0 ("PV/kaa")) ; 
+
+
+#Remove PVs
+REMOVE:fewerPV  ("PV.*"r) ;
+
 AFTER-SECTIONS 
+
 
