@@ -67,3 +67,13 @@ awa+Pron+Dem+Dist+AN+Pl:nêki # "those yonder" ;
 
 ôma+Pron+Dem+Dist+IN+Sg:nêma # "that yonder" ;
 ôma+Pron+Dem+Dist+IN+Pl:nêhi # "those yonder" ;
+
+! Let us say a pronoun ôma without a noun is a definite, not a demonstrative
+ôma+Pron+Def+Prox+IN+Sg:ôma # "this one" ; !!= @CODE@
+ôma+Pron+Def+Prox+IN+Pl:ôhi # "these one" ; !!= @CODE@
+
+ôma+Pron+Def+Med+IN+Sg:anima # "that one" ;
+ôma+Pron+Def+Med+IN+Pl:anihi # "those one" ;
+
+ôma+Pron+Def+Dist+IN+Sg:nêma # "that yonder one" ;
+ôma+Pron+Def+Dist+IN+Pl:nêhi # "those yonder one" ;
