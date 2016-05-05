@@ -21,6 +21,9 @@
 LEXICON pcle !!= * @CODE@ adds +Ipc
 +Ipc: # ; 
 
+LEXICON fpcle !!= * @CODE@ this is for focus particles
++Ipc+Foc: # ; 
+
 
 LEXICON Particles !!= * @CODE@ \\
 cî+Ipc+Qst:cî # ; !!= * @CODE@
@@ -847,7 +850,7 @@ nêwayak pcle "in four ways, fourfold; in four places" ;
 nêwâpisk pcle "four dollars" ;
 nêwâw pcle "four times" ;
 nêwinisk pcle "four fathoms" ;
-nêwo pcle "four" ;
+!nêwo pcle "four" ;
 nêwo-sôniyâs pcle "one (silver) dollar; four quarters" ;
 nêwo-tipiskâw pcle "four nights" ;
 nêwomitanaw pcle "forty" ;
@@ -875,7 +878,7 @@ nisitaw pcle "satisfactorily (suitable)" ;
 nisîhkâc pcle "gently, softly, carefully, slowly; quietly" ;
 nistam pcle "first; at first, for the first time, initially, originally" ;
 nistam% mâwacêyas pcle "first, earliest, oldest" ;
-nisto pcle "three" ;
+!nisto pcle "three" ;
 nisto% kîsikâw pcle "three days" ;
 nisto% tipahikan pcle "three o'clock; three yards" ;
 nisto% tipiskâw pcle "three nights" ;
@@ -898,7 +901,7 @@ niyatowihk pcle "like me, my kind" ;
 niyâ pcle "go ahead, go on, be off excl" ;
 niyâk pcle "for the future, in the future" ;
 niyâk pcle "go ahead, go on, be off excl" ;
-niyânan pcle "five" ;
+!niyânan pcle "five" ;
 niyânanomitanaw pcle "fifty" ;
 niyânanosâp pcle "fifteen" ;
 niyânanosâpwâw pcle "fifteen times" ;
@@ -919,7 +922,7 @@ nîsitanaw pcle "twenty" ;
 nîstanaw pcle "twenty" ; ! from NS 152
 nîsitanaw% tahtwâpisk pcle "twenty dollars" ;
 nîsitanawâw pcle "twenty times" ;
-nîso pcle "two" ;
+!nîso pcle "two" ;
 nîso-kîkway pcle "two things" ;
 nîso-kîsikâw pcle "two days" ;
 nîso-sôniyâs pcle "two quarters, fifty cents" ;
@@ -976,7 +979,7 @@ otânâhk pcle "behind" ;
 otâniyihk pcle "on his (obviative) hind part" ;
 oti pcle "in fact; emphasises preceding word or phrase" ;
 ôh pcle "oh excl exclamation" ;
-ôma pcle "it is this; the fact that; then; when; as it is, actually" ;
+ôma fpcle "it is this; the fact that; then; when; as it is, actually" ;
 ôma+Err/Orth:ôm pcle "it is this; the fact that; then; when; as it is, actually" ;
 ômatowahk pcle "of this kind, like this" ;
 ômatowihk pcle "right here, in this place; like this" ;
@@ -1020,7 +1023,7 @@ pêci-nâway pcle "from back then; down from the distant past" ;
 pêh-pêyak pcle "one by one, individually" ;
 pêskis pcle "at the same time, simultaneously; also, besides, as well" ;
 pêyahtik pcle "carefully" ; ! from NS 152
-pêyak pcle "one; alone, single; the only one" ;
+!pêyak pcle "one; alone, single; the only one" ;
 pêyak-askiy pcle "one year" ;
 pêyak-ispayin pcle "one week" ;
 pêyak-kosikwan pcle "one pound" ;
