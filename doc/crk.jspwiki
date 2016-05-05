@@ -45,11 +45,12 @@ POS
   * +Ipc		 Indeclinable Particle
 
  * +Dem         Demonstrative
+ * +Def	     This is the intransitive demonstrative, i.e. the definite.
  * +Prox	     Demonstrative Proximate
  * +Med	     Demonstrative Medial
  * +Dist	     Demonstrative Distal
 
-
+ * +Foc	     Focus particle
 
 Verbal MSP
  * +Prs  
@@ -431,6 +432,8 @@ Wolvengrey types:
 !Animate and inanimate Nouns
 
 STEMS adds an affixmark and redirects to STEMLIST
+
+
 
 
 
@@ -839,10 +842,15 @@ The file
 
  * LEXICON pcle  adds +Ipc
 
+ * LEXICON fpcle  this is for focus particles
+
 
  * LEXICON Particles  \\
  * cî+Ipc+Qst:cî # ; 
  * namôya+Ipc+Neg:namôya # ; 
+
+
+
 
 
 
@@ -887,6 +895,11 @@ INANIMATE \\
 
  ôma+Pron+Dem+Prox+IN+Sg:ôma # "this" ; 
  ôma+Pron+Dem+Prox+IN+Pl:ôhi # "these" ; 
+
+
+
+ ôma+Pron+Def+Prox+IN+Sg:ôma # "this one" ; 
+ ôma+Pron+Def+Prox+IN+Pl:ôhi # "these one" ; 
 
 
 Punctuation marks 
