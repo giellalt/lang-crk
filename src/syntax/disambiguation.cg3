@@ -113,6 +113,8 @@ LIST Px4Pl = Px4Pl ;
 LIST Px4Sg = Px4Sg ;
 LIST Der/Dim = Der/Dim ;
 
+LIST CLB = CLB ;
+
 LIST PV/kah = "PV/kah" ;
 LIST RdplS = "RdplS" ;
 LIST @Act = @Act ;
@@ -125,6 +127,7 @@ LIST WORD = N V Ipc Interj Pron ;
 
 
 SET NOT-VERB = WORD - V ;
+SET NOT-NOUN = WORD - N ;
 
 LIST NUMBER = Sg Pl ;
 LIST GENDER = AN IN ;
@@ -174,9 +177,15 @@ REMOVE:DemNotIpc Ipc ( 1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
 	## Mîcisowinâhtik ôma.
 
 # Demonstratives follow nouns.
-#REMOVE:IpcNotDem Dem (NOT -1 N)(NOT 1 N)(0 Ipc) ;
-SELECT:IpcNotDem Dem (0 Ipc)(1 N) ;
-SELECT:IpcNotDem Dem (-1 N)(0 Ipc) ;
+SELECT:DemNotIpcDN Dem (0 Ipc)(1 N) ;
+SELECT:DemNotIpcND Dem (-1 N)(0 Ipc) ;
+
+SELECT:OmaIpc Ipc (0 ("ôma"))(-1 NOT-NOUN OR BOS)(1 NOT-NOUN OR CLB);
+
+SELECT:DefSubj Def IF (1 4Sg/Pl);
+
+#This rule to come after the ones above.
+REMOVE:DemNotDef Def IF (0 Dem);
 
 # Interrogatives in questions
 REMOVE:InterrNotN N (0 Interr)(NOT *-1 Interr)(*1 ("?"));
