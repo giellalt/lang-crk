@@ -77,8 +77,6 @@ LIST Prt = Prt ;
 LIST Qst = Qst ;
 LIST Sbj = Sbj ;
 
-LIST @ACTOR = @ACTOR ;
-LIST @GOAL = @GOAL ;
 
 LIST SgO = SgO ;
 LIST P2lO = P2lO ;
@@ -121,8 +119,6 @@ LIST CLB = CLB ;
 
 LIST PV/kah = "PV/kah" PV/kah ;
 LIST RdplS = "RdplS" RdplS ;
-LIST @Act = @Act ;
-LIST @Goal = @Goal ;
 
 # Sets
 # ====
@@ -214,6 +210,8 @@ REMOVE:PlIfObjSg 3SgO (0 3SgO)(*0 Pl + Obv);
 
 # Mood rules -- do not understand moods yet
 
+REMOVE:IndOnly Cnj (0 Ind)(NOT *0 Ind);
+
 REMOVE Fut (0 Ind);
 REMOVE Imp (0 Ind)(*0 N + Sg);
 
@@ -230,19 +228,6 @@ REMOVE:2SgWrong 2Sg IF (0 LONGVERBEND + 1Sg) ;
 REMOVE:1SgWrong 1Sg IF (0 SHORTVERBEND + 2Sg) ;
 
 
-
-
-#Actor and goal rules for 3 and 3’ animate nouns
-MAP:TAGoalObv @Goal TARGET Obv IF (*0 TA + 4Sg/PlO BARRIER V) ;
-MAP:TAGoal3 @Goal TARGET N + AN IF (NOT 0 Obv LINK *0 TA + 3PlO OR 3SgO BARRIER V) ;
-MAP:TAActor @Act TARGET N + AN IF (NOT 0 Obv LINK *0 TA + 3Pl OR 3Sg BARRIER V) ;
-
-#TI and AI actors
-MAP:AITIActor @Act TARGET N + AN IF (*0 IA OR TI + 3Pl OR 3Sg OR 4Sg/Pl BARRIER V) ;
-
-#II actors
-MAP:IIActor3 @Act TARGET N + IN IF (*0 II + 3Sg OR II + 3Pl BARRIER V) ;
-MAP:IIActor4 @Act TARGET N + IN + Px3Sg OR Px3Pl IF (*0 II + 4Sg OR II + 4Pl BARRIER V) ;
 
 #kikway disambiguation
 REMOVE:kikway Pron IF (0 ("kîkway")) ;

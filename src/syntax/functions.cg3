@@ -87,6 +87,7 @@ LIST Prox = Prox ;
 LIST Prs = Prs ;
 LIST Prt = Prt ;
 LIST Qst = Qst ;
+LIST Sbj = Sbj ;
 
 LIST Sg = Sg ;
 LIST SgO = SgO ;
@@ -105,10 +106,13 @@ LIST 3Pl = 3Pl ;
 LIST 3PlO = 3PlO ;
 LIST 3Sg = 3Sg ;
 LIST 3SgO = 3SgO ;
+LIST 4SgPlO = 4AgPlO ;
 LIST 4Pl = 4Pl ;
+LIST 4Sg/Pl = 4Sg/Pl ;
 LIST 4PlO = 4PlO ;
 LIST 4Sg = 4Sg ;
 LIST 4SgO = 4SgO ;
+LIST 4Sg/PlO = 4Sg/PlO ;
 LIST 5Sg = 5Sg ;
 
 LIST Px12Pl = Px12Pl ;
@@ -137,6 +141,14 @@ LIST DEPVERB = ("ê-.*"r) ;
 # Syntactic tags
 # --------------
 
+
+LIST @ACT = @ACT ;
+LIST @<ACT = @<ACT ;
+LIST @ACT> = @ACT> ;
+LIST @GOAL = @GOAL ;
+LIST @<GOAL = @<GOAL ;
+LIST @GOAL> = @GOAL> ;
+
 LIST @+FAUXV = @+FAUXV ;
 LIST @+FMAINV = @+FMAINV ;
 LIST @-FMAINV = @-FMAINV ;
@@ -148,12 +160,10 @@ LIST @<ADVL = @<ADVL ;
 
  
 LIST @>N = @>N ;
-
 LIST @N< = @N< ;
  
 
 LIST @P< = @P< ;
-
 LIST @>P = @>P ;
 
 LIST @HNOUN = @HNOUN ;
@@ -194,6 +204,7 @@ LIST @CNP = @CNP ;
 LIST @FS-VFIN< = @FS-VFIN< ;
 
 LIST @X = @X ;
+LIST @XX = @XX ;
 
 
  
@@ -217,7 +228,7 @@ LIST CAP-INITIAL = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M"
 
 # Word or not
 # -----------
-LIST WORD = N V Ipc Interj ;
+LIST WORD = N V Ipc Interj Pron ;
 
 
 # Verb sets
@@ -229,6 +240,7 @@ LIST VFIN = (V 1Sg) (V 2Sg) (V 3Sg) (V 4Sg) (V 5Sg) (V 1Pl) (V 2Pl) (V 3Pl) (V 4
 # - - - - - - - - - - - - - -
 
 SET NOT-VERB = WORD - V ;
+SET NOT-NOUN = WORD - N ;
 
 
 # Here come the rules #
@@ -259,9 +271,34 @@ MAP @<SUBJ N IF (0 AN + Sg)(*-1 TA + 4Sg);
 MAP @SUBJ> N IF (0 IN + Sg)(*1 II + 3Sg);
 MAP @<SUBJ N IF (0 IN + Sg)(*-1 II + 3Sg);
 
+MAP @SUBJ> N IF (0 IN + Pl)(*1 II + 3Pl);
+MAP @<SUBJ N IF (0 IN + Pl)(*-1 II + 3Pl);
+
+
+
+
+#ACTor and goal rules for 3 and 3’ animate nouns
+MAP:TAGOALObvR @<GOAL TARGET Obv IF (*-1 TA + 4Sg/PlO BARRIER V) ;
+MAP:TAGOALObvL @GOAL> TARGET Obv IF (*1 TA + 4Sg/PlO BARRIER V) ;
+MAP:TAGOAL3R @<GOAL TARGET N + AN IF (NOT 0 Obv LINK *-1 TA + 3PlO OR 3SgO BARRIER V) ;
+MAP:TAGOAL3L @GOAL> TARGET N + AN IF (NOT 0 Obv LINK *1 TA + 3PlO OR 3SgO BARRIER V) ;
+MAP:TAACTorR @<ACT TARGET N + AN IF (NOT 0 Obv LINK *-1 TA + 3Pl OR 3Sg BARRIER V) ;
+MAP:TAACTorL @ACT> TARGET N + AN IF (NOT 0 Obv LINK *1 TA + 3Pl OR 3Sg BARRIER V) ;
+
+#TI and AI actors
+MAP:AITIACTorR @<ACT TARGET N + AN IF (*-1 IA OR TI + 3Pl OR 3Sg OR 4Sg/Pl BARRIER V) ;
+MAP:AITIACTorL @ACT> TARGET N + AN IF (*1 IA OR TI + 3Pl OR 3Sg OR 4Sg/Pl BARRIER V) ;
+
+#II actors
+MAP:IIACTor3R @<ACT TARGET N + IN IF (*-1 II + 3Sg OR II + 3Pl BARRIER V) ;
+MAP:IIACTor3L @ACT> TARGET N + IN IF (*1 II + 3Sg OR II + 3Pl BARRIER V) ;
+MAP:IIACTor4R @ACT TARGET N + IN + Px3Sg OR Px3Pl IF (*-1 II + 4Sg OR II + 4Pl BARRIER V) ;
+MAP:IIACTor4L @ACT TARGET N + IN + Px3Sg OR Px3Pl IF (*1 II + 4Sg OR II + 4Pl BARRIER V) ;
 
 
 MAP @X (?) ;
+
+MAP @XX (*) (NOT 0 CLB) ;
 
 AFTER-SECTIONS 
 
