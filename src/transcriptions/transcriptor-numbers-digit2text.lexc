@@ -138,7 +138,7 @@ LEXICON HUNDREDST
 
 LEXICON CUODIT
 :mitâtahtomitanaw HUNDREDT ;	! 100000-199999
-:mitâtahtomtanaw HUNDREDT ;	! 100000-199999
++Use/NG:mitâtahtomtanaw HUNDREDT ;	! 100000-199999
 
 LEXICON HUNDREDT	! X = 1-9, Y = 0-9
 :%  TENST ;			! X2XYYY, X10YYY
@@ -179,7 +179,7 @@ LEXICON TENST
 !9:kâmitâtahtomi   TANAW ;
 
 LEXICON TANAW
-%0:tanawxx ENDLEX ;
+%0:tanaw ENDLEX ;
 %0:tanaw%  ONESTONEXT ;
 
 LEXICON TENT
@@ -198,7 +198,7 @@ LEXICON ONEST
 9:kêkâmitâtaht%  THOUSANDS ;
 
 LEXICON THOUSANDS      ! x > 1
-:kihci% mitâtahtomtanaw THOUSAND ;
++Use/NG:kihci% mitâtahtomtanaw THOUSAND ;
 :kihci% mitâtahtomitanaw THOUSAND ;
 
 LEXICON THOUSAND
@@ -215,7 +215,7 @@ LEXICON THOUSAND
 LEXICON UNDERTHOUSAND
 HUNDREDS ;
 1:mitâtahtomitanaw%  HUNDRED ;
-1:mitâtahtomtanaw%  HUNDRED ;
+1+Use/NG:mitâtahtomtanaw%  HUNDRED ;
 
 LEXICON HUNDREDS
 2:nîso%    CUODI ;
@@ -257,8 +257,8 @@ LEXICON TENS
 
 
 LEXICON TEN 
-%0:tanaw%  ONESTONEXT ;
-%0:tanawx  ENDLEX ;
+:tanaw%  ONESTONEXT ;
+%0:tanaw  ENDLEX ;
 
 LEXICON NEARLY
 29+Use/NG:kêkâc% nistom NEARLY-TEN ;
@@ -292,7 +292,7 @@ LEXICON NEARLY
 79:kêkâc-ayinânêwomi NEARLY-TEN ;
 79:kêkâ-ayinânêwomi NEARLY-TEN ;
 89:kêkâc-kêkâ-mitâtahtomi NEARLY-TEN ;
-9%0:kêkâ-mitâtahtomi NEARLY-TEN ;
+!9%0:kêkâ-mitâtahtomi NEARLY-TEN ;
 99:kêkâ-mitâtahtomitanaw% kêkâ-mitâtaht ENDLEX ;
 
 LEXICON NEARLY-TEN
@@ -307,7 +307,7 @@ LEXICON ONESTONEXT
 6:nikotwâsosâp ENDLEX ;
 7:têpakohposâp ENDLEX ;
 8:ayinânêwosâp ENDLEX ;
-9:kêkâ-mitâtahtosâp ENDLEX ;
+9+Use/NG:kêkâ-mitâtahtosâp ENDLEX ;
 9+Use/NG:kêkâmitâtahtosâp ENDLEX ;
 1+Use/NG:pêyako-sâp ENDLEX ;
 2+Use/NG:nîso-sâp ENDLEX ;
@@ -350,8 +350,8 @@ LEXICON CARDINAL
 7:têpakohp ENDLEX ;
 8:ayinânêw ENDLEX ;
 9:kêkâ-mitâtaht ENDLEX ;
-!9+Use/NG:kêkâmitâtaht ENDLEX ;
-!9+Use/NG:kêkâ% mitâtaht ENDLEX ;
+9+Use/NG:kêkâmitâtaht ENDLEX ;
+9+Use/NG:kêkâ% mitâtaht ENDLEX ;
 
 LEXICON ENDLEX
  # ;
