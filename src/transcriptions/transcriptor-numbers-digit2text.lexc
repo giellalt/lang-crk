@@ -20,24 +20,19 @@ Multichar_Symbols
 
 LEXICON Root
 
-!These 4 lines are for TTS, they are commented out.
-!< %+String [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|â|ê|î|ô|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Â|Ê|Î|Ô]* > ENDLEX ; ! This first line is to allow all letter strings.
-!+NumNum NUMBERSECTION ;
-!+NumNum ENDLEXSECTION ;
-!LEXICON NUMBERSECTION
 
-HUNDREDSM ;		! 200M
-1:mitâtahtomitanaw%   HUNDREDM ;	! 100M
-1:mitâtahtomtanaw%   HUNDREDM ;	! 100M
-TENSM ;			! 20-99M
-TEENSM ;		! 10-19M
-ONESM ;			! 1-9M
-!HUNDREDST ;		! 200000-999999 NB
-1:mitâtahtomitanaw  HUNDREDT ;	! 100000-100999
-1:mitâtahtomtanaw HUNDREDT ;	! 100000-100999
-TENST ;			! 20000-99999,10000-10999
-TEENST ;		! 11000-19999
-ONEST ;			! 2000-9999
+!HUNDREDSM ;		! 200M
+!1:mitâtahtomitanaw%   HUNDREDM ;	! 100M
+!1:mitâtahtomtanaw%   HUNDREDM ;	! 100M
+!TENSM ;			! 20-99M
+!TEENSM ;		! 10-19M
+!ONESM ;			! 1-9M
+!!HUNDREDST ;		! 200000-999999 NB
+!1:mitâtahtomitanaw  HUNDREDT ;	! 100000-100999
+!1:mitâtahtomtanaw HUNDREDT ;	! 100000-100999
+!TENST ;			! 20000-99999,10000-10999
+!TEENST ;		! 11000-19999
+!ONEST ;			! 2000-9999
 1:pêyak% kihci% mitâtahtomtanaw THOUSAND ;
 1:pêyak% kihci% mitâtahtomitanaw THOUSAND ;
 UNDERTHOUSAND ;		! 100-999
@@ -171,19 +166,21 @@ LEXICON LOHKAIT
 THOUSANDS ;
 
 LEXICON TENST
-2:nîs   TANAW ;
+2+Use/NG:nîs   TANAW ;
+2:nîsi   TANAW ;
+2+Use/NG:nîsomi   TANAW ;
 3:nistomi    TANAW ;
-4:nemi TANAW ;
+4:nêmi TANAW ;
 5:niyânanomi   TANAW ;
 6:nikotwâsomi   TANAW ;
 7:têpakohpimi TANAW ;
 8:ayinânêwomi TANAW ;
 9:kêkâmitâtahtomi   TANAW ;
-9:kâmitâtahtomi   TANAW ;
+!9:kâmitâtahtomi   TANAW ;
 
 LEXICON TANAW
-%0:tanaw%  ENDLEX ;
-:tanaw%  ONESTONEXT ;
+%0:tanawxx ENDLEX ;
+%0:tanaw%  ONESTONEXT ;
 
 LEXICON TENT
 %0: THOUSANDS ;
@@ -232,7 +229,7 @@ LEXICON HUNDREDS
 
 LEXICON CUODI
 :mitâtahtomitanaw%    HUNDRED ;
-:mitâtahtomtanaw%   HUNDRED ;
++Use/NG:mitâtahtomtanaw%   HUNDRED ;
 
 LEXICON HUNDRED
 :ayiwâk%   TENS ;
@@ -240,49 +237,66 @@ LEXICON HUNDRED
 %0:ayiwâk%    ONES ;
 %0%0: ENDLEX ;
 
+! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON TENS
 1%0:mitâtaht ENDLEX ;
 1%0%.:låhkede ENDLEX ;
-2:nîs TEN ;
+2+Use/NG:nîs TEN ;
+2+Use/NG:nîsomi TEN;
 2:nîsi TEN ;
 3:nistomi TEN ;
-4:nemi TEN ;
+4:nêmi TEN ;
 5:niyânanomi TEN ;
 6:nikotwâsomi TEN ;
 7:têpakohpimi TEN ;
+7:têpakohpomi TEN ;
 8:ayinânêwomi TEN ;
-9:kêkâmitâtahtomi TEN ;
+9:kêkâ-mitâtahtomi TEN ;
+9+Use/NG:kêkâmitâtahtomi TEN ;
+
 
 LEXICON TEN 
-%0%.:låhkede ENDLEX ; ! låhkede to be removed or replaced
-:tanaw%  ONESTONEXT ;
-%0:tanaw%  ENDLEX ;
+%0:tanaw%  ONESTONEXT ;
+%0:tanawx  ENDLEX ;
 
 LEXICON NEARLY
-29:kêkâc% nistôm NEARLY-TEN ;
-39:kêkâc% newôm NEARLY-TEN ;
-49:kêkâc% nîyânôm NEARLY-TEN ;
+29+Use/NG:kêkâc% nistom NEARLY-TEN ;
+29:kêkâc% nistomi NEARLY-TEN ;
+39+Use/NG:kêkâc% nêwom NEARLY-TEN ;
+39:kêkâc% nêmi NEARLY-TEN ;
+39+Use/NG:kêkâc% nêwomi NEARLY-TEN ;
+49+Use/NG:kêkâc% nîyânom NEARLY-TEN ;
+49:kêkâc% nîyânomi NEARLY-TEN ;
 59:kêkâc% nikotwâsom NEARLY-TEN ;
 69:kêkâc% têpakohpim NEARLY-TEN ;
 79:kêkâc% ayinânêwom NEARLY-TEN ;
-89:kêkâc% kêkâ% mitâtahtom NEARLY-TEN ;
-90:kêkâ% mitâtahtom NEARLY-TEN ;
-99:kêkâ% mitatahtomtanaw% ayiwâk% kêkâ% mitâtaht ENDLEX ;
+89:kêkâc% kêkâ% mitâtahtomi NEARLY-TEN ;
+89+Use/NG:kêkâc% kêkâ% mitâtahtom NEARLY-TEN ;
+90+Use/NG:kêkâ% mitâtahtom NEARLY-TEN ;
+90:kêkâ% mitâtahtomi NEARLY-TEN ;
+99:kêkâ% mitatahtomitanaw% ayiwâk% kêkâ% mitâtaht ENDLEX ;
 29:kêkâc-nistomi NEARLY-TEN ;
-39:kêkâc-nemi NEARLY-TEN ;
+29:kêkâ-nistomi NEARLY-TEN ;
+39:kêkâc-nêmi NEARLY-TEN ;
+39+Use/NG:kêkâc-nêwomi NEARLY-TEN ;
+39:kêkâ-nêmi NEARLY-TEN ;
 49:kêkâc-niyânanomi NEARLY-TEN ;
+49:kêkâ-niyânanomi NEARLY-TEN ;
 59:kêkâc-nikotwâsomi NEARLY-TEN ;
+59:kêkâ-nikotwâsomi NEARLY-TEN ;
 69:kêkâc-têpakohpimi NEARLY-TEN ;
+69:kêkâc-têpakohpomi NEARLY-TEN ;
+69:kêkâ-têpakohpimi NEARLY-TEN ;
+69:kêkâ-têpakohpomi NEARLY-TEN ;
 79:kêkâc-ayinânêwomi NEARLY-TEN ;
+79:kêkâ-ayinânêwomi NEARLY-TEN ;
 89:kêkâc-kêkâ-mitâtahtomi NEARLY-TEN ;
-90:kêkâ-mitatahtomi NEARLY-TEN ;
-99:kêkâ-mitatahtomitanaw% kêkâ-mitâtaht ENDLEX ;
+90:kêkâ-mitâtahtomi NEARLY-TEN ;
+99:kêkâ-mitâtahtomitanaw% kêkâ-mitâtaht ENDLEX ;
 
 LEXICON NEARLY-TEN
 :tanaw ENDLEX ;
-
-
 
 LEXICON ONESTONEXT
 1:pêyakosâp ENDLEX ;
@@ -293,16 +307,17 @@ LEXICON ONESTONEXT
 6:nikotwâsosâp ENDLEX ;
 7:têpakohposâp ENDLEX ;
 8:ayinânêwosâp ENDLEX ;
-9:kêkâmitâtahtosâp ENDLEX ;
-1:pêyako-sâp ENDLEX ;
-2:nîso-sâp ENDLEX ;
-3:nisto-sâp ENDLEX ;
-4:nêwo-sâp ENDLEX ;
-5:niyânano-sâp ENDLEX ;
-6:nikotwâso-sâp ENDLEX ;
-7:têpakohp-sâp ENDLEX ;
-8:ayinânêwo-sâp ENDLEX ;
-9:kêkâc% nîstanaw ENDLEX ;
+9:kêkâ-mitâtahtosâp ENDLEX ;
+9+Use/NG:kêkâmitâtahtosâp ENDLEX ;
+1+Use/NG:pêyako-sâp ENDLEX ;
+2+Use/NG:nîso-sâp ENDLEX ;
+3+Use/NG:nisto-sâp ENDLEX ;
+4+Use/NG:nêwo-sâp ENDLEX ;
+5+Use/NG:niyânano-sâp ENDLEX ;
+6+Use/NG:nikotwâso-sâp ENDLEX ;
+7+Use/NG:têpakohp-sâp ENDLEX ;
+8+Use/NG:ayinânêwo-sâp ENDLEX ;
+!9:kêkâc% nîsitanaw ENDLEX ; ! only for 19 (almost 20)
 :ayiwâk%  CARDINAL ;
 
 
@@ -313,13 +328,17 @@ LEXICON TEENS
 14:nêwosâp ENDLEX ;
 15:niyânanosâp ENDLEX ;
 16:nikotwâsosâp ENDLEX ;
+16+Use/NG:nikotwâsikosâp ENDLEX ;
 17:têpakohposâp ENDLEX ;
 18:ayinânêwosâp ENDLEX ;
-19:kêkâmitâtahtosâp ENDLEX ;
-19:kêkâc% nîstanaw ENDLEX ;
+19:kêkâ-mitâtahtosâp ENDLEX ;
+19+Use/NG:kêkâmitâtahtosâp ENDLEX ;
+19+Use/NG:kêkâc% nîsitanaw ENDLEX ;
+19+Use/NG:kêkâ-nîsitanaw ENDLEX ;
 
 LEXICON ONES
 CARDINAL ;
+!ORDINAL ; ! not done yet, unfortunately
 
 LEXICON CARDINAL
 1:pêyak ENDLEX ;
@@ -330,7 +349,16 @@ LEXICON CARDINAL
 6:nikotwâsik ENDLEX ;
 7:têpakohp ENDLEX ;
 8:ayinânêw ENDLEX ;
-9:kêkâmitâtaht ENDLEX ;
+9:kêkâ-mitâtaht ENDLEX ;
+9+Use/NG:kêkâmitâtaht ENDLEX ;
+9+Use/NG:kêkâ% mitâtaht ENDLEX ;
 
 LEXICON ENDLEX
  # ;
+
+
+!These 4 lines are for TTS, they are commented out.
+!< %+String [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|â|ê|î|ô|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Â|Ê|Î|Ô]* > ENDLEX ; ! This first line is to allow all letter strings.
+!+NumNum NUMBERSECTION ;
+!+NumNum ENDLEXSECTION ;
+!LEXICON NUMBERSECTION
