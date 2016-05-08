@@ -50,7 +50,7 @@ nîyânan CUODIM ;
 nikotwâsik CUODIM ;
 têpakohp CUODIM ;
 ayinânêw CUODIM ;
-kêkâmitâtaht CUODIM ;
+kêkâ-mitâtaht CUODIM ;
 
 LEXICON CUODIM !!= * @CODE@
 mitâtahtomitanaw HUNDREDM ;
@@ -73,7 +73,7 @@ nîyânan   LOHKAIM ;
 nikotwâsik   LOHKAIM ;
 têpakohp LOHKAIM ;
 ayinânêw LOHKAIM ;
-kêkâmitâtaht   LOHKAIM ;
+kêkâ-mitâtaht   LOHKAIM ;
 
 LEXICON LOHKAIM !!= * @CODE@
 MILJON ;
@@ -87,7 +87,7 @@ nîyânan   TENM ;
 nikotwâsik   TENM ;
 têpakohp TENM ;
 ayinânêw TENM ;
-kêkâmitâtaht  TENM ;
+kêkâ-mitâtaht  TENM ;
 
 LEXICON TENM !!= * @CODE@
 luhkie MILJON ;
@@ -102,7 +102,7 @@ nîyânan     MILJON ;
 nikotwâsik         MILJON ;
 têpakohp       MILJON ;
 ayinânêw       MILJON ;
-kêkâmitâtaht  MILJON ; 
+kêkâ-mitâtaht  MILJON ; 
 
 LEXICON MILJON !!= * @CODE@
 % miljona OVERTHOUSANDS ;
@@ -132,7 +132,7 @@ nîyânan   CUODIT ;	! 500000-599999
 nikotwâsik   CUODIT ;	! 600000-699999
 têpakohp CUODIT ;	! 700000-799999
 ayinânêw CUODIT ;	! 800000-899999
-kêkâmitâtaht  CUODIT ;	! 900000-999999
+kêkâ-mitâtaht  CUODIT ;	! 900000-999999
 
 LEXICON CUODIT !!= * @CODE@
 mitâtahtomitanaw HUNDREDT ;	! 100000-199999
@@ -157,20 +157,20 @@ nîyânan   LOHKAIT ;
 nikotwâsik   LOHKAIT ;
 têpakohp LOHKAIT ;
 ayinânêw LOHKAIT ;
-kêkâmitâtaht   LOHKAIT ;
+kêkâ-mitâtaht   LOHKAIT ;
 
 LEXICON LOHKAIT !!= * @CODE@
 THOUSANDS ;
 
 LEXICON TENST !!= * @CODE@
-nîs  TANAW ;
+nîsi  TANAW ;
 nistomi    TANAW ;
 nêmi TANAW ;
 nîyânanomi   TANAW ;
 nikotwâsomi   TANAW ;
 têpakohpimi TANAW ;
 ayinânêwomi TANAW ;
-kêkâmitâtahtomi   TANAW ;
+kêkâ-mitâtahtomi   TANAW ;
 
 LEXICON TANAW !!= * @CODE@
 tanaw%  NUM ;
@@ -189,7 +189,7 @@ nîyânan THOUSANDS ;
 nikotwâsik THOUSANDS ;
 têpakohp THOUSANDS ;
 ayinânêw THOUSANDS ;
-kêkâmitâtaht THOUSANDS ;
+kêkâ-mitâtaht THOUSANDS ;
 
 LEXICON THOUSANDS   !!= * @CODE@  x > 1
 tåvsene THOUSAND ;
@@ -218,7 +218,7 @@ nîyânano   CUODI ;  !OBS
 nikotwâsiko   CUODI ;
 têpakohpo CUODI ;
 ayinânêwo CUODI ;
-kêkâmitâtahto  CUODI ;
+kêkâ-mitâtahto  CUODI ;
 
 LEXICON CUODI !!= * @CODE@
 mitâtahtomitanaw%   HUNDRED ;
@@ -243,7 +243,7 @@ nîyânanomi TEN ;
 nikotwâsomi TEN ;
 têpakohpimi TEN ;
 ayinânêwomi TEN ;
-kêkâmitâtahtomi TEN ;
+kêkâ-mitâtahtomi TEN ;
 
 LEXICON TEN !!= * @CODE@
 låhkede NUM ;
@@ -258,7 +258,7 @@ niyânanosâp NUM ;
 nikotwâsiksâp NUM ;
 têpakohposâp NUM ;
 ayinânêwosâp NUM ;
-kêkâmitâtahtosâp NUM ;
+kêkâ-mitâtahtosâp NUM ;
 
 
 
@@ -271,7 +271,7 @@ niyânanosâp NUM ;
 nikotwâsiksâp NUM ;
 têpakohposâp NUM ;
 ayinânêwosâp NUM ;
-kêkâmitâtahtosâp NUM ;
+kêkâ-mitâtahtosâp NUM ;
 
 LEXICON ONES !!= * @CODE@
 CARDINAL ;
@@ -286,7 +286,7 @@ niyânan NUM ;
 nikotwâsik NUM ;
 têpakohp NUM ;
 ayinânêw NUM ;
-kêkâmitâtaht NUM ;
+kêkâ-mitâtaht NUM ;
 
 !LEXICON ORDINAL
 !voestes:1%.     NUM ;
@@ -405,11 +405,11 @@ LEXICON ROMAN						!^C^
  : ROM-ONE ;							!
 
 LEXICON ROM-THOUSAND              	!^C^
- M:M ROM-THOUSAND-TAG;				!
- MM:MM ROM-THOUSAND-TAG;				!
- MMM:MMM ROM-THOUSAND-TAG;				!
- MMMM:MMMM ROM-THOUSAND-TAG;			!
- MMMMM:MMMMM ROM-THOUSAND-TAG;			!
+ M:M ROM-THOUSAND-TAG ;				!
+ MM:MM ROM-THOUSAND-TAG ;				!
+ MMM:MMM ROM-THOUSAND-TAG ;				!
+ MMMM:MMMM ROM-THOUSAND-TAG ;			!
+ MMMMM:MMMMM ROM-THOUSAND-TAG ;			!
 
 LEXICON ROM-THOUSAND-TAG			!^C^
  : ROMNUMTAG ;						!
@@ -417,15 +417,15 @@ LEXICON ROM-THOUSAND-TAG			!^C^
  : ROM-SPLIT	;						!
 
 LEXICON ROM-HUNDRED					!^C^
- C:C ROM-HUNDRED-TAG;				!
- CC:CC ROM-HUNDRED-TAG;				!
- CCC:CCC ROM-HUNDRED-TAG;				!
- CD:CD ROM-HUNDRED-TAG;				!
- D:D ROM-HUNDRED-TAG;				!
- DC:DC ROM-HUNDRED-TAG;				!
- DCC:DCC ROM-HUNDRED-TAG;				!
- DCCC:DCCC ROM-HUNDRED-TAG;				!
- CM:CM ROM-HUNDRED-TAG;				!
+ C:C ROM-HUNDRED-TAG ;				!
+ CC:CC ROM-HUNDRED-TAG ;				!
+ CCC:CCC ROM-HUNDRED-TAG ;				!
+ CD:CD ROM-HUNDRED-TAG ;				!
+ D:D ROM-HUNDRED-TAG ;				!
+ DC:DC ROM-HUNDRED-TAG ;				!
+ DCC:DCC ROM-HUNDRED-TAG ;				!
+ DCCC:DCCC ROM-HUNDRED-TAG ;				!
+ CM:CM ROM-HUNDRED-TAG ;				!
 
 LEXICON ROM-HUNDRED-TAG				!^C^
  : ROMNUMTAG ;						!
@@ -433,15 +433,15 @@ LEXICON ROM-HUNDRED-TAG				!^C^
  : ROM-SPLIT ;						!
 
 LEXICON ROM-TEN						!^C^
- X:X ROM-TEN-TAG;					!
- XX:XX ROM-TEN-TAG;					!
- XXX:XXX ROM-TEN-TAG;					!
- XL:XL ROM-TEN-TAG;					!
- L:L ROM-TEN-TAG;					!
- LX:LX ROM-TEN-TAG;					!
- LXX:LXX ROM-TEN-TAG;					!
- LXXX:LXXX ROM-TEN-TAG;					!
- XC:XC ROM-TEN-TAG;					!
+ X:X ROM-TEN-TAG ;					!
+ XX:XX ROM-TEN-TAG ;					!
+ XXX:XXX ROM-TEN-TAG ;					!
+ XL:XL ROM-TEN-TAG ;					!
+ L:L ROM-TEN-TAG ;					!
+ LX:LX ROM-TEN-TAG ;					!
+ LXX:LXX ROM-TEN-TAG ;					!
+ LXXX:LXXX ROM-TEN-TAG ;					!
+ XC:XC ROM-TEN-TAG ;					!
 
 LEXICON ROM-TEN-TAG					!^C^
  : ROMNUMTAG ;						!
@@ -449,15 +449,15 @@ LEXICON ROM-TEN-TAG					!^C^
  : ROM-SPLIT ;						!
 
 LEXICON ROM-ONE						!^C^
- I:I ROM-ONE-TAG;					!
- II:II ROM-ONE-TAG;					!
- III:III ROM-ONE-TAG;					!
- IV:IV ROM-ONE-TAG;					!
- V:V ROM-ONE-TAG;					!
- VI:VI ROM-ONE-TAG;					!
- VII:VII ROM-ONE-TAG;					!
- VIII:VIII ROM-ONE-TAG;					!
- IX:IX ROM-ONE-TAG;					!
+ I:I ROM-ONE-TAG ;					!
+ II:II ROM-ONE-TAG ;					!
+ III:III ROM-ONE-TAG ;					!
+ IV:IV ROM-ONE-TAG ;					!
+ V:V ROM-ONE-TAG ;					!
+ VI:VI ROM-ONE-TAG ;					!
+ VII:VII ROM-ONE-TAG ;					!
+ VIII:VIII ROM-ONE-TAG ;					!
+ IX:IX ROM-ONE-TAG ;					!
 
 LEXICON ROM-ONE-TAG					!^C^
  : ROMNUMTAG ;						!
@@ -483,56 +483,56 @@ LEXICON 2ROMAN							!^C^
  : 2ROM-ONE ;								!
 
 LEXICON 2ROM-THOUSAND              		!^C^
- M:M 2ROM-THOUSAND-TAG;					!
- MM:MM 2ROM-THOUSAND-TAG;					!
- MMM:MMM 2ROM-THOUSAND-TAG;				!
- MMMM:MMMM 2ROM-THOUSAND-TAG;				!
- MMMMM:MMMMM 2ROM-THOUSAND-TAG;				!
+ M:M 2ROM-THOUSAND-TAG ;					!
+ MM:MM 2ROM-THOUSAND-TAG ;					!
+ MMM:MMM 2ROM-THOUSAND-TAG ;				!
+ MMMM:MMMM 2ROM-THOUSAND-TAG ;				!
+ MMMMM:MMMMM 2ROM-THOUSAND-TAG ;				!
 
 LEXICON 2ROM-THOUSAND-TAG				!^C^
  : ROMNUMTAG ;							!
  : 2ROM-HUNDRED ;							!
 
 LEXICON 2ROM-HUNDRED					!^C^
- C:C 2ROM-HUNDRED-TAG;					!
- CC:CC 2ROM-HUNDRED-TAG;					!
- CCC:CCC 2ROM-HUNDRED-TAG;					!
- CD:CD 2ROM-HUNDRED-TAG;					!
- D:D 2ROM-HUNDRED-TAG;					!
- DC:DC 2ROM-HUNDRED-TAG;					!
- DCC:DCC 2ROM-HUNDRED-TAG;					!
- DCCC:DCCC 2ROM-HUNDRED-TAG;				!
- CM:CM 2ROM-HUNDRED-TAG;					!
+ C:C 2ROM-HUNDRED-TAG ;					!
+ CC:CC 2ROM-HUNDRED-TAG ;					!
+ CCC:CCC 2ROM-HUNDRED-TAG ;					!
+ CD:CD 2ROM-HUNDRED-TAG ;					!
+ D:D 2ROM-HUNDRED-TAG ;					!
+ DC:DC 2ROM-HUNDRED-TAG ;					!
+ DCC:DCC 2ROM-HUNDRED-TAG ;					!
+ DCCC:DCCC 2ROM-HUNDRED-TAG ;				!
+ CM:CM 2ROM-HUNDRED-TAG ;					!
 
 LEXICON 2ROM-HUNDRED-TAG				!^C^
  : ROMNUMTAG ;							!
  : 2ROM-TEN ;								!
 
 LEXICON 2ROM-TEN						!^C^
- X:X 2ROM-TEN-TAG;						!
- XX:XX 2ROM-TEN-TAG;						!
- XXX:XXX 2ROM-TEN-TAG;						!
- XL:XL 2ROM-TEN-TAG;						!
- L:L 2ROM-TEN-TAG;						!
- LX:LX 2ROM-TEN-TAG;						!
- LXX:LXX 2ROM-TEN-TAG;						!
- LXXX:LXXX 2ROM-TEN-TAG;					!
- XC:XC 2ROM-TEN-TAG;						!
+ X:X 2ROM-TEN-TAG ;						!
+ XX:XX 2ROM-TEN-TAG ;						!
+ XXX:XXX 2ROM-TEN-TAG ;						!
+ XL:XL 2ROM-TEN-TAG ;						!
+ L:L 2ROM-TEN-TAG ;						!
+ LX:LX 2ROM-TEN-TAG ;						!
+ LXX:LXX 2ROM-TEN-TAG ;						!
+ LXXX:LXXX 2ROM-TEN-TAG ;					!
+ XC:XC 2ROM-TEN-TAG ;						!
 
 LEXICON 2ROM-TEN-TAG					!^C^
  : ROMNUMTAG ;							!
  : 2ROM-ONE ;								!
 
 LEXICON 2ROM-ONE						!^C^
- I:I 2ROM-ONE-TAG;						!
- II:II 2ROM-ONE-TAG;						!
- III:III 2ROM-ONE-TAG;						!
- IV:IV 2ROM-ONE-TAG;						!
- V:V 2ROM-ONE-TAG;						!
- VI:VI 2ROM-ONE-TAG;						!
- VII:VII 2ROM-ONE-TAG;						!
- VIII:VIII 2ROM-ONE-TAG;					!
- IX:IX 2ROM-ONE-TAG;						!
+ I:I 2ROM-ONE-TAG ;						!
+ II:II 2ROM-ONE-TAG ;						!
+ III:III 2ROM-ONE-TAG ;						!
+ IV:IV 2ROM-ONE-TAG ;						!
+ V:V 2ROM-ONE-TAG ;						!
+ VI:VI 2ROM-ONE-TAG ;						!
+ VII:VII 2ROM-ONE-TAG ;						!
+ VIII:VIII 2ROM-ONE-TAG ;					!
+ IX:IX 2ROM-ONE-TAG ;						!
 
 LEXICON 2ROM-ONE-TAG
  ROMNUMTAG ;
