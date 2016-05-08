@@ -28,7 +28,6 @@ GT_LEXC_SRCS_L1_L2=\
 			 stems/nouns.lexc	   \
 			 stems/numerals.lexc   \
 			 stems/pronouns.lexc   \
-			 stems/propernouns.lexc   \
 			 stems/particles.lexc   \
 			 stems/punctuation.lexc \
 			 stems/verbs.lexc	   \
@@ -50,7 +49,7 @@ GT_LEXC_L2_SRCS=\
 			$(L2)
 
 # Set this to the names of all generated lexc files, if any
-GENERATED_LEXC_SRCS=
+GENERATED_LEXC_SRCS=generated_files/eng-$(GTLANG)-propernouns.lexc
 
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=
@@ -59,9 +58,23 @@ GT_XML_SRCS=
 GT_LOCAL_SRCS=
 
 # Define here any additional sources just included in the distro:
-GT_DISTRO_SRCS=
+GT_DISTRO_SRCS=stems/$(GTLANG)-propernouns.lexc
 
 ### BEGIN: Local processing: ###
+generated_files/eng-propernouns.lexc: \
+			$(GTCORE)/giella-shared/eng/src/morphology/stems/eng-propernouns.lexc
+	$(AM_V_at)$(MKDIR_P) generated_files
+	$(AM_V_GEN)cp -f $< $@
+
+generated_files/eng-$(GTLANG)-propernouns.lexc: \
+		generated_files/eng-propernouns.lexc \
+		$(srcdir)/stems/$(GTLANG)-propernouns.lexc
+	$(AM_V_GEN)rm -f $@ && \
+	cp -f $(srcdir)/stems/$(GTLANG)-propernouns.lexc $@ && \
+	echo "" >> $@ && \
+	echo "! <--- Dump from ENG -->" >> $@ && \
+	echo "" >> $@ && \
+	cat $< >> $@
 
 
 ### END: Local processing: ###
