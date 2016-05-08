@@ -37,6 +37,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Interj     !!= * @CODE@
 +Pron       !!= * @CODE@
 +Num        !!= * @CODE@
++Arab        !!= * @CODE@
++Rom        !!= * @CODE@
 +PUNCT      !!= * @CODE@ = punctuation symbols
 +LEFT       !!= * @CODE@ = the left part of a paired punctuation symbol
 +RIGHT      !!= * @CODE@ = the right part of a paired punctuation symbol
@@ -57,6 +59,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Prox	    !!= * @CODE@ Demonstrative Proximate
 +Med	    !!= * @CODE@ Demonstrative Medial
 +Dist	    !!= * @CODE@ Demonstrative Distal
++QDL
 
 +Foc	    !!= * @CODE@ Focus particle
 
