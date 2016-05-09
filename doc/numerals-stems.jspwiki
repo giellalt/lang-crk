@@ -5,55 +5,9 @@
 
  * LEXICON Numerals 
 
-!!More than mill
 
- * LEXICON HUNDREDSM 
 
- * LEXICON CUODIM 
 
- * LEXICON HUNDREDM 
-
- * LEXICON TEENSM 
-
- * LEXICON TEENM 
-
- * LEXICON LOHKAIM 
-
- * LEXICON TENSM 
-
- * LEXICON TENM 
-
- * LEXICON ONESM 
-
- * LEXICON MILJON 
-
-!!Under the million
-
- * LEXICON OVERTHOUSANDS 
-
- * LEXICON HUNDREDST 
-
- * LEXICON CUODIT 
-
- * LEXICON HUNDREDT 	X = 1-9, Y = 0-9
-
- * LEXICON TEENST 
-
- * LEXICON TEENT 
-
- * LEXICON LOHKAIT 
-
- * LEXICON TENST 
-
- * LEXICON TANAW 
-
- * LEXICON TENT 
-
- * LEXICON ONEST 
-
- * LEXICON THOUSANDS     x > 1
-
- * LEXICON THOUSAND 
 
 !!Here starts the 999 numbers
 
@@ -66,9 +20,13 @@
  * LEXICON HUNDRED 
 
 
+
  * LEXICON TENS 
 
  * LEXICON TEN 
+
+
+
 
  * LEXICON ONESTONEXT 
 
@@ -82,5 +40,57 @@
 
 
  * LEXICON NUM  adds +Num+Ipc
+
+ * __LEXICON NUM-PREFIXES   __
+
+ * __LEXICON ARABIC   __ arabic numerals
+
+ * __LEXICON ARABICLOOPphone   __ +358(0)16671254
+
+ * __LEXICON ARABICCASEphone   __  
+
+ * __LEXICON ARABICLOOP   __
+
+
+ * __LEXICON ARABICLOOPORD   __ ordinals
+
+ * __LEXICON NUMARABTAG   __ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
