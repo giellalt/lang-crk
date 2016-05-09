@@ -49,7 +49,7 @@ LEXICON HUNDREDSM
 6:nikotwâsik CUODIM ;
 7:têpakohp CUODIM ;
 8:ayinânêw CUODIM ;
-9:kêkâmitâtaht CUODIM ;
+9:kêkâ-mitâtaht CUODIM ;
 
 LEXICON CUODIM
 :mitâtahtomitanaw HUNDREDM ;
@@ -214,8 +214,8 @@ LEXICON THOUSAND
 
 LEXICON UNDERTHOUSAND
 HUNDREDS ;
-1:mitâtahtomitanaw%  HUNDRED ;
-1+Use/NG:mitâtahtomtanaw%  HUNDRED ;
+1:mitâtahtomitanaw  HUNDRED ;
+1+Use/NG:mitâtahtomtanaw  HUNDRED ;
 
 LEXICON HUNDREDS
 2:nîso%    CUODI ;
@@ -228,13 +228,13 @@ LEXICON HUNDREDS
 9:kêkâmitâtahto%    CUODI ;
 
 LEXICON CUODI
-:mitâtahtomitanaw%    HUNDRED ;
-+Use/NG:mitâtahtomtanaw%   HUNDRED ;
+:mitâtahtomitanaw  HUNDRED ;
++Use/NG:mitâtahtomtanaw  HUNDRED ;
 
 LEXICON HUNDRED
-:ayiwâk%   TENS ;
-:ayiwâk%   TEENS ;
-%0:ayiwâk%    ONES ;
+:% ayiwâk%   TENS ;
+:% ayiwâk%   TEENS ;
+%0:% ayiwâk%    ONES ;
 %0%0: ENDLEX ;
 
 ! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
