@@ -40,23 +40,29 @@ LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independen
 
 
 LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
-< 0:n 0:i  "@U.person.NI@" 0:"t2"                       > IND_TENSE ; !
-< 0:k 0:i  "@U.person.KI@" 0:"t2"                       > IND_TENSE ; !
-!< 0:n 0:i "@U.person.NI@" 0:"t2" "@P.joiner.NULL@"     > IND_TENSE ; !
-!< 0:n 0:i "@U.person.NI@" 0:%-   "@P.joiner.hyphen@"   > IND_TENSE ; !
-!< 0:k 0:i "@U.person.KI@" 0:"t2" "@P.joiner.NULL@"     > IND_TENSE ; !
-!< 0:k 0:i "@U.person.KI@" 0:"t2" "@P.joiner.NULL@"     > IND_TENSE ; !
-<         "@U.person.NULL@" > IND_TENSE ; !
+@U.person.NI@:@U.person.NI@nit2 IND_TENSE ;
+@U.person.KI@:@U.person.KI@kit2 IND_TENSE ;
+@U.person.NULL@                 IND_TENSE ;
+! < 0:n 0:i  "@U.person.NI@" 0:"t2"                       > IND_TENSE ; !
+! < 0:k 0:i  "@U.person.KI@" 0:"t2"                       > IND_TENSE ; !
+! <          "@U.person.NULL@" > IND_TENSE ; !
 
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
-<                   "@U.tense.Prs@"                        > PREVERBS ; !
-< 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"    "@P.joiner.NULL@"   > PREVERBS ; ! 
-< 0:k 0:î 0:%-      "@U.tense.Prt@"    "@P.joiner.hyphen@" > PREVERBS ; !
-< 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@" "@P.joiner.NULL@"   > PREVERBS ; !
-< 0:k 0:a 0:%-      "@U.tense.FutDef@" "@P.joiner.hyphen@" > PREVERBS ; !
-< 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@P.joiner.NULL@"   > PREVERBS ; ! N.B. - move to a next lexicon
-< 0:w 0:î 0:%-      "@U.tense.FutInt@" "@P.joiner.hyphen@" > PREVERBS ; !
+@U.tense.Prs@                                                            PREVERBS ;
+@U.tense.Prt@@P.joiner.NULL@:@U.tense.Prt@@P.joiner.NULL@kî%^EGLOT       PREVERBS ;
+@U.tense.Prt@@P.joiner.hyphen@:@U.tense.Prt@@P.joiner.hyphen@kî%-        PREVERBS ;
+@U.tense.FutDef@@P.joiner.NULL@:@U.tense.FutDef@@P.joiner.NULL@ka%^EGLOT PREVERBS ;
+@U.tense.FutDef@@P.joiner.hyphen@:@U.tense.FutDef@@P.joiner.hyphen@ka%-  PREVERBS ;
+@U.tense.FutInt@@P.joiner.NULL@:@U.tense.FutInt@@P.joiner.NULL@wî%^EGLOT       PREVERBS ;
+@U.tense.FutInt@@P.joiner.hyphen@:@U.tense.FutInt@@P.joiner.hyphen@wî%-        PREVERBS ;
+! <                   "@U.tense.Prs@"                        > PREVERBS ; !
+! < 0:k 0:î 0:%^EGLOT "@U.tense.Prt@"    "@P.joiner.NULL@"   > PREVERBS ; ! 
+! < 0:k 0:î 0:%-      "@U.tense.Prt@"    "@P.joiner.hyphen@" > PREVERBS ; !
+! < 0:k 0:a 0:%^EGLOT "@U.tense.FutDef@" "@P.joiner.NULL@"   > PREVERBS ; !
+! < 0:k 0:a 0:%-      "@U.tense.FutDef@" "@P.joiner.hyphen@" > PREVERBS ; !
+! < 0:w 0:î 0:%^EGLOT "@U.tense.FutInt@" "@P.joiner.NULL@"   > PREVERBS ; ! N.B. - move to a next lexicon
+! < 0:w 0:î 0:%-      "@U.tense.FutInt@" "@P.joiner.hyphen@" > PREVERBS ; !
 
 
 LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
@@ -154,7 +160,7 @@ PV/kape+:kapê VERBSTEMSPRE "for the full duration of; always" ;
 PV/kaski+:kaski VERBSTEMSPRE "dense" ; 
 PV/kaskitewi+:kaskitêwi VERBSTEMSPRE "black" ; 
 PV/kayasi+:kayâsi VERBSTEMSPRE "old" ; 
-! PV/kaa+:kaâ VERBSTEMSPRE "[grammatical preverb; defines a changed conjunct clause; often a relative clause, i.e. who, which]" ; 
+! PV/kaa+:kâ VERBSTEMSPRE "[grammatical preverb; defines a changed conjunct clause; often a relative clause, i.e. who, which]" ; 
 PV/kah+:kâh VERBSTEMSPRE "would, ought to; likely to" ; 
 @U.joiner.hyphen@PV/kah-kape+:@U.joiner.hyphen@kâh-kapê VERBSTEMSPRE "all the time" ; 
 @U.joiner.NULL@PV/kah-kape+:@U.joiner.NULL@kâhkapê VERBSTEMSPRE "all the time" ; 
