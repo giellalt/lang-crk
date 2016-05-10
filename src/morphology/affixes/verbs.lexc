@@ -358,16 +358,16 @@ PV/yoski+:yôski VERBSTEMSPRE "soft, softly" ;
 
 LEXICON VERBSTEMSPRE
 @U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@%- PREVERBS ;
-@U.joiner.NULL@@C.cnj@ PREVERBS ;
+@U.joiner.NULL@@C.cnj@                              PREVERBS ;
 @U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@%- REDUPL ;
-@U.joiner.NULL@@C.cnj@ REDUPL ;
+@U.joiner.NULL@@C.cnj@                              REDUPL ;
 @U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@%- WICI ;
-@U.joiner.NULL@@C.cnj@ WICI ;
+@U.joiner.NULL@@C.cnj@                              WICI ;
 
 LEXICON REDUPL
 RdplW+:%^DUPL1ay2 VERBSTEMSPRE_REDUPL ;
-RdplS+:%^DUPL1âh VERBSTEMSPRE_REDUPL ;
-@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@%^DUPL2ay3%^DUPL1âh VERBSTEMSPRE_REDUPL ;
+RdplS+:%^DUPL1âh  VERBSTEMSPRE_REDUPL ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@%^DUPL2ay3%^DUPL1âh       VERBSTEMSPRE_REDUPL ;
 @U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@%^DUPL2ay3%-%^DUPL1âh VERBSTEMSPRE_REDUPL ;
 
 ! < "RdplW+":0 0:%^DUPL1 0:a 0:"y2" > VERBSTEMSPRE_REDUPL ;
@@ -376,8 +376,8 @@ RdplS+:%^DUPL1âh VERBSTEMSPRE_REDUPL ;
 ! < "RdplW+":0 0:%^DUPL2 0:a 0:"y3" "@U.joiner.hyphen@" 0:%- "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
 
 LEXICON VERBSTEMSPRE_REDUPL
-< 0:0  0:%> "@U.joiner.NULL@" "@C.cnj@"   > WICI ;
-< 0:%- 0:%> "@U.joiner.hyphen@" "@C.cnj@" > WICI ;
+@U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%>       WICI ;
+@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@%-%> WICI ;
 
 LEXICON WICI
 @U.wici.NULL@ VERBSTEMS ;
