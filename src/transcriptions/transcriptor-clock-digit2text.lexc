@@ -83,8 +83,9 @@ LEXICON Root
 @U.TIME.11@1%0:@U.TIME.11@   BEFpunkt ;     !10:20 - 10:59
 @U.TIME.11@11:@U.TIME.11@    AFTpunkt ;     !11:00 - 11:59
 @U.TIME.12@11:@U.TIME.12@    BEFpunkt ;     !11:19 - 11:59
-@U.TIME.12@12:@U.TIME.12@    BEFpunkt ;     !11:19 - 11:59
-@U.TIME.12@%0%0:@U.TIME.12@    BEFpunkt ;     !11:19 - 11:59
+@U.TIME.1@12:@U.TIME.1@    BEFpunkt ;     !11:19 - 11:59
+@U.TIME.12@12:@U.TIME.12@    AFTpunkt ;     !11:19 - 11:59
+!@U.TIME.12@%0%0:@U.TIME.12@    BEFpunkt ;     !11:19 - 11:59
 12%:%0%0:nîsosâp     TIPAHIKAN        ;     !12:00
 12%.%0%0:nîsosâp+Use/NA       TIPAHIKAN        ;     !12.00
 12:nîsosâp+Use/NA       TIPAHIKAN        ;     !12.00
@@ -192,7 +193,7 @@ LEXICON HALFHOUR
 
 LEXICON HALF
  :% mînâpihtaw # ; !Not obligatory to add tipahikan
- :% mînâpihtaw TIPAHIKAN ; 
+ +Use/NG:% mînâpihtaw TIPAHIKAN ; 
 
 
 LEXICON HOUR
