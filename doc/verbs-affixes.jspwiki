@@ -18,8 +18,8 @@ The Plains Cree verbs are divided in four groups:
 
  LEXICON VerbPrefixes   divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
 
- * @U.mood.indep@ INDEPENDENT ;         
- * @U.mood.cnj@   CONJUNCT ;             
+ * @U.order.indep@ INDEPENDENT ;         
+ * @U.order.cnj@   CONJUNCT ;             
  *                IMPERATIVE ;          
  *                FUTURE_CONDITIONAL ;  
 
@@ -34,7 +34,6 @@ The Plains Cree verbs are divided in four groups:
 
 
  LEXICON CONJUNCT  gives flag for conjunctive and prefix ê-, kâ-, kâki-
-
 
 
 
@@ -86,16 +85,16 @@ TACONJ_2 ;
 
 Intransitive animate (AI)
 
- LEXICON AICONJ  splits in 4 moods
+ LEXICON AICONJ  splits in 4 orders
 
- LEXICON AICONJ-PL   splits in 4 moods, gives only plural forms.
+ LEXICON AICONJ-PL   splits in 4 orders, gives only plural forms.
 
 
- LEXICON AICONJw  splits in 4 moods, for verbs with final -w
+ LEXICON AICONJw  splits in 4 orders, for verbs with final -w
 
- LEXICON AICONJn  splits in 4 moods, for verbs with final -n
+ LEXICON AICONJn  splits in 4 orders, for verbs with final -n
 
- LEXICON AICONJn-PL  splits in 4 moods, for verbs with final -n
+ LEXICON AICONJn-PL  splits in 4 orders, for verbs with final -n
 
 
 AI CONJ-CONT can take the wici- circumfix
@@ -212,21 +211,21 @@ Suffixation begins for AI IND classes
 Intransitive inanimate (II)
 
 
- LEXICON IICONJ  splits in 4 moods
+ LEXICON IICONJ  splits in 4 orders
 
- LEXICON IICONJ-SG   splits in 4 moods, gives only plural forms.
+ LEXICON IICONJ-SG   splits in 4 orders, gives only plural forms.
 
- LEXICON IICONJ-PL  splits in 4 moods, for verbs with final -n
+ LEXICON IICONJ-PL  splits in 4 orders, for verbs with final -n
 
 
 
 II Conjugation for stems ending in -w
 
- LEXICON IICONJw  splits in 4 moods
+ LEXICON IICONJw  splits in 4 orders
 
- LEXICON IICONJw-SG   splits in 4 moods, gives only plural forms.
+ LEXICON IICONJw-SG   splits in 4 orders, gives only plural forms.
 
- LEXICON IICONJw-PL  splits in 4 moods, for verbs with final -n
+ LEXICON IICONJw-PL  splits in 4 orders, for verbs with final -n
 
 
 
@@ -236,23 +235,23 @@ IICONJw wici chamber
 
 
 
-IICONJ-CONT splits into 4 moods
+IICONJ-CONT splits into 4 orders
 
- LEXICON IICONJ-CONT  splits according to mood
+ LEXICON IICONJ-CONT  splits according to order
 
- LEXICON IICONJ-CONT-SG  splits according to mood
+ LEXICON IICONJ-CONT-SG  splits according to order
 
- LEXICON IICONJ-CONT-PL  splits according to mood
+ LEXICON IICONJ-CONT-PL  splits according to order
 
 
 
-IICONJw-CONT splits into 4 moods
+IICONJw-CONT splits into 4 orders
 
- LEXICON IICONJw-CONT  w final. Splits according to mood
+ LEXICON IICONJw-CONT  w final. Splits according to order
 
- LEXICON IICONJw-CONT-SG  w final. Splits according to mood
+ LEXICON IICONJw-CONT-SG  w final. Splits according to order
 
- LEXICON IICONJw-CONT-PL  w final. Splits according to mood
+ LEXICON IICONJw-CONT-PL  w final. Splits according to order
 
 
 
@@ -309,7 +308,7 @@ Suffixation begins for II CNJ classes
 
 !!!Transitive animate (TA)
 
-The VTA verbs split in different moods.
+The VTA verbs split in different orders.
 There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
