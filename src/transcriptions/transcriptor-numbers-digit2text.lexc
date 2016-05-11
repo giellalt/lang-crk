@@ -249,7 +249,7 @@ LEXICON TENS
 4:nêmi TEN ;
 5:niyânanomi TEN ;
 6:nikotwâsomi TEN ;
-7:têpakohpimi TEN ;
+7:+Use/NGtêpakohpimi TEN ;
 7:têpakohpomi TEN ;
 8:ayinânêwomi TEN ;
 9:kêkâ-mitâtahtomi TEN ;
@@ -261,38 +261,38 @@ LEXICON TEN
 %0:tanaw  ENDLEX ;
 
 LEXICON NEARLY
+!9%0:kêkâ-mitâtahtomi NEARLY-TEN ;
 29:+Use/NGkêkâc% nistom NEARLY-TEN ;
-29:kêkâc% nistomi NEARLY-TEN ;
-39:+Use/NGkêkâc% nêwom NEARLY-TEN ;
-39:kêkâc% nêmi NEARLY-TEN ;
-39:+Use/NGkêkâc% nêwomi NEARLY-TEN ;
-49:+Use/NGkêkâc% nîyânom NEARLY-TEN ;
-49:kêkâc% nîyânomi NEARLY-TEN ;
-59:kêkâc% nikotwâsom NEARLY-TEN ;
-69:kêkâc% têpakohpim NEARLY-TEN ;
-79:kêkâc% ayinânêwom NEARLY-TEN ;
-89:kêkâc% kêkâ% mitâtahtomi NEARLY-TEN ;
-89:+Use/NGkêkâc% kêkâ% mitâtahtom NEARLY-TEN ;
-9%0:+Use/NGkêkâ% mitâtahtom NEARLY-TEN ;
-9%0:kêkâ% mitâtahtomi NEARLY-TEN ;
-99:kêkâ% mitatahtomitanaw% ayiwâk% kêkâ% mitâtaht ENDLEX ;
-29:kêkâc-nistomi NEARLY-TEN ;
+29:+Use/NGkêkâc% nistomi NEARLY-TEN ;
+29:+Use/NGkêkâc-nistomi NEARLY-TEN ;
 29:kêkâ-nistomi NEARLY-TEN ;
-39:kêkâc-nêmi NEARLY-TEN ;
+39:+Use/NGkêkâc% nêwom NEARLY-TEN ;
+39:+Use/NGkêkâc% nêwomi NEARLY-TEN ;
 39:+Use/NGkêkâc-nêwomi NEARLY-TEN ;
 39:kêkâ-nêmi NEARLY-TEN ;
-49:kêkâc-niyânanomi NEARLY-TEN ;
+39:+Use/NGkêkâc% nêmi NEARLY-TEN ;
+39:+Use/NGkêkâc-nêmi NEARLY-TEN ;
+49:+Use/NGkêkâc% nîyânom NEARLY-TEN ;
 49:kêkâ-niyânanomi NEARLY-TEN ;
-59:kêkâc-nikotwâsomi NEARLY-TEN ;
+49:+Use/NGkêkâc% nîyânomi NEARLY-TEN ;
+49:+Use/NGkêkâc-niyânanomi NEARLY-TEN ;
 59:kêkâ-nikotwâsomi NEARLY-TEN ;
-69:kêkâc-têpakohpimi NEARLY-TEN ;
-69:kêkâc-têpakohpomi NEARLY-TEN ;
-69:kêkâ-têpakohpimi NEARLY-TEN ;
+59:+Use/NGkêkâc% nikotwâsom NEARLY-TEN ;
+59:+Use/NGkêkâc-nikotwâsomi NEARLY-TEN ;
+69:+Use/NGkêkâ-têpakohpimi NEARLY-TEN ;
 69:kêkâ-têpakohpomi NEARLY-TEN ;
-79:kêkâc-ayinânêwomi NEARLY-TEN ;
+69:+Use/NGkêkâc% têpakohpim NEARLY-TEN ;
+69:+Use/NGkêkâc-têpakohpimi NEARLY-TEN ;
+69:+Use/NGkêkâc-têpakohpomi NEARLY-TEN ;
 79:kêkâ-ayinânêwomi NEARLY-TEN ;
+79:+Use/NGkêkâc% ayinânêwom NEARLY-TEN ;
+79:+Use/NGkêkâc-ayinânêwomi NEARLY-TEN ;
+89:+Use/NGkêkâc% kêkâ% mitâtahtom NEARLY-TEN ;
+89:+Use/NGkêkâc% kêkâ% mitâtahtomi NEARLY-TEN ;
 89:kêkâc-kêkâ-mitâtahtomi NEARLY-TEN ;
-!9%0:kêkâ-mitâtahtomi NEARLY-TEN ;
+9%0:+Use/NGkêkâ% mitâtahtom NEARLY-TEN ;
+9%0:+Use/NGkêkâ% mitâtahtomi NEARLY-TEN ;
+99:+Use/NGkêkâ% mitatahtomitanaw% ayiwâk% kêkâ% mitâtaht ENDLEX ;
 99:kêkâ-mitâtahtomitanaw% kêkâ-mitâtaht ENDLEX ;
 
 LEXICON NEARLY-TEN
@@ -318,7 +318,7 @@ LEXICON ONESTONEXT
 7:+Use/NGtêpakohp-sâp ENDLEX ;
 8:+Use/NGayinânêwo-sâp ENDLEX ;
 !9:kêkâc% nîsitanaw ENDLEX ; ! only for 19 (almost 20)
-:ayiwâk%  CARDINAL ;
+:+Use/NGayiwâk%  CARDINAL ;
 
 
 LEXICON TEENS
@@ -327,14 +327,14 @@ LEXICON TEENS
 13:nistosâp ENDLEX ;
 14:nêwosâp ENDLEX ;
 15:niyânanosâp ENDLEX ;
-16:nikotwâsosâp ENDLEX ;
 16:+Use/NGnikotwâsikosâp ENDLEX ;
+16:nikotwâsosâp ENDLEX ;
 17:têpakohposâp ENDLEX ;
 18:ayinânêwosâp ENDLEX ;
-19:kêkâ-mitâtahtosâp ENDLEX ;
-19:+Use/NGkêkâmitâtahtosâp ENDLEX ;
+19:kêkâ-nîsitanaw ENDLEX ;
 19:+Use/NGkêkâc% nîsitanaw ENDLEX ;
-19:+Use/NGkêkâ-nîsitanaw ENDLEX ;
+19:+Use/NGkêkâmitâtahtosâp ENDLEX ;
+19:+Use/NGkêkâ-mitâtahtosâp ENDLEX ;
 
 LEXICON ONES
 CARDINAL ;
