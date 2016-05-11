@@ -33,8 +33,8 @@
 
 LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
 
-@U.mood.indep@ INDEPENDENT ;         !!= * @CODE@
-@U.mood.cnj@   CONJUNCT ;            !!= * @CODE@ 
+@U.order.indep@ INDEPENDENT ;         !!= * @CODE@
+@U.order.cnj@   CONJUNCT ;            !!= * @CODE@ 
                IMPERATIVE ;          !!= * @CODE@
                FUTURE_CONDITIONAL ;  !!= * @CODE@
 
@@ -66,7 +66,7 @@ LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense
 
 
 LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
-@U.mood.FutCon@ PREVERBS ;
+@U.order.FutCon@ PREVERBS ;
 
 
 LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâki-
@@ -96,7 +96,7 @@ LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
 
 
 LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
-@U.mood.imp@  PREVERBS ;
+@U.order.imp@  PREVERBS ;
 
 !! Words marked GG are from Plains Cree Grammar guide and glossary
 
@@ -444,30 +444,30 @@ TICONJ ;
 
 !! !!! Intransitive animate (AI)
 
-LEXICON AICONJ !!= @CODE@ splits in 4 moods
+LEXICON AICONJ !!= @CODE@ splits in 4 orders
 +V+AI: AICONJ-CONT ;
 
-LEXICON AICONJ-PL !!= @CODE@  splits in 4 moods, gives only plural forms.
+LEXICON AICONJ-PL !!= @CODE@  splits in 4 orders, gives only plural forms.
 +V+AI: AICONJ-CONT-PL ;
 
  
-LEXICON AICONJw !!= @CODE@ splits in 4 moods, for verbs with final -w
+LEXICON AICONJw !!= @CODE@ splits in 4 orders, for verbs with final -w
 +V+AI: AICONJ-CONT ;
 
-LEXICON AICONJn !!= @CODE@ splits in 4 moods, for verbs with final -n
+LEXICON AICONJn !!= @CODE@ splits in 4 orders, for verbs with final -n
 +V+AI: AICONJ-CONTn ;
 
-LEXICON AICONJn-PL !!= @CODE@ splits in 4 moods, for verbs with final -n
+LEXICON AICONJn-PL !!= @CODE@ splits in 4 orders, for verbs with final -n
 +V+AI: AICONJ-CONTn-PL ;
 
 
 !! !!! AI CONJ-CONT can take the wici- circumfix
 
 LEXICON AICONJ-CONT !!= @CODE@ 
-< "+Ind":0  "@U.mood.indep@" >  AI_IND_WICI ; !
-< "+Cnj":0  "@U.mood.cnj@" > AI_CNJ_WICI ; !
-< "+Imp":%>    "@U.mood.imp@"  >  AI_IMP_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CON_WICI ; !
+< "+Ind":0  "@U.order.indep@" >  AI_IND_WICI ; !
+< "+Cnj":0  "@U.order.cnj@" > AI_CNJ_WICI ; !
+< "+Imp":%>    "@U.order.imp@"  >  AI_IMP_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > AI_FUT_CON_WICI ; !
 
 LEXICON AI_IND_WICI
 @U.wici.NULL@ AI_IND ;
@@ -489,10 +489,10 @@ LEXICON AI_FUT_CON_WICI
 !! !!! AI CONJ-CONT-PL can take the wici- circumfix (plural only)
 
 LEXICON AICONJ-CONT-PL !!= @CODE@ only plural forms.
-	< "+Ind":0  "@U.mood.indep@" >  AI_IND-PL_WICI ; !
-< "+Cnj":0  "@U.mood.cnj@" > AI_CNJ-PL_WICI ; !
-< "+Imp":%>    "@U.mood.imp@"  >  AI_IMP-PL_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CON-PL_WICI ; !
+	< "+Ind":0  "@U.order.indep@" >  AI_IND-PL_WICI ; !
+< "+Cnj":0  "@U.order.cnj@" > AI_CNJ-PL_WICI ; !
+< "+Imp":%>    "@U.order.imp@"  >  AI_IMP-PL_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > AI_FUT_CON-PL_WICI ; !
 
 LEXICON AI_IND-PL_WICI
 @U.wici.NULL@ AI_IND-PL ;
@@ -514,10 +514,10 @@ LEXICON AI_FUT_CON-PL_WICI
 !! !!! AI CONJ-CONTn class Conjugations can take the wici- circumfix
 
 LEXICON AICONJ-CONTn !!= @CODE@ 
-< "+Ind":0  "@U.mood.indep@" >  AI_INDn_WICI ; !
-< "+Cnj":0  "@U.mood.cnj@" > AI_CNJn_WICI ; !
-< "+Imp":%>     "@U.mood.imp@"  >  AI_IMPn_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CONn_WICI ;
+< "+Ind":0  "@U.order.indep@" >  AI_INDn_WICI ; !
+< "+Cnj":0  "@U.order.cnj@" > AI_CNJn_WICI ; !
+< "+Imp":%>     "@U.order.imp@"  >  AI_IMPn_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > AI_FUT_CONn_WICI ;
 
 LEXICON AI_INDn_WICI
 @U.wici.NULL@ AI_INDn ;
@@ -539,10 +539,10 @@ LEXICON AI_FUT_CONn_WICI
 !! !!! AI n-sub class Conjugations can take the wici- circumfix (PL only)
 
 LEXICON AICONJ-CONTn-PL !!= @CODE@ 
-< "+Ind":0  "@U.mood.indep@" >  AI_INDn-PL_WICI ; !
-< "+Cnj":0  "@U.mood.cnj@" > AI_CNJn-PL_WICI ; !
-< "+Imp":%>     "@U.mood.imp@"  >  AI_IMPn-PL_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > AI_FUT_CONn-PL_WICI ;
+< "+Ind":0  "@U.order.indep@" >  AI_INDn-PL_WICI ; !
+< "+Cnj":0  "@U.order.cnj@" > AI_CNJn-PL_WICI ; !
+< "+Imp":%>     "@U.order.imp@"  >  AI_IMPn-PL_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > AI_FUT_CONn-PL_WICI ;
 
 LEXICON AI_INDn-PL_WICI
 @U.wici.NULL@ AI_INDn-PL ;
@@ -773,26 +773,26 @@ LEXICON imp-long-E !!= @CODE@
 !      ===========================
 
 
-LEXICON IICONJ !!= @CODE@ splits in 4 moods
+LEXICON IICONJ !!= @CODE@ splits in 4 orders
 +V+II: IICONJ-CONT_wici ;
 
-LEXICON IICONJ-SG !!= @CODE@  splits in 4 moods, gives only plural forms.
+LEXICON IICONJ-SG !!= @CODE@  splits in 4 orders, gives only plural forms.
 +V+II: IICONJ-CONT-SG_wici ;
 
-LEXICON IICONJ-PL !!= @CODE@ splits in 4 moods, for verbs with final -n
+LEXICON IICONJ-PL !!= @CODE@ splits in 4 orders, for verbs with final -n
 +V+II: IICONJ-CONT-PL_wici ;
 
 
 
 !! !!! II Conjugation for stems ending in -w
 
-LEXICON IICONJw !!= @CODE@ splits in 4 moods
+LEXICON IICONJw !!= @CODE@ splits in 4 orders
 +V+II: IICONJw-CONT ;
 
-LEXICON IICONJw-SG !!= @CODE@  splits in 4 moods, gives only plural forms.
+LEXICON IICONJw-SG !!= @CODE@  splits in 4 orders, gives only plural forms.
 +V+II: IICONJw-CONT-SG ;
 
-LEXICON IICONJw-PL !!= @CODE@ splits in 4 moods, for verbs with final -n
+LEXICON IICONJw-PL !!= @CODE@ splits in 4 orders, for verbs with final -n
 +V+II: IICONJw-CONT-PL ;
 
 
@@ -815,43 +815,43 @@ LEXICON IICONJw-CONT-SG_wici
 LEXICON IICONJw-CONT-PL_wici
 @U.wici.NULL@ IICONJw-CONT-PL ;
 
-!! !!! IICONJ-CONT splits into 4 moods
+!! !!! IICONJ-CONT splits into 4 orders
 
-LEXICON IICONJ-CONT !!= @CODE@ splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_IND_PRS ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJ_PRS ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PRS_Fut-SG ;!
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PRS_Fut-PL ;!
+LEXICON IICONJ-CONT !!= @CODE@ splits according to order
+< "+Ind":0  "@U.order.indep@" >  II_IND_PRS ; !
+< "+Cnj":0  "@U.order.cnj@" > II_CNJ_PRS ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_IND_PRS_Fut-SG ;!
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_IND_PRS_Fut-PL ;!
 
-LEXICON IICONJ-CONT-SG !!= @CODE@ splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_IND_PRS-SG ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJ_PRS-SG ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PRS_Fut-SG ;!
+LEXICON IICONJ-CONT-SG !!= @CODE@ splits according to order
+< "+Ind":0  "@U.order.indep@" >  II_IND_PRS-SG ; !
+< "+Cnj":0  "@U.order.cnj@" > II_CNJ_PRS-SG ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_IND_PRS_Fut-SG ;!
 
-LEXICON IICONJ-CONT-PL !!= @CODE@ splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_IND_PRS-PL ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJ_PRS-PL ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_IND_PRS_Fut-PL ;!
+LEXICON IICONJ-CONT-PL !!= @CODE@ splits according to order
+< "+Ind":0  "@U.order.indep@" >  II_IND_PRS-PL ; !
+< "+Cnj":0  "@U.order.cnj@" > II_CNJ_PRS-PL ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_IND_PRS_Fut-PL ;!
 
 
 
-!! !!! IICONJw-CONT splits into 4 moods
+!! !!! IICONJw-CONT splits into 4 orders
 
-LEXICON IICONJw-CONT !!= @CODE@ w final. Splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_INDw_PRS ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJw_PRS ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS_Fut ;!
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS_Fut ;!
+LEXICON IICONJw-CONT !!= @CODE@ w final. Splits according to order
+< "+Ind":0  "@U.order.indep@" >  II_INDw_PRS ; !
+< "+Cnj":0  "@U.order.cnj@" > II_CNJw_PRS ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_INDw_PRS_Fut ;!
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_INDw_PRS_Fut ;!
 
-LEXICON IICONJw-CONT-SG !!= @CODE@ w final. Splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_INDw_PRS-SG ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJw_PRS-SG ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS_Fut-SG ;!
+LEXICON IICONJw-CONT-SG !!= @CODE@ w final. Splits according to order
+< "+Ind":0  "@U.order.indep@" >  II_INDw_PRS-SG ; !
+< "+Cnj":0  "@U.order.cnj@" > II_CNJw_PRS-SG ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_INDw_PRS_Fut-SG ;!
 
-LEXICON IICONJw-CONT-PL !!= @CODE@ w final. Splits according to mood
-< "+Ind":0  "@U.mood.indep@" >  II_INDw_PRS-PL ; !
-< "+Cnj":0  "@U.mood.cnj@" > II_CNJw_PRS-PL ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > II_INDw_PRS_Fut-PL ;
+LEXICON IICONJw-CONT-PL !!= @CODE@ w final. Splits according to order
+< "+Ind":0  "@U.order.indep@" >  II_INDw_PRS-PL ; !
+< "+Cnj":0  "@U.order.cnj@" > II_CNJw_PRS-PL ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_INDw_PRS_Fut-PL ;
 
 
 
@@ -962,7 +962,7 @@ LEXICON II_CNJw_PRS-PL   !!= @CODE@ w final
 !     =======================
 !     =======================
 
-!! The VTA verbs split in different moods.
+!! The VTA verbs split in different orders.
 !! There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 ! Main verb stems
@@ -991,46 +991,46 @@ LEXICON TACONJ_5-TS !!= * @CODE@
 
 
 LEXICON TACONJ-CONT !!= * @CODE@
-< "+Ind":0 "@U.mood.indep@" > TA_IND_WICI ; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJ_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUT_WICI ; !
-< "+Imp":0 "@U.mood.imp@" > TA_IMP_WICI ; !
+< "+Ind":0 "@U.order.indep@" > TA_IND_WICI ; !
+< "+Cnj":0 "@U.order.cnj@" > TA_CNJ_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TA_FUT_WICI ; !
+< "+Imp":0 "@U.order.imp@" > TA_IMP_WICI ; !
 
 LEXICON TACONJ-CONTTS !!= * @CODE@
-< "+Ind":0 "@U.mood.indep@" > TA_INDTS_WICI ; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJTS_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTTS_WICI ; !
-< "+Imp":0 "@U.mood.imp@" > TATS_IMP_WICI ; !
+< "+Ind":0 "@U.order.indep@" > TA_INDTS_WICI ; !
+< "+Cnj":0 "@U.order.cnj@" > TA_CNJTS_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TA_FUTTS_WICI ; !
+< "+Imp":0 "@U.order.imp@" > TATS_IMP_WICI ; !
 
 LEXICON TACONJ-CONTVw !!= * @CODE@
-< "+Ind":0 "@U.mood.indep@" > TA_INDVw_WICI ; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJVw_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTVw_WICI ; !
-< "+Imp":0 "@U.mood.imp@" > TA_IMPVw_WICI ; !
+< "+Ind":0 "@U.order.indep@" > TA_INDVw_WICI ; !
+< "+Cnj":0 "@U.order.cnj@" > TA_CNJVw_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TA_FUTVw_WICI ; !
+< "+Imp":0 "@U.order.imp@" > TA_IMPVw_WICI ; !
 
 LEXICON TACONJ-CONTVw-PL !!= * @CODE@ plural forms
-< "+Ind":0 "@U.mood.indep@" > TA_INDVw-PL_WICI; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJVw-PL_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTVw-PL_WICI ; !
-< "+Imp":0 "@U.mood.imp@" > TA_IMPVw-PL_WICI ; !
+< "+Ind":0 "@U.order.indep@" > TA_INDVw-PL_WICI; !
+< "+Cnj":0 "@U.order.cnj@" > TA_CNJVw-PL_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TA_FUTVw-PL_WICI ; !
+< "+Imp":0 "@U.order.imp@" > TA_IMPVw-PL_WICI ; !
 
 LEXICON TACONJ-CONTCw !!= * @CODE@
-< "+Ind":0 "@U.mood.indep@" > TA_INDCw_WICI ; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJCw_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTCw_WICI ; !
-< "+Imp":0 "@U.mood.imp@" > TA_IMPCw_WICI ; !
+< "+Ind":0 "@U.order.indep@" > TA_INDCw_WICI ; !
+< "+Cnj":0 "@U.order.cnj@" > TA_CNJCw_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TA_FUTCw_WICI ; !
+< "+Imp":0 "@U.order.imp@" > TA_IMPCw_WICI ; !
 
 LEXICON TACONJ-CONTi !!= * @CODE@
-< "+Ind":0 "@U.mood.indep@" > TA_IND_WICI ; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJ_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUT_WICI ; !
-< "+Imp":0 "@U.mood.imp@" > TA_IMPi ; !
+< "+Ind":0 "@U.order.indep@" > TA_IND_WICI ; !
+< "+Cnj":0 "@U.order.cnj@" > TA_CNJ_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TA_FUT_WICI ; !
+< "+Imp":0 "@U.order.imp@" > TA_IMPi ; !
 
 LEXICON TACONJ-CONTTSi !!= * @CODE@
-< "+Ind":0 "@U.mood.indep@" > TA_INDTS_WICI ; !
-< "+Cnj":0 "@U.mood.cnj@" > TA_CNJTS_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TA_FUTTS_WICI ; !
-< "+Imp":0 "@U.mood.imp@" > TATSi_IMP ; !
+< "+Ind":0 "@U.order.indep@" > TA_INDTS_WICI ; !
+< "+Cnj":0 "@U.order.cnj@" > TA_CNJTS_WICI ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TA_FUTTS_WICI ; !
+< "+Imp":0 "@U.order.imp@" > TATSi_IMP ; !
 
 
 LEXICON TA_IND_WICI !!= @CODE@ gives prs
@@ -2494,29 +2494,29 @@ LEXICON TICONJâ  !!= * @CODE@
 
 
 LEXICON TICONJ-CONT !!= * @CODE@
-< "+Ind":0  "@U.mood.indep@" >  TI_IND_WICI ; !
-< "+Cnj":0  "@U.mood.cnj@" > TI_CNJ_WICI ; !
+< "+Ind":0  "@U.order.indep@" >  TI_IND_WICI ; !
+< "+Cnj":0  "@U.order.cnj@" > TI_CNJ_WICI ; !
 <     "@D.tense@"  >  TI_IMP_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TI_FUT_CON_WICI ;
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TI_FUT_CON_WICI ;
 
 LEXICON TICONJ-CONT-PL !!= * @CODE@ plural
-< "+Ind":0  "@U.mood.indep@" >  TI_IND-PL_WICI ; !
-< "+Cnj":0  "@U.mood.cnj@" > TI_CNJ-PL_WICI ; !
+< "+Ind":0  "@U.order.indep@" >  TI_IND-PL_WICI ; !
+< "+Cnj":0  "@U.order.cnj@" > TI_CNJ-PL_WICI ; !
 <     "@D.tense@"  >  TI_IMP-PL_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TI_FUT_CON-PL_WICI ;
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TI_FUT_CON-PL_WICI ;
 
 
 LEXICON TICONJi-CONT !!= * @CODE@
-< "+Ind":0  "@U.mood.indep@" >  TI_INDi_WICI ; !
-< "+Cnj":0  "@U.mood.cnj@" > TI_CNJi_WICI ; !
+< "+Ind":0  "@U.order.indep@" >  TI_INDi_WICI ; !
+< "+Cnj":0  "@U.order.cnj@" > TI_CNJi_WICI ; !
 <     "@D.tense@"  >  TI_IMPi_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TI_FUTi_CON_WICI ;
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TI_FUTi_CON_WICI ;
 
 LEXICON TICONJâ-CONT !!= * @CODE@
-< "+Ind":0  "@U.mood.indep@" >  TI_INDâ_WICI ; !
-< "+Cnj":0  "@U.mood.cnj@" > TI_CNJâ_WICI ; !
+< "+Ind":0  "@U.order.indep@" >  TI_INDâ_WICI ; !
+< "+Cnj":0  "@U.order.cnj@" > TI_CNJâ_WICI ; !
 <     "@D.tense@"  >  TI_IMPâ_WICI ; !
-< "+Fut":0 "+Cond":0 "@U.mood.FutCon@" > TI_FUTâ_CON_WICI ;
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TI_FUTâ_CON_WICI ;
 
 LEXICON TI_IND_WICI
 @U.wici.NULL@ TI_IND ;
@@ -2802,36 +2802,36 @@ LEXICON TI_CNJâ_SUF !!= * @CODE@
     
 
 LEXICON TI_IMP !!= * @CODE@
-< "+Imp":%> "@U.mood.imp@"  "+Imm":0 "+2Sg":0 0:a > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:ê 0:t 0:â 0:n > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:a 0:m 0:o 0:k > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Sg":0 0:a 0:m 0:ô 0:h 0:k 0:a 0:n > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Del":0 "+12Pl":0 0:a 0:m 0:ô 0:h 0:k 0:a 0:h 0:k > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Pl":0 0:a 0:m 0:ô 0:h 0:k 0:ê 0:k > # ; !
+< "+Imp":%> "@U.order.imp@"  "+Imm":0 "+2Sg":0 0:a > # ; !
+< "+Imp":%> "@U.order.imp@" "+Imm":0 "+12Pl":0 0:ê 0:t 0:â 0:n > # ; !
+< "+Imp":%> "@U.order.imp@" "+Imm":0 "+2Pl":0 0:a 0:m 0:o 0:k > # ; !
+< "+Imp":%> "@U.order.imp@" "+Del":0 "+2Sg":0 0:a 0:m 0:ô 0:h 0:k 0:a 0:n > # ; !
+< "+Imp":%> "@U.order.imp@" "+Del":0 "+12Pl":0 0:a 0:m 0:ô 0:h 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":%> "@U.order.imp@" "+Del":0 "+2Pl":0 0:a 0:m 0:ô 0:h 0:k 0:ê 0:k > # ; !
 
 LEXICON TI_IMP-PL !!= * @CODE@
-< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:ê 0:t 0:â 0:n > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:a 0:m 0:o 0:k > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Del":0 "+12Pl":0 0:a 0:m 0:ô 0:h 0:k 0:a 0:h 0:k > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Pl":0 0:a 0:m 0:ô 0:h 0:k 0:ê 0:k > # ; !
+< "+Imp":%> "@U.order.imp@" "+Imm":0 "+12Pl":0 0:ê 0:t 0:â 0:n > # ; !
+< "+Imp":%> "@U.order.imp@" "+Imm":0 "+2Pl":0 0:a 0:m 0:o 0:k > # ; !
+< "+Imp":%> "@U.order.imp@" "+Del":0 "+12Pl":0 0:a 0:m 0:ô 0:h 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":%> "@U.order.imp@" "+Del":0 "+2Pl":0 0:a 0:m 0:ô 0:h 0:k 0:ê 0:k > # ; !
 
 
 LEXICON TI_IMPi !!= * @CODE@
-< "+Imp":%> "@U.mood.imp@"  "+Imm":0 "+2Sg":0 > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:t 0:â 0:n > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:k > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Sg":0 0:h 0:k 0:a 0:n > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Del":0 "+12Pl":0 0:h 0:k 0:a 0:h 0:k > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Pl":0 0:h 0:k 0:ê 0:k > # ; !
+< "+Imp":%> "@U.order.imp@"  "+Imm":0 "+2Sg":0 > # ; !
+< "+Imp":%> "@U.order.imp@" "+Imm":0 "+12Pl":0 0:t 0:â 0:n > # ; !
+< "+Imp":%> "@U.order.imp@" "+Imm":0 "+2Pl":0 0:k > # ; !
+< "+Imp":%> "@U.order.imp@" "+Del":0 "+2Sg":0 0:h 0:k 0:a 0:n > # ; !
+< "+Imp":%> "@U.order.imp@" "+Del":0 "+12Pl":0 0:h 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":%> "@U.order.imp@" "+Del":0 "+2Pl":0 0:h 0:k 0:ê 0:k > # ; !
 
 
 LEXICON TI_IMPâ !!= * @CODE@
-< "+Imp":%> "@U.mood.imp@"  "+Imm":0 "+2Sg":0 0:â > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+12Pl":0 0:â 0:t 0:â 0:n > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Imm":0 "+2Pl":0 0:â 0:k > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Sg":0 0:â 0:h 0:k 0:a 0:n > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Del":0 "+12Pl":0 0:â 0:h 0:k 0:a 0:h 0:k > # ; !
-< "+Imp":%> "@U.mood.imp@" "+Del":0 "+2Pl":0 0:â 0:h 0:k 0:ê 0:k > # ; !
+< "+Imp":%> "@U.order.imp@"  "+Imm":0 "+2Sg":0 0:â > # ; !
+< "+Imp":%> "@U.order.imp@" "+Imm":0 "+12Pl":0 0:â 0:t 0:â 0:n > # ; !
+< "+Imp":%> "@U.order.imp@" "+Imm":0 "+2Pl":0 0:â 0:k > # ; !
+< "+Imp":%> "@U.order.imp@" "+Del":0 "+2Sg":0 0:â 0:h 0:k 0:a 0:n > # ; !
+< "+Imp":%> "@U.order.imp@" "+Del":0 "+12Pl":0 0:â 0:h 0:k 0:a 0:h 0:k > # ; !
+< "+Imp":%> "@U.order.imp@" "+Del":0 "+2Pl":0 0:â 0:h 0:k 0:ê 0:k > # ; !
 
 
 LEXICON TI_IMP_LONG_E !!= * @CODE@
