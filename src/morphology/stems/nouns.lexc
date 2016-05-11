@@ -136,8 +136,8 @@ wîci STEMLISTPRE "one of his/her own kind; fellow" ;
 wîhki STEMLISTPRE "sweet; fragrant" ;
 
 LEXICON STEMLISTPRE
-%-:%> STEMLIST ;
-%-:%-%> STEMLIST ;
+-:%> STEMLIST ;
+-:-%> STEMLIST ;
 
 LEXICON STEMLIST
 
@@ -4310,7 +4310,7 @@ LEXICON DEP-KINTERMLIST
 -nâpêm:inâpêm AN_KININFL_MONOG "husband" ;!¢ninâpêm 
 -iyinîmak:itiyinîm AN_KININFL_PL "people; followers" ;!¢nitiyinîmak 
 -yihkwak:iyihkw AN_KININFL_PL "glands" ;!¢niyihkwak  !w
-!-îci%-ayis:îc-ayis AN_KININFL "fellow youngster" ;!¢ 
+!-îci-ayis:îc-ayis AN_KININFL "fellow youngster" ;!¢ 
 -îci-ayis:îci-ayis AN_KININFL "fellow youngster" ;!¢nîci-ayis 
 -îci-atoskêyâkan:îci-atoskêyâkan AN_KININFL "fellow employee" ;!¢nîci-atoskêyâkan 
 -îci-ayisiyiniw:îci-ayisiyiniw AN_KININFL "fellow human" ;!¢nîci-ayisiyiniw 
