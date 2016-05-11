@@ -1,0 +1,35 @@
+## Inclusions: this is the real alphabet definition:
+a
+ā
+c
+e
+ē
+g
+h
+i
+ī
+k
+m
+n
+o
+ō
+p
+s
+t
+v
+w
+y
+-
+
+## Transition pairs + weight - section separator:
+@@
+
+## Transition pair specifications + weight:
+a	ā	0.4
+e	ē	0
+i	ī	0.4
+o	ō	0.4
+
+## Swaps:
+## Change dh into hd with the weight 0.5:
+##d,h	h,d	0.5
