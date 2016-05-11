@@ -70,13 +70,13 @@ LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no pre
 
 
 LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâki-
-@P.joiner.hyphen@PV/e+:@P.joiner.hyphen@ê- CNJ_TENSE ;
+@P.joiner.hyphen@PV/e+:@P.joiner.hyphen@ê%- CNJ_TENSE ;
 @P.joiner.NULL@PV/e+:@P.joiner.NULL@ê%^EGLOT CNJ_TENSE ;
-@P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka- CNJ_TENSE ;
+@P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka%- CNJ_TENSE ;
 @P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka%^EGLOT CNJ_TENSE ;
-@P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ- CNJ_TENSE ;
+@P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ%- CNJ_TENSE ;
 @P.joiner.NULL@PV/kaa+:@P.joiner.NULL@kâ%^EGLOT CNJ_TENSE ;
-@P.joiner.hyphen@PV/kaa_ki+:@P.joiner.hyphen@kâ-ki- CNJ_TENSE ;
+@P.joiner.hyphen@PV/kaa_ki+:@P.joiner.hyphen@kâ%-ki%- CNJ_TENSE ;
 @P.joiner.NULL@PV/kaa_ki+:@P.joiner.NULL@kâki%^EGLOT CNJ_TENSE ;
 
 @P.cnj.CC@ CNJ_TENSE ; ! Option to allow for the occasional omission of the grammatical conjunct prefix
