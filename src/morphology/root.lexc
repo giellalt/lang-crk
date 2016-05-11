@@ -108,6 +108,12 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +UnspecTI1 !!= * @CODE@ Unspecified actor forms Okimāsis, where TI -t stem becomes -c p. 118
 +Unspec !!= * @CODE@ Unspecified actor forms Okimāsis p. 118
 
+
++Inf    !!= * @CODE@ infinitive (infinite?)
++Pos    !!= * @CODE@ postitive
++Neg    !!= * @CODE@ negative
++ConNeg !!= * @CODE@ accompanying negative form
+
 !! Nominal MSP
 +Sg		 !!= * @CODE@ singular
 +Pl		 !!= * @CODE@ plural
@@ -133,6 +139,7 @@ RdplS+ !!= * @CODE@ Reduplication Type 2 (Strong)
 
 +AN		 !!= * @CODE@ animate noun
 +IN		 !!= * @CODE@ inanimate noun
+
 
 +Incl    !!= * @CODE@ me too, etc.
 +Qst     !!= * @CODE@ yes-no question particle ci
@@ -429,6 +436,9 @@ h2 		!!= * @CODE@  Prefix in possessives
 %^IO     !!= * @CODE@  VTACw w + i becom o
 %^MI   !!= * @CODE@  Wici epenthesis
 
+
+
+
 !! !!Usage tags
 
 !! These tags distinguish different special-purpose analysers
@@ -450,9 +460,14 @@ h2 		!!= * @CODE@  Prefix in possessives
 !! the __prefix__, not to the subject. So ''indsg1'' refers to either
 !! subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
-!! Preverbs
+! Associative/comitative wîci-
 
-!! Flag diacritics no longer used to reorder PV-tags
+@U.wici.NULL@
+@U.wici.wici@
+
+! Reflexive
+@U.rflx.NULL@
+@U.rflx.rflx@
 
 ! Hyphen consistently as joiner or not
 
