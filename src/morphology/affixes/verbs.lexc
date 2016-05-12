@@ -772,29 +772,54 @@ LEXICON imp-long-E !!= @CODE@
 !      ===========================
 !      ===========================
 
-
 LEXICON IICONJ !!= @CODE@ splits in 4 orders
-+V+II: IICONJ-CONT_wici ;
++V+II: IICONJ-CONT_person ;
 
 LEXICON IICONJ-SG !!= @CODE@  splits in 4 orders, gives only plural forms.
-+V+II: IICONJ-CONT-SG_wici ;
++V+II: IICONJ-CONT-SG_person ;
 
 LEXICON IICONJ-PL !!= @CODE@ splits in 4 orders, for verbs with final -n
-+V+II: IICONJ-CONT-PL_wici ;
++V+II: IICONJ-CONT-PL_person ;
 
 
 
 !! !!! II Conjugation for stems ending in -w
 
 LEXICON IICONJw !!= @CODE@ splits in 4 orders
-+V+II: IICONJw-CONT ;
++V+II: IICONJw-CONT_person ;
 
 LEXICON IICONJw-SG !!= @CODE@  splits in 4 orders, gives only plural forms.
-+V+II: IICONJw-CONT-SG ;
++V+II: IICONJw-CONT-SG_person ;
 
-LEXICON IICONJw-PL !!= @CODE@ splits in 4 orders, for verbs with final -n
-+V+II: IICONJw-CONT-PL ;
+LEXICON IICONJw-PL_person !!= @CODE@ splits in 4 orders, for verbs with final -n
++V+II: IICONJw-CONT-PL_person ;
 
+
+!! Person Markings for IICONJ
+
+LEXICON IICONJ-CONT_person
+@U.person.NULL@ IICONJ-CONT_wici ;
+
+LEXICON IICONJ-CONT-SG_person
+@U.person.NULL@ IICONJ-CONT-SG_wici ;
+
+LEXICON IICONJ-CONT-PL_person
+@U.person.NULL@ IICONJ-CONT-PL_wici ;
+
+
+!! Person Marking for IICONJw
+
+LEXICON IICONJw-CONT_person
+@U.person.NULL@ IICONJw-CONT_wici ;
+
+LEXICON IICONJw-CONT-SG_person
+@U.person.NULL@ IICONJw-CONT-SG_wici ;
+
+LEXICON IICONJw-CONT-PL_person
+@U.person.NULL@ IICONJw-CONT-PL_wici ;
+
+
+!! Wici Chambres
 
 LEXICON IICONJ-CONT_wici
 @U.wici.NULL@ IICONJ-CONT ;
