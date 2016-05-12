@@ -879,8 +879,8 @@ LEXICON II_CNJ
 LEXICON II_IND_Fut
 < "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS_Fut ;!
 < "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS_Fut ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS_Fut ; !Future definite 
-< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS_Fut ; !Future intentional
+!< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS_Fut ; !Future definite 
+!< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS_Fut ; !Future intentional
 
 
 
@@ -900,8 +900,8 @@ LEXICON II_CNJ-SG
 LEXICON II_IND_Fut-SG
 < "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS_Fut-SG ;!
 < "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS_Fut-SG ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS_Fut-SG ; !Future definite 
-< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS_Fut-SG ; !Future intentional
+!< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS_Fut-SG ; !Future definite 
+!< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS_Fut-SG ; !Future intentional
 
 
 LEXICON II_IND-PL
@@ -919,8 +919,8 @@ LEXICON II_CNJ-PL
 LEXICON II_IND_Fut-PL
 < "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS_Fut-PL ;!
 < "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS_Fut-PL ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS_Fut-PL ; !Future definite 
-< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS_Fut-PL ; !Future intentional
+!< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS_Fut-PL ; !Future definite 
+!< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS_Fut-PL ; !Future intentional
 
 
 
@@ -956,8 +956,8 @@ LEXICON II_CNJw
 LEXICON II_INDw_Fut
 < "@U.tense.Prs@"    "+Prs":0          > II_INDw_PRS_Fut ;!
 < "@U.tense.Prt@"    "+Prt":0          > II_INDw_PRS_Fut ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_INDw_PRS_Fut ; !Future definite 
-< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_INDw_PRS_Fut ; !Future intentional
+!< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_INDw_PRS_Fut ; !Future definite 
+!< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_INDw_PRS_Fut ; !Future intentional
 
 
 
@@ -977,8 +977,8 @@ LEXICON II_CNJw-SG
 LEXICON II_INDw_Fut-SG
 < "@U.tense.Prs@"    "+Prs":0          > II_INDw_PRS_Fut-SG ;!
 < "@U.tense.Prt@"    "+Prt":0          > II_INDw_PRS_Fut-SG ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_INDw_PRS_Fut-SG ; !Future definite 
-< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_INDw_PRS_Fut-SG ; !Future intentional
+!< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_INDw_PRS_Fut-SG ; !Future definite 
+!< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_INDw_PRS_Fut-SG ; !Future intentional
 
 
 LEXICON II_INDw-PL
@@ -996,8 +996,8 @@ LEXICON II_CNJw-PL
 LEXICON II_INDw_Fut-PL
 < "@U.tense.Prs@"    "+Prs":0          > II_INDw_PRS_Fut-PL ;!
 < "@U.tense.Prt@"    "+Prt":0          > II_INDw_PRS_Fut-PL ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_INDw_PRS_Fut-PL ; !Future definite 
-< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_INDw_PRS_Fut-PL ; !Future intentional
+!< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_INDw_PRS_Fut-PL ; !Future definite 
+!< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_INDw_PRS_Fut-PL ; !Future intentional
 
 !! !!! Suffixation begins for II IND classes
 
