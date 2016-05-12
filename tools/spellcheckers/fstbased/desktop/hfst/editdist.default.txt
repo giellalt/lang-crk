@@ -1,13 +1,16 @@
 ## Inclusions: this is the real alphabet definition:
 a
 â
+b
 c
+d
 e
 ê
 g
 h
 i
 î
+j
 k
 m
 n
@@ -16,7 +19,6 @@ o
 p
 s
 t
-v
 w
 y
 -
@@ -25,11 +27,17 @@ y
 @@
 
 ## Transition pair specifications + weight:
-a	â	0.4
+a	â	3
 e	ê	0
-i	î	0.4
-o	ô	0.4
+i	î	3
+o	ô	3
+b	p	1
+g	k	1
+d	t	1
+j	c	1
+g	c	9
 
 ## Swaps:
 ## Change dh into hd with the weight 0.5:
 ##d,h	h,d	0.5
+c,h	h,c	8
