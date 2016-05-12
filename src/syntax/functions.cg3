@@ -219,7 +219,7 @@ LIST 3 = 3Sg 3Pl ;
 LIST ABSN = (".*win"r) (".*wina"r) ;
 LIST TEMPORALN = "kîsikâw" "askîwin" ;
 
- 
+LIST SYNTAG = @+FAUXV @+FMAINV @-FAUXV @-FMAINV @<ACT @<ADVL @<GOAL @<INS @<OBJ @<OPRED @<SPRED @<SUBJ @>N @>Num @>P @>Pron @ACT @ACT> @ADVL @ADVL> @APP @APP-ADVL< @APP-N< @APP-Num< @APP-Pron< @APP>Pron @CNP @CVP @FS-VFIN< @GOAL @GOAL> @HNOUN @INS @INS> @INTERJ @N< @Num< @OBJ @OBJ> @OPRED @OPRED> @P< @PCLE @Pron< @SPRED @SPRED> @SUBJ @SUBJ> @VOC ;
 
 # Initials
 # --------
@@ -332,30 +332,14 @@ MAP:OBL @OBL> TARGET N + IN IF (*1 TA BARRIER N OR CLB) ;
 
 
 
-
-
-# MAP @FS-VFIN< DEPVERB (*-1 @+FMAINV OR (?)) ;
-# MAP @OBJ> N IF (0 Sg + Obv)(*1 TA + 3SgO);
-# MAP @<OBJ N IF (0 Sg + Obv)(*-1 TA + 3SgO);
-# 
-# MAP @SUBJ> N IF (0 AN + Sg)(*1 TA + 3Sg);
-# MAP @<SUBJ N IF (0 AN + Sg)(*-1 TA + 3Sg);
-# 
-# MAP @SUBJ> N IF (0 AN + Sg)(*1 TA + 4Sg);
-# MAP @<SUBJ N IF (0 AN + Sg)(*-1 TA + 4Sg);
-# 
-# MAP @SUBJ> N IF (0 IN + Sg)(*1 II + 3Sg);
-# MAP @<SUBJ N IF (0 IN + Sg)(*-1 II + 3Sg);
-# 
-# MAP @SUBJ> N IF (0 IN + Pl)(*1 II + 3Pl);
-# MAP @<SUBJ N IF (0 IN + Pl)(*-1 II + 3Pl);
-
-
 MAP @? (?) ;
 
 MAP @?? (*) (NOT 0 CLB) ;
 
+REMOVE:CleanupSyntax @?? IF (0 SYNTAG);
+
 AFTER-SECTIONS 
+
 
 	#=====#
       END #
