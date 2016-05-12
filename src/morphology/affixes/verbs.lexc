@@ -843,25 +843,25 @@ LEXICON IICONJw-CONT-PL_wici
 !! !!! IICONJ-CONT splits into 4 orders
 
 LEXICON IICONJ-CONT !!= @CODE@ splits according to order
-< "+Ind":0           "+Prs" "@U.order.indep@" >  II_IND_PRS ; !
-< "+Cnj":0           "+Prs" "@U.order.cnj@" > II_CNJ_PRS ; !
-< "+Ind":0           "+Prt" "@U.order.indep@" >  II_IND_PRS ; !
-< "+Cnj":0           "+Prt" "@U.order.cnj@" > II_CNJ_PRS ; !
-< "+Fut":0 "+Cond":0        "@U.order.FutCon@" > II_IND_PRS_Fut-SG ;!
-< "+Fut":0 "+Cond":0        "@U.order.FutCon@" > II_IND_PRS_Fut-PL ;!
+< "+Ind":0           "+Prs":0 "@U.order.indep@" >  II_IND_PRS ; !
+< "+Cnj":0           "+Prs":0 "@U.order.cnj@" > II_CNJ_PRS ; !
+< "+Ind":0           "+Prt":0 "@U.order.indep@" >  II_IND_PRS ; !
+< "+Cnj":0           "+Prt":0 "@U.order.cnj@" > II_CNJ_PRS ; !
+< "+Fut":0 "+Cond":0          "@U.order.FutCon@" > II_IND_PRS_Fut-SG ;!
+< "+Fut":0 "+Cond":0         "@U.order.FutCon@" > II_IND_PRS_Fut-PL ;!
 
 LEXICON IICONJ-CONT-SG !!= @CODE@ splits according to order
-< "+Ind":0           "+Prs" "@U.order.indep@" >  II_IND_PRS-SG ; !
-< "+Cnj":0           "+Prs" "@U.order.cnj@" > II_CNJ_PRS-SG ; !
-< "+Ind":0           "+Prt" "@U.order.indep@" >  II_IND_PRS-SG ; !
-< "+Cnj":0           "+Prt" "@U.order.cnj@" > II_CNJ_PRS-SG ; !
-< "+Fut":0 "+Cond":0        "@U.order.FutCon@" > II_IND_PRS_Fut-SG ;!
+< "+Ind":0           "+Prs":0 "@U.order.indep@" >  II_IND_PRS-SG ; !
+< "+Cnj":0           "+Prs":0 "@U.order.cnj@" > II_CNJ_PRS-SG ; !
+< "+Ind":0           "+Prt":0 "@U.order.indep@" >  II_IND_PRS-SG ; !
+< "+Cnj":0           "+Prt":0 "@U.order.cnj@" > II_CNJ_PRS-SG ; !
+< "+Fut":0 "+Cond":0          "@U.order.FutCon@" > II_IND_PRS_Fut-SG ;!
 
 LEXICON IICONJ-CONT-PL !!= @CODE@ splits according to order
-< "+Ind":0           "+Prs" "@U.order.indep@" >  II_IND_PRS-PL ; !
-< "+Cnj":0           "+Prs" "@U.order.cnj@" > II_CNJ_PRS-PL ; !
-< "+Ind":0           "+Prt" "@U.order.indep@" >  II_IND_PRS-PL ; !
-< "+Cnj":0           "+Prt" "@U.order.cnj@" > II_CNJ_PRS-PL ; !
+< "+Ind":0           "+Prs":0  "@U.order.indep@" >  II_IND_PRS-PL ; !
+< "+Cnj":0           "+Prs":0  "@U.order.cnj@" > II_CNJ_PRS-PL ; !
+< "+Ind":0           "+Prt":0  "@U.order.indep@" >  II_IND_PRS-PL ; !
+< "+Cnj":0           "+Prt":0  "@U.order.cnj@" > II_CNJ_PRS-PL ; !
 < "+Fut":0 "+Cond":0        "@U.order.FutCon@" > II_IND_PRS_Fut-PL ;!
 
 LEXICON II_IND 
