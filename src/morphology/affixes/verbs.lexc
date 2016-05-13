@@ -831,6 +831,7 @@ LEXICON IICONJ-CONT-PL_wici
 @U.wici.NULL@ IICONJ-CONT-PL ;
 
 !! IICONJw wici chamber
+
 LEXICON IICONJw-CONT_wici
 @U.wici.NULL@ IICONJw-CONT ;
 
@@ -876,51 +877,55 @@ LEXICON II_CNJ
 < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_CNJ_PRS ; !Future definite 
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_CNJ_PRS ; !Future intentional
 
-LEXICON II_IND_Fut
-< "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS_Fut ;!
-< "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS_Fut ; !
+
+
+!! EDITED OUT AS TENSE IS DEALT WITH ABOVE.
+
+! LEXICON II_IND_Fut
+!< "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS_Fut ;!
+!< "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS_Fut ; !
 !< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS_Fut ; !Future definite 
 !< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS_Fut ; !Future intentional
 
 
 
 
-LEXICON II_IND-SG
-< "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS-SG ;!
-< "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS-SG ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS-SG ; !Future definite 
-< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS-SG ; !Future intentional
-
-LEXICON II_CNJ-SG 
-< "@U.tense.Prs@"    "+Prs":0          > II_CNJ_PRS-SG ;!
-< "@U.tense.Prt@"    "+Prt":0          > II_CNJ_PRS-SG ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_CNJ_PRS-SG ; !Future definite 
-< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_CNJ_PRS-SG ; !Future intentional
-
-LEXICON II_IND_Fut-SG
-< "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS_Fut-SG ;!
-< "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS_Fut-SG ; !
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS_Fut-SG ; !Future definite 
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS_Fut-SG ; !Future intentional
-
-
-LEXICON II_IND-PL
-< "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS-PL ;!
-< "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS-PL ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS-PL ; !Future definite 
-< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS-PL ; !Future intentional
-
-LEXICON II_CNJ-PL 
-< "@U.tense.Prs@"    "+Prs":0          > II_CNJ_PRS-PL ;!
-< "@U.tense.Prt@"    "+Prt":0          > II_CNJ_PRS-PL ; !
-< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_CNJ_PRS-PL ; !Future definite 
-< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_CNJ_PRS-PL ; !Future intentional
-
-LEXICON II_IND_Fut-PL
-< "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS_Fut-PL ;!
-< "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS_Fut-PL ; !
-!< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS_Fut-PL ; !Future definite 
-!< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS_Fut-PL ; !Future intentional
+! LEXICON II_IND-SG
+! < "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS-SG ;!
+! < "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS-SG ; !
+! < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS-SG ; !Future definite 
+! < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS-SG ; !Future intentional
+! 
+! LEXICON II_CNJ-SG 
+! < "@U.tense.Prs@"    "+Prs":0          > II_CNJ_PRS-SG ;!
+! < "@U.tense.Prt@"    "+Prt":0          > II_CNJ_PRS-SG ; !
+! < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_CNJ_PRS-SG ; !Future definite 
+! < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_CNJ_PRS-SG ; !Future intentional
+! 
+! LEXICON II_IND_Fut-SG
+! !< "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS_Fut-SG ;!
+! !< "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS_Fut-SG ; !
+! !< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS_Fut-SG ; !Future definite 
+! !< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS_Fut-SG ; !Future intentional
+! 
+! 
+! LEXICON II_IND-PL
+! < "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS-PL ;!
+! < "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS-PL ; !
+! < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS-PL ; !Future definite 
+! < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS-PL ; !Future intentional
+! 
+! LEXICON II_CNJ-PL 
+! < "@U.tense.Prs@"    "+Prs":0          > II_CNJ_PRS-PL ;!
+! < "@U.tense.Prt@"    "+Prt":0          > II_CNJ_PRS-PL ; !
+! < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_CNJ_PRS-PL ; !Future definite 
+! < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_CNJ_PRS-PL ; !Future intentional
+! 
+! LEXICON II_IND_Fut-PL
+! !< "@U.tense.Prs@"    "+Prs":0          > II_IND_PRS_Fut-PL ;!
+! !< "@U.tense.Prt@"    "+Prt":0          > II_IND_PRS_Fut-PL ; !
+! !< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_IND_PRS_Fut-PL ; !Future definite 
+! !< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_IND_PRS_Fut-PL ; !Future intentional
 
 
 
@@ -929,12 +934,12 @@ LEXICON II_IND_Fut-PL
 LEXICON IICONJw-CONT !!= @CODE@ w final. Splits according to order
 < "+Ind":0  "@U.order.indep@" >  II_INDw ; !
 < "+Cnj":0  "@U.order.cnj@" > II_CNJw ; !
-< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_INDw_Fut ;!
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_INDw_PRS_Fut ;!
 
 LEXICON IICONJw-CONT-SG !!= @CODE@ w final. Splits according to order
 < "+Ind":0  "@U.order.indep@" >  II_INDw-SG ; !
 < "+Cnj":0  "@U.order.cnj@" > II_CNJw-SG ; !
-< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_INDw_Fut-SG ;!
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > II_INDw_PRS_Fut-SG ;!
 
 LEXICON IICONJw-CONT-PL !!= @CODE@ w final. Splits according to order
 < "+Ind":0  "@U.order.indep@" >  II_INDw_PRS-PL ; !
@@ -953,9 +958,11 @@ LEXICON II_CNJw
 < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_CNJw_PRS ; !Future definite 
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_CNJw_PRS ; !Future intentional
 
-LEXICON II_INDw_Fut
-< "@U.tense.Prs@"    "+Prs":0          > II_INDw_PRS_Fut ;!
-< "@U.tense.Prt@"    "+Prt":0          > II_INDw_PRS_Fut ; !
+!! EDITED OUT AS TENSE IS DEALT WITH ABOVE.
+
+!LEXICON II_INDw_Fut
+!< "@U.tense.Prs@"    "+Prs":0          > II_INDw_PRS_Fut ;!
+!< "@U.tense.Prt@"    "+Prt":0          > II_INDw_PRS_Fut ; !
 !< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_INDw_PRS_Fut ; !Future definite 
 !< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_INDw_PRS_Fut ; !Future intentional
 
@@ -974,9 +981,11 @@ LEXICON II_CNJw-SG
 < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_CNJw_PRS-SG ; !Future definite 
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_CNJw_PRS-SG ; !Future intentional
 
-LEXICON II_INDw_Fut-SG
-< "@U.tense.Prs@"    "+Prs":0          > II_INDw_PRS_Fut-SG ;!
-< "@U.tense.Prt@"    "+Prt":0          > II_INDw_PRS_Fut-SG ; !
+!! EDITED OUT AS TENSE IS DEALT WITH ABOVE.
+
+!LEXICON II_INDw_Fut-SG
+!< "@U.tense.Prs@"    "+Prs":0          > II_INDw_PRS_Fut-SG ;!
+!< "@U.tense.Prt@"    "+Prt":0          > II_INDw_PRS_Fut-SG ; !
 !< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_INDw_PRS_Fut-SG ; !Future definite 
 !< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_INDw_PRS_Fut-SG ; !Future intentional
 
@@ -993,9 +1002,11 @@ LEXICON II_CNJw-PL
 < "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_CNJw_PRS-PL ; !Future definite 
 < "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_CNJw_PRS-PL ; !Future intentional
 
-LEXICON II_INDw_Fut-PL
-< "@U.tense.Prs@"    "+Prs":0          > II_INDw_PRS_Fut-PL ;!
-< "@U.tense.Prt@"    "+Prt":0          > II_INDw_PRS_Fut-PL ; !
+!! EDITED OUT AS TENSE IS DEALT WITH ABOVE.
+
+!LEXICON II_INDw_Fut-PL
+!< "@U.tense.Prs@"    "+Prs":0          > II_INDw_PRS_Fut-PL ;!
+!< "@U.tense.Prt@"    "+Prt":0          > II_INDw_PRS_Fut-PL ; !
 !< "@U.tense.FutDef@" "+Fut":0 "+Def":0 > II_INDw_PRS_Fut-PL ; !Future definite 
 !< "@U.tense.FutInt@" "+Fut":0 "+Int":0 > II_INDw_PRS_Fut-PL ; !Future intentional
 
