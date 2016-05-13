@@ -85,14 +85,14 @@ ANABSDECL ;
 +N+AN+Pl:%> ANSUFF_Pl_0POSS ;
 !+N+AN:%> ANSUFF_LOC ;
 +N+AN+Der/Dim:%>is%^DIM%> AN_DIM ;
-+N+AN+Der/Dim:%>is%^DIMis%> AN_DIM ;
++N+AN+Der/Dim+Use/NG:%>is%^DIMis%> AN_DIM ;
 
 LEXICON AN_DECL_PL !!= * @CODE@ for the animate declension, Dim: -isis and -is 
 ANABSDECL_PL ;
 +N+AN+Pl:%> ANSUFF_PL ;
 !+N+AN:%> ANSUFF_LOC ;
 +N+AN+Der/Dim:%>is%^DIM%> AN_DIM ;
-+N+AN+Der/Dim:%>is%^DIMis%> AN_DIM ;
++N+AN+Der/Dim+Use/NG:%>is%^DIMis%> AN_DIM ;
 
 LEXICON AN_DECLis !!= * @CODE@ for the animate declension, Dim: -is diminutives
 ANABSDECL ;
@@ -104,29 +104,25 @@ ANABSDECL ;
 ! The following does not seem to work, even though it is a carbon copy of AN_DECLis and IN_DECLisis
 
 LEXICON AN_DECLisis !!= * @CODE@ for the animate declension, Dim: -isis diminutives
- 
-
-! +N+AN+Der/Dim:%>is%^DIMis%> ANimDECLisis ;
-
-ANimDECLisis ;
+ ANimDECLisis ;
 
 LEXICON AN_DECL !!= * @CODE@ for the animate declension, poss.-im-, Dim: -is
                                      ANABSDECL  ;
              +N+AN+Sg:%>im          ANSUFF_SG  ;
              +N+AN+Pl:%>im          ANSUFF_PL  ;
         +N+AN+Der/Dim:%>is%^DIM%>    ANABSDECL  ; !
-        +N+AN+Der/Dim:%>is%^DIMis%>    ANABSDECL  ; !ihkosis
+ +N+AN+Der/Dim+Use/NG:%>is%^DIMis%>    ANABSDECL  ; !ihkosis
 +N+AN+Der/Dim+N+AN+Sg:%>im%^DIMis%> ANSUFF_SG  ; !
 +N+AN+Der/Dim+N+AN+Pl:%>im%^DIMis%> ANSUFF_PL  ; !
-+N+AN+Der/Dim+N+AN+Sg:%>im%^DIMisis%> ANSUFF_SG  ; !
-+N+AN+Der/Dim+N+AN+Pl:%>im%^DIMisis%> ANSUFF_PL  ; !
++N+AN+Der/Dim+N+AN+Sg+Use/NG:%>im%^DIMisis%> ANSUFF_SG  ; !
++N+AN+Der/Dim+N+AN+Pl+Use/NG:%>im%^DIMisis%> ANSUFF_PL  ; !
 LEXICON ANimDECLisis !!= * @CODE@ for the animate declension, poss.-im-, Dim: -isis
                                      ANABSDECL  ;
              +N+AN+Sg:%>im          ANSUFF_SG  ;
              +N+AN+Pl:%>im          ANSUFF_PL  ;
         +N+AN+Der/Dim:%>is%^DIMis%>    ANABSDECL  ; !ihkosis
-+N+AN+Der/Dim+N+AN+Sg:%>im%^DIMisis%> ANSUFF_SG  ; !
-+N+AN+Der/Dim+N+AN+Pl:%>im%^DIMisis%> ANSUFF_PL  ; !
++N+AN+Der/Dim+N+AN+Sg+Use/NG:%>im%^DIMisis%> ANSUFF_SG  ; !
++N+AN+Der/Dim+N+AN+Pl+Use/NG:%>im%^DIMisis%> ANSUFF_PL  ; !
 
 LEXICON ANimDECLis !!= * @CODE@ for the animate declension, poss.-im-, Dim: -is
                                      ANABSDECL  ;
@@ -166,7 +162,7 @@ LEXICON ANimDECLnaahk !!= * @CODE@ for the animate declension, poss.-im-, Dim: -
              +N+AN+Sg:%>im          ANSUFF_SG  ;
              +N+AN+Pl:%>im          ANSUFF_PL  ;
         +N+AN+Der/Dim:%>is%^DIM%>    ANABSDECL  ; !ihkosis
-        +N+AN+Der/Dim:%>is%^DIMis%>    ANABSDECL  ; !
+ +N+AN+Der/Dim+Use/NG:%>is%^DIMis%>    ANABSDECL  ; !
 +N+AN+Der/Dim+N+AN+Sg:%>im%^DIMis%> ANSUFF_SG  ; !
 +N+AN+Der/Dim+N+AN+Pl:%>im%^DIMis%> ANSUFF_PL  ; !
 
@@ -292,14 +288,14 @@ INABSDECL ;
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
-+N+IN+Der/Dim:%>is%^DIMis%> IN_DIM ;
++N+IN+Der/Dim+Use/NG:%>is%^DIMis%> IN_DIM ;
 +N+IN+Der/Dim:%>is%^DIM%> IN_DIM ;
 
 LEXICON IN_DECL_PL !!= * @CODE@ for the inanimate declension, plural Dim: -is- and -isis-
 INABSDECL_PL ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
-+N+IN+Der/Dim:%>is%^DIMis%> IN_DIM ;
++N+IN+Der/Dim+Use/NG:%>is%^DIMis%> IN_DIM ;
 +N+IN+Der/Dim:%>is%^DIM%> IN_DIM ;
 
 
