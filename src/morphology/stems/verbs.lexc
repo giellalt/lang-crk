@@ -8880,7 +8880,7 @@ kwêskinâkohtâw:kwêskinâkohtâ TICONJâ "s/he changes s.t.'s appearance" ; !
 kwêskwêskastâw:kwêskwêskastâ TICONJâ "s/he places s.t. turning a number of times" ; ! VTI-2 Independent, 3s-0’, reduplicated
 kwêtawi-astâw:kwêtawi-astâ TICONJâ "s/he places s.t. doubtfully" ; ! VTI-2 Independent, 3s-0’
 kwîtâpacihtâw:kwîtâpacihtâ TICONJâ "s/he is short of s.t. to use; s/he lacks tools" ; ! VTI-2 Independent, 3s-0’
-mâcihtâniwan:mâcihtâ TICONJâ "it is started (e.g. construction)" ; ! VTI-2 Independent, X-0, unspecified actor
+mâcihtâw+V+TI+Ind+Prs+X:mâcihtâniwan # "it is started (e.g. construction)" ; ! VTI-2 Independent, X-0, unspecified actor
 mâcihtâw:mâcihtâ TICONJâ "s/he starts, s/he starts s.t., s/he starts to do s.t., s/he starts making s.t.; s/he begins to operate s.t." ; ! VTI-2 Independent, 3s-0’
 mâcipayihtâw:mâcipayihtâ TICONJâ "s/he starts s.t. up" ; ! VTI-2 Independent, 3s-0’
 mahkastâw:mahkastâ TICONJâ "s/he places s.t. in a large pile" ; ! VTI-2 Independent, 3s-0’
@@ -9549,7 +9549,7 @@ kwayaskoham:kwayaskoh TICONJ "s/he pushes s.t. in place (with a pole)" ; ! VTI-1
 kwayaskosam:kwayaskos TICONJ "s/he cuts s.t. straight" ; ! VTI-1 Independent, 3s-0’
 kwayaskowâpiskinam:kwayaskowâpiskin TICONJ "s/he straightens s.t. (metal; e.g. wire) by hand" ; ! VTI-1 Independent, 3s-0’
 kwayâtinam:kwayâtin TICONJ "s/he holds s.t. ready in hand" ; ! VTI-1 Independent, 3s-0’
-kwayâtinêw:kwayâtin TICONJ "s/he holds s.o. ready in hand" ; ! VTI-1 Independent, 3s-0’
+kwayâtinêw:kwayâtin TACONJ_1 "s/he holds s.o. ready in hand" ; ! VTA-1 Independent, 3s-3’
 kwêskaham:kwêskah TICONJ "s/he changes s.t.'s position; s/he turns s.t. with a fork (as in frying meat); s/he turns s.t. (using an instrument)" ; ! VTI-1 Independent, 3s-0’
 kwêskakihtam:kwêskakiht TICONJ "s/he changes the price of s.t." ; ! VTI-1 Independent, 3s-0’
 kwêskêyihtam:kwêskêyiht TICONJ "s/he changes his/her mind (about s.t.)" ; ! VTI-1 Independent, 3s-0’
@@ -9602,7 +9602,7 @@ mâmaskâcitôtam:mâmaskâcitôt TICONJ "s/he works in strange ways" ; ! VTI-1 
 mâmaskâsâpahtam:mâmaskâsâpaht TICONJ "s/he looks on s.t. with wonder" ; ! VTI-1 Independent, 3s-0’
 mâmaskâtam:mâmaskât TICONJ "s/he is surprised at s.t., s/he finds s.t. strange, s/he finds s.t. incomprehensible, s/he wonders at s.t." ; ! VTI-1 Independent, 3s-0’
 mâmaskâtêyihtam:mâmaskâtêyiht TICONJ "s/he thinks s.t. strange; s/he is amazed" ; ! VTI-1 Independent, 3s-0’
-mâmaskâtêyimêw:mâmaskâtêyim TICONJ "s/he thinks s.o. strange; s/he is amazed at s.o." ; ! VTI-1 Independent, 3s-0’
+mâmaskâtêyimêw:mâmaskâtêyim TACONJ_1 "s/he thinks s.o. strange; s/he is amazed at s.o." ; ! VTI-1 Independent, 3s-0’
 mâmawinam:mâmawin TICONJ "s/he holds s.t. together" ; ! VTI-1 Independent, 3s-0’
 mâmawôkihtam:mâmawôkiht TICONJ "s/he counts s.t. all together" ; ! VTI-1 Independent, 3s-0’
 mamêhcikâpahtam:mamêhcikâpaht TICONJ "s/he stares in awe at s.t." ; ! VTI-1 Independent, 3s-0’, reduplicated
@@ -9627,7 +9627,7 @@ mâtaham:mâtah TICONJ "s/he works s.t. (e.g. hide); s/he scrapes the fur off s.
 mâtahtam:mâtaht TICONJ "s/he starts to eat s.t." ; ! VTI-1 Independent, 3s-0’
 mâtakihtam:mâtakiht TICONJ "s/he starts counting s.t." ; ! VTI-1 Independent, 3s-0’
 matâwisipitam:matâwisipit TICONJ "s/he pulls s.t. out into an open area or clearing" ; ! VTI-1 Independent, 3s-0’
-matâwisipitêw:matâwisipit TICONJ "s/he pulls s.o. out into an open area or clearing" ; ! VTI-1 Independent, 3s-0’
+matâwisipitêw:matâwisipit3 TACONJ_4 "s/he pulls s.o. out into an open area or clearing" ; ! VTA-4 Independent, 3s-3’
 mâtisam:mâtis TICONJ "s/he cuts s.t. open, s/he starts to cut s.t." ; ! VTI-1 Independent, 3s-0’
 mâtisâwâtam:mâtisâwât TICONJ "s/he starts to cut s.t." ; ! VTI-1 Independent, 3s-0’
 matwêham:matwêh TICONJ "s/he hammers s.t. causing a sound audible at a distance" ; ! VTI-1 Independent, 3s-0’
@@ -10067,7 +10067,7 @@ pêtwêwêtâhtam:pêtwêwêtâht TICONJ "s/he comes breathing loudly" ; ! VTI-1
 pêtwêwitam:pêtwêwit TICONJ "s/he comes speaking noisily" ; ! VTI-1 Independent, 3s-0’
 pêyakohkam:pêyakohk TICONJ "s/he tends s.t. alone" ; ! VTI-1 Independent, 3s-0’
 pêyakonêham:pêyakonêh TICONJ "s/he brings s.t. as the only thing" ; ! VTI-1 Independent, 3s-0’
-pêyitisinaw:pêyitisina TICONJ "s/he passes s.t." ; ! VTI-1 Independent, 3s-0’ ! From NS 152
+pê-itisinam:pê-itisin TICONJ "s/he passes s.t." ; ! VTI-1 Independent, 3s-0’ ! From NS 152
 pîcicipitam:pîcicipit TICONJ "s/he pulls s.t. forth" ; ! VTI-1 Independent, 3s-0’
 pîhciwêpinam:pîhciwêpin TICONJ "s/he throws s.t. into (something)" ; ! VTI-1 Independent, 3s-0’
 pihkasam:pihkas TICONJ "s/he toasts s.t." ; ! VTI-1 Independent, 3s-0’
