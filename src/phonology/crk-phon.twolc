@@ -37,17 +37,18 @@ Alphabet
   
  ;
 
+!! !!!Sets
 Sets
 
- Vow = a e i o u y â ê î ô
-       A E I O U Y Â Ê Î Ô ;
+ Vow = a e i o u y â ê î ô         !!= * @CODE@  
+       A E I O U Y Â Ê Î Ô ;       !!=   @CODE@  
 
- ShortVow = a ê i o A E I O ;
+ ShortVow = a ê i o A E I O ;     !!= * @CODE@  
  
- LongVow = â ê î ô Â Ê Î Ô ;
+ LongVow = â ê î ô Â Ê Î Ô ;    !!= * @CODE@  
  
- Vow2 = a e i o u â ê î ô
-        A E I O U Â Ê Î Ô ;
+ Vow2 = a e i o u â ê î ô     !!= * @CODE@  
+        A E I O U Â Ê Î Ô ;   !!= @CODE@  
  
  Cns = b c d f g h j k l m n p q r s t v w x z  ;
   Lts = a e i o u â ê î ô b c d f g h j k l m n p q r s t v w x y z %- %< %> %^LOC %^EA %^POS ;
