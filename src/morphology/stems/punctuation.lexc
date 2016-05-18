@@ -56,5 +56,5 @@ LEXICON Punctuation
 %{+PUNCT+LEFT:%{    # ;
 %}+PUNCT+RIGHT:%}   # ;
 %<+PUNCT+LEFT:%<    # ;
-%>+PUNCT+LEFT:%>    # ;
+%>+PUNCT+RIGHT:%>   # ;
 
