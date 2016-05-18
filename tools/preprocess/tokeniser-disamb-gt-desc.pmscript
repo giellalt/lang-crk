@@ -45,8 +45,8 @@ Define morphoword       morphology                   LC([blank | #]) RC([blank |
 !! 1) unknown word-like forms, and
 !! 2) unmatched strings
 !! We want to give 1) a match, but let 2) be treated specially by hfst-tokenise -a
-Define alphabet "a-z" | {â}|{ê}|{î}|{ô}|{ā}|{ē}|{ī}|{ō}|{š}|{ð}|{ń}|{ý}|{-}
-              | "A-Z" | {Â}|{Ê}|{Î}|{Ô}|{Ā}|{Ē}|{Ī}|{Ō}|{Š}|{Ð}|{Ń}|{Ý}|{~}|{’} ;
+Define alphabet "a-z" | {â}|{ê}|{î}|{ô}|{ā}|{ē}|{ī}|{ō}|{š}|{ð}|{ń}|{ý}|{â}|{ê}|{î}|{ô}|{ā}|{ē}|{ī}|{ō}|{š}|{ń}|{ý}|{-}
+              | "A-Z" | {Â}|{Ê}|{Î}|{Ô}|{Ā}|{Ē}|{Ī}|{Ō}|{Š}|{Ð}|{Ń}|{Ý}|{Â}|{Ê}|{Î}|{Ô}|{Ā}|{Ē}|{Ī}|{Ō}|{Š}|{Ń}|{Ý}|{~}|{’} ;
 Define alphaword alphabet+;
 !! TODO: Could use something like this, but built-in's don't include šžđčŋ:
 ! Define MixCase(X) [OptCap(X) | UpCase(X)];
