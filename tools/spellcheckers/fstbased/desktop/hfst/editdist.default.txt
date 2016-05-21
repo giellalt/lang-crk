@@ -27,7 +27,7 @@ y
 @@
 
 ## Transition pair specifications + weight:
-a	â	3
+a	â	2
 e	ê	0
 i	î	3
 o	ô	3
@@ -35,11 +35,16 @@ g	k	8
 d	t	8
 j	c	8
 g	c	9
-â	a	8
-î	i	8
-ô	o	8
+â	a	4
+î	i	4
+ô	o	4
+w	y	0
+i	ô	4
+a	ê	4
+
 
 ## Swaps:
 ## Change dh into hd with the weight 0.5:
 ##d,h	h,d	0.5
 c,h	h,c	8
+k,h	h,k	5
