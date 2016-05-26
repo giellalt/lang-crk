@@ -1,0 +1,23 @@
+name: "Transitive animate verbs basic paradigm"
+paradigm: 'verbs-ta.paradigm'
+layout:
+  type: "basic"
+--
+|            | "Independent"          | "Conjunct"             |
+| "1s -> 3s" | Ind+Prs+1Sg+3SgO       | Cnj+Prs+1Sg+3SgO       |
+| "2s -> 3s" | Ind+Prs+2Sg+3SgO       | Cnj+Prs+2Sg+3SgO       |
+| "1p -> 3s" | Ind+Prs+1Pl+3SgO       | Cnj+Prs+1Pl+3SgO       |
+| "21 -> 3s" | Ind+Prs+12Pl+3SgO      | Cnj+Prs+12Pl+3SgO      |
+| "2p -> 3s" | Ind+Prs+2Pl+3SgO       | Cnj+Prs+2Pl+3SgO       |
+| "3s -> 4"  | Ind+Prs+3Sg+4Sg/PlO    | Cnj+Prs+3Sg+4Sg/PlO    |
+| "3p -> 4"  | Ind+Prs+3Pl+4Sg/PlO    | Cnj+Prs+3Pl+4Sg/PlO    |
+| "4 -> 5"   | Ind+Prs+4Sg/Pl+5Sg/PlO | Cnj+Prs+4Sg/Pl+5Sg/PlO |
+
+
+
+
+
+
+
+
+
