@@ -32,7 +32,9 @@
 !! Pmatch documentation:
 !! https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
 
-Define morphology @bin"analyser-disamb-gt-desc.hfst" ;
+set need-separators off
+
+Define morphology @bin"analyser_relabelled-disamb-gt-desc.hfst" ;
 
 Define incondform      Punct | {…} | {“} | {”} ;
 
