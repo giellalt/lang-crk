@@ -16,7 +16,6 @@ JSP_PAGES=root-morphology.jspwiki    \
 		  nouns-affixes.jspwiki      \
 		  numerals-stems.jspwiki 	\
 		  particles-stems.jspwiki 	\
-		  prefixes-stems.jspwiki 	\
 		  pronouns-stems.jspwiki    \
           punctuation-stems.jspwiki  \
 		  verbs-affixes.jspwiki
