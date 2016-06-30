@@ -815,7 +815,6 @@ LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
 
 
- * __LEXICON NUM-PREFIXES   __
 
 
 
@@ -865,11 +864,6 @@ The file
 
 
 
-
-
-Prefixes
---------
-Prefixes in UNDEFINED language are bound to beginning of other words.
 
 
 !!Plains Cree pronouns
@@ -1139,138 +1133,128 @@ Suffixation begins for AI IND classes
 
 Intransitive inanimate (II)
 
- LEXICON IICONJ  splits in 4 orders
+-n lexica
+
+ LEXICON IICONJ   splits in 4 orders, gives only plural forms.
+
+
+
+
+ LEXICON IICONJ_ORDER  w final. Splits according to order
+
+
+
+
+
 
  LEXICON IICONJ-SG   splits in 4 orders, gives only plural forms.
 
- LEXICON IICONJ-PL  splits in 4 orders, for verbs with final -n
 
 
 
-II Conjugation for stems ending in -w
+ LEXICON IICONJ_SG_ORDER  w final. Splits according to order
 
- LEXICON IICONJw  splits in 4 orders
+
+
+
+
+
+
+ LEXICON IICONJ-PL   splits in 4 orders, gives only plural forms.
+
+
+
+
+ LEXICON IICONJ_PL_ORDER  w final. Splits according to order
+
+
+
+
+
+
+
+
+ LEXICON II_IND_SGPL    w final 
+
+ LEXICON II_IND_SG_SUF    w final singular
+ LEXICON II_IND_PL_SUF    w final plural
+
+
+ LEXICON II_CNJ_SGPL    w final 
+
+ LEXICON II_CNJ_SG_SUF    w final singular
+
+ LEXICON II_CNJ_PL_SUF    w final plural
+
+
+ LEXICON II_FUT_CON_SGPL    w final 
+
+ LEXICON II_FUT_CON_SG_SUF    w final singular
+
+ LEXICON II_FUT_CON_PL_SUF    w final plural
+
+
+
+
+
+-w lexica
+
+ LEXICON IICONJw   splits in 4 orders, gives only plural forms.
+
+
+
+
+ LEXICON IICONJw_ORDER  w final. Splits according to order
+
+
+
+
+
 
  LEXICON IICONJw-SG   splits in 4 orders, gives only plural forms.
 
- LEXICON IICONJw-PL_person  splits in 4 orders, for verbs with final -n
 
 
-Person Markings for IICONJ
 
+ LEXICON IICONJw_SG_ORDER  w final. Splits according to order
 
 
 
 
-Person Marking for IICONJw
 
 
 
+ LEXICON IICONJw-PL   splits in 4 orders, gives only plural forms.
 
 
-Wici Chambres
 
 
+ LEXICON IICONJw_PL_ORDER  w final. Splits according to order
 
 
-IICONJw wici chamber
 
 
 
 
-IICONJ-CONT splits into 4 orders
 
- LEXICON IICONJ-CONT  splits according to order
+ LEXICON II_INDw_SGPL    w final 
 
- LEXICON IICONJ-CONT-SG  splits according to order
+ LEXICON II_INDw_SG_SUF    w final singular
+ LEXICON II_INDw_PL_SUF    w final plural
 
- LEXICON IICONJ-CONT-PL  splits according to order
 
+ LEXICON II_CNJw_SGPL    w final 
 
+ LEXICON II_CNJw_SG_SUF    w final singular
 
+ LEXICON II_CNJw_PL_SUF    w final plural
 
 
-EDITED OUT AS TENSE IS DEALT WITH ABOVE.
+ LEXICON II_FUT_CONw_SGPL    w final 
 
+ LEXICON II_FUT_CONw_SG_SUF    w final singular
 
-
-
-
-
-
-
-IICONJw-CONT splits into 4 orders
-
- LEXICON IICONJw-CONT  w final. Splits according to order
-
- LEXICON IICONJw-CONT-SG  w final. Splits according to order
-
- LEXICON IICONJw-CONT-PL  w final. Splits according to order
-
-
-
-EDITED OUT AS TENSE IS DEALT WITH ABOVE.
-
-
-
-
-
-
-
-EDITED OUT AS TENSE IS DEALT WITH ABOVE.
-
-
-
-
-
-EDITED OUT AS TENSE IS DEALT WITH ABOVE.
-
-
-Suffixation begins for II IND classes
-
- LEXICON II_INDw_PRS    w final 
-
- LEXICON II_INDw_PRS-SG    w final 
-
- LEXICON II_INDw_PRS-PL    w final 
-
-
- LEXICON II_INDw_PRS_Fut    w final 
-
- LEXICON II_INDw_PRS_Fut-SG    w final 
-
- LEXICON II_INDw_PRS_Fut-PL    w final 
-
-
- LEXICON II_IND_PRS    -n final 
-
- LEXICON II_IND_PRS-SG    -n final 
-
- LEXICON II_IND_PRS-PL    -n final 
-
-
-
- LEXICON II_IND_PRS_Fut    -n final 
-
- LEXICON II_IND_PRS_Fut-SG    -n final 
-
- LEXICON II_IND_PRS_Fut-PL    -n final 
-
-
-Suffixation begins for II CNJ classes
-
- LEXICON II_CNJ_PRS    -n final 
-
- LEXICON II_CNJ_PRS-SG    -n final 
-
- LEXICON II_CNJ_PRS-PL    -n final 
-
- LEXICON II_CNJw_PRS    w final 
-
- LEXICON II_CNJw_PRS-SG    w final 
-
- LEXICON II_CNJw_PRS-PL    w final 
-
+ LEXICON II_FUT_CONw_PL_SUF    w final plural
 
 
 
