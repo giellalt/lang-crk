@@ -1,4 +1,4 @@
-Config:
+Condfig:
   hfst:
     Gen: ../../../src/generator-gt-norm.hfst
     Morph: ../../../src/analyser-gt-norm.hfst
@@ -9,102 +9,38 @@ Config:
 
 Tests:
   
-  Verb - pimisin - lie down : # -n final VAI verb; Wolvengrey p. 396; Fut+Def from Okimāsis p. 36  
+  Verb - pimisin - help : # Wolvengrey VAIn:
 
      pimisin+V+AI+Ind+Prs+1Sg: nipimisinin
      pimisin+V+AI+Ind+Prs+2Sg: kipimisinin
-     pimisin+V+AI+Ind+Prs+3Sg: pimisin
-     pimisin+V+AI+Ind+Prs+4Sg/Pl: pimisiniyiwa
      pimisin+V+AI+Ind+Prs+1Pl: nipimisininân
      pimisin+V+AI+Ind+Prs+12Pl: [kipimisininaw, kipimisininânaw]
      pimisin+V+AI+Ind+Prs+2Pl: kipimisininâwâw
-     pimisin+V+AI+Ind+Prs+3Pl: pimisinak
-
-     pimisin+V+AI+Ind+Prt+1Sg: [nikî-pimisinin, nikîpimisinin]
-     pimisin+V+AI+Ind+Prt+2Sg: [kikî-pimisinin, kikîpimisinin]
-     pimisin+V+AI+Ind+Prt+3Sg: [kî-pimisin, kîpimisin]
-     pimisin+V+AI+Ind+Prt+4Sg/Pl: [kî-pimisiniyiwa, kîpimisiniyiwa]
-     pimisin+V+AI+Ind+Prt+1Pl: [nikî-pimisininân, nikîpimisininân]
-     pimisin+V+AI+Ind+Prt+12Pl: [kikî-pimisininaw, kikîpimisininaw, kikî-pimisininânaw, kikîpimisininânaw]
-     pimisin+V+AI+Ind+Prt+2Pl: [kikî-pimisininâwâw, kikîpimisininâwâw]
-     pimisin+V+AI+Ind+Prt+3Pl: [kî-pimisinak, kîpimisinak]
-     
-     pimisin+V+AI+Ind+Fut+Def+1Sg: [nika-pimisinin, nikapimisinin]
-     pimisin+V+AI+Ind+Fut+Def+2Sg: [kika-pimisinin, kikapimisinin]
-     pimisin+V+AI+Ind+Fut+Def+3Sg: [ka-pimisin, kapimisin]
-     pimisin+V+AI+Ind+Fut+Def+4Sg/Pl: [ka-pimisiniyiwa, kapimisiniyiwa]
-     pimisin+V+AI+Ind+Fut+Def+1Pl: [nika-pimisininân, nikapimisininân]
-     pimisin+V+AI+Ind+Fut+Def+12Pl: [kika-pimisininaw, kikapimisininaw, kikapimisininânaw, kika-pimisininânaw]
-     pimisin+V+AI+Ind+Fut+Def+2Pl: [kika-pimisininâwâw, kikapimisininâwâw]
-     pimisin+V+AI+Ind+Fut+Def+3Pl: [ka-pimisinak, kapimisinak]
-     
-     pimisin+V+AI+Ind+Fut+Int+1Sg: [niwî-pimisinin, niwîpimisinin]
-     pimisin+V+AI+Ind+Fut+Int+2Sg: [kiwî-pimisinin, kiwîpimisinin]
-     pimisin+V+AI+Ind+Fut+Int+3Sg: [wî-pimisin, wîpimisin]
-     pimisin+V+AI+Ind+Fut+Int+4Sg/Pl: [wî-pimisiniyiwa, wîpimisiniyiwa]
-     pimisin+V+AI+Ind+Fut+Int+1Pl: [niwî-pimisininân, niwîpimisininân]
-     pimisin+V+AI+Ind+Fut+Int+12Pl: [kiwî-pimisininaw, kiwîpimisininaw, kiwî-pimisininânaw, kiwîpimisininânaw]
-     pimisin+V+AI+Ind+Fut+Int+2Pl: [kiwî-pimisininâwâw, kiwîpimisininâwâw]
-     pimisin+V+AI+Ind+Fut+Int+3Pl: [wî-pimisinak, wîpimisinak]
+     pimisin+V+AI+Ind+Prs+3Sg: [pimisin, pimisiniw]
+     pimisin+V+AI+Ind+Prs+3Pl: [pimisinwak, pimisiniwak]
+     pimisin+V+AI+Ind+Prs+4Sg/Pl: pimisiniyiwa
      
      PV/e+pimisin+V+AI+Cnj+Prs+1Sg: [ê-pimisiniyân, êpimisiniyân]
      PV/e+pimisin+V+AI+Cnj+Prs+2Sg: [ê-pimisiniyan, êpimisiniyan]
-     PV/e+pimisin+V+AI+Cnj+Prs+3Sg: [ê-pimisihk, êpimisihk]
-     PV/e+pimisin+V+AI+Cnj+Prs+4Sg/Pl: [ê-pimisiniyit, êpimisiniyit]
      PV/e+pimisin+V+AI+Cnj+Prs+1Pl: [ê-pimisiniyâhk, êpimisiniyâhk]
      PV/e+pimisin+V+AI+Cnj+Prs+12Pl: [ê-pimisiniyahk, êpimisiniyahk]
      PV/e+pimisin+V+AI+Cnj+Prs+2Pl: [ê-pimisiniyêk, êpimisiniyêk]
-     PV/e+pimisin+V+AI+Cnj+Prs+3Pl: [ê-pimisihkik, êpimisihkik]
-     
-     pimisin+V+AI+Cnj+Prs+1Sg: [pimisiniyân, pimisiniyân]
-     pimisin+V+AI+Cnj+Prs+2Sg: [pimisiniyan, pimisiniyan]
-     pimisin+V+AI+Cnj+Prs+3Sg: [pimisihk, pimisihk]
-     pimisin+V+AI+Cnj+Prs+4Sg/Pl: [pimisiniyit, pimisiniyit]
-     pimisin+V+AI+Cnj+Prs+1Pl: [pimisiniyâhk, pimisiniyâhk]
-     pimisin+V+AI+Cnj+Prs+12Pl: [pimisiniyahk, pimisiniyahk]
-     pimisin+V+AI+Cnj+Prs+2Pl: [pimisiniyêk, pimisiniyêk]
-     pimisin+V+AI+Cnj+Prs+3Pl: [pimisihkik, pimisihkik]
-     
-     pimisin+V+AI+Cnj+Prt+1Sg: [kî-pimisiniyân, kîpimisiniyân]
-     pimisin+V+AI+Cnj+Prt+2Sg: [kî-pimisiniyan, kîpimisiniyan]
-     pimisin+V+AI+Cnj+Prt+3Sg: [kî-pimisihk, kîpimisihk]
-     pimisin+V+AI+Cnj+Prt+4Sg/Pl: [kî-pimisiniyit, kîpimisiniyit]
-     pimisin+V+AI+Cnj+Prt+1Pl: [kî-pimisiniyâhk, kîpimisiniyâhk]
-     pimisin+V+AI+Cnj+Prt+12Pl: [kî-pimisiniyahk, kîpimisiniyahk]
-     pimisin+V+AI+Cnj+Prt+2Pl: [kî-pimisiniyêk, kîpimisiniyêk]
-     pimisin+V+AI+Cnj+Prt+3Pl: [kî-pimisihkik, kîpimisihkik]
-     
-     pimisin+V+AI+Cnj+Fut+Int+1Sg: [wî-pimisiniyân, wîpimisiniyân]
-     pimisin+V+AI+Cnj+Fut+Int+2Sg: [wî-pimisiniyan, wîpimisiniyan]
-     pimisin+V+AI+Cnj+Fut+Int+3Sg: [wî-pimisihk, wîpimisihk]
-     pimisin+V+AI+Cnj+Fut+Int+4Sg/Pl: [wî-pimisiniyit, wîpimisiniyit]
-     pimisin+V+AI+Cnj+Fut+Int+1Pl: [wî-pimisiniyâhk, wîpimisiniyâhk]
-     pimisin+V+AI+Cnj+Fut+Int+12Pl: [wî-pimisiniyahk, wîpimisiniyahk]
-     pimisin+V+AI+Cnj+Fut+Int+2Pl: [wî-pimisiniyêk, wîpimisiniyêk]
-     pimisin+V+AI+Cnj+Fut+Int+3Pl: [wî-pimisihkik, wîpimisihkik]
-     
-     pimisin+V+AI+Cnj+Rel+Fut+Int+1Sg: [wî-wîci-pimisinimiyân, wîwîcipimisinimiyân]
-     pimisin+V+AI+Cnj+Rel+Fut+Int+2Sg: [wî-wîci-pimisinimiyan, wîwîcipimisinimiyan]
-     pimisin+V+AI+Cnj+Rel+Fut+Int+3Sg: [wî-wîci-pimisimihk, wîwîcipimisimihk]
-     pimisin+V+AI+Cnj+Rel+Fut+Int+4Sg/Pl: [wî-wîci-pimisinimiyit, wîwîcipimisinimiyit]
-     pimisin+V+AI+Cnj+Rel+Fut+Int+1Pl: [wî-wîci-pimisinimiyâhk, wîwîcipimisinimiyâhk]
-     pimisin+V+AI+Cnj+Rel+Fut+Int+12Pl: [wî-wîci-pimisinimiyahk, wîwîcipimisinimiyahk]
-     pimisin+V+AI+Cnj+Rel+Fut+Int+2Pl: [wî-wîci-pimisinimiyêk, wîwîcipimisinimiyêk]
-     pimisin+V+AI+Cnj+Rel+Fut+Int+3Pl: [wî-wîci-pimisimihkik, wîwîcipimisimihkik]
+     PV/e+pimisin+V+AI+Cnj+Prs+3Sg: [ê-pimisinit, êpimisinit]
+     PV/e+pimisin+V+AI+Cnj+Prs+3Pl: [ê-pimisinicik, êpimisinicik, ê-pimisihkik, ê-pimisihkik]
+     PV/e+pimisin+V+AI+Cnj+Prs+4Sg/Pl: [ê-pimisiniyit, êpimisiniyit]
      
      pimisin+V+AI+Fut+Cond+1Sg: pimisiniyâni
      pimisin+V+AI+Fut+Cond+2Sg: pimisiniyani
-     pimisin+V+AI+Fut+Cond+3Sg: pimisinici
-     pimisin+V+AI+Fut+Cond+4Sg/Pl: pimisiniyici
      pimisin+V+AI+Fut+Cond+1Pl: pimisiniyâhki
      pimisin+V+AI+Fut+Cond+12Pl: [pimisiniyahko, pimisiniyahki]
      pimisin+V+AI+Fut+Cond+2Pl: pimisiniyêko
-     pimisin+V+AI+Fut+Cond+3Pl: pimisinitwâwi
-
-     pimisin+V+AI+Imp+Imm+2Sg: pimisini
-     pimisin+V+AI+Imp+Imm+12Pl: pimisinitân
-     pimisin+V+AI+Imp+Imm+2Pl: pimisinik
+     pimisin+V+AI+Fut+Cond+3Sg: pimisihki
+     pimisin+V+AI+Fut+Cond+3Pl: pimisihkwâwi
+     pimisin+V+AI+Fut+Cond+4Sg/Pl: pimisiniyici
      
-     pimisin+V+AI+Imp+Del+2Sg: pimisîhkan
-     pimisin+V+AI+Imp+Del+12Pl: pimisîhkahk
-     pimisin+V+AI+Imp+Del+2Pl: pimisîhkêk
+     pimisin+V+AI+Imp+Imm+2Sg: pimisini
+     pimisin+V+AI+Imp+Imm+2Pl: pimisinik
+     pimisin+V+AI+Imp+Imm+12Pl: pimisinitân
+     pimisin+V+AI+Imp+Del+2Sg: pimisinîhkan
+     pimisin+V+AI+Imp+Del+2Pl: pimisinîhkêk
+     pimisin+V+AI+Imp+Del+12Pl: pimisinîhkahk
