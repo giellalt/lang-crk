@@ -1,4 +1,4 @@
-Config:
+Condfig:
   hfst:
     Gen: ../../../src/generator-gt-norm.hfst
     Morph: ../../../src/analyser-gt-norm.hfst
@@ -9,104 +9,38 @@ Config:
 
 Tests:
   
-  Verb - nipâ - sleep : # Ordinary VAI verb - Wolvengrey p. 395; Fut+Def from Okimāsis p. 36
-     
+  Verb - nipâw - help : # Wolvengrey VAIv
+
      nipâw+V+AI+Ind+Prs+1Sg: ninipân
      nipâw+V+AI+Ind+Prs+2Sg: kinipân
-     nipâw+V+AI+Ind+Prs+3Sg: nipâw
-     nipâw+V+AI+Ind+Prs+4Sg/Pl: nipâyiwa
      nipâw+V+AI+Ind+Prs+1Pl: ninipânân
      nipâw+V+AI+Ind+Prs+12Pl: [kinipânaw, kinipânânaw]
      nipâw+V+AI+Ind+Prs+2Pl: kinipânâwâw
+     nipâw+V+AI+Ind+Prs+3Sg: nipâw
      nipâw+V+AI+Ind+Prs+3Pl: nipâwak
+     nipâw+V+AI+Ind+Prs+4Sg/Pl: nipâyiwa
      
-     nipâw+V+AI+Ind+Prt+1Sg: [nikî-nipân, nikînipân] 
-     nipâw+V+AI+Ind+Prt+2Sg: [kikî-nipân, kikînipân]
-     nipâw+V+AI+Ind+Prt+3Sg: [kî-nipâw, kînipâw]
-     nipâw+V+AI+Ind+Prt+4Sg/Pl: [kî-nipâyiwa, kînipâyiwa]
-     nipâw+V+AI+Ind+Prt+1Pl: [nikî-nipânân, nikînipânân]
-     nipâw+V+AI+Ind+Prt+12Pl: [kikî-nipânaw, kikînipânaw, kikînipânânaw, kikî-nipânânaw]
-     nipâw+V+AI+Ind+Prt+2Pl: [kikî-nipânâwâw, kikînipânâwâw]
-     nipâw+V+AI+Ind+Prt+3Pl: [kî-nipâwak, kînipâwak]
+     PV/e+nipâw+V+AI+Cnj+Prs+1Sg: [ê-nipâyân, ênipâyân]
+     PV/e+nipâw+V+AI+Cnj+Prs+2Sg: [ê-nipâyan, ênipâyan]
+     PV/e+nipâw+V+AI+Cnj+Prs+1Pl: [ê-nipâyâhk, ênipâyâhk]
+     PV/e+nipâw+V+AI+Cnj+Prs+12Pl: [ê-nipâyahk, ênipâyahk]
+     PV/e+nipâw+V+AI+Cnj+Prs+2Pl: [ê-nipâyêk, ênipâyêk]
+     PV/e+nipâw+V+AI+Cnj+Prs+3Sg: [ê-nipât, ênipât]
+     PV/e+nipâw+V+AI+Cnj+Prs+3Pl: [ê-nipâcik, ênipâcik]
+     PV/e+nipâw+V+AI+Cnj+Prs+4Sg/Pl: [ê-nipâyit, ênipâyit]
      
-     nipâw+V+AI+Ind+Fut+Def+1Sg: [nika-nipân, nikanipân]
-     nipâw+V+AI+Ind+Fut+Def+2Sg: [kika-nipân, kikanipân]
-     nipâw+V+AI+Ind+Fut+Def+3Sg: [ka-nipâw, kanipâw]
-     nipâw+V+AI+Ind+Fut+Def+4Sg/Pl: [ka-nipâyiwa, kanipâyiwa]
-     nipâw+V+AI+Ind+Fut+Def+1Pl: [nika-nipânân, nikanipânân]
-     nipâw+V+AI+Ind+Fut+Def+12Pl: [kika-nipânaw, kikanipânaw, kika-nipânânaw, kikanipânânaw]
-     nipâw+V+AI+Ind+Fut+Def+2Pl: [kika-nipânâwâw,kikanipânâwâw] 
-     nipâw+V+AI+Ind+Fut+Def+3Pl: [ka-nipâwak, kanipâwak]
-     
-     nipâw+V+AI+Ind+Fut+Int+1Sg: [niwî-nipân, niwînipân]
-     nipâw+V+AI+Ind+Fut+Int+2Sg: [kiwî-nipân, kiwînipân]
-     nipâw+V+AI+Ind+Fut+Int+3Sg: [wî-nipâw, wînipâw]
-     nipâw+V+AI+Ind+Fut+Int+4Sg/Pl: [wî-nipâyiwa, wînipâyiwa]
-     nipâw+V+AI+Ind+Fut+Int+1Pl: [niwî-nipânân, niwînipânân]
-     nipâw+V+AI+Ind+Fut+Int+12Pl: [kiwî-nipânaw, kiwînipânaw, kiwî-nipânânaw, kiwînipânânaw]
-     nipâw+V+AI+Ind+Fut+Int+2Pl: [kiwî-nipânâwâw, kiwînipânâwâw]
-     nipâw+V+AI+Ind+Fut+Int+3Pl: [wî-nipâwak, wînipâwak]
-     
-     PV/e+nipâw+V+AI+Cnj+Prs+1Sg: [ê-nipâyân, nipâyân]
-     PV/e+nipâw+V+AI+Cnj+Prs+2Sg: [ê-nipâyan, nipâyan]
-     PV/e+nipâw+V+AI+Cnj+Prs+3Sg: [ê-nipât, nipât]
-     PV/e+nipâw+V+AI+Cnj+Prs+4Sg/Pl: [ê-nipâyit, nipâyit]
-     PV/e+nipâw+V+AI+Cnj+Prs+1Pl: [ê-nipâyâhk, nipâyâhk]
-     PV/e+nipâw+V+AI+Cnj+Prs+12Pl: [ê-nipâyahk, nipâyahk]
-     PV/e+nipâw+V+AI+Cnj+Prs+2Pl: [ê-nipâyêk, nipâyêk]
-     PV/e+nipâw+V+AI+Cnj+Prs+3Pl: [ê-nipâcik, nipâcik]
-     
-     nipâw+V+AI+Cnj+Prs+1Sg: [nipâyân, nipâyân]
-     nipâw+V+AI+Cnj+Prs+2Sg: [nipâyan, nipâyan]
-     nipâw+V+AI+Cnj+Prs+3Sg: [nipât, nipât]
-     nipâw+V+AI+Cnj+Prs+4Sg/Pl: [nipâyit, nipâyit]
-     nipâw+V+AI+Cnj+Prs+1Pl: [nipâyâhk, nipâyâhk]
-     nipâw+V+AI+Cnj+Prs+12Pl: [nipâyahk, nipâyahk]
-     nipâw+V+AI+Cnj+Prs+2Pl: [nipâyêk, nipâyêk]
-     nipâw+V+AI+Cnj+Prs+3Pl: [nipâcik, nipâcik]
-     
-     nipâw+V+AI+Cnj+Prt+1Sg: [kî-nipâyân, kînipâyân]
-     nipâw+V+AI+Cnj+Prt+2Sg: [kî-nipâyan, kînipâyan]
-     nipâw+V+AI+Cnj+Prt+3Sg: [kî-nipât, kînipât]
-     nipâw+V+AI+Cnj+Prt+4Sg/Pl: [kî-nipâyit, kînipâyit]
-     nipâw+V+AI+Cnj+Prt+1Pl: [kî-nipâyâhk, kînipâyâhk]
-     nipâw+V+AI+Cnj+Prt+12Pl: [kî-nipâyahk, kînipâyahk]
-     nipâw+V+AI+Cnj+Prt+2Pl: [kî-nipâyêk, kînipâyêk]
-     nipâw+V+AI+Cnj+Prt+3Pl: [kî-nipâcik, kînipâcik]
-     
-     nipâw+V+AI+Cnj+Fut+Int+1Sg: [wî-nipâyân, wînipâyân]
-     nipâw+V+AI+Cnj+Fut+Int+2Sg: [wî-nipâyan, wînipâyan]
-     nipâw+V+AI+Cnj+Fut+Int+3Sg: [wî-nipât, wînipât]
-     nipâw+V+AI+Cnj+Fut+Int+4Sg/Pl: [wî-nipâyit, wînipâyit]
-     nipâw+V+AI+Cnj+Fut+Int+1Pl: [wî-nipâyâhk, wînipâyâhk]
-     nipâw+V+AI+Cnj+Fut+Int+12Pl: [wî-nipâyahk, wînipâyahk]
-     nipâw+V+AI+Cnj+Fut+Int+2Pl: [wî-nipâyêk, wînipâyêk]
-     nipâw+V+AI+Cnj+Fut+Int+3Pl: [wî-nipâcik, wînipâcik]
-     
-     nipâw+V+AI+Cnj+Rel+Fut+Int+1Sg: [wî-wîci-nipâmiyân, wîwîcinipâmiyân]
-     nipâw+V+AI+Cnj+Rel+Fut+Int+2Sg: [wî-wîci-nipâmiyan, wîwîcinipâmiyan]
-     nipâw+V+AI+Cnj+Rel+Fut+Int+3Sg: [wî-wîci-nipâmit, wîwîcinipâmit]
-     nipâw+V+AI+Cnj+Rel+Fut+Int+4Sg/Pl: [wî-wîci-nipâmiyit, wîwîcinipâmiyit]
-     nipâw+V+AI+Cnj+Rel+Fut+Int+1Pl: [wî-wîci-nipâmiyâhk, wîwîcinipâmiyâhk]
-     nipâw+V+AI+Cnj+Rel+Fut+Int+12Pl: [wî-wîci-nipâmiyahk, wîwîcinipâmiyahk]
-     nipâw+V+AI+Cnj+Rel+Fut+Int+2Pl: [wî-wîci-nipâmiyêk, wîwîcinipâmiyêk]
-     nipâw+V+AI+Cnj+Rel+Fut+Int+3Pl: [wî-wîci-nipâmicik, wîwîcinipâmicik]
-
      nipâw+V+AI+Fut+Cond+1Sg: nipâyâni
      nipâw+V+AI+Fut+Cond+2Sg: nipâyani
-     nipâw+V+AI+Fut+Cond+3Sg: nipâci
-     nipâw+V+AI+Fut+Cond+4Sg/Pl: nipâyici
      nipâw+V+AI+Fut+Cond+1Pl: nipâyâhki
      nipâw+V+AI+Fut+Cond+12Pl: [nipâyahko, nipâyahki]
      nipâw+V+AI+Fut+Cond+2Pl: nipâyêko
+     nipâw+V+AI+Fut+Cond+3Sg: nipâci
      nipâw+V+AI+Fut+Cond+3Pl: nipâtwâwi
-
+     nipâw+V+AI+Fut+Cond+4Sg/Pl: nipâyici
+     
      nipâw+V+AI+Imp+Imm+2Sg: nipâ
-     nipâw+V+AI+Imp+Imm+12Pl: nipâtân
      nipâw+V+AI+Imp+Imm+2Pl: nipâk
-     
+     nipâw+V+AI+Imp+Imm+12Pl: nipâtân
      nipâw+V+AI+Imp+Del+2Sg: nipâhkan
-     nipâw+V+AI+Imp+Del+12Pl: nipâhkahk
      nipâw+V+AI+Imp+Del+2Pl: nipâhkêk
-     
-     
+     nipâw+V+AI+Imp+Del+12Pl: nipâhkahk
