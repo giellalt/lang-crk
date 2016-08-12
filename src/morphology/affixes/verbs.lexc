@@ -784,12 +784,12 @@ IIw_FUT_CON_SG_SUFFIX ;
 IIw_FUT_CON_PL_SUFFIX ;
 
 LEXICON IIw_FUT_CON_SG_SUFFIX   !!= @CODE@ singular
-+3Sg:%>%^NIIk # ;
-+4Sg:%>yik # ;
++3Sg:%>%^NIIki # ;
++4Sg:%>yiki # ;
 
 LEXICON IIw_FUT_CON_PL_SUFFIX  !!= @CODE@ plural
-+3Pl:%>%^NIIki # ;
-+4Pl:%>iyiki # ;
++3Pl:%>%^NIIkwâwi # ;
++4Pl:%>iyikwâwi # ;
 
 ! ===========================================================
 ! ===========================================================
@@ -802,12 +802,12 @@ IIn_FUT_CON_SG_SUFFIX ;
 IIn_FUT_CON_PL_SUFFIX ;
 
 LEXICON IIn_FUT_CON_SG_SUFFIX   !!= @CODE@ w final singular
-+3Sg:%>%^NIIk # ;
-+4Sg:%>yik # ;
++3Sg:%>%^NIIki # ;
++4Sg:%>iyiki # ;
 
 LEXICON IIn_FUT_CON_PL_SUFFIX   !!= @CODE@ w final plural
-+3Pl:%>%^NIIki # ;
-+4Pl:%>iyiki # ;
++3Pl:%>%^NIIkwâwi # ;
++4Pl:%>iyikwâwi # ;
 
 
 !! !!! Intransitive animate (AI)
@@ -1072,12 +1072,36 @@ AIw_IND_NULL_PL_SUFFIX ;
 
 LEXICON AIw_IND_NULL_SG_SUFFIX   !!= @CODE@ 
 +3Sg:%>w # ;
-+X:%>nâniwiw # ;
-+X:%>nâniwan # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
+
++X+3Sg:%>nâniwiw # ;
++X+3Sg:%>nâniwan # ;
++X+3Sg:%>niwan # ;
+
++X+4Sg:%>nâniwiyiw # ;
++X+4Sg:%>nâniwaniyiw # ;
++X+4Sg:%>niwaniyiw # ;
+
 
 LEXICON AIw_IND_NULL_PL_SUFFIX   !!= @CODE@
 +3Pl:%>wak # ;
 +4Sg/Pl:%>yiwa # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>nâniwiwa # ;
++X+3Pl:%>nâniwanwa # ;
+
++X+4Pl:%>nâniwiyiwa # ;
++X+4Pl:%>nâniwaniyiwa # ;
+
+
 
 ! ===========================================================
 ! ===========================================================
@@ -1114,12 +1138,34 @@ AIn_IND_NULL_PL_SUFFIX ;
 LEXICON AIn_IND_NULL_SG_SUFFIX   !!= @CODE@ 
 +3Sg:%> # ;
 +3Sg:%>iw # ;
-+X:%>inâniwan # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
+
++X+3Sg:%>inâniwiw # ;
++X+3Sg:%>inâniwan # ;
++X+3Sg:%>iniwan # ;
+
++X+4Sg:%>inâniwiyiw # ;
++X+4Sg:%>inâniwaniyiw # ;
++X+4Sg:%>iniwaniyiw # ;
 
 LEXICON AIn_IND_NULL_PL_SUFFIX   !!= @CODE@ 
 +3Pl:%>wak # ;
 +3Pl:%>iwak # ;
-+4Sg/Pl:%>yiwa # ;
++4Sg/Pl:%>iyiwa # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>inâniwiwa # ;
++X+3Pl:%>inâniwanwa # ;
+
++X+4Pl:%>inâniwiyiwa # ;
++X+4Pl:%>inâniwaniyiwa # ;
 
 
 ! ===================================================================================================================
@@ -1148,8 +1194,18 @@ LEXICON AIw_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 +1Sg:%>yân # ;
 +2Sg:%>yan # ;
 +3Sg:%>t # ;
-+X:%>hk # ;
-+X:%>nâniwahk # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>hk # ;
++X+3Sg:%>nâniwahk # ;
++X+3Sg:%>niwahk # ;
+
++X+4Sg:%>hiyik # ;
++X+4Sg:%>nâniwahiyik # ;
++X+4Sg:%>niwahiyik # ;
 
 LEXICON AIw_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
@@ -1158,6 +1214,18 @@ LEXICON AIw_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 +2Pl:%>yêk # ;
 +3Pl:%>cik # ;
 +4Sg/Pl:%>yit # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>hki # ;
++X+3Pl:%>nâniwahki # ;
++X+3Pl:%>niwahki # ;
+
++X+4Sg:%>hiyiki # ;
++X+4Sg:%>nâniwahiyiki # ;
++X+4Sg:%>niwahiyiki # ;
 
 ! ===========================================================
 ! ===========================================================
@@ -1178,6 +1246,19 @@ LEXICON AIn_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 +X:%>hk # ;
 +X:%>inâniwahk # ;
 
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>hk # ;
++X+3Sg:%>nâniwahk # ;
++X+3Sg:%>niwahk # ;
+
++X+4Sg:%>hiyik # ;
++X+4Sg:%>nâniwahiyik # ;
++X+4Sg:%>niwahiyik # ;
+
+
 LEXICON AIn_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
 +1Pl:%>iyâhk # ;
@@ -1186,6 +1267,19 @@ LEXICON AIn_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 +3Pl:%>icik # ;
 +3Pl:%>ihkik # ;
 +4Sg/Pl:%>iyit # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>ihki # ;
++X+3Pl:%>inâniwahki # ;
++X+3Pl:%>iniwahki # ;
+
++X+4Sg:%>ihiyiki # ;
++X+4Sg:%>inâniwahiyiki # ;
++X+4Sg:%>iniwahiyiki # ;
+
 
 
 ! ===================================================================================================================
@@ -1231,14 +1325,14 @@ AIn_IMP_NULL_PL_SUFFIX ;
 
 LEXICON AIn_IMP_SG_SUFFIX
 +Imm+2Sg:%>i   # ; ! 
-+Del+2Sg:%>hkan   # ; !
++Del+2Sg:%>îhkan   # ; !
 
 
 LEXICON AIn_IMP_NULL_PL_SUFFIX
-+Imm+12Pl:%>tân	  # ; !
-+Imm+2Pl:%>k	 # ; !
-+Del+12Pl:%>hkahk   # ; !
-+Del+2Pl:%>hkêk   # ; !
++Imm+12Pl:%>itân	  # ; !
++Imm+2Pl:%>ik	 # ; !
++Del+12Pl:%>îhkahk   # ; !
++Del+2Pl:%>îhkêk   # ; !
 
 
 ! ===================================================================================================================
@@ -1267,7 +1361,13 @@ LEXICON AIw_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@
 +1Sg:%>yâni # ;
 +2Sg:%>yani # ;
 +3Sg:%>ci # ;
-+X:%>hki # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>hki # ;
++X+4Sg:%>yiki # ;
 
 LEXICON AIw_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
@@ -1277,6 +1377,13 @@ LEXICON AIw_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 +2Pl:%>yêko # ;
 +3Pl:%>twâwi # ;
 +4Sg/Pl:%>yici # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>hkwâwi # ;
++X+4Pl:%>yikwâwi # ;
 
 ! ===========================================================
 ! ===========================================================
@@ -1294,7 +1401,14 @@ LEXICON AIn_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@
 +1Sg:%>iyâni # ;
 +2Sg:%>iyani # ;
 +3Sg:%>ici # ;
-+X:%>hki # ;
++3Sg:%>hki # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>ihki # ;
++X+4Sg:%>iyiki # ;
 
 LEXICON AIn_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
@@ -1306,7 +1420,12 @@ LEXICON AIn_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 +3Pl:%>ihkwâwi # ;
 +4Sg/Pl:%>iyici # ;
 
+!           ********
+! **** Unspecified Actor ****
+!           ********
 
++X+3Pl:%>ihkwâwi # ;
++X+4Pl:%>iyikwâwi # ;
 
 
 
@@ -1332,7 +1451,7 @@ LEXICON TICONJâ  !!= * @CODE@ These inflect just as VAI -w final stems, so they
 
 ! ===========================================================
 ! ===========================================================
-!!!!! -t final verbs (refers to the 3 SG form ending) !!!!!
+!!!!! -t final verbs (refers to the stem ending) !!!!!
 ! ===========================================================
 ! ===========================================================
 
@@ -1349,7 +1468,7 @@ LEXICON TICONJ_PL_WICI
 
 ! ===========================================================
 ! ===========================================================
-!!!!! -t final verbs (refers to the 3 SG form ending) !!!!!
+!!!!! -t final verbs (refers to the stem ending) !!!!!
 ! ===========================================================
 ! =========================================================== ! imperative and fut con do not take tense
 
@@ -1369,7 +1488,7 @@ LEXICON TIt_PL_ORDER !!= @CODE@ plural only NOTE: imperative and fut con go stra
 
 ! ===========================================================
 ! ===========================================================
-!!!!! -t final verbs (refers to the 3 SG form ending) !!!!!
+!!!!! -t final verbs (refers to the stem ending) !!!!!
 ! ===========================================================
 ! ===========================================================
 
@@ -1401,7 +1520,7 @@ LEXICON TIt_PL_CNJ_TENSE !!= @CODE@ plural only
 
 ! ===========================================================
 ! ===========================================================
-!!!!! -t final verbs (refers to the 3 SG form ending) !!!!!
+!!!!! -t final verbs (refers to the stem ending) !!!!!
 ! ===========================================================
 ! ===========================================================
 
@@ -1443,7 +1562,7 @@ LEXICON TIt_PL_IMP_PERSON !!= @CODE@ plural only
 
 ! ===========================================================
 ! ===========================================================
-!!!!! -t final verbs (refers to the 3 SG form ending) !!!!!
+!!!!! -t final verbs (refers to the stem ending) !!!!!
 ! ===========================================================
 ! ===========================================================
 
@@ -1477,11 +1596,23 @@ TIt_IND_NULL_PL_SUFFIX ;
 LEXICON TIt_IND_NULL_SG_SUFFIX   !!= @CODE@ NOTE: X actor will eventually derive to VII, so it is not yet included as per Arok's paradigm
 +3Sg:%>am # ;
 
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X:%>ikâtê IIw_IND_SG_SUFFIX ;
+
+
 
 LEXICON TIt_IND_NULL_PL_SUFFIX   !!= @CODE@ 
 +3Pl:%>amwak # ;
 +4Sg/Pl:%>amiyiwa # ;
 
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X:%>ikâtê IIw_IND_PL_SUFFIX ;
 
 ! ===================================================================================================================
 ! ===================================================================================================================
@@ -1495,7 +1626,7 @@ LEXICON TIt_IND_NULL_PL_SUFFIX   !!= @CODE@
 
 ! ===========================================================
 ! ===========================================================
-!!!!! -t final verbs (refers to the 3 SG form ending) !!!!!
+!!!!! -t final verbs (refers to the stem ending) !!!!!
 ! ===========================================================
 ! ===========================================================
 
@@ -1511,14 +1642,27 @@ LEXICON TIt_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 +2Sg:%>aman # ;
 +3Sg:%>ahk # ;
 
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>amihk # ;
++X+4Sg:%>amihiyik # ;
+
 LEXICON TIt_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
 +1Pl:%>amâhk # ;
 +12Pl:%>amahk # ;
 +2Pl:%>amêk # ;
 +3Pl:%>ahkik # ;
-+4Sg/Pl:%>amit # ;
++4Sg/Pl:%>amiyit # ;
 
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>amihki # ;
++X+4Pl:%>amihiyiki # ;
 
 ! ===================================================================================================================
 ! ===================================================================================================================
@@ -1532,7 +1676,7 @@ LEXICON TIt_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 
 ! ===========================================================
 ! ===========================================================
-!!!!! -t final verbs (refers to the 3 SG form ending) !!!!!
+!!!!! -t final verbs (refers to the stem ending) !!!!!
 ! ===========================================================
 ! ===========================================================
 
@@ -1549,8 +1693,8 @@ LEXICON TIt_IMP_SG_SUFFIX
 LEXICON TIt_IMP_NULL_PL_SUFFIX
 +Imm+12Pl:%>êtân	  # ; !
 +Imm+2Pl:%>amok	 # ; !
-+Del+12Pl:%>amôhkêk   # ; !
-+Del+2Pl:%>amôhkahk   # ; !
++Del+12Pl:%>amôhkahk   # ; !
++Del+2Pl:%>amôhkêk   # ; !
 
 
 ! ===================================================================================================================
@@ -1565,7 +1709,7 @@ LEXICON TIt_IMP_NULL_PL_SUFFIX
 
 ! ===========================================================
 ! ===========================================================
-!!!!! -t final verbs (refers to the 3 SG form ending) !!!!!
+!!!!! -t final verbs (refers to the stem ending) !!!!!
 ! ===========================================================
 ! ===========================================================
 
@@ -1581,6 +1725,13 @@ LEXICON TIt_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@
 +2Sg:%>amani # ;
 +3Sg:%>ahki # ;
 
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>amihki # ;
++X+4Sg:%>amihiyiki # ;
+
 LEXICON TIt_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
 +1Pl:%>amâhki # ;
@@ -1590,7 +1741,12 @@ LEXICON TIt_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 +3Pl:%>ahkwâwi # ;
 +4Sg/Pl:%>amiyici # ;
 
+!           ********
+! **** Unspecified Actor ****
+!           ********
 
++X+3Sg:%>amihkwâwi # ;
++X+4Sg:%>amihiyikwâwi # ;
 
 
 
@@ -2009,13 +2165,11 @@ LEXICON TA_IND_NI_SG_SUFFIX   !!= @CODE@
 +3Sg+1SgO:%>ik        # ;
 +4Sg/Pl+1SgO:%>ikoyiwa	   # ; ! FROM NS 152
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NOTE: always mixed
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +1Sg+X:%>ikawin	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Sg:%>ikawin	   # ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -2048,13 +2202,11 @@ LEXICON TA_IND_NI_PL_SUFFIX   !!= @CODE@
 +3Pl+1PlO:%>ikonânak  # ;
 +4Sg/Pl+1PlO:%>ikonâna	   # ; ! FROM NS 152
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NOTE: always mixed
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +1Pl+X:%>ikawinân	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Pl:%>ikawinân	   # ;
 
 
 !!!!!! KI- PREFIXING FORMS !!!!!!
@@ -2096,6 +2248,12 @@ LEXICON TA_IND_KI_SG_SUFFIX   !!= @CODE@
 !!!!!!!! Local !!!!!!!
 
 +1Sg+2SgO:%>itin         # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+2Sg:%>ikawin	   # ;
 
 ! ~~~~~~~~~~~~~~~~~~~~
 !!!!!! PLURAL !!!!!! 
@@ -2150,15 +2308,15 @@ LEXICON TA_IND_KI_PL_SUFFIX   !!= @CODE@
 +1Pl+2SgO:%>itinân         # ; !OBS
 +1Pl+2PlO:%>itinân         # ;
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +2Sg+X:%>ikawin	   # ;
-! +12Pl+X:%>ikawinaw	   # ;
-! +2Pl+X:%>ikawinâwâw	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+12Pl:%>ikawinânaw	   # ;
++X+12Pl:%>ikawinaw	   # ;
++X+2Pl:%>ikawinâwâw	   # ;
+
+
 
 
 !!!!!! NULL PREFIXING FORMS !!!!!!
@@ -2195,14 +2353,12 @@ LEXICON TA_IND_NULL_SG_SUFFIX   !!= @CODE@
 +5Sg/Pl+4Sg/PlO:%>ikoyiwa	   # ; ! FROM NS 152
 
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +3Sg+X:%>âw	   # ;
-! +4Sg/Pl+X:%>imâwa	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+3Sg:%>âw   # ;
++X+4Sg/Pl:%>âyiwa   # ;
 
 ! ~~~~~~~~~~~~~~~~~~~~
 !!!!!! PLURAL !!!!!! 
@@ -2228,15 +2384,11 @@ LEXICON TA_IND_NULL_PL_SUFFIX   !!= @CODE@
 
 +4Sg/Pl+3PlO:%>ikwak # ; ! FROM NS 152
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +3Sg+X:%>âw	   # ;
-! +3Pl+X:%>âwak	   # ;
-! +4Sg/Pl+X:%>âyiwa	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+3Pl:%>âwak   # ;
 
 
 
@@ -2278,13 +2430,11 @@ LEXICON TAvw_IND_NI_SG_SUFFIX   !!= @CODE@
 +3Sg+1SgO:%>%^WIik        # ;
 +4Sg/Pl+1SgO:%>%^WIikoyiwa	   # ; ! FROM NS 152
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NOTE: always mixed
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +1Sg+X:%>ikawin	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Sg:%>%^WIikawin   # ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -2317,13 +2467,11 @@ LEXICON TAvw_IND_NI_PL_SUFFIX   !!= @CODE@
 +3Pl+1PlO:%>%^WIikonânak  # ;
 +4Sg/Pl+1PlO:%>%^WIikonâna	   # ; ! FROM NS 152
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NOTE: always mixed
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +1Pl+X:%>%^WIikawinân	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Pl:%>%^WIikawinân   # ;
 
 
 !!!!!! KI- PREFIXING FORMS !!!!!!
@@ -2365,6 +2513,12 @@ LEXICON TAvw_IND_KI_SG_SUFFIX   !!= @CODE@
 
 +3Sg+2SgO:%>%^WIik		  # ;
 +4Sg/Pl+2SgO:%>%^WIikoyiwa	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+2Sg:%>%^WIikawin   # ;
 
 ! ~~~~~~~~~~~~~~~~~~~~
 !!!!!! PLURAL !!!!!! 
@@ -2420,15 +2574,13 @@ LEXICON TAvw_IND_KI_PL_SUFFIX   !!= @CODE@
 +4Sg/Pl+2PlO:%>%^WIikowâwa	   # ; ! FROM NS 152
 
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +2Sg+X:%>%^WIikawin	   # ;
-! +12Pl+X:%>%^WIikawinaw	   # ;
-! +2Pl+X:%>%^WIikawinâwâw	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+12Pl:%>%^WIikawinânaw	   # ;
++X+12Pl:%>%^WIikawinaw	   # ;
++X+2Pl:%>%^WIikawinâwâw	   # ;
 
 
 !!!!!! NULL PREFIXING FORMS !!!!!!
@@ -2465,13 +2617,13 @@ LEXICON TAvw_IND_NULL_SG_SUFFIX   !!= @CODE@
 +5Sg/Pl+4Sg/PlO:%>%^WIikoyiwa	   # ; ! FROM NS 152
 
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +3Sg+X:%>âw	   # ;
-! +4Sg/Pl+X:%>imâwa	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+3Sg:%>âw   # ;
++X+4Sg/Pl:%>âyiwa   # ;
+
 
 ! ~~~~~~~~~~~~~~~~~~~~
 !!!!!! PLURAL !!!!!! 
@@ -2497,15 +2649,12 @@ LEXICON TAvw_IND_NULL_PL_SUFFIX   !!= @CODE@
 
 +4Sg/Pl+3PlO:%>%^WIikwak	   # ; ! FROM NS 152
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +3Sg+X:%>âw	   # ;
-! +3Pl+X:%>âwak	   # ;
-! +4Sg/Pl+X:%>âyiwa	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+3Pl:%>âwak   # ;
+
 
 
 
@@ -2547,13 +2696,12 @@ LEXICON TAcw_IND_NI_SG_SUFFIX   !!= @CODE@
 +3Sg+1SgO:%>%^IOik        # ;
 +4Sg/Pl+1SgO:%>%^IOikoyiwa	   # ; ! FROM NS 152
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!! Unspecified Actor !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NOTE: always mixed
 
-!!!!!!!! Mixed !!!!!!!
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
 
-+1Sg+X:%>%^IOikawin	   # ;
++X+1Sg:%>%^IOikawin	   # ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -2586,14 +2734,12 @@ LEXICON TAcw_IND_NI_PL_SUFFIX   !!= @CODE@
 +3Pl+1PlO:%>%^IOikonânak  # ;
 +4Sg/Pl+1PlO:%>%^IOikonân	   # ; ! FROM NS 152
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! NOTE: always mixed
-! 
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +1Pl+X:%>%^IOikawinân	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Pl:%>%^IOikawinân	   # ;
+
 
 !!!!!! KI- PREFIXING FORMS !!!!!!
 ! =================================
@@ -2634,6 +2780,12 @@ LEXICON TAcw_IND_KI_SG_SUFFIX   !!= @CODE@
 
 +3Sg+2SgO:%>%^IOik		  # ;
 +4Sg/Pl+2SgO:%>%^IOikoyiwa	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+2Sg:%>%^IOikawin	   # ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -2689,15 +2841,14 @@ LEXICON TAcw_IND_KI_PL_SUFFIX   !!= @CODE@
 +4Sg/Pl+12PlO:%>%^IOikonawa	   # ; ! FROM NS 152
 +4Sg/Pl+2PlO:%>%^IOikowâwa	   # ; ! FROM NS 152
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +2Sg+X:%>%^IOikawin	   # ;
-! +12Pl+X:%>%^IOikawinaw	   # ;
-! +2Pl+X:%>%^IOikawinâwâw	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+2Sg:%>%^IOikawin	   # ;
++X+12Pl:%>%^IOikawinaw	   # ;
++X+2Pl:%>%^IOikawinâwâw	   # ;
+
 
 !!!!!! NULL PREFIXING FORMS !!!!!!
 ! ==================================
@@ -2734,14 +2885,12 @@ LEXICON TAcw_IND_NULL_SG_SUFFIX   !!= @CODE@
 +5Sg/Pl+4Sg/PlO:%>%^IOikoyiwa	   # ; ! FROM NS 152
 
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +3Sg+X:%>âw	   # ;
-! +4Sg/Pl+X:%>imâwa	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+3Pl:%>âw   # ;
++X+4Sg/Pl:%>âyiwa   # ;
 
 ! ~~~~~~~~~~~~~~~~~~~~
 !!!!!! PLURAL !!!!!! 
@@ -2768,15 +2917,11 @@ LEXICON TAcw_IND_NULL_PL_SUFFIX   !!= @CODE@
 
 +4Sg/Pl+3PlO:%>%^IOikwak	   # ; ! FROM NS 152
 
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! !!!!!! Unspecified Actor !!!!!!
-! !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-! 
-! !!!!!!!! Mixed !!!!!!!
-! 
-! +3Sg+X:%>âw	   # ;
-! +3Pl+X:%>âwak	   # ;
-! +4Sg/Pl+X:%>âyiwa	   # ;
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+3Pl:%>âwak   # ;
 
 
 ! ===================================================================================================================
@@ -2825,6 +2970,12 @@ LEXICON TAt_IND_KI_SG_SUFFIX   !!= @CODE@
 
 +3Sg+2SgO:%>ik		  # ;
 +4Sg/Pl+2SgO:%>ikoyiwa	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+2Sg:%>ikawin   # ;
 
 ! ~~~~~~~~~~~~~~~~~~~~
 !!!!!! PLURAL !!!!!! 
@@ -2881,15 +3032,13 @@ LEXICON TAt_IND_KI_PL_SUFFIX   !!= @CODE@
 +4Sg/Pl+12PlO:%>ikonawa	   # ; ! FROM NS 152
 +4Sg/Pl+2PlO:%>ikowâwa	   # ; ! FROM NS 152
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!! Unspecified Actor !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
 
-!!!!!!!! Mixed !!!!!!!
-
-+2Sg+X:%>ikawin	   # ;
-+12Pl+X:%>ikawinaw	   # ;
-+2Pl+X:%>ikawinâwâw	   # ;
++X+2Sg:%>ikawin	   # ;
++X+12Pl:%>ikawinaw	   # ;
++X+2Pl:%>ikawinâwâw	   # ;
 
 
 ! ===================================================================================================================
@@ -2967,6 +3116,15 @@ LEXICON TA_CNJ_NULL_SG_SUFFIX
 +4Sg/Pl+3SgO:%>ikot	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>ikoyit	   # ; ! FROM NS 152
 
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Sg:%>ikawiyân	   # ;
++X+2Sg:%>ikawiyan	   # ;
+
++X+3Sg:%>iht	   # ;
++X+4Sg/Pl:%>imiht	   # ;
 
 ! ~~~~~~~~~~~~~~~~~~~~
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -3047,6 +3205,16 @@ LEXICON TA_CNJ_NULL_PL_SUFFIX
 
 +4Sg/Pl+3PlO:%>ikocik	   # ; ! FROM NS 152
 
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Pl:%>ikawiyâhk	   # ;
++X+12Pl:%>ikawiyahk	   # ;
++X+2Pl:%>ikawiyêk	   # ;
+
++X+3Pl:%>ihcik	   # ;
+
 ! =================================
 ! =================================
 !!!!! -Vw stem ending verbs !!!!!
@@ -3109,6 +3277,17 @@ LEXICON TAvw_CNJ_NULL_SG_SUFFIX
 
 +4Sg/Pl+3SgO:%>%^WIikot	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>%^WIikoyit	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Sg:%>%^WIikawiyân	   # ;
++X+2Sg:%>%^WIikawiyan	   # ;
+
++X+3Sg:%>%^WIiht	   # ;
++X+4Sg/Pl:%>%^WIimiht	   # ;
+
 
 ! ~~~~~~~~~~~~~~~~~~~~
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -3189,6 +3368,16 @@ LEXICON TAvw_CNJ_NULL_PL_SUFFIX
 
 +4Sg/Pl+3PlO:%>%^WIikocik	   # ; ! FROM NS 152
 
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Pl:%>%^WIikawiyâhk	   # ;
++X+12Pl:%>%^WIikawiyahk	   # ;
++X+2Pl:%>%^WIikawiyêk	   # ;
+
++X+3Pl:%>%^WIihcik	   # ;
+
 ! =================================
 ! =================================
 !!!!! -Cw stem final verbs !!!!!
@@ -3251,6 +3440,17 @@ LEXICON TAcw_CNJ_NULL_SG_SUFFIX
 
 +4Sg/Pl+3SgO:%>%^IOikot	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>%^IOikoyit	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Sg:%>%^IOikawiyân	   # ;
++X+2Sg:%>%^IOikawiyan	   # ;
+
++X+3Sg:%>%^IOiht	   # ;
++X+4Sg/Pl:%>%^IOimiht	   # ;
+
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -3332,6 +3532,16 @@ LEXICON TAcw_CNJ_NULL_PL_SUFFIX
 
 +4Sg/Pl+3PlO:%>%^IOikocik	   # ; ! FROM NS 152
 
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Pl:%>%^IOikawiyâhk	   # ;
++X+12Pl:%>%^IOikawiyahk	   # ;
++X+2Pl:%>%^IOikawiyêk	   # ;
+
++X+3Pl:%>%^IOihcik	   # ;
+
 ! ================================================================
 ! ================================================================
 !!!!! -t stem final verbs where -t becoms -s in some cases !!!!!
@@ -3394,6 +3604,16 @@ LEXICON TAt_CNJ_NULL_SG_SUFFIX
 
 +4Sg/Pl+3SgO:%>ikot	   # ; ! FROM NS 152
 +5Sg/Pl+4Sg/PlO:%>ikoyit	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Sg:%>ikawiyân	   # ;
++X+2Sg:%>ikawiyan	   # ;
+
++X+3Sg:%>iht	   # ;
++X+4Sg/Pl:%>imiht	   # ;
 
 ! ~~~~~~~~~~~~~~~~~~~~
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -3474,6 +3694,16 @@ LEXICON TAt_CNJ_NULL_PL_SUFFIX
 !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
 
 +4Sg/Pl+3PlO:%>ikocik	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Pl:%>ikawiyâhk	   # ;
++X+12Pl:%>ikawiyahk	   # ;
++X+2Pl:%>ikawiyêk	   # ;
+
++X+3Pl:%>ihcik	   # ;
 
 
 ! ===================================================================================================================
