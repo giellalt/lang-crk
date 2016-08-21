@@ -80,156 +80,314 @@ TACONJ_2 ;
 
 
 
+Intransitive inanimate (II)
 
+
+ LEXICON IICONJw   
+
+ LEXICON IICONJw-SG   
+
+ LEXICON IICONJw-PL   
+
+ LEXICON IICONJ   
+
+ LEXICON IICONJ-SG   
+
+ LEXICON IICONJ-PL   
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON IIw_ORDER  
+
+ LEXICON IIw_SG_ORDER  singular only
+
+ LEXICON IIw_PL_ORDER  plural only 
+
+
+ LEXICON IIn_ORDER  
+
+ LEXICON IIn_SG_ORDER  singular only
+
+ LEXICON IIn_PL_ORDER  plural only
+
+
+
+
+
+ LEXICON IIw_SG_IND_TENSE  plural only
+
+ LEXICON IIw_SG_CNJ_TENSE  plural only
+
+ LEXICON IIw_PL_IND_TENSE  plural only
+
+ LEXICON IIw_PL_CNJ_TENSE  plural only
+
+
+
+
+ LEXICON IIn_SG_IND_TENSE  plural only
+
+ LEXICON IIn_SG_CNJ_TENSE  plural only
+
+ LEXICON IIn_PL_IND_TENSE  plural only
+
+ LEXICON IIn_PL_CNJ_TENSE  plural only
+
+
+
+ LEXICON IIw_IND_PERSON  
+
+ LEXICON IIw_CNJ_PERSON  
+
+ LEXICON IIw_FUT_CON_PERSON  
+
+ LEXICON IIw_SG_IND_PERSON  plural only
+
+ LEXICON IIw_SG_CNJ_PERSON  plural only
+
+ LEXICON IIw_SG_FUT_CON_PERSON  plural only
+
+ LEXICON IIw_PL_IND_PERSON  plural only
+
+ LEXICON IIw_PL_CNJ_PERSON  plural only
+
+ LEXICON IIw_PL_FUT_CON_PERSON  plural only
+
+
+ LEXICON IIn_IND_PERSON  
+
+ LEXICON IIn_CNJ_PERSON  
+
+ LEXICON IIn_FUT_CON_PERSON  
+
+ LEXICON IIn_SG_IND_PERSON  plural only
+
+ LEXICON IIn_SG_CNJ_PERSON  plural only
+
+ LEXICON IIn_SG_FUT_CON_PERSON  plural only
+
+ LEXICON IIn_PL_IND_PERSON  plural only
+
+ LEXICON IIn_PL_CNJ_PERSON  plural only
+
+ LEXICON IIn_PL_FUT_CON_PERSON  plural only
+
+
+
+
+
+ LEXICON IIw_IND_NULL 
+
+ LEXICON IIw_IND_SG_SUFFIX    singular
+
+ LEXICON IIw_IND_PL_SUFFIX   plural
+
+
+
+ LEXICON IIn_IND_NULL 
+
+ LEXICON IIn_IND_SG_SUFFIX    w final singular
+
+ LEXICON IIn_IND_PL_SUFFIX    w final plural
+
+
+
+
+
+ LEXICON IIw_CNJ_NULL 
+
+ LEXICON IIw_CNJ_SG_SUFFIX    singular
+
+ LEXICON IIw_CNJ_PL_SUFFIX   plural
+
+
+ LEXICON IIn_CNJ_NULL 
+
+ LEXICON IIn_CNJ_SG_SUFFIX    w final singular
+
+ LEXICON IIn_CNJ_PL_SUFFIX    w final plural
+
+
+
+
+ LEXICON IIw_FUT_CON_NULL 
+
+ LEXICON IIw_FUT_CON_SG_SUFFIX    singular
+
+ LEXICON IIw_FUT_CON_PL_SUFFIX   plural
+
+
+ LEXICON IIn_FUT_CON_NULL 
+
+ LEXICON IIn_FUT_CON_SG_SUFFIX    w final singular
+
+ LEXICON IIn_FUT_CON_PL_SUFFIX    w final plural
 
 
 Intransitive animate (AI)
 
- LEXICON AICONJ  splits in 4 orders
 
- LEXICON AICONJ-PL   splits in 4 orders, gives only plural forms.
+ LEXICON AICONJ  
 
+ LEXICON AICONJw  
 
- LEXICON AICONJw  splits in 4 orders, for verbs with final -w
+ LEXICON AICONJ-PL  
 
- LEXICON AICONJn  splits in 4 orders, for verbs with final -n
+ LEXICON AICONJn  
 
- LEXICON AICONJn-PL  splits in 4 orders, for verbs with final -n
+ LEXICON AICONJn-PL  
 
 
-AI CONJ-CONT can take the wici- circumfix
 
- LEXICON AICONJ-CONT  
 
 
 
 
 
 
-AI CONJ-CONT-PL can take the wici- circumfix (plural only)
 
- LEXICON AICONJ-CONT-PL  only plural forms.
+ LEXICON AIw_ORDER 
 
+ LEXICON AIw_PL_ORDER  plural only 
 
 
+ LEXICON AIn_ORDER 
 
+ LEXICON AIn_PL_ORDER  plural only  
 
 
-AI CONJ-CONTn class Conjugations can take the wici- circumfix
 
- LEXICON AICONJ-CONTn  
 
 
+ LEXICON AIw_PL_IND_TENSE  plural only
 
+ LEXICON AIw_PL_CNJ_TENSE  plural only
 
 
 
-AI n-sub class Conjugations can take the wici- circumfix (PL only)
 
- LEXICON AICONJ-CONTn-PL  
+ LEXICON AIn_PL_IND_TENSE  plural only
 
 
+ LEXICON AIn_PL_CNJ_TENSE  plural only
 
 
 
 
-IND forms
+ LEXICON AIw_IND_PERSON  
 
- LEXICON AI_IND  First mode, indicative
+ LEXICON AIw_CNJ_PERSON  
 
- LEXICON AI_IND-PL  First mode, indicative, only plural forms
+ LEXICON AIw_FUT_CON_PERSON  
 
 
- LEXICON AI_INDn  First mode, indicative
+ LEXICON AIw_IMP_PERSON  
 
- LEXICON AI_INDn-PL  First mode, indicative
+ LEXICON AIw_PL_IND_PERSON  plural only
 
+ LEXICON AIw_PL_CNJ_PERSON  plural only
 
-Suffixation begins for AI IND classes
+ LEXICON AIw_PL_FUT_CON_PERSON  plural only
 
+ LEXICON AIw_PL_IMP_PERSON  plural only
 
- LEXICON AI_IND_PRS  gives person suffixes
 
 
- LEXICON AI_IND_PRS-PL  gives person suffixes, only plural forms
+ LEXICON AIn_IND_PERSON  
 
+ LEXICON AIn_CNJ_PERSON  
 
+ LEXICON AIn_FUT_CON_PERSON  
 
- LEXICON AI_INDn_PRS  gives person suffixes
+ LEXICON AIn_IMP_PERSON  
 
+ LEXICON AIn_PL_IND_PERSON  plural only
 
- LEXICON AI_INDn_PRS-PL  gives person suffixes
+ LEXICON AIn_PL_CNJ_PERSON  plural only
 
+ LEXICON AIn_PL_FUT_CON_PERSON  plural only
 
+ LEXICON AIn_PL_IMP_PERSON  plural only
 
- LEXICON AI_FUT_CON  
 
 
- LEXICON AI_FUT_CON-PL  only plural forms.
 
 
+ LEXICON AIw_IND_NI     
 
- LEXICON AI_CNJ  Third mode, conjunctive
+ LEXICON AIw_IND_NI_SG_SUFFIX    
 
- LEXICON AI_CNJ-PL  Third mode, conjunctive, only plural forms
+ LEXICON AIw_IND_NI_PL_SUFFIX   
 
+ LEXICON AIw_IND_KI     
 
- LEXICON AI_CNJn  Third mode, conjunctive
+ LEXICON AIw_IND_KI_SG_SUFFIX    
 
- LEXICON AI_CNJn-PL  Third mode, conjunctive
+ LEXICON AIw_IND_KI_PL_SUFFIX    
 
+ LEXICON AIw_IND_NULL     
 
+ LEXICON AIw_IND_NULL_SG_SUFFIX    
 
+ LEXICON AIw_IND_NULL_PL_SUFFIX   
 
- LEXICON AI_CNJ_PRS  singular forms
 
- LEXICON AI_CNJ_PRS-PL   plural forms
+ LEXICON AIn_IND_NI    
 
+ LEXICON AIn_IND_NI_SG_SUFFIX    
 
- LEXICON AI_CNJn_PRS 
+ LEXICON AIn_IND_NI_PL_SUFFIX    
 
+ LEXICON AIn_IND_KI     
 
- LEXICON AI_CNJn_PRS-PL 
+ LEXICON AIn_IND_KI_SG_SUFFIX    
 
+ LEXICON AIn_IND_KI_PL_SUFFIX    
 
- LEXICON AI_IMP   Fourth mode, imperative singular forms
+ LEXICON AIn_IND_NULL     
 
- LEXICON AI_IMP-PL   Fourth mode, imperative, plural forms
+ LEXICON AIn_IND_NULL_SG_SUFFIX    
 
+ LEXICON AIn_IND_NULL_PL_SUFFIX    
 
- LEXICON AI_IMPn   Fourth mode, imperative
 
- LEXICON AI_IMPn-PL   Fourth mode, imperative
 
 
 
- LEXICON AI_IMP_LONG_E 
 
- LEXICON imp-long-E 
+ LEXICON AIw_CNJ_NULL    
 
 
-Intransitive inanimate (II)
+ LEXICON AIw_CNJ_NULL_SG_SUFFIX    
 
--n lexica
 
- LEXICON IICONJ   splits in 4 orders, gives only plural forms.
+ LEXICON AIw_CNJ_NULL_PL_SUFFIX    
 
 
 
+ LEXICON AIn_CNJ_NULL    
 
- LEXICON IICONJ_ORDER  w final. Splits according to order
 
+ LEXICON AIn_CNJ_NULL_SG_SUFFIX    
 
 
+ LEXICON AIn_CNJ_NULL_PL_SUFFIX    
 
 
 
- LEXICON IICONJ-SG   splits in 4 orders, gives only plural forms.
 
 
 
 
- LEXICON IICONJ_SG_ORDER  w final. Splits according to order
 
 
 
@@ -237,681 +395,1236 @@ Intransitive inanimate (II)
 
 
 
- LEXICON IICONJ-PL   splits in 4 orders, gives only plural forms.
 
 
 
 
- LEXICON IICONJ_PL_ORDER  w final. Splits according to order
 
 
 
+ LEXICON AIw_FUT_CON_NULL    
 
 
+ LEXICON AIw_FUT_CON_NULL_SG_SUFFIX    
 
 
+ LEXICON AIw_FUT_CON_NULL_PL_SUFFIX    
 
- LEXICON II_IND_SGPL    w final 
 
- LEXICON II_IND_SG_SUF    w final singular
- LEXICON II_IND_PL_SUF    w final plural
 
+ LEXICON AIn_FUT_CON_NULL    
 
- LEXICON II_CNJ_SGPL    w final 
 
- LEXICON II_CNJ_SG_SUF    w final singular
+ LEXICON AIn_FUT_CON_NULL_SG_SUFFIX    
 
- LEXICON II_CNJ_PL_SUF    w final plural
 
+ LEXICON AIn_FUT_CON_NULL_PL_SUFFIX    
 
- LEXICON II_FUT_CON_SGPL    w final 
 
- LEXICON II_FUT_CON_SG_SUF    w final singular
 
- LEXICON II_FUT_CON_PL_SUF    w final plural
 
 
 
+Transitive inanimate (TI)
 
-
--w lexica
-
- LEXICON IICONJw   splits in 4 orders, gives only plural forms.
-
-
-
-
- LEXICON IICONJw_ORDER  w final. Splits according to order
-
-
-
-
-
-
- LEXICON IICONJw-SG   splits in 4 orders, gives only plural forms.
-
-
-
-
- LEXICON IICONJw_SG_ORDER  w final. Splits according to order
-
-
-
-
-
-
-
- LEXICON IICONJw-PL   splits in 4 orders, gives only plural forms.
-
-
-
-
- LEXICON IICONJw_PL_ORDER  w final. Splits according to order
-
-
-
-
-
-
-
- LEXICON II_INDw_SGPL    w final 
-
- LEXICON II_INDw_SG_SUF    w final singular
- LEXICON II_INDw_PL_SUF    w final plural
-
-
- LEXICON II_CNJw_SGPL    w final 
-
- LEXICON II_CNJw_SG_SUF    w final singular
-
- LEXICON II_CNJw_PL_SUF    w final plural
-
-
- LEXICON II_FUT_CONw_SGPL    w final 
-
- LEXICON II_FUT_CONw_SG_SUF    w final singular
-
- LEXICON II_FUT_CONw_PL_SUF    w final plural
-
-
-
-
-
-
-!!!Transitive animate (TA)
-
-The VTA verbs split in different orders.
-There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
-
-
- LEXICON TACONJ_1  
-
- * LEXICON TACONJ_2   Vw + i suf deletes w and i.
-
- * LEXICON TACONJ_2-PL   Vw + i suf deletes w and i. plural forms
-
-
- * LEXICON TACONJ_3   Cw where w + i become o
-
- * LEXICON TACONJ_4   TS
-
- * LEXICON TACONJ_5  
-
- * LEXICON TACONJ_5-TS  
-
-
- * LEXICON TACONJ-CONT 
-
- * LEXICON TACONJ-CONTTS 
-
- * LEXICON TACONJ-CONTVw 
-
- * LEXICON TACONJ-CONTVw-PL  plural forms
-
- * LEXICON TACONJ-CONTCw 
-
- * LEXICON TACONJ-CONTi 
-
- * LEXICON TACONJ-CONTTSi 
-
-
- LEXICON TA_IND_WICI  gives prs
-
-
- LEXICON TA_IND  gives prs
-
-
- LEXICON TA_INDTS_WICI  gives prs
-
-
- LEXICON TA_INDTS gives prs
-
-
- LEXICON TA_INDVw_WICI  gives prs
-
-
- LEXICON TA_INDVw gives prs
-
-
-
- LEXICON TA_INDVw-PL_WICI  gives prs, plural forms
-
-
- LEXICON TA_INDVw-PL gives prs
-
-
-
-
- LEXICON TA_INDCw_WICI  gives prs
-
-
- LEXICON TA_INDCw  gives prs
-
-
-
-
- LEXICON TA_IND_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
-
- LEXICON TA_INDTS_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
-
- LEXICON TA_INDVw_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
-
- LEXICON TA_INDVw_PERSPREF-PL  gives tags for subject, flag for object, and directs to obj suffs. Plural forms
-
-
- LEXICON TA_INDCw_PERSPREF  gives tags for subject, flag for object, and directs to obj suffs
-
-
-
-
- LEXICON VTA_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
-
-
-
-
-
-
- LEXICON VTA_KI_O 	     gives the objects suffixes matching 2Sg subject
-
-
-
-
-
-
-
-
-
-
-
-
-
- LEXICON VTATS_KI_O 	     gives the objects suffixes matching 2Sg subject
-
-
-
-
-
-
-
-
- LEXICON VTAVw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
-
-
-
- LEXICON VTAVw_NI_O-PL    Plural forms
-
-
-
-
- LEXICON VTAVw_KI_O 	     gives the objects suffixes matching 2Sg subject
-
-
-
- LEXICON VTAVw_KI_O-PL 	     plural forms
-
-
-
- * LEXICON VTAVw_NULL_O 	  
-
-
-
- * LEXICON VTAVw_NULL_O-PL 	  
-
-
-
- LEXICON VTACw_NI_O   gives the objects suffixes matching 1Sg subject or 1Sg object
-
-
-
-
- LEXICON VTACw_KI_O 	     gives the objects suffixes matching 2Sg subject
-
-
-
-
- * LEXICON VTACw_NULL_O 	  
-
-
-
-
-
-
-
- LEXICON TA_CNJ_WICI  Third mode, conjunctive
-
-
- LEXICON TA_CNJ  Third mode, conjunctive
-
-
-
- LEXICON TA_CNJTS_WICI  Third mode, conjunctive
-
-
- LEXICON TA_CNJTS  Third mode, conjunctive
-
-
- LEXICON TA_CNJVw_WICI  Third mode, conjunctive
-
-
- LEXICON TA_CNJVw  Third mode, conjunctive
-
-
-
- LEXICON TA_CNJVw-PL_WICI  Third mode, conjunctive, plural forms
-
-
- LEXICON TA_CNJVw-PL  Third mode, conjunctive, plural forms
-
-
-
-
- LEXICON TA_CNJCw_WICI  Third mode, conjunctive
-
-
- LEXICON TA_CNJCw  Third mode, conjunctive
-
-
-
-
-
- LEXICON TA_CNJ_SUF  gives conj + obj tag and suf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- LEXICON TA_CNJTS_SUF  gives conj + obj tag and suf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- LEXICON TA_CNJVw_SUF  gives conj + obj tag and suf
-
-
-
-
-
-
-
-
- LEXICON TA_CNJVw_SUF-PL  gives conj + obj tag and suf, plural forms
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- LEXICON TA_CNJCw_SUF  gives conj + obj tag and suf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- * LEXICON TA_FUT_WICI 
-
-
- * LEXICON TA_FUT 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- * LEXICON TA_FUTTS_WICI 
-
-
- * LEXICON TA_FUTTS 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- * LEXICON TA_FUTVw_WICI 
-
-
- * LEXICON TA_FUTVw 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- * LEXICON TA_FUTVw-PL  plural
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- * LEXICON TA_FUTCw_WICI 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- * LEXICON TA_IMPVw-PL_WICI  plural
-
-
-
-
-
-
-
- * LEXICON TA_IMPCw 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- * LEXICON 2Sg_Imp 
-
- * LEXICON 2Pl_Imp 
-
- * LEXICON 12Pl_Imp 
-
- * LEXICON 2SgTS_Imp 
-
- * LEXICON 2PlTS_Imp 
-
- * LEXICON 12PlTS_Imp 
-
- * LEXICON 2SgVw_Imp 
-
- * LEXICON 2PlVw_Imp 
-
-LEXICON 12PlVw_Imp
-+Imm+12Pl+3SgO:%>âtân # ;
-+Imm+12Pl+3PlO:%>âtânik # ;
-+Del+12Pl+3SgO:%>âhkahk # ;
-+Del+12Pl+3PlO:%>âhkahkok # ;
-
- * LEXICON 2SgCw_Imp 
-
- * LEXICON 2PlCw_Imp 
-
- * LEXICON 12PlCw_Imp 
-
- * LEXICON 2Sgi_Imp 
-
- * LEXICON 2SgTSi_Imp 
-
-
-
-Transitive Inanimate (TI)
 
  * LEXICON TICONJ   
 
  * LEXICON TICONJ-PL    Plural
 
+ * LEXICON TICONJi   NOTE: These inflect just as VAI -w final stems, so they are redirected to those paradigms
 
- * LEXICON TICONJi   
+ * LEXICON TICONJâ   These inflect just as VAI -w final stems, so they are redirected to those paradigms
 
- * LEXICON TICONJâ   
 
 
- * LEXICON TICONJ-CONT 
 
- * LEXICON TICONJ-CONT-PL  plural
 
 
- * LEXICON TICONJi-CONT 
 
- * LEXICON TICONJâ-CONT 
 
+ LEXICON TIt_ORDER  . 
 
+ LEXICON TIt_PL_ORDER  plural only NOTE: imperative and fut con go straight to person lexica
 
 
 
 
 
 
+ LEXICON TIt_PL_IND_TENSE  plural only
 
+ LEXICON TIt_PL_CNJ_TENSE  plural only
 
 
 
 
 
+ LEXICON TIt_IND_PERSON  
 
+ LEXICON TIt_CNJ_PERSON  
 
+ LEXICON TIt_FUT_CON_PERSON  
 
+ LEXICON TIt_IMP_PERSON  
 
+ LEXICON TIt_PL_IND_PERSON  plural only
 
+ LEXICON TIt_PL_CNJ_PERSON  plural only
 
+ LEXICON TIt_PL_FUT_CON_PERSON  plural only
 
+ LEXICON TIt_PL_IMP_PERSON  plural only
 
 
- LEXICON TI_IND  First mode, indicative
 
- LEXICON TI_IND-PL  First mode, indicative
 
 
- LEXICON TI_INDi  First mode, indicative
 
- LEXICON TI_INDâ  First mode, indicative
+ LEXICON TIt_IND_NI     
 
+ LEXICON TIt_IND_NI_SG_SUFFIX    
 
- LEXICON TI_IND_PRS  gives person suffixes singular
+ LEXICON TIt_IND_NI_PL_SUFFIX    
 
+ LEXICON TIt_IND_KI     
 
+ LEXICON TIt_IND_KI_SG_SUFFIX    
 
+ LEXICON TIt_IND_KI_PL_SUFFIX    
 
+ LEXICON TIt_IND_NULL     
 
+ LEXICON TIt_IND_NULL_SG_SUFFIX    NOTE: X actor will eventually derive to VII, so it is not yet included as per Arok's paradigm
 
- LEXICON TI_IND_PRS-PL  gives person suffixes plural
 
+ LEXICON TIt_IND_NULL_PL_SUFFIX    
 
 
 
 
- LEXICON TI_INDi_PRS  gives person suffixes
 
 
 
- LEXICON TI_INDâ_PRS  gives person suffixes
+ LEXICON TIt_CNJ_NULL    
 
 
+ LEXICON TIt_CNJ_NULL_SG_SUFFIX    
 
 
- * LEXICON TI_FUT_CON 
+ LEXICON TIt_CNJ_NULL_PL_SUFFIX    
 
- * LEXICON TI_FUTi_CON 
 
 
 
- * LEXICON TI_FUTâ_CON 
 
 
 
- * LEXICON TI_FUT_CON-PL 
 
 
- LEXICON TI_CNJ  Third mode, conjunctive
 
- LEXICON TI_CNJ-PL  Third mode, conjunctive
 
- LEXICON TI_CNJi  Third mode, conjunctive
 
- LEXICON TI_CNJâ  Third mode, conjunctive
 
- * LEXICON TI_CNJ_SUF 
 
- * LEXICON TI_CNJ_SUF-PL 
 
- * LEXICON TI_CNJi_SUF 
 
- * LEXICON TI_CNJâ_SUF 
 
 
+ LEXICON TIt_FUT_CON_NULL    
 
 
- * LEXICON TI_IMP 
+ LEXICON TIt_FUT_CON_NULL_SG_SUFFIX    
 
- * LEXICON TI_IMP-PL 
 
+ LEXICON TIt_FUT_CON_NULL_PL_SUFFIX    
 
- * LEXICON TI_IMPi 
 
 
- * LEXICON TI_IMPâ 
 
 
- * LEXICON TI_IMP_LONG_E 
 
- * LEXICON TI_imp-long-E 
+
+
+
+Transitive inanimate (TA)
+
+The VTA verbs split in different orders.
+There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
+
+
+ LEXICON TACONJ_1  Regular verbs
+
+ * LEXICON TACONJ_2   -Vw stem-ending verbs; where + i suf deletes w and i
+
+ * LEXICON TACONJ_2-PL   -Vw stem-ending verbs; when deletes w and i plural only forms
+
+ * LEXICON TACONJ_3   -Cw stem-ending verbs; where w and i fuse to o
+
+ * LEXICON TACONJ_4   -t stem-ending verbs; where t becomes s in some cases
+
+ * LEXICON TACONJ_5  verbs that take a -i in 2sg imm. imp. due to moraic constraints
+
+ * LEXICON TACONJ_5-TS   verbs that take a -i in 2sg imm. imp. due to moraic constraints, but also have stem final t becoming s in some cases.
+
+
+
+ LEXICON TACONJ_WICI  Regular verbs
+
+ * LEXICON TACONJvw_WICI   -Vw stem-ending verbs; where + i suf deletes w and i
+
+ * LEXICON TACONJvw_PL_WICI   -Vw stem-ending verbs; when deletes w and i plural only forms 
+
+ * LEXICON TACONJcw_WICI   -Cw stem-ending verbs; where w and i fuse to o 
+
+ * LEXICON TACONJt_WICI   -t stem-ending verbs; where t becomes s in some cases 
+
+ * LEXICON TACONJi_WICI   verbs that take a -i in 2sg imm. imp. due to moraic constraints 
+
+ * LEXICON TACONJti_WICI    verbs that take a -i in 2sg imm. imp. due to moraic constraints, but also have stem final t becoming s in some cases 
+
+
+
+ LEXICON TA_ORDER  Note: Imp and Fut Con don't take tense 
+
+ LEXICON TAvw_ORDER  Note: Imp and Fut Con don't take tense
+
+ LEXICON TAvw_PL_ORDER  Note: Imp and Fut Con don't take tense 
+
+ LEXICON TAcw_ORDER  Note: Imp and Fut Con don't take tense 
+
+ LEXICON TAt_ORDER  Note: Imp and Fut Con don't take tense ; Independent is same as TA regular
+
+ LEXICON TAi_ORDER  Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
+
+ LEXICON TAti_ORDER  Note: Imp and Fut Con don't take tense ; Independent is as TA regular, Imp as TAi, all else is as TAt
+
+
+
+
+
+
+ LEXICON TAvw_IND_TENSE  plural only
+
+ LEXICON TAvw_CNJ_TENSE  plural only
+
+
+ LEXICON TAvw_PL_IND_TENSE  plural only
+
+ LEXICON TAvw_PL_CNJ_TENSE  plural only
+
+
+ LEXICON TAcw_IND_TENSE  plural only
+
+ LEXICON TAcw_CNJ_TENSE  plural only
+
+
+ LEXICON TAt_IND_TENSE  plural only
+
+ LEXICON TAt_CNJ_TENSE  plural only
+
+
+ LEXICON TAi_IND_TENSE  plural only
+
+ LEXICON TAi_CNJ_TENSE  plural only
+
+
+ LEXICON TAti_IND_TENSE  plural only
+
+ LEXICON TAti_CNJ_TENSE  plural only
+
+
+
+
+ LEXICON TA_IND_PERSON  
+
+ LEXICON TA_CNJ_PERSON  
+
+ LEXICON TA_FUT_CON_PERSON  
+
+ LEXICON TA_IMP_PERSON  
+
+
+ LEXICON TAvw_IND_PERSON  
+
+ LEXICON TAvw_CNJ_PERSON  
+
+ LEXICON TAvw_FUT_CON_PERSON  
+
+ LEXICON TAvw_IMP_PERSON  Identical to TA IMP
+
+
+ LEXICON TAvw_PL_IND_PERSON  
+
+ LEXICON TAvw_PL_CNJ_PERSON  
+
+ LEXICON TAvw_PL_FUT_CON_PERSON  
+
+ LEXICON TAvw_PL_IMP_PERSON  
+
+
+ LEXICON TAcw_IND_PERSON  
+
+ LEXICON TAcw_CNJ_PERSON  
+
+ LEXICON TAcw_FUT_CON_PERSON  
+
+ LEXICON TAcw_IMP_PERSON  
+
+
+ LEXICON TAt_IND_PERSON  
+
+ LEXICON TAt_CNJ_PERSON  
+
+ LEXICON TAt_FUT_CON_PERSON 
+
+ LEXICON TAt_IMP_PERSON  
+
+
+
+ LEXICON TAi_IND_PERSON  
+
+ LEXICON TAi_CNJ_PERSON 
+
+ LEXICON TAi_FUT_CON_PERSON 
+
+ LEXICON TAi_IMP_PERSON  
+
+
+
+ LEXICON TAti_IND_PERSON  
+
+ LEXICON TAti_CNJ_PERSON 
+
+ LEXICON TAti_FUT_CON_PERSON 
+
+ LEXICON TAti_IMP_PERSON  
+
+
+
+
+
+
+
+
+ LEXICON TA_IND_NI     NOTE: No local, as local forms are always with ki-
+
+
+ LEXICON TA_IND_NI_SG_SUFFIX   
+
+
+
+
+
+
+
+
+
+
+ LEXICON TA_IND_NI_PL_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TA_IND_KI     
+
+
+ LEXICON TA_IND_KI_SG_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TA_IND_KI_PL_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TA_IND_NULL     NOTE: never local
+
+
+
+ LEXICON TA_IND_NULL_SG_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+ LEXICON TA_IND_NULL_PL_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAvw_IND_NI     NOTE: No local, as local forms are always with ki-
+
+
+ LEXICON TAvw_IND_NI_SG_SUFFIX   
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAvw_IND_NI_PL_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAvw_IND_KI     
+
+
+ LEXICON TAvw_IND_KI_SG_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAvw_IND_KI_PL_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAvw_IND_NULL     NOTE: never local
+
+
+
+ LEXICON TAvw_IND_NULL_SG_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAvw_IND_NULL_PL_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAcw_IND_NI     NOTE: No local, as local forms are always with ki-
+
+
+ LEXICON TAcw_IND_NI_SG_SUFFIX   
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAcw_IND_NI_PL_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAcw_IND_KI     
+
+
+ LEXICON TAcw_IND_KI_SG_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAcw_IND_KI_PL_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAcw_IND_NULL     NOTE: never local
+
+
+
+ LEXICON TAcw_IND_NULL_SG_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAcw_IND_NULL_PL_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAt_IND_KI     
+
+
+ LEXICON TAt_IND_KI_SG_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ LEXICON TAt_IND_KI_PL_SUFFIX    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
