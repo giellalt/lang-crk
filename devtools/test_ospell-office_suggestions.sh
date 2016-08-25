@@ -8,7 +8,7 @@
 # set -x
 
 # Language being tested, ISO 639-1 code if available:
-GTLANG2=se
+GTLANG2=crk
 
 # Directory variables:
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
