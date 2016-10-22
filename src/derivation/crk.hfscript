@@ -1,0 +1,15 @@
+! Morphology
+
+read lexc crk.lexc
+define Morphology
+
+! Phonology
+
+source crk.regex
+define Phonology
+
+read regex [ Morphology .o. Phonology ] ;
+
+invert net
+
+save stack crk.hfst
