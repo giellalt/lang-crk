@@ -1,0 +1,52 @@
+! Phonology 
+
+define dimRule [ t -> c || _ ?* %/  [ i s ( i s ) | s i ] [ %/ | .#. ] ] ;
+
+define ên2ânRule [ ê -> â || %/ _ %/ n %/ ] ; 
+
+! VG-i > V̅
+
+define aGiRule [ [ a | â ] [ w | y ] %/ i -> â ] ;
+
+define eGiRule [ ê [ w | y ] %/ i -> ê ] ;
+
+define iGiRule [ [ i | î ] [ w | y ] %/ i -> î ] ;
+
+define oGiRule [ [ o | ô ] [ w | y ] %/ i -> ô ] ;
+
+define w2oRule [ w -> o || [ c | h | k | m | n | p | s | t ] _ %/ [ c | h | k | m | n | p | s | t ] ] ; 
+
+! T > s / _ i, i:
+! t > c / _ i, i:
+! T, t > t / _ e (> i), elsewhere
+
+define TsRule [ T -> s || _ %/ [ i | î ] ] ;
+
+define TtRule [ T -> t ] ;
+
+define tcRule [ t (->) c || _ %/ [ i | î ] ] ;
+
+! define tcRule [ t -> c || _ %/ i [ %/ | .#. ] ] ;
+
+define wVowelRule [ w %/ i -> %/ o ] ;
+
+define boundaryRule [ %/ -> 0 ] ;
+
+read regex [ dimRule
+.o. ên2ânRule
+.o. TsRule
+.o. tcRule
+.o. TtRule
+.o. aGiRule
+.o. eGiRule
+.o. iGiRule
+.o. oGiRule
+.o. w2oRule
+.o. wVowelRule
+.o. boundaryRule
+] ;
+
+! define Phonology
+! invert net
+! save stack crk-phon.fst
+

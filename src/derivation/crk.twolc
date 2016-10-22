@@ -1,0 +1,27 @@
+! Phonology 
+
+Alphabet
+
+  a b c d e f g h i j k l m n o p q r s t u v w x y z
+  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+  â ê
+
+  %/:0
+  ;
+
+Rules
+
+  "Diminutive palatalization rule"
+  t:c <=> _ ?* %/  [ i s ( i s ) | s i ] [ %/ | .#. ] ;
+
+  "e to a rule"
+  ê:â <=> %/ _ %/ n %/ ; 
+
+  "w to o rule"
+  w:o <=> [ c | h | k | m | n | p | s | t ] _ %/ [ c | h | k | m | n | p | s | t ] ; 
+
+  "t palatalization rule"
+  t:c <=>  _ %/ i [ %/ | .#. ] ;
+
+  "w to o rule 2"
+  w:o <=> _ %/ i:0 ;
