@@ -30,6 +30,8 @@ define tcRule [ t (->) c || _ %/ [ i | î ] ] ;
 
 define wVowelRule [ w %/ i -> %/ o ] ;
 
+define e2irule [ e -> i | ;
+
 define boundaryRule [ %/ -> 0 ] ;
 
 read regex [ dimRule
@@ -43,6 +45,7 @@ read regex [ dimRule
 .o. oGiRule
 .o. w2oRule
 .o. wVowelRule
+.o. e2iRule
 .o. boundaryRule
 ] ;
 
