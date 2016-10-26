@@ -22,15 +22,15 @@ define w2oRule [ w -> o || [ c | h | k | m | n | p | s | t ] _ %/ [ c | h | k | 
 
 define TsRule [ T -> s || _ %/ [ i | î ] ] ;
 
-define TtRule [ T -> t ] ;
+define tcRule [ t -> c || _ %/ [ i | î ] ] ;
 
-define tcRule [ t (->) c || _ %/ [ i | î ] ] ;
+define TtRule [ T -> t ] ;
 
 ! define tcRule [ t -> c || _ %/ i [ %/ | .#. ] ] ;
 
-define wVowelRule [ w %/ i -> %/ o ] ;
-
 define e2irule [ e -> i | ;
+
+define wVowelRule [ w %/ i -> %/ o ] ;
 
 define boundaryRule [ %/ -> 0 ] ;
 
@@ -44,8 +44,8 @@ read regex [ dimRule
 .o. iGiRule
 .o. oGiRule
 .o. w2oRule
-.o. wVowelRule
 .o. e2iRule
+.o. wVowelRule
 .o. boundaryRule
 ] ;
 
