@@ -841,11 +841,11 @@ LEXICON AICONJn-PL !!= @CODE@
 
 LEXICON AICONJw_WICI !!!!
 @U.wici.NULL@ AIw_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI AIw_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@m TAcw_ORDER ;
 
 LEXICON AICONJw_PL_WICI !!!! plural only
 @U.wici.NULL@ AIw_PL_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI AIw_PL_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@m TAcw_PL_ORDER ;
 
 ! ===========================================================
 ! ===========================================================
@@ -855,11 +855,11 @@ LEXICON AICONJw_PL_WICI !!!! plural only
 
 LEXICON AICONJn_WICI !!!!
 @U.wici.NULL@ AIn_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI AIn_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im TAcw_ORDER ;
 
 LEXICON AICONJn_PL_WICI !!!! plural only
 @U.wici.NULL@ AIn_PL_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI AIn_PL_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im TAcw_PL_ORDER ;
 
 !!! ORDERS
 
@@ -1458,11 +1458,11 @@ LEXICON TICONJâ  !!= * @CODE@ These inflect just as VAI -w final stems, so they
 
 LEXICON TICONJ_WICI
 @U.wici.NULL@ TIt_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI TIt_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im TAcw_ORDER ;
 
 LEXICON TICONJ_PL_WICI
 @U.wici.NULL@ TIt_PL_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI TIt_PL_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im TAcw_PL_ORDER ;
 
 !!! ORDERS
 
@@ -1763,25 +1763,25 @@ LEXICON TIt_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 !!! STEM CLASS
 
 LEXICON TACONJ_1 !!= @CODE@ Regular verbs
-+V+TA: TACONJ_WICI ;
++V+TA: TA_ORDER ;
 
 LEXICON TACONJ_2  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
-+V+TA: TACONJvw_WICI ;
++V+TA: TAvw_ORDER ;
 
 LEXICON TACONJ_2-PL  !!= * @CODE@ -Vw stem-ending verbs; when deletes w and i plural only forms
-+V+TA: TACONJvw_PL_WICI ;
++V+TA: TAvw_PL_ORDER ;
 
 LEXICON TACONJ_3  !!= * @CODE@ -Cw stem-ending verbs; where w and i fuse to o
-+V+TA: TACONJcw_WICI ;
++V+TA: TAcw_ORDER;
 
 LEXICON TACONJ_4  !!= * @CODE@ -t stem-ending verbs; where t becomes s in some cases
-+V+TA: TACONJt_WICI ;
++V+TA: TAt_ORDER ;
 
 LEXICON TACONJ_5 !!= * @CODE@ verbs that take a -i in 2sg imm. imp. due to moraic constraints
-+V+TA: TACONJi_WICI ;
++V+TA: TAi_ORDER ;
 
 LEXICON TACONJ_5-TS !!= * @CODE@  verbs that take a -i in 2sg imm. imp. due to moraic constraints, but also have stem final t becoming s in some cases.
-+V+TA: TACONJti_WICI ;
++V+TA: TAti_ORDER ;
 
 !!! WICI
 
@@ -1789,31 +1789,29 @@ LEXICON TACONJ_5-TS !!= * @CODE@  verbs that take a -i in 2sg imm. imp. due to m
 
 LEXICON TACONJ_WICI !!= @CODE@ Regular verbs
 @U.wici.NULL@ TA_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI TA_ORDER ;
 
 LEXICON TACONJvw_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
 @U.wici.NULL@ TAvw_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI TAvw_ORDER ;
+
 
 LEXICON TACONJvw_PL_WICI  !!= * @CODE@ -Vw stem-ending verbs; when deletes w and i plural only forms 
 @U.wici.NULL@ TAvw_PL_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI TAvw_PL_ORDER ;
+
 
 LEXICON TACONJcw_WICI  !!= * @CODE@ -Cw stem-ending verbs; where w and i fuse to o 
 @U.wici.NULL@ TAcw_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI TAcw_ORDER ;
 
 LEXICON TACONJt_WICI  !!= * @CODE@ -t stem-ending verbs; where t becomes s in some cases 
 @U.wici.NULL@ TAt_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI TAt_ORDER ;
+
 
 LEXICON TACONJi_WICI  !!= * @CODE@ verbs that take a -i in 2sg imm. imp. due to moraic constraints 
 @U.wici.NULL@ TAi_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI TAi_ORDER ;
+
 
 LEXICON TACONJti_WICI  !!= * @CODE@  verbs that take a -i in 2sg imm. imp. due to moraic constraints, but also have stem final t becoming s in some cases 
 @U.wici.NULL@ TAti_ORDER ;
-@U.wici.wici@+Rel:@U.wici.wici@mi^MI TAti_ORDER ;
+
 
 !!! ORDERS
 
@@ -1842,6 +1840,13 @@ LEXICON TAcw_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense
 < "+Cnj":0  "@U.order.cnj@" > TAcw_CNJ_TENSE ; !
 < "+Imp":%>    "@U.order.imp@"  >  TAcw_IMP_PERSON ; !
 < "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TAcw_FUT_CON_PERSON ; !
+
+LEXICON TAcw_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
+< "+Ind":0  "@U.order.indep@" >  TAcw_PL_IND_TENSE ; !
+< "+Cnj":0  "@U.order.cnj@" > TAcw_PL_CNJ_TENSE ; !
+< "+Imp":%>    "@U.order.imp@"  >  TAcw_PL_IMP_PERSON ; !
+< "+Fut":0 "+Cond":0 "@U.order.FutCon@" > TAcw_PL_FUT_CON_PERSON ; !
+
 
 LEXICON TAt_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Independent is same as TA regular
 < "+Ind":0  "@U.order.indep@" >  TA_IND_TENSE ; !
@@ -1916,16 +1921,29 @@ LEXICON TAvw_PL_CNJ_TENSE !!= @CODE@ plural only
 ! ============================================================
 ! ============================================================
 
-LEXICON TAcw_IND_TENSE !!= @CODE@ plural only
+LEXICON TAcw_IND_TENSE !!= @CODE@  
 < "@U.tense.Prs@"    "+Prs":%>          > TAcw_IND_PERSON ; !
 < "@U.tense.Prt@"    "+Prt":%>          > TAcw_IND_PERSON ; !
 < "@U.tense.FutDef@" "+Fut":0 "+Def":%> > TAcw_IND_PERSON ; !
 < "@U.tense.FutInt@" "+Fut":0 "+Int":%> > TAcw_IND_PERSON ; !
 
-LEXICON TAcw_CNJ_TENSE !!= @CODE@ plural only
+LEXICON TAcw_CNJ_TENSE !!= @CODE@  
 < "+Prs":0          "@U.tense.Prs@"    > TAcw_CNJ_PERSON ; !
 < "+Prt":0          "@U.tense.Prt@"    > TAcw_CNJ_PERSON ; !
 < "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TAcw_CNJ_PERSON ; !intentional
+
+!!!! -Cw stem-ending plural only verbs !!!!
+
+LEXICON TAcw_PL_IND_TENSE !!= @CODE@ plural only
+< "@U.tense.Prs@"    "+Prs":%>          > TAcw_PL_IND_PERSON ; !
+< "@U.tense.Prt@"    "+Prt":%>          > TAcw_PL_IND_PERSON ; !
+< "@U.tense.FutDef@" "+Fut":0 "+Def":%> > TAcw_PL_IND_PERSON ; !
+< "@U.tense.FutInt@" "+Fut":0 "+Int":%> > TAcw_PL_IND_PERSON ; !
+
+LEXICON TAcw_PL_CNJ_TENSE !!= @CODE@ plural only
+< "+Prs":0          "@U.tense.Prs@"    > TAcw_PL_CNJ_PERSON ; !
+< "+Prt":0          "@U.tense.Prt@"    > TAcw_PL_CNJ_PERSON ; !
+< "+Fut":0 "+Int":0 "@U.tense.FutInt@" > TAcw_PL_CNJ_PERSON ; !intentional
 
 ! ========================================================
 ! ========================================================
@@ -2056,6 +2074,23 @@ LEXICON TAcw_FUT_CON_PERSON !!= @CODE@
 
 LEXICON TAcw_IMP_PERSON !!= @CODE@ 
 @U.person.NULL@ TAcw_IMP_NULL ;
+
+!!!! -Cw stem-ending verbs plural only !!!!
+
+LEXICON TAcw_PL_IND_PERSON !!= @CODE@ 
+@U.person.NI@ TAcw_IND_NI_PL_SUFFIX ;
+@U.person.KI@ TAcw_IND_KI_PL_SUFFIX ;
+@U.person.NULL@ TAcw_IND_NULL_PL_SUFFIX ;
+
+LEXICON TAcw_PL_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ TAcw_CNJ_NULL_PL_SUFFIX ;
+
+LEXICON TAcw_PL_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ TAcw_FUT_CON_NULL_PL_SUFFIX ;
+
+LEXICON TAcw_PL_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ TA_IMP_NULL_PL_SUFFIX ;
+
 
 ! ========================================================
 ! ========================================================
