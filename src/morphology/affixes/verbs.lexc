@@ -50,15 +50,15 @@ LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
 @U.tense.Prs@                                                            PREVERBS ;
-@U.tense.Prt@@P.joiner.NULL@:@U.tense.Prt@@P.joiner.NULL@kî^EGLOT       PREVERBS ;
-@U.tense.Prt@@P.joiner.hyphen@:@U.tense.Prt@@P.joiner.hyphen@kî-        PREVERBS ;
+@U.tense.Pst@@P.joiner.NULL@:@U.tense.Pst@@P.joiner.NULL@kî^EGLOT       PREVERBS ;
+@U.tense.Pst@@P.joiner.hyphen@:@U.tense.Pst@@P.joiner.hyphen@kî-        PREVERBS ;
 @U.tense.FutDef@@P.joiner.NULL@:@U.tense.FutDef@@P.joiner.NULL@ka^EGLOT PREVERBS ;
 @U.tense.FutDef@@P.joiner.hyphen@:@U.tense.FutDef@@P.joiner.hyphen@ka-  PREVERBS ;
 @U.tense.FutInt@@P.joiner.NULL@:@U.tense.FutInt@@P.joiner.NULL@wî^EGLOT PREVERBS ;
 @U.tense.FutInt@@P.joiner.hyphen@:@U.tense.FutInt@@P.joiner.hyphen@wî-  PREVERBS ;
 ! <                   "@U.tense.Prs@"                        > PREVERBS ; !
-! < 0:k 0:î 0:^EGLOT "@U.tense.Prt@"    "@P.joiner.NULL@"   > PREVERBS ; ! 
-! < 0:k 0:î 0:-      "@U.tense.Prt@"    "@P.joiner.hyphen@" > PREVERBS ; !
+! < 0:k 0:î 0:^EGLOT "@U.tense.Pst@"    "@P.joiner.NULL@"   > PREVERBS ; ! 
+! < 0:k 0:î 0:-      "@U.tense.Pst@"    "@P.joiner.hyphen@" > PREVERBS ; !
 ! < 0:k 0:a 0:^EGLOT "@U.tense.FutDef@" "@P.joiner.NULL@"   > PREVERBS ; !
 ! < 0:k 0:a 0:-      "@U.tense.FutDef@" "@P.joiner.hyphen@" > PREVERBS ; !
 ! < 0:w 0:î 0:^EGLOT "@U.tense.FutInt@" "@P.joiner.NULL@"   > PREVERBS ; ! N.B. - move to a next lexicon
@@ -84,13 +84,13 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâ
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
 @U.tense.Prs@                                                                          PREVERBS ;
-@U.tense.Prt@@U.joiner.hyphen@@C.cnj@:@U.tense.Prt@@U.joiner.hyphen@@C.cnj@kî-        PREVERBS ;
-@U.tense.Prt@@U.joiner.NULL@@C.cnj@:@U.tense.Prt@@U.joiner.NULL@@C.cnj@kî^EGLOT       PREVERBS ;
+@U.tense.Pst@@U.joiner.hyphen@@C.cnj@:@U.tense.Pst@@U.joiner.hyphen@@C.cnj@kî-        PREVERBS ;
+@U.tense.Pst@@U.joiner.NULL@@C.cnj@:@U.tense.Pst@@U.joiner.NULL@@C.cnj@kî^EGLOT       PREVERBS ;
 @U.tense.FutInt@@U.joiner.hyphen@@C.cnj@:@U.tense.FutInt@@U.joiner.hyphen@@C.cnj@wî-  PREVERBS ;
 @U.tense.FutInt@@U.joiner.NULL@@C.cnj@:@U.tense.FutInt@@U.joiner.NULL@@C.cnj@wî^EGLOT PREVERBS ;
 ! <                   "@U.tense.Prs@"                        > PREVERBS ; ! Present
-! < 0:k 0:î 0:-      "@U.tense.Prt@" "@U.joiner.hyphen@" "@C.cnj@"    > PREVERBS ; ! Preterite, 
-! < 0:k 0:î 0:^EGLOT "@U.tense.Prt@" "@U.joiner.NULL@" "@C.cnj@"      > PREVERBS ; ! Preterite,
+! < 0:k 0:î 0:-      "@U.tense.Pst@" "@U.joiner.hyphen@" "@C.cnj@"    > PREVERBS ; ! Preterite, 
+! < 0:k 0:î 0:^EGLOT "@U.tense.Pst@" "@U.joiner.NULL@" "@C.cnj@"      > PREVERBS ; ! Preterite,
 ! < 0:w 0:î 0:-      "@U.tense.FutInt@" "@U.joiner.hyphen@" "@C.cnj@" > PREVERBS ; ! Future Intentional
 ! < 0:w 0:î 0:^EGLOT "@U.tense.FutInt@" "@U.joiner.NULL@" "@C.cnj@"   > PREVERBS ; ! Future Intentional
 
