@@ -50,15 +50,15 @@ LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
 @U.tense.Prs@                                                            PREVERBS ;
-@U.tense.Pst@@P.joiner.NULL@:@U.tense.Pst@@P.joiner.NULL@kî^EGLOT       PREVERBS ;
-@U.tense.Pst@@P.joiner.hyphen@:@U.tense.Pst@@P.joiner.hyphen@kî-        PREVERBS ;
+@U.tense.Prt@@P.joiner.NULL@:@U.tense.Prt@@P.joiner.NULL@kî^EGLOT       PREVERBS ;
+@U.tense.Prt@@P.joiner.hyphen@:@U.tense.Prt@@P.joiner.hyphen@kî-        PREVERBS ;
 @U.tense.FutDef@@P.joiner.NULL@:@U.tense.FutDef@@P.joiner.NULL@ka^EGLOT PREVERBS ;
 @U.tense.FutDef@@P.joiner.hyphen@:@U.tense.FutDef@@P.joiner.hyphen@ka-  PREVERBS ;
 @U.tense.FutInt@@P.joiner.NULL@:@U.tense.FutInt@@P.joiner.NULL@wî^EGLOT PREVERBS ;
 @U.tense.FutInt@@P.joiner.hyphen@:@U.tense.FutInt@@P.joiner.hyphen@wî-  PREVERBS ;
 ! <                   "@U.tense.Prs@"                        > PREVERBS ; !
-! < 0:k 0:î 0:^EGLOT "@U.tense.Pst@"    "@P.joiner.NULL@"   > PREVERBS ; ! 
-! < 0:k 0:î 0:-      "@U.tense.Pst@"    "@P.joiner.hyphen@" > PREVERBS ; !
+! < 0:k 0:î 0:^EGLOT "@U.tense.Prt@"    "@P.joiner.NULL@"   > PREVERBS ; ! 
+! < 0:k 0:î 0:-      "@U.tense.Prt@"    "@P.joiner.hyphen@" > PREVERBS ; !
 ! < 0:k 0:a 0:^EGLOT "@U.tense.FutDef@" "@P.joiner.NULL@"   > PREVERBS ; !
 ! < 0:k 0:a 0:-      "@U.tense.FutDef@" "@P.joiner.hyphen@" > PREVERBS ; !
 ! < 0:w 0:î 0:^EGLOT "@U.tense.FutInt@" "@P.joiner.NULL@"   > PREVERBS ; ! N.B. - move to a next lexicon
@@ -84,13 +84,13 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâ
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
 @U.tense.Prs@                                                                          PREVERBS ;
-@U.tense.Pst@@U.joiner.hyphen@@C.cnj@:@U.tense.Pst@@U.joiner.hyphen@@C.cnj@kî-        PREVERBS ;
-@U.tense.Pst@@U.joiner.NULL@@C.cnj@:@U.tense.Pst@@U.joiner.NULL@@C.cnj@kî^EGLOT       PREVERBS ;
+@U.tense.Prt@@U.joiner.hyphen@@C.cnj@:@U.tense.Prt@@U.joiner.hyphen@@C.cnj@kî-        PREVERBS ;
+@U.tense.Prt@@U.joiner.NULL@@C.cnj@:@U.tense.Prt@@U.joiner.NULL@@C.cnj@kî^EGLOT       PREVERBS ;
 @U.tense.FutInt@@U.joiner.hyphen@@C.cnj@:@U.tense.FutInt@@U.joiner.hyphen@@C.cnj@wî-  PREVERBS ;
 @U.tense.FutInt@@U.joiner.NULL@@C.cnj@:@U.tense.FutInt@@U.joiner.NULL@@C.cnj@wî^EGLOT PREVERBS ;
 ! <                   "@U.tense.Prs@"                        > PREVERBS ; ! Present
-! < 0:k 0:î 0:-      "@U.tense.Pst@" "@U.joiner.hyphen@" "@C.cnj@"    > PREVERBS ; ! Preterite, 
-! < 0:k 0:î 0:^EGLOT "@U.tense.Pst@" "@U.joiner.NULL@" "@C.cnj@"      > PREVERBS ; ! Preterite,
+! < 0:k 0:î 0:-      "@U.tense.Prt@" "@U.joiner.hyphen@" "@C.cnj@"    > PREVERBS ; ! Preterite, 
+! < 0:k 0:î 0:^EGLOT "@U.tense.Prt@" "@U.joiner.NULL@" "@C.cnj@"      > PREVERBS ; ! Preterite,
 ! < 0:w 0:î 0:-      "@U.tense.FutInt@" "@U.joiner.hyphen@" "@C.cnj@" > PREVERBS ; ! Future Intentional
 ! < 0:w 0:î 0:^EGLOT "@U.tense.FutInt@" "@U.joiner.NULL@" "@C.cnj@"   > PREVERBS ; ! Future Intentional
 
@@ -548,35 +548,35 @@ LEXICON IIn_PL_ORDER !!= @CODE@ plural only
 
 LEXICON IIw_IND_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIw_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIw_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIw_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_IND_PERSON ; !
 
 LEXICON IIw_CNJ_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIw_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIw_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_CNJ_PERSON ; !
 
 LEXICON IIw_SG_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIw_SG_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIw_SG_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_SG_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIw_SG_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_SG_IND_PERSON ; !
 
 LEXICON IIw_SG_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIw_SG_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIw_SG_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_SG_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_SG_CNJ_PERSON ; !
 
 LEXICON IIw_PL_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIw_PL_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIw_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_PL_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIw_PL_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_PL_IND_PERSON ; !
 
 LEXICON IIw_PL_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIw_PL_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIw_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_PL_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_PL_CNJ_PERSON ; !
 
 ! ===========================================================
@@ -587,35 +587,35 @@ LEXICON IIw_PL_CNJ_TENSE !!= @CODE@ plural only
 
 LEXICON IIn_IND_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIn_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIn_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIn_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_IND_PERSON ; !
 
 LEXICON IIn_CNJ_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIn_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIn_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_CNJ_PERSON ; !
 
 LEXICON IIn_SG_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIn_SG_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIn_SG_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_SG_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIn_SG_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_SG_IND_PERSON ; !
 
 LEXICON IIn_SG_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIn_SG_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIn_SG_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_SG_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_SG_CNJ_PERSON ; !
 
 LEXICON IIn_PL_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIn_PL_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIn_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_PL_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIn_PL_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_PL_IND_PERSON ; !
 
 LEXICON IIn_PL_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ IIn_PL_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ IIn_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_PL_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_PL_CNJ_PERSON ; !
 
 !!! PERSON
@@ -913,24 +913,24 @@ LEXICON AIn_PL_ORDER !!= @CODE@ plural only
 
 LEXICON AIw_IND_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ AIw_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ AIw_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ AIw_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ AIw_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIw_IND_PERSON ; !
 
 LEXICON AIw_CNJ_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ AIw_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ AIw_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ AIw_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIw_CNJ_PERSON ; !
 
 LEXICON AIw_PL_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ AIw_PL_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ AIw_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ AIw_PL_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ AIw_PL_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIw_PL_IND_PERSON ; !
 
 LEXICON AIw_PL_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ AIw_PL_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ AIw_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ AIw_PL_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIw_PL_CNJ_PERSON ; !
 
 ! ===========================================================
@@ -941,25 +941,25 @@ LEXICON AIw_PL_CNJ_TENSE !!= @CODE@ plural only
 
 LEXICON AIn_IND_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ AIn_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ AIn_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ AIn_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ AIn_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIn_IND_PERSON ; !
 
 LEXICON AIn_CNJ_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ AIn_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ AIn_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ AIn_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIn_CNJ_PERSON ; !
 
 LEXICON AIn_PL_IND_TENSE !!= @CODE@ plural only
 
 @U.tense.Prs@+Prs:@U.tense.Prs@ AIn_PL_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ AIn_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ AIn_PL_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ AIn_PL_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIn_PL_IND_PERSON ; !
 
 LEXICON AIn_PL_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ AIn_PL_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ AIn_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ AIn_PL_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIn_PL_CNJ_PERSON ; !
 
 
@@ -1499,24 +1499,24 @@ LEXICON TIt_PL_ORDER !!= @CODE@ plural only NOTE: imperative and fut con go stra
 
 LEXICON TIt_IND_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ TIt_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TIt_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TIt_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TIt_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TIt_IND_PERSON ; !
 
 LEXICON TIt_CNJ_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ TIt_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TIt_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TIt_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TIt_CNJ_PERSON ; !intentional
 
 LEXICON TIt_PL_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TIt_PL_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TIt_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TIt_PL_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TIt_PL_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TIt_PL_IND_PERSON ; !
 
 LEXICON TIt_PL_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TIt_PL_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TIt_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TIt_PL_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TIt_PL_CNJ_PERSON ; !intentional
 
 
@@ -1880,13 +1880,13 @@ LEXICON TAti_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Independ
 
 LEXICON TA_IND_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ TA_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TA_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TA_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TA_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TA_IND_PERSON ; !
 
 LEXICON TA_CNJ_TENSE
 @U.tense.Prs@+Prs:@U.tense.Prs@ TA_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TA_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TA_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TA_CNJ_PERSON ; !intentional
 
 ! ============================================================
@@ -1897,26 +1897,26 @@ LEXICON TA_CNJ_TENSE
 
 LEXICON TAvw_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAvw_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAvw_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAvw_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAvw_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAvw_IND_PERSON ; !
 
 LEXICON TAvw_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAvw_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAvw_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAvw_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAvw_CNJ_PERSON ; !intentional
 
 !!!! -Vw stem-ending verbs plural only !!!!
 
 LEXICON TAvw_PL_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAvw_PL_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAvw_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAvw_PL_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAvw_PL_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAvw_PL_IND_PERSON ; !
 
 LEXICON TAvw_PL_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAvw_PL_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAvw_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAvw_PL_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAvw_PL_CNJ_PERSON ; !intentional
 
 ! ============================================================
@@ -1927,26 +1927,26 @@ LEXICON TAvw_PL_CNJ_TENSE !!= @CODE@ plural only
 
 LEXICON TAcw_IND_TENSE !!= @CODE@  
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAcw_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAcw_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAcw_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAcw_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAcw_IND_PERSON ; !
 
 LEXICON TAcw_CNJ_TENSE !!= @CODE@  
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAcw_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAcw_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAcw_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAcw_CNJ_PERSON ; !intentional
 
 !!!! -Cw stem-ending plural only verbs !!!!
 
 LEXICON TAcw_PL_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAcw_PL_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAcw_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAcw_PL_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAcw_PL_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAcw_PL_IND_PERSON ; !
 
 LEXICON TAcw_PL_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAcw_PL_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAcw_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAcw_PL_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAcw_PL_CNJ_PERSON ; !intentional
 
 ! ========================================================
@@ -1957,13 +1957,13 @@ LEXICON TAcw_PL_CNJ_TENSE !!= @CODE@ plural only
 
 LEXICON TAt_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAt_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAt_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAt_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAt_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAt_IND_PERSON ; !
 
 LEXICON TAt_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAt_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAt_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAt_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAt_CNJ_PERSON ; !intentional
 
 ! ===================================
@@ -1974,13 +1974,13 @@ LEXICON TAt_CNJ_TENSE !!= @CODE@ plural only
 
 LEXICON TAi_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAi_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAi_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAi_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAi_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAi_IND_PERSON ; !
 
 LEXICON TAi_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAi_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAi_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAi_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAi_CNJ_PERSON ; !intentional
 
 ! ===================================================================
@@ -1991,13 +1991,13 @@ LEXICON TAi_CNJ_TENSE !!= @CODE@ plural only
 
 LEXICON TAti_IND_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAti_IND_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAti_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAti_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAti_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAti_IND_PERSON ; !
 
 LEXICON TAti_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ TAti_CNJ_PERSON ; !
-@U.tense.Pst@+Pst:@U.tense.Pst@ TAti_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ TAti_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAti_CNJ_PERSON ; !intentional
 
 
