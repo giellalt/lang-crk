@@ -1020,6 +1020,7 @@ Intransitive inanimate (II)
 
  LEXICON IIw_ORDER  
 
+
  LEXICON IIw_SG_ORDER  singular only
 
  LEXICON IIw_PL_ORDER  plural only 
@@ -1250,7 +1251,17 @@ Intransitive animate (AI)
 
  LEXICON AIw_IND_NULL_SG_SUFFIX    
 
+
+
+
+
+
  LEXICON AIw_IND_NULL_PL_SUFFIX   
+
+
+
+
+
 
 
  LEXICON AIn_IND_NI    
@@ -1269,7 +1280,14 @@ Intransitive animate (AI)
 
  LEXICON AIn_IND_NULL_SG_SUFFIX    
 
+
+
+
+
  LEXICON AIn_IND_NULL_PL_SUFFIX    
+
+
+
 
 
 
@@ -1282,7 +1300,13 @@ Intransitive animate (AI)
  LEXICON AIw_CNJ_NULL_SG_SUFFIX    
 
 
+
+
+
  LEXICON AIw_CNJ_NULL_PL_SUFFIX    
+
+
+
 
 
 
@@ -1292,7 +1316,15 @@ Intransitive animate (AI)
  LEXICON AIn_CNJ_NULL_SG_SUFFIX    
 
 
+
+
+
+
  LEXICON AIn_CNJ_NULL_PL_SUFFIX    
+
+
+
+
 
 
 
@@ -1320,7 +1352,11 @@ Intransitive animate (AI)
  LEXICON AIw_FUT_CON_NULL_SG_SUFFIX    
 
 
+
+
  LEXICON AIw_FUT_CON_NULL_PL_SUFFIX    
+
+
 
 
 
@@ -1328,6 +1364,8 @@ Intransitive animate (AI)
 
 
  LEXICON AIn_FUT_CON_NULL_SG_SUFFIX    
+
+
 
 
  LEXICON AIn_FUT_CON_NULL_PL_SUFFIX    
@@ -1410,7 +1448,11 @@ Transitive inanimate (TI)
  LEXICON TIt_IND_NULL_SG_SUFFIX    NOTE: X actor will eventually derive to VII, so it is not yet included as per Arok's paradigm
 
 
+
+
+
  LEXICON TIt_IND_NULL_PL_SUFFIX    
+
 
 
 
@@ -1424,7 +1466,10 @@ Transitive inanimate (TI)
  LEXICON TIt_CNJ_NULL_SG_SUFFIX    
 
 
+
+
  LEXICON TIt_CNJ_NULL_PL_SUFFIX    
+
 
 
 
@@ -1447,6 +1492,8 @@ Transitive inanimate (TI)
 
 
  LEXICON TIt_FUT_CON_NULL_SG_SUFFIX    
+
+
 
 
  LEXICON TIt_FUT_CON_NULL_PL_SUFFIX    
@@ -1485,15 +1532,20 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
  * LEXICON TACONJvw_WICI   -Vw stem-ending verbs; where + i suf deletes w and i
 
+
  * LEXICON TACONJvw_PL_WICI   -Vw stem-ending verbs; when deletes w and i plural only forms 
+
 
  * LEXICON TACONJcw_WICI   -Cw stem-ending verbs; where w and i fuse to o 
 
  * LEXICON TACONJt_WICI   -t stem-ending verbs; where t becomes s in some cases 
 
+
  * LEXICON TACONJi_WICI   verbs that take a -i in 2sg imm. imp. due to moraic constraints 
 
+
  * LEXICON TACONJti_WICI    verbs that take a -i in 2sg imm. imp. due to moraic constraints, but also have stem final t becoming s in some cases 
+
 
 
 
@@ -1504,6 +1556,9 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
  LEXICON TAvw_PL_ORDER  Note: Imp and Fut Con don't take tense 
 
  LEXICON TAcw_ORDER  Note: Imp and Fut Con don't take tense 
+
+ LEXICON TAcw_PL_ORDER  Note: Imp and Fut Con don't take tense 
+
 
  LEXICON TAt_ORDER  Note: Imp and Fut Con don't take tense ; Independent is same as TA regular
 
@@ -1526,9 +1581,14 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
  LEXICON TAvw_PL_CNJ_TENSE  plural only
 
 
- LEXICON TAcw_IND_TENSE  plural only
+ LEXICON TAcw_IND_TENSE   
 
- LEXICON TAcw_CNJ_TENSE  plural only
+ LEXICON TAcw_CNJ_TENSE   
+
+
+ LEXICON TAcw_PL_IND_TENSE  plural only
+
+ LEXICON TAcw_PL_CNJ_TENSE  plural only
 
 
  LEXICON TAt_IND_TENSE  plural only
@@ -1584,6 +1644,16 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
  LEXICON TAcw_IMP_PERSON  
 
 
+ LEXICON TAcw_PL_IND_PERSON  
+
+ LEXICON TAcw_PL_CNJ_PERSON  
+
+ LEXICON TAcw_PL_FUT_CON_PERSON  
+
+ LEXICON TAcw_PL_IMP_PERSON  
+
+
+
  LEXICON TAt_IND_PERSON  
 
  LEXICON TAt_CNJ_PERSON  
@@ -1633,7 +1703,9 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
  LEXICON TA_IND_NI_PL_SUFFIX    
+
 
 
 
@@ -1663,7 +1735,12 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
  LEXICON TA_IND_KI_PL_SUFFIX    
+
+
+
 
 
 
@@ -1700,7 +1777,9 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
  LEXICON TA_IND_NULL_PL_SUFFIX    
+
 
 
 
@@ -1729,7 +1808,9 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
  LEXICON TAvw_IND_NI_PL_SUFFIX    
+
 
 
 
@@ -1759,7 +1840,10 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
  LEXICON TAvw_IND_KI_PL_SUFFIX    
+
 
 
 
@@ -1797,7 +1881,11 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
  LEXICON TAvw_IND_NULL_PL_SUFFIX    
+
+
 
 
 
@@ -1840,6 +1928,8 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
  LEXICON TAcw_IND_KI     
 
 
@@ -1858,7 +1948,11 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
  LEXICON TAcw_IND_KI_PL_SUFFIX    
+
+
 
 
 
@@ -1895,7 +1989,9 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
  LEXICON TAcw_IND_NULL_PL_SUFFIX    
+
 
 
 
@@ -1913,6 +2009,8 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
  LEXICON TAt_IND_KI_SG_SUFFIX    
+
+
 
 
 
@@ -2014,7 +2112,31 @@ There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
 
 
 
+
+
+
+
 ~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
