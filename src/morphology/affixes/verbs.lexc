@@ -418,9 +418,9 @@ LEXICON WICI
 ! Auxiliary lexica for the verb dump
 
 LEXICON AICONJ_n 
-AICONJ ;
+VAIn ;
 LEXICON AICONJ_v 
-AICONJ ;
+VAIw ;
 
 
 !! LEXICON TACONJ_3 
@@ -439,23 +439,23 @@ AICONJ ;
 
 !!! STEM CLASS
 
-LEXICON IICONJw !!= @CODE@  
-+V+II: IIw_WICI ;
+LEXICON VIIw !!= @CODE@  
++V+II: VIIw_WICI ;
 
-LEXICON IICONJw-SG !!= @CODE@  
-+V+II: IIw_SG_WICI ;
+LEXICON VIIw_SG !!= @CODE@  
++V+II: VIIw_SG_WICI ;
 
-LEXICON IICONJw-PL !!= @CODE@  
-+V+II: IIw_PL_WICI ;
+LEXICON VIIw_PL !!= @CODE@  
++V+II: VIIw_PL_WICI ;
 
-LEXICON IICONJ !!= @CODE@  
-+V+II: IIn_WICI ;
+LEXICON VIIn !!= @CODE@  
++V+II: VIIn_WICI ;
 
-LEXICON IICONJ-SG !!= @CODE@  
-+V+II: IIn_SG_WICI ;
+LEXICON VIIn_SG !!= @CODE@  
++V+II: VIIn_SG_WICI ;
 
-LEXICON IICONJ-PL !!= @CODE@  
-+V+II: IIn_PL_WICI ;
+LEXICON VIIn_PL !!= @CODE@  
++V+II: VIIn_PL_WICI ;
 
 !!! WICI 
 !!!NOTE: II do not take this morpheme, so all forms should be null flagged.
@@ -466,14 +466,14 @@ LEXICON IICONJ-PL !!= @CODE@
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIw_WICI !!!! 
-@U.wici.NULL@ IIw_ORDER ;
+LEXICON VIIw_WICI !!!! 
+@U.wici.NULL@ VIIw_ORDER ;
 
-LEXICON IIw_SG_WICI !!!! 
-@U.wici.NULL@ IIw_SG_ORDER ;
+LEXICON VIIw_SG_WICI !!!! 
+@U.wici.NULL@ VIIw_SG_ORDER ;
 
-LEXICON IIw_PL_WICI !!!! 
-@U.wici.NULL@ IIw_PL_ORDER ;
+LEXICON VIIw_PL_WICI !!!! 
+@U.wici.NULL@ VIIw_PL_ORDER ;
 
 ! ===========================================================
 ! ===========================================================
@@ -481,14 +481,14 @@ LEXICON IIw_PL_WICI !!!!
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIn_WICI !!!! 
-@U.wici.NULL@ IIn_ORDER ;
+LEXICON VIIn_WICI !!!! 
+@U.wici.NULL@ VIIn_ORDER ;
 
-LEXICON IIn_SG_WICI !!!! singular only
-@U.wici.NULL@ IIn_SG_ORDER ;
+LEXICON VIIn_SG_WICI !!!! singular only
+@U.wici.NULL@ VIIn_SG_ORDER ;
 
-LEXICON IIn_PL_WICI !!!! plural only
-@U.wici.NULL@ IIn_PL_ORDER ;
+LEXICON VIIn_PL_WICI !!!! plural only
+@U.wici.NULL@ VIIn_PL_ORDER ;
 
 !!! ORDERS
 
@@ -498,24 +498,24 @@ LEXICON IIn_PL_WICI !!!! plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIw_ORDER !!= @CODE@ 
-@U.order.indep@+Ind:@U.order.indep@ IIw_IND_TENSE ;
-@U.order.cnj@+Cnj:@U.order.cnj@ IIw_CNJ_TENSE ;
-@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ IIw_FUT_CON_PERSON ;
+LEXICON VIIw_ORDER !!= @CODE@ 
+@U.order.indep@+Ind:@U.order.indep@ VIIw_IND_TENSE ;
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_CNJ_TENSE ;
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_FUT_CON_PERSON ;
 
-! @U.order.indep@+Ind:@U.order.indep@ IIw_IND_TENSE ; !
-! @U.order.cnj@+Cnj:@U.order.cnj@ IIw_CNJ_TENSE ; !
-! @U.order.indep@+Fut+Cond:@U.order.indep@ IIw_FUT_CON_PERSON ;!
+! @U.order.indep@+Ind:@U.order.indep@ VIIw_IND_TENSE ; !
+! @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_CNJ_TENSE ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIw_FUT_CON_PERSON ;!
 
-LEXICON IIw_SG_ORDER !!= @CODE@ singular only
-@U.order.indep@+Ind:@U.order.indep@  IIw_SG_IND_TENSE ; !
-@U.order.indep@+Cnj:@U.order.indep@ IIw_SG_CNJ_TENSE ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ IIw_FUT_CON_PERSON ;!
+LEXICON VIIw_SG_ORDER !!= @CODE@ singular only
+@U.order.indep@+Ind:@U.order.indep@  VIIw_SG_IND_TENSE ; !
+@U.order.indep@+Cnj:@U.order.indep@ VIIw_SG_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIw_FUT_CON_PERSON ;!
 
-LEXICON IIw_PL_ORDER !!= @CODE@ plural only 
-@U.order.indep@+Ind:@U.order.indep@ IIw_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ IIw_PL_CNJ_TENSE ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ IIw_PL_FUT_CON_PERSON ;!
+LEXICON VIIw_PL_ORDER !!= @CODE@ plural only 
+@U.order.indep@+Ind:@U.order.indep@ VIIw_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_PL_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIw_PL_FUT_CON_PERSON ;!
 
 ! ===========================================================
 ! ===========================================================
@@ -523,20 +523,20 @@ LEXICON IIw_PL_ORDER !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIn_ORDER !!= @CODE@ 
-@U.order.indep@+Ind:@U.order.indep@ IIn_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ IIn_CNJ_TENSE ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ IIn_FUT_CON_PERSON ;!
+LEXICON VIIn_ORDER !!= @CODE@ 
+@U.order.indep@+Ind:@U.order.indep@ VIIn_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIn_FUT_CON_PERSON ;!
 
-LEXICON IIn_SG_ORDER !!= @CODE@ singular only
-@U.order.indep@+Ind:@U.order.indep@ IIn_SG_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ IIn_SG_CNJ_TENSE ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ IIn_FUT_CON_PERSON ;!
+LEXICON VIIn_SG_ORDER !!= @CODE@ singular only
+@U.order.indep@+Ind:@U.order.indep@ VIIn_SG_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_SG_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIn_FUT_CON_PERSON ;!
 
-LEXICON IIn_PL_ORDER !!= @CODE@ plural only
-@U.order.indep@+Ind:@U.order.indep@ IIn_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ IIn_PL_CNJ_TENSE ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ IIn_PL_FUT_CON_PERSON ;!
+LEXICON VIIn_PL_ORDER !!= @CODE@ plural only
+@U.order.indep@+Ind:@U.order.indep@ VIIn_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_PL_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIn_PL_FUT_CON_PERSON ;!
 
 !!! TENSES
 
@@ -546,38 +546,38 @@ LEXICON IIn_PL_ORDER !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIw_IND_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIw_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIw_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_IND_PERSON ; !
+LEXICON VIIw_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_IND_PERSON ; !
 
-LEXICON IIw_CNJ_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIw_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_CNJ_PERSON ; !
+LEXICON VIIw_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_CNJ_PERSON ; !
 
-LEXICON IIw_SG_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIw_SG_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_SG_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIw_SG_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_SG_IND_PERSON ; !
+LEXICON VIIw_SG_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_SG_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_SG_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_SG_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_SG_IND_PERSON ; !
 
-LEXICON IIw_SG_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIw_SG_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_SG_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_SG_CNJ_PERSON ; !
+LEXICON VIIw_SG_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_SG_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_SG_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_SG_CNJ_PERSON ; !
 
-LEXICON IIw_PL_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIw_PL_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_PL_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIw_PL_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_PL_IND_PERSON ; !
+LEXICON VIIw_PL_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_IND_PERSON ; !
 
-LEXICON IIw_PL_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIw_PL_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIw_PL_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIw_PL_CNJ_PERSON ; !
+LEXICON VIIw_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_CNJ_PERSON ; !
 
 ! ===========================================================
 ! ===========================================================
@@ -585,38 +585,38 @@ LEXICON IIw_PL_CNJ_TENSE !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIn_IND_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIn_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIn_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_IND_PERSON ; !
+LEXICON VIIn_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIn_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIn_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIn_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIn_IND_PERSON ; !
 
-LEXICON IIn_CNJ_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIn_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_CNJ_PERSON ; !
+LEXICON VIIn_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIn_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIn_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIn_CNJ_PERSON ; !
 
-LEXICON IIn_SG_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIn_SG_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_SG_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIn_SG_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_SG_IND_PERSON ; !
+LEXICON VIIn_SG_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIn_SG_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIn_SG_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIn_SG_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIn_SG_IND_PERSON ; !
 
-LEXICON IIn_SG_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIn_SG_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_SG_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_SG_CNJ_PERSON ; !
+LEXICON VIIn_SG_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIn_SG_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIn_SG_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIn_SG_CNJ_PERSON ; !
 
-LEXICON IIn_PL_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIn_PL_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_PL_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ IIn_PL_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_PL_IND_PERSON ; !
+LEXICON VIIn_PL_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIn_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIn_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIn_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIn_PL_IND_PERSON ; !
 
-LEXICON IIn_PL_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ IIn_PL_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ IIn_PL_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ IIn_PL_CNJ_PERSON ; !
+LEXICON VIIn_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIn_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIn_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIn_PL_CNJ_PERSON ; !
 
 !!! PERSON
 
@@ -626,32 +626,32 @@ LEXICON IIn_PL_CNJ_TENSE !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIw_IND_PERSON !!= @CODE@ 
-@U.person.NULL@ IIw_IND_NULL ;
+LEXICON VIIw_IND_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_IND_NULL ;
 
-LEXICON IIw_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ IIw_CNJ_NULL ;
+LEXICON VIIw_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_CNJ_NULL ;
 
-LEXICON IIw_FUT_CON_PERSON !!= @CODE@ 
-@U.person.NULL@ IIw_FUT_CON_NULL ;
+LEXICON VIIw_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_FUT_CON_NULL ;
 
-LEXICON IIw_SG_IND_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIw_IND_SG_SUFFIX ;
+LEXICON VIIw_SG_IND_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIw_IND_SG_SUFFIX ;
 
-LEXICON IIw_SG_CNJ_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIw_CNJ_SG_SUFFIX ;
+LEXICON VIIw_SG_CNJ_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIw_CNJ_SG_SUFFIX ;
 
-LEXICON IIw_SG_FUT_CON_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIw_FUT_CON_SG_SUFFIX ;
+LEXICON VIIw_SG_FUT_CON_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIw_FUT_CON_SG_SUFFIX ;
 
-LEXICON IIw_PL_IND_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIw_IND_PL_SUFFIX ;
+LEXICON VIIw_PL_IND_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIw_IND_PL_SUFFIX ;
 
-LEXICON IIw_PL_CNJ_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIw_CNJ_PL_SUFFIX ;
+LEXICON VIIw_PL_CNJ_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIw_CNJ_PL_SUFFIX ;
 
-LEXICON IIw_PL_FUT_CON_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIw_FUT_CON_PL_SUFFIX ;
+LEXICON VIIw_PL_FUT_CON_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIw_FUT_CON_PL_SUFFIX ;
 
 ! ===========================================================
 ! ===========================================================
@@ -659,32 +659,32 @@ LEXICON IIw_PL_FUT_CON_PERSON !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIn_IND_PERSON !!= @CODE@ 
-@U.person.NULL@ IIn_IND_NULL ;
+LEXICON VIIn_IND_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIn_IND_NULL ;
 
-LEXICON IIn_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ IIn_CNJ_NULL ;
+LEXICON VIIn_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIn_CNJ_NULL ;
 
-LEXICON IIn_FUT_CON_PERSON !!= @CODE@ 
-@U.person.NULL@ IIn_FUT_CON_NULL ;
+LEXICON VIIn_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIn_FUT_CON_NULL ;
 
-LEXICON IIn_SG_IND_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIn_IND_SG_SUFFIX ;
+LEXICON VIIn_SG_IND_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIn_IND_SG_SUFFIX ;
 
-LEXICON IIn_SG_CNJ_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIn_CNJ_SG_SUFFIX ;
+LEXICON VIIn_SG_CNJ_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIn_CNJ_SG_SUFFIX ;
 
-LEXICON IIn_SG_FUT_CON_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIn_FUT_CON_SG_SUFFIX ;
+LEXICON VIIn_SG_FUT_CON_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIn_FUT_CON_SG_SUFFIX ;
 
-LEXICON IIn_PL_IND_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIn_IND_PL_SUFFIX ;
+LEXICON VIIn_PL_IND_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIn_IND_PL_SUFFIX ;
 
-LEXICON IIn_PL_CNJ_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIn_CNJ_PL_SUFFIX ;
+LEXICON VIIn_PL_CNJ_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIn_CNJ_PL_SUFFIX ;
 
-LEXICON IIn_PL_FUT_CON_PERSON !!= @CODE@ plural only
-@U.person.NULL@ IIn_FUT_CON_PL_SUFFIX ;
+LEXICON VIIn_PL_FUT_CON_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VIIn_FUT_CON_PL_SUFFIX ;
 
 !!! SUFFIXES
 
@@ -699,15 +699,15 @@ LEXICON IIn_PL_FUT_CON_PERSON !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIw_IND_NULL !!= @CODE@
-IIw_IND_SG_SUFFIX ;
-IIw_IND_PL_SUFFIX ;
+LEXICON VIIw_IND_NULL !!= @CODE@
+VIIw_IND_SG_SUFFIX ;
+VIIw_IND_PL_SUFFIX ;
 
-LEXICON IIw_IND_SG_SUFFIX   !!= @CODE@ singular
+LEXICON VIIw_IND_SG_SUFFIX   !!= @CODE@ singular
 +3Sg:%>w # ;
 +4Sg:%>yiw # ;
 
-LEXICON IIw_IND_PL_SUFFIX  !!= @CODE@ plural
+LEXICON VIIw_IND_PL_SUFFIX  !!= @CODE@ plural
 +3Pl:%>wa # ;
 +4Pl:%>yiwa # ;
 
@@ -718,15 +718,15 @@ LEXICON IIw_IND_PL_SUFFIX  !!= @CODE@ plural
 ! ===========================================================
 
 
-LEXICON IIn_IND_NULL !!= @CODE@
-IIn_IND_SG_SUFFIX ;
-IIn_IND_PL_SUFFIX ;
+LEXICON VIIn_IND_NULL !!= @CODE@
+VIIn_IND_SG_SUFFIX ;
+VIIn_IND_PL_SUFFIX ;
 
-LEXICON IIn_IND_SG_SUFFIX   !!= @CODE@ w final singular
+LEXICON VIIn_IND_SG_SUFFIX   !!= @CODE@ w final singular
 +3Sg:%> # ;
 +4Sg:%>iyiw # ;
 
-LEXICON IIn_IND_PL_SUFFIX   !!= @CODE@ w final plural
+LEXICON VIIn_IND_PL_SUFFIX   !!= @CODE@ w final plural
 +3Pl:%>wa # ;
 +4Pl:%>iyiwa # ;
 
@@ -742,15 +742,15 @@ LEXICON IIn_IND_PL_SUFFIX   !!= @CODE@ w final plural
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIw_CNJ_NULL !!= @CODE@
-IIw_CNJ_SG_SUFFIX ;
-IIw_CNJ_PL_SUFFIX ;
+LEXICON VIIw_CNJ_NULL !!= @CODE@
+VIIw_CNJ_SG_SUFFIX ;
+VIIw_CNJ_PL_SUFFIX ;
 
-LEXICON IIw_CNJ_SG_SUFFIX   !!= @CODE@ singular
+LEXICON VIIw_CNJ_SG_SUFFIX   !!= @CODE@ singular
 +3Sg:%>%^NIIk # ;
 +4Sg:%>yik # ;
 
-LEXICON IIw_CNJ_PL_SUFFIX  !!= @CODE@ plural
+LEXICON VIIw_CNJ_PL_SUFFIX  !!= @CODE@ plural
 +3Pl:%>%^NIIki # ;
 +4Pl:%>iyiki # ;
 
@@ -760,15 +760,15 @@ LEXICON IIw_CNJ_PL_SUFFIX  !!= @CODE@ plural
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIn_CNJ_NULL !!= @CODE@
-IIn_CNJ_SG_SUFFIX ;
-IIn_CNJ_PL_SUFFIX ;
+LEXICON VIIn_CNJ_NULL !!= @CODE@
+VIIn_CNJ_SG_SUFFIX ;
+VIIn_CNJ_PL_SUFFIX ;
 
-LEXICON IIn_CNJ_SG_SUFFIX   !!= @CODE@ w final singular
+LEXICON VIIn_CNJ_SG_SUFFIX   !!= @CODE@ w final singular
 +3Sg:%>%^NIIk # ;
 +4Sg:%>iyik # ;
 
-LEXICON IIn_CNJ_PL_SUFFIX   !!= @CODE@ w final plural
+LEXICON VIIn_CNJ_PL_SUFFIX   !!= @CODE@ w final plural
 +3Pl:%>%^NIIki # ;
 +4Pl:%>iyiki # ;
 
@@ -783,15 +783,15 @@ LEXICON IIn_CNJ_PL_SUFFIX   !!= @CODE@ w final plural
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIw_FUT_CON_NULL !!= @CODE@
-IIw_FUT_CON_SG_SUFFIX ;
-IIw_FUT_CON_PL_SUFFIX ;
+LEXICON VIIw_FUT_CON_NULL !!= @CODE@
+VIIw_FUT_CON_SG_SUFFIX ;
+VIIw_FUT_CON_PL_SUFFIX ;
 
-LEXICON IIw_FUT_CON_SG_SUFFIX   !!= @CODE@ singular
+LEXICON VIIw_FUT_CON_SG_SUFFIX   !!= @CODE@ singular
 +3Sg:%>%^NIIki # ;
 +4Sg:%>yiki # ;
 
-LEXICON IIw_FUT_CON_PL_SUFFIX  !!= @CODE@ plural
+LEXICON VIIw_FUT_CON_PL_SUFFIX  !!= @CODE@ plural
 +3Pl:%>%^NIIkwâwi # ;
 +4Pl:%>iyikwâwi # ;
 
@@ -801,15 +801,15 @@ LEXICON IIw_FUT_CON_PL_SUFFIX  !!= @CODE@ plural
 ! ===========================================================
 ! ===========================================================
 
-LEXICON IIn_FUT_CON_NULL !!= @CODE@
-IIn_FUT_CON_SG_SUFFIX ;
-IIn_FUT_CON_PL_SUFFIX ;
+LEXICON VIIn_FUT_CON_NULL !!= @CODE@
+VIIn_FUT_CON_SG_SUFFIX ;
+VIIn_FUT_CON_PL_SUFFIX ;
 
-LEXICON IIn_FUT_CON_SG_SUFFIX   !!= @CODE@ w final singular
+LEXICON VIIn_FUT_CON_SG_SUFFIX   !!= @CODE@ w final singular
 +3Sg:%>%^NIIki # ;
 +4Sg:%>iyiki # ;
 
-LEXICON IIn_FUT_CON_PL_SUFFIX   !!= @CODE@ w final plural
+LEXICON VIIn_FUT_CON_PL_SUFFIX   !!= @CODE@ w final plural
 +3Pl:%>%^NIIkwâwi # ;
 +4Pl:%>iyikwâwi # ;
 
@@ -820,20 +820,20 @@ LEXICON IIn_FUT_CON_PL_SUFFIX   !!= @CODE@ w final plural
 
 !!! STEM CLASS
 
-LEXICON AICONJ !!= @CODE@ 
-+V+AI: AICONJw_WICI ;
+! LEXICON VAIw !!= @CODE@ 
+! +V+AI: VAICONJw_WICI ;
 
-LEXICON AICONJw !!= @CODE@ 
-+V+AI: AICONJw_WICI ;
+LEXICON VAIw !!= @CODE@ 
++V+AI: VAIw_WICI ;
 
-LEXICON AICONJ-PL !!= @CODE@ 
-+V+AI: AICONJw_PL_WICI ;
+LEXICON VAIw_PL !!= @CODE@ 
++V+AI: VAIw_PL_WICI ;
 
-LEXICON AICONJn !!= @CODE@ 
-+V+AI: AICONJn_WICI ;
+LEXICON VAIn !!= @CODE@ 
++V+AI: VAIn_WICI ;
 
-LEXICON AICONJn-PL !!= @CODE@ 
-+V+AI: AICONJn_WICI ;
+LEXICON VAIn_PL !!= @CODE@ 
++V+AI: VAIn_PL_WICI ;
 
 !!! WICI
 
@@ -843,13 +843,13 @@ LEXICON AICONJn-PL !!= @CODE@
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AICONJw_WICI !!!!
-@U.wici.NULL@ AIw_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@m TAcw_ORDER ;
+LEXICON VAIw_WICI !!!!
+@U.wici.NULL@ VAIw_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@m VTAcw_ORDER ;
 
-LEXICON AICONJw_PL_WICI !!!! plural only
-@U.wici.NULL@ AIw_PL_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@m TAcw_PL_ORDER ;
+LEXICON VAIw_PL_WICI !!!! plural only
+@U.wici.NULL@ VAIw_PL_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@m VTAcw_PL_ORDER ;
 
 ! ===========================================================
 ! ===========================================================
@@ -857,13 +857,13 @@ LEXICON AICONJw_PL_WICI !!!! plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AICONJn_WICI !!!!
-@U.wici.NULL@ AIn_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im TAcw_ORDER ;
+LEXICON VAIn_WICI !!!!
+@U.wici.NULL@ VAIn_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im VTAcw_ORDER ;
 
-LEXICON AICONJn_PL_WICI !!!! plural only
-@U.wici.NULL@ AIn_PL_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im TAcw_PL_ORDER ;
+LEXICON VAIn_PL_WICI !!!! plural only
+@U.wici.NULL@ VAIn_PL_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im VTAcw_PL_ORDER ;
 
 !!! ORDERS
 
@@ -873,17 +873,17 @@ LEXICON AICONJn_PL_WICI !!!! plural only
 ! ===========================================================
 ! =========================================================== ! NOTE: imperative and fut con do not take tense
 
-LEXICON AIw_ORDER !!= @CODE@
-@U.order.indep@+Ind:@U.order.indep@ AIw_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ AIw_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  AIw_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ AIw_FUT_CON_PERSON ; !
+LEXICON VAIw_ORDER !!= @CODE@
+@U.order.indep@+Ind:@U.order.indep@ VAIw_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIw_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VAIw_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIw_FUT_CON_PERSON ; !
 
-LEXICON AIw_PL_ORDER !!= @CODE@ plural only 
-@U.order.indep@+Ind:@U.order.indep@ AIw_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ AIw_PL_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  AIw_PL_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ AIw_PL_FUT_CON_PERSON ; !
+LEXICON VAIw_PL_ORDER !!= @CODE@ plural only 
+@U.order.indep@+Ind:@U.order.indep@ VAIw_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIw_PL_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VAIw_PL_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIw_PL_FUT_CON_PERSON ; !
 
 ! ===========================================================
 ! ===========================================================
@@ -891,17 +891,17 @@ LEXICON AIw_PL_ORDER !!= @CODE@ plural only
 ! ===========================================================
 ! =========================================================== ! NOTE: imperative and fut con do not take tense
 
-LEXICON AIn_ORDER !!= @CODE@
-@U.order.indep@+Ind:@U.order.indep@ AIn_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ AIn_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  AIn_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ AIn_FUT_CON_PERSON ; !
+LEXICON VAIn_ORDER !!= @CODE@
+@U.order.indep@+Ind:@U.order.indep@ VAIn_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIn_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VAIn_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIn_FUT_CON_PERSON ; !
 
-LEXICON AIn_PL_ORDER !!= @CODE@ plural only  
-@U.order.indep@+Ind:@U.order.indep@ AIn_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ AIn_PL_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  AIn_PL_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ AIn_PL_FUT_CON_PERSON ; !
+LEXICON VAIn_PL_ORDER !!= @CODE@ plural only  
+@U.order.indep@+Ind:@U.order.indep@ VAIn_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIn_PL_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VAIn_PL_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIn_PL_FUT_CON_PERSON ; !
 
 !!! TENSES
 
@@ -911,27 +911,27 @@ LEXICON AIn_PL_ORDER !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIw_IND_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ AIw_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ AIw_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ AIw_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIw_IND_PERSON ; !
+LEXICON VAIw_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIw_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIw_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAIw_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIw_IND_PERSON ; !
 
-LEXICON AIw_CNJ_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ AIw_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ AIw_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIw_CNJ_PERSON ; !
+LEXICON VAIw_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIw_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIw_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIw_CNJ_PERSON ; !
 
-LEXICON AIw_PL_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ AIw_PL_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ AIw_PL_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ AIw_PL_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIw_PL_IND_PERSON ; !
+LEXICON VAIw_PL_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIw_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIw_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAIw_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIw_PL_IND_PERSON ; !
 
-LEXICON AIw_PL_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ AIw_PL_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ AIw_PL_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIw_PL_CNJ_PERSON ; !
+LEXICON VAIw_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIw_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIw_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIw_PL_CNJ_PERSON ; !
 
 ! ===========================================================
 ! ===========================================================
@@ -939,28 +939,28 @@ LEXICON AIw_PL_CNJ_TENSE !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIn_IND_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ AIn_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ AIn_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ AIn_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIn_IND_PERSON ; !
+LEXICON VAIn_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIn_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIn_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAIn_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIn_IND_PERSON ; !
 
-LEXICON AIn_CNJ_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ AIn_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ AIn_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIn_CNJ_PERSON ; !
+LEXICON VAIn_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIn_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIn_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIn_CNJ_PERSON ; !
 
-LEXICON AIn_PL_IND_TENSE !!= @CODE@ plural only
+LEXICON VAIn_PL_IND_TENSE !!= @CODE@ plural only
 
-@U.tense.Prs@+Prs:@U.tense.Prs@ AIn_PL_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ AIn_PL_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ AIn_PL_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIn_PL_IND_PERSON ; !
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIn_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIn_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAIn_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIn_PL_IND_PERSON ; !
 
-LEXICON AIn_PL_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ AIn_PL_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ AIn_PL_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ AIn_PL_CNJ_PERSON ; !
+LEXICON VAIn_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIn_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIn_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIn_PL_CNJ_PERSON ; !
 
 
 !!! PERSON
@@ -971,34 +971,34 @@ LEXICON AIn_PL_CNJ_TENSE !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIw_IND_PERSON !!= @CODE@ 
-@U.person.NI@ AIw_IND_NI ;
-@U.person.KI@ AIw_IND_KI ;
-@U.person.NULL@ AIw_IND_NULL ;
+LEXICON VAIw_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VAIw_IND_NI ;
+@U.person.KI@ VAIw_IND_KI ;
+@U.person.NULL@ VAIw_IND_NULL ;
 
-LEXICON AIw_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ AIw_CNJ_NULL ;
+LEXICON VAIw_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VAIw_CNJ_NULL ;
 
-LEXICON AIw_FUT_CON_PERSON !!= @CODE@ 
+LEXICON VAIw_FUT_CON_PERSON !!= @CODE@ 
 
-@U.person.NULL@ AIw_FUT_CON_NULL ;
+@U.person.NULL@ VAIw_FUT_CON_NULL ;
 
-LEXICON AIw_IMP_PERSON !!= @CODE@ 
-@U.person.NULL@ AIw_IMP_NULL ;
+LEXICON VAIw_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VAIw_IMP_NULL ;
 
-LEXICON AIw_PL_IND_PERSON !!= @CODE@ plural only
-@U.person.NI@ AIw_IND_NI_PL_SUFFIX ;
-@U.person.KI@ AIw_IND_KI_PL_SUFFIX ;
-@U.person.NULL@ AIw_IND_NULL_PL_SUFFIX ;
+LEXICON VAIw_PL_IND_PERSON !!= @CODE@ plural only
+@U.person.NI@ VAIw_IND_NI_PL_SUFFIX ;
+@U.person.KI@ VAIw_IND_KI_PL_SUFFIX ;
+@U.person.NULL@ VAIw_IND_NULL_PL_SUFFIX ;
 
-LEXICON AIw_PL_CNJ_PERSON !!= @CODE@ plural only
-@U.person.NULL@ AIw_CNJ_NULL_PL_SUFFIX ;
+LEXICON VAIw_PL_CNJ_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAIw_CNJ_NULL_PL_SUFFIX ;
 
-LEXICON AIw_PL_FUT_CON_PERSON !!= @CODE@ plural only
-@U.person.NULL@ AIw_FUT_CON_NULL_PL_SUFFIX ;
+LEXICON VAIw_PL_FUT_CON_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAIw_FUT_CON_NULL_PL_SUFFIX ;
 
-LEXICON AIw_PL_IMP_PERSON !!= @CODE@ plural only
-@U.person.NULL@ AIw_IMP_NULL_PL_SUFFIX ;
+LEXICON VAIw_PL_IMP_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAIw_IMP_NULL_PL_SUFFIX ;
 
 
 ! ===========================================================
@@ -1007,33 +1007,33 @@ LEXICON AIw_PL_IMP_PERSON !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIn_IND_PERSON !!= @CODE@ 
-@U.person.NI@ AIn_IND_NI ;
-@U.person.KI@ AIn_IND_KI ;
-@U.person.NULL@ AIn_IND_NULL ;
+LEXICON VAIn_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VAIn_IND_NI ;
+@U.person.KI@ VAIn_IND_KI ;
+@U.person.NULL@ VAIn_IND_NULL ;
 
-LEXICON AIn_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ AIn_CNJ_NULL ;
+LEXICON VAIn_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VAIn_CNJ_NULL ;
 
-LEXICON AIn_FUT_CON_PERSON !!= @CODE@ 
-@U.person.NULL@ AIn_FUT_CON_NULL ;
+LEXICON VAIn_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VAIn_FUT_CON_NULL ;
 
-LEXICON AIn_IMP_PERSON !!= @CODE@ 
-@U.person.NULL@ AIn_IMP_NULL ;
+LEXICON VAIn_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VAIn_IMP_NULL ;
 
-LEXICON AIn_PL_IND_PERSON !!= @CODE@ plural only
-@U.person.NI@ AIn_IND_NI_PL_SUFFIX ;
-@U.person.KI@ AIn_IND_KI_PL_SUFFIX ;
-@U.person.NULL@ AIn_IND_NULL_PL_SUFFIX ;
+LEXICON VAIn_PL_IND_PERSON !!= @CODE@ plural only
+@U.person.NI@ VAIn_IND_NI_PL_SUFFIX ;
+@U.person.KI@ VAIn_IND_KI_PL_SUFFIX ;
+@U.person.NULL@ VAIn_IND_NULL_PL_SUFFIX ;
 
-LEXICON AIn_PL_CNJ_PERSON !!= @CODE@ plural only
-@U.person.NULL@ AIn_CNJ_NULL_PL_SUFFIX ;
+LEXICON VAIn_PL_CNJ_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAIn_CNJ_NULL_PL_SUFFIX ;
 
-LEXICON AIn_PL_FUT_CON_PERSON !!= @CODE@ plural only
-@U.person.NULL@ AIn_FUT_CON_NULL_PL_SUFFIX ;
+LEXICON VAIn_PL_FUT_CON_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAIn_FUT_CON_NULL_PL_SUFFIX ;
 
-LEXICON AIn_PL_IMP_PERSON !!= @CODE@ plural only
-@U.person.NULL@ AIn_IMP_NULL_PL_SUFFIX ;
+LEXICON VAIn_PL_IMP_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAIn_IMP_NULL_PL_SUFFIX ;
 
 !!! SUFFIXES
 
@@ -1048,33 +1048,33 @@ LEXICON AIn_PL_IMP_PERSON !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIw_IND_NI   !!= @CODE@  
-AIw_IND_NI_SG_SUFFIX ;
-AIw_IND_NI_PL_SUFFIX ;
+LEXICON VAIw_IND_NI   !!= @CODE@  
+VAIw_IND_NI_SG_SUFFIX ;
+VAIw_IND_NI_PL_SUFFIX ;
 
-LEXICON AIw_IND_NI_SG_SUFFIX   !!= @CODE@ 
-+1Sg:%>n # ;
+LEXICON VAIw_IND_NI_SG_SUFFIX   !!= @CODE@ 
++1Sg:%>%^EAn # ;
 
-LEXICON AIw_IND_NI_PL_SUFFIX   !!= @CODE@
-+1Pl:%>nân # ;
+LEXICON VAIw_IND_NI_PL_SUFFIX   !!= @CODE@
++1Pl:%>%^EAnân # ;
 
-LEXICON AIw_IND_KI   !!= @CODE@  
-AIw_IND_KI_SG_SUFFIX ;
-AIw_IND_KI_PL_SUFFIX ;
+LEXICON VAIw_IND_KI   !!= @CODE@  
+VAIw_IND_KI_SG_SUFFIX ;
+VAIw_IND_KI_PL_SUFFIX ;
 
-LEXICON AIw_IND_KI_SG_SUFFIX   !!= @CODE@ 
-+2Sg:%>n # ;
+LEXICON VAIw_IND_KI_SG_SUFFIX   !!= @CODE@ 
++2Sg:%>%^EAn # ;
 
-LEXICON AIw_IND_KI_PL_SUFFIX   !!= @CODE@ 
-+12Pl:%>naw # ;
-+12Pl:%>nânaw # ;
-+2Pl:%>nâwâw # ;
+LEXICON VAIw_IND_KI_PL_SUFFIX   !!= @CODE@ 
++12Pl:%>%^EAnaw # ;
++12Pl:%>%^EAnânaw # ;
++2Pl:%>%^EAnâwâw # ;
 
-LEXICON AIw_IND_NULL   !!= @CODE@  
-AIw_IND_NULL_SG_SUFFIX ;
-AIw_IND_NULL_PL_SUFFIX ;
+LEXICON VAIw_IND_NULL   !!= @CODE@  
+VAIw_IND_NULL_SG_SUFFIX ;
+VAIw_IND_NULL_PL_SUFFIX ;
 
-LEXICON AIw_IND_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VAIw_IND_NULL_SG_SUFFIX   !!= @CODE@ 
 +3Sg:%>w # ;
 
 !           ********
@@ -1091,7 +1091,7 @@ LEXICON AIw_IND_NULL_SG_SUFFIX   !!= @CODE@
 +X+4Sg:%>niwaniyiw # ;
 
 
-LEXICON AIw_IND_NULL_PL_SUFFIX   !!= @CODE@
+LEXICON VAIw_IND_NULL_PL_SUFFIX   !!= @CODE@
 +3Pl:%>wak # ;
 +4Sg/Pl:%>yiwa # ;
 
@@ -1113,33 +1113,33 @@ LEXICON AIw_IND_NULL_PL_SUFFIX   !!= @CODE@
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIn_IND_NI   !!= @CODE@ 
-AIn_IND_NI_SG_SUFFIX ;
-AIn_IND_NI_PL_SUFFIX ;
+LEXICON VAIn_IND_NI   !!= @CODE@ 
+VAIn_IND_NI_SG_SUFFIX ;
+VAIn_IND_NI_PL_SUFFIX ;
 
-LEXICON AIn_IND_NI_SG_SUFFIX   !!= @CODE@ 
+LEXICON VAIn_IND_NI_SG_SUFFIX   !!= @CODE@ 
 +1Sg:%>in # ;
 
-LEXICON AIn_IND_NI_PL_SUFFIX   !!= @CODE@ 
+LEXICON VAIn_IND_NI_PL_SUFFIX   !!= @CODE@ 
 +1Pl:%>inân # ;
 
-LEXICON AIn_IND_KI   !!= @CODE@  
-AIn_IND_KI_SG_SUFFIX ;
-AIn_IND_KI_PL_SUFFIX ;
+LEXICON VAIn_IND_KI   !!= @CODE@  
+VAIn_IND_KI_SG_SUFFIX ;
+VAIn_IND_KI_PL_SUFFIX ;
 
-LEXICON AIn_IND_KI_SG_SUFFIX   !!= @CODE@ 
+LEXICON VAIn_IND_KI_SG_SUFFIX   !!= @CODE@ 
 +2Sg:%>in # ;
 
-LEXICON AIn_IND_KI_PL_SUFFIX   !!= @CODE@ 
+LEXICON VAIn_IND_KI_PL_SUFFIX   !!= @CODE@ 
 +12Pl:%>inaw # ;
 +12Pl:%>inânaw # ;
 +2Pl:%>inâwâw # ;
 
-LEXICON AIn_IND_NULL   !!= @CODE@  
-AIn_IND_NULL_SG_SUFFIX ;
-AIn_IND_NULL_PL_SUFFIX ;
+LEXICON VAIn_IND_NULL   !!= @CODE@  
+VAIn_IND_NULL_SG_SUFFIX ;
+VAIn_IND_NULL_PL_SUFFIX ;
 
-LEXICON AIn_IND_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VAIn_IND_NULL_SG_SUFFIX   !!= @CODE@ 
 +3Sg:%> # ;
 +3Sg:%>iw # ;
 
@@ -1156,7 +1156,7 @@ LEXICON AIn_IND_NULL_SG_SUFFIX   !!= @CODE@
 +X+4Sg:%>inâniwaniyiw # ;
 +X+4Sg:%>iniwaniyiw # ;
 
-LEXICON AIn_IND_NULL_PL_SUFFIX   !!= @CODE@ 
+LEXICON VAIn_IND_NULL_PL_SUFFIX   !!= @CODE@ 
 +3Pl:%>wak # ;
 +3Pl:%>iwak # ;
 +4Sg/Pl:%>iyiwa # ;
@@ -1188,12 +1188,12 @@ LEXICON AIn_IND_NULL_PL_SUFFIX   !!= @CODE@
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIw_CNJ_NULL   !!= @CODE@ 
+LEXICON VAIw_CNJ_NULL   !!= @CODE@ 
 
-AIw_CNJ_NULL_SG_SUFFIX ;
-AIw_CNJ_NULL_PL_SUFFIX ;
+VAIw_CNJ_NULL_SG_SUFFIX ;
+VAIw_CNJ_NULL_PL_SUFFIX ;
 
-LEXICON AIw_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VAIw_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
 
 +1Sg:%>yân # ;
 +2Sg:%>yan # ;
@@ -1211,7 +1211,7 @@ LEXICON AIw_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 +X+4Sg:%>nâniwahiyik # ;
 +X+4Sg:%>niwahiyik # ;
 
-LEXICON AIw_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
+LEXICON VAIw_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
 +1Pl:%>yâhk # ;
 +12Pl:%>yahk # ;
@@ -1237,12 +1237,12 @@ LEXICON AIw_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIn_CNJ_NULL   !!= @CODE@ 
+LEXICON VAIn_CNJ_NULL   !!= @CODE@ 
 
-AIn_CNJ_NULL_SG_SUFFIX ;
-AIn_CNJ_NULL_PL_SUFFIX ;
+VAIn_CNJ_NULL_SG_SUFFIX ;
+VAIn_CNJ_NULL_PL_SUFFIX ;
 
-LEXICON AIn_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VAIn_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
 
 +1Sg:%>iyân # ;
 +2Sg:%>iyan # ;
@@ -1263,7 +1263,7 @@ LEXICON AIn_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 +X+4Sg:%>niwahiyik # ;
 
 
-LEXICON AIn_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
+LEXICON VAIn_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
 +1Pl:%>iyâhk # ;
 +12Pl:%>iyahk # ;
@@ -1302,16 +1302,16 @@ LEXICON AIn_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIw_IMP_NULL
-AIw_IMP_SG_SUFFIX ;
-AIw_IMP_NULL_PL_SUFFIX ;
+LEXICON VAIw_IMP_NULL
+VAIw_IMP_SG_SUFFIX ;
+VAIw_IMP_NULL_PL_SUFFIX ;
 
-LEXICON AIw_IMP_SG_SUFFIX
+LEXICON VAIw_IMP_SG_SUFFIX
 +Imm+2Sg:%>   # ; ! 
 +Del+2Sg:%>hkan   # ; !
 
 
-LEXICON AIw_IMP_NULL_PL_SUFFIX
+LEXICON VAIw_IMP_NULL_PL_SUFFIX
 +Imm+12Pl:%>tân	  # ; !
 +Imm+2Pl:%>k	 # ; !
 +Del+12Pl:%>hkahk   # ; !
@@ -1323,16 +1323,16 @@ LEXICON AIw_IMP_NULL_PL_SUFFIX
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIn_IMP_NULL
-AIn_IMP_SG_SUFFIX ;
-AIn_IMP_NULL_PL_SUFFIX ;
+LEXICON VAIn_IMP_NULL
+VAIn_IMP_SG_SUFFIX ;
+VAIn_IMP_NULL_PL_SUFFIX ;
 
-LEXICON AIn_IMP_SG_SUFFIX
+LEXICON VAIn_IMP_SG_SUFFIX
 +Imm+2Sg:%>i   # ; ! 
 +Del+2Sg:%>îhkan   # ; !
 
 
-LEXICON AIn_IMP_NULL_PL_SUFFIX
+LEXICON VAIn_IMP_NULL_PL_SUFFIX
 +Imm+12Pl:%>itân	  # ; !
 +Imm+2Pl:%>ik	 # ; !
 +Del+12Pl:%>îhkahk   # ; !
@@ -1355,12 +1355,12 @@ LEXICON AIn_IMP_NULL_PL_SUFFIX
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIw_FUT_CON_NULL   !!= @CODE@ 
+LEXICON VAIw_FUT_CON_NULL   !!= @CODE@ 
 
-AIw_FUT_CON_NULL_SG_SUFFIX ;
-AIw_FUT_CON_NULL_PL_SUFFIX ;
+VAIw_FUT_CON_NULL_SG_SUFFIX ;
+VAIw_FUT_CON_NULL_PL_SUFFIX ;
 
-LEXICON AIw_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VAIw_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
 
 +1Sg:%>yâni # ;
 +2Sg:%>yani # ;
@@ -1373,7 +1373,7 @@ LEXICON AIw_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@
 +X+3Sg:%>hki # ;
 +X+4Sg:%>yiki # ;
 
-LEXICON AIw_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
+LEXICON VAIw_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
 +1Pl:%>yâhki # ;
 +12Pl:%>yahko # ;
@@ -1395,12 +1395,12 @@ LEXICON AIw_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 ! ===========================================================
 ! ===========================================================
 
-LEXICON AIn_FUT_CON_NULL   !!= @CODE@ 
+LEXICON VAIn_FUT_CON_NULL   !!= @CODE@ 
 
-AIn_FUT_CON_NULL_SG_SUFFIX ;
-AIn_FUT_CON_NULL_PL_SUFFIX ;
+VAIn_FUT_CON_NULL_SG_SUFFIX ;
+VAIn_FUT_CON_NULL_PL_SUFFIX ;
 
-LEXICON AIn_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VAIn_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
 
 +1Sg:%>iyâni # ;
 +2Sg:%>iyani # ;
@@ -1414,7 +1414,7 @@ LEXICON AIn_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@
 +X+3Sg:%>ihki # ;
 +X+4Sg:%>iyiki # ;
 
-LEXICON AIn_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
+LEXICON VAIn_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
 +1Pl:%>iyâhki # ;
 +12Pl:%>iyahko # ;
@@ -1439,17 +1439,17 @@ LEXICON AIn_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 
 !!! STEM CLASS
 
-LEXICON TICONJ  !!= * @CODE@ 
-+V+TI: TICONJ_WICI ;
+LEXICON VTI  !!= * @CODE@ 
++V+TI: VTI_WICI ;
 
-LEXICON TICONJ-PL  !!= * @CODE@  Plural
-+V+TI: TICONJ_PL_WICI ;
+LEXICON VTI_PL  !!= * @CODE@  Plural
++V+TI: VTI_PL_WICI ;
 
-LEXICON TICONJi  !!= * @CODE@ NOTE: These inflect just as VAI -w final stems, so they are redirected to those paradigms
-+V+TI: AICONJw_WICI ; 
+! LEXICON TICONJi  !!= * @CODE@ NOTE: These inflect just as VAI -w final stems, so they are redirected to those paradigms
+! +V+TI: VAIw_WICI ; 
 
-LEXICON TICONJâ  !!= * @CODE@ These inflect just as VAI -w final stems, so they are redirected to those paradigms
-+V+TI: AICONJw_WICI ; 
+! LEXICON TICONJâ  !!= * @CODE@ These inflect just as VAI -w final stems, so they are redirected to those paradigms
+! +V+TI: VAIw_WICI ; 
 
 !!! WICI
 
@@ -1460,13 +1460,13 @@ LEXICON TICONJâ  !!= * @CODE@ These inflect just as VAI -w final stems, so they
 ! ===========================================================
 
 
-LEXICON TICONJ_WICI
-@U.wici.NULL@ TIt_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im TAcw_ORDER ;
+LEXICON VTI_WICI
+@U.wici.NULL@ VTIt_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im VTAcw_ORDER ;
 
-LEXICON TICONJ_PL_WICI
-@U.wici.NULL@ TIt_PL_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im TAcw_PL_ORDER ;
+LEXICON VTI_PL_WICI
+@U.wici.NULL@ VTIt_PL_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im VTAcw_PL_ORDER ;
 
 !!! ORDERS
 
@@ -1476,17 +1476,17 @@ LEXICON TICONJ_PL_WICI
 ! ===========================================================
 ! =========================================================== ! imperative and fut con do not take tense
 
-LEXICON TIt_ORDER !!= @CODE@ . 
-@U.order.indep@+Ind:@U.order.indep@ TIt_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ TIt_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  TIt_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ TIt_FUT_CON_PERSON ; !
+LEXICON VTIt_ORDER !!= @CODE@ . 
+@U.order.indep@+Ind:@U.order.indep@ VTIt_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTIt_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTIt_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTIt_FUT_CON_PERSON ; !
 
-LEXICON TIt_PL_ORDER !!= @CODE@ plural only NOTE: imperative and fut con go straight to person lexica
-@U.order.indep@+Ind:@U.order.indep@ TIt_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ TIt_PL_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  TIt_PL_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ TIt_PL_FUT_CON_PERSON ; !
+LEXICON VTIt_PL_ORDER !!= @CODE@ plural only NOTE: imperative and fut con go straight to person lexica
+@U.order.indep@+Ind:@U.order.indep@ VTIt_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTIt_PL_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTIt_PL_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTIt_PL_FUT_CON_PERSON ; !
 
 !!! TENSES
 
@@ -1497,27 +1497,27 @@ LEXICON TIt_PL_ORDER !!= @CODE@ plural only NOTE: imperative and fut con go stra
 ! ===========================================================
 
 
-LEXICON TIt_IND_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ TIt_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TIt_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TIt_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TIt_IND_PERSON ; !
+LEXICON VTIt_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTIt_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTIt_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTIt_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTIt_IND_PERSON ; !
 
-LEXICON TIt_CNJ_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ TIt_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TIt_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TIt_CNJ_PERSON ; !intentional
+LEXICON VTIt_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTIt_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTIt_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTIt_CNJ_PERSON ; !intentional
 
-LEXICON TIt_PL_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TIt_PL_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TIt_PL_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TIt_PL_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TIt_PL_IND_PERSON ; !
+LEXICON VTIt_PL_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTIt_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTIt_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTIt_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTIt_PL_IND_PERSON ; !
 
-LEXICON TIt_PL_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TIt_PL_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TIt_PL_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TIt_PL_CNJ_PERSON ; !intentional
+LEXICON VTIt_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTIt_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTIt_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTIt_PL_CNJ_PERSON ; !intentional
 
 
 !!! PERSON
@@ -1529,33 +1529,33 @@ LEXICON TIt_PL_CNJ_TENSE !!= @CODE@ plural only
 ! ===========================================================
 
 
-LEXICON TIt_IND_PERSON !!= @CODE@ 
-@U.person.NI@ TIt_IND_NI ;
-@U.person.KI@ TIt_IND_KI ;
-@U.person.NULL@ TIt_IND_NULL ;
+LEXICON VTIt_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTIt_IND_NI ;
+@U.person.KI@ VTIt_IND_KI ;
+@U.person.NULL@ VTIt_IND_NULL ;
 
-LEXICON TIt_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ TIt_CNJ_NULL ;
+LEXICON VTIt_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VTIt_CNJ_NULL ;
 
-LEXICON TIt_FUT_CON_PERSON !!= @CODE@ 
-@U.person.NULL@ TIt_FUT_CON_NULL ;
+LEXICON VTIt_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VTIt_FUT_CON_NULL ;
 
-LEXICON TIt_IMP_PERSON !!= @CODE@ 
-@U.person.NULL@ TIt_IMP_NULL ;
+LEXICON VTIt_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VTIt_IMP_NULL ;
 
-LEXICON TIt_PL_IND_PERSON !!= @CODE@ plural only
-@U.person.NI@ TIt_IND_NI_PL_SUFFIX ;
-@U.person.KI@ TIt_IND_KI_PL_SUFFIX ;
-@U.person.NULL@ TIt_IND_NULL_PL_SUFFIX ;
+LEXICON VTIt_PL_IND_PERSON !!= @CODE@ plural only
+@U.person.NI@ VTIt_IND_NI_PL_SUFFIX ;
+@U.person.KI@ VTIt_IND_KI_PL_SUFFIX ;
+@U.person.NULL@ VTIt_IND_NULL_PL_SUFFIX ;
 
-LEXICON TIt_PL_CNJ_PERSON !!= @CODE@ plural only
-@U.person.NULL@ TIt_CNJ_NULL_PL_SUFFIX ;
+LEXICON VTIt_PL_CNJ_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VTIt_CNJ_NULL_PL_SUFFIX ;
 
-LEXICON TIt_PL_FUT_CON_PERSON !!= @CODE@ plural only
-@U.person.NULL@ TIt_FUT_CON_NULL_PL_SUFFIX ;
+LEXICON VTIt_PL_FUT_CON_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VTIt_FUT_CON_NULL_PL_SUFFIX ;
 
-LEXICON TIt_PL_IMP_PERSON !!= @CODE@ plural only
-@U.person.NULL@ TIt_IMP_NULL_PL_SUFFIX ;
+LEXICON VTIt_PL_IMP_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VTIt_IMP_NULL_PL_SUFFIX ;
 
 !!! SUFFIXES
 
@@ -1571,44 +1571,44 @@ LEXICON TIt_PL_IMP_PERSON !!= @CODE@ plural only
 ! ===========================================================
 
 
-LEXICON TIt_IND_NI   !!= @CODE@  
-TIt_IND_NI_SG_SUFFIX ;
-TIt_IND_NI_PL_SUFFIX ;
+LEXICON VTIt_IND_NI   !!= @CODE@  
+VTIt_IND_NI_SG_SUFFIX ;
+VTIt_IND_NI_PL_SUFFIX ;
 
-LEXICON TIt_IND_NI_SG_SUFFIX   !!= @CODE@ 
+LEXICON VTIt_IND_NI_SG_SUFFIX   !!= @CODE@ 
 +1Sg:%>ên # ;
 
-LEXICON TIt_IND_NI_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTIt_IND_NI_PL_SUFFIX   !!= @CODE@ 
 +1Pl:%>ênân # ;
 
-LEXICON TIt_IND_KI   !!= @CODE@  
-TIt_IND_KI_SG_SUFFIX ;
-TIt_IND_KI_PL_SUFFIX ;
+LEXICON VTIt_IND_KI   !!= @CODE@  
+VTIt_IND_KI_SG_SUFFIX ;
+VTIt_IND_KI_PL_SUFFIX ;
 
-LEXICON TIt_IND_KI_SG_SUFFIX   !!= @CODE@ 
+LEXICON VTIt_IND_KI_SG_SUFFIX   !!= @CODE@ 
 +2Sg:%>ên # ;
 
-LEXICON TIt_IND_KI_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTIt_IND_KI_PL_SUFFIX   !!= @CODE@ 
 +12Pl:%>ênaw # ;
 +12Pl:%>ênânaw # ;
 +2Pl:%>ênâwâw # ;
 
-LEXICON TIt_IND_NULL   !!= @CODE@  
-TIt_IND_NULL_SG_SUFFIX ;
-TIt_IND_NULL_PL_SUFFIX ;
+LEXICON VTIt_IND_NULL   !!= @CODE@  
+VTIt_IND_NULL_SG_SUFFIX ;
+VTIt_IND_NULL_PL_SUFFIX ;
 
-LEXICON TIt_IND_NULL_SG_SUFFIX   !!= @CODE@ NOTE: X actor will eventually derive to VII, so it is not yet included as per Arok's paradigm
+LEXICON VTIt_IND_NULL_SG_SUFFIX   !!= @CODE@ NOTE: X actor will eventually derive to VII, so it is not yet included as per Arok's paradigm
 +3Sg:%>am # ;
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********
 
-+X:%>ikâtê IIw_IND_SG_SUFFIX ;
++X:%>ikâtê VIIw_IND_SG_SUFFIX ;
 
 
 
-LEXICON TIt_IND_NULL_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTIt_IND_NULL_PL_SUFFIX   !!= @CODE@ 
 +3Pl:%>amwak # ;
 +4Sg/Pl:%>amiyiwa # ;
 
@@ -1616,7 +1616,7 @@ LEXICON TIt_IND_NULL_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X:%>ikâtê IIw_IND_PL_SUFFIX ;
++X:%>ikâtê VIIw_IND_PL_SUFFIX ;
 
 ! ===================================================================================================================
 ! ===================================================================================================================
@@ -1635,12 +1635,12 @@ LEXICON TIt_IND_NULL_PL_SUFFIX   !!= @CODE@
 ! ===========================================================
 
 
-LEXICON TIt_CNJ_NULL   !!= @CODE@ 
+LEXICON VTIt_CNJ_NULL   !!= @CODE@ 
 
-TIt_CNJ_NULL_SG_SUFFIX ;
-TIt_CNJ_NULL_PL_SUFFIX ;
+VTIt_CNJ_NULL_SG_SUFFIX ;
+VTIt_CNJ_NULL_PL_SUFFIX ;
 
-LEXICON TIt_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VTIt_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
 
 +1Sg:%>amân # ;
 +2Sg:%>aman # ;
@@ -1653,7 +1653,7 @@ LEXICON TIt_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 +X+3Sg:%>amihk # ;
 +X+4Sg:%>amihiyik # ;
 
-LEXICON TIt_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTIt_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
 +1Pl:%>amâhk # ;
 +12Pl:%>amahk # ;
@@ -1685,16 +1685,16 @@ LEXICON TIt_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 ! ===========================================================
 
 
-LEXICON TIt_IMP_NULL
-TIt_IMP_SG_SUFFIX ;
-TIt_IMP_NULL_PL_SUFFIX ;
+LEXICON VTIt_IMP_NULL
+VTIt_IMP_SG_SUFFIX ;
+VTIt_IMP_NULL_PL_SUFFIX ;
 
-LEXICON TIt_IMP_SG_SUFFIX
+LEXICON VTIt_IMP_SG_SUFFIX
 +Imm+2Sg:%>a   # ; ! 
 +Del+2Sg:%>amôhkan   # ; !
 
 
-LEXICON TIt_IMP_NULL_PL_SUFFIX
+LEXICON VTIt_IMP_NULL_PL_SUFFIX
 +Imm+12Pl:%>êtân	  # ; !
 +Imm+2Pl:%>amok	 # ; !
 +Del+12Pl:%>amôhkahk   # ; !
@@ -1718,12 +1718,12 @@ LEXICON TIt_IMP_NULL_PL_SUFFIX
 ! ===========================================================
 
 
-LEXICON TIt_FUT_CON_NULL   !!= @CODE@ 
+LEXICON VTIt_FUT_CON_NULL   !!= @CODE@ 
 
-TIt_FUT_CON_NULL_SG_SUFFIX ;
-TIt_FUT_CON_NULL_PL_SUFFIX ;
+VTIt_FUT_CON_NULL_SG_SUFFIX ;
+VTIt_FUT_CON_NULL_PL_SUFFIX ;
 
-LEXICON TIt_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VTIt_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
 
 +1Sg:%>amâni # ;
 +2Sg:%>amani # ;
@@ -1736,7 +1736,7 @@ LEXICON TIt_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@
 +X+3Sg:%>amihki # ;
 +X+4Sg:%>amihiyiki # ;
 
-LEXICON TIt_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTIt_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
 +1Pl:%>amâhki # ;
 +12Pl:%>amahko # ;
@@ -1767,108 +1767,108 @@ LEXICON TIt_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 !!! STEM CLASS
 
 LEXICON TACONJ_1 !!= @CODE@ Regular verbs
-+V+TA: TACONJ_WICI ;
++V+TA: VTACONJ_WICI ;
 
 LEXICON TACONJ_2  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
-+V+TA: TACONJvw_WICI ;
++V+TA: VTACONJvw_WICI ;
 
 LEXICON TACONJ_2-PL  !!= * @CODE@ -Vw stem-ending verbs; when deletes w and i plural only forms
-+V+TA: TACONJvw_PL_WICI ;
++V+TA: VTACONJvw_PL_WICI ;
 
 LEXICON TACONJ_3  !!= * @CODE@ -Cw stem-ending verbs; where w and i fuse to o
-+V+TA: TACONJcw_WICI;
++V+TA: VTACONJcw_WICI;
 
 LEXICON TACONJ_4  !!= * @CODE@ -t stem-ending verbs; where t becomes s in some cases
-+V+TA: TACONJt_WICI ;
++V+TA: VTACONJt_WICI ;
 
 LEXICON TACONJ_5 !!= * @CODE@ verbs that take a -i in 2sg imm. imp. due to moraic constraints
-+V+TA: TACONJi_WICI ;
++V+TA: VTACONJi_WICI ;
 
 LEXICON TACONJ_5-TS !!= * @CODE@  verbs that take a -i in 2sg imm. imp. due to moraic constraints, but also have stem final t becoming s in some cases.
-+V+TA: TACONJti_WICI ;
++V+TA: VTACONJti_WICI ;
 
 !!! WICI
 
 !!!! -t final verbs (refers to the 3 SG form ending)
 
-LEXICON TACONJ_WICI !!= @CODE@ Regular verbs
-@U.wici.NULL@ TA_ORDER ;
+LEXICON VTACONJ_WICI !!= @CODE@ Regular verbs
+@U.wici.NULL@ VTA_ORDER ;
 
-LEXICON TACONJvw_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
-@U.wici.NULL@ TAvw_ORDER ;
-
-
-LEXICON TACONJvw_PL_WICI  !!= * @CODE@ -Vw stem-ending verbs; when deletes w and i plural only forms 
-@U.wici.NULL@ TAvw_PL_ORDER ;
+LEXICON VTACONJvw_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
+@U.wici.NULL@ VTAvw_ORDER ;
 
 
-LEXICON TACONJcw_WICI  !!= * @CODE@ -Cw stem-ending verbs; where w and i fuse to o 
-@U.wici.NULL@ TAcw_ORDER ;
-
-LEXICON TACONJt_WICI  !!= * @CODE@ -t stem-ending verbs; where t becomes s in some cases 
-@U.wici.NULL@ TAt_ORDER ;
+LEXICON VTACONJvw_PL_WICI  !!= * @CODE@ -Vw stem-ending verbs; when deletes w and i plural only forms 
+@U.wici.NULL@ VTAvw_PL_ORDER ;
 
 
-LEXICON TACONJi_WICI  !!= * @CODE@ verbs that take a -i in 2sg imm. imp. due to moraic constraints 
-@U.wici.NULL@ TAi_ORDER ;
+LEXICON VTACONJcw_WICI  !!= * @CODE@ -Cw stem-ending verbs; where w and i fuse to o 
+@U.wici.NULL@ VTAcw_ORDER ;
+
+LEXICON VTACONJt_WICI  !!= * @CODE@ -t stem-ending verbs; where t becomes s in some cases 
+@U.wici.NULL@ VTAt_ORDER ;
 
 
-LEXICON TACONJti_WICI  !!= * @CODE@  verbs that take a -i in 2sg imm. imp. due to moraic constraints, but also have stem final t becoming s in some cases 
-@U.wici.NULL@ TAti_ORDER ;
+LEXICON VTACONJi_WICI  !!= * @CODE@ verbs that take a -i in 2sg imm. imp. due to moraic constraints 
+@U.wici.NULL@ VTAi_ORDER ;
+
+
+LEXICON VTACONJti_WICI  !!= * @CODE@  verbs that take a -i in 2sg imm. imp. due to moraic constraints, but also have stem final t becoming s in some cases 
+@U.wici.NULL@ VTAti_ORDER ;
 
 
 !!! ORDERS
 
 !!!! -t final verbs (refers to the 3 SG form ending) imperative and fut con do not take tense
 
-LEXICON TA_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
-@U.order.indep@+Ind:@U.order.indep@ TA_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ TA_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  TA_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ TA_FUT_CON_PERSON ; !
+LEXICON VTA_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
+@U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTA_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA_FUT_CON_PERSON ; !
 
-LEXICON TAvw_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense
-@U.order.indep@+Ind:@U.order.indep@ TAvw_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ TAvw_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  TAvw_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ TAvw_FUT_CON_PERSON ; !
+LEXICON VTAvw_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense
+@U.order.indep@+Ind:@U.order.indep@ VTAvw_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTAvw_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTAvw_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTAvw_FUT_CON_PERSON ; !
 
-LEXICON TAvw_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
-@U.order.indep@+Ind:@U.order.indep@ TAvw_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ TAvw_PL_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  TAvw_PL_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ TAvw_PL_FUT_CON_PERSON ; !
+LEXICON VTAvw_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
+@U.order.indep@+Ind:@U.order.indep@ VTAvw_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTAvw_PL_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTAvw_PL_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTAvw_PL_FUT_CON_PERSON ; !
 
-LEXICON TAcw_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
-@U.order.indep@+Ind:@U.order.indep@ TAcw_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ TAcw_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  TAcw_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ TAcw_FUT_CON_PERSON ; !
+LEXICON VTAcw_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
+@U.order.indep@+Ind:@U.order.indep@ VTAcw_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTAcw_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTAcw_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTAcw_FUT_CON_PERSON ; !
 
-LEXICON TAcw_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
-@U.order.indep@+Ind:@U.order.indep@ TAcw_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ TAcw_PL_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  TAcw_PL_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ TAcw_PL_FUT_CON_PERSON ; !
+LEXICON VTAcw_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
+@U.order.indep@+Ind:@U.order.indep@ VTAcw_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTAcw_PL_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTAcw_PL_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTAcw_PL_FUT_CON_PERSON ; !
 
 
-LEXICON TAt_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Independent is same as TA regular
-@U.order.indep@+Ind:@U.order.indep@ TA_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ TAt_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  TAt_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ TAt_FUT_CON_PERSON ; !
+LEXICON VTAt_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Independent is same as TA regular
+@U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTAt_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTAt_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTAt_FUT_CON_PERSON ; !
 
-LEXICON TAi_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
-@U.order.indep@+Ind:@U.order.indep@ TA_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ TA_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  TAi_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ TA_FUT_CON_PERSON ; !
+LEXICON VTAi_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
+@U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTAi_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA_FUT_CON_PERSON ; !
 
-LEXICON TAti_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Independent is as TA regular, Imp as TAi, all else is as TAt
-@U.order.indep@+Ind:@U.order.indep@ TAt_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ TA_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  TAi_IMP_PERSON ; !
-@U.order.indep@+Fut+Cond:@U.order.indep@ TAt_FUT_CON_PERSON ; !
+LEXICON VTAti_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Independent is as TA regular, Imp as TAi, all else is as TAt
+@U.order.indep@+Ind:@U.order.indep@ VTAt_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTAi_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTAt_FUT_CON_PERSON ; !
 
 !!! TENSES
 
@@ -1878,16 +1878,16 @@ LEXICON TAti_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Independ
 ! =========================
 ! =========================
 
-LEXICON TA_IND_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ TA_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TA_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TA_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TA_IND_PERSON ; !
+LEXICON VTA_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTA_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTA_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTA_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA_IND_PERSON ; !
 
-LEXICON TA_CNJ_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ TA_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TA_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TA_CNJ_PERSON ; !intentional
+LEXICON VTA_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTA_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTA_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA_CNJ_PERSON ; !intentional
 
 ! ============================================================
 ! ============================================================
@@ -1895,29 +1895,29 @@ LEXICON TA_CNJ_TENSE
 ! ============================================================
 ! ============================================================
 
-LEXICON TAvw_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAvw_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAvw_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAvw_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAvw_IND_PERSON ; !
+LEXICON VTAvw_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAvw_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAvw_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTAvw_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAvw_IND_PERSON ; !
 
-LEXICON TAvw_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAvw_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAvw_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAvw_CNJ_PERSON ; !intentional
+LEXICON VTAvw_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAvw_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAvw_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAvw_CNJ_PERSON ; !intentional
 
 !!!! -Vw stem-ending verbs plural only !!!!
 
-LEXICON TAvw_PL_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAvw_PL_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAvw_PL_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAvw_PL_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAvw_PL_IND_PERSON ; !
+LEXICON VTAvw_PL_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAvw_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAvw_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTAvw_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAvw_PL_IND_PERSON ; !
 
-LEXICON TAvw_PL_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAvw_PL_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAvw_PL_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAvw_PL_CNJ_PERSON ; !intentional
+LEXICON VTAvw_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAvw_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAvw_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAvw_PL_CNJ_PERSON ; !intentional
 
 ! ============================================================
 ! ============================================================
@@ -1925,29 +1925,29 @@ LEXICON TAvw_PL_CNJ_TENSE !!= @CODE@ plural only
 ! ============================================================
 ! ============================================================
 
-LEXICON TAcw_IND_TENSE !!= @CODE@  
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAcw_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAcw_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAcw_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAcw_IND_PERSON ; !
+LEXICON VTAcw_IND_TENSE !!= @CODE@  
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAcw_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAcw_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTAcw_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAcw_IND_PERSON ; !
 
-LEXICON TAcw_CNJ_TENSE !!= @CODE@  
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAcw_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAcw_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAcw_CNJ_PERSON ; !intentional
+LEXICON VTAcw_CNJ_TENSE !!= @CODE@  
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAcw_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAcw_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAcw_CNJ_PERSON ; !intentional
 
 !!!! -Cw stem-ending plural only verbs !!!!
 
-LEXICON TAcw_PL_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAcw_PL_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAcw_PL_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAcw_PL_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAcw_PL_IND_PERSON ; !
+LEXICON VTAcw_PL_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAcw_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAcw_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTAcw_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAcw_PL_IND_PERSON ; !
 
-LEXICON TAcw_PL_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAcw_PL_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAcw_PL_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAcw_PL_CNJ_PERSON ; !intentional
+LEXICON VTAcw_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAcw_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAcw_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAcw_PL_CNJ_PERSON ; !intentional
 
 ! ========================================================
 ! ========================================================
@@ -1955,16 +1955,16 @@ LEXICON TAcw_PL_CNJ_TENSE !!= @CODE@ plural only
 ! ========================================================
 ! ======================================================== 
 
-LEXICON TAt_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAt_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAt_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAt_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAt_IND_PERSON ; !
+LEXICON VTAt_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAt_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAt_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTAt_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAt_IND_PERSON ; !
 
-LEXICON TAt_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAt_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAt_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAt_CNJ_PERSON ; !intentional
+LEXICON VTAt_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAt_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAt_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAt_CNJ_PERSON ; !intentional
 
 ! ===================================
 ! ===================================
@@ -1972,16 +1972,16 @@ LEXICON TAt_CNJ_TENSE !!= @CODE@ plural only
 ! ===================================
 ! =================================== 
 
-LEXICON TAi_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAi_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAi_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAi_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAi_IND_PERSON ; !
+LEXICON VTAi_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAi_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAi_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTAi_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAi_IND_PERSON ; !
 
-LEXICON TAi_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAi_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAi_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAi_CNJ_PERSON ; !intentional
+LEXICON VTAi_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAi_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAi_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAi_CNJ_PERSON ; !intentional
 
 ! ===================================================================
 ! ===================================================================
@@ -1989,16 +1989,16 @@ LEXICON TAi_CNJ_TENSE !!= @CODE@ plural only
 ! ===================================================================
 ! =================================================================== 
 
-LEXICON TAti_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAti_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAti_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ TAti_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAti_IND_PERSON ; !
+LEXICON VTAti_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAti_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAti_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTAti_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAti_IND_PERSON ; !
 
-LEXICON TAti_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ TAti_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ TAti_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ TAti_CNJ_PERSON ; !intentional
+LEXICON VTAti_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTAti_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTAti_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAti_CNJ_PERSON ; !intentional
 
 
 !!! PERSON
@@ -2009,19 +2009,19 @@ LEXICON TAti_CNJ_TENSE !!= @CODE@ plural only
 ! =========================
 ! =========================
 
-LEXICON TA_IND_PERSON !!= @CODE@ 
-@U.person.NI@ TA_IND_NI ;
-@U.person.KI@ TA_IND_KI ;
-@U.person.NULL@ TA_IND_NULL ;
+LEXICON VTA_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTA_IND_NI ;
+@U.person.KI@ VTA_IND_KI ;
+@U.person.NULL@ VTA_IND_NULL ;
 
-LEXICON TA_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ TA_CNJ_NULL ;
+LEXICON VTA_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VTA_CNJ_NULL ;
 
-LEXICON TA_FUT_CON_PERSON !!= @CODE@ 
-@U.person.NULL@ TA_FUT_CON_NULL ;
+LEXICON VTA_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VTA_FUT_CON_NULL ;
 
-LEXICON TA_IMP_PERSON !!= @CODE@ 
-@U.person.NULL@ TA_IMP_NULL ;
+LEXICON VTA_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VTA_IMP_NULL ;
 
 ! ============================================================
 ! ============================================================
@@ -2029,35 +2029,35 @@ LEXICON TA_IMP_PERSON !!= @CODE@
 ! ============================================================
 ! ============================================================
 
-LEXICON TAvw_IND_PERSON !!= @CODE@ 
-@U.person.NI@ TAvw_IND_NI ;
-@U.person.KI@ TAvw_IND_KI ;
-@U.person.NULL@ TAvw_IND_NULL ;
+LEXICON VTAvw_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTAvw_IND_NI ;
+@U.person.KI@ VTAvw_IND_KI ;
+@U.person.NULL@ VTAvw_IND_NULL ;
 
-LEXICON TAvw_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ TAvw_CNJ_NULL ;
+LEXICON VTAvw_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAvw_CNJ_NULL ;
 
-LEXICON TAvw_FUT_CON_PERSON !!= @CODE@ 
-@U.person.NULL@ TAvw_FUT_CON_NULL ;
+LEXICON VTAvw_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAvw_FUT_CON_NULL ;
 
-LEXICON TAvw_IMP_PERSON !!= @CODE@ Identical to TA IMP
-@U.person.NULL@ TA_IMP_NULL ;
+LEXICON VTAvw_IMP_PERSON !!= @CODE@ Identical to TA IMP
+@U.person.NULL@ VTA_IMP_NULL ;
 
 !!!! -Vw stem-ending verbs plural only !!!!
 
-LEXICON TAvw_PL_IND_PERSON !!= @CODE@ 
-@U.person.NI@ TAvw_IND_NI_PL_SUFFIX ;
-@U.person.KI@ TAvw_IND_KI_PL_SUFFIX ;
-@U.person.NULL@ TAvw_IND_NULL_PL_SUFFIX ;
+LEXICON VTAvw_PL_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTAvw_IND_NI_PL_SUFFIX ;
+@U.person.KI@ VTAvw_IND_KI_PL_SUFFIX ;
+@U.person.NULL@ VTAvw_IND_NULL_PL_SUFFIX ;
 
-LEXICON TAvw_PL_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ TAvw_CNJ_NULL_PL_SUFFIX ;
+LEXICON VTAvw_PL_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAvw_CNJ_NULL_PL_SUFFIX ;
 
-LEXICON TAvw_PL_FUT_CON_PERSON !!= @CODE@ 
-@U.person.NULL@ TAvw_FUT_CON_NULL_PL_SUFFIX ;
+LEXICON VTAvw_PL_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAvw_FUT_CON_NULL_PL_SUFFIX ;
 
-LEXICON TAvw_PL_IMP_PERSON !!= @CODE@ 
-@U.person.NULL@ TA_IMP_NULL_PL_SUFFIX ;
+LEXICON VTAvw_PL_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VTA_IMP_NULL_PL_SUFFIX ;
 
 ! ============================================================
 ! ============================================================
@@ -2065,35 +2065,35 @@ LEXICON TAvw_PL_IMP_PERSON !!= @CODE@
 ! ============================================================
 ! ============================================================
 
-LEXICON TAcw_IND_PERSON !!= @CODE@ 
-@U.person.NI@ TAcw_IND_NI ;
-@U.person.KI@ TAcw_IND_KI ;
-@U.person.NULL@ TAcw_IND_NULL ;
+LEXICON VTAcw_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTAcw_IND_NI ;
+@U.person.KI@ VTAcw_IND_KI ;
+@U.person.NULL@ VTAcw_IND_NULL ;
 
-LEXICON TAcw_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ TAcw_CNJ_NULL ;
+LEXICON VTAcw_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAcw_CNJ_NULL ;
 
-LEXICON TAcw_FUT_CON_PERSON !!= @CODE@ 
-@U.person.NULL@ TAcw_FUT_CON_NULL ;
+LEXICON VTAcw_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAcw_FUT_CON_NULL ;
 
-LEXICON TAcw_IMP_PERSON !!= @CODE@ 
-@U.person.NULL@ TAcw_IMP_NULL ;
+LEXICON VTAcw_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAcw_IMP_NULL ;
 
 !!!! -Cw stem-ending verbs plural only !!!!
 
-LEXICON TAcw_PL_IND_PERSON !!= @CODE@ 
-@U.person.NI@ TAcw_IND_NI_PL_SUFFIX ;
-@U.person.KI@ TAcw_IND_KI_PL_SUFFIX ;
-@U.person.NULL@ TAcw_IND_NULL_PL_SUFFIX ;
+LEXICON VTAcw_PL_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTAcw_IND_NI_PL_SUFFIX ;
+@U.person.KI@ VTAcw_IND_KI_PL_SUFFIX ;
+@U.person.NULL@ VTAcw_IND_NULL_PL_SUFFIX ;
 
-LEXICON TAcw_PL_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ TAcw_CNJ_NULL_PL_SUFFIX ;
+LEXICON VTAcw_PL_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAcw_CNJ_NULL_PL_SUFFIX ;
 
-LEXICON TAcw_PL_FUT_CON_PERSON !!= @CODE@ 
-@U.person.NULL@ TAcw_FUT_CON_NULL_PL_SUFFIX ;
+LEXICON VTAcw_PL_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAcw_FUT_CON_NULL_PL_SUFFIX ;
 
-LEXICON TAcw_PL_IMP_PERSON !!= @CODE@ 
-@U.person.NULL@ TA_IMP_NULL_PL_SUFFIX ;
+LEXICON VTAcw_PL_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VTA_IMP_NULL_PL_SUFFIX ;
 
 
 ! ========================================================
@@ -2102,19 +2102,19 @@ LEXICON TAcw_PL_IMP_PERSON !!= @CODE@
 ! ========================================================
 ! ========================================================
 
-LEXICON TAt_IND_PERSON !!= @CODE@ 
-@U.person.NI@ TA_IND_NI ;
-@U.person.KI@ TAt_IND_KI ;
-@U.person.NULL@ TA_IND_NULL ;
+LEXICON VTAt_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTA_IND_NI ;
+@U.person.KI@ VTAt_IND_KI ;
+@U.person.NULL@ VTA_IND_NULL ;
 
-LEXICON TAt_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ TAt_CNJ_NULL ;
+LEXICON VTAt_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAt_CNJ_NULL ;
 
-LEXICON TAt_FUT_CON_PERSON !!= @CODE@
-@U.person.NULL@ TA_FUT_CON_NULL ;
+LEXICON VTAt_FUT_CON_PERSON !!= @CODE@
+@U.person.NULL@ VTA_FUT_CON_NULL ;
 
-LEXICON TAt_IMP_PERSON !!= @CODE@ 
-@U.person.NULL@ TAt_IMP_NULL ;
+LEXICON VTAt_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAt_IMP_NULL ;
 
 ! ===================================
 ! ===================================
@@ -2123,19 +2123,19 @@ LEXICON TAt_IMP_PERSON !!= @CODE@
 ! ===================================
 
 
-LEXICON TAi_IND_PERSON !!= @CODE@ 
-@U.person.NI@ TA_IND_NI ;
-@U.person.KI@ TA_IND_KI ;
-@U.person.NULL@ TA_IND_NULL ;
+LEXICON VTAi_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTA_IND_NI ;
+@U.person.KI@ VTA_IND_KI ;
+@U.person.NULL@ VTA_IND_NULL ;
 
-LEXICON TAi_CNJ_PERSON !!= @CODE@
-@U.person.NULL@ TA_CNJ_NULL ;
+LEXICON VTAi_CNJ_PERSON !!= @CODE@
+@U.person.NULL@ VTA_CNJ_NULL ;
 
-LEXICON TAi_FUT_CON_PERSON !!= @CODE@
-@U.person.NULL@ TA_FUT_CON_NULL ;
+LEXICON VTAi_FUT_CON_PERSON !!= @CODE@
+@U.person.NULL@ VTA_FUT_CON_NULL ;
 
-LEXICON TAi_IMP_PERSON !!= @CODE@ 
-@U.person.NULL@ TAi_IMP_NULL ;
+LEXICON VTAi_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAi_IMP_NULL ;
 
 ! ===================================================================
 ! ===================================================================
@@ -2144,19 +2144,19 @@ LEXICON TAi_IMP_PERSON !!= @CODE@
 ! ===================================================================
  
 
-LEXICON TAti_IND_PERSON !!= @CODE@ 
-@U.person.NI@ TA_IND_NI ;
-@U.person.KI@ TAt_IND_KI ;
-@U.person.NULL@ TA_IND_NULL ;
+LEXICON VTAti_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTA_IND_NI ;
+@U.person.KI@ VTAt_IND_KI ;
+@U.person.NULL@ VTA_IND_NULL ;
 
-LEXICON TAti_CNJ_PERSON !!= @CODE@
-@U.person.NULL@ TAt_CNJ_NULL ;
+LEXICON VTAti_CNJ_PERSON !!= @CODE@
+@U.person.NULL@ VTAt_CNJ_NULL ;
 
-LEXICON TAti_FUT_CON_PERSON !!= @CODE@
-@U.person.NULL@ TAt_FUT_CON_NULL ;
+LEXICON VTAti_FUT_CON_PERSON !!= @CODE@
+@U.person.NULL@ VTAt_FUT_CON_NULL ;
 
-LEXICON TAti_IMP_PERSON !!= @CODE@ 
-@U.person.NULL@ TAi_IMP_NULL ;
+LEXICON VTAti_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VTAi_IMP_NULL ;
 
 
 
@@ -2176,15 +2176,15 @@ LEXICON TAti_IMP_PERSON !!= @CODE@
 ! =================================
 
 
-LEXICON TA_IND_NI   !!= @CODE@  NOTE: No local, as local forms are always with ki-
-TA_IND_NI_SG_SUFFIX ;
-TA_IND_NI_PL_SUFFIX ;
+LEXICON VTA_IND_NI   !!= @CODE@  NOTE: No local, as local forms are always with ki-
+VTA_IND_NI_SG_SUFFIX ;
+VTA_IND_NI_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TA_IND_NI_SG_SUFFIX   !!= @CODE@
+LEXICON VTA_IND_NI_SG_SUFFIX   !!= @CODE@
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2215,7 +2215,7 @@ LEXICON TA_IND_NI_SG_SUFFIX   !!= @CODE@
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TA_IND_NI_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTA_IND_NI_PL_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2251,15 +2251,15 @@ LEXICON TA_IND_NI_PL_SUFFIX   !!= @CODE@
 !!!!!! KI- PREFIXING FORMS !!!!!!
 ! =================================
 
-LEXICON TA_IND_KI   !!= @CODE@  
-TA_IND_KI_SG_SUFFIX ;
-TA_IND_KI_PL_SUFFIX ;
+LEXICON VTA_IND_KI   !!= @CODE@  
+VTA_IND_KI_SG_SUFFIX ;
+VTA_IND_KI_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TA_IND_KI_SG_SUFFIX   !!= @CODE@ 
+LEXICON VTA_IND_KI_SG_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2298,7 +2298,7 @@ LEXICON TA_IND_KI_SG_SUFFIX   !!= @CODE@
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TA_IND_KI_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTA_IND_KI_PL_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2361,16 +2361,16 @@ LEXICON TA_IND_KI_PL_SUFFIX   !!= @CODE@
 !!!!!! NULL PREFIXING FORMS !!!!!!
 ! ==================================
 
-LEXICON TA_IND_NULL   !!= @CODE@  NOTE: never local
-TA_IND_NULL_SG_SUFFIX ;
-TA_IND_NULL_PL_SUFFIX ;
+LEXICON VTA_IND_NULL   !!= @CODE@  NOTE: never local
+VTA_IND_NULL_SG_SUFFIX ;
+VTA_IND_NULL_PL_SUFFIX ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TA_IND_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VTA_IND_NULL_SG_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2403,7 +2403,7 @@ LEXICON TA_IND_NULL_SG_SUFFIX   !!= @CODE@
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TA_IND_NULL_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTA_IND_NULL_PL_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2441,15 +2441,15 @@ LEXICON TA_IND_NULL_PL_SUFFIX   !!= @CODE@
 ! =================================
 
 
-LEXICON TAvw_IND_NI   !!= @CODE@  NOTE: No local, as local forms are always with ki-
-TAvw_IND_NI_SG_SUFFIX ;
-TAvw_IND_NI_PL_SUFFIX ;
+LEXICON VTAvw_IND_NI   !!= @CODE@  NOTE: No local, as local forms are always with ki-
+VTAvw_IND_NI_SG_SUFFIX ;
+VTAvw_IND_NI_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAvw_IND_NI_SG_SUFFIX   !!= @CODE@
+LEXICON VTAvw_IND_NI_SG_SUFFIX   !!= @CODE@
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2480,7 +2480,7 @@ LEXICON TAvw_IND_NI_SG_SUFFIX   !!= @CODE@
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAvw_IND_NI_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTAvw_IND_NI_PL_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2516,15 +2516,15 @@ LEXICON TAvw_IND_NI_PL_SUFFIX   !!= @CODE@
 !!!!!! KI- PREFIXING FORMS !!!!!!
 ! =================================
 
-LEXICON TAvw_IND_KI   !!= @CODE@  
-TAvw_IND_KI_SG_SUFFIX ;
-TAvw_IND_KI_PL_SUFFIX ;
+LEXICON VTAvw_IND_KI   !!= @CODE@  
+VTAvw_IND_KI_SG_SUFFIX ;
+VTAvw_IND_KI_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAvw_IND_KI_SG_SUFFIX   !!= @CODE@ 
+LEXICON VTAvw_IND_KI_SG_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2563,7 +2563,7 @@ LEXICON TAvw_IND_KI_SG_SUFFIX   !!= @CODE@
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAvw_IND_KI_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTAvw_IND_KI_PL_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2625,16 +2625,16 @@ LEXICON TAvw_IND_KI_PL_SUFFIX   !!= @CODE@
 !!!!!! NULL PREFIXING FORMS !!!!!!
 ! ==================================
 
-LEXICON TAvw_IND_NULL   !!= @CODE@  NOTE: never local
-TAvw_IND_NULL_SG_SUFFIX ;
-TAvw_IND_NULL_PL_SUFFIX ;
+LEXICON VTAvw_IND_NULL   !!= @CODE@  NOTE: never local
+VTAvw_IND_NULL_SG_SUFFIX ;
+VTAvw_IND_NULL_PL_SUFFIX ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAvw_IND_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VTAvw_IND_NULL_SG_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2668,7 +2668,7 @@ LEXICON TAvw_IND_NULL_SG_SUFFIX   !!= @CODE@
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAvw_IND_NULL_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTAvw_IND_NULL_PL_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2707,15 +2707,15 @@ LEXICON TAvw_IND_NULL_PL_SUFFIX   !!= @CODE@
 ! =================================
 
 
-LEXICON TAcw_IND_NI   !!= @CODE@  NOTE: No local, as local forms are always with ki-
-TAcw_IND_NI_SG_SUFFIX ;
-TAcw_IND_NI_PL_SUFFIX ;
+LEXICON VTAcw_IND_NI   !!= @CODE@  NOTE: No local, as local forms are always with ki-
+VTAcw_IND_NI_SG_SUFFIX ;
+VTAcw_IND_NI_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAcw_IND_NI_SG_SUFFIX   !!= @CODE@
+LEXICON VTAcw_IND_NI_SG_SUFFIX   !!= @CODE@
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2747,7 +2747,7 @@ LEXICON TAcw_IND_NI_SG_SUFFIX   !!= @CODE@
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAcw_IND_NI_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTAcw_IND_NI_PL_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2783,15 +2783,15 @@ LEXICON TAcw_IND_NI_PL_SUFFIX   !!= @CODE@
 !!!!!! KI- PREFIXING FORMS !!!!!!
 ! =================================
 
-LEXICON TAcw_IND_KI   !!= @CODE@  
-TAcw_IND_KI_SG_SUFFIX ;
-TAcw_IND_KI_PL_SUFFIX ;
+LEXICON VTAcw_IND_KI   !!= @CODE@  
+VTAcw_IND_KI_SG_SUFFIX ;
+VTAcw_IND_KI_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAcw_IND_KI_SG_SUFFIX   !!= @CODE@ 
+LEXICON VTAcw_IND_KI_SG_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2831,7 +2831,7 @@ LEXICON TAcw_IND_KI_SG_SUFFIX   !!= @CODE@
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAcw_IND_KI_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTAcw_IND_KI_PL_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2892,16 +2892,16 @@ LEXICON TAcw_IND_KI_PL_SUFFIX   !!= @CODE@
 !!!!!! NULL PREFIXING FORMS !!!!!!
 ! ==================================
 
-LEXICON TAcw_IND_NULL   !!= @CODE@  NOTE: never local
-TAcw_IND_NULL_SG_SUFFIX ;
-TAcw_IND_NULL_PL_SUFFIX ;
+LEXICON VTAcw_IND_NULL   !!= @CODE@  NOTE: never local
+VTAcw_IND_NULL_SG_SUFFIX ;
+VTAcw_IND_NULL_PL_SUFFIX ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAcw_IND_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VTAcw_IND_NULL_SG_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2935,7 +2935,7 @@ LEXICON TAcw_IND_NULL_SG_SUFFIX   !!= @CODE@
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAcw_IND_NULL_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTAcw_IND_NULL_PL_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -2972,15 +2972,15 @@ LEXICON TAcw_IND_NULL_PL_SUFFIX   !!= @CODE@
 !!!!!! KI- PREFIXING FORMS !!!!!!
 ! =================================
 
-LEXICON TAt_IND_KI   !!= @CODE@  
-TAt_IND_KI_SG_SUFFIX ;
-TAt_IND_KI_PL_SUFFIX ;
+LEXICON VTAt_IND_KI   !!= @CODE@  
+VTAt_IND_KI_SG_SUFFIX ;
+VTAt_IND_KI_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAt_IND_KI_SG_SUFFIX   !!= @CODE@ 
+LEXICON VTAt_IND_KI_SG_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3020,7 +3020,7 @@ LEXICON TAt_IND_KI_SG_SUFFIX   !!= @CODE@
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAt_IND_KI_PL_SUFFIX   !!= @CODE@ 
+LEXICON VTAt_IND_KI_PL_SUFFIX   !!= @CODE@ 
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3098,15 +3098,15 @@ LEXICON TAt_IND_KI_PL_SUFFIX   !!= @CODE@
 ! =========================
 ! =========================
 
-LEXICON TA_CNJ_NULL
-TA_CNJ_NULL_SG_SUFFIX ;
-TA_CNJ_NULL_PL_SUFFIX ;
+LEXICON VTA_CNJ_NULL
+VTA_CNJ_NULL_SG_SUFFIX ;
+VTA_CNJ_NULL_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TA_CNJ_NULL_SG_SUFFIX
+LEXICON VTA_CNJ_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3170,7 +3170,7 @@ LEXICON TA_CNJ_NULL_SG_SUFFIX
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~ 
 ! ~~~~~~~~~~~~~~~~~~~~
-LEXICON TA_CNJ_NULL_PL_SUFFIX
+LEXICON VTA_CNJ_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3260,15 +3260,15 @@ LEXICON TA_CNJ_NULL_PL_SUFFIX
 ! =================================
 ! =================================
 
-LEXICON TAvw_CNJ_NULL
-TAvw_CNJ_NULL_SG_SUFFIX ;
-TAvw_CNJ_NULL_PL_SUFFIX ;
+LEXICON VTAvw_CNJ_NULL
+VTAvw_CNJ_NULL_SG_SUFFIX ;
+VTAvw_CNJ_NULL_PL_SUFFIX ;
 
 !! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAvw_CNJ_NULL_SG_SUFFIX
+LEXICON VTAvw_CNJ_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3333,7 +3333,7 @@ LEXICON TAvw_CNJ_NULL_SG_SUFFIX
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~ 
 ! ~~~~~~~~~~~~~~~~~~~~
-LEXICON TAvw_CNJ_NULL_PL_SUFFIX
+LEXICON VTAvw_CNJ_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3423,15 +3423,15 @@ LEXICON TAvw_CNJ_NULL_PL_SUFFIX
 ! =================================
 ! =================================
 
-LEXICON TAcw_CNJ_NULL
-TAcw_CNJ_NULL_SG_SUFFIX ;
-TAcw_CNJ_NULL_PL_SUFFIX ;
+LEXICON VTAcw_CNJ_NULL
+VTAcw_CNJ_NULL_SG_SUFFIX ;
+VTAcw_CNJ_NULL_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAcw_CNJ_NULL_SG_SUFFIX
+LEXICON VTAcw_CNJ_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3497,7 +3497,7 @@ LEXICON TAcw_CNJ_NULL_SG_SUFFIX
 !!!!!! PLURAL !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~ 
 ! ~~~~~~~~~~~~~~~~~~~~
-LEXICON TAcw_CNJ_NULL_PL_SUFFIX
+LEXICON VTAcw_CNJ_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3587,15 +3587,15 @@ LEXICON TAcw_CNJ_NULL_PL_SUFFIX
 ! ================================================================
 ! ================================================================
 
-LEXICON TAt_CNJ_NULL
-TAt_CNJ_NULL_SG_SUFFIX ;
-TAt_CNJ_NULL_PL_SUFFIX ;
+LEXICON VTAt_CNJ_NULL
+VTAt_CNJ_NULL_SG_SUFFIX ;
+VTAt_CNJ_NULL_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAt_CNJ_NULL_SG_SUFFIX
+LEXICON VTAt_CNJ_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3660,7 +3660,7 @@ LEXICON TAt_CNJ_NULL_SG_SUFFIX
 ! ~~~~~~~~~~~~~~~~~~~~ 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAt_CNJ_NULL_PL_SUFFIX
+LEXICON VTAt_CNJ_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3761,15 +3761,15 @@ LEXICON TAt_CNJ_NULL_PL_SUFFIX
 ! ==========================
 ! ==========================
 
-LEXICON TA_IMP_NULL
-TA_IMP_NULL_SG_SUFFIX ;
-TA_IMP_NULL_PL_SUFFIX ;
+LEXICON VTA_IMP_NULL
+VTA_IMP_NULL_SG_SUFFIX ;
+VTA_IMP_NULL_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TA_IMP_NULL_SG_SUFFIX
+LEXICON VTA_IMP_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3790,7 +3790,7 @@ LEXICON TA_IMP_NULL_SG_SUFFIX
 +Del+2Sg+3SgO:%>âhkan # ;
 
 
-LEXICON TA_IMP_NULL_PL_SUFFIX
+LEXICON VTA_IMP_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3832,15 +3832,15 @@ LEXICON TA_IMP_NULL_PL_SUFFIX
 ! =================================
 ! =================================
 
-LEXICON TAcw_IMP_NULL
-TAcw_IMP_NULL_SG_SUFFIX ;
-TAcw_IMP_NULL_PL_SUFFIX ;
+LEXICON VTAcw_IMP_NULL
+VTAcw_IMP_NULL_SG_SUFFIX ;
+VTAcw_IMP_NULL_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAcw_IMP_NULL_SG_SUFFIX
+LEXICON VTAcw_IMP_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3861,7 +3861,7 @@ LEXICON TAcw_IMP_NULL_SG_SUFFIX
 +Del+2Sg+3SgO:%>âhkan # ;
 
 
-LEXICON TAcw_IMP_NULL_PL_SUFFIX
+LEXICON VTAcw_IMP_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3902,15 +3902,15 @@ LEXICON TAcw_IMP_NULL_PL_SUFFIX
 ! =====================================================================
 ! =====================================================================
 
-LEXICON TAt_IMP_NULL
-TAt_IMP_NULL_SG_SUFFIX ;
-TAt_IMP_NULL_PL_SUFFIX ;
+LEXICON VTAt_IMP_NULL
+VTAt_IMP_NULL_SG_SUFFIX ;
+VTAt_IMP_NULL_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAt_IMP_NULL_SG_SUFFIX
+LEXICON VTAt_IMP_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3931,7 +3931,7 @@ LEXICON TAt_IMP_NULL_SG_SUFFIX
 +Del+2Sg+3SgO:%>âhkan # ;
 
 
-LEXICON TAt_IMP_NULL_PL_SUFFIX
+LEXICON VTAt_IMP_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -3977,15 +3977,15 @@ LEXICON TAt_IMP_NULL_PL_SUFFIX
 ! ===================================================================
 
 
-LEXICON TAi_IMP_NULL
-TAi_IMP_NULL_SG_SUFFIX ;
-TAi_IMP_NULL_PL_SUFFIX ;
+LEXICON VTAi_IMP_NULL
+VTAi_IMP_NULL_SG_SUFFIX ;
+VTAi_IMP_NULL_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAi_IMP_NULL_SG_SUFFIX
+LEXICON VTAi_IMP_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -4006,7 +4006,7 @@ LEXICON TAi_IMP_NULL_SG_SUFFIX
 +Del+2Sg+3SgO:%>âhkan # ;
 
 
-LEXICON TAi_IMP_NULL_PL_SUFFIX
+LEXICON VTAi_IMP_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -4059,15 +4059,15 @@ LEXICON TAi_IMP_NULL_PL_SUFFIX
 ! =========================
 ! =========================
 
-LEXICON TA_FUT_CON_NULL
-TA_FUT_CON_NULL_SG_SUFFIX ;
-TA_FUT_CON_NULL_PL_SUFFIX ;
+LEXICON VTA_FUT_CON_NULL
+VTA_FUT_CON_NULL_SG_SUFFIX ;
+VTA_FUT_CON_NULL_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TA_FUT_CON_NULL_SG_SUFFIX
+LEXICON VTA_FUT_CON_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -4123,7 +4123,7 @@ LEXICON TA_FUT_CON_NULL_SG_SUFFIX
 ! ~~~~~~~~~~~~~~~~~~~~ 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TA_FUT_CON_NULL_PL_SUFFIX
+LEXICON VTA_FUT_CON_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -4206,15 +4206,15 @@ LEXICON TA_FUT_CON_NULL_PL_SUFFIX
 ! ================================
 
 
-LEXICON TAvw_FUT_CON_NULL
-TAvw_FUT_CON_NULL_SG_SUFFIX ;
-TAvw_FUT_CON_NULL_PL_SUFFIX ;
+LEXICON VTAvw_FUT_CON_NULL
+VTAvw_FUT_CON_NULL_SG_SUFFIX ;
+VTAvw_FUT_CON_NULL_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAvw_FUT_CON_NULL_SG_SUFFIX
+LEXICON VTAvw_FUT_CON_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -4270,7 +4270,7 @@ LEXICON TAvw_FUT_CON_NULL_SG_SUFFIX
 ! ~~~~~~~~~~~~~~~~~~~~ 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAvw_FUT_CON_NULL_PL_SUFFIX
+LEXICON VTAvw_FUT_CON_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -4357,15 +4357,15 @@ LEXICON TAvw_FUT_CON_NULL_PL_SUFFIX
 ! ================================
 ! ================================
 
-LEXICON TAcw_FUT_CON_NULL
-TAcw_FUT_CON_NULL_SG_SUFFIX ;
-TAcw_FUT_CON_NULL_PL_SUFFIX ;
+LEXICON VTAcw_FUT_CON_NULL
+VTAcw_FUT_CON_NULL_SG_SUFFIX ;
+VTAcw_FUT_CON_NULL_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~
 !!!!!! NUMBER !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAcw_FUT_CON_NULL_SG_SUFFIX
+LEXICON VTAcw_FUT_CON_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -4421,7 +4421,7 @@ LEXICON TAcw_FUT_CON_NULL_SG_SUFFIX
 ! ~~~~~~~~~~~~~~~~~~~~ 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAcw_FUT_CON_NULL_PL_SUFFIX
+LEXICON VTAcw_FUT_CON_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -4508,15 +4508,15 @@ LEXICON TAcw_FUT_CON_NULL_PL_SUFFIX
 ! =====================================================================
 ! =====================================================================
 
-LEXICON TAt_FUT_CON_NULL
-TAt_FUT_CON_NULL_SG_SUFFIX ;
-TAt_FUT_CON_NULL_PL_SUFFIX ;
+LEXICON VTAt_FUT_CON_NULL
+VTAt_FUT_CON_NULL_SG_SUFFIX ;
+VTAt_FUT_CON_NULL_PL_SUFFIX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 !!!!!! SINGULAR !!!!!! 
 ! ~~~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAt_FUT_CON_NULL_SG_SUFFIX
+LEXICON VTAt_FUT_CON_NULL_SG_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
@@ -4572,7 +4572,7 @@ LEXICON TAt_FUT_CON_NULL_SG_SUFFIX
 ! ~~~~~~~~~~~~~~~~~~~~ 
 ! ~~~~~~~~~~~~~~~~~~~~
 
-LEXICON TAt_FUT_CON_NULL_PL_SUFFIX
+LEXICON VTAt_FUT_CON_NULL_PL_SUFFIX
 
 !!!!!!!!!!!!!!!!!!!!
 !!!!!! Direct !!!!!!
