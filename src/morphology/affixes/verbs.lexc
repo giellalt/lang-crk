@@ -392,8 +392,8 @@ LEXICON VERBSTEMSPRE_REDUPL
 
 LEXICON WICI
 @U.wici.NULL@ VERBSTEMS ;
-@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci VERBSTEMS ;
-@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci- VERBSTEMS ;
+@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wîci%> VERBSTEMS ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wîci-%> VERBSTEMS ;
 
 !! Now, lexc directs us to the ../stems/verbs.lexc file,
 !! where we find all the verbal stems. The suffixes are then
