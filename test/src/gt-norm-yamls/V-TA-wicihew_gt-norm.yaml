@@ -1,46 +1,33 @@
 Condfig:  hfst:    Gen: ../../../src/generator-gt-norm.hfst    Morph: ../../../src/analyser-gt-norm.hfst  xerox:    Gen: ../../../src/generator-gt-norm.xfst    Morph: ../../../src/analyser-gt-norm.xfst    App: lookupTests:    Verb - wîcihêw - help : # Wolvengrey VTA1
   
-     wîcihêw+V+TA+Ind+Prs+2Sg+1SgO:  kiwîcihin
-     wîcihêw+V+TA+Ind+Prs+2Sg+1PlO:  kiwîcihinân
-     wîcihêw+V+TA+Ind+Prs+2Pl+1PlO:  kiwîcihinân
-     wîcihêw+V+TA+Ind+Prs+2Pl+1SgO:  kiwîcihinâwâw
+  Verb - wîcihêw - help him/her : # Wolvengrey VTA1 verb - Wolvengrey p. 401; Fut+Cond from Okimāsis pp. 79, 103
+
+     wîcihêw+V+TA+Ind+Prs+1Sg+3SgO: niwîcihâw
+     wîcihêw+V+TA+Ind+Prs+2Sg+3SgO: kiwîcihâw
+     wîcihêw+V+TA+Ind+Prs+1Pl+3SgO: niwîcihânân
+     wîcihêw+V+TA+Ind+Prs+12Pl+3SgO: kiwîcihânaw
+     wîcihêw+V+TA+Ind+Prs+2Pl+3SgO: kiwîcihâwâw
      
      wîcihêw+V+TA+Ind+Prs+1Sg+2SgO:  kiwîcihitin
      wîcihêw+V+TA+Ind+Prs+1Pl+2SgO:  kiwîcihitinân
      wîcihêw+V+TA+Ind+Prs+1Pl+2PlO:  kiwîcihitinân
      wîcihêw+V+TA+Ind+Prs+1Sg+2PlO:  kiwîcihitinâwâw     
      
-     wîcihêw+V+TA+Ind+Prs+1Sg+3SgO:  niwîcihâw
-     wîcihêw+V+TA+Ind+Prs+2Sg+3SgO:  kiwîcihâw
-     wîcihêw+V+TA+Ind+Prs+1Pl+3SgO:  niwîcihânân
-     wîcihêw+V+TA+Ind+Prs+12Pl+3SgO:  kiwîcihânaw
-     wîcihêw+V+TA+Ind+Prs+2Pl+3SgO:  kiwîcihâwâw
-     wîcihêw+V+TA+Ind+Prs+1Sg+3PlO:  niwîcihâwak
-     wîcihêw+V+TA+Imp+Imm+2Sg+3PlO:  kiwîcihâwak
-     wîcihêw+V+TA+Ind+Prs+1Pl+3PlO:  niwîcihânânak
-     wîcihêw+V+TA+Ind+Prs+12Pl+3PlO:  kiwîcihânawak
-     wîcihêw+V+TA+Ind+Prs+2Pl+3PlO:  kiwîcihâwâwak
-     wîcihêw+V+TA+Ind+Prs+1Sg+4Sg/PlO:  niwîcihimâwa
-     wîcihêw+V+TA+Ind+Prs+2Sg+4Sg/PlO:  kiwîcihimâwa
-     wîcihêw+V+TA+Ind+Prs+1Pl+4Sg/PlO:  niwîcihimânâna
-     wîcihêw+V+TA+Ind+Prs+12Pl+4Sg/PlO:  kiwîcihimânawa
-     wîcihêw+V+TA+Ind+Prs+2Pl+4Sg/PlO:  kiwîcihimâwâwa
+     wîcihêw+V+TA+Ind+Prs+2Sg+1SgO: kiwîcihin
+     wîcihêw+V+TA+Ind+Prs+2Sg/Pl+1PlO: kiwîcihinân
+     wîcihêw+V+TA+Ind+Prs+2Pl+1SgO: kiwîcihinâwâw
      
-     wîcihêw+V+TA+Ind+Prs+3Sg+1SgO:  niwîcihikwak
-     wîcihêw+V+TA+Ind+Prs+3Sg+2SgO:  kiwîcihikwak
-     wîcihêw+V+TA+Ind+Prs+3Sg+1PlO:  niwîcihikonân
-     wîcihêw+V+TA+Ind+Prs+3Sg+12PlO:  kiwîcihikonaw
-     wîcihêw+V+TA+Ind+Prs+3Sg+2PlO:  kiwîcihikowâw
-     wîcihêw+V+TA+Ind+Prs+3Pl+1SgO:  niwîcihikwak
-     wîcihêw+V+TA+Ind+Prs+3Pl+2SgO:  kiwîcihikwak
-     wîcihêw+V+TA+Ind+Prs+3Pl+1PlO:  niwîcihikonânak
-     wîcihêw+V+TA+Ind+Prs+3Pl+12PlO:  kiwîcihikonawak
-     wîcihêw+V+TA+Ind+Prs+3Pl+2PlO:  kiwîcihikowâwak
-     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+1SgO:  niwîcihikoyiwa
-     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+2SgO:  kiwîcihikoyiwa
-     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+1PlO:  niwîcihikonâna
-     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+12PlO:  kiwîcihikonawa
-     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+2PlO:  kiwîcihikowâwa
+     wîcihêw+V+TA+Ind+Prs+3Sg+4Sg/PlO: wîcihêw
+     wîcihêw+V+TA+Ind+Prs+3Pl+4Sg/PlO: wîcihêwak
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: wîcihêyiwa
+     wîcihêw+V+TA+Ind+Prs+3Sg+5Sg/PlO: wîcihimêw 
+     wîcihêw+V+TA+Ind+Prs+3Pl+5Sg/PlO: wîcihimêwak 
+
+     wîcihêw+V+TA+Ind+Prs+1Sg+4Sg/PlO: niwîcihimâwa
+     wîcihêw+V+TA+Ind+Prs+2Sg+4Sg/PlO: kiwîcihimâwa
+     wîcihêw+V+TA+Ind+Prs+1Pl+4Sg/PlO: niwîcihimânâna
+     wîcihêw+V+TA+Ind+Prs+12Pl+4Sg/PlO: kiwîcihimânawa
+     wîcihêw+V+TA+Ind+Prs+2Pl+4Sg/PlO: kiwîcihimâwâwa
      
      
      wîcihêw+V+TA+Ind+Prs+3Sg+4Sg/PlO:  wîcihêw
@@ -172,15 +159,235 @@ Condfig:  hfst:    Gen: ../../../src/generator-gt-norm.hfst    Morph: ../../.
      wîcihêw+V+TA+Imp+Del+2Pl+1PlO:   wîcihîhkâhk
      wîcihêw+V+TA+Imp+Del+2Pl+1SgO:   wîcihîhkêk
      
-     wîcihêw+V+TA+Imp+Imm+2Sg+3SgO:   wîcih
-     wîcihêw+V+TA+Imp+Imm+2Pl+3SgO:   wîcihihk
-     wîcihêw+V+TA+Imp+Imm+12Pl+3SgO:   wîcihâtân
-     wîcihêw+V+TA+Imp+Del+2Sg+3SgO:   wîcihâhkan
-     wîcihêw+V+TA+Imp+Del+2Pl+3SgO:   wîcihâhkêk
-     wîcihêw+V+TA+Imp+Del+12Pl+3SgO:   wîcihâhkahk
-     wîcihêw+V+TA+Imp+Imm+2Sg+3PlO:   wîcihik
-     wîcihêw+V+TA+Imp+Imm+2Pl+3PlO:   wîcihihkik
-     wîcihêw+V+TA+Imp+Imm+12Pl+3PlO:   wîcihâtânik
-     wîcihêw+V+TA+Imp+Del+2Sg+3PlO:   wîcihâhkanik
-     wîcihêw+V+TA+Imp+Del+2Pl+3PlO:   wîcihâhkêkok
-     wîcihêw+V+TA+Imp+Del+12Pl+3PlO:   wîcihâhkahkok
+     
+
+
+     wîcihêw+V+TA+Ind+Prs+3Sg+1SgO: niwîcihik 
+     wîcihêw+V+TA+Ind+Prs+3Sg+2SgO: kiwîcihik
+     wîcihêw+V+TA+Ind+Prs+3Sg+1PlO: niwîcihikonân
+     wîcihêw+V+TA+Ind+Prs+3Sg+12PlO: kiwîcihikonaw
+     wîcihêw+V+TA+Ind+Prs+3Sg+2PlO: kiwîcihikowâw
+     
+     wîcihêw+V+TA+Ind+Prs+3Pl+1SgO: niwîcihikwak
+     wîcihêw+V+TA+Ind+Prs+3Pl+2SgO: kiwîcihikwak
+     wîcihêw+V+TA+Ind+Prs+3Pl+1PlO: niwîcihikonânak
+     wîcihêw+V+TA+Ind+Prs+3Pl+12PlO: kiwîcihikonawak
+     wîcihêw+V+TA+Ind+Prs+3Pl+2PlO: kiwîcihikowâwak
+     
+     wîcihêw+V+TA+Ind+Prs+1Sg+2SgO: kiwîcihitin
+     wîcihêw+V+TA+Ind+Prs+1Pl+2Sg/PlO: kiwîcihitinân
+     wîcihêw+V+TA+Ind+Prs+1Sg+2PlO: kiwîcihitinâwâw
+     
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+3SgO: wîcihik
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+3PlO: wîcihikwak
+     wîcihêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO: wîcihikoyiwa
+          
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+1SgO: niwîcihikoyiwa
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+2SgO: kiwîcihikoyiwa
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+1PlO: niwîcihikonâna
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+12PlO: kiwîcihikonawa
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+2PlO: kiwîcihikowâwa
+     
+     
+     
+     
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Sg+3SgO: [ê-wîcihak, êwîcihak]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Sg+3SgO: [ê-wîcihat, êwîcihat]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Pl+3SgO: [ê-wîcihâyâhk, êwîcihâyâhk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+12Pl+3SgO: [ê-wîcihâyahk, êwîcihâyahk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Pl+3SgO: [ê-wîcihâyêk, êwîcihâyêk]
+
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Sg+3PlO: [ê-wîcihakik, êwîcihakik]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Sg+3PlO: [ê-wîcihacik, êwîcihacik]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Pl+3PlO: [ê-wîcihâyâhkik, êwîcihâyâhkik]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+12Pl+3PlO: [ê-wîcihâyahkok, êwîcihâyahkok]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Pl+3PlO: [ê-wîcihâyêkok, êwîcihâyêkok] 
+     
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Sg+1SgO: [ê-wîcihiyan, êwîcihiyan]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Sg/Pl+1PlO: [ê-wîcihiyâhk, êwîcihiyâhk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Pl+1SgO: [ê-wîcihiyêk, êwîcihiyêk]    
+     
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+4Sg/PlO: [ê-wîcihât, êwîcihât]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+4Sg/PlO: [ê-wîcihâcik, êwîcihâcik]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+5Sg/PlO: [ê-wîcihimât, êwîcihimât]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+5Sg/PlO: [ê-wîcihimâcik, êwîcihimâcik]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+5Sg/PlO: [ê-wîcihâyit, êwîcihâyit]
+     
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Sg+4Sg/PlO: [ê-wîcihimak, êwîcihimak]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Sg+4Sg/PlO: [ê-wîcihimat, êwîcihimat]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Pl+4Sg/PlO: [ê-wîcihimâyâhk, êwîcihimâyâhk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+12Pl+4Sg/PlO: [ê-wîcihimâyahk, êwîcihimâyahk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Pl+4Sg/PlO: [ê-wîcihimâyek, êwîcihimâyek]
+     
+     
+     
+     
+     
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+1SgO: [ê-wîcihit, êwîcihit]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+2SgO: [ê-wîcihisk, êwîcihisk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+1PlO: [ê-wîcihikoyâhk, êwîcihikoyâhk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+12PlO: [ê-wîcihikoyahk, êwîcihikoyahk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+2PlO: [ê-wîcihikoyêk, êwîcihikoyêk]
+
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+1SgO: [ê-wîcihicik, êwîcihicik]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+2SgO: [ê-wîcihiskik, êwîcihiskik]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+1PlO: [ê-wîcihikoyâhkik, êwîcihikoyâhkik]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+12PlO: [ê-wîcihikoyahkok, êwîcihikoyahkok]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+2PlO: [ê-wîcihikoyêkok, êwîcihikoyêkok]
+
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Sg+2SgO: [ê-wîcihitân, êwîcihitân]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Pl+2Sg/PlO: [ê-wîcihitâhk, êwîcihitâhk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Sg+2PlO: [ê-wîcihitakok, êwîcihitakok]
+
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+3SgO: [ê-wîcihikot, êwîcihikot]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+3PlO: [ê-wîcihikocik, êwîcihikocik]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+5Sg/Pl+4Sg/PlO: [ê-wîcihikoyit, êwîcihikoyit]
+          
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+1SgO: [ê-wîcihimit, êwîcihimit]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+2SgO: [ê-wîcihimisk, êwîcihimisk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+1PlO: [ê-wîcihikoyâhk, êwîcihikoyâhk, ê-wîcihikowâyâhk, êwîcihikowâyâhk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+2PlO: [ê-wîcihikoyêk, êwîcihikoyêk, ê-wîcihikowâyêk, êwîcihikowâyêk]
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+12PlO: [ê-wîcihikoyahk, êwîcihikoyahk, ê-wîcihikowâyahk, êwîcihikowâyahk]
+
+
+
+
+
+     wîcihêw+V+TA+Cnj+Prs+1Sg+3SgO: wîcihak
+     wîcihêw+V+TA+Cnj+Prs+2Sg+3SgO: wîcihat
+     wîcihêw+V+TA+Cnj+Prs+1Pl+3SgO: wîcihâyâhk
+     wîcihêw+V+TA+Cnj+Prs+12Pl+3SgO: wîcihâyahk
+     wîcihêw+V+TA+Cnj+Prs+2Pl+3SgO: wîcihâyêk
+
+     wîcihêw+V+TA+Cnj+Prs+1Sg+3PlO: wîcihakik
+     wîcihêw+V+TA+Cnj+Prs+2Sg+3PlO: wîcihacik
+     wîcihêw+V+TA+Cnj+Prs+1Pl+3PlO: wîcihâyâhkik
+     wîcihêw+V+TA+Cnj+Prs+12Pl+3PlO: wîcihâyahkok
+     wîcihêw+V+TA+Cnj+Prs+2Pl+3PlO: wîcihâyêkok 
+     
+     wîcihêw+V+TA+Cnj+Prs+2Sg+1SgO: wîcihiyan
+     wîcihêw+V+TA+Cnj+Prs+2Sg/Pl+1PlO: wîcihiyâhk
+     wîcihêw+V+TA+Cnj+Prs+2Pl+1SgO: wîcihiyêk    
+     
+     wîcihêw+V+TA+Cnj+Prs+3Sg+4Sg/PlO: wîcihât
+     wîcihêw+V+TA+Cnj+Prs+3Pl+4Sg/PlO: wîcihâcik
+     wîcihêw+V+TA+Cnj+Prs+3Sg+5Sg/PlO: wîcihimât
+     wîcihêw+V+TA+Cnj+Prs+3Pl+5Sg/PlO: wîcihimâcik
+     wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+5Sg/PlO: wîcihâyit
+     
+     wîcihêw+V+TA+Cnj+Prs+1Sg+4Sg/PlO: wîcihimak
+     wîcihêw+V+TA+Cnj+Prs+2Sg+4Sg/PlO: wîcihimat
+     wîcihêw+V+TA+Cnj+Prs+1Pl+4Sg/PlO: wîcihimâyâhk
+     wîcihêw+V+TA+Cnj+Prs+12Pl+4Sg/PlO: wîcihimâyahk
+     wîcihêw+V+TA+Cnj+Prs+2Pl+4Sg/PlO: wîcihimâyêk
+     
+     
+     
+     
+     
+     wîcihêw+V+TA+Cnj+Prs+3Sg+1SgO: wîcihit
+     wîcihêw+V+TA+Cnj+Prs+3Sg+2SgO: wîcihisk
+     wîcihêw+V+TA+Cnj+Prs+3Sg+1PlO: wîcihikoyâhk
+     wîcihêw+V+TA+Cnj+Prs+3Sg+12PlO: wîcihikoyahk
+     wîcihêw+V+TA+Cnj+Prs+3Sg+2PlO: wîcihikoyêk
+
+     wîcihêw+V+TA+Cnj+Prs+3Pl+1SgO: wîcihicik
+     wîcihêw+V+TA+Cnj+Prs+3Pl+2SgO: wîcihiskik
+     wîcihêw+V+TA+Cnj+Prs+3Pl+1PlO: wîcihikoyâhkik
+     wîcihêw+V+TA+Cnj+Prs+3Pl+12PlO: wîcihikoyahkok
+     wîcihêw+V+TA+Cnj+Prs+3Pl+2PlO: wîcihikoyêkok
+
+     wîcihêw+V+TA+Cnj+Prs+1Sg+2SgO: wîcihitân
+     wîcihêw+V+TA+Cnj+Prs+1Pl+2Sg/PlO: wîcihitâhk
+     wîcihêw+V+TA+Cnj+Prs+1Sg+2PlO: wîcihitakok
+
+     wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+3SgO: wîcihikot
+     wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+3PlO: wîcihikocik
+     wîcihêw+V+TA+Cnj+Prs+5Sg/Pl+4Sg/PlO: wîcihikoyit
+          
+     wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+1SgO: wîcihimit
+     wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+2SgO: wîcihimisk
+     wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+1PlO: [wîcihikoyâhk, wîcihikowâyâhk]
+     wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+2PlO: [wîcihikoyêk, wîcihikowâyêk]
+     wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+12PlO: [wîcihikoyahk, wîcihikowâyahk]
+
+
+
+     wîcihêw+V+TA+Imp+Imm+2Sg+3SgO: wîcih
+     wîcihêw+V+TA+Imp+Imm+12Pl+3SgO: wîcihâtân
+     wîcihêw+V+TA+Imp+Imm+2Pl+3SgO: wîcihihk
+     wîcihêw+V+TA+Imp+Imm+2Sg+3PlO: wîcihik
+     wîcihêw+V+TA+Imp+Imm+12Pl+3PlO: wîcihâtânik
+     wîcihêw+V+TA+Imp+Imm+2Pl+3PlO: wîcihihkik
+
+     wîcihêw+V+TA+Imp+Del+2Sg+3SgO: wîcihâhkan
+     wîcihêw+V+TA+Imp+Del+12Pl+3SgO: wîcihâhkahk
+     wîcihêw+V+TA+Imp+Del+2Pl+3SgO: wîcihâhkêk
+     wîcihêw+V+TA+Imp+Del+2Sg+3PlO: wîcihâhkanik
+     wîcihêw+V+TA+Imp+Del+12Pl+3PlO: wîcihâhkahkok
+     wîcihêw+V+TA+Imp+Del+2Pl+3PlO: wîcihâhkêkok
+
+     wîcihêw+V+TA+Imp+Imm+2Sg+1SgO: wîcihin
+     wîcihêw+V+TA+Imp+Imm+2Sg/Pl+1PlO: wîcihinân
+     wîcihêw+V+TA+Imp+Imm+2Pl+1SgO: wîcihik
+     wîcihêw+V+TA+Imp+Del+2Sg+1SgO: wîcihîhkan
+     wîcihêw+V+TA+Imp+Del+2Sg/Pl+1PlO: wîcihîhkâhk
+     wîcihêw+V+TA+Imp+Del+2Pl+1SgO: wîcihîhkêk
+     
+     
+     
+
+     wîcihêw+V+TA+Fut+Cond+1Sg+3SgO: wîcihaki
+     wîcihêw+V+TA+Fut+Cond+2Sg+3SgO: wîcihaci
+     wîcihêw+V+TA+Fut+Cond+1Pl+3SgO: wîcihâyâhki
+     wîcihêw+V+TA+Fut+Cond+12Pl+3SgO: [wîcihâyahko, wîcihâyahki]
+     wîcihêw+V+TA+Fut+Cond+2Pl+3SgO: wîcihâyêko
+
+     wîcihêw+V+TA+Fut+Cond+3Sg+4Sg/PlO: wîcihâci
+     wîcihêw+V+TA+Fut+Cond+3Pl+4Sg/PlO: wîcihâtwâwi
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: wîcihâyici
+     
+     wîcihêw+V+TA+Fut+Cond+1Sg+3PlO: wîcihakwâwi
+     wîcihêw+V+TA+Fut+Cond+2Sg+3PlO: wîcihatwâwi
+     wîcihêw+V+TA+Fut+Cond+1Pl+3PlO: wîcihâyâhkwâwi
+     wîcihêw+V+TA+Fut+Cond+12Pl+3PlO: wîcihâyahkwâwi
+     wîcihêw+V+TA+Fut+Cond+2Pl+3PlO: wîcihâyêkwâwi
+
+     wîcihêw+V+TA+Fut+Cond+3Sg+1SgO: wîcihici
+     wîcihêw+V+TA+Fut+Cond+3Sg+2SgO: wîcihiski
+     wîcihêw+V+TA+Fut+Cond+3Sg+1PlO: wîcihikoyâhki
+     wîcihêw+V+TA+Fut+Cond+3Sg+12PlO: [wîcihikoyahko, wîcihikoyahki]
+     wîcihêw+V+TA+Fut+Cond+3Sg+2PlO: wîcihikoyêko
+     
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+3SgO: wîcihikoci
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+3PlO: wîcihikotwâwi 
+     wîcihêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: wîcihikoyici
+     
+     wîcihêw+V+TA+Fut+Cond+3Pl+1SgO: wîcihitwâwi
+     wîcihêw+V+TA+Fut+Cond+3Pl+2SgO: wîcihiskwâwi
+     wîcihêw+V+TA+Fut+Cond+3Pl+1PlO: wîcihikoyâhkwâwi
+     wîcihêw+V+TA+Fut+Cond+3Pl+12PlO: wîcihikoyahkwâwi
+     wîcihêw+V+TA+Fut+Cond+3Pl+2PlO: wîcihikoyêkwâwi
+     
+     wîcihêw+V+TA+Fut+Cond+1Sg+4Sg/PlO: wîcihimaki
+     wîcihêw+V+TA+Fut+Cond+2Sg+4Sg/PlO: wîcihimati
+     wîcihêw+V+TA+Fut+Cond+1Pl+4Sg/PlO: wîcihimâyâhki
+     wîcihêw+V+TA+Fut+Cond+12Pl+4Sg/PlO: [wîcihimâyahko, wîcihimâyahki]
+     wîcihêw+V+TA+Fut+Cond+2Pl+4Sg/PlO: wîcihimâyeko
+
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+1SgO: wîcihimici
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+2SgO: wîcihimiski
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+1PlO: [wîcihikoyâhki, wîcihikowâyâhki]
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+2PlO: [wîcihikoyêko, wîcihikowâyêko]
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+12PlO: [wîcihikoyahko, wîcihikoyahki, wîcihikowâyahko, wîcihikowâyahki]
+     
+     
+     
+     wîcihêw+V+TA+Fut+Cond+2Sg+1SgO: wîcihiyani
+     wîcihêw+V+TA+Fut+Cond+2Pl+1SgO: wîcihiyêko
+     wîcihêw+V+TA+Fut+Cond+2Sg/Pl+1PlO: wîcihiyâhki
+     
+     wîcihêw+V+TA+Fut+Cond+1Sg+2SgO: wîcihitâni
+     wîcihêw+V+TA+Fut+Cond+1Sg+2PlO: wîcihitako
+     wîcihêw+V+TA+Fut+Cond+1Pl+2Sg/PlO: wîcihitâhki
+
