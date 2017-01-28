@@ -30,7 +30,7 @@ define e2iRule [ e -> i || %/ _ ] ;
 
 define wVowelRule [ w %/ i -> %/ o ] ;
 
-define iEpenthesisRule [ %/ -> i || [ c | h | k | m | n | p | s | t ] _ [ c | h | k | m | n | p | s | t ] ] ;
+define iEpenthesisRule [ 0 -> i %/ || [ c | h | k | m | n | p | s | t ] %/ _ [ c | h | k | m | n | p | s | t ] ] ;
 
 define boundaryRule [ %/ -> 0 ] ;
 
@@ -47,6 +47,7 @@ read regex [ dimRule
 .o. e2iRule
 .o. wVowelRule
 .o. iEpenthesisRule
+.o. tcRule
 .o. boundaryRule
 ] ;
 
