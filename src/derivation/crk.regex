@@ -6,13 +6,13 @@ define ên2ânRule [ ê -> â || %/ _ %/ n %/ ] ;
 
 ! VG-i > V̅
 
-define aGiRule [ [ a | â ] [ w | y ] %/ i -> â ] ;
+define aGiRule [ [ a | â ] [ w | y | ý ] %/ i -> â ] ;
 
-define eGiRule [ ê [ w | y ] %/ i -> ê ] ;
+define eGiRule [ ê [ w | y | ý ] %/ i -> ê ] ;
 
-define iGiRule [ [ i | î ] [ w | y ] %/ i -> î ] ;
+define iGiRule [ [ i | î ] [ w | y | ý ] %/ i -> î ] ;
 
-define oGiRule [ [ o | ô ] [ w | y ] %/ i -> ô ] ;
+define oGiRule [ [ o | ô ] [ w | y | ý ] %/ i -> ô ] ;
 
 define w2oRule [ w -> o || [ c | h | k | m | n | p | s | t ] _ %/ [ c | h | k | m | n | p | s | t ] ] ; 
 
@@ -24,13 +24,15 @@ define TsRule [ T -> s || _ %/ [ i | î ] ] ;
 
 define tcRule [ t -> c || _ %/ [ i | î ] ] ;
 
+define tc2Rule [ t (->) c || _ %/ [ i | î ] ] ;
+
 define TtRule [ T -> t ] ;
 
 define e2iRule [ e -> i || %/ _ ] ;
 
 define wVowelRule [ w %/ i -> %/ o ] ;
 
-define iEpenthesisRule [ 0 -> i %/ || [ c | h | k | m | n | p | s | t ] %/ _ [ c | h | k | m | n | p | s | t ] ] ;
+define iEpenthesisRule [ %/ -> %/ i || [ c | h | k | m | n | p | s | t ]  _ [ c | h | k | m | n | p | s | t ] ] ;
 
 define boundaryRule [ %/ -> 0 ] ;
 
@@ -47,7 +49,7 @@ read regex [ dimRule
 .o. e2iRule
 .o. wVowelRule
 .o. iEpenthesisRule
-.o. tcRule
+.o. tc2Rule
 .o. boundaryRule
 ] ;
 
