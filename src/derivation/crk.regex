@@ -14,7 +14,39 @@ define iGiRule [ [ i | î ] [ w | y | ý ] %/ i -> î ] ;
 
 define oGiRule [ [ o | ô ] [ w | y | ý ] %/ i -> ô ] ;
 
-define w2oRule [ w -> o || [ c | h | k | m | n | p | s | t ] _ %/ [ c | h | k | m | n | p | s | t ] ] ; 
+! Same vowel collapses rules
+
+define aCollapseRule [ [ a | â ] %/ [ a | â ] -> â ] ;
+
+define eCollapseRule [ ê %/ ê -> ê ] ;
+
+define iCollapseRule [ [ i | î ] %/ [ i | î ] -> î ] ;
+
+define oCollapseRule [ [ o | ô ] %/ [ o | ô ] -> ô ] ;
+
+! Morpheme-final w-
+
+! Cw-o > C{o,ô}
+
+define CwC2oRule [ w -> o || [ c | h | k | m | n | p | s | t ] _ %/ [ c | h | k | m | n | p | s | t ] ] ; 
+
+define Cw2ooRule [ w %/ ô  -> ô || [ c | h | k | m | n | p | s | t ] _ ] ;
+
+define wi2oRule [ w %/ i -> %/ o ] ;
+
+define Cwo2ooRule [ w %/ [ o | ô ] -> ô || [ c | h | k | m | n | p | s | t ] _ ] ;
+
+! Cw-ô > Cô
+
+! define Cwoo2oo2Rule [ w %/ ô -> ô || [ c | h | k | m | n | p | s | t ] _ ] ;
+
+! Cw-wV > CowV OR CwV
+
+define wwRule [ w %/ w -> w || [ c | h | k | m | n | p | s | t ] _ [ a | â | ê | i | î | o | ô ] ] ;
+
+! {m,n} > h / __ -{p,t,k} OR Ø > i / {m,n} __ -{p,t,k,c} 
+
+define N2hRule [ [ m | n ] %/ -> h || _ [ p | t | k | c ] ] ;
 
 ! T > s / _ i, i:
 ! t > c / _ i, i:
@@ -30,8 +62,6 @@ define TtRule [ T -> t ] ;
 
 define e2iRule [ e -> i || %/ _ ] ;
 
-define wVowelRule [ w %/ i -> %/ o ] ;
-
 define iEpenthesisRule [ %/ -> %/ i || [ c | h | k | m | n | p | s | t ]  _ [ c | h | k | m | n | p | s | t ] ] ;
 
 define boundaryRule [ %/ -> 0 ] ;
@@ -45,9 +75,17 @@ read regex [ dimRule
 .o. eGiRule
 .o. iGiRule
 .o. oGiRule
-.o. w2oRule
 .o. e2iRule
-.o. wVowelRule
+.o. aCollapseRule
+.o. eCollapseRule
+.o. iCollapseRule
+.o. oCollapseRule
+.o. CwC2oRule
+.o. Cw2ooRule
+.o. wi2oRule
+.o. Cwo2ooRule
+.o. wwRule 
+.o. N2hRule
 .o. iEpenthesisRule
 .o. tc2Rule
 .o. boundaryRule
