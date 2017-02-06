@@ -10,7 +10,7 @@ define aGiRule [ [ a | â ] [ w | y | ý ] %/ i -> â ] ;
 
 define eGiRule [ ê [ w | y | ý ] %/ i -> ê ] ;
 
-define iGiRule [ [ i | î ] [ w | y | ý ] %/ i -> î ] ;
+define iGiRule [ [ i | î ] [ w | y | ý ] %/ [ i | î ] -> î ] ;
 
 define oGiRule [ [ o | ô ] [ w | y | ý ] %/ i -> ô ] ;
 
@@ -71,11 +71,11 @@ read regex [ dimRule
 .o. TsRule
 .o. tcRule
 .o. TtRule
+.o. e2iRule
 .o. aGiRule
 .o. eGiRule
 .o. iGiRule
 .o. oGiRule
-.o. e2iRule
 .o. aCollapseRule
 .o. eCollapseRule
 .o. iCollapseRule
