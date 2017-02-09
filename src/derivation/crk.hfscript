@@ -8,7 +8,9 @@ define Morphology
 source crk.regex
 define Phonology
 
-read regex [ Morphology .o. Phonology ] ;
+define maxMorphs [[? - "/"]* "/"]^<8 [? - "/"]* ;
+
+read regex [ maxMorphs .o. Morphology .o. Phonology ] ;
 
 invert net
 
