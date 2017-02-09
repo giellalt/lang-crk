@@ -62,7 +62,7 @@ define TtRule [ T -> t ] ;
 
 define e2iRule [ e -> i || %/ _ ] ;
 
-define iEpenthesisRule [ %/ -> %/ i || [ c | h | k | m | n | p | s | t ]  _ [ c | h | k | m | n | p | s | t ] ] ;
+define iEpenthesisRule [ %/ -> %/ i || [ c | h | k | m | n | p | s | t  | w | y | ý ]  _ [ c | h | k | m | n | p | s | t |  w | y | ý ] ] ;
 
 define boundaryRule [ %/ -> 0 ] ;
 
@@ -72,6 +72,7 @@ read regex [ dimRule
 .o. tcRule
 .o. TtRule
 .o. e2iRule
+.o. iEpenthesisRule
 .o. aGiRule
 .o. eGiRule
 .o. iGiRule
@@ -86,7 +87,6 @@ read regex [ dimRule
 .o. Cwo2ooRule
 .o. wwRule 
 .o. N2hRule
-.o. iEpenthesisRule
 .o. tc2Rule
 .o. boundaryRule
 ] ;
