@@ -4,6 +4,26 @@ define dimRule [ t -> c || _ ?* %/  [ i s ( i s ) | s i ] [ %/ | .#. ] ] ;
 
 define ên2ânRule [ ê -> â || %/ _ %/ n %/ ] ; 
 
+! T > s / _ i, i:
+! t > c / _ i, i:
+! T, t > t / _ e (> i), elsewhere
+
+define TsRule [ T -> s || _ %/ [ i | î ] ] ;
+
+define tcRule [ t -> c || _ %/ [ i | î ] ] ;
+
+define tc2Rule [ t (->) c || _ %/ [ i | î ] ] ;
+
+define TtRule [ T -> t ] ;
+
+define e2iRule [ e -> i || %/ _ ] ;
+
+define CiCEpenthesisRule [ %/ -> %/ i  || [ c | h | k | m | n | p | s | t | w | y | ý ]  _ [ c | h | k | m | n | p | s | t | y | ý ] ] ;
+
+! define wiwEpenthesisRule [ %/ (->) %/ i  || w _ w ] ;
+
+define wiwEpenthesisRule [ [ w %/ w ] (->) [ w %/ i w ] ] ;
+
 ! VG-i > V̅
 
 define aGiRule [ [ a | â ] [ w | y | ý ] %/ i -> â ] ;
@@ -26,43 +46,28 @@ define oCollapseRule [ [ o | ô ] %/ [ o | ô ] -> ô ] ;
 
 ! Morpheme-final w-
 
-! Cw-o > C{o,ô}
+! Cw-iC > CoC
 
-define CwC2oRule [ w -> o || [ c | h | k | m | n | p | s | t ] _ %/ [ c | h | k | m | n | p | s | t ] ] ; 
-
-define Cw2ooRule [ w %/ ô  -> ô || [ c | h | k | m | n | p | s | t ] _ ] ;
-
-define wi2oRule [ w %/ i -> %/ o ] ;
-
-define Cwo2ooRule [ w %/ [ o | ô ] -> ô || [ c | h | k | m | n | p | s | t ] _ ] ;
+define CwiC2CoCRule  [ w %/ i -> o %/ || [ c | h | k | m | n | p | s | t ] _ [ c | h | k | m | n | p | s | t | w | %/ ] ] ;
 
 ! Cw-ô > Cô
 
-! define Cwoo2oo2Rule [ w %/ ô -> ô || [ c | h | k | m | n | p | s | t ] _ ] ;
+define Cwoo2CooRule [ w %/ ô  -> ô || [ c | h | k | m | n | p | s | t ] _ ] ;
 
-! Cw-wV > CowV OR CwV
+! Cw-o > C{o,ô}
 
-define wwRule [ w %/ w -> w || [ c | h | k | m | n | p | s | t ] _ [ a | â | ê | i | î | o | ô ] ] ;
+define Cwo2Coo2Rule [ [ w %/ o ] -> [ o | ô ] || [ c | h | k | m | n | p | s | t ] _ ] ;
+
+! Cw-wV > CwV
+
+define ww2wRule [ [ w %/ w ] -> w || [ c | h | k | m | n | p | s | t ] _ [ a | â | ê | i | î | o | ô ] ] ;
+
+! Morpheme-final y- to be explored
+! Cy-yV > CyV ??? 
 
 ! {m,n} > h / __ -{p,t,k} OR Ø > i / {m,n} __ -{p,t,k,c} 
 
 define N2hRule [ [ m | n ] %/ -> h || _ [ p | t | k | c ] ] ;
-
-! T > s / _ i, i:
-! t > c / _ i, i:
-! T, t > t / _ e (> i), elsewhere
-
-define TsRule [ T -> s || _ %/ [ i | î ] ] ;
-
-define tcRule [ t -> c || _ %/ [ i | î ] ] ;
-
-define tc2Rule [ t (->) c || _ %/ [ i | î ] ] ;
-
-define TtRule [ T -> t ] ;
-
-define e2iRule [ e -> i || %/ _ ] ;
-
-define iEpenthesisRule [ %/ -> %/ i || [ c | h | k | m | n | p | s | t  | w | y | ý ]  _ [ c | h | k | m | n | p | s | t |  w | y | ý ] ] ;
 
 define boundaryRule [ %/ -> 0 ] ;
 
@@ -72,7 +77,8 @@ read regex [ dimRule
 .o. tcRule
 .o. TtRule
 .o. e2iRule
-.o. iEpenthesisRule
+.o. CiCEpenthesisRule
+.o. wiwEpenthesisRule
 .o. aGiRule
 .o. eGiRule
 .o. iGiRule
@@ -81,11 +87,10 @@ read regex [ dimRule
 .o. eCollapseRule
 .o. iCollapseRule
 .o. oCollapseRule
-.o. CwC2oRule
-.o. Cw2ooRule
-.o. wi2oRule
-.o. Cwo2ooRule
-.o. wwRule 
+.o. CwiC2CoCRule
+.o. Cwoo2CooRule
+.o. Cwo2Coo2Rule
+.o. ww2wRule 
 .o. N2hRule
 .o. tc2Rule
 .o. boundaryRule
