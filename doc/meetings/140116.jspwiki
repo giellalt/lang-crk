@@ -61,9 +61,9 @@ sudo make install
 }}}
 
 
-* Download LibreOffice if you do not have it already
+* Download LibreOffice if you do not have it already \\
   (must be version 4.1 or newer).
-* download & install oxt (Mac version):
+* download & install oxt (Mac version): \\
   [http://divvun.no/static_files/voikko-2013-06-26.oxt]
 ** restart LibreOffice if it was already open
 * Open a new text document, write some text, select all
@@ -217,11 +217,10 @@ Procedure for updating the dictionary (needed: account on the gtweb machine):
 
 (with pikiskwewina or guusaaw as the variable for DICT)
 
-# Log in to the server via SSH as the NDS user
+# Log in to the server via SSH as the NDS user \\
   in the following way: \\ 
   {{ssh neahtta@gtweb.uit.no}} \\ 
   with a password
-
 # Then follow the instructions on the page
 
 
