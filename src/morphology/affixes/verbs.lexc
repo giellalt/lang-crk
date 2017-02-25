@@ -1445,11 +1445,9 @@ LEXICON VTI  !!= * @CODE@
 LEXICON VTI_PL  !!= * @CODE@  Plural
 +V+TI: VTI_PL_WICI ;
 
-! LEXICON TICONJi  !!= * @CODE@ NOTE: These inflect just as VAI -w final stems, so they are redirected to those paradigms
-! +V+TI: VAIw_WICI ; 
-
-! LEXICON TICONJâ  !!= * @CODE@ These inflect just as VAI -w final stems, so they are redirected to those paradigms
-! +V+TI: VAIw_WICI ; 
+LEXICON VTIw  !!= * @CODE@ NOTE: These inflect just as VAI -w final stems, so they are redirected to those paradigms
++V+TI: VAIw_WICI ; 
+ 
 
 !!! WICI
 
