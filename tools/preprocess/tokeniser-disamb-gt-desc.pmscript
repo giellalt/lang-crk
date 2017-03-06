@@ -36,19 +36,22 @@ set need-separators off
 
 Define morphology @bin"analyser_relabelled-disamb-gt-desc.hfst" ;
 
-Define incondform      Punct | {…} | {“} | {”} ;
+Define url @bin"../../src/morphology/url.hfst".i ;
+
+Define incondform      Punct | {“} | {”} | {…} | {­} ;
 
 Define blank           Whitespace | incondform ;
 
 Define incondword       morphology & [ incondform 0:?* ] ;
 Define morphoword       morphology                   LC([blank | #]) RC([blank | # ]);
+Define urlword          url                          LC([blank | #]) RC([blank | # ]);
 
 !! Apart from what's in our morphology, there are
 !! 1) unknown word-like forms, and
 !! 2) unmatched strings
 !! We want to give 1) a match, but let 2) be treated specially by hfst-tokenise -a
-Define alphabet "a-z" | {â}|{ê}|{î}|{ô}|{ā}|{ē}|{ī}|{ō}|{š}|{ð}|{ń}|{ý}|{â}|{ê}|{î}|{ô}|{ā}|{ē}|{ī}|{ō}|{š}|{ń}|{ý}|{-}
-              | "A-Z" | {Â}|{Ê}|{Î}|{Ô}|{Ā}|{Ē}|{Ī}|{Ō}|{Š}|{Ð}|{Ń}|{Ý}|{Â}|{Ê}|{Î}|{Ô}|{Ā}|{Ē}|{Ī}|{Ō}|{Š}|{Ń}|{Ý}|{~}|{’} ;
+Define alphabet "a-z" | {á}|{š}|{ž}|{č}|{đ}|{ŋ}|{ŧ}|{æ}|{ä}|{ø}|{ö}|{å}
+              | "A-Z" | {Á}|{Š}|{Ž}|{Č}|{Đ}|{Ŋ}|{Ŧ}|{Æ}|{Ä}|{Ø}|{Ö}|{Å} ;
 Define alphaword alphabet+;
 !! TODO: Could use something like this, but built-in's don't include šžđčŋ:
 ! Define MixCase(X) [OptCap(X) | UpCase(X)];
@@ -75,6 +78,6 @@ Define unknownwordEmpty unknownform:0 LC([blank | #]) RC([[blank ] | # ]);
 !! Needs hfst-tokenise to output things differently depending on the tag they get
 
 
-Define token [ morphoword | unknownwordEmpty | incondword ] EndTag(token);
+Define token [ morphoword | unknownwordEmpty | incondword | urlword ] EndTag(token);
 
 regex token ;
