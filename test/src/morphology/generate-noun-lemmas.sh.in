@@ -214,6 +214,16 @@ for f in $fsttype; do
     fi
 done
 
+# At least one of the Xerox or HFST tests failed:
+if [ "$Fail" = "1" ]; then
+    exit 1
+fi
+
+if [ $transducer_found -eq 0 ]; then
+    echo ERROR: No transducer found
+    exit 77
+fi
+
 # When done, remove the generated data file:
 rm -f $AN_noun_lemmas       \
       $ANpl_noun_lemmas     \
@@ -224,14 +234,3 @@ rm -f $AN_noun_lemmas       \
       $Dep_IN_noun_lemmas   \
       $Dep_INpl_noun_lemmas \
       $all_noun_lemmas
-
-
-# At least one of the Xerox or HFST tests failed:
-if [ "$Fail" = "1" ]; then
-    exit 1
-fi
-
-if [ $transducer_found -eq 0 ]; then
-    echo ERROR: No transducer found
-    exit 77
-fi

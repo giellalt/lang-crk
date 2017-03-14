@@ -200,6 +200,16 @@ for f in $fsttype; do
     fi
 done
 
+# At least one of the Xerox or HFST tests failed:
+if [ "$Fail" = "1" ]; then
+    exit 1
+fi
+
+if [ $transducer_found -eq 0 ]; then
+    echo ERROR: No transducer found
+    exit 77
+fi
+
 # When done, remove the generated data file:
 rm -f $ii_verb_lemmas   \
       $ti_verb_lemmas   \
@@ -210,13 +220,3 @@ rm -f $ii_verb_lemmas   \
       $aipl_verb_lemmas \
       $tapl_verb_lemmas \
       $all_verb_lemmas
-
-# At least one of the Xerox or HFST tests failed:
-if [ "$Fail" = "1" ]; then
-    exit 1
-fi
-
-if [ $transducer_found -eq 0 ]; then
-    echo ERROR: No transducer found
-    exit 77
-fi
