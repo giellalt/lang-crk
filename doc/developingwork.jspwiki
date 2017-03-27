@@ -85,8 +85,8 @@ sed 's/^/     /' >> test/src/gt-norm-yamls/N-IN-otenaw_gt-norm.yaml
 Comment: The last sed-command should give 5 whitespaces
 
 !! Documentation on unix-commands
-* [Unix for linguists|http://giellatekno.uit.no/doc/tools/docu-unix.html]
-* [Some unix commands explained, with examples, and example files, but in Saami|http://giellatekno.uit.no/doc/tools/unix_korpus_kursa.html]
+* [Unix for linguists|/doc/tools/docu-unix.html]
+* [Some unix commands explained, with examples, and example files, but in Saami|/doc/tools/unix_korpus_kursa.html]
 * [Basic unix-commands, external link|http://mally.stanford.edu/~sr/computing/basic-unix.html]
 * [More fun with sort, external link|http://www.softpanorama.org/Tools/sort.shtml]
 * [awk can be useful too, external link|http://www.softpanorama.org/Tools/awk.shtml]
