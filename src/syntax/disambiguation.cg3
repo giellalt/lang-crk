@@ -437,7 +437,8 @@ SELECT:ChooseIpc Ipc IF (0 N OR V) ;
 SELECT:1SgIfV1Sg 1Sg if (0 ("niya"))(*0C V + 1Sg);
 	
 # We go for derivation, more to look at when we are searching a lemme in Korp:
-SELECT:DerYes Der/Dim (0C N) ;
+#SELECT:DerYes Der/Dim (0C N) ;
+REMOVE:DerNo   Der/Dim (0C N) ;
 
 # We say post/prenominal words are determiners, not particles, if they agree
 REMOVE:DemNotIpc Ipc (-1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
