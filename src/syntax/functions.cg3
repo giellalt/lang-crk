@@ -267,7 +267,7 @@ MAP:PrepNR @<P TARGET N + Loc IF (-1 Ipc BARRIER CLB) ;
 MAP:PrepNL @P> TARGET N + Loc IF (1 Ipc BARRIER CLB) ;
 
 MAP @<ADVL Loc OR Ipc  (-1 VFIN)(NOT 0 @<P) ;
-MAP @ADVL> Loc OR Ipc  (*1 VFIN)(NOT 0 @P> ;
+MAP @ADVL> Loc OR Ipc  (*1 VFIN)(NOT 0 @P>) ;
 MAP @ADVL Loc OR Ipc  (NOT 0 @<P OR @P>) ;
 MAP @+FMAINV VFIN ;
 ##MAP @N> (Pron Dem) (1 N)  ;
@@ -287,7 +287,7 @@ MAP:DemNINPlL @N> TARGET Dem + IN + Pl IF (1 N + IN + Pl BARRIER CLB) ;
 MAP:DemNANObvR @<N TARGET Dem + AN + Obv IF (-1 N + AN + Obv BARRIER CLB) ;
 MAP:DemNANObvL @N> TARGET Dem + AN + Obv IF (1 N + AN + Obv BARRIER CLB) ;
 
-MAP:NAMES @>N TARGET Prop IF (0 Prop)(1 Prop);
+MAP:NAMES @N> TARGET Prop IF (0 Prop)(1 Prop);
 ## Residential School
 
 ##ACTor and goal rules for 3 and 3’ animate nouns
