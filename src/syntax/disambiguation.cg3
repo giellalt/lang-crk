@@ -427,29 +427,45 @@ BEFORE-SECTIONS
 SECTION
 
 # Different taste, different analysis
-#SELECT PV/kah IF (0 RdplS) ;
-REMOVE PV/kah IF (0 RdplS) ;
+SELECT PV/kah IF (0 RdplS) ;
+#REMOVE PV/kah IF (0 RdplS) ;
+SELECT PV/ka IF (0 RdplW) ;
+#REMOVE PV/ka IF (0 RdplW) ;
+
 
 # We remove the particle if the word can be something more interesting:
 SELECT:ChooseIpc Ipc IF (0 N OR V) ;
 
 # Sentence-final niyâ is a particle
-SELECT:1SgIfV1Sg 1Sg if (0 ("niya"))(*0C V + 1Sg);
+SELECT:1SgIfV1Sg 1Sg IF (0 ("niya"))(*0C V + 1Sg);
 	
-# We go for derivation, more to look at when we are searching a lemme in Korp:
+# We go for derivation, more to look at when we are searching a lemma in Korp:
+	##adjusted to choose lexicalised dim for time being - KS
 #SELECT:DerYes Der/Dim (0C N) ;
 REMOVE:DerNo   Der/Dim (0C N) ;
 
+
 # We say post/prenominal words are determiners, not particles, if they agree
-REMOVE:DemNotIpc Ipc (-1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
+REMOVE:DemNotIpc Ipc (-1 (Num) N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
 REMOVE:DemNotIpc Ipc ( 1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
 	## Mîcisowinâhtik ôma.
+	
+#some Dems can be in pl or an obv, these need to be selected appropriately
+REMOVE:DemINnotANObv AN Obv (-1 (Num) N + IN + Pl)(0 Dem + IN + Pl) ;
+REMOVE:DemINnotANObv AN Obv (1 N + IN + Pl) (0 Dem + IN + Pl) ;
+REMOVE:DemANObvnotIN IN Pl  (-1 (Num) N + AN + Obv)(0 Dem + AN + Obv) ;
+REMOVE:DemANObvnotIN IN Pl  (1 N + AN + Obv) (0 Dem + AN + Obv) ;
+
+#Dems can be NPs on their own and act as arguments
+REMOVE:DemNP Ipc (*0 V + TI)(NOT *0 N + IN)(0 Dem IN Sg) ;
+REMOVE:DemNP Ipc (*0 V + II)(NOT *0 N + IN)(0 Dem IN Sg)
 
 # Demonstratives follow nouns.
-SELECT:DemNotIpcDN Dem (0 Ipc)(1 N) ;
-SELECT:DemNotIpcND Dem (-1 N)(0 Ipc) ;
-
-SELECT:OmaIpc Ipc (0 ("ôma"))(-1 NOT-NOUN OR BOS)(1 NOT-NOUN OR CLB);
+#SELECT:DemNotIpcDN Dem (0 Ipc)(1 N) ;
+#SELECT:DemNotIpcND Dem (-1 N)(0 Ipc) ;
+	#these should be covered by DemNotIpc constraints above
+	
+SELECT:OmaIpc Ipc (0 ("<.ôma"r))(NOT -1 N + IN + Sg OR BOS)(NOT 1 N + IN + Sg OR CLB) ;
 
 SELECT:DefSubj Def IF (1 4Sg/Pl);
 
@@ -496,9 +512,10 @@ REMOVE:1SgWrong 1Sg IF (0 SHORTVERBEND + 2Sg) ;
 
 #kikway disambiguation
 REMOVE:kikway Pron IF (0 ("kîkway")) ;
-SELECT:INkikway IN IF (0 ("kîkway") LINK *0 TI) ;
+SELECT:INkikway IN IF (0 ("<.kîkway"r) LINK *0 TI OR TA LINK 1 N IN LINK -1 ("kahkiyaw") OR ("nanâtohk") ;
 REMOVE:kekway Pron IF (0 ("kêkway")) ;
 SELECT:INkekway IN IF (0 ("kêkway") LINK *0 TI) ;
+
 
 #ka-ki disambiguation
 SELECT:kaPrt Prt IF (0 ("PV/kaa") + ("<kâ-.*>"r)) ;

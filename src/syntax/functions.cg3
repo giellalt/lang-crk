@@ -179,12 +179,11 @@ LIST @HNOUN = @HNOUN ;
 LIST @INTERJ = @INTERJ ;
 
  
-LIST @>Num = @>Num;
+LIST @Num> = @Num> ;
+LIST @<Num = @<Num ;
 
-LIST @Pron< = @Pron< ;
-LIST @>Pron = @>Pron ;
-
-LIST @Num< = @Num< ;
+LIST @<Pron = @<Pron ;
+LIST @Pron> = @Pron> ;
 
 LIST @OBJ = @OBJ ;
 LIST @<OBJ = @<OBJ ;
@@ -315,8 +314,10 @@ MAP:TAACTObvL @ACT> TARGET Obv IF (*1 TA + 4Sg/Pl BARRIER V) ;
 MAP:INTR @ACT> TARGET Interr IF (*1 AI OR TI + 3Pl OR 3Sg BARRIER CLB) ;
 
 #TI and AI actors nouns
-MAP:AITIACTorR @<ACT TARGET N + AN IF (*-1 AI OR TI + 3Pl OR 3Sg BARRIER CLB) ;
-MAP:AITIACTorL @ACT> TARGET N + AN IF (*1 AI OR TI + 3Pl OR 3Sg BARRIER CLB) ;
+MAP:AITIACTSgR @<ACT TARGET N + AN + Sg IF (*-1 AI OR TI + 3Sg BARRIER CLB) ;
+MAP:AITIACTSgL @ACT> TARGET N + AN + Sg IF  (*1 AI OR TI + 3Sg BARRIER CLB) ;
+MAP:AITIACTPlR @<ACT TARGET N + AN + Pl IF (*-1 AI OR TI + 3Pl BARRIER CLB) ;
+MAP:AITIACTPlL @ACT> TARGET N + AN + Pl IF  (*1 AI OR TI + 3Pl BARRIER CLB) ;
 
 MAP:AITIACTorR @<ACT TARGET Obv IF (*-1 AI OR TI + 4Sg/Pl BARRIER CLB) ;
 MAP:AITIACTorL @ACT> TARGET Obv IF (*1 AI OR TI + 4Sg/Pl BARRIER CLB) ;
@@ -398,9 +399,9 @@ MAP:OBL @OBL> TARGET N + IN IF (*1 TA OR AI BARRIER V OR N OR CLB) ;
 
 
 
-MAP @? (?) ;
+##MAP @? (?) ;
 
-MAP @?? (*) (NOT 0 CLB) ;
+##MAP @?? (*) (NOT 0 CLB) ;
 
 REMOVE:CleanupSyntax @?? IF (0 SYNTAG);
 
