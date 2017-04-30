@@ -1,4 +1,4 @@
-# -*- cg-pre-pipe: "$GTHOME/giella-core/scripts/preprocess --abbr=$GTHOME/langs/crk/tools/preprocess/abbr.txt | hfst-optimised-lookup  $GTHOME/langs/crk/src/analyser-disamb-gt-desc.hfstol | $GTHOME/giella-core/scripts/lookup2cg" -*-
+# -*- cg-pre-:pipe => "$GTHOME/giella-core/scripts/preprocess --abbr=$GTHOME/langs/crk/tools/preprocess/abbr.txt | hfst-optimised-lookup  $GTHOME/langs/crk/src/analyser-disamb-gt-desc.hfstol | $GTHOME/giella-core/scripts/lookup2cg" -*-
 
 
 #   ============================ #
@@ -446,19 +446,19 @@ REMOVE:DerNo   Der/Dim (0C N) ;
 
 
 # We say post/prenominal words are determiners, not particles, if they agree
-REMOVE:DemNotIpc Ipc (-1 (Num) N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
+REMOVE:DemNotIpc Ipc (-1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
 REMOVE:DemNotIpc Ipc ( 1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
 	## Mîcisowinâhtik ôma.
 	
 #some Dems can be in pl or an obv, these need to be selected appropriately
-REMOVE:DemINnotANObv AN Obv (-1 (Num) N + IN + Pl)(0 Dem + IN + Pl) ;
-REMOVE:DemINnotANObv AN Obv (1 N + IN + Pl) (0 Dem + IN + Pl) ;
-REMOVE:DemANObvnotIN IN Pl  (-1 (Num) N + AN + Obv)(0 Dem + AN + Obv) ;
-REMOVE:DemANObvnotIN IN Pl  (1 N + AN + Obv) (0 Dem + AN + Obv) ;
+REMOVE:DemINnotANObv AN + Obv (-1 N + IN + Pl)(0 Dem + IN + Pl) ;
+REMOVE:DemINnotANObv AN + Obv (1 N + IN + Pl) (0 Dem + IN + Pl) ;
+REMOVE:DemANObvnotIN IN + Pl  (-1 N + AN + Obv)(0 Dem + AN + Obv) ;
+REMOVE:DemANObvnotIN IN + Pl  (1 N + AN + Obv) (0 Dem + AN + Obv) ;
 
 #Dems can be NPs on their own and act as arguments
-REMOVE:DemNP Ipc (*0 V + TI)(NOT *0 N + IN)(0 Dem IN Sg) ;
-REMOVE:DemNP Ipc (*0 V + II)(NOT *0 N + IN)(0 Dem IN Sg)
+REMOVE:DemNP Ipc (*0 V + TI)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
+REMOVE:DemNP Ipc (*0 V + II)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
 
 # Demonstratives follow nouns.
 #SELECT:DemNotIpcDN Dem (0 Ipc)(1 N) ;
@@ -491,7 +491,7 @@ REMOVE:PlIfObjSg 3SgO (0 3SgO)(*0 Pl + Obv);
 
 REMOVE:IndOnly Cnj (0 Ind)(NOT *0 Ind);
 
-REMOVE Fut (0 Ind);
+#REMOVE Fut (0 Ind);
 REMOVE Imp (0 Ind)(*0 N + Sg);
 
 # REMOVE:2SgWrong 2Sg IF (0 ("<.*ân>"r) + 1Sg) ;
@@ -512,7 +512,7 @@ REMOVE:1SgWrong 1Sg IF (0 SHORTVERBEND + 2Sg) ;
 
 #kikway disambiguation
 REMOVE:kikway Pron IF (0 ("kîkway")) ;
-SELECT:INkikway IN IF (0 ("<.kîkway"r) LINK *0 TI OR TA LINK 1 N IN LINK -1 ("kahkiyaw") OR ("nanâtohk") ;
+SELECT:INkikway IN IF (0 ("<.kîkway"r) LINK *0 TI OR TA LINK 1 N + IN LINK -1 ("kahkiyaw") OR ("nanâtohk") LINK NOT 1 N + AN ) ;
 REMOVE:kekway Pron IF (0 ("kêkway")) ;
 SELECT:INkekway IN IF (0 ("kêkway") LINK *0 TI) ;
 
