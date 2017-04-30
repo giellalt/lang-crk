@@ -113,6 +113,9 @@ LIST Px3Pl = Px3Pl ;
 LIST Px3Sg = Px3Sg ;
 LIST Px4Pl = Px4Pl ;
 LIST Px4Sg = Px4Sg ;
+
+LIST POSS = Px12Pl Px1Pl Px1Sg Px2Pl Px2Sg Px3Pl Px3Sg Px4Pl Px4Sg ;
+
 LIST Der/Dim = Der/Dim ;
 
 LIST CLB = CLB ;
@@ -398,6 +401,8 @@ SET NUMBERGENDER = (AN Sg) OR (AN Pl) OR (IN Sg) OR (IN PL) ;
 LIST LONGVERBEND = ("<.*âhk>"r) ("<.*âhkik>"r) ("<.*ân>"r) ;
 LIST SHORTVERBEND = ("<.*ahk>"r) ("<.*ahkik>"r) ("<.*an>"r) ;
 
+LIST KIKWAY = (".?kîkway"r) ;
+
 
 # LIST SIERRA-GUOVLU = (".*guovlu"r) "suomabealli" "norggabealli" "riddu" "ruoŧabealli" # "ruoššabealli" ;
 
@@ -435,6 +440,8 @@ SELECT PV/ka IF (0 RdplW) ;
 
 # We remove the particle if the word can be something more interesting:
 SELECT:ChooseIpc Ipc IF (0 N OR V) ;
+
+SElECT:LocnotV N + Loc IF (0 V) ;
 
 # Sentence-final niyâ is a particle
 SELECT:1SgIfV1Sg 1Sg IF (0 ("niya"))(*0C V + 1Sg);
@@ -511,10 +518,16 @@ REMOVE:1SgWrong 1Sg IF (0 SHORTVERBEND + 2Sg) ;
 
 
 #kikway disambiguation
-REMOVE:kikway Pron IF (0 ("kîkway")) ;
-SELECT:INkikway IN IF ((0 ("<.kîkway"r) LINK *0 TI OR TA) OR (1 N + IN) OR (-1 ("kahkiyaw") OR ("nanâtohk")) OR (NOT 1 N + AN )) ;
+REMOVE:kikway Pron IF (0 KIKWAY) ;
+SELECT:INkikway IN IF (0 KIKWAY LINK *0 TI OR TA) ;
+SELECT:INkikway IN IF (0 KIKWAY LINK 1 N + IN) ;
+SELECT:INkikway IN IF (0 KIKWAY LINK -1 ("kahkiyaw") OR ("nanâtohk")) ;
+SELECT:ANkikway AN IF (0 KIKWAY LINK 1 N + AN) ;
 REMOVE:kekway Pron IF (0 ("kêkway")) ;
 SELECT:INkekway IN IF (0 ("kêkway") LINK *0 TI) ;
+
+#if possession has an -im variant, choose -im variant
+#SELECT:imPOSS N + AN + POSS IF (0 (<.*m>r)) ;
 
 
 #ka-ki disambiguation
