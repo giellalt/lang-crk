@@ -512,7 +512,7 @@ REMOVE:1SgWrong 1Sg IF (0 SHORTVERBEND + 2Sg) ;
 
 #kikway disambiguation
 REMOVE:kikway Pron IF (0 ("kîkway")) ;
-SELECT:INkikway IN IF (0 ("<.kîkway"r) LINK *0 TI OR TA LINK 1 N + IN LINK -1 ("kahkiyaw") OR ("nanâtohk") LINK NOT 1 N + AN ) ;
+SELECT:INkikway IN IF ((0 ("<.kîkway"r) LINK *0 TI OR TA) OR (1 N + IN) OR (-1 ("kahkiyaw") OR ("nanâtohk")) OR (NOT 1 N + AN )) ;
 REMOVE:kekway Pron IF (0 ("kêkway")) ;
 SELECT:INkekway IN IF (0 ("kêkway") LINK *0 TI) ;
 
