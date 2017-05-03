@@ -76,7 +76,7 @@ LIST Prs = Prs ;
 LIST Prt = Prt ;
 LIST Qst = Qst ;
 LIST Sbj = Sbj ;
-
+LIST Pers = Pers ;
 
 LIST SgO = SgO ;
 LIST P2lO = P2lO ;
@@ -396,7 +396,7 @@ SET NOT-NOUN = WORD - N ;
 
 LIST NUMBER = Sg Pl ;
 LIST GENDER = AN IN ;
-SET NUMBERGENDER = (AN Sg) OR (AN Pl) OR (IN Sg) OR (IN PL) ;
+SET NUMBERGENDER = (AN Sg) OR (AN Pl) OR (IN Sg) OR (IN Pl) OR (AN Obv) ;
 
 LIST LONGVERBEND = ("<.*âhk>"r) ("<.*âhkik>"r) ("<.*ân>"r) ;
 LIST SHORTVERBEND = ("<.*ahk>"r) ("<.*ahkik>"r) ("<.*an>"r) ;
@@ -437,11 +437,18 @@ SELECT PV/kah IF (0 RdplS) ;
 SELECT PV/ka IF (0 RdplW) ;
 #REMOVE PV/ka IF (0 RdplW) ;
 
+#aya is complicated
+SELECT:ayaNA AN + Sg IF (0 ("<aya>"r))(-1 Pron + AN + Sg) ;
+SELECT:ayaNA AN + Sg IF (0 ("<aya>"r))(1 Pron + AN + Sg) ;
+SELECT:ayaNA AN + Sg IF (0 ("<aya>"r))(-1 Pron + AN + Obv) ;
+SELECT:ayaNA AN + Sg IF (0 ("<aya>"r))(1 Pron + AN + Obv) ;
+SELECT:ayaNA IN + Sg IF (0 ("<aya>"r))(-1 Pron + IN + Sg) ;
+SELECT:ayaNA IN + Sg IF (0 ("<aya>"r))(1 Pron + IN + Sg) ;
 
 # We remove the particle if the word can be something more interesting:
 SELECT:ChooseIpc Ipc IF (0 N OR V) ;
 
-SElECT:LocnotV N + Loc IF (0 V) ;
+SELECT:LocnotV N + Loc IF (0 V) ;
 
 # Sentence-final niyâ is a particle
 SELECT:1SgIfV1Sg 1Sg IF (0 ("niya"))(*0C V + 1Sg);
@@ -458,10 +465,11 @@ REMOVE:DemNotIpc Ipc ( 1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
 	## Mîcisowinâhtik ôma.
 	
 #some Dems can be in pl or an obv, these need to be selected appropriately
-REMOVE:DemINnotANObv AN + Obv (-1 N + IN + Pl)(0 Dem + IN + Pl) ;
-REMOVE:DemINnotANObv AN + Obv (1 N + IN + Pl) (0 Dem + IN + Pl) ;
 REMOVE:DemANObvnotIN IN + Pl  (-1 N + AN + Obv)(0 Dem + AN + Obv) ;
 REMOVE:DemANObvnotIN IN + Pl  (1 N + AN + Obv) (0 Dem + AN + Obv) ;
+
+REMOVE:DemINnotANObv AN + Obv (-1 N + IN + Pl)(0 Dem + IN + Pl) ;
+REMOVE:DemINnotANObv AN + Obv (1 N + IN + Pl) (0 Dem + IN + Pl) ;
 
 #Dems can be NPs on their own and act as arguments
 REMOVE:DemNP Ipc (*0 V + TI)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
@@ -515,6 +523,12 @@ REMOVE:CnjNeedPvrb Cnj IF (NOT 0 PREVERB) ;
 REMOVE:2SgWrong 2Sg IF (0 LONGVERBEND + 1Sg) ;
 REMOVE:1SgWrong 1Sg IF (0 SHORTVERBEND + 2Sg) ;
 
+#for ambiguous nouns/pronouns e.g. wîsta
+SELECT:PronNotN Pron + Pers IF (0 N + IN) ;
+
+#abiguity between prox and obv NAs
+REMOVE:NANObv Obv IF (0 N + AN + Sg)(*0 TA + 3Sg BARRIER V OR CLB) ; 
+SELECT:NANObv Obv IF (0 N + AN + Sg)(NOT *0 TA + 3Sg BARRIER V OR CLB)(*0 TA + 4Sg/PlO OR TA + 4Sg/Pl BARRIER V OR CLB) ;
 
 
 #kikway disambiguation
@@ -526,8 +540,14 @@ SELECT:ANkikway AN IF (0 KIKWAY LINK 1 N + AN) ;
 REMOVE:kekway Pron IF (0 ("kêkway")) ;
 SELECT:INkekway IN IF (0 ("kêkway") LINK *0 TI) ;
 
+#wiya IPC vs Pron Pers
+SELECT:wiyaPron Pron IF (0 (".?wiya"r))(*0 AI + 3Sg OR TI + 3Sg OR TA + 3Sg OR TA + 3SgO BARRIER CLB) ;
+SELECT:wiyaIpc Ipc IF (0 (".?wiya"r))(NOT *0 V + 3Sg OR V + 3SgO BARRIER CLB) ;
+
+
 #if possession has an -im variant, choose -im variant
-#SELECT:imPOSS N + AN + POSS IF (0 (<.*m>r)) ;
+#need to add a poss theme tag?
+
 
 
 #ka-ki disambiguation
