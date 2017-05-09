@@ -274,6 +274,13 @@ MAP:PrepNL @P> TARGET N + Loc IF (1 Ipc BARRIER CLB) ;
 ##MAP @ADVL> Loc OR Ipc  (*1 VFIN)(NOT 0 @P>) ;
 ##MAP @ADVL Loc OR Ipc  (NOT 0 @<P OR @P>) ;
 ##MAP @+FMAINV VFIN ;
+#MAP:PRED @PRED TARGET V ;
+
+#MAP:PREDII @PRED-II TARGET V + II ;
+#MAP:PREDAI @PRED-AI TARGET V + AI ;
+#MAP:PREDTI @PRED-TI TARGET V + TI ;
+#MAP:PREDTA @PRED-TA TARGET V + TA ;
+
 ##MAP @N> (Pron Dem) (1 (Num) N)  ;
 ##MAP @<N (Pron Dem) (-1 N (Num))  ;
 
