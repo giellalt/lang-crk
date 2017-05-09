@@ -552,9 +552,10 @@ SELECT:wiyaIpc Ipc IF (0 (".?wiya"r))(NOT *0 V + 3Sg OR V + 3SgO BARRIER CLB) ;
 
 #ka-ki disambiguation
 SELECT:kakiPrs Prs IF (0 Prt + ("<ka-kî-.*>"r)) ;
-SELECT:kaaPrt Prt IF (0 ("PV/kaa") + ("<kâ-.*>"r)) ;
+REMOVE:kaki PV/ka_ki IF (0 Prt + ("<kâ-.*>"r)) ;
 REMOVE:kaa PV/kaa IF (0 ("<ka-kî-.*"r)) ;
 REMOVE:kaaki PV/kaa_ki IF (0 ("<ka-kî-.*>"r)) ;
+REMOVE:ka PV/ka IF (0 ("<kâ-.*>"r)) ;
 
 #2>3/3>4 disambiguation
 SELECT:disambig23Sg 3Sg IF (0 TA + ("<.*ât>"r)) ;
