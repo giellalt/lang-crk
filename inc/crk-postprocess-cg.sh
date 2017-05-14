@@ -77,10 +77,10 @@ gawk '{ gsub("\t"," ");
 # Extracting surface-syntactic analysis sequences per clause
 
 gawk 'BEGIN { FS="\t"; }
-{ gsub("V II","@PRED-II");
-  gsub("V AI","@PRED-AI");
-  gsub("V TI","@PRED-TI");
-  gsub("V TA","@PRED-TA");
+{ # gsub("V II","@PRED-II");
+  # gsub("V AI","@PRED-AI");
+  # gsub("V TI","@PRED-TI");
+  # sub("V TA","@PRED-TA");
   anl="";
   for(i=1; i<=NF; i++)
      { 
