@@ -79,11 +79,36 @@
 #    6  VTI-3
 #   4  VTA-5
 
+# Arok -> FST
+# VII-v -> VIIw
+# VII-v (singular) -> VIIw_SG
+# VII-v (plural) -> VIIw_PL
+# VII-n -> VIIn
+# VII-n (singular) -> VIIn_SG
+# VII-n (plural) -> VIIn_PL
+
+# VAI-n -> VAIn 
+# VAI-n (plural) -> VAIn_PL 
+# VAI-v (plural) -> VAIw
+# VAI-v -> VAIw_PL
+
+# VTI-1 -> VTI
+# VTI-1 (plural) -> VTI_PL
+# VTI-2 -> VAIw 
+# VTI-3 -> VAIw
+
+# VTA-1 -> VTA
+# VTA-2 -> VTAvw w- > w2 (except kiskinohamawêw)
+# VTA-2 (plural) -> VTAvw_PL
+# VTA-3 -> VTAcw
+# VTA-4 -> VTAt; t- > t3
+# VTA-5 (ahêw, [wîhkistêw]) -> VTAi (i- > i2)
+# VTA-5 (ay-itêw) -> VTAti
 
 tr -d '"' |
 
 gawk -v CLASS=$1 'BEGIN { FS="\t"; class=CLASS; print "LEXICON STEMLIST"; print ""; }
-NR>1 { lex=$1; pos=$3; gloss=$4; note1=$10; note2=$11; stem=$15; clex="";
+NR>1 { lex=$1; pos=$3; gloss=$4; note1=$10; note2=$11; stem=$16; clex="";
 gsub("ý","y",lex); gsub("[ ]*$","",lex); gsub("[!?]","",lex);
 gsub("^[ ]*","",stem); gsub("[ ]*$","",stem); gsub("[-]$","",stem); gsub("ý","y",stem);
 gsub("[ ]*","",pos); gsub("^[ ]*","",gloss);
@@ -117,34 +142,74 @@ if(class=="N")
 
 if(class=="V")
 {
-#  if(pos=="VAI-n") clex="IACONJ_n";
-#  if(pos=="VAI-v") clex="IACONJ_v";
-#  if(pos=="VII-n") clex="IICONJ_n";
-#  if(pos=="VII-v") clex="IICONJ_v";
-#  if(pos=="VTA-1") clex="TACONJ_1";
-#  if(pos=="VTA-2") clex="TACONJ_2";
-#  if(pos=="VTA-3") clex="TACONJ_3";
-#  if(pos=="VTA-4") clex="TACONJ_4";
-#  if(pos=="VTA-5") clex="TACONJ_5";
-#  if(pos=="VTI-1") clex="TICONJ_1";
-#  if(pos=="VTI-2") clex="TICONJ_2";
-#  if(pos=="VTI-3") clex="TICONJ_3";
-
-if(pos=="VAI-n" || pos=="VAI-v")
-  { if(stem!=lex && match(lex,"w$")!=0)
-      clex="IACONJw";
-    else
-      clex="IACONJ";
+# if(pos=="VAI-n" || pos=="VAI-v")
+#  { if(stem!=lex && match(lex,"w$")!=0)
+#      clex="IACONJw";
+#    else
+#      clex="IACONJ";
+#  } 
+if(pos=="VII-v")
+  { clex="VIIw"; }
+if(pos=="VII-v" && (lex=="atihkamêkoskâw" || lex=="kîskatâwahkâw" || lex=="miyimâwahcâw" || lex=="sakâw" || lex=="sîkipêstâw" || lex=="sôhkiyowêw")) 
+  { clex="VIIw_SG"; }
+if(pos=="VII-v" && match(lex,"a$")!=0) 
+  { clex="VIIw_PL"; }
+if(pos=="VII-n") 
+  { clex="VIIn"; }
+if(pos=="VII-n" && (lex=="misi-yôtin" || lex=="mispon" || lex=="wâsêskwan")) 
+  { clex="VIIn_SG"; }
+if(pos=="VII-n" && match(lex,"a$")!=0) 
+  { clex="VIIn_PL"; }
+if(pos=="VAI-n")  
+  { clex="VAIn"; }
+if(pos=="VAI-n" && match(lex,"ak$")!=0) 
+  { clex="VAIn_PL"; }
+if(pos=="VAI-v") 
+  { clex="VAIw"; }
+if(pos=="VAI-v" && match(lex,"ak$")!=0) 
+  { clex="VAIw_PL"; }
+if(pos=="VTI-1")
+  { clex="VTI"; }
+if(pos=="VTI-1"&& match(lex,"ak$")!=0) 
+  { clex="VTI_PL"; }
+if(pos=="VTI-2")  
+  { clex="VAIw"; }
+if(pos=="VTI-3") 
+  { clex="VAIw"; }
+if(pos=="VTA-1")
+  { clex="VTA"; }
+if(pos=="VTA-2") # w- > w2 (except kiskinohamawêw)
+  { clex="VTAvw";
+    if(lex!="kiskinohamawêw")
+      sub("w$","w2",stem);
   }
+if(pos=="VTA-2"&& match(lex,"ak$")!=0) 
+  { clex="VTAvw_PL"; }
+if(pos=="VTA-3")
+  { clex="VTAcw"; }
+if(pos=="VTA-4") # t- > t3
+  { clex="VTAt";
+    sub("t$","t3",stem);
+  }
+if(pos=="VTA-5" && (lex=="ahêw" || lex=="wîhkistêw")) # (ahêw, [wîhkistêw]) (i- > i2)
+  { clex="VTAi";
+    stem=stem "i2";
+  }
+if(pos=="VTA-5" && lex=="ay-itêw") # (ay-itêw) 
+  { clex="VTAti"; }
+
+# if(pos=="VTA-1" || pos=="VTA-2" || pos=="VTA-3" || pos=="VTA-4")
+#  { clex="TACONJ";
+#  }
 
   if(clex!="" && stem==lex)
     printf "%s %s \"%s\" ;", lex, clex, gloss;
   if(clex!="" && stem!=lex)
     printf "%s:%s %s \"%s\" ;", lex, stem, clex, gloss;
   if(clex!="")
-#    if(note1!="" || note2!="")
-#       printf " ! %s %s\n", note1, note2;
-#    else
+    if(note1!="" || note2!="")
+       printf " ! %s %s\n", note1, note2;
+    else
       printf "\n";
 }
 
