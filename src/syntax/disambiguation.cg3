@@ -567,6 +567,7 @@ REMOVE:rdplwkaa ("RdplW") IF (0 ("PV/kaa")) ;
 
 #Remove PVs
 REMOVE:fewerPV2  PREVERB IF (0 ("PV.*"r)) ;
+##REMOVE:fewerPV PREVERB IF (0 (".*-.*"r)) ;
 REMOVE:fewerPV1  ("PV.*"r) ;
 
 #Remove Err/Orth
