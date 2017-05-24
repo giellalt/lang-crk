@@ -45,7 +45,6 @@ LIST II = II ;
 LIST TA = TA ;
 LIST TI = TI ;
 
-
 LIST Cnj = Cnj ;
 LIST ConNeg = ConNeg ;
 LIST Cond = Cond ;
@@ -403,7 +402,6 @@ LIST SHORTVERBEND = ("<.*ahk>"r) ("<.*ahkik>"r) ("<.*an>"r) ;
 
 LIST KIKWAY = (".?kîkway"r) ;
 
-
 # LIST SIERRA-GUOVLU = (".*guovlu"r) "suomabealli" "norggabealli" "riddu" "ruoŧabealli" # "ruoššabealli" ;
 
 # Noun sets
@@ -428,6 +426,9 @@ SET PRE-APP   = COMMA OR PUNCT-LEFT ;
 # Here come the rules #
 
 BEFORE-SECTIONS 
+
+REMOVE:ayawTI TI IF (0 ("(.+[-])*ayâw"r) + AI) ;
+ADD:ayawAITI TI TARGET ("(.+[-])*ayâw"r) + AI ;
 
 SECTION
 
