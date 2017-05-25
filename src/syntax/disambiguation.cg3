@@ -428,7 +428,7 @@ SET PRE-APP   = COMMA OR PUNCT-LEFT ;
 BEFORE-SECTIONS 
 
 REMOVE:ayawTI TI IF (0 ("(.+[-])*ayâw"r) + AI) ;
-ADD:ayawAITI TI TARGET ("(.+[-])*ayâw"r) + AI ;
+ADD:ayawAITI TI TARGET ("(.+[-])*ayâw"r) + AI) ;
 
 SECTION
 
@@ -437,14 +437,17 @@ SELECT PV/kah IF (0 RdplS) ;
 #REMOVE PV/kah IF (0 RdplS) ;
 SELECT PV/ka IF (0 RdplW) ;
 #REMOVE PV/ka IF (0 RdplW) ;
+SELECT PV/tah IF (0 RdplS) ;
+SELECT PV/ta IF (0 RdplW) ;
+SELECT PV/wah IF (0 RdplS)
 
 #aya is complicated
 SELECT:ayaNA AN + Sg IF (0 ("<aya>"r))(-1 Pron + AN + Sg) ;
 SELECT:ayaNA AN + Sg IF (0 ("<aya>"r))(1 Pron + AN + Sg) ;
-SELECT:ayaNA AN + Sg IF (0 ("<aya>"r))(-1 Pron + AN + Obv) ;
-SELECT:ayaNA AN + Sg IF (0 ("<aya>"r))(1 Pron + AN + Obv) ;
-SELECT:ayaNA IN + Sg IF (0 ("<aya>"r))(-1 Pron + IN + Sg) ;
-SELECT:ayaNA IN + Sg IF (0 ("<aya>"r))(1 Pron + IN + Sg) ;
+SELECT:ayaNA AN + Obv IF (0 ("<aya>"r))(-1 Pron + AN + Obv) ;
+SELECT:ayaNA AN + Obv IF (0 ("<aya>"r))(1 Pron + AN + Obv) ;
+SELECT:ayaNA IN + Pl IF (0 ("<aya>"r))(-1 Pron + IN + Pl) ;
+SELECT:ayaNA IN + Pl IF (0 ("<aya>"r))(1 Pron + IN + Pl) ;
 
 # We remove the particle if the word can be something more interesting:
 SELECT:ChooseIpc Ipc IF (0 N OR V) ;
@@ -558,12 +561,15 @@ REMOVE:kaa PV/kaa IF (0 ("<ka-kî-.*"r)) ;
 REMOVE:kaaki PV/kaa_ki IF (0 ("<ka-kî-.*>"r)) ;
 REMOVE:ka PV/ka IF (0 ("<kâ-.*>"r)) ;
 
+#when k- occurs, can be ka- or kâ-, for the sake of simplicity choosing kâ- here (doesn't affect actor and goal assignment, seems to be more frequent)
+SELECT:kaafork PV/kaa IF (0 ("<k-.*>"r)) ;
+
 #2>3/3>4 disambiguation
 SELECT:disambig23Sg 3Sg IF (0 TA + ("<.*ât>"r)) ;
 SELECT:disambig23Pl 3Pl IF (0 TA + ("<.*âcik>"r)) ;
 
 #Remove RdplW if Kâ
-REMOVE:rdplwkaa ("RdplW") IF (0 ("PV/kaa")) ; 
+REMOVE:rdplwkaa (RdplW) IF (0 (PV/kaa)) ; 
 
 
 #Remove PVs
