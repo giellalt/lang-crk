@@ -428,7 +428,7 @@ SET PRE-APP   = COMMA OR PUNCT-LEFT ;
 BEFORE-SECTIONS 
 
 REMOVE:ayawTI TI IF (0 ("(.+[-])*ayâw"r) + AI) ;
-ADD:ayawAITI TI TARGET ("(.+[-])*ayâw"r) + AI) ;
+ADD:ayawAITI TI TARGET ("(.+[-])*ayâw"r) + AI ;
 
 SECTION
 
@@ -439,7 +439,7 @@ SELECT PV/ka IF (0 RdplW) ;
 #REMOVE PV/ka IF (0 RdplW) ;
 SELECT PV/tah IF (0 RdplS) ;
 SELECT PV/ta IF (0 RdplW) ;
-SELECT PV/wah IF (0 RdplS)
+SELECT PV/wah IF (0 RdplS) ;
 
 #aya is complicated
 SELECT:ayaNA AN + Sg IF (0 ("<aya>"r))(-1 Pron + AN + Sg) ;
@@ -449,10 +449,13 @@ SELECT:ayaNA AN + Obv IF (0 ("<aya>"r))(1 Pron + AN + Obv) ;
 SELECT:ayaNA IN + Pl IF (0 ("<aya>"r))(-1 Pron + IN + Pl) ;
 SELECT:ayaNA IN + Pl IF (0 ("<aya>"r))(1 Pron + IN + Pl) ;
 
-# We remove the particle if the word can be something more interesting:
+# We remove the particle if the word can be something more interesting - keep the particle, more common/likely
 SELECT:ChooseIpc Ipc IF (0 N OR V) ;
 
 SELECT:LocnotV N + Loc IF (0 V) ;
+
+#if a noun can also be a verb with a preverb, choose the noun
+SELECT:NnotVPV N IF (0 V + PREVERB) ;
 
 # Sentence-final niyâ is a particle
 SELECT:1SgIfV1Sg 1Sg IF (0 ("niya"))(*0C V + 1Sg);
@@ -563,6 +566,9 @@ REMOVE:ka PV/ka IF (0 ("<kâ-.*>"r)) ;
 
 #when k- occurs, can be ka- or kâ-, for the sake of simplicity choosing kâ- here (doesn't affect actor and goal assignment, seems to be more frequent)
 SELECT:kaafork PV/kaa IF (0 ("<k-.*>"r)) ;
+
+#similarly, prefer II if TI X is also possible
+SELECT:IInotX V + II IF (0 TI + X) ;
 
 #2>3/3>4 disambiguation
 SELECT:disambig23Sg 3Sg IF (0 TA + ("<.*ât>"r)) ;
