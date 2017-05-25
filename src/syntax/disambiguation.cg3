@@ -428,7 +428,7 @@ SET PRE-APP   = COMMA OR PUNCT-LEFT ;
 
 BEFORE-SECTIONS 
 
-REMOVE:ayawTI TI IF (0 ("(.+[-])*ayâw"r) + AI) ;
+REMOVE:ayawTI TI IF (0 ("(.+[-])*ayâw"r) + AI)(NOT 0 AI + TI) ;
 ADD:ayawAITI TI TARGET ("(.+[-])*ayâw"r) + AI ;
 
 SECTION
