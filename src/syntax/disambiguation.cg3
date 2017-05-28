@@ -581,9 +581,15 @@ SELECT:disambig23Pl 3Pl IF (0 TA + ("<.*âcik>"r)) ;
 
 
 #Remove PVs
-REMOVE:fewerPV2  PREVERB IF (0 ("PV.*"r)) ;
-REMOVE:fewerPV PREVERB IF (0 (".*-.*"r)) ;
-REMOVE:fewerPV1  ("PV.*"r) ;
+#REMOVE:fewerPV2  PREVERB IF (0 ("PV.*"r)) ;
+#REMOVE:fewerPV PREVERB IF (0 (".*-.*"r)) ;
+#REMOVE:fewerPV1  ("PV.*"r) ;
+
+SELECT:PV5 ("[^<]+[-].+[-].+[-].+[-].+[-][^>]+"r) ;
+SELECT:PV4 ("[^<]+[-].+[-].+[-].+[-][^>]+"r) ;
+SELECT:PV3 ("[^<]+[-].+[-].+[-][^>]+"r) ;
+SELECT:PV2 ("[^<]+[-].+[-][^>]+"r) ;
+SELECT:PV1 ("[^<]+[-][^>]+"r) ;
 
 #Remove Err/Orth
 REMOVE:NoErr Err/Orth ;
