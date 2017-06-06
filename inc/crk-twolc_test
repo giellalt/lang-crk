@@ -1,0 +1,258 @@
+##locative, dim, poss -im VGi > V: - i from^ *e, i2 (CHANGE OTHER i2)
+##-i2hk, -i2nâhk, -i2s(is), -i2m
+##also for possessive suffixes -i2nân, -i2naw/-i2nânaw, -i2wâw, -i2yiw(a)
+##also for VTAs, done below
+
+#aGiRule [ [ a | â ] [ w | y | ý ] %/ i -> â ]
+#{a,â} w i2 > â
+
+#mêskanâs - NI Dim 
+m ê s k a n a:â w:0 %>:0 i2:0 s
+#mêskanâhk - NI Loc
+m ê s k a n a:â w:0 %>:0 i2:0 h k 
+#sôniyâs - NA dim
+s ô n i y â:â w:0 %>:0 i2:0 s
+#miskocâkâs NDI dim
+m i s k o t:c â k a:â y:0 %>:0 i2:0 s
+
+#eGiRule [ ê [ w | y | ý ] %/ i -> ê ]
+#{ê} w i2 > ê
+
+#nâpêsis - NA dim
+n â p ê:ê w:0 %>:0 i2:0 s i s 
+#iskwênâhk - NA loc
+i s k w ê:ê w:0 %>:0 i2:0 n â h k 
+
+#iGiRule [ [ i | î ] [ w | y | ý ] %/ [ i | î ] -> î ]
+#{i,î} w i2 > î
+
+#maskosîs - NI dim
+m a s k o s i:î y:0 %>:0 i2:0 s 
+#pikîs - NA dim
+p i k i:î w:0 %>:0 i2:0 s
+#maskosîhk - NI dim
+m a s k o s i:î y:0 %>:0 i2:0 h k 
+
+#oGiRule [ [ o | ô ] [ w | y | ý ] %/ i -> ô ]
+#{o,ô} w i2 > ô 
+
+#sîwâpôs - NI dim
+s î w â p o:ô y:0 %>:0 i2:0 s
+#tohtôsâpôhk
+t o h t ô s â p o:ô y:0 %>:0 i2:0 h k 
+
+#iiRule i-i2 > i
+
+#wâwis
+w â w i:i %>:0 i2:0 s 
+#ôsihk
+ô s i:i %>:0 i2:0 h k 
+
+#Cwi > Co (i and i2)
+
+#acimos
+a t:c i m w:o %>:0 i2:0 s 
+#mistikohk
+m i s t i k w:o %>:0 i2:0 h k
+
+#Cwa-i > Cwo (i and i2)
+
+#maskosis - NA dim
+m a s k w:o a:0 %>:0 i2:0 s i s 
+
+#no change after plain consonants, i2:i
+
+#sâkahikanis
+s â k a h i k a n %>:0 i2:i s
+#maskasinihk
+m a s k i s i n %>:0 i2:i h k 
+
+## Cw# > C
+
+#askihk
+a s k i h k w:0
+#atim
+a t i m w:0
+
+##diminutive sound symbolism palatalisation (requires DIM trigger?)
+#{t,t2} > c / _...DIM
+
+#nicascocinis
+n i t2:c %>:0 a s t:c o t:c i n %>:0 i2:i s
+
+
+##connecting t - independent verbs, possessed nouns
+##t2 > t / _V
+
+#nitapin - VAI 1Sg
+n i t2:t %>:0 a p i %>:0 n 
+#kitapinaw - VAI 12Pl
+k i t2:t %>:0 a p i %>:0 n a w 
+#otastotin - NI Px3Sg 
+o t2:t %>:0 a s t o t i n
+
+
+##o>w for certain possessed nouns (but these are dependent, why not handled with kinship?)
+##previously seen before î, a, â?, and iy (phonetically îy)
+##new tag w3 (can become w2 after other changes, discussed for VTA-2)
+
+#wiyâw
+o:w %>:0 i y â w3:w
+#wîpit
+o:w %>:0 î p i t 
+#wahkwan
+o:w %>:0 a h k w a n 
+
+##connecting t deleted before consonants
+##t2 > 0 / _C
+
+#nimaskisin - NI Px1Sg
+n i t2:0 %>:0 m a s k i s i n
+#kipimipahtân - VAI 2Sg
+k i t2:0 %>:0 p i m i p a h t â %>:0 n
+
+
+##â > ê  _-n - independent 1/2 VAI-v, VTI-v
+
+#ninêhiyawân - VAI 1Sg
+n i t2:0 %>:0 n ê h i y a w ê:â %>:0 n 
+#kikâsîhkwân
+k i t2:0 %>:0 k â s î h k w ê:â %>:0 n
+
+
+##a > ê / _-n - independent 1/2 VTI-t
+
+#nitipiskên
+n i t2:0 %>:0 t i p i s k a:ê %>:0 n
+#kikiskêyihtên
+k i t2:0 %>:0 k i s k ê y i h t a:ê %>:0 n
+
+
+##n-final VIIs that take -hk NEW SPECIAL CHARACTER (adapt for VAI-n?? e.g. n2 > 0 / _-hk)
+## n > h / _-k
+
+#ê-nîpihk
+ê - %>:0 n î p i n2:h %>:0 k
+#ê-mispok
+ê - %>:0 m i s p o n:0 %>:0 k
+
+##VTAs
+##VTA-1
+
+#no changes, but some marked exceptions
+#w3 so mowêw and ayawêw don't contract (wîcêwêw can do both - code two stems?)
+
+#ê-mowiht - VTA X>3SgO
+ê - %>:0 m o w3:w %>:0 i2:i h t 
+#ê-ayawikoyâhk
+ê - %>:0 a y a w3:w %>:0 i2:i k o y â h k  
+
+##VTA-3(Cw) act like Cw nouns for all i2 and i suffixes (summarised below)
+#mark as normal w, w>o applies for i and i2
+#seem to need î2? for delayed 2>1 imp
+
+#kikîskison - VTA 2Sg>1SgO
+k i t2:0 %>:0 k î s k i s w:o %>:0 i:0 n 
+#nikîskisomâwa - VTA 1Sg>3'O
+n i t2:0 %>:0 k î s k i s w:o %>:0 i2:0 m â w a 
+#ê-kîskisotân - VTA 1Sg>2SgO
+ê - %>:0 k î s k i s w:o %>:0 i2:0 t â n
+#ê-kîskisot
+ê - %>:0 k î s k i s w:o %>:0 i:0 t 
+#ê-kîskisosk - VTA 3Sg>2SgO
+ê - %>:0 k î s k i s w:o %>:0 i2:0 s k 
+#ê-kîskisokoyâhk - VTA 3Sg>1PlO
+ê - %>:0 k î s k i s w:o %>:0 i2:0 k o y â h k 
+#nikîskisokawin - VTA X>1SgO
+n i t2:0 %>:0 k î s k i s w:o %>:0 i2:0 k a w i n 
+#kîskison - VTA imp 2Sg>1SgO
+k î s k i s w:o %>:0 i:0 n 
+#kîskisôhkan - VTA delayed 2Sg>1SgO
+k î s k i s w:ô %>:0 î2:0 h k a n 
+
+
+##VTA-2(aw)
+##requires new coding, i2 instead of WI trigger
+##i does not trigger VGi > V:
+#i2 for all 1>2, -im... -iko..., -ikawi..., -i2sk, -i2ht, -i2hcik
+#î2 does not collapse
+
+#kinitonawin - VTA 2Sg>1SgO
+k i t2:0 %>:0 n i t o n a w %>:0 i n 
+#ninitonâmâwa - VTA 1Sg>3'O
+n i t2:0 %>:0 n i t o n a:â w:0 %>:0 i2:0 m â w a 
+#ê-nitonawitân - VTA 1Sg>2SgO
+ê - %>:0 n i t o n a:â w:0 %>:0 i2:0 t â n
+#ê-kîskisot
+ê - %>:0 n i t o n a w %>:0 i t 
+#ê-nitonâsk - VTA 3Sg>2SgO
+ê - %>:0 n i t o n a:â w:0 %>:0 i2:0 s k 
+#ê-nitonâkoyâhk - VTA 3Sg>1PlO
+ê - %>:0 n i t o n a:â w:0 %>:0 i2:0 k o y â h k 
+#ninitonâkawin - VTA X>1SgO
+n i t2:0 %>:0 n i t o n a:â w:0 %>:0 i2:0 k a w i n
+#nitonawin - VTA imp 2Sg>1SgO
+n i t o n a w %>:0 i n 
+#nitonawîhkan - VTA delayed 2Sg>1SgO
+n i t o n a w %>:0 î2:î h k a n 
+
+
+##VTA-4 (t3) 
+## t3 > s / _{-i,-î2}; t3 > t / _-i2  
+
+#kinakasin - VTA 2Sg>1SgO
+k i t2:0 %>:0 n a k a t3:s %>:0 i n 
+#ninakatimâwa - VTA 1Sg>3'O
+n i t2:0 %>:0 n a k a t3:t %>:0 i2:i m â w a 
+#ê-nakatitân - VTA 1Sg>2SgO
+ê - %>:0 n a k a t3:t %>:0 i2:i t â n
+#ê-nakasit
+ê - %>:0 n a k a t3:s %>:0 i t 
+#ê-nakatisk - VTA 3Sg>2SgO
+ê - %>:0 n a k a t3:t %>:0 i2:i s k 
+#ê-nakatikoyâhk - VTA 3Sg>1PlO
+ê - %>:0 n a k a t3:t %>:0 i2:i k o y â h k 
+#ninakatikawin - VTA X>1SgO
+n i t2:0 %>:0 n a k a t3:t %>:0 i2:i k a w i n
+#nakasin - VTA imp 2Sg>1SgO
+n a k a t3:s %>:0 i n 
+#nakasîhkan - VTA delayed 2Sg>1SgO
+n a k a t3:s %>:0 î2:î h k a n
+
+
+##VTA idiosyncratic cases
+#s > 0 / _ t3-i -  just kostew
+
+#kikosin - VTA 2Sg>1SgO
+k i t2:0 %>:0 k o s:0 t3:s %>:0 i n 
+#nikostimâwa - VTA 1Sg>3'O
+n i t2:0 %>:0 k o s t3:t %>:0 i2:i m â w a 
+#ê-kostitân - VTA 1Sg>2SgO
+ê - %>:0 k o s t3:t %>:0 i2:i t â n
+#ê-nakasit
+ê - %>:0 k o s:0 t3:s %>:0 i t 
+#ê-kostisk - VTA 3Sg>2SgO
+ê - %>:0 k o s t3:t %>:0 i2:i s k 
+#ê-kostikoyâhk - VTA 3Sg>1PlO
+ê - %>:0 k o s t3:t %>:0 i2:i k o y â h k 
+#nikostikawin - VTA X>1SgO
+n i t2:0 %>:0 n a k a t3:t %>:0 i2:i k a w i n
+#nakasin - VTA imp 2Sg>1SgO
+n a k a t3:s %>:0 i n 
+#nakasîhkan - VTA delayed 2Sg>1SgO
+n a k a t3:s %>:0 î2:î h k a n
+
+##monosyllabic VTAs in the imp 2Sg>3Sg "TACONJ-5"
+#these have i as the inflection - ahêw, kostêw, itêw, ay-itêw
+#should be ahi, kosi, isi, ay-isi (by my logic, need to be checked)
+#making this i3 instead of i2 
+#i3 > i / _ # << i3 must act like i or î2, not i2
+#i3 > 0 otherwise << deletion rule can be tested with kostêw above
+#itêw has been marked as TACONJ-1, but it definitely has t>s in corpus
+
+#isi - VTA imp 2Sg>3SgO
+i t3:s %>:0 i3:i 
+#kosi
+k o s:0 t3:s %>:0 i3:i 
+#ahi
+a h %>:0 i3:i
