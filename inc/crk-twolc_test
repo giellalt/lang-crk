@@ -1,10 +1,10 @@
-##locative, dim, poss -im VGi > V: - i from^ *e, i2 (CHANGE OTHER i2)
+##locative, dim, poss -im VGi > V: - i from *e, i2 (CHANGE OTHER i2)
 ##-i2hk, -i2nâhk, -i2s(is), -i2m
 ##also for possessive suffixes -i2nân, -i2naw/-i2nânaw, -i2wâw, -i2yiw(a)
 ##also for VTAs, done below
 
 #aGiRule [ [ a | â ] [ w | y | ý ] %/ i -> â ]
-#{a,â} w i2 > â
+#{a,â} {w,y} i2 > â
 
 #mêskanâs - NI Dim 
 m ê s k a n a:â w:0 %>:0 i2:0 s
@@ -16,7 +16,7 @@ s ô n i y â:â w:0 %>:0 i2:0 s
 m i s k o t:c â k a:â y:0 %>:0 i2:0 s
 
 #eGiRule [ ê [ w | y | ý ] %/ i -> ê ]
-#{ê} w i2 > ê
+#{ê} {w,y} i2 > ê
 
 #nâpêsis - NA dim
 n â p ê:ê w:0 %>:0 i2:0 s i s 
@@ -24,7 +24,7 @@ n â p ê:ê w:0 %>:0 i2:0 s i s
 i s k w ê:ê w:0 %>:0 i2:0 n â h k 
 
 #iGiRule [ [ i | î ] [ w | y | ý ] %/ [ i | î ] -> î ]
-#{i,î} w i2 > î
+#{i,î} {w,y} i2 > î
 
 #maskosîs - NI dim
 m a s k o s i:î y:0 %>:0 i2:0 s 
@@ -34,7 +34,7 @@ p i k i:î w:0 %>:0 i2:0 s
 m a s k o s i:î y:0 %>:0 i2:0 h k 
 
 #oGiRule [ [ o | ô ] [ w | y | ý ] %/ i -> ô ]
-#{o,ô} w i2 > ô 
+#{o,ô} {w,y} i2 > ô 
 
 #sîwâpôs - NI dim
 s î w â p o:ô y:0 %>:0 i2:0 s
