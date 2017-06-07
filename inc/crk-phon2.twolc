@@ -20,69 +20,134 @@ m ê s k a n a:â w:0 %>:0 i2:0 s
 
 #mêskanâhk - NI Loc
 m ê s k a n a:â w:0 %>:0 i2:0 h k 
+
+!!€ mêskanaw>i2hk
+!!€ mêskanâ000hk
+
 #sôniyâs - NA dim
 s ô n i y â:â w:0 %>:0 i2:0 s
+
+!!€ sôniyâw>i2s
+!!€ sôniyâ000s
+
 #miskocâkâs NDI dim
 m i s k o t:c â k a:â y:0 %>:0 i2:0 s
+
+!!€ miskotâkay>i2s
+!!€ miskocâkâ000s
 
 #eGiRule [ ê [ w | y | ý ] %/ i -> ê ]
 #{ê} {w,y} i2 > ê
 
 #nâpêsis - NA dim
 n â p ê:ê w:0 %>:0 i2:0 s i s 
+
+!!€ nâpêw>i2sis
+!!€ nâpê000sis
+
 #iskwênâhk - NA loc
 i s k w ê:ê w:0 %>:0 i2:0 n â h k 
+
+!!€ iskwêw>i2sis
+!!€ iskwê000sis
 
 #iGiRule [ [ i | î ] [ w | y | ý ] %/ [ i | î ] -> î ]
 #{i,î} {w,y} i2 > î
 
 #maskosîs - NI dim
 m a s k o s i:î y:0 %>:0 i2:0 s 
+
+!!€ maskosiy>i2s
+!!€ maskosî000s
+
 #pikîs - NA dim
 p i k i:î w:0 %>:0 i2:0 s
+
+!!€ pikiw>i2s
+!!€ pikî000s
+
 #maskosîhk - NI dim
 m a s k o s i:î y:0 %>:0 i2:0 h k 
+
+!!€ maskosiy>i2hk
+!!€ maskosî000hk
 
 #oGiRule [ [ o | ô ] [ w | y | ý ] %/ i -> ô ]
 #{o,ô} {w,y} i2 > ô 
 
 #sîwâpôs - NI dim
 s î w â p o:ô y:0 %>:0 i2:0 s
+
+!!€ sîwâpoy>i2s
+!!€ sîwâpô000s
+
 #tohtôsâpôhk
 t o h t ô s â p o:ô y:0 %>:0 i2:0 h k 
+
+!!€ tohtôsâpoy>i2hk
+!!€ tohtôsapô000hk
 
 #iiRule i-i2 > i
 
 #wâwis
 w â w i:i %>:0 i2:0 s 
+
+!!€ wâwi>i2s
+!!€ wâwi00s
+
 #ôsihk
 ô s i:i %>:0 i2:0 h k 
+
+!!€ ôsi>i2hk
+!!€ ôsi00hk
 
 #Cwi > Co (i and i2)
 
 #acimos
 a t:c i m w:o %>:0 i2:0 s 
+
+!!€ atimw>i2s
+!!€ acimo00s
+
 #mistikohk
 m i s t i k w:o %>:0 i2:0 h k
 
-#Cwa-i > Cwo (i and i2)
+!!€ mistikw>i2hk
+!!€ mistiko00hk
 
-#maskosis - NA dim
-m a s k w:o a:0 %>:0 i2:0 s i s 
+!#Cwa-i > Cwo (i and i2)
+
+!#maskosis - NA dim
+!m a s k w:o a:0 %>:0 i2:0 s i s
+
 
 #no change after plain consonants, i2:i
 
 #sâkahikanis
 s â k a h i k a n %>:0 i2:i s
+
+!!€ sâkahikan>i2s
+!!€ sâkahikan0is
+
 #maskasinihk
 m a s k i s i n %>:0 i2:i h k 
+
+!!€ maskisin>i2hk
+!!€ maskisin0ihk
 
 ## Cw# > C
 
 #askihk
 a s k i h k w:0
+
+!!€ askihkw>
+!!€ askihk00
+
 #atim
 a t i m w:0
+
+!!€ atimw>
+!!€ atim00
 
 ##diminutive sound symbolism palatalisation (requires DIM trigger?)
 #{t,t2} > c / _...DIM
@@ -90,6 +155,8 @@ a t i m w:0
 #nicascocinis
 n i t2:c %>:0 a s t:c o t:c i n %>:0 i2:i s
 
+!!€ nit2>astotin>i2s
+!!€ nic0ascocin0is
 
 ##connecting t - independent verbs, possessed nouns
 ##t2 > t / _V
