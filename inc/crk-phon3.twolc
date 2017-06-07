@@ -56,8 +56,8 @@ Rules
 
 "VGiRule1"
 Vx:Vy <=> _ Gx: Bx: i2: ;
-   where Vx in ( a â ê i î o ô )
-         Vy in ( â â ê î î ô ô )
+   where Vx in ( a i o )
+         Vy in ( â î ô )
    matched ;
 
 "VGiRule2"
