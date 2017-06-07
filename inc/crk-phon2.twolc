@@ -163,10 +163,21 @@ n i t2:c %>:0 a s t:c o t:c i n %>:0 i2:i s
 
 #nitapin - VAI 1Sg
 n i t2:t %>:0 a p i %>:0 n 
+
+!!€ nit2>api>n
+!!€ nit0api0n
+
 #kitapinaw - VAI 12Pl
 k i t2:t %>:0 a p i %>:0 n a w 
+
+!!€ kit2>api>n 
+!!€ kit0api0n
+
 #otastotin - NI Px3Sg 
 o t2:t %>:0 a s t o t i n
+
+!!€ ot2>astotin
+!!€ ot0astotin
 
 
 ##o>w for certain possessed nouns (but these are dependent, why not handled with kinship?)
@@ -175,34 +186,66 @@ o t2:t %>:0 a s t o t i n
 
 #wiyâw
 o:w %>:0 i y â w3:w
+
+!!€ o>iyâw3
+!!€ w0iyâw
+
 #wîpit
 o:w %>:0 î p i t 
+
+!!€ o>îpit
+!!€ w0îpit
+
 #wahkwan
-o:w %>:0 a h k w a n 
+o:w %>:0 a h k w a n
+
+!!€ o>ahkwan
+!!€ w0ahkwan 
 
 ##connecting t deleted before consonants
 ##t2 > 0 / _C
 
 #nimaskisin - NI Px1Sg
 n i t2:0 %>:0 m a s k i s i n
+
+!!€ nit2>maskisin
+!!€ nit0maskisin
+
 #kipimipahtân - VAI 2Sg
 k i t2:0 %>:0 p i m i p a h t â %>:0 n
+
+!!€ kit2>pimipahtâ>n 
+!!€ kit0pimipahtâ0n
 
 
 ##â > ê  _-n - independent 1/2 VAI-v, VTI-v
 
 #ninêhiyawân - VAI 1Sg
-n i t2:0 %>:0 n ê h i y a w ê:â %>:0 n 
+n i t2:0 %>:0 n ê h i y a w ê:â %>:0 n
+
+!!€ nit2>nêhiyawê>n 
+!!€ ni00nêhiyawâ0n
+ 
 #kikâsîhkwân
 k i t2:0 %>:0 k â s î h k w ê:â %>:0 n
+
+!!€ kit2>kâsîhkwê>n 
+!!€ ki00kâsîhkwâ0n
 
 
 ##a > ê / _-n - independent 1/2 VTI-t
 
 #nitipiskên
 n i t2:0 %>:0 t i p i s k a:ê %>:0 n
+
+!!€ nit2>tipiska>n 
+!!€ ni20tipiskê0n
+
 #kikiskêyihtên
 k i t2:0 %>:0 k i s k ê y i h t a:ê %>:0 n
+
+!!€ kit2>kiskêyihta>n 
+!!€ ki00kiskêyihtê0n
 
 
 ##n-final VIIs that take -hk NEW SPECIAL CHARACTER (adapt for VAI-n?? e.g. n2 > 0 / _-hk)
@@ -210,8 +253,15 @@ k i t2:0 %>:0 k i s k ê y i h t a:ê %>:0 n
 
 #ê-nîpihk
 ê - %>:0 n î p i n2:h %>:0 k
+
+!!€ ê->nîpin2>k 
+!!€ ê-0nîpih0k
+
 #ê-mispok
 ê - %>:0 m i s p o n:0 %>:0 k
+
+!!€ ê->mispon>k 
+!!€ ê-0mispo00k
 
 ##VTAs
 ##VTA-1
@@ -221,8 +271,15 @@ k i t2:0 %>:0 k i s k ê y i h t a:ê %>:0 n
 
 #ê-mowiht - VTA X>3SgO
 ê - %>:0 m o w3:w %>:0 i2:i h t 
+
+!!€ ê->mow3>i2ht
+!!€ ê-0mow0iht
+
 #ê-ayawikoyâhk
-ê - %>:0 a y a w3:w %>:0 i2:i k o y â h k  
+ê - %>:0 a y a w3:w %>:0 i2:i k o y â h k 
+
+!!€ ê->ayaw3>i2koyâhk
+!!€ ê-0ayaw-ikoyâhk 
 
 ##VTA-3(Cw) act like Cw nouns for all i2 and i suffixes (summarised below)
 #mark as normal w, w>o applies for i and i2
@@ -230,22 +287,57 @@ k i t2:0 %>:0 k i s k ê y i h t a:ê %>:0 n
 
 #kikîskison - VTA 2Sg>1SgO
 k i t2:0 %>:0 k î s k i s w:o %>:0 i:0 n 
+
+!!€ kit2>kîskisw>in
+!!€ ki00kîskiso00n
+
 #nikîskisomâwa - VTA 1Sg>3'O
 n i t2:0 %>:0 k î s k i s w:o %>:0 i2:0 m â w a 
+
+!!€ nit2>kîskisw>i2mâwa
+!!€ ni00kîskiso00mâwa
+
 #ê-kîskisotân - VTA 1Sg>2SgO
 ê - %>:0 k î s k i s w:o %>:0 i2:0 t â n
+
+!!€ ê->kîskisw>i2tân
+!!€ ê-0kîskiso00tân
+
 #ê-kîskisot
 ê - %>:0 k î s k i s w:o %>:0 i:0 t 
+
+!!€ ê->kîskisw>it 
+!!€ ê-0kîskiso00t
+
 #ê-kîskisosk - VTA 3Sg>2SgO
 ê - %>:0 k î s k i s w:o %>:0 i2:0 s k 
+
+!!€ ê->kîskisw>i2sk 
+!!€ ê-0kîskiso00sk
+
 #ê-kîskisokoyâhk - VTA 3Sg>1PlO
-ê - %>:0 k î s k i s w:o %>:0 i2:0 k o y â h k 
+ê - %>:0 k î s k i s w:o %>:0 i2:0 k o y â h k
+
+!!€ ê->kîskisw>i2koyâhk 
+!!€ ê-0kîskiso00koyâhk
+ 
 #nikîskisokawin - VTA X>1SgO
 n i t2:0 %>:0 k î s k i s w:o %>:0 i2:0 k a w i n 
+
+!!€ nit2>kîskisw>i2kawin
+!!€ ni00kîskiso00kawin
+
 #kîskison - VTA imp 2Sg>1SgO
 k î s k i s w:o %>:0 i:0 n 
+
+!!€ kîskisw>in 
+!!€ kîskiso00n
+
 #kîskisôhkan - VTA delayed 2Sg>1SgO
 k î s k i s w:ô %>:0 î2:0 h k a n 
+
+!!€ kîskisw>î2hkan
+!!€ kîskisô00hkan
 
 
 ##VTA-2(aw)
@@ -256,22 +348,57 @@ k î s k i s w:ô %>:0 î2:0 h k a n
 
 #kinitonawin - VTA 2Sg>1SgO
 k i t2:0 %>:0 n i t o n a w %>:0 i n 
+
+!!€ kit2>nitonaw>in 
+!!€ ki00nitonaw0in
+
 #ninitonâmâwa - VTA 1Sg>3'O
 n i t2:0 %>:0 n i t o n a:â w:0 %>:0 i2:0 m â w a 
+
+!!€ nit2>nitonaw>i2mâwa
+!!€ ni00nitonâ000mâwa
+
 #ê-nitonawitân - VTA 1Sg>2SgO
 ê - %>:0 n i t o n a:â w:0 %>:0 i2:0 t â n
+
+!!€ ê->nitonaw>i2tân
+!!€ ê-0nitonâ000tân
+
 #ê-kîskisot
 ê - %>:0 n i t o n a w %>:0 i t 
+
+!!€ ê->nitonaw>it 
+!!€ ê-0nitonaw0it
+
 #ê-nitonâsk - VTA 3Sg>2SgO
-ê - %>:0 n i t o n a:â w:0 %>:0 i2:0 s k 
+ê - %>:0 n i t o n a:â w:0 %>:0 i2:0 s k
+
+!!€ ê->nitonaw>i2sk 
+!!€ ê-0nitonâ000sk
+ 
 #ê-nitonâkoyâhk - VTA 3Sg>1PlO
 ê - %>:0 n i t o n a:â w:0 %>:0 i2:0 k o y â h k 
+
+!!€ ê->nitonaw>i2koyâhk 
+!!€ ê-0nitonâ000koyâhk
+
 #ninitonâkawin - VTA X>1SgO
 n i t2:0 %>:0 n i t o n a:â w:0 %>:0 i2:0 k a w i n
+
+!!€ nit2>nitonaw>i2kawin
+!!€ ni00nitonâ000kawin
+
 #nitonawin - VTA imp 2Sg>1SgO
 n i t o n a w %>:0 i n 
+
+!!€ nitonaw>in 
+!!€ nitonaw0in
+
 #nitonawîhkan - VTA delayed 2Sg>1SgO
 n i t o n a w %>:0 î2:î h k a n 
+
+!!€ nitonaw>îhkan
+!!€ nitonaw0îhkan
 
 
 ##VTA-4 (t3) 
@@ -279,22 +406,57 @@ n i t o n a w %>:0 î2:î h k a n
 
 #kinakasin - VTA 2Sg>1SgO
 k i t2:0 %>:0 n a k a t3:s %>:0 i n 
+
+!!€ kit2>nakat3>in 
+!!€ ki00nakas0in
+
 #ninakatimâwa - VTA 1Sg>3'O
 n i t2:0 %>:0 n a k a t3:t %>:0 i2:i m â w a 
+
+!!€ nit2>nakat3>i2mâwa 
+!!€ ni00nakat0imâwa
+
 #ê-nakatitân - VTA 1Sg>2SgO
 ê - %>:0 n a k a t3:t %>:0 i2:i t â n
+
+!!€ ê->nakat3>i2tân 
+!!€ ê-0nakat0itân
+
 #ê-nakasit
 ê - %>:0 n a k a t3:s %>:0 i t 
+
+!!€ ê->nakat3>it
+!!€ ê-0nakas0it
+
 #ê-nakatisk - VTA 3Sg>2SgO
 ê - %>:0 n a k a t3:t %>:0 i2:i s k 
+
+!!€ ê->nakat3>i2sk 
+!!€ ê-0nakat0isk
+
 #ê-nakatikoyâhk - VTA 3Sg>1PlO
 ê - %>:0 n a k a t3:t %>:0 i2:i k o y â h k 
+
+!!€ ê->nakat3>i2koyâhk 
+!!€ ê-0nakat0ikoyâhk
+
 #ninakatikawin - VTA X>1SgO
 n i t2:0 %>:0 n a k a t3:t %>:0 i2:i k a w i n
+
+!!€ nit2>nakat3>i2kawin
+!!€ ni00nakat0ikawin
+
 #nakasin - VTA imp 2Sg>1SgO
 n a k a t3:s %>:0 i n 
+
+!!€ nakat3>in 
+!!€ nakas0in
+
 #nakasîhkan - VTA delayed 2Sg>1SgO
 n a k a t3:s %>:0 î2:î h k a n
+
+!!€ nakat3>î2hkan 
+!!€ nakas0îhkan
 
 
 ##VTA idiosyncratic cases
@@ -302,22 +464,57 @@ n a k a t3:s %>:0 î2:î h k a n
 
 #kikosin - VTA 2Sg>1SgO
 k i t2:0 %>:0 k o s:0 t3:s %>:0 i n 
+
+!!€ kit2>kost3>in 
+!!€ ki00ko0s0in
+
 #nikostimâwa - VTA 1Sg>3'O
 n i t2:0 %>:0 k o s t3:t %>:0 i2:i m â w a 
+
+!!€ nit2>kost3>i2mâwa 
+!!€ ni00kost0imâwa
+
 #ê-kostitân - VTA 1Sg>2SgO
 ê - %>:0 k o s t3:t %>:0 i2:i t â n
-#ê-nakasit
+
+!!€ ê->kost3>i2tân
+!!€ ê-0kost0itân
+
+#ê-kosit
 ê - %>:0 k o s:0 t3:s %>:0 i t 
+
+!!€ ê->kost3>it 
+!!€ ê-0ko0s0it
+
 #ê-kostisk - VTA 3Sg>2SgO
 ê - %>:0 k o s t3:t %>:0 i2:i s k 
+
+!!€ ê->kost3>i2sk
+!!€ ê-0kost0isk
+
 #ê-kostikoyâhk - VTA 3Sg>1PlO
-ê - %>:0 k o s t3:t %>:0 i2:i k o y â h k 
+ê - %>:0 k o s t3:t %>:0 i2:i k o y â h k
+
+!!€ ê->kost3>i2koyâhk
+!!€ ê-0kost0ikoyâhk
+ 
 #nikostikawin - VTA X>1SgO
-n i t2:0 %>:0 n a k a t3:t %>:0 i2:i k a w i n
-#nakasin - VTA imp 2Sg>1SgO
-n a k a t3:s %>:0 i n 
-#nakasîhkan - VTA delayed 2Sg>1SgO
-n a k a t3:s %>:0 î2:î h k a n
+n i t2:0 %>:0 k o s t3:t %>:0 i2:i k a w i n
+
+!!€ nit2>kost3>i2kawin
+!!€ ni00kost0ikawin
+
+#kosin - VTA imp 2Sg>1SgO
+k o s:0 t3:s %>:0 i n 
+
+!!€ kost3>in 
+!!€ ko0s0in
+
+#kosîhkan - VTA delayed 2Sg>1SgO
+k o s:0 t3:s %>:0 î2:î h k a n
+
+!!€ kost3>î2hkan 
+!!€ ko0s0îhkan
 
 ##monosyllabic VTAs in the imp 2Sg>3Sg "TACONJ-5"
 #these have i as the inflection - ahêw, kostêw, itêw, ay-itêw
@@ -329,7 +526,18 @@ n a k a t3:s %>:0 î2:î h k a n
 
 #isi - VTA imp 2Sg>3SgO
 i t3:s %>:0 i3:i 
+
+!!€ it3>i3
+!!€ is0i
+
 #kosi
 k o s:0 t3:s %>:0 i3:i 
+
+!!€ kost3>i3 
+!!€ ko0s0i
+
 #ahi
 a h %>:0 i3:i
+
+!!€ ah>i3 
+!!€ ah0i
