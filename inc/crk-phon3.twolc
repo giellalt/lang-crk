@@ -6,11 +6,12 @@ Alphabet
  Â Ê Î Ô
  %-
 
+ i:0   i:î
  i2:i  i2:0
  ii2:î ii2:0
  t:t   t:c
  t2:t  t2:0  t2:c
- t3:t ! t3:s t3:0
+ t3:t  t3:s
  w:w  ! w:o
  w2:w
  n2:n
@@ -18,6 +19,11 @@ Alphabet
  t:c t2:c
 
  ý:y
+
+ y2:0      !!= * @CODE@ epenthetic joiner in reduplication of vowe-initial stems
+ y3:0      !!= * @CODE@ epenthetic joiner in reduplication of vowe-initial stems
+ %^DUPL1:0  !!= * @CODE@ Reduplication consonant place holder 
+ %^DUPL2:0  !!= * @CODE@ Reduplication consonant place holder 
  
  a:â â:â
  w:0 y:0 ý:0
@@ -52,7 +58,7 @@ Rules
 ! #{a,â} {w,y} i2 > â
 
 "VGiRule1"
-Vx:Vy <=> _ Gx: Bx: i2: ;
+Vx:Vy <=> \Bx: _ Gx: Bx: i2: ;
    where Vx in ( a i o )
          Vy in ( â î ô )
    matched ;
@@ -173,7 +179,7 @@ w:Ox <=> Consonant: _ Bx: Vx: ;
 
 "Cwi2CoôRule2"
 Ix:0 <=> Consonant: w: Bx: _ ;
-
+     
 ! "Cwi2CoRule1b"
 ! i2:0 <=> Consonant: w: Bx: _ ;
 
@@ -422,182 +428,190 @@ n:0 <=> _ %>:0 k: ;
 !!€ kîskisw>ii2hkan
 !!€ kîskisô00hkan
 
-! ! ##VTA-2(aw)
-! ! ##requires new coding, i2 instead of WI trigger
-! ! ##i does not trigger VGi > V:
-! ! #i2 for all 1>2, -im... -iko..., -ikawi..., -i2sk, -i2ht, -i2hcik
-! ! #î2 does not collapse
-! ! 
-! ! #kinitonawin - VTA 2Sg>1SgO
-! k i t2:0 %>:0 n i t o n a w %>:0 i n 
+! ##VTA-2(aw)
+! ##requires new coding, i2 instead of WI trigger
+! ##i does not trigger VGi > V:
+! #i2 for all 1>2, -im... -iko..., -ikawi..., -i2sk, -i2ht, -i2hcik
+! #î2 does not collapse
 ! 
-! !!€ kit2<nitonaw>in 
-! !!€ ki00nitonaw0in
+! #kinitonawin - VTA 2Sg>1SgO
+! k i t2:0 %<:0 n i t o n a w %>:0 i n 
+! 
+!!€ kit2<nitonaw>in 
+!!€ ki00nitonaw0in
 ! 
 ! #ninitonâmâwa - VTA 1Sg>3'O
-! n i t2:0 %>:0 n i t o n a:â w:0 %>:0 i2:0 m â w a 
+! n i t2:0 %<:0 n i t o n a:â w:0 %>:0 i2:0 m â w a 
 ! 
-! !!€ nit2<nitonaw>i2mâwa
-! !!€ ni00nitonâ000mâwa
+!!€ nit2<nitonaw>i2mâwa
+!!€ ni00nitonâ000mâwa
 ! 
 ! #ê-nitonawitân - VTA 1Sg>2SgO
-! ê - %>:0 n i t o n a:â w:0 %>:0 i2:0 t â n
+! ê - %<:0 n i t o n a:â w:0 %>:0 i2:0 t â n
 ! 
-! !!€ ê-<nitonaw>i2tân
-! !!€ ê-0nitonâ000tân
+!!€ ê-<nitonaw>i2tân
+!!€ ê-0nitonâ000tân
 ! 
 ! #ê-kîskisot
-! ê - %>:0 n i t o n a w %>:0 i t 
+! ê - %<:0 n i t o n a w %>:0 i t 
 ! 
-! !!€ ê-<nitonaw>it 
-! !!€ ê-0nitonaw0it
+!!€ ê-<nitonaw>it 
+!!€ ê-0nitonaw0it
 ! 
 ! #ê-nitonâsk - VTA 3Sg>2SgO
-! ê - %>:0 n i t o n a:â w:0 %>:0 i2:0 s k
+! ê - %<:0 n i t o n a:â w:0 %>:0 i2:0 s k
 ! 
-! !!€ ê-<nitonaw>i2sk 
-! !!€ ê-0nitonâ000sk
+!!€ ê-<nitonaw>i2sk 
+!!€ ê-0nitonâ000sk
 !  
 ! #ê-nitonâkoyâhk - VTA 3Sg>1PlO
-! ê - %>:0 n i t o n a:â w:0 %>:0 i2:0 k o y â h k 
+! ê - %<:0 n i t o n a:â w:0 %>:0 i2:0 k o y â h k 
 ! 
-! !!€ ê-<nitonaw>i2koyâhk 
-! !!€ ê-0nitonâ000koyâhk
+!!€ ê-<nitonaw>i2koyâhk 
+!!€ ê-0nitonâ000koyâhk
 ! 
 ! #ninitonâkawin - VTA X>1SgO
-! n i t2:0 %>:0 n i t o n a:â w:0 %>:0 i2:0 k a w i n
+! n i t2:0 %<:0 n i t o n a:â w:0 %>:0 i2:0 k a w i n
 ! 
-! !!€ nit2<nitonaw>i2kawin
-! !!€ ni00nitonâ000kawin
+!!€ nit2<nitonaw>i2kawin
+!!€ ni00nitonâ000kawin
 ! 
 ! #nitonawin - VTA imp 2Sg>1SgO
 ! n i t o n a w %>:0 i n 
 ! 
-! !!€ nitonaw>in 
-! !!€ nitonaw0in
+!!€ nitonaw>in 
+!!€ nitonaw0in
 ! 
 ! #nitonawîhkan - VTA delayed 2Sg>1SgO
 ! n i t o n a w %>:0 î2:î h k a n 
 ! 
-! !!€ nitonaw>îhkan
-! !!€ nitonaw0îhkan
-! ! 
-! ! 
+!!€ nitonaw>îhkan
+!!€ nitonaw0îhkan
+! 
+! 
 ! ##VTA-4 (t3) 
 ! ## t3 > s / _{-i,-î2}; t3 > t / _-i2  
-! 
-! 
+
+"t2sVTA4Rule"
+t3:s <=> _ Bx: [ i: | ii2: | .#. ] ;
+
+! Corresponding otherwise rule 
+! t3:t <=> \[ i | ii2 ] ;
+
 ! #kinakasin - VTA 2Sg>1SgO
-! k i t2:0 %>:0 n a k a t3:s %>:0 i n 
+! k i t2:0 %<:0 n a k a t3:s %>:0 i n 
 ! 
-! !!€ kit2<nakat3>in 
-! !!€ ki00nakas0in
+!!€ kit2<nakat3>in 
+!!€ ki00nakas0in
 ! 
 ! #ninakatimâwa - VTA 1Sg>3'O
-! n i t2:0 %>:0 n a k a t3:t %>:0 i2:i m â w a 
+! n i t2:0 %<:0 n a k a t3:t %>:0 i2:i m â w a 
 ! 
-! !!€ nit2<nakat3>i2mâwa 
-! !!€ ni00nakat0imâwa
+!!€ nit2<nakat3>i2mâwa 
+!!€ ni00nakat0imâwa
 ! 
 ! #ê-nakatitân - VTA 1Sg>2SgO
-! ê - %>:0 n a k a t3:t %>:0 i2:i t â n
+! ê - %<:0 n a k a t3:t %>:0 i2:i t â n
 ! 
-! !!€ ê-<nakat3>i2tân 
-! !!€ ê-0nakat0itân
+!!€ ê-<nakat3>i2tân 
+!!€ ê-0nakat0itân
 ! 
 ! #ê-nakasit
-! ê - %>:0 n a k a t3:s %>:0 i t 
+! ê - %<:0 n a k a t3:s %>:0 i t 
 ! 
-! !!€ ê-<nakat3>it
-! !!€ ê-0nakas0it
+!!€ ê-<nakat3>it
+!!€ ê-0nakas0it
 ! 
 ! #ê-nakatisk - VTA 3Sg>2SgO
-! ê - %>:0 n a k a t3:t %>:0 i2:i s k 
+! ê - %<:0 n a k a t3:t %>:0 i2:i s k 
 ! 
-! !!€ ê-<nakat3>i2sk 
-! !!€ ê-0nakat0isk
+!!€ ê-<nakat3>i2sk 
+!!€ ê-0nakat0isk
 ! 
 ! #ê-nakatikoyâhk - VTA 3Sg>1PlO
 ! ê - %>:0 n a k a t3:t %>:0 i2:i k o y â h k 
 ! 
-! !!€ ê-<nakat3>i2koyâhk 
-! !!€ ê-0nakat0ikoyâhk
+!!€ ê-<nakat3>i2koyâhk 
+!!€ ê-0nakat0ikoyâhk
 ! 
 ! #ninakatikawin - VTA X>1SgO
-! n i t2:0 %>:0 n a k a t3:t %>:0 i2:i k a w i n
+! n i t2:0 %<:0 n a k a t3:t %>:0 i2:i k a w i n
 ! 
-! !!€ nit2<nakat3>i2kawin
-! !!€ ni00nakat0ikawin
+!!€ nit2<nakat3>i2kawin
+!!€ ni00nakat0ikawin
 ! 
 ! #nakasin - VTA imp 2Sg>1SgO
 ! n a k a t3:s %>:0 i n 
 ! 
-! !!€ nakat3>in 
-! !!€ nakas0in
+!!€ nakat3>in 
+!!€ nakas0in
 ! 
 ! #nakasîhkan - VTA delayed 2Sg>1SgO
-! n a k a t3:s %>:0 î2:î h k a n
+! n a k a t3:s %>:0 ii2:î h k a n
 ! 
-! !!€ nakat3>î2hkan 
-! !!€ nakas0îhkan
+!!€ nakat3>ii2hkan 
+!!€ nakas0îhkan
 ! 
 ! 
 ! ##VTA idiosyncratic cases
 ! #s > 0 / _ t3-i -  just kostew
-! 
+
+"t3kostewRule"
+s:0 <=> _ t3:s ;
+
 ! #kikosin - VTA 2Sg>1SgO
-! k i t2:0 %>:0 k o s:0 t3:s %>:0 i n 
+! k i t2:0 %<:0 k o s:0 t3:s %>:0 i n 
 ! 
-! !!€ kit2<kost3>in 
-! !!€ ki00ko0s0in
+!!€ kit2<kost3>in 
+!!€ ki00ko0s0in
 ! 
 ! #nikostimâwa - VTA 1Sg>3'O
-! n i t2:0 %>:0 k o s t3:t %>:0 i2:i m â w a 
+! n i t2:0 %<:0 k o s t3:t %>:0 i2:i m â w a 
 ! 
-! !!€ nit2<kost3>i2mâwa 
-! !!€ ni00kost0imâwa
+!!€ nit2<kost3>i2mâwa 
+!!€ ni00kost0imâwa
 ! 
 ! #ê-kostitân - VTA 1Sg>2SgO
-! ê - %>:0 k o s t3:t %>:0 i2:i t â n
+! ê - %<:0 k o s t3:t %>:0 i2:i t â n
 ! 
-! !!€ ê-<kost3>i2tân
-! !!€ ê-0kost0itân
+!!€ ê-<kost3>i2tân
+!!€ ê-0kost0itân
 ! 
 ! #ê-kosit
 ! ê - %>:0 k o s:0 t3:s %>:0 i t 
 ! 
-! !!€ ê-<kost3>it 
-! !!€ ê-0ko0s0it
+!!€ ê-<kost3>it 
+!!€ ê-0ko0s0it
 ! 
 ! #ê-kostisk - VTA 3Sg>2SgO
-! ê - %>:0 k o s t3:t %>:0 i2:i s k 
+! ê - %<:0 k o s t3:t %>:0 i2:i s k 
 ! 
-! !!€ ê-<kost3>i2sk
-! !!€ ê-0kost0isk
+!!€ ê-<kost3>i2sk
+!!€ ê-0kost0isk
 ! 
 ! #ê-kostikoyâhk - VTA 3Sg>1PlO
-! ê - %>:0 k o s t3:t %>:0 i2:i k o y â h k
+! ê - %<:0 k o s t3:t %>:0 i2:i k o y â h k
 ! 
-! !!€ ê-<kost3>i2koyâhk
-! !!€ ê-0kost0ikoyâhk
+!!€ ê-<kost3>i2koyâhk
+!!€ ê-0kost0ikoyâhk
 !  
 ! #nikostikawin - VTA X>1SgO
-! n i t2:0 %>:0 k o s t3:t %>:0 i2:i k a w i n
+! n i t2:0 %<:0 k o s t3:t %>:0 i2:i k a w i n
 ! 
-! !!€ nit2<kost3>i2kawin
-! !!€ ni00kost0ikawin
+!!€ nit2<kost3>i2kawin
+!!€ ni00kost0ikawin
 ! 
 ! #kosin - VTA imp 2Sg>1SgO
 ! k o s:0 t3:s %>:0 i n 
 ! 
-! !!€ kost3>in 
-! !!€ ko0s0in
+!!€ kost3>in 
+!!€ ko0s0in
 ! 
 ! #kosîhkan - VTA delayed 2Sg>1SgO
-! k o s:0 t3:s %>:0 î2:î h k a n
+! k o s:0 t3:s %>:0 ii2:î h k a n
 ! 
-! !!€ kost3>î2hkan 
-! !!€ ko0s0îhkan
+!!€ kost3>ii2hkan 
+!!€ ko0s0îhkan
 ! 
 ! ##monosyllabic VTAs in the imp 2Sg>3Sg "TACONJ-5"
 ! #these have i as the inflection - ahêw, kostêw, itêw, ay-itêw
@@ -609,7 +623,9 @@ n:0 <=> _ %>:0 k: ;
 ! 
 ! #isi - VTA imp 2Sg>3SgO
 ! i t3:s %>:0 i3:i 
-! 
+
+! Implemented with their own specific continuation lexica
+
 ! !!€ it3>i3
 ! !!€ is0i
 ! 
@@ -625,3 +641,43 @@ n:0 <=> _ %>:0 k: ;
 ! !!€ ah>i3 
 ! !!€ ah0i
 ! 
+
+! Matching weak/strong reduplication consonant placeholder %^DUPL1 with stem-initial consonant
+"ReduplCRule1"
+!! __@RULENAME@__
+%^DUPL1:Cx <=> _ [ a y2: | â h ] ( %-: ) %<:0 Cx: ;
+   where Cx in ( c k m n p s t w y ) ;
+
+! Setting double weak+strong reduplication consonant placeholder %^DUPL2 with stem-initial consonant"
+"ReduplCRule2"
+!! __@RULENAME@__
+%^DUPL2:Cx <=> _ a y3:0 ( %-: ) %^DUPL1:Cx ;
+   where Cx in ( c k m n p s t w y ) ;
+
+!Inserting epenthetic y in weak reduplication of vowel-initial stem
+"ReduplY2Rule"
+!! __@RULENAME@__
+y2:y <=> %^DUPL1:0 a _ ;
+
+!Inserting epenthetic y in strong+weak reduplication of vowel-initial stem
+"ReduplY3Rule"
+!! __@RULENAME@__
+y3:y <=> _ ( %-: ) %^DUPL1:0 ;
+
+!!€ ^DUPL1ay2-<nipâw
+!!€ na0-0nipâw
+
+!!€ ^DUPL1âh-<nipâw
+!!€ nâh-0nipâw
+
+!!€ ^DUPL2ay3-^DUPL1âh-<nipâw
+!!€ na0-nâh-0nipâw
+
+!!€ ^DUPL2ay3-^DUPL1âh-<ayâw
+!!€ 0ay-0âh-0ayâw
+
+!!€ ^DUPL1âh-<ayâw
+!!€ 0âh-0ayâw
+
+!!€ ^DUPL1ay2-<ayâw
+!!€ 0ay-0ayâw
