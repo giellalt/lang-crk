@@ -626,7 +626,8 @@ s:0 <=> _ t3:s ;
 ! #isi - VTA imp 2Sg>3SgO
 ! i t3:s %>:0 i3:i 
 
-! Implemented with their own specific continuation lexica
+! The following morphophonological changes implemented with their own
+! specific continuation lexica
 
 ! !!€ it3>i3
 ! !!€ is0i
@@ -642,7 +643,6 @@ s:0 <=> _ t3:s ;
 ! 
 ! !!€ ah>i3 
 ! !!€ ah0i
-! 
 
 ! Matching weak/strong reduplication consonant placeholder %^DUPL1 with stem-initial consonant
 "ReduplCRule1"
@@ -728,7 +728,7 @@ Vx:ICx <=> .#. (Consonant | %^DUPL1: | %^DUPL2: ) (0:w) _ :* %^IC:0 ;
 
 ! o ~ wê
 
-"o2weeRule"
+"o2weeICRule"
 0:w <=> .#. (Consonant) _ o:ê :* %^IC:0 ;
 
 !!€ 0oyôyot^IC
@@ -742,13 +742,13 @@ Vx:ICx <=> .#. (Consonant | %^DUPL1: | %^DUPL2: ) (0:w) _ :* %^IC:0 ;
 ! â ~ iyâ
 ! ô ~ iyô
 
-"iyICRule1"
+"iyvICRule1"
 0:i <=> .#. (Consonant | %^DUPL1: | %^DUPL2: ) _ 0:y [ â | ê | î | ô ] :* %^IC:0 ;
 
-"iyICRule2"
+"iyvICRule2"
 0:y <=> .#. (Consonant | %^DUPL1: | %^DUPL2:) 0:i _ [ â | ê | î | ô ] :* %^IC:0 ;
 
-"iyICRule3"
+"iyvICRule3"
 Vx /<= .#. (Consonant | %^DUPL1: | %^DUPL2: ) _ :* %^IC:0 ;
    where Vx in ( â ê î ô ) ;
 
