@@ -32,6 +32,7 @@ Alphabet
  %<:0
  
  %^DIM:0
+ %^IC:0
  ;
  
 Sets
@@ -45,7 +46,7 @@ Sets
   Consonant = c h k m n p s t w y ý ;
   
   Gx = w y ý ;
-  Tx = t t2 ;
+  ! Tx = t t2 ;
   
 Rules
 
@@ -58,7 +59,7 @@ Rules
 ! #{a,â} {w,y} i2 > â
 
 "VGiRule1"
-Vx:Vy <=> \Bx: _ Gx: Bx: i2: ;
+Vx:Vy <=> \.#. \.#. \Bx: 0:* _ Gx: Bx: i2: ; ! Two word-initial characters required before morpheme-boundary to avoid conflict with IC rule
    where Vx in ( a i o )
          Vy in ( â î ô )
    matched ;
@@ -311,9 +312,10 @@ t2:c <=> _ Bx: Vowel: :* %^DIM:0 ;
 ! 
 ! 
 ! ##a > ê / _-n - independent 1/2 VTI-t
+! -an > -ên
 
 "a2eeVTIRule"
-a:ê <=> _ %>: n2: ;
+a:ê <=> \.#. \.#. \.#. _ %>: n2: ; ! Initial non-word-boundaries added to resolve conflict with IC rule, but might be superceded by a change to the affixal morphotax ; a>ê-n --> -ên
 
 ! #nitipiskên
 ! n i t2:0 %<:0 t i p i s k a:ê %>:0 n
@@ -645,19 +647,19 @@ s:0 <=> _ t3:s ;
 ! Matching weak/strong reduplication consonant placeholder %^DUPL1 with stem-initial consonant
 "ReduplCRule1"
 !! __@RULENAME@__
-%^DUPL1:Cx <=> _ [ a y2: | â h ] ( %-: ) %<:0 Cx: ;
+%^DUPL1:Cx <=> _ (0:i 0:y) [ a: y2: | â: h ] ( %-: ) %<:0 Cx: ;
    where Cx in ( c k m n p s t w y ) ;
 
 ! Setting double weak+strong reduplication consonant placeholder %^DUPL2 with stem-initial consonant"
 "ReduplCRule2"
 !! __@RULENAME@__
-%^DUPL2:Cx <=> _ a y3:0 ( %-: ) %^DUPL1:Cx ;
+%^DUPL2:Cx <=> _ (0:i 0:y) a: y3:0 ( %-: ) %^DUPL1:Cx ;
    where Cx in ( c k m n p s t w y ) ;
 
 !Inserting epenthetic y in weak reduplication of vowel-initial stem
 "ReduplY2Rule"
 !! __@RULENAME@__
-y2:y <=> %^DUPL1:0 a _ ;
+y2:y <=> %^DUPL1:0 (0:i 0:y) a: _ ;
 
 !Inserting epenthetic y in strong+weak reduplication of vowel-initial stem
 "ReduplY3Rule"
@@ -685,9 +687,84 @@ y3:y <=> _ ( %-: ) %^DUPL1:0 ;
 !! INITIAL CHANGE
 ! i ~ ê
 ! a ~ ê
+! î ~ â (iyî)
+! o ~ ê ! W-A corpus evidence
+
+! General Template
+! v1:v2 <=> .#. (C) _ :* %^IC:0 ;
+
+"v2vICRule"
+Vx:ICx <=> .#. (Consonant | %^DUPL1: | %^DUPL2: ) (0:w) _ :* %^IC:0 ;
+   where Vx in  ( a i î o )
+         ICx in ( ê ê â ê )
+   matched ;
+
+!!€ nipât^IC
+!!€ nêpât0
+
+!!€ miyo-nipât^IC
+!!€ mêyo-nipât0
+
+!!€ itwêt^IC
+!!€ êtwêt0
+
+!!€ apit^IC
+!!€ êpit0
+
+!!€ wayawit^IC
+!!€ wêyawit0
+
+!!€ îkatêhtêt^IC
+!!€ âkatêhtêt0
+
+!!€ nîmit^IC
+!!€ nâmit0
+
+!!€ 0ohcît^IC
+!!€ wêhcît0
+
+!!€ m0ostohtêt^IC
+!!€ mwêstohtêt0
+
 ! o ~ wê
-! î ~ â, iyî
+
+"o2weeRule"
+0:w <=> .#. (Consonant) _ o:ê :* %^IC:0 ;
+
+!!€ 0oyôyot^IC
+!!€ wêyôyot0
+
+!!€ k0ocît^IC
+!!€ kwêcît0
+
+! î ~ (â) iyî
 ! ê ~ iyê
 ! â ~ iyâ
 ! ô ~ iyô
 
+"iyICRule1"
+0:i <=> .#. (Consonant | %^DUPL1: | %^DUPL2: ) _ 0:y [ â | ê | î | ô ] :* %^IC:0 ;
+
+"iyICRule2"
+0:y <=> .#. (Consonant | %^DUPL1: | %^DUPL2:) 0:i _ [ â | ê | î | ô ] :* %^IC:0 ;
+
+"iyICRule3"
+Vx /<= .#. (Consonant | %^DUPL1: | %^DUPL2: ) _ :* %^IC:0 ;
+   where Vx in ( â ê î ô ) ;
+
+!!€ îkatêhât^IC
+!!€ âkatêhât0
+
+!!€ 00îkatêhât^IC
+!!€ iyîkatêhât0
+
+!!€ 00êskêt^IC
+!!€ iyêskêt0
+
+!!€ 00âcimot^IC
+!!€ iyâcimot0
+
+!!€ 00ôhkomit^IC
+!!€ iyôhkomit0
+
+!!!!! END !!!!!
