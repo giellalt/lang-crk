@@ -1,3 +1,23 @@
+! Code for compiling TWOLC with HFST
+! hfst-twolc -R inc/crk-phon.twolc -o inc/crk-phon.hfst
+! -R handle forces resolution of conflicts
+!
+! Code for pair-testing compiled (H)FST with pair-tests
+! hfst-pair-test -X -i inc/crk-phon.hfst -I inc/crk-phon.twolc
+
+! Rewrite rule templates from TWOLC session December 2017.
+! Probably entirely defunct, but here for reference.
+!
+! Cw$i -> C$o
+! V[wy]$i -> VV
+!
+! [aâ][wy]$i -> â$
+! ê[wy]$i -> ê$
+! [iî][wy]$i -> î$
+! [oô][wy]$i -> ô$
+!
+! V -> 0 || _ $V (after stem) ! Weird?
+
 Alphabet
 
  a b c d e f g h i j k l m n o p q r s t u v w x y z
