@@ -1,0 +1,5500 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@hum.uit.no
+
+! ========================================================================== !
+!!                           !!! Plains Cree verb morphology                  
+! ========================================================================== !
+
+
+
+
+!! The Plains Cree verbs are divided in four groups:
+
+!! # AI: Animate intransitive 
+!! # II: Inanimate intransitive
+!! # TA: Transitive animate
+!! # TI: Transitive inanimate
+
+
+
+!! !!!Prefixes
+
+
+LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
+
+@U.order.indep@ INDEPENDENT ;         !!= * @CODE@
+@U.order.cnj@   CONJUNCT ;            !!= * @CODE@ 
+               IMPERATIVE ;          !!= * @CODE@
+               FUTURE_CONDITIONAL ;  !!= * @CODE@
+
+
+LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
+@U.person.NI@:@U.person.NI@nit2 IND_TENSE ;
+@U.person.KI@:@U.person.KI@kit2 IND_TENSE ;
+@U.person.NULL@                 IND_TENSE ;
+! < 0:n 0:i  "@U.person.NI@" 0:"t2"                       > IND_TENSE ; !
+! < 0:k 0:i  "@U.person.KI@" 0:"t2"                       > IND_TENSE ; !
+! <          "@U.person.NULL@" > IND_TENSE ; !
+
+
+LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
+@U.tense.Prs@                                                            PREVERBS ;
+@U.tense.Prt@@P.joiner.NULL@:@U.tense.Prt@@P.joiner.NULL@kî^EGLOT       PREVERBS ;
+@U.tense.Prt@@P.joiner.hyphen@:@U.tense.Prt@@P.joiner.hyphen@kî-        PREVERBS ;
+@U.tense.FutDef@@P.joiner.NULL@:@U.tense.FutDef@@P.joiner.NULL@ka^EGLOT PREVERBS ;
+@U.tense.FutDef@@P.joiner.hyphen@:@U.tense.FutDef@@P.joiner.hyphen@ka-  PREVERBS ;
+@U.tense.FutInt@@P.joiner.NULL@:@U.tense.FutInt@@P.joiner.NULL@wî^EGLOT PREVERBS ;
+@U.tense.FutInt@@P.joiner.hyphen@:@U.tense.FutInt@@P.joiner.hyphen@wî-  PREVERBS ;
+! <                   "@U.tense.Prs@"                        > PREVERBS ; !
+! < 0:k 0:î 0:^EGLOT "@U.tense.Prt@"    "@P.joiner.NULL@"   > PREVERBS ; ! 
+! < 0:k 0:î 0:-      "@U.tense.Prt@"    "@P.joiner.hyphen@" > PREVERBS ; !
+! < 0:k 0:a 0:^EGLOT "@U.tense.FutDef@" "@P.joiner.NULL@"   > PREVERBS ; !
+! < 0:k 0:a 0:-      "@U.tense.FutDef@" "@P.joiner.hyphen@" > PREVERBS ; !
+! < 0:w 0:î 0:^EGLOT "@U.tense.FutInt@" "@P.joiner.NULL@"   > PREVERBS ; ! N.B. - move to a next lexicon
+! < 0:w 0:î 0:-      "@U.tense.FutInt@" "@P.joiner.hyphen@" > PREVERBS ; !
+
+
+LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
+@U.order.FutCon@ PREVERBS ;
+
+
+LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâki-
+@P.joiner.hyphen@PV/e+:@P.joiner.hyphen@ê- CNJ_TENSE ;
+@P.joiner.NULL@PV/e+:@P.joiner.NULL@ê^EGLOT CNJ_TENSE ;
+@P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka- CNJ_TENSE ;
+@P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka^EGLOT CNJ_TENSE ;
+@P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ- CNJ_TENSE ;
+@P.joiner.NULL@PV/kaa+:@P.joiner.NULL@kâ^EGLOT CNJ_TENSE ;
+@P.joiner.hyphen@PV/kaa_ki+:@P.joiner.hyphen@kâ-ki- CNJ_TENSE ;
+@P.joiner.NULL@PV/kaa_ki+:@P.joiner.NULL@kâki^EGLOT CNJ_TENSE ;
+
+@P.cnj.CC@ CNJ_TENSE ; ! Option to allow for the occasional omission of the grammatical conjunct prefix
+
+
+LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
+@U.tense.Prs@                                                                          PREVERBS ;
+@U.tense.Prt@@U.joiner.hyphen@@C.cnj@:@U.tense.Prt@@U.joiner.hyphen@@C.cnj@kî-        PREVERBS ;
+@U.tense.Prt@@U.joiner.NULL@@C.cnj@:@U.tense.Prt@@U.joiner.NULL@@C.cnj@kî^EGLOT       PREVERBS ;
+@U.tense.FutInt@@U.joiner.hyphen@@C.cnj@:@U.tense.FutInt@@U.joiner.hyphen@@C.cnj@wî-  PREVERBS ;
+@U.tense.FutInt@@U.joiner.NULL@@C.cnj@:@U.tense.FutInt@@U.joiner.NULL@@C.cnj@wî^EGLOT PREVERBS ;
+! <                   "@U.tense.Prs@"                        > PREVERBS ; ! Present
+! < 0:k 0:î 0:-      "@U.tense.Prt@" "@U.joiner.hyphen@" "@C.cnj@"    > PREVERBS ; ! Preterite, 
+! < 0:k 0:î 0:^EGLOT "@U.tense.Prt@" "@U.joiner.NULL@" "@C.cnj@"      > PREVERBS ; ! Preterite,
+! < 0:w 0:î 0:-      "@U.tense.FutInt@" "@U.joiner.hyphen@" "@C.cnj@" > PREVERBS ; ! Future Intentional
+! < 0:w 0:î 0:^EGLOT "@U.tense.FutInt@" "@U.joiner.NULL@" "@C.cnj@"   > PREVERBS ; ! Future Intentional
+
+
+LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
+@U.order.imp@  PREVERBS ;
+
+!! Words marked GG are from Plains Cree Grammar guide and glossary
+
+
+!! !! Preverbs
+!     ==========
+
+LEXICON PREVERBS  !!= @CODE@ just adds the prefix boundary
+ :%> PVSLOT ;
+
+LEXICON PVSLOT
+REDUPL ;
+WICI ;
+PV/acici+:acici VERBSTEMSPRE "head down; upside down" ; ! Position
+PV/ahcahkowi+:ahcahkowi VERBSTEMSPRE "spiritual" ; ! Spirituality
+PV/akawaci+:akâwâci VERBSTEMSPRE "wishfully" ; ! Manner
+PV/ako+:ako VERBSTEMSPRE "sticking on; attached" ; 
+PV/akoci+:akoci VERBSTEMSPRE "hanging" ; ! Position
+PV/apihci+:apihci VERBSTEMSPRE "small" ; ! Size
+PV/apisci+:apisci VERBSTEMSPRE "small, little" ; ! Size
+PV/apisi+:apisi VERBSTEMSPRE "small, tiny" ; ! Size
+PV/apisisi+:apisîsi VERBSTEMSPRE "small" ; ! Size
+PV/ase+:asê VERBSTEMSPRE "backwards, back, motion going backwards" ; 
+PV/aseya+:asêya VERBSTEMSPRE "in a group" ; 
+PV/ati+:ati VERBSTEMSPRE "begin to, beginning; progressively, proceed to, going on, progressing; on the way" ; 
+PV/atimi+:atimi VERBSTEMSPRE "going away from speaker, towards addressee" ; 
+PV/ayamihawi+:ayamihâwi VERBSTEMSPRE "prayer, pertaining to Christian prayer; of the Christian religion, of church" ; 
+PV/ayamihewi+:ayamihêwi VERBSTEMSPRE "of the Christian religion, of church" ; 
+PV/ayaso+:ayâsô VERBSTEMSPRE "a little here and there" ; 
+PV/ayi+:ayi VERBSTEMSPRE "ah, hm" ; 
+PV/ahci+:âhci VERBSTEMSPRE "to a different place" ; 
+PV/ahkami+:âhkami VERBSTEMSPRE "persistently, untiringly, unfailingly, unceasingly, unwaveringly; keep on, persevere" ; 
+PV/ako+:âkô VERBSTEMSPRE "covered, shielded" ; 
+PV/akwa+:âkwâ VERBSTEMSPRE "quite a lot; well on its way, in progress of time" ; 
+PV/ami+:âmi VERBSTEMSPRE "almost" ; 
+PV/aniski+:âniski VERBSTEMSPRE "succession, extension" ; 
+PV/apihci+:âpihci VERBSTEMSPRE "halfway" ; 
+PV/apihtawi+:âpihtawi VERBSTEMSPRE "half" ; 
+PV/apihta+:âpihtâ VERBSTEMSPRE "half" ; 
+©U.joiner.NULL@PV/apihta_kisikawi+:©U.joiner.NULL@âpihtâkîsikâwi VERBSTEMSPRE "at noon" ; 
+©U.joiner.hyphen@PV/apihta_kisikawi+:©U.joiner.hyphen@âpihtâ-kîsikâwi VERBSTEMSPRE "at noon" ; 
+PV/asawi+:âsawi VERBSTEMSPRE "in passing something on" ; 
+PV/ase+:âsê VERBSTEMSPRE "see: asê-" ; 
+PV/asowi+:âsowi VERBSTEMSPRE "in turn, in succession" ; 
+PV/aste+:âstê VERBSTEMSPRE "ceasing; quit" ; 
+PV/ata+:âta VERBSTEMSPRE "although, in VAI-2" ; 
+PV/ayici+:âyîci VERBSTEMSPRE "firmly, tightly" ; 
+PV/cipehtako+:cîpêhtako VERBSTEMSPRE "blue, greyish blue, grey" ; 
+! PV/e+:ê VERBSTEMSPRE "[grammatical preverb: complementizer; defines a changed conjunct clause]" ; 
+PV/isi+:isi VERBSTEMSPRE "so, this way, thus, thither, such" ; 
+PV/isko+:isko VERBSTEMSPRE "so far, to such an extent" ; 
+PV/ispi+:ispi VERBSTEMSPRE "then, when" ; 
+PV/ispihci+:ispîhci VERBSTEMSPRE "meanwhile, beforehand" ; 
+PV/itahto+:itahto VERBSTEMSPRE "in such number" ; 
+PV/ikate+:îkatê VERBSTEMSPRE "aside, off to one side" ; 
+! PV/ka+:ka VERBSTEMSPRE "grammatical preverb: future will, shall; infinitive; optative ought, should" ; 
+! PV/ka_ki+:ka-kî VERBSTEMSPRE "can, be able to; may; should, ought to" ; 
+@U.joiner.hyphen@PV/ka_ki+:@U.joiner.hyphen@ka-kî VERBSTEMSPRE ;
+@U.joiner.NULL@PV/ka_ki+:@U.joiner.NULL@kakî VERBSTEMSPRE ;
+PV/kakepaci+:kakêpâci VERBSTEMSPRE "stupidly" ; 
+PV/kakwahyaki+:kakwâhyaki VERBSTEMSPRE "greatly, extremely, overwhelmingly; with startled surprise" ; 
+PV/kakwayaki+:kakwâyaki VERBSTEMSPRE "greatly, extremely" ; 
+PV/kakwe+:kakwê VERBSTEMSPRE "try to, attempt to" ; 
+PV/kakweci+:kakwêci VERBSTEMSPRE "inquire" ; 
+PV/kanaci+:kanâci VERBSTEMSPRE "clean" ; 
+PV/kape+:kapê VERBSTEMSPRE "for the full duration of; always" ; 
+PV/kaski+:kaski VERBSTEMSPRE "dense" ; 
+PV/kaskitewi+:kaskitêwi VERBSTEMSPRE "black" ; 
+PV/kayasi+:kayâsi VERBSTEMSPRE "old" ; 
+! PV/kaa+:kâ VERBSTEMSPRE "[grammatical preverb; defines a changed conjunct clause; often a relative clause, i.e. who, which]" ; 
+PV/kah+:kâh VERBSTEMSPRE "would, ought to; likely to" ; 
+@U.joiner.hyphen@PV/kah-kape+:@U.joiner.hyphen@kâh-kapê VERBSTEMSPRE "all the time" ; 
+@U.joiner.NULL@PV/kah-kape+:@U.joiner.NULL@kâhkapê VERBSTEMSPRE "all the time" ; 
+PV/kamwaci+:kâmwâci VERBSTEMSPRE "quietly" ; 
+PV/kaspi+:kâspi VERBSTEMSPRE "crunching" ; 
+PV/kawi+:kâwi VERBSTEMSPRE "again; back, in return" ; 
+PV/ke+:kê VERBSTEMSPRE "grammatical preverb; future, conditional: shall; defines a changed conjunct clause" ; 
+PV/kekaci+:kêkâci VERBSTEMSPRE "almost" ; 
+PV/ket+:kêt VERBSTEMSPRE "take off, remove" ; 
+PV/ketiski+:kêtiski VERBSTEMSPRE "to exact measure" ; 
+PV/kici+:kici VERBSTEMSPRE "so that" ; 
+PV/kihci+:kihci VERBSTEMSPRE "great, big, important" ; 
+PV/kika+:kika VERBSTEMSPRE "grammatical preverb; future; defines a conjunct clause" ; 
+PV/kipi+:kipi VERBSTEMSPRE "blocking" ; 
+PV/kisci+:kisci VERBSTEMSPRE "big" ; 
+PV/kise+:kisê VERBSTEMSPRE "great, gentle" ; 
+PV/kisipi+:kisipi VERBSTEMSPRE "end, finish, ending" ; 
+PV/kisiska+:kisiskâ VERBSTEMSPRE "fast, quickly" ; 
+PV/kisiwi+:kisiwi VERBSTEMSPRE "anger" ; 
+PV/kisiwi+:kisîwi VERBSTEMSPRE "angrily, in anger" ; 
+PV/kita+:kita VERBSTEMSPRE "[grammatical preverb]; future: will, shall; infinitive; optative: ought, should" ; 
+@U.joiner.hyphen@PV/kita_ki+:@U.joiner.hyphen@kita-kî VERBSTEMSPRE "can, be able to; may; ought to" ; 
+@U.joiner.NULL@PV/kita_ki+:@U.joiner.NULL@kitakî VERBSTEMSPRE "can, be able to; may; ought to" ; 
+PV/kitimaki+:kitimâki VERBSTEMSPRE "pitiable, pitiably" ; 
+PV/kiye+:kiyê VERBSTEMSPRE "[grammatical preverb; future; in changed conjunct clauses]" ; 
+PV/kiyi+:kiyi VERBSTEMSPRE "[grammatical preverb; future; defines a conjunct clause]" ; 
+! PV/ki+:kî VERBSTEMSPRE "[grammatical preverb; past, completion]" ; 
+PV/kimoci+:kîmôci VERBSTEMSPRE "secretly, by stealth" ; 
+PV/kipi+:kîpi VERBSTEMSPRE "quickly" ; 
+PV/kisi+:kîsi VERBSTEMSPRE "finish; completely, to completion; completing, having done" ; 
+PV/kiski+:kîski VERBSTEMSPRE "severing, breaking, cutting off" ; 
+PV/kisopwe+:kîsopwê VERBSTEMSPRE "with hot weather" ; 
+PV/kiwaci+:kîwâci VERBSTEMSPRE "orphaned, stray; lonely, desolately" ; 
+PV/kiwe+:kîwê VERBSTEMSPRE "back, homeward" ; 
+PV/koci+:koci VERBSTEMSPRE "try to" ; 
+PV/kota+:kôta VERBSTEMSPRE "long for, be deprived of" ; 
+PV/kotate+:kôtatê VERBSTEMSPRE "at a loss, making no attempt" ; 
+PV/kwataki+:kwataki VERBSTEMSPRE "distressing, tormenting, tortuous" ; 
+PV/kwayako+:kwayako VERBSTEMSPRE "taking out, directly" ; 
+PV/kwayaski+:kwayaski VERBSTEMSPRE "properly" ; 
+PV/kwayasko+:kwayasko VERBSTEMSPRE "straight; properly, correctly" ; 
+PV/kwayaci+:kwayâci VERBSTEMSPRE "in readiness, already; in preparation; beforehand" ; 
+PV/kwahci+:kwâhci VERBSTEMSPRE "far off" ; 
+PV/kwaskwe+:kwâskwê VERBSTEMSPRE "upwards" ; 
+PV/kwataki+:kwâtaki VERBSTEMSPRE "distressing, tormenting, tortuous" ; 
+PV/kweski+:kwêski VERBSTEMSPRE "turning" ; 
+PV/kwetawi+:kwêtawi VERBSTEMSPRE "doubtful" ; 
+PV/kwitawi+:kwîtawi VERBSTEMSPRE "impatiently" ; 
+PV/maci+:maci VERBSTEMSPRE "bad, evil, wicked, wrong, ill" ; 
+@U.joiner.hyphen@PV/maci_manitowi+:@U.joiner.hyphen@maci-manitowi VERBSTEMSPRE "evil, devilish; Devil's" ; 
+@U.joiner.NULL@PV/maci_manitowi+:@U.joiner.NULL@macimanitowi VERBSTEMSPRE "evil, devilish; Devil's" ; 
+PV/mahti+:mahti VERBSTEMSPRE "Let us; hortatory" ; ! From NS 152 
+PV/mana+:manâ VERBSTEMSPRE "beware of, careful not to, avoid doing" ; 
+PV/mani+:mani VERBSTEMSPRE "with the intent of, with the purpose of" ; 
+PV/masta+:mastâ VERBSTEMSPRE "later" ; 
+PV/matwe+:matwê VERBSTEMSPRE "audibly, visibly; perceptibly; loudly; heard or seen from a distance" ; 
+PV/maaci+:mâci VERBSTEMSPRE "begin to, start to; commencement; initially" ; 
+PV/mahi+:mâhi VERBSTEMSPRE "downstream" ; 
+PV/mamawi+:mâmawi VERBSTEMSPRE "together; in full number of them all, altogether, all together as a group" ; 
+PV/maninakisko+:mâninâkisko VERBSTEMSPRE "without hesitation, entirely" ; 
+PV/maski+:mâski VERBSTEMSPRE "crippled; defective, deformed" ; 
+PV/mayaci+:mâyâci VERBSTEMSPRE "bad" ; 
+PV/mayi+:mâyi VERBSTEMSPRE "bad, evil; badly, evilly, wickedly" ; 
+PV/mecimwaci+:mêcimwâci VERBSTEMSPRE "permanently, for good" ; 
+PV/mêkwa+:mêkwâ VERBSTEMSPRE "currently, presently, right now; while, during, in the meantime, in the act or place" ; 
+PV/mesci+:mêsci VERBSTEMSPRE "exhaustively, till all is gone" ; 
+PV/mesti+:mêsti VERBSTEMSPRE "it is used up, it is burnt out, it is spent" ; 
+PV/mihko+:mihko VERBSTEMSPRE "red" ; 
+PV/mihyawe+:mihyawê VERBSTEMSPRE "with fur or body hair" ; 
+PV/misakame+:misakâmê VERBSTEMSPRE "all the way" ; 
+PV/misi+:misi VERBSTEMSPRE "big, greatly; much, a lot; very, extremely, to the extreme" ; 
+PV/mistiko+:mistiko VERBSTEMSPRE "wood, of wood, wooden" ; 
+PV/miyo+:miyo VERBSTEMSPRE "good, well, beautifully" ; 
+PV/mosci+:mosci VERBSTEMSPRE "just, merely, plainly, simply, directly, without mediation, without instrumentality; by hand" ; 
+PV/mohco+:môhco VERBSTEMSPRE "silly, crazy" ; 
+PV/mwayi+:mwayî VERBSTEMSPRE "before, prior to" ; 
+PV/nahi+:nahi VERBSTEMSPRE "well, fair" ; 
+PV/nahta+:nahtâ VERBSTEMSPRE "able; good at, competent, practised, experienced, skillful at, expert at, known as one who does s.t. habitually; well" ; 
+PV/naki+:naki VERBSTEMSPRE "stopping" ; 
+PV/napaki+:napaki VERBSTEMSPRE "flat" ; 
+PV/naspaci+:naspâci VERBSTEMSPRE "opposite, contrarily" ; 
+PV/natawi+:natawi VERBSTEMSPRE "go to" ; 
+PV/nawaci+:nawaci VERBSTEMSPRE "better" ; 
+PV/naci+:nâci VERBSTEMSPRE "getting" ; 
+PV/nanitaw+:nânitaw VERBSTEMSPRE "[in negative clauses:] any" ; 
+PV/natakasi+:nâtakâsi VERBSTEMSPRE "into the bush country" ; 
+PV/nawayawi+:nâwayawi VERBSTEMSPRE "one behind the other, in a row" ; 
+PV/nehiyawi+:nêhiyawi VERBSTEMSPRE "Cree, in Cree" ; 
+PV/nihta+:nihtâ VERBSTEMSPRE "able; good at, competent, practised, experienced, skillful at, expert at, known as one who does s.t. habitually; well" ; 
+PV/nipahi+:nipahi VERBSTEMSPRE "really, very, extremely" ; 
+PV/nisihkaci+:nisîhkâci VERBSTEMSPRE "gently, carefully, slowly" ; 
+PV/nitawi+:nitawi VERBSTEMSPRE "go and, go to; engaged in" ; 
+PV/nihci+:nîhci VERBSTEMSPRE "down, downwards; bottom" ; 
+PV/nihtaciwe+:nîhtaciwê VERBSTEMSPRE "downhill, down" ; 
+PV/nikani+:nîkâni VERBSTEMSPRE "in front, ahead, at the head, in the future" ; 
+PV/nimi+:nîmi VERBSTEMSPRE "take along" ; 
+PV/nipa+:nîpâ VERBSTEMSPRE "at night, in the dark" ; 
+PV/niso+:nîso VERBSTEMSPRE "two" ; 
+PV/nohte+:nôhtê VERBSTEMSPRE "want to, desire to; lack" ; 
+PV/ocihci+:ocihci VERBSTEMSPRE "back in time; far back; from before, earlier; having lived long enough for something; chance to, live to, live to see" ; 
+PV/ohci+:ohci VERBSTEMSPRE "from there; with, by means of; because, for that reason, therefore, thence; [grammatical preverb; past preverb in negative clauses]" ; 
+PV/ohtiskawi+:ohtiskawi VERBSTEMSPRE "facing" ; 
+PV/osami+:osâmi VERBSTEMSPRE "too much, because of excess, for" ; 
+PV/osawaski+:osâwaski VERBSTEMSPRE "green, blue-green" ; 
+PV/osawi+:osâwi VERBSTEMSPRE "yellow, brown" ; 
+PV/oski+:oski VERBSTEMSPRE "new, young, first" ; 
+PV/otami+:otami VERBSTEMSPRE "busy, occupied, delayed" ; 
+PV/o+:ô VERBSTEMSPRE "from there, for that reason; with, by means of; [grammatical preverb]" ; 
+PV/oh+:ôh VERBSTEMSPRE "from there, for that reason; with, by means of; [past preverb in negative clauses]" ; 
+PV/paci+:paci VERBSTEMSPRE "wrongly, in error" ; 
+PV/pahki+:pahki VERBSTEMSPRE "portion of" ; 
+PV/pakwano+:pakwâno VERBSTEMSPRE "from memory" ; 
+PV/papa+:papâ VERBSTEMSPRE "go around, about, all over" ; 
+PV/papami+:papâmi VERBSTEMSPRE "around, about, all over, here and there, hither and thither" ; 
+PV/papasi+:papâsi VERBSTEMSPRE "fast, in a hurry, quick" ; 
+PV/pasiko+:pasikô VERBSTEMSPRE "get up (from sitting)" ; 
+PV/paspi+:paspi VERBSTEMSPRE "through narrow opening" ; 
+PV/pahkaci+:pâhkaci VERBSTEMSPRE "fixed, not moving; locked in to a previously stated obligation" ; 
+PV/pahko+:pâhko VERBSTEMSPRE "dry" ; 
+PV/pasci+:pâsci VERBSTEMSPRE "over, beyond" ; 
+PV/pasici+:pâsici VERBSTEMSPRE "stepping over, skipping" ; 
+PV/pe+:pê VERBSTEMSPRE "come and; towards, approaching; hither; thence, from there on down; [towards focus]" ; 
+PV/peyako+:pêyako VERBSTEMSPRE "alone, only; as one" ; 
+PV/pimi+:pimi VERBSTEMSPRE "along, in linear progression; while moving in linear progression" ; 
+PV/pimici+:pimici VERBSTEMSPRE "crosswise, from side, at right angle" ; 
+PV/pimipahci+:pimipahci VERBSTEMSPRE "running, on the run" ; 
+PV/pisci+:pisci VERBSTEMSPRE "accidentally, mistakenly, erroneously" ; 
+PV/pihci+:pîhci VERBSTEMSPRE "inside, in, within" ; 
+PV/pihtawe+:pîhtawê VERBSTEMSPRE "under; double" ; 
+PV/pihtoke+:pîhtokê VERBSTEMSPRE "entering to the inside, entering house" ; 
+PV/pikiskaci+:pîkiskâci VERBSTEMSPRE "sorry, sad, lonely" ; 
+PV/pimi+:pîmi VERBSTEMSPRE "twisted" ; 
+PV/pitosi+:pîtosi VERBSTEMSPRE "different, foreign" ; 
+PV/piwi+:pîwi VERBSTEMSPRE "small" ; 
+PV/poni+:pôni VERBSTEMSPRE "stop, terminate, cease; after" ; 
+PV/posko+:pôsko VERBSTEMSPRE "the same" ; 
+PV/pwana+:pwâna VERBSTEMSPRE "unable, fail to" ; 
+PV/pwatawi+:pwâtawi VERBSTEMSPRE "unable to do, failing" ; 
+PV/saskaci+:saskaci VERBSTEMSPRE "weary, tired of" ; 
+PV/sakewe+:sâkêwê VERBSTEMSPRE "behind obstacle to vision, into view" ; 
+PV/sapo+:sâpo VERBSTEMSPRE "fully, exhaustively, through, through and through, right through, from end to end; beyond" ; 
+PV/saposci+:sâposci VERBSTEMSPRE "through" ; 
+PV/sasakici+:sâsakici VERBSTEMSPRE "backwards; supine" ; 
+PV/sehke+:sêhkê VERBSTEMSPRE "by itself, of own accord; move ahead of own accord; willingly" ; 
+PV/sesawi+:sêsâwi VERBSTEMSPRE "stretching, exercising" ; 
+PV/sikaci+:sikaci VERBSTEMSPRE "impatiently, bored with" ; 
+PV/simaci+:simaci VERBSTEMSPRE "upright; straightened" ; 
+PV/sipwe+:sipwê VERBSTEMSPRE "leaving, departing, going away; starting out, commencement" ; 
+PV/sisikoci+:sisikoci VERBSTEMSPRE "suddenly" ; 
+PV/sisiwe+:sisiwê VERBSTEMSPRE "spread, scatter" ; 
+PV/sikawi+:sîkawi VERBSTEMSPRE "pouring, flooding" ; 
+PV/sohkahat+:sôhkahât VERBSTEMSPRE "greatly, powerfully" ; 
+PV/sohki+:sôhki VERBSTEMSPRE "hard, strongly, intensively, vigourously, properly" ; 
+PV/soniyawi+:sôniyâwi VERBSTEMSPRE "with respect to money, in financial matters" ; 
+PV/ta+:ta VERBSTEMSPRE "[grammatical preverb: future; infinitive]" ; 
+@U.joiner.hyphen@PV/ta_ki+:@U.joiner.hyphen@ta-kî VERBSTEMSPRE "can, be able to; should, ought to" ; 
+@U.joiner.NULL@PV/ta_ki+:@U.joiner.NULL@takî VERBSTEMSPRE "can, be able to; should, ought to" ; 
+PV/tahci+:tahci VERBSTEMSPRE "coming apart, undone" ; 
+PV/tahki+:tahki VERBSTEMSPRE "repeated action, always, constantly ;; receiving a chill, cold" ; 
+PV/tahkohci+:tahkohci VERBSTEMSPRE "on top" ; 
+PV/tahto+:tahto VERBSTEMSPRE "as many as" ; 
+PV/takahki+:takahki VERBSTEMSPRE "good, nice" ; 
+PV/tako+:tako VERBSTEMSPRE "in addition to, on top, over and above; with, having along, also" ; 
+PV/tasi+:tasi VERBSTEMSPRE "for such a time, for the duration; an action at a time, while" ; 
+PV/tah+:tâh VERBSTEMSPRE "would, ought to; likely to" ; 
+PV/tahci+:tâhci VERBSTEMSPRE "on the top" ; 
+PV/tapi+:tâpi VERBSTEMSPRE "through the same place" ; 
+PV/tapisi+:tâpisi VERBSTEMSPRE "threading, inserting" ; 
+PV/tehci+:têhci VERBSTEMSPRE "on, on top of something" ; 
+PV/tepi+:têpi VERBSTEMSPRE "sufficiently; enough; reaching" ; 
+PV/tewi+:têwi VERBSTEMSPRE "pain" ; 
+PV/teyi+:têyi VERBSTEMSPRE "pain" ; 
+PV/tipi+:tipi VERBSTEMSPRE "equal" ; 
+PV/tita+:tita VERBSTEMSPRE "[grammatical preverb; future]" ; 
+PV/tomi+:tômi VERBSTEMSPRE "oily, greasy" ; 
+PV/wahke+:wahkê VERBSTEMSPRE "addicted to, easily led to" ; 
+PV/wani+:wani VERBSTEMSPRE "dim, dark, indistinctly, blurred; lose; destroy" ; 
+PV/wayawi+:wayawî VERBSTEMSPRE "outside; out from inside, out from the tipi" ; 
+PV/wayesi+:wayêsi VERBSTEMSPRE "deceitfully" ; 
+PV/wa+:wâ VERBSTEMSPRE "intend to, be about to" ; 
+PV/wah+:wâh VERBSTEMSPRE "whenever in future" ; 
+PV/waki+:wâki VERBSTEMSPRE "curving" ; 
+PV/wapani+:wâpani VERBSTEMSPRE "dawn; at, until dawn" ; 
+PV/wapohki+:wâpôhki VERBSTEMSPRE "white" ; 
+PV/wasa+:wâsâ VERBSTEMSPRE "around" ; 
+PV/wase+:wâsê VERBSTEMSPRE "clear; bright" ; 
+PV/wawiye+:wâwiyê VERBSTEMSPRE "round, spherical" ; 
+PV/wehci+:wêhci VERBSTEMSPRE "easily" ; 
+PV/wiyipi+:wiyîpi VERBSTEMSPRE "dirty looking; dull brown, drab" ; 
+PV/wihpi+:wîhpi VERBSTEMSPRE "hollowing out" ; 
+PV/wini+:wîni VERBSTEMSPRE "soil, dirty" ; 
+PV/wipi+:wîpi VERBSTEMSPRE "dirty, unclean" ; 
+PV/wipo+:wîpo VERBSTEMSPRE "narrow" ; 
+PV/wisaki+:wîsaki VERBSTEMSPRE "painfully" ; 
+PV/wito+:wîto VERBSTEMSPRE "want, intend" ; 
+PV/yahki+:yahki VERBSTEMSPRE "act of pushing forward; increasing, increasingly, adding, more and more" ; 
+PV/yikate+:yîkatê VERBSTEMSPRE "aside" ; 
+PV/yipe+:yîpê VERBSTEMSPRE "on a slant, on a slope, on the side, sideways" ; 
+PV/yoski+:yôski VERBSTEMSPRE "soft, softly" ; 
+
+
+LEXICON VERBSTEMSPRE
+@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@- PREVERBS ;
+@U.joiner.NULL@@C.cnj@                              PREVERBS ;
+@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@- REDUPL ;
+@U.joiner.NULL@@C.cnj@                              REDUPL ;
+@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@- WICI ;
+@U.joiner.NULL@@C.cnj@                              WICI ;
+
+LEXICON REDUPL
+RdplW+:%^DUPL1ay2 VERBSTEMSPRE_REDUPL ;
+RdplS+:%^DUPL1âh  VERBSTEMSPRE_REDUPL ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@%^DUPL2ay3%^DUPL1âh       VERBSTEMSPRE_REDUPL ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@%^DUPL2ay3-%^DUPL1âh VERBSTEMSPRE_REDUPL ;
+! < "RdplW+":0 0:%^DUPL1 0:a 0:"y2" > VERBSTEMSPRE_REDUPL ;
+! < "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
+! < "RdplW+":0 0:%^DUPL2 0:a 0:"y3" "@U.joiner.NULL@" "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
+! < "RdplW+":0 0:%^DUPL2 0:a 0:"y3" "@U.joiner.hyphen@" 0:- "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
+
+LEXICON VERBSTEMSPRE_REDUPL
+@U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%>       WICI ;
+@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%> WICI ;
+
+LEXICON WICI
+@U.wici.NULL@ VERBSTEMS ;
+@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wici%> VERBSTEMS ;
+@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wici-%> VERBSTEMS ;
+
+!! Now, lexc directs us to the ../stems/verbs.lexc file,
+!! where we find all the verbal stems. The suffixes are then
+!! found in the section "Suffixes" right underneath.
+
+! ===============================================================
+! ===============================================================
+! ===============================================================
+! ===============================================================
+! ===============================================================
+
+!! !!!Suffixes
+
+!! fst:
+!! AICONJ:  stem
+!! AICONJw: stem (excl w)
+! 
+!! Wolv:
+!! AICONJ_n
+!! AICONJ_w
+
+! Auxiliary lexica for the verb dump
+
+! LEXICON AICONJ_n 
+! VAI-2 ;
+! LEXICON AICONJ_v 
+! VAI-1 ;
+
+
+!! LEXICON TACONJ_3 
+!! TACONJ_2 ;
+!! 
+!! LEXICON TACONJ_4 
+!! TACONJ_2 ;
+
+! LEXICON TICONJi  ! Trond dymmy delete
+! # ;
+
+
+!! !!! Intransitive inanimate (II)
+!      ===========================
+!      ===========================
+
+!!! STEM CLASS
+
+LEXICON VII-1_SGPL !!= @CODE@  
++V+II:  VII-1_SGPL_WICI ;
+
+LEXICON VII-1_SG !!= @CODE@  
++V+II:  VII-1_SGPL_WICI ;
+
+!! LEXICON VIIw_PL !!= @CODE@  NO LONGER NEEDED FROM AROK
+!! +V+II: VIIw_PL_WICI ;	   NO LONGER NEEDED FROM AROK
+
+LEXICON VII-2_SGPL !!= @CODE@  
++V+II:  VII-2_SGPL_WICI ;
+
+LEXICON VII-2_SG !!= @CODE@  
++V+II:  VII-2_SGPL_WICI ;
+
+!! LEXICON VIIn_PL !!= @CODE@  NO LONGER NEEDED FROM AROK
+!! +V+II: VIIn_PL_WICI ;	   NO LONGER NEEDED FROM AROK
+
+!!! WICI 
+!!!NOTE: II do not take this morpheme, so all forms should be null flagged.
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-1_SGPL_WICI !!!! 
+@U.wici.NULL@ VII-1_SGPL_ORDER ;
+
+LEXICON VII-1_SG_WICI !!!! 
+@U.wici.NULL@ VII-1_SG_ORDER ;
+
+!! LEXICON VIIw_PL_WICI !!!! 	 NO LONGER NEEDED FROM AROK
+!! @U.wici.NULL@ VIIw_PL_ORDER ; NO LONGER NEEDED FROM AROK
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-2_SGPL_WICI !!!! 
+@U.wici.NULL@ VII-2_SGPL_ORDER ;
+
+LEXICON VII-2_SG_WICI !!!! 
+@U.wici.NULL@ VII-2_SG_ORDER ;
+
+!! LEXICON VIIn_PL_WICI !!!! 	 NO LONGER NEEDED FROM AROK
+!! @U.wici.NULL@ VIIn_PL_ORDER ; NO LONGER NEEDED FROM AROK
+
+!!! ORDERS
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-1_SGPL_ORDER !!= @CODE@ 
+@U.order.indep@+Ind:@U.order.indep@ VII-1_SGPL_IND_TENSE ;
+@U.order.cnj@+Cnj:@U.order.cnj@ VII-1_SGPL_CNJ_TENSE ;
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VII-1_SGPL_FUT_CON_PERSON ;
+
+! @U.order.indep@+Ind:@U.order.indep@ VIIw_IND_TENSE ; !
+! @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_CNJ_TENSE ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIw_FUT_CON_PERSON ;!
+
+LEXICON VII-1_SG_ORDER !!= @CODE@ singular only
+@U.order.indep@+Ind:@U.order.indep@  VII-1_SG_IND_TENSE ; !
+@U.order.indep@+Cnj:@U.order.indep@ VII-1_SG_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VII-1_SG_FUT_CON_PERSON ;!
+
+!! LEXICON VIIw_PL_ORDER !!= @CODE@ plural only 
+!! @U.order.indep@+Ind:@U.order.indep@ VIIw_PL_IND_TENSE ; !
+!! @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_PL_CNJ_TENSE ; !
+!! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIw_PL_FUT_CON_PERSON ;!
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-2_SGPL_ORDER !!= @CODE@ 
+@U.order.indep@+Ind:@U.order.indep@ VII-2_SGPL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VII-2_SGPL_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VII-2_SGPL_FUT_CON_PERSON ;!
+
+LEXICON VII-2_SG_ORDER !!= @CODE@ singular only
+@U.order.indep@+Ind:@U.order.indep@ VII-2_SG_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VII-2_SG_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VII-2_SG_FUT_CON_PERSON ;!
+
+!! LEXICON VIIn_PL_ORDER !!= @CODE@ plural only
+!!@U.order.indep@+Ind:@U.order.indep@ VIIn_PL_IND_TENSE ; !
+!!@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_PL_CNJ_TENSE ; !
+!!@U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIn_PL_FUT_CON_PERSON ;!
+
+!!! TENSES
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-1_SGPL_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VII-1_SGPL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VII-1_SGPL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VII-1_SGPL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VII-1_SGPL_IND_PERSON ; !
+
+LEXICON VII-1_SGPL_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VII-1_SGPL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VII-1_SGPL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VII-1_SGPL_CNJ_PERSON ; !
+
+LEXICON VII-1_SG_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VII-1_SG_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VII-1_SG_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VII-1_SG_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VII-1_SG_IND_PERSON ; !
+
+LEXICON VII-1_SG_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VII-1_SG_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VII-1_SG_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VII-1_SG_CNJ_PERSON ; !
+
+!! LEXICON VIIw_PL_IND_TENSE !!= @CODE@ plural only
+!! @U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_IND_PERSON ; !
+!! @U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_IND_PERSON ; !
+!! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_PL_IND_PERSON ; !
+!! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_IND_PERSON ; !
+!! 
+!! LEXICON VIIw_PL_CNJ_TENSE !!= @CODE@ plural only
+!! @U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_CNJ_PERSON ; !
+!! @U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_CNJ_PERSON ; !
+!! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_CNJ_PERSON ; !
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-2_SGPL_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VII-2_SGPL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VII-2_SGPL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VII-2_SGPL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VII-2_SGPL_IND_PERSON ; !
+
+LEXICON VII-2_SGPL_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VII-2_SGPL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VII-2_SGPL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VII-2_SGPL_CNJ_PERSON ; !
+
+LEXICON VII-2_SG_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VII-2_SG_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VII-2_SG_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VII-2_SG_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VII-2_SG_IND_PERSON ; !
+
+LEXICON VII-2_SG_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VII-2_SG_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VII-2_SG_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VII-2_SG_CNJ_PERSON ; !
+
+!! LEXICON VIIn_PL_IND_TENSE !!= @CODE@ plural only
+!! @U.tense.Prs@+Prs:@U.tense.Prs@ VIIn_PL_IND_PERSON ; !
+!! @U.tense.Prt@+Prt:@U.tense.Prt@ VIIn_PL_IND_PERSON ; !
+!! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIn_PL_IND_PERSON ; !
+!! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIn_PL_IND_PERSON ; !
+!! 
+!! LEXICON VIIn_PL_CNJ_TENSE !!= @CODE@ plural only
+!! @U.tense.Prs@+Prs:@U.tense.Prs@ VIIn_PL_CNJ_PERSON ; !
+!! @U.tense.Prt@+Prt:@U.tense.Prt@ VIIn_PL_CNJ_PERSON ; !
+!! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIn_PL_CNJ_PERSON ; !
+
+!!! PERSON
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-1_SGPL_IND_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-1_SGPL_IND_NULL ;
+
+LEXICON VII-1_SGPL_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-1_SGPL_CNJ_NULL ;
+
+LEXICON VII-1_SGPL_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-1_SGPL_FUT_CON_NULL ;
+
+LEXICON VII-1_SG_IND_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-1_SG_NULL ;
+
+LEXICON VII-1_SG_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-1_SG_CNJ_NULL ;
+
+LEXICON VII-1_SG_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-1_SG_FUT_CON_NULL ;
+
+!! LEXICON VIIw_PL_IND_PERSON !!= @CODE@ plural only
+!! @U.person.NULL@ VIIw_IND_PL_SUFFIX ;
+!! 
+!! LEXICON VIIw_PL_CNJ_PERSON !!= @CODE@ plural only
+!! @U.person.NULL@ VIIw_CNJ_PL_SUFFIX ;
+!! 
+!! LEXICON VIIw_PL_FUT_CON_PERSON !!= @CODE@ plural only
+!! @U.person.NULL@ VIIw_FUT_CON_PL_SUFFIX ;
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-2_SGPL_IND_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-2_SGPL_IND_NULL ;
+
+LEXICON VII-2_SGPL_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-2_SGPL_CNJ_NULL ;
+
+LEXICON VII-2_SGPL_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-2_SGPL_FUT_CON_NULL ;
+
+LEXICON VII-2_SG_IND_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-2_SG_NULL ;
+
+LEXICON VII-2_SG_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-2_SG_CNJ_NULL ;
+
+LEXICON VII-2_SG_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VII-2_SG_FUT_CON_NULL ;
+
+!! LEXICON VIIn_PL_IND_PERSON !!= @CODE@ plural only
+!! @U.person.NULL@ VIIn_IND_PL_SUFFIX ;
+!! 
+!! LEXICON VIIn_PL_CNJ_PERSON !!= @CODE@ plural only
+!! @U.person.NULL@ VIIn_CNJ_PL_SUFFIX ;
+!! 
+!! LEXICON VIIn_PL_FUT_CON_PERSON !!= @CODE@ plural only
+!! @U.person.NULL@ VIIn_FUT_CON_PL_SUFFIX ;
+
+!!! SUFFIXES
+
+! ********************
+!!!! INDEPENDENT !!!!
+! *********************
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-1_SGPL_IND_NULL !!= @CODE@
+VII-1_SG_IND_SUFFIX ;
+VII-1_Pl_IND_SUFFIX ;
+
+LEXICON VII-1_SG_IND_SUFFIX   !!= @CODE@ singular
++3Sg:%>w # ;
++4Sg:%>yiw # ;
+
+LEXICON VII-1_Pl_IND_SUFFIX  !!= @CODE@ plural
++3Pl:%>wa # ;
++4Pl:%>yiwa # ;
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+
+LEXICON VII-2_SGPL_IND_NULL !!= @CODE@
+VII-2_SG_IND_SUFFIX ;
+VII-2_Pl_IND_SUFFIX ;
+
+LEXICON VII-2_SG_IND_SUFFIX   !!= @CODE@ w final singular
++3Sg:%> # ;
++4Sg:%>iyiw # ;
+
+LEXICON VII-2_SG_IND_SUFFIX  !!= @CODE@ w final plural
++3Pl:%>wa # ;
++4Pl:%>iyiwa # ;
+
+
+! ******************
+!!!! CONJUNCT !!!!
+! ******************
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-1_SGPL_CNJ_NULL !!= @CODE@
+VII-1_SG_CNJ_SUFFIX ;
+VII-1_PL_CNJ_SUFFIX ;
+
+LEXICON VII-1_SG_CNJ_SUFFIX   !!= @CODE@ singular
++3Sg:%>k # ;
++4Sg:%>yik # ;
+
+LEXICON VII-1_PL_CNJ_SUFFIX  !!= @CODE@ plural
++3Pl:%>ki # ;
++4Pl:%>iyiki # ;
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-2_SGPL_CNJ_NULL !!= @CODE@
+VII-2_SG_CNJ_SUFFIX ;
+VII-2_PL_CNJ_SUFFIX ;
+
+LEXICON VII-2_SG_CNJ_SUFFIX   !!= @CODE@ w final singular
++3Sg:%>k # ;
++4Sg:%>iyik # ;
+
+LEXICON VII-2_PL_CNJ_SUFFIX   !!= @CODE@ w final plural
++3Pl:%>ki # ;
++4Pl:%>iyiki # ;
+
+! ****************************
+!!!! FUTURE CONDITIONAL !!!!
+! ****************************
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-1_SGPL_FUT_CON_NULL !!= @CODE@
+VII-1_SG_FUT_CON_SUFFIX ;
+VII-1_PL_FUT_CON_SUFFIX ;
+
+LEXICON VII-1_SG_FUT_CON_SUFFIX   !!= @CODE@ singular
++3Sg:%>ki # ;
++4Sg:%>yiki # ;
+
+LEXICON VII-1_PL_FUT_CON_SUFFIX  !!= @CODE@ plural
++3Pl:%>kwâwi # ;
++4Pl:%>iyikwâwi # ;
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VII-2_SGPL_FUT_CON_NULL !!= @CODE@
+VII-2_SG_FUT_CON_SUFFIX ;
+VII-2_PL_FUT_CON_SUFFIX ;
+
+LEXICON VII-2_SG_FUT_CON_SUFFIX   !!= @CODE@ w final singular
++3Sg:%>ki # ;
++4Sg:%>iyiki # ;
+
+LEXICON VII-2_PL_FUT_CON_SUFFIX   !!= @CODE@ w final plural
++3Pl:%>kwâwi # ;
++4Pl:%>iyikwâwi # ;
+
+
+!! !!! Intransitive animate (AI)
+!      ===========================
+!      ===========================
+
+!!! STEM CLASS
+
+! LEXICON VAI-1 !!= @CODE@ 
+! +V+AI: VAICONJw_WICI ;
+
+LEXICON VAI-1 !!= @CODE@ 
++V+AI: VAI-1_WICI ;
+
+LEXICON VAI-1_PL !!= @CODE@ 
++V+AI: VAI-1_PL_WICI ;
+
+LEXICON VAI-2 !!= @CODE@ 
++V+AI: VAI-2_WICI ;
+
+LEXICON VAI-2_PL !!= @CODE@ 
++V+AI: VAI-2_PL_WICI ;
+
+!!! WICI
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-1_WICI !!!!
+@U.wici.NULL@ VAI-1_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@w%>i2m VTA-3_ORDER ;
+
+LEXICON VAI-1_PL_WICI !!!! plural only
+@U.wici.NULL@ VAI-1_PL_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@w%>i2m VTA-3_PL_ORDER ;
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-2_WICI !!!!
+@U.wici.NULL@ VAI-2_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im VTA-3_ORDER ;
+
+LEXICON VAI-2_PL_WICI !!!! plural only
+@U.wici.NULL@ VAI-2_PL_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im VTA-3_PL_ORDER ;
+
+!!! ORDERS
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! =========================================================== ! NOTE: imperative and fut con do not take tense
+
+LEXICON VAI-1_ORDER !!= @CODE@
+@U.order.indep@+Ind:@U.order.indep@ VAI-1_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAI-1_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VAI-1_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAI-1_FUT_CON_PERSON ; !
+
+LEXICON VAI-1_PL_ORDER !!= @CODE@ plural only 
+@U.order.indep@+Ind:@U.order.indep@ VAI-1_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAI-1_PL_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VAI-1_PL_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAI-1_PL_FUT_CON_PERSON ; !
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! =========================================================== ! NOTE: imperative and fut con do not take tense
+
+LEXICON VAI-2_ORDER !!= @CODE@
+@U.order.indep@+Ind:@U.order.indep@ VAI-2_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAI-2_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VAI-2_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAI-2_FUT_CON_PERSON ; !
+
+LEXICON VAI-2_PL_ORDER !!= @CODE@ plural only  
+@U.order.indep@+Ind:@U.order.indep@ VAI-2_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAI-2_PL_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VAI-2_PL_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAI-2_PL_FUT_CON_PERSON ; !
+
+!!! TENSES
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-1_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAI-1_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAI-1_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAI-1_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAI-1_IND_PERSON ; !
+
+LEXICON VAI-1_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAI-1_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAI-1_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAI-1_CNJ_PERSON ; !
+
+LEXICON VAI-1_PL_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAI-1_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAI-1_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAI-1_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAI-1_PL_IND_PERSON ; !
+
+LEXICON VAI-1_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAI-1_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAI-1_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAI-1_PL_CNJ_PERSON ; !
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-2_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAI-2_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAI-2_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAI-2_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAI-2_IND_PERSON ; !
+
+LEXICON VAI-2_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAI-2_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAI-2_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAI-2_CNJ_PERSON ; !
+
+LEXICON VAI-2_PL_IND_TENSE !!= @CODE@ plural only
+
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAI-2_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAI-2_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAI-2_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAI-2_PL_IND_PERSON ; !
+
+LEXICON VAI-2_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAI-2_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAI-2_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAI-2_PL_CNJ_PERSON ; !
+
+
+!!! PERSON
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-1_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VAI-1_IND_NI ;
+@U.person.KI@ VAI-1_IND_KI ;
+@U.person.NULL@ VAI-1_IND_NULL ;
+
+LEXICON VAI-1_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VAI-1_CNJ_NULL ;
+
+LEXICON VAI-1_FUT_CON_PERSON !!= @CODE@ 
+
+@U.person.NULL@ VAI-1_FUT_CON_NULL ;
+
+LEXICON VAI-1_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VAI-1_IMP_NULL ;
+
+LEXICON VAI-1_PL_IND_PERSON !!= @CODE@ plural only
+@U.person.NI@ VAI-1_IND_NI_PL_SUFFIX ;
+@U.person.KI@ VAI-1_IND_KI_PL_SUFFIX ;
+@U.person.NULL@ VAI-1_IND_NULL_PL_SUFFIX ;
+
+LEXICON VAI-1_PL_CNJ_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAI-1_CNJ_NULL_PL_SUFFIX ;
+
+LEXICON VAI-1_PL_FUT_CON_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAI-1_FUT_CON_NULL_PL_SUFFIX ;
+
+LEXICON VAI-1_PL_IMP_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAI-1_IMP_NULL_PL_SUFFIX ;
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-2_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VAI-2_IND_NI ;
+@U.person.KI@ VAI-2_IND_KI ;
+@U.person.NULL@ VAI-2_IND_NULL ;
+
+LEXICON VAI-2_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VAI-2_CNJ_NULL ;
+
+LEXICON VAI-2_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VAI-2_FUT_CON_NULL ;
+
+LEXICON VAI-2_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VAI-2_IMP_NULL ;
+
+LEXICON VAI-2_PL_IND_PERSON !!= @CODE@ plural only
+@U.person.NI@ VAI-2_IND_NI_PL_SUFFIX ;
+@U.person.KI@ VAI-2_IND_KI_PL_SUFFIX ;
+@U.person.NULL@ VAI-2_IND_NULL_PL_SUFFIX ;
+
+LEXICON VAI-2_PL_CNJ_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAI-2_CNJ_NULL_PL_SUFFIX ;
+
+LEXICON VAI-2_PL_FUT_CON_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAI-2_FUT_CON_NULL_PL_SUFFIX ;
+
+LEXICON VAI-2_PL_IMP_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAI-2_IMP_NULL_PL_SUFFIX ;
+
+!!! SUFFIXES
+
+! *********************
+!!!! INDEPENDENT !!!!
+! *********************
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-1_IND_NI   !!= @CODE@  
+VAI-1_IND_NI_SG_SUFFIX ;
+VAI-1_IND_NI_PL_SUFFIX ;
+
+LEXICON VAI-1_IND_NI_SG_SUFFIX   !!= @CODE@ 
++1Sg:%>n2 # ;
+
+LEXICON VAI-1_IND_NI_PL_SUFFIX   !!= @CODE@
++1Pl:%>n2ân # ;
+
+LEXICON VAI-1_IND_KI   !!= @CODE@  
+VAI-1_IND_KI_SG_SUFFIX ;
+VAI-1_IND_KI_PL_SUFFIX ;
+
+LEXICON VAI-1_IND_KI_SG_SUFFIX   !!= @CODE@ 
++2Sg:%>n2 # ;
+
+LEXICON VAI-1_IND_KI_PL_SUFFIX   !!= @CODE@ 
++12Pl:%>n2aw # ;
++12Pl:%>n2ânaw # ;
++2Pl:%>n2âwâw # ;
+
+LEXICON VAI-1_IND_NULL   !!= @CODE@  
+VAI-1_IND_NULL_SG_SUFFIX ;
+VAI-1_IND_NULL_PL_SUFFIX ;
+
+LEXICON VAI-1_IND_NULL_SG_SUFFIX   !!= @CODE@ 
++3Sg:%>w # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
+
++X+3Sg:%>n2âniwiw # ;
++X+3Sg:%>n2âniwan # ;
++X+3Sg:%>n2iwan # ;
+
++X+4Sg:%>n2âniwiyiw # ;
++X+4Sg:%>n2âniwaniyiw # ;
++X+4Sg:%>n2iwaniyiw # ;
+
+
+LEXICON VAI-1_IND_NULL_PL_SUFFIX   !!= @CODE@
++3Pl:%>wak # ;
++4Sg/Pl:%>yiwa # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>n2âniwiwa # ;
++X+3Pl:%>n2âniwanwa # ;
+
++X+4Pl:%>n2âniwiyiwa # ;
++X+4Pl:%>n2âniwaniyiwa # ;
+
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-2_IND_NI   !!= @CODE@ 
+VAI-2_IND_NI_SG_SUFFIX ;
+VAI-2_IND_NI_PL_SUFFIX ;
+
+LEXICON VAI-2_IND_NI_SG_SUFFIX   !!= @CODE@ 
++1Sg:%>in # ;
+
+LEXICON VAI-2_IND_NI_PL_SUFFIX   !!= @CODE@ 
++1Pl:%>inân # ;
+
+LEXICON VAI-2_IND_KI   !!= @CODE@  
+VAI-2_IND_KI_SG_SUFFIX ;
+VAI-2_IND_KI_PL_SUFFIX ;
+
+LEXICON VAI-2_IND_KI_SG_SUFFIX   !!= @CODE@ 
++2Sg:%>in # ;
+
+LEXICON VAI-2_IND_KI_PL_SUFFIX   !!= @CODE@ 
++12Pl:%>inaw # ;
++12Pl:%>inânaw # ;
++2Pl:%>inâwâw # ;
+
+LEXICON VAI-2_IND_NULL   !!= @CODE@  
+VAI-2_IND_NULL_SG_SUFFIX ;
+VAI-2_IND_NULL_PL_SUFFIX ;
+
+LEXICON VAI-2_IND_NULL_SG_SUFFIX   !!= @CODE@ 
++3Sg:%> # ;
++3Sg:%>iw # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
+
++X+3Sg:%>inâniwiw # ;
++X+3Sg:%>inâniwan # ;
++X+3Sg:%>iniwan # ;
+
++X+4Sg:%>inâniwiyiw # ;
++X+4Sg:%>inâniwaniyiw # ;
++X+4Sg:%>iniwaniyiw # ;
+
+LEXICON VAI-2_IND_NULL_PL_SUFFIX   !!= @CODE@ 
++3Pl:%>wak # ;
++3Pl:%>iwak # ;
++4Sg/Pl:%>iyiwa # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>inâniwiwa # ;
++X+3Pl:%>inâniwanwa # ;
+
++X+4Pl:%>inâniwiyiwa # ;
++X+4Pl:%>inâniwaniyiwa # ;
+
+
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+
+
+! ******************
+!!!! CONJUNCT !!!!
+! ******************
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-1_CNJ_NULL   !!= @CODE@ 
+
+VAI-1_CNJ_NULL_SG_SUFFIX ;
+VAI-1_CNJ_NULL_PL_SUFFIX ;
+
+LEXICON VAI-1_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
+
++1Sg:%>yân # ;
++2Sg:%>yan # ;
++3Sg:%>t # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>hk # ;
++X+3Sg:%>nâniwahk # ;
++X+3Sg:%>niwahk # ;
+
++X+4Sg:%>hiyik # ;
++X+4Sg:%>nâniwahiyik # ;
++X+4Sg:%>niwahiyik # ;
+
+LEXICON VAI-1_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
+
++1Pl:%>yâhk # ;
++12Pl:%>yahk # ;
++2Pl:%>yêk # ;
++3Pl:%>cik # ;
++4Sg/Pl:%>yit # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>hki # ;
++X+3Pl:%>nâniwahki # ;
++X+3Pl:%>niwahki # ;
+
++X+4Sg:%>hiyiki # ;
++X+4Sg:%>nâniwahiyiki # ;
++X+4Sg:%>niwahiyiki # ;
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-2_CNJ_NULL   !!= @CODE@ 
+
+VAI-2_CNJ_NULL_SG_SUFFIX ;
+VAI-2_CNJ_NULL_PL_SUFFIX ;
+
+LEXICON VAI-2_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
+
++1Sg:%>iyân # ;
++2Sg:%>iyan # ;
++3Sg:%>it # ;
++X:%>hk # ;
++X:%>inâniwahk # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>hk # ;
++X+3Sg:%>nâniwahk # ;
++X+3Sg:%>niwahk # ;
+
++X+4Sg:%>hiyik # ;
++X+4Sg:%>nâniwahiyik # ;
++X+4Sg:%>niwahiyik # ;
+
+
+LEXICON VAI-2_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
+
++1Pl:%>iyâhk # ;
++12Pl:%>iyahk # ;
++2Pl:%>iyêk # ;
++3Pl:%>icik # ;
++3Pl:%>ihkik # ;
++4Sg/Pl:%>iyit # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>ihki # ;
++X+3Pl:%>inâniwahki # ;
++X+3Pl:%>iniwahki # ;
+
++X+4Sg:%>ihiyiki # ;
++X+4Sg:%>inâniwahiyiki # ;
++X+4Sg:%>iniwahiyiki # ;
+
+
+
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+
+
+! ********************
+!!!! IMPERATIVE !!!!
+! ********************
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-1_IMP_NULL
+VAI-1_IMP_SG_SUFFIX ;
+VAI-1_IMP_NULL_PL_SUFFIX ;
+
+LEXICON VAI-1_IMP_SG_SUFFIX
++Imm+2Sg:%>   # ; ! 
++Del+2Sg:%>hkan   # ; !
+
+
+LEXICON VAI-1_IMP_NULL_PL_SUFFIX
++Imm+12Pl:%>tân	  # ; !
++Imm+2Pl:%>k	 # ; !
++Del+12Pl:%>hkahk   # ; !
++Del+2Pl:%>hkêk   # ; !
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-2_IMP_NULL
+VAI-2_IMP_SG_SUFFIX ;
+VAI-2_IMP_NULL_PL_SUFFIX ;
+
+LEXICON VAI-2_IMP_SG_SUFFIX
++Imm+2Sg:%>i   # ; ! 
++Del+2Sg:%>îhkan   # ; !
+
+
+LEXICON VAI-2_IMP_NULL_PL_SUFFIX
++Imm+12Pl:%>itân	  # ; !
++Imm+2Pl:%>ik	 # ; !
++Del+12Pl:%>îhkahk   # ; !
++Del+2Pl:%>îhkêk   # ; !
+
+
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+
+
+! ****************************
+!!!! FUTURE CONDITIONAL !!!!
+! ****************************
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-1_FUT_CON_NULL   !!= @CODE@ 
+
+VAI-1_FUT_CON_NULL_SG_SUFFIX ;
+VAI-1_FUT_CON_NULL_PL_SUFFIX ;
+
+LEXICON VAI-1_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
+
++1Sg:%>yâni # ;
++2Sg:%>yani # ;
++3Sg:%>ci # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>hki # ;
++X+4Sg:%>yiki # ;
+
+LEXICON VAI-1_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
+
++1Pl:%>yâhki # ;
++12Pl:%>yahko # ;
++12Pl:%>yahki # ;
++2Pl:%>yêko # ;
++3Pl:%>twâwi # ;
++4Sg/Pl:%>yici # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>hkwâwi # ;
++X+4Pl:%>yikwâwi # ;
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAI-2_FUT_CON_NULL   !!= @CODE@ 
+
+VAI-2_FUT_CON_NULL_SG_SUFFIX ;
+VAI-2_FUT_CON_NULL_PL_SUFFIX ;
+
+LEXICON VAI-2_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
+
++1Sg:%>iyâni # ;
++2Sg:%>iyani # ;
++3Sg:%>ici # ;
++3Sg:%>hki # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>ihki # ;
++X+4Sg:%>iyiki # ;
+
+LEXICON VAI-2_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
+
++1Pl:%>iyâhki # ;
++12Pl:%>iyahko # ;
++12Pl:%>iyahki # ;
++2Pl:%>iyêko # ;
++3Pl:%>itwâwi # ;
++3Pl:%>ihkwâwi # ;
++4Sg/Pl:%>iyici # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>ihkwâwi # ;
++X+4Pl:%>iyikwâwi # ;
+
+
+
+!! !!! Transitive inanimate (TI)
+!      ===========================
+!      ===========================
+
+!!! STEM CLASS
+
+LEXICON VTI-1  !!= * @CODE@ 
++V+TI: VTI-1_WICI ;
+
+LEXICON VTI-1_PL  !!= * @CODE@  Plural
++V+TI: VTI-1_PL_WICI ;
+
+LEXICON VTIw  !!= * @CODE@ NOTE: These inflect just as VAI -w final stems, so they are redirected to those paradigms
++V+TI: VAI-1_WICI ; 
+ 
+
+!!! WICI
+
+! ===========================================================
+! ===========================================================
+!!!!! -t final verbs (refers to the stem ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+
+LEXICON VTI-1_WICI
+@U.wici.NULL@ VTI-1_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@amôm VTA-3_ORDER ;
+
+LEXICON VTI-1_PL_WICI
+@U.wici.NULL@ VTI-1_PL_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@amôm VTA-3_PL_ORDER ;
+
+!!! ORDERS
+
+! ===========================================================
+! ===========================================================
+!!!!! -t final verbs (refers to the stem ending) !!!!!
+! ===========================================================
+! =========================================================== ! imperative and fut con do not take tense
+
+LEXICON VTI-1_ORDER !!= @CODE@ . 
+@U.order.indep@+Ind:@U.order.indep@ VTI-1_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTI-1_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTI-1_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTI-1_FUT_CON_PERSON ; !
+
+LEXICON VTI-1_PL_ORDER !!= @CODE@ plural only NOTE: imperative and fut con go straight to person lexica
+@U.order.indep@+Ind:@U.order.indep@ VTI-1_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTI-1_PL_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTI-1_PL_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTI-1_PL_FUT_CON_PERSON ; !
+
+!!! TENSES
+
+! ===========================================================
+! ===========================================================
+!!!!! -t final verbs (refers to the stem ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+
+LEXICON VTI-1_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTI-1_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTI-1_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTI-1_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTI-1_IND_PERSON ; !
+
+LEXICON VTI-1_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTI-1_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTI-1_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTI-1_CNJ_PERSON ; !intentional
+
+LEXICON VTI-1_PL_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTI-1_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTI-1_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTI-1_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTI-1_PL_IND_PERSON ; !
+
+LEXICON VTI-1_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTI-1_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTI-1_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTI-1_PL_CNJ_PERSON ; !intentional
+
+
+!!! PERSON
+
+! ===========================================================
+! ===========================================================
+!!!!! -t final verbs (refers to the stem ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+
+LEXICON VTI-1_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTI-1_IND_NI ;
+@U.person.KI@ VTI-1_IND_KI ;
+@U.person.NULL@ VTI-1_IND_NULL ;
+
+LEXICON VTI-1_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VTI-1_CNJ_NULL ;
+
+LEXICON VTI-1_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VTI-1_FUT_CON_NULL ;
+
+LEXICON VTI-1_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VTI-1_IMP_NULL ;
+
+LEXICON VTI-1_PL_IND_PERSON !!= @CODE@ plural only
+@U.person.NI@ VTI-1_IND_NI_PL_SUFFIX ;
+@U.person.KI@ VTI-1_IND_KI_PL_SUFFIX ;
+@U.person.NULL@ VTI-1_IND_NULL_PL_SUFFIX ;
+
+LEXICON VTI-1_PL_CNJ_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VTI-1_CNJ_NULL_PL_SUFFIX ;
+
+LEXICON VTI-1_PL_FUT_CON_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VTI-1_FUT_CON_NULL_PL_SUFFIX ;
+
+LEXICON VTI-1_PL_IMP_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VTI-1_IMP_NULL_PL_SUFFIX ;
+
+!!! SUFFIXES
+
+! *********************
+!!!! INDEPENDENT !!!!
+! *********************
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -t final verbs (refers to the stem ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+
+LEXICON VTI-1_IND_NI   !!= @CODE@  
+VTI-1_IND_NI_SG_SUFFIX ;
+VTI-1_IND_NI_PL_SUFFIX ;
+
+LEXICON VTI-1_IND_NI_SG_SUFFIX   !!= @CODE@ 
++1Sg:%>n2 # ;
+
+LEXICON VTI-1_IND_NI_PL_SUFFIX   !!= @CODE@ 
++1Pl:%>n2ân # ;
+
+LEXICON VTI-1_IND_KI   !!= @CODE@  
+VTI-1_IND_KI_SG_SUFFIX ;
+VTI-1_IND_KI_PL_SUFFIX ;
+
+LEXICON VTI-1_IND_KI_SG_SUFFIX   !!= @CODE@ 
++2Sg:%>n2 # ;
+
+LEXICON VTI-1_IND_KI_PL_SUFFIX   !!= @CODE@ 
++12Pl:%>n2aw # ;
++12Pl:%>n2ânaw # ;
++2Pl:%>n2âwâw # ;
+
+LEXICON VTI-1_IND_NULL   !!= @CODE@  
+VTI-1_IND_NULL_SG_SUFFIX ;
+VTI-1_IND_NULL_PL_SUFFIX ;
+
+LEXICON VTI-1_IND_NULL_SG_SUFFIX   !!= @CODE@ NOTE: X actor will eventually derive to VII, so it is not yet included as per Arok's paradigm
++3Sg:%>m # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X:%>ikâtê VIIw_IND_SG_SUFFIX ;
+
+
+
+LEXICON VTI-1_IND_NULL_PL_SUFFIX   !!= @CODE@ 
++3Pl:%>mwak # ;
++4Sg/Pl:%>miyiwa # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X:%>ikâtê VIIw_IND_PL_SUFFIX ;
+
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+
+
+! ******************
+!!!! CONJUNCT !!!!
+! ******************
+
+! ===========================================================
+! ===========================================================
+!!!!! -t final verbs (refers to the stem ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+
+LEXICON VTI-1_CNJ_NULL   !!= @CODE@ 
+
+VTI-1_CNJ_NULL_SG_SUFFIX ;
+VTI-1_CNJ_NULL_PL_SUFFIX ;
+
+LEXICON VTI-1_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
+
++1Sg:%>mân # ;
++2Sg:%>man # ;
++3Sg:%>hk # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>mihk # ;
++X+4Sg:%>mihiyik # ;
+
+LEXICON VTI-1_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
+
++1Pl:%>mâhk # ;
++12Pl:%>mahk # ;
++2Pl:%>mêk # ;
++3Pl:%>hkik # ;
++4Sg/Pl:%>miyit # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Pl:%>mihki # ;
++X+4Pl:%>mihiyiki # ;
+
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+
+
+! ********************
+!!!! IMPERATIVE !!!!
+! ********************
+
+! ===========================================================
+! ===========================================================
+!!!!! -t final verbs (refers to the stem ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+
+LEXICON VTI-1_IMP_NULL
+VTI-1_IMP_SG_SUFFIX ;
+VTI-1_IMP_NULL_PL_SUFFIX ;
+
+LEXICON VTI-1_IMP_SG_SUFFIX
++Imm+2Sg:%>   # ; ! 
++Del+2Sg:%>môhkan   # ; !
+
+
+LEXICON VTI-1_IMP_NULL_PL_SUFFIX
++Imm+12Pl:%>tân	  # ; ! ! <a> to <ê> / _ %>tân
++Imm+2Pl:%>mok	 # ; !
++Del+12Pl:%>môhkahk   # ; !
++Del+2Pl:%>môhkêk   # ; !
+
+
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+
+
+! ****************************
+!!!! FUTURE CONDITIONAL !!!!
+! ****************************
+
+! ===========================================================
+! ===========================================================
+!!!!! -t final verbs (refers to the stem ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+
+LEXICON VTI-1_FUT_CON_NULL   !!= @CODE@ 
+
+VTI-1_FUT_CON_NULL_SG_SUFFIX ;
+VTI-1_FUT_CON_NULL_PL_SUFFIX ;
+
+LEXICON VTI-1_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
+
++1Sg:%>mâni # ;
++2Sg:%>mani # ;
++3Sg:%>hki # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>mihki # ;
++X+4Sg:%>mihiyiki # ;
+
+LEXICON VTI-1_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
+
++1Pl:%>mâhki # ;
++12Pl:%>mahko # ;
++12Pl:%>mahki # ;
++2Pl:%>mêko # ;
++3Pl:%>hkwâwi # ;
++4Sg/Pl:%>miyici # ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X+3Sg:%>mihkwâwi # ;
++X+4Sg:%>mihiyikwâwi # ;
+
+! !! !!! Transitive inanimate (TA)
+! !      ===========================
+! !      ===========================
+
+!!! STEM CLASS
+
+LEXICON VTA-1  !!= * @CODE@ Multi-Syllabic stems 
++V+TA: VTA-1_WICI ;
+
+LEXICON VTA-1_PL  !!= * @CODE@ Multi-Syllabic stems plural only forms
++V+TA: VTA-1_PL_WICI ;
+
+LEXICON VTA-2  !!= * @CODE@ Mono-Syllabic stems
++V+TA: VTA-2_WICI ;
+
+
+!!! WICI
+
+
+LEXICON VTA-1_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
+@U.wici.NULL@ VTA-1_ORDER ;
+
+LEXICON VTA-1_PL_WICI  !!= * @CODE@ -Vw stem-ending verbs; when deletes w and i plural only forms 
+@U.wici.NULL@ VTA-1_PL_ORDER ;
+
+LEXICON VTA-2_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
+@U.wici.NULL@ VTA-2_ORDER ;
+
+
+!!! ORDERS
+
+LEXICON VTA-1_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense
+@U.order.indep@+Ind:@U.order.indep@ VTA-1_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA-1_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTA-1_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-1_FUT_CON_PERSON ; !
+
+LEXICON VTA-1_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
+@U.order.indep@+Ind:@U.order.indep@ VTA-1_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA-1_PL_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTA-1_PL_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-1_PL_FUT_CON_PERSON ; !
+
+LEXICON VTA-2_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
+@U.order.indep@+Ind:@U.order.indep@ VTA-1_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA-1_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTA-2_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-1_FUT_CON_PERSON ; !
+
+!!! Tenses
+
+LEXICON VTA-1_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTA-1_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTA-1_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTA-1_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-1_IND_PERSON ; !
+
+LEXICON VTA-1_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTA-1_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTA-1_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-1_CNJ_PERSON ; !intentional
+
+LEXICON VTA-1_PL_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTA-1_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTA-1_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTA-1_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-1_PL_IND_PERSON ; !
+
+LEXICON VTA-1_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VTA-1_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VTA-1_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-1_PL_CNJ_PERSON ; !intentional
+
+
+
+!!! PERSON
+
+
+LEXICON VTA-1_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTA-1_IND_NI ;
+@U.person.KI@ VTA-1_IND_KI ;
+@U.person.NULL@ VTA-1_IND_NULL ;
+
+LEXICON VTA-1_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VTA-1_CNJ_NULL ;
+
+LEXICON VTA-1_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VTA-1_FUT_CON_NULL ;
+
+LEXICON VTA-1_IMP_PERSON !!= @CODE@ Identical to TA IMP
+
+LEXICON VTA-1_PL_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VTA-1_IND_NI_PL_SUFFIX ;
+@U.person.KI@ VTA-1_IND_KI_PL_SUFFIX ;
+@U.person.NULL@ VTA-1_IND_NULL_PL_SUFFIX ;
+
+LEXICON VTA-1_PL_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VTA-1_CNJ_NULL_PL_SUFFIX ;
+
+LEXICON VTA-1_PL_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VTA-1_FUT_CON_NULL_PL_SUFFIX ;
+
+LEXICON VTA-1_PL_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VTA_IMP_NULL_PL_SUFFIX ;
+
+
+!!! SUFFIXES
+
+
+! ********************
+!!!! Independent !!!!
+! ********************
+
+
+
+LEXICON VTA-1_IND_NI   !!= @CODE@  NOTE: No local, as local forms are always with ki-
+VTA-1_IND_NI_SG_SUFFIX ;
+VTA-1_IND_NI_PL_SUFFIX ;
+
+! ~~~~~~~~~~~~~~~~~~~~~~
+!!!!!! SINGULAR !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTA-1_IND_NI_SG_SUFFIX   !!= @CODE@
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!! Mixed !!!!!!!
+
++1Sg+3SgO:%>âw		  # ;
++1Sg+4Sg/PlO:%>i2mâwa	  # ; ! From NS 152
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Inverse !!!!!!
+!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!! Mixed !!!!!!!
+
++3Sg+1SgO:%>i2k        # ;
++4Sg/Pl+1SgO:%>i2koyiwa	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Sg:%>i2kawin   # ;
+
+
+! ~~~~~~~~~~~~~~~~~~~~
+!!!!!! PLURAL !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTA-1_IND_NI_PL_SUFFIX   !!= @CODE@ 
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!! Mixed !!!!!!!
+
++1Sg+3PlO:%>âwak	  # ;
+
++1Pl+3SgO:%>ânân	  # ;
++1Pl+3PlO:%>ânânak	  # ;
++1Pl+4Sg/PlO:%>i2mânâna	  # ; ! From NS 152
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Inverse !!!!!!
+!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!! Mixed !!!!!!!
+
++3Sg+1PlO:%>i2konân	  # ;
+
++3Pl+1SgO:%>i2kwak	  # ;
++3Pl+1PlO:%>i2konânak  # ;
++4Sg/Pl+1PlO:%>i2konâna	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Pl:%>i2kawinân   # ;
+
+
+!!!!!! KI- PREFIXING FORMS !!!!!!
+! =================================
+
+LEXICON VTA-1_IND_KI   !!= @CODE@  
+VTA-1_IND_KI_SG_SUFFIX ;
+VTA-1_IND_KI_PL_SUFFIX ;
+
+! ~~~~~~~~~~~~~~~~~~~~~~
+!!!!!! SINGULAR !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTA-1_IND_KI_SG_SUFFIX   !!= @CODE@ 
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!! Local !!!!!!!
+
++2Sg+1SgO:%>in         # ;
+
+!!!!!!!! Mixed !!!!!!!
+
++2Sg+3SgO:%>âw		  # ;
++2Sg+4Sg/PlO:%>i2mâwa	  # ; ! From NS 152
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Inverse !!!!!!
+!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!! Local !!!!!!!
+
++1Sg+2SgO:%>i2tin         # ;
+
+!!!!!!!! Mixed !!!!!!!
+
++3Sg+2SgO:%>i2k		  # ;
++4Sg/Pl+2SgO:%>i2koyiwa	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+2Sg:%>i2kawin   # ;
+
+! ~~~~~~~~~~~~~~~~~~~~
+!!!!!! PLURAL !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTA-1_IND_KI_PL_SUFFIX   !!= @CODE@ 
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!! Local !!!!!!!
+
++2Sg+1PlO:%>inân       # ;
++2Pl+1SgO:%>inâwâw     # ;
++2Pl+1PlO:%>inân       # ;
+
+!!!!!!!! Mixed !!!!!!!
+
++2Sg+3PlO:%>âwak # ;
+
++2Pl+3SgO:%>âwâw	  # ;
++2Pl+3PlO:%>âwâwak	  # ;
++2Pl+4Sg/PlO:%>i2mâwâwa	  # ; ! From NS 152
+
++12Pl+3SgO:%>ânaw	  # ; ! 12Pl forms
++12Pl+3PlO:%>ânawak	  # ;
++12Pl+4Sg/PlO:%>i2mânawa	  # ; ! From NS 152
+
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Inverse !!!!!!
+!!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!!! Local !!!!!!!
+
++1Sg+2PlO:%>i2tinâwâw         # ;
++1Pl+2SgO:%>i2tinân         # ; !OBS
++1Pl+2PlO:%>i2tinân         # ;
+
+!!!!!!!! Mixed !!!!!!!
+
++3Sg+12PlO:%>i2konaw	  # ;
++3Sg+2PlO:%>i2kowâw	  # ;
+
++3Pl+2SgO:%>i2kwak	  # ;
++3Pl+12PlO:%>i2konawak # ;
++3Pl+2PlO:%>i2kowâwak  # ;
+
++4Sg/Pl+12PlO:%>i2konawa	   # ; ! FROM NS 152
++4Sg/Pl+2PlO:%>i2kowâwa	   # ; ! FROM NS 152
+
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+12Pl:%>i2kawinânaw	   # ;
++X+12Pl:%>i2kawinaw	   # ;
++X+2Pl:%>i2kawinâwâw	   # ;
+
+
+!!!!!! NULL PREFIXING FORMS !!!!!!
+! ==================================
+
+LEXICON VTA-1_IND_NULL   !!= @CODE@  NOTE: never local
+VTA-1_IND_NULL_SG_SUFFIX ;
+VTA-1_IND_NULL_PL_SUFFIX ;
+
+
+! ~~~~~~~~~~~~~~~~~~~~~~
+!!!!!! SINGULAR !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTA-1_IND_NULL_SG_SUFFIX   !!= @CODE@ 
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!! Mixed !!!!!!!
+
++3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons 
++3Sg+5Sg/PlO:%>i2mêw		  # ; ! Implementing fourth, fifth persons 
++4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing fourth, fifth persons
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Inverse !!!!!!
+!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!! Mixed !!!!!!!
+
++4Sg/Pl+3SgO:%>i2k	   # ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>i2koyiwa	   # ; ! FROM NS 152
+
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+3Sg:%>âw   # ;
++X+4Sg/Pl:%>âyiwa   # ;
+
+
+! ~~~~~~~~~~~~~~~~~~~~
+!!!!!! PLURAL !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTA-1_IND_NULL_PL_SUFFIX   !!= @CODE@ 
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!! Mixed !!!!!!!
+
++3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing fourth, fifth persons
++3Pl+5Sg/PlO:%>i2mêwak	# ;	
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Inverse !!!!!!
+!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!! Mixed !!!!!!!
+
+
++4Sg/Pl+3PlO:%>i2kwak	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+3Pl:%>âwak   # ;
+
+
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+
+
+! ********************
+!!!! Conjunct !!!!
+! ********************
+
+
+
+LEXICON VTA-1_CNJ_NULL
+VTA-1_CNJ_NULL_SG_SUFFIX ;
+VTA-1_CNJ_NULL_PL_SUFFIX ;
+
+!! ~~~~~~~~~~~~~~~~~~~~~~
+!!!!!! SINGULAR !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTA-1_CNJ_NULL_SG_SUFFIX
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!! Local !!!!!!!
+
++2Sg+1SgO:%>iyan       # ;
+
+!!!!!!! Mixed !!!!!!!
+
++1Sg+3SgO:%>ak	   # ;
++2Sg+3SgO:%>at	   # ;
+
++1Sg+4Sg/PlO:%>i2mak	   # ; ! From NS 152
++2Sg+4Sg/PlO:%>i2mat	   # ; ! From NS 152
+
+!!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+
++3Sg+4Sg/PlO:%>ât	   # ;
+
++4Sg/PlO+5Sg/PlO:%>âyit      # ; ! From NS 152
+
++3Sg+5Sg/PlO:%>i2mât	   # ;
+
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Inverse !!!!!!
+!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!! Local !!!!!!!
+
++1Sg+2SgO:%>i2tân         # ;
+
+!!!!!!! Mixed !!!!!!!
+
++3Sg+1SgO:%>it		   # ;
++3Sg+2SgO:%>i2sk		   # ;
+
++4Sg/Pl+1SgO:%>i2mit	   # ; ! FROM NS 152
++4Sg/Pl+2SgO:%>i2misk	   # ;
+
+!!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+
++4Sg/Pl+3SgO:%>i2kot	   # ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>i2koyit	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Sg:%>i2kawiyân	   # ;
++X+2Sg:%>i2kawiyan	   # ;
+
++X+3Sg:%>i2ht	   # ;
++X+4Sg/Pl:%>i2miht	   # ;
+
+
+! ~~~~~~~~~~~~~~~~~~~~
+! ~~~~~~~~~~~~~~~~~~~~
+!!!!!! PLURAL !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~ 
+! ~~~~~~~~~~~~~~~~~~~~
+LEXICON VTA-1_CNJ_NULL_PL_SUFFIX
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!! Local !!!!!!!
+
++2Sg+1PlO:%>iyâhk       # ;
+
++2Pl+1PlO:%>iyâhk       # ;
++2Pl+1SgO:%>iyêk       # ;
+
+!!!!!!! Mixed !!!!!!!
+
++1Sg+3PlO:%>akik	   # ;
+
++2Sg+3PlO:%>acik	   # ;
+
++1Pl+3SgO:%>âyâhk	   # ;
++1Pl+3PlO:%>âyâhkik	   # ;
+
++12Pl+3SgO:%>âyahk	   # ;
++12Pl+3PlO:%>âyahkok   # ;
+
++2Pl+3SgO:%>âyêk	   # ;
++2Pl+3PlO:%>âyêkok	   # ;
+
++1Pl+4Sg/PlO:%>i2mâyâhk	   # ; ! From NS 152
++12Pl+4Sg/PlO:%>i2mâyahk   # ; ! From NS 152
++2Pl+4Sg/PlO:%>i2mâyek   # ; ! From NS 152
+
+!!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+
++3Pl+4Sg/PlO:%>âcik      # ; ! From NS 152
+
++3Pl+5Sg/PlO:%>i2mâcik      # ; ! From NS 152
+
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Inverse !!!!!!
+!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!! Local !!!!!!!
+
++1Pl+2SgO:%>i2tâhk         # ; 
+
++1Pl+2PlO:%>i2tâhk         # ; 
++1Sg+2PlO:%>i2takok         # ;
+
+!!!!!!! Mixed !!!!!!!
+
++3Pl+1SgO:%>icik	   # ;
+
++3Pl+2SgO:%>i2skik	   # ;
+
++3Sg+1PlO:%>i2koyâhk	   # ;
++3Pl+1PlO:%>i2koyâhkik  # ;
+
++3Sg+12PlO:%>i2koyahk   # ;
++3Pl+12PlO:%>i2koyahkok # ;
+
++3Sg+2PlO:%>i2koyek	   # ;
++3Pl+2PlO:%>i2koyêkok   # ;
+
++4Sg/Pl+1PlO:%>i2koyâhk	   # ; ! FROM NS 152
++4Sg/Pl+12PlO:%>i2koyahk	   # ;
++4Sg/Pl+2PlO:%>i2koyêk	   # ;
+
+!!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+
++4Sg/Pl+3PlO:%>i2kocik	   # ; ! FROM NS 152
+
+!           ********
+! **** Unspecified Actor ****
+!           ********  NOTE: always mixed
+
++X+1Pl:%>i2kawiyâhk	   # ;
++X+12Pl:%>i2kawiyahk	   # ;
++X+2Pl:%>i2kawiyêk	   # ;
+
++X+3Pl:%>i2hcik	   # ;
+
+
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+
+
+! ********************
+!!!! Imperative !!!!
+! ********************
+
+! ==========================
+! ==========================
+!!!!! Regular verbs !!!!!
+! ==========================
+! ==========================
+
+LEXICON VTA_IMP_NULL
+VTA_IMP_NULL_SG_SUFFIX ;
+VTA_IMP_NULL_PL_SUFFIX ;
+
+! ~~~~~~~~~~~~~~~~~~~~~~
+!!!!!! SINGULAR !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTA_IMP_NULL_SG_SUFFIX
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!! Local !!!!!!!
+
++Imm+2Sg+1SgO:%>in # ;
+
++Del+2Sg+1SgO:%>ii2hkan # ;
+
+
+!!!!!!! Mixed !!!!!!!
+
++Imm+2Sg+3SgO: # ;
+
++Del+2Sg+3SgO:%>âhkan # ;
+
+
+LEXICON VTA_IMP_NULL_PL_SUFFIX
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!! Local !!!!!!!
+
++Imm+2Sg+1PlO:%>inân # ;
++Imm+2Pl+1SgO:%>ik # ;
+
++Del+2Sg+1PlO:%>ii2hkâhk # ;
++Del+2Pl+1PlO:%>ii2hkâhk # ;
++Del+2Pl+1SgO:%>ii2hkêk # ;
+
+
+!!!!!!! Mixed !!!!!!!
+
++Imm+2Sg+3PlO:%>ik # ;
+
++Imm+12Pl+3SgO:%>âtân # ;
++Imm+12Pl+3PlO:%>âtânik # ;
+
++Imm+2Pl+3SgO:%>ihk # ;
++Imm+2Pl+3PlO:%>ihkok # ;
+
++Del+2Sg+3PlO:%>âhkanik # ;
+
++Del+12Pl+3SgO:%>âhkahk # ;
++Del+12Pl+3PlO:%>âhkahkok # ;
+ 
++Del+2Pl+3SgO:%>âhkêk # ;
++Del+2Pl+3PlO:%>âhkêkok # ;
+
+! =================================
+! =================================
+!!!!! irregular stems !!!!!
+! =================================
+! =================================
+
+LEXICON VTA-2_IMP_NULL
+VTA-2_IMP_NULL_SG_SUFFIX ;
+VTA-2_IMP_NULL_PL_SUFFIX ;
+
+! ~~~~~~~~~~~~~~~~~~~~~~
+!!!!!! SINGULAR !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTA-2_IMP_NULL_SG_SUFFIX
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!! Local !!!!!!!
+
++Imm+2Sg+1SgO:%>in # ;
+
++Del+2Sg+1SgO:%>ii2hkan # ;
+
+
+!!!!!!! Mixed !!!!!!!
+
++Imm+2Sg+3SgO:i2 # ;
+
++Del+2Sg+3SgO:%>âhkan # ;
+
+
+LEXICON VTA-2_IMP_NULL_PL_SUFFIX
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!! Local !!!!!!!
+
++Imm+2Sg+1PlO:%>inân # ;
++Imm+2Pl+1SgO:%>ik # ;
+
++Del+2Sg+1PlO:%>ii2hkâhk # ;
++Del+2Pl+1PlO:%>ii2hkâhk # ;
++Del+2Pl+1SgO:%>ii2hkêk # ;
+
+
+!!!!!!! Mixed !!!!!!!
+
++Imm+2Sg+3PlO:%>ik # ;
+
++Imm+12Pl+3SgO:%>âtân # ;
++Imm+12Pl+3PlO:%>âtânik # ;
+
++Imm+2Pl+3SgO:%>ihk # ;
++Imm+2Pl+3PlO:%>ihkok # ;
+
++Del+2Sg+3PlO:%>âhkanik # ;
+
++Del+12Pl+3SgO:%>âhkahk # ;
++Del+12Pl+3PlO:%>âhkahkok # ;
+ 
++Del+2Pl+3SgO:%>âhkêk # ;
++Del+2Pl+3PlO:%>âhkêkok # ;
+
+
+
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+! ===================================================================================================================
+
+
+! ****************************
+!!!! FUTURE CONDITIONAL !!!!
+! ****************************
+
+
+
+
+LEXICON VTA-1_FUT_CON_NULL
+VTA-1_FUT_CON_NULL_SG_SUFFIX ;
+VTA-1_FUT_CON_NULL_PL_SUFFIX ;
+! ~~~~~~~~~~~~~~~~~~~~~~
+!!!!!! SINGULAR !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTA-1_FUT_CON_NULL_SG_SUFFIX
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!! Local !!!!!!!
+
++2Sg+1SgO:%>iyani       # ;
+
+!!!!!!! Mixed !!!!!!!
+
++1Sg+3SgO:%>aki	   # ;
++2Sg+3SgO:%>aci	   # ;
+
++1Sg+4Sg/PlO:%>i2maki	   # ;
++2Sg+4Sg/PlO:%>i2maci	   # ;
+
+!!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+
++3Sg+4Sg/PlO:%>âci	   # ;
+
++4Sg/PlO+5Sg/PlO:%>âyici      # ; ! From NS 152
+
++3Sg+5Sg/PlO:%>i2mâci      # ; ! From NS 152
+
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Inverse !!!!!!
+!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!! Local !!!!!!!
+
++1Sg+2SgO:%>i2tâni	   # ;
+
+!!!!!!! Mixed !!!!!!!
+
++3Sg+1SgO:%>ici		   # ;
++3Sg+2SgO:%>i2ski		   # ;
+
++4Sg/Pl+1SgO:%>i2mici	   # ;
++4Sg/Pl+2SgO:%>i2miski	   # ;
+
+!!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+
++4Sg/Pl+3SgO:%>i2koci		   # ;
++5Sg/Pl+4Sg/PlO:%>i2koyici		   # ;
+
+
+! ~~~~~~~~~~~~~~~~~~~~
+! ~~~~~~~~~~~~~~~~~~~~
+!!!!!! PLURAL !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~ 
+! ~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTA-1_FUT_CON_NULL_PL_SUFFIX
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!! Local !!!!!!!
+
++2Sg+1PlO:%>iyâhki       # ;
+
++2Pl+1PlO:%>iyâhki       # ;
++2Pl+1SgO:%>iyêko       # ;
+
+!!!!!!! Mixed !!!!!!!
+
++1Sg+3PlO:%>akwâwi	   # ;
+
++2Sg+3PlO:%>atwâwi	   # ;
+
++1Pl+3SgO:%>âyâhki	   # ;
++1Pl+3PlO:%>âyâhkwâwi	   # ;
+
++12Pl+3SgO:%>âyahko	   # ;
++12Pl+3PlO:%>âyahkwâwi   # ;
+
++2Pl+3SgO:%>âyêko	   # ;
++2Pl+3PlO:%>âyêkwâwi	   # ;
+
++1Pl+4Sg/PlO:%>i2mâyâhki	   # ;
++12Pl+4Sg/PlO:%>i2mâyahko	   # ;
++12Pl+4Sg/PlO:%>i2mâyahki	   # ;
++2Pl+4Sg/PlO:%>i2mâyêko	   # ;
+
+
+!!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+
++3Pl+4Sg/PlO:%>âtwâwi     # ; ! From NS 152
+
++3Pl+5Sg/PlO:%>i2mâtwâwi      # ; ! From NS 152
+
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!!!! Inverse !!!!!!
+!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!! Local !!!!!!!
+
++1Pl+2SgO:%>i2tâhki # ;
+
++1Pl+2PlO:%>i2tâhki	   # ;
++1Sg+2PlO:%>i2tako	   # ;
+
+!!!!!!! Mixed !!!!!!!
+
++3Pl+1SgO:%>itwâwi	   # ;
+
++3Pl+2SgO:%>i2skwâwi		   # ;
+
++3Sg+1PlO:%>i2koyâhki		   # ;
++3Sg+12PlO:%>i2koyahki		   # ;
++3Pl+1PlO:%>i2koyâhkwâwi		   # ;
+
++3Sg+12PlO:%>i2koyahko 		   # ;
++3Pl+12PlO:%>i2koyahkwâwi		   # ;
+
++3Sg+2PlO:%>i2koyêko		   # ; 
++3Pl+2PlO:%>i2koyêkwâwi		   # ;
+
++4Sg/Pl+1PlO:%>i2koyâhki	   # ;
++4Sg/Pl+12PlO:%>i2koyahko	   # ;
++4Sg/Pl+12PlO:%>i2koyahki	   # ;
++4Sg/Pl+2PlO:%>i2koyêko	   # ;
+
+
+!!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+
++4Sg/Pl+3PlO:%>i2kotwâwi		   # ;
+
+
+
+
+! 
+! 
+! 
+! 
+! 
+! !! !!! Transitive inanimate (TA)
+! !      ===========================
+! !      ===========================
+! 
+! !! The VTA verbs split in different orders.
+! !! There are 5 stem classes in Wolv, 1-5 (VTA-1 through VTA-5)
+! 
+! !!! STEM CLASS
+! 
+! LEXICON VTA-1 !!= @CODE@ Regular verbs
+! +V+TA: VTA-1_WICI ;
+! 
+! LEXICON TACONJ_2  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
+! +V+TA: VTA-2_WICI ;
+! 
+! LEXICON VTA-2_PL  !!= * @CODE@ -Vw stem-ending verbs; when deletes w and i plural only forms
+! +V+TA: VTA-2_PL_WICI ;
+! 
+! LEXICON VTA-3  !!= * @CODE@ -Cw stem-ending verbs; where w and i fuse to o
+! +V+TA: VTA-3_WICI;
+! 
+! LEXICON VTA-4  !!= * @CODE@ -t stem-ending verbs; where t becomes s in some cases
+! +V+TA: VTA-4_WICI ;
+! 
+! LEXICON VTA-5 !!= * @CODE@ verbs that take a -i in 2sg imm. imp. due to moraic constraints
+! +V+TA: VTA-5_WICI ;
+! 
+! LEXICON TACONJ_5-TS !!= * @CODE@  verbs that take a -i in 2sg imm. imp. due to moraic constraints, but also have stem final t becoming s in some cases.
+! +V+TA: VTA-4i_WICI ;
+! 
+! !!! WICI
+! 
+! !!!! -t final verbs (refers to the 3 SG form ending)
+! 
+! LEXICON VTA-1_WICI !!= @CODE@ Regular verbs
+! @U.wici.NULL@ VTA_ORDER ;
+! 
+! LEXICON VTA-2_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
+! @U.wici.NULL@ VTA-2_ORDER ;
+! 
+! 
+! LEXICON VTA-2_PL_WICI  !!= * @CODE@ -Vw stem-ending verbs; when deletes w and i plural only forms 
+! @U.wici.NULL@ VTA-2_PL_ORDER ;
+! 
+! 
+! LEXICON VTA-3_WICI  !!= * @CODE@ -Cw stem-ending verbs; where w and i fuse to o 
+! @U.wici.NULL@ VTA-3_ORDER ;
+! 
+! LEXICON VTA-4_WICI  !!= * @CODE@ -t stem-ending verbs; where t becomes s in some cases 
+! @U.wici.NULL@ VTA-4_ORDER ;
+! 
+! 
+! LEXICON VTA-5_WICI  !!= * @CODE@ verbs that take a -i in 2sg imm. imp. due to moraic constraints 
+! @U.wici.NULL@ VTA-5_ORDER ;
+! 
+! 
+! !! LEXICON VTA-ti_WICI  !!= * @CODE@  verbs that take a -i in 2sg imm. imp. due to moraic constraints, but also have stem final t becoming s in some cases 
+! !! @U.wici.NULL@ VTAti_ORDER ;
+! 
+! 
+! !!! ORDERS
+! 
+! !!!! -t final verbs (refers to the 3 SG form ending) imperative and fut con do not take tense
+! 
+! LEXICON VTA_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
+! @U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
+! @U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
+! @U.order.imp@+Imp:@U.order.imp@  VTA_IMP_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA_FUT_CON_PERSON ; !
+! 
+! LEXICON VTA-2_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense
+! @U.order.indep@+Ind:@U.order.indep@ VTA-2_IND_TENSE ; !
+! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-2_CNJ_TENSE ; !
+! @U.order.imp@+Imp:@U.order.imp@  VTA-2_IMP_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-2_FUT_CON_PERSON ; !
+! 
+! LEXICON VTA-2_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
+! @U.order.indep@+Ind:@U.order.indep@ VTA-2_PL_IND_TENSE ; !
+! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-2_PL_CNJ_TENSE ; !
+! @U.order.imp@+Imp:@U.order.imp@  VTA-2_PL_IMP_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-2_PL_FUT_CON_PERSON ; !
+! 
+! LEXICON VTA-3_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
+! @U.order.indep@+Ind:@U.order.indep@ VTA-3_IND_TENSE ; !
+! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-3_CNJ_TENSE ; !
+! @U.order.imp@+Imp:@U.order.imp@  VTA-3_IMP_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-3_FUT_CON_PERSON ; !
+! 
+! LEXICON VTA-3_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
+! @U.order.indep@+Ind:@U.order.indep@ VTA-3_PL_IND_TENSE ; !
+! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-3_PL_CNJ_TENSE ; !
+! @U.order.imp@+Imp:@U.order.imp@  VTA-3_PL_IMP_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-3_PL_FUT_CON_PERSON ; !
+! 
+! 
+! LEXICON VTA-4_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Independent is same as TA regular
+! @U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
+! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-4_CNJ_TENSE ; !
+! @U.order.imp@+Imp:@U.order.imp@  VTA-4_IMP_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-4_FUT_CON_PERSON ; !
+! 
+! LEXICON VTA-5_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
+! @U.order.indep@+Ind:@U.order.indep@ VTA-4_IND_TENSE ; !
+! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-4_CNJ_TENSE ; !
+! @U.order.imp@+Imp:@U.order.imp@  VTA-5_IMP_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-4_FUT_CON_PERSON ; !
+! 
+! !! LEXICON VTAti_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Independent is as TA regular, Imp as TAi, all else is as TAt
+! !! @U.order.indep@+Ind:@U.order.indep@ VTA-4_IND_TENSE ; !
+! !! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-4_CNJ_TENSE ; !
+! !! @U.order.imp@+Imp:@U.order.imp@  VTA-5_IMP_PERSON ; !
+! !! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-4_FUT_CON_PERSON ; !
+! 
+! !!! TENSES
+! 
+! ! =========================
+! ! =========================
+! !!!!! Regular verbs !!!!!
+! ! =========================
+! ! =========================
+! 
+! LEXICON VTA_IND_TENSE
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA_IND_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA_IND_PERSON ; !
+! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTA_IND_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA_IND_PERSON ; !
+! 
+! LEXICON VTA_CNJ_TENSE
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA_CNJ_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA_CNJ_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA_CNJ_PERSON ; !intentional
+! 
+! ! ============================================================
+! ! ============================================================
+! !!!!! -Vw final verbs (refers to the 3 SG form ending) !!!!!
+! ! ============================================================
+! ! ============================================================
+! 
+! LEXICON VTA-2_IND_TENSE !!= @CODE@ plural only
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-2_IND_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-2_IND_PERSON ; !
+! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTA-2_IND_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-2_IND_PERSON ; !
+! 
+! LEXICON VTA-2_CNJ_TENSE !!= @CODE@ plural only
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-2_CNJ_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-2_CNJ_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-2_CNJ_PERSON ; !intentional
+! 
+! !!!! -Vw stem-ending verbs plural only !!!!
+! 
+! LEXICON VTA-2_PL_IND_TENSE !!= @CODE@ plural only
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-2_PL_IND_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-2_PL_IND_PERSON ; !
+! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTA-2_PL_IND_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-2_PL_IND_PERSON ; !
+! 
+! LEXICON VTA-2_PL_CNJ_TENSE !!= @CODE@ plural only
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-2_PL_CNJ_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-2_PL_CNJ_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-2_PL_CNJ_PERSON ; !intentional
+! 
+! ! ============================================================
+! ! ============================================================
+! !!!!! -Cw final verbs (refers to the 3 SG form ending) !!!!!
+! ! ============================================================
+! ! ============================================================
+! 
+! LEXICON VTA-3_IND_TENSE !!= @CODE@  
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-3_IND_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-3_IND_PERSON ; !
+! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTA-3_IND_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-3_IND_PERSON ; !
+! 
+! LEXICON VTA-3_CNJ_TENSE !!= @CODE@  
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-3_CNJ_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-3_CNJ_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-3_CNJ_PERSON ; !intentional
+! 
+! !!!! -Cw stem-ending plural only verbs !!!!
+! 
+! LEXICON VTA-3_PL_IND_TENSE !!= @CODE@ plural only
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-3_PL_IND_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-3_PL_IND_PERSON ; !
+! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTA-3_PL_IND_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-3_PL_IND_PERSON ; !
+! 
+! LEXICON VTA-3_PL_CNJ_TENSE !!= @CODE@ plural only
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-3_PL_CNJ_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-3_PL_CNJ_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-3_PL_CNJ_PERSON ; !intentional
+! 
+! ! ========================================================
+! ! ========================================================
+! !!!!! -t final verbs where -t becomes -s sometimes !!!!!
+! ! ========================================================
+! ! ======================================================== 
+! 
+! LEXICON VTA-4_IND_TENSE !!= @CODE@ plural only
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-4_IND_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-4_IND_PERSON ; !
+! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTA-4_IND_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-4_IND_PERSON ; !
+! 
+! LEXICON VTA-4_CNJ_TENSE !!= @CODE@ plural only
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-4_CNJ_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-4_CNJ_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-4_CNJ_PERSON ; !intentional
+! 
+! ! ===================================
+! ! ===================================
+! !!!!! -i 2SG imperative verbs !!!!!
+! ! ===================================
+! ! =================================== 
+! 
+! LEXICON VTA-5_IND_TENSE !!= @CODE@ plural only
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-5_IND_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-5_IND_PERSON ; !
+! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTA-5_IND_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-5_IND_PERSON ; !
+! 
+! LEXICON VTA-5_CNJ_TENSE !!= @CODE@ plural only
+! @U.tense.Prs@+Prs:@U.tense.Prs@ VTA-5_CNJ_PERSON ; !
+! @U.tense.Prt@+Prt:@U.tense.Prt@ VTA-5_CNJ_PERSON ; !
+! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTA-5_CNJ_PERSON ; !intentional
+! 
+! !! ! ===================================================================
+! !! ! ===================================================================
+! !! !!!!! -t stem ending that becomes -s; -i 2SG imperative verbs !!!!!
+! !! ! ===================================================================
+! !! ! =================================================================== 
+! !! 
+! !! LEXICON VTAti_IND_TENSE !!= @CODE@ plural only
+! !! @U.tense.Prs@+Prs:@U.tense.Prs@ VTAti_IND_PERSON ; !
+! !! @U.tense.Prt@+Prt:@U.tense.Prt@ VTAti_IND_PERSON ; !
+! !! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VTAti_IND_PERSON ; !
+! !! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAti_IND_PERSON ; !
+! !! 
+! !! LEXICON VTAti_CNJ_TENSE !!= @CODE@ plural only
+! !! @U.tense.Prs@+Prs:@U.tense.Prs@ VTAti_CNJ_PERSON ; !
+! !! @U.tense.Prt@+Prt:@U.tense.Prt@ VTAti_CNJ_PERSON ; !
+! !! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VTAti_CNJ_PERSON ; !intentional
+! 
+! 
+! !!! PERSON
+! 
+! ! =========================
+! ! =========================
+! !!!!! Regular verbs !!!!!
+! ! =========================
+! ! =========================
+! 
+! LEXICON VTA_IND_PERSON !!= @CODE@ 
+! @U.person.NI@ VTA_IND_NI ;
+! @U.person.KI@ VTA_IND_KI ;
+! @U.person.NULL@ VTA_IND_NULL ;
+! 
+! LEXICON VTA_CNJ_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA_CNJ_NULL ;
+! 
+! LEXICON VTA_FUT_CON_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA_FUT_CON_NULL ;
+! 
+! LEXICON VTA_IMP_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA_IMP_NULL ;
+! 
+! ! ============================================================
+! ! ============================================================
+! !!!!! -Vw final verbs (refers to the 3 SG form ending) !!!!!
+! ! ============================================================
+! ! ============================================================
+! 
+! LEXICON VTA-2_IND_PERSON !!= @CODE@ 
+! @U.person.NI@ VTA-2_IND_NI ;
+! @U.person.KI@ VTA-2_IND_KI ;
+! @U.person.NULL@ VTA-2_IND_NULL ;
+! 
+! LEXICON VTA-2_CNJ_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-2_CNJ_NULL ;
+! 
+! LEXICON VTA-2_FUT_CON_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-2_FUT_CON_NULL ;
+! 
+! LEXICON VTA-2_IMP_PERSON !!= @CODE@ Identical to TA IMP
+! @U.person.NULL@ VTA_IMP_NULL ;
+! 
+! !!!! -Vw stem-ending verbs plural only !!!!
+! 
+! LEXICON VTA-2_PL_IND_PERSON !!= @CODE@ 
+! @U.person.NI@ VTA-2_IND_NI_PL_SUFFIX ;
+! @U.person.KI@ VTA-2_IND_KI_PL_SUFFIX ;
+! @U.person.NULL@ VTA-2_IND_NULL_PL_SUFFIX ;
+! 
+! LEXICON VTA-2_PL_CNJ_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-2_CNJ_NULL_PL_SUFFIX ;
+! 
+! LEXICON VTA-2_PL_FUT_CON_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-2_FUT_CON_NULL_PL_SUFFIX ;
+! 
+! LEXICON VTA-2_PL_IMP_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA_IMP_NULL_PL_SUFFIX ;
+! 
+! ! ============================================================
+! ! ============================================================
+! !!!!! -Cw final verbs (refers to the 3 SG form ending) !!!!!
+! ! ============================================================
+! ! ============================================================
+! 
+! LEXICON VTA-3_IND_PERSON !!= @CODE@ 
+! @U.person.NI@ VTA-3_IND_NI ;
+! @U.person.KI@ VTA-3_IND_KI ;
+! @U.person.NULL@ VTA-3_IND_NULL ;
+! 
+! LEXICON VTA-3_CNJ_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-3_CNJ_NULL ;
+! 
+! LEXICON VTA-3_FUT_CON_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-3_FUT_CON_NULL ;
+! 
+! LEXICON VTA-3_IMP_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-3_IMP_NULL ;
+! 
+! !!!! -Cw stem-ending verbs plural only !!!!
+! 
+! LEXICON VTA-3_PL_IND_PERSON !!= @CODE@ 
+! @U.person.NI@ VTA-3_IND_NI_PL_SUFFIX ;
+! @U.person.KI@ VTA-3_IND_KI_PL_SUFFIX ;
+! @U.person.NULL@ VTA-3_IND_NULL_PL_SUFFIX ;
+! 
+! LEXICON VTA-3_PL_CNJ_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-3_CNJ_NULL_PL_SUFFIX ;
+! 
+! LEXICON VTA-3_PL_FUT_CON_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-3_FUT_CON_NULL_PL_SUFFIX ;
+! 
+! LEXICON VTA-3_PL_IMP_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA_IMP_NULL_PL_SUFFIX ;
+! 
+! 
+! ! ========================================================
+! ! ========================================================
+! !!!!! -t final verbs where -t becomes -s sometimes !!!!!
+! ! ========================================================
+! ! ========================================================
+! 
+! LEXICON VTA-4_IND_PERSON !!= @CODE@ 
+! @U.person.NI@ VTA_IND_NI ;
+! @U.person.KI@ VTA-4_IND_KI ;
+! @U.person.NULL@ VTA_IND_NULL ;
+! 
+! LEXICON VTA-4_CNJ_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-4_CNJ_NULL ;
+! 
+! LEXICON VTA-4_FUT_CON_PERSON !!= @CODE@
+! @U.person.NULL@ VTA_FUT_CON_NULL ;
+! 
+! LEXICON VTA-4_IMP_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-4_IMP_NULL ;
+! 
+! ! ===================================
+! ! ===================================
+! !!!!! -i 2SG imperative verbs !!!!!
+! ! ===================================
+! ! ===================================
+! 
+! 
+! LEXICON VTA-5_IND_PERSON !!= @CODE@ 
+! @U.person.NI@ VTA_IND_NI ;
+! @U.person.KI@ VTA_IND_KI ;
+! @U.person.NULL@ VTA_IND_NULL ;
+! 
+! LEXICON VTA-5_CNJ_PERSON !!= @CODE@
+! @U.person.NULL@ VTA_CNJ_NULL ;
+! 
+! LEXICON VTA-5_FUT_CON_PERSON !!= @CODE@
+! @U.person.NULL@ VTA_FUT_CON_NULL ;
+! 
+! LEXICON VTA-5_IMP_PERSON !!= @CODE@ 
+! @U.person.NULL@ VTA-5_IMP_NULL ;
+! 
+! !! ! ===================================================================
+! !! ! ===================================================================
+! !! !!!!! -t stem ending that becomes -s; -i 2SG imperative verbs !!!!!
+! !! ! ===================================================================
+! !! ! ===================================================================
+! !!  
+! !! 
+! !! LEXICON VTAti_IND_PERSON !!= @CODE@ 
+! !! @U.person.NI@ VTA_IND_NI ;
+! !! @U.person.KI@ VTA-4_IND_KI ;
+! !! @U.person.NULL@ VTA_IND_NULL ;
+! !! 
+! !! LEXICON VTAti_CNJ_PERSON !!= @CODE@
+! !! @U.person.NULL@ VTA-4_CNJ_NULL ;
+! !! 
+! !! LEXICON VTAti_FUT_CON_PERSON !!= @CODE@
+! !! @U.person.NULL@ VTA-4_FUT_CON_NULL ;
+! !! 
+! !! LEXICON VTAti_IMP_PERSON !!= @CODE@ 
+! !! @U.person.NULL@ VTA-5_IMP_NULL ;
+! 
+! 
+! 
+! !!! SUFFIXES
+! 
+! ! *********************
+! !!!! Independent !!!!
+! ! *********************
+! 
+! ! ==========================
+! ! ==========================
+! !!!!! Regular verbs !!!!!
+! ! ==========================
+! ! ==========================
+! 
+! !!!!!! NI- PREFIXING FORMS !!!!!!
+! ! =================================
+! 
+! 
+! LEXICON VTA_IND_NI   !!= @CODE@  NOTE: No local, as local forms are always with ki-
+! VTA_IND_NI_SG_SUFFIX ;
+! VTA_IND_NI_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA_IND_NI_SG_SUFFIX   !!= @CODE@
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3SgO:%>âw		  # ;
+! +1Sg+4Sg/PlO:%>imâwa	  # ; ! From NS 152
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1SgO:%>ik        # ;
+! +4Sg/Pl+1SgO:%>ikoyiwa	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Sg:%>ikawin	   # ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA_IND_NI_PL_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3PlO:%>âwak	  # ;
+! 
+! +1Pl+3SgO:%>ânân	  # ;
+! +1Pl+3PlO:%>ânânak	  # ;
+! +1Pl+4Sg/PlO:%>imânâna	  # ; ! From NS 152
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1PlO:%>ikonân	  # ;
+! 
+! +3Pl+1SgO:%>ikwak	  # ;
+! +3Pl+1PlO:%>ikonânak  # ;
+! +4Sg/Pl+1PlO:%>ikonâna	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Pl:%>ikawinân	   # ;
+! 
+! 
+! !!!!!! KI- PREFIXING FORMS !!!!!!
+! ! =================================
+! 
+! LEXICON VTA_IND_KI   !!= @CODE@  
+! VTA_IND_KI_SG_SUFFIX ;
+! VTA_IND_KI_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA_IND_KI_SG_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +2Sg+3SgO:%>âw		  # ;
+! +2Sg+4Sg/PlO:%>imâwa	  # ; ! From NS 152
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>in         # ;
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+2SgO:%>ik		  # ;
+! +4Sg/Pl+2SgO:%>ikoyiwa	   # ; ! FROM NS 152
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>itin         # ;
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+2Sg:%>ikawin	   # ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA_IND_KI_PL_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +2Sg+3PlO:%>âwak # ;
+! 
+! +2Pl+3SgO:%>âwâw	  # ;
+! +2Pl+3PlO:%>âwâwak	  # ;
+! +2Pl+4Sg/PlO:%>imâwâwa	  # ; ! From NS 152
+! 
+! +12Pl+3SgO:%>ânaw	  # ; ! 12Pl forms
+! +12Pl+3PlO:%>ânawak	  # ;
+! +12Pl+4Sg/PlO:%>imânawa	  # ; ! From NS 152
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>inân       # ;
+! +2Pl+1SgO:%>inâwâw     # ;
+! +2Pl+1PlO:%>inân       # ;
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+12PlO:%>ikonaw	  # ;
+! +3Sg+2PlO:%>ikowâw	  # ;
+! 
+! +3Pl+2SgO:%>ikwak	  # ;
+! +3Pl+12PlO:%>ikonawak # ;
+! +3Pl+2PlO:%>ikowâwak  # ;
+! 
+! +4Sg/Pl+12PlO:%>ikonawa	   # ; ! FROM NS 152
+! +4Sg/Pl+2PlO:%>ikowâws	   # ; ! FROM NS 152
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +1Sg+2PlO:%>itinâwâw         # ;
+! +1Pl+2SgO:%>itinân         # ; !OBS
+! +1Pl+2PlO:%>itinân         # ;
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+12Pl:%>ikawinânaw	   # ;
+! +X+12Pl:%>ikawinaw	   # ;
+! +X+2Pl:%>ikawinâwâw	   # ;
+! 
+! 
+! 
+! 
+! !!!!!! NULL PREFIXING FORMS !!!!!!
+! ! ==================================
+! 
+! LEXICON VTA_IND_NULL   !!= @CODE@  NOTE: never local
+! VTA_IND_NULL_SG_SUFFIX ;
+! VTA_IND_NULL_PL_SUFFIX ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA_IND_NULL_SG_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons 
+! +3Sg+5Sg/PlO:%>imêw		  # ; ! Implementing fourth, fifth persons 
+! +4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing fourth, fifth persons
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +4Sg/Pl+3SgO:%>ik	   # ; ! FROM NS 152
+! +5Sg/Pl+4Sg/PlO:%>ikoyiwa	   # ; ! FROM NS 152
+! 
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+3Sg:%>âw   # ;
+! +X+4Sg/Pl:%>âyiwa   # ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA_IND_NULL_PL_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing fourth, fifth persons
+! +3Pl+5Sg/PlO:%>imêwak	# ;	
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! 
+! +4Sg/Pl+3PlO:%>ikwak # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+3Pl:%>âwak   # ;
+! 
+! 
+! 
+! ! =================================
+! ! =================================
+! !!!!! -Vw stem-ending verbs !!!!!
+! ! =================================
+! ! =================================
+! 
+! !!!!!! NI- PREFIXING FORMS !!!!!!
+! ! =================================
+! 
+! 
+! LEXICON VTA-2_IND_NI   !!= @CODE@  NOTE: No local, as local forms are always with ki-
+! VTA-2_IND_NI_SG_SUFFIX ;
+! VTA-2_IND_NI_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-2_IND_NI_SG_SUFFIX   !!= @CODE@
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3SgO:%>âw		  # ;
+! +1Sg+4Sg/PlO:%>imâwa	  # ; ! From NS 152
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1SgO:%>i2k        # ;
+! +4Sg/Pl+1SgO:%>i2koyiwa	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Sg:%>i2kawin   # ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-2_IND_NI_PL_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3PlO:%>âwak	  # ;
+! 
+! +1Pl+3SgO:%>ânân	  # ;
+! +1Pl+3PlO:%>ânânak	  # ;
+! +1Pl+4Sg/PlO:%>i2mânâna	  # ; ! From NS 152
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1PlO:%>i2konân	  # ;
+! 
+! +3Pl+1SgO:%>i2kwak	  # ;
+! +3Pl+1PlO:%>i2konânak  # ;
+! +4Sg/Pl+1PlO:%>i2konâna	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Pl:%>i2kawinân   # ;
+! 
+! 
+! !!!!!! KI- PREFIXING FORMS !!!!!!
+! ! =================================
+! 
+! LEXICON VTA-2_IND_KI   !!= @CODE@  
+! VTA-2_IND_KI_SG_SUFFIX ;
+! VTA-2_IND_KI_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-2_IND_KI_SG_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>in         # ;
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +2Sg+3SgO:%>âw		  # ;
+! +2Sg+4Sg/PlO:%>imâwa	  # ; ! From NS 152
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>i2tin         # ;
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+2SgO:%>i2k		  # ;
+! +4Sg/Pl+2SgO:%>i2koyiwa	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+2Sg:%>i2kawin   # ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-2_IND_KI_PL_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>inân       # ;
+! +2Pl+1SgO:%>inâwâw     # ;
+! +2Pl+1PlO:%>inân       # ;
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +2Sg+3PlO:%>âwak # ;
+! 
+! +2Pl+3SgO:%>âwâw	  # ;
+! +2Pl+3PlO:%>âwâwak	  # ;
+! +2Pl+4Sg/PlO:%>i2mâwâwa	  # ; ! From NS 152
+! 
+! +12Pl+3SgO:%>ânaw	  # ; ! 12Pl forms
+! +12Pl+3PlO:%>ânawak	  # ;
+! +12Pl+4Sg/PlO:%>imânawa	  # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +1Sg+2PlO:%>i2tinâwâw         # ;
+! +1Pl+2SgO:%>i2tinân         # ; !OBS
+! +1Pl+2PlO:%>i2tinân         # ;
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+12PlO:%>i2konaw	  # ;
+! +3Sg+2PlO:%>i2kowâw	  # ;
+! 
+! +3Pl+2SgO:%>i2kwak	  # ;
+! +3Pl+12PlO:%>i2konawak # ;
+! +3Pl+2PlO:%>i2kowâwak  # ;
+! 
+! +4Sg/Pl+12PlO:%>i2konawa	   # ; ! FROM NS 152
+! +4Sg/Pl+2PlO:%>i2kowâwa	   # ; ! FROM NS 152
+! 
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+12Pl:%>i2kawinânaw	   # ;
+! +X+12Pl:%>i2kawinaw	   # ;
+! +X+2Pl:%>i2kawinâwâw	   # ;
+! 
+! 
+! !!!!!! NULL PREFIXING FORMS !!!!!!
+! ! ==================================
+! 
+! LEXICON VTA-2_IND_NULL   !!= @CODE@  NOTE: never local
+! VTA-2_IND_NULL_SG_SUFFIX ;
+! VTA-2_IND_NULL_PL_SUFFIX ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-2_IND_NULL_SG_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons 
+! +3Sg+5Sg/PlO:%>i2mêw		  # ; ! Implementing fourth, fifth persons 
+! +4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing fourth, fifth persons
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +4Sg/Pl+3SgO:%>i2k	   # ; ! FROM NS 152
+! +5Sg/Pl+4Sg/PlO:%>i2koyiwa	   # ; ! FROM NS 152
+! 
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+3Sg:%>âw   # ;
+! +X+4Sg/Pl:%>âyiwa   # ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-2_IND_NULL_PL_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing fourth, fifth persons
+! +3Pl+5Sg/PlO:%>i2mêwak	# ;	
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! 
+! +4Sg/Pl+3PlO:%>i2kwak	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+3Pl:%>âwak   # ;
+! 
+! 
+! 
+! 
+! ! =================================
+! ! =================================
+! !!!!! -Cw stem-ending verbs !!!!! 
+! ! =================================
+! ! =================================
+! 
+! !!!!!! NI- PREFIXING FORMS !!!!!!
+! ! =================================
+! 
+! 
+! LEXICON VTA-3_IND_NI   !!= @CODE@  NOTE: No local, as local forms are always with ki-
+! VTA-3_IND_NI_SG_SUFFIX ;
+! VTA-3_IND_NI_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-3_IND_NI_SG_SUFFIX   !!= @CODE@
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3SgO:%>âw		  # ;
+! +1Sg+4Sg/PlO:%>imâwa	  # ; ! From NS 152
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1SgO:%>ik        # ;
+! +4Sg/Pl+1SgO:%>ikoyiwa	   # ; ! FROM NS 152
+! 
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Sg:%>ikawin	   # ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-3_IND_NI_PL_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3PlO:%>âwak	  # ;
+! 
+! +1Pl+3SgO:%>ânân	  # ;
+! +1Pl+3PlO:%>ânânak	  # ;
+! +1Pl+4Sg/PlO:%>imânâna	  # ; ! From NS 152
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1PlO:%>ikonân	  # ;
+! 
+! +3Pl+1SgO:%>ikwak	  # ;
+! +3Pl+1PlO:%>ikonânak  # ;
+! +4Sg/Pl+1PlO:%>ikonân	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Pl:%>ikawinân	   # ;
+! 
+! 
+! !!!!!! KI- PREFIXING FORMS !!!!!!
+! ! =================================
+! 
+! LEXICON VTA-3_IND_KI   !!= @CODE@  
+! VTA-3_IND_KI_SG_SUFFIX ;
+! VTA-3_IND_KI_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-3_IND_KI_SG_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>in         # ;
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +2Sg+3SgO:%>âw		  # ;
+! +2Sg+4Sg/PlO:%>imâwa	  # ; ! From NS 152
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>itin         # ;
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+2SgO:%>ik		  # ;
+! +4Sg/Pl+2SgO:%>ikoyiwa	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+2Sg:%>ikawin	   # ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-3_IND_KI_PL_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>inân       # ;
+! +2Pl+1SgO:%>inâwâw     # ;
+! +2Pl+1PlO:%>inân       # ;
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +2Sg+3PlO:%>âwak # ;
+! 
+! +2Pl+3SgO:%>âwâw	  # ;
+! +2Pl+3PlO:%>âwâwak	  # ;
+! +2Pl+4Sg/PlO:%>imâwâwa	  # ; ! From NS 152
+! 
+! +12Pl+3SgO:%>ânaw	  # ; ! 12Pl forms
+! +12Pl+3PlO:%>ânawak	  # ;
+! +12Pl+4Sg/PlO:%>imânawa	  # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +1Sg+2PlO:%>itinâwâw         # ;
+! +1Pl+2SgO:%>itinân         # ; !OBS
+! +1Pl+2PlO:%>itinân         # ;
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+12PlO:%>ikonaw	  # ;
+! +3Sg+2PlO:%>ikowâw	  # ;
+! 
+! +3Pl+2SgO:%>ikwak	  # ;
+! +3Pl+12PlO:%>ikonawak # ;
+! +3Pl+2PlO:%>ikowâwak  # ;
+! 
+! +4Sg/Pl+12PlO:%>ikonawa	   # ; ! FROM NS 152
+! +4Sg/Pl+2PlO:%>ikowâwa	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+2Sg:%>ikawin	   # ;
+! +X+12Pl:%>ikawinaw	   # ;
+! +X+2Pl:%>ikawinâwâw	   # ;
+! 
+! 
+! !!!!!! NULL PREFIXING FORMS !!!!!!
+! ! ==================================
+! 
+! LEXICON VTA-3_IND_NULL   !!= @CODE@  NOTE: never local
+! VTA-3_IND_NULL_SG_SUFFIX ;
+! VTA-3_IND_NULL_PL_SUFFIX ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-3_IND_NULL_SG_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+4Sg/PlO:%>êw		  # ; ! Implementing fourth, fifth persons 
+! +3Sg+5Sg/PlO:%>imêw		  # ; ! Implementing fourth, fifth persons 
+! +4Sg/Pl+5Sg/PlO:%>êyiwa	  # ; ! Implementing fourth, fifth persons
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +4Sg/Pl+3SgO:%>ik	   # ; ! FROM NS 152
+! +5Sg/Pl+4Sg/PlO:%>ikoyiwa	   # ; ! FROM NS 152
+! 
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+3Pl:%>âw   # ;
+! +X+4Sg/Pl:%>âyiwa   # ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-3_IND_NULL_PL_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Pl+4Sg/PlO:%>êwak	  # ; ! Implementing fourth, fifth persons
+! +3Pl+5Sg/PlO:%>imêwak  # ;		
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! 
+! +4Sg/Pl+3PlO:%>ikwak	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+3Pl:%>âwak   # ;
+! 
+! 
+! ! ===================================================================================================================
+! ! ===================================================================================================================
+! !!!!! -t ending stems where final -t becomes -s NOTE: ki- forms only, as other forms are identical to regular verbs
+! ! ===================================================================================================================
+! ! ===================================================================================================================
+! 
+! !!!!!! KI- PREFIXING FORMS !!!!!!
+! ! =================================
+! 
+! LEXICON VTA-4_IND_KI   !!= @CODE@  
+! VTA-4_IND_KI_SG_SUFFIX ;
+! VTA-4_IND_KI_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-4_IND_KI_SG_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>in         # ;
+! 
+! +2Sg+3SgO:%>âw		  # ;
+! +2Sg+4Sg/PlO:%>i2mâwa	  # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>i2tin         # ;
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+2SgO:%>i2k		  # ;
+! +4Sg/Pl+2SgO:%>i2koyiwa	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+2Sg:%>i2kawin   # ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-4_IND_KI_PL_SUFFIX   !!= @CODE@ 
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>inân       # ;
+! +2Pl+1SgO:%>inâwâw     # ;
+! +2Pl+1PlO:%>inân       # ;
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +2Sg+3PlO:%>âwak # ;
+! 
+! +2Pl+3SgO:%>âwâw	  # ;
+! +2Pl+3PlO:%>âwâwak	  # ;
+! +2Pl+4Sg/PlO:%>i2mâwâwa	  # ; ! From NS 152
+! 
+! +12Pl+3SgO:%>ânaw	  # ; ! 12Pl forms
+! +12Pl+3PlO:%>ânawak	  # ;
+! +12Pl+4Sg/PlO:%>i2mânawa	  # ; ! From NS 152
+! 
+! 
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!!! Local !!!!!!!
+! 
+! +1Sg+2PlO:%>i2tinâwâw         # ;
+! +1Pl+2SgO:%>i2tinân         # ; !OBS
+! +1Pl+2PlO:%>i2tinân         # ;
+! 
+! !!!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+12PlO:%>i2konaw	  # ;
+! +3Sg+2PlO:%>i2kowâw	  # ;
+! 
+! +3Pl+2SgO:%>i2kwak	  # ;
+! +3Pl+12PlO:%>i2konawak # ;
+! +3Pl+2PlO:%>i2kowâwak  # ;
+! 
+! +4Sg/Pl+12PlO:%>i2konawa	   # ; ! FROM NS 152
+! +4Sg/Pl+2PlO:%>i2kowâwa	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+2Sg:%>i2kawin	   # ;
+! +X+12Pl:%>i2kawinaw	   # ;
+! +X+2Pl:%>i2kawinâwâw	   # ;
+! 
+! 
+! ! ===================================================================================================================
+! ! ===================================================================================================================
+! ! ===================================================================================================================
+! ! ===================================================================================================================
+! 
+! 
+! ! *******************
+! !!!! CONJUNCT !!!!
+! ! *******************
+! 
+! 
+! 
+! ! =========================
+! ! =========================
+! !!!!! Regular verbs !!!!!
+! ! =========================
+! ! =========================
+! 
+! LEXICON VTA_CNJ_NULL
+! VTA_CNJ_NULL_SG_SUFFIX ;
+! VTA_CNJ_NULL_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA_CNJ_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>iyan       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3SgO:%>ak	   # ;
+! +2Sg+3SgO:%>at	   # ;
+! 
+! +1Sg+4Sg/PlO:%>imak	   # ; ! From NS 152
+! +2Sg+4Sg/PlO:%>imat	   # ; ! From NS 152
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Sg+4Sg/PlO:%>ât	   # ;
+! 
+! +4Sg/PlO+5Sg/PlO:%>âyit      # ; ! From NS 152
+! 
+! +3Sg+5Sg/PlO:%>imât	   # ;
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>itân         # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1SgO:%>it		   # ;
+! +3Sg+2SgO:%>isk		   # ;
+! 
+! +4Sg/Pl+1SgO:%>imit	   # ;
+! +4Sg/Pl+2SgO:%>imisk	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3SgO:%>ikot	   # ; ! FROM NS 152
+! +5Sg/Pl+4Sg/PlO:%>ikoyit	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Sg:%>ikawiyân	   # ;
+! +X+2Sg:%>ikawiyan	   # ;
+! 
+! +X+3Sg:%>iht	   # ;
+! +X+4Sg/Pl:%>imiht	   # ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~ 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! LEXICON VTA_CNJ_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>iyâhk       # ;
+! 
+! +2Pl+1PlO:%>iyâhk       # ;
+! +2Pl+1SgO:%>iyêk       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3PlO:%>akik	   # ;
+! 
+! +2Sg+3PlO:%>acik	   # ;
+! 
+! +1Pl+3SgO:%>âyâhk	   # ;
+! +1Pl+3PlO:%>âyâhkik	   # ;
+! 
+! +12Pl+3SgO:%>âyahk	   # ;
+! +12Pl+3PlO:%>âyâhkok   # ;
+! 
+! +2Pl+3SgO:%>âyêk	   # ;
+! +2Pl+3PlO:%>âyêkok	   # ;
+! 
+! +1Pl+4Sg/PlO:%>imâyâhk	   # ; ! From NS 152
+! +12Pl+4Sg/PlO:%>imâyahk   # ; ! From NS 152
+! +2Pl+4Sg/PlO:%>imâyek   # ; ! From NS 152
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Pl+4Sg/PlO:%>âcik      # ; ! From NS 152
+! 
+! +3Pl+5Sg/PlO:%>imâcik      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Pl+2SgO:%>itâhk         # ; 
+! 
+! +1Pl+2PlO:%>itâhk         # ; 
+! +1Sg+2PlO:%>itakok         # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Pl+1SgO:%>icik	   # ;
+! 
+! +3Pl+2SgO:%>iskik	   # ;
+! 
+! +3Sg+1PlO:%>ikoyâhk	   # ;
+! +3Pl+1PlO:%>ikoyâhkik  # ;
+! 
+! +3Sg+12PlO:%>ikoyahk   # ;
+! +3Pl+12PlO:%>ikoyahkok # ;
+! 
+! +3Sg+2PlO:%>ikoyek	   # ;
+! +3Pl+2PlO:%>ikoyêkok   # ;
+! 
+! +4Sg/Pl+1PlO:%>ikoyâhk	   # ;
+! +4Sg/Pl+12PlO:%>ikoyahk	   # ;
+! +4Sg/Pl+2PlO:%>ikoyêk	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3PlO:%>ikocik	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Pl:%>ikawiyâhk	   # ;
+! +X+12Pl:%>ikawiyahk	   # ;
+! +X+2Pl:%>ikawiyêk	   # ;
+! 
+! +X+3Pl:%>ihcik	   # ;
+! 
+! ! =================================
+! ! =================================
+! !!!!! -Vw stem ending verbs !!!!!
+! ! =================================
+! ! =================================
+! 
+! LEXICON VTA-2_CNJ_NULL
+! VTA-2_CNJ_NULL_SG_SUFFIX ;
+! VTA-2_CNJ_NULL_PL_SUFFIX ;
+! 
+! !! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-2_CNJ_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>iyan       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3SgO:%>ak	   # ;
+! +2Sg+3SgO:%>at	   # ;
+! 
+! +1Sg+4Sg/PlO:%>i2mak	   # ; ! From NS 152
+! +2Sg+4Sg/PlO:%>i2mat	   # ; ! From NS 152
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Sg+4Sg/PlO:%>ât	   # ;
+! 
+! +4Sg/PlO+5Sg/PlO:%>âyit      # ; ! From NS 152
+! 
+! +3Sg+5Sg/PlO:%>i2mât	   # ;
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>i2tân         # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1SgO:%>it		   # ;
+! +3Sg+2SgO:%>i2sk		   # ;
+! 
+! +4Sg/Pl+1SgO:%>i2mit	   # ; ! FROM NS 152
+! +4Sg/Pl+2SgO:%>i2misk	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3SgO:%>i2kot	   # ; ! FROM NS 152
+! +5Sg/Pl+4Sg/PlO:%>i2koyit	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Sg:%>i2kawiyân	   # ;
+! +X+2Sg:%>i2kawiyan	   # ;
+! 
+! +X+3Sg:%>i2ht	   # ;
+! +X+4Sg/Pl:%>i2miht	   # ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~ 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! LEXICON VTA-2_CNJ_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>iyâhk       # ;
+! 
+! +2Pl+1PlO:%>iyâhk       # ;
+! +2Pl+1SgO:%>iyêk       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3PlO:%>akik	   # ;
+! 
+! +2Sg+3PlO:%>acik	   # ;
+! 
+! +1Pl+3SgO:%>âyâhk	   # ;
+! +1Pl+3PlO:%>âyâhkik	   # ;
+! 
+! +12Pl+3SgO:%>âyahk	   # ;
+! +12Pl+3PlO:%>âyâhkok   # ;
+! 
+! +2Pl+3SgO:%>âyêk	   # ;
+! +2Pl+3PlO:%>âyêkok	   # ;
+! 
+! +1Pl+4Sg/PlO:%>imâyâhk	   # ; ! From NS 152
+! +12Pl+4Sg/PlO:%>imâyahk   # ; ! From NS 152
+! +2Pl+4Sg/PlO:%>imâyek   # ; ! From NS 152
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Pl+4Sg/PlO:%>âcik      # ; ! From NS 152
+! 
+! +3Pl+5Sg/PlO:%>imâcik      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Pl+2SgO:%>i2tâhk         # ; 
+! 
+! +1Pl+2PlO:%>i2tâhk         # ; 
+! +1Sg+2PlO:%>i2takok         # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Pl+1SgO:%>icik	   # ;
+! 
+! +3Pl+2SgO:%>i2skik	   # ;
+! 
+! +3Sg+1PlO:%>i2koyâhk	   # ;
+! +3Pl+1PlO:%>i2koyâhkik  # ;
+! 
+! +3Sg+12PlO:%>i2koyahk   # ;
+! +3Pl+12PlO:%>i2koyahkok # ;
+! 
+! +3Sg+2PlO:%>i2koyek	   # ;
+! +3Pl+2PlO:%>i2koyêkok   # ;
+! 
+! +4Sg/Pl+1PlO:%>i2koyâhk	   # ; ! FROM NS 152
+! +4Sg/Pl+12PlO:%>i2koyahk	   # ;
+! +4Sg/Pl+2PlO:%>i2koyêk	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3PlO:%>i2kocik	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Pl:%>i2kawiyâhk	   # ;
+! +X+12Pl:%>i2kawiyahk	   # ;
+! +X+2Pl:%>i2kawiyêk	   # ;
+! 
+! +X+3Pl:%>i2hcik	   # ;
+! 
+! ! =================================
+! ! =================================
+! !!!!! -Cw stem final verbs !!!!!
+! ! =================================
+! ! =================================
+! 
+! LEXICON VTA-3_CNJ_NULL
+! VTA-3_CNJ_NULL_SG_SUFFIX ;
+! VTA-3_CNJ_NULL_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-3_CNJ_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>iyan       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3SgO:%>ak	   # ;
+! +2Sg+3SgO:%>at	   # ;
+! 
+! +1Sg+4Sg/PlO:%>imak	   # ; ! From NS 152
+! +2Sg+4Sg/PlO:%>imat	   # ; ! From NS 152
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Sg+4Sg/PlO:%>ât	   # ;
+! 
+! +4Sg/PlO+5Sg/PlO:%>âyit      # ; ! From NS 152
+! 
+! +3Sg+5Sg/PlO:%>imât	   # ;
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>itân         # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1SgO:%>it		   # ;
+! +3Sg+2SgO:%>isk		   # ;
+! 
+! +4Sg/Pl+1SgO:%>imit	   # ;
+! +4Sg/Pl+2SgO:%>imisk	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3SgO:%>ikot	   # ; ! FROM NS 152
+! +5Sg/Pl+4Sg/PlO:%>ikoyit	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Sg:%>ikawiyân	   # ;
+! +X+2Sg:%>ikawiyan	   # ;
+! 
+! +X+3Sg:%>iht	   # ;
+! +X+4Sg/Pl:%>imiht	   # ;
+! 
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~ 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! LEXICON VTA-3_CNJ_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>iyâhk       # ;
+! 
+! +2Pl+1PlO:%>iyâhk       # ;
+! +2Pl+1SgO:%>iyêk       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3PlO:%>akik	   # ;
+! 
+! +2Sg+3PlO:%>acik	   # ;
+! 
+! +1Pl+3SgO:%>âyâhk	   # ;
+! +1Pl+3PlO:%>âyâhkik	   # ;
+! 
+! +12Pl+3SgO:%>âyahk	   # ;
+! +12Pl+3PlO:%>âyâhkok   # ;
+! 
+! +2Pl+3SgO:%>âyêk	   # ;
+! +2Pl+3PlO:%>âyêkok	   # ;
+! 
+! +1Pl+4Sg/PlO:%>imâyâhk	   # ; ! From NS 152
+! +12Pl+4Sg/PlO:%>imâyahk   # ; ! From NS 152
+! +2Pl+4Sg/PlO:%>imâyêk   # ; ! From NS 152
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Pl+4Sg/PlO:%>âcik      # ; ! From NS 152
+! 
+! +3Pl+5Sg/PlO:%>imâcik      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Pl+2SgO:%>itâhk         # ; 
+! 
+! +1Pl+2PlO:%>itâhk         # ; 
+! +1Sg+2PlO:%>itakok         # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Pl+1SgO:%>icik	   # ;
+! 
+! +3Pl+2SgO:%>iskik	   # ;
+! 
+! +3Sg+1PlO:%>ikoyâhk	   # ;
+! +3Pl+1PlO:%>ikoyâhkik  # ;
+! 
+! +3Sg+12PlO:%>ikoyahk   # ;
+! +3Pl+12PlO:%>ikoyahkok # ;
+! 
+! +3Sg+2PlO:%>ikoyek	   # ;
+! +3Pl+2PlO:%>ikoyêkok   # ;
+! 
+! +4Sg/Pl+1PlO:%>ikoyâhk	   # ;
+! +4Sg/Pl+12PlO:%>ikoyahk	   # ;
+! +4Sg/Pl+2PlO:%>ikoyêk	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3PlO:%>ikocik	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Pl:%>ikawiyâhk	   # ;
+! +X+12Pl:%>ikawiyahk	   # ;
+! +X+2Pl:%>ikawiyêk	   # ;
+! 
+! +X+3Pl:%>ihcik	   # ;
+! 
+! ! ================================================================
+! ! ================================================================
+! !!!!! -t stem final verbs where -t becoms -s in some cases !!!!!
+! ! ================================================================
+! ! ================================================================
+! 
+! LEXICON VTA-4_CNJ_NULL
+! VTA-4_CNJ_NULL_SG_SUFFIX ;
+! VTA-4_CNJ_NULL_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-4_CNJ_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>iyan       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3SgO:%>ak	   # ;
+! +2Sg+3SgO:%>at	   # ;
+! 
+! +1Sg+4Sg/PlO:%>i2mak	   # ; ! From NS 152
+! +2Sg+4Sg/PlO:%>i2mat	   # ; ! From NS 152
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Sg+4Sg/PlO:%>ât	   # ;
+! 
+! +4Sg/PlO+5Sg/PlO:%>âyit      # ; ! From NS 152
+! 
+! +3Sg+5Sg/PlO:%>i2mât	   # ;
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>i2tân         # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1SgO:%>it		   # ;
+! +3Sg+2SgO:%>i2sk		   # ;
+! 
+! +4Sg/Pl+1SgO:%>i2mit	   # ;
+! +4Sg/Pl+2SgO:%>i2misk	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3SgO:%>i2kot	   # ; ! FROM NS 152
+! +5Sg/Pl+4Sg/PlO:%>i2koyit	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Sg:%>i2kawiyân	   # ;
+! +X+2Sg:%>i2kawiyan	   # ;
+! 
+! +X+3Sg:%>i2ht	   # ;
+! +X+4Sg/Pl:%>i2miht	   # ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~ 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-4_CNJ_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>iyâhk       # ;
+! 
+! +2Pl+1PlO:%>iyâhk       # ;
+! +2Pl+1SgO:%>iyêk       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3PlO:%>akik	   # ;
+! 
+! +2Sg+3PlO:%>acik	   # ;
+! 
+! +1Pl+3SgO:%>âyâhk	   # ;
+! +1Pl+3PlO:%>âyâhkik	   # ;
+! 
+! +12Pl+3SgO:%>âyahk	   # ;
+! +12Pl+3PlO:%>âyâhkok   # ;
+! 
+! +2Pl+3SgO:%>âyêk	   # ;
+! +2Pl+3PlO:%>âyêkok	   # ;
+! 
+! +1Pl+4Sg/PlO:%>i2mâyâhk	   # ; ! From NS 152
+! +12Pl+4Sg/PlO:%>i2mâyahk   # ; ! From NS 152
+! +2Pl+4Sg/PlO:%>i2mâyek   # ; ! From NS 152
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Pl+4Sg/PlO:%>âcik      # ; ! From NS 152
+! 
+! +3Pl+5Sg/PlO:%>i2mâcik      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Pl+2SgO:%>i2tâhk         # ; 
+! 
+! +1Pl+2PlO:%>i2tâhk         # ; 
+! +1Sg+2PlO:%>i2takok         # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Pl+1SgO:%>icik	   # ;
+! 
+! +3Pl+2SgO:%>i2skik	   # ;
+! 
+! +3Sg+1PlO:%>i2koyâhk	   # ;
+! +3Pl+1PlO:%>i2koyâhkik  # ;
+! 
+! +3Sg+12PlO:%>i2koyahk   # ;
+! +3Pl+12PlO:%>i2koyahkok # ;
+! 
+! +3Sg+2PlO:%>i2koyek	   # ;
+! +3Pl+2PlO:%>i2koyêkok   # ;
+! 
+! +4Sg/Pl+1PlO:%>i2koyâhk	   # ;
+! +4Sg/Pl+12PlO:%>i2koyahk	   # ;
+! +4Sg/Pl+2PlO:%>i2koyêk	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3PlO:%>i2kocik	   # ; ! FROM NS 152
+! 
+! !           ********
+! ! **** Unspecified Actor ****
+! !           ********  NOTE: always mixed
+! 
+! +X+1Pl:%>i2kawiyâhk	   # ;
+! +X+12Pl:%>i2kawiyahk	   # ;
+! +X+2Pl:%>i2kawiyêk	   # ;
+! 
+! +X+3Pl:%>i2hcik	   # ;
+! 
+! 
+! ! ===================================================================================================================
+! ! ===================================================================================================================
+! ! ===================================================================================================================
+! ! ===================================================================================================================
+! 
+! 
+! ! ********************
+! !!!! Imperative !!!!
+! ! ********************
+! 
+! ! ==========================
+! ! ==========================
+! !!!!! Regular verbs !!!!!
+! ! ==========================
+! ! ==========================
+! 
+! LEXICON VTA_IMP_NULL
+! VTA_IMP_NULL_SG_SUFFIX ;
+! VTA_IMP_NULL_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA_IMP_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +Imm+2Sg+1SgO:%>in # ;
+! 
+! +Del+2Sg+1SgO:%>ii2hkan # ;
+! 
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +Imm+2Sg+3SgO: # ;
+! 
+! +Del+2Sg+3SgO:%>âhkan # ;
+! 
+! 
+! LEXICON VTA_IMP_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +Imm+2Sg+1PlO:%>inân # ;
+! +Imm+2Pl+1SgO:%>ik # ;
+! 
+! +Del+2Sg+1PlO:%>ii2hkâhk # ;
+! +Del+2Pl+1PlO:%>ii2hkâhk # ;
+! +Del+2Pl+1SgO:%>ii2hkêk # ;
+! 
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +Imm+2Sg+3PlO:%>ik # ;
+! 
+! +Imm+12Pl+3SgO:%>âtân # ;
+! +Imm+12Pl+3PlO:%>âtânik # ;
+! 
+! +Imm+2Pl+3SgO:%>ihk # ;
+! +Imm+2Pl+3PlO:%>ihkok # ;
+! 
+! +Del+2Sg+3PlO:%>âhkanik # ;
+! 
+! +Del+12Pl+3SgO:%>âhkahk # ;
+! +Del+12Pl+3PlO:%>âhkahkok # ;
+!  
+! +Del+2Pl+3SgO:%>âhkêk # ;
+! +Del+2Pl+3PlO:%>âhkêkok # ;
+! 
+! 
+! ! =================================
+! ! =================================
+! !!!!! -Cw stem ending verbs !!!!!
+! ! =================================
+! ! =================================
+! 
+! LEXICON VTA-3_IMP_NULL
+! VTA-3_IMP_NULL_SG_SUFFIX ;
+! VTA-3_IMP_NULL_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-3_IMP_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +Imm+2Sg+1SgO:%>in # ;
+! 
+! +Del+2Sg+1SgO:%>ii2hkan # ;
+! 
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +Imm+2Sg+3SgO: # ;
+! 
+! +Del+2Sg+3SgO:%>âhkan # ;
+! 
+! 
+! LEXICON VTA-3_IMP_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +Imm+2Sg+1PlO:%>inân # ;
+! +Imm+2Pl+1SgO:%>ik # ;
+! 
+! +Del+2Sg+1PlO:%>ii2hkâhk # ;
+! +Del+2Pl+1PlO:%>ii2hkâhk # ;
+! +Del+2Pl+1SgO:%>ii2hkêk # ;
+! 
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +Imm+2Sg+3PlO:%>ik # ;
+! 
+! +Imm+12Pl+3SgO:%>âtân # ;
+! +Imm+12Pl+3PlO:%>âtânik # ;
+! 
+! +Imm+2Pl+3SgO:%>ihk # ;
+! +Imm+2Pl+3PlO:%>ihkok # ;
+! 
+! +Del+2Sg+3PlO:%>âhkanik # ;
+! 
+! +Del+12Pl+3SgO:%>âhkahk # ;
+! +Del+12Pl+3PlO:%>âhkahkok # ;
+!  
+! +Del+2Pl+3SgO:%>âhkêk # ;
+! +Del+2Pl+3PlO:%>âhkêkok # ;
+! 
+! ! =====================================================================
+! ! =====================================================================
+! !!!!! -t stem final verbs where the -t becomes -s in some cases !!!!!
+! ! =====================================================================
+! ! =====================================================================
+! 
+! LEXICON VTA-4_IMP_NULL
+! VTA-4_IMP_NULL_SG_SUFFIX ;
+! VTA-4_IMP_NULL_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-4_IMP_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +Imm+2Sg+1SgO:%>in # ;
+! 
+! +Del+2Sg+1SgO:%>ii2hkan # ;
+! 
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +Imm+2Sg+3SgO: # ;
+! 
+! +Del+2Sg+3SgO:%>âhkan # ;
+! 
+! 
+! LEXICON VTA-4_IMP_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +Imm+2Sg+1PlO:%>inân # ;
+! +Imm+2Pl+1SgO:%>ik # ;
+! +Imm+2Pl+1PlO:%>inân # ;
+! 
+! 
+! +Del+2Sg+1PlO:%>ii2hkâhk # ;
+! +Del+2Pl+1PlO:%>ii2hkâhk # ;
+! +Del+2Pl+1SgO:%>ii2hkêk # ;
+! 
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +Imm+2Sg+3PlO:%>ik # ;
+! 
+! +Imm+12Pl+3SgO:%>âtân # ;
+! +Imm+12Pl+3PlO:%>âtânik # ;
+! 
+! +Imm+2Pl+3SgO:%>i2hk # ;
+! +Imm+2Pl+3PlO:%>i2hkok # ;
+! 
+! +Del+2Sg+3PlO:%>âhkanik # ;
+! 
+! +Del+12Pl+3SgO:%>âhkahk # ;
+! +Del+12Pl+3PlO:%>âhkahkok # ;
+!  
+! +Del+2Pl+3SgO:%>âhkêk # ;
+! +Del+2Pl+3PlO:%>âhkêkok # ;
+! 
+! 
+! 
+! ! ===================================================================
+! ! ===================================================================
+! !!!!! -t stem ending that becomes -s; -i 2SG imperative verbs !!!!!
+! ! ===================================================================
+! ! ===================================================================
+! 
+! 
+! LEXICON VTA-5_IMP_NULL
+! VTA-5_IMP_NULL_SG_SUFFIX ;
+! VTA-5_IMP_NULL_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-5_IMP_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +Imm+2Sg+1SgO:%>in # ;
+! 
+! +Del+2Sg+1SgO:%>ii2hkan # ;
+! 
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +Imm+2Sg+3SgO:i2 # ;
+! 
+! +Del+2Sg+3SgO:%>âhkan # ;
+! 
+! 
+! LEXICON VTA-5_IMP_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +Imm+2Sg+1PlO:%>inân # ;
+! +Imm+2Pl+1SgO:%>ik # ;
+! 
+! +Del+2Sg+1PlO:%>ii2hkâhk # ;
+! +Del+2Pl+1PlO:%>ii2hkâhk # ;
+! +Del+2Pl+1SgO:%>ii2hkêk # ;
+! 
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +Imm+2Sg+3PlO:%>ik # ;
+! 
+! +Imm+12Pl+3SgO:%>âtân # ;
+! +Imm+12Pl+3PlO:%>âtânik # ;
+! 
+! +Imm+2Pl+3SgO:%>ihk # ;
+! +Imm+2Pl+3PlO:%>ihkok # ;
+! 
+! +Del+2Sg+3PlO:%>âhkanik # ;
+! 
+! +Del+12Pl+3SgO:%>âhkahk # ;
+! +Del+12Pl+3PlO:%>âhkahkok # ;
+!  
+! +Del+2Pl+3SgO:%>âhkêk # ;
+! +Del+2Pl+3PlO:%>âhkêkok # ;
+! 
+! 
+! 
+! ! ===================================================================================================================
+! ! ===================================================================================================================
+! ! ===================================================================================================================
+! ! ===================================================================================================================
+! 
+! 
+! ! ****************************
+! !!!! FUTURE CONDITIONAL !!!!
+! ! ****************************
+! 
+! ! =========================
+! ! =========================
+! !!!!! Regular verbs !!!!!
+! ! =========================
+! ! =========================
+! 
+! LEXICON VTA_FUT_CON_NULL
+! VTA_FUT_CON_NULL_SG_SUFFIX ;
+! VTA_FUT_CON_NULL_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA_FUT_CON_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>iyani       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3SgO:%>aki	   # ;
+! +2Sg+3SgO:%>aci	   # ;
+! 
+! +1Sg+4Sg/PlO:%>imaki	   # ;
+! +2Sg+4Sg/PlO:%>imati	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Sg+4Sg/PlO:%>âci	   # ;
+! 
+! +4Sg/PlO+5Sg/PlO:%>âyici      # ; ! From NS 152
+! 
+! +3Sg+5Sg/PlO:%>imâci      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>itâni         # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1SgO:%>ici		   # ;
+! +3Sg+2SgO:%>iski		   # ;
+! 
+! +4Sg/Pl+1SgO:%>imici	   # ;
+! +4Sg/Pl+2SgO:%>imiski	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3SgO:%>ikoci	   # ; ! FROM NS 152
+! +5Sg/Pl+4Sg/PlO:%>ikoyici	   # ; ! FROM NS 152
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~ 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA_FUT_CON_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>iyâhki       # ;
+! 
+! +2Pl+1PlO:%>iyâhki       # ;
+! +2Pl+1SgO:%>iyêko       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3PlO:%>akwâwi	   # ;
+! 
+! +2Sg+3PlO:%>atwâwi	   # ;
+! 
+! +1Pl+3SgO:%>âyâhki	   # ;
+! +1Pl+3PlO:%>âyâhkwâwi	   # ;
+! 
+! +12Pl+3SgO:%>âyahko	   # ;
+! +12Pl+3PlO:%>âyahkwâwi   # ;
+! 
+! +2Pl+3SgO:%>âyêko	   # ;
+! +2Pl+3PlO:%>âyêkwâwi	   # ;
+! 
+! +1Pl+4Sg/PlO:%>imâyâhki	   # ; ! From NS 152
+! +12Pl+4Sg/PlO:%>imâyahko   # ; ! From NS 152
+! +2Pl+4Sg/PlO:%>imâyêko   # ; ! From NS 152
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Pl+4Sg/PlO:%>âtwâwi     # ; ! From NS 152
+! 
+! +3Pl+5Sg/PlO:%>imâtwâwi      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Pl+2SgO:%>itâhki         # ; 
+! 
+! +1Pl+2PlO:%>itâhki         # ; 
+! +1Sg+2PlO:%>itako         # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Pl+1SgO:%>itwâwi	   # ;
+! 
+! +3Pl+2SgO:%>iskwâwi	   # ;
+! 
+! +3Sg+1PlO:%>ikoyâhki	   # ;
+! +3Pl+1PlO:%>ikoyâhkwâwi  # ;
+! 
+! +3Sg+12PlO:%>ikoyahko   # ;
+! +3Pl+12PlO:%>ikoyahkwâwi # ;
+! 
+! +3Sg+2PlO:%>ikoyeko	   # ;
+! +3Pl+2PlO:%>ikoyêkwâwi   # ;
+! 
+! +4Sg/Pl+1PlO:%>ikoyâhki	   # ;
+! +4Sg/Pl+12PlO:%>ikoyahko	   # ;
+! +4Sg/Pl+2PlO:%>ikoyêko	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3PlO:%>ikotwâwi	   # ;
+! 
+! 
+! 
+! ! ================================
+! ! ================================
+! !!!!! -Vw stem final verbs !!!!!
+! ! ================================
+! ! ================================
+! 
+! 
+! LEXICON VTA-2_FUT_CON_NULL
+! VTA-2_FUT_CON_NULL_SG_SUFFIX ;
+! VTA-2_FUT_CON_NULL_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-2_FUT_CON_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>iyani       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3SgO:%>aki	   # ;
+! +2Sg+3SgO:%>aci	   # ;
+! 
+! +1Sg+4Sg/PlO:%>i2maki	   # ;
+! +2Sg+4Sg/PlO:%>i2maci	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Sg+4Sg/PlO:%>âci	   # ;
+! 
+! +4Sg/PlO+5Sg/PlO:%>âyici      # ; ! From NS 152
+! 
+! +3Sg+5Sg/PlO:%>i2mâci      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>i2tâni	   # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1SgO:%>ici		   # ;
+! +3Sg+2SgO:%>i2ski		   # ;
+! 
+! +4Sg/Pl+1SgO:%>i2mici	   # ;
+! +4Sg/Pl+2SgO:%>i2miski	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3SgO:%>i2koci		   # ;
+! +5Sg/Pl+4Sg/PlO:%>i2koyici		   # ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~ 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-2_FUT_CON_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>iyâhki       # ;
+! 
+! +2Pl+1PlO:%>iyâhki       # ;
+! +2Pl+1SgO:%>iyêko       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3PlO:%>akwâwi	   # ;
+! 
+! +2Sg+3PlO:%>atwâwi	   # ;
+! 
+! +1Pl+3SgO:%>âyâhki	   # ;
+! +1Pl+3PlO:%>âyâhkwâwi	   # ;
+! 
+! +12Pl+3SgO:%>âyahko	   # ;
+! +12Pl+3PlO:%>âyahkwâwi   # ;
+! 
+! +2Pl+3SgO:%>âyêko	   # ;
+! +2Pl+3PlO:%>âyêkwâwi	   # ;
+! 
+! +1Pl+4Sg/PlO:%>i2mâyâhki	   # ;
+! +12Pl+4Sg/PlO:%>i2mâyahko	   # ;
+! +12Pl+4Sg/PlO:%>i2mâyahki	   # ;
+! +2Pl+4Sg/PlO:%>i2mâyêko	   # ;
+! 
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Pl+4Sg/PlO:%>âtwâwi     # ; ! From NS 152
+! 
+! +3Pl+5Sg/PlO:%>i2mâtwâwi      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Pl+2SgO:%>i2tâhki # ;
+! 
+! +1Pl+2PlO:%>i2tâhki	   # ;
+! +1Sg+2PlO:%>i2tako	   # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Pl+1SgO:%>itwâwi	   # ;
+! 
+! +3Pl+2SgO:%>i2skwâwi		   # ;
+! 
+! +3Sg+1PlO:%>i2koyâhki		   # ;
+! +3Sg+12PlO:%>i2koyahki		   # ;
+! +3Pl+1PlO:%>i2koyâhkwâwi		   # ;
+! 
+! +3Sg+12PlO:%>i2koyahko 		   # ;
+! +3Pl+12PlO:%>i2koyahkwâwi		   # ;
+! 
+! +3Sg+2PlO:%>i2koyêko		   # ; 
+! +3Pl+2PlO:%>i2koyêkwâwi		   # ;
+! 
+! +4Sg/Pl+1PlO:%>i2koyâhki	   # ;
+! +4Sg/Pl+12PlO:%>i2koyahko	   # ;
+! +4Sg/Pl+12PlO:%>i2koyahki	   # ;
+! +4Sg/Pl+2PlO:%>i2koyêko	   # ;
+! 
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3PlO:%>i2kotwâwi		   # ;
+! 
+! 
+! 
+! ! ================================
+! ! ================================
+! !!!!! -Cw stem final verbs !!!!!
+! ! ================================
+! ! ================================
+! 
+! LEXICON VTA-3_FUT_CON_NULL
+! VTA-3_FUT_CON_NULL_SG_SUFFIX ;
+! VTA-3_FUT_CON_NULL_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! NUMBER !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-3_FUT_CON_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>iyani       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3SgO:%>aki	   # ;
+! +2Sg+3SgO:%>aci	   # ;
+! 
+! +1Sg+4Sg/PlO:%>imaki	   # ;
+! +2Sg+4Sg/PlO:%>imaci	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Sg+4Sg/PlO:%>âci	   # ;
+! 
+! +4Sg/PlO+5Sg/PlO:%>âyici      # ; ! From NS 152
+! 
+! +3Sg+5Sg/PlO:%>imâci      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>itâni	   # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1SgO:%>ici		   # ;
+! +3Sg+2SgO:%>iski		   # ;
+! 
+! +4Sg/Pl+1SgO:%>imici	   # ;
+! +4Sg/Pl+2SgO:%>imiski	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3SgO:%>ikoci		   # ;
+! +5Sg/Pl+4Sg/PlO:%>ikoyici		   # ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~ 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-3_FUT_CON_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>iyâhki       # ;
+! 
+! +2Pl+1PlO:%>iyâhki       # ;
+! +2Pl+1SgO:%>iyêko       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3PlO:%>akwâwi	   # ;
+! 
+! +2Sg+3PlO:%>atwâwi	   # ;
+! 
+! +1Pl+3SgO:%>âyâhki	   # ;
+! +1Pl+3PlO:%>âyâhkwâwi	   # ;
+! 
+! +12Pl+3SgO:%>âyahko	   # ;
+! +12Pl+3PlO:%>âyahkwâwi   # ;
+! 
+! +2Pl+3SgO:%>âyêko	   # ;
+! +2Pl+3PlO:%>âyêkwâwi	   # ;
+! 
+! +1Pl+4Sg/PlO:%>imâyâhki	   # ;
+! +12Pl+4Sg/PlO:%>imâyahko	   # ;
+! +12Pl+4Sg/PlO:%>imâyahki	   # ;
+! +2Pl+4Sg/PlO:%>imâyêko	   # ;
+! 
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Pl+4Sg/PlO:%>âtwâwi     # ; ! From NS 152
+! 
+! +3Pl+5Sg/PlO:%>imâtwâwi      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Pl+2SgO:%>itâhki # ;
+! 
+! +1Pl+2PlO:%>itâhki	   # ;
+! +1Sg+2PlO:%>itako	   # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Pl+1SgO:%>itwâwi	   # ;
+! 
+! +3Pl+2SgO:%>iskwâwi		   # ;
+! 
+! +3Sg+1PlO:%>ikoyâhki		   # ;
+! +3Sg+12PlO:%>ikoyahki		   # ;
+! +3Pl+1PlO:%>ikoyâhkwâwi		   # ;
+! 
+! +3Sg+12PlO:%>ikoyahko 		   # ;
+! +3Pl+12PlO:%>ikoyahkwâwi		   # ;
+! 
+! +3Sg+2PlO:%>ikoyêko		   # ; 
+! +3Pl+2PlO:%>ikoyêkwâwi		   # ;
+! 
+! +4Sg/Pl+1PlO:%>ikoyâhki	   # ;
+! +4Sg/Pl+12PlO:%>ikoyahko	   # ;
+! +4Sg/Pl+12PlO:%>ikoyahki	   # ;
+! +4Sg/Pl+2PlO:%>ikoyêko	   # ;
+! 
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3PlO:%>ikotwâwi		   # ;
+! 
+! 
+! 
+! ! =====================================================================
+! ! =====================================================================
+! !!!!! -t stem final verbs where the -t becomes -s in some cases !!!!!
+! ! =====================================================================
+! ! =====================================================================
+! 
+! LEXICON VTA-4_FUT_CON_NULL
+! VTA-4_FUT_CON_NULL_SG_SUFFIX ;
+! VTA-4_FUT_CON_NULL_PL_SUFFIX ;
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! !!!!!! SINGULAR !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-4_FUT_CON_NULL_SG_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1SgO:%>iyani       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3SgO:%>aki	   # ;
+! +2Sg+3SgO:%>aci	   # ;
+! 
+! +1Sg+4Sg/PlO:%>i2maki	   # ;
+! +2Sg+4Sg/PlO:%>i2maci	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Sg+4Sg/PlO:%>âci	   # ;
+! 
+! +4Sg/PlO+5Sg/PlO:%>âyici      # ; ! From NS 152
+! 
+! +3Sg+5Sg/PlO:%>i2mâci      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Sg+2SgO:%>i2tâni	   # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Sg+1SgO:%>i2ci		   # ;
+! +3Sg+2SgO:%>i2ski		   # ;
+! 
+! +4Sg/Pl+1SgO:%>i2mici	   # ;
+! +4Sg/Pl+2SgO:%>i2miski	   # ;
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3SgO:%>i2koci		   # ;
+! +5Sg/Pl+4Sg/PlO:%>i2koyici		   # ;
+! 
+! 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! ! ~~~~~~~~~~~~~~~~~~~~
+! !!!!!! PLURAL !!!!!! 
+! ! ~~~~~~~~~~~~~~~~~~~~ 
+! ! ~~~~~~~~~~~~~~~~~~~~
+! 
+! LEXICON VTA-4_FUT_CON_NULL_PL_SUFFIX
+! 
+! !!!!!!!!!!!!!!!!!!!!
+! !!!!!! Direct !!!!!!
+! !!!!!!!!!!!!!!!!!!!!
+! 
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +2Sg+1PlO:%>iyâhki       # ;
+! 
+! +2Pl+1PlO:%>iyâhki       # ;
+! +2Pl+1SgO:%>iyêko       # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +1Sg+3PlO:%>akwâwi	   # ;
+! 
+! +2Sg+3PlO:%>atwâwi	   # ;
+! 
+! +1Pl+3SgO:%>âyâhki	   # ;
+! +1Pl+3PlO:%>âyâhkwâwi	   # ;
+! 
+! +12Pl+3SgO:%>âyahko	   # ;
+! +12Pl+3PlO:%>âyahkwâwi   # ;
+! 
+! +2Pl+3SgO:%>âyêko	   # ;
+! +2Pl+3PlO:%>âyêkwâwi	   # ;
+! 
+! +1Pl+4Sg/PlO:%>i2mâyâhki	   # ;
+! +12Pl+4Sg/PlO:%>i2mâyahko	   # ;
+! +12Pl+4Sg/PlO:%>i2mâyahki	   # ;
+! +2Pl+4Sg/PlO:%>i2mâyêko	   # ;
+! 
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +3Pl+4Sg/PlO:%>âtwâwi     # ; ! From NS 152
+! 
+! +3Pl+5Sg/PlO:%>i2mâtwâwi      # ; ! From NS 152
+! 
+! 
+! !!!!!!!!!!!!!!!!!!!!!
+! !!!!!! Inverse !!!!!!
+! !!!!!!!!!!!!!!!!!!!!!
+! 
+! !!!!!!! Local !!!!!!!
+! 
+! +1Pl+2SgO:%>i2tâhki # ;
+! 
+! +1Pl+2PlO:%>i2tâhki	   # ;
+! +1Sg+2PlO:%>i2tako	   # ;
+! 
+! !!!!!!! Mixed !!!!!!!
+! 
+! +3Pl+1SgO:%>itwâwi	   # ;
+! 
+! +3Pl+2SgO:%>i2skwâwi		   # ;
+! 
+! +3Sg+1PlO:%>i2koyâhki		   # ;
+! +3Sg+12PlO:%>i2koyahki		   # ;
+! +3Pl+1PlO:%>i2koyâhkwâwi		   # ;
+! 
+! +3Sg+12PlO:%>i2koyahko 		   # ;
+! +3Pl+12PlO:%>i2koyahkwâwi		   # ;
+! 
+! +3Sg+2PlO:%>i2koyêko		   # ; 
+! +3Pl+2PlO:%>i2koyêkwâwi		   # ;
+! 
+! +4Sg/Pl+1PlO:%>i2koyâhki	   # ;
+! +4Sg/Pl+12PlO:%>i2koyahko	   # ;
+! +4Sg/Pl+12PlO:%>i2koyahki	   # ;
+! +4Sg/Pl+2PlO:%>i2koyêko	   # ;
+! 
+! 
+! !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
+! 
+! +4Sg/Pl+3PlO:%>i2kotwâwi		   # ;
+! 
