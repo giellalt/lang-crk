@@ -24,20 +24,20 @@
 ! Current FST      ——> New Arok’s Class                      Special Chrs.
 ! ========================================================================
 ! 
-! VII-v impersonal ——> VII-1_SG_v                                    
-! VII-v regular    ——> VII-1_SGPL_v                                  
+! VII-w impersonal ——> VII-1_SG                                    
+! VII-w regular    ——> VII-1_SGPL                                 
 ! 
-! VII-n impersonal ——> VII-1_SG_n                                    [n3]
-! VII-n regular    ——> VII-1_SGPL_n                                  [n3??]
+! VII-n impersonal ——> VII-2_SG                                   [n3]
+! VII-n regular    ——> VII-2_SGPL                                 [n3??]
 ! 
 ! 
 ! 
 ! VAI-v            ——> VAI-1                                         [n2]
-! VAI-v            ——> VAI-2                                         [n2]
+! VAI-n            ——> VAI-2                                         [n2]
 ! VAI-am           ——> VAI-3 (VTI like)                              [n2]
 ! 
 ! VTI-am           ——> VTI-1                                         [n2]
-! VTI-â            ——> VTI-2                                         [n2]
+! VTI-â            ——> VTI-2[n2]
 ! VTI-ø            ——> VTI-3 (Dims/Habs) (VAIlike)                   [n2]
 !     
 ! VTA              ——> VTA-1 (Regulars)                              [ii2]
@@ -78,11 +78,11 @@ Alphabet
  %-
 
  i:0   i:î
- i2:i  i2:0
+ i2:i ! i2:0
  ii2:î ii2:0
  t:t   t:c
  t2:t  t2:0  t2:c
- t3:t  t3:s
+ t3:t  ! t3:s
  w:w  ! w:o
  w2:w
  n2:n
@@ -301,6 +301,12 @@ w:0 <=> Consonant: _ .#. ;
 ! 
 ! ##diminutive sound symbolism palatalisation (requires DIM trigger?)
 ! #{t,t2} > c / _...DIM
+
+"etanRule"
+a:ê <=> _ %>:0 t: â: n: .#. ;
+
+!!€ a>tân
+!!€ ê0tân
 
 "DimRule"
 t:c <=> _ :* %^DIM:0 ;
