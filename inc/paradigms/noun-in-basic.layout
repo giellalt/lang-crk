@@ -1,0 +1,12 @@
+name: "Inanimate noun extended paradigm"
+paradigm: 'noun-in.paradigm'
+layout:
+  type: "basic"
+--
+|                | "Inanimate"     |
+| "Singular"     | =N+IN+Sg        |
+| "Plural"       | =N+IN+Pl        |
+| "Locative"     | =N+IN+Loc       |
+| "1s Poss (sg)" | =N+IN+Sg+Px1Sg  |
+| "2s Poss (sg)" | =N+IN+Sg+Px2Sg  |
+| "3s Poss (sg)" | =N+IN+Sg+Px3Sg  |
