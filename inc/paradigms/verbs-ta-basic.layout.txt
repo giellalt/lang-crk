@@ -2,7 +2,7 @@ name: "Transitive animate verb basic paradigm"
 paradigm: 'verb-ta.paradigm'
 layout:	
   type: "basic"	
-  tooltips":
+tooltips:
   eng:
     "2s → 1s": "2nd person singular actor, 1st person singular goal"
     "2s → 1p": "2nd person singular actor, 1st person plural goal"
