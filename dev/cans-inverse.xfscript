@@ -1,0 +1,26 @@
+read regex
+      @"src/orthography/Latn-to-Cans.compose.xfst".i
+  .o. @"src/filters/make-optional-transitivity-tags.xfst"
+  .o. @"src/filters/make-optional-hyph-tags.xfst"
+  .o. @"src/filters/make-optional-semantic-tags.xfst"
+  .o. @"src/filters/make-optional-v1-tags.xfst"
+  .o. @"src/filters/make-optional-adv_comp-tags.xfst"
+  .o. @"src/filters/remove-area-tags.xfst"
+  .o. @"src/filters/remove-dialect-tags.xfst"
+  .o. @"src/filters/remove-orig_lang-tags.xfst"
+  .o. @"src/filters/remove-usage_except_NGminip-tags.xfst"
+  .o. @"src/filters/remove-error-strings.xfst"
+  .o. @"src/filters/remove-orthography-tags.xfst"
+  .o. @"src/filters/remove-Orth_IPA-strings.xfst"
+  .o. @"src/analyser-raw-gt-desc.xfst"
+  .o. @"src/orthography/downcase-derived_proper-strings.compose.xfst"
+  .o. @"src/filters/remove-hyphenation-marks.xfst"
+  .o. @"src/filters/remove-infl_deriv-borders.xfst"
+  .o. @"src/filters/remove-word-boundary.xfst"
+  .o. @"src/orthography/Latn-to-Cans.compose.xfst"
+;
+invert net
+ save stack generator-cans.xfst
+ quit
+
+
