@@ -35,6 +35,35 @@ morphology:
 {{ lemma }}+N+IN+Px3Pl+Loc
 
 {{ lemma }}+N+IN+Der/Dim+N+IN+Sg
+{{ lemma }}+N+IN+Der/Dim+N+IN+Pl
+{{ lemma }}+N+IN+Der/Dim+N+IN+Loc
+
+{{ lemma }}+N+IN+Der/Dim+N+IN+Sg+Px1Sg
+{{ lemma }}+N+IN+Der/Dim+N+IN+Sg+Px2Sg
+{{ lemma }}+N+IN+Der/Dim+N+IN+Sg+Px1Pl
+{{ lemma }}+N+IN+Der/Dim+N+IN+Sg+Px12Pl
+{{ lemma }}+N+IN+Der/Dim+N+IN+Sg+Px2Pl
+{{ lemma }}+N+IN+Der/Dim+N+IN+Sg+Px3Sg
+{{ lemma }}+N+IN+Der/Dim+N+IN+Sg+Px3Pl
+{{ lemma }}+N+IN+Der/Dim+N+IN+Sg+Px4Sg
+
+{{ lemma }}+N+IN+Der/Dim+N+IN+Pl+Px1Sg
+{{ lemma }}+N+IN+Der/Dim+N+IN+Pl+Px2Sg
+{{ lemma }}+N+IN+Der/Dim+N+IN+Pl+Px1Pl
+{{ lemma }}+N+IN+Der/Dim+N+IN+Pl+Px12Pl
+{{ lemma }}+N+IN+Der/Dim+N+IN+Pl+Px2Pl
+{{ lemma }}+N+IN+Der/Dim+N+IN+Pl+Px3Sg
+{{ lemma }}+N+IN+Der/Dim+N+IN+Pl+Px3Pl
+{{ lemma }}+N+IN+Der/Dim+N+IN+Pl+Px4Sg
+
+{{ lemma }}+N+IN+Der/Dim+N+IN+Px1Sg+Loc
+{{ lemma }}+N+IN+Der/Dim+N+IN+Px2Sg+Loc
+{{ lemma }}+N+IN+Der/Dim+N+IN+Px4Sg+Loc
+{{ lemma }}+N+IN+Der/Dim+N+IN+Px1Pl+Loc
+{{ lemma }}+N+IN+Der/Dim+N+IN+Px12Pl+Loc
+{{ lemma }}+N+IN+Der/Dim+N+IN+Px2Pl+Loc
+{{ lemma }}+N+IN+Der/Dim+N+IN+Px3Sg+Loc
+{{ lemma }}+N+IN+Der/Dim+N+IN+Px3Pl+Loc
 
 
 
