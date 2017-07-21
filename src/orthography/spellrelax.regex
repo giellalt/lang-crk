@@ -58,8 +58,8 @@ e (->) ê, # THESE to be deleted when the SoMe variant is running
 i (->) î, # THESE to be deleted when the SoMe variant is running
 o (->) ô, # THESE to be deleted when the SoMe variant is running
 
-%- (->) % ,
-%- (->) % 
+%- (->) [ %  | %  ]+ # Multiple non-breaking or stanrard spaces (in syllabics) to single hyphen
+
 ;
 
 
