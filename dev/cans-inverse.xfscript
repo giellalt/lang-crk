@@ -20,7 +20,7 @@ read regex
   .o. @"src/orthography/Latn-to-Cans.compose.xfst"
 ;
 invert net
- save stack generator-cans.xfst
+ save stack generator-dict-gt-norm-cans.xfst
  quit
 
 

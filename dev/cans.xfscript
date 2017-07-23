@@ -20,6 +20,6 @@ read regex @"src/filters/remove-area-tags.xfst"
 	.o. @"src/orthography/spellrelax.compose.xfst"
 	.o. @"src/orthography/Latn-to-Cans.compose.xfst"
 	;
- save stack analyser-cans.xfst
+ save stack analyser-dict-gt-desc-cans.xfst
  quit
 
