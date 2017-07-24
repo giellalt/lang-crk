@@ -221,8 +221,8 @@ define lRule [ l ] -> ᓬ ;
 define rRule [ r ] -> ᕒ ;  
 
 define spaceRule [ % ] -> [ %  %  %  ];
-define hyphenRule [ %- ] ->   ; 
-# this was hyphen to nbsp on request from A.Ogg, have a look.
+# define hyphenRule [ %- ] ->   ; # Hyphen to NBSP on request from A. Ogg. 
+define hyphenRule [ %- ] -> [ %  ]; # standard space for hyphen alternative as more convenient input.
 
 define FullStopRule [ %. ] -> ᙮ ;
 
