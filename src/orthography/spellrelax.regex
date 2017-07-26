@@ -60,8 +60,23 @@ o (->) ô, # THESE to be deleted when the SoMe variant is running
 
 # Dealing with spaces instead of hyphens as separators in multipart words
 
-[ %- ] (->) [ %- ]+, # Multiple hyphens into a single hyphen
-%- (->) [ %  | %  ]+ # Multiple non-breaking or standard spaces (in syllabics) to single hyphen
+[ %- ] (->) [ %- ]+,  # Multiple hyphens into a single hyphen
+%- (->) [ %  | %  ]+, # Multiple non-breaking or standard spaces (in syllabics) to single hyphen
+
+# Dealing with English-influenced divergences from SRO, and misspellings based on modern pronunciation
+
+k (->) [ g | c ], # intervocalic voiced pronunciation to stops, maybe context should be added
+t (->) d,         # intervocalic voiced pronunciation to stops, maybe context should be added
+c (->) j,         # English influence on spelling <c>
+y (->) w,         # Mixing glides with each other
+w (->) y,
+
+c (->) c h,       # English influence on spelling <c>
+
+k (->) h k,       # Excessive preaspiration, might this appear before other stops?
+h k (->) k,       # Missing preaspiration, might this appear before other stops?
+â w e (->) a w ê,
+i w (->) o w      # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
 
 ;
 
