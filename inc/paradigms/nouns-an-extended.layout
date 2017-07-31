@@ -1,0 +1,34 @@
+name: "Animate noun extended paradigm"
+paradigm: 'noun-an.paradigm'
+layout:
+  type: "extended"
+tooltips:
+  eng:
+    "1s": "1st person singular possessor"
+    "2s": "2nd person singular possessor"
+    "3s": "3rd person singular possessor"
+    "1p": "1st person plural exclusive possessor"
+    "21": "1st person plural inclusive possessor"
+    "2p": "2nd person plural possessor"
+    "3p": "3rd person plural possessor"
+    "4": "Obviative possessor"
+--
+| "Singular"        | Sg                |                   |
+| "Plural"          | Pl                |                   |
+| "Locative"        | Loc               |                   |
+|                   |                   |                   |
+|                   | "DIMINUTIVE"      |                   |
+| "Singular"        | Der/Dim+N+AN+Sg   |                   |
+| "Plural"          | Der/Dim+N+AN+Pl   |                   |
+| "Locative"        | Der/Dim+N+AN+Loc  |                   |
+|                   |                   |                   |
+|                   | "POSSESSION"      |                   |
+|                   | : "Singular Noun" | : "Plural Noun"   |
+| "1s"              | Sg+Px1Sg          | Pl+Px1Sg          |
+| "2s"              | Sg+Px2Sg          | Pl+Px2Sg          |
+| "3s"              | Sg+Px3Sg          | Pl+Px3Sg          |
+| "1p"              | Sg+Px1Pl          | Pl+Px1Pl          |
+| "21"              | Sg+Px12Pl         | Pl+Px12Pl         |
+| "2p"              | Sg+Px2Pl          | Pl+Px2Pl          |
+| "3p"              | Sg+Px3Pl          | Pl+Px3Pl          |
+| "4"               | Sg+Px4Sg/Pl       | Pl+Px4Sg/Pl       |
