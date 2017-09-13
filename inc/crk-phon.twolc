@@ -411,7 +411,7 @@ a:ê <=> \.#. \.#. \.#. _ %>: n2: ; ! Initial non-word-boundaries added to resol
 ! ! ##n-final VIIs that take -hk NEW SPECIAL CHARACTER (adapt for VAI-n?? e.g. n2 > 0 / _-hk)
 ! ! ## n > h / _-k
 
-"n2hVIIRule"
+"n2hxRule"
 n3:h <=> _ %>:0 k: ;
 
 ! ! #ê-nîpihk
