@@ -723,7 +723,7 @@ VII-2_SG_IND_SUFFIX ;
 VII-2_Pl_IND_SUFFIX ;
 
 LEXICON VII-2_SG_IND_SUFFIX   !!= @CODE@ w final singular
-+3Sg:%> # ;
++3Sg:%>0 # ;
 +4Sg:%>iyiw # ;
 
 LEXICON VII-2_SG_IND_SUFFIX  !!= @CODE@ w final plural
@@ -840,16 +840,17 @@ LEXICON VAI-2_PL !!= @CODE@
 ! ===========================================================
 ! ===========================================================
 !!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+!!!@@@!!! root.lexc: add Der/Com to multi char symbols
 ! ===========================================================
 ! ===========================================================
 
 LEXICON VAI-1_WICI !!!!
 @U.wici.NULL@ VAI-1_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@w%>i2m VTA-3_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@w%>i2m VTA-3_ORDER ;
 
 LEXICON VAI-1_PL_WICI !!!! plural only
 @U.wici.NULL@ VAI-1_PL_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@w%>i2m VTA-3_PL_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@w%>i2m VTA-3_PL_ORDER ;
 
 ! ===========================================================
 ! ===========================================================
@@ -859,11 +860,11 @@ LEXICON VAI-1_PL_WICI !!!! plural only
 
 LEXICON VAI-2_WICI !!!!
 @U.wici.NULL@ VAI-2_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im VTA-3_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@%>im VTA-3_ORDER ;
 
 LEXICON VAI-2_PL_WICI !!!! plural only
 @U.wici.NULL@ VAI-2_PL_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@im VTA-3_PL_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@%>im VTA-3_PL_ORDER ;
 
 !!! ORDERS
 
@@ -1048,6 +1049,8 @@ LEXICON VAI-2_PL_IMP_PERSON !!= @CODE@ plural only
 ! ===========================================================
 ! ===========================================================
 
+!!!@@@!!! n2 == ee->aa case
+
 LEXICON VAI-1_IND_NI   !!= @CODE@  
 VAI-1_IND_NI_SG_SUFFIX ;
 VAI-1_IND_NI_PL_SUFFIX ;
@@ -1079,16 +1082,17 @@ LEXICON VAI-1_IND_NULL_SG_SUFFIX   !!= @CODE@
 
 !           ********
 ! **** Unspecified Actor ****
+!!!@@@!!! probably don't need Pl or Obv Unspec for VAI. 
 !           ********
 
 
-+X+3Sg:%>n2âniwiw # ;
-+X+3Sg:%>n2âniwan # ;
-+X+3Sg:%>n2iwan # ;
++X:%>n2iwiw # ;
++X:%>n2âniwan # ;
++X:%>n2iwan # ;
 
-+X+4Sg:%>n2âniwiyiw # ;
-+X+4Sg:%>n2âniwaniyiw # ;
-+X+4Sg:%>n2iwaniyiw # ;
+!! +X+4Sg:%>n2âniwiyiw # ;
+!! +X+4Sg:%>n2âniwaniyiw # ;
+!! +X+4Sg:%>n2iwaniyiw # ;
 
 
 LEXICON VAI-1_IND_NULL_PL_SUFFIX   !!= @CODE@
@@ -1099,11 +1103,11 @@ LEXICON VAI-1_IND_NULL_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Pl:%>n2âniwiwa # ;
-+X+3Pl:%>n2âniwanwa # ;
-
-+X+4Pl:%>n2âniwiyiwa # ;
-+X+4Pl:%>n2âniwaniyiwa # ;
+!! +X+3Pl:%>n2âniwiwa # ;
+!! +X+3Pl:%>n2âniwanwa # ;
+!! 
+!! +X+4Pl:%>n2âniwiyiwa # ;
+!! +X+4Pl:%>n2âniwaniyiwa # ;
 
 
 
@@ -1140,7 +1144,7 @@ VAI-2_IND_NULL_SG_SUFFIX ;
 VAI-2_IND_NULL_PL_SUFFIX ;
 
 LEXICON VAI-2_IND_NULL_SG_SUFFIX   !!= @CODE@ 
-+3Sg:%> # ;
++3Sg:%>0 # ;
 +3Sg:%>iw # ;
 
 !           ********
@@ -1148,13 +1152,13 @@ LEXICON VAI-2_IND_NULL_SG_SUFFIX   !!= @CODE@
 !           ********
 
 
-+X+3Sg:%>inâniwiw # ;
-+X+3Sg:%>inâniwan # ;
-+X+3Sg:%>iniwan # ;
++X:%>inâniwiw # ;
++X:%>inâniwan # ;
++X:%>iniwan # ;
 
-+X+4Sg:%>inâniwiyiw # ;
-+X+4Sg:%>inâniwaniyiw # ;
-+X+4Sg:%>iniwaniyiw # ;
+!! +X+4Sg:%>inâniwiyiw # ;
+!! +X+4Sg:%>inâniwaniyiw # ;
+!! +X+4Sg:%>iniwaniyiw # ;
 
 LEXICON VAI-2_IND_NULL_PL_SUFFIX   !!= @CODE@ 
 +3Pl:%>wak # ;
@@ -1165,11 +1169,11 @@ LEXICON VAI-2_IND_NULL_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Pl:%>inâniwiwa # ;
-+X+3Pl:%>inâniwanwa # ;
-
-+X+4Pl:%>inâniwiyiwa # ;
-+X+4Pl:%>inâniwaniyiwa # ;
+!! +X+3Pl:%>inâniwiwa # ;
+!! +X+3Pl:%>inâniwanwa # ;
+!! 
+!! +X+4Pl:%>inâniwiyiwa # ;
+!! +X+4Pl:%>inâniwaniyiwa # ;
 
 
 ! ===================================================================================================================
@@ -1203,13 +1207,13 @@ LEXICON VAI-1_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Sg:%>hk # ;
-+X+3Sg:%>nâniwahk # ;
-+X+3Sg:%>niwahk # ;
++X:%>hk # ;
++X:%>nâniwahk # ;
++X:%>niwahk # ;
 
-+X+4Sg:%>hiyik # ;
-+X+4Sg:%>nâniwahiyik # ;
-+X+4Sg:%>niwahiyik # ;
+!! +X+4Sg:%>hiyik # ;
+!! +X+4Sg:%>nâniwahiyik # ;
+!! +X+4Sg:%>niwahiyik # ;
 
 LEXICON VAI-1_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
@@ -1223,17 +1227,18 @@ LEXICON VAI-1_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Pl:%>hki # ;
-+X+3Pl:%>nâniwahki # ;
-+X+3Pl:%>niwahki # ;
+!! +X+3Pl:%>hki # ;
+!! +X+3Pl:%>nâniwahki # ;
+!! +X+3Pl:%>niwahki # ;
 
-+X+4Sg:%>hiyiki # ;
-+X+4Sg:%>nâniwahiyiki # ;
-+X+4Sg:%>niwahiyiki # ;
+!! +X+4Sg:%>hiyiki # ;
+!! +X+4Sg:%>nâniwahiyiki # ;
+!! +X+4Sg:%>niwahiyiki # ;
 
 ! ===========================================================
 ! ===========================================================
 !!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
+!!!@@@!!! stems/verbs.lexc: make all VAI2 == n3 ending
 ! ===========================================================
 ! ===========================================================
 
@@ -1247,20 +1252,21 @@ LEXICON VAI-2_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 +1Sg:%>iyân # ;
 +2Sg:%>iyan # ;
 +3Sg:%>it # ;
-+X:%>hk # ;
++X:%>k # ;
 +X:%>inâniwahk # ;
++X:%>iniwahk # ;
+
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********
-
-+X+3Sg:%>hk # ;
-+X+3Sg:%>nâniwahk # ;
-+X+3Sg:%>niwahk # ;
-
-+X+4Sg:%>hiyik # ;
-+X+4Sg:%>nâniwahiyik # ;
-+X+4Sg:%>niwahiyik # ;
+!! +X+3Sg:%>k # ;
+!! +X+3Sg:%>inâniwahk # ;
+!! +X+3Sg:%>iniwahk # ;
+!! 
+!! +X+4Sg:%>iyik # ;
+!! +X+4Sg:%>inâniwahiyik # ;
+!! +X+4Sg:%>iniwahiyik # ;
 
 
 LEXICON VAI-2_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
@@ -1276,13 +1282,13 @@ LEXICON VAI-2_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Pl:%>ihki # ;
-+X+3Pl:%>inâniwahki # ;
-+X+3Pl:%>iniwahki # ;
+!! +X+3Pl:%>ihki # ;
+!! +X+3Pl:%>inâniwahki # ;
+!! +X+3Pl:%>iniwahki # ;
 
-+X+4Sg:%>ihiyiki # ;
-+X+4Sg:%>inâniwahiyiki # ;
-+X+4Sg:%>iniwahiyiki # ;
+!! +X+4Sg:%>ihiyiki # ;
+!! +X+4Sg:%>inâniwahiyiki # ;
+!! +X+4Sg:%>iniwahiyiki # ;
 
 
 
@@ -1307,7 +1313,7 @@ VAI-1_IMP_SG_SUFFIX ;
 VAI-1_IMP_NULL_PL_SUFFIX ;
 
 LEXICON VAI-1_IMP_SG_SUFFIX
-+Imm+2Sg:%>   # ; ! 
++Imm+2Sg:%>0   # ; ! 
 +Del+2Sg:%>hkan   # ; !
 
 
@@ -1370,8 +1376,8 @@ LEXICON VAI-1_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Sg:%>hki # ;
-+X+4Sg:%>yiki # ;
++X:%>hki # ;
+!! +X+4Sg:%>yiki # ;
 
 LEXICON VAI-1_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
@@ -1386,8 +1392,8 @@ LEXICON VAI-1_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Pl:%>hkwâwi # ;
-+X+4Pl:%>yikwâwi # ;
++X:%>hkwâwi # ;
+!! +X+4Pl:%>yikwâwi # ;
 
 ! ===========================================================
 ! ===========================================================
@@ -1411,8 +1417,8 @@ LEXICON VAI-2_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Sg:%>ihki # ;
-+X+4Sg:%>iyiki # ;
++X:%>ihki # ;
+!! +X+4Sg:%>iyiki # ;
 
 LEXICON VAI-2_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
@@ -1428,8 +1434,8 @@ LEXICON VAI-2_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Pl:%>ihkwâwi # ;
-+X+4Pl:%>iyikwâwi # ;
++X:%>ihkwâwi # ;
+!! +X+4Pl:%>iyikwâwi # ;
 
 
 
@@ -1648,8 +1654,8 @@ LEXICON VTI-1_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Sg:%>mihk # ;
-+X+4Sg:%>mihiyik # ;
++X:%>mihk # ;
+!! +X+4Sg:%>mihiyik # ;
 
 LEXICON VTI-1_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
@@ -1663,8 +1669,8 @@ LEXICON VTI-1_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Pl:%>mihki # ;
-+X+4Pl:%>mihiyiki # ;
+!! +X:%>mihki # ;
+!! +X+4Pl:%>mihiyiki # ;
 
 ! ===================================================================================================================
 ! ===================================================================================================================
@@ -1688,7 +1694,7 @@ VTI-1_IMP_SG_SUFFIX ;
 VTI-1_IMP_NULL_PL_SUFFIX ;
 
 LEXICON VTI-1_IMP_SG_SUFFIX
-+Imm+2Sg:%>   # ; ! 
++Imm+2Sg:%>0   # ; ! 
 +Del+2Sg:%>môhkan   # ; !
 
 
@@ -1731,8 +1737,8 @@ LEXICON VTI-1_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Sg:%>mihki # ;
-+X+4Sg:%>mihiyiki # ;
++X:%>mihki # ;
+!! +X+4Sg:%>mihiyiki # ;
 
 LEXICON VTI-1_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
@@ -1747,13 +1753,13 @@ LEXICON VTI-1_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Sg:%>mihkwâwi # ;
-+X+4Sg:%>mihiyikwâwi # ;
+!! +X+3Sg:%>mihkwâwi # ;
+!! +X+4Sg:%>mihiyikwâwi # ;
 
 ! !! !!! Transitive inanimate (TA)
 ! !      ===========================
 ! !      ===========================
-
+!!!@@@!!! SG/PL ALWAYS LISTED UNDER THE SINGULAR CONT.LEX
 !!! STEM CLASS
 
 LEXICON VTA-1  !!= * @CODE@ Multi-Syllabic stems 
@@ -1766,7 +1772,7 @@ LEXICON VTA-2  !!= * @CODE@ Mono-Syllabic stems
 +V+TA: VTA-2_WICI ;
 
 
-!!! WICI
+!!! WICI !!= * @CODE@ -RULES OUT TAs FROM TAKING THE COM.
 
 
 LEXICON VTA-1_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
@@ -1897,7 +1903,7 @@ LEXICON VTA-1_IND_NI_SG_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+1Sg:%>i2kawin   # ;
++X+1SgO:%>i2kawin   # ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -1934,7 +1940,7 @@ LEXICON VTA-1_IND_NI_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+1Pl:%>i2kawinân   # ;
++X+1PlO:%>i2kawinân   # ;
 
 
 !!!!!! KI- PREFIXING FORMS !!!!!!
@@ -1981,7 +1987,7 @@ LEXICON VTA-1_IND_KI_SG_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+2Sg:%>i2kawin   # ;
++X+2SgO:%>i2kawin   # ;
 
 ! ~~~~~~~~~~~~~~~~~~~~
 !!!!!! PLURAL !!!!!! 
@@ -2041,9 +2047,9 @@ LEXICON VTA-1_IND_KI_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+12Pl:%>i2kawinânaw	   # ;
-+X+12Pl:%>i2kawinaw	   # ;
-+X+2Pl:%>i2kawinâwâw	   # ;
++X+12PlO:%>i2kawinânaw	   # ;
++X+12PlO:%>i2kawinaw	   # ;
++X+2PlO:%>i2kawinâwâw	   # ;
 
 
 !!!!!! NULL PREFIXING FORMS !!!!!!
@@ -2084,8 +2090,8 @@ LEXICON VTA-1_IND_NULL_SG_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+3Sg:%>âw   # ;
-+X+4Sg/Pl:%>âyiwa   # ;
++X+3SgO:%>âw   # ;
++X+4Sg/PlO:%>âyiwa   # ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -2116,7 +2122,7 @@ LEXICON VTA-1_IND_NULL_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+3Pl:%>âwak   # ;
++X+3PlO:%>âwak   # ;
 
 
 ! ===================================================================================================================
@@ -2192,11 +2198,11 @@ LEXICON VTA-1_CNJ_NULL_SG_SUFFIX
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+1Sg:%>i2kawiyân	   # ;
-+X+2Sg:%>i2kawiyan	   # ;
++X+1SgO:%>i2kawiyân	   # ;
++X+2SgO:%>i2kawiyan	   # ;
 
-+X+3Sg:%>i2ht	   # ;
-+X+4Sg/Pl:%>i2miht	   # ;
++X+3SgO:%>i2ht	   # ;
++X+4Sg/PlO:%>i2miht	   # ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -2282,11 +2288,11 @@ LEXICON VTA-1_CNJ_NULL_PL_SUFFIX
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+1Pl:%>i2kawiyâhk	   # ;
-+X+12Pl:%>i2kawiyahk	   # ;
-+X+2Pl:%>i2kawiyêk	   # ;
++X+1PlO:%>i2kawiyâhk	   # ;
++X+12PlO:%>i2kawiyahk	   # ;
++X+2PlO:%>i2kawiyêk	   # ;
 
-+X+3Pl:%>i2hcik	   # ;
++X+3PlO:%>i2hcik	   # ;
 
 
 ! ===================================================================================================================
@@ -2329,7 +2335,7 @@ LEXICON VTA_IMP_NULL_SG_SUFFIX
 
 !!!!!!! Mixed !!!!!!!
 
-+Imm+2Sg+3SgO: # ;
++Imm+2Sg+3SgO:0 # ;
 
 +Del+2Sg+3SgO:%>âhkan # ;
 
@@ -2551,6 +2557,17 @@ LEXICON VTA-1_FUT_CON_NULL_PL_SUFFIX
 +12Pl+4Sg/PlO:%>i2mâyahki	   # ;
 +2Pl+4Sg/PlO:%>i2mâyêko	   # ;
 
+
++X+1SgO:%>i2kawiyâni    # ;
++X+2SgO:%>i2kawiyani    # ;
++X+1PlO:%>i2kawiyâhki   # ;
++X+12PlO:%>i2kawiyahki   # ;
+! +X+12PlO:%>i2kawiyahko   # ;
++X+2PlO:%>i2kawiyêko   # ;
+
++X+3SgO:%>i2hci   # ;
++X+3PlO:%>i2htwâwi  # ;
++X+4Sg/PlO:%>i2mihci  # ;
 
 !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
 
