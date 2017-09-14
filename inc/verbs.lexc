@@ -860,11 +860,11 @@ LEXICON VAI-1_PL_WICI !!!! plural only
 
 LEXICON VAI-2_WICI !!!!
 @U.wici.NULL@ VAI-2_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@%>im VTA-3_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA-3_ORDER ;
 
 LEXICON VAI-2_PL_WICI !!!! plural only
 @U.wici.NULL@ VAI-2_PL_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@%>im VTA-3_PL_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA-3_PL_ORDER ;
 
 !!! ORDERS
 
@@ -1466,11 +1466,11 @@ LEXICON VTIw  !!= * @CODE@ NOTE: These inflect just as VAI -w final stems, so th
 
 LEXICON VTI-1_WICI
 @U.wici.NULL@ VTI-1_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@amôm VTA-3_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@amôm VTA-3_ORDER ;
 
 LEXICON VTI-1_PL_WICI
 @U.wici.NULL@ VTI-1_PL_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@amôm VTA-3_PL_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@amôm VTA-3_PL_ORDER ;
 
 !!! ORDERS
 
