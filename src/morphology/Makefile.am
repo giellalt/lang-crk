@@ -64,6 +64,15 @@ GT_LOCAL_XFSCRIPT_SRCS=
 GT_DISTRO_SRCS=stems/$(GTLANG)-propernouns.lexc
 
 ### BEGIN: Local processing: ###
+
+### List additional targets in the following variable, for build targets not
+### covered by other means. This comes ***in addition to*** what you can do by
+### just targeting lexicon.*: lexicon.tmp.*, and is useful if you want to build
+### separate fst's that need further treatment in the src/ dir. See the language
+### gle/ for an example of how this is used.
+
+GIELLA_LOCAL_TARGETS=
+
 generated_files/eng-propernouns.lexc: \
 			$(GIELLA_SHARED)/eng/src/morphology/stems/eng-propernouns.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
@@ -78,7 +87,6 @@ generated_files/eng-$(GTLANG)-propernouns.lexc: \
 	echo "! <--- Dump from ENG -->" >> $@ && \
 	echo "" >> $@ && \
 	cat $< >> $@
-
 
 ### END: Local processing: ###
 
