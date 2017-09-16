@@ -1,4 +1,4 @@
-! Divvun & Giellatekno - open source grammars for Sámi and other languages
+ Divvun & Giellatekno - open source grammars for Sámi and other languages
 ! Copyright © 2000-2010 The University of Tromsø
 ! http://giellatekno.uit.no & http://divvun.no
 !
@@ -35,68 +35,53 @@ LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independen
 
 @U.order.indep@ INDEPENDENT ;         !!= * @CODE@
 @U.order.cnj@   CONJUNCT ;            !!= * @CODE@ 
-               IMPERATIVE ;          !!= * @CODE@
-               FUTURE_CONDITIONAL ;  !!= * @CODE@
+                IMPERATIVE ;          !!= * @CODE@
+                FUTURE_CONDITIONAL ;  !!= * @CODE@
 
 
 LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
-@U.person.NI@:@U.person.NI@nit2 IND_TENSE ;
-@U.person.KI@:@U.person.KI@kit2 IND_TENSE ;
-@U.person.NULL@                 IND_TENSE ;
-! < 0:n 0:i  "@U.person.NI@" 0:"t2"                       > IND_TENSE ; !
-! < 0:k 0:i  "@U.person.KI@" 0:"t2"                       > IND_TENSE ; !
-! <          "@U.person.NULL@" > IND_TENSE ; !
+@U.person.NI@:@U.person.NI@nit2%< IND_TENSE ;
+@U.person.KI@:@U.person.KI@kit2%< IND_TENSE ;
+@U.person.NULL@                   IND_TENSE ;
 
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
-@U.tense.Prs@                                                            PREVERBS ;
-@U.tense.Prt@@P.joiner.NULL@:@U.tense.Prt@@P.joiner.NULL@kî^EGLOT       PREVERBS ;
-@U.tense.Prt@@P.joiner.hyphen@:@U.tense.Prt@@P.joiner.hyphen@kî-        PREVERBS ;
-@U.tense.FutDef@@P.joiner.NULL@:@U.tense.FutDef@@P.joiner.NULL@ka^EGLOT PREVERBS ;
-@U.tense.FutDef@@P.joiner.hyphen@:@U.tense.FutDef@@P.joiner.hyphen@ka-  PREVERBS ;
-@U.tense.FutInt@@P.joiner.NULL@:@U.tense.FutInt@@P.joiner.NULL@wî^EGLOT PREVERBS ;
-@U.tense.FutInt@@P.joiner.hyphen@:@U.tense.FutInt@@P.joiner.hyphen@wî-  PREVERBS ;
-! <                   "@U.tense.Prs@"                        > PREVERBS ; !
-! < 0:k 0:î 0:^EGLOT "@U.tense.Prt@"    "@P.joiner.NULL@"   > PREVERBS ; ! 
-! < 0:k 0:î 0:-      "@U.tense.Prt@"    "@P.joiner.hyphen@" > PREVERBS ; !
-! < 0:k 0:a 0:^EGLOT "@U.tense.FutDef@" "@P.joiner.NULL@"   > PREVERBS ; !
-! < 0:k 0:a 0:-      "@U.tense.FutDef@" "@P.joiner.hyphen@" > PREVERBS ; !
-! < 0:w 0:î 0:^EGLOT "@U.tense.FutInt@" "@P.joiner.NULL@"   > PREVERBS ; ! N.B. - move to a next lexicon
-! < 0:w 0:î 0:-      "@U.tense.FutInt@" "@P.joiner.hyphen@" > PREVERBS ; !
+@U.tense.Prs@                                                             VERBPREFIXES ;
+@U.tense.Prt@@P.joiner.NULL@:@U.tense.Prt@@P.joiner.NULL@kî^EGLOT%<       VERBPREFIXES ;
+@U.tense.Prt@@P.joiner.hyphen@:@U.tense.Prt@@P.joiner.hyphen@kî-%<        VERBPREFIXES ;
+@U.tense.FutDef@@P.joiner.NULL@:@U.tense.FutDef@@P.joiner.NULL@ka^EGLOT%< VERBPREFIXES ;
+@U.tense.FutDef@@P.joiner.hyphen@:@U.tense.FutDef@@P.joiner.hyphen@ka-%<  VERBPREFIXES ;
+@U.tense.FutInt@@P.joiner.NULL@:@U.tense.FutInt@@P.joiner.NULL@wî^EGLOT%< VERBPREFIXES ;
+@U.tense.FutInt@@P.joiner.hyphen@:@U.tense.FutInt@@P.joiner.hyphen@wî-%<  VERBPREFIXES ;
 
 
 LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
-@U.order.FutCon@ PREVERBS ;
+@U.order.FutCon@ VERBPREFIXES ;
 
 
-LEXICON CONJUNCT !!= @CODE@ gives flag for conjunctive and prefix ê-, kâ-, kâki-
-@P.joiner.hyphen@PV/e+:@P.joiner.hyphen@ê- CNJ_TENSE ;
-@P.joiner.NULL@PV/e+:@P.joiner.NULL@ê^EGLOT CNJ_TENSE ;
-@P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka- CNJ_TENSE ;
-@P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka^EGLOT CNJ_TENSE ;
-@P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ- CNJ_TENSE ;
-@P.joiner.NULL@PV/kaa+:@P.joiner.NULL@kâ^EGLOT CNJ_TENSE ;
-@P.joiner.hyphen@PV/kaa_ki+:@P.joiner.hyphen@kâ-ki- CNJ_TENSE ;
-@P.joiner.NULL@PV/kaa_ki+:@P.joiner.NULL@kâki^EGLOT CNJ_TENSE ;
+LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and prefix ê-, kâ-, kâki-
+@P.joiner.hyphen@PV/e+:@P.joiner.hyphen@ê-%<          CNJ_TENSE ;
+@P.joiner.NULL@PV/e+:@P.joiner.NULL@ê^EGLOT%<         CNJ_TENSE ;
+@P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka-%<        CNJ_TENSE ;
+@P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka^EGLOT%<       CNJ_TENSE ;
+@P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ-%<       CNJ_TENSE ;
+@P.joiner.NULL@PV/kaa+:@P.joiner.NULL@kâ^EGLOT%<      CNJ_TENSE ;
+@P.joiner.hyphen@PV/kaa_ki+:@P.joiner.hyphen@kâ-ki-%< CNJ_TENSE ;
+@P.joiner.NULL@PV/kaa_ki+:@P.joiner.NULL@kâki^EGLOT%< CNJ_TENSE ;
 
 @P.cnj.CC@ CNJ_TENSE ; ! Option to allow for the occasional omission of the grammatical conjunct prefix
 
 
-LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunctive
-@U.tense.Prs@                                                                          PREVERBS ;
-@U.tense.Prt@@U.joiner.hyphen@@C.cnj@:@U.tense.Prt@@U.joiner.hyphen@@C.cnj@kî-        PREVERBS ;
-@U.tense.Prt@@U.joiner.NULL@@C.cnj@:@U.tense.Prt@@U.joiner.NULL@@C.cnj@kî^EGLOT       PREVERBS ;
-@U.tense.FutInt@@U.joiner.hyphen@@C.cnj@:@U.tense.FutInt@@U.joiner.hyphen@@C.cnj@wî-  PREVERBS ;
-@U.tense.FutInt@@U.joiner.NULL@@C.cnj@:@U.tense.FutInt@@U.joiner.NULL@@C.cnj@wî^EGLOT PREVERBS ;
-! <                   "@U.tense.Prs@"                        > PREVERBS ; ! Present
-! < 0:k 0:î 0:-      "@U.tense.Prt@" "@U.joiner.hyphen@" "@C.cnj@"    > PREVERBS ; ! Preterite, 
-! < 0:k 0:î 0:^EGLOT "@U.tense.Prt@" "@U.joiner.NULL@" "@C.cnj@"      > PREVERBS ; ! Preterite,
-! < 0:w 0:î 0:-      "@U.tense.FutInt@" "@U.joiner.hyphen@" "@C.cnj@" > PREVERBS ; ! Future Intentional
-! < 0:w 0:î 0:^EGLOT "@U.tense.FutInt@" "@U.joiner.NULL@" "@C.cnj@"   > PREVERBS ; ! Future Intentional
+LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
+@U.tense.Prs@                                                                           VERBPREFIXES ;
+@U.tense.Prt@@U.joiner.hyphen@@C.cnj@:@U.tense.Prt@@U.joiner.hyphen@@C.cnj@kî-%<        VERBPREFIXES ;
+@U.tense.Prt@@U.joiner.NULL@@C.cnj@:@U.tense.Prt@@U.joiner.NULL@@C.cnj@kî^EGLOT%<       VERBPREFIXES ;
+@U.tense.FutInt@@U.joiner.hyphen@@C.cnj@:@U.tense.FutInt@@U.joiner.hyphen@@C.cnj@wî-%<  VERBPREFIXES ;
+@U.tense.FutInt@@U.joiner.NULL@@C.cnj@:@U.tense.FutInt@@U.joiner.NULL@@C.cnj@wî^EGLOT%< VERBPREFIXES ;
 
 
 LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
-@U.order.imp@  PREVERBS ;
+@U.order.imp@  VERBPREFIXES ;
 
 !! Words marked GG are from Plains Cree Grammar guide and glossary
 
@@ -104,296 +89,297 @@ LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
 !! !! Preverbs
 !     ==========
 
-LEXICON PREVERBS  !!= @CODE@ just adds the prefix boundary
- :%> PVSLOT ;
+LEXICON VERBPREFIXES  !!= @CODE@ just adds the prefix boundary
+@U.wici.NULL@ VERBSTEMS ;
+@U.wici.wici@ WICI ;
+REDUPLICATION ;
+PREVERBS ;
 
-LEXICON PVSLOT
-REDUPL ;
-WICI ;
-PV/acici+:acici VERBSTEMSPRE "head down; upside down" ; ! Position
-PV/ahcahkowi+:ahcahkowi VERBSTEMSPRE "spiritual" ; ! Spirituality
-PV/akawaci+:akâwâci VERBSTEMSPRE "wishfully" ; ! Manner
-PV/ako+:ako VERBSTEMSPRE "sticking on; attached" ; 
-PV/akoci+:akoci VERBSTEMSPRE "hanging" ; ! Position
-PV/apihci+:apihci VERBSTEMSPRE "small" ; ! Size
-PV/apisci+:apisci VERBSTEMSPRE "small, little" ; ! Size
-PV/apisi+:apisi VERBSTEMSPRE "small, tiny" ; ! Size
-PV/apisisi+:apisîsi VERBSTEMSPRE "small" ; ! Size
-PV/ase+:asê VERBSTEMSPRE "backwards, back, motion going backwards" ; 
-PV/aseya+:asêya VERBSTEMSPRE "in a group" ; 
-PV/ati+:ati VERBSTEMSPRE "begin to, beginning; progressively, proceed to, going on, progressing; on the way" ; 
-PV/atimi+:atimi VERBSTEMSPRE "going away from speaker, towards addressee" ; 
-PV/ayamihawi+:ayamihâwi VERBSTEMSPRE "prayer, pertaining to Christian prayer; of the Christian religion, of church" ; 
-PV/ayamihewi+:ayamihêwi VERBSTEMSPRE "of the Christian religion, of church" ; 
-PV/ayaso+:ayâsô VERBSTEMSPRE "a little here and there" ; 
-PV/ayi+:ayi VERBSTEMSPRE "ah, hm" ; 
-PV/ahci+:âhci VERBSTEMSPRE "to a different place" ; 
-PV/ahkami+:âhkami VERBSTEMSPRE "persistently, untiringly, unfailingly, unceasingly, unwaveringly; keep on, persevere" ; 
-PV/ako+:âkô VERBSTEMSPRE "covered, shielded" ; 
-PV/akwa+:âkwâ VERBSTEMSPRE "quite a lot; well on its way, in progress of time" ; 
-PV/ami+:âmi VERBSTEMSPRE "almost" ; 
-PV/aniski+:âniski VERBSTEMSPRE "succession, extension" ; 
-PV/apihci+:âpihci VERBSTEMSPRE "halfway" ; 
-PV/apihtawi+:âpihtawi VERBSTEMSPRE "half" ; 
-PV/apihta+:âpihtâ VERBSTEMSPRE "half" ; 
-©U.joiner.NULL@PV/apihta_kisikawi+:©U.joiner.NULL@âpihtâkîsikâwi VERBSTEMSPRE "at noon" ; 
-©U.joiner.hyphen@PV/apihta_kisikawi+:©U.joiner.hyphen@âpihtâ-kîsikâwi VERBSTEMSPRE "at noon" ; 
-PV/asawi+:âsawi VERBSTEMSPRE "in passing something on" ; 
-PV/ase+:âsê VERBSTEMSPRE "see: asê-" ; 
-PV/asowi+:âsowi VERBSTEMSPRE "in turn, in succession" ; 
-PV/aste+:âstê VERBSTEMSPRE "ceasing; quit" ; 
-PV/ata+:âta VERBSTEMSPRE "although, in VAI-2" ; 
-PV/ayici+:âyîci VERBSTEMSPRE "firmly, tightly" ; 
-PV/cipehtako+:cîpêhtako VERBSTEMSPRE "blue, greyish blue, grey" ; 
-! PV/e+:ê VERBSTEMSPRE "[grammatical preverb: complementizer; defines a changed conjunct clause]" ; 
-PV/isi+:isi VERBSTEMSPRE "so, this way, thus, thither, such" ; 
-PV/isko+:isko VERBSTEMSPRE "so far, to such an extent" ; 
-PV/ispi+:ispi VERBSTEMSPRE "then, when" ; 
-PV/ispihci+:ispîhci VERBSTEMSPRE "meanwhile, beforehand" ; 
-PV/itahto+:itahto VERBSTEMSPRE "in such number" ; 
-PV/ikate+:îkatê VERBSTEMSPRE "aside, off to one side" ; 
-! PV/ka+:ka VERBSTEMSPRE "grammatical preverb: future will, shall; infinitive; optative ought, should" ; 
-! PV/ka_ki+:ka-kî VERBSTEMSPRE "can, be able to; may; should, ought to" ; 
-@U.joiner.hyphen@PV/ka_ki+:@U.joiner.hyphen@ka-kî VERBSTEMSPRE ;
-@U.joiner.NULL@PV/ka_ki+:@U.joiner.NULL@kakî VERBSTEMSPRE ;
-PV/kakepaci+:kakêpâci VERBSTEMSPRE "stupidly" ; 
-PV/kakwahyaki+:kakwâhyaki VERBSTEMSPRE "greatly, extremely, overwhelmingly; with startled surprise" ; 
-PV/kakwayaki+:kakwâyaki VERBSTEMSPRE "greatly, extremely" ; 
-PV/kakwe+:kakwê VERBSTEMSPRE "try to, attempt to" ; 
-PV/kakweci+:kakwêci VERBSTEMSPRE "inquire" ; 
-PV/kanaci+:kanâci VERBSTEMSPRE "clean" ; 
-PV/kape+:kapê VERBSTEMSPRE "for the full duration of; always" ; 
-PV/kaski+:kaski VERBSTEMSPRE "dense" ; 
-PV/kaskitewi+:kaskitêwi VERBSTEMSPRE "black" ; 
-PV/kayasi+:kayâsi VERBSTEMSPRE "old" ; 
-! PV/kaa+:kâ VERBSTEMSPRE "[grammatical preverb; defines a changed conjunct clause; often a relative clause, i.e. who, which]" ; 
-PV/kah+:kâh VERBSTEMSPRE "would, ought to; likely to" ; 
-@U.joiner.hyphen@PV/kah-kape+:@U.joiner.hyphen@kâh-kapê VERBSTEMSPRE "all the time" ; 
-@U.joiner.NULL@PV/kah-kape+:@U.joiner.NULL@kâhkapê VERBSTEMSPRE "all the time" ; 
-PV/kamwaci+:kâmwâci VERBSTEMSPRE "quietly" ; 
-PV/kaspi+:kâspi VERBSTEMSPRE "crunching" ; 
-PV/kawi+:kâwi VERBSTEMSPRE "again; back, in return" ; 
-PV/ke+:kê VERBSTEMSPRE "grammatical preverb; future, conditional: shall; defines a changed conjunct clause" ; 
-PV/kekaci+:kêkâci VERBSTEMSPRE "almost" ; 
-PV/ket+:kêt VERBSTEMSPRE "take off, remove" ; 
-PV/ketiski+:kêtiski VERBSTEMSPRE "to exact measure" ; 
-PV/kici+:kici VERBSTEMSPRE "so that" ; 
-PV/kihci+:kihci VERBSTEMSPRE "great, big, important" ; 
-PV/kika+:kika VERBSTEMSPRE "grammatical preverb; future; defines a conjunct clause" ; 
-PV/kipi+:kipi VERBSTEMSPRE "blocking" ; 
-PV/kisci+:kisci VERBSTEMSPRE "big" ; 
-PV/kise+:kisê VERBSTEMSPRE "great, gentle" ; 
-PV/kisipi+:kisipi VERBSTEMSPRE "end, finish, ending" ; 
-PV/kisiska+:kisiskâ VERBSTEMSPRE "fast, quickly" ; 
-PV/kisiwi+:kisiwi VERBSTEMSPRE "anger" ; 
-PV/kisiwi+:kisîwi VERBSTEMSPRE "angrily, in anger" ; 
-PV/kita+:kita VERBSTEMSPRE "[grammatical preverb]; future: will, shall; infinitive; optative: ought, should" ; 
-@U.joiner.hyphen@PV/kita_ki+:@U.joiner.hyphen@kita-kî VERBSTEMSPRE "can, be able to; may; ought to" ; 
-@U.joiner.NULL@PV/kita_ki+:@U.joiner.NULL@kitakî VERBSTEMSPRE "can, be able to; may; ought to" ; 
-PV/kitimaki+:kitimâki VERBSTEMSPRE "pitiable, pitiably" ; 
-PV/kiye+:kiyê VERBSTEMSPRE "[grammatical preverb; future; in changed conjunct clauses]" ; 
-PV/kiyi+:kiyi VERBSTEMSPRE "[grammatical preverb; future; defines a conjunct clause]" ; 
-! PV/ki+:kî VERBSTEMSPRE "[grammatical preverb; past, completion]" ; 
-PV/kimoci+:kîmôci VERBSTEMSPRE "secretly, by stealth" ; 
-PV/kipi+:kîpi VERBSTEMSPRE "quickly" ; 
-PV/kisi+:kîsi VERBSTEMSPRE "finish; completely, to completion; completing, having done" ; 
-PV/kiski+:kîski VERBSTEMSPRE "severing, breaking, cutting off" ; 
-PV/kisopwe+:kîsopwê VERBSTEMSPRE "with hot weather" ; 
-PV/kiwaci+:kîwâci VERBSTEMSPRE "orphaned, stray; lonely, desolately" ; 
-PV/kiwe+:kîwê VERBSTEMSPRE "back, homeward" ; 
-PV/koci+:koci VERBSTEMSPRE "try to" ; 
-PV/kota+:kôta VERBSTEMSPRE "long for, be deprived of" ; 
-PV/kotate+:kôtatê VERBSTEMSPRE "at a loss, making no attempt" ; 
-PV/kwataki+:kwataki VERBSTEMSPRE "distressing, tormenting, tortuous" ; 
-PV/kwayako+:kwayako VERBSTEMSPRE "taking out, directly" ; 
-PV/kwayaski+:kwayaski VERBSTEMSPRE "properly" ; 
-PV/kwayasko+:kwayasko VERBSTEMSPRE "straight; properly, correctly" ; 
-PV/kwayaci+:kwayâci VERBSTEMSPRE "in readiness, already; in preparation; beforehand" ; 
-PV/kwahci+:kwâhci VERBSTEMSPRE "far off" ; 
-PV/kwaskwe+:kwâskwê VERBSTEMSPRE "upwards" ; 
-PV/kwataki+:kwâtaki VERBSTEMSPRE "distressing, tormenting, tortuous" ; 
-PV/kweski+:kwêski VERBSTEMSPRE "turning" ; 
-PV/kwetawi+:kwêtawi VERBSTEMSPRE "doubtful" ; 
-PV/kwitawi+:kwîtawi VERBSTEMSPRE "impatiently" ; 
-PV/maci+:maci VERBSTEMSPRE "bad, evil, wicked, wrong, ill" ; 
-@U.joiner.hyphen@PV/maci_manitowi+:@U.joiner.hyphen@maci-manitowi VERBSTEMSPRE "evil, devilish; Devil's" ; 
-@U.joiner.NULL@PV/maci_manitowi+:@U.joiner.NULL@macimanitowi VERBSTEMSPRE "evil, devilish; Devil's" ; 
-PV/mahti+:mahti VERBSTEMSPRE "Let us; hortatory" ; ! From NS 152 
-PV/mana+:manâ VERBSTEMSPRE "beware of, careful not to, avoid doing" ; 
-PV/mani+:mani VERBSTEMSPRE "with the intent of, with the purpose of" ; 
-PV/masta+:mastâ VERBSTEMSPRE "later" ; 
-PV/matwe+:matwê VERBSTEMSPRE "audibly, visibly; perceptibly; loudly; heard or seen from a distance" ; 
-PV/maaci+:mâci VERBSTEMSPRE "begin to, start to; commencement; initially" ; 
-PV/mahi+:mâhi VERBSTEMSPRE "downstream" ; 
-PV/mamawi+:mâmawi VERBSTEMSPRE "together; in full number of them all, altogether, all together as a group" ; 
-PV/maninakisko+:mâninâkisko VERBSTEMSPRE "without hesitation, entirely" ; 
-PV/maski+:mâski VERBSTEMSPRE "crippled; defective, deformed" ; 
-PV/mayaci+:mâyâci VERBSTEMSPRE "bad" ; 
-PV/mayi+:mâyi VERBSTEMSPRE "bad, evil; badly, evilly, wickedly" ; 
-PV/mecimwaci+:mêcimwâci VERBSTEMSPRE "permanently, for good" ; 
-PV/mêkwa+:mêkwâ VERBSTEMSPRE "currently, presently, right now; while, during, in the meantime, in the act or place" ; 
-PV/mesci+:mêsci VERBSTEMSPRE "exhaustively, till all is gone" ; 
-PV/mesti+:mêsti VERBSTEMSPRE "it is used up, it is burnt out, it is spent" ; 
-PV/mihko+:mihko VERBSTEMSPRE "red" ; 
-PV/mihyawe+:mihyawê VERBSTEMSPRE "with fur or body hair" ; 
-PV/misakame+:misakâmê VERBSTEMSPRE "all the way" ; 
-PV/misi+:misi VERBSTEMSPRE "big, greatly; much, a lot; very, extremely, to the extreme" ; 
-PV/mistiko+:mistiko VERBSTEMSPRE "wood, of wood, wooden" ; 
-PV/miyo+:miyo VERBSTEMSPRE "good, well, beautifully" ; 
-PV/mosci+:mosci VERBSTEMSPRE "just, merely, plainly, simply, directly, without mediation, without instrumentality; by hand" ; 
-PV/mohco+:môhco VERBSTEMSPRE "silly, crazy" ; 
-PV/mwayi+:mwayî VERBSTEMSPRE "before, prior to" ; 
-PV/nahi+:nahi VERBSTEMSPRE "well, fair" ; 
-PV/nahta+:nahtâ VERBSTEMSPRE "able; good at, competent, practised, experienced, skillful at, expert at, known as one who does s.t. habitually; well" ; 
-PV/naki+:naki VERBSTEMSPRE "stopping" ; 
-PV/napaki+:napaki VERBSTEMSPRE "flat" ; 
-PV/naspaci+:naspâci VERBSTEMSPRE "opposite, contrarily" ; 
-PV/natawi+:natawi VERBSTEMSPRE "go to" ; 
-PV/nawaci+:nawaci VERBSTEMSPRE "better" ; 
-PV/naci+:nâci VERBSTEMSPRE "getting" ; 
-PV/nanitaw+:nânitaw VERBSTEMSPRE "[in negative clauses:] any" ; 
-PV/natakasi+:nâtakâsi VERBSTEMSPRE "into the bush country" ; 
-PV/nawayawi+:nâwayawi VERBSTEMSPRE "one behind the other, in a row" ; 
-PV/nehiyawi+:nêhiyawi VERBSTEMSPRE "Cree, in Cree" ; 
-PV/nihta+:nihtâ VERBSTEMSPRE "able; good at, competent, practised, experienced, skillful at, expert at, known as one who does s.t. habitually; well" ; 
-PV/nipahi+:nipahi VERBSTEMSPRE "really, very, extremely" ; 
-PV/nisihkaci+:nisîhkâci VERBSTEMSPRE "gently, carefully, slowly" ; 
-PV/nitawi+:nitawi VERBSTEMSPRE "go and, go to; engaged in" ; 
-PV/nihci+:nîhci VERBSTEMSPRE "down, downwards; bottom" ; 
-PV/nihtaciwe+:nîhtaciwê VERBSTEMSPRE "downhill, down" ; 
-PV/nikani+:nîkâni VERBSTEMSPRE "in front, ahead, at the head, in the future" ; 
-PV/nimi+:nîmi VERBSTEMSPRE "take along" ; 
-PV/nipa+:nîpâ VERBSTEMSPRE "at night, in the dark" ; 
-PV/niso+:nîso VERBSTEMSPRE "two" ; 
-PV/nohte+:nôhtê VERBSTEMSPRE "want to, desire to; lack" ; 
-PV/ocihci+:ocihci VERBSTEMSPRE "back in time; far back; from before, earlier; having lived long enough for something; chance to, live to, live to see" ; 
-PV/ohci+:ohci VERBSTEMSPRE "from there; with, by means of; because, for that reason, therefore, thence; [grammatical preverb; past preverb in negative clauses]" ; 
-PV/ohtiskawi+:ohtiskawi VERBSTEMSPRE "facing" ; 
-PV/osami+:osâmi VERBSTEMSPRE "too much, because of excess, for" ; 
-PV/osawaski+:osâwaski VERBSTEMSPRE "green, blue-green" ; 
-PV/osawi+:osâwi VERBSTEMSPRE "yellow, brown" ; 
-PV/oski+:oski VERBSTEMSPRE "new, young, first" ; 
-PV/otami+:otami VERBSTEMSPRE "busy, occupied, delayed" ; 
-PV/o+:ô VERBSTEMSPRE "from there, for that reason; with, by means of; [grammatical preverb]" ; 
-PV/oh+:ôh VERBSTEMSPRE "from there, for that reason; with, by means of; [past preverb in negative clauses]" ; 
-PV/paci+:paci VERBSTEMSPRE "wrongly, in error" ; 
-PV/pahki+:pahki VERBSTEMSPRE "portion of" ; 
-PV/pakwano+:pakwâno VERBSTEMSPRE "from memory" ; 
-PV/papa+:papâ VERBSTEMSPRE "go around, about, all over" ; 
-PV/papami+:papâmi VERBSTEMSPRE "around, about, all over, here and there, hither and thither" ; 
-PV/papasi+:papâsi VERBSTEMSPRE "fast, in a hurry, quick" ; 
-PV/pasiko+:pasikô VERBSTEMSPRE "get up (from sitting)" ; 
-PV/paspi+:paspi VERBSTEMSPRE "through narrow opening" ; 
-PV/pahkaci+:pâhkaci VERBSTEMSPRE "fixed, not moving; locked in to a previously stated obligation" ; 
-PV/pahko+:pâhko VERBSTEMSPRE "dry" ; 
-PV/pasci+:pâsci VERBSTEMSPRE "over, beyond" ; 
-PV/pasici+:pâsici VERBSTEMSPRE "stepping over, skipping" ; 
-PV/pe+:pê VERBSTEMSPRE "come and; towards, approaching; hither; thence, from there on down; [towards focus]" ; 
-PV/peyako+:pêyako VERBSTEMSPRE "alone, only; as one" ; 
-PV/pimi+:pimi VERBSTEMSPRE "along, in linear progression; while moving in linear progression" ; 
-PV/pimici+:pimici VERBSTEMSPRE "crosswise, from side, at right angle" ; 
-PV/pimipahci+:pimipahci VERBSTEMSPRE "running, on the run" ; 
-PV/pisci+:pisci VERBSTEMSPRE "accidentally, mistakenly, erroneously" ; 
-PV/pihci+:pîhci VERBSTEMSPRE "inside, in, within" ; 
-PV/pihtawe+:pîhtawê VERBSTEMSPRE "under; double" ; 
-PV/pihtoke+:pîhtokê VERBSTEMSPRE "entering to the inside, entering house" ; 
-PV/pikiskaci+:pîkiskâci VERBSTEMSPRE "sorry, sad, lonely" ; 
-PV/pimi+:pîmi VERBSTEMSPRE "twisted" ; 
-PV/pitosi+:pîtosi VERBSTEMSPRE "different, foreign" ; 
-PV/piwi+:pîwi VERBSTEMSPRE "small" ; 
-PV/poni+:pôni VERBSTEMSPRE "stop, terminate, cease; after" ; 
-PV/posko+:pôsko VERBSTEMSPRE "the same" ; 
-PV/pwana+:pwâna VERBSTEMSPRE "unable, fail to" ; 
-PV/pwatawi+:pwâtawi VERBSTEMSPRE "unable to do, failing" ; 
-PV/saskaci+:saskaci VERBSTEMSPRE "weary, tired of" ; 
-PV/sakewe+:sâkêwê VERBSTEMSPRE "behind obstacle to vision, into view" ; 
-PV/sapo+:sâpo VERBSTEMSPRE "fully, exhaustively, through, through and through, right through, from end to end; beyond" ; 
-PV/saposci+:sâposci VERBSTEMSPRE "through" ; 
-PV/sasakici+:sâsakici VERBSTEMSPRE "backwards; supine" ; 
-PV/sehke+:sêhkê VERBSTEMSPRE "by itself, of own accord; move ahead of own accord; willingly" ; 
-PV/sesawi+:sêsâwi VERBSTEMSPRE "stretching, exercising" ; 
-PV/sikaci+:sikaci VERBSTEMSPRE "impatiently, bored with" ; 
-PV/simaci+:simaci VERBSTEMSPRE "upright; straightened" ; 
-PV/sipwe+:sipwê VERBSTEMSPRE "leaving, departing, going away; starting out, commencement" ; 
-PV/sisikoci+:sisikoci VERBSTEMSPRE "suddenly" ; 
-PV/sisiwe+:sisiwê VERBSTEMSPRE "spread, scatter" ; 
-PV/sikawi+:sîkawi VERBSTEMSPRE "pouring, flooding" ; 
-PV/sohkahat+:sôhkahât VERBSTEMSPRE "greatly, powerfully" ; 
-PV/sohki+:sôhki VERBSTEMSPRE "hard, strongly, intensively, vigourously, properly" ; 
-PV/soniyawi+:sôniyâwi VERBSTEMSPRE "with respect to money, in financial matters" ; 
-PV/ta+:ta VERBSTEMSPRE "[grammatical preverb: future; infinitive]" ; 
-@U.joiner.hyphen@PV/ta_ki+:@U.joiner.hyphen@ta-kî VERBSTEMSPRE "can, be able to; should, ought to" ; 
-@U.joiner.NULL@PV/ta_ki+:@U.joiner.NULL@takî VERBSTEMSPRE "can, be able to; should, ought to" ; 
-PV/tahci+:tahci VERBSTEMSPRE "coming apart, undone" ; 
-PV/tahki+:tahki VERBSTEMSPRE "repeated action, always, constantly ;; receiving a chill, cold" ; 
-PV/tahkohci+:tahkohci VERBSTEMSPRE "on top" ; 
-PV/tahto+:tahto VERBSTEMSPRE "as many as" ; 
-PV/takahki+:takahki VERBSTEMSPRE "good, nice" ; 
-PV/tako+:tako VERBSTEMSPRE "in addition to, on top, over and above; with, having along, also" ; 
-PV/tasi+:tasi VERBSTEMSPRE "for such a time, for the duration; an action at a time, while" ; 
-PV/tah+:tâh VERBSTEMSPRE "would, ought to; likely to" ; 
-PV/tahci+:tâhci VERBSTEMSPRE "on the top" ; 
-PV/tapi+:tâpi VERBSTEMSPRE "through the same place" ; 
-PV/tapisi+:tâpisi VERBSTEMSPRE "threading, inserting" ; 
-PV/tehci+:têhci VERBSTEMSPRE "on, on top of something" ; 
-PV/tepi+:têpi VERBSTEMSPRE "sufficiently; enough; reaching" ; 
-PV/tewi+:têwi VERBSTEMSPRE "pain" ; 
-PV/teyi+:têyi VERBSTEMSPRE "pain" ; 
-PV/tipi+:tipi VERBSTEMSPRE "equal" ; 
-PV/tita+:tita VERBSTEMSPRE "[grammatical preverb; future]" ; 
-PV/tomi+:tômi VERBSTEMSPRE "oily, greasy" ; 
-PV/wahke+:wahkê VERBSTEMSPRE "addicted to, easily led to" ; 
-PV/wani+:wani VERBSTEMSPRE "dim, dark, indistinctly, blurred; lose; destroy" ; 
-PV/wayawi+:wayawî VERBSTEMSPRE "outside; out from inside, out from the tipi" ; 
-PV/wayesi+:wayêsi VERBSTEMSPRE "deceitfully" ; 
-PV/wa+:wâ VERBSTEMSPRE "intend to, be about to" ; 
-PV/wah+:wâh VERBSTEMSPRE "whenever in future" ; 
-PV/waki+:wâki VERBSTEMSPRE "curving" ; 
-PV/wapani+:wâpani VERBSTEMSPRE "dawn; at, until dawn" ; 
-PV/wapohki+:wâpôhki VERBSTEMSPRE "white" ; 
-PV/wasa+:wâsâ VERBSTEMSPRE "around" ; 
-PV/wase+:wâsê VERBSTEMSPRE "clear; bright" ; 
-PV/wawiye+:wâwiyê VERBSTEMSPRE "round, spherical" ; 
-PV/wehci+:wêhci VERBSTEMSPRE "easily" ; 
-PV/wiyipi+:wiyîpi VERBSTEMSPRE "dirty looking; dull brown, drab" ; 
-PV/wihpi+:wîhpi VERBSTEMSPRE "hollowing out" ; 
-PV/wini+:wîni VERBSTEMSPRE "soil, dirty" ; 
-PV/wipi+:wîpi VERBSTEMSPRE "dirty, unclean" ; 
-PV/wipo+:wîpo VERBSTEMSPRE "narrow" ; 
-PV/wisaki+:wîsaki VERBSTEMSPRE "painfully" ; 
-PV/wito+:wîto VERBSTEMSPRE "want, intend" ; 
-PV/yahki+:yahki VERBSTEMSPRE "act of pushing forward; increasing, increasingly, adding, more and more" ; 
-PV/yikate+:yîkatê VERBSTEMSPRE "aside" ; 
-PV/yipe+:yîpê VERBSTEMSPRE "on a slant, on a slope, on the side, sideways" ; 
-PV/yoski+:yôski VERBSTEMSPRE "soft, softly" ; 
+LEXICON REDUPLICATION
+RdplW+:%^DUPL1ay2 REDUPL_BOUND ;
+RdplS+:%^DUPL1âh  REDUPL_BOUND ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@%^DUPL2ay3%^DUPL1âh      REDUPL_BOUND ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@%^DUPL2ay3-%^DUPL1âh REDUPL_BOUND ;
 
+LEXICON REDUPL_BOUND
+@U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%<      REDUPL_CONT ;
+@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%< REDUPL_CONT ;
 
-LEXICON VERBSTEMSPRE
-@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@- PREVERBS ;
-@U.joiner.NULL@@C.cnj@                              PREVERBS ;
-@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@- REDUPL ;
-@U.joiner.NULL@@C.cnj@                              REDUPL ;
-@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@- WICI ;
-@U.joiner.NULL@@C.cnj@                              WICI ;
+LEXICON REDUPL_CONT
+@U.wici.NULL@ VERBSTEMS ;
+@U.wici.wici@ WICI ;
+PREVERBS ;
 
-LEXICON REDUPL
-RdplW+:%^DUPL1ay2 VERBSTEMSPRE_REDUPL ;
-RdplS+:%^DUPL1âh  VERBSTEMSPRE_REDUPL ;
-@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@%^DUPL2ay3%^DUPL1âh       VERBSTEMSPRE_REDUPL ;
-@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@%^DUPL2ay3-%^DUPL1âh VERBSTEMSPRE_REDUPL ;
-! < "RdplW+":0 0:%^DUPL1 0:a 0:"y2" > VERBSTEMSPRE_REDUPL ;
-! < "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
-! < "RdplW+":0 0:%^DUPL2 0:a 0:"y3" "@U.joiner.NULL@" "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
-! < "RdplW+":0 0:%^DUPL2 0:a 0:"y3" "@U.joiner.hyphen@" 0:- "RdplS+":0 0:%^DUPL1 0:â 0:h > VERBSTEMSPRE_REDUPL ;
+LEXICON PREVERBS
+PV/acici+:acici PREVERBS_BOUND "head down; upside down" ; ! Position
+PV/ahcahkowi+:ahcahkowi PREVERBS_BOUND "spiritual" ; ! Spirituality
+PV/akawaci+:akâwâci PREVERBS_BOUND "wishfully" ; ! Manner
+PV/ako+:ako PREVERBS_BOUND "sticking on; attached" ; 
+PV/akoci+:akoci PREVERBS_BOUND "hanging" ; ! Position
+PV/apihci+:apihci PREVERBS_BOUND "small" ; ! Size
+PV/apisci+:apisci PREVERBS_BOUND "small, little" ; ! Size
+PV/apisi+:apisi PREVERBS_BOUND "small, tiny" ; ! Size
+PV/apisisi+:apisîsi PREVERBS_BOUND "small" ; ! Size
+PV/ase+:asê PREVERBS_BOUND "backwards, back, motion going backwards" ; 
+PV/aseya+:asêya PREVERBS_BOUND "in a group" ; 
+PV/ati+:ati PREVERBS_BOUND "begin to, beginning; progressively, proceed to, going on, progressing; on the way" ; 
+PV/atimi+:atimi PREVERBS_BOUND "going away from speaker, towards addressee" ; 
+PV/ayamihawi+:ayamihâwi PREVERBS_BOUND "prayer, pertaining to Christian prayer; of the Christian religion, of church" ; 
+PV/ayamihewi+:ayamihêwi PREVERBS_BOUND "of the Christian religion, of church" ; 
+PV/ayaso+:ayâsô PREVERBS_BOUND "a little here and there" ; 
+PV/ayi+:ayi PREVERBS_BOUND "ah, hm" ; 
+PV/ahci+:âhci PREVERBS_BOUND "to a different place" ; 
+PV/ahkami+:âhkami PREVERBS_BOUND "persistently, untiringly, unfailingly, unceasingly, unwaveringly; keep on, persevere" ; 
+PV/ako+:âkô PREVERBS_BOUND "covered, shielded" ; 
+PV/akwa+:âkwâ PREVERBS_BOUND "quite a lot; well on its way, in progress of time" ; 
+PV/ami+:âmi PREVERBS_BOUND "almost" ; 
+PV/aniski+:âniski PREVERBS_BOUND "succession, extension" ; 
+PV/apihci+:âpihci PREVERBS_BOUND "halfway" ; 
+PV/apihtawi+:âpihtawi PREVERBS_BOUND "half" ; 
+PV/apihta+:âpihtâ PREVERBS_BOUND "half" ; 
+@U.joiner.NULL@PV/apihta_kisikawi+:@U.joiner.NULL@âpihtâkîsikâwi PREVERBS_BOUND "at noon" ; 
+@U.joiner.hyphen@PV/apihta_kisikawi+:@U.joiner.hyphen@âpihtâ-kîsikâwi PREVERBS_BOUND "at noon" ; 
+PV/asawi+:âsawi PREVERBS_BOUND "in passing something on" ; 
+PV/ase+:âsê PREVERBS_BOUND "see: asê-" ; 
+PV/asowi+:âsowi PREVERBS_BOUND "in turn, in succession" ; 
+PV/aste+:âstê PREVERBS_BOUND "ceasing; quit" ; 
+PV/ata+:âta PREVERBS_BOUND "although, in VAI-2" ; 
+PV/ayici+:âyîci PREVERBS_BOUND "firmly, tightly" ; 
+PV/cipehtako+:cîpêhtako PREVERBS_BOUND "blue, greyish blue, grey" ; 
+! PV/e+:ê PREVERBS_BOUND "[grammatical preverb: complementizer; defines a changed conjunct clause]" ; 
+PV/isi+:isi PREVERBS_BOUND "so, this way, thus, thither, such" ; 
+PV/isko+:isko PREVERBS_BOUND "so far, to such an extent" ; 
+PV/ispi+:ispi PREVERBS_BOUND "then, when" ; 
+PV/ispihci+:ispîhci PREVERBS_BOUND "meanwhile, beforehand" ; 
+PV/itahto+:itahto PREVERBS_BOUND "in such number" ; 
+PV/ikate+:îkatê PREVERBS_BOUND "aside, off to one side" ; 
+! PV/ka+:ka PREVERBS_BOUND "grammatical preverb: future will, shall; infinitive; optative ought, should" ; 
+! PV/ka_ki+:ka-kî PREVERBS_BOUND "can, be able to; may; should, ought to" ; 
+@U.joiner.hyphen@PV/ka_ki+:@U.joiner.hyphen@ka-kî PREVERBS_BOUND ;
+@U.joiner.NULL@PV/ka_ki+:@U.joiner.NULL@kakî PREVERBS_BOUND ;
+PV/kakepaci+:kakêpâci PREVERBS_BOUND "stupidly" ; 
+PV/kakwahyaki+:kakwâhyaki PREVERBS_BOUND "greatly, extremely, overwhelmingly; with startled surprise" ; 
+PV/kakwayaki+:kakwâyaki PREVERBS_BOUND "greatly, extremely" ; 
+PV/kakwe+:kakwê PREVERBS_BOUND "try to, attempt to" ; 
+PV/kakweci+:kakwêci PREVERBS_BOUND "inquire" ; 
+PV/kanaci+:kanâci PREVERBS_BOUND "clean" ; 
+PV/kape+:kapê PREVERBS_BOUND "for the full duration of; always" ; 
+PV/kaski+:kaski PREVERBS_BOUND "dense" ; 
+PV/kaskitewi+:kaskitêwi PREVERBS_BOUND "black" ; 
+PV/kayasi+:kayâsi PREVERBS_BOUND "old" ; 
+! PV/kaa+:kâ PREVERBS_BOUND "[grammatical preverb; defines a changed conjunct clause; often a relative clause, i.e. who, which]" ; 
+PV/kah+:kâh PREVERBS_BOUND "would, ought to; likely to" ; 
+@U.joiner.hyphen@PV/kah-kape+:@U.joiner.hyphen@kâh-kapê PREVERBS_BOUND "all the time" ; 
+@U.joiner.NULL@PV/kah-kape+:@U.joiner.NULL@kâhkapê PREVERBS_BOUND "all the time" ; 
+PV/kamwaci+:kâmwâci PREVERBS_BOUND "quietly" ; 
+PV/kaspi+:kâspi PREVERBS_BOUND "crunching" ; 
+PV/kawi+:kâwi PREVERBS_BOUND "again; back, in return" ; 
+PV/ke+:kê PREVERBS_BOUND "grammatical preverb; future, conditional: shall; defines a changed conjunct clause" ; 
+PV/kekaci+:kêkâci PREVERBS_BOUND "almost" ; 
+PV/ket+:kêt PREVERBS_BOUND "take off, remove" ; 
+PV/ketiski+:kêtiski PREVERBS_BOUND "to exact measure" ; 
+PV/kici+:kici PREVERBS_BOUND "so that" ; 
+PV/kihci+:kihci PREVERBS_BOUND "great, big, important" ; 
+PV/kika+:kika PREVERBS_BOUND "grammatical preverb; future; defines a conjunct clause" ; 
+PV/kipi+:kipi PREVERBS_BOUND "blocking" ; 
+PV/kisci+:kisci PREVERBS_BOUND "big" ; 
+PV/kise+:kisê PREVERBS_BOUND "great, gentle" ; 
+PV/kisipi+:kisipi PREVERBS_BOUND "end, finish, ending" ; 
+PV/kisiska+:kisiskâ PREVERBS_BOUND "fast, quickly" ; 
+PV/kisiwi+:kisiwi PREVERBS_BOUND "anger" ; 
+PV/kisiwi+:kisîwi PREVERBS_BOUND "angrily, in anger" ; 
+PV/kita+:kita PREVERBS_BOUND "[grammatical preverb]; future: will, shall; infinitive; optative: ought, should" ; 
+@U.joiner.hyphen@PV/kita_ki+:@U.joiner.hyphen@kita-kî PREVERBS_BOUND "can, be able to; may; ought to" ; 
+@U.joiner.NULL@PV/kita_ki+:@U.joiner.NULL@kitakî PREVERBS_BOUND "can, be able to; may; ought to" ; 
+PV/kitimaki+:kitimâki PREVERBS_BOUND "pitiable, pitiably" ; 
+PV/kiye+:kiyê PREVERBS_BOUND "[grammatical preverb; future; in changed conjunct clauses]" ; 
+PV/kiyi+:kiyi PREVERBS_BOUND "[grammatical preverb; future; defines a conjunct clause]" ; 
+! PV/ki+:kî PREVERBS_BOUND "[grammatical preverb; past, completion]" ; 
+PV/kimoci+:kîmôci PREVERBS_BOUND "secretly, by stealth" ; 
+PV/kipi+:kîpi PREVERBS_BOUND "quickly" ; 
+PV/kisi+:kîsi PREVERBS_BOUND "finish; completely, to completion; completing, having done" ; 
+PV/kiski+:kîski PREVERBS_BOUND "severing, breaking, cutting off" ; 
+PV/kisopwe+:kîsopwê PREVERBS_BOUND "with hot weather" ; 
+PV/kiwaci+:kîwâci PREVERBS_BOUND "orphaned, stray; lonely, desolately" ; 
+PV/kiwe+:kîwê PREVERBS_BOUND "back, homeward" ; 
+PV/koci+:koci PREVERBS_BOUND "try to" ; 
+PV/kota+:kôta PREVERBS_BOUND "long for, be deprived of" ; 
+PV/kotate+:kôtatê PREVERBS_BOUND "at a loss, making no attempt" ; 
+PV/kwataki+:kwataki PREVERBS_BOUND "distressing, tormenting, tortuous" ; 
+PV/kwayako+:kwayako PREVERBS_BOUND "taking out, directly" ; 
+PV/kwayaski+:kwayaski PREVERBS_BOUND "properly" ; 
+PV/kwayasko+:kwayasko PREVERBS_BOUND "straight; properly, correctly" ; 
+PV/kwayaci+:kwayâci PREVERBS_BOUND "in readiness, already; in preparation; beforehand" ; 
+PV/kwahci+:kwâhci PREVERBS_BOUND "far off" ; 
+PV/kwaskwe+:kwâskwê PREVERBS_BOUND "upwards" ; 
+PV/kwataki+:kwâtaki PREVERBS_BOUND "distressing, tormenting, tortuous" ; 
+PV/kweski+:kwêski PREVERBS_BOUND "turning" ; 
+PV/kwetawi+:kwêtawi PREVERBS_BOUND "doubtful" ; 
+PV/kwitawi+:kwîtawi PREVERBS_BOUND "impatiently" ; 
+PV/maci+:maci PREVERBS_BOUND "bad, evil, wicked, wrong, ill" ; 
+@U.joiner.hyphen@PV/maci_manitowi+:@U.joiner.hyphen@maci-manitowi PREVERBS_BOUND "evil, devilish; Devil's" ; 
+@U.joiner.NULL@PV/maci_manitowi+:@U.joiner.NULL@macimanitowi PREVERBS_BOUND "evil, devilish; Devil's" ; 
+PV/mahti+:mahti PREVERBS_BOUND "Let us; hortatory" ; ! From NS 152 
+PV/mana+:manâ PREVERBS_BOUND "beware of, careful not to, avoid doing" ; 
+PV/mani+:mani PREVERBS_BOUND "with the intent of, with the purpose of" ; 
+PV/masta+:mastâ PREVERBS_BOUND "later" ; 
+PV/matwe+:matwê PREVERBS_BOUND "audibly, visibly; perceptibly; loudly; heard or seen from a distance" ; 
+PV/maaci+:mâci PREVERBS_BOUND "begin to, start to; commencement; initially" ; 
+PV/mahi+:mâhi PREVERBS_BOUND "downstream" ; 
+PV/mamawi+:mâmawi PREVERBS_BOUND "together; in full number of them all, altogether, all together as a group" ; 
+PV/maninakisko+:mâninâkisko PREVERBS_BOUND "without hesitation, entirely" ; 
+PV/maski+:mâski PREVERBS_BOUND "crippled; defective, deformed" ; 
+PV/mayaci+:mâyâci PREVERBS_BOUND "bad" ; 
+PV/mayi+:mâyi PREVERBS_BOUND "bad, evil; badly, evilly, wickedly" ; 
+PV/mecimwaci+:mêcimwâci PREVERBS_BOUND "permanently, for good" ; 
+PV/mêkwa+:mêkwâ PREVERBS_BOUND "currently, presently, right now; while, during, in the meantime, in the act or place" ; 
+PV/mesci+:mêsci PREVERBS_BOUND "exhaustively, till all is gone" ; 
+PV/mesti+:mêsti PREVERBS_BOUND "it is used up, it is burnt out, it is spent" ; 
+PV/mihko+:mihko PREVERBS_BOUND "red" ; 
+PV/mihyawe+:mihyawê PREVERBS_BOUND "with fur or body hair" ; 
+PV/misakame+:misakâmê PREVERBS_BOUND "all the way" ; 
+PV/misi+:misi PREVERBS_BOUND "big, greatly; much, a lot; very, extremely, to the extreme" ; 
+PV/mistiko+:mistiko PREVERBS_BOUND "wood, of wood, wooden" ; 
+PV/miyo+:miyo PREVERBS_BOUND "good, well, beautifully" ; 
+PV/mosci+:mosci PREVERBS_BOUND "just, merely, plainly, simply, directly, without mediation, without instrumentality; by hand" ; 
+PV/mohco+:môhco PREVERBS_BOUND "silly, crazy" ; 
+PV/mwayi+:mwayî PREVERBS_BOUND "before, prior to" ; 
+PV/nahi+:nahi PREVERBS_BOUND "well, fair" ; 
+PV/nahta+:nahtâ PREVERBS_BOUND "able; good at, competent, practised, experienced, skillful at, expert at, known as one who does s.t. habitually; well" ; 
+PV/naki+:naki PREVERBS_BOUND "stopping" ; 
+PV/napaki+:napaki PREVERBS_BOUND "flat" ; 
+PV/naspaci+:naspâci PREVERBS_BOUND "opposite, contrarily" ; 
+PV/natawi+:natawi PREVERBS_BOUND "go to" ; 
+PV/nawaci+:nawaci PREVERBS_BOUND "better" ; 
+PV/naci+:nâci PREVERBS_BOUND "getting" ; 
+PV/nanitaw+:nânitaw PREVERBS_BOUND "[in negative clauses:] any" ; 
+PV/natakasi+:nâtakâsi PREVERBS_BOUND "into the bush country" ; 
+PV/nawayawi+:nâwayawi PREVERBS_BOUND "one behind the other, in a row" ; 
+PV/nehiyawi+:nêhiyawi PREVERBS_BOUND "Cree, in Cree" ; 
+PV/nihta+:nihtâ PREVERBS_BOUND "able; good at, competent, practised, experienced, skillful at, expert at, known as one who does s.t. habitually; well" ; 
+PV/nipahi+:nipahi PREVERBS_BOUND "really, very, extremely" ; 
+PV/nisihkaci+:nisîhkâci PREVERBS_BOUND "gently, carefully, slowly" ; 
+PV/nitawi+:nitawi PREVERBS_BOUND "go and, go to; engaged in" ; 
+PV/nihci+:nîhci PREVERBS_BOUND "down, downwards; bottom" ; 
+PV/nihtaciwe+:nîhtaciwê PREVERBS_BOUND "downhill, down" ; 
+PV/nikani+:nîkâni PREVERBS_BOUND "in front, ahead, at the head, in the future" ; 
+PV/nimi+:nîmi PREVERBS_BOUND "take along" ; 
+PV/nipa+:nîpâ PREVERBS_BOUND "at night, in the dark" ; 
+PV/niso+:nîso PREVERBS_BOUND "two" ; 
+PV/nohte+:nôhtê PREVERBS_BOUND "want to, desire to; lack" ; 
+PV/ocihci+:ocihci PREVERBS_BOUND "back in time; far back; from before, earlier; having lived long enough for something; chance to, live to, live to see" ; 
+PV/ohci+:ohci PREVERBS_BOUND "from there; with, by means of; because, for that reason, therefore, thence; [grammatical preverb; past preverb in negative clauses]" ; 
+PV/ohtiskawi+:ohtiskawi PREVERBS_BOUND "facing" ; 
+PV/osami+:osâmi PREVERBS_BOUND "too much, because of excess, for" ; 
+PV/osawaski+:osâwaski PREVERBS_BOUND "green, blue-green" ; 
+PV/osawi+:osâwi PREVERBS_BOUND "yellow, brown" ; 
+PV/oski+:oski PREVERBS_BOUND "new, young, first" ; 
+PV/otami+:otami PREVERBS_BOUND "busy, occupied, delayed" ; 
+PV/o+:ô PREVERBS_BOUND "from there, for that reason; with, by means of; [grammatical preverb]" ; 
+PV/oh+:ôh PREVERBS_BOUND "from there, for that reason; with, by means of; [past preverb in negative clauses]" ; 
+PV/paci+:paci PREVERBS_BOUND "wrongly, in error" ; 
+PV/pahki+:pahki PREVERBS_BOUND "portion of" ; 
+PV/pakwano+:pakwâno PREVERBS_BOUND "from memory" ; 
+PV/papa+:papâ PREVERBS_BOUND "go around, about, all over" ; 
+PV/papami+:papâmi PREVERBS_BOUND "around, about, all over, here and there, hither and thither" ; 
+PV/papasi+:papâsi PREVERBS_BOUND "fast, in a hurry, quick" ; 
+PV/pasiko+:pasikô PREVERBS_BOUND "get up (from sitting)" ; 
+PV/paspi+:paspi PREVERBS_BOUND "through narrow opening" ; 
+PV/pahkaci+:pâhkaci PREVERBS_BOUND "fixed, not moving; locked in to a previously stated obligation" ; 
+PV/pahko+:pâhko PREVERBS_BOUND "dry" ; 
+PV/pasci+:pâsci PREVERBS_BOUND "over, beyond" ; 
+PV/pasici+:pâsici PREVERBS_BOUND "stepping over, skipping" ; 
+PV/pe+:pê PREVERBS_BOUND "come and; towards, approaching; hither; thence, from there on down; [towards focus]" ; 
+PV/peyako+:pêyako PREVERBS_BOUND "alone, only; as one" ; 
+PV/pimi+:pimi PREVERBS_BOUND "along, in linear progression; while moving in linear progression" ; 
+PV/pimici+:pimici PREVERBS_BOUND "crosswise, from side, at right angle" ; 
+PV/pimipahci+:pimipahci PREVERBS_BOUND "running, on the run" ; 
+PV/pisci+:pisci PREVERBS_BOUND "accidentally, mistakenly, erroneously" ; 
+PV/pihci+:pîhci PREVERBS_BOUND "inside, in, within" ; 
+PV/pihtawe+:pîhtawê PREVERBS_BOUND "under; double" ; 
+PV/pihtoke+:pîhtokê PREVERBS_BOUND "entering to the inside, entering house" ; 
+PV/pikiskaci+:pîkiskâci PREVERBS_BOUND "sorry, sad, lonely" ; 
+PV/pimi+:pîmi PREVERBS_BOUND "twisted" ; 
+PV/pitosi+:pîtosi PREVERBS_BOUND "different, foreign" ; 
+PV/piwi+:pîwi PREVERBS_BOUND "small" ; 
+PV/poni+:pôni PREVERBS_BOUND "stop, terminate, cease; after" ; 
+PV/posko+:pôsko PREVERBS_BOUND "the same" ; 
+PV/pwana+:pwâna PREVERBS_BOUND "unable, fail to" ; 
+PV/pwatawi+:pwâtawi PREVERBS_BOUND "unable to do, failing" ; 
+PV/saskaci+:saskaci PREVERBS_BOUND "weary, tired of" ; 
+PV/sakewe+:sâkêwê PREVERBS_BOUND "behind obstacle to vision, into view" ; 
+PV/sapo+:sâpo PREVERBS_BOUND "fully, exhaustively, through, through and through, right through, from end to end; beyond" ; 
+PV/saposci+:sâposci PREVERBS_BOUND "through" ; 
+PV/sasakici+:sâsakici PREVERBS_BOUND "backwards; supine" ; 
+PV/sehke+:sêhkê PREVERBS_BOUND "by itself, of own accord; move ahead of own accord; willingly" ; 
+PV/sesawi+:sêsâwi PREVERBS_BOUND "stretching, exercising" ; 
+PV/sikaci+:sikaci PREVERBS_BOUND "impatiently, bored with" ; 
+PV/simaci+:simaci PREVERBS_BOUND "upright; straightened" ; 
+PV/sipwe+:sipwê PREVERBS_BOUND "leaving, departing, going away; starting out, commencement" ; 
+PV/sisikoci+:sisikoci PREVERBS_BOUND "suddenly" ; 
+PV/sisiwe+:sisiwê PREVERBS_BOUND "spread, scatter" ; 
+PV/sikawi+:sîkawi PREVERBS_BOUND "pouring, flooding" ; 
+PV/sohkahat+:sôhkahât PREVERBS_BOUND "greatly, powerfully" ; 
+PV/sohki+:sôhki PREVERBS_BOUND "hard, strongly, intensively, vigourously, properly" ; 
+PV/soniyawi+:sôniyâwi PREVERBS_BOUND "with respect to money, in financial matters" ; 
+PV/ta+:ta PREVERBS_BOUND "[grammatical preverb: future; infinitive]" ; 
+@U.joiner.hyphen@PV/ta_ki+:@U.joiner.hyphen@ta-kî PREVERBS_BOUND "can, be able to; should, ought to" ; 
+@U.joiner.NULL@PV/ta_ki+:@U.joiner.NULL@takî PREVERBS_BOUND "can, be able to; should, ought to" ; 
+PV/tahci+:tahci PREVERBS_BOUND "coming apart, undone" ; 
+PV/tahki+:tahki PREVERBS_BOUND "repeated action, always, constantly ;; receiving a chill, cold" ; 
+PV/tahkohci+:tahkohci PREVERBS_BOUND "on top" ; 
+PV/tahto+:tahto PREVERBS_BOUND "as many as" ; 
+PV/takahki+:takahki PREVERBS_BOUND "good, nice" ; 
+PV/tako+:tako PREVERBS_BOUND "in addition to, on top, over and above; with, having along, also" ; 
+PV/tasi+:tasi PREVERBS_BOUND "for such a time, for the duration; an action at a time, while" ; 
+PV/tah+:tâh PREVERBS_BOUND "would, ought to; likely to" ; 
+PV/tahci+:tâhci PREVERBS_BOUND "on the top" ; 
+PV/tapi+:tâpi PREVERBS_BOUND "through the same place" ; 
+PV/tapisi+:tâpisi PREVERBS_BOUND "threading, inserting" ; 
+PV/tehci+:têhci PREVERBS_BOUND "on, on top of something" ; 
+PV/tepi+:têpi PREVERBS_BOUND "sufficiently; enough; reaching" ; 
+PV/tewi+:têwi PREVERBS_BOUND "pain" ; 
+PV/teyi+:têyi PREVERBS_BOUND "pain" ; 
+PV/tipi+:tipi PREVERBS_BOUND "equal" ; 
+PV/tita+:tita PREVERBS_BOUND "[grammatical preverb; future]" ; 
+PV/tomi+:tômi PREVERBS_BOUND "oily, greasy" ; 
+PV/wahke+:wahkê PREVERBS_BOUND "addicted to, easily led to" ; 
+PV/wani+:wani PREVERBS_BOUND "dim, dark, indistinctly, blurred; lose; destroy" ; 
+PV/wayawi+:wayawî PREVERBS_BOUND "outside; out from inside, out from the tipi" ; 
+PV/wayesi+:wayêsi PREVERBS_BOUND "deceitfully" ; 
+PV/wa+:wâ PREVERBS_BOUND "intend to, be about to" ; 
+PV/wah+:wâh PREVERBS_BOUND "whenever in future" ; 
+PV/waki+:wâki PREVERBS_BOUND "curving" ; 
+PV/wapani+:wâpani PREVERBS_BOUND "dawn; at, until dawn" ; 
+PV/wapohki+:wâpôhki PREVERBS_BOUND "white" ; 
+PV/wasa+:wâsâ PREVERBS_BOUND "around" ; 
+PV/wase+:wâsê PREVERBS_BOUND "clear; bright" ; 
+PV/wawiye+:wâwiyê PREVERBS_BOUND "round, spherical" ; 
+PV/wehci+:wêhci PREVERBS_BOUND "easily" ; 
+PV/wiyipi+:wiyîpi PREVERBS_BOUND "dirty looking; dull brown, drab" ; 
+PV/wihpi+:wîhpi PREVERBS_BOUND "hollowing out" ; 
+PV/wini+:wîni PREVERBS_BOUND "soil, dirty" ; 
+PV/wipi+:wîpi PREVERBS_BOUND "dirty, unclean" ; 
+PV/wipo+:wîpo PREVERBS_BOUND "narrow" ; 
+PV/wisaki+:wîsaki PREVERBS_BOUND "painfully" ; 
+PV/wito+:wîto PREVERBS_BOUND "want, intend" ; 
+PV/yahki+:yahki PREVERBS_BOUND "act of pushing forward; increasing, increasingly, adding, more and more" ; 
+PV/yikate+:yîkatê PREVERBS_BOUND "aside" ; 
+PV/yipe+:yîpê PREVERBS_BOUND "on a slant, on a slope, on the side, sideways" ; 
+PV/yoski+:yôski PREVERBS_BOUND "soft, softly" ; 
 
-LEXICON VERBSTEMSPRE_REDUPL
-@U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%>       WICI ;
-@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%> WICI ;
+LEXICON PREVERBS_BOUND
+@U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%<      VERBPREFIXES ;
+@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%< VERBPREFIXES ;
+
 
 LEXICON WICI
-@U.wici.NULL@ VERBSTEMS ;
-@U.wici.wici@@U.joiner.NULL@:@U.wici.wici@@U.joiner.NULL@wici%> VERBSTEMS ;
-@U.wici.wici@@U.joiner.hyphen@:@U.wici.wici@@U.joiner.hyphen@wici-%> VERBSTEMS ;
+@U.joiner.NULL@:@U.joiner.NULL@wici%<      VERBSTEMS ;
+@U.joiner.hyphen@:@U.joiner.hyphen@wici-%< VERBSTEMS ;
+
+LEXICON VERBSTEMS
+acimow:acimo VAI-1 ;
+nipâw:nipâ VAI-1 ;
 
 !! Now, lexc directs us to the ../stems/verbs.lexc file,
 !! where we find all the verbal stems. The suffixes are then
@@ -846,11 +832,11 @@ LEXICON VAI-2_PL !!= @CODE@
 
 LEXICON VAI-1_WICI !!!!
 @U.wici.NULL@ VAI-1_ORDER ;
-@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@w%>i2m VTA-3_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@w%>i2m VTA-1_ORDER ; | no VTA-3 anymore
 
 LEXICON VAI-1_PL_WICI !!!! plural only
 @U.wici.NULL@ VAI-1_PL_ORDER ;
-@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@w%>i2m VTA-3_PL_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@w%>i2m VTA-1_PL_ORDER ; | no VTA-3 anymore
 
 ! ===========================================================
 ! ===========================================================
@@ -860,11 +846,11 @@ LEXICON VAI-1_PL_WICI !!!! plural only
 
 LEXICON VAI-2_WICI !!!!
 @U.wici.NULL@ VAI-2_ORDER ;
-@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA-3_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA-1_ORDER ; | no VTA-3 anymore
 
 LEXICON VAI-2_PL_WICI !!!! plural only
 @U.wici.NULL@ VAI-2_PL_ORDER ;
-@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA-3_PL_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA-1_PL_ORDER ; | no VTA-3 anymore
 
 !!! ORDERS
 
@@ -1845,7 +1831,7 @@ LEXICON VTA-1_CNJ_PERSON !!= @CODE@
 LEXICON VTA-1_FUT_CON_PERSON !!= @CODE@ 
 @U.person.NULL@ VTA-1_FUT_CON_NULL ;
 
-LEXICON VTA-1_IMP_PERSON !!= @CODE@ Identical to TA IMP
+!! CHECK Remove?? LEXICON VTA-1_IMP_PERSON !!= @CODE@ Identical to TA IMP
 
 LEXICON VTA-1_PL_IND_PERSON !!= @CODE@ 
 @U.person.NI@ VTA-1_IND_NI_PL_SUFFIX ;
