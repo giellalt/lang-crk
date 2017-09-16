@@ -132,6 +132,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 RdplW+ !!= * @CODE@ Reduplication Type 1 (Weak)
 RdplS+ !!= * @CODE@ Reduplication Type 2 (Strong)
 
++Der/Com !!= * @CODE@ Comitative circumfix (wîci-...-m)
+
 +AI      !!= * @CODE@ intransitive with animate subject,
 +II      !!= * @CODE@ intransitive with inanimate subject,
 +TA      !!= * @CODE@ transitive with animate object, and
@@ -410,6 +412,7 @@ PV/yoski+
 !! morphophonological structure
 
 %> 		 !!= * @CODE@ suffix border
+%< 		 !!= * @CODE@ prefix border
 +WAK  	 !!= * @CODE@ tag to keep track of -wak plurals
 
 
@@ -500,7 +503,7 @@ h2 		!!= * @CODE@  Prefix in possessives
 @U.order.imp@
 @U.order.indep@
 @U.tense.Prs@
-@U.tense.Pst@
+@U.tense.Prt@
 @U.tense.FutDef@
 @U.tense.FutInt@
 @U.tense.FutCon@
