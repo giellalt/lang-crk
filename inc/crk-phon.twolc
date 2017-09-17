@@ -251,7 +251,7 @@ w:Ox <=> Consonant: _ Bx: Vx: ;
 
 "Cwi2CoôRule2"
 Ix:0 <=> Consonant: w: Bx: _ ;
-     
+
 ! "Cwi2CoRule1b"
 ! i2:0 <=> Consonant: w: Bx: _ ;
 
@@ -323,10 +323,10 @@ t:c <=> _ :* %^DIM:0 ;
 ! ! ##t2 > t / _V
 
 "t-epenthesisRule"
-t2:0 <=> _ Bx: Consonant: ;
+t2:0 <=> _ %<:0 Consonant: ;
 
 "t-epenthesisDimRule"
-t2:c <=> _ Bx: Vowel: :* %^DIM:0 ;
+t2:c <=> _ %<:0 Vowel: :* %^DIM:0 ;
 
 ! ! #nitapin - VAI 1Sg
 ! n i t2:t %<:0 a p i %>:0 n 
