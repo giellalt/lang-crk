@@ -380,6 +380,7 @@ LEXICON WICI
 LEXICON VERBSTEMS
 acimow:acimo VAI-1 ;
 nipâw:nipâ VAI-1 ;
+wâpahtam:wâpaht VAI-1 ;
 
 !! Now, lexc directs us to the ../stems/verbs.lexc file,
 !! where we find all the verbal stems. The suffixes are then
@@ -832,11 +833,11 @@ LEXICON VAI-2_PL !!= @CODE@
 
 LEXICON VAI-1_WICI !!!!
 @U.wici.NULL@ VAI-1_ORDER ;
-@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@w%>i2m VTA-1_ORDER ; | no VTA-3 anymore
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@w%>i2m VTA-1_ORDER ; ! no VTA-3 anymore
 
 LEXICON VAI-1_PL_WICI !!!! plural only
 @U.wici.NULL@ VAI-1_PL_ORDER ;
-@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@w%>i2m VTA-1_PL_ORDER ; | no VTA-3 anymore
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@w%>i2m VTA-1_PL_ORDER ; ! no VTA-3 anymore
 
 ! ===========================================================
 ! ===========================================================
@@ -846,11 +847,11 @@ LEXICON VAI-1_PL_WICI !!!! plural only
 
 LEXICON VAI-2_WICI !!!!
 @U.wici.NULL@ VAI-2_ORDER ;
-@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA-1_ORDER ; | no VTA-3 anymore
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA-1_ORDER ; ! no VTA-3 anymore
 
 LEXICON VAI-2_PL_WICI !!!! plural only
 @U.wici.NULL@ VAI-2_PL_ORDER ;
-@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA-1_PL_ORDER ; | no VTA-3 anymore
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA-1_PL_ORDER ; ! no VTA-3 anymore
 
 !!! ORDERS
 
