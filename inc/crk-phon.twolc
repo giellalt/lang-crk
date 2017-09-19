@@ -95,7 +95,9 @@ Alphabet
  y3:0      !!= * @CODE@ epenthetic joiner in reduplication of vowe-initial stems
  %^DUPL1:0  !!= * @CODE@ Reduplication consonant place holder 
  %^DUPL2:0  !!= * @CODE@ Reduplication consonant place holder 
- 
+
+ %^EGLOT:0   !!= * @CODE@ Epenthetic -h- place holder
+
  a:â â:â
  w:0 y:0 ý:0
   
@@ -323,10 +325,10 @@ t:c <=> _ :* %^DIM:0 ;
 ! ! ##t2 > t / _V
 
 "t-epenthesisRule"
-t2:0 <=> _ %<:0 Consonant: ;
+t2:0 <=> _ %<:0 :Consonant ;
 
 "t-epenthesisDimRule"
-t2:c <=> _ %<:0 Vowel: :* %^DIM:0 ;
+t2:c <=> _ %<:0 :Vowel :* %^DIM:0 ;
 
 ! ! #nitapin - VAI 1Sg
 ! n i t2:t %<:0 a p i %>:0 n 
@@ -371,6 +373,18 @@ t2:c <=> _ %<:0 Vowel: :* %^DIM:0 ;
 ! ! 
 ! ! 
 ! ! ##ê > â _-n - independent 1/2 VAI-v, VTI-v
+
+"h-epenthesisRule"
+%^EGLOT:h <=> _ %<:0 [ %^DUPL1:0 | %^DUPL2:0 | :Vowel ] ;
+
+!!€ e^EGLOT<acimo>t
+!!€ eh0acimo0t
+
+!!€ e^EGLOT<^DUPL1ay2<acimo>t
+!!€ eh00ay0acimo0t
+
+!!€ e^EGLOT<^DUPL2ay3^DUPL1âh<acimo>t
+!!€ eh00ay0âh0acimo0t
 
 "ee2aaVAIRule"
 ê:â <=> _ %>: n2: ;
