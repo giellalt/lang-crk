@@ -19,16 +19,33 @@ DEP-KINTERMS ; ! Dependent nouns. The generic form is in the stem lexicon on its
 LEXICON AN-IN
 !! @LEXNAME@ adds the prefixes ni-, ki-, o-. Redirects to STEMS
 
-           @U.noun.abs@            STEMS ; 
-< 0:n 0:i "@U.noun.1sg@"  0:"t2" > STEMS ; ! 1
-< 0:k 0:i "@U.noun.2sg@"  0:"t2" > STEMS ; ! 2
-< 0:o     "@U.noun.3sg@"  0:"t2" > STEMS ; ! 3
-< 0:o     "@U.noun.4sg@" 0:"t2" > STEMS ; ! 3-singular-obviative
-< 0:n 0:i "@U.noun.1pl@"  0:"t2" > STEMS ; ! exclusive Pl
-< 0:k 0:i "@U.noun.12pl@" 0:"t2" > STEMS ; ! inclusive Pl
-< 0:k 0:i "@U.noun.2pl@"  0:"t2" > STEMS ; ! 2pl 
-< 0:o     "@U.noun.3pl@"  0:"t2" > STEMS ; ! 3pl
-< 0:o     "@U.noun.4pl@" 0:"t2" > STEMS ; ! 3-plural-obviate
+!! Conversion from regular expressions
+! This could be simplified substantially by marking only person, as in verbs.
+! But that needs to be mirrored on the suffix side (which would become simpler as well).
+
+@U.noun.abs@                    STEMS ;
+@U.noun.1sg@:@U.noun.1sg@nit2   STEMS ; ! 1sg
+@U.noun.2sg@:@U.noun.2sg@kit2   STEMS ; ! 2sg
+@U.noun.3sg@:@U.noun.3sg@ot2    STEMS ; ! 3sg
+@U.noun.4sg@:@U.noun.4sg@ot2    STEMS ; ! 4sg (3-sg-obv)
+@U.noun.1pl@:@U.noun.1pl@nit2   STEMS ; ! exclusive 1pl
+@U.noun.12pl@:@U.noun.12pl@kit2 STEMS ; ! inclusive 1pl
+@U.noun.2pl@:@U.noun.2pl@kit2   STEMS ; ! 2pl
+@U.noun.3pl@:@U.noun.3pl@ot2    STEMS ; ! 3pl
+@U.noun.4pl@:@U.noun.4pl@ot2    STEMS ; ! 4pl (3-pl-obv)
+
+!! Prior format using regular expressions
+
+!            @U.noun.abs@            STEMS ; 
+! < 0:n 0:i "@U.noun.1sg@"  0:"t2" > STEMS ; ! 1
+! < 0:k 0:i "@U.noun.2sg@"  0:"t2" > STEMS ; ! 2
+! < 0:o     "@U.noun.3sg@"  0:"t2" > STEMS ; ! 3
+! < 0:o     "@U.noun.4sg@" 0:"t2" > STEMS ; ! 3-singular-obviative
+! < 0:n 0:i "@U.noun.1pl@"  0:"t2" > STEMS ; ! exclusive Pl
+! < 0:k 0:i "@U.noun.12pl@" 0:"t2" > STEMS ; ! inclusive Pl
+! < 0:k 0:i "@U.noun.2pl@"  0:"t2" > STEMS ; ! 2pl 
+! < 0:o     "@U.noun.3pl@"  0:"t2" > STEMS ; ! 3pl
+! < 0:o     "@U.noun.4pl@" 0:"t2" > STEMS ; ! 3-plural-obviate
 
 
 LEXICON DEP-M-INIT
