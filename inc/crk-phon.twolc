@@ -376,16 +376,16 @@ t2:c <=> _ %<:0 :Vowel :* %^DIM:0 ;
 ! ! ##ê > â _-n - independent 1/2 VAI-v, VTI-v
 
 "h-epenthesisRule"
-%^EGLOT:h <=> _ %<:0 [ %^DUPL1:0 | %^DUPL2:0 | :Vowel ] ;
+%^EGLOT:h <=> :Vowel _ %<:0 [ %^DUPL1:0 | %^DUPL2:0 | :Vowel ] ;
 
-!!€ e^EGLOT<acimo>t
-!!€ eh0acimo0t
+!!€ ê^EGLOT<acimo>t
+!!€ êh0acimo0t
 
-!!€ e^EGLOT<^DUPL1ay2<acimo>t
-!!€ eh00ay0acimo0t
+!!€ ê^EGLOT<^DUPL1ay2<acimo>t
+!!€ êh00ay0acimo0t
 
-!!€ e^EGLOT<^DUPL2ay3^DUPL1âh<acimo>t
-!!€ eh00ay0âh0acimo0t
+!!€ ê^EGLOT<^DUPL2ay3^DUPL1âh<acimo>t
+!!€ êh00ay0âh0acimo0t
 
 "ee2aaVAIRule"
 ê:â <=> _ %>: n2: ;
