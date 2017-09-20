@@ -88,6 +88,7 @@ Alphabet
  n2:n
  n3:n n3:h
  t:c t2:c
+ t4:t ! t4:c when before ikâtê- in VTI
 
  ý:y
 
@@ -443,6 +444,18 @@ n:0 <=> _ %>:0 k: ;
 !!€ ê-<mispon>k 
 !!€ ê-0mispo00k
 ! 
+
+! Changes t4 to c when ikâtê follows in VTI
+"t2cVTIRule"
+t4:c <=> _ %>:0 i: k: â: t: ê: ;
+
+! #wapâhcikâtêw - V+TI+Der/X+V+II+3Sg
+! w â p a h t:c %>:0 i k â t ê %> w  
+! 
+!!€ wapâht4>ikâtê>w 
+!!€ wapâhc0ikâtê0w
+
+
 ! ##VTAs
 ! ##VTA-1
 ! 
@@ -587,6 +600,7 @@ n:0 <=> _ %>:0 k: ;
 
 "t2sVTA4Rule"
 t3:s <=> _ Bx: [ i: | ii2: | .#. ] ;
+
 
 ! Corresponding otherwise rule 
 ! t3:t <=> \[ i | ii2 ] ;
