@@ -24,15 +24,15 @@ LEXICON AN-IN
 ! But that needs to be mirrored on the suffix side (which would become simpler as well).
 
 @U.noun.abs@                    STEMS ;
-@U.noun.1sg@:@U.noun.1sg@nit2   STEMS ; ! 1sg
-@U.noun.2sg@:@U.noun.2sg@kit2   STEMS ; ! 2sg
-@U.noun.3sg@:@U.noun.3sg@ot2    STEMS ; ! 3sg
-@U.noun.4sg@:@U.noun.4sg@ot2    STEMS ; ! 4sg (3-sg-obv)
-@U.noun.1pl@:@U.noun.1pl@nit2   STEMS ; ! exclusive 1pl
-@U.noun.12pl@:@U.noun.12pl@kit2 STEMS ; ! inclusive 1pl
-@U.noun.2pl@:@U.noun.2pl@kit2   STEMS ; ! 2pl
-@U.noun.3pl@:@U.noun.3pl@ot2    STEMS ; ! 3pl
-@U.noun.4pl@:@U.noun.4pl@ot2    STEMS ; ! 4pl (3-pl-obv)
+@U.noun.1sg@:@U.noun.1sg@nit2%<   STEMS ; ! 1sg
+@U.noun.2sg@:@U.noun.2sg@kit2%<   STEMS ; ! 2sg
+@U.noun.3sg@:@U.noun.3sg@ot2%<    STEMS ; ! 3sg
+@U.noun.4sg@:@U.noun.4sg@ot2%<    STEMS ; ! 4sg (3-sg-obv)
+@U.noun.1pl@:@U.noun.1pl@nit2%<   STEMS ; ! exclusive 1pl
+@U.noun.12pl@:@U.noun.12pl@kit2%< STEMS ; ! inclusive 1pl
+@U.noun.2pl@:@U.noun.2pl@kit2%<   STEMS ; ! 2pl
+@U.noun.3pl@:@U.noun.3pl@ot2%<    STEMS ; ! 3pl
+@U.noun.4pl@:@U.noun.4pl@ot2%<    STEMS ; ! 4pl (3-pl-obv)
 
 !! Prior format using regular expressions
 
@@ -133,6 +133,7 @@ LEXICON AN_DECL !!= * @CODE@ for the animate declension, poss.-im-, Dim: -is
 +N+AN+Der/Dim+N+AN+Pl:%>i2m%^DIMis%> ANSUFF_PL  ; !
 +N+AN+Der/Dim+N+AN+Sg+Use/NG:%>i2m%^DIMisis%> ANSUFF_SG  ; !
 +N+AN+Der/Dim+N+AN+Pl+Use/NG:%>i2m%^DIMisis%> ANSUFF_PL  ; !
+
 LEXICON ANimDECLisis !!= * @CODE@ for the animate declension, poss.-im-, Dim: -isis
                                      ANABSDECL  ;
              +N+AN+Sg:%>i2m          ANSUFF_SG  ;
@@ -153,10 +154,15 @@ LEXICON ANimDECLis !!= * @CODE@ for the animate declension, poss.-im-, Dim: -is
 
 
 LEXICON ANimDECLw !!= * @CODE@ for the animate declension, stem -w, poss.-im-, Dim: -is
-< "+N":a "+AN":0 "+Sg":0 "@U.noun.abs@" > SG_  ; ! -a
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" > OBVIATIVE  ; !
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" > PLak  ; !
-< "+N":0 "+AN":0 "@U.noun.abs@" > LOC  ;
+@U.noun.abs@+N+AN+Sg:@U.noun.abs@a SG_ ; 
+@U.noun.abs@+N+AN+Sg:@U.noun.abs@  OBVIATIVE ; 
+@U.noun.abs@+N+AN+Pl:@U.noun.abs@  PLak ; 
+@U.noun.abs@+N+AN:@U.noun.abs@     LOC ; 
+
+!< "+N":a "+AN":0 "+Sg":0 "@U.noun.abs@" > SG_  ; ! -a
+!< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" > OBVIATIVE  ; !
+!< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" > PLak  ; !
+!< "+N":0 "+AN":0 "@U.noun.abs@" > LOC  ;
              +N+AN+Sg:%>i2m          ANSUFF_SG  ;
              +N+AN+Pl:%>i2m          ANSUFF_PL  ;
 !                +N+AN:%>i2m          ANSUFF_LOC ;
@@ -184,10 +190,15 @@ LEXICON ANimDECLnaahk !!= * @CODE@ for the animate declension, poss.-im-, Dim: -
 +N+AN+Der/Dim+N+AN+Pl:%>i2m%^DIMis%> ANSUFF_PL  ; !
 
 LEXICON ANABSDECLnaahk !!= * @CODE@ for the animate absolute declension, with collectiv loc
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;!
-< "+N":0 "+AN":0 "@U.noun.abs@" >  LOCinaahk       ;
+@U.noun.abs@+N+AN+Sg:@U.noun.abs@ SG_ ; 
+@U.noun.abs@+N+AN+Pl:@U.noun.abs@ PLak ; 
+@U.noun.abs@+N+AN+Sg:@U.noun.abs@ OBVIATIVE ; 
+@U.noun.abs@+N+AN:@U.noun.abs@    LOCinaahk ;
+ 
+!< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+!< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
+!< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;!
+!< "+N":0 "+AN":0 "@U.noun.abs@" >  LOCinaahk       ;
 
 
 LEXICON ANimDECLnaahk-NOPOSS !!= * @CODE@ for the animate declension, poss.-im-, Dim: -is, , with collectiv loc
@@ -196,34 +207,56 @@ LEXICON ANimDECLnaahk-NOPOSS !!= * @CODE@ for the animate declension, poss.-im-,
 
 
 LEXICON ANABSDECL !!= * @CODE@ for the animate absolute declension
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;!
-< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC       ; !
+@U.noun.abs@+N+AN+Sg:@U.noun.abs@ SG_ ; 
+@U.noun.abs@+N+AN+Pl:@U.noun.abs@ PLak ; 
+@U.noun.abs@+N+AN+Sg:@U.noun.abs@ OBVIATIVE ; 
+@U.noun.abs@+N+AN:@U.noun.abs@    LOC ;
+
+!< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  SG_ ; !
+!< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
+!< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;!
+!< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC       ; !
 
 LEXICON ANABSDECL_PL !!= * @CODE@ for the animate absolute declension
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
-< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC       ; !
+@U.noun.abs@+N+AN+Pl:@U.noun.abs@ PLak ; 
+@U.noun.abs@+N+AN:@U.noun.abs@    LOC ;
+
+!< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" >  PLak ; !
+!< "+N":0 "+AN":0 "@U.noun.abs@" >  LOC       ; !
 
 
 LEXICON AN_GENERIC
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" > SG_       ; !
-< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" > PLak      ; !
-< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;!
+@U.noun.abs@+N+AN+Sg:@U.noun.abs@ SG_ ; 
+@U.noun.abs@+N+AN+Pl:@U.noun.abs@ PLak ; 
+@U.noun.abs@+N+AN+Sg:@U.noun.abs@ OBVIATIVE ; 
+
+!< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" > SG_       ; !
+!< "+N":0 "+AN":0 "+Pl":0 "@U.noun.abs@" > PLak      ; !
+!< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  OBVIATIVE ;!
 
 
 
 LEXICON AN_KININFL_MONOG !!= * @CODE@ Lexicon with reduces possessive paradigm: only one wife/husband
+@U.noun.1sg@+N+AN+Sg+Px1Sg:@U.noun.1sg@          SG_ ;
+@U.noun.2sg@+N+AN+Sg+Px2Sg:@U.noun.2sg@          SG_ ;
+@U.noun.3sg@+N+AN+Sg+Px3Sg:@U.noun.3sg@          OBVIATIVE ;
+@U.noun.4sg@+N+AN+Sg+Px4Sg:@U.noun.4sg@i2yiw     OBVIATIVE ;
+@U.noun.1pl@+N+AN+Pl+Px1Pl:@U.noun.1pl@i2nân     PLak ;
+@U.noun.12pl@+N+AN+Pl+Px12Pl:@U.noun.12pl@i2naw  PLak ;
+@U.noun.2pl@+N+AN+Pl+Px2Pl:@U.noun.2pl@i2wâw     PLak ;
+@U.noun.3pl@+N+AN+Sg+Px3Pl:@U.noun.3pl@i2wâw     OBVIATIVE ;
+@U.noun.4pl@+N+AN+Sg+Px4Pl:@U.noun.4pl@i2yiw     OBVIATIVE ;
+
 !< "+N":i2 "+AN":m "+Sg":â                             0:w "@U.noun.4pl@" > #         ; !generic form
-< "+N":0 "+AN":0 "+Sg":0  "+Px1Sg":0                 "@U.noun.1sg@"  > SG_       ; !
-< "+N":0 "+AN":0 "+Sg":0  "+Px2Sg":0                 "@U.noun.2sg@"  > SG_       ; !
-< "+N":0 "+AN":0 "+Sg":0  "+Px3Sg":0                 "@U.noun.3sg@"  > OBVIATIVE ; !
-< "+N":0 "+AN":0 "+Sg":0  "+Px4Sg":0 0:i2 0:y 0:i 0:w "@U.noun.4sg@" > OBVIATIVE ; !
-< "+N":0 "+AN":0 "+Pl":0  "+Px1Pl":0 0:i2 0:n 0:â 0:n "@U.noun.1pl@"  > PLak      ; ! exclusive Pl
-< "+N":0 "+AN":0 "+Pl":0 "+Px12Pl":0 0:i2 0:n 0:a 0:w "@U.noun.12pl@" > PLak      ; ! inclusive Pl
-< "+N":0 "+AN":0 "+Pl":0  "+Px2Pl":0 0:i2 0:w 0:â 0:w "@U.noun.2pl@"  > PLak      ; !
-< "+N":0 "+AN":0 "+Pl":0  "+Px3Pl":0 0:i2 0:w 0:â 0:w "@U.noun.3pl@"  > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
-< "+N":0 "+AN":0 "+Pl":0  "+Px4Pl":0 0:i2 0:y 0:i 0:w "@U.noun.4sg@" > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
+!< "+N":0 "+AN":0 "+Sg":0  "+Px1Sg":0                 "@U.noun.1sg@"  > SG_       ; !
+!< "+N":0 "+AN":0 "+Sg":0  "+Px2Sg":0                 "@U.noun.2sg@"  > SG_       ; !
+!< "+N":0 "+AN":0 "+Sg":0  "+Px3Sg":0                 "@U.noun.3sg@"  > OBVIATIVE ; !
+!< "+N":0 "+AN":0 "+Sg":0  "+Px4Sg":0 0:i2 0:y 0:i 0:w "@U.noun.4sg@" > OBVIATIVE ; !
+!< "+N":0 "+AN":0 "+Pl":0  "+Px1Pl":0 0:i2 0:n 0:â 0:n "@U.noun.1pl@"  > PLak      ; ! exclusive Pl
+!< "+N":0 "+AN":0 "+Pl":0 "+Px12Pl":0 0:i2 0:n 0:a 0:w "@U.noun.12pl@" > PLak      ; ! inclusive Pl
+!< "+N":0 "+AN":0 "+Pl":0  "+Px2Pl":0 0:i2 0:w 0:â 0:w "@U.noun.2pl@"  > PLak      ; !
+!< "+N":0 "+AN":0 "+Pl":0  "+Px3Pl":0 0:i2 0:w 0:â 0:w "@U.noun.3pl@"  > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
+!< "+N":0 "+AN":0 "+Pl":0  "+Px4Pl":0 0:i2 0:y 0:i 0:w "@U.noun.4sg@" > OBVIATIVE ; ! 3rd person  possessor, hence Pl is -a
 
 LEXICON AN_DECL-ATIM	!!= * @CODE@ for atim and mistatim.
 < "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  #         ; !
@@ -328,7 +361,7 @@ INABSDECL ;
 +N+IN+Sg:%> INSUFF_SG ;
 +N+IN+Pl:%> INSUFF_PL ;
 +N+IN:%> INSUFF_LOC ;
-+N+IN+Der/Dim:%>is%^DIMis%> IN_DIM ;
++N+IN+Der/Dim:%>i2s%^DIMis%> IN_DIM ;
 
 
 LEXICON IN_DECL_OSI !!= * @CODE@ for the inanimate declension of ôsi, an irregular noun
