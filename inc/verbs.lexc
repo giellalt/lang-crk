@@ -369,18 +369,28 @@ PV/yipe+:yîpê PREVERBS_BOUND "on a slant, on a slope, on the side, sideways" ;
 PV/yoski+:yôski PREVERBS_BOUND "soft, softly" ; 
 
 LEXICON PREVERBS_BOUND
-@U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%<      VERBPREFIXES ;
-@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%< VERBPREFIXES ;
+@U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%^EGLOT%< VERBPREFIXES ;
+@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%<   VERBPREFIXES ;
+
 
 
 LEXICON WICI
-@U.joiner.NULL@:@U.joiner.NULL@wici%<      VERBSTEMS ;
-@U.joiner.hyphen@:@U.joiner.hyphen@wici-%< VERBSTEMS ;
+@U.joiner.NULL@:@U.joiner.NULL@wîci%^EGLOT%<      VERBSTEMS ; !!!! We need to deal with the wît- allomorph
+@U.joiner.hyphen@:@U.joiner.hyphen@wîci-%<        VERBSTEMS ; !!!! We need to deal with the wît- allomorph
 
 LEXICON VERBSTEMS
+wâpiskâw:wâpiskâ VII-1 ;
+ayâw:ayâ VII-1 ;
+mispon:mispon3 VII-2 ;
 acimow:acimo VAI-1 ;
 nipâw:nipâ VAI-1 ;
-wâpahtam:wâpaht VAI-1 ;
+itwêw:itwê VAI-1 ;
+wâpahtam:wâpaht4 VTI-1 ;
+itam:it VTI-1 ;
+mowêw:mow2 VTA-1 ;
+acimêw:acim VTA-1 ;
+itêw:it3 VTA-2 ;
+
 
 !! Now, lexc directs us to the ../stems/verbs.lexc file,
 !! where we find all the verbal stems. The suffixes are then
@@ -505,13 +515,13 @@ LEXICON VII-1_SGPL_ORDER !!= @CODE@
 
 LEXICON VII-1_SG_ORDER !!= @CODE@ singular only
 @U.order.indep@+Ind:@U.order.indep@  VII-1_SG_IND_TENSE ; !
-@U.order.indep@+Cnj:@U.order.indep@ VII-1_SG_CNJ_TENSE ; !
-@U.order.FutCon@+Fut+Cond:@U.order.indep@ VII-1_SG_FUT_CON_PERSON ;!
+@U.order.cnj@+Cnj:@U.order.cnj@ VII-1_SG_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VII-1_SG_FUT_CON_PERSON ;!
 
 LEXICON VII-1_PL_ORDER !!= @CODE@ singular only
 @U.order.indep@+Ind:@U.order.indep@  VII-1_PL_IND_TENSE ; !
-@U.order.indep@+Cnj:@U.order.indep@ VII-1_PL_CNJ_TENSE ; !
-@U.order.FutCon@+Fut+Cond:@U.order.indep@ VII-1_PL_FUT_CON_PERSON ;!
+@U.order.cnj@+Cnj:@U.order.cnj@ VII-1_PL_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VII-1_PL_FUT_CON_PERSON ;!
 
 !! LEXICON VIIw_PL_ORDER !!= @CODE@ plural only 
 !! @U.order.indep@+Ind:@U.order.indep@ VIIw_PL_IND_TENSE ; !
@@ -527,12 +537,12 @@ LEXICON VII-1_PL_ORDER !!= @CODE@ singular only
 LEXICON VII-2_SGPL_ORDER !!= @CODE@ 
 @U.order.indep@+Ind:@U.order.indep@ VII-2_SGPL_IND_TENSE ; !
 @U.order.cnj@+Cnj:@U.order.cnj@ VII-2_SGPL_CNJ_TENSE ; !
-@U.order.FutCon@+Fut+Cond:@U.order.indep@ VII-2_SGPL_FUT_CON_PERSON ;!
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VII-2_SGPL_FUT_CON_PERSON ;!
 
 LEXICON VII-2_SG_ORDER !!= @CODE@ singular only
 @U.order.indep@+Ind:@U.order.indep@ VII-2_SG_IND_TENSE ; !
 @U.order.cnj@+Cnj:@U.order.cnj@ VII-2_SG_CNJ_TENSE ; !
-@U.order.FutCon@+Fut+Cond:@U.order.indep@ VII-2_SG_FUT_CON_PERSON ;!
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VII-2_SG_FUT_CON_PERSON ;!
 
 !! LEXICON VIIn_PL_ORDER !!= @CODE@ plural only
 !!@U.order.indep@+Ind:@U.order.indep@ VIIn_PL_IND_TENSE ; !
@@ -747,7 +757,7 @@ LEXICON VII-2_SG_IND_SUFFIX   !!= @CODE@ w final singular
 +3Sg:%>0 # ;
 +4Sg:%>iyiw # ;
 
-LEXICON VII-2_SG_IND_SUFFIX  !!= @CODE@ w final plural
+LEXICON VII-2_PL_IND_SUFFIX  !!= @CODE@ w final plural
 +3Pl:%>wa # ;
 +4Pl:%>iyiwa # ;
 
