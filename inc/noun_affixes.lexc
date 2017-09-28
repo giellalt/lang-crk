@@ -33,7 +33,10 @@ Multichar_Symbols
 
 @U.sg.I@
 @U.sg.A@
+@R.sg.I@
+@R.sg.A@
 @D.sg@
+@C.sg@
 
 @U.poss.IM@
 @P.poss.IM@
@@ -112,8 +115,8 @@ LEXICON NA_POSS_IM_0_SUFFIX
 
 LEXICON NA_DIM_SUFFIXES
 NA_POSS_SUFFIXES ;
-@U.is.IS@+Der/Dim+N+A:@U.is.IS@%>i2%^DIMs           NA_POSS_SUFFIXES ;
-@U.isis.ISIS@+Der/Dim+N+A:@U.isis.ISIS@%>i2%^DIMsis NA_POSS_SUFFIXES ;
+@U.is.IS@@C.sg@+Der/Dim+N+A:@U.is.IS@@C.sg@%>i2%^DIMs           NA_POSS_SUFFIXES ;
+@U.isis.ISIS@@C.sg@+Der/Dim+N+A:@U.isis.ISIS@@C.sg@%>i2%^DIMsis NA_POSS_SUFFIXES ;
 
 LEXICON NI_POSS_IM_0_SUFFIX
 @D.person.NULL@@R.poss.IM@:@D.person.NULL@@R.poss.IM@%>i2m NI_DIM_SUFFIXES ;
@@ -122,8 +125,8 @@ LEXICON NI_POSS_IM_0_SUFFIX
 
 LEXICON NI_DIM_SUFFIXES
 NI_POSS_SUFFIXES ;
-@U.is.IS@+Der/Dim+N+I:@U.is.IS@%>i2%^DIMs           NI_POSS_SUFFIXES ;
-@U.isis.ISIS@+Der/Dim+N+I:@U.isis.ISIS@%>i2%^DIMsis NI_POSS_SUFFIXES ;
+@U.is.IS@@C.sg@+Der/Dim+N+I:@U.is.IS@@C.sg@%>i2%^DIMs           NI_POSS_SUFFIXES ;
+@U.isis.ISIS@@C.sg@+Der/Dim+N+I:@U.isis.ISIS@@C.sg@%>i2%^DIMsis NI_POSS_SUFFIXES ;
 
 LEXICON NA_POSS_SUFFIXES
 ! Singular possessors
@@ -140,8 +143,8 @@ LEXICON NA_POSS_SUFFIXES
 @U.person.O@+Px4Sg/Pl:@U.person.O@%>i2yiw NA_NUMBER_OBV_LOC_SUFFIXES ;
 
 LEXICON NA_NUMBER_OBV_LOC_SUFFIXES
-@R.person.NULL@@U.sg.A@+Sg:@R.person.NULL@@U.sg.A@%>a # ; ! Singular suffix -a (NA-4), when no other morphology
-@D.person.NULL@@U.sg.A@+Sg:@R.person.NULL@@U.sg.A@0 # ; ! Zero Sg suffix (NA-4), when other morphology
+@R.person.NULL@@R.sg.A@+Sg:@R.person.NULL@@R.sg.A@%>a # ; ! Singular suffix -a (NA-4), when no other morphology
+@D.person.NULL@@R.sg.A@+Sg:@R.person.NULL@@R.sg.A@0 # ; ! Zero Sg suffix (NA-4), when other morphology
 @D.sg@+Sg:@D.sg@0 # ; ! Zero Sg suffix for other than NA-4 cases
 +Pl:%>ak # ;
 +Obv:%>a # ;
@@ -163,8 +166,8 @@ LEXICON NI_POSS_SUFFIXES
 @U.person.O@+Px4Sg/Pl:@U.person.O@%>i2yiw NI_NUMBER_LOC_SUFFIXES ;
 
 LEXICON NI_NUMBER_LOC_SUFFIXES
-@R.person.NULL@@U.sg.I@+Sg:@R.person.NULL@@U.sg.I@%>i # ; ! Sg suffix -i (NI-4w), when no other 
-@D.person.NULL@@U.sg.I@+Sg:@R.person.NULL@@U.sg.I@0 # ; ! Zero Sg morpheme (NI-4w), when other morphology
+@R.person.NULL@@R.sg.I@+Sg:@R.person.NULL@@R.sg.I@%>i # ; ! Sg suffix -i (NI-4w), when no other 
+@D.person.NULL@@R.sg.I@+Sg:@R.person.NULL@@R.sg.I@0 # ; ! Zero Sg morpheme (NI-4w), when other morphology
 @D.sg@+Sg:@D.sg@0 # ; ! Zero Sg morpheme for non NI-4w cases
 +Pl:%>a # ;
 +Loc:%>i2hk # ;
@@ -239,15 +242,33 @@ LEXICON NOUN_DEP_KINSHIP_STEMS
 
 LEXICON NOUN_INDEP_STEMS
 ! Animate Noun stems
+pahkwêsikan NA_IM "bannock" ; ! AEW NA-1 (Consonant-Initial Regular NA Stem)
+asikan NA "sock" ; ! AEW NA-1 (Vowel-Initial Regular NA Stem)
+kihc-ôkiniy NA "tomato" ; ! AEW NA-2 (Consonant-Initial Vowel-Glide NA Stem)
+ayapiy NA "net" ; ! AEW NA-2 (Vowel-Initial Vowel-Glide NA Stem)
+masinahikanâhtik:masinahikanâhtikw NA "pencil" ; ! AEW NA-3 (Consonant-Initial Consonant-/w/ NA Stem)
+askihk:askihkw NA_IM "kettle, pail" ; ! AEW NA-3 (Vowel-Initial Consonant-/w/ NA Stem)
+niska:nisk NA-1SYLL "goose" ; ! AEW NA-4 (Consonant-Initial Single-Syllable NA Stem)
+sihta:siht NA-1SYLL "spruce" ; ! AEW NA-4 (Consonant-Initial Single-Syllable NA Stem)
+êsa:ês NA-1SYLL "clam; shell" ; ! AEW NA-4 (Vowel-Initial Single-Syllable NA Stem)
+wâhkwa:wâhkw NA-1SYLL "roe, fish eggs; lump of roe" ; ! AEW NA-4w (Consonant-Initial Single-Syllable-/w/ NA Stem)
+ihkwa:ihkw NA-1SYLL "louse" ; ! AEW NA-4w (Vowel-Initial Single-Syllable-/w/ NA Stem)
+! Non-AEW test cases
 âmow NA_IM "bee" ;
 maskwa:maskw NA-1SYLL "bear" ;
-niska:nisk NA-1SYLL "goose" ;
 sîsîp NA_IM "duck" ;
+
 ! Inanimate Noun stems
 askiy NI "land" ;
-astotin NI "hat" ;
-mâcîs NI "camp" ;
-mihko:mihkw NI-1SYLL "blood" ;
+cîman NA "canoe" ; ! AEW NI-1 (Consonant-Initial Regular NI Stem)
+astotin NI "hat" ; ! AEW NI-1 (Vowel-Initial Regular NI Stem)
+mîkisasâkay NI "beaded coat, beaded dress" ; ! AEW NI-2 (Consonant-Initial VW NI Stem)
+oskasâkay NI "new coat, new dress" ; ! AEW NI-2 (Vowel-Initial VW NI Stem)
+pahkêkinw NI "leather, rawhide" ; ! AEW NI-3 (Consonant-Initial Cw NI Stem)
+askêkinw NI "fresh rawhide" ; ! AEW NI-3 (Vowel-Initial Cw NI Stem)
+wâwi:wâw2 "egg" ; ! AEW NI-4 (Consonant-Initial Single-Syllable NI Stem)
+osk-âyi:osk-ây4 "new item, new thing" ; ! AEW NI-4 (Vowel-Initial Single-Syllable NI Stem)
+mihko:mihkw NI-1SYLL "blood" ; ! AEW NI4w (Consonant-Initial Single-Syllable-/w/ NI Stem)
 
 ! Case-specific continuation lexica for -im/0 and -is/-isis
 
