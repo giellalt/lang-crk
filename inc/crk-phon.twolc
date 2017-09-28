@@ -92,8 +92,8 @@ Alphabet
 
  ý:y
 
- y2:0      !!= * @CODE@ epenthetic joiner in reduplication of vowe-initial stems
- y3:0      !!= * @CODE@ epenthetic joiner in reduplication of vowe-initial stems
+ y2:0      !!= * @CODE@ epenthetic joiner in reduplication of vowel-initial stems
+ y3:0      !!= * @CODE@ epenthetic joiner in reduplication of vowel-initial stems
  %^DUPL1:0  !!= * @CODE@ Reduplication consonant place holder 
  %^DUPL2:0  !!= * @CODE@ Reduplication consonant place holder 
 
@@ -101,7 +101,11 @@ Alphabet
 
  a:â â:â
  w:0 y:0 ý:0
-  
+
+ w3:w !!= * @CODE@ 3rd person possessor for NDA and NDI (non-kinship)
+ y4:y !!= * @CODE@ immutable -y in single-syllable nouns
+ i4:i !!= * @CODE@ possessive prefix -i that deletes before Vowel in Dep nouns
+
  %>:0
  %<:0
  
@@ -799,7 +803,7 @@ y3:y <=> _ ( %-: ) %^DUPL1:0 ;
 ! v1:v2 <=> .#. (C) _ :* %^IC:0 ;
 
 "v2vICRule"
-Vx:ICx <=> .#. (Consonant | %^DUPL1: | %^DUPL2: ) (0:w) _ :* %^IC:0 ;
+Vx:ICx <=> .#. ( Consonant | %^DUPL1: | %^DUPL2: ) (0:w) _ :* %^IC:0 ;
    where Vx in  ( a i î o )
          ICx in ( ê ê â ê )
    matched ;
@@ -871,5 +875,68 @@ Vx /<= .#. (Consonant | %^DUPL1: | %^DUPL2: ) _ :* %^IC:0 ;
 
 !!€ 00ôhkomit^IC
 !!€ iyôhkomit0
+
+"w2oNDRule"
+w3:o <=> .#. _  %<:0 :Consonant ;
+
+! "i20NDRule"
+! i:0 <=> .#. w3:o _ %<:0 ;
+
+!!€ w3<spiton
+!!€ o0spiton
+
+!!€ ni<spiton
+!!€ ni0spiton
+
+!!€ ki<spiton
+!!€ ki0spiton
+
+!!€ w3<îpit
+!!€ w0îpit
+
+!!€ w3<ahkwan
+!!€ w0ahkwan
+
+! n3:n
+
+! n3<o -> nô
+! n<i<tanis
+! ni<tanis
+
+! [nk]i<V[^o] -> [nk]0<V
+! [nk]i<o -> [nk]0<ô
+
+"i20VPossND"
+i4:0 <=> .#. [ n | k | m ] _ %<:0 :Vowel ;
+
+"o2ooPossND"
+o:ô <=> .#. [ n | k | m ] i4:0 %<:0 _ ;
+
+"w2oRuleND"
+w3:0 <=> .#. _ %<:0 [ o | ô ] ;
+
+!!€ ni4<ohkom
+!!€ n00ôhkom
+
+!!€ ni4<ohkom>i2nân>ak
+!!€ n00ôhkom0inân0ak
+
+!!€ ki4<ohkom
+!!€ k00ôhkom
+
+!!€ w3<ohkom>a
+!!€ 00ohkom0a
+
+"o2ooPossNoun"
+o:ô <=> .#. [ [ n i ] | [ k i ] | o ] t2:t %<:0 _ ;
+
+!!€ nit2<ospwâkan
+!!€ nit0ôspwâkan
+
+!!€ kit2<ospwâkan
+!!€ kit0ôspwâkan
+
+!!€ ot2<ospwâkan
+!!€ ot0ôspwâkan
 
 !!!!! END !!!!!
