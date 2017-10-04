@@ -230,15 +230,41 @@ LEXICON NI_NUMBER_LOC_SUFFIXES
 LEXICON NOUN_DEP_NONKINSHIP_STEMS
 ! Animate Dependent Noun stems
 masakay:asakay NAD "skin" ;
+mitâs:tâs NAD "pair of pants" ; !Consonant initial regular NDA-1 FROM AROK
+môhpan:ôhpan NAD "lung" ; !Vowel initial regular NDA-1 FROM AROK, note that in 3rd person the <w> does not surface
+mitihtikosiy:tihtikosiy NAD "kidney" ; !Consonant initial regular VG NDA-2 FROM AROK, also occurs as the stems tihtikosiw and tihtikos (the latter is an NDI-1 declension)
+maskasiy:askasiy NAD "finger nail/clar" ; !Vowel Initial VG NDA-2 FROM AROK
+
 ! Inanimate Dependent Noun stems
 mihtawakay:htawakay NID "ear" ;
 mispiton:spiton NID "arm" ;
 miyaw:iyaw2 NAD ;
+mitêh:têh NID "heart" ; !Consonant Initial Regular NDI-1 FROM AROK
+mîpit:îpit NID "tooth" ; !Vowel Initial Regular NDI-1 FROM AROK, might cause issue with <î>
+miskotâkay:skotâkay NID "coat/dress" ; !Consonant Initial VW NDI-2 FROM AROK
+mêstakay:êstakay NID "hair" ; !Vowel Initial VW NDI-2 FROM AROK
+miskīsik:skīsik NID "eye" ; !Consonant Initial Cw NDI-3 FROM AROK
+mayakask:ayakask NID "palate" ; !Vowel Initial Cw NDI-3 FROM AROK, might cause issue with first <a>
+
+!! THESE WILL CAUSE ISSUES !!
+! mîki:îk NID "home" ; !Vowel Initial Single Syllable NDI-4, might cause issue with <î>, also doesn't usually work unpossessed or plural unless distributive. This is also like wâwi, in that it has a marked singular ending
+! mîni:în NID "bone-marrow" ; !Vowel Initial Single Syllable NDI-4, might cause issue with <î>, also is a mass noun that is never singular.
+
+mîwas:îwat3 NID "sacred bundle" ; !Irregular VW single-syllable NDI. T->s when word final, might cause issue with <î>
+
 
 LEXICON NOUN_DEP_KINSHIP_STEMS
 -ohkom:ohkom NAD "grand-mother" ;
 -ôhtawiy:ôhtawiy NAD "father" ;
 -tânis:tânis NAD "daughter, brother, sister" ;
+-îkihikw:īkihikw NAD "parent" ; !Consonant initial Vw NDA-3 FROM AROK. Word final <w> deletes, becomes <o> precedding <i>. Can also be the stem wiyihkw or iyihkw. wiyihkw and iyihkw can occur in locative. The other can not.
+-îtimw:îtimw NAD "cross cousin of opposite gender" ; !Cowel initial Vw NDA-3 FROM AROK. Word final <w> deletes, becomes <o> precedding <i>. 
+
+!! THESE WILL CAUSE ISSUES !!
+-îw:îw NAD "wife" ; !Vowel initial sing syllable NDA-4 FROM AROK. Word final <w> deletes, DOES NOT becomes <o> precedding <i>. ONLY ONE OF THIS TYPE. SINGULAR MARKED WITH <a>
+-îskw:îskw NAD "fellow wife; husband's ex" ; !Vowel initial single-syllable-/w/ NDA4w stem FROM AROK. Singular marked with <a>. <w> becomes <o> before <i>. Only one of its type
+
+
 
 LEXICON NOUN_INDEP_STEMS
 ! Animate Noun stems
