@@ -136,11 +136,25 @@ LEXICON NA_POSS_SUFFIXES
 @U.person.NULL@                    NA_NUMBER_OBV_LOC_SUFFIXES ;
 ! Plural possessors
 @U.person.NI@+Px1Pl:@U.person.NI@%>i2nân  NA_NUMBER_OBV_LOC_SUFFIXES ;
-@U.person.KI@+Px21Pl:@U.person.KI@%>i2waw NA_NUMBER_OBV_LOC_SUFFIXES ;
+@U.person.KI@+Px21Pl:@U.person.KI@%>i2naw NA_NUMBER_OBV_LOC_SUFFIXES ;
 @U.person.KI@+Px2Pl:@U.person.KI@%>i2wâw  NA_NUMBER_OBV_LOC_SUFFIXES ;
 @U.person.O@+Px3Pl:@U.person.O@0%>i2wâw   NA_NUMBER_OBV_LOC_SUFFIXES ;
 ! Obviative possessor
 @U.person.O@+Px4Sg/Pl:@U.person.O@%>i2yiw NA_NUMBER_OBV_LOC_SUFFIXES ;
+NA_POSS_LOC ;
+
+LEXICON NA_POSS_LOC
+@U.person.NI@+Px1Sg+Loc:@U.person.NI@i2hk # ;
+@U.person.KI@+Px2Sg+Loc:@U.person.KI@i2hk # ;
+@U.person.O@+Px3Sg+Loc:@U.person.O@i2hk   # ;
+! Plural possessors
+@U.person.NI@+Px1Pl+Loc:@U.person.NI@%>i2nâhk  # ;
+@U.person.KI@+Px21Pl+Loc:@U.person.KI@%>i2nâhk # ;
+@U.person.KI@+Px2Pl+Loc:@U.person.KI@%>i2wâhk  # ;
+@U.person.O@+Px3Pl+Loc:@U.person.O@0%>i2wâhk   # ;
+! Obviative possessor
+@U.person.O@+Px4Sg/Pl+Loc:@U.person.O@%>i2yihk # ;
+
 
 LEXICON NA_NUMBER_OBV_LOC_SUFFIXES
 @R.person.NULL@@R.sg.A@+Sg:@R.person.NULL@@R.sg.A@%>a # ; ! Singular suffix -a (NA-4), when no other morphology
@@ -148,8 +162,8 @@ LEXICON NA_NUMBER_OBV_LOC_SUFFIXES
 @D.sg@+Sg:@D.sg@0 # ; ! Zero Sg suffix for other than NA-4 cases
 +Pl:%>ak # ;
 +Obv:%>a # ;
-+Loc:%>i2hk # ;
-+Distr:%>i2nâhk # ;
+@R.person.NULL@+Loc:@R.person.NULL@%>i2hk # ;
+@R.person.NULL@+Distr:@R.person.NULL@%>i2nâhk # ;
 
 LEXICON NI_POSS_SUFFIXES
 ! Singular possessors
@@ -159,18 +173,34 @@ LEXICON NI_POSS_SUFFIXES
 @U.person.NULL@                    NI_NUMBER_LOC_SUFFIXES ;
 ! Plural possessors
 @U.person.NI@+Px1Pl:@U.person.NI@%>i2nân  NI_NUMBER_LOC_SUFFIXES ;
-@U.person.KI@+Px21Pl:@U.person.KI@%>i2waw NI_NUMBER_LOC_SUFFIXES ;
+@U.person.KI@+Px21Pl:@U.person.KI@%>i2naw NI_NUMBER_LOC_SUFFIXES ;
 @U.person.KI@+Px2Pl:@U.person.KI@%>i2wâw  NI_NUMBER_LOC_SUFFIXES ;
 @U.person.O@+Px3Pl:@U.person.O@0%>i2wâw   NI_NUMBER_LOC_SUFFIXES ;
 ! Obviative possessor
 @U.person.O@+Px4Sg/Pl:@U.person.O@%>i2yiw NI_NUMBER_LOC_SUFFIXES ;
+NI_POSS_LOC ;
+
+LEXICON NI_POSS_LOC
+! Singular possessors
+@U.person.NI@+Px1Sg+Loc:@U.person.NI@i2hk  # ;
+@U.person.KI@+Px2Sg+Loc:@U.person.KI@0i2hk # ;
+@U.person.O@+Px3Sg+Loc:@U.person.O@0i2hk   # ;
+! @U.person.NULL@                    NI_NUMBER_LOC_SUFFIXES ;
+! Plural possessors
+@U.person.NI@+Px1Pl+Loc:@U.person.NI@%>i2nâhk  # ;
+@U.person.KI@+Px21Pl+Loc:@U.person.KI@%>i2nâhk # ;
+@U.person.KI@+Px2Pl+Loc:@U.person.KI@%>i2wâhk  # ;
+@U.person.O@+Px3Pl+Loc:@U.person.O@0%>i2wâhk   # ;
+! Obviative possessor
+@U.person.O@+Px4Sg/Pl+Loc:@U.person.O@%>i2yihk # ;
+
 
 LEXICON NI_NUMBER_LOC_SUFFIXES
 @R.person.NULL@@R.sg.I@+Sg:@R.person.NULL@@R.sg.I@%>i # ; ! Sg suffix -i (NI-4w), when no other 
 @D.person.NULL@@R.sg.I@+Sg:@R.person.NULL@@R.sg.I@0 # ; ! Zero Sg morpheme (NI-4w), when other morphology
 @D.sg@+Sg:@D.sg@0 # ; ! Zero Sg morpheme for non NI-4w cases
 +Pl:%>a # ;
-+Loc:%>i2hk # ;
+@R.person.NULL@+Loc:@R.person.NULL@%>i2hk # ;
 
 ! ----------
 ! Test cases for various noun stem types
@@ -264,7 +294,10 @@ LEXICON NOUN_DEP_KINSHIP_STEMS
 -îw:îw NAD "wife" ; !Vowel initial sing syllable NDA-4 FROM AROK. Word final <w> deletes, DOES NOT becomes <o> precedding <i>. ONLY ONE OF THIS TYPE. SINGULAR MARKED WITH <a>
 -îskw:îskw NAD "fellow wife; husband's ex" ; !Vowel initial single-syllable-/w/ NDA4w stem FROM AROK. Singular marked with <a>. <w> becomes <o> before <i>. Only one of its type
 
-
+! Dependent AEW to FST conversion
+! NA-1, NA-2 -> NA
+! NA-3 -> NA + stem-final -w
+! NA-4, NA-4w -> NA-1SYLL -w2, y4 (immutable)
 
 LEXICON NOUN_INDEP_STEMS
 ! Animate Noun stems
@@ -284,6 +317,11 @@ ihkwa:ihkw NA-1SYLL "louse" ; ! AEW NA-4w (Vowel-Initial Single-Syllable-/w/ NA 
 maskwa:maskw NA-1SYLL "bear" ;
 sîsîp NA_IM "duck" ;
 
+! AEW to FST
+! NI-1, NI-2 -> NI
+! NI-3 -> NI + -w (stem)
+! NI-4, NI-4w -> NI-1SYLL, with w2, y4 for the immutable final glides
+
 ! Inanimate Noun stems
 askiy NI "land" ;
 cîman NA "canoe" ; ! AEW NI-1 (Consonant-Initial Regular NI Stem)
@@ -292,9 +330,9 @@ mîkisasâkay NI "beaded coat, beaded dress" ; ! AEW NI-2 (Consonant-Initial VW 
 oskasâkay NI "new coat, new dress" ; ! AEW NI-2 (Vowel-Initial VW NI Stem)
 pahkêkinw NI "leather, rawhide" ; ! AEW NI-3 (Consonant-Initial Cw NI Stem)
 askêkinw NI "fresh rawhide" ; ! AEW NI-3 (Vowel-Initial Cw NI Stem)
-wâwi:wâw2 "egg" ; ! AEW NI-4 (Consonant-Initial Single-Syllable NI Stem)
-osk-âyi:osk-ây4 "new item, new thing" ; ! AEW NI-4 (Vowel-Initial Single-Syllable NI Stem)
-mihko:mihkw NI-1SYLL "blood" ; ! AEW NI4w (Consonant-Initial Single-Syllable-/w/ NI Stem)
+wâwi:wâw2 NI-1SYLL "egg" ; ! AEW NI-4 (Consonant-Initial Single-Syllable NI Stem)
+osk-âyi:osk-ây4 NI-1SYLL "new item, new thing" ; ! AEW NI-4 (Vowel-Initial Single-Syllable NI Stem)
+mihko:mihkw NI-1SYLL "blood" ; ! AEW NI-4w (Consonant-Initial Single-Syllable-/w/ NI Stem)
 
 ! Case-specific continuation lexica for -im/0 and -is/-isis
 
