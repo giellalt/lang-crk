@@ -162,9 +162,9 @@ LEXICON NA_POSS_LOC_COMBO_SUFFIXES
 
 LEXICON NA_NUMBER_OBV_LOC_SUFFIXES
 @R.person.NULL@@R.sg.A@+Sg:@R.person.NULL@@R.sg.A@%>a # ; ! Singular suffix -a (NA-4), when no other morphology
-@D.person.NULL@@R.sg.A@+Sg:@D.person.NULL@@R.sg.A@0 # ; ! Zero Sg suffix (NA-4), when other morphology
-@D.sg@+Sg:@D.sg@0 # ; ! Zero Sg suffix for other than NA-4 cases
-+Pl:%>ak # ;
+@D.person.NULL@@D.person.O@@R.sg.A@+Sg:@D.person.NULL@@D.person.O@@R.sg.A@0 # ; ! Zero Sg suffix (NA-4), when other morphology
+@D.sg@@D.person.O@+Sg:@D.sg@@D.person.O@0 # ; ! Zero Sg suffix for other than Px3Sg/3Pl/4Sg/Pl (require +Obv or +Loc) and NA-4 cases
+@D.person.O@+Pl:@D.person.O@%>ak # ; ! Disallowed for Px3Sg/3Pl/4Sg/Pl cases (require +Obv or +Loc)
 +Obv:%>a # ;
 @R.person.NULL@+Loc:@R.person.NULL@%>i2hk # ;
 @R.person.NULL@+Distr:@R.person.NULL@%>i2nâhk # ;
