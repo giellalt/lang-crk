@@ -603,8 +603,7 @@ t4:c <=> _ %>:0 i: k: â: t: ê: ;
 ! ## t3 > s / _{-i,-î2}; t3 > t / _-i2  
 
 "t2sVTA4Rule"
-t3:s <=> _ Bx: [ i: | ii2: | .#. ] ;
-
+t3:s <=> _ [ Bx: [ i: | ii2: ] ] | .#. ;
 
 ! Corresponding otherwise rule 
 ! t3:t <=> \[ i | ii2 ] ;
@@ -752,6 +751,13 @@ s:0 <=> _ t3:s ;
 ! 
 ! !!€ ah>i3 
 ! !!€ ah0i
+
+! DOES NOT WORK YET - NEEDED FOR diminutivization of mîwas with t3
+! "t3DimRule"
+! t3:c <= _ :* %^DIM:0 ;
+
+!!€ mi4<wat3>i2^DIMs
+!!€ mî0wac0i0s
 
 ! Matching weak/strong reduplication consonant placeholder %^DUPL1 with stem-initial consonant
 "ReduplCRule1"
