@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Unix for running HFST to compile the new TWOLC and LEXC code for crk nouns 
+# Unix commands for running HFST to compile the new TWOLC and LEXC code for crk nouns 
 
 echo 'Compiling TWOLC code.' ;
 
