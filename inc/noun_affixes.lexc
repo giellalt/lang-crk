@@ -56,6 +56,7 @@ Multichar_Symbols
 i2
 i4
 t2
+t3
 w2
 w3
 y4
@@ -122,6 +123,8 @@ LEXICON NI_POSS_IM_0_SUFFIX
 @D.person.NULL@@R.poss.IM@:@D.person.NULL@@R.poss.IM@%>i2m NI_DIM_SUFFIXES ;
 @D.person.NULL@@D.poss.IM@                                 NI_DIM_SUFFIXES ;
 @R.person.NULL@                                            NI_DIM_SUFFIXES ;
+! For mîki, mîni
+! Needs special treatment for PxXSg -i
 
 LEXICON NI_DIM_SUFFIXES
 NI_POSS_SUFFIXES ;
@@ -141,12 +144,12 @@ LEXICON NA_POSS_SUFFIXES
 @U.person.O@+Px3Pl:@U.person.O@0%>i2wâw   NA_NUMBER_OBV_LOC_SUFFIXES ;
 ! Obviative possessor
 @U.person.O@+Px4Sg/Pl:@U.person.O@%>i2yiw NA_NUMBER_OBV_LOC_SUFFIXES ;
-NA_POSS_LOC ;
+NA_POSS_LOC_COMBO_SUFFIXES ;
 
-LEXICON NA_POSS_LOC
-@U.person.NI@+Px1Sg+Loc:@U.person.NI@i2hk # ;
-@U.person.KI@+Px2Sg+Loc:@U.person.KI@i2hk # ;
-@U.person.O@+Px3Sg+Loc:@U.person.O@i2hk   # ;
+LEXICON NA_POSS_LOC_COMBO_SUFFIXES
+@U.person.NI@+Px1Sg+Loc:@U.person.NI@%>i2hk # ;
+@U.person.KI@+Px2Sg+Loc:@U.person.KI@%>i2hk # ;
+@U.person.O@+Px3Sg+Loc:@U.person.O@%>i2hk   # ;
 ! Plural possessors
 @U.person.NI@+Px1Pl+Loc:@U.person.NI@%>i2nâhk  # ;
 @U.person.KI@+Px21Pl+Loc:@U.person.KI@%>i2nâhk # ;
@@ -178,13 +181,13 @@ LEXICON NI_POSS_SUFFIXES
 @U.person.O@+Px3Pl:@U.person.O@0%>i2wâw   NI_NUMBER_LOC_SUFFIXES ;
 ! Obviative possessor
 @U.person.O@+Px4Sg/Pl:@U.person.O@%>i2yiw NI_NUMBER_LOC_SUFFIXES ;
-NI_POSS_LOC ;
+NI_POSS_LOC_COMBO_SUFFIXES ;
 
-LEXICON NI_POSS_LOC
+LEXICON NI_POSS_LOC_COMBO_SUFFIXES
 ! Singular possessors
-@U.person.NI@+Px1Sg+Loc:@U.person.NI@i2hk  # ;
-@U.person.KI@+Px2Sg+Loc:@U.person.KI@0i2hk # ;
-@U.person.O@+Px3Sg+Loc:@U.person.O@0i2hk   # ;
+@U.person.NI@+Px1Sg+Loc:@U.person.NI@%>i2hk  # ;
+@U.person.KI@+Px2Sg+Loc:@U.person.KI@%>i2hk # ;
+@U.person.O@+Px3Sg+Loc:@U.person.O@%>i2hk   # ;
 ! @U.person.NULL@                    NI_NUMBER_LOC_SUFFIXES ;
 ! Plural possessors
 @U.person.NI@+Px1Pl+Loc:@U.person.NI@%>i2nâhk  # ;
@@ -260,39 +263,38 @@ LEXICON NI_NUMBER_LOC_SUFFIXES
 LEXICON NOUN_DEP_NONKINSHIP_STEMS
 ! Animate Dependent Noun stems
 masakay:asakay NAD "skin" ;
-mitâs:tâs NAD "pair of pants" ; !Consonant initial regular NDA-1 FROM AROK
-môhpan:ôhpan NAD "lung" ; !Vowel initial regular NDA-1 FROM AROK, note that in 3rd person the <w> does not surface
-mitihtikosiy:tihtikosiy NAD "kidney" ; !Consonant initial regular VG NDA-2 FROM AROK, also occurs as the stems tihtikosiw and tihtikos (the latter is an NDI-1 declension)
-maskasiy:askasiy NAD "finger nail/clar" ; !Vowel Initial VG NDA-2 FROM AROK
+mitâs:tâs NAD "pair of pants" ; ! AEW NDA-1 (Consonant initial regular stem)
+môhpan:ohpan NAD "lung" ; ! AEW NDA-1 (Vowel initial regular stem) note that in 3rd person the w- does not surface
+mitihtikosiy:tihtikosiy NAD "kidney" ; ! AEW NDA-2 (Consonant initial regular VG stem) N.B. also occurs as the stems tihtikosiw and tihtikos (the latter is an NDI-1 declension)
+maskasiy:askasiy NAD "finger nail/claw" ; ! AEW NDA-2 (Vowel Initial VG stem) 
 
 ! Inanimate Dependent Noun stems
 mihtawakay:htawakay NID "ear" ;
 mispiton:spiton NID "arm" ;
 miyaw:iyaw2 NAD ;
-mitêh:têh NID "heart" ; !Consonant Initial Regular NDI-1 FROM AROK
-mîpit:îpit NID "tooth" ; !Vowel Initial Regular NDI-1 FROM AROK, might cause issue with <î>
-miskotâkay:skotâkay NID "coat/dress" ; !Consonant Initial VW NDI-2 FROM AROK
-mêstakay:êstakay NID "hair" ; !Vowel Initial VW NDI-2 FROM AROK
-miskīsik:skīsik NID "eye" ; !Consonant Initial Cw NDI-3 FROM AROK
-mayakask:ayakask NID "palate" ; !Vowel Initial Cw NDI-3 FROM AROK, might cause issue with first <a>
+mitêh:têh NID "heart" ; ! AEW NDI-1 (Consonant Initial Regular stem)
+mîpit:îpit NID "tooth" ; ! AEW NDI-1 (Vowel Initial Regular stem)
+miskotâkay:skotâkay NID "coat/dress" ; ! AEW NDI-2 (Consonant Initial VW stem)
+mêstakay:êstakay NID "hair" ; ! AEW NDI-1 (Vowel Initial VW stem)
+miskîsik:skîsikw NID "eye" ; ! AEW NDI-3 (Consonant Initial Cw stem) !! Check -final -w
+mayakask:ayakaskw NID "palate" ; ! AEW NDI-3 (Vowel Initial Cw stem)
+mîwas:îwat3 NID "sacred bundle" ; ! AEW NID Irregular(?) VW single-syllable stem. N.B. T->s when word final, might cause issue with <î>
 
-!! THESE WILL CAUSE ISSUES !!
-! mîki:îk NID "home" ; !Vowel Initial Single Syllable NDI-4, might cause issue with <î>, also doesn't usually work unpossessed or plural unless distributive. This is also like wâwi, in that it has a marked singular ending
-! mîni:în NID "bone-marrow" ; !Vowel Initial Single Syllable NDI-4, might cause issue with <î>, also is a mass noun that is never singular.
-
-mîwas:îwat3 NID "sacred bundle" ; !Irregular VW single-syllable NDI. T->s when word final, might cause issue with <î>
+!! REMAINING IRREGULAR CASES !!
+! mîki:îk NID-1SYLL "home" ; ! AEW NDI-4 (Vowel Initial Single Syllable NDI-4 stem) N.B. Doesn't usually work unpossessed or plural unless distributive.
+! mîni:în NID "bone-marrow" ; ! AEW NDI-4 (Vowel Initial Single Syllable NDI-4 stem) N.B. might cause issue with <î>, also is a mass noun that is never singular.
 
 
 LEXICON NOUN_DEP_KINSHIP_STEMS
 -ohkom:ohkom NAD "grand-mother" ;
 -ôhtawiy:ôhtawiy NAD "father" ;
 -tânis:tânis NAD "daughter, brother, sister" ;
--îkihikw:īkihikw NAD "parent" ; !Consonant initial Vw NDA-3 FROM AROK. Word final <w> deletes, becomes <o> precedding <i>. Can also be the stem wiyihkw or iyihkw. wiyihkw and iyihkw can occur in locative. The other can not.
--îtimw:îtimw NAD "cross cousin of opposite gender" ; !Cowel initial Vw NDA-3 FROM AROK. Word final <w> deletes, becomes <o> precedding <i>. 
+-nîkihik:nîkihikw NAD "parent" ; ! AEW NDA-3 (Consonant initial Vw stem) N.B. Word final <w> deletes, becomes <o> preceding <i>. Deal later: can also be the stem <wiyihkw> or <iyihkw>. <wiyihkw> and <iyihkw> can occur in locative. The <nîkihik> can not.
+-îtim:îtimw NAD "cross-cousin of opposite gender" ; ! AEW NDA-3 (Cowel initial Vw stem).
 
-!! THESE WILL CAUSE ISSUES !!
--îw:îw NAD "wife" ; !Vowel initial sing syllable NDA-4 FROM AROK. Word final <w> deletes, DOES NOT becomes <o> precedding <i>. ONLY ONE OF THIS TYPE. SINGULAR MARKED WITH <a>
--îskw:îskw NAD "fellow wife; husband's ex" ; !Vowel initial single-syllable-/w/ NDA4w stem FROM AROK. Singular marked with <a>. <w> becomes <o> before <i>. Only one of its type
+!! REMAINING IRREGULAR CASES !!
+! -îw:îw NAD "wife" ; ! AEW NDA-4 (Vowel initial sing syllable NDA-4 stem). N.B. Word final <w> deletes, DOES NOT becomes <o> precedding <i>. ONLY ONE OF THIS TYPE. SINGULAR MARKED WITH <a>.
+! -îskw:îskw NAD "fellow wife; husband's ex" ; ! AEW NDA-4w (Vowel initial single-syllable-/w/ stem) N.B. Singular marked with <a>. <w> becomes <o> before <i>. Only one of its type.
 
 ! Dependent AEW to FST conversion
 ! NA-1, NA-2 -> NA
@@ -392,6 +394,16 @@ LEXICON NAD_IM_ISIS
 @P.poss.IM@@P.isis.ISIS@ NAD ;
 
 ! NID
+
+! nîki cases
+! nîki:mîki+N+I+D+Px1Sg
+! kîki:mîki+N+I+D+Px1Sg
+! mîki:mîki+N+I+D+Px1Sg
+! wîki:mîki+N+I+D+Px1Sg
+!
+! Maybe with this
+! LEXICON NID-1SYLL
+! @U.sg.I@ NI-1SYLL ;
 
 LEXICON NID_IM
 @P.poss.IM@ NID ;
