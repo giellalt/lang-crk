@@ -27,6 +27,7 @@ Multichar_Symbols
 @U.person.NI@
 @U.person.KI@
 @U.person.O@
+@D.person.O@
 @U.person.NULL@
 @R.person.NULL@
 @D.person.NULL@
@@ -161,7 +162,7 @@ LEXICON NA_POSS_LOC_COMBO_SUFFIXES
 
 LEXICON NA_NUMBER_OBV_LOC_SUFFIXES
 @R.person.NULL@@R.sg.A@+Sg:@R.person.NULL@@R.sg.A@%>a # ; ! Singular suffix -a (NA-4), when no other morphology
-@D.person.NULL@@R.sg.A@+Sg:@R.person.NULL@@R.sg.A@0 # ; ! Zero Sg suffix (NA-4), when other morphology
+@D.person.NULL@@R.sg.A@+Sg:@D.person.NULL@@R.sg.A@0 # ; ! Zero Sg suffix (NA-4), when other morphology
 @D.sg@+Sg:@D.sg@0 # ; ! Zero Sg suffix for other than NA-4 cases
 +Pl:%>ak # ;
 +Obv:%>a # ;
@@ -200,7 +201,7 @@ LEXICON NI_POSS_LOC_COMBO_SUFFIXES
 
 LEXICON NI_NUMBER_LOC_SUFFIXES
 @R.person.NULL@@R.sg.I@+Sg:@R.person.NULL@@R.sg.I@%>i # ; ! Sg suffix -i (NI-4w), when no other 
-@D.person.NULL@@R.sg.I@+Sg:@R.person.NULL@@R.sg.I@0 # ; ! Zero Sg morpheme (NI-4w), when other morphology
+@D.person.NULL@@R.sg.I@+Sg:@D.person.NULL@@R.sg.I@0 # ; ! Zero Sg morpheme (NI-4w), when other morphology
 @D.sg@+Sg:@D.sg@0 # ; ! Zero Sg morpheme for non NI-4w cases
 +Pl:%>a # ;
 @R.person.NULL@+Loc:@R.person.NULL@%>i2hk # ;
