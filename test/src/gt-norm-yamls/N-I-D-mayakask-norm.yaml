@@ -1,0 +1,56 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mayakask - ok : # -m inanimate dependent noun, palate	AEW V-initial NDI3
+     mayakask+N+A+Sg: mayakask
+     mayakask+N+A+Px1Sg+Sg: nayakask
+     mayakask+N+A+Px2Sg+Sg: kayakask
+     mayakask+N+A+Px1Pl+Sg: nayakaskonân
+     mayakask+N+A+Px12Pl+Sg: kayakaskonaw
+     mayakask+N+A+Px2Pl+Sg: kayakaskowâw
+
+     mayakask+N+A+Pl: mayakaskwa
+     mayakask+N+A+Px1Sg+Pl: nayakaskwa
+     mayakask+N+A+Px2Sg+Pl: kayakaskwa
+     mayakask+N+A+Px1Pl+Pl: nayakaskonâna
+     mayakask+N+A+Px12Pl+Pl: kayakaskonawa
+     mayakask+N+A+Px2Pl+Pl: kayakaskowâwa
+
+     mayakask+N+A+Px3Sg+Obv: oskîsik
+     mayakask+N+A+Px3Pl+Obv: wayakaskowâwa
+     mayakask+N+A+Px4Sg+Obv: wayakaskoyiwa
+     mayakask+N+A+Px4Pl+Obv: wayakaskoyiwa
+
+     mayakask+N+A+Loc: mayakaskohk
+     mayakask+N+A+Px1Sg+Loc: nayakaskohk
+     mayakask+N+A+Px2Sg+Loc: kayakaskohk
+     mayakask+N+A+Px1Pl+Loc: nayakaskonâhk
+     mayakask+N+A+Px12Pl+Loc: kayakaskonâhk
+     mayakask+N+A+Px2Pl+Loc: kayakaskowâhk
+     mayakask+N+A+Px3Sg+Loc: wayakaskohk
+     mayakask+N+A+Px3Pl+Loc: wayakaskowâhk
+     mayakask+N+A+Px4Sg+Loc: wayakaskoyihk
+     mayakask+N+A+Px4Pl+Loc: wayakaskoyihk
+
+     mayakask+N+A+Der/Dim+N+A+Sg: mayakaskos
+     mayakask+N+A+Der/Dim+N+A+Sg: [mayakaskos, mayakaskosis]
+     mayakask+N+A+Der/Dim+N+A+Px1Sg+Sg: [nayakaskos, nayakaskosis]
+     mayakask+N+A+Der/Dim+N+A+Px2Sg+Sg: [kayakaskos, kayakaskosis]
+     mayakask+N+A+Der/Dim+N+A+Px1Pl+Sg: [nayakaskosinân, nayakaskosisinân]
+     mayakask+N+A+Der/Dim+N+A+Px12Pl+Sg: [kayakaskosinaw, kayakaskosisinaw]
+     mayakask+N+A+Der/Dim+N+A+Px2Pl+Sg: [kayakaskosiwâw, kayakaskosisiwâw]
+
+     mayakask+N+A+Der/Dim+N+A+Pl: [mayakaskosa, mayakaskosisa]
+     mayakask+N+A+Der/Dim+N+A+Px1Sg+Pl: [nayakaskosa, nayakaskosisa]
+     mayakask+N+A+Der/Dim+N+A+Px2Sg+Pl: [kayakaskosa, kayakaskosisa]
+     mayakask+N+A+Der/Dim+N+A+Px1Pl+Pl: [nayakaskosinâna, nayakaskosisinâna]
+     mayakask+N+A+Der/Dim+N+A+Px12Pl+Pl: [kayakaskosinawa, kayakaskosisinawa]
+     mayakask+N+A+Der/Dim+N+A+Px2Pl+Pl: [kayakaskosiwâwa, kayakaskosisiwâwa]

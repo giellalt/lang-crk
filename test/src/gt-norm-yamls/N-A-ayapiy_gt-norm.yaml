@@ -1,0 +1,63 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - ayapiy - ok : # -m animate noun, net AEW NA2
+     ayapiy+N+A+Sg: ayapiy
+     ayapiy+N+A+Px1Sg+Sg: [nitayapiy, nitayapiyim]
+     ayapiy+N+A+Px2Sg+Sg: [kitayapiy, kitayapîm]
+     ayapiy+N+A+Px1Pl+Sg: [nitayapiyinân, nitayapîminân]
+     ayapiy+N+A+Px12Pl+Sg: [kitayapiyinaw, kitayapîminaw]
+     ayapiy+N+A+Px2Pl+Sg: [kitayapiyiwâw, kitayapîmiwâw]
+
+     ayapiy+N+A+Pl: ayapiyak
+     ayapiy+N+A+Px1Sg+Pl: [nitayapiyak, nitayapîmak]
+     ayapiy+N+A+Px2Sg+Pl: [kitayapiyak, kitayapîmak]
+     ayapiy+N+A+Px1Pl+Pl: [nitayapiyinânak, nitayapîminânak]
+     ayapiy+N+A+Px12Pl+Pl: [kitayapiyinawak, kitayapîminawak]
+     ayapiy+N+A+Px2Pl+Pl: [kitayapiyiwâwak, kitayapîmiwâwak]
+     
+     ayapiy+N+A+Obv: ayapiya
+     ayapiy+N+A+Px1Sg+Obv: [nitayapiya, nitayapîma]
+     ayapiy+N+A+Px2Sg+Obv: [kitayapiya, kitayapîma]
+     ayapiy+N+A+Px1Pl+Obv: [nitayapiyinâna, nitayapîminâna]
+     ayapiy+N+A+Px12Pl+Obv: [kitayapiyinawa, kitayapîminawa]
+     ayapiy+N+A+Px2Pl+Obv: [kitayapiyiwâwa, kitayapîmiwâwa]
+     ayapiy+N+A+Px3Sg+Obv: [otayapiya, otayapîma]
+     ayapiy+N+A+Px3Pl+Obv: [otayapiyiwâwa, otayapîmiwâwa]
+     ayapiy+N+A+Px4Sg+Obv: [otayapiyiyiwa, otayapîmiyiwa]
+     ayapiy+N+A+Px4Pl+Obv: [otayapiyiyiwa, otayapîmiyiwa]
+
+     ayapiy+N+A+Loc: ayapîhk
+     ayapiy+N+A+Px1Sg+Loc: [nitayapîhk, nitayapîmihk]
+     ayapiy+N+A+Px2Sg+Loc: [kitayapîhk, kitayapîmihk]
+     ayapiy+N+A+Px1Pl+Loc: [nitayapiyinâhk, nitayapîminâhk]
+     ayapiy+N+A+Px12Pl+Loc: [kitayapiyinâhk, kitayapîminâhk]
+     ayapiy+N+A+Px2Pl+Loc: [kitayapiyiwâhk, kitayapîmiwâhk]
+     ayapiy+N+A+Px3Sg+Loc: [otayapîhk, otayapîmihk]
+     ayapiy+N+A+Px3Pl+Loc: [otayapiyiwâhk, otayapîmiwâhk]
+     ayapiy+N+A+Px4Sg+Loc: [otayapiyîhk, otayapîmîhk]
+     ayapiy+N+A+Px4Pl+Loc: [otayapiyîhk, otayapîmîhk]
+
+     ayapiy+N+A+Der/Dim+N+A+Sg: ayapîs
+     ayapiy+N+A+Der/Dim+N+A+Sg: [ayapîs, ayapîsis, ayapîmis, ayapîmisis]
+     ayapiy+N+A+Der/Dim+N+A+Px1Sg+Sg: [nitayapîs, nitayapîsis, nitayapîmis, nitayapîmisis]
+     ayapiy+N+A+Der/Dim+N+A+Px2Sg+Sg: [kitayapîs, kitayapîsis, kitayapîmis, kitayapîmisis]
+     ayapiy+N+A+Der/Dim+N+A+Px1Pl+Sg: [nitayapîsinân, nitayapîsisinân, nitayapîmisinân, nitayapîmisisinân]
+     ayapiy+N+A+Der/Dim+N+A+Px12Pl+Sg: [kitayapîsinaw, kitayapîsisinaw, kitayapîmisinaw, kitayapîmisisinaw]
+     ayapiy+N+A+Der/Dim+N+A+Px2Pl+Sg: [kitayapîsiwâw, kitayapîsisiwâw, kitayapîmisiwâw, kitayapîmisisiwâw]
+
+     ayapiy+N+A+Der/Dim+N+A+Pl: [ayapîsak, ayapîsisak, ayapîmisak, ayapîmisisak]
+     ayapiy+N+A+Der/Dim+N+A+Px1Sg+Pl: [nitayapîsak, nitayapîsisak, nitayapîmisak, nitayapîmisisak]
+     ayapiy+N+A+Der/Dim+N+A+Px2Sg+Pl: [kitayapîsak, kitayapîsisak, kitayapîmisak, kitayapîmisisak]
+     ayapiy+N+A+Der/Dim+N+A+Px1Pl+Pl: [nitayapîsinânak, nitayapîsisinânak, nitayapîmisinânak, nitayapîmisisinânak]
+     ayapiy+N+A+Der/Dim+N+A+Px12Pl+Pl: [kitayapîsinawak, kitayapîsisinawak, kitayapîmisinawak, kitayapîmisisinawak]
+     ayapiy+N+A+Der/Dim+N+A+Px2Pl+Pl: [kitayapîsiwâwak, kitayapîsisiwâwak, kitayapîmisiwâwak, kitayapîmisisiwâwak]
+

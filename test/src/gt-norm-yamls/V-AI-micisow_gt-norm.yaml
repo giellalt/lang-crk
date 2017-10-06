@@ -87,8 +87,8 @@ Tests:
      mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+1Sg+3SgO: [niwîwîcimîcisomâw, niwî-wîci-mîcisomâw] # COMM SET I
      mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+2Sg+3SgO: [kiwîwîcimîcisomâw, kiwî-wîci-mîcisomâw]
      mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+1Pl+3SgO: [niwîwîcimîcisomânân, niwî-wîci-mîcisomânân]
-     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+12Pl+3SgO: [kiwîwîcimîcisomânân, kiwî-wîci-mîcisomânân]
-     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+2Pl+3SgO: [niwîwîcimîcisomâwâw niwî-wîci-mîcisomâwâw]
+     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+12Pl+3SgO: [kiwîwîcimîcisomânaw, kiwî-wîci-mîcisomânaw]
+     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+2Pl+3SgO: [kiwîwîcimîcisomâwâw, kiwî-wîci-mîcisomâwâw]
      
      mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+1Sg+3PlO: [niwîwîcimîcisomâwak, niwî-wîci-mîcisomâwak] # COMM SET I-Pl
      mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+2Sg+3PlO: [kiwîwîcimîcisomâwak, kiwî-wîci-mîcisomâwak]
@@ -97,14 +97,16 @@ Tests:
      mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+2Pl+3PlO: [kiwîwîcimîcisomâwâwak, kiwî-wîci-mîcisomâwâwak]
 
      mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+2Sg+1SgO: [kiwîwîcimîcisomin, kiwî-wîci-mîcisomin] # COMM SET II
-     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+2Sg/Pl+1PlO: [kiwîwîcimîcisominân, kiwî-wîci-mîcisominân]
+     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+2Sg+1PlO: [kiwîwîcimîcisominân, kiwî-wîci-mîcisominân]
      mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+2Pl+1SgO: [kiwîwîcimîcisominâwâw, kiwî-wîci-mîcisominâwâw]
+     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+2Pl+1PlO: [kiwîwîcimîcisominân, kiwî-wîci-mîcisominân]
 
-     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+3Sg+4Sg/PlO: [wîwîcimîcisomêw, wîci-mîcisomêw] # COMM SET III
-     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+3Pl+4Sg/PlO: [wîwîcimîcisomêwak, wîci-mîcisomêwak]
-     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+4Sg/Pl+5Sg/PlO: [wîwîcimîcisomêyiwa, wîci-mîcisomêyiwa]
-     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+3Sg+5Sg/PlO: [wîwîcimîcisomimêw, wîci-mîcisomimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
-     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+3Pl+5Sg/PlO: [wîwîcimîcisomimêwak, wîci-mîcisomimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+3Sg+4Sg/PlO: [wîwîcimîcisomêw, wî-wîci-mîcisomêw] # COMM SET III
+     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+3Pl+4Sg/PlO: [wîwîcimîcisomêwak, wî-wîci-mîcisomêwak]
+     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+4Sg/Pl+5Sg/PlO: [wîwîcimîcisomêyiwa, wî-wîci-mîcisomêyiwa]
+     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+3Sg+5Sg/PlO: [wîwîcimîcisomimêw, wî-wîci-mîcisomimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+3Pl+5Sg/PlO: [wîwîcimîcisomimêwak, wî-wîci-mîcisomimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
 
      mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+1Sg+4Sg/PlO: [niwîwîcimîcisomimâwa, niwî-wîci-mîcisomimâwa] # COMM SET IV
      mîcisow+V+AI+Der/Comm+V+TA+Ind+Fut+Int+2Sg+4Sg/PlO: [kiwîwîcimîcisomimâwa, kiwî-wîci-mîcisomimâwa]

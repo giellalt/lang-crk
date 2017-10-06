@@ -1,0 +1,53 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - kêhtê-aya - ok : # -m animate noun, elder AEW NA4, no loc.
+     kêhtê-aya+N+A+Sg: kêhtê-aya
+     kêhtê-aya+N+A+Px1Sg+Sg: nikêhtê-ayim
+     kêhtê-aya+N+A+Px2Sg+Sg: kikêhcê-ayim
+     kêhtê-aya+N+A+Px1Pl+Sg: nikêhcê-ayiminân
+     kêhtê-aya+N+A+Px12Pl+Sg: kikêhcê-ayiminaw
+     kêhtê-aya+N+A+Px2Pl+Sg: kikêhcê-ayimiwâw
+
+     kêhtê-aya+N+A+Pl: kêhtê-ayaak
+     kêhtê-aya+N+A+Px1Sg+Pl: nikêhcê-ayimak
+     kêhtê-aya+N+A+Px2Sg+Pl: kikêhcê-ayimak
+     kêhtê-aya+N+A+Px1Pl+Pl: nikêhcê-ayiminânak
+     kêhtê-aya+N+A+Px12Pl+Pl: kikêhcê-ayiminawak
+     kêhtê-aya+N+A+Px2Pl+Pl: kikêhcê-ayimiwâwak
+     
+     kêhtê-aya+N+A+Obv: kêhtê-ayaa
+     kêhtê-aya+N+A+Px1Sg+Obv: nikêhcê-ayima
+     kêhtê-aya+N+A+Px2Sg+Obv: kikêhcê-ayima
+     kêhtê-aya+N+A+Px1Pl+Obv: nikêhcê-ayiminâna
+     kêhtê-aya+N+A+Px12Pl+Obv: kikêhcê-ayiminawa
+     kêhtê-aya+N+A+Px2Pl+Obv: kikêhcê-ayimiwâwa
+     kêhtê-aya+N+A+Px3Sg+Obv: okêhcê-ayima
+     kêhtê-aya+N+A+Px3Pl+Obv: okêhcê-ayimiwâwa
+     kêhtê-aya+N+A+Px4Sg+Obv: okêhcê-ayimiyiwa
+     kêhtê-aya+N+A+Px4Pl+Obv: okêhcê-ayimiyiwa
+
+     
+     kêhtê-aya+N+A+Der/Dim+N+A+Sg: kêhtê-ayis
+     kêhtê-aya+N+A+Der/Dim+N+A+Sg: [kêhtê-ayimis, kêhtê-ayimisis]
+     kêhtê-aya+N+A+Der/Dim+N+A+Px1Sg+Sg: [nikêhcê-ayimis, nikêhcê-ayimisis]
+     kêhtê-aya+N+A+Der/Dim+N+A+Px2Sg+Sg: [kikêhcê-ayimis, kikêhcê-ayimisis]
+     kêhtê-aya+N+A+Der/Dim+N+A+Px1Pl+Sg: [nikêhcê-ayimisinân, nikêhcê-ayimisisinân]
+     kêhtê-aya+N+A+Der/Dim+N+A+Px12Pl+Sg: [kikêhcê-ayimisinaw, kikêhcê-ayimisisinaw]
+     kêhtê-aya+N+A+Der/Dim+N+A+Px2Pl+Sg: [kikêhcê-ayimisiwâw, kikêhcê-ayimisisiwâw]
+
+     kêhtê-aya+N+A+Der/Dim+N+A+Pl: [ayapîmisak, ayapîmisisak]
+     kêhtê-aya+N+A+Der/Dim+N+A+Px1Sg+Pl: [nikêhcê-ayimisak, nikêhcê-ayimisisak]
+     kêhtê-aya+N+A+Der/Dim+N+A+Px2Sg+Pl: [kikêhcê-ayimisak, kikêhcê-ayimisisak]
+     kêhtê-aya+N+A+Der/Dim+N+A+Px1Pl+Pl: [nikêhcê-ayimisinânak, nikêhcê-ayimisisinânak]
+     kêhtê-aya+N+A+Der/Dim+N+A+Px12Pl+Pl: [kikêhcê-ayimisinawak, kikêhcê-ayimisisinawak]
+     kêhtê-aya+N+A+Der/Dim+N+A+Px2Pl+Pl: [kikêhcê-ayimisiwâwak, kikêhcê-ayimisisiwâwak]
+
