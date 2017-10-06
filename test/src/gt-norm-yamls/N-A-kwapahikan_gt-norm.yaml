@@ -1,0 +1,63 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - kwâpahikan - ok : # -m animate noun, ladle	AEW NA1
+     kwâpahikan+N+A+Sg: kwâpahikan
+     kwâpahikan+N+A+Px1Sg+Sg: [nikwâpahikan, nikwâpahikanim]
+     kwâpahikan+N+A+Px2Sg+Sg: [kikwâpahikan, kikwâpahikanim]
+     kwâpahikan+N+A+Px1Pl+Sg: [nikwâpahikaninân, nikwâpahikaniminân]
+     kwâpahikan+N+A+Px12Pl+Sg: [kikwâpahikaninaw, kikwâpahikaniminaw]
+     kwâpahikan+N+A+Px2Pl+Sg: [kikwâpahikaniwâw, kikwâpahikanimiwâw]
+
+     kwâpahikan+N+A+Pl: kwâpahikanak
+     kwâpahikan+N+A+Px1Sg+Pl: [nikwâpahikanak, nikwâpahikanimak]
+     kwâpahikan+N+A+Px2Sg+Pl: [kikwâpahikanak, kikwâpahikanimak]
+     kwâpahikan+N+A+Px1Pl+Pl: [nikwâpahikaninânak, nikwâpahikaniminânak]
+     kwâpahikan+N+A+Px12Pl+Pl: [kikwâpahikaninawak, kikwâpahikaniminawak]
+     kwâpahikan+N+A+Px2Pl+Pl: [kikwâpahikaniwâwak, kikwâpahikanimiwâwak]
+     
+     kwâpahikan+N+A+Obv: kwâpahikana
+     kwâpahikan+N+A+Px1Sg+Obv: [nikwâpahikana, nikwâpahikanima]
+     kwâpahikan+N+A+Px2Sg+Obv: [kikwâpahikana, kikwâpahikanima]
+     kwâpahikan+N+A+Px1Pl+Obv: [nikwâpahikaninâna, nikwâpahikaniminâna]
+     kwâpahikan+N+A+Px12Pl+Obv: [kikwâpahikaninawa, kikwâpahikaniminawa]
+     kwâpahikan+N+A+Px2Pl+Obv: [kikwâpahikaniwâwa, kikwâpahikanimiwâwa]
+     kwâpahikan+N+A+Px3Sg+Obv: [okwâpahikana, okwâpahikanima]
+     kwâpahikan+N+A+Px3Pl+Obv: [okwâpahikaniwâwa, okwâpahikanimiwâwa]
+     kwâpahikan+N+A+Px4Sg+Obv: [okwâpahikaniyiwa, okwâpahikanimiyiwa]
+     kwâpahikan+N+A+Px4Pl+Obv: [okwâpahikaniyiwa, okwâpahikanimiyiwa]
+
+     kwâpahikan+N+A+Loc: kwâpahikanihk
+     kwâpahikan+N+A+Px1Sg+Loc: [nikwâpahikanihk, nikwâpahikanimihk]
+     kwâpahikan+N+A+Px2Sg+Loc: [kikwâpahikanihk, kikwâpahikanimihk]
+     kwâpahikan+N+A+Px1Pl+Loc: [nikwâpahikaninâhk, nikwâpahikaniminâhk]
+     kwâpahikan+N+A+Px12Pl+Loc: [kikwâpahikaninâhk, kikwâpahikaniminâhk]
+     kwâpahikan+N+A+Px2Pl+Loc: [kikwâpahikaniwâhk, kikwâpahikanimiwâhk]
+     kwâpahikan+N+A+Px3Sg+Loc: [okwâpahikanihk, okwâpahikanimihk]
+     kwâpahikan+N+A+Px3Pl+Loc: [okwâpahikaniwâhk, okwâpahikanimiwâhk]
+     kwâpahikan+N+A+Px4Sg+Loc: [okwâpahikaniyihk, okwâpahikanimiyihk]
+     kwâpahikan+N+A+Px4Pl+Loc: [okwâpahikaniyihk, okwâpahikanimiyihk]
+
+     kwâpahikan+N+A+Der/Dim+N+A+Sg: kwâpahikanis
+     kwâpahikan+N+A+Der/Dim+N+A+Sg: [kwâpahikanis, kwâpahikanisis, kwâpahikanimis, kwâpahikanimisis]
+     kwâpahikan+N+A+Der/Dim+N+A+Px1Sg+Sg: [nikwâpahikanis, nikwâpahikanisis, nikwâpahikanimis, nikwâpahikanimisis]
+     kwâpahikan+N+A+Der/Dim+N+A+Px2Sg+Sg: [kikwâpahikanis, kikwâpahikanisis, kikwâpahikanimis, kikwâpahikanimisis]
+     kwâpahikan+N+A+Der/Dim+N+A+Px1Pl+Sg: [nikwâpahikanisinân, nikwâpahikanisisinân, nikwâpahikanimisinân, nikwâpahikanimisisinân]
+     kwâpahikan+N+A+Der/Dim+N+A+Px12Pl+Sg: [kikwâpahikanisinaw, kikwâpahikanisisinaw, kikwâpahikanimisinaw, kikwâpahikanimisisinaw]
+     kwâpahikan+N+A+Der/Dim+N+A+Px2Pl+Sg: [kikwâpahikanisiwâw, kikwâpahikanisisiwâw, kikwâpahikanimisiwâw, kikwâpahikanimisisiwâw]
+
+     kwâpahikan+N+A+Der/Dim+N+A+Pl: [kwâpahikanisak, kwâpahikanisisak, kwâpahikanimisak, kwâpahikanimisisak]
+     kwâpahikan+N+A+Der/Dim+N+A+Px1Sg+Pl: [nikwâpahikanisak, nikwâpahikanisisak, nikwâpahikanimisak, nikwâpahikanimisisak]
+     kwâpahikan+N+A+Der/Dim+N+A+Px2Sg+Pl: [kikwâpahikanisak, kikwâpahikanisisak, kikwâpahikanimisak, kikwâpahikanimisisak]
+     kwâpahikan+N+A+Der/Dim+N+A+Px1Pl+Pl: [nikwâpahikanisinânak, nikwâpahikanisisinânak, nikwâpahikanimisinânak, nikwâpahikanimisisinânak]
+     kwâpahikan+N+A+Der/Dim+N+A+Px12Pl+Pl: [kikwâpahikanisinawak, kikwâpahikanisisinawak, kikwâpahikanimisinawak, kikwâpahikanimisisinawak]
+     kwâpahikan+N+A+Der/Dim+N+A+Px2Pl+Pl: [kikwâpahikanisiwâwak, kikwâpahikanisisiwâwak, kikwâpahikanimisiwâwak, kikwâpahikanimisisiwâwak]
+

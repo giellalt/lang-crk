@@ -1,0 +1,53 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - ihkwa - ok : # -m animate noun, elder AEW NA4, no loc.
+     ihkwa+N+A+Sg: ihkwa
+     ihkwa+N+A+Px1Sg+Sg: nitihkom
+     ihkwa+N+A+Px2Sg+Sg: kitihkom
+     ihkwa+N+A+Px1Pl+Sg: nitihkominân
+     ihkwa+N+A+Px12Pl+Sg: kitihkominaw
+     ihkwa+N+A+Px2Pl+Sg: kitihkomiwâw
+
+     ihkwa+N+A+Pl: ihkwak
+     ihkwa+N+A+Px1Sg+Pl: nitihkomak
+     ihkwa+N+A+Px2Sg+Pl: kitihkomak
+     ihkwa+N+A+Px1Pl+Pl: nitihkominânak
+     ihkwa+N+A+Px12Pl+Pl: kitihkominawak
+     ihkwa+N+A+Px2Pl+Pl: kitihkomiwâwak
+     
+     ihkwa+N+A+Obv: ihkwa
+     ihkwa+N+A+Px1Sg+Obv: nitihkoma
+     ihkwa+N+A+Px2Sg+Obv: kitihkoma
+     ihkwa+N+A+Px1Pl+Obv: nitihkominâna
+     ihkwa+N+A+Px12Pl+Obv: kitihkominawa
+     ihkwa+N+A+Px2Pl+Obv: kitihkomiwâwa
+     ihkwa+N+A+Px3Sg+Obv: otihkoma
+     ihkwa+N+A+Px3Pl+Obv: otihkomiwâwa
+     ihkwa+N+A+Px4Sg+Obv: otihkomiyiwa
+     ihkwa+N+A+Px4Pl+Obv: otihkomiyiwa
+
+     
+     ihkwa+N+A+Der/Dim+N+A+Sg: ihkos
+     ihkwa+N+A+Der/Dim+N+A+Sg: [ihkomis, ihkomisis]
+     ihkwa+N+A+Der/Dim+N+A+Px1Sg+Sg: [nitihkomis, nitihkomisis]
+     ihkwa+N+A+Der/Dim+N+A+Px2Sg+Sg: [kitihkomis, kitihkomisis]
+     ihkwa+N+A+Der/Dim+N+A+Px1Pl+Sg: [nitihkomisinân, nitihkomisisinân]
+     ihkwa+N+A+Der/Dim+N+A+Px12Pl+Sg: [kitihkomisinaw, kitihkomisisinaw]
+     ihkwa+N+A+Der/Dim+N+A+Px2Pl+Sg: [kitihkomisiwâw, kitihkomisisiwâw]
+
+     ihkwa+N+A+Der/Dim+N+A+Pl: [ayapîmisak, ayapîmisisak]
+     ihkwa+N+A+Der/Dim+N+A+Px1Sg+Pl: [nitihkomisak, nitihkomisisak]
+     ihkwa+N+A+Der/Dim+N+A+Px2Sg+Pl: [kitihkomisak, kitihkomisisak]
+     ihkwa+N+A+Der/Dim+N+A+Px1Pl+Pl: [nitihkomisinânak, nitihkomisisinânak]
+     ihkwa+N+A+Der/Dim+N+A+Px12Pl+Pl: [kitihkomisinawak, kitihkomisisinawak]
+     ihkwa+N+A+Der/Dim+N+A+Px2Pl+Pl: [kitihkomisiwâwak, kitihkomisisiwâwak]
+
