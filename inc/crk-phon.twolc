@@ -305,7 +305,10 @@ w:0 <=> Consonant: _ .#. ;
 
 !!€ atimw
 !!€ atim0
-! 
+
+!!€ nit2<nînihikw
+!!€ ni00nînihik
+
 ! ##diminutive sound symbolism palatalisation (requires DIM trigger?)
 ! #{t,t2} > c / _...DIM
 
@@ -756,8 +759,8 @@ s:0 <=> _ t3:s ;
 ! "t3DimRule"
 ! t3:c <= _ :* %^DIM:0 ;
 
-!!€ mi4<wat3>i2^DIMs
-!!€ mî0wac0i0s
+! !!€ mi4<wat3>i2^DIMs
+! !!€ mî0wac0i0s
 
 ! Matching weak/strong reduplication consonant placeholder %^DUPL1 with stem-initial consonant
 "ReduplCRule1"
