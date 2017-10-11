@@ -51,6 +51,8 @@ Multichar_Symbols
 
 @U.sg.I@
 @U.sg.A@
+@P.sg.I@
+@P.sg.A@
 @R.sg.I@
 @R.sg.A@
 @D.sg.I@
@@ -349,7 +351,6 @@ mitâs:tâs NAD "pair of pants" ; ! AEW NDA-1 (Consonant initial regular stem)
 môhpan:ohpan NAD "lung" ; ! AEW NDA-1 (Vowel initial regular stem) note that in 3rd person the w- does not surface
 mitihtikosiy:tihtikosiy NAD "kidney" ; ! AEW NDA-2 (Consonant initial regular VG stem) N.B. also occurs as the stems tihtikosiw and tihtikos (the latter is an NDI-1 declension)
 maskasiy:askasiy NAD "finger nail/claw" ; ! AEW NDA-2 (Vowel Initial VG stem) 
-
 ! Inanimate Dependent Noun stems
 mihtawakay:htawakay NID "ear" ;
 mispiton:spiton NID "arm" ;
@@ -373,12 +374,18 @@ LEXICON NOUN_DEP_KINSHIP_STEMS
 -îw:îw2 NAD_SG/A "wife" ; ! AEW NDA-4 (Vowel initial sing syllable NDA-4 stem). N.B. Only one of its type.
 @P.loc.NULL@-îskw:@P.loc.NULL@îskw NAD_SG/A "fellow wife; husband's ex" ; ! AEW NDA-4w (Vowel initial single-syllable-/w/ stem). N.B. Only one of its type. Cannot take the locative (marked here with a flag-diacritic, which could be incorporated in a new set of NON-LOC contlexes).
 
+LEXICON NOUN_INDEP_STEMS
+!
 ! Independent NA AEW to FST conversion
 ! NA-1, NA-2 -> NA
 ! NA-3 -> NA + stem-final -w
 ! NA-4, NA-4w -> NA_SG/A_POSS/IM -w2, y4 (immutable)
-
-LEXICON NOUN_INDEP_STEMS
+!
+! Independent NI AEW to FST conversion
+! NI-1, NI-2 -> NI
+! NI-3 -> NI + -w (stem)
+! NI-4, NI-4w -> NI_SG/I_POSS/IM, with w2, y4 for the immutable final glides
+!
 ! Animate Noun stems
 pahkwêsikan NA_POSS/IM "bannock" ; ! AEW NA-1 (Consonant-Initial Regular NA Stem)
 asikan NA "sock" ; ! AEW NA-1 (Vowel-Initial Regular NA Stem)
@@ -391,21 +398,10 @@ sihta:siht NA_SG/A_POSS/IM "spruce" ; ! AEW NA-4 (Consonant-Initial Single-Sylla
 êsa:ês NA_SG/A_POSS/IM "clam; shell" ; ! AEW NA-4 (Vowel-Initial Single-Syllable NA Stem)
 wâhkwa:wâhkw NA_SG/A_POSS/IM "roe, fish eggs; lump of roe" ; ! AEW NA-4w (Consonant-Initial Single-Syllable-/w/ NA Stem)
 ihkwa:ihkw NA_SG/A_POSS/IM "louse" ; ! AEW NA-4w (Vowel-Initial Single-Syllable-/w/ NA Stem)
-! Non-AEW test cases
+! Non-AEW NA test cases
 âmow NA_POSS/IM "bee" ;
 maskwa:maskw NA_SG/A_POSS/IM "bear" ;
 sîsîp NA_POSS/IM "duck" ;
-! Subset of lexicalized Diminutive Animate Independent stems
-@P.dim.DIM@ NOUN_INDEP_DIM_STEMS ;
-
-LEXICON NOUN_INDEP_DIM_STEMS
-acimos NA "puppy" ; !
-
-! Independent NI AEW to FST conversion
-! NI-1, NI-2 -> NI
-! NI-3 -> NI + -w (stem)
-! NI-4, NI-4w -> NI_SG/I_POSS/IM, with w2, y4 for the immutable final glides
-
 ! Inanimate Noun stems
 askiy NI "land" ;
 cîman NA "canoe" ; ! AEW NI-1 (Consonant-Initial Regular NI Stem)
@@ -417,6 +413,15 @@ askekin:askêkinw NI "fresh rawhide" ; ! AEW NI-3 (Vowel-Initial Cw NI Stem)
 wâwi:wâw2 NI_SG/I_POSS/IM "egg" ; ! AEW NI-4 (Consonant-Initial Single-Syllable NI Stem)
 osk-âyi:osk-ây4 NI_SG/I_POSS/IM "new item, new thing" ; ! AEW NI-4 (Vowel-Initial Single-Syllable NI Stem)
 mihko:mihkw NI_SG/I_POSS/IM "blood" ; ! AEW NI-4w (Consonant-Initial Single-Syllable-/w/ NI Stem)
+! Remaining example stem cases
+! atimw ! Suppletively irregular NA
+! ôsi ! AEW NI-4 (Vowel-Initial Single-Syllable irregular NI Stem)
+! Subset of lexicalized Diminutive Animate Independent stems
+@P.dim.DIM@ NOUN_INDEP_DIM_STEMS ;
+
+! Sub-continuation lexicon for lexicalized diminutive stems
+LEXICON NOUN_INDEP_DIM_STEMS
+acimos NA "puppy" ; !
 
 ! Case-specific continuation lexica for -im/0 and -is/-isis
 
