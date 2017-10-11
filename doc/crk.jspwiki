@@ -126,6 +126,9 @@ Nominal MSP
  * RdplW+  Reduplication Type 1 (Weak)
  * RdplS+  Reduplication Type 2 (Strong)
 
+ * +Der/Com  Comitative circumfix (wîci-...-m)
+ * +Der/X  VTI x-actor to VII-1
+
  * +AI       intransitive with animate subject,
  * +II       intransitive with inanimate subject,
  * +TA       transitive with animate object, and
@@ -150,6 +153,7 @@ These symbols either shape or govern the
 morphophonological structure
 
  * %> 		  suffix border
+ * %< 		  prefix border
  * +WAK  	  tag to keep track of -wak plurals
 
 
@@ -195,6 +199,7 @@ flag for each person-number combination. Note that
 for the inverse objective conjugation, the flag refers to
 the __prefix__, not to the subject. So ''indsg1'' refers to either
 subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
+
 
 
 
