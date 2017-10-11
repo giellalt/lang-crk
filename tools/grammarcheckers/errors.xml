@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE errors>
+
+<errors>
+
+  <defaults>
+    <default type="Grammar error">
+      <ids>
+        <re v="real-.*"/>
+        <e id="unreal-girjji"/>
+      </ids>
+      <header>
+        <title xml:lang="en">Real-word error</title>
+        <title xml:lang="se">Čállinmeattáhus</title>
+      </header>
+      <body>
+        <description xml:lang="en">The word "$1" exists in the dictionary, but means something different in this context.</description>
+        <description xml:lang="se">"$1" maŋis galggašii leat blah</description>
+      </body>
+    </default>
+
+    <default type="Grammar error">
+      <ids>
+        <e id="default"/>
+      </ids>
+      <header>
+        <title xml:lang="en">Grammar error</title>
+        <title xml:lang="se">Čállinmeattáhus</title>
+      </header>
+      <body>
+        <description xml:lang="en">The word "$1" exists in the dictionary, but means something different in this context.</description>
+        <description xml:lang="se">"$1" maŋis galggašii leat blah</description>
+      </body>
+    </default>
+  </defaults>
+
+  <error id="real-override">
+    <header>
+      <title xml:lang="en">cake instead of cheese</title>
+      <title xml:lang="se">gáhkku iige vuostá</title>
+    </header>
+    <body>
+      <description xml:lang="en">this should be "cake" instead of "cheese"</description>
+      <description xml:lang="se">galggašii leat "gáhkku" iige "vuostá"</description>
+    </body>
+  </error>
+
+  <error id="msyn-valency-ill">
+    <header>
+      <title xml:lang="en">illative instead of accusative</title>
+      <title xml:lang="se">illatiiva iige akkusatiiva</title>
+      <references> <ref n=""/></references>
+    </header>
+    <body>
+      <description xml:lang="en">illative instead of accusative</description>
+      <description xml:lang="se">illatiiva iige akkusatiiva</description>
+    <examples>
+      <ex xml:lang="se">Hui ollu liikon {bohccobierggu} ja {goikebierggu}.</ex>
+    </examples>
+    </body>
+  </error>
+
+
+  <error id="msyn-valency-acc">
+    <header>
+      <title xml:lang="en">accusative instead of nominative</title>
+      <title xml:lang="se">akkusatiiva iige nominatiiva</title>
+      <references> <ref n=""/></references>
+    </header>
+    <body>
+      <description xml:lang="en">accusative instead of nominative</description>
+      <description xml:lang="se">illatiiva iige nominatiiva</description>
+    <examples>
+      <ex xml:lang="se">Mun čálán {reive}.</ex>
+    </examples>
+    </body>
+  </error>
+
+  <error id="msyn-valency-loc-com">
+    <header>
+      <title xml:lang="en">msyn thing</title>
+      <title xml:lang="se">msyn thingy</title>
+      <references><ref n=""/></references>
+    </header>
+    <body>
+      <description xml:lang="en">wrong word</description>
+      <description xml:lang="se">boasttut sátni</description>
+    <examples>
+      <ex xml:lang="se">Ovdalgihtiigeassima sierra máksingoartta ferte álohii atnit go máksá boastagiro dahje báŋku {badjel}.</ex>
+    </examples>
+    </body>
+  </error>
+
+  <error id="lex-bokte-not-badjel">
+    <header>
+      <title xml:lang="en">"bokte" not "badjel"</title>
+      <title xml:lang="se">"bokte" iige "badjel"</title>
+      <references><ref n=""/></references>
+    </header>
+    <body>
+      <description xml:lang="en">wrong word</description>
+      <description xml:lang="se">boasttut sátni</description>
+    <examples>
+      <ex xml:lang="se">Ovdalgihtiigeassima sierra máksingoartta ferte álohii atnit go máksá boastagiro dahje báŋku {badjel}.</ex>
+    </examples>
+    </body>
+  </error>
+
+  <error id="syn-pred-not-attr-msg">
+    <header>
+      <title xml:lang="se">«$1» ja «$2» leaba blah</title>
+    </header>
+    <body>
+      <description xml:lang="se">Predicative, iige attributive – «$1» ja «$2» leaba blah</description>
+    </body>
+  </error>
+
+  <error id="msyn-valency-go-inf">
+    <header>
+      <title xml:lang="en">Try a subclause with <em>go</em> instead of illative</title>
+      <title xml:lang="se">Iskka<em>go</em>-oalgecealkaga iige infinitiiva</title>
+      <references> <ref n=""/></references>
+    </header>
+    <body>
+      <description xml:lang="en"><em>go</em> instead of illative</description>
+      <description xml:lang="se"><em>go</em> iige infinitiiva</description>
+    <examples>
+      <ex xml:lang="se">Soai leaigga sihke dolkan ja suhttan gullat olbmuid šláddariid sudno birra, ja bovdiiga.</ex>
+    </examples>
+    </body>
+  </error>
+
+</errors>
