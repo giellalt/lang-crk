@@ -1,118 +1,6 @@
 ! noun-an-affixes.lexc
 
-Multichar_Symbols
-
-+N
-+A
-+I
-+D
-
-+Sg
-+Pl
-+Obv
-+Loc
-+Distr
-
-+Der/Dim
-
-+Px1Sg
-+Px2Sg
-+Px3Sg
-+Px1Pl
-+Px21Pl
-+Px2Pl
-+Px3Pl
-+Px4Sg/Pl
-+PxX
-
-! Marking the continuation of Dependent noun status for Derived Diminutive nouns
-@P.dep.DEP@
-@R.dep.DEP@
-@D.dep.DEP@
-
-@U.person.NI@
-@P.person.NI@
-@R.person.NI@
-@U.person.KI@
-@P.person.KI@
-@R.person.KI@
-@U.person.O@
-@P.person.O@
-@R.person.O@
-@D.person.O@
-@U.person.MI@
-@P.person.MI@
-@R.person.MI@
-@D.person.MI@
-@U.person.NULL@
-@P.person.NULL@
-@R.person.NULL@
-@D.person.NULL@
-
-@U.sg.I@
-@U.sg.A@
-@P.sg.I@
-@P.sg.A@
-@R.sg.I@
-@R.sg.A@
-@D.sg.I@
-@D.sg.I@
-@D.sg@
-@C.sg@
-
-@P.number.SG@
-@D.number.SG@
-@P.number.PL@
-@D.number.PL@
-
-@U.poss.IM@
-@P.poss.IM@
-@R.poss.IM@
-@D.poss.IM@
-@U.poss.NULL@
-@P.poss.NULL@
-@R.poss.NULL@
-@D.poss.NULL@
-@U.poss.PL@
-@R.poss.PL@
-@D.poss.PL@
-@D.poss@
-
-! Marking diminutive suffix type, when only one is possible
-! Otherwise, both diminutives are generated/accepted
-@U.is.IS@
-@P.is.IS@
-@R.is.IS@
-@D.is.IS@
-@U.isis.ISIS@
-@P.isis.ISIS@
-@R.isis.ISIS@
-@D.isis.ISIS@
-
-! Marking lexicalized diminutive stems so that they cannot be rediminutivized
-@P.dim.DIM@
-@R.dim.DIM@
-@D.dim@
-
-! Marking animate nouns that cannot take the locative suffix
-@P.loc.NULL@
-@D.loc.NULL@
-
-! Special characters for matching TWOLC  morphonological rules 
-i2
-i4
-t2
-t3
-w2
-w3
-y4
-%<
-%>
-
-%^DIM
-
-LEXICON Root
-NOUN_PREFIXES ;
+! Noun affixes
 
 LEXICON NOUN_PREFIXES
 NOUN_INDEP_PREFIXES ;
@@ -344,84 +232,39 @@ LEXICON NI_NUMBER_SUFFIXES_SG
 ! LEXICON NA_0
 ! @P.poss.NULL@@P.is.IS@@P.isis.ISIS@ NA ;
 
-LEXICON NOUN_DEP_NONKINSHIP_STEMS
-! Animate Dependent Noun stems
-masakay:asakay NAD "skin" ;
-mitâs:tâs NAD "pair of pants" ; ! AEW NDA-1 (Consonant initial regular stem)
-môhpan:ohpan NAD "lung" ; ! AEW NDA-1 (Vowel initial regular stem) note that in 3rd person the w- does not surface
-mitihtikosiy:tihtikosiy NAD "kidney" ; ! AEW NDA-2 (Consonant initial regular VG stem) N.B. also occurs as the stems tihtikosiw and tihtikos (the latter is an NDI-1 declension)
-maskasiy:askasiy NAD "finger nail/claw" ; ! AEW NDA-2 (Vowel Initial VG stem) 
-! Inanimate Dependent Noun stems
-mihtawakay:htawakay NID "ear" ;
-mispiton:spiton NID "arm" ;
-miyaw:iyaw2 NID ;
-mitêh:têh NID "heart" ; ! AEW NDI-1 (Consonant Initial Regular stem)
-mîpit:îpit NID "tooth" ; ! AEW NDI-1 (Vowel Initial Regular stem)
-miskotâkay:skotâkay NID "coat/dress" ; ! AEW NDI-2 (Consonant Initial VW stem)
-mêstakay:êstakay NID "hair" ; ! AEW NDI-1 (Vowel Initial VW stem)
-miskîsik:skîsikw NID "eye" ; ! AEW NDI-3 (Consonant Initial Cw stem)
-mayakask:ayakaskw NID "palate" ; ! AEW NDI-3 (Vowel Initial Cw stem)
-mîwas:îwat3 NID "sacred bundle" ; ! AEW NID Irregular(?) VW single-syllable stem. N.B. T->s when word final.
-mîki:îk NID_SG/I "home" ; ! AEW NDI-4 (Vowel Initial Single Syllable NDI-4 stem) N.B. Doesn't usually work unpossessed or plural unless distributive.
-@P.number.SG@mîni:@P.number.SG@în NID_SG/I "bone-marrow" ; ! AEW NDI-4 (Vowel Initial Single Syllable NDI-4 stem) N.B. might cause issue with <î>, also is a mass noun that is never plural.
 
-LEXICON NOUN_DEP_KINSHIP_STEMS
--ohkom:ohkom NAD "grand-mother" ;
--ôhtawiy:ôhtawiy NAD "father" ;
--tânis:tânis NAD "daughter, brother, sister" ;
--nîkihik:nîkihikw NAD "parent" ; ! AEW NDA-3 (Consonant initial Vw stem) Deal later: can also be the stem <wiyihkw> or <iyihkw>. <wiyihkw> and <iyihkw> can occur in locative. The <nîkihik> can not.
--îtim:îtimw NAD "cross-cousin of opposite gender" ; ! AEW NDA-3 (Cowel initial Vw stem).
--îw:îw2 NAD_SG/A "wife" ; ! AEW NDA-4 (Vowel initial sing syllable NDA-4 stem). N.B. Only one of its type.
-@P.loc.NULL@-îskw:@P.loc.NULL@îskw NAD_SG/A "fellow wife; husband's ex" ; ! AEW NDA-4w (Vowel initial single-syllable-/w/ stem). N.B. Only one of its type. Cannot take the locative (marked here with a flag-diacritic, which could be incorporated in a new set of NON-LOC contlexes).
+LEXICON NOUN_IRREGULARS
+! Irregular forms of ôsi
+ôsi+N+I+Px1Sg:nitôt OSI_SUFFIXES ;
+ôsi+N+I+Px2Sg:kitôt OSI_SUFFIXES ;
+ôsi+N+I+Px3Sg:otôt OSI_SUFFIXES ;
+ôsi+N+I+Px1Pl:nitôtinân OSI_SUFFIXES ;
+ôsi+N+I+Px12Pl:kitôtinaw OSI_SUFFIXES ;
+ôsi+N+I+Px2Pl:kitôtiwâw OSI_SUFFIXES ;
+ôsi+N+I+Px3Pl:otôtiwâw OSI_SUFFIXES ;
+ôsi+N+I+Px4Sg/Pl:otôtiyiw OSI_SUFFIXES ;
+! Locative combos
+ôsi+N+I+Px1Sg+Loc:nitôtihk # ;
+ôsi+N+I+Px2Sg+Loc:kitôtihk # ;
+ôsi+N+I+Px3Sg+Loc:otôtihk # ;
+ôsi+N+I+Px1Pl+Loc:nitôtinâhk # ;
+ôsi+N+I+Px12Pl+Loc:kitôtinâhk # ;
+ôsi+N+I+Px2Pl+Loc:kitôtiwâhk # ;
+ôsi+N+I+Px3Pl+Loc:otôtiwâhk # ;
+ôsi+N+I+Px4Sg/Pl+Loc:otôtiyihk # ;
+! Regular form of atim, that cannot be possessed
+atim+N+A+Sg:atim # ;
+atim+N+A+Pl:atimwak # ;
+atim+N+A+Obv:atimwa # ;
+atim+N+A+Loc:atimohk # ;
+! Possessed atim forms
+@P.person.NI@atim+N+A:@P.person.NI@nitêm NA_DIM_SUFFIXES ;
+@P.person.KI@atim+N+A:@P.person.KI@kitêm NA_DIM_SUFFIXES ;
+@P.person.O@atim+N+A:@P.person.O@otêm NA_DIM_SUFFIXES ;
 
-LEXICON NOUN_INDEP_STEMS
-!
-! Independent NA AEW to FST conversion
-! NA-1, NA-2 -> NA
-! NA-3 -> NA + stem-final -w
-! NA-4, NA-4w -> NA_SG/A_POSS/IM -w2, y4 (immutable)
-!
-! Independent NI AEW to FST conversion
-! NI-1, NI-2 -> NI
-! NI-3 -> NI + -w (stem)
-! NI-4, NI-4w -> NI_SG/I_POSS/IM, with w2, y4 for the immutable final glides
-!
-! Animate Noun stems
-pahkwêsikan NA_POSS/IM "bannock" ; ! AEW NA-1 (Consonant-Initial Regular NA Stem)
-asikan NA "sock" ; ! AEW NA-1 (Vowel-Initial Regular NA Stem)
-kihc-ôkiniy NA "tomato" ; ! AEW NA-2 (Consonant-Initial Vowel-Glide NA Stem)
-ayapiy NA "net" ; ! AEW NA-2 (Vowel-Initial Vowel-Glide NA Stem)
-masinahikanâhtik:masinahikanâhtikw NA "pencil" ; ! AEW NA-3 (Consonant-Initial Consonant-/w/ NA Stem)
-askihk:askihkw NA_POSS/IM "kettle, pail" ; ! AEW NA-3 (Vowel-Initial Consonant-/w/ NA Stem)
-niska:nisk NA_SG/A_POSS/IM "goose" ; ! AEW NA-4 (Consonant-Initial Single-Syllable NA Stem)
-sihta:siht NA_SG/A_POSS/IM "spruce" ; ! AEW NA-4 (Consonant-Initial Single-Syllable NA Stem)
-êsa:ês NA_SG/A_POSS/IM "clam; shell" ; ! AEW NA-4 (Vowel-Initial Single-Syllable NA Stem)
-wâhkwa:wâhkw NA_SG/A_POSS/IM "roe, fish eggs; lump of roe" ; ! AEW NA-4w (Consonant-Initial Single-Syllable-/w/ NA Stem)
-ihkwa:ihkw NA_SG/A_POSS/IM "louse" ; ! AEW NA-4w (Vowel-Initial Single-Syllable-/w/ NA Stem)
-! Non-AEW NA test cases
-âmow NA_POSS/IM "bee" ;
-maskwa:maskw NA_SG/A_POSS/IM "bear" ;
-sîsîp NA_POSS/IM "duck" ;
-! Inanimate Noun stems
-askiy NI "land" ;
-cîman NA "canoe" ; ! AEW NI-1 (Consonant-Initial Regular NI Stem)
-astotin NI "hat" ; ! AEW NI-1 (Vowel-Initial Regular NI Stem)
-mîkisasâkay NI "beaded coat, beaded dress" ; ! AEW NI-2 (Consonant-Initial VW NI Stem)
-oskasâkay NI "new coat, new dress" ; ! AEW NI-2 (Vowel-Initial VW NI Stem)
-pahkêkin:pahkêkinw NI "leather, rawhide" ; ! AEW NI-3 (Consonant-Initial Cw NI Stem)
-askekin:askêkinw NI "fresh rawhide" ; ! AEW NI-3 (Vowel-Initial Cw NI Stem)
-wâwi:wâw2 NI_SG/I_POSS/IM "egg" ; ! AEW NI-4 (Consonant-Initial Single-Syllable NI Stem)
-osk-âyi:osk-ây4 NI_SG/I_POSS/IM "new item, new thing" ; ! AEW NI-4 (Vowel-Initial Single-Syllable NI Stem)
-mihko:mihkw NI_SG/I_POSS/IM "blood" ; ! AEW NI-4w (Consonant-Initial Single-Syllable-/w/ NI Stem)
-! Remaining example stem cases
-! atimw ! Suppletively irregular NA
-! ôsi ! AEW NI-4 (Vowel-Initial Single-Syllable irregular NI Stem)
-! Subset of lexicalized Diminutive Animate Independent stems
-@P.dim.DIM@ NOUN_INDEP_DIM_STEMS ;
-
-! Sub-continuation lexicon for lexicalized diminutive stems
-LEXICON NOUN_INDEP_DIM_STEMS
-acimos NA "puppy" ; !
+LEXICON OSI_SUFFIXES
++Sg:0 # ;
++Pl:a # ;
 
 ! Case-specific continuation lexica for -im/0 and -is/-isis
 
