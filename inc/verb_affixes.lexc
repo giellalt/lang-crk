@@ -440,7 +440,7 @@ LEXICON VIIw !!= @CODE@
 +V+II:  VIIw_SGPL_WICI ;
 
 LEXICON VIIw_SG !!= @CODE@  
-+V+II:  VIIw_SGPL_WICI ;
++V+II:  VIIw_SG_WICI ;
 
 LEXICON VIIn_PL !!= @CODE@  NO LONGER NEEDED FROM AROK
 +V+II: VIIn_PL_WICI ;	   !! NO LONGER NEEDED FROM AROK
@@ -455,13 +455,13 @@ LEXICON VIIn_PL !!= @CODE@  NO LONGER NEEDED FROM AROK
 ! ===========================================================
 
 LEXICON VIIw_SGPL_WICI !!!! 
-@U.wici.NULL@ VIIn_SGPL_ORDER ;
+@U.wici.NULL@ VIIw_SGPL_ORDER ;
 
 LEXICON VIIw_SG_WICI !!!! 
-@U.wici.NULL@ VIIn_SG_ORDER ;
+@U.wici.NULL@ VIIw_SG_ORDER ;
 
 LEXICON VIIw_PL_WICI !!!! 
-@U.wici.NULL@ VIIn_PL_ORDER ;
+@U.wici.NULL@ VIIw_PL_ORDER ;
 
 !! LEXICON VIIw_PL_WICI !!!! 	 NO LONGER NEEDED FROM AROK
 !! @U.wici.NULL@ VIIw_PL_ORDER ; NO LONGER NEEDED FROM AROK
@@ -473,10 +473,10 @@ LEXICON VIIw_PL_WICI !!!!
 ! ===========================================================
 
 LEXICON VIIn_SGPL_WICI !!!! 
-@U.wici.NULL@ VIIw_SGPL_ORDER ;
+@U.wici.NULL@ VIIn_SGPL_ORDER ;
 
 LEXICON VIIn_SG_WICI !!!! 
-@U.wici.NULL@ VIIw_SG_ORDER ;
+@U.wici.NULL@ VIIn_SG_ORDER ;
 
 !! LEXICON VIIw_PL_WICI !!!! 
 !! @U.wici.NULL@ VIIw_PL_ORDER ;
