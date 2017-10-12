@@ -424,7 +424,7 @@ LEXICON WICI
 
 !!! STEM CLASS
 
-LEXICON VIIn_SGPL !!= @CODE@  
+LEXICON VIIn !!= @CODE@  
 +V+II:  VIIn_SGPL_WICI ;
 
 LEXICON VIIn_SG !!= @CODE@  
@@ -436,14 +436,14 @@ LEXICON VIIw_PL !!= @CODE@
 !! LEXICON VIIw_PL !!= @CODE@  NO LONGER NEEDED FROM AROK
 !! +V+II: VIIw_PL_WICI ;	   NO LONGER NEEDED FROM AROK
 
-LEXICON VIIw_SGPL !!= @CODE@  
+LEXICON VIIw !!= @CODE@  
 +V+II:  VIIw_SGPL_WICI ;
 
 LEXICON VIIw_SG !!= @CODE@  
 +V+II:  VIIw_SGPL_WICI ;
 
-!! LEXICON VIIn_PL !!= @CODE@  NO LONGER NEEDED FROM AROK
-!! +V+II: VIIn_PL_WICI ;	   NO LONGER NEEDED FROM AROK
+LEXICON VIIn_PL !!= @CODE@  NO LONGER NEEDED FROM AROK
++V+II: VIIn_PL_WICI ;	   !! NO LONGER NEEDED FROM AROK
 
 !!! WICI 
 !!!NOTE: II do not take this morpheme, so all forms should be null flagged.
@@ -454,13 +454,13 @@ LEXICON VIIw_SG !!= @CODE@
 ! ===========================================================
 ! ===========================================================
 
-LEXICON VIIn_SGPL_WICI !!!! 
+LEXICON VIIw_SGPL_WICI !!!! 
 @U.wici.NULL@ VIIn_SGPL_ORDER ;
 
-LEXICON VIIn_SG_WICI !!!! 
+LEXICON VIIw_SG_WICI !!!! 
 @U.wici.NULL@ VIIn_SG_ORDER ;
 
-LEXICON VIIn_PL_WICI !!!! 
+LEXICON VIIw_PL_WICI !!!! 
 @U.wici.NULL@ VIIn_PL_ORDER ;
 
 !! LEXICON VIIw_PL_WICI !!!! 	 NO LONGER NEEDED FROM AROK
@@ -472,17 +472,17 @@ LEXICON VIIn_PL_WICI !!!!
 ! ===========================================================
 ! ===========================================================
 
-LEXICON VIIw_SGPL_WICI !!!! 
+LEXICON VIIn_SGPL_WICI !!!! 
 @U.wici.NULL@ VIIw_SGPL_ORDER ;
 
-LEXICON VIIw_SG_WICI !!!! 
+LEXICON VIIn_SG_WICI !!!! 
 @U.wici.NULL@ VIIw_SG_ORDER ;
 
-LEXICON VIIw_PL_WICI !!!! 
-@U.wici.NULL@ VIIw_PL_ORDER ;
+!! LEXICON VIIw_PL_WICI !!!! 
+!! @U.wici.NULL@ VIIw_PL_ORDER ;
 
-!! LEXICON VIIn_PL_WICI !!!! 	 NO LONGER NEEDED FROM AROK
-!! @U.wici.NULL@ VIIn_PL_ORDER ; NO LONGER NEEDED FROM AROK
+LEXICON VIIn_PL_WICI !!!! 	 NO LONGER NEEDED FROM AROK
+@U.wici.NULL@ VIIn_PL_ORDER ; !!!! NO LONGER NEEDED FROM AROK
 
 !!! ORDERS
 
@@ -492,24 +492,24 @@ LEXICON VIIw_PL_WICI !!!!
 ! ===========================================================
 ! ===========================================================
 
-LEXICON VIIn_SGPL_ORDER !!= @CODE@ 
-@U.order.indep@+Ind:@U.order.indep@ VIIn_SGPL_IND_TENSE ;
-@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_SGPL_CNJ_TENSE ;
-@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIn_SGPL_FUT_CON_PERSON ;
+LEXICON VIIw_SGPL_ORDER !!= @CODE@ 
+@U.order.indep@+Ind:@U.order.indep@ VIIw_SGPL_IND_TENSE ;
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_SGPL_CNJ_TENSE ;
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_SGPL_FUT_CON_PERSON ;
 
 ! @U.order.indep@+Ind:@U.order.indep@ VIIw_IND_TENSE ; !
 ! @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_CNJ_TENSE ; !
 ! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_FUT_CON_PERSON ;!
 
-LEXICON VIIn_SG_ORDER !!= @CODE@ singular only
-@U.order.indep@+Ind:@U.order.indep@  VIIn_SG_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_SG_CNJ_TENSE ; !
-@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIn_SG_FUT_CON_PERSON ;!
+LEXICON VIIw_SG_ORDER !!= @CODE@ singular only
+@U.order.indep@+Ind:@U.order.indep@  VIIw_SG_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_SG_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_SG_FUT_CON_PERSON ;!
 
-LEXICON VIIn_PL_ORDER !!= @CODE@ singular only
-@U.order.indep@+Ind:@U.order.indep@  VIIn_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_PL_CNJ_TENSE ; !
-@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIn_PL_FUT_CON_PERSON ;!
+LEXICON VIIw_PL_ORDER !!= @CODE@ singular only
+@U.order.indep@+Ind:@U.order.indep@  VIIw_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_PL_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_PL_FUT_CON_PERSON ;!
 
 !! LEXICON VIIw_PL_ORDER !!= @CODE@ plural only 
 !! @U.order.indep@+Ind:@U.order.indep@ VIIw_PL_IND_TENSE ; !
@@ -522,26 +522,76 @@ LEXICON VIIn_PL_ORDER !!= @CODE@ singular only
 ! ===========================================================
 ! ===========================================================
 
-LEXICON VIIw_SGPL_ORDER !!= @CODE@ 
-@U.order.indep@+Ind:@U.order.indep@ VIIw_SGPL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_SGPL_CNJ_TENSE ; !
-@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_SGPL_FUT_CON_PERSON ;!
+LEXICON VIIn_SGPL_ORDER !!= @CODE@ 
+@U.order.indep@+Ind:@U.order.indep@ VIIn_SGPL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_SGPL_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIn_SGPL_FUT_CON_PERSON ;!
 
-LEXICON VIIw_SG_ORDER !!= @CODE@ singular only
-@U.order.indep@+Ind:@U.order.indep@ VIIw_SG_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_SG_CNJ_TENSE ; !
-@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_SG_FUT_CON_PERSON ;!
+LEXICON VIIn_SG_ORDER !!= @CODE@ singular only
+@U.order.indep@+Ind:@U.order.indep@ VIIn_SG_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_SG_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIn_SG_FUT_CON_PERSON ;!
 
-!! LEXICON VIIn_PL_ORDER !!= @CODE@ plural only
-!!@U.order.indep@+Ind:@U.order.indep@ VIIn_PL_IND_TENSE ; !
-!!@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_PL_CNJ_TENSE ; !
-!!@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIn_PL_FUT_CON_PERSON ;!
+LEXICON VIIn_PL_ORDER !!= @CODE@ plural only
+@U.order.indep@+Ind:@U.order.indep@ VIIn_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_PL_CNJ_TENSE ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIn_PL_FUT_CON_PERSON ;!
 
 !!! TENSES
 
 ! ===========================================================
 ! ===========================================================
 !!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VIIw_SGPL_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_SGPL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_SGPL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_SGPL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_SGPL_IND_PERSON ; !
+
+LEXICON VIIw_SGPL_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_SGPL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_SGPL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_SGPL_CNJ_PERSON ; !
+
+LEXICON VIIw_SG_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_SG_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_SG_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_SG_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_SG_IND_PERSON ; !
+
+LEXICON VIIw_SG_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_SG_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_SG_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_SG_CNJ_PERSON ; !
+
+LEXICON VIIw_PL_IND_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_IND_PERSON ; !
+
+LEXICON VIIw_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_CNJ_PERSON ; !
+
+!! LEXICON VIIw_PL_IND_TENSE !!= @CODE@ plural only
+!! @U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_IND_PERSON ; !
+!! @U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_IND_PERSON ; !
+!! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_PL_IND_PERSON ; !
+!! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_IND_PERSON ; !
+!! 
+!! LEXICON VIIw_PL_CNJ_TENSE !!= @CODE@ plural only
+!! @U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_CNJ_PERSON ; !
+!! @U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_CNJ_PERSON ; !
+!! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_CNJ_PERSON ; !
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
 ! ===========================================================
 ! ===========================================================
 
@@ -578,61 +628,53 @@ LEXICON VIIn_PL_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.Prt@+Prt:@U.tense.Prt@ VIIn_PL_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIn_PL_CNJ_PERSON ; !
 
-!! LEXICON VIIw_PL_IND_TENSE !!= @CODE@ plural only
-!! @U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_IND_PERSON ; !
-!! @U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_IND_PERSON ; !
-!! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_PL_IND_PERSON ; !
-!! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_IND_PERSON ; !
-!! 
-!! LEXICON VIIw_PL_CNJ_TENSE !!= @CODE@ plural only
-!! @U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_CNJ_PERSON ; !
-!! @U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_CNJ_PERSON ; !
-!! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_CNJ_PERSON ; !
-
-! ===========================================================
-! ===========================================================
-!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
-! ===========================================================
-! ===========================================================
-
-LEXICON VIIw_SGPL_IND_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_SGPL_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_SGPL_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_SGPL_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_SGPL_IND_PERSON ; !
-
-LEXICON VIIw_SGPL_CNJ_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_SGPL_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_SGPL_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_SGPL_CNJ_PERSON ; !
-
-LEXICON VIIw_SG_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_SG_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_SG_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_SG_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_SG_IND_PERSON ; !
-
-LEXICON VIIw_SG_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_SG_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_SG_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_SG_CNJ_PERSON ; !
-
-!! LEXICON VIIn_PL_IND_TENSE !!= @CODE@ plural only
-!! @U.tense.Prs@+Prs:@U.tense.Prs@ VIIn_PL_IND_PERSON ; !
-!! @U.tense.Prt@+Prt:@U.tense.Prt@ VIIn_PL_IND_PERSON ; !
-!! @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIn_PL_IND_PERSON ; !
-!! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIn_PL_IND_PERSON ; !
-!! 
-!! LEXICON VIIn_PL_CNJ_TENSE !!= @CODE@ plural only
-!! @U.tense.Prs@+Prs:@U.tense.Prs@ VIIn_PL_CNJ_PERSON ; !
-!! @U.tense.Prt@+Prt:@U.tense.Prt@ VIIn_PL_CNJ_PERSON ; !
-!! @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIn_PL_CNJ_PERSON ; !
-
 !!! PERSON
 
 ! ===========================================================
 ! ===========================================================
 !!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VIIw_SGPL_IND_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_SGPL_IND_NULL ;
+
+LEXICON VIIw_SGPL_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_SGPL_CNJ_NULL ;
+
+LEXICON VIIw_SGPL_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_SGPL_FUT_CON_NULL ;
+
+LEXICON VIIw_SG_IND_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_SG_IND_SUFFIX ;
+
+LEXICON VIIw_SG_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_SG_CNJ_SUFFIX ;
+
+LEXICON VIIw_SG_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_SG_FUT_CON_SUFFIX ;
+
+LEXICON VIIw_PL_IND_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_PL_IND_SUFFIX ;
+
+LEXICON VIIw_PL_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_PL_CNJ_SUFFIX ;
+
+LEXICON VIIw_PL_FUT_CON_PERSON !!= @CODE@ 
+@U.person.NULL@ VIIw_PL_FUT_CON_SUFFIX ;
+
+!! LEXICON VIIw_PL_IND_PERSON !!= @CODE@ plural only
+!! @U.person.NULL@ VIIw_IND_PL_SUFFIX ;
+!! 
+!! LEXICON VIIw_PL_CNJ_PERSON !!= @CODE@ plural only
+!! @U.person.NULL@ VIIw_CNJ_PL_SUFFIX ;
+!! 
+!! LEXICON VIIw_PL_FUT_CON_PERSON !!= @CODE@ plural only
+!! @U.person.NULL@ VIIw_FUT_CON_PL_SUFFIX ;
+
+! ===========================================================
+! ===========================================================
+!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
 ! ===========================================================
 ! ===========================================================
 
@@ -654,56 +696,14 @@ LEXICON VIIn_SG_CNJ_PERSON !!= @CODE@
 LEXICON VIIn_SG_FUT_CON_PERSON !!= @CODE@ 
 @U.person.NULL@ VIIn_SG_FUT_CON_SUFFIX ;
 
-LEXICON VIIn_PL_IND_PERSON !!= @CODE@ 
+LEXICON VIIn_PL_IND_PERSON !!= @CODE@ plural only
 @U.person.NULL@ VIIn_PL_IND_SUFFIX ;
 
-LEXICON VIIn_PL_CNJ_PERSON !!= @CODE@ 
+LEXICON VIIn_PL_CNJ_PERSON !!= @CODE@ plural only
 @U.person.NULL@ VIIn_PL_CNJ_SUFFIX ;
 
-LEXICON VIIn_PL_FUT_CON_PERSON !!= @CODE@ 
+LEXICON VIIn_PL_FUT_CON_PERSON !!= @CODE@ plural only
 @U.person.NULL@ VIIn_PL_FUT_CON_SUFFIX ;
-
-!! LEXICON VIIw_PL_IND_PERSON !!= @CODE@ plural only
-!! @U.person.NULL@ VIIw_IND_PL_SUFFIX ;
-!! 
-!! LEXICON VIIw_PL_CNJ_PERSON !!= @CODE@ plural only
-!! @U.person.NULL@ VIIw_CNJ_PL_SUFFIX ;
-!! 
-!! LEXICON VIIw_PL_FUT_CON_PERSON !!= @CODE@ plural only
-!! @U.person.NULL@ VIIw_FUT_CON_PL_SUFFIX ;
-
-! ===========================================================
-! ===========================================================
-!!!!! -n final verbs (refers to the 3 SG form ending) !!!!!
-! ===========================================================
-! ===========================================================
-
-LEXICON VIIw_SGPL_IND_PERSON !!= @CODE@ 
-@U.person.NULL@ VIIw_SGPL_IND_SUFFIX ;
-
-LEXICON VIIw_SGPL_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ VIIw_SGPL_CNJ_SUFFIX ;
-
-LEXICON VIIw_SGPL_FUT_CON_PERSON !!= @CODE@ 
-@U.person.NULL@ VIIw_SGPL_FUT_CON_SUFFIX ;
-
-LEXICON VIIw_SG_IND_PERSON !!= @CODE@ 
-@U.person.NULL@ VIIw_SG_IND_SUFFIX ;
-
-LEXICON VIIw_SG_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ VIIw_SG_CNJ_SUFFIX ;
-
-LEXICON VIIw_SG_FUT_CON_PERSON !!= @CODE@ 
-@U.person.NULL@ VIIw_SG_FUT_CON_SUFFIX ;
-
-!! LEXICON VIIn_PL_IND_PERSON !!= @CODE@ plural only
-!! @U.person.NULL@ VIIn_IND_PL_SUFFIX ;
-!! 
-!! LEXICON VIIn_PL_CNJ_PERSON !!= @CODE@ plural only
-!! @U.person.NULL@ VIIn_CNJ_PL_SUFFIX ;
-!! 
-!! LEXICON VIIn_PL_FUT_CON_PERSON !!= @CODE@ plural only
-!! @U.person.NULL@ VIIn_FUT_CON_PL_SUFFIX ;
 
 !!! SUFFIXES
 
@@ -720,13 +720,13 @@ LEXICON VIIw_SG_FUT_CON_PERSON !!= @CODE@
 
 LEXICON VIIn_SGPL_IND_NULL !!= @CODE@
 VIIn_SG_IND_SUFFIX ;
-VIIn_Pl_IND_SUFFIX ;
+VIIn_PL_IND_SUFFIX ;
 
 LEXICON VIIn_SG_IND_SUFFIX   !!= @CODE@ singular
 +3Sg:%>w VERB_ENDLEX ;
 +4Sg:%>yiw VERB_ENDLEX ;
 
-LEXICON VIIn_Pl_IND_SUFFIX  !!= @CODE@ plural
+LEXICON VIIn_PL_IND_SUFFIX  !!= @CODE@ plural
 +3Pl:%>wa VERB_ENDLEX ;
 +4Pl:%>yiwa VERB_ENDLEX ;
 
@@ -739,7 +739,7 @@ LEXICON VIIn_Pl_IND_SUFFIX  !!= @CODE@ plural
 
 LEXICON VIIw_SGPL_IND_NULL !!= @CODE@
 VIIw_SG_IND_SUFFIX ;
-VIIw_Pl_IND_SUFFIX ;
+VIIw_PL_IND_SUFFIX ;
 
 LEXICON VIIw_SG_IND_SUFFIX   !!= @CODE@ w final singular
 +3Sg:%>0 VERB_ENDLEX ;
@@ -881,11 +881,11 @@ LEXICON VAIw_PL_WICI !!!! plural only
 
 LEXICON VAIn_WICI !!!!
 @U.wici.NULL@ VAIn_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@%>im VTAi_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@%>im VTA_ORDER ;
 
 LEXICON VAIn_PL_WICI !!!! plural only
 @U.wici.NULL@ VAIn_PL_ORDER ;
-@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@%>im VTAi_PL_ORDER ;
+@U.wici.wici@+Der/Comm+V+TA:@U.wici.wici@%>im VTA_PL_ORDER ;
 
 !!! ORDERS
 
@@ -1643,7 +1643,7 @@ LEXICON VTIm_IND_NULL_PL_SUFFIX   !!= @CODE@
 ! **** Unspecified Actor ****
 !           ********
 
-+Der/X:%>ikâtê VIIn_Pl ; !! Derives to VIIn
++Der/X:%>ikâtê VIIn_PL ; !! Derives to VIIn
 ! ===================================================================================================================
 ! ===================================================================================================================
 ! ===================================================================================================================

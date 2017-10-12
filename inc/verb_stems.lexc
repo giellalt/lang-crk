@@ -1,11 +1,11 @@
 LEXICON VERBSTEMS
 !!!HAVE YAMLS FOR THESE !!!
-osâwâw:osâwâ VIIn ;
-mihkwâw:mihkwâ VIIn ;
-nîpin3 VIIw ;
-mispon VIIw ;
-pimamon VIIw ;
-mâyâtan VIIw ;
+osâwâw:osâwâ VIIw ;
+mihkwâw:mihkwâ VIIw ;
+nîpin3 VIIn ;
+mispon VIIn_PL ; ! only occurs in plural
+pimamon VIIn ;
+mâyâtan VIIn ;
 
 apiw:api VAIw ;
 atoskêw:atoskê VAIw ;
@@ -13,11 +13,11 @@ matow:mato VAIw ;
 mîcisow:mîciso VAIw ;
 nêhiyawêw:nêhiyawê VAIw ;
 nipâw:nipâ VAIw ;
-pimisin VAIw ;
+pimisin VAIn ;
 
 kâtâw:kâtâ VTIm ;
 mîciw:mîci VTIm ;
-wâpahtam:wâpaht4a VTI-2 ; ! Check status of -a
+wâpahtam:wâpaht4a VTIm ; ! Check status of -a
 
 kîskiswêw:kîskisw VTA;  ! w:0 for collapsing cases
 atoskahêw:atoskah VTA ;
