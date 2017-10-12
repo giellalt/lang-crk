@@ -63,7 +63,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! Verbal MSP
 +Prs  !!= * @CODE@
 +Fut  !!= * @CODE@
-
 +Prt  !!= * @CODE@
 +Prf  !!= * @CODE@
 +Cnj  !!= * @CODE@
@@ -105,14 +104,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +PlO    !!= * @CODE@
 +4Sg/PlO !!= * @CODE@ ambiguous 4th person (both Singular and Plural)
 +5Sg/PlO !!= * @CODE@ ambiguous 5th person (both Singular and Plural)
-+UnspecTI1 !!= * @CODE@ Unspecified actor forms Okimāsis, where TI -t stem becomes -c p. 118
 +X !!= * @CODE@ Unspecified actor forms Okimāsis p. 118
 
-
-+Inf    !!= * @CODE@ infinitive (infinite?)
-+Pos    !!= * @CODE@ postitive
-+Neg    !!= * @CODE@ negative
-+ConNeg !!= * @CODE@ accompanying negative form
 
 !! Nominal MSP
 +Sg		 !!= * @CODE@ singular
@@ -211,8 +204,8 @@ PV/kaski+
 PV/kaskitewi+
 PV/kayasi+
 PV/kah+
-PV/kah-kape+
-PV/kah-kape+
+PV/kah_kape+
+! PV/kah-kape+ ! Check
 PV/kamwaci+
 PV/kaspi+
 PV/kawi+
@@ -414,10 +407,10 @@ PV/yoski+
 
 %> 		 !!= * @CODE@ suffix border
 %< 		 !!= * @CODE@ prefix border
-+WAK  	 !!= * @CODE@ tag to keep track of -wak plurals
++WAK  	 !!= * @CODE@ tag to keep track of -wak plurals  ! REMOVE
 
 
-%^LOC    !!= * @CODE@  Locative
+%^LOC    !!= * @CODE@  Locative ! REMOVE
 w2      !!= * @CODE@ mowêw:mow2
 t2 		!!= * @CODE@  Prefix in possessives
 t3      !!= * @CODE@ t to s in VTA-4
@@ -427,20 +420,19 @@ y3      !!= * @CODE@ epenthetic joiner in reduplication of vowel-initial stems
 i2      !!= * @CODE@ vta-5i epenthesis.
 
 h2 		!!= * @CODE@  Prefix in possessives
+
 %^DIM	!!=* @CODE@  Diminutive suffix
-%^POS    !!=* @CODE@  Possessive suffix
+%^POS    !!=* @CODE@  Possessive suffix ! ! REMOVE
 %^DUPL1   !!=* @CODE@  Reduplication consonant marker
 %^DUPL2   !!=* @CODE@  Reduplication consonant marker
 
 %^EGLOT  !!= * @CODE@  glottal stop after e, for eh- in conjunctive order
-%^EA     !!= * @CODE@  ê to â in 1, 2 person of ê-stems
-%^TS     !!= * @CODE@  t3 to s in VTA-4 verbs before some i-init suf
-%^NII    !!= * @CODE@  n to h or 0 in VII verbs when before k-init suf
-%^WI     !!= * @CODE@  w to 0 in vta-2 verbs when before i-init suf
-%^IO     !!= * @CODE@  VTACw w + i becom o
-%^MI   !!= * @CODE@  Wici epenthesis
-
-
+%^EA     !!= * @CODE@  ê to â in 1, 2 person of ê-stems ! REMOVE
+%^TS     !!= * @CODE@  t3 to s in VTA-4 verbs before some i-init suf ! REMOVE
+%^NII    !!= * @CODE@  n to h or 0 in VII verbs when before k-init suf ! REMOVE
+%^WI     !!= * @CODE@  w to 0 in vta-2 verbs when before i-init suf ! REMOVE
+%^IO     !!= * @CODE@  VTACw w + i becom o ! REMOVE
+%^MI   !!= * @CODE@  Wici epenthesis ! REMOVE
 
 
 !! !!Usage tags
@@ -453,7 +445,6 @@ h2 		!!= * @CODE@  Prefix in possessives
 +Use/NG  !!= * @CODE@ not-generate, for ped generation isme-ped.fst
 
 
-
 !! !! Flagdiacritics
 
 !! These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
@@ -464,7 +455,7 @@ h2 		!!= * @CODE@  Prefix in possessives
 !! the __prefix__, not to the subject. So ''indsg1'' refers to either
 !! subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
-! Associative/comitative wîci-
+! Associative/comitative prefix wîci- (part of circumfix wîci-...-m)
 
 @U.wici.NULL@
 @U.wici.wici@
@@ -473,7 +464,7 @@ h2 		!!= * @CODE@  Prefix in possessives
 @U.rflx.NULL@
 @U.rflx.rflx@
 
-! Hyphen consistently as joiner or not
+! Hyphen consistently used as joiner or not
 
 @U.joiner.NULL@
 @U.joiner.hyphen@
@@ -496,12 +487,12 @@ h2 		!!= * @CODE@  Prefix in possessives
 
 !! Prefixes with a certain phonological content:
 
-@U.perspref.NULL@ !!= * @CODE@  test
-@U.perspref.NI@ !!= * @CODE@  test
-@U.perspref.KI@ !!= * @CODE@  test
-@U.person.NULL@ !!= * @CODE@  test
-@U.person.NI@ !!= * @CODE@  test
-@U.person.KI@ !!= * @CODE@  test
+@U.perspref.NULL@ !!= * @CODE@  ! REMOVE
+@U.perspref.NI@ !!= * @CODE@    ! REMOVE
+@U.perspref.KI@ !!= * @CODE@    ! REMOVE
+@U.person.NULL@ !!= * @CODE@
+@U.person.NI@ !!= * @CODE@
+@U.person.KI@ !!= * @CODE@
 
 ! Test:
 @U.order.imp@
@@ -530,32 +521,161 @@ h2 		!!= * @CODE@  Prefix in possessives
 @U.Imm.Imp@
 @U.Imm.Del@
 
-@U.verb.1sgindep@ !!= * @CODE@
-@U.verb.2sgindep@ !!= * @CODE@
-@U.verb.3osgindep@ !!= * @CODE@
-@U.verb.1plindep@ !!= * @CODE@
-@U.verb.12plindep@ !!= * @CODE@
-@U.verb.2plindep@ !!= * @CODE@
-@U.verb.3plindep@ !!= * @CODE@
+@U.verb.1sgindep@ !!= * @CODE@ ! REMOVE
+@U.verb.2sgindep@ !!= * @CODE@ ! REMOVE
+@U.verb.3osgindep@ !!= * @CODE@ ! REMOVE
+@U.verb.1plindep@ !!= * @CODE@ ! REMOVE
+@U.verb.12plindep@ !!= * @CODE@ ! REMOVE
+@U.verb.2plindep@ !!= * @CODE@ ! REMOVE
+@U.verb.3plindep@ !!= * @CODE@ ! REMOVE
 
-@U.noun.1sg@ !!= * @CODE@
-@U.noun.2sg@ !!= * @CODE@
-@U.noun.3sg@ !!= * @CODE@
-@U.noun.4sg@ !!= * @CODE@
-@U.noun.1pl@ !!= * @CODE@
-@U.noun.12pl@ !!= * @CODE@
-@U.noun.2pl@ !!= * @CODE@
-@U.noun.3pl@ !!= * @CODE@
-@U.noun.4pl@ !!= * @CODE@
+@U.noun.1sg@ !!= * @CODE@ ! REMOVE
+@U.noun.2sg@ !!= * @CODE@ ! REMOVE
+@U.noun.3sg@ !!= * @CODE@ ! REMOVE
+@U.noun.4sg@ !!= * @CODE@ ! REMOVE
+@U.noun.1pl@ !!= * @CODE@ ! REMOVE
+@U.noun.12pl@ !!= * @CODE@ ! REMOVE
+@U.noun.2pl@ !!= * @CODE@ ! REMOVE
+@U.noun.3pl@ !!= * @CODE@ ! REMOVE
+@U.noun.4pl@ !!= * @CODE@ ! REMOVE
 
-@U.noun.abs@  !!= * @CODE@
-@U.noun.dep@ !!= * @CODE@
+@U.noun.abs@  !!= * @CODE@ ! REMOVE
+@U.noun.dep@ !!= * @CODE@ ! REMOVE
+
+!! New multichar symbols for nouns
+
++N
++A
++I
++D
+
++Sg
++Pl
++Obv
++Loc
++Distr
+
++Der/Dim
+
++Px1Sg
++Px2Sg
++Px3Sg
++Px1Pl
++Px21Pl
++Px2Pl
++Px3Pl
++Px4Sg/Pl
++PxX
+
+! Marking the continuation of Dependent noun status for Derived Diminutive nouns
+@P.dep.DEP@
+@R.dep.DEP@
+@D.dep.DEP@
+
+! Type or lack of a person prefix for both Independent Verbs and Possessed Nouns
+@U.person.NI@
+@P.person.NI@
+@R.person.NI@
+@U.person.KI@
+@P.person.KI@
+@R.person.KI@
+@U.person.O@
+@P.person.O@
+@R.person.O@
+@D.person.O@
+@U.person.MI@
+@P.person.MI@
+@R.person.MI@
+@D.person.MI@
+@U.person.NULL@
+@P.person.NULL@
+@R.person.NULL@
+@D.person.NULL@
+
+! Necessity of singular suffix -a/-i for single-syllable noun stems
+@U.sg.I@
+@U.sg.A@
+@P.sg.I@
+@P.sg.A@
+@R.sg.I@
+@R.sg.A@
+@D.sg.I@
+@D.sg.I@
+@D.sg@
+@C.sg@
+
+! Marking singular-only or plural-only nouns
+@P.number.SG@
+@D.number.SG@
+@P.number.PL@
+@D.number.PL@
+
+! Marking whether the -im suffix is required in possessed forms, or a plural possessor
+@U.im.IM@
+@P.im.IM@
+@R.im.IM@
+@D.im.IM@
+@U.im.NULL@
+@P.im.NULL@
+@R.im.NULL@
+@D.poss.NULL@
+@U.poss.PL@
+@R.poss.PL@
+@D.poss.PL@
+@D.poss@
+
+! Marking diminutive suffix type, when only one is possible
+! Otherwise, both diminutives are generated/accepted
+@U.is.IS@
+@P.is.IS@
+@R.is.IS@
+@D.is.IS@
+@U.isis.ISIS@
+@P.isis.ISIS@
+@R.isis.ISIS@
+@D.isis.ISIS@
+
+! Marking lexicalized diminutive stems so that they cannot be rediminutivized
+@P.dim.DIM@
+@R.dim.DIM@
+@D.dim@
+
+! Marking animate nouns that cannot take the locative suffix
+@P.loc.NULL@
+@D.loc.NULL@
+
+! Special characters for matching new LEXC code for Nouns with TWOLC morphonological rules 
+i2
+i4
+t2
+t3
+w2
+w3
+y4
+%<
+%>
+
+! Special trigger for marking a Derived Diminutive form
+%^DIM
+
+! Special characters for matching new LEXC code for Verbs with TWOLC morphonological rules 
+n2
+n3
+i3
+ii2
+
+! Special trigger for marking an Initial Change form
+%^IC
+
+!! End of new and all Multichar_Symbols
 
 ! Key lexicon
 
 LEXICON Root         !!=  @CODE@ is where it all starts
 
-NounPrefixes ;       !!= * @CODE@
+! NounPrefixes ;       !!= * @CODE@
+NOUN_PREFIXES ;
+NOUN_IRREGULARS ;
 VerbPrefixes ;       !!= * @CODE@
 Pronoun ;            !!= * @CODE@
 Propernouns ;        !!= * @CODE@
