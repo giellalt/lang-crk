@@ -1,4 +1,4 @@
- Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
 ! Copyright © 2000-2010 The University of Tromsø
 ! http://giellatekno.uit.no & http://divvun.no
 !
@@ -499,7 +499,7 @@ LEXICON VIIn_SGPL_ORDER !!= @CODE@
 
 ! @U.order.indep@+Ind:@U.order.indep@ VIIw_IND_TENSE ; !
 ! @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_CNJ_TENSE ; !
-! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIw_FUT_CON_PERSON ;!
+! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_FUT_CON_PERSON ;!
 
 LEXICON VIIn_SG_ORDER !!= @CODE@ singular only
 @U.order.indep@+Ind:@U.order.indep@  VIIn_SG_IND_TENSE ; !
@@ -514,7 +514,7 @@ LEXICON VIIn_PL_ORDER !!= @CODE@ singular only
 !! LEXICON VIIw_PL_ORDER !!= @CODE@ plural only 
 !! @U.order.indep@+Ind:@U.order.indep@ VIIw_PL_IND_TENSE ; !
 !! @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_PL_CNJ_TENSE ; !
-!! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIw_PL_FUT_CON_PERSON ;!
+!! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_PL_FUT_CON_PERSON ;!
 
 ! ===========================================================
 ! ===========================================================
@@ -535,7 +535,7 @@ LEXICON VIIw_SG_ORDER !!= @CODE@ singular only
 !! LEXICON VIIn_PL_ORDER !!= @CODE@ plural only
 !!@U.order.indep@+Ind:@U.order.indep@ VIIn_PL_IND_TENSE ; !
 !!@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_PL_CNJ_TENSE ; !
-!!@U.order.FutCon@+Fut+Cond:@U.order.indep@ VIIn_PL_FUT_CON_PERSON ;!
+!!@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIn_PL_FUT_CON_PERSON ;!
 
 !!! TENSES
 
@@ -723,12 +723,12 @@ VIIn_SG_IND_SUFFIX ;
 VIIn_Pl_IND_SUFFIX ;
 
 LEXICON VIIn_SG_IND_SUFFIX   !!= @CODE@ singular
-+3Sg:%>w ENDLEX ;
-+4Sg:%>yiw ENDLEX ;
++3Sg:%>w VERB_ENDLEX ;
++4Sg:%>yiw VERB_ENDLEX ;
 
 LEXICON VIIn_Pl_IND_SUFFIX  !!= @CODE@ plural
-+3Pl:%>wa ENDLEX ;
-+4Pl:%>yiwa ENDLEX ;
++3Pl:%>wa VERB_ENDLEX ;
++4Pl:%>yiwa VERB_ENDLEX ;
 
 ! ===========================================================
 ! ===========================================================
@@ -742,12 +742,12 @@ VIIw_SG_IND_SUFFIX ;
 VIIw_Pl_IND_SUFFIX ;
 
 LEXICON VIIw_SG_IND_SUFFIX   !!= @CODE@ w final singular
-+3Sg:%>0 ENDLEX ;
-+4Sg:%>iyiw ENDLEX ;
++3Sg:%>0 VERB_ENDLEX ;
++4Sg:%>iyiw VERB_ENDLEX ;
 
 LEXICON VIIw_PL_IND_SUFFIX  !!= @CODE@ w final plural
-+3Pl:%>wa ENDLEX ;
-+4Pl:%>iyiwa ENDLEX ;
++3Pl:%>wa VERB_ENDLEX ;
++4Pl:%>iyiwa VERB_ENDLEX ;
 
 
 ! ******************
@@ -766,12 +766,12 @@ VIIn_SG_CNJ_SUFFIX ;
 VIIn_PL_CNJ_SUFFIX ;
 
 LEXICON VIIn_SG_CNJ_SUFFIX   !!= @CODE@ singular
-+3Sg:%>k ENDLEX ;
-+4Sg:%>yik ENDLEX ;
++3Sg:%>k VERB_ENDLEX ;
++4Sg:%>yik VERB_ENDLEX ;
 
 LEXICON VIIn_PL_CNJ_SUFFIX  !!= @CODE@ plural
-+3Pl:%>ki ENDLEX ;
-+4Pl:%>iyiki ENDLEX ;
++3Pl:%>ki VERB_ENDLEX ;
++4Pl:%>iyiki VERB_ENDLEX ;
 
 ! ===========================================================
 ! ===========================================================
@@ -784,12 +784,12 @@ VIIw_SG_CNJ_SUFFIX ;
 VIIw_PL_CNJ_SUFFIX ;
 
 LEXICON VIIw_SG_CNJ_SUFFIX   !!= @CODE@ w final singular
-+3Sg:%>k ENDLEX ;
-+4Sg:%>iyik ENDLEX ;
++3Sg:%>k VERB_ENDLEX ;
++4Sg:%>iyik VERB_ENDLEX ;
 
 LEXICON VIIw_PL_CNJ_SUFFIX   !!= @CODE@ w final plural
-+3Pl:%>ki ENDLEX ;
-+4Pl:%>iyiki ENDLEX ;
++3Pl:%>ki VERB_ENDLEX ;
++4Pl:%>iyiki VERB_ENDLEX ;
 
 ! ****************************
 !!!! FUTURE CONDITIONAL !!!!
@@ -807,12 +807,12 @@ VIIn_SG_FUT_CON_SUFFIX ;
 VIIn_PL_FUT_CON_SUFFIX ;
 
 LEXICON VIIn_SG_FUT_CON_SUFFIX   !!= @CODE@ singular
-+3Sg:%>ki ENDLEX ;
-+4Sg:%>yiki ENDLEX ;
++3Sg:%>ki VERB_ENDLEX ;
++4Sg:%>yiki VERB_ENDLEX ;
 
 LEXICON VIIn_PL_FUT_CON_SUFFIX  !!= @CODE@ plural
-+3Pl:%>kwâwi ENDLEX ;
-+4Pl:%>iyikwâwi ENDLEX ;
++3Pl:%>kwâwi VERB_ENDLEX ;
++4Pl:%>iyikwâwi VERB_ENDLEX ;
 
 ! ===========================================================
 ! ===========================================================
@@ -825,12 +825,12 @@ VIIw_SG_FUT_CON_SUFFIX ;
 VIIw_PL_FUT_CON_SUFFIX ;
 
 LEXICON VIIw_SG_FUT_CON_SUFFIX   !!= @CODE@ w final singular
-+3Sg:%>ki ENDLEX ;
-+4Sg:%>iyiki ENDLEX ;
++3Sg:%>ki VERB_ENDLEX ;
++4Sg:%>iyiki VERB_ENDLEX ;
 
 LEXICON VIIw_PL_FUT_CON_SUFFIX   !!= @CODE@ w final plural
-+3Pl:%>kwâwi ENDLEX ;
-+4Pl:%>iyikwâwi ENDLEX ;
++3Pl:%>kwâwi VERB_ENDLEX ;
++4Pl:%>iyikwâwi VERB_ENDLEX ;
 
 
 !! !!! Intransitive animate (AI)
@@ -1077,29 +1077,29 @@ VAIw_IND_NI_SG_SUFFIX ;
 VAIw_IND_NI_PL_SUFFIX ;
 
 LEXICON VAIw_IND_NI_SG_SUFFIX   !!= @CODE@ 
-+1Sg:%>n2 ENDLEX ;
++1Sg:%>n2 VERB_ENDLEX ;
 
 LEXICON VAIw_IND_NI_PL_SUFFIX   !!= @CODE@
-+1Pl:%>n2ân ENDLEX ;
++1Pl:%>n2ân VERB_ENDLEX ;
 
 LEXICON VAIw_IND_KI   !!= @CODE@  
 VAIw_IND_KI_SG_SUFFIX ;
 VAIw_IND_KI_PL_SUFFIX ;
 
 LEXICON VAIw_IND_KI_SG_SUFFIX   !!= @CODE@ 
-+2Sg:%>n2 ENDLEX ;
++2Sg:%>n2 VERB_ENDLEX ;
 
 LEXICON VAIw_IND_KI_PL_SUFFIX   !!= @CODE@ 
-+12Pl:%>n2aw ENDLEX ;
-+12Pl:%>n2ânaw ENDLEX ;
-+2Pl:%>n2âwâw ENDLEX ;
++12Pl:%>n2aw VERB_ENDLEX ;
++12Pl:%>n2ânaw VERB_ENDLEX ;
++2Pl:%>n2âwâw VERB_ENDLEX ;
 
 LEXICON VAIw_IND_NULL   !!= @CODE@  
 VAIw_IND_NULL_SG_SUFFIX ;
 VAIw_IND_NULL_PL_SUFFIX ;
 
 LEXICON VAIw_IND_NULL_SG_SUFFIX   !!= @CODE@ 
-+3Sg:%>w ENDLEX ;
++3Sg:%>w VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
@@ -1107,9 +1107,9 @@ LEXICON VAIw_IND_NULL_SG_SUFFIX   !!= @CODE@
 !           ********
 
 
-+X:%>n2iwiw ENDLEX ;
-+X:%>n2âniwan ENDLEX ;
-+X:%>n2iwan ENDLEX ;
++X:%>n2iwiw VERB_ENDLEX ;
++X:%>n2âniwan VERB_ENDLEX ;
++X:%>n2iwan VERB_ENDLEX ;
 
 !! +X+4Sg:%>n2âniwiyiw # ;
 !! +X+4Sg:%>n2âniwaniyiw # ;
@@ -1117,8 +1117,8 @@ LEXICON VAIw_IND_NULL_SG_SUFFIX   !!= @CODE@
 
 
 LEXICON VAIw_IND_NULL_PL_SUFFIX   !!= @CODE@
-+3Pl:%>wak ENDLEX ;
-+4Sg/Pl:%>yiwa ENDLEX ;
++3Pl:%>wak VERB_ENDLEX ;
++4Sg/Pl:%>yiwa VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
@@ -1143,48 +1143,48 @@ VAIn_IND_NI_SG_SUFFIX ;
 VAIn_IND_NI_PL_SUFFIX ;
 
 LEXICON VAIn_IND_NI_SG_SUFFIX   !!= @CODE@ 
-+1Sg:%>in ENDLEX ;
++1Sg:%>in VERB_ENDLEX ;
 
 LEXICON VAIn_IND_NI_PL_SUFFIX   !!= @CODE@ 
-+1Pl:%>inân ENDLEX ;
++1Pl:%>inân VERB_ENDLEX ;
 
 LEXICON VAIn_IND_KI   !!= @CODE@  
 VAIn_IND_KI_SG_SUFFIX ;
 VAIn_IND_KI_PL_SUFFIX ;
 
 LEXICON VAIn_IND_KI_SG_SUFFIX   !!= @CODE@ 
-+2Sg:%>in ENDLEX ;
++2Sg:%>in VERB_ENDLEX ;
 
 LEXICON VAIn_IND_KI_PL_SUFFIX   !!= @CODE@ 
-+12Pl:%>inaw ENDLEX ;
-+12Pl:%>inânaw ENDLEX ;
-+2Pl:%>inâwâw ENDLEX ;
++12Pl:%>inaw VERB_ENDLEX ;
++12Pl:%>inânaw VERB_ENDLEX ;
++2Pl:%>inâwâw VERB_ENDLEX ;
 
 LEXICON VAIn_IND_NULL   !!= @CODE@  
 VAIn_IND_NULL_SG_SUFFIX ;
 VAIn_IND_NULL_PL_SUFFIX ;
 
 LEXICON VAIn_IND_NULL_SG_SUFFIX   !!= @CODE@ 
-+3Sg:%>0 ENDLEX ;
-+3Sg:%>iw ENDLEX ;
++3Sg:%>0 VERB_ENDLEX ;
++3Sg:%>iw VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********
 
 
-+X:%>inâniwiw ENDLEX ;
-+X:%>inâniwan ENDLEX ;
-+X:%>iniwan ENDLEX ;
++X:%>inâniwiw VERB_ENDLEX ;
++X:%>inâniwan VERB_ENDLEX ;
++X:%>iniwan VERB_ENDLEX ;
 
 !! +X+4Sg:%>inâniwiyiw # ;
 !! +X+4Sg:%>inâniwaniyiw # ;
 !! +X+4Sg:%>iniwaniyiw # ;
 
 LEXICON VAIn_IND_NULL_PL_SUFFIX   !!= @CODE@ 
-+3Pl:%>wak ENDLEX ;
-+3Pl:%>iwak ENDLEX ;
-+4Sg/Pl:%>iyiwa ENDLEX ;
++3Pl:%>wak VERB_ENDLEX ;
++3Pl:%>iwak VERB_ENDLEX ;
++4Sg/Pl:%>iyiwa VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
@@ -1220,17 +1220,17 @@ VAIw_CNJ_NULL_PL_SUFFIX ;
 
 LEXICON VAIw_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
 
-+1Sg:%>yân ENDLEX ;
-+2Sg:%>yan ENDLEX ;
-+3Sg:%>t ENDLEX ;
++1Sg:%>yân VERB_ENDLEX ;
++2Sg:%>yan VERB_ENDLEX ;
++3Sg:%>t VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********
 
-+X:%>hk ENDLEX ;
-+X:%>nâniwahk ENDLEX ;
-+X:%>niwahk ENDLEX ;
++X:%>hk VERB_ENDLEX ;
++X:%>nâniwahk VERB_ENDLEX ;
++X:%>niwahk VERB_ENDLEX ;
 
 !! +X+4Sg:%>hiyik # ;
 !! +X+4Sg:%>nâniwahiyik # ;
@@ -1238,11 +1238,11 @@ LEXICON VAIw_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 
 LEXICON VAIw_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
-+1Pl:%>yâhk ENDLEX ;
-+12Pl:%>yahk ENDLEX ;
-+2Pl:%>yêk ENDLEX ;
-+3Pl:%>cik ENDLEX ;
-+4Sg/Pl:%>yit ENDLEX ;
++1Pl:%>yâhk VERB_ENDLEX ;
++12Pl:%>yahk VERB_ENDLEX ;
++2Pl:%>yêk VERB_ENDLEX ;
++3Pl:%>cik VERB_ENDLEX ;
++4Sg/Pl:%>yit VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
@@ -1270,12 +1270,12 @@ VAIn_CNJ_NULL_PL_SUFFIX ;
 
 LEXICON VAIn_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
 
-+1Sg:%>iyân ENDLEX ;
-+2Sg:%>iyan ENDLEX ;
-+3Sg:%>it ENDLEX ;
-+X:%>k ENDLEX ;
-+X:%>inâniwahk ENDLEX ;
-+X:%>iniwahk ENDLEX ;
++1Sg:%>iyân VERB_ENDLEX ;
++2Sg:%>iyan VERB_ENDLEX ;
++3Sg:%>it VERB_ENDLEX ;
++X:%>k VERB_ENDLEX ;
++X:%>inâniwahk VERB_ENDLEX ;
++X:%>iniwahk VERB_ENDLEX ;
 
 
 !           ********
@@ -1292,12 +1292,12 @@ LEXICON VAIn_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 
 LEXICON VAIn_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
-+1Pl:%>iyâhk ENDLEX ;
-+12Pl:%>iyahk ENDLEX ;
-+2Pl:%>iyêk ENDLEX ;
-+3Pl:%>icik ENDLEX ;
-+3Pl:%>ihkik ENDLEX ;
-+4Sg/Pl:%>iyit ENDLEX ;
++1Pl:%>iyâhk VERB_ENDLEX ;
++12Pl:%>iyahk VERB_ENDLEX ;
++2Pl:%>iyêk VERB_ENDLEX ;
++3Pl:%>icik VERB_ENDLEX ;
++3Pl:%>ihkik VERB_ENDLEX ;
++4Sg/Pl:%>iyit VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
@@ -1334,15 +1334,15 @@ VAIw_IMP_SG_SUFFIX ;
 VAIw_IMP_NULL_PL_SUFFIX ;
 
 LEXICON VAIw_IMP_SG_SUFFIX
-+Imm+2Sg:%>0   ENDLEX ; ! 
-+Del+2Sg:%>hkan   ENDLEX ; !
++Imm+2Sg:%>0   VERB_ENDLEX ; ! 
++Del+2Sg:%>hkan   VERB_ENDLEX ; !
 
 
 LEXICON VAIw_IMP_NULL_PL_SUFFIX
-+Imm+12Pl:%>tân	  ENDLEX ; !
-+Imm+2Pl:%>k	 ENDLEX ; !
-+Del+12Pl:%>hkahk   ENDLEX ; !
-+Del+2Pl:%>hkêk   ENDLEX ; !
++Imm+12Pl:%>tân	  VERB_ENDLEX ; !
++Imm+2Pl:%>k	 VERB_ENDLEX ; !
++Del+12Pl:%>hkahk   VERB_ENDLEX ; !
++Del+2Pl:%>hkêk   VERB_ENDLEX ; !
 
 ! ===========================================================
 ! ===========================================================
@@ -1355,15 +1355,15 @@ VAIn_IMP_SG_SUFFIX ;
 VAIn_IMP_NULL_PL_SUFFIX ;
 
 LEXICON VAIn_IMP_SG_SUFFIX
-+Imm+2Sg:%>i   ENDLEX ; ! 
-+Del+2Sg:%>îhkan   ENDLEX ; !
++Imm+2Sg:%>i   VERB_ENDLEX ; ! 
++Del+2Sg:%>îhkan   VERB_ENDLEX ; !
 
 
 LEXICON VAIn_IMP_NULL_PL_SUFFIX
-+Imm+12Pl:%>itân	  ENDLEX ; !
-+Imm+2Pl:%>ik	 ENDLEX ; !
-+Del+12Pl:%>îhkahk   ENDLEX ; !
-+Del+2Pl:%>îhkêk   ENDLEX ; !
++Imm+12Pl:%>itân	  VERB_ENDLEX ; !
++Imm+2Pl:%>ik	 VERB_ENDLEX ; !
++Del+12Pl:%>îhkahk   VERB_ENDLEX ; !
++Del+2Pl:%>îhkêk   VERB_ENDLEX ; !
 
 
 ! ===================================================================================================================
@@ -1389,31 +1389,31 @@ VAIw_FUT_CON_NULL_PL_SUFFIX ;
 
 LEXICON VAIw_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
 
-+1Sg:%>yâni ENDLEX ;
-+2Sg:%>yani ENDLEX ;
-+3Sg:%>ci ENDLEX ;
++1Sg:%>yâni VERB_ENDLEX ;
++2Sg:%>yani VERB_ENDLEX ;
++3Sg:%>ci VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********
 
-+X:%>hki ENDLEX ;
++X:%>hki VERB_ENDLEX ;
 !! +X+4Sg:%>yiki # ;
 
 LEXICON VAIw_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
-+1Pl:%>yâhki ENDLEX ;
-+12Pl:%>yahko ENDLEX ;
-+12Pl:%>yahki ENDLEX ;
-+2Pl:%>yêko ENDLEX ;
-+3Pl:%>twâwi ENDLEX ;
-+4Sg/Pl:%>yici ENDLEX ;
++1Pl:%>yâhki VERB_ENDLEX ;
++12Pl:%>yahko VERB_ENDLEX ;
++12Pl:%>yahki VERB_ENDLEX ;
++2Pl:%>yêko VERB_ENDLEX ;
++3Pl:%>twâwi VERB_ENDLEX ;
++4Sg/Pl:%>yici VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********
 
-+X:%>hkwâwi ENDLEX ;
++X:%>hkwâwi VERB_ENDLEX ;
 !! +X+4Pl:%>yikwâwi # ;
 
 ! ===========================================================
@@ -1429,33 +1429,33 @@ VAIn_FUT_CON_NULL_PL_SUFFIX ;
 
 LEXICON VAIn_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
 
-+1Sg:%>iyâni ENDLEX ;
-+2Sg:%>iyani ENDLEX ;
-+3Sg:%>ici ENDLEX ;
-+3Sg:%>hki ENDLEX ;
++1Sg:%>iyâni VERB_ENDLEX ;
++2Sg:%>iyani VERB_ENDLEX ;
++3Sg:%>ici VERB_ENDLEX ;
++3Sg:%>hki VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********
 
-+X:%>ihki ENDLEX ;
++X:%>ihki VERB_ENDLEX ;
 !! +X+4Sg:%>iyiki # ;
 
 LEXICON VAIn_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
-+1Pl:%>iyâhki ENDLEX ;
-+12Pl:%>iyahko ENDLEX ;
-+12Pl:%>iyahki ENDLEX ;
-+2Pl:%>iyêko ENDLEX ;
-+3Pl:%>itwâwi ENDLEX ;
-+3Pl:%>ihkwâwi ENDLEX ;
-+4Sg/Pl:%>iyici ENDLEX ;
++1Pl:%>iyâhki VERB_ENDLEX ;
++12Pl:%>iyahko VERB_ENDLEX ;
++12Pl:%>iyahki VERB_ENDLEX ;
++2Pl:%>iyêko VERB_ENDLEX ;
++3Pl:%>itwâwi VERB_ENDLEX ;
++3Pl:%>ihkwâwi VERB_ENDLEX ;
++4Sg/Pl:%>iyici VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********
 
-+X:%>ihkwâwi ENDLEX ;
++X:%>ihkwâwi VERB_ENDLEX ;
 !! +X+4Pl:%>iyikwâwi # ;
 
 
@@ -1507,13 +1507,13 @@ LEXICON VTIm_ORDER !!= @CODE@ .
 @U.order.indep@+Ind:@U.order.indep@ VTIm_IND_TENSE ; !
 @U.order.cnj@+Cnj:@U.order.cnj@ VTIm_CNJ_TENSE ; !
 @U.order.imp@+Imp:@U.order.imp@  VTIm_IMP_PERSON ; !
-@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTIm_FUT_CON_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTIm_FUT_CON_PERSON ; !
 
 LEXICON VTIm_PL_ORDER !!= @CODE@ plural only NOTE: imperative and fut con go straight to person lexica
 @U.order.indep@+Ind:@U.order.indep@ VTIm_PL_IND_TENSE ; !
 @U.order.cnj@+Cnj:@U.order.cnj@ VTIm_PL_CNJ_TENSE ; !
 @U.order.imp@+Imp:@U.order.imp@  VTIm_PL_IMP_PERSON ; !
-@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTIm_PL_FUT_CON_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTIm_PL_FUT_CON_PERSON ; !
 
 !!! TENSES
 
@@ -1603,29 +1603,29 @@ VTIm_IND_NI_SG_SUFFIX ;
 VTIm_IND_NI_PL_SUFFIX ;
 
 LEXICON VTIm_IND_NI_SG_SUFFIX   !!= @CODE@ 
-+1Sg:%>n2 ENDLEX ;
++1Sg:%>n2 VERB_ENDLEX ;
 
 LEXICON VTIm_IND_NI_PL_SUFFIX   !!= @CODE@ 
-+1Pl:%>n2ân ENDLEX ;
++1Pl:%>n2ân VERB_ENDLEX ;
 
 LEXICON VTIm_IND_KI   !!= @CODE@  
 VTIm_IND_KI_SG_SUFFIX ;
 VTIm_IND_KI_PL_SUFFIX ;
 
 LEXICON VTIm_IND_KI_SG_SUFFIX   !!= @CODE@ 
-+2Sg:%>n2 ENDLEX ;
++2Sg:%>n2 VERB_ENDLEX ;
 
 LEXICON VTIm_IND_KI_PL_SUFFIX   !!= @CODE@ 
-+12Pl:%>n2aw ENDLEX ;
-+12Pl:%>n2ânaw ENDLEX ;
-+2Pl:%>n2âwâw ENDLEX ;
++12Pl:%>n2aw VERB_ENDLEX ;
++12Pl:%>n2ânaw VERB_ENDLEX ;
++2Pl:%>n2âwâw VERB_ENDLEX ;
 
 LEXICON VTIm_IND_NULL   !!= @CODE@  
 VTIm_IND_NULL_SG_SUFFIX ;
 VTIm_IND_NULL_PL_SUFFIX ;
 
 LEXICON VTIm_IND_NULL_SG_SUFFIX   !!= @CODE@ NOTE: X actor will eventually derive to VII, so it is not yet included as per Arok's paradigm
-+3Sg:%>m ENDLEX ;
++3Sg:%>m VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
@@ -1636,8 +1636,8 @@ LEXICON VTIm_IND_NULL_SG_SUFFIX   !!= @CODE@ NOTE: X actor will eventually deriv
 
 
 LEXICON VTIm_IND_NULL_PL_SUFFIX   !!= @CODE@ 
-+3Pl:%>mwak ENDLEX ;
-+4Sg/Pl:%>miyiwa ENDLEX ;
++3Pl:%>mwak VERB_ENDLEX ;
++4Sg/Pl:%>miyiwa VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
@@ -1668,30 +1668,30 @@ VTIm_CNJ_NULL_PL_SUFFIX ;
 
 LEXICON VTIm_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
 
-+1Sg:%>mân ENDLEX ;
-+2Sg:%>man ENDLEX ;
-+3Sg:%>hk ENDLEX ;
++1Sg:%>mân VERB_ENDLEX ;
++2Sg:%>man VERB_ENDLEX ;
++3Sg:%>hk VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Sg:%>mihk ENDLEX ;
++X+3Sg:%>mihk VERB_ENDLEX ;
 !! +X+4Sg:%>mihiyik # ;
 
 LEXICON VTIm_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
-+1Pl:%>mâhk ENDLEX ;
-+12Pl:%>mahk ENDLEX ;
-+2Pl:%>mêk ENDLEX ;
-+3Pl:%>hkik ENDLEX ;
-+4Sg/Pl:%>miyit ENDLEX ;
++1Pl:%>mâhk VERB_ENDLEX ;
++12Pl:%>mahk VERB_ENDLEX ;
++2Pl:%>mêk VERB_ENDLEX ;
++3Pl:%>hkik VERB_ENDLEX ;
++4Sg/Pl:%>miyit VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********
 
-+X+3Sg:%>mihki ENDLEX ;
++X+3Sg:%>mihki VERB_ENDLEX ;
 !! +X+4Pl:%>mihiyiki # ;
 
 ! ===================================================================================================================
@@ -1716,15 +1716,15 @@ VTIm_IMP_SG_SUFFIX ;
 VTIm_IMP_NULL_PL_SUFFIX ;
 
 LEXICON VTIm_IMP_SG_SUFFIX
-+Imm+2Sg:%>0   ENDLEX ; ! 
-+Del+2Sg:%>môhkan   ENDLEX ; !
++Imm+2Sg:%>0   VERB_ENDLEX ; ! 
++Del+2Sg:%>môhkan   VERB_ENDLEX ; !
 
 
 LEXICON VTIm_IMP_NULL_PL_SUFFIX
-+Imm+12Pl:%>tân	  ENDLEX ; ! ! <a> to <ê> / _ %>tân
-+Imm+2Pl:%>mok	 ENDLEX ; !
-+Del+12Pl:%>môhkahk   ENDLEX ; !
-+Del+2Pl:%>môhkêk   ENDLEX ; !
++Imm+12Pl:%>tân	  VERB_ENDLEX ; ! ! <a> to <ê> / _ %>tân
++Imm+2Pl:%>mok	 VERB_ENDLEX ; !
++Del+12Pl:%>môhkahk   VERB_ENDLEX ; !
++Del+2Pl:%>môhkêk   VERB_ENDLEX ; !
 
 
 ! ===================================================================================================================
@@ -1751,25 +1751,25 @@ VTIm_FUT_CON_NULL_PL_SUFFIX ;
 
 LEXICON VTIm_FUT_CON_NULL_SG_SUFFIX   !!= @CODE@ 
 
-+1Sg:%>mâni ENDLEX ;
-+2Sg:%>mani ENDLEX ;
-+3Sg:%>hki ENDLEX ;
++1Sg:%>mâni VERB_ENDLEX ;
++2Sg:%>mani VERB_ENDLEX ;
++3Sg:%>hki VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********
 
-+X:%>mihki ENDLEX ;
++X:%>mihki VERB_ENDLEX ;
 !! +X+4Sg:%>mihiyiki # ;
 
 LEXICON VTIm_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@ 
 
-+1Pl:%>mâhki ENDLEX ;
-+12Pl:%>mahko ENDLEX ;
-+12Pl:%>mahki ENDLEX ;
-+2Pl:%>mêko ENDLEX ;
-+3Pl:%>hkwâwi ENDLEX ;
-+4Sg/Pl:%>miyici ENDLEX ;
++1Pl:%>mâhki VERB_ENDLEX ;
++12Pl:%>mahko VERB_ENDLEX ;
++12Pl:%>mahki VERB_ENDLEX ;
++2Pl:%>mêko VERB_ENDLEX ;
++3Pl:%>hkwâwi VERB_ENDLEX ;
++4Sg/Pl:%>miyici VERB_ENDLEX ;
 
 !           ********
 ! **** Unspecified Actor ****
@@ -1816,19 +1816,19 @@ LEXICON VTA_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense
 @U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
 @U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
 @U.order.imp@+Imp:@U.order.imp@  VTA_IMP_PERSON ; !
-@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA_FUT_CON_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_FUT_CON_PERSON ; !
 
 LEXICON VTA_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
 @U.order.indep@+Ind:@U.order.indep@ VTA_PL_IND_TENSE ; !
 @U.order.cnj@+Cnj:@U.order.cnj@ VTA_PL_CNJ_TENSE ; !
 @U.order.imp@+Imp:@U.order.imp@  VTA_PL_IMP_PERSON ; !
-@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA_PL_FUT_CON_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_PL_FUT_CON_PERSON ; !
 
 LEXICON VTAi_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
 @U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
 @U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
 @U.order.imp@+Imp:@U.order.imp@  VTAi_IMP_PERSON ; !
-@U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA_FUT_CON_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_FUT_CON_PERSON ; !
 
 !!! Tenses
 
@@ -1918,8 +1918,8 @@ LEXICON VTA_IND_NI_SG_SUFFIX   !!= @CODE@
 
 !!!!!!!! Mixed !!!!!!!
 
-+1Sg+3SgO:%>âw		  ENDLEX ;
-+1Sg+4Sg/PlO:%>i2mâwa	  ENDLEX ; ! From NS 152
++1Sg+3SgO:%>âw		  VERB_ENDLEX ;
++1Sg+4Sg/PlO:%>i2mâwa	  VERB_ENDLEX ; ! From NS 152
 
 !!!!!!!!!!!!!!!!!!!!!
 !!!!!! Inverse !!!!!!
@@ -1927,14 +1927,14 @@ LEXICON VTA_IND_NI_SG_SUFFIX   !!= @CODE@
 
 !!!!!!!! Mixed !!!!!!!
 
-+3Sg+1SgO:%>i2k        ENDLEX ;
-+4Sg/Pl+1SgO:%>i2koyiwa	   ENDLEX ; ! FROM NS 152
++3Sg+1SgO:%>i2k        VERB_ENDLEX ;
++4Sg/Pl+1SgO:%>i2koyiwa	   VERB_ENDLEX ; ! FROM NS 152
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+1SgO:%>i2kawin   ENDLEX ;
++X+1SgO:%>i2kawin   VERB_ENDLEX ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -1949,11 +1949,11 @@ LEXICON VTA_IND_NI_PL_SUFFIX   !!= @CODE@
 
 !!!!!!!! Mixed !!!!!!!
 
-+1Sg+3PlO:%>âwak	  ENDLEX ;
++1Sg+3PlO:%>âwak	  VERB_ENDLEX ;
 
-+1Pl+3SgO:%>ânân	  ENDLEX ;
-+1Pl+3PlO:%>ânânak	  ENDLEX ;
-+1Pl+4Sg/PlO:%>i2mânâna	  ENDLEX ; ! From NS 152
++1Pl+3SgO:%>ânân	  VERB_ENDLEX ;
++1Pl+3PlO:%>ânânak	  VERB_ENDLEX ;
++1Pl+4Sg/PlO:%>i2mânâna	  VERB_ENDLEX ; ! From NS 152
 
 !!!!!!!!!!!!!!!!!!!!!
 !!!!!! Inverse !!!!!!
@@ -1961,17 +1961,17 @@ LEXICON VTA_IND_NI_PL_SUFFIX   !!= @CODE@
 
 !!!!!!!! Mixed !!!!!!!
 
-+3Sg+1PlO:%>i2konân	  ENDLEX ;
++3Sg+1PlO:%>i2konân	  VERB_ENDLEX ;
 
-+3Pl+1SgO:%>i2kwak	  ENDLEX ;
-+3Pl+1PlO:%>i2konânak  ENDLEX ;
-+4Sg/Pl+1PlO:%>i2konâna	   ENDLEX ; ! FROM NS 152
++3Pl+1SgO:%>i2kwak	  VERB_ENDLEX ;
++3Pl+1PlO:%>i2konânak  VERB_ENDLEX ;
++4Sg/Pl+1PlO:%>i2konâna	   VERB_ENDLEX ; ! FROM NS 152
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+1PlO:%>i2kawinân   ENDLEX ;
++X+1PlO:%>i2kawinân   VERB_ENDLEX ;
 
 
 !!!!!! KI- PREFIXING FORMS !!!!!!
@@ -1993,12 +1993,12 @@ LEXICON VTA_IND_KI_SG_SUFFIX   !!= @CODE@
 
 !!!!!!!! Local !!!!!!!
 
-+2Sg+1SgO:%>in         ENDLEX ;
++2Sg+1SgO:%>in         VERB_ENDLEX ;
 
 !!!!!!!! Mixed !!!!!!!
 
-+2Sg+3SgO:%>âw		  ENDLEX ;
-+2Sg+4Sg/PlO:%>i2mâwa	  ENDLEX ; ! From NS 152
++2Sg+3SgO:%>âw		  VERB_ENDLEX ;
++2Sg+4Sg/PlO:%>i2mâwa	  VERB_ENDLEX ; ! From NS 152
 
 !!!!!!!!!!!!!!!!!!!!!
 !!!!!! Inverse !!!!!!
@@ -2007,18 +2007,18 @@ LEXICON VTA_IND_KI_SG_SUFFIX   !!= @CODE@
 
 !!!!!!!! Local !!!!!!!
 
-+1Sg+2SgO:%>i2tin         ENDLEX ;
++1Sg+2SgO:%>i2tin         VERB_ENDLEX ;
 
 !!!!!!!! Mixed !!!!!!!
 
-+3Sg+2SgO:%>i2k		  ENDLEX ;
-+4Sg/Pl+2SgO:%>i2koyiwa	   ENDLEX ; ! FROM NS 152
++3Sg+2SgO:%>i2k		  VERB_ENDLEX ;
++4Sg/Pl+2SgO:%>i2koyiwa	   VERB_ENDLEX ; ! FROM NS 152
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+2SgO:%>i2kawin   ENDLEX ;
++X+2SgO:%>i2kawin   VERB_ENDLEX ;
 
 ! ~~~~~~~~~~~~~~~~~~~~
 !!!!!! PLURAL !!!!!! 
@@ -2033,21 +2033,21 @@ LEXICON VTA_IND_KI_PL_SUFFIX   !!= @CODE@
 
 !!!!!!!! Local !!!!!!!
 
-+2Sg+1PlO:%>inân       ENDLEX ;
-+2Pl+1SgO:%>inâwâw     ENDLEX ;
-+2Pl+1PlO:%>inân       ENDLEX ;
++2Sg+1PlO:%>inân       VERB_ENDLEX ;
++2Pl+1SgO:%>inâwâw     VERB_ENDLEX ;
++2Pl+1PlO:%>inân       VERB_ENDLEX ;
 
 !!!!!!!! Mixed !!!!!!!
 
-+2Sg+3PlO:%>âwak ENDLEX ;
++2Sg+3PlO:%>âwak VERB_ENDLEX ;
 
-+2Pl+3SgO:%>âwâw	  ENDLEX ;
-+2Pl+3PlO:%>âwâwak	  ENDLEX ;
-+2Pl+4Sg/PlO:%>i2mâwâwa	  ENDLEX ; ! From NS 152
++2Pl+3SgO:%>âwâw	  VERB_ENDLEX ;
++2Pl+3PlO:%>âwâwak	  VERB_ENDLEX ;
++2Pl+4Sg/PlO:%>i2mâwâwa	  VERB_ENDLEX ; ! From NS 152
 
-+12Pl+3SgO:%>ânaw	  ENDLEX ; ! 12Pl forms
-+12Pl+3PlO:%>ânawak	  ENDLEX ;
-+12Pl+4Sg/PlO:%>i2mânawa	  ENDLEX ; ! From NS 152
++12Pl+3SgO:%>ânaw	  VERB_ENDLEX ; ! 12Pl forms
++12Pl+3PlO:%>ânawak	  VERB_ENDLEX ;
++12Pl+4Sg/PlO:%>i2mânawa	  VERB_ENDLEX ; ! From NS 152
 
 
 !!!!!!!!!!!!!!!!!!!!!
@@ -2057,30 +2057,30 @@ LEXICON VTA_IND_KI_PL_SUFFIX   !!= @CODE@
 
 !!!!!!!! Local !!!!!!!
 
-+1Sg+2PlO:%>i2tinâwâw         ENDLEX ;
-+1Pl+2SgO:%>i2tinân         ENDLEX ; !OBS
-+1Pl+2PlO:%>i2tinân         ENDLEX ;
++1Sg+2PlO:%>i2tinâwâw         VERB_ENDLEX ;
++1Pl+2SgO:%>i2tinân         VERB_ENDLEX ; !OBS
++1Pl+2PlO:%>i2tinân         VERB_ENDLEX ;
 
 !!!!!!!! Mixed !!!!!!!
 
-+3Sg+12PlO:%>i2konaw	  ENDLEX ;
-+3Sg+2PlO:%>i2kowâw	  ENDLEX ;
++3Sg+12PlO:%>i2konaw	  VERB_ENDLEX ;
++3Sg+2PlO:%>i2kowâw	  VERB_ENDLEX ;
 
-+3Pl+2SgO:%>i2kwak	  ENDLEX ;
-+3Pl+12PlO:%>i2konawak ENDLEX ;
-+3Pl+2PlO:%>i2kowâwak  ENDLEX ;
++3Pl+2SgO:%>i2kwak	  VERB_ENDLEX ;
++3Pl+12PlO:%>i2konawak VERB_ENDLEX ;
++3Pl+2PlO:%>i2kowâwak  VERB_ENDLEX ;
 
-+4Sg/Pl+12PlO:%>i2konawa	   ENDLEX ; ! FROM NS 152
-+4Sg/Pl+2PlO:%>i2kowâwa	   ENDLEX ; ! FROM NS 152
++4Sg/Pl+12PlO:%>i2konawa	   VERB_ENDLEX ; ! FROM NS 152
++4Sg/Pl+2PlO:%>i2kowâwa	   VERB_ENDLEX ; ! FROM NS 152
 
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+12PlO:%>i2kawinânaw	   ENDLEX ;
-+X+12PlO:%>i2kawinaw	   ENDLEX ;
-+X+2PlO:%>i2kawinâwâw	   ENDLEX ;
++X+12PlO:%>i2kawinânaw	   VERB_ENDLEX ;
++X+12PlO:%>i2kawinaw	   VERB_ENDLEX ;
++X+2PlO:%>i2kawinâwâw	   VERB_ENDLEX ;
 
 
 !!!!!! NULL PREFIXING FORMS !!!!!!
@@ -2103,9 +2103,9 @@ LEXICON VTA_IND_NULL_SG_SUFFIX   !!= @CODE@
 
 !!!!!!!! Mixed !!!!!!!
 
-+3Sg+4Sg/PlO:%>êw		  ENDLEX ; ! Implementing fourth, fifth persons 
-+3Sg+5Sg/PlO:%>i2mêw		  ENDLEX ; ! Implementing fourth, fifth persons 
-+4Sg/Pl+5Sg/PlO:%>êyiwa	  ENDLEX ; ! Implementing fourth, fifth persons
++3Sg+4Sg/PlO:%>êw		  VERB_ENDLEX ; ! Implementing fourth, fifth persons 
++3Sg+5Sg/PlO:%>i2mêw		  VERB_ENDLEX ; ! Implementing fourth, fifth persons 
++4Sg/Pl+5Sg/PlO:%>êyiwa	  VERB_ENDLEX ; ! Implementing fourth, fifth persons
 
 !!!!!!!!!!!!!!!!!!!!!
 !!!!!! Inverse !!!!!!
@@ -2113,16 +2113,16 @@ LEXICON VTA_IND_NULL_SG_SUFFIX   !!= @CODE@
 
 !!!!!!!! Mixed !!!!!!!
 
-+4Sg/Pl+3SgO:%>i2k	   ENDLEX ; ! FROM NS 152
-+5Sg/Pl+4Sg/PlO:%>i2koyiwa	   ENDLEX ; ! FROM NS 152
++4Sg/Pl+3SgO:%>i2k	   VERB_ENDLEX ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>i2koyiwa	   VERB_ENDLEX ; ! FROM NS 152
 
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+3SgO:%>âw   ENDLEX ;
-+X+4Sg/PlO:%>âyiwa   ENDLEX ;
++X+3SgO:%>âw   VERB_ENDLEX ;
++X+4Sg/PlO:%>âyiwa   VERB_ENDLEX ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -2137,8 +2137,8 @@ LEXICON VTA_IND_NULL_PL_SUFFIX   !!= @CODE@
 
 !!!!!!!! Mixed !!!!!!!
 
-+3Pl+4Sg/PlO:%>êwak	  ENDLEX ; ! Implementing fourth, fifth persons
-+3Pl+5Sg/PlO:%>i2mêwak	ENDLEX ;	
++3Pl+4Sg/PlO:%>êwak	  VERB_ENDLEX ; ! Implementing fourth, fifth persons
++3Pl+5Sg/PlO:%>i2mêwak	VERB_ENDLEX ;	
 
 !!!!!!!!!!!!!!!!!!!!!
 !!!!!! Inverse !!!!!!
@@ -2147,13 +2147,13 @@ LEXICON VTA_IND_NULL_PL_SUFFIX   !!= @CODE@
 !!!!!!!! Mixed !!!!!!!
 
 
-+4Sg/Pl+3PlO:%>i2kwak	   ENDLEX ; ! FROM NS 152
++4Sg/Pl+3PlO:%>i2kwak	   VERB_ENDLEX ; ! FROM NS 152
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+3PlO:%>âwak   ENDLEX ;
++X+3PlO:%>âwak   VERB_ENDLEX ;
 
 
 ! ===================================================================================================================
@@ -2185,23 +2185,23 @@ LEXICON VTA_CNJ_NULL_SG_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+2Sg+1SgO:%>iyan       ENDLEX ;
++2Sg+1SgO:%>iyan       VERB_ENDLEX ;
 
 !!!!!!! Mixed !!!!!!!
 
-+1Sg+3SgO:%>ak	   ENDLEX ;
-+2Sg+3SgO:%>at	   ENDLEX ;
++1Sg+3SgO:%>ak	   VERB_ENDLEX ;
++2Sg+3SgO:%>at	   VERB_ENDLEX ;
 
-+1Sg+4Sg/PlO:%>i2mak	   ENDLEX ; ! From NS 152
-+2Sg+4Sg/PlO:%>i2mat	   ENDLEX ; ! From NS 152
++1Sg+4Sg/PlO:%>i2mak	   VERB_ENDLEX ; ! From NS 152
++2Sg+4Sg/PlO:%>i2mat	   VERB_ENDLEX ; ! From NS 152
 
 !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
 
-+3Sg+4Sg/PlO:%>ât	   ENDLEX ;
++3Sg+4Sg/PlO:%>ât	   VERB_ENDLEX ;
 
-+4Sg/PlO+5Sg/PlO:%>âyit      ENDLEX ; ! From NS 152
++4Sg/PlO+5Sg/PlO:%>âyit      VERB_ENDLEX ; ! From NS 152
 
-+3Sg+5Sg/PlO:%>i2mât	   ENDLEX ;
++3Sg+5Sg/PlO:%>i2mât	   VERB_ENDLEX ;
 
 
 !!!!!!!!!!!!!!!!!!!!!
@@ -2210,30 +2210,30 @@ LEXICON VTA_CNJ_NULL_SG_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+1Sg+2SgO:%>i2tân         ENDLEX ;
++1Sg+2SgO:%>i2tân         VERB_ENDLEX ;
 
 !!!!!!! Mixed !!!!!!!
 
-+3Sg+1SgO:%>it		   ENDLEX ;
-+3Sg+2SgO:%>i2sk		   ENDLEX ;
++3Sg+1SgO:%>it		   VERB_ENDLEX ;
++3Sg+2SgO:%>i2sk		   VERB_ENDLEX ;
 
-+4Sg/Pl+1SgO:%>i2mit	   ENDLEX ; ! FROM NS 152
-+4Sg/Pl+2SgO:%>i2misk	   ENDLEX ;
++4Sg/Pl+1SgO:%>i2mit	   VERB_ENDLEX ; ! FROM NS 152
++4Sg/Pl+2SgO:%>i2misk	   VERB_ENDLEX ;
 
 !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
 
-+4Sg/Pl+3SgO:%>i2kot	   ENDLEX ; ! FROM NS 152
-+5Sg/Pl+4Sg/PlO:%>i2koyit	   ENDLEX ; ! FROM NS 152
++4Sg/Pl+3SgO:%>i2kot	   VERB_ENDLEX ; ! FROM NS 152
++5Sg/Pl+4Sg/PlO:%>i2koyit	   VERB_ENDLEX ; ! FROM NS 152
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+1SgO:%>i2kawiyân	   ENDLEX ;
-+X+2SgO:%>i2kawiyan	   ENDLEX ;
++X+1SgO:%>i2kawiyân	   VERB_ENDLEX ;
++X+2SgO:%>i2kawiyan	   VERB_ENDLEX ;
 
-+X+3SgO:%>i2ht	   ENDLEX ;
-+X+4Sg/PlO:%>i2miht	   ENDLEX ;
++X+3SgO:%>i2ht	   VERB_ENDLEX ;
++X+4Sg/PlO:%>i2miht	   VERB_ENDLEX ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -2250,35 +2250,35 @@ LEXICON VTA_CNJ_NULL_PL_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+2Sg+1PlO:%>iyâhk       ENDLEX ;
++2Sg+1PlO:%>iyâhk       VERB_ENDLEX ;
 
-+2Pl+1PlO:%>iyâhk       ENDLEX ;
-+2Pl+1SgO:%>iyêk       ENDLEX ;
++2Pl+1PlO:%>iyâhk       VERB_ENDLEX ;
++2Pl+1SgO:%>iyêk       VERB_ENDLEX ;
 
 !!!!!!! Mixed !!!!!!!
 
-+1Sg+3PlO:%>akik	   ENDLEX ;
++1Sg+3PlO:%>akik	   VERB_ENDLEX ;
 
-+2Sg+3PlO:%>acik	   ENDLEX ;
++2Sg+3PlO:%>acik	   VERB_ENDLEX ;
 
-+1Pl+3SgO:%>âyâhk	   ENDLEX ;
-+1Pl+3PlO:%>âyâhkik	   ENDLEX ;
++1Pl+3SgO:%>âyâhk	   VERB_ENDLEX ;
++1Pl+3PlO:%>âyâhkik	   VERB_ENDLEX ;
 
-+12Pl+3SgO:%>âyahk	   ENDLEX ;
-+12Pl+3PlO:%>âyahkok   ENDLEX ;
++12Pl+3SgO:%>âyahk	   VERB_ENDLEX ;
++12Pl+3PlO:%>âyahkok   VERB_ENDLEX ;
 
-+2Pl+3SgO:%>âyêk	   ENDLEX ;
-+2Pl+3PlO:%>âyêkok	   ENDLEX ;
++2Pl+3SgO:%>âyêk	   VERB_ENDLEX ;
++2Pl+3PlO:%>âyêkok	   VERB_ENDLEX ;
 
-+1Pl+4Sg/PlO:%>i2mâyâhk	   ENDLEX ; ! From NS 152
-+12Pl+4Sg/PlO:%>i2mâyahk   ENDLEX ; ! From NS 152
-+2Pl+4Sg/PlO:%>i2mâyek   ENDLEX ; ! From NS 152
++1Pl+4Sg/PlO:%>i2mâyâhk	   VERB_ENDLEX ; ! From NS 152
++12Pl+4Sg/PlO:%>i2mâyahk   VERB_ENDLEX ; ! From NS 152
++2Pl+4Sg/PlO:%>i2mâyek   VERB_ENDLEX ; ! From NS 152
 
 !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
 
-+3Pl+4Sg/PlO:%>âcik      ENDLEX ; ! From NS 152
++3Pl+4Sg/PlO:%>âcik      VERB_ENDLEX ; ! From NS 152
 
-+3Pl+5Sg/PlO:%>i2mâcik      ENDLEX ; ! From NS 152
++3Pl+5Sg/PlO:%>i2mâcik      VERB_ENDLEX ; ! From NS 152
 
 
 !!!!!!!!!!!!!!!!!!!!!
@@ -2287,43 +2287,43 @@ LEXICON VTA_CNJ_NULL_PL_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+1Pl+2SgO:%>i2tâhk         ENDLEX ; 
++1Pl+2SgO:%>i2tâhk         VERB_ENDLEX ; 
 
-+1Pl+2PlO:%>i2tâhk         ENDLEX ; 
-+1Sg+2PlO:%>i2takok         ENDLEX ;
++1Pl+2PlO:%>i2tâhk         VERB_ENDLEX ; 
++1Sg+2PlO:%>i2takok         VERB_ENDLEX ;
 
 !!!!!!! Mixed !!!!!!!
 
-+3Pl+1SgO:%>icik	   ENDLEX ;
++3Pl+1SgO:%>icik	   VERB_ENDLEX ;
 
-+3Pl+2SgO:%>i2skik	   ENDLEX ;
++3Pl+2SgO:%>i2skik	   VERB_ENDLEX ;
 
-+3Sg+1PlO:%>i2koyâhk	   ENDLEX ;
-+3Pl+1PlO:%>i2koyâhkik  ENDLEX ;
++3Sg+1PlO:%>i2koyâhk	   VERB_ENDLEX ;
++3Pl+1PlO:%>i2koyâhkik  VERB_ENDLEX ;
 
-+3Sg+12PlO:%>i2koyahk   ENDLEX ;
-+3Pl+12PlO:%>i2koyahkok ENDLEX ;
++3Sg+12PlO:%>i2koyahk   VERB_ENDLEX ;
++3Pl+12PlO:%>i2koyahkok VERB_ENDLEX ;
 
-+3Sg+2PlO:%>i2koyek	   ENDLEX ;
-+3Pl+2PlO:%>i2koyêkok   ENDLEX ;
++3Sg+2PlO:%>i2koyek	   VERB_ENDLEX ;
++3Pl+2PlO:%>i2koyêkok   VERB_ENDLEX ;
 
-+4Sg/Pl+1PlO:%>i2koyâhk	   ENDLEX ; ! FROM NS 152
-+4Sg/Pl+12PlO:%>i2koyahk	   ENDLEX ;
-+4Sg/Pl+2PlO:%>i2koyêk	   ENDLEX ;
++4Sg/Pl+1PlO:%>i2koyâhk	   VERB_ENDLEX ; ! FROM NS 152
++4Sg/Pl+12PlO:%>i2koyahk	   VERB_ENDLEX ;
++4Sg/Pl+2PlO:%>i2koyêk	   VERB_ENDLEX ;
 
 !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
 
-+4Sg/Pl+3PlO:%>i2kocik	   ENDLEX ; ! FROM NS 152
++4Sg/Pl+3PlO:%>i2kocik	   VERB_ENDLEX ; ! FROM NS 152
 
 !           ********
 ! **** Unspecified Actor ****
 !           ********  NOTE: always mixed
 
-+X+1PlO:%>i2kawiyâhk	   ENDLEX ;
-+X+12PlO:%>i2kawiyahk	   ENDLEX ;
-+X+2PlO:%>i2kawiyêk	   ENDLEX ;
++X+1PlO:%>i2kawiyâhk	   VERB_ENDLEX ;
++X+12PlO:%>i2kawiyahk	   VERB_ENDLEX ;
++X+2PlO:%>i2kawiyêk	   VERB_ENDLEX ;
 
-+X+3PlO:%>i2hcik	   ENDLEX ;
++X+3PlO:%>i2hcik	   VERB_ENDLEX ;
 
 
 ! ===================================================================================================================
@@ -2359,16 +2359,16 @@ LEXICON VTA_IMP_NULL_SG_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+Imm+2Sg+1SgO:%>in ENDLEX ;
++Imm+2Sg+1SgO:%>in VERB_ENDLEX ;
 
-+Del+2Sg+1SgO:%>ii2hkan ENDLEX ;
++Del+2Sg+1SgO:%>ii2hkan VERB_ENDLEX ;
 
 
 !!!!!!! Mixed !!!!!!!
 
-+Imm+2Sg+3SgO:0 ENDLEX ;
++Imm+2Sg+3SgO:0 VERB_ENDLEX ;
 
-+Del+2Sg+3SgO:%>âhkan ENDLEX ;
++Del+2Sg+3SgO:%>âhkan VERB_ENDLEX ;
 
 
 LEXICON VTA_IMP_NULL_PL_SUFFIX
@@ -2380,31 +2380,31 @@ LEXICON VTA_IMP_NULL_PL_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+Imm+2Sg+1PlO:%>inân ENDLEX ;
-+Imm+2Pl+1SgO:%>ik ENDLEX ;
++Imm+2Sg+1PlO:%>inân VERB_ENDLEX ;
++Imm+2Pl+1SgO:%>ik VERB_ENDLEX ;
 
-+Del+2Sg+1PlO:%>ii2hkâhk ENDLEX ;
-+Del+2Pl+1PlO:%>ii2hkâhk ENDLEX ;
-+Del+2Pl+1SgO:%>ii2hkêk ENDLEX ;
++Del+2Sg+1PlO:%>ii2hkâhk VERB_ENDLEX ;
++Del+2Pl+1PlO:%>ii2hkâhk VERB_ENDLEX ;
++Del+2Pl+1SgO:%>ii2hkêk VERB_ENDLEX ;
 
 
 !!!!!!! Mixed !!!!!!!
 
-+Imm+2Sg+3PlO:%>ik ENDLEX ;
++Imm+2Sg+3PlO:%>ik VERB_ENDLEX ;
 
-+Imm+12Pl+3SgO:%>âtân ENDLEX ;
-+Imm+12Pl+3PlO:%>âtânik ENDLEX ;
++Imm+12Pl+3SgO:%>âtân VERB_ENDLEX ;
++Imm+12Pl+3PlO:%>âtânik VERB_ENDLEX ;
 
-+Imm+2Pl+3SgO:%>ihk ENDLEX ;
-+Imm+2Pl+3PlO:%>ihkok ENDLEX ;
++Imm+2Pl+3SgO:%>ihk VERB_ENDLEX ;
++Imm+2Pl+3PlO:%>ihkok VERB_ENDLEX ;
 
-+Del+2Sg+3PlO:%>âhkanik ENDLEX ;
++Del+2Sg+3PlO:%>âhkanik VERB_ENDLEX ;
 
-+Del+12Pl+3SgO:%>âhkahk ENDLEX ;
-+Del+12Pl+3PlO:%>âhkahkok ENDLEX ;
++Del+12Pl+3SgO:%>âhkahk VERB_ENDLEX ;
++Del+12Pl+3PlO:%>âhkahkok VERB_ENDLEX ;
  
-+Del+2Pl+3SgO:%>âhkêk ENDLEX ;
-+Del+2Pl+3PlO:%>âhkêkok ENDLEX ;
++Del+2Pl+3SgO:%>âhkêk VERB_ENDLEX ;
++Del+2Pl+3PlO:%>âhkêkok VERB_ENDLEX ;
 
 ! =================================
 ! =================================
@@ -2429,16 +2429,16 @@ LEXICON VTAi_IMP_NULL_SG_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+Imm+2Sg+1SgO:%>in ENDLEX ;
++Imm+2Sg+1SgO:%>in VERB_ENDLEX ;
 
-+Del+2Sg+1SgO:%>ii2hkan ENDLEX ;
++Del+2Sg+1SgO:%>ii2hkan VERB_ENDLEX ;
 
 
 !!!!!!! Mixed !!!!!!!
 
-+Imm+2Sg+3SgO:i2 ENDLEX ;
++Imm+2Sg+3SgO:i2 VERB_ENDLEX ;
 
-+Del+2Sg+3SgO:%>âhkan ENDLEX ;
++Del+2Sg+3SgO:%>âhkan VERB_ENDLEX ;
 
 
 LEXICON VTAi_IMP_NULL_PL_SUFFIX
@@ -2450,31 +2450,31 @@ LEXICON VTAi_IMP_NULL_PL_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+Imm+2Sg+1PlO:%>inân ENDLEX ;
-+Imm+2Pl+1SgO:%>ik ENDLEX ;
++Imm+2Sg+1PlO:%>inân VERB_ENDLEX ;
++Imm+2Pl+1SgO:%>ik VERB_ENDLEX ;
 
-+Del+2Sg+1PlO:%>ii2hkâhk ENDLEX ;
-+Del+2Pl+1PlO:%>ii2hkâhk ENDLEX ;
-+Del+2Pl+1SgO:%>ii2hkêk ENDLEX ;
++Del+2Sg+1PlO:%>ii2hkâhk VERB_ENDLEX ;
++Del+2Pl+1PlO:%>ii2hkâhk VERB_ENDLEX ;
++Del+2Pl+1SgO:%>ii2hkêk VERB_ENDLEX ;
 
 
 !!!!!!! Mixed !!!!!!!
 
-+Imm+2Sg+3PlO:%>ik ENDLEX ;
++Imm+2Sg+3PlO:%>ik VERB_ENDLEX ;
 
-+Imm+12Pl+3SgO:%>âtân ENDLEX ;
-+Imm+12Pl+3PlO:%>âtânik ENDLEX ;
++Imm+12Pl+3SgO:%>âtân VERB_ENDLEX ;
++Imm+12Pl+3PlO:%>âtânik VERB_ENDLEX ;
 
-+Imm+2Pl+3SgO:%>ihk ENDLEX ;
-+Imm+2Pl+3PlO:%>ihkok ENDLEX ;
++Imm+2Pl+3SgO:%>ihk VERB_ENDLEX ;
++Imm+2Pl+3PlO:%>ihkok VERB_ENDLEX ;
 
-+Del+2Sg+3PlO:%>âhkanik ENDLEX ;
++Del+2Sg+3PlO:%>âhkanik VERB_ENDLEX ;
 
-+Del+12Pl+3SgO:%>âhkahk ENDLEX ;
-+Del+12Pl+3PlO:%>âhkahkok ENDLEX ;
++Del+12Pl+3SgO:%>âhkahk VERB_ENDLEX ;
++Del+12Pl+3PlO:%>âhkahkok VERB_ENDLEX ;
  
-+Del+2Pl+3SgO:%>âhkêk ENDLEX ;
-+Del+2Pl+3PlO:%>âhkêkok ENDLEX ;
++Del+2Pl+3SgO:%>âhkêk VERB_ENDLEX ;
++Del+2Pl+3PlO:%>âhkêkok VERB_ENDLEX ;
 
 
 
@@ -2507,23 +2507,23 @@ LEXICON VTA_FUT_CON_NULL_SG_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+2Sg+1SgO:%>iyani       ENDLEX ;
++2Sg+1SgO:%>iyani       VERB_ENDLEX ;
 
 !!!!!!! Mixed !!!!!!!
 
-+1Sg+3SgO:%>aki	   ENDLEX ;
-+2Sg+3SgO:%>aci	   ENDLEX ;
++1Sg+3SgO:%>aki	   VERB_ENDLEX ;
++2Sg+3SgO:%>aci	   VERB_ENDLEX ;
 
-+1Sg+4Sg/PlO:%>i2maki	   ENDLEX ;
-+2Sg+4Sg/PlO:%>i2maci	   ENDLEX ;
++1Sg+4Sg/PlO:%>i2maki	   VERB_ENDLEX ;
++2Sg+4Sg/PlO:%>i2maci	   VERB_ENDLEX ;
 
 !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
 
-+3Sg+4Sg/PlO:%>âci	   ENDLEX ;
++3Sg+4Sg/PlO:%>âci	   VERB_ENDLEX ;
 
-+4Sg/PlO+5Sg/PlO:%>âyici      ENDLEX ; ! From NS 152
++4Sg/PlO+5Sg/PlO:%>âyici      VERB_ENDLEX ; ! From NS 152
 
-+3Sg+5Sg/PlO:%>i2mâci      ENDLEX ; ! From NS 152
++3Sg+5Sg/PlO:%>i2mâci      VERB_ENDLEX ; ! From NS 152
 
 
 !!!!!!!!!!!!!!!!!!!!!
@@ -2532,20 +2532,20 @@ LEXICON VTA_FUT_CON_NULL_SG_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+1Sg+2SgO:%>i2tâni	   ENDLEX ;
++1Sg+2SgO:%>i2tâni	   VERB_ENDLEX ;
 
 !!!!!!! Mixed !!!!!!!
 
-+3Sg+1SgO:%>ici		   ENDLEX ;
-+3Sg+2SgO:%>i2ski		   ENDLEX ;
++3Sg+1SgO:%>ici		   VERB_ENDLEX ;
++3Sg+2SgO:%>i2ski		   VERB_ENDLEX ;
 
-+4Sg/Pl+1SgO:%>i2mici	   ENDLEX ;
-+4Sg/Pl+2SgO:%>i2miski	   ENDLEX ;
++4Sg/Pl+1SgO:%>i2mici	   VERB_ENDLEX ;
++4Sg/Pl+2SgO:%>i2miski	   VERB_ENDLEX ;
 
 !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
 
-+4Sg/Pl+3SgO:%>i2koci		   ENDLEX ;
-+5Sg/Pl+4Sg/PlO:%>i2koyici		   ENDLEX ;
++4Sg/Pl+3SgO:%>i2koci		   VERB_ENDLEX ;
++5Sg/Pl+4Sg/PlO:%>i2koyici		   VERB_ENDLEX ;
 
 
 ! ~~~~~~~~~~~~~~~~~~~~
@@ -2563,48 +2563,48 @@ LEXICON VTA_FUT_CON_NULL_PL_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+2Sg+1PlO:%>iyâhki       ENDLEX ;
++2Sg+1PlO:%>iyâhki       VERB_ENDLEX ;
 
-+2Pl+1PlO:%>iyâhki       ENDLEX ;
-+2Pl+1SgO:%>iyêko       ENDLEX ;
++2Pl+1PlO:%>iyâhki       VERB_ENDLEX ;
++2Pl+1SgO:%>iyêko       VERB_ENDLEX ;
 
 !!!!!!! Mixed !!!!!!!
 
-+1Sg+3PlO:%>akwâwi	   ENDLEX ;
++1Sg+3PlO:%>akwâwi	   VERB_ENDLEX ;
 
-+2Sg+3PlO:%>atwâwi	   ENDLEX ;
++2Sg+3PlO:%>atwâwi	   VERB_ENDLEX ;
 
-+1Pl+3SgO:%>âyâhki	   ENDLEX ;
-+1Pl+3PlO:%>âyâhkwâwi	   ENDLEX ;
++1Pl+3SgO:%>âyâhki	   VERB_ENDLEX ;
++1Pl+3PlO:%>âyâhkwâwi	   VERB_ENDLEX ;
 
-+12Pl+3SgO:%>âyahko	   ENDLEX ;
-+12Pl+3PlO:%>âyahkwâwi   ENDLEX ;
++12Pl+3SgO:%>âyahko	   VERB_ENDLEX ;
++12Pl+3PlO:%>âyahkwâwi   VERB_ENDLEX ;
 
-+2Pl+3SgO:%>âyêko	   ENDLEX ;
-+2Pl+3PlO:%>âyêkwâwi	   ENDLEX ;
++2Pl+3SgO:%>âyêko	   VERB_ENDLEX ;
++2Pl+3PlO:%>âyêkwâwi	   VERB_ENDLEX ;
 
-+1Pl+4Sg/PlO:%>i2mâyâhki	   ENDLEX ;
-+12Pl+4Sg/PlO:%>i2mâyahko	   ENDLEX ;
-+12Pl+4Sg/PlO:%>i2mâyahki	   ENDLEX ;
-+2Pl+4Sg/PlO:%>i2mâyêko	   ENDLEX ;
++1Pl+4Sg/PlO:%>i2mâyâhki	   VERB_ENDLEX ;
++12Pl+4Sg/PlO:%>i2mâyahko	   VERB_ENDLEX ;
++12Pl+4Sg/PlO:%>i2mâyahki	   VERB_ENDLEX ;
++2Pl+4Sg/PlO:%>i2mâyêko	   VERB_ENDLEX ;
 
 
-+X+1SgO:%>i2kawiyâni    ENDLEX ;
-+X+2SgO:%>i2kawiyani    ENDLEX ;
-+X+1PlO:%>i2kawiyâhki   ENDLEX ;
-+X+12PlO:%>i2kawiyahki   ENDLEX ;
++X+1SgO:%>i2kawiyâni    VERB_ENDLEX ;
++X+2SgO:%>i2kawiyani    VERB_ENDLEX ;
++X+1PlO:%>i2kawiyâhki   VERB_ENDLEX ;
++X+12PlO:%>i2kawiyahki   VERB_ENDLEX ;
 ! +X+12PlO:%>i2kawiyahko   # ;
-+X+2PlO:%>i2kawiyêko   ENDLEX ;
++X+2PlO:%>i2kawiyêko   VERB_ENDLEX ;
 
-+X+3SgO:%>i2hci   ENDLEX ;
-+X+3PlO:%>i2htwâwi  ENDLEX ;
-+X+4Sg/PlO:%>i2mihci  ENDLEX ;
++X+3SgO:%>i2hci   VERB_ENDLEX ;
++X+3PlO:%>i2htwâwi  VERB_ENDLEX ;
++X+4Sg/PlO:%>i2mihci  VERB_ENDLEX ;
 
 !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
 
-+3Pl+4Sg/PlO:%>âtwâwi     ENDLEX ; ! From NS 152
++3Pl+4Sg/PlO:%>âtwâwi     VERB_ENDLEX ; ! From NS 152
 
-+3Pl+5Sg/PlO:%>i2mâtwâwi      ENDLEX ; ! From NS 152
++3Pl+5Sg/PlO:%>i2mâtwâwi      VERB_ENDLEX ; ! From NS 152
 
 
 !!!!!!!!!!!!!!!!!!!!!
@@ -2613,36 +2613,36 @@ LEXICON VTA_FUT_CON_NULL_PL_SUFFIX
 
 !!!!!!! Local !!!!!!!
 
-+1Pl+2SgO:%>i2tâhki ENDLEX ;
++1Pl+2SgO:%>i2tâhki VERB_ENDLEX ;
 
-+1Pl+2PlO:%>i2tâhki	   ENDLEX ;
-+1Sg+2PlO:%>i2tako	   ENDLEX ;
++1Pl+2PlO:%>i2tâhki	   VERB_ENDLEX ;
++1Sg+2PlO:%>i2tako	   VERB_ENDLEX ;
 
 !!!!!!! Mixed !!!!!!!
 
-+3Pl+1SgO:%>itwâwi	   ENDLEX ;
++3Pl+1SgO:%>itwâwi	   VERB_ENDLEX ;
 
-+3Pl+2SgO:%>i2skwâwi		   ENDLEX ;
++3Pl+2SgO:%>i2skwâwi		   VERB_ENDLEX ;
 
-+3Sg+1PlO:%>i2koyâhki		   ENDLEX ;
-+3Sg+12PlO:%>i2koyahki		   ENDLEX ;
-+3Pl+1PlO:%>i2koyâhkwâwi		   ENDLEX ;
++3Sg+1PlO:%>i2koyâhki		   VERB_ENDLEX ;
++3Sg+12PlO:%>i2koyahki		   VERB_ENDLEX ;
++3Pl+1PlO:%>i2koyâhkwâwi		   VERB_ENDLEX ;
 
-+3Sg+12PlO:%>i2koyahko 		   ENDLEX ;
-+3Pl+12PlO:%>i2koyahkwâwi		   ENDLEX ;
++3Sg+12PlO:%>i2koyahko 		   VERB_ENDLEX ;
++3Pl+12PlO:%>i2koyahkwâwi		   VERB_ENDLEX ;
 
-+3Sg+2PlO:%>i2koyêko		   ENDLEX ; 
-+3Pl+2PlO:%>i2koyêkwâwi		   ENDLEX ;
++3Sg+2PlO:%>i2koyêko		   VERB_ENDLEX ; 
++3Pl+2PlO:%>i2koyêkwâwi		   VERB_ENDLEX ;
 
-+4Sg/Pl+1PlO:%>i2koyâhki	   ENDLEX ;
-+4Sg/Pl+12PlO:%>i2koyahko	   ENDLEX ;
-+4Sg/Pl+12PlO:%>i2koyahki	   ENDLEX ;
-+4Sg/Pl+2PlO:%>i2koyêko	   ENDLEX ;
++4Sg/Pl+1PlO:%>i2koyâhki	   VERB_ENDLEX ;
++4Sg/Pl+12PlO:%>i2koyahko	   VERB_ENDLEX ;
++4Sg/Pl+12PlO:%>i2koyahki	   VERB_ENDLEX ;
++4Sg/Pl+2PlO:%>i2koyêko	   VERB_ENDLEX ;
 
 
 !!!!!!!! Third/Fourth/Fifth Persons !!!!!!!!
 
-+4Sg/Pl+3PlO:%>i2kotwâwi		   ENDLEX ;
++4Sg/Pl+3PlO:%>i2kotwâwi		   VERB_ENDLEX ;
 
 
 
@@ -2720,50 +2720,50 @@ LEXICON VTA_FUT_CON_NULL_PL_SUFFIX
 ! @U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
 ! @U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
 ! @U.order.imp@+Imp:@U.order.imp@  VTA_IMP_PERSON ; !
-! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA_FUT_CON_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_FUT_CON_PERSON ; !
 ! 
 ! LEXICON VTAi_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense
 ! @U.order.indep@+Ind:@U.order.indep@ VTAi_IND_TENSE ; !
 ! @U.order.cnj@+Cnj:@U.order.cnj@ VTAi_CNJ_TENSE ; !
 ! @U.order.imp@+Imp:@U.order.imp@  VTAi_IMP_PERSON ; !
-! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTAi_FUT_CON_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTAi_FUT_CON_PERSON ; !
 ! 
 ! LEXICON VTAi_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
 ! @U.order.indep@+Ind:@U.order.indep@ VTAi_PL_IND_TENSE ; !
 ! @U.order.cnj@+Cnj:@U.order.cnj@ VTAi_PL_CNJ_TENSE ; !
 ! @U.order.imp@+Imp:@U.order.imp@  VTAi_PL_IMP_PERSON ; !
-! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTAi_PL_FUT_CON_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTAi_PL_FUT_CON_PERSON ; !
 ! 
 ! LEXICON VTA-3_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
 ! @U.order.indep@+Ind:@U.order.indep@ VTA-3_IND_TENSE ; !
 ! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-3_CNJ_TENSE ; !
 ! @U.order.imp@+Imp:@U.order.imp@  VTA-3_IMP_PERSON ; !
-! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-3_FUT_CON_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA-3_FUT_CON_PERSON ; !
 ! 
 ! LEXICON VTA-3_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
 ! @U.order.indep@+Ind:@U.order.indep@ VTA-3_PL_IND_TENSE ; !
 ! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-3_PL_CNJ_TENSE ; !
 ! @U.order.imp@+Imp:@U.order.imp@  VTA-3_PL_IMP_PERSON ; !
-! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-3_PL_FUT_CON_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA-3_PL_FUT_CON_PERSON ; !
 ! 
 ! 
 ! LEXICON VTA-4_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Independent is same as TA regular
 ! @U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
 ! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-4_CNJ_TENSE ; !
 ! @U.order.imp@+Imp:@U.order.imp@  VTA-4_IMP_PERSON ; !
-! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-4_FUT_CON_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA-4_FUT_CON_PERSON ; !
 ! 
 ! LEXICON VTA-5_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
 ! @U.order.indep@+Ind:@U.order.indep@ VTA-4_IND_TENSE ; !
 ! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-4_CNJ_TENSE ; !
 ! @U.order.imp@+Imp:@U.order.imp@  VTA-5_IMP_PERSON ; !
-! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-4_FUT_CON_PERSON ; !
+! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA-4_FUT_CON_PERSON ; !
 ! 
 ! !! LEXICON VTAti_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Independent is as TA regular, Imp as TAi, all else is as TAt
 ! !! @U.order.indep@+Ind:@U.order.indep@ VTA-4_IND_TENSE ; !
 ! !! @U.order.cnj@+Cnj:@U.order.cnj@ VTA-4_CNJ_TENSE ; !
 ! !! @U.order.imp@+Imp:@U.order.imp@  VTA-5_IMP_PERSON ; !
-! !! @U.order.FutCon@+Fut+Cond:@U.order.indep@ VTA-4_FUT_CON_PERSON ; !
+! !! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA-4_FUT_CON_PERSON ; !
 ! 
 ! !!! TENSES
 ! 
@@ -5547,7 +5547,8 @@ LEXICON VTA_FUT_CON_NULL_PL_SUFFIX
 ! +4Sg/Pl+3PlO:%>i2kotwâwi		   # ;
 ! 
 
-LEXICON ENDLEX
-
+LEXICON VERB_ENDLEX
 @R.joiner.NULL@+Err/Orth:@R.joiner.NULL@ # ;
 @D.joiner.NULL@ # ;
+
+!! End of verb affixes code
