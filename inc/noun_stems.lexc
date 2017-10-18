@@ -67,9 +67,12 @@ askekin:askêkinw NI "fresh rawhide" ; ! AEW NI-3 (Vowel-Initial Cw NI Stem)
 wâwi:wâw2 NI_SG/I_POSS/IM "egg" ; ! AEW NI-4 (Consonant-Initial Single-Syllable NI Stem)
 osk-âyi:osk-ây4 NI_SG/I_POSS/IM "new item, new thing" ; ! AEW NI-4 (Vowel-Initial Single-Syllable NI Stem)
 mihko:mihkw NI_SG/I_POSS/IM "blood" ; ! AEW NI-4w (Consonant-Initial Single-Syllable-/w/ NI Stem)
-! Remaining example stem cases
-! atimw ! Suppletively irregular NA
-ôsi:ôs NI_SG/I_POSS/IM ; ! AEW NI-4 (Vowel-Initial Single-Syllable irregular NI Stem)
+! Irregular stem cases
+! Suppletive atimw-/-têm-
+@R.person.NULL@atim:@R.person.NULL@atimw NA "dog, beast of burden" ; ! Regular stem of 'atim': 'atimw' (cannot be possessed)
+@D.person.NULL@atim:@D.person.NULL@têm NA "dog, beast of burden" ;   ! Irregular suppletive stem of 'atim': '-têm' (must be possessed)
+! Regular/Irregular ôsi- both a regularly inflecting stem, and a number of irregular forms enumerated separately
+ôsi:ôs NI_SG/I_POSS/IM "canoe, boat" ; ! AEW NI-4 (Vowel-Initial Single-Syllable irregular NI Stem)
 ! Subset of lexicalized Diminutive Animate Independent stems
 @P.dim.DIM@ NOUN_INDEP_DIM_STEMS ;
 
