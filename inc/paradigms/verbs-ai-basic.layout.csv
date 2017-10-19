@@ -1,0 +1,31 @@
+name: "Animate intransitive verb basic paradigm"		
+paradigm: 'verb-ai.paradigm'		
+layout:		
+  type: "basic"		
+tooltips:		
+  eng:		
+    "1s": "1st person singular actor"		
+    "2s": "2nd person singular actor"		
+    "3s": "3rd person singular actor"		
+    "1p": "1st person plural exclusive actor"		
+    "21": "1st person plural inclusive actor"		
+    "2p": "2nd person plural actor"		
+    "3p": "3rd person plural actor"		
+    "4": "3rd person obviative actor"		
+--		
+	"PRESENT TENSE"	
+	: "Independent"	: "Conjunct"
+"1s"	Ind+Prs+1Sg	PV/e+*+Cnj+Prs+1Sg
+"2s"	Ind+Prs+2Sg	PV/e+*+Cnj+Prs+2Sg
+"3s"	Ind+Prs+3Sg	PV/e+*+Cnj+Prs+3Sg
+"1p"	Ind+Prs+1Pl 	PV/e+*+Cnj+Prs+1Pl
+"21"	Ind+Prs+21Pl	PV/e+*+Cnj+Prs+21Pl
+"2p"	Ind+Prs+2Pl	PV/e+*+Cnj+Prs+2Pl
+"3p"	Ind+Prs+3Pl	PV/e+*+Cnj+Prs+3Pl
+"4"	Ind+Prs+4Sg/Pl	PV/e+*+Cnj+Prs+4Sg/Pl
+		
+	"IMPERATIVE"	
+"Local"	: "Immediate"	: "Delayed"
+"2s"	Imp+Imm+2Sg	Imp+Del+2Sg
+"21"	Imp+Imm+12Pl	Imp+Del+12Pl
+"2p"	Imp+Imm+2Pl	Imp+Del+2Pl
