@@ -1938,6 +1938,9 @@ MAPPING-PREFIX = & ;
 
 SECTION
 
+# Speller suggestions rule - make sure the suggestions survive the cg mangling:
+ADD (&typo &SUGGESTWF) (<spelled>);
+
 ADD:err-no-conneg (&err-no-conneg) TARGET V IF (-1 Neg) (NOT *-2 ConNeg)(0 V + Ind OR Cond)(NOT 0 ConNeg)(NOT *1 ConNeg BARRIER CLB);
 
 ADD:err-agr (&err-agr) TARGET V IF (-1C Sg + Nom)(0 V)(NOT 0 Sg3);
