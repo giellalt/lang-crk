@@ -755,12 +755,12 @@ s:0 <=> _ t3:s ;
 ! !!€ ah>i3 
 ! !!€ ah0i
 
-! DOES NOT WORK YET - NEEDED FOR diminutivization of mîwas with t3
-! "t3DimRule"
-! t3:c <= _ :* %^DIM:0 ;
+! Diminutivization of mîwas with stem-final t3
+"t3DimRule"
+t3:c <=> _ %>:0 i2: %^DIM:0 s: ;
 
-! !!€ mi4<wat3>i2^DIMs
-! !!€ mî0wac0i0s
+!!€ mi4<îwat3>i2^DIMs
+!!€ m00îwac0i0s
 
 ! Matching weak/strong reduplication consonant placeholder %^DUPL1 with stem-initial consonant
 "ReduplCRule1"
