@@ -1,0 +1,228 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@uit.no or feedback@divvun.no
+
+! ============================= !
+!! !!!File containing abbreviations 
+! ============================= !
+
+!! !!Lexica for adding tags and periods
+! ----------------------------------
+
+!! Splitting in 4 + 1  groups, because of the preprocessor
+!  - - - - - - - - - - - - - - - - - - - - - - - - -
+
+LEXICON Abbreviation   !!= * __@CODE@__
+ITRAB ;	   !!= # The @CODE@ lexicon (intransitive abbrs)
+TRNUMAB ;  !!= # The @CODE@ lexicon (abbrs trans wrt. numberals)
+
+!! !!The sublexica
+!! !Dividing between abbreviations with and witout final period
+
+LEXICON ab-noun   !!= * __@CODE@__
+ab-nodot-noun ;
+ab-dot-noun ;
+
+LEXICON ab-adv   !!= * __@CODE@__
+ab-nodot-adv ;
+ab-dot-adv ;
+
+!! !The lexicons that add tags
+
+LEXICON ab-nodot-noun   !!= * __@CODE@__  The bulk
++N+ABBR:   # ; ! no period, that is.
+
+LEXICON ab-dot-noun   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
++N+ABBR:%.  # ;
+
+LEXICON ab-nodot-adv   !!= * __@CODE@__
++Adv+ABBR: # ; ! no period, that is.
+
+LEXICON ab-dot-adv   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
++ABBR:%.  # ; ! Adv without case.
+
+LEXICON ab-dot-adj   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
++A+ABBR:%.  # ;
+
+
+
+!! !!The abbreviation lexicon itself
+! -------------------------------
+
+! Miscellaneous symbols, abbreviation symbols
+! -------------------------------------------
+
+LEXICON SYMBOLS   !!= * __@CODE@__ is for iscellaneous abbr symbols
+ §+N+ABBR:§    #  ; ! §:s
+§§+N+ABBR:§§   #  ; !§§:ain
+ $+N+ABBR:$    #  ; ! $:s
+ €+N+ABBR:€    #  ; ! €:s
+ £+N+ABBR:£    #  ; ! £:s
+ ®+N+ABBR:® # ;
+ ©+N+ABBR:© # ;
+
+
+! =============================================== !
+! Intransitive abbreviations 
+! =============================================== !
+
+LEXICON ITRAB   !!= * __@CODE@__ are intransitive abbreviations, Ltd. etc.
+
+! These may end sentences.
+
+Dep  ab-noun ;
+Ltd  ab-noun ;
+Inc ab-noun ;
+
+
+! Abbreviations that are not treated as abbreviations 
+! at the end of the sentence 
+
+
+
+! ============================================================ !
+! Abreviations who are transitive in front of numerals 
+! ============================================================ !
+
+LEXICON TRNUMAB   !!= * __@CODE@__ contains abbreviations who are transitive in front of numerals 
+
+!! For abbrs for which numerals are complements, but other
+!! words not necessarily are. This group treats arabic numerals as
+!! if it were transitive but letters as if it were intransitive.
+
+! TODO: Bug the fact that these abbrs do not distinguish between
+! cap and small letters, whereast he ITRAB ones do.
+
+
+nr ab-dot-noun ; !
+
+
+
+! =============================================== !
+! Transitive abbreviations !
+! =============================================== !
+
+LEXICON TRAB   !!= * __@CODE@__ contains transitive abbreviations
+
+!! This lexicon is for abbrs that always have a constituent following it.
+
+P.S ab-dot-noun ;
+Dr ab-dot-noun ;
+St ab-dot-noun ;
+Mr ab-dot-noun ;
+alt ab-dot-noun ;
+
+
+
+
+
+! Here comes the initials
+! They are found in names etc.
+
+! 13.11.11: changed
+! A:A ab-nodot-noun; !
+! to
+! A:A ab-dot-noun; !
+! in order to harmonise with nob.
+
+! A.-xyz   LOWER-CASE-DOUBLETS
+A:A ab-dot-noun;
+B:B ab-dot-noun;
+C:C ab-dot-noun;
+D:D ab-dot-noun;
+E:E ab-dot-noun;
+F:F ab-dot-noun;
+G:G ab-dot-noun;
+H:H ab-dot-noun;
+I:I ab-dot-noun;
+J:J ab-dot-noun;
+K:K ab-dot-noun;
+L:L ab-dot-noun;
+M:M ab-dot-noun;
+N:N ab-dot-noun;
+O:O ab-dot-noun;
+P:P ab-dot-noun;
+Q:Q ab-dot-noun;
+R:R ab-dot-noun;
+S:S ab-dot-noun;
+T:T ab-dot-noun;
+U:U ab-dot-noun;
+V:V ab-dot-noun;
+W:W ab-dot-noun;
+X:X ab-dot-noun;
+Y:Y ab-dot-noun;
+Z:Z ab-dot-noun;
+Ä:Ä ab-dot-noun;
+
+
+! a-klasse
+á:á ab-nodot-noun;
+a:a ab-nodot-noun; !
+c:c ab-nodot-noun; !
+d:d ab-nodot-noun; !
+e:e ab-nodot-noun; !
+f:f ab-nodot-noun; !
+g:g ab-nodot-noun; !
+h:h ab-nodot-noun; !
+i:i ab-nodot-noun; !
+j:j ab-nodot-noun; !
+k:k ab-nodot-noun; !
+l:l ab-nodot-noun; !
+m:m ab-nodot-noun; !
+n:n ab-nodot-noun; !
+o:o ab-nodot-noun; !mysko
+p:p ab-nodot-noun; !
+q:q ab-nodot-noun; !
+r:r ab-nodot-noun; !
+s:s ab-nodot-noun; !
+t:t ab-nodot-noun; !
+u:u ab-nodot-noun; !
+v:v ab-nodot-noun; !
+w:w ab-nodot-noun; !
+x:x ab-nodot-noun; !
+y:y ab-nodot-noun; !
+z:z ab-nodot-noun; !
+ä:ä ab-nodot-noun; !
+
+! a.-xyz
+á:á ab-dot-noun;
+a:a ab-dot-noun; !
+c:c ab-dot-noun; !
+d:d ab-dot-noun; !
+e:e ab-dot-noun; !
+f:f ab-dot-noun; !
+g:g ab-dot-noun; !
+h:h ab-dot-noun; !
+i:i ab-dot-noun; !
+j:j ab-dot-noun; !
+k:k ab-dot-noun; !
+l:l ab-dot-noun; !
+m:m ab-dot-noun; !
+n:n ab-dot-noun; !
+o:o ab-dot-noun; !
+p:p ab-dot-noun; !
+q:q ab-dot-noun; !
+r:r ab-dot-noun; !
+s:s ab-dot-noun; !
+t:t ab-dot-noun; !
+u:u ab-dot-noun; !
+v:v ab-dot-noun; !
+w:w ab-dot-noun; !
+x:x ab-dot-noun; !
+y:y ab-dot-noun; !
+z:z ab-dot-noun; !
+ä:ä ab-dot-noun; !
+
+
+
+
