@@ -674,8 +674,10 @@ ii2
 LEXICON Root         !!=  @CODE@ is where it all starts
 
 ! NounPrefixes ;       !!= * @CODE@
-NOUN_PREFIXES ;
-NOUN_IRREGULARS ;
+!NOUN_PREFIXES ;
+DEP-KINTERMSSTEMS ;
+DEP-M-INIT-STEMS ;
+STEMS ;
 VerbPrefixes ;       !!= * @CODE@
 Pronoun ;            !!= * @CODE@
 Propernouns ;        !!= * @CODE@
