@@ -1,5 +1,5 @@
 name: "Animate intransitive verb basic paradigm"		
-paradigm: 'verb-ai.paradigm'		
+'paradigm: ''verb-ai.paradigm'''		
 layout:		
   type: "basic"		
 tooltips:		
@@ -19,7 +19,7 @@ tooltips:
 "2s"	Ind+Prs+2Sg	PV/e+*+Cnj+Prs+2Sg
 "3s"	Ind+Prs+3Sg	PV/e+*+Cnj+Prs+3Sg
 "1p"	Ind+Prs+1Pl 	PV/e+*+Cnj+Prs+1Pl
-"21"	Ind+Prs+21Pl	PV/e+*+Cnj+Prs+21Pl
+"21"	Ind+Prs+12Pl	PV/e+*+Cnj+Prs+12Pl
 "2p"	Ind+Prs+2Pl	PV/e+*+Cnj+Prs+2Pl
 "3p"	Ind+Prs+3Pl	PV/e+*+Cnj+Prs+3Pl
 "4"	Ind+Prs+4Sg/Pl	PV/e+*+Cnj+Prs+4Sg/Pl

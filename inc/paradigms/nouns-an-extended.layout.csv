@@ -1,5 +1,5 @@
 name: "Animate noun extended paradigm"		
-paradigm: 'noun-an.paradigm'		
+'paradigm: ''noun-an.paradigm'''		
 layout:		
   type: "extended"		
 tooltips:		
@@ -16,19 +16,20 @@ tooltips:
 "Singular"	Sg	
 "Plural"	Pl	
 "Locative"	Loc	
+"Obviative"	Obv	
 		
 	"DIMINUTIVE"	
-"Singular"	Der/Dim+N+AN+Sg	
-"Plural"	Der/Dim+N+AN+Pl	
-"Locative"	Der/Dim+N+AN+Loc	
+"Singular"	Der/Dim+N+A+Sg	
+"Plural"	Der/Dim+N+A+Pl	
+"Locative"	Der/Dim+N+A+Loc	
 		
 	"POSSESSION"	
 	: "Singular Noun"	: "Plural Noun"
-"1s"	Sg+Px1Sg	Pl+Px1Sg
-"2s"	Sg+Px2Sg	Pl+Px2Sg
-"3s"	Sg+Px3Sg	Pl+Px3Sg
-"1p"	Sg+Px1Pl	Pl+Px1Pl
-"21"	Sg+Px12Pl	Pl+Px12Pl
-"2p"	Sg+Px2Pl	Pl+Px2Pl
-"3p"	Sg+Px3Pl	Pl+Px3Pl
-"4"	Sg+Px4Sg/Pl	Pl+Px4Sg/Pl
+"1s"	Px1Sg+Sg	Px1Sg+Pl
+"2s"	Px2Sg+Sg	Px2Sg+Pl
+"3s"	Px3Sg+Sg	Px3Sg+Pl
+"1p"	Px1Pl+Sg	Px1Pl+Pl
+"21"	Px12Pl+Sg	Px12Pl+Pl
+"2p"	Px2Pl+Sg	Px2Pl+Pl
+"3p"	Px3Pl+Sg	Px3Pl+Pl
+"4"	Px4Sg/Pl+Sg	Px4Sg/Pl+Pl

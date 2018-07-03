@@ -1,5 +1,5 @@
 name: "Animate noun basic paradigm"	
-paradigm: 'noun-an.paradigm'	
+'paradigm: ''noun-an.paradigm'''	
 layout:	
   type: "basic"	
 tooltips:	
@@ -11,6 +11,7 @@ tooltips:
 "Singular"	Sg
 "Plural"	Pl
 "Locative"	Loc
-"1s poss (sg)"	Sg+Px1Sg
-"2s poss (sg)"	Sg+Px2Sg
-"3s poss (sg)"	Sg+Px3Sg
+"Obviative"	Obv
+"1s poss (sg)"	Px1Sg+Sg
+"2s poss (sg)"	Px2Sg+Sg
+"3s poss (sg)"	Px3Sg+Sg
