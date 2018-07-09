@@ -18,9 +18,9 @@ tooltips:
 "Locative"	Loc		
 			
 	"DIMINUTIVE"		
-"Singular"	Der/Dim+N+I+Sg		
-"Plural"	Der/Dim+N+I+Pl		
-"Locative"	Der/Dim+N+I+Loc		
+"Singular"	Der/Dim+N+I+D+Sg		
+"Plural"	Der/Dim+N+I+D+Pl		
+"Locative"	Der/Dim+N+I+D+Loc		
 			
 	"POSSESSION"		
 	: "Singular Noun"	: "Plural Noun"	: "Locative"
@@ -35,11 +35,11 @@ tooltips:
 			
 	"DIMINUTIVE POSSESSION"		
 	: "Singular Noun"	: "Plural Noun"	: "Locative"
-"1s"	Der/Dim+N+I+Px1Sg+Sg	Der/Dim+N+I+Px1Sg+Pl	Der/Dim+N+I+Px1Sg+Loc
-"2s"	Der/Dim+N+I+Px2Sg+Sg	Der/Dim+N+I+Px2Sg+Pl	Der/Dim+N+I+Px2Sg+Loc
-"3s"	Der/Dim+N+I+Px3Sg+Sg	Der/Dim+N+I+Px3Sg+Pl	Der/Dim+N+I+Px3Sg+Loc
-"1p"	Der/Dim+N+I+Px1Pl+Sg	Der/Dim+N+I+Px1Pl+Pl	Der/Dim+N+I+Px1Pl+Loc
-"21p"	Der/Dim+N+I+Px12Pl+Sg	Der/Dim+N+I+Px12Pl+Pl	Der/Dim+N+I+Px12Pl+Loc
-"2p"	Der/Dim+N+I+Px2Pl+Sg	Der/Dim+N+I+Px2Pl+Pl	Der/Dim+N+I+Px2Pl+Loc
-"3p"	Der/Dim+N+I+Px3Pl+Sg	Der/Dim+N+I+Px3Pl+Pl	Der/Dim+N+I+Px3Pl+Loc
-"4"	Der/Dim+N+I+Px4Sg/Pl+Sg	Der/Dim+N+I+Px4Sg/Pl+Pl	Der/Dim+N+I+Px4Sg/Pl+Loc
+"1s"	Der/Dim+N+I+D+Px1Sg+Sg	Der/Dim+N+I+D+Px1Sg+Pl	Der/Dim+N+I+D+Px1Sg+Loc
+"2s"	Der/Dim+N+I+D+Px2Sg+Sg	Der/Dim+N+I+D+Px2Sg+Pl	Der/Dim+N+I+D+Px2Sg+Loc
+"3s"	Der/Dim+N+I+D+Px3Sg+Sg	Der/Dim+N+I+D+Px3Sg+Pl	Der/Dim+N+I+D+Px3Sg+Loc
+"1p"	Der/Dim+N+I+D+Px1Pl+Sg	Der/Dim+N+I+D+Px1Pl+Pl	Der/Dim+N+I+D+Px1Pl+Loc
+"21p"	Der/Dim+N+I+D+Px12Pl+Sg	Der/Dim+N+I+D+Px12Pl+Pl	Der/Dim+N+I+D+Px12Pl+Loc
+"2p"	Der/Dim+N+I+D+Px2Pl+Sg	Der/Dim+N+I+D+Px2Pl+Pl	Der/Dim+N+I+D+Px2Pl+Loc
+"3p"	Der/Dim+N+I+D+Px3Pl+Sg	Der/Dim+N+I+D+Px3Pl+Pl	Der/Dim+N+I+D+Px3Pl+Loc
+"4"	Der/Dim+N+I+D+Px4Sg/Pl+Sg	Der/Dim+N+I+D+Px4Sg/Pl+Pl	Der/Dim+N+I+D+Px4Sg/Pl+Loc
