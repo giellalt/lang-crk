@@ -1,0 +1,24 @@
+name: "Animate dependent noun extended paradigm"		
+'paradigm: ''noun-an-d.paradigm'''		
+layout:		
+  type: "extended"		
+tooltips:		
+  eng:		
+    "1s": "1st person singular possessor"		
+    "2s": "2nd person singular possessor"		
+    "3s": "3rd person singular possessor"		
+    "1p": "1st person plural exclusive possessor"		
+    "21": "1st person plural inclusive possessor"		
+    "2p": "2nd person plural possessor"		
+    "3p": "3rd person plural possessor"		
+    "4": "Obviative possessor"		
+--		
+	: "Singular Noun"	: "Plural Noun"
+"1s"	Px1Sg+Sg	Px1Sg+Pl
+"2s"	Px2Sg+Sg	Px2Sg+Pl
+"3s"	Px3Sg+Obv	Px3Sg+Obv
+"1p"	Px1Pl+Sg	Px1Pl+Pl
+"21"	Px12Pl+Sg	Px12Pl+Pl
+"2p"	Px2Pl+Sg	Px2Pl+Pl
+"3p"	Px3Pl+Obv	Px3Pl+Obv
+"4"	Px4Sg/Pl+Obv	Px4Sg/Pl+Obv

@@ -1,0 +1,45 @@
+name: "Inanimate dependent noun full paradigm"			
+'paradigm: ''noun-in-d.paradigm'''			
+layout:			
+  type: "full"			
+tooltips:			
+  eng:			
+    "1s": "1st person singular possessor"			
+    "2s": "2nd person singular possessor"			
+    "3s": "3rd person singular possessor"			
+    "1p": "1st person plural exclusive possessor"			
+    "21": "1st person plural inclusive possessor"			
+    "2p": "2nd person plural possessor"			
+    "3p": "3rd person plural possessor"			
+    "4": "Obviative possessor"			
+--			
+"Singular"	Sg		
+"Plural"	Pl		
+"Locative"	Loc		
+			
+	"DIMINUTIVE"		
+"Singular"	Der/Dim+N+I+Sg		
+"Plural"	Der/Dim+N+I+Pl		
+"Locative"	Der/Dim+N+I+Loc		
+			
+	"POSSESSION"		
+	: "Singular Noun"	: "Plural Noun"	: "Locative"
+"1s"	Px1Sg+Sg	Px1Sg+Pl	Px1Sg+Loc
+"2s"	Px2Sg+Sg	Px2Sg+Pl	Px2Sg+Loc
+"3s"	Px3Sg+Sg	Px3Sg+Pl	Px3Sg+Loc
+"1p"	Px1Pl+Sg	Px1Pl+Pl	Px1Pl+Loc
+"21p"	Px12Pl+Sg	Px12Pl+Pl	Px12Pl+Loc
+"2p"	Px2Pl+Sg	Px2Pl+Pl	Px2Pl+Loc
+"3p"	Px3Pl+Sg	Px3Pl+Pl	Px3Pl+Loc
+"4"	Px4Sg/Pl+Sg	Px4Sg/Pl+Pl	Px4Sg/Pl+Loc
+			
+	"DIMINUTIVE POSSESSION"		
+	: "Singular Noun"	: "Plural Noun"	: "Locative"
+"1s"	Der/Dim+N+I+Px1Sg+Sg	Der/Dim+N+I+Px1Sg+Pl	Der/Dim+N+I+Px1Sg+Loc
+"2s"	Der/Dim+N+I+Px2Sg+Sg	Der/Dim+N+I+Px2Sg+Pl	Der/Dim+N+I+Px2Sg+Loc
+"3s"	Der/Dim+N+I+Px3Sg+Sg	Der/Dim+N+I+Px3Sg+Pl	Der/Dim+N+I+Px3Sg+Loc
+"1p"	Der/Dim+N+I+Px1Pl+Sg	Der/Dim+N+I+Px1Pl+Pl	Der/Dim+N+I+Px1Pl+Loc
+"21p"	Der/Dim+N+I+Px12Pl+Sg	Der/Dim+N+I+Px12Pl+Pl	Der/Dim+N+I+Px12Pl+Loc
+"2p"	Der/Dim+N+I+Px2Pl+Sg	Der/Dim+N+I+Px2Pl+Pl	Der/Dim+N+I+Px2Pl+Loc
+"3p"	Der/Dim+N+I+Px3Pl+Sg	Der/Dim+N+I+Px3Pl+Pl	Der/Dim+N+I+Px3Pl+Loc
+"4"	Der/Dim+N+I+Px4Sg/Pl+Sg	Der/Dim+N+I+Px4Sg/Pl+Pl	Der/Dim+N+I+Px4Sg/Pl+Loc
