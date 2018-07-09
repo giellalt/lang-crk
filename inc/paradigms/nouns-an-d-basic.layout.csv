@@ -1,0 +1,13 @@
+name: "Animate noun basic paradigm"	
+'paradigm: ''noun-an.paradigm'''	
+layout:	
+  type: "basic"	
+tooltips:	
+  eng:	
+    "1s poss (sg)": "1st person singular possessor, singular noun"	
+    "2s poss (sg)": "2nd person singular possessor, singular noun"	
+    "3s poss (sg)": "3rd person singular possessor, singular noun"	
+--	
+"1s poss (sg)"	Px1Sg+Sg
+"2s poss (sg)"	Px2Sg+Sg
+"3s poss (sg)"	Px3Sg+Obv

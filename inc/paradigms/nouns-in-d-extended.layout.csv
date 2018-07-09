@@ -1,0 +1,34 @@
+name: "Inanimate noun extended paradigm"		
+'paradigm: ''noun-in.paradigm'''		
+layout:		
+  type: "extended"		
+tooltips:		
+  eng:		
+    "1s": "1st person singular possessor"		
+    "2s": "2nd person singular possessor"		
+    "3s": "3rd person singular possessor"		
+    "1p": "1st person plural exclusive possessor"		
+    "21": "1st person plural inclusive possessor"		
+    "2p": "2nd person plural possessor"		
+    "3p": "3rd person plural possessor"		
+    "4": "Obviative possessor"		
+--		
+"Singular"	Sg	
+"Plural"	Pl	
+"Locative"	Loc	
+		
+	"DIMINUTIVE"	
+"Singular"	Der/Dim+N+I+Sg	
+"Plural"	Der/Dim+N+I+Pl	
+"Locative"	Der/Dim+N+I+Loc	
+		
+	"POSSESSION"	
+	: "Singular Noun"	: "Plural Noun"
+"1s"	Px1Sg+Sg	Px1Sg+Pl
+"2s"	Px2Sg+Sg	Px2Sg+Pl
+"3s"	Px3Sg+Sg	Px3Sg+Pl
+"1p"	Px1Pl+Sg	Px1Pl+Pl
+"21"	Px12Pl+Sg	Px12Pl+Pl
+"2p"	Px2Pl+Sg	Px2Pl+Pl
+"3p"	Px3Pl+Sg	Px3Pl+Pl
+"4"	Px4Sg/Pl+Sg	Px4Sg/Pl+Pl
