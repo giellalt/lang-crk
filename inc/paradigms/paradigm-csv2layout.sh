@@ -2,7 +2,7 @@
 
 # paradigm-csv2layout.sh 1:paradigm-csv-file
 
-cat $1 |
+cat $1 | tr -d "\r" |
 
 gawk 'BEGIN { FS="\t"; }
 { if(match($0,"^[-][-]")!=0)
