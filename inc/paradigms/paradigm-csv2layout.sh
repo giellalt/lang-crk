@@ -1,28 +1,44 @@
 #!/bin/sh
 
-# paradigm-csv2layout.sh 1:paradigm-csv-file
+# Usage:
+#
+#   paradigm-csv2layout.sh paradigm.csv
 
-cat $1 | tr -d "\r" |
+# TODO: ensure the files look like a valid CSV layout file.
 
-gawk 'BEGIN { FS="\t"; }
-{ if(match($0,"^[-][-]")!=0)
-    { body="yes";
-      start=NR+1;
-      print $1;
-    }
-  if(body!="yes")
-    print $1;
-  else
-    { line[NR]=$0;
-      for(i=1; i<=NF; i++)
-         if(length($i)>max)
-           max=length($i);
-    }
+# Remove carriage returns -- Thanks, Excel. /s
+<"$1" tr -d "\r" | gawk '
+
+BEGIN {
+  FS="\t";
 }
-END { for(j=start; j<=NR; j++)
-         { n=split(line[j],f,"\t");
-           for(i=1; i<=n; i++)
-             printf "| %-"max"s ", f[i];
-           printf "|\n";
-         }
+
+# Figure out where the preamble ends and where the layout proper starts:
+$0 ~ /^[-][-]/ {
+    body = 1;
+    start = NR + 1;
+    print $1;
+}
+
+# Print the first column from the preamble verbatim.
+!body {
+    print $1;
+}
+
+# Store each row in the body and determine the width of the widest column.
+body {
+  line[NR] = $0;
+  for (i = 1; i <= NF; i++)
+    if (length($i) > max)
+      max = length($i);
+}
+
+# Print the layout, with proper column widths.
+END {
+  for (j = start; j <= NR; j++) {
+    n = split(line[j], f, "\t");
+    for (i = 1; i <= n; i++)
+        printf "| %-"max"s ", f[i];
+    printf "|\n";
+  }
 }'
