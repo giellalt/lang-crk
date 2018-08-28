@@ -20,7 +20,7 @@ $0 ~ /^[-][-]/ {
     print $1;
 }
 
-# Print the first column from the preamble verbatim.
+# Print the preamble verbatim.
 !body {
     print $1;
 }
