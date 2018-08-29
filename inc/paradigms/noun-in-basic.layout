@@ -1,12 +1,16 @@
-name: "Inanimate noun extended paradigm"
-paradigm: 'noun-in.paradigm'
+name: "Inanimate noun basic paradigm"
+paradigm: noun-in.paradigm
 layout:
   type: "basic"
+tooltips:
+  eng:
+    "1s poss (sg)": "1st person singular possessor, singular noun"
+    "2s poss (sg)": "2nd person singular possessor, singular noun"
+    "3s poss (sg)": "3rd person singular possessor, singular noun"
 --
-|                | "Inanimate"     |
-| "Singular"     | =N+IN+Sg        |
-| "Plural"       | =N+IN+Pl        |
-| "Locative"     | =N+IN+Loc       |
-| "1s Poss (sg)" | =N+IN+Sg+Px1Sg  |
-| "2s Poss (sg)" | =N+IN+Sg+Px2Sg  |
-| "3s Poss (sg)" | =N+IN+Sg+Px3Sg  |
+| "Singular"     | Sg             |
+| "Plural"       | Pl             |
+| "Locative"     | Loc            |
+| "1s poss (sg)" | Px1Sg+Sg       |
+| "2s poss (sg)" | Px2Sg+Sg       |
+| "3s poss (sg)" | Px3Sg+Sg       |
