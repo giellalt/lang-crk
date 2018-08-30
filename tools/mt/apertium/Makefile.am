@@ -37,4 +37,7 @@ APERTIUM_CG_INCLUDE_SRC=
 clean-local:
 	-rm -f *.hfst *.gz *.cg3 *.bin *.hfstol
 
+##########################################
+# General build rules included from here:#
+
 include $(top_srcdir)/am-shared/tools-mt-apertium-dir-include.am
