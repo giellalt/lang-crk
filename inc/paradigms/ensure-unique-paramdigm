@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# Check if a paradigm file has duplicate forms.
+# 
+# Eddie Antonio Santos <easantos@ualberta.ca>
+
+paradigm_file="$1"
+
+find_duplicates() {
+  <"$paradigm_file" awk '
+      in_body && /\S/ {
+        print
+      }
+    
+      /^--/ {
+        in_body = 1
+    }' | sort | uniq -c | awk '$1 != 1'
+}
+# Find and store all duplicate forms in a variable.
+duplicate_forms="$(find_duplicates)"
+
+if [ -z "$duplicate_forms" ]; then
+  # Hooray! No duplicate forms!
+  exit 0
+fi
+
+echo "$(tput setaf 1)Duplicate entries in $(tput bold)$paradigm_file$(tput sgr0):" 1>&2
+echo "$duplicate_forms" 1>&2
+exit 1

@@ -8,26 +8,22 @@
 #
 # Author: Eddie Antonio Santos <easantos@ualberta.ca>
 
-LAYOUTS = \
-	noun-in-basic.layout \
-	noun-in-full.layout \
-	noun-an-basic.layout \
-	noun-an-extended.layout \
-	noun-an-full.layout \
-	noun-in-basic.layout \
-	noun-in-extended.layout \
-	noun-in-full.layout \
-	verb-ta-full.layout \
-	verb-ta-basic.layout \
-	verb-ta-basic2.layout \
-	verb-ta-extended.layout
+LAYOUTS = $(patsubst %.csv,%,$(wildcard *.layout.csv))
 		
 
-all: $(LAYOUTS)
+all: check layouts
 
+layouts: $(LAYOUTS)
+
+check:
+	@echo $(wildcard *.paradigm) | xargs -n1 ./ensure-unique-paramdigm
+	
+# Convert a .csv layout file into a forma suitable for NDS/itwêwina.
 %.layout: %.layout.csv 
 	./paradigm-csv2layout.sh $< >$@
 
 
 # ./paradigm-csv2layout.sh might fail, so delete failed results.
 .DELETE_ON_ERROR:
+
+.PHONY: all layouts check
