@@ -1,4 +1,5 @@
 # Generates all the layout files from the CSVs.
+# Double-checks that the paradigms have no duplicates. 
 #
 # Usage:
 #
@@ -15,8 +16,9 @@ all: check layouts
 
 layouts: $(LAYOUTS)
 
+# Fails if there are duplicate entries in any of the paradigm files.
 check:
-	@echo $(wildcard *.paradigm) | xargs -n1 ./ensure-unique-paramdigm
+	@echo $(wildcard *.paradigm) | xargs -n1 ./ensure-unique-paradigm
 	
 # Convert a .csv layout file into a forma suitable for NDS/itwêwina.
 %.layout: %.layout.csv 
