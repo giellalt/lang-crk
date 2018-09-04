@@ -11,7 +11,7 @@
 #
 # Author: Antti Arppe, ALTLab (2018)
 
-gawk -v PARADIGM_FILE=$1 -v LAYOUT_FILE=$2 'BEGIN { paradigm_file=PARADIGM_FILE; layout_file=LAYOUT_FILE;
+gawk -v PARADIGM_FILE=$1 -v LAYOUT_FILE=$2 'BEGIN { paradigm_file=PARADIGM_FILE; layout_file=LAYOUT_FILE; err=0;
 
 # paradigm_file=layout_file; sub("[-]((basic)|(extended)|(full)).layout",".paradigm", paradigm_file);
 
@@ -54,13 +54,18 @@ for(l in layout_files)
                         matches=matches j":"paradigm[j]" ";
                       }
                   if(n_matches==0)
-                    matches="???";
+                    { matches="???"; err++; }
                   if(n_matches!=1)
-                    print f[i]" - "n_matches" match(es): "matches;
+                    { print f[i]" - "n_matches" match(es): "matches; err++}
                 }
             }
        }
      }
   print "-----";
   print "";
-} }'
+}
+  if(err!=0)
+    exit 1;
+  else
+    exit 0;
+}'
