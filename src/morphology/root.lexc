@@ -425,6 +425,7 @@ h2 		!!= * @CODE@  Prefix in possessives
 %^POS    !!=* @CODE@  Possessive suffix ! ! REMOVE
 %^DUPL1   !!=* @CODE@  Reduplication consonant marker
 %^DUPL2   !!=* @CODE@  Reduplication consonant marker
+%^COM    !!=* Comitative suffix marker (for stem-suffix juncture vowel lengthening)
 
 %^EGLOT  !!= * @CODE@  glottal stop after e, for eh- in conjunctive order
 %^EA     !!= * @CODE@  ê to â in 1, 2 person of ê-stems ! REMOVE

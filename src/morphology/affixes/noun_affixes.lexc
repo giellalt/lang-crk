@@ -1,0 +1,361 @@
+! noun-an-affixes.lexc
+! ! ALL OF AEW NI CLASSES GO TO A SINGLE NI LEXICON
+! ! ALL OF AEW NA CLASSES GO TO A SINGLE NA LEXICON
+! ! ALL OF AEW DEPENDENT NA CLASSES GO TO A SINGLE NAD LEXICON (including kinship)
+! ! ALL OF AEW DEPENDENT NI CLASSES GO TO A SINGLE NID LEXICON
+! ! i2, i4 (animate dependent only), w3 (animate dependnet nouns only) should be the only special character we need for the noun affixes; -im possesion is done by flag diacritics in the affixes file
+
+! Noun affixes
+
+LEXICON NOUN_PREFIXES
+NOUN_INDEP_PREFIXES ;
+NOUN_DEP_KINSHIP_PREFIXES ;
+NOUN_DEP_NONKINSHIP_PREFIXES ;
+
+LEXICON NOUN_INDEP_PREFIXES
+@P.person.NI@:@P.person.NI@nit2%<  NOUN_INDEP_STEMS ;
+@P.person.KI@:@P.person.KI@kit2%<  NOUN_INDEP_STEMS ;
+@P.person.O@:@P.person.O@ot2%<     NOUN_INDEP_STEMS ;
+@P.person.NULL@                    NOUN_INDEP_STEMS ;
+
+LEXICON NOUN_DEP_KINSHIP_PREFIXES
+@P.person.NI@:@P.person.NI@ni4%<   NOUN_DEP_KINSHIP_STEMS ;
+@P.person.KI@:@P.person.KI@ki4%<   NOUN_DEP_KINSHIP_STEMS ;
+@P.person.O@:@P.person.O@w3%<      NOUN_DEP_KINSHIP_STEMS ;
+
+LEXICON NOUN_DEP_NONKINSHIP_PREFIXES
+@P.person.NI@:@P.person.NI@ni4%<       NOUN_DEP_NONKINSHIP_STEMS ;
+@P.person.KI@:@P.person.KI@ki4%<       NOUN_DEP_NONKINSHIP_STEMS ;
+@P.person.O@:@P.person.O@w3%<          NOUN_DEP_NONKINSHIP_STEMS ;
+@P.person.MI@0:@P.person.MI@0mi4%< NOUN_DEP_NONKINSHIP_STEMS ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Here we go to the NA stems !
+! Currently test cases below !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! Here we start with the general morphosyntactic features in a standardized order
+
+LEXICON NA
++N+A:0 NA_POSS_IM_0_SUFFIX ;
+
+LEXICON NAD
+@P.dep.DEP@+N+A+D:@P.dep.DEP@0 NA_POSS_IM_0_SUFFIX ;
+
+LEXICON NI
++N+I:0 NI_POSS_IM_0_SUFFIX ;
+
+LEXICON NID
+@P.dep.DEP@+N+I+D:@P.dep.DEP@0 NI_POSS_IM_0_SUFFIX ;
+
+LEXICON NA_POSS_IM_0_SUFFIX
+@D.person.NULL@@R.im.IM@:@D.person.NULL@@R.im.IM@%>i2m NA_DIM_SUFFIXES ;
+@D.person.NULL@@D.im.IM@                                 NA_DIM_SUFFIXES ;
+@R.person.NULL@                                            NA_DIM_SUFFIXES ;
+
+LEXICON NA_DIM_SUFFIXES
+NA_POSS_SUFFIXES ;
+! Independent NAs
+@D.dep.DEP@@D.dim@@D.isis.ISIS@@C.sg@+Der/Dim+N+A:@D.dep.DEP@@D.dim@@D.isis.ISIS@@C.sg@%>i2%^DIMs   NA_POSS_SUFFIXES ;
+@D.dep.DEP@@D.dim@@D.is.IS@@C.sg@+Der/Dim+N+A:@D.dep.DEP@@D.dim@@D.is.IS@@C.sg@%>i2%^DIMsis         NA_POSS_SUFFIXES ;
+! Dependent NAs
+@R.dep.DEP@@D.dim@@D.isis.ISIS@@C.sg@+Der/Dim+N+A+D:@R.dep.DEP@@D.dim@@D.isis.ISIS@@C.sg@%>i2%^DIMs NA_POSS_SUFFIXES ;
+@R.dep.DEP@@D.dim@@D.is.IS@@C.sg@+Der/Dim+N+A+D:@R.dep.DEP@@D.dim@@D.is.IS@@C.sg@%>i2%^DIMsis       NA_POSS_SUFFIXES ;
+
+LEXICON NI_POSS_IM_0_SUFFIX
+@D.person.NULL@@R.im.IM@:@D.person.NULL@@R.im.IM@%>i2m NI_DIM_SUFFIXES ;
+@D.person.NULL@@D.im.IM@                                 NI_DIM_SUFFIXES ;
+@R.person.NULL@                                            NI_DIM_SUFFIXES ;
+
+LEXICON NI_DIM_SUFFIXES
+NI_POSS_SUFFIXES ;
+! Independent NIs
+@D.dep.DEP@@D.dim@@D.isis.ISIS@@C.sg@+Der/Dim+N+I:@D.dep.DEP@@D.dim@@D.isis.ISIS@@C.sg@%>i2%^DIMs NI_POSS_SUFFIXES ;
+@D.dep.DEP@@D.dim@@D.is.IS@@C.sg@+Der/Dim+N+I:@D.dep.DEP@@D.dim@@D.is.IS@@C.sg@%>i2%^DIMsis       NI_POSS_SUFFIXES ;
+! Dependent NIs
+@R.dep.DEP@@D.dim@@D.isis.ISIS@@C.sg@+Der/Dim+N+I+D:@R.dep.DEP@@D.dim@@D.isis.ISIS@@C.sg@%>i2%^DIMs NI_POSS_SUFFIXES ;
+@R.dep.DEP@@D.dim@@D.is.IS@@C.sg@+Der/Dim+N+I+D:@R.dep.DEP@@D.dim@@D.is.IS@@C.sg@%>i2%^DIMsis       NI_POSS_SUFFIXES ;
+
+LEXICON NA_POSS_SUFFIXES
+! Singular possessors
+@U.person.NI@+Px1Sg:@U.person.NI@0 NA_NUMBER_OBV_LOC_SUFFIXES ;
+@U.person.KI@+Px2Sg:@U.person.KI@0 NA_NUMBER_OBV_LOC_SUFFIXES ;
+@U.person.O@+Px3Sg:@U.person.O@0   NA_NUMBER_OBV_LOC_SUFFIXES ;
+@U.person.NULL@                    NA_NUMBER_OBV_LOC_SUFFIXES ;
+! Plural possessors
+@U.person.NI@+Px1Pl:@U.person.NI@%>i2nân  NA_NUMBER_OBV_LOC_SUFFIXES ;
+@U.person.KI@+Px12Pl:@U.person.KI@%>i2naw NA_NUMBER_OBV_LOC_SUFFIXES ;
+@U.person.KI@+Px2Pl:@U.person.KI@%>i2wâw  NA_NUMBER_OBV_LOC_SUFFIXES ;
+@U.person.O@+Px3Pl:@U.person.O@0%>i2wâw   NA_NUMBER_OBV_LOC_SUFFIXES ;
+! Obviative possessor
+@U.person.O@+Px4Sg/Pl:@U.person.O@%>i2yiw NA_NUMBER_OBV_LOC_SUFFIXES ;
+! Unspeficied possessor
+@U.person.MI@+PxX:@U.person.MI@0        NA_NUMBER_OBV_LOC_SUFFIXES ;
+@D.loc.NULL@ NA_POSS_LOC_COMBO_SUFFIXES ;
+
+LEXICON NA_POSS_LOC_COMBO_SUFFIXES
+@U.person.NI@+Px1Sg+Loc:@U.person.NI@%>i2hk NOUN_ENDLEX ;
+@U.person.KI@+Px2Sg+Loc:@U.person.KI@%>i2hk NOUN_ENDLEX ;
+@U.person.O@+Px3Sg+Loc:@U.person.O@%>i2hk   NOUN_ENDLEX ;
+! Plural possessors
+@U.person.NI@+Px1Pl+Loc:@U.person.NI@%>i2nâhk  NOUN_ENDLEX ;
+@U.person.KI@+Px12Pl+Loc:@U.person.KI@%>i2nâhk NOUN_ENDLEX ;
+@U.person.KI@+Px2Pl+Loc:@U.person.KI@%>i2wâhk  NOUN_ENDLEX ;
+@U.person.O@+Px3Pl+Loc:@U.person.O@0%>i2wâhk   NOUN_ENDLEX ;
+! Obviative possessor
+@U.person.O@+Px4Sg/Pl+Loc:@U.person.O@%>i2yihk NOUN_ENDLEX ;
+! Unspeficied possessor
+@U.person.MI@+PxX+Loc:@U.person.MI@%>i2hk          NOUN_ENDLEX ;
+@U.person.MI@+PxX+Distr:@U.person.MI@%>i2nâhk      NOUN_ENDLEX ;
+
+! POSS IM SG   SUFF
+! 12   -  A    -a
+! 3    -  A    -a
+! 12   +  A    -im-0
+! 3    +  A    -im-a
+! 12   +  0    -im-0
+! 3    +  0    -im-a
+
+LEXICON NA_NUMBER_OBV_LOC_SUFFIXES
+! Singular
+@D.number.PL@ NA_NUMBER_SUFFIXES_SG ;
+! Obviative
+@R.person.NULL@+Obv:@R.person.NULL@%>a NOUN_ENDLEX ; ! non-possessed, obviative -a
+@D.person.NULL@@D.person.O@@R.im.IM@+Obv:@D.person.NULL@@D.person.O@@R.im.IM@%>a NOUN_ENDLEX ; ! Non-3rd possession, im-poss, obviative -a
+@D.person.NULL@@D.person.O@@D.im.IM@+Obv:@D.person.NULL@@D.person.O@@D.im.IM@%>a NOUN_ENDLEX ; ! Non-3rd possession, 0-poss, obviative -a
+@D.person.NULL@@R.person.O@+Obv:@D.person.NULL@@R.person.O@%>a NOUN_ENDLEX ; ! 3rd possession, 0/im-poss, obviative -a
+! Plural
+@D.number.SG@@D.person.O@+Pl:@D.number.SG@@D.person.O@%>ak NOUN_ENDLEX ; ! Non 3rd possessed (non-possessed), plural -ak
+! Locative
+@D.loc.NULL@@R.person.NULL@+Loc:@D.loc.NULL@@R.person.NULL@%>i2hk NOUN_ENDLEX ;
+@R.person.NULL@+Distr:@R.person.NULL@%>i2nâhk NOUN_ENDLEX ;
+
+LEXICON NA_NUMBER_SUFFIXES_SG
+@R.person.NULL@@D.sg@+Sg:@R.person.NULL@@D.sg@0 NOUN_ENDLEX ; ! No possession, no singular suffix
+@R.person.NULL@@R.sg.A@+Sg:@R.person.NULL@@R.sg.A@%>a NOUN_ENDLEX ; ! No possession, a-singular (possessive suffix -im ruled out earlier)
+@D.person.NULL@@D.person.O@@R.im.IM@+Sg:@D.person.NULL@@D.person.O@@R.im.IM@0 NOUN_ENDLEX ; ! Non-3rd possession, im-poss, 0-singular
+@D.person.NULL@@D.person.O@@D.im.IM@@D.sg@+Sg:@D.person.NULL@@D.person.O@@D.im.IM@@D.sg@0 NOUN_ENDLEX ; ! Non-3rd possession, 0-poss, 0-singular
+@D.person.NULL@@D.person.O@@D.im.IM@@R.sg.A@+Sg:@D.person.NULL@@D.person.O@@D.im.IM@@R.sg.A@%>a NOUN_ENDLEX ; ! Non-3rd possession, 0-poss, a-singular
+
+LEXICON NI_POSS_SUFFIXES
+! Singular possessors
+@U.person.NI@+Px1Sg:@U.person.NI@0 NI_NUMBER_LOC_SUFFIXES ;
+@U.person.KI@+Px2Sg:@U.person.KI@0 NI_NUMBER_LOC_SUFFIXES ;
+@U.person.O@+Px3Sg:@U.person.O@0   NI_NUMBER_LOC_SUFFIXES ;
+@U.person.NULL@                    NI_NUMBER_LOC_SUFFIXES ;
+! Plural possessors
+@U.person.NI@@U.poss.PL@+Px1Pl:@U.person.NI@@U.poss.PL@%>i2nân  NI_NUMBER_LOC_SUFFIXES ;
+@U.person.KI@@U.poss.PL@+Px12Pl:@U.person.KI@@U.poss.PL@%>i2naw NI_NUMBER_LOC_SUFFIXES ;
+@U.person.KI@@U.poss.PL@+Px2Pl:@U.person.KI@@U.poss.PL@%>i2wâw  NI_NUMBER_LOC_SUFFIXES ;
+@U.person.O@@U.poss.PL@+Px3Pl:@U.person.O@@U.poss.PL@0%>i2wâw   NI_NUMBER_LOC_SUFFIXES ;
+! Obviative possessor
+@U.person.O@@U.poss.PL@+Px4Sg/Pl:@U.person.O@@U.poss.PL@%>i2yiw NI_NUMBER_LOC_SUFFIXES ;
+! Unspecified possessor
+@U.person.MI@+PxX:@U.person.MI@0        NI_NUMBER_LOC_SUFFIXES ;
+NI_POSS_LOC_COMBO_SUFFIXES ;
+
+LEXICON NI_POSS_LOC_COMBO_SUFFIXES
+! Singular possessors
+@U.person.NI@+Px1Sg+Loc:@U.person.NI@%>i2hk  NOUN_ENDLEX ;
+@U.person.KI@+Px2Sg+Loc:@U.person.KI@%>i2hk NOUN_ENDLEX ;
+@U.person.O@+Px3Sg+Loc:@U.person.O@%>i2hk   NOUN_ENDLEX ;
+! @U.person.NULL@                    NI_NUMBER_LOC_SUFFIXES ;
+! Plural possessors
+@U.person.NI@+Px1Pl+Loc:@U.person.NI@%>i2nâhk  NOUN_ENDLEX ;
+@U.person.KI@+Px12Pl+Loc:@U.person.KI@%>i2nâhk NOUN_ENDLEX ;
+@U.person.KI@+Px2Pl+Loc:@U.person.KI@%>i2wâhk  NOUN_ENDLEX ;
+@U.person.O@+Px3Pl+Loc:@U.person.O@0%>i2wâhk   NOUN_ENDLEX ;
+! Obviative possessor
+@U.person.O@+Px4Sg/Pl+Loc:@U.person.O@%>i2yihk NOUN_ENDLEX ;
+! Unspecified possessor
+@U.person.MI@+PxX+Loc:@U.person.MI@%>i2hk NOUN_ENDLEX ;
+
+LEXICON NI_NUMBER_LOC_SUFFIXES
+@D.number.PL@ NI_NUMBER_SUFFIXES_SG ; 
+@D.number.SG@+Pl:@D.number.SG@%>a NOUN_ENDLEX ;
+@R.person.NULL@+Loc:@R.person.NULL@%>i2hk NOUN_ENDLEX ;
+
+LEXICON NI_NUMBER_SUFFIXES_SG
+@D.sg@+Sg:@D.sg@0 NOUN_ENDLEX ; ! Zero Sg morpheme for non NI-4w cases
+@R.person.NULL@@R.sg.I@+Sg:@R.person.NULL@@R.sg.I@%>i NOUN_ENDLEX ; ! -i-singular (NI-4w), when no other morphology
+@D.person.NULL@@R.im.IM@@R.sg.I@+Sg:@D.person.NULL@@R.im.IM@@R.sg.I@0    NOUN_ENDLEX ; ! 0-singular (NI-4w), when -im-poss
+@D.person.NULL@@D.im.IM@@R.poss.PL@@R.sg.I@+Sg:@D.person.NULL@@D.im.IM@@R.poss.PL@@R.sg.I@0 NOUN_ENDLEX ; ! 0-singular (NI-4w), when singular possession and 0-im
+@D.person.NULL@@D.im.IM@@D.poss.PL@@R.sg.I@+Sg:@D.person.NULL@@D.im.IM@@D.poss.PL@@R.sg.I@%>i NOUN_ENDLEX ; ! -i-singular (NI-4w), when singular possession and 0-im
+
+! ----------
+! Test cases for various noun stem types
+! To eventually be moved to under: src/morphology/stems/nouns*.lexc
+! ----------
+
+! LEXICON N_INDEP_STEMS
+! @U.im.NULL@ NA_0_STEMS ; ! NA stems that traditionally do not take -im in possession
+! @U.im.IM@   NA_IM_STEMS ; ! NA stems that require -im in possession
+! @U.im.NULL@ NI_0_STEMS ; ! NI stems that traditionally do not take -im in possession
+! @U.im.IM@   NI_IM_STEMS ; ! NI stems that require -im in possession - likely do not exist
+! 
+! LEXICON NA_0_STEMS
+! astotin NA ;
+! 
+! LEXICON NA_IM_STEMS
+! âmow NA "bee" ;
+! sîsîp NA "duck" ;
+! 
+! LEXICON NI_0_STEMS
+! askiy NI "land" ;
+! astotin NI "hat" ;
+! mâcîs NI "camp" ;
+!
+! LEXICON NI_IM_STEMS
+! xxx NI "yyy" ;
+! xxx NI "yyy" ;
+
+! LEXICON N_DEP_NONKIN_STEMS
+! @U.im.NULL@ NAD_0_NONKIN_STEMS ; ! NAD stems that traditionally do not take -im in possession
+! @U.im.NULL@ NID_0_NONKIN_STEMS ; ! NID stems that traditionally do not take -im in possession
+! 
+! LEXICON NAD_0_NONKIN_STEMS
+! masakay:asakay NAD "skin" ;
+! 
+! LEXICON NID_0_NONKIN_STEMS
+! mihtawakay:htawakay NID "ear" ;
+! mispiton:spiton NID "arm" ;
+!
+! LEXICON N_DEP_KINSHIP_STEMS
+! @U.im.NULL@ NAD_0_KINSHIP_STEMS ; ! NAD stems that traditionally do not take -im in possession
+! ! @U.im.NULL@ NI_0_KINSHIP_STEMS ; ! The are no NID kinship stems
+!
+! LEXICON NAD_0_KINSHIP_STEMS
+! -ohkom:ohkom NAD "grand-mother" ;
+! -ôhtawiy:ôhtawiy NAD "father" ;
+! -tânis:tânis NAD "daughter, brother, sister" ;
+
+!!! Alternative via setting flag-diacritics via case-specific continuation classes
+! IM: default without -im, needs to be required.
+! DIM: default with both -is and -isis, either one needs to be required
+
+! NA 
+! LEXICON NA_0
+! @P.im.NULL@@P.is.IS@@P.isis.ISIS@ NA ;
+
+
+LEXICON NOUN_IRREGULARS
+! Irregular forms of ôsi
+ôsi+N+I+Px1Sg:nitôt OSI_SUFFIXES ;
+ôsi+N+I+Px2Sg:kitôt OSI_SUFFIXES ;
+ôsi+N+I+Px3Sg:otôt OSI_SUFFIXES ;
+ôsi+N+I+Px1Pl:nitôtinân OSI_SUFFIXES ;
+ôsi+N+I+Px12Pl:kitôtinaw OSI_SUFFIXES ;
+ôsi+N+I+Px2Pl:kitôtiwâw OSI_SUFFIXES ;
+ôsi+N+I+Px3Pl:otôtiwâw OSI_SUFFIXES ;
+ôsi+N+I+Px4Sg/Pl:otôtiyiw OSI_SUFFIXES ;
+! Locative combos
+ôsi+N+I+Px1Sg+Loc:nitôtihk # ;
+ôsi+N+I+Px2Sg+Loc:kitôtihk # ;
+ôsi+N+I+Px3Sg+Loc:otôtihk # ;
+ôsi+N+I+Px1Pl+Loc:nitôtinâhk # ;
+ôsi+N+I+Px12Pl+Loc:kitôtinâhk # ;
+ôsi+N+I+Px2Pl+Loc:kitôtiwâhk # ;
+ôsi+N+I+Px3Pl+Loc:otôtiwâhk # ;
+ôsi+N+I+Px4Sg/Pl+Loc:otôtiyihk # ;
+! Regular forms of atim, which cannot be possessed
+! atim+N+A+Sg:atim # ;
+! atim+N+A+Pl:atimwak # ;
+! atim+N+A+Obv:atimwa # ;
+! atim+N+A+Loc:atimohk # ;
+! "Irregular" forms of atim, which are the ones that can be possessed
+! @P.person.NI@atim+N+A:@P.person.NI@nitêm NA_DIM_SUFFIXES ;
+! @P.person.KI@atim+N+A:@P.person.KI@kitêm NA_DIM_SUFFIXES ;
+! @P.person.O@atim+N+A:@P.person.O@otêm NA_DIM_SUFFIXES ;
+
+LEXICON OSI_SUFFIXES
++Sg:0 # ;
++Pl:a # ;
+
+! Case-specific continuation lexica for -im/0 and -is/-isis
+
+LEXICON NA_SG/A_POSS/IM
+@U.sg.A@ NA_POSS/IM ;
+
+LEXICON NA_POSS/IM
+@P.im.IM@ NA ;
+
+LEXICON NA_DIM/IS
+@P.is.IS@ NA ;
+
+LEXICON NA_DIM/ISIS
+@P.isis.ISIS@ NA ;
+
+LEXICON NA_POSS/IM_DIM/IS
+@P.im.IM@@P.is.IS@ NA ;
+
+LEXICON NA_POSS/IM_DIM/ISIS
+@P.im.IM@@P.isis.ISIS@ NA ;
+
+! NI
+
+LEXICON NI_SG/I_POSS/IM
+@U.sg.I@ NI_POSS/IM ;
+
+LEXICON NI_POSS/IM
+@P.im.IM@ NI ;
+
+LEXICON NI_DIM/IS
+@P.is.IS@ NI ;
+
+LEXICON NI_DIM/ISIS
+@P.isis.ISIS@ NI ;
+
+LEXICON NI_POSS/IM_DIM/IS
+@P.im.IM@@P.is.IS@ NI ;
+
+LEXICON NI_POSS/IM_DIM/ISIS
+@P.im.IM@@P.isis.ISIS@ NI ;
+
+! NAD 
+
+LEXICON NAD_SG/A
+@U.sg.A@ NAD ;
+
+LEXICON NAD_POSS/IM
+@P.im.IM@ NAD ;
+
+LEXICON NAD_DIM/IS
+@P.is.IS@ NAD ;
+
+LEXICON NAD_DIM/ISIS
+@P.isis.ISIS@ NAD ;
+
+LEXICON NAD_POSS/IM_DIM/IS
+@P.im.IM@@P.IS.is@ NAD ;
+
+LEXICON NAD_POSS/IM_DIM/ISIS
+@P.im.IM@@P.isis.ISIS@ NAD ;
+
+! NID
+
+LEXICON NID_SG/I
+@U.sg.I@ NID ;
+
+LEXICON NID_POSS/IM
+@P.im.IM@ NID ;
+
+LEXICON NID_DIM/IS
+@P.is.IS@ NID ;
+
+LEXICON NID_DIM/ISIS
+@P.isis.ISIS@ NID ;
+
+LEXICON NID_POSS/IM_DIM/IS
+@P.im.IM@@P.is.IS@ NID ;
+
+LEXICON NID_POSS/IM_DIM/ISIS
+@P.im.IM@@P.isis.ISIS@ NID ;
+
+!! NOUN_ENDLEX for wrapping up various things
+
+LEXICON NOUN_ENDLEX
+! Adding diminutive trigger to lexicalized diminutives to palatalize potential poss. person prefixes
+@R.dim.DIM@:@R.dim.DIM@%^DIM # ;
+@D.dim@ # ;
+
+!! End of noun affixes code
