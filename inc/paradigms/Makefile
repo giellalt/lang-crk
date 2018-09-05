@@ -25,10 +25,10 @@ check-paradigms:
 	@echo $(wildcard *.paradigm) | xargs -n1 ./ensure-unique-paradigm
 	@echo "$$(tput setaf 2)Paradigms files OK!$$(tput sgr0)"
 
-# TODO: fail if there are duplicate/no matches in the layout files.
+# Fails if there are duplicates or no matches in the layout files.
 check-layouts:
 	@echo $(wildcard *.paradigm) | xargs -n1 sh ./verify-paradigm-layout.sh
-	@echo "$$(tput setaf 2)Paradigms files OK!$$(tput sgr0)"
+	@echo "$$(tput setaf 2)Layout files OK!$$(tput sgr0)"
 	
 # Convert a .csv layout file into a forma suitable for NDS/itwêwina.
 %.layout: %.layout.csv 
