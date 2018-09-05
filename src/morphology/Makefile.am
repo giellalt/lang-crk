@@ -23,15 +23,14 @@ GT_LEXC_ROOT=$(srcdir)/root.lexc
 
 # Set this to the names of all regular lexc source files:
 GT_LEXC_SRCS_L1_L2=\
-			 affixes/nouns.lexc \
-			 affixes/verbs.lexc \
-			 stems/abbreviations.lexc	   \
-			 stems/nouns.lexc	   \
+                         affixes/noun_affixes.lexc \
+                         affixes/verb_affixes.lexc \
+                         stems/noun_stems.lexc \
 			 stems/numerals.lexc   \
+			 stems/verb_stems.lexc \
 			 stems/pronouns.lexc   \
 			 stems/particles.lexc   \
 			 stems/punctuation.lexc \
-			 stems/verbs.lexc	   \
 			 affixes/propernouns.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
