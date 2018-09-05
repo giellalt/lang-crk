@@ -7,7 +7,7 @@ tooltips:
     "2s → 1s": "2nd person singular actor → 1st person singular goal"
     "2s → 1p": "2nd person singular actor → 1st person plural goal"
     "2p → 1s": "2nd person plural actor → 1st person singular goal"
-    "2p → 1p": "2nd person plural actor → 1st person plural goal" "
+    "2p → 1p": "2nd person plural actor → 1st person plural goal"
     "1s → 2s": "1st person singular actor → 2nd person singular goal"
     "1s → 2p": "1st person singular actor → 2nd person plural goal"
     "1p → 2s": "1st person plural actor → 2nd person singular goal"
@@ -100,7 +100,7 @@ tooltips:
 | "4 → 1p"                       | Ind+Prs+4Sg/Pl+1PlO            | PV/e+*+Cnj+Prs+4Sg/Pl+1PlO     |
 | "4 → 21"                       | Ind+Prs+4Sg/Pl+12PlO           | PV/e+*+Cnj+Prs+4Sg/Pl+12PlO    |
 | "4 → 2p"                       | Ind+Prs+4Sg/Pl+2PlO            | PV/e+*+Cnj+Prs+4Sg/Pl+2PlO     |
-| "                              |                                |                                |
+|                                |                                |                                |
 | "Third person participants"    | : "Independent"                | : "Conjunct"                   |
 | "3s → 4"                       | Ind+Prs+3Sg+4Sg/PlO            | PV/e+*+Cnj+Prs+3Sg+4Sg/PlO     |
 | "3p → 4"                       | Ind+Prs+3Pl+4Sg/PlO            | PV/e+*+Cnj+Prs+3Pl+4Sg/PlO     |
