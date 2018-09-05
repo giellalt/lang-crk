@@ -1,0 +1,67 @@
+Config:
+  hfst:
+    Gên: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xêrox:
+    Gên: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mitêh - ok : # -m inanimatê dêpêndênt noun, heart	AEW C-initial NDI1
+     mitêh+N+I+D+PxX+Sg: mitêh
+     mitêh+N+I+D+Px1Sg+Sg: nitêh
+     mitêh+N+I+D+Px2Sg+Sg: kitêh
+     mitêh+N+I+D+Px1Pl+Sg: nitêhinân
+     mitêh+N+I+D+Px12Pl+Sg: kitêhinaw
+     mitêh+N+I+D+Px2Pl+Sg: kitêhiwâw
+     
+     mitêh+N+I+D+Px3Sg+Sg: otêh
+     mitêh+N+I+D+Px3Pl+Sg: otêhiwâw
+     mitêh+N+I+D+Px4Sg/Pl+Sg: otêhiyiw
+
+     mitêh+N+I+D+PxX+Pl: mitêha
+     mitêh+N+I+D+Px1Sg+Pl: nitêha
+     mitêh+N+I+D+Px2Sg+Pl: kitêha
+     mitêh+N+I+D+Px1Pl+Pl: nitêhinâna
+     mitêh+N+I+D+Px12Pl+Pl: kitêhinawa
+     mitêh+N+I+D+Px2Pl+Pl: kitêhiwâwa
+     
+     mitêh+N+I+D+Px3Sg+Pl: otêha
+     mitêh+N+I+D+Px3Pl+Pl: otêhiwâwa
+     mitêh+N+I+D+Px4Sg/Pl+Pl: otêhiyiwa
+
+     mitêh+N+I+D+PxX+Loc: mitêhihk
+     mitêh+N+I+D+Px1Sg+Loc: nitêhihk
+     mitêh+N+I+D+Px2Sg+Loc: kitêhihk
+     mitêh+N+I+D+Px1Pl+Loc: nitêhinâhk
+     mitêh+N+I+D+Px12Pl+Loc: kitêhinâhk
+     mitêh+N+I+D+Px2Pl+Loc: kitêhiwâhk
+
+     mitêh+N+I+D+Px3Sg+Loc: otêhihk
+     mitêh+N+I+D+Px3Pl+Loc: otêhiwâhk
+     mitêh+N+I+D+Px4Sg/Pl+Loc: otêhiyihk
+
+     mitêh+N+I+D+Der/Dim+N+I+D+PxX+Sg:      [micêhis,     micêhisis]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px1Sg+Sg:    [nicêhis,     nicêhisis]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px2Sg+Sg:    [kicêhis,     kicêhisis]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px1Pl+Sg:    [nicêhisinân, nicêhisisinân]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px12Pl+Sg:   [kicêhisinaw, kicêhisisinaw]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px2Pl+Sg:    [kicêhisiwâw, kicêhisisiwâw]
+
+     mitêh+N+I+D+Der/Dim+N+I+D+Px3Sg+Sg:    [ocêhis,     ocêhisis]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px3Pl+Sg:    [ocêhisiwâw, ocêhisisiwâw]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Sg: [ocêhisiyiw, ocêhisisiyiw]
+
+     mitêh+N+I+D+Der/Dim+N+I+D+PxX+Pl:      [micêhisa,     micêhisisa]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px1Sg+Pl:    [nicêhisa,     nicêhisisa]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px2Sg+Pl:    [kicêhisa,     kicêhisisa]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px1Pl+Pl:    [nicêhisinâna, nicêhisisinâna]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px12Pl+Pl:   [kicêhisinawa, kicêhisisinawa]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px2Pl+Pl:    [kicêhisiwâwa, kicêhisisiwâwa]
+     
+     mitêh+N+I+D+Der/Dim+N+I+D+Px3Sg+Pl:    [ocêhisa,      ocêhisisa]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px3Pl+Pl:    [ocêhisiwâwa,  ocêhisisiwâwa]
+     mitêh+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Pl: [ocêhisiyiwa,  ocêhisisiyiwa]
+

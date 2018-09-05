@@ -1,0 +1,53 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - niska - ok : # -m animate noun, goose AEW NA4
+     niska+N+A+Sg: niska
+     niska+N+A+Px1Sg+Sg: niniskim
+     niska+N+A+Px2Sg+Sg: kiniskim
+     niska+N+A+Px1Pl+Sg: niniskiminân
+     niska+N+A+Px12Pl+Sg: kiniskiminaw
+     niska+N+A+Px2Pl+Sg: kiniskimiwâw
+
+     niska+N+A+Pl: niskak
+     niska+N+A+Px1Sg+Pl: niniskimak
+     niska+N+A+Px2Sg+Pl: kiniskimak
+     niska+N+A+Px1Pl+Pl: niniskiminânak
+     niska+N+A+Px12Pl+Pl: kiniskiminawak
+     niska+N+A+Px2Pl+Pl: kiniskimiwâwak
+     
+     niska+N+A+Obv: niska
+     niska+N+A+Px1Sg+Obv: niniskima
+     niska+N+A+Px2Sg+Obv: kiniskima
+     niska+N+A+Px1Pl+Obv: niniskiminâna
+     niska+N+A+Px12Pl+Obv: kiniskiminawa
+     niska+N+A+Px2Pl+Obv: kiniskimiwâwa
+     niska+N+A+Px3Sg+Obv: oniskima
+     niska+N+A+Px3Pl+Obv: oniskimiwâwa
+     niska+N+A+Px4Sg/Pl+Obv: oniskimiyiwa
+     
+     niska+N+A+Der/Dim+N+A+Sg: [niskis, niskisis]
+     niska+N+A+Der/Dim+N+A+Px1Sg+Sg: [niniskimis, niniskimisis]
+     niska+N+A+Der/Dim+N+A+Px2Sg+Sg: [kiniskimis, kiniskimisis]
+     niska+N+A+Der/Dim+N+A+Px1Pl+Sg: [niniskimisinân, niniskimisisinân]
+     niska+N+A+Der/Dim+N+A+Px12Pl+Sg: [kiniskimisinaw, kiniskimisisinaw]
+     niska+N+A+Der/Dim+N+A+Px2Pl+Sg: [kiniskimisiwâw, kiniskimisisiwâw]
+
+     niska+N+A+Der/Dim+N+A+Pl: [niskisak, niskisisak]
+     niska+N+A+Der/Dim+N+A+Px1Sg+Pl: [niniskimisak, niniskimisisak]
+     niska+N+A+Der/Dim+N+A+Px2Sg+Pl: [kiniskimisak, kiniskimisisak]
+     niska+N+A+Der/Dim+N+A+Px1Pl+Pl: [niniskimisinânak, niniskimisisinânak]
+     niska+N+A+Der/Dim+N+A+Px12Pl+Pl: [kiniskimisinawak, kiniskimisisinawak]
+     niska+N+A+Der/Dim+N+A+Px2Pl+Pl: [kiniskimisiwâwak, kiniskimisisiwâwak]
+     
+     niska+N+A+Der/Dim+N+A+Px3Sg+Obv: [oniskimisa, oniskimisisa]
+     niska+N+A+Der/Dim+N+A+Px3Pl+Obv: [oniskimisiwâwa, oniskimisisiwâwa]
+     niska+N+A+Der/Dim+N+A+Px4Sg/Pl+Obv: [oniskimisiyiwa, oniskimisisiyiwa]

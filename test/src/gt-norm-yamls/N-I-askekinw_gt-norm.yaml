@@ -1,0 +1,61 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - askêkinw - ok : # -m inanimate noun, fresh rawhide AEW NI3
+     askêkin+N+I+Sg: askêkin
+     askêkin+N+I+Px1Sg+Sg: nitaskêkin
+     askêkin+N+I+Px2Sg+Sg: kitaskêkin
+     askêkin+N+I+Px1Pl+Sg: nitaskêkinonân
+     askêkin+N+I+Px12Pl+Sg: kitaskêkinonaw
+     askêkin+N+I+Px2Pl+Sg: kitaskêkinowâw
+     askêkin+N+I+Px3Sg+Sg: otaskêkin
+     askêkin+N+I+Px3Pl+Sg: otaskêkinowâw
+     askêkin+N+I+Px4Sg/Pl+Sg: otaskêkinoyiw
+
+     askêkin+N+I+Pl: askêkinwa
+     askêkin+N+I+Px1Sg+Pl: nitaskêkinwa
+     askêkin+N+I+Px2Sg+Pl: kitaskêkinwa
+     askêkin+N+I+Px1Pl+Pl: nitaskêkinonâna
+     askêkin+N+I+Px12Pl+Pl: kitaskêkinonawa
+     askêkin+N+I+Px2Pl+Pl: kitaskêkinowâwa
+     askêkin+N+I+Px3Sg+Pl: otaskêkinwa
+     askêkin+N+I+Px3Pl+Pl: otaskêkinowâwa
+     askêkin+N+I+Px4Sg/Pl+Pl: otaskêkinoyiwa
+
+     askêkin+N+I+Loc: askêkinohk
+     askêkin+N+I+Px1Sg+Loc: nitaskêkinohk
+     askêkin+N+I+Px2Sg+Loc: kitaskêkinohk
+     askêkin+N+I+Px1Pl+Loc: nitaskêkinonâhk
+     askêkin+N+I+Px12Pl+Loc: kitaskêkinonâhk
+     askêkin+N+I+Px2Pl+Loc: kitaskêkinowâhk
+     askêkin+N+I+Px3Sg+Loc: otaskêkinohk
+     askêkin+N+I+Px3Pl+Loc: otaskêkinowâhk
+     askêkin+N+I+Px4Sg/Pl+Loc: otaskêkinoyihk
+
+     askêkin+N+I+Der/Dim+N+I+Sg:          [askêkinos,         askêkinosis]
+     askêkin+N+I+Der/Dim+N+I+Px1Sg+Sg:    [nicaskêkinos,       nicaskêkinosis]
+     askêkin+N+I+Der/Dim+N+I+Px2Sg+Sg:    [kicaskêkinos,       kicaskêkinosis]
+     askêkin+N+I+Der/Dim+N+I+Px1Pl+Sg:    [nicaskêkinosinân,   nicaskêkinosisinân]
+     askêkin+N+I+Der/Dim+N+I+Px12Pl+Sg:   [kicaskêkinosinaw,   kicaskêkinosisinaw]
+     askêkin+N+I+Der/Dim+N+I+Px2Pl+Sg:    [kicaskêkinosiwâw,   kicaskêkinosisiwâw]
+     askêkin+N+I+Der/Dim+N+I+Px3Sg+Sg:    [ocaskêkinos,        ocaskêkinosis]
+     askêkin+N+I+Der/Dim+N+I+Px3Pl+Sg:    [ocaskêkinosiwâw,    ocaskêkinosisiwâw]
+     askêkin+N+I+Der/Dim+N+I+Px4Sg/Pl+Sg: [ocaskêkinosiyiw,    ocaskêkinosisiyiw]
+
+     askêkin+N+I+Der/Dim+N+I+Pl:          [askêkinosa,       askêkinosisa]
+     askêkin+N+I+Der/Dim+N+I+Px1Sg+Pl:    [nicaskêkinosa,     nicaskêkinosisa]
+     askêkin+N+I+Der/Dim+N+I+Px2Sg+Pl:    [kicaskêkinosa,     kicaskêkinosisa]
+     askêkin+N+I+Der/Dim+N+I+Px1Pl+Pl:    [nicaskêkinosinâna, nicaskêkinosisinâna]
+     askêkin+N+I+Der/Dim+N+I+Px12Pl+Pl:   [kicaskêkinosinawa, kicaskêkinosisinawa]
+     askêkin+N+I+Der/Dim+N+I+Px2Pl+Pl:    [kicaskêkinosiwâwa, kicaskêkinosisiwâwa]
+     askêkin+N+I+Der/Dim+N+I+Px3Sg+Pl:    [ocaskêkinosa,      ocaskêkinosisa]
+     askêkin+N+I+Der/Dim+N+I+Px3Pl+Pl:    [ocaskêkinosiwâwa,  ocaskêkinosisiwâwa]
+     askêkin+N+I+Der/Dim+N+I+Px4Sg/Pl+Pl: [ocaskêkinosiyiwa,  ocaskêkinosisiyiwa]

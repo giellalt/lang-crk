@@ -1,0 +1,65 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - wâhk - ok : # -m animate noun, fish eggs AEW NA4w
+     wâhkwa+N+A+Sg: wâhkwa
+     wâhkwa+N+A+Px1Sg+Sg: niwâhkom
+     wâhkwa+N+A+Px2Sg+Sg: kiwâhkom
+     wâhkwa+N+A+Px1Pl+Sg: niwâhkominân
+     wâhkwa+N+A+Px12Pl+Sg: kiwâhkominaw
+     wâhkwa+N+A+Px2Pl+Sg: kiwâhkomiwâw
+
+     wâhkwa+N+A+Pl: wâhkwak
+     wâhkwa+N+A+Px1Sg+Pl: niwâhkomak
+     wâhkwa+N+A+Px2Sg+Pl: kiwâhkomak
+     wâhkwa+N+A+Px1Pl+Pl: niwâhkominânak
+     wâhkwa+N+A+Px12Pl+Pl: kiwâhkominawak
+     wâhkwa+N+A+Px2Pl+Pl: kiwâhkomiwâwak
+     
+     wâhkwa+N+A+Obv: wâhkwa
+     wâhkwa+N+A+Px1Sg+Obv: niwâhkoma
+     wâhkwa+N+A+Px2Sg+Obv: kiwâhkoma
+     wâhkwa+N+A+Px1Pl+Obv: niwâhkominâna
+     wâhkwa+N+A+Px12Pl+Obv: kiwâhkominawa
+     wâhkwa+N+A+Px2Pl+Obv: kiwâhkomiwâwa
+     wâhkwa+N+A+Px3Sg+Obv: owâhkoma
+     wâhkwa+N+A+Px3Pl+Obv: owâhkomiwâwa
+     wâhkwa+N+A+Px4Sg/Pl+Obv: owâhkomiyiwa
+     
+     wâhkwa+N+A+Loc: wâhkohk
+     wâhkwa+N+A+Px1Sg+Loc: niwâhkomihk
+     wâhkwa+N+A+Px2Sg+Loc: kiwâhkomihk
+     wâhkwa+N+A+Px1Pl+Loc: niwâhkominâhk
+     wâhkwa+N+A+Px12Pl+Loc: kiwâhkominâhk
+     wâhkwa+N+A+Px2Pl+Loc: kiwâhkomiwâhk
+     wâhkwa+N+A+Px3Sg+Loc: owâhkomihk
+     wâhkwa+N+A+Px3Pl+Loc: owâhkomiwâhk
+     wâhkwa+N+A+Px4Sg/Pl+Loc: owâhkomiyihk
+
+     wâhkwa+N+A+Der/Dim+N+A+Sg: [wâhkos, wâhkosis]
+     wâhkwa+N+A+Der/Dim+N+A+Px1Sg+Sg: [niwâhkomis, niwâhkomisis]
+     wâhkwa+N+A+Der/Dim+N+A+Px2Sg+Sg: [kiwâhkomis, kiwâhkomisis]
+     wâhkwa+N+A+Der/Dim+N+A+Px1Pl+Sg: [niwâhkomisinân, niwâhkomisisinân]
+     wâhkwa+N+A+Der/Dim+N+A+Px12Pl+Sg: [kiwâhkomisinaw, kiwâhkomisisinaw]
+     wâhkwa+N+A+Der/Dim+N+A+Px2Pl+Sg: [kiwâhkomisiwâw, kiwâhkomisisiwâw]
+
+
+
+     wâhkwa+N+A+Der/Dim+N+A+Pl: [wâhkosak, wâhkosisak]
+     wâhkwa+N+A+Der/Dim+N+A+Px1Sg+Pl: [niwâhkomisak, niwâhkomisisak]
+     wâhkwa+N+A+Der/Dim+N+A+Px2Sg+Pl: [kiwâhkomisak, kiwâhkomisisak]
+     wâhkwa+N+A+Der/Dim+N+A+Px1Pl+Pl: [niwâhkomisinânak, niwâhkomisisinânak]
+     wâhkwa+N+A+Der/Dim+N+A+Px12Pl+Pl: [kiwâhkomisinawak, kiwâhkomisisinawak]
+     wâhkwa+N+A+Der/Dim+N+A+Px2Pl+Pl: [kiwâhkomisiwâwak, kiwâhkomisisiwâwak]
+     
+     wâhkwa+N+A+Der/Dim+N+A+Px3Sg+Obv: [owâhkomisa, owâhkomisisa]
+     wâhkwa+N+A+Der/Dim+N+A+Px3Pl+Obv: [owâhkomisiwâwa, owâhkomisisiwâwa]
+     wâhkwa+N+A+Der/Dim+N+A+Px4Sg/Pl+Obv: [owâhkomisiyiwa, owâhkomisisiyiwa]

@@ -1,0 +1,70 @@
+Config:
+  hfst:
+    Gên: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gên: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - -ohpan - ok : # -m animate dependent noun, lung	AEW NDA1
+     # -ohpan+N+A+D+PxX+Sg: môhpan
+     -ohpan+N+A+D+Px1Sg+Sg: nôhpan
+     -ohpan+N+A+D+Px2Sg+Sg: kôhpan
+     -ohpan+N+A+D+Px1Pl+Sg: nôhpaninân
+     -ohpan+N+A+D+Px12Pl+Sg: kôhpaninaw
+     -ohpan+N+A+D+Px2Pl+Sg: kôhpaniwâw
+     
+     # -ohpan+N+A+D+PxX+Obv: môhpana
+     -ohpan+N+A+D+Px1Sg+Obv: nôhpana
+     -ohpan+N+A+D+Px2Sg+Obv: kôhpana
+     -ohpan+N+A+D+Px1Pl+Obv: nôhpaninâna
+     -ohpan+N+A+D+Px12Pl+Obv: kôhpaninawa
+     -ohpan+N+A+D+Px2Pl+Obv: kôhpaniwâwa
+     
+     -ohpan+N+A+D+Px3Sg+Obv: ohpan
+     -ohpan+N+A+D+Px3Pl+Obv: ohpaniwâwa
+     -ohpan+N+A+D+Px4Sg/Pl+Obv: ohpaniyiwa
+
+
+     # -ohpan+N+A+D+PxX+Pl: môhpanak
+     -ohpan+N+A+D+Px1Sg+Pl: nôhpanak
+     -ohpan+N+A+D+Px2Sg+Pl: kôhpanak
+     -ohpan+N+A+D+Px1Pl+Pl: nôhpaninânak
+     -ohpan+N+A+D+Px12Pl+Pl: kôhpaninawak
+     -ohpan+N+A+D+Px2Pl+Pl: kôhpaniwâwak
+     
+     -ohpan+N+A+D+Px3Sg+Obv: ohpana
+     -ohpan+N+A+D+Px3Pl+Obv: ohpaniwâwa
+     -ohpan+N+A+D+Px4Sg/Pl+Obv: ohpaniyiwa
+
+     # -ohpan+N+A+D+PxX+Loc: môhpanihk
+     -ohpan+N+A+D+Px1Sg+Loc: nôhpanihk
+     -ohpan+N+A+D+Px2Sg+Loc: kôhpanihk
+     -ohpan+N+A+D+Px1Pl+Loc: nôhpaninâhk
+     -ohpan+N+A+D+Px12Pl+Loc: kôhpaninâhk
+     -ohpan+N+A+D+Px2Pl+Loc: kôhpaniwâhk
+
+     -ohpan+N+A+D+Px3Sg+Loc: ohpanihk
+     -ohpan+N+A+D+Px3Pl+Loc: ohpaniwâhk
+     -ohpan+N+A+D+Px4Sg/Pl+Loc: ohpaniyihk
+
+     # -ohpan+N+A+D+Der/Dim+N+A+D+PxX+Sg:      [môhpanis,     môhpanisis]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px1Sg+Sg:    [nôhpanis,     nôhpanisis]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px2Sg+Sg:    [kôhpanis,     kôhpanisis]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px1Pl+Sg:    [nôhpanisinân, nôhpanisisinân]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px12Pl+Sg:   [kôhpanisinaw, kôhpanisisinaw]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px2Pl+Sg:    [kôhpanisiwâw, kôhpanisisiwâw]
+
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px3Sg+Obv:    [ohpanisa,     ohpanisisa]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px3Pl+Obv:    [ohpanisiwâwa, ohpanisisiwâwa]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px4Sg/Pl+Obv: [ohpanisiyiwa, ohpanisisiyiwa]
+
+     # -ohpan+N+A+D+Der/Dim+N+A+D+PxX+Pl:      [môhpanisak,     môhpanisisak]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px1Sg+Pl:    [nôhpanisak,     nôhpanisisak]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px2Sg+Pl:    [kôhpanisak,     kôhpanisisak]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px1Pl+Pl:    [nôhpanisinânak, nôhpanisisinânak]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px12Pl+Pl:   [kôhpanisinawak, kôhpanisisinawak]
+     -ohpan+N+A+D+Der/Dim+N+A+D+Px2Pl+Pl:    [kôhpanisiwâwak, kôhpanisisiwâwak]

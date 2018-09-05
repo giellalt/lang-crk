@@ -1,0 +1,61 @@
+Config:
+  hfst:
+    Gen: ../../../src/generatôr-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generatôr-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lotôkup
+
+Tests:
+  
+  Noun - ôsi - ok : # -m inanate noun, canoe AEW NI1
+     ôsi+N+I+Sg: ôsi      
+     ôsi+N+I+Px1Sg+Sg:    [nitôt, nitôsim]
+     ôsi+N+I+Px2Sg+Sg:    [kitôt, kitôsim]
+     ôsi+N+I+Px1Pl+Sg:    [nitôtinân, nitôsiminân]
+     ôsi+N+I+Px12Pl+Sg:   [kitôtinaw, kitôsiminaw]
+     ôsi+N+I+Px2Pl+Sg:    [kitôtiwâw, kitôsimiwâw]
+     ôsi+N+I+Px3Sg+Sg:    [otôt, otôsim]
+     ôsi+N+I+Px3Pl+Sg:    [otôtiwâw, otôsimiwâw]
+     ôsi+N+I+Px4Sg/Pl+Sg: [otôtiyiw, otôsimiyiw]
+
+     ôsi+N+I+Pl: ôsa
+     ôsi+N+I+Px1Sg+Pl: [nitôta, nitôsima]
+     ôsi+N+I+Px2Sg+Pl: [kitôta, kitôsima]
+     ôsi+N+I+Px1Pl+Pl: [nitôtinâna, nitôsiminâna]
+     ôsi+N+I+Px12Pl+Pl: [kitôtinawa, kitôsiminawa]
+     ôsi+N+I+Px2Pl+Pl: [kitôtiwâwa, kitôsimiwâwa]
+     ôsi+N+I+Px3Sg+Pl: [otôta, otôsima]
+     ôsi+N+I+Px3Pl+Pl: [otôtiwâwa, otôsimiwâwa]
+     ôsi+N+I+Px4Sg/Pl+Pl: [otôtiyiwa, otôsimiyiwa]
+
+     ôsi+N+I+Loc: ôsihk
+     ôsi+N+I+Px1Sg+Loc:    [nitôtihk,   nitôsimihk]
+     ôsi+N+I+Px2Sg+Loc:    [kitôtihk,   kitôsimihk]
+     ôsi+N+I+Px1Pl+Loc:    [nitôtinâhk, nitôsiminâhk]
+     ôsi+N+I+Px12Pl+Loc:   [kitôtinâhk, kitôsiminâhk]
+     ôsi+N+I+Px2Pl+Loc:    [kitôtiwâhk, kitôsimiwâhk]
+     ôsi+N+I+Px3Sg+Loc:    [otôtihk,    otôsimihk]
+     ôsi+N+I+Px3Pl+Loc:    [otôtiwâhk,  otôsimiwâhk]
+     ôsi+N+I+Px4Sg/Pl+Loc: [otôtiyihk,  otôsimiyihk]
+
+     ôsi+N+I+Der/Dim+N+I+Sg:          [ôsis,         ôsisis]
+     ôsi+N+I+Der/Dim+N+I+Px1Sg+Sg:    [nicôsimis,       nicôsimisis]
+     ôsi+N+I+Der/Dim+N+I+Px2Sg+Sg:    [kicôsimis,       kicôsimisis]
+     ôsi+N+I+Der/Dim+N+I+Px1Pl+Sg:    [nicôsimisinân,   nicôsimisisinân]
+     ôsi+N+I+Der/Dim+N+I+Px12Pl+Sg:   [kicôsimisinaw,   kicôsimisisinaw]
+     ôsi+N+I+Der/Dim+N+I+Px2Pl+Sg:    [kicôsimisiwâw,   kicôsimisisiwâw]
+     ôsi+N+I+Der/Dim+N+I+Px3Sg+Sg:    [ocôsimis,        ocôsimisis]
+     ôsi+N+I+Der/Dim+N+I+Px3Pl+Sg:    [ocôsimisiwâw,    ocôsimisisiwâw]
+     ôsi+N+I+Der/Dim+N+I+Px4Sg/Pl+Sg: [ocôsimisiyiw,    ocôsimisisiyiw]
+
+     ôsi+N+I+Der/Dim+N+I+Pl:          [ôsisa,       ôsisisa]
+     ôsi+N+I+Der/Dim+N+I+Px1Sg+Pl:    [nicôsimisa,     nicôsimisisa]
+     ôsi+N+I+Der/Dim+N+I+Px2Sg+Pl:    [kicôsimisa,     kicôsimisisa]
+     ôsi+N+I+Der/Dim+N+I+Px1Pl+Pl:    [nicôsimisinâna, nicôsimisisinâna]
+     ôsi+N+I+Der/Dim+N+I+Px12Pl+Pl:   [kicôsimisinawa, kicôsimisisinawa]
+     ôsi+N+I+Der/Dim+N+I+Px2Pl+Pl:    [kicôsimisiwâwa, kicôsimisisiwâwa]
+     ôsi+N+I+Der/Dim+N+I+Px3Sg+Pl:    [ocôsimisa,      ocôsimisisa]
+     ôsi+N+I+Der/Dim+N+I+Px3Pl+Pl:    [ocôsimisiwâwa,  ocôsimisisiwâwa]
+     ôsi+N+I+Der/Dim+N+I+Px4Sg/Pl+Pl: [ocôsimisiyiwa,  ocôsimisisiyiwa]

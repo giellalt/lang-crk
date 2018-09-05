@@ -1,0 +1,41 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lokup
+
+Tests:
+  
+  Noun - mihko - ok : # -m inanimate noun, blood AEW NI4w
+     mihko+N+I+Sg: mihko
+     mihko+N+I+Px1Sg+Sg: nimihkom
+     mihko+N+I+Px2Sg+Sg: kimihkom
+     mihko+N+I+Px1Pl+Sg: nimihkominân
+     mihko+N+I+Px12Pl+Sg: kimihkominaw
+     mihko+N+I+Px2Pl+Sg: kimihkomiwâw
+     mihko+N+I+Px3Sg+Sg: omihkom
+     mihko+N+I+Px3Pl+Sg: omihkomiwâw
+     mihko+N+I+Px4Sg/Pl+Sg: omihkomiyiw
+
+     mihko+N+I+Loc: mihkohk
+     mihko+N+I+Px1Sg+Loc: nimihkomihk
+     mihko+N+I+Px2Sg+Loc: kimihkomihk
+     mihko+N+I+Px1Pl+Loc: nimihkominâhk
+     mihko+N+I+Px12Pl+Loc: kimihkominâhk
+     mihko+N+I+Px2Pl+Loc: kimihkomiwâhk
+     mihko+N+I+Px3Sg+Loc: omihkomihk
+     mihko+N+I+Px3Pl+Loc: omihkomiwâhk
+     mihko+N+I+Px4Sg/Pl+Loc: omihkomiyihk
+
+     mihko+N+I+Der/Dim+N+I+Sg:          [mihkos,         mihkosis]
+     mihko+N+I+Der/Dim+N+I+Px1Sg+Sg:    [nimihkomis,       nimihkomisis]
+     mihko+N+I+Der/Dim+N+I+Px2Sg+Sg:    [kimihkomis,       kimihkomisis]
+     mihko+N+I+Der/Dim+N+I+Px1Pl+Sg:    [nimihkomisinân,   nimihkomisisinân]
+     mihko+N+I+Der/Dim+N+I+Px12Pl+Sg:   [kimihkomisinaw,   kimihkomisisinaw]
+     mihko+N+I+Der/Dim+N+I+Px2Pl+Sg:    [kimihkomisiwâw,   kimihkomisisiwâw]
+     mihko+N+I+Der/Dim+N+I+Px3Sg+Sg:    [omihkomis,        omihkomisis]
+     mihko+N+I+Der/Dim+N+I+Px3Pl+Sg:    [omihkomisiwâw,    omihkomisisiwâw]
+     mihko+N+I+Der/Dim+N+I+Px4Sg/Pl+Sg: [omihkomisiyiw,    omihkomisisiyiw]

@@ -1,0 +1,65 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - ayapiy - ok : # -m animate noun, net AEW NA2
+     ayapiy+N+A+Sg: ayapiy
+     ayapiy+N+A+Px1Sg+Sg: nitayapiy
+     ayapiy+N+A+Px2Sg+Sg: kitayapiy
+     ayapiy+N+A+Px1Pl+Sg: nitayapînân
+     ayapiy+N+A+Px12Pl+Sg: kitayapînaw
+     ayapiy+N+A+Px2Pl+Sg: kitayapîwâw
+
+     ayapiy+N+A+Pl: ayapiyak
+     ayapiy+N+A+Px1Sg+Pl: nitayapiyak
+     ayapiy+N+A+Px2Sg+Pl: kitayapiyak
+     ayapiy+N+A+Px1Pl+Pl: nitayapînânak
+     ayapiy+N+A+Px12Pl+Pl: kitayapînawak
+     ayapiy+N+A+Px2Pl+Pl: kitayapîwâwak
+     
+     ayapiy+N+A+Obv: ayapiya
+     ayapiy+N+A+Px1Sg+Obv: nitayapiya
+     ayapiy+N+A+Px2Sg+Obv: kitayapiya
+     ayapiy+N+A+Px1Pl+Obv: nitayapînâna
+     ayapiy+N+A+Px12Pl+Obv: kitayapînawa
+     ayapiy+N+A+Px2Pl+Obv: kitayapîwâwa
+     ayapiy+N+A+Px3Sg+Obv: otayapiya
+     ayapiy+N+A+Px3Pl+Obv: otayapîwâwa
+     ayapiy+N+A+Px4Sg/Pl+Obv: otayapîyiwa
+     
+     ayapiy+N+A+Loc: ayapîhk
+     ayapiy+N+A+Px1Sg+Loc: nitayapîhk
+     ayapiy+N+A+Px2Sg+Loc: kitayapîhk
+     ayapiy+N+A+Px1Pl+Loc: nitayapînâhk
+     ayapiy+N+A+Px12Pl+Loc: kitayapînâhk
+     ayapiy+N+A+Px2Pl+Loc: kitayapîwâhk
+     ayapiy+N+A+Px3Sg+Loc: otayapîhk
+     ayapiy+N+A+Px3Pl+Loc: otayapîwâhk
+     ayapiy+N+A+Px4Sg/Pl+Loc: otayapîyihk
+
+     ayapiy+N+A+Der/Dim+N+A+Sg: [ayapîs, ayapîsis]
+     ayapiy+N+A+Der/Dim+N+A+Px1Sg+Sg: [nicayapîs, nicayapîsis]
+     ayapiy+N+A+Der/Dim+N+A+Px2Sg+Sg: [kicayapîs, kicayapîsis]
+     ayapiy+N+A+Der/Dim+N+A+Px1Pl+Sg: [nicayapîsinân, nicayapîsisinân]
+     ayapiy+N+A+Der/Dim+N+A+Px12Pl+Sg: [kicayapîsinaw, kicayapîsisinaw]
+     ayapiy+N+A+Der/Dim+N+A+Px2Pl+Sg: [kicayapîsiwâw, kicayapîsisiwâw]
+
+
+
+     ayapiy+N+A+Der/Dim+N+A+Pl: [ayapîsak, ayapîsisak]
+     ayapiy+N+A+Der/Dim+N+A+Px1Sg+Pl: [nicayapîsak, nicayapîsisak]
+     ayapiy+N+A+Der/Dim+N+A+Px2Sg+Pl: [kicayapîsak, kicayapîsisak]
+     ayapiy+N+A+Der/Dim+N+A+Px1Pl+Pl: [nicayapîsinânak, nicayapîsisinânak]
+     ayapiy+N+A+Der/Dim+N+A+Px12Pl+Pl: [kicayapîsinawak, kicayapîsisinawak]
+     ayapiy+N+A+Der/Dim+N+A+Px2Pl+Pl: [kicayapîsiwâwak, kicayapîsisiwâwak]
+     
+     ayapiy+N+A+Der/Dim+N+A+Px3Sg+Obv: [ocayapîsa, ocayapîsisa]
+     ayapiy+N+A+Der/Dim+N+A+Px3Pl+Obv: [ocayapîsiwâwa, ocayapîsisiwâwa]
+     ayapiy+N+A+Der/Dim+N+A+Px4Sg/Pl+Obv: [ocayapîsiyiwa, ocayapîsisiyiwa]

@@ -1,0 +1,51 @@
+Config:
+  hfst:
+    Gên: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gên: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - îtimw - ok : # -m animate dependent Cross-aCousin	AEW NDA3
+     -îtim+N+A+D+Px1Sg+Sg: nîtim
+     -îtim+N+A+D+Px2Sg+Sg: kîtim
+     -îtim+N+A+D+Px1Pl+Sg: nîtimonân
+     -îtim+N+A+D+Px12Pl+Sg: kîtimonaw
+     -îtim+N+A+D+Px2Pl+Sg: kîtimowâw
+     
+     -îtim+N+A+D+Px1Sg+Obv: nîtimwa
+     -îtim+N+A+D+Px2Sg+Obv: kîtimwa
+     -îtim+N+A+D+Px1Pl+Obv: nîtimonâna
+     -îtim+N+A+D+Px12Pl+Obv: kîtimonawa
+     -îtim+N+A+D+Px2Pl+Obv: kîtimowâwa
+     
+     -îtim+N+A+D+Px3Sg+Obv: wîtimwa
+     -îtim+N+A+D+Px3Pl+Obv: wîtimowâwa
+     -îtim+N+A+D+Px4Sg/Pl+Obv: wîtimoyiwa
+
+
+     -îtim+N+A+D+Px1Sg+Pl: nîtimwak
+     -îtim+N+A+D+Px2Sg+Pl: kîtimwak
+     -îtim+N+A+D+Px1Pl+Pl: nîtimonânak
+     -îtim+N+A+D+Px12Pl+Pl: kîtimonawak
+     -îtim+N+A+D+Px2Pl+Pl: kîtimowâwak
+
+
+     -îtim+N+A+D+Der/Dim+N+A+D+Px1Sg+Sg:    [nîcimos,     nîcimosis]
+     -îtim+N+A+D+Der/Dim+N+A+D+Px2Sg+Sg:    [kîcimos,     kîcimosis]
+     -îtim+N+A+D+Der/Dim+N+A+D+Px1Pl+Sg:    [nîcimosinân, nîcimosisinân]
+     -îtim+N+A+D+Der/Dim+N+A+D+Px12Pl+Sg:   [kîcimosinaw, kîcimosisinaw]
+     -îtim+N+A+D+Der/Dim+N+A+D+Px2Pl+Sg:    [kîcimosiwâw, kîcimosisiwâw]
+
+     -îtim+N+A+D+Der/Dim+N+A+D+Px3Sg+Obv:    [wîcimosa,     wîcimosisa]
+     -îtim+N+A+D+Der/Dim+N+A+D+Px3Pl+Obv:    [wîcimosiwâwa, wîcimosisiwâwa]
+     -îtim+N+A+D+Der/Dim+N+A+D+Px4Sg/Pl+Obv: [wîcimosiyiwa, wîcimosisiyiwa]
+
+     -îtim+N+A+D+Der/Dim+N+A+D+Px1Sg+Pl:    [nîcimosak,     nîcimosisak]
+     -îtim+N+A+D+Der/Dim+N+A+D+Px2Sg+Pl:    [kîcimosak,     kîcimosisak]
+     -îtim+N+A+D+Der/Dim+N+A+D+Px1Pl+Pl:    [nîcimosinânak, nîcimosisinânak]
+     -îtim+N+A+D+Der/Dim+N+A+D+Px12Pl+Pl:   [kîcimosinawak, kîcimosisinawak]
+     -îtim+N+A+D+Der/Dim+N+A+D+Px2Pl+Pl:    [kîcimosiwâwak, kîcimosisiwâwak]

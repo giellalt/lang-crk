@@ -1,0 +1,66 @@
+Config:
+  hfst:
+    Gên: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gên: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - maskasiy - ok : # -m animate dependent noun, fingernail; claw	AEW NDA2
+     maskasiy+N+A+D+PxX+Sg: maskasiy
+     maskasiy+N+A+D+Px1Sg+Sg: naskasiy
+     maskasiy+N+A+D+Px2Sg+Sg: kaskasiy
+     maskasiy+N+A+D+Px1Pl+Sg: naskasînân
+     maskasiy+N+A+D+Px12Pl+Sg: kaskasînaw
+     maskasiy+N+A+D+Px2Pl+Sg: kaskasîwâw
+     
+     maskasiy+N+A+D+PxX+Obv: maskasiya
+     maskasiy+N+A+D+Px1Sg+Obv: naskasiya
+     maskasiy+N+A+D+Px2Sg+Obv: kaskasiya
+     maskasiy+N+A+D+Px1Pl+Obv: naskasînâna
+     maskasiy+N+A+D+Px12Pl+Obv: kaskasînawa
+     maskasiy+N+A+D+Px2Pl+Obv: kaskasîwâwa
+     
+     maskasiy+N+A+D+Px3Sg+Obv: waskasiya
+     maskasiy+N+A+D+Px3Pl+Obv: waskasîwâwa
+     maskasiy+N+A+D+Px4Sg/Pl+Obv: waskasîyiwa
+
+
+     maskasiy+N+A+D+PxX+Pl: maskasiyak
+     maskasiy+N+A+D+Px1Sg+Pl: naskasiyak
+     maskasiy+N+A+D+Px2Sg+Pl: kaskasiyak
+     maskasiy+N+A+D+Px1Pl+Pl: naskasînânak
+     maskasiy+N+A+D+Px12Pl+Pl: kaskasînawak
+     maskasiy+N+A+D+Px2Pl+Pl: kaskasîwâwak
+
+     maskasiy+N+A+D+PxX+Loc: maskasîhk
+     maskasiy+N+A+D+Px1Sg+Loc: naskasîhk
+     maskasiy+N+A+D+Px2Sg+Loc: kaskasîhk
+     maskasiy+N+A+D+Px1Pl+Loc: naskasînâhk
+     maskasiy+N+A+D+Px12Pl+Loc: kaskasînâhk
+     maskasiy+N+A+D+Px2Pl+Loc: kaskasîwâhk
+
+     maskasiy+N+A+D+Px3Sg+Loc: waskasîhk
+     maskasiy+N+A+D+Px3Pl+Loc: waskasîwâhk
+     maskasiy+N+A+D+Px4Sg/Pl+Loc: waskasîyihk
+
+     maskasiy+N+A+D+Der/Dim+N+A+D+PxX+Sg:      [maskasîs,     maskasîsis]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px1Sg+Sg:    [naskasîs,     naskasîsis]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px2Sg+Sg:    [kaskasîs,     kaskasîsis]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px1Pl+Sg:    [naskasîsinân, naskasîsisinân]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px12Pl+Sg:   [kaskasîsinaw, kaskasîsisinaw]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px2Pl+Sg:    [kaskasîsiwâw, kaskasîsisiwâw]
+
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px3Sg+Obv:    [waskasîsa,     waskasîsisa]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px3Pl+Obv:    [waskasîsiwâwa, waskasîsisiwâwa]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px4Sg/Pl+Obv: [waskasîsiyiwa, waskasîsisiyiwa]
+
+     maskasiy+N+A+D+Der/Dim+N+A+D+PxX+Pl:      [maskasîsak,     maskasîsisak]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px1Sg+Pl:    [naskasîsak,     naskasîsisak]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px2Sg+Pl:    [kaskasîsak,     kaskasîsisak]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px1Pl+Pl:    [naskasîsinânak, naskasîsisinânak]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px12Pl+Pl:   [kaskasîsinawak, kaskasîsisinawak]
+     maskasiy+N+A+D+Der/Dim+N+A+D+Px2Pl+Pl:    [kaskasîsiwâwak, kaskasîsisiwâwak]

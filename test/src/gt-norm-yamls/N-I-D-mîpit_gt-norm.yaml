@@ -1,0 +1,68 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mîpit - ok : # -m inanimate dependent noun, tooth	AEW V-initial NDI1
+
+     mîpit+N+I+D+PxX+Sg: mîpit
+     mîpit+N+I+D+Px1Sg+Sg: nîpit
+     mîpit+N+I+D+Px2Sg+Sg: kîpit
+     mîpit+N+I+D+Px1Pl+Sg: nîpitinân
+     mîpit+N+I+D+Px12Pl+Sg: kîpitinaw
+     mîpit+N+I+D+Px2Pl+Sg: kîpitiwâw
+     
+     mîpit+N+I+D+Px3Sg+Sg: wîpit
+     mîpit+N+I+D+Px3Pl+Sg: wîpitiwâw
+     mîpit+N+I+D+Px4Sg/Pl+Sg: wîpitiyiw
+
+     mîpit+N+I+D+PxX+Pl: mîpita
+     mîpit+N+I+D+Px1Sg+Pl: nîpita
+     mîpit+N+I+D+Px2Sg+Pl: kîpita
+     mîpit+N+I+D+Px1Pl+Pl: nîpitinâna
+     mîpit+N+I+D+Px12Pl+Pl: kîpitinawa
+     mîpit+N+I+D+Px2Pl+Pl: kîpitiwâwa
+     
+     mîpit+N+I+D+Px3Sg+Pl: wîpita
+     mîpit+N+I+D+Px3Pl+Pl: wîpitiwâwa
+     mîpit+N+I+D+Px4Sg/Pl+Pl: wîpitiyiwa
+
+     mîpit+N+I+D+PxX+Loc: mîpitihk
+     mîpit+N+I+D+Px1Sg+Loc: nîpitihk
+     mîpit+N+I+D+Px2Sg+Loc: kîpitihk
+     mîpit+N+I+D+Px1Pl+Loc: nîpitinâhk
+     mîpit+N+I+D+Px12Pl+Loc: kîpitinâhk
+     mîpit+N+I+D+Px2Pl+Loc: kîpitiwâhk
+
+     mîpit+N+I+D+Px3Sg+Loc: wîpitihk
+     mîpit+N+I+D+Px3Pl+Loc: wîpitiwâhk
+     mîpit+N+I+D+Px4Sg/Pl+Loc: wîpitiyihk
+
+     mîpit+N+I+D+Der/Dim+N+I+D+PxX+Sg:      [mîpicis,     mîpicisis]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px1Sg+Sg:    [nîpicis,     nîpicisis]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px2Sg+Sg:    [kîpicis,     kîpicisis]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px1Pl+Sg:    [nîpicisinân, nîpicisisinân]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px12Pl+Sg:   [kîpicisinaw, kîpicisisinaw]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px2Pl+Sg:    [kîpicisiwâw, kîpicisisiwâw]
+
+     mîpit+N+I+D+Der/Dim+N+I+D+Px3Sg+Sg:    [wîpicis,     wîpicisis]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px3Pl+Sg:    [wîpicisiwâw, wîpicisisiwâw]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Sg: [wîpicisiyiw, wîpicisisiyiw]
+
+     mîpit+N+I+D+Der/Dim+N+I+D+PxX+Pl:      [mîpicisa,     mîpicisisa]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px1Sg+Pl:    [nîpicisa,     nîpicisisa]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px2Sg+Pl:    [kîpicisa,     kîpicisisa]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px1Pl+Pl:    [nîpicisinâna, nîpicisisinâna]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px12Pl+Pl:   [kîpicisinawa, kîpicisisinawa]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px2Pl+Pl:    [kîpicisiwâwa, kîpicisisiwâwa]
+     
+     mîpit+N+I+D+Der/Dim+N+I+D+Px3Sg+Pl:    [wîpicisa,      wîpicisisa]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px3Pl+Pl:    [wîpicisiwâwa,  wîpicisisiwâwa]
+     mîpit+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Pl: [wîpicisiyiwa,  wîpicisisiyiwa]
+

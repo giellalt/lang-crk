@@ -1,0 +1,68 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mayakask - ok : # -m inanimate dependent noun, palate	AEW V-initial NDI3
+  
+     mayakask+N+I+D+PxX+Sg: mayakask
+     mayakask+N+I+D+Px1Sg+Sg: nayakask
+     mayakask+N+I+D+Px2Sg+Sg: kayakask
+     mayakask+N+I+D+Px1Pl+Sg: nayakaskonân
+     mayakask+N+I+D+Px12Pl+Sg: kayakaskonaw
+     mayakask+N+I+D+Px2Pl+Sg: kayakaskowâw
+     
+     mayakask+N+I+D+Px3Sg+Sg: wayakask
+     mayakask+N+I+D+Px3Pl+Sg: wayakaskowâw
+     mayakask+N+I+D+Px4Sg/Pl+Sg: wayakaskoyiw
+
+     mayakask+N+I+D+PxX+Pl: mayakaskwa
+     mayakask+N+I+D+Px1Sg+Pl: nayakaskwa
+     mayakask+N+I+D+Px2Sg+Pl: kayakaskwa
+     mayakask+N+I+D+Px1Pl+Pl: nayakaskonâna
+     mayakask+N+I+D+Px12Pl+Pl: kayakaskonawa
+     mayakask+N+I+D+Px2Pl+Pl: kayakaskowâwa
+     
+     mayakask+N+I+D+Px3Sg+Pl: wayakaskwa
+     mayakask+N+I+D+Px3Pl+Pl: wayakaskowâwa
+     mayakask+N+I+D+Px4Sg/Pl+Pl: wayakaskoyiwa
+
+     mayakask+N+I+D+PxX+Loc: mayakaskohk
+     mayakask+N+I+D+Px1Sg+Loc: nayakaskohk
+     mayakask+N+I+D+Px2Sg+Loc: kayakaskohk
+     mayakask+N+I+D+Px1Pl+Loc: nayakaskonâhk
+     mayakask+N+I+D+Px12Pl+Loc: kayakaskonâhk
+     mayakask+N+I+D+Px2Pl+Loc: kayakaskowâhk
+
+     mayakask+N+I+D+Px3Sg+Loc: wayakaskohk
+     mayakask+N+I+D+Px3Pl+Loc: wayakaskowâhk
+     mayakask+N+I+D+Px4Sg/Pl+Loc: wayakaskoyihk
+
+     mayakask+N+I+D+Der/Dim+N+I+D+PxX+Sg:      [mayakaskos,     mayakaskosis]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px1Sg+Sg:    [nayakaskos,     nayakaskosis]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px2Sg+Sg:    [kayakaskos,     kayakaskosis]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px1Pl+Sg:    [nayakaskosinân, nayakaskosisinân]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px12Pl+Sg:   [kayakaskosinaw, kayakaskosisinaw]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px2Pl+Sg:    [kayakaskosiwâw, kayakaskosisiwâw]
+
+     mayakask+N+I+D+Der/Dim+N+I+D+Px3Sg+Sg:    [wayakaskos,     wayakaskosis]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px3Pl+Sg:    [wayakaskosiwâw, wayakaskosisiwâw]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Sg: [wayakaskosiyiw, wayakaskosisiyiw]
+
+     mayakask+N+I+D+Der/Dim+N+I+D+PxX+Pl:      [mayakaskosa,     mayakaskosisa]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px1Sg+Pl:    [nayakaskosa,     nayakaskosisa]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px2Sg+Pl:    [kayakaskosa,     kayakaskosisa]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px1Pl+Pl:    [nayakaskosinâna, nayakaskosisinâna]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px12Pl+Pl:   [kayakaskosinawa, kayakaskosisinawa]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px2Pl+Pl:    [kayakaskosiwâwa, kayakaskosisiwâwa]
+     
+     mayakask+N+I+D+Der/Dim+N+I+D+Px3Sg+Pl:    [wayakaskosa,      wayakaskosisa]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px3Pl+Pl:    [wayakaskosiwâwa,  wayakaskosisiwâwa]
+     mayakask+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Pl: [wayakaskosiyiwa,  wayakaskosisiyiwa]
+
