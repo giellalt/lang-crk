@@ -75,9 +75,11 @@ c (->) c h,       # English influence on spelling <c>
 
 k (->) h k,       # Excessive preaspiration, might this appear before other stops?
 h k (->) k,       # Missing preaspiration, might this appear before other stops?
+# a h k (->) â k,
+# a h t (->) â t,
 â w e (->) a w ê,
-i w (->) o w      # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
-
+i w (->) o w,      # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
+o w (->) i w 
 ;
 
 
