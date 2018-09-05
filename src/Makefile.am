@@ -10,6 +10,7 @@ SUBDIRS = phonology morphology filters phonetics hyphenation orthography syntax 
 # Define target variables first, before assigning to them:
 GT_ANALYSERS=
 GT_GENERATORS=
+ADDITIONAL_TARGETS=
 
 #### Local modifications in *fst processing: ####
 ####
@@ -39,6 +40,8 @@ GT_GENERATORS=
 #### BEGIN: Add local processing instructions BELOW this line ####
 ##################################################################
 
+all-am: Makefile $(DATA) $(ADDITIONAL_TARGETS)
+
 ########################################################
 #### Add language-specific transducer targets here: ####
 
@@ -62,6 +65,38 @@ endif # CAN_FOMA
 
 #################################################
 #### Add language-specific build rules here: ####
+
+# Author: Eddie Antonio Santos <easantos@ualberta.ca>
+# Date:   Wed Jul  4 10:44:11 MDT 2018 **
+# Origin: https://gist.github.com/eddieantonio/a6f8f29ea66ce5c1d12679283a7d8f25
+
+# The source analyser and generator FSTs are done entirely in Standard Roman
+# Orthography (Latn).  However, we require Canadian Aboriginal syllabics
+# versions of both. This Makefile converts SRO FSTs in the equivillent
+# syllabics FSTs.
+#
+# analyser-gt-desc.Cans-to-Cans.hfstol
+# : An analyzer that accepts input in Canadian Aboriginal syllabics
+#   and produces a morphological analysis with its lemma also written in syllabics.
+#   "Descriptive" means it is able to understand non-standard orthography.
+# 
+# generator-gt-desc.Cans-to-Cans.hfstol
+# : A generator that accepts a morphological analysis in Canadian Aboriginal syllabics,
+#   and produces an orthographically correct surface form, also in syllabics.
+
+if CAN_HFST
+ADDITIONAL_TARGETS+=analyser-gt-desc.Cans-to-Cans.hfstol
+ADDITIONAL_TARGETS+=generator-gt-norm.Cans-to-Cans.hfstol
+
+HFSTCOMPOSE.RULE = hfst-compose -F -o $@ -1 $(word 1,$^) -2 $(word 2,$^)
+
+%.Cans-to-Latn.hfst: orthography/Cans-to-Latn.compose.hfst %.hfst 
+	$(HFSTCOMPOSE.RULE)
+
+%.Cans-to-Cans.hfst: %.Cans-to-Latn.hfst orthography/Latn-to-Cans.compose.hfst 
+	$(HFSTCOMPOSE.RULE)
+endif # CAN_HFST
+
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
