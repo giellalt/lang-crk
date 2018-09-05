@@ -1,143 +1,395 @@
-!!!Alphabet
 
 
- *  t2:0       t between prefix and vowel-initial stem
- *  t3:t       t to s in VTA-4
- *  t4:c       t to c in VTI-1
- *  w2:w       for keeping the final -w in mow
- *  y2:0       epenthetic joiner in reduplication of vowe-initial stems
- *  y3:0       epenthetic joiner in reduplication of vowe-initial stems
- *  i2:0       vta5-i epenthesis
- *  %>:0       suffix boundary
- *  %<:0       prefix boundary
- *  %^LOC:0    Locative suffix alternation trigger
- *  %^DIM:0    Diminutive alternation trigger
- *  %^EGLOT:0  Conjunctive êh trigger
- *  %^POS:0    Possessive alternation trigger
+
+
+
+
+
+
+
+
+
+ *  y2:0       epenthetic joiner in reduplication of vowel-initial stems
+ *  y3:0       epenthetic joiner in reduplication of vowel-initial stems
  *  %^DUPL1:0   Reduplication consonant place holder 
  *  %^DUPL2:0   Reduplication consonant place holder 
- *  %^MI:0     wici-mi consonant place holder 
- *  %^EA:0     ê to â in 1, 2 person of ê verbs
- *  %^TS:0      t to s in VTA-4 verbs before some i-init suf
- *  %^NII:0     n to h or 0 in VII verbs when before k-init suf
- *  %^WI:0       w to 0 in vta-2 verbs when before k-init suf
- *  %^IO:0     VTACw w + i become o
- *  %^VS:0     Ruling out verbs from the w/i deletions in conjunction with possessives.
 
+ *  %^EGLOT:0    Epenthetic -h- place holder
 
-!!!Sets
 
- *  Vow = a e i o u y â ê î ô           
-          A E I O U Y Â Ê Î Ô ;         
+ *  w3:w  3rd person possessor for NDA and NDI (non-kinship)
+ *  y4:y  immutable -y in single-syllable nouns
+ *  i4:i  possessive prefix -i that deletes before Vowel in Dep nouns
 
- *  ShortVow = a ê i o A E I O ;       
 
- *  LongVow = â ê î ô Â Ê Î Ô ;      
 
- *  Vow2 = a e i o u â ê î ô       
-         A E I O U Â Ê Î Ô ;     
 
 
 
 
 
 
-!!!Rules
 
 
-__o:w in possessive prefix__ , w- in front of î, a, â (?) in possessive forms: 
-mahkwan:wahkwan, mîpit:wîpit, mîyaw:wîyaw
 
-__o:0 in possessive prefix__ , Okimasis p. 140 
 
-__i:0 after possessive prefix__ , ospiton 
 
-__t2:t between prefix and vowel__ , joiner for nouns with initial vowel.
+* __mêskanaw>i2s __
+* __mêskanâ000s __
 
-__t:c in diminutives __ Okimasis 2004: 13, Rule 2.
 
+* __mêskanaw>i2hk __
+* __mêskanâ000hk __
 
 
+* __sôniyâw>i2s^DIM __
+* __sôniyâ000s0 __
 
-__Diminutives - t2 changes to c __ , for the joiner. There are exeptions, but for they we have to make rules, or mark them with a dummy
 
+* __miskotâkay>i2s^DIM __
+* __miskocâkâ000s0 __
 
 
-__i:o alternations __  for suffix initial vowel, stem final -Cw
+* __nâpêw>i2^DIMsis __
+* __nâpê0000sis __
 
-__Vowel final stems: vowel deletion when suffix has initial a or i __ , when the suffix  niska, wâwi+a wâwi+ihk wâwi+is, oskâyi+a, êsa+ihk
 
+* __iskwêw>i2^DIMsis __
+* __iskwê0000sis __
 
 
-__w:0 alternations __  in -Cw stems
+* __maskosiy>i2^DIMs __
+* __maskosî0000s __
 
 
+* __pikiw>i2^DIMs __
+* __pikî0000s __
 
-__i:ii- alternations in stem__ , Okimasis p. 13 pikiw : pikîs
 
-__o:oo- alternations in stem__ , initially in stem, and for stem vowel when final -oy/ow
-okimâw:nitôkimâm, nitohtôsâpom tohtôsâpoy tohtôsâpôhk, cohcôsâpôs, cahcahkâyôhk, cahcahkâyôs
+* __maskosiy>i2hk __
+* __maskosî000hk __
 
 
-__a:aa alternations in stem __  for stem vowel when final -ay
 
+* __sîwâpoy>i2^DIMs __
+* __sîwâpô0000s __
 
-__y:0 alternations __  for stem vowel when final -Vy
 
+* __tohtôsâpoy>i2hk __
+* __tohtôsâpô000hk __
 
 
 
-__i:0 in suffix for stem final -Vw/Vy __ (first) : Okimasis 2004: 26, Rule 2, 8: Vow + (w/y) + ihk 
-cahcahkâyow+ihk, tohtôsâpoy+ihk, cahcahkâyow+is, cohcôsâpoy+is, o+pikiw+iyiwa	 maniway+i
 
+* __wâwi>i2^DIMs __
+* __wâwi000s __
 
-VERBS
 
-__h glottal stop for initial vowel stems in verbs: Conjunctive__
+* __ôsi>i2hk __
+* __ôsi00hk __
 
 
-__e and ee to aa rule in first and second person__
 
-__a to ee rule in first and second person__
 
 
-__a to ee rule in first and second person__
 
-__a to ee rule in first and second person__
 
+* __atimw>i2^DIMs __
+* __acimo000s __
 
 
-__n:h before k suf in VII__
+* __mistikw>i2hk __
+* __mistiko00hk __
+* __sâkahikan>i2^DIMs __
+* __sâkahikan0i0s __
 
-__i:0 in VTA-Vw__
 
-__w2:0 in VTA-Vw__
+* __maskisin>i2hk __
+* __maskisin0ihk __
 
-__Lengthening of vowels before dissappearing stem final <w>__
 
+* __atimw __
+* __atim0 __
 
-__n:0 before k suf in VII__
 
-__i:o i to o when after %^IO in VTACw__
+* __askihkw __
+* __askihk0 __
 
-__VTACw w to nothing when before %^IO__
 
-__Matching weak/strong reduplication consonant placeholder %^DUPL1 with stem-initial consonant__
+* __atimw __
+* __atim0 __
 
-__Setting double weak+strong reduplication consonant placeholder %^DUPL2 with stem-initial consonant__
+* __nit2<nînihikw __
+* __ni00nînihik __
 
-__Inserting epenthetic y in weak reduplication of vowel-initial stem__
 
-__Inserting epenthetic y in strong+weak reduplication of vowel-initial stem__
 
-__Unspecified Actor t:c in VTAVw__
+* __a>tân __
+* __ê0tân __
 
-__Cns mi epenthesis__
 
-__Cns mi epenthesis2__
 
+* __nit2<astotin>i2^DIMs __
+* __nic0ascocin0i0s __
 
 
-__s:0 in kost- VTA-4__
 
-__i2:i in vta-5i__
+
+
+
+* __ê^EGLOT<acimo>t __
+* __êh0acimo0t __
+
+* __ê^EGLOT<^DUPL1ay2<acimo>t __
+* __êh00ay0acimo0t __
+
+* __ê^EGLOT<^DUPL2ay3^DUPL1âh<acimo>t __
+* __êh00ay0âh0acimo0t __
+
+
+* __nit2<nêhiyawê>n2 __
+* __ni00nêhiyawâ0n __
+* __kit2<kâsîhkwê>n2 __
+* __ki00kâsîhkwâ0n __
+
+
+* __nit2<tipiska>n2 __
+* __ni00tipiskê0n __
+* __kit2<kiskêyihta>n2 __
+* __ki00kiskêyihtê0n __
+
+
+
+* __ê-<nîpin3>k __
+* __ê-0nîpih0k __
+
+
+
+* __ê-<mispon>k __
+* __ê-0mispo00k __
+
+
+* __wapâht4>ikâtê>w __
+* __wapâhc0ikâtê0w __
+
+
+
+
+* __ê-<mow2>i2ht __
+* __ê-0mow0iht __
+* __ê-<ayaw2>i2koyâhk __
+* __ê-0ayaw0ikoyâhk __
+* __kit2<kîskisw>in __
+* __ki00kîskiso00n __
+* __nit2<kîskisw>i2mâwa __
+* __ni00kîskiso00mâwa __
+* __ê-<kîskisw>i2tân __
+* __ê-0kîskiso00tân __
+* __ê-<kîskisw>it __
+* __ê-0kîskiso00t __
+* __ê-<kîskisw>i2sk __
+* __ê-0kîskiso00sk __
+* __ê-<kîskisw>i2koyâhk __
+* __ê-0kîskiso00koyâhk __
+* __nit2<kîskisw>i2kawin __
+* __ni00kîskiso00kawin __
+* __kîskisw>in __
+* __kîskiso00n __
+* __kîskisw>ii2hkan __
+* __kîskisô00hkan __
+
+* __kit2<nitonaw>in __
+* __ki00nitonaw0in __
+* __nit2<nitonaw>i2mâwa __
+* __ni00nitonâ000mâwa __
+* __ê-<nitonaw>i2tân __
+* __ê-0nitonâ000tân __
+* __ê-<nitonaw>it __
+* __ê-0nitonaw0it __
+* __ê-<nitonaw>i2sk __
+* __ê-0nitonâ000sk __
+* __ê-<nitonaw>i2koyâhk __
+* __ê-0nitonâ000koyâhk __
+* __nit2<nitonaw>i2kawin __
+* __ni00nitonâ000kawin __
+* __nitonaw>in __
+* __nitonaw0in __
+* __nitonaw>îhkan __
+* __nitonaw0îhkan __
+
+
+
+* __kit2<nakat3>in __
+* __ki00nakas0in __
+* __nit2<nakat3>i2mâwa __
+* __ni00nakat0imâwa __
+* __ê-<nakat3>i2tân __
+* __ê-0nakat0itân __
+* __ê-<nakat3>it __
+* __ê-0nakas0it __
+* __ê-<nakat3>i2sk __
+* __ê-0nakat0isk __
+* __ê-<nakat3>i2koyâhk __
+* __ê-0nakat0ikoyâhk __
+* __nit2<nakat3>i2kawin __
+* __ni00nakat0ikawin __
+* __nakat3>in __
+* __nakas0in __
+* __nakat3>ii2hkan __
+* __nakas0îhkan __
+
+
+* __kit2<kost3>in __
+* __ki00ko0s0in __
+* __nit2<kost3>i2mâwa __
+* __ni00kost0imâwa __
+* __ê-<kost3>i2tân __
+* __ê-0kost0itân __
+* __ê-<kost3>it __
+* __ê-0ko0s0it __
+* __ê-<kost3>i2sk __
+* __ê-0kost0isk __
+* __ê-<kost3>i2koyâhk __
+* __ê-0kost0ikoyâhk __
+* __nit2<kost3>i2kawin __
+* __ni00kost0ikawin __
+* __kost3>in __
+* __ko0s0in __
+* __kost3>ii2hkan __
+* __ko0s0îhkan __
+
+
+
+
+* __mi4<îwat3>i2^DIMs __
+* __m00îwac0i0s __
+
+__ReduplCRule1__
+
+__ReduplCRule2__
+
+__ReduplY2Rule__
+
+__ReduplY3Rule__
+
+* __^DUPL1ay2-<nipâw __
+* __na0-0nipâw __
+
+* __^DUPL1âh-<nipâw __
+* __nâh-0nipâw __
+
+* __^DUPL2ay3-^DUPL1âh-<nipâw __
+* __na0-nâh-0nipâw __
+
+* __^DUPL2ay3-^DUPL1âh-<ayâw __
+* __0ay-0âh-0ayâw __
+
+* __^DUPL1âh-<ayâw __
+* __0âh-0ayâw __
+
+* __^DUPL1ay2-<ayâw __
+* __0ay-0ayâw __
+
+INITIAL CHANGE
+
+
+
+* __nipât^IC __
+* __nêpât0 __
+
+* __miyo-nipât^IC __
+* __mêyo-nipât0 __
+
+* __itwêt^IC __
+* __êtwêt0 __
+
+* __apit^IC __
+* __êpit0 __
+
+* __wayawit^IC __
+* __wêyawit0 __
+
+* __îkatêhtêt^IC __
+* __âkatêhtêt0 __
+
+* __nîmit^IC __
+* __nâmit0 __
+
+* __0ohcît^IC __
+* __wêhcît0 __
+
+* __m0ostohtêt^IC __
+* __mwêstohtêt0 __
+
+
+
+* __0oyôyot^IC __
+* __wêyôyot0 __
+
+* __k0ocît^IC __
+* __kwêcît0 __
+
+
+
+
+
+* __îkatêhât^IC __
+* __âkatêhât0 __
+
+* __00îkatêhât^IC __
+* __iyîkatêhât0 __
+
+* __00êskêt^IC __
+* __iyêskêt0 __
+
+* __00âcimot^IC __
+* __iyâcimot0 __
+
+* __00ôhkomit^IC __
+* __iyôhkomit0 __
+
+
+
+* __w3<spiton __
+* __o0spiton __
+
+* __ni<spiton __
+* __ni0spiton __
+
+* __ki<spiton __
+* __ki0spiton __
+
+* __w3<îpit __
+* __w0îpit __
+
+* __w3<ahkwan __
+* __w0ahkwan __
+
+
+
+
+
+
+
+* __ni4<ohkom __
+* __n00ôhkom __
+
+* __ni4<ohkom>i2nân>ak __
+* __n00ôhkom0inân0ak __
+
+* __ki4<ohkom __
+* __k00ôhkom __
+
+* __w3<ohkom>a __
+* __00ohkom0a __
+
+
+* __nit2<ospwâkan __
+* __nit0ôspwâkan __
+
+* __kit2<ospwâkan __
+* __kit0ôspwâkan __
+
+* __ot2<ospwâkan __
+* __ot0ôspwâkan __
+
