@@ -1,0 +1,51 @@
+YAML vs. FST Discrepancies log
+
+- FST has 21Pl for Noun_affixes, not Verb_affixes. YAML files had 12Pl like Verbs_affixes.
+
+AA: This can be a simple fix in the FST (after we've discussed which way we want to go.
+
+- dim for oskasâkay/osk-aya does not lengthen o, probably because t -> c
+
+AA: Should the initial o- be lengthened, or initial o-? Currently, final glides in single-syllable nouns are marked as immutable (y4), cf. below:
+AA: osk-âyi:osk-ây4 NI_SG/I_POSS/IM
+
+-osi takes -im for some reason?
+
+AA: We allowed regular inflection for ôsi-, and that's been classified with needing an -im, which can be simply should we decide so, cf. below (AA)
+AA: ôsi:ôs NI_SG/I_POSS/IM 
+AA: If we don't want ôsi- to take -im, then we'd classify it simply as NI_SG/I
+
+-wîwas does not allow for t->c in diminutive ?
+
+This concerns getting the t3 as part of the diminutive palatalization rules, where I need to consult Miikka on how to achieve that in the TWOLC code without conflicts. (AA)
+
+- for VAIs like matow (ending in -ow in 3Sg Ind), the comitative does not lengthen the stem final -o, as it should.
+
+AA: But I am getting the lengthening (has this already been fixed?):
+AA: matow+V+AI+Der/Com+V+TA+Ind+Prs+3Sg+4Sg/PlO     wîcimatômêw  0.000000
+AA: matow+V+AI+Der/Com+V+TA+Ind+Prs+3Sg+4Sg/PlO     wîci-matômêw 0.000000
+
+- Comitative does not occur in the wit- form yet
+
+AA: Yes, we didn't implement this yet.
+
+- Comitative does not work yet for VAIn forms or VTIw forms
+
+AA: Does this mean that we do not have the comitative suffixation taking place for the VAIn and VTIw forms? If not, then those contlexes should be added - I presume that the relevant morphophonology is already taken care of.
+
+- For VTAs, we should do ikw and ikon for 3pl+1SgO forms.
+
+- PV/e+VERBSTEM+V+TA+Cnj+Prs+4Sg/Pl+5Sg/PlO doesn’t work for some reason, even though it is coded.
+
+AA: The culprit was incorrect double coding of Goals, cf. wâpamayit <-> wâpamêw+V+TA+Cnj+Prs+4Sg/PlO+5Sg/PlO. This is now corrected in LEXC.
+
+
+- Does Imp+IMM still use syncretic 2Sg/Pl tag in VTA?
+
+AA: Since the syncretism only occurs in one order (and one conjugation class), and not throughout the entire verbal and pronominal system, we should provide two analyses for the sycreting one, i.e. +2Sg and +Pl, and generating with either should produce the same syncretic form. This should amount to duplicating the lines in the LEXC code, and doing away with the ambiguity tag +2Sg/Pl
+
+- is Imp+Imm+ lacking +2Pl+1PlO tag in VTA?
+
+- +Imp+Imm+2Pl+3PlO gives -ihkok when it should be -ihkik, according to AEW.
+
+AA: This should be fixed in the LEXC code, as it's in the middle of the suffix chunk and should have no other ramifications.

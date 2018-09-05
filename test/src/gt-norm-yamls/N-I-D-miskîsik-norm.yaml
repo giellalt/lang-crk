@@ -1,0 +1,56 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - miskîsik - ok : # -m inanimate dependent noun, hair	AEW V-initial NDI2
+     miskîsik+N+A+Sg: miskîsik
+     miskîsik+N+A+Px1Sg+Sg: niskîsik
+     miskîsik+N+A+Px2Sg+Sg: kiskîsik
+     miskîsik+N+A+Px1Pl+Sg: niskîsikonân
+     miskîsik+N+A+Px12Pl+Sg: kiskîsikonaw
+     miskîsik+N+A+Px2Pl+Sg: kiskîsikowâw
+
+     miskîsik+N+A+Pl: miskîsikwa
+     miskîsik+N+A+Px1Sg+Pl: niskîsikwa
+     miskîsik+N+A+Px2Sg+Pl: kiskîsikwa
+     miskîsik+N+A+Px1Pl+Pl: niskîsikonâna
+     miskîsik+N+A+Px12Pl+Pl: kiskîsikonawa
+     miskîsik+N+A+Px2Pl+Pl: kiskîsikowâwa
+
+     miskîsik+N+A+Px3Sg+Obv: oskîsik
+     miskîsik+N+A+Px3Pl+Obv: oskîsikowâwa
+     miskîsik+N+A+Px4Sg+Obv: oskîsikoyiwa
+     miskîsik+N+A+Px4Pl+Obv: oskîsikoyiwa
+
+     miskîsik+N+A+Loc: miskîsikohk
+     miskîsik+N+A+Px1Sg+Loc: niskîsikohk
+     miskîsik+N+A+Px2Sg+Loc: kiskîsikohk
+     miskîsik+N+A+Px1Pl+Loc: niskîsikonâhk
+     miskîsik+N+A+Px12Pl+Loc: kiskîsikonâhk
+     miskîsik+N+A+Px2Pl+Loc: kiskîsikowâhk
+     miskîsik+N+A+Px3Sg+Loc: oskîsikohk
+     miskîsik+N+A+Px3Pl+Loc: oskîsikowâhk
+     miskîsik+N+A+Px4Sg+Loc: oskîsikoyihk
+     miskîsik+N+A+Px4Pl+Loc: oskîsikoyihk
+
+     miskîsik+N+A+Der/Dim+N+A+Sg: miskîsikos
+     miskîsik+N+A+Der/Dim+N+A+Sg: [miskîsikos, miskîsikosis]
+     miskîsik+N+A+Der/Dim+N+A+Px1Sg+Sg: [niskîsikos, niskîsikosis]
+     miskîsik+N+A+Der/Dim+N+A+Px2Sg+Sg: [kiskîsikos, kiskîsikosis]
+     miskîsik+N+A+Der/Dim+N+A+Px1Pl+Sg: [niskîsikosinân, niskîsikosisinân]
+     miskîsik+N+A+Der/Dim+N+A+Px12Pl+Sg: [kiskîsikosinaw, kiskîsikosisinaw]
+     miskîsik+N+A+Der/Dim+N+A+Px2Pl+Sg: [kiskîsikosiwâw, kiskîsikosisiwâw]
+
+     miskîsik+N+A+Der/Dim+N+A+Pl: [miskîsikosa, miskîsikosisa]
+     miskîsik+N+A+Der/Dim+N+A+Px1Sg+Pl: [niskîsikosa, niskîsikosisa]
+     miskîsik+N+A+Der/Dim+N+A+Px2Sg+Pl: [kiskîsikosa, kiskîsikosisa]
+     miskîsik+N+A+Der/Dim+N+A+Px1Pl+Pl: [niskîsikosinâna, niskîsikosisinâna]
+     miskîsik+N+A+Der/Dim+N+A+Px12Pl+Pl: [kiskîsikosinawa, kiskîsikosisinawa]
+     miskîsik+N+A+Der/Dim+N+A+Px2Pl+Pl: [kiskîsikosiwâwa, kiskîsikosisiwâwa]

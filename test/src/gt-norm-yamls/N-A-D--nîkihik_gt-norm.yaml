@@ -1,0 +1,51 @@
+Config:
+  hfst:
+    Gên: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gên: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - nîkihikw - ok : # -m animate dependent noun, fingernail; claw	AEW NDA3
+     -nîkihik+N+A+D+Px1Sg+Sg: ninîkihik
+     -nîkihik+N+A+D+Px2Sg+Sg: kinîkihik
+     -nîkihik+N+A+D+Px1Pl+Sg: ninîkihikonân
+     -nîkihik+N+A+D+Px12Pl+Sg: kinîkihikonaw
+     -nîkihik+N+A+D+Px2Pl+Sg: kinîkihikowâw
+     
+     -nîkihik+N+A+D+Px1Sg+Obv: ninîkihikwa
+     -nîkihik+N+A+D+Px2Sg+Obv: kinîkihikwa
+     -nîkihik+N+A+D+Px1Pl+Obv: ninîkihikonâna
+     -nîkihik+N+A+D+Px12Pl+Obv: kinîkihikonawa
+     -nîkihik+N+A+D+Px2Pl+Obv: kinîkihikowâwa
+     
+     -nîkihik+N+A+D+Px3Sg+Obv: onîkihikwa
+     -nîkihik+N+A+D+Px3Pl+Obv: onîkihikowâwa
+     -nîkihik+N+A+D+Px4Sg/Pl+Obv: onîkihikoyiwa
+
+
+     -nîkihik+N+A+D+Px1Sg+Pl: ninîkihikwak
+     -nîkihik+N+A+D+Px2Sg+Pl: kinîkihikwak
+     -nîkihik+N+A+D+Px1Pl+Pl: ninîkihikonânak
+     -nîkihik+N+A+D+Px12Pl+Pl: kinîkihikonawak
+     -nîkihik+N+A+D+Px2Pl+Pl: kinîkihikowâwak
+
+
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px1Sg+Sg:    [ninîkihikos,     ninîkihikosis]
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px2Sg+Sg:    [kinîkihikos,     kinîkihikosis]
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px1Pl+Sg:    [ninîkihikosinân, ninîkihikosisinân]
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px12Pl+Sg:   [kinîkihikosinaw, kinîkihikosisinaw]
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px2Pl+Sg:    [kinîkihikosiwâw, kinîkihikosisiwâw]
+
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px3Sg+Obv:    [onîkihikosa,     onîkihikosisa]
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px3Pl+Obv:    [onîkihikosiwâwa, onîkihikosisiwâwa]
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px4Sg/Pl+Obv: [onîkihikosiyiwa, onîkihikosisiyiwa]
+
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px1Sg+Pl:    [ninîkihikosak,     ninîkihikosisak]
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px2Sg+Pl:    [kinîkihikosak,     kinîkihikosisak]
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px1Pl+Pl:    [ninîkihikosinânak, ninîkihikosisinânak]
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px12Pl+Pl:   [kinîkihikosinawak, kinîkihikosisinawak]
+     -nîkihik+N+A+D+Der/Dim+N+A+D+Px2Pl+Pl:    [kinîkihikosiwâwak, kinîkihikosisiwâwak]

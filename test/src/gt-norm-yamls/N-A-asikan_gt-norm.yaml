@@ -1,0 +1,53 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - asikan - ok : # -m anate noun, sock AEW NA1
+     asikan+N+A+Sg: asikan
+     asikan+N+A+Px1Sg+Sg: nitasikan
+     asikan+N+A+Px2Sg+Sg: kitasikan
+     asikan+N+A+Px1Pl+Sg: nitasikaninân
+     asikan+N+A+Px12Pl+Sg: kitasikaninaw
+     asikan+N+A+Px2Pl+Sg: kitasikaniwâw
+
+     asikan+N+A+Pl: asikanak
+     asikan+N+A+Px1Sg+Pl: nitasikanak
+     asikan+N+A+Px2Sg+Pl: kitasikanak
+     asikan+N+A+Px1Pl+Pl: nitasikaninânak
+     asikan+N+A+Px12Pl+Pl: kitasikaninawak
+     asikan+N+A+Px2Pl+Pl: kitasikaniwâwak
+     
+     asikan+N+A+Obv: asikana
+     asikan+N+A+Px1Sg+Obv: nitasikana
+     asikan+N+A+Px2Sg+Obv: kitasikana
+     asikan+N+A+Px1Pl+Obv: nitasikaninâna
+     asikan+N+A+Px12Pl+Obv: kitasikaninawa
+     asikan+N+A+Px2Pl+Obv: kitasikaniwâwa
+     asikan+N+A+Px3Sg+Obv: otasikana
+     asikan+N+A+Px3Pl+Obv: otasikaniwâwa
+     asikan+N+A+Px4Sg/Pl+Obv: otasikaniyiwa
+     
+     asikan+N+A+Der/Dim+N+A+Sg: [asikanis, asikanisis]
+     asikan+N+A+Der/Dim+N+A+Px1Sg+Sg: [nicasikanis, nicasikanisis]
+     asikan+N+A+Der/Dim+N+A+Px2Sg+Sg: [kicasikanis, kicasikanisis]
+     asikan+N+A+Der/Dim+N+A+Px1Pl+Sg: [nicasikanisinân, nicasikanisisinân]
+     asikan+N+A+Der/Dim+N+A+Px12Pl+Sg: [kicasikanisinaw, kicasikanisisinaw]
+     asikan+N+A+Der/Dim+N+A+Px2Pl+Sg: [kicasikanisiwâw, kicasikanisisiwâw]
+
+     asikan+N+A+Der/Dim+N+A+Pl: [asikanisak, asikanisisak]
+     asikan+N+A+Der/Dim+N+A+Px1Sg+Pl: [nicasikanisak, nicasikanisisak]
+     asikan+N+A+Der/Dim+N+A+Px2Sg+Pl: [kicasikanisak, kicasikanisisak]
+     asikan+N+A+Der/Dim+N+A+Px1Pl+Pl: [nicasikanisinânak, nicasikanisisinânak]
+     asikan+N+A+Der/Dim+N+A+Px12Pl+Pl: [kicasikanisinawak, kicasikanisisinawak]
+     asikan+N+A+Der/Dim+N+A+Px2Pl+Pl: [kicasikanisiwâwak, kicasikanisisiwâwak]
+     
+     asikan+N+A+Der/Dim+N+A+Px3Sg+Obv: [ocasikanisa, ocasikanisisa]
+     asikan+N+A+Der/Dim+N+A+Px3Pl+Obv: [ocasikanisiwâwa, ocasikanisisiwâwa]
+     asikan+N+A+Der/Dim+N+A+Px4Sg/Pl+Obv: [ocasikanisiyiwa, ocasikanisisiyiwa]

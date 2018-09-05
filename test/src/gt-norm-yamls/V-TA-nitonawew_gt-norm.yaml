@@ -1,0 +1,271 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - nitonawêw - ok : # VTA (VTA2 AEW) 
+
+###PRS###
+## INDEPENDENT ##
+     nitonawêw+V+TA+Ind+Prs+2Sg+1SgO:    kinitonawin # LOCAL DIR
+     nitonawêw+V+TA+Ind+Prs+2Sg+1PlO:    kinitonawinân
+     nitonawêw+V+TA+Ind+Prs+2Pl+1PlO:    kinitonawinân
+     nitonawêw+V+TA+Ind+Prs+2Pl+1SgO:    kinitonawinâwâw
+
+     nitonawêw+V+TA+Ind+Prs+1Sg+2SgO:    kinitonâtin # LOCAL INVERSE
+     nitonawêw+V+TA+Ind+Prs+1Pl+2SgO:    kinitonâtinân
+     nitonawêw+V+TA+Ind+Prs+1Pl+2PlO:    kinitonâtinân
+     nitonawêw+V+TA+Ind+Prs+1Sg+2PlO:    kinitonâtinâwâw
+
+
+     nitonawêw+V+TA+Ind+Prs+1Sg+3SgO:    ninitonawâw # MIXED DIR (obj sg)
+     nitonawêw+V+TA+Ind+Prs+2Sg+3SgO:    kinitonawâw
+     nitonawêw+V+TA+Ind+Prs+1Pl+3SgO:    ninitonawânân
+     nitonawêw+V+TA+Ind+Prs+12Pl+3SgO:    kinitonawânaw
+     nitonawêw+V+TA+Ind+Prs+2Pl+3SgO:    kinitonawâwâw
+     nitonawêw+V+TA+Ind+Prs+1Sg+3PlO:    ninitonawâwak # MIXED DIR (obj pl)
+     nitonawêw+V+TA+Ind+Prs+2Sg+3PlO:    kinitonawâwak
+     nitonawêw+V+TA+Ind+Prs+1Pl+3PlO:    ninitonawânânak
+     nitonawêw+V+TA+Ind+Prs+12Pl+3PlO:    kinitonawânawak
+     nitonawêw+V+TA+Ind+Prs+2Pl+3PlO:    kinitonawâwâwak
+
+     nitonawêw+V+TA+Ind+Prs+1Sg+4Sg/PlO:    ninitonâmâwa # MIXED DIR (obj. obv.)
+     nitonawêw+V+TA+Ind+Prs+2Sg+4Sg/PlO:    kinitonâmâwa
+     nitonawêw+V+TA+Ind+Prs+1Pl+4Sg/PlO:    ninitonâmânâna
+     nitonawêw+V+TA+Ind+Prs+12Pl+4Sg/PlO:    kinitonâmânawa
+     nitonawêw+V+TA+Ind+Prs+2Pl+4Sg/PlO:    kinitonâmâwâwa
+
+     nitonawêw+V+TA+Ind+Prs+3Sg+1SgO:    ninitonâk # MIXED INV (sbj sg)
+     nitonawêw+V+TA+Ind+Prs+3Sg+2SgO:    kinitonâk
+     nitonawêw+V+TA+Ind+Prs+3Sg+1PlO:    ninitonâkonân
+     nitonawêw+V+TA+Ind+Prs+3Sg+12PlO:    kinitonâkonaw
+     nitonawêw+V+TA+Ind+Prs+3Sg+2PlO:    kinitonâkowâw
+     nitonawêw+V+TA+Ind+Prs+3Pl+1SgO:    [ninitonâkowak, ninitonâkwak] # MIXED INV (sbj pl)
+     nitonawêw+V+TA+Ind+Prs+3Pl+2SgO:    [kinitonâkowak, kinitonâkwak]
+     nitonawêw+V+TA+Ind+Prs+3Pl+1PlO:    ninitonâkonânak
+     nitonawêw+V+TA+Ind+Prs+3Pl+12PlO:    kinitonâkonawak
+     nitonawêw+V+TA+Ind+Prs+3Pl+2PlO:    kinitonâkowâwak
+
+     nitonawêw+V+TA+Ind+Prs+1Sg+4Sg/PlO:    ninitonâmâwa # MIXED INV (sbj obv.)
+     nitonawêw+V+TA+Ind+Prs+2Sg+4Sg/PlO:    kinitonâmâwa
+     nitonawêw+V+TA+Ind+Prs+1Pl+4Sg/PlO:    ninitonâmânâna
+     nitonawêw+V+TA+Ind+Prs+12Pl+4Sg/PlO:    kinitonâmânawa
+     nitonawêw+V+TA+Ind+Prs+2Pl+4Sg/PlO:    kinitonâmâwâwa
+
+     nitonawêw+V+TA+Ind+Prs+3Sg+4Sg/PlO:    nitonawêw # THIRD DIR
+     nitonawêw+V+TA+Ind+Prs+3Pl+4Sg/PlO:    nitonawêwak
+     nitonawêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO:    nitonawêyiwa
+     nitonawêw+V+TA+Ind+Prs+3Sg+5Sg/PlO:    nitonâmêw
+     nitonawêw+V+TA+Ind+Prs+3Pl+5Sg/PlO:    nitonâmêwak
+
+     nitonawêw+V+TA+Ind+Prs+4Sg/Pl+3SgO:    [nitonâk, nitonâkow] # THIRD INV
+     nitonawêw+V+TA+Ind+Prs+4Sg/Pl+3PlO:    [nitonâkowak, nitonâkwak]
+     nitonawêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO:    nitonâkoyiwa
+
+
+## CONJUNCT ##
+     PV/e+nitonawêw+V+TA+Cnj+Prs+2Sg+1SgO:    ê-nitonawiyan # LOCAL DIR
+     PV/e+nitonawêw+V+TA+Cnj+Prs+2Sg+1PlO:    ê-nitonawiyâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+2Pl+1PlO:    ê-nitonawiyâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+2Pl+1SgO:    ê-nitonawiyêk
+
+     PV/e+nitonawêw+V+TA+Cnj+Prs+1Sg+2SgO:    ê-nitonâtân # LOCAL INVERSE
+     PV/e+nitonawêw+V+TA+Cnj+Prs+1Pl+2SgO:    ê-nitonâtâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+1Pl+2PlO:    ê-nitonâtâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+1Sg+2PlO:    ê-nitonâtakok
+
+
+     PV/e+nitonawêw+V+TA+Cnj+Prs+1Sg+3SgO:    ê-nitonawak # MIXED DIR (obj sg)
+     PV/e+nitonawêw+V+TA+Cnj+Prs+2Sg+3SgO:    ê-nitonawat
+     PV/e+nitonawêw+V+TA+Cnj+Prs+1Pl+3SgO:    ê-nitonawâyâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+12Pl+3SgO:   ê-nitonawâyahk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+2Pl+3SgO:    ê-nitonawâyêk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+1Sg+3PlO:    ê-nitonawakik # MIXED DIR (obj pl)
+     PV/e+nitonawêw+V+TA+Cnj+Prs+2Sg+3PlO:    ê-nitonawacik
+     PV/e+nitonawêw+V+TA+Cnj+Prs+1Pl+3PlO:    ê-nitonawâyâhkik
+     PV/e+nitonawêw+V+TA+Cnj+Prs+12Pl+3PlO:   ê-nitonawâyahkok
+     PV/e+nitonawêw+V+TA+Cnj+Prs+2Pl+3PlO:    ê-nitonawâyêkok
+
+     PV/e+nitonawêw+V+TA+Cnj+Prs+1Sg+4Sg/PlO:    ê-nitonâmak # MIXED DIR (obj. obv.)
+     PV/e+nitonawêw+V+TA+Cnj+Prs+2Sg+4Sg/PlO:    ê-nitonâmat
+     PV/e+nitonawêw+V+TA+Cnj+Prs+1Pl+4Sg/PlO:    ê-nitonâmâyâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+12Pl+4Sg/PlO:   ê-nitonâmâyahk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+2Pl+4Sg/PlO:    ê-nitonâmâyêk
+
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Sg+1SgO:    ê-nitonawit # MIXED INV (sbj sg)
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Sg+2SgO:    ê-nitonâsk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Sg+1PlO:    ê-nitonâkoyâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Sg+12PlO:   ê-nitonâkoyahk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Sg+2PlO:    ê-nitonâkoyêk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Pl+1SgO:    ê-nitonawicik # MIXED INV (sbj pl)
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Pl+2SgO:    ê-nitonâskik
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Pl+1PlO:    ê-nitonâkoyâhkik
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Pl+12PlO:   ê-nitonâkoyahkok
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Pl+2PlO:    ê-nitonâkoyêkok
+
+     PV/e+nitonawêw+V+TA+Cnj+Prs+4Sg/Pl+1SgO:    ê-nitonâmit # MIXED INV (sbj obv.)
+     PV/e+nitonawêw+V+TA+Cnj+Prs+4Sg/Pl+2SgO:    ê-nitonâmisk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+4Sg/Pl+1PlO:    ê-nitonâkoyâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+4Sg/Pl+12PlO:   ê-nitonâkoyahk
+     PV/e+nitonawêw+V+TA+Cnj+Prs+4Sg/Pl+2PlO:    ê-nitonâkoyêk
+
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Sg+4Sg/PlO:    ê-nitonawât # THIRD DIR
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Pl+4Sg/PlO:    ê-nitonawâcik
+     PV/e+nitonawêw+V+TA+Cnj+Prs+4Sg/Pl+5Sg/PlO: ê-nitonawâyit
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Sg+5Sg/PlO:    ê-nitonâmât
+     PV/e+nitonawêw+V+TA+Cnj+Prs+3Pl+5Sg/PlO:    ê-nitonâmâcik
+
+     PV/e+nitonawêw+V+TA+Cnj+Prs+4Sg/Pl+3SgO:    ê-nitonâkot # THIRD INV
+     PV/e+nitonawêw+V+TA+Cnj+Prs+4Sg/Pl+3PlO:    ê-nitonâkocik
+     PV/e+nitonawêw+V+TA+Cnj+Prs+5Sg/Pl+4Sg/PlO: ê-nitonâkoyit
+
+## FUTURE CONDITIONAL ##
+     nitonawêw+V+TA+Fut+Cond+2Sg+1SgO:    nitonawiyani # LOCAL DIR
+     nitonawêw+V+TA+Fut+Cond+2Sg+1PlO:    nitonawiyâhki
+     nitonawêw+V+TA+Fut+Cond+2Pl+1PlO:    nitonawiyâhki
+     nitonawêw+V+TA+Fut+Cond+2Pl+1SgO:    nitonawiyêko
+
+     nitonawêw+V+TA+Fut+Cond+1Sg+2SgO:    nitonâtâni # LOCAL INVERSE
+     nitonawêw+V+TA+Fut+Cond+1Pl+2SgO:    nitonâtâhki
+     nitonawêw+V+TA+Fut+Cond+1Pl+2PlO:    nitonâtâhki
+     nitonawêw+V+TA+Fut+Cond+1Sg+2PlO:    nitonâtako
+
+
+     nitonawêw+V+TA+Fut+Cond+1Sg+3SgO:    nitonawaki # MIXED DIR (obj sg)
+     nitonawêw+V+TA+Fut+Cond+2Sg+3SgO:    nitonawaci
+     nitonawêw+V+TA+Fut+Cond+1Pl+3SgO:    nitonawâyâhki
+     nitonawêw+V+TA+Fut+Cond+12Pl+3SgO:   [nitonawâyahko, nitonawâyahki]
+     nitonawêw+V+TA+Fut+Cond+2Pl+3SgO:    nitonawâyêko
+     nitonawêw+V+TA+Fut+Cond+1Sg+3PlO:    nitonawakwâwi # MIXED DIR (obj pl)
+     nitonawêw+V+TA+Fut+Cond+2Sg+3PlO:    nitonawatwâwi
+     nitonawêw+V+TA+Fut+Cond+1Pl+3PlO:    nitonawâyâhkwâwi
+     nitonawêw+V+TA+Fut+Cond+12Pl+3PlO:   nitonawâyahkwâwi
+     nitonawêw+V+TA+Fut+Cond+2Pl+3PlO:    nitonawâyêkwâwi
+
+     nitonawêw+V+TA+Fut+Cond+1Sg+4Sg/PlO:    nitonâmaki # MIXED DIR (obj. obv.)
+     nitonawêw+V+TA+Fut+Cond+2Sg+4Sg/PlO:    nitonâmaci
+     nitonawêw+V+TA+Fut+Cond+1Pl+4Sg/PlO:    nitonâmâyâhki
+     nitonawêw+V+TA+Fut+Cond+12Pl+4Sg/PlO:   [nitonâmâyahko, nitonâmâyahki]
+     nitonawêw+V+TA+Fut+Cond+2Pl+4Sg/PlO:    nitonâmâyêko
+
+     nitonawêw+V+TA+Fut+Cond+3Sg+1SgO:    nitonawici # MIXED INV (sbj sg)
+     nitonawêw+V+TA+Fut+Cond+3Sg+2SgO:    nitonâski
+     nitonawêw+V+TA+Fut+Cond+3Sg+1PlO:    nitonâkoyâhki
+     nitonawêw+V+TA+Fut+Cond+3Sg+12PlO:   [nitonâkoyahko, nitonâkoyahki]
+     nitonawêw+V+TA+Fut+Cond+3Sg+2PlO:    nitonâkoyêko
+     nitonawêw+V+TA+Fut+Cond+3Pl+1SgO:    nitonawitwâwi # MIXED INV (sbj pl)
+     nitonawêw+V+TA+Fut+Cond+3Pl+2SgO:    nitonâskwâwi
+     nitonawêw+V+TA+Fut+Cond+3Pl+1PlO:    nitonâkoyâhkwâwi
+     nitonawêw+V+TA+Fut+Cond+3Pl+12PlO:   nitonâkoyahkwâwi
+     nitonawêw+V+TA+Fut+Cond+3Pl+2PlO:    nitonâkoyêkwâwi
+
+     nitonawêw+V+TA+Fut+Cond+4Sg/Pl+1SgO:    nitonâmici # MIXED INV (sbj obv.)
+     nitonawêw+V+TA+Fut+Cond+4Sg/Pl+2SgO:    nitonâmiski
+     nitonawêw+V+TA+Fut+Cond+4Sg/Pl+1PlO:    nitonâkoyâhki
+     nitonawêw+V+TA+Fut+Cond+4Sg/Pl+12PlO:   [nitonâkoyahko, nitonâkoyahki]
+     nitonawêw+V+TA+Fut+Cond+4Sg/Pl+2PlO:    nitonâkoyêko
+
+     nitonawêw+V+TA+Fut+Cond+3Sg+4Sg/PlO:    nitonawâci # THIRD DIR
+     nitonawêw+V+TA+Fut+Cond+3Pl+4Sg/PlO:    nitonawâtwâwi
+     nitonawêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: nitonawâyici
+     nitonawêw+V+TA+Fut+Cond+3Sg+5Sg/PlO:    nitonâmâci
+     nitonawêw+V+TA+Fut+Cond+3Pl+5Sg/PlO:    nitonâmâtwâwi
+
+     nitonawêw+V+TA+Fut+Cond+4Sg/Pl+3SgO:    nitonâkoci # THIRD INV
+     nitonawêw+V+TA+Fut+Cond+4Sg/Pl+3PlO:    nitonâkotwâwi
+     nitonawêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: nitonâkoyici
+
+## IMPERATIVE ##
+#LOCAL IMMEDIATE#
+     nitonawêw+V+TA+Imp+Imm+2Sg+1SgO:    nitonawin
+     nitonawêw+V+TA+Imp+Imm+2Sg+1PlO:    nitonawinân
+     nitonawêw+V+TA+Imp+Imm+2Pl+1PlO:    nitonawinân
+     nitonawêw+V+TA+Imp+Imm+2Pl+1SgO:    nitonawik
+#LOCAL DELAYED#
+     nitonawêw+V+TA+Imp+Del+2Sg+1SgO:    nitonawîhkan
+     nitonawêw+V+TA+Imp+Del+2Sg+1PlO:    nitonawîhkâhk
+     nitonawêw+V+TA+Imp+Del+2Pl+1PlO:    nitonawîhkâhk
+     nitonawêw+V+TA+Imp+Del+2Pl+1SgO:    nitonawîhkêk
+
+#MIXED IMMEDIATE#
+     nitonawêw+V+TA+Imp+Imm+2Sg+3SgO:    nitonaw # Obj. Sg.
+     nitonawêw+V+TA+Imp+Imm+2Pl+3SgO:    nitonawihk
+     nitonawêw+V+TA+Imp+Imm+12Pl+3SgO:    nitonawâtân
+
+     nitonawêw+V+TA+Imp+Imm+2Sg+3PlO:    nitonawik # Obj. Pl.
+     nitonawêw+V+TA+Imp+Imm+2Pl+3PlO:    nitonawihkok
+     nitonawêw+V+TA+Imp+Imm+12Pl+3PlO:    nitonawâtânik
+#MIXED DELAYED#
+     nitonawêw+V+TA+Imp+Del+2Sg+3SgO:    nitonawâhkan # Obj. Sg.
+     nitonawêw+V+TA+Imp+Del+2Pl+3SgO:    nitonawâhkêk
+     nitonawêw+V+TA+Imp+Del+12Pl+3SgO:    nitonawâhkahk
+
+     nitonawêw+V+TA+Imp+Del+2Sg+3PlO:    nitonawâhkanik # Obj. Pl.
+     nitonawêw+V+TA+Imp+Del+2Pl+3PlO:    nitonawâhkêkok
+     nitonawêw+V+TA+Imp+Del+12Pl+3PlO:    nitonawâhkahkok
+
+
+###PRT###
+
+## INDEPENDENT ##
+     nitonawêw+V+TA+Ind+Prt+2Sg+1SgO:    kikî-nitonawin # LOCAL DIR
+     nitonawêw+V+TA+Ind+Prt+2Sg+1PlO:    kikî-nitonawinân
+     nitonawêw+V+TA+Ind+Prt+2Pl+1PlO:    kikî-nitonawinân
+     nitonawêw+V+TA+Ind+Prt+2Pl+1SgO:    kikî-nitonawinâwâw
+
+     nitonawêw+V+TA+Ind+Prt+1Sg+2SgO:    kikî-nitonâtin # LOCAL INVERSE
+     nitonawêw+V+TA+Ind+Prt+1Pl+2SgO:    kikî-nitonâtinân
+     nitonawêw+V+TA+Ind+Prt+1Pl+2PlO:    kikî-nitonâtinân
+     nitonawêw+V+TA+Ind+Prt+1Sg+2PlO:    kikî-nitonâtinâwâw
+
+## CONJUNCT ##
+     PV/e+nitonawêw+V+TA+Cnj+Prt+2Sg+1SgO:    ê-kî-nitonawiyan # LOCAL DIR
+     PV/e+nitonawêw+V+TA+Cnj+Prt+2Sg+1PlO:    ê-kî-nitonawiyâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prt+2Pl+1PlO:    ê-kî-nitonawiyâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prt+2Pl+1SgO:    ê-kî-nitonawiyêk
+
+     PV/e+nitonawêw+V+TA+Cnj+Prt+1Sg+2SgO:    ê-kî-nitonâtân # LOCAL INVERSE
+     PV/e+nitonawêw+V+TA+Cnj+Prt+1Pl+2SgO:    ê-kî-nitonâtâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prt+1Pl+2PlO:    ê-kî-nitonâtâhk
+     PV/e+nitonawêw+V+TA+Cnj+Prt+1Sg+2PlO:    ê-kî-nitonâtakok
+
+
+###FUT+INT###
+
+## INDEPENDENT ##
+     nitonawêw+V+TA+Ind+Fut+Int+2Sg+1SgO:    kiwî-nitonawin # LOCAL DIR
+     nitonawêw+V+TA+Ind+Fut+Int+2Sg+1PlO:    kiwî-nitonawinân
+     nitonawêw+V+TA+Ind+Fut+Int+2Pl+1PlO:    kiwî-nitonawinân
+     nitonawêw+V+TA+Ind+Fut+Int+2Pl+1SgO:    kiwî-nitonawinâwâw
+
+     nitonawêw+V+TA+Ind+Fut+Int+1Sg+2SgO:    kiwî-nitonâtin # LOCAL INVERSE
+     nitonawêw+V+TA+Ind+Fut+Int+1Pl+2SgO:    kiwî-nitonâtinân
+     nitonawêw+V+TA+Ind+Fut+Int+1Pl+2PlO:    kiwî-nitonâtinân
+     nitonawêw+V+TA+Ind+Fut+Int+1Sg+2PlO:    kiwî-nitonâtinâwâw
+
+## CONJUNCT ##
+     PV/e+nitonawêw+V+TA+Cnj+Fut+Int+2Sg+1SgO:    ê-wî-nitonawiyan # LOCAL DIR
+     PV/e+nitonawêw+V+TA+Cnj+Fut+Int+2Sg+1PlO:    ê-wî-nitonawiyâhk
+     PV/e+nitonawêw+V+TA+Cnj+Fut+Int+2Pl+1PlO:    ê-wî-nitonawiyâhk
+     PV/e+nitonawêw+V+TA+Cnj+Fut+Int+2Pl+1SgO:    ê-wî-nitonawiyêk
+
+     PV/e+nitonawêw+V+TA+Cnj+Fut+Int+1Sg+2SgO:    ê-wî-nitonâtân # LOCAL INVERSE
+     PV/e+nitonawêw+V+TA+Cnj+Fut+Int+1Pl+2SgO:    ê-wî-nitonâtâhk
+     PV/e+nitonawêw+V+TA+Cnj+Fut+Int+1Pl+2PlO:    ê-wî-nitonâtâhk
+     PV/e+nitonawêw+V+TA+Cnj+Fut+Int+1Sg+2PlO:    ê-wî-nitonâtakok
+
+
+###FUT+DEF###
+
+## INDEPENDENT ##
+     nitonawêw+V+TA+Ind+Fut+Def+2Sg+1SgO:    kika-nitonawin # LOCAL DIR
+     nitonawêw+V+TA+Ind+Fut+Def+2Sg+1PlO:    kika-nitonawinân
+     nitonawêw+V+TA+Ind+Fut+Def+2Pl+1PlO:    kika-nitonawinân
+     nitonawêw+V+TA+Ind+Fut+Def+2Pl+1SgO:    kika-nitonawinâwâw
+
+     nitonawêw+V+TA+Ind+Fut+Def+1Sg+2SgO:    kika-nitonâtin # LOCAL INVERSE
+     nitonawêw+V+TA+Ind+Fut+Def+1Pl+2SgO:    kika-nitonâtinân
+     nitonawêw+V+TA+Ind+Fut+Def+1Pl+2PlO:    kika-nitonâtinân
+     nitonawêw+V+TA+Ind+Fut+Def+1Sg+2PlO:    kika-nitonâtinâwâw

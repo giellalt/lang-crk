@@ -1,0 +1,61 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - pahkêkinw - ok : # -m inanimate noun, leather, rawhide AEW NI3
+     pahkêkin+N+I+Sg: pahkêkin
+     pahkêkin+N+I+Px1Sg+Sg: nipahkêkin
+     pahkêkin+N+I+Px2Sg+Sg: kipahkêkin
+     pahkêkin+N+I+Px1Pl+Sg: nipahkêkinonân
+     pahkêkin+N+I+Px12Pl+Sg: kipahkêkinonaw
+     pahkêkin+N+I+Px2Pl+Sg: kipahkêkinowâw
+     pahkêkin+N+I+Px3Sg+Sg: opahkêkin
+     pahkêkin+N+I+Px3Pl+Sg: opahkêkinowâw
+     pahkêkin+N+I+Px4Sg/Pl+Sg: opahkêkinoyiw
+
+     pahkêkin+N+I+Pl: pahkêkinwa
+     pahkêkin+N+I+Px1Sg+Pl: nipahkêkinwa
+     pahkêkin+N+I+Px2Sg+Pl: kipahkêkinwa
+     pahkêkin+N+I+Px1Pl+Pl: nipahkêkinonâna
+     pahkêkin+N+I+Px12Pl+Pl: kipahkêkinonawa
+     pahkêkin+N+I+Px2Pl+Pl: kipahkêkinowâwa
+     pahkêkin+N+I+Px3Sg+Pl: opahkêkinwa
+     pahkêkin+N+I+Px3Pl+Pl: opahkêkinowâwa
+     pahkêkin+N+I+Px4Sg/Pl+Pl: opahkêkinoyiwa
+
+     pahkêkin+N+I+Loc: pahkêkinohk
+     pahkêkin+N+I+Px1Sg+Loc: nipahkêkinohk
+     pahkêkin+N+I+Px2Sg+Loc: kipahkêkinohk
+     pahkêkin+N+I+Px1Pl+Loc: nipahkêkinonâhk
+     pahkêkin+N+I+Px12Pl+Loc: kipahkêkinonâhk
+     pahkêkin+N+I+Px2Pl+Loc: kipahkêkinowâhk
+     pahkêkin+N+I+Px3Sg+Loc: opahkêkinohk
+     pahkêkin+N+I+Px3Pl+Loc: opahkêkinowâhk
+     pahkêkin+N+I+Px4Sg/Pl+Loc: opahkêkinoyihk
+
+     pahkêkin+N+I+Der/Dim+N+I+Sg:          [pahkêkinos,         pahkêkinosis]
+     pahkêkin+N+I+Der/Dim+N+I+Px1Sg+Sg:    [nipahkêkinos,       nipahkêkinosis]
+     pahkêkin+N+I+Der/Dim+N+I+Px2Sg+Sg:    [kipahkêkinos,       kipahkêkinosis]
+     pahkêkin+N+I+Der/Dim+N+I+Px1Pl+Sg:    [nipahkêkinosinân,   nipahkêkinosisinân]
+     pahkêkin+N+I+Der/Dim+N+I+Px12Pl+Sg:   [kipahkêkinosinaw,   kipahkêkinosisinaw]
+     pahkêkin+N+I+Der/Dim+N+I+Px2Pl+Sg:    [kipahkêkinosiwâw,   kipahkêkinosisiwâw]
+     pahkêkin+N+I+Der/Dim+N+I+Px3Sg+Sg:    [opahkêkinos,        opahkêkinosis]
+     pahkêkin+N+I+Der/Dim+N+I+Px3Pl+Sg:    [opahkêkinosiwâw,    opahkêkinosisiwâw]
+     pahkêkin+N+I+Der/Dim+N+I+Px4Sg/Pl+Sg: [opahkêkinosiyiw,    opahkêkinosisiyiw]
+
+     pahkêkin+N+I+Der/Dim+N+I+Pl:          [pahkêkinosa,       pahkêkinosisa]
+     pahkêkin+N+I+Der/Dim+N+I+Px1Sg+Pl:    [nipahkêkinosa,     nipahkêkinosisa]
+     pahkêkin+N+I+Der/Dim+N+I+Px2Sg+Pl:    [kipahkêkinosa,     kipahkêkinosisa]
+     pahkêkin+N+I+Der/Dim+N+I+Px1Pl+Pl:    [nipahkêkinosinâna, nipahkêkinosisinâna]
+     pahkêkin+N+I+Der/Dim+N+I+Px12Pl+Pl:   [kipahkêkinosinawa, kipahkêkinosisinawa]
+     pahkêkin+N+I+Der/Dim+N+I+Px2Pl+Pl:    [kipahkêkinosiwâwa, kipahkêkinosisiwâwa]
+     pahkêkin+N+I+Der/Dim+N+I+Px3Sg+Pl:    [opahkêkinosa,      opahkêkinosisa]
+     pahkêkin+N+I+Der/Dim+N+I+Px3Pl+Pl:    [opahkêkinosiwâwa,  opahkêkinosisiwâwa]
+     pahkêkin+N+I+Der/Dim+N+I+Px4Sg/Pl+Pl: [opahkêkinosiyiwa,  opahkêkinosisiyiwa]

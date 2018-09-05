@@ -1,0 +1,117 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - mîciw - ok : # VTIw 
+
+  
+     mîciw+V+TI+Ind+Prs+1Sg:    nimîcin # INDEPENDENT
+     mîciw+V+TI+Ind+Prs+2Sg:    kimîcin
+     mîciw+V+TI+Ind+Prs+3Sg:    mîciw
+     mîciw+V+TI+Ind+Prs+4Sg/Pl: mîciyiwa
+     mîciw+V+TI+Ind+Prs+1Pl:    nimîcinân
+     mîciw+V+TI+Ind+Prs+12Pl:   [kimîcinaw, kimîcinânaw]
+     mîciw+V+TI+Ind+Prs+2Pl:    kimîcinâwâw
+     mîciw+V+TI+Ind+Prs+3Pl:    mîciwak
+
+     PV/e+mîciw+V+TI+Cnj+Prs+1Sg:    ê-mîciyân # CONJUNCT
+     PV/e+mîciw+V+TI+Cnj+Prs+2Sg:    ê-mîciyan
+     PV/e+mîciw+V+TI+Cnj+Prs+3Sg:    ê-mîcit
+     PV/e+mîciw+V+TI+Cnj+Prs+4Sg/Pl: ê-mîciyit
+     PV/e+mîciw+V+TI+Cnj+Prs+1Pl:    ê-mîciyâhk
+     PV/e+mîciw+V+TI+Cnj+Prs+12Pl:   ê-mîciyahk
+     PV/e+mîciw+V+TI+Cnj+Prs+2Pl:    ê-mîciyêk
+     PV/e+mîciw+V+TI+Cnj+Prs+3Pl:    ê-mîcicik
+
+     mîciw+V+TI+Ind+Prt+1Sg:    nikî-mîcin # PRT-INDEPENDENT
+     mîciw+V+TI+Ind+Prt+2Sg:    kikî-mîcin
+     mîciw+V+TI+Ind+Prt+3Sg:    kî-mîciw
+     mîciw+V+TI+Ind+Prt+4Sg/Pl: kî-mîciyiwa
+     mîciw+V+TI+Ind+Prt+1Pl:    nikî-mîcinân
+     mîciw+V+TI+Ind+Prt+12Pl:   [kikî-mîcinaw, kikî-mîcinânaw]
+     mîciw+V+TI+Ind+Prt+2Pl:    kikî-mîcinâwâw
+     mîciw+V+TI+Ind+Prt+3Pl:    kî-mîciwak
+
+     PV/e+mîciw+V+TI+Cnj+Prt+1Sg:    ê-kî-mîciyân # PRT-CONJUNCT
+     PV/e+mîciw+V+TI+Cnj+Prt+2Sg:    ê-kî-mîciyan
+     PV/e+mîciw+V+TI+Cnj+Prt+3Sg:    ê-kî-mîcit
+     PV/e+mîciw+V+TI+Cnj+Prt+4Sg/Pl: ê-kî-mîciyit
+     PV/e+mîciw+V+TI+Cnj+Prt+1Pl:    ê-kî-mîciyâhk
+     PV/e+mîciw+V+TI+Cnj+Prt+12Pl:   ê-kî-mîciyahk
+     PV/e+mîciw+V+TI+Cnj+Prt+2Pl:    ê-kî-mîciyêk
+     PV/e+mîciw+V+TI+Cnj+Prt+3Pl:    ê-kî-mîcicik
+
+
+     mîciw+V+TI+Ind+Fut+Int+1Sg:    niwî-mîcin # FUT+INT-INDEPENDENT
+     mîciw+V+TI+Ind+Fut+Int+2Sg:    kiwî-mîcin
+     mîciw+V+TI+Ind+Fut+Int+3Sg:    wî-mîciw
+     mîciw+V+TI+Ind+Fut+Int+4Sg/Pl: wî-mîciyiwa
+     mîciw+V+TI+Ind+Fut+Int+1Pl:    niwî-mîcinân
+     mîciw+V+TI+Ind+Fut+Int+12Pl:   [kiwî-mîcinaw, kiwî-mîcinânaw]
+     mîciw+V+TI+Ind+Fut+Int+2Pl:    kiwî-mîcinâwâw
+     mîciw+V+TI+Ind+Fut+Int+3Pl:    wî-mîciwak
+
+     PV/e+mîciw+V+TI+Cnj+Fut+Int+1Sg:    ê-wî-mîciyân # FUT+INT-CONJUNCT
+     PV/e+mîciw+V+TI+Cnj+Fut+Int+2Sg:    ê-wî-mîciyan
+     PV/e+mîciw+V+TI+Cnj+Fut+Int+3Sg:    ê-wî-mîcit
+     PV/e+mîciw+V+TI+Cnj+Fut+Int+4Sg/Pl: ê-wî-mîciyit
+     PV/e+mîciw+V+TI+Cnj+Fut+Int+1Pl:    ê-wî-mîciyâhk
+     PV/e+mîciw+V+TI+Cnj+Fut+Int+12Pl:   ê-wî-mîciyahk
+     PV/e+mîciw+V+TI+Cnj+Fut+Int+2Pl:    ê-wî-mîciyêk
+     PV/e+mîciw+V+TI+Cnj+Fut+Int+3Pl:    ê-wî-mîcicik
+
+     mîciw+V+TI+Ind+Fut+Def+1Sg:    nika-mîcin # FUT+DEF-INDEPENDENT
+     mîciw+V+TI+Ind+Fut+Def+2Sg:    kika-mîcin
+     mîciw+V+TI+Ind+Fut+Def+3Sg:    ka-mîciw
+     mîciw+V+TI+Ind+Fut+Def+4Sg/Pl: ka-mîciyiwa
+     mîciw+V+TI+Ind+Fut+Def+1Pl:    nika-mîcinân
+     mîciw+V+TI+Ind+Fut+Def+12Pl:   [kika-mîcinaw, kika-mîcinânaw]
+     mîciw+V+TI+Ind+Fut+Def+2Pl:    kika-mîcinâwâw
+     mîciw+V+TI+Ind+Fut+Def+3Pl:    ka-mîciwak
+     
+     mîciw+V+TI+Fut+Cond+1Sg:    mîciyâni
+     mîciw+V+TI+Fut+Cond+2Sg:    mîciyani
+     mîciw+V+TI+Fut+Cond+3Sg:    mîcici
+     mîciw+V+TI+Fut+Cond+4Sg/Pl: mîciyici
+     mîciw+V+TI+Fut+Cond+1Pl:    mîciyâhki
+     mîciw+V+TI+Fut+Cond+12Pl:   [mîciyahki, mîciyahko]
+     mîciw+V+TI+Fut+Cond+2Pl:    mîciyêko
+     mîciw+V+TI+Fut+Cond+3Pl:    mîcitwâwi
+
+     mîciw+V+TI+Imp+Imm+2Sg:  mîci
+     mîciw+V+TI+Imp+Imm+12Pl: mîcitân
+     mîciw+V+TI+Imp+Imm+2Pl:  mîcik
+
+
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Sg+3SgO: [niwî-wîci-mîcîmâw] # com SET I
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Sg+3SgO: [kiwî-wîci-mîcîmâw]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Pl+3SgO: [niwî-wîci-mîcîmânân]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+12Pl+3SgO: [kiwî-wîci-mîcîmânaw]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Pl+3SgO: [kiwî-wîci-mîcîmâwâw]
+     
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Sg+3PlO: [niwî-wîci-mîcîmâwak] # com SET I-Pl
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Sg+3PlO: [kiwî-wîci-mîcîmâwak]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Pl+3PlO: [niwî-wîci-mîcîmânânak]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+12Pl+3PlO: [kiwî-wîci-mîcîmânawak]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Pl+3PlO: [kiwî-wîci-mîcîmâwâwak]
+
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Sg+1SgO: [kiwî-wîci-mîcîmin] # com SET II
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Sg+1PlO: [kiwî-wîci-mîcîminân]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Pl+1SgO: [kiwî-wîci-mîcîminâwâw]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Pl+1PlO: [kiwî-wîci-mîcîminân]
+
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+3Sg+4Sg/PlO: [wî-wîci-mîcîmêw] # com SET III
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+3Pl+4Sg/PlO: [wî-wîci-mîcîmêwak]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+4Sg/Pl+5Sg/PlO: [wî-wîci-mîcîmêyiwa]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+3Sg+5Sg/PlO: [wî-wîci-mîcîmimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+3Pl+5Sg/PlO: [wî-wîci-mîcîmimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Sg+4Sg/PlO: [niwî-wîci-mîcîmimâwa] # com SET IV
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Sg+4Sg/PlO: [kiwî-wîci-mîcîmimâwa]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Pl+4Sg/PlO: [niwî-wîci-mîcîmimânâna]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+12Pl+4Sg/PlO: [kiwî-wîci-mîcîmimânawa]
+     mîciw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Pl+4Sg/PlO: [kiwî-wîci-mîcîmimâwâwa]
+

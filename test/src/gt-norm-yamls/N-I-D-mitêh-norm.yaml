@@ -1,0 +1,56 @@
+Config:
+  hfst:
+    Gên: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xêrox:
+    Gên: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mitêh - ok : # -m inanimatê dêpêndênt noun, heart	AEW C-initial NDI1
+     mitêh+N+A+Sg: mitêh
+     mitêh+N+A+Px1Sg+Sg: nitêh
+     mitêh+N+A+Px2Sg+Sg: kitêh
+     mitêh+N+A+Px1Pl+Sg: nitêhinân
+     mitêh+N+A+Px12Pl+Sg: kitêhinaw
+     mitêh+N+A+Px2Pl+Sg: kitêhiwâw
+
+     mitêh+N+A+Pl: mitêha
+     mitêh+N+A+Px1Sg+Pl: nitêha
+     mitêh+N+A+Px2Sg+Pl: kitêha
+     mitêh+N+A+Px1Pl+Pl: nitêhinâna
+     mitêh+N+A+Px12Pl+Pl: kitêhinawa
+     mitêh+N+A+Px2Pl+Pl: kitêhiwâwa
+
+     mitêh+N+A+Px3Sg+Obv: otêha
+     mitêh+N+A+Px3Pl+Obv: otêhiwâwa
+     mitêh+N+A+Px4Sg+Obv: otêhiyiwa
+     mitêh+N+A+Px4Pl+Obv: otêhiyiwa
+
+     mitêh+N+A+Loc: mitêhihk
+     mitêh+N+A+Px1Sg+Loc: nitêhihk
+     mitêh+N+A+Px2Sg+Loc: kitêhihk
+     mitêh+N+A+Px1Pl+Loc: nitêhinâhk
+     mitêh+N+A+Px12Pl+Loc: kitêhinâhk
+     mitêh+N+A+Px2Pl+Loc: kitêhiwâhk
+     mitêh+N+A+Px3Sg+Loc: otêhihk
+     mitêh+N+A+Px3Pl+Loc: otêhiwâhk
+     mitêh+N+A+Px4Sg+Loc: otêhiyihk
+     mitêh+N+A+Px4Pl+Loc: otêhiyihk
+
+     mitêh+N+A+Der/Dim+N+A+Sg: mitêhis
+     mitêh+N+A+Der/Dim+N+A+Sg: [mitêhis, mitêhisis]
+     mitêh+N+A+Der/Dim+N+A+Px1Sg+Sg: [nitêhis, nitêhisis]
+     mitêh+N+A+Der/Dim+N+A+Px2Sg+Sg: [kitêhis, kitêhisis]
+     mitêh+N+A+Der/Dim+N+A+Px1Pl+Sg: [nitêhisinân, nitêhisisinân]
+     mitêh+N+A+Der/Dim+N+A+Px12Pl+Sg: [kitêhisinaw, kitêhisisinaw]
+     mitêh+N+A+Der/Dim+N+A+Px2Pl+Sg: [kitêhisiwâw, kitêhisisiwâw]
+				
+     mitêh+N+A+Der/Dim+N+A+Pl: [mitêhisa, mitêhisisa]
+     mitêh+N+A+Der/Dim+N+A+Px1Sg+Pl: [nitêhisa, nitêhisisa]
+     mitêh+N+A+Der/Dim+N+A+Px2Sg+Pl: [kitêhisa, kitêhisisa]
+     mitêh+N+A+Der/Dim+N+A+Px1Pl+Pl: [nitêhisinâna, nitêhisisinâna]
+     mitêh+N+A+Der/Dim+N+A+Px12Pl+Pl: [kitêhisinawa, kitêhisisinawa]
+     mitêh+N+A+Der/Dim+N+A+Px2Pl+Pl: [kitêhisiwâwa, kitêhisisiwâwa]

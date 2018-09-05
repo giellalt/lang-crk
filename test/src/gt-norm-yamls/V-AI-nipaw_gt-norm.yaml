@@ -1,0 +1,121 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - nipâw - ok : # Ordinary VAIw
+
+  
+     nipâw+V+AI+Ind+Prs+1Sg:    ninipân # INDEPENDENT
+     nipâw+V+AI+Ind+Prs+2Sg:    kinipân
+     nipâw+V+AI+Ind+Prs+3Sg:    nipâw
+     nipâw+V+AI+Ind+Prs+4Sg/Pl: nipâyiwa
+     nipâw+V+AI+Ind+Prs+1Pl:    ninipânân
+     nipâw+V+AI+Ind+Prs+12Pl:   [kinipânaw, kinipânânaw]
+     nipâw+V+AI+Ind+Prs+2Pl:    kinipânâwâw
+     nipâw+V+AI+Ind+Prs+3Pl:    nipâwak
+
+     PV/e+nipâw+V+AI+Cnj+Prs+1Sg:    ê-nipâyân # CONJUNCT
+     PV/e+nipâw+V+AI+Cnj+Prs+2Sg:    ê-nipâyan
+     PV/e+nipâw+V+AI+Cnj+Prs+3Sg:    ê-nipât
+     PV/e+nipâw+V+AI+Cnj+Prs+4Sg/Pl: ê-nipâyit
+     PV/e+nipâw+V+AI+Cnj+Prs+1Pl:    ê-nipâyâhk
+     PV/e+nipâw+V+AI+Cnj+Prs+12Pl:   ê-nipâyahk
+     PV/e+nipâw+V+AI+Cnj+Prs+2Pl:    ê-nipâyêk
+     PV/e+nipâw+V+AI+Cnj+Prs+3Pl:    ê-nipâcik
+
+     nipâw+V+AI+Ind+Prt+1Sg:    nikî-nipân # PRT-INDEPENDENT
+     nipâw+V+AI+Ind+Prt+2Sg:    kikî-nipân
+     nipâw+V+AI+Ind+Prt+3Sg:    kî-nipâw
+     nipâw+V+AI+Ind+Prt+4Sg/Pl: kî-nipâyiwa
+     nipâw+V+AI+Ind+Prt+1Pl:    nikî-nipânân
+     nipâw+V+AI+Ind+Prt+12Pl:   [kikî-nipânaw, kikî-nipânânaw]
+     nipâw+V+AI+Ind+Prt+2Pl:    kikî-nipânâwâw
+     nipâw+V+AI+Ind+Prt+3Pl:    kî-nipâwak
+
+     PV/e+nipâw+V+AI+Cnj+Prt+1Sg:    ê-kî-nipâyân # PRT-CONJUNCT
+     PV/e+nipâw+V+AI+Cnj+Prt+2Sg:    ê-kî-nipâyan
+     PV/e+nipâw+V+AI+Cnj+Prt+3Sg:    ê-kî-nipât
+     PV/e+nipâw+V+AI+Cnj+Prt+4Sg/Pl: ê-kî-nipâyit
+     PV/e+nipâw+V+AI+Cnj+Prt+1Pl:    ê-kî-nipâyâhk
+     PV/e+nipâw+V+AI+Cnj+Prt+12Pl:   ê-kî-nipâyahk
+     PV/e+nipâw+V+AI+Cnj+Prt+2Pl:    ê-kî-nipâyêk
+     PV/e+nipâw+V+AI+Cnj+Prt+3Pl:    ê-kî-nipâcik
+
+
+     nipâw+V+AI+Ind+Fut+Int+1Sg:    niwî-nipân # FUT+INT-INDEPENDENT
+     nipâw+V+AI+Ind+Fut+Int+2Sg:    kiwî-nipân
+     nipâw+V+AI+Ind+Fut+Int+3Sg:    wî-nipâw
+     nipâw+V+AI+Ind+Fut+Int+4Sg/Pl: wî-nipâyiwa
+     nipâw+V+AI+Ind+Fut+Int+1Pl:    niwî-nipânân
+     nipâw+V+AI+Ind+Fut+Int+12Pl:   [kiwî-nipânaw, kiwî-nipânânaw]
+     nipâw+V+AI+Ind+Fut+Int+2Pl:    kiwî-nipânâwâw
+     nipâw+V+AI+Ind+Fut+Int+3Pl:    wî-nipâwak
+
+     PV/e+nipâw+V+AI+Cnj+Fut+Int+1Sg:    ê-wî-nipâyân # FUT+INT-CONJUNCT
+     PV/e+nipâw+V+AI+Cnj+Fut+Int+2Sg:    ê-wî-nipâyan
+     PV/e+nipâw+V+AI+Cnj+Fut+Int+3Sg:    ê-wî-nipât
+     PV/e+nipâw+V+AI+Cnj+Fut+Int+4Sg/Pl: ê-wî-nipâyit
+     PV/e+nipâw+V+AI+Cnj+Fut+Int+1Pl:    ê-wî-nipâyâhk
+     PV/e+nipâw+V+AI+Cnj+Fut+Int+12Pl:   ê-wî-nipâyahk
+     PV/e+nipâw+V+AI+Cnj+Fut+Int+2Pl:    ê-wî-nipâyêk
+     PV/e+nipâw+V+AI+Cnj+Fut+Int+3Pl:    ê-wî-nipâcik
+
+     nipâw+V+AI+Ind+Fut+Def+1Sg:    nika-nipân # FUT+DEF-INDEPENDENT
+     nipâw+V+AI+Ind+Fut+Def+2Sg:    kika-nipân
+     nipâw+V+AI+Ind+Fut+Def+3Sg:    ka-nipâw
+     nipâw+V+AI+Ind+Fut+Def+4Sg/Pl: ka-nipâyiwa
+     nipâw+V+AI+Ind+Fut+Def+1Pl:    nika-nipânân
+     nipâw+V+AI+Ind+Fut+Def+12Pl:   [kika-nipânaw, kika-nipânânaw]
+     nipâw+V+AI+Ind+Fut+Def+2Pl:    kika-nipânâwâw
+     nipâw+V+AI+Ind+Fut+Def+3Pl:    ka-nipâwak
+     
+     nipâw+V+AI+Fut+Cond+1Sg:    nipâyâni
+     nipâw+V+AI+Fut+Cond+2Sg:    nipâyani
+     nipâw+V+AI+Fut+Cond+3Sg:    nipâci
+     nipâw+V+AI+Fut+Cond+4Sg/Pl: nipâyici
+     nipâw+V+AI+Fut+Cond+1Pl:    nipâyâhki
+     nipâw+V+AI+Fut+Cond+12Pl:   [nipâyahki, nipâyahko]
+     nipâw+V+AI+Fut+Cond+2Pl:    nipâyêko
+     nipâw+V+AI+Fut+Cond+3Pl:    nipâtwâwi
+
+     nipâw+V+AI+Imp+Imm+2Sg:  nipâ
+     nipâw+V+AI+Imp+Imm+12Pl: nipâtân
+     nipâw+V+AI+Imp+Imm+2Pl:  nipâk
+
+
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+1Sg+3SgO: [niwî-wîci-nipâmâw] # com SET I
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+2Sg+3SgO: [kiwî-wîci-nipâmâw]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+1Pl+3SgO: [niwî-wîci-nipâmânân]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+12Pl+3SgO: [kiwî-wîci-nipâmânaw]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+2Pl+3SgO: [kiwî-wîci-nipâmâwâw]
+     
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+1Sg+3PlO: [niwî-wîci-nipâmâwak] # com SET I-Pl
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+2Sg+3PlO: [kiwî-wîci-nipâmâwak]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+1Pl+3PlO: [niwî-wîci-nipâmânânak]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+12Pl+3PlO: [kiwî-wîci-nipâmânawak]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+2Pl+3PlO: [kiwî-wîci-nipâmâwâwak]
+
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+2Sg+1SgO: [kiwî-wîci-nipâmin] # com SET II
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+2Sg+1PlO: [kiwî-wîci-nipâminân]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+2Pl+1SgO: [kiwî-wîci-nipâminâwâw]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+2Pl+1PlO: [kiwî-wîci-nipâminân]
+
+
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+3Sg+4Sg/PlO: [wî-wîci-nipâmêw] # com SET III
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+3Pl+4Sg/PlO: [wî-wîci-nipâmêwak]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+4Sg/Pl+5Sg/PlO: [wî-wîci-nipâmêyiwa]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+3Sg+5Sg/PlO: [wî-wîci-nipâmimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+3Pl+5Sg/PlO: [wî-wîci-nipâmimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+1Sg+4Sg/PlO: [niwî-wîci-nipâmimâwa] # com SET IV
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+2Sg+4Sg/PlO: [kiwî-wîci-nipâmimâwa]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+1Pl+4Sg/PlO: [niwî-wîci-nipâmimânâna]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+12Pl+4Sg/PlO: [kiwî-wîci-nipâmimânawa]
+     nipâw+V+AI+Der/Com+V+TA+Ind+Fut+Int+2Pl+4Sg/PlO: [kiwî-wîci-nipâmimâwâwa]
+    
+     
+
+     

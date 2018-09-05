@@ -1,0 +1,65 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - askihkw - ok : # -w animate noun, kettle AEW NA3
+     askihk+N+A+Sg: askihk
+     askihk+N+A+Px1Sg+Sg: nitaskihkom
+     askihk+N+A+Px2Sg+Sg: kitaskihkom
+     askihk+N+A+Px1Pl+Sg: nitaskihkominân
+     askihk+N+A+Px12Pl+Sg: kitaskihkominaw
+     askihk+N+A+Px2Pl+Sg: kitaskihkomiwâw
+
+     askihk+N+A+Pl: askihkwak
+     askihk+N+A+Px1Sg+Pl: nitaskihkomak
+     askihk+N+A+Px2Sg+Pl: kitaskihkomak
+     askihk+N+A+Px1Pl+Pl: nitaskihkominânak
+     askihk+N+A+Px12Pl+Pl: kitaskihkominawak
+     askihk+N+A+Px2Pl+Pl: kitaskihkomiwâwak
+     
+     askihk+N+A+Obv: askihkwa
+     askihk+N+A+Px1Sg+Obv: nitaskihkoma
+     askihk+N+A+Px2Sg+Obv: kitaskihkoma
+     askihk+N+A+Px1Pl+Obv: nitaskihkominâna
+     askihk+N+A+Px12Pl+Obv: kitaskihkominawa
+     askihk+N+A+Px2Pl+Obv: kitaskihkomiwâwa
+     askihk+N+A+Px3Sg+Obv: otaskihkoma
+     askihk+N+A+Px3Pl+Obv: otaskihkomiwâwa
+     askihk+N+A+Px4Sg/Pl+Obv: otaskihkomiyiwa
+     
+     askihk+N+A+Loc: askihkohk
+     askihk+N+A+Px1Sg+Loc: nitaskihkomihk
+     askihk+N+A+Px2Sg+Loc: kitaskihkomihk
+     askihk+N+A+Px1Pl+Loc: nitaskihkominâhk
+     askihk+N+A+Px12Pl+Loc: kitaskihkominâhk
+     askihk+N+A+Px2Pl+Loc: kitaskihkomiwâhk
+     askihk+N+A+Px3Sg+Loc: otaskihkomihk
+     askihk+N+A+Px3Pl+Loc: otaskihkomiwâhk
+     askihk+N+A+Px4Sg/Pl+Loc: otaskihkomiyihk
+
+     askihk+N+A+Der/Dim+N+A+Sg: [askihkos, askihkosis]
+     askihk+N+A+Der/Dim+N+A+Px1Sg+Sg: [nicaskihkomis, nicaskihkomisis]
+     askihk+N+A+Der/Dim+N+A+Px2Sg+Sg: [kicaskihkomis, kicaskihkomisis]
+     askihk+N+A+Der/Dim+N+A+Px1Pl+Sg: [nicaskihkomisinân, nicaskihkomisisinân]
+     askihk+N+A+Der/Dim+N+A+Px12Pl+Sg: [kicaskihkomisinaw, kicaskihkomisisinaw]
+     askihk+N+A+Der/Dim+N+A+Px2Pl+Sg: [kicaskihkomisiwâw, kicaskihkomisisiwâw]
+
+
+
+     askihk+N+A+Der/Dim+N+A+Pl: [askihkosak, askihkosisak]
+     askihk+N+A+Der/Dim+N+A+Px1Sg+Pl: [nicaskihkomisak, nicaskihkomisisak] # Is -im required in the possessed dimunitives?
+     askihk+N+A+Der/Dim+N+A+Px2Sg+Pl: [kicaskihkomisak, kicaskihkomisisak] # Is -im required in the possessed dimunitives?
+     askihk+N+A+Der/Dim+N+A+Px1Pl+Pl: [nicaskihkomisinânak, nicaskihkomisisinânak] # Is -im required in the possessed dimunitives?
+     askihk+N+A+Der/Dim+N+A+Px12Pl+Pl: [kicaskihkomisinawak, kicaskihkomisisinawak] # Is -im required in the possessed dimunitives?
+     askihk+N+A+Der/Dim+N+A+Px2Pl+Pl: [kicaskihkomisiwâwak, kicaskihkomisisiwâwak] # Is -im required in the possessed dimunitives?
+     
+     askihk+N+A+Der/Dim+N+A+Px3Sg+Obv: [ocaskihkomisa, ocaskihkomisisa] # Is -im required in the possessed dimunitives?
+     askihk+N+A+Der/Dim+N+A+Px3Pl+Obv: [ocaskihkomisiwâwa, ocaskihkomisisiwâwa] # Is -im required in the possessed dimunitives?
+     askihk+N+A+Der/Dim+N+A+Px4Sg/Pl+Obv: [ocaskihkomisiyiwa, ocaskihkomisisiyiwa] # Is -im required in the possessed dimunitives?

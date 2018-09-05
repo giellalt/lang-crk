@@ -1,0 +1,67 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - miskotâkay - ok : # -m inanimate dependent noun, coat/dress	AEW C-initial NDI2
+     miskotâkay+N+I+D+PxX+Sg: miskotâkay
+     miskotâkay+N+I+D+Px1Sg+Sg: niskotâkay
+     miskotâkay+N+I+D+Px2Sg+Sg: kiskotâkay
+     miskotâkay+N+I+D+Px1Pl+Sg: niskotâkânân
+     miskotâkay+N+I+D+Px12Pl+Sg: kiskotâkânaw
+     miskotâkay+N+I+D+Px2Pl+Sg: kiskotâkâwâw
+     
+     miskotâkay+N+I+D+Px3Sg+Sg: oskotâkay
+     miskotâkay+N+I+D+Px3Pl+Sg: oskotâkâwâw
+     miskotâkay+N+I+D+Px4Sg/Pl+Sg: oskotâkâyiw
+
+     miskotâkay+N+I+D+PxX+Pl: miskotâkaya
+     miskotâkay+N+I+D+Px1Sg+Pl: niskotâkaya
+     miskotâkay+N+I+D+Px2Sg+Pl: kiskotâkaya
+     miskotâkay+N+I+D+Px1Pl+Pl: niskotâkânâna
+     miskotâkay+N+I+D+Px12Pl+Pl: kiskotâkânawa
+     miskotâkay+N+I+D+Px2Pl+Pl: kiskotâkâwâwa
+     
+     miskotâkay+N+I+D+Px3Sg+Pl: oskotâkaya
+     miskotâkay+N+I+D+Px3Pl+Pl: oskotâkâwâwa
+     miskotâkay+N+I+D+Px4Sg/Pl+Pl: oskotâkâyiwa
+
+     miskotâkay+N+I+D+PxX+Loc: miskotâkâhk
+     miskotâkay+N+I+D+Px1Sg+Loc: niskotâkâhk
+     miskotâkay+N+I+D+Px2Sg+Loc: kiskotâkâhk
+     miskotâkay+N+I+D+Px1Pl+Loc: niskotâkânâhk
+     miskotâkay+N+I+D+Px12Pl+Loc: kiskotâkânâhk
+     miskotâkay+N+I+D+Px2Pl+Loc: kiskotâkâwâhk
+
+     miskotâkay+N+I+D+Px3Sg+Loc: oskotâkâhk
+     miskotâkay+N+I+D+Px3Pl+Loc: oskotâkâwâhk
+     miskotâkay+N+I+D+Px4Sg/Pl+Loc: oskotâkâyihk
+
+     miskotâkay+N+I+D+Der/Dim+N+I+D+PxX+Sg:      [miskocâkâs,     miskocâkâsis]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px1Sg+Sg:    [niskocâkâs,     niskocâkâsis]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px2Sg+Sg:    [kiskocâkâs,     kiskocâkâsis]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px1Pl+Sg:    [niskocâkâsinân, niskocâkâsisinân]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px12Pl+Sg:   [kiskocâkâsinaw, kiskocâkâsisinaw]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px2Pl+Sg:    [kiskocâkâsiwâw, kiskocâkâsisiwâw]
+
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px3Sg+Sg:    [oskocâkâs,     oskocâkâsis]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px3Pl+Sg:    [oskocâkâsiwâw, oskocâkâsisiwâw]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Sg: [oskocâkâsiyiw, oskocâkâsisiyiw]
+
+     miskotâkay+N+I+D+Der/Dim+N+I+D+PxX+Pl:      [miskocâkâsa,     miskocâkâsisa]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px1Sg+Pl:    [niskocâkâsa,     niskocâkâsisa]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px2Sg+Pl:    [kiskocâkâsa,     kiskocâkâsisa]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px1Pl+Pl:    [niskocâkâsinâna, niskocâkâsisinâna]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px12Pl+Pl:   [kiskocâkâsinawa, kiskocâkâsisinawa]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px2Pl+Pl:    [kiskocâkâsiwâwa, kiskocâkâsisiwâwa]
+     
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px3Sg+Pl:    [oskocâkâsa,      oskocâkâsisa]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px3Pl+Pl:    [oskocâkâsiwâwa,  oskocâkâsisiwâwa]
+     miskotâkay+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Pl: [oskocâkâsiyiwa,  oskocâkâsisiyiwa]
+

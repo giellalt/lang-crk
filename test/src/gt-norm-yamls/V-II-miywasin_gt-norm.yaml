@@ -1,0 +1,27 @@
+Condfig:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - miywâsin - help : # Wolvengrey VIIn
+   
+     miywâsin+V+II+Ind+Prs+3Sg:  miywâsin
+     miywâsin+V+II+Ind+Prs+3Pl:  miywâsinwa
+     miywâsin+V+II+Ind+Prs+4Sg:  miywâsiniyiw
+     miywâsin+V+II+Ind+Prs+4Pl:  miywâsiniyiwa
+     
+     PV/e+miywâsin+V+II+Cnj+Prs+3Sg:  [ê-miywâsik]
+     PV/e+miywâsin+V+II+Cnj+Prs+3Pl:  [ê-miywâsiki]
+     PV/e+miywâsin+V+II+Cnj+Prs+4Sg:  [ê-miywâsiniyik]
+     PV/e+miywâsin+V+II+Cnj+Prs+4Pl:  [ê-miywâsiniyiki]
+     
+     miywâsin+V+II+Fut+Cond+3Sg:  miywâsiki
+     miywâsin+V+II+Fut+Cond+3Pl:  miywâsikwâwi
+     miywâsin+V+II+Fut+Cond+4Sg:  miywâsiniyiki
+     miywâsin+V+II+Fut+Cond+4Pl:  miywâsiniyikwâwi
