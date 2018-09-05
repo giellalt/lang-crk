@@ -22,9 +22,9 @@
 #Script adapted to Cree
 
 ###### Variables: #######
-POS=verbs
+POS=verb
 ### in ###
-source_file=${srcdir}/../../../src/morphology/stems/${POS}.lexc
+source_file=${srcdir}/../../../src/morphology/stems/${POS}_stems.lexc
 generator_file=./../../../src/generator-gt-norm
 analyser_file=./../../../src/analyser-gt-norm
 
