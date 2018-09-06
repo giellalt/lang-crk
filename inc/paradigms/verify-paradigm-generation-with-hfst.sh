@@ -2,6 +2,13 @@
 
 # Usage:
 #     verify-paradigm-generation-with-hfst.sh verb-ta.paradigm wâpamêw PATH-to-NORMATIVE-GENERATOR-HFST
+#     verify-paradigm-generation-with-hfst.sh verb-ti.paradigm miciw PATH-to-NORMATIVE-GENERATOR-HFST
+#     verify-paradigm-generation-with-hfst.sh verb-ai.paradigm nipâw PATH-to-NORMATIVE-GENERATOR-HFST
+#     verify-paradigm-generation-with-hfst.sh verb-ta.paradigm pimamon PATH-to-NORMATIVE-GENERATOR-HFST
+#     verify-paradigm-generation-with-hfst.sh noun-an.paradigm niska PATH-to-NORMATIVE-GENERATOR-HFST
+#     verify-paradigm-generation-with-hfst.sh noun-in.paradigm astotin PATH-to-NORMATIVE-GENERATOR-HFST
+#     verify-paradigm-generation-with-hfst.sh noun-an-d.paradigm mitâs PATH-to-NORMATIVE-GENERATOR-HFST
+#     verify-paradigm-generation-with-hfst.sh noun-in-d.paradigm mitêh PATH-to-NORMATIVE-GENERATOR-HFST
 
 <"$1" \
 gawk -v LEMMA="$2" 'BEGIN { lemma=LEMMA; }
