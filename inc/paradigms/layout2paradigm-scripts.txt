@@ -1,0 +1,13 @@
+AI verbs:
+
+# Initial lines need to be specified manually
+
+cat verb-ai-full.layout.csv | gawk '{ if(body!=0) print; } $0 ~ /[-][-]/ { body=1; }' | cut -f2 | grep -v '"' | gawk 'NF!=0 { sub("(Ind)|(Fut\\+Cond)|(Imp)\\+","{{ lemma }}+V+AI+&"); sub("\\*\\+Cnj","{{ lemma }}+V+AI+Cnj",$0); print }' > verb-ai.paradigm
+
+cat verb-ai-full.layout.csv | gawk '{ if(body!=0) print; } $0 ~ /[-][-]/ { body=1; }' | cut -f3 | grep -v '"' | gawk 'NF!=0 { sub("(Ind)|(Fut\\+Cond)|(Imp)\\+","{{ lemma }}+V+AI+&"); sub("\\*\\+Cnj","{{ lemma }}+V+AI+Cnj",$0); print }' >> verb-ai.paradigm 
+
+TI verbs:
+
+cat verb-ti-full.layout.csv | gawk '{ if(body!=0) print; } $0 ~ /[-][-]/ { body=1; }' | cut -f2 | grep -v '"' | gawk 'NF!=0 { sub("(Ind)|(Fut\\+Cond)|(Imp)\\+","{{ lemma }}+V+TI+&"); sub("\\*\\+Cnj","{{ lemma }}+V+TI+Cnj",$0); print }' > verb-ti.paradigm
+
+cat verb-ti-full.layout.csv | gawk '{ if(body!=0) print; } $0 ~ /[-][-]/ { body=1; }' | cut -f3 | grep -v '"' | gawk 'NF!=0 { sub("(Ind)|(Fut\\+Cond)|(Imp)\\+","{{ lemma }}+V+TI+&"); sub("\\*\\+Cnj","{{ lemma }}+V+TI+Cnj",$0); print }' >> verb-ti.paradigm 
