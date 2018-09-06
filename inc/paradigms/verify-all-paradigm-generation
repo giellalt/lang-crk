@@ -1,0 +1,75 @@
+#!/usr/bin/env python
+
+from __future__ import unicode_literals, print_function
+
+import os
+import subprocess
+import sys
+
+# If using Python 2, pretend that codecs.open() is the default open()
+# function, so that we can specify an encoding.
+if sys.version_info < (3, 0):
+    from codecs import open
+
+
+# Path to the normative generator FST.
+FST_PATH = os.path.expandvars('${GTLANG_crk}/src/generator-gt-norm.hfstol')
+
+
+def usage_error(*message):
+    print(sys.argv[0] + ':', *message, file=sys.stderr)
+    sys.exit(2)
+
+
+def verify_paradigm(paradigm_file, example_lemma):
+    args = [
+        './verify-paradigm-generation-with-hfst.sh',
+        paradigm_file,
+        example_lemma,
+        FST_PATH
+    ]
+    # Just like make(1), print the command before we run it.
+    print(*args)
+    status = subprocess.call(args)
+    return status
+
+
+try:
+    pairs_filename = sys.argv[1]
+except IndexError:
+    usage_error('Must specify the pairs .tsv file')
+
+expected_paradigm_files = set(sys.argv[2:])
+
+if len(expected_paradigm_files) == 0:
+    usage_error('Must specify at least one paradigm file')
+
+exit_status = 0
+attested_paradigm_files = set()
+
+with open(pairs_filename, 'r', encoding='UTF-8') as pairs_file:
+    for line in pairs_file:
+        if line.startswith('#'):
+            continue
+
+        paradigm_filename, example_lemma = line.strip().split('\t')
+
+        if paradigm_filename not in expected_paradigm_files:
+            usage_error('found %s but only expected the '
+                        'following paradigm files: %r' % (
+                            paradigm_filename,
+                            expected_paradigm_files
+                        ))
+
+        exit_status |= verify_paradigm(paradigm_filename, example_lemma)
+        attested_paradigm_files.add(paradigm_filename)
+
+missing_paradigm_files = expected_paradigm_files - attested_paradigm_files
+
+
+if missing_paradigm_files:
+    usage_error('Did not find lemma for the following paradigm files: %r' % (
+                missing_paradigm_files))
+
+
+sys.exit(exit_status)
