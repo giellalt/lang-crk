@@ -1,0 +1,22 @@
+This is where we develop **paradigms** and **layouts** for itwêwina.
+
+To generate the files suitable for usage for Neahttadigisánit/itwêwina, type:
+
+    make
+
+To check whether the paradigm and layout files have any problems, type:
+
+    make check
+
+To run ALL OF THE TESTS, type the following:
+
+    make check-all
+
+(Warning: this is slow.)
+
+---
+
+NOTE: When creating a new *.paradigm file, make sure to add a test case to
+./paradigm-test-pairs.tsv. Add a new line with the name of the test case, then
+a tab character, then a lemma that can be realized as each and every wordform
+as listed in its respective paradigm file.
