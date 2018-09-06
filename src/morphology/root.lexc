@@ -128,14 +128,16 @@ RdplS+ !!= * @CODE@ Reduplication Type 2 (Strong)
 +Der/Com !!= * @CODE@ Comitative circumfix (wîci-...-m)
 +Der/X !!= * @CODE@ VTI x-actor to VII-1
 
+!! Verb conjugation (transitivity + animacy classes)
 +AI      !!= * @CODE@ intransitive with animate subject,
 +II      !!= * @CODE@ intransitive with inanimate subject,
 +TA      !!= * @CODE@ transitive with animate object, and
 +TI      !!= * @CODE@ transitive with inanimate object.
 
-+AN		 !!= * @CODE@ animate noun
-+IN		 !!= * @CODE@ inanimate noun
-
+!! Noun animacy and dependency classes
++A		 !!= * @CODE@ animate noun
++I		 !!= * @CODE@ inanimate noun
++D		 !!= * @CODE@ dependent noun
 
 +Incl    !!= * @CODE@ me too, etc.
 +Qst     !!= * @CODE@ yes-no question particle ci
@@ -544,11 +546,6 @@ h2 		!!= * @CODE@  Prefix in possessives
 @U.noun.dep@ !!= * @CODE@ ! REMOVE
 
 !! New multichar symbols for nouns
-
-+N
-+A
-+I
-+D
 
 +Sg
 +Pl
