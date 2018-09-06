@@ -1,5 +1,4 @@
 # Generates all the layout files from the CSVs.
-# Double-checks that the paradigms have no duplicates. 
 #
 # Usage:
 #
@@ -7,12 +6,19 @@
 #
 # (Yes! That's it!)
 #
+# Double-checks that the paradigms have no duplicates.
+#
+# Usage:
+#
+# 	make check
+#
 # Author: Eddie Antonio Santos <easantos@ualberta.ca>
 
 LAYOUTS = $(patsubst %.csv,%,$(wildcard *.layout.csv))
-		
 
-all: check layouts
+XARGS = xargs -t
+
+all: layouts
 
 # Depends on all of the layout files, creaated from .csv files.
 layouts: $(LAYOUTS)
@@ -20,22 +26,33 @@ layouts: $(LAYOUTS)
 # Do some sanity checks for the paradigm and layout files.
 check: check-paradigms check-layouts
 
+check-paradigms: check-paradigm-uniqueness check-paradigm-generation
+check-layouts: check-layout-matches check-tooltips
+
 # Fails if there are duplicate entries in any of the paradigm files.
-check-paradigms:
-	@echo $(wildcard *.paradigm) | xargs -n1 ./ensure-unique-paradigm
+check-paradigm-uniqueness:
+	@echo $(wildcard *.paradigm) | $(XARGS) -n1 ./ensure-unique-paradigm
 	@echo "$$(tput setaf 2)Paradigms files OK!$$(tput sgr0)"
 
+# Fails if there are missing tooltips in the paradigm files.
+check-tooltips:
+	@echo $(wildcard *.layout.csv) | $(XARGS) -n1 ./verify-layout-tooltips.sh
+	@echo "$$(tput setaf 2)Satisfactory tooltips defined in all layout files!$$(tput sgr0)"
+
 # Fails if there are duplicates or no matches in the layout files.
-check-layouts:
-	@echo $(wildcard *.paradigm) | xargs -n1 sh ./verify-paradigm-layout.sh
-	@echo "$$(tput setaf 2)Layout files OK!$$(tput sgr0)"
-	
+check-layout-matches:
+	@echo $(wildcard *.paradigm) | $(XARGS) -n1 ./verify-paradigm-layout.sh
+	@echo "$$(tput setaf 2)All entries in the paradigms match exactly one cell!$$(tput sgr0)"
+
+check-paradigm-generation:
+	./verify-all-paradigm-generation paradigm-test-pairs.tsv $(wildcard *.paradigm)
+
 # Convert a .csv layout file into a forma suitable for NDS/itwêwina.
-%.layout: %.layout.csv 
+%.layout: %.layout.csv
 	./paradigm-csv2layout.sh $< >$@
 
 
 # ./paradigm-csv2layout.sh might fail, so delete failed results.
 .DELETE_ON_ERROR:
 
-.PHONY: all layouts check
+.PHONY: all layouts check check-paradigms check-layouts

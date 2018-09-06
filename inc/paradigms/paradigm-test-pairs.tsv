@@ -1,0 +1,7 @@
+# To test the paradigm generation, for each *.paradigm file, we need to test
+# it with a regular lemma that should generate a valid wordform for every
+# entry in the paradigm.
+#
+#  Paradigm file	Regular lemma
+verb-ta.paradigm	wâpamêw
+# vim: noet ts=8 sw=8:
