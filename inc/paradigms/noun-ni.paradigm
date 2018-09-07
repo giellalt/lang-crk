@@ -1,0 +1,66 @@
+name: "Inanimate noun paradigm"
+morphology:
+  pos: N
+  noun_animacy: I
+--
+{{ lemma }}+N+I+Sg
+{{ lemma }}+N+I+Pl
+{{ lemma }}+N+I+Loc
+
+{{ lemma }}+N+I+Px1Sg+Sg
+{{ lemma }}+N+I+Px2Sg+Sg
+{{ lemma }}+N+I+Px1Pl+Sg
+{{ lemma }}+N+I+Px12Pl+Sg
+{{ lemma }}+N+I+Px2Pl+Sg
+{{ lemma }}+N+I+Px3Sg+Sg
+{{ lemma }}+N+I+Px3Pl+Sg
+{{ lemma }}+N+I+Px4Sg+Sg
+
+{{ lemma }}+N+I+Px1Sg+Pl
+{{ lemma }}+N+I+Px2Sg+Pl
+{{ lemma }}+N+I+Px1Pl+Pl
+{{ lemma }}+N+I+Px12Pl+Pl
+{{ lemma }}+N+I+Px2Pl+Pl
+{{ lemma }}+N+I+Px3Sg+Pl
+{{ lemma }}+N+I+Px3Pl+Pl
+{{ lemma }}+N+I+Px4Sg+Pl
+
+{{ lemma }}+N+I+Px1Sg+Loc
+{{ lemma }}+N+I+Px2Sg+Loc
+{{ lemma }}+N+I+Px4Sg+Loc
+{{ lemma }}+N+I+Px1Pl+Loc
+{{ lemma }}+N+I+Px12Pl+Loc
+{{ lemma }}+N+I+Px2Pl+Loc
+{{ lemma }}+N+I+Px3Sg+Loc
+{{ lemma }}+N+I+Px3Pl+Loc
+
+{{ lemma }}+N+I+Der/Dim+N+I+Sg
+{{ lemma }}+N+I+Der/Dim+N+I+Pl
+{{ lemma }}+N+I+Der/Dim+N+I+Loc
+
+{{ lemma }}+N+I+Der/Dim+N+I+Px1Sg+Sg
+{{ lemma }}+N+I+Der/Dim+N+I+Px2Sg+Sg
+{{ lemma }}+N+I+Der/Dim+N+I+Px1Pl+Sg
+{{ lemma }}+N+I+Der/Dim+N+I+Px12Pl+Sg
+{{ lemma }}+N+I+Der/Dim+N+I+Px2Pl+Sg
+{{ lemma }}+N+I+Der/Dim+N+I+Px3Sg+Sg
+{{ lemma }}+N+I+Der/Dim+N+I+Px3Pl+Sg
+{{ lemma }}+N+I+Der/Dim+N+I+Px4Sg+Sg
+
+{{ lemma }}+N+I+Der/Dim+N+I+Px1Sg+Pl
+{{ lemma }}+N+I+Der/Dim+N+I+Px2Sg+Pl
+{{ lemma }}+N+I+Der/Dim+N+I+Px1Pl+Pl
+{{ lemma }}+N+I+Der/Dim+N+I+Px12Pl+Pl
+{{ lemma }}+N+I+Der/Dim+N+I+Px2Pl+Pl
+{{ lemma }}+N+I+Der/Dim+N+I+Px3Sg+Pl
+{{ lemma }}+N+I+Der/Dim+N+I+Px3Pl+Pl
+{{ lemma }}+N+I+Der/Dim+N+I+Px4Sg+Pl
+
+{{ lemma }}+N+I+Der/Dim+N+I+Px1Sg+Loc
+{{ lemma }}+N+I+Der/Dim+N+I+Px2Sg+Loc
+{{ lemma }}+N+I+Der/Dim+N+I+Px4Sg+Loc
+{{ lemma }}+N+I+Der/Dim+N+I+Px1Pl+Loc
+{{ lemma }}+N+I+Der/Dim+N+I+Px12Pl+Loc
+{{ lemma }}+N+I+Der/Dim+N+I+Px2Pl+Loc
+{{ lemma }}+N+I+Der/Dim+N+I+Px3Sg+Loc
+{{ lemma }}+N+I+Der/Dim+N+I+Px3Pl+Loc
