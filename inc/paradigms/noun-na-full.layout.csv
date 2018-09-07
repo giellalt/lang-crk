@@ -1,5 +1,5 @@
 name: "Animate noun full paradigm"				
-'paradigm: ''noun-an.paradigm'''				
+paradigm: 'noun-na.paradigm'				
 layout:				
   type: "full"				
 tooltips:				
@@ -28,20 +28,20 @@ tooltips:
 	: "Singular Noun"	: "Plural Noun"	: "Locative"	: "Obviative"
 "1s"	Px1Sg+Sg	Px1Sg+Pl	Px1Sg+Loc	Px1Sg+Obv
 "2s"	Px2Sg+Sg	Px2Sg+Pl	Px2Sg+Loc	Px2Sg+Obv
-"3s"	Px3Sg+Sg	Px3Sg+Pl	Px3Sg+Loc	Px3Sg+Obv
+"3s"			Px3Sg+Loc	Px3Sg+Obv
 "1p"	Px1Pl+Sg	Px1Pl+Pl	Px1Pl+Loc	Px1Pl+Obv
 "21p"	Px12Pl+Sg	Px12Pl+Pl	Px12Pl+Loc	Px12Pl+Obv
 "2p"	Px2Pl+Sg	Px2Pl+Pl	Px2Pl+Loc	Px2Pl+Obv
-"3p"	Px3Pl+Sg	Px3Pl+Pl	Px3Pl+Loc	Px3Pl+Obv
-"4"	Px4Sg/Pl+Sg	Px4Sg/Pl+Pl	Px4Sg/Pl+Loc	Px4Sg/Pl+Obv
+"3p"			Px3Pl+Loc	Px3Pl+Obv
+"4"			Px4Sg/Pl+Loc	Px4Sg/Pl+Obv
 				
 	"DIMINUTIVE POSSESSION"			
 	: "Singular Noun"	: "Plural Noun"	: "Locative"	
 "1s"	Der/Dim+N+A+Px1Sg+Sg	Der/Dim+N+A+Px1Sg+Pl	Der/Dim+N+A+Px1Sg+Loc	
 "2s"	Der/Dim+N+A+Px2Sg+Sg	Der/Dim+N+A+Px2Sg+Pl	Der/Dim+N+A+Px2Sg+Loc	
-"3s"	Der/Dim+N+A+Px3Sg+Sg	Der/Dim+N+A+Px3Sg+Pl	Der/Dim+N+A+Px3Sg+Loc	
+"3s"	Der/Dim+N+A+Px3Sg+Obv	Der/Dim+N+A+Px3Sg+Obv	Der/Dim+N+A+Px3Sg+Loc	
 "1p"	Der/Dim+N+A+Px1Pl+Sg	Der/Dim+N+A+Px1Pl+Pl	Der/Dim+N+A+Px1Pl+Loc	
 "21p"	Der/Dim+N+A+Px12Pl+Sg	Der/Dim+N+A+Px12Pl+Pl	Der/Dim+N+A+Px12Pl+Loc	
 "2p"	Der/Dim+N+A+Px2Pl+Sg	Der/Dim+N+A+Px2Pl+Pl	Der/Dim+N+A+Px2Pl+Loc	
-"3p"	Der/Dim+N+A+Px3Pl+Sg	Der/Dim+N+A+Px3Pl+Pl	Der/Dim+N+A+Px3Pl+Loc	
-"4"	Der/Dim+N+A+Px4Sg/Pl+Sg	Der/Dim+N+A+Px4Sg/Pl+Pl	Der/Dim+N+A+Px4Sg/Pl+Loc	
+"3p"	Der/Dim+N+A+Px3Pl+Obv	Der/Dim+N+A+Px3Pl+Obv	Der/Dim+N+A+Px3Pl+Loc	
+"4"	Der/Dim+N+A+Px4Sg/Pl+Obv	Der/Dim+N+A+Px4Sg/Pl+Obv	Der/Dim+N+A+Px4Sg/Pl+Loc	
