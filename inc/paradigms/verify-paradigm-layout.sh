@@ -33,14 +33,13 @@ else
 
 for(l in layout_files)
 {
-  print "PARADIGM FILE: "paradigm_file" <- LAYOUT FILE: "layout_files[l];
-  print "-----";
+  print "LAYOUT FILE: "layout_files[l]" -> PARADIGM FILE: "paradigm_file;
   while(l!="" && (getline < layout_files[l])!=0)
      { if(index($0,"|")!=0)
-       { nf = split($0,f,"[ \t]*\\|[ \t]*");
+       { nf = split($0,f,"[ \t]*[\\|][ \t]*");
          for(i=1; i<=nf; i++)
-            { sub("^[:space:]*","",f[i]); 
-              sub("[:space:]*$","",f[i]);
+            { sub("^[ \t]*","",f[i]); 
+              sub("[ \t]*$","",f[i]);
               # print i, length(f[i]), f[i];
               n_matches=0; matches="";
               if(index(f[i],"\"")==0 && length(f[i])>0)
@@ -56,13 +55,12 @@ for(l in layout_files)
                   if(n_matches==0)
                     { matches="???"; err++; }
                   if(n_matches!=1)
-                    { print f[i]" - "n_matches" match(es): "matches; err++}
+                    { printf "%s - %i match(es): %s\n", f[i], n_matches, matches; err++; }
                 }
             }
        }
      }
   print "-----";
-  print "";
 }
   if(err!=0)
     exit 1;
