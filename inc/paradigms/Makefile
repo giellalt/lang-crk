@@ -6,7 +6,8 @@
 #
 # (Yes! That's it!)
 #
-# Double-checks that the paradigms have no duplicates.
+#
+# Tests paradigm and layout files for a cavalcade of potential issues.
 #
 # Usage:
 #
@@ -20,7 +21,7 @@ XARGS = xargs -t
 
 all: layouts
 
-# Depends on all of the layout files, creaated from .csv files.
+# Depends on all of the layout files, created from .csv files.
 layouts: $(LAYOUTS)
 
 # Do some sanity checks for the paradigm and layout files.
@@ -33,7 +34,7 @@ check-layouts: check-layout-matches check-tooltips
 # Fails if there are duplicate entries in any of the paradigm files.
 check-paradigm-uniqueness:
 	@echo $(wildcard *.paradigm) | $(XARGS) -n1 ./ensure-unique-paradigm
-	@echo "$$(tput setaf 2)Paradigms files OK!$$(tput sgr0)"
+	@echo "$$(tput setaf 2)Paradigm files OK!$$(tput sgr0)"
 
 # Fails if there are missing tooltips in the paradigm files.
 check-tooltips:
