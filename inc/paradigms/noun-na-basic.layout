@@ -1,16 +1,19 @@
 name: "Animate noun basic paradigm"
-paradigm: 'noun-an.paradigm'
+paradigm: "noun-na.paradigm"
 layout:
   type: "basic"
 tooltips:
   eng:
     "1s poss (sg)": "1st person singular possessor, singular noun"
     "2s poss (sg)": "2nd person singular possessor, singular noun"
-    "3s poss (sg)": "3rd person singular possessor, singular noun"
+    "3s poss (sg)": "3rd person singular possessor, obviative noun"
 --
-| "Singular"     | Sg             |
-| "Plural"       | Pl             |
-| "Locative"     | Loc            |
-| "1s poss (sg)" | Sg+Px1Sg       |
-| "2s poss (sg)" | Sg+Px2Sg       |
-| "3s poss (sg)" | Sg+Px3Sg       |
+| "Singular"     | =N+A+Sg        |
+| "Plural"       | =N+A+Pl        |
+| "Obviative"    | =N+A+Obv       |
+| "Locative"     | =N+A+Loc       |
+| "Distributive" | =N+A+Distr     |
+|                |                |
+| "1s poss (sg)" | =N+A+Px1Sg+Sg  |
+| "2s poss (sg)" | =N+A+Px2Sg+Sg  |
+| "3s poss (sg)" | =N+A+Px3Sg+Obv |
