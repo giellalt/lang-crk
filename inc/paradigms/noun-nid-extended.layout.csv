@@ -12,23 +12,26 @@ tooltips:
     "2p": "2nd person plural possessor"		
     "3p": "3rd person plural possessor"		
     "4": "Obviative possessor"		
+    "X": "Unspecified possessor"		
 --		
-"Singular"	Sg	
-"Plural"	Pl	
-"Locative"	Loc	
-		
-	"DIMINUTIVE"	
-"Singular"	Der/Dim+N+I+Sg	
-"Plural"	Der/Dim+N+I+Pl	
-"Locative"	Der/Dim+N+I+Loc	
-		
+	"Unspecified possessor"
+"Singular"	=N+I+D+PxX+Sg	
+"Plural"	=N+I+D+PxX+Pl	
+"Locative"	=N+I+D+PxX+Loc	
+				
 	"POSSESSION"	
 	: "Singular Noun"	: "Plural Noun"
-"1s"	Px1Sg+Sg	Px1Sg+Pl
-"2s"	Px2Sg+Sg	Px2Sg+Pl
-"3s"	Px3Sg+Sg	Px3Sg+Pl
-"1p"	Px1Pl+Sg	Px1Pl+Pl
-"21"	Px12Pl+Sg	Px12Pl+Pl
-"2p"	Px2Pl+Sg	Px2Pl+Pl
-"3p"	Px3Pl+Sg	Px3Pl+Pl
-"4"	Px4Sg/Pl+Sg	Px4Sg/Pl+Pl
+"1s"	=N+I+D+Px1Sg+Sg	=N+I+D+Px1Sg+Pl
+"2s"	=N+I+D+Px2Sg+Sg	=N+I+D+Px2Sg+Pl
+"3s"	=N+I+D+Px3Sg+Sg	=N+I+D+Px3Sg+Pl
+"1p"	=N+I+D+Px1Pl+Sg	=N+I+D+Px1Pl+Pl
+"21"	=N+I+D+Px12Pl+Sg	=N+I+D+Px12Pl+Pl
+"2p"	=N+I+D+Px2Pl+Sg	=N+I+D+Px2Pl+Pl
+"3p"	=N+I+D+Px3Pl+Sg	=N+I+D+Px3Pl+Pl
+"4"	=N+I+D+Px4Sg/Pl+Sg	=N+I+D+Px4Sg/Pl+Pl
+
+	"DIMINUTIVE"	
+	"Unspecified possessor, singular noun"
+"Singular"	Der/Dim+N+I+D+PxX+Sg	
+"Plural"	Der/Dim+N+I+D+PxX+Pl	
+"Locative"	Der/Dim+N+I+D+PxX+Loc	
