@@ -6,11 +6,10 @@ tooltips:
   eng:	
     "1s poss (sg)": "1st person singular possessor, singular noun"	
     "2s poss (sg)": "2nd person singular possessor, singular noun"	
-    "3s poss (sg)": "3rd person singular possessor, singular noun"	
+    "3s poss (sg)": "3rd person singular possessor, obviative noun"	
+    "X poss (sg)": "Unspecified person singular possessor, singular noun"	
 --	
-"Singular"	Sg
-"Plural"	Pl
-"Locative"	Loc
-"1s poss (sg)"	Px1Sg+Sg
-"2s poss (sg)"	Px2Sg+Sg
-"3s poss (sg)"	Px3Sg+Sg
+"1s poss (sg)"	=N+I+D+Px1Sg+Sg
+"2s poss (sg)"	=N+I+D+Px2Sg+Sg
+"3s poss (obv)"	=N+I+D+Px3Sg+Sg
+"X poss (sg)"	=N+I+D+PxX+Sg
