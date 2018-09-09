@@ -1,0 +1,15 @@
+name: "Animate dependent noun basic paradigm"
+paradigm: "noun-nad.paradigm"
+layout:
+  type: "basic"
+tooltips:
+  eng:
+    "1s poss (sg)": "1st person singular possessor, singular noun"
+    "2s poss (sg)": "2nd person singular possessor, singular noun"
+    "3s poss (obv)": "3rd person singular possessor, obviative noun"
+    "X poss (sg)": "Unspecified possessor, singular noun"
+--
+| "1s poss (sg)"   | =N+A+D+Px1Sg+Sg  |
+| "2s poss (sg)"   | =N+A+D+Px2Sg+Sg  |
+| "3s poss (obv)"  | =N+A+D+Px3Sg+Obv |
+| "X poss (sg)"    | =N+A+D+PxX+Sg    |
