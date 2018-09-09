@@ -42,6 +42,7 @@ morphology:
 {{ lemma }}+N+A+Der/Dim+N+A+Sg
 {{ lemma }}+N+A+Der/Dim+N+A+Pl
 {{ lemma }}+N+A+Der/Dim+N+A+Obv
+{{ lemma }}+N+A+Der/Dim+N+A+Loc
 {{ lemma }}+N+A+Der/Dim+N+A+Distr
 
 {{ lemma }}+N+A+Der/Dim+N+A+Px1Sg+Sg
@@ -56,6 +57,11 @@ morphology:
 {{ lemma }}+N+A+Der/Dim+N+A+Px12Pl+Pl
 {{ lemma }}+N+A+Der/Dim+N+A+Px2Pl+Pl
 
+{{ lemma }}+N+A+Der/Dim+N+A+Px1Sg+Obv
+{{ lemma }}+N+A+Der/Dim+N+A+Px2Sg+Obv
+{{ lemma }}+N+A+Der/Dim+N+A+Px1Pl+Obv
+{{ lemma }}+N+A+Der/Dim+N+A+Px12Pl+Obv
+{{ lemma }}+N+A+Der/Dim+N+A+Px2Pl+Obv
 {{ lemma }}+N+A+Der/Dim+N+A+Px3Sg+Obv
 {{ lemma }}+N+A+Der/Dim+N+A+Px3Pl+Obv
 {{ lemma }}+N+A+Der/Dim+N+A+Px4Sg/Pl+Obv
