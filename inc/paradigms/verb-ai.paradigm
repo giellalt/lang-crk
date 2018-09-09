@@ -7,11 +7,8 @@ lexicon:
   XPATH:
     lc: ".//lg/lc/text()"
   lc:
-    - "VAI-1"
-    - "VAI-2"
-    - "VAI-3"
-    - "VAI-4"
-    - "VAI-5"
+    - "VAI-n"
+    - "VAI-v"
 --
 {{ lemma }}+V+AI+Ind+Prs+1Sg
 {{ lemma }}+V+AI+Ind+Prs+2Sg
