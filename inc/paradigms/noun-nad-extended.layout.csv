@@ -14,6 +14,14 @@ tooltips:
     "4": "Obviative possessor"		
     "X": "Unspecified possessor"		
 --		
+	"Unspecified possessor"
+"Singular"	=N+A+D+PxX+Sg
+"Plural"	=N+A+D+PxX+Pl
+"Obviative"	=N+A+D+PxX+Obv
+"Locative"	=N+A+D+PxX+Loc
+"Distributive"	=N+A+D+PxX+Distr
+
+	"POSSESSION"
 	: "Singular Noun"	: "Plural Noun"	: "Obviative Noun"
 "1s"	=N+A+D+Px1Sg+Sg	=N+A+D+Px1Sg+Pl	=N+A+D+Px1Sg+Obv
 "2s"	=N+A+D+Px2Sg+Sg	=N+A+D+Px2Sg+Pl	=N+A+D+Px2Sg+Obv
@@ -26,7 +34,7 @@ tooltips:
 "X"	=N+A+D+PxX+Sg	=N+A+D+PxX+Pl	=N+A+D+PxX+Obv
 
 	"DIMINUTIVE"
-	"Singular Noun"
+	"Unspecified possessor, singular Noun"
 "1s"	Der/Dim+N+A+D+Px1Sg+Sg
 "2s"	Der/Dim+N+A+D+Px2Sg+Sg
 "3s"	Der/Dim+N+A+D+Px3Sg+Obv
