@@ -1,5 +1,5 @@
 name: "Inanimate noun basic paradigm"
-paradigm: noun-in.paradigm
+paradigm: "noun-ni.paradigm"
 layout:
   type: "basic"
 tooltips:
@@ -8,9 +8,9 @@ tooltips:
     "2s poss (sg)": "2nd person singular possessor, singular noun"
     "3s poss (sg)": "3rd person singular possessor, singular noun"
 --
-| "Singular"     | Sg             |
-| "Plural"       | Pl             |
-| "Locative"     | Loc            |
-| "1s poss (sg)" | Px1Sg+Sg       |
-| "2s poss (sg)" | Px2Sg+Sg       |
-| "3s poss (sg)" | Px3Sg+Sg       |
+| "Singular"     | =N+I+Sg        |
+| "Plural"       | =N+I+Pl        |
+| "Locative"     | =N+I+Loc       |
+| "1s poss (sg)" | =N+I+Px1Sg+Sg  |
+| "2s poss (sg)" | =N+I+Px2Sg+Sg  |
+| "3s poss (sg)" | =N+I+Px3Sg+Sg  |
