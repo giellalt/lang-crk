@@ -109,6 +109,15 @@ generator-gt-norm.macron-to-macron.hfst: macron-to-circumfl.compose.hfst generat
 	hfst-compose -F -1 macron-to-circumfl.compose.hfst -2 generator-gt-norm.hfst -o - |\
 		hfst-compose -F -1 - -2 orthography/circumfl-to-macron.compose.hfst -o $@
 
+# Orthographically "omnivorous" FST:
+# Consumes input in SRO-Macron, SRO-Circumflex or syllabics, and produces an
+# analysis with lemmas in SRO-Circumflex.
+#
+# See: https://github.com/UAlbertaALTLab/itwewina/issues/43
+ADDITIONAL_TARGETS+=analyser-gt-desc.omnivorous.hfstol
+analyser-gt-desc.omnivorous.hfst: orthography/Cans-to-Latn.compose.hfst analyser-gt-desc.hfst
+	$(HFSTCOMPOSE.RULE)
+
 endif # CAN_HFST
 
 
