@@ -1,17 +1,17 @@
-name: "Animate noun full paradigm"				
-paradigm: "noun-na.paradigm"				
-layout:				
-  type: "full"				
-tooltips:				
-  eng:				
-    "1s": "1st person singular possessor"				
-    "2s": "2nd person singular possessor"				
-    "3s": "3rd person singular possessor"				
-    "1p": "1st person plural exclusive possessor"				
-    "21": "1st person plural inclusive possessor"				
-    "2p": "2nd person plural possessor"				
-    "3p": "3rd person plural possessor"				
-    "4": "Obviative possessor"				
+name: "Animate noun full paradigm"
+paradigm: "noun-na.paradigm"
+layout:
+  type: "full"
+tooltips:
+  eng:
+    "1s": "1st person singular possessor"
+    "2s": "2nd person singular possessor"
+    "3s": "3rd person singular possessor"
+    "1p": "1st person plural exclusive possessor"
+    "21": "1st person plural inclusive possessor"
+    "2p": "2nd person plural possessor"
+    "3p": "3rd person plural possessor"
+    "4": "Obviative possessor"
 --				
 "Singular"	=N+A+Sg			
 "Plural"	=N+A+Pl			
@@ -37,8 +37,8 @@ tooltips:
 "3p"			=N+A+Px3Pl+Obv	=N+A+Px3Pl+Loc
 "4"			=N+A+Px4Sg/Pl+Obv	=N+A+Px4Sg/Pl+Loc
 				
-	"DIMINUTIVE POSSESSION"			
-	: "Singular"	: "Plural"	: "Obviative"	: "Locative"	
+	"DIMINUTIVE POSSESSION"
+	: "Singular"	: "Plural"	: "Obviative"	: "Locative"
 "1s"	Der/Dim+N+A+Px1Sg+Sg	Der/Dim+N+A+Px1Sg+Pl	Der/Dim+N+A+Px1Sg+Obv	Der/Dim+N+A+Px1Sg+Loc
 "2s"	Der/Dim+N+A+Px2Sg+Sg	Der/Dim+N+A+Px2Sg+Pl	Der/Dim+N+A+Px2Sg+Obv	Der/Dim+N+A+Px2Sg+Loc
 "3s"			Der/Dim+N+A+Px3Sg+Obv	Der/Dim+N+A+Px3Sg+Loc
