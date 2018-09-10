@@ -7,8 +7,8 @@
 #     verify-paradigm-generation-with-hfst.sh verbi-ta.paradigm pimamon PATH-to-NORMATIVE-GENERATOR-HFST
 #     verify-paradigm-generation-with-hfst.sh noun-na.paradigm niska PATH-to-NORMATIVE-GENERATOR-HFST
 #     verify-paradigm-generation-with-hfst.sh noun-ni.paradigm astotin PATH-to-NORMATIVE-GENERATOR-HFST
-#     verify-paradigm-generation-with-hfst.sh noun-na-d.paradigm mitâs PATH-to-NORMATIVE-GENERATOR-HFST
-#     verify-paradigm-generation-with-hfst.sh noun-ni-d.paradigm mitêh PATH-to-NORMATIVE-GENERATOR-HFST
+#     verify-paradigm-generation-with-hfst.sh noun-nad.paradigm mitâs PATH-to-NORMATIVE-GENERATOR-HFST
+#     verify-paradigm-generation-with-hfst.sh noun-nid.paradigm mitêh PATH-to-NORMATIVE-GENERATOR-HFST
 
 <"$1" \
 gawk -v LEMMA="$2" 'BEGIN { lemma=LEMMA; }
