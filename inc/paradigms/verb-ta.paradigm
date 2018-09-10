@@ -165,7 +165,7 @@ PV/e+{{ lemma }}+V+TA+Cnj+Prs+X+3PlO
 {{ lemma }}+V+TA+Ind+Prt+1Pl+2PlO
 {{ lemma }}+V+TA+Ind+Prt+1Sg+2PlO
 
-{{ lemma }}{# IND-PAST-TENSE-MIXED #}
+{# IND-PAST-TENSE-MIXED #}
 
 {{ lemma }}+V+TA+Ind+Prt+1Sg+3SgO
 {{ lemma }}+V+TA+Ind+Prt+1Sg+3PlO
@@ -211,7 +211,7 @@ PV/e+{{ lemma }}+V+TA+Cnj+Prs+X+3PlO
 {{ lemma }}+V+TA+Ind+Prt+4Sg/Pl+3PlO
 {{ lemma }}+V+TA+Ind+Prt+5Sg/Pl+4Sg/PlO
 
-{{ lemma }}{# CNJ-PAST-TENSE-SAP #}
+{# CNJ-PAST-TENSE-SAP #}
 
 PV/e+{{ lemma }}+V+TA+Cnj+Prt+2Sg+1SgO
 PV/e+{{ lemma }}+V+TA+Cnj+Prt+2Sg+1PlO
@@ -635,12 +635,15 @@ PV/ka+{{ lemma }}+V+TA+Cnj+Prs+X+3PlO
 {# CNJ-FUTURE-CONDITIONAL-TENSE-THIRD #}
 
 {{ lemma }}+V+TA+Fut+Cond+3Sg+4Sg/PlO
+{{ lemma }}+V+TA+Fut+Cond+3Sg+5Sg/PlO
 {{ lemma }}+V+TA+Fut+Cond+3Pl+4Sg/PlO
+{{ lemma }}+V+TA+Fut+Cond+3Pl+5Sg/PlO
 {{ lemma }}+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO
 
 {{ lemma }}+V+TA+Fut+Cond+4Sg/Pl+3SgO
 {{ lemma }}+V+TA+Fut+Cond+4Sg/Pl+3PlO
 {{ lemma }}+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO
+
 
 {# IMPERATIVE-LOCAL #}
 
@@ -668,3 +671,10 @@ PV/ka+{{ lemma }}+V+TA+Cnj+Prs+X+3PlO
 {{ lemma }}+V+TA+Imp+Del+2Pl+3PlO
 {{ lemma }}+V+TA+Imp+Del+12Pl+3SgO
 {{ lemma }}+V+TA+Imp+Del+12Pl+3PlO
+
+{# POTENTIALLY MISSING FORMS #}
+{# V+TA+Imp+Imm+2Sg+4Sg/PlO #}
+{# V+TA+Imp+Del+2Sg+4Sg/PlO #}
+{# V+TA+Imp+Imm+2Pl+4Sg/PlO #}
+{# V+TA+Imp+Del+2Pl+4Sg/PlO #}
+
