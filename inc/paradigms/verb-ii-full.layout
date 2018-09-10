@@ -32,10 +32,10 @@ tooltips:
 |                            |                            |                            |
 |                            | "FUTURE DEFINITE TENSE"    |                            |
 |                            | : "Independent"            | : "Conjunct"               |
-| "3s"                       | Ind+Fut+Def+3Sg            |
-| "3p"                       | Ind+Fut+Def+3Pl            |
-| "4s"                       | Ind+Fut+Def+4Sg            |
-| "4p"                       | Ind+Fut+Def+4Pl            |
+| "3s"                       | Ind+Fut+Def+3Sg            |                            |
+| "3p"                       | Ind+Fut+Def+3Pl            |                            |
+| "4s"                       | Ind+Fut+Def+4Sg            |                            |
+| "4p"                       | Ind+Fut+Def+4Pl            |                            |
 |                            |                            |                            |
 |                            | "FUTURE/INFINITIVE"        |                            |
 |                            | : "ka-Conjunct"            | : "ta-Conjunct"            |
@@ -43,7 +43,7 @@ tooltips:
 | "3p"                       | PV/ka+*+Cnj+Prs+3Pl        | PV/ta+*+Cnj+Prs+3Pl        |
 | "4s"                       | PV/ka+*+Cnj+Prs+4Sg        | PV/ta+*+Cnj+Prs+4Sg        |
 | "4p"                       | PV/ka+*+Cnj+Prs+4Pl        | PV/ta+*+Cnj+Prs+4Pl        |
-|
+|                            |                            |                            |
 |                            | "FUTURE CONDITIONAL"       |                            |
 | "3s"                       | Fut+Cond+3Sg               |                            |
 | "3p"                       | Fut+Cond+3Pl               |                            |
