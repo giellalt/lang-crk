@@ -11,7 +11,8 @@
 #
 # Author: Antti Arppe, ALTLab (2018)
 
-gawk -v PARADIGM_FILE=$1 -v LAYOUT_FILE=$2 'BEGIN { paradigm_file=PARADIGM_FILE; layout_file=LAYOUT_FILE; err=0;
+gawk -v PARADIGM_FILE=$1 -v LAYOUT_FILE=$2 -v GREEN="$(tput setaf 2)" -v RED="$(tput setaf 1)" -v NORMAL="$(tput sgr0)" '
+BEGIN { paradigm_file=PARADIGM_FILE; layout_file=LAYOUT_FILE; err=0;
 
 # paradigm_file=layout_file; sub("[-]((basic)|(extended)|(full)).layout",".paradigm", paradigm_file);
 
@@ -85,9 +86,9 @@ for(l in layout_files)
   }
 
   if(d_err!=0 || z_err!=0)
-    printf "SUMMARY: %i duplicate / %i zero match(es) out of %i cells.\n", d_err, z_err, n_cells;
+    printf RED "SUMMARY: %i duplicate / %i zero match(es) out of %i cells.\n" NORMAL, d_err, z_err, n_cells;
   else
-    printf "SUMMARY: %i unique match(es) out of %i cell(s).\n", n_cells, n_cells;
+    printf GREEN "SUMMARY: %i unique match(es) out of %i cell(s).\n" NORMAL, n_cells, n_cells;
   print "-----";
 }
   if(err!=0)

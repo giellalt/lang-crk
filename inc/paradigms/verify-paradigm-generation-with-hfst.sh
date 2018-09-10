@@ -16,15 +16,16 @@ $0 ~ /\{\{ lemma \}\}/ { sub("\\{\\{ lemma \\}\\}",lemma,$0); print; }' | # less
 
 hfst-lookup -q "$3" | # less; exit 0;
 
-gawk -v PARADIGM_FILE=$1 -v FST_FILE=$3 'BEGIN { FS="\n"; RS=""; err=0;
+gawk -v PARADIGM_FILE="$1" -v FST_FILE="$3" -v GREEN="$(tput setaf 2)" -v RED="$(tput setaf 1)" -v NORMAL="$(tput sgr0)" '
+BEGIN { FS="\n"; RS=""; err=0;
   print "PARADIGM FILE: "PARADIGM_FILE" - HFST: "FST_FILE; }
 index($0,"+?")!=0 { err++; print "Illformed - form #"NR": ",$0; }
 END { if(err==0)
-        { print "Able to generate: all "NR" form(s).";
+        { print GREEN "Able to generate: all "NR" form(s)." NORMAL;
           exit 0;
         }
       else
-        { print "Unable to generate: "err" out of "NR" form(s).";
+        { print RED "Unable to generate: "err" out of "NR" form(s)." NORMAL;
           exit 1;
         }
 }'
