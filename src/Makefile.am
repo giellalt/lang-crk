@@ -79,7 +79,7 @@ endif # CAN_FOMA
 # : An analyzer that accepts input in Canadian Aboriginal syllabics
 #   and produces a morphological analysis with its lemma also written in syllabics.
 #   "Descriptive" means it is able to understand non-standard orthography.
-# 
+#
 # generator-gt-desc.Cans-to-Cans.hfstol
 # : A generator that accepts a morphological analysis in Canadian Aboriginal syllabics,
 #   and produces an orthographically correct surface form, also in syllabics.
@@ -88,13 +88,27 @@ if CAN_HFST
 ADDITIONAL_TARGETS+=analyser-gt-desc.Cans-to-Cans.hfstol
 ADDITIONAL_TARGETS+=generator-gt-norm.Cans-to-Cans.hfstol
 
+# Creates the target FST as $@ :=  $^[0] .o. $^[1]
 HFSTCOMPOSE.RULE = hfst-compose -F -o $@ -1 $(word 1,$^) -2 $(word 2,$^)
 
-%.Cans-to-Latn.hfst: orthography/Cans-to-Latn.compose.hfst %.hfst 
+%.Cans-to-Latn.hfst: orthography/Cans-to-Latn.compose.hfst %.hfst
 	$(HFSTCOMPOSE.RULE)
 
-%.Cans-to-Cans.hfst: %.Cans-to-Latn.hfst orthography/Latn-to-Cans.compose.hfst 
+%.Cans-to-Cans.hfst: %.Cans-to-Latn.hfst orthography/Latn-to-Cans.compose.hfst
 	$(HFSTCOMPOSE.RULE)
+
+# Macr-Macr FSTs
+# See: https://github.com/UAlbertaALTLab/itwewina/issues/41#issuecomment-419189272
+ADDITIONAL_TARGETS+=analyser-gt-desc.macron.hfst
+ADDITIONAL_TARGETS+=generator-gt-norm.macron-to-macron.hfst
+analyser-gt-desc.macron.hfst: orthography/Cans-to-Latn.compose.hfst analyser-gt-desc.hfst orthography/circumfl-to-macron.compose.hfst
+	hfst-compose -F -1 orthography/Cans-to-Latn.compose.hfst -2 analyser-gt-desc.hfst |\
+		hfst-compose -F -1 - -2 orthography/circumfl-to-macron.compose.hfst -o $@
+
+generator-gt-norm.macron-to-macron.hfst: macron-to-circumfl.compose.hfst generator-gt-norm.hfst orthography/circumfl-to-macron.compose.hfst
+	hfst-compose -F -1 macron-to-circumfl.compose.hfst -2 generator-gt-norm.hfst -o - |\
+		hfst-compose -F -1 - -2 orthography/circumfl-to-macron.compose.hfst -o $@
+
 endif # CAN_HFST
 
 
