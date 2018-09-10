@@ -100,20 +100,24 @@ analyser-gt-desc.omnivorous.hfst: orthography/Cans-to-Latn.compose.hfst analyser
 # FSTs whose "internal representation" is in syllabics.
 ADDITIONAL_TARGETS+=analyser-gt-desc.Cans-to-Cans.hfstol
 ADDITIONAL_TARGETS+=generator-gt-norm.Cans-to-Cans.hfstol
-
 %.Cans-to-Cans.hfst: analyser-gt-desc.ominvorous.hfst orthography/Latn-to-Cans.compose.hfst
 	$(HFSTCOMPOSE.RULE)
 
 # Macr-Macr FSTs
 # See: https://github.com/UAlbertaALTLab/itwewina/issues/41#issuecomment-419189272
-ADDITIONAL_TARGETS+=analyser-gt-desc.macron.hfst
-ADDITIONAL_TARGETS+=generator-gt-norm.macron-to-macron.hfst
+ADDITIONAL_TARGETS+=analyser-gt-desc.macron.hfstol
 analyser-gt-desc.macron.hfst: analyser-gt-desc.omnivorous.hfst orthography/circumfl-to-macron.compose.hfst
 	$(HFSTCOMPOSE.RULE)
 
-generator-gt-norm.macron-to-macron.hfst: macron-to-circumfl.compose.hfst generator-gt-norm.hfst orthography/circumfl-to-macron.compose.hfst
-	hfst-compose -F -1 macron-to-circumfl.compose.hfst -2 generator-gt-norm.hfst -o - |\
+ADDITIONAL_TARGETS+=generator-gt-norm.macron-to-macron.hfstol
+generator-gt-norm.macron-to-macron.hfst: orthography/macron-to-circumfl.compose.hfst generator-gt-norm.hfst orthography/circumfl-to-macron.compose.hfst
+	hfst-compose -F -1 orthography/macron-to-circumfl.compose.hfst -2 generator-gt-norm.hfst -o - |\
 		hfst-compose -F -1 - -2 orthography/circumfl-to-macron.compose.hfst -o $@
+
+# Create macron -> circumflex FST if it doesn't exist.
+orthography/macron-to-circumfl.compose.hfst: orthography/circumfl-to-macron.compose.hfst
+	hfst-invert -i $< -o $@
+	
 
 endif # CAN_HFST
 
