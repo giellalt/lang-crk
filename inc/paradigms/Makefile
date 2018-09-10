@@ -29,7 +29,7 @@ check: check-paradigms check-layouts
 check-all: check check-paradigm-generation
 
 check-paradigms: check-paradigm-uniqueness
-check-layouts: check-layout-matches check-tooltips
+check-layouts: check-layout-matches check-tooltips check-column-counts
 
 # Fails if there are duplicate entries in any of the paradigm files.
 check-paradigm-uniqueness:
@@ -46,10 +46,19 @@ check-layout-matches:
 	@echo $(wildcard *.paradigm) | $(XARGS) -n1 ./verify-paradigm-layout.sh
 	@echo "$$(tput setaf 2)All entries in the paradigms match exactly one cell!$$(tput sgr0)"
 
+# Fails if there are duplicates or no matches in the layout files.
+check-column-counts:
+	@echo $(wildcard *.layout.csv) | $(XARGS) -n1 ./verify-layout-column-numbers
+	@echo "$$(tput setaf 2)All layouts have a consistent number of columns!$$(tput sgr0)"
+
 check-paradigm-generation: GTLANG_crk=$(shell realpath ../../)
 check-paradigm-generation:
 	./verify-all-paradigm-generation paradigm-test-pairs.tsv $(wildcard *.paradigm)
 	@echo "$$(tput setaf 2)Succesfully generated all cells!$$(tput sgr0)"
+
+# WARNING! This really only works on Eddie's laptop :/
+copy: $(wildcard *.layout) $(wildcard *.paradigm)
+	cp -f $^ ~/Projects/itwewina/neahtta/configs/language_specific_rules/paradigms/crk/
 
 # Convert a .csv layout file into a forma suitable for NDS/itwêwina.
 %.layout: %.layout.csv
@@ -59,4 +68,4 @@ check-paradigm-generation:
 # ./paradigm-csv2layout.sh might fail, so delete failed results.
 .DELETE_ON_ERROR:
 
-.PHONY: all layouts check check-paradigms check-layouts check-all
+.PHONY: all layouts check check-paradigms check-layouts check-all copy
