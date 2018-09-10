@@ -18,7 +18,7 @@ tooltips:
 "Singular"	=N+I+D+PxX+Sg	
 "Plural"	=N+I+D+PxX+Pl	
 "Locative"	=N+I+D+PxX+Loc	
-				
+
 	"POSSESSION"	
 	: "Singular Noun"	: "Plural Noun"
 "1s"	=N+I+D+Px1Sg+Sg	=N+I+D+Px1Sg+Pl
@@ -31,7 +31,7 @@ tooltips:
 "4"	=N+I+D+Px4Sg/Pl+Sg	=N+I+D+Px4Sg/Pl+Pl
 
 	"DIMINUTIVE"	
-	"Unspecified possessor, singular noun"
+	"Unspecified possessor"
 "Singular"	Der/Dim+N+I+D+PxX+Sg	
 "Plural"	Der/Dim+N+I+D+PxX+Pl	
 "Locative"	Der/Dim+N+I+D+PxX+Loc	
