@@ -1,5 +1,5 @@
 name: "Transitive animate verb extended paradigm"		
-'paradigm: ''verb-ta.paradigm'''		
+paradigm: "verb-ta.paradigm"		
 layout:		
   type: "extended"		
 tooltips:		
@@ -143,7 +143,7 @@ tooltips:
 "1s → 2s"	Ind+Fut+Def+1Sg+2SgO	
 "3s → 4"	Ind+Fut+Def+3Sg+4Sg/PlO	
 		
-	FUTURE/INFINITIVE	
+	"FUTURE/INFINITIVE"	
 	: "Conjunct: ka-"	: "Conjunct: ta-"
 "2s → 1s"	PV/ka+*+Cnj+Prs+2Sg+1SgO	PV/ta+*+Cnj+Prs+2Sg+1SgO
 "1s → 2s"	PV/ka+*+Cnj+Prs+1Sg+2SgO	PV/ta+*+Cnj+Prs+1Sg+2SgO
