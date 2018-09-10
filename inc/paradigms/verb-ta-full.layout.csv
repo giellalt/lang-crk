@@ -429,9 +429,7 @@ tooltips:
 "Mixed"	: "Immediate"	: "Delayed"
 "2s → 3s"	Imp+Imm+2Sg+3SgO	Imp+Del+2Sg+3SgO
 "2s → 3p"	Imp+Imm+2Sg+3PlO	Imp+Del+2Sg+3PlO
-"2s → 4"	Imp+Imm+2Sg+4Sg/PlO	Imp+Del+2Sg+4Sg/PlO
 "21 → 3s"	Imp+Imm+12Pl+3SgO	Imp+Del+12Pl+3SgO
 "21 → 3p"	Imp+Imm+12Pl+3PlO	Imp+Del+12Pl+3PlO
 "2p → 3s"	Imp+Imm+2Pl+3SgO	Imp+Del+2Pl+3SgO
 "2p →3p"	Imp+Imm+2Pl+3PlO	Imp+Del+2Pl+3PlO
-"2p → 4"	Imp+Imm+2Pl+4Sg/PlO	Imp+Del+2Pl+4Sg/PlO
