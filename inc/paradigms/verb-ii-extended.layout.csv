@@ -1,5 +1,5 @@
 name: "Inanimate intransitive verb extended paradigm"		
-'paradigm: ''verb-ii.paradigm'''		
+paradigm: "verb-ii.paradigm"		
 layout:		
   type: "extended"		
 tooltips:		
@@ -29,3 +29,10 @@ tooltips:
 "3p"	Ind+Fut+Int+3Pl	PV/e+*+Cnj+Fut+Int+3Pl
 "4s"	Ind+Fut+Int+4Sg	PV/e+*+Cnj+Fut+Int+4Sg
 "4p"	Ind+Fut+Int+4Pl	PV/e+*+Cnj+Fut+Int+4Pl
+
+	"FUTURE DEFINITE TENSE"	
+	: "Independent"
+"3s"	Ind+Fut+Def+3Sg
+"3p"	Ind+Fut+Def+3Pl
+"4s"	Ind+Fut+Def+4Sg
+"4p"	Ind+Fut+Def+4Pl
