@@ -1,5 +1,5 @@
 name: "Animate intransitive verb full paradigm"		
-'paradigm: ''verb-ai.paradigm'''		
+paradigm: "verb-ai.paradigm"		
 layout:		
   type: "full"		
 tooltips:		
@@ -50,25 +50,25 @@ tooltips:
 		
 	"FUTURE DEFINITE TENSE"	
 	: "Independent"	
-"1s"	Ind+Fut+Def+1Sg	PV/e+*+Cnj+Fut+Def+1Sg
-"2s"	Ind+Fut+Def+2Sg	PV/e+*+Cnj+Fut+Def+2Sg
-"3s"	Ind+Fut+Def+3Sg	PV/e+*+Cnj+Fut+Def+3Sg
-"1p"	Ind+Fut+Def+1Pl 	PV/e+*+Cnj+Fut+Def+1Pl
-"21"	Ind+Fut+Def+12Pl	PV/e+*+Cnj+Fut+Def+12Pl
-"2p"	Ind+Fut+Def+2Pl	PV/e+*+Cnj+Fut+Def+2Pl
-"3p"	Ind+Fut+Def+3Pl	PV/e+*+Cnj+Fut+Def+3Pl
-"4"	Ind+Fut+Def+4Sg/Pl	PV/e+*+Cnj+Fut+Def+4Sg/Pl
+"1s"	Ind+Fut+Def+1Sg
+"2s"	Ind+Fut+Def+2Sg
+"3s"	Ind+Fut+Def+3Sg
+"1p"	Ind+Fut+Def+1Pl
+"21"	Ind+Fut+Def+12P
+"2p"	Ind+Fut+Def+2Pl
+"3p"	Ind+Fut+Def+3Pl
+"4"	Ind+Fut+Def+4Sg/Pl
 		
 	"FUTURE/INFINITIVE"	
 	: "Conjunct: ka-"	: "Conjunct: ta-"
-"1s"	PV/ka+*+Cnj+Fut+Def+1Sg	PV/ta+*+Cnj+Fut+Def+1Sg
-"2s"	PV/ka+*+Cnj+Fut+Def+2Sg	PV/ta+*+Cnj+Fut+Def+2Sg
-"3s"	PV/ka+*+Cnj+Fut+Def+3Sg	PV/ta+*+Cnj+Fut+Def+3Sg
-"1p"	PV/ka+*+Cnj+Fut+Def+1Pl	PV/ta+*+Cnj+Fut+Def+1Pl
-"21"	PV/ka+*+Cnj+Fut+Def+12Pl	PV/ta+*+Cnj+Fut+Def+12Pl
-"2p"	PV/ka+*+Cnj+Fut+Def+2Pl	PV/ta+*+Cnj+Fut+Def+2Pl
-"3p"	PV/ka+*+Cnj+Fut+Def+3Pl	PV/ta+*+Cnj+Fut+Def+3Pl
-"4"	PV/ka+*+Cnj+Fut+Def+4Sg/Pl	PV/ta+*+Cnj+Fut+Def+4Sg/Pl
+"1s"	PV/ka+*+Cnj+Prs+1Sg	PV/ta+*+Cnj+Prs+1Sg
+"2s"	PV/ka+*+Cnj+Prs+2Sg	PV/ta+*+Cnj+Prs+2Sg
+"3s"	PV/ka+*+Cnj+Prs+3Sg	PV/ta+*+Cnj+Prs+3Sg
+"1p"	PV/ka+*+Cnj+Prs+1Pl	PV/ta+*+Cnj+Prs+1Pl
+"21"	PV/ka+*+Cnj+Prs+12Pl	PV/ta+*+Prs+12Pl
+"2p"	PV/ka+*+Cnj+Prs+2Pl	PV/ta+*+Cnj+Prs+2Pl
+"3p"	PV/ka+*+Cnj+Prs+3Pl	PV/ta+*+Cnj+Prs+3Pl
+"4"	PV/ka+*+Cnj+Prs+4Sg/Pl	PV/ta+*+Cnj+Prs+4Sg/Pl
 		
 	"FUTURE CONDITIONAL"	
 "1s"	Fut+Cond+1Sg	
