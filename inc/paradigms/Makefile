@@ -29,7 +29,7 @@ check: check-paradigms check-layouts
 check-all: check check-paradigm-generation
 
 check-paradigms: check-paradigm-uniqueness
-check-layouts: check-layout-matches check-tooltips check-column-counts
+check-layouts: check-layout-matches check-tooltips
 
 # Fails if there are duplicate entries in any of the paradigm files.
 check-paradigm-uniqueness:
@@ -45,11 +45,6 @@ check-tooltips:
 check-layout-matches:
 	@echo $(wildcard *.paradigm) | $(XARGS) -n1 ./verify-paradigm-layout.sh
 	@echo "$$(tput setaf 2)All entries in the paradigms match exactly one cell!$$(tput sgr0)"
-
-# Fails if there are duplicates or no matches in the layout files.
-check-column-counts:
-	@echo $(wildcard *.layout.csv) | $(XARGS) -n1 ./verify-layout-column-numbers
-	@echo "$$(tput setaf 2)All layouts have a consistent number of columns!$$(tput sgr0)"
 
 check-paradigm-generation: GTLANG_crk=$(shell realpath ../../)
 check-paradigm-generation:
