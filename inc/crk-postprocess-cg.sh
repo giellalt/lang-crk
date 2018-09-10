@@ -15,7 +15,7 @@ gawk '{ if(index($0,"#")!=0)
 
 # CG disambiguation
 
-vislcg3 -g src/syntax/disambiguation.cg3 |
+vislcg3 -g src/syntax/disambiguator.cg3 |
 
 # CG surface syntactic analysis
 
