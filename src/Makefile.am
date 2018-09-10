@@ -115,9 +115,10 @@ generator-gt-norm.macron-to-macron.hfst: orthography/macron-to-circumfl.compose.
 		hfst-compose -F -1 - -2 orthography/circumfl-to-macron.compose.hfst -o $@
 
 # Create macron -> circumflex FST if it doesn't exist.
+# NOTE: if not composed with an FST, this will produce strange results.
+# See: https://github.com/UAlbertaALTLab/itwewina/issues/41#issuecomment-420011991
 orthography/macron-to-circumfl.compose.hfst: orthography/circumfl-to-macron.compose.hfst
 	hfst-invert -i $< -o $@
-	
 
 endif # CAN_HFST
 
