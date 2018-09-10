@@ -26,19 +26,28 @@ $0 ~ /^[-][-]/ {
 }
 
 # Store each row in the body and determine the width of the widest column.
+# If more columns than previously, increase maximum number of columns.
 body {
   line[NR] = $0;
+#   if(NF>ncol)
+#     ncol=NF;
   for (i = 1; i <= NF; i++)
-    if (length($i) > max)
-      max = length($i);
+    { if (length($i) > max)
+         max = length($i);
+      if(i>maxcol && $i!="")
+        maxcol=i;
+    }
 }
 
-# Print the layout, with proper column widths.
+# Print the layout, with proper column widths and maximum columns.
 END {
   for (j = start; j <= NR; j++) {
     n = split(line[j], f, "\t");
     for (i = 1; i <= n; i++)
         printf "| %-"max"s ", f[i];
+    if(n<maxcol)
+        for(i = n+1; i<=maxcol; i++)
+           printf "| %"max"s ", "";
     printf "|\n";
   }
 }'
