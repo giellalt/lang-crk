@@ -6,14 +6,14 @@ tooltips:
   eng:
     "1s poss (sg)": "1st person singular possessor, singular noun"
     "2s poss (sg)": "2nd person singular possessor, singular noun"
-    "3s poss (sg)": "3rd person singular possessor, obviative noun"
+    "3s poss (obv)": "3rd person singular possessor, obviative noun"
 --
-| "Singular"     | =N+A+Sg        |
-| "Plural"       | =N+A+Pl        |
-| "Obviative"    | =N+A+Obv       |
-| "Locative"     | =N+A+Loc       |
-| "Distributive" | =N+A+Distr     |
-|                |                |
-| "1s poss (sg)" | =N+A+Px1Sg+Sg  |
-| "2s poss (sg)" | =N+A+Px2Sg+Sg  |
-| "3s poss (sg)" | =N+A+Px3Sg+Obv |
+| "Singular"      | =N+A+Sg        |
+| "Plural"        | =N+A+Pl        |
+| "Obviative"     | =N+A+Obv       |
+| "Locative"      | =N+A+Loc       |
+| "Distributive"  | =N+A+Distr     |
+|                 | : "POSSESSION" |
+| "1s poss (sg)"  | =N+A+Px1Sg+Sg  |
+| "2s poss (sg)"  | =N+A+Px2Sg+Sg  |
+| "3s poss (obv)" | =N+A+Px3Sg+Obv |
