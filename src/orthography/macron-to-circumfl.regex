@@ -1,0 +1,29 @@
+# Saskatchewan-SRO conversion to Plains Cree long vowel SRO:
+# circumflex to macron.
+
+# With composed character (NFC form) on descriptive side,
+# and composed characters on the normative side:
+ā -> â, # a macron
+ē -> ê, # e macron
+ī -> î, # i macron
+ō -> ô, # o macron
+Ā -> Â, # A macron
+Ē -> Ê, # E macron
+Ī -> Î, # I macron
+Ō -> Ô; # O macron
+
+# With base + combining characters (NFD form) on descriptive side,
+# and composed characters on the normative side:
+ā -> â, # a macron
+ē -> ê, # e macron
+ī -> î, # i macron
+ō -> ô, # o macron
+Ā -> Â, # A macron
+Ē -> Ê, # E macron
+Ī -> Î, # I macron
+Ō -> Ô; # O macron
+
+# Explanation:
+# lexical side (->) input
+# Or, in other words:
+# correct (->) in use out there
