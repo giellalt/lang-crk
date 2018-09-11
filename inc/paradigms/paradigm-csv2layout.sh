@@ -25,21 +25,25 @@ $0 ~ /^[-][-]/ {
     print $1;
 }
 
-# Store each row in the body and determine the width of the widest column.
-# If more columns than previously, increase maximum number of columns.
+# Determine the width of the widest cell in each column
+# in the body of the paradigm.
+# If more legitimate columns observed than seen previously,
+# increase maximum number of columns.
 body {
-  line[NR] = $0;
-
   for (i = 1; i <= NF; i++) {
+    # Remove preceding or trailing space characters within field
+    gsub("(^[ ]+)|([ ]+$)","",$i);
     # Update the length of the widest column.
-    if (length($i) > max) {
-         max = length($i);
+    if (length($i) > max_width[i]) {
+         max_width[i] = length($i);
     }
 
     # Update the maximum number of columns.
-    if (i > maxcol) {
-        maxcol = i;
+    if (i > max_col && $i!="") {
+        max_col = i;
     }
+  # Store each row in the body after removing spaces at the edges of individual fields
+  line[NR] = $0;
   }
 }
 
@@ -48,12 +52,12 @@ END {
   for (j = start; j <= NR; j++) {
     n = split(line[j], f, "\t");
     for (i = 1; i <= n; i++)
-        printf "| %-"max"s ", f[i];
+        printf "| %-"max_width[i]"s ", f[i];
 
     # Print empty cells for the remaining columns.
-    if (n < maxcol) {
-      for(i = n+1; i<=maxcol; i++)
-         printf "| %"max"s ", "";
+    if (n < max_col) {
+      for(i = n+1; i<=max_col; i++)
+         printf "| %"max_width[i]"s ", "";
     }
 
     printf "|\n";
