@@ -97,20 +97,24 @@ ADDITIONAL_TARGETS+=analyser-gt-desc.omnivorous.hfstol
 analyser-gt-desc.omnivorous.hfst: orthography/Cans-to-Latn.compose.hfst analyser-gt-desc.hfst
 	$(HFSTCOMPOSE.RULE)
 
-# FSTs whose "internal representation" is in syllabics.
+# Cans-to-Cans FSTs -- FSTs whose "internal representation" is in syllabics.
 ADDITIONAL_TARGETS+=analyser-gt-desc.Cans-to-Cans.hfstol
+analyser-gt-desc.Cans-to-Cans.hfst: analyser-gt-desc.omnivorous.hfst orthography/Latn-to-Cans.compose.hfst
+	$(HFSTCOMPOSE.RULE)
+
 ADDITIONAL_TARGETS+=generator-gt-norm.Cans-to-Cans.hfstol
-%.Cans-to-Cans.hfst: analyser-gt-desc.ominvorous.hfst orthography/Latn-to-Cans.compose.hfst
-	$(HFSTCOMPOSE.RULE)
+generator-gt-norm.Cans-to-Cans.hfst: orthography/Cans-to-Latn.compose.hfst generator-gt-norm.hfst orthography/Latn-to-Cans.compose.hfst
+	hfst-compose -F -1 orthography/Cans-to-Latn.compose.hfst -2 generator-gt-norm.hfst -o - |\
+		hfst-compose -F -1 - -2 orthography/Latn-to-Cans.compose.hfst -o $@
 
-# Macr-Macr FSTs
+# Macr-to-Macr FSTs --FSTs whose "internal representation" is in macrons.
 # See: https://github.com/UAlbertaALTLab/itwewina/issues/41#issuecomment-419189272
-ADDITIONAL_TARGETS+=analyser-gt-desc.macron.hfstol
-analyser-gt-desc.macron.hfst: analyser-gt-desc.omnivorous.hfst orthography/circumfl-to-macron.compose.hfst
+ADDITIONAL_TARGETS+=analyser-gt-desc.Macr-to-Macr.hfstol
+analyser-gt-desc.Macr-to-Macr.hfst: analyser-gt-desc.omnivorous.hfst orthography/circumfl-to-macron.compose.hfst
 	$(HFSTCOMPOSE.RULE)
 
-ADDITIONAL_TARGETS+=generator-gt-norm.macron-to-macron.hfstol
-generator-gt-norm.macron-to-macron.hfst: orthography/macron-to-circumfl.compose.hfst generator-gt-norm.hfst orthography/circumfl-to-macron.compose.hfst
+ADDITIONAL_TARGETS+=generator-gt-norm.Macr-to-Macr.hfstol
+generator-gt-norm.Macr-to-Macr.hfst: orthography/macron-to-circumfl.compose.hfst generator-gt-norm.hfst orthography/circumfl-to-macron.compose.hfst
 	hfst-compose -F -1 orthography/macron-to-circumfl.compose.hfst -2 generator-gt-norm.hfst -o - |\
 		hfst-compose -F -1 - -2 orthography/circumfl-to-macron.compose.hfst -o $@
 
