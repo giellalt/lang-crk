@@ -6,15 +6,15 @@ tooltips:
   eng:
     "1s poss (sg)": "1st person singular possessor, singular noun"
     "2s poss (sg)": "2nd person singular possessor, singular noun"
-    "3s poss (sg)": "3rd person singular possessor, obviative noun"
+    "3s poss (sg)": "3rd person singular possessor, singular noun"
     "X poss (sg)": "Unspecified person singular possessor, singular noun"
     "X poss (pl)": "Unspecified person singular possessor, plural noun"
-    "X poss (obv)": "Unspecified person singular possessor, locative noun"
+    "X poss (loc)": "Unspecified person singular possessor, locative noun"
 --
-| "1s poss (sg)"            | =N+I+D+Px1Sg+Sg           |
-| "2s poss (sg)"            | =N+I+D+Px2Sg+Sg           |
-| "3s poss (obv)"           | =N+I+D+Px3Sg+Sg           |
-|                           | : "Unspecified possessor" |
-| "X poss (sg)"             | =N+I+D+PxX+Sg             |
-| "X poss (pl)"             | =N+I+D+PxX+Pl             |
-| "X poss (loc)"            | =N+I+D+PxX+Loc            |
+| "1s poss (sg)" | =N+I+D+Px1Sg+Sg           |
+| "2s poss (sg)" | =N+I+D+Px2Sg+Sg           |
+| "3s poss (sg)" | =N+I+D+Px3Sg+Sg           |
+|                | : "Unspecified possessor" |
+| "X poss (sg)"  | =N+I+D+PxX+Sg             |
+| "X poss (pl)"  | =N+I+D+PxX+Pl             |
+| "X poss (loc)" | =N+I+D+PxX+Loc            |
