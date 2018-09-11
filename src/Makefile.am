@@ -94,8 +94,9 @@ HFSTCOMPOSE.RULE = hfst-compose -F -o $@ -1 $(word 1,$^) -2 $(word 2,$^)
 #
 # See: https://github.com/UAlbertaALTLab/itwewina/issues/43
 ADDITIONAL_TARGETS+=analyser-gt-desc.omnivorous.hfstol
-analyser-gt-desc.omnivorous.hfst: orthography/Cans-to-Latn.compose.hfst analyser-gt-desc.hfst
-	$(HFSTCOMPOSE.RULE)
+analyser-gt-desc.omnivorous.hfst: orthography/Cans-to-Latn.compose.hfst orthography/macron-to-circumfl.compose.hfst analyser-gt-desc.hfst
+	hfst-compose -F -o $@ -1 $(word 1,$^) -2 $(word 2,$^) -o - |\
+		hfst-compose -F -o $@ -1 - -2 $(word 3, $^) -o $@
 
 # Cans-to-Cans FSTs -- FSTs whose "internal representation" is in syllabics.
 ADDITIONAL_TARGETS+=analyser-gt-desc.Cans-to-Cans.hfstol
@@ -117,12 +118,6 @@ ADDITIONAL_TARGETS+=generator-gt-norm.Macr-to-Macr.hfstol
 generator-gt-norm.Macr-to-Macr.hfst: orthography/macron-to-circumfl.compose.hfst generator-gt-norm.hfst orthography/circumfl-to-macron.compose.hfst
 	hfst-compose -F -1 orthography/macron-to-circumfl.compose.hfst -2 generator-gt-norm.hfst -o - |\
 		hfst-compose -F -1 - -2 orthography/circumfl-to-macron.compose.hfst -o $@
-
-# Create macron -> circumflex FST if it doesn't exist.
-# NOTE: if not composed with an FST, this will produce strange results.
-# See: https://github.com/UAlbertaALTLab/itwewina/issues/41#issuecomment-420011991
-orthography/macron-to-circumfl.compose.hfst: orthography/circumfl-to-macron.compose.hfst
-	hfst-invert -i $< -o $@
 
 endif # CAN_HFST
 
