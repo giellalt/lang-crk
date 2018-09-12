@@ -11,10 +11,10 @@ tooltips:
     "X poss (pl)": "Unspecified possessor, plural noun"
     "X poss (obv)": "Unspecified possessor, obviative noun"
 --
-| "1s poss (sg)"            | =N+A+D+Px1Sg+Sg           |
-| "2s poss (sg)"            | =N+A+D+Px2Sg+Sg           |
-| "3s poss (obv)"           | =N+A+D+Px3Sg+Obv          |
-|                           | : "Unspecified possessor" |
-| "X poss (sg)"             | =N+A+D+PxX+Sg             |
-| "X poss (pl)"             | =N+A+D+PxX+Pl             |
-| "X poss (obv)"            | =N+A+D+PxX+Obv            |
+| "1s poss (sg)"  | =N+A+D+Px1Sg+Sg           |
+| "2s poss (sg)"  | =N+A+D+Px2Sg+Sg           |
+| "3s poss (obv)" | =N+A+D+Px3Sg+Obv          |
+|                 | : "Unspecified possessor" |
+| "X poss (sg)"   | =N+A+D+PxX+Sg             |
+| "X poss (pl)"   | =N+A+D+PxX+Pl             |
+| "X poss (obv)"  | =N+A+D+PxX+Obv            |
