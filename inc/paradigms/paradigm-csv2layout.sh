@@ -10,7 +10,7 @@
 <"$1" tr -d "\r" | gawk '
 
 BEGIN {
-  FS="\t";
+  FS="\t"; OFS="\t";
 }
 
 # Figure out where the preamble ends and where the layout proper starts:
@@ -32,7 +32,7 @@ $0 ~ /^[-][-]/ {
 body {
   for (i = 1; i <= NF; i++) {
     # Remove preceding or trailing space characters within field
-    gsub("(^[ ]+)|([ ]+$)","",$i);
+    sub("^[ ]+","",$i); sub("[ ]+$","",$i);
     # Update the length of the widest column.
     if (length($i) > max_width[i]) {
          max_width[i] = length($i);
