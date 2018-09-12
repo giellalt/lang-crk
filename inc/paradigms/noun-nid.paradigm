@@ -3,6 +3,16 @@ morphology:
   pos: N
   noun_animacy: I
   dependency: D
+lexicon:
+  XPATH:
+    lc: ".//lg/lc/text()"
+  lc:
+    - "NDI-1"
+    - "NDI-2"
+    - "NDI-3"
+    - "NDI-4"
+    - "NDI-?"
+    - "NDI-x"
 --
 {{ lemma }}+N+I+D+PxX+Sg
 {{ lemma }}+N+I+D+PxX+Pl
