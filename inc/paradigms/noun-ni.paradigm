@@ -2,6 +2,18 @@ name: "Inanimate noun paradigm"
 morphology:
   pos: N
   noun_animacy: I
+  dependency:
+lexicon:
+  XPATH:
+    lc: ".//lg/lc/text()"
+  lc:
+    - "NI-1"
+    - "NI-2"
+    - "NI-3"
+    - "NI-4"
+    - "NI-4w"
+    - "NI-5"
+    - "NI-?"
 --
 {{ lemma }}+N+I+Sg
 {{ lemma }}+N+I+Pl
