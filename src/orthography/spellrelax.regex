@@ -61,7 +61,7 @@ o (->) ô, # THESE to be deleted when the SoMe variant is running
 # Dealing with spaces instead of hyphens as separators in multipart words
 
 [ %- ] (->) [ %- ]+,  # Multiple hyphens into a single hyphen
-%- (->) [ %  | %  ]+, # Multiple non-breaking or standard spaces (in syllabics) to single hyphen
+%- (->) [ %  | %  | %  ]+, # Multiple non-breaking or standard spaces (in syllabics) to single hyphen
 
 # Dealing with English-influenced divergences from SRO, and misspellings based on modern pronunciation
 
