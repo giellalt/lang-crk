@@ -92,7 +92,7 @@ gawk -v CLASS=$1 'BEGIN { FS="\t"; class=CLASS; }
          contlex="NOUN_INDEP_STEMS";
        if(match(pos,"^ND")!=0 && match(lemma,"^m")==0)
          { contlex="NOUN_DEP_KINSHIP_STEMS";
-           lemma="-"stem;
+           # lemma="-"stem; # Use Px1Sg form as lemma
          }
        if(match(pos,"^ND")!=0 && match(lemma,"^m")!=0)
          contlex="NOUN_DEP_NONKINSHIP_STEMS";
@@ -165,12 +165,12 @@ gawk -v CLASS=$1 'BEGIN { FS="\t"; class=CLASS; }
        # maskasiy:askasiy NAD "finger nail/claw" ; ! AEW NDA-2 (Vowel Initial VG stem) 
 
        # NOUNS: Animate + Dependent + Kinship (non-vocatives)
-       # -ohkom:ohkom NAD "grand-mother" ;
-       # -ohtâwiy:ohtâwiy NAD "father" ;
-       # -tânis:tânis NAD "daughter, brother, sister" ;
-       # -nîkihik:nîkihikw NAD "parent" ; ! AEW NDA-3 (Consonant initial Vw stem) Deal later: can also be the stem <wiyihkw> or <iyihkw>. <wiyihkw> and <iyihkw> can occur in locative. The <nîkihik> can not.
-       # -îtim:îtimw NAD "cross-cousin of opposite gender" ; ! AEW NDA-3 (Cowel initial Vw stem).
-       # -îw:îw2 NAD_SG/A "wife" ; ! AEW NDA-4 (Vowel initial sing syllable NDA-4 stem). N.B. Only one of its type.
+       # nôhkom:ohkom NAD "grand-mother" ;
+       # nôhtâwiy:ohtâwiy NAD "father" ;
+       # nitânis:tânis NAD "daughter, brother, sister" ;
+       # ninîkihik:nîkihikw NAD "parent" ; ! AEW NDA-3 (Consonant initial Vw stem) Deal later: can also be the stem <wiyihkw> or <iyihkw>. <wiyihkw> and <iyihkw> can occur in locative. The <nîkihik> can not.
+       # nîtim:îtimw NAD "cross-cousin of opposite gender" ; ! AEW NDA-3 (Cowel initial Vw stem).
+       # nîw:îw2 NAD_SG/A "wife" ; ! AEW NDA-4 (Vowel initial sing syllable NDA-4 stem). N.B. Only one of its type.
        # @P.loc.NULL@-îskw:@P.loc.NULL@îskw NAD_SG/A "fellow wife; husbands ex" ; ! AEW NDA-4w (Vowel initial single-syllable-/w/ stem). N.B. Only one of its type. Cannot take the locative (marked here with a flag-diacritic, which could be incorporated in a new set of NON-LOC contlexes).
 
        # MISSING IN CSV? AA: FIXED
@@ -186,7 +186,7 @@ gawk -v CLASS=$1 'BEGIN { FS="\t"; class=CLASS; }
              { clex="NAD_SG/A"; sub("w$","w2",stem); sub("y$","y4",stem); }
            if(pos=="NDA-4w")
              clex="NAD_SG/A";
-           if(lemma=="-îskw") flags="@P.loc.NULL@"; # FIXED - CONTLEX CODE WAS INCORRECT
+           if(lemma=="nîskw") flags="@P.loc.NULL@"; # FIXED - CONTLEX CODE WAS INCORRECT
          }
 
        # NOUNS: Inanimate + Dependent + Non-kinship (no non-kinships NDIs)
@@ -199,9 +199,9 @@ gawk -v CLASS=$1 'BEGIN { FS="\t"; class=CLASS; }
        # mêstakay:êstakay NID "hair" ; ! AEW NDI-1 (Vowel Initial VW stem)
        # miskîsik:skîsikw NID "eye" ; ! AEW NDI-3 (Consonant Initial Cw stem)
        # mayakask:ayakaskw NID "palate" ; ! AEW NDI-3 (Vowel Initial Cw stem)
-       # mîki -> -îk:îk NID_SG/I "home" ; ! AEW NDI-4 (Vowel Initial Single Syllable NDI-4 stem) N.B. Does not usually work unpossessed or plural unless distributive. CHANGE NO PxX form
+       # mîki -> nîki:îk NID_SG/I "home" ; ! AEW NDI-4 (Vowel Initial Single Syllable NDI-4 stem) N.B. Does not usually work unpossessed or plural unless distributive. CHANGE NO PxX form
        # @P.number.SG@mîni -> -în:@P.number.SG@în NID_SG/I "bone-marrow" ; ! AEW NDI-4 (Vowel Initial Single Syllable NDI-4 stem) N.B. might cause issue with <î>, also is a mass noun that is never plural. REMOVE INSTEAD OF wîni:wîn NI_SG/I_POSS/IM
-       # -îwas:îwat3 NID "sacred bundle" ; ! AEW NID Irregular(?) VW single-syllable stem. N.B. T->s when word final. (cannot be PxX)
+       # nîwas:îwat3 NID "sacred bundle" ; ! AEW NID Irregular(?) VW single-syllable stem. N.B. T->s when word final. (cannot be PxX)
 
        # CHANGES TO SOURCE CSV:
        # stem: -îk- => lemma: mîki : AEW: KEEP -îk lemma / AA: NOTHING TO FIX
@@ -220,7 +220,7 @@ gawk -v CLASS=$1 'BEGIN { FS="\t"; class=CLASS; }
          clex="NID_SG/I"; # Maybe not needed
        if(lemma=="miyaw") stem="iyaw2";
        if(lemma=="mîni") flags="@P.number.SG";
-       if(lemma=="-îwat") { clex="NID"; lemma="-îwas"; stem="îwat3"; }
+       if(lemma=="nîwas") { clex="NID"; stem="îwat3"; }
 
        if(index(note1,"diminutive")!=0)
          flags="@P.dim.DIM@";
