@@ -61,14 +61,14 @@
 ! @P.number.SG@mîni:@P.number.SG@în NID_SG/I "bone-marrow" ; ! AEW NDI-4 (Vowel Initial Single Syllable NDI-4 stem) N.B. might cause issue with <î>, also is a mass noun that is never plural.
 ! 
 ! LEXICON NOUN_DEP_KINSHIP_STEMS
-! -îwas:îwat3 NID "sacred bundle" ; ! AEW NID Irregular(?) VW single-syllable stem. N.B. T->s when word final. (can't be PxX)
-! -ohkom:ohkom NAD "grand-mother" ;
-! -ôhtawiy:ôhtawiy NAD "father" ;
-! -tânis:tânis NAD "daughter, brother, sister" ;
-! -nîkihik:nîkihikw NAD "parent" ; ! AEW NDA-3 (Consonant initial Vw stem) Deal later: can also be the stem <wiyihkw> or <iyihkw>. <wiyihkw> and <iyihkw> can occur in locative. The <nîkihik> can not.
-! -îtim:îtimw NAD "cross-cousin of opposite gender" ; ! AEW NDA-3 (Cowel initial Vw stem).
-! -îw:îw2 NAD_SG/A "wife" ; ! AEW NDA-4 (Vowel initial sing syllable NDA-4 stem). N.B. Only one of its type.
-! @P.loc.NULL@-îskw:@P.loc.NULL@îskw NAD_SG/A "fellow wife; husband's ex" ; ! AEW NDA-4w (Vowel initial single-syllable-/w/ stem). N.B. Only one of its type. Cannot take the locative (marked here with a flag-diacritic, which could be incorporated in a new set of NON-LOC contlexes).
+! nîwas:îwat3 NID "sacred bundle" ; ! AEW NID Irregular(?) VW single-syllable stem. N.B. T->s when word final. (can't be PxX)
+! nôhkom:ohkom NAD "grand-mother" ;
+! nôhtawiy:ôhtawiy NAD "father" ;
+! nitânis:tânis NAD "daughter, brother, sister" ;
+! ninîkihik:nîkihikw NAD "parent" ; ! AEW NDA-3 (Consonant initial Vw stem) Deal later: can also be the stem <wiyihkw> or <iyihkw>. <wiyihkw> and <iyihkw> can occur in locative. The <nîkihik> can not.
+! nîtim:îtimw NAD "cross-cousin of opposite gender" ; ! AEW NDA-3 (Cowel initial Vw stem).
+! nîwa:îw2 NAD_SG/A "wife" ; ! AEW NDA-4 (Vowel initial sing syllable NDA-4 stem). N.B. Only one of its type.
+! @P.loc.NULL@nîskwa:@P.loc.NULL@îskw NAD_SG/A "fellow wife; husband's ex" ; ! AEW NDA-4w (Vowel initial single-syllable-/w/ stem). N.B. Only one of its type. Cannot take the locative (marked here with a flag-diacritic, which could be incorporated in a new set of NON-LOC contlexes).
 ! 
 ! LEXICON NOUN_INDEP_STEMS
 ! !
@@ -4044,257 +4044,257 @@ yôspisiwin NI "gentleness" ; ! AEW: NI-1
 
 
 LEXICON NOUN_DEP_KINSHIP_STEMS
--kâwiy:kâwiy NAD "Our Mother, The Earth" ; ! AEW: NDA-2
--ohtâwiy:ohtâwiy NAD "Our Father; Our Creator ;; [Christian:] Heavenly Father, Our Father; Our Lord" ; ! AEW: NDA-2 ! 1: - ! 2: vocative: nôhtâ!
--acâs:acâs NID "my little stomach, my small belly" ; ! AEW: NDI-2
--ahkwan:ahkwan NID "my heel" ; ! AEW: NDI-1
--ahkwanêyâpiy:ahkwanêyâpiy NID "my achilles tendon, the tendon at back of my heel" ; ! AEW: NDI-2
--ahkwanikan:ahkwanikan NID "my heelbone" ; ! AEW: NDI-1
--aniway:aniway NID "my cheek" ; ! AEW: NDI-2
--asakay:asakay NAD "my skin" ; ! AEW: NDA-2
--askasiy:askasiy NAD "my fingernail; my claw" ; ! AEW: NDA-2
--askatay:askatay NID "my stomach-covering; my abdominal-wall" ; ! AEW: NDI-2 ! 1: - ! 2: possibly restricted to non-human reference
--atay:atay NID "my belly, my abdomen; my stomach" ; ! AEW: NDI-2
--ayakaskw:ayakaskw NID "my palate" ; ! AEW: NDI-3
--âskikan:âskikan NID "my chest, my breast" ; ! AEW: NDI-1 ! 1: - ! 2: diminutive: nâskikanis
--âwikan:âwikan NID "my backbone, my spine; my back" ; ! AEW: NDI-1
-@P.dim.DIM@-êscakâs:@P.dim.DIM@êscakâs NID "my hair, my short hair" ; ! AEW: NDI-1
--êstakay:êstakay NID "my hair" ; ! AEW: NDI-2
-@P.dim.DIM@-awâsimis:@P.dim.DIM@tawâsimis NAD "my child; my fetus" ; ! AEW: NDA-1
--câhkos:câhkos NAD "my female cross-cousin; my sister-in-law; [used by a female speaker only]" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nicâhkosê!
-@P.dim.DIM@-cânis:@P.dim.DIM@cânis NAD "my daughter; my parallel niece" ; ! AEW: NDA-1
--câpân:câpân NAD "my great-grandparent; my great-grandchild" ; ! AEW: NDA-1
-@P.dim.DIM@-câpânis:@P.dim.DIM@câpânis NAD "my (very small) great grandchild" ; ! AEW: NDA-1
-@P.dim.DIM@-câsis:@P.dim.DIM@câsis NAD "my small pair of pants, my shorts; my underpants; my loin-cloth; my leggings" ; ! AEW: NDA-1
-@P.dim.DIM@-cêhis:@P.dim.DIM@cêhis NID "my little heart; [as endearment: NDA-1 my dear heart]" ; ! AEW: NDI-1
-@P.dim.DIM@-cêhis:@P.dim.DIM@cêhis NAD "my dear heart [term of endearment]" ; ! AEW: NDA-1
--cêmisis:cêmisis NAD "my pup, my puppy; my little dog; my little horse" ; ! AEW: NDA-1
--cêstatay:cêstatay NID "my muscle" ; ! AEW: NDI-2
--cêstatayêyâpiy:cêstatayêyâpiy NID "my ligament, my tendon" ; ! AEW: NDI-2
--cicâskay:cicâskay NID "my crotch, my pubic region" ; ! AEW: NDI-2 ! 1: - ! 2: in some areas, possibly restricted to use by female speakers only
-@P.dim.DIM@-cicâskâs:@P.dim.DIM@cicâskâs NID "my crotch, my pubic region" ; ! AEW: NDI-1 ! 1: - ! 2: in some areas, possibly restricted to use by female speakers only
--cihciy:cihciy NID "my hand; my paw" ; ! AEW: NDI-2
-@P.dim.DIM@-cihcîs:@P.dim.DIM@cihcîs NID "my finger; my little hand" ; ! AEW: NDI-1
--cisk:cisk NID "my anus" ; ! AEW: NDI-1
--ciskakisiy:ciskakisiy NID "my rectum (lower end)" ; ! AEW: NDI-2
--ciskêyâpiy:ciskêyâpiy NID "my rectum (full length)" ; ! AEW: NDI-2
--ciwâm:ciwâm NAD "my male parallel cousin; husband of my female cross-cousin; [used by male speaker only] ;; my brother; my friend; my fellow age-mate male ;; [plural:] brethren (in Christian sense) ;; my rival" ; ! AEW: NDA-1 ! 1: - ! 2: used by a male speaker only; diminutive: niciwâmis; vocative: niciwâ!
-@P.dim.DIM@-ciwâmis:@P.dim.DIM@ciwâmis NAD "my male parallel cousin; husband of my female cross-cousin; [used by male speaker only] ;; my brother; my friend; my fellow age-mate male ;; [plural:] brethren (in Christian sense)" ; ! AEW: NDA-1 ! 1: - ! 2: used by a male speaker only
--ciwâmiskwêm:ciwâmiskwêm NAD "my female parallel cousin; wife of my male cross-cousin; my father's brother's daughter, my mother's sister's daughter ;; my fellow tribeswoman ;; my sister-in-law" ; ! AEW: NDA-2 ! 1: - ! 2: used by a female speaker only
--cîhcâwâw:cîhcâwâw NAD "my co-parent-in-law" ; ! AEW: NDA-2
--cîhcîkom:cîhcîkom NAD "my wart" ; ! AEW: NDA-1
-@P.dim.DIM@-cohcôsimis:@P.dim.DIM@cohcôsimis NAD "my nipple" ; ! AEW: NDA-1
--côcêmisis:côcêmisis NAD "my young friend [said to a child]" ; ! AEW: NDA-1
-@P.dim.DIM@-cônis:@P.dim.DIM@cônis NID "my little mouth; [plural:] my lips" ; ! AEW: NDI-1
-@P.dim.DIM@-côskwanis:@P.dim.DIM@côskwanis NID "my little elbow" ; ! AEW: NDI-1
-@P.dim.DIM@-htawakay:@P.dim.DIM@htawakay NID "my little ear" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 3: ohcawakâs; also nîhcawakâs; cf. 3: wîhcawakâs
--hcikwan:hcikwan NID "my knee" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 3: ohcikwan his/her knee; also nîhcikwan; cf. 3: wîhcikwan
--hcikwanikan:hcikwanikan NID "my kneebone" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 3: ohcikwanikan his/her kneebone; also nîhcikwânikan; cf. 3: wîhcikwanikan
--hkwâkan:hkwâkan NID "my face" ; ! AEW: NDI-1 ! 1: - ! 2: diminutive: nihkwâkanis; cf. 3: ohkwâkan; also nîhkwâkan; cf. 3: wîhkwâkan
-@P.dim.DIM@-hkwâkanis:@P.dim.DIM@hkwâkanis NID "my little face" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 3: ohkwâkanis; also nîhkwâkanis; cf. 3: wîhkwâkanis
--htawakay:htawakay NID "my ear" ; ! AEW: NDI-2 ! 1: - ! 2: diminutive: nihcawakâs; cf. 3: ohtawakay; also nîhtawakay; cf. 3: wîhtawakay
--kayâsim:kayâsim NAD "my old flame, my former sweatheart" ; ! AEW: NDA-1
--kâwiy:kâwiy NAD "my mother; my mother's sister" ; ! AEW: NDA-2 ! 1: - ! 2: vocative: nêkâ!, nikâ!
-@P.dim.DIM@-kâwîs:@P.dim.DIM@kâwîs NAD "my parallel aunt; my mother's sister, my father's brother's wife; my stepmother; my godmother; my dear mother" ; ! AEW: NDA-1
--kêhtê-ayim:kêhtê-ayim NAD "my elder; my parent, my grandparent" ; ! AEW: NDA-1
--kihci-âniskotâpân:kihci-âniskotâpân NAD "my great great great grandparent; my great great great grandchild; my ancestor" ; ! AEW: NDA-1
--kisêyinîm:kisêyinîm NAD "my old man, my husband" ; ! AEW: NDA-1
--kitikw:kitikw NID "my kneecap; my knee" ; ! AEW: NDI-3
--kocâk:kocâk NAD "my wife's former partner, my wife's ex; [archaic:] my fellow husband" ; ! AEW: NDA-1 ! 1: - ! 2: used by male speaker only
--kocâsiskwêm:kocâsiskwêm NAD "my husband's former partner, my husband's ex; [archaic:] my fellow wife" ; ! AEW: NDA-1 ! 1: - ! 2: used by female speaker only
-@P.dim.DIM@-kohcaskwayêyâpîs:@P.dim.DIM@kohcaskwayêyâpîs NID "my bronchial tubes" ; ! AEW: NDI-1
--kohtaskway:kohtaskway NID "my throat" ; ! AEW: NDI-2
--kohtaskwayêyâpiy:kohtaskwayêyâpiy NID "my windpipe" ; ! AEW: NDI-2
--kohtâkan:kohtâkan NID "my throat" ; ! AEW: NDI-1
--kosim:kosim NAD "my nephew; [male speaker:] my brother's son; husband of my sister's daughter; [female speaker:] my sister's son, husband of my brother's daughter" ; ! AEW: NDA-1
--kosis:kosis NAD "my son; my parallel nephew; [male speaker:] my brother's son; [female speaker:] my sister's son" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nikosê! nikosis!
--kot:kot NID "my nose" ; ! AEW: NDI-1
--kwayaw:kwayaw NID "my neck" ; ! AEW: NDI-2
--kwayawikan:kwayawikan NID "my neck-bone" ; ! AEW: NDI-1
--kwâskonêw:kwâskonêw NID "my chin" ; ! AEW: NDI-2
--kwâskonêwikan:kwâskonêwikan NID "my chin" ; ! AEW: NDI-1
--kwêmês:kwêmês NAD "my namesake, my friend" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nikwêmê!
--nimanâcimâkan:nimanâcimâkan NAD "the person with whom I avoid speaking; my in-law of opposite gender; [female speaker:] my father-in-law; [male speaker:] my mother-in-law" ; ! AEW: NDA-1
--manitôm:manitôm NAD "my god; my Lord" ; ! AEW: NDA-1
-@P.dim.DIM@-minôsimis:@P.dim.DIM@minôsimis NAD "my kitten" ; ! AEW: NDA-1
--mis:mis NAD "my older sister; my older female parallel cousin (i.e. daughter of mother's sister or daughter of father's brother)" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nimisê!
--mistikom:mistikom NID "my cane, my stick ;; [slang:] my penis" ; ! AEW: NDI-1
--miyêsâpiwinân:miyêsâpiwinân NID "my eyebrow" ; ! AEW: NDI-1 ! 1: - ! 2: commonly plural
-@P.dim.DIM@-miyêsâpiwinânis:@P.dim.DIM@miyêsâpiwinânis NID "my eyelash" ; ! AEW: NDI-1 ! 1: - ! 2: commonly plural
--mosôm:mosôm NAD "my grandfather; [reference extended to all related males of grandfather's generation]; my respected male elder" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nimosô! mósom!
--mosômipan:mosômipan NAD "my deceased grandfather, my late grandfather" ; ! AEW: NDA-1
--mwâhkohkêw:mwâhkohkêw NID "my arm muscle, my biceps" ; ! AEW: NDI-2 ! 1: - ! 2: possibly NI-2: mwâhkohkêw
--nahâhkaniskwêm:nahâhkaniskwêm NAD "my daughter-in-law" ; ! AEW: NDA-1 ! 1: - ! 2: used by female speaker only
--nahâhkim:nahâhkim NAD "my son-in-law" ; ! AEW: NDA-1
--nahâhkisîm:nahâhkisîm NAD "my son-in-law" ; ! AEW: NDA-1
--nâpêm:nâpêm NAD "my husband, my (male) lover" ; ! AEW: NDA-1
--nipîm:nipîm NID "my amniotic fluid ;; my urine ;; my water, my glass of water, my bottle of water" ; ! AEW: NDI-1
--nîkânîm:nîkânîm NID "my future" ; ! AEW: NDI-1
--nîkihik:nîkihikw NAD "my parent; my blood relative" ; ! AEW: NDA-3 ! 1: - ! 2: plural generally: -wak; cf. nîkihik
--nôtokwêm:nôtokwêm NAD "my old lady, my old woman, my wife" ; ! AEW: NDA-1
--pawâkan:pawâkan NAD "my dream spirit" ; ! AEW: NDA-1
--pê-wîci-ispîhcisîmâkan:pê-wîci-ispîhcisîmâkan NAD "my age-mate from there on down" ; ! AEW: NDA-1
--pêpîm:pêpîm NAD "my baby" ; ! AEW: NDA-1
--pêyakokosisân:pêyakokosisân NAD "my only son" ; ! AEW: NDA-1
--pîhtawâwikanân:pîhtawâwikanân NID "my spinal chord" ; ! AEW: NDI-1
--pwâm:pwâm NID "my thigh" ; ! AEW: NDI-1
--pwâmikan:pwâmikan NID "my femur" ; ! AEW: NDI-1
-@P.dim.DIM@-scikwânis:@P.dim.DIM@scikwânis NID "my head, my little head; my mind" ; ! AEW: NDI-1
--sêkipatwân:sêkipatwân NID "my braid" ; ! AEW: NDI-1
--sêkitikom:sêkitikom NID "my tangled hair, my knotted hair, my uncombed hair" ; ! AEW: NDI-1
-@P.dim.DIM@-sicis:@P.dim.DIM@sicis NID "my little foot" ; ! AEW: NDI-1
--sikos:sikos NAD "my aunt, my cross-aunt; my father's sister, my mother's brother's wife; my mother-in-law" ; ! AEW: NDA-1 ! 1: - ! 2: voc: nisikosê!
--sikwâkan:sikwâkan NID "the back of my knee" ; ! AEW: NDI-1
--sis:sis NAD "my uncle, my cross-uncle; my mother's brother, my father's sister's husband; my father-in-law" ; ! AEW: NDA-1 ! 1: - ! 2: voc: nisisê!
--sit:sit NID "my foot" ; ! AEW: NDI-1
--sîm:sîm NAD "my younger sibling (brother or sister)" ; ! AEW: NDA-1 ! 1: - ! 2: voc: nisîmê!
-@P.dim.DIM@-sîmis:@P.dim.DIM@sîmis NAD "my younger sibling (brother or sister)" ; ! AEW: NDA-1
--skan:skan NID "my bone" ; ! AEW: NDI-1 ! 1: - ! 2: diminutive: niskanis
--skâhtikw:skâhtikw NID "my forehead" ; ! AEW: NDI-3
--skâhtikwanikan:skâhtikwanikan NID "my frontal bone" ; ! AEW: NDI-1
--skât:skât NID "my leg" ; ! AEW: NDI-1
--skâtikan:skâtikan NID "my legbone" ; ! AEW: NDI-1
--skiwan:skiwan NID "my nose, my snout" ; ! AEW: NDI-1
--skiwanikan:skiwanikan NID "my nasal bone" ; ! AEW: NDI-1
--niskîsikw:niskîsikw NID "my eye" ; ! AEW: NDI-3
--skîsikohkân:skîsikohkân NID "my eyeglasses, my glasses, my spectacles" ; ! AEW: NDI-1
-@P.dim.DIM@-niskîsikos:@P.dim.DIM@niskîsikos NID "my little eye" ; ! AEW: NDI-1
--skîsikwâpitân:skîsikwâpitân NID "my eye-tooth" ; ! AEW: NDI-1
--skocâkâs:skocâkâs NID "my jacket; my short skirt, my mini-skirt" ; ! AEW: NDI-2
--skon:skon NID "my liver" ; ! AEW: NDI-1
--skotâkay:skotâkay NID "my coat, my jacket; my dress; my skirt" ; ! AEW: NDI-2
--soy:soy NID "my tail" ; ! AEW: NDI-2
--sôkan:sôkan NID "my tail-bone ;; my rear-end, my buttocks" ; ! AEW: NDI-1
-@P.dim.DIM@-sôs:@P.dim.DIM@sôs NID "my little tail" ; ! AEW: NDI-2
--spayow:spayow NAD "my ovaries" ; ! AEW: NDA-2
-@P.dim.DIM@-spiconis:@P.dim.DIM@spiconis NID "my little arm" ; ! AEW: NDI-1
--spikay:spikay NID "my side, my ribcage; my rib; [plural:] the sides of my torso" ; ! AEW: NDI-2
--spikêkan:spikêkan NID "my rib, my rib bone" ; ! AEW: NDI-1
--spiskwan:spiskwan NID "my back" ; ! AEW: NDI-1
--spiton:spiton NID "my arm" ; ! AEW: NDI-1
--stês:stês NAD "my older brother, my older male parallel cousin (i.e. son of mother's sister or father's brother)" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nistêsê!
--stikwân:stikwân NID "my head; my mind" ; ! AEW: NDI-1 ! 1: - ! 2: diminutive: niscikwânis, nistikwânis
--stikwânaskatihkway:stikwânaskatihkway NID "top of my skull, my parietal bone" ; ! AEW: NDI-2
--stikwânikan:stikwânikan NID "my skull" ; ! AEW: NDI-1
--stim:stim NAD "my niece, my cross-niece; my daughter-in-law; [male speaker:] my sister's daughter; [female speaker:] my brother's daughter" ; ! AEW: NDA-1
--stimihkâwin:stimihkâwin NAD "my common-law daughter-in-law" ; ! AEW: NDA-1
--takay:takay NID "my penis" ; ! AEW: NDI-2
--takikom:takikom NAD "my mucus, my snot" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + akikw- + {-im}
--takisiy:takisiy NID "my intestines, my bowels, my guts, my entrails" ; ! AEW: NDI-2
--tapiskohkêw:tapiskohkêw NID "back of my skull, my occipital bone" ; ! AEW: NDI-2
--asiskitân:tasiskitân NID "calf of my leg; my ligament" ; ! AEW: NDI-1 ! 1: - ! 2: historically: {nit-} + asiskitân-
--askihkom:taskihkom NAD "my pail, my kettle ;; [slang:] my vagina" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + askihkw- + {-im}
--awâsimis:tawâsimis NAD "my child; my fetus" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + awâsimis-
--tawêmâw:tawêmâw NAD "my cross-sibling, my sibling or parallel cousin of opposite gender ;; [male speaker:] my sister; my female parallel cousin (i.e. daughter of my mother's sister or daughter of my father's brother) ;; [female speaker:] my brother; my male parallel cousin (i.e. son of my mother's sister or son of my father's brother)" ; ! AEW: NDA-2 ! 1: - ! 2: vocative: nitawêmâ!
--ayân:tayân NID "my crotch, my pubic region" ; ! AEW: NDI-1 ! 1: - ! 2: historically: {nit-} + /-ayân/, cf. /-wayân/; in some areas, possibly restricted to use by male speakers only; cf. nitayân I have it, first person singular Independent inflected form of ayâ- VTI-2
--ayisiyinîm:tayisiyinîm NAD "my partner; my follower; [plural:] my people" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + aýisiýiniw- + {-im}
--tâkay:tâkay NAD "my vagina, my vulva" ; ! AEW: NDA-2
--tânis:tânis NAD "my daughter ;; [male speaker:] my brother's daughter ;; [female speaker:] my sister's daughter" ; ! AEW: NDA-1 ! 1: - ! 2: diminutive: nicânis; vocative: nitân!
--âniskocâpân:tâniskocâpân NAD "my great-great-grandchild; my great-great-grandparent" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + âniskocâpân-
-@P.dim.DIM@-âniskocâpânis:@P.dim.DIM@tâniskocâpânis NAD "my (very small) great great grandchild" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + âniskocâpânis-
--âniskotâpân:tâniskotâpân NAD "my great great grandparent; my great great grandchild" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + âniskotâpân-
--tâpân:tâpân NAD "my great grandparent; my great grandchild" ; ! AEW: NDA-1
--tâpiskan:tâpiskan NID "my jaw; my chin" ; ! AEW: NDI-1
--tâs:tâs NID "my legging, my gaiter" ; ! AEW: NDI-1
--tâs:tâs NAD "my pair of pants, trousers" ; ! AEW: NDA-1 ! 1: - ! 2: diminutive: nicâsis, nitâsis
--tâyim:tâyim NAD "my fellow wife" ; ! AEW: NDA-1
--têh:têh NID "my heart" ; ! AEW: NDI-1 ! 1: - ! 2: diminutive: nicêhis
--têm:têm NAD "my dog; my horse" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + ay- + {-im}
--têyaniy:têyaniy NID "my tongue" ; ! AEW: NDI-2
--têyaniyâpiy:têyaniyâpiy NID "my tongue string" ; ! AEW: NDI-2
--têyikom:têyikom NID "my nostril" ; ! AEW: NDI-1
--ihkom:tihkom NAD "my louse" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + ihkw- + {-im}
--tihkwatim:tihkwatim NAD "my nephew, my cross-nephew (i.e. son of sibling of opposite gender); my son-in-law ;; [male speaker:] my sister's son ;; [female speaker:] my brother's son" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nitihkwâ!
--tihtâwâw:tihtâwâw NAD "my co-parent-in-law" ; ! AEW: NDA-1
--tihtihkos:tihtihkos NAD "my kidney" ; ! AEW: NDA-1
--tihtihkosiw:tihtihkosiw NAD "my kidney" ; ! AEW: NDA-2
--tihtihkosiy:tihtihkosiy NAD "my kidney" ; ! AEW: NDA-2
--tihtikon:tihtikon NID "my armpit" ; ! AEW: NDI-1
--tihtiman:tihtiman NID "my shoulder" ; ! AEW: NDI-1
--tihtimanikan:tihtimanikan NID "my shoulder-bone" ; ! AEW: NDI-1
--tisiy:tisiy NID "my navel, my belly-button" ; ! AEW: NDI-2
--tisiyêyâpiy:tisiyêyâpiy NID "my umbilical cord" ; ! AEW: NDI-2
--iskwêm:tiskwêm NAD "my wife, my woman, my (female) lover" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + iskwêw- + {-im}
--tisoway:tisoway NAD "my testicles" ; ! AEW: NDA-2
--tiy:tiy NID "my buttocks" ; ! AEW: NDI-2
--iyinîm:tiyinîm NAD "my people, my followers" ; ! AEW: NDA-1
--tîhikan:tîhikan NID "my shoulder-blade" ; ! AEW: NDI-1
--tîhiy:tîhiy NAD "my shoulder-blade" ; ! AEW: NDA-2
--nitîhkôkan:nitîhkôkan NID "my armpit" ; ! AEW: NDI-1
--tohtôsim:tohtôsim NAD "my breast, my nipple" ; ! AEW: NDA-1
--tokan:tokan NID "my hip" ; ! AEW: NDI-1
--ostikwânim:tostikwânim NID "my severed head (used as lodge emblem)" ; ! AEW: NDI-1 ! 1: - ! 2: historically: {nit-} + ostikwân- + {-im}
--ôkimâm:tôkimâm NAD "my chief, my leader, my boss; my superior; my king" ; ! AEW: NDA-1
--ôkimâskwêm:tôkimâskwêm NAD "my leader, my boss, my boss-lady; my boss's wife; my chieftess; my superior; my queen" ; ! AEW: NDA-1
--tôn:tôn NID "my mouth" ; ! AEW: NDI-1
--ôsim:tôsim NID "my boat, my canoe" ; ! AEW: NDI-1 ! 1: - ! 2: historically: {nit-} + ôs- + {-im}; cf. ôsi, 3: otôsim his/her canoe; dialectal variant: -tôt-, cf. 1: nitôt my canoe, 3: otôt his/her canoe
--tôsim:tôsim NAD "my nephew, my parallel nephew ;; [male speaker:] my brother's son; husband of my sister's daughter ;; [female speaker:] my sister's son; husband of my brother's daughter" ; ! AEW: NDA-1
--tôsimiskwêm:tôsimiskwêm NAD "my niece, my parallel niece ;; [male speaker:] my brother's daughter, wife of my sister's son ;; [female speaker:] my sister's daughter, wife of my brother's son" ; ! AEW: NDA-1
--tôsis:tôsis NAD "my aunt, my parallel aunt, my mother's sister, my father's brother's wife" ; ! AEW: NDA-1
--ôsk-âyim:tôsk-âyim NAD "my young person, my child, my grandchild" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + oski-ay- + {-im}
--ôskinîkiskwêm:tôskinîkiskwêm NAD "my young woman; my hired girl" ; ! AEW: NDA-1
--ôskinîkîm:tôskinîkîm NAD "my young man; my hired man; my servant; my follower" ; ! AEW: NDA-1
-@P.dim.DIM@-ôskinîkîmis:@P.dim.DIM@tôskinîkîmis NAD "my young man, my hired man" ; ! AEW: NDA-1
--tôskwan:tôskwan NID "my elbow" ; ! AEW: NDI-1
--tôtêm:tôtêm NAD "my friend, my kinsman" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nitôtêm!; historically: {nit-} + /-ôtê-/ + /-im/ ??
--wâhkômâkan:wâhkômâkan NAD "my relative" ; ! AEW: NDA-1
-@P.dim.DIM@-wiyihkos:@P.dim.DIM@wiyihkos NAD "my glands" ; ! AEW: NDA-1
--wiyihk:wiyihkw NAD "my glands" ; ! AEW: NDA-3 ! 1: - ! 2: sg: niwiýihk; cf. 3: (o)wiýihkwa his/her gland(s)
--wîcêwâkan:wîcêwâkan NAD "my spouse; my companion, my partner, my buddy, my friend" ; ! AEW: NDA-1
-@P.dim.DIM@-wîcêwâkanis:@P.dim.DIM@wîcêwâkanis NAD "my companion" ; ! AEW: NDA-1
--wîkimâkan:wîkimâkan NAD "my spouse, my wife, my husband; my housemate" ; ! AEW: NDA-1
--wîtatoskêmâkan:wîtatoskêmâkan NAD "my fellow worker, my co-worker" ; ! AEW: NDA-1
--iyaw:iyaw NID "my body" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 3: wiyaw
--iyihkos:iyihkos NAD "my gland" ; ! AEW: NDA-1 ! 1: - ! 2: pl: niýihkosak; cf. 3: wiýihkosa his/her gland(s); also: oýihkosa
--iyihk:iyihkw NAD "my glands" ; ! AEW: NDA-3 ! 1: - ! 2: sg: niýihk; cf. 3: wiýihkwa his/her gland(s); also: oýihkwa
--îc-âyis:îc-âyis NAD "my fellow youngster, my young age-mate; my sibling; my parallel cousin" ; ! AEW: NDA-1
--îci-atoskêyâkan:îci-atoskêyâkan NAD "my fellow employee" ; ! AEW: NDA-1
-@P.dim.DIM@-îci-ayis:@P.dim.DIM@îci-ayis NAD "my fellow youngster; my sibling; my parallel cousin" ; ! AEW: NDA-1
--îci-ayisiyiniw:îci-ayisiyiniw NAD "my fellow human, my fellow person" ; ! AEW: NDA-2
--îci-ayisiyinîm:îci-ayisiyinîm NAD "my fellow human" ; ! AEW: NDA-1
--îci-kisêyiniw:îci-kisêyiniw NAD "my fellow old man, my co-elder" ; ! AEW: NDA-2
--îci-kiskinwahamawâkan:îci-kiskinwahamawâkan NAD "my fellow student, my school-mate" ; ! AEW: NDA-1
--îci-kîhkâw:îci-kîhkâw NAD "my aged spouse; my fellow old person; my fellow oldster; my companion of one's old age" ; ! AEW: NDA-2
--îci-nahâhkis:îci-nahâhkis NAD "my brother-in-law" ; ! AEW: NDA-1
--îci-nâpêw:îci-nâpêw NAD "my fellow man" ; ! AEW: NDA-2
--îci-nêhiyaw:îci-nêhiyaw NAD "my fellow Cree, my fellow Indian person; my blood brother" ; ! AEW: NDA-2
--îci-nônimâkan:îci-nônimâkan NAD "my foster sibling; literally: my fellow suckling" ; ! AEW: NDA-1
-@P.dim.DIM@-îcimos:@P.dim.DIM@îcimos NAD "my sweetheart, my lover" ; ! AEW: NDA-1 ! 1: - ! 2: familiar and more intimate form of nîtim
--îcisân:îcisân NAD "my sibling" ; ! AEW: NDA-1
-@P.dim.DIM@-îcisânis:@P.dim.DIM@îcisânis NAD "my small sibling, my young sibling, my dear sibling" ; ! AEW: NDA-1
--îk:îk NID_SG/I "my home, my dwelling, my house" ; ! AEW: NDI-4 ! 1: - ! 2: only occurs in the singular with singular possessives
-@P.dim.DIM@-îkis:@P.dim.DIM@îkis NID "my small home; my cabin" ; ! AEW: NDI-1
--în:în NID_SG/I "my bone-marrow" ; ! AEW: NDI-4
--îpicikan:îpicikan NID "my gums" ; ! AEW: NDI-1
--îpit:îpit NID "my tooth" ; ! AEW: NDI-1
--îpitihkân:îpitihkân NID "my false teeth, my dentures" ; ! AEW: NDI-1
-@P.dim.DIM@-îscâs:@P.dim.DIM@îscâs NAD "my male cross-cousin; my father's sister's son, my mother's brother's son; my brother-in-law [used by male speaker only]" ; ! AEW: NDA-1 ! 1: - ! 2: familiar form of nîstâw; vocative: nîscâs!
-@P.loc.NULL@-îskw:@P.loc.NULL@îskw NAD_SG/A "my husband's former wife, my husband's ex ;; [archaic:] my fellow wife, my co-wife" ; ! AEW: NDA-4w
--îstâw:îstâw NAD "my male cross-cousin; my father's sister's son, my mother's brother's son; my brother-in-law; [used by male speaker only]" ; ! AEW: NDA-2
--îtihp:îtihp NID "my brain" ; ! AEW: NDI-1
--îtim:îtimw NAD "my cross-cousin of the opposite gender ;; [male speaker:] daughter of my father's sister or daughter of my mother's brother; my sister-in-law (i.e. wife of male sibling or parellel cousin) ;; [female speaker:] son of my father's sister or son of my mother's brother; my brother-in-law (i.e. husband of female sibling or parellel cousin)" ; ! AEW: NDA-3
--îtisân:îtisân NAD "my sibling; my brother or sister" ; ! AEW: NDA-1 ! 1: - ! 2: probably derived from: /-ît-/ + /-(ô)sê-/ + /-n/
--îw:îw2 NAD_SG/A "my wife" ; ! AEW: NDA-4 ! 1: - ! 2: commonly third person form only: wîwa
--îwahikan:îwahikan NAD "my pounded meat" ; ! AEW: NDA-1
--îwas:îwat3 NID "my sacred pack, my sacred bundle" ; ! AEW: NDI-x ! 1: - ! 2: plural: nîwata; locative: nîwatihk
-@P.dim.DIM@-ohcâwîs:@P.dim.DIM@ohcâwîs NAD "my parallel uncle; my father's brother, my mother's sister's husband; my stepfather; my godfather; my dear father" ; ! AEW: NDA-1
--ohkom:ohkom NAD "my grandmother; [reference extended to all related females of grandmother's generation]; my respected female elder" ; ! AEW: NDA-1 ! 1: - ! 2: cf. 3: ohkoma his/her grandmother(s); vocative: nôhkô!, kókom!
--ohkomipan:ohkomipan NAD "my deceased grandmother, my late grandmother" ; ! AEW: NDA-1
--ohkomis:ohkomis NAD "my uncle, my parallel uncle; my father's brother, my mother's sister's husband" ; ! AEW: NDA-1 ! 1: - ! 2: probably historically derived from -ohkom- + /-is/
--ohpan:ohpan NAD "my lung" ; ! AEW: NDA-1 ! 1: - ! 2: cf. 3: ohpana his/her lungs; also NDI-1 in some dialects
--ohtâwiy:ohtâwiy NAD "my father ;; [Christian:] Heavenly Father" ; ! AEW: NDA-2 ! 1: - ! 2: cf. 3: ohtâwiya his/her father; vocative: nôhtâ!
--ohtâwîhkâwin:ohtâwîhkâwin NAD "my step-father; my godfather" ; ! AEW: NDA-1
--ohtâwîpan:ohtâwîpan NAD "my deceased father, my late father" ; ! AEW: NDA-1
--ôsisim:ôsisim NAD "my grandchild; [reference extended to any young person when used by an elder]" ; ! AEW: NDA-1 ! 1: - ! 2: diminutive: nôsisimis; vocative: nôsisê!
--ohpan:ohpan NID "lung; his/her lung" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 1: nôhpan; also nohpan; also NDA-1 in some dialects
--soy:soy NID "tail; its tail" ; ! AEW: NDI-2
-@P.dim.DIM@-sôs:@P.dim.DIM@sôs NID "tail; its little tail" ; ! AEW: NDI-1
--tahtahkwan:tahtahkwan NID "his/her wing" ; ! AEW: NDI-1
--itâmiyaw:titâmiyaw NID "his/her innards (e.g. of an animal)" ; ! AEW: NDI-2 ! 1: - ! 2: usually plural
--iyaw:iyaw NID "body; his/her body" ; ! AEW: NDI-1
--iyihkos:iyihkos NAD "his/her glands" ; ! AEW: NDA-1 ! 1: - ! 2: cf. 3: niýihkos my gland; also: niwiýihkos
--în:în NID_SG/I "bone-marrow; his/her bone-marrow" ; ! AEW: NDI-4
--îw:îw2 NAD_SG/A "his wife" ; ! AEW: NDA-4
+kikâwînaw:kâwiy NAD "Our Mother, The Earth" ; ! AEW: NDA-2
+kôhtâwînaw:ohtâwiy NAD "Our Father; Our Creator ;; [Christian:] Heavenly Father, Our Father; Our Lord" ; ! AEW: NDA-2 ! 1: - ! 2: vocative: nôhtâ!
+nacâs:acâs NID "my little stomach, my small belly" ; ! AEW: NDI-2
+nahkwan:ahkwan NID "my heel" ; ! AEW: NDI-1
+nahkwanêyâpiy:ahkwanêyâpiy NID "my achilles tendon, the tendon at back of my heel" ; ! AEW: NDI-2
+nahkwanikan:ahkwanikan NID "my heelbone" ; ! AEW: NDI-1
+naniway:aniway NID "my cheek" ; ! AEW: NDI-2
+nasakay:asakay NAD "my skin" ; ! AEW: NDA-2
+naskasiy:askasiy NAD "my fingernail; my claw" ; ! AEW: NDA-2
+naskatay:askatay NID "my stomach-covering; my abdominal-wall" ; ! AEW: NDI-2 ! 1: - ! 2: possibly restricted to non-human reference
+natay:atay NID "my belly, my abdomen; my stomach" ; ! AEW: NDI-2
+nayakask:ayakaskw NID "my palate" ; ! AEW: NDI-3
+nâskikan:âskikan NID "my chest, my breast" ; ! AEW: NDI-1 ! 1: - ! 2: diminutive: nâskikanis
+nâwikan:âwikan NID "my backbone, my spine; my back" ; ! AEW: NDI-1
+@P.dim.DIM@nêscakâsa:@P.dim.DIM@êscakâs NID "my hair, my short hair" ; ! AEW: NDI-1
+nêstakaya:êstakay NID "my hair" ; ! AEW: NDI-2
+@P.dim.DIM@nicawâsimis:@P.dim.DIM@tawâsimis NAD "my child; my fetus" ; ! AEW: NDA-1
+nicâhkos:câhkos NAD "my female cross-cousin; my sister-in-law; [used by a female speaker only]" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nicâhkosê!
+@P.dim.DIM@nicânis:@P.dim.DIM@cânis NAD "my daughter; my parallel niece" ; ! AEW: NDA-1
+nicâpân:câpân NAD "my great-grandparent; my great-grandchild" ; ! AEW: NDA-1
+@P.dim.DIM@nicâpânis:@P.dim.DIM@câpânis NAD "my (very small) great grandchild" ; ! AEW: NDA-1
+@P.dim.DIM@nicâsis:@P.dim.DIM@câsis NAD "my small pair of pants, my shorts; my underpants; my loin-cloth; my leggings" ; ! AEW: NDA-1
+@P.dim.DIM@nicêhis:@P.dim.DIM@cêhis NID "my little heart; [as endearment: NDA-1 my dear heart]" ; ! AEW: NDI-1
+@P.dim.DIM@nicêhis:@P.dim.DIM@cêhis NAD "my dear heart [term of endearment]" ; ! AEW: NDA-1
+nicêmisis:cêmisis NAD "my pup, my puppy; my little dog; my little horse" ; ! AEW: NDA-1
+nicêstatay:cêstatay NID "my muscle" ; ! AEW: NDI-2
+nicêstatayêyâpiy:cêstatayêyâpiy NID "my ligament, my tendon" ; ! AEW: NDI-2
+nicicâskay:cicâskay NID "my crotch, my pubic region" ; ! AEW: NDI-2 ! 1: - ! 2: in some areas, possibly restricted to use by female speakers only
+@P.dim.DIM@nicicâskâs:@P.dim.DIM@cicâskâs NID "my crotch, my pubic region" ; ! AEW: NDI-1 ! 1: - ! 2: in some areas, possibly restricted to use by female speakers only
+nicihciy:cihciy NID "my hand; my paw" ; ! AEW: NDI-2
+@P.dim.DIM@nicihcîs:@P.dim.DIM@cihcîs NID "my finger; my little hand" ; ! AEW: NDI-1
+nicisk:cisk NID "my anus" ; ! AEW: NDI-1
+niciskakisiy:ciskakisiy NID "my rectum (lower end)" ; ! AEW: NDI-2
+niciskêyâpiy:ciskêyâpiy NID "my rectum (full length)" ; ! AEW: NDI-2
+niciwâm:ciwâm NAD "my male parallel cousin; husband of my female cross-cousin; [used by male speaker only] ;; my brother; my friend; my fellow age-mate male ;; [plural:] brethren (in Christian sense) ;; my rival" ; ! AEW: NDA-1 ! 1: - ! 2: used by a male speaker only; diminutive: niciwâmis; vocative: niciwâ!
+@P.dim.DIM@niciwâmis:@P.dim.DIM@ciwâmis NAD "my male parallel cousin; husband of my female cross-cousin; [used by male speaker only] ;; my brother; my friend; my fellow age-mate male ;; [plural:] brethren (in Christian sense)" ; ! AEW: NDA-1 ! 1: - ! 2: used by a male speaker only
+niciwâmiskwêm:ciwâmiskwêm NAD "my female parallel cousin; wife of my male cross-cousin; my father's brother's daughter, my mother's sister's daughter ;; my fellow tribeswoman ;; my sister-in-law" ; ! AEW: NDA-2 ! 1: - ! 2: used by a female speaker only
+nicîhcâwâw:cîhcâwâw NAD "my co-parent-in-law" ; ! AEW: NDA-2
+nicîhcîkom:cîhcîkom NAD "my wart" ; ! AEW: NDA-1
+@P.dim.DIM@nicohcôsimis:@P.dim.DIM@cohcôsimis NAD "my nipple" ; ! AEW: NDA-1
+nicôcêmisis:côcêmisis NAD "my young friend [said to a child]" ; ! AEW: NDA-1
+@P.dim.DIM@nicônis:@P.dim.DIM@cônis NID "my little mouth; [plural:] my lips" ; ! AEW: NDI-1
+@P.dim.DIM@nicôskwanis:@P.dim.DIM@côskwanis NID "my little elbow" ; ! AEW: NDI-1
+@P.dim.DIM@nihcawakâs:@P.dim.DIM@htawakay NID "my little ear" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 3: ohcawakâs; also nîhcawakâs; cf. 3: wîhcawakâs
+nihcikwan:hcikwan NID "my knee" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 3: ohcikwan his/her knee; also nîhcikwan; cf. 3: wîhcikwan
+nihcikwanikan:hcikwanikan NID "my kneebone" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 3: ohcikwanikan his/her kneebone; also nîhcikwânikan; cf. 3: wîhcikwanikan
+nihkwâkan:hkwâkan NID "my face" ; ! AEW: NDI-1 ! 1: - ! 2: diminutive: nihkwâkanis; cf. 3: ohkwâkan; also nîhkwâkan; cf. 3: wîhkwâkan
+@P.dim.DIM@nihkwâkanis:@P.dim.DIM@hkwâkanis NID "my little face" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 3: ohkwâkanis; also nîhkwâkanis; cf. 3: wîhkwâkanis
+nihtawakay:htawakay NID "my ear" ; ! AEW: NDI-2 ! 1: - ! 2: diminutive: nihcawakâs; cf. 3: ohtawakay; also nîhtawakay; cf. 3: wîhtawakay
+nikayâsim:kayâsim NAD "my old flame, my former sweatheart" ; ! AEW: NDA-1
+nikâwiy:kâwiy NAD "my mother; my mother's sister" ; ! AEW: NDA-2 ! 1: - ! 2: vocative: nêkâ!, nikâ!
+@P.dim.DIM@nikâwîs:@P.dim.DIM@kâwîs NAD "my parallel aunt; my mother's sister, my father's brother's wife; my stepmother; my godmother; my dear mother" ; ! AEW: NDA-1
+nikêhtê-ayim:kêhtê-ayim NAD "my elder; my parent, my grandparent" ; ! AEW: NDA-1
+nikihci-âniskotâpân:kihci-âniskotâpân NAD "my great great great grandparent; my great great great grandchild; my ancestor" ; ! AEW: NDA-1
+nikisêyinîm:kisêyinîm NAD "my old man, my husband" ; ! AEW: NDA-1
+nikitik:kitikw NID "my kneecap; my knee" ; ! AEW: NDI-3
+nikocâk:kocâk NAD "my wife's former partner, my wife's ex; [archaic:] my fellow husband" ; ! AEW: NDA-1 ! 1: - ! 2: used by male speaker only
+nikocâsiskwêm:kocâsiskwêm NAD "my husband's former partner, my husband's ex; [archaic:] my fellow wife" ; ! AEW: NDA-1 ! 1: - ! 2: used by female speaker only
+@P.dim.DIM@nikohcaskwayêyâpîsa:@P.dim.DIM@kohcaskwayêyâpîs NID "my bronchial tubes" ; ! AEW: NDI-1
+nikohtaskway:kohtaskway NID "my throat" ; ! AEW: NDI-2
+nikohtaskwayêyâpiy:kohtaskwayêyâpiy NID "my windpipe" ; ! AEW: NDI-2
+nikohtâkan:kohtâkan NID "my throat" ; ! AEW: NDI-1
+nikosim:kosim NAD "my nephew; [male speaker:] my brother's son; husband of my sister's daughter; [female speaker:] my sister's son, husband of my brother's daughter" ; ! AEW: NDA-1
+nikosis:kosis NAD "my son; my parallel nephew; [male speaker:] my brother's son; [female speaker:] my sister's son" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nikosê! nikosis!
+nikot:kot NID "my nose" ; ! AEW: NDI-1
+nikwayaw:kwayaw NID "my neck" ; ! AEW: NDI-2
+nikwayawikan:kwayawikan NID "my neck-bone" ; ! AEW: NDI-1
+nikwâskonêw:kwâskonêw NID "my chin" ; ! AEW: NDI-2
+nikwâskonêwikan:kwâskonêwikan NID "my chin" ; ! AEW: NDI-1
+nikwêmês:kwêmês NAD "my namesake, my friend" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nikwêmê!
+nimanâcimâkan NAD "the person with whom I avoid speaking; my in-law of opposite gender; [female speaker:] my father-in-law; [male speaker:] my mother-in-law" ; ! AEW: NDA-1
+nimanitôm:manitôm NAD "my god; my Lord" ; ! AEW: NDA-1
+@P.dim.DIM@niminôsimis:@P.dim.DIM@minôsimis NAD "my kitten" ; ! AEW: NDA-1
+nimis:mis NAD "my older sister; my older female parallel cousin (i.e. daughter of mother's sister or daughter of father's brother)" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nimisê!
+nimistikom:mistikom NID "my cane, my stick ;; [slang:] my penis" ; ! AEW: NDI-1
+nimiyêsâpiwinân:miyêsâpiwinân NID "my eyebrow" ; ! AEW: NDI-1 ! 1: - ! 2: commonly plural
+@P.dim.DIM@nimiyêsâpiwinânis:@P.dim.DIM@miyêsâpiwinânis NID "my eyelash" ; ! AEW: NDI-1 ! 1: - ! 2: commonly plural
+nimosôm:mosôm NAD "my grandfather; [reference extended to all related males of grandfather's generation]; my respected male elder" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nimosô! mósom!
+nimosômipan:mosômipan NAD "my deceased grandfather, my late grandfather" ; ! AEW: NDA-1
+nimwâhkohkêw:mwâhkohkêw NID "my arm muscle, my biceps" ; ! AEW: NDI-2 ! 1: - ! 2: possibly NI-2: mwâhkohkêw
+ninahâhkaniskwêm:nahâhkaniskwêm NAD "my daughter-in-law" ; ! AEW: NDA-1 ! 1: - ! 2: used by female speaker only
+ninahâhkim:nahâhkim NAD "my son-in-law" ; ! AEW: NDA-1
+ninahâhkisîm:nahâhkisîm NAD "my son-in-law" ; ! AEW: NDA-1
+ninâpêm:nâpêm NAD "my husband, my (male) lover" ; ! AEW: NDA-1
+ninipîm:nipîm NID "my amniotic fluid ;; my urine ;; my water, my glass of water, my bottle of water" ; ! AEW: NDI-1
+ninîkânîm:nîkânîm NID "my future" ; ! AEW: NDI-1
+ninîkihik:nîkihikw NAD "my parent; my blood relative" ; ! AEW: NDA-3 ! 1: - ! 2: plural generally: -wak; cf. nîkihik
+ninôtokwêm:nôtokwêm NAD "my old lady, my old woman, my wife" ; ! AEW: NDA-1
+nipawâkan:pawâkan NAD "my dream spirit" ; ! AEW: NDA-1
+nipê-wîci-ispîhcisîmâkan:pê-wîci-ispîhcisîmâkan NAD "my age-mate from there on down" ; ! AEW: NDA-1
+nipêpîm:pêpîm NAD "my baby" ; ! AEW: NDA-1
+nipêyakokosisân:pêyakokosisân NAD "my only son" ; ! AEW: NDA-1
+nipîhtawâwikanân:pîhtawâwikanân NID "my spinal chord" ; ! AEW: NDI-1
+nipwâm:pwâm NID "my thigh" ; ! AEW: NDI-1
+nipwâmikan:pwâmikan NID "my femur" ; ! AEW: NDI-1
+@P.dim.DIM@niscikwânis:@P.dim.DIM@scikwânis NID "my head, my little head; my mind" ; ! AEW: NDI-1
+nisêkipatwân:sêkipatwân NID "my braid" ; ! AEW: NDI-1
+nisêkitikom:sêkitikom NID "my tangled hair, my knotted hair, my uncombed hair" ; ! AEW: NDI-1
+@P.dim.DIM@nisicis:@P.dim.DIM@sicis NID "my little foot" ; ! AEW: NDI-1
+nisikos:sikos NAD "my aunt, my cross-aunt; my father's sister, my mother's brother's wife; my mother-in-law" ; ! AEW: NDA-1 ! 1: - ! 2: voc: nisikosê!
+nisikwâkan:sikwâkan NID "the back of my knee" ; ! AEW: NDI-1
+nisis:sis NAD "my uncle, my cross-uncle; my mother's brother, my father's sister's husband; my father-in-law" ; ! AEW: NDA-1 ! 1: - ! 2: voc: nisisê!
+nisit:sit NID "my foot" ; ! AEW: NDI-1
+nisîm:sîm NAD "my younger sibling (brother or sister)" ; ! AEW: NDA-1 ! 1: - ! 2: voc: nisîmê!
+@P.dim.DIM@nisîmis:@P.dim.DIM@sîmis NAD "my younger sibling (brother or sister)" ; ! AEW: NDA-1
+niskan:skan NID "my bone" ; ! AEW: NDI-1 ! 1: - ! 2: diminutive: niskanis
+niskâhtik:skâhtikw NID "my forehead" ; ! AEW: NDI-3
+niskâhtikwanikan:skâhtikwanikan NID "my frontal bone" ; ! AEW: NDI-1
+niskât:skât NID "my leg" ; ! AEW: NDI-1
+niskâtikan:skâtikan NID "my legbone" ; ! AEW: NDI-1
+niskiwan:skiwan NID "my nose, my snout" ; ! AEW: NDI-1
+niskiwanikan:skiwanikan NID "my nasal bone" ; ! AEW: NDI-1
+niskîsik:niskîsikw NID "my eye" ; ! AEW: NDI-3
+niskîsikohkâna:skîsikohkân NID "my eyeglasses, my glasses, my spectacles" ; ! AEW: NDI-1
+@P.dim.DIM@niskîsikos NID "my little eye" ; ! AEW: NDI-1
+niskîsikwâpitân:skîsikwâpitân NID "my eye-tooth" ; ! AEW: NDI-1
+niskocâkâs:skocâkâs NID "my jacket; my short skirt, my mini-skirt" ; ! AEW: NDI-2
+niskon:skon NID "my liver" ; ! AEW: NDI-1
+niskotâkay:skotâkay NID "my coat, my jacket; my dress; my skirt" ; ! AEW: NDI-2
+nisoy:soy NID "my tail" ; ! AEW: NDI-2
+nisôkan:sôkan NID "my tail-bone ;; my rear-end, my buttocks" ; ! AEW: NDI-1
+@P.dim.DIM@nisôs:@P.dim.DIM@sôs NID "my little tail" ; ! AEW: NDI-2
+nispayowak:spayow NAD "my ovaries" ; ! AEW: NDA-2
+@P.dim.DIM@nispiconis:@P.dim.DIM@spiconis NID "my little arm" ; ! AEW: NDI-1
+nispikay:spikay NID "my side, my ribcage; my rib; [plural:] the sides of my torso" ; ! AEW: NDI-2
+nispikêkan:spikêkan NID "my rib, my rib bone" ; ! AEW: NDI-1
+nispiskwan:spiskwan NID "my back" ; ! AEW: NDI-1
+nispiton:spiton NID "my arm" ; ! AEW: NDI-1
+nistês:stês NAD "my older brother, my older male parallel cousin (i.e. son of mother's sister or father's brother)" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nistêsê!
+nistikwân:stikwân NID "my head; my mind" ; ! AEW: NDI-1 ! 1: - ! 2: diminutive: niscikwânis, nistikwânis
+nistikwânaskatihkway:stikwânaskatihkway NID "top of my skull, my parietal bone" ; ! AEW: NDI-2
+nistikwânikan:stikwânikan NID "my skull" ; ! AEW: NDI-1
+nistim:stim NAD "my niece, my cross-niece; my daughter-in-law; [male speaker:] my sister's daughter; [female speaker:] my brother's daughter" ; ! AEW: NDA-1
+nistimihkâwin:stimihkâwin NAD "my common-law daughter-in-law" ; ! AEW: NDA-1
+nitakay:takay NID "my penis" ; ! AEW: NDI-2
+nitakikom:takikom NAD "my mucus, my snot" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + akikw- + {-im}
+nitakisiya:takisiy NID "my intestines, my bowels, my guts, my entrails" ; ! AEW: NDI-2
+nitapiskohkêw:tapiskohkêw NID "back of my skull, my occipital bone" ; ! AEW: NDI-2
+nitasiskitân:tasiskitân NID "calf of my leg; my ligament" ; ! AEW: NDI-1 ! 1: - ! 2: historically: {nit-} + asiskitân-
+nitaskihkom:taskihkom NAD "my pail, my kettle ;; [slang:] my vagina" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + askihkw- + {-im}
+nitawâsimis:tawâsimis NAD "my child; my fetus" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + awâsimis-
+nitawêmâw:tawêmâw NAD "my cross-sibling, my sibling or parallel cousin of opposite gender ;; [male speaker:] my sister; my female parallel cousin (i.e. daughter of my mother's sister or daughter of my father's brother) ;; [female speaker:] my brother; my male parallel cousin (i.e. son of my mother's sister or son of my father's brother)" ; ! AEW: NDA-2 ! 1: - ! 2: vocative: nitawêmâ!
+nitayân:tayân NID "my crotch, my pubic region" ; ! AEW: NDI-1 ! 1: - ! 2: historically: {nit-} + /-ayân/, cf. /-wayân/; in some areas, possibly restricted to use by male speakers only; cf. nitayân I have it, first person singular Independent inflected form of ayâ- VTI-2
+nitayisiyinîm:tayisiyinîm NAD "my partner; my follower; [plural:] my people" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + aýisiýiniw- + {-im}
+nitâkay:tâkay NAD "my vagina, my vulva" ; ! AEW: NDA-2
+nitânis:tânis NAD "my daughter ;; [male speaker:] my brother's daughter ;; [female speaker:] my sister's daughter" ; ! AEW: NDA-1 ! 1: - ! 2: diminutive: nicânis; vocative: nitân!
+nitâniskocâpân:tâniskocâpân NAD "my great-great-grandchild; my great-great-grandparent" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + âniskocâpân-
+@P.dim.DIM@nitâniskocâpânis:@P.dim.DIM@tâniskocâpânis NAD "my (very small) great great grandchild" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + âniskocâpânis-
+nitâniskotâpân:tâniskotâpân NAD "my great great grandparent; my great great grandchild" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + âniskotâpân-
+nitâpân:tâpân NAD "my great grandparent; my great grandchild" ; ! AEW: NDA-1
+nitâpiskan:tâpiskan NID "my jaw; my chin" ; ! AEW: NDI-1
+nitâs:tâs NID "my legging, my gaiter" ; ! AEW: NDI-1
+nitâs:tâs NAD "my pair of pants, trousers" ; ! AEW: NDA-1 ! 1: - ! 2: diminutive: nicâsis, nitâsis
+nitâyim:tâyim NAD "my fellow wife" ; ! AEW: NDA-1
+nitêh:têh NID "my heart" ; ! AEW: NDI-1 ! 1: - ! 2: diminutive: nicêhis
+nitêm:têm NAD "my dog; my horse" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + ay- + {-im}
+nitêyaniy:têyaniy NID "my tongue" ; ! AEW: NDI-2
+nitêyaniyâpiy:têyaniyâpiy NID "my tongue string" ; ! AEW: NDI-2
+nitêyikom:têyikom NID "my nostril" ; ! AEW: NDI-1
+nitihkom:tihkom NAD "my louse" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + ihkw- + {-im}
+nitihkwatim:tihkwatim NAD "my nephew, my cross-nephew (i.e. son of sibling of opposite gender); my son-in-law ;; [male speaker:] my sister's son ;; [female speaker:] my brother's son" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nitihkwâ!
+nitihtâwâw:tihtâwâw NAD "my co-parent-in-law" ; ! AEW: NDA-1
+nitihtihkos:tihtihkos NAD "my kidney" ; ! AEW: NDA-1
+nitihtihkosiw:tihtihkosiw NAD "my kidney" ; ! AEW: NDA-2
+nitihtihkosiy:tihtihkosiy NAD "my kidney" ; ! AEW: NDA-2
+nitihtikon:tihtikon NID "my armpit" ; ! AEW: NDI-1
+nitihtiman:tihtiman NID "my shoulder" ; ! AEW: NDI-1
+nitihtimanikan:tihtimanikan NID "my shoulder-bone" ; ! AEW: NDI-1
+nitisiy:tisiy NID "my navel, my belly-button" ; ! AEW: NDI-2
+nitisiyêyâpiy:tisiyêyâpiy NID "my umbilical cord" ; ! AEW: NDI-2
+nitiskwêm:tiskwêm NAD "my wife, my woman, my (female) lover" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + iskwêw- + {-im}
+nitisowayak:tisoway NAD "my testicles" ; ! AEW: NDA-2
+nitiy:tiy NID "my buttocks" ; ! AEW: NDI-2
+nitiyinîmak:tiyinîm NAD "my people, my followers" ; ! AEW: NDA-1
+nitîhikan:tîhikan NID "my shoulder-blade" ; ! AEW: NDI-1
+nitîhiy:tîhiy NAD "my shoulder-blade" ; ! AEW: NDA-2
+nitîhkôkan NID "my armpit" ; ! AEW: NDI-1
+nitohtôsim:tohtôsim NAD "my breast, my nipple" ; ! AEW: NDA-1
+nitokan:tokan NID "my hip" ; ! AEW: NDI-1
+nitostikwânim:tostikwânim NID "my severed head (used as lodge emblem)" ; ! AEW: NDI-1 ! 1: - ! 2: historically: {nit-} + ostikwân- + {-im}
+nitôkimâm:tôkimâm NAD "my chief, my leader, my boss; my superior; my king" ; ! AEW: NDA-1
+nitôkimâskwêm:tôkimâskwêm NAD "my leader, my boss, my boss-lady; my boss's wife; my chieftess; my superior; my queen" ; ! AEW: NDA-1
+nitôn:tôn NID "my mouth" ; ! AEW: NDI-1
+nitôsim:tôsim NID "my boat, my canoe" ; ! AEW: NDI-1 ! 1: - ! 2: historically: {nit-} + ôs- + {-im}; cf. ôsi, 3: otôsim his/her canoe; dialectal variant: -tôt-, cf. 1: nitôt my canoe, 3: otôt his/her canoe
+nitôsim:tôsim NAD "my nephew, my parallel nephew ;; [male speaker:] my brother's son; husband of my sister's daughter ;; [female speaker:] my sister's son; husband of my brother's daughter" ; ! AEW: NDA-1
+nitôsimiskwêm:tôsimiskwêm NAD "my niece, my parallel niece ;; [male speaker:] my brother's daughter, wife of my sister's son ;; [female speaker:] my sister's daughter, wife of my brother's son" ; ! AEW: NDA-1
+nitôsis:tôsis NAD "my aunt, my parallel aunt, my mother's sister, my father's brother's wife" ; ! AEW: NDA-1
+nitôsk-âyim:tôsk-âyim NAD "my young person, my child, my grandchild" ; ! AEW: NDA-1 ! 1: - ! 2: historically: {nit-} + oski-ay- + {-im}
+nitôskinîkiskwêm:tôskinîkiskwêm NAD "my young woman; my hired girl" ; ! AEW: NDA-1
+nitôskinîkîm:tôskinîkîm NAD "my young man; my hired man; my servant; my follower" ; ! AEW: NDA-1
+@P.dim.DIM@nitôskinîkîmis:@P.dim.DIM@tôskinîkîmis NAD "my young man, my hired man" ; ! AEW: NDA-1
+nitôskwan:tôskwan NID "my elbow" ; ! AEW: NDI-1
+nitôtêm:tôtêm NAD "my friend, my kinsman" ; ! AEW: NDA-1 ! 1: - ! 2: vocative: nitôtêm!; historically: {nit-} + /-ôtê-/ + /-im/ ??
+niwâhkômâkan:wâhkômâkan NAD "my relative" ; ! AEW: NDA-1
+@P.dim.DIM@niwiyihkosak:@P.dim.DIM@wiyihkos NAD "my glands" ; ! AEW: NDA-1
+niwiyihkwak:wiyihkw NAD "my glands" ; ! AEW: NDA-3 ! 1: - ! 2: sg: niwiýihk; cf. 3: (o)wiýihkwa his/her gland(s)
+niwîcêwâkan:wîcêwâkan NAD "my spouse; my companion, my partner, my buddy, my friend" ; ! AEW: NDA-1
+@P.dim.DIM@niwîcêwâkanis:@P.dim.DIM@wîcêwâkanis NAD "my companion" ; ! AEW: NDA-1
+niwîkimâkan:wîkimâkan NAD "my spouse, my wife, my husband; my housemate" ; ! AEW: NDA-1
+niwîtatoskêmâkan:wîtatoskêmâkan NAD "my fellow worker, my co-worker" ; ! AEW: NDA-1
+niyaw:iyaw NID "my body" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 3: wiyaw
+niyihkos:iyihkos NAD "my gland" ; ! AEW: NDA-1 ! 1: - ! 2: pl: niýihkosak; cf. 3: wiýihkosa his/her gland(s); also: oýihkosa
+niyihkwak:iyihkw NAD "my glands" ; ! AEW: NDA-3 ! 1: - ! 2: sg: niýihk; cf. 3: wiýihkwa his/her gland(s); also: oýihkwa
+nîc-âyis:îc-âyis NAD "my fellow youngster, my young age-mate; my sibling; my parallel cousin" ; ! AEW: NDA-1
+nîci-atoskêyâkan:îci-atoskêyâkan NAD "my fellow employee" ; ! AEW: NDA-1
+@P.dim.DIM@nîci-ayis:@P.dim.DIM@îci-ayis NAD "my fellow youngster; my sibling; my parallel cousin" ; ! AEW: NDA-1
+nîci-ayisiyiniw:îci-ayisiyiniw NAD "my fellow human, my fellow person" ; ! AEW: NDA-2
+nîci-ayisiyinîm:îci-ayisiyinîm NAD "my fellow human" ; ! AEW: NDA-1
+nîci-kisêyiniw:îci-kisêyiniw NAD "my fellow old man, my co-elder" ; ! AEW: NDA-2
+nîci-kiskinwahamawâkan:îci-kiskinwahamawâkan NAD "my fellow student, my school-mate" ; ! AEW: NDA-1
+nîci-kîhkâw-:îci-kîhkâw NAD "my aged spouse; my fellow old person; my fellow oldster; my companion of one's old age" ; ! AEW: NDA-2
+nîci-nahâhkis:îci-nahâhkis NAD "my brother-in-law" ; ! AEW: NDA-1
+nîci-nâpêw:îci-nâpêw NAD "my fellow man" ; ! AEW: NDA-2
+nîci-nêhiyaw:îci-nêhiyaw NAD "my fellow Cree, my fellow Indian person; my blood brother" ; ! AEW: NDA-2
+nîci-nônimâkan:îci-nônimâkan NAD "my foster sibling; literally: my fellow suckling" ; ! AEW: NDA-1
+@P.dim.DIM@nîcimos:@P.dim.DIM@îcimos NAD "my sweetheart, my lover" ; ! AEW: NDA-1 ! 1: - ! 2: familiar and more intimate form of nîtim
+nîcisân:îcisân NAD "my sibling" ; ! AEW: NDA-1
+@P.dim.DIM@nîcisânis:@P.dim.DIM@îcisânis NAD "my small sibling, my young sibling, my dear sibling" ; ! AEW: NDA-1
+nîki:îk NID_SG/I "my home, my dwelling, my house" ; ! AEW: NDI-4 ! 1: - ! 2: only occurs in the singular with singular possessives
+@P.dim.DIM@nîkis:@P.dim.DIM@îkis NID "my small home; my cabin" ; ! AEW: NDI-1
+nîni:în NID_SG/I "my bone-marrow" ; ! AEW: NDI-4
+nîpicikan:îpicikan NID "my gums" ; ! AEW: NDI-1
+nîpit:îpit NID "my tooth" ; ! AEW: NDI-1
+nîpitihkâna:îpitihkân NID "my false teeth, my dentures" ; ! AEW: NDI-1
+@P.dim.DIM@nîscâs:@P.dim.DIM@îscâs NAD "my male cross-cousin; my father's sister's son, my mother's brother's son; my brother-in-law [used by male speaker only]" ; ! AEW: NDA-1 ! 1: - ! 2: familiar form of nîstâw; vocative: nîscâs!
+nîskwa:îskw NAD_SG/A "my husband's former wife, my husband's ex ;; [archaic:] my fellow wife, my co-wife" ; ! AEW: NDA-4w
+nîstâw:îstâw NAD "my male cross-cousin; my father's sister's son, my mother's brother's son; my brother-in-law; [used by male speaker only]" ; ! AEW: NDA-2
+nîtihp:îtihp NID "my brain" ; ! AEW: NDI-1
+nîtim:îtimw NAD "my cross-cousin of the opposite gender ;; [male speaker:] daughter of my father's sister or daughter of my mother's brother; my sister-in-law (i.e. wife of male sibling or parellel cousin) ;; [female speaker:] son of my father's sister or son of my mother's brother; my brother-in-law (i.e. husband of female sibling or parellel cousin)" ; ! AEW: NDA-3
+nîtisân:îtisân NAD "my sibling; my brother or sister" ; ! AEW: NDA-1 ! 1: - ! 2: probably derived from: /-ît-/ + /-(ô)sê-/ + /-n/
+nîwa:îw2 NAD_SG/A "my wife" ; ! AEW: NDA-4 ! 1: - ! 2: commonly third person form only: wîwa
+nîwahikan:îwahikan NAD "my pounded meat" ; ! AEW: NDA-1
+nîwas:îwat3 NID "my sacred pack, my sacred bundle" ; ! AEW: NDI-x ! 1: - ! 2: plural: nîwata; locative: nîwatihk
+@P.dim.DIM@nôhcâwîs:@P.dim.DIM@ohcâwîs NAD "my parallel uncle; my father's brother, my mother's sister's husband; my stepfather; my godfather; my dear father" ; ! AEW: NDA-1
+nôhkom:ohkom NAD "my grandmother; [reference extended to all related females of grandmother's generation]; my respected female elder" ; ! AEW: NDA-1 ! 1: - ! 2: cf. 3: ohkoma his/her grandmother(s); vocative: nôhkô!, kókom!
+nôhkomipan:ohkomipan NAD "my deceased grandmother, my late grandmother" ; ! AEW: NDA-1
+nôhkomis:ohkomis NAD "my uncle, my parallel uncle; my father's brother, my mother's sister's husband" ; ! AEW: NDA-1 ! 1: - ! 2: probably historically derived from -ohkom- + /-is/
+nôhpan:ohpan NAD "my lung" ; ! AEW: NDA-1 ! 1: - ! 2: cf. 3: ohpana his/her lungs; also NDI-1 in some dialects
+nôhtâwiy:ohtâwiy NAD "my father ;; [Christian:] Heavenly Father" ; ! AEW: NDA-2 ! 1: - ! 2: cf. 3: ohtâwiya his/her father; vocative: nôhtâ!
+nôhtâwîhkâwin:ohtâwîhkâwin NAD "my step-father; my godfather" ; ! AEW: NDA-1
+nôhtâwîpan:ohtâwîpan NAD "my deceased father, my late father" ; ! AEW: NDA-1
+nôsisim:ôsisim NAD "my grandchild; [reference extended to any young person when used by an elder]" ; ! AEW: NDA-1 ! 1: - ! 2: diminutive: nôsisimis; vocative: nôsisê!
+ohpan NID "lung; his/her lung" ; ! AEW: NDI-1 ! 1: - ! 2: cf. 1: nôhpan; also nohpan; also NDA-1 in some dialects
+osoy:soy NID "tail; its tail" ; ! AEW: NDI-2
+@P.dim.DIM@osôs:@P.dim.DIM@sôs NID "tail; its little tail" ; ! AEW: NDI-1
+otahtahkwan:tahtahkwan NID "his/her wing" ; ! AEW: NDI-1
+otitâmiyawa:titâmiyaw NID "his/her innards (e.g. of an animal)" ; ! AEW: NDI-2 ! 1: - ! 2: usually plural
+wiyaw:iyaw NID "body; his/her body" ; ! AEW: NDI-1
+wiyihkosa:iyihkos NAD "his/her glands" ; ! AEW: NDA-1 ! 1: - ! 2: cf. 3: niýihkos my gland; also: niwiýihkos
+wîni:în NID_SG/I "bone-marrow; his/her bone-marrow" ; ! AEW: NDI-4
+wîwa:îw2 NAD_SG/A "his wife" ; ! AEW: NDA-4
 
 
 LEXICON NOUN_DEP_NONKINSHIP_STEMS
