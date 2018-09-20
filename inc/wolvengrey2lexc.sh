@@ -109,9 +109,10 @@ tr -d '"' |
 
 gawk -v CLASS=$1 'BEGIN { FS="\t"; class=CLASS; print "LEXICON STEMLIST"; print ""; }
 NR>1 { lex=$1; pos=$3; gloss=$4; note1=$10; note2=$11; stem=$16; clex="";
-gsub("ý","y",lex); gsub("[ ]*$","",lex); gsub("[!?]","",lex);
-gsub("^[ ]*","",stem); gsub("[ ]*$","",stem); gsub("[-]$","",stem); gsub("ý","y",stem);
-gsub("[ ]*","",pos); gsub("^[ ]*","",gloss);
+gsub("[ ]*$","",lex); gsub("[!?]","",lex); # gsub("ý","y",lex);
+gsub("^[ ]*","",stem); gsub("[ ]*$","",stem); gsub("[-]$","",stem); # gsub("ý","y",stem);
+gsub("[ ]*","",pos);
+gsub("^[ ]*","",gloss);
 gsub("^[ ]*","",note1); gsub("^[ ]*","",note2);
 
 if(class=="N")
@@ -140,14 +141,37 @@ if(class=="N")
       printf "\n";
 }
 
+# VII
+# wâpiskâw:wâpiskâ VII-1 ;
+# ayâw:ayâ VII-1 ;
+# mispon:mispon3 VII-2 ;
+# VAI
+# acimow:acimo VAI-1 ;
+# nipâw:nipâ VAI-1 ;
+# itwêw:itwê VAI-1 ;
+# VTI
+# wâpahtam:wâpaht4 VTI-1 ;
+# itam:it VTI-1 ;
+# VTA
+# mowêw:mow2 VTA-1 ;
+# acimêw:acim VTA-1 ;
+# itêw:it3 VTA-2 ;
+
+#  626 VII-n
+#  826 VII-v
+#  191 VAI-n
+# 4475 VAI-v
+# 1467 VTI-1
+#  360 VTI-2
+#    6 VTI-3
+# 1176 VTA-1
+#  570 VTA-2
+#  340 VTA-3
+#  324 VTA-4
+#    4 VTA-5
+
 if(class=="V")
 {
-# if(pos=="VAI-n" || pos=="VAI-v")
-#  { if(stem!=lex && match(lex,"w$")!=0)
-#      clex="IACONJw";
-#    else
-#      clex="IACONJ";
-#  } 
 if(pos=="VII-v")
   { clex="VIIw"; }
 if(pos=="VII-v" && (lex=="atihkamêkoskâw" || lex=="kîskatâwahkâw" || lex=="miyimâwahcâw" || lex=="sakâw" || lex=="sîkipêstâw" || lex=="sôhkiyowêw")) 
