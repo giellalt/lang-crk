@@ -29,16 +29,16 @@ pos="";
 if(match(POS,"^V")!=0) pos="V"
 if(match(POS,"^N")!=0) pos="N"
 if(POS=="PrA" || POS=="PrI" || POS=="PR") pos="Pron"
-if(POS=="IPN") pos="Pcle" # Adjectival/adverbial pre-verb elements
-if(POS=="IPC ;; IPJ") pos="Pcle"; # 
-if(POS=="IPH") pos="Pcle" # Multiword particles
+if(POS=="IPN") pos="Ipc" # Adjectival/adverbial pre-noun elements
+if(POS=="IPC ;; IPJ") pos="Ipc"; # 
+if(POS=="IPH") pos="Ipc" # Multiword particles
 if(POS=="INM") pos="N" # Proper/Place names
-if(POS=="IPC" || POS=="IPJ" || POS=="IPP") pos="Pcle"
-if(POS=="IPV") pos="Pcle" # Pre-verb elements
+if(POS=="IPC" || POS=="IPJ" || POS=="IPP") pos="Ipc"
+if(POS=="IPV") pos="Ipc" # Pre-verb elements
 
 if(pos==class || class=="")
  {
-  print "<e src=\"Wolvengrey\">";
+  print "<e src=\"nêhiyawêwin : itwêwina / Cree : Words\">";
   print "   <lg>";
   print "      <l pos=\""pos"\">"CRK"</l>";
   print "      <lc>"POS"</lc>";
