@@ -1,0 +1,160 @@
+name: "Transitive animate verb extended paradigm"		
+paradigm: "verb-ta.paradigm"		
+layout:		
+  type: "extended"		
+tooltips:		
+  eng:		
+    "you (one) → me": "2nd person singular actor, 1st person singular goal"		
+    "you (one) → us": "2nd person singular actor, 1st person plural goal"		
+    "you (all) → me": "2nd person plural actor, 1st person singular goal"		
+    "you (all) → us": "2nd person plural actor, 1st person plural goal"		
+    "I → you (one)": "1st person singular actor, 2nd person singular goal"		
+    "I → you (all)": "1st person singular actor, 2nd person plural goal"		
+    "we → you (one)": "1st person plural actor, 2nd person singular goal"		
+    "we → you (all)": "1st person plural actor, 2nd person plural goal"		
+    "I → him/her": "1st person singular actor, 3rd person singular goal"		
+    "you (one) → him/her": "2nd person singular actor, 3rd person singular goal"		
+    "we → him/her": "1st person plural exclusive actor, 3rd person singular goal"		
+    "you and we → him/her": "1st person plural inclusive actor, 3rd person singular goal"		
+    "you (all) → him/her": "2nd person plural actor, 3rd person singular goal"		
+    "I → them": "1st person singular actor, 3rd person plural goal"		
+    "you (one) → them": "2nd person singular actor, 3rd person plural goal"		
+    "we → them": "1st person plural exclusive actor, 3rd person plural goal"		
+    "you and we → them": "1st person plural inclusive actor, 3rd person plural goal"		
+    "you (all) → them": "2nd person plural actor, 3rd person plural goal"		
+    "I → him/her/them (further)": "1st person singular actor, 3rd person obviative goal"		
+    "you (one) → him/her/them (further)": "2nd person singular actor, 3rd person obviative goal"		
+    "we → him/her/them (further)": "1st person plural exclusive actor, 3rd person obviative goal"		
+    "you and we → him/her/them (further)": "1st person plural inclusive actor, 3rd person obviative goal"		
+    "you (all) → him/her/them (further)": "2nd person plural actor, 3rd person obviative goal"		
+    "s/he → me": "3rd person singular actor, 1st person singular goal"		
+    "s/he → you (one)": "3rd person singular actor, 2nd person singular goal"		
+    "s/he → us": "3rd person singular actor, 1st person plural exclusive goal"		
+    "s/he → you and us": "3rd person singular actor, 1st person plural inclusive goal"		
+    "s/he → you (all)": "3rd person singular actor, 2nd person plural goal"		
+    "they → me": "3rd person plural actor, 1st person singular goal"		
+    "they → you (one)": "3rd person plural actor, 2nd person singular goal"		
+    "they → us": "3rd person plural actor, 1st person plural exclusive goal"		
+    "they → you and us": "3rd person plural actor, 1st person plural inclusive goal"		
+    "they → you (all)": "3rd person plural actor, 2nd person plural goal"		
+    "s/he/they (further) → me": "3rd person obviative actor, 1st person singular goal"		
+    "s/he/they (further) → you (one)": "3rd person obviative actor, 2nd person singular goal"		
+    "s/he/they (further) → us": "3rd person obviative actor, 1st person plural exclusive goal"		
+    "s/he/they (further) → you and us": "3rd person obviative actor, 1st person plural inclusive goal"		
+    "s/he/they (further) → you (all)": "3rd person obviative actor, 2nd person plural goal"		
+    "s/he → him/her/them (further)": "3rd person singular actor, 3rd person obviative goal"		
+    "they → him/her/them (further)": "3rd person plural actor, 3rd person obviative goal"		
+    "s/he/they (further) → him/her/them (furthest": "3rd person obviative actor, 3rd person further obviative goal"		
+    "s/he/they (further) → him/her": "3rd person obviatve actor, 3rd person singular goal"		
+    "s/he/they (further) → them": "3rd person obviative actor, 3rd person plural goal"		
+    "s/he/they (furthest) → him/her/them (further)": "3rd person further obviative actor, 3rd person obviative goal"		
+    "someone → me": "Unspecified actor, 1st person singular goal"		
+    "someone → you (one)": "Unspecified actor, 2nd person singular goal"		
+    "someone → him/her": "Unspecified actor, 3rd person singular goal"		
+    "someone → him/her/them (further)": "Unspecified actor, 3rd person obviative goal"		
+    "someone → us": "Unspecified actor, 1st person plural exclusive goal"		
+    "someone → you and us": "Unspecified actor, 1st person plural inclusive goal"		
+    "someone → you (all)": "Unspecified actor, 2nd person plural goal"		
+    "someone → them": "Unspecified actor, 3rd person plural goal"		
+--		
+	"PRESENT TENSE"	
+"Speech Act Participants"	: "Independent"	: "Conjunct"
+"you (one) → me"	Ind+Prs+2Sg+1SgO	PV/e+*+Cnj+Prs+2Sg+1SgO
+"you (one) → us"	Ind+Prs+2Sg+1PlO	PV/e+*+Cnj+Prs+2Sg+1PlO
+"you (all) → me"	Ind+Prs+2Pl+1SgO	PV/e+*+Cnj+Prs+2Pl+1SgO
+"you (all) → us"	Ind+Prs+2Pl+1PlO	PV/e+*+Cnj+Prs+2Pl+1PlO
+		
+"I → you (one)"	Ind+Prs+1Sg+2SgO	PV/e+*+Cnj+Prs+1Sg+2SgO
+"I → you (all)"	Ind+Prs+1Sg+2PlO	PV/e+*+Cnj+Prs+1Sg+2PlO
+"we → you (one)"	Ind+Prs+1Pl+2SgO	PV/e+*+Cnj+Prs+1Pl+2SgO
+"we → you (all)"	Ind+Prs+1Pl+2PlO	PV/e+*+Cnj+Prs+1Pl+2PlO
+		
+"Mixed participants"	: "Independent"	: "Conjunct"
+"I → him/her"	Ind+Prs+1Sg+3SgO	PV/e+*+Cnj+Prs+1Sg+3SgO
+"you (one) → him/her"	Ind+Prs+2Sg+3SgO	PV/e+*+Cnj+Prs+2Sg+3SgO
+"we → him/her"	Ind+Prs+1Pl+3SgO	PV/e+*+Cnj+Prs+1Pl+3SgO
+"you and we → him/her"	Ind+Prs+12Pl+3SgO	PV/e+*+Cnj+Prs+12Pl+3SgO
+"you (all) → him/her"	Ind+Prs+2Pl+3SgO	PV/e+*+Cnj+Prs+2Pl+3SgO
+		
+"I → them"	Ind+Prs+1Sg+3PlO	PV/e+*+Cnj+Prs+1Sg+3PlO
+"you (one) → them"	Ind+Prs+2Sg+3PlO	PV/e+*+Cnj+Prs+2Sg+3PlO
+"we → them"	Ind+Prs+1Pl+3PlO	PV/e+*+Cnj+Prs+1Pl+3PlO
+"you and we → them"	Ind+Prs+12Pl+3PlO	PV/e+*+Cnj+Prs+12Pl+3PlO
+"you (all) → them"	Ind+Prs+2Pl+3PlO	PV/e+*+Cnj+Prs+2Pl+3PlO
+		
+"I → him/her/them (further)"	Ind+Prs+1Sg+4Sg/PlO	PV/e+*+Cnj+Prs+1Sg+4Sg/PlO
+"you (one) → him/her/them (further)"	Ind+Prs+2Sg+4Sg/PlO	PV/e+*+Cnj+Prs+2Sg+4Sg/PlO
+"we → him/her/them (further)"	Ind+Prs+1Pl+4Sg/PlO	PV/e+*+Cnj+Prs+1Pl+4Sg/PlO
+"you and we → him/her/them (further)"	Ind+Prs+12Pl+4Sg/PlO	PV/e+*+Cnj+Prs+12Pl+4Sg/PlO
+"you (all) → him/her/them (further)"	Ind+Prs+2Pl+4Sg/PlO	PV/e+*+Cnj+Prs+2Pl+4Sg/PlO
+		
+"s/he → me"	Ind+Prs+3Sg+1SgO	PV/e+*+Cnj+Prs+3Sg+1SgO
+"s/he → you (one)"	Ind+Prs+3Sg+2SgO	PV/e+*+Cnj+Prs+3Sg+2SgO
+"s/he → us"	Ind+Prs+3Sg+1PlO	PV/e+*+Cnj+Prs+3Sg+1PlO
+"s/he → you and us"	Ind+Prs+3Sg+12PlO	PV/e+*+Cnj+Prs+3Sg+12PlO
+"s/he → you (all)"	Ind+Prs+3Sg+2PlO	PV/e+*+Cnj+Prs+3Sg+2PlO
+		
+"they → me"	Ind+Prs+3Pl+1SgO	PV/e+*+Cnj+Prs+3Pl+1SgO
+"they → you (one)"	Ind+Prs+3Pl+2SgO	PV/e+*+Cnj+Prs+3Pl+2SgO
+"they → us"	Ind+Prs+3Pl+1PlO	PV/e+*+Cnj+Prs+3Pl+1PlO
+"they → you and us"	Ind+Prs+3Pl+12PlO	PV/e+*+Cnj+Prs+3Pl+12PlO
+"they → you (all)"	Ind+Prs+3Pl+2PlO	PV/e+*+Cnj+Prs+3Pl+2PlO
+		
+"s/he/they (further) → me"	Ind+Prs+4Sg/Pl+1SgO	PV/e+*+Cnj+Prs+4Sg/Pl+1SgO
+"s/he/they (further) → you (one)"	Ind+Prs+4Sg/Pl+2SgO	PV/e+*+Cnj+Prs+4Sg/Pl+2SgO
+"s/he/they (further) → us"	Ind+Prs+4Sg/Pl+1PlO	PV/e+*+Cnj+Prs+4Sg/Pl+1PlO
+"s/he/they (further) → you and us"	Ind+Prs+4Sg/Pl+12PlO	PV/e+*+Cnj+Prs+4Sg/Pl+12PlO
+"s/he/they (further) → you (all)"	Ind+Prs+4Sg/Pl+2PlO	PV/e+*+Cnj+Prs+4Sg/Pl+2PlO
+		
+"Third person participants"	: "Independent"	: "Conjunct"
+"s/he → him/her/them (further)"	Ind+Prs+3Sg+4Sg/PlO	PV/e+*+Cnj+Prs+3Sg+4Sg/PlO
+"they → him/her/them (further)"	Ind+Prs+3Pl+4Sg/PlO	PV/e+*+Cnj+Prs+3Pl+4Sg/PlO
+"s/he/they (further) → him/her/them (furthest"	Ind+Prs+4Sg/Pl+5Sg/PlO	PV/e+*+Cnj+Prs+4Sg/Pl+5Sg/PlO
+		
+"s/he/they (further) → him/her"	Ind+Prs+4Sg/Pl+3SgO	PV/e+*+Cnj+Prs+4Sg/Pl+3SgO
+"s/he/they (further) → them"	Ind+Prs+4Sg/Pl+3PlO	PV/e+*+Cnj+Prs+4Sg/Pl+3PlO
+"s/he/they (furthest) → him/her/them (further)"	Ind+Prs+5Sg/Pl+4Sg/PlO	PV/e+*+Cnj+Prs+5Sg/Pl+4Sg/PlO
+		
+"Unspecified actor"	: "Independent"	: "Conjunct"
+"someone → me"	Ind+Prs+X+1SgO	PV/e+*+Cnj+Prs+X+1SgO
+"someone → you (one)"	Ind+Prs+X+2SgO	PV/e+*+Cnj+Prs+X+2SgO
+"someone → him/her"	Ind+Prs+X+3SgO	PV/e+*+Cnj+Prs+X+3SgO
+"someone → him/her/them (further)"	Ind+Prs+X+4Sg/PlO	PV/e+*+Cnj+Prs+X+4Sg/PlO
+"someone → us"	Ind+Prs+X+1PlO	PV/e+*+Cnj+Prs+X+1PlO
+"someone → you and us"	Ind+Prs+X+12PlO	PV/e+*+Cnj+Prs+X+12PlO
+"someone → you (all)"	Ind+Prs+X+2PlO	PV/e+*+Cnj+Prs+X+2PlO
+"someone → them"	Ind+Prs+X+3PlO	PV/e+*+Cnj+Prs+X+2PlO
+		
+	"PAST TENSE"	
+	: "Independent"	: "Conjunct"
+"you (one) → me"	Ind+Prt+2Sg+1SgO	Cnj+Prt+2Sg+1SgO
+"I → you (one)"	Ind+Prt+1Sg+2SgO	Cnj+Prt+1Sg+2SgO
+"s/he → him/her/them (further)"	Ind+Prt+3Sg+4Sg/PlO	Cnj+Prt+3Sg+4Sg/PlO
+		
+	"FUTURE INTENTIONAL TENSE"	
+	: "Independent"	: "Conjunct"
+"you (one) → me"	Ind+Fut+Int+2Sg+1SgO	Cnj+Fut+Int+2Sg+1SgO
+"I → you (one)"	Ind+Fut+Int+1Sg+2SgO	Cnj+Fut+Int+1Sg+2SgO
+"s/he → him/her/them (further)"	Ind+Fut+Int+3Sg+4Sg/PlO	Cnj+Fut+Int+3Sg+4Sg/PlO
+		
+	"FUTURE DEFINITE TENSE"	
+	: "Independent"	
+"you (one) → me"	Ind+Fut+Def+2Sg+1SgO	
+"I → you (one)"	Ind+Fut+Def+1Sg+2SgO	
+"s/he → him/her/them (further)"	Ind+Fut+Def+3Sg+4Sg/PlO	
+		
+	"FUTURE/INFINITIVE"	
+	: "Conjunct: ka-"	: "Conjunct: ta-"
+"you (one) → me"	PV/ka+*+Cnj+Prs+2Sg+1SgO	PV/ta+*+Cnj+Prs+2Sg+1SgO
+"I → you (one)"	PV/ka+*+Cnj+Prs+1Sg+2SgO	PV/ta+*+Cnj+Prs+1Sg+2SgO
+"s/he → him/her/them (further)"	PV/ka+*+Cnj+Prs+3Sg+4Sg/PlO	PV/ta+*+Cnj+Prs+3Sg+4Sg/PlO
+		
+	"FUTURE CONDITIONAL"	
+"you (one) → me"	Fut+Cond+2Sg+1SgO	
+"I → you (one)"	Fut+Cond+1Sg+2SgO	
+"s/he → him/her/them (further)"	Fut+Cond+3Sg+4Sg/PlO	
+		
+	"IMPERATIVE"	
+	: "Immediate"	: "Delayed"
+"you (one) → me"	Imp+Imm+2Sg+1SgO	Imp+Del+2Sg+1SgO
+"you (one) → him/her"	Imp+Imm+2Sg+3SgO	Imp+Del+2Sg+3SgO
