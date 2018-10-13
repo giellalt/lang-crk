@@ -11,19 +11,25 @@ tooltips:
     "your and our": "myt person plural inclusive possessor"			
     "your (all)": "2nd person plural possessor"			
     "their": "3rd person plural possessor"			
-    "his/her/their (further)": "3rd person obviative possessor"			
+    "his/her/their (further)": "3rd person obviative possessor"
+    "One": "One"
+    "Many": "Many"
+    "In/On": "In/On"
+    "Smaller/younger/lesser": "Diminutive"
+    "Ownership": "Possession"			
+    "Smaller/younger/lesser + O": "Diminutive Possession"		
 --			
-"Singular"	=N+I+Sg		
-"Plural"	=N+I+Pl		
-"Locative"	=N+I+Loc		
+"One"	=N+I+Sg		
+"Many"	=N+I+Pl		
+"In/On"	=N+I+Loc		
 			
-	"DIMINUTIVE"		
-"Singular"	Der/Dim+N+I+Sg		
-"Plural"	Der/Dim+N+I+Pl		
-"Locative"	Der/Dim+N+I+Loc		
+	"Smaller/younger/lesser"		
+"One"	Der/Dim+N+I+Sg		
+"Many"	Der/Dim+N+I+Pl		
+"In/On"	Der/Dim+N+I+Loc		
 			
-	"POSSESSION"		
-	: "Singular"	: "Plural"	: "Locative"
+	"Ownership"		
+	: "One"	: "Many"	: "In/On"
 "my"	=N+I+Px1Sg+Sg	=N+I+Px1Sg+Pl	=N+I+Px1Sg+Loc
 "your (one)"	=N+I+Px2Sg+Sg	=N+I+Px2Sg+Pl	=N+I+Px2Sg+Loc
 "his/her"	=N+I+Px3Sg+Sg	=N+I+Px3Sg+Pl	=N+I+Px3Sg+Loc
@@ -33,8 +39,8 @@ tooltips:
 "their"	=N+I+Px3Pl+Sg	=N+I+Px3Pl+Pl	=N+I+Px3Pl+Loc
 "his/her/their (further)"	=N+I+Px4Sg/Pl+Sg	=N+I+Px4Sg/Pl+Pl	=N+I+Px4Sg/Pl+Loc
 			
-	"DIMINUTIVE POSSESSION"		
-	: "Singular"	: "Plural"	: "Locative"
+	"Smaller/younger/lesser + Ownership"
+	: "One"	: "Many"	: "In/On"
 "my"	Der/Dim+N+I+Px1Sg+Sg	Der/Dim+N+I+Px1Sg+Pl	Der/Dim+N+I+Px1Sg+Loc
 "your (one)"	Der/Dim+N+I+Px2Sg+Sg	Der/Dim+N+I+Px2Sg+Pl	Der/Dim+N+I+Px2Sg+Loc
 "his/her"	Der/Dim+N+I+Px3Sg+Sg	Der/Dim+N+I+Px3Sg+Pl	Der/Dim+N+I+Px3Sg+Loc
