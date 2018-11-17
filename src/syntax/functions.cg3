@@ -271,7 +271,7 @@ SET NUMBERGENDER = (AN Sg) OR (AN Pl) OR (IN Sg) OR (IN Pl) OR (AN Obv) ;
 
 BEFORE-SECTIONS 
 
-MergeCohorts ("<$1 $2">v "$1 $2"v IPH) ("<êkwa>"r IPC) WITH (1 ("<mîna>"r IPC))
+MERGECOHORTS ("<$1 $2">v "$1 $2"v IPH) ("<êkwa>" IPC) WITH (1 ("<mîna>" IPC))
 
 SECTION
 MAP:PrepNR @<P TARGET N + Loc IF (-1 Ipc BARRIER CLB) ;
