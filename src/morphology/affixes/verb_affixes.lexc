@@ -69,7 +69,9 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and prefix ê-, kâ-, kâki-
 @P.joiner.hyphen@PV/kaa_ki+:@P.joiner.hyphen@kâ-ki-%< CNJ_TENSE ;
 @P.joiner.NULL@PV/kaa_ki+:@P.joiner.NULL@kâki^EGLOT%< CNJ_TENSE ;
 
-@P.cnj.CC@ CNJ_TENSE ; ! Option to allow for the occasional omission of the grammatical conjunct prefix
+0 CNJ_TENSE ; ! Option to allow for the occasional omission of the grammatical conjunct prefix without a changed conjunct
+
+@P.cnj.CC@IC+:@P.cnj.CC@ CNJ_TENSE ; ! Changed conjunct forms with initial change (IC) and no grammatical conjunct prefix
 
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
@@ -102,8 +104,10 @@ RdplS+:%^DUPL1âh  REDUPL_BOUND ;
 @U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@%^DUPL2ay3-%^DUPL1âh REDUPL_BOUND ;
 
 LEXICON REDUPL_BOUND
-@U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%<      REDUPL_CONT ;
-@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%< REDUPL_CONT ;
+@U.joiner.NULL@:@U.joiner.NULL@%<      REDUPL_CONT ;
+@U.joiner.hyphen@:@U.joiner.hyphen@-%< REDUPL_CONT ;
+! @U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%<      REDUPL_CONT ;
+! @U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%< REDUPL_CONT ;
 
 LEXICON REDUPL_CONT
 @U.wici.NULL@ VERBSTEMS ;
@@ -369,9 +373,10 @@ PV/yipe+:yîpê PREVERBS_BOUND "on a slant, on a slope, on the side, sideways" ;
 PV/yoski+:yôski PREVERBS_BOUND "soft, softly" ; 
 
 LEXICON PREVERBS_BOUND
-@U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%^EGLOT%< VERBPREFIXES ;
-@U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%<   VERBPREFIXES ;
-
+@U.joiner.NULL@:@U.joiner.NULL@%^EGLOT%< VERBPREFIXES ;
+@U.joiner.hyphen@:@U.joiner.hyphen@-%<   VERBPREFIXES ;
+! @U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%^EGLOT%< VERBPREFIXES ;
+! @U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%<   VERBPREFIXES ;
 
 
 LEXICON WICI
@@ -5558,7 +5563,10 @@ LEXICON VTA_FUT_CON_NULL_PL_SUFFIX
 ! 
 
 LEXICON VERB_ENDLEX
-@R.joiner.NULL@+Err/Orth:@R.joiner.NULL@ # ;
-@D.joiner.NULL@ # ;
+@D.cnj.CC@@R.joiner.NULL@+Err/Orth:@D.cnj.CC@@R.joiner.NULL@ # ;
+@D.cnj.CC@@D.joiner.NULL@ # ;
+! Adding changed conjunct trigger: IC
+@R.cnj.CC@@R.joiner.NULL@+Err/Orth:@R.cnj.CC@@R.joiner.NULL@%^IC # ;
+@R.cnj.CC@@D.joiner.NULL@:@R.cnj.CC@@D.joiner.NULL@%^IC # ;
 
 !! End of verb affixes code
