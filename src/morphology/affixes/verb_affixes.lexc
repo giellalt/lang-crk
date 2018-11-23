@@ -388,8 +388,11 @@ LEXICON PREVERBS_BOUND
 
 
 LEXICON WICI
-@U.joiner.NULL@:@U.joiner.NULL@wîci%^EGLOT%<      VERBSTEMS ; !!!! We need to deal with the wît- allomorph
-@U.joiner.hyphen@:@U.joiner.hyphen@wîci-%<        VERBSTEMS ; !!!! We need to deal with the wît- allomorph
+@U.joiner.NULL@@D.cnj.CC@:@U.joiner.NULL@@D.cnj.CC@wîci%^EGLOT%<      VERBSTEMS ; !!!! We need to deal with the wît- allomorph
+@U.joiner.hyphen@@D.cnj.CC@:@U.joiner.hyphen@@D.cnj.CC@wîci-%<        VERBSTEMS ; !!!! We need to deal with the wît- allomorph
+
+@U.joiner.NULL@@R.cnj.CC@@C.cnj@:@U.joiner.NULL@@R.cnj.CC@@C.cnj@wîci%^IC%^EGLOT%<      VERBSTEMS ; !!!! We need to deal with the wît- allomorph
+@U.joiner.hyphen@@R.cnj.CC@@C.cnj@:@U.joiner.hyphen@@R.cnj.CC@@C.cnj@wîci%^IC-%<        VERBSTEMS ; !!!! We need to deal with the wît- allomorph
 
 !! Now, lexc directs us to the ../stems/verbs_stems.lexc file,
 !! where we find all the verbal stems. The suffixes are then
