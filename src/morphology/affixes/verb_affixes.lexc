@@ -98,10 +98,10 @@ REDUPLICATION ;
 PREVERBS ;
 
 LEXICON REDUPLICATION
-RdplW+:%^DUPL1ay2 REDUPL_BOUND ;
-RdplS+:%^DUPL1âh  REDUPL_BOUND ;
-@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@%^DUPL2ay3%^DUPL1âh      REDUPL_BOUND ;
-@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@%^DUPL2ay3-%^DUPL1âh REDUPL_BOUND ;
+RdplW+:d1ay2 REDUPL_BOUND ;
+RdplS+:d1âh  REDUPL_BOUND ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@d2ay3d1âh      REDUPL_BOUND ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@d2ay3-d1âh REDUPL_BOUND ;
 
 LEXICON REDUPL_BOUND
 @U.joiner.NULL@:@U.joiner.NULL@%<      REDUPL_CONT ;

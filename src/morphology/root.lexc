@@ -423,13 +423,14 @@ i2      !!= * @CODE@ vta-5i epenthesis.
 
 h2 		!!= * @CODE@  Prefix in possessives
 
+d1  !!=* @CODE@  Reduplication consonant marker
+d2  !!=* @CODE@  Reduplication consonant marker
+
 !! Triggers for various morphophonological phenomena
 !! Mostly, these are not realized themselves as any grapheme/phoneme
 
 %^DIM	 !!=* @CODE@  Diminutive suffix
 %^POS    !!=* @CODE@  Possessive suffix ! ! REMOVE
-%^DUPL1  !!=* @CODE@  Reduplication consonant marker
-%^DUPL2  !!=* @CODE@  Reduplication consonant marker
 %^COM    !!=* Comitative suffix marker (for stem-suffix juncture vowel lengthening)
 %^IC     !!=* @CODE@ Trigger Initial Change in changed conjunct forms
 %^EGLOT  !!= * @CODE@  glottal stop after e, for eh- in conjunctive order
