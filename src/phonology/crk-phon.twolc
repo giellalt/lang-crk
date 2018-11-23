@@ -94,8 +94,8 @@ Alphabet
 
  y2:0      !!= * @CODE@ epenthetic joiner in reduplication of vowel-initial stems
  y3:0      !!= * @CODE@ epenthetic joiner in reduplication of vowel-initial stems
- %^DUPL1:0  !!= * @CODE@ Reduplication consonant place holder 
- %^DUPL2:0  !!= * @CODE@ Reduplication consonant place holder 
+ d1:0  !!= * @CODE@ Reduplication consonant place holder 
+ d2:0  !!= * @CODE@ Reduplication consonant place holder 
 
  %^EGLOT:0   !!= * @CODE@ Epenthetic -h- place holder
 
@@ -384,15 +384,15 @@ t2:c <=> _ %<:0 :Vowel :* %^DIM:0 ;
 ! ! ##ê > â _-n - independent 1/2 VAI-v, VTI-v
 
 "h-epenthesisRule"
-%^EGLOT:h <=> :Vowel _ %<:0 [ %^DUPL1:0 | %^DUPL2:0 | :Vowel ] ;
+%^EGLOT:h <=> :Vowel ( %^IC:0 ) _ %<:0 [ d1:0 | d2:0 | :Vowel ] ;
 
 !!€ ê^EGLOT<acimo>t
 !!€ êh0acimo0t
 
-!!€ ê^EGLOT<^DUPL1ay2<acimo>t
+!!€ ê^EGLOT<d1ay2<acimo>t
 !!€ êh00ay0acimo0t
 
-!!€ ê^EGLOT<^DUPL2ay3^DUPL1âh<acimo>t
+!!€ ê^EGLOT<d2ay3d1âh<acimo>t
 !!€ êh00ay0âh0acimo0t
 
 "ee2aaVAIRule"
@@ -763,44 +763,44 @@ t3:c <=> _ %>:0 i2: %^DIM:0 ;
 !!€ mi4<îwat3>i2^DIMs
 !!€ m00îwac0i0s
 
-! Matching weak/strong reduplication consonant placeholder %^DUPL1 with stem-initial consonant
+! Matching weak/strong reduplication consonant placeholder d1 with stem-initial consonant
 "ReduplCRule1"
 !! __@RULENAME@__
-%^DUPL1:Cx <=> _ (0:i 0:y) [ a: y2: | â: h ] ( %-: ) %<:0 Cx: ;
+d1:Cx <=> _ (0:i 0:y) [ a: y2: | â: h ] ( %-: ) %<:0 Cx: ;
    where Cx in ( c k m n p s t w y ) ;
 
-! Setting double weak+strong reduplication consonant placeholder %^DUPL2 with stem-initial consonant"
+! Setting double weak+strong reduplication consonant placeholder d2 with stem-initial consonant"
 "ReduplCRule2"
 !! __@RULENAME@__
-%^DUPL2:Cx <=> _ (0:i 0:y) a: y3:0 ( %-: ) %^DUPL1:Cx ;
+d2:Cx <=> _ (0:i 0:y) a: y3:0 ( %-: ) d1:Cx ;
    where Cx in ( c k m n p s t w y ) ;
 
 !Inserting epenthetic y in weak reduplication of vowel-initial stem
 "ReduplY2Rule"
 !! __@RULENAME@__
-y2:y <=> %^DUPL1:0 (0:i 0:y) a: _ ;
+y2:y <=> d1:0 (0:i 0:y) a: _ ;
 
 !Inserting epenthetic y in strong+weak reduplication of vowel-initial stem
 "ReduplY3Rule"
 !! __@RULENAME@__
-y3:y <=> _ ( %-: ) %^DUPL1:0 ;
+y3:y <=> _ ( %-: ) d1:0 ;
 
-!!€ ^DUPL1ay2-<nipâw
+!!€ d1ay2-<nipâw
 !!€ na0-0nipâw
 
-!!€ ^DUPL1âh-<nipâw
+!!€ d1âh-<nipâw
 !!€ nâh-0nipâw
 
-!!€ ^DUPL2ay3-^DUPL1âh-<nipâw
+!!€ d2ay3-d1âh-<nipâw
 !!€ na0-nâh-0nipâw
 
-!!€ ^DUPL2ay3-^DUPL1âh-<ayâw
+!!€ d2ay3-d1âh-<ayâw
 !!€ 0ay-0âh-0ayâw
 
-!!€ ^DUPL1âh-<ayâw
+!!€ d1âh-<ayâw
 !!€ 0âh-0ayâw
 
-!!€ ^DUPL1ay2-<ayâw
+!!€ d1ay2-<ayâw
 !!€ 0ay-0ayâw
 
 !! INITIAL CHANGE
@@ -813,7 +813,7 @@ y3:y <=> _ ( %-: ) %^DUPL1:0 ;
 ! v1:v2 <=> .#. (C) _ :* %^IC:0 ;
 
 "v2vICRule"
-Vx:ICx <=> .#. ( Consonant | %^DUPL1: | %^DUPL2: ) (0:w) _ :* %^IC:0 ;
+Vx:ICx <=> .#. ( Consonant | d1: | d2: ) (0:w) _ :* %^IC:0 ;
    where Vx in  ( a i î o )
          ICx in ( ê ê â ê )
    matched ;
@@ -862,13 +862,13 @@ Vx:ICx <=> .#. ( Consonant | %^DUPL1: | %^DUPL2: ) (0:w) _ :* %^IC:0 ;
 ! ô ~ iyô
 
 "iyvICRule1"
-0:i <=> .#. (Consonant | %^DUPL1: | %^DUPL2: ) _ 0:y [ â | ê | î | ô ] :* %^IC:0 ;
+0:i <=> .#. (Consonant | d1: | d2: ) _ 0:y [ â | ê | î | ô ] :* %^IC:0 ;
 
 "iyvICRule2"
-0:y <=> .#. (Consonant | %^DUPL1: | %^DUPL2:) 0:i _ [ â | ê | î | ô ] :* %^IC:0 ;
+0:y <=> .#. (Consonant | d1: | d2:) 0:i _ [ â | ê | î | ô ] :* %^IC:0 ;
 
 "iyvICRule3"
-Vx /<= .#. (Consonant | %^DUPL1: | %^DUPL2: ) _ :* %^IC:0 ;
+Vx /<= .#. (Consonant | d1: | d2: ) _ :* %^IC:0 ;
    where Vx in ( â ê î ô ) ;
 
 !!€ îkatêhât^IC
