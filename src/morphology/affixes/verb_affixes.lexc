@@ -373,8 +373,12 @@ PV/yipe+:yîpê PREVERBS_BOUND "on a slant, on a slope, on the side, sideways" ;
 PV/yoski+:yôski PREVERBS_BOUND "soft, softly" ; 
 
 LEXICON PREVERBS_BOUND
-@U.joiner.NULL@:@U.joiner.NULL@%^EGLOT%< VERBPREFIXES ;
-@U.joiner.hyphen@:@U.joiner.hyphen@-%<   VERBPREFIXES ;
+@U.joiner.NULL@@D.cnj.CC@:@U.joiner.NULL@@D.cnj.CC@%^EGLOT%< VERBPREFIXES ;
+@U.joiner.hyphen@@D.cnj.CC@:@U.joiner.hyphen@@D.cnj.CC@-%<   VERBPREFIXES ;
+
+@U.joiner.NULL@@R.cnj.CC@@C.cnj@:@U.joiner.NULL@@R.cnj.CC@@C.cnj@%^IC%^EGLOT%< VERBPREFIXES ;
+@U.joiner.hyphen@@R.cnj.CC@@C.cnj@:@U.joiner.hyphen@@R.cnj.CC@@C.cnj@%^IC-%<   VERBPREFIXES ;
+
 ! @U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%^EGLOT%< VERBPREFIXES ;
 ! @U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%<   VERBPREFIXES ;
 
