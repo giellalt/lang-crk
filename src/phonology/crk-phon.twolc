@@ -766,7 +766,7 @@ t3:c <=> _ %>:0 i2: %^DIM:0 ;
 ! Matching weak/strong reduplication consonant placeholder d1 with stem-initial consonant
 "ReduplCRule1"
 !! __@RULENAME@__
-d1:Cx <=> _ (0:i 0:y) [ a: y2: | â: h ] ( %-: ) %<:0 Cx: ;
+d1:Cx <=> _ (0:i 0:y) [ a: y2: | â: h ] (%^IC:0) ( %-: ) %<:0 Cx: ;
    where Cx in ( c k m n p s t w y ) ;
 
 ! Setting double weak+strong reduplication consonant placeholder d2 with stem-initial consonant"
