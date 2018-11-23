@@ -104,8 +104,12 @@ RdplS+:d1âh  REDUPL_BOUND ;
 @U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@d2ay3-d1âh REDUPL_BOUND ;
 
 LEXICON REDUPL_BOUND
-@U.joiner.NULL@:@U.joiner.NULL@%<      REDUPL_CONT ;
-@U.joiner.hyphen@:@U.joiner.hyphen@-%< REDUPL_CONT ;
+@U.joiner.NULL@@D.cnj.CC@:@U.joiner.NULL@@D.cnj.CC@%<      REDUPL_CONT ;
+@U.joiner.hyphen@@D.cnj.CC@:@U.joiner.hyphen@@D.cnj.CC@-%< REDUPL_CONT ;
+
+@U.joiner.NULL@@R.cnj.CC@@C.cnj@:@U.joiner.NULL@@R.cnj.CC@@C.cnj@%^IC%<      REDUPL_CONT ;
+@U.joiner.hyphen@@R.cnj.CC@@C.cnj@:@U.joiner.hyphen@@R.cnj.CC@@C.cnj@%^IC-%< REDUPL_CONT ;
+
 ! @U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%<      REDUPL_CONT ;
 ! @U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%< REDUPL_CONT ;
 
