@@ -369,7 +369,7 @@ if(pos=="VTA-4") # t -> t3
 if(pos=="VTA-5")
   { if(lemma=="ahêw" || lemma=="ay-itêw")  # ahêw and ay-itêw --> ahi, iti and ay-iti in IMP2SG
       { clex="VTAi"; sub("t$","t3",stem); }
-    if(lemma="kostêw" || lemma=="wîhkistêw") # s:0 when preceeding t3:s
+    if(lemma=="kostêw" || lemma=="wîhkistêw") # s:0 when preceeding t3:s
       { clex="VTA"; sub("t$","t3",stem); }
   }
 
