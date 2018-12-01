@@ -76,10 +76,10 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and prefix ê-, kâ-, kâki-
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
 @U.tense.Prs@                                                                           VERBPREFIXES ;
-@U.tense.Prt@@U.joiner.hyphen@@C.cnj@:@U.tense.Prt@@U.joiner.hyphen@@C.cnj@kî-%<        VERBPREFIXES ;
-@U.tense.Prt@@U.joiner.NULL@@C.cnj@:@U.tense.Prt@@U.joiner.NULL@@C.cnj@kî^EGLOT%<       VERBPREFIXES ;
-@U.tense.FutInt@@U.joiner.hyphen@@C.cnj@:@U.tense.FutInt@@U.joiner.hyphen@@C.cnj@wî-%<  VERBPREFIXES ;
-@U.tense.FutInt@@U.joiner.NULL@@C.cnj@:@U.tense.FutInt@@U.joiner.NULL@@C.cnj@wî^EGLOT%< VERBPREFIXES ;
+@U.tense.Prt@@U.joiner.hyphen@@D.cnj.CC@:@U.tense.Prt@@U.joiner.hyphen@@D.cnj.CC@kî-%<        VERBPREFIXES ;
+@U.tense.Prt@@U.joiner.NULL@@D.cnj.CC@:@U.tense.Prt@@U.joiner.NULL@@D.cnj.CC@kî^EGLOT%<       VERBPREFIXES ;
+@U.tense.FutInt@@U.joiner.hyphen@@D.cnj.CC@:@U.tense.FutInt@@U.joiner.hyphen@@D.cnj.CC@wî-%<  VERBPREFIXES ;
+@U.tense.FutInt@@U.joiner.NULL@@D.cnj.CC@:@U.tense.FutInt@@U.joiner.NULL@@D.cnj.CC@wî^EGLOT%< VERBPREFIXES ;
 
 
 LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
