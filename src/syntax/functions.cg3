@@ -547,8 +547,8 @@ BEFORE-SECTIONS
 
 
 SECTION
-MAP:PrepNR @<P TARGET N + Loc IF (-1 (PREPOSITION) BARRIER CLB) ;
-MAP:PrepNL @P> TARGET N + Loc IF (1 (POSTPOSITION) BARRIER CLB) ;
+MAP:PrepNR @<P TARGET N + Loc IF (-1 PREPOSITION) ;
+MAP:PrepNL @P> TARGET N + Loc IF (1 POSTPOSITION) ;
 
 ##MAP @<ADVL Loc OR Ipc  (-1 VFIN)(NOT 0 @<P) ;
 ##MAP @ADVL> Loc OR Ipc  (*1 VFIN)(NOT 0 @P>) ;
@@ -565,18 +565,18 @@ MAP:PREDTA @PRED-TA TARGET V + TA ;
 ##MAP @<N (Pron Dem) (-1 N (Num))  ;
 
 ##DEMONSTRATIVES AND NOUNS
-MAP:DemNANSgR @<N TARGET Dem + AN + Sg IF (NOT -1 Obv)(-1 N + AN + Sg BARRIER CLB) ;
-MAP:DemNANSgL @N> TARGET Dem + AN + Sg IF (NOT 1 Obv)(1 N + AN + Sg BARRIER CLB) ;
-MAP:DemNANPlR @<N TARGET Dem + AN + Pl IF (NOT -1 Obv)(-1 N + AN + Pl BARRIER CLB) ;
-MAP:DemNANPlL @N> TARGET Dem + AN + Pl IF (NOT 1 Obv)(1 N + AN + Pl BARRIER CLB) ;
+MAP:DemNANSgR @<N TARGET Dem + AN + Sg IF (NOT -1 Obv)(-1 N + AN + Sg) ;
+MAP:DemNANSgL @N> TARGET Dem + AN + Sg IF (NOT 1 Obv)(1 N + AN + Sg) ;
+MAP:DemNANPlR @<N TARGET Dem + AN + Pl IF (NOT -1 Obv)(-1 N + AN + Pl) ;
+MAP:DemNANPlL @N> TARGET Dem + AN + Pl IF (NOT 1 Obv)(1 N + AN + Pl) ;
 
-MAP:DemNANObvR @<N TARGET Dem + AN + Obv IF (-1 N + AN + Obv BARRIER CLB) ;
-MAP:DemNANObvL @N> TARGET Dem + AN + Obv IF (1 N + AN + Obv BARRIER CLB) ;
+MAP:DemNANObvR @<N TARGET Dem + AN + Obv IF (-1 N + AN + Obv) ;
+MAP:DemNANObvL @N> TARGET Dem + AN + Obv IF (1 N + AN + Obv) ;
 
-MAP:DemNINSgR @<N TARGET Dem + IN + Sg IF (-1 N + IN + Sg BARRIER CLB) ;
-MAP:DemNINSgL @N> TARGET Dem + IN + Sg IF (1 N + IN + Sg BARRIER CLB) ;
-MAP:DemNINPlR @<N TARGET Dem + IN + Pl IF (-1 N + IN + Pl BARRIER CLB) ;
-MAP:DemNINPlL @N> TARGET Dem + IN + Pl IF (1 N + IN + Pl BARRIER CLB) ;
+MAP:DemNINSgR @<N TARGET Dem + IN + Sg IF (-1 N + IN + Sg) ;
+MAP:DemNINSgL @N> TARGET Dem + IN + Sg IF (1 N + IN + Sg) ;
+MAP:DemNINPlR @<N TARGET Dem + IN + Pl IF (-1 N + IN + Pl) ;
+MAP:DemNINPlL @N> TARGET Dem + IN + Pl IF (1 N + IN + Pl) ;
 
 #êkoni and nouns
 MAP:ekoniR @<N TARGET AN + Sg IF (0 (".?êkoni"r))(-1 N + AN + Sg OR Pron + AN + Sg) ;
