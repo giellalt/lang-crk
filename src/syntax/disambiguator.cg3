@@ -665,11 +665,11 @@ LIST POSTPOSITION = isi ohci
 # Sets
 # ====
 
-LIST WORD = N V Ipc Interj Pron ;
+#LIST WORD = N V Ipc Interj Pron ;
 
 
-SET NOT-VERB = WORD - V ;
-SET NOT-NOUN = WORD - N ;
+#SET NOT-VERB = WORD - V ;
+#SET NOT-NOUN = WORD - N ;
 
 LIST NUMBER = Sg Pl ;
 LIST GENDER = AN IN ;
