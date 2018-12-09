@@ -711,7 +711,7 @@ ADD:ayawAITI TI TARGET ("(.+[-])*ayâw"r) + AI ;
 REMOVE:PxObvPl Pl IF (0 POSS + AN + Obv + Sg) ;
 ADD:PxObvSgPl Pl TARGET POSS + AN + Obv + Sg ;
 
-MERGECOHORTS ("<$1 $2">v "$1 $2"v Iph) ("<êkwa>" Ipc) WITH (1 ("<mîna>" Ipc))
+#MERGECOHORTS ("<$1 $2">v "$1 $2"v Iph) ("<êkwa>" Ipc) WITH (1 ("<mîna>" Ipc))
 
 SECTION
 
