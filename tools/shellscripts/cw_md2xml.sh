@@ -59,6 +59,8 @@ while((getline < md_cw_cmp_path)!=0)
 
 # Temporary code for checking input validity
 # print md_inv["minahik"], md_std[md_inv["minahik"]], cw_md_cmp[md_inv["minahik"]];
+# print md_inv["wîtaskîwinihk"], md_std[md_inv["wîtaskîwinihk"]], cw_md_cmp[md_inv["wîtaskîwinihk"]];
+
 # for(i in md_inv)
 #   print md_inv[i], md_std[md_inv[i]], cw_md_cmp[md_inv[i]];
 
