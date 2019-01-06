@@ -83,13 +83,8 @@
 # 4. (Path to) MD p-o-s coding translation to CW-style provided as 3rd argument
 # 5. CW p-o-s code provided as 4th argument
 
-# Example:
-# cat ../../Wolvengrey/Wolvengrey_eng2crk.csv |
-# ~/giella/langs/crk/tools/shellscripts/cw_md2engcrk_xml.sh MD_vs_CW_gloss_comparison_full_autonorm_min-morph.txt ../MaskwacisDictionary_RW12345.csv MD_pos_codes.freq_sorted.txt 
-# > crkeng_cw_md_181219-2.xml
-
-# Conversion of quotes to #-mark to allow for easier conversion within GAWK code
-# tr "'" '#' |
+# Usage xample with source files:
+# cat ../../Wolvengrey/Wolvengrey_eng2crk.csv | ~/giella/langs/crk/tools/shellscripts/cw_md2engcrk_xml.sh MD_vs_CW_gloss_comparison_full_autonorm_min-morph.txt ../MaskwacisDictionary_RW12345_english_POS-tagged.csv MD_pos_codes.freq_sorted.txt > engcrk_190205.xml
 
 # Primary GAWK code
 
@@ -520,8 +515,7 @@ eng="";
 }
 END { print "</e>";
   print "</r>";
-}' | less; exit 0;      
-      
+}'    
 
 # <e>
 #    <lg xml:lang="eng">
