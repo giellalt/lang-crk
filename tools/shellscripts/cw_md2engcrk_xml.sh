@@ -179,11 +179,11 @@ while((getline < md_path)!=0)
                 }
           }
 
-        # Temporary code for examining keys
-        # print md_key_string, $8;
-
         sub("^ ","",md_key_string);
         md_keys[$1]=md_key_string;
+
+        # Temporary code for examining keys
+        # print md_key_string, $8;
      }
 
 # Temporary code for checking input validity
@@ -330,7 +330,8 @@ if(CRKPOS=="IPV") crkpos="Ipc" # Pre-verb elements
   if(CRK in md_inv && (cw_md_cmp[md_inv[CRK]]=="same" || cw_md_cmp[md_inv[CRK]]=="equivalent"))
     { 
       delete keys;
-      nk=split(cw_key_string" "md_keys[md_inv[CRK]],key," ");
+      common_key_string=cw_key_string" "md_keys[md_inv[CRK]]
+      nk=split(common_key_string,key," ");
       for(i=1; i<=nk; i++)
          if(!(key[i] in keys))
            printf "%s\t%2.1f\t%s\t%s\t%s\t%s\t%s\t%s\n", key[i], rank, crkpos, CRKPOS, CRK, "MD-CW-same/equivalent", "", cw_gloss_short;
@@ -429,7 +430,7 @@ if(CRKPOS=="IPV") crkpos="Ipc" # Pre-verb elements
         }
 }' | # less; exit 0;
 
-sort -k1 -k5 | # less; exit 0;
+sort -k1 -k5 | uniq | # less; exit 0;
 
 gawk 'BEGIN { FS="\t";
 
@@ -490,23 +491,31 @@ eng="";
   print "   <tg xml:lang=\"crk\">";
       
   if(md_cw_cmp=="CW-only")
-    print "      <re sources=\"CW\">"cw_short_gloss"</re>";
-
+    { print "      <re sources=\"CW\">"cw_short_gloss" ᶜᵂ</re>";
+      print "      <re2 sources=\"CW\">"cw_short_gloss" ᶜᵂ</re2>";
+    }
+    
   if(md_cw_cmp=="MD-CW-same/equivalent")
-    print "      <re sources=\"MD CW\">"cw_short_gloss"</re>";
-
+    { print "      <re sources=\"MD CW\">"cw_short_gloss" ᴹᴰ ᶜᵂ</re>";
+      print "      <re2 sources=\"MD CW\">"cw_short_gloss" ᴹᴰ ᶜᵂ</re2>";
+    }
+    
   if(md_cw_cmp=="MD-CW-similar")
-    { print "      <re sources=\"MD\">"md_short_gloss"</re>";
-      print "      <re sources=\"CW\">"cw_short_gloss"</re>";
+    { print "      <re sources=\"MD\">"md_short_gloss" ᴹᴰ "cw_short_gloss" ᶜᵂ</re>";
+      print "      <re2 sources=\"MD\">"md_short_gloss" ᴹᴰ "cw_short_gloss" ᶜᵂ</re2>"; 
     }
     
   if(md_cw_cmp=="MD-CW-broad/narrow")
-    { print "      <re sources=\"MD\">"md_short_gloss"</re>";
-      print "      <re sources=\"CW\">"cw_short_gloss"</re>";
+    { print "      <re sources=\"MD\">"md_short_gloss" ᴹᴰ</re>";
+      print "      <re2 sources=\"MD\">"md_short_gloss" ᴹᴰ</re2>";
+      print "      <re sources=\"CW\">"cw_short_gloss" ᶜᵂ</re>";
+      print "      <re2 sources=\"CW\">"cw_short_gloss" ᶜᵂ</re2>";
     }
 
   if(md_cw_cmp=="MD-only")
-    print "      <re sources=\"MD\">"md_short_gloss"</re>";
+    { print "      <re sources=\"MD\">"md_short_gloss" ᴹᴰ</re>";
+      print "      <re2 sources=\"MD\">"md_short_gloss" ᴹᴰ</re2>";
+    }
 
   print "      <t rank=\""rank"\" pos=\""CRKPOS"\">"CRKLEX"</t>"
   print "   </tg>";
