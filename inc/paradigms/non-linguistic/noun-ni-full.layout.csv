@@ -1,7 +1,7 @@
-name: "Inanimate noun full paradigm"			
+name: "Inanimate noun full (plain) paradigm"			
 paradigm: "noun-ni.paradigm"			
 layout:			
-  type: "plain"			
+  type: "full"			
 tooltips:			
   eng:			
     "my": "1st person singular possessor"			
@@ -17,7 +17,6 @@ tooltips:
     "In/On": "In/On"
     "Smaller/younger/lesser": "Diminutive"
     "Ownership": "Possession"			
-    "Smaller/younger/lesser + O": "Diminutive Possession"		
 --			
 "One"	=N+I+Sg		
 "Many"	=N+I+Pl		
@@ -39,7 +38,8 @@ tooltips:
 "their"	=N+I+Px3Pl+Sg	=N+I+Px3Pl+Pl	=N+I+Px3Pl+Loc
 "his/her/their (further)"	=N+I+Px4Sg/Pl+Sg	=N+I+Px4Sg/Pl+Pl	=N+I+Px4Sg/Pl+Loc
 			
-	"Smaller/younger/lesser + Ownership"
+	"Smaller/younger/lesser"
+	"Ownership"
 	: "One"	: "Many"	: "In/On"
 "my"	Der/Dim+N+I+Px1Sg+Sg	Der/Dim+N+I+Px1Sg+Pl	Der/Dim+N+I+Px1Sg+Loc
 "your (one)"	Der/Dim+N+I+Px2Sg+Sg	Der/Dim+N+I+Px2Sg+Pl	Der/Dim+N+I+Px2Sg+Loc
