@@ -1,13 +1,13 @@
-name: "Transitive animate verb full paradigm"		
+name: "Transitive animate verb full (plain) paradigm"		
 paradigm: verb-ta.paradigm		
 layout:		
-  type: "plain (full)"		
+  type: "full"		
 tooltips:		
   eng:		
     "you (one) → me": "2nd person singular actor → 1st person singular goal"		
-    "you (one) → us": "2nd person singular actor → met person plural goal"		
+    "you (one) → us": "2nd person singular actor → 1st person plural goal"		
     "you (all) → me": "2nd person plural actor → 1st person singular goal"		
-    "you (all) → us": "2nd person plural actor → met person plural goal"		
+    "you (all) → us": "2nd person plural actor → 1st person plural goal"		
     "I → you (one)": "1st person singular actor → 2nd person singular goal"		
     "I → you (all)": "1st person singular actor → 2nd person plural goal"		
     "we → you (one)": "1st person plural actor → 2nd person singular goal"		
@@ -29,22 +29,22 @@ tooltips:
     "you (all) → him/her/them (further)": "2nd person plural actor → 3rd person obviative goal"		
     "s/he → me": "3rd person singular actor → 1st person singular goal"		
     "s/he → you (one)": "3rd person singular actor → 2nd person singular goal"		
-    "s/he → us": "3rd person singular actor → met person plural exclusive goal"		
-    "s/he → you and us": "3rd person singular actor → met person plural inclusive goal"		
+    "s/he → us": "3rd person singular actor → 1st person plural exclusive goal"		
+    "s/he → you and us": "3rd person singular actor → 1st person plural inclusive goal"		
     "s/he → you (all)": "3rd person singular actor → 2nd person plural goal"		
     "s/he → him/her/them (further)": "3rd person singular actor → 3rd person obviative goal"		
     "s/he → him/her/them (furthest": "3rd person singular actor → 3rd person obviative goal"		
     "they → me": "3rd person plural actor → 1st person singular goal"		
     "they → you (one)": "3rd person plural actor → 2nd person singular goal"		
-    "they → us": "3rd person plural actor → met person plural exclusive goal"		
-    "they → you and us": "3rd person plural actor → met person plural inclusive goal"		
+    "they → us": "3rd person plural actor → 1st person plural exclusive goal"		
+    "they → you and us": "3rd person plural actor → 1st person plural inclusive goal"		
     "they → you (all)": "3rd person plural actor → 2nd person plural goal"		
     "they → him/her/them (further)": "3rd person plural actor → 3rd person obviative goal"		
     "they → him/her/them (furthest": "3rd person plural actor → 3rd person further obviative goal"		
     "s/he/they (further) → me": "3rd person obviative actor → 1st person singular goal"		
     "s/he/they (further) → you (one)": "3rd person obviative actor → 2nd person singular goal"		
-    "s/he/they (further) → us": "3rd person obviative actor → met person plural exclusive goal"		
-    "s/he/they (further) → you and us": "3rd person obviative actor → met person plural inclusive goal"		
+    "s/he/they (further) → us": "3rd person obviative actor → 1st person plural exclusive goal"		
+    "s/he/they (further) → you and us": "3rd person obviative actor → 1st person plural inclusive goal"		
     "s/he/they (further) → you (all)": "3rd person obviative actor → 2nd person plural goal"		
     "s/he/they (further) → him/her/them (furthest": "3rd person obviative actor → 3rd person further obviative goal"		
     "s/he/they (further) → him/her": "3rd person obviatve actor → 3rd person singular goal"		
@@ -54,20 +54,26 @@ tooltips:
     "someone → you (one)": "Unspecified actor → 2nd person singular goal"		
     "someone → him/her": "Unspecified actor → 3rd person singular goal"		
     "someone → him/her/them (further)": "Unspecified actor → 3rd person obviative goal"		
-    "someone → us": "Unspecified actor → met person plural exclusive goal"		
-    "someone → you and us": "Unspecified actor → met person plural inclusive goal"		
+    "someone → us": "Unspecified actor → 1st person plural exclusive goal"		
+    "someone → you and us": "Unspecified actor → 1st person plural inclusive goal"		
     "someone → you (all)": "Unspecified actor → 2nd person plural goal"		
-    "someone → them": "Unspecified actor → 3rd person plural goal"
-    "PRESENT TENSE": "Something happens right now"
-    "PAST TENSE": "Something happened earlier (in the past)"
-    "FUTURE INTENTIONAL TENSE": "Someone wants something to happen (in the future)"      
-    "FUTURE DEFINITE TENSE": "Someone will certainly do something (in the future)"
-    "FUTURE/INFINITIVE": "For something to happen"     
-    "FUTURE CONDITIONAL": "When something is happening"    
-    "IMPERATIVE": "Command"     		
+    "someone → them": "Unspecified actor → 3rd person plural goal"		
+    "Something is happening now": "Present Tense"		
+    "Something happened earlier": "Past Tense"		
+    "Someone wants something to happen": "Future Intentional Tense"		
+    "Something will certainly happen": "Future Definite Tense" 		
+    "For something to happen": "Future/Infinitive"		
+    "When something happens": "Future Conditional"		
+    "Command/Request": "Imperative"		
+    "Right now": "Immediate"		
+    "Later on": "Delayed"		
+    "ni-/ki- word": "Independent"		
+    "ê-/kâ- word": "Conjunct"		
+    "ka- word": "ka-conjunct"		
+    "ta- word": "ta-conjunct"		
 --		
-	"PRESENT TENSE"	
-"Speech act participants"	: "Independent"	: "Conjunct"
+	"Something is happening now"	
+"Speech act participants"	: "ni-/ki- word"	: "ê-/kâ- word"
 "you (one) → me"	Ind+Prs+2Sg+1SgO	PV/e+*+Cnj+Prs+2Sg+1SgO
 "you (one) → us"	Ind+Prs+2Sg+1PlO	PV/e+*+Cnj+Prs+2Sg+1PlO
 "you (all) → me"	Ind+Prs+2Pl+1SgO	PV/e+*+Cnj+Prs+2Pl+1SgO
@@ -78,7 +84,7 @@ tooltips:
 "we → you (one)"	Ind+Prs+1Pl+2SgO	PV/e+*+Cnj+Prs+1Pl+2SgO
 "we → you (all)"	Ind+Prs+1Pl+2PlO	PV/e+*+Cnj+Prs+1Pl+2PlO
 		
-"Mixed participants"	: "Independent"	: "Conjunct"
+"Mixed participants"	: "ni-/ki- word"	: "ê-/kâ- word"
 "I → him/her"	Ind+Prs+1Sg+3SgO	PV/e+*+Cnj+Prs+1Sg+3SgO
 "you (one) → him/her"	Ind+Prs+2Sg+3SgO	PV/e+*+Cnj+Prs+2Sg+3SgO
 "we → him/her"	Ind+Prs+1Pl+3SgO	PV/e+*+Cnj+Prs+1Pl+3SgO
@@ -115,7 +121,7 @@ tooltips:
 "s/he/they (further) → you and us"	Ind+Prs+4Sg/Pl+12PlO	PV/e+*+Cnj+Prs+4Sg/Pl+12PlO
 "s/he/they (further) → you (all)"	Ind+Prs+4Sg/Pl+2PlO	PV/e+*+Cnj+Prs+4Sg/Pl+2PlO
 		
-"Third person participants"	: "Independent"	: "Conjunct"
+"Third person participants"	: "ni-/ki- word"	: "ê-/kâ- word"
 "s/he → him/her/them (further)"	Ind+Prs+3Sg+4Sg/PlO	PV/e+*+Cnj+Prs+3Sg+4Sg/PlO
 "they → him/her/them (further)"	Ind+Prs+3Pl+4Sg/PlO	PV/e+*+Cnj+Prs+3Pl+4Sg/PlO
 "s/he/they (further) → him/her/them (furthest"	Ind+Prs+4Sg/Pl+5Sg/PlO	PV/e+*+Cnj+Prs+4Sg/Pl+5Sg/PlO
@@ -124,7 +130,7 @@ tooltips:
 "s/he/they (further) → them"	Ind+Prs+4Sg/Pl+3PlO	PV/e+*+Cnj+Prs+4Sg/Pl+3PlO
 "s/he/they (furthest) → him/her/them (further)"	Ind+Prs+5Sg/Pl+4Sg/PlO	PV/e+*+Cnj+Prs+5Sg/Pl+4Sg/PlO
 		
-"Unspecified actor"	: "Independent"	: "Conjunct"
+"Unspecified actor"	: "ni-/ki- word"	: "ê-/kâ- word"
 "someone → me"	Ind+Prs+X+1SgO	PV/e+*+Cnj+Prs+X+1SgO
 "someone → you (one)"	Ind+Prs+X+2SgO	PV/e+*+Cnj+Prs+X+2SgO
 "someone → him/her"	Ind+Prs+X+3SgO	PV/e+*+Cnj+Prs+X+3SgO
@@ -136,8 +142,8 @@ tooltips:
 		
 "Inanimate actor"		
 		
-	"PAST TENSE"	
-"Speech act participants"	: "Independent"	: "Conjunct"
+	"Something happened earlier"	
+"Speech act participants"	: "ni-/ki- word"	: "ê-/kâ- word"
 "you (one) → me"	Ind+Prt+2Sg+1SgO	Cnj+Prt+2Sg+1SgO
 "you (one) → us"	Ind+Prt+2Sg+1PlO	Cnj+Prt+2Sg+1PlO
 "you (all) → me"	Ind+Prt+2Pl+1SgO	Cnj+Prt+2Pl+1SgO
@@ -148,7 +154,7 @@ tooltips:
 "we → you (one)"	Ind+Prt+1Pl+2SgO	Cnj+Prt+1Pl+2SgO
 "we → you (all)"	Ind+Prt+1Pl+2PlO	Cnj+Prt+1Pl+2PlO
 		
-"Mixed participants"	: "Independent"	: "Conjunct"
+"Mixed participants"	: "ni-/ki- word"	: "ê-/kâ- word"
 "I → him/her"	Ind+Prt+1Sg+3SgO	Cnj+Prt+1Sg+3SgO
 "you (one) → him/her"	Ind+Prt+2Sg+3SgO	Cnj+Prt+2Sg+3SgO
 "we → him/her"	Ind+Prt+1Pl+3SgO	Cnj+Prt+1Pl+3SgO
@@ -185,7 +191,7 @@ tooltips:
 "s/he/they (further) → you and us"	Ind+Prt+4Sg/Pl+12PlO	Cnj+Prt+4Sg/Pl+12PlO
 "s/he/they (further) → you (all)"	Ind+Prt+4Sg/Pl+2PlO	Cnj+Prt+4Sg/Pl+2PlO
 		
-"Third person participants"	: "Independent"	: "Conjunct"
+"Third person participants"	: "ni-/ki- word"	: "ê-/kâ- word"
 "s/he → him/her/them (further)"	Ind+Prt+3Sg+4Sg/PlO	Cnj+Prt+3Sg+4Sg/PlO
 "they → him/her/them (further)"	Ind+Prt+3Pl+4Sg/PlO	Cnj+Prt+3Pl+4Sg/PlO
 "s/he/they (further) → him/her/them (furthest"	Ind+Prt+4Sg/Pl+5Sg/PlO	Cnj+Prt+4Sg/Pl+5Sg/PlO
@@ -195,8 +201,8 @@ tooltips:
 "s/he/they (furthest) → him/her/them (further)"	Ind+Prt+5Sg/Pl+4Sg/PlO	Cnj+Prt+5Sg/Pl+4Sg/PlO
 		
 		
-	"FUTURE INTENTIONAL TENSE"	
-"Speech act participants"	: "Independent"	: "Conjunct"
+	"Someone wants something to happen"	
+"Speech act participants"	: "ni-/ki- word"	: "ê-/kâ- word"
 "you (one) → me"	Ind+Fut+Int+2Sg+1SgO	Cnj+Fut+Int+2Sg+1SgO
 "you (one) → us"	Ind+Fut+Int+2Sg+1PlO	Cnj+Fut+Int+2Sg+1PlO
 "you (all) → me"	Ind+Fut+Int+2Pl+1SgO	Cnj+Fut+Int+2Pl+1SgO
@@ -207,7 +213,7 @@ tooltips:
 "we → you (one)"	Ind+Fut+Int+1Pl+2SgO	Cnj+Fut+Int+1Pl+2SgO
 "we → you (all)"	Ind+Fut+Int+1Pl+2PlO	Cnj+Fut+Int+1Pl+2PlO
 		
-"Mixed participants"	: "Independent"	: "Conjunct"
+"Mixed participants"	: "ni-/ki- word"	: "ê-/kâ- word"
 "I → him/her"	Ind+Fut+Int+1Sg+3SgO	Cnj+Fut+Int+1Sg+3SgO
 "you (one) → him/her"	Ind+Fut+Int+2Sg+3SgO	Cnj+Fut+Int+2Sg+3SgO
 "we → him/her"	Ind+Fut+Int+1Pl+3SgO	Cnj+Fut+Int+1Pl+3SgO
@@ -244,7 +250,7 @@ tooltips:
 "s/he/they (further) → you and us"	Ind+Fut+Int+4Sg/Pl+12PlO	Cnj+Fut+Int+4Sg/Pl+12PlO
 "s/he/they (further) → you (all)"	Ind+Fut+Int+4Sg/Pl+2PlO	Cnj+Fut+Int+4Sg/Pl+2PlO
 		
-"Third person participants"	: "Independent"	: "Conjunct"
+"Third person participants"	: "ni-/ki- word"	: "ê-/kâ- word"
 "s/he → him/her/them (further)"	Ind+Fut+Int+3Sg+4Sg/PlO	Cnj+Fut+Int+3Sg+4Sg/PlO
 "they → him/her/them (further)"	Ind+Fut+Int+3Pl+4Sg/PlO	Cnj+Fut+Int+3Pl+4Sg/PlO
 "s/he/they (further) → him/her/them (furthest"	Ind+Fut+Int+4Sg/Pl+5Sg/PlO	Cnj+Fut+Int+4Sg/Pl+5Sg/PlO
@@ -254,8 +260,8 @@ tooltips:
 "s/he/they (furthest) → him/her/them (further)"	Ind+Fut+Int+5Sg/Pl+4Sg/PlO	Cnj+Fut+Int+5Sg/Pl+4Sg/PlO
 		
 		
-	"FUTURE DEFINITE TENSE"	
-"Speech act participants"	: "Independent"	
+	"Something will certainly happen"	
+"Speech act participants"	: "ni-/ki- word"	
 "you (one) → me"	Ind+Fut+Def+2Sg+1SgO	
 "you (one) → us"	Ind+Fut+Def+2Sg+1PlO	
 "you (all) → me"	Ind+Fut+Def+2Pl+1SgO	
@@ -266,7 +272,7 @@ tooltips:
 "we → you (one)"	Ind+Fut+Def+1Pl+2SgO	
 "we → you (all)"	Ind+Fut+Def+1Pl+2PlO	
 		
-"Mixed participants"	: "Independent"	
+"Mixed participants"	: "ni-/ki- word"	
 "I → him/her"	Ind+Fut+Def+1Sg+3SgO	
 "you (one) → him/her"	Ind+Fut+Def+2Sg+3SgO	
 "we → him/her"	Ind+Fut+Def+1Pl+3SgO	
@@ -303,7 +309,7 @@ tooltips:
 "s/he/they (further) → you and us"	Ind+Fut+Def+4Sg/Pl+12PlO	
 "s/he/they (further) → you (all)"	Ind+Fut+Def+4Sg/Pl+2PlO	
 		
-"Third person participants"	: "Independent"	
+"Third person participants"	: "ni-/ki- word"	
 "s/he → him/her/them (further)"	Ind+Fut+Def+3Sg+4Sg/PlO	
 "they → him/her/them (further)"	Ind+Fut+Def+3Pl+4Sg/PlO	
 "s/he/they (further) → him/her/them (furthest"	Ind+Fut+Def+4Sg/Pl+5Sg/PlO	
@@ -313,8 +319,8 @@ tooltips:
 "s/he/they (furthest) → him/her/them (further)"	Ind+Fut+Def+5Sg/Pl+4Sg/PlO	
 		
 		
-	"FUTURE/INFINITIVE"	
-"Speech act participants"	: "Conjunct: ka-"	: "Conjunct: ta-"
+	"For something to happen"	
+"Speech act participants"	: "ka- word"	: "ta- word"
 "you (one) → me"	PV/ka+*+Cnj+Prs+2Sg+1SgO	PV/ta+*+Cnj+Prs+2Sg+1SgO
 "you (one) → us"	PV/ka+*+Cnj+Prs+2Sg+1PlO	PV/ta+*+Cnj+Prs+2Sg+1PlO
 "you (all) → me"	PV/ka+*+Cnj+Prs+2Pl+1SgO	PV/ta+*+Cnj+Prs+2Pl+1SgO
@@ -325,7 +331,7 @@ tooltips:
 "we → you (one)"	PV/ka+*+Cnj+Prs+1Pl+2SgO	PV/ta+*+Cnj+Prs+1Pl+2SgO
 "we → you (all)"	PV/ka+*+Cnj+Prs+1Pl+2PlO	PV/ta+*+Cnj+Prs+1Pl+2PlO
 		
-"Mixed participants"	: "Conjunct: ka-"	: "Conjunct: ta-"
+"Mixed participants"	: "ka- word"	: "ta- word"
 "I → him/her"	PV/ka+*+Cnj+Prs+1Sg+3SgO	PV/ta+*+Cnj+Prs+1Sg+3SgO
 "you (one) → him/her"	PV/ka+*+Cnj+Prs+2Sg+3SgO	PV/ta+*+Cnj+Prs+2Sg+3SgO
 "we → him/her"	PV/ka+*+Cnj+Prs+1Pl+3SgO	PV/ta+*+Cnj+Prs+1Pl+3SgO
@@ -362,7 +368,7 @@ tooltips:
 "s/he/they (further) → you and us"	PV/ka+*+Cnj+Prs+4Sg/Pl+12PlO	PV/ta+*+Cnj+Prs+4Sg/Pl+12PlO
 "s/he/they (further) → you (all)"	PV/ka+*+Cnj+Prs+4Sg/Pl+2PlO	PV/ta+*+Cnj+Prs+4Sg/Pl+2PlO
 		
-"Third person participants"	: "Conjunct: ka-"	: "Conjunct: ta-"
+"Third person participants"	: "ka- word"	: "ta- word"
 "s/he → him/her/them (further)"	PV/ka+*+Cnj+Prs+3Sg+4Sg/PlO	PV/ta+*+Cnj+Prs+3Sg+4Sg/PlO
 "they → him/her/them (further)"	PV/ka+*+Cnj+Prs+3Pl+4Sg/PlO	PV/ta+*+Cnj+Prs+3Pl+4Sg/PlO
 "s/he/they (further) → him/her/them (furthest"	PV/ka+*+Cnj+Prs+4Sg/Pl+5Sg/PlO	PV/ta+*+Cnj+Prs+4Sg/Pl+5Sg/PlO
@@ -372,7 +378,7 @@ tooltips:
 "s/he/they (furthest) → him/her/them (further)"	PV/ka+*+Cnj+Prs+5Sg/Pl+4Sg/PlO	PV/ta+*+Cnj+Prs+5Sg/Pl+4Sg/PlO
 		
 		
-	"FUTURE CONDITIONAL"	
+	"When something happens"	
 "Speech act participants"		
 "you (one) → me"	Fut+Cond+2Sg+1SgO	
 "you (one) → us"	Fut+Cond+2Sg+1PlO	
@@ -433,14 +439,14 @@ tooltips:
 "s/he/they (furthest) → him/her/them (further)"	Fut+Cond+5Sg/Pl+4Sg/PlO	
 		
 		
-	"IMPERATIVE"	
-"Local"	: "Immediate"	: "Delayed"
+	"Command/Request"	
+"Speech act participants"	: "Right now"	: "Later on"
 "you (one) → me"	Imp+Imm+2Sg+1SgO	Imp+Del+2Sg+1SgO
 "you (one) → us"	Imp+Imm+2Sg+1PlO	Imp+Del+2Sg+1PlO
 "you (all) → me"	Imp+Imm+2Pl+1SgO	Imp+Del+2Pl+1SgO
 "you (all) → us"	Imp+Imm+2Pl+1PlO	Imp+Del+2Pl+1PlO
 		
-"Mixed"	: "Immediate"	: "Delayed"
+"Mixed participants"	: "Right now"	: "Later on"
 "you (one) → him/her"	Imp+Imm+2Sg+3SgO	Imp+Del+2Sg+3SgO
 "you (one) → them"	Imp+Imm+2Sg+3PlO	Imp+Del+2Sg+3PlO
 "you and we → him/her"	Imp+Imm+12Pl+3SgO	Imp+Del+12Pl+3SgO
