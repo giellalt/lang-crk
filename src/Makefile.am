@@ -42,6 +42,11 @@ ADDITIONAL_TARGETS=
 
 all-am: Makefile $(DATA) $(ADDITIONAL_TARGETS)
 
+%.fomabin: %.hfst
+	hfst-invert -i $< | hfst-fst2fst --use-backend-format --foma - -o $*.txt
+	gzip --force $*.txt
+	mv $*.txt.gz $@
+
 ########################################################
 #### Add language-specific transducer targets here: ####
 
@@ -53,8 +58,8 @@ endif # CAN_XFST
 
 #### HFST transducers
 if CAN_HFST
-GT_ANALYSERS+=
-GT_GENERATORS+=
+GT_ANALYSERS+=analyser-gt-desc.fomabin
+GT_GENERATORS+=generator-gt-norm.fomabin
 endif # CAN_HFST
 
 #### FOMA transducers
@@ -96,7 +101,8 @@ HFSTCOMPOSE.RULE = hfst-compose -F -o $@ -1 $(word 1,$^) -2 $(word 2,$^)
 ADDITIONAL_TARGETS+=analyser-gt-desc.omnivorous.hfstol
 analyser-gt-desc.omnivorous.hfst: orthography/Cans-to-Latn.compose.hfst orthography/macron-to-circumfl.compose.hfst analyser-gt-desc.hfst
 	hfst-compose -F -o $@ -1 $(word 1,$^) -2 $(word 2,$^) -o - |\
-		hfst-compose -F -o $@ -1 - -2 $(word 3, $^) -o $@
+		hfst-compose -F -1 - -2 $(word 3, $^) -o - |\
+		hfst-minimize --encode-weights -i - -o $@
 
 # Cans-to-Cans FSTs -- FSTs whose "internal representation" is in syllabics.
 ADDITIONAL_TARGETS+=analyser-gt-desc.Cans-to-Cans.hfstol
