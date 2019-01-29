@@ -540,6 +540,8 @@ SET NOT-NOUN = WORD - N ;
 
 SET NUMBERGENDER = (AN Sg) OR (AN Pl) OR (IN Sg) OR (IN Pl) OR (AN Obv) ;
 
+SET VII2 = II - VII1 ;
+
 # Here come the rules #
 
 
@@ -565,18 +567,19 @@ MAP:PREDTA @PRED-TA TARGET V + TA ;
 ##MAP @<N (Pron Dem) (-1 N (Num))  ;
 
 ##DEMONSTRATIVES AND NOUNS
-MAP:DemNANSgR @<N TARGET Dem + AN + Sg IF (NOT -1 Obv)(-1 N + AN + Sg) ;
 MAP:DemNANSgL @N> TARGET Dem + AN + Sg IF (NOT 1 Obv)(1 N + AN + Sg) ;
-MAP:DemNANPlR @<N TARGET Dem + AN + Pl IF (NOT -1 Obv)(-1 N + AN + Pl) ;
+MAP:DemNANSgR @<N TARGET Dem + AN + Sg IF (NOT -1 Obv)(-1 N + AN + Sg) ;
 MAP:DemNANPlL @N> TARGET Dem + AN + Pl IF (NOT 1 Obv)(1 N + AN + Pl) ;
+MAP:DemNANPlR @<N TARGET Dem + AN + Pl IF (NOT -1 Obv)(-1 N + AN + Pl) ;
 
-MAP:DemNANObvR @<N TARGET Dem + AN + Obv IF (-1 N + AN + Obv) ;
 MAP:DemNANObvL @N> TARGET Dem + AN + Obv IF (1 N + AN + Obv) ;
+MAP:DemNANObvR @<N TARGET Dem + AN + Obv IF (-1 N + AN + Obv) ;
 
-MAP:DemNINSgR @<N TARGET Dem + IN + Sg IF (-1 N + IN + Sg) ;
+
 MAP:DemNINSgL @N> TARGET Dem + IN + Sg IF (1 N + IN + Sg) ;
-MAP:DemNINPlR @<N TARGET Dem + IN + Pl IF (-1 N + IN + Pl) ;
+MAP:DemNINSgR @<N TARGET Dem + IN + Sg IF (-1 N + IN + Sg) ;
 MAP:DemNINPlL @N> TARGET Dem + IN + Pl IF (1 N + IN + Pl) ;
+MAP:DemNINPlR @<N TARGET Dem + IN + Pl IF (-1 N + IN + Pl) ;
 
 #êkoni and nouns
 MAP:ekoniR @<N TARGET AN + Sg IF (0 (".?êkoni"r))(-1 N + AN + Sg OR Pron + AN + Sg) ;
@@ -635,12 +638,12 @@ MAP:TIGOAL @<GOAL TARGET N + IN IF (NOT 0 Loc)(*-1 TI BARRIER V OR CLB) ;
 MAP:TIGOAL @GOAL> TARGET N + IN IF (NOT 0 Loc)(*1 TI BARRIER V OR CLB) ;
 
 #II actors:KATIE create set of II-VII1 for these!!!!!!
-MAP:IIACTor3R @<ACTOR TARGET N + IN + Sg IF (NOT 0 Loc)(*-1 II + 3Sg BARRIER N + IN OR V OR CLB) ;
-MAP:IIACTor3L @ACTOR> TARGET N + IN + Sg IF (NOT 0 Loc)(*1 II + 3Sg BARRIER N + IN OR V OR CLB) ;
-MAP:IIACTor3R @<ACTOR TARGET N + IN + Pl IF (NOT 0 Loc)(*-1 II + 3Pl BARRIER N + IN OR V OR CLB) ;
-MAP:IIACTor3L @ACTOR> TARGET N + IN + Pl IF (NOT 0 Loc)(*1 II + 3Pl BARRIER N + IN OR V OR CLB) ;
-MAP:IIACTor4R @<ACTOR TARGET N + IN + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*-1 II + 4Sg OR II + 4Pl BARRIER N + IN OR V OR CLB) ;
-MAP:IIACTor4L @ACTOR> TARGET N + IN + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*1 II + 4Sg OR II + 4Pl BARRIER N + IN OR V OR CLB) ;
+MAP:IIACTor3R @<ACTOR TARGET N + IN + Sg IF (NOT 0 Loc)(*-1 VII2 + 3Sg BARRIER N + IN OR V OR CLB) ;
+MAP:IIACTor3L @ACTOR> TARGET N + IN + Sg IF (NOT 0 Loc)(*1 VII2 + 3Sg BARRIER N + IN OR V OR CLB) ;
+MAP:IIACTor3R @<ACTOR TARGET N + IN + Pl IF (NOT 0 Loc)(*-1 VII2 + 3Pl BARRIER N + IN OR V OR CLB) ;
+MAP:IIACTor3L @ACTOR> TARGET N + IN + Pl IF (NOT 0 Loc)(*1 VII2 + 3Pl BARRIER N + IN OR V OR CLB) ;
+MAP:IIACTor4R @<ACTOR TARGET N + IN + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*-1 VII2 + 4Sg OR VII2 + 4Pl BARRIER N + IN OR V OR CLB) ;
+MAP:IIACTor4L @ACTOR> TARGET N + IN + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*1 VII2 + 4Sg OR VII2 + 4Pl BARRIER N + IN OR V OR CLB) ;
 
 ##PRONOMINAL ACTORS 
 MAP:AITITADem3SgACTR @<ACTOR TARGET Pron + AN + Sg IF ((NOT 0 @<N OR @N>) LINK (*-1 AI + 3Sg OR TI + 3Sg OR TA + 3Sg BARRIER V OR CLB)) ;
