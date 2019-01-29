@@ -1207,6 +1207,8 @@ SELECT:ayaNA IN + Pl IF (0 ("<aya>"r))(1 Pron + IN + Pl) ;
 
 # We remove the particle if the word can be something more interesting - keep the particle, more common/likely
 SELECT:ChooseIpc Ipc IF (0 N OR V) ;
+# Iph sub/rem introduces some issues, fix with following constraint
+SELECT:ChooseIph Iph IF (0 N OR V) ;
 
 SELECT:LocnotV N + Loc IF (0 V) ;
 
