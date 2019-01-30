@@ -33,20 +33,20 @@ tooltips:
     "s/he → you and us": "3rd person singular actor → 1st person plural inclusive goal"
     "s/he → you (all)": "3rd person singular actor → 2nd person plural goal"
     "s/he → him/her/them (further)": "3rd person singular actor → 3rd person obviative goal"
-    "s/he → him/her/them (furthest": "3rd person singular actor → 3rd person obviative goal"
+    "s/he → him/her/them (furthest)": "3rd person singular actor → 3rd person obviative goal"
     "they → me": "3rd person plural actor → 1st person singular goal"
     "they → you (one)": "3rd person plural actor → 2nd person singular goal"
     "they → us": "3rd person plural actor → 1st person plural exclusive goal"
     "they → you and us": "3rd person plural actor → 1st person plural inclusive goal"
     "they → you (all)": "3rd person plural actor → 2nd person plural goal"
     "they → him/her/them (further)": "3rd person plural actor → 3rd person obviative goal"
-    "they → him/her/them (furthest": "3rd person plural actor → 3rd person further obviative goal"
+    "they → him/her/them (furthest)": "3rd person plural actor → 3rd person further obviative goal"
     "s/he/they (further) → me": "3rd person obviative actor → 1st person singular goal"
     "s/he/they (further) → you (one)": "3rd person obviative actor → 2nd person singular goal"
     "s/he/they (further) → us": "3rd person obviative actor → 1st person plural exclusive goal"
     "s/he/they (further) → you and us": "3rd person obviative actor → 1st person plural inclusive goal"
     "s/he/they (further) → you (all)": "3rd person obviative actor → 2nd person plural goal"
-    "s/he/they (further) → him/her/them (furthest": "3rd person obviative actor → 3rd person further obviative goal"
+    "s/he/they (further) → him/her/them (furthest)": "3rd person obviative actor → 3rd person further obviative goal"
     "s/he/they (further) → him/her": "3rd person obviatve actor → 3rd person singular goal"
     "s/he/they (further) → them": "3rd person obviative actor → 3rd person plural goal"
     "s/he/they (furthest) → him/her/them (further)": "3rd person further obviative actor → 3rd person obviative goal"
@@ -124,7 +124,7 @@ tooltips:
 | "Third person participants"                     | : "ni-/ki- word"                    | : "ê-/kâ- word"                |
 | "s/he → him/her/them (further)"                 | Ind+Prs+3Sg+4Sg/PlO                 | PV/e+*+Cnj+Prs+3Sg+4Sg/PlO     |
 | "they → him/her/them (further)"                 | Ind+Prs+3Pl+4Sg/PlO                 | PV/e+*+Cnj+Prs+3Pl+4Sg/PlO     |
-| "s/he/they (further) → him/her/them (furthest"  | Ind+Prs+4Sg/Pl+5Sg/PlO              | PV/e+*+Cnj+Prs+4Sg/Pl+5Sg/PlO  |
+| "s/he/they (further) → him/her/them (furthest)" | Ind+Prs+4Sg/Pl+5Sg/PlO              | PV/e+*+Cnj+Prs+4Sg/Pl+5Sg/PlO  |
 |                                                 |                                     |                                |
 | "s/he/they (further) → him/her"                 | Ind+Prs+4Sg/Pl+3SgO                 | PV/e+*+Cnj+Prs+4Sg/Pl+3SgO     |
 | "s/he/they (further) → them"                    | Ind+Prs+4Sg/Pl+3PlO                 | PV/e+*+Cnj+Prs+4Sg/Pl+3PlO     |
@@ -194,7 +194,7 @@ tooltips:
 | "Third person participants"                     | : "ni-/ki- word"                    | : "ê-/kâ- word"                |
 | "s/he → him/her/them (further)"                 | Ind+Prt+3Sg+4Sg/PlO                 | Cnj+Prt+3Sg+4Sg/PlO            |
 | "they → him/her/them (further)"                 | Ind+Prt+3Pl+4Sg/PlO                 | Cnj+Prt+3Pl+4Sg/PlO            |
-| "s/he/they (further) → him/her/them (furthest"  | Ind+Prt+4Sg/Pl+5Sg/PlO              | Cnj+Prt+4Sg/Pl+5Sg/PlO         |
+| "s/he/they (further) → him/her/them (furthest)" | Ind+Prt+4Sg/Pl+5Sg/PlO              | Cnj+Prt+4Sg/Pl+5Sg/PlO         |
 |                                                 |                                     |                                |
 | "s/he/they (further) → him/her"                 | Ind+Prt+4Sg/Pl+3SgO                 | Cnj+Prt+4Sg/Pl+3SgO            |
 | "s/he/they (further) → them"                    | Ind+Prt+4Sg/Pl+3PlO                 | Cnj+Prt+4Sg/Pl+3PlO            |
@@ -253,7 +253,7 @@ tooltips:
 | "Third person participants"                     | : "ni-/ki- word"                    | : "ê-/kâ- word"                |
 | "s/he → him/her/them (further)"                 | Ind+Fut+Int+3Sg+4Sg/PlO             | Cnj+Fut+Int+3Sg+4Sg/PlO        |
 | "they → him/her/them (further)"                 | Ind+Fut+Int+3Pl+4Sg/PlO             | Cnj+Fut+Int+3Pl+4Sg/PlO        |
-| "s/he/they (further) → him/her/them (furthest"  | Ind+Fut+Int+4Sg/Pl+5Sg/PlO          | Cnj+Fut+Int+4Sg/Pl+5Sg/PlO     |
+| "s/he/they (further) → him/her/them (furthest)" | Ind+Fut+Int+4Sg/Pl+5Sg/PlO          | Cnj+Fut+Int+4Sg/Pl+5Sg/PlO     |
 |                                                 |                                     |                                |
 | "s/he/they (further) → him/her"                 | Ind+Fut+Int+4Sg/Pl+3SgO             | Cnj+Fut+Int+4Sg/Pl+3SgO        |
 | "s/he/they (further) → them"                    | Ind+Fut+Int+4Sg/Pl+3PlO             | Cnj+Fut+Int+4Sg/Pl+3PlO        |
@@ -312,7 +312,7 @@ tooltips:
 | "Third person participants"                     | : "ni-/ki- word"                    |                                |
 | "s/he → him/her/them (further)"                 | Ind+Fut+Def+3Sg+4Sg/PlO             |                                |
 | "they → him/her/them (further)"                 | Ind+Fut+Def+3Pl+4Sg/PlO             |                                |
-| "s/he/they (further) → him/her/them (furthest"  | Ind+Fut+Def+4Sg/Pl+5Sg/PlO          |                                |
+| "s/he/they (further) → him/her/them (furthest)" | Ind+Fut+Def+4Sg/Pl+5Sg/PlO          |                                |
 |                                                 |                                     |                                |
 | "s/he/they (further) → him/her"                 | Ind+Fut+Def+4Sg/Pl+3SgO             |                                |
 | "s/he/they (further) → them"                    | Ind+Fut+Def+4Sg/Pl+3PlO             |                                |
@@ -371,7 +371,7 @@ tooltips:
 | "Third person participants"                     | : "ka- word"                        | : "ta- word"                   |
 | "s/he → him/her/them (further)"                 | PV/ka+*+Cnj+Prs+3Sg+4Sg/PlO         | PV/ta+*+Cnj+Prs+3Sg+4Sg/PlO    |
 | "they → him/her/them (further)"                 | PV/ka+*+Cnj+Prs+3Pl+4Sg/PlO         | PV/ta+*+Cnj+Prs+3Pl+4Sg/PlO    |
-| "s/he/they (further) → him/her/them (furthest"  | PV/ka+*+Cnj+Prs+4Sg/Pl+5Sg/PlO      | PV/ta+*+Cnj+Prs+4Sg/Pl+5Sg/PlO |
+| "s/he/they (further) → him/her/them (furthest)" | PV/ka+*+Cnj+Prs+4Sg/Pl+5Sg/PlO      | PV/ta+*+Cnj+Prs+4Sg/Pl+5Sg/PlO |
 |                                                 |                                     |                                |
 | "s/he/they (further) → him/her"                 | PV/ka+*+Cnj+Prs+4Sg/Pl+3SgO         | PV/ta+*+Cnj+Prs+4Sg/Pl+3SgO    |
 | "s/he/they (further) → them"                    | PV/ka+*+Cnj+Prs+4Sg/Pl+3PlO         | PV/ta+*+Cnj+Prs+4Sg/Pl+3PlO    |
@@ -429,13 +429,13 @@ tooltips:
 |                                                 |                                     |                                |
 | "Third person participants"                     |                                     |                                |
 | "s/he → him/her/them (further)"                 | Fut+Cond+3Sg+4Sg/PlO                |                                |
-| "s/he → him/her/them (furthest"                 | Fut+Cond+3Sg+5Sg/PlO                |                                |
+| "s/he → him/her/them (furthest)"                | Fut+Cond+3Sg+5Sg/PlO                |                                |
 | "they → him/her/them (further)"                 | Fut+Cond+3Pl+4Sg/PlO                |                                |
-| "they → him/her/them (furthest"                 | Fut+Cond+3Pl+5Sg/PlO                |                                |
+| "they → him/her/them (furthest)"                | Fut+Cond+3Pl+5Sg/PlO                |                                |
 |                                                 |                                     |                                |
 | "s/he/they (further) → him/her"                 | Fut+Cond+4Sg/Pl+3SgO                |                                |
 | "s/he/they (further) → them"                    | Fut+Cond+4Sg/Pl+3PlO                |                                |
-| "s/he/they (further) → him/her/them (furthest"  | Fut+Cond+4Sg/Pl+5Sg/PlO             |                                |
+| "s/he/they (further) → him/her/them (furthest)" | Fut+Cond+4Sg/Pl+5Sg/PlO             |                                |
 | "s/he/they (furthest) → him/her/them (further)" | Fut+Cond+5Sg/Pl+4Sg/PlO             |                                |
 |                                                 |                                     |                                |
 |                                                 |                                     |                                |
