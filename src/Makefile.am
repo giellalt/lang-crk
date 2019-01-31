@@ -42,8 +42,14 @@ ADDITIONAL_TARGETS=
 
 all-am: Makefile $(DATA) $(ADDITIONAL_TARGETS)
 
-%.fomabin: %.hfst
+# The analyzer MUST be inverted.
+analyser-%.fomabin: analyser-%.hfst
 	hfst-invert -i $< | hfst-fst2fst --use-backend-format --foma - -o $*.txt
+	gzip --force $*.txt
+	mv $*.txt.gz $@
+
+generator-%.fomabin: generator-%.hfst
+	hfst-fst2fst --use-backend-format --foma $< -o $*.txt
 	gzip --force $*.txt
 	mv $*.txt.gz $@
 
