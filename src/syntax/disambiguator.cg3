@@ -966,11 +966,15 @@ REMOVE:DemNotIpc Ipc ( 1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
 	## Mîcisowinâhtik ôma.
 	
 #some Dems can be in pl or an obv, these need to be selected appropriately
-REMOVE:DemANObvnotIN IN + Pl  (-1 N + AN + Obv)(0 Dem + AN + Obv) ;
-REMOVE:DemANObvnotIN IN + Pl  (1 N + AN + Obv) (0 Dem + AN + Obv) ;
+REMOVE:DemANObvnotIN IN + Pl  (-1 N + AN + Obv)(0 Pron + AN + Obv) ;
+REMOVE:DemANObvnotIN IN + Pl  (1 N + AN + Obv) (0 Pron + AN + Obv) ;
 
-REMOVE:DemINnotANObv AN + Obv (-1 N + IN + Pl)(0 Dem + IN + Pl) ;
-REMOVE:DemINnotANObv AN + Obv (1 N + IN + Pl) (0 Dem + IN + Pl) ;
+REMOVE:DemINnotANObv AN + Obv (-1 N + IN + Pl)(0 Pron + IN + Pl) ;
+REMOVE:DemINnotANObv AN + Obv (1 N + IN + Pl) (0 Pron + IN + Pl) ;
+
+#if N but not Dem ambiguous
+REMOVE:ProxnotObv N + Obv (-1C Dem + Prox) ;
+REMOVE:ProxnotObv N + Obv (1C Dem + Prox) ;
 
 #Dems can be NPs on their own and act as arguments
 REMOVE:DemNP Ipc (*0 V + TI)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
@@ -1031,6 +1035,12 @@ SELECT:PronNotN Pron + Pers IF (0 N + IN) ;
 REMOVE:NANObv Obv IF (0 N + AN + Sg)(*0 TA + 3Sg BARRIER V OR CLB) ; 
 SELECT:NANObv Obv IF (0 N + AN + Sg)(NOT *0 TA + 3Sg BARRIER V OR CLB)(*0 TA + 4Sg/PlO OR TA + 4Sg/Pl BARRIER V OR CLB) ;
 
+#ambiguity between 3p and obv in inverse verbs (currently only looking immediately before and after, may expand range later
+SELECT:3PlactorL TA + 3Pl IF (-1 AN + Pl) ;
+SELECT:3PlactorR TA + 3Pl IF (1 AN + Pl) ;
+
+SELECT:ObvactorL TA + 4Sg/Pl IF (-1 AN + Obv) ;
+SELECT:ObvactorR TA + 4Sg/Pl IF (1 AN + Obv) ;
 
 #kikway disambiguation
 REMOVE:kikway Pron IF (0 KIKWAY) ;
