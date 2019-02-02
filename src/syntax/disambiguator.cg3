@@ -1014,6 +1014,9 @@ REMOVE:IndOnly Cnj (0 Ind)(NOT *0 Ind);
 #REMOVE Fut (0 Ind);
 REMOVE Imp (0 Ind)(*0 N + Sg);
 
+#vii/ai conjunct w vs n > k vs hk in conjunct
+SELECT:WvsNcnj II IF (0 ("<.*hk>"r) + Cnj + 3Sg) ;
+
 # REMOVE:2SgWrong 2Sg IF (0 ("<.*ân>"r) + 1Sg) ;
 # REMOVE:1SgWrong 1Sg IF (0 ("<.*an>"r) + 2Sg) ;
 # REMOVE:12PlWrong 12Pl IF (0 ("<.*âhk>"r) + 1Pl) ;
@@ -1035,9 +1038,12 @@ SELECT:PronNotN Pron + Pers IF (0 N + IN) ;
 REMOVE:NANObv Obv IF (0 N + AN + Sg)(*0 TA + 3Sg BARRIER V OR CLB) ; 
 SELECT:NANObv Obv IF (0 N + AN + Sg)(NOT *0 TA + 3Sg BARRIER V OR CLB)(*0 TA + 4Sg/PlO OR TA + 4Sg/Pl BARRIER V OR CLB) ;
 
-#ambiguity between 3p and obv in inverse verbs (currently only looking immediately before and after, may expand range later
+#ambiguity between 3 and obv in inverse verbs (currently only looking immediately before and after, may expand range later
 SELECT:3PlactorL TA + 3Pl IF (-1 AN + Pl) ;
 SELECT:3PlactorR TA + 3Pl IF (1 AN + Pl) ;
+
+SELECT:3SgactorL TA + 3Sg IF (-1 AN + Sg) ;
+SELECT:3SgactorR TA + 3Sg IF (1 AN + Sg) ;
 
 SELECT:ObvactorL TA + 4Sg/Pl IF (-1 AN + Obv) ;
 SELECT:ObvactorR TA + 4Sg/Pl IF (1 AN + Obv) ;
@@ -1093,6 +1099,8 @@ SELECT:PV4 ("[^<]+[-].+[-].+[-].+[-][^>]+"r) ;
 SELECT:PV3 ("[^<]+[-].+[-].+[-][^>]+"r) ;
 SELECT:PV2 ("[^<]+[-].+[-][^>]+"r) ;
 SELECT:PV1 ("[^<]+[-][^>]+"r) ;
+
+REMOVE:PV PREVERB IF (NOT 0 (".*-.*"r))(0 Ind) ;
 
 #Remove Err/Orth
 REMOVE:NoErr Err/Orth ;

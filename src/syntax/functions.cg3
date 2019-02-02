@@ -307,11 +307,27 @@ MAP:DemNANPlR @<N TARGET Dem + AN + Pl IF (NOT -1 Obv)(-1 N + AN + Pl) ;
 MAP:DemNANObvL @N> TARGET Dem + AN + Obv IF (1 N + AN + Obv) ;
 MAP:DemNANObvR @<N TARGET Dem + AN + Obv IF (-1 N + AN + Obv) ;
 
-
 MAP:DemNINSgL @N> TARGET Dem + IN + Sg IF (1 N + IN + Sg) ;
 MAP:DemNINSgR @<N TARGET Dem + IN + Sg IF (-1 N + IN + Sg) ;
 MAP:DemNINPlL @N> TARGET Dem + IN + Pl IF (1 N + IN + Pl) ;
 MAP:DemNINPlR @<N TARGET Dem + IN + Pl IF (-1 N + IN + Pl) ;
+
+MAP:DemNANSgLnum @N> TARGET Dem + AN + Sg IF (NOT 1 Obv)(1 Num)(2 N + AN + Sg) ;
+MAP:DemNANPlLnum @N> TARGET Dem + AN + Pl IF (NOT 1 Obv)(1 Num)(2 N + AN + Pl) ;
+
+MAP:DemNANObvLnum @N> TARGET Dem + AN + Obv IF (1 Num)(2 N + AN + Obv) ;
+
+MAP:DemNINSgLnum @N> TARGET Dem + IN + Sg IF (1 Num)(2 N + IN + Sg) ;
+MAP:DemNINPlLnum @N> TARGET Dem + IN + Pl IF (1 Num)(2 N + IN + Pl) ;
+
+# consider streamlining to one constraint of Num before N 
+MAP:NumNANSgL @N> TARGET Num IF (1 N + AN + Sg) ;
+MAP:NumNANPlL @N> TARGET Num IF (1 N + AN + Pl) ;
+
+MAP:NumNANObvL @N> TARGET Num IF (1 N + AN + Obv) ;
+
+MAP:NumNINSgL @N> TARGET Num IF (1 N + IN + Sg) ;
+MAP:NumNINPlL @N> TARGET Num IF (1 N + IN + Pl) ;
 
 #êkoni and nouns
 MAP:ekoniR @<N TARGET AN + Sg IF (0 (".?êkoni"r))(-1 N + AN + Sg OR Pron + AN + Sg) ;
