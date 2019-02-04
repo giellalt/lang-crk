@@ -329,6 +329,16 @@ MAP:NumNANObvL @N> TARGET Num IF (1 N + AN + Obv) ;
 MAP:NumNINSgL @N> TARGET Num IF (1 N + IN + Sg) ;
 MAP:NumNINPlL @N> TARGET Num IF (1 N + IN + Pl) ;
 
+# num before Dem N or just Dem (again could be added to above, separated for testing purposes
+
+MAP:NumNANSgL @N> TARGET Num IF (1 Dem + AN + Sg) ;
+MAP:NumNANPlL @N> TARGET Num IF (1 Dem + AN + Pl) ;
+
+MAP:NumNANObvL @N> TARGET Num IF (1 Dem + AN + Obv) ;
+
+MAP:NumNINSgL @N> TARGET Num IF (1 Dem + IN + Sg) ;
+MAP:NumNINPlL @N> TARGET Num IF (1 Dem + IN + Pl) ;
+
 #êkoni and nouns
 MAP:ekoniR @<N TARGET AN + Sg IF (0 (".?êkoni"r))(-1 N + AN + Sg OR Pron + AN + Sg) ;
 MAP:ekoniL @N> TARGET AN + Sg IF (0 (".?êkonik"r))(1 N + AN + Sg OR Pron + AN + Sg) ;

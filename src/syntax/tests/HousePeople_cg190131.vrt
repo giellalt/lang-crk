@@ -253,7 +253,7 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<tâpiskôc>"
 	"tâpiskôc" Ipc 
 "<ê-kakwê-môniyâhkâsot>"
@@ -563,7 +563,7 @@
 "<ahpô>"
 	"ahpô" Ipc
 "<piko>"
-	"piko" Ipc
+	"#piko" Ipc
 "<,>"
 	"," CLB
 "<kîkway>"
@@ -755,7 +755,7 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<iyikohk>"
 	"iyikohk" Ipc
 "<ê-kî-kanâtêyimât>"
@@ -789,7 +789,7 @@
 "<namôya>"
 	"namôya" Ipc Neg
 "<wîhkâc>"
-	"wîhkâc" Ipc
+	"#wîhkâc" Ipc
 "<êkos-îsi>"
 	"êkosi_isi" Ipc Err/Orth Lemma CW
 "<ohci-wîcêwâkanihtow>"
@@ -1169,7 +1169,7 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<,>"
 	"," CLB
 "<êkâ>"
@@ -1371,7 +1371,7 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<ê-kî-isi-kiskinahamawâcik>"
 	"kiskinwahamawêw" PV/e PV/isi V TA Cnj Prt 3Pl 4Sg/PlO Err/Orth %PRED
 "<ôhi>"
@@ -1542,7 +1542,7 @@
 "<nânitaw>"
 	"nânitaw" Ipc
 "<isi>"
-	"isi" Ipc
+	"#isi" Ipc
 "<ê-sôhkahâtitôtâtocik>"
 	"itôtâtowak" PV/e PV/sohkahat V AI Cnj Prs 3Pl Lemma %PRED
 "<,>"
@@ -1919,7 +1919,7 @@
 "<êkâ>"
 	"êkâ" Ipc
 "<nânitaw>"
-	"nânitaw" Ipc
+	"#nânitaw" Ipc
 "<k-êsi-mâyinikêyit>"
 	"#mâyinikêw" PV/ka PV/isi V AI Cnj Prs 4Sg/Pl Err/Orth 
 	"mâyinikêw" PV/kaa PV/isi V AI Cnj Prs 4Sg/Pl Err/Orth %PRED
@@ -1997,7 +1997,7 @@
 "<namôya>"
 	"namôya" Ipc Neg
 "<wîhkâc>"
-	"wîhkâc" Ipc
+	"#wîhkâc" Ipc
 "<ohci>"
 	"ohci" Ipc
 "<maci-kîkway>"
@@ -2055,7 +2055,7 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<,>"
 	"," CLB
 "<kêhtê-aya>"
@@ -2567,7 +2567,7 @@
 "<nanâtohk>"
 	"nanâtohk" Ipc 
 "<isi>"
-	"isi" Ipc
+	"#isi" Ipc
 "<kîkway>"
 	"kîkway" N IN Sg %<OBL
 	"#kîkway" N AN Sg
@@ -2746,7 +2746,7 @@
 	"#tâpwêw" V AI Imp Imm 2Sg 
 	"tâpwê" Ipc
 "<piko>"
-	"piko" Ipc
+	"#piko" Ipc
 "<ê-kî-isi-pimâtisit>"
 	"pimâtisiw" PV/e PV/isi V AI Cnj Prt 3Sg %PRED
 "<anima>"
@@ -2831,7 +2831,7 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<ê-osîhtamâsot>"
 	"osîhtamâsow" PV/e V AI Cnj Prs 3Sg %PRED
 "<maskisina>"
@@ -2992,7 +2992,7 @@
 "<êkosi>"
 	"êkosi" Ipc
 "<mâka>"
-	"mâka" Ipc
+	"#mâka" Ipc
 "<nîsta>"
 	"nîsta" Pron Pers 1Sg Incl %ACTOR>
 "<nititêyihtên>"
@@ -3547,7 +3547,7 @@
 "<âsay>"
 	"âsay" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<êkota>"
 	"êkota" Ipc
 "<môniyâw>"
@@ -3641,7 +3641,7 @@
 	"#tâpwêw" V AI Imp Imm 2Sg
 	"tâpwê" Ipc
 "<piko>"
-	"piko" Ipc
+	"#piko" Ipc
 "<ê-kî-pimi-mosci-pimâtisicik>"
 	"pimâtisiw" PV/e PV/pimi PV/mosci V AI Cnj Prt 3Pl %PRED
 "<,>"
@@ -3931,7 +3931,7 @@
 "<">"
 	""" PUNCT
 "<pêyak>"
-	"pêyak" Num Ipc
+	"pêyak" Num Ipc %N>
 "<kîkway>"
 	"kîkway" N IN Sg
 	"#kîkway" N AN Sg
@@ -3949,7 +3949,7 @@
 "<mâka>"
 	"mâka" Ipc
 "<pêyak>"
-	"pêyak" Num Ipc
+	"pêyak" Num Ipc %N>
 "<kîkway>"
 	"kîkway" N IN Sg %OBL>
 	"#kîkway" N AN Sg
@@ -4072,7 +4072,7 @@
 <paragraph>
 <sentence id="5548">
 "<pêyak>"
-	"pêyak" Num Ipc
+	"pêyak" Num Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %N>
 "<nâpêw>"
@@ -4111,7 +4111,7 @@
 "<mâka>"
 	"mâka" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<ê-kî-misi-kîskwêpêt>"
 	"kîskwêpêw" PV/e PV/misi V AI Cnj Prt 3Sg %PRED
 "<ôma>"
@@ -4768,7 +4768,7 @@
 "<ê-kî-kisiwâhit>"
 	"kisiwâhêw" PV/e V TA Cnj Prt 3Sg 1SgO %PRED
 "<pêyak>"
-	"pêyak" Num Ipc
+	"pêyak" Num Ipc %N>
 "<kisêyiniw>"
 	"kisêyiniw" N AN Sg %<ACTOR
 "<,>"
@@ -4824,7 +4824,7 @@
 "<kiwî-âcimostâtinâwâw>"
 	"âcimostawêw" V TA Ind Fut Int 1Sg 2PlO %PRED
 "<pêyak>"
-	"pêyak" Num Ipc
+	"pêyak" Num Ipc %N>
 "<kîkway>"
 	"kîkway" N IN Sg %<OBL
 	"#kîkway" N AN Sg
@@ -5451,7 +5451,7 @@
 "<mâka>"
 	"mâka" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<aspin>"
 	"aspin" Ipc
 "<ôma>"
@@ -6489,7 +6489,7 @@
 	"#tâpwêw" V AI Imp Imm 2Sg 
 	"tâpwê" Ipc
 "<piko>"
-	"piko" Ipc
+	"#piko" Ipc
 "<êkos-îsi>"
 	"êkosi_isi" Ipc Err/Orth Lemma CW
 "<âtiht>"
@@ -7141,7 +7141,7 @@
 "<pôt-ôhi>"
 	"*pôt-ôhi"
 "<nîso>"
-	"nîso" Num Ipc 
+	"nîso" Num Ipc %N>
 "<oskinîkiskwêwa>"
 	"oskinîkiskwêw" N AN Sg Obv %GOAL>
 "<k-âyâwât>"
@@ -7361,7 +7361,7 @@
 "<">"
 	""" PUNCT
 "<pêyak>"
-	"pêyak" Num Ipc
+	"pêyak" Num Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %GOAL>
 "<êkâya>"
@@ -7827,7 +7827,7 @@
 "<mâka>"
 	"mâka" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<ôma>"
 	"ôma" Ipc
 	"#ôma" Pron Dem Prox IN Sg
@@ -7998,7 +7998,7 @@
 "<êkâ>"
 	"êkâ" Ipc
 "<nânitaw>"
-	"nânitaw" Ipc
+	"#nânitaw" Ipc
 "<ayiwâk>"
 	"ayiwâk" Ipc
 "<ê-kî-tôtahk>"
@@ -8333,7 +8333,7 @@
 "<pôt-âwa>"
 	"pôti_awa" Ipc Lemma
 "<pêyak>"
-	"pêyak" Num Ipc 
+	"pêyak" Num Ipc %N>
 "<môtêyâpisk>"
 	"môtêyâpisk" N IN Sg %GOAL>
 "<iskotêwâpoy>"
@@ -8788,7 +8788,7 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<ahtayak>"
 	"ahtay" N AN Pl %GOAL>
 "<mâna>"
@@ -9136,7 +9136,7 @@
 "<kotak>"
 	"kotak" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<,>"
 	"," CLB
 "<$>"
@@ -9162,7 +9162,7 @@
 "<mîna>"
 	"mîna" Ipc
 "<pêyak>"
-	"pêyak" Num Ipc
+	"pêyak" Num Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg
 "<,>"
@@ -9770,7 +9770,7 @@
 "<êkotê>"
 	"êkotê" Ipc
 "<pêyak>"
-	"pêyak" Num Ipc 
+	"pêyak" Num Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %N>
 "<kisêyiniw>"
@@ -9938,7 +9938,7 @@
 "<mâka>"
 	"mâka" Ipc
 "<ôma>"
-	"ôma" Ipc
+	"#ôma" Ipc
 	"#ôma" Pron Dem Prox IN Sg
 "<kiwâpahtên>"
 	"wâpahtam" V TI Ind Prs 2Sg %PRED
@@ -10151,7 +10151,7 @@
 	"#tâpwêw" V AI Imp Imm 2Sg
 	"tâpwê" Ipc
 "<piko>"
-	"piko" Ipc
+	"#piko" Ipc
 "<aspin>"
 	"aspin" Ipc
 "<êkwa>"
@@ -10503,7 +10503,7 @@
 "<âsay>"
 	"âsay" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<,>"
 	"," CLB
 "<êkamâ>"
@@ -10737,7 +10737,7 @@
 "<âsay>"
 	"âsay" Ipc
 "<mîna>"
-	"mîna" Ipc
+	"#mîna" Ipc
 "<nisipwêhtân>"
 	"sipwêhtêw" V AI Ind Prs 1Sg %PRED
 "<,>"
@@ -11177,7 +11177,7 @@
 "<namôya>"
 	"namôya" Ipc Neg
 "<wîhkâc>"
-	"wîhkâc" Ipc
+	"#wîhkâc" Ipc
 "<$>"
 	$ PUNCT""
 "<'>"
@@ -11713,7 +11713,7 @@
 "<êkosi>"
 	"êkosi" Ipc
 "<mâka>"
-	"mâka" Ipc
+	"#mâka" Ipc
 "<anima>"
 	"#ôma" Pron Dem Med IN Sg
 	"anima" Ipc
