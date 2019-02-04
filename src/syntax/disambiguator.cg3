@@ -564,9 +564,6 @@ REMCOHORT ("<ôma>") (-1 ("<êsa_ôma>" Iph)) ;
 SUBSTITUTE ("<êwako>" "êwako" Ipc) ("<êwako_ani>" "êwako_ani" Iph) TARGET ("<êwako>" Ipc) IF (1 ("<ani>" Ipc)) ;
 REMCOHORT ("<ani>") (-1 ("<êwako_ani>" Iph)) ;
 
-SUBSTITUTE ("<êwako>" "êwako" Ipc) ("<êwako_ôma>" "êwako_ôma" Iph) TARGET ("<êwako>" Ipc) IF (1 ("<ôma>" Ipc)) ;
-REMCOHORT ("<ôma>") (-1 ("<êwako_ôma>" Iph)) ;
-
 SUBSTITUTE ("<ispîhci>" "ispîhci" Ipc) ("<ispîhci_wiya>" "ispîhci_wiya" Iph) TARGET ("<ispîhci>" Ipc) IF (1 ("<wiya>" Ipc)) ;
 REMCOHORT ("<wiya>") (-1 ("<ispîhci_wiya>" Iph)) ;
 
@@ -743,6 +740,9 @@ REMCOHORT ("<wiya>") (-1 ("<namôya_wiya>" Iph)) ;
 
 SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_wîhkâc>" "namôya_wîhkâc" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<wîhkâc>" Ipc)) ;
 REMCOHORT ("<wîhkâc>") (-1 ("<namôya_wîhkâc>" Iph)) ;
+
+SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_wîhkât>" "namôya_wîhkât" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<wîhkât>" Ipc)) ;
+REMCOHORT ("<wîhkât>") (-1 ("<namôya_wîhkât>" Iph)) ;
 
 SUBSTITUTE ("<namwâc>" "namwâc" Ipc) ("<namwâc_êkwayikohk>" "namwâc_êkwayikohk" Iph) TARGET ("<namwâc>" Ipc) IF (1 ("<êkwayikohk>" Ipc)) ;
 REMCOHORT ("<êkwayikohk>") (-1 ("<namwâc_êkwayikohk>" Iph)) ;
@@ -1039,14 +1039,14 @@ REMOVE:NANObv Obv IF (0 N + AN + Sg)(*0 TA + 3Sg BARRIER V OR CLB) ;
 SELECT:NANObv Obv IF (0 N + AN + Sg)(NOT *0 TA + 3Sg BARRIER V OR CLB)(*0 TA + 4Sg/PlO OR TA + 4Sg/Pl BARRIER V OR CLB) ;
 
 #ambiguity between 3 and obv in inverse verbs (currently only looking immediately before and after, may expand range later
-SELECT:3PlactorL TA + 3Pl IF (-1 AN + Pl) ;
-SELECT:3PlactorR TA + 3Pl IF (1 AN + Pl) ;
+SELECT:3PlactorL TA + 3Pl IF (*-2 AN + Pl) ;
+SELECT:3PlactorR TA + 3Pl IF (*3 AN + Pl) ;
 
-SELECT:3SgactorL TA + 3Sg IF (-1 AN + Sg) ;
-SELECT:3SgactorR TA + 3Sg IF (1 AN + Sg) ;
+SELECT:3SgactorL TA + 3Sg IF (*-3 AN + Sg) ;
+SELECT:3SgactorR TA + 3Sg IF (*3 AN + Sg) ;
 
-SELECT:ObvactorL TA + 4Sg/Pl IF (-1 AN + Obv) ;
-SELECT:ObvactorR TA + 4Sg/Pl IF (1 AN + Obv) ;
+SELECT:ObvactorL TA + 4Sg/Pl IF (*-3 AN + Obv) ;
+SELECT:ObvactorR TA + 4Sg/Pl IF (*3 AN + Obv) ;
 
 #kikway disambiguation
 REMOVE:kikway Pron IF (0 KIKWAY) ;
