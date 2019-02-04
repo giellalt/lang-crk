@@ -339,7 +339,7 @@ MAP:NumNANObvL @N> TARGET Num IF (1 Dem + AN + Obv) ;
 MAP:NumNINSgL @N> TARGET Num IF (1 Dem + IN + Sg) ;
 MAP:NumNINPlL @N> TARGET Num IF (1 Dem + IN + Pl) ;
 
-#êkoni and nouns
+#êkoni and nouns - get rid of R looking ones?
 MAP:ekoniR @<N TARGET AN + Sg IF (0 (".?êkoni"r))(-1 N + AN + Sg OR Pron + AN + Sg) ;
 MAP:ekoniL @N> TARGET AN + Sg IF (0 (".?êkonik"r))(1 N + AN + Sg OR Pron + AN + Sg) ;
 MAP:ekoniR @<N TARGET AN + Pl IF (0 (".?êkonik"r))(-1 N + AN + Pl OR Pron + AN + Pl) ;
@@ -350,6 +350,9 @@ MAP:ekoniR @<N TARGET IN + Sg IF (0 (".?êkoni"r))(-1 N + IN + Sg OR Pron + IN +
 MAP:ekoniL @N> TARGET IN + Sg IF (0 (".?êkoni"r))(1 N + IN + Sg OR Pron + IN + Sg) ;
 MAP:ekoniR @<N TARGET IN + Pl IF (0 (".?êkoni"r))(-1 N + IN + Pl OR Pron + IN + Pl) ;
 MAP:ekoniL @N> TARGET IN + Pl IF (0 (".?êkoni"r))(1 N + IN + Pl OR Pron + IN + Pl) ;
+
+#ewako and dem
+MAP:ewakoDEM @N> TARGET Ipc if (0 ("êwako"))(1 Dem) ; 
 
 MAP:NAMES @N> TARGET Prop IF (0 Prop)(1 Prop);
 ## Residential School

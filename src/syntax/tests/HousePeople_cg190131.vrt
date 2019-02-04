@@ -316,10 +316,10 @@
 "<pitamâ>"
 	"pitamâ" Ipc
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<anima>"
-	"#ôma" Pron Dem Med IN Sg
-	"anima" Ipc
+	"ôma" Pron Dem Med IN Sg
+	"#anima" Ipc
 "<.>"
 	"." CLB
 </sentence>
@@ -334,10 +334,10 @@
 <paragraph>
 <sentence id="5416">
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg
 "<nîsta>"
 	"nîsta" Pron Pers 1Sg Incl %GOAL>
 "<ôma>"
@@ -522,7 +522,7 @@
 <paragraph>
 <sentence id="5424">
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<anima>"
 	"ôma" Pron Dem Med IN Sg %N>
 	"#anima" Ipc
@@ -603,7 +603,7 @@
 "<kêyâpic>"
 	"kêyâpic" Ipc
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<anima>"
 	"ôma" Pron Dem Med IN Sg %GOAL>
 	"#anima" Ipc
@@ -688,7 +688,7 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<anima>"
 	"ôma" Pron Dem Med IN Sg
 	"#anima" Ipc
@@ -903,10 +903,10 @@
 <paragraph>
 <sentence id="5438">
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<anima>"
-	"#ôma" Pron Dem Med IN Sg
-	"anima" Ipc
+	"ôma" Pron Dem Med IN Sg
+	"#anima" Ipc
 "<ohci>"
 	"ohci" Ipc 
 "<kâ-itwêyâhk>"
@@ -1059,10 +1059,10 @@
 "<ê-kî-mîyikoyahk>"
 	"miyêw" PV/e V TA Cnj Prt 3Sg 12PlO Err/Orth Morph  %PRED
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<anima>"
-	"#ôma" Pron Dem Med IN Sg
-	"anima" Ipc
+	"ôma" Pron Dem Med IN Sg
+	"#anima" Ipc
 "<nistam>"
 	"nistam" Ipc
 "<,>"
@@ -1100,7 +1100,7 @@
 "<kahkiyaw>"
 	"kahkiyaw" Ipc
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<anima>"
 	"ôma" Pron Dem Med IN Sg %ACTOR>
 	"#anima" Ipc
@@ -1267,7 +1267,7 @@
 "<pîkopayin>"
 	"pîkopayin" V II Ind Prs 3Sg %PRED
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<anima>"
 	"ôma" Pron Dem Med IN Sg %<ACTOR
 	"#anima" Ipc
@@ -1303,7 +1303,7 @@
 	"misiwanâcihtamawêw" PV/e V TA Cnj Prs 3Sg 12PlO %PRED
 	"#misiwanâcihtamawêw" PV/e V TA Cnj Prs 4Sg/Pl 12PlO 
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %N>
 "<wâpiskiwiyâs>"
@@ -1343,10 +1343,10 @@
 <paragraph>
 <sentence id="5452">
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg
 "<aya>"
 	"#aya" N AN Sg Obv
 	"#ayi" N IN Pl
@@ -1572,7 +1572,7 @@
 "<ê-kanawêyihtahkik>"
 	"kanawêyihtam" PV/e V TI Cnj Prs 3Pl %PRED
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
 	"#ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg %<GOAL
@@ -1752,7 +1752,7 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<anima>"
 	"ôma" Pron Dem Med IN Sg %GOAL>
 	"#anima" Ipc
@@ -2212,9 +2212,9 @@
 "<tâpiskôc>"
 	"tâpiskôc" Ipc
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
-	"ôma" Ipc
+	"#ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg %ACTOR>
 "<anohc>"
 	"anohc" Ipc
@@ -2251,7 +2251,7 @@
 	"#ôma" Pron Dem Med IN Sg
 	"anima" Ipc
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<anima>"
 	"ôma" Pron Dem Med IN Sg %GOAL>
 	"#anima" Ipc
@@ -3446,7 +3446,7 @@
 "<kâ-wâpahtamêk>"
 	"wâpahtam" PV/kaa V TI Cnj Prs 2Pl %PRED
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
 	"#ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg %<GOAL
@@ -3533,10 +3533,10 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<anima>"
-	"#ôma" Pron Dem Med IN Sg
-	"anima" Ipc
+	"ôma" Pron Dem Med IN Sg
+	"#anima" Ipc
 "<iyikohk>"
 	"iyikohk" Ipc
 "<,>"
@@ -3829,7 +3829,7 @@
 "<->"
 	"-" PUNCT
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %N>
 "<pêyak>"
@@ -3876,7 +3876,7 @@
 "<ana>"
 	"awa" Pron Dem Med AN Sg %<ACTOR
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ana>"
 	"awa" Pron Dem Med AN Sg %N> 
 "<nisis>"
@@ -5060,7 +5060,7 @@
 "<kâ-pê-pîhtokwêt>"
 	"pîhtokwêw" PV/kaa PV/pe V AI Cnj Prs 3Sg %PRED
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %N>
 "<kisêyiniw>"
@@ -5229,10 +5229,10 @@
 <paragraph>
 <sentence id="5590">
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg
 "<êkwa>"
 	"êkwa" Ipc
 "<kâ-itakik>"
@@ -5532,7 +5532,7 @@
 <paragraph>
 <sentence id="5602">
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %N>
 "<nâpêw>"
@@ -5880,7 +5880,7 @@
 <paragraph>
 <sentence id="5616">
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg
 "<,>"
@@ -6263,7 +6263,7 @@
 "<,>"
 	"," CLB
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
 	"#ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg %N>
@@ -6287,7 +6287,7 @@
 "<wâhwâ>"
 	"wahwâ" Ipc Err/Orth
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %ACTOR>
 "<nikwatakimik>"
@@ -6669,7 +6669,7 @@
 "<,>"
 	"," CLB
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %N>
 "<nitôkimâskwêm>"
@@ -7173,7 +7173,7 @@
 <sentence id="5663">
 "<*>"
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
 	"#ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg %N> 
@@ -7212,7 +7212,7 @@
 <sentence id="5664">
 "<*>"
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
 	"#ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg %N>
@@ -7891,10 +7891,10 @@
 <sentence id="5685">
 "<*>"
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg
 "<k-ô-tâpakwêwêpinak>"
 	"#tâpakwêwêpinêw" PV/ka PV/o V TA Cnj Prs 1Sg 3SgO Err/Orth
 	"tâpakwêwêpinêw" PV/kaa PV/o V TA Cnj Prs 1Sg 3SgO Err/Orth %PRED
@@ -8063,7 +8063,7 @@
 "<,>"
 	"," CLB
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %OBL>
 "<êkwa>"
@@ -8721,13 +8721,13 @@
 "<,>"
 	"," CLB
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg
 "<kêyâpic>"
 	"kêyâpic" Ipc
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %N>
 "<kisêyiniw>"
@@ -9093,7 +9093,7 @@
 <sentence id="5727">
 "<*>"
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %N>
 "<onîkânohtêw>"
@@ -9241,7 +9241,7 @@
 "<ê-nitawi-mawinêhwâyâhk>"
 	"mawinêhwêw" PV/e PV/nitawi V TA Cnj Prs 1Pl 3SgO %PRED
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %<GOAL
 "<,>"
@@ -9428,7 +9428,7 @@
 "<mitoni>"
 	"mitoni" Ipc
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %ACTOR>
 "<kâ-nihtâ-nîmihitot>"
@@ -9521,10 +9521,10 @@
 "<->"
 	"-" PUNCT
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg
 "<mitoni>"
 	"mitoni" Ipc
 "<ê-takahkwêwêhtitât>"
@@ -9633,10 +9633,10 @@
 "<nêhiyawîhcikêwin>"
 	"nêhiyawîhcikêwin" N IN Sg %GOAL>
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg
 "<ê-nôhtê-kiskêyihtahkik>"
 	"kiskêyihtam" PV/e PV/nohte V TI Cnj Prs 3Pl %PRED
 "<ôki>"
@@ -9722,7 +9722,7 @@
 "<,>"
 	"," CLB
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
 	"#ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg %GOAL>
@@ -9842,7 +9842,7 @@
 "<nikî-wâpamâw>"
 	"wâpamêw" V TA Ind Prt 1Sg 3SgO %PRED
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %N>
 "<kisêyiniw>"
@@ -9882,7 +9882,7 @@
 <paragraph>
 <sentence id="5757">
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %N>
 "<kisêyiniw>"
@@ -9989,10 +9989,10 @@
 <paragraph>
 <sentence id="5760">
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg
 "<,>"
 	"," CLB
 "<itwêw>"
@@ -10003,7 +10003,7 @@
 <sentence id="5761">
 "<*>"
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %ACTOR>
 "<itwêw>"
@@ -11258,7 +11258,7 @@
 "<kî-otihtam>"
 	"otihtam" V TI Ind Prt 3Sg %PRED
 "<êwako>"
-	"êwako" Ipc
+	"êwako" Ipc %N>
 "<ana>"
 	"awa" Pron Dem Med AN Sg %N>
 "<kisêyiniw>"

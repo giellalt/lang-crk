@@ -972,9 +972,17 @@ REMOVE:DemANObvnotIN IN + Pl  (1 N + AN + Obv) (0 Pron + AN + Obv) ;
 REMOVE:DemINnotANObv AN + Obv (-1 N + IN + Pl)(0 Pron + IN + Pl) ;
 REMOVE:DemINnotANObv AN + Obv (1 N + IN + Pl) (0 Pron + IN + Pl) ;
 
+#dem after ekoni, ewako
+REMOVE:resPr Ipc (-1 (".?êkoni"r))(0 Dem) ;
+REMOVE:resPr Ipc (-1 (".?êkonik"r))(0 Dem) ;
+REMOVE:resPr Ipc (-1 ("êwako"))(0 Dem) ;
+
 #if N but not Dem ambiguous
-REMOVE:ProxnotObv N + Obv (-1C Dem + Prox) ;
-REMOVE:ProxnotObv N + Obv (1C Dem + Prox) ;
+REMOVE:ProxnotObv N + Obv (-1C Dem)(NOT -1C Obv) ;
+REMOVE:ProxnotObv N + Obv (1C Dem)(NOT -1C Obv) ;
+
+SELECT:ObvnotProx N + Obv (-1C Dem + Obv) ;
+SELECT:ObvnotProx N + Obv (1C Dem + Obv) ;
 
 #Dems can be NPs on their own and act as arguments
 REMOVE:DemNP Ipc (*0 V + TI)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
