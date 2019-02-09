@@ -131,6 +131,7 @@ LIST Px3Pl = Px3Pl ;
 LIST Px3Sg = Px3Sg ;
 LIST Px4Pl = Px4Pl ;
 LIST Px4Sg = Px4Sg ;
+LIST Px4Sg/Pl = Px4Sg/Pl ;
 LIST CLB = CLB ;
 
 LIST PUNCT = PUNCT ;
@@ -198,6 +199,8 @@ LIST @<Num = @<Num ;
 
 LIST @<Pron = @<Pron ;
 LIST @Pron> = @Pron> ;
+
+LIST @Pos> = @Pos> ;
 
 LIST @OBJ = @OBJ ;
 LIST @<OBJ = @<OBJ ;
@@ -356,6 +359,11 @@ MAP:ewakoDEM @N> TARGET Ipc if (0 ("êwako"))(1 Dem) ;
 
 MAP:NAMES @N> TARGET Prop IF (0 Prop)(1 Prop);
 ## Residential School
+
+#possession (third person animate noun possessors only - looking at corpus suggests that pronouns are more often actors/goals than possessors)
+MAP:3SgPOSS @Pos> TARGET N + AN + Sg IF (1 N + Px3Sg)(NOT 1 Loc) ; 
+MAP:3PlPOSS @Pos> TARGET N + AN + Pl IF (1 N + Px3Pl)(NOT 1 Loc) ; 
+MAP:4SgPlPoss @Pos> TARGET N + Obv IF (1 N + Px4Sg/Pl)(NOT 1 Loc) ;
 
 ##ACTor and goal rules for 3 and 3’ animate nouns
 
