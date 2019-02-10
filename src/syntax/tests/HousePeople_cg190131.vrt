@@ -880,7 +880,7 @@
 	"," CLB
 "<wîkihtow>"
 	"#wîkihtow" N AN Sg
-	"wîkihtow" V AI Ind Prs 3Sg
+	"wîkihtow" V AI Ind Prs 3Sg %PRED
 "<êkwa>"
 	"êkwa" Ipc
 "<anohc>"
@@ -3281,7 +3281,7 @@
 	"#êkoni" Pron AN Obv
 	"êkoni" Pron IN Pl %N>
 "<ôhi>"
-	"ôma" Pron Dem Prox IN Pl %GOAL>
+	"ôma" Pron Dem Prox IN Pl
 	"#awa" Pron Dem Prox AN Obv
 "<,>"
 	"," CLB
@@ -9636,7 +9636,7 @@
 	"êwako" Ipc %N>
 "<ôma>"
 	"#ôma" Ipc
-	"ôma" Pron Dem Prox IN Sg
+	"ôma" Pron Dem Prox IN Sg %GOAL>
 "<ê-nôhtê-kiskêyihtahkik>"
 	"kiskêyihtam" PV/e PV/nohte V TI Cnj Prs 3Pl %PRED
 "<ôki>"
