@@ -121,6 +121,7 @@ LIST 4SgO = 4SgO ;
 LIST 4Sg/PlO = 4Sg/PlO ;
 LIST 5Sg = 5Sg ;
 LIST X = X ;
+LIST Voc = Voc ;
 
 LIST Px12Pl = Px12Pl ;
 LIST Px1Pl = Px1Pl ;
@@ -360,11 +361,6 @@ MAP:ewakoDEM @N> TARGET Ipc if (0 ("êwako"))(1 Dem) ;
 MAP:NAMES @N> TARGET Prop IF (0 Prop)(1 Prop);
 ## Residential School
 
-#possession (third person animate noun possessors only - looking at corpus suggests that pronouns are more often actors/goals than possessors)
-MAP:3SgPOSS @Pos> TARGET N + AN + Sg IF (1 N + Px3Sg)(NOT 1 Loc) ; 
-MAP:3PlPOSS @Pos> TARGET N + AN + Pl IF (1 N + Px3Pl)(NOT 1 Loc) ; 
-MAP:4SgPlPoss @Pos> TARGET N + Obv IF (1 N + Px4Sg/Pl)(NOT 1 Loc) ;
-
 ##ACTor and goal rules for 3 and 3’ animate nouns
 
 MAP:TAGOAL3R @<GOAL TARGET N + AN + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3SgO BARRIER V OR CLB) ;
@@ -473,6 +469,11 @@ MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (*-1 AI + 3Sg OR TI + 3Sg OR 
 MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (*1 AI + 3Sg OR TI + 3Sg OR TA + 3Sg BARRIER V OR CLB) ;
 MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron + 3Pl IF (*-1 AI + 3Pl OR TI + 3Pl OR TA + 3Pl BARRIER V OR CLB) ;
 MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (*1 AI + 3Pl OR TI + 3Pl OR TA + 3Pl BARRIER V OR CLB) ;
+
+#possession (third person animate noun possessors only - looking at corpus suggests that pronouns are more often actors/goals than possessors)
+MAP:3SgPOSS @Pos> TARGET N + AN + Sg IF (1 N + Px3Sg)(NOT 1 Loc) ; 
+MAP:3PlPOSS @Pos> TARGET N + AN + Pl IF (1 N + Px3Pl)(NOT 1 Loc) ; 
+MAP:4SgPlPoss @Pos> TARGET N + Obv IF (1 N + Px4Sg/Pl)(NOT 1 Loc) ;
 
 ##TEMPORAL NOUNS
 ##MAP:TEMPORALN @<ADVL TARGET TEMPORALN IF (*-1 AI OR TI OR TA BARRIER CLB) ;
