@@ -1065,6 +1065,9 @@ SELECT:ANkikway AN IF (0 KIKWAY LINK 1 N + AN) ;
 REMOVE:kekway Pron IF (0 ("kêkway")) ;
 SELECT:INkekway IN IF (0 ("kêkway") LINK *0 TI) ;
 
+#ayiwinisa is a mess
+SELECT:PLayiwinisa Pl IF (0 ("ayiwinisa") ) ;
+
 #wiya IPC vs Pron Pers
 SELECT:wiyaPron Pron IF (0 (".?wiya"r))(*0 AI + 3Sg OR TI + 3Sg OR TA + 3Sg OR TA + 3SgO BARRIER CLB) ;
 SELECT:wiyaIpc Ipc IF (0 (".?wiya"r))(NOT *0 V + 3Sg OR V + 3SgO BARRIER CLB) ;
