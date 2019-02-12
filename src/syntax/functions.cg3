@@ -183,6 +183,8 @@ LIST @ADVL = @ADVL ;
 LIST @ADVL> = @ADVL> ;
 LIST @<ADVL = @<ADVL ;
 
+LIST @Neg> = @Neg> ;
+
  
 LIST @N> = @N> ;
 LIST @<N = @<N ;
@@ -293,6 +295,8 @@ MAP:PrepNL @P> TARGET N + Loc IF (1 POSTPOSITION) ;
 ##MAP @ADVL Loc OR Ipc  (NOT 0 @<P OR @P>) ;
 ##MAP @+FMAINV VFIN ;
 #MAP:PRED @PRED TARGET V ;
+
+MAP:NegV @Neg> TARGET Ipc + Neg IF (1 V) ;
 
 MAP:PREDII @PRED-II TARGET V + II ;
 MAP:PREDAI @PRED-AI TARGET V + AI ;

@@ -115,7 +115,7 @@
 "<mitoni>"
 	"mitoni" Ipc
 "<namôya>"
-	"namôya" Ipc Neg 
+	"namôya" Ipc Neg %Neg>
 "<ê-nistohtamohkâsocik>"
 	"nisitohtamohkâsow" PV/e V AI Cnj Prs 3Pl Err/Orth %PRED
 "<,>"
@@ -136,7 +136,7 @@
 "<tâpiskôc>"
 	"tâpiskôc" Ipc
 "<êkâya>"
-	"êkâya" Ipc 
+	"êkâya" Ipc %Neg>
 "<ê-pêhtâskik>"
 	"pêhtawêw" PV/e V TA Cnj Prs 3Pl 2SgO %PRED
 "<;>"
@@ -245,7 +245,7 @@
 "<,>"
 	"," CLB
 "<namôya>"
-	"namôya" Ipc Neg 
+	"namôya" Ipc Neg %Neg>
 "<ê-wî-nêhiyawêt>"
 	"nêhiyawêw" PV/e V AI Cnj Fut Int 3Sg %PRED
 "<,>"
@@ -582,7 +582,7 @@
 "<êwako>"
 	"êwako" Ipc
 "<êkâ>"
-	"êkâ" Ipc Neg
+	"êkâ" Ipc Neg %Neg>
 "<kâ-miywâsik>"
 	"miywâsin" PV/kaa V II Cnj Prs 3Sg %PRED
 "<,>"
@@ -888,7 +888,7 @@
 "<,>"
 	"," CLB
 "<êkâya>"
-	"êkâya" Ipc
+	"êkâya" Ipc %Neg>
 "<ê-kiskêyihtamahk>"
 	"kiskêyihtam" PV/e V TI Cnj Prs 3Sg %PRED
 "<.>"
@@ -1110,7 +1110,7 @@
 "<,>"
 	"," CLB
 "<namôya>"
-	"namôya" Ipc Neg 
+	"namôya" Ipc Neg %Neg>
 "<kiskêyihtam>"
 	"kiskêyihtam" V TI Ind Prs 3Sg %PRED
 "<êkwa>"
@@ -1279,7 +1279,7 @@
 "<êkosi>"
 	"êkosi" Ipc
 "<namôya>"
-	"namôya" Ipc Neg
+	"namôya" Ipc Neg %Neg>
 "<kikiskêyihtênânaw>"
 	"kiskêyihtam" V TI Ind Prs 12Pl %PRED
 "<tânitê>"
@@ -2621,7 +2621,7 @@
 <sentence id="5494">
 "<*>"
 "<namôya>"
-	"namôya" Ipc Neg 
+	"namôya" Ipc Neg %Neg>
 "<kikiskêyihtênânaw>"
 	"kiskêyihtam" V TI Ind Prs 12Pl %PRED
 "<,>"
@@ -2957,7 +2957,7 @@
 "<,>"
 	"," CLB
 "<êkâ>"
-	"êkâ" Ipc 
+	"êkâ" Ipc %Neg>
 "<ê-kiskêyihtamahk>"
 	"kiskêyihtam" PV/e V TI Cnj Prs 3Sg %PRED
 "<tânimayikohk>"
@@ -3197,7 +3197,7 @@
 "<,>"
 	"," CLB
 "<êkâ>"
-	"êkâ" Ipc Neg
+	"êkâ" Ipc Neg %Neg>
 "<ê-ohci-wâpahtahkik>"
 	"wâpahtam" PV/e PV/ohci V TI Cnj Prs 3Pl %PRED
 "<,>"
@@ -3333,7 +3333,7 @@
 "<kâ-kîsikâk>"
 	"kîsikâw" PV/kaa V II Cnj Prs 3Sg %PRED
 "<namôya>"
-	"namôya" Ipc Neg
+	"namôya" Ipc Neg %Neg>
 "<kikaskihtânânaw>"
 	"#ihtâw" PV/kaski V AI Ind Prs 12Pl
 	"kaskihtâw" V TI Ind Prs 12Pl %PRED
@@ -3481,7 +3481,7 @@
 "<,>"
 	"," CLB
 "<êkâ>"
-	"êkâ" Ipc Neg
+	"êkâ" Ipc Neg %Neg>
 "<ê-wayawîhk>"
 	"wayawîw" PV/e V AI Cnj Prs X %PRED
 "<mistahi>"
@@ -3594,7 +3594,7 @@
 "<,>"
 	"," CLB
 "<êkâ>"
-	"êkâ" Ipc Neg
+	"êkâ" Ipc Neg %Neg>
 "<ê-têpinêhamahk>"
 	"têpinêham" PV/e V TI Cnj Prs 12Pl %PRED
 "<kîkway>"
@@ -4450,7 +4450,7 @@
 "<nîya>"
 	"niya" Pron Pers 1Sg %ACTOR>
 "<k-êsi-nôhtêhkatêyân>"
-	"nôhtêhkatêw" PV/ka PV/isi V AI Cnj Prs 1Sg Err/Orth %PRED
+	"#nôhtêhkatêw" PV/ka PV/isi V AI Cnj Prs 1Sg Err/Orth
 	"nôhtêhkatêw" PV/kaa PV/isi V AI Cnj Prs 1Sg Err/Orth %PRED
 "<,>"
 	"," CLB
@@ -5294,7 +5294,7 @@
 "<,>"
 	"," CLB
 "<êkâya>"
-	"êkâya" Ipc 
+	"êkâya" Ipc %Neg> 
 "<ê-wî-pakitinit>"
 	"pakitinêw" PV/e V TA Cnj Fut Int 3Sg 1SgO %PRED
 "<ka-kikiskamwak>"
@@ -6634,7 +6634,7 @@
 "<mitoni>"
 	"mitoni" Ipc
 "<namôya>"
-	"namôya" Ipc Neg 
+	"namôya" Ipc Neg %Neg> 
 "<onêpêwisiwiniw>"
 	"onêpêwisiwiniw" V AI Ind Prs 3Sg %PRED
 "<,>"
@@ -6692,7 +6692,7 @@
 "<têpiyâhk>"
 	"têpiyâhk" Ipc
 "<êkâ>"
-	"êkâ" Ipc 
+	"êkâ" Ipc %Neg>
 "<ê-pakamahwak>"
 	"pakamahwêw" PV/e V TA Cnj Prs 1Sg 3SgO %PRED
 "<,>"
@@ -7267,7 +7267,7 @@
 "<,>"
 	"," CLB
 "<namôya>"
-	"namôya" Ipc Neg 
+	"namôya" Ipc Neg %Neg>
 "<ka-pâhpihâwâw>"
 	"pâhpihêw" V TA Ind Fut Def 2Pl 3SgO Err/Orth %PRED
 "<nicôskinîkîmis>"
@@ -7365,7 +7365,7 @@
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %GOAL>
 "<êkâya>"
-	"êkâya" Ipc
+	"êkâya" Ipc %Neg>
 "<isîhkaw>"
 	"isîhkawêw" V TA Imp Imm 2Sg 3SgO %PRED
 "<!>"
@@ -9959,7 +9959,7 @@
 	"ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg
 "<namôya>"
-	"namôya" Ipc Neg 
+	"namôya" Ipc Neg %Neg>
 "<niwâpin>"
 	"wâpiw" V AI Ind Prs 1Sg %PRED
 "<,>"
@@ -11512,7 +11512,7 @@
 <sentence id="5807">
 "<*>"
 "<namôya>"
-	"namôya" Ipc Neg
+	"namôya" Ipc Neg %Neg>
 "<nô-wanihtânân>"
 	"wanihtâw" PV/oh V TI Ind Prs 1Pl Err/Orth %PRED
 "<kîkway>"
@@ -11555,7 +11555,7 @@
 "<,>"
 	"," CLB
 "<êkâ>"
-	"êkâ" Ipc 
+	"êkâ" Ipc %Neg>
 "<ka-wêpinamâhk>"
 	"wêpinam" PV/ka V TI Cnj Prs 1Pl Morph %PRED
 "<ôhi>"

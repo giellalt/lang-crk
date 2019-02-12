@@ -381,8 +381,6 @@ LIST PV/yikate = PV/yikate "PV/yikate" ;
 LIST PV/yipe = PV/yipe "PV/yipe" ;
 LIST PV/yoski = PV/yoski "PV/yoski" ;
 
-
-
 LIST PREVERB = RdplS RdplW PV/e PV/ka PV/kaa PV/kaa_ki PV/acici PV/ahcahkowi PV/akawaci PV/ako PV/akoci PV/apihci PV/apisci PV/apisi PV/apisisi PV/ase PV/aseya PV/ati PV/atimi PV/ayamihawi PV/ayamihewi PV/ayaso PV/ayi PV/ahci PV/ahkami PV/ako PV/akwa PV/ami PV/aniski PV/apihci PV/apihtawi PV/apihta PV/apihta_kisikawi PV/asawi PV/ase PV/asowi PV/aste PV/ata PV/ayici PV/cipehtako PV/isi PV/isko PV/ispi PV/ispihci PV/itahto PV/ikate PV/ka_ki PV/ka_ki PV/kakepaci PV/kakwahyaki PV/kakwayaki PV/kakwe PV/kakweci PV/kanaci PV/kape PV/kaski PV/kaskitewi PV/kayasi PV/kah PV/kah-kape PV/kah-kape PV/kamwaci PV/kaspi PV/kawi PV/ke PV/kekaci PV/ket PV/ketiski PV/kici PV/kihci PV/kika PV/kipi PV/kisci PV/kise PV/kisipi PV/kisiska PV/kisiwi PV/kisiwi PV/kita PV/kita_ki PV/kita_ki PV/kitimaki PV/kiye PV/kiyi PV/kimoci PV/kipi PV/kisi PV/kiski PV/kisopwe PV/kiwaci PV/kiwe PV/koci PV/kota PV/kotate PV/kwataki PV/kwayako PV/kwayaski PV/kwayasko PV/kwayaci PV/kwahci PV/kwaskwe PV/kwataki PV/kweski PV/kwetawi PV/kwitawi PV/maci PV/maci_manitowi PV/mahti PV/mana PV/mani PV/masta PV/matwe PV/maaci PV/mahi PV/mamawi PV/maninakisko PV/maski PV/mayaci PV/mayi PV/mecimwaci PV/mêkwa PV/mesci PV/mesti PV/mihko PV/mihyawe PV/misakame PV/misi PV/mistiko PV/miyo PV/mosci PV/mohco PV/mwayi PV/nahi PV/nahta PV/naki PV/napaki PV/naspaci PV/natawi PV/nawaci PV/naci PV/nanitaw PV/natakasi PV/nawayawi PV/nehiyawi PV/nihta PV/nipahi PV/nisihkaci PV/nitawi PV/nihci PV/nihtaciwe PV/nikani PV/nimi PV/nipa PV/niso PV/nohte PV/ocihci PV/ohci PV/ohtiskawi PV/osami PV/osawaski PV/osawi PV/oski PV/otami PV/o PV/oh PV/paci PV/pahki PV/pakwano PV/papa PV/papami PV/papasi PV/pasiko PV/paspi PV/pahkaci PV/pahko PV/pasci PV/pasici PV/pe PV/peyako PV/pimi PV/pimici PV/pimipahci PV/pisci PV/pihci PV/pihtawe PV/pihtoke PV/pikiskaci PV/pimi PV/pitosi PV/piwi PV/poni PV/posko PV/pwana PV/pwatawi PV/saskaci PV/sakewe PV/sapo PV/saposci PV/sasakici PV/sehke PV/sesawi PV/sikaci PV/simaci PV/sipwe PV/sisikoci PV/sisiwe PV/sikawi PV/sohkahat PV/sohki PV/soniyawi PV/ta PV/ta_ki PV/tahci PV/tahki PV/tahkohci PV/tahto PV/takahki PV/tako PV/tasi PV/tah PV/tahci PV/tapi PV/tapisi PV/tehci PV/tepi PV/tewi PV/teyi PV/tipi PV/tita PV/tomi PV/wahke PV/wani PV/wayawi PV/wayesi PV/wa PV/wah PV/waki PV/wapani PV/wapohki PV/wasa PV/wase PV/wawiye PV/wehci PV/wiyipi PV/wihpi PV/wini PV/wipi PV/wipo PV/wisaki PV/wito PV/yahki PV/yikate PV/yipe PV/yoski ;
 
 LIST REDUPL = RdplW RdlpS ;
@@ -394,6 +392,8 @@ LIST ZERO = "apwêyâw" "askihtakoskâw" "askîwan" "askîwiw" "atihkamêkoskâw
 LIST PREPOSITION = "asicâyihk" "atâmihk" "atâmipîhk" "capasis" "capasîs" "cîki" "iskwêyânihk" "ispimihk" "kicîniskêhk" "kihciwâk" "kisipanohk" "mohcihk" "namahcihk" "nihcâyihk" "nohcimihk" "nâsipîtimihk" "pihcâyihk" "pihtokamihk" "sisonê" "sâyihk" "sîpâ" "sîpâyihk" "tahkohc" "tastawâyihk" "tâwâyihk" "wahyaw" "wayawîtimihk" "wayawîtimiskwaht" "wâhyawês" "wâsakâm" "âkawâstêhk" "âpihtawâyihk" "âstamâstihk" "âyêtawâyihk" "akâmâyihk" "akâmihk" "asicâyi" "awasâyihk" "ayîtawâyihk" "âkawâyihk" "âstamihk" "kihcîniskêhk" "kospâyihk" "namahcîhk" "namahtinihk" "nîhc-âyihk" "nihc-âyihk" "nôhcimihk" "ohtâyihk" "okihciniskihk" "pimic-âyihk" "pîhc-âyihk" "sîpâhk" "tahkohc-âyihk" "tawâyihk" ; 
 
 LIST POSTPOSITION = "isi" "ohci" ;
+
+LIST NEG = "namôya" "namôy" "môya" "môy" "êkâwiya" "kâwiya" "êkâya" "êkây" "kâya" "êkâ" ; 
 
 # Sets
 # ====
@@ -443,6 +443,8 @@ ADD:ayawAITI TI TARGET ("(.+[-])*ayâw"r) + AI ;
 
 ADD:VIIZ IIZ TARGET II + ZERO ;
 
+#adding negative tags; not required if they are already added i.e. by KS in FST/HPdev (keeps things neat for now)
+ADD:Neg Neg Target NEG + Ipc IF (NOT 0 Neg) ;
 
 REMOVE:PxObvPl Pl IF (0 POSS + AN + Obv + Sg) ;
 ADD:PxObvSgPl Pl TARGET POSS + AN + Obv + Sg ;
@@ -941,11 +943,6 @@ SELECT:ayaNA AN + Obv IF (0 ("<aya>"r))(1 Pron + AN + Obv) ;
 SELECT:ayaNA IN + Pl IF (0 ("<aya>"r))(-1 Pron + IN + Pl) ;
 SELECT:ayaNA IN + Pl IF (0 ("<aya>"r))(1 Pron + IN + Pl) ;
 
-# We remove the particle if the word can be something more interesting - keep the particle, more common/likely
-SELECT:ChooseIpc Ipc IF (0 N OR V) ;
-# Iph sub/rem introduces some issues, fix with following constraint
-SELECT:ChooseIph Iph IF (0 N OR V) ;
-
 SELECT:LocnotV N + Loc IF (0 V) ;
 
 #if a noun can also be a verb with a preverb, choose the noun
@@ -958,7 +955,6 @@ SELECT:1SgIfV1Sg 1Sg IF (0 ("niya"))(*0C V + 1Sg);
 	##adjusted to choose lexicalised dim for time being - KS
 #SELECT:DerYes Der/Dim (0C N) ;
 REMOVE:DerNo   Der/Dim (0C N) ;
-
 
 # We say post/prenominal words are determiners, not particles, if they agree
 REMOVE:DemNotIpc Ipc (-1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
@@ -987,6 +983,12 @@ SELECT:ObvnotProx N + Obv (1C Dem + Obv) ;
 #Dems can be NPs on their own and act as arguments
 REMOVE:DemNP Ipc (*0 V + TI)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
 REMOVE:DemNP Ipc (*0 V + II)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
+
+# We remove the particle if the word can be something more interesting - keep the particle, more common/likely
+SELECT:ChooseIpc Ipc IF (0 V) ;
+SELECT:ChooseIpc Ipc IF (0 N + $$NUMBERGENDER)(-1 Dem + $$NUMBERGENDER) ;
+# Iph sub/rem introduces some issues, fix with following constraint
+SELECT:ChooseIph Iph IF (0 N OR V) ;
 
 # Demonstratives follow nouns.
 #SELECT:DemNotIpcDN Dem (0 Ipc)(1 N) ;
