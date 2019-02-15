@@ -962,11 +962,19 @@ REMOVE:DemNotIpc Ipc ( 1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
 	## Mîcisowinâhtik ôma.
 	
 #some Dems can be in pl or an obv, these need to be selected appropriately
-REMOVE:DemANObvnotIN IN + Pl  (-1 N + AN + Obv)(0 Pron + AN + Obv) ;
-REMOVE:DemANObvnotIN IN + Pl  (1 N + AN + Obv) (0 Pron + AN + Obv) ;
+REMOVE:DemINnotANObv AN + Obv (-1 N + IN + Pl)(0 Dem + IN + Pl) ;
+REMOVE:DemINnotANObv AN + Obv (1 N + IN + Pl) (0 Dem + IN + Pl) ; 
 
-REMOVE:DemINnotANObv AN + Obv (-1 N + IN + Pl)(0 Pron + IN + Pl) ;
-REMOVE:DemINnotANObv AN + Obv (1 N + IN + Pl) (0 Pron + IN + Pl) ;
+REMOVE:DemANObvnotIN IN + Pl  (-1 N + AN + Obv)(0 Dem + AN + Obv) ;
+REMOVE:DemANObvnotIN IN + Pl  (1 N + AN + Obv) (0 Dem + AN + Obv) ;
+
+SELECT:DemANObvnotIN AN + Obv (*0 TA + 4Sg/Pl OR TA + 4Sg/PlO BARRIER V)(0 Dem + IN + Pl) ;
+
+SELECT:DemINnotANObv IN + Pl (*0 TI BARRIER V)(0 Dem + IN + Pl) ;
+
+#same as dems above, but for ekoni followed by dem (generalizing above constraints not feasible) 
+REMOVE:PronINnotANObv AN + Obv (1 Dem + IN + Pl) (0 Pron + IN + Pl) ; 
+REMOVE:PronANObvnotIN IN + Pl  (1 Dem + AN + Obv)(0 Pron + AN + Obv) ;
 
 #dem after ekoni, ewako
 REMOVE:resPr Ipc (-1 (".?êkoni"r))(0 Dem) ;
