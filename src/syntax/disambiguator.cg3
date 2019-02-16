@@ -442,6 +442,7 @@ REMOVE:ayawTI TI IF (0 ("(.+[-])*ayâw"r) + AI)(NOT 0 AI + TI) ;
 ADD:ayawAITI TI TARGET ("(.+[-])*ayâw"r) + AI ;
 
 ADD:VIIZ IIZ TARGET II + ZERO ;
+SET VII = II - IIZ ;
 
 #adding negative tags; not required if they are already added i.e. by KS in FST/HPdev (keeps things neat for now)
 ADD:Neg Neg Target NEG + Ipc IF (NOT 0 Neg) ;
@@ -990,7 +991,8 @@ SELECT:ObvnotProx N + Obv (1C Dem + Obv) ;
 
 #Dems can be NPs on their own and act as arguments
 REMOVE:DemNP Ipc (*0 V + TI)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
-REMOVE:DemNP Ipc (*0 V + II)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
+SELECT:DemNP Ipc (*0 VII)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
+SELECT:DemNP Ipc (*0 IIZ)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
 
 # We remove the particle if the word can be something more interesting - keep the particle, more common/likely
 SELECT:ChooseIpc Ipc IF (0 V) ;
