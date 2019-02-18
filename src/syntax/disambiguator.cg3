@@ -393,6 +393,8 @@ LIST PREPOSITION = "asicâyihk" "atâmihk" "atâmipîhk" "capasis" "capasîs" "c
 
 LIST POSTPOSITION = "isi" "ohci" ;
 
+LIST ADP = ADP ;
+
 LIST NEG = "namôya" "namôy" "môya" "môy" "êkâwiya" "kâwiya" "êkâya" "êkây" "kâya" "êkâ" ; 
 
 # Sets
@@ -453,8 +455,8 @@ ADD:PxObvSgPl Pl TARGET POSS + AN + Obv + Sg ;
 SUBSTITUTE ("<ahpô>" "ahpô" Ipc) ("<ahpô_cî>" "ahpô_cî" Iph) TARGET ("<ahpô>" Ipc) IF (1 ("<cî>" Ipc)) ;
 REMCOHORT ("<cî>") (-1 ("<ahpô_cî>" Iph)) ;
 
-SUBSTITUTE ("<ahpô>" "ahpô" Ipc) ("<ahpô_êtikwê>" "ahpô_êtikwê" Iph) TARGET ("<ahpô>" Ipc) IF (1 ("<êtikwê>" Ipc)) ;
-REMCOHORT ("<êtikwê>") (-1 ("<ahpô_êtikwê>" Iph)) ;
+SUBSTITUTE ("ahpô" Ipc) ("<ahpô_êtikwê>" "ahpô_êtikwê" Iph) TARGET ("ahpô" Ipc) IF (1 ("êtikwê" Ipc)) ;
+REMCOHORT ("êtikwê") (-1 ("<ahpô_êtikwê>" Iph)) ;
 
 SUBSTITUTE ("<ahpô>" "ahpô" Ipc) ("<ahpô_piko>" "ahpô_piko" Iph) TARGET ("<ahpô>" Ipc) IF (1 ("<piko>" Ipc)) ;
 REMCOHORT ("<piko>") (-1 ("<ahpô_piko>" Iph)) ;
@@ -465,14 +467,14 @@ REMCOHORT ("<kâ-ispayik>") (-1 ("<anohc_kâ-ispayik>" Iph)) ;
 SUBSTITUTE ("<anohc>" "anohc" Ipc) ("<anohc_kâ-kîsikâk>" "anohc_kâ-kîsikâk" Iph) TARGET ("<anohc>" Ipc) IF (1 ("<kâ-kîsikâk>" Ipc)) ;
 REMCOHORT ("<kâ-kîsikâk>") (-1 ("<anohc_kâ-kîsikâk>" Iph)) ;
 
-SUBSTITUTE ("<awasi>" "awasi" Ipc) ("<awasi_ispî>" "awasi_ispî" Iph) TARGET ("<awasi>" Ipc) IF (1 ("<ispî>" Ipc)) ;
-REMCOHORT ("<ispî>") (-1 ("<awasi_ispî>" Iph)) ;
+SUBSTITUTE ("awasi" Ipc) ("<awasi_ispî>" "awasi_ispî" Iph) TARGET ("awasi" Ipc) IF (1 ("ispî" Ipc)) ;
+REMCOHORT ("ispî") (-1 ("<awasi_ispî>" Iph)) ;
 
 SUBSTITUTE ("<awêkâ>" "awêkâ" Ipc) ("<awêkâ_cî>" "awêkâ_cî" Iph) TARGET ("<awêkâ>" Ipc) IF (1 ("<cî>" Ipc)) ;
 REMCOHORT ("<cî>") (-1 ("<awêkâ_cî>" Iph)) ;
 
-SUBSTITUTE ("<awîna>" "awîna" Ipc) ("<awîna_êtikwê>" "awîna_êtikwê" Iph) TARGET ("<awîna>" Ipc) IF (1 ("<êtikwê>" Ipc)) ;
-REMCOHORT ("<êtikwê>") (-1 ("<awîna_êtikwê>" Iph)) ;
+SUBSTITUTE ("awîna" Ipc) ("<awîna_êtikwê>" "awîna_êtikwê" Iph) TARGET ("awîna" Ipc) IF (1 ("êtikwê" Ipc)) ;
+REMCOHORT ("êtikwê") (-1 ("<awîna_êtikwê>" Iph)) ;
 
 SUBSTITUTE ("<ayiwâk>" "ayiwâk" Ipc) ("<ayiwâk_ôma>" "ayiwâk_ôma" Iph) TARGET ("<ayiwâk>" Ipc) IF (1 ("<ôma>" Ipc)) ;
 REMCOHORT ("<ôma>") (-1 ("<ayiwâk_ôma>" Iph)) ;
@@ -486,8 +488,8 @@ REMCOHORT ("<cî>") (-1 ("<âsay_cî>" Iph)) ;
 SUBSTITUTE ("<âsay>" "âsay" Ipc) ("<âsay_mîna>" "âsay_mîna" Iph) TARGET ("<âsay>" Ipc) IF (1 ("<mîna>" Ipc)) ;
 REMCOHORT ("<mîna>") (-1 ("<âsay_mîna>" Iph)) ;
 
-SUBSTITUTE ("<âstamitê>" "âstamitê" Ipc) ("<âstamitê_isi>" "âstamitê_isi" Iph) TARGET ("<âstamitê>" Ipc) IF (1 ("<isi>" Ipc)) ;
-REMCOHORT ("<isi>") (-1 ("<âstamitê_isi>" Iph)) ;
+SUBSTITUTE ("âstamitê" Ipc) ("<âstamitê_isi>" "âstamitê_isi" Iph) TARGET ("âstamitê" Ipc) IF (1 ("isi" Ipc)) ;
+REMCOHORT ("isi") (-1 ("<âstamitê_isi>" Iph)) ;
 
 SUBSTITUTE ("<âta>" "âta" Ipc) ("<âta_wiya>" "âta_wiya" Iph) TARGET ("<âta>" Ipc) IF (1 ("<wiya>" Ipc)) ;
 REMCOHORT ("<wiya>") (-1 ("<âta_wiya>" Iph)) ;
@@ -501,20 +503,20 @@ REMCOHORT ("<pitamâ>") (-1 ("<cêskwa_pitamâ>" Iph)) ;
 SUBSTITUTE ("<cikêmâ>" "cikêmâ" Ipc) ("<cikêmâ_anima>" "cikêmâ_anima" Iph) TARGET ("<cikêmâ>" Ipc) IF (1 ("<anima>" Ipc)) ;
 REMCOHORT ("<anima>") (-1 ("<cikêmâ_anima>" Iph)) ;
 
-SUBSTITUTE ("<êcika>" "êcika" Ipc) ("<êcika_ana>" "êcika_ana" Iph) TARGET ("<êcika>" Ipc) IF (1 ("<ana>" Ipc)) ;
-REMCOHORT ("<ana>") (-1 ("<êcika_ana>" Iph)) ;
+SUBSTITUTE ("êcika" Ipc) ("<êcika_ana>" "êcika_ana" Iph) TARGET ("êcika" Ipc) IF (1 ("ana" Ipc)) ;
+REMCOHORT ("ana") (-1 ("<êcika_ana>" Iph)) ;
 
-SUBSTITUTE ("<êcika>" "êcika" Ipc) ("<êcika_ani>" "êcika_ani" Iph) TARGET ("<êcika>" Ipc) IF (1 ("<ani>" Ipc)) ;
-REMCOHORT ("<ani>") (-1 ("<êcika_ani>" Iph)) ;
+SUBSTITUTE ("êcika" Ipc) ("<êcika_ani>" "êcika_ani" Iph) TARGET ("êcika" Ipc) IF (1 ("ani" Ipc)) ;
+REMCOHORT ("ani") (-1 ("<êcika_ani>" Iph)) ;
 
-SUBSTITUTE ("<êcika>" "êcika" Ipc) ("<êcika_anima>" "êcika_anima" Iph) TARGET ("<êcika>" Ipc) IF (1 ("<anima>" Ipc)) ;
-REMCOHORT ("<anima>") (-1 ("<êcika_anima>" Iph)) ;
+SUBSTITUTE ("êcika" Ipc) ("<êcika_anima>" "êcika_anima" Iph) TARGET ("êcika" Ipc) IF (1 ("<anima>" Ipc)) ;
+REMCOHORT ("anima") (-1 ("<êcika_anima>" Iph)) ;
 
-SUBSTITUTE ("<êcika>" "êcika" Ipc) ("<êcika_ôma>" "êcika_ôma" Iph) TARGET ("<êcika>" Ipc) IF (1 ("<ôma>" Ipc)) ;
-REMCOHORT ("<ôma>") (-1 ("<êcika_ôma>" Iph)) ;
+SUBSTITUTE ("êcika" Ipc) ("<êcika_ôma>" "êcika_ôma" Iph) TARGET ("êcika" Ipc) IF (1 ("ôma" Ipc)) ;
+REMCOHORT ("ôma") (-1 ("<êcika_ôma>" Iph)) ;
 
-SUBSTITUTE ("<êkâ>" "êkâ" Ipc) ("<êkâ_êsa>" "êkâ_êsa" Iph) TARGET ("<êkâ>" Ipc) IF (1 ("<êsa>" Ipc)) ;
-REMCOHORT ("<êsa>") (-1 ("<êkâ_êsa>" Iph)) ;
+SUBSTITUTE ("êkâ" Ipc) ("<êkâ_êsa>" "êkâ_êsa" Iph) TARGET ("êkâ" Ipc) IF (1 ("êsa" Ipc)) ;
+REMCOHORT ("êsa") (-1 ("<êkâ_êsa>" Iph)) ;
 
 SUBSTITUTE ("<êkâ>" "êkâ" Ipc) ("<êkâ_kîkway>" "êkâ_kîkway" Iph) TARGET ("<êkâ>" Ipc) IF (1 ("<kîkway>" Ipc)) ;
 REMCOHORT ("<kîkway>") (-1 ("<êkâ_kîkway>" Iph)) ;
@@ -528,8 +530,8 @@ REMCOHORT ("<ani>") (-1 ("<êkosi_ani>" Iph)) ;
 SUBSTITUTE ("<êkosi>" "êkosi" Ipc) ("<êkosi_ani>" "êkosi_ani" Iph) TARGET ("<êkosi>" Ipc) IF (1 ("<ani>" Ipc)) ;
 REMCOHORT ("<ani>") (-1 ("<êkosi_ani>" Iph)) ;
 
-SUBSTITUTE ("<êkosi>" "êkosi" Ipc) ("<êkosi_isi>" "êkosi_isi" Iph) TARGET ("<êkosi>" Ipc) IF (1 ("<isi>" Ipc)) ;
-REMCOHORT ("<isi>") (-1 ("<êkosi_isi>" Iph)) ;
+SUBSTITUTE ("êkosi" Ipc) ("<êkosi_isi>" "êkosi_isi" Iph) TARGET ("êkosi" Ipc) IF (1 ("isi" Ipc)) ;
+REMCOHORT ("isi") (-1 ("<êkosi_isi>" Iph)) ;
 
 SUBSTITUTE ("<êkosi>" "êkosi" Ipc) ("<êkosi_mâka>" "êkosi_mâka" Iph) TARGET ("<êkosi>" Ipc) IF (1 ("<mâka>" Ipc)) ;
 REMCOHORT ("<mâka>") (-1 ("<êkosi_mâka>" Iph)) ;
@@ -549,8 +551,8 @@ REMCOHORT ("<pitamâ>") (-1 ("<êkosi_pitamâ>" Iph)) ;
 SUBSTITUTE ("<êkota>" "êkota" Ipc) ("<êkota_mwêhci>" "êkota_mwêhci" Iph) TARGET ("<êkota>" Ipc) IF (1 ("<mwêhci>" Ipc)) ;
 REMCOHORT ("<mwêhci>") (-1 ("<êkota_mwêhci>" Iph)) ;
 
-SUBSTITUTE ("<êkwa>" "êkwa" Ipc) ("<êkwa_ani>" "êkwa_ani" Iph) TARGET ("<êkwa>" Ipc) IF (1 ("<ani>" Ipc)) ;
-REMCOHORT ("<ani>") (-1 ("<êkwa_ani>" Iph)) ;
+SUBSTITUTE ("êkwa" Ipc) ("<êkwa_ani>" "êkwa_ani" Iph) TARGET ("êkwa" Ipc) IF (1 ("ani" Ipc)) ;
+REMCOHORT ("ani") (-1 ("<êkwa_ani>" Iph)) ;
 
 SUBSTITUTE ("<êkwa>" "êkwa" Ipc) ("<êkwa_mîna>" "êkwa_mîna" Iph) TARGET ("<êkwa>" Ipc) IF (1 ("<mîna>" Ipc)) ;
 REMCOHORT ("<mîna>") (-1 ("<êkwa_mîna>" Iph)) ;
@@ -558,20 +560,23 @@ REMCOHORT ("<mîna>") (-1 ("<êkwa_mîna>" Iph)) ;
 SUBSTITUTE ("<êkwa>" "êkwa" Ipc) ("<êkwa_wiya>" "êkwa_wiya" Iph) TARGET ("<êkwa>" Ipc) IF (1 ("<wiya>" Ipc)) ;
 REMCOHORT ("<wiya>") (-1 ("<êkwa_wiya>" Iph)) ;
 
-SUBSTITUTE ("<êsa>" "êsa" Ipc) ("<êsa_anima>" "êsa_anima" Iph) TARGET ("<êsa>" Ipc) IF (1 ("<anima>" Ipc)) ;
-REMCOHORT ("<anima>") (-1 ("<êsa_anima>" Iph)) ;
+SUBSTITUTE ("êsa" Ipc) ("<êsa_anima>" "êsa_anima" Iph) TARGET ("êsa" Ipc) IF (1 ("anima" Ipc)) ;
+REMCOHORT ("anima") (-1 ("<êsa_anima>" Iph)) ;
 
-SUBSTITUTE ("<êsa>" "êsa" Ipc) ("<êsa_ôma>" "êsa_ôma" Iph) TARGET ("<êsa>" Ipc) IF (1 ("<ôma>" Ipc)) ;
-REMCOHORT ("<ôma>") (-1 ("<êsa_ôma>" Iph)) ;
+SUBSTITUTE ("êsa" Ipc) ("<êsa_ôma>" "êsa_ôma" Iph) TARGET ("êsa" Ipc) IF (1 ("ôma" Ipc)) ;
+REMCOHORT ("ôma") (-1 ("<êsa_ôma>" Iph)) ;
 
-SUBSTITUTE ("<êwako>" "êwako" Ipc) ("<êwako_ani>" "êwako_ani" Iph) TARGET ("<êwako>" Ipc) IF (1 ("<ani>" Ipc)) ;
-REMCOHORT ("<ani>") (-1 ("<êwako_ani>" Iph)) ;
+SUBSTITUTE ("êwako" Ipc) ("<êwako_ani>" "êwako_ani" Iph) TARGET ("êwako" Ipc) IF (1 ("ani" Ipc)) ;
+REMCOHORT ("ani") (-1 ("<êwako_ani>" Iph)) ;
+
+SUBSTITUTE ("êwako" Ipc) ("<êwako_ohci>" "êwako_ohci" Iph) TARGET ("êwako" Ipc) IF (1 ("ohci" Ipc)) ;
+REMCOHORT ("ohci") (-1 ("<êwako_ohci>" Iph)) ;
 
 SUBSTITUTE ("<ispîhci>" "ispîhci" Ipc) ("<ispîhci_wiya>" "ispîhci_wiya" Iph) TARGET ("<ispîhci>" Ipc) IF (1 ("<wiya>" Ipc)) ;
 REMCOHORT ("<wiya>") (-1 ("<ispîhci_wiya>" Iph)) ;
 
-SUBSTITUTE ("<itêhkê>" "itêhkê" Ipc) ("<itêhkê_isi>" "itêhkê_isi" Iph) TARGET ("<itêhkê>" Ipc) IF (1 ("<isi>" Ipc)) ;
-REMCOHORT ("<isi>") (-1 ("<itêhkê_isi>" Iph)) ;
+SUBSTITUTE ("itêhkê" Ipc) ("<itêhkê_isi>" "itêhkê_isi" Iph) TARGET ("itêhkê" Ipc) IF (1 ("isi" Ipc)) ;
+REMCOHORT ("isi") (-1 ("<itêhkê_isi>" Iph)) ;
 
 SUBSTITUTE ("<kâya>" "kâya" Ipc) ("<kâya_kîkway>" "kâya_kîkway" Iph) TARGET ("<kâya>" Ipc) IF (1 ("<kîkway>" Ipc)) ;
 REMCOHORT ("<kîkway>") (-1 ("<kâya_kîkway>" Iph)) ;
@@ -630,8 +635,8 @@ REMCOHORT ("<cî>") (-1 ("<ma_cî>" Iph)) ;
 SUBSTITUTE ("<ma>" "ma" Ipc) ("<ma_nâ>" "ma_nâ" Iph) TARGET ("<ma>" Ipc) IF (1 ("<nâ>" Ipc)) ;
 REMCOHORT ("<nâ>") (-1 ("<ma_nâ>" Iph)) ;
 
-SUBSTITUTE ("<mahti>" "mahti" Ipc) ("<mahti_êsa>" "mahti_êsa" Iph) TARGET ("<mahti>" Ipc) IF (1 ("<êsa>" Ipc)) ;
-REMCOHORT ("<êsa>") (-1 ("<mahti_êsa>" Iph)) ;
+SUBSTITUTE ("mahti" Ipc) ("<mahti_êsa>" "mahti_êsa" Iph) TARGET ("mahti" Ipc) IF (1 ("êsa" Ipc)) ;
+REMCOHORT ("êsa") (-1 ("<mahti_êsa>" Iph)) ;
 
 SUBSTITUTE ("<mahti>" "mahti" Ipc) ("<mahti_mâka>" "mahti_mâka" Iph) TARGET ("<mahti>" Ipc) IF (1 ("<mâka>" Ipc)) ;
 REMCOHORT ("<mâka>") (-1 ("<mahti_mâka>" Iph)) ;
@@ -639,32 +644,32 @@ REMCOHORT ("<mâka>") (-1 ("<mahti_mâka>" Iph)) ;
 SUBSTITUTE ("<matwân>" "matwân" Ipc) ("<matwân_cî>" "matwân_cî" Iph) TARGET ("<matwân>" Ipc) IF (1 ("<cî>" Ipc)) ;
 REMCOHORT ("<cî>") (-1 ("<matwân_cî>" Iph)) ;
 
-SUBSTITUTE ("<mâka>" "mâka" Ipc) ("<mâka_awa>" "mâka_awa" Iph) TARGET ("<mâka>" Ipc) IF (1 ("<awa>" Ipc)) ;
-REMCOHORT ("<awa>") (-1 ("<mâka_awa>" Iph)) ;
+SUBSTITUTE ("mâka" Ipc) ("<mâka_awa>" "mâka_awa" Iph) TARGET ("mâka" Ipc) IF (1 ("awa" Ipc)) ;
+REMCOHORT ("awa") (-1 ("<mâka_awa>" Iph)) ;
 
 SUBSTITUTE ("<mâka>" "mâka" Ipc) ("<mâka_mîna>" "mâka_mîna" Iph) TARGET ("<mâka>" Ipc) IF (1 ("<mîna>" Ipc)) ;
 REMCOHORT ("<mîna>") (-1 ("<mâka_mîna>" Iph)) ;
 
-SUBSTITUTE ("<mâka>" "mâka" Ipc) ("<mâka_ôma>" "mâka_ôma" Iph) TARGET ("<mâka>" Ipc) IF (1 ("<ôma>" Ipc)) ;
-REMCOHORT ("<ôma>") (-1 ("<mâka_ôma>" Iph)) ;
+SUBSTITUTE ("mâka" Ipc) ("<mâka_ôma>" "mâka_ôma" Iph) TARGET ("mâka" Ipc) IF (1 ("ôma" Ipc)) ;
+REMCOHORT ("ôma") (-1 ("<mâka_ôma>" Iph)) ;
 
 SUBSTITUTE ("<mâni>" "mâni" Ipc) ("<mâni_mâka>" "mâni_mâka" Iph) TARGET ("<mâni>" Ipc) IF (1 ("<mâka>" Ipc)) ;
 REMCOHORT ("<mâka>") (-1 ("<mâni_mâka>" Iph)) ;
 
-SUBSTITUTE ("<mâwaci>" "mâwaci" Ipc) ("<mâwaci_iyikohk>" "mâwaci_iyikohk" Iph) TARGET ("<mâwaci>" Ipc) IF (1 ("<iyikohk>" Ipc)) ;
-REMCOHORT ("<iyikohk>") (-1 ("<mâwaci_iyikohk>" Iph)) ;
+SUBSTITUTE ("mâwaci" Ipc) ("<mâwaci_iyikohk>" "mâwaci_iyikohk" Iph) TARGET ("mâwaci" Ipc) IF (1 ("iyikohk" Ipc)) ;
+REMCOHORT ("iyikohk") (-1 ("<mâwaci_iyikohk>" Iph)) ;
 
-SUBSTITUTE ("<misiwê>" "misiwê" Ipc) ("<misiwê_ita>" "misiwê_ita" Iph) TARGET ("<misiwê>" Ipc) IF (1 ("<ita>" Ipc)) ;
-REMCOHORT ("<ita>") (-1 ("<misiwê_ita>" Iph)) ;
+SUBSTITUTE ("misiwê" Ipc) ("<misiwê_ita>" "misiwê_ita" Iph) TARGET ("misiwê" Ipc) IF (1 ("ita" Ipc)) ;
+REMCOHORT ("ita") (-1 ("<misiwê_ita>" Iph)) ;
 
-SUBSTITUTE ("<misiwê>" "misiwê" Ipc) ("<misiwê_itê>" "misiwê_itê" Iph) TARGET ("<misiwê>" Ipc) IF (1 ("<itê>" Ipc)) ;
-REMCOHORT ("<itê>") (-1 ("<misiwê_itê>" Iph)) ;
+SUBSTITUTE ("misiwê" Ipc) ("<misiwê_itê>" "misiwê_itê" Iph) TARGET ("misiwê" Ipc) IF (1 ("itê" Ipc)) ;
+REMCOHORT ("itê") (-1 ("<misiwê_itê>" Iph)) ;
 
-SUBSTITUTE ("<mîna>" "mîna" Ipc) ("<mîna_apisîs>" "mîna_apisîs" Iph) TARGET ("<mîna>" Ipc) IF (1 ("<apisîs>" Ipc)) ;
-REMCOHORT ("<apisîs>") (-1 ("<mîna_apisîs>" Iph)) ;
+SUBSTITUTE ("mîna" Ipc) ("<mîna_apisîs>" "mîna_apisîs" Iph) TARGET ("mîna" Ipc) IF (1 ("apisîs" Ipc)) ;
+REMCOHORT ("apisîs") (-1 ("<mîna_apisîs>" Iph)) ;
 
-SUBSTITUTE ("<mîna>" "mîna" Ipc) ("<mîna_âpihtâw>" "mîna_âpihtâw" Iph) TARGET ("<mîna>" Ipc) IF (1 ("<âpihtâw>" Ipc)) ;
-REMCOHORT ("<âpihtâw>") (-1 ("<mîna_âpihtâw>" Iph)) ;
+SUBSTITUTE ("mîna" Ipc) ("<mîna_âpihtâw>" "mîna_âpihtâw" Iph) TARGET ("mîna" Ipc) IF (1 ("âpihtâw" Ipc)) ;
+REMCOHORT ("âpihtâw") (-1 ("<mîna_âpihtâw>" Iph)) ;
 
 SUBSTITUTE ("<môy>" "môy" Ipc) ("<môy_cêskwa>" "môy_cêskwa" Iph) TARGET ("<môy>" Ipc) IF (1 ("<cêskwa>" Ipc)) ;
 REMCOHORT ("<cêskwa>") (-1 ("<môy_cêskwa>" Iph)) ;
@@ -687,8 +692,8 @@ REMCOHORT ("<wîhkâc>") (-1 ("<môy_wîhkâc>" Iph)) ;
 SUBSTITUTE ("<môy>" "môy" Ipc) ("<môy_wîhkât>" "môy_wîhkât" Iph) TARGET ("<môy>" Ipc) IF (1 ("<wîhkât>" Ipc)) ;
 REMCOHORT ("<wîhkât>") (-1 ("<môy_wîhkât>" Iph)) ;
 
-SUBSTITUTE ("<môya>" "môya" Ipc) ("<môya_ahpô>" "môya_ahpô" Iph) TARGET ("<môya>" Ipc) IF (1 ("<ahpô>" Ipc)) ;
-REMCOHORT ("<ahpô>") (-1 ("<môya_ahpô>" Iph)) ;
+SUBSTITUTE ("môya" Ipc) ("<môya_ahpô>" "môya_ahpô" Iph) TARGET ("môya" Ipc) IF (1 ("ahpô" Ipc)) ;
+REMCOHORT ("ahpô") (-1 ("<môya_ahpô>" Iph)) ;
 
 SUBSTITUTE ("<môya>" "môya" Ipc) ("<môya_cî>" "môya_cî" Iph) TARGET ("<môya>" Ipc) IF (1 ("<cî>" Ipc)) ;
 REMCOHORT ("<cî>") (-1 ("<môya_cî>" Iph)) ;
@@ -714,11 +719,11 @@ REMCOHORT ("<wîhkâc>") (-1 ("<nama_wîhkâc>" Iph)) ;
 SUBSTITUTE ("<namôy>" "namôy" Ipc) ("<namôy_wîhkâc>" "namôy_wîhkâc" Iph) TARGET ("<namôy>" Ipc) IF (1 ("<wîhkâc>" Ipc)) ;
 REMCOHORT ("<wîhkâc>") (-1 ("<namôy_wîhkâc>" Iph)) ;
 
-SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_ahpô>" "namôya_ahpô" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<ahpô>" Ipc)) ;
-REMCOHORT ("<ahpô>") (-1 ("<namôya_ahpô>" Iph)) ;
+SUBSTITUTE ("namôya" Ipc) ("<namôya_ahpô>" "namôya_ahpô" Iph) TARGET ("namôya" Ipc) IF (1 ("ahpô" Ipc)) ;
+REMCOHORT ("ahpô") (-1 ("<namôya_ahpô>" Iph)) ;
 
-SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_apisîs>" "namôya_apisîs" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<apisîs>" Ipc)) ;
-REMCOHORT ("<apisîs>") (-1 ("<namôya_apisîs>" Iph)) ;
+SUBSTITUTE ("namôya" Ipc) ("<namôya_apisîs>" "namôya_apisîs" Iph) TARGET ("namôya" Ipc) IF (1 ("apisîs" Ipc)) ;
+REMCOHORT ("apisîs") (-1 ("<namôya_apisîs>" Iph)) ;
 
 SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_cêskwa>" "namôya_cêskwa" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<cêskwa>" Ipc)) ;
 REMCOHORT ("<cêskwa>") (-1 ("<namôya_cêskwa>" Iph)) ;
@@ -726,8 +731,8 @@ REMCOHORT ("<cêskwa>") (-1 ("<namôya_cêskwa>" Iph)) ;
 SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_cî>" "namôya_cî" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<cî>" Ipc)) ;
 REMCOHORT ("<cî>") (-1 ("<namôya_cî>" Iph)) ;
 
-SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_êkwayikohk>" "namôya_êkwayikohk" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<êkwayikohk>" Ipc)) ;
-REMCOHORT ("<êkwayikohk>") (-1 ("<namôya_êkwayikohk>" Iph)) ;
+SUBSTITUTE ("namôya" Ipc) ("<namôya_êkwayikohk>" "namôya_êkwayikohk" Iph) TARGET ("namôya" Ipc) IF (1 ("êkwayikohk" Ipc)) ;
+REMCOHORT ("êkwayikohk") (-1 ("<namôya_êkwayikohk>" Iph)) ;
 
 SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_kakêtihk>" "namôya_kakêtihk" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<kakêtihk>" Ipc)) ;
 REMCOHORT ("<kakêtihk>") (-1 ("<namôya_kakêtihk>" Iph)) ;
@@ -786,8 +791,8 @@ REMCOHORT ("<ita>") (-1 ("<nânitaw_ita>" Iph)) ;
 SUBSTITUTE ("<nânitaw>" "nânitaw" Ipc) ("<nânitaw_itê>" "nânitaw_itê" Iph) TARGET ("<nânitaw>" Ipc) IF (1 ("<itê>" Ipc)) ;
 REMCOHORT ("<itê>") (-1 ("<nânitaw_itê>" Iph)) ;
 
-SUBSTITUTE ("<nêtê>" "nêtê" Ipc) ("<nêtê_ohci>" "nêtê_ohci" Iph) TARGET ("<nêtê>" Ipc) IF (1 ("<ohci>" Ipc)) ;
-REMCOHORT ("<ohci>") (-1 ("<nêtê_ohci>" Iph)) ;
+SUBSTITUTE ("nêtê" Ipc) ("<nêtê_ohci>" "nêtê_ohci" Iph) TARGET ("nêtê" Ipc) IF (1 ("ohci" Ipc)) ;
+REMCOHORT ("ohci") (-1 ("<nêtê_ohci>" Iph)) ;
 
 SUBSTITUTE ("<nistam>" "nistam" Ipc) ("<nistam_mâwacêyas>" "nistam_mâwacêyas" Iph) TARGET ("<nistam>" Ipc) IF (1 ("<mâwacêyas>" Ipc)) ;
 REMCOHORT ("<mâwacêyas>") (-1 ("<nistam_mâwacêyas>" Iph)) ;
@@ -807,8 +812,8 @@ REMCOHORT ("<tahtwâpisk>") (-1 ("<nistomitanaw_tahtwâpisk>" Iph)) ;
 SUBSTITUTE ("<nîsitanaw>" "nîsitanaw" Ipc) ("<nîsitanaw_tahtwâpisk>" "nîsitanaw_tahtwâpisk" Iph) TARGET ("<nîsitanaw>" Ipc) IF (1 ("<tahtwâpisk>" Ipc)) ;
 REMCOHORT ("<tahtwâpisk>") (-1 ("<nîsitanaw_tahtwâpisk>" Iph)) ;
 
-SUBSTITUTE ("<omisi>" "omisi" Ipc) ("<omisi_isi>" "omisi_isi" Iph) TARGET ("<omisi>" Ipc) IF (1 ("<isi>" Ipc)) ;
-REMCOHORT ("<isi>") (-1 ("<omisi_isi>" Iph)) ;
+SUBSTITUTE ("omisi" Ipc) ("<omisi_isi>" "omisi_isi" Iph) TARGET ("omisi" Ipc) IF (1 ("isi" Ipc)) ;
+REMCOHORT ("isi") (-1 ("<omisi_isi>" Iph)) ;
 
 SUBSTITUTE ("<osâm>" "osâm" Ipc) ("<osâm_apisîs>" "osâm_apisîs" Iph) TARGET ("<osâm>" Ipc) IF (1 ("<apisîs>" Ipc)) ;
 REMCOHORT ("<apisîs>") (-1 ("<osâm_apisîs>" Iph)) ;
@@ -822,44 +827,41 @@ REMCOHORT ("<piko>") (-1 ("<osâm_piko>" Iph)) ;
 SUBSTITUTE ("<otâhk>" "otâhk" Ipc) ("<otâhk_ispayiw>" "otâhk_ispayiw" Iph) TARGET ("<otâhk>" Ipc) IF (1 ("<ispayiw>" Ipc)) ;
 REMCOHORT ("<ispayiw>") (-1 ("<otâhk_ispayiw>" Iph)) ;
 
-SUBSTITUTE ("<ôtê>" "ôtê" Ipc) ("<ôtê_isi>" "ôtê_isi" Iph) TARGET ("<ôtê>" Ipc) IF (1 ("<isi>" Ipc)) ;
-REMCOHORT ("<isi>") (-1 ("<ôtê_isi>" Iph)) ;
+SUBSTITUTE ("ôtê" Ipc) ("<ôtê_isi>" "ôtê_isi" Iph) TARGET ("ôtê" Ipc) IF (1 ("isi" Ipc)) ;
+REMCOHORT ("isi") (-1 ("<ôtê_isi>" Iph)) ;
 
-SUBSTITUTE ("<pâtimâ>" "pâtimâ" Ipc) ("<pâtimâ_ici>" "pâtimâ_ici" Iph) TARGET ("<pâtimâ>" Ipc) IF (1 ("<ici>" Ipc)) ;
-REMCOHORT ("<ici>") (-1 ("<pâtimâ_ici>" Iph)) ;
+SUBSTITUTE ("pâtimâ" Ipc) ("<pâtimâ_ici>" "pâtimâ_ici" Iph) TARGET ("pâtimâ" Ipc) IF (1 ("ici" Ipc)) ;
+REMCOHORT ("ici") (-1 ("<pâtimâ_ici>" Iph)) ;
 
-SUBSTITUTE ("<pâtimâ>" "pâtimâ" Ipc) ("<pâtimâ_itâp>" "pâtimâ_itâp" Iph) TARGET ("<pâtimâ>" Ipc) IF (1 ("<itâp>" Ipc)) ;
-REMCOHORT ("<itâp>") (-1 ("<pâtimâ_itâp>" Iph)) ;
+SUBSTITUTE ("pâtimâ" Ipc) ("<pâtimâ_itâp>" "pâtimâ_itâp" Iph) TARGET ("pâtimâ" Ipc) IF (1 ("itâp" Ipc)) ;
+REMCOHORT ("itâp") (-1 ("<pâtimâ_itâp>" Iph)) ;
 
 SUBSTITUTE ("<pêyakwâw>" "pêyakwâw" Ipc) ("<pêyakwâw_êsa>" "pêyakwâw_êsa" Iph) TARGET ("<pêyakwâw>" Ipc) IF (1 ("<êsa>" Ipc)) ;
 REMCOHORT ("<êsa>") (-1 ("<pêyakwâw_êsa>" Iph)) ;
 
-SUBSTITUTE ("<piko>" "piko" Ipc) ("<piko_ani>" "piko_ani" Iph) TARGET ("<piko>" Ipc) IF (1 ("<ani>" Ipc)) ;
-REMCOHORT ("<ani>") (-1 ("<piko_ani>" Iph)) ;
+SUBSTITUTE ("piko" Ipc) ("<piko_ani>" "piko_ani" Iph) TARGET ("piko" Ipc) IF (1 ("ani" Ipc)) ;
+REMCOHORT ("ani") (-1 ("<piko_ani>" Iph)) ;
 
-SUBSTITUTE ("<piko>" "piko" Ipc) ("<piko_ispî>" "piko_ispî" Iph) TARGET ("<piko>" Ipc) IF (1 ("<ispî>" Ipc)) ;
-REMCOHORT ("<ispî>") (-1 ("<piko_ispî>" Iph)) ;
+SUBSTITUTE ("piko" Ipc) ("<piko_ispî>" "piko_ispî" Iph) TARGET ("piko" Ipc) IF (1 ("ispî" Ipc)) ;
+REMCOHORT ("ispî") (-1 ("<piko_ispî>" Iph)) ;
 
-SUBSTITUTE ("<piko>" "piko" Ipc) ("<piko_ita>" "piko_ita" Iph) TARGET ("<piko>" Ipc) IF (1 ("<ita>" Ipc)) ;
-REMCOHORT ("<ita>") (-1 ("<piko_ita>" Iph)) ;
+SUBSTITUTE ("piko" Ipc) ("<piko_ita>" "piko_ita" Iph) TARGET ("piko" Ipc) IF (1 ("ita" Ipc)) ;
+REMCOHORT ("ita") (-1 ("<piko_ita>" Iph)) ;
 
-SUBSTITUTE ("<piko>" "piko" Ipc) ("<piko_itê>" "piko_itê" Iph) TARGET ("<piko>" Ipc) IF (1 ("<itê>" Ipc)) ;
-REMCOHORT ("<itê>") (-1 ("<piko_itê>" Iph)) ;
+SUBSTITUTE ("piko" Ipc) ("<piko_itê>" "piko_itê" Iph) TARGET ("piko" Ipc) IF (1 ("itê" Ipc)) ;
+REMCOHORT ("itê") (-1 ("<piko_itê>" Iph)) ;
 
-SUBSTITUTE ("<piko>" "piko" Ipc) ("<piko_itê>" "piko_itê" Iph) TARGET ("<piko>" Ipc) IF (1 ("<itê>" Ipc)) ;
-REMCOHORT ("<itê>") (-1 ("<piko_itê>" Iph)) ;
+SUBSTITUTE ("piko" Ipc) ("<piko_itowahk>" "piko_itowahk" Iph) TARGET ("piko" Ipc) IF (1 ("itowahk" Ipc)) ;
+REMCOHORT ("itowahk") (-1 ("<piko_itowahk>" Iph)) ;
 
-SUBSTITUTE ("<piko>" "piko" Ipc) ("<piko_itowahk>" "piko_itowahk" Iph) TARGET ("<piko>" Ipc) IF (1 ("<itowahk>" Ipc)) ;
-REMCOHORT ("<itowahk>") (-1 ("<piko_itowahk>" Iph)) ;
+SUBSTITUTE ("piko" Ipc) ("<piko_itowihk>" "piko_itowihk" Iph) TARGET ("piko" Ipc) IF (1 ("itowihk" Ipc)) ;
+REMCOHORT ("itowihk") (-1 ("<piko_itowihk>" Iph)) ;
 
-SUBSTITUTE ("<piko>" "piko" Ipc) ("<piko_itowihk>" "piko_itowihk" Iph) TARGET ("<piko>" Ipc) IF (1 ("<itowihk>" Ipc)) ;
-REMCOHORT ("<itowihk>") (-1 ("<piko_itowihk>" Iph)) ;
+SUBSTITUTE ("piko" Ipc) ("<piko_iyikohk>" "piko_iyikohk" Iph) TARGET ("piko" Ipc) IF (1 ("iyikohk" Ipc)) ;
+REMCOHORT ("iyikohk") (-1 ("<piko_iyikohk>" Iph)) ;
 
-SUBSTITUTE ("<piko>" "piko" Ipc) ("<piko_iyikohk>" "piko_iyikohk" Iph) TARGET ("<piko>" Ipc) IF (1 ("<iyikohk>" Ipc)) ;
-REMCOHORT ("<iyikohk>") (-1 ("<piko_iyikohk>" Iph)) ;
-
-SUBSTITUTE ("<piko>" "piko" Ipc) ("<piko_iyiwas>" "piko_iyiwas" Iph) TARGET ("<piko>" Ipc) IF (1 ("<iyiwas>" Ipc)) ;
-REMCOHORT ("<iyiwas>") (-1 ("<piko_iyiwas>" Iph)) ;
+SUBSTITUTE ("piko" Ipc) ("<piko_iyiwas>" "piko_iyiwas" Iph) TARGET ("piko" Ipc) IF (1 ("iyiwas" Ipc)) ;
+REMCOHORT ("iyiwas") (-1 ("<piko_iyiwas>" Iph)) ;
 
 SUBSTITUTE ("<pîtos>" "pîtos" Ipc) ("<pîtos_mîna>" "pîtos_mîna" Iph) TARGET ("<pîtos>" Ipc) IF (1 ("<mîna>" Ipc)) ;
 REMCOHORT ("<mîna>") (-1 ("<pîtos_mîna>" Iph)) ;
@@ -870,32 +872,32 @@ REMCOHORT ("<isi>") (-1 ("<sâkâstênohk_isi>" Iph)) ;
 SUBSTITUTE ("<sâwanohk>" "sâwanohk" Ipc) ("<sâwanohk_isi>" "sâwanohk_isi" Iph) TARGET ("<sâwanohk>" Ipc) IF (1 ("<isi>" Ipc)) ;
 REMCOHORT ("<isi>") (-1 ("<sâwanohk_isi>" Iph)) ;
 
-SUBSTITUTE ("<tahki>" "tahki" Ipc) ("<tahki_ayiwâk>" "tahki_ayiwâk" Iph) TARGET ("<tahki>" Ipc) IF (1 ("<ayiwâk>" Ipc)) ;
-REMCOHORT ("<ayiwâk>") (-1 ("<tahki_ayiwâk>" Iph)) ;
+SUBSTITUTE ("tahki" Ipc) ("<tahki_ayiwâk>" "tahki_ayiwâk" Iph) TARGET ("tahki" Ipc) IF (1 ("ayiwâk" Ipc)) ;
+REMCOHORT ("ayiwâk") (-1 ("<tahki_ayiwâk>" Iph)) ;
 
 SUBSTITUTE ("<tân>" "tân" Ipc) ("<tân_ôt>" "tân_ôt" Iph) TARGET ("<tân>" Ipc) IF (1 ("<ôt>" Ipc)) ;
 REMCOHORT ("<ôt>") (-1 ("<tân_ôt>" Iph)) ;
 
-SUBSTITUTE ("<tânêhki>" "tânêhki" Ipc) ("<tânêhki_ana>" "tânêhki_ana" Iph) TARGET ("<tânêhki>" Ipc) IF (1 ("<ana>" Ipc)) ;
-REMCOHORT ("<ana>") (-1 ("<tânêhki_ana>" Iph)) ;
+SUBSTITUTE ("tânêhki" Ipc) ("<tânêhki_ana>" "tânêhki_ana" Iph) TARGET ("tânêhki" Ipc) IF (1 ("ana" Ipc)) ;
+REMCOHORT ("ana") (-1 ("<tânêhki_ana>" Iph)) ;
 
-SUBSTITUTE ("<tânima>" "tânima" Ipc) ("<tânima_êwako>" "tânima_êwako" Iph) TARGET ("<tânima>" Ipc) IF (1 ("<êwako>" Ipc)) ;
-REMCOHORT ("<êwako>") (-1 ("<tânima_êwako>" Iph)) ;
+SUBSTITUTE ("tânima" Ipc) ("<tânima_êwako>" "tânima_êwako" Iph) TARGET ("tânima" Ipc) IF (1 ("êwako" Ipc)) ;
+REMCOHORT ("êwako") (-1 ("<tânima_êwako>" Iph)) ;
 
-SUBSTITUTE ("<tânisi>" "tânisi" Ipc) ("<tânisi_êkwa>" "tânisi_êkwa" Iph) TARGET ("<tânisi>" Ipc) IF (1 ("<êkwa>" Ipc)) ;
-REMCOHORT ("<êkwa>") (-1 ("<tânisi_êkwa>" Iph)) ;
+SUBSTITUTE (""tânisi" Ipc) ("<tânisi_êkwa>" "tânisi_êkwa" Iph) TARGET ("tânisi" Ipc) IF (1 ("êkwa" Ipc)) ;
+REMCOHORT ("êkwa") (-1 ("<tânisi_êkwa>" Iph)) ;
 
-SUBSTITUTE ("<tânisi>" "tânisi" Ipc) ("<tânisi_êtikwê>" "tânisi_êtikwê" Iph) TARGET ("<tânisi>" Ipc) IF (1 ("<êtikwê>" Ipc)) ;
-REMCOHORT ("<êtikwê>") (-1 ("<tânisi_êtikwê>" Iph)) ;
+SUBSTITUTE ("tânisi" Ipc) ("<tânisi_êtikwê>" "tânisi_êtikwê" Iph) TARGET ("tânisi" Ipc) IF (1 ("êtikwê" Ipc)) ;
+REMCOHORT ("êtikwê") (-1 ("<tânisi_êtikwê>" Iph)) ;
 
-SUBSTITUTE ("<tânispî>" "tânispî" Ipc) ("<tânispî_ohci>" "tânispî_ohci" Iph) TARGET ("<tânispî>" Ipc) IF (1 ("<ohci>" Ipc)) ;
-REMCOHORT ("<ohci>") (-1 ("<tânispî_ohci>" Iph)) ;
+SUBSTITUTE ("tânispî" Ipc) ("<tânispî_ohci>" "tânispî_ohci" Iph) TARGET ("tânispî" Ipc) IF (1 ("ohci" Ipc)) ;
+REMCOHORT ("ohci") (-1 ("<tânispî_ohci>" Iph)) ;
 
-SUBSTITUTE ("<tânita>" "tânita" Ipc) ("<tânita_ohci>" "tânita_ohci" Iph) TARGET ("<tânita>" Ipc) IF (1 ("<ohci>" Ipc)) ;
-REMCOHORT ("<ohci>") (-1 ("<tânita_ohci>" Iph)) ;
+SUBSTITUTE ("tânita" Ipc) ("<tânita_ohci>" "tânita_ohci" Iph) TARGET ("tânita" Ipc) IF (1 ("ohci" Ipc)) ;
+REMCOHORT ("ohci") (-1 ("<tânita_ohci>" Iph)) ;
 
-SUBSTITUTE ("<tânitahto>" "tânitahto" Ipc) ("<tânitahto_askiy>" "tânitahto_askiy" Iph) TARGET ("<tânitahto>" Ipc) IF (1 ("<askiy>" Ipc)) ;
-REMCOHORT ("<askiy>") (-1 ("<tânitahto_askiy>" Iph)) ;
+SUBSTITUTE ("tânitahto" Ipc) ("<tânitahto_askiy>" "tânitahto_askiy" Iph) TARGET ("tânitahto" Ipc) IF (1 ("askiy" Ipc)) ;
+REMCOHORT ("askiy") (-1 ("<tânitahto_askiy>" Iph)) ;
 
 SUBSTITUTE ("<tânitahto>" "tânitahto" Ipc) ("<tânitahto_kîsikâw>" "tânitahto_kîsikâw" Iph) TARGET ("<tânitahto>" Ipc) IF (1 ("<kîsikâw>" Ipc)) ;
 REMCOHORT ("<kîsikâw>") (-1 ("<tânitahto_kîsikâw>" Iph)) ;
@@ -909,17 +911,19 @@ REMCOHORT ("<tipahikan>") (-1 ("<tânitahto_tipahikan>" Iph)) ;
 SUBSTITUTE ("<tânitahto>" "tânitahto" Ipc) ("<tânitahto_tipiskâw>" "tânitahto_tipiskâw" Iph) TARGET ("<tânitahto>" Ipc) IF (1 ("<tipiskâw>" Ipc)) ;
 REMCOHORT ("<tipiskâw>") (-1 ("<tânitahto_tipiskâw>" Iph)) ;
 
-SUBSTITUTE ("<tânitê>" "tânitê" Ipc) ("<tânitê_êtikwê>" "tânitê_êtikwê" Iph) TARGET ("<tânitê>" Ipc) IF (1 ("<êtikwê>" Ipc)) ;
-REMCOHORT ("<êtikwê>") (-1 ("<tânitê_êtikwê>" Iph)) ;
+SUBSTITUTE ("tânitê" Ipc) ("<tânitê_êtikwê>" "tânitê_êtikwê" Iph) TARGET ("tânitê" Ipc) IF (1 ("êtikwê" Ipc)) ;
+REMCOHORT ("êtikwê") (-1 ("<tânitê_êtikwê>" Iph)) ;
 
-SUBSTITUTE ("<tâniwâ>" "tâniwâ" Ipc) ("<tâniwâ_êtikwê>" "tâniwâ_êtikwê" Iph) TARGET ("<tâniwâ>" Ipc) IF (1 ("<êtikwê>" Ipc)) ;
-REMCOHORT ("<êtikwê>") (-1 ("<tâniwâ_êtikwê>" Iph)) ;
+SUBSTITUTE ("tâniwâ" "tâniwâ" Ipc) ("<tâniwâ_êtikwê>" "tâniwâ_êtikwê" Iph) TARGET ("tâniwâ" Ipc) IF (1 ("êtikwê" Ipc)) ;
+REMCOHORT ("êtikwê") (-1 ("<tâniwâ_êtikwê>" Iph)) ;
 
 SUBSTITUTE ("<tâpwê>" "tâpwê" Ipc) ("<tâpwê_piko>" "tâpwê_piko" Iph) TARGET ("<tâpwê>" Ipc) IF (1 ("<piko>" Ipc)) ;
 REMCOHORT ("<piko>") (-1 ("<tâpwê_piko>" Iph)) ;
 
 SUBSTITUTE ("<tâpwê>" "tâpwê" Ipc) ("<tâpwê_wiya>" "tâpwê_wiya" Iph) TARGET ("<tâpwê>" Ipc) IF (1 ("<wiya>" Ipc)) ;
 REMCOHORT ("<wiya>") (-1 ("<tâpwê_wiya>" Iph)) ;
+
+ADD:Adpos ADP TARGET PREPOSITION OR POSTPOSITION ;
 
 SECTION
 
