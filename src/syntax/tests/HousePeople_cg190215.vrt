@@ -1148,7 +1148,7 @@
 "<iyikohk>"
 	"iyikohk" Ipc
 "<kipahotowikamikohk>"
-	"kipahotowikamik" N IN Loc %<P
+	"kipahotowikamik" N IN Loc %V>
 "<ê-asiwasocik>"
 	"asiwasow" PV/e V AI Cnj Prs 3Pl %PRED
 "<ôki>"
@@ -2753,8 +2753,8 @@
 	"#ôma" Pron Dem Med IN Sg
 	"anima" Ipc
 "<askîhk>"
-	"#askiy" N IN Loc 
-	"askîhk" Ipc
+	"askiy" N IN Loc %<V
+	"#askîhk" Ipc
 "<,>"
 	"," CLB
 "<okâwîmâwaskîhk>"
@@ -4192,7 +4192,7 @@
 "<nika-nitawi-kwâskwêpicikân>"
 	"kwâskwêpicikêw" PV/nitawi V AI Ind Fut Def 1Sg %PRED
 "<sîpîhk>"
-	"sîpiy" N IN Loc 
+	"sîpiy" N IN Loc %<V
 	"#sîpîw" V AI Cnj Prs X
 "<!>"
 	^excl CLB
@@ -4262,7 +4262,7 @@
 "<,>"
 	"," CLB
 "<kwâskwêpicikanihk>"
-	"kwâskwêpicikan" N IN Loc
+	"kwâskwêpicikan" N IN Loc %V>
 "<ka-kikamohtât>"
 	"#kikamohtâw" RdplW V TI Cnj Prs 3Sg 
 	"kikamohtâw" PV/ka V TI Cnj Prs 3Sg Morph %PRED
@@ -4362,7 +4362,7 @@
 "<tahkoht-ôtê>"
 	"*tahkoht-ôtê"
 "<oscikwânisiyihk>"
-	"miscikwânis" N IN Px4Sg/Pl Loc
+	"miscikwânis" N IN Px4Sg/Pl Loc %V>
 "<mâkoskawêw>"
 	"mâkoskawêw" V TA Ind Prs 3Sg 4Sg/PlO %PRED
 "<,>"
@@ -4503,7 +4503,7 @@
 "<,>"
 	"," CLB
 "<otasiwacikanihk>"
-	"asiwacikan" N IN Px3Sg Loc 
+	"asiwacikan" N IN Px3Sg Loc %V>
 "<ê-asiwatêyik>"
 	"asiwatêw" PV/e V II Cnj Prs 4Sg %PRED
 "<.>"
@@ -4562,7 +4562,7 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<sîpîhk>"
-	"sîpiy" N IN Loc 
+	"sîpiy" N IN Loc %V>
 	"#sîpîw" V AI Cnj Prs X 
 "<ayapiw>"
 	"apiw" RdplW V AI Ind Prs 3Sg %PRED
@@ -4587,7 +4587,7 @@
 	"kîkway" N IN Sg %<GOAL
 	"#kîkway" N AN Sg
 "<ohcikwanihk>"
-	"mihcikwan" N IN Px3Sg Loc 
+	"mihcikwan" N IN Px3Sg Loc %<V
 "<,>"
 	"," CLB
 "<itwêw>"
@@ -4971,7 +4971,7 @@
 "<nîstanân>"
 	"nîstanân" Pron Pers 1Pl Incl
 "<niwîtatoskêmâkan>"
-	"-wîtatoskêmâkan" N AN Sg Px1Sg %<Pron
+	"-wîtatoskêmâkan" N AN Sg Px1Sg 
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %<N
 "<,>"
@@ -6805,7 +6805,7 @@
 	"otihtapinahisin" V AI Ind Prs 1Sg Err/Orth %PRED
 "<ispacinâsihk>"
 	"#ispatinaw" N IN Der/Dim N IN Loc 
-	"ispacinâs" N IN Loc 
+	"ispacinâs" N IN Loc %<V
 "<,>"
 	"," CLB
 "<itwêw>"
@@ -7219,7 +7219,7 @@
 "<amiskwayânêscocinis>"
 	"amiskwayânêscocinis" N IN Sg %GOAL>
 "<nicicâskâsihk>"
-	"micicâskâs" N IN Px1Sg Loc
+	"micicâskâs" N IN Px1Sg Loc %V>
 "<nitastân>"
 	"astâw" V TI Ind Prs 1Sg %PRED
 "<,>"
@@ -7425,7 +7425,7 @@
 "<pôt-ôhi>"
 	"*pôt-ôhi"
 "<maskimotihk>"
-	"maskimot" N IN Loc 
+	"maskimot" N IN Loc %V>
 "<k-âsiwatêyiki>"
 	"#asiwatêw" PV/ka V II Cnj Prs 4Pl Err/Orth
 	"asiwatêw" PV/kaa V II Cnj Prs 4Pl Err/Orth %PRED
@@ -8401,7 +8401,7 @@
 "<kêyâpic>"
 	"kêyâpic" Ipc
 "<nîkihk>"
-	"-îki" N IN Px1Sg Loc 
+	"-îki" N IN Px1Sg Loc %<V
 "<,>"
 	"," CLB
 "<">"
@@ -9012,7 +9012,7 @@
 "<ê-atoskêyâhk>"
 	"atoskêw" PV/e V AI Cnj Prs 1Pl %PRED
 "<atâwêwikamikohk>"
-	"atâwêwikamik" N IN Loc 
+	"atâwêwikamik" N IN Loc %<V
 "<,>"
 	"," CLB
 "<sôskwâc>"
@@ -10334,7 +10334,7 @@
 "<ôta>"
 	"ôta" Ipc
 "<naniwâhk>"
-	"maniway" N IN Px1Sg Loc Morph %<P
+	"maniway" N IN Px1Sg Loc Morph 
 "<ôta>"
 	"ôta" Ipc
 "<,>"
@@ -10364,7 +10364,7 @@
 "<kâ-nitonikêyân>"
 	"nitonikêw" PV/kaa V AI Cnj Prs 1Sg %PRED
 "<nitasiwacikanihk>"
-	"asiwacikan" N IN Px1Sg Loc 
+	"asiwacikan" N IN Px1Sg Loc %<V
 "<ôta>"
 	"ôta" Ipc
 "<,>"

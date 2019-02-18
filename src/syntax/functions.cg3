@@ -189,6 +189,8 @@ LIST @Neg> = @Neg> ;
 LIST @N> = @N> ;
 LIST @<N = @<N ;
  
+LIST @V> = @V> ;
+LIST @<V = @<V ; 
 
 LIST @<P = @<P ;
 LIST @P> = @P> ;
@@ -289,6 +291,8 @@ BEFORE-SECTIONS
 SECTION
 MAP:PrepNR @<P TARGET N + Loc IF (-1 PREPOSITION) ;
 MAP:PrepNL @P> TARGET N + Loc IF (1 POSTPOSITION) ;
+MAP:LocVR  @<V TARGET N + Loc IF (*-1 V BARRIER CLB) ;
+MAP:LocVL  @V> TARGET N + Loc IF (*1 V BARRIER CLB) ;
 
 ##MAP @<ADVL Loc OR Ipc  (-1 VFIN)(NOT 0 @<P) ;
 ##MAP @ADVL> Loc OR Ipc  (*1 VFIN)(NOT 0 @P>) ;
