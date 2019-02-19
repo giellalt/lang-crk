@@ -929,6 +929,21 @@ REMCOHORT ("<piko>") (-1 ("<tâpwê_piko>" Iph)) ;
 SUBSTITUTE ("<tâpwê>" "tâpwê" Ipc) ("<tâpwê_wiya>" "tâpwê_wiya" Iph) TARGET ("<tâpwê>" Ipc) IF (1 ("<wiya>" Ipc)) ;
 REMCOHORT ("<wiya>") (-1 ("<tâpwê_wiya>" Iph)) ;
 
+SUBSTITUTE ("wiya" Ipc) ("<wiya_âta_wiya>" "wiya_âta_wiya" Iph) TARGET ("wiya" Ipc) IF (1 ("âta" Ipc))(2 ("wiya" Ipc)) ;
+REMCOHORT ("wiya") (-1 ("âta"))(-2 ("<wiya_âta_wiya>" Iph)) ;
+REMCOHORT ("âta") (-1 ("<wiya_âta_wiya>" Iph)) ;
+
+SUBSTITUTE ("wiya" Ipc) ("<wiyâ_wîpac_cî_wiya>" "wiyâ_wîpac_cî_wiya" Iph) TARGET ("wiya" Ipc) IF (1 ("wîpac" Ipc))(2 ("cî" Ipc))(3 ("wiya" Ipc)) ;
+REMCOHORT ("wiya") (-1 ("cî"))(-2 ("wîpac"))(-3 ("<wiyâ_wîpac_cî_wiya>" Iph)) ;
+REMCOHORT ("cî") (-1 ("wîpac"))(-2 ("<wiyâ_wîpac_cî_wiya>" Iph)) ;
+REMCOHORT ("wîpac") (-1 ("<wiyâ_wîpac_cî_wiya>" Iph)) ;
+
+#second set of same constraints plus vowel length due to error/ambiguity in M-GS
+SUBSTITUTE ("wiyâ" Ipc) ("<wiyâ_wîpac_cî_wiya>" "wiyâ_wîpac_cî_wiya" Iph) TARGET ("wiyâ" Ipc) IF (1 ("wîpac" Ipc))(2 ("cî" Ipc))(3 ("wiya" Ipc)) ;
+REMCOHORT ("wiya") (-1 ("cî"))(-2 ("wîpac"))(-3 ("<wiyâ_wîpac_cî_wiya>" Iph)) ;
+REMCOHORT ("cî") (-1 ("wîpac"))(-2 ("<wiyâ_wîpac_cî_wiya>" Iph)) ;
+REMCOHORT ("wîpac") (-1 ("<wiyâ_wîpac_cî_wiya>" Iph)) ;
+
 ADD:Adpos ADP TARGET PREPOSITION OR POSTPOSITION ;
 
 SECTION
@@ -1008,7 +1023,7 @@ SELECT:DemNP Ipc (*0 IIZ)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
 SELECT:ChooseIpc Ipc IF (0 V) ;
 SELECT:ChooseIpc Ipc IF (0 N + $$NUMBERGENDER)(-1 Dem + $$NUMBERGENDER) ;
 # Iph sub/rem introduces some issues, fix with following constraint
-SELECT:ChooseIph Iph IF (0 N OR V) ;
+SELECT:ChooseIph Iph IF (0 N OR V OR Pron) ;
 
 # Demonstratives follow nouns.
 #SELECT:DemNotIpcDN Dem (0 Ipc)(1 N) ;
