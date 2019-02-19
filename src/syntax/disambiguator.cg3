@@ -32,6 +32,7 @@ LIST V = V ;
 
 LIST Ipc = Ipc ;
 LIST Iph = Iph ;
+LIST Ipl = Ipl ;
 LIST Interj = Interj ;
 
 LIST Adv = Adv ;
@@ -944,7 +945,7 @@ REMCOHORT ("wiya") (-1 ("cî"))(-2 ("wîpac"))(-3 ("<wiyâ_wîpac_cî_wiya>" Iph
 REMCOHORT ("cî") (-1 ("wîpac"))(-2 ("<wiyâ_wîpac_cî_wiya>" Iph)) ;
 REMCOHORT ("wîpac") (-1 ("<wiyâ_wîpac_cî_wiya>" Iph)) ;
 
-ADD:Adpos ADP TARGET PREPOSITION OR POSTPOSITION ;
+ADD:locparticle Ipl TARGET PREPOSITION OR POSTPOSITION ;
 
 SECTION
 
