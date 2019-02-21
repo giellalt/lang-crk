@@ -46,6 +46,8 @@ LIST V = V ;
 
 LIST Ipc = Ipc ;
 LIST Interj = Interj ;
+LIST Ipl = Ipl ;
+LIST InLoc = InLoc ;
 
 LIST Adv = Adv ;
 LIST CC = CC ;
@@ -149,7 +151,7 @@ LIST DEPVERB = ("ê-.*"r) ;
 
 LIST IIZ = IIZ ;
 
-LIST PREPOSITION = "asicâyihk" "atâmihk" "atâmipîhk" "capasis" "capasîs" "cîki" "iskwêyânihk" "ispimihk" "kicîniskêhk" "kihciwâk" "kisipanohk" "mohcihk" "namahcihk" "nihcâyihk" "nohcimihk" "nâsipîtimihk" "pihcâyihk" "pihtokamihk" "sisonê" "sâyihk" "sîpâ" "sîpâyihk" "tahkohc" "tastawâyihk" "tâwâyihk" "wahyaw" "wayawîtimihk" "wayawîtimiskwaht" "wâhyawês" "wâsakâm" "âkawâstêhk" "âpihtawâyihk" "âstamâstihk" "âyêtawâyihk" "akâmâyihk" "akâmihk" "asicâyi" "awasâyihk" "ayîtawâyihk" "âkawâyihk" "âstamihk" "kihcîniskêhk" "kospâyihk" "namahcîhk" "namahtinihk" "nîhc-âyihk" "nihc-âyihk" "nôhcimihk" "ohtâyihk" "okihciniskihk" "pimic-âyihk" "pîhc-âyihk" "sîpâhk" "tahkohc-âyihk" "tawâyihk" ; 
+LIST PREPOSITION = "asicâyihk" "atâmihk" "atâmipîhk" "capasis" "capasîs" "cîki" "iskwêyânihk" "ispimihk" "kicîniskêhk" "kihciwâk" "kisipanohk" "mohcihk" "namahcihk" "nihcâyihk" "nohcimihk" "nâsipîtimihk" "pihcâyihk" "pihtokamihk" "sisonê" "sâyihk" "sîpâ" "sîpâyihk" "tahkohc" "tastawâyihk" "tâwâyihk" "wahyaw" "wayawîtimihk" "wayawîtimiskwaht" "wâhyawês" "wâsakâm" "âkawâstêhk" "âpihtawâyihk" "âstamâstihk" "âyêtawâyihk" "akâmâyihk" "akâmihk" "asicâyi" "awasâyihk" "ayîtawâyihk" "âkawâyihk" "âstamihk" "kihcîniskêhk" "kospâyihk" "namahcîhk" "namahtinihk" "nîhc-âyihk" "nihc-âyihk" "nôhcimihk" "ohtâyihk" "okihciniskihk" "pimic-âyihk" "pîhc-âyihk" "sîpâhk" "tahkohc-âyihk" "tawâyihk" "êkota" "êkotê" "ôtê" "itê" "anita" "ita" "nêtê" "ôta" ; 
 
 LIST POSTPOSITION = "isi" "ohci" ;
 
@@ -291,6 +293,8 @@ BEFORE-SECTIONS
 SECTION
 MAP:PrepNR @<P TARGET N + Loc IF (-1 PREPOSITION) ;
 MAP:PrepNL @P> TARGET N + Loc IF (1 POSTPOSITION) ;
+MAP:PrepNR @<P TARGET N + InLoc IF (-1 PREPOSITION) ;
+MAP:PrepNL @P> TARGET N + InLoc IF (1 POSTPOSITION) ;
 MAP:LocVR  @<V TARGET N + Loc IF (*-1 V BARRIER CLB) ;
 MAP:LocVL  @V> TARGET N + Loc IF (*1 V BARRIER CLB) ;
 
@@ -487,9 +491,14 @@ MAP:4SgPlPoss @Pos> TARGET N + Obv IF (1 N + Px4Sg/Pl)(NOT 1 Loc) ;
 ##MAP:TEMPORALN @<ADVL TARGET TEMPORALN IF (*-1 AI OR TI OR TA BARRIER CLB) ;
 ##MAP:TEMPORALN @ADVL> TARGET TEMPORALN IF (*1 AI OR TI OR TA BARRIER CLB) ;
 
-##INSTRUMENTAL NOUNS
+##INSTRUMENTAL NOUNS these need a lot of work
 
-MAP:INSohci @INS> TARGET N IF (NOT 0 Loc)(1 ("ohci")) ;
+MAP:INSohciN @INS> TARGET N IF (NOT 0 Loc)(1 ("ohci")) ;
+MAP:INSohciPr @INS> TARGET Dem IF (1 ("ohci")) ;
+
+#indeclinable locatives can be associated with verbs as locatives, but after act/goal and before obl
+MAP:LocVR  @<V TARGET N + InLoc IF (*-1 V BARRIER CLB)(NOT -1 PUNCT) ;
+MAP:LocVL  @V> TARGET N + InLoc IF (*1 V BARRIER CLB)(NOT 1 PUNCT) ;
 
 ##MAP:INSNOUN @<INS TARGET N IF (NOT 0 ABSN LINK *-1 AI OR TI OR TA BARRIER CLB) (NOT 0 Prop) (NOT 0 @<GOAL);
 ##MAP:INSNOUN @INS> TARGET N IF (NOT 0 ABSN LINK *1 AI OR TI OR TA  BARRIER CLB) (NOT 0 Prop) (NOT 0 @GOAL>);

@@ -905,7 +905,7 @@
 "<êwako>"
 	"êwako" Ipc %N>
 "<anima>"
-	"ôma" Pron Dem Med IN Sg
+	"ôma" Pron Dem Med IN Sg %INS>
 	"#anima" Ipc
 "<ohci>"
 	"ohci" Ipc 
@@ -4042,8 +4042,8 @@
 "<êkotê>"
 	"êkotê" Ipc
 "<anima>"
-	"#ôma" Pron Dem Med IN Sg
-	"anima" Ipc
+	"ôma" Pron Dem Med IN Sg %INS>
+	"#anima" Ipc
 "<ohci>"
 	"ohci" Ipc
 "<âcimowin>"
@@ -10334,7 +10334,7 @@
 "<ôta>"
 	"ôta" Ipc
 "<naniwâhk>"
-	"maniway" N IN Px1Sg Loc Morph 
+	"maniway" N IN Px1Sg Loc Morph %<P
 "<ôta>"
 	"ôta" Ipc
 "<,>"
@@ -11045,8 +11045,8 @@
 "<êkospî>"
 	"êkospî" Ipc
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg %INS>
 "<ohci>"
 	"ohci" Ipc
 "<kêyâpic>"
