@@ -34,6 +34,7 @@ LIST Ipc = Ipc ;
 LIST Iph = Iph ;
 LIST Ipl = Ipl ;
 LIST Interj = Interj ;
+LIST InLoc = InLoc ; 
 
 LIST Adv = Adv ;
 LIST CC = CC ;
@@ -41,6 +42,7 @@ LIST CS = CS ;
 
 LIST AN = AN ;
 LIST IN = IN ;
+LIST Prop = Prop ;
 
 LIST AI = AI ;
 LIST II = II ;
@@ -390,11 +392,9 @@ LIST IIZ = IIZ ;
 
 LIST ZERO = "apwêyâw" "askihtakoskâw" "askîwan" "askîwiw" "atihkamêkoskâw" "atihtêminiskâw" "atoskêwi-kîsikâw" "ayamihâwi-kîsikâw" "ayamihêwi-kîsikâw" "ayapâhtikoskâw" "ayapâskwêyâw" "ayapîhkêsîskâw" "ayiwâkipêw" "ayôskanâhtikoskâw" "âhkikoskâw" "âhkwâstêw" "âkawâstêw" "âkôsipêyâw" "âkwâ-kîsikâw" "âkwâ-tipiskâw" "âkwâyâw" "âmôskâw" "âniskowaskâw" "âniskowaskoskâw" "âpihtâ-kîsikâw" "âpihtâ-nîpin" "âpihtâ-pipon" "âpihtâ-tipiskâw" "âpihtâwi-kîsikâw" "âpihtâwitâkosiw" "âpisisino-kîsikâw" "âpocêyâw" "âsokâmatin" "âstê-kimiwan" "âstê-kîsikâw" "cahcahkâyôskâw" "cîpayi-kîsikâw" "cîpayi-tipiskâw" "cîpêhtakwâpikwanîskâw" "cîwêyâw" "êyikoskâw" "isi-kîsikâw" "iyiniminiskâw" "kamâmakoskâw" "kaskamotâpahtêw" "kaski-tipiskâw" "kâh-kimiwan" "kêposkâw" "kihci-âpihtâwâni-kîsikâw" "kimiwan" "kimiwasin" "kimiwaskin" "kinêpikoskâw" "kinosêskâw" "kipwatâmâpahtêw" "kipwâpahtêw" "kisin" "kisinâsin" "kisinâw" "kisipâskwêyâw" "kisipi-kîsikâw" "kisipistikwêyâw" "kîkisêpâw" "kîkisêpâyâw" "kîsapwênâyâw" "kîsapwêw" "kîsapwêyâw" "kîsi-tipiskâw" "kîsikâsiw" "kîsikâstêw" "kîsikâw" "kîsikâyâpan" "kîsikâyâstêw" "kîsopwêni-pipon" "kîsopwêw" "kîsopwêyâw" "kîsowâyâw" "kîwêhtin" "koskowâtan" "kostâmikwan" "kôniwan" "kwêskiyowêw" "kwêskosîyowêw" "maci-kîsikâw" "macipakoskâw" "mahkêsîskâw" "mamahkâskâw" "mamênaskwâw" "manicôsiskâw" "manitowi-kîsikâw" "maskosîskâw" "maskoskâw" "mâtinawê-kîsikâsin" "mâtinawê-kîsikâw" "mâtinawi-kîsikâw" "mâyi-kîsikâw" "mâyi-pipon" "mêkwâ-kîsikâw" "mêkwâ-tipiskâw" "mihkwaskâw" "mihtiskâw" "mikiskon" "minahikoskâw" "misi-yôtin" "mispon" "misposin" "misposkin" "mistikoskâw" "miyo-kîsikâw" "miyo-tipiskâw" "miyotâkosin" "mînisiskâw" "mîtosiskâw" "mohtêwiskâw" "môsoskâw" "môswaskâw" "nakahpêhan" "namêkosiskâw" "nanêhtahkâw" "nêwo-kîsikâw" "nêwo-tipiskâw" "nikotwâsiko-kîsikâw" "nikotwâso-kîsikâw" "nipahi-yôtin" "nipîskâw" "niskiskâw" "nisto-kîsikâw" "niyânano-kîsikâw" "nîpâyâstêw" "nîpin" "nîpîskâw" "nîskâyâw" "nîso-kîsikâw" "nîso-tipiskâw" "ńôtin" "ocêhtowi-kîsikâw" "ocicâhkoskâw" "ohtin" "okâminakasîskâw" "onimiskîskâw" "osâwipêskwan" "oskâhtakoskâw" "oskâhtikosiskâw" "otâkosin" "pahkwâcîsiskâw" "pahkwêsikani-kîsikâw" "pêtâpan" "pêyako-kîsikâw" "pihêskâw" "pihkosiskâw" "pimiciyowêw" "pipon" "piyêsîsiskâw" "pîhciyowêw" "pîkisêmahan" "pîkisêyâw" "pîsawâcâsin" "pîsimowan" "pîsimowâyâw" "pîsimowiw" "pîwan" "pîwani-yôtin" "pîwêsipon" "pôn-âpihtâ-kîsikâw" "pôn-âpihtâ-tipiskâw" "pôn-âyamihêwi-kîsikâw" "pôni-kimiwan" "pôni-mispon" "sakimêskâw" "saskan" "saskaniyowêw" "sâkaskâw" "sâkâstêw" "sâposci-kimiwan" "sâpoyowêw" "sâpôminiskâw" "sâwani-yôtin" "sîkipêstâw" "sîkwan" "sîsîkan" "sîsîpiskâw" "sôhkiyowêw" "sôniyâskâw" "sôniyâw-kîsikâw" "tahkâyâsin" "tahkâyâw" "tahkipêyâw" "tahkiyowêw" "takwâkin" "timaskâw" "timikonêw" "timikoniw" "tipiskâsin" "tipiskâw" "wacîskâw" "wanitipiskâsin" "wanitipiskâw" "waskowan" "wâkinâkaniskâw" "wâpan" "wâpaniyowêw" "wâpososkâw" "wîpâci-kîsikâw" "yîkopîwan" "yîkopîwiw" "yîkowan" "yîkwaskwan" "yîkwawan" "yôcisin" "yôtin" ;
 
-LIST PREPOSITION = "asicâyihk" "atâmihk" "atâmipîhk" "capasis" "capasîs" "cîki" "iskwêyânihk" "ispimihk" "kicîniskêhk" "kihciwâk" "kisipanohk" "mohcihk" "namahcihk" "nihcâyihk" "nohcimihk" "nâsipîtimihk" "pihcâyihk" "pihtokamihk" "sisonê" "sâyihk" "sîpâ" "sîpâyihk" "tahkohc" "tastawâyihk" "tâwâyihk" "wahyaw" "wayawîtimihk" "wayawîtimiskwaht" "wâhyawês" "wâsakâm" "âkawâstêhk" "âpihtawâyihk" "âstamâstihk" "âyêtawâyihk" "akâmâyihk" "akâmihk" "asicâyi" "awasâyihk" "ayîtawâyihk" "âkawâyihk" "âstamihk" "kihcîniskêhk" "kospâyihk" "namahcîhk" "namahtinihk" "nîhc-âyihk" "nihc-âyihk" "nôhcimihk" "ohtâyihk" "okihciniskihk" "pimic-âyihk" "pîhc-âyihk" "sîpâhk" "tahkohc-âyihk" "tawâyihk" ; 
+LIST PREPOSITION = "asicâyihk" "atâmihk" "atâmipîhk" "capasis" "capasîs" "cîki" "iskwêyânihk" "ispimihk" "kicîniskêhk" "kihciwâk" "kisipanohk" "mohcihk" "namahcihk" "nihcâyihk" "nohcimihk" "nâsipîtimihk" "pihcâyihk" "pihtokamihk" "sisonê" "sâyihk" "sîpâ" "sîpâyihk" "tahkohc" "tastawâyihk" "tâwâyihk" "wahyaw" "wayawîtimihk" "wayawîtimiskwaht" "wâhyawês" "wâsakâm" "âkawâstêhk" "âpihtawâyihk" "âstamâstihk" "âyêtawâyihk" "akâmâyihk" "akâmihk" "asicâyi" "awasâyihk" "ayîtawâyihk" "âkawâyihk" "âstamihk" "kihcîniskêhk" "kospâyihk" "namahcîhk" "namahtinihk" "nîhc-âyihk" "nihc-âyihk" "nôhcimihk" "ohtâyihk" "okihciniskihk" "pimic-âyihk" "pîhc-âyihk" "sîpâhk" "tahkohc-âyihk" "tawâyihk" "êkota" "êkotê" "ôtê" "itê" "anita" "ita" "nêtê" "ôta" ; 
 
 LIST POSTPOSITION = "isi" "ohci" ;
-
-LIST ADP = ADP ;
 
 LIST NEG = "namôya" "namôy" "môya" "môy" "êkâwiya" "kâwiya" "êkâya" "êkây" "kâya" "êkâ" ; 
 
@@ -945,7 +945,96 @@ REMCOHORT ("wiya") (-1 ("cî"))(-2 ("wîpac"))(-3 ("<wiyâ_wîpac_cî_wiya>" Iph
 REMCOHORT ("cî") (-1 ("wîpac"))(-2 ("<wiyâ_wîpac_cî_wiya>" Iph)) ;
 REMCOHORT ("wîpac") (-1 ("<wiyâ_wîpac_cî_wiya>" Iph)) ;
 
+#indeclinable locative nouns (places)
+
+SUBSTITUTE ("<Sandy>" "Sandy" N Prop) ("<Sandy_Lake>" "Sandy_Lake" N IN Prop InLoc) TARGET ("<Sandy>" N Prop) IF (1 ("<Lake>" N )) ;
+REMCOHORT ("<Lake>") (-1 ("<Sandy_Lake>" InLoc)) ;
+
+SUBSTITUTE ("<Whitefish>" "Whitefish" N Prop) ("<Whitefish_Lake>" "Whitefish_Lake" N IN Prop InLoc) TARGET ("<Whitefish>" N Prop) IF (1 ("<Lake>" N )) ;
+REMCOHORT ("<Lake>") (-1 ("<Whitefish_Lake>" InLoc)) ;
+
+SUBSTITUTE ("<Elizabeth>" "Elizabeth" N Prop) ("<Elizabeth_Settlement>" "Elizabeth_Settlement" N IN Prop InLoc) TARGET ("<Elizabeth>" N Prop) IF (1 ("<Settlement>" N )) ;
+REMCOHORT ("<Settlement>") (-1 ("<Elizabeth_Settlement>" InLoc)) ;
+
+SUBSTITUTE ("<Meadow>" "Meadow" N Prop) ("<Meadow_Lake>" "Meadow_Lake" N IN Prop InLoc) TARGET ("<Meadow>" N Prop) IF (1 ("<Lake>" N )) ;
+REMCOHORT ("<Lake>") (-1 ("<Meadow_Lake>" InLoc)) ;
+
+SUBSTITUTE ("<Big>" "Big" N Prop) ("<Big_River>" "Big_River" N IN Prop InLoc) TARGET ("<Big>" N Prop) IF (1 ("<River>" N )) ;
+REMCOHORT ("<River>") (-1 ("<Big_River>" InLoc)) ;
+
+SUBSTITUTE ("<Sturgeon>" "Sturgeon" N Prop) ("<Sturgeon_Lake>" "Sturgeon_Lake" N IN Prop InLoc) TARGET ("<Sturgeon>" N Prop) IF (1 ("<Lake>" N )) ;
+REMCOHORT ("<Lake>") (-1 ("<Sturgeon_Lake>" InLoc)) ;
+
+SUBSTITUTE ("<Prince>" "Prince" N Prop) ("<Prince_Albert>" "Prince_Albert" N IN Prop InLoc) TARGET ("<Prince>" N Prop) IF (1 ("<Albert>" N )) ;
+REMCOHORT ("<Albert>") (-1 ("<Prince_Albert>" InLoc)) ;
+
+SUBSTITUTE ("<Saskatoon>" "Saskatoon" N Prop) ("<Saskatoon_University>" "Saskatoon_University" N IN Prop InLoc) TARGET ("<Saskatoon>" N Prop) IF (1 ("<University>" N )) ;
+REMCOHORT ("<University>") (-1 ("<Saskatoon_University>" InLoc)) ;
+
+SUBSTITUTE ("<St.>" "St." N Prop) ("<St._Michael's>" "St._Michael's" N IN Prop InLoc) TARGET ("<St.>" N Prop) IF (1 ("<Michael's>" N )) ;
+REMCOHORT ("<Michael's>") (-1 ("<St._Michael's>" InLoc)) ;
+
+SUBSTITUTE ("<Blaine>" "Blaine" N Prop) ("<Blaine_Lake>" "Blaine_Lake" N IN Prop InLoc) TARGET ("<Blaine>" N Prop) IF (1 ("<Lake>" N )) ;
+REMCOHORT ("<Lake>") (-1 ("<Blaine_Lake>" InLoc)) ;
+
+SUBSTITUTE ("<Redberry>" "Redberry" N Prop) ("<Redberry_Lake>" "Redberry_Lake" N IN Prop InLoc) TARGET ("<Redberry>" N Prop) IF (1 ("<Lake>" N )) ;
+REMCOHORT ("<Lake>") (-1 ("<Redberry_Lake>" InLoc)) ;
+
+SUBSTITUTE ("<Iroquois>" "Iroquois" N Prop) ("<Iroquois_Lake>" "Iroquois_Lake" N IN Prop InLoc) TARGET ("<Iroquois>" N Prop) IF (1 ("<Lake>" N )) ;
+REMCOHORT ("<Lake>") (-1 ("<Iroquois_Lake>" InLoc)) ;
+
+SUBSTITUTE ("<Green>" "Green" N Prop) ("<Green_Lake>" "Green_Lake" N IN Prop InLoc) TARGET ("<Green>" N Prop) IF (1 ("<Lake>" N )) ;
+REMCOHORT ("<Lake>") (-1 ("<Green_Lake>" InLoc)) ;
+
+SUBSTITUTE ("<Duck>" "Duck" N Prop) ("<Duck_Lake>" "Duck_Lake" N IN Prop InLoc) TARGET ("<Duck>" N Prop) IF (1 ("<Lake>" N )) ;
+REMCOHORT ("<Lake>") (-1 ("<Duck_Lake>" InLoc)) ;
+
+SUBSTITUTE ("<Mudie>" "Mudie" N Prop) ("<Mudie_Lake>" "Mudie_Lake" N IN Prop InLoc) TARGET ("<Mudie>" N Prop) IF (1 ("<Lake>" N )) ;
+REMCOHORT ("<Lake>") (-1 ("<Mudie_Lake>" InLoc)) ;
+
+SUBSTITUTE ("<Snake>" "Snake" N Prop) ("<Snake_Plain>" "Snake_Plain" N IN Prop InLoc) TARGET ("<Snake>" N Prop) IF (1 ("<Plain>" N )) ;
+REMCOHORT ("<Plain>") (-1 ("<Snake_Plain>" InLoc)) ;
+
+SUBSTITUTE ("<Saddle>" "Saddle" N Prop) ("<Saddle_Lake>" "Saddle_Lake" N IN Prop InLoc) TARGET ("<Saddle>" N Prop) IF (1 ("<Lake>" N )) ;
+REMCOHORT ("<Lake>") (-1 ("<Saddle_Lake>" InLoc)) ;
+
+SUBSTITUTE ("<La>" "La" N Prop) ("<La_Ronge>" "La_Ronge" N IN Prop InLoc) TARGET ("<La>" N Prop) IF (1 ("<Ronge>" N )) ;
+REMCOHORT ("<Ronge>") (-1 ("<La_Ronge>" InLoc)) ;
+
+SUBSTITUTE ("<Nelson>" "Nelson" N Prop) ("<Nelson_House>" "Nelson_House" N IN Prop InLoc) TARGET ("<Nelson>" N Prop) IF (1 ("<House>" N )) ;
+REMCOHORT ("<House>") (-1 ("<Nelson_House>" InLoc)) ;
+
+SUBSTITUTE ("<Victoria>" "Victoria" N Prop) ("<Victoria_Hospital>" "Victoria_Hospital" N IN Prop InLoc) TARGET ("<Victoria>" N Prop) IF (1 ("<Hospital>" N )) ;
+REMCOHORT ("<Hospital>") (-1 ("<Victoria_Hospital>" InLoc)) ;
+
+SUBSTITUTE ("<Indian>" "Indian" N Prop) ("<Indian_Hospital>" "Indian_Hospital" N IN Prop InLoc) TARGET ("<Indian>" N Prop) IF (1 ("<Hospital>" N )) ;
+REMCOHORT ("<Hospital>") (-1 ("<Indian_Hospital>" InLoc)) ;
+
+SUBSTITUTE ("<Rocky>" "Rocky" N Prop) ("<Rocky_Mountain_House>" "Rocky_Mountain_House" N IN Prop InLoc) TARGET ("<Rocky>" N Prop) IF (1 ("<Mountain>" N ))(2 ("<House>" N)) ;
+REMCOHORT ("<House>") (-2 ("<Rocky_Mountain_House>" InLoc))(-1 ("<Mountain>" N)) ;
+REMCOHORT ("<Mountain>") (-1 ("<Rocky_Mountain_House>" InLoc)) ;
+
+SUBSTITUTE ("<White>" "White" N Prop) ("<White_Elk_Hills>" "White_Elk_Hills" N IN Prop InLoc) TARGET ("<White>" N Prop) IF (1 ("<Elk>" N ))(2 ("<Hills>" N)) ;
+REMCOHORT ("<Hills>") (-2 ("<White_Elk_Hills>" InLoc))(-1 ("<Elk>" N)) ;
+REMCOHORT ("<Elk>") (-1 ("<White_Elk_Hills>" InLoc)) ;
+
+SUBSTITUTE ("<Hudson's>" "Hudson's" N Prop) ("<Hudson's_Bay_store>" "Hudson's_Bay_store" N IN Prop InLoc) TARGET ("<Hudson's>" N Prop) IF (1 ("<Bay>" N ))(2 ("<store>" N)) ;
+REMCOHORT ("<store>") (-2 ("<Hudson's_Bay_store>" InLoc))(-1 ("<Bay>" N)) ;
+REMCOHORT ("<Bay>") (-1 ("<Hudson's_Bay_store>" InLoc)) ;
+
+SUBSTITUTE ("<Hudson's>" "Hudson's" N Prop) ("<Hudson's_Bay>" "Hudson's_Bay" N IN Prop InLoc) TARGET ("<Hudson's>" N Prop) IF (1 ("<Bay>" N )) ;
+REMCOHORT ("<Bay>") (-1 ("<Hudson's_Bay>" InLoc)) ;
+
+LIST INLOC = "Shellbrook" "Winnipeg" "Manitoba" "Battleford" "States" "Alberta" "yêkawiskâwikamâhk" "kânata" "Canada" "Thompson" "sîsîpi-sâkahikanihk" "talmwâs" "kihci-môhkomâninâhk" "kihci-môhkomânaskîhk" "Debden" "Red-Pheasant" "Ponoka" "Ermineskin" "Ordale" "Wetaskiwin" "Regina" "Saskatoon" "Whitefish" "Hobbema" "Waterhen" "Spiritwood" ;
+
+ADD:Inloc InLoc TARGET INLOC ;
+ADD:Inloc IN TARGET INLOC IF (NOT 0 IN)(NOT 0 AN) ;
+
 ADD:locparticle Ipl TARGET PREPOSITION OR POSTPOSITION ;
+
+ADD:Inloc InLoc TARGET ("Elizabeth" N Prop) IF (*-2 Ipl) ; 
+ADD:Inloc InLoc TARGET ("Elizabeth" N Prop) IF (*2 Ipl) ; 
+ADD:Inloc IN TARGET ("Elizabeth" N) IF (0 InLoc)(NOT 0 IN)(NOT 0 AN) ; 
 
 SECTION
 
@@ -974,6 +1063,7 @@ SELECT:LocnotV N + Loc IF (0 V) ;
 
 #if a noun can also be a verb with a preverb, choose the noun
 SELECT:NnotVPV N IF (0 V + PREVERB) ;
+SELECT:PosNnotV N IF (0 V)(0 POSS)(*0 V BARRIER CLB) ;
 
 # Sentence-final niyâ is a particle
 SELECT:1SgIfV1Sg 1Sg IF (0 ("niya"))(*0C V + 1Sg);
