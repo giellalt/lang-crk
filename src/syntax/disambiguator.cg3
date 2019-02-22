@@ -24,7 +24,7 @@ DELIMITERS = "<.>" "<!>" "<?>" "<¶>";
    SETS
 # ========
 
-LIST BOS = (>>>) (<s>); 
+LIST BOS = (>>>) (<s>) (<*>); 
 LIST EOS = (<<<) (</s>); # vislcg and CG-2 together.
 
 LIST N = N ;
@@ -1076,6 +1076,7 @@ REMOVE:DerNo   Der/Dim (0C N) ;
 # We say post/prenominal words are determiners, not particles, if they agree
 REMOVE:DemNotIpc Ipc (-1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
 REMOVE:DemNotIpc Ipc ( 1 N + $$NUMBERGENDER)(0 Pron + Dem + $$NUMBERGENDER) ;
+SELECT:DemPred Dem (-1 Ipl)(-2 BOS OR CLB) ; 
 	## Mîcisowinâhtik ôma.
 	
 #some Dems can be in pl or an obv, these need to be selected appropriately
@@ -1175,14 +1176,25 @@ REMOVE:NANObv Obv IF (0 N + AN + Sg)(*0 TA + 3Sg BARRIER V OR CLB) ;
 SELECT:NANObv Obv IF (0 N + AN + Sg)(NOT *0 TA + 3Sg BARRIER V OR CLB)(*0 TA + 4Sg/PlO OR TA + 4Sg/Pl BARRIER V OR CLB) ;
 
 #ambiguity between 3 and obv in inverse verbs (currently only looking immediately before and after, may expand range later
-SELECT:3PlactorL TA + 3Pl IF (*-2 AN + Pl) ;
-SELECT:3PlactorR TA + 3Pl IF (*3 AN + Pl) ;
+SELECT:3PlactorL TA + 3Pl IF (-1 AN + Pl BARRIER CLB) ;
+SELECT:3PlactorL TA + 3Pl IF (-2 AN + Pl BARRIER CLB) ;
+SELECT:3PlactorR TA + 3Pl IF (1 AN + Pl BARRIER CLB) ;
+SELECT:3PlactorR TA + 3Pl IF (2 AN + Pl BARRIER CLB) ;
+SELECT:3PlactorR TA + 3Pl IF (3 AN + Pl BARRIER CLB) ;
 
-SELECT:3SgactorL TA + 3Sg IF (*-3 AN + Sg) ;
-SELECT:3SgactorR TA + 3Sg IF (*3 AN + Sg) ;
+SELECT:3SgactorL TA + 3Sg IF (-1 AN + Sg BARRIER CLB) ;
+SELECT:3SgactorL TA + 3Sg IF (-2 AN + Sg BARRIER CLB) ;
+SELECT:3SgactorL TA + 3Sg IF (-3 AN + Sg BARRIER CLB) ;
+SELECT:3SgactorR TA + 3Sg IF (1 AN + Sg BARRIER CLB) ;
+SELECT:3SgactorR TA + 3Sg IF (2 AN + Sg BARRIER CLB) ;
+SELECT:3SgactorR TA + 3Sg IF (3 AN + Sg BARRIER CLB) ;
 
-SELECT:ObvactorL TA + 4Sg/Pl IF (*-3 AN + Obv) ;
-SELECT:ObvactorR TA + 4Sg/Pl IF (*3 AN + Obv) ;
+SELECT:ObvactorL TA + 4Sg/Pl IF (-1 AN + Obv) ;
+SELECT:ObvactorL TA + 4Sg/Pl IF (-2 AN + Obv) ;
+SELECT:ObvactorL TA + 4Sg/Pl IF (-3 AN + Obv) ;
+SELECT:ObvactorR TA + 4Sg/Pl IF (1 AN + Obv) ;
+SELECT:ObvactorR TA + 4Sg/Pl IF (2 AN + Obv) ;
+SELECT:ObvactorR TA + 4Sg/Pl IF (3 AN + Obv) ;
 
 #kikway disambiguation
 REMOVE:kikway Pron IF (0 KIKWAY) ;

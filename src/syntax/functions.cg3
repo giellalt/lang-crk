@@ -26,7 +26,7 @@ SETS
 # I define end of clause and beginning of clause in a way so that the file
 # may be read both by the CG-2 and the vislcg formalisms.
 
-LIST BOS = (>>>) (<s>);
+LIST BOS = (>>>) (<s>) (<*>);
 LIST EOS = (<<<) (</s>);
 
 # CG3 doesn´t function without >>> and <<< !
@@ -38,7 +38,7 @@ LIST EOS = (<<<) (</s>);
 # ---------------
 
 
-LIST BOS = (>>>) (<s>); 
+LIST BOS = (>>>) (<s>) (<*>); 
 LIST EOS = (<<<) (</s>); # vislcg and CG-2 together.
 
 LIST N = N ;
@@ -169,6 +169,11 @@ LIST @GOAL> = @GOAL> ;
 LIST @INS = @INS ;
 LIST @<INS = @<INS ;
 LIST @INS> = @INS> ;
+
+LIST @<LocPred = @<LocPred ;
+LIST @Loc-Ipl> = @Loc-Ipl> ;
+LIST @Ipl-V> = @Ipl-V> ;
+LIST @<Ipl-V = @<Ipl-V ;
 
 
 LIST @+FAUXV = @+FAUXV ;
@@ -490,6 +495,13 @@ MAP:4SgPlPoss @Pos> TARGET N + Obv IF (1 N + Px4Sg/Pl)(NOT 1 Loc) ;
 ##TEMPORAL NOUNS
 ##MAP:TEMPORALN @<ADVL TARGET TEMPORALN IF (*-1 AI OR TI OR TA BARRIER CLB) ;
 ##MAP:TEMPORALN @ADVL> TARGET TEMPORALN IF (*1 AI OR TI OR TA BARRIER CLB) ;
+
+#locative things that aren't nouns
+MAP:LocPred @<LocPred TARGET Dem IF (-1 Ipl)(-2 BOS OR CLB) ;
+MAP:IPLohci @Loc-Ipl> TARGET Ipl IF (1 Dem)(2 ("ohci")) ;
+MAP:IPLohci @Loc-Ipl> TARGET Ipl IF (1 ("ohci")) ;
+MAP:IplV @Ipl-V> TARGET Ipl IF (*1 V BARRIER CLB) ;
+MAP:IplV @<Ipl-V TARGET Ipl IF (*-1 V BARRIER CLB) ;
 
 ##INSTRUMENTAL NOUNS these need a lot of work
 
