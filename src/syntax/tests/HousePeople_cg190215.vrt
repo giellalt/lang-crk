@@ -356,11 +356,11 @@
 	"ôma" Ipc
 	"#ôma" Pron Dem Prox IN Sg
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %<Ipl-V
 "<ê-pê-pîhtokwêyâhk>"
 	"pîhtokwêw" PV/e PV/pe V AI Cnj Prs 1Pl %PRED
 "<itê>"
-	"itê" Ipc
+	"itê" Ipc %<Ipl-V
 "<ê-pê-âcimohikawiyâhk>"
 	"âcimohêw" PV/e PV/pe V TA Cnj Prs X 1PlO Morph %PRED
 "<.>"
@@ -391,7 +391,7 @@
 "<anohc>"
 	"anohc" Ipc
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %Ipl-V>
 "<kipêhtawâwâw>"
 	"pêhtawêw" V TA Ind Prs 2Pl 3SgO %PRED
 "<.>"
@@ -740,7 +740,7 @@
 "<opimâcihowinihk>"
 	"pimâcihowin" N IN Px3Sg Loc %P>
 "<isi>"
-	"isi" Ipc 
+	"isi" Ipc %<Ipl-V
 "<,>"
 	"," CLB
 "<opimohtêhonihk>"
@@ -778,7 +778,7 @@
 	"ôma" Ipc
 	"#ôma" Pron Dem Prox IN Sg
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %Ipl-V>
 "<kê-nîkâniwik>"
 	"nîkânîwiw" PV/ke V II Cnj Prs Err/Orth %PRED
 "<.>"
@@ -908,7 +908,7 @@
 	"ôma" Pron Dem Med IN Sg %INS>
 	"#anima" Ipc
 "<ohci>"
-	"ohci" Ipc 
+	"ohci" Ipc %Ipl-V>
 "<kâ-itwêyâhk>"
 	"itwêw" PV/kaa V AI Cnj Prs 1Pl %PRED
 "<,>"
@@ -1068,7 +1068,7 @@
 "<,>"
 	"," CLB
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %Ipl-V>
 "<kik-êsi-kiskisototawâyahk>"
 	"kiskisototawêw" PV/kika PV/isi V TA Cnj Prs 12Pl 3SgO Err/Orth %PRED
 "<,>"
@@ -1229,9 +1229,9 @@
 "<ê-kî-isi-pimâcihâwasocik>"
 	"pimâcihâwasow" PV/e PV/isi V AI Cnj Prt 3Pl %PRED
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Loc-Ipl>
 "<ohci>"
-	"ohci" Ipc
+	"ohci" Ipc %Ipl-V>
 "<ê-kî-ohc-ôhpikinâwasocik>"
 	"ohpikinâwasow" PV/e PV/ohci V AI Cnj Prt 3Pl Err/Orth %PRED
 "<.>"
@@ -1859,7 +1859,7 @@
 "<ê-kî-miywâsiniyik>"
 	"miywâsin" PV/e V II Cnj Prt 4Sg %PRED
 "<ita>"
-	"ita" Ipc
+	"ita" Ipc %Ipl-V>
 "<ê-kî-pimâcihocik>"
 	"pimâcihow" PV/e V AI Cnj Prt 3Pl %PRED
 "<.>"
@@ -1999,7 +1999,7 @@
 "<wîhkâc>"
 	"#wîhkâc" Ipc
 "<ohci>"
-	"ohci" Ipc
+	"ohci" Ipc %Ipl-V>
 "<maci-kîkway>"
 	"maci-kîkway" N IN Sg %GOAL>
 "<mistahi>"
@@ -2184,7 +2184,7 @@
 "<ê-pimohtêyit>"
 	"pimohtêw" PV/e V AI Cnj Prs 4Sg/Pl %PRED
 "<ita>"
-	"ita" Ipc
+	"ita" Ipc %<Ipl-V
 "<ôma>"
 	"ôma" Ipc
 	"#ôma" Pron Dem Prox IN Sg
@@ -2447,11 +2447,11 @@
 "<,>"
 	"," CLB
 "<ita>"
-	"ita" Ipc
+	"ita" Ipc %Ipl-V>
 "<ê-nitotamâcik>"
 	"nitotamâw" PV/e V TI Cnj Prs 3Pl %PRED
 "<ita>"
-	"ita" Ipc
+	"ita" Ipc %<Ipl-V
 "<kîkway>"
 	"kîkway" N IN Sg %<GOAL
 	"#kîkway" N AN Sg
@@ -2487,7 +2487,7 @@
 "<âsay>"
 	"âsay" Ipc
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<wîstawâw>"
 	"wîstawâw" Pron Pers 3Pl Incl %ACTOR>
 "<ê-kî-mîyikowisicik>"
@@ -2574,7 +2574,7 @@
 "<omîcisowinihk>"
 	"mîcisowin" N IN Px3Sg Loc %P>
 "<isi>"
-	"isi" Ipc 
+	"isi" Ipc %Ipl-V>
 "<kî-miywâsiniyiw>"
 	"miywâsin" V II Ind Prt 4Sg %PRED
 "<.>"
@@ -2636,7 +2636,7 @@
 	"kîkway" N IN Sg %GOAL>
 	"#kîkway" N AN Sg
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %<Ipl-V
 "<ê-mîciyahk>"
 	"mîciw" PV/e V TI Cnj Prs 12Pl %PRED
 "<,>"
@@ -2762,7 +2762,7 @@
 "<,>"
 	"," CLB
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<ê-kî-ohtinahk>"
 	"ohtinam" PV/e V TI Cnj Prt 3Sg %PRED
 "<wîya>"
@@ -2775,9 +2775,9 @@
 <sentence id="5499">
 "<*>"
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<anima>"
-	"ôma" Pron Dem Med IN Sg 
+	"ôma" Pron Dem Med IN Sg %<LocPred
 	"#anima" Ipc
 "<ê-kî-ohci-pimâtisit>"
 	"pimâtisiw" PV/e PV/ohci V AI Cnj Prt 3Sg %PRED
@@ -2857,7 +2857,7 @@
 "<pahkêkinwa>"
 	"pahkêkin" N IN Pl %INS>
 "<ohci>"
-	"ohci" Ipc
+	"ohci" Ipc %<Ipl-V
 "<.>"
 	"." CLB
 </sentence>
@@ -2900,7 +2900,7 @@
 "<âsay>"
 	"âsay" Ipc
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<ê-kî-wiyahpitâcik>"
 	"wiyahpitêw" PV/e V TA Cnj Prt 3Pl 4Sg/PlO %PRED
 "<otêmiwâwa>"
@@ -3086,7 +3086,7 @@
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %<ACTOR
 "<ispimihk>"
-	"ispimihk" Ipc
+	"ispimihk" Ipc %<Ipl-V
 "<,>"
 	"," CLB
 "<wî-pimakocin>"
@@ -3106,7 +3106,7 @@
 	"ôma" Pron Dem Med IN Pl %<ACTOR
 	"#awa" Pron Dem Med AN Obv
 "<ita>"
-	"ita" Ipc
+	"ita" Ipc %Ipl-V>
 "<ka-wâpahtamêk>"
 	"#wâpahtam" PV/kaa V TI Cnj Prs 2Pl 
 	"wâpahtam" PV/ka V TI Cnj Prs 2Pl %PRED
@@ -3143,7 +3143,7 @@
 "<,>"
 	"," CLB
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<kika-pimakocin>"
 	"pimakocin" PV/kika V AI Ind Prs 3Sg %PRED
 "<ana>"
@@ -3380,7 +3380,7 @@
 	"#ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg %<ACTOR
 "<itê>"
-	"itê" Ipc
+	"itê" Ipc %Ipl-V>
 "<ê-ohpwênahk>"
 	"ohpwênam" PV/e V TI Cnj Prs 3Sg %PRED
 "<awa>"
@@ -3472,7 +3472,7 @@
 "<,>"
 	"," CLB
 "<pîhc-âyihk>"
-	"pîhc-âyihk" Ipc 
+	"pîhc-âyihk" Ipc %Ipl-V>
 "<k-âpihk>"
 	"#apiw" PV/ka V AI Cnj Prs X Err/Orth 
 	"apiw" PV/kaa V AI Cnj Prs X Err/Orth %PRED
@@ -3514,7 +3514,7 @@
 	"kîkway" N IN Sg
 	"#kîkway" N AN Sg
 "<wayawîtimihk>"
-	"wayawîtimihk" Ipc
+	"wayawîtimihk" Ipc %Ipl-V>
 "<ê-atoskêhk>"
 	"atoskêw" PV/e V AI Cnj Prs X %PRED
 "<ê-pimi-pêhtâkwahk>"
@@ -3549,7 +3549,7 @@
 "<mîna>"
 	"#mîna" Ipc
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %<Ipl-V
 "<môniyâw>"
 	"môniyâw" N AN Sg %<ACTOR
 "<anima>"
@@ -3803,11 +3803,11 @@
 "<ê-kî-âcimostawit>"
 	"âcimostawêw" PV/e V TA Cnj Prt 3Sg 1SgO %PRED
 "<ôtê>"
-	"ôtê" Ipc
+	"ôtê" Ipc %Loc-Ipl>
 "<ohci>"
-	"ohci" Ipc
+	"ohci" Ipc %<Ipl-V
 "<kihci-môhkomâninâhk>"
-	"kihci-môhkomâninâhk" Ipc Lemma CW 
+	"kihci-môhkomâninâhk" Ipc Lemma CW %<P
 "<->"
 	"-" PUNCT
 "<->"
@@ -3815,11 +3815,11 @@
 "<nitôtêminânak>"
 	"-tôtêm" N AN Pl Px1Pl %ACTOR>
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<itâmowak>"
 	"itâmow" V AI Ind Prs 3Pl %PRED
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %Ipl-V>
 "<kâ-mâyahkamikahk>"
 	"mâyahkamikan" PV/kaa V II Cnj Prs 3Sg %PRED
 "<êkwa>"
@@ -4008,10 +4008,10 @@
 <paragraph>
 <sentence id="5546">
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg %<LocPred
 "<k-ôhtohtêyâhk>"
 	"ohtohtêw" PV/kaa V AI Cnj Prs 1Pl Err/Orth %PRED
 	"#ohtohtêw" PV/ka V AI Cnj Prs 1Pl Err/Orth 
@@ -4021,7 +4021,7 @@
 	"#ohtohtêw" PV/ka V AI Cnj Prs 1Sg Err/Orth
 	"ohtohtêw" PV/kaa V AI Cnj Prs 1Sg Err/Orth %PRED
 "<itê>"
-	"itê" Ipc
+	"itê" Ipc %<Ipl-V
 "<ôma>"
 	"ôma" Ipc
 	"#ôma" Pron Dem Prox IN Sg
@@ -4040,9 +4040,9 @@
 "<,>"
 	"," CLB
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Loc-Ipl>
 "<anima>"
-	"ôma" Pron Dem Med IN Sg %INS>
+	"ôma" Pron Dem Med IN Sg %<LocPred
 	"#anima" Ipc
 "<ohci>"
 	"ohci" Ipc
@@ -4236,7 +4236,7 @@
 	"#ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg %<N
 "<itê>"
-	"itê" Ipc
+	"itê" Ipc %Ipl-V>
 "<ê-pimihtiniyik>"
 	"pimihtin" PV/e V II Cnj Prs 4Sg %PRED
 "<,>"
@@ -4602,7 +4602,7 @@
 "<,>"
 	"," CLB
 "<ôtê>"
-	"ôtê" Ipc
+	"ôtê" Ipc %Ipl-V>
 "<ê-itâpit>"
 	"itâpiw" PV/e V AI Cnj Prs 3Sg %PRED
 "<,>"
@@ -4697,7 +4697,7 @@
 	"#ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg %<GOAL
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %<Ipl-V
 "<,>"
 	"," CLB
 "<nîci-kisêyiniw>"
@@ -4748,7 +4748,7 @@
 "<->"
 	"-" PUNCT
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %Ipl-V>
 "<nâway>"
 	"nâway" Ipc
 "<ôma>"
@@ -4929,7 +4929,7 @@
 "<awasitâkosihk>"
 	"awasitâkosîhk" Ipc Err/Orth
 "<isi>"
-	"isi" Ipc
+	"isi" Ipc %Ipl-V>
 "<anima>"
 	"ôma" Pron Dem Med IN Sg %GOAL>
 	"anima" Ipc
@@ -5179,13 +5179,13 @@
 "<ê-atamiskawak>"
 	"atamiskawêw" PV/e V TA Cnj Prs 1Sg 3SgO %PRED
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %<Ipl-V
 "<,>"
 	"," CLB
 "<kîmôc>"
 	"kîmôc" Ipc
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %Ipl-V>
 "<nimâhmâkonâw>"
 	"mâkonêw" RdplS V TA Ind Prs 1Sg 3SgO %PRED
 "<sôhki>"
@@ -5308,9 +5308,9 @@
 	"#ayis" N AN Sg
 	"ayis" Ipc
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Loc-Ipl>
 "<ohci>"
-	"ohci" Ipc
+	"ohci" Ipc %Ipl-V>
 "<kê-ohciyâkêyân>"
 	"ohciyâkêw" PV/ke V AI Cnj Prs 1Sg %PRED
 "<,>"
@@ -5596,7 +5596,7 @@
 "<,>"
 	"," CLB
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %ACTOR>
 "<ayapiw>"
@@ -5719,14 +5719,14 @@
 <sentence id="5608">
 "<*>"
 "<asiskîwikocawânâpiskosihk>"
-	"asiskîwikotawânâpisk" N IN Der/Dim N IN Loc Lemma 
+	"asiskîwikotawânâpisk" N IN Der/Dim N IN Loc Lemma  
 "<nikiskêyihtên>"
 	"kiskêyihtam" V TI Ind Prs 1Sg %PRED
 "<anima>"
 	"ôma" Pron Dem Med IN Sg %<GOAL
 	"#anima" Ipc
 "<sisonê>"
-	"sisonê" Ipc
+	"sisonê" Ipc 
 "<,>"
 	"," CLB
 "<itwêw>"
@@ -5751,7 +5751,7 @@
 "<kâ-nôkosiyân>"
 	"nôkosiw" PV/kaa V AI Cnj Prs 1Sg %PRED
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %<Ipl-V
 "<;>"
 	";" CLB
 "<wâhwâ>"
@@ -5847,7 +5847,7 @@
 "<nititwân>"
 	"itwêw" V AI Ind Prs 1Sg %PRED
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %<Ipl-V
 "<,>"
 	"," CLB
 "<itwêw>"
@@ -6038,7 +6038,7 @@
 "<âpihtawikosisânak>"
 	"âpihtawikosisân" N AN Pl
 "<ohci>"
-	"ohci" Ipc
+	"ohci" Ipc %<Ipl-V
 "<ayi>"
 	"ayi" N IN Sg
 	"ayi" Ipc
@@ -6106,7 +6106,7 @@
 "<nipimâcihohtân>"
 	"pimâcihow" V AI Ind PrtH 1Pl Morph %PRED
 "<ita>"
-	"ita" Ipc
+	"ita" Ipc %<Ipl-V
 "<,>"
 	"," CLB
 "<pîyis>"
@@ -6346,7 +6346,7 @@
 "<,>"
 	"," CLB
 "<ita>"
-	"ita" Ipc
+	"ita" Ipc %Ipl-V>
 "<ê-wîkiyâhk>"
 	"wîkiw" PV/e V AI Cnj Prs 1Pl %PRED
 "<,>"
@@ -6388,7 +6388,7 @@
 <sentence id="5637">
 "<*>"
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<ê-tatahkamikisiyân>"
 	"tatahkamikisiw" PV/e V AI Cnj Prs 1Sg %PRED
 "<ayi>"
@@ -6554,7 +6554,7 @@
 "<,>"
 	"," CLB
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<ninakipicikân>"
 	"nakipicikêw" V AI Ind Prs 1Sg %PRED
 "<,>"
@@ -6578,7 +6578,7 @@
 "<">"
 	""" PUNCT
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<mâna>"
 	"mâna" Ipc
 "<kâ-kakwâyakîyawêhit>"
@@ -6665,7 +6665,7 @@
 "<ninîhcipayihon>"
 	"nîhcipayihow" V AI Ind Prs 1Sg %PRED
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %<Ipl-V
 "<,>"
 	"," CLB
 "<êwako>"
@@ -6794,13 +6794,13 @@
 "<,>"
 	"," CLB
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<nititohtân>"
 	"itohtêw" V AI Ind Prs 1Sg %PRED
 "<,>"
 	"," CLB
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<nôtihtapinahisinin>"
 	"otihtapinahisin" V AI Ind Prs 1Sg Err/Orth %PRED
 "<ispacinâsihk>"
@@ -7127,7 +7127,7 @@
 "<,>"
 	"," CLB
 "<anita>"
-	"anita" Ipc
+	"anita" Ipc %Ipl-V>
 "<ê-nipâyâhk>"
 	"nipâw" PV/e V AI Cnj Prs 1Pl %PRED
 "<,>"
@@ -7326,7 +7326,7 @@
 "<">"
 	""" PUNCT
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<kika-nitawi-mîcisohâwak>"
 	"mîcisohêw" PV/nitawi V TA Ind Fut Def 2Sg 3PlO %PRED
 "<misatimwak>"
@@ -7475,7 +7475,7 @@
 "<wêpinamohkan>"
 	"wêpinam" V TI Imp Del 2Sg Err/Orth %PRED
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %<Ipl-V
 "<!>"
 	^excl CLB
 "<">"
@@ -7517,7 +7517,7 @@
 "<êkwa>"
 	"êkwa" Ipc
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<ê-itohtêyân>"
 	"itohtêw" PV/e V AI Cnj Prs 1Sg %PRED
 "<,>"
@@ -7637,7 +7637,7 @@
 "<konita>"
 	"konita" Ipc
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<mahîhkani-wâti>"
 	"mahihkani-wâti" N IN Sg Err/Orth %ACTOR>
 "<ê-ayâk>"
@@ -7645,7 +7645,7 @@
 "<,>"
 	"," CLB
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<nitasiwatân>"
 	"asiwatâw" V TI Ind Prs 1Sg %PRED
 "<,>"
@@ -8202,10 +8202,10 @@
 "<,>"
 	"," CLB
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg %<LocPred
 "<ê-papâmipiciyâhk>"
 	"papamipiciw" PV/e V AI Cnj Prs 1Pl Lemma %PRED
 "<êwako>"
@@ -8280,7 +8280,7 @@
 	"ôma" Ipc
 	"#ôma" Pron Dem Prox IN Sg
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<ê-ayâyân>"
 	"ayâw" PV/e V AI TI Cnj Prs 1Sg %PRED
 "<,>"
@@ -8314,11 +8314,11 @@
 "<nitôkimâm>"
 	"okimâw" N AN Sg Px1Sg %ACTOR>
 "<itê>"
-	"itê" Ipc
+	"itê" Ipc %Ipl-V>
 "<ê-ayât>"
 	"ayâw" PV/e V AI TI Cnj Prs 3Sg %PRED
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %<Ipl-V
 "<,>"
 	"," CLB
 "<wîkiyihk>"
@@ -8620,7 +8620,7 @@
 "<pôt-ôki>"
 	"pôti_ôki" Ipc Lemma
 "<wayawîtimihk>"
-	"wayawîtimihk" Ipc
+	"wayawîtimihk" Ipc %Ipl-V>
 "<kî-apiwak>"
 	"apiw" V AI Ind Prt 3Pl %PRED
 "<kahkiyaw>"
@@ -8648,15 +8648,15 @@
 "<êkota>"
 	"êkota" Ipc
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg %<LocPred
 "<,>"
 	"," CLB
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg %<LocPred
 "<nicahcahkacayênâsiw>"
 	"cahkacayênâsiw" RdplS V TA Ind Prs 1Sg 3SgO Err/Orth Morph %PRED
 "<kîmôc>"
@@ -8710,8 +8710,8 @@
 "<êkota>"
 	"êkota" Ipc
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg %<LocPred
 "<pêhonânihk>"
 	"pêhonân" N IN Loc 
 "<,>"
@@ -8741,7 +8741,7 @@
 <sentence id="5714">
 "<*>"
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<nimasinahikêhikawinân>"
 	"masinahikêhêw" V TA Ind Prs X 1PlO %PRED
 "<kihc-âtâwêwikamikowiyiniwak>"
@@ -8816,10 +8816,10 @@
 <sentence id="5717">
 "<*>"
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg %<LocPred
 "<tânitahtw-âya>"
 	"tânitahtw-âya" Ipc
 "<atimwak>"
@@ -8886,7 +8886,7 @@
 "<nipêhtênân>"
 	"pêhtam" V TI Ind Prs 1Pl %PRED
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %<Ipl-V
 "<mistahi>"
 	"mistahi" Ipc
 "<ê-nihtâ-nîmihitot>"
@@ -8919,10 +8919,10 @@
 "<,>"
 	"," CLB
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<ôma>"
-	"ôma" Ipc
-	"#ôma" Pron Dem Prox IN Sg
+	"#ôma" Ipc
+	"ôma" Pron Dem Prox IN Sg %<LocPred
 "<k-âtoskêyâhk>"
 	"#atoskêw" PV/ka V AI Cnj Prs 1Pl Err/Orth
 	"atoskêw" PV/kaa V AI Cnj Prs 1Pl Err/Orth %PRED
@@ -9544,7 +9544,7 @@
 <sentence id="5744">
 "<*>"
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<kâ-kî-ohciyâkoyâhk>"
 	"ohciyawêw" PV/kaa V TA Cnj Prt 3Sg 1PlO Morph %PRED
 	"#ohciyawêw" PV/kaa V TA Cnj Prt 4Sg/Pl 1PlO Morph
@@ -9566,11 +9566,11 @@
 <paragraph>
 <sentence id="5746">
 "<ôtê>"
-	"ôtê" Ipc
+	"ôtê" Ipc %Ipl-V>
 "<nikî-itohtân>"
 	"itohtêw" V AI Ind Prt 1Sg %PRED
 "<ôtê>"
-	"ôtê" Ipc
+	"ôtê" Ipc %<Ipl-V
 "<aya>"
 	"#aya" N AN Sg Obv
 	"#ayi" N IN Pl
@@ -9608,7 +9608,7 @@
 <sentence id="5747">
 "<*>"
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<nipê-ohci-nâtitisahokawin>"
 	"nâtitisahwêw" PV/pe PV/ohci V TA Ind Prs X 1SgO %PRED
 "<,>"
@@ -9616,7 +9616,7 @@
 "<êkosi>"
 	"êkosi" Ipc
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<nititohtân>"
 	"itohtêw" V AI Ind Prs 1Sg %PRED
 "<.>"
@@ -9675,7 +9675,7 @@
 <sentence id="5749">
 "<*>"
 "<ôtê>"
-	"ôtê" Ipc
+	"ôtê" Ipc %Ipl-V>
 "<êtokwê>"
 	"êtokwê" Ipc
 "<kâ-pê-ayitohtêcik>"
@@ -9683,7 +9683,7 @@
 "<mâna>"
 	"mâna" Ipc
 "<ôtê>"
-	"ôtê" Ipc
+	"ôtê" Ipc %Ipl-V>
 "<kâ-kiskinahamâkosicik>"
 	"kiskinwahamâkosiw" PV/kaa V AI Cnj Prs 3Pl Err/Orth %PRED
 "<,>"
@@ -9699,7 +9699,7 @@
 	"#ôma" Ipc
 	"ôma" Pron Dem Prox IN Sg %<OBL
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %<Ipl-V
 "<.>"
 	"." CLB
 </sentence>
@@ -9738,7 +9738,7 @@
 	"#nâtêw" PV/pe V TA Ind Prt 3Pl 1SgO
 	"pê-nâtêw" V TA Ind Prt 3Pl 1SgO %PRED
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %<Ipl-V
 "<êkwa>"
 	"êkwa" Ipc
 "<,>"
@@ -9824,7 +9824,7 @@
 	"hundred" Num Eng
 "<and>"
 	"and" Eng
-"<eighte╠n>"
+"<eighteen>"
 	"eighteen" Num Eng Err/Orth
 "<,>"
 	"," CLB
@@ -9836,7 +9836,7 @@
 <sentence id="5754">
 "<*>"
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<awa>"
 	"awa" Pron Dem Prox AN Sg %GOAL>
 "<nikî-wâpamâw>"
@@ -9902,7 +9902,7 @@
 "<mêkwâc>"
 	"mêkwâc" Ipc
 "<ôtê>"
-	"ôtê" Ipc
+	"ôtê" Ipc %Ipl-V>
 "<ê-nôcihcikêyân>"
 	"nôcihcikêw" PV/e V AI Cnj Prs 1Sg %PRED
 "<,>"
@@ -10028,7 +10028,7 @@
 <sentence id="5763">
 "<*>"
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<atimwak>"
 	"atim" N AN Pl %ACTOR>
 "<kâ-nawaswêcik>"
@@ -10120,8 +10120,8 @@
 "<êkota>"
 	"êkota" Ipc
 "<anima>"
-	"#ôma" Pron Dem Med IN Sg
-	"anima" Ipc
+	"ôma" Pron Dem Med IN Sg %<LocPred
+	"#anima" Ipc 
 "<,>"
 	"," CLB
 "<itwêw>"
@@ -10366,7 +10366,7 @@
 "<nitasiwacikanihk>"
 	"asiwacikan" N IN Px1Sg Loc %<V
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %<Ipl-V
 "<,>"
 	"," CLB
 "<itwêw>"
@@ -10432,7 +10432,7 @@
 "<">"
 	""" PUNCT
 "<êkotê>"
-	"êkotê" Ipc
+	"êkotê" Ipc %Ipl-V>
 "<ayitâpîhkan>"
 	"#itâpiw" RdplW V AI Imp Del 2Sg Err/Orth
 	"ay-itâpiw" V AI Imp Del 2Sg Err/Orth %PRED
@@ -10669,7 +10669,7 @@
 <sentence id="5782">
 "<*>"
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Ipl-V>
 "<êkwa>"
 	"êkwa" Ipc
 "<ê-apiyân>"
@@ -11025,9 +11025,9 @@
 "<nipôni-minihkwân>"
 	"minihkwêw" PV/poni V AI Ind Prs 1Sg %PRED
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %Loc-Ipl>
 "<ohci>"
-	"ohci" Ipc
+	"ohci" Ipc %<Ipl-V
 "<,>"
 	"," CLB
 "<">"
@@ -11229,7 +11229,7 @@
 "<niwîhtamâk>"
 	"wîhtamawêw" V TA Ind Prs 3Sg 1SgO %PRED
 "<ôta>"
-	"ôta" Ipc
+	"ôta" Ipc %<Ipl-V
 "<,>"
 	"," CLB
 "<tiy>"
@@ -11422,9 +11422,9 @@
 "<ê-wâpahtahkik>"
 	"wâpahtam" PV/e V TI Cnj Prs 3Pl %PRED
 "<êkota>"
-	"êkota" Ipc
+	"êkota" Ipc %Loc-Ipl>
 "<ohci>"
-	"ohci" Ipc
+	"ohci" Ipc %Ipl-V>
 "<kâwi>"
 	"kâwi" Ipc
 "<tâpiskôc>"
