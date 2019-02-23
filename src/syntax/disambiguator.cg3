@@ -33,6 +33,7 @@ LIST V = V ;
 LIST Ipc = Ipc ;
 LIST Iph = Iph ;
 LIST Ipl = Ipl ;
+LIST Ipt = Ipt ;
 LIST Interj = Interj ;
 LIST InLoc = InLoc ; 
 
@@ -392,11 +393,14 @@ LIST IIZ = IIZ ;
 
 LIST ZERO = "apwêyâw" "askihtakoskâw" "askîwan" "askîwiw" "atihkamêkoskâw" "atihtêminiskâw" "atoskêwi-kîsikâw" "ayamihâwi-kîsikâw" "ayamihêwi-kîsikâw" "ayapâhtikoskâw" "ayapâskwêyâw" "ayapîhkêsîskâw" "ayiwâkipêw" "ayôskanâhtikoskâw" "âhkikoskâw" "âhkwâstêw" "âkawâstêw" "âkôsipêyâw" "âkwâ-kîsikâw" "âkwâ-tipiskâw" "âkwâyâw" "âmôskâw" "âniskowaskâw" "âniskowaskoskâw" "âpihtâ-kîsikâw" "âpihtâ-nîpin" "âpihtâ-pipon" "âpihtâ-tipiskâw" "âpihtâwi-kîsikâw" "âpihtâwitâkosiw" "âpisisino-kîsikâw" "âpocêyâw" "âsokâmatin" "âstê-kimiwan" "âstê-kîsikâw" "cahcahkâyôskâw" "cîpayi-kîsikâw" "cîpayi-tipiskâw" "cîpêhtakwâpikwanîskâw" "cîwêyâw" "êyikoskâw" "isi-kîsikâw" "iyiniminiskâw" "kamâmakoskâw" "kaskamotâpahtêw" "kaski-tipiskâw" "kâh-kimiwan" "kêposkâw" "kihci-âpihtâwâni-kîsikâw" "kimiwan" "kimiwasin" "kimiwaskin" "kinêpikoskâw" "kinosêskâw" "kipwatâmâpahtêw" "kipwâpahtêw" "kisin" "kisinâsin" "kisinâw" "kisipâskwêyâw" "kisipi-kîsikâw" "kisipistikwêyâw" "kîkisêpâw" "kîkisêpâyâw" "kîsapwênâyâw" "kîsapwêw" "kîsapwêyâw" "kîsi-tipiskâw" "kîsikâsiw" "kîsikâstêw" "kîsikâw" "kîsikâyâpan" "kîsikâyâstêw" "kîsopwêni-pipon" "kîsopwêw" "kîsopwêyâw" "kîsowâyâw" "kîwêhtin" "koskowâtan" "kostâmikwan" "kôniwan" "kwêskiyowêw" "kwêskosîyowêw" "maci-kîsikâw" "macipakoskâw" "mahkêsîskâw" "mamahkâskâw" "mamênaskwâw" "manicôsiskâw" "manitowi-kîsikâw" "maskosîskâw" "maskoskâw" "mâtinawê-kîsikâsin" "mâtinawê-kîsikâw" "mâtinawi-kîsikâw" "mâyi-kîsikâw" "mâyi-pipon" "mêkwâ-kîsikâw" "mêkwâ-tipiskâw" "mihkwaskâw" "mihtiskâw" "mikiskon" "minahikoskâw" "misi-yôtin" "mispon" "misposin" "misposkin" "mistikoskâw" "miyo-kîsikâw" "miyo-tipiskâw" "miyotâkosin" "mînisiskâw" "mîtosiskâw" "mohtêwiskâw" "môsoskâw" "môswaskâw" "nakahpêhan" "namêkosiskâw" "nanêhtahkâw" "nêwo-kîsikâw" "nêwo-tipiskâw" "nikotwâsiko-kîsikâw" "nikotwâso-kîsikâw" "nipahi-yôtin" "nipîskâw" "niskiskâw" "nisto-kîsikâw" "niyânano-kîsikâw" "nîpâyâstêw" "nîpin" "nîpîskâw" "nîskâyâw" "nîso-kîsikâw" "nîso-tipiskâw" "ńôtin" "ocêhtowi-kîsikâw" "ocicâhkoskâw" "ohtin" "okâminakasîskâw" "onimiskîskâw" "osâwipêskwan" "oskâhtakoskâw" "oskâhtikosiskâw" "otâkosin" "pahkwâcîsiskâw" "pahkwêsikani-kîsikâw" "pêtâpan" "pêyako-kîsikâw" "pihêskâw" "pihkosiskâw" "pimiciyowêw" "pipon" "piyêsîsiskâw" "pîhciyowêw" "pîkisêmahan" "pîkisêyâw" "pîsawâcâsin" "pîsimowan" "pîsimowâyâw" "pîsimowiw" "pîwan" "pîwani-yôtin" "pîwêsipon" "pôn-âpihtâ-kîsikâw" "pôn-âpihtâ-tipiskâw" "pôn-âyamihêwi-kîsikâw" "pôni-kimiwan" "pôni-mispon" "sakimêskâw" "saskan" "saskaniyowêw" "sâkaskâw" "sâkâstêw" "sâposci-kimiwan" "sâpoyowêw" "sâpôminiskâw" "sâwani-yôtin" "sîkipêstâw" "sîkwan" "sîsîkan" "sîsîpiskâw" "sôhkiyowêw" "sôniyâskâw" "sôniyâw-kîsikâw" "tahkâyâsin" "tahkâyâw" "tahkipêyâw" "tahkiyowêw" "takwâkin" "timaskâw" "timikonêw" "timikoniw" "tipiskâsin" "tipiskâw" "wacîskâw" "wanitipiskâsin" "wanitipiskâw" "waskowan" "wâkinâkaniskâw" "wâpan" "wâpaniyowêw" "wâpososkâw" "wîpâci-kîsikâw" "yîkopîwan" "yîkopîwiw" "yîkowan" "yîkwaskwan" "yîkwawan" "yôcisin" "yôtin" ;
 
-LIST PREPOSITION = "asicâyihk" "atâmihk" "atâmipîhk" "capasis" "capasîs" "cîki" "iskwêyânihk" "ispimihk" "kicîniskêhk" "kihciwâk" "kisipanohk" "mohcihk" "namahcihk" "nihcâyihk" "nohcimihk" "nâsipîtimihk" "pihcâyihk" "pihtokamihk" "sisonê" "sâyihk" "sîpâ" "sîpâyihk" "tahkohc" "tastawâyihk" "tâwâyihk" "wahyaw" "wayawîtimihk" "wayawîtimiskwaht" "wâhyawês" "wâsakâm" "âkawâstêhk" "âpihtawâyihk" "âstamâstihk" "âyêtawâyihk" "akâmâyihk" "akâmihk" "asicâyi" "awasâyihk" "ayîtawâyihk" "âkawâyihk" "âstamihk" "kihcîniskêhk" "kospâyihk" "namahcîhk" "namahtinihk" "nîhc-âyihk" "nihc-âyihk" "nôhcimihk" "ohtâyihk" "okihciniskihk" "pimic-âyihk" "pîhc-âyihk" "sîpâhk" "tahkohc-âyihk" "tawâyihk" "êkota" "êkotê" "ôtê" "itê" "anita" "ita" "nêtê" "ôta" ; 
+LIST PREPOSITION = "asicâyihk" "atâmihk" "atâmipîhk" "capasis" "capasîs" "cîki" "iskwêyânihk" "ispimihk" "kicîniskêhk" "kihciwâk" "kisipanohk" "mohcihk" "namahcihk" "nihcâyihk" "nohcimihk" "nâsipîtimihk" "pihcâyihk" "pihtokamihk" "sisonê" "sâyihk" "sîpâ" "sîpâyihk" "tahkohc" "tastawâyihk" "tâwâyihk" "wahyaw" "wayawîtimihk" "wayawîtimiskwaht" "wâhyawês" "wâsakâm" "âkawâstêhk" "âpihtawâyihk" "âstamâstihk" "âyêtawâyihk" "akâmâyihk" "akâmihk" "asicâyi" "awasâyihk" "ayîtawâyihk" "âkawâyihk" "âstamihk" "kihcîniskêhk" "kospâyihk" "namahcîhk" "namahtinihk" "nîhc-âyihk" "nihc-âyihk" "nôhcimihk" "ohtâyihk" "okihciniskihk" "pimic-âyihk" "pîhc-âyihk" "sîpâhk" "tahkohc-âyihk" "tawâyihk" "êkota" "êkotê" "ôtê" "itê" "anita" "ita" "nêtê" "ôta" "awasitê" "âstamitê" "nanânis" ; 
 
 LIST POSTPOSITION = "isi" "ohci" ;
 
 LIST NEG = "namôya" "namôy" "môya" "môy" "êkâwiya" "kâwiya" "êkâya" "êkây" "kâya" "êkâ" ; 
+
+LIST TEMP = "ispî" "êkospî" "tânispî" "ispîhk" "êkospîhk" "tânispîhk" "kayâs" "anohc" "mêkwâc" "kêtahtawê" "kîtahtawê" "anohcihkê" "ispîhci" "sâsay" "âsay" "êkwayâk" "pitamâ" "itâp" "mwêhci" "pâtimâ" "pêci-nâway" "êkwêyâk" "aspin" "kayâsês" "okâsikâk" "wêskacês" "aciyaw" "iskwêyâc" "kinwês" "kinwêsk" "kinwêsis" "kisik" "kâh-kinwês" "kâkikê" "kîhtwâm" "mayaw" "mihcêtwâw" "mâmâwaci-kayâs" "mâtayak" "nici" "nistam" "nôhtaw" "pêskis" "pêyakwâw" "tahtwâw" "tânitahtwâw" "âstamispîhk" "êkwêyâc" "awasi-otâkosîhk" "awasi-tipiskohk" "kihci-awasi-otâkosîhk" "awasi-piponohk" "kayâhtê" "maywês" "maywêsk" "mwayês" "mâmwayês" "nîstamik" "awasi-tipiskâki" "awasi-wâpahki" "tipiskohk" "otâkosîhk" "tipiskâki" "wâpahki" "mwêstas" "nîpâ-tipisk" "pôsko-kisik" "pôsko-pîsim" "kâpê-tipisk" "pêyak-tipiskâw" "pêyako-tipiskâw" "tahto-tipiskâw" "tipisk" "têpiskâk" "kâpê-kisik" "tahto-kîsikâw" "otâkosiki" "otâkosî" "kisêpâyâki" "kêkisêp" "kîkisêp" "kîkisêpâ" "kîkisêpâki" "pâmwayês" "miyâskam" "miyoskamikohk" "miyoskamiki" "miyoskamîhk" "sîkwanohk" "takwâkiki" "takwâkohk" "kapê-pipon" "mêsakwanipipon" "pipohki" "piponohk" "awasi-nîpinohk" "kapê-nîpin" "nîpihki" "nîpinohk" "awasitê" "âstamitê" "wîpac" "wîpat" "kîpa" "pwâstâw" "pâtos" "wîhkâcîs" "ici" ;
+
 
 # Sets
 # ====
@@ -468,7 +472,7 @@ REMCOHORT ("<kâ-ispayik>") (-1 ("<anohc_kâ-ispayik>" Iph)) ;
 SUBSTITUTE ("<anohc>" "anohc" Ipc) ("<anohc_kâ-kîsikâk>" "anohc_kâ-kîsikâk" Iph) TARGET ("<anohc>" Ipc) IF (1 ("<kâ-kîsikâk>" Ipc)) ;
 REMCOHORT ("<kâ-kîsikâk>") (-1 ("<anohc_kâ-kîsikâk>" Iph)) ;
 
-SUBSTITUTE ("awasi" Ipc) ("<awasi_ispî>" "awasi_ispî" Iph) TARGET ("awasi" Ipc) IF (1 ("ispî" Ipc)) ;
+SUBSTITUTE ("awasi" Ipc) ("<awasi_ispî>" "awasi_ispî" Iph Ipt) TARGET ("awasi" Ipc) IF (1 ("ispî" Ipc)) ;
 REMCOHORT ("ispî") (-1 ("<awasi_ispî>" Iph)) ;
 
 SUBSTITUTE ("<awêkâ>" "awêkâ" Ipc) ("<awêkâ_cî>" "awêkâ_cî" Iph) TARGET ("<awêkâ>" Ipc) IF (1 ("<cî>" Ipc)) ;
@@ -486,7 +490,7 @@ REMCOHORT ("<piko>") (-1 ("<âhci_piko>" Iph)) ;
 SUBSTITUTE ("<âsay>" "âsay" Ipc) ("<âsay_cî>" "âsay_cî" Iph) TARGET ("<âsay>" Ipc) IF (1 ("<cî>" Ipc)) ;
 REMCOHORT ("<cî>") (-1 ("<âsay_cî>" Iph)) ;
 
-SUBSTITUTE ("<âsay>" "âsay" Ipc) ("<âsay_mîna>" "âsay_mîna" Iph) TARGET ("<âsay>" Ipc) IF (1 ("<mîna>" Ipc)) ;
+SUBSTITUTE ("<âsay>" "âsay" Ipc) ("<âsay_mîna>" "âsay_mîna" Iph Ipt) TARGET ("<âsay>" Ipc) IF (1 ("<mîna>" Ipc)) ;
 REMCOHORT ("<mîna>") (-1 ("<âsay_mîna>" Iph)) ;
 
 SUBSTITUTE ("âstamitê" Ipc) ("<âstamitê_isi>" "âstamitê_isi" Iph) TARGET ("âstamitê" Ipc) IF (1 ("isi" Ipc)) ;
@@ -543,10 +547,10 @@ REMCOHORT ("<mîna>") (-1 ("<êkosi_mîna>" Iph)) ;
 SUBSTITUTE ("<êkosi>" "êkosi" Ipc) ("<êkosi_nawac>" "êkosi_nawac" Iph) TARGET ("<êkosi>" Ipc) IF (1 ("<nawac>" Ipc)) ;
 REMCOHORT ("<nawac>") (-1 ("<êkosi_nawac>" Iph)) ;
 
-SUBSTITUTE ("<êkosi>" "êkosi" Ipc) ("<êkosi_pita>" "êkosi_pita" Iph) TARGET ("<êkosi>" Ipc) IF (1 ("<pita>" Ipc)) ;
+SUBSTITUTE ("<êkosi>" "êkosi" Ipc) ("<êkosi_pita>" "êkosi_pita" Iph Ipt) TARGET ("<êkosi>" Ipc) IF (1 ("<pita>" Ipc)) ;
 REMCOHORT ("<pita>") (-1 ("<êkosi_pita>" Iph)) ;
 
-SUBSTITUTE ("<êkosi>" "êkosi" Ipc) ("<êkosi_pitamâ>" "êkosi_pitamâ" Iph) TARGET ("<êkosi>" Ipc) IF (1 ("<pitamâ>" Ipc)) ;
+SUBSTITUTE ("<êkosi>" "êkosi" Ipc) ("<êkosi_pitamâ>" "êkosi_pitamâ" Iph Ipt) TARGET ("<êkosi>" Ipc) IF (1 ("<pitamâ>" Ipc)) ;
 REMCOHORT ("<pitamâ>") (-1 ("<êkosi_pitamâ>" Iph)) ;
 
 SUBSTITUTE ("<êkota>" "êkota" Ipc) ("<êkota_mwêhci>" "êkota_mwêhci" Iph) TARGET ("<êkota>" Ipc) IF (1 ("<mwêhci>" Ipc)) ;
@@ -582,7 +586,13 @@ REMCOHORT ("<wiya>") (-1 ("<ispîhci_wiya>" Iph)) ;
 SUBSTITUTE ("itêhkê" Ipc) ("<itêhkê_isi>" "itêhkê_isi" Iph) TARGET ("itêhkê" Ipc) IF (1 ("isi" Ipc)) ;
 REMCOHORT ("isi") (-1 ("<itêhkê_isi>" Iph)) ;
 
-SUBSTITUTE ("<kâya>" "kâya" Ipc) ("<kâya_kîkway>" "kâya_kîkway" Iph) TARGET ("<kâya>" Ipc) IF (1 ("<kîkway>" Ipc)) ;
+SUBSTITUTE ("<kayâs>" "kayâs" Ipc) ("<kayâs_êkwa>" "kayâs_êkwa" Iph Ipt) TARGET ("<kayâs>" Ipc) IF (1 ("<êkwa>" Ipc)) ;
+REMCOHORT ("êkwa") (-1 ("<kayâs_êkwa>" Iph)) ;
+
+SUBSTITUTE ("<kayâs>" "kayâs" Ipc) ("<kayâs_mâskôc>" "kayâs_mâskôc" Iph Ipt) TARGET ("<kayâs>" Ipc) IF (1 ("<mâskôc>" Ipc)) ;
+REMCOHORT ("<mâskôc>") (-1 ("<kayâs_êkwa>" Iph)) ;
+
+SUBSTITUTE ("<kâya>" "kâya" Ipc) ("<kâya_kîkway>" "kâya_kîkway" Iph Ipt) TARGET ("<kâya>" Ipc) IF (1 ("<kîkway>" Ipc)) ;
 REMCOHORT ("<kîkway>") (-1 ("<kâya_kîkway>" Iph)) ;
 
 SUBSTITUTE ("<kiya>" "kiya" Ipc) ("<kiya_mâka>" "kiya_mâka" Iph) TARGET ("<kiya>" Ipc) IF (1 ("<mâka>" Ipc)) ;
@@ -843,7 +853,7 @@ REMCOHORT ("ici") (-1 ("<pâtimâ_ici>" Iph)) ;
 SUBSTITUTE ("pâtimâ" Ipc) ("<pâtimâ_itâp>" "pâtimâ_itâp" Iph) TARGET ("pâtimâ" Ipc) IF (1 ("itâp" Ipc)) ;
 REMCOHORT ("itâp") (-1 ("<pâtimâ_itâp>" Iph)) ;
 
-SUBSTITUTE ("<pêyakwâw>" "pêyakwâw" Ipc) ("<pêyakwâw_êsa>" "pêyakwâw_êsa" Iph) TARGET ("<pêyakwâw>" Ipc) IF (1 ("<êsa>" Ipc)) ;
+SUBSTITUTE ("<pêyakwâw>" "pêyakwâw" Ipc) ("<pêyakwâw_êsa>" "pêyakwâw_êsa" Iph Ipt) TARGET ("<pêyakwâw>" Ipc) IF (1 ("<êsa>" Ipc)) ;
 REMCOHORT ("<êsa>") (-1 ("<pêyakwâw_êsa>" Iph)) ;
 
 SUBSTITUTE ("piko" Ipc) ("<piko_ani>" "piko_ani" Iph) TARGET ("piko" Ipc) IF (1 ("ani" Ipc)) ;
@@ -897,7 +907,7 @@ REMCOHORT ("êkwa") (-1 ("<tânisi_êkwa>" Iph)) ;
 SUBSTITUTE ("tânisi" Ipc) ("<tânisi_êtikwê>" "tânisi_êtikwê" Iph) TARGET ("tânisi" Ipc) IF (1 ("êtikwê" Ipc)) ;
 REMCOHORT ("êtikwê") (-1 ("<tânisi_êtikwê>" Iph)) ;
 
-SUBSTITUTE ("tânispî" Ipc) ("<tânispî_ohci>" "tânispî_ohci" Iph) TARGET ("tânispî" Ipc) IF (1 ("ohci" Ipc)) ;
+SUBSTITUTE ("tânispî" Ipc) ("<tânispî_ohci>" "tânispî_ohci" Iph Ipt) TARGET ("tânispî" Ipc) IF (1 ("ohci" Ipc)) ;
 REMCOHORT ("ohci") (-1 ("<tânispî_ohci>" Iph)) ;
 
 SUBSTITUTE ("tânita" Ipc) ("<tânita_ohci>" "tânita_ohci" Iph) TARGET ("tânita" Ipc) IF (1 ("ohci" Ipc)) ;
@@ -1030,11 +1040,14 @@ LIST INLOC = "Shellbrook" "Winnipeg" "Manitoba" "Battleford" "States" "Alberta" 
 ADD:Inloc InLoc TARGET INLOC ;
 ADD:Inloc IN TARGET INLOC IF (NOT 0 IN)(NOT 0 AN) ;
 
-ADD:locparticle Ipl TARGET PREPOSITION OR POSTPOSITION ;
+ADD:locparticle Ipl TARGET PREPOSITION OR POSTPOSITION IF (0 Ipc) ;
 
 ADD:Inloc InLoc TARGET ("Elizabeth" N Prop) IF (*-2 Ipl) ; 
 ADD:Inloc InLoc TARGET ("Elizabeth" N Prop) IF (*2 Ipl) ; 
 ADD:Inloc IN TARGET ("Elizabeth" N) IF (0 InLoc)(NOT 0 IN)(NOT 0 AN) ; 
+
+ADD:Ipt Ipt TARGET TEMP IF (0 Ipc) ;
+ADD: Ipt TARGET ("katisk" Ipc) IF (NOT *0 Neg BARRIER CLB) ;
 
 SECTION
 
@@ -1176,18 +1189,18 @@ REMOVE:NANObv Obv IF (0 N + AN + Sg)(*0 TA + 3Sg BARRIER V OR CLB) ;
 SELECT:NANObv Obv IF (0 N + AN + Sg)(NOT *0 TA + 3Sg BARRIER V OR CLB)(*0 TA + 4Sg/PlO OR TA + 4Sg/Pl BARRIER V OR CLB) ;
 
 #ambiguity between 3 and obv in inverse verbs (currently only looking immediately before and after, may expand range later
-SELECT:3PlactorL TA + 3Pl IF (-1 AN + Pl BARRIER CLB) ;
-SELECT:3PlactorL TA + 3Pl IF (-2 AN + Pl BARRIER CLB) ;
-SELECT:3PlactorR TA + 3Pl IF (1 AN + Pl BARRIER CLB) ;
-SELECT:3PlactorR TA + 3Pl IF (2 AN + Pl BARRIER CLB) ;
-SELECT:3PlactorR TA + 3Pl IF (3 AN + Pl BARRIER CLB) ;
+SELECT:3PlactorL TA + 3Pl IF (-1 AN + Pl) ;
+SELECT:3PlactorL TA + 3Pl IF (-2 AN + Pl) ;
+SELECT:3PlactorR TA + 3Pl IF (1 AN + Pl) ;
+SELECT:3PlactorR TA + 3Pl IF (2 AN + Pl) ;
+SELECT:3PlactorR TA + 3Pl IF (3 AN + Pl) ;
 
-SELECT:3SgactorL TA + 3Sg IF (-1 AN + Sg BARRIER CLB) ;
-SELECT:3SgactorL TA + 3Sg IF (-2 AN + Sg BARRIER CLB) ;
-SELECT:3SgactorL TA + 3Sg IF (-3 AN + Sg BARRIER CLB) ;
-SELECT:3SgactorR TA + 3Sg IF (1 AN + Sg BARRIER CLB) ;
-SELECT:3SgactorR TA + 3Sg IF (2 AN + Sg BARRIER CLB) ;
-SELECT:3SgactorR TA + 3Sg IF (3 AN + Sg BARRIER CLB) ;
+SELECT:3SgactorL TA + 3Sg IF (-1 AN + Sg) ;
+SELECT:3SgactorL TA + 3Sg IF (-2 AN + Sg) ;
+SELECT:3SgactorL TA + 3Sg IF (-3 AN + Sg) ;
+SELECT:3SgactorR TA + 3Sg IF (1 AN + Sg) ;
+SELECT:3SgactorR TA + 3Sg IF (2 AN + Sg) ;
+SELECT:3SgactorR TA + 3Sg IF (3 AN + Sg) ;
 
 SELECT:ObvactorL TA + 4Sg/Pl IF (-1 AN + Obv) ;
 SELECT:ObvactorL TA + 4Sg/Pl IF (-2 AN + Obv) ;
@@ -1204,6 +1217,7 @@ SELECT:INkikway IN IF (0 KIKWAY LINK -1 ("kahkiyaw") OR ("nanâtohk")) ;
 SELECT:ANkikway AN IF (0 KIKWAY LINK 1 N + AN) ;
 REMOVE:kekway Pron IF (0 ("kêkway")) ;
 SELECT:INkekway IN IF (0 ("kêkway") LINK *0 TI) ;
+SELECT:IPCayis Ipc IF (0 ("ayis")) ;
 
 #ayiwinisa is a mess
 SELECT:PLayiwinisa Pl IF (0 ("ayiwinisa") ) ;

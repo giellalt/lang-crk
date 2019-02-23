@@ -47,6 +47,8 @@ LIST V = V ;
 LIST Ipc = Ipc ;
 LIST Interj = Interj ;
 LIST Ipl = Ipl ;
+LIST Ipt = Ipt ;
+LIST Iph = Iph ;
 LIST InLoc = InLoc ;
 
 LIST Adv = Adv ;
@@ -174,6 +176,8 @@ LIST @<LocPred = @<LocPred ;
 LIST @Loc-Ipl> = @Loc-Ipl> ;
 LIST @Ipl-V> = @Ipl-V> ;
 LIST @<Ipl-V = @<Ipl-V ;
+LIST @Ipt-V> = @Ipt-V> ;
+LIST @<Ipt-V = @<Ipt-V ;
 
 
 LIST @+FAUXV = @+FAUXV ;
@@ -496,12 +500,23 @@ MAP:4SgPlPoss @Pos> TARGET N + Obv IF (1 N + Px4Sg/Pl)(NOT 1 Loc) ;
 ##MAP:TEMPORALN @<ADVL TARGET TEMPORALN IF (*-1 AI OR TI OR TA BARRIER CLB) ;
 ##MAP:TEMPORALN @ADVL> TARGET TEMPORALN IF (*1 AI OR TI OR TA BARRIER CLB) ;
 
+MAP:IptV @Ipt-V> TARGET Ipt IF (1 V) ;
+MAP:IptV @<Ipt-V TARGET Ipt IF (-1 V) ;
+MAP:IptV @Ipt-V> TARGET Ipt IF (2 V)(NOT 1 CLB) ;
+MAP:IptV @<Ipt-V TARGET Ipt IF (-2 V)(NOT -1 CLB) ;
+MAP:IptV @Ipt-V> TARGET Ipt IF (*3 V BARRIER CLB)(NOT 1 CLB)(NOT 2 CLB) ;
+MAP:IptV @<Ipt-V TARGET Ipt IF (*-3 V BARRIER CLB)(NOT -1 CLB)(NOT -2 CLB) ;
+
 #locative things that aren't nouns
 MAP:LocPred @<LocPred TARGET Dem IF (-1 Ipl)(-2 BOS OR CLB) ;
 MAP:IPLohci @Loc-Ipl> TARGET Ipl IF (1 Dem)(2 ("ohci")) ;
 MAP:IPLohci @Loc-Ipl> TARGET Ipl IF (1 ("ohci")) ;
-MAP:IplV @Ipl-V> TARGET Ipl IF (*1 V BARRIER CLB) ;
-MAP:IplV @<Ipl-V TARGET Ipl IF (*-1 V BARRIER CLB) ;
+MAP:IplV @Ipl-V> TARGET Ipl IF (1 V) ;
+MAP:IplV @<Ipl-V TARGET Ipl IF (-1 V) ;
+MAP:IplV @Ipl-V> TARGET Ipl IF (2 V)(NOT 1 CLB) ;
+MAP:IplV @<Ipl-V TARGET Ipl IF (-2 V)(NOT -1 CLB) ;
+MAP:IplV @Ipl-V> TARGET Ipl IF (*3 V BARRIER CLB)(NOT 1 CLB)(NOT 2 CLB) ;
+MAP:IplV @<Ipl-V TARGET Ipl IF (*-3 V BARRIER CLB)(NOT -1 CLB)(NOT -2 CLB) ;
 
 ##INSTRUMENTAL NOUNS these need a lot of work
 
