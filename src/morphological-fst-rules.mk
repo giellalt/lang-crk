@@ -15,8 +15,9 @@
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 # Rules to create morphological Cree FSTs:
-#   - crk-anl-desc.hfstol
-#   - crk-gen-norm.hfstol
+#
+#   - crk-descriptive-analyzer.hfstol
+#   - crk-normative-generator.hfstol
 
 _RESET := $(shell tput sgr0)
 _EMPH := $(shell tput setaf 6)
@@ -33,11 +34,11 @@ crk-phon.hfst: $(PHONOLOGY)
 	-@echo "$(_EMPH)Compiling TWOLC code.$(_RESET)"
 	hfst-twolc -i $< -o $@
 
-crk-gen-norm.hfst: crk-morph.hfst crk-phon.hfst
+crk-normative-generator.hfst: crk-morph.hfst crk-phon.hfst
 	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers.$(_RESET)"
 	hfst-compose-intersect $^ | hfst-minimize - -o $@
 
-crk-anl-norm.hfst: crk-gen-norm.hfst
+crk-anl-norm.hfst: crk-normative-generator.hfst
 	-@echo "$(_EMPH)Inverting normative generator tranducer into a normative analyzer transducer.$(_RESET)"
 	hfst-invert $< -o $@
 
@@ -45,7 +46,7 @@ crk-orth.hfst: $(ORTHOGRAPHY)
 	-@echo "$(_EMPH)Compiling regular expression implementing spelling-relaxation.$(_RESET)"
 	hfst-regexp2fst -S -i $< -o $@
 
-crk-anl-desc.hfst: crk-orth.hfst crk-anl-norm.hfst
+crk-descriptive-analyzer.hfst: crk-orth.hfst crk-anl-norm.hfst
 	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer transducer to create descriptive analyzer.$(_RESET)"
 	hfst-compose -F -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
 
