@@ -20,7 +20,7 @@
 #
 # 	make -j -f quick.mk
 
-all: crk-anl-desc.hfstol crk-gen-norm.hfstol
+all: crk-descriptive-analyzer.hfstol crk-normative-generator.hfstol
 
 include morphological-fst-sources.mk
 include morphological-fst-rules.mk
