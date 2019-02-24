@@ -14,14 +14,19 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-# Creates descriptive analyzer and a normative generator for crk
-#
-# How to create the FSTs:
-#
-# 	make -j -f quick.mk
+# Lists the raw .lexc/.twolc/.regex sources required to create the
+# morphological FSTs.
 
-all: crk-anl-desc.hfstol crk-gen-norm.hfstol
-
-include morphological-fst-sources.mk
-include morphological-fst-rules.mk
-
+MORPHOLOGY = morphology/root.lexc \
+    morphology/affixes/noun_affixes.lexc \
+    morphology/affixes/propernouns.lexc \
+    morphology/affixes/verb_affixes.lexc \
+    morphology/stems/abbreviations.lexc \
+    morphology/stems/crk-propernouns.lexc \
+    morphology/stems/noun_stems.lexc \
+    morphology/stems/numerals.lexc \
+    morphology/stems/particles.lexc \
+    morphology/stems/pronouns.lexc \
+    morphology/stems/verb_stems.lexc
+PHONOLOGY = phonology/crk-phon.twolc
+ORTHOGRAPHY = orthography/spellrelax.regex
