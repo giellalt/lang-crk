@@ -451,9 +451,6 @@ ADD:ayawAITI TI TARGET ("(.+[-])*ayâw"r) + AI ;
 ADD:VIIZ IIZ TARGET II + ZERO ;
 SET VII = II - IIZ ;
 
-#adding negative tags; not required if they are already added i.e. by KS in FST/HPdev (keeps things neat for now)
-ADD:Neg Neg Target NEG + Ipc IF (NOT 0 Neg) ;
-
 REMOVE:PxObvPl Pl IF (0 POSS + AN + Obv + Sg) ;
 ADD:PxObvSgPl Pl TARGET POSS + AN + Obv + Sg ;
 
@@ -700,25 +697,22 @@ REMCOHORT ("<konita>") (-1 ("<môy_konita>" Iph)) ;
 SUBSTITUTE ("<môy>" "môy" Ipc) ("<môy_nânitaw>" "môy_nânitaw" Iph) TARGET ("<môy>" Ipc) IF (1 ("<nânitaw>" Ipc)) ;
 REMCOHORT ("<nânitaw>") (-1 ("<môy_nânitaw>" Iph)) ;
 
-SUBSTITUTE ("<môy>" "môy" Ipc) ("<môy_nânitaw>" "môy_nânitaw" Iph) TARGET ("<môy>" Ipc) IF (1 ("<nânitaw>" Ipc)) ;
-REMCOHORT ("<nânitaw>") (-1 ("<môy_nânitaw>" Iph)) ;
-
-SUBSTITUTE ("<môy>" "môy" Ipc) ("<môy_wîhkâc>" "môy_wîhkâc" Iph) TARGET ("<môy>" Ipc) IF (1 ("<wîhkâc>" Ipc)) ;
+SUBSTITUTE ("<môy>" "môy" Ipc) ("<môy_wîhkâc>" "môy_wîhkâc" Iph Neg) TARGET ("<môy>" Ipc) IF (1 ("<wîhkâc>" Ipc)) ;
 REMCOHORT ("<wîhkâc>") (-1 ("<môy_wîhkâc>" Iph)) ;
 
-SUBSTITUTE ("<môy>" "môy" Ipc) ("<môy_wîhkât>" "môy_wîhkât" Iph) TARGET ("<môy>" Ipc) IF (1 ("<wîhkât>" Ipc)) ;
+SUBSTITUTE ("<môy>" "môy" Ipc) ("<môy_wîhkât>" "môy_wîhkât" Iph Neg) TARGET ("<môy>" Ipc) IF (1 ("<wîhkât>" Ipc)) ;
 REMCOHORT ("<wîhkât>") (-1 ("<môy_wîhkât>" Iph)) ;
 
-SUBSTITUTE ("môya" Ipc) ("<môya_ahpô>" "môya_ahpô" Iph) TARGET ("môya" Ipc) IF (1 ("ahpô" Ipc)) ;
+SUBSTITUTE ("môya" Ipc) ("<môya_ahpô>" "môya_ahpô" Iph Neg) TARGET ("môya" Ipc) IF (1 ("ahpô" Ipc)) ;
 REMCOHORT ("ahpô") (-1 ("<môya_ahpô>" Iph)) ;
 
-SUBSTITUTE ("<môya>" "môya" Ipc) ("<môya_cî>" "môya_cî" Iph) TARGET ("<môya>" Ipc) IF (1 ("<cî>" Ipc)) ;
+SUBSTITUTE ("<môya>" "môya" Ipc) ("<môya_cî>" "môya_cî" Iph Neg Qst) TARGET ("<môya>" Ipc) IF (1 ("<cî>" Ipc)) ;
 REMCOHORT ("<cî>") (-1 ("<môya_cî>" Iph)) ;
 
 SUBSTITUTE ("<môya>" "môya" Ipc) ("<môya_nânitaw>" "môya_nânitaw" Iph) TARGET ("<môya>" Ipc) IF (1 ("<nânitaw>" Ipc)) ;
 REMCOHORT ("<nânitaw>") (-1 ("<môya_nânitaw>" Iph)) ;
 
-SUBSTITUTE ("<mwâc>" "mwâc" Ipc) ("<mwâc_ahpô>" "mwâc_ahpô" Iph) TARGET ("<mwâc>" Ipc) IF (1 ("<ahpô>" Ipc)) ;
+SUBSTITUTE ("<mwâc>" "mwâc" Ipc) ("<mwâc_ahpô>" "mwâc_ahpô" Iph Neg) TARGET ("<mwâc>" Ipc) IF (1 ("<ahpô>" Ipc)) ;
 REMCOHORT ("<ahpô>") (-1 ("<mwâc_ahpô>" Iph)) ;
 
 SUBSTITUTE ("<nama>" "nama" Ipc) ("<nama_cî>" "nama_cî" Iph) TARGET ("<nama>" Ipc) IF (1 ("<cî>" Ipc)) ;
@@ -730,13 +724,13 @@ REMCOHORT ("<mayaw>") (-1 ("<nama_mayaw>" Iph)) ;
 SUBSTITUTE ("<nama>" "nama" Ipc) ("<nama_nânitaw>" "nama_nânitaw" Iph) TARGET ("<nama>" Ipc) IF (1 ("<nânitaw>" Ipc)) ;
 REMCOHORT ("<nânitaw>") (-1 ("<nama_nânitaw>" Iph)) ;
 
-SUBSTITUTE ("<nama>" "nama" Ipc) ("<nama_wîhkâc>" "nama_wîhkâc" Iph) TARGET ("<nama>" Ipc) IF (1 ("<wîhkâc>" Ipc)) ;
+SUBSTITUTE ("<nama>" "nama" Ipc) ("<nama_wîhkâc>" "nama_wîhkâc" Iph Neg) TARGET ("<nama>" Ipc) IF (1 ("<wîhkâc>" Ipc)) ;
 REMCOHORT ("<wîhkâc>") (-1 ("<nama_wîhkâc>" Iph)) ;
 
-SUBSTITUTE ("<namôy>" "namôy" Ipc) ("<namôy_wîhkâc>" "namôy_wîhkâc" Iph) TARGET ("<namôy>" Ipc) IF (1 ("<wîhkâc>" Ipc)) ;
+SUBSTITUTE ("<namôy>" "namôy" Ipc) ("<namôy_wîhkâc>" "namôy_wîhkâc" Iph Neg) TARGET ("<namôy>" Ipc) IF (1 ("<wîhkâc>" Ipc)) ;
 REMCOHORT ("<wîhkâc>") (-1 ("<namôy_wîhkâc>" Iph)) ;
 
-SUBSTITUTE ("namôya" Ipc) ("<namôya_ahpô>" "namôya_ahpô" Iph) TARGET ("namôya" Ipc) IF (1 ("ahpô" Ipc)) ;
+SUBSTITUTE ("namôya" Ipc) ("<namôya_ahpô>" "namôya_ahpô" Iph Neg) TARGET ("namôya" Ipc) IF (1 ("ahpô" Ipc)) ;
 REMCOHORT ("ahpô") (-1 ("<namôya_ahpô>" Iph)) ;
 
 SUBSTITUTE ("namôya" Ipc) ("<namôya_apisîs>" "namôya_apisîs" Iph) TARGET ("namôya" Ipc) IF (1 ("apisîs" Ipc)) ;
@@ -745,7 +739,7 @@ REMCOHORT ("apisîs") (-1 ("<namôya_apisîs>" Iph)) ;
 SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_cêskwa>" "namôya_cêskwa" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<cêskwa>" Ipc)) ;
 REMCOHORT ("<cêskwa>") (-1 ("<namôya_cêskwa>" Iph)) ;
 
-SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_cî>" "namôya_cî" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<cî>" Ipc)) ;
+SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_cî>" "namôya_cî" Iph Neg Qst) TARGET ("<namôya>" Ipc) IF (1 ("<cî>" Ipc)) ;
 REMCOHORT ("<cî>") (-1 ("<namôya_cî>" Iph)) ;
 
 SUBSTITUTE ("namôya" Ipc) ("<namôya_êkwayikohk>" "namôya_êkwayikohk" Iph) TARGET ("namôya" Ipc) IF (1 ("êkwayikohk" Ipc)) ;
@@ -763,10 +757,10 @@ REMCOHORT ("<nânitawitê>") (-1 ("<namôya_nânitawitê>" Iph)) ;
 SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_wiya>" "namôya_wiya" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<wiya>" Ipc)) ;
 REMCOHORT ("<wiya>") (-1 ("<namôya_wiya>" Iph)) ;
 
-SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_wîhkâc>" "namôya_wîhkâc" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<wîhkâc>" Ipc)) ;
+SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_wîhkâc>" "namôya_wîhkâc" Iph Neg) TARGET ("<namôya>" Ipc) IF (1 ("<wîhkâc>" Ipc)) ;
 REMCOHORT ("<wîhkâc>") (-1 ("<namôya_wîhkâc>" Iph)) ;
 
-SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_wîhkât>" "namôya_wîhkât" Iph) TARGET ("<namôya>" Ipc) IF (1 ("<wîhkât>" Ipc)) ;
+SUBSTITUTE ("<namôya>" "namôya" Ipc) ("<namôya_wîhkât>" "namôya_wîhkât" Iph Neg) TARGET ("<namôya>" Ipc) IF (1 ("<wîhkât>" Ipc)) ;
 REMCOHORT ("<wîhkât>") (-1 ("<namôya_wîhkât>" Iph)) ;
 
 SUBSTITUTE ("<namwâc>" "namwâc" Ipc) ("<namwâc_êkwayikohk>" "namwâc_êkwayikohk" Iph) TARGET ("<namwâc>" Ipc) IF (1 ("<êkwayikohk>" Ipc)) ;
@@ -897,6 +891,9 @@ REMCOHORT ("<ôt>") (-1 ("<tân_ôt>" Iph)) ;
 
 SUBSTITUTE ("tânêhki" Ipc) ("<tânêhki_ana>" "tânêhki_ana" Iph) TARGET ("tânêhki" Ipc) IF (1 ("ana" Ipc)) ;
 REMCOHORT ("ana") (-1 ("<tânêhki_ana>" Iph)) ;
+
+SUBSTITUTE ("tânêhki" Ipc) ("<tânêhki_êtikwê>" "tânêhki_êtikwê" Iph) TARGET ("tânêhki" Ipc) IF (1 ("êtikwê" Ipc)) ;
+REMCOHORT ("êtikwê") (-1 ("<tânêhki_êtikwê>" Iph)) ;
 
 SUBSTITUTE ("tânima" Ipc) ("<tânima_êwako>" "tânima_êwako" Iph) TARGET ("tânima" Ipc) IF (1 ("êwako" Ipc)) ;
 REMCOHORT ("êwako") (-1 ("<tânima_êwako>" Iph)) ;
@@ -1049,6 +1046,9 @@ ADD:Inloc IN TARGET ("Elizabeth" N) IF (0 InLoc)(NOT 0 IN)(NOT 0 AN) ;
 ADD:Ipt Ipt TARGET TEMP IF (0 Ipc) ;
 ADD:Ipt Ipt TARGET ("katisk" Ipc) IF (NOT *0 Neg BARRIER CLB) ;
 
+#adding negative tags; not required if they are already added i.e. by KS in FST/HPdev (keeps things neat for now)
+ADD:Neg Neg Target NEG + Ipc IF (NOT 0 Neg) ;
+
 SECTION
 
 # Different taste, different analysis
@@ -1126,7 +1126,7 @@ SELECT:DemNP Ipc (*0 IIZ)(NOT *0 N + IN)(0 Dem + IN + Sg) ;
 
 # We remove the particle if the word can be something more interesting - keep the particle, more common/likely
 SELECT:ChooseIpc Ipc IF (0 V) ;
-SELECT:ChooseIpc Ipc IF (0 N + $$NUMBERGENDER)(-1 Dem + $$NUMBERGENDER) ;
+REMOVE:ChooseN Ipc IF (0 N + $$NUMBERGENDER)(-1 Dem + $$NUMBERGENDER) ;
 # Iph sub/rem introduces some issues, fix with following constraint
 SELECT:ChooseIph Iph IF (0 N OR V OR Pron) ;
 
