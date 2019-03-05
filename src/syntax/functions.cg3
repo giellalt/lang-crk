@@ -185,6 +185,7 @@ LIST @<Ipl-V = @<Ipl-V ;
 LIST @Ipt-V> = @Ipt-V> ;
 LIST @<Ipt-V = @<Ipt-V ;
 LIST @Quant-N> = @Quant-N> ;
+LIST @<Quant-N = @<Quant-N ;
 LIST @Quant-V> = @Quant-V> ;
 LIST @<Quant-V = @<Quant-V ;
 
@@ -388,6 +389,8 @@ MAP:ekoniL @N> TARGET IN + Sg IF (0 (".?êkoni"r))(1 N + IN + Sg OR Pron + IN + 
 MAP:ekoniR @<N TARGET IN + Pl IF (0 (".?êkoni"r))(-1 N + IN + Pl OR Pron + IN + Pl) ;
 MAP:ekoniL @N> TARGET IN + Pl IF (0 (".?êkoni"r))(1 N + IN + Pl OR Pron + IN + Pl) ;
 
+MAP:ekoniR @<N TARGET IN + Pl IF (0 (".?êkoni"r))(-1 ("kîkway"))(-2 ("kahkiyaw")) ;
+
 #ewako and dem
 MAP:ewakoDEM @N> TARGET Ipc if (0 ("êwako"))(1 Dem) ; 
 
@@ -413,9 +416,6 @@ MAP:TAACTorL @ACTOR> TARGET N + AN + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3Pl BA
 MAP:TAACTObvR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(*-1C TA + 4Sg/Pl BARRIER V OR CLB) ;
 MAP:TAACTObvL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C TA + 4Sg/Pl BARRIER V OR CLB) ;
 
-MAP:TApeyakActR @<ACTOR TARGET ("pêyak") IF (NOT 0 @<ACTOR)(*-1 TA + VSg BARRIER V OR CLB) ;
-MAP:TApeyakActL @ACTOR> TARGET ("pêyak") IF (NOT 0 @ACTOR>)(*1 TA + VSg BARRIER V OR CLB) ;
-
 ##MAP:AITIACTorR @<ACTOR TARGET N + AN IF (*-1 (AI 3) OR (TI 3) BARRIER CLB OR CLB) ;
 
 ##INTERROGATIVE
@@ -430,9 +430,6 @@ MAP:AITIACTPlL @ACTOR> TARGET N + AN + Pl IF  (NOT 0 Loc)(*1 AI + 3Pl OR TI + 3P
 
 MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(*-1C AI + 4Sg/Pl OR TI + 4Sg/Pl BARRIER V OR CLB) ;
 MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C AI + 4Sg/Pl OR TI + 4Sg/Pl BARRIER V OR CLB) ;
-
-MAP:TAkahkiyawActR @<ACTOR TARGET ("kahkiyaw") IF (NOT *0 @<ACTOR)(NOT *0 @<OBL)(*-1 TA + VPl BARRIER V OR CLB) ;
-MAP:TAkahkiyawActL @ACTOR> TARGET ("kahkiyaw") IF (NOT *0 @ACTOR>)(NOT *0 @<ACTOR)(*1 TA + VPl BARRIER V OR CLB) ;
 
 #TI Goals INANIMATE NOUNS
 MAP:TIGOAL @<GOAL TARGET N + IN IF (NOT 0 Loc)(*-1 TI BARRIER V OR CLB) ;
@@ -546,10 +543,69 @@ MAP:LocVL  @V> TARGET N + InLoc IF (*1 V BARRIER CLB)(NOT 1 PUNCT) ;
 ##MAP:INSNOUN @<INS TARGET N IF (NOT 0 ABSN LINK *-1 AI OR TI OR TA BARRIER CLB) (NOT 0 Prop) (NOT 0 @<GOAL);
 ##MAP:INSNOUN @INS> TARGET N IF (NOT 0 ABSN LINK *1 AI OR TI OR TA  BARRIER CLB) (NOT 0 Prop) (NOT 0 @GOAL>);
 
-##quantifiers
-MAP:QuantN @Quant-N> TARGET Quant IF (1 N) ;
+MAP:Quantkikway @Quant-N> TARGET ("kahkiyaw") IF (1 ("kîkway")) ;
+
+MAP:QuantkahkiyawPron @Quant-N> TARGET ("kahkiyaw") IF (1 Pron + Pl) ;
+MAP:QuantkahkiyawPron @<Quant-N TARGET ("kahkiyaw") IF (-1 Pron + Pl) ;
+MAP:QuantkahkiyawPron @Quant-N> TARGET ("kahkiyaw") IF (1 Pron + Obv) ;
+MAP:QuantkahkiyawPron @<Quant-N TARGET ("kahkiyaw") IF (-1 Pron + Obv) ;
+MAP:QuantkahkiyawPron @Quant-N> TARGET ("kahkiyaw") IF (1 Pron OR Ipc)(2 Pron + Pl) ;
+MAP:QuantkahkiyawPron @Quant-N> TARGET ("kahkiyaw") IF (1 Pron OR Ipc)(2 N + Pl) ;
+
+MAP:QuantkahkiyawN @Quant-N> TARGET ("kahkiyaw") IF (1 N + Pl) ;
+MAP:QuantkahkiyawN @<Quant-N TARGET ("kahkiyaw") IF (-1 N + Pl) ;
+MAP:QuantkahkiyawN @Quant-N> TARGET ("kahkiyaw") IF (1 N + Obv) ;
+MAP:QuantkahkiyawN @<Quant-N TARGET ("kahkiyaw") IF (-1 N + Obv) ;
+
+MAP:QuantatihtPron @Quant-N> TARGET ("âtiht") IF (1 Pron + Pl) ;
+MAP:QuantatihtPron @<Quant-N TARGET ("âtiht") IF (-1 Pron + Pl) ;
+MAP:QuantatihtPron @Quant-N> TARGET ("âtiht") IF (1 Pron + Obv) ;
+MAP:QuantatihtPron @<Quant-N TARGET ("âtiht") IF (-1 Pron + Obv) ;
+
+MAP:QuantatihtN @Quant-N> TARGET ("âtiht") IF (1 N + Pl) ;
+MAP:QuantatihtN @<Quant-N TARGET ("âtiht") IF (-1 N + Pl) ;
+MAP:QuantatihtN @Quant-N> TARGET ("âtiht") IF (1 N + Obv) ;
+MAP:QuantatihtN @<Quant-N TARGET ("âtiht") IF (-1 N + Obv) ;
+
+#peyak and kahkiyaw as actors
+
+MAP:TAkahkiyawActR @<GOAL TARGET ("kahkiyaw") IF (NOT *0 @<GOAL BARRIER CLB)(*-1 TA + VPlO BARRIER V OR CLB) ;
+MAP:TAkahkiyawActL @GOAL> TARGET ("kahkiyaw") IF (NOT *0 @GOAL> BARRIER CLB)(*1 TA + VPlO BARRIER V OR CLB) ;
+
+MAP:AITIpeyakActR @<ACTOR TARGET ("pêyak") IF (NOT *0 @<ACTOR BARRIER CLB)(*-1 AI + VSg OR TI + VSg BARRIER V OR CLB) ;
+MAP:AITIpeyakActL @ACTOR> TARGET ("pêyak") IF (NOT *0 @ACTOR> BARRIER CLB)(*1 AI + VSg OR TI + VSg BARRIER V OR CLB) ;
+
+MAP:AITIkahkiyawActR @<ACTOR TARGET ("kahkiyaw") IF (NOT *0 @<ACTOR BARRIER CLB)(*-1 AI + VPl OR TI + VPl BARRIER V OR CLB) ;
+MAP:AITIkahkiyawActL @ACTOR> TARGET ("kahkiyaw") IF (NOT *0 @ACTOR> BARRIER CLB)(*1 AI + VPl OR TI + VPl BARRIER V OR CLB) ;
+
+MAP:TIpeyakActR @<GOAL TARGET ("pêyak") IF (NOT *0 @<GOAL BARRIER CLB)(*-1 TI BARRIER V OR CLB) ;
+MAP:TIpeyakActL @GOAL> TARGET ("pêyak") IF (NOT *0 @GOAL> BARRIER CLB)(*1 TI BARRIER V OR CLB) ;
+
+MAP:TIkahkiyawActR @<GOAL TARGET ("kahkiyaw") IF (NOT *0 @<GOAL BARRIER CLB)(*-1 TI BARRIER V OR CLB) ;
+MAP:TIkahkiyawActL @GOAL> TARGET ("kahkiyaw") IF (NOT *0 @GOAL> BARRIER CLB)(*1 TI BARRIER V OR CLB) ;
+
+MAP:IIpeyakActR @<ACTOR TARGET ("pêyak") IF (NOT *0 @<ACTOR BARRIER CLB)(*-1 VII + VSg BARRIER V OR CLB) ;
+MAP:IIpeyakActL @ACTOR> TARGET ("pêyak") IF (NOT *0 @ACTOR> BARRIER CLB)(*1 VII + VSg BARRIER V OR CLB) ;
+
+MAP:IIkahkiyawActR @<ACTOR TARGET ("kahkiyaw") IF (NOT *0 @<ACTOR BARRIER CLB)(*-1 VII + VPl BARRIER V OR CLB) ;
+MAP:IIkahkiyawActL @ACTOR> TARGET ("kahkiyaw") IF (NOT *0 @ACTOR> BARRIER CLB)(*1 VII + VPl BARRIER V OR CLB) ;
+
+MAP:TAkahkiyawActR @<ACTOR TARGET ("kahkiyaw") IF (NOT *0 @<ACTOR BARRIER CLB)(NOT *0 @<OBL)(*-1 TA + VPl BARRIER V OR CLB) ;
+MAP:TAkahkiyawActL @ACTOR> TARGET ("kahkiyaw") IF (NOT *0 @ACTOR> BARRIER CLB)(NOT *0 @<ACTOR)(*1 TA + VPl BARRIER V OR CLB) ;
+
+MAP:TApeyakActR @<ACTOR TARGET ("pêyak") IF (NOT *0 @<ACTOR BARRIER CLB)(*-1 TA + VSg BARRIER V OR CLB) ;
+MAP:TApeyakActL @ACTOR> TARGET ("pêyak") IF (NOT *0 @ACTOR> BARRIER CLB)(*1 TA + VSg BARRIER V OR CLB) ;
+
+#quantifiers
+MAP:QuantN @Quant-N> TARGET Quant IF (1 N)(NOT 1 Loc) ;
+
 MAP:QuantV @Quant-V> TARGET Quant IF (1 V) ;
 MAP:QuantV @<Quant-V TARGET Quant IF (-1 V) ;
+
+MAP:Quantiyikohk @Quant-V> TARGET (".*yikohk"r) IF (0 Quant)(*1 V BARRIER CLB) ;
+MAP:Quantiyikohk @<Quant-V TARGET (".*yikohk"r) IF (0 Quant)(*-1 V BARRIER CLB) ;
+MAP:Quantmitoni @Quant-V> TARGET ("mitoni") IF (*1 V BARRIER CLB) ;
+MAP:Quantmistahi @Quant-V> TARGET ("mistahi") IF (*1 V BARRIER CLB) ;
 
 ##OBLIQUES
 
@@ -559,32 +615,6 @@ MAP:OBL @<OBL TARGET N + AN + Sg IF (NOT 0 Loc)(*-1 AI + 3Pl OR TI + 3Pl OR AI +
 MAP:OBL @<OBL TARGET N + AN + Pl IF (NOT 0 Loc)(*-1 AI + 3Sg OR TI + 3Sg OR AI + non3 OR TI + non3 BARRIER V OR CLB) ;
 MAP:OBL @OBL> TARGET N + AN + Sg IF (NOT 0 Loc)(*1 AI + 3Pl OR TI + 3Pl OR AI + non3 OR TI + non3 BARRIER V OR CLB) ;
 MAP:OBL @OBL> TARGET N + AN + Pl IF (NOT 0 Loc)(*1 AI + 3Sg OR TI + 3Sg OR AI + non3 OR TI + non3 BARRIER V OR CLB) ;
-
-##peyak and kahkiyaw as actors
-
-MAP:TAkahkiyawActR @<GOAL TARGET ("kahkiyaw") IF (NOT *0 @<GOAL)(NOT *0 @<OBL)(*-1 TA + VPlO BARRIER V OR CLB) ;
-MAP:TAkahkiyawActL @GOAL> TARGET ("kahkiyaw") IF (NOT *0 @GOAL>)(NOT *0 @<OBL)(*1 TA + VPlO BARRIER V OR CLB) ;
-
-MAP:AITIpeyakActR @<ACTOR TARGET ("pêyak") IF (NOT *0 @<ACTOR)(*-1 AI + VSg OR TI + VSg BARRIER V OR CLB) ;
-MAP:AITIpeyakActL @ACTOR> TARGET ("pêyak") IF (NOT *0 @ACTOR>)(*1 AI + VSg OR TI + VSg BARRIER V OR CLB) ;
-
-MAP:AITIkahkiyawActR @<ACTOR TARGET ("kahkiyaw") IF (NOT *0 @<ACTOR)(*-1 AI + VPl OR TI + VPl BARRIER V OR CLB) ;
-MAP:AITIkahkiyawActL @ACTOR> TARGET ("kahkiyaw") IF (NOT *0 @ACTOR>)(*1 AI + VPl OR TI + VPl BARRIER V OR CLB) ;
-
-MAP:TIpeyakActR @<GOAL TARGET ("pêyak") IF (NOT *0 @<GOAL)(*-1 TI BARRIER V OR CLB) ;
-MAP:TIpeyakActL @GOAL> TARGET ("pêyak") IF (NOT *0 @GOAL>)(*1 TI BARRIER V OR CLB) ;
-
-MAP:TIkahkiyawActR @<GOAL TARGET ("kahkiyaw") IF (NOT 0 @<GOAL)(*-1 TI BARRIER V OR CLB) ;
-MAP:TIkahkiyawActL @GOAL> TARGET ("kahkiyaw") IF (NOT 0 @GOAL>)(*1 TI BARRIER V OR CLB) ;
-
-MAP:IIpeyakActR @<ACTOR TARGET ("pêyak") IF (NOT *0 @<ACTOR)(*-1 VII + VSg BARRIER V OR CLB) ;
-MAP:IIpeyakActL @ACTOR> TARGET ("pêyak") IF (NOT *0 @ACTOR>)(*1 VII + VSg BARRIER V OR CLB) ;
-
-MAP:IIkahkiyawActR @<ACTOR TARGET ("kahkiyaw") IF (NOT *0 @<ACTOR)(*-1 VII + VPl BARRIER V OR CLB) ;
-MAP:IIkahkiyawActL @ACTOR> TARGET ("kahkiyaw") IF (NOT *0 @ACTOR>)(*1 VII + VPl BARRIER V OR CLB) ;
-
-
-
 
 
 ##MAP @? (?) ;
