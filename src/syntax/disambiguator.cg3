@@ -402,7 +402,7 @@ LIST NEG = "namôya" "namôy" "môya" "môy" "êkâwiya" "kâwiya" "êkâya" "ê
 
 LIST TEMP = "ispî" "êkospî" "tânispî" "ispîhk" "êkospîhk" "tânispîhk" "kayâs" "anohc" "mêkwâc" "kêtahtawê" "kîtahtawê" "anohcihkê" "ispîhci" "sâsay" "âsay" "êkwayâk" "pitamâ" "itâp" "mwêhci" "pâtimâ" "pêci-nâway" "êkwêyâk" "aspin" "kayâsês" "okâsikâk" "wêskacês" "aciyaw" "iskwêyâc" "kinwês" "kinwêsk" "kinwêsis" "kisik" "kâh-kinwês" "kâkikê" "kîhtwâm" "mayaw" "mâmâwaci-kayâs" "mâtayak" "nici" "nistam" "nôhtaw" "pêskis" "pêyakwâw" "tahtwâw" "tahtwayak" "tânitahtwâw" "âstamispîhk" "êkwêyâc" "awasi-otâkosîhk" "awasi-tipiskohk" "kihci-awasi-otâkosîhk" "awasi-piponohk" "kayâhtê" "maywês" "maywêsk" "mwayês" "mâmwayês" "nîstamik" "awasi-tipiskâki" "awasi-wâpahki" "tipiskohk" "otâkosîhk" "tipiskâki" "wâpahki" "mwêstas" "nîpâ-tipisk" "pôsko-kisik" "pôsko-pîsim" "kâpê-tipisk" "pêyak-tipiskâw" "pêyako-tipiskâw" "tahto-tipiskâw" "tipisk" "têpiskâk" "kâpê-kisik" "tahto-kîsikâw" "otâkosiki" "otâkosî" "kisêpâyâki" "kêkisêp" "kîkisêp" "kîkisêpâ" "kîkisêpâki" "pâmwayês" "miyâskam" "miyoskamikohk" "miyoskamiki" "miyoskamîhk" "sîkwanohk" "takwâkiki" "takwâkohk" "kapê-pipon" "mêsakwanipipon" "pipohki" "piponohk" "awasi-nîpinohk" "kapê-nîpin" "nîpihki" "nîpinohk" "awasitê" "âstamitê" "wîpac" "wîpat" "kîpa" "pwâstâw" "pâtos" "wîhkâcîs" "ici" "kîkisêpâyâyiki" ;
 
-LIST QUANT = "mihcêtwâw" "mihcêti" "âtiht" "mâwaci" "mâh-mâwaci" "mâmâwaci" "mowac" "iyikohk" "mihcêt" "mihcêcis" "mistahi" "okistakêwi" "tahto" "êko-tahto" "tânitahto" "tânimatahto" "tahtw-âya" "êkwayikohk" "nahiyikohk" "êkoyikohk" "tâniyikohk" "kahkiyaw" ;
+LIST QUANT = "mihcêtwâw" "mihcêti" "âtiht" "mâwaci" "mâh-mâwaci" "mâmâwaci" "mowac" "iyikohk" "mihcêt" "mihcêcis" "mistahi" "okistakêwi" "tahto" "êko-tahto" "tânitahto" "tânimatahto" "tahtw-âya" "êkwayikohk" "nahiyikohk" "êkoyikohk" "tâniyikohk" "tânimayikohk" "kahkiyaw" "mitoni" "pikoyikohk" ;
 
 
 # Sets
@@ -1222,7 +1222,10 @@ SELECT:INkikway IN IF (0 KIKWAY LINK -1 ("kahkiyaw") OR ("nanâtohk")) ;
 SELECT:ANkikway AN IF (0 KIKWAY LINK 1 N + AN) ;
 REMOVE:kekway Pron IF (0 ("kêkway")) ;
 SELECT:INkekway IN IF (0 ("kêkway") LINK *0 TI) ;
+
+#some idiosyncratic forms
 SELECT:IPCayis Ipc IF (0 ("ayis")) ;
+SELECT:IPCayi Ipc IF (0C ("<ayi>")) ;
 
 #ayiwinisa is a mess
 SELECT:PLayiwinisa Pl IF (0 ("ayiwinisa") ) ;
