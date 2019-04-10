@@ -9,10 +9,11 @@
 
 
 
+
  *  y2:0       epenthetic joiner in reduplication of vowel-initial stems
  *  y3:0       epenthetic joiner in reduplication of vowel-initial stems
- *  %^DUPL1:0   Reduplication consonant place holder 
- *  %^DUPL2:0   Reduplication consonant place holder 
+ *  d1:0   Reduplication consonant place holder 
+ *  d2:0   Reduplication consonant place holder 
 
  *  %^EGLOT:0    Epenthetic -h- place holder
 
@@ -140,10 +141,10 @@
 * __ê^EGLOT<acimo>t __
 * __êh0acimo0t __
 
-* __ê^EGLOT<^DUPL1ay2<acimo>t __
+* __ê^EGLOT<d1ay2<acimo>t __
 * __êh00ay0acimo0t __
 
-* __ê^EGLOT<^DUPL2ay3^DUPL1âh<acimo>t __
+* __ê^EGLOT<d2ay3d1âh<acimo>t __
 * __êh00ay0âh0acimo0t __
 
 
@@ -272,22 +273,22 @@ __ReduplY2Rule__
 
 __ReduplY3Rule__
 
-* __^DUPL1ay2-<nipâw __
+* __d1ay2-<nipâw __
 * __na0-0nipâw __
 
-* __^DUPL1âh-<nipâw __
+* __d1âh-<nipâw __
 * __nâh-0nipâw __
 
-* __^DUPL2ay3-^DUPL1âh-<nipâw __
+* __d2ay3-d1âh-<nipâw __
 * __na0-nâh-0nipâw __
 
-* __^DUPL2ay3-^DUPL1âh-<ayâw __
+* __d2ay3-d1âh-<ayâw __
 * __0ay-0âh-0ayâw __
 
-* __^DUPL1âh-<ayâw __
+* __d1âh-<ayâw __
 * __0âh-0ayâw __
 
-* __^DUPL1ay2-<ayâw __
+* __d1ay2-<ayâw __
 * __0ay-0ayâw __
 
 INITIAL CHANGE
