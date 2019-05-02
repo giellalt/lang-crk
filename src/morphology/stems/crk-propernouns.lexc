@@ -17,14 +17,6 @@
 !English names (with English spelling) should be added to 
 ! giella-shared/eng/src/morphology/stems/eng-propernouns.lexc
 
-
-LEXICON prop
-+N+Prop+Sg: # ;
-
-LEXICON iprop
-+N+Prop+Sg:iy # ;
-+N+Prop+Sg+Obv:îwa # ;
-
 LEXICON ProperNoun-crk
 cân prop "John" ;
 cân iprop "Johnny" ;
@@ -32,4 +24,3 @@ mêr iprop "Mary" ;
 Salamô prop ;
 Misti-sikâk prop ;
 Misti-kiyâsk prop ;
-
