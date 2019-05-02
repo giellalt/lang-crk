@@ -22,9 +22,12 @@
 _RESET := $(shell tput sgr0)
 _EMPH := $(shell tput setaf 6)
 
+# Concatenate by leveraging existing Makefile target. Avoids errors due to
+# missing files, and keeps the two build files syncronised wrt source files.
 crk.lexc: $(MORPHOLOGY)
 	-@echo "$(_EMPH)Concatenating LEXC code.$(_RESET)"
-	cat $^ > $@
+	cd morphology && make $(MORPHOLOGY)
+	cp -f $^ $@
 
 crk-morph.hfst: crk.lexc
 	-@echo "$(_EMPH)Compiling LEXC code.$(_RESET)"
