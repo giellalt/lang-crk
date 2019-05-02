@@ -22,5 +22,11 @@
 LEXICON ProperNounCases
 +N+Prop:%:   #  ;
 
-! vim: set ft=xfst-lexc:
+LEXICON prop
++N+Prop+Sg: # ;
 
+LEXICON iprop
++N+Prop+Sg:iy # ;
++N+Prop+Sg+Obv:îwa # ;
+
+! vim: set ft=xfst-lexc:
