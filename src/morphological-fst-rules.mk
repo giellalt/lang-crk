@@ -26,8 +26,7 @@ _EMPH := $(shell tput setaf 6)
 # missing files, and keeps the two build files syncronised wrt source files.
 crk.lexc: $(MORPHOLOGY)
 	-@echo "$(_EMPH)Concatenating LEXC code.$(_RESET)"
-	cd morphology && make $(MORPHOLOGY)
-	cp -f $^ $@
+	cat $^ > $@
 
 crk-morph.hfst: crk.lexc
 	-@echo "$(_EMPH)Compiling LEXC code.$(_RESET)"
