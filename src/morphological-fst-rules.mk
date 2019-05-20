@@ -40,7 +40,7 @@ crk-normative-generator.hfst: crk-morph.hfst crk-phon.hfst
 	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers.$(_RESET)"
 	hfst-compose-intersect $^ | hfst-minimize - -o $@
 
-crk-anl-norm.hfst: crk-normative-generator.hfst
+crk-strict-analyzer.hfst: crk-normative-generator.hfst
 	-@echo "$(_EMPH)Inverting normative generator tranducer into a normative analyzer transducer.$(_RESET)"
 	hfst-invert $< -o $@
 
@@ -48,7 +48,7 @@ crk-orth.hfst: $(ORTHOGRAPHY)
 	-@echo "$(_EMPH)Compiling regular expression implementing spelling-relaxation.$(_RESET)"
 	hfst-regexp2fst -S -i $< -o $@
 
-crk-descriptive-analyzer.hfst: crk-orth.hfst crk-anl-norm.hfst
+crk-descriptive-analyzer.hfst: crk-orth.hfst crk-strict-analyzer.hfst
 	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer transducer to create descriptive analyzer.$(_RESET)"
 	hfst-compose -F -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
 
