@@ -1,0 +1,112 @@
+# Copyright © 2015–2019 Alberta Language Technology Lab (ALTLab)
+# http://altlab.artsrn.ualberta.ca/
+#
+# This program is free software; you can redistribute and/or modify
+# this file under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+# Plains Cree long vowel variation.
+
+i (->) %',, # short-i elision
+â (->) {ā},, # a + combining macron U+0304
+ê (->) {ē},, # e + combining macron U+0304
+î (->) {ī},, # i + combining macron U+0304
+ô (->) {ō},, # o + combining macron U+0304
+
+Â (->) {Ā},, # A + combining macron U+0304
+Ê (->) {Ē},, # E + combining macron U+0304
+Î (->) {Ī},, # I + combining macron U+0304
+Ô (->) {Ō},, # O + combining macron U+0304
+
+â (->) ā,, # a macron
+ê (->) ē,, # e macron
+î (->) ī,, # i macron
+ô (->) ō,, # o macron
+
+Â (->) Ā,, # A macron
+Ê (->) Ē,, # E macron
+Î (->) Ī,, # I macron
+Ô (->) Ō,, # O macron
+
+a (->) Â,, # THESE to be deleted when the SoMe variant is running
+e (->) Ê,, # THESE to be deleted when the SoMe variant is running
+i (->) Î,, # THESE to be deleted when the SoMe variant is running
+o (->) Ô,, # THESE to be deleted when the SoMe variant is running
+
+â (->) {â},, # a + combining circumflex accent U+0302
+ê (->) {ê},, # e + combining circumflex accent U+0302
+î (->) {î},, # i + combining circumflex accent U+0302
+ô (->) {ô},, # o + combining circumflex accent U+0302
+
+Â (->) {Â},, # A + combining circumflex accent U+0302
+Ê (->) {Ê},, # E + combining circumflex accent U+0302
+Î (->) {Î},, # I + combining circumflex accent U+0302
+Ô (->) {Ô},, # O + combining circumflex accent U+0302
+
+â (->) a,, # THESE to be deleted when the SoMe variant is running
+ê (->) e,, # THESE to be deleted when the SoMe variant is running
+î (->) i,, # THESE to be deleted when the SoMe variant is running
+ô (->) o,, # THESE to be deleted when the SoMe variant is running
+
+# NS 152 materials consistantly write some vowels as long where Arok's write them as short. E.G. NS 152 give 'askîy' and Arok gives 'askiy.'
+
+â (->) A,, # THESE to be deleted when the SoMe variant is running
+ê (->) E,, # THESE to be deleted when the SoMe variant is running
+î (->) I,, # THESE to be deleted when the SoMe variant is running
+ô (->) O,,  # THESE to be deleted when the SoMe variant is running
+
+a (->) A,, # THESE to be deleted when the SoMe variant is running
+e (->) E,, # THESE to be deleted when the SoMe variant is running
+i (->) I,, # THESE to be deleted when the SoMe variant is running
+o (->) O,,  # THESE to be deleted when the SoMe variant is running
+
+a (->) â,, # THESE to be deleted when the SoMe variant is running
+e (->) ê,, # THESE to be deleted when the SoMe variant is running
+i (->) î,, # THESE to be deleted when the SoMe variant is running
+o (->) ô,, # THESE to be deleted when the SoMe variant is running
+
+# Dealing with spaces instead of hyphens as separators in multipart words
+
+[ %- ] (->) [ %- ]+,,  # Multiple hyphens into a single hyphen
+%- (->) [ %  | %  | %  ]+,, # Multiple non-breaking or standard spaces SPACE + NBSP + NNBSP (in syllabics) to single hyphen
+
+# Dealing with English-influenced divergences from SRO,, and misspellings based on modern pronunciation
+
+k (->) g,,    # intervocalic voiced pronunciation to stops,, maybe context should be added
+t (->) d,,    # intervocalic voiced pronunciation to stops,, maybe context should be added
+c (->) j,,    # English influence on spelling <c>
+# y (->) w,,  # Mixing glides with each other
+# w (->) y,,
+
+[..] (->) h || [ a | i | o | â | ê | î | ô ] _ [ k | p | t ],,   # Excessive preaspiration, might this appear before other stops?
+h (->) 0 || [ a | i | o | â | ê | î | ô ] _ [ k | p | t ],,   # Missing preaspiration, might this appear before other stops?
+
+[ a | â ] h (->) â,,
+ê h (->) ê,,
+[ i | î ] h (->) î,,
+[ o | ô ] h (->) ô,
+
+# a h k (->) â k,,
+# a h t (->) â t,,
+â w e (->) a w ê,,
+i w (->) o w,,      # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
+o w (->) i w,,
+
+c (->) c h       # English influence on spelling <c>
+;
+
+
+# Explanation:
+# lexical side (->) input 
+# Or, in other words:
+# correct (->) in use out there
+
