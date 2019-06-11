@@ -59,37 +59,37 @@ kîkwây+Pron+Interr+Pl:kîkwâya # "what" ;
 tânitowahk+Pron+Interr+Sg:tânitowahk # "what kind" ;
 
 LEXICON Indefinite !!= @CODE@ \\
-awiyak+Pron+Indef+AN+Sg:awiyak # "someone" ; !!= @CODE@
-awiyak+Pron+Indef+AN+Pl:awiyakak # "some people" ;!!= @CODE@
+awiyak+Pron+Indef+A+Sg:awiyak # "someone" ; !!= @CODE@
+awiyak+Pron+Indef+A+Pl:awiyakak # "some people" ;!!= @CODE@
 
 LEXICON Demonstrative !!= @CODE@   \\
 !! ANIMATE \\
-awa+Pron+Dem+Prox+AN+Sg:awa # "this" ; !!= @CODE@
-awa+Pron+Dem+Prox+AN+Pl:ôki # "these" ; !!= @CODE@
+awa+Pron+Dem+Prox+A+Sg:awa # "this" ; !!= @CODE@
+awa+Pron+Dem+Prox+A+Pl:ôki # "these" ; !!= @CODE@
 
-awa+Pron+Dem+Med+AN+Sg:ana # "that" ;
-awa+Pron+Dem+Med+AN+Pl:aniki # "those" ;
+awa+Pron+Dem+Med+A+Sg:ana # "that" ;
+awa+Pron+Dem+Med+A+Pl:aniki # "those" ;
 
-awa+Pron+Dem+Dist+AN+Sg:nâha # "that yonder" ;
-awa+Pron+Dem+Dist+AN+Pl:nêki # "those yonder" ;
+awa+Pron+Dem+Dist+A+Sg:nâha # "that yonder" ;
+awa+Pron+Dem+Dist+A+Pl:nêki # "those yonder" ;
 
 !! INANIMATE \\
 
-ôma+Pron+Dem+Prox+IN+Sg:ôma # "this" ; !!= @CODE@
-ôma+Pron+Dem+Prox+IN+Pl:ôhi # "these" ; !!= @CODE@
+ôma+Pron+Dem+Prox+I+Sg:ôma # "this" ; !!= @CODE@
+ôma+Pron+Dem+Prox+I+Pl:ôhi # "these" ; !!= @CODE@
 
-ôma+Pron+Dem+Med+IN+Sg:anima # "that" ;
-ôma+Pron+Dem+Med+IN+Pl:anihi # "those" ;
+ôma+Pron+Dem+Med+I+Sg:anima # "that" ;
+ôma+Pron+Dem+Med+I+Pl:anihi # "those" ;
 
-ôma+Pron+Dem+Dist+IN+Sg:nêma # "that yonder" ;
-ôma+Pron+Dem+Dist+IN+Pl:nêhi # "those yonder" ;
+ôma+Pron+Dem+Dist+I+Sg:nêma # "that yonder" ;
+ôma+Pron+Dem+Dist+I+Pl:nêhi # "those yonder" ;
 
 ! Let us say a pronoun ôma without a noun is a definite, not a demonstrative
-ôma+Pron+Def+Prox+IN+Sg:ôma # "this one" ; !!= @CODE@
-ôma+Pron+Def+Prox+IN+Pl:ôhi # "these one" ; !!= @CODE@
+ôma+Pron+Def+Prox+I+Sg:ôma # "this one" ; !!= @CODE@
+ôma+Pron+Def+Prox+I+Pl:ôhi # "these one" ; !!= @CODE@
 
-ôma+Pron+Def+Med+IN+Sg:anima # "that one" ;
-ôma+Pron+Def+Med+IN+Pl:anihi # "those one" ;
+ôma+Pron+Def+Med+I+Sg:anima # "that one" ;
+ôma+Pron+Def+Med+I+Pl:anihi # "those one" ;
 
-ôma+Pron+Def+Dist+IN+Sg:nêma # "that yonder one" ;
-ôma+Pron+Def+Dist+IN+Pl:nêhi # "those yonder one" ;
+ôma+Pron+Def+Dist+I+Sg:nêma # "that yonder one" ;
+ôma+Pron+Def+Dist+I+Pl:nêhi # "those yonder one" ;
