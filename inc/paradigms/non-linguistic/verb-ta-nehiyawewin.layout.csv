@@ -50,17 +50,17 @@ tooltips:
          "wiya/wiyawâw (anima/anihi) → wiya": "s/he/they (further) → him/her [3rd person obviatve actor → 3rd person singular goal]"
          "wiya/wiyawâw (anima/anihi) → wiyawâw": "s/he/they (further) → them [3rd person obviative actor → 3rd person plural goal]"
          "wiya/wiyawâw (nêma/nêhi) → wiya/wiyawâw (anima/anihi)": "s/he/they (furthest) → him/her/them (further) [3rd person further obviative actor → 3rd person obviative goal]"
-         "ayiwak → niya": "someone → me [Unspecified actor → 1st person singular goal]"
-         "ayiwak → kiya": "someone → you (one) [Unspecified actor → 2nd person singular goal]"
-         "ayiwak → wiya": "someone → him/her [Unspecified actor → 3rd person singular goal]"
-         "ayiwak → wiya/wiyawâw (anima/anihi)": "someone → him/her/them (further) [Unspecified actor → 3rd person obviative goal]"
-         "ayiwak → niyanân": "someone → us [Unspecified actor → 1st person plural exclusive goal]"
-         "ayiwak → kiyanâw": "someone → you and us [Unspecified actor → 1st person plural inclusive goal]"
-         "ayiwak → kiyawâw": "someone → you (all) [Unspecified actor → 2nd person plural goal]"
-         "ayiwak → wiyawâw": "someone → them [Unspecified actor → 3rd person plural goal]"
+         "awiyak → niya": "someone → me [Unspecified actor → 1st person singular goal]"
+         "awiyak → kiya": "someone → you (one) [Unspecified actor → 2nd person singular goal]"
+         "awiyak → wiya": "someone → him/her [Unspecified actor → 3rd person singular goal]"
+         "awiyak → wiya/wiyawâw (anima/anihi)": "someone → him/her/them (further) [Unspecified actor → 3rd person obviative goal]"
+         "awiyak → niyanân": "someone → us [Unspecified actor → 1st person plural exclusive goal]"
+         "awiyak → kiyanâw": "someone → you and us [Unspecified actor → 1st person plural inclusive goal]"
+         "awiyak → kiyawâw": "someone → you (all) [Unspecified actor → 2nd person plural goal]"
+         "awiyak → wiyawâw": "someone → them [Unspecified actor → 3rd person plural goal]"
          "ê-ispayik anohc/mêkwâc/mâna": "Something is happening now [Present Tense]"
          "ê-kî-ispayik kwayâc": "Something happened earlier [Past Tense]"
-         "ayiwak pakosêyimow kâ-wî-ihkik nîkânihk": "Someone wants something to happen [Future Intentional Tense]"
+         "awiyak pakosêyimow kâ-wî-ihkik nîkânihk": "Someone wants something to happen [Future Intentional Tense]"
          "ka-ispayik nîkânihk": "Something will certainly happen [Future Definite Tense]"
          "ka-ispayik / ta-ispayik": "For something to happen [Future/Infinitive]"
          "kisik ê-ispayik": "When something happens [Future Conditional]"
@@ -131,14 +131,14 @@ tooltips:
     "wiya/wiyawâw (nêma/nêhi) → wiya/wiyawâw (anima/anihi)"	Ind+Prs+5Sg/Pl+4Sg/PlO	PV/e+*+Cnj+Prs+5Sg/Pl+4Sg/PlO
 		
 "Unspecified actor"	: "ni-/ki- itwêwin"	: "ê-/kâ- itwêwin"
-    "ayiwak → niya"	Ind+Prs+X+1SgO	PV/e+*+Cnj+Prs+X+1SgO
-    "ayiwak → kiya"	Ind+Prs+X+2SgO	PV/e+*+Cnj+Prs+X+2SgO
-    "ayiwak → wiya"	Ind+Prs+X+3SgO	PV/e+*+Cnj+Prs+X+3SgO
-    "ayiwak → wiya/wiyawâw (anima/anihi)"	Ind+Prs+X+4Sg/PlO	PV/e+*+Cnj+Prs+X+4Sg/PlO
-    "ayiwak → niyanân"	Ind+Prs+X+1PlO	PV/e+*+Cnj+Prs+X+1PlO
-    "ayiwak → kiyanâw"	Ind+Prs+X+12PlO	PV/e+*+Cnj+Prs+X+12PlO
-    "ayiwak → kiyawâw"	Ind+Prs+X+2PlO	PV/e+*+Cnj+Prs+X+2PlO
-    "ayiwak → wiyawâw"	Ind+Prs+X+3PlO	PV/e+*+Cnj+Prs+X+3PlO
+    "awiyak → niya"	Ind+Prs+X+1SgO	PV/e+*+Cnj+Prs+X+1SgO
+    "awiyak → kiya"	Ind+Prs+X+2SgO	PV/e+*+Cnj+Prs+X+2SgO
+    "awiyak → wiya"	Ind+Prs+X+3SgO	PV/e+*+Cnj+Prs+X+3SgO
+    "awiyak → wiya/wiyawâw (anima/anihi)"	Ind+Prs+X+4Sg/PlO	PV/e+*+Cnj+Prs+X+4Sg/PlO
+    "awiyak → niyanân"	Ind+Prs+X+1PlO	PV/e+*+Cnj+Prs+X+1PlO
+    "awiyak → kiyanâw"	Ind+Prs+X+12PlO	PV/e+*+Cnj+Prs+X+12PlO
+    "awiyak → kiyawâw"	Ind+Prs+X+2PlO	PV/e+*+Cnj+Prs+X+2PlO
+    "awiyak → wiyawâw"	Ind+Prs+X+3PlO	PV/e+*+Cnj+Prs+X+3PlO
 		
 "Inanimate actor"		
 		
@@ -201,7 +201,7 @@ tooltips:
     "wiya/wiyawâw (nêma/nêhi) → wiya/wiyawâw (anima/anihi)"	Ind+Prt+5Sg/Pl+4Sg/PlO	Cnj+Prt+5Sg/Pl+4Sg/PlO
 		
 		
-	    "ayiwak pakosêyimow kâ-wî-ihkik nîkânihk"	
+	    "awiyak pakosêyimow kâ-wî-ihkik nîkânihk"	
 "Speech act participants"	: "ni-/ki- itwêwin"	: "ê-/kâ- itwêwin"
     "kiya → niya"	Ind+Fut+Int+2Sg+1SgO	Cnj+Fut+Int+2Sg+1SgO
     "kiya → niyanân"	Ind+Fut+Int+2Sg+1PlO	Cnj+Fut+Int+2Sg+1PlO
