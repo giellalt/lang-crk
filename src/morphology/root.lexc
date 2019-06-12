@@ -423,6 +423,16 @@ PV/yoski+
 +WAK  	 !!= * @CODE@ tag to keep track of -wak plurals  ! REMOVE
 
 
+        !! !!Symbols that need to be escaped on the lower side (towards twolc):
+ »7     !!≈ ; @CODE@ : Literal »
+ «7     !!≈ ; @CODE@ : Literal «
+        !! {{{
+ %[%>%] !!= @CODE@ - Literal >
+ %[%<%] !!= @CODE@ - Literal <
+        !! }}}
+
+
+
 %^LOC    !!= * @CODE@  Locative ! REMOVE
 w2      !!= * @CODE@ mowêw:mow2
 t2 		!!= * @CODE@ Epenthetic -t- between person prefixes and vowel-initial stems
