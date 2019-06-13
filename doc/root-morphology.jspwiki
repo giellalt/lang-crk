@@ -81,6 +81,7 @@ Verbal MSP
  * +SgO    
  * +1PlO   
  * +2PlO   
+ * +12PlO	
  * +3PlO   
  * +PlO    
  * +4Sg/PlO  ambiguous 4th person (both Singular and Plural)
@@ -138,6 +139,16 @@ morphophonological structure
  * %> 		  suffix border
  * %< 		  prefix border
  * +WAK  	  tag to keep track of -wak plurals  ! REMOVE
+
+
+!!Symbols that need to be escaped on the lower side (towards twolc):
+ ; »7 : Literal »
+ ; «7 : Literal «
+{{{
+  %[%>%]  - Literal >
+  %[%<%]  - Literal <
+}}}
+
 
 
  * %^LOC      Locative ! REMOVE
@@ -257,8 +268,7 @@ End of new and all Multichar_Symbols
  * Propernouns ;        
  * Particles ;          
  * Numerals ;           
- * Punctuation ;        
- * Symbols     ;        
+ * Abbreviation ;       
  * Punctuation ;        
  * Symbols     ;        
 
