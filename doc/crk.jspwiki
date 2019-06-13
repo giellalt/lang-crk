@@ -92,6 +92,7 @@ Verbal MSP
  * +SgO    
  * +1PlO   
  * +2PlO   
+ * +12PlO	
  * +3PlO   
  * +PlO    
  * +4Sg/PlO  ambiguous 4th person (both Singular and Plural)
@@ -149,6 +150,16 @@ morphophonological structure
  * %> 		  suffix border
  * %< 		  prefix border
  * +WAK  	  tag to keep track of -wak plurals  ! REMOVE
+
+
+!!Symbols that need to be escaped on the lower side (towards twolc):
+ ; »7 : Literal »
+ ; «7 : Literal «
+{{{
+  %[%>%]  - Literal >
+  %[%<%]  - Literal <
+}}}
+
 
 
  * %^LOC      Locative ! REMOVE
@@ -268,8 +279,7 @@ End of new and all Multichar_Symbols
  * Propernouns ;        
  * Particles ;          
  * Numerals ;           
- * Punctuation ;        
- * Symbols     ;        
+ * Abbreviation ;       
  * Punctuation ;        
  * Symbols     ;        
 
@@ -1148,25 +1158,25 @@ There are more pronoums to be added here.
  awîna+Pron+Interr+Pl:awîniki # "who" ;
 
  LEXICON Indefinite  \\
- awiyak+Pron+Indef+AN+Sg:awiyak # "someone" ; 
- awiyak+Pron+Indef+AN+Pl:awiyakak # "some people" ;
+ awiyak+Pron+Indef+A+Sg:awiyak # "someone" ; 
+ awiyak+Pron+Indef+A+Pl:awiyakak # "some people" ;
 
  LEXICON Demonstrative    \\
 ANIMATE \\
- awa+Pron+Dem+Prox+AN+Sg:awa # "this" ; 
- awa+Pron+Dem+Prox+AN+Pl:ôki # "these" ; 
+ awa+Pron+Dem+Prox+A+Sg:awa # "this" ; 
+ awa+Pron+Dem+Prox+A+Pl:ôki # "these" ; 
 
 
 
 INANIMATE \\
 
- ôma+Pron+Dem+Prox+IN+Sg:ôma # "this" ; 
- ôma+Pron+Dem+Prox+IN+Pl:ôhi # "these" ; 
+ ôma+Pron+Dem+Prox+I+Sg:ôma # "this" ; 
+ ôma+Pron+Dem+Prox+I+Pl:ôhi # "these" ; 
 
 
 
- ôma+Pron+Def+Prox+IN+Sg:ôma # "this one" ; 
- ôma+Pron+Def+Prox+IN+Pl:ôhi # "these one" ; 
+ ôma+Pron+Def+Prox+I+Sg:ôma # "this one" ; 
+ ôma+Pron+Def+Prox+I+Pl:ôhi # "these one" ; 
 
 
 Punctuation marks 
