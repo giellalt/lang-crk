@@ -29,6 +29,7 @@ generator_file=./../../../src/generator-gt-norm
 analyser_file=./../../../src/analyser-gt-norm
 
 ### out ###
+# Temporary files:
 ii_verb_lemmas=./filtered-ii-${POS}.txt
 ti_verb_lemmas=./filtered-ti-${POS}.txt
 ai_verb_lemmas=./filtered-ai-${POS}.txt
@@ -38,6 +39,7 @@ tipl_verb_lemmas=./filtered-tipl-${POS}.txt
 aipl_verb_lemmas=./filtered-aipl-${POS}.txt
 tapl_verb_lemmas=./filtered-tapl-${POS}.txt
 all_verb_lemmas=./filtered-all-${POS}.txt
+# Result files, will get filename suffix programmatically further down:
 generated_lemmas=./generated-${POS}
 result_file=missing_${POS}_lemmas
 gen_result_file=generated_missing_${POS}_lemmas
