@@ -24,7 +24,7 @@ hfst-invert crk-gen-norm.hfst -o crk-anl-norm.hfst
 
 echo 'Compiling regular expression implementing spelling-relaxation.' ;
 
-hfst-regexp2fst -S -i $GTLANG_crk/src/orthography/spellrelax.regex -o crk-orth.hfst
+hfst-regexp2fst -S -i $GTLANG_crk/src/orthography/spellrelax.regex | hfst-invert -o crk-orth.hfst
 
 echo 'Composing spelling relaxation transducer with normative analyser transducer to create descriptive analyser.'
 
