@@ -81,9 +81,16 @@ o (->) ô, # THESE to be deleted when the SoMe variant is running
 
 # Dealing with English-influenced divergences from SRO, and misspellings based on modern pronunciation
 
+# Vowels
+[ i | î ] (->) {ee},
+[ a | â ] (->) u,
+
+# Consonants
 k (->) g,   # intervocalic voiced pronunciation to stops, maybe context should be added (including <c> overgenerates)
 t (->) d,   # intervocalic voiced pronunciation to stops, maybe context should be added
 c (->) j,   # English influence on spelling <c>
+
+# Glides
 # y (->) w, # Mixing glides with each other -> ruled out as excessively productive
 # w (->) y,
 
@@ -93,7 +100,7 @@ c (->) {ts},,	   # Another English influence on spelling <c>
 [..] (->) h || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],, # Excessive preaspiration before stops
 h (->) 0 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],,    # Missing preaspiration before stops
 
-# {âwe} (->) {awê},  # Specific rule already covered by general voewl length rules 
+# {âwe} (->) {awê},  # Specific rule already covered by general vowel length rules 
 
 {iw} (->) {ow},      # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
 {ow} (->) {iw} 
