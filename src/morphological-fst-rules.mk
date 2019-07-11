@@ -30,7 +30,7 @@ crk.lexc: $(MORPHOLOGY)
 
 crk-morph.hfst: crk.lexc
 	-@echo "$(_EMPH)Compiling LEXC code.$(_RESET)"
-	hfst-lexc $< -o $@
+	hfst-lexc --format=openfst-tropical --output=$@ $<
 
 crk-phon.hfst: $(PHONOLOGY)
 	-@echo "$(_EMPH)Compiling TWOLC code.$(_RESET)"
