@@ -37,16 +37,17 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! POS
 
-+N	        !!= * @CODE@
-+V	        !!= * @CODE@
-+Prop	        !!= * @CODE@
++N	        !!= * @CODE@ = Noun
++V	        !!= * @CODE@ = Verb
++Ipc		!!= * @CODE@ = Indeclinable Particle
++Prop       !!= * @CODE@
 +Adv        !!= * @CODE@
-+CC	        !!= * @CODE@
-+CS	        !!= * @CODE@
++CC         !!= * @CODE@
++CS         !!= * @CODE@
 +Interj     !!= * @CODE@
 +Pron       !!= * @CODE@
 +Num        !!= * @CODE@
-+Arab        !!= * @CODE@
++Arab       !!= * @CODE@
 +Rom        !!= * @CODE@
 +PUNCT      !!= * @CODE@ = punctuation symbols
 +LEFT       !!= * @CODE@ = the left part of a paired punctuation symbol
@@ -54,19 +55,26 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +CLB        !!= * @CODE@ = clause boundary symbols
 +Symbol     !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
 
+!! Nominal morphology
+
 +Loc        !!= * @CODE@ Locative
-+Obv
++Obv        !!= * @CODE@ Obviative
 
-+Dim     !!= * @CODE@ Diminutive
++Dim        !!= * @CODE@ Diminutive
 
-+Ipc		!!=  * @CODE@ Indeclinable Particle
+!! Particles
+
+
++Def	    !!= * @CODE@ This is the intransitive demonstrative, i.e. the definite.
++Indef      !!= * @CODE@ Indefinite
 
 +Dem        !!= * @CODE@ Demonstrative
-+Def	    !!= * @CODE@ This is the intransitive demonstrative, i.e. the definite.
 +Prox	    !!= * @CODE@ Demonstrative Proximate
 +Med	    !!= * @CODE@ Demonstrative Medial
 +Dist	    !!= * @CODE@ Demonstrative Distal
-+QDL
++QDL        !! TODO: Is this ever used? What for?
+
++Interr     !!= * @CODE@ Interrogative (who/whose/what/what kind)
 
 +Foc	    !!= * @CODE@ Focus particle
 
@@ -76,8 +84,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Prt  !!= * @CODE@
 +Prf  !!= * @CODE@
 +Cnj  !!= * @CODE@
-+Int  !!= * @CODE@ This tag is for the Future Intentional
-+Def  !!= * @CODE@ This tag is for the Future Definite
++Int  !!= * @CODE@ Future Intentional
++Def  !!= * @CODE@ Future Definite (TODO: okay to overlap with particle tag of the same name?)
 
 +Ind  !!= * @CODE@ Indicative, aka Independent
 +Imp  !!= * @CODE@ Imperative, consider deleting +Imp tag
@@ -148,7 +156,8 @@ RdplS+ !!= * @CODE@ Reduplication Type 2 (Strong)
 +D		 !!= * @CODE@ dependent noun
 
 +Incl    !!= * @CODE@ me too, etc.
-+Qst     !!= * @CODE@ yes-no question particle ci
++Qst     !!= * @CODE@ yes-no question particle; cî
++Neg     !!= * @CODE@ negation; [na]môy[a].
 
 !! Preverbs
 
