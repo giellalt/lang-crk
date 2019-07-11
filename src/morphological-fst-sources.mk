@@ -20,7 +20,6 @@
 MORPHOLOGY = morphology/root.lexc \
   morphology/affixes/noun_affixes.lexc \
   morphology/affixes/propernouns.lexc \
-  morphology/affixes/symbols.lexc \
   morphology/affixes/verb_affixes.lexc \
   morphology/stems/abbreviations.lexc \
   morphology/stems/noun_stems.lexc \

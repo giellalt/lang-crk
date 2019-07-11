@@ -4,7 +4,7 @@
 
 echo 'Concatenating LEXC files.' ;
 
-cat $GTLANG_crk/src/morphology/root.lexc $GTLANG_crk/src/morphology/affixes///noun_affixes.lexc $GTLANG_crk/src/morphology/affixes///propernouns.lexc $GTLANG_crk/src/morphology/affixes///verb_affixes.lexc $GTLANG_crk/src/morphology/stems///abbreviations.lexc $GTLANG_crk/src/morphology/stems///crk-propernouns.lexc $GTLANG_crk/src/morphology/stems///noun_stems.lexc $GTLANG_crk/src/morphology/stems///numerals.lexc $GTLANG_crk/src/morphology/stems///particles.lexc $GTLANG_crk/src/morphology/stems///pronouns.lexc $GTLANG_crk/src/morphology/stems///verb_stems.lexc > crk.lexc
+cat src/morphology/root.lexc src/morphology/affixes/noun_affixes.lexc src/morphology/affixes/propernouns.lexc src/morphology/affixes/verb_affixes.lexc src/morphology/stems/abbreviations.lexc src/morphology/stems/crk-propernouns.lexc src/morphology/stems/noun_stems.lexc src/morphology/stems/numerals.lexc src/morphology/stems/particles.lexc src/morphology/stems/pronouns.lexc src/morphology/stems/verb_stems.lexc > crk.lexc
 
 echo 'Compiling LEXC code.' ;
 
