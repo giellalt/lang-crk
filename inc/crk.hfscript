@@ -4,7 +4,7 @@
 
 echo 'Concatenating LEXC files.' ;
 
-cat src/morphology/root.lexc src/morphology/affixes/noun_affixes.lexc src/morphology/affixes/propernouns.lexc src/morphology/affixes/verb_affixes.lexc src/morphology/stems/abbreviations.lexc src/morphology/stems/crk-propernouns.lexc src/morphology/stems/noun_stems.lexc src/morphology/stems/numerals.lexc src/morphology/stems/particles.lexc src/morphology/stems/pronouns.lexc src/morphology/stems/verb_stems.lexc > crk.lexc
+cat $GTLANG_crk/src/morphology/root.lexc $GTLANG_crk/src/morphology/affixes///noun_affixes.lexc $GTLANG_crk/src/morphology/affixes///propernouns.lexc $GTLANG_crk/src/morphology/affixes///verb_affixes.lexc $GTLANG_crk/src/morphology/stems///abbreviations.lexc $GTLANG_crk/src/morphology/stems///crk-propernouns.lexc $GTLANG_crk/src/morphology/stems///noun_stems.lexc $GTLANG_crk/src/morphology/stems///numerals.lexc $GTLANG_crk/src/morphology/stems///particles.lexc $GTLANG_crk/src/morphology/stems///pronouns.lexc $GTLANG_crk/src/morphology/stems///verb_stems.lexc > crk.lexc
 
 echo 'Compiling LEXC code.' ;
 
@@ -32,9 +32,21 @@ hfst-compose -F -1 crk-orth.hfst -2 crk-anl-norm.hfst | hfst-minimize - -o crk-a
 
 # hfst-invert crk-desc-anl.hfst -o crk-desc-gen.hfst
 
+echo 'Compiling filter to remove non-normative forms with +Err/Orth tag.' ;
+
+echo '~[ $[ "+Err/Orth" ] ] ;' | hfst-regexp2fst -S -o crk-err-filter.hfst
+
+echo 'Removing lexicalised non-normative forms from normative analyzer and generator.' ;
+
+hfst-compose -F -1 crk-err-filter.hfst -2 crk-gen-norm.hfst | hfst-invert -o crk-anl-norm.hfst
+
+hfst-invert -i crk-anl-norm.hfst -o crk-gen-norm.hfst
+
 echo 'Creating optimized-lookup versions of selected transducers.' ;
 
 hfst-fst2fst -O -i crk-anl-desc.hfst -o crk-anl-desc.hfstol
+
+hfst-fst2fst -O -i crk-anl-norm.hfst -o crk-anl-norm.hfstol
 
 hfst-fst2fst -O -i crk-gen-norm.hfst -o crk-gen-norm.hfstol
 
