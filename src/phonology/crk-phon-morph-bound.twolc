@@ -1,0 +1,968 @@
+! Copyright © 2015–2019 Alberta Language Technology Lab (ALTLab)
+! http://altlab.artsrn.ualberta.ca/
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU Affero General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version.
+!
+! This program is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+! GNU Affero General Public License for more details.
+!
+! You should have received a copy of the GNU Affero General Public License
+! along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+! Code for compiling TWOLC with HFST
+! hfst-twolc -R inc/crk-phon.twolc -o inc/crk-phon.hfst
+! -R handle forces resolution of conflicts
+!
+! Code for pair-testing compiled (H)FST with pair-tests
+! hfst-pair-test -X -i inc/crk-phon.hfst -I inc/crk-phon.twolc
+
+! Rewrite rule templates from TWOLC session December 2017.
+! Probably entirely defunct, but here for reference.
+!
+! Cw$i -> C$o
+! V[wy]$i -> VV
+!
+! [aâ][wy]$i -> â$
+! ê[wy]$i -> ê$
+! [iî][wy]$i -> î$
+! [oô][wy]$i -> ô$
+!
+! V -> 0 || _ $V (after stem) ! Weird?
+
+
+! ========================================================================
+! 
+! Current FST      ——> New Arok’s Class                      Special Chrs.
+! ========================================================================
+! 
+! VII-w impersonal ——> VII-1_SG                                    
+! VII-w regular    ——> VII-1_SGPL                                 
+! 
+! VII-n impersonal ——> VII-2_SG                                   [n3]
+! VII-n regular    ——> VII-2_SGPL                                 [n3??]
+! 
+! 
+! 
+! VAI-v            ——> VAI-1                                         [n2]
+! VAI-n            ——> VAI-2                                         [n2]
+! VAI-am           ——> VAI-3 (VTI like)                              [n2]
+! 
+! VTI-am           ——> VTI-1                                         [n2]
+! VTI-â            ——> VTI-2[n2]
+! VTI-ø            ——> VTI-3 (Dims/Habs) (VAIlike)                   [n2]
+!     
+! VTA              ——> VTA-1 (Regulars)                              [ii2]
+! VTA-Vw           ——> VTA-2                                         [i2][ii2]
+! VTA-Cw           ——> VTA-3 (hw, sw stem endings mostly)            [i2][ii2]
+! VTA-Ts           ——> VTA-4 (kostew will go here)                   [t3][i3][ii2]
+! VTAi             ——> VTA-5 (ahew, itew, ay-itew)                   [i3]
+! 
+! 
+! ! ##locative, dim, poss -im VGi > V: - i from *e, i2 (CHANGE OTHER i2)
+! ! ##-i2hk, -i2nâhk, -i2s(is), -i2m
+! ! ##also for possessive suffixes -i2nân, -i2naw/-i2nânaw, -i2wâw, -i2yiw(a)
+! 
+! NI-1	Regular
+! NI-2	Vowel-glides
+! NI-3	Cw (hidden -w-), indicated by stem-final -w
+! NI-4	single-syllable stems with vowel-finals
+! NI-4w	single-syllable stems with hidden final -w
+! NI-5	derivations of -was 'bag' -> PL: -wata -> NI-5, with special -t- for -wat: -s- shows only in singular, -t- stays when inflected (and turns into -c- when diminutivized)
+! 	
+! NA-1	Regular, all diminutives
+! NA-2	Vowel-glides
+! NA-3	Cw (Hidden -w-): indicated by stem-final -w
+! NA-4	single-syllable stems, always end -a in SG, even when compounded, iskwêw(i)-âya ('female being')
+! 	
+! Dependent stems; ones that require -im	
+
+! ========================================================================
+
+
+
+Alphabet
+
+ a b c d e f g h i j k l m n o p q r s t u v w x y z
+ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+ â ê î ô ý
+ Â Ê Î Ô
+ %-
+
+ i:0   i:î
+ i2:i ! i2:0
+ ii2:î ii2:0
+ t:t   t:c
+ t2:t  t2:0  t2:c
+ t3:t  ! t3:s
+ w:w  ! w:o
+ w2:w
+ n2:n
+ n3:n n3:h
+ t:c t2:c
+ t4:t ! t4:c when before ikâtê- in VTI
+
+ ý:y
+
+ y2:0      !!= * @CODE@ epenthetic joiner in reduplication of vowel-initial stems
+ y3:0      !!= * @CODE@ epenthetic joiner in reduplication of vowel-initial stems
+ d1:0  !!= * @CODE@ Reduplication consonant place holder 
+ d2:0  !!= * @CODE@ Reduplication consonant place holder 
+
+ %^EGLOT:0   !!= * @CODE@ Epenthetic -h- place holder
+
+ a:â â:â
+ w:0 y:0 ý:0
+
+ w3:w !!= * @CODE@ 3rd person possessor for NDA and NDI (non-kinship)
+ y4:y !!= * @CODE@ immutable -y in single-syllable nouns
+ i4:i !!= * @CODE@ possessive prefix -i that deletes before Vowel in Dep nouns
+
+ %>
+ %<
+ 
+ %^DIM:0
+ %^IC:0
+ %^COM:0
+ ;
+ 
+Sets
+
+  Bx = %> %< ;
+  
+  Ix = i i2 ii2 ;
+  
+  Vowel = a â ê i î o ô ;
+
+  Consonant = c h k m n p s t w y ý ;
+  
+  Gx = w y ý ;
+  ! Tx = t t2 ;
+  
+Rules
+
+! ##locative, dim, poss -im VGi > V: - i from *e, i2 (CHANGE OTHER i2)
+! ##-i2hk, -i2nâhk, -i2s(is), -i2m
+! ##also for possessive suffixes -i2nân, -i2naw/-i2nânaw, -i2wâw, -i2yiw(a)
+! ##also for VTAs, done below
+! 
+! #aGiRule [ [ a | â ] [ w | y | ý ] %/ i -> â ]
+! #{a,â} {w,y} i2 > â
+
+"VGiRule1"
+Vx:Vy <=> \.#. \.#. \Bx: 0:* _ [ %^COM:0 | Gx: ] Bx: i2: ; ! Two word-initial characters required before morpheme-boundary to avoid conflict with IC rule
+   where Vx in ( a i o )
+         Vy in ( â î ô )
+   matched ;
+
+"VGiRule2"
+Cx:0 <=> Vowel: _ Bx: i2: ;
+    where Cx in Gx ;
+
+"VGiRule3"
+i2:0 <=> Vowel: [ %^COM:0 | Gx: ] Bx: _ ;
+
+!!€ mêskanaw>i2s
+!!€ mêskanâ0>0s 
+
+! #mêskanâs - NI Dim 
+! m ê s k a n a:â w:0 %>: i2:0 s
+! 
+! #mêskanâhk - NI Loc
+! m ê s k a n a:â w:0 %>: i2:0 h k 
+
+!!€ mêskanaw>i2hk
+!!€ mêskanâ0>0hk
+
+! #sôniyâs - NA dim
+! s ô n i y â:â w:0 %>: i2:0 s
+
+!!€ sôniyâw>i2s^DIM
+!!€ sôniyâ0>0s0
+
+! #miskocâkâs NDI dim
+! m i s k o t:c â k a:â y:0 %>: i2:0 s
+
+!!€ miskotâkay>i2s^DIM
+!!€ miskocâkâ0>0s0
+
+! #eGiRule [ ê [ w | y | ý ] %/ i -> ê ]
+! #{ê} {w,y} i2 > ê
+! 
+! #nâpêsis - NA dim
+! n â p ê:ê w:0 %>: i2:0 s i s 
+
+!!€ nâpêw>i2^DIMsis
+!!€ nâpê0>00sis
+
+! #iskwênâhk - NA loc
+! i s k w ê:ê w:0 %>: i2:0 n â h k 
+
+!!€ iskwêw>i2^DIMsis
+!!€ iskwê0>00sis
+
+! 
+! #iGiRule [ [ i | î ] [ w | y | ý ] %/ [ i | î ] -> î ]
+! #{i,î} {w,y} i2 > î
+! 
+! #maskosîs - NI dim
+! m a s k o s i:î y:0 %>: i2:0 s 
+
+!!€ maskosiy>i2^DIMs
+!!€ maskosî0>00s
+
+! #pikîs - NA dim
+! p i k i:î w:0 %>: i2:0 s
+
+!!€ pikiw>i2^DIMs
+!!€ pikî0>00s
+
+! #maskosîhk - NI loc
+! m a s k o s i:î y:0 %>: i2:0 h k 
+
+!!€ maskosiy>i2hk
+!!€ maskosî0>0hk
+
+! #oGiRule [ [ o | ô ] [ w | y | ý ] %/ i -> ô ]
+! #{o,ô} {w,y} i2 > ô 
+
+! #sîwâpôs - NI dim
+! s î w â p o:ô y:0 %>: i2:0 s
+
+!!€ sîwâpoy>i2^DIMs
+!!€ sîwâpô0>00s
+
+! #tohtôsâpôhk
+! t o h t ô s â p o:ô y:0 %>: i2:0 h k 
+
+!!€ tohtôsâpoy>i2hk
+!!€ tohtôsâpô0>0hk
+
+! #iiRule i-i2 > i
+
+"iiRule"
+i2:0 <=> i: Bx: _  ;
+
+! #wâwis
+! w â w i:i %>: i2:0 s 
+
+!!€ wâwi>i2^DIMs
+!!€ wâwi>00s
+
+! #ôsihk
+! ô s i:i %>: i2:0 h k 
+
+!!€ ôsi>i2hk
+!!€ ôsi>0hk
+! 
+! #Cwi > Co (i and i2)
+
+"Cwi2CoôRule1"
+w:Ox <=> Consonant: _ Bx: Vx: ;
+     where Vx in ( i i2 ii2 )
+           Ox in ( o  o   ô )
+     matched ;
+     
+! "Cwî2CoRule1a"
+! w:o <=> Consonant: _ Bx: [ i: | i2: ] ;
+
+! "Cwî2CôRule1b"
+! w:ô <=> Consonant: _ Bx: ii2: ;
+
+"Cwi2CoôRule2"
+Ix:0 <=> Consonant: w: Bx: _ ;
+
+! "Cwi2CoRule1b"
+! i2:0 <=> Consonant: w: Bx: _ ;
+
+! "Cwî2CôRule2"
+! î2:0 <=> Consonant: w: Bx: _ ;
+
+! #acimos
+!!€ atimw>i2^DIMs
+!!€ acimo>00s
+
+! #mistikohk
+! m i s t i k w:o %>: i2:0 h k
+
+!!€ mistikw>i2hk
+!!€ mistiko>0hk
+! 
+! #no change after plain consonants, i2:i
+! 
+!!€ sâkahikan>i2^DIMs
+!!€ sâkahikan>i0s
+
+! #maskasinihk
+! m a s k i s i n %>: i2:i h k 
+
+!!€ maskisin>i2hk
+!!€ maskisin>ihk
+! 
+! ## Cw# > C
+
+"wFinalRule"
+w:0 <=> Consonant: _ .#. ;
+
+!!€ atimw
+!!€ atim0
+
+! #askihk
+! a s k i h k w:0
+
+!!€ askihkw
+!!€ askihk0
+
+! #atim
+! a t i m w:0
+
+!!€ atimw
+!!€ atim0
+
+!!€ nit2<nînihikw
+!!€ ni0<nînihik
+
+! ##diminutive sound symbolism palatalisation (requires DIM trigger?)
+! #{t,t2} > c / _...DIM
+
+"etanRule"
+a:ê <=> _ %>: t: â: n: .#. ;
+
+!!€ a>tân
+!!€ ê>tân
+
+"DimRule"
+t:c <=> _ :* %^DIM:0 ;
+
+! #nicascocinis
+! n i t2:c %<: a s t:c o t:c i n %>: i2:i s
+
+!!€ nit2<astotin>i2^DIMs
+!!€ nic<ascocin>i0s
+
+!!!!!! 
+! ! 
+! ! ##connecting t - independent verbs, possessed nouns
+! ! ##t2 > t / _V
+
+"t-epenthesisRule"
+t2:0 <=> _ %<: :Consonant ;
+
+"t-epenthesisDimRule"
+t2:c <=> _ %<: :Vowel :* %^DIM:0 ;
+
+! ! #nitapin - VAI 1Sg
+! n i t2:t %<: a p i %>: n 
+! 
+! !!€ nit2<api>n
+! !!€ nit<api>n
+! 
+! #kitapinaw - VAI 12Pl
+! k i t2:t %<: a p i %>: n a w 
+! 
+! !!€ kit2<api>n 
+! !!€ kit<api>n
+! 
+! #otastotin - NI Px3Sg 
+! o t2:t %<: a s t o t i n
+! 
+! !!€ ot2<astotin
+! !!€ ot<astotin
+! 
+! ! 
+! ! ##o>w for certain possessed nouns (but these are dependent, why not handled with kinship?)
+! ! ##previously seen before î, a, â?, and iy (phonetically îy)
+! ! ##new tag w2 (can become w2 after other changes, discussed for VTA-2)
+! ! 
+! ! #wiyâw
+! o:w %<: i y â w2:w
+! 
+! !!€ o>iyâw2
+! !!€ w>iyâw
+! 
+! #wîpit
+! o:w %<: î p i t 
+! 
+! !!€ o>îpit
+! !!€ w>îpit
+! 
+! #wahkwan
+! o:w %<: a h k w a n
+! 
+! !!€ o>ahkwan
+! !!€ w>ahkwan 
+! ! 
+! ! 
+! ! ##ê > â _-n - independent 1/2 VAI-v, VTI-v
+
+"h-epenthesisRule"
+%^EGLOT:h <=> :Vowel ( %^IC:0 ) _ %<: [ d1:0 | d2:0 | :Vowel ] ;
+
+!!€ ê^EGLOT<acimo>t
+!!€ êh<acimo>t
+
+!!€ ê^EGLOT<d1ay2<acimo>t
+!!€ êh<0ay<acimo>t
+
+!!€ ê^EGLOT<d2ay3d1âh<acimo>t
+!!€ êh<0ay0âh<acimo>t
+
+"ee2aaVAIRule"
+ê:â <=> _ %>: n2: ;
+
+! #ninêhiyawân - VAI 1Sg
+! n i t2:0 %<: n ê h i y a w ê:â %>: n
+! 
+!!€ nit2<nêhiyawê>n2 
+!!€ ni0<nêhiyawâ>n
+!  
+! #kikâsîhkwân
+! k i t2:0 %<: k â s î h k w ê:â %>: n
+! 
+!!€ kit2<kâsîhkwê>n2
+!!€ ki0<kâsîhkwâ>n
+! 
+! 
+! ##a > ê / _-n - independent 1/2 VTI-t
+! -an > -ên
+
+"a2eeVTIRule"
+a:ê <=> \.#. \.#. \.#. _ %>: n2: ; ! Initial non-word-boundaries added to resolve conflict with IC rule, but might be superceded by a change to the affixal morphotax ; a>ê-n --> -ên
+
+! #nitipiskên
+! n i t2:0 %<: t i p i s k a:ê %>: n
+! 
+!!€ nit2<tipiska>n2 
+!!€ ni0<tipiskê>n
+! 
+! #kikiskêyihtên
+! k i t2:0 %<: k i s k ê y i h t a:ê %>: n
+! 
+!!€ kit2<kiskêyihta>n2 
+!!€ ki0<kiskêyihtê>n
+! 
+! ! 
+! ! 
+! ! ##n-final VIIs that take -hk NEW SPECIAL CHARACTER (adapt for VAI-n?? e.g. n2 > 0 / _-hk)
+! ! ## n > h / _-k
+
+"n2hxRule"
+n3:h <=> _ %>: k: ;
+
+! ! #ê-nîpihk
+! ê - %<: n î p i n3:h %>: k
+
+!!€ ê-<nîpin3>k 
+!!€ ê-<nîpih>k
+
+"n20VIIRule"
+n:0 <=> _ %>: k: ;
+
+! #ê-mispok
+! ê - %<: m i s p o n:0 %>: k
+
+!!€ ê-<mispon>k 
+!!€ ê-<mispo0>k
+! 
+
+! Changes t4 to c when ikâtê follows in VTI
+"t2cVTIRule"
+t4:c <=> _ %>: i: k: â: t: ê: ;
+
+! #wapâhcikâtêw - V+TI+Der/X+V+II+3Sg
+! w â p a h t:c %>: i k â t ê %> w  
+! 
+!!€ wapâht4>ikâtê>w 
+!!€ wapâhc>ikâtê>w
+
+
+! ##VTAs
+! ##VTA-1
+! 
+! #no changes, but some marked exceptions
+! #w2 so mowêw and ayawêw don't contract (wîcêwêw can do both - code two stems?)
+! 
+! #ê-mowiht - VTA X>3SgO
+! ê - %<: m o w2:w %>: i2:i h t 
+
+! Immutable 'w', which does not require
+
+!!€ ê-<mow2>i2ht
+!!€ ê-<mow>iht
+! 
+! #ê-ayawikoyâhk
+! ê - %<: a y a w2:w %>: i2:i k o y â h k 
+! 
+!!€ ê-<ayaw2>i2koyâhk
+!!€ ê-<ayaw>ikoyâhk 
+! 
+! ##VTA-3(Cw) act like Cw nouns for all i2 and i suffixes (summarised below)
+! #mark as normal w, w>o applies for i and i2
+! #seem to need î2? for delayed 2>1 imp
+! 
+! #kikîskison - VTA 2Sg>1SgO
+! k i t2:0 %<: k î s k i s w:o %>: i:0 n 
+! 
+!!€ kit2<kîskisw>in
+!!€ ki0<kîskiso>0n
+! 
+! #nikîskisomâwa - VTA 1Sg>3'O
+! n i t2:0 %<: k î s k i s w:o %>: i2:0 m â w a 
+! 
+!!€ nit2<kîskisw>i2mâwa
+!!€ ni0<kîskiso>0mâwa
+! 
+! #ê-kîskisotân - VTA 1Sg>2SgO
+! ê - %<: k î s k i s w:o %>: i2:0 t â n
+! 
+!!€ ê-<kîskisw>i2tân
+!!€ ê-<kîskiso>0tân
+! 
+! #ê-kîskisot
+! ê - %<: k î s k i s w:o %>: i:0 t 
+! 
+!!€ ê-<kîskisw>it 
+!!€ ê-<kîskiso>0t
+! 
+! #ê-kîskisosk - VTA 3Sg>2SgO
+! ê - %<: k î s k i s w:o %>: i2:0 s k 
+! 
+!!€ ê-<kîskisw>i2sk 
+!!€ ê-<kîskiso>0sk
+! 
+! #ê-kîskisokoyâhk - VTA 3Sg>1PlO
+! ê - %<: k î s k i s w:o %>: i2:0 k o y â h k
+! 
+!!€ ê-<kîskisw>i2koyâhk 
+!!€ ê-<kîskiso>0koyâhk
+!  
+! #nikîskisokawin - VTA X>1SgO
+! n i t2:0 %<: k î s k i s w:o %>: i2:0 k a w i n 
+! 
+!!€ nit2<kîskisw>i2kawin
+!!€ ni0<kîskiso>0kawin
+! 
+! #kîskison - VTA imp 2Sg>1SgO
+! k î s k i s w:o %>: i:0 n 
+! 
+!!€ kîskisw>in 
+!!€ kîskiso>0n
+! 
+! #kîskisôhkan - VTA delayed 2Sg>1SgO
+! k î s k i s w:ô %>: ii2:0 h k a n 
+! 
+!!€ kîskisw>ii2hkan
+!!€ kîskisô>0hkan
+
+! ##VTA-2(aw)
+! ##requires new coding, i2 instead of WI trigger
+! ##i does not trigger VGi > V:
+! #i2 for all 1>2, -im... -iko..., -ikawi..., -i2sk, -i2ht, -i2hcik
+! #î2 does not collapse
+! 
+! #kinitonawin - VTA 2Sg>1SgO
+! k i t2:0 %<: n i t o n a w %>: i n 
+! 
+!!€ kit2<nitonaw>in 
+!!€ ki0<nitonaw>in
+! 
+! #ninitonâmâwa - VTA 1Sg>3'O
+! n i t2:0 %<: n i t o n a:â w:0 %>: i2:0 m â w a 
+! 
+!!€ nit2<nitonaw>i2mâwa
+!!€ ni0<nitonâ0>0mâwa
+! 
+! #ê-nitonawitân - VTA 1Sg>2SgO
+! ê - %<: n i t o n a:â w:0 %>: i2:0 t â n
+! 
+!!€ ê-<nitonaw>i2tân
+!!€ ê-<nitonâ0>0tân
+! 
+! #ê-kîskisot
+! ê - %<: n i t o n a w %>: i t 
+! 
+!!€ ê-<nitonaw>it 
+!!€ ê-<nitonaw>it
+! 
+! #ê-nitonâsk - VTA 3Sg>2SgO
+! ê - %<: n i t o n a:â w:0 %>: i2:0 s k
+! 
+!!€ ê-<nitonaw>i2sk 
+!!€ ê-<nitonâ0>0sk
+!  
+! #ê-nitonâkoyâhk - VTA 3Sg>1PlO
+! ê - %<: n i t o n a:â w:0 %>: i2:0 k o y â h k 
+! 
+!!€ ê-<nitonaw>i2koyâhk 
+!!€ ê-<nitonâ0>0koyâhk
+! 
+! #ninitonâkawin - VTA X>1SgO
+! n i t2:0 %<: n i t o n a:â w:0 %>: i2:0 k a w i n
+! 
+!!€ nit2<nitonaw>i2kawin
+!!€ ni0<nitonâ0>0kawin
+! 
+! #nitonawin - VTA imp 2Sg>1SgO
+! n i t o n a w %>: i n 
+! 
+!!€ nitonaw>in 
+!!€ nitonaw>in
+! 
+! #nitonawîhkan - VTA delayed 2Sg>1SgO
+! n i t o n a w %>: î2:î h k a n 
+! 
+!!€ nitonaw>îhkan
+!!€ nitonaw>îhkan
+! 
+! 
+! ##VTA-4 (t3) 
+! ## t3 > s / _{-i,-î2}; t3 > t / _-i2  
+
+"t2sVTA4Rule"
+t3:s <=> _ [ Bx: [ i: | ii2: ] ] | .#. ;
+
+! Corresponding otherwise rule 
+! t3:t <=> \[ i | ii2 ] ;
+
+! #kinakasin - VTA 2Sg>1SgO
+! k i t2:0 %<: n a k a t3:s %>: i n 
+! 
+!!€ kit2<nakat3>in 
+!!€ ki0<nakas>in
+! 
+! #ninakatimâwa - VTA 1Sg>3'O
+! n i t2:0 %<: n a k a t3:t %>: i2:i m â w a 
+! 
+!!€ nit2<nakat3>i2mâwa 
+!!€ ni0<nakat>imâwa
+! 
+! #ê-nakatitân - VTA 1Sg>2SgO
+! ê - %<: n a k a t3:t %>: i2:i t â n
+! 
+!!€ ê-<nakat3>i2tân 
+!!€ ê-<nakat>itân
+! 
+! #ê-nakasit
+! ê - %<: n a k a t3:s %>: i t 
+! 
+!!€ ê-<nakat3>it
+!!€ ê-<nakas>it
+! 
+! #ê-nakatisk - VTA 3Sg>2SgO
+! ê - %<: n a k a t3:t %>: i2:i s k 
+! 
+!!€ ê-<nakat3>i2sk 
+!!€ ê-<nakat>isk
+! 
+! #ê-nakatikoyâhk - VTA 3Sg>1PlO
+! ê - %>: n a k a t3:t %>: i2:i k o y â h k 
+! 
+!!€ ê-<nakat3>i2koyâhk 
+!!€ ê-<nakat>ikoyâhk
+! 
+! #ninakatikawin - VTA X>1SgO
+! n i t2:0 %<: n a k a t3:t %>: i2:i k a w i n
+! 
+!!€ nit2<nakat3>i2kawin
+!!€ ni0<nakat>ikawin
+! 
+! #nakasin - VTA imp 2Sg>1SgO
+! n a k a t3:s %>: i n 
+! 
+!!€ nakat3>in 
+!!€ nakas>in
+! 
+! #nakasîhkan - VTA delayed 2Sg>1SgO
+! n a k a t3:s %>: ii2:î h k a n
+! 
+!!€ nakat3>ii2hkan 
+!!€ nakas>îhkan
+! 
+! 
+! ##VTA idiosyncratic cases
+! #s > 0 / _ t3-i -  just kostew
+
+"t3kostewRule"
+s:0 <=> _ t3:s ;
+
+! #kikosin - VTA 2Sg>1SgO
+! k i t2:0 %<: k o s:0 t3:s %>: i n 
+! 
+!!€ kit2<kost3>in 
+!!€ ki0<ko0s>in
+! 
+! #nikostimâwa - VTA 1Sg>3'O
+! n i t2:0 %<: k o s t3:t %>: i2:i m â w a 
+! 
+!!€ nit2<kost3>i2mâwa 
+!!€ ni0<kost>imâwa
+! 
+! #ê-kostitân - VTA 1Sg>2SgO
+! ê - %<: k o s t3:t %>: i2:i t â n
+! 
+!!€ ê-<kost3>i2tân
+!!€ ê-<kost>itân
+! 
+! #ê-kosit
+! ê - %>: k o s:0 t3:s %>: i t 
+! 
+!!€ ê-<kost3>it 
+!!€ ê-<ko0s>it
+! 
+! #ê-kostisk - VTA 3Sg>2SgO
+! ê - %<: k o s t3:t %>: i2:i s k 
+! 
+!!€ ê-<kost3>i2sk
+!!€ ê-<kost>isk
+! 
+! #ê-kostikoyâhk - VTA 3Sg>1PlO
+! ê - %<: k o s t3:t %>: i2:i k o y â h k
+! 
+!!€ ê-<kost3>i2koyâhk
+!!€ ê-<kost>ikoyâhk
+!  
+! #nikostikawin - VTA X>1SgO
+! n i t2:0 %<: k o s t3:t %>: i2:i k a w i n
+! 
+!!€ nit2<kost3>i2kawin
+!!€ ni0<kost>ikawin
+! 
+! #kosin - VTA imp 2Sg>1SgO
+! k o s:0 t3:s %>: i n 
+! 
+!!€ kost3>in 
+!!€ ko0s>in
+! 
+! #kosîhkan - VTA delayed 2Sg>1SgO
+! k o s:0 t3:s %>: ii2:î h k a n
+! 
+!!€ kost3>ii2hkan 
+!!€ ko0s>îhkan
+! 
+! ##monosyllabic VTAs in the imp 2Sg>3Sg "TACONJ-5"
+! #these have i as the inflection - ahêw, kostêw, itêw, ay-itêw
+! #should be ahi, kosi, isi, ay-isi (by my logic, need to be checked)
+! #making this i3 instead of i2 
+! #i3 > i / _ # << i3 must act like i or î2, not i2
+! #i3 > 0 otherwise << deletion rule can be tested with kostêw above
+! #itêw has been marked as TACONJ-1, but it definitely has t>s in corpus
+! 
+! #isi - VTA imp 2Sg>3SgO
+! i t3:s %>: i3:i 
+
+! The following morphophonological changes implemented with their own
+! specific continuation lexica
+
+! !!€ it3>i3
+! !!€ is0i
+! 
+! #kosi
+! k o s:0 t3:s %>: i3:i 
+! 
+! !!€ kost3>i3 
+! !!€ ko0s>i
+! 
+! #ahi
+! a h %>: i3:i
+! 
+! !!€ ah>i3 
+! !!€ ah>i
+
+! Needed for diminutivization of mîwas with stem-final t3
+"t3DimRule"
+t3:c <=> _ %>: i2: %^DIM:0 ;
+
+!!€ mi4<îwat3>i2^DIMs
+!!€ m0<îwac>i0s
+
+! Matching weak/strong reduplication consonant placeholder d1 with stem-initial consonant
+"ReduplCRule1"
+!! __@RULENAME@__
+d1:Cx <=> _ (0:i 0:y) [ a: y2: | â: h ] (%^IC:0) ( %-: ) %<: Cx: ;
+   where Cx in ( c k m n p s t w y ) ;
+
+! Setting double weak+strong reduplication consonant placeholder d2 with stem-initial consonant"
+"ReduplCRule2"
+!! __@RULENAME@__
+d2:Cx <=> _ (0:i 0:y) a: y3:0 ( %-: ) d1:Cx ;
+   where Cx in ( c k m n p s t w y ) ;
+
+!Inserting epenthetic y in weak reduplication of vowel-initial stem
+"ReduplY2Rule"
+!! __@RULENAME@__
+y2:y <=> d1:0 (0:i 0:y) a: _ ;
+
+!Inserting epenthetic y in strong+weak reduplication of vowel-initial stem
+"ReduplY3Rule"
+!! __@RULENAME@__
+y3:y <=> _ ( %-: ) d1:0 ;
+
+!!€ d1ay2-<nipâw
+!!€ na0-<nipâw
+
+!!€ d1âh-<nipâw
+!!€ nâh-<nipâw
+
+!!€ d2ay3-d1âh-<nipâw
+!!€ na0-nâh-<nipâw
+
+!!€ d2ay3-d1âh-<ayâw
+!!€ 0ay-0âh-<ayâw
+
+!!€ d1âh-<ayâw
+!!€ 0âh-<ayâw
+
+!!€ d1ay2-<ayâw
+!!€ 0ay-<ayâw
+
+!! INITIAL CHANGE
+! i ~ ê
+! a ~ ê
+! î ~ â (iyî)
+! o ~ ê ! W-A corpus evidence
+
+! General Template
+! v1:v2 <=> .#. (C) _ :* %^IC:0 ;
+
+"v2vICRule"
+Vx:ICx <=> .#. ( Consonant | d1: | d2: ) (0:w) _ :* %^IC:0 ;
+   where Vx in  ( a i î o )
+         ICx in ( ê ê â ê )
+   matched ;
+
+!!€ nipât^IC
+!!€ nêpât0
+
+!!€ miyo-<nipât^IC
+!!€ mêyo-<nipât0
+
+!!€ itwêt^IC
+!!€ êtwêt0
+
+!!€ apit^IC
+!!€ êpit0
+
+!!€ wayawit^IC
+!!€ wêyawit0
+
+!!€ îkatêhtêt^IC
+!!€ âkatêhtêt0
+
+!!€ nîmit^IC
+!!€ nâmit0
+
+!!€ 0ohcît^IC
+!!€ wêhcît0
+
+!!€ m0ostohtêt^IC
+!!€ mwêstohtêt0
+
+! o ~ wê
+
+"o2weeICRule"
+0:w <=> .#. (Consonant) _ o:ê :* %^IC:0 ;
+
+!!€ 0oyôyot^IC
+!!€ wêyôyot0
+
+!!€ k0ocît^IC
+!!€ kwêcît0
+
+! î ~ (â) iyî
+! ê ~ iyê
+! â ~ iyâ
+! ô ~ iyô
+
+"iyvICRule1"
+0:i <=> .#. (Consonant | d1: | d2: ) _ 0:y [ â | ê | î | ô ] :* %^IC:0 ;
+
+"iyvICRule2"
+0:y <=> .#. (Consonant | d1: | d2:) 0:i _ [ â | ê | î | ô ] :* %^IC:0 ;
+
+"iyvICRule3"
+Vx /<= .#. (Consonant | d1: | d2: ) _ :* %^IC:0 ;
+   where Vx in ( â ê î ô ) ;
+
+!!€ îkatêhât^IC
+!!€ âkatêhât0
+
+!!€ 00îkatêhât^IC
+!!€ iyîkatêhât0
+
+!!€ 00êskêt^IC
+!!€ iyêskêt0
+
+!!€ 00âcimot^IC
+!!€ iyâcimot0
+
+!!€ 00ôhkomit^IC
+!!€ iyôhkomit0
+
+"w2oNDRule"
+w3:o <=> .#. _  %<: :Consonant ;
+
+! "i20NDRule"
+! i:0 <=> .#. w3:o _ %<: ;
+
+!!€ w3<spiton
+!!€ o<spiton
+
+!!€ ni<spiton
+!!€ ni<spiton
+
+!!€ ki<spiton
+!!€ ki<spiton
+
+!!€ w3<îpit
+!!€ w<îpit
+
+!!€ w3<ahkwan
+!!€ w<ahkwan
+
+! n3:n
+
+! n3<o -> nô
+! n<i<tanis
+! ni<tanis
+
+! [nk]i<V[^o] -> [nk]0<V
+! [nk]i<o -> [nk]0<ô
+
+"i20VPossND"
+i4:0 <=> .#. [ n | k | m ] _ %<: :Vowel ;
+
+"o2ooPossND"
+o:ô <=> .#. [ n | k | m ] i4:0 %<: _ ;
+
+"w2oRuleND"
+w3:0 <=> .#. _ %<: [ o | ô ] ;
+
+!!€ ni4<ohkom
+!!€ n0<ôhkom
+
+!!€ ni4<ohkom>i2nân>ak
+!!€ n0<ôhkom>inân>ak
+
+!!€ ki4<ohkom
+!!€ k0<ôhkom
+
+!!€ w3<ohkom>a
+!!€ 0<ohkom>a
+
+"o2ooPossNoun"
+o:ô <=> .#. [ [ n i ] | [ k i ] | o ] t2: %<: _ ;
+
+!!€ nit2<ospwâkan
+!!€ nit<ôspwâkan
+
+!!€ kit2<ospwâkan
+!!€ kit<ôspwâkan
+
+!!€ ot2<ospwâkan
+!!€ ot<ôspwâkan
+
+!!!!! END !!!!!
