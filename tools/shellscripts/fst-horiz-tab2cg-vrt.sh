@@ -33,7 +33,7 @@ $0 ~ /^[^<]/ { printf "\"<%s>\"\n", $1;
           printf "%s ", f[j];
        printf "%s\n", f[j]; 
      }
-}'
+}' | # less; exit 0;
 
 # N.B. CG currently requires the lemma to precede all features, even prefixal ones.
 
@@ -41,12 +41,11 @@ $0 ~ /^[^<]/ { printf "\"<%s>\"\n", $1;
 
 # Preprocessing the file to prepare for CG disambiguation and analysis                                                                                
 
-gawk '{ if(index($0,"#")!=0)                                                                                                                          
-          { sub("#",""); sub("\"","&#"); }                                                                                                            
-        gsub("@","%");                                                                                                                                
-        if(match($0,"((PV/[^ ]+ )|(Rdpl[SW] ))+",p)!=0)                                                                                               
-          { sub(p[0],"");                                                                                                                             
-        sub("\" ","&"p[0]); }                                                                                                                         
-        print;                                                                                                                                        
+gawk '{ if(index($0,"#")!=0)
+          { sub("#",""); sub("\"","&#"); }
+        gsub("@","%");
+        if(match($0,"((PV/[^ ]+ )|(Rdpl[SW] ))+",p)!=0)
+          { sub(p[0],"");
+            sub("\" ","&"p[0]); }
+        print;
 }' | less; exit 0;
-
