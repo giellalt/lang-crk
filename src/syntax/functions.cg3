@@ -204,6 +204,9 @@ LIST @ADVL> = @ADVL> ;
 LIST @<ADVL = @<ADVL ;
 
 LIST @Neg> = @Neg> ;
+LIST @Neg-N> = @Neg-N> ;
+LIST @Neg-V> = @Neg-V> ;
+LIST @Neg-Ipc> = @Neg-Ipc> ;
 
  
 LIST @N> = @N> ;
@@ -326,7 +329,10 @@ MAP:LocVL  @V> TARGET N + Loc IF (*1 V BARRIER CLB) ;
 ##MAP @+FMAINV VFIN ;
 #MAP:PRED @PRED TARGET V ;
 
-MAP:NegV @Neg> TARGET Ipc + Neg IF (1 V) ;
+MAP:NegV @Neg-V> TARGET Neg IF (*1 V BARRIER CLB) ;
+MAP:NegN @Neg-N> TARGET Neg IF (1 N) ;
+MAP:NegIpc @Neg-Ipc> TARGET Neg IF (1 Ipc) ;
+
 
 MAP:PREDII @PRED-II TARGET V + II ;
 MAP:PREDAI @PRED-AI TARGET V + AI ;
@@ -398,6 +404,9 @@ MAP:NAMES @N> TARGET Prop IF (0 Prop)(1 Prop);
 ## Residential School
 
 ##ACTor and goal rules for 3 and 3’ animate nouns
+##need to extend the interleaving, so all 1s, then all 2s, etc. possibly also interleave with TI and AI (thought: relationships with TAs more core: if a noun close to both a TA and an AI (conj), AI maybe more likely to be a relative clause)
+## all *(-)1 forms are unchanged from original functional constraints, can remain if/when more automatic heuristics can be developed
+## ind before cnj, ê- before kâ-
 
 MAP:TAGOAL3R @<GOAL TARGET N + AN + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3SgO BARRIER V OR CLB) ;
 MAP:TAGOAL3L @GOAL> TARGET N + AN + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3SgO BARRIER V OR CLB) ;
@@ -410,6 +419,7 @@ MAP:TAGOALObvL @GOAL> TARGET N + Obv IF (NOT 0 Loc)(*1 TA + 4Sg/PlO BARRIER V OR
 
 MAP:TAACTorR @<ACTOR TARGET N + AN + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3Sg BARRIER V OR CLB) ;
 MAP:TAACTorL @ACTOR> TARGET N + AN + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3Sg BARRIER V OR CLB) ;
+
 MAP:TAACTorR @<ACTOR TARGET N + AN + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3Pl BARRIER V OR CLB) ;
 MAP:TAACTorL @ACTOR> TARGET N + AN + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3Pl BARRIER V OR CLB) ;
 
@@ -425,6 +435,7 @@ MAP:TAACTObvL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C TA + 4Sg/Pl BARRIER V OR
 #TI and AI actors nouns
 MAP:AITIACTSgR @<ACTOR TARGET N + AN + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 AI + 3Sg OR TI + 3Sg BARRIER V OR CLB) ;
 MAP:AITIACTSgL @ACTOR> TARGET N + AN + Sg IF  (NOT 0 Loc)(NOT 0 Obv)(*1 AI + 3Sg OR TI + 3Sg BARRIER V OR CLB) ;
+
 MAP:AITIACTPlR @<ACTOR TARGET N + AN + Pl IF (NOT 0 Loc)(*-1 AI + 3Pl OR TI + 3Pl BARRIER V OR CLB) ;
 MAP:AITIACTPlL @ACTOR> TARGET N + AN + Pl IF  (NOT 0 Loc)(*1 AI + 3Pl OR TI + 3Pl BARRIER V OR CLB) ;
 
@@ -436,12 +447,12 @@ MAP:TIGOAL @<GOAL TARGET N + IN IF (NOT 0 Loc)(*-1 TI BARRIER V OR CLB) ;
 MAP:TIGOAL @GOAL> TARGET N + IN IF (NOT 0 Loc)(*1 TI BARRIER V OR CLB) ;
 
 #II actors: done with set of II-zero
-MAP:IIACTor3R @<ACTOR TARGET N + IN + Sg IF (NOT 0 Loc)(*-1 VII + 3Sg BARRIER N + IN OR V OR CLB) ;
-MAP:IIACTor3L @ACTOR> TARGET N + IN + Sg IF (NOT 0 Loc)(*1 VII + 3Sg BARRIER N + IN OR V OR CLB) ;
-MAP:IIACTor3R @<ACTOR TARGET N + IN + Pl IF (NOT 0 Loc)(*-1 VII + 3Pl BARRIER N + IN OR V OR CLB) ;
-MAP:IIACTor3L @ACTOR> TARGET N + IN + Pl IF (NOT 0 Loc)(*1 VII + 3Pl BARRIER N + IN OR V OR CLB) ;
-MAP:IIACTor4R @<ACTOR TARGET N + IN + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*-1 VII + 4Sg OR VII + 4Pl BARRIER N + IN OR V OR CLB) ;
-MAP:IIACTor4L @ACTOR> TARGET N + IN + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*1 VII + 4Sg OR VII + 4Pl BARRIER N + IN OR V OR CLB) ;
+MAP:IIACTor3R @<ACTOR TARGET N + IN + Sg IF (NOT 0 Loc)(*-1 VII + 3Sg BARRIER V OR CLB) ;
+MAP:IIACTor3L @ACTOR> TARGET N + IN + Sg IF (NOT 0 Loc)(*1 VII + 3Sg BARRIER V OR CLB) ;
+MAP:IIACTor3R @<ACTOR TARGET N + IN + Pl IF (NOT 0 Loc)(*-1 VII + 3Pl BARRIER V OR CLB) ;
+MAP:IIACTor3L @ACTOR> TARGET N + IN + Pl IF (NOT 0 Loc)(*1 VII + 3Pl BARRIER V OR CLB) ;
+MAP:IIACTor4R @<ACTOR TARGET N + IN + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*-1 VII + 4Sg OR VII + 4Pl BARRIER V OR CLB) ;
+MAP:IIACTor4L @ACTOR> TARGET N + IN + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*1 VII + 4Sg OR VII + 4Pl BARRIER V OR CLB) ;
 
 ##PRONOMINAL GOALS goals more likely to be lexicalised than actors cf schmirler et al 2018?
 MAP:TIPron3GOALR @<GOAL TARGET Pron + IN IF (*-1 TI BARRIER V OR CLB) ;
