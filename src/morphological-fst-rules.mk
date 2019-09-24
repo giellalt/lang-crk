@@ -36,9 +36,17 @@ crk-phon.hfst: $(PHONOLOGY)
 	-@echo "$(_EMPH)Compiling TWOLC code.$(_RESET)"
 	hfst-twolc -i $< -o $@
 
+crk-phon-morph-bound.hfst: $(PHONOLOGY_WITH_BOUNDARIES)
+	-@echo "$(_EMPH)Compiling TWOLC code (with morpheme boundaries).$(_RESET)"
+	hfst-twolc -i $< -o $@
+
 crk-normative-generator.hfst: crk-morph.hfst crk-phon.hfst
 	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers.$(_RESET)"
-	hfst-compose-intersect $^ | hfst-minimize - -o $@
+	hfst-compose-intersect -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
+
+crk-normative-generator-with-morpheme-boundaries.hfst: ./crk-morph.hfst crk-phon-morph-bound.hfst
+	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers (with morpheme boundaries).$(_RESET)"
+	hfst-compose-intersect -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
 
 crk-strict-analyzer.hfst: crk-normative-generator.hfst
 	-@echo "$(_EMPH)Inverting normative generator tranducer into a normative analyzer transducer.$(_RESET)"
