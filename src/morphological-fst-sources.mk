@@ -17,6 +17,9 @@
 # Lists the raw .lexc/.twolc/.regex sources required to create the
 # morphological FSTs.
 
+ALL_SOURCES = $(MORPHOLOGY) $(PHONOLOGY) $(PHONOLOGY_WITH_BOUNDARIES) $(ORTHOGRAPHY)
+ALL_SOURCES_WITH_EXTRAS = $(ALL_SOURCES) $(EXTRA_MORPHOLOGY)
+
 MORPHOLOGY = morphology/root.lexc \
   morphology/affixes/noun_affixes.lexc \
   morphology/affixes/propernouns.lexc \
@@ -34,4 +37,9 @@ EXTRA_MORPHOLOGY = \
   morphology/generated_files/symbols.lexc
 
 PHONOLOGY = phonology/crk-phon.twolc
+# According to aarppe, these are:
+# > morphophonological rules that leaves the morpheme boundaries [intact], in
+# > order to facilitate the splitting of an inflected form into its
+# > constituent morphemes
+PHONOLOGY_WITH_BOUNDARIES = phonology/crk-phon-morph-bound.twolc
 ORTHOGRAPHY = orthography/spellrelax.regex
