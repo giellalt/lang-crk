@@ -13,16 +13,17 @@ in this system in terms of the following symbols.
 
 POS
 
- * +N	        
- * +V	        
- * +Prop	        
+ * +N	         = Noun
+ * +V	         = Verb
+ * +Ipc		 = Indeclinable Particle
+ * +Prop       
  * +Adv        
- * +CC	        
- * +CS	        
+ * +CC         
+ * +CS         
  * +Interj     
  * +Pron       
  * +Num        
- * +Arab        
+ * +Arab       
  * +Rom        
  * +PUNCT       = punctuation symbols
  * +LEFT        = the left part of a paired punctuation symbol
@@ -30,17 +31,26 @@ POS
  * +CLB         = clause boundary symbols
  * +Symbol = independent symbols in the text stream, like £, €, ©
 
+Nominal morphology
+
  * +Loc         Locative
+ * +Obv         Obviative
 
- * +Dim      Diminutive
+ * +Dim         Diminutive
 
-  * +Ipc		 Indeclinable Particle
+Particles
+
+
+ * +Def	     This is the intransitive demonstrative, i.e. the definite.
+ * +Indef       Indefinite
 
  * +Dem         Demonstrative
- * +Def	     This is the intransitive demonstrative, i.e. the definite.
  * +Prox	     Demonstrative Proximate
  * +Med	     Demonstrative Medial
  * +Dist	     Demonstrative Distal
+TODO: Is this ever used? What for?
+
+ * +Interr      Interrogative (who/whose/what/what kind)
 
  * +Foc	     Focus particle
 
@@ -50,8 +60,8 @@ Verbal MSP
  * +Prt  
  * +Prf  
  * +Cnj  
- * +Int   This tag is for the Future Intentional
- * +Def   This tag is for the Future Definite
+ * +Int   Future Intentional
+ * +Def   Future Definite (TODO: okay to overlap with particle tag of the same name?)
 
  * +Ind   Indicative, aka Independent
  * +Imp   Imperative, consider deleting +Imp tag
@@ -122,7 +132,8 @@ Noun animacy and dependency classes
  * +D		  dependent noun
 
  * +Incl     me too, etc.
- * +Qst      yes-no question particle ci
+ * +Qst      yes-no question particle; cî
+ * +Neg      negation; [na]môy[a].
 
 Preverbs
 
