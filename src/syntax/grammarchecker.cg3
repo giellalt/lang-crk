@@ -678,7 +678,10 @@ COPY:eka-not-moy ("êkâwiya" $SUGGEST) EXCEPT (".*môy."r &lex-eka-not-moy) TAR
 
 LIST BODY = "miskîsik" ;
 
-ADD:NA-goal-wVTA (&NA-goal-wVTA) TARGET BODY IF (*-1 ("itêw") LINK c @<GOAL)
+LIST GOAL-OBL-V = "wihtamawêw" ;
+
+
+ADD:NA-goal-wVTA (&NA-goal-wVTA) TARGET BODY IF (0 $$NUMBER)(-1 (Dem A $$NUMBER))(*-1 NEGATE GOAL-OBL-V OR 3);
 ## nititâw awa niskîsik
 
 ADD (@>N) TARGET (Pron Dem...) IF (1 N)(-1 V)(NEGATE 0 (V <OBL-GOAL>));
