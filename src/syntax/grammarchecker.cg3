@@ -681,7 +681,7 @@ LIST BODY = "miskîsik" ;
 LIST GOAL-OBL-V = "wihtamawêw" ;
 
 
-ADD:NA-goal-wVTA (&NA-goal-wVTA) TARGET BODY IF (0 $$NUMBER)(-1 (Dem A $$NUMBER))(*-1 NEGATE GOAL-OBL-V OR 3);
+ADD:NA-goal-wVTA (&NA-goal-wVTA) TARGET BODY IF (0 $$NUMBER)(-1 (Dem A $$NUMBER))(NEGATE *-1 GOAL-OBL-V OR 3);
 ## nititâw awa niskîsik
 
 ADD (@>N) TARGET (Pron Dem...) IF (1 N)(-1 V)(NEGATE 0 (V <OBL-GOAL>));
