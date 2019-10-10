@@ -650,12 +650,13 @@ LIST &SUGGEST = &SUGGEST ;
 
 LIST &lex-eka-not-moy = &lex-eka-not-moy ;
 LIST &msyn-prox-not-obv = &msyn-prox-not-obv ;
+LIST &NA-goal-wVTA = &NA-goal-wVTA ;
 
 # ====================== #
 # Partial dependencies   #
 # ====================== #
 
-SETCHILD:name (@PRED-TA 3SgO) TO (*1 (@<GOAL A Sg) BARRIER V OR CLB) ; 
+#SETCHILD:name (@PRED-TA 3SgO) TO (*1 (@<GOAL A Sg) BARRIER V OR CLB) ; 
 ## nititâw awa niskîsik
 
 
@@ -674,4 +675,12 @@ COPY:prox-not-obv (Sg &SUGGEST) EXCEPT (Obv &msyn-prox-not-obv) AFTER (N A) TARG
 ADD:eka-not-moy (&lex-eka-not-moy) TARGET (Ipc Neg ".*môy."r) IF (*1 (V Imp) BARRIER V OR CLB) ;
 ## namôya kihcêyimo kihci-kiskinwahamâtowikamikohk.
 COPY:eka-not-moy ("êkâwiya" $SUGGEST) EXCEPT (".*môy."r &lex-eka-not-moy) TARGET (Ipc Neg ".*môy."r &lex-eka-not-moy) ;
+
+LIST BODY = "miskîsik" ;
+
+ADD:NA-goal-wVTA (&NA-goal-wVTA) TARGET BODY IF (*-1 ("itêw") LINK c @<GOAL)
+## nititâw awa niskîsik
+
+ADD (@>N) TARGET (Pron Dem...) IF (1 N)(-1 V)(NEGATE 0 (V <OBL-GOAL>));
+
 
