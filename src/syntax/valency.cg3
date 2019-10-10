@@ -643,3 +643,24 @@ SET NOT-NOUN = WORD - N ;
 SET NUMBERGENDER = (A Sg) OR (A Pl) OR (I Sg) OR (I Pl) OR (A Obv) ;
 
 SET VII = II - IIZ ;
+
+
+# Valency tags
+# - - - - - - -
+
+LIST <BE-Any><TH-Any> = <BE-Any><TH-Any> ;
+
+
+	# ====================== #
+	         SECTION         # 1 Valency annotation starts here
+	# ====================== #
+
+
+
+SUBSTITUTE (TA) (TA <BE-Any><TH-Any>) TARGET BENEF ;
+    ## 
+    
+    
+ 
+    
+    
