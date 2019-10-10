@@ -644,6 +644,10 @@ SET NUMBERGENDER = (A Sg) OR (A Pl) OR (I Sg) OR (I Pl) OR (A Obv) ;
 
 SET VII = II - IIZ ;
 
+# Valency tags
+# - - - - - - -
+
+LIST <BE-Any><TH-Any> = <BE-Any><TH-Any> ;
 
 # ============= #
 # Error tags    #
@@ -681,10 +685,10 @@ COPY:eka-not-moy ("êkâwiya" $SUGGEST) EXCEPT (".*môy."r &lex-eka-not-moy) TAR
 
 LIST BODY = "miskîsik" ;
 
-LIST GOAL-OBL-V = "wihtamawêw" ;
+#LIST GOAL-OBL-V = "wihtamawêw" ;
 
 
-ADD:NA-goal-wVTA (&NA-goal-wVTA) TARGET BODY IF (0 $$NUMBER)(-1 (Dem A) + $$NUMBER)(NEGATE *-1 GOAL-OBL-V LINK NOT 0 NONLOCAL);
+ADD:NA-goal-wVTA (&NA-goal-wVTA) TARGET BODY IF (0 $$NUMBER)(-1 (Dem A) + $$NUMBER)(NEGATE *-1 <BE-Any><TH-Any> LINK NOT 0 NONLOCAL);
 ## nititâw awa niskîsik
 COPY:NA-goal-wVTA (A &SUGGEST) EXCEPT (I &NA-goal-wVTA) AFTER (N) TARGET (N &NA-goal-wVTA) ;
 
