@@ -78,8 +78,8 @@ LIST Adv = Adv ;
 LIST CC = CC ;
 LIST CS = CS ;
 
-LIST AN = AN ;
-LIST IN = IN ;
+LIST A = A ;
+LIST I = I ;
 LIST Prop = Prop ;
 LIST D = D ;
 
@@ -440,7 +440,7 @@ LIST NEG = "namôya" "namôy" "môya" "môy" "êkâwiya" "kâwiya" "êkâya" "ê
 
 LIST TEMP = "ispî" "êkospî" "tânispî" "ispîhk" "êkospîhk" "tânispîhk" "kayâs" "anohc" "mêkwâc" "kêtahtawê" "kîtahtawê" "anohcihkê" "ispîhci" "sâsay" "âsay" "êkwayâk" "pitamâ" "itâp" "mwêhci" "pâtimâ" "pêci-nâway" "êkwêyâk" "aspin" "kayâsês" "okâsikâk" "wêskacês" "aciyaw" "iskwêyâc" "kinwês" "kinwêsk" "kinwêsis" "kisik" "kâh-kinwês" "kâkikê" "kîhtwâm" "mayaw" "mâmâwaci-kayâs" "mâtayak" "nici" "nistam" "nôhtaw" "pêskis" "pêyakwâw" "tahtwâw" "tahtwayak" "tânitahtwâw" "âstamispîhk" "êkwêyâc" "awasi-otâkosîhk" "awasi-tipiskohk" "kihci-awasi-otâkosîhk" "awasi-piponohk" "kayâhtê" "maywês" "maywêsk" "mwayês" "mâmwayês" "nîstamik" "awasi-tipiskâki" "awasi-wâpahki" "tipiskohk" "otâkosîhk" "tipiskâki" "wâpahki" "mwêstas" "nîpâ-tipisk" "pôsko-kisik" "pôsko-pîsim" "kâpê-tipisk" "pêyak-tipiskâw" "pêyako-tipiskâw" "tahto-tipiskâw" "tipisk" "têpiskâk" "kâpê-kisik" "tahto-kîsikâw" "otâkosiki" "otâkosî" "kisêpâyâki" "kêkisêp" "kîkisêp" "kîkisêpâ" "kîkisêpâki" "pâmwayês" "miyâskam" "miyoskamikohk" "miyoskamiki" "miyoskamîhk" "sîkwanohk" "takwâkiki" "takwâkohk" "kapê-pipon" "mêsakwanipipon" "pipohki" "piponohk" "awasi-nîpinohk" "kapê-nîpin" "nîpihki" "nîpinohk" "awasitê" "âstamitê" "wîpac" "wîpat" "kîpa" "pwâstâw" "pâtos" "wîhkâcîs" "ici" "kîkisêpâyâyiki" ;
 
-LIST QUANT = "mihcêtwâw" "mihcêti" "âtiht" "mâwaci" "mâh-mâwaci" "mâmâwaci" "mowac" "iyikohk" "mihcêt" "mihcêcis" "mistahi" "okistakêwi" "tahto" "êko-tahto" "tânitahto" "tânimatahto" "tahtw-âya" "êkwayikohk" "nahiyikohk" "êkoyikohk" "tâniyikohk" "tânimayikohk" "kahkiyaw" "mitoni" "pikoyikohk" "nanâtohk" "namôya-kakêtihk" "misahkamik" "apisîs" "namôy-apisîs" ;
+LIST QUAT = "mihcêtwâw" "mihcêti" "âtiht" "mâwaci" "mâh-mâwaci" "mâmâwaci" "mowac" "iyikohk" "mihcêt" "mihcêcis" "mistahi" "okistakêwi" "tahto" "êko-tahto" "tânitahto" "tânimatahto" "tahtw-âya" "êkwayikohk" "nahiyikohk" "êkoyikohk" "tâniyikohk" "tânimayikohk" "kahkiyaw" "mitoni" "pikoyikohk" "nanâtohk" "namôya-kakêtihk" "misahkamik" "apisîs" "namôy-apisîs" ;
 
 
 # Sets
@@ -453,8 +453,8 @@ LIST QUANT = "mihcêtwâw" "mihcêti" "âtiht" "mâwaci" "mâh-mâwaci" "mâmâw
 #SET NOT-NOUN = WORD - N ;
 
 LIST NUMBER = Sg Pl ;
-LIST GENDER = AN IN ;
-SET NUMBERGENDER = (AN Sg) OR (AN Pl) OR (IN Sg) OR (IN Pl) OR (AN Obv) ;
+LIST GENDER = A I ;
+SET NUMBERGENDER = (A Sg) OR (A Pl) OR (I Sg) OR (I Pl) OR (A Obv) ;
 
 LIST LONGVERBEND = ("<.*âhk>"r) ("<.*âhkik>"r) ("<.*ân>"r) ;
 LIST SHORTVERBEND = ("<.*ahk>"r) ("<.*ahkik>"r) ("<.*an>"r) ;
@@ -475,7 +475,7 @@ LIST KIKWAY = (".?kîkway"r) ;
 
 # Noun sets
 
-LIST HUMAN = "awâsis" "okimâw" "iyiniw" "iskwêw" ;
+LIST HUMA = "awâsis" "okimâw" "iyiniw" "iskwêw" ;
 
 # Boundary sets
 
@@ -503,9 +503,9 @@ LIST @GOAL = @GOAL ;
 LIST @<GOAL = @<GOAL ;
 LIST @GOAL> = @GOAL> ;
 
-LIST @INS = @INS ;
-LIST @<INS = @<INS ;
-LIST @INS> = @INS> ;
+LIST @IS = @IS ;
+LIST @<IS = @<IS ;
+LIST @IS> = @IS> ;
 
 LIST @<LocPred = @<LocPred ;
 LIST @Loc-Ipl> = @Loc-Ipl> ;
@@ -519,8 +519,8 @@ LIST @Quant-V> = @Quant-V> ;
 LIST @<Quant-V = @<Quant-V ;
 
 LIST @+FAUXV = @+FAUXV ;
-LIST @+FMAINV = @+FMAINV ;
-LIST @-FMAINV = @-FMAINV ;
+LIST @+FMAIV = @+FMAIV ;
+LIST @-FMAIV = @-FMAIV ;
 LIST @-FAUXV = @-FAUXV ;
 LIST @PRED = @PRED ;
 LIST @PRED-II = @PRED-II ;
@@ -551,7 +551,7 @@ LIST @<P = @<P ;
 LIST @P> = @P> ;
 
 LIST @HNOUN = @HNOUN ;
-LIST @INTERJ = @INTERJ ;
+LIST @ITERJ = @ITERJ ;
 
  
 LIST @Num> = @Num> ;
@@ -589,25 +589,25 @@ LIST @VOC = @VOC ;
 
 LIST @CVP = @CVP ;
 LIST @CNP = @CNP ;
-LIST @FS-VFIN< = @FS-VFIN< ;
+LIST @FS-VFI< = @FS-VFI< ;
 
 LIST @? = @? ;
 LIST @?? = @?? ;
-LIST 3 = 3Sg 3Pl ;
-LIST non3 = 1Sg 2Sg 1Pl 12Pl 2Pl ;
+LIST NONLOCAL = 3Sg 3Pl ;
+LIST LOCAL = 1Sg 2Sg 1Pl 12Pl 2Pl ;
 LIST ABSN = (".*win"r) (".*wina"r) ;
 LIST TEMPORALN = "kîsikâw" "askîwin" ;
 
-LIST SYNTAG = @+FAUXV @+FMAINV @-FAUXV @-FMAINV @<ACT @<ADVL @<GOAL @<INS @<OBJ @<OPRED @<SPRED @<SUBJ @>N @>Num @>P @>Pron @ACT @ACT> @ADVL @ADVL> @APP @APP-ADVL< @APP-N< @APP-Num< @APP-Pron< @APP>Pron @CNP @CVP @FS-VFIN< @GOAL @GOAL> @HNOUN @INS @INS> @INTERJ @N< @Num< @OBJ @OBJ> @OPRED @OPRED> @P< @PCLE @Pron< @SPRED @SPRED> @SUBJ @SUBJ> @VOC ;
+LIST SYNTAG = @+FAUXV @+FMAIV @-FAUXV @-FMAIV @<ACT @<ADVL @<GOAL @<IS @<OBJ @<OPRED @<SPRED @<SUBJ @>N @>Num @>P @>Pron @ACT @ACT> @ADVL @ADVL> @APP @APP-ADVL< @APP-N< @APP-Num< @APP-Pron< @APP>Pron @CNP @CVP @FS-VFI< @GOAL @GOAL> @HNOUN @IS @IS> @ITERJ @N< @Num< @OBJ @OBJ> @OPRED @OPRED> @P< @PCLE @Pron< @SPRED @SPRED> @SUBJ @SUBJ> @VOC ;
 
 # Initials
 # --------
 
-LIST INITIAL = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
+LIST IITIAL = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
         "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
         "á" "æ" "ø" "å" "ö" "ä" ;
 
-LIST CAP-INITIAL = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M"
+LIST CAP-IITIAL = "A" "B" "C" "D" "E" "F" "G" "H" "I" "J" "K" "L" "M"
         "N" "O" "P" "Q" "R" "S" "T" "U" "V" "W" "X" "Y" "Z"
         "Á" "Æ" "Ø" "Å" "Ö" "Ä" ;
 
@@ -629,7 +629,7 @@ SET NUMPL = Num - ("pêyak") ;
 # Verb sets
 # ---------
 
-LIST VFIN = (V 1Sg) (V 2Sg) (V 3Sg) (V 4Sg) (V 5Sg) (V 1Pl) (V 2Pl) (V 3Pl) (V 4Pl) (V 5Pl) (V 4Sg/Pl) (V 5Sg/Pl) ;
+LIST VFI = (V 1Sg) (V 2Sg) (V 3Sg) (V 4Sg) (V 5Sg) (V 1Pl) (V 2Pl) (V 3Pl) (V 4Pl) (V 5Pl) (V 4Sg/Pl) (V 5Sg/Pl) ;
 
 # Verbs and their complements
 # - - - - - - - - - - - - - -
@@ -637,7 +637,7 @@ LIST VFIN = (V 1Sg) (V 2Sg) (V 3Sg) (V 4Sg) (V 5Sg) (V 1Pl) (V 2Pl) (V 3Pl) (V 4
 SET NOT-VERB = WORD - V ;
 SET NOT-NOUN = WORD - N ;
 
-SET NUMBERGENDER = (AN Sg) OR (AN Pl) OR (IN Sg) OR (IN Pl) OR (AN Obv) ;
+SET NUMBERGENDER = (A Sg) OR (A Pl) OR (I Sg) OR (I Pl) OR (A Obv) ;
 
 SET VII = II - IIZ ;
 
@@ -681,8 +681,9 @@ LIST BODY = "miskîsik" ;
 LIST GOAL-OBL-V = "wihtamawêw" ;
 
 
-ADD:NA-goal-wVTA (&NA-goal-wVTA) TARGET BODY IF (0 $$NUMBER)(-1 (Dem A $$NUMBER))(NEGATE *-1 GOAL-OBL-V OR 3);
+ADD:NA-goal-wVTA (&NA-goal-wVTA) TARGET BODY IF (0 $$NUMBER)(-1 (Dem A) + $$NUMBER)(NEGATE *-1 GOAL-OBL-V LINK NOT 0 NONLOCAL);
 ## nititâw awa niskîsik
+COPY:NA-goal-wVTA (A &SUGGEST) EXCEPT (I &NA-goal-wVTA) AFTER (N) TARGET (N &NA-goal-wVTA) ;
 
 ADD (@>N) TARGET (Pron Dem...) IF (1 N)(-1 V)(NEGATE 0 (V <OBL-GOAL>));
 
