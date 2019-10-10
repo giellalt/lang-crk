@@ -648,7 +648,7 @@ SET VII = II - IIZ ;
 # Valency tags
 # - - - - - - -
 
-LIST <BE-Any><TH-Any> = <BE-Any><TH-Any> ;
+LIST <BE-An><TH-Any> = <BE-An><TH-Any> ;
 
 
 	# ====================== #
@@ -657,7 +657,7 @@ LIST <BE-Any><TH-Any> = <BE-Any><TH-Any> ;
 
 
 
-SUBSTITUTE (TA) (TA <BE-Any><TH-Any>) TARGET BENEF ;
+SUBSTITUTE (TA) (TA <BE-An><TH-Any>) TARGET BENEF ;
     ## ê-kî-wîhtamâkot kîkway ana
     
     
