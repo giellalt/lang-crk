@@ -9,13 +9,13 @@
 
 JSP_PAGES=root-morphology.jspwiki    \
 		  crk-phon-phonology.jspwiki \
-		  nouns-stems.jspwiki        \
-		  verbs-stems.jspwiki        \
+		  noun_stems-stems.jspwiki   \
+		  verb_stems-stems.jspwiki   \
 		  nouns-affixes.jspwiki      \
-		  numerals-stems.jspwiki 	\
-		  particles-stems.jspwiki 	\
-		  pronouns-stems.jspwiki    \
-          punctuation-stems.jspwiki  \
+		  numerals-stems.jspwiki     \
+		  particles-stems.jspwiki    \
+		  pronouns-stems.jspwiki     \
+		  punctuation-stems.jspwiki  \
 		  verbs-affixes.jspwiki
 # clitics-morphology.jspwiki       \
 # compounding-morphology.jspwiki   \
