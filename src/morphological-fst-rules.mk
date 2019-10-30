@@ -54,7 +54,7 @@ crk-strict-analyzer.hfst: crk-normative-generator.hfst
 
 crk-orth.hfst: $(ORTHOGRAPHY)
 	-@echo "$(_EMPH)Compiling regular expression implementing spelling-relaxation.$(_RESET)"
-	hfst-regexp2fst -S -i $< -o $@
+	hfst-regexp2fst -S -i $< | hfst-invert -o $@
 
 crk-descriptive-analyzer.hfst: crk-orth.hfst crk-strict-analyzer.hfst
 	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer transducer to create descriptive analyzer.$(_RESET)"
