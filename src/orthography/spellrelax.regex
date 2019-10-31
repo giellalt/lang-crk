@@ -99,7 +99,8 @@ c (->) j,   # English influence on spelling <c>
 {iw} (->) {ow},      # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
 {ow} (->) {iw},
 
-c (->) {ch},       # English influence on spelling <c>
+c (->) {ch},          # English influence on spelling <c>
+c (->) {tch},         # English influence on spelling <c>
 c (->) {ts} || _ ,,   # Another English influence on spelling <c>
 
 [..] (->) h || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],, # Excessive preaspiration before stops
