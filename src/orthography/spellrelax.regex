@@ -17,25 +17,27 @@
 # Plains Cree long vowel variation.
 
 i (->) %', # short-i elision
-â (->) {ā}, # a + combining macron U+0304
-ê (->) {ē}, # e + combining macron U+0304
-î (->) {ī}, # i + combining macron U+0304
-ô (->) {ō}, # o + combining macron U+0304
 
-â (->) ā, # a macron
-ê (->) ē, # e macron
-î (->) ī, # i macron
-ô (->) ō, # o macron
+# Diacrictic normalization:
+â -> {ā}, # a + combining macron U+0304
+ê -> {ē}, # e + combining macron U+0304
+î -> {ī}, # i + combining macron U+0304
+ô -> {ō}, # o + combining macron U+0304
 
-â (->) {â}, # a + combining circumflex accent U+0302
-ê (->) {ê}, # e + combining circumflex accent U+0302
-î (->) {î}, # i + combining circumflex accent U+0302
-ô (->) {ô}, # o + combining circumflex accent U+0302
+â -> ā, # a macron U+0101
+ê -> ē, # e macron U+0113
+î -> ī, # i macron U+012B
+ô -> ō, # o macron U+014D
+
+â -> {â}, # a + combining circumflex accent U+0302
+ê -> {ê}, # e + combining circumflex accent U+0302
+î -> {î}, # i + combining circumflex accent U+0302
+ô -> {ô}, # o + combining circumflex accent U+0302
 
 # Long vowel markings are frequently dropped:
 
 â (->) a,
-ê (->) e,
+ê (->) e,  # TODO: should this be UN-conditional?
 î (->) i,
 ô (->) o,
 
@@ -48,8 +50,8 @@ o (->) ô,
 
 # Dealing with spaces instead of hyphens as separators in multipart words
 
-[ %- ] (->) [ %- ]+,  # Multiple hyphens into a single hyphen
-%- (->) [ %  | %  | %  ]+, # Multiple non-breaking or standard spaces SPACE + NBSP + NNBSP (in syllabics) to single hyphen
+%- -> [ %- ]+,  # Multiple hyphens into a single hyphen
+%- -> [ %  | %  | %  ]+, # Multiple non-breaking or standard spaces SPACE + NBSP + NNBSP (in syllabics) to single hyphen
 
 # Dealing with English-influenced divergences from SRO, and misspellings based on modern pronunciation
 
