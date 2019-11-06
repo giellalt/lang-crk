@@ -1,0 +1,89 @@
+# Copyright © 2015–2019 Alberta Language Technology Lab (ALTLab)
+# http://altlab.artsrn.ualberta.ca/
+#
+# This program is free software; you can redistribute and/or modify
+# this file under the terms of the GNU Affero General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+# Plains Cree long vowel variation.
+
+i (->) %'::0.0, # short-i elision
+â (->) {ā}, # a + combining macron U+0304
+ê (->) {ē}, # e + combining macron U+0304
+î (->) {ī}, # i + combining macron U+0304
+ô (->) {ō}, # o + combining macron U+0304
+
+â (->) ā, # a macron
+ê (->) ē, # e macron
+î (->) ī, # i macron
+ô (->) ō, # o macron
+
+â (->) {â}, # a + combining circumflex accent U+0302
+ê (->) {ê}, # e + combining circumflex accent U+0302
+î (->) {î}, # i + combining circumflex accent U+0302
+ô (->) {ô}, # o + combining circumflex accent U+0302
+
+# Long vowel markings are frequently dropped:
+
+â (->) a::0.25,
+ê (->) e::0.0,
+î (->) i::0.25,
+ô (->) o::0.25,
+
+# NS 152 materials consistantly write some vowels as long where Arok's write
+# them as short.
+# E.G. NS 152 give 'askîy' and Arok gives 'askiy.'
+a (->) â::0.5,
+i (->) î::0.5,
+o (->) ô::0.5,
+
+# Dealing with spaces instead of hyphens as separators in multipart words
+
+[ %- ] (->) [ %- ]+,  # Multiple hyphens into a single hyphen
+%- (->) [ %  | %  | %  ]+, # Multiple non-breaking or standard spaces SPACE + NBSP + NNBSP (in syllabics) to single hyphen
+
+# Dealing with English-influenced divergences from SRO, and misspellings based on modern pronunciation
+
+# Vowels
+[ i | î ] (->) {ee}::0.0,
+[ a | â ] (->) u::0.0,
+
+# Consonants
+k (->) g::0.0,   # intervocalic voiced pronunciation to stops, maybe context should be added (including <c> overgenerates)
+t (->) d::0.0,   # intervocalic voiced pronunciation to stops, maybe context should be added
+c (->) j::0.0,   # English influence on spelling <c>
+
+# Glides
+# e.g., "tanisi ê-isiyihkâsoyan -> "tan'si ê-sikâsowan"
+# TODO: figure out what conditions this (probably /o/ or /i/)
+# These rules without context are EXCESSIVELY productive!
+# y (->) w,
+# w (->) y,
+
+{iw} (->) {ow}::0.5,      # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
+{ow} (->) {iw}::0.5,
+
+c (->) {ch}::0.0,        # English influence on spelling <c>
+c (->) {tch}::0.0,       # English influence on spelling <c>
+c (->) {ts}::0.0 ,,      # Another English influence on spelling <c>
+
+[..] (->) h::0.25 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],,  # Excessive preaspiration before stops
+[..] (->) h::0.25 || _ .#. ,, # Excessive word-final pre-aspiration
+   h (->) 0::0.5 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ]    # Missing preaspiration before stops
+
+;
+
+
+# Explanation:
+# lexical side (->) input
+# Or, in other words:
+# correct (->) in use out there
