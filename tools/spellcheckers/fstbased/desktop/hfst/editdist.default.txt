@@ -38,10 +38,11 @@ g	c	9
 â	a	4
 î	i	4
 ô	o	4
-w	y	0
+w	y	2
+y	w	2
+ý	y	0
 i	ô	4
 a	ê	4
-
 
 ## Swaps. NB! Please note that these depend on the variable
 ## USE_SWAPS in Makefile.am in this directory. Also note that
