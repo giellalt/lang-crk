@@ -1,4 +1,4 @@
-name: "Animate noun basic (plain) paradigm"	
+name: "Animate noun basic (plain/mobile) paradigm"	
 paradigm: "noun-na.paradigm"	
 layout:	
   type: "basic"	
@@ -20,16 +20,16 @@ tooltips:
     "Smaller/Lesser/Younger": "Diminutive"	
     "Ownership": "Possession"	
 --	
-"One"	=N+A+Sg
-"Many"	=N+A+Pl
-"Further"	=N+A+Obv
+"One"	 =N+A+Sg
+"Many"	 =N+A+Pl
+"Further"	 =N+A+Obv
 	
 	: "Ownership"
 	: "One"
-"my"	=N+A+Px1Sg+Sg
-"your (one)"	=N+A+Px2Sg+Sg
+"my"	 =N+A+Px1Sg+Sg
+"your (one)"	 =N+A+Px2Sg+Sg
 	: "Further"
-"his/her"	=N+A+Px3Sg+Obv
+"his/her"	 =N+A+Px3Sg+Obv
 	
 	: "Smaller/Lesser/Younger"
 "One"	Der/Dim+N+A+Sg
