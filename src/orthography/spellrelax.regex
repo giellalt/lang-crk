@@ -17,27 +17,25 @@
 # Plains Cree long vowel variation.
 
 i (->) %', # short-i elision
+â (->) {ā}, # a + combining macron U+0304
+ê (->) {ē}, # e + combining macron U+0304
+î (->) {ī}, # i + combining macron U+0304
+ô (->) {ō}, # o + combining macron U+0304
 
-# Diacrictic normalization:
-â -> {ā}, # a + combining macron U+0304
-ê -> {ē}, # e + combining macron U+0304
-î -> {ī}, # i + combining macron U+0304
-ô -> {ō}, # o + combining macron U+0304
+â (->) ā, # a macron
+ê (->) ē, # e macron
+î (->) ī, # i macron
+ô (->) ō, # o macron
 
-â -> ā, # a macron U+0101
-ê -> ē, # e macron U+0113
-î -> ī, # i macron U+012B
-ô -> ō, # o macron U+014D
-
-â -> {â}, # a + combining circumflex accent U+0302
-ê -> {ê}, # e + combining circumflex accent U+0302
-î -> {î}, # i + combining circumflex accent U+0302
-ô -> {ô}, # o + combining circumflex accent U+0302
+â (->) {â}, # a + combining circumflex accent U+0302
+ê (->) {ê}, # e + combining circumflex accent U+0302
+î (->) {î}, # i + combining circumflex accent U+0302
+ô (->) {ô}, # o + combining circumflex accent U+0302
 
 # Long vowel markings are frequently dropped:
 
 â (->) a,
-ê (->) e,  # TODO: should this be UN-conditional?
+ê (->) e,
 î (->) i,
 ô (->) o,
 
@@ -46,12 +44,16 @@ i (->) %', # short-i elision
 # E.G. NS 152 give 'askîy' and Arok gives 'askiy.'
 a (->) â,
 i (->) î,
-o (->) ô,
+o (->) ô,,
+
+# Prefix-final vowel (preceded by consonant) dropped before initial vowel for following morpheme
+[ a | â | ê | i | î | o | ô ]  (->) 0 || [ c | k | m | n | p | s | t | w | y ] _ %- [ a | â | ê | i | î | o | ô ] ,,
 
 # Dealing with spaces instead of hyphens as separators in multipart words
 
-%- -> [ %- ]+,  # Multiple hyphens into a single hyphen
-%- -> [ %  | %  | %  ]+, # Multiple non-breaking or standard spaces SPACE + NBSP + NNBSP (in syllabics) to single hyphen
+[ %- ] (->) 0, # Missing hyphens between prefixes/preverbs
+[ %- ] (->) [ %- ]+,  # Multiple hyphens into a single hyphen
+%- (->) [ %  | %  | %  ]+, # Multiple non-breaking or standard spaces SPACE + NBSP + NNBSP (in syllabics) to single hyphen
 
 # Dealing with English-influenced divergences from SRO, and misspellings based on modern pronunciation
 
@@ -61,6 +63,7 @@ o (->) ô,
 
 # Consonants
 k (->) g,   # intervocalic voiced pronunciation to stops, maybe context should be added (including <c> overgenerates)
+p (->) b,   # intervocalic voiced pronunciation to stops, maybe context should be added
 t (->) d,   # intervocalic voiced pronunciation to stops, maybe context should be added
 c (->) j,   # English influence on spelling <c>
 
@@ -82,6 +85,7 @@ c (->) {tch},       # English influence on spelling <c>
 c (->) {ts} ,,      # Another English influence on spelling <c>
 
 [..] (->) h || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],,  # Excessive preaspiration before stops
+[..] (->) h || _ .#. ,, # Excessive word-final pre-aspiration
    h (->) 0 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ]    # Missing preaspiration before stops
 
 ;
