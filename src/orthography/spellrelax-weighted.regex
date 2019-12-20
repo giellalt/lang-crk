@@ -44,7 +44,10 @@ i (->) %'::0.0, # short-i elision
 # E.G. NS 152 give 'askîy' and Arok gives 'askiy.'
 a (->) â::0.5,
 i (->) î::0.5,
-o (->) ô::0.5,
+o (->) ô::0.5,,
+
+# Prefix-final vowel (preceded by consonant) dropped before initial vowel for following morpheme
+[ a | â | ê | i | î | o | ô ]  (->) 0::1.0 || [ c | k | m | n | p | s | t | w | y ] _ (%-) [ a | â | ê | i | î | o | ô ] ,,
 
 # Dealing with spaces instead of hyphens as separators in multipart words
 
@@ -60,6 +63,7 @@ o (->) ô::0.5,
 
 # Consonants
 k (->) g::0.0,   # intervocalic voiced pronunciation to stops, maybe context should be added (including <c> overgenerates)
+p (->) b::0.0,   # intervocalic voiced pronunciation to stops, maybe context should be added
 t (->) d::0.0,   # intervocalic voiced pronunciation to stops, maybe context should be added
 c (->) j::0.0,   # English influence on spelling <c>
 
