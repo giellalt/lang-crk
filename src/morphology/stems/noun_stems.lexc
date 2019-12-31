@@ -148,6 +148,9 @@
 !! LEXC structure in the new crk FST.
 
 LEXICON NOUN_INDEP_STEMS
+! Placeholder for Derivation FST
+DERIVATION_NOUN_STEMS ;
+! Regular non-derived stems
 @P.dim.DIM@acâhkos NA ;
 @P.dim.DIM@acâwêwikamikos NI ;
 @P.dim.DIM@acihkos NA ;
@@ -4315,6 +4318,7 @@ wîwa:îw2 NAD_SG/A ;
 
 
 LEXICON NOUN_DEP_NONKINSHIP_STEMS
+! DERIVATION_NOUN_STEMS ;
 @P.dim.DIM@macâs:@P.dim.DIM@acâs NID ;
 mahkwan:ahkwan NID ;
 mahkwanêyâpiy NID ;
