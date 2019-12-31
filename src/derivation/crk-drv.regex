@@ -1,0 +1,102 @@
+! Phonology 
+
+define dimRule [ t -> c || _ ?* %/  [ i s ( i s ) | s i ] [ %/ | .#. ] ] ;
+
+define ên2ânRule [ ê -> â || %/ _ %/ n %/ ] ; 
+
+! T > s / _ i, i:
+! t > c / _ i, i:
+! T, t > t / _ e (> i), elsewhere
+
+define TsRule [ T -> s || _ %/ [ i | î ] ] ;
+
+define tcRule [ t -> c || _ %/ [ i | î ] ] ;
+
+define tc2Rule [ t (->) c || _ %/ [ i | î ] ] ;
+
+define TtRule [ T -> t ] ;
+
+define e2iRule [ e -> i || %/ _ ] ;
+
+define CiCEpenthesisRule [ %/ -> %/ i  || [ c | h | k | m | n | p | s | t | w | y | ý ]  _ [ c | h | k | m | n | p | s | t | y | ý ] ] ;
+
+! define wiwEpenthesisRule [ %/ (->) %/ i  || w _ w ] ;
+
+define wiwEpenthesisRule [ [ w %/ w ] (->) [ w %/ i w ] ] ;
+
+! VG-i > V̅
+
+define aGiRule [ [ a | â ] [ w | y | ý ] %/ i -> â ] ;
+
+define eGiRule [ ê [ w | y | ý ] %/ i -> ê ] ;
+
+define iGiRule [ [ i | î ] [ w | y | ý ] %/ [ i | î ] -> î ] ;
+
+define oGiRule [ [ o | ô ] [ w | y | ý ] %/ i -> ô ] ;
+
+! Same vowel collapses rules
+
+define aCollapseRule [ [ a | â ] %/ [ a | â ] -> â ] ;
+
+define eCollapseRule [ ê %/ ê -> ê ] ;
+
+define iCollapseRule [ [ i | î ] %/ [ i | î ] -> î ] ;
+
+define oCollapseRule [ [ o | ô ] %/ [ o | ô ] -> ô ] ;
+
+! Morpheme-final w-
+
+! Cw-iC > CoC
+
+define CwiC2CoCRule  [ w %/ i -> o %/ || [ c | h | k | m | n | p | s | t ] _ [ c | h | k | m | n | p | s | t | w | %/ ] ] ;
+
+! Cw-ô > Cô
+
+define Cwoo2CooRule [ w %/ ô  -> ô || [ c | h | k | m | n | p | s | t ] _ ] ;
+
+! Cw-o > C{o,ô}
+
+define Cwo2Coo2Rule [ [ w %/ o ] -> [ o | ô ] || [ c | h | k | m | n | p | s | t ] _ ] ;
+
+! Cw-wV > CwV
+
+define ww2wRule [ [ w %/ w ] -> w || [ c | h | k | m | n | p | s | t ] _ [ a | â | ê | i | î | o | ô ] ] ;
+
+! Morpheme-final y- to be explored
+! Cy-yV > CyV ??? 
+
+! {m,n} > h / __ -{p,t,k} OR Ø > i / {m,n} __ -{p,t,k,c} 
+
+define N2hRule [ [ m | n ] %/ -> h || _ [ p | t | k | c ] ] ;
+
+define boundaryRule [ %/ -> 0 ] ;
+
+read regex [ dimRule
+.o. ên2ânRule
+.o. TsRule
+.o. tcRule
+.o. TtRule
+.o. e2iRule
+.o. CiCEpenthesisRule
+.o. wiwEpenthesisRule
+.o. aGiRule
+.o. eGiRule
+.o. iGiRule
+.o. oGiRule
+.o. aCollapseRule
+.o. eCollapseRule
+.o. iCollapseRule
+.o. oCollapseRule
+.o. CwiC2CoCRule
+.o. Cwoo2CooRule
+.o. Cwo2Coo2Rule
+.o. ww2wRule 
+.o. N2hRule
+.o. tc2Rule
+.o. boundaryRule
+] ;
+
+! define Phonology
+! invert net
+save stack crk-drv-phon.hfst
+
