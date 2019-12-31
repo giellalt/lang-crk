@@ -592,6 +592,10 @@ d2  !!=* @CODE@  Reduplication consonant marker
 ! Derived diminunitive forms
 +Der/Dim
 
+! Derived stems (with the derivational FST)
++Der/N
++Der/V
+
 ! Person suffixes (possession or actor/goal)
 +Px1Sg
 +Px2Sg
@@ -680,6 +684,87 @@ d2  !!=* @CODE@  Reduplication consonant marker
 @P.loc.NULL@
 @D.loc.NULL@
 
+! Declination/Conjugation inflectional classes for derivational FST
+@P.infl.VII-n@
+@P.infl.VII-v@
+@P.infl.VAI-n@
+@P.infl.VAI-v@
+@P.infl.VTI-1@
+@P.infl.VTI-2@
+@P.infl.VTI-3@
+@P.infl.VTA-1@
+@P.infl.VTA-2@
+@P.infl.VTA-3@
+@P.infl.VTA-4@
+@P.infl.VTA-5@
+
+@R.infl.VII-n@
+@R.infl.VII-v@
+@R.infl.VAI-n@
+@R.infl.VAI-v@
+@R.infl.VTI-1@
+@R.infl.VTI-2@
+@R.infl.VTI-3@
+@R.infl.VTA-1@
+@R.infl.VTA-2@
+@R.infl.VTA-3@
+@R.infl.VTA-4@
+@R.infl.VTA-5@
+
+@P.infl.NA-1@
+@R.infl.NA-1@
+@P.infl.NA-2@
+@R.infl.NA-2@
+@P.infl.NA-3@
+@R.infl.NA-3@
+@P.infl.NA-4@
+@R.infl.NA-4@
+@P.infl.NA-4w@
+@R.infl.NA-4w@
+@P.infl.NA-?@
+@R.infl.NA-?@
+@P.infl.NDA-1@
+@R.infl.NDA-1@
+@P.infl.NDA-2@
+@R.infl.NDA-2@
+@P.infl.NDA-3@
+@R.infl.NDA-3@
+@P.infl.NDA-4@
+@R.infl.NDA-4@
+@P.infl.NDA-4w@
+@R.infl.NDA-4w@
+@P.infl.NDA-x@
+@R.infl.NDA-x@
+@P.infl.NDI-1@
+@R.infl.NDI-1@
+@P.infl.NDI-2@
+@R.infl.NDI-2@
+@P.infl.NDI-3@
+@R.infl.NDI-3@
+@P.infl.NDI-4@
+@R.infl.NDI-4@
+@P.infl.NDI-?@
+@R.infl.NDI-?@
+@P.infl.NDI-x@
+@R.infl.NDI-x@
+@P.infl.NI-1@
+@R.infl.NI-1@
+@P.infl.NI-2@
+@R.infl.NI-2@
+@P.infl.NI-3@
+@R.infl.NI-3@
+@P.infl.NI-4@
+@R.infl.NI-4@
+@P.infl.NI-4w@
+@R.infl.NI-4w@
+@P.infl.NI-5@
+@R.infl.NI-5@
+@P.infl.NI-?@
+@R.infl.NI-?@
+
+@P.infl.NONTERM@
+@R.infl.NONTERM@
+
 ! Special characters for matching new LEXC code for Nouns with TWOLC morphonological rules 
 i2
 i4
@@ -696,6 +781,9 @@ n2
 n3
 i3
 ii2
+
+! Special character/name placeholder for Derivational FST
+DRV-FST
 
 !! End of new and all Multichar_Symbols
 
