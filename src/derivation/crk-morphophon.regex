@@ -1,0 +1,49 @@
+! Alphabet
+
+regex [ a | â | ê | i | î | o | ô | c | h | k | m | n | p | s | t | w | y ] ;
+define Alpha
+
+! Rules for changing stem-final characters into the inflection-motivated morphophonemes
+
+set flag-is-epsilon OFF
+
+! set harmonize-flags ON
+
+regex [ w -> "w2", y -> "y4" || [ "@P.infl.NA-4@" | "@P.infl.NI-4@" ] [ Alpha ]* _ .#. ,,
+n -> "n3" || "@P.infl.VII-n@" [ Alpha ]* _ .#. ,,
+n -> "n3" || "@P.infl.VAI-n@" [ Alpha ]* _ .#. ,,
+w -> "w2" || "@P.infl.VTA-1@" m o _ .#. ,,
+t -> "t3" || "@P.infl.VTA-1@" i _ .#. ,,
+w -> "w2" || "@P.infl.VTA-2@" [ Alpha ]* _ .#. ,,
+t -> "t3" || "@P.infl.VTA-4@" [ Alpha ]* _ .#. ,,
+t -> "t3" || "@P.infl.VTA-5@" [ Alpha ]* _ .#.
+] ;
+
+! define NA_NI-4_w_w2_y_y4 [ w -> "w2", y -> "y4" || [ "@P.infl.NA-4@" | "@P.infl.NI-4@" ] [ Alpha ]* _ .#. ] ;
+
+! define VII-n_n_n3 [ n -> "n3" || "@P.infl.VII-n@" [ Alpha ]* _ .#. ] ;
+
+! define VAI-n_n_n3 [ n -> "n3" || "@P.infl.VAI-n@" [ Alpha ]* _ .#. ] ;
+
+! define VTA-1_w_w2 [ w -> "w2" || "@P.infl.VTA-1@" m o _ .#. ] ;
+
+! define VTA-1_t_t3 [ t -> "t3" || "@P.infl.VTA-1@" i _ .#. ] ;
+
+! define VTA-2_w_w2 [ w -> "w2" || "@P.infl.VTA-2@" [ Alpha ]* _ .#. ] ;
+
+! define VTA-4_t_t3 [ t -> "t3" || "@P.infl.VTA-4@" [ Alpha ]* _ .#. ] ;
+
+! define VTA-5_t_t3 [ t -> "t3" || "@P.infl.VTA-5@" [ Alpha ]* _ .#. ] ;
+
+! regex [ "NA_NI-4_w_w2_y_y4" ,, "VII-n_n_n3" ,, "VAI-n_n_n3" ,, "VTA-1_w_w2" ,, "VTA-1_t_t3" ,, "VTA-2_w_w2" ,, "VTA-4_t_t3" ,, "VTA-5_t_t3" ] ;
+
+! regex [ "NA_NI-4_w_w2_y_y4"
+! .o. "VII-n_n_n3"
+! .o. "VAI-n_n_n3"
+! .o. "VTA-1_w_w2"
+! .o. "VTA-1_t_t3"
+! .o. "VTA-2_w_w2"
+! .o. "VTA-4_t_t3"
+! .o. "VTA-5_t_t3" ] ;
+
+save stack crk-morphophon.hfst
