@@ -2,7 +2,10 @@
 
 # cat Wolvengrey_1w_morphemes_191230.txt
 
-gawk -v WEIGHT=$1 'BEGIN { FS="\t"; if(match(WEIGHT,"^w")!=0) weight="yes" }
+gawk -v OPTIONS=$1 'BEGIN { FS="\t";
+  if(index(OPTIONS,"w")!=0) weight="yes";
+  if(index(OPTIONS,"r")!=0) rept="yes";
+}
 NR>=2 {
 if(index($5,";;")==0) # Rule out cases with undeciphered morphology, marked with double-semicolons.
 { N=split($5,drv,";")
@@ -19,29 +22,35 @@ for(j=1; j<=N; j++)
        infl[pos]++;
        input=m[i];
        output=input;
-       if(index(input,"[")!=0 || index(input,"]")!=0 || index(input,"{")!=0 || index(input,"}")!=0)
-         {
-           sub("^[\\[\\{]","",output);
-           sub("[\\]\\}]$","",output);
-         }
+       # Including/excluding epenthetic elements
+       # if(index(input,"[")!=0 || index(input,"]")!=0 || index(input,"{")!=0 || index(input,"}")!=0)
+       #   {
+       #     sub("^[\\[\\{]","",output);
+       #     sub("[\\]\\}]$","",output);
+       #   }
+       # Excluding non-realized parenthesized elements from underlying morphemes
        if(index(input,"(")!=0)
          {
            sub("\\(.+\\)","",output);
          }
-       if(match(output,"^[^-]+$")!=0)
-         output=output"-";
+       # Including/excluding loner morphemes
+       # if(match(output,"^[^-]+$")!=0)
+       #   output=output"-";
+       # # Initials
        if(match(output,"^[^-]+[-]$")!=0)
          { 
            sub("[-]$","",output);
            initials[input]=output;
            n_initials++;
          }
+       # Medials
        if(match(output,"^[-].+[-]$")!=0)
          {
            sub("^[-]","",output); sub("[-]$","",output);
            medials[input]=output;
            n_medials++;
          }
+       # Finals
        if(match(output,"^[-][^-]+$")!=0)
          {
            sub("^[-]","",output);
@@ -52,17 +61,45 @@ for(j=1; j<=N; j++)
          if(!(flag[input, pos] in flags))
            flags[flag[input, pos]]=pos;
        n_flag[input, pos]++;
+       # Creating flags for ruling out repetitions of short (length=1) or "weak" (Vowel-Glide-Vowel) morphemes
+       # N.B. Vowel length is collapsed
+       if(rept=="yes")
+         { if(length(output)==1 || match(output,"^[aâêiîoô][wyý][êiî]?$")!=0)
+             { value=output;
+               gsub("â","a",value);
+               gsub("ê","e",value);
+               gsub("î","i",value);
+               gsub("ô","o",value);
+               gsub("ý","y",value);
+               mpflag[input, pos]="@P.morf."value"@";
+               mdflag[input, pos]="@D.morf."value"@";
+             }
+           else
+           { mpflag[input, pos]="@C.morf@";
+             mdflag[input, pos]="";
+           }
+           mflags[mpflag[input, pos]]="";
+         }
      }
 }
 }
 }
 END {
 print "Multichar_Symbols";
+print "! Part-of-speech flags";
 PROCINFO["sorted_in"]="@ind_str_asc";
 for(i in flags)
    { print i;
      sub("^@P","@R",i);
      print i;
+   }
+print "! Morpheme flags";
+for(i in mflags)
+   { print i;
+     if(match(i, "^@C")==0)
+       { sub("^@P","@D",i);
+         print i;
+       }
    }
 print "! P-O-S tags";
 for(i in infl)
@@ -77,7 +114,7 @@ print "LEXICON Initials";
 for(i in initials)
    for(j in infl)
       if(flag[i, j]!="")
-        { printf "%s%s:%s%s I2M", flag[i, j], i, flag[i, j], initials[i];
+        { printf "%s%s%s%s:%s%s%s%s I2M", mdflag[i, j], mpflag[i, j], flag[i, j], i, mdflag[i, j], mpflag[i, j], flag[i, j], initials[i];
           if(weight=="yes")
             printf " \"weight: %4.2f\" ;\n", -log(n_flag[i, j]/n_initials);
           else
@@ -95,7 +132,7 @@ print "LEXICON Medials";
 for(i in medials)
    for(j in infl)
       if(flag[i, j]!="")
-        { printf "%s%s:%s%s M2F", flag[i, j], i, flag[i, j], medials[i];
+        { printf "%s%s%s%s:%s%s%s%s M2F", mdflag[i, j], mpflag[i, j], flag[i, j], i, mdflag[i, j], mpflag[i, j], flag[i, j], medials[i];
           if(weight=="yes")
             printf " \"weight: %4.2f\" ;\n", -log(n_flag[i, j]/n_initials);
           else
@@ -109,12 +146,12 @@ print "/ Finals ;";
 print "";
 
 print "LEXICON Finals";
-# print "# ;";
-print "Parts-of-Speech ;";
+print "# ;";
+# print "Parts-of-Speech ;";
 for(i in finals)
    for(j in infl)
       if(flag[i, j]!="")
-        { printf "%s%s:%s%s F2F", flag[i, j], i, flag[i, j], finals[i];
+        { printf "%s%s%s%s:%s%s%s%s F2F", mdflag[i, j], mpflag[i, j], flag[i, j], i, mdflag[i, j], mpflag[i, j], flag[i, j], finals[i];
           if(weight=="yes")
             printf " \"weight: %4.2f\" ;\n", -log(n_flag[i, j]/n_initials);
           else
@@ -144,6 +181,8 @@ for(i in flags)
        poslex="UNSPECIFIED";
        if(match(pos,"^I")!=0) poslex="#";
        if(match(pos,"^P")!=0) poslex="#";
+       if(match(pos,"^N")!=0) dertag="+Der/N";
+       if(match(pos,"^V")!=0) dertag="+Der/V";
        if(pos=="NA-1") poslex="NA";
        if(pos=="NA-2") poslex="NA";
        if(pos=="NA-3") poslex="NA";
@@ -177,20 +216,7 @@ for(i in flags)
        if(pos=="VTA-4") poslex="VTA";
        if(pos=="VTA-5") poslex="VTAi";
        if(poslex!="UNSPECIFIED")
-         printf "%s %s ;\n", rflag, poslex;
+         printf "%s%s:%s %s ;\n", rflag, dertag, rflag, poslex;
      }
 print "";
 }'
-
-# @R.infl.VII-n@ VIIn ;
-# @R.infl.VII-v@ VIIw ;
-# @R.infl.VAI-n@ VAIn ;
-# @R.infl.VAI-v@ VAIw ;
-# @R.infl.VTI-1@ VTIm ;
-# @R.infl.VTI-2@ VTIw ;
-# @R.infl.VTI-3@ VTIw ;
-# @R.infl.VTA-1@ VTA ;
-# @R.infl.VTA-2@ VTA ;
-# @R.infl.VTA-3@ VTA ;
-# @R.infl.VTA-4@ VTA ;
-# @R.infl.VTA-5@ VTAi ;
