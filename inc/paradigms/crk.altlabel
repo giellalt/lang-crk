@@ -1,51 +1,51 @@
 FST TAG	LINGUISTIC (SHORT)	LINGUISTIC (LONG)	ENGLISH	NÊHIYAWÊWIN
 12Pl	1p incl	Actor: 1st Person Plural (Inclusive)	you and we	kiyânaw
 1Pl	1p excl	Actor: 1st Person Plural (Exclusive)	we (not you)	niyanân
-1PlO	→ 1p	Goal: 1st Person Plura (Inclusive)	you and us	kiyânaw
+1PlO	→ 1p	Goal: 1st Person Plura (Inclusive)	→ you and us	→ kiyânaw
 1Sg	1s	Actor: 1st Person Singular	I	niya
-1SgO	→ 1s	Goal: 1st Person Singular	me	niya
+1SgO	→ 1s	Goal: 1st Person Singular	→ me	→ niya
 2Pl	2p	Actor: 2nd Person Plural	you (all)	kiyawâw
-2PlO	→ 2p	Goal: 2nd Person Plural	you (all)	kiyawâw
+2PlO	→ 2p	Goal: 2nd Person Plural	→ you (all)	→ kiyawâw
 2Sg	2s	Actor: 2nd Person Singular	you (one)	kiya
 				
 				
-2SgO	→ 2s	Goal: 2nd Person Singular	you (one)	kiya
+2SgO	→ 2s	Goal: 2nd Person Singular	→ you (one)	→ kiya
 3Pl	3p	Actor: 3rd Person Plural	they	wiyanaw (ôki)
-3PlO	→ 3p	Goal: 3rd Person Plural	them	wiyanaw (ôki)
+3PlO	→ 3p	Goal: 3rd Person Plural	→ them	→ wiyanaw (ôki)
 3Sg	3s	Actor: 3rd Person Singular	s/he	wiya (awa)
-3SgO	→ 3s	Goal: 3rd Person Singular	him/her	wiya (awa)
+3SgO	→ 3s	Goal: 3rd Person Singular	→ him/her/it	→ wiya (awa)
 4Pl	4p	Actor: 3rd Person Plural (Obviative)	they (further)	wiyawâw (aniki)
 4Sg	4s	Actor: 3rd Person Singular (Obviative)	s/he (further)	wiya (ana)
 4Sg/Pl	4	Actor: 3rd Person Singular/Plural (Obviative)	s/he/they	wiya/wiyawâw (ana/aniki)
-4Sg/PlO	→ 4	Goal: 3rd Person Singular/Plural (Obviative)	him/her/them	wiya/wiyawâw (ana/aniki)
+4Sg/PlO	→ 4	Goal: 3rd Person Singular/Plural (Obviative)	→ him/her/them	→ wiya/wiyawâw (ana/aniki)
 5Sg/Pl	5	Actor: 3rd Person Singular/Plural (Further Obviative)	s/he/they (further)	wiya/wiyawâw (nâha/nêki)
-5Sg/PlO	→ 5	Goal: 3rd Person Singular/Plural (Obviative)	him/her/them	wiya/wiyawâw (nâha/nêki)
+5Sg/PlO	→ 5	Goal: 3rd Person Singular/Plural (Obviative)	→ him/her/them (further)	→ wiya/wiyawâw (nâha/nêki)
 A	Animate	Animate		
 AI		Animate Intransitive	like: mîcisow	tâpiskôc: mîcisow
 				
 				
-Arab		Arabic		
+Arab		Arabic	like: 0, 1, 2, ...	tâpiskôc: 0, 1, 2, ...
 CC		Co-ordinating Conjunction	like: êkwa	tâpiskôc: êkwa
 CS		Subordinate Conjunction	like: mâka	tâpiskôc: mâka
 Cnj		Conjunct	ê-/kâ- word	ê-/kâ- itwêwin
-				
-Cond		Conditional	when something is happening	
-D		Dependent		
+Cond		Conditional	when/if something happens	kisik/kîsâspin ê-ispayik
+Fut+Cond		Future Conditional	when/if something happens	kisik/kîsâspin ê-ispayik
+D		Dependent	like: nôhkom, nitâs	tâpiskôc: nôhkom, mîpit
 Def		Definite		
+Fut+Def		Future Definite	something will certainly happen	ka-ispayik nîkânihk/cikêmâ 
 Del		Delayed	later	mwêstas
 Dem		Demonstrative	like: awa, ôma	tâpiskôc: awa, ôma
 Der/Com		Derived Comitative		
-Der/Dim		Derived diminutive		
+Der/Dim		Derived diminutive	like: maskosis	tâpiskôc: maskosis
 Der/X		Derived Unspecified Actor		
-Dim		Diminutive	smaller/lesser/younger	
-				
+Dim		Diminutive	smaller/lesser/younger	nawac apisîs
 Dist		Distal	like: nâha, nêma	tâpiskôc: nâha, nêma
-Distr		Distributive	among	
+Distr		Distributive	among	âkine
 Err/Orth		(Sub-standard form)		
 Foc		Focus		
-Fut		Future	something is happening later on	ê-ispayik mwêstas
-I		Inanimate		
-II		Inanimate Intransitive	like: kîsikaw, pipon	tâpiskôc: kîsikaw, pipon
+Fut		Future	something is happening later on	ê-ispayik mwêstas/nîkânihk
+I		Inanimate	like: cîman, wâwi	tâpiskôc: cîman, wâwi
+II		Inanimate Intransitive	like: miywâsin, mihkwâw	tâpiskôc: miywâsin, mihkwâw
 INM	INM			
 IPC	IPC			
 IPH	IPH			
@@ -53,17 +53,17 @@ IPJ	IPJ
 IPN	IPN			
 IPP	IPP			
 IPV	IPV			
-Imm		Immediate	now	mêkwâc
-Imp		Imperative	command/request	
-				
+Imm		Immediate	now	mêkwâc/kîsac
+Imp		Imperative	command/request	nitotamâkêwin
+Imp+Imm		Immediate Imperative	command/request that something happens immediately	nitotamâkêwin piko ka-ispayik
 Ind		Independent	ni-/ki- word	ni-/ki- itwêwin
-				
-Int		Intentional	will	
-Interj		Interjection		
-Ipc		Independent Particle		
-Loc		Locative	in/on	
+Int		Intentional	want	akâwâtamowin
+Fut+Int		Future Intentional	someone wants something to happen	awiyak pakosêyimow kâ-wî-ihkik nîkânihk 
+Interj		Interjection	like: êha	tâpiskôc: êha
+Ipc		Independent Particle	like: êkwa, anohc, tânisi	tâpiskôc: êkwa, anohc, tânisi
+Loc		Locative	in/on/to	pîhci-, tahkoht, ohci
 Med		Medial	like: ana, anima	tâpiskôc: ana, anima
-N		Noun	like: asikan, maskwa	tâkiskôc: asikan, maskwa
+N		Noun	like: asikan, maskwa	tâpiskôc: asikan, maskwa
 NA-1	NA-1	Regular animate noun stem	like: pahkwêsikan, asikan	tâpiskôc: pahkwêsikan, asikan
 NA-2	NA-2	Vowel-glide animate noun stem	like: kihc-ôkiniy, ayapiy	tâpiskôc: kihc-ôkiniy, ayapiy
 NA-3	NA-3	Consonant-/w/ animate noun stem	like: masinahikanāhtik(w), askihk(w)	tâpiskôc: masinahikanāhtik(w), askihk(w)
@@ -337,18 +337,18 @@ PV/yikate	Preverb: yîkatê-		aside
 PV/yipe	Preverb: yîpê-		on a slant, on a slope, on the side, sideways	
 PV/yoski	Preverb: yôski-		soft, softly	
 Pl		Plural	many	mihcêt
-PlO	→ Pl	Goal: Plural		
+PlO	→ Pl	Goal: Plural	→ many	→ mihcêt
 				
-PrA		Pronoun: Animate		tâkiskôc: awa
-PrI		Pronoun: Inanimate		tâkiskôc: ôma
+PrA		Pronoun: Animate		tâpiskôc: awa
+PrI		Pronoun: Inanimate		tâpiskôc: ôma
 				
 Pron		Pronoun	like: awa, ôma, niya	tâpiskôc: awa, ôma, niya
-Prop		Proper		
+Prop		Proper	how something/someone is called	isiyihkâsowin
 Prox		Proximate	like: awa, ôma	tâpiskôc: awa, ôma
 Prs		Present	something is happening now	ê-ispayik anohc/mêkwâc/mâna
 Prt		Past	something happened earlier	ê-ispayik kwayâc 
-Px12Pl	Possessor: 1p inclusive	Possessor: 1st Person Plural (Inclusive)	your and our	
-Px1Pl	Possessor: 1p exclusive	Possessor: 1st Person Plural (Exclusive)	our (not your)	
+Px12Pl	Possessor: 1p inclusive	Possessor: 1st Person Plural (Inclusive)	your and our	kiyânaw
+Px1Pl	Possessor: 1p exclusive	Possessor: 1st Person Plural (Exclusive)	our (not your)	niyanân
 Px1Sg	Possessor: 1s	Possessor: 1st Person Singular	my	niya
 Px21Pl	Possessor: 1st person inclusive plural	Possessor: 1st Person Plural (Inclusive)	your and our	kiyânaw
 Px2Pl	Possessor: 2p	Possessor: 2nd Person Plural	your (all)	kiyawâw
@@ -360,20 +360,20 @@ Px4Sg	Possessor: 4s	Possessor: 3rd Person Singular (Obviative)	their (further)	w
 Px4Sg/Pl	Possessor: 3rd person singular/plural (obviative)	Possessor: 3rd Person Singular/Plural (Obviative)	his/her/their	wiya/wiyawâw (ana/aniki)
 PxX	Possessor: Unspecified	Possessor: Unspecified	someone's	awiya
 				
-RdplS		Reduplication: Strong/Heavy		
-RdplW		Reduplication: Weak/Light		
+RdplS		Reduplication: Strong/Heavy	like: na-nipâw	tâpiskôc: na-nipâw
+RdplW		Reduplication: Weak/Light	like: nâh-nipâw	tâpiskôc: nâh-nipâw
 Rel		Relative		
-Rom		Roman		
+Rom		Roman	like: I, V, X	tâpiskôc: I, V, X
 				
 Sg		Singular	one	pêyak
 				
 				
 				
 				
-TA	Transitive Animate		like: wâpamêw	tâpiskôc: wâpamêw
-TI	Transitive Inaminate		like: wâpahtam	tâpiskôc: wâpahtam
+TA	Transitive Animate		like: wîcihêw, itêw	tâpiskôc: wîcihêw, itêw
+TI	Transitive Inaminate		like: nâtam, mîciw	tâpiskôc: nâtam, mîciw
 				
-V	Verb		like: wâpamêw	tâpiskôc: wâpamêw
+V	Verb		like: miywâsin, nipâw, mîciw, itêw	tâpiskôc: miywâsin, nipâw, mîciw, itêw
 VAI-n	VAI-n	n-final animate intransitive verb	like: pimisin	tâpiskôc: pimisin
 VAI-v	VAI-v	vowel-final animate intransitive verb	like: nipâw	tâpiskôc: nipâw
 VII-n	VII-n	n-final inanimate intransive verb	like: miywâsin	tâpiskôc: miywâsin
@@ -388,4 +388,4 @@ VTI-2	VTI-2	transitive inanimate verb – class 2: stem-final -â	like: kisihtâ
 VTI-3	VTI-3	transitive inanimate verb – class 3	like: mîciw	tâpiskôc: mîciw
 				
 X	Actor: Unspecified	Actor: someone	someone	awiya
-XO	Goal: Unspecified	Goal: someone	someone	awiya
+XO	Goal: Unspecified	Goal: someone	→ someone	→ awiya
