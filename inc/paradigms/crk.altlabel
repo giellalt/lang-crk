@@ -1,7 +1,7 @@
 FST TAG	LINGUISTIC (SHORT)	LINGUISTIC (LONG)	ENGLISH	NÊHIYAWÊWIN
-12Pl	1p incl	Actor: 1st Person Plural (Inclusive)	you and we	kiyânaw
-1Pl	1p excl	Actor: 1st Person Plural (Exclusive)	we (not you)	niyanân
-1PlO	→ 1p	Goal: 1st Person Plura (Inclusive)	→ you and us	→ kiyânaw
+12Pl	1p (incl)	Actor: 1st Person Plural (Inclusive)	you and we	kiyânaw
+1Pl	1p (excl)	Actor: 1st Person Plural (Exclusive)	we (not you)	niyanân
+1PlO	→ 1p (excl)	Goal: 1st Person Plural (Exclusive)	→ you and us	→ kiyânaw
 1Sg	1s	Actor: 1st Person Singular	I	niya
 1SgO	→ 1s	Goal: 1st Person Singular	→ me	→ niya
 2Pl	2p	Actor: 2nd Person Plural	you (all)	kiyawâw
@@ -29,21 +29,22 @@ CC		Co-ordinating Conjunction	like: êkwa	tâpiskôc: êkwa
 CS		Subordinate Conjunction	like: mâka	tâpiskôc: mâka
 Cnj		Conjunct	ê-/kâ- word	ê-/kâ- itwêwin
 Cond		Conditional	when/if something happens	kisik/kîsâspin ê-ispayik
-Fut+Cond		Future Conditional	when/if something happens	kisik/kîsâspin ê-ispayik
+Fut+Cond		Future conditional	when/if something happens	kisik/kîsâspin ê-ispayik
 D		Dependent	like: nôhkom, nitâs	tâpiskôc: nôhkom, mîpit
 Def		Definite		
-Fut+Def		Future Definite	something will certainly happen	ka-ispayik nîkânihk/cikêmâ 
+Fut+Def	Future Definite	Future definite tense	something will certainly happen	ka-ispayik nîkânihk/cikêmâ 
 Del		Delayed	later	mwêstas
+Imp+Del		Delayed imperative	command/request that something will happens later	nitotamâkêwin ka-ispayik mwêstâs
 Dem		Demonstrative	like: awa, ôma	tâpiskôc: awa, ôma
-Der/Com		Derived Comitative		
+Der/Com		Derived comitative		
 Der/Dim		Derived diminutive	like: maskosis	tâpiskôc: maskosis
-Der/X		Derived Unspecified Actor		
-Dim		Diminutive	smaller/lesser/younger	nawac apisîs
+Der/X		Derived unspecified actor		
+Dim		Diminutive	smaller/lesser/younger	nawac apisîs / ayiwâk osk-âyi
 Dist		Distal	like: nâha, nêma	tâpiskôc: nâha, nêma
 Distr		Distributive	among	âkine
 Err/Orth		(Sub-standard form)		
 Foc		Focus		
-Fut		Future	something is happening later on	ê-ispayik mwêstas/nîkânihk
+Fut	Future	Future tense	something is happening later on	ê-ispayik mwêstas/nîkânihk
 I		Inanimate	like: cîman, wâwi	tâpiskôc: cîman, wâwi
 II		Inanimate Intransitive	like: miywâsin, mihkwâw	tâpiskôc: miywâsin, mihkwâw
 INM	INM			
@@ -55,10 +56,10 @@ IPP	IPP
 IPV	IPV			
 Imm		Immediate	now	mêkwâc/kîsac
 Imp		Imperative	command/request	nitotamâkêwin
-Imp+Imm		Immediate Imperative	command/request that something happens immediately	nitotamâkêwin piko ka-ispayik
+Imp+Imm		Immediate imperative	command/request that something happens immediately	nitotamâkêwin piko ka-ispayik
 Ind		Independent	ni-/ki- word	ni-/ki- itwêwin
 Int		Intentional	want	akâwâtamowin
-Fut+Int		Future Intentional	someone wants something to happen	awiyak pakosêyimow kâ-wî-ihkik nîkânihk 
+Fut+Int	Future Intentional	Future intentional tense	someone wants something to happen	awiyak pakosêyimow kâ-wî-ihkik nîkânihk 
 Interj		Interjection	like: êha	tâpiskôc: êha
 Ipc		Independent Particle	like: êkwa, anohc, tânisi	tâpiskôc: êkwa, anohc, tânisi
 Loc		Locative	in/on/to	pîhci-, tahkoht, ohci
@@ -91,7 +92,7 @@ NI-?	NI-?
 Neg		Negation	not	nâmoya
 Num		Numeral	Number	akihtâson
 Obv		Obviative	further	anima/anihi (awasimê)
-				
+Possession		Ownership	whose / Whom something belongs to	tipêyihcikêwin / awîni (kâ-tipêyihtahk)
 				
 PV		Preverb		
 PV/acici	Preverb: acici-		head down; upside down	
@@ -345,20 +346,20 @@ PrI		Pronoun: Inanimate		tâpiskôc: ôma
 Pron		Pronoun	like: awa, ôma, niya	tâpiskôc: awa, ôma, niya
 Prop		Proper	how something/someone is called	isiyihkâsowin
 Prox		Proximate	like: awa, ôma	tâpiskôc: awa, ôma
-Prs		Present	something is happening now	ê-ispayik anohc/mêkwâc/mâna
-Prt		Past	something happened earlier	ê-ispayik kwayâc 
-Px12Pl	Possessor: 1p inclusive	Possessor: 1st Person Plural (Inclusive)	your and our	kiyânaw
-Px1Pl	Possessor: 1p exclusive	Possessor: 1st Person Plural (Exclusive)	our (not your)	niyanân
+Prs	Present	Present tense	something is happening now	ê-ispayik anohc/mêkwâc/mâna
+Prt	Past	Past tense	something happened earlier	ê-ispayik kwayâc 
+Px12Pl	Possessor: 1p (incl)	Possessor: 1st Person Plural (Inclusive)	your and our	kiyânaw
+Px1Pl	Possessor: 1p (excl)	Possessor: 1st Person Plural (Exclusive)	our (not your)	niyanân
 Px1Sg	Possessor: 1s	Possessor: 1st Person Singular	my	niya
-Px21Pl	Possessor: 1st person inclusive plural	Possessor: 1st Person Plural (Inclusive)	your and our	kiyânaw
+Px21Pl	Possessor: 1p (incl)	Possessor: 1st Person Plural (Inclusive)	your and our	kiyânaw
 Px2Pl	Possessor: 2p	Possessor: 2nd Person Plural	your (all)	kiyawâw
 Px2Sg	Possessor: 2s	Possessor: 2nd Person Singular	your (one)	kiya
 Px3Pl	Possessor: 3p	Possessor: 3rd Person Plural	their	wiyawâw
 Px3Sg	Possessor: 3s	Possessor: 3rd Person Singular	his/her	wiya (awa)
 Px4Pl	Possessor: 4p	Possessor: 3rd Person Plural (Obviative)	his/her (further)	wiya (ana)
 Px4Sg	Possessor: 4s	Possessor: 3rd Person Singular (Obviative)	their (further)	wiyawâw (aniki)
-Px4Sg/Pl	Possessor: 3rd person singular/plural (obviative)	Possessor: 3rd Person Singular/Plural (Obviative)	his/her/their	wiya/wiyawâw (ana/aniki)
-PxX	Possessor: Unspecified	Possessor: Unspecified	someone's	awiya
+Px4Sg/Pl	Possessor: 4	Possessor: 3rd Person Singular/Plural (Obviative)	his/her/their	wiya/wiyawâw (ana/aniki)
+PxX	Possessor: X	Possessor: Unspecified	someone's	awiya
 				
 RdplS		Reduplication: Strong/Heavy	like: na-nipâw	tâpiskôc: na-nipâw
 RdplW		Reduplication: Weak/Light	like: nâh-nipâw	tâpiskôc: nâh-nipâw
