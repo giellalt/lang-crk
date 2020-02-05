@@ -2460,7 +2460,7 @@ LEXICON VTAi_IMP_NULL_SG_SUFFIX
 
 !!!!!!! Mixed !!!!!!!
 
-+Imm+2Sg+3SgO:i2 VERB_ENDLEX ;
++Imm+2Sg+3SgO:%>i VERB_ENDLEX ;
 
 +Del+2Sg+3SgO:%>âhkan VERB_ENDLEX ;
 
@@ -2491,8 +2491,8 @@ LEXICON VTAi_IMP_NULL_PL_SUFFIX
 +Imm+12Pl+3SgO:%>âtân VERB_ENDLEX ;
 +Imm+12Pl+3PlO:%>âtânik VERB_ENDLEX ;
 
-+Imm+2Pl+3SgO:%>ihk VERB_ENDLEX ;
-+Imm+2Pl+3PlO:%>ihkok VERB_ENDLEX ;
++Imm+2Pl+3SgO:%>i2hk VERB_ENDLEX ;
++Imm+2Pl+3PlO:%>i2hkok VERB_ENDLEX ;
 
 +Del+2Sg+3PlO:%>âhkanik VERB_ENDLEX ;
 
