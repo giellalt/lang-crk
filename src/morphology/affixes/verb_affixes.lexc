@@ -1806,13 +1806,16 @@ LEXICON VTIm_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 !!! STEM CLASS
 
 LEXICON VTA  !!= * @CODE@ Multi-Syllabic stems 
-+V+TA: VTA_WICI ;
++V+TA:0 VTA_WICI ;
 
 LEXICON VTA_PL  !!= * @CODE@ Multi-Syllabic stems plural only forms
-+V+TA: VTA_PL_WICI ;
++V+TA:0 VTA_PL_WICI ;
+
+LEXICON VTAt  !!= * @CODE@ Multi-Syllabic t/s-final alternating stems
++V+TA:0 VTAi_WICI ;
 
 LEXICON VTAi  !!= * @CODE@ Mono-Syllabic stems
-+V+TA: VTAi_WICI ;
++V+TA:0 VTAi_WICI ;
 
 
 !!! WICI !!= * @CODE@ -RULES OUT TAs FROM TAKING THE COM.
@@ -2419,8 +2422,8 @@ LEXICON VTA_IMP_NULL_PL_SUFFIX
 +Imm+12Pl+3SgO:%>âtân VERB_ENDLEX ;
 +Imm+12Pl+3PlO:%>âtânik VERB_ENDLEX ;
 
-+Imm+2Pl+3SgO:%>i2hk VERB_ENDLEX ;
-+Imm+2Pl+3PlO:%>i2hkok VERB_ENDLEX ;
++Imm+2Pl+3SgO:%>ihk VERB_ENDLEX ;
++Imm+2Pl+3PlO:%>ihkok VERB_ENDLEX ;
 
 +Del+2Sg+3PlO:%>âhkanik VERB_ENDLEX ;
 
