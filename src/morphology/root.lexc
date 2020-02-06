@@ -45,6 +45,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +CC         !!= * @CODE@
 +CS         !!= * @CODE@
 +Interj     !!= * @CODE@
++Phr        !!= * @CODE@
 +Pron       !!= * @CODE@
 +Num        !!= * @CODE@
 +Arab       !!= * @CODE@
@@ -54,6 +55,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +RIGHT      !!= * @CODE@ = the right part of a paired punctuation symbol
 +CLB        !!= * @CODE@ = clause boundary symbols
 +Symbol     !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
++ABBR       !!≈ * @CODE@ 
 
 !! Nominal morphology
 
