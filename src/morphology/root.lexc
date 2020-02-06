@@ -74,10 +74,12 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Prox	    !!= * @CODE@ Demonstrative Proximate
 +Med	    !!= * @CODE@ Demonstrative Medial
 +Dist	    !!= * @CODE@ Demonstrative Distal
-
+Pers !!≈ * @CODE@ = personal pronouns? At least it seems so based on the code
 +Interr     !!= * @CODE@ Interrogative (who/whose/what/what kind)
-
++Incl
 +Foc	    !!= * @CODE@ Focus particle
+
+Ord !!≈ ordinals
 
 !! Verbal MSP
 +Prs  !!= * @CODE@
@@ -473,7 +475,7 @@ d2  !!=* @CODE@  Reduplication consonant marker
 
 +Err/Orth !!= * @CODE@ tag for substandard forms
 +Use/NG  !!= * @CODE@ not-generate, for ped generation isme-ped.fst
-
++Eng !!≈ * @CODE@ indicates that this is an English form
 
 !! !! Flagdiacritics
 
