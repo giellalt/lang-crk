@@ -273,33 +273,33 @@ for(i=2; i<=nr; i++)
 # VERBS: AEW classes to contlexes in new crk FST:
 #
 # VII VERBS
-# VII-1v -> VIIw_SG (impersonal)
-# VII-2v -> VIIw (regular)
-# VII-2v (-a) -> VIIw_PL (plural only)
-# VII-1n -> VIIn_SG (impersonal, -n3)
-# VII-2n -> VIIn (regular, -n3)
-# VII-2n (-a) -> VIIn_PL (plural only, -n3)
+# VII-1v -> VIIw_SG (impersonal - singular only)
+# VII-2v (lemma: not -a) -> VIIw (regular sg+pl)
+# VII-2v (lemma: -a) -> VIIw_PL (plural only)
+# VII-1n -> VIIn_SG (impersonal) + stem: -an -> -an3; -pipon -> -pinon3
+# VII-2n -> VIIn (regular) + stem: -an -> -an3; -pipon -> -pinon3
+# VII-2n (lemma: -a) -> VIIn_PL (plural only) + stem: -an -> -an3; -pipon -> -pinon3
 #
 # VAI VERBS
-# VAI-1 -> VAIw (regular vowel-final)
-# VAI-1 (-ak) -> VAIw_PL (plural only)
-# VAI-2 -> VAIn (regular, -n2?)
-# VAI-2 (-ak) -> VAIn_PL (plural only, -n2?)
-# VAI-3 (old, VTI-like) -> ??
+# VAI-1 (lemma: not -ak) -> VAIw (regular vowel-final)
+# VAI-1 (lemma: -ak) -> VAIw_PL (plural only)
+# VAI-2 -> VAIn (regular) + stem: -n -> -n3 + a/ê alternation in suffixation <- n2 (affixes)
+# VAI-2 (lemma: -ak) -> VAIn_PL (plural only) + a/ê alternation in suffixation <- n2 (affixes)
+# VAI-3 (VTI-like) -> TBI
 #
 # VTI VERBS
-# VTI-1 -> VTIm (regular -m final, -n2, -t4)
-# VTI-1 (-ak) -> VTIm_PL (plural only, -n2)
-# VTI-2 -> VTIw (VAI-like, -n2)
-# VTI-3 -> VTIw (Diminutives, Habituals, VAI-like, -n2)
+# VTI-1 (lemma: not -ak) -> VTIm (regular) + lemma: -m final + a/ê alternation in suffixation <- n2 (affixes), -t4 (X)
+# VTI-1 (lemma: -ak) -> VTIm_PL (plural only) + lemma: -m final + a/ê alternation in suffixation <- n2 (affixes), -t4 (X)
+# VTI-2 -> VTIw (VAI-like) + a/ê alternation in suffixation <- n2 (affixes)
+# VTI-3 -> VTIw (Diminutives, Habituals, VAI-like) + a/ê alternation in suffixation <- n2 (affixes)
 #
 # VTA VERBS
-# VTA-1 -> VTA
-# VTA-2 -> VTA
-# VTA-2 (-ak) -> VTA_PL (plural only)
-# VTA-3 -> VTA
-# VTA-4 -> VTA (-t3)
-# VTA-5 -> VTAi (ahêw, [ay-]itêw)
+# VTA-1 (lemma: not -ak) -> VTA (regular) + stem: mow- -> mow2-
+# VTA-2 (lemma: not -ak) -> VTA (regular)
+# VTA-2 (lemma: -ak) -> VTA_PL (plural only)
+# VTA-3 (lemma: not -ak) -> VTA (regular)
+# VTA-4 -> VTAt + stem: -t -> -t3
+# VTA-5 -> VTAi (ahêw, [ay-]itêw) + stem: -it -> -it3
 
 # Old classes
 # VII
@@ -354,14 +354,14 @@ if(match(lemma,"an$")!=0 || match(lemma,"ana$")!=0 || lemma=="nîpin" || lemma==
 # nipâw:nipâ VAIw ;
 # pimisin:pimisin3 VAIn ;
 
-if(pos=="VAI-1" && match(lemma,"ak$")==0)
-  { clex="VAIw"; sub("n$","n3",stem); } # except nîminâniwan (which is an inflected form of "nîmiw")
+if(pos=="VAI-1" && match(lemma,"ak$")==0 && lemma!="nîminâniwan") # except nîminâniwan (inflected form of "nîmiw")
+  { clex="VAIw"; }
 if(pos=="VAI-1" && match(lemma,"ak$")!=0) 
   { clex="VAIw_PL"; }
 if(pos=="VAI-2" && match(lemma,"ak$")==0) 
-  { clex="VAIn"; }
+  { clex="VAIn"; sub("n$","n3",stem); }
 if(pos=="VAI-2" && match(lemma,"ak$")!=0) 
-  { clex="VAIn_PL"; }
+  { clex="VAIn_PL"; sub("n$","n3",stem); }
 # if(pos=="VAI-3")
 #   { clex="???"; } # Needs implementation!
 
@@ -400,32 +400,25 @@ if(pos=="VTI-3")
 # ayâwêw:ayâw2 VTA ;      ! w2:w for non-collapsing cases
 
 if(pos=="VTA-1")
-  { if(lemma!="itêw")
-      clex="VTA";
+  { clex="VTA";
     if(lemma=="mowêw")
       stem="mow2";
-    if(lemma=="itêw") # itêw  --> iti in IMP2SG
-      { clex="VTAi"; stem="it3"; }
   }
-if(pos=="VTA-2" && match(lemma,"ak$")==0) # w -> w2 (except kiskinohamawêw)
+if(pos=="VTA-2" && match(lemma,"ak$")==0) # (w -> w2: implemented -ayâwêw)
   { clex="VTA";
-#    if(lemma!="kiskinohamawêw")
-#      sub("w$","w2",stem);
+    if(match(lemma,"^[.+-]?ayâwêw$")!=0) # unclear: kiskinohamawêw
+       sub("w$","w2",stem);
   }
 if(pos=="VTA-2" && match(lemma,"ak$")!=0) 
   { clex="VTA_PL"; }
 if(pos=="VTA-3")
   { clex="VTA"; }
 if(pos=="VTA-4") # t -> t3
-  { clex="VTA";
+  { clex="VTAt";
     sub("t$","t3",stem);
   }
 if(pos=="VTA-5")
-  { if(lemma=="ahêw" || lemma=="itêw" || match(lemma,".+[-]itêw$")!=0)  # ahêw, itêw, and ay-itêw --> ahi, iti and ay-iti in IMP2SG
-      { clex="VTAi"; sub("t$","t3",stem); }
-    if(lemma=="kostêw" || lemma=="wîhkistêw") # s:0 when preceeding t3:s
-      { clex="VTA"; sub("t$","t3",stem); }
-  }
+  { clex="VTAi"; sub("t$","t3",stem); }
 
       gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
       gsub("ý","y",stem);
@@ -437,7 +430,7 @@ if(pos=="VTA-5")
            else
              output[contlex] = output[contlex] sprintf("%s %s", lemma, clex);
            if(full=="full")
-             { output[contlex] = output[contlex] sprintf(" \"%s\"", gloss)
+             { output[contlex] = output[contlex] sprintf(" \"%s\" ;", gloss)
                output[contlex] = output[contlex] " ! AEW: " pos
                if(note1!="") note1="-";
                if(note2=="") note2="-";
@@ -451,6 +444,52 @@ if(pos=="VTA-5")
            output[contlex] = output[contlex] sprintf("\n");
          }
 }
+if(class=="I")
+{
+
+# Indeclinable particle frequencies
+# 2014 2019 Subclass Definition
+#  934 1120 IPC      Regular single independent particle
+#  250  324 IPV      Preverb
+#  160  229 IPH      Multipart phrasal particle
+#    0  190 INM      Place/person name
+#   91  128 IPJ      Interjection
+#   64   82 IPN      Prenoun
+#    9   10 IPC ;; IPJ Ambiguous: particle/interjection
+#    4    4 IPP      Preverb-like?
+
+  PROCINFO["sorted_in"]="@ind_str_asc";
+  output["Particle"] = sprintf("+Ipc # ;\n")
+  output["Particle/Interjection"] =  sprintf("+Ipc+Interj # ;\n");
+  output["Particle/Phrase"] = sprintf("+Ipc+Phr # ;\n")
+  output["Particle/Name"] = sprintf("+Ipc+Prop # ;\n")
+
+  contlex="PARTICLES";
+  # IPP requires consideration; IPV and IPN to be dealt with separately
+  if(pos=="IPC")
+    clex="Particle";
+  if(pos=="IPJ")
+    clex="Particle/Interjection";
+  if(pos=="IPC ;; IPJ")
+    clex="Particle";
+  if(pos=="IPH")
+    { clex="Particle/Phrase"; gsub(" ","% ",lemma); }
+  if(pos=="INM")
+    { clex="Particle/Name"; gsub(" ","% ",lemma); }
+
+
+  gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
+  gsub("ý","y",stem);
+
+  if(clex!="")
+    { output[contlex] = output[contlex] sprintf("%s %s", lemma, clex);
+      if(full=="full")
+        output[contlex] = output[contlex] sprintf(" \"%s\" ;", gloss);
+      else
+        output[contlex] = output[contlex] sprintf(" ;");
+      output[contlex] = output[contlex] sprintf("\n");
+    }
+}  
 }
 
 for(c in output)
@@ -458,19 +497,13 @@ for(c in output)
      print output[c];
      print "";
    }
-}' | less; exit 0; # Currently word-class="I" is skipped and ignored (and probably handled already).
+}' | less; exit 0;
 
 # N.B. IPC code hasn't been changed in the last 4 years.
 # Maybe we'd want to specify multiword expressions
 # as well as common contractions and typos as +Err/Orth cases
 
-# 934  IPC
-# 250  IPV
-# 160  IPH
-#  91  IPJ
-#  64  IPN
-#   9  IPC ;; IPJ
-#   4  IPP
+# Like obsolete code for Ipc
 
 if(class=="I")
 { if(pos=="IPC" || pos=="IPJ" || pos=="IPC ;; IPJ")
