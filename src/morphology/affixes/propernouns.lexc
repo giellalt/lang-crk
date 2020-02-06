@@ -19,14 +19,11 @@
 !! The Plains Cree language proper nouns inflect in the same cases as regular
 !! nouns, but with a colon (':') as separator.
 
-LEXICON ProperNounCases
-+N+Prop:%:   #  ;
-
 LEXICON prop
-+N+Prop+Sg: # ;
++N+Prop+Sg:0 # ;
 
 LEXICON iprop
 +N+Prop+Sg:iy # ;
-+N+Prop+Sg+Obv:îwa # ;
++N+Prop+Obv:îwa # ;
 
 ! vim: set ft=xfst-lexc:
