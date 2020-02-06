@@ -61,10 +61,11 @@ Particles
  * +Prox	     Demonstrative Proximate
  * +Med	     Demonstrative Medial
  * +Dist	     Demonstrative Distal
-
+ * +Pers = personal pronouns? At least it seems so based on the code
  * +Interr      Interrogative (who/whose/what/what kind)
-
  * +Foc	     Focus particle
+
++Ord +Ord   ordinals
 
 Verbal MSP
  * +Prs  
@@ -193,7 +194,7 @@ normative and descriptive analysers, and generators for different purposes.
 
  * +Err/Orth  tag for substandard forms
  * +Use/NG   not-generate, for ped generation isme-ped.fst
-
+ * +Eng indicates that this is an English form
 
 Flagdiacritics
 
