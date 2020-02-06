@@ -72,7 +72,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Prox	    !!= * @CODE@ Demonstrative Proximate
 +Med	    !!= * @CODE@ Demonstrative Medial
 +Dist	    !!= * @CODE@ Demonstrative Distal
-+QDL        !! TODO: Is this ever used? What for?
 
 +Interr     !!= * @CODE@ Interrogative (who/whose/what/what kind)
 
@@ -82,7 +81,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Prs  !!= * @CODE@
 +Fut  !!= * @CODE@
 +Prt  !!= * @CODE@
-+Prf  !!= * @CODE@
 +Cnj  !!= * @CODE@
 +Int  !!= * @CODE@ Future Intentional
 +Def  !!= * @CODE@ Future Definite (TODO: okay to overlap with particle tag of the same name?)
@@ -91,12 +89,11 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Imp  !!= * @CODE@ Imperative, consider deleting +Imp tag
 +Del  !!= * @CODE@ Delayed imperative
 +Imm  !!= * @CODE@ Immediate imperative, consider deleting +Imp tag
-+Sbj  !!= * @CODE@ Subjunctive, aka Conjunct mode, ê-
 +Cond !!= * @CODE@ TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
 
 +1Sg    !!= * @CODE@ first singular
 +2Sg    !!= * @CODE@ etc
-+2Sg/Pl   !!= * @CODE@ Used in the syncretic 2sg/pl -> 1pl in the VTA paradigms
+! +2Sg/Pl   !!= * @CODE@ Used in the syncretic 2sg/pl -> 1pl in the VTA paradigms (N.B. obsolete)
 +3Sg    !!= * @CODE@
 
 +1Pl    !!= * @CODE@ 1Pl is exclusive plural (I, them, not you)
@@ -123,10 +120,12 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +X !!= * @CODE@ Unspecified actor forms Okimāsis p. 118
 
 
-!! Nominal MSP
+!! Nominal morphosyntactic features
+! Number
 +Sg		 !!= * @CODE@ singular
 +Pl		 !!= * @CODE@ plural
 
+! Possession
 +Px1Sg	 !!= * @CODE@ person prefixes for nouns
 +Px2Sg	 !!= * @CODE@
 +Px3Sg	 !!= * @CODE@
@@ -138,6 +137,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Px4Pl	 !!= * @CODE@
 +Der/Dim !!= * @CODE@ diminutive derivation
 
+! Reduplication
 RdplW+ !!= * @CODE@ Reduplication Type 1 (Weak)
 RdplS+ !!= * @CODE@ Reduplication Type 2 (Strong)
 
@@ -155,7 +155,7 @@ RdplS+ !!= * @CODE@ Reduplication Type 2 (Strong)
 +I		 !!= * @CODE@ inanimate noun
 +D		 !!= * @CODE@ dependent noun
 
-+Incl    !!= * @CODE@ me too, etc.
+! +Incl    !!= * @CODE@ me too, etc. (N.B. Not used yet)
 +Qst     !!= * @CODE@ yes-no question particle; cî
 +Neg     !!= * @CODE@ negation; [na]môy[a].
 
@@ -429,7 +429,6 @@ PV/yoski+
 
 %> 		 !!= * @CODE@ suffix border
 %< 		 !!= * @CODE@ prefix border
-+WAK  	 !!= * @CODE@ tag to keep track of -wak plurals  ! REMOVE
 
 
         !! !!Symbols that need to be escaped on the lower side (towards twolc):
@@ -440,9 +439,7 @@ PV/yoski+
  %[%<%] !!= @CODE@ - Literal <
         !! }}}
 
-
-
-%^LOC    !!= * @CODE@  Locative ! REMOVE
+!! !! Special characters for morphophonology
 w2      !!= * @CODE@ mowêw:mow2
 t2 		!!= * @CODE@ Epenthetic -t- between person prefixes and vowel-initial stems
 t3      !!= * @CODE@ t to s in VTA-4
@@ -453,6 +450,7 @@ i2      !!= * @CODE@ vta-5i epenthesis.
 
 h2 		!!= * @CODE@  Prefix in possessives
 
+! Reduplication
 d1  !!=* @CODE@  Reduplication consonant marker
 d2  !!=* @CODE@  Reduplication consonant marker
 
@@ -460,17 +458,9 @@ d2  !!=* @CODE@  Reduplication consonant marker
 !! Mostly, these are not realized themselves as any grapheme/phoneme
 
 %^DIM	 !!=* @CODE@  Diminutive suffix
-%^POS    !!=* @CODE@  Possessive suffix ! ! REMOVE
 %^COM    !!=* Comitative suffix marker (for stem-suffix juncture vowel lengthening)
 %^IC     !!=* @CODE@ Trigger Initial Change in changed conjunct forms
 %^EGLOT  !!= * @CODE@  glottal stop after e, for eh- in conjunctive order
-
-%^EA     !!= * @CODE@  ê to â in 1, 2 person of ê-stems ! REMOVE
-%^TS     !!= * @CODE@  t3 to s in VTA-4 verbs before some i-init suf ! REMOVE
-%^NII    !!= * @CODE@  n to h or 0 in VII verbs when before k-init suf ! REMOVE
-%^WI     !!= * @CODE@  w to 0 in vta-2 verbs when before i-init suf ! REMOVE
-%^IO     !!= * @CODE@  VTACw w + i becom o ! REMOVE
-%^MI   !!= * @CODE@  Wici epenthesis ! REMOVE
 
 
 !! !!Usage tags
@@ -525,9 +515,6 @@ d2  !!=* @CODE@  Reduplication consonant marker
 
 !! Prefixes with a certain phonological content:
 
-@U.perspref.NULL@ !!= * @CODE@  ! REMOVE
-@U.perspref.NI@ !!= * @CODE@    ! REMOVE
-@U.perspref.KI@ !!= * @CODE@    ! REMOVE
 @U.person.NULL@ !!= * @CODE@
 @U.person.NI@ !!= * @CODE@
 @U.person.KI@ !!= * @CODE@
@@ -560,27 +547,6 @@ d2  !!=* @CODE@  Reduplication consonant marker
 
 @U.Imm.Imp@
 @U.Imm.Del@
-
-@U.verb.1sgindep@ !!= * @CODE@ ! REMOVE
-@U.verb.2sgindep@ !!= * @CODE@ ! REMOVE
-@U.verb.3osgindep@ !!= * @CODE@ ! REMOVE
-@U.verb.1plindep@ !!= * @CODE@ ! REMOVE
-@U.verb.12plindep@ !!= * @CODE@ ! REMOVE
-@U.verb.2plindep@ !!= * @CODE@ ! REMOVE
-@U.verb.3plindep@ !!= * @CODE@ ! REMOVE
-
-@U.noun.1sg@ !!= * @CODE@ ! REMOVE
-@U.noun.2sg@ !!= * @CODE@ ! REMOVE
-@U.noun.3sg@ !!= * @CODE@ ! REMOVE
-@U.noun.4sg@ !!= * @CODE@ ! REMOVE
-@U.noun.1pl@ !!= * @CODE@ ! REMOVE
-@U.noun.12pl@ !!= * @CODE@ ! REMOVE
-@U.noun.2pl@ !!= * @CODE@ ! REMOVE
-@U.noun.3pl@ !!= * @CODE@ ! REMOVE
-@U.noun.4pl@ !!= * @CODE@ ! REMOVE
-
-@U.noun.abs@  !!= * @CODE@ ! REMOVE
-@U.noun.dep@ !!= * @CODE@ ! REMOVE
 
 !! New multichar symbols for nouns
 +Sg
