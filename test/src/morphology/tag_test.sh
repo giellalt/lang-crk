@@ -19,29 +19,37 @@ if [[ $1 == "-v" ]]; then
 fi
 
 sed -e '1,/LEXICON Root/ d' < ../../../src/morphology/lexicon.tmp.lexc \
-    | cut -d '!' -f1   \
-    | grep ' ;'        \
-    | cut -d ':' -f1   \
-    | tr -s ' '        \
-    | sed 's/^ //'     \
-    | cut -d ' ' -f1   \
-    | sed 's/+/¢+/g'   \
-    | sed 's/@/¢@/g'   \
-    | tr '¢' '\n'      \
-    | tr '#"%' '\n'    \
-    | grep -E '(\+|@)' \
-    | sort -u          \
-    | grep -E -v '^(\+|\+%|\+\/\-|\+Cmp\-|\+Cmp%\-|\@0|\@%)$' \
+    | cut -d'!' -f1 \
+    | grep ' ;' \
+    | cut -d ':' -f1 \
+    | tr -s ' ' \
+    | sed 's/^ //' \
+    | cut -d ' ' -f1 \
+    | grep '+' \
+    | sed 's/@@/@\
+@/g' \
+    | sed 's/@\+/@\
+\+/g' \
+    | grep '+' \
+    | tr '@' '\n' \
+    | grep '+' \
+    | sort -u \
+    | sed '/\+$/ s/\+/\+\
+/g' \
+    | sed 's/+\([[:alpha:][:digit:]]\)/\
++\1/g' \
+    | grep '+' \
+    | sort -u \
+    | grep '[[:alpha:]]'  \
     > "${lexctags}"
 
 cut -d '!' -f1 $srcdir/../../../src/morphology/root.lexc \
-    | cut -d ':' -f1                    \
-    | sed 's/+/¢+/g'                    \
-    | sed 's/@/¢@/g'                    \
-    | tr '¢' '\n'                       \
-    | grep -E '(\+|@)'                  \
-    | tr -d ' '                         \
-    | tr -d '\t'                        \
+    | sed '/LEXICON/q' \
+    | grep '+'         \
+    | tr '\t' ' '      \
+    | tr -s ' '        \
+    | tr ' ' '\n'      \
+    | grep '+'         \
     | sort -u > "${roottags}"
 
 check=$(comm -23 "${lexctags}" "${roottags}")
@@ -52,6 +60,3 @@ if [[ -n "${check}" ]]; then
 elif [[ $1 == "-v" ]]; then
     echo "$0: No errors found."
 fi
-
-#cat src/morphology/clitics.lexc src/morphology/compounding.lexc src/morphology/affixes/*lexc |cut -d '!' -f1 | grep ';' |tr -s ' ' | sed 's/^ //' |grep ':' |cut -d ':' -f1 | sed 's/\+/¢+/g' | tr '¢' '\n' |sort | uniq -c |sort -n |less
-# visuell test: cat src/morphology/clitics.lexc src/morphology/compounding.lexc src/morphology/affixes/*lexc |cut -d '!' -f1 | grep ';' |tr -s ' ' | sed 's/^ //' |grep ':' |cut -d ':' -f1 | tr -d '0' | sed 's/\+/¢+/g' | tr '¢' '\n' |egrep -v '^(\+|\@|<)' |grep -v '^$' |less
