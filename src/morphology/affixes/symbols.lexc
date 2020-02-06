@@ -15,33 +15,24 @@
 !! !!!Symbol affixes
 
 LEXICON Noun_symbols_possibly_inflected
- +N+Symbol: SYMBOL_connector ;
+ +N+Symbol:0 SYMBOL_connector ;
 
 LEXICON Noun_symbols_never_inflected
- +N+Symbol: # ;
+ +N+Symbol:0 # ;
 
 LEXICON SYMBOL_connector
-               SYMBOL_NO_suff ; ! §
-          :%:  SYMBOL_suff    ; ! §:sne
- +Err/Orth:    SYMBOL_suff    ; ! §esne
- +Err/Orth:%-e SYMBOL_suff    ; ! §-esne
- +Err/Orth:%'e SYMBOL_suff    ; ! §'esne
+            0  SYMBOL_NO_suff ; ! §
+        0 :%'  SYMBOL_suff    ; ! §'a
+ +Err/Orth:%:  SYMBOL_suff    ; ! §:a
+ +Err/Orth:0   SYMBOL_suff    ; ! §a
+ +Err/Orth:%-  SYMBOL_suff    ; ! §-a
 
 LEXICON SYMBOL_NO_suff
- +Sg+Nom: # ;
++Sg:0 # ;
 
 LEXICON SYMBOL_suff
- +Sg+Gen:n       # ;
- +Sg+Acc:m       # ;
- +Sg+Ill:se      # ;
- +Sg+Ine:sne     # ;
- +Sg+Ela:ste     # ;
- +Sg+Com:ine     # ;
-    +Ess:ine     # ;
- +Pl+Nom:h       # ;
- +Pl+Gen:ij      # ;
- +Pl+Acc:ide     # ;
- +Pl+Ill:ide     # ;
- +Pl+Ine:ine     # ;
- +Pl+Ela:jste    # ;
- +Pl+Com:jgujmie # ;
++I+Pl:a # ;
++A+Obv:a # ;
++A+Pl:ak # ;
++Loc:ihk # ;
++Pl+Eng:s # ;
