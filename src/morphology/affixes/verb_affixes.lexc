@@ -1812,7 +1812,7 @@ LEXICON VTA_PL  !!= * @CODE@ Multi-Syllabic stems plural only forms
 +V+TA:0 VTA_PL_WICI ;
 
 LEXICON VTAt  !!= * @CODE@ Multi-Syllabic t/s-final alternating stems
-+V+TA:0 VTAi_WICI ;
++V+TA:0 VTAt_WICI ;
 
 LEXICON VTAi  !!= * @CODE@ Mono-Syllabic stems
 +V+TA:0 VTAi_WICI ;
@@ -1827,7 +1827,10 @@ LEXICON VTA_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w an
 LEXICON VTA_PL_WICI  !!= * @CODE@ -Vw stem-ending verbs; when deletes w and i plural only forms 
 @U.wici.NULL@ VTA_PL_ORDER ;
 
-LEXICON VTAi_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
+LEXICON VTAt_WICI  !!= * @CODE@ -t ending stems
+@U.wici.NULL@ VTAt_ORDER ;
+
+LEXICON VTAi_WICI  !!= * @CODE@ single mora stems
 @U.wici.NULL@ VTAi_ORDER ;
 
 
@@ -1849,6 +1852,12 @@ LEXICON VTAi_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugate
 @U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
 @U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
 @U.order.imp@+Imp:@U.order.imp@  VTAi_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_FUT_CON_PERSON ; !
+
+LEXICON VTAt_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
+@U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTAt_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_FUT_CON_PERSON ; !
 
 !!! Tenses
@@ -1908,9 +1917,15 @@ LEXICON VTA_PL_FUT_CON_PERSON !!= @CODE@
 LEXICON VTA_PL_IMP_PERSON !!= @CODE@ 
 @U.person.NULL@ VTA_IMP_NULL_PL_SUFFIX ;
 
+
+!!!! VTAt (imp is only difference)
+
+LEXICON VTAt_IMP_PERSON !!= @CODE@ no -i in 2sg+3SgO
+@U.person.NULL@ VTAt_IMP_NULL ;
+
 !!!! VTAi (imp is only difference)
 
-LEXICON VTAi_IMP_PERSON !!= @CODE@ Identical to TA IMP
+LEXICON VTAi_IMP_PERSON !!= @CODE@ 
 @U.person.NULL@ VTAi_IMP_NULL ;
 
 
@@ -2392,7 +2407,7 @@ LEXICON VTA_IMP_NULL_SG_SUFFIX
 
 !!!!!!! Mixed !!!!!!!
 
-+Imm+2Sg+3SgO:0 VERB_ENDLEX ;
++Imm+2Sg+3SgO:%> VERB_ENDLEX ;
 
 +Del+2Sg+3SgO:%>âhkan VERB_ENDLEX ;
 
@@ -2423,7 +2438,7 @@ LEXICON VTA_IMP_NULL_PL_SUFFIX
 +Imm+12Pl+3PlO:%>âtânik VERB_ENDLEX ;
 
 +Imm+2Pl+3SgO:%>ihk VERB_ENDLEX ;
-+Imm+2Pl+3PlO:%>ihkok VERB_ENDLEX ;
++Imm+2Pl+3PlO:%>ihkik VERB_ENDLEX ;
 
 +Del+2Sg+3PlO:%>âhkanik VERB_ENDLEX ;
 
@@ -2438,6 +2453,76 @@ LEXICON VTA_IMP_NULL_PL_SUFFIX
 !!!!! irregular stems !!!!!
 ! =================================
 ! =================================
+
+!!!! VTIt
+LEXICON VTAt_IMP_NULL
+VTAt_IMP_NULL_SG_SUFFIX ;
+VTAt_IMP_NULL_PL_SUFFIX ;
+
+! ~~~~~~~~~~~~~~~~~~~~~~
+!!!!!! SINGULAR !!!!!! 
+! ~~~~~~~~~~~~~~~~~~~~~~
+
+LEXICON VTAt_IMP_NULL_SG_SUFFIX
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!! Local !!!!!!!
+
++Imm+2Sg+1SgO:%>in VERB_ENDLEX ;
+
++Del+2Sg+1SgO:%>ii2hkan VERB_ENDLEX ;
+
+
+!!!!!!! Mixed !!!!!!!
+
++Imm+2Sg+3SgO:0 VERB_ENDLEX ;
+
++Del+2Sg+3SgO:%>âhkan VERB_ENDLEX ;
+
+
+LEXICON VTAt_IMP_NULL_PL_SUFFIX
+
+!!!!!!!!!!!!!!!!!!!!
+!!!!!! Direct !!!!!!
+!!!!!!!!!!!!!!!!!!!!
+
+
+!!!!!!! Local !!!!!!!
+
++Imm+2Sg+1PlO:%>inân VERB_ENDLEX ;
++Imm+2Pl+1SgO:%>ik VERB_ENDLEX ;
++Imm+2Pl+1PlO:%>inân VERB_ENDLEX ;
+
+
++Del+2Sg+1PlO:%>ii2hkâhk VERB_ENDLEX ;
++Del+2Pl+1PlO:%>ii2hkâhk VERB_ENDLEX ;
++Del+2Pl+1SgO:%>ii2hkêk VERB_ENDLEX ;
+
+
+!!!!!!! Mixed !!!!!!!
+
++Imm+2Sg+3PlO:%>ik VERB_ENDLEX ;
+
++Imm+12Pl+3SgO:%>âtân VERB_ENDLEX ;
++Imm+12Pl+3PlO:%>âtânik VERB_ENDLEX ;
+
++Imm+2Pl+3SgO:%>i2hk VERB_ENDLEX ;
++Imm+2Pl+3PlO:%>i2hkik VERB_ENDLEX ;
+
++Del+2Sg+3PlO:%>âhkanik VERB_ENDLEX ;
+
++Del+12Pl+3SgO:%>âhkahk VERB_ENDLEX ;
++Del+12Pl+3PlO:%>âhkahkok VERB_ENDLEX ;
+ 
++Del+2Pl+3SgO:%>âhkêk VERB_ENDLEX ;
++Del+2Pl+3PlO:%>âhkêkok VERB_ENDLEX ;
+
+
+!!!! VTIi
 
 LEXICON VTAi_IMP_NULL
 VTAi_IMP_NULL_SG_SUFFIX ;
@@ -2495,7 +2580,7 @@ LEXICON VTAi_IMP_NULL_PL_SUFFIX
 +Imm+12Pl+3PlO:%>âtânik VERB_ENDLEX ;
 
 +Imm+2Pl+3SgO:%>i2hk VERB_ENDLEX ;
-+Imm+2Pl+3PlO:%>i2hkok VERB_ENDLEX ;
++Imm+2Pl+3PlO:%>i2hkik VERB_ENDLEX ;
 
 +Del+2Sg+3PlO:%>âhkanik VERB_ENDLEX ;
 
