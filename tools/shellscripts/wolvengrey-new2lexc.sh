@@ -98,7 +98,7 @@ for(i=2; i<=nr; i++)
 # TODO: marking stems that require -im with contlex of type N...POSS/IM
 #####
 
-     if(class=="N")
+     if(class=="N" && index(lemma," ")==0) # No multipart lemmas, such as names (that should probably rather be IPMs)
      {
        if(match(pos,"^N[^D]")!=0)
          contlex="NOUN_INDEP_STEMS";
@@ -168,6 +168,8 @@ for(i=2; i<=nr; i++)
          { clex="NI_SG/I_POSS/IM"; stem2=lemma; sub(".$","",stem2); if(stem2!=stem) check="CHECK!"; sub("w$","w2",stem); sub("y$","y4",stem); }
        if(pos=="NI-4w")
          { clex="NI_SG/I_POSS/IM"; stem2=lemma; sub(".$","",stem2); if(stem2!=stem) check="CHECK!"; }
+       if(lemma=="ôsi")
+         { cles="NI_SG/I_POSS/IM; stem="ôs"; }
 
        # NOUNS: Animate + Dependent + Non-kinship
        # masakay:asakay NAD "skin" ;
@@ -238,12 +240,16 @@ for(i=2; i<=nr; i++)
          { flags="@P.dim.DIM@";
            sub("^.","&^DIM",stem);
          }
+
+       # Marking plural only nouns
+       if(index(note1,"plural")!=0 && match(lemma,"a(k)?$")!=0)
+         flags=flags "@P.number.PL@";
      
        gsub("ý","y",lemma); # Undo marking historical -y- before outputting LEXC code
        gsub("ý","y",stem);
      
        if(clex!="")
-         { if(lemma!=stem)
+         { if(lemma!=stem && stem!="")
               output[contlex] = output[contlex] sprintf("%s%s:%s%s %s", flags, lemma, flags, stem, clex);
            else
              output[contlex] = output[contlex] sprintf("%s%s %s", flags, lemma, clex);
@@ -318,7 +324,7 @@ for(i=2; i<=nr; i++)
 # acimêw:acim VTA-1 ;
 # itêw:it3 VTA-2 ;
 
-if(class=="V" && index(lemma," ")==0) # No multipart lemmas, e.g. "namoya wâpiw" (not see, i.e. be blind)
+if(class=="V" && index(lemma," ")==0) # No multipart lemmas, e.g. "namoya wâpiw" ("not see, i.e. be blind")
 {
 
 # VII
