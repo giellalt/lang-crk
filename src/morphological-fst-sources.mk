@@ -22,19 +22,20 @@ ALL_SOURCES_WITH_EXTRAS = $(ALL_SOURCES) $(EXTRA_MORPHOLOGY)
 
 MORPHOLOGY = morphology/root.lexc \
   morphology/affixes/noun_affixes.lexc \
-  morphology/affixes/propernouns.lexc \
   morphology/affixes/verb_affixes.lexc \
-  morphology/stems/abbreviations.lexc \
+  morphology/stems/derivation_stems.lexc \
   morphology/stems/noun_stems.lexc \
-  morphology/stems/numerals.lexc \
-  morphology/stems/verb_stems.lexc \
+  morphology/stems/particles.lexc \
   morphology/stems/pronouns.lexc \
-  morphology/stems/particles.lexc
+  morphology/stems/verb_stems.lexc
 
 EXTRA_MORPHOLOGY = \
+  morphology/affixes/propernouns.lexc \
   morphology/generated_files/eng-crk-propernouns.lexc \
   morphology/generated_files/punctuation.lexc \
-  morphology/generated_files/symbols.lexc
+  morphology/generated_files/symbols.lexc \
+  morphology/stems/abbreviations.lexc \
+  morphology/stems/numerals.lexc
 
 PHONOLOGY = phonology/crk-phon.twolc
 # According to aarppe, these are:
