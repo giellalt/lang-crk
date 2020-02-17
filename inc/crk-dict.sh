@@ -43,8 +43,8 @@ hfst-invert -i crk-anl-norm-dict.hfst -o crk-gen-norm-dict.hfst
 
 echo 'Creating FOMA versions of selected transducers.' ;
 
-hfst-fst2fst -b -F -i crk-gen-norm-dict.hfst -o crk-gen-norm-dict.fomabin
+hfst-invert crk-gen-norm-dict.hfst | hfst-fst2fst -b -F -i - -o crk-gen-norm-dict.fomabin
 
 hfst-fst2fst -b -F -i crk-orth.hfst -o crk-orth.fomabin
 
-foma -e"load crk-gen-norm-dict.fomabin" -e"define M" -e"load crk-orth.fomabin" -e"invert net" -e"define O" -e"regex [ M .o. O ];" -e"save stack crk-anl-desc-dict.fomabin" -s
+foma -e"load crk-gen-norm-dict.fomabin" -e"invert net" -e"define Morph" -e"load crk-orth.fomabin" -e"invert net" -e"define Orth" -e"regex [ Morph .o. Orth ];" -e"save stack crk-anl-desc-dict.fomabin" -s
