@@ -24,11 +24,11 @@ _EMPH := $(shell tput setaf 6)
 
 # Concatenate by leveraging existing Makefile target. Avoids errors due to
 # missing files, and keeps the two build files syncronised wrt source files.
-crk.lexc: $(MORPHOLOGY)
+crk-dict.lexc: $(MORPHOLOGY)
 	-@echo "$(_EMPH)Concatenating LEXC code.$(_RESET)"
 	cat $^ > $@
 
-crk-morph.hfst: crk.lexc
+crk-lexc-dict.hfst: crk-dict.lexc
 	-@echo "$(_EMPH)Compiling LEXC code.$(_RESET)"
 	hfst-lexc --format=openfst-tropical --output=$@ $<
 
@@ -40,15 +40,15 @@ crk-phon-morph-bound.hfst: $(PHONOLOGY_WITH_BOUNDARIES)
 	-@echo "$(_EMPH)Compiling TWOLC code (with morpheme boundaries).$(_RESET)"
 	hfst-twolc -i $< -o $@
 
-crk-normative-generator.hfst: crk-morph.hfst crk-phon.hfst
+crk-normative-generator-with-err-orth.hfst: crk-lexc-dict.hfst crk-phon.hfst
 	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers.$(_RESET)"
 	hfst-compose-intersect -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
 
-crk-normative-generator-with-morpheme-boundaries.hfst: ./crk-morph.hfst crk-phon-morph-bound.hfst
+crk-normative-generator-with-morpheme-boundaries.hfst: crk-lexc-dict.hfst crk-phon-morph-bound.hfst
 	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers (with morpheme boundaries).$(_RESET)"
 	hfst-compose-intersect -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
 
-crk-strict-analyzer.hfst: crk-normative-generator.hfst
+crk-strict-analyzer-with-err-orth.hfst: crk-normative-generator-with-err-orth.hfst
 	-@echo "$(_EMPH)Inverting normative generator tranducer into a normative analyzer transducer.$(_RESET)"
 	hfst-invert $< -o $@
 
@@ -56,9 +56,20 @@ crk-orth.hfst: $(ORTHOGRAPHY)
 	-@echo "$(_EMPH)Compiling regular expression implementing spelling-relaxation.$(_RESET)"
 	hfst-regexp2fst -S -i $< | hfst-invert -o $@
 
-crk-descriptive-analyzer.hfst: crk-orth.hfst crk-strict-analyzer.hfst
+crk-descriptive-analyzer.hfst: crk-orth.hfst crk-strict-analyzer-with-err-orth.hfst
 	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer transducer to create descriptive analyzer.$(_RESET)"
 	hfst-compose -F -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
+
+crk-err-filter.hfst:
+	-@echo "$(_EMPH)Compiling filter to remove non-normative forms with +Err/Orth tag.$(_RESET)"
+	echo '~[ $$[ "+Err/Orth" ] ] ;' | hfst-regexp2fst -S -o $@
+
+crk-strict-analyzer.hfst: crk-err-filter.hfst crk-normative-generator-with-err-orth.hfst
+	-@echo "$(_EMPH)Removing lexicalised non-normative forms from normative analyzer and generator.$(_RESET)"
+	hfst-compose -F -1 $(word 1, $^) -2 $(word 2, $^) | hfst-invert -o $@
+
+crk-normative-generator.hfst: crk-strict-analyzer.hfst
+	hfst-invert -i $^ -o $@
 
 # HACK: Foma has issues with composing the orthographic FST, so we do it
 # explicitly:
