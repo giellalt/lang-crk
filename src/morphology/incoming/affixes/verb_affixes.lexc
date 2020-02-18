@@ -858,21 +858,26 @@ LEXICON VIIw_PL_FUT_CON_SUFFIX   !!= @CODE@ w final plural
 !!! AEW == Ours: VAIv == VAIw, VAIn == VAIn
 
 !!! STEM CLASS
+LEXICON VAIw
++V+AI: VAIae_WICI ;
 
-! LEXICON VAIw !!= @CODE@ 
-! +V+AI: VAICONJw_WICI ;
-
-LEXICON VAIw !!= @CODE@ 
-+V+AI: VAIw_WICI ;
-
-LEXICON VAIw_PL !!= @CODE@ 
+LEXICON VAIw_PL !!= @CODE@ stems that end in â or ê
 +V+AI: VAIw_PL_WICI ;
+
+LEXICON VAIae !!= @CODE@ stems that end in â or ê
++V+AI: VAIae_WICI ;
+
+LEXICON VAIio !!= @CODE@ stems that end in i, î, o, ô
++V+AI: VAIio_WICI ;
 
 LEXICON VAIn !!= @CODE@ 
 +V+AI: VAIn_WICI ;
 
 LEXICON VAIn_PL !!= @CODE@ 
 +V+AI: VAIn_PL_WICI ;
+
+LEXICON VAIm !!= @CODE@ These are VTI3 in Arok's database
++V+AI:  VTIm_WICI ;
 
 !!! WICI
 
@@ -882,10 +887,6 @@ LEXICON VAIn_PL !!= @CODE@
 !!!@@@!!! root.lexc: add Der/Com to multi char symbols
 ! ===========================================================
 ! ===========================================================
-
-LEXICON VAIw_WICI !!!!
-@U.wici.NULL@ VAIw_ORDER ;
-@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%^COM%>i2m VTA_ORDER ; ! ^COM used to trigger vowel lengthening at stem-im juncture
 
 LEXICON VAIw_PL_WICI !!!! plural only
 @U.wici.NULL@ VAIw_PL_ORDER ;
@@ -905,25 +906,29 @@ LEXICON VAIn_PL_WICI !!!! plural only
 @U.wici.NULL@ VAIn_PL_ORDER ;
 @U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA_PL_ORDER ;
 
+! ===========================================================
+! ===========================================================
+!!!!! -â and -ê final stems !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAIae_WICI !!!!
+@U.wici.NULL@ VAIae_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%^COM%>i2m VTA_ORDER ; ! ^COM used to trigger vowel lengthening at stem-im juncture
+
+! ===========================================================
+! ===========================================================
+!!!!! -î/i and -ô/o final stems !!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAIio_WICI !!!!
+@U.wici.NULL@ VAIio_ORDER ;
+@U.wici.wici@+Der/Com+V+TA:@U.wici.wici@%>im VTA_ORDER ;
+
+
 !!! ORDERS
 
-! ===========================================================
-! ===========================================================
-!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
-! ===========================================================
-! =========================================================== ! NOTE: imperative and fut con do not take tense
-
-LEXICON VAIw_ORDER !!= @CODE@
-@U.order.indep@+Ind:@U.order.indep@ VAIw_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VAIw_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  VAIw_IMP_PERSON ; !
-@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIw_FUT_CON_PERSON ; !
-
-LEXICON VAIw_PL_ORDER !!= @CODE@ plural only 
-@U.order.indep@+Ind:@U.order.indep@ VAIw_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VAIw_PL_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  VAIw_PL_IMP_PERSON ; !
-@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIw_PL_FUT_CON_PERSON ; !
 
 ! ===========================================================
 ! ===========================================================
@@ -943,35 +948,43 @@ LEXICON VAIn_PL_ORDER !!= @CODE@ plural only
 @U.order.imp@+Imp:@U.order.imp@  VAIn_PL_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIn_PL_FUT_CON_PERSON ; !
 
+
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -â and -ê final stems !!!!!
+! ===========================================================
+! =========================================================== ! NOTE: imperative and fut con do not take tense
+
+LEXICON VAIae_ORDER !!= @CODE@
+@U.order.indep@+Ind:@U.order.indep@ VAIae_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIae_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VAIw_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIw_FUT_CON_PERSON ; !
+
+LEXICON VAIw_PL_ORDER !!= @CODE@ plural only 
+@U.order.indep@+Ind:@U.order.indep@ VAIw_PL_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIw_PL_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VAIw_PL_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIw_PL_FUT_CON_PERSON ; !
+
+! ===========================================================
+! ===========================================================
+!!!!! -î/i and -ô/o final stems !!!!!
+! ===========================================================
+! =========================================================== ! NOTE: imperative and fut con do not take tense
+
+LEXICON VAIio_ORDER !!= @CODE@
+@U.order.indep@+Ind:@U.order.indep@ VAIio_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIio_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VAIw_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIw_FUT_CON_PERSON ; !
+
+
+
 !!! TENSES
 
-! ===========================================================
-! ===========================================================
-!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
-! ===========================================================
-! ===========================================================
-
-LEXICON VAIw_IND_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ VAIw_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ VAIw_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAIw_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIw_IND_PERSON ; !
-
-LEXICON VAIw_CNJ_TENSE
-@U.tense.Prs@+Prs:@U.tense.Prs@ VAIw_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ VAIw_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIw_CNJ_PERSON ; !
-
-LEXICON VAIw_PL_IND_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ VAIw_PL_IND_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ VAIw_PL_IND_PERSON ; !
-@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAIw_PL_IND_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIw_PL_IND_PERSON ; !
-
-LEXICON VAIw_PL_CNJ_TENSE !!= @CODE@ plural only
-@U.tense.Prs@+Prs:@U.tense.Prs@ VAIw_PL_CNJ_PERSON ; !
-@U.tense.Prt@+Prt:@U.tense.Prt@ VAIw_PL_CNJ_PERSON ; !
-@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIw_PL_CNJ_PERSON ; !
 
 ! ===========================================================
 ! ===========================================================
@@ -1003,42 +1016,64 @@ LEXICON VAIn_PL_CNJ_TENSE !!= @CODE@ plural only
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIn_PL_CNJ_PERSON ; !
 
 
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) Plural only !!!!!
+! ===========================================================
+! ===========================================================
+LEXICON VAIw_PL_IND_TENSE !!= @CODE@ plural only
+
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIw_PL_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIw_PL_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAIw_PL_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIw_PL_IND_PERSON ; !
+
+LEXICON VAIw_PL_CNJ_TENSE !!= @CODE@ plural only
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIw_PL_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIw_PL_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIw_PL_CNJ_PERSON ; !
+
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -â and -ê final stems !!!!!
+! ===========================================================
+! =========================================================== ! NOTE: imperative and fut con do not take tense
+
+LEXICON VAIae_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIae_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIae_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAIae_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIae_IND_PERSON ; !
+
+LEXICON VAIae_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIae_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIae_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIae_CNJ_PERSON ; !
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -î/i and -ô/o final stems !!!!!
+! ===========================================================
+! =========================================================== ! NOTE: imperative and fut con do not take tense
+
+LEXICON VAIio_IND_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIio_IND_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIio_IND_PERSON ; !
+@U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VAIio_IND_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIio_IND_PERSON ; !
+
+LEXICON VAIio_CNJ_TENSE
+@U.tense.Prs@+Prs:@U.tense.Prs@ VAIio_CNJ_PERSON ; !
+@U.tense.Prt@+Prt:@U.tense.Prt@ VAIio_CNJ_PERSON ; !
+@U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VAIio_CNJ_PERSON ; !
+
+
+
 !!! PERSON
 
-! ===========================================================
-! ===========================================================
-!!!!! -w final verbs (refers to the 3 SG form ending) !!!!!
-! ===========================================================
-! ===========================================================
-
-LEXICON VAIw_IND_PERSON !!= @CODE@ 
-@U.person.NI@ VAIw_IND_NI ;
-@U.person.KI@ VAIw_IND_KI ;
-@U.person.NULL@ VAIw_IND_NULL ;
-
-LEXICON VAIw_CNJ_PERSON !!= @CODE@ 
-@U.person.NULL@ VAIw_CNJ_NULL ;
-
-LEXICON VAIw_FUT_CON_PERSON !!= @CODE@ 
-
-@U.person.NULL@ VAIw_FUT_CON_NULL ;
-
-LEXICON VAIw_IMP_PERSON !!= @CODE@ 
-@U.person.NULL@ VAIw_IMP_NULL ;
-
-LEXICON VAIw_PL_IND_PERSON !!= @CODE@ plural only
-@U.person.NI@ VAIw_IND_NI_PL_SUFFIX ;
-@U.person.KI@ VAIw_IND_KI_PL_SUFFIX ;
-@U.person.NULL@ VAIw_IND_NULL_PL_SUFFIX ;
-
-LEXICON VAIw_PL_CNJ_PERSON !!= @CODE@ plural only
-@U.person.NULL@ VAIw_CNJ_NULL_PL_SUFFIX ;
-
-LEXICON VAIw_PL_FUT_CON_PERSON !!= @CODE@ plural only
-@U.person.NULL@ VAIw_FUT_CON_NULL_PL_SUFFIX ;
-
-LEXICON VAIw_PL_IMP_PERSON !!= @CODE@ plural only
-@U.person.NULL@ VAIw_IMP_NULL_PL_SUFFIX ;
 
 
 ! ===========================================================
@@ -1074,6 +1109,61 @@ LEXICON VAIn_PL_FUT_CON_PERSON !!= @CODE@ plural only
 
 LEXICON VAIn_PL_IMP_PERSON !!= @CODE@ plural only
 @U.person.NULL@ VAIn_IMP_NULL_PL_SUFFIX ;
+
+! ===========================================================
+! ===========================================================
+!!!!! -w final verbs (refers to the 3 SG form ending) plural only!!!!!
+! ===========================================================
+! ===========================================================
+
+LEXICON VAIw_PL_IND_PERSON !!= @CODE@ plural only
+@U.person.NI@ VAIw_IND_NI_PL_SUFFIX ;
+@U.person.KI@ VAIw_IND_KI_PL_SUFFIX ;
+@U.person.NULL@ VAIw_IND_NULL_PL_SUFFIX ;
+
+LEXICON VAIw_PL_CNJ_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAIw_CNJ_NULL_PL_SUFFIX ;
+
+LEXICON VAIw_PL_FUT_CON_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAIw_FUT_CON_NULL_PL_SUFFIX ;
+
+LEXICON VAIw_PL_IMP_PERSON !!= @CODE@ plural only
+@U.person.NULL@ VAIw_IMP_NULL_PL_SUFFIX ;
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -â and -ê final stems !!!!!
+! ===========================================================
+! =========================================================== ! NOTE: imperative and fut con do not take tense
+LEXICON VAIae_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VAIw_IND_NI ;
+@U.person.KI@ VAIw_IND_KI ;
+@U.person.NULL@ VAIae_IND_NULL ;! only need for unspecified actor
+
+LEXICON VAIae_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VAIae_CNJ_NULL ;
+
+LEXICON VAIw_FUT_CON_PERSON !!= @CODE@ 
+
+@U.person.NULL@ VAIae_FUT_CON_NULL ;
+
+LEXICON VAIw_IMP_PERSON !!= @CODE@ 
+@U.person.NULL@ VAIw_IMP_NULL ;
+
+
+! ===========================================================
+! ===========================================================
+!!!!! -î/i and -ô/o final stems !!!!!
+! ===========================================================
+! =========================================================== ! NOTE: imperative and fut con do not take tense
+LEXICON VAIio_IND_PERSON !!= @CODE@ 
+@U.person.NI@ VAIw_IND_NI ;
+@U.person.KI@ VAIw_IND_KI ;
+@U.person.NULL@ VAIio_IND_NULL ;! only need for unspecified actor
+
+LEXICON VAIio_CNJ_PERSON !!= @CODE@ 
+@U.person.NULL@ VAIio_CNJ_NULL ;
 
 !!! SUFFIXES
 
@@ -1112,13 +1202,16 @@ LEXICON VAIw_IND_KI_PL_SUFFIX   !!= @CODE@
 +12Pl:%>n2ânaw VERB_ENDLEX ;
 +2Pl:%>n2âwâw VERB_ENDLEX ;
 
-LEXICON VAIw_IND_NULL   !!= @CODE@  
-VAIw_IND_NULL_SG_SUFFIX ;
+LEXICON VAIae_IND_NULL   !!= @CODE@  
+VAIae_IND_NULL_SG_SUFFIX ;
 VAIw_IND_NULL_PL_SUFFIX ;
 
-LEXICON VAIw_IND_NULL_SG_SUFFIX   !!= @CODE@ 
-+3Sg:%>w VERB_ENDLEX ;
+LEXICON VAIio_IND_NULL   !!= @CODE@  
+VAIio_IND_NULL_SG_SUFFIX ;
+VAIw_IND_NULL_PL_SUFFIX ;
 
+LEXICON VAIae_IND_NULL_SG_SUFFIX
++3Sg:%>w VERB_ENDLEX ;
 !           ********
 ! **** Unspecified Actor ****
 !!!@@@!!! probably don't need Pl or Obv Unspec for VAI. 
@@ -1126,28 +1219,22 @@ LEXICON VAIw_IND_NULL_SG_SUFFIX   !!= @CODE@
 
 
 +X:%>n2iwiw VERB_ENDLEX ;
-+X:%>n2âniwan VERB_ENDLEX ;
 +X:%>n2iwan VERB_ENDLEX ;
 
-!! +X+4Sg:%>n2âniwiyiw # ;
-!! +X+4Sg:%>n2âniwaniyiw # ;
-!! +X+4Sg:%>n2iwaniyiw # ;
+LEXICON VAIio_IND_NULL_SG_SUFFIX
+!           ********
+! **** Unspecified Actor ****
+!           ********
++3Sg:%>w VERB_ENDLEX ;
+
++X:%>n2âniwiw VERB_ENDLEX ;
++X:%>n2âniwan VERB_ENDLEX ;
+
 
 
 LEXICON VAIw_IND_NULL_PL_SUFFIX   !!= @CODE@
 +3Pl:%>wak VERB_ENDLEX ;
 +4Sg/Pl:%>yiwa VERB_ENDLEX ;
-
-!           ********
-! **** Unspecified Actor ****
-!           ********
-
-!! +X+3Pl:%>n2âniwiwa # ;
-!! +X+3Pl:%>n2âniwanwa # ;
-!! 
-!! +X+4Pl:%>n2âniwiyiwa # ;
-!! +X+4Pl:%>n2âniwaniyiwa # ;
-
 
 
 ! ===========================================================
@@ -1186,6 +1273,9 @@ LEXICON VAIn_IND_NULL_SG_SUFFIX   !!= @CODE@
 +3Sg:%>0 VERB_ENDLEX ;
 +3Sg:%>iw VERB_ENDLEX ;
 
+
+
+
 !           ********
 ! **** Unspecified Actor ****
 !           ********
@@ -1193,26 +1283,11 @@ LEXICON VAIn_IND_NULL_SG_SUFFIX   !!= @CODE@
 
 +X:%>inâniwiw VERB_ENDLEX ;
 +X:%>inâniwan VERB_ENDLEX ;
-+X:%>iniwan VERB_ENDLEX ;
-
-!! +X+4Sg:%>inâniwiyiw # ;
-!! +X+4Sg:%>inâniwaniyiw # ;
-!! +X+4Sg:%>iniwaniyiw # ;
 
 LEXICON VAIn_IND_NULL_PL_SUFFIX   !!= @CODE@ 
 +3Pl:%>wak VERB_ENDLEX ;
 +3Pl:%>iwak VERB_ENDLEX ;
 +4Sg/Pl:%>iyiwa VERB_ENDLEX ;
-
-!           ********
-! **** Unspecified Actor ****
-!           ********
-
-!! +X+3Pl:%>inâniwiwa # ;
-!! +X+3Pl:%>inâniwanwa # ;
-!! 
-!! +X+4Pl:%>inâniwiyiwa # ;
-!! +X+4Pl:%>inâniwaniyiwa # ;
 
 
 ! ===================================================================================================================
@@ -1231,12 +1306,32 @@ LEXICON VAIn_IND_NULL_PL_SUFFIX   !!= @CODE@
 ! ===========================================================
 ! ===========================================================
 
-LEXICON VAIw_CNJ_NULL   !!= @CODE@ 
 
-VAIw_CNJ_NULL_SG_SUFFIX ;
+LEXICON VAIae_CNJ_NULL   !!= @CODE@ 
+
+VAIae_CNJ_NULL_SG_SUFFIX ;
 VAIw_CNJ_NULL_PL_SUFFIX ;
 
-LEXICON VAIw_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
+LEXICON VAIio_CNJ_NULL   !!= @CODE@ 
+
+VAIio_CNJ_NULL_SG_SUFFIX ;
+VAIw_CNJ_NULL_PL_SUFFIX ;
+
+LEXICON VAIae_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
+
++1Sg:%>yân VERB_ENDLEX ;
++2Sg:%>yan VERB_ENDLEX ;
++3Sg:%>t VERB_ENDLEX ;
+
+!           ********
+! **** Unspecified Actor ****
+!           ********
+
++X:%>hk VERB_ENDLEX ;
++X:%>niwahk VERB_ENDLEX ;
++X:%>niwik VERB_ENDLEX ;
+
+LEXICON VAIio_CNJ_NULL_SG_SUFFIX   !!= @CODE@ 
 
 +1Sg:%>yân VERB_ENDLEX ;
 +2Sg:%>yan VERB_ENDLEX ;
@@ -1248,11 +1343,7 @@ LEXICON VAIw_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 
 +X:%>hk VERB_ENDLEX ;
 +X:%>nâniwahk VERB_ENDLEX ;
-+X:%>niwahk VERB_ENDLEX ;
-
-!! +X+4Sg:%>hiyik # ;
-!! +X+4Sg:%>nâniwahiyik # ;
-!! +X+4Sg:%>niwahiyik # ;
++X:%>nâniwik VERB_ENDLEX ;
 
 LEXICON VAIw_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
 
@@ -1262,17 +1353,6 @@ LEXICON VAIw_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 +3Pl:%>cik VERB_ENDLEX ;
 +4Sg/Pl:%>yit VERB_ENDLEX ;
 
-!           ********
-! **** Unspecified Actor ****
-!           ********
-
-!! +X+3Pl:%>hki # ;
-!! +X+3Pl:%>nâniwahki # ;
-!! +X+3Pl:%>niwahki # ;
-
-!! +X+4Sg:%>hiyiki # ;
-!! +X+4Sg:%>nâniwahiyiki # ;
-!! +X+4Sg:%>niwahiyiki # ;
 
 ! ===========================================================
 ! ===========================================================
@@ -1291,21 +1371,8 @@ LEXICON VAIn_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 +1Sg:%>iyân VERB_ENDLEX ;
 +2Sg:%>iyan VERB_ENDLEX ;
 +3Sg:%>it VERB_ENDLEX ;
-+X:%>k VERB_ENDLEX ;
++X:%>ihk VERB_ENDLEX ;
 +X:%>inâniwahk VERB_ENDLEX ;
-+X:%>iniwahk VERB_ENDLEX ;
-
-
-!           ********
-! **** Unspecified Actor ****
-!           ********
-!! +X+3Sg:%>k # ;
-!! +X+3Sg:%>inâniwahk # ;
-!! +X+3Sg:%>iniwahk # ;
-!! 
-!! +X+4Sg:%>iyik # ;
-!! +X+4Sg:%>inâniwahiyik # ;
-!! +X+4Sg:%>iniwahiyik # ;
 
 
 LEXICON VAIn_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
@@ -1316,18 +1383,6 @@ LEXICON VAIn_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 +3Pl:%>icik VERB_ENDLEX ;
 +3Pl:%>kik VERB_ENDLEX ;
 +4Sg/Pl:%>iyit VERB_ENDLEX ;
-
-!           ********
-! **** Unspecified Actor ****
-!           ********
-
-!! +X+3Pl:%>ihki # ;
-!! +X+3Pl:%>inâniwahki # ;
-!! +X+3Pl:%>iniwahki # ;
-
-!! +X+4Sg:%>ihiyiki # ;
-!! +X+4Sg:%>inâniwahiyiki # ;
-!! +X+4Sg:%>iniwahiyiki # ;
 
 
 
@@ -1400,7 +1455,7 @@ LEXICON VAIn_IMP_NULL_PL_SUFFIX
 ! ===========================================================
 ! ===========================================================
 
-LEXICON VAIw_FUT_CON_NULL   !!= @CODE@ 
+LEXICON VAIae_FUT_CON_NULL   !!= @CODE@ 
 
 VAIw_FUT_CON_NULL_SG_SUFFIX ;
 VAIw_FUT_CON_NULL_PL_SUFFIX ;
@@ -1489,11 +1544,17 @@ LEXICON VAIn_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 LEXICON VTIm  !!= * @CODE@ 
 +V+TI: VTIm_WICI ;
 
+LEXICON VTIw
++V+TI: VAIae_WICI ;
+
 LEXICON VTIm_PL  !!= * @CODE@  Plural
 +V+TI: VTIm_PL_WICI ;
 
-LEXICON VTIw  !!= * @CODE@ NOTE: These inflect just as VAI -w final stems, so they are redirected to those paradigms
-+V+TI: VAIw_WICI ; 
+LEXICON VTIae  !!= * @CODE@ NOTE: These inflect just as VAI -w final stems, so they are redirected to those paradigms
++V+TI: VAIae_WICI ; 
+
+LEXICON VTIio  !!= * @CODE@ NOTE: These inflect just as VAI -w final stems, so they are redirected to those paradigms
++V+TI: VAIio_WICI ; 
  
 
 !!! WICI
@@ -1827,10 +1888,10 @@ LEXICON VTA_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w an
 LEXICON VTA_PL_WICI  !!= * @CODE@ -Vw stem-ending verbs; when deletes w and i plural only forms 
 @U.wici.NULL@ VTA_PL_ORDER ;
 
-LEXICON VTAt_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
+LEXICON VTAt_WICI  !!= * @CODE@ -t ending stems
 @U.wici.NULL@ VTAt_ORDER ;
 
-LEXICON VTAi_WICI  !!= * @CODE@ -Vw stem-ending verbs; where + i suf deletes w and i
+LEXICON VTAi_WICI  !!= * @CODE@ single mora stems
 @U.wici.NULL@ VTAi_ORDER ;
 
 
@@ -1848,16 +1909,16 @@ LEXICON VTA_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense
 @U.order.imp@+Imp:@U.order.imp@  VTA_PL_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_PL_FUT_CON_PERSON ; !
 
-LEXICON VTAt_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
-@U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
-@U.order.imp@+Imp:@U.order.imp@  VTAt_IMP_PERSON ; !
-@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_FUT_CON_PERSON ; !
-
 LEXICON VTAi_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
 @U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
 @U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
 @U.order.imp@+Imp:@U.order.imp@  VTAi_IMP_PERSON ; !
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_FUT_CON_PERSON ; !
+
+LEXICON VTAt_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
+@U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
+@U.order.imp@+Imp:@U.order.imp@  VTAt_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_FUT_CON_PERSON ; !
 
 !!! Tenses
@@ -1917,14 +1978,15 @@ LEXICON VTA_PL_FUT_CON_PERSON !!= @CODE@
 LEXICON VTA_PL_IMP_PERSON !!= @CODE@ 
 @U.person.NULL@ VTA_IMP_NULL_PL_SUFFIX ;
 
+
 !!!! VTAt (imp is only difference)
 
-LEXICON VTAt_IMP_PERSON !!= @CODE@ Mix of TA IMP and TAi IMP
+LEXICON VTAt_IMP_PERSON !!= @CODE@ no -i in 2sg+3SgO
 @U.person.NULL@ VTAt_IMP_NULL ;
 
 !!!! VTAi (imp is only difference)
 
-LEXICON VTAi_IMP_PERSON !!= @CODE@ Identical to TA IMP
+LEXICON VTAi_IMP_PERSON !!= @CODE@ 
 @U.person.NULL@ VTAi_IMP_NULL ;
 
 
@@ -2437,7 +2499,7 @@ LEXICON VTA_IMP_NULL_PL_SUFFIX
 +Imm+12Pl+3PlO:%>âtânik VERB_ENDLEX ;
 
 +Imm+2Pl+3SgO:%>ihk VERB_ENDLEX ;
-+Imm+2Pl+3PlO:%>ihkok VERB_ENDLEX ;
++Imm+2Pl+3PlO:%>ihkik VERB_ENDLEX ;
 
 +Del+2Sg+3PlO:%>âhkanik VERB_ENDLEX ;
 
@@ -2453,8 +2515,7 @@ LEXICON VTA_IMP_NULL_PL_SUFFIX
 ! =================================
 ! =================================
 
-!! VTAt imperatives
-
+!!!! VTIt
 LEXICON VTAt_IMP_NULL
 VTAt_IMP_NULL_SG_SUFFIX ;
 VTAt_IMP_NULL_PL_SUFFIX ;
@@ -2494,8 +2555,9 @@ LEXICON VTAt_IMP_NULL_PL_SUFFIX
 !!!!!!! Local !!!!!!!
 
 +Imm+2Sg+1PlO:%>inân VERB_ENDLEX ;
-+Imm+2Pl+1PlO:%>inân VERB_ENDLEX ;
 +Imm+2Pl+1SgO:%>ik VERB_ENDLEX ;
++Imm+2Pl+1PlO:%>inân VERB_ENDLEX ;
+
 
 +Del+2Sg+1PlO:%>ii2hkâhk VERB_ENDLEX ;
 +Del+2Pl+1PlO:%>ii2hkâhk VERB_ENDLEX ;
@@ -2510,7 +2572,7 @@ LEXICON VTAt_IMP_NULL_PL_SUFFIX
 +Imm+12Pl+3PlO:%>âtânik VERB_ENDLEX ;
 
 +Imm+2Pl+3SgO:%>i2hk VERB_ENDLEX ;
-+Imm+2Pl+3PlO:%>i2hkok VERB_ENDLEX ;
++Imm+2Pl+3PlO:%>i2hkik VERB_ENDLEX ;
 
 +Del+2Sg+3PlO:%>âhkanik VERB_ENDLEX ;
 
@@ -2521,8 +2583,7 @@ LEXICON VTAt_IMP_NULL_PL_SUFFIX
 +Del+2Pl+3PlO:%>âhkêkok VERB_ENDLEX ;
 
 
-!! VTAi imperatives
-
+!!!! VTIi
 
 LEXICON VTAi_IMP_NULL
 VTAi_IMP_NULL_SG_SUFFIX ;
@@ -2580,7 +2641,7 @@ LEXICON VTAi_IMP_NULL_PL_SUFFIX
 +Imm+12Pl+3PlO:%>âtânik VERB_ENDLEX ;
 
 +Imm+2Pl+3SgO:%>i2hk VERB_ENDLEX ;
-+Imm+2Pl+3PlO:%>i2hkok VERB_ENDLEX ;
++Imm+2Pl+3PlO:%>i2hkik VERB_ENDLEX ;
 
 +Del+2Sg+3PlO:%>âhkanik VERB_ENDLEX ;
 
