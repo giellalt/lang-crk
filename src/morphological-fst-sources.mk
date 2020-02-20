@@ -34,8 +34,9 @@ EXTRA_MORPHOLOGY = \
   morphology/generated_files/eng-crk-propernouns.lexc \
   morphology/generated_files/punctuation.lexc \
   morphology/generated_files/symbols.lexc \
+  morphology/stems/abbreviations.lexc \
   morphology/stems/derivation_stems.lexc \
-  morphology/stems/abbreviations.lexc
+  morphology/stems/numeral_symbols.lexc
 
 PHONOLOGY = phonology/crk-phon.twolc
 # According to aarppe, these are:
