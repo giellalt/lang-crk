@@ -2821,6 +2821,11 @@ LEXICON VTA_FUT_CON_NULL_PL_SUFFIX
 
 +4Sg/Pl+3PlO:%>i2kotwâwi		   VERB_ENDLEX ;
 
-
+LEXICON VERB_ENDLEX
+@D.cnj.CC@@R.joiner.NULL@+Err/Orth:@D.cnj.CC@@R.joiner.NULL@ # ;
+@D.cnj.CC@@D.joiner.NULL@ # ;
+! Adding changed conjunct trigger: IC
+@R.cnj.CC@@R.joiner.NULL@+Err/Orth:@R.cnj.CC@@R.joiner.NULL@%^IC # ;
+@R.cnj.CC@@D.joiner.NULL@:@R.cnj.CC@@D.joiner.NULL@%^IC # ;
 
 !! End of verb affixes code
