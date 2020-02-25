@@ -68,8 +68,6 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and prefix ê-, kâ-, kâki-
 @P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka^EGLOT%<       CNJ_TENSE ;
 @P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ-%<       CNJ_TENSE ;
 @P.joiner.NULL@PV/kaa+:@P.joiner.NULL@kâ^EGLOT%<      CNJ_TENSE ;
-@P.joiner.hyphen@PV/kaa_ki+:@P.joiner.hyphen@kâ-ki-%< CNJ_TENSE ;
-@P.joiner.NULL@PV/kaa_ki+:@P.joiner.NULL@kâki^EGLOT%< CNJ_TENSE ;
 
 0 CNJ_TENSE ; ! Option to allow for the occasional omission of the grammatical conjunct prefix without a changed conjunct
 
