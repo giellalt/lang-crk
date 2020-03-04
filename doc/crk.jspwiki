@@ -672,7 +672,7 @@ INITIAL CHANGE
 Test lemma/stem set for nouns according the new crk FST
 
 
-Complete extraction of lemma:stem info from AEW 2014, according to
+Complete extraction of lemma:stem info from AEW 2020, according to
 LEXC structure in the new crk FST.
 
 
@@ -689,7 +689,8 @@ LEXC structure in the new crk FST.
 Model verb lemmas and stems for new crk FST
 
 
-Full incorporation of AEW 2014 verbs into new crk FST
+Full incorporation of AEW 2020 verbs into new crk FST
+
 
 
 
@@ -921,7 +922,7 @@ LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
 
 
-!!Here starts the 999 numbers
+!!Here start the 999 numbers
 
  * LEXICON UNDERTHOUSAND 
 
@@ -950,62 +951,7 @@ LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
  * LEXICON CARDINAL 
 
-
  * LEXICON NUM  adds +Num+Ipc
-
- * __LEXICON NUM-PREFIXES   __
-
- * __LEXICON ARABIC   __ arabic numerals
-
- * __LEXICON ARABICLOOPphone   __ +358(0)16671254
-
- * __LEXICON ARABICCASEphone   __  
-
- * __LEXICON ARABICLOOP   __
-
-
- * __LEXICON ARABICLOOPORD   __ ordinals
-
- * __LEXICON NUMARABTAG   __ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                           !!!Plains Cree particles                           
 
