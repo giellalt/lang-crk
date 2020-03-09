@@ -49,8 +49,10 @@ LIST Interj = Interj ;
 LIST Ipl = Ipl ;
 LIST Ipt = Ipt ;
 LIST Iph = Iph ;
+LIST Ipn = Ipn ;
 LIST Quant = Quant ;
 LIST InLoc = InLoc ;
+LIST Quot = Quot ;
 
 LIST Adv = Adv ;
 LIST CC = CC ;
@@ -125,6 +127,8 @@ LIST 4PlO = 4PlO ;
 LIST 4Sg = 4Sg ;
 LIST 4SgO = 4SgO ;
 LIST 4Sg/PlO = 4Sg/PlO ;
+LIST 5Sg/PlO = 5Sg/PlO ;
+LIST 2Sg/PlO = 2Sg/PlO ;
 LIST 5Sg = 5Sg ;
 LIST X = X ;
 LIST Voc = Voc ;
@@ -132,7 +136,7 @@ LIST Voc = Voc ;
 LIST VSg = 1Sg 2Sg 3Sg 4Sg ;
 LIST VSgO = 1SgO 2SgO 3SgO ;
 LIST VPl = 1Pl 12Pl 3Pl 4Pl ;
-LIST VPlO = 1PlO 12PlO 3PlP ;
+LIST VPlO = 1PlO 12PlO 3PlO 2PlO ;
 
 LIST Px12Pl = Px12Pl ;
 LIST Px1Pl = Px1Pl ;
@@ -208,7 +212,8 @@ LIST @Neg> = @Neg> ;
 LIST @Neg-N> = @Neg-N> ;
 LIST @Neg-V> = @Neg-V> ;
 LIST @Neg-Ipc> = @Neg-Ipc> ;
-
+LIST @Quot-AI = @Quot-AI ;
+LIST @Quot-TA = @Quot-TA ;
  
 LIST @N> = @N> ;
 LIST @<N = @<N ;
@@ -233,6 +238,13 @@ LIST @<Pron = @<Pron ;
 LIST @Pron> = @Pron> ;
 
 LIST @Pos> = @Pos> ;
+
+LIST @<RelC-N = @<RelC-N ;
+LIST @RelC-N> = @RelC-N> ;
+LIST @<RelC-Pron = @<RelC-Pron ;
+LIST @RelC-Pron> = @RelC-Pron> ;
+LIST Px3 = Px3Sg Px3Pl ;
+LIST RelC = @<RelC-N @RelC-N> @<RelC-Pron @RelC-Pron ;
 
 LIST @OBJ = @OBJ ;
 LIST @<OBJ = @<OBJ ;
@@ -273,6 +285,9 @@ LIST TEMPORALN = "kîsikâw" "askîwin" ;
 LIST SYNTAG = @+FAUXV @+FMAINV @-FAUXV @-FMAINV @<ACTOR @<ADVL @<GOAL @<INS @<OBJ @<OPRED @<SPRED @<SUBJ @>N @>Num @>P @>Pron @ACTOR @ACTOR> @ADVL @ADVL> @APP @APP-ADVL< @APP-N< @APP-Num< @APP-Pron< @APP>Pron @CNP @CVP @FS-VFIN< @GOAL @GOAL> @HNOUN @INS @INS> @INTERJ @N< @Num< @OBJ @OBJ> @OPRED @OPRED> @P< @PCLE @Pron< @SPRED @SPRED> @SUBJ @SUBJ> @VOC ;
 
 LIST BENEF = "akâwâtamawêw" "akihtamawêw" "akocîstamawêw" "akonamawêw" "akopitamawêw" "akostahamawêw" "akotamawêw" "akwahamawêw" "akwamohêw" "akwahpitamawêw" "akwanahamawêw" "anâskêstamawêw" "apahkwâtamawêw" "apihkêstamawêw" "asamêw" "asênamawêw" "asiskînamawêw" "asiskîwiyâkanihkamawêw" "askamawêw" "asotamawêw" "aspastâkanihkamawêw" "astamawêw" "astâhamawêw" "atâwêstamawêw" "atoskêstamawêw" "ay-itinamawêw" "ayahikêstamawêw" "ayamihêstamawêw" "âcimôhêw" "âcimostamawêw" "âciwinamawêw" "âpacihtamôhêw" "âpahamawêw" "âsawinamawêw" "âsowîhtamawêw" "âsônamawêw" "âsôskamawêw" "âstawêhamawêw" "âtotamawêw" "âwatamawêw" "isi-wêpinamawêw" "iskonamawêw" "iskwastamawêw" "ispitamawêw" "itakihtamawêw" "itinamawêw" "itisahamawêw" "itisinamawêw" "itohtatamawêw" "itôtamawêw" "itwahamawêw" "itwêstamawêw" "iyinamawêw" "îkatê-tihtipinamawêw" "îkatê-wêpinamawêw" "îkatênamawêw" "îkatêstamawêw" "kakêkinamawêw" "kanawêyihtamawêw" "kanâcihtamawêw" "kaskihtamawêw" "kaskikwâtamawêw" "kawinamawêw" "kâsîhamawêw" "kâsînamawêw" "kâtamawêw" "kihcêyihtamawêw" "kimotamawêw" "kipahamawêw" "kipihtinamawêw" "kisisamawêw" "kisîpêkinamawêw" "kiskinowâcihtamawêw" "kiskinwahamawêw" "kistikâtamawêw" "kitahamawêw" "kitahamâwêw" "kitamawêw" "kitâpayihtamawêw" "kiskêyihtamohêw" "kitiskipitamawêw" "kîhcitâskamawêw" "kînikatahamawêw" "kîsihtamawêw" "kîsikâstêskamawêw" "kîsinâtêyihtamawêw" "kîsisamawêw" "kîskahamawêw" "kîskipotamawêw" "kîskisamawêw" "kîspinatamawêw" "kîwêhtatamawêw" "kwayâcihtamawêw" "kwayâtastamawêw" "kwâpahamawêw" "kwâpikamawêw" "kwâskwahamawêw" "kwâskwêpitamawêw" "kwêskinamawêw" "mamihcimostamawêw" "manipitamawêw" "manisamawêw" "masinahamawêw" "masinahikêstamawêw" "mawisôstamawêw" "mawîhkâtamawêw" "mâmiskôtamawêw" "mâtinamawêw" "mâwacihtamawêw" "mêskotônamawêw" "mêstihkasamawêw" "mêstinamawêw" "miciminamawêw" "miciminamôhêw"  "mikoskâtêyihtamihêw" "minahôstamawêw" "misi-pônamawêw" "misiwanâcihtamawêw" "miskamawêw" "mitihtamawêw" "miyâhkasamawêw" "miyêw" "mîskotinamawêw" "mîskotônamawêw" "mônahikêstamawêw" "môskîstamawêw" "nahastamawêw" "nakatamawêw" "nakatisamawêw" "naskwahamawêw" "naskwêhamawêw" "natotamawêw" "nawacîstamawêw" "nawasônamawêw" "nawatinamawêw" "nayahtahêw" "nânapâcihtamawêw" "nânistipitamawêw" "nâtamawêw" "nâtwânamawêw" "nêhiyawi-kiskinwahamawêw" "nikamostamawêw" "nikohtamawêw" "nikohtêstamawêw" "nipahtamawêw" "nipôstamawêw"  "nisitohtamôhêw" "nitawêyihtamawêw" "nitonamawêw" "nitotamawêw" "nitotamâkêstawêw" "nîhciwêpinamawêw" "nîhtinamawêw" "nîkân-wîhtamawêw" "nîkânastamawêw" "nîminamawêw" "nîpawîstamawêw" "nîpêpîstamawêw" "nîsôhkamawêw" "nôcikinosêwîstamawêw" "nôcîhkamawêw" "nôtinikêstamawêw" "ocipitamawêw" "ohcîhkamawêw" "ohpahamawêw" "ohpinamawêw" "ohtinamawêw" "ohtiskawinamawêw" "osisahamawêw" "osîhtamawêw" "otâskwahamawêw" "otinamawêw" "oyahpitamawêw" "oyipêhamawêw" "pahkwênamawêw" "pahkwêsamawêw" "pakitinamawêw" "pakwâtamawêw" "pamihtamawêw" "paminamawêw" "pawahamawêw" "pâhkwahamawêw" "pânahâkonamawêw" "pâskinamawêw" "pâskisamawêw" "pê-itohtatamawêw" "pêcipêhamawêw" "pêtamawêw" "pêtisahamawêw" "pihkohtêwâpôstamawêw" "pisiskêyihtamawêw" "pîkiskwêstamawêw" "pîkopicikêstamawêw" "pîkopitamawêw" "pîkoskamawêw" "pîkwahtamawêw" "pônamawêw" "pônêyihtamawêw" "sakâskwahamawêw" "sakinamawêw" "saskahamawêw" "sawahamawêw" "sâkaskinahtamawêw" "sâkihtamawêw" "sâkohtamawêw" "sâmahamawêw" "sêwêpitamawêw" "sinikonamawêw" "sipwêhamawêw" "sîhtahamawêw" "sîkawîstamawêw" "sîkinamawêw" "sîpostahamawêw" "tahkonamawêw" "tahkopitamawêw" "takohtatamawêw" "takwahamawêw" "tawinamawêw" "tâpakwamawêw" "tâpakwêstamawêw" "tâpapîstamawêw" "tâpisahamawêw" "tâpwêhtamawêw" "tâsahamawêw" "tâskinamawêw" "têhamawêw" "tênamawêw" "têpwêstamawêw" "tipahamawêw" "tipahamâkêstamawêw" "tipinawahamawêw" "tipwêhamawêw" "tôtamawêw" "wanâciwêpinamawêw" "wanihikamawêw" "wanotinamawêw" "wawêsîhtamawêw" "wâh-wîhtamawêw" "wâpahtamawêw" "wâsakânamawêw" "wâsâpiskinamawêw" "wâsênamawêw" "wâskahikanihkamawêw" "wâstahamawêw" "wâstinamawêw" "wâwâstahamawêw" "wêpinamawêw" "wiyahpitamawêw" "wiyakihtamawêw" "wiyastamawêw" "wiyihkotamawêw" "wiyisamawêw" "wîci-kiskinohamâkosîmêw" "wîcôhkamawêw" "wîhtamawêw" "wîpinamawêw" "wîsôhkamawêw" "yîkatê-tihtipinamawêw" "yîkatê-wêpinamawêw" "yîkatênamawêw" "yîkatêstamawêw" "yôhtênamawêw" "yôhtêpitamawêw" ;
+
+LIST PV/e = PV/e ;
+LIST PV/kaa = PV/kaa ;
 
 
 # Initials
@@ -316,6 +331,11 @@ SET NUMBERGENDER = (A Sg) OR (A Pl) OR (I Sg) OR (I Pl) OR (A Obv) ;
 
 SET VII = II - IIZ ;
 
+SET NOTRELC = V - RelC ;
+
+LIST PEOPLE = "nisikos" "wiyawâw" ;
+LIST <TH-In> = <TH-In> ;
+
 # Here come the rules #
 
 
@@ -327,8 +347,8 @@ MAP:PrepNR @<P TARGET N + Loc IF (-1 PREPOSITION) ;
 MAP:PrepNL @P> TARGET N + Loc IF (1 POSTPOSITION) ;
 MAP:PrepNR @<P TARGET N + InLoc IF (-1 PREPOSITION) ;
 MAP:PrepNL @P> TARGET N + InLoc IF (1 POSTPOSITION) ;
-MAP:LocVR  @<Loc-V TARGET N + Loc IF (*-1 V BARRIER CLB) ;
-MAP:LocVL  @Loc-V> TARGET N + Loc IF (*1 V BARRIER CLB) ;
+#MAP:LocVR  @<Loc-V TARGET N + Loc IF (*-1 V BARRIER CLB) ;
+#MAP:LocVL  @Loc-V> TARGET N + Loc IF (*1 V BARRIER CLB) ;
 
 ##MAP @<ADVL Loc OR Ipc  (-1 VFIN)(NOT 0 @<P) ;
 ##MAP @ADVL> Loc OR Ipc  (*1 VFIN)(NOT 0 @P>) ;
@@ -340,16 +360,18 @@ MAP:NegV @Neg-V> TARGET Neg IF (*1 V BARRIER CLB) ;
 MAP:NegN @Neg-N> TARGET Neg IF (1 N) ;
 MAP:NegIpc @Neg-Ipc> TARGET Neg IF (1 Ipc) ;
 
+ADD:QUOTAI @Quot-AI TARGET AI + Quot ;
+ADD:QUOTAI @Quot-TA TARGET TA + Quot ;
 
-MAP:PREDII @PRED-II TARGET V + II ;
-MAP:PREDAI @PRED-AI TARGET V + AI ;
-MAP:PREDTI @PRED-TI TARGET V + TI ;
-MAP:PREDTA @PRED-TA TARGET V + TA ;
+ADD:PREDII @PRED-II TARGET V + II ;
+ADD:PREDAI @PRED-AI TARGET V + AI ;
+ADD:PREDTI @PRED-TI TARGET V + TI ;
+ADD:PREDTA @PRED-TA TARGET V + TA ;
 
 ##MAP @N> (Pron Dem) (1 (Num) N)  ;
 ##MAP @<N (Pron Dem) (-1 N (Num))  ;
 
-##DEMONSTRATIVES AD NOUNS
+##DEMONSTRATIVES AND NOUNS
 MAP:DemNASgL @N> TARGET Dem + A + Sg IF (NOT 1 Obv)(1 N + A + Sg) ;
 MAP:DemNASgR @<N TARGET Dem + A + Sg IF (NOT -1 Obv)(-1 N + A + Sg) ;
 MAP:DemNAPlL @N> TARGET Dem + A + Pl IF (NOT 1 Obv)(1 N + A + Pl) ;
@@ -412,26 +434,678 @@ MAP:NAMES @N> TARGET Prop IF (0 Prop)(1 Prop);
 
 ##ACTor and goal rules for 3 and 3’ animate nouns
 ##need to extend the interleaving, so all 1s, then all 2s, etc. possibly also interleave with TI and AI (thought: relationships with TAs more core: if a noun close to both a TA and an AI (conj), AI maybe more likely to be a relative clause)
-## all *(-)1 forms are unchanged from original functional constraints, cA remain if/when more automatic heuristics cA be developed
-## ind before cnj, ê- before kâ-
+## all *(-)1 forms are unchanged from original functional constraints, can remain if/when more automatic heuristics can be developed
+## ind before cnj, ê- others 
+## relative clauses? 
+##Ind
 
-MAP:TAGOAL3R @<GOAL TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3SgO BARRIER V OR CLB) ;
-MAP:TAGOAL3L @GOAL> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3SgO BARRIER V OR CLB) ;
+##one position away
 
-MAP:TAGOAL3R @<GOAL TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3PlO BARRIER V OR CLB) ;
-MAP:TAGOAL3L @GOAL> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3PlO BARRIER V OR CLB) ;
+MAP:TAGOAL3R @<GOAL TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(-1 TA + Ind + 3SgO) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(1 TA + Ind + 3SgO) ;
 
-MAP:TAGOALObvR @<GOAL TARGET N + Obv IF (NOT 0 Loc)(*-1 TA + 4Sg/PlO BARRIER V OR CLB) ;
-MAP:TAGOALObvL @GOAL> TARGET N + Obv IF (NOT 0 Loc)(*1 TA + 4Sg/PlO BARRIER V OR CLB) ;
+MAP:TAGOAL3R @<GOAL TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(-1 TA + Ind + 3PlO) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(1 TA + Ind + 3PlO) ;
 
-MAP:TAACTorR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3Sg BARRIER V OR CLB) ;
-MAP:TAACTorL @ACTOR> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3Sg BARRIER V OR CLB) ;
+MAP:TAGOALObvR @<GOAL TARGET N + Obv IF (NOT 0 Loc)(-1 TA + Ind + 4Sg/PlO) ;
+MAP:TAGOALObvL @GOAL> TARGET N + Obv IF (NOT 0 Loc)(1 TA + Ind + 4Sg/PlO) ;
 
-MAP:TAACTorR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3Pl BARRIER V OR CLB) ;
-MAP:TAACTorL @ACTOR> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3Pl BARRIER V OR CLB) ;
+MAP:TAACTorR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(-1 TA + Ind + 3Sg) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(1 TA + Ind + 3Sg) ;
 
-MAP:TAACTObvR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(*-1C TA + 4Sg/Pl BARRIER V OR CLB) ;
-MAP:TAACTObvL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C TA + 4Sg/Pl BARRIER V OR CLB) ;
+MAP:TAACTorR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(-1 TA + Ind + 3Pl) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(1 TA + Ind + 3Pl) ;
+
+MAP:TAACTObvR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(-1C TA + Ind + 4Sg/Pl) ;
+MAP:TAACTObvL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(1C TA + Ind + 4Sg/Pl) ;
+
+#TI + Ind and AI + Ind actors nouns
+MAP:AITIACTSgR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(-1 AI + Ind + 3Sg OR TI + Ind + 3Sg) ;
+MAP:AITIACTSgL @ACTOR> TARGET N + A + Sg IF  (NOT 0 Loc)(NOT 0 Obv)(1 AI + Ind + 3Sg OR TI + Ind + 3Sg) ;
+
+MAP:AITIACTPlR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(-1 AI + Ind + 3Pl OR TI + Ind + 3Pl) ;
+MAP:AITIACTPlL @ACTOR> TARGET N + A + Pl IF  (NOT 0 Loc)(1 AI + Ind + 3Pl OR TI + Ind + 3Pl) ;
+
+MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(-1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl) ;
+MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl) ;
+
+#TI Goals INANIMATE NOUNS
+MAP:TIGOAL @<GOAL TARGET N + I IF (NOT 0 Loc)(-1 TI + Ind) ;
+MAP:TIGOAL @GOAL> TARGET N + I IF (NOT 0 Loc)(1 TI + Ind) ;
+
+#II actors: done with set of II-zero
+MAP:IIACTor3R @<ACTOR TARGET N + I + Sg IF (NOT 0 Loc)(-1 VII + Ind + 3Sg) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Sg IF (NOT 0 Loc)(1 VII + Ind + 3Sg) ;
+MAP:IIACTor3R @<ACTOR TARGET N + I + Pl IF (NOT 0 Loc)(-1 VII + Ind + 3Pl) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(1 VII + Ind + 3Pl) ;
+MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(-1 VII + Ind + 4Sg OR VII + Ind + 4Pl) ;
+MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(1 VII + Ind + 4Sg OR VII + Ind + 4Pl) ;
+
+##PRONOMINAL GOALS goals more likely to be lexicalised than actors cf schmirler et al 2018?
+MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (-1 TI) ;
+MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (1 TI) ;
+
+MAP:TAPron1SgGOALR @<GOAL TARGET Pron + 1Sg IF (-1 TA + Ind + 1SgO) ;
+MAP:TAPron1SgGOALL @GOAL> TARGET Pron + 1Sg IF (1 TA + Ind + 1SgO) ;
+MAP:TAPron1PlGOALR @<GOAL TARGET Pron + 1Pl IF (-1 TA + Ind + 1PlO) ;
+MAP:TAPron1PlGOALL @GOAL> TARGET Pron + 1Pl IF (1 TA + Ind + 1PlO) ;
+
+MAP:TAPron2SgGOALR @<GOAL TARGET Pron + 2Sg IF (-1 TA + Ind + 2SgO) ;
+MAP:TAPron2SgGOALL @GOAL> TARGET Pron + 2Sg IF (1 TA + Ind + 2SgO) ;
+MAP:TAPron2PlGOALR @<GOAL TARGET Pron + 2Pl IF (-1 TA + Ind + 2PlO) ;
+MAP:TAPron2PlGOALL @GOAL> TARGET Pron + 2Pl IF (1 TA + Ind + 2PlO) ;
+
+MAP:TAPron12PlGOALR @<GOAL TARGET Pron + 12Pl IF (-1 TA + Ind + 12PlO) ;
+MAP:TAPron12PlGOALL @GOAL> TARGET Pron + 12Pl IF (1 TA + Ind + 12PlO) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Dem + A + Sg IF (NOT 0 Obv LINK -1 TA + Ind + 3SgO) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Dem + A + Sg IF (NOT 0 Obv LINK 1 TA + Ind + 3SgO) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Dem + A + Pl IF (NOT 0 Obv LINK -1 TA + Ind + 3PlO) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Dem + A + Pl IF (NOT 0 Obv LINK 1 TA + Ind + 3PlO) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Pers + 3Sg IF (NOT 0 Obv LINK -1 TA + Ind + 3SgO) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Pers + 3Sg IF (NOT 0 Obv LINK 1 TA + Ind + 3SgO) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Pers + 3Pl IF (NOT 0 Obv LINK -1 TA + Ind + 3PlO) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Pers + 3Pl IF (NOT 0 Obv LINK 1 TA + Ind + 3PlO) ;
+
+MAP:TAObvPronGOALR @<GOAL TARGET Pron + Obv IF (-1C TA + Ind + 4Sg/PlO) ;
+MAP:TAObvPronGOALL @GOAL> TARGET Pron + Obv IF (1C TA + Ind + 4Sg/PlO) ;
+
+##PRONOMINAL ACTORS 
+MAP:AITITADem3SgACTR @<ACTOR TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (-1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg)) ;
+MAP:AITITADem3SgACTL @ACTOR> TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg)) ;
+MAP:AITITADem3PlACTR @<ACTOR TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (-1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl)) ;
+MAP:AITITADem3PlACTL @ACTOR> TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl)) ;
+MAP:AITITADemOBVACTR @<ACTOR TARGET Pron + A + Obv IF ((NOT 0 @<N OR @N>) LINK (-1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl OR TA + Ind + 4Sg/Pl)) ;
+MAP:AITITADemOBVACTL @ACTOR> TARGET Pron + A + Obv IF ((NOT 0 @<N OR @N>) LINK (1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl OR TA + Ind + 4Sg/Pl)) ;
+
+MAP:IIPron3SgACTR @<ACTOR TARGET Pron + I + Sg IF (-1 VII + Ind + 3Sg) ;
+MAP:IIPron3SgACTL @ACTOR> TARGET Pron + I + Sg IF (1 VII + Ind + 3Sg) ;
+MAP:IIPron3PlACTR @<ACTOR TARGET Pron + I + Pl IF (-1 VII + Ind + 3Pl) ;
+MAP:IIPron3PlACTL @ACTOR> TARGET Pron + I + Pl IF (1 VII + Ind + 3Pl) ;
+
+MAP:AITITAPron1SgACTR @<ACTOR TARGET Pron + 1Sg IF (-1 V + Ind + Ind + 1Sg) ;
+MAP:AITITAPron1SgACTL @ACTOR> TARGET Pron + 1Sg IF (1 V + Ind + Ind + 1Sg) ;
+MAP:AITITAPron1PlACTR @<ACTOR TARGET Pron + 1Pl IF (-1 V + Ind + Ind + 1Pl) ;
+MAP:AITITAPron1PlACTL @ACTOR> TARGET Pron + 1Pl IF (1 V + Ind + Ind + 1Pl) ;
+
+MAP:AITITAPron2SgACTR @<ACTOR TARGET Pron + 2Sg IF (-1 V + Ind + 2Sg) ;
+MAP:AITITAPron2SgACTL @ACTOR> TARGET Pron + 2Sg IF (1 V + Ind + 2Sg) ;
+MAP:AITITAPron2PlACTR @<ACTOR TARGET Pron + 2Pl IF (-1 V + Ind + 2Pl) ;
+MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (1 V + Ind + 2Pl) ;
+
+MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (-1 V + Ind + 12Pl) ;
+MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (1 V + Ind + 12Pl) ;
+
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (-1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg) ;
+LIST Pron"+Pers" = Pron"+Pers" ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (-1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl) ; 
+
+##two positions away
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(NOT -1 V OR CLB)(-2 TA + Ind + 3SgO) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(NOT 1 V OR CLB)(2 TA + Ind + 3SgO) ;
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(NOT -1 V OR CLB)(-2 TA + Ind + 3PlO) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(NOT 1 V OR CLB)(2 TA + Ind + 3PlO) ;
+
+MAP:TAGOALObvR @<GOAL TARGET N + Obv IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 TA + Ind + 4Sg/PlO) ;
+MAP:TAGOALObvL @GOAL> TARGET N + Obv IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 TA + Ind + 4Sg/PlO) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(NOT -1 V OR CLB)(-2 TA + Ind + 3Sg) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(NOT 1 V OR CLB)(2 TA + Ind + 3Sg) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(NOT -1 V OR CLB)(-2 TA + Ind + 3Pl) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(NOT 1 V OR CLB)(2 TA + Ind + 3Pl) ;
+
+MAP:TAACTObvR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2C TA + Ind + 4Sg/Pl) ;
+MAP:TAACTObvL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(NOT 1 V OR CLB)(2C TA + Ind + 4Sg/Pl) ;
+
+##INTERROGATIVE
+#MAP:INTR @<ACTOR TARGET Interr IF (NOT -1 V OR CLB)(-2 AI + Ind OR TI + Ind + 3Pl OR 3Sg BARRIER CLB) ;
+#MAP:INTR @ACTOR> TARGET Interr IF (NOT 1 V OR CLB)(2 AI + Ind OR TI + Ind + 3Pl OR 3Sg BARRIER CLB) ;
+
+#TI + Ind and AI + Ind actors nouns
+MAP:AITIACTSgR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(NOT -1 V OR CLB)(-2 AI + Ind + 3Sg OR TI + Ind + 3Sg) ;
+MAP:AITIACTSgL @ACTOR> TARGET N + A + Sg IF  (NOT 0 Loc)(NOT 0 Obv)(NOT 1 V OR CLB)(2 AI + Ind + 3Sg OR TI + Ind + 3Sg) ;
+
+MAP:AITIACTPlR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 AI + Ind + 3Pl OR TI + Ind + 3Pl) ;
+MAP:AITIACTPlL @ACTOR> TARGET N + A + Pl IF  (NOT 0 Loc)(NOT 1 V OR CLB)(2 AI + Ind + 3Pl OR TI + Ind + 3Pl) ;
+
+MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl) ;
+MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(NOT 1 V OR CLB)(2C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl) ;
+
+#TI Goals INANIMATE NOUNS
+MAP:TIGOAL @<GOAL TARGET N + I IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 TI + Ind) ;
+MAP:TIGOAL @GOAL> TARGET N + I IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 TI + Ind ) ;
+
+#II actors: done with set of II-zero
+MAP:IIACTor3R @<ACTOR TARGET N + I + Sg IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 VII + Ind + 3Sg) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Sg IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 VII + Ind + 3Sg) ;
+MAP:IIACTor3R @<ACTOR TARGET N + I + Pl IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 VII + Ind + 3Pl) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 VII + Ind + 3Pl) ;
+MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 VII + Ind + 4Sg OR VII + Ind + 4Pl) ;
+MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 VII + Ind + 4Sg OR VII + Ind + 4Pl) ;
+
+##PRONOMINAL GOALS goals more likely to be lexicalised thA actors cf schmirler et al 2018?
+MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (NOT -1 V OR CLB)(-2 TI) ;
+MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (NOT 1 V OR CLB)(2 TI) ;
+
+MAP:TAPron1SgGOALR @<GOAL TARGET Pron + 1Sg IF (NOT -1 V OR CLB)(-2 TA + Ind + 1SgO) ;
+MAP:TAPron1SgGOALL @GOAL> TARGET Pron + 1Sg IF (NOT 1 V OR CLB)(2 TA + Ind + 1SgO) ;
+MAP:TAPron1PlGOALR @<GOAL TARGET Pron + 1Pl IF (NOT -1 V OR CLB)(-2 TA + Ind + 1PlO) ;
+MAP:TAPron1PlGOALL @GOAL> TARGET Pron + 1Pl IF (NOT 1 V OR CLB)(2 TA + Ind + 1PlO) ;
+
+MAP:TAPron2SgGOALR @<GOAL TARGET Pron + 2Sg IF (NOT -1 V OR CLB)(-2 TA + Ind + 2SgO) ;
+MAP:TAPron2SgGOALL @GOAL> TARGET Pron + 2Sg IF (NOT 1 V OR CLB)(2 TA + Ind + 2SgO) ;
+MAP:TAPron2PlGOALR @<GOAL TARGET Pron + 2Pl IF (NOT -1 V OR CLB)(-2 TA + Ind + 2PlO) ;
+MAP:TAPron2PlGOALL @GOAL> TARGET Pron + 2Pl IF (NOT 1 V OR CLB)(2 TA + Ind + 2PlO) ;
+
+MAP:TAPron12PlGOALR @<GOAL TARGET Pron + 12Pl IF (NOT -1 V OR CLB)(-2 TA + Ind + 12PlO) ;
+MAP:TAPron12PlGOALL @GOAL> TARGET Pron + 12Pl IF (NOT 1 V OR CLB)(2 TA + Ind + 12PlO) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Dem + A + Sg IF (NOT -1 V OR CLB)(NOT 0 Obv LINK -2 TA + Ind + 3SgO) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Dem + A + Sg IF (NOT 1 V OR CLB)(NOT 0 Obv LINK 2 TA + Ind + 3SgO) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Dem + A + Pl IF (NOT -1 V OR CLB)(NOT 0 Obv LINK -2 TA + Ind + 3PlO) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Dem + A + Pl IF (NOT 1 V OR CLB)(NOT 0 Obv LINK 2 TA + Ind + 3PlO) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Pers + 3Sg IF (NOT -1 V OR CLB)(NOT 0 Obv LINK -2 TA + Ind + 3SgO) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Pers + 3Sg IF (NOT 1 V OR CLB)(NOT 0 Obv LINK 2 TA + Ind + 3SgO) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Pers + 3Pl IF (NOT -1 V OR CLB)(NOT 0 Obv LINK -2 TA + Ind + 3PlO) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Pers + 3Pl IF (NOT 1 V OR CLB)(NOT 0 Obv LINK 2 TA + Ind + 3PlO) ;
+
+MAP:TAObvPronGOALR @<GOAL TARGET Pron + Obv IF (NOT -1 V OR CLB)(-2C TA + Ind + 4Sg/PlO) ;
+MAP:TAObvPronGOALL @GOAL> TARGET Pron + Obv IF (NOT 1 V OR CLB)(2C TA + Ind + 4Sg/PlO) ;
+
+##PRONOMINAL ACTORS 
+MAP:AITITADem3SgACTR @<ACTOR TARGET Pron + A + Sg IF (NOT -1 V OR CLB)((NOT 0 @<N OR @N>) LINK (-2 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg)) ;
+MAP:AITITADem3SgACTL @ACTOR> TARGET Pron + A + Sg IF (NOT 1 V OR CLB)((NOT 0 @<N OR @N>) LINK (2 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg)) ;
+MAP:AITITADem3PlACTR @<ACTOR TARGET Pron + A + Pl IF (NOT -1 V OR CLB)((NOT 0 @<N OR @N>) LINK (-2 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl)) ;
+MAP:AITITADem3PlACTL @ACTOR> TARGET Pron + A + Pl IF (NOT 1 V OR CLB)((NOT 0 @<N OR @N>) LINK (2 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl)) ;
+MAP:AITITADemOBVACTR @<ACTOR TARGET Pron + A + Obv IF (NOT -1 V OR CLB)((NOT 0 @<N OR @N>) LINK (-2C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl OR TA + Ind + 4Sg/Pl)) ;
+MAP:AITITADemOBVACTL @ACTOR> TARGET Pron + A + Obv IF (NOT 1 V OR CLB)((NOT 0 @<N OR @N>) LINK (2C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl OR TA + Ind + 4Sg/Pl)) ;
+
+MAP:IIPron3SgACTR @<ACTOR TARGET Pron + I + Sg IF (NOT -1 V OR CLB)(-2 VII + Ind + 3Sg) ;
+MAP:IIPron3SgACTL @ACTOR> TARGET Pron + I + Sg IF (NOT 1 V OR CLB)(2 VII + Ind + 3Sg) ;
+MAP:IIPron3PlACTR @<ACTOR TARGET Pron + I + Pl IF (NOT -1 V OR CLB)(-2 VII + Ind + 3Pl) ;
+MAP:IIPron3PlACTL @ACTOR> TARGET Pron + I + Pl IF (NOT 1 V OR CLB)(2 VII + Ind + 3Pl) ;
+
+MAP:AITITAPron1SgACTR @<ACTOR TARGET Pron + 1Sg IF (NOT -1 V OR CLB)(-2 V + Ind + 1Sg) ;
+MAP:AITITAPron1SgACTL @ACTOR> TARGET Pron + 1Sg IF (NOT 1 V OR CLB)(2 V + Ind + 1Sg) ;
+MAP:AITITAPron1PlACTR @<ACTOR TARGET Pron + 1Pl IF (NOT -1 V OR CLB)(-2 V + Ind + 1Pl) ;
+MAP:AITITAPron1PlACTL @ACTOR> TARGET Pron + 1Pl IF (NOT 1 V OR CLB)(2 V + Ind + 1Pl) ;
+
+MAP:AITITAPron2SgACTR @<ACTOR TARGET Pron + 2Sg IF (NOT -1 V OR CLB)(-2 V + Ind + 2Sg) ;
+MAP:AITITAPron2SgACTL @ACTOR> TARGET Pron + 2Sg IF (NOT 1 V OR CLB)(2 V + Ind + 2Sg) ;
+MAP:AITITAPron2PlACTR @<ACTOR TARGET Pron + 2Pl IF (NOT -1 V OR CLB)(-2 V + Ind + 2Pl) ;
+MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (NOT 1 V OR CLB)(2 V + Ind + 2Pl) ;
+
+MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (NOT -1 V OR CLB)(-2 V + Ind + 12Pl) ;
+MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (NOT 1 V OR CLB)(2 V + Ind + 12Pl) ;
+
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (NOT -1 V OR CLB)(-2 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (NOT 1 V OR CLB)(2 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg) ;
+LIST Pron"+Pers" = Pron"+Pers" ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (NOT -1 V OR CLB)(-2 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (NOT 1 V OR CLB)(2 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl) ;
+
+##everything else (see also notes above actor/goal section)
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + Ind + 3SgO BARRIER V OR CLB) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + Ind + 3SgO BARRIER V OR CLB) ;
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + Ind + 3PlO BARRIER V OR CLB) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + Ind + 3PlO BARRIER V OR CLB) ;
+
+MAP:TAGOALObvR @<GOAL TARGET N + Obv IF (NOT 0 Loc)(*-1 TA + Ind + 4Sg/PlO BARRIER V OR CLB) ;
+MAP:TAGOALObvL @GOAL> TARGET N + Obv IF (NOT 0 Loc)(*1 TA + Ind + 4Sg/PlO BARRIER V OR CLB) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + Ind + 3Sg BARRIER V OR CLB) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + Ind + 3Sg BARRIER V OR CLB) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + Ind + 3Pl BARRIER V OR CLB) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + Ind + 3Pl BARRIER V OR CLB) ;
+
+MAP:TAACTObvR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(*-1C TA + Ind + 4Sg/Pl BARRIER V OR CLB) ;
+MAP:TAACTObvL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C TA + Ind + 4Sg/Pl BARRIER V OR CLB) ;
+
+##MAP:AITIACTorR @<ACTOR TARGET N + A IF (*-1 (AI + Ind 3) OR (TI + Ind 3) BARRIER CLB OR CLB) ;
+
+##INTERROGATIVE
+#MAP:INTR @<ACTOR TARGET Interr IF (*-1 AI + Ind OR TI + Ind + 3Pl OR 3Sg BARRIER CLB) ;
+#MAP:INTR @ACTOR> TARGET Interr IF (*1 AI + Ind OR TI + Ind + 3Pl OR 3Sg BARRIER CLB) ;
+
+#TI + Ind and AI + Ind actors nouns
+MAP:AITIACTSgR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 AI + Ind + 3Sg OR TI + Ind + 3Sg BARRIER V OR CLB) ;
+MAP:AITIACTSgL @ACTOR> TARGET N + A + Sg IF  (NOT 0 Loc)(NOT 0 Obv)(*1 AI + Ind + 3Sg OR TI + Ind + 3Sg BARRIER V OR CLB) ;
+
+MAP:AITIACTPlR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(*-1 AI + Ind + 3Pl OR TI + Ind + 3Pl BARRIER V OR CLB) ;
+MAP:AITIACTPlL @ACTOR> TARGET N + A + Pl IF  (NOT 0 Loc)(*1 AI + Ind + 3Pl OR TI + Ind + 3Pl BARRIER V OR CLB) ;
+
+MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(*-1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl BARRIER V OR CLB) ;
+MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl BARRIER V OR CLB) ;
+
+#TI Goals INAIMATE NOUNS
+MAP:TIGOAL @<GOAL TARGET N + I IF (NOT 0 Loc)(*-1 TI + Ind BARRIER V OR CLB) ;
+MAP:TIGOAL @GOAL> TARGET N + I IF (NOT 0 Loc)(*1 TI + Ind BARRIER V OR CLB) ;
+
+#II + Ind actors: done with set of II-zero
+MAP:IIACTor3R @<ACTOR TARGET N + I + Sg IF (NOT 0 Loc)(*-1 VII + Ind + 3Sg BARRIER V OR CLB) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Sg IF (NOT 0 Loc)(*1 VII + Ind + 3Sg BARRIER V OR CLB) ;
+MAP:IIACTor3R @<ACTOR TARGET N + I + Pl IF (NOT 0 Loc)(*-1 VII + Ind + 3Pl BARRIER V OR CLB) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(*1 VII + Ind + 3Pl BARRIER V OR CLB) ;
+MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*-1 VII + Ind + 4Sg OR VII + Ind + 4Pl BARRIER V OR CLB) ;
+MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*1 VII + Ind + 4Sg OR VII + Ind + 4Pl BARRIER V OR CLB) ;
+
+##PRONOMINAL GOALS goals more likely to be lexicalised thA actors cf schmirler et al 2018?
+MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (*-1 TI + Ind BARRIER V OR CLB) ;
+MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (*1 TI + Ind BARRIER V OR CLB) ;
+
+MAP:TAPron1SgGOALR @<GOAL TARGET Pron + 1Sg IF (*-1 TA + Ind + 1SgO BARRIER V OR CLB) ;
+MAP:TAPron1SgGOALL @GOAL> TARGET Pron + 1Sg IF (*1 TA + Ind + 1SgO BARRIER V OR CLB) ;
+MAP:TAPron1PlGOALR @<GOAL TARGET Pron + 1Pl IF (*-1 TA + Ind + 1PlO BARRIER V OR CLB) ;
+MAP:TAPron1PlGOALL @GOAL> TARGET Pron + 1Pl IF (*1 TA + Ind + 1PlO BARRIER V OR CLB) ;
+
+MAP:TAPron2SgGOALR @<GOAL TARGET Pron + 2Sg IF (*-1 TA + Ind + 2SgO BARRIER V OR CLB) ;
+MAP:TAPron2SgGOALL @GOAL> TARGET Pron + 2Sg IF (*1 TA + Ind + 2SgO BARRIER V OR CLB) ;
+MAP:TAPron2PlGOALR @<GOAL TARGET Pron + 2Pl IF (*-1 TA + Ind + 2PlO BARRIER V OR CLB) ;
+MAP:TAPron2PlGOALL @GOAL> TARGET Pron + 2Pl IF (*1 TA + Ind + 2PlO BARRIER V OR CLB) ;
+
+MAP:TAPron12PlGOALR @<GOAL TARGET Pron + 12Pl IF (*-1 TA + Ind + 12PlO BARRIER V OR CLB) ;
+MAP:TAPron12PlGOALL @GOAL> TARGET Pron + 12Pl IF (*1 TA + Ind + 12PlO BARRIER V OR CLB) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Dem + A + Sg IF (NOT 0 Obv LINK *-1 TA + Ind + 3SgO BARRIER V OR CLB) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Dem + A + Sg IF (NOT 0 Obv LINK *1 TA + Ind + 3SgO BARRIER V OR CLB) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Dem + A + Pl IF (NOT 0 Obv LINK *-1 TA + Ind + 3PlO BARRIER V OR CLB) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Dem + A + Pl IF (NOT 0 Obv LINK *1 TA + Ind + 3PlO BARRIER V OR CLB) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Pers + 3Sg IF (NOT 0 Obv LINK *-1 TA + Ind + 3SgO BARRIER V OR CLB) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Pers + 3Sg IF (NOT 0 Obv LINK *1 TA + Ind + 3SgO BARRIER V OR CLB) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Pers + 3Pl IF (NOT 0 Obv LINK *-1 TA + Ind + 3PlO BARRIER V OR CLB) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Pers + 3Pl IF (NOT 0 Obv LINK *1 TA + Ind + 3PlO BARRIER V OR CLB) ;
+
+MAP:TAObvPronGOALR @<GOAL TARGET Pron + Obv IF (*-1C TA + Ind + 4Sg/PlO BARRIER V OR CLB) ;
+MAP:TAObvPronGOALL @GOAL> TARGET Pron + Obv IF (*1C TA + Ind + 4Sg/PlO BARRIER V OR CLB) ;
+
+##PRONOMINAL ACTORS 
+MAP:AITITADem3SgACTR @<ACTOR TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (*-1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg BARRIER V OR CLB)) ;
+MAP:AITITADem3SgACTL @ACTOR> TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (*1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg BARRIER V OR CLB)) ;
+MAP:AITITADem3PlACTR @<ACTOR TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (*-1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl BARRIER V OR CLB)) ;
+MAP:AITITADem3PlACTL @ACTOR> TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (*1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl BARRIER V OR CLB)) ;
+MAP:AITITADemOBVACTR @<ACTOR TARGET Pron + A + Obv IF ((NOT 0 @<N OR @N>) LINK (*-1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl OR TA + Ind + 4Sg/Pl BARRIER V OR CLB)) ;
+MAP:AITITADemOBVACTL @ACTOR> TARGET Pron + A + Obv IF ((NOT 0 @<N OR @N>) LINK (*1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl OR TA + Ind + 4Sg/Pl BARRIER V OR CLB)) ;
+
+MAP:IIPron3SgACTR @<ACTOR TARGET Pron + I + Sg IF (*-1 VII + Ind + 3Sg BARRIER V OR CLB) ;
+MAP:IIPron3SgACTL @ACTOR> TARGET Pron + I + Sg IF (*1 VII + Ind + 3Sg BARRIER V OR CLB) ;
+MAP:IIPron3PlACTR @<ACTOR TARGET Pron + I + Pl IF (*-1 VII + Ind + 3Pl BARRIER V OR CLB) ;
+MAP:IIPron3PlACTL @ACTOR> TARGET Pron + I + Pl IF (*1 VII + Ind + 3Pl BARRIER V OR CLB) ;
+
+MAP:AITITAPron1SgACTR @<ACTOR TARGET Pron + 1Sg IF (*-1 V + Ind + 1Sg BARRIER V OR CLB) ;
+MAP:AITITAPron1SgACTL @ACTOR> TARGET Pron + 1Sg IF (*1 V + Ind + 1Sg BARRIER V OR CLB) ;
+MAP:AITITAPron1PlACTR @<ACTOR TARGET Pron + 1Pl IF (*-1 V + Ind + 1Pl BARRIER V OR CLB) ;
+MAP:AITITAPron1PlACTL @ACTOR> TARGET Pron + 1Pl IF (*1 V + Ind + 1Pl BARRIER V OR CLB) ;
+
+MAP:AITITAPron2SgACTR @<ACTOR TARGET Pron + 2Sg IF (*-1 V + Ind + 2Sg BARRIER V OR CLB) ;
+MAP:AITITAPron2SgACTL @ACTOR> TARGET Pron + 2Sg IF (*1 V + Ind + 2Sg BARRIER V OR CLB) ;
+MAP:AITITAPron2PlACTR @<ACTOR TARGET Pron + 2Pl IF (*-1 V + Ind + 2Pl BARRIER V OR CLB) ;
+MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (*1 V + Ind + 2Pl BARRIER V OR CLB) ;
+
+MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (*-1 V + Ind + 12Pl BARRIER V OR CLB) ;
+MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (*1 V + Ind + 12Pl BARRIER V OR CLB) ;
+
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (*-1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg BARRIER V OR CLB) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (*1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg BARRIER V OR CLB) ;
+LIST Pron"+Pers" = Pron"+Pers" ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (*-1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl BARRIER V OR CLB) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (*1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl BARRIER V OR CLB) ;
+
+## cnj e
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(-1 TA + Cnj + PV/e + 3SgO) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(1 TA + Cnj + PV/e + 3SgO) ;
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(-1 TA + Cnj + PV/e + 3PlO) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(1 TA + Cnj + PV/e + 3PlO) ;
+
+MAP:TAGOALObvR @<GOAL TARGET N + Obv IF (NOT 0 Loc)(-1 TA + Cnj + PV/e + 4Sg/PlO) ;
+MAP:TAGOALObvL @GOAL> TARGET N + Obv IF (NOT 0 Loc)(1 TA + Cnj + PV/e + 4Sg/PlO) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(-1 TA + Cnj + PV/e + 3Sg) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(1 TA + Cnj + PV/e + 3Sg) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(-1 TA + Cnj + PV/e + 3Pl) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(1 TA + Cnj + PV/e + 3Pl) ;
+
+MAP:TAACTObvR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(-1C TA + Cnj + PV/e + 4Sg/Pl) ;
+MAP:TAACTObvL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(1C TA + Cnj + PV/e + 4Sg/Pl) ;
+
+##INTERROGATIVE
+#MAP:INTR @<ACTOR TARGET Interr IF (-1 AI + Cnj + PV/e + Cnj + PV/e OR TI + Cnj + PV/e + 3Pl OR 3Sg BARRIER CLB) ;
+#MAP:INTR @ACTOR> TARGET Interr IF (1 AI + Cnj + PV/e OR TI + Cnj + PV/e + 3Pl OR 3Sg BARRIER CLB) ;
+
+#TI + Cnj + PV/e and AI + Cnj + PV/e actors nouns
+MAP:AITIACTSgR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(-1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg) ;
+MAP:AITIACTSgL @ACTOR> TARGET N + A + Sg IF  (NOT 0 Loc)(NOT 0 Obv)(1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg) ;
+
+MAP:AITIACTPlR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(-1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl) ;
+MAP:AITIACTPlL @ACTOR> TARGET N + A + Pl IF  (NOT 0 Loc)(1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl) ;
+
+MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(-1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl) ;
+MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl) ;
+
+#TI + Cnj + PV/e Goals INAIMATE NOUNS
+MAP:TIGOAL @<GOAL TARGET N + I IF (NOT 0 Loc)(-1 TI + Cnj + PV/e) ;
+MAP:TIGOAL @GOAL> TARGET N + I IF (NOT 0 Loc)(1 TI + Cnj + PV/e) ;
+
+#II + Cnj + PV/e + Cnj + PV/e actors: done with set of II-zero
+MAP:IIACTor3R @<ACTOR TARGET N + I + Sg IF (NOT 0 Loc)(-1 VII + Cnj + PV/e + Cnj + PV/e + 3Sg) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Sg IF (NOT 0 Loc)(1 VII + Cnj + PV/e + 3Sg) ;
+MAP:IIACTor3R @<ACTOR TARGET N + I + Pl IF (NOT 0 Loc)(-1 VII + Cnj + PV/e + 3Pl) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(1 VII + Cnj + PV/e + 3Pl) ;
+MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(-1 VII + Cnj + PV/e + 4Sg OR VII + Cnj + PV/e + 4Pl) ;
+MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(1 VII + Cnj + PV/e + 4Sg OR VII + Cnj + PV/e + 4Pl) ;
+
+##PRONOMINAL GOALS goals more likely to be lexicalised than actors cf schmirler et al 2018?
+MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (-1 TI) ;
+MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (1 TI) ;
+
+MAP:TAPron1SgGOALR @<GOAL TARGET Pron + 1Sg IF (-1 TA + Cnj + PV/e + 1SgO) ;
+MAP:TAPron1SgGOALL @GOAL> TARGET Pron + 1Sg IF (1 TA + Cnj + PV/e + 1SgO) ;
+MAP:TAPron1PlGOALR @<GOAL TARGET Pron + 1Pl IF (-1 TA + Cnj + PV/e + 1PlO) ;
+MAP:TAPron1PlGOALL @GOAL> TARGET Pron + 1Pl IF (1 TA + Cnj + PV/e + 1PlO) ;
+
+MAP:TAPron2SgGOALR @<GOAL TARGET Pron + 2Sg IF (-1 TA + Cnj + PV/e + 2SgO) ;
+MAP:TAPron2SgGOALL @GOAL> TARGET Pron + 2Sg IF (1 TA + Cnj + PV/e + 2SgO) ;
+MAP:TAPron2PlGOALR @<GOAL TARGET Pron + 2Pl IF (-1 TA + Cnj + PV/e + 2PlO) ;
+MAP:TAPron2PlGOALL @GOAL> TARGET Pron + 2Pl IF (1 TA + Cnj + PV/e + 2PlO) ;
+
+MAP:TAPron12PlGOALR @<GOAL TARGET Pron + 12Pl IF (-1 TA + Cnj + PV/e + 12PlO) ;
+MAP:TAPron12PlGOALL @GOAL> TARGET Pron + 12Pl IF (1 TA + Cnj + PV/e + 12PlO) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Dem + A + Sg IF (NOT 0 Obv LINK -1 TA + Cnj + PV/e + 3SgO) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Dem + A + Sg IF (NOT 0 Obv LINK 1 TA + Cnj + PV/e + 3SgO) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Dem + A + Pl IF (NOT 0 Obv LINK -1 TA + Cnj + PV/e + 3PlO) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Dem + A + Pl IF (NOT 0 Obv LINK 1 TA + Cnj + PV/e + 3PlO) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Pers + 3Sg IF (NOT 0 Obv LINK -1 TA + Cnj + PV/e + 3SgO) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Pers + 3Sg IF (NOT 0 Obv LINK 1 TA + Cnj + PV/e + 3SgO) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Pers + 3Pl IF (NOT 0 Obv LINK -1 TA + Cnj + PV/e + 3PlO) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Pers + 3Pl IF (NOT 0 Obv LINK 1 TA + Cnj + PV/e + 3PlO) ;
+
+MAP:TAObvPronGOALR @<GOAL TARGET Pron + Obv IF (-1C TA + Cnj + PV/e + 4Sg/PlO) ;
+MAP:TAObvPronGOALL @GOAL> TARGET Pron + Obv IF (1C TA + Cnj + PV/e + 4Sg/PlO) ;
+
+##PRONOMINAL ACTORS 
+MAP:AITITADem3SgACTR @<ACTOR TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (-1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg)) ;
+MAP:AITITADem3SgACTL @ACTOR> TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg)) ;
+MAP:AITITADem3PlACTR @<ACTOR TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (-1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl)) ;
+MAP:AITITADem3PlACTL @ACTOR> TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl)) ;
+MAP:AITITADemOBVACTR @<ACTOR TARGET Pron + A + Obv IF ((NOT 0 @<N OR @N>) LINK (-1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl OR TA + Cnj + PV/e + 4Sg/Pl)) ;
+MAP:AITITADemOBVACTL @ACTOR> TARGET Pron + A + Obv IF ((NOT 0 @<N OR @N>) LINK (1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl OR TA + Cnj + PV/e + 4Sg/Pl)) ;
+
+MAP:IIPron3SgACTR @<ACTOR TARGET Pron + I + Sg IF (-1 VII + Cnj + PV/e + 3Sg) ;
+MAP:IIPron3SgACTL @ACTOR> TARGET Pron + I + Sg IF (1 VII + Cnj + PV/e + 3Sg) ;
+MAP:IIPron3PlACTR @<ACTOR TARGET Pron + I + Pl IF (-1 VII + Cnj + PV/e + 3Pl) ;
+MAP:IIPron3PlACTL @ACTOR> TARGET Pron + I + Pl IF (1 VII + Cnj + PV/e + 3Pl) ;
+
+MAP:AITITAPron1SgACTR @<ACTOR TARGET Pron + 1Sg IF (-1 V + Cnj + PV/e + Cnj + PV/e + 1Sg) ;
+MAP:AITITAPron1SgACTL @ACTOR> TARGET Pron + 1Sg IF (1 V + Cnj + PV/e + Cnj + PV/e + 1Sg) ;
+MAP:AITITAPron1PlACTR @<ACTOR TARGET Pron + 1Pl IF (-1 V + Cnj + PV/e + Cnj + PV/e + 1Pl) ;
+MAP:AITITAPron1PlACTL @ACTOR> TARGET Pron + 1Pl IF (1 V + Cnj + PV/e + Cnj + PV/e + 1Pl) ;
+
+MAP:AITITAPron2SgACTR @<ACTOR TARGET Pron + 2Sg IF (-1 V + Cnj + PV/e + 2Sg) ;
+MAP:AITITAPron2SgACTL @ACTOR> TARGET Pron + 2Sg IF (1 V + Cnj + PV/e + 2Sg) ;
+MAP:AITITAPron2PlACTR @<ACTOR TARGET Pron + 2Pl IF (-1 V + Cnj + PV/e + 2Pl) ;
+MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (1 V + Cnj + PV/e + 2Pl) ;
+
+MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (-1 V + Cnj + PV/e + 12Pl) ;
+MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (1 V + Cnj + PV/e + 12Pl) ;
+
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (-1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg) ;
+LIST Pron"+Pers" = Pron"+Pers" ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (-1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl) ; 
+
+##two positions away
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(NOT -1 V OR CLB)(-2 TA + Cnj + PV/e + 3SgO) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(NOT 1 V OR CLB)(2 TA + Cnj + PV/e + 3SgO) ;
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(NOT -1 V OR CLB)(-2 TA + Cnj + PV/e + 3PlO) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(NOT 1 V OR CLB)(2 TA + Cnj + PV/e + 3PlO) ;
+
+MAP:TAGOALObvR @<GOAL TARGET N + Obv IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 TA + Cnj + PV/e + 4Sg/PlO) ;
+MAP:TAGOALObvL @GOAL> TARGET N + Obv IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 TA + Cnj + PV/e + 4Sg/PlO) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(NOT -1 V OR CLB)(-2 TA + Cnj + PV/e + 3Sg) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(NOT 1 V OR CLB)(2 TA + Cnj + PV/e + 3Sg) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(NOT -1 V OR CLB)(-2 TA + Cnj + PV/e + 3Pl) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(NOT 1 V OR CLB)(2 TA + Cnj + PV/e + 3Pl) ;
+
+MAP:TAACTObvR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2C TA + Cnj + PV/e + 4Sg/Pl) ;
+MAP:TAACTObvL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(NOT 1 V OR CLB)(2C TA + Cnj + PV/e + 4Sg/Pl) ;
+
+##INTERROGATIVE
+#MAP:INTR @<ACTOR TARGET Interr IF (NOT -1 V OR CLB)(-2 AI + Cnj + PV/e OR TI + Cnj + PV/e + 3Pl OR 3Sg BARRIER CLB) ;
+#MAP:INTR @ACTOR> TARGET Interr IF (NOT 1 V OR CLB)(2 AI + Cnj + PV/e OR TI + Cnj + PV/e + 3Pl OR 3Sg BARRIER CLB) ;
+
+#TI + Cnj + PV/e and AI + Cnj + PV/e actors nouns
+MAP:AITIACTSgR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(NOT -1 V OR CLB)(-2 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg) ;
+MAP:AITIACTSgL @ACTOR> TARGET N + A + Sg IF  (NOT 0 Loc)(NOT 0 Obv)(NOT 1 V OR CLB)(2 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg) ;
+
+MAP:AITIACTPlR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl) ;
+MAP:AITIACTPlL @ACTOR> TARGET N + A + Pl IF  (NOT 0 Loc)(NOT 1 V OR CLB)(2 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl) ;
+
+MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl) ;
+MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(NOT 1 V OR CLB)(2C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl) ;
+
+#TI + Cnj + PV/e Goals INAIMATE NOUNS
+MAP:TIGOAL @<GOAL TARGET N + I IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 TI + Cnj + PV/e) ;
+MAP:TIGOAL @GOAL> TARGET N + I IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 TI + Cnj + PV/e) ;
+
+#II + Cnj + PV/e actors: done with set of II-zero
+MAP:IIACTor3R @<ACTOR TARGET N + I + Sg IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 VII + Cnj + PV/e + 3Sg) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Sg IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 VII + Cnj + PV/e + 3Sg) ;
+MAP:IIACTor3R @<ACTOR TARGET N + I + Pl IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 VII + Cnj + PV/e + 3Pl) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 VII + Cnj + PV/e + 3Pl) ;
+MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 VII + Cnj + PV/e + 4Sg OR VII + Cnj + PV/e + 4Pl) ;
+MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 VII + Cnj + PV/e + 4Sg OR VII + Cnj + PV/e + 4Pl) ;
+
+##PRONOMINAL GOALS goals more likely to be lexicalised thA actors cf schmirler et al 2018?
+MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (NOT -1 V OR CLB)(-2 TI) ;
+MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (NOT 1 V OR CLB)(2 TI) ;
+
+MAP:TAPron1SgGOALR @<GOAL TARGET Pron + 1Sg IF (NOT -1 V OR CLB)(-2 TA + Cnj + PV/e + 1SgO) ;
+MAP:TAPron1SgGOALL @GOAL> TARGET Pron + 1Sg IF (NOT 1 V OR CLB)(2 TA + Cnj + PV/e + 1SgO) ;
+MAP:TAPron1PlGOALR @<GOAL TARGET Pron + 1Pl IF (NOT -1 V OR CLB)(-2 TA + Cnj + PV/e + 1PlO) ;
+MAP:TAPron1PlGOALL @GOAL> TARGET Pron + 1Pl IF (NOT 1 V OR CLB)(2 TA + Cnj + PV/e + 1PlO) ;
+
+MAP:TAPron2SgGOALR @<GOAL TARGET Pron + 2Sg IF (NOT -1 V OR CLB)(-2 TA + Cnj + PV/e + 2SgO) ;
+MAP:TAPron2SgGOALL @GOAL> TARGET Pron + 2Sg IF (NOT 1 V OR CLB)(2 TA + Cnj + PV/e + 2SgO) ;
+MAP:TAPron2PlGOALR @<GOAL TARGET Pron + 2Pl IF (NOT -1 V OR CLB)(-2 TA + Cnj + PV/e + 2PlO) ;
+MAP:TAPron2PlGOALL @GOAL> TARGET Pron + 2Pl IF (NOT 1 V OR CLB)(2 TA + Cnj + PV/e + 2PlO) ;
+
+MAP:TAPron12PlGOALR @<GOAL TARGET Pron + 12Pl IF (NOT -1 V OR CLB)(-2 TA + Cnj + PV/e + 12PlO) ;
+MAP:TAPron12PlGOALL @GOAL> TARGET Pron + 12Pl IF (NOT 1 V OR CLB)(2 TA + Cnj + PV/e + 12PlO) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Dem + A + Sg IF (NOT -1 V OR CLB)(NOT 0 Obv LINK -2 TA + Cnj + PV/e + 3SgO) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Dem + A + Sg IF (NOT 1 V OR CLB)(NOT 0 Obv LINK 2 TA + Cnj + PV/e + 3SgO) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Dem + A + Pl IF (NOT -1 V OR CLB)(NOT 0 Obv LINK -2 TA + Cnj + PV/e + 3PlO) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Dem + A + Pl IF (NOT 1 V OR CLB)(NOT 0 Obv LINK 2 TA + Cnj + PV/e + 3PlO) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Pers + 3Sg IF (NOT -1 V OR CLB)(NOT 0 Obv LINK -2 TA + Cnj + PV/e + 3SgO) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Pers + 3Sg IF (NOT 1 V OR CLB)(NOT 0 Obv LINK 2 TA + Cnj + PV/e + 3SgO) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Pers + 3Pl IF (NOT -1 V OR CLB)(NOT 0 Obv LINK -2 TA + Cnj + PV/e + 3PlO) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Pers + 3Pl IF (NOT 1 V OR CLB)(NOT 0 Obv LINK 2 TA + Cnj + PV/e + 3PlO) ;
+
+MAP:TAObvPronGOALR @<GOAL TARGET Pron + Obv IF (NOT -1 V OR CLB)(-2C TA + Cnj + PV/e + 4Sg/PlO) ;
+MAP:TAObvPronGOALL @GOAL> TARGET Pron + Obv IF (NOT 1 V OR CLB)(2C TA + Cnj + PV/e + 4Sg/PlO) ;
+
+##PRONOMINAL ACTORS 
+MAP:AITITADem3SgACTR @<ACTOR TARGET Pron + A + Sg IF (NOT -1 V OR CLB)((NOT 0 @<N OR @N>) LINK (-2 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg)) ;
+MAP:AITITADem3SgACTL @ACTOR> TARGET Pron + A + Sg IF (NOT 1 V OR CLB)((NOT 0 @<N OR @N>) LINK (2 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg)) ;
+MAP:AITITADem3PlACTR @<ACTOR TARGET Pron + A + Pl IF (NOT -1 V OR CLB)((NOT 0 @<N OR @N>) LINK (-2 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl)) ;
+MAP:AITITADem3PlACTL @ACTOR> TARGET Pron + A + Pl IF (NOT 1 V OR CLB)((NOT 0 @<N OR @N>) LINK (2 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl)) ;
+MAP:AITITADemOBVACTR @<ACTOR TARGET Pron + A + Obv IF (NOT -1 V OR CLB)((NOT 0 @<N OR @N>) LINK (-2C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl OR TA + Cnj + PV/e + 4Sg/Pl)) ;
+MAP:AITITADemOBVACTL @ACTOR> TARGET Pron + A + Obv IF (NOT 1 V OR CLB)((NOT 0 @<N OR @N>) LINK (2C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl OR TA + Cnj + PV/e + 4Sg/Pl)) ;
+
+MAP:IIPron3SgACTR @<ACTOR TARGET Pron + I + Sg IF (NOT -1 V OR CLB)(-2 VII + Cnj + PV/e + 3Sg) ;
+MAP:IIPron3SgACTL @ACTOR> TARGET Pron + I + Sg IF (NOT 1 V OR CLB)(2 VII + Cnj + PV/e + 3Sg) ;
+MAP:IIPron3PlACTR @<ACTOR TARGET Pron + I + Pl IF (NOT -1 V OR CLB)(-2 VII + Cnj + PV/e + 3Pl) ;
+MAP:IIPron3PlACTL @ACTOR> TARGET Pron + I + Pl IF (NOT 1 V OR CLB)(2 VII + Cnj + PV/e + 3Pl) ;
+
+MAP:AITITAPron1SgACTR @<ACTOR TARGET Pron + 1Sg IF (NOT -1 V OR CLB)(-2 V + Cnj + PV/e + 1Sg) ;
+MAP:AITITAPron1SgACTL @ACTOR> TARGET Pron + 1Sg IF (NOT 1 V OR CLB)(2 V + Cnj + PV/e + 1Sg) ;
+MAP:AITITAPron1PlACTR @<ACTOR TARGET Pron + 1Pl IF (NOT -1 V OR CLB)(-2 V + Cnj + PV/e + 1Pl) ;
+MAP:AITITAPron1PlACTL @ACTOR> TARGET Pron + 1Pl IF (NOT 1 V OR CLB)(2 V + Cnj + PV/e + 1Pl) ;
+
+MAP:AITITAPron2SgACTR @<ACTOR TARGET Pron + 2Sg IF (NOT -1 V OR CLB)(-2 V + Cnj + PV/e + 2Sg) ;
+MAP:AITITAPron2SgACTL @ACTOR> TARGET Pron + 2Sg IF (NOT 1 V OR CLB)(2 V + Cnj + PV/e + 2Sg) ;
+MAP:AITITAPron2PlACTR @<ACTOR TARGET Pron + 2Pl IF (NOT -1 V OR CLB)(-2 V + Cnj + PV/e + 2Pl) ;
+MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (NOT 1 V OR CLB)(2 V + Cnj + PV/e + 2Pl) ;
+
+MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (NOT -1 V OR CLB)(-2 V + Cnj + PV/e + 12Pl) ;
+MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (NOT 1 V OR CLB)(2 V + Cnj + PV/e + 12Pl) ;
+
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (NOT -1 V OR CLB)(-2 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (NOT 1 V OR CLB)(2 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg) ;
+LIST Pron"+Pers" = Pron"+Pers" ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (NOT -1 V OR CLB)(-2 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (NOT 1 V OR CLB)(2 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl) ;
+
+##everything else (see also notes above actor/goal section)
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + Cnj + PV/e + 3SgO BARRIER V OR CLB) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + Cnj + PV/e + 3SgO BARRIER V OR CLB) ;
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + Cnj + PV/e + 3PlO BARRIER V OR CLB) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + Cnj + PV/e + 3PlO BARRIER V OR CLB) ;
+
+MAP:TAGOALObvR @<GOAL TARGET N + Obv IF (NOT 0 Loc)(*-1 TA + Cnj + PV/e + 4Sg/PlO BARRIER V OR CLB) ;
+MAP:TAGOALObvL @GOAL> TARGET N + Obv IF (NOT 0 Loc)(*1 TA + Cnj + PV/e + 4Sg/PlO BARRIER V OR CLB) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
+
+MAP:TAACTObvR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(*-1C TA + Cnj + PV/e + 4Sg/Pl BARRIER V OR CLB) ;
+MAP:TAACTObvL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C TA + Cnj + PV/e + 4Sg/Pl BARRIER V OR CLB) ;
+
+##MAP:AITIACTorR @<ACTOR TARGET N + A IF (*-1 (AI + Cnj + PV/e 3) OR (TI + Cnj + PV/e 3) BARRIER CLB OR CLB) ;
+
+##INTERROGATIVE
+#MAP:INTR @<ACTOR TARGET Interr IF (*-1 AI + Cnj + PV/e OR TI + Cnj + PV/e + 3Pl OR 3Sg BARRIER CLB) ;
+#MAP:INTR @ACTOR> TARGET Interr IF (*1 AI + Cnj + PV/e OR TI + Cnj + PV/e + 3Pl OR 3Sg BARRIER CLB) ;
+
+#TI + Cnj + PV/e and AI + Cnj + PV/e actors nouns
+MAP:AITIACTSgR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
+MAP:AITIACTSgL @ACTOR> TARGET N + A + Sg IF  (NOT 0 Loc)(NOT 0 Obv)(*1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
+
+MAP:AITIACTPlR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(*-1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
+MAP:AITIACTPlL @ACTOR> TARGET N + A + Pl IF  (NOT 0 Loc)(*1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
+
+MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(*-1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl BARRIER V OR CLB) ;
+MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl BARRIER V OR CLB) ;
+
+#TI + Cnj + PV/e Goals INAIMATE NOUNS
+MAP:TIGOAL @<GOAL TARGET N + I IF (NOT 0 Loc)(*-1 TI + Cnj + PV/e BARRIER V OR CLB) ;
+MAP:TIGOAL @GOAL> TARGET N + I IF (NOT 0 Loc)(*1 TI + Cnj + PV/e BARRIER V OR CLB) ;
+
+#II + Cnj + PV/e actors: done with set of II-zero
+MAP:IIACTor3R @<ACTOR TARGET N + I + Sg IF (NOT 0 Loc)(*-1 VII + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Sg IF (NOT 0 Loc)(*1 VII + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
+MAP:IIACTor3R @<ACTOR TARGET N + I + Pl IF (NOT 0 Loc)(*-1 VII + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
+MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(*1 VII + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
+MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*-1 VII + Cnj + PV/e + 4Sg OR VII + Cnj + PV/e + 4Pl BARRIER V OR CLB) ;
+MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*1 VII + Cnj + PV/e + 4Sg OR VII + Cnj + PV/e + 4Pl BARRIER V OR CLB) ;
+
+##PRONOMINAL GOALS goals more likely to be lexicalised thA actors cf schmirler et al 2018?
+MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (*-1 TI + Cnj + PV/e BARRIER V OR CLB) ;
+MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (*1 TI + Cnj + PV/e BARRIER V OR CLB) ;
+
+MAP:TAPron1SgGOALR @<GOAL TARGET Pron + 1Sg IF (*-1 TA + Cnj + PV/e + 1SgO BARRIER V OR CLB) ;
+MAP:TAPron1SgGOALL @GOAL> TARGET Pron + 1Sg IF (*1 TA + Cnj + PV/e + 1SgO BARRIER V OR CLB) ;
+MAP:TAPron1PlGOALR @<GOAL TARGET Pron + 1Pl IF (*-1 TA + Cnj + PV/e + 1PlO BARRIER V OR CLB) ;
+MAP:TAPron1PlGOALL @GOAL> TARGET Pron + 1Pl IF (*1 TA + Cnj + PV/e + 1PlO BARRIER V OR CLB) ;
+
+MAP:TAPron2SgGOALR @<GOAL TARGET Pron + 2Sg IF (*-1 TA + Cnj + PV/e + 2SgO BARRIER V OR CLB) ;
+MAP:TAPron2SgGOALL @GOAL> TARGET Pron + 2Sg IF (*1 TA + Cnj + PV/e + 2SgO BARRIER V OR CLB) ;
+MAP:TAPron2PlGOALR @<GOAL TARGET Pron + 2Pl IF (*-1 TA + Cnj + PV/e + 2PlO BARRIER V OR CLB) ;
+MAP:TAPron2PlGOALL @GOAL> TARGET Pron + 2Pl IF (*1 TA + Cnj + PV/e + 2PlO BARRIER V OR CLB) ;
+
+MAP:TAPron12PlGOALR @<GOAL TARGET Pron + 12Pl IF (*-1 TA + Cnj + PV/e + 12PlO BARRIER V OR CLB) ;
+MAP:TAPron12PlGOALL @GOAL> TARGET Pron + 12Pl IF (*1 TA + Cnj + PV/e + 12PlO BARRIER V OR CLB) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Dem + A + Sg IF (NOT 0 Obv LINK *-1 TA + Cnj + PV/e + 3SgO BARRIER V OR CLB) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Dem + A + Sg IF (NOT 0 Obv LINK *1 TA + Cnj + PV/e + 3SgO BARRIER V OR CLB) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Dem + A + Pl IF (NOT 0 Obv LINK *-1 TA + Cnj + PV/e + 3PlO BARRIER V OR CLB) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Dem + A + Pl IF (NOT 0 Obv LINK *1 TA + Cnj + PV/e + 3PlO BARRIER V OR CLB) ;
+
+MAP:TAPron3SgGOALR @<GOAL TARGET Pron + Pers + 3Sg IF (NOT 0 Obv LINK *-1 TA + Cnj + PV/e + 3SgO BARRIER V OR CLB) ;
+MAP:TAPron3SgGOALL @GOAL> TARGET Pron + Pers + 3Sg IF (NOT 0 Obv LINK *1 TA + Cnj + PV/e + 3SgO BARRIER V OR CLB) ;
+MAP:TAPron3PlGOALR @<GOAL TARGET Pron + Pers + 3Pl IF (NOT 0 Obv LINK *-1 TA + Cnj + PV/e + 3PlO BARRIER V OR CLB) ;
+MAP:TAPron3PlGOALL @GOAL> TARGET Pron + Pers + 3Pl IF (NOT 0 Obv LINK *1 TA + Cnj + PV/e + 3PlO BARRIER V OR CLB) ;
+
+MAP:TAObvPronGOALR @<GOAL TARGET Pron + Obv IF (*-1C TA + Cnj + PV/e + 4Sg/PlO BARRIER V OR CLB) ;
+MAP:TAObvPronGOALL @GOAL> TARGET Pron + Obv IF (*1C TA + Cnj + PV/e + 4Sg/PlO BARRIER V OR CLB) ;
+
+##PRONOMINAL ACTORS 
+MAP:AITITADem3SgACTR @<ACTOR TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (*-1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg BARRIER V OR CLB)) ;
+MAP:AITITADem3SgACTL @ACTOR> TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (*1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg BARRIER V OR CLB)) ;
+MAP:AITITADem3PlACTR @<ACTOR TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (*-1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl BARRIER V OR CLB)) ;
+MAP:AITITADem3PlACTL @ACTOR> TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (*1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl BARRIER V OR CLB)) ;
+MAP:AITITADemOBVACTR @<ACTOR TARGET Pron + A + Obv IF ((NOT 0 @<N OR @N>) LINK (*-1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl OR TA + Cnj + PV/e + 4Sg/Pl BARRIER V OR CLB)) ;
+MAP:AITITADemOBVACTL @ACTOR> TARGET Pron + A + Obv IF ((NOT 0 @<N OR @N>) LINK (*1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl OR TA + Cnj + PV/e + 4Sg/Pl BARRIER V OR CLB)) ;
+
+MAP:IIPron3SgACTR @<ACTOR TARGET Pron + I + Sg IF (*-1 VII + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
+MAP:IIPron3SgACTL @ACTOR> TARGET Pron + I + Sg IF (*1 VII + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
+MAP:IIPron3PlACTR @<ACTOR TARGET Pron + I + Pl IF (*-1 VII + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
+MAP:IIPron3PlACTL @ACTOR> TARGET Pron + I + Pl IF (*1 VII + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
+
+MAP:AITITAPron1SgACTR @<ACTOR TARGET Pron + 1Sg IF (*-1 V + Cnj + PV/e + 1Sg BARRIER V OR CLB) ;
+MAP:AITITAPron1SgACTL @ACTOR> TARGET Pron + 1Sg IF (*1 V + Cnj + PV/e + 1Sg BARRIER V OR CLB) ;
+MAP:AITITAPron1PlACTR @<ACTOR TARGET Pron + 1Pl IF (*-1 V + Cnj + PV/e + 1Pl BARRIER V OR CLB) ;
+MAP:AITITAPron1PlACTL @ACTOR> TARGET Pron + 1Pl IF (*1 V + Cnj + PV/e + 1Pl BARRIER V OR CLB) ;
+
+MAP:AITITAPron2SgACTR @<ACTOR TARGET Pron + 2Sg IF (*-1 V + Cnj + PV/e + 2Sg BARRIER V OR CLB) ;
+MAP:AITITAPron2SgACTL @ACTOR> TARGET Pron + 2Sg IF (*1 V + Cnj + PV/e + 2Sg BARRIER V OR CLB) ;
+MAP:AITITAPron2PlACTR @<ACTOR TARGET Pron + 2Pl IF (*-1 V + Cnj + PV/e + 2Pl BARRIER V OR CLB) ;
+MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (*1 V + Cnj + PV/e + 2Pl BARRIER V OR CLB) ;
+
+MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (*-1 V + Cnj + PV/e + 12Pl BARRIER V OR CLB) ;
+MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (*1 V + Cnj + PV/e + 12Pl BARRIER V OR CLB) ;
+
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (*-1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (*1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
+LIST Pron"+Pers" = Pron"+Pers" ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (*-1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (*1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
+
+##everything else
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3SgO + NOTRELC BARRIER V OR CLB) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3SgO + NOTRELC BARRIER V OR CLB) ;
+
+MAP:TAGOAL3R @<GOAL TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3PlO + NOTRELC BARRIER V OR CLB) ;
+MAP:TAGOAL3L @GOAL> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3PlO + NOTRELC BARRIER V OR CLB) ;
+
+MAP:TAGOALObvR @<GOAL TARGET N + Obv IF (NOT 0 Loc)(*-1 TA + 4Sg/PlO + NOTRELC BARRIER V OR CLB) ;
+MAP:TAGOALObvL @GOAL> TARGET N + Obv IF (NOT 0 Loc)(*1 TA + 4Sg/PlO + NOTRELC BARRIER V OR CLB) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3Sg + NOTRELC BARRIER V OR CLB) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3Sg + NOTRELC BARRIER V OR CLB) ;
+
+MAP:TAACTorR @<ACTOR TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3Pl + NOTRELC BARRIER V OR CLB) ;
+MAP:TAACTorL @ACTOR> TARGET N + A + Pl IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3Pl + NOTRELC BARRIER V OR CLB) ;
+
+MAP:TAACTObvR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(*-1C TA + 4Sg/Pl + NOTRELC BARRIER V OR CLB) ;
+MAP:TAACTObvL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C TA + 4Sg/Pl + NOTRELC BARRIER V OR CLB) ;
 
 ##MAP:AITIACTorR @<ACTOR TARGET N + A IF (*-1 (AI 3) OR (TI 3) BARRIER CLB OR CLB) ;
 
@@ -449,7 +1123,7 @@ MAP:AITIACTPlL @ACTOR> TARGET N + A + Pl IF  (NOT 0 Loc)(*1 AI + 3Pl OR TI + 3Pl
 MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(*-1C AI + 4Sg/Pl OR TI + 4Sg/Pl BARRIER V OR CLB) ;
 MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C AI + 4Sg/Pl OR TI + 4Sg/Pl BARRIER V OR CLB) ;
 
-#TI Goals INAIMATE NOUNS
+#TI Goals INANIMATE NOUNS
 MAP:TIGOAL @<GOAL TARGET N + I IF (NOT 0 Loc)(*-1 TI BARRIER V OR CLB) ;
 MAP:TIGOAL @GOAL> TARGET N + I IF (NOT 0 Loc)(*1 TI BARRIER V OR CLB) ;
 
@@ -492,7 +1166,7 @@ MAP:TAObvPronGOALR @<GOAL TARGET Pron + Obv IF (*-1C TA + 4Sg/PlO BARRIER V OR C
 MAP:TAObvPronGOALL @GOAL> TARGET Pron + Obv IF (*1C TA + 4Sg/PlO BARRIER V OR CLB) ;
 
 ##PRONOMINAL ACTORS 
-ADD:AITITADem3SgACTR @<ACTOR TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (*-1 AI + 3Sg OR TI + 3Sg OR TA + 3Sg BARRIER V OR CLB)) ;
+MAP:AITITADem3SgACTR @<ACTOR TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (*-1 AI + 3Sg OR TI + 3Sg OR TA + 3Sg BARRIER V OR CLB)) ;
 MAP:AITITADem3SgACTL @ACTOR> TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (*1 AI + 3Sg OR TI + 3Sg OR TA + 3Sg BARRIER V OR CLB)) ;
 MAP:AITITADem3PlACTR @<ACTOR TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (*-1 AI + 3Pl OR TI + 3Pl OR TA + 3Pl BARRIER V OR CLB)) ;
 MAP:AITITADem3PlACTL @ACTOR> TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (*1 AI + 3Pl OR TI + 3Pl OR TA + 3Pl BARRIER V OR CLB)) ;
@@ -519,10 +1193,13 @@ MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (*1 V + 12Pl BARRIER V OR C
 
 MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (*-1 AI + 3Sg OR TI + 3Sg OR TA + 3Sg BARRIER V OR CLB) ;
 MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (*1 AI + 3Sg OR TI + 3Sg OR TA + 3Sg BARRIER V OR CLB) ;
-MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron + 3Pl IF (*-1 AI + 3Pl OR TI + 3Pl OR TA + 3Pl BARRIER V OR CLB) ;
+LIST Pron"+Pers" = Pron"+Pers" ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (*-1 AI + 3Pl OR TI + 3Pl OR TA + 3Pl BARRIER V OR CLB) ;
 MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (*1 AI + 3Pl OR TI + 3Pl OR TA + 3Pl BARRIER V OR CLB) ;
 
-#possession (third person animate noun possessors only - looking at corpus suggests that pronouns are more often actors/goals thA possessors)
+#possession (third person animate noun possessors only - looking at corpus suggests that pronouns are more often actors/goals than possessors)
+#need to deal with possessors that are not actors (but many actors are possessors - these rules would then work for a semantic tag)
+#idea: interleave with actor/goal rules based on proximity? - need to do asap
 MAP:3SgPOSS @Pos> TARGET N + A + Sg IF (1 N + Px3Sg)(NOT 1 Loc) ; 
 MAP:3PlPOSS @Pos> TARGET N + A + Pl IF (1 N + Px3Pl)(NOT 1 Loc) ; 
 MAP:4SgPlPoss @Pos> TARGET N + Obv IF (1 N + Px4Sg/Pl)(NOT 1 Loc) ;
@@ -552,6 +1229,7 @@ MAP:IplV @<Ipl-V TARGET Ipl OR InLoc IF (*-3 V BARRIER CLB)(NOT -1 CLB)(NOT -2 C
 ##INSTRUMENTAL NOUNS these need a lot of work
 
 MAP:INSohciN @INS> TARGET N IF (NOT 0 Loc)(1 ("ohci")) ;
+MAP:INSohciIpn @INS> TARGET Ipn IF (1 ("ohci")) ;
 MAP:INSohciPr @INS> TARGET Dem IF (1 ("ohci")) ;
 
 #indeclinable locatives cA be associated with verbs as locatives, but after act/goal and before obl
@@ -585,10 +1263,14 @@ MAP:QuantatihtN @<Quant-N TARGET ("âtiht") IF (-1 N + Pl) ;
 MAP:QuantatihtN @Quant-N> TARGET ("âtiht") IF (1 N + Obv) ;
 MAP:QuantatihtN @<Quant-N TARGET ("âtiht") IF (-1 N + Obv) ;
 
-#peyak and kahkiyaw as actors
+MAP:QuantnamakikwayN @Quant-N> TARGET Ipn IF (1 N + I) ;
+MAP:QuantnamakikwayN @<Quant-N TARGET Ipn IF (-1 N + I) ;
 
-MAP:TAkahkiyawActR @<GOAL TARGET ("kahkiyaw") IF (NOT *0 @<GOAL BARRIER CLB)(*-1 TA + VPlO BARRIER V OR CLB) ;
-MAP:TAkahkiyawActL @GOAL> TARGET ("kahkiyaw") IF (NOT *0 @GOAL> BARRIER CLB)(*1 TA + VPlO BARRIER V OR CLB) ;
+
+#peyak and kahkiyaw as actors/goals
+
+MAP:TAkahkiyawGoalR @<GOAL TARGET ("kahkiyaw") IF (NOT *0 @<GOAL BARRIER CLB)(*-1 TA + VPlO BARRIER V OR CLB) ;
+MAP:TAkahkiyawGoalL @GOAL> TARGET ("kahkiyaw") IF (NOT *0 @GOAL> BARRIER CLB)(*1 TA + VPlO BARRIER V OR CLB) ;
 
 MAP:AITIpeyakActR @<ACTOR TARGET ("pêyak") IF (NOT *0 @<ACTOR BARRIER CLB)(*-1 AI + VSg OR TI + VSg BARRIER V OR CLB) ;
 MAP:AITIpeyakActL @ACTOR> TARGET ("pêyak") IF (NOT *0 @ACTOR> BARRIER CLB)(*1 AI + VSg OR TI + VSg BARRIER V OR CLB) ;
@@ -596,11 +1278,11 @@ MAP:AITIpeyakActL @ACTOR> TARGET ("pêyak") IF (NOT *0 @ACTOR> BARRIER CLB)(*1 A
 MAP:AITIkahkiyawActR @<ACTOR TARGET ("kahkiyaw") IF (NOT *0 @<ACTOR BARRIER CLB)(*-1 AI + VPl OR TI + VPl BARRIER V OR CLB) ;
 MAP:AITIkahkiyawActL @ACTOR> TARGET ("kahkiyaw") IF (NOT *0 @ACTOR> BARRIER CLB)(*1 AI + VPl OR TI + VPl BARRIER V OR CLB) ;
 
-MAP:TIpeyakActR @<GOAL TARGET ("pêyak") IF (NOT *0 @<GOAL BARRIER CLB)(*-1 TI BARRIER V OR CLB) ;
-MAP:TIpeyakActL @GOAL> TARGET ("pêyak") IF (NOT *0 @GOAL> BARRIER CLB)(*1 TI BARRIER V OR CLB) ;
+MAP:TIpeyakGoalR @<GOAL TARGET ("pêyak") IF (NOT *0 @<GOAL BARRIER CLB)(*-1 TI BARRIER V OR CLB) ;
+MAP:TIpeyakGoalL @GOAL> TARGET ("pêyak") IF (NOT *0 @GOAL> BARRIER CLB)(*1 TI BARRIER V OR CLB) ;
 
-MAP:TIkahkiyawActR @<GOAL TARGET ("kahkiyaw") IF (NOT *0 @<GOAL BARRIER CLB)(*-1 TI BARRIER V OR CLB) ;
-MAP:TIkahkiyawActL @GOAL> TARGET ("kahkiyaw") IF (NOT *0 @GOAL> BARRIER CLB)(*1 TI BARRIER V OR CLB) ;
+MAP:TIkahkiyawGoalR @<GOAL TARGET ("kahkiyaw") IF (NOT *0 @<GOAL BARRIER CLB)(*-1 TI BARRIER V OR CLB) ;
+MAP:TIkahkiyawGoalL @GOAL> TARGET ("kahkiyaw") IF (NOT *0 @GOAL> BARRIER CLB)(*1 TI BARRIER V OR CLB) ;
 
 MAP:IIpeyakActR @<ACTOR TARGET ("pêyak") IF (NOT *0 @<ACTOR BARRIER CLB)(*-1 VII + VSg BARRIER V OR CLB) ;
 MAP:IIpeyakActL @ACTOR> TARGET ("pêyak") IF (NOT *0 @ACTOR> BARRIER CLB)(*1 VII + VSg BARRIER V OR CLB) ;
@@ -613,6 +1295,13 @@ MAP:TAkahkiyawActL @ACTOR> TARGET ("kahkiyaw") IF (NOT *0 @ACTOR> BARRIER CLB)(N
 
 MAP:TApeyakActR @<ACTOR TARGET ("pêyak") IF (NOT *0 @<ACTOR BARRIER CLB)(*-1 TA + VSg BARRIER V OR CLB) ;
 MAP:TApeyakActL @ACTOR> TARGET ("pêyak") IF (NOT *0 @ACTOR> BARRIER CLB)(*1 TA + VSg BARRIER V OR CLB) ;
+
+#nama kîkway as goal/oblique 
+#nama kîkway is currently only IPN, change as appropriate
+MAP:TInamakikwayGoalR @<GOAL TARGET Ipn IF (NOT *0 @<GOAL BARRIER CLB)(*-1 TI BARRIER V OR CLB) ; 
+MAP:TInamakikwayGoalL @GOAL> TARGET Ipn IF (NOT *0 @GOAL> BARRIER CLB)(*1 TI BARRIER V OR CLB) ;
+MAP:TInamakikwayOblR @<OBL TARGET Ipn IF (*-1 AI BARRIER V OR CLB) ; 
+MAP:TInamakikwayOblL @OBL> TARGET Ipn IF (*1 AI BARRIER V OR CLB) ;
 
 #quantifiers
 MAP:QuantN @Quant-N> TARGET Quant IF (1 N)(NOT 1 Loc) ;
@@ -629,7 +1318,7 @@ MAP:Quantmistahi @Quant-V> TARGET ("mistahi") IF (*1 V BARRIER CLB) ;
 
 MAP:OBL @<OBL TARGET N + I IF (NOT 0 Loc)(*-1 TA OR AI BARRIER V OR CLB) ; 
 MAP:OBL @OBL> TARGET N + I IF (NOT 0 Loc)(*1 TA OR AI BARRIER V OR CLB) ; 
-MAP:OBL @<OBL TARGET N + A + Sg IF (NOT 0 Loc)(*-1 AI + 3Pl OR TI + 3Pl OR AI + non3 OR TI + non3 BARRIER V OR CLB) ;
+MAP:OBL @<OBL TARGET N + A + Sg IF (NOT 0 Loc OR PEOPLE)(*-1 AI + 3Pl OR TI + 3Pl OR AI + non3 OR TI + non3 BARRIER V OR CLB) ;
 MAP:OBL @<OBL TARGET N + A + Pl IF (NOT 0 Loc)(*-1 AI + 3Sg OR TI + 3Sg OR AI + non3 OR TI + non3 BARRIER V OR CLB) ;
 MAP:OBL @OBL> TARGET N + A + Sg IF (NOT 0 Loc)(*1 AI + 3Pl OR TI + 3Pl OR AI + non3 OR TI + non3 BARRIER V OR CLB) ;
 MAP:OBL @OBL> TARGET N + A + Pl IF (NOT 0 Loc)(*1 AI + 3Sg OR TI + 3Sg OR AI + non3 OR TI + non3 BARRIER V OR CLB) ;
@@ -642,6 +1331,10 @@ MAP:OBL @OBL> TARGET N + A + Pl IF (NOT 0 Loc)(*1 AI + 3Sg OR TI + 3Sg OR AI + n
 #COPY:APPdem (*) EXCEPT @<ACTOR TARGET (0 Pron @APP-Pron<) ; 
 
 SUBSTITUTE (@<ACTOR) (@APP-Pron<) TARGET (Pron @<ACTOR) IF (*-1 (Pron @<ACTOR) BARRIER V OR CLB) ;
+
+
+
+
 
 
 ##MAP @? (?) ;
