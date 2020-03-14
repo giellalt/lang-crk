@@ -1,8 +1,10 @@
 #/bin/sh
 
-# cat ~/Google\ Drive/CreeFST/Wolvengrey/Wolvengrey_1w_morphemes_170207B.txt |
+# cat ~/GDrive/CreeFST/Wolvengrey/Wolvengrey_crk2eng_200202_altlab.tsv |
+# ./tools/shellscripts/wolvengrey-weight.sh ~/GDrive/CreeFST/Wolvengrey/Wolvengrey_crk2eng_200202_altlab.tsv ~/giella/art/corp/crk/ahenakew_wolfart_lemma-freq-sorted.txt
 
-gawk -v DICT=$1 -v CORP=$2  'BEGIN { aew_dict=DICT; corp=CORP;
+cat $1 |
+gawk -v DICT=$1 -v CORP=$2 'BEGIN { aew_dict=DICT; corp=CORP;
 while((getline < corp)!=0)
    { n[$2]=$1; tot+=$1; }
     FS="\t";
@@ -47,7 +49,8 @@ NR>=2 { lemma=$lemma_col; drv=$drv_col;
     if(p==0)
       p=-log(1/tot);
    printf "%s\t%s\t%s\n", (p+P)/2, lemma, drv;
-}' # |
+}' |
 sort -k1,1n
 
 # > ~/giella/art/dicts/crk/Wolvengrey/W_aggr_corp_morph_log_freq.txt
+
