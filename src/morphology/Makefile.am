@@ -35,6 +35,7 @@ GT_LEXC_SRCS_L1_L2=\
 					stems/verb_stems.lexc \
 					stems/pronouns.lexc   \
 					stems/particles.lexc  \
+					stems/non_standard.lexc  \
 					stems/derivation_stems.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
