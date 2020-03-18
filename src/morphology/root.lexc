@@ -61,6 +61,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 +Loc        !!= * @CODE@ Locative
 +Obv        !!= * @CODE@ Obviative
++Voc        !!= * @CODE@ Vocative
 
 +Dim        !!= * @CODE@ Diminutive
 
@@ -763,6 +764,7 @@ DRV-FST
 LEXICON Root         !!=  @CODE@ is where it all starts
 NOUN_PREFIXES ;      !!= * @CODE@
 NOUN_IRREGULARS ;    !!= * @CODE@
+NOUN_VOCATIVES ;     !!= * @CODE@
 VerbPrefixes ;       !!= * @CODE@
 Pronoun ;            !!= * @CODE@
 Propernouns ;        !!= * @CODE@
