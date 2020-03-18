@@ -762,18 +762,19 @@ DRV-FST
 ! Key lexicon
 
 LEXICON Root         !!=  @CODE@ is where it all starts
-NOUN_PREFIXES ;      !!= * @CODE@
+NOUN_PREFIXES   ;    !!= * @CODE@
 NOUN_IRREGULARS ;    !!= * @CODE@
-NOUN_VOCATIVES ;     !!= * @CODE@
-VerbPrefixes ;       !!= * @CODE@
-Pronoun ;            !!= * @CODE@
-Propernouns ;        !!= * @CODE@
-Particles ;          !!= * @CODE@
-Numerals ;           !!= * @CODE@
-Abbreviation ;       !!= * @CODE@
-Punctuation ;        !!= * @CODE@
-Symbols     ;        !!= * @CODE@
+NOUN_VOCATIVES  ;    !!= * @CODE@
+VerbPrefixes    ;    !!= * @CODE@
+Pronoun         ;    !!= * @CODE@
+Propernouns     ;    !!= * @CODE@
+Particles       ;    !!= * @CODE@
+Numerals        ;    !!= * @CODE@
+Abbreviation    ;    !!= * @CODE@
+Punctuation     ;    !!= * @CODE@
+Symbols         ;    !!= * @CODE@
+NON_STANDARD     ;    !!= * @CODE@
 
 LEXICON Propernouns
-ProperNoun-crk ;
-ProperNoun-eng ;
+ProperNoun-crk  ;
+ProperNoun-eng  ;
