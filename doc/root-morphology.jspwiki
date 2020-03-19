@@ -37,6 +37,7 @@ Nominal morphology
 
  * +Loc         Locative
  * +Obv         Obviative
+ * +Voc         Vocative
 
  * +Dim         Diminutive
 
@@ -242,14 +243,16 @@ End of new and all Multichar_Symbols
 
 
   LEXICON Root          is where it all starts
- * NOUN_PREFIXES ;      
+ * NOUN_PREFIXES   ;    
  * NOUN_IRREGULARS ;    
- * VerbPrefixes ;       
- * Pronoun ;            
- * Propernouns ;        
- * Particles ;          
- * Numerals ;           
- * Abbreviation ;       
- * Punctuation ;        
- * Symbols     ;        
+ * NOUN_VOCATIVES  ;    
+ * VerbPrefixes    ;    
+ * Pronoun         ;    
+ * Propernouns     ;    
+ * Particles       ;    
+ * Numerals        ;    
+ * Abbreviation    ;    
+ * Punctuation     ;    
+ * Symbols         ;    
+ * NON_STANDARD     ;    
 

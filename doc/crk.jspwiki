@@ -48,6 +48,7 @@ Nominal morphology
 
  * +Loc         Locative
  * +Obv         Obviative
+ * +Voc         Vocative
 
  * +Dim         Diminutive
 
@@ -253,16 +254,18 @@ End of new and all Multichar_Symbols
 
 
   LEXICON Root          is where it all starts
- * NOUN_PREFIXES ;      
+ * NOUN_PREFIXES   ;    
  * NOUN_IRREGULARS ;    
- * VerbPrefixes ;       
- * Pronoun ;            
- * Propernouns ;        
- * Particles ;          
- * Numerals ;           
- * Abbreviation ;       
- * Punctuation ;        
- * Symbols     ;        
+ * NOUN_VOCATIVES  ;    
+ * VerbPrefixes    ;    
+ * Pronoun         ;    
+ * Propernouns     ;    
+ * Particles       ;    
+ * Numerals        ;    
+ * Abbreviation    ;    
+ * Punctuation     ;    
+ * Symbols         ;    
+ * NON_STANDARD     ;    
 
 
 
@@ -957,19 +960,14 @@ LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
 The file
 
- * LEXICON pcle  adds +Ipc
+ * LEXICON PCLE  adds +Ipc
 
- * LEXICON fpcle  this is for focus particles
-
- * LEXICON pcle/ns  +Ipc, but with non-standard orthography
+ * LEXICON FPCLE  this is for focus particles
 
 
  * LEXICON Particles  \\
  * cî+Ipc+Qst:cî # ; 
  * namôya+Ipc+Neg:namôya # ; 
-
-
-
 
 
 
