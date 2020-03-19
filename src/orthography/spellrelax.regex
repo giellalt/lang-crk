@@ -51,8 +51,8 @@ o (->) ô,,
 
 # Dealing with spaces instead of hyphens as separators in multipart words
 
-[ %- ] (->) 0, # Missing hyphens between prefixes/preverbs
 [ %- ] (->) [ %- ]+,  # Multiple hyphens into a single hyphen
+[ %- ] (->) 0, # Missing hyphens between prefixes/preverbs
 %- (->) [ %  | %  | %  ]+, # Multiple non-breaking or standard spaces SPACE + NBSP + NNBSP (in syllabics) to single hyphen
 
 # Dealing with English-influenced divergences from SRO, and misspellings based on modern pronunciation
