@@ -1,7 +1,6 @@
 # Dummy, non-sense replace rule to avoid breaking errors in the compilaton.
 # Replace with something useful, but ALWAYS test the resulting error model,
 # both regarding speed and suggestion quality.
-!   [. 0 .] -> "-"::1,
    a -> "â"::0,
    e -> "ê"::0,
    i -> "î"::0,
