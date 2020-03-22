@@ -2,49 +2,7 @@
 
 # wolvengrey-new2lexc.sh
 
-# transforms Wolvengrey's dictionary content to LEXC format
-
-# Wolvengrey verb classes
-#
-# 4474  VAI-v
-# 1468  VTI-1
-# 1176  VTA-1
-#  826  VII-v
-#  626  VII-n
-#  570  VTA-2
-#  360  VTI-2
-#  340  VTA-3
-#  324  VTA-4
-#  191  VAI-n
-#    6  VTI-3
-#   4  VTA-5
-
-# Arok -> FST
-# VII-v -> VIIw
-# VII-v (singular) -> VIIw_SG
-# VII-v (plural) -> VIIw_PL
-# VII-n -> VIIn
-# VII-n (singular) -> VIIn_SG
-# VII-n (plural) -> VIIn_PL
-
-# VAI-n -> VAIn 
-# VAI-n (plural) -> VAIn_PL 
-# VAI-v (plural) -> VAIw
-# VAI-v -> VAIw_PL
-
-# VTI-1 -> VTI
-# VTI-1 (plural) -> VTI_PL
-# VTI-2 -> VAIw 
-# VTI-3 -> VAIw
-
-# VTA-1 -> VTA
-# VTA-2 -> VTAvw w- > w2 (except kiskinohamawêw)
-# VTA-2 (plural) -> VTAvw_PL
-# VTA-3 -> VTAcw
-# VTA-4 -> VTAt; t- > t3
-# VTA-5 (ahêw, [wîhkistêw]) -> VTAi (i- > i2)
-# VTA-5 (ay-itêw) -> VTAti
-
+# transforms Wolvengrey's Cree Words (CW) dictionary content to LEXC format
 
 tr -d '"' |
 
@@ -96,6 +54,9 @@ for(i=2; i<=nr; i++)
 #
 # NI-5  derivations of -was "bag" -> PL:  (UNIMPLEMENTED)
 # TODO: marking stems that require -im with contlex of type N...POSS/IM
+#
+# All nouns to have only the short diminutive -is,
+# unless corpus data indicates otherwise
 #####
 
      if(class=="N" && index(lemma," ")==0) # No multipart lemmas, such as names (that should probably rather be IPMs)
@@ -169,7 +130,7 @@ for(i=2; i<=nr; i++)
        if(pos=="NI-4w")
          { clex="NI_SG/I_POSS/IM"; stem2=lemma; sub(".$","",stem2); if(stem2!=stem) check="CHECK!"; }
        if(lemma=="ôsi")
-         { cles="NI_SG/I_POSS/IM; stem="ôs"; }
+         { clex="NI_SG/I_POSS/IM"; stem="ôs"; }
 
        # NOUNS: Animate + Dependent + Non-kinship
        # masakay:asakay NAD "skin" ;
@@ -236,10 +197,15 @@ for(i=2; i<=nr; i++)
        if(lemma=="mîni") flags="@P.number.SG";
        if(lemma=="nîwas") { clex="NID"; stem="îwat3"; }
 
+       # Flagging lexicalized diminutive forms, which cannot be further diminutivized
        if(index(note1,"diminutive")!=0)
          { flags="@P.dim.DIM@";
            sub("^.","&^DIM",stem);
          }
+
+       # Restricting diminutivization to the short form -is, unless otherwise specified 
+       if(clex!="" && index(clex,"DIM")==0 && index(flags,"DIM")==0)
+         clex=clex"_DIM/IS";
 
        # Marking plural only nouns
        if(index(note1,"plural")!=0 && match(lemma,"a(k)?$")!=0)
@@ -361,15 +327,19 @@ if(match(lemma,"an$")!=0 || match(lemma,"ana$")!=0 || lemma=="nîpin" || lemma==
 # pimisin:pimisin3 VAIn ;
 
 if(pos=="VAI-1" && match(lemma,"ak$")==0 && lemma!="nîminâniwan") # except nîminâniwan (inflected form of "nîmiw")
-  { clex="VAIw"; }
+  { if(match(stem,"[aâê]$")!=0)
+      clex="VAIae";
+    if(match(stem,"[iîoô]$")!=0)
+      clex="VAIio";
+  }
 if(pos=="VAI-1" && match(lemma,"ak$")!=0) 
   { clex="VAIw_PL"; }
 if(pos=="VAI-2" && match(lemma,"ak$")==0) 
   { clex="VAIn"; sub("n$","n3",stem); }
 if(pos=="VAI-2" && match(lemma,"ak$")!=0) 
   { clex="VAIn_PL"; sub("n$","n3",stem); }
-# if(pos=="VAI-3")
-#   { clex="???"; } # Needs implementation!
+if(pos=="VAI-3")
+  { clex="VAIm"; stem=stem"a"; }
 
 # VTI
 # kâtâw:kâtâ VTIw ;
@@ -450,6 +420,7 @@ if(pos=="VTA-5")
            output[contlex] = output[contlex] sprintf("\n");
          }
 }
+
 if(class=="I")
 {
 
@@ -465,23 +436,24 @@ if(class=="I")
 #    4    4 IPP      Preverb-like?
 
   PROCINFO["sorted_in"]="@ind_str_asc";
-  output["Particle"] = sprintf("+Ipc # ;\n")
-  output["Particle/Interjection"] =  sprintf("+Ipc+Interj # ;\n");
-  output["Particle/Phrase"] = sprintf("+Ipc+Phr # ;\n")
-  output["Particle/Name"] = sprintf("+Ipc+Prop # ;\n")
+  output["Particle"] = sprintf("+Ipc:0 # ;\n")
+  output["Particle/Interjection"] =  sprintf("+Ipc+Interj:0 # ;\n");
+  output["Particle/Phrase"] = sprintf("+Ipc+Phr:0 # ;\n")
+  output["Particle/Name"] = sprintf("+Ipc+Prop:0 # ;\n")
 
-  contlex="PARTICLES";
+  contlex="Particles";
   # IPP requires consideration; IPV and IPN to be dealt with separately
   if(pos=="IPC")
-    clex="Particle";
+    { clex="Particle"; gsub(" ","% ",lemma); }
   if(pos=="IPJ")
-    clex="Particle/Interjection";
+    { clex="Particle/Interjection"; gsub(" ","% ",lemma); }
   if(pos=="IPC ;; IPJ")
-    clex="Particle";
+    { clex="Particle"; gsub(" ","% ",lemma); }
   if(pos=="IPH")
     { clex="Particle/Phrase"; gsub(" ","% ",lemma); }
   if(pos=="INM")
     { clex="Particle/Name"; gsub(" ","% ",lemma); }
+
 
 
   gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
@@ -495,8 +467,72 @@ if(class=="I")
         output[contlex] = output[contlex] sprintf(" ;");
       output[contlex] = output[contlex] sprintf("\n");
     }
-}  
 }
+
+if(class=="PVN")
+{
+
+# Grammatical preverbs (excluded): ê- ka- kâ- kê- kika- kita- kiyê- kiyi- kî- nôh- nôhci- ohci- ô- ta- tita-
+
+  if(pos=="IPV" &&
+          (lemma!="ê-" && lemma!="ka-" && lemma!="kâ-" && lemma!="kê-" && lemma!="kika-" && lemma!="kita-" && lemma!="kiyê-" && lemma!="kiyi-" && lemma!="kî-" && lemma!="nôh-" && lemma!="nôhci-" && lemma!="ô-" && lemma!="ta-" && lemma!="tita-" && lemma!="kâh-" && lemma!="tâh-" && lemma!="wâh-" && lemma!="wî-" && lemma!="ka-kî-"))
+    { contlex="PREVERBS";
+      clex="PREVERBS_BOUND";
+    }
+
+  sub("-$","",lemma);
+
+  tag=lemma;
+  gsub("â","aa",tag);
+  gsub("ê","ee",tag);
+  gsub("î","ii",tag);
+  gsub("ô","oo",tag);
+
+  gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
+  gsub("ý","y",stem);
+
+  if(clex!="")
+    { if(index(lemma,"-")==0)
+        { output[contlex] = output[contlex] sprintf("PV/%s\+:%s %s", tag, lemma, clex);
+            if(full=="full")
+              output[contlex] = output[contlex] sprintf(" \"%s\" ;", gloss);
+            else
+              output[contlex] = output[contlex] sprintf(" ;");
+          output[contlex] = output[contlex] sprintf("\n");
+        }
+      else
+        { output[contlex] = output[contlex] sprintf("@U.hyphen.hyphen@PV/%s\+:@U.hyphen.hyphen@%s %s", tag, lemma, clex);
+            if(full=="full")
+              output[contlex] = output[contlex] sprintf(" \"%s\" ;", gloss);
+            else
+              output[contlex] = output[contlex] sprintf(" ;");
+          output[contlex] = output[contlex] sprintf("\n");
+
+          # Non-hyphenated alternative
+          stem=lemma;
+          n=split(stem,char,"");
+          stem="";
+          for(j=1; j<=n; j++)
+             { if(char[j]=="-" && match(char[j+1],"[aâêiîoô]")!=0)
+                 char[j]="h";
+               if(char[j]=="-" && match(char[j+1],"[aâêiîoô]")==0)
+                 char[j]="";
+               stem=stem char[j];
+             }
+          output[contlex] = output[contlex] sprintf("@U.hyphen.NULL@PV/%s\+:@U.hyphen.NULL@%s %s", tag, stem, clex);
+            if(full=="full")
+              output[contlex] = output[contlex] sprintf(" \"%s\" ;", gloss);
+            else
+              output[contlex] = output[contlex] sprintf(" ;");
+          output[contlex] = output[contlex] sprintf("\n");
+        }
+    }
+
+}
+
+}
+
+# Outputting continuation lexica
 
 for(c in output)
    { printf "LEXICON %s\n", c;
