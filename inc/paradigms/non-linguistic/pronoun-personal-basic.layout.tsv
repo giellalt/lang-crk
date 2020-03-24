@@ -1,0 +1,25 @@
+name: "Personal pronoun basic (plain) paradigm"	
+paradigm: "pronoun.paradigm"	
+layout:	
+  type: "basic"	
+tooltips:	
+  eng:	
+  "One": "Singular"	
+  "Many": "Plural"	
+  "I/me/my": "First person singular"	
+  "you/your (one)": "Second person singular"	
+  "s/he/it/him/her/his/her": "Third person singular"	
+  "we (but not you)/us/our": "First person plural exclusive"	
+  "you and we/us/our": "First person plural inclusive"	
+  "you/your (all)": "Second person plural"	
+  "they/them/their": "Third person plural"	
+--	
+	"One"
+"I/me/my"	"niya"
+"you (one)/your"	"kiya"
+"s/he/it/him/her/his/her/its"	"wiya"
+	"Many"
+"we (but not you)/us/our"	"niyanân"
+"you and we/us/our"	"kiyânaw"
+"you (all)/your"	"kiyawâw"
+"they/them/their"	"wiyawâw"
