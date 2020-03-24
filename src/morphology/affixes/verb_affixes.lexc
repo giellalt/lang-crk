@@ -1269,7 +1269,7 @@ VAIn_IND_NULL_PL_SUFFIX ;
 
 LEXICON VAIn_IND_NULL_SG_SUFFIX   !!= @CODE@ 
 +3Sg:%>0 VERB_ENDLEX ;
-+3Sg:%>iw VERB_ENDLEX ;
++3Sg+Dial:%>iw VERB_ENDLEX ;
 
 
 
@@ -1284,7 +1284,7 @@ LEXICON VAIn_IND_NULL_SG_SUFFIX   !!= @CODE@
 
 LEXICON VAIn_IND_NULL_PL_SUFFIX   !!= @CODE@ 
 +3Pl:%>wak VERB_ENDLEX ;
-+3Pl:%>iwak VERB_ENDLEX ;
++3Pl+Dial:%>iwak VERB_ENDLEX ;
 +4Sg/Pl:%>iyiwa VERB_ENDLEX ;
 
 
@@ -1368,9 +1368,11 @@ LEXICON VAIn_CNJ_NULL_SG_SUFFIX   !!= @CODE@
 
 +1Sg:%>iyân VERB_ENDLEX ;
 +2Sg:%>iyan VERB_ENDLEX ;
-+3Sg:%>it VERB_ENDLEX ;
++3Sg:%>k VERB_ENDLEX ;
++3Sg+Dial:%>it VERB_ENDLEX ;
 +X:%>ihk VERB_ENDLEX ;
 +X:%>inâniwahk VERB_ENDLEX ;
++X:%>inâniwik VERB_ENDLEX ;
 
 
 LEXICON VAIn_CNJ_NULL_PL_SUFFIX   !!= @CODE@ 
@@ -1378,8 +1380,8 @@ LEXICON VAIn_CNJ_NULL_PL_SUFFIX   !!= @CODE@
 +1Pl:%>iyâhk VERB_ENDLEX ;
 +12Pl:%>iyahk VERB_ENDLEX ;
 +2Pl:%>iyêk VERB_ENDLEX ;
-+3Pl:%>icik VERB_ENDLEX ;
 +3Pl:%>kik VERB_ENDLEX ;
++3Pl+Dial:%>icik VERB_ENDLEX ;
 +4Sg/Pl:%>iyit VERB_ENDLEX ;
 
 
@@ -1435,6 +1437,7 @@ LEXICON VAIn_IMP_NULL_PL_SUFFIX
 +Imm+2Pl:%>ik	 VERB_ENDLEX ; !
 +Del+12Pl:%>îhkahk   VERB_ENDLEX ; !
 +Del+2Pl:%>îhkêk   VERB_ENDLEX ; !
+
 
 
 ! ===================================================================================================================
