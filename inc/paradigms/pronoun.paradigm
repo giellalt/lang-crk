@@ -1,0 +1,51 @@
+name: "Pronoun paradigm (PrA + PrI))"
+morphology:
+  pos: Pron
+  noun_animacy:
+  dependency:
+lexicon:
+  XPATH:
+    lc: ".//lg/lc/text()"
+  lc:
+    - "PrA"
+    - "PrI"
+--
+niya+Pron+Pers+1Sg
+kiya+Pron+Pers+2Sg
+wiya+Pron+Pers+3Sg
+niyanân+Pron+Pers+1Pl
+kiyânaw+Pron+Pers+12Pl
+kiyawâw+Pron+Pers+2Pl
+wiyawâw+Pron+Pers+3Pl
+nîsta+Pron+Pers+1Sg+Incl
+kîsta+Pron+Pers+2Sg+Incl
+wîsta+Pron+Pers+3Sg+Incl
+nîstanân+Pron+Pers+1Pl+Incl
+kîstanaw+Pron+Pers+12Pl+Incl
+kîstawâw+Pron+Pers+2Pl+Incl
+wîstawâw+Pron+Pers+3Pl+Incl
+awîna+Pron+Interr+Sg
+awîna+Pron+Interr+Pl
+kîkwây+Pron+Interr+Sg
+kîkwây+Pron+Interr+Pl
+tânitowahk+Pron+Interr+Sg
+awiyak+Pron+Indef+A+Sg
+awiyak+Pron+Indef+A+Pl
+awa+Pron+Dem+Prox+A+Sg
+awa+Pron+Dem+Prox+A+Pl
+awa+Pron+Dem+Med+A+Sg
+awa+Pron+Dem+Med+A+Pl
+awa+Pron+Dem+Dist+A+Sg
+awa+Pron+Dem+Dist+A+Pl
+ôma+Pron+Dem+Prox+I+Sg
+ôma+Pron+Dem+Prox+I+Pl
+ôma+Pron+Dem+Med+I+Sg
+ôma+Pron+Dem+Med+I+Pl
+ôma+Pron+Dem+Dist+I+Sg
+ôma+Pron+Dem+Dist+I+Pl
+ôma+Pron+Def+Prox+I+Sg
+ôma+Pron+Def+Prox+I+Pl
+ôma+Pron+Def+Med+I+Sg
+ôma+Pron+Def+Med+I+Pl
+ôma+Pron+Def+Dist+I+Sg
+ôma+Pron+Def+Dist+I+Pl
