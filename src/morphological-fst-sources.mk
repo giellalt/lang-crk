@@ -23,7 +23,10 @@ ALL_SOURCES_WITH_EXTRAS = $(ALL_SOURCES) $(EXTRA_MORPHOLOGY)
 MORPHOLOGY = morphology/root.lexc \
   morphology/affixes/noun_affixes.lexc \
   morphology/affixes/verb_affixes.lexc \
+  morphology/stems/derivation_stems.lexc \
+  morphology/stems/non_standard.lexc \
   morphology/stems/noun_stems.lexc \
+  morphology/stems/noun_vocatives.lexc \
   morphology/stems/numerals.lexc \
   morphology/stems/particles.lexc \
   morphology/stems/pronouns.lexc \
