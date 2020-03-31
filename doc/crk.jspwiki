@@ -958,20 +958,21 @@ LEXICON IN_DIMDECL Declensions inanimate diminutives, adding +Dim , not in use
 
                           !!!Plains Cree particles                           
 
-The file
+The file contains the following lexicons, with content as described:
 
- * LEXICON PCLE  adds +Ipc
-
- * LEXICON FPCLE  this is for focus particles
+ * LEXICON Particle  adds +Ipc
 
 
- * LEXICON Particles  \\
- * cî+Ipc+Qst:cî # ; 
- * namôya+Ipc+Neg:namôya # ; 
+ * LEXICON Particle/Interjection   adds +Ipc+Interj
 
 
+ * LEXICON Particle/Name  adds +Ipc+Prop
 
 
+ * LEXICON Particle/Phrase  adds +Ipc+Phr
+
+
+ * LEXICON Particles  contains the actual list of particles.
 
 
 
