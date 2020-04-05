@@ -148,6 +148,9 @@
 !! LEXC structure in the new crk FST.
 
 LEXICON NOUN_INDEP_STEMS
+!! Path to productively derived noun stems (in derivation FST)
+DERIVATION_NOUN_STEMS ;
+!! Regular lexicalized noun stems
 @P.dim.DIM@acâhkos:@P.dim.DIM@a^DIMcâhkos NA ;
 @P.dim.DIM@acâwêwikamikos:@P.dim.DIM@a^DIMcâwêwikamikos NI ;
 @P.dim.DIM@acihkos:@P.dim.DIM@a^DIMcihkos NA ;
