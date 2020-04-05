@@ -1,27 +1,44 @@
 #!/bin/sh
 
-# cat Wolvengrey_1w_morphemes_191230.txt
+# cat Wolvengrey_1w_morphemes_191230.txt (OLD)
+# cat ~/GDrive/CreeFST/Wolvengrey/Wolvengrey_crk2eng_200202_altlab.tsv
 
 gawk -v OPTIONS=$1 'BEGIN { FS="\t";
   if(index(OPTIONS,"w")!=0) weight="yes";
   if(index(OPTIONS,"r")!=0) rept="yes";
 }
+NR==1 { for(i=1; i<=NF; i++)
+           { if($i=="\\mrp")
+               drvcol=i;
+             if($i=="\\ps")
+                poscol=i;
+           }
+      }
 NR>=2 {
-if(index($5,";;")==0) # Rule out cases with undeciphered morphology, marked with double-semicolons.
-{ N=split($5,drv,";")
+if(match($drvcol," ((OR)|(or)) ")==0) # Rule out cases with undeciphered morphology, marked with OR.
+{ N=split($drvcol,drv," ;; ")
 for(j=1; j<=N; j++)
-{ gsub("/\\*\\*/","/",drv[j]);
+{ if(match(drv[j],"([-]?)([^-/]+)([-]?)/?[-]([0-9])$",s)!=0)
+    drv[j]=s[1] s[2] s[4] s[3];
+  gsub("/\\*\\*/","/",drv[j]);
   gsub("\\*\\*","",drv[j]);
-  n=split(drv[j],m,"/");
-  for(i=1+1; i<=n-1; i++)
-     if(index(m[i],"\"")==0)
-     { if(i==n-1)
-         pos=$2;
+  gsub("/","",drv[j]);
+#  n=split(drv[j],m,"/");
+#  for(i=1+1; i<=n-1; i++)
+   if(index(drv[j],"\"")==0)
+     {
+#       if(i==n-1)
+       if(j==N)
+         pos=$poscol;
        else
          pos="NONTERM";
+       if(index(pos,";;")!=0)
+         sub("[ ]*;;.*$","",pos);;
        infl[pos]++;
-       input=m[i];
+#        input=m[i];
+       input=drv[j];
        output=input;
+       sub("[0-9]","",output);
        # Including/excluding epenthetic elements
        # if(index(input,"[")!=0 || index(input,"]")!=0 || index(input,"{")!=0 || index(input,"}")!=0)
        #   {
@@ -80,7 +97,7 @@ for(j=1; j<=N; j++)
            }
            mflags[mpflag[input, pos]]="";
          }
-     }
+    }
 }
 }
 }
@@ -183,6 +200,7 @@ for(i in flags)
        if(match(pos,"^P")!=0) poslex="#";
        if(match(pos,"^N")!=0) dertag="+Der/N";
        if(match(pos,"^V")!=0) dertag="+Der/V";
+       # Nouns
        if(pos=="NA-1") poslex="NA";
        if(pos=="NA-2") poslex="NA";
        if(pos=="NA-3") poslex="NA";
@@ -203,20 +221,28 @@ for(i in flags)
        if(pos=="NDI-3") poslex="NID";
        if(pos=="NDI-4") poslex="NID_SG/I";
        if(pos=="NDI-4w") poslex="NID_SG/I";
-       if(pos=="VII-n") poslex="VIIn";
-       if(pos=="VII-v") poslex="VIIw";
-       if(pos=="VAI-n") poslex="VAIn";
-       if(pos=="VAI-v") poslex="VAIn";
+       # Verbs
+       if(pos=="VII-1v") poslex="VIIw_SG";
+       if(pos=="VII-2v") poslex="VIIw";
+       if(pos=="VII-1n") poslex="VIIn_SG";
+       if(pos=="VII-2n") poslex="VIIn";
+       if(pos=="VAI-1") poslex="VAIaeio"; # Needs further work
+       if(pos=="VAI-2") poslex="VAIn";
+       if(pos=="VAI-3") poslex="VAIm";
        if(pos=="VTI-1") poslex="VTIm";
        if(pos=="VTI-2") poslex="VTIw";
        if(pos=="VTI-3") poslex="VTIw";
        if(pos=="VTA-1") poslex="VTA";
        if(pos=="VTA-2") poslex="VTA";
        if(pos=="VTA-3") poslex="VTA";
-       if(pos=="VTA-4") poslex="VTA";
+       if(pos=="VTA-4") poslex="VTAt";
        if(pos=="VTA-5") poslex="VTAi";
-       if(poslex!="UNSPECIFIED")
+       if(poslex!="UNSPECIFIED" && poslex!="VAIaeio")
          printf "%s%s:%s %s ;\n", rflag, dertag, rflag, poslex;
+       if(poslex=="VAIaeio")
+         { printf "%s%s:%s %s ;\n", "@R.infl.VAIae@", dertag, "@R.infl.VAIae@", "VAIae";
+           printf "%s%s:%s %s ;\n", "@R.infl.VAIio@", dertag, "@R.infl.VAIio@", "VAIio";
+         }
      }
 print "";
 }'
