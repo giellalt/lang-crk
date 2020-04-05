@@ -10,8 +10,11 @@ set flag-is-epsilon OFF
 ! set harmonize-flags ON
 
 regex [ w -> "w2", y -> "y4" || [ "@P.infl.NA-4@" | "@P.infl.NI-4@" ] [ Alpha ]* _ .#. ,,
-n -> "n3" || "@P.infl.VII-n@" [ Alpha ]* _ .#. ,,
-n -> "n3" || "@P.infl.VAI-n@" [ Alpha ]* _ .#. ,,
+n -> "n3" || [ "@P.infl.VII-1n@" | "@P.infl.VII-2n@" ] [ Alpha ]* _ .#. ,,
+[..] -> "@P.infl.VAIae@" || "@P.infl.VAI-1@" _ [ Alpha ]* [ a | â | ê ] .#. ,,
+[..] -> "@P.infl.VAIio@" || "@P.infl.VAI-1@" _ [ Alpha ]* [ i | î | o | ô ] .#. ,,
+n -> "n3" || "@P.infl.VAI-2@" [ Alpha ]* _ .#. ,,
+[..] -> a || "@P.infl.VTI-1@" [ Alpha ]* _ .#. ,,
 w -> "w2" || "@P.infl.VTA-1@" m o _ .#. ,,
 t -> "t3" || "@P.infl.VTA-1@" i _ .#. ,,
 w -> "w2" || "@P.infl.VTA-2@" [ Alpha ]* _ .#. ,,
