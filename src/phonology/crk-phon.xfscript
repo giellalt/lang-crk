@@ -522,7 +522,7 @@ define ICVVRule [ [..] -> [ i y ] , "^IC" -> 0 || .#. (Consonant) _ [ â | ê | 
 
 define ICiiRule [ î -> [ â | [ i y î ]] , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ] ;
 
-define ICRule [ a -> ê || .#. (Consonant) _ ?* "^IC" ,, i -> ê || .#. (Consonant) _ ?* "^IC" ,, o -> ê ,, "^IC" -> 0 || .#. w _ ?* "^IC" ,,o -> [ w ê ] , "^IC" -> 0 || .#. (Consonant - w) _ ?* "^IC"  ,, [..] -> [ i y ] , "^IC" -> 0 || .#. (Consonant) _ [ â | ê | ô ] ?* "^IC" ,, î -> [ â | [ i y î ]] , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ] ;
+define ICRule [ a -> ê , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ,,  i -> ê , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ,, o -> ê , "^IC" -> 0 || .#. w _ ?* "^IC" ,, o -> [ w ê ] , "^IC" -> 0 || .#. (Consonant - w) _ ?* "^IC"  ,, [..] -> [ i y ] , "^IC" -> 0 || .#. (Consonant) _ [ â | ê | ô ] ?* "^IC" ,, î -> [ â | [ i y î ]] , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ] ;
 
 !!€ nipât^IC
 !!€ nêpât0
@@ -639,6 +639,29 @@ define deep2surfRule [ i2 -> i ,, ii2 -> î ,, n2 -> n ,, n3 -> n ,, t3 -> t ,, 
 
 define rmTriggerRule [ [ "^DIM" | "^COM" | "^IC" ] -> 0 ] ;
 
-read regex [ VGi2VVRule .o. iiRule .o. Cwi2CoôRule .o. wFinalRule .o. etanRule .o. ee2aaVAIRule .o. a2eeVTIRule .o. n2hRule .o. n20VIIRule .o. t2cVTIRule .o. t2sVTA4Rule .o. t3kostewRule .o. ReduplRule .o. t2epenthesisRule .o. h2epenthesisRule .o. w2oNDRule .o. i2VPossNDRule .o. o2ooPossNounRule .o. DimRule .o. deep2surfRule .o. rmTriggerRule ] ;
+read regex [
+VGi2VVRule
+.o. iiRule
+.o. Cwi2CoôRule
+.o. wFinalRule
+.o. etanRule
+.o. ee2aaVAIRule
+.o. a2eeVTIRule
+.o. n2hRule
+.o. n20VIIRule
+.o. t2cVTIRule
+.o. t2sVTA4Rule
+.o. t3kostewRule
+.o. ReduplRule
+.o. t2epenthesisRule
+.o. h2epenthesisRule
+.o. ICRule
+.o. w2oNDRule
+.o. i2VPossNDRule
+.o. o2ooPossNounRule
+.o. DimRule
+.o. deep2surfRule
+.o. rmTriggerRule
+] ;
 
 !!!!! END !!!!!
