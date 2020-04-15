@@ -308,7 +308,7 @@ if(pos=="VII-2v" && match(lemma,"a$")==0)
   { clex="VIIw"; }
 if(pos=="VII-2v" && match(lemma,"a$")!=0) 
   { clex="VIIw_PL"; }
-if(pos=="VII-1n")
+if(pos=="VII-1n")  # VII-1n lemmas are always singular
   { clex="VIIn_SG"; }
 if(pos=="VII-2n" && match(lemma,"a$")==0) 
   { clex="VIIn"; }
