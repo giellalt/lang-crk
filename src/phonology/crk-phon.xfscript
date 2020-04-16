@@ -512,17 +512,7 @@ define ReduplRule [ [ d1 | d2 ] -> c || _ [ \%< ]+ %< c ,, [ d1 | d2 ] -> h || _
 ! General Template
 ! v1:v2 <=> .#. (C) _ :* %^IC:0 ;
 
-define ICaRule [ a -> ê , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ] ;
-
-define ICiRule [ i -> ê , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ] ;
-
-define ICoRule [ o -> [ w ê ] , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ] ;
-
-define ICVVRule [ [..] -> [ i y ] , "^IC" -> 0 || .#. (Consonant) _ [ â | ê | ô ] ?* "^IC" ] ;
-
-define ICiiRule [ î -> [ â | [ i y î ]] , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ] ;
-
-define ICRule [ a -> ê , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ,,  i -> ê , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ,, o -> ê , "^IC" -> 0 || .#. w _ ?* "^IC" ,, o -> [ w ê ] , "^IC" -> 0 || .#. (Consonant - w) _ ?* "^IC"  ,, [..] -> [ i y ] , "^IC" -> 0 || .#. (Consonant) _ [ â | ê | ô ] ?* "^IC" ,, î -> [ â | [ i y î ]] , "^IC" -> 0 || .#. (Consonant) _ ?* "^IC" ] ;
+define ICRule [ a -> ê || .#. (Consonant (w)) _ ?* "^IC" ,,  i -> ê || .#. (Consonant (w)) _ ?* "^IC" ,, o -> ê || .#. (Consonant) w _ ?* "^IC" ,, [..] -> [ i y ] || .#. (Consonant (w)) _ [ â | ê | ô ] ?* "^IC" ,, î -> [ â | [ i y î ]] || .#. (Consonant (w)) _ ?* "^IC" ,, o -> [ w ê ] || .#. (Consonant - w) _ ?* "^IC" ] .o. [ "^IC" -> 0 ] ;
 
 !!€ nipât^IC
 !!€ nêpât0
@@ -637,6 +627,8 @@ define o2ooPossNounRule [ o -> ô || .#. [ [ n i ] | [ k i ] | o ] [ t | t2 ] %<
 
 define deep2surfRule [ i2 -> i ,, ii2 -> î ,, n2 -> n ,, n3 -> n ,, t3 -> t ,, w2 -> w ,, y4 -> y ] ;
 
+define yNormRule [ ý -> y ] ;
+
 define rmTriggerRule [ [ "^DIM" | "^COM" | "^IC" ] -> 0 ] ;
 
 read regex [
@@ -660,7 +652,9 @@ VGi2VVRule
 .o. i2VPossNDRule
 .o. o2ooPossNounRule
 .o. DimRule
+.o. ICRule
 .o. deep2surfRule
+.o. yNormRule
 .o. rmTriggerRule
 ] ;
 
