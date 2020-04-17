@@ -26,8 +26,8 @@ SETS
 # I define end of clause and beginning of clause in a way so that the file
 # may be read both by the CG-2 and the vislcg formalisms.
 
-LIST BOS = (>>>) (<s>) (<*>);
-LIST EOS = (<<<) (</s>);
+LIST BOS = ">>>" "<s>" "<*>";
+LIST EOS = "<<<" "</s>";
 
 # CG3 doesn´t function without >>> and <<< !
 
@@ -38,8 +38,8 @@ LIST EOS = (<<<) (</s>);
 # ---------------
 
 
-LIST BOS = (>>>) (<s>) (<*>); 
-LIST EOS = (<<<) (</s>); # vislcg and CG-2 together.
+#LIST BOS = (>>>) (<s>) (<*>); 
+#LIST EOS = (<<<) (</s>); # vislcg and CG-2 together.
 
 LIST N = N ;
 LIST V = V ;
@@ -148,6 +148,9 @@ LIST Px3Sg = Px3Sg ;
 LIST Px4Pl = Px4Pl ;
 LIST Px4Sg = Px4Sg ;
 LIST Px4Sg/Pl = Px4Sg/Pl ;
+
+LIST POSS = Px12Pl Px1Pl Px1Sg Px2Pl Px2Sg Px3Pl Px3Sg Px4Pl Px4Sg Px4Sg/Pl ;
+
 LIST CLB = CLB ;
 
 LIST PUNCT = PUNCT ;
@@ -347,8 +350,8 @@ MAP:PrepNR @<P TARGET N + Loc IF (-1 PREPOSITION) ;
 MAP:PrepNL @P> TARGET N + Loc IF (1 POSTPOSITION) ;
 MAP:PrepNR @<P TARGET N + InLoc IF (-1 PREPOSITION) ;
 MAP:PrepNL @P> TARGET N + InLoc IF (1 POSTPOSITION) ;
-#MAP:LocVR  @<Loc-V TARGET N + Loc IF (*-1 V BARRIER CLB) ;
-#MAP:LocVL  @Loc-V> TARGET N + Loc IF (*1 V BARRIER CLB) ;
+MAP:LocVR  @<Loc-V TARGET N + Loc IF (*-1 V BARRIER CLB) ;
+MAP:LocVL  @Loc-V> TARGET N + Loc IF (*1 V BARRIER CLB) ;
 
 ##MAP @<ADVL Loc OR Ipc  (-1 VFIN)(NOT 0 @<P) ;
 ##MAP @ADVL> Loc OR Ipc  (*1 VFIN)(NOT 0 @P>) ;
@@ -393,6 +396,14 @@ MAP:DemNAObvLnum @N> TARGET Dem + A + Obv IF (1 Num)(2 N + A + Obv) ;
 MAP:DemNINSgLnum @N> TARGET Dem + I + Sg IF (1 Num)(2 N + I + Sg) ;
 MAP:DemNINPlLnum @N> TARGET Dem + I + Pl IF (1 Num)(2 N + I + Pl) ;
 
+MAP:DemNASgLnum @N> TARGET Dem + A + Sg IF (NOT 1 Obv)(1 ("kahkiyaw"))(2 N + A + Sg) ;
+MAP:DemNAPlLnum @N> TARGET Dem + A + Pl IF (NOT 1 Obv)(1 ("kahkiyaw"))(2 N + A + Pl) ;
+
+MAP:DemNAObvLnum @N> TARGET Dem + A + Obv IF (1 ("kahkiyaw"))(2 N + A + Obv) ;
+
+MAP:DemNINSgLnum @N> TARGET Dem + I + Sg IF (1 ("kahkiyaw"))(2 N + I + Sg) ;
+MAP:DemNINPlLnum @N> TARGET Dem + I + Pl IF (1 ("kahkiyaw"))(2 N + I + Pl) ;
+
 # consider streamlining to one constraint of Num before N 
 MAP:NumNASgL @N> TARGET Num IF (1 N + A + Sg) ;
 MAP:NumNAPlL @N> TARGET Num IF (1 N + A + Pl) ;
@@ -428,6 +439,19 @@ MAP:ekoniR @<N TARGET I + Pl IF (0 (".?êkoni"r))(-1 ("kîkway"))(-2 ("kahkiyaw"
 
 #ewako and dem
 MAP:ewakoDEM @N> TARGET Ipc if (0 ("êwako"))(1 Dem) ; 
+
+#kotak and nominals: can make like dem pronouns once kotak is consisently marked
+
+MAP:kotakR @<N TARGET A + Sg IF (0 ("<kotak>"r))(-1 N + A + Sg OR Pron + A + Sg) ;
+MAP:kotakL @N> TARGET A + Sg IF (0 ("<kotak>"r))(1 N + A + Sg OR Pron + A + Sg) ;
+MAP:kotakakR @<N TARGET A + Pl IF (0 ("<kotakak>"r))(-1 N + A + Pl OR Pron + A + Pl) ;
+MAP:kotakakL @N> TARGET A + Pl IF (0 ("<kotakak>"r))(1 N + A + Pl OR Pron + A + Pl) ;
+MAP:kotakaR @<N TARGET A + Obv IF (0 ("<kotaka>"r))(-1 N + A + Obv OR Pron + A + Obv) ;
+MAP:kotakaL @N> TARGET A + Obv IF (0 ("<kotaka>"r))(1 N + A + Obv OR Pron + A + Obv) ;
+MAP:kotakR @<N TARGET I + Sg IF (0 ("<kotak>"r))(-1 N + I + Sg OR Pron + I + Sg) ;
+MAP:kotakL @N> TARGET I + Sg IF (0 ("<kotak>"r))(1 N + I + Sg OR Pron + I + Sg) ;
+MAP:kotakR @<N TARGET I + Pl IF (0 ("<kotaka>"r))(-1 N + I + Pl OR Pron + I + Pl) ;
+MAP:kotakL @N> TARGET I + Pl IF (0 ("<kotaka>"r))(1 N + I + Pl OR Pron + I + Pl) ;
 
 MAP:NAMES @N> TARGET Prop IF (0 Prop)(1 Prop);
 ## Residential School
@@ -482,8 +506,8 @@ MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(-1 VII + Ind 
 MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(1 VII + Ind + 4Sg OR VII + Ind + 4Pl) ;
 
 ##PRONOMINAL GOALS goals more likely to be lexicalised than actors cf schmirler et al 2018?
-MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (-1 TI) ;
-MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (1 TI) ;
+MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (-1 TI + Ind) ;
+MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (1 TI + Ind) ;
 
 MAP:TAPron1SgGOALR @<GOAL TARGET Pron + 1Sg IF (-1 TA + Ind + 1SgO) ;
 MAP:TAPron1SgGOALL @GOAL> TARGET Pron + 1Sg IF (1 TA + Ind + 1SgO) ;
@@ -512,12 +536,12 @@ MAP:TAObvPronGOALR @<GOAL TARGET Pron + Obv IF (-1C TA + Ind + 4Sg/PlO) ;
 MAP:TAObvPronGOALL @GOAL> TARGET Pron + Obv IF (1C TA + Ind + 4Sg/PlO) ;
 
 ##PRONOMINAL ACTORS 
-MAP:AITITADem3SgACTR @<ACTOR TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (-1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg)) ;
-MAP:AITITADem3SgACTL @ACTOR> TARGET Pron + A + Sg IF ((NOT 0 @<N OR @N>) LINK (1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg)) ;
-MAP:AITITADem3PlACTR @<ACTOR TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (-1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl)) ;
-MAP:AITITADem3PlACTL @ACTOR> TARGET Pron + A + Pl IF ((NOT 0 @<N OR @N>) LINK (1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl)) ;
-MAP:AITITADemOBVACTR @<ACTOR TARGET Pron + A + Obv IF ((NOT 0 @<N OR @N>) LINK (-1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl OR TA + Ind + 4Sg/Pl)) ;
-MAP:AITITADemOBVACTL @ACTOR> TARGET Pron + A + Obv IF ((NOT 0 @<N OR @N>) LINK (1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl OR TA + Ind + 4Sg/Pl)) ;
+MAP:AITITADem3SgACTR @<ACTOR TARGET Pron + A + Sg IF (NOT 0 @<N OR @N>)(-1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg) ;
+MAP:AITITADem3SgACTL @ACTOR> TARGET Pron + A + Sg IF (NOT 0 @<N OR @N>)(1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg) ;
+MAP:AITITADem3PlACTR @<ACTOR TARGET Pron + A + Pl IF (NOT 0 @<N OR @N>)(-1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl) ;
+MAP:AITITADem3PlACTL @ACTOR> TARGET Pron + A + Pl IF (NOT 0 @<N OR @N>)(1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl) ;
+MAP:AITITADemOBVACTR @<ACTOR TARGET Pron + A + Obv IF (NOT 0 @<N OR @N>)(-1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl OR TA + Ind + 4Sg/Pl) ;
+MAP:AITITADemOBVACTL @ACTOR> TARGET Pron + A + Obv IF (NOT 0 @<N OR @N>)(1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl OR TA + Ind + 4Sg/Pl) ;
 
 MAP:IIPron3SgACTR @<ACTOR TARGET Pron + I + Sg IF (-1 VII + Ind + 3Sg) ;
 MAP:IIPron3SgACTL @ACTOR> TARGET Pron + I + Sg IF (1 VII + Ind + 3Sg) ;
@@ -589,9 +613,9 @@ MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 VII + I
 MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 VII + Ind + 4Sg OR VII + Ind + 4Pl) ;
 MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 VII + Ind + 4Sg OR VII + Ind + 4Pl) ;
 
-##PRONOMINAL GOALS goals more likely to be lexicalised thA actors cf schmirler et al 2018?
-MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (NOT -1 V OR CLB)(-2 TI) ;
-MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (NOT 1 V OR CLB)(2 TI) ;
+##PRONOMINAL GOALS goals more likely to be lexicalised than actors cf schmirler et al 2018?
+MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (NOT -1 V OR CLB)(-2 TI + Ind) ;
+MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (NOT 1 V OR CLB)(2 TI + Ind) ;
 
 MAP:TAPron1SgGOALR @<GOAL TARGET Pron + 1Sg IF (NOT -1 V OR CLB)(-2 TA + Ind + 1SgO) ;
 MAP:TAPron1SgGOALL @GOAL> TARGET Pron + 1Sg IF (NOT 1 V OR CLB)(2 TA + Ind + 1SgO) ;
@@ -1208,12 +1232,14 @@ MAP:4SgPlPoss @Pos> TARGET N + Obv IF (1 N + Px4Sg/Pl)(NOT 1 Loc) ;
 ##MAP:TEMPORALN @<ADVL TARGET TEMPORALN IF (*-1 AI OR TI OR TA BARRIER CLB) ;
 ##MAP:TEMPORALN @ADVL> TARGET TEMPORALN IF (*1 AI OR TI OR TA BARRIER CLB) ;
 
-MAP:IptV @Ipt-V> TARGET Ipt IF (1 V) ;
+MAP:anohc @Ipt-V> TARGET ("anohc") IF (1 ("kîsikâw")) ;
+
 MAP:IptV @<Ipt-V TARGET Ipt IF (-1 V) ;
-MAP:IptV @Ipt-V> TARGET Ipt IF (2 V)(NOT 1 CLB) ;
+MAP:IptV @Ipt-V> TARGET Ipt IF (1 V) ;
 MAP:IptV @<Ipt-V TARGET Ipt IF (-2 V)(NOT -1 CLB) ;
-MAP:IptV @Ipt-V> TARGET Ipt IF (*3 V BARRIER CLB)(NOT 1 CLB)(NOT 2 CLB) ;
+MAP:IptV @Ipt-V> TARGET Ipt IF (2 V)(NOT 1 CLB) ;
 MAP:IptV @<Ipt-V TARGET Ipt IF (*-3 V BARRIER CLB)(NOT -1 CLB)(NOT -2 CLB) ;
+MAP:IptV @Ipt-V> TARGET Ipt IF (*3 V BARRIER CLB)(NOT 1 CLB)(NOT 2 CLB) ;
 
 #locative things that aren't nouns
 MAP:LocPred @<LocPred TARGET Dem IF (-1 Ipl)(-2 BOS OR CLB) ;
@@ -1232,7 +1258,7 @@ MAP:INSohciN @INS> TARGET N IF (NOT 0 Loc)(1 ("ohci")) ;
 MAP:INSohciIpn @INS> TARGET Ipn IF (1 ("ohci")) ;
 MAP:INSohciPr @INS> TARGET Dem IF (1 ("ohci")) ;
 
-#indeclinable locatives cA be associated with verbs as locatives, but after act/goal and before obl
+#indeclinable locatives can be associated with verbs as locatives, but after act/goal and before obl
 MAP:LocVR  @<V TARGET N + InLoc IF (*-1 V BARRIER CLB)(NOT -1 PUNCT) ;
 MAP:LocVL  @V> TARGET N + InLoc IF (*1 V BARRIER CLB)(NOT 1 PUNCT) ;
 
@@ -1263,8 +1289,8 @@ MAP:QuantatihtN @<Quant-N TARGET ("âtiht") IF (-1 N + Pl) ;
 MAP:QuantatihtN @Quant-N> TARGET ("âtiht") IF (1 N + Obv) ;
 MAP:QuantatihtN @<Quant-N TARGET ("âtiht") IF (-1 N + Obv) ;
 
-MAP:QuantnamakikwayN @Quant-N> TARGET Ipn IF (1 N + I) ;
-MAP:QuantnamakikwayN @<Quant-N TARGET Ipn IF (-1 N + I) ;
+MAP:Quantnama/ekakikwayN @Quant-N> TARGET Ipn IF (1 N + I) ;
+MAP:Quantnama/ekakikwayN @<Quant-N TARGET Ipn IF (-1 N + I) ;
 
 
 #peyak and kahkiyaw as actors/goals
@@ -1304,15 +1330,15 @@ MAP:TInamakikwayOblR @<OBL TARGET Ipn IF (*-1 AI BARRIER V OR CLB) ;
 MAP:TInamakikwayOblL @OBL> TARGET Ipn IF (*1 AI BARRIER V OR CLB) ;
 
 #quantifiers
-MAP:QuantN @Quant-N> TARGET Quant IF (1 N)(NOT 1 Loc) ;
-
-MAP:QuantV @Quant-V> TARGET Quant IF (1 V) ;
-MAP:QuantV @<Quant-V TARGET Quant IF (-1 V) ;
-
 MAP:Quantiyikohk @Quant-V> TARGET (".*yikohk"r) IF (0 Quant)(*1 V BARRIER CLB) ;
 MAP:Quantiyikohk @<Quant-V TARGET (".*yikohk"r) IF (0 Quant)(*-1 V BARRIER CLB) ;
 MAP:Quantmitoni @Quant-V> TARGET ("mitoni") IF (*1 V BARRIER CLB) ;
 MAP:Quantmistahi @Quant-V> TARGET ("mistahi") IF (*1 V BARRIER CLB) ;
+
+MAP:QuantN @Quant-N> TARGET Quant IF (1 N)(NOT 1 Loc) ;
+
+MAP:QuantV @Quant-V> TARGET Quant IF (1 V) ;
+MAP:QuantV @<Quant-V TARGET Quant IF (-1 V) ;
 
 ##OBLIQUES
 
