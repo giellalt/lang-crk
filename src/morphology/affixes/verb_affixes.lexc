@@ -1,4 +1,4 @@
-! Copyright © 2015–2019 Alberta Language Technology Lab (ALTLab)
+! Copyright © 2015–2020 Alberta Language Technology Lab (ALTLab)
 ! http://altlab.artsrn.ualberta.ca/
 !
 ! This program is free software; you can redistribute and/or modify
@@ -48,13 +48,22 @@ LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
 
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
-@U.tense.Prs@                                                             VERBPREFIXES ;
-@U.tense.Prt@@P.joiner.NULL@:@U.tense.Prt@@P.joiner.NULL@kî^EGLOT%<       VERBPREFIXES ;
-@U.tense.Prt@@P.joiner.hyphen@:@U.tense.Prt@@P.joiner.hyphen@kî-%<        VERBPREFIXES ;
-@U.tense.FutDef@@P.joiner.NULL@:@U.tense.FutDef@@P.joiner.NULL@ka^EGLOT%< VERBPREFIXES ;
-@U.tense.FutDef@@P.joiner.hyphen@:@U.tense.FutDef@@P.joiner.hyphen@ka-%<  VERBPREFIXES ;
-@U.tense.FutInt@@P.joiner.NULL@:@U.tense.FutInt@@P.joiner.NULL@wî^EGLOT%< VERBPREFIXES ;
-@U.tense.FutInt@@P.joiner.hyphen@:@U.tense.FutInt@@P.joiner.hyphen@wî-%<  VERBPREFIXES ;
+0                                               VERBPREFIXES ;
+@P.joiner.NULL@PV/ki+:@P.joiner.NULL@kî^EGLOT%< VERBPREFIXES ;
+@P.joiner.hyphen@PV/ki+:@P.joiner.hyphen@kî-%<  VERBPREFIXES ;
+@P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka^EGLOT%< VERBPREFIXES ;
+@P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka-%<  VERBPREFIXES ;
+@P.joiner.NULL@PV/wi+:@P.joiner.NULL@wî^EGLOT%< VERBPREFIXES ;
+@P.joiner.hyphen@PV/wi+:@P.joiner.hyphen@wî-%<  VERBPREFIXES ;
+
+! LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
+! @U.tense.Prs@                                                             VERBPREFIXES ;
+! @U.tense.Prt@@P.joiner.NULL@:@U.tense.Prt@@P.joiner.NULL@kî^EGLOT%<       VERBPREFIXES ;
+! @U.tense.Prt@@P.joiner.hyphen@:@U.tense.Prt@@P.joiner.hyphen@kî-%<        VERBPREFIXES ;
+! @U.tense.FutDef@@P.joiner.NULL@:@U.tense.FutDef@@P.joiner.NULL@ka^EGLOT%< VERBPREFIXES ;
+! @U.tense.FutDef@@P.joiner.hyphen@:@U.tense.FutDef@@P.joiner.hyphen@ka-%<  VERBPREFIXES ;
+! @U.tense.FutInt@@P.joiner.NULL@:@U.tense.FutInt@@P.joiner.NULL@wî^EGLOT%< VERBPREFIXES ;
+! @U.tense.FutInt@@P.joiner.hyphen@:@U.tense.FutInt@@P.joiner.hyphen@wî-%<  VERBPREFIXES ;
 
 
 LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no prefix)
@@ -75,11 +84,18 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and prefix ê-, kâ-, kâki-
 
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
-@U.tense.Prs@                                                                           VERBPREFIXES ;
-@U.tense.Prt@@U.joiner.hyphen@@D.cnj.CC@:@U.tense.Prt@@U.joiner.hyphen@@D.cnj.CC@kî-%<        VERBPREFIXES ;
-@U.tense.Prt@@U.joiner.NULL@@D.cnj.CC@:@U.tense.Prt@@U.joiner.NULL@@D.cnj.CC@kî^EGLOT%<       VERBPREFIXES ;
-@U.tense.FutInt@@U.joiner.hyphen@@D.cnj.CC@:@U.tense.FutInt@@U.joiner.hyphen@@D.cnj.CC@wî-%<  VERBPREFIXES ;
-@U.tense.FutInt@@U.joiner.NULL@@D.cnj.CC@:@U.tense.FutInt@@U.joiner.NULL@@D.cnj.CC@wî^EGLOT%< VERBPREFIXES ;
+0                                                                   VERBPREFIXES ;
+@U.joiner.hyphen@@D.cnj.CC@PV/ki+:@U.joiner.hyphen@@D.cnj.CC@kî-%<  VERBPREFIXES ;
+@U.joiner.NULL@@D.cnj.CC@PV/ki+:@U.joiner.NULL@@D.cnj.CC@kî^EGLOT%< VERBPREFIXES ;
+@U.joiner.hyphen@@D.cnj.CC@PV/wi+:@U.joiner.hyphen@@D.cnj.CC@wî-%<  VERBPREFIXES ;
+@U.joiner.NULL@@D.cnj.CC@PV/wi+:@U.joiner.NULL@@D.cnj.CC@wî^EGLOT%< VERBPREFIXES ;
+
+! LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
+! @U.tense.Prs@                                                                           VERBPREFIXES ;
+! @U.tense.Prt@@U.joiner.hyphen@@D.cnj.CC@:@U.tense.Prt@@U.joiner.hyphen@@D.cnj.CC@kî-%<        VERBPREFIXES ;
+! @U.tense.Prt@@U.joiner.NULL@@D.cnj.CC@:@U.tense.Prt@@U.joiner.NULL@@D.cnj.CC@kî^EGLOT%<       VERBPREFIXES ;
+! @U.tense.FutInt@@U.joiner.hyphen@@D.cnj.CC@:@U.tense.FutInt@@U.joiner.hyphen@@D.cnj.CC@wî-%<  VERBPREFIXES ;
+! @U.tense.FutInt@@U.joiner.NULL@@D.cnj.CC@:@U.tense.FutInt@@U.joiner.NULL@@D.cnj.CC@wî^EGLOT%< VERBPREFIXES ;
 
 
 LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
@@ -509,27 +525,27 @@ LEXICON VIIn_PL_WICI !!!! 	 NO LONGER NEEDED FROM AROK
 ! ===========================================================
 
 LEXICON VIIw_SGPL_ORDER !!= @CODE@ 
-@U.order.indep@+Ind:@U.order.indep@ VIIw_SGPL_IND_TENSE ;
-@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_SGPL_CNJ_TENSE ;
+@U.order.indep@+Ind:@U.order.indep@ VIIw_SGPL_IND_PERSON ;
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_SGPL_CNJ_PERSON ;
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_SGPL_FUT_CON_PERSON ;
 
-! @U.order.indep@+Ind:@U.order.indep@ VIIw_IND_TENSE ; !
-! @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_CNJ_TENSE ; !
+! @U.order.indep@+Ind:@U.order.indep@ VIIw_IND_PERSON ; !
+! @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_CNJ_PERSON ; !
 ! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_FUT_CON_PERSON ;!
 
 LEXICON VIIw_SG_ORDER !!= @CODE@ singular only
-@U.order.indep@+Ind:@U.order.indep@  VIIw_SG_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_SG_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@  VIIw_SG_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_SG_CNJ_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_SG_FUT_CON_PERSON ;!
 
 LEXICON VIIw_PL_ORDER !!= @CODE@ singular only
-@U.order.indep@+Ind:@U.order.indep@  VIIw_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_PL_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@  VIIw_PL_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIw_PL_CNJ_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_PL_FUT_CON_PERSON ;!
 
 !! LEXICON VIIw_PL_ORDER !!= @CODE@ plural only 
-!! @U.order.indep@+Ind:@U.order.indep@ VIIw_PL_IND_TENSE ; !
-!! @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_PL_CNJ_TENSE ; !
+!! @U.order.indep@+Ind:@U.order.indep@ VIIw_PL_IND_PERSON ; !
+!! @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_PL_CNJ_PERSON ; !
 !! @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_PL_FUT_CON_PERSON ;!
 
 ! ===========================================================
@@ -539,18 +555,18 @@ LEXICON VIIw_PL_ORDER !!= @CODE@ singular only
 ! ===========================================================
 
 LEXICON VIIn_SGPL_ORDER !!= @CODE@ 
-@U.order.indep@+Ind:@U.order.indep@ VIIn_SGPL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_SGPL_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VIIn_SGPL_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_SGPL_CNJ_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIn_SGPL_FUT_CON_PERSON ;!
 
 LEXICON VIIn_SG_ORDER !!= @CODE@ singular only
-@U.order.indep@+Ind:@U.order.indep@ VIIn_SG_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_SG_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VIIn_SG_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_SG_CNJ_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIn_SG_FUT_CON_PERSON ;!
 
 LEXICON VIIn_PL_ORDER !!= @CODE@ plural only
-@U.order.indep@+Ind:@U.order.indep@ VIIn_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_PL_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VIIn_PL_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VIIn_PL_CNJ_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIn_PL_FUT_CON_PERSON ;!
 
 !!! TENSES
@@ -935,14 +951,14 @@ LEXICON VAIio_WICI !!!!
 ! =========================================================== ! NOTE: imperative and fut con do not take tense
 
 LEXICON VAIn_ORDER !!= @CODE@
-@U.order.indep@+Ind:@U.order.indep@ VAIn_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VAIn_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VAIn_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIn_CNJ_PERSON ; !
 @U.order.imp@+Imp:@U.order.imp@  VAIn_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIn_FUT_CON_PERSON ; !
 
 LEXICON VAIn_PL_ORDER !!= @CODE@ plural only  
-@U.order.indep@+Ind:@U.order.indep@ VAIn_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VAIn_PL_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VAIn_PL_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIn_PL_CNJ_PERSON ; !
 @U.order.imp@+Imp:@U.order.imp@  VAIn_PL_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIn_PL_FUT_CON_PERSON ; !
 
@@ -956,14 +972,14 @@ LEXICON VAIn_PL_ORDER !!= @CODE@ plural only
 ! =========================================================== ! NOTE: imperative and fut con do not take tense
 
 LEXICON VAIae_ORDER !!= @CODE@
-@U.order.indep@+Ind:@U.order.indep@ VAIae_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VAIae_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VAIae_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIae_CNJ_PERSON ; !
 @U.order.imp@+Imp:@U.order.imp@  VAIw_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIw_FUT_CON_PERSON ; !
 
 LEXICON VAIw_PL_ORDER !!= @CODE@ plural only 
-@U.order.indep@+Ind:@U.order.indep@ VAIw_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VAIw_PL_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VAIw_PL_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIw_PL_CNJ_PERSON ; !
 @U.order.imp@+Imp:@U.order.imp@  VAIw_PL_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIw_PL_FUT_CON_PERSON ; !
 
@@ -974,8 +990,8 @@ LEXICON VAIw_PL_ORDER !!= @CODE@ plural only
 ! =========================================================== ! NOTE: imperative and fut con do not take tense
 
 LEXICON VAIio_ORDER !!= @CODE@
-@U.order.indep@+Ind:@U.order.indep@ VAIio_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VAIio_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VAIio_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VAIio_CNJ_PERSON ; !
 @U.order.imp@+Imp:@U.order.imp@  VAIw_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VAIw_FUT_CON_PERSON ; !
 
@@ -1584,14 +1600,14 @@ LEXICON VTIm_PL_WICI
 ! =========================================================== ! imperative and fut con do not take tense
 
 LEXICON VTIm_ORDER !!= @CODE@ . 
-@U.order.indep@+Ind:@U.order.indep@ VTIm_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VTIm_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VTIm_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTIm_CNJ_PERSON ; !
 @U.order.imp@+Imp:@U.order.imp@  VTIm_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTIm_FUT_CON_PERSON ; !
 
 LEXICON VTIm_PL_ORDER !!= @CODE@ plural only NOTE: imperative and fut con go straight to person lexica
-@U.order.indep@+Ind:@U.order.indep@ VTIm_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VTIm_PL_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VTIm_PL_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTIm_PL_CNJ_PERSON ; !
 @U.order.imp@+Imp:@U.order.imp@  VTIm_PL_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTIm_PL_FUT_CON_PERSON ; !
 
@@ -1899,26 +1915,26 @@ LEXICON VTAi_WICI  !!= * @CODE@ single mora stems
 !!! ORDERS
 
 LEXICON VTA_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense
-@U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VTA_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_PERSON ; !
 @U.order.imp@+Imp:@U.order.imp@  VTA_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_FUT_CON_PERSON ; !
 
 LEXICON VTA_PL_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense 
-@U.order.indep@+Ind:@U.order.indep@ VTA_PL_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VTA_PL_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VTA_PL_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA_PL_CNJ_PERSON ; !
 @U.order.imp@+Imp:@U.order.imp@  VTA_PL_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_PL_FUT_CON_PERSON ; !
 
 LEXICON VTAi_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
-@U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VTA_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_PERSON ; !
 @U.order.imp@+Imp:@U.order.imp@  VTAi_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_FUT_CON_PERSON ; !
 
 LEXICON VTAt_ORDER !!= @CODE@ Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
-@U.order.indep@+Ind:@U.order.indep@ VTA_IND_TENSE ; !
-@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_TENSE ; !
+@U.order.indep@+Ind:@U.order.indep@ VTA_IND_PERSON ; !
+@U.order.cnj@+Cnj:@U.order.cnj@ VTA_CNJ_PERSON ; !
 @U.order.imp@+Imp:@U.order.imp@  VTAt_IMP_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VTA_FUT_CON_PERSON ; !
 
