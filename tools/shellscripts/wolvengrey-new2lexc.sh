@@ -212,7 +212,7 @@ for(i=2; i<=nr; i++)
          flags=flags "@P.number.PL@";
      
        gsub("ý","y",lemma); # Undo marking historical -y- before outputting LEXC code
-       gsub("ý","y",stem);
+       # gsub("ý","y",stem);
      
        if(clex!="")
          { if(lemma!=stem && stem!="")
@@ -397,7 +397,7 @@ if(pos=="VTA-5")
   { clex="VTAi"; sub("t$","t3",stem); }
 
       gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
-      gsub("ý","y",stem);
+      # gsub("ý","y",stem);
 
       contlex="VERBSTEMS";     
        if(clex!="")
@@ -457,7 +457,7 @@ if(class=="I")
 
 
   gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
-  gsub("ý","y",stem);
+  # gsub("ý","y",stem);
 
   if(clex!="")
     { output[contlex] = output[contlex] sprintf("%s %s", lemma, clex);
@@ -489,7 +489,7 @@ if(class=="PVN")
   gsub("ô","oo",tag);
 
   gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
-  gsub("ý","y",stem);
+  # gsub("ý","y",stem);
 
   if(clex!="")
     { if(index(lemma,"-")==0)
