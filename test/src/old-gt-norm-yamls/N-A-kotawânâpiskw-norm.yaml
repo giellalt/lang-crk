@@ -1,0 +1,63 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - kotawânâpisk - ok : # -m animate noun, stove	AEW NA3
+     kotawânâpisk+N+A+Sg: kotawânâpisk
+     kotawânâpisk+N+A+Px1Sg+Sg: [nikotawânâpiskw, nikotawânâpiskom]
+     kotawânâpisk+N+A+Px2Sg+Sg: [kikotawânâpiskw, kikotawânâpiskom]
+     kotawânâpisk+N+A+Px1Pl+Sg: [nikotawânâpiskonân, nikotawânâpiskominân]
+     kotawânâpisk+N+A+Px12Pl+Sg: [kikotawânâpiskonaw, kikotawânâpiskominaw]
+     kotawânâpisk+N+A+Px2Pl+Sg: [kikotawânâpiskowâw, kikotawânâpiskomiwâw]
+
+     kotawânâpisk+N+A+Pl: kotawânâpiskwak
+     kotawânâpisk+N+A+Px1Sg+Pl: [nikotawânâpiskwak, nikotawânâpiskomak]
+     kotawânâpisk+N+A+Px2Sg+Pl: [kikotawânâpiskwak, kikotawânâpiskomak]
+     kotawânâpisk+N+A+Px1Pl+Pl: [nikotawânâpiskonânak, nikotawânâpiskominânak]
+     kotawânâpisk+N+A+Px12Pl+Pl: [kikotawânâpiskonawak, kikotawânâpiskominawak]
+     kotawânâpisk+N+A+Px2Pl+Pl: [kikotawânâpiskowâwak, kikotawânâpiskomiwâwak]
+     
+     kotawânâpisk+N+A+Obv: kotawânâpiskwa
+     kotawânâpisk+N+A+Px1Sg+Obv: [nikotawânâpiskwa, nikotawânâpiskoma]
+     kotawânâpisk+N+A+Px2Sg+Obv: [kikotawânâpiskwa, kikotawânâpiskoma]
+     kotawânâpisk+N+A+Px1Pl+Obv: [nikotawânâpiskonâna, nikotawânâpiskominâna]
+     kotawânâpisk+N+A+Px12Pl+Obv: [kikotawânâpiskonawa, kikotawânâpiskominawa]
+     kotawânâpisk+N+A+Px2Pl+Obv: [kikotawânâpiskowâwa, kikotawânâpiskomiwâwa]
+     kotawânâpisk+N+A+Px3Sg+Obv: [okotawânâpiskwa, okotawânâpiskoma]
+     kotawânâpisk+N+A+Px3Pl+Obv: [okotawânâpiskowâwa, okotawânâpiskomiwâwa]
+     kotawânâpisk+N+A+Px4Sg+Obv: [okotawânâpiskoyiwa, okotawânâpiskomiyiwa]
+     kotawânâpisk+N+A+Px4Pl+Obv: [okotawânâpiskoyiwa, okotawânâpiskomiyiwa]
+
+     kotawânâpisk+N+A+Loc: kotawânâpiskohk
+     kotawânâpisk+N+A+Px1Sg+Loc: [nikotawânâpiskohk, nikotawânâpiskomihk]
+     kotawânâpisk+N+A+Px2Sg+Loc: [kikotawânâpiskohk, kikotawânâpiskomihk]
+     kotawânâpisk+N+A+Px1Pl+Loc: [nikotawânâpiskonâhk, nikotawânâpiskominâhk]
+     kotawânâpisk+N+A+Px12Pl+Loc: [kikotawânâpiskonâhk, kikotawânâpiskominâhk]
+     kotawânâpisk+N+A+Px2Pl+Loc: [kikotawânâpiskowâhk, kikotawânâpiskomiwâhk]
+     kotawânâpisk+N+A+Px3Sg+Loc: [okotawânâpiskohk, okotawânâpiskomihk]
+     kotawânâpisk+N+A+Px3Pl+Loc: [okotawânâpiskowâhk, okotawânâpiskomiwâhk]
+     kotawânâpisk+N+A+Px4Sg+Loc: [okotawânâpiskoyihk, okotawânâpiskomiyihk]
+     kotawânâpisk+N+A+Px4Pl+Loc: [okotawânâpiskoyihk, okotawânâpiskomiyihk]
+
+     kotawânâpisk+N+A+Der/Dim+N+A+Sg: kotawânâpiskos
+     kotawânâpisk+N+A+Der/Dim+N+A+Sg: [kotawânâpiskos, kotawânâpiskosis, kotawânâpiskomis, kotawânâpiskomisis]
+     kotawânâpisk+N+A+Der/Dim+N+A+Px1Sg+Sg: [nikotawânâpiskos, nikotawânâpiskosis, nikotawânâpiskomis, nikotawânâpiskomisis]
+     kotawânâpisk+N+A+Der/Dim+N+A+Px2Sg+Sg: [kikotawânâpiskos, kikotawânâpiskosis, kikotawânâpiskomis, kikotawânâpiskomisis]
+     kotawânâpisk+N+A+Der/Dim+N+A+Px1Pl+Sg: [nikotawânâpiskosinân, nikotawânâpiskosisinân, nikotawânâpiskomisinân, nikotawânâpiskomisisinân]
+     kotawânâpisk+N+A+Der/Dim+N+A+Px12Pl+Sg: [kikotawânâpiskosinaw, kikotawânâpiskosisinaw, kikotawânâpiskomisinaw, kikotawânâpiskomisisinaw]
+     kotawânâpisk+N+A+Der/Dim+N+A+Px2Pl+Sg: [kikotawânâpiskosiwâw, kikotawânâpiskosisiwâw, kikotawânâpiskomisiwâw, kikotawânâpiskomisisiwâw]
+
+     kotawânâpisk+N+A+Der/Dim+N+A+Pl: [kotawânâpiskosak, kotawânâpiskosisak, kotawânâpiskomisak, kotawânâpiskomisisak]
+     kotawânâpisk+N+A+Der/Dim+N+A+Px1Sg+Pl: [nikotawânâpiskosak, nikotawânâpiskosisak, nikotawânâpiskomisak, nikotawânâpiskomisisak]
+     kotawânâpisk+N+A+Der/Dim+N+A+Px2Sg+Pl: [kikotawânâpiskosak, kikotawânâpiskosisak, kikotawânâpiskomisak, kikotawânâpiskomisisak]
+     kotawânâpisk+N+A+Der/Dim+N+A+Px1Pl+Pl: [nikotawânâpiskosinânak, nikotawânâpiskosisinânak, nikotawânâpiskomisinânak, nikotawânâpiskomisisinânak]
+     kotawânâpisk+N+A+Der/Dim+N+A+Px12Pl+Pl: [kikotawânâpiskosinawak, kikotawânâpiskosisinawak, kikotawânâpiskomisinawak, kikotawânâpiskomisisinawak]
+     kotawânâpisk+N+A+Der/Dim+N+A+Px2Pl+Pl: [kikotawânâpiskosiwâwak, kikotawânâpiskosisiwâwak, kikotawânâpiskomisiwâwak, kikotawânâpiskomisisiwâwak]
+

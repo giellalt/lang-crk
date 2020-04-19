@@ -1,0 +1,271 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - kîskiswêw - ok : # VTA (VTA3 AEW) 
+
+###PRS###
+## INDEPENDENT ##
+     kîskiswêw+V+TA+Ind+Prs+2Sg+1SgO:    kikîskison # LOCAL DIR
+     kîskiswêw+V+TA+Ind+Prs+2Sg+1PlO:    kikîskisonân
+     kîskiswêw+V+TA+Ind+Prs+2Pl+1PlO:    kikîskisonân
+     kîskiswêw+V+TA+Ind+Prs+2Pl+1SgO:    kikîskisonâwâw
+
+     kîskiswêw+V+TA+Ind+Prs+1Sg+2SgO:    kikîskisotin # LOCAL INVERSE
+     kîskiswêw+V+TA+Ind+Prs+1Pl+2SgO:    kikîskisotinân
+     kîskiswêw+V+TA+Ind+Prs+1Pl+2PlO:    kikîskisotinân
+     kîskiswêw+V+TA+Ind+Prs+1Sg+2PlO:    kikîskisotinâwâw
+
+
+     kîskiswêw+V+TA+Ind+Prs+1Sg+3SgO:    nikîskiswâw # MIXED DIR (obj sg)
+     kîskiswêw+V+TA+Ind+Prs+2Sg+3SgO:    kikîskiswâw
+     kîskiswêw+V+TA+Ind+Prs+1Pl+3SgO:    nikîskiswânân
+     kîskiswêw+V+TA+Ind+Prs+12Pl+3SgO:    kikîskiswânaw
+     kîskiswêw+V+TA+Ind+Prs+2Pl+3SgO:    kikîskiswâwâw
+     kîskiswêw+V+TA+Ind+Prs+1Sg+3PlO:    nikîskiswâwak # MIXED DIR (obj pl)
+     kîskiswêw+V+TA+Ind+Prs+2Sg+3PlO:    kikîskiswâwak
+     kîskiswêw+V+TA+Ind+Prs+1Pl+3PlO:    nikîskiswânânak
+     kîskiswêw+V+TA+Ind+Prs+12Pl+3PlO:    kikîskiswânawak
+     kîskiswêw+V+TA+Ind+Prs+2Pl+3PlO:    kikîskiswâwâwak
+
+     kîskiswêw+V+TA+Ind+Prs+1Sg+4Sg/PlO:    nikîskisomâwa # MIXED DIR (obj. obv.)
+     kîskiswêw+V+TA+Ind+Prs+2Sg+4Sg/PlO:    kikîskisomâwa
+     kîskiswêw+V+TA+Ind+Prs+1Pl+4Sg/PlO:    nikîskisomânâna
+     kîskiswêw+V+TA+Ind+Prs+12Pl+4Sg/PlO:    kikîskisomânawa
+     kîskiswêw+V+TA+Ind+Prs+2Pl+4Sg/PlO:    kikîskisomâwâwa
+
+     kîskiswêw+V+TA+Ind+Prs+3Sg+1SgO:    nikîskisok # MIXED INV (sbj sg)
+     kîskiswêw+V+TA+Ind+Prs+3Sg+2SgO:    kikîskisok
+     kîskiswêw+V+TA+Ind+Prs+3Sg+1PlO:    nikîskisokonân
+     kîskiswêw+V+TA+Ind+Prs+3Sg+12PlO:    kikîskisokonaw
+     kîskiswêw+V+TA+Ind+Prs+3Sg+2PlO:    kikîskisokowâw
+     kîskiswêw+V+TA+Ind+Prs+3Pl+1SgO:    [nikîskisokowak, nikîskisokwak] # MIXED INV (sbj pl)
+     kîskiswêw+V+TA+Ind+Prs+3Pl+2SgO:    [kikîskisokowak, kikîskisokwak]
+     kîskiswêw+V+TA+Ind+Prs+3Pl+1PlO:    nikîskisokonânak
+     kîskiswêw+V+TA+Ind+Prs+3Pl+12PlO:    kikîskisokonawak
+     kîskiswêw+V+TA+Ind+Prs+3Pl+2PlO:    kikîskisokowâwak
+
+     kîskiswêw+V+TA+Ind+Prs+1Sg+4Sg/PlO:    nikîskisomâwa # MIXED INV (sbj obv.)
+     kîskiswêw+V+TA+Ind+Prs+2Sg+4Sg/PlO:    kikîskisomâwa
+     kîskiswêw+V+TA+Ind+Prs+1Pl+4Sg/PlO:    nikîskisomânâna
+     kîskiswêw+V+TA+Ind+Prs+12Pl+4Sg/PlO:    kikîskisomânawa
+     kîskiswêw+V+TA+Ind+Prs+2Pl+4Sg/PlO:    kikîskisomâwâwa
+
+     kîskiswêw+V+TA+Ind+Prs+3Sg+4Sg/PlO:    kîskiswêw # THIRD DIR
+     kîskiswêw+V+TA+Ind+Prs+3Pl+4Sg/PlO:    kîskiswêwak
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO:    kîskiswêyiwa
+     kîskiswêw+V+TA+Ind+Prs+3Sg+5Sg/PlO:    kîskisomêw
+     kîskiswêw+V+TA+Ind+Prs+3Pl+5Sg/PlO:    kîskisomêwak
+
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+3SgO:    [kîskisok, kîskisokow] # THIRD INV
+     kîskiswêw+V+TA+Ind+Prs+4Sg/Pl+3PlO:    [kîskisokowak, kîskisokwak]
+     kîskiswêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO:    kîskisokoyiwa
+
+
+## CONJUNCT ##
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+2Sg+1SgO:    ê-kîskisoyan # LOCAL DIR
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+2Sg+1PlO:    ê-kîskisoyâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+2Pl+1PlO:    ê-kîskisoyâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+2Pl+1SgO:    ê-kîskisoyêk
+
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+1Sg+2SgO:    ê-kîskisotân # LOCAL INVERSE
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+1Pl+2SgO:    ê-kîskisotâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+1Pl+2PlO:    ê-kîskisotâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+1Sg+2PlO:    ê-kîskisotakok
+
+
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+1Sg+3SgO:    ê-kîskiswak # MIXED DIR (obj sg)
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+2Sg+3SgO:    ê-kîskiswat
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+1Pl+3SgO:    ê-kîskiswâyâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+12Pl+3SgO:   ê-kîskiswâyahk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+2Pl+3SgO:    ê-kîskiswâyêk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+1Sg+3PlO:    ê-kîskiswakik # MIXED DIR (obj pl)
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+2Sg+3PlO:    ê-kîskiswacik
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+1Pl+3PlO:    ê-kîskiswâyâhkik
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+12Pl+3PlO:   ê-kîskiswâyahkok
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+2Pl+3PlO:    ê-kîskiswâyêkok
+
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+1Sg+4Sg/PlO:    ê-kîskisomak # MIXED DIR (obj. obv.)
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+2Sg+4Sg/PlO:    ê-kîskisomat
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+1Pl+4Sg/PlO:    ê-kîskisomâyâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+12Pl+4Sg/PlO:   ê-kîskisomâyahk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+2Pl+4Sg/PlO:    ê-kîskisomâyêk
+
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Sg+1SgO:    ê-kîskisot # MIXED INV (sbj sg)
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Sg+2SgO:    ê-kîskisosk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Sg+1PlO:    ê-kîskisokoyâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Sg+12PlO:   ê-kîskisokoyahk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Sg+2PlO:    ê-kîskisokoyêk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Pl+1SgO:    ê-kîskisocik # MIXED INV (sbj pl)
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Pl+2SgO:    ê-kîskisoskik
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Pl+1PlO:    ê-kîskisokoyâhkik
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Pl+12PlO:   ê-kîskisokoyahkok
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Pl+2PlO:    ê-kîskisokoyêkok
+
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+4Sg/Pl+1SgO:    ê-kîskisomit # MIXED INV (sbj obv.)
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+4Sg/Pl+2SgO:    ê-kîskisomisk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+4Sg/Pl+1PlO:    ê-kîskisokoyâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+4Sg/Pl+12PlO:   ê-kîskisokoyahk
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+4Sg/Pl+2PlO:    ê-kîskisokoyêk
+
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Sg+4Sg/PlO:    ê-kîskiswât # THIRD DIR
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Pl+4Sg/PlO:    ê-kîskiswâcik
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+4Sg/Pl+5Sg/PlO: ê-kîskiswâyit
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Sg+5Sg/PlO:    ê-kîskisomât
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+3Pl+5Sg/PlO:    ê-kîskisomâcik
+
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+4Sg/Pl+3SgO:    ê-kîskisokot # THIRD INV
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+4Sg/Pl+3PlO:    ê-kîskisokocik
+     PV/e+kîskiswêw+V+TA+Cnj+Prs+5Sg/Pl+4Sg/PlO: ê-kîskisokoyit
+
+## FUTURE CONDITIONAL ##
+     kîskiswêw+V+TA+Fut+Cond+2Sg+1SgO:    kîskisoyani # LOCAL DIR
+     kîskiswêw+V+TA+Fut+Cond+2Sg+1PlO:    kîskisoyâhki
+     kîskiswêw+V+TA+Fut+Cond+2Pl+1PlO:    kîskisoyâhki
+     kîskiswêw+V+TA+Fut+Cond+2Pl+1SgO:    kîskisoyêko
+
+     kîskiswêw+V+TA+Fut+Cond+1Sg+2SgO:    kîskisotâni # LOCAL INVERSE
+     kîskiswêw+V+TA+Fut+Cond+1Pl+2SgO:    kîskisotâhki
+     kîskiswêw+V+TA+Fut+Cond+1Pl+2PlO:    kîskisotâhki
+     kîskiswêw+V+TA+Fut+Cond+1Sg+2PlO:    kîskisotako
+
+
+     kîskiswêw+V+TA+Fut+Cond+1Sg+3SgO:    kîskiswaki # MIXED DIR (obj sg)
+     kîskiswêw+V+TA+Fut+Cond+2Sg+3SgO:    kîskiswaci
+     kîskiswêw+V+TA+Fut+Cond+1Pl+3SgO:    kîskiswâyâhki
+     kîskiswêw+V+TA+Fut+Cond+12Pl+3SgO:   [kîskiswâyahko, kîskiswâyahki]
+     kîskiswêw+V+TA+Fut+Cond+2Pl+3SgO:    kîskiswâyêko
+     kîskiswêw+V+TA+Fut+Cond+1Sg+3PlO:    kîskiswakwâwi # MIXED DIR (obj pl)
+     kîskiswêw+V+TA+Fut+Cond+2Sg+3PlO:    kîskiswatwâwi
+     kîskiswêw+V+TA+Fut+Cond+1Pl+3PlO:    kîskiswâyâhkwâwi
+     kîskiswêw+V+TA+Fut+Cond+12Pl+3PlO:   kîskiswâyahkwâwi
+     kîskiswêw+V+TA+Fut+Cond+2Pl+3PlO:    kîskiswâyêkwâwi
+
+     kîskiswêw+V+TA+Fut+Cond+1Sg+4Sg/PlO:    kîskisomaki # MIXED DIR (obj. obv.)
+     kîskiswêw+V+TA+Fut+Cond+2Sg+4Sg/PlO:    kîskisomaci
+     kîskiswêw+V+TA+Fut+Cond+1Pl+4Sg/PlO:    kîskisomâyâhki
+     kîskiswêw+V+TA+Fut+Cond+12Pl+4Sg/PlO:   [kîskisomâyahko, kîskisomâyahki]
+     kîskiswêw+V+TA+Fut+Cond+2Pl+4Sg/PlO:    kîskisomâyêko
+
+     kîskiswêw+V+TA+Fut+Cond+3Sg+1SgO:    kîskisoci # MIXED INV (sbj sg)
+     kîskiswêw+V+TA+Fut+Cond+3Sg+2SgO:    kîskisoski
+     kîskiswêw+V+TA+Fut+Cond+3Sg+1PlO:    kîskisokoyâhki
+     kîskiswêw+V+TA+Fut+Cond+3Sg+12PlO:   [kîskisokoyahko, kîskisokoyahki]
+     kîskiswêw+V+TA+Fut+Cond+3Sg+2PlO:    kîskisokoyêko
+     kîskiswêw+V+TA+Fut+Cond+3Pl+1SgO:    kîskisotwâwi # MIXED INV (sbj pl)
+     kîskiswêw+V+TA+Fut+Cond+3Pl+2SgO:    kîskisoskwâwi
+     kîskiswêw+V+TA+Fut+Cond+3Pl+1PlO:    kîskisokoyâhkwâwi
+     kîskiswêw+V+TA+Fut+Cond+3Pl+12PlO:   kîskisokoyahkwâwi
+     kîskiswêw+V+TA+Fut+Cond+3Pl+2PlO:    kîskisokoyêkwâwi
+
+     kîskiswêw+V+TA+Fut+Cond+4Sg/Pl+1SgO:    kîskisomici # MIXED INV (sbj obv.)
+     kîskiswêw+V+TA+Fut+Cond+4Sg/Pl+2SgO:    kîskisomiski
+     kîskiswêw+V+TA+Fut+Cond+4Sg/Pl+1PlO:    kîskisokoyâhki
+     kîskiswêw+V+TA+Fut+Cond+4Sg/Pl+12PlO:   [kîskisokoyahko, kîskisokoyahki]
+     kîskiswêw+V+TA+Fut+Cond+4Sg/Pl+2PlO:    kîskisokoyêko
+
+     kîskiswêw+V+TA+Fut+Cond+3Sg+4Sg/PlO:    kîskiswâci # THIRD DIR
+     kîskiswêw+V+TA+Fut+Cond+3Pl+4Sg/PlO:    kîskiswâtwâwi
+     kîskiswêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: kîskiswâyici
+     kîskiswêw+V+TA+Fut+Cond+3Sg+5Sg/PlO:    kîskisomâci
+     kîskiswêw+V+TA+Fut+Cond+3Pl+5Sg/PlO:    kîskisomâtwâwi
+
+     kîskiswêw+V+TA+Fut+Cond+4Sg/Pl+3SgO:    kîskisokoci # THIRD INV
+     kîskiswêw+V+TA+Fut+Cond+4Sg/Pl+3PlO:    kîskisokotwâwi
+     kîskiswêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: kîskisokoyici
+
+## IMPERATIVE ##
+#LOCAL IMMEDIATE#
+     kîskiswêw+V+TA+Imp+Imm+2Sg+1SgO:    kîskison
+     kîskiswêw+V+TA+Imp+Imm+2Sg+1PlO:    kîskisonân
+     kîskiswêw+V+TA+Imp+Imm+2Pl+1PlO:    kîskisonân
+     kîskiswêw+V+TA+Imp+Imm+2Pl+1SgO:    kîskisok
+#LOCAL DELAYED#
+     kîskiswêw+V+TA+Imp+Del+2Sg+1SgO:    kîskisôhkan
+     kîskiswêw+V+TA+Imp+Del+2Sg+1PlO:    kîskisôhkâhk
+     kîskiswêw+V+TA+Imp+Del+2Pl+1PlO:    kîskisôhkâhk
+     kîskiswêw+V+TA+Imp+Del+2Pl+1SgO:    kîskisôhkêk
+
+#MIXED IMMEDIATE#
+     kîskiswêw+V+TA+Imp+Imm+2Sg+3SgO:    kîskis # Obj. Sg.
+     kîskiswêw+V+TA+Imp+Imm+2Pl+3SgO:    kîskisohk
+     kîskiswêw+V+TA+Imp+Imm+12Pl+3SgO:    kîskiswâtân
+
+     kîskiswêw+V+TA+Imp+Imm+2Sg+3PlO:    kîskisok # Obj. Pl.
+     kîskiswêw+V+TA+Imp+Imm+2Pl+3PlO:    kîskisohkok
+     kîskiswêw+V+TA+Imp+Imm+12Pl+3PlO:    kîskiswâtânik
+#MIXED DELAYED#
+     kîskiswêw+V+TA+Imp+Del+2Sg+3SgO:    kîskiswâhkan # Obj. Sg.
+     kîskiswêw+V+TA+Imp+Del+2Pl+3SgO:    kîskiswâhkêk
+     kîskiswêw+V+TA+Imp+Del+12Pl+3SgO:    kîskiswâhkahk
+
+     kîskiswêw+V+TA+Imp+Del+2Sg+3PlO:    kîskiswâhkanik # Obj. Pl.
+     kîskiswêw+V+TA+Imp+Del+2Pl+3PlO:    kîskiswâhkêkok
+     kîskiswêw+V+TA+Imp+Del+12Pl+3PlO:    kîskiswâhkahkok
+
+
+###PRT###
+
+## INDEPENDENT ##
+     kîskiswêw+V+TA+Ind+Prt+2Sg+1SgO:    kikî-kîskison # LOCAL DIR
+     kîskiswêw+V+TA+Ind+Prt+2Sg+1PlO:    kikî-kîskisonân
+     kîskiswêw+V+TA+Ind+Prt+2Pl+1PlO:    kikî-kîskisonân
+     kîskiswêw+V+TA+Ind+Prt+2Pl+1SgO:    kikî-kîskisonâwâw
+
+     kîskiswêw+V+TA+Ind+Prt+1Sg+2SgO:    kikî-kîskisotin # LOCAL INVERSE
+     kîskiswêw+V+TA+Ind+Prt+1Pl+2SgO:    kikî-kîskisotinân
+     kîskiswêw+V+TA+Ind+Prt+1Pl+2PlO:    kikî-kîskisotinân
+     kîskiswêw+V+TA+Ind+Prt+1Sg+2PlO:    kikî-kîskisotinâwâw
+
+## CONJUNCT ##
+     PV/e+kîskiswêw+V+TA+Cnj+Prt+2Sg+1SgO:    ê-kî-kîskisoyan # LOCAL DIR
+     PV/e+kîskiswêw+V+TA+Cnj+Prt+2Sg+1PlO:    ê-kî-kîskisoyâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prt+2Pl+1PlO:    ê-kî-kîskisoyâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prt+2Pl+1SgO:    ê-kî-kîskisoyêk
+
+     PV/e+kîskiswêw+V+TA+Cnj+Prt+1Sg+2SgO:    ê-kî-kîskisotân # LOCAL INVERSE
+     PV/e+kîskiswêw+V+TA+Cnj+Prt+1Pl+2SgO:    ê-kî-kîskisotâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prt+1Pl+2PlO:    ê-kî-kîskisotâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Prt+1Sg+2PlO:    ê-kî-kîskisotakok
+
+
+###FUT+INT###
+
+## INDEPENDENT ##
+     kîskiswêw+V+TA+Ind+Fut+Int+2Sg+1SgO:    kiwî-kîskison # LOCAL DIR
+     kîskiswêw+V+TA+Ind+Fut+Int+2Sg+1PlO:    kiwî-kîskisonân
+     kîskiswêw+V+TA+Ind+Fut+Int+2Pl+1PlO:    kiwî-kîskisonân
+     kîskiswêw+V+TA+Ind+Fut+Int+2Pl+1SgO:    kiwî-kîskisonâwâw
+
+     kîskiswêw+V+TA+Ind+Fut+Int+1Sg+2SgO:    kiwî-kîskisotin # LOCAL INVERSE
+     kîskiswêw+V+TA+Ind+Fut+Int+1Pl+2SgO:    kiwî-kîskisotinân
+     kîskiswêw+V+TA+Ind+Fut+Int+1Pl+2PlO:    kiwî-kîskisotinân
+     kîskiswêw+V+TA+Ind+Fut+Int+1Sg+2PlO:    kiwî-kîskisotinâwâw
+
+## CONJUNCT ##
+     PV/e+kîskiswêw+V+TA+Cnj+Fut+Int+2Sg+1SgO:    ê-wî-kîskisoyan # LOCAL DIR
+     PV/e+kîskiswêw+V+TA+Cnj+Fut+Int+2Sg+1PlO:    ê-wî-kîskisoyâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Fut+Int+2Pl+1PlO:    ê-wî-kîskisoyâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Fut+Int+2Pl+1SgO:    ê-wî-kîskisoyêk
+
+     PV/e+kîskiswêw+V+TA+Cnj+Fut+Int+1Sg+2SgO:    ê-wî-kîskisotân # LOCAL INVERSE
+     PV/e+kîskiswêw+V+TA+Cnj+Fut+Int+1Pl+2SgO:    ê-wî-kîskisotâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Fut+Int+1Pl+2PlO:    ê-wî-kîskisotâhk
+     PV/e+kîskiswêw+V+TA+Cnj+Fut+Int+1Sg+2PlO:    ê-wî-kîskisotakok
+
+
+###FUT+DEF###
+
+## INDEPENDENT ##
+     kîskiswêw+V+TA+Ind+Fut+Def+2Sg+1SgO:    kika-kîskison # LOCAL DIR
+     kîskiswêw+V+TA+Ind+Fut+Def+2Sg+1PlO:    kika-kîskisonân
+     kîskiswêw+V+TA+Ind+Fut+Def+2Pl+1PlO:    kika-kîskisonân
+     kîskiswêw+V+TA+Ind+Fut+Def+2Pl+1SgO:    kika-kîskisonâwâw
+
+     kîskiswêw+V+TA+Ind+Fut+Def+1Sg+2SgO:    kika-kîskisotin # LOCAL INVERSE
+     kîskiswêw+V+TA+Ind+Fut+Def+1Pl+2SgO:    kika-kîskisotinân
+     kîskiswêw+V+TA+Ind+Fut+Def+1Pl+2PlO:    kika-kîskisotinân
+     kîskiswêw+V+TA+Ind+Fut+Def+1Sg+2PlO:    kika-kîskisotinâwâw

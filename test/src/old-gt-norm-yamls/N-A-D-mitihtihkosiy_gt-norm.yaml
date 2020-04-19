@@ -1,0 +1,66 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mitihtihkosiy - ok : # -m animate dependent noun, kidney	AEW NDA2
+     mitihtihkosiy+N+A+D+PxX+Sg: mitihtihkosiy
+     mitihtihkosiy+N+A+D+Px1Sg+Sg: nitihtihkosiy
+     mitihtihkosiy+N+A+D+Px2Sg+Sg: kitihtihkosiy
+     mitihtihkosiy+N+A+D+Px1Pl+Sg: nitihtihkosînân
+     mitihtihkosiy+N+A+D+Px12Pl+Sg: kitihtihkosînaw
+     mitihtihkosiy+N+A+D+Px2Pl+Sg: kitihtihkosîwâw
+     
+     mitihtihkosiy+N+A+D+PxX+Obv: mitihtihkosiya
+     mitihtihkosiy+N+A+D+Px1Sg+Obv: nitihtihkosiya
+     mitihtihkosiy+N+A+D+Px2Sg+Obv: kitihtihkosiya
+     mitihtihkosiy+N+A+D+Px1Pl+Obv: nitihtihkosînâna
+     mitihtihkosiy+N+A+D+Px12Pl+Obv: kitihtihkosînawa
+     mitihtihkosiy+N+A+D+Px2Pl+Obv: kitihtihkosîwâwa
+     
+     mitihtihkosiy+N+A+D+Px3Sg+Obv: otihtihkosiya
+     mitihtihkosiy+N+A+D+Px3Pl+Obv: otihtihkosîwâwa
+     mitihtihkosiy+N+A+D+Px4Sg/Pl+Obv: otihtihkosîyiwa
+
+
+     mitihtihkosiy+N+A+D+PxX+Pl: mitihtihkosiyak
+     mitihtihkosiy+N+A+D+Px1Sg+Pl: nitihtihkosiyak
+     mitihtihkosiy+N+A+D+Px2Sg+Pl: kitihtihkosiyak
+     mitihtihkosiy+N+A+D+Px1Pl+Pl: nitihtihkosînânak
+     mitihtihkosiy+N+A+D+Px12Pl+Pl: kitihtihkosînawak
+     mitihtihkosiy+N+A+D+Px2Pl+Pl: kitihtihkosîwâwak
+
+     mitihtihkosiy+N+A+D+PxX+Loc: mitihtihkosîhk
+     mitihtihkosiy+N+A+D+Px1Sg+Loc: nitihtihkosîhk
+     mitihtihkosiy+N+A+D+Px2Sg+Loc: kitihtihkosîhk
+     mitihtihkosiy+N+A+D+Px1Pl+Loc: nitihtihkosînâhk
+     mitihtihkosiy+N+A+D+Px12Pl+Loc: kitihtihkosînâhk
+     mitihtihkosiy+N+A+D+Px2Pl+Loc: kitihtihkosîwâhk
+
+     mitihtihkosiy+N+A+D+Px3Sg+Loc: otihtihkosîhk
+     mitihtihkosiy+N+A+D+Px3Pl+Loc: otihtihkosîwâhk
+     mitihtihkosiy+N+A+D+Px4Sg/Pl+Loc: otihtihkosîyihk
+
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+PxX+Sg:      [micihcihkosîs,     micihcihkosîsis]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px1Sg+Sg:    [nicihcihkosîs,     nicihcihkosîsis]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px2Sg+Sg:    [kicihcihkosîs,     kicihcihkosîsis]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px1Pl+Sg:    [nicihcihkosîsinân, nicihcihkosîsisinân]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px12Pl+Sg:   [kicihcihkosîsinaw, kicihcihkosîsisinaw]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px2Pl+Sg:    [kicihcihkosîsiwâw, kicihcihkosîsisiwâw]
+
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px3Sg+Obv:    [ocihcihkosîsa,     ocihcihkosîsisa]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px3Pl+Obv:    [ocihcihkosîsiwâwa, ocihcihkosîsisiwâwa]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px4Sg/Pl+Obv: [ocihcihkosîsiyiwa, ocihcihkosîsisiyiwa]
+
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+PxX+Pl:      [micihcihkosîsak,     micihcihkosîsisak]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px1Sg+Pl:    [nicihcihkosîsak,     nicihcihkosîsisak]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px2Sg+Pl:    [kicihcihkosîsak,     kicihcihkosîsisak]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px1Pl+Pl:    [nicihcihkosîsinânak, nicihcihkosîsisinânak]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px12Pl+Pl:   [kicihcihkosîsinawak, kicihcihkosîsisinawak]
+     mitihtihkosiy+N+A+D+Der/Dim+N+A+D+Px2Pl+Pl:    [kicihcihkosîsiwâwak, kicihcihkosîsisiwâwak]

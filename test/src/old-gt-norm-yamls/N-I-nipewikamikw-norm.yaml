@@ -1,0 +1,48 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - nipêwikamik - ok : # -m inanimate noun, Bedroom AEW NI3
+     nipêwikamik+N+I+Sg: nipêwikamik
+     nipêwikamik+N+I+Px1Sg+Sg: ninipêwikamik
+     nipêwikamik+N+I+Px2Sg+Sg: kinipêwikamik
+     nipêwikamik+N+I+Px1Pl+Sg: ninipêwikamikonân
+     nipêwikamik+N+I+Px12Pl+Sg: kinipêwikamikonaw
+     nipêwikamik+N+I+Px2Pl+Sg: kinipêwikamikowâw
+     nipêwikamik+N+I+Px3Sg+Sg: onipêwikamik
+     nipêwikamik+N+I+Px3Pl+Sg: onipêwikamikowâw
+     nipêwikamik+N+I+Px4Pl+Sg: onipêwikamikoyiw
+			  
+     nipêwikamik+N+I: nipêwikamikwa
+     nipêwikamik+N+I+Px1Sg+Pl: ninipêwikamikwa
+     nipêwikamik+N+I+Px2Sg+Pl: kinipêwikamikwa
+     nipêwikamik+N+I+Px1Pl+Pl: ninipêwikamikonâna
+     nipêwikamik+N+I+Px12Pl+Pl: kinipêwikamikonawa
+     nipêwikamik+N+I+Px2Pl+Pl: kinipêwikamikowâwa
+     nipêwikamik+N+I+Px3Sg+Pl: onipêwikamikwa
+     nipêwikamik+N+I+Px3Pl+Pl: onipêwikamikowâwa
+     nipêwikamik+N+I+Px4Pl+Pl: onipêwikamikoyiwa
+			  
+     nipêwikamik+N+I+Loc: nipêwikamikohk
+     nipêwikamik+N+I+1Sg+Loc: ninipêwikamikohk
+     nipêwikamik+N+I+2Sg+Loc: kinipêwikamikohk
+     nipêwikamik+N+I+1Pl+Loc: ninipêwikamikonâhk
+     nipêwikamik+N+I+12Pl+Loc: kinipêwikamikonâhk
+     nipêwikamik+N+I+2Pl+Loc: kinipêwikamikowâhk
+     nipêwikamik+N+I+3Sg+Loc: onipêwikamikohk
+     nipêwikamik+N+I+3Pl+Loc: onipêwikamikowâhk
+     nipêwikamik+N+I+4Pl+Loc: onipêwikamikoyihk
+			  
+     nipêwikamik+N+I+Der/Dim+N+I+N+Sg: [nipêwikamikos, nipêwikamikosis]
+     nipêwikamik+N+I+Der/Dim+N+I+N+Pl: [nipêwikamikosa, nipêwikamikosisa]
+     nipêwikamik+N+I+Der/Dim+N+I+N+Loc+Sg: [nipêwikamikosihk, nipêwikamikosisihk]
+     nipêwikamik+N+I+Der/Dim+N+I+N+Px1Sg+Sg: [ninipêwikamikos, ninipêwikamikosis]
+     nipêwikamik+N+I+Der/Dim+N+I+N+Px1Sg+Pl: [ninipêwikamikosa, ninipêwikamikosisa]
+     nipêwikamik+N+I+Der/Dim+N+I+N+Px1Sg+Loc: [ninipêwikamikosihk, ninipêwikamikosisihk]

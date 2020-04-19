@@ -1,0 +1,118 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - kîsihtâw - ok : # VTIw 
+
+  
+     kîsihtâw+V+TI+Ind+Prs+1Sg:    nikîsihtân # INDEPENDENT
+     kîsihtâw+V+TI+Ind+Prs+2Sg:    kikîsihtân
+     kîsihtâw+V+TI+Ind+Prs+3Sg:    kîsihtâw
+     kîsihtâw+V+TI+Ind+Prs+4Sg/Pl: kîsihtâyiwa
+     kîsihtâw+V+TI+Ind+Prs+1Pl:    nikîsihtânân
+     kîsihtâw+V+TI+Ind+Prs+12Pl:   [kikîsihtânaw, kikîsihtânânaw]
+     kîsihtâw+V+TI+Ind+Prs+2Pl:    kikîsihtânâwâw
+     kîsihtâw+V+TI+Ind+Prs+3Pl:    kîsihtâwak
+
+     PV/e+kîsihtâw+V+TI+Cnj+Prs+1Sg:    ê-kîsihtâyân # CONJUNCT
+     PV/e+kîsihtâw+V+TI+Cnj+Prs+2Sg:    ê-kîsihtâyan
+     PV/e+kîsihtâw+V+TI+Cnj+Prs+3Sg:    ê-kîsihtât
+     PV/e+kîsihtâw+V+TI+Cnj+Prs+4Sg/Pl: ê-kîsihtâyit
+     PV/e+kîsihtâw+V+TI+Cnj+Prs+1Pl:    ê-kîsihtâyâhk
+     PV/e+kîsihtâw+V+TI+Cnj+Prs+12Pl:   ê-kîsihtâyahk
+     PV/e+kîsihtâw+V+TI+Cnj+Prs+2Pl:    ê-kîsihtâyêk
+     PV/e+kîsihtâw+V+TI+Cnj+Prs+3Pl:    ê-kîsihtâcik
+
+     kîsihtâw+V+TI+Ind+Prt+1Sg:    nikî-kîsihtân # PRT-INDEPENDENT
+     kîsihtâw+V+TI+Ind+Prt+2Sg:    kikî-kîsihtân
+     kîsihtâw+V+TI+Ind+Prt+3Sg:    kî-kîsihtâw
+     kîsihtâw+V+TI+Ind+Prt+4Sg/Pl: kî-kîsihtâyiwa
+     kîsihtâw+V+TI+Ind+Prt+1Pl:    nikî-kîsihtânân
+     kîsihtâw+V+TI+Ind+Prt+12Pl:   [kikî-kîsihtânaw, kikî-kîsihtânânaw]
+     kîsihtâw+V+TI+Ind+Prt+2Pl:    kikî-kîsihtânâwâw
+     kîsihtâw+V+TI+Ind+Prt+3Pl:    kî-kîsihtâwak
+
+     PV/e+kîsihtâw+V+TI+Cnj+Prt+1Sg:    ê-kî-kîsihtâyân # PRT-CONJUNCT
+     PV/e+kîsihtâw+V+TI+Cnj+Prt+2Sg:    ê-kî-kîsihtâyan
+     PV/e+kîsihtâw+V+TI+Cnj+Prt+3Sg:    ê-kî-kîsihtât
+     PV/e+kîsihtâw+V+TI+Cnj+Prt+4Sg/Pl: ê-kî-kîsihtâyit
+     PV/e+kîsihtâw+V+TI+Cnj+Prt+1Pl:    ê-kî-kîsihtâyâhk
+     PV/e+kîsihtâw+V+TI+Cnj+Prt+12Pl:   ê-kî-kîsihtâyahk
+     PV/e+kîsihtâw+V+TI+Cnj+Prt+2Pl:    ê-kî-kîsihtâyêk
+     PV/e+kîsihtâw+V+TI+Cnj+Prt+3Pl:    ê-kî-kîsihtâcik
+
+
+     kîsihtâw+V+TI+Ind+Fut+Int+1Sg:    niwî-kîsihtân # FUT+INT-INDEPENDENT
+     kîsihtâw+V+TI+Ind+Fut+Int+2Sg:    kiwî-kîsihtân
+     kîsihtâw+V+TI+Ind+Fut+Int+3Sg:    wî-kîsihtâw
+     kîsihtâw+V+TI+Ind+Fut+Int+4Sg/Pl: wî-kîsihtâyiwa
+     kîsihtâw+V+TI+Ind+Fut+Int+1Pl:    niwî-kîsihtânân
+     kîsihtâw+V+TI+Ind+Fut+Int+12Pl:   [kiwî-kîsihtânaw, kiwî-kîsihtânânaw]
+     kîsihtâw+V+TI+Ind+Fut+Int+2Pl:    kiwî-kîsihtânâwâw
+     kîsihtâw+V+TI+Ind+Fut+Int+3Pl:    wî-kîsihtâwak
+
+     PV/e+kîsihtâw+V+TI+Cnj+Fut+Int+1Sg:    ê-wî-kîsihtâyân # FUT+INT-CONJUNCT
+     PV/e+kîsihtâw+V+TI+Cnj+Fut+Int+2Sg:    ê-wî-kîsihtâyan
+     PV/e+kîsihtâw+V+TI+Cnj+Fut+Int+3Sg:    ê-wî-kîsihtât
+     PV/e+kîsihtâw+V+TI+Cnj+Fut+Int+4Sg/Pl: ê-wî-kîsihtâyit
+     PV/e+kîsihtâw+V+TI+Cnj+Fut+Int+1Pl:    ê-wî-kîsihtâyâhk
+     PV/e+kîsihtâw+V+TI+Cnj+Fut+Int+12Pl:   ê-wî-kîsihtâyahk
+     PV/e+kîsihtâw+V+TI+Cnj+Fut+Int+2Pl:    ê-wî-kîsihtâyêk
+     PV/e+kîsihtâw+V+TI+Cnj+Fut+Int+3Pl:    ê-wî-kîsihtâcik
+
+     kîsihtâw+V+TI+Ind+Fut+Def+1Sg:    nika-kîsihtân # FUT+DEF-INDEPENDENT
+     kîsihtâw+V+TI+Ind+Fut+Def+2Sg:    kika-kîsihtân
+     kîsihtâw+V+TI+Ind+Fut+Def+3Sg:    ka-kîsihtâw
+     kîsihtâw+V+TI+Ind+Fut+Def+4Sg/Pl: ka-kîsihtâyiwa
+     kîsihtâw+V+TI+Ind+Fut+Def+1Pl:    nika-kîsihtânân
+     kîsihtâw+V+TI+Ind+Fut+Def+12Pl:   [kika-kîsihtânaw, kika-kîsihtânânaw]
+     kîsihtâw+V+TI+Ind+Fut+Def+2Pl:    kika-kîsihtânâwâw
+     kîsihtâw+V+TI+Ind+Fut+Def+3Pl:    ka-kîsihtâwak
+     
+     kîsihtâw+V+TI+Fut+Cond+1Sg:    kîsihtâyâni
+     kîsihtâw+V+TI+Fut+Cond+2Sg:    kîsihtâyani
+     kîsihtâw+V+TI+Fut+Cond+3Sg:    kîsihtâci
+     kîsihtâw+V+TI+Fut+Cond+4Sg/Pl: kîsihtâyici
+     kîsihtâw+V+TI+Fut+Cond+1Pl:    kîsihtâyâhki
+     kîsihtâw+V+TI+Fut+Cond+12Pl:   [kîsihtâyahki, kîsihtâyahko]
+     kîsihtâw+V+TI+Fut+Cond+2Pl:    kîsihtâyêko
+     kîsihtâw+V+TI+Fut+Cond+3Pl:    kîsihtâtwâwi
+
+     kîsihtâw+V+TI+Imp+Imm+2Sg:  kîsihtâ
+     kîsihtâw+V+TI+Imp+Imm+12Pl: kîsihtâtân
+     kîsihtâw+V+TI+Imp+Imm+2Pl:  kîsihtâk
+
+
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Sg+3SgO: [niwî-wîci-kîsihtâmâw] # com SET I
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Sg+3SgO: [kiwî-wîci-kîsihtâmâw]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Pl+3SgO: [niwî-wîci-kîsihtâmânân]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+12Pl+3SgO: [kiwî-wîci-kîsihtâmânaw]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Pl+3SgO: [kiwî-wîci-kîsihtâmâwâw]
+     
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Sg+3PlO: [niwî-wîci-kîsihtâmâwak] # com SET I-Pl
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Sg+3PlO: [kiwî-wîci-kîsihtâmâwak]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Pl+3PlO: [niwî-wîci-kîsihtâmânânak]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+12Pl+3PlO: [kiwî-wîci-kîsihtâmânawak]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Pl+3PlO: [kiwî-wîci-kîsihtâmâwâwak]
+
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Sg+1SgO: [kiwî-wîci-kîsihtâmin] # com SET II
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Sg+1PlO: [kiwî-wîci-kîsihtâminân]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Pl+1SgO: [kiwî-wîci-kîsihtâminâwâw]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Pl+1PlO: [kiwî-wîci-kîsihtâminân]
+
+
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+3Sg+4Sg/PlO: [wî-wîci-kîsihtâmêw] # com SET III
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+3Pl+4Sg/PlO: [wî-wîci-kîsihtâmêwak]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+4Sg/Pl+5Sg/PlO: [wî-wîci-kîsihtâmêyiwa]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+3Sg+5Sg/PlO: [wî-wîci-kîsihtâmimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+3Pl+5Sg/PlO: [wî-wîci-kîsihtâmimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Sg+4Sg/PlO: [niwî-wîci-kîsihtâmimâwa] # com SET IV
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Sg+4Sg/PlO: [kiwî-wîci-kîsihtâmimâwa]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+1Pl+4Sg/PlO: [niwî-wîci-kîsihtâmimânâna]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+12Pl+4Sg/PlO: [kiwî-wîci-kîsihtâmimânawa]
+     kîsihtâw+V+TI+Der/Com+V+TA+Ind+Fut+Int+2Pl+4Sg/PlO: [kiwî-wîci-kîsihtâmimâwâwa]
+

@@ -1,0 +1,271 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - itêw - ok : # VTAi (VTA5 AEW) 
+
+###PRS###
+## INDEPENDENT ##
+     itêw+V+TA+Ind+Prs+2Sg+1SgO:    kitisin # LOCAL DIR
+     itêw+V+TA+Ind+Prs+2Sg+1PlO:    kitisinân
+     itêw+V+TA+Ind+Prs+2Pl+1PlO:    kitisinân
+     itêw+V+TA+Ind+Prs+2Pl+1SgO:    kitisinâwâw
+
+     itêw+V+TA+Ind+Prs+1Sg+2SgO:    kitititin # LOCAL INVERSE
+     itêw+V+TA+Ind+Prs+1Pl+2SgO:    kitititinân
+     itêw+V+TA+Ind+Prs+1Pl+2PlO:    kitititinân
+     itêw+V+TA+Ind+Prs+1Sg+2PlO:    kitititinâwâw
+
+
+     itêw+V+TA+Ind+Prs+1Sg+3SgO:    nititâw # MIXED DIR (obj sg)
+     itêw+V+TA+Ind+Prs+2Sg+3SgO:    kititâw
+     itêw+V+TA+Ind+Prs+1Pl+3SgO:    nititânân
+     itêw+V+TA+Ind+Prs+12Pl+3SgO:    kititânaw
+     itêw+V+TA+Ind+Prs+2Pl+3SgO:    kititâwâw
+     itêw+V+TA+Ind+Prs+1Sg+3PlO:    nititâwak # MIXED DIR (obj pl)
+     itêw+V+TA+Ind+Prs+2Sg+3PlO:    kititâwak
+     itêw+V+TA+Ind+Prs+1Pl+3PlO:    nititânânak
+     itêw+V+TA+Ind+Prs+12Pl+3PlO:    kititânawak
+     itêw+V+TA+Ind+Prs+2Pl+3PlO:    kititâwâwak
+
+     itêw+V+TA+Ind+Prs+1Sg+4Sg/PlO:    nititimâwa # MIXED DIR (obj. obv.)
+     itêw+V+TA+Ind+Prs+2Sg+4Sg/PlO:    kititimâwa
+     itêw+V+TA+Ind+Prs+1Pl+4Sg/PlO:    nititimânâna
+     itêw+V+TA+Ind+Prs+12Pl+4Sg/PlO:   kititimânawa
+     itêw+V+TA+Ind+Prs+2Pl+4Sg/PlO:    kititimâwâwa
+
+     itêw+V+TA+Ind+Prs+3Sg+1SgO:    nititik # MIXED INV (sbj sg)
+     itêw+V+TA+Ind+Prs+3Sg+2SgO:    kititik
+     itêw+V+TA+Ind+Prs+3Sg+1PlO:    nititikonân
+     itêw+V+TA+Ind+Prs+3Sg+12PlO:   kititikonaw
+     itêw+V+TA+Ind+Prs+3Sg+2PlO:    kititikowâw
+     itêw+V+TA+Ind+Prs+3Pl+1SgO:    [nititikowak, nititikwak] # MIXED INV (sbj pl)
+     itêw+V+TA+Ind+Prs+3Pl+2SgO:    [kititikowak, kititikwak]
+     itêw+V+TA+Ind+Prs+3Pl+1PlO:    nititikonânak
+     itêw+V+TA+Ind+Prs+3Pl+12PlO:   kititikonawak
+     itêw+V+TA+Ind+Prs+3Pl+2PlO:    kititikowâwak
+
+     itêw+V+TA+Ind+Prs+1Sg+4Sg/PlO:    nititimâwa # MIXED INV (sbj obv.)
+     itêw+V+TA+Ind+Prs+2Sg+4Sg/PlO:    kititimâwa
+     itêw+V+TA+Ind+Prs+1Pl+4Sg/PlO:    nititimânâna
+     itêw+V+TA+Ind+Prs+12Pl+4Sg/PlO:   kititimânawa
+     itêw+V+TA+Ind+Prs+2Pl+4Sg/PlO:    kititimâwâwa
+
+     itêw+V+TA+Ind+Prs+3Sg+4Sg/PlO:    itêw # THIRD DIR
+     itêw+V+TA+Ind+Prs+3Pl+4Sg/PlO:    itêwak
+     itêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO:    itêyiwa
+     itêw+V+TA+Ind+Prs+3Sg+5Sg/PlO:    itimêw
+     itêw+V+TA+Ind+Prs+3Pl+5Sg/PlO:    itimêwak
+
+     itêw+V+TA+Ind+Prs+4Sg/Pl+3SgO:    [itik, itikow] # THIRD INV
+     itêw+V+TA+Ind+Prs+4Sg/Pl+3PlO:    [itikowak, itikwak]
+     itêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO:    itikoyiwa
+
+
+## CONJUNCT ##
+     PV/e+itêw+V+TA+Cnj+Prs+2Sg+1SgO:    ê-isiyan # LOCAL DIR
+     PV/e+itêw+V+TA+Cnj+Prs+2Sg+1PlO:    ê-isiyâhk
+     PV/e+itêw+V+TA+Cnj+Prs+2Pl+1PlO:    ê-isiyâhk
+     PV/e+itêw+V+TA+Cnj+Prs+2Pl+1SgO:    ê-isiyêk
+
+     PV/e+itêw+V+TA+Cnj+Prs+1Sg+2SgO:    ê-ititân # LOCAL INVERSE
+     PV/e+itêw+V+TA+Cnj+Prs+1Pl+2SgO:    ê-ititâhk
+     PV/e+itêw+V+TA+Cnj+Prs+1Pl+2PlO:    ê-ititâhk
+     PV/e+itêw+V+TA+Cnj+Prs+1Sg+2PlO:    ê-ititakok
+
+
+     PV/e+itêw+V+TA+Cnj+Prs+1Sg+3SgO:    ê-itak # MIXED DIR (obj sg)
+     PV/e+itêw+V+TA+Cnj+Prs+2Sg+3SgO:    ê-itat
+     PV/e+itêw+V+TA+Cnj+Prs+1Pl+3SgO:    ê-itâyâhk
+     PV/e+itêw+V+TA+Cnj+Prs+12Pl+3SgO:   ê-itâyahk
+     PV/e+itêw+V+TA+Cnj+Prs+2Pl+3SgO:    ê-itâyêk
+     PV/e+itêw+V+TA+Cnj+Prs+1Sg+3PlO:    ê-itakik # MIXED DIR (obj pl)
+     PV/e+itêw+V+TA+Cnj+Prs+2Sg+3PlO:    ê-itacik
+     PV/e+itêw+V+TA+Cnj+Prs+1Pl+3PlO:    ê-itâyâhkik
+     PV/e+itêw+V+TA+Cnj+Prs+12Pl+3PlO:   ê-itâyahkok
+     PV/e+itêw+V+TA+Cnj+Prs+2Pl+3PlO:    ê-itâyêkok
+
+     PV/e+itêw+V+TA+Cnj+Prs+1Sg+4Sg/PlO:    ê-itimak # MIXED DIR (obj. obv.)
+     PV/e+itêw+V+TA+Cnj+Prs+2Sg+4Sg/PlO:    ê-itimat
+     PV/e+itêw+V+TA+Cnj+Prs+1Pl+4Sg/PlO:    ê-itimâyâhk
+     PV/e+itêw+V+TA+Cnj+Prs+12Pl+4Sg/PlO:   ê-itimâyahk
+     PV/e+itêw+V+TA+Cnj+Prs+2Pl+4Sg/PlO:    ê-itimâyêk
+
+     PV/e+itêw+V+TA+Cnj+Prs+3Sg+1SgO:    ê-isit # MIXED INV (sbj sg)
+     PV/e+itêw+V+TA+Cnj+Prs+3Sg+2SgO:    ê-itisk
+     PV/e+itêw+V+TA+Cnj+Prs+3Sg+1PlO:    ê-itikoyâhk
+     PV/e+itêw+V+TA+Cnj+Prs+3Sg+12PlO:   ê-itikoyahk
+     PV/e+itêw+V+TA+Cnj+Prs+3Sg+2PlO:    ê-itikoyêk
+     PV/e+itêw+V+TA+Cnj+Prs+3Pl+1SgO:    ê-isicik # MIXED INV (sbj pl)
+     PV/e+itêw+V+TA+Cnj+Prs+3Pl+2SgO:    ê-itiskik
+     PV/e+itêw+V+TA+Cnj+Prs+3Pl+1PlO:    ê-itikoyâhkik
+     PV/e+itêw+V+TA+Cnj+Prs+3Pl+12PlO:   ê-itikoyahkok
+     PV/e+itêw+V+TA+Cnj+Prs+3Pl+2PlO:    ê-itikoyêkok
+
+     PV/e+itêw+V+TA+Cnj+Prs+4Sg/Pl+1SgO:    ê-itimit # MIXED INV (sbj obv.)
+     PV/e+itêw+V+TA+Cnj+Prs+4Sg/Pl+2SgO:    ê-itimisk
+     PV/e+itêw+V+TA+Cnj+Prs+4Sg/Pl+1PlO:    ê-itikoyâhk
+     PV/e+itêw+V+TA+Cnj+Prs+4Sg/Pl+12PlO:   ê-itikoyahk
+     PV/e+itêw+V+TA+Cnj+Prs+4Sg/Pl+2PlO:    ê-itikoyêk
+
+     PV/e+itêw+V+TA+Cnj+Prs+3Sg+4Sg/PlO:    ê-itât # THIRD DIR
+     PV/e+itêw+V+TA+Cnj+Prs+3Pl+4Sg/PlO:    ê-itâcik
+     PV/e+itêw+V+TA+Cnj+Prs+4Sg/Pl+5Sg/PlO: ê-itâyit
+     PV/e+itêw+V+TA+Cnj+Prs+3Sg+5Sg/PlO:    ê-itimât
+     PV/e+itêw+V+TA+Cnj+Prs+3Pl+5Sg/PlO:    ê-itimâcik
+
+     PV/e+itêw+V+TA+Cnj+Prs+4Sg/Pl+3SgO:    ê-itikot # THIRD INV
+     PV/e+itêw+V+TA+Cnj+Prs+4Sg/Pl+3PlO:    ê-itikocik
+     PV/e+itêw+V+TA+Cnj+Prs+5Sg/Pl+4Sg/PlO: ê-itikoyit
+
+## FUTURE CONDITIONAL ##
+     itêw+V+TA+Fut+Cond+2Sg+1SgO:    isiyani # LOCAL DIR
+     itêw+V+TA+Fut+Cond+2Sg+1PlO:    isiyâhki
+     itêw+V+TA+Fut+Cond+2Pl+1PlO:    isiyâhki
+     itêw+V+TA+Fut+Cond+2Pl+1SgO:    isiyêko
+
+     itêw+V+TA+Fut+Cond+1Sg+2SgO:    ititâni # LOCAL INVERSE
+     itêw+V+TA+Fut+Cond+1Pl+2SgO:    ititâhki
+     itêw+V+TA+Fut+Cond+1Pl+2PlO:    ititâhki
+     itêw+V+TA+Fut+Cond+1Sg+2PlO:    ititako
+
+
+     itêw+V+TA+Fut+Cond+1Sg+3SgO:    itaki # MIXED DIR (obj sg)
+     itêw+V+TA+Fut+Cond+2Sg+3SgO:    itaci
+     itêw+V+TA+Fut+Cond+1Pl+3SgO:    itâyâhki
+     itêw+V+TA+Fut+Cond+12Pl+3SgO:   [itâyahko, itâyahki]
+     itêw+V+TA+Fut+Cond+2Pl+3SgO:    itâyêko
+     itêw+V+TA+Fut+Cond+1Sg+3PlO:    itakwâwi # MIXED DIR (obj pl)
+     itêw+V+TA+Fut+Cond+2Sg+3PlO:    itatwâwi
+     itêw+V+TA+Fut+Cond+1Pl+3PlO:    itâyâhkwâwi
+     itêw+V+TA+Fut+Cond+12Pl+3PlO:   itâyahkwâwi
+     itêw+V+TA+Fut+Cond+2Pl+3PlO:    itâyêkwâwi
+
+     itêw+V+TA+Fut+Cond+1Sg+4Sg/PlO:    itimaki # MIXED DIR (obj. obv.)
+     itêw+V+TA+Fut+Cond+2Sg+4Sg/PlO:    itimaci
+     itêw+V+TA+Fut+Cond+1Pl+4Sg/PlO:    itimâyâhki
+     itêw+V+TA+Fut+Cond+12Pl+4Sg/PlO:   [itimâyahko, itimâyahki]
+     itêw+V+TA+Fut+Cond+2Pl+4Sg/PlO:    itimâyêko
+
+     itêw+V+TA+Fut+Cond+3Sg+1SgO:    isici # MIXED INV (sbj sg)
+     itêw+V+TA+Fut+Cond+3Sg+2SgO:    itiski
+     itêw+V+TA+Fut+Cond+3Sg+1PlO:    itikoyâhki
+     itêw+V+TA+Fut+Cond+3Sg+12PlO:   [itikoyahko, itikoyahki]
+     itêw+V+TA+Fut+Cond+3Sg+2PlO:    itikoyêko
+     itêw+V+TA+Fut+Cond+3Pl+1SgO:    isitwâwi # MIXED INV (sbj pl)
+     itêw+V+TA+Fut+Cond+3Pl+2SgO:    itiskwâwi
+     itêw+V+TA+Fut+Cond+3Pl+1PlO:    itikoyâhkwâwi
+     itêw+V+TA+Fut+Cond+3Pl+12PlO:   itikoyahkwâwi
+     itêw+V+TA+Fut+Cond+3Pl+2PlO:    itikoyêkwâwi
+
+     itêw+V+TA+Fut+Cond+4Sg/Pl+1SgO:    itimici # MIXED INV (sbj obv.)
+     itêw+V+TA+Fut+Cond+4Sg/Pl+2SgO:    itimiski
+     itêw+V+TA+Fut+Cond+4Sg/Pl+1PlO:    itikoyâhki
+     itêw+V+TA+Fut+Cond+4Sg/Pl+12PlO:   [itikoyahko, itikoyahki]
+     itêw+V+TA+Fut+Cond+4Sg/Pl+2PlO:    itikoyêko
+
+     itêw+V+TA+Fut+Cond+3Sg+4Sg/PlO:    itâci # THIRD DIR
+     itêw+V+TA+Fut+Cond+3Pl+4Sg/PlO:    itâtwâwi
+     itêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: itâyici
+     itêw+V+TA+Fut+Cond+3Sg+5Sg/PlO:    itimâci
+     itêw+V+TA+Fut+Cond+3Pl+5Sg/PlO:    itimâtwâwi
+
+     itêw+V+TA+Fut+Cond+4Sg/Pl+3SgO:    itikoci # THIRD INV
+     itêw+V+TA+Fut+Cond+4Sg/Pl+3PlO:    itikotwâwi
+     itêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: itikoyici
+
+## IMPERATIVE ##
+#LOCAL IMMEDIATE#
+     itêw+V+TA+Imp+Imm+2Sg+1SgO:    isin
+     itêw+V+TA+Imp+Imm+2Sg+1PlO:    isinân
+     itêw+V+TA+Imp+Imm+2Pl+1PlO:    isinân
+     itêw+V+TA+Imp+Imm+2Pl+1SgO:    isik
+#LOCAL DELAYED#
+     itêw+V+TA+Imp+Del+2Sg+1SgO:    isîhkan
+     itêw+V+TA+Imp+Del+2Sg+1PlO:    isîhkâhk
+     itêw+V+TA+Imp+Del+2Pl+1PlO:    isîhkâhk
+     itêw+V+TA+Imp+Del+2Pl+1SgO:    isîhkêk
+
+#MIXED IMMEDIATE#
+     itêw+V+TA+Imp+Imm+2Sg+3SgO:    isi # Obj. Sg.
+     itêw+V+TA+Imp+Imm+2Pl+3SgO:    itihk
+     itêw+V+TA+Imp+Imm+12Pl+3SgO:    itâtân
+
+     itêw+V+TA+Imp+Imm+2Sg+3PlO:    isik # Obj. Pl.
+     itêw+V+TA+Imp+Imm+2Pl+3PlO:    itihkok
+     itêw+V+TA+Imp+Imm+12Pl+3PlO:    itâtânik
+#MIXED DELAYED#
+     itêw+V+TA+Imp+Del+2Sg+3SgO:    itâhkan # Obj. Sg.
+     itêw+V+TA+Imp+Del+2Pl+3SgO:    itâhkêk
+     itêw+V+TA+Imp+Del+12Pl+3SgO:    itâhkahk
+
+     itêw+V+TA+Imp+Del+2Sg+3PlO:    itâhkanik # Obj. Pl.
+     itêw+V+TA+Imp+Del+2Pl+3PlO:    itâhkêkok
+     itêw+V+TA+Imp+Del+12Pl+3PlO:    itâhkahkok
+
+
+###PRT###
+
+## INDEPENDENT ##
+     itêw+V+TA+Ind+Prt+2Sg+1SgO:    kikî-isin # LOCAL DIR
+     itêw+V+TA+Ind+Prt+2Sg+1PlO:    kikî-isinân
+     itêw+V+TA+Ind+Prt+2Pl+1PlO:    kikî-isinân
+     itêw+V+TA+Ind+Prt+2Pl+1SgO:    kikî-isinâwâw
+
+     itêw+V+TA+Ind+Prt+1Sg+2SgO:    kikî-ititin # LOCAL INVERSE
+     itêw+V+TA+Ind+Prt+1Pl+2SgO:    kikî-ititinân
+     itêw+V+TA+Ind+Prt+1Pl+2PlO:    kikî-ititinân
+     itêw+V+TA+Ind+Prt+1Sg+2PlO:    kikî-ititinâwâw
+
+## CONJUNCT ##
+     PV/e+itêw+V+TA+Cnj+Prt+2Sg+1SgO:    ê-kî-isiyan # LOCAL DIR
+     PV/e+itêw+V+TA+Cnj+Prt+2Sg+1PlO:    ê-kî-isiyâhk
+     PV/e+itêw+V+TA+Cnj+Prt+2Pl+1PlO:    ê-kî-isiyâhk
+     PV/e+itêw+V+TA+Cnj+Prt+2Pl+1SgO:    ê-kî-isiyêk
+
+     PV/e+itêw+V+TA+Cnj+Prt+1Sg+2SgO:    ê-kî-ititân # LOCAL INVERSE
+     PV/e+itêw+V+TA+Cnj+Prt+1Pl+2SgO:    ê-kî-ititâhk
+     PV/e+itêw+V+TA+Cnj+Prt+1Pl+2PlO:    ê-kî-ititâhk
+     PV/e+itêw+V+TA+Cnj+Prt+1Sg+2PlO:    ê-kî-ititakok
+
+
+###FUT+INT###
+
+## INDEPENDENT ##
+     itêw+V+TA+Ind+Fut+Int+2Sg+1SgO:    kiwî-isin # LOCAL DIR
+     itêw+V+TA+Ind+Fut+Int+2Sg+1PlO:    kiwî-isinân
+     itêw+V+TA+Ind+Fut+Int+2Pl+1PlO:    kiwî-isinân
+     itêw+V+TA+Ind+Fut+Int+2Pl+1SgO:    kiwî-isinâwâw
+
+     itêw+V+TA+Ind+Fut+Int+1Sg+2SgO:    kiwî-ititin # LOCAL INVERSE
+     itêw+V+TA+Ind+Fut+Int+1Pl+2SgO:    kiwî-ititinân
+     itêw+V+TA+Ind+Fut+Int+1Pl+2PlO:    kiwî-ititinân
+     itêw+V+TA+Ind+Fut+Int+1Sg+2PlO:    kiwî-ititinâwâw
+
+## CONJUNCT ##
+     PV/e+itêw+V+TA+Cnj+Fut+Int+2Sg+1SgO:    ê-wî-isiyan # LOCAL DIR
+     PV/e+itêw+V+TA+Cnj+Fut+Int+2Sg+1PlO:    ê-wî-isiyâhk
+     PV/e+itêw+V+TA+Cnj+Fut+Int+2Pl+1PlO:    ê-wî-isiyâhk
+     PV/e+itêw+V+TA+Cnj+Fut+Int+2Pl+1SgO:    ê-wî-isiyêk
+
+     PV/e+itêw+V+TA+Cnj+Fut+Int+1Sg+2SgO:    ê-wî-ititân # LOCAL INVERSE
+     PV/e+itêw+V+TA+Cnj+Fut+Int+1Pl+2SgO:    ê-wî-ititâhk
+     PV/e+itêw+V+TA+Cnj+Fut+Int+1Pl+2PlO:    ê-wî-ititâhk
+     PV/e+itêw+V+TA+Cnj+Fut+Int+1Sg+2PlO:    ê-wî-ititakok
+
+
+###FUT+DEF###
+
+## INDEPENDENT ##
+     itêw+V+TA+Ind+Fut+Def+2Sg+1SgO:    kika-isin # LOCAL DIR
+     itêw+V+TA+Ind+Fut+Def+2Sg+1PlO:    kika-isinân
+     itêw+V+TA+Ind+Fut+Def+2Pl+1PlO:    kika-isinân
+     itêw+V+TA+Ind+Fut+Def+2Pl+1SgO:    kika-isinâwâw
+
+     itêw+V+TA+Ind+Fut+Def+1Sg+2SgO:    kika-ititin # LOCAL INVERSE
+     itêw+V+TA+Ind+Fut+Def+1Pl+2SgO:    kika-ititinân
+     itêw+V+TA+Ind+Fut+Def+1Pl+2PlO:    kika-ititinân
+     itêw+V+TA+Ind+Fut+Def+1Sg+2PlO:    kika-ititinâwâw

@@ -1,0 +1,54 @@
+NOUNS
+
+I don't know why gt-norm-yamls/N-A-kehte-aya_gt-norm.yaml, gt-norm-yamls/N-I-maskihkiy, and kwapahikan_gt don't work?
+
+AA: Because the lexemes/stems in question were not in src/stems/noun_stems.lexc. This has now been corrected.
+
+oskasâkay inflection does NOT lengthen the initial -o and it SHOULD according to AEW paradigm
+
+AA: The initial o- lengthening rule now applies here.
+
+osk-âyi diminutive inflection does NOT lengthen the initial -o and it SHOULD according to AEW paradigm ( I think because our TWOLC rule doesn't specifiy <c> as a left hand context.
+
+AA: The initial o- lengthening rule now applies here - this was resolved by leaving open how the epenthetic -t- (t2:) is actually realized on the surface side.
+
+VERBS
+
+atoskê: wit- allomorph for com. not yet implemented. Other wise atoskê- passes fully.
+
+AA: Yes, the wît- +Com allomorph has not yet been implemented.
+
+pimisin: we need to code pimisin to allow for pimisin/pimisiniw type forms (which occur in free variation)
+
+AA: Does this apply for all II verbs of the pimisin type? If yes, then we can simply add the allomorphs as additional lines in the LEXC code in src/affixes/verb_affixes.lexc
+
+mayatan: we want -hk for conjunct endings, but we only produce -k (mayatan is part of a small subclass of VIIs that do this, we should identify them and make them into a special class).
+
+AA: This has now been fixed in the LEXC and YAML files
+
+miywâsin, pimamon: we need to delete the stem final -n
+
+AA: This has now been fixed in the LEXC and YAML files
+
+mihkwaw VIIw verbs work now as well due to fixes in LEXC file.
+
+VTAs: we should code in the verb affixes the option to have o before w in ikow morphemes. We also want V+TA+Fut+Cond+12Pl+3SgO to produce yahki forms
+
+AA: We code the two alternatives, i.e. ikw-/ikow-, and add the -yahki as an alternative Fut+Cond form.
+
+VTI: The com suffix for VTIm was altered as it was duplicating the final a in the stem.
+
+AA: This is a consequence of additing a final -a to some VTIs, e.g. in
+the wâpahtam:wâpaht4a case. We might want to consider whether that is
+the best general solution.
+
+AA: Resolved t4->c as a morphophonological alteration when followed by -ikâte. Where to cut VTIm stem to be resolved last.
+
+AA: The only currently remaining issue is how best specify the
+stem-suffix morpheme juncture for VTIm stems, with an optimal balance
+on how verb stems are speficied in Arok's database, how suffixation is
+implemented in the LEXC files, how Arok's morphological decompositions
+incorporated as part of the derivational analyzer, and how this
+derivational analyzer could be incorporated within the inflectional
+FST with least modifications, and generally where the morpheme
+boundary should be.

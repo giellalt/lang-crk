@@ -1,0 +1,68 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - miskîsikw - ok : # -m inanimate dependent noun, eye	AEW V-initial NDI3
+
+     miskîsik+N+I+D+PxX+Sg: miskîsik
+     miskîsik+N+I+D+Px1Sg+Sg: niskîsik
+     miskîsik+N+I+D+Px2Sg+Sg: kiskîsik
+     miskîsik+N+I+D+Px1Pl+Sg: niskîsikonân
+     miskîsik+N+I+D+Px12Pl+Sg: kiskîsikonaw
+     miskîsik+N+I+D+Px2Pl+Sg: kiskîsikowâw
+     
+     miskîsik+N+I+D+Px3Sg+Sg: oskîsik
+     miskîsik+N+I+D+Px3Pl+Sg: oskîsikowâw
+     miskîsik+N+I+D+Px4Sg/Pl+Sg: oskîsikoyiw
+
+     miskîsik+N+I+D+PxX+Pl: miskîsikwa
+     miskîsik+N+I+D+Px1Sg+Pl: niskîsikwa
+     miskîsik+N+I+D+Px2Sg+Pl: kiskîsikwa
+     miskîsik+N+I+D+Px1Pl+Pl: niskîsikonâna
+     miskîsik+N+I+D+Px12Pl+Pl: kiskîsikonawa
+     miskîsik+N+I+D+Px2Pl+Pl: kiskîsikowâwa
+     
+     miskîsik+N+I+D+Px3Sg+Pl: oskîsikwa
+     miskîsik+N+I+D+Px3Pl+Pl: oskîsikowâwa
+     miskîsik+N+I+D+Px4Sg/Pl+Pl: oskîsikoyiwa
+
+     miskîsik+N+I+D+PxX+Loc: miskîsikohk
+     miskîsik+N+I+D+Px1Sg+Loc: niskîsikohk
+     miskîsik+N+I+D+Px2Sg+Loc: kiskîsikohk
+     miskîsik+N+I+D+Px1Pl+Loc: niskîsikonâhk
+     miskîsik+N+I+D+Px12Pl+Loc: kiskîsikonâhk
+     miskîsik+N+I+D+Px2Pl+Loc: kiskîsikowâhk
+
+     miskîsik+N+I+D+Px3Sg+Loc: oskîsikohk
+     miskîsik+N+I+D+Px3Pl+Loc: oskîsikowâhk
+     miskîsik+N+I+D+Px4Sg/Pl+Loc: oskîsikoyihk
+
+     miskîsik+N+I+D+Der/Dim+N+I+D+PxX+Sg:      [miskîsikos,     miskîsikosis]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px1Sg+Sg:    [niskîsikos,     niskîsikosis]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px2Sg+Sg:    [kiskîsikos,     kiskîsikosis]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px1Pl+Sg:    [niskîsikosinân, niskîsikosisinân]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px12Pl+Sg:   [kiskîsikosinaw, kiskîsikosisinaw]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px2Pl+Sg:    [kiskîsikosiwâw, kiskîsikosisiwâw]
+
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px3Sg+Sg:    [oskîsikos,     oskîsikosis]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px3Pl+Sg:    [oskîsikosiwâw, oskîsikosisiwâw]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Sg: [oskîsikosiyiw, oskîsikosisiyiw]
+
+     miskîsik+N+I+D+Der/Dim+N+I+D+PxX+Pl:      [miskîsikosa,     miskîsikosisa]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px1Sg+Pl:    [niskîsikosa,     niskîsikosisa]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px2Sg+Pl:    [kiskîsikosa,     kiskîsikosisa]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px1Pl+Pl:    [niskîsikosinâna, niskîsikosisinâna]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px12Pl+Pl:   [kiskîsikosinawa, kiskîsikosisinawa]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px2Pl+Pl:    [kiskîsikosiwâwa, kiskîsikosisiwâwa]
+     
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px3Sg+Pl:    [oskîsikosa,      oskîsikosisa]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px3Pl+Pl:    [oskîsikosiwâwa,  oskîsikosisiwâwa]
+     miskîsik+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Pl: [oskîsikosiyiwa,  oskîsikosisiyiwa]
+

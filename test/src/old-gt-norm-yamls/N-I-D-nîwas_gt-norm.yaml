@@ -1,0 +1,61 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xêrox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - nîwas / -îwas- - ok : # -m inanimate dependent noun, sacred bundle: AEW C-initial NDI1
+     nîwas+N+I+D+Px1Sg+Sg: nîwas
+     nîwas+N+I+D+Px2Sg+Sg: kîwas
+     nîwas+N+I+D+Px1Pl+Sg: nîwatinân
+     nîwas+N+I+D+Px12Pl+Sg: kîwatinaw
+     nîwas+N+I+D+Px2Pl+Sg: kîwatiwâw
+
+     nîwas+N+I+D+Px3Sg+Sg: wîwas
+     nîwas+N+I+D+Px3Pl+Sg: wîwatiwâw
+     nîwas+N+I+D+Px4Sg/Pl+Sg: wîwatiyiw
+
+     nîwas+N+I+D+Px1Sg+Pl: nîwata
+     nîwas+N+I+D+Px2Sg+Pl: kîwata
+     nîwas+N+I+D+Px1Pl+Pl: nîwatinâna
+     nîwas+N+I+D+Px12Pl+Pl: kîwatinawa
+     nîwas+N+I+D+Px2Pl+Pl: kîwatiwâwa
+
+     nîwas+N+I+D+Px3Sg+Pl: wîwata
+     nîwas+N+I+D+Px3Pl+Pl: wîwatiwâwa
+     nîwas+N+I+D+Px4Sg/Pl+Pl: wîwatiyiwa
+
+     nîwas+N+I+D+Px1Sg+Loc: nîwatihk
+     nîwas+N+I+D+Px2Sg+Loc: kîwatihk
+     nîwas+N+I+D+Px1Pl+Loc: nîwatinâhk
+     nîwas+N+I+D+Px12Pl+Loc: kîwatinâhk
+     nîwas+N+I+D+Px2Pl+Loc: kîwatiwâhk
+
+     nîwas+N+I+D+Px3Sg+Loc: wîwatihk
+     nîwas+N+I+D+Px3Pl+Loc: wîwatiwâhk
+     nîwas+N+I+D+Px4Sg/Pl+Loc: wîwatiyihk
+
+     nîwas+N+I+D+Der/Dim+N+I+D+Px1Sg+Sg:    [nîwacis,     nîwacisis]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px2Sg+Sg:    [kîwacis,     kîwacisis]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px1Pl+Sg:    [nîwacisinân, nîwacisisinân]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px12Pl+Sg:   [kîwacisinaw, kîwacisisinaw]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px2Pl+Sg:    [kîwacisiwâw, kîwacisisiwâw]
+
+     nîwas+N+I+D+Der/Dim+N+I+D+Px3Sg+Sg:    [wîwacis,     wîwacisis]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px3Pl+Sg:    [wîwacisiwâw, wîwacisisiwâw]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Sg: [wîwacisiyiw, wîwacisisiyiw]
+
+     nîwas+N+I+D+Der/Dim+N+I+D+Px1Sg+Pl:    [nîwacisa,     nîwacisisa]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px2Sg+Pl:    [kîwacisa,     kîwacisisa]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px1Pl+Pl:    [nîwacisinâna, nîwacisisinâna]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px12Pl+Pl:   [kîwacisinawa, kîwacisisinawa]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px2Pl+Pl:    [kîwacisiwâwa, kîwacisisiwâwa]
+
+     nîwas+N+I+D+Der/Dim+N+I+D+Px3Sg+Pl:    [wîwacisa,      wîwacisisa]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px3Pl+Pl:    [wîwacisiwâwa,  wîwacisisiwâwa]
+     nîwas+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Pl: [wîwacisiyiwa,  wîwacisisiyiwa]

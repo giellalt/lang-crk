@@ -1,0 +1,271 @@
+Config:
+  xêrox:
+    Gên: ../../../src/gênêrator-gt-norm.xfst
+    App: lookup
+
+Têsts:
+  
+  Vêrb - nakatêw - ok : # VTA (VTA4 AEW) 
+
+###PRS###
+## INDEPENDENT ##
+     nakatêw+V+TA+Ind+Prs+2Sg+1SgO:    kinakasin # LOCAL DIR
+     nakatêw+V+TA+Ind+Prs+2Sg+1PlO:    kinakasinân
+     nakatêw+V+TA+Ind+Prs+2Pl+1PlO:    kinakasinân
+     nakatêw+V+TA+Ind+Prs+2Pl+1SgO:    kinakasinâwâw
+
+     nakatêw+V+TA+Ind+Prs+1Sg+2SgO:    kinakatitin # LOCAL INVERSE
+     nakatêw+V+TA+Ind+Prs+1Pl+2SgO:    kinakatitinân
+     nakatêw+V+TA+Ind+Prs+1Pl+2PlO:    kinakatitinân
+     nakatêw+V+TA+Ind+Prs+1Sg+2PlO:    kinakatitinâwâw
+
+
+     nakatêw+V+TA+Ind+Prs+1Sg+3SgO:    ninakatâw # MIXED DIR (obj sg)
+     nakatêw+V+TA+Ind+Prs+2Sg+3SgO:    kinakatâw
+     nakatêw+V+TA+Ind+Prs+1Pl+3SgO:    ninakatânân
+     nakatêw+V+TA+Ind+Prs+12Pl+3SgO:    kinakatânaw
+     nakatêw+V+TA+Ind+Prs+2Pl+3SgO:    kinakatâwâw
+     nakatêw+V+TA+Ind+Prs+1Sg+3PlO:    ninakatâwak # MIXED DIR (obj pl)
+     nakatêw+V+TA+Ind+Prs+2Sg+3PlO:    kinakatâwak
+     nakatêw+V+TA+Ind+Prs+1Pl+3PlO:    ninakatânânak
+     nakatêw+V+TA+Ind+Prs+12Pl+3PlO:    kinakatânawak
+     nakatêw+V+TA+Ind+Prs+2Pl+3PlO:    kinakatâwâwak
+
+     nakatêw+V+TA+Ind+Prs+1Sg+4Sg/PlO:    ninakatimâwa # MIXED DIR (obj. obv.)
+     nakatêw+V+TA+Ind+Prs+2Sg+4Sg/PlO:    kinakatimâwa
+     nakatêw+V+TA+Ind+Prs+1Pl+4Sg/PlO:    ninakatimânâna
+     nakatêw+V+TA+Ind+Prs+12Pl+4Sg/PlO:   kinakatimânawa
+     nakatêw+V+TA+Ind+Prs+2Pl+4Sg/PlO:    kinakatimâwâwa
+
+     nakatêw+V+TA+Ind+Prs+3Sg+1SgO:    ninakatik # MIXED INV (sbj sg)
+     nakatêw+V+TA+Ind+Prs+3Sg+2SgO:    kinakatik
+     nakatêw+V+TA+Ind+Prs+3Sg+1PlO:    ninakatikonân
+     nakatêw+V+TA+Ind+Prs+3Sg+12PlO:   kinakatikonaw
+     nakatêw+V+TA+Ind+Prs+3Sg+2PlO:    kinakatikowâw
+     nakatêw+V+TA+Ind+Prs+3Pl+1SgO:    [ninakatikowak, ninakatikwak] # MIXED INV (sbj pl)
+     nakatêw+V+TA+Ind+Prs+3Pl+2SgO:    [kinakatikowak, kinakatikwak]
+     nakatêw+V+TA+Ind+Prs+3Pl+1PlO:    ninakatikonânak
+     nakatêw+V+TA+Ind+Prs+3Pl+12PlO:   kinakatikonawak
+     nakatêw+V+TA+Ind+Prs+3Pl+2PlO:    kinakatikowâwak
+
+     nakatêw+V+TA+Ind+Prs+1Sg+4Sg/PlO:    ninakatimâwa # MIXED INV (sbj obv.)
+     nakatêw+V+TA+Ind+Prs+2Sg+4Sg/PlO:    kinakatimâwa
+     nakatêw+V+TA+Ind+Prs+1Pl+4Sg/PlO:    ninakatimânâna
+     nakatêw+V+TA+Ind+Prs+12Pl+4Sg/PlO:   kinakatimânawa
+     nakatêw+V+TA+Ind+Prs+2Pl+4Sg/PlO:    kinakatimâwâwa
+
+     nakatêw+V+TA+Ind+Prs+3Sg+4Sg/PlO:    nakatêw # THIRD DIR
+     nakatêw+V+TA+Ind+Prs+3Pl+4Sg/PlO:    nakatêwak
+     nakatêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO: nakatêyiwa
+     nakatêw+V+TA+Ind+Prs+3Sg+5Sg/PlO:    nakatimêw
+     nakatêw+V+TA+Ind+Prs+3Pl+5Sg/PlO:    nakatimêwak
+
+     nakatêw+V+TA+Ind+Prs+4Sg/Pl+3SgO:    [nakatik, nakatikow] # THIRD INV
+     nakatêw+V+TA+Ind+Prs+4Sg/Pl+3PlO:    [nakatikowak, nakatikwak]
+     nakatêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO:    nakatikoyiwa
+
+
+## CONJUNCT ##
+     PV/e+nakatêw+V+TA+Cnj+Prs+2Sg+1SgO:    ê-nakasiyan # LOCAL DIR
+     PV/e+nakatêw+V+TA+Cnj+Prs+2Sg+1PlO:    ê-nakasiyâhk
+     PV/e+nakatêw+V+TA+Cnj+Prs+2Pl+1PlO:    ê-nakasiyâhk
+     PV/e+nakatêw+V+TA+Cnj+Prs+2Pl+1SgO:    ê-nakasiyêk
+
+     PV/e+nakatêw+V+TA+Cnj+Prs+1Sg+2SgO:    ê-nakatitân # LOCAL INVERSE
+     PV/e+nakatêw+V+TA+Cnj+Prs+1Pl+2SgO:    ê-nakatitâhk
+     PV/e+nakatêw+V+TA+Cnj+Prs+1Pl+2PlO:    ê-nakatitâhk
+     PV/e+nakatêw+V+TA+Cnj+Prs+1Sg+2PlO:    ê-nakatitakok
+
+
+     PV/e+nakatêw+V+TA+Cnj+Prs+1Sg+3SgO:    ê-nakatak # MIXED DIR (obj sg)
+     PV/e+nakatêw+V+TA+Cnj+Prs+2Sg+3SgO:    ê-nakatat
+     PV/e+nakatêw+V+TA+Cnj+Prs+1Pl+3SgO:    ê-nakatâyâhk
+     PV/e+nakatêw+V+TA+Cnj+Prs+12Pl+3SgO:   ê-nakatâyahk
+     PV/e+nakatêw+V+TA+Cnj+Prs+2Pl+3SgO:    ê-nakatâyêk
+     PV/e+nakatêw+V+TA+Cnj+Prs+1Sg+3PlO:    ê-nakatakik # MIXED DIR (obj pl)
+     PV/e+nakatêw+V+TA+Cnj+Prs+2Sg+3PlO:    ê-nakatacik
+     PV/e+nakatêw+V+TA+Cnj+Prs+1Pl+3PlO:    ê-nakatâyâhkik
+     PV/e+nakatêw+V+TA+Cnj+Prs+12Pl+3PlO:   ê-nakatâyahkok
+     PV/e+nakatêw+V+TA+Cnj+Prs+2Pl+3PlO:    ê-nakatâyêkok
+
+     PV/e+nakatêw+V+TA+Cnj+Prs+1Sg+4Sg/PlO:    ê-nakatimak # MIXED DIR (obj. obv.)
+     PV/e+nakatêw+V+TA+Cnj+Prs+2Sg+4Sg/PlO:    ê-nakatimat
+     PV/e+nakatêw+V+TA+Cnj+Prs+1Pl+4Sg/PlO:    ê-nakatimâyâhk
+     PV/e+nakatêw+V+TA+Cnj+Prs+12Pl+4Sg/PlO:   ê-nakatimâyahk
+     PV/e+nakatêw+V+TA+Cnj+Prs+2Pl+4Sg/PlO:    ê-nakatimâyêk
+
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Sg+1SgO:    ê-nakasit # MIXED INV (sbj sg)
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Sg+2SgO:    ê-nakatisk
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Sg+1PlO:    ê-nakatikoyâhk
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Sg+12PlO:   ê-nakatikoyahk
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Sg+2PlO:    ê-nakatikoyêk
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Pl+1SgO:    ê-nakasicik # MIXED INV (sbj pl)
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Pl+2SgO:    ê-nakatiskik
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Pl+1PlO:    ê-nakatikoyâhkik
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Pl+12PlO:   ê-nakatikoyahkok
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Pl+2PlO:    ê-nakatikoyêkok
+
+     PV/e+nakatêw+V+TA+Cnj+Prs+4Sg/Pl+1SgO:    ê-nakatimit # MIXED INV (sbj obv.)
+     PV/e+nakatêw+V+TA+Cnj+Prs+4Sg/Pl+2SgO:    ê-nakatimisk
+     PV/e+nakatêw+V+TA+Cnj+Prs+4Sg/Pl+1PlO:    ê-nakatikoyâhk
+     PV/e+nakatêw+V+TA+Cnj+Prs+4Sg/Pl+12PlO:   ê-nakatikoyahk
+     PV/e+nakatêw+V+TA+Cnj+Prs+4Sg/Pl+2PlO:    ê-nakatikoyêk
+
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Sg+4Sg/PlO:    ê-nakatât # THIRD DIR
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Pl+4Sg/PlO:    ê-nakatâcik
+     PV/e+nakatêw+V+TA+Cnj+Prs+4Sg/Pl+5Sg/PlO: ê-nakatâyit
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Sg+5Sg/PlO:    ê-nakatimât
+     PV/e+nakatêw+V+TA+Cnj+Prs+3Pl+5Sg/PlO:    ê-nakatimâcik
+
+     PV/e+nakatêw+V+TA+Cnj+Prs+4Sg/Pl+3SgO:    ê-nakatikot # THIRD INV
+     PV/e+nakatêw+V+TA+Cnj+Prs+4Sg/Pl+3PlO:    ê-nakatikocik
+     PV/e+nakatêw+V+TA+Cnj+Prs+5Sg/Pl+4Sg/PlO: ê-nakatikoyit
+
+## FUTURE CONDITIONAL ##
+     nakatêw+V+TA+Fut+Cond+2Sg+1SgO:    nakasiyani # LOCAL DIR
+     nakatêw+V+TA+Fut+Cond+2Sg+1PlO:    nakasiyâhki
+     nakatêw+V+TA+Fut+Cond+2Pl+1PlO:    nakasiyâhki
+     nakatêw+V+TA+Fut+Cond+2Pl+1SgO:    nakasiyêko
+
+     nakatêw+V+TA+Fut+Cond+1Sg+2SgO:    nakatitâni # LOCAL INVERSE
+     nakatêw+V+TA+Fut+Cond+1Pl+2SgO:    nakatitâhki
+     nakatêw+V+TA+Fut+Cond+1Pl+2PlO:    nakatitâhki
+     nakatêw+V+TA+Fut+Cond+1Sg+2PlO:    nakatitako
+
+
+     nakatêw+V+TA+Fut+Cond+1Sg+3SgO:    nakataki # MIXED DIR (obj sg)
+     nakatêw+V+TA+Fut+Cond+2Sg+3SgO:    nakataci
+     nakatêw+V+TA+Fut+Cond+1Pl+3SgO:    nakatâyâhki
+     nakatêw+V+TA+Fut+Cond+12Pl+3SgO:   [nakatâyahko, nakatâyahki]
+     nakatêw+V+TA+Fut+Cond+2Pl+3SgO:    nakatâyêko
+     nakatêw+V+TA+Fut+Cond+1Sg+3PlO:    nakatakwâwi # MIXED DIR (obj pl)
+     nakatêw+V+TA+Fut+Cond+2Sg+3PlO:    nakatatwâwi
+     nakatêw+V+TA+Fut+Cond+1Pl+3PlO:    nakatâyâhkwâwi
+     nakatêw+V+TA+Fut+Cond+12Pl+3PlO:   nakatâyahkwâwi
+     nakatêw+V+TA+Fut+Cond+2Pl+3PlO:    nakatâyêkwâwi
+
+     nakatêw+V+TA+Fut+Cond+1Sg+4Sg/PlO:    nakatimaki # MIXED DIR (obj. obv.)
+     nakatêw+V+TA+Fut+Cond+2Sg+4Sg/PlO:    nakatimaci
+     nakatêw+V+TA+Fut+Cond+1Pl+4Sg/PlO:    nakatimâyâhki
+     nakatêw+V+TA+Fut+Cond+12Pl+4Sg/PlO:   [nakatimâyahko, nakatimâyahki]
+     nakatêw+V+TA+Fut+Cond+2Pl+4Sg/PlO:    nakatimâyêko
+
+     nakatêw+V+TA+Fut+Cond+3Sg+1SgO:    nakasici # MIXED INV (sbj sg)
+     nakatêw+V+TA+Fut+Cond+3Sg+2SgO:    nakatiski
+     nakatêw+V+TA+Fut+Cond+3Sg+1PlO:    nakatikoyâhki
+     nakatêw+V+TA+Fut+Cond+3Sg+12PlO:   [nakatikoyahko, nakatikoyahki]
+     nakatêw+V+TA+Fut+Cond+3Sg+2PlO:    nakatikoyêko
+     nakatêw+V+TA+Fut+Cond+3Pl+1SgO:    nakasitwâwi # MIXED INV (sbj pl)
+     nakatêw+V+TA+Fut+Cond+3Pl+2SgO:    nakatiskwâwi
+     nakatêw+V+TA+Fut+Cond+3Pl+1PlO:    nakatikoyâhkwâwi
+     nakatêw+V+TA+Fut+Cond+3Pl+12PlO:   nakatikoyahkwâwi
+     nakatêw+V+TA+Fut+Cond+3Pl+2PlO:    nakatikoyêkwâwi
+
+     nakatêw+V+TA+Fut+Cond+4Sg/Pl+1SgO:    nakatimici # MIXED INV (sbj obv.)
+     nakatêw+V+TA+Fut+Cond+4Sg/Pl+2SgO:    nakatimiski
+     nakatêw+V+TA+Fut+Cond+4Sg/Pl+1PlO:    nakatikoyâhki
+     nakatêw+V+TA+Fut+Cond+4Sg/Pl+12PlO:   [nakatikoyahko, nakatikoyahki]
+     nakatêw+V+TA+Fut+Cond+4Sg/Pl+2PlO:    nakatikoyêko
+
+     nakatêw+V+TA+Fut+Cond+3Sg+4Sg/PlO:    nakatâci # THIRD DIR
+     nakatêw+V+TA+Fut+Cond+3Pl+4Sg/PlO:    nakatâtwâwi
+     nakatêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: nakatâyici
+     nakatêw+V+TA+Fut+Cond+3Sg+5Sg/PlO:    nakatimâci
+     nakatêw+V+TA+Fut+Cond+3Pl+5Sg/PlO:    nakatimâtwâwi
+
+     nakatêw+V+TA+Fut+Cond+4Sg/Pl+3SgO:    nakatikoci # THIRD INV
+     nakatêw+V+TA+Fut+Cond+4Sg/Pl+3PlO:    nakatikotwâwi
+     nakatêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: nakatikoyici
+
+## IMPERATIVE ##
+#LOCAL IMMEDIATE#
+     nakatêw+V+TA+Imp+Imm+2Sg+1SgO:    nakasin
+     nakatêw+V+TA+Imp+Imm+2Sg+1PlO:    nakasinân
+     nakatêw+V+TA+Imp+Imm+2Pl+1PlO:    nakasinân
+     nakatêw+V+TA+Imp+Imm+2Pl+1SgO:    nakasik
+#LOCAL DELAYED#
+     nakatêw+V+TA+Imp+Del+2Sg+1SgO:    nakasîhkan
+     nakatêw+V+TA+Imp+Del+2Sg+1PlO:    nakasîhkâhk
+     nakatêw+V+TA+Imp+Del+2Pl+1PlO:    nakasîhkâhk
+     nakatêw+V+TA+Imp+Del+2Pl+1SgO:    nakasîhkêk
+
+#MIXED IMMEDIATE#
+     nakatêw+V+TA+Imp+Imm+2Sg+3SgO:    nakas # Obj. Sg.
+     nakatêw+V+TA+Imp+Imm+2Pl+3SgO:    nakatihk
+     nakatêw+V+TA+Imp+Imm+12Pl+3SgO:   nakatâtân
+
+     nakatêw+V+TA+Imp+Imm+2Sg+3PlO:    nakasik # Obj. Pl.
+     nakatêw+V+TA+Imp+Imm+2Pl+3PlO:    nakatihkik
+     nakatêw+V+TA+Imp+Imm+12Pl+3PlO:   nakatâtânik
+#MIXED DELAYED#
+     nakatêw+V+TA+Imp+Del+2Sg+3SgO:    nakatâhkan # Obj. Sg.
+     nakatêw+V+TA+Imp+Del+2Pl+3SgO:    nakatâhkêk
+     nakatêw+V+TA+Imp+Del+12Pl+3SgO:   nakatâhkahk
+
+     nakatêw+V+TA+Imp+Del+2Sg+3PlO:    nakatâhkanik # Obj. Pl.
+     nakatêw+V+TA+Imp+Del+2Pl+3PlO:    nakatâhkêkok
+     nakatêw+V+TA+Imp+Del+12Pl+3PlO:   nakatâhkahkok
+
+
+###PRT###
+
+## INDEPENDENT ##
+     nakatêw+V+TA+Ind+Prt+2Sg+1SgO:    kikî-nakasin # LOCAL DIR
+     nakatêw+V+TA+Ind+Prt+2Sg+1PlO:    kikî-nakasinân
+     nakatêw+V+TA+Ind+Prt+2Pl+1PlO:    kikî-nakasinân
+     nakatêw+V+TA+Ind+Prt+2Pl+1SgO:    kikî-nakasinâwâw
+
+     nakatêw+V+TA+Ind+Prt+1Sg+2SgO:    kikî-nakatitin # LOCAL INVERSE
+     nakatêw+V+TA+Ind+Prt+1Pl+2SgO:    kikî-nakatitinân
+     nakatêw+V+TA+Ind+Prt+1Pl+2PlO:    kikî-nakatitinân
+     nakatêw+V+TA+Ind+Prt+1Sg+2PlO:    kikî-nakatitinâwâw
+
+## CONJUNCT ##
+     PV/e+nakatêw+V+TA+Cnj+Prt+2Sg+1SgO:    ê-kî-nakasiyan # LOCAL DIR
+     PV/e+nakatêw+V+TA+Cnj+Prt+2Sg+1PlO:    ê-kî-nakasiyâhk
+     PV/e+nakatêw+V+TA+Cnj+Prt+2Pl+1PlO:    ê-kî-nakasiyâhk
+     PV/e+nakatêw+V+TA+Cnj+Prt+2Pl+1SgO:    ê-kî-nakasiyêk
+
+     PV/e+nakatêw+V+TA+Cnj+Prt+1Sg+2SgO:    ê-kî-nakatitân # LOCAL INVERSE
+     PV/e+nakatêw+V+TA+Cnj+Prt+1Pl+2SgO:    ê-kî-nakatitâhk
+     PV/e+nakatêw+V+TA+Cnj+Prt+1Pl+2PlO:    ê-kî-nakatitâhk
+     PV/e+nakatêw+V+TA+Cnj+Prt+1Sg+2PlO:    ê-kî-nakatitakok
+
+
+###FUT+INT###
+
+## INDEPENDENT ##
+     nakatêw+V+TA+Ind+Fut+Int+2Sg+1SgO:    kiwî-nakasin # LOCAL DIR
+     nakatêw+V+TA+Ind+Fut+Int+2Sg+1PlO:    kiwî-nakasinân
+     nakatêw+V+TA+Ind+Fut+Int+2Pl+1PlO:    kiwî-nakasinân
+     nakatêw+V+TA+Ind+Fut+Int+2Pl+1SgO:    kiwî-nakasinâwâw
+
+     nakatêw+V+TA+Ind+Fut+Int+1Sg+2SgO:    kiwî-nakatitin # LOCAL INVERSE
+     nakatêw+V+TA+Ind+Fut+Int+1Pl+2SgO:    kiwî-nakatitinân
+     nakatêw+V+TA+Ind+Fut+Int+1Pl+2PlO:    kiwî-nakatitinân
+     nakatêw+V+TA+Ind+Fut+Int+1Sg+2PlO:    kiwî-nakatitinâwâw
+
+## CONJUNCT ##
+     PV/e+nakatêw+V+TA+Cnj+Fut+Int+2Sg+1SgO:    ê-wî-nakasiyan # LOCAL DIR
+     PV/e+nakatêw+V+TA+Cnj+Fut+Int+2Sg+1PlO:    ê-wî-nakasiyâhk
+     PV/e+nakatêw+V+TA+Cnj+Fut+Int+2Pl+1PlO:    ê-wî-nakasiyâhk
+     PV/e+nakatêw+V+TA+Cnj+Fut+Int+2Pl+1SgO:    ê-wî-nakasiyêk
+
+     PV/e+nakatêw+V+TA+Cnj+Fut+Int+1Sg+2SgO:    ê-wî-nakatitân # LOCAL INVERSE
+     PV/e+nakatêw+V+TA+Cnj+Fut+Int+1Pl+2SgO:    ê-wî-nakatitâhk
+     PV/e+nakatêw+V+TA+Cnj+Fut+Int+1Pl+2PlO:    ê-wî-nakatitâhk
+     PV/e+nakatêw+V+TA+Cnj+Fut+Int+1Sg+2PlO:    ê-wî-nakatitakok
+
+
+###FUT+DEF###
+
+## INDEPENDENT ##
+     nakatêw+V+TA+Ind+Fut+Def+2Sg+1SgO:    kika-nakasin # LOCAL DIR
+     nakatêw+V+TA+Ind+Fut+Def+2Sg+1PlO:    kika-nakasinân
+     nakatêw+V+TA+Ind+Fut+Def+2Pl+1PlO:    kika-nakasinân
+     nakatêw+V+TA+Ind+Fut+Def+2Pl+1SgO:    kika-nakasinâwâw
+
+     nakatêw+V+TA+Ind+Fut+Def+1Sg+2SgO:    kika-nakatitin # LOCAL INVERSE
+     nakatêw+V+TA+Ind+Fut+Def+1Pl+2SgO:    kika-nakatitinân
+     nakatêw+V+TA+Ind+Fut+Def+1Pl+2PlO:    kika-nakatitinân
+     nakatêw+V+TA+Ind+Fut+Def+1Sg+2PlO:    kika-nakatitinâwâw
