@@ -1,0 +1,59 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mîkisasâkay - ok : # -m animate noun, beaded coat, beaded dress AEW NI2
+     mîkisasâkay+N+I+Sg: mîkisasâkay
+     mîkisasâkay+N+I+Px1Sg+Sg: nimîkisasâkay
+     mîkisasâkay+N+I+Px2Sg+Sg: kimîkisasâkay
+     mîkisasâkay+N+I+Px1Pl+Sg: nimîkisasâkânân
+     mîkisasâkay+N+I+Px12Pl+Sg: kimîkisasâkânaw
+     mîkisasâkay+N+I+Px2Pl+Sg: kimîkisasâkâwâw
+
+     mîkisasâkay+N+I+Pl: mîkisasâkaya
+     mîkisasâkay+N+I+Px1Sg+Pl: nimîkisasâkaya
+     mîkisasâkay+N+I+Px2Sg+Pl: kimîkisasâkaya
+     mîkisasâkay+N+I+Px1Pl+Pl: nimîkisasâkânâna
+     mîkisasâkay+N+I+Px12Pl+Pl: kimîkisasâkânawa
+     mîkisasâkay+N+I+Px2Pl+Pl: kimîkisasâkâwâwa
+     
+     mîkisasâkay+N+I+Loc: mîkisasâkâhk
+     mîkisasâkay+N+I+Px1Sg+Loc: nimîkisasâkâhk
+     mîkisasâkay+N+I+Px2Sg+Loc: kimîkisasâkâhk
+     mîkisasâkay+N+I+Px1Pl+Loc: nimîkisasâkânâhk
+     mîkisasâkay+N+I+Px12Pl+Loc: kimîkisasâkânâhk
+     mîkisasâkay+N+I+Px2Pl+Loc: kimîkisasâkâwâhk
+     mîkisasâkay+N+I+Px3Sg+Loc: omîkisasâkâhk
+     mîkisasâkay+N+I+Px3Pl+Loc: omîkisasâkâwâhk
+     mîkisasâkay+N+I+Px4Sg/Pl+Loc: omîkisasâkâyihk
+
+     mîkisasâkay+N+I+Der/Dim+N+I+Sg:           [mîkisasâkâs,       mîkisasâkâsis]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px1Sg+Sg:     [nimîkisasâkâs,     nimîkisasâkâsis]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px2Sg+Sg:     [kimîkisasâkâs,     kimîkisasâkâsis]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px1Pl+Sg:     [nimîkisasâkâsinân, nimîkisasâkâsisinân]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px12Pl+Sg:    [kimîkisasâkâsinaw, kimîkisasâkâsisinaw]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px2Pl+Sg:     [kimîkisasâkâsiwâw, kimîkisasâkâsisiwâw]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px3Sg+Sg:     [omîkisasâkâs,      omîkisasâkâsis]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px3Pl+Sg:     [omîkisasâkâsiwâw,  omîkisasâkâsisiwâw]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px4Sg/Pl+Sg:  [omîkisasâkâsiyiw,  omîkisasâkâsisiyiw]
+               
+     mîkisasâkay+N+I+Der/Dim+N+I+Pl:           [mîkisasâkâsa,       mîkisasâkâsisa]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px1Sg+Pl:     [nimîkisasâkâsa,     nimîkisasâkâsisa]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px2Sg+Pl:     [kimîkisasâkâsa,     kimîkisasâkâsisa]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px1Pl+Pl:     [nimîkisasâkâsinâna, nimîkisasâkâsisinâna]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px12Pl+Pl:    [kimîkisasâkâsinawa, kimîkisasâkâsisinawa]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px2Pl+Pl:     [kimîkisasâkâsiwâwa, kimîkisasâkâsisiwâwa]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px3Sg+Pl:     [omîkisasâkâsa,      omîkisasâkâsisa]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px3Pl+Pl:     [omîkisasâkâsiwâwa,  omîkisasâkâsisiwâwa]
+     mîkisasâkay+N+I+Der/Dim+N+I+Px4Sg/Pl+Pl:  [omîkisasâkâsiyiwa,  omîkisasâkâsisiyiwa]
+
+     
+     
+     

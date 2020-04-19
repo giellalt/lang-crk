@@ -1,0 +1,61 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - cîmân - ok : # -m inanimate noun, canoe AEW NI1
+     cîmân+N+I+Sg: cîmân
+     cîmân+N+I+Px1Sg+Sg: nicîmân
+     cîmân+N+I+Px2Sg+Sg: kicîmân
+     cîmân+N+I+Px1Pl+Sg: nicîmâninân
+     cîmân+N+I+Px12Pl+Sg: kicîmâninaw
+     cîmân+N+I+Px2Pl+Sg: kicîmâniwâw
+     cîmân+N+I+Px3Sg+Sg: ocîmân
+     cîmân+N+I+Px3Pl+Sg: ocîmâniwâw
+     cîmân+N+I+Px4Sg/Pl+Sg: ocîmâniyiw
+
+     cîmân+N+I+Pl: cîmâna
+     cîmân+N+I+Px1Sg+Pl: nicîmâna
+     cîmân+N+I+Px2Sg+Pl: kicîmâna
+     cîmân+N+I+Px1Pl+Pl: nicîmâninâna
+     cîmân+N+I+Px12Pl+Pl: kicîmâninawa
+     cîmân+N+I+Px2Pl+Pl: kicîmâniwâwa
+     cîmân+N+I+Px3Sg+Pl: ocîmâna
+     cîmân+N+I+Px3Pl+Pl: ocîmâniwâwa
+     cîmân+N+I+Px4Sg/Pl+Pl: ocîmâniyiwa
+
+     cîmân+N+I+Loc: cîmânihk
+     cîmân+N+I+Px1Sg+Loc: nicîmânihk
+     cîmân+N+I+Px2Sg+Loc: kicîmânihk
+     cîmân+N+I+Px1Pl+Loc: nicîmâninâhk
+     cîmân+N+I+Px12Pl+Loc: kicîmâninâhk
+     cîmân+N+I+Px2Pl+Loc: kicîmâniwâhk
+     cîmân+N+I+Px3Sg+Loc: ocîmânihk
+     cîmân+N+I+Px3Pl+Loc: ocîmâniwâhk
+     cîmân+N+I+Px4Sg/Pl+Loc: ocîmâniyihk
+
+     cîmân+N+I+Der/Dim+N+I+Sg:          [cîmânis,         cîmânisis]
+     cîmân+N+I+Der/Dim+N+I+Px1Sg+Sg:    [nicîmânis,       nicîmânisis]
+     cîmân+N+I+Der/Dim+N+I+Px2Sg+Sg:    [kicîmânis,       kicîmânisis]
+     cîmân+N+I+Der/Dim+N+I+Px1Pl+Sg:    [nicîmânisinân,   nicîmânisisinân]
+     cîmân+N+I+Der/Dim+N+I+Px12Pl+Sg:   [kicîmânisinaw,   kicîmânisisinaw]
+     cîmân+N+I+Der/Dim+N+I+Px2Pl+Sg:    [kicîmânisiwâw,   kicîmânisisiwâw]
+     cîmân+N+I+Der/Dim+N+I+Px3Sg+Sg:    [ocîmânis,        ocîmânisis]
+     cîmân+N+I+Der/Dim+N+I+Px3Pl+Sg:    [ocîmânisiwâw,    ocîmânisisiwâw]
+     cîmân+N+I+Der/Dim+N+I+Px4Sg/Pl+Sg: [ocîmânisiyiw,    ocîmânisisiyiw]
+
+     cîmân+N+I+Der/Dim+N+I+Pl:          [cîmânisa,       cîmânisisa]
+     cîmân+N+I+Der/Dim+N+I+Px1Sg+Pl:    [nicîmânisa,     nicîmânisisa]
+     cîmân+N+I+Der/Dim+N+I+Px2Sg+Pl:    [kicîmânisa,     kicîmânisisa]
+     cîmân+N+I+Der/Dim+N+I+Px1Pl+Pl:    [nicîmânisinâna, nicîmânisisinâna]
+     cîmân+N+I+Der/Dim+N+I+Px12Pl+Pl:   [kicîmânisinawa, kicîmânisisinawa]
+     cîmân+N+I+Der/Dim+N+I+Px2Pl+Pl:    [kicîmânisiwâwa, kicîmânisisiwâwa]
+     cîmân+N+I+Der/Dim+N+I+Px3Sg+Pl:    [ocîmânisa,      ocîmânisisa]
+     cîmân+N+I+Der/Dim+N+I+Px3Pl+Pl:    [ocîmânisiwâwa,  ocîmânisisiwâwa]
+     cîmân+N+I+Der/Dim+N+I+Px4Sg/Pl+Pl: [ocîmânisiyiwa,  ocîmânisisiyiwa]

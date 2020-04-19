@@ -1,0 +1,48 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - maskihkiy - ok : # -m inanimate noun, medicine AEW NI2
+     maskihkiy+N+I+Sg: maskihkiy
+     maskihkiy+N+I+Px1Sg+Sg: nimaskihkiy
+     maskihkiy+N+I+Px2Sg+Sg: kimaskihkiy
+     maskihkiy+N+I+Px1Pl+Sg: nimaskihkînân
+     maskihkiy+N+I+Px12Pl+Sg: kimaskihkînaw
+     maskihkiy+N+I+Px2Pl+Sg: kimaskihkîwâw
+     maskihkiy+N+I+Px3Sg+Sg: omaskihkiy
+     maskihkiy+N+I+Px3Pl+Sg: omaskihkîwâw
+     maskihkiy+N+I+Px4Pl+Sg: omaskihkîyiw
+			  
+     maskihkiy+N+I: maskihkiya
+     maskihkiy+N+I+Px1Sg+Pl: nimaskihkiya
+     maskihkiy+N+I+Px2Sg+Pl: kimaskihkiya
+     maskihkiy+N+I+Px1Pl+Pl: nimaskihkînâna
+     maskihkiy+N+I+Px12Pl+Pl: kimaskihkînawa
+     maskihkiy+N+I+Px2Pl+Pl: kimaskihkîwâwa
+     maskihkiy+N+I+Px3Sg+Pl: omaskihkiya
+     maskihkiy+N+I+Px3Pl+Pl: omaskihkîwâwa
+     maskihkiy+N+I+Px4Pl+Pl: omaskihkîyiwa
+			  
+     maskihkiy+N+I+Loc: maskihkiyihk
+     maskihkiy+N+I+1Sg+Loc: nimaskihkîhk
+     maskihkiy+N+I+2Sg+Loc: kimaskihkîhk
+     maskihkiy+N+I+1Pl+Loc: nimaskihkînâhk
+     maskihkiy+N+I+12Pl+Loc: kimaskihkînâhk
+     maskihkiy+N+I+2Pl+Loc: kimaskihkîwâhk
+     maskihkiy+N+I+3Sg+Loc: omaskihkîhk
+     maskihkiy+N+I+3Pl+Loc: omaskihkîwâhk
+     maskihkiy+N+I+4Pl+Loc: omaskihkîyihk
+			  
+     maskihkiy+N+I+Der/Dim+N+I+N+Sg: [maskihkîs, maskihkîsis]
+     maskihkiy+N+I+Der/Dim+N+I+N+Pl: [maskihkîsa, maskihkîsisa]
+     maskihkiy+N+I+Der/Dim+N+I+N+Loc+Sg: [maskihkîsihk, maskihkîsisihk]
+     maskihkiy+N+I+Der/Dim+N+I+N+Px1Sg+Sg: [nimaskihkîs, nimaskihkîsis]
+     maskihkiy+N+I+Der/Dim+N+I+N+Px1Sg+Sg: [nimaskihkîsa, nimaskihkîsisa]
+     maskihkiy+N+I+Der/Dim+N+I+N+Px1Sg+Loc: [nimaskihkîsihk, nimaskihkîsisihk]

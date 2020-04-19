@@ -1,0 +1,51 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - nîwa / -îw- - ok : # -m animate dependent husband's ex	AEW NDA4w
+     nîwa+N+A+D+Px1Sg+Sg: nîwa
+     nîwa+N+A+D+Px2Sg+Sg: kîwa
+     nîwa+N+A+D+Px1Pl+Sg: nîwinâna
+     nîwa+N+A+D+Px12Pl+Sg: kîwinawa
+     nîwa+N+A+D+Px2Pl+Sg: kîwiwâwa
+
+     nîwa+N+A+D+Px1Sg+Obv: nîwa
+     nîwa+N+A+D+Px2Sg+Obv: kîwa
+     nîwa+N+A+D+Px1Pl+Obv: nîwinâna
+     nîwa+N+A+D+Px12Pl+Obv: kîwinawa
+     nîwa+N+A+D+Px2Pl+Obv: kîwiwâwa
+
+     nîwa+N+A+D+Px3Sg+Obv: wîwa
+     nîwa+N+A+D+Px3Pl+Obv: wîwiwâwa
+     nîwa+N+A+D+Px4Sg/Pl+Obv: wîwiyiwa
+
+
+     nîwa+N+A+D+Px1Sg+Pl: nîwak
+     nîwa+N+A+D+Px2Sg+Pl: kîwak
+     nîwa+N+A+D+Px1Pl+Pl: nîwinânak
+     nîwa+N+A+D+Px12Pl+Pl: kîwinawak
+     nîwa+N+A+D+Px2Pl+Pl: kîwiwâwak
+
+
+     nîwa+N+A+D+Der/Dim+N+A+D+Px1Sg+Sg:    [nîwis,     nîwisis]
+     nîwa+N+A+D+Der/Dim+N+A+D+Px2Sg+Sg:    [kîwis,     kîwisis]
+     nîwa+N+A+D+Der/Dim+N+A+D+Px1Pl+Sg:    [nîwisinân, nîwisisinân]
+     nîwa+N+A+D+Der/Dim+N+A+D+Px12Pl+Sg:   [kîwisinaw, kîwisisinaw]
+     nîwa+N+A+D+Der/Dim+N+A+D+Px2Pl+Sg:    [kîwisiwâw, kîwisisiwâw]
+
+     nîwa+N+A+D+Der/Dim+N+A+D+Px3Sg+Obv:    [wîwisa,     wîwisisa]
+     nîwa+N+A+D+Der/Dim+N+A+D+Px3Pl+Obv:    [wîwisiwâwa, wîwisisiwâwa]
+     nîwa+N+A+D+Der/Dim+N+A+D+Px4Sg/Pl+Obv: [wîwisiyiwa, wîwisisiyiwa]
+
+     nîwa+N+A+D+Der/Dim+N+A+D+Px1Sg+Pl:    [nîwisak,     nîwisisak]
+     nîwa+N+A+D+Der/Dim+N+A+D+Px2Sg+Pl:    [kîwisak,     kîwisisak]
+     nîwa+N+A+D+Der/Dim+N+A+D+Px1Pl+Pl:    [nîwisinânak, nîwisisinânak]
+     nîwa+N+A+D+Der/Dim+N+A+D+Px12Pl+Pl:   [kîwisinawak, kîwisisinawak]
+     nîwa+N+A+D+Der/Dim+N+A+D+Px2Pl+Pl:    [kîwisiwâwak, kîwisisiwâwak]

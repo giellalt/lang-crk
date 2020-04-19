@@ -1,0 +1,271 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - wîcihêw - ok : # VTA1 (VTA1 AEW) 
+
+###PRS###
+## INDEPENDENT ##
+     wîcihêw+V+TA+Ind+Prs+2Sg+1SgO:    kiwîcihin # LOCAL DIR
+     wîcihêw+V+TA+Ind+Prs+2Sg+1PlO:    kiwîcihinân
+     wîcihêw+V+TA+Ind+Prs+2Pl+1PlO:    kiwîcihinân
+     wîcihêw+V+TA+Ind+Prs+2Pl+1SgO:    kiwîcihinâwâw
+
+     wîcihêw+V+TA+Ind+Prs+1Sg+2SgO:    kiwîcihitin # LOCAL INVERSE
+     wîcihêw+V+TA+Ind+Prs+1Pl+2SgO:    kiwîcihitinân
+     wîcihêw+V+TA+Ind+Prs+1Pl+2PlO:    kiwîcihitinân
+     wîcihêw+V+TA+Ind+Prs+1Sg+2PlO:    kiwîcihitinâwâw
+
+
+     wîcihêw+V+TA+Ind+Prs+1Sg+3SgO:    niwîcihâw # MIXED DIR (obj sg)
+     wîcihêw+V+TA+Ind+Prs+2Sg+3SgO:    kiwîcihâw
+     wîcihêw+V+TA+Ind+Prs+1Pl+3SgO:    niwîcihânân
+     wîcihêw+V+TA+Ind+Prs+12Pl+3SgO:    kiwîcihânaw
+     wîcihêw+V+TA+Ind+Prs+2Pl+3SgO:    kiwîcihâwâw
+     wîcihêw+V+TA+Ind+Prs+1Sg+3PlO:    niwîcihâwak # MIXED DIR (obj pl)
+     wîcihêw+V+TA+Ind+Prs+2Sg+3PlO:    kiwîcihâwak
+     wîcihêw+V+TA+Ind+Prs+1Pl+3PlO:    niwîcihânânak
+     wîcihêw+V+TA+Ind+Prs+12Pl+3PlO:    kiwîcihânawak
+     wîcihêw+V+TA+Ind+Prs+2Pl+3PlO:    kiwîcihâwâwak
+
+     wîcihêw+V+TA+Ind+Prs+1Sg+4Sg/PlO:    niwîcihimâwa # MIXED DIR (obj. obv.)
+     wîcihêw+V+TA+Ind+Prs+2Sg+4Sg/PlO:    kiwîcihimâwa
+     wîcihêw+V+TA+Ind+Prs+1Pl+4Sg/PlO:    niwîcihimânâna
+     wîcihêw+V+TA+Ind+Prs+12Pl+4Sg/PlO:    kiwîcihimânawa
+     wîcihêw+V+TA+Ind+Prs+2Pl+4Sg/PlO:    kiwîcihimâwâwa
+
+     wîcihêw+V+TA+Ind+Prs+3Sg+1SgO:    niwîcihik # MIXED INV (sbj sg)
+     wîcihêw+V+TA+Ind+Prs+3Sg+2SgO:    kiwîcihik
+     wîcihêw+V+TA+Ind+Prs+3Sg+1PlO:    niwîcihikonân
+     wîcihêw+V+TA+Ind+Prs+3Sg+12PlO:    kiwîcihikonaw
+     wîcihêw+V+TA+Ind+Prs+3Sg+2PlO:    kiwîcihikowâw
+     wîcihêw+V+TA+Ind+Prs+3Pl+1SgO:    [niwîcihikowak, niwîcihikwak] # MIXED INV (sbj pl)
+     wîcihêw+V+TA+Ind+Prs+3Pl+2SgO:    [kiwîcihikowak, kiwîcihikwak]
+     wîcihêw+V+TA+Ind+Prs+3Pl+1PlO:    niwîcihikonânak
+     wîcihêw+V+TA+Ind+Prs+3Pl+12PlO:    kiwîcihikonawak
+     wîcihêw+V+TA+Ind+Prs+3Pl+2PlO:    kiwîcihikowâwak
+
+     wîcihêw+V+TA+Ind+Prs+1Sg+4Sg/PlO:    niwîcihimâwa # MIXED INV (sbj obv.)
+     wîcihêw+V+TA+Ind+Prs+2Sg+4Sg/PlO:    kiwîcihimâwa
+     wîcihêw+V+TA+Ind+Prs+1Pl+4Sg/PlO:    niwîcihimânâna
+     wîcihêw+V+TA+Ind+Prs+12Pl+4Sg/PlO:    kiwîcihimânawa
+     wîcihêw+V+TA+Ind+Prs+2Pl+4Sg/PlO:    kiwîcihimâwâwa
+
+     wîcihêw+V+TA+Ind+Prs+3Sg+4Sg/PlO:    wîcihêw # THIRD DIR
+     wîcihêw+V+TA+Ind+Prs+3Pl+4Sg/PlO:    wîcihêwak
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+5Sg/PlO:    wîcihêyiwa
+     wîcihêw+V+TA+Ind+Prs+3Sg+5Sg/PlO:    wîcihimêw
+     wîcihêw+V+TA+Ind+Prs+3Pl+5Sg/PlO:    wîcihimêwak
+
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+3SgO:    [wîcihik, wîcihikow] # THIRD INV
+     wîcihêw+V+TA+Ind+Prs+4Sg/Pl+3PlO:    [wîcihikowak, wîcihikwak]
+     wîcihêw+V+TA+Ind+Prs+5Sg/Pl+4Sg/PlO:    wîcihikoyiwa
+
+
+## CONJUNCT ##
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Sg+1SgO:    ê-wîcihiyan # LOCAL DIR
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Sg+1PlO:    ê-wîcihiyâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Pl+1PlO:    ê-wîcihiyâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Pl+1SgO:    ê-wîcihiyêk
+
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Sg+2SgO:    ê-wîcihitân # LOCAL INVERSE
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Pl+2SgO:    ê-wîcihitâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Pl+2PlO:    ê-wîcihitâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Sg+2PlO:    ê-wîcihitakok
+
+
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Sg+3SgO:    ê-wîcihak # MIXED DIR (obj sg)
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Sg+3SgO:    ê-wîcihat
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Pl+3SgO:    ê-wîcihâyâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+12Pl+3SgO:   ê-wîcihâyahk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Pl+3SgO:    ê-wîcihâyêk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Sg+3PlO:    ê-wîcihakik # MIXED DIR (obj pl)
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Sg+3PlO:    ê-wîcihacik
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Pl+3PlO:    ê-wîcihâyâhkik
+     PV/e+wîcihêw+V+TA+Cnj+Prs+12Pl+3PlO:   ê-wîcihâyahkok
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Pl+3PlO:    ê-wîcihâyêkok
+
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Sg+4Sg/PlO:    ê-wîcihimak # MIXED DIR (obj. obv.)
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Sg+4Sg/PlO:    ê-wîcihimat
+     PV/e+wîcihêw+V+TA+Cnj+Prs+1Pl+4Sg/PlO:    ê-wîcihimâyâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+12Pl+4Sg/PlO:   ê-wîcihimâyahk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+2Pl+4Sg/PlO:    ê-wîcihimâyêk
+
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+1SgO:    ê-wîcihit # MIXED INV (sbj sg)
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+2SgO:    ê-wîcihisk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+1PlO:    ê-wîcihikoyâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+12PlO:   ê-wîcihikoyahk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+2PlO:    ê-wîcihikoyêk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+1SgO:    ê-wîcihicik # MIXED INV (sbj pl)
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+2SgO:    ê-wîcihiskik
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+1PlO:    ê-wîcihikoyâhkik
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+12PlO:   ê-wîcihikoyahkok
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+2PlO:    ê-wîcihikoyêkok
+
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+1SgO:    ê-wîcihimit # MIXED INV (sbj obv.)
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+2SgO:    ê-wîcihimisk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+1PlO:    ê-wîcihikoyâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+12PlO:   ê-wîcihikoyahk
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+2PlO:    ê-wîcihikoyêk
+
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+4Sg/PlO:    ê-wîcihât # THIRD DIR
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+4Sg/PlO:    ê-wîcihâcik
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+5Sg/PlO: ê-wîcihâyit
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Sg+5Sg/PlO:    ê-wîcihimât
+     PV/e+wîcihêw+V+TA+Cnj+Prs+3Pl+5Sg/PlO:    ê-wîcihimâcik
+
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+3SgO:    ê-wîcihikot # THIRD INV
+     PV/e+wîcihêw+V+TA+Cnj+Prs+4Sg/Pl+3PlO:    ê-wîcihikocik
+     PV/e+wîcihêw+V+TA+Cnj+Prs+5Sg/Pl+4Sg/PlO: ê-wîcihikoyit
+
+## FUTURE CONDITIONAL ##
+     wîcihêw+V+TA+Fut+Cond+2Sg+1SgO:    wîcihiyani # LOCAL DIR
+     wîcihêw+V+TA+Fut+Cond+2Sg+1PlO:    wîcihiyâhki
+     wîcihêw+V+TA+Fut+Cond+2Pl+1PlO:    wîcihiyâhki
+     wîcihêw+V+TA+Fut+Cond+2Pl+1SgO:    wîcihiyêko
+
+     wîcihêw+V+TA+Fut+Cond+1Sg+2SgO:    wîcihitâni # LOCAL INVERSE
+     wîcihêw+V+TA+Fut+Cond+1Pl+2SgO:    wîcihitâhki
+     wîcihêw+V+TA+Fut+Cond+1Pl+2PlO:    wîcihitâhki
+     wîcihêw+V+TA+Fut+Cond+1Sg+2PlO:    wîcihitako
+
+
+     wîcihêw+V+TA+Fut+Cond+1Sg+3SgO:    wîcihaki # MIXED DIR (obj sg)
+     wîcihêw+V+TA+Fut+Cond+2Sg+3SgO:    wîcihaci
+     wîcihêw+V+TA+Fut+Cond+1Pl+3SgO:    wîcihâyâhki
+     wîcihêw+V+TA+Fut+Cond+12Pl+3SgO:   [wîcihâyahko, wîcihâyahki]
+     wîcihêw+V+TA+Fut+Cond+2Pl+3SgO:    wîcihâyêko
+     wîcihêw+V+TA+Fut+Cond+1Sg+3PlO:    wîcihakwâwi # MIXED DIR (obj pl)
+     wîcihêw+V+TA+Fut+Cond+2Sg+3PlO:    wîcihatwâwi
+     wîcihêw+V+TA+Fut+Cond+1Pl+3PlO:    wîcihâyâhkwâwi
+     wîcihêw+V+TA+Fut+Cond+12Pl+3PlO:   wîcihâyahkwâwi
+     wîcihêw+V+TA+Fut+Cond+2Pl+3PlO:    wîcihâyêkwâwi
+
+     wîcihêw+V+TA+Fut+Cond+1Sg+4Sg/PlO:    wîcihimaki # MIXED DIR (obj. obv.)
+     wîcihêw+V+TA+Fut+Cond+2Sg+4Sg/PlO:    wîcihimaci
+     wîcihêw+V+TA+Fut+Cond+1Pl+4Sg/PlO:    wîcihimâyâhki
+     wîcihêw+V+TA+Fut+Cond+12Pl+4Sg/PlO:   [wîcihimâyahko, wîcihimâyahki]
+     wîcihêw+V+TA+Fut+Cond+2Pl+4Sg/PlO:    wîcihimâyêko
+
+     wîcihêw+V+TA+Fut+Cond+3Sg+1SgO:    wîcihici # MIXED INV (sbj sg)
+     wîcihêw+V+TA+Fut+Cond+3Sg+2SgO:    wîcihiski
+     wîcihêw+V+TA+Fut+Cond+3Sg+1PlO:    wîcihikoyâhki
+     wîcihêw+V+TA+Fut+Cond+3Sg+12PlO:   [wîcihikoyahko, wîcihikoyahki]
+     wîcihêw+V+TA+Fut+Cond+3Sg+2PlO:    wîcihikoyêko
+     wîcihêw+V+TA+Fut+Cond+3Pl+1SgO:    wîcihitwâwi # MIXED INV (sbj pl)
+     wîcihêw+V+TA+Fut+Cond+3Pl+2SgO:    wîcihiskwâwi
+     wîcihêw+V+TA+Fut+Cond+3Pl+1PlO:    wîcihikoyâhkwâwi
+     wîcihêw+V+TA+Fut+Cond+3Pl+12PlO:   wîcihikoyahkwâwi
+     wîcihêw+V+TA+Fut+Cond+3Pl+2PlO:    wîcihikoyêkwâwi
+
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+1SgO:    wîcihimici # MIXED INV (sbj obv.)
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+2SgO:    wîcihimiski
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+1PlO:    wîcihikoyâhki
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+12PlO:   [wîcihikoyahko, wîcihikoyahki]
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+2PlO:    wîcihikoyêko
+
+     wîcihêw+V+TA+Fut+Cond+3Sg+4Sg/PlO:    wîcihâci # THIRD DIR
+     wîcihêw+V+TA+Fut+Cond+3Pl+4Sg/PlO:    wîcihâtwâwi
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+5Sg/PlO: wîcihâyici
+     wîcihêw+V+TA+Fut+Cond+3Sg+5Sg/PlO:    wîcihimâci
+     wîcihêw+V+TA+Fut+Cond+3Pl+5Sg/PlO:    wîcihimâtwâwi
+
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+3SgO:    wîcihikoci # THIRD INV
+     wîcihêw+V+TA+Fut+Cond+4Sg/Pl+3PlO:    wîcihikotwâwi
+     wîcihêw+V+TA+Fut+Cond+5Sg/Pl+4Sg/PlO: wîcihikoyici
+
+## IMPERATIVE ##
+#LOCAL IMMEDIATE#
+     wîcihêw+V+TA+Imp+Imm+2Sg+1SgO:    wîcihin
+     wîcihêw+V+TA+Imp+Imm+2Sg+1PlO:    wîcihinân
+     wîcihêw+V+TA+Imp+Imm+2Pl+1PlO:    wîcihinân
+     wîcihêw+V+TA+Imp+Imm+2Pl+1SgO:    wîcihik
+#LOCAL DELAYED#
+     wîcihêw+V+TA+Imp+Del+2Sg+1SgO:    wîcihîhkan
+     wîcihêw+V+TA+Imp+Del+2Sg+1PlO:    wîcihîhkâhk
+     wîcihêw+V+TA+Imp+Del+2Pl+1PlO:    wîcihîhkâhk
+     wîcihêw+V+TA+Imp+Del+2Pl+1SgO:    wîcihîhkêk
+
+#MIXED IMMEDIATE#
+     wîcihêw+V+TA+Imp+Imm+2Sg+3SgO:    wîcih # Obj. Sg.
+     wîcihêw+V+TA+Imp+Imm+2Pl+3SgO:    wîcihihk
+     wîcihêw+V+TA+Imp+Imm+12Pl+3SgO:    wîcihâtân
+
+     wîcihêw+V+TA+Imp+Imm+2Sg+3PlO:    wîcihik # Obj. Pl.
+     wîcihêw+V+TA+Imp+Imm+2Pl+3PlO:    wîcihihkok
+     wîcihêw+V+TA+Imp+Imm+12Pl+3PlO:    wîcihâtânik
+#MIXED DELAYED#
+     wîcihêw+V+TA+Imp+Del+2Sg+3SgO:    wîcihâhkan # Obj. Sg.
+     wîcihêw+V+TA+Imp+Del+2Pl+3SgO:    wîcihâhkêk
+     wîcihêw+V+TA+Imp+Del+12Pl+3SgO:    wîcihâhkahk
+
+     wîcihêw+V+TA+Imp+Del+2Sg+3PlO:    wîcihâhkanik # Obj. Pl.
+     wîcihêw+V+TA+Imp+Del+2Pl+3PlO:    wîcihâhkêkok
+     wîcihêw+V+TA+Imp+Del+12Pl+3PlO:    wîcihâhkahkok
+
+
+###PRT###
+
+## INDEPENDENT ##
+     wîcihêw+V+TA+Ind+Prt+2Sg+1SgO:    kikî-wîcihin # LOCAL DIR
+     wîcihêw+V+TA+Ind+Prt+2Sg+1PlO:    kikî-wîcihinân
+     wîcihêw+V+TA+Ind+Prt+2Pl+1PlO:    kikî-wîcihinân
+     wîcihêw+V+TA+Ind+Prt+2Pl+1SgO:    kikî-wîcihinâwâw
+
+     wîcihêw+V+TA+Ind+Prt+1Sg+2SgO:    kikî-wîcihitin # LOCAL INVERSE
+     wîcihêw+V+TA+Ind+Prt+1Pl+2SgO:    kikî-wîcihitinân
+     wîcihêw+V+TA+Ind+Prt+1Pl+2PlO:    kikî-wîcihitinân
+     wîcihêw+V+TA+Ind+Prt+1Sg+2PlO:    kikî-wîcihitinâwâw
+
+## CONJUNCT ##
+     PV/e+wîcihêw+V+TA+Cnj+Prt+2Sg+1SgO:    ê-kî-wîcihiyan # LOCAL DIR
+     PV/e+wîcihêw+V+TA+Cnj+Prt+2Sg+1PlO:    ê-kî-wîcihiyâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prt+2Pl+1PlO:    ê-kî-wîcihiyâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prt+2Pl+1SgO:    ê-kî-wîcihiyêk
+
+     PV/e+wîcihêw+V+TA+Cnj+Prt+1Sg+2SgO:    ê-kî-wîcihitân # LOCAL INVERSE
+     PV/e+wîcihêw+V+TA+Cnj+Prt+1Pl+2SgO:    ê-kî-wîcihitâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prt+1Pl+2PlO:    ê-kî-wîcihitâhk
+     PV/e+wîcihêw+V+TA+Cnj+Prt+1Sg+2PlO:    ê-kî-wîcihitakok
+
+
+###FUT+INT###
+
+## INDEPENDENT ##
+     wîcihêw+V+TA+Ind+Fut+Int+2Sg+1SgO:    kiwî-wîcihin # LOCAL DIR
+     wîcihêw+V+TA+Ind+Fut+Int+2Sg+1PlO:    kiwî-wîcihinân
+     wîcihêw+V+TA+Ind+Fut+Int+2Pl+1PlO:    kiwî-wîcihinân
+     wîcihêw+V+TA+Ind+Fut+Int+2Pl+1SgO:    kiwî-wîcihinâwâw
+
+     wîcihêw+V+TA+Ind+Fut+Int+1Sg+2SgO:    kiwî-wîcihitin # LOCAL INVERSE
+     wîcihêw+V+TA+Ind+Fut+Int+1Pl+2SgO:    kiwî-wîcihitinân
+     wîcihêw+V+TA+Ind+Fut+Int+1Pl+2PlO:    kiwî-wîcihitinân
+     wîcihêw+V+TA+Ind+Fut+Int+1Sg+2PlO:    kiwî-wîcihitinâwâw
+
+## CONJUNCT ##
+     PV/e+wîcihêw+V+TA+Cnj+Fut+Int+2Sg+1SgO:    ê-wî-wîcihiyan # LOCAL DIR
+     PV/e+wîcihêw+V+TA+Cnj+Fut+Int+2Sg+1PlO:    ê-wî-wîcihiyâhk
+     PV/e+wîcihêw+V+TA+Cnj+Fut+Int+2Pl+1PlO:    ê-wî-wîcihiyâhk
+     PV/e+wîcihêw+V+TA+Cnj+Fut+Int+2Pl+1SgO:    ê-wî-wîcihiyêk
+
+     PV/e+wîcihêw+V+TA+Cnj+Fut+Int+1Sg+2SgO:    ê-wî-wîcihitân # LOCAL INVERSE
+     PV/e+wîcihêw+V+TA+Cnj+Fut+Int+1Pl+2SgO:    ê-wî-wîcihitâhk
+     PV/e+wîcihêw+V+TA+Cnj+Fut+Int+1Pl+2PlO:    ê-wî-wîcihitâhk
+     PV/e+wîcihêw+V+TA+Cnj+Fut+Int+1Sg+2PlO:    ê-wî-wîcihitakok
+
+
+###FUT+DEF###
+
+## INDEPENDENT ##
+     wîcihêw+V+TA+Ind+Fut+Def+2Sg+1SgO:    kika-wîcihin # LOCAL DIR
+     wîcihêw+V+TA+Ind+Fut+Def+2Sg+1PlO:    kika-wîcihinân
+     wîcihêw+V+TA+Ind+Fut+Def+2Pl+1PlO:    kika-wîcihinân
+     wîcihêw+V+TA+Ind+Fut+Def+2Pl+1SgO:    kika-wîcihinâwâw
+
+     wîcihêw+V+TA+Ind+Fut+Def+1Sg+2SgO:    kika-wîcihitin # LOCAL INVERSE
+     wîcihêw+V+TA+Ind+Fut+Def+1Pl+2SgO:    kika-wîcihitinân
+     wîcihêw+V+TA+Ind+Fut+Def+1Pl+2PlO:    kika-wîcihitinân
+     wîcihêw+V+TA+Ind+Fut+Def+1Sg+2PlO:    kika-wîcihitinâwâw

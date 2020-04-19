@@ -1,0 +1,59 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lotôkup
+
+Tests:
+  
+  Noun - oskasâkay - ok : # -m animate noun, new coat/dress AEW NA2
+     oskasâkay+N+I+Sg: oskasâkay
+     oskasâkay+N+I+Px1Sg+Sg: nitôskasâkay
+     oskasâkay+N+I+Px2Sg+Sg: kitôskasâkay
+     oskasâkay+N+I+Px1Pl+Sg: nitôskasâkânân
+     oskasâkay+N+I+Px12Pl+Sg: kitôskasâkânaw
+     oskasâkay+N+I+Px2Pl+Sg: kitôskasâkâwâw
+
+     oskasâkay+N+I+Pl: oskasâkaya
+     oskasâkay+N+I+Px1Sg+Pl: nitôskasâkaya
+     oskasâkay+N+I+Px2Sg+Pl: kitôskasâkaya
+     oskasâkay+N+I+Px1Pl+Pl: nitôskasâkânâna
+     oskasâkay+N+I+Px12Pl+Pl: kitôskasâkânawa
+     oskasâkay+N+I+Px2Pl+Pl: kitôskasâkâwâwa
+     
+     oskasâkay+N+I+Loc: oskasâkâhk
+     oskasâkay+N+I+Px1Sg+Loc: nitôskasâkâhk
+     oskasâkay+N+I+Px2Sg+Loc: kitôskasâkâhk
+     oskasâkay+N+I+Px1Pl+Loc: nitôskasâkânâhk
+     oskasâkay+N+I+Px12Pl+Loc: kitôskasâkânâhk
+     oskasâkay+N+I+Px2Pl+Loc: kitôskasâkâwâhk
+     oskasâkay+N+I+Px3Sg+Loc: otôskasâkâhk
+     oskasâkay+N+I+Px3Pl+Loc: otôskasâkâwâhk
+     oskasâkay+N+I+Px4Sg/Pl+Loc: otôskasâkâyihk
+
+     oskasâkay+N+I+Der/Dim+N+I+Sg:           [oskasâkâs,       oskasâkâsis]
+     oskasâkay+N+I+Der/Dim+N+I+Px1Sg+Sg:     [nicôskasâkâs,     nicôskasâkâsis]
+     oskasâkay+N+I+Der/Dim+N+I+Px2Sg+Sg:     [kicôskasâkâs,     kicôskasâkâsis]
+     oskasâkay+N+I+Der/Dim+N+I+Px1Pl+Sg:     [nicôskasâkâsinân, nicôskasâkâsisinân]
+     oskasâkay+N+I+Der/Dim+N+I+Px12Pl+Sg:    [kicôskasâkâsinaw, kicôskasâkâsisinaw]
+     oskasâkay+N+I+Der/Dim+N+I+Px2Pl+Sg:     [kicôskasâkâsiwâw, kicôskasâkâsisiwâw]
+     oskasâkay+N+I+Der/Dim+N+I+Px3Sg+Sg:     [ocôskasâkâs,      ocôskasâkâsis]
+     oskasâkay+N+I+Der/Dim+N+I+Px3Pl+Sg:     [ocôskasâkâsiwâw,  ocôskasâkâsisiwâw]
+     oskasâkay+N+I+Der/Dim+N+I+Px4Sg/Pl+Sg:  [ocôskasâkâsiyiw,  ocôskasâkâsisiyiw]
+               
+     oskasâkay+N+I+Der/Dim+N+I+Pl:           [oskasâkâsa,       oskasâkâsisa]
+     oskasâkay+N+I+Der/Dim+N+I+Px1Sg+Pl:     [nicôskasâkâsa,     nicôskasâkâsisa]
+     oskasâkay+N+I+Der/Dim+N+I+Px2Sg+Pl:     [kicôskasâkâsa,     kicôskasâkâsisa]
+     oskasâkay+N+I+Der/Dim+N+I+Px1Pl+Pl:     [nicôskasâkâsinâna, nicôskasâkâsisinâna]
+     oskasâkay+N+I+Der/Dim+N+I+Px12Pl+Pl:    [kicôskasâkâsinawa, kicôskasâkâsisinawa]
+     oskasâkay+N+I+Der/Dim+N+I+Px2Pl+Pl:     [kicôskasâkâsiwâwa, kicôskasâkâsisiwâwa]
+     oskasâkay+N+I+Der/Dim+N+I+Px3Sg+Pl:     [ocôskasâkâsa,      ocôskasâkâsisa]
+     oskasâkay+N+I+Der/Dim+N+I+Px3Pl+Pl:     [ocôskasâkâsiwâwa,  ocôskasâkâsisiwâwa]
+     oskasâkay+N+I+Der/Dim+N+I+Px4Sg/Pl+Pl:  [ocôskasâkâsiyiwa,  ocôskasâkâsisiyiwa]
+
+     
+     
+     

@@ -1,0 +1,53 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - ihkwa - ok : # -m animate noun, louse AEW NA4w, no loc.
+     ihkwa+N+A+Sg: ihkwa
+     ihkwa+N+A+Px1Sg+Sg: nitihkom
+     ihkwa+N+A+Px2Sg+Sg: kitihkom
+     ihkwa+N+A+Px1Pl+Sg: nitihkominân
+     ihkwa+N+A+Px12Pl+Sg: kitihkominaw
+     ihkwa+N+A+Px2Pl+Sg: kitihkomiwâw
+
+     ihkwa+N+A+Pl: ihkwak
+     ihkwa+N+A+Px1Sg+Pl: nitihkomak
+     ihkwa+N+A+Px2Sg+Pl: kitihkomak
+     ihkwa+N+A+Px1Pl+Pl: nitihkominânak
+     ihkwa+N+A+Px12Pl+Pl: kitihkominawak
+     ihkwa+N+A+Px2Pl+Pl: kitihkomiwâwak
+     
+     ihkwa+N+A+Obv: ihkwa
+     ihkwa+N+A+Px1Sg+Obv: nitihkoma
+     ihkwa+N+A+Px2Sg+Obv: kitihkoma
+     ihkwa+N+A+Px1Pl+Obv: nitihkominâna
+     ihkwa+N+A+Px12Pl+Obv: kitihkominawa
+     ihkwa+N+A+Px2Pl+Obv: kitihkomiwâwa
+     ihkwa+N+A+Px3Sg+Obv: otihkoma
+     ihkwa+N+A+Px3Pl+Obv: otihkomiwâwa
+     ihkwa+N+A+Px4Sg/Pl+Obv: otihkomiyiwa
+     
+     ihkwa+N+A+Der/Dim+N+A+Sg: [ihkos, ihkosis]
+     ihkwa+N+A+Der/Dim+N+A+Px1Sg+Sg: [nicihkomis, nicihkomisis]
+     ihkwa+N+A+Der/Dim+N+A+Px2Sg+Sg: [kicihkomis, kicihkomisis]
+     ihkwa+N+A+Der/Dim+N+A+Px1Pl+Sg: [nicihkomisinân, nicihkomisisinân]
+     ihkwa+N+A+Der/Dim+N+A+Px12Pl+Sg: [kicihkomisinaw, kicihkomisisinaw]
+     ihkwa+N+A+Der/Dim+N+A+Px2Pl+Sg: [kicihkomisiwâw, kicihkomisisiwâw]
+
+     ihkwa+N+A+Der/Dim+N+A+Pl: [ihkosak, ihkosisak]
+     ihkwa+N+A+Der/Dim+N+A+Px1Sg+Pl: [nicihkomisak, nicihkomisisak]
+     ihkwa+N+A+Der/Dim+N+A+Px2Sg+Pl: [kicihkomisak, kicihkomisisak]
+     ihkwa+N+A+Der/Dim+N+A+Px1Pl+Pl: [nicihkomisinânak, nicihkomisisinânak]
+     ihkwa+N+A+Der/Dim+N+A+Px12Pl+Pl: [kicihkomisinawak, kicihkomisisinawak]
+     ihkwa+N+A+Der/Dim+N+A+Px2Pl+Pl: [kicihkomisiwâwak, kicihkomisisiwâwak]
+     
+     ihkwa+N+A+Der/Dim+N+A+Px3Sg+Obv: [ocihkomisa, ocihkomisisa]
+     ihkwa+N+A+Der/Dim+N+A+Px3Pl+Obv: [ocihkomisiwâwa, ocihkomisisiwâwa]
+     ihkwa+N+A+Der/Dim+N+A+Px4Sg/Pl+Obv: [ocihkomisiyiwa, ocihkomisisiyiwa]

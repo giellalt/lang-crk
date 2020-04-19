@@ -1,0 +1,57 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mîpit - ok : # -m inanimate dependent noun, tooth	AEW V-initial NDI1
+     mîpit+N+A+Sg: mîpit
+     mîpit+N+A+Px1Sg+Sg: nîpit
+     mîpit+N+A+Px2Sg+Sg: kîpit
+     mîpit+N+A+Px1Pl+Sg: nîpitinân
+     mîpit+N+A+Px12Pl+Sg: kîpitinaw
+     mîpit+N+A+Px2Pl+Sg: kîpitiwâw
+
+     mîpit+N+A+Pl: mîpita
+     mîpit+N+A+Px1Sg+Pl: nîpita
+     mîpit+N+A+Px2Sg+Pl: kîpita
+     mîpit+N+A+Px1Pl+Pl: nîpitinâna
+     mîpit+N+A+Px12Pl+Pl: kîpitinawa
+     mîpit+N+A+Px2Pl+Pl: kîpitiwâwa
+
+     mîpit+N+A+Px3Sg+Obv: wîpita
+     mîpit+N+A+Px3Pl+Obv: wîpitiwâwa
+     mîpit+N+A+Px4Sg+Obv: wîpitiyiwa
+     mîpit+N+A+Px4Pl+Obv: wîpitiyiwa
+
+     mîpit+N+A+Loc: mîpitihk
+     mîpit+N+A+Px1Sg+Loc: nîpitihk
+     mîpit+N+A+Px2Sg+Loc: kîpitihk
+     mîpit+N+A+Px1Pl+Loc: nîpitinâhk
+     mîpit+N+A+Px12Pl+Loc: kîpitinâhk
+     mîpit+N+A+Px2Pl+Loc: kîpitiwâhk
+     mîpit+N+A+Px3Sg+Loc: wîpitihk
+     mîpit+N+A+Px3Pl+Loc: wîpitiwâhk
+     mîpit+N+A+Px4Sg+Loc: wîpitiyihk
+     mîpit+N+A+Px4Pl+Loc: wîpitiyihk
+
+     mîpit+N+A+Der/Dim+N+A+Sg: mîpicis
+     mîpit+N+A+Der/Dim+N+A+Sg: [mîpicis, mîpicisis]
+     mîpit+N+A+Der/Dim+N+A+Px1Sg+Sg: [nîpicis, nîpicisis]
+     mîpit+N+A+Der/Dim+N+A+Px2Sg+Sg: [kîpicis, kîpicisis]
+     mîpit+N+A+Der/Dim+N+A+Px1Pl+Sg: [nîpicisinân, nîpicisisinân]
+     mîpit+N+A+Der/Dim+N+A+Px12Pl+Sg: [kîpicisinaw, kîpicisisinaw]
+     mîpit+N+A+Der/Dim+N+A+Px2Pl+Sg: [kîpicisiwâw, kîpicisisiwâw]
+
+     mîpit+N+A+Der/Dim+N+A+Pl: [mîpicisa, mîpicisisa]
+     mîpit+N+A+Der/Dim+N+A+Px1Sg+Pl: [nîpicisa, nîpicisisa]
+     mîpit+N+A+Der/Dim+N+A+Px2Sg+Pl: [kîpicisa, kîpicisisa]
+     mîpit+N+A+Der/Dim+N+A+Px1Pl+Pl: [nîpicisinâna, nîpicisisinâna]
+     mîpit+N+A+Der/Dim+N+A+Px12Pl+Pl: [kîpicisinawa, kîpicisisinawa]
+     mîpit+N+A+Der/Dim+N+A+Px2Pl+Pl: [kîpicisiwâwa, kîpicisisiwâwa]
+

@@ -1,0 +1,67 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mêstakay - ok : # -m inanimate dependent noun, hair	AEW V-initial NDI2
+     mêstakay+N+I+D+PxX+Sg: mêstakay
+     mêstakay+N+I+D+Px1Sg+Sg: nêstakay
+     mêstakay+N+I+D+Px2Sg+Sg: kêstakay
+     mêstakay+N+I+D+Px1Pl+Sg: nêstakânân
+     mêstakay+N+I+D+Px12Pl+Sg: kêstakânaw
+     mêstakay+N+I+D+Px2Pl+Sg: kêstakâwâw
+     
+     mêstakay+N+I+D+Px3Sg+Sg: wêstakay
+     mêstakay+N+I+D+Px3Pl+Sg: wêstakâwâw
+     mêstakay+N+I+D+Px4Sg/Pl+Sg: wêstakâyiw
+
+     mêstakay+N+I+D+PxX+Pl: mêstakaya
+     mêstakay+N+I+D+Px1Sg+Pl: nêstakaya
+     mêstakay+N+I+D+Px2Sg+Pl: kêstakaya
+     mêstakay+N+I+D+Px1Pl+Pl: nêstakânâna
+     mêstakay+N+I+D+Px12Pl+Pl: kêstakânawa
+     mêstakay+N+I+D+Px2Pl+Pl: kêstakâwâwa
+     
+     mêstakay+N+I+D+Px3Sg+Pl: wêstakaya
+     mêstakay+N+I+D+Px3Pl+Pl: wêstakâwâwa
+     mêstakay+N+I+D+Px4Sg/Pl+Pl: wêstakâyiwa
+
+     mêstakay+N+I+D+PxX+Loc: mêstakâhk
+     mêstakay+N+I+D+Px1Sg+Loc: nêstakâhk
+     mêstakay+N+I+D+Px2Sg+Loc: kêstakâhk
+     mêstakay+N+I+D+Px1Pl+Loc: nêstakânâhk
+     mêstakay+N+I+D+Px12Pl+Loc: kêstakânâhk
+     mêstakay+N+I+D+Px2Pl+Loc: kêstakâwâhk
+
+     mêstakay+N+I+D+Px3Sg+Loc: wêstakâhk
+     mêstakay+N+I+D+Px3Pl+Loc: wêstakâwâhk
+     mêstakay+N+I+D+Px4Sg/Pl+Loc: wêstakâyihk
+
+     mêstakay+N+I+D+Der/Dim+N+I+D+PxX+Sg:      [mêscakâs,     mêscakâsis]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px1Sg+Sg:    [nêscakâs,     nêscakâsis]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px2Sg+Sg:    [kêscakâs,     kêscakâsis]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px1Pl+Sg:    [nêscakâsinân, nêscakâsisinân]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px12Pl+Sg:   [kêscakâsinaw, kêscakâsisinaw]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px2Pl+Sg:    [kêscakâsiwâw, kêscakâsisiwâw]
+
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px3Sg+Sg:    [wêscakâs,     wêscakâsis]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px3Pl+Sg:    [wêscakâsiwâw, wêscakâsisiwâw]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Sg: [wêscakâsiyiw, wêscakâsisiyiw]
+
+     mêstakay+N+I+D+Der/Dim+N+I+D+PxX+Pl:      [mêscakâsa,     mêscakâsisa]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px1Sg+Pl:    [nêscakâsa,     nêscakâsisa]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px2Sg+Pl:    [kêscakâsa,     kêscakâsisa]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px1Pl+Pl:    [nêscakâsinâna, nêscakâsisinâna]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px12Pl+Pl:   [kêscakâsinawa, kêscakâsisinawa]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px2Pl+Pl:    [kêscakâsiwâwa, kêscakâsisiwâwa]
+     
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px3Sg+Pl:    [wêscakâsa,      wêscakâsisa]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px3Pl+Pl:    [wêscakâsiwâwa,  wêscakâsisiwâwa]
+     mêstakay+N+I+D+Der/Dim+N+I+D+Px4Sg/Pl+Pl: [wêscakâsiyiwa,  wêscakâsisiyiwa]
+

@@ -1,0 +1,61 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - astotin - ok : # -m inanimate noun, hat, cap AEW NI1
+     astotin+N+I+Sg: astotin
+     astotin+N+I+Px1Sg+Sg: nitastotin
+     astotin+N+I+Px2Sg+Sg: kitastotin
+     astotin+N+I+Px1Pl+Sg: nitastotininân
+     astotin+N+I+Px12Pl+Sg: kitastotininaw
+     astotin+N+I+Px2Pl+Sg: kitastotiniwâw
+     astotin+N+I+Px3Sg+Sg: otastotin
+     astotin+N+I+Px3Pl+Sg: otastotiniwâw
+     astotin+N+I+Px4Sg/Pl+Sg: otastotiniyiw
+
+     astotin+N+I+Pl: astotina
+     astotin+N+I+Px1Sg+Pl: nitastotina
+     astotin+N+I+Px2Sg+Pl: kitastotina
+     astotin+N+I+Px1Pl+Pl: nitastotininâna
+     astotin+N+I+Px12Pl+Pl: kitastotininawa
+     astotin+N+I+Px2Pl+Pl: kitastotiniwâwa
+     astotin+N+I+Px3Sg+Pl: otastotina
+     astotin+N+I+Px3Pl+Pl: otastotiniwâwa
+     astotin+N+I+Px4Sg/Pl+Pl: otastotiniyiwa
+
+     astotin+N+I+Loc: astotinihk
+     astotin+N+I+Px1Sg+Loc: nitastotinihk
+     astotin+N+I+Px2Sg+Loc: kitastotinihk
+     astotin+N+I+Px1Pl+Loc: nitastotininâhk
+     astotin+N+I+Px12Pl+Loc: kitastotininâhk
+     astotin+N+I+Px2Pl+Loc: kitastotiniwâhk
+     astotin+N+I+Px3Sg+Loc: otastotinihk
+     astotin+N+I+Px3Pl+Loc: otastotiniwâhk
+     astotin+N+I+Px4Sg/Pl+Loc: otastotiniyihk
+
+     astotin+N+I+Der/Dim+N+I+Sg:          [ascocinis,         ascocinisis]
+     astotin+N+I+Der/Dim+N+I+Px1Sg+Sg:    [nicascocinis,       nicascocinisis]
+     astotin+N+I+Der/Dim+N+I+Px2Sg+Sg:    [kicascocinis,       kicascocinisis]
+     astotin+N+I+Der/Dim+N+I+Px1Pl+Sg:    [nicascocinisinân,   nicascocinisisinân]
+     astotin+N+I+Der/Dim+N+I+Px12Pl+Sg:   [kicascocinisinaw,   kicascocinisisinaw]
+     astotin+N+I+Der/Dim+N+I+Px2Pl+Sg:    [kicascocinisiwâw,   kicascocinisisiwâw]
+     astotin+N+I+Der/Dim+N+I+Px3Sg+Sg:    [ocascocinis,        ocascocinisis]
+     astotin+N+I+Der/Dim+N+I+Px3Pl+Sg:    [ocascocinisiwâw,    ocascocinisisiwâw]
+     astotin+N+I+Der/Dim+N+I+Px4Sg/Pl+Sg: [ocascocinisiyiw,    ocascocinisisiyiw]
+
+     astotin+N+I+Der/Dim+N+I+Pl:          [ascocinisa,       ascocinisisa]
+     astotin+N+I+Der/Dim+N+I+Px1Sg+Pl:    [nicascocinisa,     nicascocinisisa]
+     astotin+N+I+Der/Dim+N+I+Px2Sg+Pl:    [kicascocinisa,     kicascocinisisa]
+     astotin+N+I+Der/Dim+N+I+Px1Pl+Pl:    [nicascocinisinâna, nicascocinisisinâna]
+     astotin+N+I+Der/Dim+N+I+Px12Pl+Pl:   [kicascocinisinawa, kicascocinisisinawa]
+     astotin+N+I+Der/Dim+N+I+Px2Pl+Pl:    [kicascocinisiwâwa, kicascocinisisiwâwa]
+     astotin+N+I+Der/Dim+N+I+Px3Sg+Pl:    [ocascocinisa,      ocascocinisisa]
+     astotin+N+I+Der/Dim+N+I+Px3Pl+Pl:    [ocascocinisiwâwa,  ocascocinisisiwâwa]
+     astotin+N+I+Der/Dim+N+I+Px4Sg/Pl+Pl: [ocascocinisiyiwa,  ocascocinisisiyiwa]

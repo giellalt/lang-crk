@@ -1,0 +1,53 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - êsa - ok : # -m animate noun, clam AEW NA4
+     êsa+N+A+Sg: êsa
+     êsa+N+A+Px1Sg+Sg: nitêsim
+     êsa+N+A+Px2Sg+Sg: kitêsim
+     êsa+N+A+Px1Pl+Sg: nitêsiminân
+     êsa+N+A+Px12Pl+Sg: kitêsiminaw
+     êsa+N+A+Px2Pl+Sg: kitêsimiwâw
+
+     êsa+N+A+Pl: êsak
+     êsa+N+A+Px1Sg+Pl: nitêsimak
+     êsa+N+A+Px2Sg+Pl: kitêsimak
+     êsa+N+A+Px1Pl+Pl: nitêsiminânak
+     êsa+N+A+Px12Pl+Pl: kitêsiminawak
+     êsa+N+A+Px2Pl+Pl: kitêsimiwâwak
+     
+     êsa+N+A+Obv: êsa
+     êsa+N+A+Px1Sg+Obv: nitêsima
+     êsa+N+A+Px2Sg+Obv: kitêsima
+     êsa+N+A+Px1Pl+Obv: nitêsiminâna
+     êsa+N+A+Px12Pl+Obv: kitêsiminawa
+     êsa+N+A+Px2Pl+Obv: kitêsimiwâwa
+     êsa+N+A+Px3Sg+Obv: otêsima
+     êsa+N+A+Px3Pl+Obv: otêsimiwâwa
+     êsa+N+A+Px4Sg/Pl+Obv: otêsimiyiwa
+     
+     êsa+N+A+Der/Dim+N+A+Sg: [êsis, êsisis]
+     êsa+N+A+Der/Dim+N+A+Px1Sg+Sg: [nicêsimis, nicêsimisis]
+     êsa+N+A+Der/Dim+N+A+Px2Sg+Sg: [kicêsimis, kicêsimisis]
+     êsa+N+A+Der/Dim+N+A+Px1Pl+Sg: [nicêsimisinân, nicêsimisisinân]
+     êsa+N+A+Der/Dim+N+A+Px12Pl+Sg: [kicêsimisinaw, kicêsimisisinaw]
+     êsa+N+A+Der/Dim+N+A+Px2Pl+Sg: [kicêsimisiwâw, kicêsimisisiwâw]
+
+     êsa+N+A+Der/Dim+N+A+Pl: [êsisak, êsisisak]
+     êsa+N+A+Der/Dim+N+A+Px1Sg+Pl: [nicêsimisak, nicêsimisisak]
+     êsa+N+A+Der/Dim+N+A+Px2Sg+Pl: [kicêsimisak, kicêsimisisak]
+     êsa+N+A+Der/Dim+N+A+Px1Pl+Pl: [nicêsimisinânak, nicêsimisisinânak]
+     êsa+N+A+Der/Dim+N+A+Px12Pl+Pl: [kicêsimisinawak, kicêsimisisinawak]
+     êsa+N+A+Der/Dim+N+A+Px2Pl+Pl: [kicêsimisiwâwak, kicêsimisisiwâwak]
+     
+     êsa+N+A+Der/Dim+N+A+Px3Sg+Obv: [ocêsimisa, ocêsimisisa]
+     êsa+N+A+Der/Dim+N+A+Px3Pl+Obv: [ocêsimisiwâwa, ocêsimisisiwâwa]
+     êsa+N+A+Der/Dim+N+A+Px4Sg/Pl+Obv: [ocêsimisiyiwa, ocêsimisisiyiwa]

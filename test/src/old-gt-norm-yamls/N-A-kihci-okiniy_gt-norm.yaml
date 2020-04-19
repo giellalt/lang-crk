@@ -1,0 +1,65 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - kihci-okiniy - ok : # -m animate noun, tomato AEW NA2
+     kihci-okiniy+N+A+Sg: kihci-okiniy
+     kihci-okiniy+N+A+Px1Sg+Sg: nikihci-okiniy
+     kihci-okiniy+N+A+Px2Sg+Sg: kikihci-okiniy
+     kihci-okiniy+N+A+Px1Pl+Sg: nikihci-okinînân
+     kihci-okiniy+N+A+Px12Pl+Sg: kikihci-okinînaw
+     kihci-okiniy+N+A+Px2Pl+Sg: kikihci-okinîwâw
+
+     kihci-okiniy+N+A+Pl: kihci-okiniyak
+     kihci-okiniy+N+A+Px1Sg+Pl: nikihci-okiniyak
+     kihci-okiniy+N+A+Px2Sg+Pl: kikihci-okiniyak
+     kihci-okiniy+N+A+Px1Pl+Pl: nikihci-okinînânak
+     kihci-okiniy+N+A+Px12Pl+Pl: kikihci-okinînawak
+     kihci-okiniy+N+A+Px2Pl+Pl: kikihci-okinîwâwak
+     
+     kihci-okiniy+N+A+Obv: kihci-okiniya
+     kihci-okiniy+N+A+Px1Sg+Obv: nikihci-okiniya
+     kihci-okiniy+N+A+Px2Sg+Obv: kikihci-okiniya
+     kihci-okiniy+N+A+Px1Pl+Obv: nikihci-okinînâna
+     kihci-okiniy+N+A+Px12Pl+Obv: kikihci-okinînawa
+     kihci-okiniy+N+A+Px2Pl+Obv: kikihci-okinîwâwa
+     kihci-okiniy+N+A+Px3Sg+Obv: okihci-okiniya
+     kihci-okiniy+N+A+Px3Pl+Obv: okihci-okinîwâwa
+     kihci-okiniy+N+A+Px4Sg/Pl+Obv: okihci-okinîyiwa
+     
+     kihci-okiniy+N+A+Loc: kihci-okinîhk
+     kihci-okiniy+N+A+Px1Sg+Loc: nikihci-okinîhk
+     kihci-okiniy+N+A+Px2Sg+Loc: kikihci-okinîhk
+     kihci-okiniy+N+A+Px1Pl+Loc: nikihci-okinînâhk
+     kihci-okiniy+N+A+Px12Pl+Loc: kikihci-okinînâhk
+     kihci-okiniy+N+A+Px2Pl+Loc: kikihci-okinîwâhk
+     kihci-okiniy+N+A+Px3Sg+Loc: okihci-okinîhk
+     kihci-okiniy+N+A+Px3Pl+Loc: okihci-okinîwâhk
+     kihci-okiniy+N+A+Px4Sg/Pl+Loc: okihci-okinîyihk
+
+     kihci-okiniy+N+A+Der/Dim+N+A+Sg: [kihci-okinîs, kihci-okinîsis]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px1Sg+Sg: [nikihci-okinîs, nikihci-okinîsis]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px2Sg+Sg: [kikihci-okinîs, kikihci-okinîsis]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px1Pl+Sg: [nikihci-okinîsinân, nikihci-okinîsisinân]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px12Pl+Sg: [kikihci-okinîsinaw, kikihci-okinîsisinaw]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px2Pl+Sg: [kikihci-okinîsiwâw, kikihci-okinîsisiwâw]
+
+
+
+     kihci-okiniy+N+A+Der/Dim+N+A+Pl: [kihci-okinîsak, kihci-okinîsisak]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px1Sg+Pl: [nikihci-okinîsak, nikihci-okinîsisak]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px2Sg+Pl: [kikihci-okinîsak, kikihci-okinîsisak]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px1Pl+Pl: [nikihci-okinîsinânak, nikihci-okinîsisinânak]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px12Pl+Pl: [kikihci-okinîsinawak, kikihci-okinîsisinawak]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px2Pl+Pl: [kikihci-okinîsiwâwak, kikihci-okinîsisiwâwak]
+     
+     kihci-okiniy+N+A+Der/Dim+N+A+Px3Sg+Obv: [okihci-okinîsa, okihci-okinîsisa]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px3Pl+Obv: [okihci-okinîsiwâwa, okihci-okinîsisiwâwa]
+     kihci-okiniy+N+A+Der/Dim+N+A+Px4Sg/Pl+Obv: [okihci-okinîsiyiwa, okihci-okinîsisiyiwa]

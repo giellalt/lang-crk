@@ -1,0 +1,51 @@
+Config:
+  hfst:
+    Gên: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gên: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - nîskwa / -îskw- - ok : # -m animate dependent husband's ex AEW NDA4w
+     nîskwa+N+A+D+Px1Sg+Sg: nîskwa
+     nîskwa+N+A+D+Px2Sg+Sg: kîskwa
+     nîskwa+N+A+D+Px1Pl+Sg: nîskonâna
+     nîskwa+N+A+D+Px12Pl+Sg: kîskonawa
+     nîskwa+N+A+D+Px2Pl+Sg: kîskowâwa
+
+     nîskwa+N+A+D+Px1Sg+Obv: nîskwa
+     nîskwa+N+A+D+Px2Sg+Obv: kîskwa
+     nîskwa+N+A+D+Px1Pl+Obv: nîskonâna
+     nîskwa+N+A+D+Px12Pl+Obv: kîskonawa
+     nîskwa+N+A+D+Px2Pl+Obv: kîskowâwa
+
+     nîskwa+N+A+D+Px3Sg+Obv: wîskwa
+     nîskwa+N+A+D+Px3Pl+Obv: wîskowâwa
+     nîskwa+N+A+D+Px4Sg/Pl+Obv: wîskoyiwa
+
+
+     nîskwa+N+A+D+Px1Sg+Pl: nîskwak
+     nîskwa+N+A+D+Px2Sg+Pl: kîskwak
+     nîskwa+N+A+D+Px1Pl+Pl: nîskonânak
+     nîskwa+N+A+D+Px12Pl+Pl: kîskonawak
+     nîskwa+N+A+D+Px2Pl+Pl: kîskowâwak
+
+
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px1Sg+Sg:    [nîskos,     nîskosis]
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px2Sg+Sg:    [kîskos,     kîskosis]
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px1Pl+Sg:    [nîskosinân, nîskosisinân]
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px12Pl+Sg:   [kîskosinaw, kîskosisinaw]
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px2Pl+Sg:    [kîskosiwâw, kîskosisiwâw]
+
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px3Sg+Obv:    [wîskosa,     wîskosisa]
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px3Pl+Obv:    [wîskosiwâwa, wîskosisiwâwa]
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px4Sg/Pl+Obv: [wîskosiyiwa, wîskosisiyiwa]
+
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px1Sg+Pl:    [nîskosak,     nîskosisak]
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px2Sg+Pl:    [kîskosak,     kîskosisak]
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px1Pl+Pl:    [nîskosinânak, nîskosisinânak]
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px12Pl+Pl:   [kîskosinawak, kîskosisinawak]
+     nîskwa+N+A+D+Der/Dim+N+A+D+Px2Pl+Pl:    [kîskosiwâwak, kîskosisiwâwak]

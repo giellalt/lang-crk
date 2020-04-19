@@ -1,0 +1,61 @@
+Config:
+  hfst:
+    Gen: ../../../src/generatôr-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generatôr-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lotôkup
+
+Tests:
+  
+  Noun - osk-âyi - ok : # -m inanimate noun, new thing AEW NI4
+     osk-âyi+N+I+Sg: osk-âyi
+     osk-âyi+N+I+Px1Sg+Sg: nitôsk-âyim
+     osk-âyi+N+I+Px2Sg+Sg: kitôsk-âyim
+     osk-âyi+N+I+Px1Pl+Sg: nitôsk-âyiminân
+     osk-âyi+N+I+Px12Pl+Sg: kitôsk-âyiminaw
+     osk-âyi+N+I+Px2Pl+Sg: kitôsk-âyimiwâw
+     osk-âyi+N+I+Px3Sg+Sg: otôsk-âyim
+     osk-âyi+N+I+Px3Pl+Sg: otôsk-âyimiwâw
+     osk-âyi+N+I+Px4Sg/Pl+Sg: otôsk-âyimiyiw
+
+     osk-âyi+N+I+Pl: osk-âya
+     osk-âyi+N+I+Px1Sg+Pl: nitôsk-âyima
+     osk-âyi+N+I+Px2Sg+Pl: kitôsk-âyima
+     osk-âyi+N+I+Px1Pl+Pl: nitôsk-âyiminâna
+     osk-âyi+N+I+Px12Pl+Pl: kitôsk-âyiminawa
+     osk-âyi+N+I+Px2Pl+Pl: kitôsk-âyimiwâwa
+     osk-âyi+N+I+Px3Sg+Pl: otôsk-âyima
+     osk-âyi+N+I+Px3Pl+Pl: otôsk-âyimiwâwa
+     osk-âyi+N+I+Px4Sg/Pl+Pl: otôsk-âyimiyiwa
+
+     osk-âyi+N+I+Loc: osk-âyihk
+     osk-âyi+N+I+Px1Sg+Loc: nitôsk-âyimihk
+     osk-âyi+N+I+Px2Sg+Loc: kitôsk-âyimihk
+     osk-âyi+N+I+Px1Pl+Loc: nitôsk-âyiminâhk
+     osk-âyi+N+I+Px12Pl+Loc: kitôsk-âyiminâhk
+     osk-âyi+N+I+Px2Pl+Loc: kitôsk-âyimiwâhk
+     osk-âyi+N+I+Px3Sg+Loc: otôsk-âyimihk
+     osk-âyi+N+I+Px3Pl+Loc: otôsk-âyimiwâhk
+     osk-âyi+N+I+Px4Sg/Pl+Loc: otôsk-âyimiyihk
+
+     osk-âyi+N+I+Der/Dim+N+I+Sg:          [osk-âyis,         osk-âyisis]
+     osk-âyi+N+I+Der/Dim+N+I+Px1Sg+Sg:    [nicôsk-âyimis,       nicôsk-âyimisis]
+     osk-âyi+N+I+Der/Dim+N+I+Px2Sg+Sg:    [kicôsk-âyimis,       kicôsk-âyimisis]
+     osk-âyi+N+I+Der/Dim+N+I+Px1Pl+Sg:    [nicôsk-âyimisinân,   nicôsk-âyimisisinân]
+     osk-âyi+N+I+Der/Dim+N+I+Px12Pl+Sg:   [kicôsk-âyimisinaw,   kicôsk-âyimisisinaw]
+     osk-âyi+N+I+Der/Dim+N+I+Px2Pl+Sg:    [kicôsk-âyimisiwâw,   kicôsk-âyimisisiwâw]
+     osk-âyi+N+I+Der/Dim+N+I+Px3Sg+Sg:    [ocôsk-âyimis,        ocôsk-âyimisis]
+     osk-âyi+N+I+Der/Dim+N+I+Px3Pl+Sg:    [ocôsk-âyimisiwâw,    ocôsk-âyimisisiwâw]
+     osk-âyi+N+I+Der/Dim+N+I+Px4Sg/Pl+Sg: [ocôsk-âyimisiyiw,    ocôsk-âyimisisiyiw]
+
+     osk-âyi+N+I+Der/Dim+N+I+Pl:          [osk-âyisa,       osk-âyisisa]
+     osk-âyi+N+I+Der/Dim+N+I+Px1Sg+Pl:    [nicôsk-âyimisa,     nicôsk-âyimisisa]
+     osk-âyi+N+I+Der/Dim+N+I+Px2Sg+Pl:    [kicôsk-âyimisa,     kicôsk-âyimisisa]
+     osk-âyi+N+I+Der/Dim+N+I+Px1Pl+Pl:    [nicôsk-âyimisinâna, nicôsk-âyimisisinâna]
+     osk-âyi+N+I+Der/Dim+N+I+Px12Pl+Pl:   [kicôsk-âyimisinawa, kicôsk-âyimisisinawa]
+     osk-âyi+N+I+Der/Dim+N+I+Px2Pl+Pl:    [kicôsk-âyimisiwâwa, kicôsk-âyimisisiwâwa]
+     osk-âyi+N+I+Der/Dim+N+I+Px3Sg+Pl:    [ocôsk-âyimisa,      ocôsk-âyimisisa]
+     osk-âyi+N+I+Der/Dim+N+I+Px3Pl+Pl:    [ocôsk-âyimisiwâwa,  ocôsk-âyimisisiwâwa]
+     osk-âyi+N+I+Der/Dim+N+I+Px4Sg/Pl+Pl: [ocôsk-âyimisiyiwa,  ocôsk-âyimisisiyiwa]

@@ -1,0 +1,70 @@
+Config:
+  hfst:
+    Gên: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gên: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Noun - mitâs - ok : # -m animate dependent noun, pair  of pants	AEW C-initial NDA1
+     mitâs+N+A+D+PxX+Sg: mitâs
+     mitâs+N+A+D+Px1Sg+Sg: nitâs
+     mitâs+N+A+D+Px2Sg+Sg: kitâs
+     mitâs+N+A+D+Px1Pl+Sg: nitâsinân
+     mitâs+N+A+D+Px12Pl+Sg: kitâsinaw
+     mitâs+N+A+D+Px2Pl+Sg: kitâsiwâw
+     
+     mitâs+N+A+D+PxX+Obv: mitâsa
+     mitâs+N+A+D+Px1Sg+Obv: nitâsa
+     mitâs+N+A+D+Px2Sg+Obv: kitâsa
+     mitâs+N+A+D+Px1Pl+Obv: nitâsinâna
+     mitâs+N+A+D+Px12Pl+Obv: kitâsinawa
+     mitâs+N+A+D+Px2Pl+Obv: kitâsiwâwa
+     
+     mitâs+N+A+D+Px3Sg+Obv: otâsa
+     mitâs+N+A+D+Px3Pl+Obv: otâsiwâwa
+     mitâs+N+A+D+Px4Sg/Pl+Obv: otâsiyiwa
+
+
+     mitâs+N+A+D+PxX+Pl: mitâsak
+     mitâs+N+A+D+Px1Sg+Pl: nitâsak
+     mitâs+N+A+D+Px2Sg+Pl: kitâsak
+     mitâs+N+A+D+Px1Pl+Pl: nitâsinânak
+     mitâs+N+A+D+Px12Pl+Pl: kitâsinawak
+     mitâs+N+A+D+Px2Pl+Pl: kitâsiwâwak
+     
+     mitâs+N+A+D+Px3Sg+Obv: otâsa
+     mitâs+N+A+D+Px3Pl+Obv: otâsiwâwa
+     mitâs+N+A+D+Px4Sg/Pl+Obv: otâsiyiwa
+
+     mitâs+N+A+D+PxX+Loc: mitâsihk
+     mitâs+N+A+D+Px1Sg+Loc: nitâsihk
+     mitâs+N+A+D+Px2Sg+Loc: kitâsihk
+     mitâs+N+A+D+Px1Pl+Loc: nitâsinâhk
+     mitâs+N+A+D+Px12Pl+Loc: kitâsinâhk
+     mitâs+N+A+D+Px2Pl+Loc: kitâsiwâhk
+
+     mitâs+N+A+D+Px3Sg+Loc: otâsihk
+     mitâs+N+A+D+Px3Pl+Loc: otâsiwâhk
+     mitâs+N+A+D+Px4Sg/Pl+Loc: otâsiyihk
+
+     mitâs+N+A+D+Der/Dim+N+A+D+PxX+Sg:      [micâsis,     micâsisis]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px1Sg+Sg:    [nicâsis,     nicâsisis]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px2Sg+Sg:    [kicâsis,     kicâsisis]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px1Pl+Sg:    [nicâsisinân, nicâsisisinân]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px12Pl+Sg:   [kicâsisinaw, kicâsisisinaw]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px2Pl+Sg:    [kicâsisiwâw, kicâsisisiwâw]
+
+     mitâs+N+A+D+Der/Dim+N+A+D+Px3Sg+Obv:    [ocâsisa,     ocâsisisa]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px3Pl+Obv:    [ocâsisiwâwa, ocâsisisiwâwa]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px4Sg/Pl+Obv: [ocâsisiyiwa, ocâsisisiyiwa]
+
+     mitâs+N+A+D+Der/Dim+N+A+D+PxX+Pl:      [micâsisak,     micâsisisak]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px1Sg+Pl:    [nicâsisak,     nicâsisisak]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px2Sg+Pl:    [kicâsisak,     kicâsisisak]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px1Pl+Pl:    [nicâsisinânak, nicâsisisinânak]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px12Pl+Pl:   [kicâsisinawak, kicâsisisinawak]
+     mitâs+N+A+D+Der/Dim+N+A+D+Px2Pl+Pl:    [kicâsisiwâwak, kicâsisisiwâwak]

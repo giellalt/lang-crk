@@ -1,0 +1,28 @@
+Condfig:
+  hfst:
+    Gen: ../../../src/generator-gt-norm.hfst
+    Morph: ../../../src/analyser-gt-norm.hfst
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    Morph: ../../../src/analyser-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - mihkwâw - help : # Wolvengrey VIIv:
+
+
+     mihkwâw+V+II+Ind+Prs+3Sg:  mihkwâw
+     mihkwâw+V+II+Ind+Prs+3Pl:  mihkwâwa
+     mihkwâw+V+II+Ind+Prs+4Sg:  mihkwâyiw
+     mihkwâw+V+II+Ind+Prs+4Pl:  mihkwâyiwa
+     
+     PV/e+mihkwâw+V+II+Cnj+Prs+3Sg: [ê-mihkwâk]
+     PV/e+mihkwâw+V+II+Cnj+Prs+3Pl: [ê-mihkwâki]
+     PV/e+mihkwâw+V+II+Cnj+Prs+4Sg: [ê-mihkwâyik]
+     PV/e+mihkwâw+V+II+Cnj+Prs+4Pl: [ê-mihkwâyiki]
+     
+     mihkwâw+V+II+Fut+Cond+3Sg:  mihkwâki
+     mihkwâw+V+II+Fut+Cond+3Pl:  mihkwâkwâwi
+     mihkwâw+V+II+Fut+Cond+4Sg:  mihkwâyiki
+     mihkwâw+V+II+Fut+Cond+4Pl:  mihkwâyikwâwi
