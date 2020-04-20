@@ -1,0 +1,12 @@
+define Actor [ "+1Sg" | "+2Sg" | "+3Sg" | "+1Pl" | "+2Pl" | "+21Pl" | "+3Pl" | "+4Sg/Pl" | "+5Sg/Pl" | "+X" ] ;
+
+define kii2PrtRule [ [..] -> "+Prt" || "PV/ki+" ?* _ Actor .o. "PV/ki+" -> 0 || _ ?* "+Prt" ] ;
+
+define wii2FutIntRule [ [..] -> [ "+Fut" "+Int" ] || "PV/wi+" ?* _ Actor .o. "PV/wi+" -> 0 || _ ?* [ "+Fut" "+Int" ] ] ; 
+
+define ka2FutDefRule [ [..] -> [ "+Fut" "+Def" ] || "PV/ka+" ?* _ Actor .o. "PV/ka+" -> 0 || _ ?* [ "+Fut" "+Def" ] ] ;
+
+define null2PrsRule [ [..] -> "+Prs" ||  [ "Ind" | "Cnj" ] _  Actor ] ;
+
+regex [ kii2PrtRule .o. wii2FutIntRule .o. ka2FutDefRule .o. null2PrsRule ] ;
+
