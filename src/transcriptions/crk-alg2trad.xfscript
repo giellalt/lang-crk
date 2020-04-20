@@ -6,7 +6,7 @@ define wii2FutIntRule [ [..] -> [ "+Fut" "+Int" ] || "PV/wi+" ?* _ Actor .o. "PV
 
 define ka2FutDefRule [ [..] -> [ "+Fut" "+Def" ] || "PV/ka+" ?* _ Actor .o. "PV/ka+" -> 0 || _ ?* [ "+Fut" "+Def" ] ] ;
 
-define null2PrsRule [ [..] -> "+Prs" ||  [ "Ind" | "Cnj" ] _  Actor ] ;
+define null2PrsRule [ [..] -> "+Prs" ||  [ "+Ind" | "+Cnj" ] _  Actor ] ;
 
 regex [ kii2PrtRule .o. wii2FutIntRule .o. ka2FutDefRule .o. null2PrsRule ] ;
 
