@@ -48,7 +48,7 @@
 
 
 # The pipeline (but use modes, above)
-#  echo "Sun ij puátá." | hfst-tokenise --giella-cg  tools/tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g src/syntax/disambiguation.cg3 -t | vislcg3 -g tools/grammarcheckers/grammarchecker.cg3 -t
+#  echo "Sun ij puátá." | hfst-tokenise --giella-cg  tools/tokenisers/tokeniser-gramcheck-gt-desc.pmhfst | vislcg3 -g src/cg3/disambiguator.cg3 -t | vislcg3 -g tools/grammarcheckers/grammarchecker.cg3 -t
 
 
 
