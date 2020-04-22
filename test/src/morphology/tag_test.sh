@@ -18,7 +18,7 @@ if [[ $1 == "-v" ]]; then
     echo "$0: Are there tags not declared in root.lexc or misspelled?"
 fi
 
-sed -e '1,/LEXICON Root/ d' < ../../../src/morphology/lexicon.tmp.lexc \
+sed -e '1,/LEXICON Root/ d' < ../../../src/fst/lexicon.tmp.lexc \
     | cut -d'!' -f1 \
     | grep ' ;' \
     | cut -d ':' -f1 \
@@ -43,7 +43,7 @@ sed -e '1,/LEXICON Root/ d' < ../../../src/morphology/lexicon.tmp.lexc \
     | grep '[[:alpha:]]'  \
     > "${lexctags}"
 
-cut -d '!' -f1 $srcdir/../../../src/morphology/root.lexc \
+cut -d '!' -f1 $srcdir/../../../src/fst/root.lexc \
     | sed '/LEXICON/q' \
     | grep '+'         \
     | tr '\t' ' '      \
