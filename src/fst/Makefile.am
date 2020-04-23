@@ -83,7 +83,7 @@ GT_DISTRO_SRCS=stems/$(GTLANG)-propernouns.lexc
 GIELLA_LOCAL_TARGETS=
 
 generated_files/eng-propernouns.lexc: \
-			$(GIELLA_SHARED)/eng/src/morphology/stems/eng-propernouns.lexc
+			$(GIELLA_SHARED)/eng/src/fst/stems/eng-propernouns.lexc
 	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_GEN)cp -f $< $@
 
