@@ -52,7 +52,7 @@ o (->) ô,,
 # Dealing with spaces instead of hyphens as separators in multipart words
 
 [ %- ] (->) [ %- ]+,  # Multiple hyphens into a single hyphen
-[ %- ] (->) 0, # Missing hyphens between prefixes/preverbs
+! [ "@U.joiner.NULL@" %- ] (->) 0, # Missing hyphens between prefixes/preverbs
 %- (->) [ %  | %  | %  ]+, # Multiple non-breaking or standard spaces SPACE + NBSP + NNBSP (in syllabics) to single hyphen
 
 # Dealing with English-influenced divergences from SRO, and misspellings based on modern pronunciation
@@ -60,6 +60,7 @@ o (->) ô,,
 # Vowels
 [ i | î ] (->) {ee},
 [ a | â ] (->) u,
+ê (->) [ {ay} | {eh} ],
 
 # Consonants
 k (->) g,   # intervocalic voiced pronunciation to stops, maybe context should be added (including <c> overgenerates)
