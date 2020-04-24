@@ -84,7 +84,9 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and prefix ê-, kâ-, kâki-
 
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
-0                                                                   VERBPREFIXES ;
+@R.cnj.CC@                                                          VERBPREFIXES ;
+@R.joiner.hyphen@                                                   VERBPREFIXES ;
+@U.joiner.NULL@@D.cnj.CC@                                           VERBPREFIXES ;
 @U.joiner.hyphen@@D.cnj.CC@PV/ki+:@U.joiner.hyphen@@D.cnj.CC@kî-%<  VERBPREFIXES ;
 @U.joiner.NULL@@D.cnj.CC@PV/ki+:@U.joiner.NULL@@D.cnj.CC@kî^EGLOT%< VERBPREFIXES ;
 @U.joiner.hyphen@@D.cnj.CC@PV/wi+:@U.joiner.hyphen@@D.cnj.CC@wî-%<  VERBPREFIXES ;
