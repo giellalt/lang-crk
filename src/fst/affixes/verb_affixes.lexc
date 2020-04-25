@@ -45,16 +45,22 @@ LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
 @U.person.NI@:@U.person.NI@nit2%< IND_TENSE ;
 @U.person.KI@:@U.person.KI@kit2%< IND_TENSE ;
 @U.person.NULL@                   IND_TENSE ;
+@P.frag.FRAG@@U.person.NI@:@P.frag.FRAG@@U.person.NI@ni VERB_FRAG ;
+@P.frag.FRAG@@U.person.KI@:@P.frag.FRAG@@U.person.KI@ki VERB_FRAG ;
 
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
 0                                               VERBPREFIXES ;
 @P.joiner.NULL@PV/ki+:@P.joiner.NULL@kî^EGLOT%< VERBPREFIXES ;
 @P.joiner.hyphen@PV/ki+:@P.joiner.hyphen@kî-%<  VERBPREFIXES ;
+@P.frag.FRAG@PV/ki:@P.frag.FRAG@kî              VERB_FRAG ;
 @P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka^EGLOT%< VERBPREFIXES ;
 @P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka-%<  VERBPREFIXES ;
+@P.frag.FRAG@PV/ka:@P.frag.FRAG@ka              VERB_FRAG ;
 @P.joiner.NULL@PV/wi+:@P.joiner.NULL@wî^EGLOT%< VERBPREFIXES ;
 @P.joiner.hyphen@PV/wi+:@P.joiner.hyphen@wî-%<  VERBPREFIXES ;
+@P.frag.FRAG@PV/wi:@P.frag.FRAG@wî              VERB_FRAG ;
+
 
 ! LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
 ! @U.tense.Prs@                                                             VERBPREFIXES ;
@@ -70,13 +76,17 @@ LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no pre
 @U.order.FutCon@ VERBPREFIXES ;
 
 
-LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and prefix ê-, kâ-, kâki-
+LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and prefix ê-, ka-, and kâ-
 @P.joiner.hyphen@PV/e+:@P.joiner.hyphen@ê-%<          CNJ_TENSE ;
 @P.joiner.NULL@PV/e+:@P.joiner.NULL@ê^EGLOT%<         CNJ_TENSE ;
 @P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka-%<        CNJ_TENSE ;
 @P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka^EGLOT%<       CNJ_TENSE ;
 @P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ-%<       CNJ_TENSE ;
 @P.joiner.NULL@PV/kaa+:@P.joiner.NULL@kâ^EGLOT%<      CNJ_TENSE ;
+! Conjunct preverbs as fragments
+@P.frag.FRAG@PV/e+:@P.frag.FRAG@ê    VERB_FRAG ;
+@P.frag.FRAG@PV/ka+:@P.frag.FRAG@ka  VERB_FRAG ;
+@P.frag.FRAG@PV/kaa+:@P.frag.FRAG@kâ VERB_FRAG ;
 
 0 CNJ_TENSE ; ! Option to allow for the occasional omission of the grammatical conjunct prefix without a changed conjunct
 
@@ -89,8 +99,10 @@ LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
 @U.joiner.NULL@@D.cnj.CC@                                           VERBPREFIXES ;
 @U.joiner.hyphen@@D.cnj.CC@PV/ki+:@U.joiner.hyphen@@D.cnj.CC@kî-%<  VERBPREFIXES ;
 @U.joiner.NULL@@D.cnj.CC@PV/ki+:@U.joiner.NULL@@D.cnj.CC@kî^EGLOT%< VERBPREFIXES ;
+@D.cnj.CC@@P.frag.FRAG@PV/ki+:@D.cnj.CC@@P.frag.FRAG@kî             VERB_FRAG ;
 @U.joiner.hyphen@@D.cnj.CC@PV/wi+:@U.joiner.hyphen@@D.cnj.CC@wî-%<  VERBPREFIXES ;
 @U.joiner.NULL@@D.cnj.CC@PV/wi+:@U.joiner.NULL@@D.cnj.CC@wî^EGLOT%< VERBPREFIXES ;
+@D.cnj.CC@@P.frag.FRAG@PV/wi+:@D.cnj.CC@@P.frag.FRAG@wî             VERB_FRAG ;
 
 ! LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
 ! @U.tense.Prs@                                                                           VERBPREFIXES ;
@@ -124,9 +136,11 @@ RdplS+:d1âh  REDUPL_BOUND ;
 LEXICON REDUPL_BOUND
 @U.joiner.NULL@@D.cnj.CC@:@U.joiner.NULL@@D.cnj.CC@%<      REDUPL_CONT ;
 @U.joiner.hyphen@@D.cnj.CC@:@U.joiner.hyphen@@D.cnj.CC@-%< REDUPL_CONT ;
+@D.cnj.CC@@P.frag.FRAG@:@D.cnj.CC@@P.frag.FRAG@            VERB_FRAG ;
 
 @U.joiner.NULL@@R.cnj.CC@@C.cnj@:@U.joiner.NULL@@R.cnj.CC@@C.cnj@%^IC%<      REDUPL_CONT ;
 @U.joiner.hyphen@@R.cnj.CC@@C.cnj@:@U.joiner.hyphen@@R.cnj.CC@@C.cnj@%^IC-%< REDUPL_CONT ;
+@R.cnj.CC@@C.cnj@@P.frag.FRAG@:@R.cnj.CC@@C.cnj@@P.frag.FRAG@%^IC            VERB_FRAG ;
 
 ! @U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%<      REDUPL_CONT ;
 ! @U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%< REDUPL_CONT ;
@@ -397,9 +411,11 @@ PV/yoski+:yôski PREVERBS_BOUND "soft, softly" ;
 LEXICON PREVERBS_BOUND
 @U.joiner.NULL@@D.cnj.CC@:@U.joiner.NULL@@D.cnj.CC@%^EGLOT%< VERBPREFIXES ;
 @U.joiner.hyphen@@D.cnj.CC@:@U.joiner.hyphen@@D.cnj.CC@-%<   VERBPREFIXES ;
+@D.cnj.CC@@P.frag.FRAG@ VERB_FRAG ;
 
 @U.joiner.NULL@@R.cnj.CC@@C.cnj@:@U.joiner.NULL@@R.cnj.CC@@C.cnj@%^IC%^EGLOT%< VERBPREFIXES ;
 @U.joiner.hyphen@@R.cnj.CC@@C.cnj@:@U.joiner.hyphen@@R.cnj.CC@@C.cnj@%^IC-%<   VERBPREFIXES ;
+@R.cnj.CC@@C.cnj@@P.frag.FRAG@:@R.cnj.CC@@C.cnj@@P.frag.FRAG@%^IC VERB_FRAG ;
 
 ! @U.joiner.NULL@@C.cnj@:@U.joiner.NULL@@C.cnj@%^EGLOT%< VERBPREFIXES ;
 ! @U.joiner.hyphen@@C.cnj@:@U.joiner.hyphen@@C.cnj@-%<   VERBPREFIXES ;
@@ -408,11 +424,13 @@ LEXICON PREVERBS_BOUND
 LEXICON WICI
 @U.joiner.NULL@@D.cnj.CC@:@U.joiner.NULL@@D.cnj.CC@wîci%^EGLOT%<      VERBSTEMS ; !!!! We need to deal with the wît- allomorph
 @U.joiner.hyphen@@D.cnj.CC@:@U.joiner.hyphen@@D.cnj.CC@wîci-%<        VERBSTEMS ; !!!! We need to deal with the wît- allomorph
+@D.cnj.CC@@P.frag.FRAG@PV/wici+:@D.cnj.CC@@P.frag.FRAG@wîci            VERB_FRAG ;
 
 @U.joiner.NULL@@R.cnj.CC@@C.cnj@:@U.joiner.NULL@@R.cnj.CC@@C.cnj@wîci%^IC%^EGLOT%<      VERBSTEMS ; !!!! We need to deal with the wît- allomorph
 @U.joiner.hyphen@@R.cnj.CC@@C.cnj@:@U.joiner.hyphen@@R.cnj.CC@@C.cnj@wîci%^IC-%<        VERBSTEMS ; !!!! We need to deal with the wît- allomorph
+@R.cnj.CC@@C.cnj@@P.frag.FRAG@PV/wici+:@R.cnj.CC@@C.cnj@@P.frag.FRAG@wîci%^IC            VERB_FRAG ;
 
-!! Now, lexc directs us to the ../stems/verbs_stems.lexc file,
+!! Now, LEXC directs us to the ../stems/verbs_stems.lexc file,
 !! where we find all the verbal stems. The suffixes are then
 !! found in the section "Suffixes" right underneath.
 
@@ -2840,6 +2858,9 @@ LEXICON VTA_FUT_CON_NULL_PL_SUFFIX
 
 +4Sg/Pl+3PlO:%>i2kotwâwi		   VERB_ENDLEX ;
 
+
+!!!!! ENDLEX !!!!!
+
 LEXICON VERB_ENDLEX
 @D.cnj.CC@@R.joiner.NULL@+Err/Orth:@D.cnj.CC@@R.joiner.NULL@ # ;
 @D.cnj.CC@@D.joiner.NULL@ # ;
@@ -2847,4 +2868,24 @@ LEXICON VERB_ENDLEX
 @R.cnj.CC@@R.joiner.NULL@+Err/Orth:@R.cnj.CC@@R.joiner.NULL@%^IC # ;
 @R.cnj.CC@@D.joiner.NULL@:@R.cnj.CC@@D.joiner.NULL@%^IC # ;
 
-!! End of verb affixes code
+! Fragments
+
+LEXICON VERB_FRAG
+@R.frag.FRAG@ VERB_FRAG_ORDER ;
+
+LEXICON VERB_FRAG_ORDER
+@R.order.indep@+Ind:@R.order.indep@          VERB_FRAG_IND_PERSON ;
+@R.order.cnj@+Cnj:@R.order.cnj@              VERB_FRAG_END ;
+@U.order.imp@+Imp:@U.order.imp@              VERB_FRAG_END ;
+@U.order.FutCon@+Fut+Cond:@U.order.FutCon@   VERB_FRAG_END ;
+
+LEXICON VERB_FRAG_IND_PERSON
+@U.person.NI@+1:@U.person.NI@     VERB_FRAG_END ;
+@U.person.KI@+2:@U.person.KI@     VERB_FRAG_END ;
+@U.person.NULL@+3:@U.person.NULL@ VERB_FRAG_END ;
+
+LEXICON VERB_FRAG_END
+@D.cnj.CC@+Err/Frag:@D.cnj.CC@0    # ;
+@R.cnj.CC@+Err/Frag:@R.cnj.CC@%^IC # ;
+
+!! End of verb affixes LEXC code
