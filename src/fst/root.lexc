@@ -124,6 +124,11 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +5Sg/PlO !!= * @CODE@ ambiguous 5th person (both Singular and Plural)
 +X !!= * @CODE@ Unspecified actor forms Okimāsis p. 118
 
+!! Person prefix fragment features
++1
++2
++3
+
 
 !! Nominal morphosyntactic features
 ! Number
@@ -180,6 +185,10 @@ PV/ka+ ! Future definite tense (only independent)
 PV/e+
 PV/kaa+
 PV/kaa_ki+
+
+! Comitative preverb
+
+PV/wici+
 
 ! General preverbs
 
@@ -481,6 +490,7 @@ d2  !!=* @CODE@  Reduplication consonant marker
 !! normative and descriptive analysers, and generators for different purposes.
 
 +Err/Orth !!= * @CODE@ tag for substandard forms
++Err/Frag !!= * @CODE@ tag for word-form fragments
 +Dial !!= * @CODE@ tag for dialectical forms that can't be called errors
 +Use/NG  !!= * @CODE@ not-generate, for ped generation isme-ped.fst
 +Eng !!≈ * @CODE@ indicates that this is an English form
@@ -515,16 +525,15 @@ d2  !!=* @CODE@  Reduplication consonant marker
 @R.joiner.NULL@
 @D.joiner.NULL@
 
+! Prefixal fragments
+
+@P.frag.FRAG@
+@R.frag.FRAG@
+
 !! The conjunct form always has
 !! the ê- prefix, and future conditional never has a prefix.
 
 @U.verb.FutCon@ !!= * @CODE@ Future Conditional
-
-@U.order.cnj@  !!= * @CODE@ Conjunct
-@U.verb.fut@  !!= * @CODE@ Future Conditional
-@U.verb.sbjPrt@ !!=*@CODE@ Past tense Conjunct mode
-@U.verb.sbjPrs@ !!=*@CODE@ Present tense Conjunct mode
-@U.verb.sbjFutureInt@ !!=*@CODE@ Future intentional tense Conjunct mode
 
 !! Prefixes with a certain phonological content:
 
@@ -532,25 +541,38 @@ d2  !!=* @CODE@  Reduplication consonant marker
 @U.person.NI@ !!= * @CODE@
 @U.person.KI@ !!= * @CODE@
 
-! Test:
-@U.order.imp@
-@U.order.indep@
+
+!! Order
+
+@U.order.indep@ !!= * @CODE@ Independent
+@U.order.cnj@   !!= * @CODE@ Conjunct
+@U.order.imp@   !!= * @CODE@ Imperative
+@U.order.FutCon@
+
+@P.order.cnj@
+@P.order.indep@
+
+@R.order.indep@
+@R.order.cnj@
+
+@D.order.indep@
+@D.order.cnj@
+
+@D.order@
+@D.tense@
+
+
+!! Tense
+
 @U.tense.Prs@
 @U.tense.Prt@
 @U.tense.FutDef@
 @U.tense.FutInt@
 @U.tense.FutCon@
-@U.order.indep@
-@U.order.FutInt@
-@U.order.FutCon@
-@D.order@
-@D.tense@
-@R.order.cnj@
-@D.order.indep@
-@D.order.cnj@
-@R.order.indep@
-@P.order.cnj@
-@P.order.indep@
+
+@U.Imm.Imp@
+@U.Imm.Del@
+
 
 ! Changed conjunct trigger flags
 @P.cnj.CC@
@@ -558,8 +580,6 @@ d2  !!=* @CODE@  Reduplication consonant marker
 @R.cnj.CC@
 @D.cnj.CC@
 
-@U.Imm.Imp@
-@U.Imm.Del@
 
 !! New multichar symbols for nouns
 +Sg
