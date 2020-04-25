@@ -19,8 +19,6 @@
 ! ========================================================================== !
 
 
-
-
 !! The Plains Cree verbs are divided in four groups:
 
 !! # AI: Animate intransitive 
@@ -29,9 +27,7 @@
 !! # TI: Transitive inanimate
 
 
-
 !! !!!Prefixes
-
 
 LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
 
@@ -39,6 +35,8 @@ LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independen
 @U.order.cnj@   CONJUNCT ;            !!= * @CODE@ 
                 IMPERATIVE ;          !!= * @CODE@
                 FUTURE_CONDITIONAL ;  !!= * @CODE@
+! Stem-only fragments without any verbal prefixes
+@P.frag.FRAG@   VERBSTEMS ;
 
 
 LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
@@ -2862,11 +2860,13 @@ LEXICON VTA_FUT_CON_NULL_PL_SUFFIX
 !!!!! ENDLEX !!!!!
 
 LEXICON VERB_ENDLEX
-@D.cnj.CC@@R.joiner.NULL@+Err/Orth:@D.cnj.CC@@R.joiner.NULL@ # ;
-@D.cnj.CC@@D.joiner.NULL@ # ;
+@D.frag.FRAG@@D.cnj.CC@@R.joiner.NULL@+Err/Orth:@D.frag.FRAG@@D.cnj.CC@@R.joiner.NULL@ # ;
+@D.frag.FRAG@@D.cnj.CC@@D.joiner.NULL@ # ;
 ! Adding changed conjunct trigger: IC
-@R.cnj.CC@@R.joiner.NULL@+Err/Orth:@R.cnj.CC@@R.joiner.NULL@%^IC # ;
-@R.cnj.CC@@D.joiner.NULL@:@R.cnj.CC@@D.joiner.NULL@%^IC # ;
+@D.frag.FRAG@@R.cnj.CC@@R.joiner.NULL@+Err/Orth:@D.frag.FRAG@@R.cnj.CC@@R.joiner.NULL@%^IC # ;
+@D.frag.FRAG@@R.cnj.CC@@D.joiner.NULL@:@D.frag.FRAG@@R.cnj.CC@@D.joiner.NULL@%^IC # ;
+! Stem-only fragments
+@R.frag.FRAG@ VERB_FRAG_END ;
 
 ! Fragments
 
