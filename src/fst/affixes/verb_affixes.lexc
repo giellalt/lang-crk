@@ -51,13 +51,13 @@ LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense
 0                                               VERBPREFIXES ;
 @P.joiner.NULL@PV/ki+:@P.joiner.NULL@kî^EGLOT%< VERBPREFIXES ;
 @P.joiner.hyphen@PV/ki+:@P.joiner.hyphen@kî-%<  VERBPREFIXES ;
-@P.frag.FRAG@PV/ki:@P.frag.FRAG@kî              VERB_FRAG ;
+@P.frag.FRAG@PV/ki+:@P.frag.FRAG@kî             VERB_FRAG ;
 @P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka^EGLOT%< VERBPREFIXES ;
 @P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka-%<  VERBPREFIXES ;
-@P.frag.FRAG@PV/ka:@P.frag.FRAG@ka              VERB_FRAG ;
+@P.frag.FRAG@PV/ka+:@P.frag.FRAG@ka             VERB_FRAG ;
 @P.joiner.NULL@PV/wi+:@P.joiner.NULL@wî^EGLOT%< VERBPREFIXES ;
 @P.joiner.hyphen@PV/wi+:@P.joiner.hyphen@wî-%<  VERBPREFIXES ;
-@P.frag.FRAG@PV/wi:@P.frag.FRAG@wî              VERB_FRAG ;
+@P.frag.FRAG@PV/wi+:@P.frag.FRAG@wî             VERB_FRAG ;
 
 
 ! LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
@@ -2871,7 +2871,7 @@ LEXICON VERB_ENDLEX
 ! Fragments
 
 LEXICON VERB_FRAG
-@R.frag.FRAG@ VERB_FRAG_ORDER ;
+@R.frag.FRAG@_:@R.frag.FRAG@ VERB_FRAG_ORDER ;
 
 LEXICON VERB_FRAG_ORDER
 @R.order.indep@+Ind:@R.order.indep@          VERB_FRAG_IND_PERSON ;
