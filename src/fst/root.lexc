@@ -128,6 +128,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +1
 +2
 +3
+1+
+2+
+3+
 
 
 !! Nominal morphosyntactic features
@@ -542,7 +545,8 @@ d2  !!=* @CODE@  Reduplication consonant marker
 @U.person.NULL@ !!= * @CODE@
 @U.person.NI@ !!= * @CODE@
 @U.person.KI@ !!= * @CODE@
-
+@D.person@
+@R.person@
 
 !! Order
 
