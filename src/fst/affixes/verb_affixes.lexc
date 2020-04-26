@@ -131,6 +131,48 @@ RdplS+:d1âh  REDUPL_BOUND ;
 @U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@d2ay3d1âh      REDUPL_BOUND ;
 @U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@d2ay3-d1âh REDUPL_BOUND ;
 
+@P.frag.FRAG@ REDUPL_FRAG;
+
+LEXICON REDUPL_FRAG
+RdplW+:ca VERB_FRAG ;
+RdplW+:ka VERB_FRAG ;
+RdplW+:ma VERB_FRAG ;
+RdplW+:na VERB_FRAG ;
+RdplW+:pa VERB_FRAG ;
+RdplW+:sa VERB_FRAG ;
+RdplW+:ta VERB_FRAG ;
+RdplW+:wa VERB_FRAG ;
+RdplW+:ya VERB_FRAG ;
+RdplS+:câh VERB_FRAG ;
+RdplS+:kâh VERB_FRAG ;
+RdplS+:mâh VERB_FRAG ;
+RdplS+:nâh VERB_FRAG ;
+RdplS+:pâh VERB_FRAG ;
+RdplS+:sâh VERB_FRAG ;
+RdplS+:tâh VERB_FRAG ;
+RdplS+:wâh VERB_FRAG ;
+RdplS+:yâh VERB_FRAG ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@cacâh      VERB_FRAG ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@ca-câh VERB_FRAG ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@kakâh      VERB_FRAG ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@ka-kâh VERB_FRAG ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@mamâh      VERB_FRAG ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@ma-mâh VERB_FRAG ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@nanâh      VERB_FRAG ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@na-nâh VERB_FRAG ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@nanâh      VERB_FRAG ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@na-nâh VERB_FRAG ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@papâh      VERB_FRAG ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@pa-pâh VERB_FRAG ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@sasâh      VERB_FRAG ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@sa-sâh VERB_FRAG ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@tatâh      VERB_FRAG ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@ta-tâh VERB_FRAG ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@wawâh      VERB_FRAG ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@wa-wâh VERB_FRAG ;
+@U.joiner.NULL@RdplW+RdplS+:@U.joiner.NULL@yayâh      VERB_FRAG ;
+@U.joiner.hyphen@RdplW+RdplS+:@U.joiner.hyphen@ya-yâh VERB_FRAG ;
+
 LEXICON REDUPL_BOUND
 @U.joiner.NULL@@D.cnj.CC@:@U.joiner.NULL@@D.cnj.CC@%<      REDUPL_CONT ;
 @U.joiner.hyphen@@D.cnj.CC@:@U.joiner.hyphen@@D.cnj.CC@-%< REDUPL_CONT ;
