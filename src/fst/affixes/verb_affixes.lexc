@@ -38,7 +38,6 @@ LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independen
 ! Stem-only fragments without any verbal prefixes
 @P.frag.FRAG@   VERBSTEMS ;
 
-
 LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
 @U.person.NI@:@U.person.NI@nit2%< IND_TENSE ;
 @U.person.KI@:@U.person.KI@kit2%< IND_TENSE ;
@@ -86,20 +85,23 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and prefix ê-, ka-, and kâ
 @P.frag.FRAG@PV/ka+:@P.frag.FRAG@ka  VERB_FRAG ;
 @P.frag.FRAG@PV/kaa+:@P.frag.FRAG@kâ VERB_FRAG ;
 
-0 CNJ_TENSE ; ! Option to allow for the occasional omission of the grammatical conjunct prefix without a changed conjunct
+@P.frag.FRAG@ CNJ_TENSE ; ! Option to allow for the occasional omission of the grammatical conjunct prefix without a changed conjunct
 
 @P.cnj.CC@IC+:@P.cnj.CC@ CNJ_TENSE ; ! Changed conjunct forms with initial change (IC) and no grammatical conjunct prefix
 
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
-@R.cnj.CC@                                                          VERBPREFIXES ;
-@R.joiner.hyphen@                                                   VERBPREFIXES ;
-@U.joiner.NULL@@D.cnj.CC@                                           VERBPREFIXES ;
+! Skipping tense preverbs with various conditions
+@R.joiner.hyphen@                                                  VERBPREFIXES ;
+@R.joiner.NULL@ VERBPREFIXES ;                                     VERBPREFIXES ;
+@R.cnj.CC@ VERBPREFIXES ;                                          VERBPREFIXES ;
+! Regular occurrence of tense preverbs
 @U.joiner.hyphen@@D.cnj.CC@PV/ki+:@U.joiner.hyphen@@D.cnj.CC@kî-%<  VERBPREFIXES ;
 @U.joiner.NULL@@D.cnj.CC@PV/ki+:@U.joiner.NULL@@D.cnj.CC@kî^EGLOT%< VERBPREFIXES ;
-@D.cnj.CC@@P.frag.FRAG@PV/ki+:@D.cnj.CC@@P.frag.FRAG@kî             VERB_FRAG ;
 @U.joiner.hyphen@@D.cnj.CC@PV/wi+:@U.joiner.hyphen@@D.cnj.CC@wî-%<  VERBPREFIXES ;
 @U.joiner.NULL@@D.cnj.CC@PV/wi+:@U.joiner.NULL@@D.cnj.CC@wî^EGLOT%< VERBPREFIXES ;
+! Prefix fragments ending with these tense preverbs
+@D.cnj.CC@@P.frag.FRAG@PV/ki+:@D.cnj.CC@@P.frag.FRAG@kî             VERB_FRAG ;
 @D.cnj.CC@@P.frag.FRAG@PV/wi+:@D.cnj.CC@@P.frag.FRAG@wî             VERB_FRAG ;
 
 ! LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
