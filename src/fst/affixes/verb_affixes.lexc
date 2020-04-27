@@ -113,8 +113,6 @@ LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
 LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
 @U.order.imp@  VERBPREFIXES ;
 
-!! Words marked GG are from Plains Cree Grammar guide and glossary
-
 
 !! !! Preverbs
 !     ==========
@@ -481,32 +479,6 @@ LEXICON WICI
 ! ===============================================================
 
 !! !!!Suffixes
-
-!! fst:
-!! AICONJ:  stem
-!! AICONJw: stem (excl w)
-! 
-!! Wolv:
-!! AICONJ_n
-!! AICONJ_w
-
-! Auxiliary lexica for the verb dump
-
-! LEXICON AICONJ_n 
-! VAIn ;
-! LEXICON AICONJ_v 
-! VAIw ;
-
-
-!! LEXICON TACONJ_3 
-!! TACONJ_2 ;
-!! 
-!! LEXICON TACONJ_4 
-!! TACONJ_2 ;
-
-! LEXICON TICONJi  ! Trond dymmy delete
-! # ;
-
 
 !! !!! Intransitive inanimate (II)
 !      ===========================
