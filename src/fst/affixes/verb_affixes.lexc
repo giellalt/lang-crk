@@ -93,8 +93,8 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and prefix ê-, ka-, and kâ
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
 ! Skipping tense preverbs with various conditions
 @R.joiner.hyphen@                                                  VERBPREFIXES ;
-@R.joiner.NULL@ VERBPREFIXES ;                                     VERBPREFIXES ;
-@R.cnj.CC@ VERBPREFIXES ;                                          VERBPREFIXES ;
+@R.joiner.NULL@                                                    VERBPREFIXES ;
+@R.cnj.CC@                                                         VERBPREFIXES ;
 ! Regular occurrence of tense preverbs
 @U.joiner.hyphen@@D.cnj.CC@PV/ki+:@U.joiner.hyphen@@D.cnj.CC@kî-%<  VERBPREFIXES ;
 @U.joiner.NULL@@D.cnj.CC@PV/ki+:@U.joiner.NULL@@D.cnj.CC@kî^EGLOT%< VERBPREFIXES ;
