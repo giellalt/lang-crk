@@ -25,7 +25,7 @@ morf_codes="+A+Sg+Nom \
             +A+Attr"
 
 # Lexicon source file for lexicons and lemmas:
-source_file=src/morphology/stems/adjectives.lexc
+source_file=src/fst/stems/adjectives.lexc
 
 # Lexicons that should NOT be used to extract lemmas (egrep expression):
 exception_lexicons="(flagK)"
