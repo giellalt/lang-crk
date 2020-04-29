@@ -20,7 +20,7 @@ sh test/data/testnounlemmas.sh
 ! A certain form for all lemmas
 The example is for animate nouns, all the continuation lexicons for these nouns start with AN
 {{{
-grep ' AN' src/morphology/stems/nouns.lexc |\
+grep ' AN' src/fst/stems/nouns.lexc |\
 egrep -v '^(\!|LEX)' | tr ":" " " | cut -d " " -f1 |\
 sed 's/$/+N+AN+Loc/' | dcrk | less
 }}}
