@@ -1,7 +1,7 @@
 "make check" does both lemma generation tests and yaml-tests
 
 The lemma generation tests have to be listed in the file: \\
-test/src/morphology/Makefile.am like this:
+test/src/fst/Makefile.am like this:
 {{{
 GENERATION_TESTS_IN=generate-noun-lemmas.sh.in  \
                     generate-verb-lemmas.sh.in

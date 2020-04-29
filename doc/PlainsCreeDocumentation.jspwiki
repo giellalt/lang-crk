@@ -4,8 +4,8 @@
 !!! Dynamic documentation
 
 * [Links to generated source file documentation|Links.html]
-* Source files: [stems|https://gtsvn.uit.no/langtech/trunk/langs/crk/src/morphology/stems/]   
-  / [affixes|https://gtsvn.uit.no/langtech/trunk/langs/crk/src/morphology/affixes/] 
+* Source files: [stems|https://gtsvn.uit.no/langtech/trunk/langs/crk/src/fst/stems/]   
+  / [affixes|https://gtsvn.uit.no/langtech/trunk/langs/crk/src/fst/affixes/] 
   / [syntax|https://gtsvn.uit.no/langtech/trunk/langs/crk/src/syntax/] 
   / [twolc|https://gtsvn.uit.no/langtech/trunk/langs/crk/src/phonology/crk-phon.twolc]   
   / [yaml|https://gtsvn.uit.no/langtech/trunk/langs/crk/test/src/gt-norm-yamls/]
@@ -32,7 +32,7 @@
 
 !!!Practical work
 * [Practical developing work, for the linguist|developingwork.html]
-* [The tags that are in use|https://gtsvn.uit.no/langtech/trunk/langs/crk/src/morphology/root.lexc]   
+* [The tags that are in use|https://gtsvn.uit.no/langtech/trunk/langs/crk/src/fst/root.lexc]   
 * [A list of morphological tags|/lang/common/MorphologicalTags.html]
 * [Plains Cree disambiguation|PlainsCreeDisambiguation.html]
 
