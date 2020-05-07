@@ -23,7 +23,7 @@ hfst-compose -x ON -1 - -2 crk-morphophon.hfst -o crk-drv$SUFFIX.hfst
 # hfst-compose -x ON -1 - -2 crk-morphophon.hfst -o crk-drv$SUFFIX.hfst
 echo 'CRK-DRV: Composed together derivational morphology and phonology.' ;
 
-cat $GTLANG_crk/src/morphology/root.lexc $GTLANG_crk/src/morphology/affixes///noun_affixes.lexc $GTLANG_crk/src/morphology/affixes///propernouns.lexc $GTLANG_crk/src/morphology/affixes///verb_affixes.lexc $GTLANG_crk/src/morphology/stems///abbreviations.lexc $GTLANG_crk/src/morphology/stems///crk-propernouns.lexc $GTLANG_crk/src/morphology/stems///noun_stems.lexc $GTLANG_crk/src/morphology/stems///numerals.lexc $GTLANG_crk/src/morphology/stems///particles.lexc $GTLANG_crk/src/morphology/stems///pronouns.lexc $GTLANG_crk/src/morphology/stems///verb_stems.lexc $GTLANG_crk/src/morphology///stems/derivation_stems.lexc > crk-infl.lexc
+cat $GTLANG_crk/src/fst/root.lexc $GTLANG_crk/src/fst/affixes///noun_affixes.lexc $GTLANG_crk/src/fst/affixes///propernouns.lexc $GTLANG_crk/src/fst/affixes///verb_affixes.lexc $GTLANG_crk/src/fst/stems///abbreviations.lexc $GTLANG_crk/src/fst/stems///crk-propernouns.lexc $GTLANG_crk/src/fst/stems///noun_stems.lexc $GTLANG_crk/src/fst/stems///numerals.lexc $GTLANG_crk/src/fst/stems///particles.lexc $GTLANG_crk/src/fst/stems///pronouns.lexc $GTLANG_crk/src/fst/stems///verb_stems.lexc $GTLANG_crk/src/fst///stems/derivation_stems.lexc > crk-infl.lexc
 
 hfst-lexc crk-infl.lexc -o crk-infl-morph.hfst
 echo 'CRK-DRV: Compiled inflectional morphology.' ;
@@ -37,7 +37,7 @@ hfst-xfst -e "load crk-drv-infl-morph$SUFFIX.hfst" -e "twosided flag-diacritics"
 echo 'CRK-DRV: Removed flag: infl' ;
 echo 'CRK-DRV: Removed flag: morf' ;
 
-# hfst-twolc -i $GTLANG_crk/src/phonology/crk-phon.twolc -o crk-phon.hfst
+hfst-twolc -i $GTLANG_crk/src/fst/phonology.twolc -o crk-phon.hfst
 # echo 'Compiled inflectional morphophonological TWOLC rules.'
 
 echo 'CRD-DRV: Composing and intersecting together inflectional morphology and phonology.'
