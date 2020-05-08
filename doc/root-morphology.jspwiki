@@ -98,6 +98,8 @@ Verbal MSP
  * +5Sg/PlO  ambiguous 5th person (both Singular and Plural)
  * +X  Unspecified actor forms Okimāsis p. 118
 
+Person prefix fragment features
+
 
 Nominal morphosyntactic features
  * +Sg		  singular
@@ -135,6 +137,10 @@ Noun animacy and dependency classes
  * +Neg      negation; [na]môy[a].
 
 Preverbs
+
+
+
+
 
 
 
@@ -183,6 +189,8 @@ and generators from each other. Thus, for examples, we have
 normative and descriptive analysers, and generators for different purposes.
 
  * +Err/Orth  tag for substandard forms
+ * +Err/Frag  tag for word-form fragments
+ * +Dial  tag for dialectical forms that can't be called errors
  * +Use/NG   not-generate, for ped generation isme-ped.fst
  * +Eng indicates that this is an English form
 
@@ -202,13 +210,13 @@ subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
 
 
+
+
+
 The conjunct form always has
 the ê- prefix, and future conditional never has a prefix.
 
  * @U.verb.FutCon@  Future Conditional
-
- * @U.order.cnj@   Conjunct
- * @U.verb.fut@   Future Conditional
 
 Prefixes with a certain phonological content:
 
@@ -216,11 +224,25 @@ Prefixes with a certain phonological content:
  * @U.person.NI@ 
  * @U.person.KI@ 
 
+Order
+
+ * @U.order.indep@  Independent
+ * @U.order.cnj@    Conjunct
+ * @U.order.imp@    Imperative
+
+
+
+
+
+
+Tense
+
+
+
 
 
 
 New multichar symbols for nouns
-
 
 
 
