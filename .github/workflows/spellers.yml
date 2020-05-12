@@ -9,6 +9,7 @@ on: push
 jobs:
   build:
     runs-on: self-hosted
+    container: ubuntu:18.04
     steps:
       - uses: actions/checkout@v2
         with:
