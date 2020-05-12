@@ -1,0 +1,33 @@
+[package]
+name = "sma"
+human_name = "South Sami Speller"
+version = "4.2.0"
+
+# Table of speller tag -> filename to include in the bundle
+[spellers.sma]
+filename = "sma-mobile.zhfst"
+
+# Table of bundles to generated
+# key is the type of bundle
+# Windows speller bundle require a uuid for the installer
+[bundles.speller_win]
+package = "speller-sma"
+platform = "windows"
+uuid = "51852B34-FDAC-5748-B467-CF731D711EE0"
+repo = "https://pahkat.uit.no/main/"
+
+[bundles.speller_macos]
+package = "speller-sma"
+platform = "macos"
+repo = "https://pahkat.uit.no/main/"
+
+[bundles.speller_win_mso]
+package = "speller-sma-mso"
+platform = "windows"
+uuid = "4F5DBECF-5760-487C-9CAB-62DAA3A86EAF"
+repo = "https://pahkat.uit.no/main/"
+
+[bundles.speller_mobile]
+package = "speller-sma"
+platform = "mobile"
+repo = "https://pahkat.uit.no/main/"
