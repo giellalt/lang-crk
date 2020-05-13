@@ -290,7 +290,7 @@ if(pos=="VII-n" && (lemma=="misi-yôtin" || lemma=="mispon" || lemma=="wâsêskw
   { clex="VIIn_SG"; }
 if(pos=="VII-n" && match(lemma,"a$")!=0) 
   { clex="VIIn_PL"; }
-if(lemma=="nîpin" || lemma=="âpihtâ-nîpin" || lemma=="mâýâtan") # EXPANSION: n3 for -in, but not -an, or -on final VII verbs
+if(match(lemma,"an$")!=0) || lemma=="nîpin" || lemma=="âpihtâ-nîpin" || match(lemma,"^(.+[-])?pipon$")!=0) # EXPANSION: n3 for all -an final II verbs, and selected -in, and -on final VII verbs
   sub("n$","n3",stem);
 
 # VAI
