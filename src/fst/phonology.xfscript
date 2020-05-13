@@ -90,7 +90,7 @@ define iiRule [ i2 -> 0 || i Bx _ ] ;
 
 ! #Cwi > Co (i and i2)
 
-define Cwi2CoôRule [ w %> [ i | i2 ] -> %> o ,, w %> ii2 -> %> ô  || Consonant _ ] ;
+define Cwi2CoôRule [ w %> [ i | i2 ] -> %> o , w %> ii2 -> %> ô  || Consonant _ ] ;
 
 !!€ atimw>i2^DIMs
 !!€ acimo000s
