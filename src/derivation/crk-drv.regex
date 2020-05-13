@@ -26,23 +26,23 @@ define wiwEpenthesisRule [ [ w %/ w ] (->) [ w %/ i w ] ] ;
 
 ! VG-i > V̅
 
-define aGiRule [ [ a | â ] [ w | y | ý ] %/ i -> â ] ;
+define aGiRule [ [ a | â ] [ w | y | ý ] %/ i -> â %/ ] ;
 
-define eGiRule [ ê [ w | y | ý ] %/ i -> ê ] ;
+define eGiRule [ ê [ w | y | ý ] %/ i -> ê %/ ] ;
 
-define iGiRule [ [ i | î ] [ w | y | ý ] %/ [ i | î ] -> î ] ;
+define iGiRule [ [ i | î ] [ w | y | ý ] %/ [ i | î ] -> î %/ ] ;
 
-define oGiRule [ [ o | ô ] [ w | y | ý ] %/ i -> ô ] ;
+define oGiRule [ [ o | ô ] [ w | y | ý ] %/ i -> ô %/ ] ;
 
 ! Same vowel collapses rules
 
-define aCollapseRule [ [ a | â ] %/ [ a | â ] -> â ] ;
+define aCollapseRule [ [ a | â ] %/ [ a | â ] -> â %/ ] ;
 
 define eCollapseRule [ ê %/ ê -> ê ] ;
 
-define iCollapseRule [ [ i | î ] %/ [ i | î ] -> î ] ;
+define iCollapseRule [ [ i | î ] %/ [ i | î ] -> î %/ ] ;
 
-define oCollapseRule [ [ o | ô ] %/ [ o | ô ] -> ô ] ;
+define oCollapseRule [ [ o | ô ] %/ [ o | ô ] -> ô %/ ] ;
 
 ! Morpheme-final w-
 
@@ -52,24 +52,33 @@ define CwiC2CoCRule  [ w %/ i -> o %/ || [ c | h | k | m | n | p | s | t ] _ [ c
 
 ! Cw-ô > Cô
 
-define Cwoo2CooRule [ w %/ ô  -> ô || [ c | h | k | m | n | p | s | t ] _ ] ;
+define Cwoo2CooRule [ w %/ ô  -> ô %/ || [ c | h | k | m | n | p | s | t ] _ ] ;
 
 ! Cw-o > C{o,ô}
 
-define Cwo2Coo2Rule [ [ w %/ o ] -> [ o | ô ] || [ c | h | k | m | n | p | s | t ] _ ] ;
+define Cwo2Coo2Rule [ [ w %/ o ] -> [ [ o | ô ] %/ ] || [ c | h | k | m | n | p | s | t ] _ ] ;
 
 ! Cw-wV > CwV
 
-define ww2wRule [ [ w %/ w ] -> w || [ c | h | k | m | n | p | s | t ] _ [ a | â | ê | i | î | o | ô ] ] ;
+define ww2wRule [ [ w %/ w ] -> w %/  || [ c | h | k | m | n | p | s | t ] _ [ a | â | ê | i | î | o | ô ] ] ;
 
 ! Morpheme-final y- to be explored
 ! Cy-yV > CyV ??? 
 
 ! {m,n} > h / __ -{p,t,k} OR Ø > i / {m,n} __ -{p,t,k,c} 
 
-define N2hRule [ [ m | n ] %/ -> h || _ [ p | t | k | c ] ] ;
+define N2hRule [ [ m | n ] -> h || _ %/ [ p | t | k | c ] ] ;
 
-define boundaryRule [ %/ -> 0 ] ;
+! Reducing one of cross-boundary vowel pairs
+
+define iBiRule [ [ i | î ] -> 0 || _ %/ [ a | â | ê | i | î | o | ô ] ,, [ a | â | ê | o | ô ] %/ _ ] ;
+
+define VBVRule [ [ a | â | ê | o | ô ] -> 0 || _ %/ [ a | â | ê | o | ô ] ] ;
+
+! define boundaryRule [ [ %/ ]+ -> 0 ] ;
+define boundaryRule [ [ %/ ]+ -> %/ ] ;
+
+define rmBoundary  [ %/ -> 0 || .#. _ ] .o. [ %/ -> 0 || _ .#. ] ;
 
 read regex [ dimRule
 .o. ên2ânRule
@@ -93,7 +102,10 @@ read regex [ dimRule
 .o. ww2wRule 
 .o. N2hRule
 .o. tc2Rule
+.o. iBiRule
+.o. VBVRule
 .o. boundaryRule
+.o. rmBoundary
 ] ;
 
 ! define Phonology
