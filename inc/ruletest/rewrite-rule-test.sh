@@ -1,10 +1,13 @@
 #!/bin/sh
 
-# rewrite-rule-test.sh 1: LEXC-form 2: XFSCRIPT rule file (path)
+# rewrite-rule-test.sh 1: XFSCRIPT rule file (path)
 
-echo "$1" |
+# LEXC forms from standard input, so multiple words can be processed
+# Input must have one LEXC form per line to be processed,
+# as well as an optional second space-separated form representing the
+# final outcome.
 
-gawk -v XFSCRIPT=$2 'BEGIN { xfscript=XFSCRIPT;
+gawk -v XFSCRIPT=$1 'BEGIN { xfscript=XFSCRIPT;
   while((getline < xfscript)!=0)
   { if(index($0,"regex")!=0)
       { rx=1; regex=""; }
@@ -17,7 +20,12 @@ gawk -v XFSCRIPT=$2 'BEGIN { xfscript=XFSCRIPT;
   n=split(regex,rule,"[ ]*\\.o\\.[ ]*");
   }
 }
-{ input=$0; lexc=$0;
+{ input=$1; lexc=$1;
+  gsub("0","",input);
+  if($2!="")
+    { target=$2;
+      gsub("0","",target);
+    }
   gsub("\\.o\\.","->",regex);
   print "REWRITE RULE SEQUENCE:";
   print regex;
@@ -38,7 +46,16 @@ gawk -v XFSCRIPT=$2 'BEGIN { xfscript=XFSCRIPT;
        input=$2;
      }
   print "---";
-  print "1-"n": "lexc" -> "$2;
+  output=$2;
+  gsub("[<>]","",output);
+  if(target!="")
+    if(output==target)
+      success="(=)";
+    else
+      success="(<> "target")";
+  else
+      success="";
+  print "1-"n": "lexc" -> "$2" "success;
   print "";
 }'
 
