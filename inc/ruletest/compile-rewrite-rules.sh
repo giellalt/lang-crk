@@ -18,8 +18,8 @@ while((getline < xfscript)!=0)
 sub("^[ ]*(read )regex.*\\[[ ]*","",regex);
 sub("[ ]*\\].*;.*$","",regex);
 n=split(regex,rule,"[ ]*\\.o\\.[ ]*");
-cmd="-e \"source "xfscript"\" -e \"clear stack\"";
+cmd="-e \"source "xfscript"\"";
 for(i=1; i<=n; i++)
-   cmd=cmd" -e \"push "rule[i]"\" -e \"save stack "rule[i]".foma\"";
+   cmd=cmd" -e \"clear stack\" -e \"push "rule[i]"\" -e \"save stack "rule[i]".foma\"";
 }
 END { system("foma "cmd" -e \"quit\""); }'
