@@ -1,7 +1,7 @@
 # gt.m4 - Macros to locate and utilise giella-core scripts and required tools
 # for the Divvun and Giellatekno infrastructure. -*- Autoconf -*-
 # serial 1 (gtsvn-1)
-# 
+#
 # Copyright © 2011 Divvun/Samediggi/UiT <bugs@divvun.no>.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -32,11 +32,6 @@
 AC_DEFUN([gt_PROG_SCRIPTS_PATHS],
 [
 
-# Look for an environmental variable GIELLA_MAINTAINER; if found, enable
-# additional checks:
-AC_ARG_VAR([GIELLA_MAINTAINER], [define if you are maintaining the Giella infra to get additional complaining about infra integrity])
-AM_CONDITIONAL([WANT_MAINTAIN], [test x"$GIELLA_MAINTAINER" != x])
-
 AC_PATH_PROG([GTCORESH], [gt-core.sh], [false],
              [$GIELLA_CORE/scripts$PATH_SEPARATOR$GTHOME/giella-core/scripts$PATH_SEPARATOR$PATH])
 
@@ -46,16 +41,23 @@ AC_ARG_WITH([giella-core],
             [with_giella_core=$withval],
             [with_giella_core=false])
 
+# Get the relative path from pwd to where src dir is:
+MYSRCDIR=$srcdir
+# Get the absolute path to the present dir:
+BUILD_DIR_PATH=$(pwd)
+# Combine to get the full path to the scrdir:
+THIS_TOP_SRC_DIR=$BUILD_DIR_PATH/$MYSRCDIR
+
 _giella_core_not_found_message="
 GIELLA_CORE could not be set:
 
 Could not set GIELLA_CORE and thus not find required scripts in:
-       \$GIELLA_CORE/scripts 
-       \$GTHOME/giella-core/scripts 
-       $PATH 
+       \$GIELLA_CORE/scripts
+       \$GTHOME/giella-core/scripts
+       $PATH
 
-       Please do the following: 
-       1. svn co https://gtsvn.uit.no/langtech/trunk/giella-core
+       Please do the following:
+       1. svn co https://github.com/giellalt/giella-core.git/trunk
        2. then either:
          a: cd giella-core && ./autogen.sh && ./configure && make install
 
@@ -81,38 +83,15 @@ AS_IF([test "x$with_giella_core" != "xfalse" -a \
           -d "$with_giella_core/scripts" ], [
     GIELLA_CORE=$with_giella_core
     ],[
-    # GIELLA_CORE is the env. variable for this dir:
-    AS_IF([test "x$GIELLA_CORE" != "x" -a \
-              -d "$GIELLA_CORE/scripts"], [], [
-        # GIELLA_HOME is the new GTHOME:
-        AS_IF([test "x$GIELLA_HOME" != "x" -a \
-                  -d "$GIELLA_HOME/giella-core/scripts"], [
-            GIELLA_CORE=$GIELLA_HOME/giella-core
+    # If not, Look in the parent dir:
+    AS_IF([test -d "$THIS_TOP_SRC_DIR/../giella-core/scripts"], [
+        GIELLA_CORE=$THIS_TOP_SRC_DIR/../giella-core
+    ], [
+        # If nothing else works, try pkg-config:
+        AS_IF([pkg-config --exists giella-core], [
+            GIELLA_CORE=$(pkg-config --variable=dir giella-core)
         ], [
-            # GTHOME for backwards compatibility - it is deprecated:
-            AS_IF([test "x$GTHOME" != "x" -a \
-                      -d "$GTHOME/giella-core/scripts"], [
-                GIELLA_CORE=$GTHOME/giella-core
-            ], [
-                # GTCORE for backwards compatibility - it is deprecated:
-                AS_IF([test "x$GTCORE" != "x" -a \
-                          -d "$GTCORE/scripts"], [
-                    GIELLA_CORE=$GTCORE
-                ], [
-                    # Try the gt-core.sh script. NB! It is deprecated:
-                    AS_IF([test "x$GTCORESH" != xfalse -a \
-                           -d "$(${GTCORESH})/scripts"], [
-                        GIELLA_CORE=$(${GTCORESH})
-                    ], [
-                       # If nothing else works, try pkg-config:
-                       AS_IF([pkg-config --exists giella-core], [
-                           GIELLA_CORE=$(pkg-config --variable=dir giella-core)
-                       ], [
-                       AC_MSG_ERROR([${_giella_core_not_found_message}])
-                       ])
-                   ])
-                ])
-            ])
+            AC_MSG_ERROR([${_giella_core_not_found_message}])
         ])
     ])
 ])
@@ -120,7 +99,7 @@ AC_MSG_RESULT([$GIELLA_CORE])
 
 ### This is the version of the Giella Core that we require. Update as needed.
 ### It is possible to specify also subversion revision: 0.1.2-12345
-_giella_core_min_version=0.3.8
+_giella_core_min_version=0.4.5
 
 # GIELLA_CORE/GTCORE env. variable, required by the infrastructure to find scripts:
 AC_ARG_VAR([GIELLA_CORE], [directory for the Giella infra core scripts and other required resources])
@@ -179,33 +158,18 @@ AC_ARG_WITH([giella-shared],
 AC_MSG_CHECKING([whether we can set GIELLA_SHARED])
 # --with-giella-shared overrides everything:
 AS_IF([test "x$with_giella_shared" != "xfalse" -a \
-    -f $with_giella_shared/all_langs/src/filters/make-optional-transitivity-tags.regex], [
+    -d $with_giella_shared/all_langs ], [
     GIELLA_SHARED=$with_giella_shared
-    ],[
-    # GiELLA_SHARED is the default env. variable for this dir:
-    AS_IF([test "x$GIELLA_SHARED" != "x" -a \
-    -f $GIELLA_SHARED/all_langs/src/filters/make-optional-transitivity-tags.regex], [], [
-        # GIELLA_HOME is the new GTHOME:
-        AS_IF([test "x$GIELLA_HOME" != "x" -a \
-    -f $GIELLA_HOME/giella-shared/all_langs/src/filters/make-optional-transitivity-tags.regex], [
-            GIELLA_SHARED=$GIELLA_HOME/giella-shared
-        ], [
-            # GTHOME for backwards compatibility - it is deprecated:
-            AS_IF([test "x$GTHOME" != "x" -a \
-    -f $GTHOME/giella-shared/all_langs/src/filters/make-optional-transitivity-tags.regex], [
-                GIELLA_SHARED=$GTHOME/giella-shared
-            ], [
-                # GTCORE for backwards compatibility - it is deprecated:
-                AS_IF([test "x$GTCORE" != "x" -a \
-    -f $GTCORE/giella-shared/all_langs/src/filters/make-optional-transitivity-tags.regex], [
-                    GIELLA_SHARED=$GTCORE/giella-shared
-                ], [
-                   AS_IF([pkg-config --exists giella-common], [
-                       GIELLA_SHARED=$(pkg-config --variable=dir giella-common)
-                   ],
-                   [AC_MSG_ERROR([Could not find giella-common data dir to set GIELLA_SHARED])])
-                ])
-            ])
+    ], [
+    # Check in the parent directory:
+    AS_IF([test -d $THIS_TOP_SRC_DIR/../giella-shared/all_langs ], [
+        GIELLA_SHARED=$THIS_TOP_SRC_DIR/../giella-shared
+    ], [
+        AS_IF([pkg-config --exists giella-common], [
+            GIELLA_SHARED=$(pkg-config --variable=dir giella-common)
+        ],
+        [
+     AC_MSG_ERROR([Could not find giella-common data dir to set GIELLA_SHARED])
         ])
     ])
 ])
@@ -213,7 +177,7 @@ AC_MSG_RESULT([$GIELLA_SHARED])
 
 ### This is the version of the Giella Shared that we require. Update as needed.
 ### It is possible to specify also subversion revision: 0.1.2-12345
-_giella_shared_min_version=0.1.8
+_giella_shared_min_version=0.2.0
 
 # GIELLA_SHARED is required by the infrastructure to find shared data:
 AC_ARG_VAR([GIELLA_SHARED], [directory for giella shared data, like proper nouns and regexes])
@@ -231,8 +195,6 @@ svn up
 ./autogen.sh # required only the first time
 ./configure  # required only the first time
 make
-sudo make install # optional, only needed if installed
-                  # earlier or installed on a server.
 "
 
 # Identify the version of giella-shared:
@@ -268,51 +230,6 @@ AX_COMPARE_VERSION([$_giella_shared_version], [ge], [$_giella_shared_min_version
 AS_IF([test "x${giella_shared_version_ok}" != xno], [AC_MSG_RESULT([$giella_shared_version_ok])],
 [AC_MSG_ERROR([$giella_shared_too_old_message])])
 
-
-################################
-### Giella-templates dir:
-################
-# 1. check --with-giella-templates option
-# 2. check env GIELLA_TEMPLATES, then GIELLA_HOME, then GTHOME
-# 3. error if not found
-
-# GIELLA_TEMPLATES is required if you do infrastructure maintenance, otherwise it is ignored:
-AM_COND_IF([WANT_MAINTAIN], [
-
-AC_ARG_WITH([giella-templates],
-            [AS_HELP_STRING([--with-giella-templates=DIRECTORY],
-                            [search giella-templates data in DIRECTORY @<:@default=PATH@:>@])],
-            [with_giella_templates=$withval],
-            [with_giella_templates=false])
-
-AC_MSG_CHECKING([whether we can set GIELLA_TEMPLATES])
-# --with-giella-templates overrides everything:
-AS_IF([test "x$with_giella_templates" != "xfalse" -a \
-          -d "$with_giella_templates/langs-templates" ], [
-    GIELLA_TEMPLATES=$with_giella_templates
-    ],[
-    # GIELLA_TEMPLATES is the env. variable for this dir:
-    AS_IF([test "x$GIELLA_TEMPLATES" != "x" -a \
-              -d "$GIELLA_TEMPLATES/langs-templates"], [], [
-        # GIELLA_HOME is the new GTHOME:
-        AS_IF([test "x$GIELLA_HOME" != "x" -a \
-                  -d "$GIELLA_HOME/giella-templates/langs-templates"], [
-            GIELLA_TEMPLATES=$GIELLA_HOME/giella-templates
-        ], [
-            # GTHOME for backwards compatibility - it is deprecated:
-            AS_IF([test "x$GTHOME" != "x" -a \
-                      -d "$GTHOME/giella-templates/langs-templates"], [
-                GIELLA_TEMPLATES=$GTHOME/giella-templates
-            ], [AC_MSG_ERROR([Could not find giella-templates data dir to set GIELLA_TEMPLATES])])
-        ])
-    ])
-])
-AC_MSG_RESULT([$GIELLA_TEMPLATES])
-
-# GIELLA_TEMPLATES is required if you do infrastructure maintenance (otherwise it is ignored):
-AC_ARG_VAR([GIELLA_TEMPLATES], [directory for infrastructure templates, required for maintainers])
-
-],[])
 
 ################################
 ### Giella-libs dir:
@@ -357,7 +274,7 @@ AC_MSG_RESULT([$GIELLA_LIBS])
 AC_ARG_VAR([GIELLA_LIBS], [directory containing precompiled libraries for proofing tools])
 
 ################################
-### Some software that we either depend on or we need for certain functionality: 
+### Some software that we either depend on or we need for certain functionality:
 ################
 
 ################ Weighted fst's ################
@@ -370,7 +287,7 @@ AC_ARG_ENABLE([yamltests],
               [enable_yamltests=$enableval],
               [enable_yamltests=check])
 
-AS_IF([test "x$enable_yamltests" = "xcheck"], 
+AS_IF([test "x$enable_yamltests" = "xcheck"],
      [AM_PATH_PYTHON([3.5],, [:])
      AX_PYTHON_MODULE(yaml)
      AC_MSG_CHECKING([whether to enable yaml-based test])
@@ -405,7 +322,7 @@ AC_ARG_WITH([forrest],
             [AS_HELP_STRING([--with-forrest=DIRECTORY],
                             [search forrest in DIRECTORY @<:@default=PATH@:>@])],
             [with_forrest=$withval],
-            [with_forrest=yes])
+            [with_forrest=no])
 AC_PATH_PROG([FORREST], [forrest], [], [$PATH$PATH_SEPARATOR$with_forrest])
 AC_MSG_CHECKING([whether to do forrest validation of in-source documentation])
 AS_IF([test "x$GAWK" != x], [
@@ -685,7 +602,7 @@ AS_IF([test x$with_saxon != xno], [
 ], [gt_prog_xslt=no])
 AC_MSG_RESULT([$gt_prog_xslt])
 AM_CONDITIONAL([CAN_SAXON], [test "x$gt_prog_saxon" != xno])
-AM_CONDITIONAL([CAN_JAVA], [test "x$gt_prog_java" != xno -a "x$_saxonjar" != xno]) 
+AM_CONDITIONAL([CAN_JAVA], [test "x$gt_prog_java" != xno -a "x$_saxonjar" != xno])
 ]) # gt_PROG_SAXON
 
 ################################################################################
@@ -732,7 +649,7 @@ AC_ARG_ENABLE([reversed-intersect],
               [AS_HELP_STRING([--enable-reversed-intersect],
                               [enable reversed compose-intersect (faster and takes less RAM in some cases) @<:@default=no@:>@])],
               [enable_reversed_intersect=$enableval],
-              [enable_reversed_intersect=no])
+              [enable_reversed_intersect=yes])
 AM_CONDITIONAL([WANT_REVERSED_INTERSECT], [test "x$enable_reversed_intersect" != xno])
 
 ############ Tool switches: ############
@@ -793,10 +710,10 @@ AC_ARG_ENABLE([grammarchecker],
                               [enable grammar checker @<:@default=no@:>@])],
               [enable_grammarchecker=$enableval],
               [enable_grammarchecker=$enable_all_tools])
-AS_IF([test "x$enable_grammarchecker" = "xyes" -a "x$gt_prog_vislcg3" = "xno"], 
+AS_IF([test "x$enable_grammarchecker" = "xyes" -a "x$gt_prog_vislcg3" = "xno"],
       [enable_grammarchecker=no
        AC_MSG_ERROR([vislcg3 missing or too old - required for the grammar checker])],
-      [AS_IF([test "x$enable_grammarchecker" = "xyes" -a "x$DIVVUN_VALIDATE_SUGGEST" = "xno"], 
+      [AS_IF([test "x$enable_grammarchecker" = "xyes" -a "x$DIVVUN_VALIDATE_SUGGEST" = "xno"],
           [enable_grammarchecker=no
            AC_MSG_ERROR([divvun-validate-suggest required for building grammar checkers])])])
 AM_CONDITIONAL([WANT_GRAMCHECK], [test "x$enable_grammarchecker" != xno])
@@ -841,7 +758,7 @@ AC_ARG_ENABLE([fomaspeller],
                               [build foma speller (dependent on --enable-spellers) @<:@default=no@:>@])],
               [enable_fomaspeller=$enableval],
               [enable_fomaspeller=no])
-AS_IF([test "x$enable_fomaspeller" = "xyes" -a "x$gt_prog_hfst" != xno], 
+AS_IF([test "x$enable_fomaspeller" = "xyes" -a "x$gt_prog_hfst" != xno],
       [AS_IF([test "x$GZIP" = "xfalse"],
              [enable_fomaspeller=no
               AC_MSG_ERROR([gzip missing - required for foma spellers])])])
@@ -884,7 +801,7 @@ AC_ARG_ENABLE([pattern-hyphenators],
                               [build pattern-based hyphenators (requires fst hyphenator) @<:@default=no@:>@])],
               [enable_pattern_hyphenators=$enableval],
               [enable_pattern_hyphenators=no])
-AS_IF([test "x$enable_pattern_hyphenators" = "xyes" -a "x$PATGEN" = "xfalse"], 
+AS_IF([test "x$enable_pattern_hyphenators" = "xyes" -a "x$PATGEN" = "xfalse"],
       [enable_pattern_hyphenators=no
        AC_MSG_ERROR([patgen required for building pattern hyphenators])])
 
@@ -895,7 +812,7 @@ AC_ARG_ENABLE([fst-hyphenator],
               [enable_fst_hyphenator=$enableval],
               [enable_fst_hyphenator=$enable_all_tools])
 # Automatically enable the fst hyphenator if pattern hyphenator is enabled:
-AS_IF([test "x$enable_pattern_hyphenators" = "xyes"], 
+AS_IF([test "x$enable_pattern_hyphenators" = "xyes"],
       [enable_fst_hyphenator=yes])
 AM_CONDITIONAL([WANT_FST_HYPHENATOR], [test "x$enable_fst_hyphenator" != xno])
 
@@ -953,10 +870,10 @@ AC_ARG_ENABLE([apertium],
                               [enable apertium transducers @<:@default=no@:>@])],
               [enable_apertium=$enableval],
               [enable_apertium=$enable_all_tools])
-AS_IF([test "x$enable_apertium" = "xyes" -a "x$new_enough_python_available" = "xno"], 
+AS_IF([test "x$enable_apertium" = "xyes" -a "x$new_enough_python_available" = "xno"],
       [enable_apertium=no
        AC_MSG_ERROR([Python3 missing or too old, Python 3.5 or newer required])])
-AS_IF([test "x$enable_apertium" = "xyes" -a "x$CG_RELABEL" = "xno"], 
+AS_IF([test "x$enable_apertium" = "xyes" -a "x$CG_RELABEL" = "xno"],
       [enable_apertium=no
        AC_MSG_ERROR([Apertium enabled but cg-relabel not found. Please install Vislcg3.])])
 AM_CONDITIONAL([WANT_APERTIUM], [test "x$enable_apertium" != xno])
@@ -967,7 +884,7 @@ AC_ARG_ENABLE([cgmt],
                               [enable cg-based machine translation @<:@default=no@:>@])],
               [enable_cgmt=$enableval],
               [enable_cgmt=no])
-AS_IF([test "x$enable_cgmt" = "xyes" -a "x$GTPRIV" = "x"], 
+AS_IF([test "x$enable_cgmt" = "xyes" -a "x$GTPRIV" = "x"],
       [AC_MSG_ERROR([\$\$GTPRIV not set! CG-based MT requires access to closed-source tools in GTPRIV])])
 AS_IF([test x$enable_tokenisers = xno -a x$enable_cgmt = xyes],
     [AC_MSG_ERROR([You need to enable tokenisers to build CG-based MT])])
@@ -1003,7 +920,7 @@ AC_ARG_ENABLE([analyser-tool],
                               [enable analyser tool @<:@default=no@:>@])],
               [enable_analyser_tool=$enableval],
               [enable_analyser_tool=$enable_all_tools])
-AS_IF([test "x$enable_analyser_tool" = "xyes" -a "x$gt_prog_vislcg3" = "xno"], 
+AS_IF([test "x$enable_analyser_tool" = "xyes" -a "x$gt_prog_vislcg3" = "xno"],
       [enable_analyser_tool=no
        AC_MSG_ERROR([vislcg3 missing or too old - required for the analyser tool])])
 AS_IF([test x$enable_tokenisers = xno -a x$enable_analyser_tool = xyes],
@@ -1024,7 +941,7 @@ AC_ARG_ENABLE([dialects],
                               [build dialect specific fst's and spellers @<:@default=no@:>@])],
               [enable_dialects=$enableval],
               [enable_dialects=no])
-AS_IF([test "x$enable_dialects" = "xyes" -a "x$DIALECTS" = "x"], 
+AS_IF([test "x$enable_dialects" = "xyes" -a "x$DIALECTS" = "x"],
       [enable_dialects=no
        AC_MSG_ERROR([You have not defined any dialects. Please see the documentation.])])
 AM_CONDITIONAL([WANT_DIALECTS], [test "x$enable_dialects" != xno])
@@ -1126,4 +1043,4 @@ sudo pip-3.5 install PyYAML
 On other systems, install python 3.5+ and the corresponding py-yaml using suitable tools for those systems.])])
 
 ]) # gt_PRINT_FOOTER
-# vim: set ft=config: 
+# vim: set ft=config:
