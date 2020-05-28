@@ -2,7 +2,9 @@
 ## Copyright: Sámediggi/Divvun/UiT
 ## Licence: GPL v3+
 
-### Variable definitions:
+# Variable definitions for variables assigned to multiple times:
+OFST_REGEX_TARGETS=
+SELECTED_FORMAT_REGEX_TARGETS=
 GIELLA_LOCAL_SPELLER_FILTER_SRCS=
 GIELLA_LOCAL_COPY_FILTER_SRCS=
 GENERATED_REGEXES=
