@@ -7,7 +7,8 @@ on: push
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    container: ubuntu:18.04
     outputs:
       speller-paths: ${{ steps.build.outputs['speller-paths'] }}
     steps:
@@ -24,11 +25,14 @@ jobs:
           path: lang
       - name: Install dev dependencies
         uses: divvun/actions/lang/install-deps@master
+        with:
+          sudo: false
       - name: Build
         id: build
         uses: divvun/actions/lang/build@master
         with:
           fst: hfst
+          force-desktop-spellers-as-mobile: true
       - name: Upload spellers
         uses: actions/upload-artifact@v2
         with:
@@ -90,3 +94,4 @@ jobs:
           version: "${{ steps.bundler.outputs.version }}"
           channel: nightly
           force-deploy: true
+
