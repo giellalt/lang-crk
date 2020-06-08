@@ -3,7 +3,7 @@
 # The Divvun CI encryption key 'DIVVUN_KEY' needs to be added as a secret 
 
 name: "Build Speller Archives and Bundles"
-on: push
+on: [push, repository_dispatch]
 
 jobs:
   build:
