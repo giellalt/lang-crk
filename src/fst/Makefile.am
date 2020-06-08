@@ -27,7 +27,6 @@ GT_LEXC_ROOT=$(srcdir)/root.lexc
 GT_LEXC_SRCS_L1_L2=\
 					affixes/noun_affixes.lexc \
 					affixes/propernouns.lexc  \
-					affixes/symbols.lexc      \
 					affixes/verb_affixes.lexc \
 					stems/abbreviations.lexc  \
 					stems/noun_stems.lexc \
@@ -39,6 +38,8 @@ GT_LEXC_SRCS_L1_L2=\
 					stems/particles.lexc  \
 					stems/non_standard.lexc  \
 					stems/derivation_stems.lexc
+
+#					affixes/symbols.lexc      
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
@@ -57,8 +58,8 @@ GT_LEXC_L2_SRCS=\
 
 # Set this to the names of all generated lexc files, if any
 GENERATED_LEXC_SRCS=generated_files/eng-$(GTLANG)-propernouns.lexc \
-					generated_files/punctuation.lexc \
-					generated_files/symbols.lexc
+					generated_files/punctuation.lexc
+#					generated_files/symbols.lexc
 
 # Set this to the names of all source xml files, if any
 GT_XML_SRCS=
