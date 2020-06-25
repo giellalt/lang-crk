@@ -145,6 +145,7 @@ LIST 4SgO = 4SgO ;
 LIST 5Sg = 5Sg ;
 LIST 4Sg/Pl = 4Sg/Pl ;
 LIST 4Sg/PlO = 4Sg/PlO ;
+LIST 5Sg/PlO = 5Sg/PlO ;
 LIST X = X ;
 
 LIST Px12Pl = Px12Pl ;
@@ -647,7 +648,7 @@ SET VII = II - IIZ ;
 # Valency tags
 # - - - - - - -
 
-LIST <BE-An><TH-Any> = <BE-An><TH-Any> ;
+LIST <BE-Any><TH-Any> = <BE-Any><TH-Any> ;
 
 # ============= #
 # Error tags    #
@@ -688,10 +689,10 @@ LIST BODY = "miskîsik" ;
 #LIST GOAL-OBL-V = "wihtamawêw" ;
 
 
-ADD:NA-goal-wVTA (&NA-goal-wVTA) TARGET BODY IF (0 $$NUMBER)(-1 (Dem A) + $$NUMBER)(NEGATE *-1 <BE-An><TH-Any> LINK NOT 0 NONLOCAL);
+ADD:NA-goal-wVTA (&NA-goal-wVTA) TARGET BODY IF (0 $$NUMBER)(-1 (Dem A) + $$NUMBER)(NEGATE *-1 <BE-Any><TH-Any> LINK NOT 0 NONLOCAL);
 ## nititâw awa niskîsik
 COPY:NA-goal-wVTA (A &SUGGEST) EXCEPT (I &NA-goal-wVTA) AFTER (N) TARGET (N &NA-goal-wVTA) ;
 
-ADD (@>N) TARGET (Pron Dem...) IF (1 N)(-1 V)(NEGATE 0 (V <OBL-GOAL>));
+#ADD (@>N) TARGET (Pron Dem...) IF (1 N)(-1 V)(NEGATE 0 (V <OBL-GOAL>));
 
 
