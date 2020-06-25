@@ -22,9 +22,15 @@ Requirements
 In order to compile and use Plains Cree language morphology and dictionaries,
 you need:
 
-* Xerox Finite-State Morphology tools, or
-* Helsinki Finite-State Technology library and tools, version 3.8 or newer, or
+* Helsinki Finite-State Technology (HFST) library and tools, version 3.8 or newer, or
 * Foma finite-state tool
+
+Note that Xerox Finite-State Morphology tools (XFST) work incorrectly with the
+latest implementation of morphophonological rules implemented with TWOLC, whereas
+HFST words properly.
+
+Note also that Foma will not work if using the TWOLC implementation of the
+morphophonogical rules, as Foma does not include a TWOLC compiler.
 
 Optionally:
 
@@ -43,7 +49,7 @@ Installation
 
 INSTALL describes the GNU build system in detail. The following setup will compile Plains Cree:
 
-	./configure  --without-xfst --with-hfst --with-foma 
+	./configure  --without-xfst --with-hfst
 	make
 	(as root) make install
 
@@ -58,6 +64,10 @@ If you would rather install in e.g. your home directory
 
         ./configure --prefix=$HOME
 
+For other configuration options:
+
+        ./configure -h
+	
 If you are checking out the development versions from SVN you must first create
 and install the necessary autotools files from the host system, and check that
 your environment is correctly set up. This is done by doing:
