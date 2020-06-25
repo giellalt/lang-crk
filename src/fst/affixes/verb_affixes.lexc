@@ -44,28 +44,70 @@ LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
 @U.person.NULL@                   IND_TENSE ;
 @P.frag.FRAG@@U.person.NI@:@P.frag.FRAG@@U.person.NI@ni VERB_FRAG ;
 @P.frag.FRAG@@U.person.KI@:@P.frag.FRAG@@U.person.KI@ki VERB_FRAG ;
-
+! ta- for only 3rd person forms (should the epenthetic form be -t(2)- or -(h)-?
+@U.person.NULL@@P.joiner.NULL@PV/ta+:@U.person.NULL@@P.joiner.NULL@ta%^EGLOT%< VERBPREFIXES ;
+@U.person.NULL@@P.joiner.hyphen@PV/ta+:@U.person.NULL@@P.joiner.hyphen@ta-%<  VERBPREFIXES ;
+@U.person.NULL@@P.frag.FRAG@PV/ta+:@U.person.NULL@@P.frag.FRAG@ta             VERB_FRAG ;
+! (n|k)ohci-/(n|k)ôh- series
+! nôh-/nohci-
+@U.person.NI@@P.joiner.hyphen@PV/oh+:@U.person.NI@@P.joiner.hyphen@nôh-%<      IND_TENSE ;
+@U.person.NI@@P.joiner.NULL@PV/oh+:@U.person.NI@@P.joiner.NULL@nôh%<           IND_TENSE ;
+@U.person.NI@@P.joiner.hyphen@PV/ohci+:@U.person.NI@@P.joiner.hyphen@nohci-%<  IND_TENSE ;
+@U.person.NI@@P.joiner.NULL@PV/ohci+:@U.person.NI@@P.joiner.NULL@nohci%^EGLOT%< IND_TENSE ;
+@U.person.NI@@P.frag.FRAG@PV/oh+:@U.person.NI@@P.frag.FRAG@nôh                 VERB_FRAG ;
+@U.person.NI@@P.frag.FRAG@PV/ohci+:@U.person.NI@@P.frag.FRAG@nohci             VERB_FRAG ;
+! kôh-/kohci-
+@U.person.KI@@P.joiner.hyphen@PV/oh+:@U.person.KI@@P.joiner.hyphen@kôh-%<      IND_TENSE ;
+@U.person.KI@@P.joiner.NULL@PV/oh+:@U.person.KI@@P.joiner.NULL@kôh%<           IND_TENSE ;
+@U.person.KI@@P.joiner.hyphen@PV/ohci+:@U.person.KI@@P.joiner.hyphen@kohci-%<  IND_TENSE ;
+@U.person.KI@@P.joiner.NULL@PV/ohci+:@U.person.KI@@P.joiner.NULL@kohci%^EGLOT%< IND_TENSE ;
+@U.person.KI@@P.frag.FRAG@PV/oh+:@U.person.KI@@P.frag.FRAG@kôh                 VERB_FRAG ;
+@U.person.KI@@P.frag.FRAG@PV/ohci+:@U.person.KI@@P.frag.FRAG@kohci             VERB_FRAG ;
+! ôh-/kohci-
+@U.person.NULL@@P.joiner.hyphen@PV/oh+:@U.person.NULL@@P.joiner.hyphen@ôh-%<      IND_TENSE ;
+@U.person.NULL@@P.joiner.NULL@PV/oh+:@U.person.NULL@@P.joiner.NULL@ôh%<           IND_TENSE ;
+@U.person.NULL@@P.joiner.hyphen@PV/ohci+:@U.person.NULL@@P.joiner.hyphen@ohci-%<  IND_TENSE ;
+@U.person.NULL@@P.joiner.NULL@PV/ohci+:@U.person.NULL@@P.joiner.NULL@ohci%^EGLOT%< IND_TENSE ;
+@U.person.NULL@@P.frag.FRAG@PV/oh+:@U.person.NULL@@P.frag.FRAG@ôh                 VERB_FRAG ;
+@U.person.NULL@@P.frag.FRAG@PV/ohci+:@U.person.NULL@@P.frag.FRAG@ohci             VERB_FRAG ;
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
 0                                               VERBPREFIXES ;
-@P.joiner.NULL@PV/ki+:@P.joiner.NULL@kî^EGLOT%< VERBPREFIXES ;
+! kî-
+@P.joiner.NULL@PV/ki+:@P.joiner.NULL@kî%^EGLOT%< VERBPREFIXES ;
 @P.joiner.hyphen@PV/ki+:@P.joiner.hyphen@kî-%<  VERBPREFIXES ;
 @P.frag.FRAG@PV/ki+:@P.frag.FRAG@kî             VERB_FRAG ;
-@P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka^EGLOT%< VERBPREFIXES ;
+! ka-
+@P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka%^EGLOT%< VERBPREFIXES ;
 @P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka-%<  VERBPREFIXES ;
 @P.frag.FRAG@PV/ka+:@P.frag.FRAG@ka             VERB_FRAG ;
-@P.joiner.NULL@PV/wi+:@P.joiner.NULL@wî^EGLOT%< VERBPREFIXES ;
+! wî-
+@P.joiner.NULL@PV/wi+:@P.joiner.NULL@wî%^EGLOT%< VERBPREFIXES ;
 @P.joiner.hyphen@PV/wi+:@P.joiner.hyphen@wî-%<  VERBPREFIXES ;
 @P.frag.FRAG@PV/wi+:@P.frag.FRAG@wî             VERB_FRAG ;
+! kî-wî-
+@P.joiner.NULL@PV/ki+PV/wi+:@P.joiner.NULL@kîwî%^EGLOT%< VERBPREFIXES ;
+@P.joiner.hyphen@PV/ki+PV/wi+:@P.joiner.hyphen@kî-wî-%<  VERBPREFIXES ;
+@P.frag.FRAG@PV/ki+PV/wi+:@P.frag.FRAG@kî-wî             VERB_FRAG ;
+! ka-kî-
+@P.joiner.hyphen@PV/ka-ki+:@P.joiner.hyphen@ka-kî-%< VERBPREFIXES ;
+@P.joiner.NULL@PV/ka-ki+:@P.joiner.NULL@kakî%^EGLOT%< VERBPREFIXES ;
+@P.frag.FRAG@PV/ka-ki+:@P.frag.FRAG@ka-kî            VERB_FRAG ;
+@P.frag.FRAG@PV/ka-ki+:@P.frag.FRAG@kakî             VERB_FRAG ;
+! ta-kî-
+@P.joiner.hyphen@PV/ta-ki+:@P.joiner.hyphen@ta-kî-%< VERBPREFIXES ;
+@P.joiner.NULL@PV/ta-ki+:@P.joiner.NULL@takî%^EGLOT%< VERBPREFIXES ;
+@P.frag.FRAG@PV/ta-ki+:@P.frag.FRAG@ta-kî            VERB_FRAG ;
+@P.frag.FRAG@PV/ta-ki+:@P.frag.FRAG@takî             VERB_FRAG ;
 
 
 ! LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
 ! @U.tense.Prs@                                                             VERBPREFIXES ;
-! @U.tense.Prt@@P.joiner.NULL@:@U.tense.Prt@@P.joiner.NULL@kî^EGLOT%<       VERBPREFIXES ;
+! @U.tense.Prt@@P.joiner.NULL@:@U.tense.Prt@@P.joiner.NULL@kî%^EGLOT%<       VERBPREFIXES ;
 ! @U.tense.Prt@@P.joiner.hyphen@:@U.tense.Prt@@P.joiner.hyphen@kî-%<        VERBPREFIXES ;
-! @U.tense.FutDef@@P.joiner.NULL@:@U.tense.FutDef@@P.joiner.NULL@ka^EGLOT%< VERBPREFIXES ;
+! @U.tense.FutDef@@P.joiner.NULL@:@U.tense.FutDef@@P.joiner.NULL@ka%^EGLOT%< VERBPREFIXES ;
 ! @U.tense.FutDef@@P.joiner.hyphen@:@U.tense.FutDef@@P.joiner.hyphen@ka-%<  VERBPREFIXES ;
-! @U.tense.FutInt@@P.joiner.NULL@:@U.tense.FutInt@@P.joiner.NULL@wî^EGLOT%< VERBPREFIXES ;
+! @U.tense.FutInt@@P.joiner.NULL@:@U.tense.FutInt@@P.joiner.NULL@wî%^EGLOT%< VERBPREFIXES ;
 ! @U.tense.FutInt@@P.joiner.hyphen@:@U.tense.FutInt@@P.joiner.hyphen@wî-%<  VERBPREFIXES ;
 
 
@@ -73,22 +115,81 @@ LEXICON FUTURE_CONDITIONAL !!= @CODE@ gives flags for future conditional (no pre
 @U.order.FutCon@ VERBPREFIXES ;
 
 
-LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and prefix ê-, ka-, and kâ-
-@P.joiner.hyphen@PV/e+:@P.joiner.hyphen@ê-%<          CNJ_TENSE ;
-@P.joiner.NULL@PV/e+:@P.joiner.NULL@ê^EGLOT%<         CNJ_TENSE ;
-@P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka-%<        CNJ_TENSE ;
-@P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka^EGLOT%<       CNJ_TENSE ;
-@P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ-%<       CNJ_TENSE ;
-@P.joiner.NULL@PV/kaa+:@P.joiner.NULL@kâ^EGLOT%<      CNJ_TENSE ;
-! Conjunct preverbs as fragments
-@P.frag.FRAG@PV/e+:@P.frag.FRAG@ê    VERB_FRAG ;
-@P.frag.FRAG@PV/ka+:@P.frag.FRAG@ka  VERB_FRAG ;
-@P.frag.FRAG@PV/kaa+:@P.frag.FRAG@kâ VERB_FRAG ;
+LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and combined tense preverbs
+! ê-, ê(h)-
+@P.joiner.hyphen@PV/e+:@P.joiner.hyphen@ê-%<         CNJ_TENSE ;
+@P.joiner.NULL@PV/e+:@P.joiner.NULL@ê%^EGLOT%<       CNJ_TENSE ;
+! kâ-, kâ(h)-
+@P.joiner.hyphen@PV/kaa+:@P.joiner.hyphen@kâ-%<      CNJ_OHCI ;
+@P.joiner.NULL@PV/kaa+:@P.joiner.NULL@kâ%^EGLOT%<    CNJ_OHCI ;
+! ka-, ka(h)-
+@P.joiner.hyphen@PV/ka+:@P.joiner.hyphen@ka-%<       VERBPREFIXES ;
+@P.joiner.NULL@PV/ka+:@P.joiner.NULL@ka%^EGLOT%<     VERBPREFIXES ;
+! ta-, ta(h)-
+@P.joiner.hyphen@PV/ta+:@P.joiner.hyphen@ta-%<       VERBPREFIXES ;
+@P.joiner.NULL@PV/ta+:@P.joiner.NULL@ta%^EGLOT%<     VERBPREFIXES ;
+! kê-: changed conjunct for ka-
+@P.joiner.hyphen@PV/ke+:@P.joiner.hyphen@kê-%<       VERBPREFIXES ;
+@P.joiner.NULL@PV/ke+:@P.joiner.NULL@kê%^EGLOT%<     VERBPREFIXES ;
+! kika-
+@P.joiner.hyphen@PV/kika+:@P.joiner.hyphen@kika-%<   VERBPREFIXES ;
+@P.joiner.NULL@PV/kika+:@P.joiner.NULL@kika%^EGLOT%< VERBPREFIXES ;
+! kita-
+@P.joiner.hyphen@PV/kita+:@P.joiner.hyphen@kita-%<   VERBPREFIXES ;
+@P.joiner.NULL@PV/kita+:@P.joiner.NULL@kita%^EGLOT%< VERBPREFIXES ;
+! tita-
+@P.joiner.hyphen@PV/tita+:@P.joiner.hyphen@tita-%<   VERBPREFIXES ;
+@P.joiner.NULL@PV/tita+:@P.joiner.NULL@tita%^EGLOT%< VERBPREFIXES ;
+! ka-kî-
+@P.joiner.hyphen@PV/ka-ki+:@P.joiner.hyphen@ka-kî-%<  VERBPREFIXES ;
+@P.joiner.NULL@PV/ka-ki+:@P.joiner.NULL@kakî%^EGLOT%< VERBPREFIXES ;
+! ta-kî-
+@P.joiner.hyphen@PV/ta-ki+:@P.joiner.hyphen@ta-kî-%<  VERBPREFIXES ;
+@P.joiner.NULL@PV/ta-ki+:@P.joiner.NULL@takî%^EGLOT%< VERBPREFIXES ;
+! kiyê-
+@P.joiner.hyphen@PV/kiye+:@P.joiner.hyphen@kiyê-%<   VERBPREFIXES ;
+@P.joiner.NULL@PV/kiye+:@P.joiner.NULL@kiyê%^EGLOT%< VERBPREFIXES ;
+! kiyi-
+@P.joiner.hyphen@PV/kiyi+:@P.joiner.hyphen@kiyi-%<   VERBPREFIXES ;
+@P.joiner.NULL@PV/kiyi+:@P.joiner.NULL@kiyi%^EGLOT%< VERBPREFIXES ;
+! kici- (Saulteaux influence)
+@P.joiner.hyphen@PV/kici+:@P.joiner.hyphen@kici-%<   VERBPREFIXES ;
+@P.joiner.NULL@PV/kici+:@P.joiner.NULL@kici%^EGLOT%< VERBPREFIXES ;
 
+! @P.joiner.hyphen@:@P.joiner.hyphen@-%< VERBPREFIXES ;
+! @P.joiner.NULL@:@P.joiner.NULL@^EGLOT%< VERBPREFIXES ;
+
+! Conjunct preverbs as fragments
+@P.frag.FRAG@PV/e+:@P.frag.FRAG@ê         VERB_FRAG ;
+@P.frag.FRAG@PV/ka+:@P.frag.FRAG@ka       VERB_FRAG ;
+@P.frag.FRAG@PV/ta+:@P.frag.FRAG@ta       VERB_FRAG ;
+@P.frag.FRAG@PV/kaa+:@P.frag.FRAG@kâ      VERB_FRAG ;
+@P.frag.FRAG@PV/ke+:@P.frag.FRAG@kê       VERB_FRAG ;
+@P.frag.FRAG@PV/kika+:@P.frag.FRAG@kika   VERB_FRAG ;
+@P.frag.FRAG@PV/kita+:@P.frag.FRAG@kita   VERB_FRAG ;
+@P.frag.FRAG@PV/tita+:@P.frag.FRAG@tita   VERB_FRAG ;
+@P.frag.FRAG@PV/ka-ki+:@P.frag.FRAG@ka-kî VERB_FRAG ;
+@P.frag.FRAG@PV/ka-ki+:@P.frag.FRAG@kakî  VERB_FRAG ;
+@P.frag.FRAG@PV/ta-ki+:@P.frag.FRAG@ta-kî VERB_FRAG ;
+@P.frag.FRAG@PV/ta-ki+:@P.frag.FRAG@takî  VERB_FRAG ;
+@P.frag.FRAG@PV/kiye+:@P.frag.FRAG@kiyê   VERB_FRAG ;
+@P.frag.FRAG@PV/kiyi+:@P.frag.FRAG@kiyi   VERB_FRAG ;
+@P.frag.FRAG@PV/kici+:@P.frag.FRAG@kici   VERB_FRAG ;
+
+! Omitted grammatical conjunct preverb
 @P.frag.FRAG@ CNJ_TENSE ; ! Option to allow for the occasional omission of the grammatical conjunct prefix without a changed conjunct
 
+! Changed conjunct
 @P.cnj.CC@IC+:@P.cnj.CC@ CNJ_TENSE ; ! Changed conjunct forms with initial change (IC) and no grammatical conjunct prefix
 
+LEXICON CNJ_OHCI
+0 CNJ_TENSE ;
+@U.joiner.hyphen@PV/ohci+:@U.joiner.hyphen@ohci-%<   CNJ_TENSE ;
+@U.joiner.NULL@PV/ohci+:@U.joiner.NULL@ohci%^EGLOT%< CNJ_TENSE ;
+@P.frag.FRAG@PV/ohci+:@P.frag.FRAG@ohci              VERB_FRAG ;
+@U.joiner.hyphen@PV/oh+:@U.joiner.hyphen@ôh-%<       CNJ_TENSE ;
+@U.joiner.NULL@PV/oh+:@U.joiner.NULL@ôh%<            CNJ_TENSE ;
+@P.frag.FRAG@PV/oh+:@P.frag.FRAG@ôh                  VERB_FRAG ;
 
 LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
 ! Skipping tense preverbs with various conditions
@@ -96,13 +197,21 @@ LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
 @R.joiner.NULL@                                                    VERBPREFIXES ;
 @R.cnj.CC@                                                         VERBPREFIXES ;
 ! Regular occurrence of tense preverbs
+! kî(h)-
 @U.joiner.hyphen@@D.cnj.CC@PV/ki+:@U.joiner.hyphen@@D.cnj.CC@kî-%<  VERBPREFIXES ;
-@U.joiner.NULL@@D.cnj.CC@PV/ki+:@U.joiner.NULL@@D.cnj.CC@kî^EGLOT%< VERBPREFIXES ;
+@U.joiner.NULL@@D.cnj.CC@PV/ki+:@U.joiner.NULL@@D.cnj.CC@kî%^EGLOT%< VERBPREFIXES ;
+! wî(h)-
 @U.joiner.hyphen@@D.cnj.CC@PV/wi+:@U.joiner.hyphen@@D.cnj.CC@wî-%<  VERBPREFIXES ;
-@U.joiner.NULL@@D.cnj.CC@PV/wi+:@U.joiner.NULL@@D.cnj.CC@wî^EGLOT%< VERBPREFIXES ;
+@U.joiner.NULL@@D.cnj.CC@PV/wi+:@U.joiner.NULL@@D.cnj.CC@wî%^EGLOT%< VERBPREFIXES ;
+! kî(-)wî(h)-
+@U.joiner.hyphen@@D.cnj.CC@PV/ki+PV/wi+:@U.joiner.hyphen@@D.cnj.CC@kî-wî-%<  VERBPREFIXES ;
+@U.joiner.NULL@@D.cnj.CC@PV/ki+PV/wi+:@U.joiner.NULL@@D.cnj.CC@kîwî%^EGLOT%<  VERBPREFIXES ;
 ! Prefix fragments ending with these tense preverbs
 @D.cnj.CC@@P.frag.FRAG@PV/ki+:@D.cnj.CC@@P.frag.FRAG@kî             VERB_FRAG ;
+@D.cnj.CC@@P.frag.FRAG@PV/ka+:@D.cnj.CC@@P.frag.FRAG@ka             VERB_FRAG ;
 @D.cnj.CC@@P.frag.FRAG@PV/wi+:@D.cnj.CC@@P.frag.FRAG@wî             VERB_FRAG ;
+@D.cnj.CC@@P.frag.FRAG@PV/ki+PV/wi+:@D.cnj.CC@@P.frag.FRAG@kî-wî    VERB_FRAG ;
+@D.cnj.CC@@P.frag.FRAG@PV/ki+PV/wi+:@D.cnj.CC@@P.frag.FRAG@kîwî     VERB_FRAG ;
 
 ! LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
 ! @U.tense.Prs@                                                                           VERBPREFIXES ;
@@ -235,8 +344,8 @@ PV/itahto+:itahto PREVERBS_BOUND "in such number" ;
 PV/ikate+:îkatê PREVERBS_BOUND "aside, off to one side" ; 
 ! PV/ka+:ka PREVERBS_BOUND "grammatical preverb: future will, shall; infinitive; optative ought, should" ; 
 ! PV/ka_ki+:ka-kî PREVERBS_BOUND "can, be able to; may; should, ought to" ; 
-@U.joiner.hyphen@PV/ka_ki+:@U.joiner.hyphen@ka-kî PREVERBS_BOUND ;
-@U.joiner.NULL@PV/ka_ki+:@U.joiner.NULL@kakî PREVERBS_BOUND ;
+! @U.joiner.hyphen@PV/ka_ki+:@U.joiner.hyphen@ka-kî PREVERBS_BOUND ;
+! @U.joiner.NULL@PV/ka_ki+:@U.joiner.NULL@kakî PREVERBS_BOUND ;
 PV/kakepaci+:kakêpâci PREVERBS_BOUND "stupidly" ; 
 PV/kakwahyaki+:kakwâhyaki PREVERBS_BOUND "greatly, extremely, overwhelmingly; with startled surprise" ; 
 PV/kakwayaki+:kakwâyaki PREVERBS_BOUND "greatly, extremely" ; 
@@ -254,13 +363,13 @@ PV/kah+:kâh PREVERBS_BOUND "would, ought to; likely to" ;
 PV/kamwaci+:kâmwâci PREVERBS_BOUND "quietly" ; 
 PV/kaspi+:kâspi PREVERBS_BOUND "crunching" ; 
 PV/kawi+:kâwi PREVERBS_BOUND "again; back, in return" ; 
-PV/ke+:kê PREVERBS_BOUND "grammatical preverb; future, conditional: shall; defines a changed conjunct clause" ; 
+! PV/ke+:kê PREVERBS_BOUND "grammatical preverb; future, conditional: shall; defines a changed conjunct clause" ; 
 PV/kekaci+:kêkâci PREVERBS_BOUND "almost" ; 
 PV/ket+:kêt PREVERBS_BOUND "take off, remove" ; 
 PV/ketiski+:kêtiski PREVERBS_BOUND "to exact measure" ; 
-PV/kici+:kici PREVERBS_BOUND "so that" ; 
+! PV/kici+:kici PREVERBS_BOUND "so that" ; 
 PV/kihci+:kihci PREVERBS_BOUND "great, big, important" ; 
-PV/kika+:kika PREVERBS_BOUND "grammatical preverb; future; defines a conjunct clause" ; 
+! PV/kika+:kika PREVERBS_BOUND "grammatical preverb; future; defines a conjunct clause" ; 
 PV/kipi+:kipi PREVERBS_BOUND "blocking" ; 
 PV/kisci+:kisci PREVERBS_BOUND "big" ; 
 PV/kise+:kisê PREVERBS_BOUND "great, gentle" ; 
@@ -268,12 +377,12 @@ PV/kisipi+:kisipi PREVERBS_BOUND "end, finish, ending" ;
 PV/kisiska+:kisiskâ PREVERBS_BOUND "fast, quickly" ; 
 PV/kisiwi+:kisiwi PREVERBS_BOUND "anger" ; 
 PV/kisiwi+:kisîwi PREVERBS_BOUND "angrily, in anger" ; 
-PV/kita+:kita PREVERBS_BOUND "[grammatical preverb]; future: will, shall; infinitive; optative: ought, should" ; 
-@U.joiner.hyphen@PV/kita_ki+:@U.joiner.hyphen@kita-kî PREVERBS_BOUND "can, be able to; may; ought to" ; 
-@U.joiner.NULL@PV/kita_ki+:@U.joiner.NULL@kitakî PREVERBS_BOUND "can, be able to; may; ought to" ; 
+! PV/kita+:kita PREVERBS_BOUND "[grammatical preverb]; future: will, shall; infinitive; optative: ought, should" ; 
+! ??? @U.joiner.hyphen@PV/kita_ki+:@U.joiner.hyphen@kita-kî PREVERBS_BOUND "can, be able to; may; ought to" ; 
+! ??? @U.joiner.NULL@PV/kita_ki+:@U.joiner.NULL@kitakî PREVERBS_BOUND "can, be able to; may; ought to" ; 
 PV/kitimaki+:kitimâki PREVERBS_BOUND "pitiable, pitiably" ; 
-PV/kiye+:kiyê PREVERBS_BOUND "[grammatical preverb; future; in changed conjunct clauses]" ; 
-PV/kiyi+:kiyi PREVERBS_BOUND "[grammatical preverb; future; defines a conjunct clause]" ; 
+! PV/kiye+:kiyê PREVERBS_BOUND "[grammatical preverb; future; in changed conjunct clauses]" ; 
+! PV/kiyi+:kiyi PREVERBS_BOUND "[grammatical preverb; future; defines a conjunct clause]" ; 
 ! PV/ki+:kî PREVERBS_BOUND "[grammatical preverb; past, completion]" ; 
 PV/kimoci+:kîmôci PREVERBS_BOUND "secretly, by stealth" ; 
 PV/kipi+:kîpi PREVERBS_BOUND "quickly" ; 
@@ -402,9 +511,9 @@ PV/sikawi+:sîkawi PREVERBS_BOUND "pouring, flooding" ;
 PV/sohkahat+:sôhkahât PREVERBS_BOUND "greatly, powerfully" ; 
 PV/sohki+:sôhki PREVERBS_BOUND "hard, strongly, intensively, vigourously, properly" ; 
 PV/soniyawi+:sôniyâwi PREVERBS_BOUND "with respect to money, in financial matters" ; 
-PV/ta+:ta PREVERBS_BOUND "[grammatical preverb: future; infinitive]" ; 
-@U.joiner.hyphen@PV/ta_ki+:@U.joiner.hyphen@ta-kî PREVERBS_BOUND "can, be able to; should, ought to" ; 
-@U.joiner.NULL@PV/ta_ki+:@U.joiner.NULL@takî PREVERBS_BOUND "can, be able to; should, ought to" ; 
+! PV/ta+:ta PREVERBS_BOUND "[grammatical preverb: future; infinitive]" ; 
+! @U.joiner.hyphen@PV/ta_ki+:@U.joiner.hyphen@ta-kî PREVERBS_BOUND "can, be able to; should, ought to" ; 
+! @U.joiner.NULL@PV/ta_ki+:@U.joiner.NULL@takî PREVERBS_BOUND "can, be able to; should, ought to" ; 
 PV/tahci+:tahci PREVERBS_BOUND "coming apart, undone" ; 
 PV/tahki+:tahki PREVERBS_BOUND "repeated action, always, constantly ;; receiving a chill, cold" ; 
 PV/tahkohci+:tahkohci PREVERBS_BOUND "on top" ; 
