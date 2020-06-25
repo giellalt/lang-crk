@@ -41,13 +41,13 @@ setup has been performed.
 Installation
 ------------
 
-INSTALL describes the GNU build system in detail, but for most users the usual:
+INSTALL describes the GNU build system in detail. The following setup will compile Plains Cree:
 
-	./configure
+	./configure  --without-xfst --with-hfst --with-foma 
 	make
 	(as root) make install
 
-should result in a local installation and::
+This should result in a local installation and:
 
 	(as root) make uninstall
 
