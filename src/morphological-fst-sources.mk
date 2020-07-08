@@ -20,28 +20,28 @@
 ALL_SOURCES = $(MORPHOLOGY) $(PHONOLOGY) $(PHONOLOGY_WITH_BOUNDARIES) $(ORTHOGRAPHY)
 ALL_SOURCES_WITH_EXTRAS = $(ALL_SOURCES) $(EXTRA_MORPHOLOGY)
 
-MORPHOLOGY = morphology/root.lexc \
-  morphology/affixes/noun_affixes.lexc \
-  morphology/affixes/verb_affixes.lexc \
-  morphology/stems/derivation_stems.lexc \
-  morphology/stems/non_standard.lexc \
-  morphology/stems/noun_stems.lexc \
-  morphology/stems/noun_vocatives.lexc \
-  morphology/stems/numerals.lexc \
-  morphology/stems/particles.lexc \
-  morphology/stems/pronouns.lexc \
-  morphology/stems/verb_stems.lexc
+MORPHOLOGY = fst/root.lexc \
+  fst/affixes/noun_affixes.lexc \
+  fst/affixes/verb_affixes.lexc \
+  fst/stems/derivation_stems.lexc \
+  fst/stems/non_standard.lexc \
+  fst/stems/noun_stems.lexc \
+  fst/stems/noun_vocatives.lexc \
+  fst/stems/numerals.lexc \
+  fst/stems/particles.lexc \
+  fst/stems/pronouns.lexc \
+  fst/stems/verb_stems.lexc
 
 EXTRA_MORPHOLOGY = \
-  morphology/affixes/propernouns.lexc \
-  morphology/generated_files/eng-crk-propernouns.lexc \
-  morphology/generated_files/punctuation.lexc \
-  morphology/generated_files/symbols.lexc \
-  morphology/stems/abbreviations.lexc \
-  morphology/stems/derivation_stems.lexc \
-  morphology/stems/numeral_symbols.lexc
+  fst/affixes/propernouns.lexc \
+  fst/generated_files/eng-crk-propernouns.lexc \
+  fst/generated_files/punctuation.lexc \
+  fst/generated_files/symbols.lexc \
+  fst/stems/abbreviations.lexc \
+  fst/stems/derivation_stems.lexc \
+  fst/stems/numeral_symbols.lexc
 
-PHONOLOGY = phonology/crk-phon.twolc
+PHONOLOGY = ./fst/phonology.xfscript
 # According to aarppe, these are:
 # > morphophonological rules that leaves the morpheme boundaries [intact], in
 # > order to facilitate the splitting of an inflected form into its
