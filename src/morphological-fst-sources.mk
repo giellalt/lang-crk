@@ -17,7 +17,7 @@
 # Lists the raw .lexc/.twolc/.regex sources required to create the
 # morphological FSTs.
 
-ALL_SOURCES = $(MORPHOLOGY) $(PHONOLOGY) $(PHONOLOGY_WITH_BOUNDARIES) $(ORTHOGRAPHY)
+ALL_SOURCES = $(MORPHOLOGY) $(PHONOLOGY) $(ORTHOGRAPHY)
 ALL_SOURCES_WITH_EXTRAS = $(ALL_SOURCES) $(EXTRA_MORPHOLOGY)
 
 MORPHOLOGY = fst/root.lexc \
@@ -41,10 +41,5 @@ EXTRA_MORPHOLOGY = \
   fst/stems/derivation_stems.lexc \
   fst/stems/numeral_symbols.lexc
 
-PHONOLOGY = ./fst/phonology.xfscript
-# According to aarppe, these are:
-# > morphophonological rules that leaves the morpheme boundaries [intact], in
-# > order to facilitate the splitting of an inflected form into its
-# > constituent morphemes
-PHONOLOGY_WITH_BOUNDARIES = phonology/crk-phon-morph-bound.twolc
+PHONOLOGY = fst/phonology.xfscript
 ORTHOGRAPHY = orthography/spellrelax.regex
