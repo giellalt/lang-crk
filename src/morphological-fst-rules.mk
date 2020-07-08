@@ -33,8 +33,9 @@ crk-lexc-dict.hfst: crk-dict.lexc
 	hfst-lexc --format=openfst-tropical --output=$@ $<
 
 crk-phon.hfst: $(PHONOLOGY)
-	-@echo "$(_EMPH)Compiling TWOLC code.$(_RESET)"
-	hfst-twolc -i $< -o $@
+	-@echo "$(_EMPH)Compiling xfscript code.$(_RESET)"
+	printf "\n\nsave stack $@\nquit\n" | cat $< - \
+		| hfst-xfst -p --silent --format=openfst-tropical
 
 crk-phon-morph-bound.hfst: $(PHONOLOGY_WITH_BOUNDARIES)
 	-@echo "$(_EMPH)Compiling TWOLC code (with morpheme boundaries).$(_RESET)"
