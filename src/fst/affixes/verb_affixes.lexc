@@ -70,6 +70,32 @@ LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
 @U.person.NULL@@P.joiner.NULL@PV/ohci+:@U.person.NULL@@P.joiner.NULL@ohci%^EGLOT%< IND_TENSE ;
 @U.person.NULL@@P.frag.FRAG@PV/oh+:@U.person.NULL@@P.frag.FRAG@ôh                 VERB_FRAG ;
 @U.person.NULL@@P.frag.FRAG@PV/ohci+:@U.person.NULL@@P.frag.FRAG@ohci             VERB_FRAG ;
+!! Hypotheticals
+! nikâh-
+@U.person.NI@@P.joiner.hyphen@PV/kah+:@U.person.NI@@P.joiner.hyphen@nikâh-%<      IND_TENSE ;
+@U.person.NI@@P.joiner.NULL@PV/kah+:@U.person.NI@@P.joiner.NULL@nikâh%<           IND_TENSE ;
+@U.person.NI@@P.frag.FRAG@PV/kah+:@U.person.NI@@P.frag.FRAG@nikâh                 VERB_FRAG ;
+! kikâh-
+@U.person.KI@@P.joiner.hyphen@PV/kah+:@U.person.KI@@P.joiner.hyphen@kikâh-%<      IND_TENSE ;
+@U.person.KI@@P.joiner.NULL@PV/kah+:@U.person.KI@@P.joiner.NULL@kikâh%<           IND_TENSE ;
+@U.person.KI@@P.frag.FRAG@PV/kah+:@U.person.KI@@P.frag.FRAG@kikâh                 VERB_FRAG ;
+! kâh-
+@U.person.NULL@@P.joiner.hyphen@PV/kah+:@U.person.NULL@@P.joiner.hyphen@kâh-%<    IND_TENSE ;
+@U.person.NULL@@P.joiner.NULL@PV/kah+:@U.person.NULL@@P.joiner.NULL@kâh%<         IND_TENSE ;
+@U.person.NULL@@P.frag.FRAG@PV/kah+:@U.person.NULL@@P.frag.FRAG@kâh               VERB_FRAG ;
+! nitâh-
+@U.person.NI@@P.joiner.hyphen@PV/tah+:@U.person.NI@@P.joiner.hyphen@nitâh-%<      IND_TENSE ;
+@U.person.NI@@P.joiner.NULL@PV/tah+:@U.person.NI@@P.joiner.NULL@nitâh%<           IND_TENSE ;
+@U.person.NI@@P.frag.FRAG@PV/tah+:@U.person.NI@@P.frag.FRAG@nitâh                 VERB_FRAG ;
+! kitâh-
+@U.person.KI@@P.joiner.hyphen@PV/tah+:@U.person.KI@@P.joiner.hyphen@kitâh-%<      IND_TENSE ;
+@U.person.KI@@P.joiner.NULL@PV/tah+:@U.person.KI@@P.joiner.NULL@kitâh%<           IND_TENSE ;
+@U.person.KI@@P.frag.FRAG@PV/tah+:@U.person.KI@@P.frag.FRAG@kitâh                 VERB_FRAG ;
+! tâh-
+@U.person.NULL@@P.joiner.hyphen@PV/tah+:@U.person.NULL@@P.joiner.hyphen@tâh-%<    IND_TENSE ;
+@U.person.NULL@@P.joiner.NULL@PV/tah+:@U.person.NULL@@P.joiner.NULL@tâh%<         IND_TENSE ;
+@U.person.NULL@@P.frag.FRAG@PV/tah+:@U.person.NULL@@P.frag.FRAG@tâh               VERB_FRAG ;
+
 
 LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
 0                                               VERBPREFIXES ;
@@ -155,6 +181,12 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and combined tense preverbs
 ! kici- (Saulteaux influence)
 @P.joiner.hyphen@PV/kici+:@P.joiner.hyphen@kici-%<   VERBPREFIXES ;
 @P.joiner.NULL@PV/kici+:@P.joiner.NULL@kici%^EGLOT%< VERBPREFIXES ;
+! kâh- (hypothetical)
+@P.joiner.hyphen@PV/kah+:@P.joiner.hyphen@kâh-%<   CNJ_TENSE ;
+@P.joiner.NULL@PV/kah+:@P.joiner.NULL@kâh%^EGLOT%< CNJ_TENSE ;
+! tâh- (hypothetical)
+@P.joiner.hyphen@PV/tah+:@P.joiner.hyphen@tâh-%<   CNJ_TENSE ;
+@P.joiner.NULL@PV/tah+:@P.joiner.NULL@tâh%^EGLOT%< CNJ_TENSE ;
 
 ! @P.joiner.hyphen@:@P.joiner.hyphen@-%< VERBPREFIXES ;
 ! @P.joiner.NULL@:@P.joiner.NULL@^EGLOT%< VERBPREFIXES ;
@@ -175,6 +207,8 @@ LEXICON CONJUNCT !!= @CODE@ gives flag for conjunct and combined tense preverbs
 @P.frag.FRAG@PV/kiye+:@P.frag.FRAG@kiyê   VERB_FRAG ;
 @P.frag.FRAG@PV/kiyi+:@P.frag.FRAG@kiyi   VERB_FRAG ;
 @P.frag.FRAG@PV/kici+:@P.frag.FRAG@kici   VERB_FRAG ;
+@P.frag.FRAG@PV/kah+:@P.frag.FRAG@kâh    VERB_FRAG ;
+@P.frag.FRAG@PV/tah+:@P.frag.FRAG@tâh    VERB_FRAG ;
 
 ! Omitted grammatical conjunct preverb
 @P.frag.FRAG@ CNJ_TENSE ; ! Option to allow for the occasional omission of the grammatical conjunct prefix without a changed conjunct
@@ -357,7 +391,7 @@ PV/kaski+:kaski PREVERBS_BOUND "dense" ;
 PV/kaskitewi+:kaskitêwi PREVERBS_BOUND "black" ; 
 PV/kayasi+:kayâsi PREVERBS_BOUND "old" ; 
 ! PV/kaa+:kâ PREVERBS_BOUND "[grammatical preverb; defines a changed conjunct clause; often a relative clause, i.e. who, which]" ; 
-PV/kah+:kâh PREVERBS_BOUND "would, ought to; likely to" ; 
+! PV/kah+:kâh PREVERBS_BOUND "would, ought to; likely to" ; 
 @U.joiner.hyphen@PV/kah-kape+:@U.joiner.hyphen@kâh-kapê PREVERBS_BOUND "all the time" ; 
 @U.joiner.NULL@PV/kah-kape+:@U.joiner.NULL@kâhkapê PREVERBS_BOUND "all the time" ; 
 PV/kamwaci+:kâmwâci PREVERBS_BOUND "quietly" ; 
@@ -521,7 +555,7 @@ PV/tahto+:tahto PREVERBS_BOUND "as many as" ;
 PV/takahki+:takahki PREVERBS_BOUND "good, nice" ; 
 PV/tako+:tako PREVERBS_BOUND "in addition to, on top, over and above; with, having along, also" ; 
 PV/tasi+:tasi PREVERBS_BOUND "for such a time, for the duration; an action at a time, while" ; 
-PV/tah+:tâh PREVERBS_BOUND "would, ought to; likely to" ; 
+! PV/tah+:tâh PREVERBS_BOUND "would, ought to; likely to" ; 
 PV/tahci+:tâhci PREVERBS_BOUND "on the top" ; 
 PV/tapi+:tâpi PREVERBS_BOUND "through the same place" ; 
 PV/tapisi+:tâpisi PREVERBS_BOUND "threading, inserting" ; 
