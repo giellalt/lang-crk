@@ -37,16 +37,8 @@ crk-phon.hfst: $(PHONOLOGY)
 	printf "\n\nsave stack $@\nquit\n" | cat $< - \
 		| hfst-xfst -p --silent --format=openfst-tropical
 
-crk-phon-morph-bound.hfst: $(PHONOLOGY_WITH_BOUNDARIES)
-	-@echo "$(_EMPH)Compiling TWOLC code (with morpheme boundaries).$(_RESET)"
-	hfst-twolc -i $< -o $@
-
 crk-normative-generator-with-err-orth.hfst: crk-lexc-dict.hfst crk-phon.hfst
 	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers.$(_RESET)"
-	hfst-compose-intersect -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
-
-crk-normative-generator-with-morpheme-boundaries.hfst: crk-lexc-dict.hfst crk-phon-morph-bound.hfst
-	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers (with morpheme boundaries).$(_RESET)"
 	hfst-compose-intersect -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
 
 crk-strict-analyzer-with-err-orth.hfst: crk-normative-generator-with-err-orth.hfst
