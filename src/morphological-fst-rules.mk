@@ -45,7 +45,7 @@ crk-lexc-dict.hfst: crk-dict.lexc
 
 crk-phon.hfst: $(PHONOLOGY)
 	-@echo "$(_EMPH)Compiling xfscript code.$(_RESET)"
-	printf "\n\nsave stack $@\nquit\n" | cat $< - \
+	(cat $<; echo "save stack $@"; echo quit) \
 		| hfst-xfst --pipe-mode $(VERBOSITY) $(WEIGHT_FORMAT)
 
 crk-normative-generator-with-morpheme-boundaries.hfst: crk-lexc-dict.hfst crk-phon.hfst
