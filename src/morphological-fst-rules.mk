@@ -22,6 +22,10 @@
 _RESET := $(shell tput sgr0)
 _EMPH := $(shell tput setaf 6)
 
+crk-strict-analyzer.hfst: crk-normative-generator-with-morpheme-boundaries.hfst remove-morpheme-boundary-filter.hfst
+	-@echo "$(_EMPH)Removing morpheme boundaries to create strict analyzer.$(_RESET)"
+	hfst-compose -F -1 $(word 1, $^) -2 $(word 2, $^) | hfst-invert -o $@
+
 # Concatenate by leveraging existing Makefile target. Avoids errors due to
 # missing files, and keeps the two build files syncronised wrt source files.
 crk-dict.lexc: $(MORPHOLOGY)
@@ -37,29 +41,25 @@ crk-phon.hfst: $(PHONOLOGY)
 	printf "\n\nsave stack $@\nquit\n" | cat $< - \
 		| hfst-xfst -p --silent --format=openfst-tropical
 
-crk-normative-generator-with-err-orth.hfst: crk-lexc-dict.hfst crk-phon.hfst
+crk-normative-generator-with-morpheme-boundaries.hfst: crk-lexc-dict.hfst crk-phon.hfst
 	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers.$(_RESET)"
 	hfst-compose-intersect -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
 
-crk-strict-analyzer-with-err-orth.hfst: crk-normative-generator-with-err-orth.hfst
-	-@echo "$(_EMPH)Inverting normative generator tranducer into a normative analyzer transducer.$(_RESET)"
-	hfst-invert $< -o $@
-
 crk-orth.hfst: $(ORTHOGRAPHY)
 	-@echo "$(_EMPH)Compiling regular expression implementing spelling-relaxation.$(_RESET)"
-	hfst-regexp2fst -S -i $< | hfst-invert -o $@
+	hfst-regexp2fst --format="openfst-tropical" --verbose -v --semicolon $< -o $@
 
-crk-descriptive-analyzer.hfst: crk-orth.hfst crk-strict-analyzer-with-err-orth.hfst
+crk-descriptive-analyzer.hfst: crk-strict-analyzer-with-err-orth.hfst crk-orth.hfst
 	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer transducer to create descriptive analyzer.$(_RESET)"
-	hfst-compose -F -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
+	hfst-compose --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - | hfst-invert - -o $@
+
+remove-morpheme-boundary-filter.hfst:
+	-@echo "$(_EMPH)Compiling filter to remove morpheme boundaries.$(_RESET)"
+	echo '%> -> 0, %< -> 0;' | hfst-regexp2fst -S -o $@
 
 crk-err-filter.hfst:
 	-@echo "$(_EMPH)Compiling filter to remove non-normative forms with +Err/Orth tag.$(_RESET)"
 	echo '~[ $$[ "+Err/Orth" ] ] ;' | hfst-regexp2fst -S -o $@
-
-crk-strict-analyzer.hfst: crk-err-filter.hfst crk-normative-generator-with-err-orth.hfst
-	-@echo "$(_EMPH)Removing lexicalised non-normative forms from normative analyzer and generator.$(_RESET)"
-	hfst-compose -F -1 $(word 1, $^) -2 $(word 2, $^) | hfst-invert -o $@
 
 crk-normative-generator.hfst: crk-strict-analyzer.hfst
 	hfst-invert -i $^ -o $@
