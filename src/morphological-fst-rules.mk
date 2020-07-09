@@ -47,11 +47,11 @@ crk-normative-generator-with-morpheme-boundaries.hfst: crk-lexc-dict.hfst crk-ph
 
 crk-orth.hfst: $(ORTHOGRAPHY)
 	-@echo "$(_EMPH)Compiling regular expression implementing spelling-relaxation.$(_RESET)"
-	hfst-regexp2fst --format="openfst-tropical" --verbose -v --semicolon $< -o $@
+	hfst-regexp2fst --format="openfst-tropical" --verbose --semicolon $< -o $@
 
-crk-descriptive-analyzer.hfst: crk-strict-analyzer-with-err-orth.hfst crk-orth.hfst
+crk-descriptive-analyzer.hfst: crk-strict-analyzer.hfst crk-orth.hfst
 	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer transducer to create descriptive analyzer.$(_RESET)"
-	hfst-compose --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - | hfst-invert - -o $@
+	hfst-invert -i $(word 1, $^) | hfst-compose --harmonize-flags -1 - -2 $(word 2, $^) | hfst-minimize - | hfst-invert - -o $@
 
 remove-morpheme-boundary-filter.hfst:
 	-@echo "$(_EMPH)Compiling filter to remove morpheme boundaries.$(_RESET)"
