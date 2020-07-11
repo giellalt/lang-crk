@@ -27,10 +27,14 @@ you need:
 
 Note that Xerox Finite-State Morphology tools (XFST) work incorrectly with the
 latest implementation of morphophonological rules implemented with TWOLC, whereas
-HFST words properly.
+HFST works properly.
 
 Note also that Foma will not work if using the TWOLC implementation of the
 morphophonogical rules, as Foma does not include a TWOLC compiler.
+
+Currently, we have implemented crk morphophonology using both TWOLC
+and XFSCRIPT rewrite rules, and as of 2020-07-11 they are yet
+equivalent in their workings.
 
 Optionally:
 
