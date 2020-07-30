@@ -230,6 +230,7 @@ LEXICON CNJ_TENSE   !!= @CODE@ gives prefixes and flags for tense in conjunct
 @R.joiner.hyphen@                                                  VERBPREFIXES ;
 @R.joiner.NULL@                                                    VERBPREFIXES ;
 @R.cnj.CC@                                                         VERBPREFIXES ;
+@R.frag.FRAG@                                                      VERBPREFIXES ;
 ! Regular occurrence of tense preverbs
 ! kî(h)-
 @U.joiner.hyphen@@D.cnj.CC@PV/ki+:@U.joiner.hyphen@@D.cnj.CC@kî-%<  VERBPREFIXES ;
