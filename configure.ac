@@ -47,7 +47,7 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 ### Speller release version (usually different from the package version,
 ### typically spellers are released more often than the language package):
-AC_SUBST([SPELLERVERSION], [0.1])
+AC_SUBST([SPELLERVERSION], [0.1.0])
 
 ########## LANGUAGE SPECIFIC SETTINGS ##########
 # GLANG is the language code used to identify this project; it should be the
@@ -148,8 +148,8 @@ AM_CONDITIONAL([LEXREF_IN_PHONOLOGY], [test "x$LEXREF_IN_XFSCRIPT" != "x"])
 AC_SUBST([DEFAULT_FOMA], [no])
 AC_SUBST([DEFAULT_HFST], [yes])
 AC_SUBST([DEFAULT_XFST], [no])
-#AC_SUBST([DEFAULT_HYPERMIN], [no])
-#AC_SUBST([DEFAULT_REVERCI], [yes])
+AC_SUBST([DEFAULT_HYPERMIN], [no])
+AC_SUBST([DEFAULT_REVERCI], [yes])
 AC_SUBST([DEFAULT_HFST_BACKEND], [foma])
 
 # Tests and sets up giella-core directories and scripts
