@@ -1,9 +1,12 @@
 name = "Plains Cree"
 version = "@SPELLERVERSION@"
 
-[windows]
-system_product_code = "55A81174-4234-4E81-9EFE-88175952CD70"
-msoffice_product_code = "A9726CC0-EB2D-4C93-B2F1-9EA8276F3818"
-
 [macos]
 system_pkg_id = "no.divvun.MacDivvun.crk"
+
+[windows]
+system_product_code = "{C39EDF85-3F33-47DE-B264-807512920BB9}_is1"
+legacy_product_codes = [
+    { value = "55A81174-4234-4E81-9EFE-88175952CD70", kind = "nsis" },
+    { value = "A9726CC0-EB2D-4C93-B2F1-9EA8276F3818", kind = "nsis" }
+]
