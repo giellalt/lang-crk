@@ -48,4 +48,4 @@ gawk '{ if(index($0,"#")!=0)
           { sub(p[0],"");
             sub("\" ","&"p[0]); }
         print;
-}' | less; exit 0;
+}' # | less; exit 0;
