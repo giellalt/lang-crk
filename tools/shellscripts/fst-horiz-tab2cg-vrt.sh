@@ -15,12 +15,12 @@ $0 ~ /^[^<]/ { printf "\"<%s>\"\n", $1;
      { n=split($i,f,"\+");
        printf "\t";
 
-# Identify lemma -> whatever is after any sequence of preverbs and reduplication
+# Identify lemma -> whatever is after any sequence of initial change, preverbs, prenouns, and reduplication
 
        lemma=0; j=0;
        while(!lemma)
           { ++j;
-            if(index(f[j],"PV/")==0 && index(f[j],"Rdpl")==0)
+            if(index(f[j],"PV/")==0 && index(f[j],"Rdpl")==0 && index(f[j],"PN/")==0 && index(f[j],"IC")==0)
               { f[j]="\"" f[j] "\"";
                 lemma=1;
               }
@@ -44,7 +44,7 @@ $0 ~ /^[^<]/ { printf "\"<%s>\"\n", $1;
 gawk '{ if(index($0,"#")!=0)
           { sub("#",""); sub("\"","&#"); }
         gsub("@","%");
-        if(match($0,"((PV/[^ ]+ )|(Rdpl[SW] ))+",p)!=0)
+        if(match($0,"((P[NV]/[^ ]+ )|(Rdpl[SW] )|(IC ))+",p)!=0)
           { sub(p[0],"");
             sub("\" ","&"p[0]); }
         print;
