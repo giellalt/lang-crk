@@ -27,7 +27,7 @@ FSTs = crk-descriptive-analyzer.hfstol \
 
 all: $(FSTs)
 
-fsts.zip: $(FSTs)
+fsts.zip: $(FSTs) $(FSTs:.hfstol=.fomabin)
 	zip $@ $^
 
 
