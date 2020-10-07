@@ -27,5 +27,9 @@ FSTs = crk-descriptive-analyzer.hfstol \
 
 all: $(FSTs)
 
+fsts.zip: $(FSTs)
+	zip $@ $^
+
+
 include morphological-fst-sources.mk
 include morphological-fst-rules.mk
