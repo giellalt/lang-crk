@@ -31,7 +31,7 @@ jobs:
       - name: Install dev dependencies
         uses: divvun/actions/lang/install-deps@master
         with:
-          sudo: false
+          sudo: true
       - name: Build giella-core/giella-shared
         uses: divvun/actions/lang/build@master
         with:
