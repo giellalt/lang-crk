@@ -1,0 +1,61 @@
+name: "Build FSTs for ALTLab (University of Alberta) and friends"
+on:
+  push:
+    tags:
+      # Occurs on tags matching v* like v2020.10.07-alpha.0
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build FSTs
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: giellalt/giella-core
+          path: giella-core
+      - uses: actions/checkout@v2
+        with:
+          repository: giellalt/giella-shared
+          path: giella-shared
+      - uses: actions/checkout@v2
+        with:
+          path: lang
+      # We have this directory structure now:
+      # ${GITHUB_WORKSPACE}/
+      # ├── giella-core/
+      # ├── giella-shared/
+      # └── lang/
+      #    └── src/
+      #        └── quick.mk
+      - name: Install dev dependencies
+        uses: divvun/actions/lang/install-deps@master
+        with:
+          sudo: false
+      - name: Build giella-core/giella-shared
+        uses: divvun/actions/lang/build@master
+        with:
+          spellers: false
+          fst: hfst
+      - name: Use quick.mk (custom Makefile) to generate FSTs
+        run: make -C lang/src -f quick.mk -j4 fsts.zip
+      - name: Create a release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: "Automatic release ${{ github.ref }}"
+          draft: false
+          prerelease: false
+      - name: Attach FSTs to the release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          assert_path: ./lang/src/fsts.zip
+          assert_name: plains-cree-fsts-${{ github.ref }}.zip
+          asset_content_type: application/zip
