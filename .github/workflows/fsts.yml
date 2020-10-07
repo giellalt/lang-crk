@@ -56,6 +56,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          assert_path: ./lang/src/fsts.zip
-          assert_name: plains-cree-fsts-${{ github.ref }}.zip
+          asset_path: ./lang/src/fsts.zip
+          asset_name: plains-cree-fsts-${{ github.ref }}.zip
           asset_content_type: application/zip
