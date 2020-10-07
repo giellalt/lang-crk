@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+import sys
+from subprocess import check_call, check_output
+from datetime import datetime
+
+EX_USAGE = 64  # refer to `man 3 sysexits`
+VALID_RELEASE_SPECFIERS = "alpha", "beta", "post"
+ALLOW_TAG_ON_BRANCH = "develop"
+
+
+class UsageError(Exception):
+    """
+    Raised when something is the user's fault
+    """
+
+def main():
+    if len(sys.argv) > 1:
+        release_specifier = sys.argv[1]
+        if release_specifier not in VALID_RELEASE_SPECFIERS:
+            raise UsageError(
+                f"“{release_specifier}” is invalid; "
+                f"choose one from {VALID_RELEASE_SPECFIERS}"
+            )
+    else:
+        release_specifier = ""
+
+    today = datetime.now()
+    tag = f"v{today.year}.{today.month}.{today.day}"
+
+    if release_specifier:
+        tag = f"{tag}-{release_specifier}"
+
+    git_branch_output = check_output(["git", "branch"], encoding="UTF-8")
+    for line in git_branch_output.split("\n"):
+        if line.startswith("*"):
+            _star, _space, current_branch = line.partition(" ")
+            break
+    else:
+        raise ValueError("Could not make sense of git branch output: {git_branch_output!r}")
+    
+    if current_branch != ALLOW_TAG_ON_BRANCH:
+        raise UsageError(
+            f"can only tag on branch “{ALLOW_TAG_ON_BRANCH}”; "
+            f"(currently on branch “{current_branch}”)"
+        )
+
+
+    status = check_output(["git", "status", "--porcelain"], encoding="UTF-8")
+    working_directory_clean = True
+    for line in status.split("\n"):
+        line = line.strip()
+        if not line or line.startswith("?"):
+            continue
+        working_directory_clean = False
+
+    if not working_directory_clean:
+        raise UsageError(
+            "refusing to tag with a dirty working directory; "
+            "please commit all changes or stash changes to make the tree clean"
+        )
+            
+
+    check_call(["git", "tag", tag])
+    check_call(["git", "push", "--tags"])
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except UsageError as error:
+        print(f"{sys.argv[0]}: {str(error)}")
+        sys.exit(EX_USAGE)
