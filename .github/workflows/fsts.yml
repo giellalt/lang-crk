@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Build FSTs
     steps:
+      - name: Get the version
+        id: get_version
+        # Stolen from: https://github.community/t/how-to-get-just-the-tag-name/16241/6
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - uses: actions/checkout@v2
         with:
           repository: giellalt/giella-core
@@ -47,7 +51,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
-          body: "Automatic release ${{ github.ref }}"
+          body: "Automatic release ${{ steps.get_version.outputs.VERSION }}"
           draft: false
           prerelease: false
       - name: Attach FSTs to the release
@@ -57,5 +61,5 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./lang/src/fsts.zip
-          asset_name: plains-cree-fsts-${{ github.ref }}.zip
+          asset_name: plains-cree-fsts-${{ steps.get_version.outputs.VERSION }}.zip
           asset_content_type: application/zip
