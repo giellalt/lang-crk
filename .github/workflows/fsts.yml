@@ -2,8 +2,10 @@ name: "Build FSTs for ALTLab (University of Alberta) and friends"
 on:
   push:
     tags:
-      # Occurs on tags matching v* like v2020.10.07-alpha.0
-      - 'v*'
+      # Occurs on tags matching fst-v* like fst-v2020.10.07-alpha.0
+      # Why not v*? like ordinary semver. Because it breaks something...
+      # somewhere. Pester @bbqsrc (Brendan) about it
+      - 'fst-v*'
 
 jobs:
   build:

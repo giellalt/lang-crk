@@ -67,7 +67,7 @@ def get_prerelease_from_args():
 def generate_tag_text(prerelease):
     "generates an appropriate calver (semver) tag"
     today = datetime.now()
-    tag = f"v{today.year}.{today.month}.{today.day}"
+    tag = f"fst-v{today.year}.{today.month}.{today.day}"
 
     if prerelease:
         tag = f"{tag}-{prerelease}"
