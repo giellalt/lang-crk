@@ -1,6 +1,10 @@
 The Plains Cree morphology and tools
 ====================================
 
+👉🏼 **[Download the latest FSTs here (plains-cree-fsts*.zip)][fst-release]** 👈🏼
+
+[fst-release]: https://github.com/giellalt/lang-crk/releases
+
 This directory contains source files for the Plains Cree language
 morphology and dictionary. The data and implementation are licenced
 under \_\_LICENCE\_\_ licence also detailed in the LICENCE file of this
