@@ -54,7 +54,7 @@ endif # CAN_XFST
 #### HFST transducers
 if CAN_HFST
 GT_ANALYSERS+=
-GT_GENERATORS+=generator-gt-desc.borders.hfst
+GT_GENERATORS+=generator-gt-desc.borders.hfstol
 endif # CAN_HFST
 
 #### FOMA transducers
