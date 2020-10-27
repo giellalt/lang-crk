@@ -1,0 +1,117 @@
+#!/usr/bin/env python3
+# -*- coding: UTF-8 -*-
+
+"""
+Creates and pushes a new tag for the current FSTs.
+
+Usage:
+    make-new-release [(alpha|beta|post) [<positive integer>]]
+
+
+This will create a new tag and push it to GitHub. This will subsequently kick-off a
+workflow that compiles and uploads the FSTs to GitHub.
+"""
+
+import sys
+from subprocess import check_call, check_output
+from datetime import datetime
+
+EX_USAGE = 64  # refer to `man 3 sysexits`
+VALID_PRERELEASE_IDENTIFIERS = "alpha", "beta", "post"
+ALLOW_TAG_ON_BRANCH = "develop"
+
+
+class UsageError(Exception):
+    """
+    Raised when something is the user's fault
+    """
+
+
+def main():
+    prerelease = get_prerelease_from_args()
+
+    ensure_on_correct_branch()
+    ensure_working_directory_clean()
+
+    tag = generate_tag_text(prerelease)
+    check_call(["git", "tag", tag])
+    check_call(["git", "push", "--tags"])
+
+
+def get_prerelease_from_args():
+    "get a prerelease like alpha.0/beta.1/post.0 from the args"
+
+    if len(sys.argv) <= 1:
+        return ""
+
+    prerelease = sys.argv[1]
+    if prerelease not in VALID_PRERELEASE_IDENTIFIERS:
+        raise UsageError(
+            f"“{prerelease}” is invalid; "
+            f"choose one from {VALID_PRERELEASE_IDENTIFIERS}"
+        )
+
+    if len(sys.argv) <= 2:
+        increment = 0
+    else:
+        try:
+            increment = int(sys.argv[2])
+            if increment < 0:
+                raise ValueError
+        except ValueError:
+            raise UsageError(f"invalid increment: {sys.argv[2]}")
+
+    return f"{prerelease}.{increment}"
+
+
+def generate_tag_text(prerelease):
+    "generates an appropriate calver (semver) tag"
+    today = datetime.now()
+    tag = f"fst-v{today.year}.{today.month}.{today.day}"
+
+    if prerelease:
+        tag = f"{tag}-{prerelease}"
+
+    return tag
+
+
+def ensure_on_correct_branch():
+    "makes sure we're on an approved git branch"
+    git_branch_output = check_output(["git", "branch"], encoding="UTF-8")
+    for line in git_branch_output.split("\n"):
+        if line.startswith("*"):
+            _star, _space, current_branch = line.partition(" ")
+            break
+    else:
+        raise ValueError("Could not make sense of git branch output: {git_branch_output!r}")
+
+    if current_branch != ALLOW_TAG_ON_BRANCH:
+        raise UsageError(
+            f"can only tag on branch “{ALLOW_TAG_ON_BRANCH}”; "
+            f"(currently on branch “{current_branch}”)"
+        )
+
+
+def ensure_working_directory_clean():
+    "makes sure there are no modified/added/renamed/copied files in the git working tree"
+    status = check_output(["git", "status", "--porcelain", "--untracked-files=no"], encoding="UTF-8")
+    working_directory_clean = True
+    for line in status.rstrip("\n").split("\n"):
+        line = line.strip()
+        if not line or line.startswith("?"):
+            continue
+        working_directory_clean = False
+
+    if not working_directory_clean:
+        raise UsageError(
+            "refusing to tag with a dirty working directory; "
+            "please commit all changes or stash changes to make the tree clean"
+        )
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except UsageError as error:
+        print(f"{sys.argv[0]}: {str(error)}")
+        sys.exit(EX_USAGE)

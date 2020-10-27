@@ -1,0 +1,67 @@
+name: "Build FSTs for ALTLab (University of Alberta) and friends"
+on:
+  push:
+    tags:
+      # Occurs on tags matching fst-v* like fst-v2020.10.07-alpha.0
+      # Why not v*? like ordinary semver. Because it breaks something...
+      # somewhere. Pester @bbqsrc (Brendan) about it
+      - 'fst-v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build FSTs
+    steps:
+      - name: Get the version
+        id: get_version
+        # Stolen from: https://github.community/t/how-to-get-just-the-tag-name/16241/6
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+      - uses: actions/checkout@v2
+        with:
+          repository: giellalt/giella-core
+          path: giella-core
+      - uses: actions/checkout@v2
+        with:
+          repository: giellalt/giella-shared
+          path: giella-shared
+      - uses: actions/checkout@v2
+        with:
+          path: lang
+      # We have this directory structure now:
+      # ${GITHUB_WORKSPACE}/
+      # ├── giella-core/
+      # ├── giella-shared/
+      # └── lang/
+      #    └── src/
+      #        └── quick.mk
+      - name: Install dev dependencies
+        uses: divvun/actions/lang/install-deps@master
+        with:
+          sudo: true
+      - name: Build giella-core/giella-shared
+        uses: divvun/actions/lang/build@master
+        with:
+          spellers: false
+          fst: hfst
+      - name: Use quick.mk (custom Makefile) to generate FSTs
+        run: make -C lang/src -f quick.mk -j4 fsts.zip
+      - name: Create a release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          body: "Automatic release ${{ steps.get_version.outputs.VERSION }}"
+          draft: false
+          prerelease: false
+      - name: Attach FSTs to the release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./lang/src/fsts.zip
+          asset_name: plains-cree-fsts-${{ steps.get_version.outputs.VERSION }}.zip
+          asset_content_type: application/zip
