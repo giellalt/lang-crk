@@ -1,0 +1,122 @@
+! Computational model of "inflecting" English phrases,
+! matching with crk features tags
+
+! Word-boundary characters
+
+define Bx [ .#. | " " | "." | "," | ":" | ";" | "!" | "?" ] ;
+
+define TenseAspect [
+    [ [..] -> {is going to } || .#. "Fut+" ?* Bx [ {s/he} | {it} ] " " _ ]
+.o. [ [..] -> {is going to } || .#. "Fut+" ?* Bx {there} " " _ {be} ] 
+.o. [ [..] -> {wants to } || .#. "Int+" "3Sg+" ?* Bx {s/he} " " _ ]
+.o. [ [..] -> {want to } || .#. "Int+" \[ "3Sg+" ] ?* Bx {s/he} " " _ ]
+.o. [ [..] -> {someone wants } || .#. "Int+" ?* Bx _ [ {it} | {there} ] " " ,, [..] -> { to} || .#. "Int+" ?* Bx [ {it} | {there} ] _ \[ Bx - " " ] ]
+.o. [ [..] -> {when } || .#. "Cond+" ?* Bx _ [ {s/he} | {it} | {there} ] " " ]
+.o. [ [..] -> {for } || .#. "Inf+" ?* Bx _ [ {s/he} | {it} | {there be} ] " " ,, [..] -> {to } || .#. "Inf+" ?* Bx [ {s/he} | {it} | {there} ] " " _ {be} ]
+.o. [ [..] -> {let } || .#. [ "Imm+" | "Del+" ] \[ "2Sg+" | "2Pl+" ] ?* Bx _ {s/he} " " ,, .#. [ "Imm+" | "Del+" ] ?* Bx _ [ {it} | {there be} ] ]
+.o. [ [..] -> { now} || .#. "Imm+" \[ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {it} | {there be} ] \[ Bx - " " ]+ _ [ Bx - " " ] ,, .#. "Imm+" [ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {it} | {there be} ] \[ Bx - " " ]+ _ [ Bx - " " ] ]
+.o. [ [..] -> { later} || .#. "Del+" \[ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {it} | {there be} ] \[ Bx - " " ]+ _ [ Bx - " " ] ,, .#. "Del+" [ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {it} | {there be} ] \[ Bx - " " ]+ _ [ Bx - " " ] ]
+] ;
+
+define VInflection [ [ {is} | {are} ] -> {be} || .#. [ "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* Bx [ {s/he} | {it} | {there} ] " " _ Bx ] .o.
+[ {has} -> {have} || .#. [ "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* Bx [ {s/he} | {it} ] " " _ Bx ] .o.
+[ {has} -> {had} || .#. "Prt+" ?* Bx [ {s/he} | {it} ] " " _ Bx ] .o.
+[
+   s -> 0 || .#. [ [ [ "Prs+" | "Cond+" ] [ "1Sg+" | "2Sg+" | "1Pl+" | "12Pl+" | "2Pl+" | "3Pl+" ] ] | "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* [ {s/he} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
+,, s -> {ed} || .#. "Prt+" ?* [ {s/he} | {it} ] " " \{ }* \[ {ha} | i ] _ [ Bx - "." ]
+]
+.o. [ { ha } -> { have } ,, { haed } -> { had } ] ;
+
+define beInflection [ {is} -> {be} || .#. [ "Inf+" | [ "Imm+" | "Del+" ] ] ?* {for s/he to } _ Bx
+,, {is} -> {am} || .#. [ "Prs+" | "Fut+" | "Cond+" ] "1Sg+" ?* {s/he} " " _ Bx
+,, {is} -> {are} || .#. [ "Prs+" | "Fut+" | "Cond+" ] [ "2Sg+" | "1Pl+" | "12Pl+" | "2Pl+" | "3Pl+" ] ?* Bx [ {s/he} | {it} | {there} ] " " _ Bx
+,, {is} -> {was} || .#. "Prt+" [ "1Sg+" | "3Sg+" | "X+" ] ?* " " _ Bx
+,, [ {is} | {are} ] -> {were} || .#. "Prt+" [ "2Sg+" | "1Pl+" | "12Pl+" | "2Pl+" | "3Pl+"] ?* Bx [ {s/he} | {it} | {there} ] " " _ Bx
+] ;
+
+define SubjectInfConv [
+   {s/he} -> {me} || .#. [ "Inf+" | [ "Imm+" | "Del+" ] ] "1Sg+" ?* Bx _ " "
+,, {s/he } -> 0 || .#. [ "Imm+" | "Del+" ] "2Sg+" ?* Bx _
+,, {s/he} -> {you} || .#. "Inf+" "2Sg+" ?* Bx _ " "
+,, {s/he} -> {him/her} || .#. [ "Inf+" | "Imm+" | "Del+" ] "3Sg+" ?* Bx _ " "
+,, {s/he} -> {us} || .#. [ "Inf+" | "Imm+" | "Del+" ] "1Pl+" ?* Bx _ " "
+,, {s/he} -> {you and us} || .#. [ "Inf+" | "Imm+" | "Del+" ] "12Pl+" ?* Bx _ " "
+,, {s/he} -> {(you [all])} || .#. [ "Imm+" | "Del+" ] "2Pl+" ?* Bx _ " "
+,, {s/he} -> {you [all]} || .#. "Inf+" "2Pl+" ?* Bx _ " "
+,, {s/he} -> {them} || .#. [ "Inf+" | "Imm+" | "Del+" ] "3Pl+" ?* Bx _ " "
+,, {s/he} -> {him/her/them} || .#. [ "Inf+" | "Imm+" | "Del+" ] "4Sg/Pl+" ?* Bx _ " "
+,, {it} -> {them} || .#. [ "Inf+" | "Imm+" | "Del+" ] "3Pl+" ?* Bx _ " "
+,, {s/he} -> {someone} || .#. [ "Inf+" | "Imm+" | "Del+" ] "X+" ?* Bx _ " "
+] ;
+
+define SubjectConv [
+   {s/he} -> I || .#. ? "1Sg+" ?* Bx _ " "
+,, {s/he} -> {you} || .#. ? "2Sg+" ?* Bx _ " "
+,, {s/he} -> {he/she} || .#. ? "3Sg+" ?* Bx _ " "
+,, {s/he} -> {we} || .#. ? "1Pl+" ?* Bx _ " "
+,, {s/he} -> {you and we} || .#. ? "12Pl+" ?* Bx _ " "
+,, {s/he} -> {you (all)} || .#. ? "2Pl+" ?* Bx _ " "
+,, {s/he} -> {they} || .#. ? "3Pl+" ?* Bx _ " "
+,, {s/he} -> {he/she/they} || .#. ? "4Sg/Pl+" ?* Bx _ " "
+,, {s/he} -> {he/she/they over there} || .#. ? "5Sg/Pl+" ?* Bx _ " "
+,, {it} -> {they} || .#. ? "3Pl+" ?* Bx _ " "
+,, {it} -> {it over there} || .#. ? "4Sg+" ?* Bx _ " "
+,, {it} -> {they over there} || .#. ? "4Pl+" ?* Bx _ " "
+,, {s/he} -> {someone} || .#. ? "X+" ?* Bx _ " "
+] ;
+
+define ReflexiveConv [
+   {him/herself} -> {myself} || .#. ? "1Sg+" ?* " " _ Bx
+,, {him/herself} -> {yourself} || .#. ? "2Sg+" ?* " "_ Bx
+,, {him/herself} -> {him/herself} || .#. ? "3Sg+" ?* " " _ Bx
+,, {him/herself} -> {ourselves} || .#. ? "1Pl+" ?* " "_ Bx
+,, {him/herself} -> {your and ourselves} || .#. ? "12Pl+" ?* " " _ Bx
+,, {him/herself} -> {yourselves} || .#. ? "2Pl+" ?* " " _ Bx
+,, {him/herself} -> {themselves} || .#. ? "3Pl+" ?* " " _ Bx
+,, {him/herself} -> {him/her/themselves} || .#. ? "4Sg/Pl+" ?* " " _ Bx
+,, {him/herself} -> {oneself} || .#. ? "X+" ?* " " _ Bx
+] ;
+
+define ObjectConv [
+   [ s %. o %. ] -> {me} || .#. ? ? "1SgO+" ?* " " _ Bx
+,, [ s %. o %. ] -> {you} || .#. ? ? "2SgO+" ?* " " _ Bx
+,, [ s %. o %. ] -> {him/her} || .#. ? ? "3SgO+" ?* " " _ Bx
+,, [ s %. o %. ] -> {us} || .#. ? ? "1PlO+" ?* " " _ Bx
+,, [ s %. o %. ] -> {you and us} || .#. ? ? "12PlO+" ?* " " _ Bx
+,, [ s %. o %. ] -> {you (all)} || .#. ? ? "2PlO+" ?* " " _ Bx
+,, [ s %. o %. ] -> {them} || .#. ? ? "3PlO+" ?* " " _ Bx
+,, [ s %. o %. ] -> {him/her/them} || .#. ? ? "4Sg/PlO+" ?* " " _ Bx
+,, [ s %. o %. ] -> {him/her/them over there} || .#. ? ? "5Sg/PlO+" ?* " " _ Bx
+,, [ s %. o %. ] -> {someone} || .#. ? ? "XO+" ?* " " _ Bx
+] ;
+
+define SubjectDel [ "1Sg+" | "2Sg+" | "3Sg+" | "1Pl+" | "12Pl+" | "2Pl+" | "3Pl+" | "4Sg+" | "4Pl+" | "4Sg/Pl+" | "5Sg/Pl+" "X+" ] -> 0 ;
+
+define ObjectDel [ "1SgO+" | "2SgO+" | "3SgO+" | "1PlO+" | "12PlO+" | "2PlO+" | "3PlO+" | "4Sg/PlO+" | "5Sg/PlO+" | "XO+" ] -> 0 ;
+
+define TenseAspectDel [ "Prs+" | "Prt+" | "Fut+" | "Def+" | "Int+" | "Cond+" | "Inf+" | "Imm+" | "Del+" ] -> 0 ;
+
+regex [ VInflection .o. TenseAspect
+.o. beInflection
+.o. SubjectInfConv
+.o. SubjectConv
+.o. ReflexiveConv
+.o. ObjectConv
+.o. SubjectDel
+.o. ObjectDel
+.o. TenseAspectDel
+] ;
+
+! regex [ "1Sg+" -> "@U.subject.1Sg@" ,,
+! "2Sg+" -> "@U.subject.2Sg@" ,,
+! "3Sg+" -> "@U.subject.3Sg@" ]
+! .o. [
+!   {s/he} -> I || "@U.subject.1Sg@" ?* _ ,,
+!   {s/he} -> {you} || "@U.subject.2Sg@" ?* _ ,,
+!   {s/he} -> {he/she} || "@U.subject.3Sg@" ?* _
+! ]
+! .o. [
+!   [ "1Sg+" | "2Sg+" | "3Sg+" ] -> 0
+! ]
+! ;
+

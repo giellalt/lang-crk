@@ -1,0 +1,58 @@
+! Inflection of English translations for Cree nouns
+
+! Feature order
+
+! 1: Sg+, Pl+, Obv+, Loc+, Distr+ (Obligatory) N.B. distributives are pluralized
+! 2: Dim+ (Optional)
+! 3: Px1Sg+ ... PxX+ (Optional)
+
+! Remove initial possessor or article
+
+define rmPossArt [ {my } | {a } | {an } | {the } ] -> 0 || [ .#. \{ }* " " | [ %, | %; ] " " ]  _ ;
+
+define Diminutive [..] -> {little } || [ .#. ? (?) "Dim+" \{ }* " " ] | [ .#. ? (?) "Dim+" ?* [ %, | %; ] " " ] _ ;
+
+define SingularIndefArticle [..] -> {a } || .#. [ "Sg+" \{ }* " " ] | [ "Sg+" ?* [ %, | %; ] " " ] _ \[ a | e | i | o | u ]
+,,  [..] -> {an } || .#. [ "Sg+" \{ }* " " ] | [ "Sg+" ?* [ %, | %; ] " " ] _ [ a | e | i | o | u ] ;
+
+define Possession [ [..] -> {my } || [ .#. ? (?) "Px1Sg+" \{ }* " " ] | [ .#. ? (?) "Px1Sg+" ?* [ %, | %; ] " " ] _
+,, [..] -> {your } || [ .#. ? (?) "Px2Sg+" \{ }* " " ] | [ .#. ? (?) "Px2Sg+" ?* [ %, | %; ] " " ] _
+,, [..] -> {his/her } || [ .#. ? (?) "Px3Sg+" \{ }* " " ] | [ .#. ? (?) "Px3Sg+" ?* [ %, | %; ] " " ] _
+,, [..] -> {our } || [ .#. ? (?) "Px1Pl+" \{ }* " " ] | [ .#. ? (?) "Px1Pl+" ?* [ %, | %; ] " " ] _
+,, [..] -> {your and our } || [ .#. ? (?) "Px12Pl+" \{ }* " " ] | [ .#. ? (?) "Px12Pl+" ?* [ %, | %; ] " " ] _
+,, [..] -> {your } || [ .#. ? (?) "Px2Pl+" \{ }* " " ] | [ .#. ? (?) "Px2Pl+" ?* [ %, | %; ] " " ] _
+,, [..] -> {their } || [ .#. ? (?) "Px3Pl+" \{ }* " " ] | [ .#. ? (?) "Px3Pl+" ?* [ %, | %; ] " " ] _
+,, [..] -> {someone's } || [ .#. ? (?) "PxX+" \{ }* " " ] | [ .#. ? (?) "PxX+" ?* [ %, | %; ] " " ] _
+] ;
+
+define LocativeDistributive [ [..] -> {in } || [ .#. "Loc+" \{ }* " " ] | [ .#. "Loc+" ?* [ %, | %; ] " " ] _
+,,  [..] -> {among } || [ .#. "Distr+" \{ }* " " ] | [ .#. "Distr+" ?* [ %, | %; ] " " ] _ ] ;
+
+! define PluralObviative [..] -> {>s} || .#. [ "Pl+" | "Distr+" ] ?* \[ %) | %] ] _ .#. ,, .#. [ "Pl+" | "Distr+" ] ?* \[ %) | %] ] _ [ %, | %; ] ,, .#. [ "Pl+" | "Distr+" ] ?* _ " " [ %( | %[ ]
+! ,, [..] -> {>s over there} || .#. "Obv+" ?* \[ %) | %] ] _ .#. ,, .#. "Obv+" ?* \[ %) | %] ] _ [ %, | %; ] ,, .#. "Obv+" ?* _ " " [ %( | %[ ] ;
+
+define Plural [ [..] -> {>s} || .#. [ "Pl+" | "Distr+" ] ?* \[ %) | %] ] _ [ %, | %; | .#. ] ,, .#. [ "Pl+" | "Distr+" ] ?* \[ %) | %] | " " ] _ [ " " ]+ [ %( | %[ ] ,, .#. [ "Pl+" | "Distr+" ] ?* _ " " [ {of} | {for} | {with} | {from} | {who} ] " " \[ %, | %; | .#. ]* .o. {>s} -> 0 || {>s} \[ %, | %; | .#. ]+  _ ] ;
+
+define Obviative [ [..] -> { over there} || .#. "Obv+" ?* \[ %) | %] ] _ [ %, | %; | .#. ] ,, .#. "Obv+" ?* \[ %) | %] | " " ] _ [ " " ]+ [ %( | %[ ] ] ;
+
+define rmTags [ "Sg+" | "Pl+" | "Obv+" | "Dim+" | "Loc+" | "Distr+" | "Px1Sg+" | "Px2Sg+" | "Px3Sg+" | "Px1Pl+" | "Px12Pl+" | "Px2Pl+" | "Px3PlO+" | "PxX+" ] -> 0 ;
+
+define EngNounInflection [
+    rmPossArt 
+.o. Diminutive
+.o. SingularIndefArticle
+.o. Possession
+.o. LocativeDistributive
+.o. Plural
+.o. Obviative
+.o. rmTags
+] ;
+
+define EngIrregularNouns [ {man>s} -> {men} ,, {woman>s} -> {women} ,, {child>s} -> {children} ] ;
+
+define EngNounMorphophonology [ [ y ">" s ] -> {ies} || \[ a | e | i | o | u ] _ [ .#. | " " | "," | ";" ]
+,, [..] -> e || [ s | z | x | s h | c h ] ">" _ s [ .#. | " " | "," | ";" ] ] ;
+
+define rmBoundary [ ">" -> 0 ] ;
+
+regex [ EngNounInflection .o. EngIrregularNouns .o. EngNounMorphophonology .o. rmBoundary ] ;
