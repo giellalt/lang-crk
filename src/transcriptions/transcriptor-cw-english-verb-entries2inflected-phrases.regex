@@ -1,5 +1,11 @@
-! Computational model of "inflecting" English phrases,
+! Computational model of "inflecting" English phrases for verb entries in CW,
 ! matching with crk features tags
+
+! Feature order
+! N.B. Space needed between features and English dictionary entry
+! 1: Tense/Aspect: Prs+ (+Ind and +Cnj), Prt+ (PV/ki), Fut+ (PV/ka+), Int+ (PV/wi), Cond+ (+Fut+Cond), Inf+ (PV/ka+...+Cnj, PV/ta+...+Cnj), Imm+ (Imp+Imm), Del+ (Imp+Del+)
+! 2: Actor: 1Sg+, 2Sg+, 3Sg+, 1Pl+, 12Pl+, 2Pl+, 3Pl+, X+, 4Sg+, 4Pl+, 4Sg/Pl+, 5Sg/Pl+
+! 3: Goal (optional): 1SgO+, 2SgO+, 3SgO+, 1PlO+, 12PlO+, 2PlO+, 3PlO+, XO+, 4Sg/PlO+, 5Sg/PlO+
 
 ! Word-boundary characters
 
