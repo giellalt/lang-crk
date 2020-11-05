@@ -1,4 +1,4 @@
-! Inflection of English translations for Cree nouns
+! "Inflection" of English translations for Cree nouns in CW
 
 ! Feature order
 
@@ -8,12 +8,14 @@
 
 ! Remove initial possessor or article
 
+define Poss [ "Px1Sg+" | "Px2Sg+" | "Px3Sg+" | "Px1Pl+" | "Px12Pl+" | "Px2Pl+" | "Px3Pl+" | "PxX+" ] ;
+
 define rmPossArt [ {my } | {a } | {an } | {the } ] -> 0 || [ .#. \{ }* " " | [ %, | %; ] " " ]  _ ;
 
 define Diminutive [..] -> {little } || [ .#. ? (?) "Dim+" \{ }* " " ] | [ .#. ? (?) "Dim+" ?* [ %, | %; ] " " ] _ ;
 
-define SingularIndefArticle [..] -> {a } || .#. [ "Sg+" \{ }* " " ] | [ "Sg+" ?* [ %, | %; ] " " ] _ \[ a | e | i | o | u ]
-,,  [..] -> {an } || .#. [ "Sg+" \{ }* " " ] | [ "Sg+" ?* [ %, | %; ] " " ] _ [ a | e | i | o | u ] ;
+define SingularIndefArticle [..] -> {a } || .#. [ "Sg+" [ \[ "Dim+" | Poss ] | [ "Dim+" \Poss ] ] ] | [ "Sg+"  [ \[ "Dim+" | Poss ] | [ "Dim+" \Poss ] ] ?* [ %, | %; ] " " ] _ \[ a | e | i | o | u ]
+,,  [..] -> {an } || .#. [ "Sg+"  [ \[ "Dim+" | Poss ] | [ "Dim+" \Poss ] ] ] | [ "Sg+" [ \[ "Dim+" | Poss ] | [ "Dim+" \Poss ] ] ?* [ %, | %; ] " " ] _ [ a | e | i | o | u ] ;
 
 define Possession [ [..] -> {my } || [ .#. ? (?) "Px1Sg+" \{ }* " " ] | [ .#. ? (?) "Px1Sg+" ?* [ %, | %; ] " " ] _
 ,, [..] -> {your } || [ .#. ? (?) "Px2Sg+" \{ }* " " ] | [ .#. ? (?) "Px2Sg+" ?* [ %, | %; ] " " ] _
