@@ -16,7 +16,7 @@ in the file INSTALL.
 
 Documentation can be found here:
 
--   <https://giellalt.uit.no/crk/PlainsCreeDocumentation.html>
+-   <https://giellalt.uit.no/lang/crk/PlainsCreeDocumentation.html>
     (analyser)
 -   <https://giellalt.uit.no/index.html> (infrastructure)
 
