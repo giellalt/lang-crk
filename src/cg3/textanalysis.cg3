@@ -519,8 +519,6 @@ ADD:FIRST First TARGET 1 ;
 ADD:SECOND Second TARGET 2 ;
 ADD:THIRD Third TARGET 3 ;
 ADD:FOURTH Fourth Target OBV ;
-#SUBSTITUTE:THIRD (Mixed First Third Fourth) (Mixed First Fourth) TARGET (TA Mixed First Third Fourth);
-#SUBSTITUTE:THIRD (Mixed Second Third Fourth) (Mixed Second Fourth) TARGET (TA Mixed Second Third Fourth) ;
 
 ADD:DIRECT Direct DIRECT ;
 ADD:INVERSE Inverse INVERSE ;
