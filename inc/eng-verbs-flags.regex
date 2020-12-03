@@ -1,0 +1,52 @@
+! "Inflections" of English definitions for Cree verbs
+
+define Consonant [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | t | v | w | x | z ]  ;
+
+define Vowel [ a | e | i | o | u ] ;
+
+define Capital [ A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z ] ;
+
+define Alphabet [ Vowel | Consonant | "y" | Capital ] ;
+
+define Punctuation [ "." | "," | ":" | ";" | "!" | "?" | "-" | "/" ] ;
+
+define Number [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] ;
+
+define Letters [ Alphabet | Punctuation | Number | " " ] ;
+
+define Bx [ " " | Punctuation ] ;
+
+define TenseAspect [ "Prs+" | "Prt+" | "Fut+" | "Int+" | "Cond+" | "Inf+" | "Imm+" | "Del+" ] ;
+
+define Subject [ "1Sg+" | "2Sg+" | "3Sg+" ] ;
+
+define Object [ "1SgO+" | "2SgO+" | "3SgO+" ] ;
+
+! Definition of input
+
+regex [ TenseAspect Subject (Object) Letters+ ]
+
+! Conversion of tags into flag-diacritics
+
+.o. [ "Prs+" -> "@P.tense.Prs@" , "Prt+" -> "@P.tense.Prt@" ]
+.o. [ "1Sg+" -> "@P.subject.1Sg@" , "2Sg+" -> "@P.subject.2Sg@", "3Sg+" -> "@P.subject.3Sg@" ]
+.o. [ "1SgO+" -> "@P.object.1Sg@" , "2SgO+" -> "@P.object.2Sg@", "3SgO+" -> "@P.object.3Sg@" ]
+
+! English verb inflection
+
+! Subject Conversion
+
+.o. [ [ s %/ h e ] -> {I} "@R.subject.1Sg@" || Bx _ Bx ]
+| [ [ s %/ h e ] -> {you} "@R.subject.2Sg@" || Bx _ Bx ]
+| [ [ s %/ h e ] -> {he/she} "@R.subject.3Sg@" || Bx _ Bx ]
+
+! Object Conversion
+
+.o. [ [ {s.o.} -> {me} "@R.object.1Sg@" || Bx _ Bx ]
+| [ {s.o.} -> {you} "@R.object.2Sg@" || Bx _ Bx ]
+| [ {s.o.} -> {him/her} "@R.object.3Sg@" || Bx _ Bx ]
+]
+
+;
+
+twosided flag-diacritics
