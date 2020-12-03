@@ -99,7 +99,7 @@ AC_MSG_RESULT([$GIELLA_CORE])
 
 ### This is the version of the Giella Core that we require. Update as needed.
 ### It is possible to specify also subversion revision: 0.1.2-12345
-_giella_core_min_version=0.6.1
+_giella_core_min_version=0.9.6
 
 # GIELLA_CORE/GTCORE env. variable, required by the infrastructure to find scripts:
 AC_ARG_VAR([GIELLA_CORE], [directory for the Giella infra core scripts and other required resources])
@@ -336,6 +336,23 @@ AS_IF([test "x$GAWK" != x], [
 ],[giellalt_forrest_validation=no])
 AC_MSG_RESULT([$giellalt_forrest_validation])
 AM_CONDITIONAL([CAN_FORREST_VALIDATE], [test "x$giellalt_forrest_validation" != xno])
+
+# Check for npm etc. stuff for divvunspell stats
+AC_ARG_WITH([npm],
+            [AS_HELP_STRING([--with-npm=DIRECTORY],
+                            [search npm in DIRECTORY @<:@default=PATH@:>@])],
+            [with_npm=$withval],
+            [with_npm=no])
+AC_PATH_PROG([NPM], [npm], [], [$PATH$PATH_SEPARATOR$with_npm])
+AC_PATH_PROG([R], [R], [], [$PATH$PATH_SEPARATOR$with_R])
+AC_ARG_WITH([divvunspell],
+            [AS_HELP_STRING([--with-divvunspell=DIRECTORY],
+                            [search divvunspell in DIRECTORY @<:@default=PATH@:>@])],
+            [with_divvunspell=$withval],
+            [with_divvunspell=no])
+AC_PATH_PROG([DIVVUN_ACCURACY], [accuracy], [], [$PATH$PATH_SEPARATOR$with_divvunspell])
+
+
 
 ################ can rsync oxt template? ################
 AC_PATH_PROG([RSYNC], [rsync], [no], [$PATH$PATH_SEPARATOR$with_rsync])
@@ -772,14 +789,14 @@ AM_CONDITIONAL([WANT_HFST_DESKTOP_SPELLER], [test "x$enable_desktop_hfstspellers
 # Enable minimised fst-spellers by default:
 AC_ARG_ENABLE([minimised-spellers],
               [AS_HELP_STRING([--enable-minimised-spellers],
-                              [minimise hfst spellers @<:@default=yes@:>@])],
+                              [minimise hfst spellers @<:@default=$DEFAULT_SPELLER_MINIMISATION@:>@])],
               [enable_minimised_spellers=$enableval],
-              [enable_minimised_spellers=yes])
+              [enable_minimised_spellers=$DEFAULT_SPELLER_MINIMISATION])
 AS_IF([test "x$enable_minimised_spellers" != "xyes"],
-      [AC_SUBST([HFST_MINIMIZE_SPELLER], ["$ac_cv_path_HFST_REMOVE_EPSILONS \$(HFST_FLAGS)  "])],
-      [AC_SUBST([HFST_MINIMIZE_SPELLER], ["$ac_cv_path_HFST_REMOVE_EPSILONS \$(HFST_FLAGS) \
-                                         | $ac_cv_path_HFST_DETERMINIZE --encode-weights \$(HFST_FLAGS) \
-                                         | $ac_cv_path_HFST_MINIMIZE    --encode-weights \$(HFST_FLAGS) "])])
+      [AC_SUBST([HFST_MINIMIZE_SPELLER], ["$ac_cv_path_HFST_REMOVE_EPSILONS \$(HFST_FLAGS) \$(MORE_VERBOSITY) "])],
+      [AC_SUBST([HFST_MINIMIZE_SPELLER], ["$ac_cv_path_HFST_REMOVE_EPSILONS \$(HFST_FLAGS) \$(MORE_VERBOSITY) \
+                                         | $ac_cv_path_HFST_DETERMINIZE --encode-weights \$(HFST_FLAGS) \$(MORE_VERBOSITY) \
+                                         | $ac_cv_path_HFST_MINIMIZE    --encode-weights \$(HFST_FLAGS) \$(MORE_VERBOSITY) "])])
 
 # Enable Foma-based spellers, requires gzip - default is no
 AC_ARG_ENABLE([fomaspeller],

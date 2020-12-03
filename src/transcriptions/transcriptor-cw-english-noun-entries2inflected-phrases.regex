@@ -1,0 +1,65 @@
+! "Inflection" of English translations for Cree nouns in CW
+
+! Feature order
+
+! 1: Sg+, Pl+, Obv+, Loc+, Distr+ (Obligatory) N.B. distributives are pluralized
+! 2: Dim+ (Optional)
+! 3: Px1Sg+ ... PxX+ (Optional)
+
+! Remove initial possessor or article
+
+define Poss [ "Px1Sg+" | "Px2Sg+" | "Px3Sg+" | "Px1Pl+" | "Px12Pl+" | "Px2Pl+" | "Px3Pl+" | "PxX+" ] ;
+
+define rmPossArt [ {my } | {a } | {an } | {the } ] -> 0 || [ .#. \{ }* " " | [ %, | %; ] " " ]  _ ;
+
+define Diminutive [..] -> {little } || [ .#. ? (?) "Dim+" \{ }* " " ] | [ .#. ? (?) "Dim+" ?* [ %, | %; ] " " ] _ ;
+
+define SingularIndefArticle [..] -> {a } || .#. [ "Sg+" [ \[ "Dim+" | Poss ] | [ "Dim+" \Poss ] ] ] | [ "Sg+"  [ \[ "Dim+" | Poss ] | [ "Dim+" \Poss ] ] ?* [ %, | %; ] " " ] _ \[ a | e | i | o | u ]
+,,  [..] -> {an } || .#. [ "Sg+"  [ \[ "Dim+" | Poss ] | [ "Dim+" \Poss ] ] ] | [ "Sg+" [ \[ "Dim+" | Poss ] | [ "Dim+" \Poss ] ] ?* [ %, | %; ] " " ] _ [ a | e | i | o | u ] ;
+
+define Possession [ [..] -> {my } || [ .#. ? (?) "Px1Sg+" \{ }* " " ] | [ .#. ? (?) "Px1Sg+" ?* [ %, | %; ] " " ] _
+,, [..] -> {your } || [ .#. ? (?) "Px2Sg+" \{ }* " " ] | [ .#. ? (?) "Px2Sg+" ?* [ %, | %; ] " " ] _
+,, [..] -> {his/her } || [ .#. ? (?) "Px3Sg+" \{ }* " " ] | [ .#. ? (?) "Px3Sg+" ?* [ %, | %; ] " " ] _
+,, [..] -> {our } || [ .#. ? (?) "Px1Pl+" \{ }* " " ] | [ .#. ? (?) "Px1Pl+" ?* [ %, | %; ] " " ] _
+,, [..] -> {your and our } || [ .#. ? (?) "Px12Pl+" \{ }* " " ] | [ .#. ? (?) "Px12Pl+" ?* [ %, | %; ] " " ] _
+,, [..] -> {your } || [ .#. ? (?) "Px2Pl+" \{ }* " " ] | [ .#. ? (?) "Px2Pl+" ?* [ %, | %; ] " " ] _
+,, [..] -> {their } || [ .#. ? (?) "Px3Pl+" \{ }* " " ] | [ .#. ? (?) "Px3Pl+" ?* [ %, | %; ] " " ] _
+,, [..] -> {someone's } || [ .#. ? (?) "PxX+" \{ }* " " ] | [ .#. ? (?) "PxX+" ?* [ %, | %; ] " " ] _
+] ;
+
+define LocativeDistributive [ [..] -> {in } || [ .#. "Loc+" \{ }* " " ] | [ .#. "Loc+" ?* [ %, | %; ] " " ] _
+,,  [..] -> {among } || [ .#. "Distr+" \{ }* " " ] | [ .#. "Distr+" ?* [ %, | %; ] " " ] _ ] ;
+
+! define PluralObviative [..] -> {>s} || .#. [ "Pl+" | "Distr+" ] ?* \[ %) | %] ] _ .#. ,, .#. [ "Pl+" | "Distr+" ] ?* \[ %) | %] ] _ [ %, | %; ] ,, .#. [ "Pl+" | "Distr+" ] ?* _ " " [ %( | %[ ]
+! ,, [..] -> {>s over there} || .#. "Obv+" ?* \[ %) | %] ] _ .#. ,, .#. "Obv+" ?* \[ %) | %] ] _ [ %, | %; ] ,, .#. "Obv+" ?* _ " " [ %( | %[ ] ;
+
+define Plural [ [..] -> {>s} || .#. [ "Pl+" | "Distr+" ] ?* \[ %) | %] ] _ [ %, | %; | .#. ] ,, .#. [ "Pl+" | "Distr+" ] ?* \[ %) | %] | " " ] _ [ " " ]+ [ %( | %[ ] ,, .#. [ "Pl+" | "Distr+" ] ?* _ " " [ {of} | {for} | {with} | {from} | {who} ] " " \[ %, | %; | .#. ]* .o. {>s} -> 0 || {>s} \[ %, | %; | .#. ]+  _ ] ;
+
+define Obviative [ [..] -> { over there} || .#. "Obv+" ?* \[ %) | %] ] _ [ %, | %; | .#. ] ,, .#. "Obv+" ?* \[ %) | %] | " " ] _ [ " " ]+ [ %( | %[ ] ] ;
+
+define rmTags [ "Sg+" | "Pl+" | "Obv+" | "Dim+" | "Loc+" | "Distr+" | "Px1Sg+" | "Px2Sg+" | "Px3Sg+" | "Px1Pl+" | "Px12Pl+" | "Px2Pl+" | "Px3PlO+" | "PxX+" ] -> 0 ;
+
+define EngNounInflection [
+    rmPossArt 
+.o. Diminutive
+.o. SingularIndefArticle
+.o. Possession
+.o. LocativeDistributive
+.o. Plural
+.o. Obviative
+.o. rmTags
+] ;
+
+define EngIrregularNouns [ {man>s} -> {men} , {woman>s} -> {women} , {child>s} -> {children} , {mouse>s} -> {mice} , {foot>s} -> {feet} , {ox>s} -> {oxen} , { goose>s} -> {geese} , {wife>s} -> {wives} , {tooth>s} -> {teeth} , {addendum>s} -> {addenda} , {aircraft>s} -> {aircraft} , {alumna>s} -> {alumnae} , {alumnus>s} -> {alumni} , {analysis>s} -> {analyses} , {antithesis>s} -> {antitheses} , {appendix>s} -> {appendices} , {axis>s} -> {axes} , {bacillus>s} -> {bacilli} , {bacterium>s} -> {bacteria} , {basis>s} -> {bases} , {beau>s} -> {beaux} , {bison>s} -> {bison} , {bureau>s} -> {bureaus} , {codex>s} -> {codices} , {corpus>s} -> {corpora} , {crisis>s} -> {crises} , {criterion>s} -> {criteria} , {curriculum>s} -> {curricula} , {datum>s} -> {data} , {diagnosis>s} -> {diagnoses} , {die>s} -> {dice} , {ellipsis>s} -> {ellipses} , {erratum>s} -> {errata} , {focus>s} -> {foci} , {foot>s} -> {feet} , {fungus>s} -> {fungi} , {genus>s} -> {genera} , {graffito>s} -> {graffiti} , {half>s} -> {halves} , {hypothesis>s} -> {hypotheses} , {index>s} -> {indices} , {larva>s} -> {larvae} , {loaf>s} -> {loaves} , {locus>s} -> {loci} , {matrix>s} -> {matrices} , {medium>s} -> {media} , {memorandum>s} -> {memoranda} , {minutia>s} -> {minutiae} , {moose>s} -> {moose} , {nucleus>s} -> {nuclei} , {oasis>s} -> {oases} , {offspring>s} -> {offspring} , {ovum>s} -> {ova} , {parenthesis>s} -> {parentheses} , {phenomenon>s} -> {phenomena} , {phylum>s} -> {phyla} , {quiz>s} -> {quizzes} , {referendum>s} -> {referenda} , {salmon>s} -> {salmon} , {self>s} -> {selves} , {series>s} -> {series} , {sheep>s} -> {sheep} , {species>s} -> {species} , {stimulus>s} -> {stimuli} , {stratum>s} -> {strata} , {swine>s} -> {swine} , {syllabus>s} -> {syllabi} , {symposium>s} -> {symposia} , {synopsis>s} -> {synopses} , {thesis>s} -> {theses} , {thief>s} -> {thieves} , {trout>s} -> {trout} , {tuna>s} -> {tuna} , {vertebra>s} -> {vertebrae} , {vertex>s} -> {vertices} , {vita>s} -> {vitae} , {vortex>s} -> {vortices} , {wharf>s} -> {wharves} , {wolf>s} -> {wolves} || [ .#. | " " ] _ [ .#. | " " | "," | "." | ";" | ":" ] ] ;
+
+
+define EngNounMorphophonology [ [ y ">" s ] -> {ies} || \[ a | e | i | o | u ] _ [ .#. | " " | "," | ";" ]
+,, [..] -> e || [ s | z | x | s h | c h ] ">" _ s [ .#. | " " | "," | ";" ] ] ;
+
+define rmBoundary [ ">" -> 0 ] ;
+
+regex [ EngNounInflection .o. EngIrregularNouns .o. EngNounMorphophonology .o. rmBoundary ] ;
+
+! Script for testing results
+
+! cat ~/altlab/crk/dicts/Wolvengrey.tsv| gawk -F"\t" 'NR>=2 && $3 ~ /^N/ { eng=$4; gsub("[ ]*\\([^\\)]+\\)","",eng); gsub("[ ]*\\[[^\\]]+\\]","",eng); gsub("\"","",eng); gsub("[ ]*[;]+",";",eng); gsub("[,;] [Ll]iteral[^,;]+","",eng); sub("[; ]+$","",eng); print "Distr+Dim+Px12Pl+ "eng; }' | flookup -q -b -x -i cw-eng-nouns.fsm| less
