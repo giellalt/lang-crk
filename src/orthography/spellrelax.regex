@@ -78,8 +78,9 @@ c (->) j,   # English influence on spelling <c>
 # Proto-Algonquian dialectal /y/
 y (->) ý,
 
-{iw} (->) {ow},      # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
+{iw} (->) {ow},     # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
 {ow} (->) {iw},
+{iyi} (->) î,       # Mishearing of vowel-glide-vowel cluster
 
 c (->) {ch},        # English influence on spelling <c>
 c (->) {tch},       # English influence on spelling <c>
@@ -87,7 +88,16 @@ c (->) {ts} ,,      # Another English influence on spelling <c>
 
 [..] (->) h || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],,  # Excessive preaspiration before stops
 [..] (->) h || _ .#. ,, # Excessive word-final pre-aspiration
-   h (->) 0 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ]    # Missing preaspiration before stops
+   h (->) 0 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],,    # Missing preaspiration before stops
+
+# Standardizing double-vowel notation for long vowels
+â (->) {aa},
+î (->) {ii},
+ô (->) {oo},
+
+# Woods Cree to Plains Cree
+[ ý | y ] (->) {th},
+ê (->) î
 
 ;
 

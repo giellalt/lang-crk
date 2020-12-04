@@ -27,6 +27,7 @@ GT_LEXC_ROOT=$(srcdir)/root.lexc
 GT_LEXC_SRCS_L1_L2=\
 					affixes/noun_affixes.lexc \
 					affixes/propernouns.lexc  \
+					affixes/symbols.lexc  \
 					affixes/verb_affixes.lexc \
 					stems/abbreviations.lexc  \
 					stems/noun_stems.lexc \
@@ -105,7 +106,8 @@ generated_files/eng-$(GTLANG)-propernouns.lexc: \
 # easily get updates from the template dir through svn merge.
 clean-local:
 	-rm -f *.all.* *fst *.foma *.script generated_files/*.lexc lexicon.*
-	-rm -f url.lexc *.tmp.*
+	-rm -f url.lexc *.tmp*
+	-rm -f *.relabel lexicon-tags.* lexicon-sigma.*
 
 include $(srcdir)/Makefile.modifications-phon.am
 include $(top_srcdir)/../giella-core/am-shared/src-morphology-dir-include.am

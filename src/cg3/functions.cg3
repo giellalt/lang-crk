@@ -120,9 +120,10 @@ LIST 3Pl = 3Pl ;
 LIST 3PlO = 3PlO ;
 LIST 3Sg = 3Sg ;
 LIST 3SgO = 3SgO ;
-LIST 4SgPlO = 4SgPlO ;
+LIST 4Sg/PlO = 4Sg/PlO ;
 LIST 4Pl = 4Pl ;
 LIST 4Sg/Pl = 4Sg/Pl ;
+LIST 5Sg/Pl = 5Sg/Pl ;
 LIST 4PlO = 4PlO ;
 LIST 4Sg = 4Sg ;
 LIST 4SgO = 4SgO ;
@@ -132,6 +133,7 @@ LIST 2Sg/PlO = 2Sg/PlO ;
 LIST 5Sg = 5Sg ;
 LIST X = X ;
 LIST Voc = Voc ;
+LIST Rel = Rel ;
 
 LIST VSg = 1Sg 2Sg 3Sg 4Sg ;
 LIST VSgO = 1SgO 2SgO 3SgO ;
@@ -711,7 +713,7 @@ MAP:AITIACTPlL @ACTOR> TARGET N + A + Pl IF  (NOT 0 Loc)(*1 AI + Ind + 3Pl OR TI
 MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(*-1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl BARRIER V OR CLB) ;
 MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C AI + Ind + 4Sg/Pl OR TI + Ind + 4Sg/Pl BARRIER V OR CLB) ;
 
-#TI Goals INAIMATE NOUNS
+#TI Goals INANIMATE NOUNS
 MAP:TIGOAL @<GOAL TARGET N + I IF (NOT 0 Loc)(*-1 TI + Ind BARRIER V OR CLB) ;
 MAP:TIGOAL @GOAL> TARGET N + I IF (NOT 0 Loc)(*1 TI + Ind BARRIER V OR CLB) ;
 
@@ -723,7 +725,7 @@ MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(*1 VII + Ind + 3Pl BARRIE
 MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*-1 VII + Ind + 4Sg OR VII + Ind + 4Pl BARRIER V OR CLB) ;
 MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*1 VII + Ind + 4Sg OR VII + Ind + 4Pl BARRIER V OR CLB) ;
 
-##PRONOMINAL GOALS goals more likely to be lexicalised thA actors cf schmirler et al 2018?
+##PRONOMINAL GOALS goals more likely to be lexicalised than actors cf schmirler et al 2018?
 MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (*-1 TI + Ind BARRIER V OR CLB) ;
 MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (*1 TI + Ind BARRIER V OR CLB) ;
 
@@ -806,7 +808,7 @@ MAP:TAACTObvR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(-1C TA + Cnj + PV/e + 4Sg/Pl
 MAP:TAACTObvL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(1C TA + Cnj + PV/e + 4Sg/Pl) ;
 
 ##INTERROGATIVE
-#MAP:INTR @<ACTOR TARGET Interr IF (-1 AI + Cnj + PV/e + Cnj + PV/e OR TI + Cnj + PV/e + 3Pl OR 3Sg BARRIER CLB) ;
+#MAP:INTR @<ACTOR TARGET Interr IF (-1 AI + Cnj + PV/e OR TI + Cnj + PV/e + 3Pl OR 3Sg BARRIER CLB) ;
 #MAP:INTR @ACTOR> TARGET Interr IF (1 AI + Cnj + PV/e OR TI + Cnj + PV/e + 3Pl OR 3Sg BARRIER CLB) ;
 
 #TI + Cnj + PV/e and AI + Cnj + PV/e actors nouns
@@ -819,12 +821,12 @@ MAP:AITIACTPlL @ACTOR> TARGET N + A + Pl IF  (NOT 0 Loc)(1 AI + Cnj + PV/e + 3Pl
 MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(-1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl) ;
 MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl) ;
 
-#TI + Cnj + PV/e Goals INAIMATE NOUNS
+#TI + Cnj + PV/e Goals INANIMATE NOUNS
 MAP:TIGOAL @<GOAL TARGET N + I IF (NOT 0 Loc)(-1 TI + Cnj + PV/e) ;
 MAP:TIGOAL @GOAL> TARGET N + I IF (NOT 0 Loc)(1 TI + Cnj + PV/e) ;
 
-#II + Cnj + PV/e + Cnj + PV/e actors: done with set of II-zero
-MAP:IIACTor3R @<ACTOR TARGET N + I + Sg IF (NOT 0 Loc)(-1 VII + Cnj + PV/e + Cnj + PV/e + 3Sg) ;
+#II + Cnj + PV/e actors: done with set of II-zero
+MAP:IIACTor3R @<ACTOR TARGET N + I + Sg IF (NOT 0 Loc)(-1 VII + Cnj + PV/e + 3Sg) ;
 MAP:IIACTor3L @ACTOR> TARGET N + I + Sg IF (NOT 0 Loc)(1 VII + Cnj + PV/e + 3Sg) ;
 MAP:IIACTor3R @<ACTOR TARGET N + I + Pl IF (NOT 0 Loc)(-1 VII + Cnj + PV/e + 3Pl) ;
 MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(1 VII + Cnj + PV/e + 3Pl) ;
@@ -832,8 +834,8 @@ MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(-1 VII + Cnj 
 MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(1 VII + Cnj + PV/e + 4Sg OR VII + Cnj + PV/e + 4Pl) ;
 
 ##PRONOMINAL GOALS goals more likely to be lexicalised than actors cf schmirler et al 2018?
-MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (-1 TI) ;
-MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (1 TI) ;
+MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (-1 TI + Cnj + PV/e) ;
+MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (1 TI + Cnj + PV/e) ;
 
 MAP:TAPron1SgGOALR @<GOAL TARGET Pron + 1Sg IF (-1 TA + Cnj + PV/e + 1SgO) ;
 MAP:TAPron1SgGOALL @GOAL> TARGET Pron + 1Sg IF (1 TA + Cnj + PV/e + 1SgO) ;
@@ -874,10 +876,10 @@ MAP:IIPron3SgACTL @ACTOR> TARGET Pron + I + Sg IF (1 VII + Cnj + PV/e + 3Sg) ;
 MAP:IIPron3PlACTR @<ACTOR TARGET Pron + I + Pl IF (-1 VII + Cnj + PV/e + 3Pl) ;
 MAP:IIPron3PlACTL @ACTOR> TARGET Pron + I + Pl IF (1 VII + Cnj + PV/e + 3Pl) ;
 
-MAP:AITITAPron1SgACTR @<ACTOR TARGET Pron + 1Sg IF (-1 V + Cnj + PV/e + Cnj + PV/e + 1Sg) ;
-MAP:AITITAPron1SgACTL @ACTOR> TARGET Pron + 1Sg IF (1 V + Cnj + PV/e + Cnj + PV/e + 1Sg) ;
-MAP:AITITAPron1PlACTR @<ACTOR TARGET Pron + 1Pl IF (-1 V + Cnj + PV/e + Cnj + PV/e + 1Pl) ;
-MAP:AITITAPron1PlACTL @ACTOR> TARGET Pron + 1Pl IF (1 V + Cnj + PV/e + Cnj + PV/e + 1Pl) ;
+MAP:AITITAPron1SgACTR @<ACTOR TARGET Pron + 1Sg IF (-1 V + Cnj + PV/e + 1Sg) ;
+MAP:AITITAPron1SgACTL @ACTOR> TARGET Pron + 1Sg IF (1 V + Cnj + PV/e + 1Sg) ;
+MAP:AITITAPron1PlACTR @<ACTOR TARGET Pron + 1Pl IF (-1 V + Cnj + PV/e + 1Pl) ;
+MAP:AITITAPron1PlACTL @ACTOR> TARGET Pron + 1Pl IF (1 V + Cnj + PV/e + 1Pl) ;
 
 MAP:AITITAPron2SgACTR @<ACTOR TARGET Pron + 2Sg IF (-1 V + Cnj + PV/e + 2Sg) ;
 MAP:AITITAPron2SgACTL @ACTOR> TARGET Pron + 2Sg IF (1 V + Cnj + PV/e + 2Sg) ;
@@ -927,7 +929,7 @@ MAP:AITIACTPlL @ACTOR> TARGET N + A + Pl IF  (NOT 0 Loc)(NOT 1 V OR CLB)(2 AI + 
 MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl) ;
 MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(NOT 1 V OR CLB)(2C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl) ;
 
-#TI + Cnj + PV/e Goals INAIMATE NOUNS
+#TI + Cnj + PV/e Goals INANIMATE NOUNS
 MAP:TIGOAL @<GOAL TARGET N + I IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 TI + Cnj + PV/e) ;
 MAP:TIGOAL @GOAL> TARGET N + I IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 TI + Cnj + PV/e) ;
 
@@ -939,9 +941,9 @@ MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 VII + C
 MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(NOT -1 V OR CLB)(-2 VII + Cnj + PV/e + 4Sg OR VII + Cnj + PV/e + 4Pl) ;
 MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(NOT 1 V OR CLB)(2 VII + Cnj + PV/e + 4Sg OR VII + Cnj + PV/e + 4Pl) ;
 
-##PRONOMINAL GOALS goals more likely to be lexicalised thA actors cf schmirler et al 2018?
-MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (NOT -1 V OR CLB)(-2 TI) ;
-MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (NOT 1 V OR CLB)(2 TI) ;
+##PRONOMINAL GOALS goals more likely to be lexicalised than actors cf schmirler et al 2018?
+MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (NOT -1 V OR CLB)(-2 TI + Cnj + PV/e) ;
+MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (NOT 1 V OR CLB)(2 TI + Cnj + PV/e) ;
 
 MAP:TAPron1SgGOALR @<GOAL TARGET Pron + 1Sg IF (NOT -1 V OR CLB)(-2 TA + Cnj + PV/e + 1SgO) ;
 MAP:TAPron1SgGOALL @GOAL> TARGET Pron + 1Sg IF (NOT 1 V OR CLB)(2 TA + Cnj + PV/e + 1SgO) ;
@@ -1037,7 +1039,7 @@ MAP:AITIACTPlL @ACTOR> TARGET N + A + Pl IF  (NOT 0 Loc)(*1 AI + Cnj + PV/e + 3P
 MAP:AITIACTorR @<ACTOR TARGET N + Obv IF (NOT 0 Loc)(*-1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl BARRIER V OR CLB) ;
 MAP:AITIACTorL @ACTOR> TARGET N + Obv IF (NOT 0 Loc)(*1C AI + Cnj + PV/e + 4Sg/Pl OR TI + Cnj + PV/e + 4Sg/Pl BARRIER V OR CLB) ;
 
-#TI + Cnj + PV/e Goals INAIMATE NOUNS
+#TI + Cnj + PV/e Goals INANIMATE NOUNS
 MAP:TIGOAL @<GOAL TARGET N + I IF (NOT 0 Loc)(*-1 TI + Cnj + PV/e BARRIER V OR CLB) ;
 MAP:TIGOAL @GOAL> TARGET N + I IF (NOT 0 Loc)(*1 TI + Cnj + PV/e BARRIER V OR CLB) ;
 
@@ -1049,7 +1051,7 @@ MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(*1 VII + Cnj + PV/e + 3Pl
 MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*-1 VII + Cnj + PV/e + 4Sg OR VII + Cnj + PV/e + 4Pl BARRIER V OR CLB) ;
 MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*1 VII + Cnj + PV/e + 4Sg OR VII + Cnj + PV/e + 4Pl BARRIER V OR CLB) ;
 
-##PRONOMINAL GOALS goals more likely to be lexicalised thA actors cf schmirler et al 2018?
+##PRONOMINAL GOALS goals more likely to be lexicalised than actors cf schmirler et al 2018?
 MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (*-1 TI + Cnj + PV/e BARRIER V OR CLB) ;
 MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (*1 TI + Cnj + PV/e BARRIER V OR CLB) ;
 
@@ -1159,7 +1161,7 @@ MAP:IIACTor3L @ACTOR> TARGET N + I + Pl IF (NOT 0 Loc)(*1 VII + 3Pl BARRIER V OR
 MAP:IIACTor4R @<ACTOR TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*-1 VII + 4Sg OR VII + 4Pl BARRIER V OR CLB) ;
 MAP:IIACTor4L @ACTOR> TARGET N + I + Px3Sg OR Px3Pl IF (NOT 0 Loc)(*1 VII + 4Sg OR VII + 4Pl BARRIER V OR CLB) ;
 
-##PRONOMINAL GOALS goals more likely to be lexicalised thA actors cf schmirler et al 2018?
+##PRONOMINAL GOALS goals more likely to be lexicalised than actors cf schmirler et al 2018?
 MAP:TIPron3GOALR @<GOAL TARGET Pron + I IF (*-1 TI BARRIER V OR CLB) ;
 MAP:TIPron3GOALL @GOAL> TARGET Pron + I IF (*1 TI BARRIER V OR CLB) ;
 
@@ -1344,6 +1346,12 @@ MAP:QuantV @<Quant-V TARGET Quant IF (-1 V) ;
 
 MAP:OBL @<OBL TARGET N + I IF (NOT 0 Loc)(*-1 TA OR AI BARRIER V OR CLB) ; 
 MAP:OBL @OBL> TARGET N + I IF (NOT 0 Loc)(*1 TA OR AI BARRIER V OR CLB) ; 
+
+MAP:OBL @<OBL TARGET N + A + Sg IF (NOT 0 Loc OR PEOPLE)(*-1 V + Rel BARRIER V OR CLB) ;
+MAP:OBL @<OBL TARGET N + A + Pl IF (NOT 0 Loc)(*-1 V + Rel BARRIER V OR CLB) ;
+MAP:OBL @OBL> TARGET N + A + Sg IF (NOT 0 Loc)(*1 V + Rel BARRIER V OR CLB) ;
+MAP:OBL @OBL> TARGET N + A + Pl IF (NOT 0 Loc)(*1 V + Rel BARRIER V OR CLB) ;
+
 MAP:OBL @<OBL TARGET N + A + Sg IF (NOT 0 Loc OR PEOPLE)(*-1 AI + 3Pl OR TI + 3Pl OR AI + non3 OR TI + non3 BARRIER V OR CLB) ;
 MAP:OBL @<OBL TARGET N + A + Pl IF (NOT 0 Loc)(*-1 AI + 3Sg OR TI + 3Sg OR AI + non3 OR TI + non3 BARRIER V OR CLB) ;
 MAP:OBL @OBL> TARGET N + A + Sg IF (NOT 0 Loc)(*1 AI + 3Pl OR TI + 3Pl OR AI + non3 OR TI + non3 BARRIER V OR CLB) ;

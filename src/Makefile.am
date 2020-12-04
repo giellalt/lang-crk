@@ -42,122 +42,188 @@ ADDITIONAL_TARGETS=
 
 all-am: Makefile $(DATA) $(ADDITIONAL_TARGETS)
 
-# The analyzer MUST be inverted.
-analyser-%.fomabin: analyser-%.hfst
-	$(AM_V_FST2FST)$(HFST_INVERT) -i $< \
-		| $(HFST_FST2FST) $(HFST_FLAGS) --use-backend-format --foma - -o $*.txt
-	$(AM_V_GZIP)$(GZIP) --force $*.txt
-	$(AM_V_MV)mv $*.txt.gz $@
-
-generator-%.fomabin: generator-%.hfst
-	$(AM_V_FST2FST)$(HFST_FST2FST) $(HFST_FLAGS) \
-		--use-backend-format --foma $< -o $*.txt
-	$(AM_V_GZIP)$(GZIP) --force $*.txt
-	$(AM_V_MV)mv $*.txt.gz $@
-
 ########################################################
 #### Add language-specific transducer targets here: ####
 
 #### Xerox transducers:
 if CAN_XFST
 GT_ANALYSERS+=
-GT_GENERATORS+=
+GT_GENERATORS+=generator-gt-desc.borders.xfst
 endif # CAN_XFST
 
 #### HFST transducers
 if CAN_HFST
-GT_ANALYSERS+=analyser-gt-desc.fomabin
-GT_GENERATORS+=generator-gt-norm.fomabin
+GT_ANALYSERS+=
+GT_GENERATORS+=generator-gt-desc.borders.hfstol
 endif # CAN_HFST
 
 #### FOMA transducers
 if CAN_FOMA
 GT_ANALYSERS+=
-GT_GENERATORS+=
+GT_GENERATORS+=generator-gt-desc.borders.foma
 endif # CAN_FOMA
 
 #################################################
 #### Add language-specific build rules here: ####
 
-# Author: Eddie Antonio Santos <easantos@ualberta.ca>
-# Date:   Wed Jul  4 10:44:11 MDT 2018 **
-# Origin: https://gist.github.com/eddieantonio/a6f8f29ea66ce5c1d12679283a7d8f25
+# This is the default, descriptive generating transducer.
+generator-gt-desc.borders.xfst  \
+generator-gt-desc.borders.hfst  \
+generator-gt-desc.borders.foma: \
+generator-gt-desc.borders.%: analyser-raw-gt-desc.%            \
+					filters/make-optional-transitivity-tags.% \
+					filters/make-optional-homonymy-tags.%     \
+					filters/make-optional-hyph-tags.%         \
+					filters/make-optional-variant-tags.%      \
+					filters/make-optional-semantic-tags.%     \
+					filters/make-optional-error-tags.%        \
+					filters/make-optional-adv_comp-tags.%     \
+					filters/make-optional-grammatical-tags.%  \
+					filters/remove-area-tags.%                \
+					filters/remove-dialect-tags.%             \
+					filters/remove-hyphenation-marks.%        \
+					filters/remove-infl_deriv-borders.%       \
+					filters/remove-word-boundary.%            \
+					filters/remove-number-string-tags.%       \
+					filters/remove-orthography-tags.%         \
+					filters/remove-Orth_IPA-strings.%         \
+					filters/remove-usage-tags.%               \
+					filters/remove-Use_GC-strings.%           \
+					filters/remove-Use_minusGC-tags.%         \
+					filters/remove-Use_minus_PMatch-tags.%    \
+					filters/remove-Use_PMatch-strings.%       \
+					filters/remove-mwe-tags.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/make-optional-transitivity-tags.$*\" \
+			.o. @\"filters/make-optional-homonymy-tags.$*\"     \
+			.o. @\"filters/make-optional-hyph-tags.$*\"         \
+			.o. @\"filters/make-optional-variant-tags.$*\"      \
+			.o. @\"filters/make-optional-semantic-tags.$*\"     \
+			.o. @\"filters/make-optional-error-tags.$*\"        \
+			.o. @\"filters/make-optional-adv_comp-tags.$*\"     \
+			.o. @\"filters/make-optional-grammatical-tags.$*\"  \
+			.o. @\"filters/remove-area-tags.$*\"                \
+			.o. @\"filters/remove-dialect-tags.$*\"             \
+			.o. @\"filters/remove-number-string-tags.$*\"       \
+			.o. @\"filters/remove-usage-tags.$*\"               \
+			.o. @\"filters/remove-orthography-tags.$*\"         \
+			.o. @\"filters/remove-Orth_IPA-strings.$*\"         \
+			.o. @\"filters/remove-Use_minus_PMatch-tags.$*\"    \
+			.o. @\"filters/remove-Use_GC-strings.$*\"           \
+			.o. @\"filters/remove-Use_minusGC-tags.$*\"         \
+			.o. @\"filters/remove-Use_PMatch-strings.$*\"       \
+			.o. @\"filters/remove-mwe-tags.$*\"                 \
+			.o. @\"$<\" \
+			;\n\
+		 $(INVERT_XFST)$(INVERT_FOMA)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
 
-# The source analyser and generator FSTs are done entirely in Standard Roman
-# Orthography (Latn).  However, we require Canadian Aboriginal syllabics
-# versions of both. This Makefile converts SRO FSTs in the equivillent
-# syllabics FSTs.
-#
-# analyser-gt-desc.Cans-to-Cans.hfstol
-# : An analyzer that accepts input in Canadian Aboriginal syllabics
-#   and produces a morphological analysis with its lemma also written in syllabics.
-#   "Descriptive" means it is able to understand non-standard orthography.
-#
-# generator-gt-desc.Cans-to-Cans.hfstol
-# : A generator that accepts a morphological analysis in Canadian Aboriginal syllabics,
-#   and produces an orthographically correct surface form, also in syllabics.
+generator-gt-desc.borders.Cans.xfst  \
+generator-gt-desc.borders.Cans.hfst  \
+generator-gt-desc.borders.Cans.foma: \
+generator-gt-desc.borders.Cans.%: analyser-raw-gt-desc.%           \
+					filters/make-optional-transitivity-tags.%  \
+					filters/make-optional-homonymy-tags.%      \
+					filters/make-optional-hyph-tags.%          \
+					filters/make-optional-variant-tags.%       \
+					filters/make-optional-semantic-tags.%      \
+					filters/make-optional-error-tags.%         \
+					filters/make-optional-adv_comp-tags.%      \
+					filters/make-optional-grammatical-tags.%   \
+					filters/remove-area-tags.%                 \
+					filters/remove-dialect-tags.%              \
+					filters/remove-number-string-tags.%        \
+					filters/remove-orthography-tags.%          \
+					filters/remove-Orth_IPA-strings.%          \
+					filters/remove-orig_lang-tags.%            \
+					filters/remove-usage-tags.%                \
+					filters/remove-Use_minusGC-tags.%          \
+					filters/remove-Use_GC-strings.%            \
+					filters/remove-Use_minus_PMatch-tags.%     \
+					filters/remove-Use_PMatch-strings.%        \
+					filters/remove-mwe-tags.%                  \
+					orthography/$(DEFAULT_WS)-to-Cans.compose.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/make-optional-transitivity-tags.$*\"   \
+			.o. @\"filters/make-optional-homonymy-tags.$*\"       \
+			.o. @\"filters/make-optional-hyph-tags.$*\"           \
+			.o. @\"filters/make-optional-variant-tags.$*\"        \
+			.o. @\"filters/make-optional-semantic-tags.$*\"       \
+			.o. @\"filters/make-optional-error-tags.$*\"          \
+			.o. @\"filters/make-optional-adv_comp-tags.$*\"       \
+			.o. @\"filters/make-optional-grammatical-tags.$*\"    \
+			.o. @\"filters/remove-area-tags.$*\"                  \
+			.o. @\"filters/remove-dialect-tags.$*\"               \
+			.o. @\"filters/remove-number-string-tags.$*\"         \
+			.o. @\"filters/remove-usage-tags.$*\"                 \
+			.o. @\"filters/remove-orig_lang-tags.$*\"             \
+			.o. @\"filters/remove-orthography-tags.$*\"           \
+			.o. @\"filters/remove-Orth_IPA-strings.$*\"           \
+			.o. @\"filters/remove-Use_minus_PMatch-tags.$*\"      \
+			.o. @\"filters/remove-Use_minusGC-tags.$*\"           \
+			.o. @\"filters/remove-Use_GC-strings.$*\"             \
+			.o. @\"filters/remove-Use_PMatch-strings.$*\"         \
+			.o. @\"filters/remove-mwe-tags.$*\"                   \
+			.o. @\"$<\"                                           \
+			.o. @\"orthography/$(DEFAULT_WS)-to-Cans.compose.$*\" \
+			;\n\
+		 $(INVERT_XFST)$(INVERT_FOMA)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
 
-if CAN_HFST
-# Creates the target FST as $@ :=  $^[0] .o. $^[1]
-HFSTCOMPOSE.RULE = $(HFST_COMPOSE) -F -o $@ \
-        -1 $(word 1,$^) -2 $(word 2,$^)
-
-# Orthographically "omnivorous" FST:
-# Consumes input in SRO-Macron, SRO-Circumflex or syllabics, and produces an
-# analysis with lemmas in SRO-Circumflex.
-#
-# See: https://github.com/UAlbertaALTLab/itwewina/issues/43
-ADDITIONAL_TARGETS+=analyser-gt-desc.omnivorous.hfstol
-analyser-gt-desc.omnivorous.hfst: \
-			orthography/Cans-to-Latn.compose.hfst \
-			orthography/macron-to-circumfl.compose.hfst \
-			analyser-gt-desc.hfst
-	$(AM_V_COMPOSE)$(HFST_COMPOSE) -F -o $@ \
-		-1 $(word 1,$^) \
-		-2 $(word 2,$^) -o - \
-		| $(HFST_COMPOSE) -F -1 - -2 $(word 3, $^) -o - \
-		| $(HFST_MINIMIZE) --encode-weights -i - -o $@
-
-# Cans-to-Cans FSTs -- FSTs whose "internal representation" is in syllabics.
-ADDITIONAL_TARGETS+=analyser-gt-desc.Cans-to-Cans.hfstol
-analyser-gt-desc.Cans-to-Cans.hfst: \
-			analyser-gt-desc.omnivorous.hfst \
-			orthography/Latn-to-Cans.compose.hfst
-	$(AM_V_COMPOSE)$(HFSTCOMPOSE.RULE)
-
-ADDITIONAL_TARGETS+=generator-gt-norm.Cans-to-Cans.hfstol
-generator-gt-norm.Cans-to-Cans.hfst: \
-			orthography/Cans-to-Latn.compose.hfst \
-			generator-gt-norm.hfst \
-			orthography/Latn-to-Cans.compose.hfst
-	$(AM_V_COMPOSE)$(HFST_COMPOSE) -F \
-		-1 orthography/Cans-to-Latn.compose.hfst \
-		-2 generator-gt-norm.hfst -o - \
-		| $(HFST_COMPOSE) -F \
-		-1 - -2 orthography/Latn-to-Cans.compose.hfst -o $@
-
-# Macr-to-Macr FSTs --FSTs whose "internal representation" is in macrons.
-# See: https://github.com/UAlbertaALTLab/itwewina/issues/41#issuecomment-419189272
-ADDITIONAL_TARGETS+=analyser-gt-desc.Macr-to-Macr.hfstol
-analyser-gt-desc.Macr-to-Macr.hfst: \
-			analyser-gt-desc.omnivorous.hfst \
-			orthography/circumfl-to-macron.compose.hfst
-	$(AM_V_COMPOSE)$(HFSTCOMPOSE.RULE)
-
-ADDITIONAL_TARGETS+=generator-gt-norm.Macr-to-Macr.hfstol
-generator-gt-norm.Macr-to-Macr.hfst: \
-			orthography/macron-to-circumfl.compose.hfst \
-			generator-gt-norm.hfst \
-			orthography/circumfl-to-macron.compose.hfst
-	$(AM_V_COMPOSE)$(HFST_COMPOSE) -F \
-		-1 orthography/macron-to-circumfl.compose.hfst \
-		-2 generator-gt-norm.hfst -o - \
-		| $(HFST_COMPOSE) -F -1 - \
-		-2 orthography/circumfl-to-macron.compose.hfst \
-		-o $@
-
-endif # CAN_HFST
-
+generator-gt-desc.borders.macron.xfst  \
+generator-gt-desc.borders.macron.hfst  \
+generator-gt-desc.borders.macron.foma: \
+generator-gt-desc.borders.macron.%: analyser-raw-gt-desc.%           \
+					filters/make-optional-transitivity-tags.%  \
+					filters/make-optional-homonymy-tags.%      \
+					filters/make-optional-hyph-tags.%          \
+					filters/make-optional-variant-tags.%       \
+					filters/make-optional-semantic-tags.%      \
+					filters/make-optional-error-tags.%         \
+					filters/make-optional-adv_comp-tags.%      \
+					filters/make-optional-grammatical-tags.%   \
+					filters/remove-area-tags.%                 \
+					filters/remove-dialect-tags.%              \
+					filters/remove-number-string-tags.%        \
+					filters/remove-orthography-tags.%          \
+					filters/remove-Orth_IPA-strings.%          \
+					filters/remove-orig_lang-tags.%            \
+					filters/remove-usage-tags.%                \
+					filters/remove-Use_minusGC-tags.%          \
+					filters/remove-Use_GC-strings.%            \
+					filters/remove-Use_minus_PMatch-tags.%     \
+					filters/remove-Use_PMatch-strings.%        \
+					filters/remove-mwe-tags.%                  \
+					orthography/$(DEFAULT_ORTH)-to-macron.compose.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/make-optional-transitivity-tags.$*\"   \
+			.o. @\"filters/make-optional-homonymy-tags.$*\"       \
+			.o. @\"filters/make-optional-hyph-tags.$*\"           \
+			.o. @\"filters/make-optional-variant-tags.$*\"        \
+			.o. @\"filters/make-optional-semantic-tags.$*\"       \
+			.o. @\"filters/make-optional-error-tags.$*\"          \
+			.o. @\"filters/make-optional-adv_comp-tags.$*\"       \
+			.o. @\"filters/make-optional-grammatical-tags.$*\"    \
+			.o. @\"filters/remove-area-tags.$*\"                  \
+			.o. @\"filters/remove-dialect-tags.$*\"               \
+			.o. @\"filters/remove-number-string-tags.$*\"         \
+			.o. @\"filters/remove-usage-tags.$*\"                 \
+			.o. @\"filters/remove-orig_lang-tags.$*\"             \
+			.o. @\"filters/remove-orthography-tags.$*\"           \
+			.o. @\"filters/remove-Orth_IPA-strings.$*\"           \
+			.o. @\"filters/remove-Use_minus_PMatch-tags.$*\"      \
+			.o. @\"filters/remove-Use_minusGC-tags.$*\"           \
+			.o. @\"filters/remove-Use_GC-strings.$*\"             \
+			.o. @\"filters/remove-Use_PMatch-strings.$*\"         \
+			.o. @\"filters/remove-mwe-tags.$*\"                   \
+			.o. @\"$<\"                                           \
+			.o. @\"orthography/$(DEFAULT_ORTH)-to-macron.compose.$*\" \
+			;\n\
+		 $(INVERT_XFST)$(INVERT_FOMA)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
