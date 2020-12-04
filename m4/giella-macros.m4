@@ -99,7 +99,7 @@ AC_MSG_RESULT([$GIELLA_CORE])
 
 ### This is the version of the Giella Core that we require. Update as needed.
 ### It is possible to specify also subversion revision: 0.1.2-12345
-_giella_core_min_version=0.4.5
+_giella_core_min_version=0.9.6
 
 # GIELLA_CORE/GTCORE env. variable, required by the infrastructure to find scripts:
 AC_ARG_VAR([GIELLA_CORE], [directory for the Giella infra core scripts and other required resources])
@@ -278,7 +278,7 @@ AC_ARG_VAR([GIELLA_LIBS], [directory containing precompiled libraries for proofi
 ################
 
 ################ Weighted fst's ################
-AC_PATH_PROG([BC], [bc], [no], [$PATH$PATH_SEPARATOR$with_bc])
+AC_PATH_PROG([BC], [bc], [false], [$PATH$PATH_SEPARATOR$with_bc])
 
 ################ YAML-based testing ################
 AC_ARG_ENABLE([yamltests],
@@ -336,6 +336,23 @@ AS_IF([test "x$GAWK" != x], [
 ],[giellalt_forrest_validation=no])
 AC_MSG_RESULT([$giellalt_forrest_validation])
 AM_CONDITIONAL([CAN_FORREST_VALIDATE], [test "x$giellalt_forrest_validation" != xno])
+
+# Check for npm etc. stuff for divvunspell stats
+AC_ARG_WITH([npm],
+            [AS_HELP_STRING([--with-npm=DIRECTORY],
+                            [search npm in DIRECTORY @<:@default=PATH@:>@])],
+            [with_npm=$withval],
+            [with_npm=no])
+AC_PATH_PROG([NPM], [npm], [], [$PATH$PATH_SEPARATOR$with_npm])
+AC_PATH_PROG([R], [R], [], [$PATH$PATH_SEPARATOR$with_R])
+AC_ARG_WITH([divvunspell],
+            [AS_HELP_STRING([--with-divvunspell=DIRECTORY],
+                            [search divvunspell in DIRECTORY @<:@default=PATH@:>@])],
+            [with_divvunspell=$withval],
+            [with_divvunspell=no])
+AC_PATH_PROG([DIVVUN_ACCURACY], [accuracy], [], [$PATH$PATH_SEPARATOR$with_divvunspell])
+
+
 
 ################ can rsync oxt template? ################
 AC_PATH_PROG([RSYNC], [rsync], [no], [$PATH$PATH_SEPARATOR$with_rsync])
@@ -420,6 +437,8 @@ AC_PATH_PROG([SEE], [see], [], [$PATH$PATH_SEPARATOR$with_see])
 
 # Check for grammar checker validation tool:
 AC_PATH_PROG([DIVVUN_VALIDATE_SUGGEST], [divvun-validate-suggest], [no], [$PATH$PATH_SEPARATOR$with_divvun_validate_suggest])
+# Check for grammar checker (for self-test)
+AC_PATH_PROG([DIVVUN_CHECKER], [divvun-checker], [no], [$PATH$PATH_SEPARATOR$with_divvun_validate_suggest])
 
 ]) # gt_PROG_SCRIPTS_PATHS
 
@@ -431,7 +450,7 @@ AC_DEFUN([gt_PROG_XFST],
             [AS_HELP_STRING([--with-xfst=DIRECTORY],
                             [search xfst in DIRECTORY @<:@default=PATH@:>@])],
             [with_xfst=$withval],
-            [with_xfst=yes])
+            [with_xfst=$DEFAULT_XFST])
 AC_PATH_PROG([PRINTF], [printf], [echo -n])
 AC_PATH_PROG([XFST], [xfst], [false], [$PATH$PATH_SEPARATOR$with_xfst])
 AC_PATH_PROG([TWOLC], [twolc], [false], [$PATH$PATH_SEPARATOR$with_xfst])
@@ -486,7 +505,7 @@ AC_DEFUN([gt_PROG_FOMA],
             [AS_HELP_STRING([--with-foma=DIRECTORY],
                             [search foma in DIRECTORY @<:@default=PATH@:>@])],
             [with_foma=$withval],
-            [with_foma=no])
+            [with_foma=$DEFAULT_FOMA])
 
 # If Xerox tools and Hfst are not found, assume we want Foma:
 AS_IF([test x$gt_prog_xfst = xno \
@@ -623,9 +642,9 @@ AM_CONDITIONAL([CAN_XZ], [test "x$ac_cv_prog_XZ" != xfalse])
 # Enable hyperminimisation of the lexical transducer - default is 'no'
 AC_ARG_ENABLE([hyperminimisation],
               [AS_HELP_STRING([--enable-hyperminimisation],
-                              [enable hyperminimisation of lexical fst @<:@default=no@:>@])],
+                              [enable hyperminimisation of lexical fst @<:@default=$DEFAULT_HYPERMIN@:>@])],
               [enable_hyperminimisation=$enableval],
-              [enable_hyperminimisation=no])
+              [enable_hyperminimisation=$DEFAULT_HYPERMIN])
 AM_CONDITIONAL([WANT_HYPERMINIMISATION], [test "x$enable_hyperminimisation" != xno])
 
 # Enable symbol alignment of the lexical transducer - default is 'no'
@@ -647,18 +666,28 @@ AM_CONDITIONAL([WANT_TWOSTEP_INTERSECT], [test "x$enable_twostep_intersect" != x
 #enable_reversed_intersect
 AC_ARG_ENABLE([reversed-intersect],
               [AS_HELP_STRING([--enable-reversed-intersect],
-                              [enable reversed compose-intersect (faster and takes less RAM in some cases) @<:@default=no@:>@])],
+                              [enable reversed compose-intersect (faster and takes less RAM in some cases) @<:@default=$DEFAULT_REVERCI@:>@])],
               [enable_reversed_intersect=$enableval],
-              [enable_reversed_intersect=yes])
+              [enable_reversed_intersect=$DEFAULT_REVERCI])
 AM_CONDITIONAL([WANT_REVERSED_INTERSECT], [test "x$enable_reversed_intersect" != xno])
 
 ############ Tool switches: ############
 # Enable all stable tools in one go:
+AC_ARG_ENABLE([ci],
+			  [AS_HELP_STRING([--enable-ci],
+			  [build nothing unless explicitly enabled @<:@default=no@:>@])],
+			  [enable_ci=$enableval],
+			  [enable_ci=no])
+# Must zero out enableval, otherwise it will carry its value to the next use,
+# so you can't test whether something was enabled due to defaults or to active enabling:
+enableval=''
+
 AC_ARG_ENABLE([all_tools],
 			  [AS_HELP_STRING([--enable-all-tools],
 			  [build all tools (excluding unstable or experimental tools, which must be explicitly enabled with --enable-dialects, --enable-glossers, --enable-phonetic, --enable-downcaseerror, --enable-L2, --enable-pattern-hyphenators, --enable-fomaspeller, --enable-vfstspeller) @<:@default=no@:>@])],
 			  [enable_all_tools=$enableval],
 			  [enable_all_tools=no])
+enableval=''
 
 # Enable morphological analysers - default is 'yes'
 AC_ARG_ENABLE([analysers],
@@ -666,7 +695,9 @@ AC_ARG_ENABLE([analysers],
                               [build morphological analysers @<:@default=yes@:>@])],
               [enable_analysers=$enableval],
               [enable_analysers=yes])
+AS_IF([test "x$enable_ci" = "xyes" -a "x$enableval" = "x"], [enable_analysers=no])
 AM_CONDITIONAL([WANT_MORPHOLOGY], [test "x$enable_analysers" != xno])
+enableval=''
 
 # Enable morphological generators - default is 'yes'
 AC_ARG_ENABLE([generators],
@@ -674,7 +705,9 @@ AC_ARG_ENABLE([generators],
                               [build morphological generators @<:@default=yes@:>@])],
               [enable_generators=$enableval],
               [enable_generators=yes])
+AS_IF([test "x$enable_ci" = "xyes" -a "x$enableval" = "x"], [enable_generators=no])
 AM_CONDITIONAL([WANT_GENERATION], [test "x$enable_generators" != xno])
+enableval=''
 
 # Enable glossing morphological analysers - default is 'no'
 AC_ARG_ENABLE([glossers],
@@ -682,7 +715,9 @@ AC_ARG_ENABLE([glossers],
                               [build glossing morphological analysers @<:@default=no@:>@])],
               [enable_glossers=$enableval],
               [enable_glossers=no])
+AS_IF([test "x$enable_ci" = "xyes" -a "x$enableval" = "x"], [enable_glossers=no])
 AM_CONDITIONAL([WANT_GLOSSERS], [test "x$enable_glossers" != xno])
+enableval=''
 
 # Enable text transcriptors - default is 'yes'
 AC_ARG_ENABLE([transcriptors],
@@ -690,7 +725,9 @@ AC_ARG_ENABLE([transcriptors],
                               [build text transcriptors @<:@default=yes@:>@])],
               [enable_transcriptors=$enableval],
               [enable_transcriptors=yes])
+AS_IF([test "x$enable_ci" = "xyes" -a "x$enableval" = "x"], [enable_transcriptors=no])
 AM_CONDITIONAL([WANT_TRANSCRIPTORS], [test "x$enable_transcriptors" != xno])
+enableval=''
 
 # Enable syntactic parsing - default is 'yes'
 AC_ARG_ENABLE([syntax],
@@ -701,7 +738,9 @@ AC_ARG_ENABLE([syntax],
 AS_IF([test "x$enable_syntax" = "xyes" -a "x$gt_prog_vislcg3" = "xno"],
              [enable_syntax=no
               AC_MSG_ERROR([vislcg3 tools missing or too old, please install or disable syntax tools!])])
+AS_IF([test "x$enable_ci" = "xyes" -a "x$enableval" = "x"], [enable_syntax=no])
 AM_CONDITIONAL([WANT_SYNTAX], [test "x$enable_syntax" != xno])
+enableval=''
 # $gt_prog_vislcg3
 
 # Enable grammar checkers - default is 'no' (via $enable_all_tools)
@@ -715,8 +754,13 @@ AS_IF([test "x$enable_grammarchecker" = "xyes" -a "x$gt_prog_vislcg3" = "xno"],
        AC_MSG_ERROR([vislcg3 missing or too old - required for the grammar checker])],
       [AS_IF([test "x$enable_grammarchecker" = "xyes" -a "x$DIVVUN_VALIDATE_SUGGEST" = "xno"],
           [enable_grammarchecker=no
-           AC_MSG_ERROR([divvun-validate-suggest required for building grammar checkers])])])
+           AC_MSG_ERROR([divvun-validate-suggest required for building grammar checkers])])]
+      [AS_IF([test "x$enable_grammarchecker" = "xyes" -a "x$DIVVUN_CHECKER" = "xno"],
+          [enable_grammarchecker=no
+           AC_MSG_ERROR([divvun-checker required for testing grammar checkers])])])
+AS_IF([test "x$enable_ci" = "xyes" -a "x$enableval" = "x"], [enable_grammarchecker=no])
 AM_CONDITIONAL([WANT_GRAMCHECK], [test "x$enable_grammarchecker" != xno])
+enableval=''
 
 # Enable all spellers - default is 'no'
 AC_ARG_ENABLE([spellers],
@@ -725,6 +769,8 @@ AC_ARG_ENABLE([spellers],
               [enable_spellers=$enableval],
               [enable_spellers=$enable_all_tools])
 AS_IF([test "x$enable_grammarchecker" != xno],[enable_spellers=yes])
+AS_IF([test "x$enable_spellers" != xno -a "x$BC" = xfalse],
+      [AC_MSG_ERROR([counting statistics for spell-checkers requires bc, install or disable spellers])])
 AM_CONDITIONAL([WANT_SPELLERS], [test "x$enable_spellers" != xno])
 
 # Enable hfst desktop spellers - default is 'yes' (but dependent on
@@ -743,14 +789,14 @@ AM_CONDITIONAL([WANT_HFST_DESKTOP_SPELLER], [test "x$enable_desktop_hfstspellers
 # Enable minimised fst-spellers by default:
 AC_ARG_ENABLE([minimised-spellers],
               [AS_HELP_STRING([--enable-minimised-spellers],
-                              [minimise hfst spellers @<:@default=yes@:>@])],
+                              [minimise hfst spellers @<:@default=$DEFAULT_SPELLER_MINIMISATION@:>@])],
               [enable_minimised_spellers=$enableval],
-              [enable_minimised_spellers=yes])
+              [enable_minimised_spellers=$DEFAULT_SPELLER_MINIMISATION])
 AS_IF([test "x$enable_minimised_spellers" != "xyes"],
-      [AC_SUBST([HFST_MINIMIZE_SPELLER], ["$ac_cv_path_HFST_REMOVE_EPSILONS \$(HFST_FLAGS)  "])],
-      [AC_SUBST([HFST_MINIMIZE_SPELLER], ["$ac_cv_path_HFST_REMOVE_EPSILONS \$(HFST_FLAGS) \
-                                         | $ac_cv_path_HFST_DETERMINIZE --encode-weights \$(HFST_FLAGS) \
-                                         | $ac_cv_path_HFST_MINIMIZE    --encode-weights \$(HFST_FLAGS) "])])
+      [AC_SUBST([HFST_MINIMIZE_SPELLER], ["$ac_cv_path_HFST_REMOVE_EPSILONS \$(HFST_FLAGS) \$(MORE_VERBOSITY) "])],
+      [AC_SUBST([HFST_MINIMIZE_SPELLER], ["$ac_cv_path_HFST_REMOVE_EPSILONS \$(HFST_FLAGS) \$(MORE_VERBOSITY) \
+                                         | $ac_cv_path_HFST_DETERMINIZE --encode-weights \$(HFST_FLAGS) \$(MORE_VERBOSITY) \
+                                         | $ac_cv_path_HFST_MINIMIZE    --encode-weights \$(HFST_FLAGS) \$(MORE_VERBOSITY) "])])
 
 # Enable Foma-based spellers, requires gzip - default is no
 AC_ARG_ENABLE([fomaspeller],
@@ -938,7 +984,7 @@ AM_CONDITIONAL([WANT_MORPHER], [test "x$enable_morpher" != xno])
 # Enable dialect-specific analysers and tools, such as spellers:
 AC_ARG_ENABLE([dialects],
               [AS_HELP_STRING([--enable-dialects],
-                              [build dialect specific fst's and spellers @<:@default=no@:>@])],
+                              [build dialect specific fst’s and spellers @<:@default=no@:>@])],
               [enable_dialects=$enableval],
               [enable_dialects=no])
 AS_IF([test "x$enable_dialects" = "xyes" -a "x$DIALECTS" = "x"],
@@ -946,7 +992,7 @@ AS_IF([test "x$enable_dialects" = "xyes" -a "x$DIALECTS" = "x"],
        AC_MSG_ERROR([You have not defined any dialects. Please see the documentation.])])
 AM_CONDITIONAL([WANT_DIALECTS], [test "x$enable_dialects" != xno])
 
-]) # ' # gt_ENABLE_TARGETS
+]) # gt_ENABLE_TARGETS
 
 ################################################################################
 # Define function to print the configure footer
@@ -955,19 +1001,19 @@ AC_DEFUN([gt_PRINT_FOOTER],
 [
 cat<<EOF
 
-  -- specialised fst's (off by default): --
-  * dictionary fst's enabled: $enable_dicts
+  -- specialised fst’s (off by default): --
+  * dictionary fst’s enabled: $enable_dicts
   * Oahpa transducers enabled: $enable_oahpa
     * L2 analyser: $enable_L2
     * downcase error analyser: $enable_downcaseerror
   * generate abbr.txt: $enable_abbr
-  * build glossing fst's: $enable_glossers
-  * build dialect specific fst's: $enable_dialects
+  * build glossing fst’s: $enable_glossers
+  * build dialect specific fst’s: $enable_dialects
 
   -- Tools (off by default): --
   * phonetic/IPA conversion enabled: $enable_phonetic
   * CG-based MT enabled: $enable_cgmt
-  * Apertium MT fst's enabled: $enable_apertium
+  * Apertium MT fst’s enabled: $enable_apertium
   * build tokenisers: $enable_tokenisers
   * build morphololgical segmenter: $enable_morpher
   * build analyser tool: $enable_analyser_tool
@@ -988,10 +1034,9 @@ cat<<EOF
 -- Building $PACKAGE_STRING (more specialised build targets listed above):
 
   -- Fst build tools: Xerox, Hfst or Foma - at least one must be installed
-  -- Xerox is default on, the others off unless they are the only one present --
-  * build Xerox fst's: $gt_prog_xfst
-  * build HFST fst's: $gt_prog_hfst
-  * build Foma fst's: $gt_prog_foma
+  * build Xerox fst’s: $gt_prog_xfst (default: $DEFAULT_XFST)
+  * build HFST fst’s: $gt_prog_hfst (default: $DEFAULT_HFST)
+  * build Foma fst’s: $gt_prog_foma (default: $DEFAULT_FOMA)
 
   -- basic packages (on by default): --
   * analysers enabled: $enable_analysers

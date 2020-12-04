@@ -22,6 +22,17 @@
 _RESET := $(shell tput sgr0)
 _EMPH := $(shell tput setaf 6)
 
+WEIGHT_FORMAT=--format=openfst-tropical
+ifeq ($(V), 0)
+VERBOSITY=--silent
+else
+VERBOSITY=--verbose
+endif
+
+crk-strict-analyzer.hfst: crk-normative-generator-with-morpheme-boundaries.hfst remove-morpheme-boundary-filter.hfst
+	-@echo "$(_EMPH)Removing morpheme boundaries to create strict analyzer.$(_RESET)"
+	hfst-compose --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) | hfst-invert -o $@
+
 # Concatenate by leveraging existing Makefile target. Avoids errors due to
 # missing files, and keeps the two build files syncronised wrt source files.
 crk-dict.lexc: $(MORPHOLOGY)
@@ -30,43 +41,32 @@ crk-dict.lexc: $(MORPHOLOGY)
 
 crk-lexc-dict.hfst: crk-dict.lexc
 	-@echo "$(_EMPH)Compiling LEXC code.$(_RESET)"
-	hfst-lexc --format=openfst-tropical --output=$@ $<
+	hfst-lexc $(WEIGHT_FORMAT) -o $@ $<
 
 crk-phon.hfst: $(PHONOLOGY)
-	-@echo "$(_EMPH)Compiling TWOLC code.$(_RESET)"
-	hfst-twolc -i $< -o $@
+	-@echo "$(_EMPH)Compiling xfscript code.$(_RESET)"
+	(cat $<; echo "save stack $@"; echo quit) \
+		| hfst-xfst --pipe-mode $(VERBOSITY) $(WEIGHT_FORMAT)
 
-crk-phon-morph-bound.hfst: $(PHONOLOGY_WITH_BOUNDARIES)
-	-@echo "$(_EMPH)Compiling TWOLC code (with morpheme boundaries).$(_RESET)"
-	hfst-twolc -i $< -o $@
-
-crk-normative-generator-with-err-orth.hfst: crk-lexc-dict.hfst crk-phon.hfst
+crk-normative-generator-with-morpheme-boundaries.hfst: crk-lexc-dict.hfst crk-phon.hfst
 	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers.$(_RESET)"
 	hfst-compose-intersect -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
 
-crk-normative-generator-with-morpheme-boundaries.hfst: crk-lexc-dict.hfst crk-phon-morph-bound.hfst
-	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers (with morpheme boundaries).$(_RESET)"
-	hfst-compose-intersect -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
-
-crk-strict-analyzer-with-err-orth.hfst: crk-normative-generator-with-err-orth.hfst
-	-@echo "$(_EMPH)Inverting normative generator tranducer into a normative analyzer transducer.$(_RESET)"
-	hfst-invert $< -o $@
-
 crk-orth.hfst: $(ORTHOGRAPHY)
 	-@echo "$(_EMPH)Compiling regular expression implementing spelling-relaxation.$(_RESET)"
-	hfst-regexp2fst -S -i $< | hfst-invert -o $@
+	hfst-regexp2fst $(VERBOSITY) --semicolon $< -o $@
 
-crk-descriptive-analyzer.hfst: crk-orth.hfst crk-strict-analyzer-with-err-orth.hfst
+crk-descriptive-analyzer.hfst: crk-strict-analyzer.hfst crk-orth.hfst
 	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer transducer to create descriptive analyzer.$(_RESET)"
-	hfst-compose -F -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
+	hfst-invert -i $(word 1, $^) | hfst-compose --harmonize-flags -1 - -2 $(word 2, $^) | hfst-minimize - | hfst-invert - -o $@
+
+remove-morpheme-boundary-filter.hfst:
+	-@echo "$(_EMPH)Compiling filter to remove morpheme boundaries.$(_RESET)"
+	echo '%> -> 0, %< -> 0;' | hfst-regexp2fst $(VERBOSITY) --semicolon -o $@
 
 crk-err-filter.hfst:
 	-@echo "$(_EMPH)Compiling filter to remove non-normative forms with +Err/Orth tag.$(_RESET)"
-	echo '~[ $$[ "+Err/Orth" ] ] ;' | hfst-regexp2fst -S -o $@
-
-crk-strict-analyzer.hfst: crk-err-filter.hfst crk-normative-generator-with-err-orth.hfst
-	-@echo "$(_EMPH)Removing lexicalised non-normative forms from normative analyzer and generator.$(_RESET)"
-	hfst-compose -F -1 $(word 1, $^) -2 $(word 2, $^) | hfst-invert -o $@
+	echo '~[ $$[ "+Err/Orth" ] ] ;' | hfst-regexp2fst $(VERBOSITY) --semicolon -o $@
 
 crk-normative-generator.hfst: crk-strict-analyzer.hfst
 	hfst-invert -i $^ -o $@
@@ -85,7 +85,7 @@ crk-descriptive-analyzer.fomabin: crk-normative-generator.fomabin crk-orth.fomab
 		-s
 
 %.hfstol: %.hfst
-	hfst-fst2fst -O -i $< -o $@
+	hfst-fst2fst --optimized-lookup-unweighted -i $< -o $@
 
 %.fomabin: %.hfst
 	@# HFST has the upper and lower sides inverted (I don't blame them)

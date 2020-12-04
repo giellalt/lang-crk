@@ -11,7 +11,7 @@
 
 # POS-parsing the English definitions sentences
 # Input: ~/giella/art/dicts/crk/crkeng_cw_md_200218_definitions.txt
-# Output: ~/giella/art/dicts/crk/crkeng_cw_md_200218_definitions.txt
+# Output: ~/giella/art/dicts/crk/crkeng_cw_md_200218_translations-tagged.txt
 #
 # stanford-postagger-full-2018-10-16 arppejava -mx300m -classpath stanford-postagger.jar edu.stanford.nlp.tagger.maxent.MaxentTagger -model models/english-bidirectional-distsim.tagger -sentenceDelimiter newline -textFile ~/giella/art/dicts/crk/crkeng_cw_md_200218_definitions.txt -outputFormat inlineXML -outputFormatOptions lemmatize > ~/giella/art/dicts/crk/crkeng_cw_md_200218_translations-tagged.txt
 

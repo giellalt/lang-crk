@@ -145,6 +145,7 @@ LIST 4SgO = 4SgO ;
 LIST 5Sg = 5Sg ;
 LIST 4Sg/Pl = 4Sg/Pl ;
 LIST 4Sg/PlO = 4Sg/PlO ;
+LIST 5Sg/PlO = 5Sg/PlO ;
 LIST X = X ;
 
 LIST Px12Pl = Px12Pl ;
@@ -642,13 +643,14 @@ SET NOT-NOUN = WORD - N ;
 
 SET NUMBERGENDER = (A Sg) OR (A Pl) OR (I Sg) OR (I Pl) OR (A Obv) ;
 
+LIST V-OBJ = 1SgO 2SgO 3SgO 1PlO 12PlO 3PlO 4Sg/PlO 5Sg/PlO ;
 SET VII = II - IIZ ;
 
 
 # Valency tags
 # - - - - - - -
 
-LIST <BE-An><TH-Any> = <BE-An><TH-Any> ;
+LIST <BE-Any><TH-Any> = <BE-Any><TH-Any> ;
 
 
 	# ====================== #
@@ -657,8 +659,13 @@ LIST <BE-An><TH-Any> = <BE-An><TH-Any> ;
 
 
 
-SUBSTITUTE (TA) (TA <BE-An><TH-Any>) TARGET BENEF ;
-    ## ê-kî-wîhtamâkot kîkway ana
+SUBSTITUTE (TA) (TA <BE-Any><TH-Any>) TARGET BENEF ;
+    ## kî-wîhtamâk kîkway ana
+	
+LIST PEOPLE = "nisikos" "wiyawâw" ;
+LIST <TH-In> = <TH-In> ;
+
+SUBSTITUTE (TI) (TI <TH-In>) TARGET (V TI)f ;
     
     
  
