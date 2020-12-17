@@ -25,11 +25,15 @@ FSTs = crk-descriptive-analyzer.hfstol \
 	crk-strict-analyzer.hfstol \
 	crk-normative-generator-with-morpheme-boundaries.hfstol
 
+FOMAFSTs = $(FSTs:.hfstol=.fomabin)
+
 all: $(FSTs)
 
-fsts.zip: $(FSTs) $(FSTs:.hfstol=.fomabin)
+fsts.zip: $(FSTs) $(FOMAFSTs)
 	zip $@ $^
 
+test: $(FOMAFSTs)
+	fsttest
 
 include morphological-fst-sources.mk
 include morphological-fst-rules.mk

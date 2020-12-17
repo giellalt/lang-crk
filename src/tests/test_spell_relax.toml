@@ -1,0 +1,10 @@
+[fst]
+fomabin = "crk-descriptive-analyzer.fomabin"
+
+[[tests]]
+lower = "tansi"
+expect = "tânisi+Ipc+Err/Orth"
+
+[[tests]]
+lower = "tân'si"
+expect = "tânisi+Ipc"
