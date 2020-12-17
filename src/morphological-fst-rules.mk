@@ -79,6 +79,7 @@ crk-descriptive-analyzer.fomabin: crk-normative-generator.fomabin crk-orth.fomab
 		-e "invert net" \
 		-e "define M" \
 		-e "load $(word 2, $^)" \
+		-e "invert net" \
 		-e "define O" \
 		-e "regex [ M .o. O ];" \
 		-e "save stack $@" \
