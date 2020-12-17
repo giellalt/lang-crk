@@ -1,0 +1,16 @@
+[fst]
+fomabin = "crk-normative-generator.fomabin"
+
+# See: https://github.com/giellalt/lang-crk/issues/14
+[[tests]]
+lower = "PV/ka+atoskêw+V+AI+Ind+12Pl"
+expect = "kika-atoskânaw"
+[[tests]]
+lower = "PV/ka+atoskêw+V+AI+Ind+12Pl"
+expect = "kika-atoskânaw"
+[[tests]]
+lower = "PV/ka+nikamow+V+AI+Ind+12Pl"
+expect = "kika-nikamonaw"
+[[tests]]
+lower = "PV/ka+nikamow+V+AI+Ind+12Pl"
+expect = "kika-nikamonânaw"
