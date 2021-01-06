@@ -26,13 +26,16 @@ FSTs = crk-descriptive-analyzer.hfstol \
 	crk-normative-generator-with-morpheme-boundaries.hfstol
 
 FOMAFSTs = $(FSTs:.hfstol=.fomabin)
+# fsttest REQUIRES fomabins. Place any FSTs that you want to test here with
+# the .fomabin extension:
+FSTS_UNDER_TEST = $(FOMAFSTs) crk-lexc-dict.fomabin
 
 all: $(FSTs)
 
 fsts.zip: $(FSTs) $(FOMAFSTs)
 	zip $@ $^
 
-test: $(FOMAFSTs)
+test: $(FSTS_UNDER_TEST) 
 	fsttest
 
 include morphological-fst-sources.mk
