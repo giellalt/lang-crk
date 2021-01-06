@@ -20,17 +20,21 @@
 ALL_SOURCES = $(MORPHOLOGY) $(PHONOLOGY) $(ORTHOGRAPHY)
 ALL_SOURCES_WITH_EXTRAS = $(ALL_SOURCES) $(EXTRA_MORPHOLOGY)
 
-MORPHOLOGY = fst/root.lexc \
-  fst/affixes/noun_affixes.lexc \
-  fst/affixes/verb_affixes.lexc \
+# TODO: ask Antti about these:
+MORPHOLOGY = $(BASE_MORPHOLOGY) \
   fst/stems/derivation_stems.lexc \
   fst/stems/non_standard.lexc \
+  fst/stems/noun_vocatives.lexc
+
+BASE_MORPHOLOGY = fst/root.lexc \
+  fst/affixes/noun_affixes.lexc \
+  fst/affixes/verb_affixes.lexc \
   fst/stems/noun_stems.lexc \
-  fst/stems/noun_vocatives.lexc \
   fst/stems/numerals.lexc \
   fst/stems/particles.lexc \
   fst/stems/pronouns.lexc \
   fst/stems/verb_stems.lexc
+
 
 EXTRA_MORPHOLOGY = \
   fst/affixes/propernouns.lexc \
