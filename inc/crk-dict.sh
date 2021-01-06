@@ -1,10 +1,21 @@
 #!/bin/sh
 
+GTLANG_crk="$(dirname -- "${0}")/.."
+
 # Script for creating a descriptive analyzer and a normative generator for crk
 
 echo 'Concatenating LEXC files.' ;
 
-cat $GTLANG_crk/src/fst/root.lexc $GTLANG_crk/src/fst/affixes/noun_affixes.lexc $GTLANG_crk/src/fst/affixes/verb_affixes.lexc $GTLANG_crk/src/fst/stems/noun_stems.lexc $GTLANG_crk/src/fst/stems/numerals.lexc $GTLANG_crk/src/fst/stems/particles.lexc $GTLANG_crk/src/fst/stems/pronouns.lexc $GTLANG_crk/src/fst/stems/verb_stems.lexc > crk-dict.lexc
+cat \
+    $GTLANG_crk/src/fst/root.lexc \
+    $GTLANG_crk/src/fst/affixes/noun_affixes.lexc \
+    $GTLANG_crk/src/fst/affixes/verb_affixes.lexc \
+    $GTLANG_crk/src/fst/stems/noun_stems.lexc \
+    $GTLANG_crk/src/fst/stems/numerals.lexc \
+    $GTLANG_crk/src/fst/stems/particles.lexc \
+    $GTLANG_crk/src/fst/stems/pronouns.lexc \
+    $GTLANG_crk/src/fst/stems/verb_stems.lexc \
+    > crk-dict.lexc
 
 echo 'Compiling LEXC code.' ;
 
@@ -23,7 +34,8 @@ echo 'nipâw+V+AI+Ind+1Sg' | hfst-lookup -q crk-lexc-dict.hfst
 
 echo 'Compiling XFSCRIPT code for morphophonology.' ;
 
-hfst-xfst -e "source src/fst/phonology.xfscript" -E "save stack crk-phon.hfst"
+# The capital ‘E’ means, exit after running commnd
+hfst-xfst -e "source ${GTLANG_crk}/src/fst/phonology.xfscript" -E "save stack crk-phon.hfst"
 
 # Test:
 echo 'Test: crk-phon.hfst' ;
