@@ -5,6 +5,9 @@ The Plains Cree morphology and tools
 
 [fst-release]: https://github.com/giellalt/lang-crk/releases
 
+👉 [**Documentation**](https://giellalt.uit.no/lang/crk/crk.html) 👈🏼
+
+
 This directory contains source files for the Plains Cree language
 morphology and dictionary. The data and implementation are licenced
 under \_\_LICENCE\_\_ licence also detailed in the LICENCE file of this
