@@ -1,0 +1,6 @@
+[fst]
+fomabin = "crk-lexc-dict.fomabin"
+
+[[tests]]
+lower = "nipâw+V+AI+Ind+1Sg"
+expect = "nit2<nipâ>n2"
