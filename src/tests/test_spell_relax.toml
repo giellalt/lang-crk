@@ -8,3 +8,7 @@ expect = "tânisi+Ipc+Err/Orth"
 [[tests]]
 lower = "tân'si"
 expect = "tânisi+Ipc"
+
+[[tests]]
+lower = "tân’si"
+expect = "tânisi+Ipc"
