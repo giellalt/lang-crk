@@ -32,7 +32,7 @@ DICTFSTs = $(FSTs) \
 FOMAFSTs = $(FSTs:.hfstol=.fomabin)
 # fsttest REQUIRES fomabins. Place any FSTs that you want to test here with
 # the .fomabin extension:
-FSTS_UNDER_TEST = $(FOMAFSTs) crk-lexc-dict.fomabin ./crk-normative-generator-with-morpheme-boundaries.fomabin
+FSTS_UNDER_TEST = $(FOMAFSTs) crk-lexc-dict.fomabin crk-strict-generator-with-morpheme-boundaries.fomabin
 
 
 ################################## Commands ##################################
