@@ -42,7 +42,7 @@ all: $(FSTs)
 dict: $(DICTFSTs)
 
 clean:
-	$(RM) $(FSTs) $(FSTS_UNDER_TEST) $(FOMAFSTs)
+	$(RM) $(FSTs) $(FSTS_UNDER_TEST) $(FOMAFSTs) $(wildcard *.hfst)
 
 test: $(FSTS_UNDER_TEST)
 	fsttest
@@ -52,7 +52,7 @@ test: $(FSTS_UNDER_TEST)
 
 ############################## Specific targets ##############################
 
-fsts.zip: $(FSTs) $(FOMAFSTs)
+fsts.zip: $(DICTFSTs) $(FOMAFSTs)
 	zip $@ $^
 
 

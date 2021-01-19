@@ -59,10 +59,9 @@ crk-strict-generator.hfst: crk-strict-analyzer.hfst
 	-@echo "$(_EMPH)Inverting the analyzer to create the strict generator.$(_RESET)"
 	hfst-invert $^ -o $@
 
-
 crk-relaxed-analyzer.hfst: crk-strict-analyzer.hfst crk-orth.hfst
 	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer transducer to create descriptive analyzer.$(_RESET)"
-	hfst-invert -i $(word 1, $^) | hfst-compose --harmonize-flags -1 - -2 $(word 2, $^) | hfst-minimize - | hfst-invert - -o $@
+	hfst-invert -i $(word 1, $^) | hfst-compose --harmonize-flags -1 - -2 $(word 2, $^) | hfst-minimize | hfst-invert - -o $@
 
 remove-morpheme-boundary-filter.hfst:
 	-@echo "$(_EMPH)Compiling filter to remove morpheme boundaries.$(_RESET)"
