@@ -20,10 +20,14 @@
 #
 # 	make -j -f quick.mk
 
-FSTs = crk-descriptive-analyzer.hfstol \
-	crk-normative-generator.hfstol \
-	crk-strict-analyzer.hfstol \
-	crk-normative-generator-with-morpheme-boundaries.hfstol
+FSTs = crk-strict-analyzer.hfstol \
+       crk-relaxed-analyzer.hfstol \
+       crk-strict-generator.hfstol \
+       crk-strict-generator-with-morpheme-boundaries.hfstol
+
+DICTFSTs = $(FSTs) \
+           crk-strict-analyzer-for-dictionary.hfstol \
+           crk-relaxed-analyzer-for-dictionary.hfstol
 
 FOMAFSTs = $(FSTs:.hfstol=.fomabin)
 # fsttest REQUIRES fomabins. Place any FSTs that you want to test here with
@@ -34,6 +38,8 @@ FSTS_UNDER_TEST = $(FOMAFSTs) crk-lexc-dict.fomabin ./crk-normative-generator-wi
 ################################## Commands ##################################
 
 all: $(FSTs)
+
+dict: $(DICTFSTs)
 
 clean:
 	$(RM) $(FSTs) $(FSTS_UNDER_TEST) $(FOMAFSTs)
