@@ -20,7 +20,7 @@ This will create _at least_ the following transducers (FSTs):
 Want even _more_ FSTs? FSTs intended for use in _itwêwina_, the online
 Cree dictionary? You got 'em! Type this:
 
-   make -j -f quick.mk dict
+    make -j -f quick.mk dict
 
 Which will create two additional FSTs:
 
@@ -28,7 +28,8 @@ Which will create two additional FSTs:
  - `crk-relaxed-analyzer-for-dictionary.hfstol`
 
 These are the same as their counterparts, except they exclude some
-analyses that are unnecessary in a dictionary application.
+analyses that are unnecessary in a dictionary application (namely,
+_itwêwina_).
 
 
 Mini-glossary
@@ -56,10 +57,10 @@ The inverse of an **analyzer**.
 
 ### for dictionary
 
-Intended for use with itwêwina, or really any intelligent dictionary for
-Plains Cree.
+(of an FST) intended for use with itwêwina, or really any intelligent
+dictionary for Plains Cree.
 
-In practice, this means analyzers lack the `+Err/Frag` analyses and omit
+In practice, this means analyzers lack all `+Err/Frag` analyses and omit
 the `+Err/Orth` tag, since these offer little value to the dictionary
 (it's trying to match a lemma, after all!).
 
@@ -70,12 +71,12 @@ from a different, adjacent part of the same word.
 
 In Plains Cree, these marks are `<` and `>`. `<` occurs before the stem
 of a verb, separating person marking to the left of it, and `>` is
-placed immediately after the stem, separating the _other_ person
+placed immediately after the verb stem, separating the _other_ person
 marking.
 
 For example,
 
-Given `wâpam` (stem of _wâpamêw_ (VTA)):
+Given `wâpam-` (stem of _wâpamêw_ (VTA)):
 
  - <wâpam>êw
  - ni<wâpam>âw
@@ -103,8 +104,8 @@ Examples:
 
 ### relaxed
 
-(of an **analyzer**) it can take in forms that are not necessarily in
-the strict internal. We apply _spelling relaxation_ such that we can
+(of an **analyzer**) it can take in forms that do not conform to the
+orthographical standard. We apply _spelling relaxation_ such that we can
 accept multiple possible spellings of words, and not require one exact
 spelling of words. The spelling relaxation is done through a manually
 maintained list of rules.
