@@ -30,18 +30,26 @@ FOMAFSTs = $(FSTs:.hfstol=.fomabin)
 # the .fomabin extension:
 FSTS_UNDER_TEST = $(FOMAFSTs) crk-lexc-dict.fomabin ./crk-normative-generator-with-morpheme-boundaries.fomabin
 
-all: $(FSTs)
 
-fsts.zip: $(FSTs) $(FOMAFSTs)
-	zip $@ $^
+################################## Commands ##################################
+
+all: $(FSTs)
 
 clean:
 	$(RM) $(FSTs) $(FSTS_UNDER_TEST) $(FOMAFSTs)
 
-test: $(FSTS_UNDER_TEST) 
+test: $(FSTS_UNDER_TEST)
 	fsttest
 
 .PHONY: all clean test
 
+
+############################## Specific targets ##############################
+
+fsts.zip: $(FSTs) $(FOMAFSTs)
+	zip $@ $^
+
+
+# The rest is defined in these two files
 include morphological-fst-sources.mk
 include morphological-fst-rules.mk
