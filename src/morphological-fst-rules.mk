@@ -51,6 +51,10 @@ crk-orth.hfst: $(ORTHOGRAPHY)
 	-@echo "$(_EMPH)Compiling regular expression implementing spelling-relaxation.$(_RESET)"
 	hfst-regexp2fst $(VERBOSITY) --semicolon $< -o $@
 
+remove-morpheme-boundary-filter.hfst:
+	-@echo "$(_EMPH)Compiling filter to remove morpheme boundaries.$(_RESET)"
+	echo '%> -> 0, %< -> 0;' | hfst-regexp2fst $(VERBOSITY) --semicolon -o $@
+
 crk-strict-analyzer.hfst: crk-strict-generator-with-morpheme-boundaries.hfst remove-morpheme-boundary-filter.hfst
 	-@echo "$(_EMPH)Removing morpheme boundaries to create strict analyzer.$(_RESET)"
 	hfst-compose --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) | hfst-invert | hfst-minimize -o $@
@@ -63,29 +67,13 @@ crk-relaxed-analyzer.hfst: crk-strict-analyzer.hfst crk-orth.hfst
 	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer transducer to create descriptive analyzer.$(_RESET)"
 	hfst-invert -i $(word 1, $^) | hfst-compose --harmonize-flags -1 - -2 $(word 2, $^) | hfst-minimize | hfst-invert - -o $@
 
-remove-morpheme-boundary-filter.hfst:
-	-@echo "$(_EMPH)Compiling filter to remove morpheme boundaries.$(_RESET)"
-	echo '%> -> 0, %< -> 0;' | hfst-regexp2fst $(VERBOSITY) --semicolon -o $@
-
-omit-err-orth-filter.hfst:
-	-@echo "$(_EMPH)Compiling filter to omit the +Err/Orth tag from analyses.$(_RESET)"
-	echo '"+Err/Orth" -> 0 ; ' | hfst-regexp2fst $(VERBOSITY) --semicolon - -o $@
-
-remove-err-frag-filter.hfst:
-	-@echo "$(_EMPH)Compiling filter to remove +Err/Frag analyses.$(_RESET)"
-	echo '~[ $$[ "+Err/Frag" ] ; ' | hfst-regexp2fst $(VERBOSITY) --semicolon - -o $@
-
 crk-dict-filter.hfst: morphological-fst-rules.mk
 	-@echo "$(_EMPH)Compiling filter to remove +Err/Frag analyses and omit +Err/Orth from analyses$(_RESET)"
 	echo '~[ $$[ "+Err/Frag" ] ] .o. [ "+Err/Orth" -> 0 ] ; ' | hfst-regexp2fst $(VERBOSITY) --semicolon - -o $@
 
-
-crk-normative-generator.hfst: crk-strict-analyzer.hfst
-	hfst-invert -i $^ -o $@
-
 # HACK: Foma has issues with composing the orthographic FST, so we do it
 # explicitly:
-crk-descriptive-analyzer.fomabin: crk-normative-generator.fomabin crk-orth.fomabin morphological-fst-rules.mk
+crk-relaxed-analyzer.fomabin: crk-strict-generator.fomabin crk-orth.fomabin morphological-fst-rules.mk
 	foma\
 		-e "load $(word 1, $^)" \
 		-e "invert net" \
@@ -107,7 +95,6 @@ crk-descriptive-analyzer.fomabin: crk-normative-generator.fomabin crk-orth.fomab
 	-@echo "$(_EMPH)Creating dictionary version of $<$(_RESET)"
 	hfst-compose $(VERBOSE) --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) |\
 		hfst-minimize - -o $@
-
 
 %.fomabin: %.hfst
 	@# HFST has the upper and lower sides inverted (I don't blame them)
