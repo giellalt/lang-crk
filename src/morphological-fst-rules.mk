@@ -14,13 +14,13 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-# Rules to create morphological Cree FSTs:
+# Rules to create morphological Cree FSTs
 #
-#   - crk-descriptive-analyzer.hfstol
-#   - crk-normative-generator.hfstol
+# Derived from ../inc/crk-dict.sh
 
 _RESET := $(shell tput sgr0)
 _EMPH := $(shell tput setaf 6)
+_DEEMPH := $(shell tput setaf 4)
 
 WEIGHT_FORMAT=--format=openfst-tropical
 ifeq ($(V), 0)
@@ -29,14 +29,9 @@ else
 VERBOSITY=--verbose
 endif
 
-crk-strict-analyzer.hfst: crk-normative-generator-with-morpheme-boundaries.hfst remove-morpheme-boundary-filter.hfst
-	-@echo "$(_EMPH)Removing morpheme boundaries to create strict analyzer.$(_RESET)"
-	hfst-compose --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) | hfst-invert -o $@
-
-# Concatenate by leveraging existing Makefile target. Avoids errors due to
-# missing files, and keeps the two build files syncronised wrt source files.
+# Concatenate all the loose .lexc files into one big Lexc file.
 crk-dict.lexc: $(MORPHOLOGY)
-	-@echo "$(_EMPH)Concatenating LEXC code.$(_RESET)"
+	-@echo "$(_EMPH)Concatenating LEXC files.$(_RESET)"
 	cat $^ > $@
 
 crk-lexc-dict.hfst: crk-dict.lexc
@@ -44,19 +39,28 @@ crk-lexc-dict.hfst: crk-dict.lexc
 	hfst-lexc $(WEIGHT_FORMAT) -o $@ $<
 
 crk-phon.hfst: $(PHONOLOGY)
-	-@echo "$(_EMPH)Compiling xfscript code.$(_RESET)"
-	(cat $<; echo "save stack $@"; echo quit) \
-		| hfst-xfst --pipe-mode $(VERBOSITY) $(WEIGHT_FORMAT)
+	-@echo "$(_EMPH)Compiling xfscript code for morphophonology.$(_RESET)"
+	-@echo "$(_DEEMPH)(this one takes a while... ☕️)$(_RESET)"
+	hfst-xfst --pipe-mode $(VERBOSITY) $(WEIGHT_FORMAT)	-e "source $^" -E "save stack $@"
 
-crk-normative-generator-with-morpheme-boundaries.hfst: crk-lexc-dict.hfst crk-phon.hfst
-	-@echo "$(_EMPH)Composing and intersecting LEXC and TWOLC transducers.$(_RESET)"
-	hfst-compose-intersect -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
+crk-strict-generator-with-morpheme-boundaries.hfst: crk-lexc-dict.hfst crk-phon.hfst
+	-@echo "$(_EMPH)Composing lexicon with morphophonology.$(_RESET)"
+	hfst-compose --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
 
 crk-orth.hfst: $(ORTHOGRAPHY)
 	-@echo "$(_EMPH)Compiling regular expression implementing spelling-relaxation.$(_RESET)"
 	hfst-regexp2fst $(VERBOSITY) --semicolon $< -o $@
 
-crk-descriptive-analyzer.hfst: crk-strict-analyzer.hfst crk-orth.hfst
+crk-strict-analyzer.hfst: crk-strict-generator-with-morpheme-boundaries.hfst remove-morpheme-boundary-filter.hfst
+	-@echo "$(_EMPH)Removing morpheme boundaries to create strict analyzer.$(_RESET)"
+	hfst-compose --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) | hfst-invert | hfst-minimize -o $@
+
+crk-strict-generator.hfst: crk-strict-analyzer.hfst
+	-@echo "$(_EMPH)Inverting the analyzer to create the strict generator.$(_RESET)"
+	hfst-invert $^ -o $@
+	
+
+crk-relaxed-analyzer.hfst: crk-strict-analyzer.hfst crk-orth.hfst
 	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer transducer to create descriptive analyzer.$(_RESET)"
 	hfst-invert -i $(word 1, $^) | hfst-compose --harmonize-flags -1 - -2 $(word 2, $^) | hfst-minimize - | hfst-invert - -o $@
 
@@ -64,9 +68,14 @@ remove-morpheme-boundary-filter.hfst:
 	-@echo "$(_EMPH)Compiling filter to remove morpheme boundaries.$(_RESET)"
 	echo '%> -> 0, %< -> 0;' | hfst-regexp2fst $(VERBOSITY) --semicolon -o $@
 
-crk-err-filter.hfst:
-	-@echo "$(_EMPH)Compiling filter to remove non-normative forms with +Err/Orth tag.$(_RESET)"
-	echo '~[ $$[ "+Err/Orth" ] ] ;' | hfst-regexp2fst $(VERBOSITY) --semicolon -o $@
+omit-err-orth-filter.hfst: morphological-fst-rules.mk
+	-@echo "$(_EMPH)Compiling filter to omit the +Err/Orth tag from analyses.$(_RESET)"
+	echo '"+Err/Orth" -> 0 ; ' | hfst-regexp2fst $(VERBOSITY) --semicolon - -o $@
+
+remove-err-frag-filter.hfst:
+	-@echo "$(_EMPH)Compiling filter to remove +Err/Frag analyses.$(_RESET)"
+	echo '~[ $$[ "+Err/Frag" ] ; ' | hfst-regexp2fst $(VERBOSITY) --semicolon - -o $@
+
 
 crk-normative-generator.hfst: crk-strict-analyzer.hfst
 	hfst-invert -i $^ -o $@
@@ -85,8 +94,17 @@ crk-descriptive-analyzer.fomabin: crk-normative-generator.fomabin crk-orth.fomab
 		-e "save stack $@" \
 		-s
 
+
+############################### Pattern rules ################################
+
 %.hfstol: %.hfst
 	hfst-fst2fst --optimized-lookup-unweighted -i $< -o $@
+
+%-for-dictionary.hfst: %.hfst omit-err-orth-filter.hfst
+	-@echo "$(_EMPH)Creating dictionary version of $<$(_RESET)"
+	hfst-compose $(VERBOSE) --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) |\
+		hfst-minimize - -o $@
+	
 
 %.fomabin: %.hfst
 	@# HFST has the upper and lower sides inverted (I don't blame them)
