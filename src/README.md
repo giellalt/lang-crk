@@ -70,9 +70,8 @@ A mark that denotes where one meaningful sub-unit of a word is separated
 from a different, adjacent part of the same word.
 
 In Plains Cree, these marks are `<` and `>`. `<` occurs before the stem
-of a verb, separating person marking to the left of it, and `>` is
-placed immediately after the verb stem, separating the _other_ person
-marking.
+of a verbs and nouns and `>` is placed immediately after the noun or
+verb stem.
 
 For example,
 
@@ -83,13 +82,20 @@ Given `wâpam-` (stem of _wâpamêw_ (VTA)):
  - ki<wâpam>âw
 
 
+Note that the _exact_ location of morpheme boundaries is sometimes unclear
+due to morphophonological processes such as [sandhi]. Even in fuzzy
+cases, the FST will produce a morpheme boundary mark.
+
+[sandhi]: https://en.wikipedia.org/wiki/Sandhi
+
 ### strict
 
 Only produce or recognize text in a strict orthographical norm or
 standard. In the case of Plains Cree, this means texts that adheres to
 the [standard Roman orthography (SRO)][SRO].
 
-Note: The itwêwina database of dictionary heads is internally stored in SRO.
+Note: The itwêwina database of dictionary heads is internally stored in
+SRO, using circumflexes as the diacritic marker of vowel length.
 
 Examples:
 
@@ -106,6 +112,6 @@ Examples:
 
 (of an **analyzer**) it can take in forms that do not conform to the
 orthographical standard. We apply _spelling relaxation_ such that we can
-accept multiple possible spellings of words, and not require one exact
-spelling of words. The spelling relaxation is done through a manually
-maintained list of rules.
+accept multiple possible variant spellings of words, and will not
+require adhering exactly to one normative spelling of a word.. The
+spelling relaxation is done through a manually maintained list of rules.
