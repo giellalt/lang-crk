@@ -35,8 +35,13 @@ all: $(FSTs)
 fsts.zip: $(FSTs) $(FOMAFSTs)
 	zip $@ $^
 
+clean:
+	$(RM) $(FSTs) $(FSTS_UNDER_TEST) $(FOMAFSTs)
+
 test: $(FSTS_UNDER_TEST) 
 	fsttest
+
+.PHONY: all clean test
 
 include morphological-fst-sources.mk
 include morphological-fst-rules.mk
