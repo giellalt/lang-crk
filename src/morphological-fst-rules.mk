@@ -58,7 +58,7 @@ crk-strict-analyzer.hfst: crk-strict-generator-with-morpheme-boundaries.hfst rem
 crk-strict-generator.hfst: crk-strict-analyzer.hfst
 	-@echo "$(_EMPH)Inverting the analyzer to create the strict generator.$(_RESET)"
 	hfst-invert $^ -o $@
-	
+
 
 crk-relaxed-analyzer.hfst: crk-strict-analyzer.hfst crk-orth.hfst
 	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer transducer to create descriptive analyzer.$(_RESET)"
@@ -68,13 +68,17 @@ remove-morpheme-boundary-filter.hfst:
 	-@echo "$(_EMPH)Compiling filter to remove morpheme boundaries.$(_RESET)"
 	echo '%> -> 0, %< -> 0;' | hfst-regexp2fst $(VERBOSITY) --semicolon -o $@
 
-omit-err-orth-filter.hfst: morphological-fst-rules.mk
+omit-err-orth-filter.hfst:
 	-@echo "$(_EMPH)Compiling filter to omit the +Err/Orth tag from analyses.$(_RESET)"
 	echo '"+Err/Orth" -> 0 ; ' | hfst-regexp2fst $(VERBOSITY) --semicolon - -o $@
 
 remove-err-frag-filter.hfst:
 	-@echo "$(_EMPH)Compiling filter to remove +Err/Frag analyses.$(_RESET)"
 	echo '~[ $$[ "+Err/Frag" ] ; ' | hfst-regexp2fst $(VERBOSITY) --semicolon - -o $@
+
+crk-dict-filter.hfst: morphological-fst-rules.mk
+	-@echo "$(_EMPH)Compiling filter to remove +Err/Frag analyses and omit +Err/Orth from analyses$(_RESET)"
+	echo '~[ $$[ "+Err/Frag" ] ] .o. [ "+Err/Orth" -> 0 ] ; ' | hfst-regexp2fst $(VERBOSITY) --semicolon - -o $@
 
 
 crk-normative-generator.hfst: crk-strict-analyzer.hfst
@@ -100,11 +104,11 @@ crk-descriptive-analyzer.fomabin: crk-normative-generator.fomabin crk-orth.fomab
 %.hfstol: %.hfst
 	hfst-fst2fst --optimized-lookup-unweighted -i $< -o $@
 
-%-for-dictionary.hfst: %.hfst omit-err-orth-filter.hfst
+%-for-dictionary.hfst: %.hfst crk-dict-filter.hfst
 	-@echo "$(_EMPH)Creating dictionary version of $<$(_RESET)"
 	hfst-compose $(VERBOSE) --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) |\
 		hfst-minimize - -o $@
-	
+
 
 %.fomabin: %.hfst
 	@# HFST has the upper and lower sides inverted (I don't blame them)
