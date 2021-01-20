@@ -52,7 +52,7 @@ test: $(FSTS_UNDER_TEST)
 
 ############################## Specific targets ##############################
 
-fsts.zip: $(DICTFSTs) $(FOMAFSTs)
+fsts.zip: README.md $(DICTFSTs) $(FOMAFSTs)
 	zip $@ $^
 
 
