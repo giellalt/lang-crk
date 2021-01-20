@@ -20,23 +20,42 @@
 #
 # 	make -j -f quick.mk
 
-FSTs = crk-descriptive-analyzer.hfstol \
-	crk-normative-generator.hfstol \
-	crk-strict-analyzer.hfstol \
-	crk-normative-generator-with-morpheme-boundaries.hfstol
+FSTs = crk-strict-analyzer.hfstol \
+       crk-relaxed-analyzer.hfstol \
+       crk-strict-generator.hfstol \
+       crk-strict-generator-with-morpheme-boundaries.hfstol
+
+DICTFSTs = $(FSTs) \
+           crk-strict-analyzer-for-dictionary.hfstol \
+           crk-relaxed-analyzer-for-dictionary.hfstol
 
 FOMAFSTs = $(FSTs:.hfstol=.fomabin)
 # fsttest REQUIRES fomabins. Place any FSTs that you want to test here with
 # the .fomabin extension:
-FSTS_UNDER_TEST = $(FOMAFSTs) crk-lexc-dict.fomabin ./crk-normative-generator-with-morpheme-boundaries.fomabin
+FSTS_UNDER_TEST = $(FOMAFSTs) crk-lexc-dict.fomabin crk-strict-generator-with-morpheme-boundaries.fomabin
+
+
+################################## Commands ##################################
 
 all: $(FSTs)
 
-fsts.zip: $(FSTs) $(FOMAFSTs)
-	zip $@ $^
+dict: $(DICTFSTs)
 
-test: $(FSTS_UNDER_TEST) 
+clean:
+	$(RM) $(FSTs) $(FSTS_UNDER_TEST) $(FOMAFSTs) $(wildcard *.hfst)
+
+test: $(FSTS_UNDER_TEST)
 	fsttest
 
+.PHONY: all clean test
+
+
+############################## Specific targets ##############################
+
+fsts.zip: $(DICTFSTs) $(FOMAFSTs)
+	zip $@ $^
+
+
+# The rest is defined in these two files
 include morphological-fst-sources.mk
 include morphological-fst-rules.mk

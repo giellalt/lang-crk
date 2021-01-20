@@ -1,5 +1,5 @@
 [fst]
-fomabin = "crk-descriptive-analyzer.fomabin"
+fomabin = "crk-relaxed-analyzer.fomabin"
 
 [[tests]]
 lower = "tansi"
