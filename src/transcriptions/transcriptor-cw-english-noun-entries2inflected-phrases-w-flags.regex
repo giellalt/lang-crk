@@ -1,6 +1,20 @@
 ! "Inflections" of English translations for Cree nouns in CW
 ! using flag-diacritics for long-term dependencies
 
+! USAGE:
+! 1: Number/Obviation/Locative/Distributive (obligatory): Sg+ | Pl+ | Obv+ | Loc+ | Distr+
+! 2: (Diminutive) (optional): Dim+
+! 3: (Possession) (optional):  Px1Sg+ | Px2Sg+ | Px3Sg+ | Px1Pl+ | Px12Pl+ | Px2Pl+ | Px3Pl+ | PxX+
+! 4: English phrase to be inflected, preceded by a space separating from the initial tags
+
+! EXAMPLES:
+! Pl+ small boat, ship --> small boats, ships
+! Sg+Dim+ small boat; ship --> a little small boat; a little ship
+! Distr+ boat, ship --> among ships, among boats
+! Obv+Px1Sg+ a boat, a ship --> my boat over there, my ship over there
+! Sg+Dim+Px1Sg+ a boat, a ship --> my little boat, my little ship
+! N.B. Inflected phrase is preceded by a single space
+
 ! Character/tag class definitions
 
 define Tags [ "Sg+" | "Pl+" | "Obv+" | "Loc+" | "Distr+" ] ;
