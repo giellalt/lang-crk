@@ -20,17 +20,23 @@
 ALL_SOURCES = $(MORPHOLOGY) $(PHONOLOGY) $(ORTHOGRAPHY)
 ALL_SOURCES_WITH_EXTRAS = $(ALL_SOURCES) $(EXTRA_MORPHOLOGY)
 
-MORPHOLOGY = fst/root.lexc \
-  fst/affixes/noun_affixes.lexc \
-  fst/affixes/verb_affixes.lexc \
+MORPHOLOGY = $(BASE_MORPHOLOGY) \
   fst/stems/derivation_stems.lexc \
   fst/stems/non_standard.lexc \
+  fst/stems/noun_vocatives.lexc
+
+# These are the base required files for autocompletion,
+# however, you'll want to add non-standard forms for
+# the FST used in the dictionary.
+BASE_MORPHOLOGY = fst/root.lexc \
+  fst/affixes/noun_affixes.lexc \
+  fst/affixes/verb_affixes.lexc \
   fst/stems/noun_stems.lexc \
-  fst/stems/noun_vocatives.lexc \
   fst/stems/numerals.lexc \
   fst/stems/particles.lexc \
   fst/stems/pronouns.lexc \
   fst/stems/verb_stems.lexc
+
 
 EXTRA_MORPHOLOGY = \
   fst/affixes/propernouns.lexc \

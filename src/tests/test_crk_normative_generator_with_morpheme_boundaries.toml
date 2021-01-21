@@ -1,0 +1,6 @@
+[fst]
+fomabin = "crk-strict-generator-with-morpheme-boundaries.fomabin"
+
+[[tests]]
+lower = "nipâw+V+AI+Ind+1Sg"
+expect = "ni<nipâ>n"
