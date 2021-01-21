@@ -1,10 +1,12 @@
 #!/bin/sh
 
+# export GTLANG_crk=/Users/arppe/giellatekno/lang-crk/
+
 # Script for creating a descriptive analyzer and a normative generator for crk
 
 echo 'Concatenating LEXC files.' ;
 
-cat $GTLANG_crk/src/fst/root.lexc $GTLANG_crk/src/fst/affixes/noun_affixes.lexc $GTLANG_crk/src/fst/affixes/verb_affixes.lexc $GTLANG_crk/src/fst/stems/noun_stems.lexc $GTLANG_crk/src/fst/stems/numerals.lexc $GTLANG_crk/src/fst/stems/particles.lexc $GTLANG_crk/src/fst/stems/pronouns.lexc $GTLANG_crk/src/fst/stems/verb_stems.lexc > crk-dict.lexc
+cat $GTLANG_crk/src/fst/root.lexc $GTLANG_crk/src/fst/affixes/noun_affixes.lexc $GTLANG_crk/src/fst/affixes/verb_affixes.lexc $GTLANG_crk/src/fst/stems/noun_stems.lexc $GTLANG_crk/src/fst/stems/numerals.lexc $GTLANG_crk/src/fst/stems/particles.lexc $GTLANG_crk/src/fst/stems/pronouns.lexc $GTLANG_crk/src/fst/stems/verb_stems.lexc $GTLANG_crk/src/fst/stems/non_standard.lexc > crk-dict.lexc
 
 echo 'Compiling LEXC code.' ;
 
@@ -92,12 +94,20 @@ echo 'Test: crk-gen-norm-dict.hfst' ;
 echo 'nipâw+V+AI+Ind+1Sg -> ninipân' ;
 echo 'nipâw+V+AI+Ind+1Sg' | hfst-lookup -q crk-gen-norm-dict.hfst
 
-##### END HFST compililations #####
+# Creating HFSTOL versions of selected FSTs
+
+hfst-fst2fst -O -i crk-anl-desc-dict.hfst -o crk-anl-desc-dict.hfstol
+
+##### END HFST compilations #####
+
+##### Begin FOMA compilations #####
 
 echo 'Creating FOMA versions of selected transducers.' ;
 
 hfst-invert crk-gen-norm-dict.hfst | hfst-fst2fst -b -F -i - -o crk-gen-norm-dict.fomabin
 
 hfst-fst2fst -b -F -i crk-orth.hfst -o crk-orth.fomabin
+
+# Doing this from components is needed because hfst-fst2fst -F (conversion to FOMA) results in an error
 
 foma -e"load crk-gen-norm-dict.fomabin" -e"invert net" -e"define Morph" -e"load crk-orth.fomabin" -e"invert net" -e"define Orth" -e"regex [ Morph .o. Orth ];" -e"save stack crk-anl-desc-dict.fomabin" -s
