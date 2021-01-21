@@ -121,3 +121,6 @@ twosided flag-diacritics
 ! .o. [ [ [..] -> "@P.number.Sg@" {a } || [ .#. | [ [ %, | %; ] " " ] ] _ \Vowel ]
 !       .o. [ [..] -> "@P.number.Sg@" {an } || [ .#. | [ [ %, | %; ] " " ] ] _ Vowel ] ]
 ! | [ [..] -> [ {>s} "@R.number.Pl@" ] || \[ "(" | "[" ] _ [ %, | .#. ] ] ;
+
+! Code for testing en masse with CW English definitions:
+! cat ~/altlab/crk/dicts/Wolvengrey.tsv| gawk -F"\t" 'NR>=2 && $3 ~ /^N/ { eng=$4; gsub("[ ]*\\([^\\)]+\\)","",eng); gsub("[ ]*\\[[^\\]]+\\]","",eng); gsub("\"","",eng); gsub("[ ]*[;]+",";",eng); gsub("[,;] [Ll]iteral[^,;]+","",eng); sub("[; ]+$","",eng); print "Distr+Dim+Px2Sg+ "eng; }' | flookup -q -b -x -i cw-eng-nouns.fsm | less
