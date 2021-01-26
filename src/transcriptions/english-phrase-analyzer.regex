@@ -1,3 +1,6 @@
+! Analyzer of English phrases
+! Turns function words and constructions into features corresponding to crk morphology in full verb/noun paradigms.
+! Leave non-function words as lexical content for searching from lexical eng-crk database.
 
 define Bx [ " " | "." | "," | "!" | "?" | ":" | ";" | .#. ] ;
 
