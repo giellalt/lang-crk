@@ -11,7 +11,6 @@ SUBDIRS = fst filters phonetics hyphenation orthography cg3 transcriptions tagse
 GT_ANALYSERS=
 GT_GENERATORS=
 CUSTOM_FSTS=
-ADDITIONAL_TARGETS=
 
 #### Local modifications in *fst processing: ####
 ####
@@ -41,7 +40,9 @@ ADDITIONAL_TARGETS=
 #### BEGIN: Add local processing instructions BELOW this line ####
 ##################################################################
 
-all-am: Makefile $(DATA) $(ADDITIONAL_TARGETS)
+_RESET := $(shell tput sgr0)
+_EMPH := $(shell tput setaf 6)
+_DEEMPH := $(shell tput setaf 4)
 
 ########################################################
 #### Add language-specific transducer targets here: ####
@@ -52,7 +53,10 @@ GT_ANALYSERS+=
 GT_GENERATORS+=generator-gt-desc.borders.xfst
 
 if WANT_CUSTOM_FSTS
-CUSTOM_FSTS+=
+CUSTOM_FSTS+=crk-strict-analyzer-giellaltbuild.xfst \
+			 crk-strict-generator-giellaltbuild.xfst \
+			 crk-relaxed-analyzer-giellaltbuild.xfst \
+			 crk-strict-generator-with-morpheme-boundaries.xfst
 endif # WANT_CUSTOM_FSTS
 
 endif # CAN_XFST
@@ -63,7 +67,16 @@ GT_ANALYSERS+=
 GT_GENERATORS+=generator-gt-desc.borders.hfstol
 
 if WANT_CUSTOM_FSTS
-CUSTOM_FSTS+=
+CUSTOM_FSTS+=crk-strict-analyzer-giellaltbuild.hfstol \
+			 crk-strict-generator-giellaltbuild.hfstol \
+			 crk-relaxed-analyzer-giellaltbuild.hfstol \
+			 crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfstol
+
+if WANT_DICTIONARIES
+CUSTOM_FSTS+=crk-strict-analyzer-for-dictionary-giellaltbuild.hfstol \
+			 crk-relaxed-analyzer-for-dictionary-giellaltbuild.hfstol
+endif # WANT_DICTIONARIES
+
 endif # WANT_CUSTOM_FSTS
 
 endif # CAN_HFST
@@ -74,7 +87,10 @@ GT_ANALYSERS+=
 GT_GENERATORS+=generator-gt-desc.borders.foma
 
 if WANT_CUSTOM_FSTS
-CUSTOM_FSTS+=
+CUSTOM_FSTS+=crk-strict-analyzer-giellaltbuild.foma \
+			 crk-strict-generator-giellaltbuild.foma \
+			 crk-relaxed-analyzer-giellaltbuild.foma \
+			 crk-strict-generator-with-morpheme-boundaries.foma
 endif # WANT_CUSTOM_FSTS
 
 endif # CAN_FOMA
@@ -240,6 +256,78 @@ generator-gt-desc.borders.macron.%: analyser-raw-gt-desc.%           \
 		 $(INVERT_XFST)$(INVERT_FOMA)\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
+
+# Re quick.mk: crk-strict-generator-with-morpheme-boundaries.hfst = analyser-raw-gt-desc.hfst
+crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst  \
+crk-strict-generator-with-morpheme-boundaries-giellaltbuild.xfst  \
+crk-strict-generator-with-morpheme-boundaries-giellaltbuild.foma: \
+crk-strict-generator-with-morpheme-boundaries-giellaltbuild.%: analyser-raw-gt-desc.%
+	-@echo "$(_EMPH)Inverting Foma/Xfst analyzer to create the strict generator.$(_RESET)"
+	$(AM_V_XFST_TOOL)$(PRINTF) "\
+		 load stack $<\n\
+		 $(INVERT_XFST)$(INVERT_FOMA)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+# Build crk-strict-analyzer, but with GiellaLT naming:
+# Strict = descriptive (incl. Err/Orth) but NO spellrelax. Ie full lexicon only
+analyser-gt-strict.hfst  \
+analyser-gt-strict.xfst  \
+analyser-gt-strict.foma: \
+analyser-gt-strict.%: analyser-raw-gt-desc.% filters/remove-infl_boundary-marks.%
+	-@echo "$(_EMPH)Removing morpheme boundaries to create strict analyzer.$(_RESET)"
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"$<\"                                           \
+			.o. @\"filters/remove-infl_boundary-marks.$*\" \
+			;\n\
+		 minimise\n\
+		 $(INVERT_HFST)\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+# Rename above to Eddie name + extra, to differentiate from his name:
+crk-strict-analyzer-giellaltbuild.%: analyser-gt-strict.%
+	$(AM_V_MV)mv -f $< $@
+
+# crk-strict-generator:
+generator-gt-strict.hfst  \
+generator-gt-strict.xfst  \
+generator-gt-strict.foma: \
+generator-gt-strict.%: analyser-gt-strict.%
+	-@echo "$(_EMPH)Inverting the analyzer to create the strict generator.$(_RESET)"
+	$(AM_V_XFST_TOOL)$(PRINTF) "\
+		 load stack $<\n\
+		 invert\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+# Rename above to Eddie name + extra, to differentiate from his name:
+crk-strict-generator-giellaltbuild.%: generator-gt-strict.%
+	$(AM_V_MV)mv -f $< $@
+
+# crk-relaxed-analyzer:
+analyser-gt-relaxed.hfst  \
+analyser-gt-relaxed.xfst  \
+analyser-gt-relaxed.foma: \
+analyser-gt-relaxed.%: analyser-gt-strict.% orthography/spellrelax.compose.%
+	-@echo "$(_EMPH)Composing spelling relaxation transducer with normative analyzer to create descriptive analyzer.$(_RESET)"
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"orthography/spellrelax.compose.$*\".i \
+			.o. @\"$<\"                                           \
+			;\n\
+		 minimise\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+# Rename:
+crk-relaxed-analyzer-giellaltbuild.%: analyser-gt-relaxed.%
+	$(AM_V_MV)mv -f $< $@
+
+crk-dict-filter.hfst: Makefile.am
+	-@echo "$(_EMPH)Compiling filter to remove +Err/Frag strings, and omit +Err/Orth tags from analyses$(_RESET)"
+	echo '~[ $$[ "+Err/Frag" ] ] .o. [ "+Err/Orth" -> 0 ] ; ' | hfst-regexp2fst $(VERBOSITY) --semicolon - -o $@
+
+%-for-dictionary-giellaltbuild.hfst: %.hfst crk-dict-filter.hfst
+	-@echo "$(_EMPH)Creating dictionary version of $<$(_RESET)"
+	hfst-compose $(VERBOSE) --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) |\
+		hfst-minimize - -o $@
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
