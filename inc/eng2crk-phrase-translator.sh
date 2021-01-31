@@ -1,8 +1,20 @@
 #!/bin/sh
 
-gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKGENFST=$3 'BEGIN { FS="\t"; dict=DICT; enganlfst=ENGANLFST; crkgenfst=CRKGENFST;
-hfstlookup="/usr/local/bin/hfst-lookup -q"
-flookup="/usr/local/bin/flookup -b"
+# eng2crk-phrase-translator.sh
+
+# Examples:
+
+# English verb phrase: 
+# echo 'in my little book' | inc/eng2crk-phrase-translator.sh /Users/arppe/altlab/crk/dicts/Wolvengrey.tsv eng-phrase-analyzer.fomabin crk-anl-desc-dict.fomabin crk-gen-norm-dict.fomabin eng-noun-phrase-inflector.fomabin eng-verb-phrase-inflector.fomabin| less
+
+# English noun phrase:
+# echo 'I work together with you' | inc/eng2crk-phrase-translator.sh /Users/arppe/altlab/crk/dicts/Wolvengrey.tsv eng-phrase-analyzer.fomabin crk-anl-desc-dict.fomabin crk-gen-norm-dict.fomabin eng-noun-phrase-inflector.fomabin eng-verb-phrase-inflector.fomabin| less
+
+
+gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST=$5 -v ENGVERBGENFST=$6 'BEGIN { FS="\t"; dict=DICT;
+  enganlfst=ENGANLFST; crkanlfst=CRKANLFST; crkgenfst=CRKGENFST; engnoungenfst=ENGNOUNGENFST;  engverbgenfst=ENGVERBGENFST;
+  hfstlookup="/usr/local/bin/hfst-lookup -q"
+  flookup="/usr/local/bin/flookup -b"
 
 while((getline < dict)!=0)
   { 
@@ -17,8 +29,16 @@ while((getline < dict)!=0)
   engphrase=$0;
   print engphrase |& flookup" -i "enganlfst;
   flookup" -i "enganlfst |& getline engfstanl;
-  close(flookup" "enganlfst);
+  close(flookup" -i "enganlfst);
   split(engfstanl,f,"\t");
+
+#  if(f[2]=="+?")
+#    { print engphrase |& flookup" "crkanlfst;
+#      flookup" "crkanlfst |& getline crkfstanl;
+#      close(flookup" "crkanlfst);
+#      split(crkfstanl,f,"\t");
+#    }
+
   engphraseanl=f[2];
   match(engphraseanl, "(^[^\\+]+)(\\+.+$)", ff);
   engphraselex=ff[1]; engphrasetags=ff[2];
@@ -36,21 +56,15 @@ while((getline < dict)!=0)
       sub("\\+(Imm|Del)","+Imp&",crkformtags);
   else
     if(index(crkformtags,"+Fut")!=0)
-      { pv="PV/ta+"; sub("\\+Fut","+Cnj",crkformtags); }
+      { pv="PV/ka+"; sub("\\+Fut","+Cnj",crkformtags); }
   else
     if(index(crkformtags,"+Int")!=0)
       { pv="PV/wi+"; sub("\\+Int","+Ind",crkformtags); }
   else
     if(index(crkformtags,"+Inf")!=0)
-      { pv="PV/ka+"; sub("\\+Inf","+Ind",crkformtags); }
+      { pv="PV/ta+"; sub("\\+Inf","+Cnj",crkformtags); }
   else
-    sub("\\+V\\+(II|AI|TI|TA)","&+Ind",crkformtags);
-
-  # Organizing the English phrase featurs for English phrase generation
-  englishphrasegentags="";
-  match(engphrasetags, "((\\+N)(\\+Dim)?(\\+Px[123](Sg|Pl))?(\\+(Sg|Pl|Obv|Loc|Distr)))|((\\+V)(\\+(II|AI|TI|TA))(\\+(Fut|Int|Cond|Imm|Del|Fut))?(\\+[0123](Sg|Pl))(\\+[0123](Sg|Pl)[OR])?)", g);
-  englishphrasetags=g[6] g[3] g[4] "+";
-  sub("\\+","",englishphrasetags);
+    { pv="PV/e+"; sub("\\+V\\+(II|AI|TI|TA)","&+Cnj",crkformtags); }
 
   print engphrase
   print "=> "engphraselex;
@@ -96,25 +110,57 @@ while((getline < dict)!=0)
               flookup" "crkgenfst |& getline crkgenform;
               close(flookup" "crkgenfst);
               split(crkgenform,gg,"\t");
-              print gg[2]" <-- "crkfstform" ["cw"]" ;
+              print gg[2]" <-- "crkfstform" ["lc"]" ;
 
-              if(englishphrasetags!="")
-                { def2=def;
+              # Organizing the English phrase features for English phrase generation
+
+              engphrasegentags=engphrasetags;
+              match(engphrasegentags, "((\\+N)(\\+Dim)?(\\+Px[123](Sg|Pl))?(\\+(Sg|Pl|Obv|Loc|Distr)))|((\\+V)(\\+(II|AI|TI|TA))(\\+(Fut|Int|Cond|Imm|Del|Fut))?(\\+[0123](Sg|Pl))(\\+[0123](Sg|Pl)[OR])?)", g);
+
+              if(g[1]!="")
+                { enggenwc="N"; engphrasegentags=g[6] g[3] g[4] "+"; }
+              if(g[8]!="")
+                {
+                  enggenwc="V";
+                  if(g[12]=="")
+                    g[12]="Prs+";
+                  engphrasegentags=g[12] g[14] g[16] "+";
+                }
+              sub("\\+","",engphrasegentags);
+
+              if(enggenwc=="N" && engphrasegentags!="" && engnoungenfst!="")
+                {
+                  def2=def;
                   gsub("\"","",def2);
                   gsub("[ ]*\\([^\\)]+\\)","",def2); gsub("[ ]*\\[[^\\]]+\\]","",def2); gsub("\"","",def2); gsub("[ ]*[;]+",";",def2); gsub("[,;] [Ll]iteral[^,;]+","",def2);
-                  # gsub("([\\(\\[][^\\)\\]]+[\\)\\]])?","",def2);
-                  print englishphrasetags " "def2 |& flookup " -i crk-noun-phrase-inflector.fomabin";
-                  flookup " -i crk-noun-phrase-inflector.fomabin" |& getline enggenphrase;
-                  close(flookup " -i crk-noun-phrase-inflector.fomabin");
+
+                  print engphrasegentags " "def2 |& flookup" -i "engnoungenfst;
+                  flookup" -i "engnoungenfst |& getline enggenphrase;
+                  close(flookup" -i "engnoungenfst);
                   split(enggenphrase,gg,"\t");
                   if(gg[2]!="+?")
                      print "     ["wc"] "gg[2];
                   else
                      print "     ["wc"] "def;
+                  print "";
+                }
+              else if(enggenwc=="V" && engphrasegentags!="" && engverbgenfst!="")
+                {
+                  def2=def;
+                  gsub("\"","",def2);
+                  gsub("[ ]*\\([^\\)]+\\)","",def2); gsub("[ ]*\\[[^\\]]+\\]","",def2); gsub("\"","",def2); gsub("[ ]*[;]+",";",def2); gsub("[,;] [Ll]iteral[^,;]+","",def2);
+                  print engphrasegentags " "def2 |& flookup" -i "engverbgenfst;
+                  flookup" -i "engverbgenfst |& getline enggenphrase;
+                  close(flookup" -i "engverbgenfst);
+                  split(enggenphrase,gg,"\t");
+                  if(gg[2]!="+?")
+                     print "     ["wc"] "gg[2];
+                  else
+                     print "     ["wc"] "def;
+                  print "";
                 }
               else
-                print "     ["wc"] "def;
-
+                 { print "     ["wc"] "def; print ""; }
             }
         }
 }'
