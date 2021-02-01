@@ -26,25 +26,119 @@ while((getline < dict)!=0)
   }
 }
 { 
-  engphrase=$0;
-  print engphrase |& flookup" -i "enganlfst;
+  phrase=$0;
+
+  # English analysis
+  print phrase |& flookup" -i "enganlfst;
   flookup" -i "enganlfst |& getline engfstanl;
   close(flookup" -i "enganlfst);
   split(engfstanl,f,"\t");
-
-#  if(f[2]=="+?")
-#    { print engphrase |& flookup" "crkanlfst;
-#      flookup" "crkanlfst |& getline crkfstanl;
-#      close(flookup" "crkanlfst);
-#      split(crkfstanl,f,"\t");
-#    }
-
   engphraseanl=f[2];
   match(engphraseanl, "(^[^\\+]+)(\\+.+$)", ff);
   engphraselex=ff[1]; engphrasetags=ff[2];
   gsub("^[ ]+|[ ]+$","",engphraselex);
   match(engphrasetags,"^\\+([VN])\\+(II|AI|TI|TA)?",fff);
-  engwordclass=fff[1] "" fff[2];
+  engwordclass=fff[1] fff[2];
+
+  # Cree analysis
+  print phrase |& flookup" "crkanlfst;
+  flookup" "crkanlfst |& getline crkfstanl;
+  close(flookup" "crkanlfst);
+  split(crkfstanl,f,"\t");
+  crkwordanl=f[2];
+  match(crkwordanl, "(IC\\+|PV/[^\\+]+\\+|Rdpl[SW]\\+)*([^\\+]+)(.+)", ff);
+  # print "1:"ff[1], "2:"ff[2], "3:"ff[3];
+  crkwordlex=ff[2]; crkwordtags=ff[1] "_" ff[3];
+  match(crkwordtags,"^\\+([VN])\\+(II|AI|TI|TA|A|I|A)?\\+[D]?",fff);
+  crkwordclass=fff[1] fff[2] fff[3];
+  
+  # Modifying the Cree word features to English phrase features
+  match(crkwordtags,"(\\+[12345X]+(Sg|Pl|Sg/Pl)?O?)+",g);
+  if(g[0]!="")
+    { enggenwc="V"; subjobj=g[0]; }
+  if(index(crkwordtags,"+Cond")!=0)
+    engphrasegentags="Cond" subjobj "+";
+  else
+    if(index(crkwordtags,"+Imm")!=0)
+      engphrasegentags="Imm" subjobj "+";
+  else
+    if(index(crkwordtags,"+Del")!=0)
+      engphrasegentags="Del" subjobj "+";
+  else
+    if(index(crkwordtags,"PV/ka+")!=0 && index(crkwordtags,"+Ind")!=0)
+      engphrasegentags="Fut" subjobj "+";
+  else
+    if(index(crkwordtags,"PV/wi+")!=0)
+      engphrasegentags="Int" subjobj "+";
+  else
+    if(index(crkwordtags,"PV/ta+")!=0 || index(crkwordtags,"PV/ka+")!=0 && index(crkwordtags,"+Cnj")!=0)
+      engphrasegentags="Inf" subjobj "+";
+  else
+    { engphrasegentags="Prs" subjobj "+"; }
+
+  match(crkwordtags,"(\\+Der/Dim)?(\\+Px[1234X]+(Sg|Pl|Sg/Pl))?(\\+(Sg|Pl|Obv|Loc|Distr))",g);
+  if(g[0]!="")
+    { enggenwc="N"; engphrasegentags=g[4] g[1] g[2] "+"; sub("^\\+","",engphrasegentags); }
+
+  # Changing further obviative subjects/objects to closer obviatives
+  if(index(engphrasetags,"5Sg/Pl")!=0)
+    { gsub("4Sg/Pl","3Sg",engphrasetags); gsub("5Sg/Pl","4Sg/Pl",engphrasegentags); }
+  gsub("21","12",engphrasegentags);
+
+  # Removing +Err/XXX tags
+  sub("\\+Err/(Orth|Frag)","",crkwordanl);
+
+if(index(phrase," ")==0 && index(crkwordanl,"+?")==0)
+  for(def in crk)
+     for(wc in crk[def])
+        for(lc in crk[def][wc])
+           if(crkwordlex==crk[def][wc][lc])
+           {
+
+              print crkwordanl |& flookup" -x "crkgenfst;
+              flookup" -x "crkgenfst |& getline crkgennorm;
+              close(flookup" -x "crkgenfst);
+
+              print crkgennorm" (<- "phrase")";
+              print "=>", crkwordlex" ["lc"]";
+              print "=>", crkwordtags;
+              print "-----";
+
+              if(enggenwc=="N" && engphrasegentags!="" && engnoungenfst!="")
+                {
+                  def2=def;
+                  gsub("\"","",def2);
+                  gsub("[ ]*\\([^\\)]+\\)","",def2); gsub("[ ]*\\[[^\\]]+\\]","",def2); gsub("\"","",def2); gsub("[ ]*[;]+",";",def2); gsub("[,;] [Ll]iteral[^,;]+","",def2);
+
+                  print engphrasegentags " "def2 |& flookup" -i "engnoungenfst;
+                  flookup" -i "engnoungenfst |& getline enggenphrase;
+                  close(flookup" -i "engnoungenfst);
+                  split(enggenphrase,gg,"\t");
+                  if(gg[2]!="+?")
+                     print "     ["wc"] "gg[2];
+                  else
+                     print "     ["wc"] "def;
+                  print "";
+                }
+              else if(enggenwc=="V" && engphrasegentags!="" && engverbgenfst!="")
+                {
+                  def2=def;
+                  gsub("\"","",def2);
+                  gsub("[ ]*\\([^\\)]+\\)","",def2); gsub("[ ]*\\[[^\\]]+\\]","",def2); gsub("\"","",def2); gsub("[ ]*[;]+",";",def2); gsub("[,;] [Ll]iteral[^,;]+","",def2);
+                  print engphrasegentags " "def2 |& flookup" -i "engverbgenfst;
+                  flookup" -i "engverbgenfst |& getline enggenphrase;
+                  close(flookup" -i "engverbgenfst);
+                  split(enggenphrase,gg,"\t");
+                  if(gg[2]!="+?")
+                     print "     ["wc"] "gg[2];
+                  else
+                     print "     ["wc"] "def;
+                  print "";
+                }
+              else
+                 { print "     ["wc"] "def; print ""; }
+            }
+
 
   # Modifying the English phrase features to Cree verb features
   crkformtags=engphrasetags;
@@ -66,11 +160,6 @@ while((getline < dict)!=0)
   else
     { pv="PV/e+"; sub("\\+V\\+(II|AI|TI|TA)","&+Cnj",crkformtags); }
 
-  print engphrase
-  print "=> "engphraselex;
-  print "=> "engphrasetags;
-  print "-----";
-
   # Converting inanimate subject/object tags
   if(index(crkformtags,"+V+TI")!=0)
     sub("\\+0SgO","",crkformtags);
@@ -79,6 +168,14 @@ while((getline < dict)!=0)
   # Switching inclusive plural feature
   gsub("21","12",crkformtags);
 
+
+  print phrase
+  print "=> "engphraselex;
+  print "=> "engphrasetags;
+  print "-----";
+
+
+if(crkwordanl=="+?") {
   n=split(engphraselex, w, "[ ,:;]+");
 
   for(def in crk)
@@ -115,7 +212,10 @@ while((getline < dict)!=0)
               # Organizing the English phrase features for English phrase generation
 
               engphrasegentags=engphrasetags;
-              match(engphrasegentags, "((\\+N)(\\+Dim)?(\\+Px[123](Sg|Pl))?(\\+(Sg|Pl|Obv|Loc|Distr)))|((\\+V)(\\+(II|AI|TI|TA))(\\+(Fut|Int|Cond|Imm|Del|Fut))?(\\+[0123](Sg|Pl))(\\+[0123](Sg|Pl)[OR])?)", g);
+              # Revising inclusive plural tags
+              sub("21","12",engphrasegentags);
+
+              match(engphrasegentags, "((\\+N)(\\+Dim)?(\\+Px[1234X]+(Sg|Pl|Sg/Pl)?)?(\\+(Sg|Pl|Obv|Loc|Distr)))|((\\+V)(\\+(II|AI|TI|TA))(\\+(Fut|Int|Cond|Imm|Del|Fut))?(\\+[01234X]+(Sg|Pl|Sg/Pl)?)(\\+[01234X]+(Sg|Pl|Sg/Pl)?[OR])?)", g);
 
               if(g[1]!="")
                 { enggenwc="N"; engphrasegentags=g[6] g[3] g[4] "+"; }
@@ -163,6 +263,7 @@ while((getline < dict)!=0)
                  { print "     ["wc"] "def; print ""; }
             }
         }
+    }
 }'
 
 
