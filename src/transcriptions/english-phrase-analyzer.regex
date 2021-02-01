@@ -133,7 +133,18 @@ define Imperative
 
 define SingleSpacing [ [ " " ]+ -> [ " " ] || \Bx _ \Bx ] ;
 
-regex [ [..] -> "@R.subject.1Sg@" "+1Sg" || _ .#. ,,
+regex [ [..] -> "@R.tense.Fut@" "+Fut" || _ .#. ,,
+[..] -> "@R.tense.Int@" "+Int" || _ .#. ,,
+[..] -> "@R.tense.Cond@" "+Cond" || _ .#. ,,
+[..] -> "@R.tense.Prt@" "+Prt" || _ .#. ,,
+! [..] -> "@R.tense.Imp@" "+Imp" || _ .#. ,,
+[..] -> "@R.tense.Imp@" "+Imm" || _ .#. ,,
+[..] -> "@R.tense.Imm@" "+Imm" || _ .#. ,,
+[..] -> "@R.tense.Del@" "+Del" || _ .#. ,,
+[..] -> "@R.tense.Inf@" "+Inf" || _ .#. ,,
+[..] -> "@D.tense@" || _ .#.
+] .o. [
+[..] -> "@R.subject.1Sg@" "+1Sg" || _ .#. ,,
 [..] -> "@R.subject.2Sg@" "+2Sg" || _ .#. ,,
 [..] -> "@R.subject.3Sg@" "+3Sg" || _ .#. ,,
 [..] -> "@R.subject.0Sg@" "+0Sg" || _ .#. ,,
@@ -163,16 +174,6 @@ regex [ [..] -> "@R.subject.1Sg@" "+1Sg" || _ .#. ,,
 [..] -> "@R.object.3Pl@" "+3PlO" || _ .#. ,,
 [..] -> "@R.object.X@" "+XO" || _ .#. ,,
 [..] -> "@D.object@" || _ .#.
-] .o. [
-[..] -> "@R.tense.Fut@" "+Fut" || _ .#. ,,
-[..] -> "@R.tense.Int@" "+Int" || _ .#. ,,
-[..] -> "@R.tense.Cond@" "+Cond" || _ .#. ,,
-[..] -> "@R.tense.Prt@" "+Prt" || _ .#. ,,
-[..] -> "@R.tense.Imp@" "+Imp" || _ .#. ,,
-[..] -> "@R.tense.Imm@" "+Imm" || _ .#. ,,
-[..] -> "@R.tense.Del@" "+Del" || _ .#. ,,
-[..] -> "@R.tense.Inf@" "+Inf" || _ .#. ,,
-[..] -> "@D.tense@" || _ .#.
 ] ;
 define VerbAnalysis
 
@@ -199,14 +200,7 @@ define NumberObvLocDistr
 regex [ [ {little} | {lesser} | {smaller} | {younger} ] -> "@P.dim.Dim@" || Bx _ Bx ] ;
 define Diminutive
 
-regex [ [..] -> "+Pl" "@R.number.Pl@" || _ .#. ,,
-[..] -> "+Obv" "@R.number.Obv@" || _ .#. ,,
-[..] -> "+Loc" "@R.number.Loc@" || _ .#. ,,
-[..] -> "+Distr" "@R.number.Distr@" || _ .#. ,,
-[..] -> "+Sg" "@R.number.Sg@" || _ .#. ,,
-[..] -> "+Sg" "@D.number@" || _ .#.
-] .o. [
-[..] -> "+Dim" "@R.dim.Dim@" || _ .#. ,,
+regex [ [..] -> "+Dim" "@R.dim.Dim@" || _ .#. ,,
 [..] -> "@D.dim@" || _ .#.
 ] .o. [
 [..] -> "+Px1Sg" "@R.poss.1Sg@" || _ .#. ,,
@@ -218,6 +212,12 @@ regex [ [..] -> "+Pl" "@R.number.Pl@" || _ .#. ,,
 [..] -> "+Px3Pl" "@R.poss.3Pl@" || _ .#. ,,
 [..] -> "+PxX" "@R.poss.X@" || _ .#. ,,
 [..] -> "@D.poss@" || _ .#.
+] .o. [ [..] -> "+Pl" "@R.number.Pl@" || _ .#. ,,
+[..] -> "+Obv" "@R.number.Obv@" || _ .#. ,,
+[..] -> "+Loc" "@R.number.Loc@" || _ .#. ,,
+[..] -> "+Distr" "@R.number.Distr@" || _ .#. ,,
+[..] -> "+Sg" "@R.number.Sg@" || _ .#. ,,
+[..] -> "+Sg" "@D.number@" || _ .#.
 ] ;
 define NounAnalysis
 
@@ -242,8 +242,8 @@ regex [ [..] -> " " || _ .#. ] ;
 define InsertFinalSpace
 
 regex [ Letters+ .o. InsertFinalSpace
-.o. [ [ ReverseSubject .o. Subject .o. Reflexive .o. Object .o. 2SgO .o. 2PlO .o. 3SgO .o. 0SgO .o. XO .o. Tense .o. Past .o. Imperative .o. VerbAnalysis .o. VerbClass ]
-| [ VerbPhrase .o. NounPhrase .o. NumberObvLocDistr .o. Diminutive .o. Possession .o. NounAnalysis .o. NounClass ] ]
+.o. [ [ ReverseSubject .o. Subject .o. Reflexive .o. Object .o. 2SgO .o. 2PlO .o. 3SgO .o. 0SgO .o. XO .o. Tense .o. Past .o. Imperative .o. VerbClass .o. VerbAnalysis ]
+| [ VerbPhrase .o. NounPhrase .o. NumberObvLocDistr .o. Diminutive .o. Possession .o. NounClass .o. NounAnalysis ] ]
 .o. SingleSpacing
 ] ;
 
