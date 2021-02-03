@@ -217,10 +217,13 @@ if(crkwordanl=="+?") {
               engphrasegentags=engphrasetags;
               # Revising inclusive plural tags
               gsub("21","12",engphrasegentags);
+              # Revising inanimate subject tags
+              sub("\\+0Sg","+3Sg",engphrasegentags);
+              sub("\\+0Pl","+3Pl",engphrasegentags);
               # Removing inanimate object tags
               gsub("\\+0SgO","",engphrasegentags);
 
-              match(engphrasegentags, "((\\+N)(\\+Dim)?(\\+Px[1234X]+(Sg|Pl|Sg/Pl)?)?(\\+(Sg|Pl|Obv|Loc|Distr)))|((\\+V)(\\+(II|AI|TI|TA))(\\+(Prt|Fut|Int|Cond|Imm|Del|Fut))?(\\+[01234X]+(Sg|Pl|Sg/Pl)?)(\\+[01234X]+(Sg|Pl|Sg/Pl)?[OR])?)", g);
+              match(engphrasegentags, "((\\+N)(\\+Dim)?(\\+Px[1234X]+(Sg|Pl|Sg/Pl)?)?(\\+(Sg|Pl|Obv|Loc|Distr)))|((\\+V)(\\+(II|AI|TI|TA))(\\+(Prt|Fut|Int|Cond|Imm|Del|Inf))?(\\+[01234X]+(Sg|Pl|Sg/Pl)?)(\\+[01234X]+(Sg|Pl|Sg/Pl)?[OR])?)", g);
 
               if(g[1]!="")
                 { enggenwc="N"; engphrasegentags=g[6] g[3] g[4] "+"; }
@@ -244,9 +247,9 @@ if(crkwordanl=="+?") {
                   close(flookup" -i "engnoungenfst);
                   split(enggenphrase,gg,"\t");
                   if(gg[2]!="+?")
-                     print "     ["wc"] "gg[2];
+                     print "     ≈ "gg[2]" ["wc"]";
                   else
-                     print "     ["wc"] "def;
+                     print "     "def" ["wc"]";
                   print "";
                 }
               else if(enggenwc=="V" && engphrasegentags!="" && engverbgenfst!="")
@@ -260,13 +263,13 @@ if(crkwordanl=="+?") {
                   close(flookup" -i "engverbgenfst);
                   split(enggenphrase,gg,"\t");
                   if(gg[2]!="+?")
-                     print "     ["wc"] "gg[2];
+                     print "     ≈ "gg[2]" ["wc"]";
                   else
-                     print "     ["wc"] "def;
+                     print "     "def"["wc"]";
                   print "";
                 }
               else
-                 { print "     ["wc"] "def; print ""; }
+                 { print "     "def"["wc"]"; print ""; }
             }
         }
     }
