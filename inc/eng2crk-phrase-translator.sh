@@ -46,9 +46,9 @@ while((getline < dict)!=0)
   close(flookup" "crkanlfst);
   split(crkfstanl,f,"\t");
   crkwordanl=f[2];
-  match(crkwordanl, "(IC\\+|PV/[^\\+]+\\+|Rdpl[SW]\\+)*([^\\+]+)(.+)", ff);
-  # print "1:"ff[1], "2:"ff[2], "3:"ff[3];
-  crkwordlex=ff[2]; crkwordtags=ff[1] "_" ff[3];
+  match(crkwordanl, "((IC\\+|PV/[^\\+]+\\+|Rdpl[SW]\\+)*)*([^\\+]+)(.+)", ff);
+  # print "1:"ff[1], "3:"ff[3], "4:"ff[4];
+  crkwordlex=ff[3]; crkwordtags=ff[1] "_" ff[4];
   match(crkwordtags,"^\\+([VN])\\+(II|AI|TI|TA|A|I|A)?\\+[D]?",fff);
   crkwordclass=fff[1] fff[2] fff[3];
   
@@ -67,6 +67,9 @@ while((getline < dict)!=0)
   else
     if(index(crkwordtags,"PV/ka+")!=0 && index(crkwordtags,"+Ind")!=0)
       engphrasegentags="Fut" subjobj "+";
+  else
+    if(index(crkwordtags,"PV/ki+")!=0)
+      engphrasegentags="Prt" subjobj "+";
   else
     if(index(crkwordtags,"PV/wi+")!=0)
       engphrasegentags="Int" subjobj "+";
@@ -115,9 +118,9 @@ if(index(phrase," ")==0 && index(crkwordanl,"+?")==0)
                   close(flookup" -i "engnoungenfst);
                   split(enggenphrase,gg,"\t");
                   if(gg[2]!="+?")
-                     print "     ["wc"] "gg[2];
+                     print "     ≈ "gg[2]" ["wc"]";
                   else
-                     print "     ["wc"] "def;
+                     print "     ≈ "def" ["wc"]";
                   print "";
                 }
               else if(enggenwc=="V" && engphrasegentags!="" && engverbgenfst!="")
@@ -130,9 +133,9 @@ if(index(phrase," ")==0 && index(crkwordanl,"+?")==0)
                   close(flookup" -i "engverbgenfst);
                   split(enggenphrase,gg,"\t");
                   if(gg[2]!="+?")
-                     print "     ["wc"] "gg[2];
+                     print "     ≈ "gg[2]" ["wc"]";
                   else
-                     print "     ["wc"] "def;
+                     print "     ≈ "def" ["wc"]";
                   print "";
                 }
               else
