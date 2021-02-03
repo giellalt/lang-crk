@@ -146,6 +146,9 @@ if(index(phrase," ")==0 && index(crkwordanl,"+?")==0)
   if(index(crkformtags,"+Cond")!=0)
     sub("\\+Cond","+Fut&",crkformtags);
   else
+    if(index(crkformtags,"+Prt")!=0)
+      { sub("\\+Prt","+Cnj",crkformtags); pv="PV/e+PV/ki+"; }
+  else
     if(index(crkformtags,"+Imm")!=0 || index(crkformtags,"+Del")!=0)
       sub("\\+(Imm|Del)","+Imp&",crkformtags);
   else
@@ -169,13 +172,13 @@ if(index(phrase," ")==0 && index(crkwordanl,"+?")==0)
   gsub("21","12",crkformtags);
 
 
+if(crkwordanl=="+?") {
+
   print phrase
   print "=> "engphraselex;
   print "=> "engphrasetags;
   print "-----";
 
-
-if(crkwordanl=="+?") {
   n=split(engphraselex, w, "[ ,:;]+");
 
   for(def in crk)
@@ -213,9 +216,11 @@ if(crkwordanl=="+?") {
 
               engphrasegentags=engphrasetags;
               # Revising inclusive plural tags
-              sub("21","12",engphrasegentags);
+              gsub("21","12",engphrasegentags);
+              # Removing inanimate object tags
+              gsub("\\+0SgO","",engphrasegentags);
 
-              match(engphrasegentags, "((\\+N)(\\+Dim)?(\\+Px[1234X]+(Sg|Pl|Sg/Pl)?)?(\\+(Sg|Pl|Obv|Loc|Distr)))|((\\+V)(\\+(II|AI|TI|TA))(\\+(Fut|Int|Cond|Imm|Del|Fut))?(\\+[01234X]+(Sg|Pl|Sg/Pl)?)(\\+[01234X]+(Sg|Pl|Sg/Pl)?[OR])?)", g);
+              match(engphrasegentags, "((\\+N)(\\+Dim)?(\\+Px[1234X]+(Sg|Pl|Sg/Pl)?)?(\\+(Sg|Pl|Obv|Loc|Distr)))|((\\+V)(\\+(II|AI|TI|TA))(\\+(Prt|Fut|Int|Cond|Imm|Del|Fut))?(\\+[01234X]+(Sg|Pl|Sg/Pl)?)(\\+[01234X]+(Sg|Pl|Sg/Pl)?[OR])?)", g);
 
               if(g[1]!="")
                 { enggenwc="N"; engphrasegentags=g[6] g[3] g[4] "+"; }
@@ -249,6 +254,7 @@ if(crkwordanl=="+?") {
                   def2=def;
                   gsub("\"","",def2);
                   gsub("[ ]*\\([^\\)]+\\)","",def2); gsub("[ ]*\\[[^\\]]+\\]","",def2); gsub("\"","",def2); gsub("[ ]*[;]+",";",def2); gsub("[,;] [Ll]iteral[^,;]+","",def2);
+
                   print engphrasegentags " "def2 |& flookup" -i "engverbgenfst;
                   flookup" -i "engverbgenfst |& getline enggenphrase;
                   close(flookup" -i "engverbgenfst);
