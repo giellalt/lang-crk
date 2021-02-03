@@ -19,7 +19,7 @@ define TenseAspect [
 .o. [ [..] -> {want to } || .#. "Int+" \[ "3Sg+" ] ?* Bx [ {s/he} | {he} | {she} | {they} ] " " _ ]
 .o. [ [..] -> {someone wants } || .#. "Int+" ?* Bx _ [ {it} | {there} ] " " ,, [..] -> { to} || .#. "Int+" ?* Bx [ {it} | {there} ] _ \[ Bx - " " ] ]
 .o. [ [..] -> {when } || .#. "Cond+" ?* Bx _ [ {s/he} | {he} | {she} | {it} | {they} | {there} ] " " ]
-.o. [ [..] -> {for } || .#. "Inf+" ?* Bx _ [ {s/he} | {he} | {she} | {it} | {they} | {there be} ] " " _ ,, [..] -> {to } || .#. "Inf+" ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there} ] " " _ ]
+.o. [ [..] -> {for } || .#. "Inf+" ?* Bx _ [ {s/he} | {he} | {she} | {it} | {they} | {there be} ] " " ,, [..] -> {to } || .#. "Inf+" ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there} ] " " _ ]
 .o. [ [..] -> {let } || .#. [ "Imm+" | "Del+" ] \[ "2Sg+" | "2Pl+" ] ?* Bx _ [ {s/he} | {he} | {she} | {they} ] " " , .#. [ "Imm+" | "Del+" ] ?* Bx _ [ {it} | {they} | {there be} ] ]
 .o. [ [..] -> { now} || .#. "Imm+" \[ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] , .#. "Imm+" [ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] ]
 .o. [ [..] -> { later} || .#. "Del+" \[ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] , .#. "Del+" [ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] ]
@@ -57,22 +57,23 @@ define EngInf
 
 define VInflection [ [ {is} | {are} ] -> {be} || .#. [ "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there} ] " " _ Bx ] .o.
 [ {has} -> {have} || .#. [ "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* Bx [ {s/he} | {he} | {she} | {it} ] " " _ Bx ] .o.
-[ {has} -> {had} || .#. "Prt+" ?* Bx [ {s/he} | {he} | {she} | {it} ] " " _ Bx ] .o.
+[ {has} -> {had} || .#. "Prt+" ?* Bx [ {s/he} | {he} | {she} | {it} ] " " _ Bx ]
+! ;
 
 !! Word-specific explicit solution for verb morphology
-! [
+! .o. [
 !    EngInf -> || .#. [ [ [ "Prs+" | "Cond+" ] [ "1Sg+" | "2Sg+" | "1Pl+" | "12Pl+" | "2Pl+" | "3Pl+" ] ] | "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* [ {s/he} | {he} | {she} | {it} ] " " _ [ Bx - "." ]
 ! ,, EngPrt -> || .#. "Prt+" ?* [ {s/he} | {he} | {she} | {it} ] " " _ [ Bx - "." ]
 ! ] ;
 
 !! Rule-based morphological solution
-[
+.o. [
 s -> 0 || .#. [ [ [ "Prs+" | "Cond+" ] [ "1Sg+" | "2Sg+" | "1Pl+" | "12Pl+" | "2Pl+" | "3Pl+" ] ] | "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
-,, s -> {>ed} || .#. "Prt+" ?* [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ] _ [ Bx - "." ]
-] 
+,, s -> {>ed} || .#. "Prt+" ?* [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ] _ [ Bx - "." ] ]
 .o. [ { ha } -> { have } ,, { ha>ed } -> { had } ]
+;
 ! Morphophonological changes, if using rule-based morphological solution
-.o. ConsonantDoubling .o. EDeletion .o. EInsertion .o. YReplacement .o. KInsertion .o. rmBoundary ;
+! .o. ConsonantDoubling .o. EDeletion .o. EInsertion .o. YReplacement .o. KInsertion .o. rmBoundary ;
 
 define beInflection [ {is} -> {be} || .#. [ "Inf+" | [ "Imm+" | "Del+" ] ] ?* {for s/he to } _ Bx
 ,, {is} -> {am} || .#. [ "Prs+" | "Fut+" | "Cond+" ] "1Sg+" ?* [ {s/he} | {he} | {she} ] " " _ Bx
