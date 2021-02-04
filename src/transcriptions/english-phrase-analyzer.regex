@@ -128,7 +128,7 @@ regex [ {am} | {are} -> {is} ,
 ] .o. [
 ! Productive past tense with the -ed suffix
 [ {ed} -> "@P.tense.Prt@" || [ {I} | {you all} | {you} | {he} | {she} | {it} | {you and we} | {we} | {they} | {someone} ] " " \Bx+ _ Bx ]
-.o. [ d -> "@P.tense.Prt@" || [ {I} | {you all} | {you} | {he} | {she} | {it} | {you and we} | {we} | {they} | {someone} ] " " \Bx+ _ Bx ]
+.o. [ d -> "@P.tense.Prt@" || [ {I} | {you all} | {you} | {he} | {she} | {it} | {you and we} | {we} | {they} | {someone} ] " " \Bx^3 _ Bx ]
 ] ;
 define Past
 
