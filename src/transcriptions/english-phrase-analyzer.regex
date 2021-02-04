@@ -35,17 +35,17 @@ define Tags [ SubjectTags | ObjectTags | TenseTags ] ;
 
 !! VERBS
 
-regex [ [ {we and you} | {We and you} | {you and we} | {You and we} | {you and I} | {You and I} ] -> "@P.subject.21Pl@" || Bx _ Bx ,,
-[ {you all} | {You all} ] -> "@P.subject.2Pl@" || Bx _ Bx ,,
-[ {you and us} | {You and us} | {us and you} | {Us and you} | {you and me} | {You and me} ] -> "@P.object.21Pl@" || Bx _ Bx
+regex [ [ {we and you} | {you and we} | {you and I} ] -> "@P.subject.21Pl@" || Bx _ Bx ,,
+{you all} -> "@P.subject.2Pl@" || Bx _ Bx ,,
+[ {you and us} | {us and you} | {you and me} | {me and you} ] -> "@P.object.21Pl@" || Bx _ Bx
 ] .o. [ {I} -> "@P.subject.1Sg@" || Bx _ Bx ,,
-{you} | {You} -> "@P.subject.2Sg@" || Bx _ Bx ,,
-{he} | {He} | {she} | {She} -> "@P.subject.3Sg@" || Bx _ Bx ,,
-{it} | {It} -> "@P.subject.0Sg@" || Bx _ Bx ,,
-{there} | {There} -> "@P.subject.0Sg@" || .#. _ Bx ,,
-{we} | {We} -> "@P.subject.1Pl@" || Bx _ Bx ,,
-{they} | {They} -> "@P.subject.3Pl@" || Bx _ Bx ,,
-{someone} | {Someone} -> "@P.subject.X@" || Bx _ Bx
+{you} -> "@P.subject.2Sg@" || Bx _ Bx ,,
+{he} | {she} -> "@P.subject.3Sg@" || Bx _ Bx ,,
+{it} -> "@P.subject.0Sg@" || Bx _ Bx ,,
+{there} -> "@P.subject.0Sg@" || .#. _ Bx ,,
+{we} -> "@P.subject.1Pl@" || Bx _ Bx ,,
+{they} -> "@P.subject.3Pl@" || Bx _ Bx ,,
+{someone} -> "@P.subject.X@" || Bx _ Bx
 ] ;
 define Subject
 
