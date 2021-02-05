@@ -277,5 +277,4 @@ regex [ Letters+ .o. InsertFinalSpace
 
 twosided flag-diacritics
 
-save stack english-phrase-analyzer.fomabin
-! save stack english-phrase-analyzer.hfst
+! save stack eng2crk-phrase-analyzer.fomabin
