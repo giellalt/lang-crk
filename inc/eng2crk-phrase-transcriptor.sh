@@ -1,11 +1,11 @@
 #!/bin/sh
 
-# eng2crk-phrase-translator.sh
+# eng2crk-phrase-transcriptor.sh
 
 # Examples:
 
 # English noun phrase: 
-# echo 'in my little book' | inc/eng2crk-phrase-translator.sh /Users/arppe/altlab/crk/dicts/Wolvengrey.tsv transcriptor-eng-phrase2crk-features.fomabin crk-anl-desc-dict.fomabin crk-gen-norm-dict.fomabin transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.fomabin transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.fomabin | head -10
+# echo 'in my little book' | inc/eng2crk-phrase-transcriptor.sh /Users/arppe/altlab/crk/dicts/Wolvengrey.tsv transcriptor-eng-phrase2crk-features.fomabin crk-anl-desc-dict.fomabin crk-gen-norm-dict.fomabin transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.fomabin transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.fomabin | head -10
 # in my little book
 # => book
 # => +N+Dim+Px1Sg+Loc
@@ -17,7 +17,7 @@
 #      ≈  in my little prayer book [NI]
 # ...
 # English verb phrase:
-# echo 'I work together with you' | inc/eng2crk-phrase-translator.sh /Users/arppe/altlab/crk/dicts/Wolvengrey.tsv transcriptor-eng-phrase2crk-features.fomabin crk-anl-desc-dict.fomabin crk-gen-norm-dict.fomabin transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.fomabin transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.fomabin | head -10
+# echo 'I work together with you' | inc/eng2crk-phrase-transcriptor.sh /Users/arppe/altlab/crk/dicts/Wolvengrey.tsv transcriptor-eng-phrase2crk-features.fomabin crk-anl-desc-dict.fomabin crk-gen-norm-dict.fomabin transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.fomabin transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.fomabin | head -10
 # I work together with you
 # => work together with
 # => +V+TA+1Sg+2SgO
@@ -27,6 +27,14 @@
 # 
 # ê-wîtapimitân <-- PV/e+wîtapimêw+V+TA+Cnj+1Sg+2SgO [VTA-1]
 #      ≈  I sit with you, I sit beside you, I stay with you, I am present with you; I work together with you; I sit by you [VTA]
+# ...
+# Cree verb form:
+# echo 'niki-nitawi-kiskinwahamakosin' | inc/eng2crk-phrase-transcriptor.sh /Users/arppe/altlab/crk/dicts/Wolvengrey.tsv transcriptor-eng-phrase2crk-features.fomabin crk-anl-desc-dict.fomabin crk-gen-norm-dict.fomabin transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.fomabin transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.fomabin | head -10  
+# nikî-nitawi-kiskinwahamâkosin (<- niki-nitawi-kiskinwahamakosin)
+# => kiskinwahamâkosiw [VAI-1]
+# => PV/ki+PV/nitawi+_+V+AI+Ind+1Sg
+# -----
+#      ≈  I learn>ed; I was a student, I attend>ed school; I was taught [VAI]
 # ...
 
 
