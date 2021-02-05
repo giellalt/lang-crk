@@ -4,11 +4,30 @@
 
 # Examples:
 
-# English verb phrase: 
-# echo 'in my little book' | inc/eng2crk-phrase-translator.sh /Users/arppe/altlab/crk/dicts/Wolvengrey.tsv eng-phrase-analyzer.fomabin crk-anl-desc-dict.fomabin crk-gen-norm-dict.fomabin eng-noun-phrase-inflector.fomabin eng-verb-phrase-inflector.fomabin| less
-
-# English noun phrase:
-# echo 'I work together with you' | inc/eng2crk-phrase-translator.sh /Users/arppe/altlab/crk/dicts/Wolvengrey.tsv eng-phrase-analyzer.fomabin crk-anl-desc-dict.fomabin crk-gen-norm-dict.fomabin eng-noun-phrase-inflector.fomabin eng-verb-phrase-inflector.fomabin| less
+# English noun phrase: 
+# echo 'in my little book' | inc/eng2crk-phrase-translator.sh /Users/arppe/altlab/crk/dicts/Wolvengrey.tsv transcriptor-eng-phrase2crk-features.fomabin crk-anl-desc-dict.fomabin crk-gen-norm-dict.fomabin transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.fomabin transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.fomabin | head -10
+# in my little book
+# => book
+# => +N+Dim+Px1Sg+Loc
+# -----
+# nimanicowi-masinahikanisihk <-- manitowi-masinahikan+N+I+Der/Dim+N+I+Px1Sg+Loc [NI-1]
+#      God's book, the Bible [NI]
+# 
+# nicayamihêwasinahikanisihk <-- ayamihêwasinahikan+N+I+Der/Dim+N+I+Px1Sg+Loc [NI-1]
+#      ≈  in my little prayer book [NI]
+# ...
+# English verb phrase:
+# echo 'I work together with you' | inc/eng2crk-phrase-translator.sh /Users/arppe/altlab/crk/dicts/Wolvengrey.tsv transcriptor-eng-phrase2crk-features.fomabin crk-anl-desc-dict.fomabin crk-gen-norm-dict.fomabin transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.fomabin transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.fomabin | head -10
+# I work together with you
+# => work together with
+# => +V+TA+1Sg+2SgO
+# -----
+# ê-wîtatoskêmitân <-- PV/e+wîtatoskêmêw+V+TA+Cnj+1Sg+2SgO [VTA-1]
+#      ≈  I work together with you, I have you as your fellow worker [VTA]
+# 
+# ê-wîtapimitân <-- PV/e+wîtapimêw+V+TA+Cnj+1Sg+2SgO [VTA-1]
+#      ≈  I sit with you, I sit beside you, I stay with you, I am present with you; I work together with you; I sit by you [VTA]
+# ...
 
 
 gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST=$5 -v ENGVERBGENFST=$6 'BEGIN { FS="\t"; dict=DICT;
