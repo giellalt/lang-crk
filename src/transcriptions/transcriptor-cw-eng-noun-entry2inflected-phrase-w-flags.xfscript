@@ -1,0 +1,127 @@
+! "Inflections" of English translations for Cree nouns in CW
+! using flag-diacritics for long-term dependencies
+
+! USAGE:
+! 1: Number/Obviation/Locative/Distributive (obligatory): Sg+ | Pl+ | Obv+ | Loc+ | Distr+
+! 2: (Diminutive) (optional): Dim+
+! 3: (Possession) (optional):  Px1Sg+ | Px2Sg+ | Px3Sg+ | Px1Pl+ | Px12Pl+ | Px2Pl+ | Px3Pl+ | Px4Sg/Pl+ | PxX+
+! 4: English phrase to be inflected, preceded by a space separating from the initial tags
+
+! EXAMPLES:
+! Pl+ small boat, ship --> small boats, ships
+! Sg+Dim+ small boat; ship --> a little small boat; a little ship
+! Distr+ boat, ship --> among ships, among boats
+! Obv+Px1Sg+ a boat, a ship --> my boat over there, my ship over there
+! Sg+Dim+Px1Sg+ a boat, a ship --> my little boat, my little ship
+! N.B. Inflected phrase is preceded by a single space
+
+! Character/tag class definitions
+
+define Tags [ "Sg+" | "Pl+" | "Obv+" | "Loc+" | "Distr+" ] ;
+
+define Possession [ "Px1Sg+" | "Px2Sg+" | "Px3Sg+" | "Px1Pl+" | "Px12Pl+" | "Px2Pl+" | "Px3Pl+" | "Px4Sg/Pl+" | "PxX+" ] ;
+
+define Consonant [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | t | v | w | x | z ]  ;
+
+define Vowel [ a | e | i | o | u ] ;
+
+define Capital [ A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z ] ;
+
+define Alphabet [ Vowel | Consonant | "y" | Capital ] ;
+
+define Punctuation [ "." | "," | ":" | ";" | "!" | "?" | "-" ] ;
+
+define Number [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] ;
+
+define Letters [ Alphabet | Punctuation | Number | " " ] ;
+
+define PFlags [ "@P.person.Sg@" | "@P.person.Pl@" | "@P.person.Obv@" | "@P.person.Loc@" | "@P.person.Distr@" | "@P.dim.Dim@" | "@D.dim.Dim@" | "@P.poss.1Sg@" | "@P.poss.2Sg@" | "@P.poss.3Sg@" | "@P.poss.1Pl@" | "@P.poss.12Pl@" | "@P.poss.2Pl@" | "@P.poss.3Pl@" | "@P.poss.4Sg/Pl@" | "@P.poss.X@" ] ;
+
+define RFlags  [ "@R.person.Sg@" | "@R.person.Pl@" | "@R.person.Obv@" | "@R.person.Loc@" | "@R.person.Distr@" | "@R.dim.Dim@" | "@D.dim.Dim@" | "@R.poss.1Sg@" | "@R.poss.2Sg@" | "@R.poss.3Sg@" | "@R.poss.1Pl@" | "@R.poss.12Pl@" | "@R.poss.2Pl@" | "@R.poss.3Pl@" | "@R.poss.4Sg/Pl@" | "@R.poss.X@" ] ;
+
+define RPossFlags  [ "@R.poss.1Sg@" | "@R.poss.2Sg@" | "@R.poss.3Sg@" | "@R.poss.1Pl@" | "@R.poss.12Pl@" | "@R.poss.2Pl@" | "@R.poss.3Pl@" | "@R.poss.4Sg/Pl@" | "@R.poss.X@" ] ;
+
+define DFlags [ "@D.dim.Dim@" | "@D.poss@" ] ;
+
+define Flags [ PFlags | RFlags | DFlags ] ;
+
+! Plurals of most common irregular nouns
+
+define EngIrregularNouns [ {man>s} -> {men} , {woman>s} -> {women} , {child>s} -> {children} , {mouse>s} -> {mice} , {foot>s} -> {feet} , {ox>s} -> {oxen} , { goose>s} -> {geese} , {wife>s} -> {wives} , {tooth>s} -> {teeth} , {addendum>s} -> {addenda} , {aircraft>s} -> {aircraft} , {alumna>s} -> {alumnae} , {alumnus>s} -> {alumni} , {analysis>s} -> {analyses} , {antithesis>s} -> {antitheses} , {appendix>s} -> {appendices} , {axis>s} -> {axes} , {bacillus>s} -> {bacilli} , {bacterium>s} -> {bacteria} , {basis>s} -> {bases} , {beau>s} -> {beaux} , {bison>s} -> {bison} , {bureau>s} -> {bureaus} , {codex>s} -> {codices} , {corpus>s} -> {corpora} , {crisis>s} -> {crises} , {criterion>s} -> {criteria} , {curriculum>s} -> {curricula} , {datum>s} -> {data} , {diagnosis>s} -> {diagnoses} , {die>s} -> {dice} , {ellipsis>s} -> {ellipses} , {erratum>s} -> {errata} , {focus>s} -> {foci} , {foot>s} -> {feet} , {fungus>s} -> {fungi} , {genus>s} -> {genera} , {graffito>s} -> {graffiti} , {half>s} -> {halves} , {hypothesis>s} -> {hypotheses} , {index>s} -> {indices} , {larva>s} -> {larvae} , {loaf>s} -> {loaves} , {locus>s} -> {loci} , {matrix>s} -> {matrices} , {medium>s} -> {media} , {memorandum>s} -> {memoranda} , {minutia>s} -> {minutiae} , {moose>s} -> {moose} , {nucleus>s} -> {nuclei} , {oasis>s} -> {oases} , {offspring>s} -> {offspring} , {ovum>s} -> {ova} , {parenthesis>s} -> {parentheses} , {phenomenon>s} -> {phenomena} , {phylum>s} -> {phyla} , {quiz>s} -> {quizzes} , {referendum>s} -> {referenda} , {salmon>s} -> {salmon} , {self>s} -> {selves} , {series>s} -> {series} , {sheep>s} -> {sheep} , {species>s} -> {species} , {stimulus>s} -> {stimuli} , {stratum>s} -> {strata} , {swine>s} -> {swine} , {syllabus>s} -> {syllabi} , {symposium>s} -> {symposia} , {synopsis>s} -> {synopses} , {thesis>s} -> {theses} , {thief>s} -> {thieves} , {trout>s} -> {trout} , {tuna>s} -> {tuna} , {vertebra>s} -> {vertebrae} , {vertex>s} -> {vertices} , {vita>s} -> {vitae} , {vortex>s} -> {vortices} , {wharf>s} -> {wharves} , {wolf>s} -> {wolves} ] ;
+
+! Regular morphophonology for plural nouns: e-insertion + y-modification
+
+define EngNounMorphophonology [ [ [ y ">" s ] -> {ies} || \Vowel _ ] ,, [ [..] -> e || [ s | z | x | s h | c h ] ">" _ s ] ] ;
+
+! Rewrite rules
+
+! Specification of input structure
+
+regex [ Tags ("Dim+") (Possession) Letters+ ]
+
+! Conversion of tags to flag-diacritics
+.o. [ "Sg+" -> "@P.number.Sg@" ,  "Pl+" -> "@P.number.Pl@" , "Obv+" -> "@P.number.Obv@" , "Loc+" -> "@P.number.Loc@" , "Distr+" -> "@P.number.Distr@" ]
+.o. [ "Dim+" -> "@P.dim.Dim@" ]
+.o. [ "Px1Sg+" -> "@P.poss.1Sg@" , "Px2Sg+" -> "@P.poss.2Sg@" , "Px3Sg+" -> "@P.poss.3Sg@" , "Px1Pl+" -> "@P.poss.1Pl@" , "Px12Pl+" -> "@P.poss.12Pl@" , "Px2Pl+" -> "@P.poss.2Pl@" , "Px3Pl+" -> "@P.poss.3Pl@" , "Px4Sg/Pl+" -> "@P.poss.4Sg/Pl@" ,, "PxX+" -> "@P.poss.X@" ]
+
+! Removal of articles/possessors
+.o. [ [ {a } | {an } | {the } | {my } ] -> 0 || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
+
+! Diminutive: insertion of 'little'
+.o. [ [..] -> [ {little } "@R.dim.Dim@" ] | "@D.dim.Dim@" || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
+
+! Possession: insertion of possessive pronouns
+.o. [ [..] -> {my } "@R.poss.1Sg@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+| [ [..] -> {your } "@R.poss.2Sg@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+| [ [..] -> {his/her } "@R.poss.3Sg@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+| [ [..] -> {our } "@R.poss.1Pl@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+| [ [..] -> {your and our } "@R.poss.12Pl@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+| [ [..] -> {your } "@R.poss.2Pl@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+| [ [..] -> {their } "@R.poss.3Pl@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+| [ [..] -> {his/her/their } "@R.poss.4Sg/Pl@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+| [ [..] -> {someone's } "@R.poss.X@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+! Non-possessed constructions
+| [ [..] -> "@D.poss@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+
+! "Number", including obviation, locatives and distributives
+.o. [ [..] -> [ {a> } "@R.number.Sg@" "@D.poss@" ] || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
+|    [ [..] -> [ "@R.number.Sg@" RPossFlags ] || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
+|   [ [..] -> [ {>s} "@R.number.Pl@" ] ||  _ [ .#. | Punctuation ] | [ { of } | { for } | { with } | { among } | { who } ] .o. {>s} -> 0 || {>s} \[ Punctuation | .#. ]+  _ ]
+|   [ [..] -> [ { over there} "@R.number.Obv@" ] || _ [ .#. | Punctuation ] ]
+! Locative forms are singular by default, and with an indefinite article unless possessed
+|   [ [..] -> [ {in a> } "@R.number.Loc@" "@D.poss@" ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+|   [ [..] -> [ {in } "@R.number.Loc@" RPossFlags ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+! Distributive forms are made plural by default
+|   [ [ [..] -> [ {among> } "@R.number.Distr@" ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ] .o. [ [..] -> [ {>s} "@R.number.Distr@" ] ||  _ [ .#. | Punctuation | [ { of } | { for } | { with } | { among } | { who } ] ] ] .o. [ {>s} -> 0 || {>s} \[ Punctuation | .#. ]+  _ ] ]
+
+! Allomorphy for the indefinite article: <a> -> <an> | _ Vowel
+.o. [ [..] -> n || { a>} _ " " \Letters+ Vowel ]
+
+! Plural noun inflection
+.o. EngIrregularNouns
+.o. EngNounMorphophonology
+
+! Removal of morpheme boundary
+.o. ">" -> 0
+;
+
+twosided flag-diacritics
+
+!! Old code
+
+! .o. [ "Sg+" -> "@P.number.Sg@" , "Pl+" -> "@P.number.Pl@" , "Obv+" -> "@P.number.Obv@" , "Loc+" -> "@P.number.Loc@" || .#. _ ]
+! .o. [ [ [..] -> {a } "@R.number.Sg@" || [ [ .#. ? ] | [ %, " " ] ] _ \Vowel ]
+!       ,, [ [..] -> {an } "@R.number.Sg@" || [ [ .#. ? ] | [ %, " " ] ] _ Vowel ] ]
+!     | [ [..] -> {>s} "@R.number.Pl@" ||  _ [ .#. | %, ] ]
+!     | [ [..] -> { over there} "@R.number.Obv@" || _ [ .#. | "," ] ]
+!     | [ [..] -> {in } "@R.number.Loc@" || [ [ .#. ? ] | [ %, " " ] ] _ ]
+
+! regex [ Tags+ Letters+ ]
+! .o. [ "Pl+" -> "@D.number@" "@P.number.Pl@" .o. "Sg+" -> "@P.number.Sg@" .o. "Dim+" -> "@R.dim.Dim@" ]
+! .o. [ [..] -> "@P.dim.Dim@" {little } || [ .#. | [ [ %, | %; ] " " ] ] _ ] | [ [..] -> "@D.dim@" || _ .#. ]
+! .o. [ [ [..] -> "@P.number.Sg@" {a } || [ .#. | [ [ %, | %; ] " " ] ] _ \Vowel ]
+!       .o. [ [..] -> "@P.number.Sg@" {an } || [ .#. | [ [ %, | %; ] " " ] ] _ Vowel ] ]
+! | [ [..] -> [ {>s} "@R.number.Pl@" ] || \[ "(" | "[" ] _ [ %, | .#. ] ] ;
+
+! Code for testing en masse with CW English definitions:
+! cat ~/altlab/crk/dicts/Wolvengrey.tsv| gawk -F"\t" 'NR>=2 && $3 ~ /^N/ { eng=$4; gsub("[ ]*\\([^\\)]+\\)","",eng); gsub("[ ]*\\[[^\\]]+\\]","",eng); gsub("\"","",eng); gsub("[ ]*[;]+",";",eng); gsub("[,;] [Ll]iteral[^,;]+","",eng); sub("[; ]+$","",eng); print "Distr+Dim+Px2Sg+ "eng; }' | flookup -q -b -x -i cw-eng-nouns.fsm | less
