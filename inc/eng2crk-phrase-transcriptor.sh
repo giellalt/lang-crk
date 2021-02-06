@@ -42,6 +42,44 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
   enganlfst=ENGANLFST; crkanlfst=CRKANLFST; crkgenfst=CRKGENFST; engnoungenfst=ENGNOUNGENFST;  engverbgenfst=ENGVERBGENFST;
   flookup="/usr/local/bin/flookup"
 
+  # COMPILATION OF REQUISITE FSTs, WITH EXAMPLES
+  #
+  # 1. ENGANLFST - analyzing transcriptor of English (verb/noun) phrases
+  #    https://github.com/giellalt/lang-crk/blob/develop/src/transcriptions/transcriptor-eng-phrase2crk-features.xfscript
+  #
+  # foma -l src/transcriptions/transcriptor-eng-phrase2crk-features.xfscript -e "save stack transcriptor-eng-phrase2crk-features.fomabin" -s
+  # flookup -b -i transcriptor-eng-phrase2crk-features.fomabin 
+  # I want to see you clearly
+  # I want to see you clearly	  see  clearly +V+TA+Int+1Sg+2SgO
+  # 
+  # 2. CRKANLFST - descriptive crk analyzer (wordforms) - see: https://github.com/giellalt/lang-crk
+  # foma -e"load crk-gen-norm-dict.fomabin" -e"invert net" -e"define Morph" -e"load crk-orth.fomabin" -e"invert net" -e"define Orth" -e "regex [ [..] (->) %- ];" -e "invert net" -e "define HyphIns" -e"regex [ Morph .o. Orth .o. HyphIns ];" -e"save stack crk-anl-desc-dict.fomabin" -s
+  # flookup -b crk-anl-desc-dict.fomabin
+  # nikinitawikiskinwahamakosin
+  # nikinitawikiskinwahamakosin	PV/ki+PV/nitawi+kiskinwahamâkosiw+V+AI+Ind+1Sg
+  #
+  # 3. CRKGENFST - normative crk generator (wordforms) - see: https://github.com/giellalt/lang-crk
+  # hfst-invert crk-gen-norm-dict.hfst | hfst-fst2fst -b -F -i - -o crk-gen-norm-dict.fomabin
+  # flookup -b crk-gen-norm-dict.fomabin 
+  # PV/ki+PV/nitawi+kiskinwahamâkosiw+V+AI+Ind+1Sg
+  # PV/ki+PV/nitawi+kiskinwahamâkosiw+V+AI+Ind+1Sg	nikî-nitawi-kiskinwahamâkosin
+  #
+  # 4. ENGNOUNGENFST: generating transcriptor of English noun phrases
+  # foma -l src/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript -e"save stack transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.fomabin" -s
+  # flookup -b -i transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.fomabin
+  # Obv+Dim+Px1Pl+ bear cub
+  # Obv+Dim+Px1Pl+ bear cub	 our little bear cub over there
+  # N.B. Space needed to separate initial tags and English entry phrase
+  # 
+  # 5. ENGVERBGENFST: generating transcriptor of English verb phrases
+  # foma -l src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript -e"save stack transcriptor-cw-eng-verb-entry2inflected-phrase.fomabin" -s
+  # flookup -b -i transcriptor-cw-eng-verb-entry2inflected-phrase.fomabin
+  # Cond+1Sg+2PlO+ s/he works together with s.o.
+  # Cond+1Sg+2PlO+ s/he works together with s.o.	 when I work together with you all
+  # N.B. Space needed to separate initial tags and English entry phrase
+  #
+  # END OF FST DEFINITIONS
+
   # Reading in the crk2eng database (AW: Cree Words)
   while((getline < dict)!=0)
     { 
