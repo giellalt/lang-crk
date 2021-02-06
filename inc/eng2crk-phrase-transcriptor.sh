@@ -40,7 +40,7 @@
 
 gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST=$5 -v ENGVERBGENFST=$6 'BEGIN { FS="\t"; dict=DICT;
   enganlfst=ENGANLFST; crkanlfst=CRKANLFST; crkgenfst=CRKGENFST; engnoungenfst=ENGNOUNGENFST;  engverbgenfst=ENGVERBGENFST;
-  flookup="/usr/local/bin/flookup -b"
+  flookup="/usr/local/bin/flookup"
 
   # Reading in the crk2eng database (AW: Cree Words)
   while((getline < dict)!=0)
@@ -59,10 +59,10 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
   # Input from stdin: English multiword phrase or single Cree word
   phrase=$0;
 
-  # Exctracting English phrase analysis
-  print phrase |& flookup" -i "enganlfst;
-  flookup" -i "enganlfst |& getline engfstanl;
-  close(flookup" -i "enganlfst);
+  # Exctracting English phrase analysis for input
+  print phrase |& flookup" -b -i "enganlfst;
+  flookup" -b -i "enganlfst |& getline engfstanl;
+  close(flookup" -b -i "enganlfst);
   split(engfstanl,f,"\t");
   engphraseanl=f[2];
   match(engphraseanl, "(^[^\\+]+)(\\+.+$)", ff);
@@ -71,10 +71,10 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
   match(engphrasetags,"^\\+([VN])\\+(II|AI|TI|TA)?",fff);
   engwordclass=fff[1] fff[2];
 
-  # Extracting Cree (crk) wordform analysis
-  print phrase |& flookup" "crkanlfst;
-  flookup" "crkanlfst |& getline crkfstanl;
-  close(flookup" "crkanlfst);
+  # Extracting Cree (crk) wordform analysis for input
+  print phrase |& flookup" -b "crkanlfst;
+  flookup" -b "crkanlfst |& getline crkfstanl;
+  close(flookup" -b "crkanlfst);
   split(crkfstanl,f,"\t");
   crkwordanl=f[2];
   match(crkwordanl, "((IC\\+|PV/[^\\+]+\\+|Rdpl[SW]\\+)*)*([^\\+]+)(.+)", ff);
@@ -138,9 +138,9 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
              {
                 fail=0;
                 # Generating standardized form of input Cree word
-                print crkwordanl |& flookup" -x "crkgenfst;
-                flookup" -x "crkgenfst |& getline crkgennorm;
-                close(flookup" -x "crkgenfst);
+                print crkwordanl |& flookup" -b -x "crkgenfst;
+                flookup" -b -x "crkgenfst |& getline crkgennorm;
+                close(flookup" -b -x "crkgenfst);
   
                 # Outputting standardized form of input Cree word
                 print crkgennorm" (<- "phrase")";
@@ -235,9 +235,9 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
                   }
 
                 # Extracting the inflected Cree word form corresponding to the English phrase
-                print crkfstform |& flookup" "crkgenfst;
-                flookup" "crkgenfst |& getline crkgenform;
-                close(flookup" "crkgenfst);
+                print crkfstform |& flookup" -b "crkgenfst;
+                flookup" -b "crkgenfst |& getline crkgenform;
+                close(flookup" -b "crkgenfst);
                 split(crkgenform,gg,"\t");
 
                 # Outputting generatetd Cree wordforms
@@ -287,9 +287,9 @@ function engphraseoutput()
                   gsub("\"","",def2);
                   gsub("[ ]*\\([^\\)]+\\)","",def2); gsub("[ ]*\\[[^\\]]+\\]","",def2); gsub("\"","",def2); gsub("[ ]*[;]+",";",def2); gsub("[,;] [Ll]iteral[^,;]+","",def2);
 
-                  print engphrasegentags " "def2 |& flookup" -i "engnoungenfst;
-                  flookup" -i "engnoungenfst |& getline enggenphrase;
-                  close(flookup" -i "engnoungenfst);
+                  print engphrasegentags " "def2 |& flookup" -b -i "engnoungenfst;
+                  flookup" -b -i "engnoungenfst |& getline enggenphrase;
+                  close(flookup" -b -i "engnoungenfst);
                   split(enggenphrase,gg,"\t");
                   if(gg[2]!="+?")
                      print "     ≈ "gg[2]" ["wc"]";
@@ -303,9 +303,9 @@ function engphraseoutput()
                   gsub("\"","",def2);
                   gsub("[ ]*\\([^\\)]+\\)","",def2); gsub("[ ]*\\[[^\\]]+\\]","",def2); gsub("\"","",def2); gsub("[ ]*[;]+",";",def2); gsub("[,;] [Ll]iteral[^,;]+","",def2);
 
-                  print engphrasegentags " "def2 |& flookup" -i "engverbgenfst;
-                  flookup" -i "engverbgenfst |& getline enggenphrase;
-                  close(flookup" -i "engverbgenfst);
+                  print engphrasegentags " "def2 |& flookup" -b -i "engverbgenfst;
+                  flookup" -b -i "engverbgenfst |& getline enggenphrase;
+                  close(flookup" -b -i "engverbgenfst);
                   split(enggenphrase,gg,"\t");
                   if(gg[2]!="+?")
                      print "     ≈ "gg[2]" ["wc"]";
