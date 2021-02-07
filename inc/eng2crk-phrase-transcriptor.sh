@@ -38,8 +38,10 @@
 # ...
 
 
-gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST=$5 -v ENGVERBGENFST=$6 'BEGIN { FS="\t"; dict=DICT;
+gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST=$5 -v ENGVERBGENFST=$6 -v CORPFREQ=$7 'BEGIN { FS="\t"; dict=DICT;
   enganlfst=ENGANLFST; crkanlfst=CRKANLFST; crkgenfst=CRKGENFST; engnoungenfst=ENGNOUNGENFST;  engverbgenfst=ENGVERBGENFST;
+  corpfreq=CORPFREQ;
+
   flookup="/usr/local/bin/flookup"
 
   # COMPILATION OF REQUISITE FSTs, WITH EXAMPLES
@@ -80,6 +82,18 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
   #
   # END OF FST DEFINITIONS
 
+  # 6. CORPFREQ
+  # DESCRIPTION OF CORPUS ARGUMENT
+  # COL1: Frequency - COL2: token - COL3: lemma - COL4-N: analysis features
+  # TOP 3 TOKENS
+  # head -3 WA_fst_cg.frequency_list.txt
+  # 19055 ,	, CLB
+  #  6658 .	. CLB
+  #  3534 êkwa	êkwa Ipc
+  # Only Columns 1 and 3 are used to create lemma frequencies
+  # cat ~/altlab2/crk/corpora/ahenakew_wolfart.vrt | gawk $0 ~ /^[^<]/ | hfst-optimized-lookup -q ~/giellalt/lang-crk/src/analyser-gt-norm.hfstol | ~/giellalt/lang-crk/tools/shellscripts/fst-vert2horiz-tab.sh| ~/giellalt/lang-crk/tools/shellscripts/fst-horiz-tab2cg-vrt.sh| vislcg3 -g ~/giellalt/lang-crk/src/cg3/disambiguator.cg3| vislcg3 -g ~/giellalt/lang-crk/src/cg3/functions.cg3 | ~/giellalt/lang-crk/tools/shellscripts/cg-vrt2horiz-tab2min-morph.sh | sort | uniq -c | sort -nr > WA_fst_cg.frequency_list.txt
+
+
   # Reading in the crk2eng database (AW: Cree Words)
   while((getline < dict)!=0)
     { 
@@ -89,6 +103,17 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
       crkwordclass=crklexcat
       sub("[-].*$","",crkwordclass);
       crk[crkengdef][crkwordclass][crklexcat]=crkentry;
+    }
+  # Reading in corpus-based lemma frequencies
+  if(corpfreq!="")
+  while((getline < corpfreq)!=0)
+    {
+      if(index($2,"?")==0)
+        { split($2,f," ");
+          split($1,ff," ");;
+          # lemma frequency is the cumulative sum of associated word-form frequencies
+          lemmacorpfreq[f[1]]+=ff[1];
+        }
     }
 }
 
@@ -128,7 +153,7 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
     # Modifying the Cree word features to English phrase features
     match(crkwordtags,"(\\+[12345X]+(Sg|Pl|Sg/Pl)?O?)+",g);
   
-    # The following conversions are only done if the input is a Cree verb with a crk FST analysis
+    # The following conversions only succeed if the input is a Cree verb with a crk FST analysis
     if(g[0]!="")
       { enggenwc="V"; subjobj=g[0]; }
     if(index(crkwordtags,"+Cond")!=0)
@@ -154,7 +179,7 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
     else
       { engphrasegentags="Prs" subjobj "+"; }
   
-    # The following is only done if the input is a Cree noun with a crk FST analysis
+    # The following succeeds only if the input is a Cree noun with a crk FST analysis
     match(crkwordtags,"(\\+Der/Dim)?(\\+Px[1234X]+(Sg|Pl|Sg/Pl))?(\\+(Sg|Pl|Obv|Loc|Distr))",g);
     if(g[0]!="")
       { enggenwc="N"; engphrasegentags=g[4] g[1] g[2] "+"; sub("^\\+","",engphrasegentags); }
@@ -253,9 +278,30 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
             if(m==n && match(wc,"^"engwordclass)!=0)
               {
                 fail=0;
+                lemma=crk[def][wc][lc];
+                definition[lemma]=def;
+                wordclass[lemma, def]=wc;
+                lexicalcat[lemma, def]=lc;
+                if(lemma in lemmacorpfreq)
+                  # Use lemma frequency for ranking, if in corpus
+                  freqentrymatches[lemma]=lemmacorpfreq[lemma];
+                else
+                  # If lemma frequency = 0, use inverse of lemma length for ranking -> ranks shorter over longer lemmas
+                  freqentrymatches[lemma]=1/length(lemma);
+              }
+          }
+     # Presenting lemmas in reverse frequency order
+     PROCINFO["sorted_in"]="@val_num_desc";
+     for(lemma in freqentrymatches)
+              { def=definition[lemma];
+                wc=wordclass[lemma, def];
+                lc=lexicalcat[lemma, def];
+                freq=freqentrymatches[lemma];
+                if(freq<1) freq=0;
                 # Modifying English phrase tags to Cree word feature tags
                 if(match(wc, /^V/)!=0)
-                  crkfstform=pv "" crk[def][wc][lc] "" crkformtags;
+                  crkfstform=pv "" lemma "" crkformtags;
+                  # crkfstform=pv "" crk[def][wc][lc] "" crkformtags;
                 if(match(wc, /^N/)!=0)
                   { crkformtags2=crkformtags;
                     # sub("(N\\+[AI]\\+(D\\+)?(Der/Dim\\+)?)+","N+",crkformtags);
@@ -269,7 +315,7 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
                       sub("\\+N","+N+I+D",crkformtags2);
                     if(index(crkformtags2,"+Dim")!=0)
                       crkformtags2=gensub("(\\+N.+)(\\+Dim)","\\1+Der/Dim\\1","g",crkformtags2);
-                    crkfstform=crk[def][wc][lc] "" crkformtags2;
+                    crkfstform=lemma "" crkformtags2;
                   }
 
                 # Extracting the inflected Cree word form corresponding to the English phrase
@@ -278,8 +324,8 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
                 close(flookup" -b "crkgenfst);
                 split(crkgenform,gg,"\t");
 
-                # Outputting generatetd Cree wordforms
-                print gg[2]" <-- "crkfstform" ["lc"]" ;
+                # Outputting generated Cree wordforms
+                print gg[2]" <-- "crkfstform" ["lc"] (n="freq*1")";
   
                 # Organizing the English phrase features for English phrase generation
                 engphrasegentags=engphrasetags;
@@ -306,7 +352,7 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
 
                 # Outputting inflected English phrase
                 engphraseoutput();
-          }
+          # }
           # End of output for dictionary matches
       }
        if(fail)
