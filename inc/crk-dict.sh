@@ -120,4 +120,4 @@ hfst-fst2fst -b -F -i crk-orth.hfst -o crk-orth.fomabin
 
 # Doing this from components is needed because hfst-fst2fst -F (conversion to FOMA) results in an error
 
-foma -e"load crk-gen-norm-dict.fomabin" -e"invert net" -e"define Morph" -e"load crk-orth.fomabin" -e"invert net" -e"define Orth" -e"regex [ Morph .o. Orth ];" -e"save stack crk-anl-desc-dict.fomabin" -s
+foma -e"load crk-gen-norm-dict.fomabin" -e"invert net" -e"define Morph" -e"load crk-orth.fomabin" -e"invert net" -e"define Orth" -e"regex [ [..] (->) %- ];" -e"invert net" -e"define HyphIns" -e"regex [ Morph .o. Orth .o. HyphIns ];" -e"save stack crk-anl-desc-dict.fomabin" -s
