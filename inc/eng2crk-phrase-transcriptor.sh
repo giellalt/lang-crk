@@ -265,7 +265,7 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
     print "-----";
 
     # Split lexical elements of input English phrase into multiple words
-    n=split(engphraselex, w, "[ ,:;]+");
+    nkeys=split(engphraselex, w, "[ ,:;]+");
 
     # Look up individual English lexical keywords from crk-to-eng bilingual database (CW) 
     fail=1;
@@ -273,19 +273,20 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
       for(wc in crk[def])
          for(lc in crk[def][wc])
           { m=0; # Number of matches of English lexical keywords in English definition
-            for(i=1; i<=n; i++)
+            for(i=1; i<=nkeys; i++)
                 if(match(def,"\\<"w[i])!=0) # Prefix match
                   m++;
 
             # English definitions are only output when 1) the definition matches all lexical keywords in input
             # and 2) the English and Cree word classes (including argument structure for verbs) match
-            if(m==n && match(wc,"^"engwordclass)!=0)
+            if(m>=1 && match(wc,"^"engwordclass)!=0)
               {
                 fail=0;
                 lemma=crk[def][wc][lc];
                 definition[lemma]=def;
                 wordclass[lemma, def]=wc;
                 lexicalcat[lemma, def]=lc;
+                nmatches[lemma]=m;
                 if(lemma in lemmacorpfreq)
                   # Use lemma frequency for ranking, if in corpus
                   freqentrymatches[lemma]=lemmacorpfreq[lemma];
@@ -296,7 +297,9 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
           }
      # Presenting lemmas in reverse frequency order
      PROCINFO["sorted_in"]="@val_num_desc";
-     for(lemma in freqentrymatches)
+     for(m=nkeys; m>=1; m--)
+        for(lemma in freqentrymatches)
+           if(nmatches[lemma]==m)
               { def=definition[lemma];
                 wc=wordclass[lemma, def];
                 lc=lexicalcat[lemma, def];
@@ -329,7 +332,7 @@ gawk -v DICT=$1 -v ENGANLFST=$2 -v CRKANLFST=$3 -v CRKGENFST=$4 -v ENGNOUNGENFST
                 split(crkgenform,gg,"\t");
 
                 # Outputting generated Cree wordforms
-                print gg[2]" <-- "crkfstform" ["lc"] (n="freq*1")";
+                print gg[2]" <-- "crkfstform" ["lc"] (n="freq*1", keys="m")";
   
                 # Organizing the English phrase features for English phrase generation
                 engphrasegentags=engphrasetags;
