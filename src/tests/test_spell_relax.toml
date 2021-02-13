@@ -12,3 +12,7 @@ expect = "tânisi+Ipc"
 [[tests]]
 lower = "tân’si"
 expect = "tânisi+Ipc"
+
+[[tests]]
+lower = "kiskinohamâkosiwin"
+expect = "kiskinwahamâkosiwin+N+I+Sg"
