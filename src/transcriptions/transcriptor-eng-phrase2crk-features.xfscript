@@ -165,7 +165,8 @@ regex [ {now} (->) "@R.tense.Imp@" "@P.tense.Imm@" || Bx _ Bx ,,
 ] ;
 define Imperative
 
-define SingleSpacing [ [ " " ]+ -> [ " " ] || \Bx _ \Bx ] ;
+define SingleSpacing [ [ " " ]+ -> [ " " ] || \Bx _ \Bx ]
+.o. [ " " -> 0 || _ Flags+ " " ] ;
 
 regex [ [..] -> "@R.tense.Fut@" "+Fut" || _ .#. ,,
 [..] -> "@R.tense.Int@" "+Int" || _ .#. ,,
