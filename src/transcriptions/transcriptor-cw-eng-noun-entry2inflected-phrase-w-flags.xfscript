@@ -14,6 +14,7 @@
 ! Obv+Px1Sg+ a boat, a ship --> my boat over there, my ship over there
 ! Sg+Dim+Px1Sg+ a boat, a ship --> my little boat, my little ship
 ! N.B. Inflected phrase is preceded by a single space
+! N.B. Parenthetical expressions, in parentheses/brackets should be removed before phrase inflection
 
 ! Character/tag class definitions
 
@@ -29,7 +30,7 @@ define Capital [ A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P |
 
 define Alphabet [ Vowel | Consonant | "y" | Capital ] ;
 
-define Punctuation [ "." | "," | ":" | ";" | "!" | "?" | "-" ] ;
+define Punctuation [ "." | "," | ":" | ";" | "!" | "?" | "-" | "(" | ")" | "[" | "]" ] ;
 
 define Number [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] ;
 
@@ -59,13 +60,16 @@ define EngNounMorphophonology [ [ [ y ">" s ] -> {ies} || \Vowel _ ] ,, [ [..] -
 
 regex [ Tags ("Dim+") (Possession) Letters+ ]
 
+! Removal of parenthetical expressions
+! .o. [ " "+ [ "[" \"]"+ "]" | "(" \")"+ ")" ] ] -> 0 ! Excluded as expands the FST almost ten-fold
+
 ! Conversion of tags to flag-diacritics
 .o. [ "Sg+" -> "@P.number.Sg@" ,  "Pl+" -> "@P.number.Pl@" , "Obv+" -> "@P.number.Obv@" , "Loc+" -> "@P.number.Loc@" , "Distr+" -> "@P.number.Distr@" ]
 .o. [ "Dim+" -> "@P.dim.Dim@" ]
 .o. [ "Px1Sg+" -> "@P.poss.1Sg@" , "Px2Sg+" -> "@P.poss.2Sg@" , "Px3Sg+" -> "@P.poss.3Sg@" , "Px1Pl+" -> "@P.poss.1Pl@" , "Px12Pl+" -> "@P.poss.12Pl@" , "Px2Pl+" -> "@P.poss.2Pl@" , "Px3Pl+" -> "@P.poss.3Pl@" , "Px4Sg/Pl+" -> "@P.poss.4Sg/Pl@" ,, "PxX+" -> "@P.poss.X@" ]
 
 ! Removal of articles/possessors
-.o. [ [ {a } | {an } | {the } | {my } ] -> 0 || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
+.o. [ [ {A } | {a } | {An } | {an } | {The } | {the } | {My } | {my } ] -> 0 || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
 
 ! Diminutive: insertion of 'little'
 .o. [ [..] -> [ {little } "@R.dim.Dim@" ] | "@D.dim.Dim@" || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
@@ -86,8 +90,8 @@ regex [ Tags ("Dim+") (Possession) Letters+ ]
 ! "Number", including obviation, locatives and distributives
 .o. [ [..] -> [ {a> } "@R.number.Sg@" "@D.poss@" ] || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
 |    [ [..] -> [ "@R.number.Sg@" RPossFlags ] || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
-|   [ [..] -> [ {>s} "@R.number.Pl@" ] ||  _ [ .#. | Punctuation ] | [ { of } | { for } | { with } | { among } | { who } ] .o. {>s} -> 0 || {>s} \[ Punctuation | .#. ]+  _ ]
-|   [ [..] -> [ { over there} "@R.number.Obv@" ] || _ [ .#. | Punctuation ] ]
+|   [ [..] -> [ {>s} "@R.number.Pl@" ] || \Punctuation _ [ .#. | Punctuation ] | [ { of } | { for } | { with } | { among } | { about } | { who } ] .o. {>s} -> 0 || {>s} \[ Punctuation | .#. ]+  _ ]
+|   [ [..] -> [ { over there} "@R.number.Obv@" ] || \Punctuation _ [ .#. | Punctuation ] ]
 ! Locative forms are singular by default, and with an indefinite article unless possessed
 |   [ [..] -> [ {in a> } "@R.number.Loc@" "@D.poss@" ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 |   [ [..] -> [ {in } "@R.number.Loc@" RPossFlags ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ]
