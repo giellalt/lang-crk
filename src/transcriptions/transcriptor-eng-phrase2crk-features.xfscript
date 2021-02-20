@@ -20,11 +20,11 @@ define Number [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] ;
 
 define Letters [ Alphabet | Punctuation | Number | " " ] ;
 
-define PFlags [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" |  "@P.object.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.tense.Prt@" | "@P.tense.Fut@" | "@P.tense.Int@" | "@P.tense.Cond@" | "@P.tense.Imp@" | "@P.tense.Imm@" | "@P.tense.Del@" | "@P.tense.Inf@" | "@P.prog.Prog@" ] ;
+define PFlags [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" |  "@P.object.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.tense.Prt@" | "@P.tense.Fut@" | "@P.tense.Int@" | "@P.tense.Cond@" | "@P.tense.Imp@" | "@P.tense.Imm@" | "@P.tense.Del@" | "@P.tense.Inf@" | "@P.prog.Prog@" | "@P.prog.Cop@" | "@P.rept.Rept@" | "@P.exist.Exist@" ] ;
 
-define RFlags [ "@R.subject.1Sg@" | "@R.subject.2Sg@" | "@R.subject.3Sg@" |  "@R.object.1Sg@" | "@R.subject.2Sg@" | "@R.subject.3Sg@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" | "@R.tense.Prt@" | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Cond@" | "@R.tense.Imp@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" | "@R.prog.Prog@" ] ;
+define RFlags [ "@R.subject.1Sg@" | "@R.subject.2Sg@" | "@R.subject.3Sg@" |  "@R.object.1Sg@" | "@R.subject.2Sg@" | "@R.subject.3Sg@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" | "@R.tense.Prt@" | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Cond@" | "@R.tense.Imp@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" | "@R.prog.Prog@" | "@R.prog.Cop@" | "@R.rept.Rept@" ];
 
-define DFlags [ "@D.object@" | "@D.number@" | "@D.number.Sg@" | "@D.poss@" | "@D.dim@" | "@D.dim.Dim@" ] ;
+define DFlags [ "@D.object@" | "@D.number@" | "@D.number.Sg@" | "@D.number.Pl@" | "@D.poss@" | "@D.dim@" | "@D.dim.Dim@" | "@D.prog@" | "@D.exist.Exist@" ] ;
 
 define Flags [ PFlags | RFlags | DFlags ] ;
 
@@ -37,6 +37,7 @@ define Tags [ SubjectTags | ObjectTags | TenseTags ] ;
 
 regex [ {he/she/they over there} | {he or she or they over there} | {she or he or they over there} | {he, she, or they over there} | {she, he, or they over there} -> "@P.subject.5Sg/Pl@" || Bx _ Bx ]
 .o. [ {he over there} | {she over there} | {they over there} | {he/she/they} | {he or she or they} | {she or he or they} | {he, she, or they} -> "@P.subject.4Sg/Pl@" || Bx _ Bx ]
+.o. [ {it} -> "@P.object.0Sg@" || Bx _ " " .#. ]
 .o. [ [ {we and you} | {you and we} | {you and I} ] -> "@P.subject.21Pl@" || Bx _ Bx ,,
 {you all} -> "@P.subject.2Pl@" || Bx _ Bx ,,
 [ {you and us} | {us and you} | {you and me} | {me and you} ] -> "@P.object.21Pl@" || Bx _ Bx
@@ -45,7 +46,7 @@ regex [ {he/she/they over there} | {he or she or they over there} | {she or he o
 {thou} -> "@P.subject.2Sg@" || Bx _ Bx ,,
 {he} | {she} -> "@P.subject.3Sg@" || Bx _ Bx ,,
 {it} -> "@P.subject.0Sg@" || Bx _ Bx ,,
-{there} -> "@P.subject.0Sg@" || .#. _ Bx ,,
+{there} -> "@P.subject.0Sg@" "@P.exist.Exist@" || .#. _ Bx ,,
 {we} -> "@P.subject.1Pl@" || Bx _ Bx ,,
 {they} -> "@P.subject.3Pl@" || Bx _ Bx ,,
 {someone} -> "@P.subject.X@" || Bx _ Bx
@@ -146,9 +147,9 @@ regex [ [ {am} | {are} ] -> {is} ,
 ] ;
 define Past
 
-regex  [ [ [ b | g | l | m | n | p | r | s | t | v ] i n g ] -> "@R.prog.Prog@" || Bx [ {be} | {is} ] [ " " | Flags ]+ [ \" " ]+ [ b | g | l | m | n | p | r | s | t | v ] _ Bx ]
-.o. [ {ing} -> "@R.prog.Prog@" || Bx [ {be} | {is} | {was} ] [ " " | Flags ]+ [ \" " ]+ _ Bx ]
-.o. [ [ {be} | {is} ] (->) "@P.prog.Prog@" || Bx Flags* _ Flags* Bx ]
+regex  [ [ [ b | g | l | m | n | p | r | s | t | v ] i n g ] -> "@R.prog.Cop@" "@P.prog.Prog@" || Bx [ {be} | {is} ] [ " " | Flags ]+ [ \" " ]+ [ b | g | l | m | n | p | r | s | t | v ] _ Bx ]
+.o. [ {ing} -> "@R.prog.Cop@" "@P.prog.Prog@" || Bx [ {be} | {is} | {was} ] [ " " | Flags ]+ [ \" " ]+ _ Bx ]
+.o. [ [ {be} | {is} ] (->) "@D.exist.Exist@" "@P.prog.Cop@" || Bx Flags* _ Flags* Bx ]
 ;
 define Progressive
 
@@ -165,8 +166,7 @@ regex [ {now} (->) "@R.tense.Imp@" "@P.tense.Imm@" || Bx _ Bx ,,
 ] ;
 define Imperative
 
-define SingleSpacing [ [ " " ]+ -> [ " " ] || \Bx _ \Bx ]
-.o. [ " " -> 0 || _ Flags+ " " ] ;
+define SingleSpacing [ [ " " ]+ -> [ " " ] || \Bx _ \Bx ] ;
 
 regex [ [..] -> "@R.tense.Fut@" "+Fut" || _ .#. ,,
 [..] -> "@R.tense.Int@" "+Int" || _ .#. ,,
@@ -296,7 +296,7 @@ regex [ [..] -> "+V" "+TA" "@R.subject@" "@R.object@" "@D.object.0Sg@" || _ .#. 
 [..] -> "+V" "+AI" "@R.subject@" "@D.subject.0Sg@" "@D.object@" || _ .#. ,,
 [..] -> "+V" "+II" "@R.subject@" "@R.subject.0Sg@" "@D.object@" || _ .#. ,,
 [..] -> "+V" "+TI" "@D.subject@" "@R.object.0Sg@" || _ .#. ,,
-[..] -> "+V" "+TA" "@D.subject@" "@R.object@" || _ .#.
+[..] -> "+V" "+TA" "@D.subject@" "@R.object@" "@D.object.0Sg@" || _ .#.
 ] ;
 define VerbClass
 
