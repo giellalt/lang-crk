@@ -13,15 +13,16 @@ define Bx [ .#. | " " | "." | "," | ":" | ";" | "!" | "?" ] ;
 
 define TenseAspect [
     [ [..] -> {is going to } || .#. "Fut+" ?* Bx [ {s/he} | {he} | {she} | {it} ] " " _ ]
+.o. [ [..] -> {are going to } || .#. "Fut+" ?* Bx {they} " " _ ] 
 .o. [ [..] -> {is going to } || .#. "Fut+" ?* Bx {there} " " _ {be} ] 
 .o. [ [..] -> {wants to } || .#. "Int+" "3Sg+" ?* Bx [ {s/he} | {he} | {she} ] " " _ ]
-.o. [ [..] -> {want to } || .#. "Int+" \[ "3Sg+" ] ?* Bx [ {s/he} | {he} | {she} ] " " _ ]
+.o. [ [..] -> {want to } || .#. "Int+" \[ "3Sg+" ] ?* Bx [ {s/he} | {he} | {she} | {they} ] " " _ ]
 .o. [ [..] -> {someone wants } || .#. "Int+" ?* Bx _ [ {it} | {there} ] " " ,, [..] -> { to} || .#. "Int+" ?* Bx [ {it} | {there} ] _ \[ Bx - " " ] ]
-.o. [ [..] -> {when } || .#. "Cond+" ?* Bx _ [ {s/he} | {he} | {she} | {it} | {there} ] " " ]
-.o. [ [..] -> {for } || .#. "Inf+" ?* Bx _ [ {s/he} | {he} | {she} | {it} | {there be} ] " " ,, [..] -> {to } || .#. "Inf+" ?* Bx [ {s/he} | {he} | {she} | {it} | {there} ] " " _ {be} ]
-.o. [ [..] -> {let } || .#. [ "Imm+" | "Del+" ] \[ "2Sg+" | "2Pl+" ] ?* Bx _ [ {s/he} | {he} | {she} ] " " , .#. [ "Imm+" | "Del+" ] ?* Bx _ [ {it} | {there be} ] ]
-.o. [ [..] -> { now} || .#. "Imm+" \[ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] , .#. "Imm+" [ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] ]
-.o. [ [..] -> { later} || .#. "Del+" \[ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] , .#. "Del+" [ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] ]
+.o. [ [..] -> {when } || .#. "Cond+" ?* Bx _ [ {s/he} | {he} | {she} | {it} | {they} | {there} ] " " ]
+.o. [ [..] -> {for } || .#. "Inf+" ?* Bx _ [ {s/he} | {he} | {she} | {it} | {they} | {there be} ] " " ,, [..] -> {to } || .#. "Inf+" ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there} ] " " _ ]
+.o. [ [..] -> {let } || .#. [ "Imm+" | "Del+" ] \[ "2Sg+" | "2Pl+" ] ?* Bx _ [ {s/he} | {he} | {she} | {they} ] " " , .#. [ "Imm+" | "Del+" ] ?* Bx _ [ {it} | {they} | {there be} ] ]
+.o. [ [..] -> { now} || .#. "Imm+" \[ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] , .#. "Imm+" [ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] ]
+.o. [ [..] -> { later} || .#. "Del+" \[ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] , .#. "Del+" [ "2Sg+" | "2Pl+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there be} ] \[ Bx - [ " " | "." ] ]+ _ [ Bx - [ " " | "." ] ] ]
 ] ;
 
 ! Morphophonology
@@ -54,18 +55,25 @@ define EngPrt
 read lexc src/transcriptions/cw-eng-verbs-inf.lexc
 define EngInf
 
-define VInflection [ [ {is} | {are} ] -> {be} || .#. [ "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {there} ] " " _ Bx ] .o.
+define VInflection [ [ {is} | {are} ] -> {be} || .#. [ "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* Bx [ {s/he} | {he} | {she} | {it} | {they} | {there} ] " " _ Bx ] .o.
 [ {has} -> {have} || .#. [ "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* Bx [ {s/he} | {he} | {she} | {it} ] " " _ Bx ] .o.
-[ {has} -> {had} || .#. "Prt+" ?* Bx [ {s/he} | {he} | {she} | {it} ] " " _ Bx ] .o.
-[
-   EngInf -> || .#. [ [ [ "Prs+" | "Cond+" ] [ "1Sg+" | "2Sg+" | "1Pl+" | "12Pl+" | "2Pl+" | "3Pl+" ] ] | "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* [ {s/he} | {he} | {she} | {it} ] " " _ [ Bx - "." ]
-,, EngPrt -> || .#. "Prt+" ?* [ {s/he} | {he} | {she} | {it} ] " " _ [ Bx - "." ]
-!    s -> 0 || .#. [ [ [ "Prs+" | "Cond+" ] [ "1Sg+" | "2Sg+" | "1Pl+" | "12Pl+" | "2Pl+" | "3Pl+" ] ] | "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
-! ,, s -> {>ed} || .#. "Prt+" ?* [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ] _ [ Bx - "." ]
-] ;
-! .o. [ { ha } -> { have } ,, { ha>ed } -> { had } ] ;
+[ {has} -> {had} || .#. "Prt+" ?* Bx [ {s/he} | {he} | {she} | {it} ] " " _ Bx ]
+! ;
+
+!! Word-specific explicit solution for verb morphology
+! .o. [
+!    EngInf -> || .#. [ [ [ "Prs+" | "Cond+" ] [ "1Sg+" | "2Sg+" | "1Pl+" | "12Pl+" | "2Pl+" | "3Pl+" ] ] | "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* [ {s/he} | {he} | {she} | {it} ] " " _ [ Bx - "." ]
+! ,, EngPrt -> || .#. "Prt+" ?* [ {s/he} | {he} | {she} | {it} ] " " _ [ Bx - "." ]
+! ] ;
+
+!! Rule-based morphological solution
+.o. [
+s -> 0 || .#. [ [ [ "Prs+" | "Cond+" ] [ "1Sg+" | "2Sg+" | "1Pl+" | "12Pl+" | "2Pl+" | "3Pl+" ] ] | "Fut+" | "Int+" | "Inf+" | "Imm+" | "Del+" ] ?* [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
+,, s -> {>ed} || .#. "Prt+" ?* [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ] _ [ Bx - "." ] ]
+.o. [ { ha } -> { have } ,, { ha>ed } -> { had } ]
+;
 ! Morphophonological changes, if using rule-based morphological solution
-! .o. ConsonantDoubling .o. EDeletion .o. EInsertion .o. YReplacement .o. KInsertion .o. rmBoundary  ;
+! .o. ConsonantDoubling .o. EDeletion .o. EInsertion .o. YReplacement .o. KInsertion .o. rmBoundary ;
 
 define beInflection [ {is} -> {be} || .#. [ "Inf+" | [ "Imm+" | "Del+" ] ] ?* {for s/he to } _ Bx
 ,, {is} -> {am} || .#. [ "Prs+" | "Fut+" | "Cond+" ] "1Sg+" ?* [ {s/he} | {he} | {she} ] " " _ Bx
@@ -79,26 +87,26 @@ define SubjectInfConv [
 ,, {s/he } -> 0 || .#. [ "Imm+" | "Del+" ] "2Sg+" ?* Bx _
 ,, [ {s/he} | {he} | {she} ] -> {you} || .#. "Inf+" "2Sg+" ?* Bx _ " "
 ,, {s/he} -> {him/her} || .#. [ "Inf+" | "Imm+" | "Del+" ] "3Sg+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {us} || .#. [ "Inf+" | "Imm+" | "Del+" ] "1Pl+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {you and us} || .#. [ "Inf+" | "Imm+" | "Del+" ] "12Pl+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {(you all)} || .#. [ "Imm+" | "Del+" ] "2Pl+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {you all} || .#. "Inf+" "2Pl+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {them} || .#. [ "Inf+" | "Imm+" | "Del+" ] "3Pl+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {him/her/them} || .#. [ "Inf+" | "Imm+" | "Del+" ] "4Sg/Pl+" ?* Bx _ " "
-,, {it} -> {them} || .#. [ "Inf+" | "Imm+" | "Del+" ] "3Pl+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {someone} || .#. [ "Inf+" | "Imm+" | "Del+" ] "X+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {us} || .#. [ "Inf+" | "Imm+" | "Del+" ] "1Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {you and us} || .#. [ "Inf+" | "Imm+" | "Del+" ] "12Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {(you all)} || .#. [ "Imm+" | "Del+" ] "2Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {you all} || .#. "Inf+" "2Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {them} || .#. [ "Inf+" | "Imm+" | "Del+" ] "3Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {him/her/them} || .#. [ "Inf+" | "Imm+" | "Del+" ] "4Sg/Pl+" ?* Bx _ " "
+,, [ {it} | {they} ] -> {them} || .#. [ "Inf+" | "Imm+" | "Del+" ] "3Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {someone} || .#. [ "Inf+" | "Imm+" | "Del+" ] "X+" ?* Bx _ " "
 ] ;
 
 define SubjectConv [
    [ {s/he} | {he} | {she} ] -> I || .#. ? "1Sg+" ?* Bx _ " "
 ,, [ {s/he} | {he} | {she} ] -> {you} || .#. ? "2Sg+" ?* Bx _ " "
 ,, {s/he} -> {he/she} || .#. ? "3Sg+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {we} || .#. ? "1Pl+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {you and we} || .#. ? "12Pl+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {you all} || .#. ? "2Pl+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {they} || .#. ? "3Pl+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {he/she/they} || .#. ? "4Sg/Pl+" ?* Bx _ " "
-,, [ {s/he} | {he} | {she} ] -> {he/she/they over there} || .#. ? "5Sg/Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {we} || .#. ? "1Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {you and we} || .#. ? "12Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {you all} || .#. ? "2Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {they} || .#. ? "3Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {he/she/they} || .#. ? "4Sg/Pl+" ?* Bx _ " "
+,, [ {s/he} | {he} | {she} | {they} ] -> {he/she/they over there} || .#. ? "5Sg/Pl+" ?* Bx _ " "
 ,, {it} -> {they} || .#. ? "3Pl+" ?* Bx _ " "
 ,, {it} -> {it over there} || .#. ? "4Sg+" ?* Bx _ " "
 ,, {it} -> {they over there} || .#. ? "4Pl+" ?* Bx _ " "

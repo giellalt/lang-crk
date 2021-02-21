@@ -104,7 +104,13 @@ echo 'Test: crk-gen-norm-dict.hfst' ;
 echo 'nipâw+V+AI+Ind+1Sg -> ninipân' ;
 echo 'nipâw+V+AI+Ind+1Sg' | hfst-lookup -q crk-gen-norm-dict.hfst
 
-##### END HFST compililations #####
+# Creating HFSTOL versions of selected FSTs
+
+hfst-fst2fst -O -i crk-anl-desc-dict.hfst -o crk-anl-desc-dict.hfstol
+
+##### END HFST compilations #####
+
+##### Begin FOMA compilations #####
 
 echo 'Creating FOMA versions of selected transducers.' ;
 
@@ -112,4 +118,6 @@ hfst-invert crk-gen-norm-dict.hfst | hfst-fst2fst -b -F -i - -o crk-gen-norm-dic
 
 hfst-fst2fst -b -F -i crk-orth.hfst -o crk-orth.fomabin
 
-foma -e"load crk-gen-norm-dict.fomabin" -e"invert net" -e"define Morph" -e"load crk-orth.fomabin" -e"invert net" -e"define Orth" -e"regex [ Morph .o. Orth ];" -e"save stack crk-anl-desc-dict.fomabin" -s
+# Doing this from components is needed because hfst-fst2fst -F (conversion to FOMA) results in an error
+
+foma -e"load crk-gen-norm-dict.fomabin" -e"invert net" -e"define Morph" -e"load crk-orth.fomabin" -e"invert net" -e"define Orth" -e"regex [ [..] (->) %- ];" -e"invert net" -e"define HyphIns" -e"regex [ Morph .o. Orth .o. HyphIns ];" -e"save stack crk-anl-desc-dict.fomabin" -s
