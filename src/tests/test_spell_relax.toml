@@ -1,5 +1,5 @@
 [fst]
-fomabin = "crk-descriptive-analyzer.fomabin"
+fomabin = "crk-relaxed-analyzer.fomabin"
 
 [[tests]]
 lower = "tansi"
@@ -12,3 +12,7 @@ expect = "tânisi+Ipc"
 [[tests]]
 lower = "tân’si"
 expect = "tânisi+Ipc"
+
+[[tests]]
+lower = "kiskinohamâkosiwin"
+expect = "kiskinwahamâkosiwin+N+I+Sg"
