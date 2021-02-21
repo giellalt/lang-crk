@@ -219,6 +219,7 @@ LIST @Neg-V> = @Neg-V> ;
 LIST @Neg-Ipc> = @Neg-Ipc> ;
 LIST @Quot-AI = @Quot-AI ;
 LIST @Quot-TA = @Quot-TA ;
+LIST @Quot-TI = @Quot-TI ;
  
 LIST @N> = @N> ;
 LIST @<N = @<N ;
@@ -367,6 +368,7 @@ MAP:NegIpc @Neg-Ipc> TARGET Neg IF (1 Ipc) ;
 
 ADD:QUOTAI @Quot-AI TARGET AI + Quot ;
 ADD:QUOTAI @Quot-TA TARGET TA + Quot ;
+ADD:QUOTAI @Quot-TI TARGET TI + Quot ;
 
 ADD:PREDII @PRED-II TARGET V + II ;
 ADD:PREDAI @PRED-AI TARGET V + AI ;
