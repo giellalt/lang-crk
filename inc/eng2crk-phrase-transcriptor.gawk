@@ -2,7 +2,7 @@ BEGIN { FS="\t"; dict=DICT;
   enganlfst=ENGANLFST; crkanlfst=CRKANLFST; crkgenfst=CRKGENFST; engnoungenfst=ENGNOUNGENFST;  engverbgenfst=ENGVERBGENFST;
   corpfreq=CORPFREQ;
 
-  flookup="/usr/local/bin/flookup"
+  flookup="flookup"
 
   # COMPILATION OF REQUISITE FSTs, WITH EXAMPLES
   #
