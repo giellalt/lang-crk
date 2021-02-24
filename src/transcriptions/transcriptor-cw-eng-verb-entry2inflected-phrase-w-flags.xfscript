@@ -33,7 +33,36 @@ define Standardization
 ! | [ [..] -> [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] ;
 ! define VerbInflection
 
-regex [ s -> s [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
+! read lexc src/transcriptions/cw-eng-verbs-prt-flags.lexc
+! define EngPrt
+
+! read lexc src/transcriptions/cw-eng-verbs-inf-flags.lexc
+! define EngInf
+
+!! Word-specific explicit solution for verb morphology - Option 1
+! regex [
+! [..] -> "@R.tense.Prs@" "@R.subject.3Sg@" || [ {s/he} | {he} | {she} | {it} ] { } _ [ Bx - "." ]
+! ,, EngInf -> || [ {s/he} | {he} | {she} | {it} ] " " _ [ Bx - "." ]
+! ,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} ] " " _ [ Bx - "." ]
+! ] ;
+! define VerbInflection
+
+!! Word-specific explicit solution for verb morphology - Option 2 (works)
+! regex [
+! {sees} -> {sees}
+!    [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" || [ {s/he} | {he} | {she} | {it} ] { } _ ! [ Bx - "." ]
+! ,, {sees} -> {see}
+!    [ [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ] || [ {s/he} | {he} | {she} | {it} ] { } _ [ Bx - "." ]
+! ,, {sees} -> {saw}
+!    "@R.tense.Prt@" || [ {s/he} | {he} | {she} | {it} ] { } _ [ Bx - "." ]
+! ] ;
+! define VerbInflection
+
+!! Rule-based solution for verb morphology
+regex [ {es} -> {es} [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
+,, {es} -> 0 [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
+,, {es} -> {>ed} "@R.tense.Prt@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ] _ [ Bx - "." ] ]
+.o. [ s -> s [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
 ,, s -> 0 [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
 ,, s -> {>ed} "@R.tense.Prt@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ] _ [ Bx - "." ] ]
 .o. [ { ha } -> { have } ,, { ha>ed } -> { had } ] ;
