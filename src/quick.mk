@@ -23,13 +23,21 @@
 FSTs = crk-strict-analyzer.hfstol \
        crk-relaxed-analyzer.hfstol \
        crk-strict-generator.hfstol \
-       crk-strict-generator-with-morpheme-boundaries.hfstol
+       crk-strict-generator-with-morpheme-boundaries.hfstol \
+
 
 DICTFSTs = $(FSTs) \
            crk-strict-analyzer-for-dictionary.hfstol \
            crk-relaxed-analyzer-for-dictionary.hfstol
 
-FOMAFSTs = $(FSTs:.hfstol=.fomabin)
+
+FOMA_ONLY_FSTs: \
+       transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.fomabin \
+       transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.fomabin \
+       transcriptor-eng-phrase2crk-features.fomabin \
+
+
+FOMAFSTs = $(FSTs:.hfstol=.fomabin) $(FOMA_ONLY_FSTs)
 # fsttest REQUIRES fomabins. Place any FSTs that you want to test here with
 # the .fomabin extension:
 FSTS_UNDER_TEST = $(FOMAFSTs) crk-lexc-dict.fomabin crk-strict-generator-with-morpheme-boundaries.fomabin
@@ -48,6 +56,11 @@ test: $(FSTS_UNDER_TEST)
 	fsttest
 
 .PHONY: all clean test
+
+
+transcriptor%.fomabin: transcriptions/transcriptor%.xfscript
+	foma -l $< -e 'save stack $@' -s
+
 
 
 ############################## Specific targets ##############################
