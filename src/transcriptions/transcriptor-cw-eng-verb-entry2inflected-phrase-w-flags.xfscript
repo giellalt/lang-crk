@@ -33,19 +33,19 @@ define Standardization
 ! | [ [..] -> [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] ;
 ! define VerbInflection
 
-! read lexc src/transcriptions/cw-eng-verbs-prt-flags.lexc
-! define EngPrt
+read lexc src/transcriptions/cw-eng-verbs-prt-flags.lexc
+define EngPrt
 
-! read lexc src/transcriptions/cw-eng-verbs-inf-flags.lexc
-! define EngInf
+read lexc src/transcriptions/cw-eng-verbs-inf-flags.lexc
+define EngInf
 
-!! Word-specific explicit solution for verb morphology - Option 1
-! regex [
-! [..] -> "@R.tense.Prs@" "@R.subject.3Sg@" || [ {s/he} | {he} | {she} | {it} ] { } _ [ Bx - "." ]
-! ,, EngInf -> || [ {s/he} | {he} | {she} | {it} ] " " _ [ Bx - "." ]
-! ,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} ] " " _ [ Bx - "." ]
-! ] ;
-! define VerbInflection
+!! Word-specific explicit solution for verb morphology - Option 1 (works only in FOMA)
+regex [
+{s} -> {s} [ "@R.tense.Prs@" | "@R.tense.Cond@" ]  "@R.subject.3Sg@" || [ {s/he} | {he} | {she} | {it} ] { } Alphabet+ \i _ [ Bx - "." ]
+,, EngInf -> || [ {s/he} | {he} | {she} | {it} ] { } _ [ Bx - "." ]
+,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} ] { } _ [ Bx - "." ]
+] ;
+define VerbInflection
 
 !! Word-specific explicit solution for verb morphology - Option 2 (works)
 ! regex [
@@ -59,14 +59,28 @@ define Standardization
 ! define VerbInflection
 
 !! Rule-based solution for verb morphology
-regex [ {es} -> {es} [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
-,, {es} -> 0 [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
-,, {es} -> {>ed} "@R.tense.Prt@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ] _ [ Bx - "." ] ]
+regex [ {es} -> {es} [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* Consonant  _ [ Bx - "." ]
+,, {es} -> 0 [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] || [ {s/he} | {he} | {she} | {it} ] " " \{ }* Consonant  _ [ Bx - "." ]
+,, {es} -> {>ed} "@R.tense.Prt@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* Consonant _ [ Bx - "." ] ]
 .o. [ s -> s [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
 ,, s -> 0 [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
-,, s -> {>ed} "@R.tense.Prt@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ] _ [ Bx - "." ] ]
-.o. [ { ha } -> { have } ,, { ha>ed } -> { had } ] ;
-define VerbInflection
+,, s -> {>ed} "@R.tense.Prt@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ] _ [ Bx - "." ] ] ;
+! define VerbInflection
+
+! Irregular verb forms
+regex [ {com>ed} -> {came}
+,, {doe>ed} -> {did}
+,, {goe>ed} -> {went}
+,, {ha>ed} -> {had}
+,, {see>ed} -> {saw} || { } _ \Alphabet
+.o. {doe} -> {do}
+,, {goe} -> {go}
+,, {ha} -> {have} || { } _ \Alphabet
+.o. {dos} -> {does}
+,, {gos} -> {goes}
+,, {haes} -> {has} || { } _ \Alphabet
+] ;
+! define IrregularVerbs ! (not needed now)
 
 ! Tense/aspect conversion
 regex [ [..] -> "@R.tense.Fut@" {is going to }
@@ -180,6 +194,7 @@ regex [ Input
 .o. TagConversion
 .o. Standardization
 .o. VerbInflection
+! .o. IrregularVerbs
 .o. TenseAspectConversion
 .o. BeInflection
 .o. SubjectConversion
