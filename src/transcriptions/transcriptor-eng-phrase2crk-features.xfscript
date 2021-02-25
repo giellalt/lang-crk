@@ -142,15 +142,17 @@ regex [ {when there} -> "@P.tense.Cond@" "@P.subject.0Sg@" || .#. _ Bx ]
 ] ;
 define Tense
 
-! read lexc src/transcriptions/cw-eng-verbs-prt2prs3.lexc
-! define Past
+read lexc src/transcriptions/cw-eng-verbs-prt2inf-flags.lexc
+define Prt2InfAnl
 
 regex [ [ {am} | {are} ] -> {is} ,
 [ {was} | {were} ] -> {is} "@P.tense.Prt@" ,
-{had} -> {has} "@P.tense.Prt@" ,
-{did} -> {do} "@P.tense.Prt@" ,
-{saw} -> {see} "@P.tense.Prt@" || Bx _ Bx
+! List-based solution for irregular verbs
+Prt2InfAnl -> || Bx _ Bx
 !!
+! {had} -> {has} "@P.tense.Prt@" ,
+! {did} -> {do} "@P.tense.Prt@" ,
+! {saw} -> {see} "@P.tense.Prt@" || Bx _ Bx
 ! continue list of past tense -> present tense transformations here
 ! {past} -> {infinitive} "@P.tense.Prt@" ,
 ! {past} -> {infinitive} "@P.tense.Prt@" || Bx _ Bx
