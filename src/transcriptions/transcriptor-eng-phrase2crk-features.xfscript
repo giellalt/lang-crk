@@ -142,7 +142,8 @@ regex [ {when there} -> "@P.tense.Cond@" "@P.subject.0Sg@" || .#. _ Bx ]
 ] ;
 define Tense
 
-read lexc src/transcriptions/cw-eng-verbs-prt2inf-flags.lexc
+! Reading in the past-to-infinitive pairings for irregular verbs
+read lexc src/transcriptions/cw-eng-verbs-prt2inf-w-flags.lexc
 define Prt2InfAnl
 
 regex [ [ {am} | {are} ] -> {is} ,
