@@ -59,7 +59,8 @@ test: $(FSTS_UNDER_TEST)
 
 
 transcriptor%.fomabin: transcriptions/transcriptor%.xfscript
-	foma -l $< -e 'save stack $@' -s
+	(cd .. && foma -l src/$< -e 'save stack tmp.fomabin' -s) \
+		&& mv ../tmp.fomabin $@
 
 
 
