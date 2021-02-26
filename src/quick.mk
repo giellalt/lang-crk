@@ -31,7 +31,7 @@ DICTFSTs = $(FSTs) \
            crk-relaxed-analyzer-for-dictionary.hfstol
 
 
-FOMA_ONLY_FSTs: \
+FOMA_ONLY_FSTs = \
        transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.fomabin \
        transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.fomabin \
        transcriptor-eng-phrase2crk-features.fomabin \
