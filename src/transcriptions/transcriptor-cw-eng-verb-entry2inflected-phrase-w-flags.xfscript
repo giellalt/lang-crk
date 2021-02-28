@@ -20,6 +20,10 @@ define Px [ "," | ";" | .#. ] ;
 
 define TenseAspect [ "Prs+" | "Prt+" | "Fut+" | "Int+" | "Cond+" | "Inf+" | "Imm+" | "Del+" ] ;
 
+define Progressive [ "Prog+" ] ;
+
+define Repetitive [ "Rept+" ] ;
+
 define Subject [ "1Sg+" | "2Sg+" | "3Sg+" | "1Pl+" | "21Pl+" | "2Pl+" | "3Pl+" | "4Sg/Pl+" | "5Sg/Pl+" | "X+" ] ;
 
 define Object [ "1SgO+" | "2SgO+" | "3SgO+" | "1PlO+" | "21PlO+" | "2PlO+" | "3PlO+" | "4Sg/PlO+" | "5Sg/PlO+" | "XO+" ] ;
@@ -39,11 +43,18 @@ define EngPrt
 read lexc src/transcriptions/cw-eng-verbs-prs3Sg2inf-w-flags.lexc
 define EngInf
 
+read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prog-w-flags.lexc
+define EngProg
+
 !! Word-specific explicit solution for verb morphology - Option 1 (works only in FOMA)
 regex [
-{s} -> {s} [ "@R.tense.Prs@" | "@R.tense.Cond@" ]  "@R.subject.3Sg@" || [ {s/he} | {he} | {she} | {it} ] { } Alphabet+ \i _ [ Bx - "." ]
-,, EngInf -> || [ {s/he} | {he} | {she} | {it} ] { } _ [ Bx - "." ]
-,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} ] { } _ [ Bx - "." ]
+!! Word-specific solution
+EngProg -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ] ]
+| [ {s} -> {s} "@D.prog.Prog@" || [ {s/he} | {he} | {she} | {it} | {there} ] { } Alphabet+ _ [ Bx - "." ] ]
+.o. [
+{s} -> {s} [ "@R.tense.Prs@" | "@R.tense.Cond@" ]  "@R.subject.3Sg@" || [ {s/he} | {he} | {she} | {it} ] { } Alphabet+ \i _ \Alphabet
+,, EngInf -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ \Alphabet
+,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ \Alphabet
 ] ;
 define VerbInflection
 
@@ -59,31 +70,40 @@ define VerbInflection
 ! define VerbInflection
 
 !! Rule-based solution for verb morphology
-! regex [ {es} -> {es} [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* Consonant  _ [ Bx - "." ]
-! ,, {es} -> 0 [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] || [ {s/he} | {he} | {she} | {it} ] " " \{ }* Consonant  _ [ Bx - "." ]
-! ,, {es} -> {>ed} "@R.tense.Prt@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* Consonant _ [ Bx - "." ] ]
-! .o. [ s -> s [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
-! ,, s -> 0 [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ [ Bx - "." ]
-! ,, s -> {>ed} "@R.tense.Prt@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ] _ [ Bx - "." ] ] ;
+! regex [
+! {s} -> {>ing} "@R.prog.Prog@" | {s} "@D.prog.Prog@"
+! || [ {s/he} | {he} | {she} | {it} | {there} ] { } Alphabet+ \i _ [ Bx - "." ] ]
+! !! 'be' as special case with progressive
+! .o. [ {is} -> {being} "@R.prog.Prog@" | {is} "@D.prog.Prog@"
+! || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ] ]
+! .o. [
+! {es} -> {es} [ [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ] || [ {s/he} | {he} | {she} | {it} ] " " \{ }* Consonant  _ (\Alphabet) [ Bx - "." ]
+! ,, {es} -> 0 [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] || [ {s/he} | {he} | {she} | {it} ] " " \{ }* Consonant  _ (\Alphabet) [ Bx - "." ]
+! ,, {es} -> {>ed} "@R.tense.Prt@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* Consonant _ (\Alphabet) [ Bx - "." ]
+! ] .o. [ s -> s [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ (\Alphabet) [ Bx - "." ]
+! ,, s -> 0 [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ]  _ (\Alphabet) [ Bx - "." ]
+! ,, s -> {>ed} "@R.tense.Prt@" || [ {s/he} | {he} | {she} | {it} ] " " \{ }* \[ {ha} | i ] _ (\Alphabet) [ Bx - "." ]
+! ] ;
 ! define VerbInflection
 
-! Irregular verb forms
-! regex [ {com>ed} -> {came}
-! ,, {doe>ed} -> {did}
-! ,, {goe>ed} -> {went}
-! ,, {ha>ed} -> {had}
-! ,, {see>ed} -> {saw} || { } _ \Alphabet
-! .o. {doe} -> {do}
-! ,, {goe} -> {go}
-! ,, {ha} -> {have} || { } _ \Alphabet
-! .o. {dos} -> {does}
-! ,, {gos} -> {goes}
-! ,, {haes} -> {has} || { } _ \Alphabet
-! ] ;
+!! Irregular verb forms
+! regex {com>ed} -> {came} || \Alphabet _ \Alphabet
+! ,, {doe>ed} -> {did} || \Alphabet _ \Alphabet
+! ,, {goe>ed} -> {went} || \Alphabet _ \Alphabet
+! ,, {ha>ed} -> {had} || \Alphabet _ \Alphabet
+! ,, {see>ed} -> {saw} || \Alphabet _ \Alphabet
+! ,, {doe} -> {do} || \Alphabet _ \Alphabet
+! ,, {goe} -> {go} || \Alphabet _ \Alphabet
+! ,, {ha} -> {have} || \Alphabet _ \Alphabet
+! ,, {dos} -> {does} || \Alphabet _ \Alphabet
+! ,, {gos} -> {goes} || \Alphabet _ \Alphabet
+! ,, {haes} -> {has} || \Alphabet _ \Alphabet
+! ;
 ! define IrregularVerbs ! (not needed now)
 
 ! Tense/aspect conversion
-regex [ [..] -> "@R.tense.Fut@" {is going to }
+regex [ [..] -> "@R.prog.Prog@" {is } | "@D.prog.Prog@" || {s/he } | {it } | {there } \Alphabet* _ ]
+.o. [ [..] -> "@R.tense.Fut@" {is going to }
 , [..] -> "@R.tense.Int@" "@R.subject.3Sg@" {wants to }
 , [..] -> "@R.tense.Int@" "@D.subject.3Sg@" {want to }
 , [..] -> "@R.tense.Prs@" | "@R.tense.Prt@" || {s/he } | {it } | {there } _ ]
@@ -91,11 +111,13 @@ regex [ [..] -> "@R.tense.Fut@" {is going to }
 , [..] -> [ "@R.tense.Imm@" | "@R.tense.Del@" ] {let }
 , [..] -> "@R.tense.Inf@" {for }  || _ {s/he } | {it } | {there } ]
 .o. [ [..] -> "@R.tense.Inf@" {to } | "@D.tense.Inf@" || {s/he } | {it } | {there } _ ]
-.o. [ [..] -> { now} "@R.tense.Imm@" | { later} "@R.tense.Del@" | "@D.tense.Imm@" "@D.tense.Del@" || _ Px ] ;
+.o. [ [..] -> { now} "@R.tense.Imm@" | { later} "@R.tense.Del@" | "@D.tense.Imm@" "@D.tense.Del@" || _ Px ] 
+.o. [ [..] -> { again and again} "@R.rept.Rept@" | "@D.rept.Rept@" || _ Px ]
+;
 define TenseAspectConversion
 
 ! Be-copula inflection
-regex [ {is} -> {be} || {is going to } _ \Alphabet ]
+regex [ {is} -> {be} || {is going to } (\Alphabet) _ \Alphabet ]
 .o. [ {is} -> {be} [ "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]
 , {is} -> {am} "@R.subject.1Sg@" [ "@R.tense.Prs@" | "@R.tense.Cond@" | "@R.tense.Fut@" ]
 , {is} -> {are} [ "@R.subject.2Sg@" | "@R.subject.1Pl@" | "@R.subject.21Pl@" | "@R.subject.2Pl@" | "@R.subject.3Pl@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" ] [ "@R.tense.Prs@" | "@R.tense.Fut@" | "@R.tense.Cond@" ]
@@ -181,6 +203,8 @@ define PossessiveConversion
 
 ! Conversion of tags into flag-diacritics
 regex [ "Prs+" -> "@P.tense.Prs@" , "Prt+" -> "@P.tense.Prt@" , "Fut+" -> "@P.tense.Fut@" , "Int+" -> "@P.tense.Int@" , "Cond+" -> "@P.tense.Cond@" , "Imm+" -> "@P.tense.Imm@" , "Del+" -> "@P.tense.Del@" , "Inf+" -> "@P.tense.Inf@" ]
+.o. [ "Prog+" -> "@P.prog.Prog@" ]
+.o. [ "Rept+" -> "@P.rept.Rept@" ]
 .o. [ "1Sg+" -> "@P.subject.1Sg@" , "2Sg+" -> "@P.subject.2Sg@", "3Sg+" -> "@P.subject.3Sg@" , "1Pl+" -> "@P.subject.1Pl@" , "21Pl+" -> "@P.subject.21Pl@", "2Pl+" -> "@P.subject.2Pl@" , "3Pl+" -> "@P.subject.3Pl@" ,  "4Sg/Pl+" -> "@P.subject.4Sg/Pl@" , "5Sg/Pl+" -> "@P.subject.5Sg/Pl@", "X+" -> "@P.subject.X@" ]
 .o. [ "1SgO+" -> "@P.object.1Sg@" , "2SgO+" -> "@P.object.2Sg@", "3SgO+" -> "@P.object.3Sg@" , "1PlO+" -> "@P.object.1Pl@" , "21PlO+" -> "@P.object.21Pl@", "2PlO+" -> "@P.object.2Pl@" , "3PlO+" -> "@P.object.3Pl@" ,  "4Sg/PlO+" -> "@P.object.4Sg/Pl@" , "5Sg/PlO+" -> "@P.object.5Sg/Pl@", "XO+" -> "@P.object.X@" ] ;
 define TagConversion
@@ -188,7 +212,7 @@ define TagConversion
 ! English verb inflection
 
 ! Definition of input and conversion
-regex [ TenseAspect Subject (Object) Letters+ ] ;
+regex [ TenseAspect Subject (Object) (Progressive) (Repetitive) Letters+ ] ;
 define Input
 
 regex [ Input
