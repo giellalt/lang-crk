@@ -8,11 +8,13 @@ define Capital [ A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P |
 
 define Alphabet [ Vowel | Consonant | "y" | Capital ] ;
 
-define Punctuation [ "." | "," | ":" | ";" | "!" | "?" | "-" | "/" | %' ] ;
+define Punctuation [ "." | "," | ":" | ";" | "!" | "?" | "-" | "/" | "|" | "\" | %' | %" | "(" | ")" | "[" | "]" | "{" | "}" ] ;
+
+define Symbols [ "@" | "#" | "$" | "€" | "£" | "§" | "%" | "&" | "+" | "*" | "<" | ">" | "+" | "=" | "~" | "^" ] ;
 
 define Number [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] ;
 
-define Letters [ Alphabet | Punctuation | Number | " " ] ;
+define Letters [ Alphabet | Punctuation | Symbols | Number | " " ] ;
 
 define Bx [ " " | .#. | Punctuation ] ;
 
@@ -46,10 +48,14 @@ define EngInf
 read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prog-w-flags.lexc
 define EngProg
 
+read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prs3Sg-w-flags.lexc
+define EngPrs
+
 !! Word-specific explicit solution for verb morphology - Option 1 (works only in FOMA)
 regex [
 !! Word-specific solution
 EngProg -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ] ]
+! | [ EngPrs -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ] ]
 | [ {s} -> {s} "@D.prog.Prog@" || [ {s/he} | {he} | {she} | {it} | {there} ] { } Alphabet+ _ [ Bx - "." ] ]
 .o. [
 {s} -> {s} [ "@R.tense.Prs@" | "@R.tense.Cond@" ]  "@R.subject.3Sg@" || [ {s/he} | {he} | {she} | {it} ] { } Alphabet+ \i _ \Alphabet
