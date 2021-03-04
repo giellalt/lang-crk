@@ -30,11 +30,13 @@ define Capital [ A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P |
 
 define Alphabet [ Vowel | Consonant | "y" | Capital ] ;
 
-define Punctuation [ "." | "," | ":" | ";" | "!" | "?" | "-" | "(" | ")" | "[" | "]" ] ;
+define Punctuation [ "." | "," | ":" | ";" | "!" | "?" | "-" | "/" | "|" | "\" | %' | %" | "(" | ")" | "[" | "]" | "{" | "}" ] ;
+
+define Symbols [ "@" | "#" | "$" | "€" | "£" | "§" | "%" | "&" | "+" | "*" | "<" | ">" | "+" | "=" | "~" | "^" ] ;
 
 define Number [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] ;
 
-define Letters [ Alphabet | Punctuation | Number | " " ] ;
+define Letters [ Alphabet | Punctuation | Symbols | Number | " " ] ;
 
 define PFlags [ "@P.person.Sg@" | "@P.person.Pl@" | "@P.person.Obv@" | "@P.person.Loc@" | "@P.person.Distr@" | "@P.dim.Dim@" | "@D.dim.Dim@" | "@P.poss.1Sg@" | "@P.poss.2Sg@" | "@P.poss.3Sg@" | "@P.poss.1Pl@" | "@P.poss.12Pl@" | "@P.poss.2Pl@" | "@P.poss.3Pl@" | "@P.poss.4Sg/Pl@" | "@P.poss.X@" ] ;
 
