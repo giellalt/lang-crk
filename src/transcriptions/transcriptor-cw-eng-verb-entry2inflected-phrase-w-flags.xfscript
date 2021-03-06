@@ -54,13 +54,13 @@ define EngPrs
 !! Word-specific explicit solution for verb morphology - Option 1 (works only in FOMA)
 regex [
 !! Word-specific solution
-EngProg -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ] ]
+EngProg -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ]
 ! | [ EngPrs -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ] ]
-| [ {s} -> {s} "@D.prog.Prog@" || [ {s/he} | {he} | {she} | {it} | {there} ] { } Alphabet+ _ [ Bx - "." ] ]
-.o. [
+| [ {s} -> {s} "@D.prog.Prog@" || [ {s/he} | {he} | {she} | {it} | {there} ] { } Alphabet+ _ [ Bx - "." ]
+] .o. [
 {s} -> {s} [ "@R.tense.Prs@" | "@R.tense.Cond@" ]  "@R.subject.3Sg@" || [ {s/he} | {he} | {she} | {it} ] { } Alphabet+ \i _ \Alphabet
-,, EngInf -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ \Alphabet
-,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ \Alphabet
+,, EngInf -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ \Alphabet | .#. ]
+,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ \Alphabet | .#. ]
 ] ;
 define VerbInflection
 
@@ -182,14 +182,14 @@ define ObjectConversion
 ! Reflexive Conversion
 regex [ {him/herself} -> {myself} "@R.subject.1Sg@"
 , {him/herself} -> {yourself} "@R.subject.2Sg@"
-, {him/herself} -> {him/herself} "@R.object.3Sg@"
-, {him/herself} -> {ourselves} "@R.object.1Pl@"
-, {him/herself} -> {our/yourselves} "@R.object.21Pl@"
-, {him/herself} -> {yourselves} "@R.object.2Pl@"
-, {him/herself} -> {themselves} "@R.object.3Pl@"
-, {him/herself} -> {him/her/themselves} "@R.object.4Sg/Pl@"
-, {him/herself} -> {him/her/themselves} "@R.object.5Sg/Pl@"
-, {him/herself} -> {him/herself} "@R.object.X@"
+, {him/herself} -> {him/herself} "@R.subject.3Sg@"
+, {him/herself} -> {ourselves} "@R.subject.1Pl@"
+, {him/herself} -> {our/yourselves} "@R.subject.21Pl@"
+, {him/herself} -> {yourselves} "@R.subject.2Pl@"
+, {him/herself} -> {themselves} "@R.subject.3Pl@"
+, {him/herself} -> {him/her/themselves} "@R.subject.4Sg/Pl@"
+, {him/herself} -> {him/her/themselves} "@R.subject.5Sg/Pl@"
+, {him/herself} -> {him/herself} "@R.subject.X@"
 || Bx _ ] ;
 define ReflexiveConversion
 
