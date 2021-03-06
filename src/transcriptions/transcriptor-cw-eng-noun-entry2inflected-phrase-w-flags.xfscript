@@ -24,7 +24,7 @@ define Possession [ "Px1Sg+" | "Px2Sg+" | "Px3Sg+" | "Px1Pl+" | "Px12Pl+" | "Px2
 
 define Consonant [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | t | v | w | x | z ]  ;
 
-define Vowel [ a | e | i | o | u ] ;
+define Vowel [ a | e | i | o | u | â | ê | î | ô | á | é | í | ó | ú | à | è | ì | ò | ù ] ;
 
 define Capital [ A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z ] ;
 
