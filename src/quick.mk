@@ -59,6 +59,9 @@ test: $(FSTS_UNDER_TEST)
 
 
 transcriptor%.fomabin: transcriptions/transcriptor%.xfscript
+	@# The xfscript includes other files by referencing paths relative
+	@# to a different directory. If foma can’t find those files, it just
+	@# prints a warning and builds an invalid FST.
 	(cd .. && foma -l src/$< -e 'save stack tmp.fomabin' -s) \
 		&& mv ../tmp.fomabin $@
 
