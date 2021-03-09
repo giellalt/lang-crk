@@ -54,7 +54,7 @@ define EngPrs
 !! Word-specific explicit solution for verb morphology - Option 1 (works only in FOMA)
 regex [
 !! Word-specific solution
-EngProg -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ]
+EngProg -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ] ]
 ! | [ EngPrs -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ] ]
 | [ {s} -> {s} "@D.prog.Prog@" || [ {s/he} | {he} | {she} | {it} | {there} ] { } Alphabet+ _ [ Bx - "." ]
 ] .o. [
@@ -63,6 +63,7 @@ EngProg -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ]
 ,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ \Alphabet | .#. ]
 ] ;
 define VerbInflection
+
 
 !! Word-specific explicit solution for verb morphology - Option 2 (works)
 ! regex [
