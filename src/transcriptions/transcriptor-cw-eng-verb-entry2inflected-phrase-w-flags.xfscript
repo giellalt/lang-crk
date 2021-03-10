@@ -54,13 +54,13 @@ define EngPrs
 !! Word-specific explicit solution for verb morphology - Option 1 (works only in FOMA)
 regex [
 !! Word-specific solution
-EngProg -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ] ]
+EngProg -> || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } _ [ Bx - "." ] ]
 ! | [ EngPrs -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ] ]
-| [ {s} -> {s} "@D.prog.Prog@" || [ {s/he} | {he} | {she} | {it} | {there} ] { } Alphabet+ _ [ Bx - "." ]
+| [ {s} -> {s} "@D.prog.Prog@" || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } Alphabet+ _ [ Bx - "." ]
 ] .o. [
-{s} -> {s} [ "@R.tense.Prs@" | "@R.tense.Cond@" ]  "@R.subject.3Sg@" || [ {s/he} | {he} | {she} | {it} ] { } Alphabet+ \i _ \Alphabet
-,, EngInf -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ \Alphabet | .#. ]
-,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ \Alphabet | .#. ]
+{s} -> {s} [ "@R.tense.Prs@" | "@R.tense.Cond@" ]  "@R.subject.3Sg@" || [ {s/he} | {he} | {she} | {it} | { and} | { or} ] { } Alphabet+ \i _ \Alphabet
+,, EngInf -> || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } _ [ \Alphabet | .#. ]
+,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } _ [ \Alphabet | .#. ]
 ] ;
 define VerbInflection
 
@@ -109,7 +109,7 @@ define VerbInflection
 ! define IrregularVerbs ! (not needed now)
 
 ! Tense/aspect conversion
-regex [ [..] -> "@R.prog.Prog@" {is } | "@D.prog.Prog@" || {s/he } | {it } | {there } \Alphabet* _ ]
+regex [ [..] -> "@R.prog.Prog@" {is } | "@D.prog.Prog@" || [ {s/he } | {it } | {there } ] \Alphabet _ ]
 .o. [ [..] -> "@R.tense.Fut@" {is going to }
 , [..] -> "@R.tense.Int@" "@R.subject.3Sg@" {wants to }
 , [..] -> "@R.tense.Int@" "@D.subject.3Sg@" {want to }
@@ -124,7 +124,8 @@ regex [ [..] -> "@R.prog.Prog@" {is } | "@D.prog.Prog@" || {s/he } | {it } | {th
 define TenseAspectConversion
 
 ! Be-copula inflection
-regex [ {is} -> {be} || {is going to } (\Alphabet) _ \Alphabet ]
+regex [ {is} -> {be} || {is going to } \Alphabet \Alphabet _ \Alphabet ]
+.o. [ {is} -> {be} || {is going to } _ \Alphabet ]
 .o. [ {is} -> {be} [ "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]
 , {is} -> {am} "@R.subject.1Sg@" [ "@R.tense.Prs@" | "@R.tense.Cond@" | "@R.tense.Fut@" ]
 , {is} -> {are} [ "@R.subject.2Sg@" | "@R.subject.1Pl@" | "@R.subject.21Pl@" | "@R.subject.2Pl@" | "@R.subject.3Pl@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" ] [ "@R.tense.Prs@" | "@R.tense.Fut@" | "@R.tense.Cond@" ]
