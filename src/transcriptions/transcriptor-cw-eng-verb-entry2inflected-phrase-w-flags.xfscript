@@ -178,7 +178,7 @@ regex [ {s.o.} -> {me} "@R.object.1Sg@"
 , {s.o.}  -> {him/her/them} "@R.object.4Sg/Pl@"
 , {s.o.}  -> {him/her/them over there} "@R.object.5Sg/Pl@"
 , {s.o.} -> {someone} "@R.object.X@"
-! , {s.o.} -> {someone} "@D.object@" ! Allows for generation of VTA phrase even if object feature is not specified
+, {s.o.} -> {someone} "@D.object@" ! Allows for generation of VTA phrase even if object feature is not specified
 , {s.t.} -> {it} "@D.object@"
 || Bx _ \%' ]
 ,, [ [..] -> "@D.object@" || _ .#. ] ;
