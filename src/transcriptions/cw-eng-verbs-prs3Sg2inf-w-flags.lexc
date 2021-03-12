@@ -7,10 +7,11 @@ Multichar_Symbols
 @R.tense.Del@
 @R.tense.Inf@
 @D.subject.3Sg@
+@D.subject.4Sg@
 
 LEXICON Root
-0:@R.tense.Prs@@D.subject.3Sg@  Prs3Sg2Inf ;
-0:@R.tense.Cond@@D.subject.3Sg@ Prs3Sg2Inf ;
+0:@R.tense.Prs@@D.subject.3Sg@@D.subject.4Sg@  Prs3Sg2Inf ;
+0:@R.tense.Cond@@D.subject.3Sg@@D.subject.4Sg@ Prs3Sg2Inf ;
 0:@R.tense.Fut@ Prs3Sg2Inf ;
 0:@R.tense.Int@ Prs3Sg2Inf ;
 0:@R.tense.Imm@ Prs3Sg2Inf ;
@@ -310,6 +311,7 @@ coughs:cough # ;
 counsels:counsel # ;
 counts:count # ;
 couples:couple # ;
+courts:court # ; ! MD
 covers:cover # ;
 covets:covet # ;
 cracks:crack # ;
@@ -545,6 +547,7 @@ farms:farm # ;
 farts:fart # ;
 fastens:fasten # ;
 fasts:fast # ;
+fathers:father # ; ! MD
 fattens:fatten # ;
 favours:favour # ;
 fears:fear # ;
@@ -914,6 +917,7 @@ orders:order # ;
 organizes:organize # ;
 originates:originate # ;
 ornaments:ornament # ;
+ostracizes:ostracize # ; ! MD
 out-talks:out-talk # ;
 outdistances:outdistance # ;
 outdoes:outdo # ;
@@ -1059,6 +1063,7 @@ rains:rain # ;
 raises:raise # ;
 rakes:rake # ;
 ransacks:ransack # ;
+rapes:rape # ;
 raps:rap # ;
 rats:rat # ;
 rattles:rattle # ;
