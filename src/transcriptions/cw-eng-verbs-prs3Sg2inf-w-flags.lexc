@@ -8,10 +8,11 @@ Multichar_Symbols
 @R.tense.Inf@
 @D.subject.3Sg@
 @D.subject.4Sg@
+@D.subject.X@
 
 LEXICON Root
-0:@R.tense.Prs@@D.subject.3Sg@@D.subject.4Sg@  Prs3Sg2Inf ;
-0:@R.tense.Cond@@D.subject.3Sg@@D.subject.4Sg@ Prs3Sg2Inf ;
+0:@R.tense.Prs@@D.subject.3Sg@@D.subject.4Sg@@D.subject.X@  Prs3Sg2Inf ;
+0:@R.tense.Cond@@D.subject.3Sg@@D.subject.4Sg@@D.subject.X@ Prs3Sg2Inf ;
 0:@R.tense.Fut@ Prs3Sg2Inf ;
 0:@R.tense.Int@ Prs3Sg2Inf ;
 0:@R.tense.Imm@ Prs3Sg2Inf ;

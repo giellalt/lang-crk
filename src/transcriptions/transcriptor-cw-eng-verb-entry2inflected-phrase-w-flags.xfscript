@@ -62,7 +62,7 @@ EngProg -> || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } _ 
 ! | [ EngPrs -> || [ {s/he} | {he} | {she} | {it} | {there} ] { } _ [ Bx - "." ] ]
 | [ {s} -> {s} "@D.prog.Prog@" || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } Alphabet+ _ [ Bx - "." ]
 ] .o. [
-{s} -> {s} [ "@R.tense.Prs@" | "@R.tense.Cond@" ] [ "@R.subject.3Sg@" | "@R.subject.4Sg@" ] || [ {s/he} | {he} | {she} | {it} | { and} | { or} ] { } Alphabet+ \i _ \Alphabet
+{s} -> {s} [ "@R.tense.Prs@" | "@R.tense.Cond@" ] [ "@R.subject.3Sg@" | "@R.subject.4Sg@" | "@R.subject.X@" ] || [ {s/he} | {he} | {she} | {it} | { and} | { or} ] { } Alphabet+ \i _ \Alphabet
 ,, EngInf -> || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } _ [ \Alphabet | .#. ]
 ,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } _ [ \Alphabet | .#. ]
 ] ;
