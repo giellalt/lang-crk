@@ -34,6 +34,10 @@ define Object [ "1SgO+" | "2SgO+" | "3SgO+" | "1PlO+" | "21PlO+" | "2PlO+" | "3P
 regex [ {He} | {he} | {She} | {she} | {he/she} | {They} | {they} -> {s/he} , {It} -> {it} , {him} | {her} | {him/her} -> {s.o.} || " " _ [ " " | "," | ";" | "!" | "?" | "." | .#. ] ] ;
 define Standardization
 
+! Marking non-subject occurrences of 'it'
+regex [ {it} -> IT || " " _ [ "." | "," |  .#. ] ,, {it} -> IT || \[ "." | "," | ";" ] " " _ ,, {it} -> IT || "(" _ ,, {it} -> IT || _ ")" ] ;
+define itNonSubjectMarking
+
 ! regex [ {s} -> [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.! Inf@" || {s/he } \" "+ \i _ \Alphabet ] ;
 ! | [ {s} -> {ed} "@R.tense.Prt@" || {s/he } \" "+ \i _ \Alphabet ]
 ! | [ [..] -> [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] ;
@@ -220,6 +224,10 @@ regex [ "Prs+" -> "@P.tense.Prs@" , "Prt+" -> "@P.tense.Prt@" , "Fut+" -> "@P.te
 .o. [ "1SgO+" -> "@P.object.1Sg@" , "2SgO+" -> "@P.object.2Sg@", "3SgO+" -> "@P.object.3Sg@" , "1PlO+" -> "@P.object.1Pl@" , "21PlO+" -> "@P.object.21Pl@", "2PlO+" -> "@P.object.2Pl@" , "3PlO+" -> "@P.object.3Pl@" ,  "4Sg/PlO+" -> "@P.object.4Sg/Pl@" , "5Sg/PlO+" -> "@P.object.5Sg/Pl@", "XO+" -> "@P.object.X@" ] ;
 define TagConversion
 
+! Undoing special marking of non-subject 'it'
+regex [ IT -> {it} || \Alphabet _ \Alphabet ] ;
+define itNonSubjectUnmarking
+
 ! English verb inflection
 
 ! Definition of input and conversion
@@ -229,6 +237,7 @@ define Input
 regex [ Input
 .o. TagConversion
 .o. Standardization
+.o. itNonSubjectMarking
 .o. VerbInflection
 ! .o. IrregularVerbs
 .o. TenseAspectConversion
@@ -237,6 +246,7 @@ regex [ Input
 .o. ObjectConversion
 .o. ReflexiveConversion
 .o. PossessiveConversion
+.o. itNonSubjectUnmarking
 ] ;
 
 twosided flag-diacritics
