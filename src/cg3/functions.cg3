@@ -565,11 +565,11 @@ MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (1 V + Ind + 2Pl) ;
 MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (-1 V + Ind + 12Pl) ;
 MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (1 V + Ind + 12Pl) ;
 
-MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (-1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg) ;
-MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg) ;
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (-1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg)(NOT -1 II) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg)(NOT 1 II) ;
 LIST Pron"+Pers" = Pron"+Pers" ;
-MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (-1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl) ;
-MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl) ; 
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (-1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl)(NOT -1 II) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl)(NOT 1 II) ; 
 
 ##two positions away
 
@@ -673,11 +673,11 @@ MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (NOT 1 V OR CLB)(2 V + Ind + 
 MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (NOT -1 V OR CLB)(-2 V + Ind + 12Pl) ;
 MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (NOT 1 V OR CLB)(2 V + Ind + 12Pl) ;
 
-MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (NOT -1 V OR CLB)(-2 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg) ;
-MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (NOT 1 V OR CLB)(2 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg) ;
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (NOT -1 V OR CLB)(-2 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg)(NOT -2 II) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (NOT 1 V OR CLB)(2 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg)(NOT 2 II) ;
 LIST Pron"+Pers" = Pron"+Pers" ;
-MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (NOT -1 V OR CLB)(-2 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl) ;
-MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (NOT 1 V OR CLB)(2 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl) ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (NOT -1 V OR CLB)(-2 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl)(NOT -2 II) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (NOT 1 V OR CLB)(2 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl)(NOT 2 II) ;
 
 ##everything else (see also notes above actor/goal section)
 
@@ -783,11 +783,11 @@ MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (*1 V + Ind + 2Pl BARRIER V O
 MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (*-1 V + Ind + 12Pl BARRIER V OR CLB) ;
 MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (*1 V + Ind + 12Pl BARRIER V OR CLB) ;
 
-MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (*-1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg BARRIER V OR CLB) ;
-MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (*1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg BARRIER V OR CLB) ;
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (*-1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg BARRIER V OR CLB)(NOT *-1 II) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (*1 AI + Ind + 3Sg OR TI + Ind + 3Sg OR TA + Ind + 3Sg BARRIER V OR CLB)(NOT *1 II) ;
 LIST Pron"+Pers" = Pron"+Pers" ;
-MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (*-1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl BARRIER V OR CLB) ;
-MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (*1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl BARRIER V OR CLB) ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (*-1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl BARRIER V OR CLB)(NOT *-1 II) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (*1 AI + Ind + 3Pl OR TI + Ind + 3Pl OR TA + Ind + 3Pl BARRIER V OR CLB)(NOT *1 II) ;
 
 ## cnj e
 
@@ -891,11 +891,11 @@ MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (1 V + Cnj + PV/e + 2Pl) ;
 MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (-1 V + Cnj + PV/e + 12Pl) ;
 MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (1 V + Cnj + PV/e + 12Pl) ;
 
-MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (-1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg) ;
-MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg) ;
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (-1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg)(NOT -1 II) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg)(NOT 1 II) ;
 LIST Pron"+Pers" = Pron"+Pers" ;
-MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (-1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl) ;
-MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl) ; 
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (-1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl)(NOT -1 II) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl)(NOT 1 II) ; 
 
 ##two positions away
 
@@ -999,11 +999,11 @@ MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (NOT 1 V OR CLB)(2 V + Cnj + 
 MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (NOT -1 V OR CLB)(-2 V + Cnj + PV/e + 12Pl) ;
 MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (NOT 1 V OR CLB)(2 V + Cnj + PV/e + 12Pl) ;
 
-MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (NOT -1 V OR CLB)(-2 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg) ;
-MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (NOT 1 V OR CLB)(2 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg) ;
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (NOT -1 V OR CLB)(-2 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg)(NOT -2 II) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (NOT 1 V OR CLB)(2 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg)(NOT 2 II) ;
 LIST Pron"+Pers" = Pron"+Pers" ;
-MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (NOT -1 V OR CLB)(-2 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl) ;
-MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (NOT 1 V OR CLB)(2 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl) ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (NOT -1 V OR CLB)(-2 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl)(NOT -2 II) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (NOT 1 V OR CLB)(2 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl)(NOT 2 II) ;
 
 ##everything else (see also notes above actor/goal section)
 
@@ -1109,11 +1109,11 @@ MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (*1 V + Cnj + PV/e + 2Pl BARR
 MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (*-1 V + Cnj + PV/e + 12Pl BARRIER V OR CLB) ;
 MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (*1 V + Cnj + PV/e + 12Pl BARRIER V OR CLB) ;
 
-MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (*-1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
-MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (*1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg BARRIER V OR CLB) ;
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (*-1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg BARRIER V OR CLB)(NOT *-1 II) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (*1 AI + Cnj + PV/e + 3Sg OR TI + Cnj + PV/e + 3Sg OR TA + Cnj + PV/e + 3Sg BARRIER V OR CLB)(NOT *1 II) ;
 LIST Pron"+Pers" = Pron"+Pers" ;
-MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (*-1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
-MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (*1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl BARRIER V OR CLB) ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (*-1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl BARRIER V OR CLB)(NOT *-1 II) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (*1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl BARRIER V OR CLB)(NOT *1 II) ;
 
 ##everything else
 
@@ -1219,11 +1219,11 @@ MAP:AITITAPron2PlACTL @ACTOR> TARGET Pron + 2Pl IF (*1 V + 2Pl BARRIER V OR CLB)
 MAP:AITITAPron12PlACTR @<ACTOR TARGET Pron + 12Pl IF (*-1 V + 12Pl BARRIER V OR CLB) ;
 MAP:AITITAPron12PlACTL @ACTOR> TARGET Pron + 12Pl IF (*1 V + 12Pl BARRIER V OR CLB) ;
 
-MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (*-1 AI + 3Sg OR TI + 3Sg OR TA + 3Sg BARRIER V OR CLB) ;
-MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (*1 AI + 3Sg OR TI + 3Sg OR TA + 3Sg BARRIER V OR CLB) ;
+MAP:AITITAPron3SgACTR @<ACTOR TARGET Pron + 3Sg IF (*-1 AI + 3Sg OR TI + 3Sg OR TA + 3Sg BARRIER V OR CLB)(NOT *-1 II) ;
+MAP:AITITAPron3SgACTL @ACTOR> TARGET Pron + 3Sg IF (*1 AI + 3Sg OR TI + 3Sg OR TA + 3Sg BARRIER V OR CLB)(NOT *1 II) ;
 LIST Pron"+Pers" = Pron"+Pers" ;
-MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (*-1 AI + 3Pl OR TI + 3Pl OR TA + 3Pl BARRIER V OR CLB) ;
-MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (*1 AI + 3Pl OR TI + 3Pl OR TA + 3Pl BARRIER V OR CLB) ;
+MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (*-1 AI + 3Pl OR TI + 3Pl OR TA + 3Pl BARRIER V OR CLB)(NOT *-1 II) ;
+MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (*1 AI + 3Pl OR TI + 3Pl OR TA + 3Pl BARRIER V OR CLB)(NOT *1 II) ;
 
 #possession (third person animate noun possessors only - looking at corpus suggests that pronouns are more often actors/goals than possessors)
 #need to deal with possessors that are not actors (but many actors are possessors - these rules would then work for a semantic tag)
