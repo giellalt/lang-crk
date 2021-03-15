@@ -2,39 +2,39 @@
 ## Copyright: Sámediggi/Divvun/UiT
 ## Licence: GPL v3+
 
-# List all jspwiki files that should be created from source files in the
-# JSP_PAGES variable. The filename pattern is as follows:
+# List all md files that should be created from source files in the
+# MD_PAGES variable. The filename pattern is as follows:
 #
-# dir/filename.lexc => filename-dir.jspwiki
+# dir/filename.lexc => filename-dir.md
 
-JSP_PAGES=root-morphology.jspwiki    \
-		  phonology-morphology.jspwiki \
-		  noun_stems-stems.jspwiki   \
-		  verb_stems-stems.jspwiki   \
-		  nouns-affixes.jspwiki      \
-		  numerals-stems.jspwiki     \
-		  particles-stems.jspwiki    \
-		  pronouns-stems.jspwiki     \
-		  punctuation-stems.jspwiki  \
-		  verbs-affixes.jspwiki
-# clitics-morphology.jspwiki       \
-# compounding-morphology.jspwiki   \
-# abbreviations-stems.jspwiki      \
-# acronyms-stems.jspwiki           \
-# adjectives-oahpa-stems.jspwiki   \
-# adjectives-stems.jspwiki         \
-# adpositions-stems.jspwiki        \
-# adverbs-stems.jspwiki            \
-# conjunctions-stems.jspwiki       \
-# interjections-stems.jspwiki      \
-# nouns-oahpa-stems.jspwiki        \
-# numerals-stems.jspwiki           \
-# particles-stems.jspwiki          \
-# propernouns-stems.jspwiki        \
-# smi-propernouns-stems.jspwiki    \
-# subjunctions-stems.jspwiki       \
-# adjectives-oahpa-affixes.jspwiki \
-# adjectives-affixes.jspwiki       \
-# propernouns-affixes.jspwiki      
+MD_PAGES=root-morphology.md    \
+		  phonology-morphology.md \
+		  noun_stems-stems.md   \
+		  verb_stems-stems.md   \
+		  nouns-affixes.md      \
+		  numerals-stems.md     \
+		  particles-stems.md    \
+		  pronouns-stems.md     \
+		  punctuation-stems.md  \
+		  verbs-affixes.md
+# clitics-morphology.md       \
+# compounding-morphology.md   \
+# abbreviations-stems.md      \
+# acronyms-stems.md           \
+# adjectives-oahpa-stems.md   \
+# adjectives-stems.md         \
+# adpositions-stems.md        \
+# adverbs-stems.md            \
+# conjunctions-stems.md       \
+# interjections-stems.md      \
+# nouns-oahpa-stems.md        \
+# numerals-stems.md           \
+# particles-stems.md          \
+# propernouns-stems.md        \
+# smi-propernouns-stems.md    \
+# subjunctions-stems.md       \
+# adjectives-oahpa-affixes.md \
+# adjectives-affixes.md       \
+# propernouns-affixes.md      
 
-include $(top_srcdir)/../giella-core/am-shared/doc-dir-include.am
+include $(top_srcdir)/../giella-core/am-shared/docs-dir-include.am
