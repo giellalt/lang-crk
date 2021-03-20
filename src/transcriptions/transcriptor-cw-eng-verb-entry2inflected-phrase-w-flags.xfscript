@@ -35,7 +35,7 @@ regex [ {He} | {he} | {She} | {she} | {he/she} | {They} | {they} -> {s/he} , {It
 define Standardization
 
 ! Marking non-subject occurrences of 'it'
-regex [ {it} -> IT || " " _ [ "." | "," |  .#. ] ,, {it} -> IT || \[ "." | "," | ";" ] " " _ ,, {it} -> IT || "(" _ ,, {it} -> IT || _ ")" ] ;
+regex [ {it} -> IT || " " _ [ "." | "," | .#. ] ,, {it} -> IT || Alphabet " " _ ,, {it} -> IT || "(" _ ,, {it} -> IT || _ ")" ] ;
 define itNonSubjectMarking
 
 ! regex [ {s} -> [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.subject.3Sg@" ] | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.! Inf@" || {s/he } \" "+ \i _ \Alphabet ] ;
@@ -118,7 +118,8 @@ regex [ [..] -> "@R.prog.Prog@" {is } | "@D.prog.Prog@" || [ {s/he } | {it } | {
 , [..] -> "@R.tense.Int@" "@D.subject.3Sg@" "@D.subject.4Sg@" {want to }
 , [..] -> "@R.tense.Prs@" | "@R.tense.Prt@" || {s/he } | {it } | {there } _ ]
 | [ [..] -> "@R.tense.Cond@" {when }
-, [..] -> [ "@R.tense.Imm@" | "@R.tense.Del@" ] {let }
+, [..] -> [ "@R.tense.Imm@" | "@R.tense.Del@" ] "@D.subject.2Sg@" "@D.subject.2Pl@" {let }
+, [..] -> [ "@R.tense.Imm@" | "@R.tense.Del@" ] [ "@R.subject.2Sg@" | "@R.subject.2Pl@" ] { }
 , [..] -> "@R.tense.Inf@" {for }  || _ {s/he } | {it } | {there } ]
 .o. [ [..] -> "@R.tense.Inf@" {to } | "@D.tense.Inf@" || {s/he } | {it } | {there } _ ]
 .o. [ [..] -> { now} "@R.tense.Imm@" | { later} "@R.tense.Del@" | "@D.tense.Imm@" "@D.tense.Del@" || _ Px ] 
@@ -140,19 +141,21 @@ define BeInflection
 
 ! Subject Inverse Conversion
 regex [ {s/he} -> {me} "@R.subject.1Sg@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
-, {s/he} -> {you} "@R.subject.2Sg@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
+, {s/he} -> {you} "@R.subject.2Sg@" "@R.tense.Inf@"
+, {s/he} -> {(you)} "@R.subject.2Sg@" [ "@R.tense.Imm@" | "@R.tense.Del@" ]  
 , {s/he} -> {him/her} "@R.subject.3Sg@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 , {it} -> {it} "@R.subject.3Sg@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 , {s/he} -> {us} "@R.subject.1Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 , {s/he} -> {you and us} "@R.subject.21Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
-, {s/he} -> {you all} "@R.subject.2Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
+, {s/he} -> {you all} "@R.subject.2Pl@" "@R.tense.Inf@"
+, {s/he} -> {(you all)} "@R.subject.2Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" ]  
 , {s/he} | {it} -> {them} "@R.subject.3Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 , {it} -> {it over there} "@R.subject.4Sg@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 , {it} -> {them over there} "@R.subject.4Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 , {s/he} | {it} -> {him/her/them} "@R.subject.4Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 , {s/he} | {it} -> {him/her/them over there} "@R.subject.5Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 , {s/he} -> {someone} "@R.subject.X@"  [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]
-|| Bx _ Bx ]
+|| \Alphabet _ \Alphabet ]
 
 ! Subject Conversion
 | [ {s/he} -> {I} "@R.subject.1Sg@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
