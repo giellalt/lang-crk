@@ -324,7 +324,7 @@ crk-dict-filter.hfst: Makefile.am
 	-@echo "$(_EMPH)Compiling filter to remove +Err/Frag strings, and omit +Err/Orth tags from analyses$(_RESET)"
 	echo '~[ $$[ "+Err/Frag" ] ] .o. [ "+Err/Orth" -> 0 ] ; ' | hfst-regexp2fst $(VERBOSITY) --semicolon - -o $@
 
-%-for-dictionary-giellaltbuild.hfst: %.hfst crk-dict-filter.hfst
+%-for-dictionary-giellaltbuild.hfst: %-giellaltbuild.hfst crk-dict-filter.hfst
 	-@echo "$(_EMPH)Creating dictionary version of $<$(_RESET)"
 	hfst-compose $(VERBOSE) --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) |\
 		hfst-minimize - -o $@
