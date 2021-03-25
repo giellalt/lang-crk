@@ -291,7 +291,7 @@ crk-strict-analyzer-giellaltbuild.hfst  \
 crk-strict-analyzer-giellaltbuild.xfst  \
 crk-strict-analyzer-giellaltbuild.foma: \
 crk-strict-analyzer-giellaltbuild.%: analyser-gt-strict.%
-	$(AM_V_MV)mv -f $< $@
+	$(AM_V_MV)cp -f $< $@
 
 # crk-strict-generator:
 generator-gt-strict.hfst  \
@@ -306,7 +306,7 @@ generator-gt-strict.%: analyser-gt-strict.%
 		 quit\n" | $(XFST_TOOL)
 # Rename above to Eddie name + extra, to differentiate from his name:
 crk-strict-generator-giellaltbuild.%: generator-gt-strict.%
-	$(AM_V_MV)mv -f $< $@
+	$(AM_V_MV)cp -f $< $@
 
 # crk-relaxed-analyzer:
 analyser-gt-relaxed.hfst  \
@@ -323,7 +323,7 @@ analyser-gt-relaxed.%: analyser-gt-strict.% orthography/spellrelax.compose.%
 		 quit\n" | $(XFST_TOOL)
 # Rename:
 crk-relaxed-analyzer-giellaltbuild.%: analyser-gt-relaxed.%
-	$(AM_V_MV)mv -f $< $@
+	$(AM_V_MV)cp -f $< $@
 
 crk-dict-filter.hfst: Makefile.am
 	-@echo "$(_EMPH)Compiling filter to remove +Err/Frag strings, and omit +Err/Orth tags from analyses$(_RESET)"
