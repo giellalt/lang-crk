@@ -1,7 +1,7 @@
 
-                          !!!Plains Cree numerals                           
+# Plains Cree numerals                           
 
-!!The file for numerals
+## The file for numerals
 
  * LEXICON Numerals 
 
@@ -9,7 +9,7 @@
 
 
 
-!!Here start the 999 numbers
+## Here start the 999 numbers
 
  * LEXICON UNDERTHOUSAND 
 

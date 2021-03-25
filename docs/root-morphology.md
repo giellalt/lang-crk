@@ -1,11 +1,11 @@
 
-           !!!Plains Cree morphological analyser
+# Plains Cree morphological analyser
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
 
 
- !!!Definitions for Multichar_Symbols
+# Definitions for Multichar_Symbols
 
-!!Analysis symbols
+## Analysis symbols
 
 The morphological analyses of wordforms of Plains Cree are presented
 in this system in terms of the following symbols.
@@ -147,7 +147,7 @@ Preverbs
 
 
 
-!!Auxiliary symbols
+## Auxiliary symbols
 
 These symbols either shape or govern the
 morphophonological structure
@@ -156,13 +156,13 @@ morphophonological structure
  * %< 		  prefix border
 
 
-!!Symbols that need to be escaped on the lower side (towards twolc):
- ; »7 : Literal »
- ; «7 : Literal «
-{{{
+## Symbols that need to be escaped on the lower side (towards twolc):
+* **»7**:  Literal »
+* **«7**:  Literal «
+```
   %[%>%]  - Literal >
   %[%<%]  - Literal <
-}}}
+```
 
 Special characters for morphophonology
  * w2       mowêw:mow2
@@ -182,7 +182,7 @@ Mostly, these are not realized themselves as any grapheme/phoneme
  * %^EGLOT    glottal stop after e, for eh- in conjunctive order
 
 
-!!Usage tags
+## Usage tags
 
 These tags distinguish different special-purpose analysers
 and generators from each other. Thus, for examples, we have
@@ -201,7 +201,7 @@ These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
 For indicative, there are prefixes, so here we need one
 flag for each person-number combination. Note that
 for the inverse objective conjugation, the flag refers to
-the __prefix__, not to the subject. So ''indsg1'' refers to either
+the **prefix**, not to the subject. So *indsg1* refers to either
 subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
 
