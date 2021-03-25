@@ -326,7 +326,7 @@ crk-dict-filter.hfst: Makefile.am
 
 %-for-dictionary-giellaltbuild.hfst: %-giellaltbuild.hfst crk-dict-filter.hfst
 	-@echo "$(_EMPH)Creating dictionary version of $<$(_RESET)"
-	hfst-compose $(VERBOSE) --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) |\
+	hfst-compose $(MORE_VERBOSITY) --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) |\
 		hfst-minimize - -o $@
 
 ##################################################################
