@@ -323,12 +323,13 @@ crk-relaxed-analyzer-giellaltbuild.%: analyser-gt-relaxed.%
 crk-dict-filter.hfst: Makefile.am
 	-@echo "$(_EMPH)Compiling filter to remove +Err/Frag strings, and omit +Err/Orth tags from analyses$(_RESET)"
 	$(AM_V_RGX2FST)echo '~[ $$[ "+Err/Frag" ] ] .o. [ "+Err/Orth" -> 0 ] ; ' \
-	| hfst-regexp2fst $(MORE_VERBOSITY) --semicolon - -o $@
+	| $(HFST_REGEXP2FST) $(MORE_VERBOSITY) --semicolon - -o $@
 
 %-for-dictionary-giellaltbuild.hfst: %-giellaltbuild.hfst crk-dict-filter.hfst
 	-@echo "$(_EMPH)Creating dictionary version of $<$(_RESET)"
-	$(AM_V_COMPOSE)hfst-compose $(MORE_VERBOSITY) --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) |\
-		hfst-minimize - -o $@
+	$(AM_V_COMPOSE)$(HFST_COMPOSE) $(MORE_VERBOSITY) --harmonize-flags -1 \
+		$(word 1, $^) -2 $(word 2, $^) |\
+		$(HFST_MINIMIZE) - -o $@
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
