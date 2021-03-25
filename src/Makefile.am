@@ -285,11 +285,6 @@ analyser-gt-strict.%: analyser-raw-gt-desc.% filters/remove-infl_boundary-marks.
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
 # Rename above to Eddie name + extra, to differentiate from his name:
-# List specific targets, to force building *.hfst instead of trying
-# to build *.hfstol directly - that will fail.
-crk-strict-analyzer-giellaltbuild.hfst  \
-crk-strict-analyzer-giellaltbuild.xfst  \
-crk-strict-analyzer-giellaltbuild.foma: \
 crk-strict-analyzer-giellaltbuild.%: analyser-gt-strict.%
 	$(AM_V_MV)cp -f $< $@
 
