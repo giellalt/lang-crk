@@ -38,6 +38,8 @@ define Number [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] ;
 
 define Letters [ Alphabet | Punctuation | Symbols | Number | " " ] ;
 
+define Bx [ "." | "," | ";" | "!" | "?" ] ;
+
 define PFlags [ "@P.person.Sg@" | "@P.person.Pl@" | "@P.person.Obv@" | "@P.person.Loc@" | "@P.person.Distr@" | "@P.dim.Dim@" | "@D.dim.Dim@" | "@P.poss.1Sg@" | "@P.poss.2Sg@" | "@P.poss.3Sg@" | "@P.poss.1Pl@" | "@P.poss.12Pl@" | "@P.poss.2Pl@" | "@P.poss.3Pl@" | "@P.poss.4Sg/Pl@" | "@P.poss.X@" ] ;
 
 define RFlags  [ "@R.person.Sg@" | "@R.person.Pl@" | "@R.person.Obv@" | "@R.person.Loc@" | "@R.person.Distr@" | "@R.dim.Dim@" | "@D.dim.Dim@" | "@R.poss.1Sg@" | "@R.poss.2Sg@" | "@R.poss.3Sg@" | "@R.poss.1Pl@" | "@R.poss.12Pl@" | "@R.poss.2Pl@" | "@R.poss.3Pl@" | "@R.poss.4Sg/Pl@" | "@R.poss.X@" ] ;
@@ -92,13 +94,13 @@ regex [ Tags ("Dim+") (Possession) Letters+ ]
 ! "Number", including obviation, locatives and distributives
 .o. [ [..] -> [ {a> } "@R.number.Sg@" "@D.poss@" ] || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
 |    [ [..] -> [ "@R.number.Sg@" RPossFlags ] || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
-|   [ [..] -> [ {>s} "@R.number.Pl@" ] || \Punctuation _ [ .#. | Punctuation ] | [ { of } | { for } | { with } | { among } | { about } | { who } ] .o. {>s} -> 0 || {>s} \[ Punctuation | .#. ]+  _ ]
+|   [ [..] -> [ {>s} "@R.number.Pl@" ] || \Bx _ [ .#. | Bx ] | [ { of } | { for } | { with } | { among } | { about } | { who } ] .o. {>s} "@R.number.Pl@" -> 0 || {>s} "@R.number.Pl@" [ \[ Bx | .#. ]+ | Bx ] _ ]
 |   [ [..] -> [ { over there} "@R.number.Obv@" ] || \Punctuation _ [ .#. | Punctuation ] ]
 ! Locative forms are singular by default, and with an indefinite article unless possessed
 |   [ [..] -> [ {in a> } "@R.number.Loc@" "@D.poss@" ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 |   [ [..] -> [ {in } "@R.number.Loc@" RPossFlags ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 ! Distributive forms are made plural by default
-|   [ [ [..] -> [ {among> } "@R.number.Distr@" ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ] .o. [ [..] -> [ {>s} "@R.number.Distr@" ] ||  _ [ .#. | Punctuation | [ { of } | { for } | { with } | { among } | { who } ] ] ] .o. [ {>s} -> 0 || {>s} \[ Punctuation | .#. ]+  _ ] ]
+|   [ [ [..] -> [ {among> } "@R.number.Distr@" ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ] .o. [ [..] -> [ {>s} "@R.number.Distr@" ] ||  _ [ .#. | Bx | [ { of } | { for } | { with } | { among } | { who } ] ] ] .o. [ {>s} "@R.number.Distr@" -> 0 || {>s} "@R.number.Distr@" [ \[ Bx | .#. ]+ | Bx ]  _ ] ]
 
 ! Allomorphy for the indefinite article: <a> -> <an> | _ Vowel
 .o. [ [..] -> n || { a>} _ " " \Letters+ Vowel ]
