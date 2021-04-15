@@ -34,7 +34,7 @@
 
 set need-separators off
 
-Define lexmorph @bin"analyser_relabelled-disamb-gt-desc.hfst" ;
+Define lexmorph @bin"analyser_relabelled-disamb-gt-desc.macron.hfst" ;
 
 Define morphology [ lexmorph | UpCase(lexmorph, U) ] ;
 
