@@ -286,7 +286,7 @@ analyser-gt-strict.%: analyser-raw-gt-desc.% filters/remove-infl_boundary-marks.
 		 quit\n" | $(XFST_TOOL)
 # Rename above to Eddie name + extra, to differentiate from his name:
 crk-strict-analyzer-giellaltbuild.%: analyser-gt-strict.%
-	$(AM_V_MV)mv -f $< $@
+	$(AM_V_MV)cp -f $< $@
 
 # crk-strict-generator:
 generator-gt-strict.hfst  \
@@ -301,7 +301,7 @@ generator-gt-strict.%: analyser-gt-strict.%
 		 quit\n" | $(XFST_TOOL)
 # Rename above to Eddie name + extra, to differentiate from his name:
 crk-strict-generator-giellaltbuild.%: generator-gt-strict.%
-	$(AM_V_MV)mv -f $< $@
+	$(AM_V_MV)cp -f $< $@
 
 # crk-relaxed-analyzer:
 analyser-gt-relaxed.hfst  \
@@ -318,16 +318,18 @@ analyser-gt-relaxed.%: analyser-gt-strict.% orthography/spellrelax.compose.%
 		 quit\n" | $(XFST_TOOL)
 # Rename:
 crk-relaxed-analyzer-giellaltbuild.%: analyser-gt-relaxed.%
-	$(AM_V_MV)mv -f $< $@
+	$(AM_V_MV)cp -f $< $@
 
 crk-dict-filter.hfst: Makefile.am
 	-@echo "$(_EMPH)Compiling filter to remove +Err/Frag strings, and omit +Err/Orth tags from analyses$(_RESET)"
-	echo '~[ $$[ "+Err/Frag" ] ] .o. [ "+Err/Orth" -> 0 ] ; ' | hfst-regexp2fst $(VERBOSITY) --semicolon - -o $@
+	$(AM_V_RGX2FST)echo '~[ $$[ "+Err/Frag" ] ] .o. [ "+Err/Orth" -> 0 ] ; ' \
+	| $(HFST_REGEXP2FST) $(MORE_VERBOSITY) --semicolon - -o $@
 
-%-for-dictionary-giellaltbuild.hfst: %.hfst crk-dict-filter.hfst
+%-for-dictionary-giellaltbuild.hfst: %-giellaltbuild.hfst crk-dict-filter.hfst
 	-@echo "$(_EMPH)Creating dictionary version of $<$(_RESET)"
-	hfst-compose $(VERBOSE) --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) |\
-		hfst-minimize - -o $@
+	$(AM_V_COMPOSE)$(HFST_COMPOSE) $(MORE_VERBOSITY) --harmonize-flags -1 \
+		$(word 1, $^) -2 $(word 2, $^) |\
+		$(HFST_MINIMIZE) - -o $@
 
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
