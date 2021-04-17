@@ -15,19 +15,19 @@
 ! along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ! ========================================================================== !
-!!                           !!! Plains Cree verb morphology                  
+!! Plains Cree verb morphology                  
 ! ========================================================================== !
 
 
 !! The Plains Cree verbs are divided in four groups:
 
-!! # AI: Animate intransitive 
-!! # II: Inanimate intransitive
-!! # TA: Transitive animate
-!! # TI: Transitive inanimate
+!! 1. AI: Animate intransitive 
+!! 1. II: Inanimate intransitive
+!! 1. TA: Transitive animate
+!! 1. TI: Transitive inanimate
 
 
-!! !!!Prefixes
+!! # Prefixes
 
 LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
 
@@ -260,7 +260,7 @@ LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
 @U.order.imp@  VERBPREFIXES ;
 
 
-!! !! Preverbs
+!! Preverbs
 !     ==========
 
 LEXICON VERBPREFIXES  !!= @CODE@ just adds the prefix boundary
@@ -624,9 +624,9 @@ LEXICON WICI
 ! ===============================================================
 ! ===============================================================
 
-!! !!!Suffixes
+!! # Suffixes
 
-!! !!! Intransitive inanimate (II)
+!! Intransitive inanimate (II)
 !      ===========================
 !      ===========================
 
@@ -673,7 +673,7 @@ LEXICON VIIw_SG_WICI !!!!
 LEXICON VIIw_PL_WICI !!!! 
 @U.wici.NULL@ VIIw_PL_ORDER ;
 
-!! LEXICON VIIw_PL_WICI !!!! 	 NO LONGER NEEDED FROM AROK
+!! 	 NO LONGER NEEDED FROM AROK
 !! @U.wici.NULL@ VIIw_PL_ORDER ; NO LONGER NEEDED FROM AROK
 
 ! ===========================================================
@@ -688,7 +688,7 @@ LEXICON VIIn_SGPL_WICI !!!!
 LEXICON VIIn_SG_WICI !!!! 
 @U.wici.NULL@ VIIn_SG_ORDER ;
 
-!! LEXICON VIIw_PL_WICI !!!! 
+!! 
 !! @U.wici.NULL@ VIIw_PL_ORDER ;
 
 LEXICON VIIn_PL_WICI !!!! 	 NO LONGER NEEDED FROM AROK
@@ -1043,7 +1043,7 @@ LEXICON VIIw_PL_FUT_CON_SUFFIX   !!= @CODE@ w final plural
 +4Pl:%>yikwâwi VERB_ENDLEX ;
 
 
-!! !!! Intransitive animate (AI)
+!! Intransitive animate (AI)
 !      ===========================
 !      ===========================
 
@@ -1728,7 +1728,7 @@ LEXICON VAIn_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 
 
 
-!! !!! Transitive inanimate (TI)
+!! Transitive inanimate (TI)
 !      ===========================
 !      ===========================
 

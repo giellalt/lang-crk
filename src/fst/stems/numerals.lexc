@@ -15,10 +15,10 @@
 ! along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ! ========================================================================== !
-!!                           !!!Plains Cree numerals                           
+!! # Plains Cree numerals                           
 ! ========================================================================== !
 
-!! !!The file for numerals
+!! ## The file for numerals
 
 LEXICON Numerals !!= * @CODE@
 pêyak% kihci% mitâtahtomtanaw THOUSAND ;
@@ -44,7 +44,7 @@ LEXICON THOUSAND
 
 
 !===========================
-!! !!Here start the 999 numbers
+!! ## Here start the 999 numbers
 !===========================
 
 LEXICON UNDERTHOUSAND !!= * @CODE@
