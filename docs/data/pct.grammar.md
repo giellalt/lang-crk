@@ -1,7 +1,6 @@
-
 Here are the most common ambiguos grammatical patterns in Bloomfields texts
 
-{{{
+```
 
 264: 
  Ipc
@@ -4773,4 +4772,4 @@ Here are the most common ambiguos grammatical patterns in Bloomfields texts
  pawâmêw V TA Cnj Prs 3Pl 1SgO
  pawâmiw V AI Cnj Prs 3Pl
 
-}}}
+```

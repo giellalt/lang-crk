@@ -1,7 +1,6 @@
-
 Here are the most common ambiguos words in Mary Wells
 
-{{{
+```
 46
 "<ôma>" Ipc Pron Dem Prox IN Sg
 	"ôma" Pron Dem Prox IN Sg
@@ -790,4 +789,4 @@ Here are the most common ambiguos words in Mary Wells
 	"askiy" N IN Pl
 	"askiya" N IN Pl
 	"askiya" N IN Sg
-}}}
+```

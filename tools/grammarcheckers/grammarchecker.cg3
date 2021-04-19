@@ -14,7 +14,7 @@
 # giellatekno@hum.uit.no or divvun@hum.uit.no
 
 # ==================================================================== #
-#!! !!!       [ L A N G U A G E ]  G R A M M A R   C H E C K E R
+#!!       [ L A N G U A G E ]  G R A M M A R   C H E C K E R
 # ==================================================================== #
 # ====================================================================
 
@@ -61,23 +61,23 @@
       # Grammar checking rules
 
 # =============== #
-#!! !!!DELIMITERS
+#!! # DELIMITERS
 # =============== #
 
 DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" sent ;
 
 # ================== #
-#!! !!!TAGS AND SETS
+#!! # TAGS AND SETS
 # ================== #
 
 SETS
 
 
-#!! !!Tags
+#!! ## Tags
 
 
 #!! This section lists all the tags inherited from the fst, and used as tags
-#!! in the syntactic analysis. The next section, __Sets__, contains sets defined
+#!! in the syntactic analysis. The next section, **Sets**, contains sets defined
 #!! on the basis of the tags listed here, those set names are not visible in the output.
 
 
@@ -85,7 +85,7 @@ SETS
 # Tags declared as single-membered LISTs
 # ======================================
 
-#!! !Beginning and end of sentence
+#!! ### Beginning and end of sentence
 LIST BOS = (>>>) (<s>) ;  #!! BOS
 LIST EOS = (<<<) (</s>) ; #!! EOS
 
@@ -94,7 +94,7 @@ LIST EOS = (<<<) (</s>) ; #!! EOS
 # CG3 doesn´t function without >>> and <<< !
 
 
-#!! !Parts of speech tags
+#!! ### Parts of speech tags
 
 LIST N = N ;		    #!! N
 LIST A = A ;		    #!! A
@@ -124,7 +124,7 @@ LIST ¶ = ¶;   #!! ¶
 
 
 
-#!! !Tags for POS sub-categories
+#!! ### Tags for POS sub-categories
 
 LIST Pers = Pers ;	    #!! Pers
 LIST Dem = Dem ;	    #!! Dem
@@ -141,7 +141,7 @@ LIST Arab = Arab ; #!! Arab
 LIST Rom = Rom ; #!! Romertall
 
 
-#!! !Tags for morphosyntactic properties
+#!! ### Tags for morphosyntactic properties
 
 LIST Nom = Nom ; #!! Nom
 LIST Acc = Acc ; #!! Acc
@@ -208,7 +208,7 @@ LIST Err/Orth = Err/Orth Err/Orth-a/á Err/Orth-nom/gen Err/Orth-nom/acc Err/Der
 
 
 
-#!! !Semantic tags
+#!! ### Semantic tags
 
 LIST Sem/Act = Sem/Act ;				    #!! Sem/Act
 LIST Sem/Ani = Sem/Ani ;				    #!! Sem/Ani
@@ -248,7 +248,7 @@ LIST PROP-SUR = Sem/Sur Sem/Mal Sem/Fem ; #!! PROP-SUR
 SET TIME-N-SET = N + Sem/Time ;  #!! TIME-N-SET
 
 
-#!! ! Syntactic tags
+#!! ###  Syntactic tags
 
 LIST @+FAUXV = @+FAUXV ;	         #!! @+FAUXV
 LIST @+FMAINV = @+FMAINV ;	         #!! @+FMAINV
@@ -331,7 +331,7 @@ LIST @X = @X ;    #!! @X
 # ========
 
 
-#!! !!Sets containing sets of lists and tags
+#!! ## Sets containing sets of lists and tags
 
 #!! This part of the file lists a large number of sets based partly upon the tags defined above, and
 #!! partly upon lexemes drawn from the lexicon.
@@ -339,14 +339,14 @@ LIST @X = @X ;    #!! @X
 
 
 
-#!! !Sets for Single-word sets
+#!! ### Sets for Single-word sets
 
 LIST INITIAL = "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m"
         "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z"
         "á" "æ" "ø" "å" "ö" "ä" ; #!! INITIAL
 
 
-#!! !Sets for word or not
+#!! ### Sets for word or not
 
 LIST WORD = N A Adv V Pron CS CC Po Pr Interj Pcle Num ABBR ACR  \? ; #!! WORD
  # any word
@@ -355,7 +355,7 @@ SET REAL-WORD-NOT-ABBR = WORD - Num - Ord - (ABBR N) ; # This is former REALWORD
 SET NOT-COMMA = WORD - COMMA ;  #!! NOT-COMMA
 
 
-#!! !Case sets
+#!! ### Case sets
 # ---------
 
 LIST ADVLCASE = Ill Loc Com Ess ; #!! ADLVCASE
@@ -367,7 +367,7 @@ SET NOT-NOM = CASE - Nom ; #!! NOT-NOM
 SET NOT-GEN = CASE - Gen ; #!! NOT-GEN
 SET NOT-ACC = CASE - Acc ; #!! NOT-ACC
 
-#!! !Verb sets
+#!! ### Verb sets
 # ---------
 
 # Verbs and their complements
@@ -375,7 +375,7 @@ SET NOT-ACC = CASE - Acc ; #!! NOT-ACC
 
 SET NOT-V = WORD - V ; #!! NOT-V
 
-#!! !Sets for finiteness and mood
+#!! ### Sets for finiteness and mood
 # - - - - - - - - - -
 
 SET REAL-NEG = Neg - Sup ; #!! REAL-NEG
@@ -385,7 +385,7 @@ SET MOOD-V = Ind OR Pot OR Imprt OR ImprtII OR Cond OR (Neg Sup) ; #!! MOOD-V
 SET NOT-PRFPRC = WORD - PrfPrc ; #!! NOT-PRFPRC
 
 
-#!! !Sets for person
+#!! ### Sets for person
 # - - - -
 
 LIST SG1-V = (V Sg1)  ; #!! SG1-V
@@ -410,7 +410,7 @@ SET DU-PL-V = DU1-V OR DU2-V OR DU3-V OR PL1-V OR PL2-V OR PL3-V ;
 
 SET 1-2-V = SG1-V OR SG2-V OR DU1-V OR DU2-V OR PL1-V OR PL2-V ;
 
-#!! !Pronoun sets
+#!! ### Pronoun sets
 # ------------
 
 LIST MUN = (Pron Pers Sg1 Nom) (pers p1 sg nom) ;
@@ -463,7 +463,7 @@ LIST DU-NR = Du1 Du2 Du3 ;
 SET NOT-SG-PRON = DU-PRON OR PL-PRON ;
 
 
-#!! !Adjectival sets and their complements
+#!! ### Adjectival sets and their complements
 # -------------------------------------
 SET A-CASE = A - Attr - Adv ;
 
@@ -477,7 +477,7 @@ SET NOT-A-CC = WORD - A-CC ;
 
  # and many others
 
-#!! !Adverbial sets and their complements
+#!! ### Adverbial sets and their complements
 # ------------------------------------
 SET LEX-ADV = Adv - (AA) ;
 
@@ -491,12 +491,12 @@ SET NOT-A-ADV-PCLE = WORD - Pcle - A - Adv ; #
 
 
 
-#!! !Sets of elements with common syntactic behaviour
+#!! ### Sets of elements with common syntactic behaviour
 # ================================================
 
 SETS
 
-#!! !NP sets defined according to their morphosyntactic features
+#!! ### NP sets defined according to their morphosyntactic features
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 LIST N-SG-NOM = (N Sg Nom);
@@ -521,11 +521,11 @@ SET NP-HEAD-NOM    = NP-HEAD-SG-NOM OR NP-HEAD-PL-NOM ;
 SET NP-HEAD-ACC    = (Pron Acc) OR (N Acc) OR (A Acc) - Cmp/SplitR - (Dem Attr);
 SET NP-HEAD-GEN    = (Pron Gen) OR (N Gen) OR (A Gen) - Cmp/SplitR - (Dem Attr)   ;
 
-#!! !The PRE-NP-HEAD family of sets
+#!! ### The PRE-NP-HEAD family of sets
 
 #!! These sets model noun phrases (NPs). The idea is to first define whatever can
 #!! occur in front of the head of the NP, and thereafter negate that with the
-#!! expression __WORD - premodifiers__.
+#!! expression **WORD - premodifiers**.
 
 
 SET PRE-NP-HEAD = (Prop Attr) OR (Prop @>N) OR (A Attr) OR (ABBR Attr)
@@ -571,7 +571,7 @@ SET NOT-PCLE = WORD - Pcle ;
 SET REAL-CLB = CLB - COMMA ;
 
 
-#!! !Border sets and their complements
+#!! ### Border sets and their complements
 # ---------------------------------
 
 SET CP = (Pron Interr) OR (Pron Rel) ;
@@ -594,7 +594,7 @@ SET CCCOMMA = CC OR COMMA ;
 
 
 
-#!! !Grammarchecker sets
+#!! ### Grammarchecker sets
 
 LIST &err-agr = &err-agr ;
 LIST &err-gen-po = &err-gen-po ;

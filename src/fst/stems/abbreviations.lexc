@@ -15,50 +15,50 @@
 ! along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ! ============================= !
-!! !!!File containing abbreviations 
+!! # File containing abbreviations 
 ! ============================= !
 
-!! !!Lexica for adding tags and periods
+!! ## Lexica for adding tags and periods
 ! ----------------------------------
 
 !! Splitting in 4 + 1  groups, because of the preprocessor
 !  - - - - - - - - - - - - - - - - - - - - - - - - -
 
-LEXICON Abbreviation   !!= * __@CODE@__
-ITRAB ;	   !!= # The @CODE@ lexicon (intransitive abbrs)
-TRNUMAB ;  !!= # The @CODE@ lexicon (abbrs trans wrt. numberals)
+LEXICON Abbreviation   !!= * **@CODE@**
+ITRAB ;	   !!= 1. The @CODE@ lexicon (intransitive abbrs)
+TRNUMAB ;  !!= 1. The @CODE@ lexicon (abbrs trans wrt. numberals)
 
-!! !!The sublexica
-!! !Dividing between abbreviations with and witout final period
+!! ## The sublexica
+!! ### Dividing between abbreviations with and witout final period
 
-LEXICON ab-noun   !!= * __@CODE@__
+LEXICON ab-noun   !!= * **@CODE@**
 ab-nodot-noun ;
 ab-dot-noun ;
 
-LEXICON ab-adv   !!= * __@CODE@__
+LEXICON ab-adv   !!= * **@CODE@**
 ab-nodot-adv ;
 ab-dot-adv ;
 
-!! !The lexicons that add tags
+!! ### The lexicons that add tags
 
-LEXICON ab-nodot-noun   !!= * __@CODE@__  The bulk
+LEXICON ab-nodot-noun   !!= * **@CODE@**  The bulk
 +N+ABBR:   # ; ! no period, that is.
 
-LEXICON ab-dot-noun   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
+LEXICON ab-dot-noun   !!= * **@CODE@**  This is the lexicon for abbrs that must have a period.
 +N+ABBR:%.  # ;
 
-LEXICON ab-nodot-adv   !!= * __@CODE@__
+LEXICON ab-nodot-adv   !!= * **@CODE@**
 +Adv+ABBR: # ; ! no period, that is.
 
-LEXICON ab-dot-adv   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
+LEXICON ab-dot-adv   !!= * **@CODE@**  This is the lexicon for abbrs that must have a period.
 +ABBR:%.  # ; ! Adv without case.
 
-LEXICON ab-dot-adj   !!= * __@CODE@__  This is the lexicon for abbrs that must have a period.
+LEXICON ab-dot-adj   !!= * **@CODE@**  This is the lexicon for abbrs that must have a period.
 +A+ABBR:%.  # ;
 
 
 
-!! !!The abbreviation lexicon itself
+!! ## The abbreviation lexicon itself
 ! -------------------------------
 
 ! Miscellaneous symbols, abbreviation symbols
@@ -68,7 +68,7 @@ LEXICON ab-dot-adj   !!= * __@CODE@__  This is the lexicon for abbrs that must h
 ! Intransitive abbreviations 
 ! =============================================== !
 
-LEXICON ITRAB   !!= * __@CODE@__ are intransitive abbreviations, Ltd. etc.
+LEXICON ITRAB   !!= * **@CODE@** are intransitive abbreviations, Ltd. etc.
 
 ! These may end sentences.
 
@@ -86,7 +86,7 @@ Inc ab-noun ;
 ! Abreviations who are transitive in front of numerals 
 ! ============================================================ !
 
-LEXICON TRNUMAB   !!= * __@CODE@__ contains abbreviations who are transitive in front of numerals 
+LEXICON TRNUMAB   !!= * **@CODE@** contains abbreviations who are transitive in front of numerals 
 
 !! For abbrs for which numerals are complements, but other
 !! words not necessarily are. This group treats arabic numerals as
@@ -104,7 +104,7 @@ nr ab-dot-noun ; !
 ! Transitive abbreviations !
 ! =============================================== !
 
-LEXICON TRAB   !!= * __@CODE@__ contains transitive abbreviations
+LEXICON TRAB   !!= * **@CODE@** contains transitive abbreviations
 
 !! This lexicon is for abbrs that always have a constituent following it.
 

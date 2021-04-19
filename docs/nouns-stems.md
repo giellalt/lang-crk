@@ -1,6 +1,4 @@
-
-                          !!!Plains Cree noun stems                           
-
+# Plains Cree noun stems                           
 
 Wolvengrey types:
 
@@ -26,21 +24,13 @@ Wolvengrey types:
 * NA4w C-Initial Single-Syllable-/w/ NA Stem : wâhkwa:wâhkw “roe, fish eggs; lump of roe”
 * NA4w V-Initial Single-Syllable-/w/ NA Stem : ihkwa:ihkw “louse”
 
+## The stems
 
-
-!!The stems
-
-!Animate and inanimate Nouns
+### Animate and inanimate Nouns
 
 STEMS adds an affixmark and redirects to STEMLIST
 
-
-
-
-
 STEMLIST for nouns getting prefixes ni-, ki-, o- \\
-
-
 
 DEP-KINTERMSSTEMS adds an affixmark and redirects to KINTERMLIST
 

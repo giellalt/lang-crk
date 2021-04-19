@@ -1,4 +1,3 @@
-
 This is a grammatical analyser for Plains Cree.
 
 It contains approximately 16500 stems, 2/3 of which are verbs,
@@ -8,15 +7,11 @@ as a syntactic component.
 The analyser is in use in an e-learning program, an e-dictionary
 and a spellchecker.
 
-
-
 ----
 
 The structure of the source file catalogue is the same for all
-the languages, it is documented [here|/infra/infraremake/NewinfraCatalogues.html].
-
-
+the languages, it is documented [here](/infra/infraremake/NewinfraCatalogues.html).
 
 These pages document how to build the parsers. If you want to know
 how to use them on the command line, read the
-[How to use the morphological parsers|/tools/docu-sme-manual.html] page.
+[How to use the morphological parsers](/tools/docu-sme-manual.html) page.

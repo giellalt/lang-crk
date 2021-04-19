@@ -33,6 +33,7 @@
 ! [oô][wy]$i -> ô$
 !
 ! V -> 0 || _ $V (after stem) ! Weird?
+!! | --- 
 
 
 ! ========================================================================
@@ -781,24 +782,24 @@ t3:c <=> _ %>: i2: %^DIM:0 ;
 
 ! Matching weak/strong reduplication consonant placeholder d1 with stem-initial consonant
 "ReduplCRule1"
-!! __@RULENAME@__
+!! **@RULENAME@**
 d1:Cx <=> _ (0:i 0:y) [ a: y2: | â: h ] (%^IC:0) ( %-: ) %<: Cx: ;
    where Cx in ( c k m n p s t w y ) ;
 
 ! Setting double weak+strong reduplication consonant placeholder d2 with stem-initial consonant"
 "ReduplCRule2"
-!! __@RULENAME@__
+!! **@RULENAME@**
 d2:Cx <=> _ (0:i 0:y) a: y3:0 ( %-: ) d1:Cx ;
    where Cx in ( c k m n p s t w y ) ;
 
 !Inserting epenthetic y in weak reduplication of vowel-initial stem
 "ReduplY2Rule"
-!! __@RULENAME@__
+!! **@RULENAME@**
 y2:y <=> d1:0 (0:i 0:y) a: _ ;
 
 !Inserting epenthetic y in strong+weak reduplication of vowel-initial stem
 "ReduplY3Rule"
-!! __@RULENAME@__
+!! **@RULENAME@**
 y3:y <=> _ ( %-: ) d1:0 ;
 
 !!€ d1ay2-<nipâw

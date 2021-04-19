@@ -1,10 +1,6 @@
-
-
-
 Here are the most common ambiguos words in Bloomfields texts
 
-{{{
-
+```
 
 261
 "<ôma>" Ipc Pron Dem Prox IN Sg
@@ -10001,4 +9997,4 @@ Here are the most common ambiguos words in Bloomfields texts
 "<kâ-nisitawêyimât>" nisitawêyimêw V TA Cnj Prs 2Sg 3SgO nisitawêyimêw V TA Cnj Prs 3Sg 4Sg/PlO
 	"PV/kaa" nisitawêyimêw V TA Cnj Prs 2Sg 3SgO
 	"PV/kaa" nisitawêyimêw V TA Cnj Prs 3Sg 4Sg/PlO
-}}}
+```
