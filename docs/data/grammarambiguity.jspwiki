@@ -1,9 +1,6 @@
-
-
 Here are the most common ambiguos words in Mary Wells
 
-
-{{{
+```
 72: 
  N AN Sg Obv
  Ipc
@@ -218,4 +215,4 @@ Here are the most common ambiguos words in Mary Wells
  N AN Sg
  N AN Sg Obv
 
-}}}
+```
