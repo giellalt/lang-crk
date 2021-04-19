@@ -27,3 +27,5 @@ regex [ SpellRelax
 .o. [ PrefixStrings .o. [ CorrectWords ">" ].l ].u
 .o. rmBoundary
 ] ;
+
+save stack crk-infl-morpheme-completion.hfst
