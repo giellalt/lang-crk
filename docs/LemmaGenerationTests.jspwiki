@@ -2,10 +2,10 @@
 
 The lemma generation tests have to be listed in the file: \\
 test/src/fst/Makefile.am like this:
-{{{
+```
 GENERATION_TESTS_IN=generate-noun-lemmas.sh.in  \
                     generate-verb-lemmas.sh.in
-}}}
+```
 
 The script puts all lemmas in one file, \\ 
 then it generates their baseforms in another file (N+AN+Sg, N+IN+Sg, plural forms if the lemma is in plural,\\ or for verbs: Ind+Prs+3Sg, for plural verbs: Ind+Prs+3Pl), \\ and then it compares these two files. \\
