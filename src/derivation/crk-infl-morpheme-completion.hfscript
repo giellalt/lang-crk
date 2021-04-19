@@ -29,3 +29,5 @@ regex [ SpellRelax
 ] ;
 
 save stack crk-infl-morpheme-completion.hfst
+
+! hfst-fst2fst -O -i crk-infl-morpheme-completion.hfst -o  crk-infl-morpheme-completion.hfstol
