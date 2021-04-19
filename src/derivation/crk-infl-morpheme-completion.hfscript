@@ -1,0 +1,29 @@
+! Instructions for compiling a morpheme completion FST
+! based on morpheme boundaries
+
+load ../crk-strict-generator-with-morpheme-boundaries.hfst
+
+define Words
+
+define Bx [ "<" | ">" | "/" ] ;
+
+define Ax [ ? - Bx ] ;
+
+define SpellRelax [ a (->) â ,, e (->) ê ,, i (->) î ,, o (->) ô ,, 0 (->) [ %- | Bx ] ] ;
+
+define MaxHyphens [ [ [ ? - "-" ]* "-" ]^<6 [ ? - "-" ]* ] ;
+
+define NextMorpheme [ ?+ [ 0:Ax ]* 0:Bx ] ;
+
+define PrefixStrings [ ?* [ 0:? ]* ] ;
+
+define CorrectWords [ ~[ $[ "+Err/Orth" ] ] .o. Words ] ;
+
+define rmBoundary [ Bx -> 0 ] ;
+
+regex [ SpellRelax
+! .o. MaxHyphens
+.o. NextMorpheme
+.o. [ PrefixStrings .o. [ CorrectWords ">" ].l ].u
+.o. rmBoundary
+] ;
