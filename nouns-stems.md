@@ -1,0 +1,48 @@
+# Plains Cree noun stems                           
+
+Wolvengrey types:
+
+* NI1  C-Initial Regular NI Stem : cîmân “canoe, boat”
+* NI1  V-Initial Regular NI Stem : astotin “hat, cap”
+* NI2  C-Initial VW NI Stem : mîkisasâkay “beaded coat, beaded dress”
+* NI2  V-Initial VW NI Stem : oskasâkay “new coat, new dress”
+* NI3  C-Initial Cw NI Stem : pahkêkinw:pahkêkinw “leather, rawhide”
+* NI3  V-Initial Cw NI Stem : askêkin:askêkinw “fresh rawhide”
+* NI4  C-Initial Single-Syllable NI Stem : wâw– “egg”
+* NI4  V-Initial Single-Syllable NI Stem : osk-ây– “new item, new thing”
+* NI4  V-Initial Single-Syllable irregular NI Stem : ôs– “canoe, boat”
+* NI4w C-Initial Single-Syllable-/w/ NI Stem : mihkw– “blood”
+
+* NA1  C-Initial Regular NA Stem : pahkwêsikan “bannock”
+* NA1  V-Initial Regular NA Stem : asikan “sock”
+* NA2  C-Initial V-Glide NA Stem : kihc-ôkiniy “tomato”
+* NA2  V-Initial V-Glide NA Stem : ayapiy “net”
+* NA3  C-Initial C-/w/ NA Stem : masinahikanâhtik:masinahikanâhtikw– “pencil”
+* NA3  V-Initial C-/w/ NA Stem : askihkw– “kettle, pail”
+* NA4  C-Initial Single-Syllable NA Stem : niska “goose” (and siht– “spruce”)
+* NA4  V-Initial Single-Syllable NA Stem : esa “clam; shell”
+* NA4w C-Initial Single-Syllable-/w/ NA Stem : wâhkwa:wâhkw “roe, fish eggs; lump of roe”
+* NA4w V-Initial Single-Syllable-/w/ NA Stem : ihkwa:ihkw “louse”
+
+## The stems
+
+### Animate and inanimate Nouns
+
+STEMS adds an affixmark and redirects to STEMLIST
+
+STEMLIST for nouns getting prefixes ni-, ki-, o- \\
+
+DEP-KINTERMSSTEMS adds an affixmark and redirects to KINTERMLIST
+
+DEP-KINTERMLIST for dependent nouns getting prefixes n-, k-, o- \\
+
+ -tânis:itânis AN_KININFL "daughter" ; !¢nicânis yaml 
+ -kosis:ikosis AN_KININFL "son" ; !¢nikosis 	
+
+IN dependent nouns, which have no m-form(?) in Wolvengrey
+
+DEP-M-INIT-STEMS adds an affixmark and redirects to DEP-M-LIST 
+
+DEP-M-LIST for dependent nouns getting prefixes n-, k-, o-, pluss generic form m- \\
+ maniway:aniway IN_DEP_INIT_M_SG "cheek" ; !yaml 	
+ mîpit:îpit IN_DEP_INIT_M "tooth" ; !yaml  	
