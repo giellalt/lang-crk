@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build in-code documentation
 on: [push]
 jobs:
   build-and-deploy:
@@ -25,10 +25,10 @@ jobs:
           spellers: false
           fst: hfst
       - name: Build docu
-        run: make -C docs
+        run: make -C lang/docs
       - name: deploy gh pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/
+          publish_dir: lang/docs/
           enable_jekyll: true
