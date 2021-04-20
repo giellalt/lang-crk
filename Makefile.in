@@ -874,7 +874,7 @@ $(ALLINONE_MD_PAGE): $(VPATH_MD_PAGES)
 $(LINKS): $(VPATH_MD_PAGES)
 	$(AM_V_GEN)echo $$(for file in $^; do basename $$file; done) \
 			| tr ' ' '\n' \
-			| LC_COLLATE=C sed 's/[a-z0-9.-]*/* [&]\(&\)/g' \
+			| LC_COLLATE=C sed 's/[a-z0-9._-]*/* [&]\(&\)/g' \
 			> $@
 
 # FIXME: some temporary stuff to have index page
