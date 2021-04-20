@@ -9,7 +9,7 @@ The Plains Cree morphology and tools
 
 [fst-release]: https://github.com/giellalt/lang-crk/releases
 
-👉 [**Documentation**](https://giellalt.uit.no/lang/crk/crk.html) 👈🏼
+👉 [**Documentation**](https://giellalt.github.io/lang-crk/) 👈🏼
 
 
 This directory contains source files for the Plains Cree language
