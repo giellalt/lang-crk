@@ -2,8 +2,8 @@ The Plains Cree morphology and tools
 ====================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-crk)](https://github.com/giellalt/lang-crk/issues)
-[![Build Status](https://github.com/giellalt/lang-crk/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-crk/actions)
-[![License](https://img.shields.io/github/license/giellalt/template-lang-crk)](https://raw.githubusercontent.com/giellalt/lang-crk/develop/LICENSE)
+[![Build Status](https://github.com/giellalt/lang-crk/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-crk/actions)
+[![License](https://img.shields.io/github/license/giellalt/lang-crk)](https://raw.githubusercontent.com/giellalt/lang-crk/develop/LICENSE)
 
 👉🏼 **[Download the latest FSTs here (plains-cree-fsts*.zip)][fst-release]** 👈🏼
 
