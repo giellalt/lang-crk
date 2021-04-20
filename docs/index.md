@@ -17,31 +17,31 @@ and a spellchecker.
 # Project documentation
 
 * [Alberta Language Technology Lab](http://altlab.artsrn.ualberta.ca/)
-* [Work plan](WorkPlan.html)
+* [Work plan](WorkPlan.md)
 * [Documentation of Plains Cree nêhiyawêtân](http://giellatekno.uit.no/ped/crkdoc/oahpa/crk-oahpa.html)
 * [Documentation page for Plains Cree Gïelese](http://giellatekno.uit.no/ped/crkdoc/gielese/crk-gielese.html)
 
 # Open issues
-* [Misc](Notes.html)
-* [Locative](locative.html)
-* [Diminutive](diminutive.html)
-* [How about variants](variation.html)
-* [FST-issues from CWIL 2015 discussions](cwil2015_fst_notes.html)
+* [Misc](Notes.md)
+* [Locative](locative.md)
+* [Diminutive](diminutive.md)
+* [How about variants](variation.md)
+* [FST-issues from CWIL 2015 discussions](cwil2015_fst_notes.md)
 
 # Testing
-* [Lemma generation tests](LemmaGenerationTests.html)
-* [How to order and organize VTA-YAML-files](VTA-YAML.html)
+* [Lemma generation tests](LemmaGenerationTests.md)
+* [How to order and organize VTA-YAML-files](VTA-YAML.md)
 
 # Practical work
-* [Practical developing work, for the linguist](developingwork.html)
-* [The tags that are in use](https://gtsvn.uit.no/langtech/trunk/langs/crk/src/fst/root.lexc)   
+* [Practical developing work, for the linguist](developingwork.md)
+* [The tags that are in use](https://github.com/giellalt/lang-crk/blob/develop/src/fst/root.lexc) (see also the in-source documentation linked to below)
 * [A list of morphological tags](/lang/common/MorphologicalTags.html)
-* [Plains Cree disambiguation](PlainsCreeDisambiguation.html)
+* [Plains Cree disambiguation](PlainsCreeDisambiguation.md)
 
 # Meetings
 
-2014: [Jan 9th|meetings/140110.html]  // [Jan 16th](meetings/140116.html) //
-2015: [June 22nd](meetings/150622.html)
+- 2014: [Jan 9th](meetings/140110.md)  // [Jan 16th](meetings/140116.md) //
+- 2015: [June 22nd](meetings/150622.md)
 
 # Using the analysers
 
