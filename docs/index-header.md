@@ -7,6 +7,13 @@
 
 This page documents the work on the **Plains Cree language model**. 
 
+The analyser contains approximately 16500 stems — 2/3 of which are verbs —
+the morphology and morphophonology for the grammar, as well
+as a syntactic component.
+
+The analyser is in use in an e-learning program, an e-dictionary
+and a spellchecker.
+
 # Project documentation
 
 * Add links to project specific documentation here as needed. Keep the documentation in the `docs/` directory.
