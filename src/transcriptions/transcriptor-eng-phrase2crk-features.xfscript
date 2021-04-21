@@ -22,9 +22,9 @@ define Number [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] ;
 
 define Letters [ Alphabet | Punctuation | Number | " " ] ;
 
-define PFlags [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" |  "@P.object.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.tense.Prt@" | "@P.tense.Fut@" | "@P.tense.Int@" | "@P.tense.Cond@" | "@P.tense.Imp@" | "@P.tense.Imm@" | "@P.tense.Del@" | "@P.tense.Inf@" | "@P.prog.Prog@" | "@P.prog.Cop@" | "@P.rept.Rept@" | "@P.exist.Exist@" | "@P.neg.Neg@" ] ;
+define PFlags [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" |  "@P.object.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.tense.Prt@" | "@P.tense.Def@" | "@P.tense.Fut@" | "@P.tense.Int@" | "@P.tense.Cond@" | "@P.tense.Imp@" | "@P.tense.Imm@" | "@P.tense.Del@" | "@P.tense.Inf@" | "@P.prog.Prog@" | "@P.prog.Cop@" | "@P.rept.Rept@" | "@P.exist.Exist@" | "@P.neg.Neg@" ] ;
 
-define RFlags [ "@R.subject.1Sg@" | "@R.subject.2Sg@" | "@R.subject.3Sg@" |  "@R.object.1Sg@" | "@R.subject.2Sg@" | "@R.subject.3Sg@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" | "@R.tense.Prt@" | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Cond@" | "@R.tense.Imp@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" | "@R.prog.Prog@" | "@R.prog.Cop@" | "@R.rept.Rept@" | "@R.neg.Neg@" ];
+define RFlags [ "@R.subject.1Sg@" | "@R.subject.2Sg@" | "@R.subject.3Sg@" |  "@R.object.1Sg@" | "@R.subject.2Sg@" | "@R.subject.3Sg@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" | "@R.tense.Prt@" | "@R.tense.Def@" | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Cond@" | "@R.tense.Imp@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" | "@R.prog.Prog@" | "@R.prog.Cop@" | "@R.rept.Rept@" | "@R.neg.Neg@" ];
 
 define DFlags [ "@D.object@" | "@D.number@" | "@D.number.Sg@" | "@D.number.Pl@" | "@D.poss@" | "@D.dim@" | "@D.dim.Dim@" | "@D.prog@" | "@D.exist.Exist@" | "@D.neg@" ] ;
 
@@ -32,7 +32,7 @@ define Flags [ PFlags | RFlags | DFlags ] ;
 
 define SubjectTags [ "+1Sg" | "+2Sg" | "+3Sg" | "+1Pl" | "+21Pl" | "+2Pl" | "+3Pl" | "+4Sg/Pl" | "+5Sg/Pl" | "+X" | "+0Sg" ] ;
 define ObjectTags [ "+1SgO" | "+2SgO" | "+3SgO" | "+1PlO" | "+21PlO" | "+2PlO" | "+3PlO" | "+4Sg/PlO" | "+5Sg/PlO" |"+XO" ] ;
-define TenseTags [ "+Prs" | "+Prt" | "+Fut" | "+Int" | "+Cond" | "+Inf" | "+Imp" | "+Imm" | "+Del" | "+Prog" | "+Rept" | "+Neg" ] ;
+define TenseTags [ "+Prs" | "+Prt" | "+Def" | "+Fut" | "+Int" | "+Cond" | "+Inf" | "+Imp" | "+Imm" | "+Del" | "+Prog" | "+Rept" | "+Neg" ] ;
 define Tags [ SubjectTags | ObjectTags | TenseTags ] ;
 
 !! VERBS
@@ -136,7 +136,8 @@ regex [ "@P.subject.X@" -> "@P.object.X@" || [ "@P.subject.1Sg@" | "@P.subject.2
 define XO
 
 regex [ {when there} -> "@P.tense.Cond@" "@P.subject.0Sg@" || .#. _ Bx ]
-.o. [ {will} | [ [ {am} | {are} | {is} ] " "+ {going to} ] -> "@P.tense.Fut@" || Bx _ Bx ,,
+.o. [ [ [ {am} | {are} | {is} ] " "+ {going to} ] -> "@P.tense.Fut@" || Bx _ Bx ,,
+{will} -> "@P.tense.Def@" || Bx _ Bx ,,
 [ {want} | {wants} ] " "+ {to} -> "@P.tense.Int@" || Bx _ Bx ,,
 {when} -> "@P.tense.Cond@" || .#. _ Bx
 ] ;
@@ -187,6 +188,7 @@ define Imperative
 define SingleSpacing [ [ " " ]+ -> [ " " ] || \Bx _ \Bx ] ;
 
 regex [ [..] -> "@R.tense.Fut@" "+Fut" || _ .#. ,,
+[..] -> "@R.tense.Def@" "+Def" || _ .#. ,,
 [..] -> "@R.tense.Int@" "+Int" || _ .#. ,,
 [..] -> "@R.tense.Cond@" "+Cond" || _ .#. ,,
 [..] -> "@R.tense.Prt@" "+Prt" || _ .#. ,,

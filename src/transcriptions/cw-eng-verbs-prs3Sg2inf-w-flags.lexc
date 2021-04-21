@@ -1,6 +1,7 @@
 Multichar_Symbols
 @R.tense.Prs@
 @R.tense.Cond@
+@R.tense.Def@
 @R.tense.Fut@
 @R.tense.Int@
 @R.tense.Imm@
@@ -13,6 +14,7 @@ Multichar_Symbols
 LEXICON Root
 0:@R.tense.Prs@@D.subject.3Sg@@D.subject.4Sg@@D.subject.X@  Prs3Sg2Inf ;
 0:@R.tense.Cond@@D.subject.3Sg@@D.subject.4Sg@@D.subject.X@ Prs3Sg2Inf ;
+0:@R.tense.Def@ Prs3Sg2Inf ;
 0:@R.tense.Fut@ Prs3Sg2Inf ;
 0:@R.tense.Int@ Prs3Sg2Inf ;
 0:@R.tense.Imm@ Prs3Sg2Inf ;
