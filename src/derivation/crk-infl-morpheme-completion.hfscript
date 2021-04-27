@@ -3,13 +3,18 @@
 
 load ../crk-strict-generator-with-morpheme-boundaries.hfst
 
+! load crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst.nw 
+
 define Words
 
 define Bx [ "<" | ">" | "/" ] ;
 
 define Ax [ ? - Bx ] ;
 
-define SpellRelax [ a (->) â ,, e (->) ê ,, i (->) î ,, o (->) ô ,, 0 (->) [ %- | Bx ] ] ;
+define SpellRelax [ a (->) â ,, e (->) ê ,, i (->) î ,, o (->) ô
+,, â (->) a ,, î (->) i ,, ô (->) o
+,, 0 (->) "-"
+] ;
 
 define MaxHyphens [ [ [ ? - "-" ]* "-" ]^<6 [ ? - "-" ]* ] ;
 
@@ -17,12 +22,17 @@ define NextMorpheme [ ?+ [ 0:Ax ]* 0:Bx ] ;
 
 define PrefixStrings [ ?* [ 0:? ]* ] ;
 
-define CorrectWords [ ~[ $[ "+Err/Orth" ] ] .o. Words ] ;
+define InsertBoundary [ 0 (->) Bx ] ;
+
+define AddBoundary [ [..] -> "/" || "-" _ \[ "<" | ">" ] ] ; 
 
 define rmBoundary [ Bx -> 0 ] ;
 
+define CorrectWords [ ~[ $[ "+Err/Orth" | "+Err/Frag" ] ] .o. Words .o. AddBoundary ] ;
+
 regex [ SpellRelax
 ! .o. MaxHyphens
+.o. InsertBoundary
 .o. NextMorpheme
 .o. [ PrefixStrings .o. [ CorrectWords ">" ].l ].u
 .o. rmBoundary
@@ -30,4 +40,6 @@ regex [ SpellRelax
 
 save stack crk-infl-morpheme-completion.hfst
 
-! hfst-fst2fst -O -i crk-infl-morpheme-completion.hfst -o  crk-infl-morpheme-completion.hfstol
+! save stack crk-infl-morpheme-completion.nw.hfst
+
+! hfst-fst2fst -w -i crk-infl-morpheme-completion.hfst -o  crk-infl-morpheme-completion.hfstol
