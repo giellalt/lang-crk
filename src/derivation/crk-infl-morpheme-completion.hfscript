@@ -2,10 +2,19 @@
 ! based on morpheme boundaries
 
 load ../crk-strict-generator-with-morpheme-boundaries.hfst
+define Words
 
 ! load crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst.nw 
+! define Words
 
-define Words
+!! Prefix Weighting !!
+
+! cat ~/altlab2/crk/generated/ahenakew_wolfart_bloomfield.fst+cg.freq-sorted.txt| gawk '{ gsub("!","",$2); n=split($2,c,""); for(i=2; i<=n; i++) { printf "%i\t", $1; for(j=1; j<=i; j++) printf "%s", c[j]; printf "\n"; } }' | gawk '{ n[$2]+=$1; tot+=$1; } END { print "LEXICON Root"; PROCINFO["sorted_in"]="@val_num_desc"; for(i in n) { w=-log(n[i]/tot); print i" Tail \"weight: "w"\" ;"; } print ""; print "LEXICON Tail"; print "< [ ?::2 ]* > # ;"; }' > prefix_weighting.lexc
+
+read lexc prefix_weighting.lexc
+define PrefixWeighting
+
+!! Morpheme Completion !!
 
 define Bx [ "<" | ">" | "/" ] ;
 
@@ -32,11 +41,12 @@ define CorrectWords [ ~[ $[ "+Err/Orth" | "+Err/Frag" ] ] .o. Words .o. AddBound
 
 regex [ SpellRelax
 ! .o. MaxHyphens
-.o. InsertBoundary
+.o. [ InsertBoundary
 .o. NextMorpheme
 .o. [ PrefixStrings .o. [ CorrectWords ">" ].l ].u
-.o. rmBoundary
-] ;
+.o. rmBoundary ] ]
+.o. PrefixWeighting
+;
 
 save stack crk-infl-morpheme-completion.hfst
 
