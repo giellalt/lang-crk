@@ -738,7 +738,7 @@ maintainer-clean-generic:
 	@echo "it deletes files that may require special tools to rebuild."
 clean: clean-am
 
-clean-am: clean-generic mostlyclean-am
+clean-am: clean-generic clean-local mostlyclean-am
 
 distclean: distclean-am
 	-rm -f Makefile
@@ -804,17 +804,17 @@ uninstall-am: uninstall-docDATA
 
 .MAKE: install-am install-strip
 
-.PHONY: all all-am check check-am clean clean-generic cscopelist-am \
-	ctags-am distclean distclean-generic distdir dvi dvi-am html \
-	html-am info info-am install install-am install-data \
-	install-data-am install-docDATA install-dvi install-dvi-am \
-	install-exec install-exec-am install-html install-html-am \
-	install-info install-info-am install-man install-pdf \
-	install-pdf-am install-ps install-ps-am install-strip \
-	installcheck installcheck-am installdirs maintainer-clean \
-	maintainer-clean-generic mostlyclean mostlyclean-generic pdf \
-	pdf-am ps ps-am tags-am uninstall uninstall-am \
-	uninstall-docDATA
+.PHONY: all all-am check check-am clean clean-generic clean-local \
+	cscopelist-am ctags-am distclean distclean-generic distdir dvi \
+	dvi-am html html-am info info-am install install-am \
+	install-data install-data-am install-docDATA install-dvi \
+	install-dvi-am install-exec install-exec-am install-html \
+	install-html-am install-info install-info-am install-man \
+	install-pdf install-pdf-am install-ps install-ps-am \
+	install-strip installcheck installcheck-am installdirs \
+	maintainer-clean maintainer-clean-generic mostlyclean \
+	mostlyclean-generic pdf pdf-am ps ps-am tags-am uninstall \
+	uninstall-am uninstall-docDATA
 
 .PRECIOUS: Makefile
 
@@ -866,16 +866,24 @@ $(srcdir)/%.md: $(top_srcdir)/src/transcriptions/%.lexc
 	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
 
 $(ALLINONE_MD_PAGE): $(VPATH_MD_PAGES)
-	$(AM_V_at)-rm -rf build
-	$(AM_V_at)-rm -rf $(srcdir)/build
 	$(AM_V_at)-rm -f $@
-	$(AM_V_GEN)cat $^ > $@
+	$(AM_V_GEN)if test "x$(MD_PAGES)" == "x"; \
+		then \
+			echo "Sorry, no in-source documentation found." > $@ ;\
+		else \
+			cat $^ > $@ ;\
+		fi
 
 $(LINKS): $(VPATH_MD_PAGES)
-	$(AM_V_GEN)echo $$(for file in $^; do basename $$file; done) \
-			| tr ' ' '\n' \
-			| LC_COLLATE=C sed 's/[a-z0-9._-]*/* [&]\(&\)/g' \
-			> $@
+	$(AM_V_GEN)if test "x$(MD_PAGES)" == "x"; \
+		then \
+			echo "* No in-source documentation" > $@ ;\
+		else \
+			echo $$(for file in $^ ; do basename $$file; done) \
+				| tr ' ' '\n' \
+				| LC_COLLATE=C sed 's/[a-z0-9._-]*/* [&]\(&\)/g' \
+				> $@; \
+		fi
 
 # FIXME: some temporary stuff to have index page
 $(INDEX): $(HEADER) $(LINKS)
@@ -883,6 +891,13 @@ $(INDEX): $(HEADER) $(LINKS)
 
 %.md: %.jspwiki
 	$(AM_V_AWK)"$(GAWK)" -f $(JSPWIKI2MD) < $< > $@
+
+clean-local:
+	$(AM_V_at)-rm -rf $(builddir)/build
+	$(AM_V_at)-rm -rf $(srcdir)/build
+
+maintainerclean-local:
+	$(AM_V_at)-rm -rf $(VPATH_MD_PAGES) $(ALLINONE_MD_PAGE)
 
 # vim: set ft=automake:
 # clitics-morphology.md       \
