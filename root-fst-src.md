@@ -3,7 +3,7 @@
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
 
 
-# Definitions for Multichar_Symbols
+ # Definitions for Multichar_Symbols
 
 ## Analysis symbols
 
@@ -157,8 +157,8 @@ morphophonological structure
 
 
 ## Symbols that need to be escaped on the lower side (towards twolc):
-* **»7**:  Literal »
-* **«7**:  Literal «
+ * **»7**:  Literal »
+ * **«7**:  Literal «
 ```
   %[%>%]  - Literal >
   %[%<%]  - Literal <

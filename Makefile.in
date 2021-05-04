@@ -333,6 +333,7 @@ R = @R@
 RSYNC = @RSYNC@
 SAXON = @SAXON@
 SAXONJAR = @SAXONJAR@
+SED = @SED@
 SEE = @SEE@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
@@ -417,14 +418,13 @@ MD_PAGES = root-morphology.md    \
 
 
 # Variables:
-VPATH_MD_PAGES = $(addprefix $(srcdir)/,$(MD_PAGES))
 ALLINONE_MD_PAGE = $(srcdir)/$(GTLANG).md
 LINKS = $(srcdir)/Links.md
 HEADER = $(srcdir)/index-header.md
 INDEX = $(srcdir)/index.md
 
 # no regenerations while debugging
-doc_DATA = $(INDEX) $(LINKS) $(VPATH_MD_PAGES) $(ALLINONE_MD_PAGE)
+doc_DATA = $(INDEX) $(LINKS) $(ALLINONE_MD_PAGE)
 DOCC2MDWIKI = $(GTCORE)/scripts/doccomments2ghpages.awk
 JSPWIKI2MD = $(GTCORE)/scripts/jspwiki2md.awk
 GRAPHPLOTTER = $(GTCORE)/scripts/plot-speller-progress.R
@@ -819,9 +819,9 @@ uninstall-am: uninstall-docDATA
 .PRECIOUS: Makefile
 
 
-.PHONY: gh-pages
+.PHONY: generate-markdown regenerate-markdown
 
-gh-pages: $(INDEX) $(LINKS) $(VPATH_MD_PAGES) $(ALLINONE_MD_PAGE)
+regenerate-markdown: generate-markdown
 
 @WANT_SPELLERS_TRUE@speller-report.svg: speller-report.tsv $(GRAPHPLOTTER)
 @WANT_SPELLERS_TRUE@	$(AM_V_GEN)"$(R)" --no-save < $(GRAPHPLOTTER)
@@ -844,46 +844,87 @@ gh-pages: $(INDEX) $(LINKS) $(VPATH_MD_PAGES) $(ALLINONE_MD_PAGE)
 @WANT_SPELLERS_FALSE@	@echo need to configure --enable-spellers to generate statistics
 @WANT_SPELLERS_FALSE@	touch $@
 
-$(srcdir)/%-syntax.md: $(top_srcdir)/src/cg3/%.cg3
+$(srcdir)/%-cg3-src.md: $(top_srcdir)/src/cg3/%.cg3
 	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
 
-$(srcdir)/%-morphology.md: $(top_srcdir)/src/fst/%.lexc
+$(srcdir)/%-fst-src.md: $(top_srcdir)/src/fst/%.lexc
 	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
 
-$(srcdir)/%-morphology.md: $(top_srcdir)/src/fst/%.twolc
+# lang-smn
+$(srcdir)/%-oahpa-filer-fst-src.md: $(top_srcdir)/src/fst/oahpa-filer/%.lexc
 	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
 
-$(srcdir)/%-morphology.md: $(top_srcdir)/src/fst/%.xfscript
+# lang-crk
+$(srcdir)/%-derivation-src.md: $(top_srcdir)/src/derivation/%.lexc
 	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
 
-$(srcdir)/%-stems.md: $(top_srcdir)/src/fst/stems/%.lexc
+$(srcdir)/%-fst-src.md: $(top_srcdir)/src/fst/%.lexc
 	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
 
-$(srcdir)/%-affixes.md: $(top_srcdir)/src/fst/affixes/%.lexc
+$(srcdir)/%-fst-src.md: $(top_srcdir)/src/fst/%.twolc
 	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
 
-$(srcdir)/%.md: $(top_srcdir)/src/transcriptions/%.lexc
+$(srcdir)/%-generated_files-fst-src.md: $(top_srcdir)/src/fst/generated_files/%.lexc
 	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
 
-$(ALLINONE_MD_PAGE): $(VPATH_MD_PAGES)
-	$(AM_V_at)-rm -f $@
-	$(AM_V_GEN)if test "x$(MD_PAGES)" == "x"; \
-		then \
-			echo "Sorry, no in-source documentation found." > $@ ;\
+$(srcdir)/%-stems-fst-src.md: $(top_srcdir)/src/fst/stems/%.lexc
+	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
+
+$(srcdir)/%-affixes-fst-src.md: $(top_srcdir)/src/fst/affixes/%.lexc
+	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
+
+$(srcdir)/%-transcriptions-src.md: $(top_srcdir)/src/transcriptions/%.lexc
+	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
+
+$(srcdir)/%-grammarcheckers-tools.md: $(top_srcdir)/tools/grammarcheckers/%.cg3
+	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
+
+generated-markdowns.sources:
+	$(AM_V_GEN)fgrep -rl --include '*.lexc' --include '*.twolc' --include '*.twolc' \
+		--exclude 'Makefile*' --exclude '*.pmscript' --exclude '*.xfscript'\
+		--exclude lexicon.tmp.lexc \
+		'!! ' $(top_srcdir)/src/* $(top_srcdir)/tools/* |\
+		fgrep -v incoming/ > $@
+
+# ../src/fst/incoming/affixes/nouns.lexc
+generated-markdowns.targets: generated-markdowns.sources
+	$(AM_V_GEN)for f in `cat $<` ; do \
+		case $$f in \
+		*.lexc) x=`basename $$f .lexc` ;; \
+		*.cg3) x=`basename $$f .cg3` ;; \
+		*.twolc) x=`basename $$f .twolc` ;; \
+		esac ;\
+		d=`dirname $$f` ;\
+		p=`basename $$d xxx` ;\
+		dd=`dirname $$d` ;\
+		gp=`basename $$dd xxx` ;\
+		ddd=`dirname $$dd` ;\
+		ggp=`basename $$ddd xxx` ;\
+		dddd=`dirname $$ddd`;\
+		gggp=`basename $$ddddd xxx`;\
+		if test x$$gggp = xsrc -o x$$gggp = xtools ; then \
+			echo $$x-$$p-$$gp-$$ggp-$$gggp.md;\
+		elif test x$$ggp = xsrc -o x$$ggp = xtools ; then \
+			echo $$x-$$p-$$gp-$$ggp.md;\
+		elif test x$$gp = xsrc -o x$$gp = xtools ; then \
+			echo $$x-$$p-$$gp.md ;\
 		else \
-			cat $^ > $@ ;\
-		fi
+			echo $$x-$$p.md ;\
+		fi ;\
+	done > $@
 
-$(LINKS): $(VPATH_MD_PAGES)
-	$(AM_V_GEN)if test "x$(MD_PAGES)" == "x"; \
-		then \
-			echo "* No in-source documentation" > $@ ;\
-		else \
-			echo $$(for file in $^ ; do basename $$file; done) \
-				| tr ' ' '\n' \
-				| LC_COLLATE=C sed 's/[a-z0-9._-]*/* [&]\(&\)/g' \
-				> $@; \
-		fi
+generate-markdown: generated-markdowns.targets
+	$(AM_V_at)for f in `cat $<` ; do \
+		$(MAKE) $(srcdir)/$$f;\
+	done
+
+$(ALLINONE_MD_PAGE): generate-markdown generated-markdowns.targets
+	$(AM_V_GEN)cat `cat generated-markdowns.targets | sed -e 's@^@$(srcdir)/@'` > $@
+
+$(LINKS): generate-markdown generated-markdowns.targets
+	$(AM_V_GEN)cat generated-markdowns.targets |\
+				LC_COLLATE=C sed 's/[a-z0-9._-]*/* [&]\(&\)/g' \
+				> $@
 
 # FIXME: some temporary stuff to have index page
 $(INDEX): $(HEADER) $(LINKS)
@@ -897,7 +938,7 @@ clean-local:
 	$(AM_V_at)-rm -rf $(srcdir)/build
 
 maintainerclean-local:
-	$(AM_V_at)-rm -rf $(VPATH_MD_PAGES) $(ALLINONE_MD_PAGE)
+	$(AM_V_at)-rm -rf $(ALLINONE_MD_PAGE)
 
 # vim: set ft=automake:
 # clitics-morphology.md       \

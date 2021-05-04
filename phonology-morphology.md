@@ -224,7 +224,7 @@ VG>i2 -> VV
 * *mi4<îwat3>i2^DIMs*
 * *m00îwac0i0s*
 
-__@OUTSIDE RULES@__
+**@OUTSIDE RULES@**
 
 
 * *d1ay2-<nipâw*
