@@ -11,12 +11,756 @@ Nouns
 Verbs
 
 
-Proper noun inflection
-The Plains Cree language proper nouns inflect in the same cases as regular
-nouns, but with a colon (':') as separator.
+
+| --- 
 
 
 
+
+
+
+
+
+
+
+ *  y2:0       epenthetic joiner in reduplication of vowel-initial stems
+ *  y3:0       epenthetic joiner in reduplication of vowel-initial stems
+ *  d1:0   Reduplication consonant place holder 
+ *  d2:0   Reduplication consonant place holder 
+
+ *  %^EGLOT:0    Epenthetic -h- place holder
+
+
+ *  w3:w  3rd person possessor for NDA and NDI (non-kinship)
+ *  y4:y  immutable -y in single-syllable nouns
+ *  i4:i  possessive prefix -i that deletes before Vowel in Dep nouns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* *mêskanaw>i2s*
+* *mêskanâ0>0s*
+
+
+* *mêskanaw>i2hk*
+* *mêskanâ0>0hk*
+
+
+* *sôniyâw>i2s^DIM*
+* *sôniyâ0>0s0*
+
+
+* *miskotâkay>i2s^DIM*
+* *miskocâkâ0>0s0*
+
+
+* *nâpêw>i2^DIMsis*
+* *nâpê0>00sis*
+
+
+* *iskwêw>i2^DIMsis*
+* *iskwê0>00sis*
+
+
+* *maskosiy>i2^DIMs*
+* *maskosî0>00s*
+
+
+* *pikiw>i2^DIMs*
+* *pikî0>00s*
+
+
+* *maskosiy>i2hk*
+* *maskosî0>0hk*
+
+
+
+* *sîwâpoy>i2^DIMs*
+* *sîwâpô0>00s*
+
+
+* *tohtôsâpoy>i2hk*
+* *tohtôsâpô0>0hk*
+
+
+
+
+* *wâwi>i2^DIMs*
+* *wâwi>00s*
+
+
+* *ôsi>i2hk*
+* *ôsi>0hk*
+
+
+
+
+
+
+
+* *atimw>i2^DIMs*
+* *acimo>00s*
+
+
+* *mistikw>i2hk*
+* *mistiko>0hk*
+* *sâkahikan>i2^DIMs*
+* *sâkahikan>i0s*
+
+
+* *maskisin>i2hk*
+* *maskisin>ihk*
+
+
+* *atimw*
+* *atim0*
+
+
+* *askihkw*
+* *askihk0*
+
+
+* *atimw*
+* *atim0*
+
+* *nit2<nînihikw*
+* *ni0<nînihik*
+
+
+
+* *a>tân*
+* *ê>tân*
+
+
+
+* *nit2<astotin>i2^DIMs*
+* *nic<ascocin>i0s*
+
+
+
+
+
+
+* *ê^EGLOT<acimo>t*
+* *êh<acimo>t*
+
+* *ê^EGLOT<d1ay2<acimo>t*
+* *êh<0ay<acimo>t*
+
+* *ê^EGLOT<d2ay3d1âh<acimo>t*
+* *êh<0ay0âh<acimo>t*
+
+
+* *nit2<nêhiyawê>n2*
+* *ni0<nêhiyawâ>n*
+* *kit2<kâsîhkwê>n2*
+* *ki0<kâsîhkwâ>n*
+
+
+* *nit2<tipiska>n2*
+* *ni0<tipiskê>n*
+* *kit2<kiskêyihta>n2*
+* *ki0<kiskêyihtê>n*
+
+
+
+* *ê-<nîpin3>k*
+* *ê-<nîpih>k*
+
+
+
+* *ê-<mispon>k*
+* *ê-<mispo0>k*
+
+
+* *wapâht4>ikâtê>w*
+* *wapâhc>ikâtê>w*
+
+
+
+
+* *ê-<mow2>i2ht*
+* *ê-<mow>iht*
+* *ê-<ayaw2>i2koyâhk*
+* *ê-<ayaw>ikoyâhk*
+* *kit2<kîskisw>in*
+* *ki0<kîskiso>0n*
+* *nit2<kîskisw>i2mâwa*
+* *ni0<kîskiso>0mâwa*
+* *ê-<kîskisw>i2tân*
+* *ê-<kîskiso>0tân*
+* *ê-<kîskisw>it*
+* *ê-<kîskiso>0t*
+* *ê-<kîskisw>i2sk*
+* *ê-<kîskiso>0sk*
+* *ê-<kîskisw>i2koyâhk*
+* *ê-<kîskiso>0koyâhk*
+* *nit2<kîskisw>i2kawin*
+* *ni0<kîskiso>0kawin*
+* *kîskisw>in*
+* *kîskiso>0n*
+* *kîskisw>ii2hkan*
+* *kîskisô>0hkan*
+
+* *kit2<nitonaw>in*
+* *ki0<nitonaw>in*
+* *nit2<nitonaw>i2mâwa*
+* *ni0<nitonâ0>0mâwa*
+* *ê-<nitonaw>i2tân*
+* *ê-<nitonâ0>0tân*
+* *ê-<nitonaw>it*
+* *ê-<nitonaw>it*
+* *ê-<nitonaw>i2sk*
+* *ê-<nitonâ0>0sk*
+* *ê-<nitonaw>i2koyâhk*
+* *ê-<nitonâ0>0koyâhk*
+* *nit2<nitonaw>i2kawin*
+* *ni0<nitonâ0>0kawin*
+* *nitonaw>in*
+* *nitonaw>in*
+* *nitonaw>îhkan*
+* *nitonaw>îhkan*
+
+
+
+* *kit2<nakat3>in*
+* *ki0<nakas>in*
+* *nit2<nakat3>i2mâwa*
+* *ni0<nakat>imâwa*
+* *ê-<nakat3>i2t>ân*
+* *ê-<nakat>it>ân*
+* *ê-<nakat3>it*
+* *ê-<nakas>it*
+* *ê-<nakat3>i2sk*
+* *ê-<nakat>isk*
+* *ê-<nakat3>i2koyâhk*
+* *ê-<nakat>ikoyâhk*
+* *nit2<nakat3>i2kawin*
+* *ni0<nakat>ikawin*
+* *nakat3>in*
+* *nakas>in*
+* *nakat3>ii2hkan*
+* *nakas>îhkan*
+
+
+* *kit2<kost3>in*
+* *ki0<ko0s>in*
+* *nit2<kost3>i2mâwa*
+* *ni0<kost>imâwa*
+* *ê-<kost3>i2tân*
+* *ê-<kost>itân*
+* *ê-<kost3>it*
+* *ê-<ko0s>it*
+* *ê-<kost3>i2sk*
+* *ê-<kost>isk*
+* *ê-<kost3>i2koyâhk*
+* *ê-<kost>ikoyâhk*
+* *nit2<kost3>i2kawin*
+* *ni0<kost>ikawin*
+* *kost3>in*
+* *ko0s>in*
+* *kost3>ii2hkan*
+* *ko0s>îhkan*
+
+
+
+
+* *mi4<îwat3>i2^DIMs*
+* *m0<îwac>i0s*
+
+**ReduplCRule1**
+
+**ReduplCRule2**
+
+**ReduplY2Rule**
+
+**ReduplY3Rule**
+
+* *d1ay2-<nipâw*
+* *na0-<nipâw*
+
+* *d1âh-<nipâw*
+* *nâh-<nipâw*
+
+* *d2ay3-d1âh-<nipâw*
+* *na0-nâh-<nipâw*
+
+* *d2ay3-d1âh-<ayâw*
+* *0ay-0âh-<ayâw*
+
+* *d1âh-<ayâw*
+* *0âh-<ayâw*
+
+* *d1ay2-<ayâw*
+* *0ay-<ayâw*
+
+INITIAL CHANGE
+
+
+
+* *nipât^IC*
+* *nêpât0*
+
+* *miyo-<nipât^IC*
+* *mêyo-<nipât0*
+
+* *itwêt^IC*
+* *êtwêt0*
+
+* *apit^IC*
+* *êpit0*
+
+* *wayawit^IC*
+* *wêyawit0*
+
+* *îkatêhtêt^IC*
+* *âkatêhtêt0*
+
+* *nîmit^IC*
+* *nâmit0*
+
+* *0ohcît^IC*
+* *wêhcît0*
+
+* *m0ostohtêt^IC*
+* *mwêstohtêt0*
+
+
+
+* *0oyôyot^IC*
+* *wêyôyot0*
+
+* *k0ocît^IC*
+* *kwêcît0*
+
+
+
+
+
+* *îkatêhât^IC*
+* *âkatêhât0*
+
+* *00îkatêhât^IC*
+* *iyîkatêhât0*
+
+* *00êskêt^IC*
+* *iyêskêt0*
+
+* *00âcimot^IC*
+* *iyâcimot0*
+
+* *00ôhkomit^IC*
+* *iyôhkomit0*
+
+
+
+* *w3<spiton*
+* *o<spiton*
+
+* *ni<spiton*
+* *ni<spiton*
+
+* *ki<spiton*
+* *ki<spiton*
+
+* *w3<îpit*
+* *w<îpit*
+
+* *w3<ahkwan*
+* *w<ahkwan*
+
+
+
+
+
+
+
+* *ni4<ohkom*
+* *n0<ôhkom*
+
+* *ni4<ohkom>i2nân>ak*
+* *n0<ôhkom>inân>ak*
+
+* *ki4<ohkom*
+* *k0<ôhkom*
+
+* *w3<ohkom>a*
+* *0<ohkom>a*
+
+
+* *nit2<ospwâkan*
+* *nit<ôspwâkan*
+
+* *kit2<ospwâkan*
+* *kit<ôspwâkan*
+
+* *ot2<ospwâkan*
+* *ot<ôspwâkan*
+
+
+# File containing abbreviations 
+
+## Lexica for adding tags and periods
+
+Splitting in 4 + 1  groups, because of the preprocessor
+
+ * **LEXICON Abbreviation   **
+ 1. The ITRAB ;	    lexicon (intransitive abbrs)
+ 1. The TRNUMAB ;   lexicon (abbrs trans wrt. numberals)
+
+## The sublexica
+### Dividing between abbreviations with and witout final period
+
+ * **LEXICON ab-noun   **
+
+ * **LEXICON ab-adv   **
+
+### The lexicons that add tags
+
+ * **LEXICON ab-nodot-noun   **  The bulk
+
+ * **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
+
+ * **LEXICON ab-nodot-adv   **
+
+ * **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
+
+ * **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
+
+
+
+## The abbreviation lexicon itself
+
+
+
+ * **LEXICON ITRAB   ** are intransitive abbreviations, Ltd. etc.
+
+
+
+
+
+
+
+
+ * **LEXICON TRNUMAB   ** contains abbreviations who are transitive in front of numerals 
+
+For abbrs for which numerals are complements, but other
+words not necessarily are. This group treats arabic numerals as
+if it were transitive but letters as if it were intransitive.
+
+
+
+
+
+
+
+ * **LEXICON TRAB   ** contains transitive abbreviations
+
+This lexicon is for abbrs that always have a constituent following it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Plains Cree numerals                           
+
+## The file for numerals
+
+ * LEXICON Numerals 
+
+
+
+
+
+## Here start the 999 numbers
+
+ * LEXICON UNDERTHOUSAND 
+
+ * LEXICON HUNDREDS 
+
+ * LEXICON CUODI 
+
+ * LEXICON HUNDRED 
+
+
+
+ * LEXICON TENS 
+
+ * LEXICON TEN 
+
+
+
+
+ * LEXICON ONESTONEXT 
+
+
+
+ * LEXICON TEENS 
+
+ * LEXICON ONES 
+
+ * LEXICON CARDINAL 
+
+ * LEXICON NUM  adds +Num+Ipc
+
+
+
+
+
+
+
+Test lemma/stem set for nouns according the new crk FST
+
+
+Complete extraction of lemma:stem info from AEW 2020, according to
+LEXC structure in the new crk FST.
+
+
+
+
+
+
+
+Place-holder for inserting derivational FST after prefixes and before suffixes
+DRV-FST is the place-holder character
+
+
+
+Linking verb stems from Derivational FST to their inflectional suffixes
+
+Nouns
+
+Verbs
+
+## Plains Cree pronouns
+
+There are more pronoums to be added here.
+
+ LEXICON Pronoun 
+
+
+ LEXICON Personal  \\
+ niya+Pron+Pers+1Sg:niya # ; 
+ niya+Pron+Pers+1Sg:nîya # ;  
+ kiya+Pron+Pers+2Sg:kiya # ; 
+
+
+
+ LEXICON Interrogative   \\
+ awîna+Pron+Interr+Sg:awîna # "who,whose" ;
+ awîna+Pron+Interr+Pl:awîniki # "who" ;
+
+ LEXICON Indefinite  \\
+ awiyak+Pron+Indef+A+Sg:awiyak # "someone" ; 
+ awiyak+Pron+Indef+A+Pl:awiyakak # "some people" ;
+
+ LEXICON Demonstrative    \\
+ANIMATE \\
+ awa+Pron+Dem+Prox+A+Sg:awa # "this" ; 
+ awa+Pron+Dem+Prox+A+Pl:ôki # "these" ; 
+
+
+
+INANIMATE \\
+
+ ôma+Pron+Dem+Prox+I+Sg:ôma # "this" ; 
+ ôma+Pron+Dem+Prox+I+Pl:ôhi # "these" ; 
+
+
+
+ ôma+Pron+Def+Prox+I+Sg:ôma # "this one" ; 
+ ôma+Pron+Def+Prox+I+Pl:ôhi # "these one" ; 
+
+
+
+
+
+
+
+Model verb lemmas and stems for new crk FST
+
+
+Full incorporation of AEW 2020 verbs into new crk FST
+
+
+
+
+# Plains Cree particles                           
+
+The file contains the following lexicons, with content as described:
+
+ * LEXICON Particle  adds +Ipc
+
+
+ * LEXICON Particle/Interjection   adds +Ipc+Interj
+
+
+ * LEXICON Particle/Name  adds +Ipc+Prop
+
+
+ * LEXICON Particle/Phrase  adds +Ipc+Phr
+
+
+ * LEXICON Particles  contains the actual list of particles.
+
+
+
+# Plains Cree numerals                           
+
+## The file for Arabic, Roman, and other symbolic numerals
+
+ * **LEXICON NUM-PREFIXES   **
+
+ * **LEXICON ARABIC   ** arabic numerals
+
+ * **LEXICON ARABICLOOPphone   ** +358(0)16671254
+
+ * **LEXICON ARABICCASEphone   **  
+
+ * **LEXICON ARABICLOOP   **
+
+
+ * **LEXICON ARABICLOOPORD   ** ordinals
+
+ * **LEXICON NUMARABTAG   ** 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Symbol affixes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NOUN_ENDLEX for wrapping up various things
+
+
+End of noun affixes code
 
 Plains Cree verb morphology                  
 
@@ -1089,479 +1833,11 @@ Derives to VIIn
 
 End of verb affixes LEXC code
 
-# Symbol affixes
+Proper noun inflection
+The Plains Cree language proper nouns inflect in the same cases as regular
+nouns, but with a colon (':') as separator.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-NOUN_ENDLEX for wrapping up various things
-
-
-End of noun affixes code
-
-
-| --- 
-
-
-
-
-
-
-
-
-
-
- *  y2:0       epenthetic joiner in reduplication of vowel-initial stems
- *  y3:0       epenthetic joiner in reduplication of vowel-initial stems
- *  d1:0   Reduplication consonant place holder 
- *  d2:0   Reduplication consonant place holder 
-
- *  %^EGLOT:0    Epenthetic -h- place holder
-
-
- *  w3:w  3rd person possessor for NDA and NDI (non-kinship)
- *  y4:y  immutable -y in single-syllable nouns
- *  i4:i  possessive prefix -i that deletes before Vowel in Dep nouns
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* *mêskanaw>i2s*
-* *mêskanâ0>0s*
-
-
-* *mêskanaw>i2hk*
-* *mêskanâ0>0hk*
-
-
-* *sôniyâw>i2s^DIM*
-* *sôniyâ0>0s0*
-
-
-* *miskotâkay>i2s^DIM*
-* *miskocâkâ0>0s0*
-
-
-* *nâpêw>i2^DIMsis*
-* *nâpê0>00sis*
-
-
-* *iskwêw>i2^DIMsis*
-* *iskwê0>00sis*
-
-
-* *maskosiy>i2^DIMs*
-* *maskosî0>00s*
-
-
-* *pikiw>i2^DIMs*
-* *pikî0>00s*
-
-
-* *maskosiy>i2hk*
-* *maskosî0>0hk*
-
-
-
-* *sîwâpoy>i2^DIMs*
-* *sîwâpô0>00s*
-
-
-* *tohtôsâpoy>i2hk*
-* *tohtôsâpô0>0hk*
-
-
-
-
-* *wâwi>i2^DIMs*
-* *wâwi>00s*
-
-
-* *ôsi>i2hk*
-* *ôsi>0hk*
-
-
-
-
-
-
-
-* *atimw>i2^DIMs*
-* *acimo>00s*
-
-
-* *mistikw>i2hk*
-* *mistiko>0hk*
-* *sâkahikan>i2^DIMs*
-* *sâkahikan>i0s*
-
-
-* *maskisin>i2hk*
-* *maskisin>ihk*
-
-
-* *atimw*
-* *atim0*
-
-
-* *askihkw*
-* *askihk0*
-
-
-* *atimw*
-* *atim0*
-
-* *nit2<nînihikw*
-* *ni0<nînihik*
-
-
-
-* *a>tân*
-* *ê>tân*
-
-
-
-* *nit2<astotin>i2^DIMs*
-* *nic<ascocin>i0s*
-
-
-
-
-
-
-* *ê^EGLOT<acimo>t*
-* *êh<acimo>t*
-
-* *ê^EGLOT<d1ay2<acimo>t*
-* *êh<0ay<acimo>t*
-
-* *ê^EGLOT<d2ay3d1âh<acimo>t*
-* *êh<0ay0âh<acimo>t*
-
-
-* *nit2<nêhiyawê>n2*
-* *ni0<nêhiyawâ>n*
-* *kit2<kâsîhkwê>n2*
-* *ki0<kâsîhkwâ>n*
-
-
-* *nit2<tipiska>n2*
-* *ni0<tipiskê>n*
-* *kit2<kiskêyihta>n2*
-* *ki0<kiskêyihtê>n*
-
-
-
-* *ê-<nîpin3>k*
-* *ê-<nîpih>k*
-
-
-
-* *ê-<mispon>k*
-* *ê-<mispo0>k*
-
-
-* *wapâht4>ikâtê>w*
-* *wapâhc>ikâtê>w*
-
-
-
-
-* *ê-<mow2>i2ht*
-* *ê-<mow>iht*
-* *ê-<ayaw2>i2koyâhk*
-* *ê-<ayaw>ikoyâhk*
-* *kit2<kîskisw>in*
-* *ki0<kîskiso>0n*
-* *nit2<kîskisw>i2mâwa*
-* *ni0<kîskiso>0mâwa*
-* *ê-<kîskisw>i2tân*
-* *ê-<kîskiso>0tân*
-* *ê-<kîskisw>it*
-* *ê-<kîskiso>0t*
-* *ê-<kîskisw>i2sk*
-* *ê-<kîskiso>0sk*
-* *ê-<kîskisw>i2koyâhk*
-* *ê-<kîskiso>0koyâhk*
-* *nit2<kîskisw>i2kawin*
-* *ni0<kîskiso>0kawin*
-* *kîskisw>in*
-* *kîskiso>0n*
-* *kîskisw>ii2hkan*
-* *kîskisô>0hkan*
-
-* *kit2<nitonaw>in*
-* *ki0<nitonaw>in*
-* *nit2<nitonaw>i2mâwa*
-* *ni0<nitonâ0>0mâwa*
-* *ê-<nitonaw>i2tân*
-* *ê-<nitonâ0>0tân*
-* *ê-<nitonaw>it*
-* *ê-<nitonaw>it*
-* *ê-<nitonaw>i2sk*
-* *ê-<nitonâ0>0sk*
-* *ê-<nitonaw>i2koyâhk*
-* *ê-<nitonâ0>0koyâhk*
-* *nit2<nitonaw>i2kawin*
-* *ni0<nitonâ0>0kawin*
-* *nitonaw>in*
-* *nitonaw>in*
-* *nitonaw>îhkan*
-* *nitonaw>îhkan*
-
-
-
-* *kit2<nakat3>in*
-* *ki0<nakas>in*
-* *nit2<nakat3>i2mâwa*
-* *ni0<nakat>imâwa*
-* *ê-<nakat3>i2t>ân*
-* *ê-<nakat>it>ân*
-* *ê-<nakat3>it*
-* *ê-<nakas>it*
-* *ê-<nakat3>i2sk*
-* *ê-<nakat>isk*
-* *ê-<nakat3>i2koyâhk*
-* *ê-<nakat>ikoyâhk*
-* *nit2<nakat3>i2kawin*
-* *ni0<nakat>ikawin*
-* *nakat3>in*
-* *nakas>in*
-* *nakat3>ii2hkan*
-* *nakas>îhkan*
-
-
-* *kit2<kost3>in*
-* *ki0<ko0s>in*
-* *nit2<kost3>i2mâwa*
-* *ni0<kost>imâwa*
-* *ê-<kost3>i2tân*
-* *ê-<kost>itân*
-* *ê-<kost3>it*
-* *ê-<ko0s>it*
-* *ê-<kost3>i2sk*
-* *ê-<kost>isk*
-* *ê-<kost3>i2koyâhk*
-* *ê-<kost>ikoyâhk*
-* *nit2<kost3>i2kawin*
-* *ni0<kost>ikawin*
-* *kost3>in*
-* *ko0s>in*
-* *kost3>ii2hkan*
-* *ko0s>îhkan*
-
-
-
-
-* *mi4<îwat3>i2^DIMs*
-* *m0<îwac>i0s*
-
-**ReduplCRule1**
-
-**ReduplCRule2**
-
-**ReduplY2Rule**
-
-**ReduplY3Rule**
-
-* *d1ay2-<nipâw*
-* *na0-<nipâw*
-
-* *d1âh-<nipâw*
-* *nâh-<nipâw*
-
-* *d2ay3-d1âh-<nipâw*
-* *na0-nâh-<nipâw*
-
-* *d2ay3-d1âh-<ayâw*
-* *0ay-0âh-<ayâw*
-
-* *d1âh-<ayâw*
-* *0âh-<ayâw*
-
-* *d1ay2-<ayâw*
-* *0ay-<ayâw*
-
-INITIAL CHANGE
-
-
-
-* *nipât^IC*
-* *nêpât0*
-
-* *miyo-<nipât^IC*
-* *mêyo-<nipât0*
-
-* *itwêt^IC*
-* *êtwêt0*
-
-* *apit^IC*
-* *êpit0*
-
-* *wayawit^IC*
-* *wêyawit0*
-
-* *îkatêhtêt^IC*
-* *âkatêhtêt0*
-
-* *nîmit^IC*
-* *nâmit0*
-
-* *0ohcît^IC*
-* *wêhcît0*
-
-* *m0ostohtêt^IC*
-* *mwêstohtêt0*
-
-
-
-* *0oyôyot^IC*
-* *wêyôyot0*
-
-* *k0ocît^IC*
-* *kwêcît0*
-
-
-
-
-
-* *îkatêhât^IC*
-* *âkatêhât0*
-
-* *00îkatêhât^IC*
-* *iyîkatêhât0*
-
-* *00êskêt^IC*
-* *iyêskêt0*
-
-* *00âcimot^IC*
-* *iyâcimot0*
-
-* *00ôhkomit^IC*
-* *iyôhkomit0*
-
-
-
-* *w3<spiton*
-* *o<spiton*
-
-* *ni<spiton*
-* *ni<spiton*
-
-* *ki<spiton*
-* *ki<spiton*
-
-* *w3<îpit*
-* *w<îpit*
-
-* *w3<ahkwan*
-* *w<ahkwan*
-
-
-
-
-
-
-
-* *ni4<ohkom*
-* *n0<ôhkom*
-
-* *ni4<ohkom>i2nân>ak*
-* *n0<ôhkom>inân>ak*
-
-* *ki4<ohkom*
-* *k0<ôhkom*
-
-* *w3<ohkom>a*
-* *0<ohkom>a*
-
-
-* *nit2<ospwâkan*
-* *nit<ôspwâkan*
-
-* *kit2<ospwâkan*
-* *kit<ôspwâkan*
-
-* *ot2<ospwâkan*
-* *ot<ôspwâkan*
 
 
 # Plains Cree morphological analyser
@@ -1843,282 +2119,6 @@ End of new and all Multichar_Symbols
  * Symbols         ;    
  * NON_STANDARD     ;    
 
-
-
-
-
-
-Model verb lemmas and stems for new crk FST
-
-
-Full incorporation of AEW 2020 verbs into new crk FST
-
-
-
-
-# Plains Cree particles                           
-
-The file contains the following lexicons, with content as described:
-
- * LEXICON Particle  adds +Ipc
-
-
- * LEXICON Particle/Interjection   adds +Ipc+Interj
-
-
- * LEXICON Particle/Name  adds +Ipc+Prop
-
-
- * LEXICON Particle/Phrase  adds +Ipc+Phr
-
-
- * LEXICON Particles  contains the actual list of particles.
-
-
-Place-holder for inserting derivational FST after prefixes and before suffixes
-DRV-FST is the place-holder character
-
-
-
-Linking verb stems from Derivational FST to their inflectional suffixes
-
-Nouns
-
-Verbs
-
-## Plains Cree pronouns
-
-There are more pronoums to be added here.
-
- LEXICON Pronoun 
-
-
- LEXICON Personal  \\
- niya+Pron+Pers+1Sg:niya # ; 
- niya+Pron+Pers+1Sg:nîya # ;  
- kiya+Pron+Pers+2Sg:kiya # ; 
-
-
-
- LEXICON Interrogative   \\
- awîna+Pron+Interr+Sg:awîna # "who,whose" ;
- awîna+Pron+Interr+Pl:awîniki # "who" ;
-
- LEXICON Indefinite  \\
- awiyak+Pron+Indef+A+Sg:awiyak # "someone" ; 
- awiyak+Pron+Indef+A+Pl:awiyakak # "some people" ;
-
- LEXICON Demonstrative    \\
-ANIMATE \\
- awa+Pron+Dem+Prox+A+Sg:awa # "this" ; 
- awa+Pron+Dem+Prox+A+Pl:ôki # "these" ; 
-
-
-
-INANIMATE \\
-
- ôma+Pron+Dem+Prox+I+Sg:ôma # "this" ; 
- ôma+Pron+Dem+Prox+I+Pl:ôhi # "these" ; 
-
-
-
- ôma+Pron+Def+Prox+I+Sg:ôma # "this one" ; 
- ôma+Pron+Def+Prox+I+Pl:ôhi # "these one" ; 
-
-
-
-# File containing abbreviations 
-
-## Lexica for adding tags and periods
-
-Splitting in 4 + 1  groups, because of the preprocessor
-
- * **LEXICON Abbreviation   **
- 1. The ITRAB ;	    lexicon (intransitive abbrs)
- 1. The TRNUMAB ;   lexicon (abbrs trans wrt. numberals)
-
-## The sublexica
-### Dividing between abbreviations with and witout final period
-
- * **LEXICON ab-noun   **
-
- * **LEXICON ab-adv   **
-
-### The lexicons that add tags
-
- * **LEXICON ab-nodot-noun   **  The bulk
-
- * **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
-
- * **LEXICON ab-nodot-adv   **
-
- * **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
-
- * **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
-
-
-
-## The abbreviation lexicon itself
-
-
-
- * **LEXICON ITRAB   ** are intransitive abbreviations, Ltd. etc.
-
-
-
-
-
-
-
-
- * **LEXICON TRNUMAB   ** contains abbreviations who are transitive in front of numerals 
-
-For abbrs for which numerals are complements, but other
-words not necessarily are. This group treats arabic numerals as
-if it were transitive but letters as if it were intransitive.
-
-
-
-
-
-
-
- * **LEXICON TRAB   ** contains transitive abbreviations
-
-This lexicon is for abbrs that always have a constituent following it.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Test lemma/stem set for nouns according the new crk FST
-
-
-Complete extraction of lemma:stem info from AEW 2020, according to
-LEXC structure in the new crk FST.
-
-
-
-
-
-
-
-
-# Plains Cree numerals                           
-
-## The file for Arabic, Roman, and other symbolic numerals
-
- * **LEXICON NUM-PREFIXES   **
-
- * **LEXICON ARABIC   ** arabic numerals
-
- * **LEXICON ARABICLOOPphone   ** +358(0)16671254
-
- * **LEXICON ARABICCASEphone   **  
-
- * **LEXICON ARABICLOOP   **
-
-
- * **LEXICON ARABICLOOPORD   ** ordinals
-
- * **LEXICON NUMARABTAG   ** 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Plains Cree numerals                           
-
-## The file for numerals
-
- * LEXICON Numerals 
-
-
-
-
-
-## Here start the 999 numbers
-
- * LEXICON UNDERTHOUSAND 
-
- * LEXICON HUNDREDS 
-
- * LEXICON CUODI 
-
- * LEXICON HUNDRED 
-
-
-
- * LEXICON TENS 
-
- * LEXICON TEN 
-
-
-
-
- * LEXICON ONESTONEXT 
-
-
-
- * LEXICON TEENS 
-
- * LEXICON ONES 
-
- * LEXICON CARDINAL 
-
- * LEXICON NUM  adds +Num+Ipc
 
 
 
