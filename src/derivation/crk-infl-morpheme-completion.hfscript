@@ -9,12 +9,40 @@ define Words
 
 !! Prefix Weighting !!
 
-! cat ~/altlab2/crk/generated/ahenakew_wolfart_bloomfield.fst+cg.freq-sorted.txt| gawk '{ gsub("!","",$2); n=split($2,c,""); for(i=2; i<=n; i++) { printf "%i\t", $1; for(j=1; j<=i; j++) printf "%s", c[j]; printf "\n"; } }' | gawk '{ n[$2]+=$1; tot+=$1; } END { print "LEXICON Root"; PROCINFO["sorted_in"]="@val_num_desc"; for(i in n) { w=-log(n[i]/tot); print i" Tail \"weight: "w"\" ;"; } print ""; print "LEXICON Tail"; print "< [ ?::2 ]* > # ;"; }' > prefix_weighting.lexc
+! cat ~/altlab2/crk/generated/ahenakew_wolfart_bloomfield.fst+cg.freq-sorted.txt| gawk '{ gsub("!","",$2); n=split($2,c,""); for(i=2; i<=n; i++) { printf "%i\t", $1; for(j=1; j<=i; j++) printf "%s", c[j]; printf "\n"; } }' | gawk '{ n[$2]+=$1; tot+=$1; } END { print "LEXICON Root"; PROCINFO["sorted_in"]="@val_num_desc"; for(i in n) { w=-log(n[i]/tot); print i" Tail \"weight: "w"\" ;"; } print ""; print "LEXICON Tail"; print "# ;"; }' > prefix_weighting.lexc
 
+echo 'Compiling known prefixes with weights.'
 read lexc prefix_weighting.lexc
+define PrefixWeights
+
+regex [ [ [ ? - "-" ]::1 | "-"::0 ] ]* ;
+define Suffixes
+
+! echo 'Compiling set of unknown prefixes.'
+! regex [ ?+ - PrefixWeights ] ;
+! define UnobservedPrefixes
+
+! echo 'Creating weights for unknown prefixes.'
+! regex [ ?::4 ( ?::3 ( ?::2 ( ?::1 ( ?::1 ( ?::1 [ ?::0.5 ]* ) ) ) ) ) ] ;
+! define UnobservedWeights
+
+! echo 'Composing weights with set of unknown prefixes.'
+! regex UnobservedPrefixes .o. UnobservedWeights ;
+! define UnobservedPrefixWeights
+
+! echo 'Combine weighted known and unknown prefixes together.'
+! regex [ PrefixWeights | UnobservedPrefixWeights ] ;
+
+regex [ PrefixWeights Suffixes ] ;
+
+down ekw
+down êkw
+
 define PrefixWeighting
 
 !! Morpheme Completion !!
+
+echo 'Beginning of specification of morpheme completion FST.'
 
 define Bx [ "<" | ">" | "/" ] ;
 
