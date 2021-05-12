@@ -1,3 +1,5 @@
+* [disambiguator-cg3-src.md](disambiguator-cg3-src.md)
+* [textanalysis-cg3-src.md](textanalysis-cg3-src.md)
 * [crk-drv-derivation-src.md](crk-drv-derivation-src.md)
 * [phonology-morph-bound-fst-src.md](phonology-morph-bound-fst-src.md)
 * [abbreviations-stems-fst-src.md](abbreviations-stems-fst-src.md)
@@ -14,3 +16,4 @@
 * [propernouns-affixes-fst-src.md](propernouns-affixes-fst-src.md)
 * [root-fst-src.md](root-fst-src.md)
 * [transcriptor-abbrevs2text-transcriptions-src.md](transcriptor-abbrevs2text-transcriptions-src.md)
+* [grammarchecker-grammarcheckers-tools.md](grammarchecker-grammarcheckers-tools.md)

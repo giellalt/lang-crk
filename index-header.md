@@ -5,7 +5,7 @@
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-crk)](https://github.com/giellalt/lang-crk/issues)
 [![Build status](https://github.com/giellalt/lang-crk/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-crk/actions)
 
-This page documents the work on the **Plains Cree language model**. 
+This page documents the work on the [Plains Cree language model|(http://github.com/giellalt-crk). 
 
 The analyser contains approximately 16500 stems — 2/3 of which are verbs —
 the morphology and morphophonology for the grammar, as well
