@@ -34,7 +34,7 @@ and a spellchecker.
 
 # Practical work
 * [Practical developing work, for the linguist](developingwork.md)
-* [The tags that are in use](https://github.com/giellalt/lang-crk/blob/develop/src/fst/root.lexc) (see also the in-source documentation linked to below)
+* [The tags that are in use](https://github.com/giellalt/lang-crk/blob/main/src/fst/root.lexc) (see also the in-source documentation linked to below)
 * [A list of morphological tags](/lang/common/MorphologicalTags.html)
 * [Plains Cree disambiguation](PlainsCreeDisambiguation.md)
 
