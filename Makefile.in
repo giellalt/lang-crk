@@ -868,6 +868,9 @@ $(srcdir)/%-transcriptions-src.md: $(top_srcdir)/src/transcriptions/%.twolc
 $(srcdir)/%-grammarcheckers-tools.md: $(top_srcdir)/tools/grammarcheckers/%.cg3
 	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
 
+$(srcdir)/%-apertium-mt-tools.md: $(top_srcdir)/tools/mt/apertium/%.cg3
+	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
+
 generated-markdowns.sources:
 	$(AM_V_GEN)fgrep -rl \
 		--include '*.lexc' --include '*.twolc' --include '*.twolc' --include '*.cg3' \
