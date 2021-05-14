@@ -115,3 +115,6 @@ regex [ InsertMissingChars .o. SpellRelax .o. [ MorphemeCompletion "@D.joiner.NU
 save stack crk-infl-morpheme-completion.hfst
 
 ! hfst-fst2fst -w -i crk-infl-morpheme-completion.hfst -o  crk-infl-morpheme-completion.hfstol
+
+! Lookup command example (with topmost 10 analyses):
+!  hfst-optimized-lookup -q -u -n 10 crk-infl-morpheme-completion.hfstol
