@@ -875,6 +875,9 @@ $(srcdir)/%-grammarcheckers-tools.md: $(top_srcdir)/tools/grammarcheckers/%.cg3
 $(srcdir)/%-apertium-mt-tools.md: $(top_srcdir)/tools/mt/apertium/%.cg3
 	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
 
+$(srcdir)/%-tts-tools.md: $(top_srcdir)/tools/tts/%.cg3
+	$(AM_V_AWK)"$(GAWK)" -f $(DOCC2MDWIKI) < $< > $@
+
 generated-markdowns.sources:
 	$(AM_V_GEN)fgrep -rl \
 		--include '*.lexc' --include '*.twolc' --include '*.cg3' \
