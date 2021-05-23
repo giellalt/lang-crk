@@ -43,9 +43,13 @@ crk-phon.hfst: $(PHONOLOGY)
 	-@echo "$(_DEEMPH)(this one takes a while... ☕️)$(_RESET)"
 	hfst-xfst --pipe-mode $(VERBOSITY) $(WEIGHT_FORMAT)	-e "source $^" -E "save stack $@"
 
-crk-strict-generator-with-morpheme-boundaries.hfst: crk-lexc-dict.hfst crk-phon.hfst
+convert-accented-y-to-simple-y.hfst: $(FILTERS)
+	-@echo "$(_EMPH)Compiling filter to convert accented <ý> to simple <y>.$(_RESET)"
+	hfst-regexp2fst $(VERBOSITY) --semicolon $< -o $@
+
+crk-strict-generator-with-morpheme-boundaries.hfst: crk-lexc-dict.hfst crk-phon.hfst convert-accented-y-to-simple-y.hfst
 	-@echo "$(_EMPH)Composing lexicon with morphophonology.$(_RESET)"
-	hfst-compose --harmonize-flags -1 $(word 1, $^) -2 $(word 2, $^) | hfst-minimize - -o $@
+	hfst-compose --harmonize-flags -1 $(word 3, $^) -2 $(word 1, $^) | hfst-compose --harmonize-flags -1 - -2 $(word 2, $^) | hfst-minimize - -o $@
 
 crk-orth.hfst: $(ORTHOGRAPHY)
 	-@echo "$(_EMPH)Compiling regular expression implementing spelling-relaxation.$(_RESET)"

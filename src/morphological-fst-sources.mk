@@ -17,7 +17,7 @@
 # Lists the raw .lexc/.twolc/.regex sources required to create the
 # morphological FSTs.
 
-ALL_SOURCES = $(MORPHOLOGY) $(PHONOLOGY) $(ORTHOGRAPHY)
+ALL_SOURCES = $(MORPHOLOGY) $(PHONOLOGY) $(ORTHOGRAPHY) $(FILTERS)
 ALL_SOURCES_WITH_EXTRAS = $(ALL_SOURCES) $(EXTRA_MORPHOLOGY)
 
 MORPHOLOGY = $(BASE_MORPHOLOGY) \
@@ -49,3 +49,4 @@ EXTRA_MORPHOLOGY = \
 
 PHONOLOGY = fst/phonology.xfscript
 ORTHOGRAPHY = orthography/spellrelax.regex
+FILTERS = filters/convert-accented-y-to-simple-y.regex
