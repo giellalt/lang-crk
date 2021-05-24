@@ -20,7 +20,8 @@
 
 # List any local filter regex files here:
 GIELLA_FILTER_LOCAL_REGEX_SRCS=\
-					downcase_UCletters.regex
+					downcase_UCletters.regex \
+					convert-accented-y-to-simple-y.regex
 
 # List any local filter xfscript files here:
 GIELLA_FILTER_LOCAL_XFSCRIPT_SRCS=
