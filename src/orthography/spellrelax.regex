@@ -99,8 +99,11 @@ c (->) {ts} ,,      # Another English influence on spelling <c>
 ô (->) {oo},
 
 # Woods Cree to Plains Cree
-[ ý | y ] (->) {th},
-ê (->) î
+[ ý | y ] (->) {th} ,,
+ê (->) [ î | i ] ,,
+
+# Adding missing or reduced short i's in interconsonantal contexts
+i (->) [..] || [ c | h | k | m | n | p | s | t | w ] _ [ c | h | k | m | n | p | s | t | w ]
 
 ;
 
