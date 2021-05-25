@@ -2,7 +2,16 @@
 
 # wolvengrey-new2lexc.sh
 
-# transforms Wolvengrey's Cree Words (CW) dictionary content to LEXC format
+# Transforms Wolvengrey's Cree Words (CW) dictionary content to LEXC format,
+# based on a TSV conversion of CW Toolbox source where an additional column has
+# been added to specify a FST-stem, when needed.
+
+# Usage:
+# cat CW.tsv | wolvengrey-new2lexc.sh 1:WC 2:FULL
+
+# where:
+# 1:WC = (general) wordclass (N, V, I, PVN) # N.B. PVN not yet fully implemented
+# 2:FULL = whether English glosses and other grammatical information is output
 
 tr -d '"' |
 
@@ -31,32 +40,32 @@ for(i=2; i<=nr; i++)
        stem=f[i, fststem_col];
      else
        stem=f[i, stem_col];
-     gsub("[ ]*$","",lemma); gsub("[!?]","",lemma); # Proto-Algonquian -ý- only removed just before printing LEXC output
-     gsub("^[- ]*","",stem); gsub("[- ]*$","",stem); # gsub("ý","y",stem);
+     gsub("[ ]*$","",lemma); gsub("[!?]","",lemma); # gsub("ý","y",lemma); # Proto-Algonquian -ý- only removed just before printing LEXC output
+     gsub("^[- ]*","",stem); gsub("[- ]*$","",stem); # gsub("ý","y",stem); # Proto-Algonquian -ý- only removed just before printing LEXC output
      gsub("[ ]*","",pos); gsub("[ ]*$","",pos);
      gsub("^[ ]*","",gloss); gsub("[ ]*$","",gloss);
      gsub("^[ ]*","",note1); gsub("[ ]*$","",note1);
      gsub("^[ ]*","",note2); gsub("[ ]*$","",note2);
-     gsub("ń","n",lemma); gsub("ń","n",stem);
+     gsub("ń","n",lemma); gsub("ń","n",stem); # Another dialectal variation
 
 #####
 # NOUNS: AEW classes to contlexes in new crk FST:
 #
 # Independent NA AEW to FST conversion
 # NA-1, NA-2 -> NA
-# NA-3 -> NA + stem-final -w
-# NA-4, NA-4w -> NA_SG/A_POSS/IM -w2, y4 (immutable)
+# NA-3 -> NA + stem-final -w (underlying stem-final, coded in CW)
+# NA-4, NA-4w -> NA_SG/A_POSS/IM + stem-final -w2, y4 (coding final glides as immutable)
 #
 # Independent NI AEW to FST conversion
 # NI-1, NI-2 -> NI
-# NI-3 -> NI + -w (stem)
-# NI-4, NI-4w -> NI_SG/I_POSS/IM, with w2, y4 for the immutable final glides
+# NI-3 -> NI + stem-final -w (underlying stem-final, coded in CW)
+# NI-4, NI-4w -> NI_SG/I_POSS/IM + stem-final w2, y4 (final glides as immutable)
 #
 # NI-5  derivations of -was "bag" -> PL:  (UNIMPLEMENTED)
 # TODO: marking stems that require -im with contlex of type N...POSS/IM
 #
 # All nouns to have only the short diminutive -is,
-# unless corpus data indicates otherwise
+# unless corpus or other data indicates otherwise
 #####
 
      if(class=="N" && index(lemma," ")==0) # No multipart lemmas, such as names (that should probably rather be IPMs)
@@ -72,7 +81,7 @@ for(i=2; i<=nr; i++)
 
        if(index(stem,"(t)")!=0)
          { sub("\\(t\\)","t",stem);
-           sub("\\(t\\)","",lemma); # CSV: is the epenthetic -t- part of the lemma? (as it is part of the stem).
+           sub("\\(t\\)","",lemma);S # CSV: is the epenthetic -t- part of the lemma? (as it is part of the stem).
          }
 
        # NOUNS: Animate + Independent -> +N+A
@@ -211,7 +220,7 @@ for(i=2; i<=nr; i++)
        if(index(note1,"plural")!=0 && match(lemma,"a(k)?$")!=0)
          flags=flags "@P.number.PL@";
      
-       gsub("ý","y",lemma); # Undo marking historical -y- before outputting LEXC code
+       # gsub("ý","y",lemma); # Undo marking historical -y- before outputting LEXC code
        # gsub("ý","y",stem);
      
        if(clex!="")
@@ -246,49 +255,33 @@ for(i=2; i<=nr; i++)
 #
 # VII VERBS
 # VII-1v -> VIIw_SG (impersonal - singular only)
-# VII-2v (lemma: not -a) -> VIIw (regular sg+pl)
-# VII-2v (lemma: -a) -> VIIw_PL (plural only)
-# VII-1n -> VIIn_SG (impersonal) + stem: -an -> -an3; -pipon -> -pinon3
-# VII-2n -> VIIn (regular) + stem: -an -> -an3; -pipon -> -pinon3
-# VII-2n (lemma: -a) -> VIIn_PL (plural only) + stem: -an -> -an3; -pipon -> -pinon3
+# VII-2v + lemma: not ending with plural -a suffix -> VIIw (regular sg+pl)
+# VII-2v + lemma: ending with plural -a suffix -> VIIw_PL (plural only)
+# VII-1n -> VIIn_SG (impersonal) + stem-final coding: -an -> -an3; -pipon -> -pipon3
+# VII-2n -> VIIn (regular) + stem-final coding: -an -> -an3; -pipon -> -pipon3
+# VII-2n + lemma: ending with plural -a suffix -> VIIn_PL (plural only) + stem: -an -> -an3; -pipon -> -pipon3
 #
 # VAI VERBS
-# VAI-1 (lemma: not -ak) -> VAIw (regular vowel-final)
-# VAI-1 (lemma: -ak) -> VAIw_PL (plural only)
-# VAI-2 -> VAIn (regular) + stem: -n -> -n3 + a/ê alternation in suffixation <- n2 (affixes)
-# VAI-2 (lemma: -ak) -> VAIn_PL (plural only) + a/ê alternation in suffixation <- n2 (affixes)
-# VAI-3 (VTI-like) -> TBI
+# VAI-1 + lemma: not ending in plural -ak suffix + stem: ending in [aâê] -> VAIae (regular -a/e vowel-final)
+# VAI-1 + lemma: not ending in plural -ak suffix + stem: ending in [iîoô] -> VAIio (regular -i/o vowel-final)
+# VAI-1 + lemma: ending in plural -ak suffix -> VAIw_PL (plural only)
+# VAI-2 -> VAIn (regular) + stem-final coding: -n -> -n3 + a/ê alternation in suffixation <- n2 (affixes)
+# VAI-2 + lemma: ending in plural -ak suffix -> VAIn_PL (plural only) + a/ê alternation in suffixation <- n2 (affixes)
+# VAI-3 (VTI-like) -> VAIm + stem + with addition of final theme suffix -a
 #
 # VTI VERBS
-# VTI-1 (lemma: not -ak) -> VTIm (regular) + lemma: -m final + a/ê alternation in suffixation <- n2 (affixes), -t4 (X)
-# VTI-1 (lemma: -ak) -> VTIm_PL (plural only) + lemma: -m final + a/ê alternation in suffixation <- n2 (affixes), -t4 (X)
+# VTI-1 + lemma: not ending in plural -ak suffix -> VTIm (regular) + lemma: -m final + a/ê alternation in suffixation <- n2 (affixes), -t4 (X)
+# VTI-1 + lemma: ending in plural -ak suffix -> VTIm_PL (plural only) + lemma: -m final + a/ê alternation in suffixation <- n2 (affixes), -t4 (X)
 # VTI-2 -> VTIw (VAI-like) + a/ê alternation in suffixation <- n2 (affixes)
 # VTI-3 -> VTIw (Diminutives, Habituals, VAI-like) + a/ê alternation in suffixation <- n2 (affixes)
 #
 # VTA VERBS
-# VTA-1 (lemma: not -ak) -> VTA (regular) + stem: mow- -> mow2-
-# VTA-2 (lemma: not -ak) -> VTA (regular)
-# VTA-2 (lemma: -ak) -> VTA_PL (plural only)
-# VTA-3 (lemma: not -ak) -> VTA (regular)
+# VTA-1 + lemma: not ending in plural -ak suffix -> VTA (regular) + stem: mow- -> mow2-
+# VTA-2 lemma: not ending in plural -ak suffix -> VTA (regular)
+# VTA-2 lemma: ending in plural -ak suffix -> VTA_PL (plural only)
+# VTA-3 lemma: not ending in plural -ak suffix -> VTA (regular)
 # VTA-4 -> VTAt + stem: -t -> -t3
-# VTA-5 -> VTAi (ahêw, [ay-]itêw) + stem: -it -> -it3
-
-# Old classes
-# VII
-# wâpiskâw:wâpiskâ VII-1 ;
-# ayâw:ayâ VII-1 ;
-# mispon:mispon3 VII-2 ;
-# VAI
-# acimow:acimo VAI-1 ;
-# nipâw:nipâ VAI-1 ;
-# itwêw:itwê VAI-1 ;
-# VTI
-# wâpahtam:wâpaht4 VTI-1 ;
-# itam:it VTI-1 ;
-# VTA
-# mowêw:mow2 VTA-1 ;
-# acimêw:acim VTA-1 ;
-# itêw:it3 VTA-2 ;
+# VTA-5 -> VTAi (ahêw, [ay-]itêw) + stem-final: -t -> -t3
 
 if(class=="V" && index(lemma," ")==0) # No multipart lemmas, e.g. "namoya wâpiw" ("not see, i.e. be blind")
 {
@@ -318,12 +311,12 @@ if(match(lemma,"an$")!=0 || match(lemma,"ana$")!=0 || lemma=="nîpin" || lemma==
   sub("n$","n3",stem);
 
 # VAI
-# apiw:api VAIw ;
-# atoskêw:atoskê VAIw ;
-# mâtow:mâto VAIw ; # YAML file needs to be corrected as to long -â-
-# mîcisow:mîciso VAIw ;
-# nêhiyawêw:nêhiyawê VAIw ;
-# nipâw:nipâ VAIw ;
+# apiw:api VAIio ;
+# atoskêw:atoskê VAIae ;
+# mâtow:mâto VAIio ; # YAML file needs to be corrected as to long -â-
+# mîcisow:mîciso VAIio ;
+# nêhiýawêw:nêhiýawê VAIae ;
+# nipâw:nipâ VAIae ;
 # pimisin:pimisin3 VAIn ;
 
 if(pos=="VAI-1" && match(lemma,"ak$")==0 && lemma!="nîminâniwan") # except nîminâniwan (inflected form of "nîmiw")
@@ -364,15 +357,15 @@ if(pos=="VTI-3")
 # atoskahêw:atoskah VTA ;
 # miskawêw:miskaw VTA ;
 # mowêw:mow2 VTA ;        ! w->w2 for non-collapsing cases
-# nakatêw:nakat3 VTA ;        ! t3:s in some cases
-# nâtêw:nât3 VTA ;
+# nakatêw:nakat3 VTAt ;        ! t3:s in some cases
+# nâtêw:nât3 VTAt ;
 # nitonawêw:nitonaw VTA ; ! w->w2 for collapsing cases?
 # wâpamêw:wâpam VTA ;
 # wîcihêw:wîcih VTA ;
 # mêstasîhkawêwak:mêstasîhkaw VTA_PL ; ! "generally" plural according to AEW
 #
 # itêw:it3 VTAi ;
-# kostêw:kost3 VTA ;      ! s:0 when preceeding t3:s
+# kostêw:kost3 VTAt ;      ! s:0 when preceeding t3:s
 # ayâwêw:ayâw2 VTA ;      ! w2:w for non-collapsing cases
 
 if(pos=="VTA-1")
@@ -396,7 +389,7 @@ if(pos=="VTA-4") # t -> t3
 if(pos=="VTA-5")
   { clex="VTAi"; sub("t$","t3",stem); }
 
-      gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
+      # gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
       # gsub("ý","y",stem);
 
       contlex="VERBSTEMS";     
@@ -456,7 +449,7 @@ if(class=="I")
 
 
 
-  gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
+  # gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
   # gsub("ý","y",stem);
 
   if(clex!="")
@@ -488,12 +481,12 @@ if(class=="PVN")
   gsub("î","ii",tag);
   gsub("ô","oo",tag);
 
-  gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
+  # gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
   # gsub("ý","y",stem);
 
   if(clex!="")
     { if(index(lemma,"-")==0)
-        { output[contlex] = output[contlex] sprintf("PV/%s\+:%s %s", tag, lemma, clex);
+        { output[contlex] = output[contlex] sprintf("PV/%s\\+:%s %s", tag, lemma, clex);
             if(full=="full")
               output[contlex] = output[contlex] sprintf(" \"%s\" ;", gloss);
             else
@@ -501,7 +494,7 @@ if(class=="PVN")
           output[contlex] = output[contlex] sprintf("\n");
         }
       else
-        { output[contlex] = output[contlex] sprintf("@U.hyphen.hyphen@PV/%s\+:@U.hyphen.hyphen@%s %s", tag, lemma, clex);
+        { output[contlex] = output[contlex] sprintf("@U.hyphen.hyphen@PV/%s\\+:@U.hyphen.hyphen@%s %s", tag, lemma, clex);
             if(full=="full")
               output[contlex] = output[contlex] sprintf(" \"%s\" ;", gloss);
             else
@@ -519,7 +512,7 @@ if(class=="PVN")
                  char[j]="";
                stem=stem char[j];
              }
-          output[contlex] = output[contlex] sprintf("@U.hyphen.NULL@PV/%s\+:@U.hyphen.NULL@%s %s", tag, stem, clex);
+          output[contlex] = output[contlex] sprintf("@U.hyphen.NULL@PV/%s\\+:@U.hyphen.NULL@%s %s", tag, stem, clex);
             if(full=="full")
               output[contlex] = output[contlex] sprintf(" \"%s\" ;", gloss);
             else
@@ -540,23 +533,3 @@ for(c in output)
      print "";
    }
 }' | less; exit 0;
-
-# N.B. IPC code hasn't been changed in the last 4 years.
-# Maybe we'd want to specify multiword expressions
-# as well as common contractions and typos as +Err/Orth cases
-
-# Like obsolete code for Ipc
-
-if(class=="I")
-{ if(pos=="IPC" || pos=="IPJ" || pos=="IPC ;; IPJ")
-    clex="pcle";
-  if(pos=="IPH")
-    { clex="pcle";
-      gsub(" ","% ",lemma);
-    }
-  if(index(gloss,"!")!=0)
-    gsub("!"," [excl]",gloss);
-  if(clex!="")
-    printf "%s %s \"%s\" ;\n", lemma, clex, gloss;
-}
-}'
