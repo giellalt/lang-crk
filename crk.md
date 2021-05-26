@@ -488,9 +488,9 @@ Plains Cree verb morphology
 The Plains Cree verbs are divided in four groups:
 
 1. AI: Animate intransitive 
-1. II: Inanimate intransitive
-1. TA: Transitive animate
-1. TI: Transitive inanimate
+2. II: Inanimate intransitive
+3. TA: Transitive animate
+4. TI: Transitive inanimate
 
 
 # Prefixes
@@ -2111,9 +2111,8 @@ There are more pronoums to be added here.
 
 
  LEXICON Personal  \\
- niya+Pron+Pers+1Sg:niya # ; 
- niya+Pron+Pers+1Sg:nîya # ;  
- kiya+Pron+Pers+2Sg:kiya # ; 
+ niya+Pron+Pers+1Sg:niýa # ; 
+ kiya+Pron+Pers+2Sg:kiýa # ; 
 
 
 
