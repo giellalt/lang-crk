@@ -44,12 +44,46 @@ wîstawâw+Pron+Pers+3Pl+Incl:wîstawâw # ;
 
 
 LEXICON Interrogative  !!= @CODE@ \\
-awîna+Pron+Interr+Sg:awîna # "who,whose" ;!!= @CODE@
-awîna+Pron+Interr+Pl:awîniki # "who" ;!!= @CODE@
-kîkwây+Pron+Interr+Sg:kîkwây # "what" ;
-kîkwây+Pron+Interr+Pl:kîkwây # "what" ; !Wolvengrey
-kîkwây+Pron+Interr+Pl:kîkwâya # "what" ;
-tânitowahk+Pron+Interr+Sg:tânitowahk # "what kind" ;
+awîna+Pron+Interr+A+Sg:awîna # "who,whose" ; !!= @CODE@
+awîniki+Pron+Interr+A+Pl:awîniki # "who" ; !!= @CODE@
+awînihi+Pron+Interr+A+Obv:awînihi # "who" ; !!= @CODE@
+awîniwâ+Pron+Interr+A+Obv:awîniwâ # "who" ; !!= @CODE@
+
+kîkwây+Pron+Interr+A+Sg:kîkwây # "what" ; ! Wolvengrey
+kîkwây+Pron+Interr+A+Pl:kîkwâyak # "what" ;
+kîkwây+Pron+Interr+A+Obv:kîkwâya # "what" ;
+kîkwây+Pron+Interr+I+Sg:kîkwây # "what" ;
+kîkwây+Pron+Interr+I+Pl:kîkwâya # "what" ;
+
+! Interrogative demonstratives
+tâna+Pron+Interr+Dem+A+Sg:tâna # "which one" ;
+tâniki+Pron+Interr+Dem+A+Pl:tâniki # "which ones" ;
+tânihi+Pron+Interr+Dem+A+Obv:tânihi # "which one(s)" ;
+tānima+Pron+Interr+Dem+I+Sg:tānima # "which one" ;
+tânihi+Pron+Interr+Dem+I+Pl:tânihi # "which ones" ;
+
+! Locative interrogative demonstratives
+tâniwâ+Pron+Interr+Dem+Loc+A+Sg:tâniwâ # "where" ; ! Wolvengrey
+tâniwêhkâk+Pron+Interr+Dem+Loc+A+Pl:tâniwêhkâk # "where" ;
+tâniwêhâ+Pron+Interr+Dem+Loc+A+Obv:tâniwêhâ # "where" ;
+tâniwê+Pron+Interr+Dem+Loc+I+Sg:tâniwê # "where" ;
+tâniwêhâ+Pron+Interr+Dem+Loc+I+Pl:tâniwêhâ # "where" ;
+
+! Additional Oblique Interrogative Proforms ! <- Wolvengrey
+! Listed currently already under particles
+! tânispî+Ipc+Interr:tânispî # "when" ;
+! tânispîhk+Ipc+Interr:tânispîhk # "when" ;
+! tânita+Ipc+Interr:tânita # "how" ;
+! tânêhki+Ipc+Interr:tânêhki # "why" ;
+! tâniyikohk+Ipc+Interr:tâniyikohk # "how much" ;
+! tânimayikohk+Ipc+Interr:tânimayikohk # "how much" ;
+! tânitahto+Ipc+Interr:tânitahto # "how many" ;
+! tânimatahto+Ipc+Interr:tânimatahto # "how many"
+! tânitahtwâw+Ipc+Interr:tânitahtwâw # "how many times" ;
+! tânimatahtwâw+Ipc+Interr:tânimatahtwâw # "how many times" ;
+! tânitowahk+Ipc+Interr:tânitowahk # "what kind" ;
+! tânitowihk+Ipc+Interr:tânitowihk # "(in) what kind of place" ;
+! tânitahtwayak+Ipc+Interr:tânitahtwayak # "how many ways/directions" ;
 
 LEXICON Indefinite !!= @CODE@ \\
 awiyak+Pron+Indef+A+Sg:awiyak # "someone" ; !!= @CODE@
@@ -58,31 +92,34 @@ awiyak+Pron+Indef+A+Pl:awiyakak # "some people" ;!!= @CODE@
 LEXICON Demonstrative !!= @CODE@   \\
 !! ANIMATE \\
 awa+Pron+Dem+Prox+A+Sg:awa # "this" ; !!= @CODE@
-awa+Pron+Dem+Prox+A+Pl:ôki # "these" ; !!= @CODE@
+ôki+Pron+Dem+Prox+A+Pl:ôki # "these" ; !!= @CODE@
+ôhi+Pron+Dem+Prox+A+Obv:ôhi # "this/these" ; !!= @CODE@
 
-awa+Pron+Dem+Med+A+Sg:ana # "that" ;
-awa+Pron+Dem+Med+A+Pl:aniki # "those" ;
+ana+Pron+Dem+Med+A+Sg:ana # "that" ;
+aniki+Pron+Dem+Med+A+Pl:aniki # "those" ;
+anihi+Pron+Dem+Med+A+Pl:anihi # "that/those" ;
 
-awa+Pron+Dem+Dist+A+Sg:nâha # "that yonder" ;
-awa+Pron+Dem+Dist+A+Pl:nêki # "those yonder" ;
+nâha+Pron+Dem+Dist+A+Sg:nâha # "that yonder" ;
+nêki+Pron+Dem+Dist+A+Pl:nêki # "those yonder" ;
+nêhi+Pron+Dem+Dist+A+Pl:nêhi # "this/those yonder" ;
 
 !! INANIMATE \\
 
 ôma+Pron+Dem+Prox+I+Sg:ôma # "this" ; !!= @CODE@
-ôma+Pron+Dem+Prox+I+Pl:ôhi # "these" ; !!= @CODE@
+ôhi+Pron+Dem+Prox+I+Pl:ôhi # "these" ; !!= @CODE@
 
-ôma+Pron+Dem+Med+I+Sg:anima # "that" ;
-ôma+Pron+Dem+Med+I+Pl:anihi # "those" ;
+anima+Pron+Dem+Med+I+Sg:anima # "that" ;
+anihi+Pron+Dem+Med+I+Pl:anihi # "those" ;
 
-ôma+Pron+Dem+Dist+I+Sg:nêma # "that yonder" ;
-ôma+Pron+Dem+Dist+I+Pl:nêhi # "those yonder" ;
+nêma+Pron+Dem+Dist+I+Sg:nêma # "that yonder" ;
+nêhi+Pron+Dem+Dist+I+Pl:nêhi # "those yonder" ;
 
 ! Let us say a pronoun ôma without a noun is a definite, not a demonstrative
 ôma+Pron+Def+Prox+I+Sg:ôma # "this one" ; !!= @CODE@
-ôma+Pron+Def+Prox+I+Pl:ôhi # "these one" ; !!= @CODE@
+ôhi+Pron+Def+Prox+I+Pl:ôhi # "these one" ; !!= @CODE@
 
-ôma+Pron+Def+Med+I+Sg:anima # "that one" ;
-ôma+Pron+Def+Med+I+Pl:anihi # "those one" ;
+anima+Pron+Def+Med+I+Sg:anima # "that one" ;
+anihi+Pron+Def+Med+I+Pl:anihi # "those one" ;
 
-ôma+Pron+Def+Dist+I+Sg:nêma # "that yonder one" ;
-ôma+Pron+Def+Dist+I+Pl:nêhi # "those yonder one" ;
+nêma+Pron+Def+Dist+I+Sg:nêma # "that yonder one" ;
+nêhi+Pron+Def+Dist+I+Pl:nêhi # "those yonder one" ;
