@@ -7,8 +7,8 @@ There are more pronoums to be added here.
 
 
  LEXICON Personal  \\
- niya+Pron+Pers+1Sg:niýa # ; 
- kiya+Pron+Pers+2Sg:kiýa # ; 
+ niýa+Pron+Pers+1Sg:niýa # ; 
+ kiýa+Pron+Pers+2Sg:kiýa # ; 
 
 
 
