@@ -51,7 +51,7 @@ NR>=4 {
          if(((anlwc=="I" && anlwc==gwc) || ((anlwc=="V" || anlwc=="N") && anlswc==swc) || (anlwc=="P" && gwc=="P")) && nm<maxmorf)
            {
              split(f[6],ff,"\t");
-             lemma=ff[1];
+             lemma=ff[2];
              maxmorf=nm;
              split(anl[i],ff,"\t");
              disamb=ff[2];
