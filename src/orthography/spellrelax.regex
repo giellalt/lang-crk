@@ -90,8 +90,8 @@ c (->) {tch},       # English influence on spelling <c>
 c (->) {ts} ,,      # Another English influence on spelling <c>
 
 [..] (->) h || _ .#. ,, # Excessive word-final pre-aspiration
-   h (->) 0 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],,    # Missing preaspiration before stops
-[..] (->) h || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],,  # Excessive preaspiration before stops
+   h (->) 0 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t | g | b | d ],,    # Missing preaspiration before stops
+[..] (->) h || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t | g | b | d ],,  # Excessive preaspiration before stops
 
 # Standardizing double-vowel notation for long vowels
 â (->) {aa},
@@ -99,17 +99,17 @@ c (->) {ts} ,,      # Another English influence on spelling <c>
 ô (->) {oo},
 
 # Standardizing rarer SRO marking of long vowels with accent-aigu
-â (->) á,
+[ a | â ] (->) á,
 ê (->) é,
-î (->) í,
-ô (->) ó,
+[ i | î ] (->) í,
+[ o | ô ] (->) ó,
 
 # Woods Cree to Plains Cree
 [ ý | y ] (->) {th} ,,
 ê (->) [ î | i ] ,,
 
 # Adding missing or reduced short i's in interconsonantal contexts
-i (->) [..] || [ c | h | k | m | n | p | s | t | w ] _ [ c | h | k | m | n | p | s | t | w ]
+i (->) [..] || [ c | h | k | m | n | p | s | t | w | y | b | g | d ] _ [ c | h | k | m | n | p | s | t | w | y | b | g | d ]
 
 ;
 
