@@ -2,21 +2,49 @@
 
 gawk -v FSTNORMANL=$1 '{ fstnormanl=FSTNORMANL; NULL="";
 FS="\n"; RS=""; }
-NR<4 { print; print ""; }
-NR>=4 {
+NR<3 { print; print ""; }
+NR>=3 {
   match($0, "pos=\"[^\"]+\">([^<]+)</l>.*<lc>([^<]+)</lc>", f);
   head=f[1];
   lc=f[2];
 
   head0=head;
-  sub("[[:punct:]]+$","",head0);
+  sub("[!?.,:;]+$","",head0);
 
   swc=lc;
   sub("-.+","",swc);
 
   split(swc,c,"");
   gwc=c[1];
-  
+
+  if(!(head0 in keys))
+    {
+      keys[head0]=head0;
+      keys[head0,swc]=head0;
+    }
+  else
+    {
+      keys[head0,swc]=head0"-"swc;
+    }
+
+  record[NR]=$0;
+}
+END { for(j=3; j<=NR; j++) 
+{
+
+  match(record[j], "pos=\"[^\"]+\">([^<]+)</l>.*<lc>([^<]+)</lc>", f);
+  head=f[1];
+  lc=f[2];
+
+  head0=head;
+  sub("[!?.,:;]+$","",head0);
+
+  swc=lc;
+  sub("-.+","",swc);
+
+  split(swc,c,"");
+  gwc=c[1];
+
   cmd="hfst-optimized-lookup -q "fstnormanl;
   print head0 |& cmd;
   fflush(); close(cmd,"to");
@@ -32,13 +60,14 @@ NR>=4 {
          match(anl[2],"^(((IC)|(Rdpl[WS])|(PV/[^\\+]+))\\+)*([^\\+]+)\\+([^\\+])",f);
          anlwc=f[7];
          if(anlwc=="N")
-           {
+           { 
+             anlswc="N";
              if(index(anl[2],"+D+")!=0)
-               anlswc=anlwc "D";
+               anlswc=anlswc "D";
              if(index(anl[2],"+A+")!=0)
-               anlswc=anlwc "A";
+               anlswc=anlswc "A";
              if(index(anl[2],"+I+")!=0)
-               anlswc=anlwc "I";
+               anlswc=anlswc "I";
            }
          if(anlwc=="V")
            {
@@ -52,14 +81,10 @@ NR>=4 {
                anlswc="VTA";
            }
          nm=gsub("\\+","+",anl[2]); # print "SWC: "anlswc;
-         if(((anlwc=="I" && anlwc==gwc) || ((anlwc=="V" || anlwc=="N") && anlswc==swc) || (anlwc=="P" && gwc=="P")) && nm<maxmorf)
+         if(((anlwc=="I" && anlwc==gwc) || ((anlwc=="V" || anlwc=="N") && anlswc==swc) || (anlwc=="P" && gwc=="P")) && (nm<maxmorf || f[6]==head0))
            {
-             # split(f[6],ff,"\t");
-             # lemma=ff[2];
              lemma=f[6];
              maxmorf=nm;
-             # split(anl[i],ff,"\t");
-             # disamb=ff[2];
              disamb=anl[2];
            }
        }
@@ -83,15 +108,30 @@ NR>=4 {
     lemma=NULL;
   paradigms=NULL;
   if(type=="lemma" && (gwc=="N" || gwc=="V"))
-    paradigms="\n        <paradigm>"tolower(swc)"-basic</paradigm>\n        <paradigm>"tolower(swc)"-full</paradigm>\n      ";
+     paradigms=swc;
+#    paradigms="\n        <paradigm>"tolower(swc)"-basic</paradigm>\n        <paradigm>"tolower(swc)"-full</paradigm>\n      ";
   if(index(disamb,"Pron+Pers")!=0)
     paradigms="personal-pronouns";
   if(index(disamb,"Pron+Dem")!=0)
     paradigms="demonstrative-pronouns";
 
-  newfields="      <type>"type"</type>\n      <gwc>"gwc"</gwc>\n      <swc>"swc"</swc>\n      <anl>"disamb"</anl>\n      <lemma>"lemma"</lemma>\n      <paradigms>"paradigms"</paradigms>";
-  sub("</lc>", "</lc>\n"newfields,$0);
-  print $0; print "";
+  if((type=="word" || type=="lemma") && lemma!="")
+    lemma_key=keys[lemma,swc];
+  else
+    lemma_key=NULL;
+
+  key=keys[head0,swc];
+  sub("</l>","</l>\n      <entry-key>"key"</entry-key>",record[j]);
+
+  newfields="      <entry-type>"type"</entry-type>\n      <general-word-class>"gwc"</general-word-class>\n      <specific-word-class>"swc"</specific-word-class>\n      <fst-analysis>"disamb"</fst-analysis>\n      <fst-lemma>"lemma"</fst-lemma>\n      <lemma-key>"lemma_key"</lemma-key>\n      <paradigms>"paradigms"</paradigms>";
+  sub("</lc>", "</lc>\n"newfields,record[j]);
+
+  gsub("lc>","lexical-category>",record[j]);
+  sub(" pos=\"[^\"]+\"","",record[j]);
+  gsub("l>","entry-head>",record[j]);
+  print record[j]; print "";
+
   # print lemma, disamb, is_lemma, swc, gwc, paradigms;
+}
 }'
 
