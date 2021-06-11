@@ -19,7 +19,7 @@ gawk 'NF!=0 && index($0,"+?")==0 { print $2; }' |
 # less > /dev/null; exit 0;
 # echo 'ê-<nipâkwêsimo>hk' |
 
-gawk '{ gsub("-","-/",$0);
+gawk '{ gsub("-","-/",$0); gsub("-/<","-<",$0);
 nm=split($0,m,"[<>/]");
 pref_compl="";
 pref="";
@@ -27,15 +27,16 @@ for(i=1; i<=nm; i++)
    { 
      pref_compl=pref_compl m[i];
      nc=split(m[i],c,"");
-     for(j=1; j<=nc-1; j++)
+     for(j=0; j<=nc-1; j++)
         {
           pref=pref c[j]
-          printf "%s\t%s\n", pref, pref_compl;
+          if(pref!="")
+            printf "%s\t%s\n", pref, pref_compl;
         }
      pref=pref c[nc];
      printf "%s\t%s\n", pref, pref_compl;
    }
-}' |
+}' | # less; exit 0;
 
 gawk -F"\t" '{ a=$1; b=$2;
 na=split(a,ca,"");
