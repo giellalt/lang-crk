@@ -2146,7 +2146,7 @@ INANIMATE \\
 
 
  ôma+Pron+Def+Prox+I+Sg:ôma # "this one" ; 
- ôhi+Pron+Def+Prox+I+Pl:ôhi # "these one" ; 
+ ôhi+Pron+Def+Prox+I+Pl:ôhi # "these ones" ; 
 
 
 
