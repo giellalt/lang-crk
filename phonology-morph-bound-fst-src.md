@@ -395,3 +395,5 @@ INITIAL CHANGE
 * *ot2<ospwâkan*
 * *ot<ôspwâkan*
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology-morph-bound.twolc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/phonology-morph-bound.twolc)</small>

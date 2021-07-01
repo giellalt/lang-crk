@@ -80,7 +80,7 @@ Intransitive inanimate (II)
 
  LEXICON VIIw_PL   
 
-LEXICON VIIw_PL !!= LEXICON VIIw_PL   NO LONGER NEEDED FROM AROK
+= LEXICON VIIw_PL   NO LONGER NEEDED FROM AROK
 +V+II: VIIw_PL_WICI ;	   NO LONGER NEEDED FROM AROK
 
  LEXICON VIIw   
@@ -114,7 +114,7 @@ NO LONGER NEEDED FROM AROK
 
  LEXICON VIIw_PL_ORDER  singular only
 
-LEXICON VIIw_PL_ORDER !!= LEXICON VIIw_PL_ORDER  plural only 
+= LEXICON VIIw_PL_ORDER  plural only 
 @U.order.indep@+Ind:@U.order.indep@ VIIw_PL_IND_PERSON ; !
 @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_PL_CNJ_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_PL_FUT_CON_PERSON ;!
@@ -138,13 +138,13 @@ LEXICON VIIw_PL_ORDER !!= LEXICON VIIw_PL_ORDER  plural only
 
  LEXICON VIIw_PL_CNJ_TENSE  plural only
 
-LEXICON VIIw_PL_IND_TENSE !!= LEXICON VIIw_PL_CNJ_TENSE  plural only
+= LEXICON VIIw_PL_CNJ_TENSE  plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_IND_PERSON ; !
 @U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_IND_PERSON ; !
 @U.tense.FutDef@+Fut+Def:@U.tense.FutDef@ VIIw_PL_IND_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_IND_PERSON ; !
 
-LEXICON VIIw_PL_CNJ_TENSE !!= LEXICON VIIw_PL_CNJ_TENSE  plural only
+= LEXICON VIIw_PL_CNJ_TENSE  plural only
 @U.tense.Prs@+Prs:@U.tense.Prs@ VIIw_PL_CNJ_PERSON ; !
 @U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_CNJ_PERSON ; !
@@ -180,13 +180,13 @@ LEXICON VIIw_PL_CNJ_TENSE !!= LEXICON VIIw_PL_CNJ_TENSE  plural only
 
  LEXICON VIIw_PL_FUT_CON_PERSON  
 
-LEXICON VIIw_PL_IND_PERSON !!= LEXICON VIIw_PL_FUT_CON_PERSON  plural only
+= LEXICON VIIw_PL_FUT_CON_PERSON  plural only
 @U.person.NULL@ VIIw_IND_PL_SUFFIX ;
 
-LEXICON VIIw_PL_CNJ_PERSON !!= LEXICON VIIw_PL_FUT_CON_PERSON  plural only
+= LEXICON VIIw_PL_FUT_CON_PERSON  plural only
 @U.person.NULL@ VIIw_CNJ_PL_SUFFIX ;
 
-LEXICON VIIw_PL_FUT_CON_PERSON !!= LEXICON VIIw_PL_FUT_CON_PERSON  plural only
+= LEXICON VIIw_PL_FUT_CON_PERSON  plural only
 @U.person.NULL@ VIIw_FUT_CON_PL_SUFFIX ;
 
 
@@ -1069,3 +1069,5 @@ Derives to VIIn
 
 
 End of verb affixes LEXC code
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verb_affixes.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/affixes/verb_affixes.lexc)</small>
