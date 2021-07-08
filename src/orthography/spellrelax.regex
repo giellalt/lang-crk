@@ -48,8 +48,8 @@ a (->) â,
 i (->) î,
 o (->) ô,,
 
-# Prefix-final vowel (preceded by consonant) dropped before initial vowel for following morpheme
-[ a | â | ê | i | î | o | ô ]  (->) 0 || [ c | k | m | n | p | s | t | w | y ] _ %- [ a | â | ê | i | î | o | ô ] ,,
+# Prefix-final vowel (preceded by consonant) dropped before following morpheme
+[ a | â | ê | i | î | o | ô ]  (->) 0 || [ c | k | m | n | p | s | t | w | y ] _ %- ,,
 
 # Dealing with spaces instead of hyphens as separators in multipart words
 
