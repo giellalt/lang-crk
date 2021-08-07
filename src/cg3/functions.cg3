@@ -1366,7 +1366,7 @@ MAP:OBL @OBL> TARGET N + A + Pl IF (NOT 0 Loc)(*1 AI + 3Sg OR TI + 3Sg OR AI + n
 
 #COPY:APPdem (*) EXCEPT @<ACTOR TARGET (0 Pron @APP-Pron<) ; 
 
-SUBSTITUTE (@<ACTOR) (@APP-Pron<) TARGET (Pron @<ACTOR) IF (*-1 (Pron @<ACTOR) BARRIER V OR CLB) ;
+#SUBSTITUTE (@<ACTOR) (@APP-Pron<) TARGET (Pron @<ACTOR) IF (*-1 (Pron @<ACTOR) BARRIER V OR CLB) ;
 
 
 
