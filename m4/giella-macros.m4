@@ -99,7 +99,7 @@ AC_MSG_RESULT([$GIELLA_CORE])
 
 ### This is the version of the Giella Core that we require. Update as needed.
 ### It is possible to specify also subversion revision: 0.1.2-12345
-_giella_core_min_version=0.11.0
+_giella_core_min_version=0.12.0
 
 # GIELLA_CORE/GTCORE env. variable, required by the infrastructure to find scripts:
 AC_ARG_VAR([GIELLA_CORE], [directory for the Giella infra core scripts and other required resources])
@@ -312,8 +312,16 @@ AC_CACHE_CHECK([for awk that supports gensub], [ac_cv_path_GAWK],
     [[awkout=`$ac_path_GAWK 'BEGIN{gensub(/a/,"b","g");}'; exvalue=$?; echo $exvalue`
       test "x$awkout" = x0 \
       && ac_cv_path_GAWK=$ac_path_GAWK ac_path_GAWK_found=:]],
-    [AC_MSG_ERROR([could not find awk that supports gensub - please install GNU awk])])])
+    [AC_MSG_ERROR([could not find awk that supports gensub - please install GNU awk. hint: sudo port install gawk])])])
 AC_SUBST([GAWK], [$ac_cv_path_GAWK])
+# Check for sed with required feature:
+AC_CACHE_CHECK([for sed that supports newlines and pipes], [ac_cv_path_SED],
+  [AC_PATH_PROGS_FEATURE_CHECK([SED], [sed gsed gnused],
+              [[m4out=`echo aaa | $ac_path_SED 's/a/\n/g' | wc -l | tr -d '[:space:] '`
+                test "x$m4out" = x4\
+      && ac_cv_path_SED=$ac_path_SED ac_path_SED_found=:]],
+    [AC_MSG_ERROR([could not find sed that supports stuff - please install GNU sed. hint: sudo port install gsed./c])])])
+AC_SUBST([SED], [$ac_cv_path_SED])
 
 # Check for Forrest:
 AC_ARG_WITH([forrest],
@@ -1010,6 +1018,10 @@ AC_ARG_ENABLE([tts],
                               [enable tts transcriptors @<:@default=no@:>@])],
               [enable_tts=$enableval],
               [enable_tts=$enable_all_tools])
+AS_IF([test x$enable_tts = xyes -a x$enable_transcriptors = xno],
+    [AC_MSG_ERROR([You need to enable transcriptors to build tts])])
+AS_IF([test x$enable_tts = xyes -a x$enable_phonetic = xno],
+    [AC_MSG_ERROR([You need to enable phonetic to build tts])])
 AM_CONDITIONAL([WANT_TTS], [test "x$enable_tts" != xno])
 enableval=''
 
@@ -1031,7 +1043,7 @@ cat<<EOF
   * generate abbr.txt: $enable_abbr
   * build glossing fst’s: $enable_glossers
   * build dialect specific fst’s: $enable_dialects
-  * custom fst's: $enable_custom_fsts
+  * custom fst’s: $enable_custom_fsts
 
   -- Tools (off by default): --
   * phonetic/IPA conversion enabled: $enable_phonetic
@@ -1040,6 +1052,7 @@ cat<<EOF
   * build tokenisers: $enable_tokenisers
   * build morphololgical segmenter: $enable_morpher
   * build analyser tool: $enable_analyser_tool
+  * build text-to-speech support: $enable_tts
 
   -- Proofing tools (off by default): --
   * hyphenators:
@@ -1067,7 +1080,7 @@ cat<<EOF
   * transcriptors enabled: $enable_transcriptors
   * syntactic tools enabled: $enable_syntax
   * yaml tests enabled: $enable_yamltests
-  * generated documentation enabled: $giellalt_forrest_validation
+  * generated documentation enabled: always
 
 For more ./configure options, run ./configure --help
 
@@ -1082,9 +1095,6 @@ AS_IF([test x$gt_prog_xslt = xno -a \
 disabled. Please check the output of configure to locate any problems. The LexC
 files will still compile though.
 ])])
-
-AS_IF([test "x$giellalt_forrest_validation" = "xno" -a "x$with_forrest" = "xyes"],
-      [AC_MSG_WARN([Could not find gawk, java or forrest. In-source documentation will not be extracted and validated. Please install the required tools. Alternatively, silence this message by disabling forrest validation: --without-forrest])])
 
 AS_IF([test x$can_local_sync = xno -a x$can_wget_giella_libs = xno],
       [AC_MSG_WARN([Could not find GIELLA_LIBS, rsync or wget - speller installers will not be built, only zhfst files.])])

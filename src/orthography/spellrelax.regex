@@ -48,8 +48,8 @@ a (->) â,
 i (->) î,
 o (->) ô,,
 
-# Prefix-final vowel (preceded by consonant) dropped before initial vowel for following morpheme
-[ a | â | ê | i | î | o | ô ]  (->) 0 || [ c | k | m | n | p | s | t | w | y ] _ %- [ a | â | ê | i | î | o | ô ] ,,
+# Prefix-final vowel (preceded by consonant) dropped before following morpheme
+[ a | â | ê | i | î | o | ô ]  (->) 0 || [ c | k | m | n | p | s | t | w | y ] _ %- ,,
 
 # Dealing with spaces instead of hyphens as separators in multipart words
 
@@ -82,25 +82,34 @@ y (->) ý,
 
 {iw} (->) {ow},     # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
 {ow} (->) {iw},
-{iyi} (->) î,       # Mishearing of vowel-glide-vowel cluster
+{iyi} (->) [ î | i ],       # Mishearing of vowel-glide-vowel cluster
 {nwa} (->) {no},    # <nwa> is likely to be heard as <no>
 
 c (->) {ch},        # English influence on spelling <c>
 c (->) {tch},       # English influence on spelling <c>
 c (->) {ts} ,,      # Another English influence on spelling <c>
 
-[..] (->) h || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],,  # Excessive preaspiration before stops
 [..] (->) h || _ .#. ,, # Excessive word-final pre-aspiration
-   h (->) 0 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],,    # Missing preaspiration before stops
+   h (->) 0 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t | g | b | d ],,    # Missing preaspiration before stops
+[..] (->) h || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t | g | b | d ],,  # Excessive preaspiration before stops
 
 # Standardizing double-vowel notation for long vowels
 â (->) {aa},
 î (->) {ii},
 ô (->) {oo},
 
+# Standardizing rarer SRO marking of long vowels with accent-aigu
+[ a | â ] (->) á,
+ê (->) é,
+[ i | î ] (->) í,
+[ o | ô ] (->) ó,
+
 # Woods Cree to Plains Cree
-[ ý | y ] (->) {th},
-ê (->) î
+[ ý | y ] (->) {th} ,,
+ê (->) [ î | i ] ,,
+
+# Adding missing or reduced short i's in interconsonantal contexts
+i (->) [..] || [ c | h | k | m | n | p | s | t | w | y | b | g | d ] _ [ c | h | k | m | n | p | s | t | w | y | b | g | d ]
 
 ;
 

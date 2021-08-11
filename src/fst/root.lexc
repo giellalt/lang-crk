@@ -22,14 +22,14 @@
 ! altlab@ualberta.ca
 
 ! ========================================================================== !
-!!            !!!Plains Cree morphological analyser
+!! # Plains Cree morphological analyser
 ! ========================================================================== !
 !! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
  
 
-Multichar_Symbols  !!≈ !!!Definitions for @CODE@
+Multichar_Symbols  !!≈ # Definitions for @CODE@
 
-!! !!Analysis symbols
+!! ## Analysis symbols
 
 !! The morphological analyses of wordforms of Plains Cree are presented
 !! in this system in terms of the following symbols.
@@ -442,7 +442,7 @@ PV/yikate+
 PV/yipe+
 PV/yoski+
 
-!! !!Auxiliary symbols
+!! ## Auxiliary symbols
 
 !! These symbols either shape or govern the
 !! morphophonological structure
@@ -451,15 +451,15 @@ PV/yoski+
 %< 		 !!= * @CODE@ prefix border
 
 
-        !! !!Symbols that need to be escaped on the lower side (towards twolc):
- »7     !!≈ ; @CODE@ : Literal »
- «7     !!≈ ; @CODE@ : Literal «
-        !! {{{
+        !! ## Symbols that need to be escaped on the lower side (towards twolc):
+ »7     !!≈ * **@CODE@**:  Literal »
+ «7     !!≈ * **@CODE@**:  Literal «
+        !! ```
  %[%>%] !!= @CODE@ - Literal >
  %[%<%] !!= @CODE@ - Literal <
-        !! }}}
+        !! ```
 
-!! !! Special characters for morphophonology
+!! Special characters for morphophonology
 w2      !!= * @CODE@ mowêw:mow2
 t2 		!!= * @CODE@ Epenthetic -t- between person prefixes and vowel-initial stems
 t3      !!= * @CODE@ t to s in VTA-4
@@ -483,7 +483,7 @@ d2  !!=* @CODE@  Reduplication consonant marker
 %^EGLOT  !!= * @CODE@  glottal stop after e, for eh- in conjunctive order
 
 
-!! !!Usage tags
+!! ## Usage tags
 
 !! These tags distinguish different special-purpose analysers
 !! and generators from each other. Thus, for examples, we have
@@ -495,14 +495,14 @@ d2  !!=* @CODE@  Reduplication consonant marker
 +Use/NG  !!= * @CODE@ not-generate, for ped generation isme-ped.fst
 +Eng !!≈ * @CODE@ indicates that this is an English form
 
-!! !! Flagdiacritics
+!! Flagdiacritics
 
 !! These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
 
 !! For indicative, there are prefixes, so here we need one
 !! flag for each person-number combination. Note that
 !! for the inverse objective conjugation, the flag refers to
-!! the __prefix__, not to the subject. So ''indsg1'' refers to either
+!! the **prefix**, not to the subject. So *indsg1* refers to either
 !! subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
 ! Associative/comitative prefix wîci- (part of circumfix wîci-...-m)

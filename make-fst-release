@@ -18,7 +18,7 @@ from datetime import datetime
 
 EX_USAGE = 64  # refer to `man 3 sysexits`
 VALID_PRERELEASE_IDENTIFIERS = "alpha", "beta", "post"
-ALLOW_TAG_ON_BRANCH = "develop"
+ALLOW_TAG_ON_BRANCH = "main"
 
 
 class UsageError(Exception):

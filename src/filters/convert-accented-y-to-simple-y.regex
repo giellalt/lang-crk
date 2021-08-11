@@ -1,0 +1,4 @@
+# This regular expression "regulalizes" the accented <ý> marking a historical, Proto-Cree /th/,
+# which in current Plains Cree becomes a regular <y> and in Woods Cree <th>.
+
+y <-  ý ;

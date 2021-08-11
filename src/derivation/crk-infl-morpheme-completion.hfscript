@@ -1,0 +1,142 @@
+! Instructions for compiling a morpheme completion FST
+! based on morpheme boundaries
+
+load ../crk-strict-generator-with-morpheme-boundaries.hfst
+define Words
+
+! load crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst.nw 
+! define Words
+
+!! Prefix Weighting !!
+
+!! Creating corpus-based prefix weights for authentically Cree words
+
+!! cat ~/altlab2/crk/generated/ahenakew_wolfart_bloomfield.fst+cg.freq-sorted.txt| grep -v '+?' | grep -v '+PUNCT' | grep -v '+CLB' | grep -v '+Quant' | grep -v '+Prop' | grep -v '?' | grep -v 'Iph' | gawk '{ n=split($2,c,""); for(k=1; k<=$1; k++) for(i=2; i<=n; i++) { for(j=1; j<=i; j++) { printf "%s", c[j]; if(c[j+1]=="-") { printf "%s", c[j+1]; j++; } } printf "\n"; } }' | sort | uniq -c | sort -nr | gawk '{ N[$2]=$1; Ntot+=$1; } END { PROCINFO["sorted_in"]="@val_num_desc"; print "LEXICON Root"; for(i in N) printf "%s Tail \"weight: %f\" ;\n", i, -log(N[i]/Ntot); print ""; print "LEXICON Tail"; print "# ;"; }' > prefix_weighting.lexc
+
+! cat ~/altlab2/crk/generated/ahenakew_wolfart_bloomfield.fst+cg.freq-sorted.txt | ./morpheme-completion-weighting.sh
+
+echo 'Compiling known prefixes with weights.'
+read lexc prefix_weighting.lexc
+define ObservedPrefixWeights
+
+!! echo 'Compiling known circumfixes with weights.'
+! read lexc circumfix_weighting.lexc
+! define ObservedCircumfixWeights
+
+!! echo 'Inserting a regular expression for the stem slot."
+! regex [ ObservedCircumfixWeights.l .o. [ "_" -> [ [ ? - "_" ]^>3 [ ?::0.2 ]* ] ] ].l ;
+! define ObservedCircumfixWeights2
+
+! regex [ ?::1 ]* ;
+! define Suffixes
+!
+! regex [ ObservedPrefixWeights Suffixes ] ;
+
+!! echo 'Compiling set of circumfixes not included in full prefixes."
+! regex [ ObservedCircumfixWeights2 - ObservedPrefixes.l ] ;
+! define OpenCircumfixes
+
+! echo 'Combining remainder circumfixes and prefixes."
+! regex [ OpenCircumfixes | ObservedPrefixes.l ] ;
+! define ObservedCircumfixPrefixWeights
+
+echo 'Compiling set of unobserved prefixes.'
+! regex [ ?+ - ObservedCircumfixPrefixWeights.l ] ;
+regex [ ?+ - ObservedPrefixWeights.l ] ;
+define UnobservedPrefixes
+
+echo 'Creating weights for unobserved prefixes.'
+! regex [ ?::10 ( ?::5 ( ?::4 ( ?::3 ( ?::2 ( ?::1 [ ?::0.5 ]* ) ) ) ) ) ] ;
+! regex [ ?+ ]::15 ;
+regex [ ?::15 [ [ ? - "-" ]::1 | "-"::0.5 ]* ] ;
+define UnobservedWeights
+
+echo 'Composing weights with set of unobserved prefixes.'
+set flag-is-epsilon ON
+regex [ UnobservedPrefixes .o. UnobservedWeights ] ;
+define UnobservedPrefixWeights
+set flag-is-epsilon OFF
+
+echo 'Combining weighted known and unknown prefixes together.'
+! regex [ ObservedCircumfixPrefixWeights | UnobservedPrefixWeights ] ;
+regex [ ObservedPrefixWeights | UnobservedPrefixWeights ] ;
+
+down ekw
+down êkw
+
+define PrefixWeighting
+
+!! Morpheme Completion !!
+
+echo 'Beginning of specification of morpheme completion FST.'
+
+define Bx [ "<" | ">" | "/" ] ;
+
+define Ax [ ? - Bx ] ;
+
+define Consonant [ c | h | k | m | n | p | s | t | y | w ] ;
+
+define Vowel [ a | â | ê | i | î | o | ô ] ;
+
+define Stop [ c | k | p | t ] ;
+
+! Specific spell-relax rules
+
+define SpellRelax [ a (->) â ,, e (->) ê ,, i (->) î ,, o (->) ô
+,, â (->) a ,, î (->) i ,, ô (->) o
+,, 0 (->) "-"
+,, h (->) "-"
+,, [..] (->) i || Consonant _ Consonant
+,, [..] (->) h || Vowel _ Stop
+,, h (->) 0 || Vowel _ Stop
+,, o (->) i || _ w
+,, i (->) o || _ w
+] ;
+
+! Making use of pre-existing spellrelax rules
+
+load ../orthography/spellrelax.compose.hfst
+invert net
+define SpellRelax
+
+! Inserting reduced/deleted /i/ or hyphens, and use of <h> as joiner instead of <->
+regex [ [..] (->) "-" ,, [..] (->) i ,, h (->) "-" ];
+define InsertMissingChars
+
+define MaxHyphens [ [ [ ? - "-" ]* "-" ]^<6 [ ? - "-" ]* ] ;
+
+define NextMorpheme [ ?+ [ 0:Ax ]* 0:Bx ] ;
+
+define PrefixStrings [ ?* [ 0:? ]* ] ;
+
+define InsertBoundary [ 0 (->) Bx ] ;
+
+define AddBoundary [ [..] -> "/" || "-" _ \[ "<" | ">" ] ] ; 
+
+define rmBoundary [ Bx -> 0 ] ;
+
+define CorrectWords [ ~[ $[ "+Err/Orth" | "+Err/Frag" ] ] .o. Words .o. AddBoundary ] ;
+
+regex [ InsertBoundary
+.o. NextMorpheme
+.o. [ PrefixStrings .o. [ CorrectWords ">" ].l ].u
+.o. rmBoundary
+] ;
+define MorphemeCompletion
+
+! The following setting needed for the weighting to match the morpheme completion automaton characters
+! and ignore flag-diacritcs
+set flag-is-epsilon ON
+
+! D-flag added to rule out boundaries without a hyphen
+regex [ InsertMissingChars .o. SpellRelax .o. [ MorphemeCompletion "@D.joiner.NULL@" ] ] ;
+define SpellRelaxedMorphemeCompletion 
+
+regex [ SpellRelaxedMorphemeCompletion .o. PrefixWeighting ] ;
+
+save stack crk-infl-morpheme-completion.hfst
+
+! hfst-fst2fst -w -i crk-infl-morpheme-completion.hfst -o  crk-infl-morpheme-completion.hfstol
+
+! Lookup command example (with topmost 10 analyses):
+!  hfst-optimized-lookup -q -u -n 10 crk-infl-morpheme-completion.hfstol

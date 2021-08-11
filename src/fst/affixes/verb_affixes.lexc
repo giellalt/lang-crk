@@ -15,19 +15,19 @@
 ! along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ! ========================================================================== !
-!!                           !!! Plains Cree verb morphology                  
+!! Plains Cree verb morphology                  
 ! ========================================================================== !
 
 
 !! The Plains Cree verbs are divided in four groups:
 
-!! # AI: Animate intransitive 
-!! # II: Inanimate intransitive
-!! # TA: Transitive animate
-!! # TI: Transitive inanimate
+!! 1. AI: Animate intransitive 
+!! 2. II: Inanimate intransitive
+!! 3. TA: Transitive animate
+!! 4. TI: Transitive inanimate
 
 
-!! !!!Prefixes
+!! # Prefixes
 
 LEXICON VerbPrefixes  !!= @CODE@ divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
 
@@ -260,7 +260,7 @@ LEXICON IMPERATIVE   !!= @CODE@ gives flag for imperative (no prefixes)
 @U.order.imp@  VERBPREFIXES ;
 
 
-!! !! Preverbs
+!! Preverbs
 !     ==========
 
 LEXICON VERBPREFIXES  !!= @CODE@ just adds the prefix boundary
@@ -368,7 +368,7 @@ PV/ase+:âsê PREVERBS_BOUND "see: asê-" ;
 PV/asowi+:âsowi PREVERBS_BOUND "in turn, in succession" ; 
 PV/aste+:âstê PREVERBS_BOUND "ceasing; quit" ; 
 PV/ata+:âta PREVERBS_BOUND "although, in VAIn" ; 
-PV/ayici+:âyîci PREVERBS_BOUND "firmly, tightly" ; 
+PV/ayici+:âýîci PREVERBS_BOUND "firmly, tightly" ; 
 PV/cipehtako+:cîpêhtako PREVERBS_BOUND "blue, greyish blue, grey" ; 
 ! PV/e+:ê PREVERBS_BOUND "[grammatical preverb: complementizer; defines a changed conjunct clause]" ; 
 PV/isi+:isi PREVERBS_BOUND "so, this way, thus, thither, such" ; 
@@ -382,8 +382,8 @@ PV/ikate+:îkatê PREVERBS_BOUND "aside, off to one side" ;
 ! @U.joiner.hyphen@PV/ka_ki+:@U.joiner.hyphen@ka-kî PREVERBS_BOUND ;
 ! @U.joiner.NULL@PV/ka_ki+:@U.joiner.NULL@kakî PREVERBS_BOUND ;
 PV/kakepaci+:kakêpâci PREVERBS_BOUND "stupidly" ; 
-PV/kakwahyaki+:kakwâhyaki PREVERBS_BOUND "greatly, extremely, overwhelmingly; with startled surprise" ; 
-PV/kakwayaki+:kakwâyaki PREVERBS_BOUND "greatly, extremely" ; 
+PV/kakwahyaki+:kakwâhýaki PREVERBS_BOUND "greatly, extremely, overwhelmingly; with startled surprise" ;
+PV/kakwayaki+:kakwâýaki PREVERBS_BOUND "greatly, extremely" ; 
 PV/kakwe+:kakwê PREVERBS_BOUND "try to, attempt to" ; 
 PV/kakweci+:kakwêci PREVERBS_BOUND "inquire" ; 
 PV/kanaci+:kanâci PREVERBS_BOUND "clean" ; 
@@ -430,7 +430,7 @@ PV/koci+:koci PREVERBS_BOUND "try to" ;
 PV/kota+:kôta PREVERBS_BOUND "long for, be deprived of" ; 
 PV/kotate+:kôtatê PREVERBS_BOUND "at a loss, making no attempt" ; 
 PV/kwataki+:kwataki PREVERBS_BOUND "distressing, tormenting, tortuous" ; 
-PV/kwayako+:kwayako PREVERBS_BOUND "taking out, directly" ; 
+PV/kwayako+:kwaýako PREVERBS_BOUND "taking out, directly" ; 
 PV/kwayaski+:kwayaski PREVERBS_BOUND "properly" ; 
 PV/kwayasko+:kwayasko PREVERBS_BOUND "straight; properly, correctly" ; 
 PV/kwayaci+:kwayâci PREVERBS_BOUND "in readiness, already; in preparation; beforehand" ; 
@@ -453,18 +453,18 @@ PV/mahi+:mâhi PREVERBS_BOUND "downstream" ;
 PV/mamawi+:mâmawi PREVERBS_BOUND "together; in full number of them all, altogether, all together as a group" ; 
 PV/maninakisko+:mâninâkisko PREVERBS_BOUND "without hesitation, entirely" ; 
 PV/maski+:mâski PREVERBS_BOUND "crippled; defective, deformed" ; 
-PV/mayaci+:mâyâci PREVERBS_BOUND "bad" ; 
-PV/mayi+:mâyi PREVERBS_BOUND "bad, evil; badly, evilly, wickedly" ; 
+PV/mayaci+:mâýâci PREVERBS_BOUND "bad" ; 
+PV/mayi+:mâýi PREVERBS_BOUND "bad, evil; badly, evilly, wickedly" ; 
 PV/mecimwaci+:mêcimwâci PREVERBS_BOUND "permanently, for good" ; 
 PV/mêkwa+:mêkwâ PREVERBS_BOUND "currently, presently, right now; while, during, in the meantime, in the act or place" ; 
 PV/mesci+:mêsci PREVERBS_BOUND "exhaustively, till all is gone" ; 
 PV/mesti+:mêsti PREVERBS_BOUND "it is used up, it is burnt out, it is spent" ; 
 PV/mihko+:mihko PREVERBS_BOUND "red" ; 
-PV/mihyawe+:mihyawê PREVERBS_BOUND "with fur or body hair" ; 
+PV/mihyawe+:mihýawê PREVERBS_BOUND "with fur or body hair" ; 
 PV/misakame+:misakâmê PREVERBS_BOUND "all the way" ; 
 PV/misi+:misi PREVERBS_BOUND "big, greatly; much, a lot; very, extremely, to the extreme" ; 
 PV/mistiko+:mistiko PREVERBS_BOUND "wood, of wood, wooden" ; 
-PV/miyo+:miyo PREVERBS_BOUND "good, well, beautifully" ; 
+PV/miyo+:miýo PREVERBS_BOUND "good, well, beautifully" ; 
 PV/mosci+:mosci PREVERBS_BOUND "just, merely, plainly, simply, directly, without mediation, without instrumentality; by hand" ; 
 PV/mohco+:môhco PREVERBS_BOUND "silly, crazy" ; 
 PV/mwayi+:mwayî PREVERBS_BOUND "before, prior to" ; 
@@ -479,7 +479,7 @@ PV/naci+:nâci PREVERBS_BOUND "getting" ;
 PV/nanitaw+:nânitaw PREVERBS_BOUND "[in negative clauses:] any" ; 
 PV/natakasi+:nâtakâsi PREVERBS_BOUND "into the bush country" ; 
 PV/nawayawi+:nâwayawi PREVERBS_BOUND "one behind the other, in a row" ; 
-PV/nehiyawi+:nêhiyawi PREVERBS_BOUND "Cree, in Cree" ; 
+PV/nehiyawi+:nêhiýawi PREVERBS_BOUND "Cree, in Cree" ; 
 PV/nihta+:nihtâ PREVERBS_BOUND "able; good at, competent, practised, experienced, skillful at, expert at, known as one who does s.t. habitually; well" ; 
 PV/nipahi+:nipahi PREVERBS_BOUND "really, very, extremely" ; 
 PV/nisihkaci+:nisîhkâci PREVERBS_BOUND "gently, carefully, slowly" ; 
@@ -569,7 +569,7 @@ PV/tita+:tita PREVERBS_BOUND "[grammatical preverb; future]" ;
 PV/tomi+:tômi PREVERBS_BOUND "oily, greasy" ; 
 PV/wahke+:wahkê PREVERBS_BOUND "addicted to, easily led to" ; 
 PV/wani+:wani PREVERBS_BOUND "dim, dark, indistinctly, blurred; lose; destroy" ; 
-PV/wayawi+:wayawî PREVERBS_BOUND "outside; out from inside, out from the tipi" ; 
+PV/wayawi+:waýawî PREVERBS_BOUND "outside; out from inside, out from the tipi" ; 
 PV/wayesi+:wayêsi PREVERBS_BOUND "deceitfully" ; 
 PV/wa+:wâ PREVERBS_BOUND "intend to, be about to" ; 
 PV/wah+:wâh PREVERBS_BOUND "whenever in future" ; 
@@ -580,17 +580,17 @@ PV/wasa+:wâsâ PREVERBS_BOUND "around" ;
 PV/wase+:wâsê PREVERBS_BOUND "clear; bright" ; 
 PV/wawiye+:wâwiyê PREVERBS_BOUND "round, spherical" ; 
 PV/wehci+:wêhci PREVERBS_BOUND "easily" ; 
-PV/wiyipi+:wiyîpi PREVERBS_BOUND "dirty looking; dull brown, drab" ; 
+PV/wiyipi+:wiýîpi PREVERBS_BOUND "dirty looking; dull brown, drab" ; 
 PV/wihpi+:wîhpi PREVERBS_BOUND "hollowing out" ; 
 PV/wini+:wîni PREVERBS_BOUND "soil, dirty" ; 
 PV/wipi+:wîpi PREVERBS_BOUND "dirty, unclean" ; 
 PV/wipo+:wîpo PREVERBS_BOUND "narrow" ; 
 PV/wisaki+:wîsaki PREVERBS_BOUND "painfully" ; 
 PV/wito+:wîto PREVERBS_BOUND "want, intend" ; 
-PV/yahki+:yahki PREVERBS_BOUND "act of pushing forward; increasing, increasingly, adding, more and more" ; 
+PV/yahki+:ýahki PREVERBS_BOUND "act of pushing forward; increasing, increasingly, adding, more and more" ; 
 PV/yikate+:yîkatê PREVERBS_BOUND "aside" ; 
-PV/yipe+:yîpê PREVERBS_BOUND "on a slant, on a slope, on the side, sideways" ; 
-PV/yoski+:yôski PREVERBS_BOUND "soft, softly" ; 
+PV/yipe+:ýîpê PREVERBS_BOUND "on a slant, on a slope, on the side, sideways" ; 
+PV/yoski+:ýôski PREVERBS_BOUND "soft, softly" ; 
 
 LEXICON PREVERBS_BOUND
 @U.joiner.NULL@@D.cnj.CC@:@U.joiner.NULL@@D.cnj.CC@%^EGLOT%< VERBPREFIXES ;
@@ -624,9 +624,9 @@ LEXICON WICI
 ! ===============================================================
 ! ===============================================================
 
-!! !!!Suffixes
+!! # Suffixes
 
-!! !!! Intransitive inanimate (II)
+!! Intransitive inanimate (II)
 !      ===========================
 !      ===========================
 
@@ -673,7 +673,7 @@ LEXICON VIIw_SG_WICI !!!!
 LEXICON VIIw_PL_WICI !!!! 
 @U.wici.NULL@ VIIw_PL_ORDER ;
 
-!! LEXICON VIIw_PL_WICI !!!! 	 NO LONGER NEEDED FROM AROK
+!! 	 NO LONGER NEEDED FROM AROK
 !! @U.wici.NULL@ VIIw_PL_ORDER ; NO LONGER NEEDED FROM AROK
 
 ! ===========================================================
@@ -688,7 +688,7 @@ LEXICON VIIn_SGPL_WICI !!!!
 LEXICON VIIn_SG_WICI !!!! 
 @U.wici.NULL@ VIIn_SG_ORDER ;
 
-!! LEXICON VIIw_PL_WICI !!!! 
+!! 
 !! @U.wici.NULL@ VIIw_PL_ORDER ;
 
 LEXICON VIIn_PL_WICI !!!! 	 NO LONGER NEEDED FROM AROK
@@ -1043,7 +1043,7 @@ LEXICON VIIw_PL_FUT_CON_SUFFIX   !!= @CODE@ w final plural
 +4Pl:%>yikwâwi VERB_ENDLEX ;
 
 
-!! !!! Intransitive animate (AI)
+!! Intransitive animate (AI)
 !      ===========================
 !      ===========================
 
@@ -1728,7 +1728,7 @@ LEXICON VAIn_FUT_CON_NULL_PL_SUFFIX   !!= @CODE@
 
 
 
-!! !!! Transitive inanimate (TI)
+!! Transitive inanimate (TI)
 !      ===========================
 !      ===========================
 

@@ -15,14 +15,14 @@
 ! along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ! ========================================================================== !
-!!                           !!!Plains Cree numerals                           
+!! # Plains Cree numerals                           
 ! ========================================================================== !
 
-!! !!The file for Arabic, Roman, and other symbolic numerals
+!! ## The file for Arabic, Roman, and other symbolic numerals
 
 ! Arabic numerals
 ! ---------------
-LEXICON NUM-PREFIXES   !!= * __@CODE@__
+LEXICON NUM-PREFIXES   !!= * **@CODE@**
     §:§      ARABIC ; ! §24
    §§:§§     ARABIC ; ! §§24
   §% :§%     ARABIC ; ! § 24
@@ -46,12 +46,12 @@ LEXICON NUM-PREFIXES   !!= * __@CODE@__
    %>:%[%>%] ARABIC ; ! >24
   s%.:s%.    ARABIC ; ! s.24
 
-LEXICON ARABIC   !!= * __@CODE@__ arabic numerals
+LEXICON ARABIC   !!= * **@CODE@** arabic numerals
 < [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOP      ;
 < [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOPORD   ;
 < [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOPphone ;
 
-LEXICON ARABICLOOPphone   !!= * __@CODE@__ +358(0)16671254
+LEXICON ARABICLOOPphone   !!= * **@CODE@** +358(0)16671254
 < [1|2|3|4|5|6|7|8|9|%0] > ARABICLOOPphone ;
 !  :              ARABICLOOPphone ; ! Infinite loop on the surface side
   (:(             ARABICLOOPphone ;
@@ -59,10 +59,10 @@ LEXICON ARABICLOOPphone   !!= * __@CODE@__ +358(0)16671254
  %—:%—            ARABICLOOPphone ; 
                   ARABICCASEphone ;
 
-LEXICON ARABICCASEphone   !!= * __@CODE@__  
+LEXICON ARABICCASEphone   !!= * **@CODE@**  
  +Num+Arab: # ;
 
-LEXICON ARABICLOOP   !!= * __@CODE@__
+LEXICON ARABICLOOP   !!= * **@CODE@**
          :         ARABIC ;
        %-:%-       ARABIC ; ! 1-2 multipart numbers
        %–:%–       ARABIC ; ! 1–2 multipart numbers
@@ -99,11 +99,11 @@ LEXICON ARABICLOOP   !!= * __@CODE@__
             % %%+Err/Orth:% %%   NUMARABTAG ; !  50 % etc.
                         NUMARABTAG ; ! list of number-case delimiters
 
-LEXICON ARABICLOOPORD   !!= * __@CODE@__ ordinals
+LEXICON ARABICLOOPORD   !!= * **@CODE@** ordinals
  +Num+Ord:%. # ;
  < [a|b|c|d|e|f|f %  f] > NUMARABTAG ;
 
-LEXICON NUMARABTAG   !!= * __@CODE@__ 
+LEXICON NUMARABTAG   !!= * **@CODE@** 
 +Num+Arab: # ;
 ! +Num:     Rhyph ; ! 3-
 
