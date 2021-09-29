@@ -379,10 +379,10 @@ ADD:PREDTA @PRED-TA TARGET V + TA ;
 ##MAP @<N (Pron Dem) (-1 N (Num))  ;
 
 ##DEMONSTRATIVES AND NOUNS
-MAP:DemNASgL @N> TARGET Dem + A + Sg IF (NOT 1 Obv)(1 N + A + Sg) ;
-MAP:DemNASgR @<N TARGET Dem + A + Sg IF (NOT -1 Obv)(-1 N + A + Sg) ;
-MAP:DemNAPlL @N> TARGET Dem + A + Pl IF (NOT 1 Obv)(1 N + A + Pl) ;
-MAP:DemNAPlR @<N TARGET Dem + A + Pl IF (NOT -1 Obv)(-1 N + A + Pl) ;
+MAP:DemNASgL @N> TARGET Dem + A + Sg IF (1 N + A + Sg) ;
+MAP:DemNASgR @<N TARGET Dem + A + Sg IF (-1 N + A + Sg) ;
+MAP:DemNAPlL @N> TARGET Dem + A + Pl IF (1 N + A + Pl) ;
+MAP:DemNAPlR @<N TARGET Dem + A + Pl IF (-1 N + A + Pl) ;
 
 MAP:DemNAObvL @N> TARGET Dem + A + Obv IF (1 N + A + Obv) ;
 MAP:DemNAObvR @<N TARGET Dem + A + Obv IF (-1 N + A + Obv) ;
@@ -392,16 +392,16 @@ MAP:DemNINSgR @<N TARGET Dem + I + Sg IF (-1 N + I + Sg) ;
 MAP:DemNINPlL @N> TARGET Dem + I + Pl IF (1 N + I + Pl) ;
 MAP:DemNINPlR @<N TARGET Dem + I + Pl IF (-1 N + I + Pl) ;
 
-MAP:DemNASgLnum @N> TARGET Dem + A + Sg IF (NOT 1 Obv)(1 Num)(2 N + A + Sg) ;
-MAP:DemNAPlLnum @N> TARGET Dem + A + Pl IF (NOT 1 Obv)(1 Num)(2 N + A + Pl) ;
+MAP:DemNASgLnum @N> TARGET Dem + A + Sg IF (1 Num)(2 N + A + Sg) ;
+MAP:DemNAPlLnum @N> TARGET Dem + A + Pl IF (1 Num)(2 N + A + Pl) ;
 
 MAP:DemNAObvLnum @N> TARGET Dem + A + Obv IF (1 Num)(2 N + A + Obv) ;
 
-MAP:DemNINSgLnum @N> TARGET Dem + I + Sg IF (1 Num)(2 N + I + Sg) ;
+MAP:DemNINSgLnum @N> TARGET Dem + I + Sg IF (1 Num )(2 N + I + Sg) ;
 MAP:DemNINPlLnum @N> TARGET Dem + I + Pl IF (1 Num)(2 N + I + Pl) ;
 
-MAP:DemNASgLnum @N> TARGET Dem + A + Sg IF (NOT 1 Obv)(1 ("kahkiyaw"))(2 N + A + Sg) ;
-MAP:DemNAPlLnum @N> TARGET Dem + A + Pl IF (NOT 1 Obv)(1 ("kahkiyaw"))(2 N + A + Pl) ;
+MAP:DemNASgLnum @N> TARGET Dem + A + Sg IF (1 ("kahkiyaw"))(2 N + A + Sg) ;
+MAP:DemNAPlLnum @N> TARGET Dem + A + Pl IF (1 ("kahkiyaw"))(2 N + A + Pl) ;
 
 MAP:DemNAObvLnum @N> TARGET Dem + A + Obv IF (1 ("kahkiyaw"))(2 N + A + Obv) ;
 
@@ -442,7 +442,7 @@ MAP:ekoniL @N> TARGET I + Pl IF (0 (".?êkoni"r))(1 N + I + Pl OR Pron + I + Pl)
 MAP:ekoniR @<N TARGET I + Pl IF (0 (".?êkoni"r))(-1 ("kîkway"))(-2 ("kahkiyaw")) ;
 
 #ewako and dem
-MAP:ewakoDEM @N> TARGET Ipc if (0 ("êwako"))(1 Dem) ; 
+MAP:ewakoDEM @N> TARGET Ipc if (0 ("êwako") LINK 1 Dem) ; 
 
 #kotak and nominals: can make like dem pronouns once kotak is consisently marked
 
@@ -457,7 +457,7 @@ MAP:kotakL @N> TARGET I + Sg IF (0 ("<kotak>"r))(1 N + I + Sg OR Pron + I + Sg) 
 MAP:kotakR @<N TARGET I + Pl IF (0 ("<kotaka>"r))(-1 N + I + Pl OR Pron + I + Pl) ;
 MAP:kotakL @N> TARGET I + Pl IF (0 ("<kotaka>"r))(1 N + I + Pl OR Pron + I + Pl) ;
 
-MAP:NAMES @N> TARGET Prop IF (0 Prop)(1 Prop);
+MAP:NAMES @N> TARGET Prop IF (0 Prop LINK 1 Prop);
 ## Residential School
 
 ##ACTor and goal rules for 3 and 3’ animate nouns
@@ -1366,7 +1366,7 @@ MAP:OBL @OBL> TARGET N + A + Pl IF (NOT 0 Loc)(*1 AI + 3Sg OR TI + 3Sg OR AI + n
 
 #COPY:APPdem (*) EXCEPT @<ACTOR TARGET (0 Pron @APP-Pron<) ; 
 
-SUBSTITUTE (@<ACTOR) (@APP-Pron<) TARGET (Pron @<ACTOR) IF (*-1 (Pron @<ACTOR) BARRIER V OR CLB) ;
+#SUBSTITUTE (@<ACTOR) (@APP-Pron<) TARGET (Pron @<ACTOR) IF (*-1 (Pron @<ACTOR) BARRIER V OR CLB) ;
 
 
 

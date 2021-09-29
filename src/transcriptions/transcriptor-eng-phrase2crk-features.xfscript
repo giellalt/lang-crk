@@ -37,6 +37,10 @@ define Tags [ SubjectTags | ObjectTags | TenseTags ] ;
 
 !! VERBS
 
+regex [ i -> I || Bx _ [ Bx | %' ] ]
+;
+define Standardization
+
 regex [ {ain't} -> {is not} , {won't} -> {will not} , {shan't} -> {shall not} , {not to} -> {to not} , {I'm} -> {I am} || Bx _ Bx ]
 .o. [ {n't} -> { not} , {'s} -> { is} , {'re} -> { are} , {'ll} -> { will} , {'ve} -> { have} , {'d} -> { would} || \Bx _ Bx ]
 ;
@@ -412,6 +416,7 @@ regex [ [..] -> " " || _ .#. ] ;
 define InsertFinalSpace
 
 regex [ Letters+ .o. InsertFinalSpace
+.o. Standardization
 .o. Contractions
 .o. Negation
 .o. [

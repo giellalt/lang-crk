@@ -97,11 +97,11 @@ awa+Pron+Dem+Prox+A+Sg:awa # "this" ; !!= @CODE@
 
 ana+Pron+Dem+Med+A+Sg:ana # "that" ;
 aniki+Pron+Dem+Med+A+Pl:aniki # "those" ;
-anihi+Pron+Dem+Med+A+Pl:anihi # "that/those" ;
+anihi+Pron+Dem+Med+A+Obv:anihi # "that/those" ;
 
 nâha+Pron+Dem+Dist+A+Sg:nâha # "that yonder" ;
 nêki+Pron+Dem+Dist+A+Pl:nêki # "those yonder" ;
-nêhi+Pron+Dem+Dist+A+Pl:nêhi # "this/those yonder" ;
+nêhi+Pron+Dem+Dist+A+Obv:nêhi # "this/those yonder" ;
 
 !! INANIMATE \\
 
@@ -116,10 +116,10 @@ nêhi+Pron+Dem+Dist+I+Pl:nêhi # "those yonder" ;
 
 ! Let us say a pronoun ôma without a noun is a definite, not a demonstrative
 ôma+Pron+Def+Prox+I+Sg:ôma # "this one" ; !!= @CODE@
-ôhi+Pron+Def+Prox+I+Pl:ôhi # "these one" ; !!= @CODE@
+ôhi+Pron+Def+Prox+I+Pl:ôhi # "these ones" ; !!= @CODE@
 
 anima+Pron+Def+Med+I+Sg:anima # "that one" ;
-anihi+Pron+Def+Med+I+Pl:anihi # "those one" ;
+anihi+Pron+Def+Med+I+Pl:anihi # "those ones" ;
 
 nêma+Pron+Def+Dist+I+Sg:nêma # "that yonder one" ;
-nêhi+Pron+Def+Dist+I+Pl:nêhi # "those yonder one" ;
+nêhi+Pron+Def+Dist+I+Pl:nêhi # "those yonder ones" ;

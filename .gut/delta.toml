@@ -1,8 +1,9 @@
 template = "https://github.com/giellalt/template-lang-und"
-rev_id = 70
-template_sha = "ed1d5195c9d61fedd6150cd217179e4cbbfe8e23"
+rev_id = 77
+template_sha = "0e397b985c7c0a4703eee3c093c0d443b12ed1a2"
 
 [replacements]
+__REPO__ = "lang-crk"
 __UND2C__ = "crk"
 __UNDEFINED__ = "Plains Cree"
 __UND__ = "crk"
