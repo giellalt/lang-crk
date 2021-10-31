@@ -460,15 +460,16 @@ PV/yoski+
         !! ```
 
 !! Special characters for morphophonology
-w2      !!= * @CODE@ mowêw:mow2
+w2      !!= * @CODE@ non-collapsing glide, e.g. mowêw:mow2
 t2 		!!= * @CODE@ Epenthetic -t- between person prefixes and vowel-initial stems
 t3      !!= * @CODE@ t to s in VTA-4
 t4      !!= * @CODE@ t:c in VTI-1 with unspecified actor
-y2      !!= * @CODE@ epenthetic joiner in reduplication of vowel-initial stems
+y2      !!= * @CODE@ non-collapsing glide
+ý2	!!= * @CODE@ non-collapsing glide
 y3      !!= * @CODE@ epenthetic joiner in reduplication of vowel-initial stems
-i2      !!= * @CODE@ vta-5i epenthesis.
+i2      !!= * @CODE@ VTA-5i epenthesis.
 
-h2 		!!= * @CODE@  Prefix in possessives
+h2 	!!= * @CODE@  Prefix in possessives
 
 ! Reduplication
 d1  !!=* @CODE@  Reduplication consonant marker
