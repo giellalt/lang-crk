@@ -165,15 +165,16 @@ morphophonological structure
 ```
 
 Special characters for morphophonology
- * w2       mowêw:mow2
+ * w2       non-collapsing glide, e.g. mowêw:mow2
  * t2 		 Epenthetic -t- between person prefixes and vowel-initial stems
  * t3       t to s in VTA-4
  * t4       t:c in VTI-1 with unspecified actor
- * y2       epenthetic joiner in reduplication of vowel-initial stems
+ * y2       non-collapsing glide
+ * ý2	 non-collapsing glide
  * y3       epenthetic joiner in reduplication of vowel-initial stems
- * i2       vta-5i epenthesis.
+ * i2       VTA-5i epenthesis.
 
- * h2 		  Prefix in possessives
+ * h2 	  Prefix in possessives
 
 
 Triggers for various morphophonological phenomena
