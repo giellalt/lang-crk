@@ -480,7 +480,7 @@ define t3DimRule [ t3 -> c || _ %> i2 "^DIM" ] ;
 ! d1:Cx <=> _ (0:i 0:y) [ a: [ y2: | ý2 ] | â: h ] (%^IC:0) ( %-: ) %<:0 Cx: ;
 !    where Cx in ( c k m n p s t w y ) ;
 
-define ReduplRule [ [ d1 | d2 ] -> c || _ [ \%< ]+ %< c ,, [ d1 | d2 ] -> h || _ [ \%< ]+ %< h ,, [ d1 | d2 ] -> h || _ [ \%< ]+ %< h ,, [ d1 | d2 ] -> k || _ [ \%< ]+ %< k ,, [ d1 | d2 ] -> m || _ [ \%< ]+ %< m ,, [ d1 | d2 ] -> n || _ [ \%< ]+ %< n ,, [ d1 | d2 ] -> p || _ [ \%< ]+ %< p ,, [ d1 | d2 ] -> s || _ [ \%< ]+ %< s ,, [ d1 | d2 ] -> t || _ [ \%< ]+ %< t ,, [ d1 | d2 ] -> w || _ [ \%< ]+ %< w ,, [ d1 | d2 ] -> y || _ [ \%< ]+ %< y ] .o. [ [ y2 | ý2 | y3 ] -> y || [ d1 | d2 ] ?* _ ] .o. [ [ d1 | d2 ] -> 0 ] .o. [ [ y2 | ý2 | y3 ] -> 0 ] ;
+define ReduplRule [ [ d1 | d2 ] -> c || _ [ \%< ]+ %< c ,, [ d1 | d2 ] -> h || _ [ \%< ]+ %< h ,, [ d1 | d2 ] -> h || _ [ \%< ]+ %< h ,, [ d1 | d2 ] -> k || _ [ \%< ]+ %< k ,, [ d1 | d2 ] -> m || _ [ \%< ]+ %< m ,, [ d1 | d2 ] -> n || _ [ \%< ]+ %< n ,, [ d1 | d2 ] -> p || _ [ \%< ]+ %< p ,, [ d1 | d2 ] -> s || _ [ \%< ]+ %< s ,, [ d1 | d2 ] -> t || _ [ \%< ]+ %< t ,, [ d1 | d2 ] -> w || _ [ \%< ]+ %< w ,, [ d1 | d2 ] -> y || _ [ \%< ]+ %< y ] .o. [ [ y2 | ý2 | y3 ] -> y || [ d1 | d2 ] ?* _ ] .o. [ [ d1 | d2 ] -> 0 ] .o. [ [ y2 | y3 ] -> 0 ] ;
 
 !!€ d1ay2-<nipâw
 !!€ na0-0nipâw
@@ -625,7 +625,7 @@ define o2ooPossNounRule [ o -> ô || .#. [ [ n i ] | [ k i ] | o ] [ t | t2 ] %<
 
 !! Composing the rules together
 
-define deep2surfRule [ i2 -> i ,, ii2 -> î ,, n2 -> n ,, n3 -> n ,, t3 -> t ,, w2 -> w ,, y4 -> y ] ;
+define deep2surfRule [ i2 -> i ,, ii2 -> î ,, n2 -> n ,, n3 -> n ,, t3 -> t ,, w2 -> w ,, y4 -> y ,, ý2 -> ý ] ;
 
 define yNormRule [ ý -> y ] ;
 
