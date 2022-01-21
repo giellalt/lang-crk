@@ -3,7 +3,7 @@
 
 ## The file for numerals
 
- * LEXICON Numerals 
+* LEXICON Numerals 
 
 
 
@@ -11,33 +11,33 @@
 
 ## Here start the 999 numbers
 
- * LEXICON UNDERTHOUSAND 
+* LEXICON UNDERTHOUSAND 
 
- * LEXICON HUNDREDS 
+* LEXICON HUNDREDS 
 
- * LEXICON CUODI 
+* LEXICON CUODI 
 
- * LEXICON HUNDRED 
-
-
-
- * LEXICON TENS 
-
- * LEXICON TEN 
+* LEXICON HUNDRED 
 
 
 
+* LEXICON TENS 
 
- * LEXICON ONESTONEXT 
+* LEXICON TEN 
 
 
 
- * LEXICON TEENS 
 
- * LEXICON ONES 
+* LEXICON ONESTONEXT 
 
- * LEXICON CARDINAL 
 
- * LEXICON NUM  adds +Num+Ipc
+
+* LEXICON TEENS 
+
+* LEXICON ONES 
+
+* LEXICON CARDINAL 
+
+* LEXICON NUM  adds +Num+Ipc
 * * *
 <small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/numerals.lexc)</small>

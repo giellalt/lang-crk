@@ -11,17 +11,17 @@
 
 
 
- *  y2:0       epenthetic joiner in reduplication of vowel-initial stems
- *  y3:0       epenthetic joiner in reduplication of vowel-initial stems
- *  d1:0   Reduplication consonant place holder 
- *  d2:0   Reduplication consonant place holder 
+*  y2:0       epenthetic joiner in reduplication of vowel-initial stems
+*  y3:0       epenthetic joiner in reduplication of vowel-initial stems
+*  d1:0   Reduplication consonant place holder 
+*  d2:0   Reduplication consonant place holder 
 
- *  %^EGLOT:0    Epenthetic -h- place holder
+*  %^EGLOT:0    Epenthetic -h- place holder
 
 
- *  w3:w  3rd person possessor for NDA and NDI (non-kinship)
- *  y4:y  immutable -y in single-syllable nouns
- *  i4:i  possessive prefix -i that deletes before Vowel in Dep nouns
+*  w3:w  3rd person possessor for NDA and NDI (non-kinship)
+*  y4:y  immutable -y in single-syllable nouns
+*  i4:i  possessive prefix -i that deletes before Vowel in Dep nouns
 
 
 
