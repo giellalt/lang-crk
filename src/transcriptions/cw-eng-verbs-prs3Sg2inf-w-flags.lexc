@@ -10,10 +10,13 @@ Multichar_Symbols
 @D.subject.3Sg@
 @D.subject.4Sg@
 @D.subject.X@
+@D.subject.1Distr@
+@D.subject.2Distr@
+@D.subject.3Distr@
 
 LEXICON Root
-0:@R.tense.Prs@@D.subject.3Sg@@D.subject.4Sg@@D.subject.X@  Prs3Sg2Inf ;
-0:@R.tense.Cond@@D.subject.3Sg@@D.subject.4Sg@@D.subject.X@ Prs3Sg2Inf ;
+0:@R.tense.Prs@@D.subject.3Sg@@D.subject.4Sg@@D.subject.X@@D.subject.1Distr@@D.subject.2Distr@@D.subject.3Distr@ Prs3Sg2Inf ;
+0:@R.tense.Cond@@D.subject.3Sg@@D.subject.4Sg@@D.subject.X@@D.subject.1Distr@@D.subject.2Distr@@D.subject.3Distr@ Prs3Sg2Inf ;
 0:@R.tense.Def@ Prs3Sg2Inf ;
 0:@R.tense.Fut@ Prs3Sg2Inf ;
 0:@R.tense.Int@ Prs3Sg2Inf ;
