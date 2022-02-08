@@ -1,20 +1,9 @@
 
 Definitions
 
-
-
-
-
-
 Rules
 
 VG>i2 -> VV
-
-
-
-
-
-
 
 * *mêskanaw>i2^DIMs*
 * *mêskanâ000s*
@@ -49,15 +38,11 @@ VG>i2 -> VV
 * *tohtôsâpoy>i2hk*
 * *tohtôsâpô000hk*
 
-
-
 * *wâwi>i2^DIMs*
 * *wâwi000s*
 
 * *ôsi>i2hk*
 * *ôsi00hk*
-
-
 
 * *atimw>i2^DIMs*
 * *acimo000s*
@@ -70,7 +55,6 @@ VG>i2 -> VV
 * *maskisin>i2hk*
 * *maskisin0ihk*
 
-
 * *atimw*
 * *atim0*
 
@@ -80,20 +64,11 @@ VG>i2 -> VV
 * *nit2<nînihikw*
 * *ni00nînihik*
 
-
 * *a>tân*
 * *ê0tân*
 
-
-
 * *nit2<astotin>i2^DIMs*
 * *nic0ascocin0i0s*
-
-
-
-
-
-
 
 * *ê^EGLOT<acimo>t*
 * *êh0acimo0t*
@@ -104,33 +79,24 @@ VG>i2 -> VV
 * *ê^EGLOT<d2ay3d1âh<acimo>t*
 * *êh00ay0âh0acimo0t*
 
-
 * *nit2<nêhiyawê>n2*
 * *ni00nêhiyawâ0n*
 * *kit2<kâsîhkwê>n2*
 * *ki00kâsîhkwâ0n*
-
 
 * *nit2<tipiska>n2*
 * *ni00tipiskê0n*
 * *kit2<kiskêyihta>n2*
 * *ki00kiskêyihtê0n*
 
-
 * *ê-<nîpin3>k*
 * *ê-0nîpih0k*
-
 
 * *ê-<mispon>k*
 * *ê-0mispo00k*
 
-
-
 * *wapâht4>ikâtê>w*
 * *wapâhc0ikâtê0w*
-
-
-
 
 * *ê-<mow2>i2ht*
 * *ê-0mow0iht*
@@ -174,7 +140,6 @@ VG>i2 -> VV
 * *nitonaw>îhkan*
 * *nitonaw0îhkan*
 
-
 * *it3>i*
 * *is0i*
 * *kit2<nakat3>in*
@@ -196,8 +161,6 @@ VG>i2 -> VV
 * *nakat3>ii2hkan*
 * *nakas0îhkan*
 
-
-
 * *kit2<kost3>in*
 * *ki00ko0s0in*
 * *nit2<kost3>i2mâwa*
@@ -217,15 +180,10 @@ VG>i2 -> VV
 * *kost3>ii2hkan*
 * *ko0s0îhkan*
 
-
-
-
-
 * *mi4<îwat3>i2^DIMs*
 * *m00îwac0i0s*
 
 __@OUTSIDE RULES@__
-
 
 * *d1ay2-<nipâw*
 * *na0-0nipâw*
@@ -246,8 +204,6 @@ __@OUTSIDE RULES@__
 * *0ay-0ayâw*
 
 INITIAL CHANGE
-
-
 
 * *nipât^IC*
 * *nêpât0*
@@ -276,13 +232,11 @@ INITIAL CHANGE
 * *m0ostohtêt^IC*
 * *mwêstohtêt0*
 
-
 * *0oyôyot^IC*
 * *wêyôyot0*
 
 * *k0ocît^IC*
 * *kwêcît0*
-
 
 * *îkatêhât^IC*
 * *âkatêhât0*
@@ -299,8 +253,6 @@ INITIAL CHANGE
 * *00ôhkomit^IC*
 * *iyôhkomit0*
 
-
-
 * *w3<spiton*
 * *o0spiton*
 
@@ -316,10 +268,6 @@ INITIAL CHANGE
 * *w3<ahkwan*
 * *w0ahkwan*
 
-
-
-
-
 * *ni4<ohkom*
 * *n00ôhkom*
 
@@ -332,7 +280,6 @@ INITIAL CHANGE
 * *w3<ohkom>a*
 * *00ohkom0a*
 
-
 * *nit2<ospwâkan*
 * *nit0ôspwâkan*
 
@@ -343,10 +290,6 @@ INITIAL CHANGE
 * *ot0ôspwâkan*
 
 Composing the rules together
-
-
-
-
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/phonology.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/fst/phonology.xfscript)</small>

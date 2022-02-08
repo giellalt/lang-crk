@@ -2,478 +2,13 @@
 
 # Plains Cree disambiguator 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
 <small>This (part of) documentation was generated from [../src/cg3/disambiguator.cg3](http://github.com/giellalt/lang-crk/blob/main/../src/cg3/disambiguator.cg3)</small>
 
 # Plains Cree disambiguator 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
 <small>This (part of) documentation was generated from [../src/cg3/textanalysis.cg3](http://github.com/giellalt/lang-crk/blob/main/../src/cg3/textanalysis.cg3)</small>
-
-
-
-
-
-
-
 
 Nouns
 Verbs
@@ -483,15 +18,6 @@ Verbs
 
 | --- 
 
-
-
-
-
-
-
-
-
-
 *  y2:0       epenthetic joiner in reduplication of vowel-initial stems
 *  y3:0       epenthetic joiner in reduplication of vowel-initial stems
 *  d1:0   Reduplication consonant place holder 
@@ -499,105 +25,65 @@ Verbs
 
 *  %^EGLOT:0    Epenthetic -h- place holder
 
-
 *  w3:w  3rd person possessor for NDA and NDI (non-kinship)
 *  y4:y  immutable -y in single-syllable nouns
 *  i4:i  possessive prefix -i that deletes before Vowel in Dep nouns
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 * *mêskanaw>i2s*
 * *mêskanâ0>0s*
-
 
 * *mêskanaw>i2hk*
 * *mêskanâ0>0hk*
 
-
 * *sôniyâw>i2s^DIM*
 * *sôniyâ0>0s0*
-
 
 * *miskotâkay>i2s^DIM*
 * *miskocâkâ0>0s0*
 
-
 * *nâpêw>i2^DIMsis*
 * *nâpê0>00sis*
-
 
 * *iskwêw>i2^DIMsis*
 * *iskwê0>00sis*
 
-
 * *maskosiy>i2^DIMs*
 * *maskosî0>00s*
-
 
 * *pikiw>i2^DIMs*
 * *pikî0>00s*
 
-
 * *maskosiy>i2hk*
 * *maskosî0>0hk*
-
-
 
 * *sîwâpoy>i2^DIMs*
 * *sîwâpô0>00s*
 
-
 * *tohtôsâpoy>i2hk*
 * *tohtôsâpô0>0hk*
-
-
-
 
 * *wâwi>i2^DIMs*
 * *wâwi>00s*
 
-
 * *ôsi>i2hk*
 * *ôsi>0hk*
 
-
-
-
-
-
-
 * *atimw>i2^DIMs*
 * *acimo>00s*
-
 
 * *mistikw>i2hk*
 * *mistiko>0hk*
 * *sâkahikan>i2^DIMs*
 * *sâkahikan>i0s*
 
-
 * *maskisin>i2hk*
 * *maskisin>ihk*
-
 
 * *atimw*
 * *atim0*
 
-
 * *askihkw*
 * *askihk0*
-
 
 * *atimw*
 * *atim0*
@@ -605,20 +91,11 @@ Verbs
 * *nit2<nînihikw*
 * *ni0<nînihik*
 
-
-
 * *a>tân*
 * *ê>tân*
 
-
-
 * *nit2<astotin>i2^DIMs*
 * *nic<ascocin>i0s*
-
-
-
-
-
 
 * *ê^EGLOT<acimo>t*
 * *êh<acimo>t*
@@ -629,34 +106,24 @@ Verbs
 * *ê^EGLOT<d2ay3d1âh<acimo>t*
 * *êh<0ay0âh<acimo>t*
 
-
 * *nit2<nêhiyawê>n2*
 * *ni0<nêhiyawâ>n*
 * *kit2<kâsîhkwê>n2*
 * *ki0<kâsîhkwâ>n*
-
 
 * *nit2<tipiska>n2*
 * *ni0<tipiskê>n*
 * *kit2<kiskêyihta>n2*
 * *ki0<kiskêyihtê>n*
 
-
-
 * *ê-<nîpin3>k*
 * *ê-<nîpih>k*
-
-
 
 * *ê-<mispon>k*
 * *ê-<mispo0>k*
 
-
 * *wapâht4>ikâtê>w*
 * *wapâhc>ikâtê>w*
-
-
-
 
 * *ê-<mow2>i2ht*
 * *ê-<mow>iht*
@@ -700,8 +167,6 @@ Verbs
 * *nitonaw>îhkan*
 * *nitonaw>îhkan*
 
-
-
 * *kit2<nakat3>in*
 * *ki0<nakas>in*
 * *nit2<nakat3>i2mâwa*
@@ -721,7 +186,6 @@ Verbs
 * *nakat3>ii2hkan*
 * *nakas>îhkan*
 
-
 * *kit2<kost3>in*
 * *ki0<ko0s>in*
 * *nit2<kost3>i2mâwa*
@@ -740,9 +204,6 @@ Verbs
 * *ko0s>in*
 * *kost3>ii2hkan*
 * *ko0s>îhkan*
-
-
-
 
 * *mi4<îwat3>i2^DIMs*
 * *m0<îwac>i0s*
@@ -775,8 +236,6 @@ Verbs
 
 INITIAL CHANGE
 
-
-
 * *nipât^IC*
 * *nêpât0*
 
@@ -804,17 +263,11 @@ INITIAL CHANGE
 * *m0ostohtêt^IC*
 * *mwêstohtêt0*
 
-
-
 * *0oyôyot^IC*
 * *wêyôyot0*
 
 * *k0ocît^IC*
 * *kwêcît0*
-
-
-
-
 
 * *îkatêhât^IC*
 * *âkatêhât0*
@@ -831,8 +284,6 @@ INITIAL CHANGE
 * *00ôhkomit^IC*
 * *iyôhkomit0*
 
-
-
 * *w3<spiton*
 * *o<spiton*
 
@@ -848,12 +299,6 @@ INITIAL CHANGE
 * *w3<ahkwan*
 * *w<ahkwan*
 
-
-
-
-
-
-
 * *ni4<ohkom*
 * *n0<ôhkom*
 
@@ -865,7 +310,6 @@ INITIAL CHANGE
 
 * *w3<ohkom>a*
 * *0<ohkom>a*
-
 
 * *nit2<ospwâkan*
 * *nit<ôspwâkan*
@@ -880,20 +324,9 @@ INITIAL CHANGE
 <small>This (part of) documentation was generated from [../src/fst/phonology-morph-bound.twolc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/phonology-morph-bound.twolc)</small>
 Definitions
 
-
-
-
-
-
 Rules
 
 VG>i2 -> VV
-
-
-
-
-
-
 
 * *mêskanaw>i2^DIMs*
 * *mêskanâ000s*
@@ -928,15 +361,11 @@ VG>i2 -> VV
 * *tohtôsâpoy>i2hk*
 * *tohtôsâpô000hk*
 
-
-
 * *wâwi>i2^DIMs*
 * *wâwi000s*
 
 * *ôsi>i2hk*
 * *ôsi00hk*
-
-
 
 * *atimw>i2^DIMs*
 * *acimo000s*
@@ -949,7 +378,6 @@ VG>i2 -> VV
 * *maskisin>i2hk*
 * *maskisin0ihk*
 
-
 * *atimw*
 * *atim0*
 
@@ -959,20 +387,11 @@ VG>i2 -> VV
 * *nit2<nînihikw*
 * *ni00nînihik*
 
-
 * *a>tân*
 * *ê0tân*
 
-
-
 * *nit2<astotin>i2^DIMs*
 * *nic0ascocin0i0s*
-
-
-
-
-
-
 
 * *ê^EGLOT<acimo>t*
 * *êh0acimo0t*
@@ -983,33 +402,24 @@ VG>i2 -> VV
 * *ê^EGLOT<d2ay3d1âh<acimo>t*
 * *êh00ay0âh0acimo0t*
 
-
 * *nit2<nêhiyawê>n2*
 * *ni00nêhiyawâ0n*
 * *kit2<kâsîhkwê>n2*
 * *ki00kâsîhkwâ0n*
-
 
 * *nit2<tipiska>n2*
 * *ni00tipiskê0n*
 * *kit2<kiskêyihta>n2*
 * *ki00kiskêyihtê0n*
 
-
 * *ê-<nîpin3>k*
 * *ê-0nîpih0k*
-
 
 * *ê-<mispon>k*
 * *ê-0mispo00k*
 
-
-
 * *wapâht4>ikâtê>w*
 * *wapâhc0ikâtê0w*
-
-
-
 
 * *ê-<mow2>i2ht*
 * *ê-0mow0iht*
@@ -1053,7 +463,6 @@ VG>i2 -> VV
 * *nitonaw>îhkan*
 * *nitonaw0îhkan*
 
-
 * *it3>i*
 * *is0i*
 * *kit2<nakat3>in*
@@ -1075,8 +484,6 @@ VG>i2 -> VV
 * *nakat3>ii2hkan*
 * *nakas0îhkan*
 
-
-
 * *kit2<kost3>in*
 * *ki00ko0s0in*
 * *nit2<kost3>i2mâwa*
@@ -1096,15 +503,10 @@ VG>i2 -> VV
 * *kost3>ii2hkan*
 * *ko0s0îhkan*
 
-
-
-
-
 * *mi4<îwat3>i2^DIMs*
 * *m00îwac0i0s*
 
 __@OUTSIDE RULES@__
-
 
 * *d1ay2-<nipâw*
 * *na0-0nipâw*
@@ -1125,8 +527,6 @@ __@OUTSIDE RULES@__
 * *0ay-0ayâw*
 
 INITIAL CHANGE
-
-
 
 * *nipât^IC*
 * *nêpât0*
@@ -1155,13 +555,11 @@ INITIAL CHANGE
 * *m0ostohtêt^IC*
 * *mwêstohtêt0*
 
-
 * *0oyôyot^IC*
 * *wêyôyot0*
 
 * *k0ocît^IC*
 * *kwêcît0*
-
 
 * *îkatêhât^IC*
 * *âkatêhât0*
@@ -1178,8 +576,6 @@ INITIAL CHANGE
 * *00ôhkomit^IC*
 * *iyôhkomit0*
 
-
-
 * *w3<spiton*
 * *o0spiton*
 
@@ -1195,10 +591,6 @@ INITIAL CHANGE
 * *w3<ahkwan*
 * *w0ahkwan*
 
-
-
-
-
 * *ni4<ohkom*
 * *n00ôhkom*
 
@@ -1211,7 +603,6 @@ INITIAL CHANGE
 * *w3<ohkom>a*
 * *00ohkom0a*
 
-
 * *nit2<ospwâkan*
 * *nit0ôspwâkan*
 
@@ -1223,10 +614,6 @@ INITIAL CHANGE
 
 Composing the rules together
 
-
-
-
-
 * * *
 <small>This (part of) documentation was generated from [../src/fst/phonology.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/fst/phonology.xfscript)</small>
 # Plains Cree particles                           
@@ -1235,51 +622,28 @@ The file contains the following lexicons, with content as described:
 
 * LEXICON Particle  adds +Ipc
 
-
 * LEXICON Particle/Interjection   adds +Ipc+Interj
-
 
 * LEXICON Particle/Name  adds +Ipc+Prop
 
-
 * LEXICON Particle/Phrase  adds +Ipc+Phr
 
-
 * LEXICON Particles  contains the actual list of particles.
-
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/stems/particles.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/particles.lexc)</small>
 
-
-
-
-
-
 Test lemma/stem set for nouns according the new crk FST
-
 
 Complete extraction of lemma:stem info from AEW 2020, according to
 LEXC structure in the new crk FST.
 
-
-
-
-
-
-
 * * *
 <small>This (part of) documentation was generated from [../src/fst/stems/noun_stems.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/noun_stems.lexc)</small>
 
-
-
-
 Model verb lemmas and stems for new crk FST
 
-
 Full incorporation of AEW 2020 verbs into new crk FST
-
-
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/stems/verb_stems.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/verb_stems.lexc)</small>
@@ -1297,48 +661,9 @@ Full incorporation of AEW 2020 verbs into new crk FST
 
 * **LEXICON ARABICLOOP   **
 
-
 * **LEXICON ARABICLOOPORD   ** ordinals
 
 * **LEXICON NUMARABTAG   ** 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/stems/numeral_symbols.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/numeral_symbols.lexc)</small>
@@ -1348,22 +673,15 @@ There are more pronoums to be added here.
 
 LEXICON Pronoun 
 
-
 LEXICON Personal  \\
 niýa+Pron+Pers+1Sg:niýa # ; 
 kiýa+Pron+Pers+2Sg:kiýa # ; 
-
-
 
 LEXICON Interrogative   \\
 awîna+Pron+Interr+A+Sg:awîna # "who,whose" ; 
 awîniki+Pron+Interr+A+Pl:awîniki # "who" ; 
 awînihi+Pron+Interr+A+Obv:awînihi # "who" ; 
 awîniwâ+Pron+Interr+A+Obv:awîniwâ # "who" ; 
-
-
-
-
 
 LEXICON Indefinite  \\
 awiyak+Pron+Indef+A+Sg:awiyak # "someone" ; 
@@ -1375,18 +693,13 @@ awa+Pron+Dem+Prox+A+Sg:awa # "this" ;
 ôki+Pron+Dem+Prox+A+Pl:ôki # "these" ; 
 ôhi+Pron+Dem+Prox+A+Obv:ôhi # "this/these" ; 
 
-
-
 INANIMATE \\
 
 ôma+Pron+Dem+Prox+I+Sg:ôma # "this" ; 
 ôhi+Pron+Dem+Prox+I+Pl:ôhi # "these" ; 
 
-
-
 ôma+Pron+Def+Prox+I+Sg:ôma # "this one" ; 
 ôhi+Pron+Def+Prox+I+Pl:ôhi # "these ones" ; 
-
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/pronouns.lexc)</small>
@@ -1395,10 +708,6 @@ INANIMATE \\
 ## The file for numerals
 
 * LEXICON Numerals 
-
-
-
-
 
 ## Here start the 999 numbers
 
@@ -1410,18 +719,11 @@ INANIMATE \\
 
 * LEXICON HUNDRED 
 
-
-
 * LEXICON TENS 
 
 * LEXICON TEN 
 
-
-
-
 * LEXICON ONESTONEXT 
-
-
 
 * LEXICON TEENS 
 
@@ -1461,20 +763,9 @@ Splitting in 4 + 1  groups, because of the preprocessor
 
 * **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
 
-
-
 ## The abbreviation lexicon itself
 
-
-
 * **LEXICON ITRAB   ** are intransitive abbreviations, Ltd. etc.
-
-
-
-
-
-
-
 
 * **LEXICON TRNUMAB   ** contains abbreviations who are transitive in front of numerals 
 
@@ -1482,35 +773,13 @@ For abbrs for which numerals are complements, but other
 words not necessarily are. This group treats arabic numerals as
 if it were transitive but letters as if it were intransitive.
 
-
-
-
-
-
-
 * **LEXICON TRAB   ** contains transitive abbreviations
 
 This lexicon is for abbrs that always have a constituent following it.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
 <small>This (part of) documentation was generated from [../src/fst/stems/abbreviations.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/abbreviations.lexc)</small>Place-holder for inserting derivational FST after prefixes and before suffixes
 DRV-FST is the place-holder character
-
-
 
 Linking verb stems from Derivational FST to their inflectional suffixes
 
@@ -1521,14 +790,12 @@ Verbs
 <small>This (part of) documentation was generated from [../src/fst/stems/derivation_stems.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/derivation_stems.lexc)</small>
 Plains Cree verb morphology                  
 
-
 The Plains Cree verbs are divided in four groups:
 
 1. AI: Animate intransitive 
 2. II: Inanimate intransitive
 3. TA: Transitive animate
 4. TI: Transitive inanimate
-
 
 # Prefixes
 
@@ -1542,57 +809,27 @@ LEXICON VerbPrefixes   divides the lexicon into four modes: independent, conjunc
 LEXICON INDEPENDENT  gives flags and prefixes for personprefix
 Hypotheticals
 
-
 LEXICON IND_TENSE  gives flags and prefixes for tense 
-
-
-
 
 LEXICON FUTURE_CONDITIONAL  gives flags for future conditional (no prefix)
 
-
 LEXICON CONJUNCT  gives flag for conjunct and combined tense preverbs
-
-
-
-
-
 
 LEXICON CNJ_TENSE    gives prefixes and flags for tense in conjunct
 
-
-
 LEXICON IMPERATIVE    gives flag for imperative (no prefixes)
-
 
 Preverbs
 
 LEXICON VERBPREFIXES   just adds the prefix boundary
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Now, LEXC directs us to the ../stems/verbs_stems.lexc file,
 where we find all the verbal stems. The suffixes are then
 found in the section "Suffixes" right underneath.
 
-
 # Suffixes
 
 Intransitive inanimate (II)
-
-
 
 LEXICON VIIn   
 
@@ -1610,25 +847,12 @@ LEXICON VIIw_SG
 LEXICON VIIn_PL   NO LONGER NEEDED FROM AROK
 NO LONGER NEEDED FROM AROK
 
-
-
-
-
-
 	 NO LONGER NEEDED FROM AROK
 @U.wici.NULL@ VIIw_PL_ORDER ; NO LONGER NEEDED FROM AROK
 
-
-
-
-
 @U.wici.NULL@ VIIw_PL_ORDER ;
 
-
-
-
 LEXICON VIIw_SGPL_ORDER  
-
 
 LEXICON VIIw_SG_ORDER  singular only
 
@@ -1639,16 +863,11 @@ LEXICON VIIw_PL_ORDER  singular only
 @U.order.cnj@+Cnj:@U.order.cnj@ VIIw_PL_CNJ_PERSON ; !
 @U.order.FutCon@+Fut+Cond:@U.order.FutCon@ VIIw_PL_FUT_CON_PERSON ;!
 
-
 LEXICON VIIn_SGPL_ORDER  
 
 LEXICON VIIn_SG_ORDER  singular only
 
 LEXICON VIIn_PL_ORDER  plural only
-
-
-
-
 
 LEXICON VIIw_SG_IND_TENSE  plural only
 
@@ -1669,9 +888,6 @@ LEXICON VIIw_PL_CNJ_TENSE  plural only
 @U.tense.Prt@+Prt:@U.tense.Prt@ VIIw_PL_CNJ_PERSON ; !
 @U.tense.FutInt@+Fut+Int:@U.tense.FutInt@ VIIw_PL_CNJ_PERSON ; !
 
-
-
-
 LEXICON VIIn_SG_IND_TENSE  plural only
 
 LEXICON VIIn_SG_CNJ_TENSE  plural only
@@ -1679,8 +895,6 @@ LEXICON VIIn_SG_CNJ_TENSE  plural only
 LEXICON VIIn_PL_IND_TENSE  plural only
 
 LEXICON VIIn_PL_CNJ_TENSE  plural only
-
-
 
 LEXICON VIIw_SGPL_IND_PERSON  
 
@@ -1709,7 +923,6 @@ LEXICON VIIw_PL_FUT_CON_PERSON
 = LEXICON VIIw_PL_FUT_CON_PERSON  plural only
 @U.person.NULL@ VIIw_FUT_CON_PL_SUFFIX ;
 
-
 LEXICON VIIn_SGPL_IND_PERSON  
 
 LEXICON VIIn_SGPL_CNJ_PERSON  
@@ -1728,17 +941,11 @@ LEXICON VIIn_PL_CNJ_PERSON  plural only
 
 LEXICON VIIn_PL_FUT_CON_PERSON  plural only
 
-
-
-
-
 LEXICON VIIn_SGPL_IND_NULL 
 
 LEXICON VIIn_SG_IND_SUFFIX    singular
 
 LEXICON VIIn_PL_IND_SUFFIX   plural
-
-
 
 LEXICON VIIw_SGPL_IND_NULL 
 
@@ -1746,16 +953,11 @@ LEXICON VIIw_SG_IND_SUFFIX    w final singular
 
 LEXICON VIIw_PL_IND_SUFFIX   w final plural
 
-
-
-
-
 LEXICON VIIn_SGPL_CNJ_NULL 
 
 LEXICON VIIn_SG_CNJ_SUFFIX    singular
 
 LEXICON VIIn_PL_CNJ_SUFFIX   plural
-
 
 LEXICON VIIw_SGPL_CNJ_NULL 
 
@@ -1763,15 +965,11 @@ LEXICON VIIw_SG_CNJ_SUFFIX    w final singular
 
 LEXICON VIIw_PL_CNJ_SUFFIX    w final plural
 
-
-
-
 LEXICON VIIn_SGPL_FUT_CON_NULL 
 
 LEXICON VIIn_SG_FUT_CON_SUFFIX    singular
 
 LEXICON VIIn_PL_FUT_CON_SUFFIX   plural
-
 
 LEXICON VIIw_SGPL_FUT_CON_NULL 
 
@@ -1779,10 +977,7 @@ LEXICON VIIw_SG_FUT_CON_SUFFIX    w final singular
 
 LEXICON VIIw_PL_FUT_CON_SUFFIX    w final plural
 
-
 Intransitive animate (AI)
-
-
 
 LEXICON VAIw_PL  stems that end in â or ê
 
@@ -1796,67 +991,23 @@ LEXICON VAIn_PL
 
 LEXICON VAIm  These are VTI3 in Arok's database
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 LEXICON VAIn_ORDER 
 
 LEXICON VAIn_PL_ORDER  plural only  
-
-
-
-
 
 LEXICON VAIae_ORDER 
 
 LEXICON VAIw_PL_ORDER  plural only 
 
-
 LEXICON VAIio_ORDER 
-
-
-
-
-
-
-
 
 LEXICON VAIn_PL_IND_TENSE  plural only
 
-
 LEXICON VAIn_PL_CNJ_TENSE  plural only
-
 
 LEXICON VAIw_PL_IND_TENSE  plural only
 
-
 LEXICON VAIw_PL_CNJ_TENSE  plural only
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 LEXICON VAIn_IND_PERSON  
 
@@ -1874,7 +1025,6 @@ LEXICON VAIn_PL_FUT_CON_PERSON  plural only
 
 LEXICON VAIn_PL_IMP_PERSON  plural only
 
-
 LEXICON VAIw_PL_IND_PERSON  plural only
 
 LEXICON VAIw_PL_CNJ_PERSON  plural only
@@ -1883,25 +1033,17 @@ LEXICON VAIw_PL_FUT_CON_PERSON  plural only
 
 LEXICON VAIw_PL_IMP_PERSON  plural only
 
-
 LEXICON VAIae_IND_PERSON  
 
 LEXICON VAIae_CNJ_PERSON  
 
 LEXICON VAIw_FUT_CON_PERSON  
 
-
 LEXICON VAIw_IMP_PERSON  
-
 
 LEXICON VAIio_IND_PERSON  
 
 LEXICON VAIio_CNJ_PERSON  
-
-
-
-
-
 
 LEXICON VAIw_IND_NI     
 
@@ -1919,16 +1061,7 @@ LEXICON VAIae_IND_NULL
 
 LEXICON VAIio_IND_NULL     
 
-
-
-
-
-
-
-
 LEXICON VAIw_IND_NULL_PL_SUFFIX   
-
-
 
 LEXICON VAIn_IND_NI    
 
@@ -1946,111 +1079,47 @@ LEXICON VAIn_IND_NULL
 
 LEXICON VAIn_IND_NULL_SG_SUFFIX    
 
-
-
-
-
-
-
 LEXICON VAIn_IND_NULL_PL_SUFFIX    
-
-
-
-
-
-
 
 LEXICON VAIae_CNJ_NULL    
 
-
 LEXICON VAIio_CNJ_NULL    
-
 
 LEXICON VAIae_CNJ_NULL_SG_SUFFIX    
 
-
-
-
 LEXICON VAIio_CNJ_NULL_SG_SUFFIX    
-
-
-
 
 LEXICON VAIw_CNJ_NULL_PL_SUFFIX    
 
-
-
-
 LEXICON VAIn_CNJ_NULL    
-
 
 LEXICON VAIn_CNJ_NULL_SG_SUFFIX    
 
-
-
 LEXICON VAIn_CNJ_NULL_PL_SUFFIX    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 LEXICON VAIae_FUT_CON_NULL    
 
-
 LEXICON VAIw_FUT_CON_NULL_SG_SUFFIX    
-
-
 
 +X+4Sg:%>yiki # ;
 
 LEXICON VAIw_FUT_CON_NULL_PL_SUFFIX    
 
-
-
 +X+4Pl:%>yikwâwi # ;
-
 
 LEXICON VAIn_FUT_CON_NULL    
 
-
 LEXICON VAIn_FUT_CON_NULL_SG_SUFFIX    
-
-
 
 +X+4Sg:%>iyiki # ;
 
 LEXICON VAIn_FUT_CON_NULL_PL_SUFFIX    
 
-
-
 +X+4Pl:%>iyikwâwi # ;
-
-
 
 Transitive inanimate (TI)
 
-
-
 * LEXICON VTIm   
-
 
 * LEXICON VTIm_PL    Plural
 
@@ -2058,30 +1127,13 @@ Transitive inanimate (TI)
 
 * LEXICON VTIio   NOTE: These inflect just as VAI -w final stems, so they are redirected to those paradigms
 
-
-
-
-
-
-
-
-
 LEXICON VTIm_ORDER  . 
 
 LEXICON VTIm_PL_ORDER  plural only NOTE: imperative and fut con go straight to person lexica
 
-
-
-
-
-
 LEXICON VTIm_PL_IND_TENSE  plural only
 
 LEXICON VTIm_PL_CNJ_TENSE  plural only
-
-
-
-
 
 LEXICON VTIm_IND_PERSON  
 
@@ -2099,11 +1151,6 @@ LEXICON VTIm_PL_FUT_CON_PERSON  plural only
 
 LEXICON VTIm_PL_IMP_PERSON  plural only
 
-
-
-
-
-
 LEXICON VTIm_IND_NI     
 
 LEXICON VTIm_IND_NI_SG_SUFFIX    
@@ -2120,68 +1167,32 @@ LEXICON VTIm_IND_NULL
 
 LEXICON VTIm_IND_NULL_SG_SUFFIX    NOTE: X actor will eventually derive to VII, so it is not yet included as per Arok's paradigm
 
-
 Derives to VIIn
-
-
 
 LEXICON VTIm_IND_NULL_PL_SUFFIX    
 
-
 Derives to VIIn
-
-
-
-
 
 LEXICON VTIm_CNJ_NULL    
 
-
 LEXICON VTIm_CNJ_NULL_SG_SUFFIX    
-
-
 
 +X+4Sg:%>mihiyik # ;
 
 LEXICON VTIm_CNJ_NULL_PL_SUFFIX    
 
-
-
 +X+4Pl:%>mihiyiki # ;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 LEXICON VTIm_FUT_CON_NULL    
 
-
 LEXICON VTIm_FUT_CON_NULL_SG_SUFFIX    
-
-
 
 +X+4Sg:%>mihiyiki # ;
 
 LEXICON VTIm_FUT_CON_NULL_PL_SUFFIX    
 
-
-
 +X+3Sg:%>mihkwâwi # ;
 +X+4Sg:%>mihiyikwâwi # ;
-
-
-
 
 * LEXICON VTA   Multi-Syllabic stems 
 
@@ -2191,9 +1202,6 @@ LEXICON VTIm_FUT_CON_NULL_PL_SUFFIX
 
 * LEXICON VTAi   Mono-Syllabic stems
 
-
-
-
 * LEXICON VTA_WICI   -Vw stem-ending verbs; where + i suf deletes w and i
 
 * LEXICON VTA_PL_WICI   -Vw stem-ending verbs; when deletes w and i plural only forms 
@@ -2201,8 +1209,6 @@ LEXICON VTIm_FUT_CON_NULL_PL_SUFFIX
 * LEXICON VTAt_WICI   -t ending stems
 
 * LEXICON VTAi_WICI   single mora stems
-
-
 
 LEXICON VTA_ORDER  Note: Imp and Fut Con don't take tense
 
@@ -2212,7 +1218,6 @@ LEXICON VTAi_ORDER  Note: Imp and Fut Con don't take tense ; Conjugates as TA re
 
 LEXICON VTAt_ORDER  Note: Imp and Fut Con don't take tense ; Conjugates as TA regular except in 2sg IMM IMP
 
-
 LEXICON VTA_IND_TENSE  plural only
 
 LEXICON VTA_CNJ_TENSE  plural only
@@ -2220,10 +1225,6 @@ LEXICON VTA_CNJ_TENSE  plural only
 LEXICON VTA_PL_IND_TENSE  plural only
 
 LEXICON VTA_PL_CNJ_TENSE  plural only
-
-
-
-
 
 LEXICON VTA_IND_PERSON  
 
@@ -2241,423 +1242,35 @@ LEXICON VTA_PL_FUT_CON_PERSON
 
 LEXICON VTA_PL_IMP_PERSON  
 
-
-
 LEXICON VTAt_IMP_PERSON  no -i in 2sg+3SgO
-
 
 LEXICON VTAi_IMP_PERSON  
 
-
-
-
-
-
-
 LEXICON VTA_IND_NI     NOTE: No local, as local forms are always with ki-
-
 
 LEXICON VTA_IND_NI_SG_SUFFIX   
 
-
-
-
-
-
-
-
-
-
-
 LEXICON VTA_IND_NI_PL_SUFFIX    
-
-
-
-
-
-
-
-
-
-
-
-
 
 LEXICON VTA_IND_KI     
 
-
 LEXICON VTA_IND_KI_SG_SUFFIX    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 LEXICON VTA_IND_KI_PL_SUFFIX    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 LEXICON VTA_IND_NULL     NOTE: never local
-
-
 
 LEXICON VTA_IND_NULL_SG_SUFFIX    
 
-
-
-
-
-
-
-
-
-
-
-
 LEXICON VTA_IND_NULL_PL_SUFFIX    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 End of verb affixes LEXC code
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/verb_affixes.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/affixes/verb_affixes.lexc)</small>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 NOUN_ENDLEX for wrapping up various things
-
 
 End of noun affixes code
 * * *
@@ -2666,22 +1279,14 @@ Proper noun inflection
 The Plains Cree language proper nouns inflect in the same cases as regular
 nouns, but with a colon (':') as separator.
 
-
-
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/affixes/propernouns.lexc)</small>
 # Symbol affixes
-
-
-
-
-
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/affixes/symbols.lexc)</small>
 # Plains Cree morphological analyser
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
-
 
 # Definitions for Multichar_Symbols
 
@@ -2722,7 +1327,6 @@ Nominal morphology
 * +Dim         Diminutive
 
 Particles
-
 
 * +Def	     This is the intransitive demonstrative, i.e. the definite.
 * +Indef       Indefinite
@@ -2780,7 +1384,6 @@ Verbal MSP
 
 Person prefix fragment features
 
-
 Nominal morphosyntactic features
 * +Sg		  singular
 * +Pl		  plural
@@ -2818,15 +1421,6 @@ Noun animacy and dependency classes
 
 Preverbs
 
-
-
-
-
-
-
-
-
-
 ## Auxiliary symbols
 
 These symbols either shape or govern the
@@ -2834,7 +1428,6 @@ morphophonological structure
 
 * %> 		  suffix border
 * %< 		  prefix border
-
 
 ## Symbols that need to be escaped on the lower side (towards twolc):
 * **»7**:  Literal »
@@ -2856,12 +1449,10 @@ Special characters for morphophonology
 
 * h2 	  Prefix in possessives
 
-
 Triggers for various morphophonological phenomena
 Mostly, these are not realized themselves as any grapheme/phoneme
 
 * %^EGLOT    glottal stop after e, for eh- in conjunctive order
-
 
 ## Usage tags
 
@@ -2885,15 +1476,6 @@ for the inverse objective conjugation, the flag refers to
 the **prefix**, not to the subject. So *indsg1* refers to either
 subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
-
-
-
-
-
-
-
-
-
 The conjunct form always has
 the ê- prefix, and future conditional never has a prefix.
 
@@ -2911,39 +1493,11 @@ Order
 * @U.order.cnj@    Conjunct
 * @U.order.imp@    Imperative
 
-
-
-
-
-
 Tense
-
-
-
-
-
 
 New multichar symbols for nouns
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 End of new and all Multichar_Symbols
-
 
  LEXICON Root          is where it all starts
 * NOUN_PREFIXES   ;    
@@ -2964,66 +1518,12 @@ End of new and all Multichar_Symbols
 
 Defining sets
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 The rules
-
-
-
-
-
-
-
-
-
-
-
 
 Long vowels
 
-
-
-
-
-
-
 * * *
 <small>This (part of) documentation was generated from [../src/phonetics/txt2ipa.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/phonetics/txt2ipa.xfscript)</small>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Word-specific explicit solution for verb morphology - Option 1 (works only in FOMA)
 Word-specific solution
@@ -3034,99 +1534,20 @@ Rule-based solution for verb morphology
 
 Irregular verb forms
 
-
-
-
-
-
-
-
-
-
-
-
 * * *
 <small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript)</small>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Old code
-
-
 
 * * *
 <small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript)</small>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Word-specific explicit solution for verb morphology
 
 Rule-based morphological solution
 
-
-
-
-
-
-
-
-
-
-
-
-
 * * *
 <small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript)</small>
-
 
 We describe here how abbreviations are in Plains Cree are read out, e.g.
 for text-to-speech systems.
@@ -3140,100 +1561,35 @@ For example:
 * esim.:esimerkki # ; 
 * esim.:esimerkiksi # ; 
 
-
 * * *
 <small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 GENERAL DEFINITIONS
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 VERBS
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 NOUNS
 
-
-
-
 Continue list of irregular noun plurals here
 
-
-
 Assigning +V (+II/AI/TI/TA) or +N as part-of-speech
-
-
-
-
-
-
-
 
 * * *
 <small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-eng-phrase2crk-features.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/transcriptions/transcriptor-eng-phrase2crk-features.xfscript)</small>
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
 
-
-
-
-
-
-
-
-
 # DELIMITERS
-
 
 # TAGS AND SETS
 
-
-
 ## Tags
-
 
 This section lists all the tags inherited from the fst, and used as tags
 in the syntactic analysis. The next section, **Sets**, contains sets defined
 on the basis of the tags listed here, those set names are not visible in the output.
 
-
-
-
 ### Beginning and end of sentence
 BOS
 EOS
-
-
 
 ### Parts of speech tags
 
@@ -3263,8 +1619,6 @@ PUNCT
 COMMA
 ¶
 
-
-
 ### Tags for POS sub-categories
 
 Pers
@@ -3280,7 +1634,6 @@ Prop
 Allegro
 Arab
 Romertall
-
 
 ### Tags for morphosyntactic properties
 
@@ -3343,11 +1696,7 @@ Sup
 Actio
 VAbess
 
-
-
 Err/Orth
-
-
 
 ### Semantic tags
 
@@ -3380,14 +1729,10 @@ HUMAN
 HAB-ACTOR
 HAB-ACTOR-NOT-HUMAN
 
-
 PROP-ATTR
 PROP-SUR
 
-
-
 TIME-N-SET
-
 
 ###  Syntactic tags
 
@@ -3459,22 +1804,15 @@ OBJ>-OTHERS
 SYN-V
 @X
 
-
-
-
-
 ## Sets containing sets of lists and tags
 
 This part of the file lists a large number of sets based partly upon the tags defined above, and
 partly upon lexemes drawn from the lexicon.
 See the sourcefile itself to inspect the sets, what follows here is an overview of the set types.
 
-
-
 ### Sets for Single-word sets
 
 INITIAL
-
 
 ### Sets for word or not
 
@@ -3482,7 +1820,6 @@ WORD
 REAL-WORD
 REAL-WORD-NOT-ABBR
 NOT-COMMA
-
 
 ### Case sets
 
@@ -3497,7 +1834,6 @@ NOT-ACC
 
 ### Verb sets
 
-
 NOT-V
 
 ### Sets for finiteness and mood
@@ -3507,7 +1843,6 @@ REAL-NEG
 MOOD-V
 
 NOT-PRFPRC
-
 
 ### Sets for person
 
@@ -3521,49 +1856,15 @@ PL1-V
 PL2-V
 PL3-V
 
-
-
-
-
 ### Pronoun sets
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### Adjectival sets and their complements
 
-
-
-
 ### Adverbial sets and their complements
-
-
-
 
 ### Sets of elements with common syntactic behaviour
 
-
 ### NP sets defined according to their morphosyntactic features
-
-
-
-
-
-
-
 
 ### The PRE-NP-HEAD family of sets
 
@@ -3571,46 +1872,9 @@ These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Border sets and their complements
 
-
-
-
-
-
-
-
-
-
-
 ### Grammarchecker sets
-
-
-
-
-
-
-
 
 * * *
 <small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-crk/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
@@ -3647,11 +1911,6 @@ $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-des
 Pmatch documentation:
 https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
 
-
-
-
-
-
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
 * Punct contains ASCII punctuation marks
@@ -3666,9 +1925,6 @@ the List contains some unicode white space characters
 * Medium Mathematical Space U+205F
 * Word joiner U+2060
 
-
-
-
 Apart from what's in our morphology, there are
 1) unknown word-like forms, and
 2) unmatched strings
@@ -3681,14 +1937,11 @@ so far:
 
 TODO: Could use something like this, but built-in's don't include šžđčŋ:
 
-
 Simply give an empty reading when something is unknown:
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
 legal in CG, they get a default baseform equal to the wordform, but
 no tag to check, so it's safer to let hfst-tokenise handle them.
-
-
 
 Finally we mark as a token any sequence making up a:
 * known word in context
@@ -3711,11 +1964,6 @@ $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-des
 Pmatch documentation:
 https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
 
-
-
-
-
-
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
 * Punct contains ASCII punctuation marks
@@ -3729,9 +1977,6 @@ the List contains some unicode white space characters
 * Narrow No-Break Space U+202F
 * Medium Mathematical Space U+205F
 * Word joiner U+2060
-
-
-
 
 Apart from what's in our morphology, there are
 1. unknown word-like forms, and
@@ -3749,16 +1994,12 @@ ASCII digits
 so far:
 * U+F0B7 for "x in box"
 
-
-
 ## Unknown handling
 Unknowns are tagged ?? and treated specially with `hfst-tokenise`
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
 legal in CG, they get a default baseform equal to the wordform, but
 no tag to check, so it's safer to let hfst-tokenise handle them.
-
-
 
 Finally we mark as a token any sequence making up a:
 * known word in context

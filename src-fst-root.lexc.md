@@ -2,7 +2,6 @@
 # Plains Cree morphological analyser
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
 
-
 # Definitions for Multichar_Symbols
 
 ## Analysis symbols
@@ -42,7 +41,6 @@ Nominal morphology
 * +Dim         Diminutive
 
 Particles
-
 
 * +Def	     This is the intransitive demonstrative, i.e. the definite.
 * +Indef       Indefinite
@@ -100,7 +98,6 @@ Verbal MSP
 
 Person prefix fragment features
 
-
 Nominal morphosyntactic features
 * +Sg		  singular
 * +Pl		  plural
@@ -138,15 +135,6 @@ Noun animacy and dependency classes
 
 Preverbs
 
-
-
-
-
-
-
-
-
-
 ## Auxiliary symbols
 
 These symbols either shape or govern the
@@ -154,7 +142,6 @@ morphophonological structure
 
 * %> 		  suffix border
 * %< 		  prefix border
-
 
 ## Symbols that need to be escaped on the lower side (towards twolc):
 * **»7**:  Literal »
@@ -176,12 +163,10 @@ Special characters for morphophonology
 
 * h2 	  Prefix in possessives
 
-
 Triggers for various morphophonological phenomena
 Mostly, these are not realized themselves as any grapheme/phoneme
 
 * %^EGLOT    glottal stop after e, for eh- in conjunctive order
-
 
 ## Usage tags
 
@@ -205,15 +190,6 @@ for the inverse objective conjugation, the flag refers to
 the **prefix**, not to the subject. So *indsg1* refers to either
 subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
-
-
-
-
-
-
-
-
-
 The conjunct form always has
 the ê- prefix, and future conditional never has a prefix.
 
@@ -231,39 +207,11 @@ Order
 * @U.order.cnj@    Conjunct
 * @U.order.imp@    Imperative
 
-
-
-
-
-
 Tense
-
-
-
-
-
 
 New multichar symbols for nouns
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 End of new and all Multichar_Symbols
-
 
  LEXICON Root          is where it all starts
 * NOUN_PREFIXES   ;    

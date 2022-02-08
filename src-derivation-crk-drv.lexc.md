@@ -1,12 +1,5 @@
 
 
-
-
-
-
-
-
-
 Nouns
 Verbs
 

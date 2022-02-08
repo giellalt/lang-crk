@@ -2,15 +2,6 @@
 
 | --- 
 
-
-
-
-
-
-
-
-
-
 *  y2:0       epenthetic joiner in reduplication of vowel-initial stems
 *  y3:0       epenthetic joiner in reduplication of vowel-initial stems
 *  d1:0   Reduplication consonant place holder 
@@ -18,105 +9,65 @@
 
 *  %^EGLOT:0    Epenthetic -h- place holder
 
-
 *  w3:w  3rd person possessor for NDA and NDI (non-kinship)
 *  y4:y  immutable -y in single-syllable nouns
 *  i4:i  possessive prefix -i that deletes before Vowel in Dep nouns
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 * *mêskanaw>i2s*
 * *mêskanâ0>0s*
-
 
 * *mêskanaw>i2hk*
 * *mêskanâ0>0hk*
 
-
 * *sôniyâw>i2s^DIM*
 * *sôniyâ0>0s0*
-
 
 * *miskotâkay>i2s^DIM*
 * *miskocâkâ0>0s0*
 
-
 * *nâpêw>i2^DIMsis*
 * *nâpê0>00sis*
-
 
 * *iskwêw>i2^DIMsis*
 * *iskwê0>00sis*
 
-
 * *maskosiy>i2^DIMs*
 * *maskosî0>00s*
-
 
 * *pikiw>i2^DIMs*
 * *pikî0>00s*
 
-
 * *maskosiy>i2hk*
 * *maskosî0>0hk*
-
-
 
 * *sîwâpoy>i2^DIMs*
 * *sîwâpô0>00s*
 
-
 * *tohtôsâpoy>i2hk*
 * *tohtôsâpô0>0hk*
-
-
-
 
 * *wâwi>i2^DIMs*
 * *wâwi>00s*
 
-
 * *ôsi>i2hk*
 * *ôsi>0hk*
 
-
-
-
-
-
-
 * *atimw>i2^DIMs*
 * *acimo>00s*
-
 
 * *mistikw>i2hk*
 * *mistiko>0hk*
 * *sâkahikan>i2^DIMs*
 * *sâkahikan>i0s*
 
-
 * *maskisin>i2hk*
 * *maskisin>ihk*
-
 
 * *atimw*
 * *atim0*
 
-
 * *askihkw*
 * *askihk0*
-
 
 * *atimw*
 * *atim0*
@@ -124,20 +75,11 @@
 * *nit2<nînihikw*
 * *ni0<nînihik*
 
-
-
 * *a>tân*
 * *ê>tân*
 
-
-
 * *nit2<astotin>i2^DIMs*
 * *nic<ascocin>i0s*
-
-
-
-
-
 
 * *ê^EGLOT<acimo>t*
 * *êh<acimo>t*
@@ -148,34 +90,24 @@
 * *ê^EGLOT<d2ay3d1âh<acimo>t*
 * *êh<0ay0âh<acimo>t*
 
-
 * *nit2<nêhiyawê>n2*
 * *ni0<nêhiyawâ>n*
 * *kit2<kâsîhkwê>n2*
 * *ki0<kâsîhkwâ>n*
-
 
 * *nit2<tipiska>n2*
 * *ni0<tipiskê>n*
 * *kit2<kiskêyihta>n2*
 * *ki0<kiskêyihtê>n*
 
-
-
 * *ê-<nîpin3>k*
 * *ê-<nîpih>k*
-
-
 
 * *ê-<mispon>k*
 * *ê-<mispo0>k*
 
-
 * *wapâht4>ikâtê>w*
 * *wapâhc>ikâtê>w*
-
-
-
 
 * *ê-<mow2>i2ht*
 * *ê-<mow>iht*
@@ -219,8 +151,6 @@
 * *nitonaw>îhkan*
 * *nitonaw>îhkan*
 
-
-
 * *kit2<nakat3>in*
 * *ki0<nakas>in*
 * *nit2<nakat3>i2mâwa*
@@ -240,7 +170,6 @@
 * *nakat3>ii2hkan*
 * *nakas>îhkan*
 
-
 * *kit2<kost3>in*
 * *ki0<ko0s>in*
 * *nit2<kost3>i2mâwa*
@@ -259,9 +188,6 @@
 * *ko0s>in*
 * *kost3>ii2hkan*
 * *ko0s>îhkan*
-
-
-
 
 * *mi4<îwat3>i2^DIMs*
 * *m0<îwac>i0s*
@@ -294,8 +220,6 @@
 
 INITIAL CHANGE
 
-
-
 * *nipât^IC*
 * *nêpât0*
 
@@ -323,17 +247,11 @@ INITIAL CHANGE
 * *m0ostohtêt^IC*
 * *mwêstohtêt0*
 
-
-
 * *0oyôyot^IC*
 * *wêyôyot0*
 
 * *k0ocît^IC*
 * *kwêcît0*
-
-
-
-
 
 * *îkatêhât^IC*
 * *âkatêhât0*
@@ -350,8 +268,6 @@ INITIAL CHANGE
 * *00ôhkomit^IC*
 * *iyôhkomit0*
 
-
-
 * *w3<spiton*
 * *o<spiton*
 
@@ -367,12 +283,6 @@ INITIAL CHANGE
 * *w3<ahkwan*
 * *w<ahkwan*
 
-
-
-
-
-
-
 * *ni4<ohkom*
 * *n0<ôhkom*
 
@@ -384,7 +294,6 @@ INITIAL CHANGE
 
 * *w3<ohkom>a*
 * *0<ohkom>a*
-
 
 * *nit2<ospwâkan*
 * *nit<ôspwâkan*

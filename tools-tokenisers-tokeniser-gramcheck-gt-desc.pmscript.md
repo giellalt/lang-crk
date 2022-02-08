@@ -32,11 +32,6 @@ $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-des
 Pmatch documentation:
 https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
 
-
-
-
-
-
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
 * Punct contains ASCII punctuation marks
@@ -51,9 +46,6 @@ the List contains some unicode white space characters
 * Medium Mathematical Space U+205F
 * Word joiner U+2060
 
-
-
-
 Apart from what's in our morphology, there are
 1) unknown word-like forms, and
 2) unmatched strings
@@ -66,14 +58,11 @@ so far:
 
 TODO: Could use something like this, but built-in's don't include šžđčŋ:
 
-
 Simply give an empty reading when something is unknown:
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
 legal in CG, they get a default baseform equal to the wordform, but
 no tag to check, so it's safer to let hfst-tokenise handle them.
-
-
 
 Finally we mark as a token any sequence making up a:
 * known word in context

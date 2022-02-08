@@ -5,10 +5,6 @@
 
 * LEXICON Numerals 
 
-
-
-
-
 ## Here start the 999 numbers
 
 * LEXICON UNDERTHOUSAND 
@@ -19,18 +15,11 @@
 
 * LEXICON HUNDRED 
 
-
-
 * LEXICON TENS 
 
 * LEXICON TEN 
 
-
-
-
 * LEXICON ONESTONEXT 
-
-
 
 * LEXICON TEENS 
 
