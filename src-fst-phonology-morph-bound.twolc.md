@@ -305,4 +305,8 @@ INITIAL CHANGE
 * *ot<ôspwâkan*
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology-morph-bound.twolc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/phonology-morph-bound.twolc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/phonology-morph-bound.twolc](https://github.com/giellalt/lang-crk/blob/main/src/fst/phonology-morph-bound.twolc)</small>
+
+---
+

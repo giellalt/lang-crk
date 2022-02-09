@@ -1,20 +1,39 @@
+# Plains Cree description 
+
+All documents in one file
+
 
 
 # Plains Cree disambiguator 
 
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/disambiguator.cg3](http://github.com/giellalt/lang-crk/blob/main/../src/cg3/disambiguator.cg3)</small>
+
+<small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-crk/blob/main/src/cg3/disambiguator.cg3)</small>
+
+---
+
+
 
 # Plains Cree disambiguator 
 
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/textanalysis.cg3](http://github.com/giellalt/lang-crk/blob/main/../src/cg3/textanalysis.cg3)</small>
+
+<small>This (part of) documentation was generated from [src/cg3/textanalysis.cg3](https://github.com/giellalt/lang-crk/blob/main/src/cg3/textanalysis.cg3)</small>
+
+---
+
+
 
 Nouns
 Verbs
 
 * * *
-<small>This (part of) documentation was generated from [../src/derivation/crk-drv.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/derivation/crk-drv.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/derivation/crk-drv.lexc](https://github.com/giellalt/lang-crk/blob/main/src/derivation/crk-drv.lexc)</small>
+
+---
+
+
 
 | --- 
 
@@ -321,7 +340,12 @@ INITIAL CHANGE
 * *ot<ôspwâkan*
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology-morph-bound.twolc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/phonology-morph-bound.twolc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/phonology-morph-bound.twolc](https://github.com/giellalt/lang-crk/blob/main/src/fst/phonology-morph-bound.twolc)</small>
+
+---
+
+
 Definitions
 
 Rules
@@ -615,7 +639,12 @@ INITIAL CHANGE
 Composing the rules together
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/fst/phonology.xfscript)</small>
+
+<small>This (part of) documentation was generated from [src/fst/phonology.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/phonology.xfscript)</small>
+
+---
+
+
 # Plains Cree particles                           
 
 The file contains the following lexicons, with content as described:
@@ -631,7 +660,12 @@ The file contains the following lexicons, with content as described:
 * LEXICON Particles  contains the actual list of particles.
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/particles.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/particles.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/particles.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/particles.lexc)</small>
+
+---
+
+
 
 Test lemma/stem set for nouns according the new crk FST
 
@@ -639,14 +673,24 @@ Complete extraction of lemma:stem info from AEW 2020, according to
 LEXC structure in the new crk FST.
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/noun_stems.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/noun_stems.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/noun_stems.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/noun_stems.lexc)</small>
+
+---
+
+
 
 Model verb lemmas and stems for new crk FST
 
 Full incorporation of AEW 2020 verbs into new crk FST
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verb_stems.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/verb_stems.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/verb_stems.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/verb_stems.lexc)</small>
+
+---
+
+
 # Plains Cree numerals                           
 
 ## The file for Arabic, Roman, and other symbolic numerals
@@ -666,7 +710,12 @@ Full incorporation of AEW 2020 verbs into new crk FST
 * **LEXICON NUMARABTAG   ** 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numeral_symbols.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/numeral_symbols.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/numeral_symbols.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/numeral_symbols.lexc)</small>
+
+---
+
+
 ## Plains Cree pronouns
 
 There are more pronoums to be added here.
@@ -702,7 +751,12 @@ INANIMATE \\
 ôhi+Pron+Def+Prox+I+Pl:ôhi # "these ones" ; 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/pronouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/pronouns.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/pronouns.lexc)</small>
+
+---
+
+
 # Plains Cree numerals                           
 
 ## The file for numerals
@@ -732,8 +786,14 @@ INANIMATE \\
 * LEXICON CARDINAL 
 
 * LEXICON NUM  adds +Num+Ipc
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/numerals.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/numerals.lexc)</small>
+
+---
+
+
 # File containing abbreviations 
 
 ## Lexica for adding tags and periods
@@ -778,7 +838,12 @@ if it were transitive but letters as if it were intransitive.
 This lexicon is for abbrs that always have a constituent following it.
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/abbreviations.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/abbreviations.lexc)</small>Place-holder for inserting derivational FST after prefixes and before suffixes
+
+<small>This (part of) documentation was generated from [src/fst/stems/abbreviations.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/abbreviations.lexc)</small>
+
+---
+
+Place-holder for inserting derivational FST after prefixes and before suffixes
 DRV-FST is the place-holder character
 
 Linking verb stems from Derivational FST to their inflectional suffixes
@@ -786,8 +851,14 @@ Linking verb stems from Derivational FST to their inflectional suffixes
 Nouns
 
 Verbs
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/derivation_stems.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/stems/derivation_stems.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/stems/derivation_stems.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/derivation_stems.lexc)</small>
+
+---
+
+
 Plains Cree verb morphology                  
 
 The Plains Cree verbs are divided in four groups:
@@ -1267,24 +1338,46 @@ LEXICON VTA_IND_NULL_PL_SUFFIX
 ~~~~~~~~~~~~~~~~~~~~~~
 
 End of verb affixes LEXC code
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verb_affixes.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/affixes/verb_affixes.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/verb_affixes.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/affixes/verb_affixes.lexc)</small>
+
+---
+
+
 
 NOUN_ENDLEX for wrapping up various things
 
 End of noun affixes code
+
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/noun_affixes.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/affixes/noun_affixes.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/noun_affixes.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/affixes/noun_affixes.lexc)</small>
+
+---
+
+
 Proper noun inflection
 The Plains Cree language proper nouns inflect in the same cases as regular
 nouns, but with a colon (':') as separator.
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/propernouns.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/affixes/propernouns.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/propernouns.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/affixes/propernouns.lexc)</small>
+
+---
+
+
 # Symbol affixes
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/affixes/symbols.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/affixes/symbols.lexc)</small>
+
+---
+
+
 # Plains Cree morphological analyser
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
 
@@ -1514,7 +1607,12 @@ End of new and all Multichar_Symbols
 * NON_STANDARD     ;    
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/fst/root.lexc)</small>Hyphenator and text to ipa for Plains Cree
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/root.lexc)</small>
+
+---
+
+Hyphenator and text to ipa for Plains Cree
 
 Defining sets
 
@@ -1523,7 +1621,12 @@ The rules
 Long vowels
 
 * * *
-<small>This (part of) documentation was generated from [../src/phonetics/txt2ipa.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/phonetics/txt2ipa.xfscript)</small>
+
+<small>This (part of) documentation was generated from [src/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/phonetics/txt2ipa.xfscript)</small>
+
+---
+
+
 
 Word-specific explicit solution for verb morphology - Option 1 (works only in FOMA)
 Word-specific solution
@@ -1535,19 +1638,34 @@ Rule-based solution for verb morphology
 Irregular verb forms
 
 * * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript)</small>
+
+<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript)</small>
+
+---
+
+
 
 Old code
 
 * * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript)</small>
+
+<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript)</small>
+
+---
+
+
 
 Word-specific explicit solution for verb morphology
 
 Rule-based morphological solution
 
 * * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript)</small>
+
+<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript)</small>
+
+---
+
+
 
 We describe here how abbreviations are in Plains Cree are read out, e.g.
 for text-to-speech systems.
@@ -1562,7 +1680,12 @@ For example:
 * esim.:esimerkiksi # ; 
 
 * * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-crk/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-crk/blob/main/src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+
+---
+
+
 GENERAL DEFINITIONS
 
 VERBS
@@ -1574,7 +1697,12 @@ Continue list of irregular noun plurals here
 Assigning +V (+II/AI/TI/TA) or +N as part-of-speech
 
 * * *
-<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-eng-phrase2crk-features.xfscript](http://github.com/giellalt/lang-crk/blob/main/../src/transcriptions/transcriptor-eng-phrase2crk-features.xfscript)</small>
+
+<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-eng-phrase2crk-features.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/transcriptions/transcriptor-eng-phrase2crk-features.xfscript)</small>
+
+---
+
+
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
 
 # DELIMITERS
@@ -1877,39 +2005,29 @@ expression **WORD - premodifiers**.
 ### Grammarchecker sets
 
 * * *
-<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-crk/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
+
+<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-crk/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
+
+---
+
+# Grammar checker tokenisation for crk
+
+Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
+```
 $ make
 $ echo "ja, ja" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
-
-Issues:
-- [X] Ambiguous input
-- Seems to work fine
-- [X] Ambiguous multiword expessions with ambiguous tokenisation
-- Seems to work – represented within lexc now; hfst-tokenise also
-supports forms on the analyses now
-- [X] Ambiguous multiword expessions need reorganising after CG
-- The module cg-mwesplit takes wordforms from readings and turns them into
-new cohorts
-- [X] Unknown words
-- The set-difference method only works for words without
-flag diacritics (even though we should be working only on the form-side?)
-and leads to binary blow-up: With only lower unknowns, we get 45M;
-lower+upper gives 67M, while no unknowns gives 27M
-- Fixed instead by treating empty analyses as unknown-tokens in
-hfst-tokenise, and outputting unmatched strings with a prefix
-- [ ] Treat input that's within superblanks as unmatched
-- probably requires a change in hfst-tokenise itself
-- [X] Try >1 space for ambiguous MWE's? – represented within lexc now
-- [ ] Try set-difference-unknowns method with regular hfst commands?
+```
 
 More usage examples:
+```
 $ echo "Juos gorreválggain lea (dárbbašlaš) deavdit gáibádusa boasttu olmmoš, man mielde lahtuid." | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
 $ echo "(gáfe) 'ja' ja 3. ja? ц jaja ukjend \"ukjend\"" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
 $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-desc.pmhfst
+```
 
 Pmatch documentation:
-https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
+<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
 
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
@@ -1950,7 +2068,12 @@ Finally we mark as a token any sequence making up a:
 * URL in context
 
 * * *
-<small>This (part of) documentation was generated from [../tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](http://github.com/giellalt/lang-crk/blob/main/../tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small># Tokeniser for crk
+
+<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript](https://github.com/giellalt/lang-crk/blob/main/tools/tokenisers/tokeniser-gramcheck-gt-desc.pmscript)</small>
+
+---
+
+# Tokeniser for crk
 
 Usage:
 ```
@@ -1962,7 +2085,7 @@ $ echo "márffibiillagáffe" | hfst-tokenise --giella-cg tokeniser-disamb-gt-des
 ```
 
 Pmatch documentation:
-https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch
+<https://kitwiki.csc.fi/twiki/bin/view/KitWiki/HfstPmatch>
 
 Characters which have analyses in the lexicon, but can appear without spaces
 before/after, that is, with no context conditions, and adjacent to words:
@@ -2008,4 +2131,8 @@ Finally we mark as a token any sequence making up a:
 * URL in context
 
 * * *
-<small>This (part of) documentation was generated from [../tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](http://github.com/giellalt/lang-crk/blob/main/../tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
+
+<small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](https://github.com/giellalt/lang-crk/blob/main/tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
+
+---
+

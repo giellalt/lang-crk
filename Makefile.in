@@ -465,12 +465,26 @@ DOCSRC_MDFILES = $(shell echo $(BARE_DOCSRC) | tr ' ' '\n' > docsrc.tmp; \
 # filepath:  ---------------------------------------^^^^^^^^^^^^^^^^
 HOST = https://github.com
 ORG = giellalt
-#REPO=$(shell cd $(top_srcdir); if test -d ./.git; then git config --get remote.origin.url | cut -d'/' -f2 | cut -d'.' -f1; elif test -d ./.svn; then svn info . | grep 'Repository Root' | rev | cut -d'/' -f1 | rev | cut -d'.' -f1; else pwd | rev | cut -d'/' -f1 | rev; fi )
-# The above does not work in the GitHub Actions environment, the following is a
-# hacky workaround - the language code is not the same as the repo name in several cases
-REPO = lang-$(GLANG)
+SH_REPO_NAME = $(shell cd $(top_srcdir); \
+		if test -d ./.git; then \
+			git config --get remote.origin.url | cut -d'/' -f2 | cut -d'.' -f1; \
+		elif test -d ./.svn; then \
+			svn info . | grep 'Repository Root' | rev | cut -d'/' -f1 | rev | cut -d'.' -f1; \
+		else \
+			pwd | rev | cut -d'/' -f1 | rev; \
+		fi )
+
+# When running via GitHub Actions, get org/owner + reponame from the environment:
+GH_REPO = $(GITHUB_REPOSITORY)
+# The branch name is presently hard-coded, could be taken from the commit:
 BRANCH = main
-REPOURL = $(HOST)/$(ORG)/$(REPO)/blob/$(BRANCH)
+# Use GitHub info if available, fall back to shell otherwise:
+REPOURL = $(shell if test "x$(GH_REPO)" != x ; then \
+				echo "$(HOST)/$(GH_REPO)/blob/$(BRANCH)"; \
+			else \
+				echo "$(HOST)/$(ORG)/$(SH_REPO_NAME)/blob/$(BRANCH)" ; \
+			fi)
+
 
 # hfst-compose:
 AM_V_COMPOSE = $(AM_V_COMPOSE_@AM_V@)
@@ -901,7 +915,7 @@ endef
 # Extract Markdown doccomments:
 define make_md_files
 $$(top_srcdir)/docs/$$(call src2md,$(1)): $(1)
-	$$(AM_V_AWK)"$(GAWK)" -v GLANG=$(GLANG) -f $(DOCC2MDWIKI) $$< |\
+	$$(AM_V_AWK)"$(GAWK)" -v REPOURL=$(REPOURL) -v GLANG=$(GLANG) -f $(DOCC2MDWIKI) $$< |\
 		$(SED) -e 's/@/REALLY_AT/g' |\
 		tr '\n' '@' |\
 		$(SED) -e 's/@@@*/@@/g' |\
@@ -914,7 +928,8 @@ $(foreach f,$(DOCSRC),$(eval $(call make_md_files,$(f))))
 
 # Collect all target files into one big MD file:
 $(ALLINONE_MD_PAGE): $(VPATH_MDFILES)
-	$(AM_V_GEN)cat $(VPATH_MDFILES) > $@
+	$(AM_V_GEN)printf "# $(GLANGUAGE) description \n\nAll documents in one file\n\n" \
+	| cat - $(VPATH_MDFILES) > $@
 
 $(LINKS):
 	$(AM_V_GEN)for doc2md in $(DOCSRC_MDFILES) ; do \
