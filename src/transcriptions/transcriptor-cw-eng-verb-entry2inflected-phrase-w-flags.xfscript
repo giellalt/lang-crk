@@ -28,11 +28,17 @@ define Repetitive [ "Rept+" ] ;
 
 define Subject [ "1Sg+" | "2Sg+" | "3Sg+" | "1Du+" | "2Du+" | "3Du+" | "1Distr+" | "2Distr+" | "3Distr+" | "1Pl+" | "21Pl+" | "2Pl+" | "3Pl+" | "4Sg+" | "4Pl+" | "4Sg/Pl+" | "5Sg/Pl+" | "X+" | "XPl+" ] ;
 
-define Object [ "1SgO+" | "2SgO+" | "3SgO+" | "1DuO+" | "2DuO+" | "3DuO+" | "1DistrO+" | "2DistrO+" | "3DistrO+" | "1PlO+" | "21PlO+" | "2PlO+" | "3PlO+" | "4Sg/PlO+" | "5Sg/PlO+" | "XO+" | "XPlO+" ] ;
+define DirectObject [ "1SgO+" | "2SgO+" | "3SgO+" | "1DuO+" | "2DuO+" | "3DuO+" | "1DistrO+" | "2DistrO+" | "3DistrO+" | "1PlO+" | "21PlO+" | "2PlO+" | "3PlO+" | "4Sg/PlO+" | "5Sg/PlO+" | "XO+" | "XPlO+" ] ;
+
+define IndirectObject [ "1SgIO+" | "2SgIO+" | "3SgIO+" | "1DuIO+" | "2DuIO+" | "3DuIO+" | "1PlIO+" | "21PlIO+" | "2PlIO+" | "3PlIO+" | "4Sg/PlIO+" | "5Sg/PlIO+" | "XIO+" | "XPlIO+" ] ;
 
 ! Standardization
 regex [ {He} | {he} | {She} | {she} | {he/she} | {They} | {they} -> {s/he} , {It} -> {it} , {him} | {her} | {him/her} -> {s.o.} || " " _ [ " " | "," | ";" | "!" | "?" | "." | .#. ] ] ;
 define Standardization
+
+! Indirect object identification and standardization
+regex [ {him/her/it} | {him/her} | {him} | {her} | {them} -> IOBJ || " " {to} " " _ [ " " | "," | ";" | "!" | "?" | "." | .#. ] ] ;
+define IObjectStandardization
 
 ! Marking non-subject occurrences of 'it'
 regex [ {it} -> IT || " " _ [ "." | "," | .#. ] ,, {it} -> IT || Alphabet " " _ ,, {it} -> IT || "(" _ ,, {it} -> IT || _ ")" ] ;
@@ -63,8 +69,8 @@ EngProg -> || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } _ 
 | [ {s} -> {s} "@D.prog.Prog@" || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } Alphabet+ _ [ Bx - "." ]
 ] .o. [
 {s} -> {s} [ "@R.tense.Prs@" | "@R.tense.Cond@" ] [ "@R.subject.3Sg@" | "@R.subject.4Sg@" | "@R.subject.X@" | "@R.subject.1Distr@" | "@R.subject.2Distr@" | "@R.subject.3Distr@" ] || [ {s/he} | {he} | {she} | {it} | { and} | { or} ] { } Alphabet+ \i _ \Alphabet
-,, EngInf -> || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } _ [ \Alphabet | .#. ]
-,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } _ [ \Alphabet | .#. ]
+,, EngInf -> || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } _ [ \Alphabet - "/" | .#. ]
+,, EngPrt  -> || [ {s/he} | {he} | {she} | {it} | {there} | { and} | { or} ] { } _ [ \Alphabet - "/" | .#. ]
 ] ;
 define VerbInflection
 
@@ -139,6 +145,24 @@ regex [ {is} -> {be} || {is going to } \Alphabet \Alphabet _ \Alphabet ]
 , {is} -> {were} [ "@R.subject.2Sg@" | "@R.subject.1Du@" | "@R.subject.2Du@" | "@R.subject.3Du@" | "@R.subject.1Pl@" | "@R.subject.21Pl@" | "@R.subject.2Pl@" | "@R.subject.3Pl@" | "@R.subject.4Pl@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" | "@R.subject.XPl@" ] "@R.tense.Prt@"
 || \Alphabet _ \Alphabet ] ;
 define BeInflection
+
+! Indirect Object Conversion
+regex [ IOBJ -> {me} "@R.recipient.1Sg@"
+, IOBJ -> {you} "@R.recipient.2Sg@"
+, IOBJ -> {him/her} "@R.recipient.3Sg@"
+, IOBJ -> {us both} "@R.recipient.1Du@"
+, IOBJ -> {you both} "@R.recipient.2Du@"
+, IOBJ -> {them both} "@R.recipient.3Du@"
+, IOBJ -> {us} "@R.recipient.1Pl@"
+, IOBJ -> {you and us} "@R.recipient.21Pl@"
+, IOBJ -> {you all} "@R.recipient.2Pl@"
+, IOBJ -> {them} "@R.recipient.3Pl@"
+, IOBJ -> {him/her/them} "@R.recipient.4Sg/Pl@"
+, IOBJ -> {him/her/them over there} "@R.recipient.5Sg/Pl@"
+, IOBJ -> {someone} "@R.recipient.X@"
+, IOBJ -> {some people} "@R.recipient.XPl@"
+|| Bx {to } _ ] ;
+define IObjectConversion
 
 ! Subject Inverse Conversion
 regex [ {s/he} -> {me} "@R.subject.1Sg@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
@@ -254,7 +278,8 @@ regex [ "Prs+" -> "@P.tense.Prs@" , "Prt+" -> "@P.tense.Prt@" , "Def+" -> "@P.te
 .o. [ "Prog+" -> "@P.prog.Prog@" ]
 .o. [ "Rept+" -> "@P.rept.Rept@" ]
 .o. [ "1Sg+" -> "@P.subject.1Sg@" , "2Sg+" -> "@P.subject.2Sg@", "3Sg+" -> "@P.subject.3Sg@" , "1Du+" -> "@P.subject.1Du@" , "2Du+" -> "@P.subject.2Du@" , "3Du+" -> "@P.subject.3Du@" , "1Distr+" -> "@P.subject.1Distr@" , "2Distr+" -> "@P.subject.2Distr@", "3Distr+" -> "@P.subject.3Distr@", "1Pl+" -> "@P.subject.1Pl@" , "21Pl+" -> "@P.subject.21Pl@", "2Pl+" -> "@P.subject.2Pl@" , "3Pl+" -> "@P.subject.3Pl@" , "4Sg+" -> "@P.subject.4Sg@" , "4Pl+" -> "@P.subject.4Pl@" , "4Sg/Pl+" -> "@P.subject.4Sg/Pl@" , "5Sg/Pl+" -> "@P.subject.5Sg/Pl@", "X+" -> "@P.subject.X@" , "XPl+" -> "@P.subject.XPl@" ]
-.o. [ "1SgO+" -> "@P.object.1Sg@" , "2SgO+" -> "@P.object.2Sg@", "3SgO+" -> "@P.object.3Sg@" , "1DuO+" -> "@P.object.1Du@" , "2DuO+" -> "@P.object.2Du@", "3DuO+" -> "@P.object.3Du@" , "1DistrO+" -> "@P.object.1Distr@", "2DistrO+" -> "@P.object.2Distr@" , "3DistrO+" -> "@P.object.3Distr@" , "1PlO+" -> "@P.object.1Pl@" , "21PlO+" -> "@P.object.21Pl@", "2PlO+" -> "@P.object.2Pl@" , "3PlO+" -> "@P.object.3Pl@" ,  "4Sg/PlO+" -> "@P.object.4Sg/Pl@" , "5Sg/PlO+" -> "@P.object.5Sg/Pl@", "XO+" -> "@P.object.X@" , "XPlO+" -> "@P.object.XPl@" ] ;
+.o. [ "1SgO+" -> "@P.object.1Sg@" , "2SgO+" -> "@P.object.2Sg@", "3SgO+" -> "@P.object.3Sg@" , "1DuO+" -> "@P.object.1Du@" , "2DuO+" -> "@P.object.2Du@", "3DuO+" -> "@P.object.3Du@" , "1DistrO+" -> "@P.object.1Distr@", "2DistrO+" -> "@P.object.2Distr@" , "3DistrO+" -> "@P.object.3Distr@" , "1PlO+" -> "@P.object.1Pl@" , "21PlO+" -> "@P.object.21Pl@", "2PlO+" -> "@P.object.2Pl@" , "3PlO+" -> "@P.object.3Pl@" ,  "4Sg/PlO+" -> "@P.object.4Sg/Pl@" , "5Sg/PlO+" -> "@P.object.5Sg/Pl@", "XO+" -> "@P.object.X@" , "XPlO+" -> "@P.object.XPl@" ]
+.o. [ "1SgIO+" -> "@P.recipient.1Sg@" , "2SgIO+" -> "@P.recipient.2Sg@" , "3SgIO+" -> "@P.recipient.3Sg@" ,  "1DuIO+" -> "@P.recipient.1Du@" , "2DuIO+" -> "@P.recipient.2Du@" , "3DuIO+" -> "@P.recipient.3Du@" , "1PlIO+" -> "@P.recipient.1Pl@" , "21PlIO+" -> "@P.recipient.21Pl@" , "2PlIO+" -> "@P.recipient.2Pl@" , "3PlIO+" -> "@P.recipient.3Pl@" , "4Sg/PlIO+" -> "@P.recipient.4Sg/Pl@" , "5Sg/PlIO+" -> "@P.recipient.5Sg/Pl@" , "XIO+" -> "@P.recipient.X@" , "XPlIO+" -> "@P.recipient.XPl@" ] ;
 define TagConversion
 
 ! Undoing special marking of non-subject 'it'
@@ -262,17 +287,19 @@ regex [ IT -> {it} || \Alphabet _ \Alphabet ] ;
 define itNonSubjectUnmarking
 
 ! Definition of input and conversion
-regex [ TenseAspect Subject (Object) (Progressive) (Repetitive) Letters+ ] ;
+regex [ TenseAspect Subject (DirectObject) (IndirectObject) (Progressive) (Repetitive) Letters+ ] ;
 define Input
 
 regex [ Input
 .o. TagConversion
+.o. IObjectStandardization
 .o. Standardization
 .o. itNonSubjectMarking
 .o. VerbInflection
 ! .o. IrregularVerbs
 .o. TenseAspectConversion
 .o. BeInflection
+.o. IObjectConversion
 .o. SubjectConversion
 .o. ObjectConversion
 .o. ReflexiveConversion
