@@ -1,7 +1,7 @@
 # Plains Cree documentation
 
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
-[![License](https://img.shields.io/github/license/giellalt/lang-crk)](https://raw.githubusercontent.com/giellalt/lang-crk/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-crk)](https://github.com/giellalt/lang-crk/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-crk)](https://github.com/giellalt/lang-crk/issues)
 [![Build status](https://github.com/giellalt/lang-crk/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-crk/actions)
 
