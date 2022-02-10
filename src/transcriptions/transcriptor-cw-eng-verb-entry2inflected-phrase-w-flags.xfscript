@@ -37,7 +37,7 @@ regex [ {He} | {he} | {She} | {she} | {he/she} | {They} | {they} -> {s/he} , {It
 define Standardization
 
 ! Indirect object identification and standardization
-regex [ {him/her/it} | {him/her} | {him} | {her} | {them} -> IOBJ || " " {to} " " _ [ " " | "," | ";" | "!" | "?" | "." | .#. ] ] ;
+regex [ {s.b.} -> IOBJ || " " {to} " " _ [ " " | "," | ";" | "!" | "?" | "." | .#. ] ] ;
 define IObjectStandardization
 
 ! Marking non-subject occurrences of 'it'
@@ -161,6 +161,7 @@ regex [ IOBJ -> {me} "@R.recipient.1Sg@"
 , IOBJ -> {him/her/them over there} "@R.recipient.5Sg/Pl@"
 , IOBJ -> {someone} "@R.recipient.X@"
 , IOBJ -> {some people} "@R.recipient.XPl@"
+, IOBJ -> {someone} "@D.recipient@"
 || Bx {to } _ ] ;
 define IObjectConversion
 
