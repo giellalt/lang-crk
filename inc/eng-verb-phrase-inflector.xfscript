@@ -110,8 +110,8 @@ define Relativization
 regex [
 ! Present tense / (Future) conditional
 [..] -> [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.neg@" "@D.prog@"
-| { does not} [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.neg.Neg@" RsubjectPrs3Sg "@D.prog@"
-| { do not} [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.neg.Neg@" DsubjectPrs3Sg "@D.prog@"
+| { does not} [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.neg.Neg@" "@D.prog@" RsubjectPrs3Sg
+| { do not} [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.neg.Neg@" "@D.prog@" DsubjectPrs3Sg
 | { } IS [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.neg@" "@R.prog.Prog@"
 | { } IS { not} [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.neg.Neg@" "@R.prog.Prog@"
 ! Past tense
@@ -144,17 +144,19 @@ regex [
 | { to be} "@R.tense.Inf@" "@D.neg@" "@R.prog.Prog@"
 | { to not be} "@R.tense.Inf@" "@R.neg.Neg@" "@R.prog.Prog@"
 ! Immediate imperative
-| "@R.tense.Imm@" "@D.prog@" "@D.neg@"
-| "@R.tense.Imm@" "@R.neg@" Dsubject2SgPl
-| { do not} "@R.tense.Imm@" "@D.prog.Prog@" "@R.neg@" Rsubject2SgPl
+| "@R.tense.Imm@" "@D.neg@" "@D.prog@"
+| "@R.tense.Imm@" "@R.neg.Neg@" "@D.prog@" Dsubject2SgPl
+| { do not} "@R.tense.Imm@" "@R.neg.Neg@" "@D.prog@" Rsubject2SgPl
+| { be} "@R.tense.Imm@" "@R.neg.Neg@" "@R.prog.Prog@" Dsubject2SgPl
 | { be} "@R.tense.Imm@" "@D.neg@" "@R.prog.Prog@"
-| { do not be} "@R.tense.Imm@" "@R.neg@" "@R.prog.Prog@" Rsubject2SgPl
+| { do not be} "@R.tense.Imm@" "@R.neg.Neg@" "@R.prog.Prog@" Rsubject2SgPl
 ! Delayed imperative
-| "@R.tense.Del@" "@D.prog@" "@D.neg@"
-| "@R.tense.Del@" "@R.neg@" Dsubject2SgPl
-| { do not} "@R.tense.Del@" "@D.prog.Prog@" "@R.neg@" Rsubject2SgPl
+| "@R.tense.Del@" "@D.neg@" "@D.prog@"
+| "@R.tense.Del@" "@R.neg.Neg@" "@D.prog@" Dsubject2SgPl
+| { do not} "@R.tense.Del@" "@R.neg.Neg@" "@D.prog@" Rsubject2SgPl
+| { be} "@R.tense.Del@" "@R.neg.Neg@" "@R.prog.Prog@" Dsubject2SgPl
 | { be} "@R.tense.Del@" "@D.neg@" "@R.prog.Prog@"
-| { do not be} "@R.tense.Del@" "@R.neg@" "@R.prog.Prog@" Rsubject2SgPl ]
+| { do not be} "@R.tense.Del@" "@R.neg.Neg@" "@R.prog.Prog@" Rsubject2SgPl ]
 || Wx SUBJ _ " " \ISZ
 ] ;
 define AuxiliaryPhrase
@@ -384,16 +386,17 @@ regex [ Input
 .o. Tag2FlagConversion
 .o. VerbInflection
 .o. IrregularVerbs
-.o. AuxiliaryPhrase .o. BeAuxiliaryPhrase
+.o. AuxiliaryPhrase
+! .o. BeAuxiliaryPhrase
 .o. PhrasePrefix
 .o. PhraseSuffix
 .o. Relativization
-.o. BeInflection
-.o. IObjectConversion
-.o. SubjectConversion
-.o. ObjectConversion
-.o. ReflexiveConversion
-.o. PossessiveConversion
+! .o. BeInflection
+! .o. IObjectConversion
+! .o. SubjectConversion
+! .o. ObjectConversion
+! .o. ReflexiveConversion
+! .o. PossessiveConversion
 ] ;
 
 twosided flag-diacritics
