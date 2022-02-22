@@ -377,19 +377,19 @@ define Tag2FlagConversion
 
 ! Resolving irregularities of the spelling of English (irregular and regular) verb wordforms
 
-read lexc inc/eng-phrase-inflection/cw-eng-verbs-prs3Sg2inf.lexc
+read lexc src/transcriptions/cw-eng-verbs-prs3Sg2inf.lexc
 define EngInf
 
 regex [ EngInf -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
 define EngInf2Inf
 
-read lexc inc/eng-phrase-inflection/cw-eng-verbs-prs3Sg2prt.lexc
+read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prt.lexc
 define EngPrt
 
 regex [ EngPrt -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
 define EngPrt2Prt
 
-read lexc inc/eng-phrase-inflection/cw-eng-verbs-prs3Sg2prog.lexc
+read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prog.lexc
 define EngProg
 
 regex [ EngProg -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
