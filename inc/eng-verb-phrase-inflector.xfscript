@@ -76,17 +76,17 @@ define Standardization
 regex [ s -> {>s} "@D.neg@" "@D.prog.Prog@" [ "@R.tense.Prs@" | "@R.tense.Cond@" ] RsubjectPrs3Sg
 , s -> {>ed} "@D.neg@" "@D.prog.Prog@" "@R.tense.Prt@"
 , s -> {>ing} "@R.prog.Prog@"
-, s -> 0 [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] DsubjectPrs3Sg "@D.neg@" "@D.prog.Prog@" ]
+, s -> {>} [ [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] DsubjectPrs3Sg "@D.neg@" "@D.prog.Prog@" ]
 | [ [ "@R.tense.Prs@" | "@R.tense.Cond@" | "@R.tense.Prt@" ] "@R.neg.Neg@" "@D.prog.Prog@" ]
-| [ [ "@R.tense.Fut@" | "@R.tense.Def@" | "@R.tense.Int@" | "@R.tense.Inf@" | "@R.tense.Imm@" | "@R.tense.Del@" ] "@D.prog.Prog@" ]
+| [ [ "@R.tense.Fut@" | "@R.tense.Def@" | "@R.tense.Int@" | "@R.tense.Inf@" | "@R.tense.Imm@" | "@R.tense.Del@" ] "@D.prog.Prog@" ] ]
 || SUBJ Wx+ Alphabet+ _ [ Wx | Bx ] ] ;
 ! ] ;
 define VerbInflection
 
-regex [ {ha} -> {have}
+regex [ {ha>} -> {have}
 , {ha>ed}-> {had}
 , {ha>ing} -> {hav>ing}
-, {doe} -> {do}
+, {doe>} -> {do}
 , {doe>ed} -> {did}
 , {doe>ing} -> {do>ing}
 || Wx _ Wx ] ;
@@ -216,13 +216,13 @@ ISZ -> [ IS [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.neg@" "@D.prog@"
 define BeAuxiliaryPhrase
 
 regex [
-[..] -> "@R.clause.Cnj@" {as }
-| "@R.tense.Cond@" {when }
-| "@R.tense.Inf@" {for }
+[..] -> "@R.clause.Cnj@" "@D.tense.Inf@" "@D.tense.Imm@" "@D.tense.Del@" {as }
+| "@R.tense.Cond@" "@D.clause@" {when }
+| "@R.tense.Inf@" "@D.clause@" {for }
 | [ "@R.tense.Imm@" | "@R.tense.Del@" ] Dsubject2SgPl "@D.neg@" {let }
 | [ "@R.tense.Imm@" | "@R.tense.Del@" ] Dsubject2SgPl "@R.neg@" {do not let }
 | "@D.clause.Cnj@" "@D.tense.Cond@" "@D.tense.Inf@" [ [ "@D.tense.Imm@" "@D.tense.Del@" ] | [ [ "@R.tense.Imm@" | "@R.tense.Del@" ] Rsubject2SgPl ] ]
-|| _ [ SUBJ | {there to} ]
+|| _ [ SUBJ | {there } [ IS | {be} | {will} | {to} ] ] ! context needs checking for redundancy
 ] ;
 define PhrasePrefix
 
@@ -230,8 +230,9 @@ regex [
 [..] -> { now} "@R.tense.Imm@"
 | { later} "@R.tense.Del@"
 | "@D.tense.Imm@" "@D.tense.Del@"
-|| _ Px
-] ;
+|| _ Px ]
+.o. [ [..] -> { again and again} "@R.rept.Rept@" | "@D.rept.Rept@"
+|| _ Px ] ;
 define PhraseSuffix
 
 ! Indirect Object Conversion
@@ -374,9 +375,31 @@ regex [ "Cnj+" -> "@P.clause.Cnj@" , "Rel+" -> "@P.clause.Rel@" ]
 .o. [ "1SgIO+" -> "@P.recipient.1Sg@" , "2SgIO+" -> "@P.recipient.2Sg@" , "3SgIO+" -> "@P.recipient.3Sg@" ,  "1DuIO+" -> "@P.recipient.1Du@" , "2DuIO+" -> "@P.recipient.2Du@" , "3DuIO+" -> "@P.recipient.3Du@" , "1PlIO+" -> "@P.recipient.1Pl@" , "21PlIO+" -> "@P.recipient.21Pl@" , "2PlIO+" -> "@P.recipient.2Pl@" , "3PlIO+" -> "@P.recipient.3Pl@" , "4Sg/PlIO+" -> "@P.recipient.4Sg/Pl@" , "5Sg/PlIO+" -> "@P.recipient.5Sg/Pl@" , "XIO+" -> "@P.recipient.X@" , "XPlIO+" -> "@P.recipient.XPl@" ] ;
 define Tag2FlagConversion
 
-! Irregular verbs
-source inc/eng-irregular-verbs.regex
-define Irregulars
+! Resolving irregularities of the spelling of English (irregular and regular) verb wordforms
+
+read lexc inc/eng-phrase-inflection/cw-eng-verbs-prs3Sg2inf.lexc
+define EngInf
+
+regex [ EngInf -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
+define EngInf2Inf
+
+read lexc inc/eng-phrase-inflection/cw-eng-verbs-prs3Sg2prt.lexc
+define EngPrt
+
+regex [ EngPrt -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
+define EngPrt2Prt
+
+read lexc inc/eng-phrase-inflection/cw-eng-verbs-prs3Sg2prog.lexc
+define EngProg
+
+regex [ EngProg -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
+define EngProg2Prog
+
+source inc/eng-phrase-inflection/phonology-eng.xfscript
+define EngPhon
+
+regex [ ">" -> 0 || Alphabet+ _ Alphabet* ] ;
+define RemoveSuffixBoundary
 
 ! Definition of input and conversion
 regex [ (Clause) TenseAspect Subject (DirectObject) (IndirectObject) (Progressive) (Repetitive) (Negation) Letters+ ] ;
@@ -388,17 +411,24 @@ regex [ Input
 .o. Tag2FlagConversion
 .o. VerbInflection
 .o. IrregularVerbs
-! .o. AuxiliaryPhrase
+.o. AuxiliaryPhrase
 .o. BeAuxiliaryPhrase
 .o. PhrasePrefix
 .o. PhraseSuffix
 .o. Relativization
-! .o. BeInflection
-! .o. IObjectConversion
-! .o. SubjectConversion
-! .o. ObjectConversion
-! .o. ReflexiveConversion
-! .o. PossessiveConversion
+.o. BeInflection
+.o. IObjectConversion
+.o. SubjectConversion
+.o. ObjectConversion
+.o. ReflexiveConversion
+.o. PossessiveConversion
+! Resolving orthographically correct forms for listed English inflected wordforms 
+.o. EngInf2Inf
+.o. EngPrt2Prt
+.o. EngProg2Prog
+! Making best guess of correct wordform for non-listed wordforms
+.o. EngPhon
+.o. RemoveSuffixBoundary
 ] ;
 
 twosided flag-diacritics
