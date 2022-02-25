@@ -22,6 +22,8 @@ define Letters [ Alphabet | Punctuation | Symbols | Number | " " ] ;
 
 define Clause [ "Cnj+" | "Rel+" ] ;
 
+define Modality [ "Obl+" | "Nec+" | "Abl+" | "Perm+" | "Des+" | "Hab+" | "Init+" | "Fin+" ] ;
+
 define TenseAspect [ "Prs+" | "Prt+" | "Def+" | "Fut+" | "Int+" | "Cond+" | "Inf+" | "Imm+" | "Del+" ] ;
 
 define Progressive [ "Prog+" ] ;
@@ -80,7 +82,7 @@ regex [ s -> {>s} "@D.neg@" "@D.prog.Prog@" [ "@R.tense.Prs@" | "@R.tense.Cond@"
 , s -> {>} [ [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] DsubjectPrs3Sg "@D.neg@" "@D.prog.Prog@" ]
 | [ [ "@R.tense.Prs@" | "@R.tense.Cond@" | "@R.tense.Prt@" ] "@R.neg.Neg@" "@D.prog.Prog@" ]
 | [ [ "@R.tense.Fut@" | "@R.tense.Def@" | "@R.tense.Int@" | "@R.tense.Inf@" | "@R.tense.Imm@" | "@R.tense.Del@" ] "@D.prog.Prog@" ] ]
-|| [ SUBJ | SUBJinanim ] Wx+ Alphabet+ _ [ Wx | Bx ] ] ;
+|| [ SUBJ | SUBJinanim | {there} ] Wx+ Alphabet+ _ [ Wx | Bx ] ] ;
 ! ] ;
 define VerbInflection
 
@@ -111,6 +113,28 @@ regex [ [..] -> { who} "@R.clause.Rel@"
 || SUBJinanim _
 ] ;
 define Relativization
+
+regex [ {s} -> {>ing} [ "@R.aux.Hab@" | "@R.aux.Init@" | "@R.aux.Fin@" ]
+| {>} [ "@R.aux.Obl@" | "@R.aux.Nec@" | "@R.aux.Abl@" | "@R.aux.Perm@" | "@R.aux.Des@" ]
+| {s} "@D.aux@"
+|| [ SUBJ | SUBJinanim ] { } Alphabet+ _ [ Wx | Bx ] ]
+.o. [ ISZ -> {being} [ "@R.aux.Hab@" | "@R.aux.Init@" | "@R.aux.Fin@" ]
+| {be} [ "@R.aux.Obl@" | "@R.aux.Nec@" | "@R.aux.Abl@" | "@R.aux.Perm@" | "@R.aux.Des@" ]
+| ISZ "@D.aux@"
+|| [ SUBJ | SUBJinanim | {there} ] { } _ ] ;
+define VerbInflection2
+
+regex [ [..] -> {keeps on} "@R.aux.Hab@" { }
+| {has to} "@R.aux.Obl@" { }
+| {needs to} "@R.aux.Nec@" { }
+| {wants to} "@R.aux.Des@" { }
+| ISZ { able to} "@R.aux.Abl@" { }
+| ISZ { allowed to} "@R.aux.Perm@" { }
+| {starts} "@R.aux.Init@" { }
+| {finishes} "@R.aux.Fin@" { }
+| "@D.aux@"
+|| [ SUBJ | SUBJinanim | {there} ] { } _ ] ;
+define ModalAuxiliary
 
 regex [
 ! Present tense / (Future) conditional
@@ -162,7 +186,7 @@ regex [
 | { be} "@R.tense.Del@" "@R.neg.Neg@" "@R.prog.Prog@" Dsubject2SgPl
 | { be} "@R.tense.Del@" "@D.neg@" "@R.prog.Prog@"
 | { do not be} "@R.tense.Del@" "@R.neg.Neg@" "@R.prog.Prog@" Rsubject2SgPl ]
-|| Wx [ SUBJ | SUBJinanim ] _ " " \ISZ
+|| Wx [ SUBJ | SUBJinanim | {there} ] _ { } [ "@D.aux@" \ISZ | \"@D.aux@" \ISZ ]
 ] ;
 define AuxiliaryPhrase
 
@@ -216,7 +240,7 @@ ISZ -> [ IS [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.neg@" "@D.prog@"
 | {be being} "@R.tense.Del@" "@R.prog.Prog@" Dsubject2SgPl
 | {be being} "@R.tense.Del@" "@D.neg.Neg@" "@R.prog.Prog@" Rsubject2SgPl
 | {do not be being} "@R.tense.Del@" "@R.neg.Neg@" "@R.prog.Prog@" Rsubject2SgPl ]
-|| [ {there } | SUBJinanim { } | SUBJ { } ] _
+|| [ {there} | SUBJinanim | SUBJ ] { } ( "@D.aux@" ) _
 ] ;
 define BeAuxiliaryPhrase
 
@@ -227,7 +251,7 @@ regex [
 | [ "@R.tense.Imm@" | "@R.tense.Del@" ] Dsubject2SgPl "@D.neg@" {let }
 | [ "@R.tense.Imm@" | "@R.tense.Del@" ] Dsubject2SgPl "@R.neg@" {do not let }
 | "@D.clause.Cnj@" "@D.tense.Cond@" "@D.tense.Inf@" [ [ "@D.tense.Imm@" "@D.tense.Del@" ] | [ [ "@R.tense.Imm@" | "@R.tense.Del@" ] Rsubject2SgPl ] ]
-|| _ [ SUBJ | SUBJinanim | {there } [ IS | {be} | {will} | {to} ] ] ! context needs checking for redundancy
+|| _ [ SUBJ | SUBJinanim | {there} Wx* { } [ IS | "@D.aux@" {be} | \"@D.aux@" \{be} | {will} | {to} ] ] ! context needs checking for redundancy
 ] ;
 define PhrasePrefix
 
@@ -372,7 +396,7 @@ regex [ POSS -> {my} "@R.subject.1Sg@"
 define PossessiveConversion
 
 ! Conversion of tags into flag-diacritics
-regex [ "Cnj+" -> "@P.clause.Cnj@" , "Rel+" -> "@P.clause.Rel@" ]
+regex [ "Cnj+" -> "@P.clause.Cnj@" , "Rel+" -> "@P.clause.Rel@" , "Obl+" -> "@P.aux.Obl@" , "Nec+" -> "@P.aux.Nec@" , "Abl+" -> "@P.aux.Abl@" , "Perm+" -> "@P.aux.Perm@" , "Des+" -> "@P.aux.Des@" , "Hab+" -> "@P.aux.Hab@" , "Init+" -> "@P.aux.Init@" , "Fin+" -> "@P.aux.Fin@" ]
 .o. [ "Prs+" -> "@P.tense.Prs@" , "Prt+" -> "@P.tense.Prt@" , "Def+" -> "@P.tense.Def@" , "Fut+" -> "@P.tense.Fut@" , "Int+" -> "@P.tense.Int@" , "Cond+" -> "@P.tense.Cond@" , "Imm+" -> "@P.tense.Imm@" , "Del+" -> "@P.tense.Del@" , "Inf+" -> "@P.tense.Inf@" ]
 .o. [ "Prog+" -> "@P.prog.Prog@" ]
 .o. [ "Rept+" -> "@P.rept.Rept@" ]
@@ -413,12 +437,14 @@ regex [ ">" -> 0 || Alphabet+ _ Alphabet* ] ;
 define RemoveSuffixBoundary
 
 ! Definition of input and conversion
-regex [ (Clause) TenseAspect Subject (DirectObject) (IndirectObject) (Progressive) (Repetitive) (Negation) Letters+ ] ;
+regex [ (Clause | Modality) TenseAspect Subject (DirectObject) (IndirectObject) (Progressive) (Repetitive) (Negation) Letters+ ] ;
 define Input
 
 regex [ Input
 .o. itNonSubjectMarking
 .o. Standardization
+.o. VerbInflection2
+.o. ModalAuxiliary
 .o. Tag2FlagConversion
 .o. VerbInflection
 .o. IrregularVerbs
