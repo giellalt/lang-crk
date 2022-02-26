@@ -186,7 +186,7 @@ regex [
 | { be} "@R.tense.Del@" "@R.neg.Neg@" "@R.prog.Prog@" Dsubject2SgPl
 | { be} "@R.tense.Del@" "@D.neg@" "@R.prog.Prog@"
 | { do not be} "@R.tense.Del@" "@R.neg.Neg@" "@R.prog.Prog@" Rsubject2SgPl ]
-|| Wx [ SUBJ | SUBJinanim | {there} ] _ { } [ "@D.aux@" \ISZ | \"@D.aux@" \ISZ ]
+|| Wx [ SUBJ | SUBJinanim | {there} ] _ { } \ISZ \ISZ
 ] ;
 define AuxiliaryPhrase
 
@@ -337,18 +337,18 @@ define SubjectConversion
 regex [ DOBJ -> {me} "@R.object.1Sg@"
 , DOBJ -> {you} "@R.object.2Sg@"
 , DOBJ -> {him/her} "@R.object.3Sg@"
-, DOBJ  -> {us} "@R.object.1Pl@"
-, DOBJ  -> {us both} "@R.object.1Du@"
-, DOBJ  -> {each and every one of us} "@R.object.1Distr@"
+, DOBJ -> {us} "@R.object.1Pl@"
+, DOBJ -> {us both} "@R.object.1Du@"
+, DOBJ -> {each and every one of us} "@R.object.1Distr@"
 , DOBJ -> {you and us} "@R.object.21Pl@"
 , DOBJ -> {you both} "@R.object.2Du@"
 , DOBJ -> {each and every one of you} "@R.object.2Distr@"
 , DOBJ -> {you all} "@R.object.2Pl@"
-, DOBJ  -> {them both} "@R.object.3Du@"
-, DOBJ  -> {each and every one of them} "@R.object.3Distr@"
-, DOBJ  -> {them} "@R.object.3Pl@"
-, DOBJ  -> {him/her/them} "@R.object.4Sg/Pl@"
-, DOBJ  -> {him/her/them over there} "@R.object.5Sg/Pl@"
+, DOBJ -> {them both} "@R.object.3Du@"
+, DOBJ -> {each and every one of them} "@R.object.3Distr@"
+, DOBJ -> {them} "@R.object.3Pl@"
+, DOBJ -> {him/her/them} "@R.object.4Sg/Pl@"
+, DOBJ -> {him/her/them over there} "@R.object.5Sg/Pl@"
 , DOBJ -> {someone} "@R.object.X@"
 , DOBJ -> {people} "@R.object.XPl@"
 , DOBJ -> {someone} "@D.object@" ! Allows for generation of VTA phrase even if object feature is not specified
