@@ -22,9 +22,11 @@ define Letters [ Alphabet | Punctuation | Symbols | Number | " " ] ;
 
 define Clause [ "Cnj+" | "Rel+" ] ;
 
-define Modality [ "Obl+" | "Nec+" | "Abl+" | "Perm+" | "Des+" | "Hab+" | "Init+" | "Fin+" ] ;
+define Modality [ "Obl2+" | "Nec2+" | "Abl2+" | "Perm2+" | "Int2+" | "Hab+" | "Init+" | "Fin+" ] ;
 
 define TenseAspect [ "Prs+" | "Prt+" | "Def+" | "Fut+" | "Int+" | "Cond+" | "Inf+" | "Imm+" | "Del+" ] ;
+
+define Auxiliary [ "Obl+" | "Nec+" | "Abl+" | "Perm+" | "Int+" | "Poss+" | "Rec+" | "Pred+" ] ;
 
 define Progressive [ "Prog+" ] ;
 
@@ -81,7 +83,7 @@ regex [ s -> {>s} "@D.neg@" "@D.prog.Prog@" [ "@R.tense.Prs@" | "@R.tense.Cond@"
 , s -> {>ing} "@R.prog.Prog@"
 , s -> {>} [ [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] DsubjectPrs3Sg "@D.neg@" "@D.prog.Prog@" ]
 | [ [ "@R.tense.Prs@" | "@R.tense.Cond@" | "@R.tense.Prt@" ] "@R.neg.Neg@" "@D.prog.Prog@" ]
-| [ [ "@R.tense.Fut@" | "@R.tense.Def@" | "@R.tense.Int@" | "@R.tense.Inf@" | "@R.tense.Imm@" | "@R.tense.Del@" ] "@D.prog.Prog@" ] ]
+| [ [ "@R.tense.Fut@" | "@R.tense.Def@" | "@R.tense.Int@" | "@R.tense.Inf@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Obl@" | "@R.tense.Nec@" | "@R.tense.Abl@" | "@R.tense.Perm@" | "@R.tense.Poss@" | "@R.tense.Rec@" | "@R.tense.Pred@" ] "@D.prog.Prog@" ] ]
 || [ SUBJ | SUBJinanim | {there} ] Wx+ Alphabet+ _ [ Wx | Bx ] ] ;
 ! ] ;
 define VerbInflection
@@ -115,11 +117,11 @@ regex [ [..] -> { who} "@R.clause.Rel@"
 define Relativization
 
 regex [ {s} -> {>ing} [ "@R.aux.Hab@" | "@R.aux.Init@" | "@R.aux.Fin@" ]
-| {>} [ "@R.aux.Obl@" | "@R.aux.Nec@" | "@R.aux.Abl@" | "@R.aux.Perm@" | "@R.aux.Des@" ]
+| {>} [ "@R.aux.Obl@" | "@R.aux.Nec@" | "@R.aux.Abl@" | "@R.aux.Perm@" | "@R.aux.Int@" ]
 | {s} "@D.aux@"
 || [ SUBJ | SUBJinanim ] { } Alphabet+ _ [ Wx | Bx ] ]
 .o. [ ISZ -> {being} [ "@R.aux.Hab@" | "@R.aux.Init@" | "@R.aux.Fin@" ]
-| {be} [ "@R.aux.Obl@" | "@R.aux.Nec@" | "@R.aux.Abl@" | "@R.aux.Perm@" | "@R.aux.Des@" ]
+| {be} [ "@R.aux.Obl@" | "@R.aux.Nec@" | "@R.aux.Abl@" | "@R.aux.Perm@" | "@R.aux.Int@" ]
 | ISZ "@D.aux@"
 || [ SUBJ | SUBJinanim | {there} ] { } _ ] ;
 define VerbInflection2
@@ -127,7 +129,7 @@ define VerbInflection2
 regex [ [..] -> {keeps on} "@R.aux.Hab@" { }
 | {has to} "@R.aux.Obl@" { }
 | {needs to} "@R.aux.Nec@" { }
-| {wants to} "@R.aux.Des@" { }
+| {wants to} "@R.aux.Int@" { }
 | ISZ { able to} "@R.aux.Abl@" { }
 | ISZ { allowed to} "@R.aux.Perm@" { }
 | {starts} "@R.aux.Init@" { }
@@ -158,7 +160,44 @@ regex [
 | { will not} "@R.tense.Def@" "@R.neg.Neg@" "@D.prog@"
 | { will be} "@R.tense.Def@" "@D.neg@" "@R.prog.Prog@"
 | { will not be} "@R.tense.Def@" "@R.neg.Neg@" "@R.prog.Prog@"
-! Future intentional
+! Obligation
+| { must} "@R.tense.Obl@" "@D.neg@" "@D.prog@"
+| { must not} "@R.tense.Obl@" "@R.neg.Neg@" "@D.prog@"
+| { must be} "@R.tense.Obl@" "@D.neg@" "@R.prog.Prog@"
+| { must not be} "@R.tense.Obl@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Necessity
+| { needs to} "@R.tense.Nec@" "@D.neg@" "@D.prog@" RsubjectPrs3Sg
+| { need to} "@R.tense.Nec@" "@D.neg@" "@D.prog@" DsubjectPrs3Sg
+| { need not} "@R.tense.Nec@" "@R.neg.Neg@" "@D.prog@"
+| { needs to be} "@R.tense.Nec@" "@D.neg@" "@R.prog.Prog@" RsubjectPrs3Sg
+| { need to be} "@R.tense.Nec@" "@D.neg@" "@R.prog.Prog@" DsubjectPrs3Sg
+| { need not be} "@R.tense.Nec@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Ability
+| { can} "@R.tense.Abl@" "@D.neg@" "@D.prog@"
+| { cannot} "@R.tense.Abl@" "@R.neg.Neg@" "@D.prog@"
+| { can be} "@R.tense.Abl@" "@D.neg@" "@R.prog.Prog@"
+| { cannot be} "@R.tense.Abl@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Permission
+| { may} "@R.tense.Perm@" "@D.neg@" "@D.prog@"
+| { may not} "@R.tense.Perm@" "@R.neg.Neg@" "@D.prog@"
+| { may be} "@R.tense.Perm@" "@D.neg@" "@R.prog.Prog@"
+| { may not be} "@R.tense.Perm@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Possibility
+| { could} "@R.tense.Poss@" "@D.neg@" "@D.prog@"
+| { could not} "@R.tense.Poss@" "@R.neg.Neg@" "@D.prog@"
+| { could be} "@R.tense.Poss@" "@D.neg@" "@R.prog.Prog@"
+| { could not be} "@R.tense.Poss@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Recommendation
+| { should} "@R.tense.Rec@" "@D.neg@" "@D.prog@"
+| { should not} "@R.tense.Rec@" "@R.neg.Neg@" "@D.prog@"
+| { should be} "@R.tense.Rec@" "@D.neg@" "@R.prog.Prog@"
+| { should not be} "@R.tense.Rec@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Prediction
+| { would} "@R.tense.Pred@" "@D.neg@" "@D.prog@"
+| { would not} "@R.tense.Pred@" "@R.neg.Neg@" "@D.prog@"
+| { would be} "@R.tense.Pred@" "@D.neg@" "@R.prog.Prog@"
+| { would not be} "@R.tense.Pred@" "@R.neg.Neg@" "@R.prog.Prog@"
+! (Future) intentional
 | { wants to} "@R.tense.Int@" "@D.neg@" "@D.prog@" RsubjectPrs3Sg
 | { want to} "@R.tense.Int@" "@D.neg@" "@D.prog@" DsubjectPrs3Sg
 | { does not want to} "@R.tense.Int@" "@R.neg.Neg@" "@D.prog@" RsubjectPrs3Sg
@@ -212,6 +251,43 @@ ISZ -> [ IS [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.neg@" "@D.prog@"
 | {will not be} "@R.tense.Def@" "@R.neg.Neg@" "@D.prog@"
 | {will be being} "@R.tense.Def@" "@D.neg@" "@R.prog.Prog@"
 | {will not be being} "@R.tense.Def@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Obligation
+| {must be} "@R.tense.Obl@" "@D.neg@" "@D.prog@"
+| {must not be} "@R.tense.Obl@" "@R.neg.Neg@" "@D.prog@"
+| {must be being} "@R.tense.Obl@" "@D.neg@" "@R.prog.Prog@"
+| {must not be being} "@R.tense.Obl@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Necessity
+| {needs to be} "@R.tense.Nec@" "@D.neg@" "@D.prog@" RsubjectPrs3Sg
+| {need to be} "@R.tense.Nec@" "@D.neg@" "@D.prog@" DsubjectPrs3Sg
+| {need not be} "@R.tense.Nec@" "@R.neg.Neg@" "@D.prog@"
+| {needs to be being} "@R.tense.Nec@" "@D.neg@" "@R.prog.Prog@" RsubjectPrs3Sg
+| {need to be being} "@R.tense.Nec@" "@D.neg@" "@R.prog.Prog@" DsubjectPrs3Sg
+| {need not be being} "@R.tense.Nec@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Ability
+| {can be} "@R.tense.Abl@" "@D.neg@" "@D.prog@"
+| {cannot be} "@R.tense.Abl@" "@R.neg.Neg@" "@D.prog@"
+| {can be being} "@R.tense.Abl@" "@D.neg@" "@R.prog.Prog@"
+| {cannot be being} "@R.tense.Abl@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Permission
+| {may be} "@R.tense.Perm@" "@D.neg@" "@D.prog@"
+| {may not be} "@R.tense.Perm@" "@R.neg.Neg@" "@D.prog@"
+| {may be being} "@R.tense.Perm@" "@D.neg@" "@R.prog.Prog@"
+| {may not be being} "@R.tense.Perm@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Possibility
+| {could be} "@R.tense.Poss@" "@D.neg@" "@D.prog@"
+| {could not be} "@R.tense.Poss@" "@R.neg.Neg@" "@D.prog@"
+| {could be being} "@R.tense.Poss@" "@D.neg@" "@R.prog.Prog@"
+| {could not be being} "@R.tense.Poss@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Recommendation
+| {should be} "@R.tense.Rec@" "@D.neg@" "@D.prog@"
+| {should not be} "@R.tense.Rec@" "@R.neg.Neg@" "@D.prog@"
+| {should be being} "@R.tense.Rec@" "@D.neg@" "@R.prog.Prog@"
+| {should not be being} "@R.tense.Rec@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Prediction
+| {would be} "@R.tense.Pred@" "@D.neg@" "@D.prog@"
+| {would not be} "@R.tense.Pred@" "@R.neg.Neg@" "@D.prog@"
+| {would be being} "@R.tense.Pred@" "@D.neg@" "@R.prog.Prog@"
+| {would not be being} "@R.tense.Pred@" "@R.neg.Neg@" "@R.prog.Prog@"
 ! Future intentional
 | {wants to be} "@R.tense.Int@" "@D.neg@" "@D.prog@" RsubjectPrs3Sg
 | {want to be} "@R.tense.Int@" "@D.neg@" "@D.prog@" DsubjectPrs3Sg
@@ -396,8 +472,8 @@ regex [ POSS -> {my} "@R.subject.1Sg@"
 define PossessiveConversion
 
 ! Conversion of tags into flag-diacritics
-regex [ "Cnj+" -> "@P.clause.Cnj@" , "Rel+" -> "@P.clause.Rel@" , "Obl+" -> "@P.aux.Obl@" , "Nec+" -> "@P.aux.Nec@" , "Abl+" -> "@P.aux.Abl@" , "Perm+" -> "@P.aux.Perm@" , "Des+" -> "@P.aux.Des@" , "Hab+" -> "@P.aux.Hab@" , "Init+" -> "@P.aux.Init@" , "Fin+" -> "@P.aux.Fin@" ]
-.o. [ "Prs+" -> "@P.tense.Prs@" , "Prt+" -> "@P.tense.Prt@" , "Def+" -> "@P.tense.Def@" , "Fut+" -> "@P.tense.Fut@" , "Int+" -> "@P.tense.Int@" , "Cond+" -> "@P.tense.Cond@" , "Imm+" -> "@P.tense.Imm@" , "Del+" -> "@P.tense.Del@" , "Inf+" -> "@P.tense.Inf@" ]
+regex [ "Cnj+" -> "@P.clause.Cnj@" , "Rel+" -> "@P.clause.Rel@" , "Obl2+" -> "@P.aux.Obl@" , "Nec2+" -> "@P.aux.Nec@" , "Abl2+" -> "@P.aux.Abl@" , "Perm2+" -> "@P.aux.Perm@" , "Int2+" -> "@P.aux.Int@" , "Hab+" -> "@P.aux.Hab@" , "Init+" -> "@P.aux.Init@" , "Fin+" -> "@P.aux.Fin@" ]
+.o. [ "Prs+" -> "@P.tense.Prs@" , "Prt+" -> "@P.tense.Prt@" , "Def+" -> "@P.tense.Def@" , "Fut+" -> "@P.tense.Fut@" , "Int+" -> "@P.tense.Int@" , "Cond+" -> "@P.tense.Cond@" , "Imm+" -> "@P.tense.Imm@" , "Del+" -> "@P.tense.Del@" , "Inf+" -> "@P.tense.Inf@" , "Obl+" -> "@P.tense.Obl@" , "Nec+" -> "@P.tense.Nec@" , "Abl+" -> "@P.tense.Abl@" , "Perm+" -> "@P.tense.Perm@" , "Poss+" -> "@P.tense.Poss@" , "Rec+" -> "@P.tense.Rec@" , "Pred+" -> "@P.tense.Pred@" ]
 .o. [ "Prog+" -> "@P.prog.Prog@" ]
 .o. [ "Rept+" -> "@P.rept.Rept@" ]
 .o. [ "Neg+" -> "@P.neg.Neg@" ]
@@ -437,7 +513,7 @@ regex [ ">" -> 0 || Alphabet+ _ Alphabet* ] ;
 define RemoveSuffixBoundary
 
 ! Definition of input and conversion
-regex [ (Clause | Modality) TenseAspect Subject (DirectObject) (IndirectObject) (Progressive) (Repetitive) (Negation) Letters+ ] ;
+regex [ (Clause | Modality) [ TenseAspect | Auxiliary ] Subject (DirectObject) (IndirectObject) (Progressive) (Repetitive) (Negation) Letters+ ] ;
 define Input
 
 regex [ Input
