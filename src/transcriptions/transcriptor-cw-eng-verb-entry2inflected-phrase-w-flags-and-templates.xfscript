@@ -71,7 +71,7 @@ regex [ {is} -> ISZ || [ Wx | Bx ] [ {s/he} | {he} | {she} | {it} ] { } _ [ Wx |
 , [ {him/herself} | {himself} | {herself} | {themselves} | {themself} | {oneself} ] -> RFLX
 , [ {s.o.'s} | {his} ] -> POSS
 , [ {s.o.} | {him} | {them} ] -> DOBJ
-, {s.t.} -> DOBJinanim
+, [ {s.t.} | IT ] -> DOBJinanim
 , {to s.b.} -> {to } IOBJ
 , {for s.b.} -> {for } IOBJ
 , {there is} -> {there } ISZ
@@ -353,7 +353,8 @@ regex [ IOBJ -> {me} "@R.recipient.1Sg@"
 , IOBJ -> {them} "@R.recipient.3Pl@"
 , IOBJ -> {him/her/them} "@R.recipient.4Sg/Pl@"
 , IOBJ -> {him/her/them over there} "@R.recipient.5Sg/Pl@"
-, IOBJ -> {someone} "@R.recipient.X@"
+, IOBJ -> {someone} "@R.recipient.X@" "@D.neg@"
+, IOBJ -> {anyone} "@R.recipient.X@" "@R.neg.Neg@"
 , IOBJ -> {some people} "@R.recipient.XPl@"
 , IOBJ -> {someone} "@D.recipient@"
 || Wx [ {to } | {for } ] _ ] ;
@@ -425,10 +426,15 @@ regex [ DOBJ -> {me} "@R.object.1Sg@"
 , DOBJ -> {them} "@R.object.3Pl@"
 , DOBJ -> {him/her/them} "@R.object.4Sg/Pl@"
 , DOBJ -> {him/her/them over there} "@R.object.5Sg/Pl@"
-, DOBJ -> {someone} "@R.object.X@"
+, DOBJ -> {someone} "@R.object.X@" "@D.Neg@"
+, DOBJ -> {anyone} "@R.object.X@" "@R.neg.Neg@"
 , DOBJ -> {people} "@R.object.XPl@"
-, DOBJ -> {someone} "@D.object@" ! Allows for generation of VTA phrase even if object feature is not specified
-, DOBJinanim -> {it} "@D.object@"
+, DOBJ -> {someone} "@D.object@" "@D.neg@" ! Allows for generation of VTA phrase even if object feature is not specified
+, DOBJ -> {anyone} "@D.object@" "@R.neg.Neg@" ! Allows for generation of VTA phrase even if object feature is not specified
+, DOBJinanim -> {it} "@R.object.0Sg@"
+, DOBJinanim -> {them} "@R.object.0Pl@"
+, DOBJinanim -> {something} "@D.object@" "@D.neg@"
+, DOBJinanim -> {anything} "@D.object@" "@R.neg.Neg@"
 || Wx _ Wx ]
 ,, [ [..] -> "@D.object@" || _ .#. ] ;
 define ObjectConversion
@@ -466,7 +472,8 @@ regex [ POSS -> {my} "@R.subject.1Sg@"
 , POSS -> {their} [ "@R.subject.3Pl@" | "@R.subject.0Pl@" ]
 , POSS -> {his/her/their} "@R.subject.4Sg/Pl@"
 , POSS -> {his/her/their} "@R.subject.5Sg/Pl@"
-, POSS -> {someone's} "@R.subject.X@"
+, POSS -> {someone's} "@R.subject.X@" "@D.neg@"
+, POSS -> {anyone's} "@R.subject.X@" "@R.neg.Neg@"
 , POSS -> {their} "@R.subject.XPl@"
 || Wx _ Wx ] ;
 define PossessiveConversion
