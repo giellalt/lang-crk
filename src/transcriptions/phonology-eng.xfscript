@@ -1,0 +1,44 @@
+! Basic rules for English ortho-morpho-phonology
+! To be composed with LEXC-based morphology
+! with: 'english.fscript'
+
+regex [ a | e | i | o | u ] ;
+define Vowel
+
+regex [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | t | v | w | x | z ] ;
+define Consonant
+
+regex [..] -> e || [ s | z | x | c h | s h ] _ %> s ;
+define EInsertion
+
+regex e -> 0 || _ %> [ i n g | e d ] ;
+define EDeletion
+
+regex b -> b b , d -> d d , g -> g g , l -> l l , m -> m m ,  n -> n n , p -> p p , r -> r r , t -> t t , v -> v v || Consonant Vowel _ %' %> Vowel ; ! Doubles consonants before -ed and -ing only after stressed syllable
+! regex b -> b b , d -> d d , g -> g g , l -> l l , m -> m m ,  n -> n n , p -> p p , r -> r r , t -> t t , v -> v v || Consonant Vowel _ %> Vowel ; ! Doubles consonants before -ed and -ing in all circumstances
+define ConsonantDoubling
+
+regex [..] -> k || Consonant Vowel c _ %> Vowel ;
+define KInsertion
+
+regex y -> i e || Consonant _ %> s ,, y -> i || _ %> [ e d | e r | e s t ] ;
+define YReplacement
+
+regex %' -> 0 ||  _ \s \[ Vowel | Consonant ] ;
+define rmStress
+
+regex %> -> 0 ;
+define rmBoundary
+
+regex [
+EInsertion
+.o. EDeletion
+.o. ConsonantDoubling
+.o. KInsertion
+.o. YReplacement
+.o. rmStress
+! .o. rmBoundary
+] ;
+
+!!! End of rules
+
