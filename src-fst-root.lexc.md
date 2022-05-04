@@ -53,7 +53,7 @@ Particles
 * +Interr      Interrogative (who/whose/what/what kind)
 * +Foc	     Focus particle
 
-+Ord +Ord  ordinals
+ordinals
 
 Verbal MSP
 * +Prs  
