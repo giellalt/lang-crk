@@ -367,6 +367,7 @@ datarootdir = @datarootdir@
 docdir = @docdir@
 dvidir = @dvidir@
 exec_prefix = @exec_prefix@
+gt_SHARED_common = @gt_SHARED_common@
 host = @host@
 host_alias = @host_alias@
 host_cpu = @host_cpu@
