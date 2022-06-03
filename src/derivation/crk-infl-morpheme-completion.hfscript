@@ -61,9 +61,10 @@ echo 'Combining weighted known and unknown prefixes together.'
 ! regex [ ObservedCircumfixPrefixWeights | UnobservedPrefixWeights ] ;
 regex [ ObservedPrefixWeights | UnobservedPrefixWeights ] ;
 
-down ekw
-down êkw
+! down ekw
+! down êkw
 
+save stack PrefixWeighting.hfst
 define PrefixWeighting
 
 !! Morpheme Completion !!
@@ -130,6 +131,7 @@ set flag-is-epsilon ON
 
 ! D-flag added to rule out boundaries without a hyphen
 regex [ InsertMissingChars .o. SpellRelax .o. [ MorphemeCompletion "@D.joiner.NULL@" ] ] ;
+save stack SpellRelaxedMorphemeCompletion.hfst
 define SpellRelaxedMorphemeCompletion 
 
 regex [ SpellRelaxedMorphemeCompletion .o. PrefixWeighting ] ;
