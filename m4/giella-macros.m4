@@ -167,7 +167,7 @@ AS_IF([test "x$with_giella_shared" != "xfalse" -a \
             GIELLA_SHARED="$(pkg-config --variable=dir giella-common)"
         ],
         [
-     AC_MSG_ERROR([Could not find giella-common data dir to set GIELLA_SHARED])
+     AC_MSG_WARN([Could not find giella-common data dir to set GIELLA_SHARED])
         ])
     ])
 ])
@@ -217,7 +217,7 @@ AS_IF([test "x$_giella_shared_version_found" = xno ], [
     _giella_shared_version=$( pkg-config --modversion giella-common )
 ], [test "x$_giella_shared_version_found" = xyes ], [
     true
-], [AC_MSG_ERROR([Could not identify version of giella-common shared data])])
+], [AC_MSG_WARN([Could not identify version of giella-common shared data])])
 
 AC_MSG_RESULT([$_giella_shared_version])
 
@@ -226,7 +226,7 @@ AC_MSG_CHECKING([whether the version of Giella Shared is at least $_giella_share
 AX_COMPARE_VERSION([$_giella_shared_version], [ge], [$_giella_shared_min_version],
                    [giella_shared_version_ok=yes], [giella_shared_version_ok=no])
 AS_IF([test "x${giella_shared_version_ok}" != xno], [AC_MSG_RESULT([$giella_shared_version_ok])],
-[AC_MSG_ERROR([$giella_shared_too_old_message])])
+[AC_MSG_WARN([$giella_shared_too_old_message])])
 
 
 ################################
@@ -1033,27 +1033,39 @@ enableval=''
 ################################################################################
 # Define function to enable optional shared targets
 ################################################################################
-# Usage: gt_USE_SHARED([NAME], [SHARED REPONAME])
-# 
+# Usage: gt_USE_SHARED(NAME, SHARED REPONAME, [PKG-CONFIG NAME])
+# where, NAME is used as the variable name: gt_SHARED_$NAME, and
+#        REPONAME is used as directory name and pkg-config name
+#        PKG-CONFIG NAME is pkg-config name of dependency if different from $2
 AC_DEFUN([gt_USE_SHARED],
 [
 THIS_TOP_SRC_DIR=$BUILD_DIR_PATH/$MYSRCDIR
-
+AC_ARG_WITH([shared-$1],
+            [AS_HELP_STRING([--with-shared-$1=DIRECTORY],
+                            [search shared-$1 in DIRECTORY @<:@default=../$2@:>@])],
+            [with_shared_$1=$withval],
+            [with_shared_$1=false])
 AC_MSG_CHECKING([whether we can use shared $1])
 # Check in the parent directory:
-AS_IF([test -d "$THIS_TOP_SRC_DIR"/../$2 ], [
-    gt_SHARED_$1="$THIS_TOP_SRC_DIR"/../$2
+AS_IF([test x$with_shared_$1 != xfalse], [
+    gt_SHARED_$1=$with_shared_$1
     ], [
-        AS_IF([pkg-config --exists $2], [
-            gt_SHARED_$1="$(pkg-config --variable=dir $1)"
-        ],
-        [
-            gt_SHARED_$1=false
-            AC_MSG_WARN([Could not find $1 data dir to set $1])
+    AS_IF([test -d "$THIS_TOP_SRC_DIR"/../$2 ], [
+        gt_SHARED_$1="$THIS_TOP_SRC_DIR"/../$2
+        ], [
+            _gt_pkg_name=m4_default([$3], [$2])
+            AS_IF([pkg-config --exists $_gt_pkg_name], [
+                gt_SHARED_$1="$(pkg-config --variable=dir $_gt_pkg_name)"
+            ],
+            [
+                gt_SHARED_$1=false
+                AC_MSG_WARN([Could not find $2 data dir to set $1])
+                gt_SHARED_FAILS="$2"
+            ])
         ])
     ])
 AC_MSG_RESULT([$gt_SHARED_$1])
-AC_ARG_VAR([gt_SHARED_$1])
+AC_ARG_VAR([gt_SHARED_$1], [directory for shared $1 data])
 ]) # gt_USE_SHARED
 
 ################################################################################
@@ -1148,5 +1160,14 @@ sudo pip-3.5 install PyYAML
 
 On other systems, install python 3.5+ and the corresponding py-yaml using suitable tools for those systems.])])
 
+AS_IF([test "x$gt_SHARED_FAILS" != "x"],
+      [AC_MSG_WARN([This language depends on $gt_SHARED_FAILS which is missing, some parts of language models may be missing.
+
+to get missing components fetch and build https://github.com/giellalt/$gt_SHARED_FAILS:
+
+cd ..
+git clone git@github.com:giellalt/$gt_SHARED_FAILS
+cd $gt_SHARED_FAILS
+./autogen.sh && ./configure && make])])
 ]) # gt_PRINT_FOOTER
 # vim: set ft=config:
