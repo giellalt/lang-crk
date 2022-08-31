@@ -170,7 +170,7 @@ Prt2InfAnl -> || Bx _ Bx
 ] ;
 define Past
 
-regex  [ [ [ b | g | l | m | n | p | r | s | t | v ] i n g ] -> "@R.prog.Cop@" "@P.prog.Prog@" || Bx [ {be} | {is} ] [ " " | Flags ]+ [ \" " ]+ [ b | g | l | m | n | p | r | s | t | v ] _ Bx ]
+regex  [ [ i n g ] -> "@R.prog.Cop@" "@P.prog.Prog@" || Bx [ {be} | {is} ] [ " " | Flags ]+ [ \" " ]+ [ b | g | l | m | n | p | r | s | t | v ] _ Bx ]
 .o. [ {ing} -> "@R.prog.Cop@" "@P.prog.Prog@" || Bx [ {be} | {is} | {was} ] [ " " | Flags ]+ [ \" " ]+ _ Bx ]
 .o. [ [ {be} | {is} ] (->) "@D.exist.Exist@" "@P.prog.Cop@" || Bx Flags* _ Flags* Bx ]
 ;
@@ -443,9 +443,15 @@ NounPl2Sg
 .o. DistrVsPl
 .o. NounClass
 .o. NounAnalysis
-] ]
-.o. SingleSpacing
-] ;
+] ] ] ;
+! .o. SingleSpacing
+! ] ;
+
+define InterimAnl
+
+set flag-is-epsilon ON
+regex [ InterimAnl .o. SingleSpacing ] ;
+set flag-is-epsilon OFF
 
 twosided flag-diacritics
 

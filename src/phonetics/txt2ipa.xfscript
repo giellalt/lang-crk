@@ -1,0 +1,87 @@
+! ======================================== !
+!! !!!Hyphenator and text to ipa for Plains Cree
+! ======================================== !
+
+!! Defining sets
+
+echo << defining Cns and Vow... >>
+
+define Vow       [ a | á | e | i | o | u | æ | ø | å | ä | ö | 
+                   A | Á | E | I | O | U | Æ | Ø | Å | Ä | Ö | 
+é | ó | ú | í | à | è | ò | ù | ì | ë | ü | ï | â | ê | ô | û | î | ã | ý |
+É | Ó | Ú | Í | À | È | Ò | Ù | Ì | Ë | Ü | Ï | Â | Ê | Ô | Û | Î | Ã | Ý |
+ɑ | ɛ | ɔ ] ;
+
+define ShortVow [ a | e | i | o | A | E | I | O ] ;
+define LongVow  [ â | ê | î | ô | Â | Ê | Î | Ô ] ;
+
+define CreeVow [ ShortVow | LongVow ] ;
+
+
+define Cns [ b | c | č | d | đ | ð | f | g | h | j | k | l | m | n | ŋ | 
+             B | C | Č | D | Đ | Ð | F | G | H | J | K | L | M | N | Ŋ | 
+             ñ | p | q | r | s | š | t | ŧ | v | w | x | y | z | ž |   
+             Ñ | P | Q | R | S | Š | T | Ŧ | V | W | X | Y | Z | Ž |
+             ç | ɣ | ł | ŋ | ʁ | w | χ | ɕ | ʲ | ʷ ] ; 
+
+define Sgm [ Cns | Vow ] ;
+
+define Fricative [ H | h | S | s ] ; 
+
+define NonFricative [ Sgm - Fricative ] ;
+
+
+define Cnss [ Cns - Ss ] ;
+
+define ptk [p|t|k];
+
+
+
+!define Dummy [ %^K ] ;
+
+
+!! The rules
+
+echo << Rules>>
+
+
+
+define down [ A -> a, B -> b, C -> c, D -> d, E -> e, F -> f, G -> g, H -> h, 
+    I -> i, J -> j, K -> k, L -> l, M -> m, N -> n, O -> o, P -> p, Q -> q, 
+    R -> r, S -> s, T -> t, U -> u, V -> v, W -> w, X -> x, Y -> y, Z -> z, 
+    Â -> â, Ê -> ê, Î -> î, Ô -> ô ] ;
+
+
+
+
+echo <<Phonology...>> 
+
+define voicing  p -> b , t -> d , k -> g , c -> d ʒ || NonFricative _ Sgm ;
+
+define affricate [ c ->  t s  ] ;
+
+define glide [ y -> j ] ;
+
+!! Long vowels
+
+define aa     [ â -> a%ː ] ;
+define ee     [ ê -> e%ː ] ;
+define ii     [ î -> i%ː ] ;
+define oo     [ ô -> o%ː ] ;
+
+
+
+echo <<Combining...>>
+
+read regex [ 
+    down
+.o. voicing 
+.o. affricate
+.o. glide
+.o. aa
+.o. ee
+.o. ii
+.o. oo
+] ;
+
+

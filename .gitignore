@@ -13,7 +13,9 @@
 *.zhfst
 *.zip
 *.zpipe
+.~lock.*#
 .DS_Store
+.bundle
 /aclocal.m4
 /autom4te.cache
 /build-aux
@@ -21,6 +23,7 @@
 /config.status
 /configure
 /configure~
+/devtools/analysis_check_corpus.*.txt
 /devtools/check_analysis_regressions.sh
 /devtools/speller*.txt
 /devtools/test_grammar_checker.sh
@@ -35,9 +38,13 @@
 /docs/*-tools.md
 /docs/???.md
 /docs/Links.md
+/docs/empty.md
 /docs/generated-markdowns.*
 /docs/index.md
+/docs/src-*.md
+/docs/tools-*.md
 /docs/transcriptor-*.md
+/docs/vendor
 /giella-*.pc
 /misc/*
 /src/cg3/dependency.cg3
@@ -53,6 +60,7 @@
 /src/fst/generated_files/*.lexc
 /src/fst/lexicon*
 /src/fst/url.lexc
+/src/phonetics/tests/*.sh
 /test/run-morph-tester.sh
 /test/run-yaml-testcases.sh
 /test/src/morphology/analysed*.txt
@@ -84,6 +92,7 @@
 /tools/hyphenators/all_tags.txt
 /tools/mt/apertium/*.cg3
 /tools/mt/apertium/tagsets/apertium.relabel
+/tools/mt/apertium/tagsets/apertium.postproc.relabel
 /tools/mt/apertium/tagsets/apertiumtags.txt
 /tools/mt/apertium/tagsets/mt-tags.txt
 /tools/spellcheckers/filters/rename-POS_before_Der-tags.regex
@@ -103,8 +112,15 @@
 /tools/spellcheckers/filters/split-CmpNP-tags.regex
 /tools/spellcheckers/*spellercorpus.*.txt
 /tools/spellcheckers/weights/*.clean.txt
+/tools/tokenisers/tests/*.bash
+/tools/tts/dependency.cg3
+/tools/tts/disambiguator.cg3
+/tools/tts/functions.cg3
+/tools/tts/mwe-dis.cg3
 /tools/tts/pipespec.xml
+/tools/tts/test/run_tests.sh
 Makefile
 Makefile.in
 build
 bygg
+generated-tag-list.*

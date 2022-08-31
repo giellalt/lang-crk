@@ -10,13 +10,19 @@ echo 'Compiling LEXC code.' ;
 
 hfst-lexc crk.lexc -o crk-morph.hfst
 
-echo 'Compiling TWOLC code.' ;
+# Commented out old TWOLC-specific code
+# echo 'Compiling TWOLC code.' ;
+# hfst-twolc -i $GTLANG_crk/src/phonology/crk-phon.twolc -o crk-phon.hfst
+# echo 'Composing and intersecting LEXC and TWOL transducers.' ;
+# hfst-compose-intersect crk-morph.hfst crk-phon.hfst | hfst-minimize - -o crk-gen-norm.hfst
 
-hfst-twolc -i $GTLANG_crk/src/phonology/crk-phon.twolc -o crk-phon.hfst
+echo 'Compiling phonology in XFSCRIPT code.' ;
 
-echo 'Composing and intersecting LEXC and TWOL transducers.' ;
+hfst-xfst -e "source $GTLANG_crk/src/src/fst/phonology.xfscript" -E "save stack crk-phon.hfst"
 
-hfst-compose-intersect crk-morph.hfst crk-phon.hfst | hfst-minimize - -o crk-gen-norm.hfst
+echo 'Composing together the morphological (LEXC) and phonological (XFSCRIPT) transducers."
+
+hfst-compose -F -1 crk-morph.hfst -2 crk-phon.hfst -o crk-gen-norn.hfst
 
 echo 'Inverting normative generator transducer into a normative analyser transducer.' ;
 
