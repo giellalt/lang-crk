@@ -73,16 +73,16 @@ define Stop [ c | k | p | t ] ;
 
 ! Specific spell-relax rules
 
-define SpellRelax [ a (->) â ,, e (->) ê ,, i (->) î ,, o (->) ô
-,, â (->) a ,, î (->) i ,, ô (->) o
-,, 0 (->) "-"
-,, h (->) "-"
-,, [..] (->) i || Consonant _ Consonant
-,, [..] (->) h || Vowel _ Stop
-,, h (->) 0 || Vowel _ Stop
-,, o (->) i || _ w
-,, i (->) o || _ w
-] ;
+!define SpellRelax [ a (->) â ,, e (->) ê ,, i (->) î ,, o (->) ô
+!,, â (->) a ,, î (->) i ,, ô (->) o
+!,, 0 (->) "-"
+!,, h (->) "-"
+!,, [..] (->) i || Consonant _ Consonant
+!,, [..] (->) h || Vowel _ Stop
+!,, h (->) 0 || Vowel _ Stop
+!,, o (->) i || _ w
+!,, i (->) o || _ w
+!] ;
 
 ! Making use of pre-existing spellrelax rules
 
@@ -122,13 +122,14 @@ set flag-is-epsilon ON
 ! D-flag added to rule out boundaries without a hyphen
 regex [ InsertMissingChars .o. SpellRelax .o. [ MorphemeCompletion "@D.joiner.NULL@" ] ] ;
 save stack SpellRelaxedMorphemeCompletion.hfst ! ******** Speller acceptor ********
-define SpellRelaxedMorphemeCompletion 
 
-! regex [ SpellRelaxedMorphemeCompletion .o. PrefixWeighting ] ;
-
-! save stack crk-infl-morpheme-completion.hfst
-
-! hfst-fst2fst -w -i crk-infl-morpheme-completion.hfst -o  crk-infl-morpheme-completion.hfstol
-
-! Lookup command example (with topmost 10 analyses):
-!  hfst-optimized-lookup -q -u -n 10 crk-infl-morpheme-completion.hfstol
+!define SpellRelaxedMorphemeCompletion
+!
+!regex [ SpellRelaxedMorphemeCompletion .o. PrefixWeighting ] ;
+!
+!save stack crk-infl-morpheme-completion.hfst
+!
+!! hfst-fst2fst -w -i crk-infl-morpheme-completion.hfst -o  crk-infl-morpheme-completion.hfstol
+!
+!! Lookup command example (with topmost 10 analyses):
+!!  hfst-optimized-lookup -q -u -n 10 crk-infl-morpheme-completion.hfstol
