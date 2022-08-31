@@ -2,7 +2,6 @@
 
 # (FST) anl2cg.sh
 
-
 # 1. Convert horizontal representation of analyses
 # with 1:surface form 2-n: analyses with lemma
 # into a vertical CG format
@@ -12,7 +11,7 @@
 gawk '$0 ~ /^</ { print; }
 $0 ~ /^[^<]/ { printf "\"<%s>\"\n", $1;
   for(i=2; i<=NF; i++)
-     { n=split($i,f,"\+");
+     { n=split($i,f,"\\+");
        printf "\t";
 
 # Identify lemma -> whatever is after any sequence of initial change, preverbs, prenouns, and reduplication
