@@ -85,9 +85,8 @@ errmodel.predict.hfst: PrefixWeighting.hfst
 	hfst-push-weights --push=initial $< |\
 		hfst-fst2fst -f olw -o $@
 
-acceptor.predict.hfst: SpellRelaxedMorphemeCompletion.hfst
-	hfst-push-weights --push=initial $< |\
-		hfst-fst2fst -f olw -o $@
+acceptor.default.predict.hfst: SpellRelaxedMorphemeCompletion.hfst
+	hfst-fst2fst -f olw -i $< -o $@
 
 # vim: set ft=automake:
 
