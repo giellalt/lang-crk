@@ -72,4 +72,18 @@ KEYBOARD_LAYOUT_DIR=$(GIELLA_CORE)/../keyboards/$GLANG
 # Specify the ID of the layout as found at the top of each layout file
 KEYBOARD_LAYOUT_ID=crk
 
+PrefixWeighting.hfst: crk-infl-morpheme-completion.hfscript
+	hfst-xfst -F crk-infl-morpheme-completion.hfscript
+
+SpellRelaxedMorphemeCompletion.hfst: PrefixWeighting.hfst
+
+errmodel.predict.hfst: PrefixWeighting.hfst
+	hfst-push-weights --push=initial $< |\
+		hfst-fst2fst -f olw -o $@
+
+acceptor.predict.hfst: SpellRelaxedMorphemeCompletion.hfst
+	hfst-push-weights --push=initial $< |\
+		hfst-fst2fst -f olw -o $@
+
 # vim: set ft=automake:
+
