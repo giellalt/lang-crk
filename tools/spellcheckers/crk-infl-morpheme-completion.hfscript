@@ -3,35 +3,14 @@
 
 load ../../src/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
 define Words
+
 !! Prefix Weighting !!
 
 echo 'Compiling known prefixes with weights.'
-read lexc prefix_weighting.lexc
+read lexc ../../src/derivation/prefix_weighting.lexc
 define ObservedPrefixWeights
 
-!! echo 'Compiling known circumfixes with weights.'
-! read lexc circumfix_weighting.lexc
-! define ObservedCircumfixWeights
-
-!! echo 'Inserting a regular expression for the stem slot."
-! regex [ ObservedCircumfixWeights.l .o. [ "_" -> [ [ ? - "_" ]^>3 [ ?::0.2 ]* ] ] ].l ;
-! define ObservedCircumfixWeights2
-
-! regex [ ?::1 ]* ;
-! define Suffixes
-!
-! regex [ ObservedPrefixWeights Suffixes ] ;
-
-!! echo 'Compiling set of circumfixes not included in full prefixes."
-! regex [ ObservedCircumfixWeights2 - ObservedPrefixes.l ] ;
-! define OpenCircumfixes
-
-! echo 'Combining remainder circumfixes and prefixes."
-! regex [ OpenCircumfixes | ObservedPrefixes.l ] ;
-! define ObservedCircumfixPrefixWeights
-
 echo 'Compiling set of unobserved prefixes.'
-! regex [ ?+ - ObservedCircumfixPrefixWeights.l ] ;
 regex [ ?+ - ObservedPrefixWeights.l ] ;
 define UnobservedPrefixes
 
@@ -48,13 +27,12 @@ define UnobservedPrefixWeights
 set flag-is-epsilon OFF
 
 echo 'Combining weighted known and unknown prefixes together.'
-! regex [ ObservedCircumfixPrefixWeights | UnobservedPrefixWeights ] ;
 regex [ ObservedPrefixWeights | UnobservedPrefixWeights ] ;
 
 ! down ekw
 ! down êkw
 
-save stack PrefixWeighting.hfst ! ******** Speller error model ********
+save stack PrefixWeighting.hfst ! ******** Speller error model (weighting any strings) ********
 define PrefixWeighting
 
 !! Morpheme Completion !!
@@ -75,13 +53,13 @@ define Stop [ c | k | p | t ] ;
 
 !define SpellRelax [ a (->) â ,, e (->) ê ,, i (->) î ,, o (->) ô
 !,, â (->) a ,, î (->) i ,, ô (->) o
-!,, 0 (->) "-"
-!,, h (->) "-"
-!,, [..] (->) i || Consonant _ Consonant
-!,, [..] (->) h || Vowel _ Stop
-!,, h (->) 0 || Vowel _ Stop
-!,, o (->) i || _ w
-!,, i (->) o || _ w
+!,, 0 (->) "-"::0.5
+!,, h (->) "-"::1.0
+!,, [..] (->) i::0.5 || Consonant _ Consonant
+!,, [..] (->) h::0.5 || Vowel _ Stop
+!,, h (->) 0::1.0 || Vowel _ Stop
+!,, o (->) i::1.0 || _ w
+!,, i (->) o::1.0 || _ w
 !] ;
 
 ! Making use of pre-existing spellrelax rules
@@ -91,7 +69,8 @@ invert net
 define SpellRelax
 
 ! Inserting reduced/deleted /i/ or hyphens, and use of <h> as joiner instead of <->
-regex [ [..] (->) "-" ,, [..] (->) i ,, h (->) "-" ];
+! regex [ [..] (->) "-" ,, [..] (->) i ,, h (->) "-" ];
+regex [ [..] (->) "-"::0.5 ,, [..] (->) i::1.0 ,, h (->) "-"::2.0 ];
 define InsertMissingChars
 
 define MaxHyphens [ [ [ ? - "-" ]* "-" ]^<6 [ ? - "-" ]* ] ;
@@ -121,15 +100,18 @@ set flag-is-epsilon ON
 
 ! D-flag added to rule out boundaries without a hyphen
 regex [ InsertMissingChars .o. SpellRelax .o. [ MorphemeCompletion "@D.joiner.NULL@" ] ] ;
-save stack SpellRelaxedMorphemeCompletion.hfst ! ******** Speller acceptor ********
+save stack SpellRelaxedMorphemeCompletion.hfst ! ******** Speller acceptor (two-sided) ********
+save stack ErrorModel.hfst ! ***** Speller error model transductor (weighted wrt certain edits)
+define SpellRelaxedMorphemeCompletion
 
-!define SpellRelaxedMorphemeCompletion
-!
-!regex [ SpellRelaxedMorphemeCompletion .o. PrefixWeighting ] ;
-!
-!save stack crk-infl-morpheme-completion.hfst
-!
-!! hfst-fst2fst -w -i crk-infl-morpheme-completion.hfst -o  crk-infl-morpheme-completion.hfstol
+regex [ MorphemeCompletion.l .o. PrefixWeighting.l ].l ;
+save stack Acceptor.hfst ! *** Speller acceptor automaton (weighted wrt prefix frequencies) ***
+define Acceptor
+
+! regex [ SpellRelaxedMorphemeCompletion .o. PrefixWeighting ] ;
+
+!! hfst-fst2fst -f olw -i ErrorModel.hfst -o ErrorModel.hfstol
+!! hfst-fst2fst -f olw -i Acceptor.hfst -o Acceptor.hfstol
 !
 !! Lookup command example (with topmost 10 analyses):
-!!  hfst-optimized-lookup -q -u -n 10 crk-infl-morpheme-completion.hfstol
+!!  hfst-optimized-lookup -q -w -u -n 10 crk-infl-morpheme-completion.hfstol
