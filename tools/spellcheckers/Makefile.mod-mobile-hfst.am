@@ -72,6 +72,11 @@ KEYBOARD_LAYOUT_DIR=$(GIELLA_CORE)/../keyboards/$GLANG
 # Specify the ID of the layout as found at the top of each layout file
 KEYBOARD_LAYOUT_ID=crk
 
+# build one extra zhfst specific for our crk tests
+CRK_EXPERIMENT_MORPH_ZHFST=$(GTLANG2)-x-predict_morphs-mobile.zhfst
+mobilexperiment_DATA=$(CRK_EXPERIMENT_MORPH_ZHFST)
+mobilexperimentdir=$(datadir)/giella/mobilespellers/
+
 prefix_weighting.lexc: $(top_srcdir)/src/derivation/prefix_weighting.lexc
 	$(AM_V_CP)cp -f $< $@
 
@@ -81,12 +86,31 @@ PrefixWeighting.hfst: $(srcdir)/crk-infl-morpheme-completion.hfscript \
 
 SpellRelaxedMorphemeCompletion.hfst: PrefixWeighting.hfst
 
-errmodel.predict.hfst: PrefixWeighting.hfst
+errmodel.default.predict_morphs.hfst: PrefixWeighting.hfst
 	hfst-push-weights --push=initial $< |\
 		hfst-fst2fst -f olw -o $@
 
-acceptor.default.predict.hfst: SpellRelaxedMorphemeCompletion.hfst
+acceptor.default.predict_morphs.hfst: SpellRelaxedMorphemeCompletion.hfst
 	hfst-fst2fst -f olw -i $< -o $@
+
+index.predict_morphs.xml: index.predict.xml
+	cp -f $< $@
+
+# c/p from tools-spellcheckers-fstbased-mboile-hfst-dir:
+$(CRK_EXPERIMENT_MORPH_ZHFST): index.predict_morphs.xml \
+					 acceptor.default.predict_morphs.hfst \
+					 errmodel.default.predict_morphs.hfst
+	$(AM_V_at)rm -f $@
+	$(AM_V_at)$(MKDIR_P) build/$@
+	$(AM_V_at)rm -f build/$@/*
+	$(AM_V_at)cp index.predict_morphs.xml build/$@/index.xml
+	$(AM_V_at)cp acceptor.default.predict_morphs.hfst build/$@/acceptor.default.hfst
+	$(AM_V_at)cp errmodel.default.predict_morphs.hfst build/$@/errmodel.default.hfst
+	$(AM_V_ZIP)cd build/$@/ && $(ZHFST_COMPRESSION)
+	$(AM_V_at)$(MKDIR_P) 3
+	$(AM_V_at)cp -f $@ 3/
+
+
 
 # vim: set ft=automake:
 
