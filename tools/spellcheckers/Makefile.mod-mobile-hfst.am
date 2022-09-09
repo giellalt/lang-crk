@@ -80,18 +80,25 @@ mobilexperimentdir=$(datadir)/giella/mobilespellers/
 prefix_weighting.lexc: $(top_srcdir)/src/derivation/prefix_weighting.lexc
 	$(AM_V_CP)cp -f $< $@
 
-PrefixWeighting.hfst: $(srcdir)/crk-infl-morpheme-completion.hfscript \
-						prefix_weighting.lexc
+#PrefixWeighting.hfst: $(srcdir)/crk-infl-morpheme-completion.hfscript \
+#						prefix_weighting.lexc
+#	hfst-xfst -F $<
+
+#SpellRelaxedMorphemeCompletion.hfst: PrefixWeighting.hfst
+
+ErrorModel.hfst: errmodel.default.predict.hfscript
 	hfst-xfst -F $<
 
-SpellRelaxedMorphemeCompletion.hfst: PrefixWeighting.hfst
-
-errmodel.default.predict_morphs.hfst: PrefixWeighting.hfst
+errmodel.default.predict_morphs.hfst: ErrorModel.hfst
 	hfst-push-weights --push=initial $< |\
 		hfst-fst2fst -f olw -o $@
 
-acceptor.default.predict_morphs.hfst: SpellRelaxedMorphemeCompletion.hfst
-	hfst-fst2fst -f olw -i $< -o $@
+Acceptor.hfst: acceptor.default.predict.hfscript
+	hfst-xfst -F $<
+
+acceptor.default.predict_morphs.hfst: Acceptor.hfst
+	hfst-push-weights --push=initial $< |\
+		hfst-fst2fst -f olw -o $@
 
 index.predict_morphs.xml: index.predict.xml
 	cp -f $< $@
