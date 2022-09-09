@@ -7,7 +7,8 @@ define Words
 !! Prefix Weighting !!
 
 echo 'Compiling known prefixes with weights.'
-read lexc ../../src/derivation/prefix_weighting.lexc
+! read lexc ../../src/derivation/prefix_weighting.lexc
+read lexc prefix_weighting.lexc !! prefix weighting with marking of complete words with '$'
 define ObservedPrefixWeights
 
 echo 'Compiling set of unobserved prefixes.'
@@ -89,29 +90,50 @@ define CorrectWords [ ~[ $[ "+Err/Orth" | "+Err/Frag" ] ] .o. Words .o. AddBound
 
 regex [ InsertBoundary
 .o. NextMorpheme
-.o. [ PrefixStrings .o. [ CorrectWords ">" ].l ].u
+.o. [ PrefixStrings .o. [ CorrectWords "$" ">" "@D.joiner.NULL@" ].l ].u
 .o. rmBoundary
 ] ;
 define MorphemeCompletion
+
+regex [ [..] -> "-" || \[ "$" | "-" ] _ .#. ] .o. [ "$" -> 0 ] ;
+define MarkIncompleteWords
 
 ! The following setting needed for the weighting to match the morpheme completion automaton characters
 ! and ignore flag-diacritcs
 set flag-is-epsilon ON
 
 ! D-flag added to rule out boundaries without a hyphen
-regex [ InsertMissingChars .o. SpellRelax .o. [ MorphemeCompletion "@D.joiner.NULL@" ] ] ;
-save stack SpellRelaxedMorphemeCompletion.hfst ! ******** Speller acceptor (two-sided) ********
-save stack ErrorModel.hfst ! ***** Speller error model transductor (weighted wrt certain edits)
-define SpellRelaxedMorphemeCompletion
+! regex [ InsertMissingChars .o. SpellRelax .o. [ MorphemeCompletion "@D.joiner.NULL@" ] ] ;
+! save stack SpellRelaxedMorphemeCompletion.hfst ! ******** Speller acceptor (two-sided) ********
+! save stack ErrorModel.hfst ! ***** Speller error model transductor (weighted wrt certain edits)
+! define SpellRelaxedMorphemeCompletion
 
-regex [ MorphemeCompletion.l .o. PrefixWeighting.l ].l ;
+regex [ [ MorphemeCompletion.l .o. PrefixWeighting.l ] .o. MarkIncompleteWords ].l ;
 save stack Acceptor.hfst ! *** Speller acceptor automaton (weighted wrt prefix frequencies) ***
 define Acceptor
 
+!! Weighted morpheme completion (not used here)
 ! regex [ SpellRelaxedMorphemeCompletion .o. PrefixWeighting ] ;
+
+!!!! Character-based implementation for morpheme-completion-based error model
+
+! Redefinition of alphabet
+! $ marks the end of a complete word
+
+define Ax [ Vowel | Consonant | "-" | "$" ] ;
+
+! Upto 5-character completion, with an optional marker for complete word
+! define NextChars [ Ax+ [ 0:Ax::0.5 ]^{0,5} [ 0:"$" ]? ] ;
+
+! Upto 5-character completion, with the optional deletion of string-final hyphen marking an incomplete word
+define NextChars [ Ax+ [ "-":0 ]? [ 0:Ax::0.5 ]^{0,5} ] ;
+
+regex [ SpellRelax .o. InsertMissingChars .o. NextChars ] ;
+
+save stack ErrorModel.hfst ! *** Character-based error model ***
 
 !! hfst-fst2fst -f olw -i ErrorModel.hfst -o ErrorModel.hfstol
 !! hfst-fst2fst -f olw -i Acceptor.hfst -o Acceptor.hfstol
-!
-!! Lookup command example (with topmost 10 analyses):
-!!  hfst-optimized-lookup -q -w -u -n 10 crk-infl-morpheme-completion.hfstol
+
+!! hfst-ospell command example 
+!! hfst-ospell -S -n 10 -X -m ErrorModel.hfstol -l Acceptor.hfstol
