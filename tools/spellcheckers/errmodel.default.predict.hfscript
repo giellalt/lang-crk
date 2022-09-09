@@ -1,0 +1,57 @@
+! Instructions for compiling a morpheme completion FST
+! based on morpheme boundaries
+
+define Consonant [ c | h | k | m | n | p | s | t | y | w ] ;
+
+define Vowel [ a | â | ê | i | î | o | ô ] ;
+
+! Specific spell-relax rules
+
+!define SpellRelax [ a (->) â ,, e (->) ê ,, i (->) î ,, o (->) ô
+!,, â (->) a ,, î (->) i ,, ô (->) o
+!,, 0 (->) "-"::0.5
+!,, h (->) "-"::1.0
+!,, [..] (->) i::0.5 || Consonant _ Consonant
+!,, [..] (->) h::0.5 || Vowel _ Stop
+!,, h (->) 0::1.0 || Vowel _ Stop
+!,, o (->) i::1.0 || _ w
+!,, i (->) o::1.0 || _ w
+!] ;
+
+! Making use of pre-existing spellrelax rules
+
+load ../../src/orthography/spellrelax.compose.hfst
+invert net
+define SpellRelax
+
+! Inserting reduced/deleted /i/ or hyphens, and use of <h> as joiner instead of <->
+! regex [ [..] (->) "-" ,, [..] (->) i ,, h (->) "-" ];
+regex [ [..] (->) "-"::0.5 ,, [..] (->) i::1.0 ,, h (->) "-"::2.0 ];
+define InsertMissingChars
+
+! The following setting needed for the weighting to match the morpheme completion automaton characters
+! and ignore flag-diacritcs
+set flag-is-epsilon ON
+
+!!!! Character-based implementation for morpheme-completion-based error model
+
+! Redefinition of alphabet
+! $ marks the end of a complete word
+
+define Ax [ Vowel | Consonant | "-" | "$" ] ;
+
+! Upto 5-character completion, with an optional marker for complete word
+! define NextChars [ Ax+ [ 0:Ax::0.5 ]^{0,5} [ 0:"$" ]? ] ;
+
+! Upto 5-character completion, with the optional deletion of string-final hyphen marking an incomplete word
+define NextChars [ Ax+ [ "-":0 ]? [ 0:Ax::0.5 ]^{0,5} ] ;
+
+regex [ SpellRelax .o. InsertMissingChars .o. NextChars ] ;
+
+save stack ErrorModel.hfst ! *** Character-based error model ***
+
+!! hfst-fst2fst -f olw -i ErrorModel.hfst -o ErrorModel.hfstol
+!! hfst-fst2fst -f olw -i Acceptor.hfst -o Acceptor.hfstol
+
+!! hfst-ospell command example 
+!! hfst-ospell -S -n 10 -X -m ErrorModel.hfstol -l Acceptor.hfstol
