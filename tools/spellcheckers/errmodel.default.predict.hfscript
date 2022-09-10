@@ -55,7 +55,7 @@ define SingleEditDist
 ! define NextChars [ Ax+ [ 0:Ax::0.5 ]^{0,5} [ 0:"$" ]? ] ;
 
 ! Upto 5-character completion, with the optional deletion of string-final hyphen marking an incomplete word
-define NextChars [ Ax+ [ "|":0::0.0 | "|"::1.0 ]^{0,1} [ 0:[ Ax::0.5 - "|" ] ]^{0,5} [ 0:"|"::1.0 ]^{0,1} ] ;
+define NextChars [ [ Ax - "|" | "|":0 ]+ [ "|":0::0.0 | "|"::1.0 ]^{0,1} [ 0:[ Ax::0.5 - "|" ] ]^{0,5} [ 0:"|"::1.0 ]^{0,1} ] ;
 
 regex [ SpellRelax
 # .o. InsertMissingChars # Not needed if weighted spell-relax rules used, but needed with non-weighted spell-relax
