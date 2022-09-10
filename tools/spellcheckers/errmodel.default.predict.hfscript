@@ -1,9 +1,14 @@
-! Instructions for compiling a morpheme completion FST
-! based on morpheme boundaries
+!! Instructions for an error model for a speller based on morpheme completion
+
+! Definition of character set
 
 define Consonant [ c | h | k | m | n | p | s | t | y | w ] ;
 
 define Vowel [ a | â | ê | i | î | o | ô ] ;
+
+define ConsonantCapital [ C | H | K | M | N | P | S | T | Y | W ] ;
+
+define VowelCapital [ A | Â | Ê | I | Î | O | Ô ] ;
 
 ! Specific spell-relax rules
 
@@ -18,7 +23,7 @@ define Vowel [ a | â | ê | i | î | o | ô ] ;
 !,, i (->) o::1.0 || _ w
 !] ;
 
-! Making use of pre-existing (weighted) spellrelax rules
+! Making use of pre-existing (unweighted or weighted) spellrelax rules
 
 # Non-weighted spellrelax rules
 # load ../../src/orthography/spellrelax.compose.hfst
@@ -32,10 +37,6 @@ define SpellRelax
 ! regex [ [..] (->) "-" ,, [..] (->) i ,, h (->) "-" ];
 regex [ [..] (->) "-"::0.5 ,, [..] (->) i::1.0 ,, h (->) "-"::2.0 ];
 define InsertMissingChars
-
-! The following setting needed for the weighting to match the morpheme completion automaton characters
-! and ignore flag-diacritcs
-set flag-is-epsilon ON
 
 !!!! Character-based implementation for morpheme-completion-based error model
 
