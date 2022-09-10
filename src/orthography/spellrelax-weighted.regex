@@ -60,6 +60,7 @@ o (->) ô::0.5,,
 # Vowels
 [ i | î ] (->) {ee}::0.0,
 [ a | â ] (->) u::0.0,
+ê (->) [ {ay} | {eh} ]::1.0,
 
 # Consonants
 k (->) g::0.0,   # intervocalic voiced pronunciation to stops, maybe context should be added (including <c> overgenerates)
@@ -77,20 +78,29 @@ c (->) j::0.0,   # English influence on spelling <c>
 # Proto-Algonquian dialectal /y/
 y (->) ý::0.0,
 
-{iw} (->) {ow}::0.5,      # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
+{iw} (->) {ow}::0.5,     # Misspelling based on assimilated pronunciation of underlying /i/ as /o/ before /w/
 {ow} (->) {iw}::0.5,
+{iyi} (->) [ î | i ]::0.5,    # Mishearing of vowel-glide-vowel cluster
+{nwa} (->) {no}::0.5,         # <nwa> is likely to be heard as <no>
 
 c (->) {ch}::0.0,        # English influence on spelling <c>
 c (->) {tch}::0.0,       # English influence on spelling <c>
 c (->) {ts}::0.0 ,,      # Another English influence on spelling <c>
 
-[..] (->) h::0.25 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ],,  # Excessive preaspiration before stops
-[..] (->) h::0.25 || _ .#. ,, # Excessive word-final pre-aspiration
-   h (->) 0::0.5 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ]    # Missing preaspiration before stops
+[..] (->) h::0.25 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ] ,, # Excessive preaspiration before stops
+[..] (->) h::0.25 || _ .#. ,,                                             # Excessive word-final pre-aspiration
+   h (->) 0::0.5 || [ a | i | o | â | ê | î | ô ] _ [ c | k | p | t ] ,,  # Missing preaspiration before stops
+
+# Woods Cree to Plains Cree
+[ ý | y ] (->) {th}::0.5 ,,
+ê (->) [ î | i ]::2.0 ,,
+  
+# Adding missing or reduced short i's in interconsonantal contexts
+i (->) [..] || [ c | h | k | m | n | p | s | t | w | y | b | g | d ] _ [ c | h | k | m | n | p | s | t | w | y | b | g | d ]::1.0
 
 ;
 
-
+#
 # Explanation:
 # lexical side (->) input
 # Or, in other words:
