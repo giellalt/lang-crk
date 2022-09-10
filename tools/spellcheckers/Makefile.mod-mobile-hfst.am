@@ -77,8 +77,9 @@ CRK_EXPERIMENT_MORPH_ZHFST=$(GTLANG2)-x-predict_morphs-mobile.zhfst
 mobilexperiment_DATA=$(CRK_EXPERIMENT_MORPH_ZHFST)
 mobilexperimentdir=$(datadir)/giella/mobilespellers/
 
-prefix_weighting.lexc: $(top_srcdir)/src/derivation/prefix_weighting.lexc
-	$(AM_V_CP)cp -f $< $@
+# Commented out copying of file, since it is already stored in this directory:
+# prefix_weighting.lexc: $(top_srcdir)/src/derivation/prefix_weighting.lexc
+# 	$(AM_V_CP)cp -f $< $@
 
 #PrefixWeighting.hfst: $(srcdir)/crk-infl-morpheme-completion.hfscript \
 #						prefix_weighting.lexc
