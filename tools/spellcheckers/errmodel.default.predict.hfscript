@@ -18,9 +18,13 @@ define Vowel [ a | â | ê | i | î | o | ô ] ;
 !,, i (->) o::1.0 || _ w
 !] ;
 
-! Making use of pre-existing spellrelax rules
+! Making use of pre-existing (weighted) spellrelax rules
 
-load ../../src/orthography/spellrelax.compose.hfst
+# Non-weighted spellrelax rules
+# load ../../src/orthography/spellrelax.compose.hfst
+# Weighted spellrelax rules
+# hfst-regexp2fst -S -i ../../src/orthography/spellrelax-weighted.regex -o spellrelax-weighted.hfst
+load spellrelax-weighted.hfst
 invert net
 define SpellRelax
 
@@ -38,20 +42,30 @@ set flag-is-epsilon ON
 ! Redefinition of alphabet
 ! $ marks the end of a complete word
 
-define Ax [ Vowel | Consonant | "-" | "$" ] ;
+define Ax [ Vowel | Consonant | "-" | "|" ] ;
+
+define Cx [ ? - Ax ] ;
+
+! regex [ ?+ [ ?:0 | ?:Ax | 0:? ] ?* ]^{0,1} ;
+! regex [ ?+ ?:Ax::2.0 ?* ]^{0,1} ;
+regex [ ?+ [ Cx:Ax::2.0 ]^{0,1} ?* ] ;
+define SingleEditDist
 
 ! Upto 5-character completion, with an optional marker for complete word
 ! define NextChars [ Ax+ [ 0:Ax::0.5 ]^{0,5} [ 0:"$" ]? ] ;
 
 ! Upto 5-character completion, with the optional deletion of string-final hyphen marking an incomplete word
-define NextChars [ Ax+ [ "-":0 ]? [ 0:Ax::0.5 ]^{0,5} ] ;
+define NextChars [ Ax+ [ "|":0::0.0 | "|"::1.0 ]^{0,1} [ 0:[ Ax::0.5 - "|" ] ]^{0,5} [ 0:"|"::1.0 ]^{0,1} ] ;
 
-regex [ SpellRelax .o. InsertMissingChars .o. NextChars ] ;
+regex [ SpellRelax
+# .o. InsertMissingChars # Not needed if weighted spell-relax rules used, but needed with non-weighted spell-relax
+# .o. SingleEditDist # Experimental and excluded for now
+.o. NextChars
+] ;
 
 save stack ErrorModel.hfst ! *** Character-based error model ***
 
 !! hfst-fst2fst -f olw -i ErrorModel.hfst -o ErrorModel.hfstol
-!! hfst-fst2fst -f olw -i Acceptor.hfst -o Acceptor.hfstol
 
 !! hfst-ospell command example 
 !! hfst-ospell -S -n 10 -X -m ErrorModel.hfstol -l Acceptor.hfstol
