@@ -63,7 +63,8 @@ regex [ InsertBoundary
 ] ;
 define MorphemeCompletion
 
-regex [ [..] -> "-" || \[ "$" | "-" ] _ .#. ] .o. [ "$" -> 0 ] ;
+! regex [ [..] -> "-" || \[ "$" | "-" ] _ .#. ] .o. [ "$" -> 0 ] ;
+regex [ [..] -> "|" || \[ "$" | "|" ] _ .#. ] .o. [ "$" -> 0 ] ;
 define MarkIncompleteWords
 
 ! The following setting needed for the weighting to match the morpheme completion automaton characters
