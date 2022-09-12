@@ -4,6 +4,15 @@
 load ../../src/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
 define Words
 
+define MergeSuffixes [ ">" -> 0 || ">" ?+ _ ] ;
+
+define MergeShortFinalSuffix [ ">" -> 0 || _ ?^{1,2} .#. ] ;
+
+set flag-is-epsilon ON
+regex [ Words .o. MergeSuffixes .o. MergeShortFinalSuffix ] ;
+define Words
+set flag-is-epsilon OFF
+
 !! Prefix Weighting !!
 
 echo 'Compiling known prefixes with weights.'
