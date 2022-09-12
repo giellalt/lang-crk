@@ -59,7 +59,7 @@ define SingleEditDist
 define NextChars [ [ Ax - "|" | "|":0 ]+ [ "|":0::0.0 | "|"::1.0 ]^{0,1} [ 0:[ Ax::0.5 - "|" ] ]^{0,5} [ 0:"|"::1.0 ]^{0,1} ] ;
 
 regex [ SpellRelax
-# .o. InsertMissingChars # Not needed if weighted spell-relax rules used, but needed with non-weighted spell-relax
+.o. InsertMissingChars # Not needed if weighted spell-relax rules used, but needed with non-weighted spell-relax
 # .o. SingleEditDist # Experimental and excluded for now
 .o. NextChars
 ] ;
