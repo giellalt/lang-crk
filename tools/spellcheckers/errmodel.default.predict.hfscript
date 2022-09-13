@@ -26,10 +26,10 @@ define VowelCapital [ A | Â | Ê | I | Î | O | Ô ] ;
 ! Making use of pre-existing (unweighted or weighted) spellrelax rules
 
 # Non-weighted spellrelax rules
-# load ../../src/orthography/spellrelax.compose.hfst
+load ../../src/orthography/spellrelax.compose.hfst
 # Weighted spellrelax rules
 # hfst-regexp2fst -S -i ../../src/orthography/spellrelax-weighted.regex -o spellrelax-weighted.hfst
-load spellrelax-weighted.hfst
+# load spellrelax-weighted.hfst
 invert net
 define SpellRelax
 
