@@ -98,7 +98,8 @@ errmodel.default.predict_morphs.hfst: ErrorModel.hfst
 	hfst-push-weights --push=initial $< |\
 		hfst-fst2fst -f olw -o $@
 
-Acceptor.hfst: acceptor.default.predict.hfscript
+Acceptor.hfst: acceptor.default.predict.hfscript \
+	prefix_weighting.lexc
 	hfst-xfst -F $<
 
 acceptor.default.predict_morphs.hfst: Acceptor.hfst
