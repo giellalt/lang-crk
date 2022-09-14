@@ -17,7 +17,7 @@ set flag-is-epsilon OFF
 
 echo 'Compiling known prefixes with weights.'
 ! read lexc ../../src/derivation/prefix_weighting.lexc
-read lexc prefix_weighting.lexc !! prefix weighting with marking of complete words with '$'
+read lexc prefix_weighting.lexc
 define ObservedPrefixWeights
 
 echo 'Compiling set of unobserved prefixes.'
