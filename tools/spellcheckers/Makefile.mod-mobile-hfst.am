@@ -110,7 +110,7 @@ acceptor.default.predict_morphs.hfst: Acceptor.hfst easteregg.predict.hfst
 		-o $@
 
 index.predict_morphs.xml: index.predict.xml
-	cp -f $< $@
+	$(AM_V_CP)cp -f $< $@
 
 # c/p from tools-spellcheckers-fstbased-mboile-hfst-dir:
 $(CRK_EXPERIMENT_MORPH_ZHFST): index.predict_morphs.xml \
