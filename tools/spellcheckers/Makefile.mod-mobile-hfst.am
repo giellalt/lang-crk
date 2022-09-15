@@ -103,9 +103,11 @@ Acceptor.hfst: $(srcdir)/acceptor.default.predict.hfscript \
 #		${srcdir}/prefix_weighting.lexc
 	hfst-xfst -F $<
 
-acceptor.default.predict_morphs.hfst: Acceptor.hfst
-	hfst-push-weights --push=initial $< |\
-		hfst-fst2fst -f olw -o $@
+acceptor.default.predict_morphs.hfst: Acceptor.hfst easteregg.predict.hfst
+	$(HFST_DISJUNCT) $(MORE_VERBOSITY) $< easteregg.predict.hfst          \
+		| $(HFST_PUSH_WEIGHTS) $(MORE_VERBOSITY) --push=initial           \
+		| $(HFST_FST2FST) $(MORE_VERBOSITY) $(HFST_FLAGS) -f olw          \
+		-o $@
 
 index.predict_morphs.xml: index.predict.xml
 	cp -f $< $@
