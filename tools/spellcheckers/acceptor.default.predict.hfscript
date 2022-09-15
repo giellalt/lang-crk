@@ -1,11 +1,13 @@
 !! Instructions for compiling a morpheme completion acceptor
 !! based on morpheme boundaries for spell-checking purposes
 
+echo 'Loading normative generator with morpheme boundaries.'
 load ../../src/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
 define Words
 
-define MergeSuffixes [ ">" -> 0 || ">" ?+ _ ] ;
+echo 'Merging suffixes together, and short suffix chunks with stem.'
 
+define MergeSuffixes [ ">" -> 0 || ">" ?+ _ ] ;
 define MergeShortFinalSuffix [ ">" -> 0 || _ ?^{1,2} .#. ] ;
 
 set flag-is-epsilon ON
@@ -17,8 +19,8 @@ set flag-is-epsilon OFF
 
 echo 'Compiling known prefixes with weights.'
 ! read lexc ../../src/derivation/prefix_weighting.lexc
-! read lexc prefix_weighting.lexc
-load PrefixWeighting.hfst
+read lexc prefix_weighting.lexc
+! load PrefixWeighting.hfst
 define ObservedPrefixWeights
 
 echo 'Compiling set of unobserved prefixes.'
@@ -87,6 +89,7 @@ set flag-is-epsilon ON
 ! save stack ErrorModel.hfst ! ***** Speller error model transductor (weighted wrt certain edits)
 ! define SpellRelaxedMorphemeCompletion
 
+echo 'Compiling acceptor from morpheme completion prefixes with their weights, and marking incomplete words.'
 regex [ [ MorphemeCompletion.l .o. PrefixWeighting.l ] .o. MarkIncompleteWords ].l ;
 save stack Acceptor.hfst ! *** Speller acceptor automaton (weighted wrt prefix frequencies) ***
 define Acceptor

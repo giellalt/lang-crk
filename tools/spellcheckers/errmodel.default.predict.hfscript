@@ -1,5 +1,7 @@
 !! Instructions for an error model for a speller based on morpheme completion
 
+echo 'Compiling error model FST using word-form prefixes.'
+
 ! Definition of character set
 
 define Consonant [ c | h | k | m | n | p | s | t | y | w ] ;
@@ -11,6 +13,8 @@ define ConsonantCapital [ C | H | K | M | N | P | S | T | Y | W ] ;
 define VowelCapital [ A | Â | Ê | I | Î | O | Ô ] ;
 
 ! Specific spell-relax rules
+
+echo 'Loading or specifying spell-relax rules.'
 
 !define SpellRelax [ a (->) â ,, e (->) ê ,, i (->) î ,, o (->) ô
 !,, â (->) a ,, î (->) i ,, ô (->) o
@@ -26,8 +30,10 @@ define VowelCapital [ A | Â | Ê | I | Î | O | Ô ] ;
 ! Making use of pre-existing (unweighted or weighted) spellrelax rules
 
 # Non-weighted spellrelax rules
+# echo 'Using non-weighted spell-relax rules.'
 # load ../../src/orthography/spellrelax.compose.hfst
 # Weighted spellrelax rules
+echo 'Using weighted spell-relax rules.'
 # hfst-regexp2fst -S -i ../../src/orthography/spellrelax-weighted.regex -o spellrelax-weighted.hfst
 load spellrelax-weighted.hfst
 invert net
@@ -43,21 +49,26 @@ define InsertMissingChars
 ! Redefinition of alphabet
 ! $ marks the end of a complete word
 
-define Ax [ Vowel | Consonant | "-" | "|" ] ;
+echo 'Defining alphabet.'
 
+define Ax [ Vowel | Consonant | "-" | "|" ] ;
 define Cx [ ? - Ax ] ;
 
+echo 'Defining single-edit-distance rule.' 
 ! regex [ ?+ [ ?:0 | ?:Ax | 0:? ] ?* ]^{0,1} ;
 ! regex [ ?+ ?:Ax::2.0 ?* ]^{0,1} ;
 regex [ ?+ [ Cx:Ax::2.0 ]^{0,1} ?* ] ;
 define SingleEditDist
 
+echo 'Defining character-based completion rule, from 0 to 5 characters.'
 ! Upto 5-character completion, with an optional marker for complete word
 ! define NextChars [ Ax+ [ 0:Ax::0.5 ]^{0,5} [ 0:"$" ]? ] ;
 
 ! Upto 5-character completion, with the optional deletion of string-final hyphen marking an incomplete word
 define NextChars [ [ Ax - "|" | "|":0 ]+ [ "|":0::0.0 | "|"::1.0 ]^{0,1} [ 0:[ Ax::0.5 - "|" ] ]^{0,5} [ 0:"|"::1.0 ]^{0,1} ] ;
 
+echo 'Compling error-model as a combination of:
+echo 'Spell-relaxation, insertion of missing characters, single-edit-distance, and character-based completion'
 regex [ SpellRelax
 .o. InsertMissingChars # Not needed if weighted spell-relax rules used, but needed with non-weighted spell-relax
 # .o. SingleEditDist # Experimental and excluded for now
