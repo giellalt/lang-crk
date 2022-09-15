@@ -1,6 +1,6 @@
 !! Instructions for an error model for a speller based on morpheme completion
 
-echo 'Compiling error model FST using word-form prefixes.'
+echo 'Compiling weighted ERROR MODEL FST for acceptor based on morpheme-completion.''
 
 ! Definition of character set
 

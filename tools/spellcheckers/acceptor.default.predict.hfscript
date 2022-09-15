@@ -1,5 +1,7 @@
-!! Instructions for compiling a morpheme completion acceptor
-!! based on morpheme boundaries for spell-checking purposes
+/!! Instructions for compiling an acceptor based on morpheme completion
+!! with morpheme boundaries for spell-checking purposes
+
+echo 'Compiling weighted ACCEPTOR FST based on morpheme completion.'
 
 echo 'Loading normative generator with morpheme boundaries.'
 load ../../src/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
