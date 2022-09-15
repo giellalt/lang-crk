@@ -81,14 +81,8 @@ mobilexperimentdir=$(datadir)/giella/mobilespellers/
 # prefix_weighting.lexc: $(top_srcdir)/src/derivation/prefix_weighting.lexc
 # 	$(AM_V_CP)cp -f $< $@
 
-# PrefixWeighting.hfst: $(srcdir)/crk-infl-morpheme-completion.hfscript \
-#						prefix_weighting.lexc
-#	hfst-xfst -F $<
-
 # PrefixWeighting.hfst: $(srcdir)/prefix_weighting.lexc
 # 	hfst-lexc -o $@ $<
-
-#SpellRelaxedMorphemeCompletion.hfst: PrefixWeighting.hfst
 
 spellrelax-weighted.hfst: $(top_srcdir)/src/orthography/spellrelax-weighted.regex
 	hfst-regexp2fst -S $< -o $@
@@ -102,7 +96,7 @@ errmodel.default.predict_morphs.hfst: ErrorModel.hfst
 		hfst-fst2fst -f olw -o $@
 
 Acceptor.hfst: $(srcdir)/acceptor.default.predict.hfscript \
-		prefix_weighting.lexc
+		${srcdir}/prefix_weighting.lexc
 	hfst-xfst -F $<
 
 acceptor.default.predict_morphs.hfst: Acceptor.hfst
