@@ -51,7 +51,8 @@ define InsertMissingChars
 
 echo 'Defining alphabet.'
 
-define Ax [ Vowel | Consonant | "-" | "|" ] ;
+define Ix [ "|" ] ;
+define Ax [ Vowel | Consonant | "-" | Ix ] ;
 define Cx [ ? - Ax ] ;
 
 echo 'Defining single-edit-distance rule.' 
@@ -65,9 +66,9 @@ echo 'Defining character-based completion rule, from 0 to 5 characters.'
 ! define NextChars [ Ax+ [ 0:Ax::0.5 ]^{0,5} [ 0:"$" ]? ] ;
 
 ! Upto 5-character completion, with the optional deletion of string-final hyphen marking an incomplete word
-define NextChars [ [ Ax - "|" | "|":0 ]+ [ "|":0::0.0 | "|"::1.0 ]^{0,1} [ 0:[ Ax::0.5 - "|" ] ]^{0,5} [ 0:"|"::1.0 ]^{0,1} ] ;
+define NextChars [ [ Ax - Ix | Ix:0 ]+ [ Ix:0::0.0 | Ix::1.0 ]^{0,1} [ 0:[ Ax::0.5 - Ix ] ]^{0,5} [ 0:Ix::1.0 ]^{0,1} ] ;
 
-echo 'Compling error-model as a combination of:
+echo 'Compling error-model as a combination of:'<
 echo 'Spell-relaxation, insertion of missing characters, single-edit-distance, and character-based completion'
 regex [ SpellRelax
 .o. InsertMissingChars # Not needed if weighted spell-relax rules used, but needed with non-weighted spell-relax

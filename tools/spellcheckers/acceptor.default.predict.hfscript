@@ -77,8 +77,11 @@ regex [ InsertBoundary
 ] ;
 define MorphemeCompletion
 
+echo 'Specify marker for incomplete words: Ix';
+define Ix [ "|" ] ; 
+
 ! regex [ [..] -> "-" || \[ "$" | "-" ] _ .#. ] .o. [ "$" -> 0 ] ;
-regex [ [..] -> "|" || \[ "$" | "|" ] _ .#. ] .o. [ "$" -> 0 ] ;
+regex [ [..] -> Ix || \[ "$" | Ix ] _ .#. ] .o. [ "$" -> 0 ] ;
 define MarkIncompleteWords
 
 ! The following setting needed for the weighting to match the morpheme completion automaton characters
