@@ -51,7 +51,7 @@ define InsertMissingChars
 
 echo 'Defining alphabet.'
 
-define Ix [ "|" ] ;
+define Ix [ "~" ] ;
 define Ax [ Vowel | Consonant | "-" | Ix ] ;
 define Cx [ ? - Ax ] ;
 

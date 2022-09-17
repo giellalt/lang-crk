@@ -78,7 +78,7 @@ regex [ InsertBoundary
 define MorphemeCompletion
 
 echo 'Specify marker for incomplete words: Ix';
-define Ix [ "|" ] ; 
+define Ix [ "~" ] ;
 
 ! regex [ [..] -> "-" || \[ "$" | "-" ] _ .#. ] .o. [ "$" -> 0 ] ;
 regex [ [..] -> Ix || \[ "$" | Ix ] _ .#. ] .o. [ "$" -> 0 ] ;
