@@ -53,6 +53,7 @@ echo 'Defining alphabet.'
 
 define Ix [ "~" ] ;
 define Ax [ Vowel | Consonant | "-" | Ix ] ;
+! Non-alphabet characters
 define Cx [ ? - Ax ] ;
 
 regex [ A -> a, Â -> â, B -> b, C -> c, D -> d, E ->e, Ê -> ê, F -> f, G -> g, H -> h, I -> i, Î -> î,
@@ -63,6 +64,8 @@ define ToLower
 echo 'Defining single-edit-distance rule.' 
 ! regex [ ?+ [ ?:0 | ?:Ax | 0:? ] ?* ]^{0,1} ;
 ! regex [ ?+ ?:Ax::2.0 ?* ]^{0,1} ;
+! Only individual non-alphabet characters can be deleted or changed to alphabet characters
+! Only a single such edit is allowed
 regex [ ?+ [ Cx:Ax::2.0 ]^{0,1} ?* ] ;
 define SingleEditDist
 
@@ -81,7 +84,7 @@ echo 'Spell-relaxation, insertion of missing characters, single-edit-distance, a
 regex [ ToLower
 .o. SpellRelax
 .o. InsertMissingChars # Not needed if weighted spell-relax rules used, but needed with non-weighted spell-relax
-# .o. SingleEditDist # Experimental and excluded for now
+.o. SingleEditDist # Experimental and included for now
 .o. NextChars
 ] ;
 
