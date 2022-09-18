@@ -44,7 +44,7 @@ define SpellRelax
 regex [ [..] (->) "-"::0.5 ,, [..] (->) i::1.0 ,, h (->) "-"::2.0 ];
 define InsertMissingChars
 
-!!!! Character-based implementation for morpheme-completion-based error model
+!!!!! Character-based implementation for morpheme-completion-based error model
 
 ! Redefinition of alphabet
 ! $ marks the end of a complete word
@@ -54,6 +54,11 @@ echo 'Defining alphabet.'
 define Ix [ "~" ] ;
 define Ax [ Vowel | Consonant | "-" | Ix ] ;
 define Cx [ ? - Ax ] ;
+
+regex [ A -> a, Â -> â, B -> b, C -> c, D -> d, E ->e, Ê -> ê, F -> f, G -> g, H -> h, I -> i, Î -> î,
+J -> j, K -> k, L -> l, M -> m, N -> n, O -> o, Ô -> ô, P -> p, Q -> q, R -> r, S -> s, T -> t, U -> u,
+V -> v, W -> w, X -> x, Y -> y, Z -> z ];
+define ToLower
 
 echo 'Defining single-edit-distance rule.' 
 ! regex [ ?+ [ ?:0 | ?:Ax | 0:? ] ?* ]^{0,1} ;
@@ -66,11 +71,15 @@ echo 'Defining character-based completion rule, from 0 to 5 characters.'
 ! define NextChars [ Ax+ [ 0:Ax::0.5 ]^{0,5} [ 0:"$" ]? ] ;
 
 ! Upto 5-character completion, with the optional deletion of string-final hyphen marking an incomplete word
-define NextChars [ [ Ax - Ix | Ix:0 ]+ [ "-":0::0.1 ]^{0,1} [ Ix:0::0.0 ]^{0,1} [ 0:[ Ax::0.5 - Ix ] ]^{0,5} [ 0:Ix::1.0 ]^{0,1} ] ;
+define NextChars [ [ Ax - Ix | Ix:0 ]+ [ "-":0::0.1 ]^{0,1} [ Ix:0::0.0 ] [ 0:[ Ax::0.5 - Ix ] ]^{1,5} [ 0:Ix::1.0 ]^{0,1} ]
+! Alternative completion for strings not ending in incomplete word marker (i.e. complete words that are also incomplete)
+| [ [ Ax - Ix | Ix:0 ]+ [ "-":0::0.1 ]^{0,1} [ [ 0:[ Ax::0.5 - Ix ] ]^{0,5} [ 0:Ix::1.0 ]^{0,1} ] ]
+;
 
 echo 'Compling error-model as a combination of:'
 echo 'Spell-relaxation, insertion of missing characters, single-edit-distance, and character-based completion'
-regex [ SpellRelax
+regex [ ToLower
+.o. SpellRelax
 .o. InsertMissingChars # Not needed if weighted spell-relax rules used, but needed with non-weighted spell-relax
 # .o. SingleEditDist # Experimental and excluded for now
 .o. NextChars
