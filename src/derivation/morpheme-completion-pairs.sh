@@ -8,7 +8,7 @@ grep -v '+?' | grep -v '+PUNCT' | grep -v '+CLB' | grep -v '+Quant' | grep -v '+
 
 # Output FST-analyses (Column 3) for word form types replicated by frequency (column 1).
 
-gawk '{ for(i=1; i<=1; i++) print $3; }' |
+gawk '{ for(i=1; i<=$1; i++) print $3; }' |
 
 # Use the normative generator FST outputting (inflectional) morpheme boundaries.
 
@@ -44,12 +44,14 @@ nb=split(b,cb,"");
 for(i=1; i<=nb-1; i++)
    {
      if(ca[i]=="")
-       ca[i]="0";
-     printf "%s:%s ",ca[i], cb[i];
+       printf "@0@:%s ", cb[i];
+     else
+       printf "%s ", cb[i];
    }
 if(ca[nb]=="")
-  ca[nb]="0";
-printf "%s:%s\n",ca[nb], cb[nb];
+  printf "@0@:%s\n", cb[nb];
+else
+  printf "%s\n", ca[nb];
 }'
 
 
