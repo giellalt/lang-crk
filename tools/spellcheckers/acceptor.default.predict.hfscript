@@ -58,11 +58,20 @@ define Bx [ "<" | ">" | "/" ] ;
 
 define Ax [ ? - Bx ] ;
 
+echo 'Specify end-marker for complete words: Ex';
+define Ex [ "$" ] ;
+
+echo 'Specify marker for incomplete words: Ix';
+define Ix [ "~" ] ;
+
 define PrefixStrings [ ?* [ 0:? ]* ] ;
 
 define NextMorpheme [ ?+ [ 0:Ax ]* 0:Bx ] ;
 
 define InsertBoundary [ 0 (->) Bx ] ;
+
+! Add a morpheme boundary after a hyphen (which is used to indicate prefix boundaries
+! in lexicalized lemmas)
 
 define AddBoundary [ [..] -> "/" || "-" _ \[ "<" | ">" ] ] ; 
 
@@ -72,16 +81,18 @@ define CorrectWords [ ~[ $[ "+Err/Orth" | "+Err/Frag" ] ] .o. Words .o. AddBound
 
 regex [ InsertBoundary
 .o. NextMorpheme
-.o. [ PrefixStrings .o. [ CorrectWords "$" ">" "@D.joiner.NULL@" ].l ].u
+.o. [ PrefixStrings
+! Add markers for complete word-forms plus final morpheme boundary at the end of complete word-forms
+! (to match prefix weights where complete words are marked with a final Ex)
+! and require that such word-forms use a hyphen for explicitly marked morpheme boundaries
+.o. [ CorrectWords Ex ">" "@D.joiner.NULL@" ].l ! Take the lower side of the composition
+].u ! Take the upper-side of the composition
 .o. rmBoundary
 ] ;
 define MorphemeCompletion
 
-echo 'Specify marker for incomplete words: Ix';
-define Ix [ "~" ] ;
-
 ! regex [ [..] -> "-" || \[ "$" | "-" ] _ .#. ] .o. [ "$" -> 0 ] ;
-regex [ [..] -> Ix || \[ "$" | Ix ] _ .#. ] .o. [ "$" -> 0 ] ;
+regex [ [..] -> Ix || \[ Ex | Ix ] _ .#. ] .o. [ Ex -> 0 ] ;
 define MarkIncompleteWords
 
 ! The following setting needed for the weighting to match the morpheme completion automaton characters
