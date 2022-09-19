@@ -91,20 +91,43 @@ ErrorModel.hfst: errmodel.default.predict.hfscript \
 		spellrelax-weighted.hfst
 	hfst-xfst -F $<
 
-errmodel.default.predict_morphs.hfst: ErrorModel.hfst
-	hfst-push-weights --push=initial $< |\
-		hfst-fst2fst -f olw -o $@
+# Error model building - list of words known to be misspelled, mobile version:
+words.predict.mobile.hfst: easteregg.predict.mobile.suggtxt
+	$(AM_V_STR2FST)grep -h -v '^#' $^ | grep -v '^$$'   \
+		| $(HFST_STRINGS2FST) $(HFST_FLAGS) -j \
+		   --format=openfst-tropical \
+		-o $@
+
+errmodel.default.predict_morphs.hfst: ErrorModel.hfst words.predict.mobile.hfst
+	$(AM_V_RGX2FST)printf "\
+		[ @\"words.predict.mobile.hfst\"    \
+		|  @\"ErrorModel.hfst\"  \
+		];" \
+		| $(HFST_REGEXP2FST) -S -E $(HFST_FLAGS) \
+		| $(HFST_PUSH_WEIGHTS) --push=initial    \
+		| $(HFST_FST2FST) $(HFST_FLAGS) -f olw \
+		-o $@
 
 PrefixWeighting.hfst: $(srcdir)/prefix_weighting.lexc
 	hfst-lexc -o $@ $<
 
 Acceptor.hfst: $(srcdir)/acceptor.default.predict.hfscript \
-		PrefixWeighting.hfst
+		PrefixWeighting.hfst \
+		../../src/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
 #		${srcdir}/prefix_weighting.lexc
 	hfst-xfst -F $<
 
-acceptor.default.predict_morphs.hfst: Acceptor.hfst easteregg.predict.hfst
-	$(HFST_DISJUNCT) $(MORE_VERBOSITY) $< easteregg.predict.hfst          \
+easteregg.predict.mobile.txt: ../../src/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
+	$(AM_V_GEN)$(GTCORE)/scripts/make-hfstspeller-version-easter-egg.sh \
+		$(GTLANG2) \
+		$(top_srcdir) \
+		$(SPELLERVERSION) \
+		"mobile" \
+		"predict" \
+		> $@
+
+acceptor.default.predict_morphs.hfst: Acceptor.hfst easteregg.predict.mobile.hfst
+	$(HFST_DISJUNCT) $(MORE_VERBOSITY) $< easteregg.predict.mobile.hfst          \
 		| $(HFST_PUSH_WEIGHTS) $(MORE_VERBOSITY) --push=initial           \
 		| $(HFST_FST2FST) $(MORE_VERBOSITY) $(HFST_FLAGS) -f olw          \
 		-o $@
