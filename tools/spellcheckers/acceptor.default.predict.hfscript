@@ -79,15 +79,15 @@ define rmBoundary [ Bx -> 0 ] ;
 
 define CorrectWords [ ~[ $[ "+Err/Orth" | "+Err/Frag" ] ] .o. Words .o. AddBoundary ] ;
 
-regex [ InsertBoundary
+regex [ [ InsertBoundary
 .o. NextMorpheme
 .o. [ PrefixStrings
 ! Add markers for complete word-forms plus final morpheme boundary '>' at the end of complete word-forms
 ! (to match prefix weights where complete words are marked with a final 'Ex')
 ! and require that such word-forms use a hyphen for explicitly marked morpheme boundaries ('@D.joiner.NULL@' flag)
-.o. [ CorrectWords Ex ">" "@D.joiner.NULL@" ].l ! Take the lower side of the composition
-].u ! Take the upper-side of the composition
-.o. rmBoundary
+.o. [ CorrectWords Ex ">" ].l ! Take the lower side of the composition
+].u ! Take the upper-side of the composition and concatenate a final D-flag disallowing non-hyphened prefixes.
+.o. rmBoundary ] "@D.joiner.NULL@"
 ] ;
 define MorphemeCompletion
 
