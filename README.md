@@ -13,7 +13,6 @@ The Plains Cree morphology and tools
 
 👉 [**Documentation**](https://giellalt.github.io/lang-crk/) 👈🏼
 
-
 This repository contains finite state source files for the Plains Cree language,
 for building morphological analysers, proofing tools
 and dictionaries. The data and implementation are licenced under __LICENSE__
@@ -22,8 +21,15 @@ licence, also detailed in the
 authors named in the AUTHORS file are available to grant other licencing
 choices.
 
-Installation and compilation, and a short note on usage, is documented
-in the file INSTALL.
+Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-crk)
+for the Plains Cree language by using the [Divvun Installer](http://divvun.no)
+(some languages are only available via the nightly channel).
+
+Use and test spellers
+---------------------
+
+The spellers downloadable at the top of this page (the `*.bhfst` files) can be
+used with [divvunspell](https://github.com/divvun/divvunspell).
 
 Documentation
 -------------
