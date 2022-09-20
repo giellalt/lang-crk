@@ -34,12 +34,10 @@ used with [divvunspell](https://github.com/divvun/divvunspell).
 Documentation
 -------------
 
-Documentation can be found here:
+Documentation can be found at:
 
-- [In source documentation generated with github
-   pages](https://gilellalt.github.io/lang-crk/)
--   <https://giellalt.github.io/lang-crk/> (analyser)
--   <https://giellalt.github.io/> (infrastructure)
+-   <https://giellalt.github.io/lang-crk/>
+-   <https://giellalt.github.io/>
 
 Core dependencies
 -----------------
