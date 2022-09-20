@@ -58,11 +58,11 @@ define Bx [ "<" | ">" | "/" ] ;
 
 define Ax [ ? - Bx ] ;
 
-echo 'Specify end-marker for complete words: Ex';
+echo 'Specify end-marker for complete words: Ex'
 define Ex [ "$" ] ;
 
-echo 'Specify marker for incomplete words: Ix';
-define Ix [ "~" ] ;
+echo 'Specify marker for incomplete words: Ix'
+define Ix [ "-" ] ; ! Needs to be matched with the similar definition within the Error Model.
 
 define PrefixStrings [ ?* [ 0:? ]* ] ;
 
@@ -82,9 +82,9 @@ define CorrectWords [ ~[ $[ "+Err/Orth" | "+Err/Frag" ] ] .o. Words .o. AddBound
 regex [ InsertBoundary
 .o. NextMorpheme
 .o. [ PrefixStrings
-! Add markers for complete word-forms plus final morpheme boundary at the end of complete word-forms
-! (to match prefix weights where complete words are marked with a final Ex)
-! and require that such word-forms use a hyphen for explicitly marked morpheme boundaries
+! Add markers for complete word-forms plus final morpheme boundary '>' at the end of complete word-forms
+! (to match prefix weights where complete words are marked with a final 'Ex')
+! and require that such word-forms use a hyphen for explicitly marked morpheme boundaries ('@D.joiner.NULL@' flag)
 .o. [ CorrectWords Ex ">" "@D.joiner.NULL@" ].l ! Take the lower side of the composition
 ].u ! Take the upper-side of the composition
 .o. rmBoundary
@@ -92,11 +92,13 @@ regex [ InsertBoundary
 define MorphemeCompletion
 
 ! regex [ [..] -> "-" || \[ "$" | "-" ] _ .#. ] .o. [ "$" -> 0 ] ;
+! Note that incomplete word-marker 'Ix' will not be output after a final hyphen '-'
+! Thus, incomplete words ending with a hyphen (e.g. prefixes) will not receive a doubled hyphen.
 regex [ [..] -> Ix || \[ Ex | Ix ] _ .#. ] .o. [ Ex -> 0 ] ;
 define MarkIncompleteWords
 
-! The following setting needed for the weighting to match the morpheme completion automaton characters
-! and ignore flag-diacritcs
+! The following setting needed for the (prefix) weighting FST to match the morpheme completion FST
+! and ignore flag-diacritics in the latter FST.
 set flag-is-epsilon ON
 
 ! D-flag added to rule out boundaries without a hyphen

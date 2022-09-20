@@ -1,8 +1,8 @@
-!! Instructions for an error model for a speller based on morpheme completion
+!!!!! Instructions for an error model for a speller based on morpheme completion
 
 echo 'Compiling weighted ERROR MODEL FST for acceptor based on morpheme-completion.''
 
-! Definition of character set
+!! Definition of crk-SRO-circumflex character set
 
 define Consonant [ c | h | k | m | n | p | s | t | y | w ] ;
 
@@ -12,7 +12,7 @@ define ConsonantCapital [ C | H | K | M | N | P | S | T | Y | W ] ;
 
 define VowelCapital [ A | Â | Ê | I | Î | O | Ô ] ;
 
-! Specific spell-relax rules
+!! Specific spell-relax rules
 
 echo 'Loading or specifying spell-relax rules.'
 
@@ -27,33 +27,37 @@ echo 'Loading or specifying spell-relax rules.'
 !,, i (->) o::1.0 || _ w
 !] ;
 
-! Making use of pre-existing (unweighted or weighted) spellrelax rules
+!! Making use of pre-existing (unweighted or weighted) spellrelax rules
 
-# Non-weighted spellrelax rules
-# echo 'Using non-weighted spell-relax rules.'
-# load ../../src/orthography/spellrelax.compose.hfst
-# Weighted spellrelax rules
+!! Non-weighted spellrelax rules
+! echo 'Using non-weighted spell-relax rules.'
+! load ../../src/orthography/spellrelax.compose.hfst
+!! Weighted spellrelax rules
 echo 'Using weighted spell-relax rules.'
-# hfst-regexp2fst -S -i ../../src/orthography/spellrelax-weighted.regex -o spellrelax-weighted.hfst
+! hfst-regexp2fst -S -i ../../src/orthography/spellrelax-weighted.regex -o spellrelax-weighted.hfst
 load spellrelax-weighted.hfst
 invert net
 define SpellRelax
 
-! Inserting reduced/deleted /i/ or hyphens, and use of <h> as joiner instead of <->
-! regex [ [..] (->) "-" ,, [..] (->) i ,, h (->) "-" ];
+!! Inserting reduced/deleted /i/ or hyphens, and use of <h> as joiner instead of <->
+! regex [ [..] (->) "-" ,, [..] (->) i ,, h (->) "-" ]; ! Non-weighted alternative
 regex [ [..] (->) "-"::0.5 ,, [..] (->) i::1.0 ,, h (->) "-"::2.0 ];
 define InsertMissingChars
 
 !!!!! Character-based implementation for morpheme-completion-based error model
 
-! Redefinition of alphabet
-! $ marks the end of a complete word
+!! Redefinition of alphabet
 
 echo 'Defining alphabet.'
 
-define Ix [ "~" ] ;
+!! Final marker needed either for incomplete or complete word-forms
+! define Ex [ "$" ] ; ! String-final marker for complete words; needs to paired with similar definition for the acceptor
+define Ix [ "-" ] ; ! String-final marker for incomplete words; needs to paired with similar definition for the acceptor
+
+!! Alphabet needs either a marker for incomplete or complete word-forms (but not both).
 define Ax [ Vowel | Consonant | "-" | Ix ] ;
-! Non-alphabet characters
+! define Ax [ Vowel | Consonant | "-" | Ex ] ;
+!! Non-alphabet characters that need to be corrected
 define Cx [ ? - Ax ] ;
 
 regex [ A -> a, Â -> â, B -> b, C -> c, D -> d, E ->e, Ê -> ê, F -> f, G -> g, H -> h, I -> i, Î -> î,
@@ -62,35 +66,41 @@ V -> v, W -> w, X -> x, Y -> y, Z -> z ];
 define ToLower
 
 echo 'Defining single-edit-distance rule.' 
+!! The most general rule (with deletion and insertion), that explodes FST size
 ! regex [ ?+ [ ?:0 | ?:Ax | 0:? ] ?* ]^{0,1} ;
+!! A less general rule, with only change from any character to alphabet
 ! regex [ ?+ ?:Ax::2.0 ?* ]^{0,1} ;
-! Only individual non-alphabet characters can be deleted or changed to alphabet characters
-! Only a single such edit is allowed
-regex [ ?+ [ Cx:Ax::2.0 ]^{0,1} ?* ] ;
+!! A more specific rule so that only individual non-alphabet characters can be changed to alphabet characters
+!! Only a single such edit is allowed
+regex [ ?+ [ [ Cx:Ax::2.0 ]^{0,1} ?* ]^1 ] ;
 define SingleEditDist
 
 echo 'Defining character-based completion rule, from 0 to 5 characters.'
-! Upto 5-character completion, with an optional marker for complete word
-! define NextChars [ Ax+ [ 0:Ax::0.5 ]^{0,5} [ 0:"$" ]? ] ;
+!! Up to 5-character completion, with an optional marker for complete word:
+! define NextChars [ Ax+ [ 0:Ax::0.5 ]^{0,5} [ 0:Ex ]? ] ;
 
-! Upto 5-character completion, with the optional deletion of string-final hyphen marking an incomplete word
-define NextChars [ [ Ax - Ix | Ix:0 ]+ [ "-":0::0.1 ]^{0,1} [ Ix:0::0.0 ] [ 0:[ Ax::0.5 - Ix ] ]^{1,5} [ 0:Ix::1.0 ]^{0,1} ]
-! Alternative completion for strings not ending in incomplete word marker (i.e. complete words that are also incomplete)
-| [ [ Ax - Ix | Ix:0 ]+ [ "-":0::0.1 ]^{0,1} [ [ 0:[ Ax::0.5 - Ix ] ]^{0,5} [ 0:Ix::1.0 ]^{0,1} ] ]
-;
+!! Alternative for up to 5-character completion, with the optional deletion of string-final hyphen marking an incomplete word:
+!! First part for completions for strings ending with the incomplete word-form marker
+! define NextChars [ [ Ax - Ix | Ix:0 ]+ [ "-":0::0.1 ]^{0,1} [ Ix:0::0.0 ] [ 0:[ Ax::0.5 - Ix ] ]^{1,5} [ 0:Ix::1.0 ]^{0,1} ]
+!! Second part for completion for strings not ending in incomplete word marker (i.e. complete words that are also incomplete)
+! | [ [ Ax - Ix | Ix:0 ]+ [ "-":0::0.1 ]^{0,1} [ [ 0:[ Ax::0.5 - Ix ] ]^{0,5} [ 0:Ix::1.0 ]^{0,1} ] ] ;
+
+!! Alternative for when incomplete words are marked with a final hyphen (which doubles as a prefix marker):
+define NextChars [ Ax+ [ Ix:0::0.0 ]^{0,1} [ 0:Ax::1.0 ]^{0,5} [ 0:Ix::1.0 ]^{0,1} ] ;
 
 echo 'Compling error-model as a combination of:'
 echo 'Spell-relaxation, insertion of missing characters, single-edit-distance, and character-based completion'
 regex [ ToLower
 .o. SpellRelax
-.o. InsertMissingChars # Not needed if weighted spell-relax rules used, but needed with non-weighted spell-relax
-.o. SingleEditDist # Experimental and included for now
+.o. InsertMissingChars ! Not needed if weighted spell-relax rules used, but needed with non-weighted spell-relax
+.o. SingleEditDist ! Experimental and included for now
 .o. NextChars
-] ;
+];
 
-save stack ErrorModel.hfst ! *** Character-based error model ***
+save stack ErrorModel.hfst !! *** Character-based error model ***
 
-!! hfst-fst2fst -f olw -i ErrorModel.hfst -o ErrorModel.hfstol
+!! Converting from HFST to HFSTOL format
+! hfst-fst2fst -f olw -i ErrorModel.hfst -o ErrorModel.hfstol
 
 !! hfst-ospell command example 
-!! hfst-ospell -S -n 10 -X -m ErrorModel.hfstol -l Acceptor.hfstol
+! hfst-ospell -S -n 10 -X -m ErrorModel.hfstol -l Acceptor.hfstol
