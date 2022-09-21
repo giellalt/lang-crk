@@ -62,7 +62,7 @@ echo 'Specify end-marker for complete words: Ex'
 define Ex [ "$" ] ;
 
 echo 'Specify marker for incomplete words: Ix'
-define Ix [ "-" ] ; ! Needs to be matched with the similar definition within the Error Model.
+define Ix [ "~" ] ; ! Needs to be matched with the similar definition within the Error Model.
 
 define PrefixStrings [ ?* [ 0:? ]* ] ;
 
