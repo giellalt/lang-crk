@@ -36,7 +36,7 @@ Documentation
 
 Documentation can be found at:
 
--   <https://giellalt.github.io/lang-crk/>
+- [Language specific documentation](https://giellalt.github.io/lang-crk/)
 -   <https://giellalt.github.io/>
 
 Core dependencies
