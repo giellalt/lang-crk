@@ -1115,7 +1115,8 @@ LIST Pron"+Pers" = Pron"+Pers" ;
 MAP:AITITAPron3PlACTR @<ACTOR TARGET Pron"+Pers" + 3Pl IF (*-1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl BARRIER V OR CLB)(NOT *-1 II) ;
 MAP:AITITAPron3PlACTL @ACTOR> TARGET Pron + 3Pl IF (*1 AI + Cnj + PV/e + 3Pl OR TI + Cnj + PV/e + 3Pl OR TA + Cnj + PV/e + 3Pl BARRIER V OR CLB)(NOT *1 II) ;
 
-##everything else
+##everything else 
+## check overapplication of careful readings?
 
 MAP:TAGOAL3R @<GOAL TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*-1 TA + 3SgO + NOTRELC BARRIER V OR CLB) ;
 MAP:TAGOAL3L @GOAL> TARGET N + A + Sg IF (NOT 0 Loc)(NOT 0 Obv)(*1 TA + 3SgO + NOTRELC BARRIER V OR CLB) ;
