@@ -62,7 +62,8 @@ endif # WANT_CUSTOM_FSTS
 if WANT_DICTIONARIES
 CUSTOM_FSTS+=crk-strict-analyzer-for-dictionary-giellaltbuild.xfst \
 			 crk-relaxed-analyzer-for-dictionary-giellaltbuild.xfst \
-			 generator-dict-gt-norm.boundaries.xfst
+			 generator-dict-gt-norm.boundaries.xfst \
+			 analyser-dict-gt-desc.xfst
 endif # WANT_DICTIONARIES
 
 endif # CAN_XFST
@@ -81,8 +82,8 @@ CUSTOM_FSTS+=crk-strict-analyzer-giellaltbuild.hfstol \
 if WANT_DICTIONARIES
 CUSTOM_FSTS+=crk-strict-analyzer-for-dictionary-giellaltbuild.hfstol \
 			 crk-relaxed-analyzer-for-dictionary-giellaltbuild.hfstol \
-			 generator-dict-gt-norm.boundaries.hfstol
-
+			 generator-dict-gt-norm.boundaries.hfstol \
+			 analyser-dict-gt-desc.hfstol
 endif # WANT_DICTIONARIES
 
 endif # WANT_CUSTOM_FSTS
@@ -104,7 +105,8 @@ endif # WANT_CUSTOM_FSTS
 if WANT_DICTIONARIES
 CUSTOM_FSTS+=crk-strict-analyzer-for-dictionary-giellaltbuild.foma \
 			 crk-relaxed-analyzer-for-dictionary-giellaltbuild.foma \
-			 generator-dict-gt-norm.boundaries.foma
+			 generator-dict-gt-norm.boundaries.foma \
+			 analyser-dict-gt-desc.foma
 endif # WANT_DICTIONARIES
 
 endif # CAN_FOMA
@@ -355,6 +357,29 @@ generator-dict-gt-norm.boundaries.%: analyser-raw-gt-desc.% \
 				@\"filters/select-dict_POS-strings.$*\" \
 			.o. @\"filters/remove-error-strings.$*\" \
 			.o. @\"$<\"                                           \
+			;\n\
+		 minimise\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
+analyser-dict-gt-desc.hfst  \
+analyser-dict-gt-desc.xfst  \
+analyser-dict-gt-desc.foma: \
+analyser-dict-gt-desc.%: analyser-raw-gt-desc.% \
+						 filters/remove-error-tags.% \
+						 filters/select-dict_POS-strings.% \
+						 filters/remove-Err_Frag-strings.% \
+						 filters/remove-CRK_der_border-symbol.% \
+						 filters/remove-infl_boundary-marks.% \
+						 orthography/spellrelax.compose.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/remove-error-tags.$*\" \
+			.o. @\"filters/select-dict_POS-strings.$*\" \
+			.o. @\"filters/remove-Err_Frag-strings.$*\" \
+			.o. @\"$<\"                                           \
+			.o. @\"filters/remove-infl_boundary-marks.$*\" \
+			.o. @\"filters/remove-CRK_der_border-symbol.$*\" \
+			.o. @\"orthography/spellrelax.compose.$*\" \
 			;\n\
 		 minimise\n\
 		 save stack $@\n\
