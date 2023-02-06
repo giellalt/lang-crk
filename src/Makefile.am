@@ -331,6 +331,21 @@ crk-dict-filter.hfst: Makefile.am
 		$(word 1, $^) -2 $(word 2, $^) |\
 		$(HFST_MINIMIZE) - -o $@
 
+generator-dict-gt-norm.boundaries.hfst  \
+generator-dict-gt-norm.boundaries.xfst  \
+generator-dict-gt-norm.boundaries.foma: \
+generator-dict-gt-norm.boundaries.%: analyser-raw-gt-desc.% \
+									 filters/remove-error-strings.% \
+									 filters/select-dict_POS-strings.%
+	$(AM_V_XFST_TOOL)$(PRINTF) "read regex \
+				@\"filters/select-dict_POS-strings.$*\" \
+			.o. @\"filters/remove-error-strings.$*\" \
+			.o. @\"$<\"                                           \
+			;\n\
+		 minimise\n\
+		 save stack $@\n\
+		 quit\n" | $(XFST_TOOL)
+
 ##################################################################
 #### END: Add local processing instructions ABOVE this line ######
 ##################################################################
