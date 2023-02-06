@@ -1,0 +1,3 @@
+# Only keep POS's relevant to dictionaries:
+
+$[ "+N" | "+V" | "+Ipc" | "+Pron" ];

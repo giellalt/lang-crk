@@ -21,6 +21,7 @@
 # List any local filter regex files here:
 GIELLA_FILTER_LOCAL_REGEX_SRCS=\
 					downcase_UCletters.regex \
+					select-dict_POS-strings.regex \
 					convert-accented-y-to-simple-y.regex
 
 # List any local filter xfscript files here:
