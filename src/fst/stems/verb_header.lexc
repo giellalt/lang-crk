@@ -1,4 +1,4 @@
-! Copyright © 2015–2020 Alberta Language Technology Lab (ALTLab)
+! Copyright © 2015–2023 Alberta Language Technology Lab (ALTLab)
 ! http://altlab.artsrn.ualberta.ca/
 !
 ! This program is free software; you can redistribute and/or modify
@@ -102,7 +102,7 @@
 ! kostêw:kost3 VTA ;      ! s:0 when preceeding t3:s
 ! ayâwêw:ayâw2 VTA ;      ! w2:w for non-collapsing cases
 ! nitonawêw:nitonaw VTA;  ! w:0, V:VV for VG rules
-!
 
-!! Full incorporation of AEW 2020 verbs into new crk FST
+!! Complete extraction of lemma:stem info from CW/AEW (2023) and (MD 2023), according to
+!! LEXC structure in the new crk FST.
 
