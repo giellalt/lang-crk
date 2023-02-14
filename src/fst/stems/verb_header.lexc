@@ -1,0 +1,108 @@
+! Copyright © 2015–2020 Alberta Language Technology Lab (ALTLab)
+! http://altlab.artsrn.ualberta.ca/
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU Affero General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version.
+!
+! This program is distributed in the hope that it will be useful,
+! but WITHOUT ANY WARRANTY; without even the implied warranty of
+! MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+! GNU Affero General Public License for more details.
+!
+! You should have received a copy of the GNU Affero General Public License
+! along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+! =========================================================================================================================================
+! 
+! Old FST          ——> AEWs Class                      Special Chrs.                AEW NEW                ——>        NEW FST Class
+! =========================================================================================================================================		         
+! 																												         
+! VII-w impersonal ——> VII-1v                                                          VII-1v               ——>         VIIw_SG                                
+! VII-w regular    ——> VII-2v                                                          VII-2v               ——>         VIIw
+! VII-w Plural     ——> Subtype of VII-2v                                               VII-2v (a$)          ——>         VIIw_PL
+! 																												         
+! VII-n impersonal ——> VII-1n                                     [n3]                 VII-1n               ——>         VIIn_SG
+! VII-n regular    ——> VII-2n                                     [n3]                 VII-2n               ——>         VIIn 
+! VII-n Plural    ——>  VII-2                                      [n3]                 VII-2n (a$)          ——>         VIIn_PL 
+! !!(in all classes ending in /n/ -an, n changes to h, for in/on drop h mostly)																												         
+! 											:																	         
+! 																												         
+! VAI-v            ——> VAI-1                                         [n2]             VAI-v                  ——>         VAIw
+! VAI-v-pl         ——> N/A                                           [n2]             VAI-v (ak$)            ——>         VAIw_PL
+																												         
+! VAI-n            ——> VAI-2                                         [n2]             VAI-n                  ——>         VAIn
+! VAI-n-pl         ——> N/A                                           [n2]             VAI-n (ak$)            ——>         VAIn_PL
+! VAI-am           ——> VAI-3 (VTI like)                              [n2]                                    ——>         WE NEED THIS
+! 																												         
+! VTI-am           ——> VTI-1                                         [n2][t4]          VTI-1                 ——>         VTIm
+! VTI-am           ——> N/A                                           [n2]              VTI-1 (ak$)           ——>         VTIm_PL
+! VTI-â            ——> VTI-2 (VAIlike)                               [n2]              VTI-2                 ——>         VTIw
+! VTI-ø            ——> VTI-3 (Dims/Habs) (VAIlike)                   [n2]              VTI-3                 ——>         VTIw
+!     																											         
+! VTA              ——> VTA-1 (Regulars)                              [ii2]             VTA-1                 ——>         VTA          
+! VTA-Vw           ——> VTA-2                                         [i2][ii2]         VTA-2                 ——>         VTA
+!																					   VTA-2 (ak$)           ——>         VTA_PL
+! VTA-Cw           ——> VTA-3 (hw, sw stem endings mostly)            [i2][ii2]         VTA-3                 ——>         VTA
+																												         
+! VTA-Ts           ——> VTA-4 (kostew, wîhkistêw will go here)        [t3][i3][ii2]     VTA-4                 ——>         VTA
+																												         
+! VTAi             ——> VTA-5 (ahew, itew, ay-itew)                   [i3]              VTA-5                 ——>         VTAi
+! =======================================================================================================================================
+! =======================================================================================================================================
+
+!! Model verb lemmas and stems for new crk FST
+
+! LEXICON VERBSTEMS
+! !!!HAVE YAMLS FOR THESE !!!
+! osâwâw:osâwâ VIIw ;
+! mihkwâw:mihkwâ VIIw ;
+! nîpin:nîpin3 VIIn ;
+! mispon VIIn_PL ; ! only occurs in plural
+! pimamon VIIn ;
+! mâyâtan:mâyâtan3 VIIn ;
+! miywâsin VIIn ;
+! 
+! apiw:api VAIw ;
+! atoskêw:atoskê VAIw ;
+! matow:mato VAIw ;
+! mîcisow:mîciso VAIw ;
+! nêhiyawêw:nêhiyawê VAIw ;
+! nipâw:nipâ VAIw ;
+! pimisin:pimisin3 VAIn ;
+! 
+! kâtâw:kâtâ VTIw ;
+! kîsihtâw:kîsihtâ VTIw ;
+! mîciw:mîci VTIw ;
+! wâpahtam:wâpaht4a VTIm ; ! Check status of -a
+! nâtam:nâta VTIm ;
+! 
+! kîskiswêw:kîskisw VTA;  ! w:0 for collapsing cases
+! atoskahêw:atoskah VTA ;
+! miskawêw:miskaw VTA ;
+! mowêw:mow2 VTA ;        ! w2:w for non-collapsing cases
+! nakatêw:nakat3 VTA ;        ! t3:s in some cases
+! nâtêw:nât3 VTAt ;
+! wâpamêw:wâpam VTA ;
+! wîcihêw:wîcih VTA ;
+! mêstasîhkawêwak:mêstasîhkaw VTA_PL ; !'generally' plural according to AEW
+! 
+! !!! NO YAML !!!
+! 
+! atihkamêkoskâw:atihkamêkoskâ VIIw_SG ; ! 'generally' singular according to AEW
+! asaskitêwa:asaskitê VIIw_PL ;!'generally' plural according to AEW
+! 
+! asisinwak:asisin VAIn_PL ; !'generally' plural according to AEW
+! asahtowak:asahto VAIw_PL ;! Plural Only
+! 
+! pêyako-itêýihtamwak:pêyako-itêýihta VTIm_PL ; !'generally' plural according to AEW
+! 
+! itêw:it3 VTAi ;
+! kostêw:kost3 VTA ;      ! s:0 when preceeding t3:s
+! ayâwêw:ayâw2 VTA ;      ! w2:w for non-collapsing cases
+! nitonawêw:nitonaw VTA;  ! w:0, V:VV for VG rules
+!
+
+!! Full incorporation of AEW 2020 verbs into new crk FST
+
