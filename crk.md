@@ -1457,6 +1457,19 @@ Verbs
 
 Test lemma/stem set for nouns according the new crk FST
 
+Complete extraction of lemma:stem info from CW/AEW (2023) and (MD 2023), according to
+LEXC structure in the new crk FST.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/noun_header.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/noun_header.lexc)</small>
+
+---
+
+
+
+Test lemma/stem set for nouns according the new crk FST
+
 Complete extraction of lemma:stem info from AEW 2020, according to
 LEXC structure in the new crk FST.
 
@@ -1587,6 +1600,19 @@ INANIMATE \\
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/stems/pronouns.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/pronouns.lexc)</small>
+
+---
+
+
+
+Model verb lemmas and stems for new crk FST
+
+Complete extraction of lemma:stem info from CW/AEW (2023) and (MD 2023), according to
+LEXC structure in the new crk FST.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/stems/verb_header.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/verb_header.lexc)</small>
 
 ---
 
