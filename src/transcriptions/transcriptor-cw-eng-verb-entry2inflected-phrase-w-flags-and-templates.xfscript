@@ -24,7 +24,7 @@ define Clause [ "Cnj+" | "Rel+" ] ;
 
 define Modality [ "Obl2+" | "Nec2+" | "Abl2+" | "Perm2+" | "Int2+" | "Hab+" | "Init+" | "Fin+" ] ;
 
-define TenseAspect [ "Prs+" | "Prt+" | "Def+" | "Fut+" | "Int+" | "Cond+" | "Inf+" | "Imm+" | "Del+" ] ;
+define TenseAspect [ "Prs+" | "Prt+" | "Def+" | "Fut+" | "Int+" | "Cond+" | "Inf+" | "Imm+" | "Del+" | "Prf1+" | "Prf2+" ] ;
 
 define Auxiliary [ "Obl+" | "Nec+" | "Abl+" | "Perm+" | "Int+" | "Poss+" | "Rec+" | "Pred+" ] ;
 
@@ -74,17 +74,18 @@ regex [ {is} -> ISZ || [ Wx | Bx ] [ {s/he} | {he} | {she} | {it} ] { } _ [ Wx |
 , [ {s.t.} | IT ] -> DOBJinanim
 , {to s.b.} -> {to } IOBJ
 , {for s.b.} -> {for } IOBJ
-, {there is} -> {there } ISZ
+, {there is} -> THERE { } ISZ
 || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
 define Standardization
 
 regex [ s -> {>s} "@D.neg@" "@D.prog.Prog@" [ "@R.tense.Prs@" | "@R.tense.Cond@" ] RsubjectPrs3Sg
 , s -> {>ed} "@D.neg@" "@D.prog.Prog@" "@R.tense.Prt@"
+, s -> {>en} "@D.prog.Prog@" [ "@R.tense.Prf1@" | "@R.tense.Prf2@" ]
 , s -> {>ing} "@R.prog.Prog@"
 , s -> {>} [ [ [ "@R.tense.Prs@" | "@R.tense.Cond@" ] DsubjectPrs3Sg "@D.neg@" "@D.prog.Prog@" ]
 | [ [ "@R.tense.Prs@" | "@R.tense.Cond@" | "@R.tense.Prt@" ] "@R.neg.Neg@" "@D.prog.Prog@" ]
 | [ [ "@R.tense.Fut@" | "@R.tense.Def@" | "@R.tense.Int@" | "@R.tense.Inf@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Obl@" | "@R.tense.Nec@" | "@R.tense.Abl@" | "@R.tense.Perm@" | "@R.tense.Poss@" | "@R.tense.Rec@" | "@R.tense.Pred@" ] "@D.prog.Prog@" ] ]
-|| [ SUBJ | SUBJinanim | {there} ] Wx+ Alphabet+ _ [ Wx | Bx ] ] ;
+|| [ SUBJ | SUBJinanim | THERE ] Wx+ Alphabet+ _ [ Wx | Bx ] ] ;
 ! ] ;
 define VerbInflection
 
@@ -123,7 +124,7 @@ regex [ {s} -> {>ing} [ "@R.aux.Hab@" | "@R.aux.Init@" | "@R.aux.Fin@" ]
 .o. [ ISZ -> {being} [ "@R.aux.Hab@" | "@R.aux.Init@" | "@R.aux.Fin@" ]
 | {be} [ "@R.aux.Obl@" | "@R.aux.Nec@" | "@R.aux.Abl@" | "@R.aux.Perm@" | "@R.aux.Int@" ]
 | ISZ "@D.aux@"
-|| [ SUBJ | SUBJinanim | {there} ] { } _ ] ;
+|| [ SUBJ | SUBJinanim | THERE ] { } _ ] ;
 define VerbInflection2
 
 regex [ [..] -> {keeps on} "@R.aux.Hab@" { }
@@ -135,7 +136,7 @@ regex [ [..] -> {keeps on} "@R.aux.Hab@" { }
 | {starts} "@R.aux.Init@" { }
 | {finishes} "@R.aux.Fin@" { }
 | "@D.aux@"
-|| [ SUBJ | SUBJinanim | {there} ] { } _ ] ;
+|| [ SUBJ | SUBJinanim | THERE ] { } _ ] ;
 define ModalAuxiliary
 
 regex [
@@ -165,6 +166,20 @@ regex [
 | { must not} "@R.tense.Obl@" "@R.neg.Neg@" "@D.prog@"
 | { must be} "@R.tense.Obl@" "@D.neg@" "@R.prog.Prog@"
 | { must not be} "@R.tense.Obl@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Present Perfect
+| { has} "@R.tense.Prf1@" "@D.neg@" "@D.prog@" RsubjectPrs3Sg
+| { have} "@R.tense.Prf1@" "@D.neg@" "@D.prog@" DsubjectPrs3Sg
+| { has not} "@R.tense.Prf1@" "@R.neg.Neg@" "@D.prog@" RsubjectPrs3Sg
+| { have not} "@R.tense.Prf1@" "@R.neg.Neg@" "@D.prog@" DsubjectPrs3Sg
+| { has been} "@R.tense.Prf1@" "@D.neg@" "@R.prog.Prog@" RsubjectPrs3Sg
+| { have been} "@R.tense.Prf1@" "@D.neg@" "@R.prog.Prog@" DsubjectPrs3Sg
+| { has not been} "@R.tense.Prf1@" "@R.neg.Neg@" "@R.prog.Prog@" RsubjectPrs3Sg
+| { have not been} "@R.tense.Prf1@" "@R.neg.Neg@" "@R.prog.Prog@" DsubjectPrs3Sg
+! Past Perfect
+| { had} "@R.tense.Prf2@" "@D.neg@" "@D.prog@"
+| { had not} "@R.tense.Prf2@" "@R.neg.Neg@" "@D.prog@"
+| { had been} "@R.tense.Prf2@" "@D.neg@" "@R.prog.Prog@"
+| { had not been} "@R.tense.Prf2@" "@R.neg.Neg@" "@R.prog.Prog@"
 ! Necessity
 | { needs to} "@R.tense.Nec@" "@D.neg@" "@D.prog@" RsubjectPrs3Sg
 | { need to} "@R.tense.Nec@" "@D.neg@" "@D.prog@" DsubjectPrs3Sg
@@ -225,7 +240,7 @@ regex [
 | { be} "@R.tense.Del@" "@R.neg.Neg@" "@R.prog.Prog@" Dsubject2SgPl
 | { be} "@R.tense.Del@" "@D.neg@" "@R.prog.Prog@"
 | { do not be} "@R.tense.Del@" "@R.neg.Neg@" "@R.prog.Prog@" Rsubject2SgPl ]
-|| Wx [ SUBJ | SUBJinanim | {there} ] _ { } \ISZ \ISZ
+|| Wx [ SUBJ | SUBJinanim | THERE ] _ { } \ISZ \ISZ
 ] ;
 define AuxiliaryPhrase
 
@@ -251,6 +266,20 @@ ISZ -> [ IS [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.neg@" "@D.prog@"
 | {will not be} "@R.tense.Def@" "@R.neg.Neg@" "@D.prog@"
 | {will be being} "@R.tense.Def@" "@D.neg@" "@R.prog.Prog@"
 | {will not be being} "@R.tense.Def@" "@R.neg.Neg@" "@R.prog.Prog@"
+! Present perfective
+| {has been} "@R.tense.Prf1@" "@D.neg@" "@D.prog@" RsubjectPrs3Sg
+| {have been} "@R.tense.Prf1@" "@D.neg@" "@D.prog@" DsubjectPrs3Sg
+| {has not been} "@R.tense.Prf1@" "@R.neg.Neg@" "@D.prog@" RsubjectPrs3Sg
+| {have not been} "@R.tense.Prf1@" "@R.neg.Neg@" "@D.prog@" DsubjectPrs3Sg
+| {has been being} "@R.tense.Prf1@" "@D.neg@" "@R.prog.Prog@" RsubjectPrs3Sg
+| {have been being} "@R.tense.Prf1@" "@D.neg@" "@R.prog.Prog@" DsubjectPrs3Sg
+| {has not been being} "@R.tense.Prf1@" "@R.neg.Neg@" "@R.prog.Prog@" RsubjectPrs3Sg
+| {have not been being} "@R.tense.Prf1@" "@R.neg.Neg@" "@R.prog.Prog@" DsubjectPrs3Sg
+! Past perfective
+| {had been} "@R.tense.Prf2@" "@D.neg@" "@D.prog@"
+| {had not been} "@R.tense.Prf2@" "@R.neg.Neg@" "@D.prog@"
+| {had been being} "@R.tense.Prf2@" "@D.neg@" "@R.prog.Prog@"
+| {had not been being} "@R.tense.Prf2@" "@R.neg.Neg@" "@R.prog.Prog@"
 ! Obligation
 | {must be} "@R.tense.Obl@" "@D.neg@" "@D.prog@"
 | {must not be} "@R.tense.Obl@" "@R.neg.Neg@" "@D.prog@"
@@ -316,7 +345,7 @@ ISZ -> [ IS [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@D.neg@" "@D.prog@"
 | {be being} "@R.tense.Del@" "@R.prog.Prog@" Dsubject2SgPl
 | {be being} "@R.tense.Del@" "@D.neg.Neg@" "@R.prog.Prog@" Rsubject2SgPl
 | {do not be being} "@R.tense.Del@" "@R.neg.Neg@" "@R.prog.Prog@" Rsubject2SgPl ]
-|| [ {there} | SUBJinanim | SUBJ ] { } ( "@D.aux@" ) _
+|| [ THERE | SUBJinanim | SUBJ ] { } ( "@D.aux@" ) _
 ] ;
 define BeAuxiliaryPhrase
 
@@ -327,7 +356,7 @@ regex [
 | [ "@R.tense.Imm@" | "@R.tense.Del@" ] Dsubject2SgPl "@D.neg@" {let }
 | [ "@R.tense.Imm@" | "@R.tense.Del@" ] Dsubject2SgPl "@R.neg@" {do not let }
 | "@D.clause.Cnj@" "@D.tense.Cond@" "@D.tense.Inf@" [ [ "@D.tense.Imm@" "@D.tense.Del@" ] | [ [ "@R.tense.Imm@" | "@R.tense.Del@" ] Rsubject2SgPl ] ]
-|| _ [ SUBJ | SUBJinanim | {there} Wx* { } [ IS | "@D.aux@" {be} | \"@D.aux@" \{be} | {will} | {to} ] ] ! context needs checking for redundancy
+|| _ [ SUBJ | SUBJinanim | THERE ] ! Wx* { } [ IS | "@D.aux@" {be} | \"@D.aux@" \{be} | {will} | {to} ] ] ! context needs checking for redundancy
 ] ;
 define PhrasePrefix
 
@@ -480,7 +509,7 @@ define PossessiveConversion
 
 ! Conversion of tags into flag-diacritics
 regex [ "Cnj+" -> "@P.clause.Cnj@" , "Rel+" -> "@P.clause.Rel@" , "Obl2+" -> "@P.aux.Obl@" , "Nec2+" -> "@P.aux.Nec@" , "Abl2+" -> "@P.aux.Abl@" , "Perm2+" -> "@P.aux.Perm@" , "Int2+" -> "@P.aux.Int@" , "Hab+" -> "@P.aux.Hab@" , "Init+" -> "@P.aux.Init@" , "Fin+" -> "@P.aux.Fin@" ]
-.o. [ "Prs+" -> "@P.tense.Prs@" , "Prt+" -> "@P.tense.Prt@" , "Def+" -> "@P.tense.Def@" , "Fut+" -> "@P.tense.Fut@" , "Int+" -> "@P.tense.Int@" , "Cond+" -> "@P.tense.Cond@" , "Imm+" -> "@P.tense.Imm@" , "Del+" -> "@P.tense.Del@" , "Inf+" -> "@P.tense.Inf@" , "Obl+" -> "@P.tense.Obl@" , "Nec+" -> "@P.tense.Nec@" , "Abl+" -> "@P.tense.Abl@" , "Perm+" -> "@P.tense.Perm@" , "Poss+" -> "@P.tense.Poss@" , "Rec+" -> "@P.tense.Rec@" , "Pred+" -> "@P.tense.Pred@" ]
+.o. [ "Prs+" -> "@P.tense.Prs@" , "Prt+" -> "@P.tense.Prt@" , "Def+" -> "@P.tense.Def@" , "Fut+" -> "@P.tense.Fut@" , "Int+" -> "@P.tense.Int@" , "Cond+" -> "@P.tense.Cond@" , "Imm+" -> "@P.tense.Imm@" , "Del+" -> "@P.tense.Del@" , "Inf+" -> "@P.tense.Inf@" , "Obl+" -> "@P.tense.Obl@" , "Nec+" -> "@P.tense.Nec@" , "Abl+" -> "@P.tense.Abl@" , "Perm+" -> "@P.tense.Perm@" , "Poss+" -> "@P.tense.Poss@" , "Rec+" -> "@P.tense.Rec@" , "Pred+" -> "@P.tense.Pred@" , "Prf1+" -> "@P.tense.Prf1@" , "Prf2+" -> "@P.tense.Prf2@" ]
 .o. [ "Prog+" -> "@P.prog.Prog@" ]
 .o. [ "Rept+" -> "@P.rept.Rept@" ]
 .o. [ "Neg+" -> "@P.neg.Neg@" ]
@@ -489,8 +518,8 @@ regex [ "Cnj+" -> "@P.clause.Cnj@" , "Rel+" -> "@P.clause.Rel@" , "Obl2+" -> "@P
 .o. [ "1SgIO+" -> "@P.recipient.1Sg@" , "2SgIO+" -> "@P.recipient.2Sg@" , "3SgIO+" -> "@P.recipient.3Sg@" ,  "1DuIO+" -> "@P.recipient.1Du@" , "2DuIO+" -> "@P.recipient.2Du@" , "3DuIO+" -> "@P.recipient.3Du@" , "1PlIO+" -> "@P.recipient.1Pl@" , "21PlIO+" -> "@P.recipient.21Pl@" , "2PlIO+" -> "@P.recipient.2Pl@" , "3PlIO+" -> "@P.recipient.3Pl@" , "4Sg/PlIO+" -> "@P.recipient.4Sg/Pl@" , "5Sg/PlIO+" -> "@P.recipient.5Sg/Pl@" , "XIO+" -> "@P.recipient.X@" , "XPlIO+" -> "@P.recipient.XPl@" ] ;
 define Tag2FlagConversion
 
-! Undoing special marking of non-subject 'it'
-regex [ IT -> {it} || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
+! Undoing special marking of non-subject 'it' and existential 'there'
+regex [ IT -> {it} , THERE -> {there} || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
 define itNonSubjectUnmarking
 
 ! Resolving irregularities of the spelling of English (irregular and regular) verb wordforms
@@ -507,13 +536,19 @@ define EngPrt
 regex [ EngPrt -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
 define EngPrt2Prt
 
+read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prf.lexc
+define EngPrf
+
+regex [ EngPrf -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
+define EngPrf2Prf
+
 read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prog.lexc
 define EngProg
 
 regex [ EngProg -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
 define EngProg2Prog
 
-source inc/eng-phrase-inflection/phonology-eng.xfscript
+source src/transcriptions/phonology-eng.xfscript
 define EngPhon
 
 regex [ ">" -> 0 || Alphabet+ _ Alphabet* ] ;
@@ -546,6 +581,7 @@ regex [ Input
 ! Resolving orthographically correct forms for listed English inflected wordforms 
 .o. EngInf2Inf
 .o. EngPrt2Prt
+.o. EngPrf2Prf
 .o. EngProg2Prog
 ! Making best guess of correct wordform for non-listed wordforms
 .o. EngPhon
