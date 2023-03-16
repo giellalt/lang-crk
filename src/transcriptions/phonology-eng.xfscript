@@ -27,6 +27,9 @@ define YReplacement
 regex %' -> 0 ||  _ \s \[ Vowel | Consonant ] ;
 define rmStress
 
+regex {n} -> {d} || %> e _ ;
+define RegularPerfect
+
 regex %> -> 0 ;
 define rmBoundary
 
@@ -37,6 +40,7 @@ EInsertion
 .o. KInsertion
 .o. YReplacement
 .o. rmStress
+.o. RegularPerfect
 ! .o. rmBoundary
 ] ;
 
