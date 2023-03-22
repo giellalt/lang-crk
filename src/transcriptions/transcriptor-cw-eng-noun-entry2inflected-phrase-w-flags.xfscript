@@ -81,13 +81,13 @@ regex [ Tags ("Dim+") (Possession) Letters+ ]
 ! Possession: insertion of possessive pronouns
 .o. [ [..] -> {my } "@R.poss.1Sg@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 | [ [..] -> {your } "@R.poss.2Sg@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
-| [ [..] -> {his/her } "@R.poss.3Sg@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+| [ [..] -> HISHER { } "@R.poss.3Sg@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 | [ [..] -> {our } "@R.poss.1Pl@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 | [ [..] -> {your and our } "@R.poss.12Pl@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 | [ [..] -> {your } "@R.poss.2Pl@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 | [ [..] -> {their } "@R.poss.3Pl@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
-| [ [..] -> {his/her/their } "@R.poss.4Sg/Pl@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
-| [ [..] -> {someone's } "@R.poss.X@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+| [ [..] -> ANOTHERS { } "@R.poss.4Sg/Pl@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
+| [ [..] -> SOMEONES { } "@R.poss.X@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 ! Non-possessed constructions
 | [ [..] -> "@D.poss@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 
@@ -111,6 +111,9 @@ regex [ Tags ("Dim+") (Possession) Letters+ ]
 
 ! Removal of morpheme boundary
 .o. ">" -> 0
+
+! Conversion of hash to slash in certain forms
+.o. HISHER -> {his/her} ,, ANOTHERS -> {another's/others'} ,, SOMEONES -> {someone's}
 ;
 
 twosided flag-diacritics
