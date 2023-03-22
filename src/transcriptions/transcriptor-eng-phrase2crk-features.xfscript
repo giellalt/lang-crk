@@ -59,6 +59,7 @@ regex [ {another over there} | {he/she/they over there} | {he or she or they ove
 .o. [ {it} -> "@P.object.0Sg@" || Bx _ " " .#. ]
 .o. [ [ {we and you} | {you and we} | {you and I} ] -> "@P.subject.21Pl@" || Bx _ Bx ,,
 {you all} -> "@P.subject.2Pl@" || Bx _ Bx ,,
+{we both} | {we two} | {the two of us} -> "@P.subject.1Du@" , {you both} | {you two} | {the two of you} -> "@P.subject.2Du@" , {they both} | {they two} | {the two of them} -> "@P.subject.3Du@" || Bx _ Bx ,,
 [ {you and us} | {us and you} | {you and me} | {me and you} ] -> "@P.object.21Pl@" || Bx _ Bx
 ] .o. [ {I} -> "@P.subject.1Sg@" || Bx _ Bx ,,
 {you} -> "@P.subject.2Sg@" || Bx _ Bx ,,
@@ -75,7 +76,8 @@ define Subject
 
 regex [ {to} -> "@P.tense.Inf@" || .#. _ Bx
 ] .o. [ {for you all to} -> "@P.subject.2Pl@" "@P.tense.Inf@" || .#. _ " " ,,
-{for you and us to} | {for you and we to} | {for you and me to} | {for us and you to} | { for we and you to} | {for me and you to} -> "@P.subject.21Pl@" "@P.tense.Inf@" || .#. _ " "
+{for you and us to} | {for you and we to} | {for you and me to} | {for us and you to} | { for we and you to} | {for me and you to} -> "@P.subject.21Pl@" "@P.tense.Inf@" ,
+{for us both to} | {for us two to} | {for the two of us} -> "@P.subject.1Du@" "@P.tense.Inf@" , {for you both to} | {for you two to} | {for the two of you} -> "@P.subject.2Du@" "@P.tense.Inf@" , {for them both to} | {for them two to} | {for the two of them} -> "@P.subject.3Du@" "@P.tense.Inf@" || .#. _ " "
 ] .o. [ {for me to} -> "@P.subject.1Sg@" "@P.tense.Inf@" || .#. _ " " ,,
 # [..] -> "@P.subject.2Sg@" || .#. _ \[ {I} | {you} | {he} | {she} | {it} | {we} | {they} | {someone} ] " " ,,
 {for you to} -> "@P.subject.2Sg@" "@P.tense.Inf@" || .#. _ " " ,,
@@ -95,7 +97,10 @@ regex [ {to} -> "@P.tense.Inf@" || .#. _ Bx
 .o. [ {let another} | {let him over there} | {let her over there} | {let them over there} | {let him/her/them} | {let him or her or them} | {let her or him or them} | {let him, her, or them} -> "@P.subject.4Sg/Pl@" "@P.tense.Imp@" || .#. _ " " ]
 .o.
 [ {let you all} -> "@P.subject.2Pl@" "@P.tense.Imp@" || .#. _ " " ,,
-{let you and us} | {let us and you} -> "@P.subject.21Pl@" "@P.tense.Imp@" || .#. _ " "
+{let you and us} | {let us and you} -> "@P.subject.21Pl@" "@P.tense.Imp@" || .#. _ " " ,,
+{let us both} | {let us two} | {let the two of us} -> "@P.subject.1Du@" "@P.tense.Imp@" || .#. _ " " ,,
+{let you both} | {let you two} | {let the two of you} -> "@P.subject.2Du@" "@P.tense.Imp@" || .#. _ " " ,,
+{let them both} | {let them two} | {let the two of them} -> "@P.subject.3Du@" "@P.tense.Imp@" || .#. _ " "
 ] .o. [ {let me} -> "@P.subject.1Sg@" "@P.tense.Imp@" || .#. _ " " ,,
 ! [..] -> "@P.subject.2Sg@" || .#. _ \[ {I} | {you} | {he} | {she} | {it} | {we} | {they} | {someone} ] " " ,,
 {let you} -> "@P.subject.2Sg@" "@P.tense.Imp@" || .#. _ " " ,,
@@ -109,7 +114,7 @@ regex [ {to} -> "@P.tense.Inf@" || .#. _ Bx
 define ReverseSubject
 
 regex [ {him/her/them over there} | {him or her or them over there} | {her or him or them over there} | {him, her, or them over there} | {her, him, or them over there} -> "@P.object.5Sg/Pl@" || Bx _ Bx ]
-.o. [ {him over there} | {her over there} | {them over there} | {him/her/them} | {him or her or them} | {her or him or them} | {him, her, or them} | {her, him, or them} -> "@P.object.4Sg/Pl@" || Bx _ Bx ]
+.o. [ {him over there} | {her over there} | {them over there} | {him/her/them} | {him or her or them} | {her or him or them} | {him, her, or them} | {her, him, or them} -> "@P.object.4Sg/Pl@" , {us both} | {us two} -> "@P.object.1Du@" , {them both} | {them two} -> "@P.object.3Du@" || Bx _ Bx ]
 .o. [ {me} -> "@P.object.1Sg@" || Bx _ Bx ,,
 {thee} -> "@P.object.2Sg@" || Bx _ Bx ,,
 {him} | {her} -> "@P.object.3Sg@" || Bx _ Bx ,,
@@ -129,28 +134,37 @@ regex [ {myself} -> "@P.reflexive.1Sg@" || Bx _ Bx ,,
 ] ;
 define Reflexive
 
-regex [ "@P.subject.2Sg@" -> "@P.object.2Sg@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@"] ?* _ ] ;
+regex [ "@P.subject.1Du@" -> "@P.object.1Du@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4g/Pl@" | "@P.subject.4Sg/Pl@" |  "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define 1DuO
+
+regex [ "@P.subject.2Sg@" -> "@P.object.2Sg@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@"| "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@"] ?* _ ] ;
 define 2SgO
 
-regex [ "@P.subject.2Pl@" -> "@P.object.2Pl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4g/Pl@" | "@P.subject.4Sg/Pl@" |  "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+regex [ "@P.subject.2Du@" -> "@P.object.2Du@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4g/Pl@" | "@P.subject.4Sg/Pl@" |  "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define 2DuO
+
+regex [ "@P.subject.2Pl@" -> "@P.object.2Pl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4g/Pl@" | "@P.subject.4Sg/Pl@" |  "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
 define 2PlO
 
-regex [ "@P.subject.3Sg@" -> "@P.object.3Sg@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+regex [ "@P.subject.3Sg@" -> "@P.object.3Sg@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
 define 3SgO
 
-regex [ "@P.subject.4Sg/Pl@" -> "@P.object.4Sg/Pl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+regex [ "@P.subject.3Du@" -> "@P.object.3Du@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4g/Pl@" | "@P.subject.4Sg/Pl@" |  "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define 3DuO
+
+regex [ "@P.subject.4Sg/Pl@" -> "@P.object.4Sg/Pl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
 define 4SgPlO
 
-regex [ "@P.subject.5Sg/Pl@" -> "@P.object.5Sg/Pl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+regex [ "@P.subject.5Sg/Pl@" -> "@P.object.5Sg/Pl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
 define 5SgPlO
 
-regex [ "@P.subject.0Sg@" -> "@P.object.0Sg@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+regex [ "@P.subject.0Sg@" -> "@P.object.0Sg@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
 define 0SgO
 
-regex [ "@P.subject.X@" -> "@P.object.X@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+regex [ "@P.subject.X@" -> "@P.object.X@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
 define XO
 
-regex [ "@P.subject.XPl@" -> "@P.object.XPl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+regex [ "@P.subject.XPl@" -> "@P.object.XPl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
 define XPlO
 
 regex [ {when there} -> "@P.tense.Cond@" "@P.subject.0Sg@" || .#. _ Bx ]
@@ -179,8 +193,8 @@ Prt2InfAnl -> || \.#. Bx _ Bx
 !!
 ] .o. [
 ! Productive past tense with the -ed suffix
-[ {ed} -> {es} "@P.tense.Prt@" || [ {I} | {you all} | {you} | {he} | {she} | {it} | {you and we} | {we} | {they} | {someone} ] " " \Bx+ [ s | z | x | s h | c h ] _ Bx ]
-.o. [ {ed} -> {s} "@P.tense.Prt@" || [ {I} | {you all} | {you} | {he} | {she} | {it} | {you and we} | {we} | {they} | {someone} ] " " \Bx+ \[ s | z | x | s h | c h ] _ Bx ]
+[ {ed} -> {es} "@P.tense.Prt@" || [ {I} | {you all} | {you} | {you both} | {you two} | {the two of us} | {he} | {she} | {it} | {you and we} | {we} | {we both} | {we two} | {the two of us} | {they} | {they both} | {they two} | {the two of them} | {someone} | {people} | {another} ] " " \Bx+ [ s | z | x | s h | c h ] _ Bx ]
+.o. [ {ed} -> {s} "@P.tense.Prt@" || [ {I} | {you all} | {you} | {you both} | {you two} | {the two of you} | {he} | {she} | {it} | {you and we} | {we} | {we both} | {we two} | {the two of us} | {they} | {they both} | {they two} | {the two of them} | {someone} | {people} | {another} ] " " \Bx+ \[ s | z | x | s h | c h ] _ Bx ]
 ] ;
 define Past
 
@@ -227,6 +241,9 @@ regex [ [..] -> "@R.tense.Fut@" "+Fut" || _ .#. ,,
 [..] -> "@R.subject.2Sg@" "+2Sg" || _ .#. ,,
 [..] -> "@R.subject.3Sg@" "+3Sg" || _ .#. ,,
 [..] -> "@R.subject.0Sg@" "+0Sg" || _ .#. ,,
+[..] -> "@R.subject.1Du@" "+1Du" || _ .#. ,,
+[..] -> "@R.subject.2Du@" "+2Du" || _ .#. ,,
+[..] -> "@R.subject.3Du@" "+3Du" || _ .#. ,,
 [..] -> "@R.subject.1Pl@" "+1Pl" || _ .#. ,,
 [..] -> "@R.subject.21Pl@" "+21Pl" || _ .#. ,,
 [..] -> "@R.subject.2Pl@" "+2Pl" || _ .#. ,,
@@ -252,6 +269,9 @@ regex [ [..] -> "@R.tense.Fut@" "+Fut" || _ .#. ,,
 [..] -> "@R.object.2Sg@" "+2SgO" || _ .#. ,,
 [..] -> "@R.object.3Sg@" "+3SgO" || _ .#. ,,
 [..] -> "@R.object.0Sg@" "+0SgO" || _ .#. ,,
+[..] -> "@R.object.1Du@" "+1DuO" || _ .#. ,,
+[..] -> "@R.object.2Du@" "+2DuO" || _ .#. ,,
+[..] -> "@R.object.3Du@" "+3DuO" || _ .#. ,,
 [..] -> "@R.object.1Pl@" "+1PlO" || _ .#. ,,
 [..] -> "@R.object.21Pl@" "+21PlO" || _ .#. ,,
 [..] -> "@R.object.2Pl@" "+2PlO" || _ .#. ,,
@@ -451,7 +471,7 @@ regex [ Letters+ .o. InsertFinalSpace
 .o. Subject
 .o. Reflexive
 .o. Object
-.o. 2SgO .o. 2PlO .o. 3SgO .o. 4SgPlO .o. 5SgPlO .o. 0SgO .o. XO .o. XPlO
+.o. 1DuO .o. 2SgO .o. 2DuO .o. 2PlO .o. 3SgO .o. 3DuO .o. 4SgPlO .o. 5SgPlO .o. 0SgO .o. XO .o. XPlO
 .o. Tense
 .o. Imperative
 .o. Progressive
