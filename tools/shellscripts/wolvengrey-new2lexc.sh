@@ -465,28 +465,73 @@ if(class=="I")
 if(class=="PVN")
 {
 
-# Grammatical preverbs (excluded): ê- ka- kâ- kê- kika- kita- kiyê- kiyi- kî- nôh- nôhci- ohci- ô- ta- tita-
+# Grammatical preverbs (excluded), e.g.:
+# ê- ka- kâ- kê- kika- kita- kiyê- kiyi- kî- nôh- nôhci- ohci- ôh- ô- ta- tita- wî-
 
   if(pos=="IPV" &&
-          (lemma!="ê-" && lemma!="ka-" && lemma!="kâ-" && lemma!="kê-" && lemma!="kika-" && lemma!="kita-" && lemma!="kiyê-" && lemma!="kiyi-" && lemma!="kî-" && lemma!="nôh-" && lemma!="nôhci-" && lemma!="ô-" && lemma!="ta-" && lemma!="tita-" && lemma!="kâh-" && lemma!="tâh-" && lemma!="wâh-" && lemma!="wî-" && lemma!="ka-kî-"))
+          (lemma!="ê-" &&
+           lemma!="ka-" &&
+           lemma!="kâ-" &&
+           lemma!="kâh-" &&
+           lemma!="kê-" &&
+           lemma!="kika-" &&
+           lemma!="kita-" &&
+           lemma!="kiyê-" &&
+           lemma!="kiyi-" &&
+           lemma!="kici-" &&
+           lemma!="kî-" &&
+           lemma!="nôh-" &&
+           lemma!="nôhci-" &&
+           lemma!="kôh-" &&
+           lemma!="kôhci-" &&
+           lemma!="ô-" &&
+           lemma!="ôh-" &&
+           # lemma!="ohci-" &&
+           lemma!="ta-" &&
+           lemma!="tita-" &&
+           lemma!="tâh-" &&
+           lemma!="wâh-" &&
+           lemma!="wî-" &&
+           lemma!="wîci-" &&
+           lemma!="ka-kî-" &&
+           lemma!="ta-kî-"))
     { contlex="PREVERBS";
       clex="PREVERBS_BOUND";
     }
 
+#   PV/ako+
+#   PV/apihci+
+#   PV/ase+
+#   PV/kipi+
+#   PV/kisi+
+#   PV/kisiwi+
+#   PV/kwataki+
+#   PV/maci+
+#   PV/pimi+
+#   PV/tahci+
+#   PV/tako+
+#   PV/wa+
+
   sub("-$","",lemma);
 
   tag=lemma;
-  gsub("â","aa",tag);
-  gsub("ê","ee",tag);
-  gsub("î","ii",tag);
-  gsub("ô","oo",tag);
+
+  gsub("â","a",tag);
+  gsub("ê","e",tag);
+  gsub("î","i",tag);
+  gsub("ô","o",tag);
+  gsub("ý","y",tag);
 
   # gsub("ý","y",lemma); # Undo marking historical -y- in lemma before outputting LEXC code
   # gsub("ý","y",stem);
 
   if(clex!="")
     { if(index(lemma,"-")==0)
+<<<<<<< HEAD
         { output[contlex] = output[contlex] sprintf("PV/%s\\+:%s %s", tag, lemma, clex);
+=======
+        { output[contlex] = output[contlex] sprintf("PV/%s+:%s %s", tag, lemma, clex);
+>>>>>>> 114a2dc3 (Revision of script for generating LEXC content for preverbs.)
             if(full=="full")
               output[contlex] = output[contlex] sprintf(" \"%s\" ;", gloss);
             else
@@ -494,7 +539,11 @@ if(class=="PVN")
           output[contlex] = output[contlex] sprintf("\n");
         }
       else
+<<<<<<< HEAD
         { output[contlex] = output[contlex] sprintf("@U.hyphen.hyphen@PV/%s\\+:@U.hyphen.hyphen@%s %s", tag, lemma, clex);
+=======
+        { output[contlex] = output[contlex] sprintf("@U.hyphen.hyphen@PV/%s+:@U.hyphen.hyphen@%s %s", tag, lemma, clex);
+>>>>>>> 114a2dc3 (Revision of script for generating LEXC content for preverbs.)
             if(full=="full")
               output[contlex] = output[contlex] sprintf(" \"%s\" ;", gloss);
             else
@@ -512,7 +561,11 @@ if(class=="PVN")
                  char[j]="";
                stem=stem char[j];
              }
+<<<<<<< HEAD
           output[contlex] = output[contlex] sprintf("@U.hyphen.NULL@PV/%s\\+:@U.hyphen.NULL@%s %s", tag, stem, clex);
+=======
+          output[contlex] = output[contlex] sprintf("@U.hyphen.NULL@PV/%s+:@U.hyphen.NULL@%s %s", tag, stem, clex);
+>>>>>>> 114a2dc3 (Revision of script for generating LEXC content for preverbs.)
             if(full=="full")
               output[contlex] = output[contlex] sprintf(" \"%s\" ;", gloss);
             else
@@ -520,7 +573,6 @@ if(class=="PVN")
           output[contlex] = output[contlex] sprintf("\n");
         }
     }
-
 }
 
 }
