@@ -48,7 +48,7 @@ define RsubjectPrs3Sg [ "@R.subject.3Sg@" | "@R.subject.4Sg@" | "@R.subject.1Dis
 
 ! define DsubjectPrs3Sg [ "@D.subject.3Sg@" "@D.subject.4Sg@" "@D.subject.1Distr@" "@D.subject.2Distr@" "@D.subject.3Distr@" "@D.subject.X@" "@D.subject.0Sg@" ] ;
 
-define DsubjectPrs3Sg [ "@D.subject.3Sg@" "@D.subject.4Sg@" "@D.subject.1Distr@" "@D.subject.2Distr@" "@D.subject.3Distr@" "@D.subject.X@" "@D.subject.0Sg@" "@R.subject.4Sg/Pl@" "@R.subject.5Sg/Pl@" ] ;
+define DsubjectPrs3Sg [ "@D.subject.3Sg@" "@D.subject.4Sg@" "@D.subject.1Distr@" "@D.subject.2Distr@" "@D.subject.3Distr@" "@D.subject.X@" "@D.subject.0Sg@" "@D.subject.4Sg/Pl@" "@D.subject.5Sg/Pl@" ] ;
 
 define Rsubject2SgPl [ "@R.subject.2Sg@" | "@R.subject.2Du@" | "@R.subject.2Pl@" ] ;
 
