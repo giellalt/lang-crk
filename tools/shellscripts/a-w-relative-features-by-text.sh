@@ -12,6 +12,10 @@ if(match($0,"^<")==0)
     for(i=2; i<=nff; i++)
        { n_features[ff[i]]++;
          n_features_by_text[text_id, ff[i]]++;
+         # if(ff[i]=="êkwa" || ff[i]=="âhpô"))
+         #   { n_features["AND/OR"]++;
+         #     n_features_by_text[text_id, "AND/OR"]++;
+         #   }
        }
   }
 }
