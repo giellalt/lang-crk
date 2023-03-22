@@ -42,25 +42,25 @@ define IndirectObject [ "1SgIO+" | "2SgIO+" | "3SgIO+" | "1DuIO+" | "2DuIO+" | "
 
 ! Variables for tenses/aspects/moods
 
-! define RsubjectPrs3Sg [ "@R.subject.3Sg@" | "@R.subject.4Sg@" | "@R.subject.1Distr@" | "@R.subject.2Distr@" | "@R.subject.3Distr@" | "@R.subject.X@" | "@R.subject.0Sg@" ] ;
+define RsubjectPrs3Sg [ "@R.subject.3Sg@" | "@R.subject.4Sg@" | "@R.subject.1Distr@" | "@R.subject.2Distr@" | "@R.subject.3Distr@" | "@R.subject.X@" | "@R.subject.0Sg@" ] ;
 
-define RsubjectPrs3Sg [ "@R.subject.3Sg@" | "@R.subject.4Sg@" | "@R.subject.1Distr@" | "@R.subject.2Distr@" | "@R.subject.3Distr@" | "@R.subject.X@" | "@R.subject.0Sg@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" ] ;
+! define RsubjectPrs3Sg [ "@R.subject.3Sg@" | "@R.subject.4Sg@" | "@R.subject.1Distr@" | "@R.subject.2Distr@" | "@R.subject.3Distr@" | "@R.subject.X@" | "@R.subject.0Sg@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" ] ;
 
-! define DsubjectPrs3Sg [ "@D.subject.3Sg@" "@D.subject.4Sg@" "@D.subject.1Distr@" "@D.subject.2Distr@" "@D.subject.3Distr@" "@D.subject.X@" "@D.subject.0Sg@" ] ;
+define DsubjectPrs3Sg [ "@D.subject.3Sg@" "@D.subject.4Sg@" "@D.subject.1Distr@" "@D.subject.2Distr@" "@D.subject.3Distr@" "@D.subject.X@" "@D.subject.0Sg@" ] ;
 
-define DsubjectPrs3Sg [ "@D.subject.3Sg@" "@D.subject.4Sg@" "@D.subject.1Distr@" "@D.subject.2Distr@" "@D.subject.3Distr@" "@D.subject.X@" "@D.subject.0Sg@" "@D.subject.4Sg/Pl@" "@D.subject.5Sg/Pl@" ] ;
+! define DsubjectPrs3Sg [ "@D.subject.3Sg@" "@D.subject.4Sg@" "@D.subject.1Distr@" "@D.subject.2Distr@" "@D.subject.3Distr@" "@D.subject.X@" "@D.subject.0Sg@" "@D.subject.4Sg/Pl@" "@D.subject.5Sg/Pl@" ] ;
 
 define Rsubject2SgPl [ "@R.subject.2Sg@" | "@R.subject.2Du@" | "@R.subject.2Pl@" ] ;
 
 define Dsubject2SgPl [ "@D.subject.2Sg@" "@D.subject.2Du@" "@D.subject.2Pl@" ] ;
 
-! define RsubjectDuPl [ "@R.subject.1Du@" | "@R.subject.2Du@" | "@R.subject.3Du@" | "@R.subject.1Pl@" | "@R.subject.21Pl@" | "@R.subject.2Pl@" | "@R.subject.3Pl@" | "@R.subject.4Pl@" | "@R.subject.XPl@" | "@R.subject.0Pl@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" ] ;
+define RsubjectDuPl [ "@R.subject.1Du@" | "@R.subject.2Du@" | "@R.subject.3Du@" | "@R.subject.1Pl@" | "@R.subject.21Pl@" | "@R.subject.2Pl@" | "@R.subject.3Pl@" | "@R.subject.4Pl@" | "@R.subject.XPl@" | "@R.subject.0Pl@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" ] ;
 
-define RsubjectDuPl [ "@R.subject.1Du@" | "@R.subject.2Du@" | "@R.subject.3Du@" | "@R.subject.1Pl@" | "@R.subject.21Pl@" | "@R.subject.2Pl@" | "@R.subject.3Pl@" | "@R.subject.4Pl@" | "@R.subject.XPl@" | "@R.subject.0Pl@" ] ;
+! define RsubjectDuPl [ "@R.subject.1Du@" | "@R.subject.2Du@" | "@R.subject.3Du@" | "@R.subject.1Pl@" | "@R.subject.21Pl@" | "@R.subject.2Pl@" | "@R.subject.3Pl@" | "@R.subject.4Pl@" | "@R.subject.XPl@" | "@R.subject.0Pl@" ] ;
 
-! define DsubjectDuPl [ "@D.subject.1Du@" "@D.subject.2Du@" "@D.subject.3Du@" "@D.subject.1Pl@" "@D.subject.21Pl@" "@D.subject.2Pl@" "@D.subject.3Pl@" "@D.subject.4Pl@" "@D.subject.4Sg/Pl@" "@D.subject.5Sg/Pl@" "@D.subject.XPl@" "@D.subject.0Pl@" ] ;
+define DsubjectDuPl [ "@D.subject.1Du@" "@D.subject.2Du@" "@D.subject.3Du@" "@D.subject.1Pl@" "@D.subject.21Pl@" "@D.subject.2Pl@" "@D.subject.3Pl@" "@D.subject.4Pl@" "@D.subject.4Sg/Pl@" "@D.subject.5Sg/Pl@" "@D.subject.XPl@" "@D.subject.0Pl@" ] ;
 
-define DsubjectDuPl [ "@D.subject.1Du@" "@D.subject.2Du@" "@D.subject.3Du@" "@D.subject.1Pl@" "@D.subject.21Pl@" "@D.subject.2Pl@" "@D.subject.3Pl@" "@D.subject.4Pl@" "@D.subject.XPl@" "@D.subject.0Pl@" ] ;
+! define DsubjectDuPl [ "@D.subject.1Du@" "@D.subject.2Du@" "@D.subject.3Du@" "@D.subject.1Pl@" "@D.subject.21Pl@" "@D.subject.2Pl@" "@D.subject.3Pl@" "@D.subject.4Pl@" "@D.subject.XPl@" "@D.subject.0Pl@" ] ;
 
 
 define Px [ "." | "," | ":" | ";" | "!" | "?" | .#. ] ;
@@ -390,9 +390,9 @@ regex [ IOBJ -> {me} "@R.recipient.1Sg@"
 , IOBJ -> {you all} "@R.recipient.2Pl@"
 , IOBJ -> {them} "@R.recipient.3Pl@"
 ! , IOBJ -> {him/her/them} "@R.recipient.4Sg/Pl@"
-, IOBJ -> {another} "@R.recipient.4Sg/Pl@"
+, IOBJ -> {another/others} "@R.recipient.4Sg/Pl@"
 ! , IOBJ -> {him/her/them over there} "@R.recipient.5Sg/Pl@"
-, IOBJ -> {another over there} "@R.recipient.5Sg/Pl@"
+, IOBJ -> {another/others over there} "@R.recipient.5Sg/Pl@"
 , IOBJ -> {someone} "@R.recipient.X@" "@D.neg@"
 , IOBJ -> {anyone} "@R.recipient.X@" "@R.neg.Neg@"
 , IOBJ -> {some people} "@R.recipient.XPl@"
@@ -422,8 +422,8 @@ regex [ SUBJ -> {me} "@R.subject.1Sg@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R
 , SUBJinanim -> {them over there} "@R.subject.4Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 ! , SUBJ -> {him/her/them} "@R.subject.4Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 ! , SUBJ -> {him/her/them over there} "@R.subject.5Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
-, SUBJ -> {another} "@R.subject.4Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
-, SUBJ -> {another over there} "@R.subject.5Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
+, SUBJ -> {another/others} "@R.subject.4Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
+, SUBJ -> {another/others over there} "@R.subject.5Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 , SUBJ -> {someone} "@R.subject.X@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]
 , SUBJ -> {people} "@R.subject.XPl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]
 || Wx _ Wx ]
@@ -447,8 +447,8 @@ regex [ SUBJ -> {me} "@R.subject.1Sg@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R
 , SUBJ | SUBJinanim -> {they over there} "@R.subject.4Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
 ! , SUBJ | SUBJinanim -> {s/he/they} "@R.subject.4Sg/Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
 ! , SUBJ -> {s/he/they over there} "@R.subject.5Sg/Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
-, SUBJ | SUBJinanim -> {another} "@R.subject.4Sg/Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
-, SUBJ -> {another over there} "@R.subject.5Sg/Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
+, SUBJ | SUBJinanim -> {another/others} "@R.subject.4Sg/Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
+, SUBJ -> {another/others over there} "@R.subject.5Sg/Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
 , SUBJ -> {someone} "@R.subject.X@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@"
 , SUBJ -> {people} "@R.subject.XPl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@"
 || Wx _ Wx ] ;
@@ -470,8 +470,8 @@ regex [ DOBJ -> {me} "@R.object.1Sg@"
 , DOBJ -> {them} "@R.object.3Pl@"
 ! , DOBJ -> {him/her/them} "@R.object.4Sg/Pl@"
 ! , DOBJ -> {him/her/them over there} "@R.object.5Sg/Pl@"
-, DOBJ -> {another} "@R.object.4Sg/Pl@"
-, DOBJ -> {another over there} "@R.object.5Sg/Pl@"
+, DOBJ -> {another/others} "@R.object.4Sg/Pl@"
+, DOBJ -> {another/others over there} "@R.object.5Sg/Pl@"
 , DOBJ -> {someone} "@R.object.X@" "@D.Neg@"
 , DOBJ -> {anyone} "@R.object.X@" "@R.neg.Neg@"
 , DOBJ -> {people} "@R.object.XPl@"
