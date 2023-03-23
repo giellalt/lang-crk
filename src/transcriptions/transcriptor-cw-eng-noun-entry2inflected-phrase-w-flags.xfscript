@@ -28,9 +28,9 @@ define Vowel [ a | e | i | o | u | â | ê | î | ô | á | é | í | ó | ú | 
 
 define Capital [ A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z ] ;
 
-define Alphabet [ Vowel | Consonant | "y" | Capital ] ;
+define Alphabet [ Vowel | Consonant | "y" | Capital | "-" ] ;
 
-define Punctuation [ "." | "," | ":" | ";" | "!" | "?" | "-" | "/" | "|" | "\" | %' | %" | "(" | ")" | "[" | "]" | "{" | "}" ] ;
+define Punctuation [ "." | "," | ":" | ";" | "!" | "?"  | "/" | "|" | "\" | %' | %" | "(" | ")" | "[" | "]" | "{" | "}" ] ;
 
 define Symbols [ "@" | "#" | "$" | "€" | "£" | "§" | "%" | "&" | "+" | "*" | "<" | ">" | "+" | "=" | "~" | "^" ] ;
 
@@ -79,6 +79,7 @@ regex [ Tags ("Dim+") (Possession) Letters+ ]
 .o. [ [..] -> [ {little } "@R.dim.Dim@" ] | "@D.dim.Dim@" || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
 
 ! Possession: insertion of possessive pronouns
+.o. [ [..] -> [ {<other } "@R.number.Obv@" ] | "@D.number.Obv@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 .o. [ [..] -> {my } "@R.poss.1Sg@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 | [ [..] -> {your } "@R.poss.2Sg@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 | [ [..] -> HISHER { } "@R.poss.3Sg@" || [.#. \Letters+ " " ] | [ Punctuation " " ] _ ]
@@ -95,7 +96,10 @@ regex [ Tags ("Dim+") (Possession) Letters+ ]
 .o. [ [..] -> [ {a> } "@R.number.Sg@" "@D.poss@" ] || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
 |    [ [..] -> [ "@R.number.Sg@" RPossFlags ] || [ [ .#. \Letters+ " " ] | [ Punctuation " " ] ] _ Letters ]
 |   [ [..] -> [ {>s} "@R.number.Pl@" ] || \Bx _ [ .#. | Bx ] | [ { of } | { for } | { with } | { among } | { about } | { who } ] .o. {>s} "@R.number.Pl@" -> 0 || {>s} "@R.number.Pl@" [ \[ Bx | .#. ]+ | Bx ] _ ]
-|   [ [..] -> [ { over there} "@R.number.Obv@" ] || \Punctuation _ [ .#. | Punctuation ] ]
+! |   [ [..] -> [ {(s)} "@R.number.Obv@" ] || \Punctuation _ [ .#. | Punctuation ] ]
+|   [ [..] -> [ {(s)} "@R.number.Obv@" ] || \Bx _ [ .#. | Bx ] | [ { of } | { for } | { with } | { among } | { about } | { who } ] .o. {(s)} "@R.number.Obv@" -> 0 || {(s)} "@R.number.Obv@" [ \[ Bx | .#. ]+ | Bx ] _ ]
+! |   [ [..] -> [ { over there} "@R.number.Obv@" ] || \Punctuation _ [ .#. | Punctuation ] ]
+! | [ [..] -> "@R.number.Obv@" || \Punctuation _  [ .#. | Punctuation ] ]
 ! Locative forms are singular by default, and with an indefinite article unless possessed
 |   [ [..] -> [ {in a> } "@R.number.Loc@" "@D.poss@" ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ]
 |   [ [..] -> [ {in } "@R.number.Loc@" RPossFlags ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ]
@@ -103,6 +107,7 @@ regex [ Tags ("Dim+") (Possession) Letters+ ]
 |   [ [ [..] -> [ {among> } "@R.number.Distr@" ] || [ .#. \Letters+ " " ] | [ Punctuation " " ] _ ] .o. [ [..] -> [ {>s} "@R.number.Distr@" ] ||  _ [ .#. | Bx | [ { of } | { for } | { with } | { among } | { who } ] ] ] .o. [ {>s} "@R.number.Distr@" -> 0 || {>s} "@R.number.Distr@" [ \[ Bx | .#. ]+ | Bx ]  _ ] ]
 
 ! Allomorphy for the indefinite article: <a> -> <an> | _ Vowel
+.o. [ [..] -> {an/} "@D.poss@" | "@R.poss@" || _ {<other } ]
 .o. [ [..] -> n || { a>} _ " " \Letters+ Vowel ]
 
 ! Plural noun inflection
@@ -110,7 +115,7 @@ regex [ Tags ("Dim+") (Possession) Letters+ ]
 .o. EngNounMorphophonology
 
 ! Removal of morpheme boundary
-.o. ">" -> 0
+.o. [ "<" | ">" ] -> 0
 
 ! Conversion of hash to slash in certain forms
 .o. HISHER -> {his/her} ,, ANOTHERS -> {another's/others'} ,, SOMEONES -> {someone's}
