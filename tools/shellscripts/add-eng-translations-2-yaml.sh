@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ENG_DEF="${1/ /_}"
+ENG_DEF="${1// /_}"
 
 gawk -v ENG_DEF=$ENG_DEF -v ENG_FST=$2 'BEGIN { eng_def=ENG_DEF;
   eng_fst=ENG_FST;
