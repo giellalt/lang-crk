@@ -1,7 +1,7 @@
 ! Instructions for compiling a morpheme completion FST
 ! based on morpheme boundaries
 
-load ../../src/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
+load ../../src/fst/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
 define Words
 
 !! Prefix Weighting !!
@@ -65,7 +65,7 @@ define Stop [ c | k | p | t ] ;
 
 ! Making use of pre-existing spellrelax rules
 
-load ../../src/orthography/spellrelax.compose.hfst
+load ../../src/fst/orthography/spellrelax.compose.hfst
 invert net
 define SpellRelax
 

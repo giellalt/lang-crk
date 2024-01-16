@@ -10,16 +10,11 @@ GT_ORTHOGRAPHIC_REGEX_SRCS=\
 		inituppercase.regex \
 		spellrelax.regex    \
 		spellrelax-mobile-keyboard.regex \
-		spellrelax.Cans.regex \
-		spellrelax.macron.regex \
-		circumfl-to-macron.regex \
 		spellrelax-tags.regex
 
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
 		allcaps.xfscript      \
 		downcase-derived_proper-strings.xfscript \
-		Latn-to-Cans.xfscript \
-		Cans-to-Latn.xfscript \
 		spellrelax-with-tags.xfscript
 
 # Add extra targets here:

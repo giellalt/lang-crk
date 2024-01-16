@@ -15,29 +15,20 @@
 ## You should have received a copy of the GNU General Public License
 ## along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-####### Source file defs: ########
+# Add local build rules and shared here...
 
-#! @param GT_TRANSCRIPTIONS_SRCS required, the source files for orthographic
-#!        transcriptions.
-#GT_TRANSCRIPTIONS_SRCS=clock.lexc date.lexc numbers.lexc
-GT_TRANSCRIPTIONS_SRCS=\
-		transcriptor-clock-digit2text.lexc \
-		transcriptor-date-digit2text.lexc \
-		transcriptor-numbers-digit2text.lexc \
-		transcriptor-money-digit2text.lexc
+generated_files/eng-propernouns.lexc: \
+				$(GIELLA_SHARED)/eng/src/fst/stems/eng-propernouns.lexc
+		$(AM_V_at)$(MKDIR_P) generated_files
+		$(AM_V_GEN)cp -f $< $@
+	
+generated_files/eng-$(GTLANG)-propernouns.lexc: \
+			generated_files/eng-propernouns.lexc \
+			$(srcdir)/stems/$(GTLANG)-propernouns.lexc
+		$(AM_V_GEN)rm -f $@ && \
+			cp -f $(srcdir)/stems/$(GTLANG)-propernouns.lexc $@ && \
+			echo "" >> $@ && \
+			echo "! <--- Dump from ENG -->" >> $@ && \
+			echo "" >> $@ && \
+			cat $< >> $@
 
-#! @param GT_ABBREV_SRCS required, for abbreviation expansions
-GT_ABBREV_SRCS=transcriptor-abbrevs2text.lexc
-
-GT_TRANSCRIPTIONS_REGEX_SRCS=
-
-GT_CUSTOM_TARGETS=
-
-### BEGIN: Custom build rules: ###
-
-
-### END: Custom build rules: ###
-
-include $(top_srcdir)/../giella-core/am-shared/src-transcriptions-dir-include.am
-
-# vim: set ft=automake:
