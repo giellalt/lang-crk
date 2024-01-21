@@ -31,7 +31,7 @@
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/numerals.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/numerals.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/numerals.lexc)</small>
 
 ---
 

@@ -31,7 +31,7 @@ End of noun affixes code
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/noun_affixes.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/affixes/noun_affixes.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/noun_affixes.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/affixes/noun_affixes.lexc)</small>
 
 ---
 
@@ -42,7 +42,7 @@ nouns, but with a colon (':') as separator.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/propernouns.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/affixes/propernouns.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/propernouns.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/affixes/propernouns.lexc)</small>
 
 ---
 
@@ -51,7 +51,7 @@ nouns, but with a colon (':') as separator.
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/symbols.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/affixes/symbols.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/symbols.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/affixes/symbols.lexc)</small>
 
 ---
 
@@ -538,7 +538,795 @@ End of verb affixes LEXC code
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/affixes/verb_affixes.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/affixes/verb_affixes.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/morphology/affixes/verb_affixes.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/affixes/verb_affixes.lexc)</small>
+
+---
+
+
+Definitions
+
+Rules
+
+VG>i2 -> VV
+
+* *mêskanaw>i2^DIMs*
+* *mêskanâ000s*
+
+* *mêskanaw>i2hk*
+* *mêskanâ000hk*
+
+* *sôniyâw>i2^DIMs*
+* *sôniyâ000s0*
+
+* *miskotâkay>i2^DIMs*
+* *miskocâkâ000s0*
+
+* *nâpêw>i2^DIMsis*
+* *nâpê0000sis*
+
+* *iskwêw>i2^DIMsis*
+* *iskwê0000sis*
+
+* *maskosiy>i2^DIMs*
+* *maskosî0000s*
+
+* *pikiw>i2^DIMs*
+* *pikî0000s*
+
+* *maskosiy>i2hk*
+* *maskosî000hk*
+
+* *sîwâpoy>i2^DIMs*
+* *sîwâpô0000s*
+
+* *tohtôsâpoy>i2hk*
+* *tohtôsâpô000hk*
+
+* *wâwi>i2^DIMs*
+* *wâwi000s*
+
+* *ôsi>i2hk*
+* *ôsi00hk*
+
+* *atimw>i2^DIMs*
+* *acimo000s*
+
+* *mistikw>i2hk*
+* *mistiko00hk*
+* *sâkahikan>i2^DIMs*
+* *sâkahikan0i0s*
+
+* *maskisin>i2hk*
+* *maskisin0ihk*
+
+* *atimw*
+* *atim0*
+
+* *askihkw*
+* *askihk0*
+
+* *nit2<nînihikw*
+* *ni00nînihik*
+
+* *a>tân*
+* *ê0tân*
+
+* *nit2<astotin>i2^DIMs*
+* *nic0ascocin0i0s*
+
+* *ê^EGLOT<acimo>t*
+* *êh0acimo0t*
+
+* *ê^EGLOT<d1ay2<acimo>t*
+* *êh00ay0acimo0t*
+
+* *ê^EGLOT<d2ay3d1âh<acimo>t*
+* *êh00ay0âh0acimo0t*
+
+* *nit2<nêhiyawê>n2*
+* *ni00nêhiyawâ0n*
+* *kit2<kâsîhkwê>n2*
+* *ki00kâsîhkwâ0n*
+
+* *nit2<tipiska>n2*
+* *ni00tipiskê0n*
+* *kit2<kiskêyihta>n2*
+* *ki00kiskêyihtê0n*
+
+* *ê-<nîpin3>k*
+* *ê-0nîpih0k*
+
+* *ê-<mispon>k*
+* *ê-0mispo00k*
+
+* *wapâht4>ikâtê>w*
+* *wapâhc0ikâtê0w*
+
+* *ê-<mow2>i2ht*
+* *ê-0mow0iht*
+* *ê-<ayaw2>i2koyâhk*
+* *ê-0ayaw0ikoyâhk*
+* *kit2<kîskisw>in*
+* *ki00kîskiso00n*
+* *nit2<kîskisw>i2mâwa*
+* *ni00kîskiso00mâwa*
+* *ê-<kîskisw>i2tân*
+* *ê-0kîskiso00tân*
+* *ê-<kîskisw>it*
+* *ê-0kîskiso00t*
+* *ê-<kîskisw>i2sk*
+* *ê-0kîskiso00sk*
+* *ê-<kîskisw>i2koyâhk*
+* *ê-0kîskiso00koyâhk*
+* *nit2<kîskisw>i2kawin*
+* *ni00kîskiso00kawin*
+* *kîskisw>in*
+* *kîskiso00n*
+* *kîskisw>ii2hkan*
+* *kîskisô00hkan*
+
+* *kit2<nitonaw>in*
+* *ki00nitonaw0in*
+* *nit2<nitonaw>i2mâwa*
+* *ni00nitonâ000mâwa*
+* *ê-<nitonaw>i2tân*
+* *ê-0nitonâ000tân*
+* *ê-<nitonaw>it*
+* *ê-0nitonaw0it*
+* *ê-<nitonaw>i2sk*
+* *ê-0nitonâ000sk*
+* *ê-<nitonaw>i2koyâhk*
+* *ê-0nitonâ000koyâhk*
+* *nit2<nitonaw>i2kawin*
+* *ni00nitonâ000kawin*
+* *nitonaw>in*
+* *nitonaw0in*
+* *nitonaw>îhkan*
+* *nitonaw0îhkan*
+
+* *it3>i*
+* *is0i*
+* *kit2<nakat3>in*
+* *ki00nakas0in*
+* *nit2<nakat3>i2mâwa*
+* *ni00nakat0imâwa*
+* *ê-<nakat3>i2tân*
+* *ê-0nakat0itân*
+* *ê-<nakat3>it*
+* *ê-0nakas0it*
+* *ê-<nakat3>i2sk*
+* *ê-0nakat0isk*
+* *ê-<nakat3>i2koyâhk*
+* *ê-0nakat0ikoyâhk*
+* *nit2<nakat3>i2kawin*
+* *ni00nakat0ikawin*
+* *nakat3>in*
+* *nakas0in*
+* *nakat3>ii2hkan*
+* *nakas0îhkan*
+
+* *kit2<kost3>in*
+* *ki00ko0s0in*
+* *nit2<kost3>i2mâwa*
+* *ni00kost0imâwa*
+* *ê-<kost3>i2tân*
+* *ê-0kost0itân*
+* *ê-<kost3>it*
+* *ê-0ko0s0it*
+* *ê-<kost3>i2sk*
+* *ê-0kost0isk*
+* *ê-<kost3>i2koyâhk*
+* *ê-0kost0ikoyâhk*
+* *nit2<kost3>i2kawin*
+* *ni00kost0ikawin*
+* *kost3>in*
+* *ko0s0in*
+* *kost3>ii2hkan*
+* *ko0s0îhkan*
+
+* *mi4<îwat3>i2^DIMs*
+* *m00îwac0i0s*
+
+__`OUTSIDE RULES`__
+
+* *d1ay2-<nipâw*
+* *na0-0nipâw*
+
+* *d1âh-<nipâw*
+* *nâh-0nipâw*
+
+* *d2ay3-d1âh-<nipâw*
+* *na0-nâh-0nipâw*
+
+* *d2ay3-d1âh-<ayâw*
+* *0ay-0âh-0ayâw*
+
+* *d1âh-<ayâw*
+* *0âh-0ayâw*
+
+* *d1ay2-<ayâw*
+* *0ay-0ayâw*
+
+INITIAL CHANGE
+
+* *nipât^IC*
+* *nêpât0*
+
+* *miyo-nipât^IC*
+* *mêyo-nipât0*
+
+* *itwêt^IC*
+* *êtwêt0*
+
+* *apit^IC*
+* *êpit0*
+
+* *wayawit^IC*
+* *wêyawit0*
+
+* *îkatêhtêt^IC*
+* *âkatêhtêt0*
+
+* *nîmit^IC*
+* *nâmit0*
+
+* *0ohcît^IC*
+* *wêhcît0*
+
+* *m0ostohtêt^IC*
+* *mwêstohtêt0*
+
+* *0oyôyot^IC*
+* *wêyôyot0*
+
+* *k0ocît^IC*
+* *kwêcît0*
+
+* *îkatêhât^IC*
+* *âkatêhât0*
+
+* *00îkatêhât^IC*
+* *iyîkatêhât0*
+
+* *00êskêt^IC*
+* *iyêskêt0*
+
+* *00âcimot^IC*
+* *iyâcimot0*
+
+* *00ôhkomit^IC*
+* *iyôhkomit0*
+
+* *w3<spiton*
+* *o0spiton*
+
+* *ni<spiton*
+* *ni0spiton*
+
+* *ki<spiton*
+* *ki0spiton*
+
+* *w3<îpit*
+* *w0îpit*
+
+* *w3<ahkwan*
+* *w0ahkwan*
+
+* *ni4<ohkom*
+* *n00ôhkom*
+
+* *ni4<ohkom>i2nân>ak*
+* *n00ôhkom0inân0ak*
+
+* *ki4<ohkom*
+* *k00ôhkom*
+
+* *w3<ohkom>a*
+* *00ohkom0a*
+
+* *nit2<ospwâkan*
+* *nit0ôspwâkan*
+
+* *kit2<ospwâkan*
+* *kit0ôspwâkan*
+
+* *ot2<ospwâkan*
+* *ot0ôspwâkan*
+
+Composing the rules together
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/phonology.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/phonology.xfscript)</small>
+
+---
+
+
+# Plains Cree morphological analyser
+INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
+
+# Definitions for Multichar_Symbols
+
+## Analysis symbols
+
+The morphological analyses of wordforms of Plains Cree are presented
+in this system in terms of the following symbols.
+(It is highly suggested to follow existing standards when adding new tags).
+
+POS
+
+* +N	         = Noun
+* +V	         = Verb
+* +Ipc		 = Indeclinable Particle
+* +Prop       
+* +Adv        
+* +CC         
+* +CS         
+* +Interj     
+* +Phr        
+* +Pron       
+* +Num        
+* +Arab       
+* +Rom        
+* +PUNCT       = punctuation symbols
+* +LEFT        = the left part of a paired punctuation symbol
+* +RIGHT       = the right part of a paired punctuation symbol
+* +CLB         = clause boundary symbols
+* +Symbol = independent symbols in the text stream, like £, €, ©
+* +ABBR 
+
+Nominal morphology
+
+* +Loc         Locative
+* +Obv         Obviative
+* +Voc         Vocative
+
+* +Dim         Diminutive
+
+Particles
+
+* +Def	     This is the intransitive demonstrative, i.e. the definite.
+* +Indef       Indefinite
+
+* +Dem         Demonstrative
+* +Prox	     Demonstrative Proximate
+* +Med	     Demonstrative Medial
+* +Dist	     Demonstrative Distal
+* +Pers = personal pronouns? At least it seems so based on the code
+* +Interr      Interrogative (who/whose/what/what kind)
+* +Foc	     Focus particle
+
+ordinals
+
+Verbal MSP
+* +Prs  
+* +Fut  
+* +Prt  
+* +Cnj  
+* +Int   Future Intentional
+* +Def   Future Definite (TODO: okay to overlap with particle tag of the same name?)
+
+* +Ind   Indicative, aka Independent
+* +Imp   Imperative, consider deleting +Imp tag
+* +Del   Delayed imperative
+* +Imm   Immediate imperative, consider deleting +Imp tag
+* +Cond  TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
+
+* +1Sg     first singular
+* +2Sg     etc
+* +3Sg    
+
+* +1Pl     1Pl is exclusive plural (I, them, not you)
+* +2Pl    
+* +3Pl    
+* +12Pl    12Pl is inclusive plural (I, you, ...)
+* +4Sg     Fourth Person inanimate singlar (used only in the VII paradigms)
+* +4Pl     Fourth Person inanimate plural (used only in the VII paradigms)
+* +4Sg/Pl    
+* +5Sg/Pl    
+
+* +1SgO    objective conjugation
+* +2SgO   
+* +2Sg/PlO    Used in the syncretic 2sg/pl -> 1pl in the VTA paradigms
+* +3SgO   
+* +SgO    
+* +1PlO   
+* +2PlO   
+* +12PlO	
+* +3PlO   
+* +PlO    
+* +4Sg/PlO  ambiguous 4th person (both Singular and Plural)
+* +5Sg/PlO  ambiguous 5th person (both Singular and Plural)
+* +X  Unspecified actor forms Okimāsis p. 118
+
+Person prefix fragment features
+
+Nominal morphosyntactic features
+* +Sg		  singular
+* +Pl		  plural
+
+* +Px1Sg	  person prefixes for nouns
+* +Px2Sg	 
+* +Px3Sg	 
+* +Px4Sg	 
+* +Px1Pl	  obviative
+* +Px12Pl	  inclusive
+* +Px2Pl	 
+* +Px3Pl	 
+* +Px4Pl	 
+* +Der/Dim  diminutive derivation
+
+* RdplW+  Reduplication Type 1 (Weak)
+* RdplS+  Reduplication Type 2 (Strong)
+
+* +Der/Com  Comitative circumfix (wîci-...-m)
+* +Der/X  VTI x-actor to VII-1
+
+Verb conjugation (transitivity + animacy classes)
+* +AI       intransitive with animate subject,
+* +II       intransitive with inanimate subject,
+* +TA       transitive with animate object, and
+* +TI       transitive with inanimate object.
+
+Noun animacy and dependency classes
+* +A		  animate noun
+* +I		  inanimate noun
+* +D		  dependent noun
+
+* +Qst      yes-no question particle; cî
+* +Neg      negation; [na]môy[a].
+
+Preverbs
+
+## Auxiliary symbols
+
+These symbols either shape or govern the
+morphophonological structure
+
+* %> 		  suffix border
+* %< 		  prefix border
+
+## Symbols that need to be escaped on the lower side (towards twolc):
+* **»7**:  Literal »
+* **«7**:  Literal «
+```
+ %[%>%]  - Literal >
+ %[%<%]  - Literal <
+```
+
+Special characters for morphophonology
+* w2       non-collapsing glide, e.g. mowêw:mow2
+* t2 		 Epenthetic -t- between person prefixes and vowel-initial stems
+* t3       t to s in VTA-4
+* t4       t:c in VTI-1 with unspecified actor
+* y2       non-collapsing glide
+* ý2	 non-collapsing glide
+* y3       epenthetic joiner in reduplication of vowel-initial stems
+* i2       VTA-5i epenthesis.
+
+* h2 	  Prefix in possessives
+
+Triggers for various morphophonological phenomena
+Mostly, these are not realized themselves as any grapheme/phoneme
+
+* %^EGLOT    glottal stop after e, for eh- in conjunctive order
+
+## Usage tags
+
+These tags distinguish different special-purpose analysers
+and generators from each other. Thus, for examples, we have
+normative and descriptive analysers, and generators for different purposes.
+
+* +Err/Orth  tag for substandard forms
+* +Err/Frag  tag for word-form fragments
+* +Dial  tag for dialectical forms that can't be called errors
+* +Use/NG   not-generate, for ped generation isme-ped.fst
+* +Eng indicates that this is an English form
+
+Flagdiacritics
+
+These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
+
+For indicative, there are prefixes, so here we need one
+flag for each person-number combination. Note that
+for the inverse objective conjugation, the flag refers to
+the **prefix**, not to the subject. So *indsg1* refers to either
+subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
+
+The conjunct form always has
+the ê- prefix, and future conditional never has a prefix.
+
+* @U.verb.FutCon@  Future Conditional
+
+Prefixes with a certain phonological content:
+
+* @U.person.NULL@ 
+* @U.person.NI@ 
+* @U.person.KI@ 
+
+Order
+
+* @U.order.indep@  Independent
+* @U.order.cnj@    Conjunct
+* @U.order.imp@    Imperative
+
+Tense
+
+New multichar symbols for nouns
+
+End of new and all Multichar_Symbols
+
+ LEXICON Root          is where it all starts
+* NOUN_PREFIXES   ;    
+* NOUN_IRREGULARS ;    
+* NOUN_VOCATIVES  ;    
+* VerbPrefixes    ;    
+* Pronoun         ;    
+* Propernouns     ;    
+* Particles       ;    
+* Numerals        ;    
+* Abbreviation    ;    
+* Punctuation     ;    
+* Symbols         ;    
+* NON_STANDARD     ;    
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/root.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/root.lexc)</small>
+
+---
+
+
+# File containing abbreviations 
+
+## Lexica for adding tags and periods
+
+Splitting in 4 + 1  groups, because of the preprocessor
+
+* **LEXICON Abbreviation   **
+1. The ITRAB ;	    lexicon (intransitive abbrs)
+1. The TRNUMAB ;   lexicon (abbrs trans wrt. numberals)
+
+## The sublexica
+### Dividing between abbreviations with and witout final period
+
+* **LEXICON ab-noun   **
+
+* **LEXICON ab-adv   **
+
+### The lexicons that add tags
+
+* **LEXICON ab-nodot-noun   **  The bulk
+
+* **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
+
+* **LEXICON ab-nodot-adv   **
+
+* **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
+
+* **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
+
+## The abbreviation lexicon itself
+
+* **LEXICON ITRAB   ** are intransitive abbreviations, Ltd. etc.
+
+* **LEXICON TRNUMAB   ** contains abbreviations who are transitive in front of numerals 
+
+For abbrs for which numerals are complements, but other
+words not necessarily are. This group treats arabic numerals as
+if it were transitive but letters as if it were intransitive.
+
+* **LEXICON TRAB   ** contains transitive abbreviations
+
+This lexicon is for abbrs that always have a constituent following it.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/abbreviations.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/abbreviations.lexc)</small>
+
+---
+
+Place-holder for inserting derivational FST after prefixes and before suffixes
+DRV-FST is the place-holder character
+
+Linking verb stems from Derivational FST to their inflectional suffixes
+
+Nouns
+
+Verbs
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/derivation_stems.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/derivation_stems.lexc)</small>
+
+---
+
+
+
+Test lemma/stem set for nouns according the new crk FST
+
+Complete extraction of lemma:stem info from CW/AEW (2023) and (MD 2023), according to
+LEXC structure in the new crk FST.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/noun_header.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/noun_header.lexc)</small>
+
+---
+
+
+
+Test lemma/stem set for nouns according the new crk FST
+
+Complete extraction of lemma:stem info from AEW 2020, according to
+LEXC structure in the new crk FST.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/noun_stems.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/noun_stems.lexc)</small>
+
+---
+
+
+# Plains Cree numerals                           
+
+## The file for Arabic, Roman, and other symbolic numerals
+
+* **LEXICON NUM-PREFIXES   **
+
+* **LEXICON ARABIC   ** arabic numerals
+
+* **LEXICON ARABICLOOPphone   ** +358(0)16671254
+
+* **LEXICON ARABICCASEphone   **  
+
+* **LEXICON ARABICLOOP   **
+
+* **LEXICON ARABICLOOPORD   ** ordinals
+
+* **LEXICON NUMARABTAG   ** 
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/numeral_symbols.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/numeral_symbols.lexc)</small>
+
+---
+
+
+# Plains Cree numerals                           
+
+## The file for numerals
+
+* LEXICON Numerals 
+
+## Here start the 999 numbers
+
+* LEXICON UNDERTHOUSAND 
+
+* LEXICON HUNDREDS 
+
+* LEXICON CUODI 
+
+* LEXICON HUNDRED 
+
+* LEXICON TENS 
+
+* LEXICON TEN 
+
+* LEXICON ONESTONEXT 
+
+* LEXICON TEENS 
+
+* LEXICON ONES 
+
+* LEXICON CARDINAL 
+
+* LEXICON NUM  adds +Num+Ipc
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/numerals.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/numerals.lexc)</small>
+
+---
+
+
+# Plains Cree particles                           
+
+The file contains the following lexicons, with content as described:
+
+* LEXICON Particle  adds +Ipc
+
+* LEXICON Particle/Interjection   adds +Ipc+Interj
+
+* LEXICON Particle/Name  adds +Ipc+Prop
+
+* LEXICON Particle/Phrase  adds +Ipc+Phr
+
+* LEXICON Particles  contains the actual list of particles.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/particles.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/particles.lexc)</small>
+
+---
+
+
+## Plains Cree pronouns
+
+There are more pronoums to be added here.
+
+LEXICON Pronoun 
+
+LEXICON Personal  \\
+niýa+Pron+Pers+1Sg:niýa # ; 
+kiýa+Pron+Pers+2Sg:kiýa # ; 
+
+LEXICON Interrogative   \\
+awîna+Pron+Interr+A+Sg:awîna # "who,whose" ; 
+awîniki+Pron+Interr+A+Pl:awîniki # "who" ; 
+awînihi+Pron+Interr+A+Obv:awînihi # "who" ; 
+awîniwâ+Pron+Interr+A+Obv:awîniwâ # "who" ; 
+
+LEXICON Indefinite  \\
+awiyak+Pron+Indef+A+Sg:awiyak # "someone" ; 
+awiyak+Pron+Indef+A+Pl:awiyakak # "some people" ;
+
+LEXICON Demonstrative    \\
+ANIMATE \\
+awa+Pron+Dem+Prox+A+Sg:awa # "this" ; 
+ôki+Pron+Dem+Prox+A+Pl:ôki # "these" ; 
+ôhi+Pron+Dem+Prox+A+Obv:ôhi # "this/these" ; 
+
+INANIMATE \\
+
+ôma+Pron+Dem+Prox+I+Sg:ôma # "this" ; 
+ôhi+Pron+Dem+Prox+I+Pl:ôhi # "these" ; 
+
+ôma+Pron+Def+Prox+I+Sg:ôma # "this one" ; 
+ôhi+Pron+Def+Prox+I+Pl:ôhi # "these ones" ; 
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/pronouns.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/pronouns.lexc)</small>
+
+---
+
+
+
+Model verb lemmas and stems for new crk FST
+
+Complete extraction of lemma:stem info from CW/AEW (2023) and (MD 2023), according to
+LEXC structure in the new crk FST.
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/verb_header.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/verb_header.lexc)</small>
+
+---
+
+
+
+Model verb lemmas and stems for new crk FST
+
+Full incorporation of AEW 2020 verbs into new crk FST
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/verb_stems.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/verb_stems.lexc)</small>
+
+---
+
+Hyphenator and text to ipa for Plains Cree
+
+Defining sets
+
+The rules
+
+Long vowels
+
+* * *
+
+<small>This (part of) documentation was generated from [src/fst/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/phonetics/txt2ipa.xfscript)</small>
 
 ---
 
@@ -855,798 +1643,10 @@ INITIAL CHANGE
 ---
 
 
-Definitions
-
-Rules
-
-VG>i2 -> VV
-
-* *mêskanaw>i2^DIMs*
-* *mêskanâ000s*
-
-* *mêskanaw>i2hk*
-* *mêskanâ000hk*
-
-* *sôniyâw>i2^DIMs*
-* *sôniyâ000s0*
-
-* *miskotâkay>i2^DIMs*
-* *miskocâkâ000s0*
-
-* *nâpêw>i2^DIMsis*
-* *nâpê0000sis*
-
-* *iskwêw>i2^DIMsis*
-* *iskwê0000sis*
-
-* *maskosiy>i2^DIMs*
-* *maskosî0000s*
-
-* *pikiw>i2^DIMs*
-* *pikî0000s*
-
-* *maskosiy>i2hk*
-* *maskosî000hk*
-
-* *sîwâpoy>i2^DIMs*
-* *sîwâpô0000s*
-
-* *tohtôsâpoy>i2hk*
-* *tohtôsâpô000hk*
-
-* *wâwi>i2^DIMs*
-* *wâwi000s*
-
-* *ôsi>i2hk*
-* *ôsi00hk*
-
-* *atimw>i2^DIMs*
-* *acimo000s*
-
-* *mistikw>i2hk*
-* *mistiko00hk*
-* *sâkahikan>i2^DIMs*
-* *sâkahikan0i0s*
-
-* *maskisin>i2hk*
-* *maskisin0ihk*
-
-* *atimw*
-* *atim0*
-
-* *askihkw*
-* *askihk0*
-
-* *nit2<nînihikw*
-* *ni00nînihik*
-
-* *a>tân*
-* *ê0tân*
-
-* *nit2<astotin>i2^DIMs*
-* *nic0ascocin0i0s*
-
-* *ê^EGLOT<acimo>t*
-* *êh0acimo0t*
-
-* *ê^EGLOT<d1ay2<acimo>t*
-* *êh00ay0acimo0t*
-
-* *ê^EGLOT<d2ay3d1âh<acimo>t*
-* *êh00ay0âh0acimo0t*
-
-* *nit2<nêhiyawê>n2*
-* *ni00nêhiyawâ0n*
-* *kit2<kâsîhkwê>n2*
-* *ki00kâsîhkwâ0n*
-
-* *nit2<tipiska>n2*
-* *ni00tipiskê0n*
-* *kit2<kiskêyihta>n2*
-* *ki00kiskêyihtê0n*
-
-* *ê-<nîpin3>k*
-* *ê-0nîpih0k*
-
-* *ê-<mispon>k*
-* *ê-0mispo00k*
-
-* *wapâht4>ikâtê>w*
-* *wapâhc0ikâtê0w*
-
-* *ê-<mow2>i2ht*
-* *ê-0mow0iht*
-* *ê-<ayaw2>i2koyâhk*
-* *ê-0ayaw0ikoyâhk*
-* *kit2<kîskisw>in*
-* *ki00kîskiso00n*
-* *nit2<kîskisw>i2mâwa*
-* *ni00kîskiso00mâwa*
-* *ê-<kîskisw>i2tân*
-* *ê-0kîskiso00tân*
-* *ê-<kîskisw>it*
-* *ê-0kîskiso00t*
-* *ê-<kîskisw>i2sk*
-* *ê-0kîskiso00sk*
-* *ê-<kîskisw>i2koyâhk*
-* *ê-0kîskiso00koyâhk*
-* *nit2<kîskisw>i2kawin*
-* *ni00kîskiso00kawin*
-* *kîskisw>in*
-* *kîskiso00n*
-* *kîskisw>ii2hkan*
-* *kîskisô00hkan*
-
-* *kit2<nitonaw>in*
-* *ki00nitonaw0in*
-* *nit2<nitonaw>i2mâwa*
-* *ni00nitonâ000mâwa*
-* *ê-<nitonaw>i2tân*
-* *ê-0nitonâ000tân*
-* *ê-<nitonaw>it*
-* *ê-0nitonaw0it*
-* *ê-<nitonaw>i2sk*
-* *ê-0nitonâ000sk*
-* *ê-<nitonaw>i2koyâhk*
-* *ê-0nitonâ000koyâhk*
-* *nit2<nitonaw>i2kawin*
-* *ni00nitonâ000kawin*
-* *nitonaw>in*
-* *nitonaw0in*
-* *nitonaw>îhkan*
-* *nitonaw0îhkan*
-
-* *it3>i*
-* *is0i*
-* *kit2<nakat3>in*
-* *ki00nakas0in*
-* *nit2<nakat3>i2mâwa*
-* *ni00nakat0imâwa*
-* *ê-<nakat3>i2tân*
-* *ê-0nakat0itân*
-* *ê-<nakat3>it*
-* *ê-0nakas0it*
-* *ê-<nakat3>i2sk*
-* *ê-0nakat0isk*
-* *ê-<nakat3>i2koyâhk*
-* *ê-0nakat0ikoyâhk*
-* *nit2<nakat3>i2kawin*
-* *ni00nakat0ikawin*
-* *nakat3>in*
-* *nakas0in*
-* *nakat3>ii2hkan*
-* *nakas0îhkan*
-
-* *kit2<kost3>in*
-* *ki00ko0s0in*
-* *nit2<kost3>i2mâwa*
-* *ni00kost0imâwa*
-* *ê-<kost3>i2tân*
-* *ê-0kost0itân*
-* *ê-<kost3>it*
-* *ê-0ko0s0it*
-* *ê-<kost3>i2sk*
-* *ê-0kost0isk*
-* *ê-<kost3>i2koyâhk*
-* *ê-0kost0ikoyâhk*
-* *nit2<kost3>i2kawin*
-* *ni00kost0ikawin*
-* *kost3>in*
-* *ko0s0in*
-* *kost3>ii2hkan*
-* *ko0s0îhkan*
-
-* *mi4<îwat3>i2^DIMs*
-* *m00îwac0i0s*
-
-__`OUTSIDE RULES`__
-
-* *d1ay2-<nipâw*
-* *na0-0nipâw*
-
-* *d1âh-<nipâw*
-* *nâh-0nipâw*
-
-* *d2ay3-d1âh-<nipâw*
-* *na0-nâh-0nipâw*
-
-* *d2ay3-d1âh-<ayâw*
-* *0ay-0âh-0ayâw*
-
-* *d1âh-<ayâw*
-* *0âh-0ayâw*
-
-* *d1ay2-<ayâw*
-* *0ay-0ayâw*
-
-INITIAL CHANGE
-
-* *nipât^IC*
-* *nêpât0*
-
-* *miyo-nipât^IC*
-* *mêyo-nipât0*
-
-* *itwêt^IC*
-* *êtwêt0*
-
-* *apit^IC*
-* *êpit0*
-
-* *wayawit^IC*
-* *wêyawit0*
-
-* *îkatêhtêt^IC*
-* *âkatêhtêt0*
-
-* *nîmit^IC*
-* *nâmit0*
-
-* *0ohcît^IC*
-* *wêhcît0*
-
-* *m0ostohtêt^IC*
-* *mwêstohtêt0*
-
-* *0oyôyot^IC*
-* *wêyôyot0*
-
-* *k0ocît^IC*
-* *kwêcît0*
-
-* *îkatêhât^IC*
-* *âkatêhât0*
-
-* *00îkatêhât^IC*
-* *iyîkatêhât0*
-
-* *00êskêt^IC*
-* *iyêskêt0*
-
-* *00âcimot^IC*
-* *iyâcimot0*
-
-* *00ôhkomit^IC*
-* *iyôhkomit0*
-
-* *w3<spiton*
-* *o0spiton*
-
-* *ni<spiton*
-* *ni0spiton*
-
-* *ki<spiton*
-* *ki0spiton*
-
-* *w3<îpit*
-* *w0îpit*
-
-* *w3<ahkwan*
-* *w0ahkwan*
-
-* *ni4<ohkom*
-* *n00ôhkom*
-
-* *ni4<ohkom>i2nân>ak*
-* *n00ôhkom0inân0ak*
-
-* *ki4<ohkom*
-* *k00ôhkom*
-
-* *w3<ohkom>a*
-* *00ohkom0a*
-
-* *nit2<ospwâkan*
-* *nit0ôspwâkan*
-
-* *kit2<ospwâkan*
-* *kit0ôspwâkan*
-
-* *ot2<ospwâkan*
-* *ot0ôspwâkan*
-
-Composing the rules together
 
 * * *
 
-<small>This (part of) documentation was generated from [src/fst/phonology.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/phonology.xfscript)</small>
-
----
-
-
-# Plains Cree morphological analyser
-INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
-
-# Definitions for Multichar_Symbols
-
-## Analysis symbols
-
-The morphological analyses of wordforms of Plains Cree are presented
-in this system in terms of the following symbols.
-(It is highly suggested to follow existing standards when adding new tags).
-
-POS
-
-* +N	         = Noun
-* +V	         = Verb
-* +Ipc		 = Indeclinable Particle
-* +Prop       
-* +Adv        
-* +CC         
-* +CS         
-* +Interj     
-* +Phr        
-* +Pron       
-* +Num        
-* +Arab       
-* +Rom        
-* +PUNCT       = punctuation symbols
-* +LEFT        = the left part of a paired punctuation symbol
-* +RIGHT       = the right part of a paired punctuation symbol
-* +CLB         = clause boundary symbols
-* +Symbol = independent symbols in the text stream, like £, €, ©
-* +ABBR 
-
-Nominal morphology
-
-* +Loc         Locative
-* +Obv         Obviative
-* +Voc         Vocative
-
-* +Dim         Diminutive
-
-Particles
-
-* +Def	     This is the intransitive demonstrative, i.e. the definite.
-* +Indef       Indefinite
-
-* +Dem         Demonstrative
-* +Prox	     Demonstrative Proximate
-* +Med	     Demonstrative Medial
-* +Dist	     Demonstrative Distal
-* +Pers = personal pronouns? At least it seems so based on the code
-* +Interr      Interrogative (who/whose/what/what kind)
-* +Foc	     Focus particle
-
-ordinals
-
-Verbal MSP
-* +Prs  
-* +Fut  
-* +Prt  
-* +Cnj  
-* +Int   Future Intentional
-* +Def   Future Definite (TODO: okay to overlap with particle tag of the same name?)
-
-* +Ind   Indicative, aka Independent
-* +Imp   Imperative, consider deleting +Imp tag
-* +Del   Delayed imperative
-* +Imm   Immediate imperative, consider deleting +Imp tag
-* +Cond  TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
-
-* +1Sg     first singular
-* +2Sg     etc
-* +3Sg    
-
-* +1Pl     1Pl is exclusive plural (I, them, not you)
-* +2Pl    
-* +3Pl    
-* +12Pl    12Pl is inclusive plural (I, you, ...)
-* +4Sg     Fourth Person inanimate singlar (used only in the VII paradigms)
-* +4Pl     Fourth Person inanimate plural (used only in the VII paradigms)
-* +4Sg/Pl    
-* +5Sg/Pl    
-
-* +1SgO    objective conjugation
-* +2SgO   
-* +2Sg/PlO    Used in the syncretic 2sg/pl -> 1pl in the VTA paradigms
-* +3SgO   
-* +SgO    
-* +1PlO   
-* +2PlO   
-* +12PlO	
-* +3PlO   
-* +PlO    
-* +4Sg/PlO  ambiguous 4th person (both Singular and Plural)
-* +5Sg/PlO  ambiguous 5th person (both Singular and Plural)
-* +X  Unspecified actor forms Okimāsis p. 118
-
-Person prefix fragment features
-
-Nominal morphosyntactic features
-* +Sg		  singular
-* +Pl		  plural
-
-* +Px1Sg	  person prefixes for nouns
-* +Px2Sg	 
-* +Px3Sg	 
-* +Px4Sg	 
-* +Px1Pl	  obviative
-* +Px12Pl	  inclusive
-* +Px2Pl	 
-* +Px3Pl	 
-* +Px4Pl	 
-* +Der/Dim  diminutive derivation
-
-* RdplW+  Reduplication Type 1 (Weak)
-* RdplS+  Reduplication Type 2 (Strong)
-
-* +Der/Com  Comitative circumfix (wîci-...-m)
-* +Der/X  VTI x-actor to VII-1
-
-Verb conjugation (transitivity + animacy classes)
-* +AI       intransitive with animate subject,
-* +II       intransitive with inanimate subject,
-* +TA       transitive with animate object, and
-* +TI       transitive with inanimate object.
-
-Noun animacy and dependency classes
-* +A		  animate noun
-* +I		  inanimate noun
-* +D		  dependent noun
-
-* +Qst      yes-no question particle; cî
-* +Neg      negation; [na]môy[a].
-
-Preverbs
-
-## Auxiliary symbols
-
-These symbols either shape or govern the
-morphophonological structure
-
-* %> 		  suffix border
-* %< 		  prefix border
-
-## Symbols that need to be escaped on the lower side (towards twolc):
-* **»7**:  Literal »
-* **«7**:  Literal «
-```
- %[%>%]  - Literal >
- %[%<%]  - Literal <
-```
-
-Special characters for morphophonology
-* w2       non-collapsing glide, e.g. mowêw:mow2
-* t2 		 Epenthetic -t- between person prefixes and vowel-initial stems
-* t3       t to s in VTA-4
-* t4       t:c in VTI-1 with unspecified actor
-* y2       non-collapsing glide
-* ý2	 non-collapsing glide
-* y3       epenthetic joiner in reduplication of vowel-initial stems
-* i2       VTA-5i epenthesis.
-
-* h2 	  Prefix in possessives
-
-Triggers for various morphophonological phenomena
-Mostly, these are not realized themselves as any grapheme/phoneme
-
-* %^EGLOT    glottal stop after e, for eh- in conjunctive order
-
-## Usage tags
-
-These tags distinguish different special-purpose analysers
-and generators from each other. Thus, for examples, we have
-normative and descriptive analysers, and generators for different purposes.
-
-* +Err/Orth  tag for substandard forms
-* +Err/Frag  tag for word-form fragments
-* +Dial  tag for dialectical forms that can't be called errors
-* +Use/NG   not-generate, for ped generation isme-ped.fst
-* +Eng indicates that this is an English form
-
-Flagdiacritics
-
-These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
-
-For indicative, there are prefixes, so here we need one
-flag for each person-number combination. Note that
-for the inverse objective conjugation, the flag refers to
-the **prefix**, not to the subject. So *indsg1* refers to either
-subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
-
-The conjunct form always has
-the ê- prefix, and future conditional never has a prefix.
-
-* @U.verb.FutCon@  Future Conditional
-
-Prefixes with a certain phonological content:
-
-* @U.person.NULL@ 
-* @U.person.NI@ 
-* @U.person.KI@ 
-
-Order
-
-* @U.order.indep@  Independent
-* @U.order.cnj@    Conjunct
-* @U.order.imp@    Imperative
-
-Tense
-
-New multichar symbols for nouns
-
-End of new and all Multichar_Symbols
-
- LEXICON Root          is where it all starts
-* NOUN_PREFIXES   ;    
-* NOUN_IRREGULARS ;    
-* NOUN_VOCATIVES  ;    
-* VerbPrefixes    ;    
-* Pronoun         ;    
-* Propernouns     ;    
-* Particles       ;    
-* Numerals        ;    
-* Abbreviation    ;    
-* Punctuation     ;    
-* Symbols         ;    
-* NON_STANDARD     ;    
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/root.lexc)</small>
-
----
-
-
-# File containing abbreviations 
-
-## Lexica for adding tags and periods
-
-Splitting in 4 + 1  groups, because of the preprocessor
-
-* **LEXICON Abbreviation   **
-1. The ITRAB ;	    lexicon (intransitive abbrs)
-1. The TRNUMAB ;   lexicon (abbrs trans wrt. numberals)
-
-## The sublexica
-### Dividing between abbreviations with and witout final period
-
-* **LEXICON ab-noun   **
-
-* **LEXICON ab-adv   **
-
-### The lexicons that add tags
-
-* **LEXICON ab-nodot-noun   **  The bulk
-
-* **LEXICON ab-dot-noun   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-nodot-adv   **
-
-* **LEXICON ab-dot-adv   **  This is the lexicon for abbrs that must have a period.
-
-* **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
-
-## The abbreviation lexicon itself
-
-* **LEXICON ITRAB   ** are intransitive abbreviations, Ltd. etc.
-
-* **LEXICON TRNUMAB   ** contains abbreviations who are transitive in front of numerals 
-
-For abbrs for which numerals are complements, but other
-words not necessarily are. This group treats arabic numerals as
-if it were transitive but letters as if it were intransitive.
-
-* **LEXICON TRAB   ** contains transitive abbreviations
-
-This lexicon is for abbrs that always have a constituent following it.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/abbreviations.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/abbreviations.lexc)</small>
-
----
-
-Place-holder for inserting derivational FST after prefixes and before suffixes
-DRV-FST is the place-holder character
-
-Linking verb stems from Derivational FST to their inflectional suffixes
-
-Nouns
-
-Verbs
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/derivation_stems.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/derivation_stems.lexc)</small>
-
----
-
-
-
-Test lemma/stem set for nouns according the new crk FST
-
-Complete extraction of lemma:stem info from CW/AEW (2023) and (MD 2023), according to
-LEXC structure in the new crk FST.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/noun_header.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/noun_header.lexc)</small>
-
----
-
-
-
-Test lemma/stem set for nouns according the new crk FST
-
-Complete extraction of lemma:stem info from AEW 2020, according to
-LEXC structure in the new crk FST.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/noun_stems.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/noun_stems.lexc)</small>
-
----
-
-
-# Plains Cree numerals                           
-
-## The file for Arabic, Roman, and other symbolic numerals
-
-* **LEXICON NUM-PREFIXES   **
-
-* **LEXICON ARABIC   ** arabic numerals
-
-* **LEXICON ARABICLOOPphone   ** +358(0)16671254
-
-* **LEXICON ARABICCASEphone   **  
-
-* **LEXICON ARABICLOOP   **
-
-* **LEXICON ARABICLOOPORD   ** ordinals
-
-* **LEXICON NUMARABTAG   ** 
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/numeral_symbols.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/numeral_symbols.lexc)</small>
-
----
-
-
-# Plains Cree numerals                           
-
-## The file for numerals
-
-* LEXICON Numerals 
-
-## Here start the 999 numbers
-
-* LEXICON UNDERTHOUSAND 
-
-* LEXICON HUNDREDS 
-
-* LEXICON CUODI 
-
-* LEXICON HUNDRED 
-
-* LEXICON TENS 
-
-* LEXICON TEN 
-
-* LEXICON ONESTONEXT 
-
-* LEXICON TEENS 
-
-* LEXICON ONES 
-
-* LEXICON CARDINAL 
-
-* LEXICON NUM  adds +Num+Ipc
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/numerals.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/numerals.lexc)</small>
-
----
-
-
-# Plains Cree particles                           
-
-The file contains the following lexicons, with content as described:
-
-* LEXICON Particle  adds +Ipc
-
-* LEXICON Particle/Interjection   adds +Ipc+Interj
-
-* LEXICON Particle/Name  adds +Ipc+Prop
-
-* LEXICON Particle/Phrase  adds +Ipc+Phr
-
-* LEXICON Particles  contains the actual list of particles.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/particles.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/particles.lexc)</small>
-
----
-
-
-## Plains Cree pronouns
-
-There are more pronoums to be added here.
-
-LEXICON Pronoun 
-
-LEXICON Personal  \\
-niýa+Pron+Pers+1Sg:niýa # ; 
-kiýa+Pron+Pers+2Sg:kiýa # ; 
-
-LEXICON Interrogative   \\
-awîna+Pron+Interr+A+Sg:awîna # "who,whose" ; 
-awîniki+Pron+Interr+A+Pl:awîniki # "who" ; 
-awînihi+Pron+Interr+A+Obv:awînihi # "who" ; 
-awîniwâ+Pron+Interr+A+Obv:awîniwâ # "who" ; 
-
-LEXICON Indefinite  \\
-awiyak+Pron+Indef+A+Sg:awiyak # "someone" ; 
-awiyak+Pron+Indef+A+Pl:awiyakak # "some people" ;
-
-LEXICON Demonstrative    \\
-ANIMATE \\
-awa+Pron+Dem+Prox+A+Sg:awa # "this" ; 
-ôki+Pron+Dem+Prox+A+Pl:ôki # "these" ; 
-ôhi+Pron+Dem+Prox+A+Obv:ôhi # "this/these" ; 
-
-INANIMATE \\
-
-ôma+Pron+Dem+Prox+I+Sg:ôma # "this" ; 
-ôhi+Pron+Dem+Prox+I+Pl:ôhi # "these" ; 
-
-ôma+Pron+Def+Prox+I+Sg:ôma # "this one" ; 
-ôhi+Pron+Def+Prox+I+Pl:ôhi # "these ones" ; 
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/pronouns.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/pronouns.lexc)</small>
-
----
-
-
-
-Model verb lemmas and stems for new crk FST
-
-Complete extraction of lemma:stem info from CW/AEW (2023) and (MD 2023), according to
-LEXC structure in the new crk FST.
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/verb_header.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/verb_header.lexc)</small>
-
----
-
-
-
-Model verb lemmas and stems for new crk FST
-
-Full incorporation of AEW 2020 verbs into new crk FST
-
-* * *
-
-<small>This (part of) documentation was generated from [src/fst/stems/verb_stems.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/stems/verb_stems.lexc)</small>
-
----
-
-Hyphenator and text to ipa for Plains Cree
-
-Defining sets
-
-The rules
-
-Long vowels
-
-* * *
-
-<small>This (part of) documentation was generated from [src/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/phonetics/txt2ipa.xfscript)</small>
-
----
-
-
-
-* * *
-
-<small>This (part of) documentation was generated from [src/transcriptions/phonology-eng.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/transcriptions/phonology-eng.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/phonology-eng.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/phonology-eng.xfscript)</small>
 
 ---
 
@@ -1666,7 +1666,7 @@ For example:
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-crk/blob/main/src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-abbrevs2text.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-abbrevs2text.lexc)</small>
 
 ---
 
@@ -1676,7 +1676,7 @@ Old code
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript)</small>
 
 ---
 
@@ -1693,7 +1693,7 @@ Irregular verb forms
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript)</small>
 
 ---
 
@@ -1705,7 +1705,7 @@ Rule-based morphological solution
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript)</small>
 
 ---
 
@@ -1722,7 +1722,7 @@ Assigning +V (+II/AI/TI/TA) or +N as part-of-speech
 
 * * *
 
-<small>This (part of) documentation was generated from [src/transcriptions/transcriptor-eng-phrase2crk-features.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/transcriptions/transcriptor-eng-phrase2crk-features.xfscript)</small>
+<small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-eng-phrase2crk-features.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-eng-phrase2crk-features.xfscript)</small>
 
 ---
 
