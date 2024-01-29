@@ -213,6 +213,8 @@ gt_CONFIG_FILES
 ##########################################################
 ##### BEGIN: Add language-specific list of files to ######
 ########## be processed by autoconf below here: ##########
+AC_CONFIG_FILES([tools/spellcheckers/index.Cans.xml \
+                 tools/spellcheckers/index.macron.xml ])
 
 ############ END: Language-specific scripts. #############
 
