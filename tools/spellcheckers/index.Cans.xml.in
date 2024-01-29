@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hfstspeller dtdversion="1.0" hfstversion="3">
   <info>
-    <locale>crk-Cans</locale>
-    <title>UofAlberta/GT/Divvun/UiT speller for Syllabic Plains Cree.</title>
-    <description>This is an fst-based speller for Plains Cree using the Canadian
-    syllabic script. It is based
-    on the normative subset of the morphological analyser for Plains Cree.
-    The source code can be found at:
-    https://victorio.uit.no/langtech/trunk/langs/crk/
-    License: GPL3+.</description>
-    <version vcsrev="GT_REVISION">GT_VERSION</version>
+    <locale>@GLANG2@-Cans</locale>
+    <title>@SPELLER_NAME_ENG@, Canadian Aboriginal Syllabics</title>
+    <description>@SPELLER_DESC_ENG@, using the Canadian
+    Aboriginal Syllabics.</description>
+    <version>@SPELLERVERSION@</version>
     <date>DATE</date>
     <producer>UofAlberta/Giellatekno/Divvun/UiT contributors</producer>
     <contact email="feedback@divvun.no" website="http://divvun.no"/>
   </info>
   <acceptor type="general" id="acceptor.default.hfst">
-    <title>UofAlberta/Giellatekno/Divvun/UiT dictionary Plains Cree</title>
-    <description>UofAlberta/Giellatekno/Divvun/UiT dictionary for
-    syllabic-scripted Plains Cree compiled for HFST.</description>
+    <title>@GLANGUAGE@ speller lexicon, Canadian Aboriginal Syllabics</title>
+    <description>@GLANGUAGE@ speller lexicon compiled with HFST.</description>
   </acceptor>
   <errmodel id="errmodel.default.hfst">
-    <title>Levenshtein edit distance transducer</title>
-    <description>Correction model for keyboard misstrokes, at most 2 per
-    word.</description>
+    <title>@GLANGUAGE@ error model, Canadian Aboriginal Syllabics</title>
+    <description>Error model for @GLANGUAGE@.</description>
         <type type="default"/>
         <model>errormodel.default.hfst</model>
     </errmodel>
