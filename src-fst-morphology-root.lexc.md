@@ -230,6 +230,3 @@ End of new and all Multichar_Symbols
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/root.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/root.lexc)</small>
-
----
-

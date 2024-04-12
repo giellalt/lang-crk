@@ -294,6 +294,3 @@ Composing the rules together
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/phonology.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/phonology.xfscript)</small>
-
----
-

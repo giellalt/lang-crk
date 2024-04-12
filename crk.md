@@ -1,18 +1,36 @@
-# Plains Cree description 
+# Plains Cree language model documentation
 
-All documents in one file
+All doc-comment documentation in one large file.
+
+---
+
+# src-cg3-disambiguator.cg3.md 
 
 
 
 # Plains Cree disambiguator 
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/disambiguator.cg3](https://github.com/giellalt/lang-crk/blob/main/src/cg3/disambiguator.cg3)</small>
 
+---
+
+# src-cg3-textanalysis.cg3.md 
+
+
+
 # Plains Cree disambiguator 
 
 * * *
+
 <small>This (part of) documentation was generated from [src/cg3/textanalysis.cg3](https://github.com/giellalt/lang-crk/blob/main/src/cg3/textanalysis.cg3)</small>
+
+---
+
+# src-derivation-crk-drv.lexc.md 
+
+
 
 Nouns
 Verbs
@@ -22,6 +40,8 @@ Verbs
 <small>This (part of) documentation was generated from [src/derivation/crk-drv.lexc](https://github.com/giellalt/lang-crk/blob/main/src/derivation/crk-drv.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-noun_affixes.lexc.md 
 
 
 
@@ -35,6 +55,8 @@ End of noun affixes code
 
 ---
 
+# src-fst-morphology-affixes-propernouns.lexc.md 
+
 
 Proper noun inflection
 The Plains Cree language proper nouns inflect in the same cases as regular
@@ -46,6 +68,8 @@ nouns, but with a colon (':') as separator.
 
 ---
 
+# src-fst-morphology-affixes-symbols.lexc.md 
+
 
 # Symbol affixes
 
@@ -54,6 +78,8 @@ nouns, but with a colon (':') as separator.
 <small>This (part of) documentation was generated from [src/fst/morphology/affixes/symbols.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/affixes/symbols.lexc)</small>
 
 ---
+
+# src-fst-morphology-affixes-verb_affixes.lexc.md 
 
 
 Plains Cree verb morphology                  
@@ -542,6 +568,8 @@ End of verb affixes LEXC code
 
 ---
 
+# src-fst-morphology-phonology.xfscript.md 
+
 
 Definitions
 
@@ -841,6 +869,8 @@ Composing the rules together
 
 ---
 
+# src-fst-morphology-root.lexc.md 
+
 
 # Plains Cree morphological analyser
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
@@ -1076,6 +1106,8 @@ End of new and all Multichar_Symbols
 
 ---
 
+# src-fst-morphology-stems-abbreviations.lexc.md 
+
 
 # File containing abbreviations 
 
@@ -1126,6 +1158,8 @@ This lexicon is for abbrs that always have a constituent following it.
 
 ---
 
+# src-fst-morphology-stems-derivation_stems.lexc.md 
+
 Place-holder for inserting derivational FST after prefixes and before suffixes
 DRV-FST is the place-holder character
 
@@ -1141,6 +1175,8 @@ Verbs
 
 ---
 
+# src-fst-morphology-stems-noun_header.lexc.md 
+
 
 
 Test lemma/stem set for nouns according the new crk FST
@@ -1154,6 +1190,8 @@ LEXC structure in the new crk FST.
 
 ---
 
+# src-fst-morphology-stems-noun_stems.lexc.md 
+
 
 
 Test lemma/stem set for nouns according the new crk FST
@@ -1166,6 +1204,8 @@ LEXC structure in the new crk FST.
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/noun_stems.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/noun_stems.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-numeral_symbols.lexc.md 
 
 
 # Plains Cree numerals                           
@@ -1191,6 +1231,8 @@ LEXC structure in the new crk FST.
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/numeral_symbols.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/numeral_symbols.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-numerals.lexc.md 
 
 
 # Plains Cree numerals                           
@@ -1229,6 +1271,8 @@ LEXC structure in the new crk FST.
 
 ---
 
+# src-fst-morphology-stems-particles.lexc.md 
+
 
 # Plains Cree particles                           
 
@@ -1249,6 +1293,8 @@ The file contains the following lexicons, with content as described:
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/particles.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/particles.lexc)</small>
 
 ---
+
+# src-fst-morphology-stems-pronouns.lexc.md 
 
 
 ## Plains Cree pronouns
@@ -1291,6 +1337,8 @@ INANIMATE \\
 
 ---
 
+# src-fst-morphology-stems-verb_header.lexc.md 
+
 
 
 Model verb lemmas and stems for new crk FST
@@ -1304,6 +1352,8 @@ LEXC structure in the new crk FST.
 
 ---
 
+# src-fst-morphology-stems-verb_stems.lexc.md 
+
 
 
 Model verb lemmas and stems for new crk FST
@@ -1315,6 +1365,8 @@ Full incorporation of AEW 2020 verbs into new crk FST
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/verb_stems.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/verb_stems.lexc)</small>
 
 ---
+
+# src-fst-phonetics-txt2ipa.xfscript.md 
 
 Hyphenator and text to ipa for Plains Cree
 
@@ -1329,6 +1381,8 @@ Long vowels
 <small>This (part of) documentation was generated from [src/fst/phonetics/txt2ipa.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/phonetics/txt2ipa.xfscript)</small>
 
 ---
+
+# src-fst-phonology-morph-bound.twolc.md 
 
 
 
@@ -1642,6 +1696,8 @@ INITIAL CHANGE
 
 ---
 
+# src-fst-transcriptions-phonology-eng.xfscript.md 
+
 
 
 * * *
@@ -1649,6 +1705,8 @@ INITIAL CHANGE
 <small>This (part of) documentation was generated from [src/fst/transcriptions/phonology-eng.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/phonology-eng.xfscript)</small>
 
 ---
+
+# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
 
 
 
@@ -1670,6 +1728,8 @@ For example:
 
 ---
 
+# src-fst-transcriptions-transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript.md 
+
 
 
 Old code
@@ -1679,6 +1739,8 @@ Old code
 <small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript)</small>
 
 ---
+
+# src-fst-transcriptions-transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript.md 
 
 
 
@@ -1697,6 +1759,8 @@ Irregular verb forms
 
 ---
 
+# src-fst-transcriptions-transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript.md 
+
 
 
 Word-specific explicit solution for verb morphology
@@ -1708,6 +1772,8 @@ Rule-based morphological solution
 <small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript)</small>
 
 ---
+
+# src-fst-transcriptions-transcriptor-eng-phrase2crk-features.xfscript.md 
 
 
 GENERAL DEFINITIONS
@@ -1725,6 +1791,8 @@ Assigning +V (+II/AI/TI/TA) or +N as part-of-speech
 <small>This (part of) documentation was generated from [src/fst/transcriptions/transcriptor-eng-phrase2crk-features.xfscript](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-eng-phrase2crk-features.xfscript)</small>
 
 ---
+
+# tools-grammarcheckers-grammarchecker.cg3.md 
 
 
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
@@ -2023,7 +2091,14 @@ expression **WORD - premodifiers**.
 ### Grammarchecker sets
 
 * * *
-<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-crk/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small># Tokeniser for crk
+
+<small>This (part of) documentation was generated from [tools/grammarcheckers/grammarchecker.cg3](https://github.com/giellalt/lang-crk/blob/main/tools/grammarcheckers/grammarchecker.cg3)</small>
+
+---
+
+# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+
+# Tokeniser for crk
 
 Usage:
 ```
@@ -2085,6 +2160,8 @@ Finally we mark as a token any sequence making up a:
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-disamb-gt-desc.pmscript](https://github.com/giellalt/lang-crk/blob/main/tools/tokenisers/tokeniser-disamb-gt-desc.pmscript)</small>
 
 ---
+
+# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
 # Grammar checker tokenisation for crk
 
@@ -2149,6 +2226,8 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
+# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+
 # TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
@@ -2210,6 +2289,3 @@ Needs hfst-tokenise to output things differently depending on the tag they get
 * * *
 
 <small>This (part of) documentation was generated from [tools/tokenisers/tokeniser-tts-cggt-desc.pmscript](https://github.com/giellalt/lang-crk/blob/main/tools/tokenisers/tokeniser-tts-cggt-desc.pmscript)</small>
-
----
-

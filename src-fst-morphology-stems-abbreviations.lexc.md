@@ -45,6 +45,3 @@ This lexicon is for abbrs that always have a constituent following it.
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/abbreviations.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/abbreviations.lexc)</small>
-
----
-
