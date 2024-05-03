@@ -4,10 +4,14 @@ The Plains Cree morphology and tools
 [![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-crk%2Fgh-pages%2Fmaturity.json)](https://giellalt.github.io/MaturityClassification.html)
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-crk%2Fgh-pages%2Flemmacount.json)
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-crk)](https://github.com/giellalt/lang-crk/issues)
-[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-crk/main/badge.svg)](https://github.com/giellalt/lang-crk/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-crk)](https://github.com/giellalt/lang-crk/blob/main/LICENSE)
-[![Desktop speller download](https://img.shields.io/badge/download%40latest-desktop--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-crk?platform=desktop&channel=nightly)
-[![Mobile speller download](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-crk?platform=mbile&channel=nightly)
+[![Doc Build Status](https://github.com/giellalt/lang-crk/workflows/Docs/badge.svg)](https://github.com/giellalt/lang-crk/actions)
+[![CI/CD Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-crk/main/badge.svg)](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-crk/main/latest)
+
+Download nightly / CI/CD zhfst files for testing:
+[![Windows](https://img.shields.io/badge/download%40latest-Windows--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-crk?platform=windows&channel=nightly)
+[![MacOS](https://img.shields.io/badge/download%40latest-macOS--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-crk?platform=macos&channel=nightly)
+[![Mobile](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-crk?platform=mobile&channel=nightly)
 
 👉🏼 **[Download the latest FSTs here (plains-cree-fsts*.zip)][fst-release]** 👈🏼
 
@@ -53,7 +57,7 @@ dictionaries, you need:
 - an FST compiler: [HFST](https://github.com/hfst/hfst), [Foma](https://github.com/mhulden/foma) or [Xerox Xfst](https://web.stanford.edu/~laurik/fsmbook/home.html)
 - [VislCG3](https://visl.sdu.dk/svn/visl/tools/vislcg3/trunk) Constraint Grammar tools
 
-To install VislCG3 and HFST, just copy/paste this into your Terminal on **Mac OS X**:
+To install VislCG3 and HFST, just copy/paste this into your Terminal on **macOS**:
 
 ```
 curl https://apertium.projectjj.com/osx/install-nightly.sh | sudo bash
