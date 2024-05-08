@@ -16,6 +16,7 @@ Download nightly / CI/CD installation packages for testing (contains the core zh
 
 __NB!!__ Note that the nightly / CI/CD installation packages are not tested for language quality, and might contain regressions and errors.
 
+
 👉🏼 **[Download the latest FSTs here (plains-cree-fsts*.zip)][fst-release]** 👈🏼
 
 [fst-release]: https://github.com/giellalt/lang-crk/releases
