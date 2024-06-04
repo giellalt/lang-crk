@@ -392,7 +392,7 @@ regex [ IOBJ -> {me} "@R.recipient.1Sg@"
 ! , IOBJ -> {him/her/them} "@R.recipient.4Sg/Pl@"
 , IOBJ -> {another/others} "@R.recipient.4Sg/Pl@"
 ! , IOBJ -> {him/her/them over there} "@R.recipient.5Sg/Pl@"
-, IOBJ -> {another/others over there} "@R.recipient.5Sg/Pl@"
+, IOBJ -> {yet another/others} "@R.recipient.5Sg/Pl@"
 , IOBJ -> {someone} "@R.recipient.X@" "@D.neg@"
 , IOBJ -> {anyone} "@R.recipient.X@" "@R.neg.Neg@"
 , IOBJ -> {some people} "@R.recipient.XPl@"
@@ -423,7 +423,7 @@ regex [ SUBJ -> {me} "@R.subject.1Sg@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R
 ! , SUBJ -> {him/her/them} "@R.subject.4Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 ! , SUBJ -> {him/her/them over there} "@R.subject.5Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 , SUBJ -> {another/others} "@R.subject.4Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
-, SUBJ -> {another/others over there} "@R.subject.5Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
+, SUBJ -> {yet another/others} "@R.subject.5Sg/Pl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]  
 , SUBJ -> {someone} "@R.subject.X@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]
 , SUBJ -> {people} "@R.subject.XPl@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" ]
 || Wx _ Wx ]
@@ -448,7 +448,7 @@ regex [ SUBJ -> {me} "@R.subject.1Sg@" [ "@R.tense.Imm@" | "@R.tense.Del@" | "@R
 ! , SUBJ | SUBJinanim -> {s/he/they} "@R.subject.4Sg/Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
 ! , SUBJ -> {s/he/they over there} "@R.subject.5Sg/Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
 , SUBJ | SUBJinanim -> {another/others} "@R.subject.4Sg/Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
-, SUBJ -> {another/others over there} "@R.subject.5Sg/Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
+, SUBJ -> {yet another/others} "@R.subject.5Sg/Pl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@" 
 , SUBJ -> {someone} "@R.subject.X@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@"
 , SUBJ -> {people} "@R.subject.XPl@" "@D.tense.Imm@" "@D.tense.Del@" "@D.tense.Inf@"
 || Wx _ Wx ] ;
@@ -471,7 +471,7 @@ regex [ DOBJ -> {me} "@R.object.1Sg@"
 ! , DOBJ -> {him/her/them} "@R.object.4Sg/Pl@"
 ! , DOBJ -> {him/her/them over there} "@R.object.5Sg/Pl@"
 , DOBJ -> {another/others} "@R.object.4Sg/Pl@"
-, DOBJ -> {another/others over there} "@R.object.5Sg/Pl@"
+, DOBJ -> {yet another/others} "@R.object.5Sg/Pl@"
 , DOBJ -> {someone} "@R.object.X@" "@D.Neg@"
 , DOBJ -> {anyone} "@R.object.X@" "@R.neg.Neg@"
 , DOBJ -> {people} "@R.object.XPl@"
