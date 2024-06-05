@@ -1,0 +1,511 @@
+! Analyzer of English phrases
+! Turns function words and constructions into features corresponding to crk morphology in full verb/noun paradigms.
+! Leave non-function words as lexical content for searching from lexical eng-crk database.
+
+!! GENERAL DEFINITIONS
+
+set harmonize-flags ON
+
+define Bx [ " " | "." | "," | "!" | "?" | ":" | ";" | .#. ] ;
+
+define Consonant [ b | c | d | f | g | h | j | k | l | m | n | p | q | r | s | t | v | w | x | z ]  ;
+
+define Vowel [ a | e | i | o | u ] ;
+
+define Capital [ A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z ] ;
+
+define Alphabet [ Vowel | Consonant | "y" | Capital ] ;
+
+define Punctuation [ "." | "," | ":" | ";" | "!" | "?" | "-" | "/" | "'" ] ;
+
+define Number [ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ] ;
+
+define Letters [ Alphabet | Punctuation | Number | " " ] ;
+
+define PFlags [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" | "@P.object.1Sg@" | "@P.object.2Sg@" | "@P.object.3Sg@" | "@P.object.1Du@" | "@P.object.2Du@" | "@P.object.3Du@" | "@P.object.1Pl@" | "@P.object.21Pl@" | "@P.object.3Pl@" | "@P.object.4Sg/Pl@" | "@P.object.5Sg/Pl@" | "@P.object.X@" | "@P.object.XPl@" | "@P.reflexive.1Sg@" | "@P.reflexive.2Sg@" | "@P.reflexive.3Sg@" | "@P.reflexive.1Du@" | "@P.reflexive.2Du@" | "@P.reflexive.3Du@" | "@P.reflexive.1Pl@" | "@P.reflexive.21Pl@" | "@P.reflexive.3Pl@" | "@P.reflexive.4Sg/Pl@" | "@P.reflexive.5Sg/Pl@" | "@P.reflexive.X@" | "@P.reflexive.XPl@" | "@P.reflexive.Pl@" | "@P.poss.1Sg@" | "@P.poss.2Sg@" | "@P.poss.3Sg@" | "@P.poss.1Du@" | "@P.poss.2Du@" | "@P.poss.3Du@" | "@P.poss.1Pl@" | "@P.poss.21Pl@" | "@P.poss.3Pl@" | "@P.poss.4Sg/Pl@" | "@P.poss.5Sg/Pl@" | "@P.poss.X@" | "@P.poss.XPl@" | "@P.tense.Prt@" | "@P.tense.Def@" | "@P.tense.Fut@" | "@P.tense.Int@" | "@P.tense.Cond@" | "@P.tense.Imp@" | "@P.tense.Imm@" | "@P.tense.Del@" | "@P.tense.Inf@" | "@P.prog.Prog@" | "@P.prog.Cop@" | "@P.rept.Rept@" | "@P.exist.Exist@" | "@P.neg.Neg@" ] ;
+
+define RFlags [ "@R.subject.1Sg@" | "@R.subject.2Sg@" | "@R.subject.3Sg@" | "@R.subject.1Du@" | "@R.subject.2Du@" | "@R.subject.3Du@" | "@R.subject.1Pl@" | "@R.subject.21Pl@" | "@R.subject.3Pl@" | "@R.subject.4Sg/Pl@" | "@R.subject.5Sg/Pl@" | "@R.subject.X@" | "@R.subject.XPl@" | "@R.object.1Sg@" | "@R.object.2Sg@" | "@R.object.3Sg@" | "@R.object.1Du@" | "@R.object.2Du@" | "@R.object.3Du@" | "@R.object.1Pl@" | "@R.object.21Pl@" | "@R.object.3Pl@" | "@R.object.4Sg/Pl@" | "@R.object.5Sg/Pl@" | "@R.object.X@" | "@R.object.XPl@" | "@R.reflexive.1Sg@" | "@R.reflexive.2Sg@" | "@R.reflexive.3Sg@" | "@R.reflexive.1Du@" | "@R.reflexive.2Du@" | "@R.reflexive.3Du@" | "@R.reflexive.1Pl@" | "@R.reflexive.21Pl@" | "@R.reflexive.3Pl@" | "@R.reflexive.4Sg/Pl@" | "@R.reflexive.5Sg/Pl@" | "@R.reflexive.X@" | "@R.reflexive.XPl@" | "@R.reflexive.Pl@" | "@R.poss.1Sg@" | "@R.poss.2Sg@" | "@R.poss.3Sg@" | "@R.poss.1Du@" | "@R.poss.2Du@" | "@R.poss.3Du@" | "@R.poss.1Pl@" | "@R.poss.21Pl@" | "@R.poss.3Pl@" | "@R.poss.4Sg/Pl@" | "@R.poss.5Sg/Pl@" | "@R.poss.X@" | "@R.poss.XPl@" | "@R.tense.Prt@" | "@R.tense.Def@" | "@R.tense.Fut@" | "@R.tense.Int@" | "@R.tense.Cond@" | "@R.tense.Imp@" | "@R.tense.Imm@" | "@R.tense.Del@" | "@R.tense.Inf@" | "@R.prog.Prog@" | "@R.prog.Cop@" | "@R.rept.Rept@" | "@R.exist.Exist@" | "@R.neg.Neg@" ] ;
+
+define DFlags [ "@D.object@" | "@D.number@" | "@D.number.Sg@" | "@D.number.Pl@" | "@D.poss@" | "@D.dim@" | "@D.dim.Dim@" | "@D.prog@" | "@D.exist.Exist@" | "@D.neg@" ] ;
+
+define Flags [ PFlags | RFlags | DFlags ] ;
+
+define SubjectTags [ "+1Sg" | "+2Sg" | "+3Sg" | "+1Du" | "+2Du" | "+3Du" | "+1Pl" | "+21Pl" | "+2Pl" | "+3Pl" | "+4Sg/Pl" | "+5Sg/Pl" | "+X" | "+XPl" | "+0Sg" ] ;
+define ObjectTags [ "+1SgO" | "+2SgO" | "+3SgO" | "+1DuO" | "+2DuO" | "+3DuO" | "+1PlO" | "+21PlO" | "+2PlO" | "+3PlO" | "+4Sg/PlO" | "+5Sg/PlO" |"+XO" | "+XPlO" | "+0SgO" ] ;
+define TenseTags [ "+Prs" | "+Prt" | "+Def" | "+Fut" | "+Int" | "+Cond" | "+Inf" | "+Imp" | "+Imm" | "+Del" | "+Prog" | "+Rept" | "+Neg" ] ;
+define Tags [ SubjectTags | ObjectTags | TenseTags ] ;
+
+!! VERBS
+
+regex [ i -> I , {another's} -> {anothers} , {others'} -> {otherss} , {someone's} -> {someones} , {people's} -> {peoples} || Bx _ [ Bx | %' ] ]
+;
+define Standardization
+
+regex [ {ain't} -> {is not} , {won't} -> {will not} , {shan't} -> {shall not} , {not to} -> {to not} , {I'm} -> {I am} || Bx _ Bx ]
+.o. [ {n't} -> { not} , {'s} -> { is} , {'re} -> { are} , {'ll} -> { will} , {'ve} -> { have} , {'d} -> { would} || \Bx _ Bx ]
+;
+define Contractions
+
+regex [ {does not} | {do not} -> "@P.neg.Neg@" , {did not} -> "@P.neg.Neg@" "@P.tense.Prt@" || Bx _ Bx ]
+.o. [ {not} -> "@P.neg.Neg@" || Bx _ Bx ]
+;
+define Negation
+
+regex [ {one another} | {each other} -> "@P.reflexive.Pl@" || Bx _ Bx ] ;
+define Reciprocal
+
+regex [ {yet another} | {yet others} | {he/she/they over there} | {he or she or they over there} | {she or he or they over there} | {he, she, or they over there} | {she, he, or they over there} -> "@P.subject.5Sg/Pl@" || Bx _ Bx ]
+.o. [ {another} | {others} | {he over there} | {she over there} | {they over there} | {he/she/they} | {he or she or they} | {she or he or they} | {he, she, or they} -> "@P.subject.4Sg/Pl@" || Bx _ Bx ]
+.o. [ {it} -> "@P.object.0Sg@" || Bx _ " " .#. ]
+.o. [ [ {we and you} | {you and we} | {you and I} ] -> "@P.subject.21Pl@" || Bx _ Bx ,,
+{you all} -> "@P.subject.2Pl@" || Bx _ Bx ,,
+{we both} | {we two} | {the two of us} -> "@P.subject.1Du@" , {you both} | {you two} | {the two of you} -> "@P.subject.2Du@" , {they both} | {they two} | {the two of them} -> "@P.subject.3Du@" || Bx _ Bx ,,
+[ {you and us} | {us and you} | {you and me} | {me and you} ] -> "@P.object.21Pl@" || Bx _ Bx
+] .o. [ {I} -> "@P.subject.1Sg@" || Bx _ Bx ,,
+{you} -> "@P.subject.2Sg@" || Bx _ Bx ,,
+{thou} -> "@P.subject.2Sg@" || Bx _ Bx ,,
+{he} | {she} -> "@P.subject.3Sg@" || Bx _ Bx ,,
+{it} -> "@P.subject.0Sg@" || Bx _ Bx ,,
+{there} -> "@P.subject.0Sg@" "@P.exist.Exist@" || .#. _ Bx ,,
+{we} -> "@P.subject.1Pl@" || Bx _ Bx ,,
+{they} -> "@P.subject.3Pl@" || Bx _ Bx ,,
+{someone} -> "@P.subject.X@" || Bx _ Bx ,,
+{people} -> "@P.subject.XPl@" || Bx _ Bx
+] ;
+define Subject
+
+regex [ {to} -> "@P.tense.Inf@" || .#. _ Bx
+] .o. [ {for you all to} -> "@P.subject.2Pl@" "@P.tense.Inf@" || .#. _ " " ,,
+{for you and us to} | {for you and we to} | {for you and me to} | {for us and you to} | { for we and you to} | {for me and you to} -> "@P.subject.21Pl@" "@P.tense.Inf@" ,
+{for us both to} | {for us two to} | {for the two of us} -> "@P.subject.1Du@" "@P.tense.Inf@" , {for you both to} | {for you two to} | {for the two of you} -> "@P.subject.2Du@" "@P.tense.Inf@" , {for them both to} | {for them two to} | {for the two of them} -> "@P.subject.3Du@" "@P.tense.Inf@" || .#. _ " "
+] .o. [ {for me to} -> "@P.subject.1Sg@" "@P.tense.Inf@" || .#. _ " " ,,
+# [..] -> "@P.subject.2Sg@" || .#. _ \[ {I} | {you} | {he} | {she} | {it} | {we} | {they} | {someone} ] " " ,,
+{for you to} -> "@P.subject.2Sg@" "@P.tense.Inf@" || .#. _ " " ,,
+{for thee to} -> "@P.subject.2Sg@" "@P.tense.Inf@" || .#. _ " " ,,
+{for him to} | {for her to} -> "@P.subject.3Sg@" "@P.tense.Inf@" || .#. _ " " ,,
+{for it to} | {for there to} -> "@P.subject.0Sg@" "@P.tense.Inf@" || .#. _ " " ,,
+{for us to} -> "@P.subject.1Pl@" "@P.tense.Inf@" || .#. _ " " ,,
+{for them to} -> "@P.subject.3Pl@" "@P.tense.Inf@" || .#. _ " " ,,
+{for another to} | {for others to} | {for him over there to} | {for her over there to} | {for them over there to} | {for him/her/them to} | {for him or her or them to} | {for her or him or them to} | {for him, her, or them to} -> "@P.subject.4Sg/Pl@" "@P.tense.Inf@" || .#. _ " " ,,
+{for yet another to} | {for yet others to} | {for him/her/them over there to} | {for him or her or them over there to} | {for her or him or them over there to} | {for him, her, or them over there to} | {for her, him, or them over there to} -> "@P.subject.5Sg/Pl@" || .#. _ " " ,, 
+{for someone to} -> "@P.subject.X@" "@P.tense.Inf@" || .#. _ " " ,,
+{for people to} -> "@P.subject.XPl@" "@P.tense.Inf@" || .#. _ " " ,,
+{for there to} -> "@P.subject.0Sg@" "@P.tense.Inf@" || .#. _ " "
+]
+.o.
+[ {let yet another} | {let yet others} | {let another over there} | {let him/her/them over there} | {let him or her or them over there} | {let her or him or them over there} | {let him, her, or them over there} | {let her, him, or them over there} -> "@P.subject.5Sg/Pl@" "@P.tense.Imp@" || .#. _ " " ]
+.o. [ {let another} | {let others} | {let him over there} | {let her over there} | {let them over there} | {let him/her/them} | {let him or her or them} | {let her or him or them} | {let him, her, or them} -> "@P.subject.4Sg/Pl@" "@P.tense.Imp@" || .#. _ " " ]
+.o.
+[ {let you all} -> "@P.subject.2Pl@" "@P.tense.Imp@" || .#. _ " " ,,
+{let you and us} | {let us and you} -> "@P.subject.21Pl@" "@P.tense.Imp@" || .#. _ " " ,,
+{let us both} | {let us two} | {let the two of us} -> "@P.subject.1Du@" "@P.tense.Imp@" || .#. _ " " ,,
+{let you both} | {let you two} | {let the two of you} -> "@P.subject.2Du@" "@P.tense.Imp@" || .#. _ " " ,,
+{let them both} | {let them two} | {let the two of them} -> "@P.subject.3Du@" "@P.tense.Imp@" || .#. _ " "
+] .o. [ {let me} -> "@P.subject.1Sg@" "@P.tense.Imp@" || .#. _ " " ,,
+! [..] -> "@P.subject.2Sg@" || .#. _ \[ {I} | {you} | {he} | {she} | {it} | {we} | {they} | {someone} ] " " ,,
+{let you} -> "@P.subject.2Sg@" "@P.tense.Imp@" || .#. _ " " ,,
+{let thee} -> "@P.subject.2Sg@" "@P.tense.Imp@" || .#. _ " " ,,
+{let him} | {let her} -> "@P.subject.3Sg@" "@P.tense.Imp@" || .#. _ " " ,,
+{let it} | {let there} -> "@P.subject.0Sg@" "@P.tense.Imp@" || .#. _ " " ,,
+{let us} -> "@P.subject.1Pl@" "@P.tense.Imp@" || .#. _ " " ,,
+{let them} -> "@P.subject.3Pl@" "@P.tense.Imp@" || .#. _ " " ,,
+{let someone} -> "@P.subject.X@" "@P.tense.Imp@" || .#. _ " "
+] ;
+define ReverseSubject
+
+regex [ {him/her/them over there} | {him or her or them over there} | {her or him or them over there} | {him, her, or them over there} | {her, him, or them over there} -> "@P.object.5Sg/Pl@" || Bx _ Bx ]
+.o. [ {him over there} | {her over there} | {them over there} | {him/her/them} | {him or her or them} | {her or him or them} | {him, her, or them} | {her, him, or them} -> "@P.object.4Sg/Pl@" , {us both} | {us two} -> "@P.object.1Du@" , {them both} | {them two} -> "@P.object.3Du@" || Bx _ Bx ]
+.o. [ {me} -> "@P.object.1Sg@" || Bx _ Bx ,,
+{thee} -> "@P.object.2Sg@" || Bx _ Bx ,,
+{him} | {her} -> "@P.object.3Sg@" || Bx _ Bx ,,
+{us} -> "@P.object.1Pl@" || Bx _ Bx ,,
+{them} -> "@P.object.3Pl@" || Bx _ Bx
+] ;
+define Object
+
+regex [ {myself} -> "@P.reflexive.1Sg@" || Bx _ Bx ,,
+{yourself} -> "@P.reflexive.2Sg@" || Bx _ Bx ,,
+{thyself} -> "@P.reflexive.2Sg@" || Bx _ Bx ,,
+{himself} | {herself} | {itself} -> "@P.reflexive.3Sg@" || Bx _ Bx ,,
+{ourselves} -> "@P.reflexive.1Pl@" || Bx _ Bx ,,
+{yourselves} -> "@P.reflexive.2Pl@" || Bx _ Bx ,,
+{themselves} -> "@P.reflexive.3Pl@" || Bx _ Bx ,,
+{oneself} -> "@P.reflexive.X@" || Bx _ Bx
+] ;
+define Reflexive
+
+regex [ "@P.subject.1Du@" -> "@P.object.1Du@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4g/Pl@" | "@P.subject.4Sg/Pl@" |  "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define 1DuO
+
+regex [ "@P.subject.2Sg@" -> "@P.object.2Sg@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@"| "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@"] ?* _ ] ;
+define 2SgO
+
+regex [ "@P.subject.2Du@" -> "@P.object.2Du@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4g/Pl@" | "@P.subject.4Sg/Pl@" |  "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define 2DuO
+
+regex [ "@P.subject.2Pl@" -> "@P.object.2Pl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4g/Pl@" | "@P.subject.4Sg/Pl@" |  "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define 2PlO
+
+regex [ "@P.subject.3Sg@" -> "@P.object.3Sg@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define 3SgO
+
+regex [ "@P.subject.3Du@" -> "@P.object.3Du@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4g/Pl@" | "@P.subject.4Sg/Pl@" |  "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define 3DuO
+
+regex [ "@P.subject.4Sg/Pl@" -> "@P.object.4Sg/Pl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define 4SgPlO
+
+regex [ "@P.subject.5Sg/Pl@" -> "@P.object.5Sg/Pl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define 5SgPlO
+
+regex [ "@P.subject.0Sg@" -> "@P.object.0Sg@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg@" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define 0SgO
+
+regex [ "@P.subject.X@" -> "@P.object.X@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define XO
+
+regex [ "@P.subject.XPl@" -> "@P.object.XPl@" || [ "@P.subject.1Sg@" | "@P.subject.2Sg@" | "@P.subject.3Sg@" | "@P.subject.0Sg" | "@P.subject.1Du@" | "@P.subject.2Du@" | "@P.subject.3Du@" | "@P.subject.1Pl@" | "@P.subject.21Pl@" | "@P.subject.2Pl@" | "@P.subject.3Pl@" | "@P.subject.4Sg/Pl@" | "@P.subject.5Sg/Pl@" | "@P.subject.X@" | "@P.subject.XPl@" ] ?* _ ] ;
+define XPlO
+
+regex [ {when there} -> "@P.tense.Cond@" "@P.subject.0Sg@" || .#. _ Bx ]
+.o. [ [ [ {am} | {are} | {is} ] " "+ {going to} ] -> "@P.tense.Fut@" || Bx _ Bx ,,
+{will} -> "@P.tense.Def@" || Bx _ Bx ,,
+[ {want} | {wants} ] " "+ {to} -> "@P.tense.Int@" || Bx _ Bx ,,
+{when} -> "@P.tense.Cond@" || .#. _ Bx
+] ;
+define Tense
+
+! Reading in the past-to-infinitive pairings for irregular verbs
+read lexc /Users/arppe/giellalt/lang-crk/src/transcriptions/cw-eng-verbs-prt2inf-w-flags.lexc
+define Prt2InfAnl
+
+regex [ [ {am} | {are} ] -> {is} ,
+[ {was} | {were} ] -> {is} "@P.tense.Prt@" ,
+! List-based solution for irregular verbs
+Prt2InfAnl -> || \.#. Bx _ Bx
+!!
+! {had} -> {has} "@P.tense.Prt@" ,
+! {did} -> {do} "@P.tense.Prt@" ,
+! {saw} -> {see} "@P.tense.Prt@" || Bx _ Bx
+! continue list of past tense -> present tense transformations here
+! {past} -> {infinitive} "@P.tense.Prt@" ,
+! {past} -> {infinitive} "@P.tense.Prt@" || Bx _ Bx
+!!
+] .o. [
+! Productive past tense with the -ed suffix
+[ {ed} -> {es} "@P.tense.Prt@" || [ {I} | {you all} | {you} | {you both} | {you two} | {the two of us} | {he} | {she} | {it} | {you and we} | {we} | {we both} | {we two} | {the two of us} | {they} | {they both} | {they two} | {the two of them} | {someone} | {people} | {another} | {others} ] " " \Bx+ [ s | z | x | s h | c h ] _ Bx ]
+.o. [ {ed} -> {s} "@P.tense.Prt@" || [ {I} | {you all} | {you} | {you both} | {you two} | {the two of you} | {he} | {she} | {it} | {you and we} | {we} | {we both} | {we two} | {the two of us} | {they} | {they both} | {they two} | {the two of them} | {someone} | {people} | {another} | {others} ] " " \Bx+ \[ s | z | x | s h | c h ] _ Bx ]
+] ;
+define Past
+
+regex  [ [ i n g ] -> "@R.prog.Cop@" "@P.prog.Prog@" || Bx [ {be} | {is} ] [ " " | Flags ]+ [ \" " ]+ [ b | g | l | m | n | p | r | s | t | v ] _ Bx ]
+.o. [ {ing} -> "@R.prog.Cop@" "@P.prog.Prog@" || Bx [ {be} | {is} | {was} ] [ " " | Flags ]+ [ \" " ]+ _ Bx ]
+.o. [ [ {be} | {is} ] (->) "@D.exist.Exist@" "@P.prog.Cop@" || Bx Flags* _ Flags* Bx ]
+;
+define Progressive
+
+regex [ {repeatedly} -> "@P.rept.Rept@" || Bx _ Bx ,,
+{again and again} -> "@P.rept.Rept@" || Bx _ Bx ] ;
+define Repetitive
+
+regex [ {es} -> 0 || [ {he} | {she} | {it} | {someone} | {another} | {yet another} | {he over there} | {she over there} ] " " \Bx+ _ Bx ]
+.o. [ {s} -> 0 || [ {he} | {she} | {it} | {someone} | {another} | {yet another} | {he over there} | {she over there} ] " " \Bx+ \[ i | a ] _ Bx ];
+define Prs3Sg
+
+regex [ {now} (->) "@R.tense.Imp@" "@P.tense.Imm@" || Bx _ Bx ,,
+{later} (->) "@R.tense.Imp@" "@P.tense.Del@" || Bx _ Bx
+] ;
+define Imperative
+
+define SingleSpacing [ [ " " ]+ -> [ " " ] || \Bx _ \Bx ] ;
+
+regex [ [..] -> "@R.tense.Fut@" "+Fut" || _ .#. ,,
+[..] -> "@R.tense.Def@" "+Def" || _ .#. ,,
+[..] -> "@R.tense.Int@" "+Int" || _ .#. ,,
+[..] -> "@R.tense.Cond@" "+Cond" || _ .#. ,,
+[..] -> "@R.tense.Prt@" "+Prt" || _ .#. ,,
+! [..] -> "@R.tense.Imp@" "+Imp" || _ .#. ,,
+[..] -> "@R.tense.Imp@" "+Imm" || _ .#. ,,
+[..] -> "@R.tense.Imm@" "+Imm" || _ .#. ,,
+[..] -> "@R.tense.Del@" "+Del" || _ .#. ,,
+[..] -> "@R.tense.Inf@" "+Inf" || _ .#. ,,
+[..] -> "@D.tense@" || _ .#.
+] .o. [
+[..] -> "@R.prog.Prog@" "+Prog" || _ .#. ,,
+[..] -> "@D.prog@" || _ .#.
+] .o. [
+[..] -> "@R.rept.Rept@" "+Rept" || _ .#. ,,
+[..] -> "@D.rept@" || _ .#.
+] .o. [
+[..] -> "@R.subject.1Sg@" "+1Sg" || _ .#. ,,
+[..] -> "@R.subject.2Sg@" "+2Sg" || _ .#. ,,
+[..] -> "@R.subject.3Sg@" "+3Sg" || _ .#. ,,
+[..] -> "@R.subject.0Sg@" "+0Sg" || _ .#. ,,
+[..] -> "@R.subject.1Du@" "+1Du" || _ .#. ,,
+[..] -> "@R.subject.2Du@" "+2Du" || _ .#. ,,
+[..] -> "@R.subject.3Du@" "+3Du" || _ .#. ,,
+[..] -> "@R.subject.1Pl@" "+1Pl" || _ .#. ,,
+[..] -> "@R.subject.21Pl@" "+21Pl" || _ .#. ,,
+[..] -> "@R.subject.2Pl@" "+2Pl" || _ .#. ,,
+[..] -> "@R.subject.3Pl@" "+3Pl" || _ .#. ,,
+[..] -> "@R.subject.4Sg/Pl@" "+4Sg/Pl" || _ .#. ,,
+[..] -> "@R.subject.5Sg/Pl@" "+5Sg/Pl" || _ .#. ,,
+[..] -> "@R.subject.X@" "+X" || _ .#. ,,
+[..] -> "@R.subject.XPl@" "+XPl" || _ .#. ,,
+[..] -> "@D.subject@" || _ .#.
+] .o. [
+[..] -> "@R.reflexive.1Sg@" "+1SgR" || _ .#. ,,
+[..] -> "@R.reflexive.2Sg@" "+2SgR" || _ .#. ,,
+[..] -> "@R.reflexive.3Sg@" "+3SgR" || _ .#. ,,
+[..] -> "@R.reflexive.1Pl@" "+1PlR" || _ .#. ,,
+# [..] -> "@R.reflexive.21Pl@" "+21PlR" || _ .#. ,,
+[..] -> "@R.reflexive.2Pl@" "+2PlR" || _ .#. ,,
+[..] -> "@R.reflexive.3Pl@" "+3PlR" || _ .#. ,,
+[..] -> "@R.reflexive.X@" "+XR" || _ .#. ,,
+[..] -> "@R.reflexive.Pl@" "+PlR" || _ .#. ,,
+[..] -> "@D.reflexive@" || _ .#.
+] .o. [
+[..] -> "@R.object.1Sg@" "+1SgO" || _ .#. ,,
+[..] -> "@R.object.2Sg@" "+2SgO" || _ .#. ,,
+[..] -> "@R.object.3Sg@" "+3SgO" || _ .#. ,,
+[..] -> "@R.object.0Sg@" "+0SgO" || _ .#. ,,
+[..] -> "@R.object.1Du@" "+1DuO" || _ .#. ,,
+[..] -> "@R.object.2Du@" "+2DuO" || _ .#. ,,
+[..] -> "@R.object.3Du@" "+3DuO" || _ .#. ,,
+[..] -> "@R.object.1Pl@" "+1PlO" || _ .#. ,,
+[..] -> "@R.object.21Pl@" "+21PlO" || _ .#. ,,
+[..] -> "@R.object.2Pl@" "+2PlO" || _ .#. ,,
+[..] -> "@R.object.3Pl@" "+3PlO" || _ .#. ,,
+[..] -> "@R.object.4Sg/Pl@" "+4Sg/PlO" || _ .#. ,,
+[..] -> "@R.object.5Sg/Pl@" "+5Sg/PlO" || _ .#. ,,
+[..] -> "@R.object.X@" "+XO" || _ .#. ,,
+[..] -> "@R.object.XPl@" "+XPlO" || _ .#. ,,
+[..] -> "@D.object@" || _ .#.
+] .o. [
+[..] -> "@R.neg.Neg@" "+Neg" || _ .#. ,,
+[..] -> "@D.neg@" || _ .#. ]
+;
+define VerbAnalysis
+
+regex [ {anothers} -> {another's} , {otherss} -> {others'} , {someones} -> {someone's} , {peoples} -> {people's} ] ;
+define ResurrectApostrophe
+
+!! NOUNS
+
+regex [ [ {your and our} | {our and your} ] -> "@P.poss.21Pl@" || Bx _ Bx
+] .o. [ {my} -> "@P.poss.1Sg@" || Bx _ Bx ,,
+{your} -> "@P.poss.2Sg@" || Bx _ Bx ,,
+{thy} -> "@P.poss.2Sg@" || Bx _ Bx ,,
+{his} | {her} | {its} -> "@P.poss.3Sg@" || Bx _ Bx ,,
+{our} -> "@P.poss.1Pl@" || Bx _ Bx ,,
+{their} -> "@P.poss.3Pl@" || Bx _ Bx ,,
+{anothers} -> "@P.poss.4Sg/Pl@" || Bx _ Bx ,,
+{otherss} -> "@P.poss.4Sg/Pl@" || Bx _ Bx ,,
+[ {someones} | {peoples} ] -> "@P.poss.X@" || Bx _ Bx
+] ;
+define Possession
+
+regex [ {couple of} -> "@P.number.Pl@" || Bx _ Bx ]
+.o. [ [ {one} | {a} | {an} ] -> "@P.number.Sg@" || Bx _ Bx ,,
+[ {many} | {several} | {few} | {couple} ] -> "@P.number.Pl@" || Bx _ Bx ,,
+[ {in} | {on} ] -> "@P.number.Loc@" || [ Bx - " " ] [ " " ]* _ Bx ,,
+{among} -> "@P.number.Distr@" || [ Bx - " " ] [ " " ]* _ Bx ,,
+{over there} -> "@P.number.Obv@" || Bx _ Bx
+] ;
+define NumberObvLocDistr
+
+regex [ [ {little} | {lesser} | {smaller} | {younger} ] -> "@P.dim.Dim@" || Bx _ Bx ] ;
+define Diminutive
+
+! Irregular nouns
+regex [ {addenda} -> {addendum} "@P.number.Pl@" ,
+{aircraft} -> {aircraft} "@P.number.Pl@" ,
+{alumnae} -> {alumna} "@P.number.Pl@" ,
+{alumni} -> {alumnus} "@P.number.Pl@" ,
+{analyses} -> {analysis} "@P.number.Pl@" ,
+{antitheses} -> {antithesis} "@P.number.Pl@" ,
+{appendices} -> {appendix} "@P.number.Pl@" ,
+{axes} -> {axis} "@P.number.Pl@" ,
+{bacilli} -> {bacillus} "@P.number.Pl@" ,
+{bacteria} -> {bacterium} "@P.number.Pl@" ,
+{bases} -> {basis} "@P.number.Pl@" ,
+{beaux} -> {beau} "@P.number.Pl@" ,
+{bison} -> {bison} "@P.number.Pl@" ,
+{bureaux} -> {bureau} "@P.number.Pl@" ,
+{children} -> {child} "@P.number.Pl@" ,
+{codices} -> {codex} "@P.number.Pl@" ,
+{corpora} -> {corpus} "@P.number.Pl@" ,
+{crises} -> {crisis} "@P.number.Pl@" ,
+{criteria} -> {criterion} "@P.number.Pl@" ,
+{curricula} -> {curriculum} "@P.number.Pl@" ,
+{data} -> {datum} "@P.number.Pl@" ,
+{diagnoses} -> {diagnosis} "@P.number.Pl@" ,
+{dice} -> {die} "@P.number.Pl@" ,
+{ellipses} -> {ellipsis} "@P.number.Pl@" ,
+{errata} -> {erratum} "@P.number.Pl@" ,
+{foci} -> {focus} "@P.number.Pl@" ,
+{feet} -> {foot} "@P.number.Pl@" ,
+{fungi} -> {fungus} "@P.number.Pl@" ,
+{genera} -> {genus} "@P.number.Pl@" ,
+{graffiti} -> {graffito} "@P.number.Pl@" ,
+{goose}-> {geese} "@P.number.Pl@" ,
+{halves} -> {half} "@P.number.Pl@" ,
+{hypotheses} -> {hypothesis} "@P.number.Pl@" ,
+{indices} -> {index} "@P.number.Pl@" ,
+{larvae} -> {larva} "@P.number.Pl@" ,
+{loaves} -> {loaf} "@P.number.Pl@" ,
+{loci} -> {locus} "@P.number.Pl@" ,
+{matrices} -> {matrix} "@P.number.Pl@" ,
+{media} -> {medium} "@P.number.Pl@" ,
+{memoranda} -> {memorandum} "@P.number.Pl@" ,
+{men} -> {man} "@P.number.Pl@" ,
+{mice} -> {mouse} "@P.number.Pl@" ,
+{minutiae} -> {minutia} "@P.number.Pl@" ,
+{moose} -> {moose} "@P.number.Pl@" ,
+{nuclei} -> {nucleus} "@P.number.Pl@" ,
+{oases} -> {oasis} "@P.number.Pl@" ,
+{offspring} -> {offspring} "@P.number.Pl@" ,
+{ova} -> {ovum} "@P.number.Pl@" ,
+{oxen} -> {ox} "@P.number.Pl@" ,
+{parentheses} -> {parenthesis} "@P.number.Pl@" ,
+{phenomena} -> {phenomenon} "@P.number.Pl@" ,
+{phyla} -> {phylum} "@P.number.Pl@" ,
+{quizzes} -> {quiz} "@P.number.Pl@" ,
+{referenda} -> {referendum} "@P.number.Pl@" ,
+{salmon} -> {salmon} "@P.number.Pl@" ,
+{selves} -> {self} "@P.number.Pl@" ,
+{series} -> {series} "@P.number.Pl@" ,
+{sheep} -> {sheep} "@P.number.Pl@" ,
+{species} -> {species} "@P.number.Pl@" ,
+{stimuli} -> {stimulus} "@P.number.Pl@" ,
+{strata} -> {stratum} "@P.number.Pl@" ,
+{swine} -> {swine} "@P.number.Pl@" ,
+{syllabi} -> {syllabus} "@P.number.Pl@" ,
+{symposia} -> {symposium} "@P.number.Pl@" ,
+{synopses} -> {synopsis} "@P.number.Pl@" ,
+{theses} -> {thesis} "@P.number.Pl@" ,
+{thieves} -> {thief} "@P.number.Pl@" ,
+{teeth} -> {tooth} "@P.number.Pl@" ,
+{trout} -> {trout} "@P.number.Pl@" ,
+{tuna} -> {tuna} "@P.number.Pl@" ,
+{vertebrae} -> {vertebra} "@P.number.Pl@" ,
+{vertices} -> {vertex} "@P.number.Pl@" ,
+{vitae} -> {vita} "@P.number.Pl@" ,
+{vortices} -> {vortex} "@P.number.Pl@" ,
+{wharves} -> {wharf} "@P.number.Pl@" ,
+{wives} -> {wife} "@P.number.Pl@" ,
+{wolves} -> {wolf} "@P.number.Pl@" ,
+{women} -> {woman} "@P.number.Pl@"
+!! Continue list of irregular noun plurals here
+! {plural} -> {singular} "@P.number.Pl@" ,
+! Context for above irregular noun forms here
+|| Bx _ Bx ]
+! Regular plurals to singulars
+.o. [ {es} -> "@P.number.Pl@" || \Bx _ [ Bx - " " ] | [ " " .#. ] ]
+.o. [ {s} -> "@P.number.Pl@" || \[ Bx | u ] _ [ Bx - " " ] | [ " " .#. ] ]
+;
+define NounPl2Sg
+
+regex [ "@P.number.Pl@" -> 0 || "@P.number.Distr@" ?* _ ] ;
+define DistrVsPl
+
+regex [ [..] -> "+Dim" "@R.dim.Dim@" || _ .#. ,,
+[..] -> "@D.dim@" || _ .#.
+] .o. [
+[..] -> "+Px1Sg" "@R.poss.1Sg@" || _ .#. ,,
+[..] -> "+Px2Sg" "@R.poss.2Sg@" || _ .#. ,,
+[..] -> "+Px3Sg" "@R.poss.3Sg@" || _ .#. ,,
+[..] -> "+Px1Pl" "@R.poss.1Pl@" || _ .#. ,,
+[..] -> "+Px21Pl" "@R.poss.21Pl@" || _ .#. ,,
+[..] -> "+Px2Pl" "@R.poss.2Pl@" || _ .#. ,,
+[..] -> "+Px3Pl" "@R.poss.3Pl@" || _ .#. ,,
+[..] -> "+PxX" "@R.poss.X@" || _ .#. ,,
+[..] -> "+Px4Sg/Pl" "@R.poss.4Sg/Pl@" || _ .#. ,,
+[..] -> "@D.poss@" || _ .#.
+] .o. [ [..] -> "+Pl" "@R.number.Pl@" || _ .#. ,,
+[..] -> "+Obv" "@R.number.Obv@" || _ .#. ,,
+[..] -> "+Loc" "@R.number.Loc@" || _ .#. ,,
+[..] -> "+Distr" "@R.number.Distr@" || _ .#. ,,
+[..] -> "+Pl" "@R.number.Pl@" || _ .#. ,,
+[..] -> "+Sg" "@R.number.Sg@" || _ .#. ,,
+[..] -> "+Sg" "@D.number@" "@R.poss@" "@D.dim.Dim@" || _ .#. ,,
+[..] -> "+Sg" "@D.number@" "@D.poss@" "@R.dim.Dim@" || _ .#. ,,
+[..] -> "+Sg" "@D.number@" "@R.poss@" "@R.dim.Dim@" || _ .#. ! ,,
+! [..] -> "+?" "@D.number@" "@D.poss@" "@D.dim@" || _ .#.
+] ;
+define NounAnalysis
+
+!! Assigning +V (+II/AI/TI/TA) or +N as part-of-speech
+
+regex [ [..] -> "+N" "@D.phrase.Verb@" "@R.number@" || _ .#. ,, [..] -> "@D.number@" || _ .#. ] ;
+define NounClass
+
+regex [ [..] -> "+V" "+TA" "@R.subject@" "@R.object@" "@D.object.0Sg@" || _ .#. ,,
+[..] -> "+V" "+TI" "@R.subject@" "@R.object@" "@R.object.0Sg@" || _ .#. ,,
+[..] -> "+V" "+AI" "@R.tense.Inf@" "@D.subject@" "@D.subject.0Sg@" "@D.object@" || _ .#. ,,
+[..] -> "+V" "+AI" "@R.subject@" "@D.subject.0Sg@" "@D.object@" || _ .#. ,,
+[..] -> "+V" "+II" "@R.subject@" "@R.subject.0Sg@" "@D.object@" || _ .#. ,,
+[..] -> "+V" "+TI" "@D.subject@" "@R.object.0Sg@" || _ .#. ,,
+[..] -> "+V" "+TA" "@D.subject@" "@R.object@" "@D.object.0Sg@" || _ .#.
+] ;
+define VerbClass
+
+regex [ [ {I} | {you} | {thou} | {he} | {she} | {it} | {someone} | {people} | {another} | {others} | {we} | {they} | {me} | {thee} | {him} | {us} | {them} ] -> "@P.phrase.Verb@" || Bx _ Bx ]
+.o. [ {for there} | {let there} | {when there} | {there} | {to} -> "@P.phrase.Verb@" || .#. _ Bx ] ;
+define VerbPhrase
+
+regex [ [..] -> "@D.phrase.Verb@" || _ .#. ] ;
+define NounPhrase
+
+regex [ [..] -> " " || _ .#. ] ;
+define InsertFinalSpace
+
+regex [ " "+ @-> 0 || .#. _ ] ;
+define RemoveInitialSpace
+
+regex [ Letters+ .o. InsertFinalSpace
+.o. Standardization
+.o. Contractions
+.o. ResurrectApostrophe
+.o. Negation
+.o. [
+[ Past
+! .o. Prs3Sg
+.o. ReverseSubject
+.o. Reciprocal
+.o. Subject
+.o. Reflexive
+.o. Object
+.o. 1DuO .o. 2SgO .o. 2DuO .o. 2PlO .o. 3SgO .o. 3DuO .o. 4SgPlO .o. 5SgPlO .o. 0SgO .o. XO .o. XPlO
+.o. Tense
+.o. Imperative
+.o. Progressive
+.o. Repetitive
+.o. VerbClass
+.o. VerbAnalysis
+] | [
+NounPl2Sg
+.o. VerbPhrase
+.o. NounPhrase
+.o. NumberObvLocDistr
+.o. Diminutive
+.o. Possession
+.o. DistrVsPl
+.o. NounClass
+.o. NounAnalysis
+] ] ] ;
+! .o. SingleSpacing
+! ] ;
+
+define InterimAnl
+
+set flag-is-epsilon ON
+regex [ InterimAnl
+.o. SingleSpacing
+.o. RemoveInitialSpace
+] ;
+set flag-is-epsilon OFF
+
+twosided flag-diacritics
+
+! save stack transcriptor-eng-phrase2crk-features

@@ -34,25 +34,13 @@ AC_CONFIG_MACRO_DIR([m4])
 AM_INIT_AUTOMAKE(
   1.11.6 tar-pax -Wall -Werror
   foreign -Wno-portability
-  dnl Automake versions before 1.13 (when the serial-tests option was
-  dnl still the default) still defined the badly obsolete macro
-  dnl 'AM_PROG_CC_STDC'. By checking for the non-existence of this macro,
-  dnl we can now force serial testing for newer automakes (with prettier
-  dnl output) and at the same time work reasonably with older automakes.
-  dnl Code based on:
-  dnl https://lists.gnu.org/archive/html/automake/2013-01/msg00060.html
-  m4_ifndef([AM_PROG_CC_STDC], [serial-tests])
 )
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
-### Speller release version (usually different from the package version,
-### typically spellers are released more often than the language package):
-AC_SUBST([SPELLERVERSION], [0.1.1])
-
 ########## LANGUAGE SPECIFIC SETTINGS ##########
-# GLANG is the language code used to identify this project; it should be the
-# same as the directory name in $GIELLA_HOME/*langs/ and the same as the ISO 639
-# three-letter code for the language.
+# GLANG is the language code used to identify this project; it is the
+# ISO 639-3 three-letter code for the language.
+# It is also the second part of the repo name lang-XXX.
 # GTLANG is deprecated, defined for backwards compatibility.
 AC_SUBST([GLANG], [crk])
 AC_SUBST([GTLANG], $GLANG)
@@ -66,6 +54,24 @@ AC_SUBST([GTLANG2], $GLANG2)
 # GTLANGUAGE is deprecated, defined for backwards compatibility.
 AC_SUBST([GLANGUAGE], ["Plains Cree"])
 AC_SUBST([GTLANGUAGE], $GLANGUAGE)
+
+### Speller release version (usually different from the package version,
+### typically spellers are released more often than the language package):
+### Translate the *_NAT placeholder contents into
+### the native language of this repo.
+### The AC variables SPELLER_NAME_xxx and SPELLER_DESC_xxx are used in:
+### - manifest.toml.in
+### - tools/spellcheckers/index.*.xml.in
+AC_SUBST([SPELLERVERSION], [0.1.1])
+AC_SUBST([SPELLER_NAME_ENG], ["$GLANGUAGE spellchecker"])
+AC_SUBST([SPELLER_NAME_NATIVE], ["Autonym spellchecker"])
+AC_SUBST([SPELLER_DESC_ENG], ["A spellchecker for $GLANGUAGE, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"])
+AC_SUBST([SPELLER_DESC_NATIVE], ["TRANSLATE: A spellchecker for $GLANGUAGE, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway"])
+
+### Grammar checker release version (usually different from the package version,
+### typically grammar checkers are released more often than the language
+### package, and also different from the speller release version):
+AC_SUBST([GRAMCHECKVERSION], [0.1.0])
 
 # Alternate writing system(s) should be listed here using the ISO 15924 code.
 # Multiple alternate WS's should be space separated. For a list of such codes
@@ -199,6 +205,8 @@ gt_CONFIG_FILES
 ##########################################################
 ##### BEGIN: Add language-specific list of files to ######
 ########## be processed by autoconf below here: ##########
+AC_CONFIG_FILES([tools/spellcheckers/index.Cans.xml \
+                 tools/spellcheckers/index.macron.xml ])
 
 ############ END: Language-specific scripts. #############
 

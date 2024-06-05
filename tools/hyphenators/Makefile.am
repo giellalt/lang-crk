@@ -31,10 +31,11 @@
 
 ##########################################
 # Subdirs:
-SUBDIRS = filters .
+SUBDIRS = filters . test
 
 
 #### Do NOT edit below here: ####
 include $(srcdir)/Makefile.modification-fst.am
 include $(srcdir)/Makefile.modification-pattern.am
 include $(top_srcdir)/../giella-core/am-shared/tools-hyphenators-dir-include.am
+include $(top_srcdir)/../giella-core/am-shared/devtest-include.am

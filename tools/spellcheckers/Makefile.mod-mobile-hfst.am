@@ -84,7 +84,7 @@ mobilexperimentdir=$(datadir)/giella/mobilespellers/
 # PrefixWeighting.hfst: $(srcdir)/prefix_weighting.lexc
 # 	hfst-lexc -o $@ $<
 
-spellrelax-weighted.hfst: $(top_srcdir)/src/orthography/spellrelax-weighted.regex
+spellrelax-weighted.hfst: $(top_srcdir)/src/fst/orthography/spellrelax-weighted.regex
 	hfst-regexp2fst -S $< -o $@
 
 ErrorModel.hfst: errmodel.default.predict.hfscript \
@@ -113,11 +113,11 @@ PrefixWeighting.hfst: $(srcdir)/prefix_weighting.lexc
 
 Acceptor.hfst: $(srcdir)/acceptor.default.predict.hfscript \
 		PrefixWeighting.hfst \
-		../../src/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
+		../../src/fst/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
 #		${srcdir}/prefix_weighting.lexc
 	hfst-xfst -F $<
 
-easteregg.predict.mobile.txt: ../../src/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
+easteregg.predict.mobile.txt: ../../src/fst/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
 	$(AM_V_GEN)$(GTCORE)/scripts/make-hfstspeller-version-easter-egg.sh \
 		$(GTLANG2) \
 		$(top_srcdir) \

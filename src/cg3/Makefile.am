@@ -2,6 +2,9 @@
 ## Copyright: Sámediggi/Divvun/UiT
 ## Licence: GPL v3+
 
+# build before test
+SUBDIRS=. test
+
 ##################################################################
 #### BEGIN: Add local processing instructions BELOW this line ####
 ##################################################################
@@ -36,3 +39,4 @@ clean-local:
 ####### Build rules via include: ########
 
 include $(top_srcdir)/../giella-core/am-shared/src-syntax-dir-include.am
+include $(top_srcdir)/../giella-core/am-shared/devtest-include.am

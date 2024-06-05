@@ -1,5 +1,17 @@
-name = "Plains Cree"
-version = "@SPELLERVERSION@"
+spellername = "@GLANGUAGE@"
+spellerversion = "@SPELLERVERSION@"
+
+# Name of the speller package in various languages.
+# The default is English + autonym:
+[speller.name]
+en = "@SPELLER_NAME_ENG@"
+crk = "@SPELLER_NAME_NATIVE@"
+
+# Description of the speller package in various languages.
+# The default is English + autonym:
+[speller.description]
+en = "@SPELLER_DESC_ENG@"
+crk = "@SPELLER_DESC_NATIVE@"
 
 [macos]
 system_pkg_id = "no.divvun.MacDivvun.crk"

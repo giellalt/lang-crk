@@ -88,7 +88,7 @@ AC_MSG_RESULT([$GIELLA_CORE])
 ###############################################################
 ### This is the version of the Giella Core that we require. ###
 ### UPDATE AS NEEDED.
-_giella_core_min_version=0.18.2
+_giella_core_min_version=0.23.0
 
 # GIELLA_CORE/GTCORE env. variable, required by the infrastructure to find scripts:
 AC_ARG_VAR([GIELLA_CORE], [directory for the Giella infra core scripts and other required resources])
@@ -105,7 +105,7 @@ The giella-core is too old, we require at least $_giella_core_min_version.
 *** ==> PLEASE ENTER THE FOLLOWING COMMANDS: <== ***
 
 cd $GTCORE
-git pull --rebase # or: `svn up` if you are using svn
+git pull --rebase # or: 'svn up' if you are using svn
 make
 
 Then retry.
@@ -161,6 +161,7 @@ AS_IF([test "x$enable_yamltests" = "xcheck"],
                    AC_MSG_RESULT([yes])])])])
 
 AM_CONDITIONAL([CAN_YAML_TEST], [test "x$enable_yamltests" != xno])
+
 
 ################ Generated documentation ################
 # Check for awk with required feature:
@@ -454,6 +455,9 @@ AC_MSG_CHECKING([whether we can enable vislcg3 targets])
 AS_IF([test "x$gt_prog_vislcg3" != xno], [AC_MSG_RESULT([yes])],
       [AC_MSG_RESULT([no])])
 AM_CONDITIONAL([CAN_VISLCG], [test "x$gt_prog_vislcg3" != xno])
+PKG_CHECK_MODULES([CG3], [cg3 > 1.4.0], [vislcg_filters=true],
+                  [vislcg_filters=false])
+AM_CONDITIONAL([HAVE_VISLCG_FILTER], [test "x$vislcg_filters" = xtrue])
 ]) # gt_PROG_VISLCG3
 
 ################################################################################
@@ -565,7 +569,7 @@ enableval=''
 
 AC_ARG_ENABLE([all_tools],
 			  [AS_HELP_STRING([--enable-all-tools],
-			  [build all tools (excluding unstable or experimental tools, which must be explicitly enabled with --enable-dialects, --enable-glossers, --enable-phonetic, --enable-downcaseerror, --enable-L2, --enable-pattern-hyphenators, --enable-fomaspeller, --enable-vfstspeller) @<:@default=no@:>@])],
+			  [build all tools (excluding unstable or experimental tools, which must be explicitly enabled with --enable-dialects, --enable-glossers, --enable-phonetic, --enable-downcaseerror, --enable-L2, --enable-pattern-hyphenators, --enable-fomaspeller) @<:@default=no@:>@])],
 			  [enable_all_tools=$enableval],
 			  [enable_all_tools=no])
 enableval=''
@@ -596,6 +600,15 @@ AS_IF([test "x$enable_ci" = "xyes" -a "x$enableval" = "x"], [enable_generators=n
 AM_CONDITIONAL([WANT_GENERATION], [test "x$enable_generators" != xno])
 enableval=''
 
+# Enable TTS text processing - default is 'no' (via $enable_all_tools)
+AC_ARG_ENABLE([tts],
+              [AS_HELP_STRING([--enable-tts],
+                              [enable tts transcriptors @<:@default=no@:>@])],
+              [enable_tts=$enableval],
+              [enable_tts=$enable_all_tools])
+AM_CONDITIONAL([WANT_TTS], [test "x$enable_tts" != xno])
+enableval=''
+
 # Enable glossing morphological analysers - default is 'no'
 AC_ARG_ENABLE([glossers],
               [AS_HELP_STRING([--enable-glossers],
@@ -613,6 +626,7 @@ AC_ARG_ENABLE([transcriptors],
               [enable_transcriptors=$enableval],
               [enable_transcriptors=yes])
 AS_IF([test "x$enable_ci" = "xyes" -a "x$enableval" = "x"], [enable_transcriptors=no])
+AS_IF([test "x$enable_tts" != xno],[enable_transcriptors=yes])
 AM_CONDITIONAL([WANT_TRANSCRIPTORS], [test "x$enable_transcriptors" != xno])
 enableval=''
 
@@ -648,6 +662,18 @@ AS_IF([test "x$enable_grammarchecker" = "xyes" -a "x$gt_prog_vislcg3" = "xno"],
 AS_IF([test "x$enable_ci" = "xyes" -a "x$enableval" = "x"], [enable_grammarchecker=no])
 AM_CONDITIONAL([WANT_GRAMCHECK], [test "x$enable_grammarchecker" != xno])
 enableval=''
+################ gtgramtool for grammarchecking ################
+AC_PATH_PROG([GTGRAMTOOL], [gtgramtool], [false])
+AS_IF([test "x$enable_grammarchecker" != "xno"],
+    AX_PYTHON_MODULE(pip)
+    AC_MSG_CHECKING([whether we have gtgramtool])
+    AS_IF([test x$GTGRAMTOOL = xfalse], 
+    [AC_MSG_ERROR([gtgramtool is needed for --enable grammarchecker.
+        on debian/ubuntu: sudo apt update; sudo apt install pipx; pipx ensurepath
+        on macbrew: brew install pipx; pipx ensurepath
+        then: pipx install git+https://github.com/divvun/giellaltgramtools
+      ])]),
+    AC_MSG_RESULT(yes))
 
 # Enable all spellers - default is 'no'
 AC_ARG_ENABLE([spellers],
@@ -762,7 +788,7 @@ AC_ARG_ENABLE([L2],
               [enable_L2=no])
 AS_IF([test x$enable_oahpa = xno], [enable_L2=no],
     [AS_IF([test x$enable_L2 != xno -a \
-      "$(find ${srcdir}/src -name "*-L2.*" | head -n 1)" = "" ],
+      "$(find ${srcdir}/src/fst -name "*-L2.*" | head -n 1)" = "" ],
       [AC_MSG_ERROR([You asked for the L2 analyser, but no L2 files were found])])])
 AM_CONDITIONAL([WANT_L2], [test "x$enable_L2" != xno])
 
@@ -780,7 +806,8 @@ AC_ARG_ENABLE([phonetic],
               [AS_HELP_STRING([--enable-phonetic],
                               [enable phonetic transducers @<:@default=no@:>@])],
               [enable_phonetic=$enableval],
-              [enable_phonetic=no])
+              [enable_phonetic=$enable_all_tools])
+AS_IF([test "x$enable_tts" != xno],[enable_phonetic=yes])
 AM_CONDITIONAL([WANT_PHONETIC], [test "x$enable_phonetic" != xno])
 
 # Enable Apertium transducers - default is 'no'
@@ -816,9 +843,9 @@ AC_ARG_ENABLE([abbr],
               [enable_abbr=$enableval],
               [enable_abbr=no])
 AS_IF([test x$enable_abbr != xno -a \
-    "$(find ${srcdir}/src/fst/stems/ -name "abbreviations.lexc" | head -n 1)" = "" ],
+    "$(find ${srcdir}/src/fst/morphology/stems -name "abbreviations.lexc" | head -n 1)" = "" ],
     [AC_MSG_ERROR([You asked for abbr.txt generation, but have no file \
-src/fst/stems/abbreviations.lexc])])
+src/fst/morphology/stems/abbreviations.lexc])])
 AS_IF([test x$enable_abbr = xyes -a x$enable_generators = xno],
     [AC_MSG_ERROR([You need to enable generators to build the abbr file])])
 AM_CONDITIONAL([WANT_ABBR], [test "x$enable_abbr" != xno])
@@ -872,22 +899,6 @@ AC_ARG_ENABLE([custom-fsts],
               [enable_custom_fsts=$enableval],
               [enable_custom_fsts=$DEFAULT_CUSTOM_FSTS])
 AM_CONDITIONAL([WANT_CUSTOM_FSTS], [test "x$enable_custom_fsts" != xno])
-
-# Enable TTS transcriptors - default is 'no' (via $enable_all_tools)
-AC_ARG_ENABLE([tts],
-              [AS_HELP_STRING([--enable-tts],
-                              [enable tts transcriptors @<:@default=no@:>@])],
-              [enable_tts=$enableval],
-              [enable_tts=$enable_all_tools])
-AS_IF([test x$enable_tts = xyes -a x$enable_transcriptors = xno],
-    [AC_MSG_ERROR([You need to enable transcriptors to build tts])])
-AS_IF([test x$enable_tts = xyes -a x$enable_phonetic = xno],
-    [AC_MSG_ERROR([You need to enable phonetic to build tts])])
-AS_IF([test x$enable_tts = xyes -a x$enable_tokenisers = xno],
-    [AC_MSG_ERROR([You need to enable phonetic to build tts])])
-AM_CONDITIONAL([WANT_TTS], [test "x$enable_tts" != xno])
-enableval=''
-
 
 ]) # gt_ENABLE_TARGETS
 
@@ -989,7 +1000,7 @@ To build, test and install:
     make install
 EOF
 AS_IF([test x$gt_prog_xslt = xno -a \
-      "$(find ${srcdir}/src/fst/stems -name "*.xml" | head -n 1)" != "" ],
+      "$(find ${srcdir}/src/fst/morphology/stems -name "*.xml" | head -n 1)" != "" ],
       [AC_MSG_WARN([You have XML source files, but XML transformation to LexC is
 disabled. Please check the output of configure to locate any problems. The LexC
 files will still compile though.
@@ -1011,14 +1022,20 @@ AS_IF([test "x$fallback_to_foma" != x ],
 
 dnl stick important warnings to bottom
 dnl YAML test warning:
+
 AS_IF([test "x$enable_yamltests" = "xno"],
-      [AC_MSG_WARN([YAML testing could not be automatically enabled. To enable it, on MacOSX please do:
+      [AS_CASE([$host_os], 
+               [*darwin*], [AC_MSG_WARN([YAML testing could not be automatically enabled. 
+To enable it, on MacOSX please do:
 
-sudo port install python38 py38-pip
-sudo pip-3.8 install PyYAML
+    sudo port install python38 py38-pip
+    sudo python3 -m pip install PyYAML
 
-3.8 may be newer in the future.
-On other systems, install python 3 and the corresponding py-yaml using suitable tools for those systems.])])
+replace 38 in python38 with current python])],
+               [*linux*], [AC_MSG_WARN([YAML testing could not be automatically enabled. 
+                To enable it on linux please use your package manager to install python an pyyaml,
+                or install pip and use it to install pyyaml.])],
+               [AC_MSG_WARN([YAML testing requires python3 and py-yaml.])])])
 
 AS_IF([test "x$gt_SHARED_FAILS" != "x"],
       [AC_MSG_WARN([This language depends on $gt_SHARED_FAILS which is missing, some parts of language models may be missing.
@@ -1030,4 +1047,5 @@ git clone git@github.com:giellalt/$gt_SHARED_FAILS
 cd $gt_SHARED_FAILS
 ./autogen.sh && ./configure && make])])
 ]) # gt_PRINT_FOOTER
+
 # vim: set ft=config:

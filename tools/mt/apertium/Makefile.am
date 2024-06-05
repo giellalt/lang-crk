@@ -31,7 +31,7 @@
 
 ##########################################
 # Subdirs:
-SUBDIRS = filters tagsets .
+SUBDIRS = filters tagsets . test
 
 ##########################################
 # Variable declarations:
@@ -53,3 +53,4 @@ CLEAN_FILES=
 # Includes:
 include $(srcdir)/Makefile.modifications.am
 include $(top_srcdir)/../giella-core/am-shared/tools-mt-apertium-dir-include.am
+include $(top_srcdir)/../giella-core/am-shared/devtest-include.am

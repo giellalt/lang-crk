@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hfstspeller dtdversion="1.0" hfstversion="3">
+  <info>
+    <locale>@GLANG2@-x-macron</locale>
+    <title>@SPELLER_NAME_ENG@, macron SRO.</title>
+    <description>@SPELLER_DESC_ENG@. This version uses SRO
+    with macrons for marking long vowels.</description>
+    <version>@SPELLERVERSION@</version>
+    <date>DATE</date>
+    <producer>UofAlberta/Giellatekno/Divvun/UiT contributors</producer>
+    <contact email="feedback@divvun.no" website="http://divvun.no"/>
+  </info>
+  <acceptor type="general" id="acceptor.default.hfst">
+    <title>@GLANGUAGE@ speller lexicon, macron SRO</title>
+    <description>@GLANGUAGE@ speller lexicon compiled with HFST.</description>
+  </acceptor>
+  <errmodel id="errmodel.default.hfst">
+    <title>@GLANGUAGE@ error model, macron SRO</title>
+    <description>Error model for @GLANGUAGE@.</description>
+        <type type="default"/>
+        <model>errormodel.default.hfst</model>
+    </errmodel>
+</hfstspeller>
