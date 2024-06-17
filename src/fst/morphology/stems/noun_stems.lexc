@@ -5821,7 +5821,8 @@ tahkwahamowâkanâhtik:tahkwahamowâkanâhtikw NI_DIM/IS ;
 tahkwahkêwin NI_DIM/IS ;
 tahkwamâcikan NI_DIM/IS ;
 tahtahkiw NA_POSS/IM_DIM/IS ;
-tahtêýihtamowin:tahtêýiht- + /-amowin/ NI_DIM/IS ;
+!tahtêýihtamowin:tahtêýiht- + /-amowin/ NI_DIM/IS ; ! original form, breaks compilation TT
+tahtêýihtamowin NI_DIM/IS ; ! xxx awaiting correction, TT
 tahtinikan NI_DIM/IS ;
 takahkastim:takahkastimw NA_DIM/IS ;
 takahkatim:takahkatimw NA_DIM/IS ;
