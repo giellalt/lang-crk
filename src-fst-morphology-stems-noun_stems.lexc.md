@@ -2,7 +2,7 @@
 
 Test lemma/stem set for nouns according the new crk FST
 
-Complete extraction of lemma:stem info from AEW 2020, according to
+Complete extraction of lemma:stem info from CW/AEW (2023) and (MD 2023), according to
 LEXC structure in the new crk FST.
 
 * * *

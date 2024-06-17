@@ -20,6 +20,7 @@
                 * [noun_stems.lexc](src-fst-morphology-stems-noun_stems.lexc.html) ([src](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/noun_stems.lexc))
                 * [numeral_symbols.lexc](src-fst-morphology-stems-numeral_symbols.lexc.html) ([src](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/numeral_symbols.lexc))
                 * [numerals.lexc](src-fst-morphology-stems-numerals.lexc.html) ([src](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/numerals.lexc))
+                * [particle_header.lexc](src-fst-morphology-stems-particle_header.lexc.html) ([src](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/particle_header.lexc))
                 * [particles.lexc](src-fst-morphology-stems-particles.lexc.html) ([src](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/particles.lexc))
                 * [pronouns.lexc](src-fst-morphology-stems-pronouns.lexc.html) ([src](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/pronouns.lexc))
                 * [verb_header.lexc](src-fst-morphology-stems-verb_header.lexc.html) ([src](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/verb_header.lexc))

@@ -1196,7 +1196,7 @@ LEXC structure in the new crk FST.
 
 Test lemma/stem set for nouns according the new crk FST
 
-Complete extraction of lemma:stem info from AEW 2020, according to
+Complete extraction of lemma:stem info from CW/AEW (2023) and (MD 2023), according to
 LEXC structure in the new crk FST.
 
 * * *
@@ -1271,22 +1271,25 @@ LEXC structure in the new crk FST.
 
 ---
 
-# src-fst-morphology-stems-particles.lexc.md 
+# src-fst-morphology-stems-particle_header.lexc.md 
 
 
 # Plains Cree particles                           
 
 The file contains the following lexicons, with content as described:
 
-* LEXICON Particle  adds +Ipc
+* * *
 
-* LEXICON Particle/Interjection   adds +Ipc+Interj
+<small>This (part of) documentation was generated from [src/fst/morphology/stems/particle_header.lexc](https://github.com/giellalt/lang-crk/blob/main/src/fst/morphology/stems/particle_header.lexc)</small>
 
-* LEXICON Particle/Name  adds +Ipc+Prop
+---
 
-* LEXICON Particle/Phrase  adds +Ipc+Phr
+# src-fst-morphology-stems-particles.lexc.md 
 
-* LEXICON Particles  contains the actual list of particles.
+
+# Plains Cree particles                           
+
+The file contains the following lexicons, with content as described:
 
 * * *
 
@@ -1358,7 +1361,8 @@ LEXC structure in the new crk FST.
 
 Model verb lemmas and stems for new crk FST
 
-Full incorporation of AEW 2020 verbs into new crk FST
+Complete extraction of lemma:stem info from CW/AEW (2023) and (MD 2023), according to
+LEXC structure in the new crk FST.
 
 * * *
 
