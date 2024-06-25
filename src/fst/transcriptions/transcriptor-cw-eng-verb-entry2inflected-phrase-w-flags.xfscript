@@ -49,16 +49,16 @@ define itNonSubjectMarking
 ! | [ [..] -> [ "@R.tense.Prs@" | "@R.tense.Cond@" ] "@R.subject.3Sg@" ] ;
 ! define VerbInflection
 
-read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prt-w-flags.lexc
+read lexc src/fst/transcriptions/cw-eng-verbs-prs3Sg2prt-w-flags.lexc
 define EngPrt
 
-read lexc src/transcriptions/cw-eng-verbs-prs3Sg2inf-w-flags.lexc
+read lexc src/fst/transcriptions/cw-eng-verbs-prs3Sg2inf-w-flags.lexc
 define EngInf
 
-read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prog-w-flags.lexc
+read lexc src/fst/transcriptions/cw-eng-verbs-prs3Sg2prog-w-flags.lexc
 define EngProg
 
-read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prs3Sg-w-flags.lexc
+read lexc src/fst/transcriptions/cw-eng-verbs-prs3Sg2prs3Sg-w-flags.lexc
 define EngPrs
 
 !! Word-specific explicit solution for verb morphology - Option 1 (works only in FOMA)
