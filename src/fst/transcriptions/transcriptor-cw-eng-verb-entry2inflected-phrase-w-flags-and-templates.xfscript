@@ -541,31 +541,31 @@ define itNonSubjectUnmarking
 
 ! Resolving irregularities of the spelling of English (irregular and regular) verb wordforms
 
-read lexc src/transcriptions/cw-eng-verbs-prs3Sg2inf.lexc
+read lexc src/fst/transcriptions/cw-eng-verbs-prs3Sg2inf.lexc
 define EngInf
 
 regex [ EngInf -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
 define EngInf2Inf
 
-read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prt.lexc
+read lexc src/fst/transcriptions/cw-eng-verbs-prs3Sg2prt.lexc
 define EngPrt
 
 regex [ EngPrt -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
 define EngPrt2Prt
 
-read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prf.lexc
+read lexc src/fst/transcriptions/cw-eng-verbs-prs3Sg2prf.lexc
 define EngPrf
 
 regex [ EngPrf -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
 define EngPrf2Prf
 
-read lexc src/transcriptions/cw-eng-verbs-prs3Sg2prog.lexc
+read lexc src/fst/transcriptions/cw-eng-verbs-prs3Sg2prog.lexc
 define EngProg
 
 regex [ EngProg -> || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
 define EngProg2Prog
 
-source src/transcriptions/phonology-eng.xfscript
+source src/fst/transcriptions/phonology-eng.xfscript
 define EngPhon
 
 regex [ ">" -> 0 || Alphabet+ _ Alphabet* ] ;
