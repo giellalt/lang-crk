@@ -381,6 +381,7 @@ analyser-dict-gt-desc.%: analyser-raw-gt-desc.% \
 			.o. @\"filters/remove-CRK_der_border-symbol.$*\" \
 			.o. @\"orthography/spellrelax.compose.$*\" \
 			;\n\
+		 invert net\n\
 		 minimise\n\
 		 save stack $@\n\
 		 quit\n" | $(XFST_TOOL)
