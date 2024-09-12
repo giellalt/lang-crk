@@ -1,33 +1,45 @@
-authors: # for whole infra, add / replace
-  - family-names: Wiechetek
-    given-names: Linda
-    orcid: "https://orcid.org/0000-0002-5171-0841"
-  - family-names: Hiovain-Asikainen
-    given-names: Katri
+authors:
+  - family-names: Arppe
+    given-names: Antti
     orcid: ""
-  - family-names: Mikkelsen
-    given-names: Inga Lill Sigga
+  - family-names: Harrigan
+    given-names: Atticus
     orcid: ""
-  - family-names: Moshagen
-    given-names: Sjur N.
+  - family-names: Schmirler
+    given-names: Katherine
     orcid: ""
-  - family-names: Pirinen
-    given-names: Flammie A
-    orcid: "https://orcid.org/0000-0003-1207-5395"
+  - family-names: Wolvengrey
+    given-names: Arok
+    orcid: ""
+  - family-names: Anronsen
+    given-names: Lene
+    orcid: ""
   - family-names: Trosterud
     given-names: Trond
     orcid: ""
-  - family-names: Gaup
-    given-names: Børre
+  - family-names: Moshagen
+    given-names: Sjur
     orcid: ""
-cff-version: 1.2.0
-date-released: "2022-06-19"
-identifiers:
-  - description: ACL anthology
-    type: url
-    value: https://aclanthology.org/2022.lrec-1.125/
+  - family-names: Silfverberg
+    given-names: Miikka
+    orcid: ""
+  - family-names: Snoek
+    given-names: Conor
+    orcid: ""
+  - family-names: Santos
+    given-names: Eddie Antonio
+    orcid: ""
+  - family-names: Thunder
+    given-names: Dorothy
+    orcid: ""
+  - family-names: Okimâsis
+    given-names: Jean
+    orcid: ""
+cff-version: 0.0.1
+date-released: "2024-09-01"
 keywords:
   - Plains Cree
+  - nêhiyawêwin
   - NLP
   - morphology
   - spell-checking
@@ -37,25 +49,60 @@ keywords:
 message: If you use this software, please cite it using these metadata.
 repository-code: "https://github.com/giellalt/lang-crk"
 title: GiellaLT repository (__LANG__ language)
-version: 0.0.0
-preferred-citation: # whole repo, replace with specific if one exists!
+version: 0.0.1
+preferred-citation:
   authors:
-      - family-names: Wiechetek
-        given-names: Linda
-      - family-names: Hiovain-Asikainen
-        given-names: Katri
-      - family-names: Mikkelsen
-        given-names: Inga Lill Sigg
-      - family-names: Moshagen
-        given-names: Sjur N.
-      - family-names: Pirinen
-        given-names: Flammie A
-      - family-names: Trosterud
-        given-names: Trond
-      - family-names: Gaup
-        given-names: Børre
-  title: "Unmasking the Myth of Effortless Big Data - Making an Open Source Multi-lingual Infrastructure and Building Language Resources from Scratch"
-  type: article
-license: __LICENCE__
-url: https://github.com/giellalt/lang-crk/
+  - family-names: Harrigan
+    given-names: Atticus
+    orcid: ""
+  - family-names: Schmirler
+    given-names: Katherine
+    orcid: ""
+  - family-names: Arppe
+    given-names: Antti
+    orcid: ""
+  - family-names: Anronsen
+    given-names: Lene
+    orcid: ""
+  - family-names: Moshagen
+    given-names: Sjur
+  - family-names: Trosterud
+    given-names: Trond
+    orcid: ""
+  - family-names: Wolvengrey
+    given-names: Arok
+    orcid: ""
+title: "Learning from the Computational Modeling of Plains Cree Verbs"
+journal: "Morphology, 27(4), 565–598"
+DOI: "https://doi.org/10.1007/s11525-017-9315-x"
+URL: "https://link.springer.com/article/10.1007%2Fs11525-017-9315-x"
+preferred-citation:
+  authors:
+  - family-names: Snoek
+    given-names: Conor
+    orcid: ""
+  - family-names: Thunder
+    given-names: Dorothy
+    orcid: ""
+  - family-names: Lõo
+    given-names: Kaidi
+    orcid: ""
+  - family-names: Arppe
+    given-names: Antti
+    orcid: ""
+  - family-names: Lachler
+    given-names: Jordan
+    orcid: ""
+  - family-names: Moshagen
+    given-names: Sjur
+    orcid: ""
+  - family-names: Trosterud
+    given-names: Trond
+    orcid: ""
+title: "Modeling the Noun Morphology of Plains Cree"
+proceedings: "J. Good, J. Hirschberg, O. Rambow (Eds): ComputEL: Workshop on the use of computational methods in the study of endangered languages, 52nd Annual Meeting of the Association for Computational Linguistics, 34-42. Baltimore, Maryland: Association for Computational Linguistics"
+URL: "http://acl2014.org/acl2014/W14-22/pdf/W14-2205.pdf"
+
+
+
 
