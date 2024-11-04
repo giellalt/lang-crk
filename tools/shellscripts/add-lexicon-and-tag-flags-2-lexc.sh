@@ -1,0 +1,156 @@
+#!/bin/sh
+
+gawk 'BEGIN { mcs=0; }
+{
+  line[NR]=$0;
+
+  # Set flag for recognizing multichar symbols,
+  # within the Multichar_Symbols field in LEXC code
+
+  if(match($0, "^Multichar_Symbols")!=0)
+    multichar=1;
+  if(match($0, "^LEXICON")!=0)
+    multichar=0;
+
+  # Recognizing multichar symbols (i.e. tags) and creating corresponding flags
+  if(multichar && match($0, "(^[^\\+ \t]+\\+|^\\+[^ \t]+)", f)!=0)
+    {
+      tagflag="@P.FSTTAG." f[1] "@";
+      tagflags[f[1]]=tagflag;
+      taglen[f[1]]=length(f[1]);
+    }
+
+  # Recognizing contlex names and creating corresponding flags
+  if(match($0, "^LEXICON[ \t]+([^ \t]+)", f)!=0)
+    {
+      lexicon[f[1]]++;
+      if(lexicon[f[1]]>=2)
+        {
+          printf "Aborting - More than one continuation lexicon with the same name:\n" > "/dev/stderr";
+          printf "=> LEXICON: %s\n", f[1] > "/dev/stderr";
+          _assert_exit=1;
+          exit 1;
+        }
+      lexflag=sprintf("@P.LEXICON.%s@", f[1]);
+      gsub("0", "%0", lexflag);
+      flags[lexflag]=lexflag;
+    }
+}
+END {
+  if(_assert_exit) exit 1;
+
+  delete lexicon;
+
+  # Creating single regexp covering all tags in LEXC code
+  # (as defined in the Multichar_Symbols field in LEXC code
+  tagregexp="";
+  for(t in taglen)
+     tagregexp = tagregexp "|" t;
+  # Remove initial "|" operator
+  sub("^\\|", "", tagregexp);
+  # Re-encode certain special characters
+  gsub("\\+", "\\+", tagregexp);
+  gsub("[-]", "\\-", tagregexp);
+  gsub("0", "%0", tagregexp);
+  gsub("[%]+0", "%0", tagregexp);
+
+  for(i=1; i<=NR; i++)
+    {
+      if(index(line[i], "Multichar_Symbols")!=0)
+        {
+          print line[i];
+          PROCINFO["sorted_in"]="@ind_str_asc";
+          for(flag in flags)
+             print flag;
+          for(tag in tagflags)
+             print tagflags[tag];
+          printf "\n";
+          i++;
+        }
+             
+      if(match(line[i], "^LEXICON[ \t]+([^ \t]+)", f)!=0)
+        { 
+          print line[i];
+          lexflag=sprintf("@P.LEXICON.%s@", f[1]);
+          gsub("0", "%0", lexflag);
+        }
+      else
+      if(match(line[i], "^([^!;]+)(;)(.*)$", f)!=0)
+      {
+        content=f[1];
+        sep=f[2];
+        comment=f[3];
+
+        n=split(content, ff, ":")
+        if(n==2)
+          {
+            anl=ff[1]; tagflag="";
+
+            # Encoding tags as flags, by matching with longest-to-shortest tags
+            # PROCINFO["sorted_in"]="@val_num_desc";
+            # for(t in taglen)
+            #    {
+            #      if(index(anl, t)!=0)
+            #        {
+            #          tagflag=tagflag tagflags[t];
+            #          sub("\\+", "\\+", t);
+            #          sub(t, "", anl);
+            #        }
+            #    }
+
+            # Encoding tags as flags, by matching with single regexp including all tags
+            while(match(anl, tagregexp, fff)!=0)
+               {
+                   tag=fff[0]; # print "Pah0:"tag;
+                   tagflag=tagflag tagflags[tag];
+                   sub("\\+", "\\+", tag);
+                   sub("\\.", "\\.", tag);
+                      sub(tag, "", anl);
+               }
+
+            # Encoding tags as flags, by matching with regexp identifying potential tags
+            # starting with prefixal tags ([...]+) and then suffixal tags (+[...])
+            # Does not fully work with the combination of prefixal and suffixal tags in LEXC code
+            # if(match(anl, "(^[^@\\+]+\\+)|(@[^@\\+]+\\+))", fff)!=0)
+            # while(match(anl, "[^@\\+]+\\+", fff)!=0)
+            #      {
+            #        tag=fff[0]; # print "Pah1:"tag;
+            #        tagflag=tagflag tagflags[tag];
+            #        sub("\\+", "\\+", tag);
+            #        sub("\\.", "\\.", tag);
+            #        if(tag in tagflags)
+            #           sub(tag, "", anl);
+            #        else
+            #          break;
+            #      }
+            # if(match(anl, "(^\\+[^@\\+]+)|(@\\+[^@\\+]+))", fff)!=0)
+            # while(match(anl, "\\+[^@\\+]+", fff)!=0)
+            #      {
+            #        tag=fff[0]; # print "Pah2:"tag;
+            #        tagflag=tagflag tagflags[tag];
+            #        sub("\\+", "\\+", tag); 
+            #        sub("\\.", "\\.", tag);
+            #        if(tag in tagflags)
+            #          sub(tag, "", anl);
+            #        else
+            #          break;
+            #      }
+
+            # Adding lexicon and tag flags to LEXC code
+            content=lexflag tagflag ff[1] ":" lexflag tagflag ff[2];
+          }
+        else
+          {
+            if(match(content, "^[ ]*[^ ]+[ ]*;")!=0)
+              content=lexflag content;
+            else
+              content=lexflag " " content;
+            gsub("@ @", "@@", content);
+          }
+
+        print content sep comment;
+      }
+      else
+        print line[i];
+    }
+}'
