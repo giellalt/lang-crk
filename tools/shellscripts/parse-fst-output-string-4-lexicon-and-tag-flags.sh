@@ -43,8 +43,15 @@ gawk -F"\t" 'BEGIN { max1=5; max2=7; max3=5; max4=5; }
 
 }
 END {
-  printf  "%"(max1+1)"s %"max2"s\t%"max3"s : %-"max4"s\n", "INDEX", "CONTLEX", "INPUT", "OUTPUT";
+  delim=sprintf("%" (max1+3 + max2+1 + max3+2 + max4+3) "s", ""); gsub(" ", "-", delim);
+  printf "%s\n", delim;
+  printf  "%"(max1)"s | %-"(max2+1)"s|%"(max3+1)"s : %-"(max4)"s\n", "INDEX", "CONTLEX", "INPUT", "OUTPUT";
   for(i=1; i<=NR; i++)
-     printf "%"max1"i: %"max2"s\t%"max3"s : %-"max4"s\n", cell[i, 1], cell[i, 2], cell[i, 3], cell[i, 4];
+     {
+       if(cell[i, 1]=="1")
+         printf "%s\n", delim;
+       printf "%"(max1)"i | %-"(max2+1)"s|%"(max3+1)"s : %-"(max4)"s\n", cell[i, 1], cell[i, 2], cell[i, 3], cell[i, 4];
+     }
+  printf "%s\n", delim;
 }'
 
