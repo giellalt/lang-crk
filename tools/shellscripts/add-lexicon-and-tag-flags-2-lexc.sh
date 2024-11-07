@@ -65,6 +65,7 @@ END {
 
   for(i=1; i<=NR; i++)
     {
+      # Incorporating declarations of flags for continuation lexica and tags
       if(index(line[i], "Multichar_Symbols")!=0)
         {
           print line[i];
@@ -76,7 +77,9 @@ END {
           printf "\n";
           i++;
         }
-             
+
+      # Incorporating flags for contlexs in their content
+      # First, determining flag for LEXICON
       if(match(line[i], "^LEXICON[ \t]+([^ \t]+)", f)!=0)
         { 
           print line[i];
@@ -150,14 +153,32 @@ END {
           }
         else
           {
-            if(match(content, "^[ ]*[^ ]+[ ]*;")!=0)
-              content=lexflag content;
+            # 1) No lexical content:
+            # ^CONTLEX;
+            # ^CONTLEX ;
+            # ^ CONTLEX;
+            # ^ CONTLEX ;
+            # 2) Same lexical content on both sides:
+            # ^lex CONTLEX;
+            # ^lex CONTLEX ;
+            # ^ lex CONTLEX;
+            # ^0 CONTLEX;
+            # ^0 CONTLEX ;
+
+            if(match(content, "^[ ]*([^ ]+[ ]+[^ ]+[ ]*)", ffff)!=0)
+              {
+                sub("^[ ]*", "", ffff[1]);
+                content=lexflag "" ffff[1];
+              }
             else
-              content=lexflag " " content;
-            gsub("@ @", "@@", content);
+              {
+                sub("^[ ]*", "", content);
+                content=lexflag " " content;
+              }
           }
 
         print content sep comment;
+
       }
       else
         print line[i];
