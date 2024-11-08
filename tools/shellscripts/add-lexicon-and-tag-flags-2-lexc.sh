@@ -87,11 +87,12 @@ END {
           gsub("0", "%0", lexflag);
         }
       else
-      if(match(line[i], "^([^!;]+)(;)(.*)$", f)!=0)
+      if(match(line[i], "^([^!;\"]+)(\"[^\"]+\"[ ]*)?([!;])(.*)$", f)!=0)
       {
         content=f[1];
-        sep=f[2];
-        comment=f[3];
+        infostr=f[2];
+        sep=f[3];
+        comment=f[4];
 
         n=split(content, ff, ":")
         if(n==2)
@@ -177,7 +178,7 @@ END {
               }
           }
 
-        print content sep comment;
+        printf "%s%s%s%s\n", content, infostr, sep, comment;
 
       }
       else
