@@ -196,6 +196,7 @@ gt_ENABLE_TARGETS
 gt_USE_SHARED([common], [shared-mul], [giella-shared-mul])
 AM_CONDITIONAL([HAVE_SHARED_COMMON], [test x$gt_SHARED_common != xfalse])
 
+gt_NEED_SHARED([mul], [shared-mul], [giella-shared-mul], [0.0.3])
 
 # Locally used shares above this line
 
