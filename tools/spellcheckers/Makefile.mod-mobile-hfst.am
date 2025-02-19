@@ -92,7 +92,7 @@ ErrorModel.hfst: errmodel.default.predict.hfscript \
 	hfst-xfst -F $<
 
 # Error model building - list of words known to be misspelled, mobile version:
-words.predict.mobile.hfst: easteregg.predict.mobile.suggtxt
+words.predict.mobile.hfst: .generated/easteregg.predict.mobile.suggtxt
 	$(AM_V_STR2FST)grep -h -v '^#' $^ | grep -v '^$$'   \
 		| $(HFST_STRINGS2FST) $(HFST_FLAGS) -j \
 		   --format=openfst-tropical \
