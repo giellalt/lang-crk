@@ -73,7 +73,9 @@ KEYBOARD_LAYOUT_DIR=$(GIELLA_CORE)/../keyboards/$GLANG
 KEYBOARD_LAYOUT_ID=crk
 
 # build one extra zhfst specific for our crk tests
+if WANT_HFST_MOBILE_SPELLER
 CRK_EXPERIMENT_MORPH_ZHFST=$(GTLANG2)-x-predict_morphs-mobile.zhfst
+endif
 mobilexperiment_DATA=$(CRK_EXPERIMENT_MORPH_ZHFST)
 mobilexperimentdir=$(datadir)/giella/mobilespellers/
 
