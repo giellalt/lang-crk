@@ -62,8 +62,7 @@ endif # WANT_CUSTOM_FSTS
 if WANT_DICTIONARIES
 CUSTOM_FSTS+=crk-strict-analyzer-for-dictionary-giellaltbuild.xfst \
 			 crk-relaxed-analyzer-for-dictionary-giellaltbuild.xfst \
-			 generator-dict-gt-norm.boundaries.xfst \
-			 analyser-dict-gt-desc.xfst
+			 generator-dict-gt-norm.boundaries.xfst
 endif # WANT_DICTIONARIES
 
 endif # CAN_XFST
@@ -82,8 +81,7 @@ CUSTOM_FSTS+=crk-strict-analyzer-giellaltbuild.hfstol \
 if WANT_DICTIONARIES
 CUSTOM_FSTS+=crk-strict-analyzer-for-dictionary-giellaltbuild.hfstol \
 			 crk-relaxed-analyzer-for-dictionary-giellaltbuild.hfstol \
-			 generator-dict-gt-norm.boundaries.hfstol \
-			 analyser-dict-gt-desc.hfstol
+			 generator-dict-gt-norm.boundaries.hfstol
 endif # WANT_DICTIONARIES
 
 endif # WANT_CUSTOM_FSTS
@@ -105,8 +103,7 @@ endif # WANT_CUSTOM_FSTS
 if WANT_DICTIONARIES
 CUSTOM_FSTS+=crk-strict-analyzer-for-dictionary-giellaltbuild.foma \
 			 crk-relaxed-analyzer-for-dictionary-giellaltbuild.foma \
-			 generator-dict-gt-norm.boundaries.foma \
-			 analyser-dict-gt-desc.foma
+			 generator-dict-gt-norm.boundaries.foma
 endif # WANT_DICTIONARIES
 
 endif # CAN_FOMA
