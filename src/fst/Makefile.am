@@ -48,24 +48,6 @@ _DEEMPH := $(shell tput setaf 4)
 #### Add language-specific transducer targets here: ####
 
 #### Xerox transducers:
-if CAN_XFST
-GT_ANALYSERS+=
-GT_GENERATORS+=generator-gt-desc.borders.xfst
-
-if WANT_CUSTOM_FSTS
-CUSTOM_FSTS+=crk-strict-analyzer-giellaltbuild.xfst \
-			 crk-strict-generator-giellaltbuild.xfst \
-			 crk-relaxed-analyzer-giellaltbuild.xfst \
-			 crk-strict-generator-with-morpheme-boundaries.xfst
-endif # WANT_CUSTOM_FSTS
-
-if WANT_DICTIONARIES
-CUSTOM_FSTS+=crk-strict-analyzer-for-dictionary-giellaltbuild.xfst \
-			 crk-relaxed-analyzer-for-dictionary-giellaltbuild.xfst \
-			 generator-dict-gt-norm.boundaries.xfst
-endif # WANT_DICTIONARIES
-
-endif # CAN_XFST
 
 #### HFST transducers
 if CAN_HFST
