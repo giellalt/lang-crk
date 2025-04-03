@@ -76,7 +76,7 @@ define itNonSubjectMarking
 
 regex [ {is} -> ISZ || [ Wx | Bx ] [ {s/he} | {S/he} | {he} | {He} | {she} | {She} | {it} | {It} | IT ] { } _ [ Wx | Bx ] ]
 .o. [ [ {s/he} | {S/he} | {he} | {He} | {she} | {She} | {they} | {They} ] -> SUBJ
-, {it} -> SUBJinanim
+, [ {it} | {It} ] -> SUBJinanim
 , [ {him/herself} | {her/himself} | {himself} | {herself} | {themselves} | {themself} | {oneself} ] -> RFLX
 , [ {s.o.'s} | {his} ] -> POSS
 , [ {s.o.} | {him} | {them} | {him/her} | {her/him} | {him, her or them} | {him/her or them} | {her/him or them} ] @-> DOBJ
@@ -536,7 +536,7 @@ regex [ "Cnj+" -> "@P.clause.Cnj@" , "Rel+" -> "@P.clause.Rel@" , "Obl2+" -> "@P
 define Tag2FlagConversion
 
 ! Undoing special marking of non-subject 'it' and existential 'there'
-regex [ IT -> {it} , THERE -> {there} || [ Wx | Bx ] _ [ Wx | Bx ] ] ;
+regex [ IT -> {it} , THERE -> {there} ] ;
 define itNonSubjectUnmarking
 
 ! Resolving irregularities of the spelling of English (irregular and regular) verb wordforms
