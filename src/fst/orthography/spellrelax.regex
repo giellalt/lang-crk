@@ -43,13 +43,20 @@ i (->) [ %' | ‘ | ’ ],
 
 # NS 152 materials consistantly write some vowels as long where Arok's write
 # them as short.
-# E.G. NS 152 give 'askîy' and Arok gives 'askiy.'
+# E.G. NS 152 give 'askîy' but Arok gives 'askiy' according to SRO standard.
 a (->) â,
 i (->) î,
 o (->) ô,,
 
 # Prefix-final vowel (preceded by consonant) dropped before following morpheme
 [ a | â | ê | i | î | o | ô ]  (->) 0 || [ c | k | m | n | p | s | t | w | y ] _ %- ,,
+
+# Sandhi at prefix boundaries
+# %- -> 0 ,
+[ a | â | ê | i | î | o | ô ] %- [ a | â ] (->) [ a | â ] , 
+[ a | â | ê | i | î | o | ô ] %- ê (->) [ e | ê ] , 
+[ a | â | ê | i | î | o | ô ] %- [ i | î ] (->) [ i | î ] , 
+[ a | â | ê | i | î | o | ô ] %- [ o | ô ] (->) [ o | ô ] , 
 
 # Dealing with spaces instead of hyphens as separators in multipart words
 
@@ -112,12 +119,15 @@ c (->) {ts} ,,      # Another English influence on spelling <c>
 ê (->) [ î | i ] ,,
 
 # Adding missing or reduced short i's in interconsonantal contexts
-i (->) [..] || [ c | h | k | m | n | p | s | t | w | y | b | g | d ] _ [ c | h | k | m | n | p | s | t | w | y | b | g | d ]
+i (->) [..] || [ c | h | k | m | n | p | s | t | w | y | b | g | d ] _ [ c | h | k | m | n | p | s | t | w | y | b | g | d ] # ,,
+
+# Removing morpheme boundary markers (middle-dots)
+# [..] (->) {·}
 
 ;
 
 
-# Explanation:
+# Format/explanation:
 # lexical side (->) input
 # Or, in other words:
 # correct (->) in use out there
