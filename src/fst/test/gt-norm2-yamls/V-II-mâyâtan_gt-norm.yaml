@@ -1,0 +1,44 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - mâyâtan -  adsf : # Ordinary VII verb, Wolvengrey VII1 p 393
+
+     mâyâtan+V+II+Ind+3Sg: mâyâtan
+     mâyâtan+V+II+Ind+3Pl: mâyâtanwa
+     mâyâtan+V+II+Ind+4Sg: mâyâtaniyiw
+     mâyâtan+V+II+Ind+4Pl: mâyâtaniyiwa
+
+     PV/kî+mâyâtan+V+II+Ind+3Sg: [kî-mâyâtan]
+     PV/kî+mâyâtan+V+II+Ind+3Pl: [kî-mâyâtanwa]
+     PV/kî+mâyâtan+V+II+Ind+4Sg: [kî-mâyâtaniyiw]
+     PV/kî+mâyâtan+V+II+Ind+4Pl: [kî-mâyâtaniyiwa]
+     
+     PV/ka+mâyâtan+V+II+Ind+3Sg: [ka-mâyâtan]
+     PV/ka+mâyâtan+V+II+Ind+3Pl: [ka-mâyâtanwa]
+     PV/ka+mâyâtan+V+II+Ind+4Sg: [ka-mâyâtaniyiw]
+     PV/ka+mâyâtan+V+II+Ind+4Pl: [ka-mâyâtaniyiwa]
+     
+     PV/wî+mâyâtan+V+II+Ind+3Sg: [wî-mâyâtan]
+     PV/wî+mâyâtan+V+II+Ind+3Pl: [wî-mâyâtanwa]
+     PV/wî+mâyâtan+V+II+Ind+4Sg: [wî-mâyâtaniyiw]
+     PV/wî+mâyâtan+V+II+Ind+4Pl: [wî-mâyâtaniyiwa]
+
+     PV/ê+mâyâtan+V+II+Cnj+3Sg: [ê-mâyâtahk]
+     PV/ê+mâyâtan+V+II+Cnj+3Pl: [ê-mâyâtahki]
+     PV/ê+mâyâtan+V+II+Cnj+4Sg: [ê-mâyâtaniyik]
+     PV/ê+mâyâtan+V+II+Cnj+4Pl: [ê-mâyâtaniyiki]
+
+     PV/ê+PV/kî+mâyâtan+V+II+Cnj+3Sg: [ê-kî-mâyâtahk]
+     PV/ê+PV/kî+mâyâtan+V+II+Cnj+3Pl: [ê-kî-mâyâtahki]
+     PV/ê+PV/kî+mâyâtan+V+II+Cnj+4Sg: [ê-kî-mâyâtaniyik]
+     PV/ê+PV/kî+mâyâtan+V+II+Cnj+4Pl: [ê-kî-mâyâtaniyiki]
+
+     mâyâtan+V+II+Fut+Cond+3Sg: mâyâtahki
+     mâyâtan+V+II+Fut+Cond+3Pl: mâyâtahkwâwi
+     mâyâtan+V+II+Fut+Cond+4Sg: mâyâtaniyiki
+     mâyâtan+V+II+Fut+Cond+4Pl: mâyâtaniyikwâwi
+

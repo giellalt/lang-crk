@@ -1,0 +1,25 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - mihkwâw - help : # Wolvengrey VIIv:
+
+
+     mihkwâw+V+II+Ind+3Sg:  mihkwâw
+     mihkwâw+V+II+Ind+3Pl:  mihkwâwa
+     mihkwâw+V+II+Ind+4Sg:  mihkwâyiw
+     mihkwâw+V+II+Ind+4Pl:  mihkwâyiwa
+     
+     PV/ê+mihkwâw+V+II+Cnj+3Sg: [ê-mihkwâk]
+     PV/ê+mihkwâw+V+II+Cnj+3Pl: [ê-mihkwâki]
+     PV/ê+mihkwâw+V+II+Cnj+4Sg: [ê-mihkwâyik]
+     PV/ê+mihkwâw+V+II+Cnj+4Pl: [ê-mihkwâyiki]
+     
+     mihkwâw+V+II+Fut+Cond+3Sg:  mihkwâki
+     mihkwâw+V+II+Fut+Cond+3Pl:  mihkwâkwâwi
+     mihkwâw+V+II+Fut+Cond+4Sg:  mihkwâyiki
+     mihkwâw+V+II+Fut+Cond+4Pl:  mihkwâyikwâwi
+

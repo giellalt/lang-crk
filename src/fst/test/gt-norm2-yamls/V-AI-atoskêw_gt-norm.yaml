@@ -1,0 +1,122 @@
+Config:
+  xerox:
+    Gen: ../../../src/generator-gt-norm.xfst
+    App: lookup
+
+Tests:
+  
+  Verb - atoskêw - ok : # Ordinary AI verb - Wolvengrey p. 395; Fut+Def from Okimāsis p. 36 
+
+  
+     atoskêw+V+AI+Ind+1Sg:    nitatoskân # INDEPENDENT
+     atoskêw+V+AI+Ind+2Sg:    kitatoskân
+     atoskêw+V+AI+Ind+3Sg:    atoskêw
+     atoskêw+V+AI+Ind+4Sg/Pl: atoskêyiwa
+     atoskêw+V+AI+Ind+1Pl:    nitatoskânân
+     atoskêw+V+AI+Ind+12Pl:   [kitatoskânaw, kitatoskânânaw]
+     atoskêw+V+AI+Ind+2Pl:    kitatoskânâwâw
+     atoskêw+V+AI+Ind+3Pl:    atoskêwak
+
+     PV/ê+atoskêw+V+AI+Cnj+1Sg:    ê-atoskêyân # CONJUNCT
+     PV/ê+atoskêw+V+AI+Cnj+2Sg:    ê-atoskêyan
+     PV/ê+atoskêw+V+AI+Cnj+3Sg:    ê-atoskêt
+     PV/ê+atoskêw+V+AI+Cnj+4Sg/Pl: ê-atoskêyit
+     PV/ê+atoskêw+V+AI+Cnj+1Pl:    ê-atoskêyâhk
+     PV/ê+atoskêw+V+AI+Cnj+12Pl:   ê-atoskêyahk
+     PV/ê+atoskêw+V+AI+Cnj+2Pl:    ê-atoskêyêk
+     PV/ê+atoskêw+V+AI+Cnj+3Pl:    ê-atoskêcik
+
+     PV/kî+atoskêw+V+AI+Ind+1Sg:    nikî-atoskân # PRT-INDEPENDENT
+     PV/kî+atoskêw+V+AI+Ind+2Sg:    kikî-atoskân
+     PV/kî+atoskêw+V+AI+Ind+3Sg:    kî-atoskêw
+     PV/kî+atoskêw+V+AI+Ind+4Sg/Pl: kî-atoskêyiwa
+     PV/kî+atoskêw+V+AI+Ind+1Pl:    nikî-atoskânân
+     PV/kî+atoskêw+V+AI+Ind+12Pl:   [kikî-atoskânaw, kikî-atoskânânaw]
+     PV/kî+atoskêw+V+AI+Ind+2Pl:    kikî-atoskânâwâw
+     PV/kî+atoskêw+V+AI+Ind+3Pl:    kî-atoskêwak
+
+     PV/ê+PV/kî+atoskêw+V+AI+Cnj+1Sg:    ê-kî-atoskêyân # PRT-CONJUNCT
+     PV/ê+PV/kî+atoskêw+V+AI+Cnj+2Sg:    ê-kî-atoskêyan
+     PV/ê+PV/kî+atoskêw+V+AI+Cnj+3Sg:    ê-kî-atoskêt
+     PV/ê+PV/kî+atoskêw+V+AI+Cnj+4Sg/Pl: ê-kî-atoskêyit
+     PV/ê+PV/kî+atoskêw+V+AI+Cnj+1Pl:    ê-kî-atoskêyâhk
+     PV/ê+PV/kî+atoskêw+V+AI+Cnj+12Pl:   ê-kî-atoskêyahk
+     PV/ê+PV/kî+atoskêw+V+AI+Cnj+2Pl:    ê-kî-atoskêyêk
+     PV/ê+PV/kî+atoskêw+V+AI+Cnj+3Pl:    ê-kî-atoskêcik
+
+
+     PV/wî+atoskêw+V+AI+Ind+1Sg:    niwî-atoskân # FUT+INT-INDEPENDENT
+     PV/wî+atoskêw+V+AI+Ind+2Sg:    kiwî-atoskân
+     PV/wî+atoskêw+V+AI+Ind+3Sg:    wî-atoskêw
+     PV/wî+atoskêw+V+AI+Ind+4Sg/Pl: wî-atoskêyiwa
+     PV/wî+atoskêw+V+AI+Ind+1Pl:    niwî-atoskânân
+     PV/wî+atoskêw+V+AI+Ind+12Pl:   [kiwî-atoskânaw, kiwî-atoskânânaw]
+     PV/wî+atoskêw+V+AI+Ind+2Pl:    kiwî-atoskânâwâw
+     PV/wî+atoskêw+V+AI+Ind+3Pl:    wî-atoskêwak
+
+     PV/ê+PV/wî+atoskêw+V+AI+Cnj+1Sg:    ê-wî-atoskêyân # FUT+INT-CONJUNCT
+     PV/ê+PV/wî+atoskêw+V+AI+Cnj+2Sg:    ê-wî-atoskêyan
+     PV/ê+PV/wî+atoskêw+V+AI+Cnj+3Sg:    ê-wî-atoskêt
+     PV/ê+PV/wî+atoskêw+V+AI+Cnj+4Sg/Pl: ê-wî-atoskêyit
+     PV/ê+PV/wî+atoskêw+V+AI+Cnj+1Pl:    ê-wî-atoskêyâhk
+     PV/ê+PV/wî+atoskêw+V+AI+Cnj+12Pl:   ê-wî-atoskêyahk
+     PV/ê+PV/wî+atoskêw+V+AI+Cnj+2Pl:    ê-wî-atoskêyêk
+     PV/ê+PV/wî+atoskêw+V+AI+Cnj+3Pl:    ê-wî-atoskêcik
+
+     PV/ka+atoskêw+V+AI+Ind+1Sg:    nika-atoskân # FUT+DEF-INDEPENDENT
+     PV/ka+atoskêw+V+AI+Ind+2Sg:    kika-atoskân
+     PV/ka+atoskêw+V+AI+Ind+3Sg:    ka-atoskêw
+     PV/ka+atoskêw+V+AI+Ind+4Sg/Pl: ka-atoskêyiwa
+     PV/ka+atoskêw+V+AI+Ind+1Pl:    nika-atoskânân
+     PV/ka+atoskêw+V+AI+Ind+12Pl:   [kika-atoskânaw, kika-atoskânânaw]
+     PV/ka+atoskêw+V+AI+Ind+2Pl:    kika-atoskânâwâw
+     PV/ka+atoskêw+V+AI+Ind+3Pl:    ka-atoskêwak
+     
+     atoskêw+V+AI+Fut+Cond+1Sg:    atoskêyâni
+     atoskêw+V+AI+Fut+Cond+2Sg:    atoskêyani
+     atoskêw+V+AI+Fut+Cond+3Sg:    atoskêci
+     atoskêw+V+AI+Fut+Cond+4Sg/Pl: atoskêyici
+     atoskêw+V+AI+Fut+Cond+1Pl:    atoskêyâhki
+     atoskêw+V+AI+Fut+Cond+12Pl:   [atoskêyahki, atoskêyahko]
+     atoskêw+V+AI+Fut+Cond+2Pl:    atoskêyêko
+     atoskêw+V+AI+Fut+Cond+3Pl:    atoskêtwâwi
+
+     atoskêw+V+AI+Imp+Imm+2Sg:  atoskê
+     atoskêw+V+AI+Imp+Imm+12Pl: atoskêtân
+     atoskêw+V+AI+Imp+Imm+2Pl:  atoskêk
+
+
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+1Sg+3SgO: [niwîwîtatoskêmâw, niwî-wîci-atoskêmâw] # com SET I
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+2Sg+3SgO: [kiwîwîtatoskêmâw, kiwî-wîci-atoskêmâw]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+1Pl+3SgO: [niwîwîtatoskêmânân, niwî-wîci-atoskêmânân]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+12Pl+3SgO: [kiwîwîtatoskêmânaw, kiwî-wîci-atoskêmânaw]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+2Pl+3SgO: [kiwîwîtatoskêmâwâw, kiwî-wîci-atoskêmâwâw]
+     
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+1Sg+3PlO: [niwîwîtatoskêmâwak, niwî-wîci-atoskêmâwak] # com SET I-Pl
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+2Sg+3PlO: [kiwîwîtatoskêmâwak, kiwî-wîci-atoskêmâwak]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+1Pl+3PlO: [niwîwîtatoskêmânânak, niwî-wîci-atoskêmânânak]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+12Pl+3PlO: [kiwîwîtatoskêmânawak, kiwî-wîci-atoskêmânawak]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+2Pl+3PlO: [kiwîwîtatoskêmâwâwak, kiwî-wîci-atoskêmâwâwak]
+
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+2Sg+1SgO: [kiwîwîtatoskêmin, kiwî-wîci-atoskêmin] # com SET II
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+2Sg+1PlO: [kiwîwîtatoskêminân, kiwî-wîci-atoskêminân]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+2Pl+1SgO: [kiwîwîtatoskêminâwâw, kiwî-wîci-atoskêminâwâw]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+2Pl+1PlO: [kiwîwîtatoskêminân, kiwî-wîci-atoskêminân]
+
+
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+3Sg+4Sg/PlO: [wîwîtatoskêmêw, wî-wîci-atoskêmêw] # com SET III
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+3Pl+4Sg/PlO: [wîwîtatoskêmêwak, wî-wîci-atoskêmêwak]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+4Sg/Pl+5Sg/PlO: [wîwîtatoskêmêyiwa, wî-wîci-atoskêmêyiwa]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+3Sg+5Sg/PlO: [wîwîtatoskêmimêw, wî-wîci-atoskêmimêw] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+3Pl+5Sg/PlO: [wîwîtatoskêmimêwak, wî-wîci-atoskêmimêwak] # From Wolvengrey P.C. 27/6/15 (See /doc/)
+
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+1Sg+4Sg/PlO: [niwîwîtatoskêmimâwa, niwî-wîci-atoskêmimâwa] # com SET IV
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+2Sg+4Sg/PlO: [kiwîwîtatoskêmimâwa, kiwî-wîci-atoskêmimâwa]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+1Pl+4Sg/PlO: [niwîwîtatoskêmimânâna, niwî-wîci-atoskêmimânâna]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+12Pl+4Sg/PlO: [kiwîwîtatoskêmimânawa, kiwî-wîci-atoskêmimânawa]
+#      PV/wî+atoskêw+V+AI+Der/Com+V+TA+Ind+2Pl+4Sg/PlO: [kiwîwîtatoskêmimâwâwa, kiwî-wîci-atoskêmimâwâwa]
+    
+     
+
+     
+
