@@ -77,8 +77,9 @@ define itNonSubjectMarking
 regex [ {is} -> ISZ || [ Wx | Bx ] [ {s/he} | {S/he} | {he} | {He} | {she} | {She} | {it} | {It} | IT ] { } _ [ Wx | Bx ] ]
 .o. [ [ {s/he} | {S/he} | {he} | {He} | {she} | {She} | {they} | {They} ] -> SUBJ
 , [ {it} | {It} ] -> SUBJinanim
-, [ {him/herself} | {her/himself} | {himself} | {herself} | {themselves} | {themself} | {oneself} ] -> RFLX
-, [ {s.o.'s} | {his} ] -> POSS
+, [ {him/herself} | {her/himself} | {himself} | {herself} | {themselves} | {themself} | {oneself} ] @-> RFLX
+, [ {his} | {his/her} | {her/his} ] @-> POSSsubj
+, [ {s.o.'s} | {s.b.'s} | {someone's} | {somebody's} ] -> POSSobj
 , [ {s.o.} | {him} | {them} | {him/her} | {her/him} | {him, her or them} | {him/her or them} | {her/him or them} ] @-> DOBJ
 , [ {s.t.} | IT ] -> DOBJinanim
 , {to s.b.} -> {to } IOBJ
@@ -505,22 +506,38 @@ regex [ RFLX -> {myself} "@R.subject.1Sg@"
 define ReflexiveConversion
 
 ! Possessive Conversion
-regex [ POSS -> {my} "@R.subject.1Sg@"
-, POSS -> {your} "@R.subject.2Sg@"
-, POSS -> {his/her} "@R.subject.3Sg@"
-, POSS -> {its} "@R.subject.0Sg@"
-, POSS -> {our} "@R.subject.1Pl@"
-, POSS -> {our} "@R.subject.1Du@"
-, POSS -> {your and our} "@R.subject.21Pl@"
-, POSS -> {your} "@R.subject.2Du@"
-, POSS -> {your} "@R.subject.2Pl@"
-, POSS -> {their} "@R.subject.3Du@"
-, POSS -> {their} [ "@R.subject.3Pl@" | "@R.subject.0Pl@" ]
-, POSS -> {his/her/their} "@R.subject.4Sg/Pl@"
-, POSS -> {his/her/their} "@R.subject.5Sg/Pl@"
-, POSS -> {someone's} "@R.subject.X@" "@D.neg@"
-, POSS -> {anyone's} "@R.subject.X@" "@R.neg.Neg@"
-, POSS -> {their} "@R.subject.XPl@"
+regex [ POSSsubj -> {my} "@R.subject.1Sg@"
+, POSSsubj -> {your} "@R.subject.2Sg@"
+, POSSsubj -> {his/her} "@R.subject.3Sg@"
+, POSSsubj -> {its} "@R.subject.0Sg@"
+, POSSsubj -> {our} "@R.subject.1Pl@"
+, POSSsubj -> {our} "@R.subject.1Du@"
+, POSSsubj -> {your and our} "@R.subject.21Pl@"
+, POSSsubj -> {your} "@R.subject.2Du@"
+, POSSsubj -> {your} "@R.subject.2Pl@"
+, POSSsubj -> {their} "@R.subject.3Du@"
+, POSSsubj -> {their} [ "@R.subject.3Pl@" | "@R.subject.0Pl@" ]
+, POSSsubj -> {his/her/their} "@R.subject.4Sg/Pl@"
+, POSSsubj -> {his/her/their} "@R.subject.5Sg/Pl@"
+, POSSsubj -> {someone's} "@R.subject.X@" "@D.neg@"
+, POSSsubj -> {anyone's} "@R.subject.X@" "@R.neg.Neg@"
+, POSSsubj -> {their} "@R.subject.XPl@"
+, POSSobj -> {my} "@R.object.1Sg@"
+, POSSobj -> {your} "@R.object.2Sg@"
+, POSSobj -> {his/her} "@R.object.3Sg@"
+, POSSobj -> {its} "@R.object.0Sg@"
+, POSSobj -> {our} "@R.object.1Pl@"
+, POSSobj -> {our} "@R.object.1Du@"
+, POSSobj -> {your and our} "@R.object.21Pl@"
+, POSSobj -> {your} "@R.object.2Du@"
+, POSSobj -> {your} "@R.object.2Pl@"
+, POSSobj -> {their} "@R.object.3Du@"
+, POSSobj -> {their} [ "@R.object.3Pl@" | "@R.object.0Pl@" ]
+, POSSobj -> {his/her/their} "@R.object.4Sg/Pl@"
+, POSSobj -> {his/her/their} "@R.object.5Sg/Pl@"
+, POSSobj -> {someone's} "@R.object.X@" "@D.neg@"
+, POSSobj -> {anyone's} "@R.object.X@" "@R.neg.Neg@"
+, POSSobj -> {their} "@R.object.XPl@"
 || Wx _ Wx ] ;
 define PossessiveConversion
 
