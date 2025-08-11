@@ -900,7 +900,7 @@ POS
 * +Rom        
 * +PUNCT       = punctuation symbols
 * +LEFT        = the left part of a paired punctuation symbol
-* +RIGHT       = the right part of a paired punctuation symbol
+* +RIGHT +MIDDLE  = the right part of a paired punctuation symbol
 * +CLB         = clause boundary symbols
 * +Symbol = independent symbols in the text stream, like £, €, ©
 * +ABBR 
