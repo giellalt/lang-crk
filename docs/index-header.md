@@ -5,7 +5,6 @@
 [![License](https://img.shields.io/github/license/giellalt/lang-crk)](https://github.com/giellalt/lang-crk/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-crk)](https://github.com/giellalt/lang-crk/issues)
 [![Build Status](https://builds.giellalt.org/api/badge/lang-crk?label=CI)](https://builds.giellalt.org/pipelines/lang-crk/builds/latest)
-[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/__GLOTTOLOG_ID__)
 
 This page documents the work on the [Plains Cree language model](http://github.com/giellalt-crk). 
 
