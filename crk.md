@@ -4,11 +4,11 @@ All doc-comment documentation in one large file.
 
 ---
 
-# src-cg3-disambiguator.cg3.md 
+## src-cg3-disambiguator.cg3.md 
 
 
 
-# Plains Cree disambiguator 
+## Plains Cree disambiguator 
 
 * * *
 
@@ -16,11 +16,11 @@ All doc-comment documentation in one large file.
 
 ---
 
-# src-cg3-textanalysis.cg3.md 
+## src-cg3-textanalysis.cg3.md 
 
 
 
-# Plains Cree disambiguator 
+## Plains Cree disambiguator 
 
 * * *
 
@@ -28,7 +28,7 @@ All doc-comment documentation in one large file.
 
 ---
 
-# src-derivation-crk-drv.lexc.md 
+## src-derivation-crk-drv.lexc.md 
 
 
 
@@ -41,7 +41,7 @@ Verbs
 
 ---
 
-# src-fst-morphology-affixes-noun_affixes.lexc.md 
+## src-fst-morphology-affixes-noun_affixes.lexc.md 
 
 
 
@@ -55,7 +55,7 @@ End of noun affixes code
 
 ---
 
-# src-fst-morphology-affixes-propernouns.lexc.md 
+## src-fst-morphology-affixes-propernouns.lexc.md 
 
 
 Proper noun inflection
@@ -68,10 +68,10 @@ nouns, but with a colon (':') as separator.
 
 ---
 
-# src-fst-morphology-affixes-symbols.lexc.md 
+## src-fst-morphology-affixes-symbols.lexc.md 
 
 
-# Symbol affixes
+## Symbol affixes
 
 * * *
 
@@ -79,7 +79,7 @@ nouns, but with a colon (':') as separator.
 
 ---
 
-# src-fst-morphology-affixes-verb_affixes.lexc.md 
+## src-fst-morphology-affixes-verb_affixes.lexc.md 
 
 
 Plains Cree verb morphology                  
@@ -91,7 +91,7 @@ The Plains Cree verbs are divided in four groups:
 3. TA: Transitive animate
 4. TI: Transitive inanimate
 
-# Prefixes
+## Prefixes
 
 LEXICON VerbPrefixes   divides the lexicon into four modes: independent, conjunctive, imperative and future conditional
 
@@ -121,7 +121,7 @@ Now, LEXC directs us to the ../stems/verbs_stems.lexc file,
 where we find all the verbal stems. The suffixes are then
 found in the section "Suffixes" right underneath.
 
-# Suffixes
+## Suffixes
 
 Intransitive inanimate (II)
 
@@ -568,7 +568,7 @@ End of verb affixes LEXC code
 
 ---
 
-# src-fst-morphology-phonology.xfscript.md 
+## src-fst-morphology-phonology.xfscript.md 
 
 
 Definitions
@@ -869,15 +869,15 @@ Composing the rules together
 
 ---
 
-# src-fst-morphology-root.lexc.md 
+## src-fst-morphology-root.lexc.md 
 
 
-# Plains Cree morphological analyser
+## Plains Cree morphological analyser
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Plains Cree LANGUAGE.
 
-# Definitions for Multichar_Symbols
+## Definitions for Multichar_Symbols
 
-## Analysis symbols
+### Analysis symbols
 
 The morphological analyses of wordforms of Plains Cree are presented
 in this system in terms of the following symbols.
@@ -1008,7 +1008,7 @@ Noun animacy and dependency classes
 
 Preverbs
 
-## Auxiliary symbols
+### Auxiliary symbols
 
 These symbols either shape or govern the
 morphophonological structure
@@ -1016,7 +1016,7 @@ morphophonological structure
 * %> 		  suffix border
 * %< 		  prefix border
 
-## Symbols that need to be escaped on the lower side (towards twolc):
+### Symbols that need to be escaped on the lower side (towards twolc):
 * **»7**:  Literal »
 * **«7**:  Literal «
 ```
@@ -1041,7 +1041,7 @@ Mostly, these are not realized themselves as any grapheme/phoneme
 
 * %^EGLOT    glottal stop after e, for eh- in conjunctive order
 
-## Usage tags
+### Usage tags
 
 These tags distinguish different special-purpose analysers
 and generators from each other. Thus, for examples, we have
@@ -1106,12 +1106,12 @@ End of new and all Multichar_Symbols
 
 ---
 
-# src-fst-morphology-stems-abbreviations.lexc.md 
+## src-fst-morphology-stems-abbreviations.lexc.md 
 
 
-# File containing abbreviations 
+## File containing abbreviations 
 
-## Lexica for adding tags and periods
+### Lexica for adding tags and periods
 
 Splitting in 4 + 1  groups, because of the preprocessor
 
@@ -1119,14 +1119,14 @@ Splitting in 4 + 1  groups, because of the preprocessor
 1. The ITRAB ;	    lexicon (intransitive abbrs)
 1. The TRNUMAB ;   lexicon (abbrs trans wrt. numberals)
 
-## The sublexica
-### Dividing between abbreviations with and witout final period
+### The sublexica
+#### Dividing between abbreviations with and witout final period
 
 * **LEXICON ab-noun   **
 
 * **LEXICON ab-adv   **
 
-### The lexicons that add tags
+#### The lexicons that add tags
 
 * **LEXICON ab-nodot-noun   **  The bulk
 
@@ -1138,7 +1138,7 @@ Splitting in 4 + 1  groups, because of the preprocessor
 
 * **LEXICON ab-dot-adj   **  This is the lexicon for abbrs that must have a period.
 
-## The abbreviation lexicon itself
+### The abbreviation lexicon itself
 
 * **LEXICON ITRAB   ** are intransitive abbreviations, Ltd. etc.
 
@@ -1158,7 +1158,7 @@ This lexicon is for abbrs that always have a constituent following it.
 
 ---
 
-# src-fst-morphology-stems-derivation_stems.lexc.md 
+## src-fst-morphology-stems-derivation_stems.lexc.md 
 
 Place-holder for inserting derivational FST after prefixes and before suffixes
 DRV-FST is the place-holder character
@@ -1175,7 +1175,7 @@ Verbs
 
 ---
 
-# src-fst-morphology-stems-noun_header.lexc.md 
+## src-fst-morphology-stems-noun_header.lexc.md 
 
 
 
@@ -1190,7 +1190,7 @@ LEXC structure in the new crk FST.
 
 ---
 
-# src-fst-morphology-stems-noun_stems.lexc.md 
+## src-fst-morphology-stems-noun_stems.lexc.md 
 
 
 
@@ -1205,12 +1205,12 @@ LEXC structure in the new crk FST.
 
 ---
 
-# src-fst-morphology-stems-numeral_symbols.lexc.md 
+## src-fst-morphology-stems-numeral_symbols.lexc.md 
 
 
-# Plains Cree numerals                           
+## Plains Cree numerals                           
 
-## The file for Arabic, Roman, and other symbolic numerals
+### The file for Arabic, Roman, and other symbolic numerals
 
 * **LEXICON NUM-PREFIXES   **
 
@@ -1232,16 +1232,16 @@ LEXC structure in the new crk FST.
 
 ---
 
-# src-fst-morphology-stems-numerals.lexc.md 
+## src-fst-morphology-stems-numerals.lexc.md 
 
 
-# Plains Cree numerals                           
+## Plains Cree numerals                           
 
-## The file for numerals
+### The file for numerals
 
 * LEXICON Numerals 
 
-## Here start the 999 numbers
+### Here start the 999 numbers
 
 * LEXICON UNDERTHOUSAND 
 
@@ -1271,10 +1271,10 @@ LEXC structure in the new crk FST.
 
 ---
 
-# src-fst-morphology-stems-particle_header.lexc.md 
+## src-fst-morphology-stems-particle_header.lexc.md 
 
 
-# Plains Cree particles                           
+## Plains Cree particles                           
 
 The file contains the following lexicons, with content as described:
 
@@ -1284,10 +1284,10 @@ The file contains the following lexicons, with content as described:
 
 ---
 
-# src-fst-morphology-stems-particles.lexc.md 
+## src-fst-morphology-stems-particles.lexc.md 
 
 
-# Plains Cree particles                           
+## Plains Cree particles                           
 
 The file contains the following lexicons, with content as described:
 
@@ -1297,10 +1297,10 @@ The file contains the following lexicons, with content as described:
 
 ---
 
-# src-fst-morphology-stems-pronouns.lexc.md 
+## src-fst-morphology-stems-pronouns.lexc.md 
 
 
-## Plains Cree pronouns
+### Plains Cree pronouns
 
 There are more pronoums to be added here.
 
@@ -1340,7 +1340,7 @@ INANIMATE \\
 
 ---
 
-# src-fst-morphology-stems-verb_header.lexc.md 
+## src-fst-morphology-stems-verb_header.lexc.md 
 
 
 
@@ -1355,7 +1355,7 @@ LEXC structure in the new crk FST.
 
 ---
 
-# src-fst-morphology-stems-verb_stems.lexc.md 
+## src-fst-morphology-stems-verb_stems.lexc.md 
 
 
 
@@ -1370,7 +1370,7 @@ LEXC structure in the new crk FST.
 
 ---
 
-# src-fst-phonetics-txt2ipa.xfscript.md 
+## src-fst-phonetics-txt2ipa.xfscript.md 
 
 Hyphenator and text to ipa for Plains Cree
 
@@ -1386,7 +1386,7 @@ Long vowels
 
 ---
 
-# src-fst-phonology-morph-bound.twolc.md 
+## src-fst-phonology-morph-bound.twolc.md 
 
 
 
@@ -1700,7 +1700,7 @@ INITIAL CHANGE
 
 ---
 
-# src-fst-transcriptions-phonology-eng.xfscript.md 
+## src-fst-transcriptions-phonology-eng.xfscript.md 
 
 
 
@@ -1710,7 +1710,7 @@ INITIAL CHANGE
 
 ---
 
-# src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
+## src-fst-transcriptions-transcriptor-abbrevs2text.lexc.md 
 
 
 
@@ -1732,7 +1732,7 @@ For example:
 
 ---
 
-# src-fst-transcriptions-transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript.md 
+## src-fst-transcriptions-transcriptor-cw-eng-noun-entry2inflected-phrase-w-flags.xfscript.md 
 
 
 
@@ -1744,7 +1744,7 @@ Old code
 
 ---
 
-# src-fst-transcriptions-transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript.md 
+## src-fst-transcriptions-transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript.md 
 
 
 
@@ -1763,7 +1763,7 @@ Irregular verb forms
 
 ---
 
-# src-fst-transcriptions-transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript.md 
+## src-fst-transcriptions-transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript.md 
 
 
 
@@ -1777,7 +1777,7 @@ Rule-based morphological solution
 
 ---
 
-# src-fst-transcriptions-transcriptor-eng-phrase2crk-features.xfscript.md 
+## src-fst-transcriptions-transcriptor-eng-phrase2crk-features.xfscript.md 
 
 
 GENERAL DEFINITIONS
@@ -1796,26 +1796,26 @@ Assigning +V (+II/AI/TI/TA) or +N as part-of-speech
 
 ---
 
-# tools-grammarcheckers-grammarchecker.cg3.md 
+## tools-grammarcheckers-grammarchecker.cg3.md 
 
 
 [ L A N G U A G E ]  G R A M M A R   C H E C K E R
 
-# DELIMITERS
+## DELIMITERS
 
-# TAGS AND SETS
+## TAGS AND SETS
 
-## Tags
+### Tags
 
 This section lists all the tags inherited from the fst, and used as tags
 in the syntactic analysis. The next section, **Sets**, contains sets defined
 on the basis of the tags listed here, those set names are not visible in the output.
 
-### Beginning and end of sentence
+#### Beginning and end of sentence
 BOS
 EOS
 
-### Parts of speech tags
+#### Parts of speech tags
 
 N
 A
@@ -1842,7 +1842,7 @@ PUNCT
 COMMA
 ¶
 
-### Tags for POS sub-categories
+#### Tags for POS sub-categories
 
 Pers
 Dem
@@ -1858,7 +1858,7 @@ Allegro
 Arab
 Romertall
 
-### Tags for morphosyntactic properties
+#### Tags for morphosyntactic properties
 
 Nom
 Acc
@@ -1921,7 +1921,7 @@ VAbess
 
 Err/Orth
 
-### Semantic tags
+#### Semantic tags
 
 Sem/Act
 Sem/Ani
@@ -1954,7 +1954,7 @@ PROP-SUR
 
 TIME-N-SET
 
-###  Syntactic tags
+####  Syntactic tags
 
 @+FAUXV
 @+FMAINV
@@ -2024,22 +2024,22 @@ OBJ>-OTHERS
 SYN-V
 @X
 
-## Sets containing sets of lists and tags
+### Sets containing sets of lists and tags
 
 This part of the file lists a large number of sets based partly upon the tags defined above, and
 partly upon lexemes drawn from the lexicon.
 See the sourcefile itself to inspect the sets, what follows here is an overview of the set types.
 
-### Sets for Single-word sets
+#### Sets for Single-word sets
 
 INITIAL
 
-### Sets for word or not
+#### Sets for word or not
 
 WORD
 NOT-COMMA
 
-### Case sets
+#### Case sets
 
 ADLVCASE
 
@@ -2050,11 +2050,11 @@ NOT-NOM
 NOT-GEN
 NOT-ACC
 
-### Verb sets
+#### Verb sets
 
 NOT-V
 
-### Sets for finiteness and mood
+#### Sets for finiteness and mood
 
 REAL-NEG
 
@@ -2062,7 +2062,7 @@ MOOD-V
 
 NOT-PRFPRC
 
-### Sets for person
+#### Sets for person
 
 SG1-V
 SG2-V
@@ -2074,25 +2074,25 @@ PL1-V
 PL2-V
 PL3-V
 
-### Pronoun sets
+#### Pronoun sets
 
-### Adjectival sets and their complements
+#### Adjectival sets and their complements
 
-### Adverbial sets and their complements
+#### Adverbial sets and their complements
 
-### Sets of elements with common syntactic behaviour
+#### Sets of elements with common syntactic behaviour
 
-### NP sets defined according to their morphosyntactic features
+#### NP sets defined according to their morphosyntactic features
 
-### The PRE-NP-HEAD family of sets
+#### The PRE-NP-HEAD family of sets
 
 These sets model noun phrases (NPs). The idea is to first define whatever can
 occur in front of the head of the NP, and thereafter negate that with the
 expression **WORD - premodifiers**.
 
-### Border sets and their complements
+#### Border sets and their complements
 
-### Grammarchecker sets
+#### Grammarchecker sets
 
 * * *
 
@@ -2100,9 +2100,9 @@ expression **WORD - premodifiers**.
 
 ---
 
-# tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-disamb-gt-desc.pmscript.md 
 
-# Tokeniser for crk
+## Tokeniser for crk
 
 Usage:
 ```
@@ -2146,7 +2146,7 @@ ASCII digits
 so far:
 * U+F0B7 for "x in box"
 
-## Unknown handling
+### Unknown handling
 Unknowns are tagged ?? and treated specially with `hfst-tokenise`
 hfst-tokenise --giella-cg will treat such empty analyses as unknowns, and
 remove empty analyses from other readings. Empty readings are also
@@ -2165,9 +2165,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-gramcheck-gt-desc.pmscript.md 
 
-# Grammar checker tokenisation for crk
+## Grammar checker tokenisation for crk
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
@@ -2230,9 +2230,9 @@ Finally we mark as a token any sequence making up a:
 
 ---
 
-# tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
+## tools-tokenisers-tokeniser-tts-cggt-desc.pmscript.md 
 
-# TTS tokenisation for smj
+## TTS tokenisation for smj
 
 Requires a recent version of HFST (3.10.0 / git revision>=3aecdbc)
 Then just:
