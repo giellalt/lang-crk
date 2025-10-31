@@ -1,0 +1,21 @@
+{
+  "spelling-error": [
+    { "re": "real-.*" },
+    { "id": "unreal-girjji" }
+  ],
+  "grammar-error": [
+    {
+      "id": "default"
+    }
+  ],
+  "real-override": [
+    {
+      "id": "real-override"
+    }
+  ],
+  "msyn-valency-ill": [
+    {
+      "id": "msyn-valency-ill"
+    }
+  ]
+}
