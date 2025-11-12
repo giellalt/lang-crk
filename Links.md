@@ -35,6 +35,7 @@
             * [transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript](src-fst-transcriptions-transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript.html) ([src](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase-w-flags.xfscript))
             * [transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript](src-fst-transcriptions-transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript.html) ([src](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-cw-eng-verb-entry2inflected-phrase.xfscript))
             * [transcriptor-eng-phrase2crk-features.xfscript](src-fst-transcriptions-transcriptor-eng-phrase2crk-features.xfscript.html) ([src](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-eng-phrase2crk-features.xfscript))
+            * [transcriptor-symbols2text.lexc](src-fst-transcriptions-transcriptor-symbols2text.lexc.html) ([src](https://github.com/giellalt/lang-crk/blob/main/src/fst/transcriptions/transcriptor-symbols2text.lexc))
 * `tools/`
     * `grammarcheckers/`
         * [grammarchecker.cg3](tools-grammarcheckers-grammarchecker.cg3.html) ([src](https://github.com/giellalt/lang-crk/blob/main/tools/grammarcheckers/grammarchecker.cg3))
