@@ -1,6 +1,3 @@
-spellername = "Plains Cree"
-spellerversion = "0.1.1"
-
 # Name of the speller package in various languages.
 # The default is English + autonym:
 [speller.name]
@@ -22,3 +19,14 @@ legacy_product_codes = [
     { value = "55A81174-4234-4E81-9EFE-88175952CD70", kind = "nsis" },
     { value = "A9726CC0-EB2D-4C93-B2F1-9EA8276F3818", kind = "nsis" }
 ]
+[package.speller]
+name = "Plains Cree"
+version = "0.1.1"
+
+[package.grammar]
+name = "Plains Cree"
+version = "0.1.0"
+
+[package.tts-text-proc]
+name = "Plains Cree"
+version = "0.1.0"
