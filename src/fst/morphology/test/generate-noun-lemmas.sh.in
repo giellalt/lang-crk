@@ -53,6 +53,11 @@ if [ ! `ls -1 $source_file 2>/dev/null | wc -l ` -gt 0 ]; then
     echo
     exit 77
 fi
+if ! test -f "$source_file" ; then
+    printf "%sfail%s missing lexc file %s\n" "$red" "$reset" \
+        "$source_file"
+    exit 1
+fi
 
 # Use autotools mechanisms to only run the configured fst types in the tests:
 fsttype=
