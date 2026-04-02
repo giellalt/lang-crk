@@ -1,0 +1,1332 @@
+{
+  "metadata": {
+    "info": {
+      "locale": "crk",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree spellchecker"
+        }
+      ],
+      "description": "A spellchecker for Plains Cree, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway.",
+      "producer": "UofAlberta/Giellatekno/Divvun/UiT contributors"
+    },
+    "acceptor": {
+      "type": "general",
+      "id": "acceptor.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree speller lexicon"
+        }
+      ],
+      "description": "Plains Cree speller lexicon compiled with HFST.",
+      "continuation": null
+    },
+    "errmodel": {
+      "id": "errmodel.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree error model"
+        }
+      ],
+      "description": "Error model for Plains Cree."
+    }
+  },
+  "config": {
+    "n-best": 10,
+    "max-weight": 10000.0,
+    "beam": null,
+    "reweight": {
+      "start-penalty": 10.0,
+      "end-penalty": 10.0,
+      "mid-penalty": 5.0
+    },
+    "node-pool-size": 128,
+    "recase": true,
+    "completion-marker": null
+  },
+  "summary": {
+    "total_words": 11,
+    "first_position": 7,
+    "top_five": 8,
+    "any_position": 9,
+    "no_suggestions": 0,
+    "only_wrong": 1,
+    "false_accept": 0,
+    "true_positive": 10,
+    "false_negative": 1,
+    "true_negative": 0,
+    "slowest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 68270750
+    },
+    "fastest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 471667
+    },
+    "average_time": {
+      "secs": 0,
+      "subsec_nanos": 39526878
+    },
+    "average_time_95pc": {
+      "secs": 0,
+      "subsec_nanos": 39526878
+    },
+    "average_position_of_correct": 2.2222223,
+    "average_suggestions_for_correct": 10.0
+  },
+  "results": [
+    {
+      "input": "ihkwa",
+      "expected": "ikwa",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 471667
+      },
+      "false_accept": true
+    },
+    {
+      "input": "ikosi",
+      "expected": "êkosi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "êkosi",
+          "weight": 24.386463,
+          "weight_details": {
+            "lexicon_weight": 4.386464,
+            "mutator_weight": 9.999999,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iskosi",
+          "weight": 26.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "sîkosi",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nôkosi",
+          "weight": 35.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "isi",
+          "weight": 36.249683,
+          "weight_details": {
+            "lexicon_weight": 6.249683,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ihkos",
+          "weight": 37.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ihkosa",
+          "weight": 37.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "mihkosi",
+          "weight": 37.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 11.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "akosî",
+          "weight": 41.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "êkospî",
+          "weight": 45.99277,
+          "weight_details": {
+            "lexicon_weight": 5.992772,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 20113083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "cotak",
+      "expected": "kotak",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "tôtâk",
+          "weight": 36.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "cîsak",
+          "weight": 41.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ôta",
+          "weight": 45.02176,
+          "weight_details": {
+            "lexicon_weight": 5.021757,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ê-itak",
+          "weight": 45.20574,
+          "weight_details": {
+            "lexicon_weight": 8.205745,
+            "mutator_weight": 22.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "acosak",
+          "weight": 46.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "akotâk",
+          "weight": 46.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "astâk",
+          "weight": 46.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ihtâk",
+          "weight": 46.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "otâhk",
+          "weight": 49.458508,
+          "weight_details": {
+            "lexicon_weight": 9.458508,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "itôtâk",
+          "weight": 51.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 20.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 38471875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ikospî",
+      "expected": "êkospî",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "êkospî",
+          "weight": 25.992771,
+          "weight_details": {
+            "lexicon_weight": 5.992772,
+            "mutator_weight": 9.999999,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ô-kospî",
+          "weight": 27.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 6.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kospî",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ispî",
+          "weight": 36.625298,
+          "weight_details": {
+            "lexicon_weight": 6.625295,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ô-ohpî",
+          "weight": 42.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 16.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ôh-kospî",
+          "weight": 42.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 16.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "akosî",
+          "weight": 46.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ô-kospîk",
+          "weight": 47.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 16.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ô-kospîw",
+          "weight": 47.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 16.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "êkosi",
+          "weight": 48.386463,
+          "weight_details": {
+            "lexicon_weight": 4.386464,
+            "mutator_weight": 24.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 68270750
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ikospi",
+      "expected": "êkospî",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "êkospî",
+          "weight": 35.99277,
+          "weight_details": {
+            "lexicon_weight": 5.992772,
+            "mutator_weight": 9.999999,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ô-kospî",
+          "weight": 37.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 6.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "êkosi",
+          "weight": 39.386463,
+          "weight_details": {
+            "lexicon_weight": 4.386464,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "iskosi",
+          "weight": 41.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kospî",
+          "weight": 41.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ô-osâpi",
+          "weight": 42.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 16.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ispî",
+          "weight": 46.625298,
+          "weight_details": {
+            "lexicon_weight": 6.625295,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "akosî",
+          "weight": 51.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kikospîn",
+          "weight": 51.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kospîk",
+          "weight": 51.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 60922541
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nistis",
+      "expected": "nistês",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nistês",
+          "weight": 23.898891,
+          "weight_details": {
+            "lexicon_weight": 8.898892,
+            "mutator_weight": 9.999999,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "niskis",
+          "weight": 26.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nistim",
+          "weight": 29.74619,
+          "weight_details": {
+            "lexicon_weight": 9.746189,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "nistik",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "pistis",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nisôs",
+          "weight": 35.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nistam",
+          "weight": 36.425964,
+          "weight_details": {
+            "lexicon_weight": 6.425962,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nisîmis",
+          "weight": 36.540737,
+          "weight_details": {
+            "lexicon_weight": 6.5407367,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "pistôs",
+          "weight": 40.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nîsta",
+          "weight": 41.082626,
+          "weight_details": {
+            "lexicon_weight": 6.0826287,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 55117625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kapî",
+      "expected": "kîpî",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "kîpî",
+          "weight": 26.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kapâ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "kapê",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "kani",
+          "weight": 32.072212,
+          "weight_details": {
+            "lexicon_weight": 8.072214,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kêcî",
+          "weight": 35.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kâwi",
+          "weight": 36.13123,
+          "weight_details": {
+            "lexicon_weight": 7.1312304,
+            "mutator_weight": 13.999999,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kâpît",
+          "weight": 36.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "kipi",
+          "weight": 40.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "api",
+          "weight": 44.151657,
+          "weight_details": {
+            "lexicon_weight": 10.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "wâpi",
+          "weight": 45.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 25181875
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kapi",
+      "expected": "kîpî",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "kani",
+          "weight": 23.072214,
+          "weight_details": {
+            "lexicon_weight": 8.072214,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kipi",
+          "weight": 26.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kâwi",
+          "weight": 27.13123,
+          "weight_details": {
+            "lexicon_weight": 7.1312304,
+            "mutator_weight": 9.999999,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "api",
+          "weight": 30.151655,
+          "weight_details": {
+            "lexicon_weight": 10.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kapâ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "kapê",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "wâpi",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kâpît",
+          "weight": 36.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kîpî",
+          "weight": 36.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ahpô",
+          "weight": 45.364166,
+          "weight_details": {
+            "lexicon_weight": 5.3641644,
+            "mutator_weight": 15.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 8,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 14854708
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nika-kahcitinik",
+      "expected": "nika-kâhcitinik",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nika-kâhcitinik",
+          "weight": 16.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 0.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nikî-kâhcitinik",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nika-acitinik",
+          "weight": 32.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 11.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nika-ka-kitinik",
+          "weight": 33.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kika-kâhcitinik",
+          "weight": 36.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nikâh-kâhcitinik",
+          "weight": 36.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "niwâ-kâhcitinik",
+          "weight": 36.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nika-ka-kîtinik",
+          "weight": 38.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nika-kâh-kitinik",
+          "weight": 38.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "nîpâ-kâhcitinik",
+          "weight": 41.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 20.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 52034250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ka-kîsi",
+      "expected": "ka-kîsih",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ka-kisî",
+          "weight": 30.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 4.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ka-kîmî",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ka-kîpî",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ka-kîsih",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ka-kîsin",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ka-kîsis",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ka-kipi",
+          "weight": 35.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ka-kikî",
+          "weight": 40.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ka-kisik",
+          "weight": 40.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "kâ-kisik",
+          "weight": 44.151657,
+          "weight_details": {
+            "lexicon_weight": 10.151656,
+            "mutator_weight": 14.000001,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 3,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 47506958
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kakîsih",
+      "expected": "ka-kîsih",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ka-kîsih",
+          "weight": 18.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ka-kîsôh",
+          "weight": 27.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 6.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "kâkîcih",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ka-kîsah",
+          "weight": 33.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ka-kâsîh",
+          "weight": 38.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ka-kîsiho",
+          "weight": 38.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ka-kîsin",
+          "weight": 38.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ka-kîsis",
+          "weight": 38.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "kâh-kîsih",
+          "weight": 38.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ka-kîsîho",
+          "weight": 43.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 51850333
+      },
+      "false_accept": false
+    }
+  ],
+  "start_timestamp": {
+    "secs": 1775161948,
+    "subsec_nanos": 824804000
+  },
+  "total_time": {
+    "secs": 0,
+    "subsec_nanos": 68483125
+  }
+}
