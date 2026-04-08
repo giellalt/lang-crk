@@ -60,19 +60,19 @@
     "true_negative": 0,
     "slowest_lookup": {
       "secs": 0,
-      "subsec_nanos": 70063625
+      "subsec_nanos": 71652250
     },
     "fastest_lookup": {
       "secs": 0,
-      "subsec_nanos": 2286125
+      "subsec_nanos": 122000
     },
     "average_time": {
       "secs": 0,
-      "subsec_nanos": 41416541
+      "subsec_nanos": 33828212
     },
     "average_time_95pc": {
       "secs": 0,
-      "subsec_nanos": 41416541
+      "subsec_nanos": 33828212
     },
     "average_position_of_correct": 1.7777778,
     "average_suggestions_for_correct": 10.0
@@ -86,7 +86,7 @@
       "position": null,
       "time": {
         "secs": 0,
-        "subsec_nanos": 2286125
+        "subsec_nanos": 122000
       },
       "false_accept": true
     },
@@ -209,7 +209,7 @@
       "position": 0,
       "time": {
         "secs": 0,
-        "subsec_nanos": 41341916
+        "subsec_nanos": 35492292
       },
       "false_accept": false
     },
@@ -332,7 +332,7 @@
       "position": null,
       "time": {
         "secs": 0,
-        "subsec_nanos": 47045750
+        "subsec_nanos": 18376083
       },
       "false_accept": false
     },
@@ -455,7 +455,7 @@
       "position": 0,
       "time": {
         "secs": 0,
-        "subsec_nanos": 52735291
+        "subsec_nanos": 34352167
       },
       "false_accept": false
     },
@@ -578,7 +578,7 @@
       "position": 0,
       "time": {
         "secs": 0,
-        "subsec_nanos": 50555709
+        "subsec_nanos": 17230834
       },
       "false_accept": false
     },
@@ -701,7 +701,7 @@
       "position": 0,
       "time": {
         "secs": 0,
-        "subsec_nanos": 53156542
+        "subsec_nanos": 56874209
       },
       "false_accept": false
     },
@@ -824,7 +824,7 @@
       "position": 0,
       "time": {
         "secs": 0,
-        "subsec_nanos": 23815166
+        "subsec_nanos": 35013583
       },
       "false_accept": false
     },
@@ -947,7 +947,7 @@
       "position": 6,
       "time": {
         "secs": 0,
-        "subsec_nanos": 25300208
+        "subsec_nanos": 13917167
       },
       "false_accept": false
     },
@@ -1070,7 +1070,7 @@
       "position": 0,
       "time": {
         "secs": 0,
-        "subsec_nanos": 32517375
+        "subsec_nanos": 35807166
       },
       "false_accept": false
     },
@@ -1193,7 +1193,7 @@
       "position": 1,
       "time": {
         "secs": 0,
-        "subsec_nanos": 70063625
+        "subsec_nanos": 71652250
       },
       "false_accept": false
     },
@@ -1316,17 +1316,17 @@
       "position": 0,
       "time": {
         "secs": 0,
-        "subsec_nanos": 56764250
+        "subsec_nanos": 53272583
       },
       "false_accept": false
     }
   ],
   "start_timestamp": {
-    "secs": 1775631013,
-    "subsec_nanos": 119634000
+    "secs": 1775644055,
+    "subsec_nanos": 655536000
   },
   "total_time": {
     "secs": 0,
-    "subsec_nanos": 71801750
+    "subsec_nanos": 77674334
   }
 }
