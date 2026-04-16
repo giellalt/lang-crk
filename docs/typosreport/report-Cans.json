@@ -1,0 +1,1197 @@
+{
+  "metadata": {
+    "info": {
+      "locale": "crk-Cans",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree spellchecker, Canadian Aboriginal Syllabics"
+        }
+      ],
+      "description": "A spellchecker for Plains Cree, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway, using the Canadian\n    Aboriginal Syllabics.",
+      "producer": "UofAlberta/Giellatekno/Divvun/UiT contributors"
+    },
+    "acceptor": {
+      "type": "general",
+      "id": "acceptor.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree speller lexicon, Canadian Aboriginal Syllabics"
+        }
+      ],
+      "description": "Plains Cree speller lexicon compiled with HFST.",
+      "continuation": null
+    },
+    "errmodel": {
+      "id": "errmodel.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree error model, Canadian Aboriginal Syllabics"
+        }
+      ],
+      "description": "Error model for Plains Cree."
+    }
+  },
+  "config": {
+    "n-best": 10,
+    "max-weight": 10000.0,
+    "beam": null,
+    "reweight": {
+      "start-penalty": 10.0,
+      "end-penalty": 10.0,
+      "mid-penalty": 5.0
+    },
+    "node-pool-size": 128,
+    "recase": true,
+    "completion-marker": null
+  },
+  "summary": {
+    "total_words": 9,
+    "first_position": 2,
+    "top_five": 7,
+    "any_position": 7,
+    "no_suggestions": 0,
+    "only_wrong": 2,
+    "false_accept": 0,
+    "true_positive": 9,
+    "false_negative": 0,
+    "true_negative": 0,
+    "slowest_lookup": {
+      "secs": 1,
+      "subsec_nanos": 490869041
+    },
+    "fastest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 390495833
+    },
+    "average_time": {
+      "secs": 0,
+      "subsec_nanos": 812073152
+    },
+    "average_time_95pc": {
+      "secs": 0,
+      "subsec_nanos": 812073152
+    },
+    "average_position_of_correct": 2.2857144,
+    "average_suggestions_for_correct": 10.0
+  },
+  "results": [
+    {
+      "input": "ᐃᑯᓯ",
+      "expected": "ᐁᑯᓯ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᐃᓯ",
+          "weight": 21.249683,
+          "weight_details": {
+            "lexicon_weight": 6.249683,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐁᑯᓯ",
+          "weight": 24.386463,
+          "weight_details": {
+            "lexicon_weight": 4.386464,
+            "mutator_weight": 9.999999,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐃᐢᑯᓯ",
+          "weight": 26.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐃᑖᓯ",
+          "weight": 26.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓅᑯᓯ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓰᑯᓯ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐃᐦᑕᓯ",
+          "weight": 33.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐄᐦ",
+          "weight": 37.462776,
+          "weight_details": {
+            "lexicon_weight": 6.462776,
+            "mutator_weight": 16.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 15.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐃᐢᑯᓯᐦ",
+          "weight": 38.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐃᐦᑎ",
+          "weight": 38.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 649071625
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᐃᑯᐢᐲ",
+      "expected": "ᐁᑯᐢᐲ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᐃᐢᐲ",
+          "weight": 21.625296,
+          "weight_details": {
+            "lexicon_weight": 6.6252947,
+            "mutator_weight": 10.000001,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐁᑯᐢᐲ",
+          "weight": 25.992771,
+          "weight_details": {
+            "lexicon_weight": 5.992772,
+            "mutator_weight": 9.999999,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑯᐢᐲ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐃᐦᑯᐢ",
+          "weight": 38.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐃᐢᑯ",
+          "weight": 42.75376,
+          "weight_details": {
+            "lexicon_weight": 7.75376,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑖᓂᐢᐲ",
+          "weight": 43.64758,
+          "weight_details": {
+            "lexicon_weight": 8.647578,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐃᐢᐲᕽ",
+          "weight": 43.76536,
+          "weight_details": {
+            "lexicon_weight": 8.765361,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐃᐢᑲ",
+          "weight": 45.151657,
+          "weight_details": {
+            "lexicon_weight": 10.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐃᐦᑫᐦ",
+          "weight": 45.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐃᐢᑿ",
+          "weight": 46.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 829228666
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᐃᑯᐢᐱ",
+      "expected": "ᐁᑯᐢᐲ",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "ᐃᑖᐦᐱ",
+          "weight": 33.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐃᐢᐲ",
+          "weight": 35.625298,
+          "weight_details": {
+            "lexicon_weight": 6.6252947,
+            "mutator_weight": 14.000001,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐃᐦᑯᐢ",
+          "weight": 38.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 12.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐁᑯᐢᐲ",
+          "weight": 39.99277,
+          "weight_details": {
+            "lexicon_weight": 5.992772,
+            "mutator_weight": 13.999999,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐃᐢᑯ",
+          "weight": 42.75376,
+          "weight_details": {
+            "lexicon_weight": 7.75376,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐃᐢᑲ",
+          "weight": 45.151657,
+          "weight_details": {
+            "lexicon_weight": 10.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐃᐦᑫᐦ",
+          "weight": 45.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐃᑖᐦᐱᐦ",
+          "weight": 45.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑯᐢᐲ",
+          "weight": 45.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐃᐢᐱᐨ",
+          "weight": 46.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 3,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 896580250
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᓂᐢᑎᐢ",
+      "expected": "ᓂᐢᑌᐢ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᓂᐢᑌᐢ",
+          "weight": 23.898893,
+          "weight_details": {
+            "lexicon_weight": 8.898893,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓂᐢᑭᐢ",
+          "weight": 26.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓂᑕᐢᑎᐢ",
+          "weight": 26.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓂᐢᑎᒼ",
+          "weight": 29.746191,
+          "weight_details": {
+            "lexicon_weight": 9.74619,
+            "mutator_weight": 10.000001,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᓂᐢᑎᓌ",
+          "weight": 30.151655,
+          "weight_details": {
+            "lexicon_weight": 10.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐊᐢᑎᐢ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐱᐢᑎᐢ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᒣᐢᑎᐢ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓂᐢᑎᐠ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᓂᐢᑎᒪ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 999269667
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᑲᐲ",
+      "expected": "ᑮᐲ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᑲ",
+          "weight": 21.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑲᐦ",
+          "weight": 21.74619,
+          "weight_details": {
+            "lexicon_weight": 9.74619,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑲᓂ",
+          "weight": 28.072214,
+          "weight_details": {
+            "lexicon_weight": 8.072214,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑮᐲ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐆᐦ",
+          "weight": 37.521793,
+          "weight_details": {
+            "lexicon_weight": 5.521793,
+            "mutator_weight": 12.0,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐄᐦ",
+          "weight": 38.462776,
+          "weight_details": {
+            "lexicon_weight": 6.462776,
+            "mutator_weight": 12.0,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐦᐊ",
+          "weight": 39.70931,
+          "weight_details": {
+            "lexicon_weight": 7.7093077,
+            "mutator_weight": 12.000001,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐦᐋ",
+          "weight": 39.75376,
+          "weight_details": {
+            "lexicon_weight": 7.75376,
+            "mutator_weight": 12.0,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐋᐦ",
+          "weight": 39.849068,
+          "weight_details": {
+            "lexicon_weight": 7.8490696,
+            "mutator_weight": 12.0,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑳᐏ",
+          "weight": 41.13123,
+          "weight_details": {
+            "lexicon_weight": 7.1312304,
+            "mutator_weight": 13.999999,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 3,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 390495833
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᑲᐱ",
+      "expected": "ᑮᐲ",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "ᑲ",
+          "weight": 21.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑲᐦ",
+          "weight": 21.74619,
+          "weight_details": {
+            "lexicon_weight": 9.74619,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑲᓂ",
+          "weight": 28.072214,
+          "weight_details": {
+            "lexicon_weight": 8.072214,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐊᐱ",
+          "weight": 30.151657,
+          "weight_details": {
+            "lexicon_weight": 10.151657,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᐆᐦ",
+          "weight": 37.521793,
+          "weight_details": {
+            "lexicon_weight": 5.521793,
+            "mutator_weight": 12.0,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐄᐦ",
+          "weight": 38.462776,
+          "weight_details": {
+            "lexicon_weight": 6.462776,
+            "mutator_weight": 12.0,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐦᐊ",
+          "weight": 39.70931,
+          "weight_details": {
+            "lexicon_weight": 7.7093077,
+            "mutator_weight": 12.000001,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐦᐋ",
+          "weight": 39.75376,
+          "weight_details": {
+            "lexicon_weight": 7.75376,
+            "mutator_weight": 12.0,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐋᐦ",
+          "weight": 39.849068,
+          "weight_details": {
+            "lexicon_weight": 7.8490696,
+            "mutator_weight": 12.0,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑳᐏ",
+          "weight": 41.13123,
+          "weight_details": {
+            "lexicon_weight": 7.1312304,
+            "mutator_weight": 13.999999,
+            "reweight_start": 10.0,
+            "reweight_mid": -1.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 405608291
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᓂᑲ ᑲᐦᒋᑎᓂᐠ",
+      "expected": "ᓂᑲ ᑳᐦᒋᑎᓂᐠ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᓂᑲ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 20.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 4.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓂᐑ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 35.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓂᐚ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 35.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓂᐯ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 35.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓂᑑ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 35.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓂᑮ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 35.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓂᑲ ᑳᐦᑎᓂᐠ",
+          "weight": 35.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᓂᑲ ᑳᐦᒋᑎᓂᑿᐠ",
+          "weight": 35.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑭᑲ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 40.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑲ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 40.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 783492916
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᑲ ᑮᓯ",
+      "expected": "ᑲ ᑮᓯᐦ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᑲ ᑮᐦ",
+          "weight": 23.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑲ ᑮᓯᐦ",
+          "weight": 23.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 2.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑲ ᑮᒥᓯ",
+          "weight": 26.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑲ ᑮᐍ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑲ ᑮᐲ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑲ ᑮᒦ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑲ ᑮᒭ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑲ ᑮᓯᐢ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑲ ᑮᓯᐣ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑲ ᑮᓯᓇ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 864042083
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᑲᑮᓯᐦ",
+      "expected": "ᑲ ᑮᓯᐦ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᑲᐯᓯᐦ",
+          "weight": 26.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑮᓯᐦ",
+          "weight": 31.151655,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 10.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑲᐦ",
+          "weight": 39.746193,
+          "weight_details": {
+            "lexicon_weight": 9.74619,
+            "mutator_weight": 20.0,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑳᑮᒋᐦ",
+          "weight": 40.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑳᑮᓯᒧ",
+          "weight": 45.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 14.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᐴᓯᐦ",
+          "weight": 46.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 5.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑳᓰᐦ",
+          "weight": 49.151657,
+          "weight_details": {
+            "lexicon_weight": 11.151655,
+            "mutator_weight": 18.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 0.0
+          }
+        },
+        {
+          "value": "ᑮᓯᐠ",
+          "weight": 49.458508,
+          "weight_details": {
+            "lexicon_weight": 9.458508,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑲᔮᐦᑌ",
+          "weight": 49.84907,
+          "weight_details": {
+            "lexicon_weight": 7.84907,
+            "mutator_weight": 22.000002,
+            "reweight_start": 0.0,
+            "reweight_mid": 10.0,
+            "reweight_end": 10.0
+          }
+        },
+        {
+          "value": "ᑮᓯᓴ",
+          "weight": 50.151657,
+          "weight_details": {
+            "lexicon_weight": 10.151656,
+            "mutator_weight": 20.0,
+            "reweight_start": 10.0,
+            "reweight_mid": 0.0,
+            "reweight_end": 10.0
+          }
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 1,
+        "subsec_nanos": 490869041
+      },
+      "false_accept": false
+    }
+  ],
+  "start_timestamp": {
+    "secs": 1776328010,
+    "subsec_nanos": 78967000
+  },
+  "total_time": {
+    "secs": 1,
+    "subsec_nanos": 492992625
+  }
+}
