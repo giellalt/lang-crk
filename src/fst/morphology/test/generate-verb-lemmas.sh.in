@@ -206,6 +206,8 @@ done
 # At least one of the Xerox or HFST tests failed:
 if [ "$Fail" = "1" ]; then
     exit 1
+else
+    printf "%spassed%s" "$green" "$reset"
 fi
 
 if [ $transducer_found -eq 0 ]; then

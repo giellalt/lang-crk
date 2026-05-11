@@ -57,6 +57,8 @@ if ! test -f "$source_file" ; then
     printf "%sfail%s missing lexc file %s\n" "$red" "$reset" \
         "$source_file"
     exit 1
+else
+    printf "%spassed%s\n" "$green" "$reset"
 fi
 
 # Use autotools mechanisms to only run the configured fst types in the tests:
