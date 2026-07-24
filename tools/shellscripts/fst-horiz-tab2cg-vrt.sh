@@ -11,7 +11,8 @@
 gawk '$0 ~ /^</ { print; }
 $0 ~ /^[^<]/ { printf "\"<%s>\"\n", $1;
   for(i=2; i<=NF; i++)
-     { n=split($i,f,"\\+");
+     {
+       n=split($i,f,"\\+");
        printf "\t";
 
 # Identify lemma -> whatever is after any sequence of initial change, preverbs, prenouns, and reduplication
@@ -38,13 +39,16 @@ $0 ~ /^[^<]/ { printf "\"<%s>\"\n", $1;
 
 # 2. Making the lemma first and putting all feature tags according to CG syntax after the lemma (even though the FST outputs preverbs and reduplicative elements before):
 
-# Preprocessing the file to prepare for CG disambiguation and analysis                                                                                
-
-gawk '{ if(index($0,"#")!=0)
-          { sub("#",""); sub("\"","&#"); }
-        gsub("@","%");
-        if(match($0,"((P[NV]/[^ ]+ )|(Rdpl[SW] )|(IC ))+",p)!=0)
-          { sub(p[0],"");
-            sub("\" ","&"p[0]); }
-        print;
+gawk '{
+  if(index($0,"#")!=0)
+    {
+      sub("#",""); sub("\"","&#");
+    }
+  gsub("@","%");
+  if(match($0,"((P[NV]/[^ ]+ )|(Rdpl[SW] )|(IC ))+",p)!=0)
+    {
+      sub(p[0],"");
+      sub("\" ","&"p[0]);
+    }
+  print;
 }' # | less; exit 0;
