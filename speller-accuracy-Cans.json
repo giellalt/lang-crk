@@ -1,0 +1,567 @@
+{
+  "metadata": {
+    "info": {
+      "locale": "crk-Cans",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree spellchecker, Canadian Aboriginal Syllabics"
+        }
+      ],
+      "description": "A spellchecker for Plains Cree, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway, using the Canadian\n    Aboriginal Syllabics.",
+      "producer": "UofAlberta/Giellatekno/Divvun/UiT contributors"
+    },
+    "acceptor": {
+      "type": "general",
+      "id": "acceptor.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree speller lexicon, Canadian Aboriginal Syllabics"
+        }
+      ],
+      "description": "Plains Cree speller lexicon compiled with HFST.",
+      "continuation": null
+    },
+    "errmodel": {
+      "id": "errmodel.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree error model, Canadian Aboriginal Syllabics"
+        }
+      ],
+      "description": "Error model for Plains Cree."
+    }
+  },
+  "config": {
+    "n-best": 10,
+    "max-weight": 10000.0,
+    "beam": null,
+    "reweight": {
+      "start-penalty": 10.0,
+      "end-penalty": 10.0,
+      "mid-penalty": 5.0
+    },
+    "node-pool-size": 128,
+    "recase": true,
+    "completion-marker": null
+  },
+  "summary": {
+    "total_words": 9,
+    "first_position": 2,
+    "top_five": 7,
+    "any_position": 7,
+    "no_suggestions": 0,
+    "only_wrong": 2,
+    "false_accept": 0,
+    "true_positive": 9,
+    "false_negative": 0,
+    "true_negative": 0,
+    "slowest_lookup": {
+      "secs": 2,
+      "subsec_nanos": 430548808
+    },
+    "fastest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 949964436
+    },
+    "average_time": {
+      "secs": 1,
+      "subsec_nanos": 716720557
+    },
+    "average_time_95pc": {
+      "secs": 1,
+      "subsec_nanos": 716720557
+    },
+    "average_position_of_correct": 2.142857,
+    "average_suggestions_for_correct": 10.0
+  },
+  "results": [
+    {
+      "input": "ᐃᑯᓯ",
+      "expected": "ᐁᑯᓯ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᐃᓯ",
+          "weight": 20.762836
+        },
+        {
+          "value": "ᐁᑯᓯ",
+          "weight": 24.044762
+        },
+        {
+          "value": "ᐃᐢᑯᓯ",
+          "weight": 25.0
+        },
+        {
+          "value": "ᐃᑖᓯ",
+          "weight": 25.0
+        },
+        {
+          "value": "ᓅᑯᓯ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᓰᑯᓯ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᐄᐦ",
+          "weight": 36.959328
+        },
+        {
+          "value": "ᐃᐢᑯᐦ",
+          "weight": 37.0
+        },
+        {
+          "value": "ᐃᐢᑯᓯᐦ",
+          "weight": 37.0
+        },
+        {
+          "value": "ᐃᐦᑎ",
+          "weight": 37.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 1,
+        "subsec_nanos": 437240113
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᐃᑯᐢᐲ",
+      "expected": "ᐁᑯᐢᐲ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᐃᐢᐲ",
+          "weight": 21.10919
+        },
+        {
+          "value": "ᐁᑯᐢᐲ",
+          "weight": 25.52594
+        },
+        {
+          "value": "ᑯᐢᐲ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᐃᐢᑯ",
+          "weight": 42.14975
+        },
+        {
+          "value": "ᑖᓂᐢᐲ",
+          "weight": 42.973938
+        },
+        {
+          "value": "ᐃᐢᐲᕽ",
+          "weight": 43.082546
+        },
+        {
+          "value": "ᐃᐦᑫᐦ",
+          "weight": 44.0
+        },
+        {
+          "value": "ᐃᐢᑲ",
+          "weight": 44.360847
+        },
+        {
+          "value": "ᐃᐢᑯᐢ",
+          "weight": 45.0
+        },
+        {
+          "value": "ᐁᑯᐢᐲᕽ",
+          "weight": 50.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 2,
+        "subsec_nanos": 430548808
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᐃᑯᐢᐱ",
+      "expected": "ᐁᑯᐢᐲ",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "ᐃᑖᐦᐱ",
+          "weight": 32.0
+        },
+        {
+          "value": "ᐃᐢᐲ",
+          "weight": 35.10919
+        },
+        {
+          "value": "ᐁᑯᐢᐲ",
+          "weight": 39.52594
+        },
+        {
+          "value": "ᐃᐢᑯ",
+          "weight": 42.14975
+        },
+        {
+          "value": "ᐃᐦᑫᐦ",
+          "weight": 44.0
+        },
+        {
+          "value": "ᐃᑖᐦᐱᐦ",
+          "weight": 44.0
+        },
+        {
+          "value": "ᑯᐢᐲ",
+          "weight": 44.0
+        },
+        {
+          "value": "ᐃᐢᑲ",
+          "weight": 44.360847
+        },
+        {
+          "value": "ᐃᐢᐱᐢ",
+          "weight": 45.0
+        },
+        {
+          "value": "ᐃᐢᐱᐨ",
+          "weight": 45.0
+        }
+      ],
+      "position": 2,
+      "time": {
+        "secs": 2,
+        "subsec_nanos": 114304523
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᓂᐢᑎᐢ",
+      "expected": "ᓂᐢᑌᐢ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᓂᐢᑌᐢ",
+          "weight": 23.205675
+        },
+        {
+          "value": "ᓂᐢᑭᐢ",
+          "weight": 25.0
+        },
+        {
+          "value": "ᓂᑕᐢᑎᐢ",
+          "weight": 25.0
+        },
+        {
+          "value": "ᓂᐢᑎᒼ",
+          "weight": 28.986969
+        },
+        {
+          "value": "ᓂᐢᑎᓌ",
+          "weight": 29.360847
+        },
+        {
+          "value": "ᐊᐢᑎᐢ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᐱᐢᑎᐢ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᒣᐢᑎᐢ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᓂᐢᑎᐠ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᓂᐢᑎᒪ",
+          "weight": 30.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 2,
+        "subsec_nanos": 116447956
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᑲᐲ",
+      "expected": "ᑮᐲ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᑲ",
+          "weight": 20.0
+        },
+        {
+          "value": "ᑲᐦ",
+          "weight": 20.986969
+        },
+        {
+          "value": "ᑲᓂ",
+          "weight": 27.443394
+        },
+        {
+          "value": "ᑮᐲ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᑲᐯ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᐆᐦ",
+          "weight": 37.091644
+        },
+        {
+          "value": "ᐄᐦ",
+          "weight": 37.959328
+        },
+        {
+          "value": "ᐦᐊ",
+          "weight": 39.108757
+        },
+        {
+          "value": "ᐦᐋ",
+          "weight": 39.14975
+        },
+        {
+          "value": "ᐋᐦ",
+          "weight": 39.237633
+        }
+      ],
+      "position": 3,
+      "time": {
+        "secs": 1,
+        "subsec_nanos": 24708107
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᑲᐱ",
+      "expected": "ᑮᐲ",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "ᑲᐦ",
+          "weight": 20.986969
+        },
+        {
+          "value": "ᑲᓂ",
+          "weight": 27.443394
+        },
+        {
+          "value": "ᐊᐱ",
+          "weight": 29.36085
+        },
+        {
+          "value": "ᐚᐱ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᐚᑲᐱ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᐆᐦ",
+          "weight": 37.091644
+        },
+        {
+          "value": "ᐄᐦ",
+          "weight": 37.959328
+        },
+        {
+          "value": "ᐦᐊ",
+          "weight": 39.108757
+        },
+        {
+          "value": "ᐦᐋ",
+          "weight": 39.14975
+        },
+        {
+          "value": "ᐋᐦ",
+          "weight": 39.237633
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 949964436
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᓂᑲ ᑲᐦᒋᑎᓂᐠ",
+      "expected": "ᓂᑲ ᑳᐦᒋᑎᓂᐠ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᓂᑲ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 19.0
+        },
+        {
+          "value": "ᓂᐑ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 34.0
+        },
+        {
+          "value": "ᓂᐚ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 34.0
+        },
+        {
+          "value": "ᓂᐯ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 34.0
+        },
+        {
+          "value": "ᓂᑑ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 34.0
+        },
+        {
+          "value": "ᓂᑮ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 34.0
+        },
+        {
+          "value": "ᓂᑲ ᑳᐦᑎᓂᐠ",
+          "weight": 34.0
+        },
+        {
+          "value": "ᓂᑲ ᑳᐦᒋᑎᓂᑿᐠ",
+          "weight": 34.0
+        },
+        {
+          "value": "ᑭᑲ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 39.0
+        },
+        {
+          "value": "ᑲ ᑳᐦᒋᑎᓂᐠ",
+          "weight": 39.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 1,
+        "subsec_nanos": 692553215
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᑲ ᑮᓯ",
+      "expected": "ᑲ ᑮᓯᐦ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᑲ ᑮᐦ",
+          "weight": 22.0
+        },
+        {
+          "value": "ᑲ ᑮᓯᐦ",
+          "weight": 22.0
+        },
+        {
+          "value": "ᑲ ᑮᒥᓯ",
+          "weight": 25.0
+        },
+        {
+          "value": "ᑲ ᑮᐍ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᑲ ᑮᐲ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᑲ ᑮᒦ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᑲ ᑮᒭ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᑲ ᑮᓯᐢ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᑲ ᑮᓯᐣ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᑲ ᑮᓯᓇ",
+          "weight": 30.0
+        }
+      ],
+      "position": 1,
+      "time": {
+        "secs": 1,
+        "subsec_nanos": 368434337
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ᑲᑮᓯᐦ",
+      "expected": "ᑲ ᑮᓯᐦ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ᑲᐯᓯᐦ",
+          "weight": 25.0
+        },
+        {
+          "value": "ᑮᓯᐦ",
+          "weight": 30.0
+        },
+        {
+          "value": "ᑲᐦ",
+          "weight": 38.98697
+        },
+        {
+          "value": "ᑳᑮᒋᐦ",
+          "weight": 39.0
+        },
+        {
+          "value": "ᑳᑮᓯᒧ",
+          "weight": 44.0
+        },
+        {
+          "value": "ᐘᔦᓯᐦ",
+          "weight": 45.0
+        },
+        {
+          "value": "ᑳᓰᐦ",
+          "weight": 48.0
+        },
+        {
+          "value": "ᑮᓯᐠ",
+          "weight": 48.7217
+        },
+        {
+          "value": "ᑲᔮᐦᑌ",
+          "weight": 49.237633
+        },
+        {
+          "value": "ᑮᓯᓴ",
+          "weight": 49.360847
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 2,
+        "subsec_nanos": 316283524
+      },
+      "false_accept": false
+    }
+  ],
+  "start_timestamp": {
+    "secs": 1788551697,
+    "subsec_nanos": 197065558
+  },
+  "total_time": {
+    "secs": 2,
+    "subsec_nanos": 433080306
+  }
+}

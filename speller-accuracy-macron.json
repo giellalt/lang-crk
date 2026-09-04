@@ -1,0 +1,734 @@
+{
+  "metadata": {
+    "info": {
+      "locale": "crk-x-macron",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree spellchecker, macron SRO."
+        }
+      ],
+      "description": "A spellchecker for Plains Cree, made by members of the language community, and by the Divvun and Giellatekno groups at UiT The Arctic University of Norway. This version uses SRO\n    with macrons for marking long vowels.",
+      "producer": "UofAlberta/Giellatekno/Divvun/UiT contributors"
+    },
+    "acceptor": {
+      "type": "general",
+      "id": "acceptor.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree speller lexicon, macron SRO"
+        }
+      ],
+      "description": "Plains Cree speller lexicon compiled with HFST.",
+      "continuation": null
+    },
+    "errmodel": {
+      "id": "errmodel.default.hfst",
+      "title": [
+        {
+          "lang": null,
+          "$value": "Plains Cree error model, macron SRO"
+        }
+      ],
+      "description": "Error model for Plains Cree."
+    }
+  },
+  "config": {
+    "n-best": 10,
+    "max-weight": 10000.0,
+    "beam": null,
+    "reweight": {
+      "start-penalty": 10.0,
+      "end-penalty": 10.0,
+      "mid-penalty": 5.0
+    },
+    "node-pool-size": 128,
+    "recase": true,
+    "completion-marker": null
+  },
+  "summary": {
+    "total_words": 13,
+    "first_position": 8,
+    "top_five": 8,
+    "any_position": 9,
+    "no_suggestions": 0,
+    "only_wrong": 3,
+    "false_accept": 0,
+    "true_positive": 12,
+    "false_negative": 1,
+    "true_negative": 0,
+    "slowest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 435688867
+    },
+    "fastest_lookup": {
+      "secs": 0,
+      "subsec_nanos": 60924
+    },
+    "average_time": {
+      "secs": 0,
+      "subsec_nanos": 260378684
+    },
+    "average_time_95pc": {
+      "secs": 0,
+      "subsec_nanos": 260378684
+    },
+    "average_position_of_correct": 1.6666666,
+    "average_suggestions_for_correct": 10.0
+  },
+  "results": [
+    {
+      "input": "asta",
+      "expected": "astâ",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "astā",
+          "weight": 23.0
+        },
+        {
+          "value": "asota",
+          "weight": 25.0
+        },
+        {
+          "value": "āta",
+          "weight": 33.497566
+        },
+        {
+          "value": "awa",
+          "weight": 33.901794
+        },
+        {
+          "value": "ana",
+          "weight": 34.484535
+        },
+        {
+          "value": "astāw",
+          "weight": 37.360847
+        },
+        {
+          "value": "astwā",
+          "weight": 38.0
+        },
+        {
+          "value": "astāh",
+          "weight": 38.0
+        },
+        {
+          "value": "astāk",
+          "weight": 38.0
+        },
+        {
+          "value": "āstam",
+          "weight": 41.721695
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 188829248
+      },
+      "false_accept": false
+    },
+    {
+      "input": "pimâtisiwiniw",
+      "expected": "pimâtisiwinêw",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "pimātisiwinēw",
+          "weight": 40.0
+        },
+        {
+          "value": "pimi-isisiniw",
+          "weight": 55.0
+        },
+        {
+          "value": "pimātisiwiniwiw",
+          "weight": 55.0
+        },
+        {
+          "value": "pimācisiwinis",
+          "weight": 60.0
+        },
+        {
+          "value": "pimātisiwina",
+          "weight": 60.0
+        },
+        {
+          "value": "pimātisiwinihk",
+          "weight": 60.0
+        },
+        {
+          "value": "pimātisiwinē",
+          "weight": 60.0
+        },
+        {
+          "value": "pimātisiwinēk",
+          "weight": 60.0
+        },
+        {
+          "value": "pimātisiwin",
+          "weight": 62.7889
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 305023557
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ihkwa",
+      "expected": "ikwa",
+      "distance": 1,
+      "suggestions": [],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 60924
+      },
+      "false_accept": true
+    },
+    {
+      "input": "cotak",
+      "expected": "kotak",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "cīsak",
+          "weight": 40.0
+        },
+        {
+          "value": "acosak",
+          "weight": 45.0
+        },
+        {
+          "value": "mētak",
+          "weight": 45.0
+        },
+        {
+          "value": "ēkotak",
+          "weight": 45.0
+        },
+        {
+          "value": "tōtāk",
+          "weight": 46.0
+        },
+        {
+          "value": "kotah",
+          "weight": 50.0
+        },
+        {
+          "value": "kotam",
+          "weight": 50.0
+        },
+        {
+          "value": "otah",
+          "weight": 50.0
+        },
+        {
+          "value": "otam",
+          "weight": 50.0
+        },
+        {
+          "value": "ōta",
+          "weight": 52.63056
+        }
+      ],
+      "position": null,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 216747860
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ikosi",
+      "expected": "ēkosi",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ēkosi",
+          "weight": 24.044762
+        },
+        {
+          "value": "iskosi",
+          "weight": 25.0
+        },
+        {
+          "value": "isi",
+          "weight": 35.762836
+        },
+        {
+          "value": "ihkos",
+          "weight": 36.0
+        },
+        {
+          "value": "ihkosa",
+          "weight": 36.0
+        },
+        {
+          "value": "mihkosi",
+          "weight": 36.0
+        },
+        {
+          "value": "sīkosi",
+          "weight": 38.0
+        },
+        {
+          "value": "akosī",
+          "weight": 43.0
+        },
+        {
+          "value": "nikosis",
+          "weight": 46.53179
+        },
+        {
+          "value": "kikosis",
+          "weight": 48.205673
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 324358316
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ikospī",
+      "expected": "ēkospī",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ēkospī",
+          "weight": 25.52594
+        },
+        {
+          "value": "kospī",
+          "weight": 30.0
+        },
+        {
+          "value": "ispī",
+          "weight": 36.109188
+        },
+        {
+          "value": "akosī",
+          "weight": 45.0
+        },
+        {
+          "value": "ō-kospī",
+          "weight": 45.0
+        },
+        {
+          "value": "kikospīn",
+          "weight": 50.0
+        },
+        {
+          "value": "kospīk",
+          "weight": 50.0
+        },
+        {
+          "value": "kospīw",
+          "weight": 50.0
+        },
+        {
+          "value": "nikospīn",
+          "weight": 50.0
+        },
+        {
+          "value": "ihkos",
+          "weight": 51.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 283910931
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ikospi",
+      "expected": "ēkospī",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "ēkospī",
+          "weight": 38.52594
+        },
+        {
+          "value": "ēkosi",
+          "weight": 39.04476
+        },
+        {
+          "value": "iskosi",
+          "weight": 40.0
+        },
+        {
+          "value": "kospī",
+          "weight": 43.0
+        },
+        {
+          "value": "ispī",
+          "weight": 49.109188
+        },
+        {
+          "value": "ihkos",
+          "weight": 51.0
+        },
+        {
+          "value": "ihkosa",
+          "weight": 51.0
+        },
+        {
+          "value": "ihkosak",
+          "weight": 51.0
+        },
+        {
+          "value": "mihkosi",
+          "weight": 51.0
+        },
+        {
+          "value": "sihkoski",
+          "weight": 51.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 276995410
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nistis",
+      "expected": "nistēs",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nistēs",
+          "weight": 23.205675
+        },
+        {
+          "value": "niskis",
+          "weight": 25.0
+        },
+        {
+          "value": "nistim",
+          "weight": 28.986969
+        },
+        {
+          "value": "nistik",
+          "weight": 30.0
+        },
+        {
+          "value": "pistis",
+          "weight": 30.0
+        },
+        {
+          "value": "nisīmis",
+          "weight": 36.03122
+        },
+        {
+          "value": "nimis",
+          "weight": 37.634857
+        },
+        {
+          "value": "nistam",
+          "weight": 40.925385
+        },
+        {
+          "value": "nihtiy",
+          "weight": 43.721695
+        },
+        {
+          "value": "nīsta",
+          "weight": 48.608795
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 267694327
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kapī",
+      "expected": "kīpī",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "kīpī",
+          "weight": 25.0
+        },
+        {
+          "value": "kapā",
+          "weight": 30.0
+        },
+        {
+          "value": "kapē",
+          "weight": 30.0
+        },
+        {
+          "value": "kāpīt",
+          "weight": 38.0
+        },
+        {
+          "value": "ispī",
+          "weight": 41.109188
+        },
+        {
+          "value": "kani",
+          "weight": 42.443394
+        },
+        {
+          "value": "kah",
+          "weight": 43.98697
+        },
+        {
+          "value": "api",
+          "weight": 49.360847
+        },
+        {
+          "value": "kāwi",
+          "weight": 49.57571
+        },
+        {
+          "value": "ahpō",
+          "weight": 50.9463
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 206910751
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kapi",
+      "expected": "kīpī",
+      "distance": 2,
+      "suggestions": [
+        {
+          "value": "kani",
+          "weight": 22.443394
+        },
+        {
+          "value": "kipi",
+          "weight": 25.0
+        },
+        {
+          "value": "api",
+          "weight": 29.36085
+        },
+        {
+          "value": "kāwi",
+          "weight": 29.57571
+        },
+        {
+          "value": "kapā",
+          "weight": 30.0
+        },
+        {
+          "value": "kapē",
+          "weight": 30.0
+        },
+        {
+          "value": "kīpī",
+          "weight": 38.0
+        },
+        {
+          "value": "wāpi",
+          "weight": 38.0
+        },
+        {
+          "value": "kāpīt",
+          "weight": 46.0
+        },
+        {
+          "value": "ahpō",
+          "weight": 50.9463
+        }
+      ],
+      "position": 6,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 124938756
+      },
+      "false_accept": false
+    },
+    {
+      "input": "nika-kahcitinik",
+      "expected": "nika-kāhcitinik",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "nika-kāhcitinik",
+          "weight": 18.0
+        },
+        {
+          "value": "nika-acitinik",
+          "weight": 31.0
+        },
+        {
+          "value": "nikī-kāhcitinik",
+          "weight": 33.0
+        },
+        {
+          "value": "kika-kāhcitinik",
+          "weight": 38.0
+        },
+        {
+          "value": "nika-ka-kitinik",
+          "weight": 40.0
+        },
+        {
+          "value": "nikāh-kāhcitinik",
+          "weight": 41.0
+        },
+        {
+          "value": "niwā-kāhcitinik",
+          "weight": 41.0
+        },
+        {
+          "value": "nika-aciwinik",
+          "weight": 46.0
+        },
+        {
+          "value": "nika-kī-acitinik",
+          "weight": 46.0
+        },
+        {
+          "value": "kika-acitinik",
+          "weight": 51.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 352254812
+      },
+      "false_accept": false
+    },
+    {
+      "input": "ka-kīsi",
+      "expected": "ka-kīsih",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ka-kīsih",
+          "weight": 30.0
+        },
+        {
+          "value": "ka-kīsin",
+          "weight": 30.0
+        },
+        {
+          "value": "ka-kīsis",
+          "weight": 30.0
+        },
+        {
+          "value": "ka-kisī",
+          "weight": 38.0
+        },
+        {
+          "value": "ka-kīmī",
+          "weight": 38.0
+        },
+        {
+          "value": "ka-kīpī",
+          "weight": 38.0
+        },
+        {
+          "value": "ka-kipi",
+          "weight": 40.0
+        },
+        {
+          "value": "ka-kisik",
+          "weight": 45.0
+        },
+        {
+          "value": "ka-kisin",
+          "weight": 45.0
+        },
+        {
+          "value": "ka-kisis",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 401509133
+      },
+      "false_accept": false
+    },
+    {
+      "input": "kakīsih",
+      "expected": "ka-kīsih",
+      "distance": 1,
+      "suggestions": [
+        {
+          "value": "ka-kīsih",
+          "weight": 25.0
+        },
+        {
+          "value": "kākīcih",
+          "weight": 33.0
+        },
+        {
+          "value": "ka-kīsah",
+          "weight": 40.0
+        },
+        {
+          "value": "ka-kīsōh",
+          "weight": 40.0
+        },
+        {
+          "value": "kapēsih",
+          "weight": 40.0
+        },
+        {
+          "value": "kīsih",
+          "weight": 40.0
+        },
+        {
+          "value": "ka-kīsiho",
+          "weight": 45.0
+        },
+        {
+          "value": "ka-kīsin",
+          "weight": 45.0
+        },
+        {
+          "value": "ka-kīsis",
+          "weight": 45.0
+        },
+        {
+          "value": "kikīsik",
+          "weight": 45.0
+        }
+      ],
+      "position": 0,
+      "time": {
+        "secs": 0,
+        "subsec_nanos": 435688867
+      },
+      "false_accept": false
+    }
+  ],
+  "start_timestamp": {
+    "secs": 1788551695,
+    "subsec_nanos": 174499541
+  },
+  "total_time": {
+    "secs": 0,
+    "subsec_nanos": 437359010
+  }
+}
