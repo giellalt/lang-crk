@@ -76,12 +76,8 @@ GENERATED_LEXC_SRCS=
 
 # change handling of shared lexical data here:
 if HAVE_SHARED_COMMON
-.generated/url.tmp.lexc: $(gt_SHARED_common)/src/fst/url.lexc
+.generated/url.tmp.lexc: $(gt_SHARED_common)/src/fst/morphology/url.lexc
 	$(MAKE) $(GENDIR)
-	$(AM_V_CP)cp -f $< $@
-
-generated_files/mul-$(GLANG)-%.lexc: $(gt_SHARED_common)/src/fst/stems/%.lexc
-	$(AM_V_at)$(MKDIR_P) generated_files
 	$(AM_V_CP)cp -f $< $@
 
 generated_files/mul-$(GLANG)-%.lexc: $(gt_SHARED_common)/src/fst/morphology/stems/%.lexc
