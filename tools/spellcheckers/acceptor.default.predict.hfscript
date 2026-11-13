@@ -4,7 +4,7 @@
 echo 'Compiling weighted ACCEPTOR FST based on morpheme completion.'
 
 echo 'Loading normative generator with morpheme boundaries.'
-load ../../src/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
+load ../../src/fst/crk-strict-generator-with-morpheme-boundaries-giellaltbuild.hfst
 define Words
 
 echo 'Merging suffixes together, and short suffix chunks with stem.'
